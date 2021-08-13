@@ -1,7 +1,7 @@
 ---
-description: Descrive i dati delle impostazioni per un Commuter Ethernet virtuale.
+description: Descrive i dati delle impostazioni per un commutatore ethernet virtuale.
 ms.assetid: 462cff06-5ba6-410a-b091-5c6abab13f03
-title: Classe CIM_VirtualEthernetSwitchSettingData
+title: CIM_VirtualEthernetSwitchSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 64d7053364aebe1fab5739cd75389b1a9343efe0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6243e86ec53213f959ea0b8f420543a9dca619de9d12593a73619aab2805091d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646459"
 ---
-# <a name="cim_virtualethernetswitchsettingdata-class"></a>CIM \_ VirtualEthernetSwitchSettingData (classe)
+# <a name="cim_virtualethernetswitchsettingdata-class"></a>Classe CIM \_ VirtualEthernetSwitchSettingData
 
-Descrive i dati delle impostazioni per un Commuter Ethernet virtuale.
+Descrive i dati delle impostazioni per un commutatore ethernet virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,52 +41,52 @@ class CIM_VirtualEthernetSwitchSettingData : CIM_VirtualSystemSettingData
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VirtualEthernetSwitchSettingData** presenta questi tipi di membri:
+La **classe CIM \_ VirtualEthernetSwitchSettingData** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ VirtualEthernetSwitchSettingData** dispone di queste proprietà.
+La **classe CIM \_ VirtualEthernetSwitchSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **AssociatedResourcePool**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene i pool di risorse host attualmente associati o da associare al compartitore Ethernet, allo scopo di allocare connessioni Ethernet tra il compartitore Ethernet e una macchina virtuale. Ogni valore non null di questa proprietà deve essere conforme **all' \_ URI WBEM \_ UntypedInstancePath** come definito nella specifica DMTF "DSP0207".
+Matrice che contiene i pool di risorse host attualmente associati o da associare al commutatore ethernet per allocare connessioni ethernet tra il commutatore ethernet e una macchina virtuale. Ogni valore non Null di questa proprietà deve essere conforme **all'URI WBEM \_ \_ UntypedInstancePath,** come definito nella specifica DMTF "DSP0207".
 
 </dd> <dt>
 
 **MaxNumMACAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il numero di indirizzi MAC univoci che il Commuter può apprendere per l'apprendimento degli indirizzi MAC, come definito nello standard IEEE 802,1.
+Numero di indirizzi MAC univoci che il commutatore può apprendere per l'apprendimento degli indirizzi MAC, come definito nello standard IEEE 802.1.
 
 </dd> <dt>
 
-**VLANConnection**
+**Connessione VLAN**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice che contiene gli ID VLAN a cui l'opzione può accedere.
+Matrice che contiene gli ID VLAN a cui il commutatore può accedere.
 
 </dd> </dl>
 
@@ -98,8 +98,8 @@ Matrice che contiene gli ID VLAN a cui l'opzione può accedere.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -108,7 +108,7 @@ Matrice che contiene gli ID VLAN a cui l'opzione può accedere.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSETTINGDATA CIM**](cim-virtualsystemsettingdata.md)
+[**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md)
 </dt> </dl>
 
  

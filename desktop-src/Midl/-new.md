@@ -1,9 +1,9 @@
 ---
-title: opzione/New
-description: Questa opzione è obsoleta ed è stata sostituita dall'opzione/newtlb.
+title: Opzione /new
+description: Questa opzione è obsoleta ed è stata sostituita dall'opzione /newtlb.
 ms.assetid: e8893bde-3803-484d-8ca3-27e6631c665b
 keywords:
-- /New Switch MIDL
+- /new opzione MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3beec66f3e1a9e5aa8218218667bee4b6a3a82ce
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5a97f75064ff5f05c0253555fe19555d23d8eb6abca355ed7a212eec0262cd29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644110"
 ---
-# <a name="new-switch"></a>opzione/New
+# <a name="new-switch"></a>Opzione /new
 
-Questa opzione è obsoleta ed è stata sostituita dall'opzione [**/newtlb**](-newtlb.md) .
+Questa opzione è obsoleta ed è stata sostituita [**dall'opzione /newtlb.**](-newtlb.md)
 
- 
+ 
 
- 
+ 
 
 
 

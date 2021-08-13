@@ -1,10 +1,10 @@
 ---
-title: attributo-Limit-clients
-description: L'attributo-Limit-clients è riservato per uso interno.
+title: Attributo netboot-Limit-Clients
+description: L'attributo netboot-Limit-Clients è riservato per l'uso interno.
 ms.assetid: e39bed0f-44ff-47f3-a350-cc006c65881b
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD per l'attributo-Limit-clients
+- Schema AD dell'attributo netboot-Limit-Clients
 - Schema AD dell'attributo netbootLimitClients
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8956bf8ba5ae9f5e95e8d687ee664e21b512328
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 989734bfd38f4eaf2e9867833f181290ee67011989dbd3c149ec126a9eb4edd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682422"
 ---
-# <a name="netboot-limit-clients-attribute"></a>attributo-Limit-clients
+# <a name="netboot-limit-clients-attribute"></a>Attributo netboot-Limit-Clients
 
-L'attributo **-limit-clients** è riservato per uso interno.
+**L'attributo netboot-Limit-Clients** è riservato per l'uso interno.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | -Limite-client                |
-| LDAP-Display-Name | netbootLimitClients                  |
+| CN                | netboot-Limit-Clients                |
+| Ldap-Display-Name | netbootLimitClients                  |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.850               |
-| System-ID-GUID    | 07383077-91df-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 07383077-91df-11d1-aebc-0000f80367c1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **-limit-clients** è riservato per uso interno.
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| È a valore singolo       | Vero                                                       |
+| Is-Single-Valued       | Vero                                                       |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classi utilizzate in        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classi usate in        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

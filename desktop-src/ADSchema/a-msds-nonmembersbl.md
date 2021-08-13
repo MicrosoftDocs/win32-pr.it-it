@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-non-members-BL
-description: Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è collegato (la stessa funzionalità di non-Security-member-BL).
+title: Attributo ms-DS-Non-Members-BL
+description: Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano ad esso (stessa funzionalità di Non-Security-Member-BL).
 ms.assetid: 51725a95-a9c0-4c88-a390-b8e35b8fd3e1
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-non-members-BL
-- attributo msDS-NonMembersBL-schema AD
+- Schema AD dell'attributo ms-DS-Non-Members-BL
+- Schema AD dell'attributo msDS-NonMembersBL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88483757e5c9f87771ce8d71f21d26ea3154f975
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 87426328f9c2c5618374ebdd9c355693e6fff3303e83a44aba55eef7a333d954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683635"
 ---
-# <a name="ms-ds-non-members-bl-attribute"></a>attributo ms-DS-non-members-BL
+# <a name="ms-ds-non-members-bl-attribute"></a>Attributo ms-DS-Non-Members-BL
 
-Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è collegato (la stessa funzionalità di non-Security-member-BL).
+Collegamento all'indietro da un gruppo o un utente non membro a gruppi Az che si collegano ad esso (stessa funzionalità di Non-Security-Member-BL).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-non membri-BL                    |
-| LDAP-Display-Name | msDS-NonMembersBL                       |
+| CN                | ms-DS-Non-Members-BL                    |
+| Ldap-Display-Name | msDS-NonMembersBL                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.        |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.        |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1794                 |
-| System-ID-GUID    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
+| System-Id-Guid    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è 
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è 
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è 
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è 
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Collegamento a ritroso da un utente o un gruppo non membro a AZ Groups a cui è 
 | ID collegamento                | 2015                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

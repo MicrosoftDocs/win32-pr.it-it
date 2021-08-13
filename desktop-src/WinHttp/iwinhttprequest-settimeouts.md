@@ -1,7 +1,7 @@
 ---
-description: Il metodo setimeouts specifica i singoli componenti di timeout di un'operazione di invio/ricezione, in millisecondi.
+description: Il metodo SetTimeouts specifica i singoli componenti di timeout di un'operazione di invio/ricezione, in millisecondi.
 ms.assetid: c2b6c432-5f3b-4361-8026-1b843c6697ae
-title: 'Metodo IWinHttpRequest:: setimeouts'
+title: Metodo IWinHttpRequest::SetTimeouts
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 3f2f81585fdf444b6b5ab1795f183897687732ed
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: e31fbe80f106735a43126b2be5181478b932e2f813b207984959cf013d3fd752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104234919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562456"
 ---
-# <a name="iwinhttprequestsettimeouts-method"></a>Metodo IWinHttpRequest:: setimeouts
+# <a name="iwinhttprequestsettimeouts-method"></a>Metodo IWinHttpRequest::SetTimeouts
 
-Il metodo **Setimeouts** specifica i singoli componenti di timeout di un'operazione di invio/ricezione, in millisecondi.
+Il **metodo SetTimeouts** specifica i singoli componenti di timeout di un'operazione di invio/ricezione, in millisecondi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,52 +43,52 @@ HRESULT SetTimeouts(
 
 <dl> <dt>
 
-*ResolveTimeout* \[ in\]
+*ResolveTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato durante la risoluzione di un nome host (ad esempio `www.microsoft.com` ) in un indirizzo IP (ad esempio 192.168.131.199), in millisecondi. Il valore predefinito è zero, ovvero nessun timeout (infinito). Se il timeout DNS viene specificato con \_ il \_ timeout di risoluzione dei nomi, si verifica un sovraccarico di un thread per ogni richiesta.
+Valore di timeout applicato durante la risoluzione di un nome host (ad esempio ) in un indirizzo IP (ad esempio `www.microsoft.com` 192.168.131.199), in millisecondi. Il valore predefinito è zero, ovvero nessun timeout (infinito). Se il timeout DNS viene specificato usando NAME RESOLUTION TIMEOUT, si verifica \_ \_ un sovraccarico di un thread per ogni richiesta.
 
 </dd> <dt>
 
-*ConnectTimeout* \[ in\]
+*ConnectTimeout* \[ Pollici\]
 </dt> <dd>
 
 Valore di timeout applicato quando si stabilisce un socket di comunicazione con il server di destinazione, in millisecondi. Il valore predefinito è 60.000 (60 secondi).
 
 </dd> <dt>
 
-*SendTimeout nell'elemento* \[ in\]
+*SendTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato quando si invia un singolo pacchetto di dati di richiesta sul socket di comunicazione al server di destinazione, in millisecondi. Una richiesta di grandi dimensioni inviata a un server HTTP in genere viene suddivisa in più pacchetti; il timeout di invio si applica all'invio di ogni pacchetto singolarmente. Il valore predefinito è 30.000 (30 secondi).
+Valore di timeout applicato quando si invia un singolo pacchetto di dati della richiesta sul socket di comunicazione al server di destinazione, in millisecondi. Una richiesta di grandi dimensioni inviata a un server HTTP viene in genere suddivisa in più pacchetti. il timeout di invio si applica all'invio di ogni pacchetto singolarmente. Il valore predefinito è 30.000 (30 secondi).
 
 </dd> <dt>
 
-*ReceiveTimeout* \[ in\]
+*ReceiveTimeout* \[ Pollici\]
 </dt> <dd>
 
-Valore di timeout applicato durante la ricezione di un pacchetto di dati di risposta dal server di destinazione, in millisecondi. Le risposte di grandi dimensioni vengono suddivise in più pacchetti; il timeout di ricezione si applica al recupero di ogni pacchetto di dati dal socket. Il valore predefinito è 30.000 (30 secondi).
+Valore di timeout applicato quando si riceve un pacchetto di dati di risposta dal server di destinazione, in millisecondi. Le risposte di grandi dimensioni vengono suddivise in più pacchetti. Il timeout di ricezione si applica al recupero di ogni pacchetto di dati dal socket. Il valore predefinito è 30.000 (30 secondi).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri sono obbligatori. Un valore pari a 0 o-1 imposta un timeout per un'attesa infinita. Un valore maggiore di 0 imposta il valore di timeout in millisecondi. 30.000, ad esempio, imposterà il timeout su 30 secondi. Tutti i valori negativi diversi da-1 determinano l'esito negativo di questo metodo.
+Tutti i parametri sono obbligatori. Il valore 0 o -1 imposta un timeout per l'attesa infinita. Un valore maggiore di 0 imposta il valore di timeout in millisecondi. Ad esempio, 30.000 impostano il timeout su 30 secondi. Tutti i valori negativi diversi da -1 causano l'esito negativo di questo metodo.
 
-I valori di timeout vengono applicati a livello di Winsock.
+I valori di timeout vengono applicati al livello Winsock.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHttp.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come impostare tutti i timeout di WinHTTP su 30 secondi, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta.
+L'esempio seguente illustra come impostare tutti i timeout WinHTTP su 30 secondi, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta.
 
 
 ```C++
@@ -184,7 +184,7 @@ int main()
 
 
 
-Nell'esempio di script seguente viene illustrato come impostare tutti i timeout di WinHTTP su 30 secondi, aprire una connessione HTTP e inviare una richiesta HTTP.
+L'esempio di scripting seguente illustra come impostare tutti i timeout WinHTTP su 30 secondi, aprire una connessione HTTP e inviare una richiesta HTTP.
 
 
 ```JScript
@@ -210,11 +210,11 @@ WinHttpReq.Send();
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -229,7 +229,7 @@ WinHttpReq.Send();
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

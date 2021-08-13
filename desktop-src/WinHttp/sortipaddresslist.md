@@ -1,7 +1,7 @@
 ---
 description: Ordina un elenco di indirizzi IP.
 ms.assetid: 1266d6f3-e9f5-4e6b-9431-7329df156f0a
-title: sortIpAddressList (funzione)
+title: Funzione sortIpAddressList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 600d87a58248aafdef5b0a8a7f284f4094c95780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3144ecf044f832a49dd6aa4d9fabf76ce8e81c79c195ec101d294c432a8081e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562448"
 ---
-# <a name="sortipaddresslist-function"></a>sortIpAddressList (funzione)
+# <a name="sortipaddresslist-function"></a>Funzione sortIpAddressList
 
 Ordina un elenco di indirizzi IP.
 
@@ -27,20 +27,20 @@ Ordina un elenco di indirizzi IP.
 
 <dl> <dt>
 
-*IpAddress* 
+*IpAddressList* 
 </dt> <dd>
 
-Stringa delimitata da punto e virgola contenente indirizzi IP.
+Stringa delimitata da punto e virgola contenente gli indirizzi IP.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Elenco di indirizzi IP delimitati da punti e virgola o una stringa vuota se non è possibile ordinare l'elenco di indirizzi IP.
+Elenco di indirizzi IP delimitati da punti e virgola ordinati o una stringa vuota se non è possibile ordinare l'elenco di indirizzi IP.
 
 ## <a name="remarks"></a>Commenti
 
-Gli implementatori di FindProxyforURLEx devono aggiungere codice che suddivide la stringa di indirizzi IP delimitati da punto e virgola in indirizzi distinti.
+Gli implementatori di FindProxyforURLEx devono aggiungere codice che suddivide la stringa di indirizzi IP delimitati da punto e virgola in indirizzi separati.
 
 ## <a name="examples"></a>Esempi
 
@@ -56,7 +56,7 @@ sortIpAddressList(2001:4898:28:3:201:2ff:feea:fc14;
 
 <dl> <dt>
 
-[Definizioni API helper proxy compatibili con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definizioni dell'API helper proxy con supporto IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
 [Estensioni IPv6 per il formato di file di configurazione automatica dello strumento di navigazione](ipv6-extensions-to-navigator-auto-config-file-format.md)

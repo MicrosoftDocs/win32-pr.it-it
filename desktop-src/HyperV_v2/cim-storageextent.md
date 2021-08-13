@@ -1,7 +1,7 @@
 ---
-description: Descrive le funzionalità e la gestione dei supporti che archivia i dati e consente il recupero dei dati. Questa superclasse viene utilizzata per rappresentare componenti RAID software e hardware o un'estensione logica non elaborata di supporti fisici.
+description: Vengono descritte le funzionalità e la gestione dei supporti che archiviano i dati e consentono il recupero dei dati. Questa superclasse viene usata per rappresentare i componenti RAID software e hardware o un extent logico non elaborato di supporti fisici.
 ms.assetid: 29d105fb-8c34-4824-8679-883aef02a0c9
-title: Classe CIM_StorageExtent (gestione Hyper-V)
+title: CIM_StorageExtent (gestione di Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a3dc1b58dd97582e229497e754d10c3f307eab76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ce3126cf208032e4d43e9ce1866e1cd0ab42c17930684c98d4ad351de88713b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647369"
 ---
-# <a name="cim_storageextent-class-hyper-v-management"></a>Classe CIM_StorageExtent (gestione Hyper-V)
+# <a name="cim_storageextent-class-hyper-v-management"></a>CIM_StorageExtent (gestione di Hyper-V)
 
-Descrive le funzionalità e la gestione dei supporti che archivia i dati e consente il recupero dei dati. Questa superclasse viene utilizzata per rappresentare componenti RAID software e hardware o un'estensione logica non elaborata di supporti fisici.
+Vengono descritte le funzionalità e la gestione dei supporti che archiviano i dati e consentono il recupero dei dati. Questa superclasse viene usata per rappresentare i componenti RAID software e hardware o un extent logico non elaborato di supporti fisici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -75,20 +75,20 @@ class CIM_StorageExtent : CIM_LogicalDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ StorageExtent** presenta questi tipi di membri:
+La **classe CIM \_ StorageExtent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ StorageExtent** dispone di queste proprietà.
+La **classe CIM \_ StorageExtent** ha queste proprietà.
 
 <dl> <dt>
 
 **Accesso**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -128,52 +128,52 @@ Descrizione del supporto di lettura/scrittura del supporto.
 
 <span id="Write_Once"></span><span id="write_once"></span><span id="WRITE_ONCE"></span>
 
-**Scrivi una sola volta** (4)
+**Write Once** (4)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("byte"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Archiviazione host DMTF \| 001,4 "," MIB. IETF \| host-Resources-MIB. hrStorageAllocationUnits "," MIF. \|Dispositivi di archiviazione DMTF \| 001,5 ")
+Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Host Archiviazione \| 001.4", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageAllocationUnits", "MIF. DMTF \| Archiviazione Devices \| 001.5")
 </dt> </dl>
 
-Dimensione, in byte, dei blocchi che formano l'extent di archiviazione. Se vengono utilizzate dimensioni del blocco di variabili, questa proprietà deve specificare la dimensione massima del blocco. Se le dimensioni del blocco sono sconosciute o se un concetto di blocco non è valido (ad esempio, per **CIM \_ AggregateExtent**, [**CIM \_ Memory**](cim-memory.md) o [**CIM \_ disco logico**](cim-logicaldisk.md)), questa proprietà deve essere impostata su "1" (Unknow).
+Dimensione, in byte, dei blocchi che formano l'extent di archiviazione. Se vengono usate dimensioni dei blocchi variabili, questa proprietà deve specificare le dimensioni massime del blocco. Se la dimensione del blocco è sconosciuta o se un concetto di blocco non è valido (ad esempio, per **CIM \_ AggregateExtent**, [**CIM \_ Memory**](cim-memory.md) o [**CIM \_ LogicalDisk),**](cim-logicaldisk.md)questa proprietà deve essere impostata su "1" (a insosservato).
 
 </dd> <dt>
 
-**ConsumableBlocks**
+**Blocchi di consumo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero massimo di blocchi che è possibile usare quando si esegue il layering **CIM \_ StorageExtent** usando l'associazione di classi [**CIM \_ BasedOn**](cim-basedon.md) . Questa proprietà ha un significato solo quando si fa riferimento all'extent di archiviazione nella proprietà **precedente** in un oggetto **CIM \_ BasedOn** .
+Numero massimo di blocchi, disponibili per l'uso quando si esegue il layering **di \_ CIM StorageExtent** usando l'associazione [**di classe \_ CiM BasedOn.**](cim-basedon.md) Questa proprietà ha significato solo quando si fa riferimento all'extent di archiviazione nella proprietà **Antecedent** in un **oggetto \_ CiM BasedOn.**
 
 </dd> <dt>
 
-**Dataorganization**
+**DataOrganization**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di organizzazione dati utilizzato dal supporto.
+Tipo di organizzazione dei dati utilizzata dai supporti.
 
 <dt>
 
@@ -214,55 +214,55 @@ Tipo di organizzazione dati utilizzato dal supporto.
 
 </dd> <dt>
 
-**Ridondanza dataridondanza**
+**Ridondanza dei dati**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DataRedundancyGoal**","**CIM \_ StorageSetting**.**DataRedundancyMax**","**CIM \_ StorageSetting**.**DataRedundancyMin**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**Ridondanza dei datiGoal**", "**CIM \_ StorageSetting**.**DataRedundancyMax**", "**CIM \_ StorageSetting**.**DataRedundancyMin**")
 </dt> </dl>
 
-Numero di copie complete dei dati attualmente gestiti.
+Numero di copie complete dei dati attualmente mantenuti.
 
 </dd> <dt>
 
 **DeltaReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("percentuale"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (100), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DeltaReservationGoal**","**CIM \_ StorageSetting**.**DeltaReservationMax**","**CIM \_ StorageSetting**.**DeltaReservationMin**")
+Qualificatori: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percentage"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (100), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**DeltaReservationGoal**", "**CIM \_ StorageSetting**.**DeltaReservationMax**", "**CIM \_ StorageSetting**.**DeltaReservationMin**")
 </dt> </dl>
 
-Valore corrente per la prenotazione Delta. Percentuale che specifica la quantità di spazio che deve essere riservata in una replica per la memorizzazione nella cache delle modifiche.
+Valore corrente per la prenotazione delta. Si tratta di una percentuale che specifica la quantità di spazio che deve essere riservata in una replica per la memorizzazione nella cache delle modifiche.
 
 </dd> <dt>
 
 **ErrorMethodology**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tipo di rilevamento e correzione degli errori supportato dall'extent di archiviazione.
+Tipo di rilevamento e correzione degli errori supportati dall'extent di archiviazione.
 
 </dd> <dt>
 
 **ExtentStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -288,28 +288,28 @@ Informazioni aggiuntive sullo stato.
 
 <span id="None_Not_Applicable"></span><span id="none_not_applicable"></span><span id="NONE_NOT_APPLICABLE"></span>
 
-**Nessuno/non applicabile** (2)
+**Nessuno/Non applicabile** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Broken"></span><span id="broken"></span><span id="BROKEN"></span>
 
-**Interruppe** (3)
+**Broken** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Data_Lost"></span><span id="data_lost"></span><span id="DATA_LOST"></span>
 
-**Dati persi** (4)
+**Perdita di dati** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Dynamic_Reconfig"></span><span id="dynamic_reconfig"></span><span id="DYNAMIC_RECONFIG"></span>
 
-**Riconfigurazione dinamica** (5)
+**Dynamic Reconfig** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -323,14 +323,14 @@ Informazioni aggiuntive sullo stato.
 
 <span id="Fractionally_Exposed"></span><span id="fractionally_exposed"></span><span id="FRACTIONALLY_EXPOSED"></span>
 
-**Esposto in frazioni** (7)
+**Esposizione frazionaria** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Partially_Exposed"></span><span id="partially_exposed"></span><span id="PARTIALLY_EXPOSED"></span>
 
-**Esposto parzialmente** (8)
+**Parzialmente esposto** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -344,7 +344,7 @@ Informazioni aggiuntive sullo stato.
 
 <span id="Readying"></span><span id="readying"></span><span id="READYING"></span>
 
-**Pronto** (10)
+**Readying** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -365,7 +365,7 @@ Informazioni aggiuntive sullo stato.
 
 <span id="Spare_in_Use"></span><span id="spare_in_use"></span><span id="SPARE_IN_USE"></span>
 
-**Ricambio in uso** (13)
+**Riserva in uso** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -400,62 +400,62 @@ Informazioni aggiuntive sullo stato.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (18.. 32767)
+**DmTF Reserved** (18..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768.. 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**IsBasedOnUnderlyingRedundancy**
+**Ridondanza IsBasedOnUnderlying**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se gli extent di archiviazione sottostanti sono membri di [**un \_ StorageRedundancyGroup CIM**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup); in caso contrario, **false**.
+**true** se gli extent di archiviazione sottostanti sono membri di un gruppo [**di \_ ridondanza dell'archiviazione CIM;**](/windows/desktop/CIMWin32Prov/cim-storageredundancygroup)in caso contrario, **false.**
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCIs-T10 \| vital 83, Association 0 \| Identifier "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**","**CIM \_ StorageExtent**.**NameNamespace**")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, Association 0 \| Identifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**", "**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Identificatore univoco per l'extent di archiviazione. La proprietà **NameFormat** specifica il formato di denominazione da utilizzare nella proprietà **Name** .
+Identificatore univoco per l'extent di archiviazione. La **proprietà NameFormat** specifica il formato di denominazione da usare nella **proprietà Name.**
 
 </dd> <dt>
 
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nome**","**CIM \_ StorageExtent**.**NameNamespace**","**CIM \_ StorageExtent**.**OtherNameFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nome**", "**CIM \_ StorageExtent**.**NameNamespace**", "**CIM \_ StorageExtent**.**OtherNameFormat**")
 </dt> </dl>
 
-Formato di denominazione per la proprietà **Name** .
+Formato di denominazione per la **proprietà** Name.
 
 <dt>
 
@@ -545,7 +545,7 @@ Formato di denominazione per la proprietà **Name** .
 
 <span id="OS_Device_Name"></span><span id="os_device_name"></span><span id="OS_DEVICE_NAME"></span>
 
-**Nome dispositivo del sistema operativo** (12)
+**Nome del dispositivo del sistema operativo** (12)
 
 
 </dt> <dd></dd> </dl>
@@ -555,16 +555,16 @@ Formato di denominazione per la proprietà **Name** .
 **NameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCIs-T10 \| vital 83, Association 0 \| Identifier "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nome**","**CIM \_ StorageExtent**.**OtherNameNamespace**","**CIM \_ StorageExtent**.**NameFormat**")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SPC. INCITS-T10 \| VPD 83, Association 0 \| Identifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**Nome**", "**CIM \_ StorageExtent**.**OtherNameNamespace**", "**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-Spazio dei nomi della proprietà Name.
+Spazio dei nomi della proprietà name.
 
 <dt>
 
@@ -626,7 +626,7 @@ Spazio dei nomi della proprietà Name.
 
 <span id="OS_Device_Namespace"></span><span id="os_device_namespace"></span><span id="OS_DEVICE_NAMESPACE"></span>
 
-**Spazio dei nomi del dispositivo del sistema operativo** (8)
+**Spazio dei nomi del dispositivo del sistema** operativo (8)
 
 
 </dt> <dd></dd> </dl>
@@ -636,7 +636,7 @@ Spazio dei nomi della proprietà Name.
 **NoSinglePointOfFailure**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -645,30 +645,30 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**NoSinglePointOfFailure**")
 </dt> </dl>
 
-**true** se non sono presenti singoli punti di errore. in caso contrario, **false**.
+**true** se non sono presenti singoli punti di errore; in caso contrario, **false.**
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Archiviazione host DMTF \| 001,5 "," MIB. \|Host IETF-risorse-MIB. hrStorageSize ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Host Archiviazione \| 001.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrStorageSize")
 </dt> </dl>
 
-Numero totale di blocchi logicamente contigui che formano l'extent di archiviazione. Le dimensioni totali dell'extent di archiviazione vengono calcolate moltiplicando **blockSize** per **Proprietà NumberOfBlocks**. Se **blockSize** è "1", questa proprietà corrisponde alla dimensione totale dell'extent di archiviazione.
+Numero totale di blocchi contigui logicamente che formano l'extent di archiviazione. Le dimensioni totali dell'extent di archiviazione vengono calcolate moltiplicando **BlockSize** per **NumberOfBlocks.** Se **BlockSize è** "1", questa proprietà è la dimensione totale dell'extent di archiviazione.
 
 </dd> <dt>
 
 **OtherNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -677,14 +677,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameFormat**")
 </dt> </dl>
 
-Formato della proprietà **Name** quando la proprietà **NameFormat** è impostata su "1" (other).
+Formato della proprietà **Name quando** la **proprietà NameFormat** è impostata su "1" (Altro).
 
 </dd> <dt>
 
 **OtherNameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -693,49 +693,49 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ StorageExtent**.**NameNamespace**")
 </dt> </dl>
 
-Descrizione dello spazio dei nomi della proprietà **Name** quando la proprietà **NameNamespace** è impostata su "1" (other).
+Descrizione dello spazio dei nomi della **proprietà Name** quando la **proprietà NameNamespace** è impostata su "1" (Altro).
 
 </dd> <dt>
 
-**PackageRedundancy**
+**Ridondanza dei pacchetti**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**","**CIM \_ StorageSetting**.**PackageRedundancyMax**","**CIM \_ StorageSetting**.**PackageRedundancyMin**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ StorageSetting**](/previous-versions/windows/desktop/iscsitarg/cim-storagesetting).**PackageRedundancyGoal**", "**CIM \_ StorageSetting**.**PackageRedundancyMax**", "**CIM \_ StorageSetting**.**PackageRedundancyMin**")
 </dt> </dl>
 
-Numero corrente di pacchetti fisici che possono avere esito negativo senza perdita di dati. Ad esempio, in un dominio di archiviazione può corrispondere al numero di mandrini del disco.
+Numero corrente di pacchetti fisici che possono avere esito negativo senza perdita di dati. Ad esempio, in un dominio di archiviazione, questo potrebbe essere il numero di spindle del disco.
 
 </dd> <dt>
 
 **Originale**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se l'extent di archiviazione è primordiale; in caso contrario, **false**.
+**true se** l'extent di archiviazione è primitivo; in caso contrario, **false.**
 
 </dd> <dt>
 
 **Scopo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. \|Host IETF-risorse-MIB. hrStorageDescr ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrStorageDescr")
 </dt> </dl>
 
 Descrizione dell'utilizzo del supporto.
@@ -745,13 +745,13 @@ Descrizione dell'utilizzo del supporto.
 **SequentialAccess**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**true** se l'accesso all'archiviazione viene eseguito in modo sequenziale da un oggetto [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md) ; in caso contrario, **false**.
+**true** se l'accesso alla memoria viene eseguito in sequenza da un oggetto [**\_ MediaAccessDevice CIM;**](cim-mediaaccessdevice.md) in caso contrario, **false.**
 
 </dd> </dl>
 
@@ -763,8 +763,8 @@ Tipo di accesso: sola lettura
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -773,7 +773,7 @@ Tipo di accesso: sola lettura
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

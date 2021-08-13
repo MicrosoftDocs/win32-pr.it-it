@@ -3,7 +3,7 @@ title: Elemento spinner
 description: Rappresenta un controllo Spinner.
 ms.assetid: 6a174ec9-0fde-4171-a363-0e330ac31a8b
 keywords:
-- Barra multifunzione di Windows per l'elemento spinner
+- Elemento casella di selezione Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d1ec2e074271e125199ddfd4ff8fac7b2af80c33
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 847806e395998f8bc82c302f4403c5bc2b651323ec6c7089803bc66e5f18dc4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439516"
 ---
 # <a name="spinner-element"></a>Elemento spinner
 
 Rappresenta un [controllo Spinner.](windowsribbon-controls-spinner.md)
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <Spinner
@@ -75,7 +75,7 @@ Non ci sono elementi figlio.
 |-----------------------------------------------------------------------------------|
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>             |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                           |
+| [**Group**](windowsribbon-element-group.md)<br/>                           |
 | [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                   |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |
 
@@ -91,7 +91,7 @@ Può verificarsi una o più volte per ogni [**elemento ControlGroup**](windowsri
 
 Nell'esempio seguente viene illustrato il markup di base per [spinner](windowsribbon-controls-spinner.md).
 
-Questa sezione di codice illustra le dichiarazioni del comando **Spinner,** con un [**elemento Group**](windowsribbon-element-group.md) che funziona come contenitore padre per l'elemento **Spinner.**
+Questa sezione di codice illustra le **dichiarazioni di Comando spinner,** con un [**elemento Group**](windowsribbon-element-group.md) che funziona come contenitore padre per l'elemento **Spinner.**
 
 
 ```XML

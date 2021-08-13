@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un servizio di commutazione.
+description: Rappresenta un servizio switch.
 ms.assetid: cf6319fa-7d69-4820-b0e0-775aad8b190c
-title: Classe CIM_SwitchService
+title: CIM_SwitchService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9abe6869c5b8ac61630091315e476ae232630717
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cae4f157073721dc7cdd87585b39e1dbdb4c73b03a4aaf82a8ffd26796cbc78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646783"
 ---
-# <a name="cim_switchservice-class"></a>CIM \_ SwitchService (classe)
+# <a name="cim_switchservice-class"></a>Classe \_ SwitchService CIM
 
-Rappresenta un servizio di commutazione.
+Rappresenta un servizio switch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,36 +43,36 @@ class CIM_SwitchService : CIM_ForwardingService
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SwitchService** presenta questi tipi di membri:
+La **classe \_ CiM SwitchService** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SwitchService** dispone di queste proprietà.
+La **classe \_ CiM SwitchService** ha queste proprietà.
 
 <dl> <dt>
 
 **BridgeAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseBridgeAddress "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseBridgeAddress"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
 </dt> </dl>
 
-Indirizzo del servizio Switch, che è una parte dell'identificatore univoco del servizio.
+Indirizzo del servizio switch, che è una parte dell'identificatore univoco del servizio.
 
 </dd> <dt>
 
-**BridgeAddressType**
+**Tipo di indirizzo bridge**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,7 +81,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddress**")
 </dt> </dl>
 
-Formato di indirizzamento utilizzato per il Bridge e la proprietà **BridgeAddress** .
+Formato di indirizzamento usato per il bridge e la **proprietà BridgeAddress.**
 
 <dt>
 
@@ -108,33 +108,33 @@ Formato di indirizzamento utilizzato per il Bridge e la proprietà **BridgeAddre
 
 <span id="MAC"></span><span id="mac"></span>
 
-**Mac** (4)
+**MAC** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MAC___Spanning_Tree_Priority"></span><span id="mac___spanning_tree_priority"></span><span id="MAC___SPANNING_TREE_PRIORITY"></span>
 
-**Priorità albero per Mac + spanning** (5)
+**MAC + Spanning Tree Priority** (5)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**BridgeType**
+**Tipo di bridge**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseType ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseType")
 </dt> </dl>
 
-Tipo di servizio di trasferimento da eseguire.
+Tipo di servizio di commutazione da eseguire.
 
 <dt>
 
@@ -154,7 +154,7 @@ Tipo di servizio di trasferimento da eseguire.
 
 <span id="SourceRoute-only"></span><span id="sourceroute-only"></span><span id="SOURCEROUTE-ONLY"></span>
 
-**Solo la proprietà SourceRoute** (3)
+**Solo SourceRoute** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -171,16 +171,16 @@ Tipo di servizio di trasferimento da eseguire.
 **NumPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseNumPorts ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseNumPorts")
 </dt> </dl>
 
-Numero di porte di commutazione controllate da questo servizio di commutazione.
+Numero di porte del commutatore controllate da questo servizio di commutazione.
 
 </dd> </dl>
 
@@ -191,9 +191,9 @@ Numero di porte di commutazione controllate da questo servizio di commutazione.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -202,7 +202,7 @@ Numero di porte di commutazione controllate da questo servizio di commutazione.
 
 <dl> <dt>
 
-[**\_FORWARDINGSERVICE CIM**](cim-forwardingservice.md)
+[**CIM \_ ForwardingService**](cim-forwardingservice.md)
 </dt> </dl>
 
  

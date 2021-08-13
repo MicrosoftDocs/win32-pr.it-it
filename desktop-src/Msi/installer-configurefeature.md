@@ -1,7 +1,7 @@
 ---
-description: Il metodo ConfigureFeature dell'oggetto Installer configura lo stato di installazione di una funzionalità del prodotto.
+description: Il metodo ConfigureFeature dell'oggetto Installer configura lo stato installato di una funzionalità del prodotto.
 ms.assetid: cc950951-3b43-4d86-9ff1-80aa2ccd11d5
-title: Metodo ureFeature Installer.Config
+title: Installer.Configmetodo ureFeature
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 737019f5c404beabef404751e617be975b946c04
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 522dfffcbafd546dce218956729f01133708833a4a4c2732af3ea0248f87bc71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632347"
 ---
-# <a name="installerconfigurefeature-method"></a>Metodo ureFeature Installer.Config
+# <a name="installerconfigurefeature-method"></a>Installer.Configmetodo ureFeature
 
-Il metodo **ConfigureFeature** dell'oggetto [**Installer**](installer-object.md) configura lo stato di installazione di una funzionalità del prodotto.
+Il **metodo ConfigureFeature** dell'oggetto [**Installer**](installer-object.md) configura lo stato installato di una funzionalità del prodotto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ Installer.ConfigureFeature(
 *Prodotto* 
 </dt> <dd>
 
-Specifica il codice del prodotto.
+Specifica il codice prodotto del prodotto.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Specifica l'ID funzionalità della funzionalità da configurare.
 
 </dd> <dt>
 
-*InstallState* 
+*Stato di installazione* 
 </dt> <dd>
 
 Specifica lo stato di installazione per la funzionalità. Questo parametro deve essere uno dei valori seguenti.
@@ -65,9 +65,9 @@ Specifica lo stato di installazione per la funzionalità. Questo parametro deve 
 | Valore                                                                                                                                                                                                                                        | Significato                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | <span id="msiInstallStateAdvertised"></span><span id="msiinstallstateadvertised"></span><span id="MSIINSTALLSTATEADVERTISED"></span><dl> <dt>**msiInstallStateAdvertised**</dt> </dl> | La funzionalità è annunciata<br/>                         |
-| <span id="msiInstallStateLocal"></span><span id="msiinstallstatelocal"></span><span id="MSIINSTALLSTATELOCAL"></span><dl> <dt>**msiInstallStateLocal**</dt> </dl>                     | La funzionalità viene installata localmente.<br/>                 |
+| <span id="msiInstallStateLocal"></span><span id="msiinstallstatelocal"></span><span id="MSIINSTALLSTATELOCAL"></span><dl> <dt>**msiInstallStateLocal**</dt> </dl>                     | La funzionalità viene installata in locale.<br/>                 |
 | <span id="msiInstallStateAbsent"></span><span id="msiinstallstateabsent"></span><span id="MSIINSTALLSTATEABSENT"></span><dl> <dt>**msiInstallStateAbsent**</dt> </dl>                 | La funzionalità viene disinstallata.<br/>                       |
-| <span id="msiInstallStateSource"></span><span id="msiinstallstatesource"></span><span id="MSIINSTALLSTATESOURCE"></span><dl> <dt>**msiInstallStateSource**</dt> </dl>                 | La funzionalità è installata per l'esecuzione dall'origine.<br/>      |
+| <span id="msiInstallStateSource"></span><span id="msiinstallstatesource"></span><span id="MSIINSTALLSTATESOURCE"></span><dl> <dt>**msiInstallStateSource**</dt> </dl>                 | La funzionalità viene installata per l'esecuzione dall'origine.<br/>      |
 | <span id="msiInstallStateDefault"></span><span id="msiinstallstatedefault"></span><span id="MSIINSTALLSTATEDEFAULT"></span><dl> <dt>**msiInstallStateDefault**</dt> </dl>             | La funzionalità viene installata nel percorso predefinito.<br/> |
 
 
@@ -86,7 +86,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

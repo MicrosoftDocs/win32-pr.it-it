@@ -1,8 +1,8 @@
 ---
-title: attributo system_handle
-description: L'attributo \ system_handle \ specifica un tipo di handle definito dal sistema.
+title: system_handle attributo
+description: L'attributo \ system_handle\ specifica un tipo di handle definito dal sistema.
 keywords:
-- attributo system_handle MIDL
+- system_handle attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: f414654cdbd2eb07837455174f6142005f56a4b5
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1cc89818db201f1aca84aa63c6aa49b6b7d9f80b7b6c5e211e724004606c653e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641267"
 ---
-# <a name="system_handle-attribute"></a>attributo system_handle
+# <a name="system_handle-attribute"></a>system_handle attributo
 
-L' \[  \] attributo system_handle specifica un tipo di handle definito dal sistema che rappresenta l'accesso a un oggetto di sistema.
+L system_handle attributo specifica un tipo di handle definito dal sistema \[  \] che rappresenta l'accesso a un oggetto di sistema.
 
 ``` syntax
 [system_handle(system-handle-type[,optional-access-mask])]
@@ -30,60 +30,60 @@ L' \[  \] attributo system_handle specifica un tipo di handle definito dal siste
 
 <dl> <dt>
 
-*tipo di handle di sistema* 
+*system-handle-type* 
 </dt> <dd>
 
 Specifica una delle opzioni del tipo di handle di sistema.
 
 Le opzioni valide sono:
-* [sh_composition](sh-composition.md) un handle di superficie DirectComposition
-* [sh_event](sh-event.md) : oggetto evento denominato o senza nome
-* [sh_file](sh-file.md) : un file o un dispositivo I/O
-* [sh_job](sh-job.md) -un oggetto processo
-* [sh_mutex](sh-mutex.md) : oggetto mutex denominato o senza nome
-* [sh_pipe](sh-pipe.md) : oggetto anonimo o named pipe
-* [sh_process](sh-process.md) un oggetto processo
-* [sh_reg_key](sh-reg-key.md) -una chiave del registro di sistema
-* [sh_section](sh-section.md) -una sezione di memoria condivisa
-* [sh_semaphore](sh-semaphore.md) : oggetto semaforo denominato o senza nome
-* [sh_socket](sh-socket.md) : oggetto socket Winsock
-* [sh_thread](sh-thread.md) -oggetto thread
-* [sh_token](sh-token.md) -un oggetto token di accesso
+* [sh_composition](sh-composition.md) : handle di superficie DirectComposition
+* [sh_event:](sh-event.md) oggetto evento denominato o senza nome
+* [sh_file:](sh-file.md) un file o un dispositivo di I/O
+* [sh_job-](sh-job.md) Un oggetto processo
+* [sh_mutex:](sh-mutex.md) oggetto mutex denominato o senza nome
+* [sh_pipe-](sh-pipe.md) Un oggetto anonimo o named pipe
+* [sh_process-](sh-process.md) Un oggetto processo
+* [sh_reg_key-](sh-reg-key.md) Una chiave del Registro di sistema
+* [sh_section](sh-section.md) - Sezione Della memoria condivisa
+* [sh_semaphore:](sh-semaphore.md) oggetto semaforo denominato o senza nome
+* [sh_socket-](sh-socket.md) Oggetto socket WinSock
+* [sh_thread-](sh-thread.md) Oggetto thread
+* [sh_token:](sh-token.md) oggetto token di accesso
 
 </dd> <dt>
 
-*facoltativo-accesso-maschera*
+*optional-access-mask*
 </dt> <dd>
 
 Facoltativamente, richiede diritti di accesso specifici applicati all'handle duplicato. Per impostazione predefinita, quando non è specificato, l'handle verrà duplicato con lo stesso accesso. 
 
-Per specificare un livello di accesso diverso, usare i diritti di accesso specifici dell'oggetto corrispondenti all'oggetto di sistema sottostante selezionato.
+Per specificare un livello di accesso diverso, usare diritti di accesso specifici dell'oggetto corrispondenti all'oggetto di sistema sottostante selezionato.
 
-Altre informazioni su come vengono propagati i diritti di accesso durante la duplicazione sono disponibili nella documentazione di [DuplicateHandle](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+Altre informazioni sulla propagazione dei diritti di accesso durante la duplicazione sono disponibili nella documentazione [di DuplicateHandle.](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
-I collegamenti agli elenchi di diritti di accesso per ogni tipo di oggetto sono reperibili nel riferimento *DuplicateHandle* , oltre che nella pagina **vedere anche** intestazioni di ogni `sh_*` parametro.
+I collegamenti agli elenchi di diritti di accesso per ogni tipo di oggetto sono disponibili nel riferimento *DuplicateHandle* e nelle intestazioni **Vedere** anche di ogni `sh_*` pagina dei parametri.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questo attributo, il flag deve essere impostato su (o versione successiva) quando si `-target` `NT100` esegue midl.exe.
 
-Gli handle di sistema sono handle definiti dal sistema operativo per fornire l'accesso a una risorsa di sistema. Quando si dichiara l'attributo, è necessario specificare il tipo specifico dell'oggetto sottostante all'handle.
+Gli handle di sistema sono handle definiti dal sistema operativo per fornire l'accesso a una risorsa di sistema. Quando si dichiara l'attributo, è necessario specificare il tipo specifico dell'oggetto dietro l'handle.
 
-Per un handle contrassegnato `[in]` , l'handle verrà duplicato nella procedura remota e rimarrà valido per la durata di tale procedura. Al ritorno dalla procedura remota, l'handle duplicato viene liberato. Per mantenere l'accesso all'oggetto sottostante, l'applicazione remota deve duplicare l'handle nello spazio degli indirizzi.
+Per un handle contrassegnato come , l'handle verrà duplicato nella procedura remota e `[in]` rimarrà valido per la durata di tale procedura. Al ritorno dalla procedura remota, l'handle duplicato viene liberato. Per mantenere l'accesso all'oggetto sottostante, l'applicazione remota deve duplicare l'handle nel proprio spazio indirizzi.
 
-Al contrario, per un handle contrassegnato `[out]` , quando una procedura remota restituisce un handle da una chiamata, la procedura remota ne perderà la proprietà. Per mantenere l'accesso all'oggetto sottostante, la procedura remota deve duplicare l'handle e restituire il duplicato. L'handle restituito diventa quindi di proprietà del chiamante che presuppone che venga chiuso quando l'accesso all'oggetto di sistema sottostante non è più necessario.
+Al contrario, per un handle contrassegnato come , quando una procedura remota restituisce un handle da una chiamata, la procedura remota perde `[out]` la proprietà di esso. Per mantenere l'accesso all'oggetto sottostante, la procedura remota deve duplicare l'handle e restituire il duplicato. L'handle restituito diventa quindi di proprietà del chiamante che si assume la responsabilità di chiuderlo quando l'accesso all'oggetto di sistema sottostante non è più necessario.
 
-Poiché si tratta di un meccanismo per inoltrare l'accesso a un oggetto di sistema, questo attributo è applicabile solo alle chiamate tra routine nello stesso computer.
+Poiché si tratta di un meccanismo per l'inoltro dell'accesso a un oggetto di sistema, questo attributo è applicabile solo alle chiamate tra le procedure nello stesso computer.
 
-I parametri di creazione e di accesso forniti all'oggetto sottostante dietro l'handle di sistema durante la creazione stabiliranno se è possibile eseguire correttamente il marshalling nel contesto della procedura remota.
+I parametri di creazione e accesso forniti all'oggetto sottostante dietro l'handle di sistema al momento della creazione determinano se è possibile eseguire correttamente il marshalling nel contesto della procedura remota.
 
-Una matrice di `system_handle` può essere passata all'interno o all'esterno con la sintassi disponibile nella documentazione relativa all' [**attributo size_is**](size-is.md) .
+Una matrice di può essere passata in o out con la sintassi disponibile nella documentazione `system_handle` [**size_is'attributo.**](size-is.md)
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti vengono usati diversi usi di `system_handle` . Per un esempio completo, vedere l'esempio [SystemHandlePassing](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SystemHandlePassing) .
+Negli esempi seguenti vengono utilizzati diversi utilizzi di `system_handle` . Per un esempio completo, vedere [l'esempio SystemHandlePassing.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/SystemHandlePassing)
 
 ```c
 interface MyInterface : IUnknown                         
@@ -102,8 +102,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -113,7 +113,7 @@ interface MyInterface : IUnknown
 </dt> <dt>
 -->
 
-[opzione/target](./-target.md)
+[Opzione /target](./-target.md)
 </dt> <dt>
 
 [Binding e handle](../Rpc/binding-and-handles.md)

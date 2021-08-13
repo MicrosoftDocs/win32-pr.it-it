@@ -1,31 +1,31 @@
 ---
-description: ICE57 convalida che i singoli componenti non combinano i dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
+description: ICE57 verifica che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
 ms.assetid: 3c82efa7-9cf3-4bcd-8ec4-b81d1d7aa0a6
 title: ICE57
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a59d609e5d7de0011666be0b5cc5e76417d8e67d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d875264ed1fbc0f7dedac863c21801e5180ae879c9c255af7cf4b36e5d402970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635162"
 ---
 # <a name="ice57"></a>ICE57
 
-ICE57 convalida che i singoli componenti non combinano i dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
+ICE57 verifica che i singoli componenti non combinano dati per computer e per utente. Questa azione personalizzata ICE controlla le voci del Registro di sistema, i file, i percorsi delle chiavi di directory e i collegamenti non annunciati.
 
-La combinazione di dati per singolo utente e computer nello stesso componente può comportare solo l'installazione parziale del componente per alcuni utenti in un ambiente multiutente.
+La combinazione di dati per utente e per computer nello stesso componente può comportare solo l'installazione parziale del componente per alcuni utenti in un ambiente multi-utente.
 
-Vedere la proprietà [**ALLUSERS**](allusers.md) .
+Vedere la [**proprietà ALLUSERS.**](allusers.md)
 
 ## <a name="result"></a>Risultato
 
-ICE57 Invia un errore se trova un componente che contiene le voci del registro di sistema per computer e per utente, i file, i percorsi delle chiavi di directory o i collegamenti non annunciati.
+ICE57 invia un errore se trova un componente che contiene sia voci del Registro di sistema per computer che per utente, file, percorsi delle chiavi di directory o collegamenti non annunciati.
 
 ## <a name="example"></a>Esempio
 
-ICE57reports gli errori seguenti per l'esempio illustrato.
+ICE57report gli errori seguenti per l'esempio illustrato.
 
 ``` syntax
 Component 'Component1' has both per-user and per-machine 
@@ -41,31 +41,31 @@ Component 'Component4' has both per-user data and
     a keypath that can be either per-user or per-machine.
 ```
 
-[Tabella componenti](component-table.md) (parziale)
+[Tabella dei componenti](component-table.md) (parziale)
 
 
 
 | Componente  | Directory  | Attributi | KeyPath |
 |------------|------------|------------|---------|
-| Component1 | Directory | 0          | FileA   |
-| Component2 | Directory | 4          | RegKeyB |
-| Component3 | Directory | 0          | FileC   |
-| Component4 | Directory | 4          | RegKeyD |
+| Componente1 | DirectoryA | 0          | FileA   |
+| Componente2 | DirectoryA | 4          | RegKeyB |
+| Componente3 | DirectoryA | 0          | FileC   |
+| Componente4 | DirectoryA | 4          | RegKeyD |
 
 
 
  
 
-[Tabella del registro di sistema](registry-table.md) (parziale)
+[Tabella del Registro di](registry-table.md) sistema (parziale)
 
 
 
 | Registro | Radice | Componente\_ |
 |----------|------|-------------|
-| RegKeyA  | 1    | Component1  |
-| RegKeyB  | 1    | Component2  |
-| RegKeyC  | -1   | Component3  |
-| RegKeyD  | -1   | Component4  |
+| RegKeyA  | 1    | Componente1  |
+| RegKeyB  | 1    | Componente2  |
+| RegKeyC  | -1   | Componente3  |
+| RegKeyD  | -1   | Componente4  |
 
 
 
@@ -77,10 +77,10 @@ Component 'Component4' has both per-user data and
 
 | File  | Componente\_ |
 |-------|-------------|
-| FileA | Component1  |
-| FileB | Component2  |
-| FileC | Component3  |
-| Campo | Component4  |
+| FileA | Componente1  |
+| FileB | Componente2  |
+| FileC | Componente3  |
+| Archiviato | Componente4  |
 
 
 
@@ -90,24 +90,24 @@ Component 'Component4' has both per-user data and
 
 
 
-| Directory  | \_Padre directory | DefaultDir |
+| Directory  | Directory \_ Parent | DefaultDir |
 |------------|-------------------|------------|
-| TARGETDIR  |                   | SourceDir  |
-| Directory | TARGETDIR         | Directory |
+| Targetdir  |                   | SourceDir  |
+| DirectoryA | Targetdir         | DirectoryA |
 
 
 
  
 
-Per correggere gli errori, riorganizzare l'applicazione in modo che ogni componente contenga solo risorse per utente o per computer e non entrambi.
+Per correggere gli errori, riorganizzare l'applicazione in modo che ogni componente contenga solo risorse per utente o per computer e non entrambe.
 
-Il primo messaggio di errore viene pubblicato perché Component1 contiene Filea (per computer) e la chiave del registro di sistema HKCU RegKeyA (per utente).
+Il primo messaggio di errore viene inviato perché Component1 contiene FileA (per computer) e la chiave del Registro di sistema HKCU RegKeyA (per utente).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

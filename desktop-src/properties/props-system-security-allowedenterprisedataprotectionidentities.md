@@ -1,17 +1,17 @@
 ---
 description: Opzioni di crittografia.
 ms.assetid: 0a117f9f-91c8-414e-b07b-68a95af22f28
-title: System. Security. AllowedEnterpriseDataProtectionIdentities
+title: System.Security.AllowedEnterpriseDataProtectionIdentities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db9f43a42ed8bc7ba180f0f127f3e04a5797e685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69d6d29ba2bde0bb91c0a79453f65ea501d0de334d60261c2363a3abdf1995c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464761"
 ---
-# <a name="systemsecurityallowedenterprisedataprotectionidentities"></a>System. Security. AllowedEnterpriseDataProtectionIdentities
+# <a name="systemsecurityallowedenterprisedataprotectionidentities"></a>System.Security.AllowedEnterpriseDataProtectionIdentities
 
 Opzioni crittografia
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

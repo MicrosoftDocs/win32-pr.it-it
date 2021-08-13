@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-NC-RO-replica-locations-BL
-description: Attributo di collegamento a ritroso per MS-DS-NC-RO-replica-locations.
+title: Attributo ms-DS-NC-RO-Replica-Locations-BL
+description: Attributo di collegamento indietro per ms-DS-NC-RO-Replica-Locations.
 ms.assetid: 2dc1356c-e259-4f53-8849-286146d9d7ef
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-NC-RO-replica-locations-BL
-- msDS-NC-RO-replica-locations-BL attributo AD schema
+- Schema AD dell'attributo ms-DS-NC-RO-Replica-Locations-BL
+- Schema AD dell'attributo msDS-NC-RO-Replica-Locations-BL
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a88f0d811a36d3fe81f0edc9427ef0f2263ace5d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ce4ee6b4353893b647705f475b5375e25bcb56599230a8e294c5d2c808157fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684525"
 ---
-# <a name="ms-ds-nc-ro-replica-locations-bl-attribute"></a>attributo ms-DS-NC-RO-replica-locations-BL
+# <a name="ms-ds-nc-ro-replica-locations-bl-attribute"></a>Attributo ms-DS-NC-RO-Replica-Locations-BL
 
-Attributo di collegamento a ritroso per [**ms-DS-NC-ro-replica-locations**](a-msds-nc-ro-replica-locations.md).
+Attributo di collegamento indietro [**per ms-DS-NC-RO-Replica-Locations**](a-msds-nc-ro-replica-locations.md).
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-NC-RO-replica-locations-BL        |
-| LDAP-Display-Name | msDS-NC-RO-replica-locations-BL         |
+| CN                | ms-DS-NC-RO-Replica-Locations-BL        |
+| Ldap-Display-Name | msDS-NC-RO-Replica-Locations-BL         |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1968                 |
-| System-ID-GUID    | f547511c-5b2a-44cc-8358-992a88258164    |
+| System-Id-Guid    | f547511c-5b2a-44cc-8358-992a88258164    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Attributo di collegamento a ritroso per [**ms-DS-NC-ro-replica-locations**](a-ms
 | ID collegamento                | 2115                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Attributo di collegamento a ritroso per [**ms-DS-NC-ro-replica-locations**](a-ms
 | ID collegamento                | 2115                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Attributo di collegamento a ritroso per [**ms-DS-NC-ro-replica-locations**](a-ms
 | ID collegamento                | 2115                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get FullScreenMode recupera la modalità a schermo intero corrente.
+description: Il metodo get \_ FullScreenMode recupera la modalità schermo intero corrente.
 ms.assetid: 351af361-5cfd-4e82-bd8a-92f629bd270d
-title: Metodo CBaseControlWindow.get_FullScreenMode (Ctlutil. h)
+title: CBaseControlWindow.get_FullScreenMode metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc77b43db2bb420e6cfe2eace44e96e1ab43b0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cebd74fd51551249c339100ac2dd3eda4a171cc316cca575f27f5194480978ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660534"
 ---
-# <a name="cbasecontrolwindowget_fullscreenmode-method"></a>Metodo CBaseControlWindow. Get \_ FullScreenMode
+# <a name="cbasecontrolwindowget_fullscreenmode-method"></a>Metodo CBaseControlWindow.get \_ FullScreenMode
 
-Il `get_FullScreenMode` metodo recupera la modalità a schermo intero corrente.
+Il `get_FullScreenMode` metodo recupera la modalità schermo intero corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +42,20 @@ HRESULT get_FullScreenMode(
 
 <dl> <dt>
 
-*FullScreenMode* 
+*Modalità schermo intero* 
 </dt> <dd>
 
-Puntatore alla modalità a schermo intero corrente.
+Puntatore alla modalità schermo intero corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione membro restituisce E \_ NOTIMPL per impostazione predefinita. In questo modo si informa il server di distribuzione plug-in [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) che questo renderer non implementa un renderer a schermo intero.
+Questa funzione membro restituisce E \_ NOTIMPL per impostazione predefinita. In questo modo si informa il distributore del plug-in [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) che questo renderer non implementa un renderer a schermo intero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Questa funzione membro restituisce E \_ NOTIMPL per impostazione predefinita. In
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

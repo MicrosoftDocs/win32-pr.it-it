@@ -1,6 +1,6 @@
 ---
-title: Metodo IWMPSettings2 requestMediaAccessRights
-description: Il metodo requestMediaAccessRights richiede un livello specificato di accesso alla libreria. | Metodo IWMPSettings2 requestMediaAccessRights
+title: Metodo requestMediaAccessRights IWMPSettings2
+description: Il metodo requestMediaAccessRights richiede un livello di accesso specificato alla libreria. | Metodo requestMediaAccessRights IWMPSettings2
 ms.assetid: ea33852c-d1e0-45cf-8954-2a1e2fe51910
 keywords:
 - Metodo requestMediaAccessRights Windows Media Player
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c609afffc1d9b228d908d905e0eb1a6ef8741032
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aba44540717059945f273be23d2e3c63b3c10cfc6d21d35ee1c4756ea1503708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568488"
 ---
-# <a name="iwmpsettings2requestmediaaccessrights-method"></a>Metodo IWMPSettings2:: requestMediaAccessRights
+# <a name="iwmpsettings2requestmediaaccessrights-method"></a>Metodo IWMPSettings2::requestMediaAccessRights
 
-Il metodo **requestMediaAccessRights** richiede un livello specificato di accesso alla libreria.
+Il **metodo requestMediaAccessRights** richiede un livello di accesso specificato alla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,16 +53,16 @@ Implements IWMPSettings2.requestMediaAccessRights
 
 <dl> <dt>
 
-*bstrDesiredAccess* \[ in\]
+*bstrDesiredAccess* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che corrisponde a uno dei valori seguenti.
+**System.String** che è uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                      |
 |-------|----------------------------------|
-| Nessuno  | Solo diritti di accesso agli elementi correnti. |
+| Nessuno  | Solo diritti di accesso all'elemento corrente. |
 | lettura  | Solo diritti di accesso in lettura.         |
 | completi  | Diritti di accesso in lettura/scrittura.        |
 
@@ -74,13 +74,13 @@ Implements IWMPSettings2.requestMediaAccessRights
 
 ## <a name="return-value"></a>Valore restituito
 
-**System. Boolean** che indica se sono stati concessi i diritti di accesso richiesti.
+**System.Boolean che** indica se sono stati concessi i diritti di accesso richiesti.
 
 ## <a name="remarks"></a>Commenti
 
-Una pagina Web deve prima richiedere all'utente l'autorizzazione per la lettura o la scrittura di dati nella libreria. La chiamata di questo metodo richiede all'utente una finestra di dialogo che richiede il livello di autorizzazione specificato. Ciò significa che determinati metodi, proprietà ed eventi saranno inaccessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Il livello dei diritti di accesso corrente può essere recuperato tramite **IWMPSettings2. mediaAccessRights**.
+Una pagina Web deve prima richiedere all'utente l'autorizzazione per leggere o scrivere dati nella libreria. La chiamata di questo metodo richiede all'utente una finestra di dialogo che richiede il livello di autorizzazione specificato. Ciò significa che determinati metodi, proprietà ed eventi non saranno accessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Il livello di diritti di accesso corrente può essere recuperato tramite **IWMPSettings2.mediaAccessRights**.
 
-Per le applicazioni in esecuzione nel computer dell'utente non è necessario usare questo metodo.
+Le applicazioni in esecuzione nel computer dell'utente non devono usare questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,7 +88,7 @@ Per le applicazioni in esecuzione nel computer dell'utente non è necessario usa
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,7 +101,7 @@ Per le applicazioni in esecuzione nel computer dell'utente non è necessario usa
 [**Interfaccia IWMPSettings2 (VB e C#)**](iwmpsettings2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,30 +1,30 @@
 ---
-title: Determinazione del percorso di una condivisione
-description: Nell'esempio seguente viene illustrato come chiamare la funzione WNetGetUniversalName per determinare il percorso di una condivisione in un'unità reindirizzata.
+title: Determinazione della posizione di una condivisione
+description: L'esempio seguente illustra come chiamare la funzione WNetGetUniversalName per determinare il percorso di una condivisione in un'unità reindirizzata.
 ms.assetid: ce57fecb-8b14-4514-a3fd-45d7ef6eee89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c50c0d46e9ac2e520f7be15812b2f541fd3e588f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90a881d452c6aa9eac5eea85d4ef0e9ddce83524f001294d2a6d6d6307f5ff1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566894"
 ---
-# <a name="determining-the-location-of-a-share"></a>Determinazione del percorso di una condivisione
+# <a name="determining-the-location-of-a-share"></a>Determinazione della posizione di una condivisione
 
-Nell'esempio seguente viene illustrato come chiamare la funzione [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) per determinare il percorso di una condivisione in un'unità reindirizzata.
+L'esempio seguente illustra come chiamare la [**funzione WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) per determinare il percorso di una condivisione in un'unità reindirizzata.
 
-Innanzitutto, nell'esempio di codice viene chiamata la funzione **WNetGetUniversalName** , specificando il livello di informazioni del [**nome universale per recuperare un puntatore a una stringa \_ \_**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) del nome Universal Naming Convention (UNC) per la risorsa. L'esempio chiama quindi **WNetGetUniversalName** una seconda volta, specificando il livello informazioni sul [**\_ nome remoto \_**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) per recuperare due stringhe di informazioni di connessione di rete aggiuntive. Se le chiamate hanno esito positivo, l'esempio stampa il percorso della condivisione.
+Prima di tutto, l'esempio di codice chiama la funzione **WNetGetUniversalName,** specificando il livello di informazioni [**UNIVERSAL NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) per recuperare un puntatore a una stringa di nome Universal Naming Convention (UNC) per la risorsa. L'esempio chiama quindi **WNetGetUniversalName** una seconda volta, specificando il livello di informazioni [**REMOTE NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) per recuperare altre due stringhe di informazioni di connessione di rete. Se le chiamate hanno esito positivo, nell'esempio viene stampata la posizione della condivisione.
 
 Per testare l'esempio di codice seguente, seguire questa procedura:
 
-1.  Denominare l'esempio di codice GetUni. cpp.
+1.  Assegnare all'esempio di codice il nome GetUni.cpp.
 2.  Aggiungere l'esempio a un'applicazione console denominata GetUni.
-3.  Collegare le librerie shell32. lib, MPR. lib e NetApi32. lib all'elenco di librerie del compilatore.
-4.  Al prompt dei comandi passare alla directory GetUni
-5.  Compilare GetUni. cpp.
-6.  Eseguire il file GetUni.exe seguito da una lettera di unità e due punti, come indicato di seguito:
+3.  Collegare le librerie Shell32.lib, Mpr.lib e NetApi32.lib all'elenco di librerie del compilatore.
+4.  Dal prompt dei comandi passare alla directory GetUni.
+5.  Compilare GetUni.cpp.
+6.  Eseguire il file GetUni.exe seguito da una lettera di unità e due punti, come segue:
 
     **GetUni H:\\**
 
@@ -95,6 +95,6 @@ void main( int argc, char *argv[] )
 
 
 
- 
+ 
 
- 
+ 

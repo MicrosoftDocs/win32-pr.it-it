@@ -1,9 +1,9 @@
 ---
-title: attributo ncacn_dnet_nsp
-description: La \_ \_ parola chiave ncacn DNET NSP identifica DECnet come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+title: ncacn_dnet_nsp attributo
+description: La parola chiave ncacn \_ dnet \_ nsp identifica DECnet come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 ms.assetid: 797251c1-c5d3-416b-8bc7-5b83bb7027e6
 keywords:
-- attributo ncacn_dnet_nsp MIDL
+- ncacn_dnet_nsp attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6312aff15d3bdef85d1e37829d669ce1faa5fbb4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c4fa7448ff9d0cf3946ad3d0293ade19a5c2c0c407ca157d79c2c425f4a8ef6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642762"
 ---
-# <a name="ncacn_dnet_nsp-attribute"></a>ncacn \_ DNET- \_ attributo NSP
+# <a name="ncacn_dnet_nsp-attribute"></a>Attributo nsp ncacn \_ \_ dnet
 
-La parola chiave **ncacn \_ DNET \_ NSP** identifica DECnet come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere utilizzata nelle nuove applicazioni.
+La **parola chiave ncacn \_ dnet \_ nsp** identifica DECnet come famiglia di protocolli per l'endpoint. Questa famiglia di protocolli è obsoleta e non deve essere usata nelle nuove applicazioni.
 
 ``` syntax
 endpoint("ncacn_dnet_nsp:server-name[port-name]")
@@ -31,28 +31,28 @@ endpoint("ncacn_dnet_nsp:server-name[port-name]")
 
 <dl> <dt>
 
-*nome server* 
+*nome-server* 
 </dt> <dd>
 
 Specifica il nome o l'indirizzo Internet per il server, o host, computer. Il nome è una stringa di caratteri.
 
 </dd> <dt>
 
-*nome porta* 
+*port-name* 
 </dt> <dd>
 
-Specifica un nome di oggetto o un numero di oggetto DECnet. Il nome dell'oggetto può essere composto da un massimo di 16 caratteri. I numeri degli oggetti possono essere preceduti dal simbolo di cancelletto ( \# ).
+Specifica il nome o il numero dell'oggetto DECnet. Il nome dell'oggetto può contenere fino a 16 caratteri. I numeri di oggetto possono essere preceduti dal simbolo di cancelletto ( \# ).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La sintassi della stringa della porta di trasporto DECnet, come tutte le stringhe di porta, viene definita indipendentemente dalla specifica IDL. Il compilatore esegue alcune verifiche della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. È possibile che alcuni errori vengano segnalati in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa della porta di trasporto DECnet, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue alcuni controlli della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
 
 > [!Note]  
 > Questa famiglia di protocolli non è supportata in Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Esempi
 
@@ -81,12 +81,12 @@ interface iface
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
-[**Associazione stringa**](/windows/desktop/Rpc/string-binding)
+[**associazione di stringhe**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: Elimina uno snapshot del sistema virtuale esistente. Questo metodo può essere un effetto collaterale per eliminare altri snapshot che dipendono dallo snapshot interessato.
+description: Eliminare uno snapshot del sistema virtuale esistente. Questo metodo può causare l'eliminazione di altri snapshot dipendenti dagli snapshot interessati.
 ms.assetid: 69f60d0e-50ef-4a38-ad4b-88534b7fb3f8
 title: Metodo DestroySnapshot della classe CIM_VirtualSystemSnapshotService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 80d618374d2da4a12f2ce31284d7b3fa36ba65ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 986ffe6a7a5bd6ac18d47bcbebe40ac038ea86cdc096173704d30515067fcccc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646370"
 ---
 # <a name="destroysnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Metodo DestroySnapshot della classe CIM \_ VirtualSystemSnapshotService
 
-Elimina uno snapshot del sistema virtuale esistente. Questo metodo può essere un effetto collaterale per eliminare altri snapshot che dipendono dallo snapshot interessato.
+Eliminare uno snapshot del sistema virtuale esistente. Questo metodo può causare l'eliminazione di altri snapshot dipendenti dagli snapshot interessati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,20 +40,20 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshot* \[ in\]
+*AffectedSnapshot* \[ Pollici\]
 </dt> <dd>
 
-Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) allo snapshot del sistema virtuale interessato.
+Riferimento [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) per lo snapshot del sistema virtuale interessato.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione prolungata, è possibile che venga restituito facoltativamente un [**\_ ConcreteJob CIM**](cim-concretejob.md) che rappresenta il processo.
+Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito [**un processo CIM \_ ConcreteJob**](cim-concretejob.md) che rappresenta il processo.
 
 > [!Note]  
-> Questo parametro è di lettura/scrittura in Windows 8.1.
+> Questo parametro era in lettura/scrittura in Windows 8.1.
 
  
 
@@ -61,7 +61,7 @@ Se l'operazione è a esecuzione prolungata, è possibile che venga restituito fa
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -71,13 +71,13 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -89,13 +89,13 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -105,9 +105,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -116,7 +116,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

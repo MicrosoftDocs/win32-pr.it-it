@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un set di componenti che funzionano come una singola entità di alto livello.
+description: Rappresenta un set di componenti che funzionano come singola entità di alto livello.
 ms.assetid: 784cee32-e0ae-4632-8dac-e5110513f5c9
-title: Classe CIM_System (gestione Hyper-V)
+title: CIM_System classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a51e56ad3e8f91200fbe5bc7e09ac2f14c4ee232
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 143e2514ae22528c695542ad67024a4ef9a75532c0e734b69f3c9e6772777a70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646795"
 ---
-# <a name="cim_system-class-hyper-v-management"></a>Classe CIM_System (gestione Hyper-V)
+# <a name="cim_system-class-hyper-v-management"></a>CIM_System classe (gestione Hyper-V)
 
-Rappresenta un set di componenti che funzionano come una singola entità di alto livello.
+Rappresenta un set di componenti che funzionano come singola entità di alto livello.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,58 +51,58 @@ class CIM_System : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Members
 
-La classe di **\_ sistema CIM** presenta questi tipi di membri:
+La **classe CIM \_ System** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ sistema CIM** dispone di queste proprietà.
+La **classe CIM \_ System** ha queste proprietà.
 
 <dl> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName** è combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
+Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName viene** combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ System**.**OtherIdentifyingInfo**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ System**.**OtherIdentifyingInfo**")
 </dt> </dl>
 
-Matrice che contiene le descrizioni dei valori nella proprietà **OtherIdentifyingInfo** . Gli elementi della matrice in **IdentifyingDescriptions** corrispondono agli elementi della proprietà **IdentifyingDescriptions** .
+Matrice contenente le descrizioni dei valori nella **proprietà OtherIdentifyingInfo.** Gli elementi della matrice in **IdentifyingDescriptions** corrispondono agli elementi nella **proprietà IdentifyingDescriptions.**
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Chiave di questa istanza in un ambiente aziendale.
@@ -112,61 +112,61 @@ Chiave di questa istanza in un ambiente aziendale.
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Convenzione di denominazione utilizzata dalla proprietà Name per assicurarsi che i valori dei **nomi** siano univoci.
+Convenzione di denominazione usata dalla proprietà Name per garantire che i **valori Name** siano univoci.
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ sistema CIM**.**IdentifyingDescriptions**")
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ System**.**IdentifyingDescriptions**")
 </dt> </dl>
 
-Matrice che contiene un set di dati aggiuntivi, oltre alle informazioni sul nome del sistema, che possono essere utilizzati per identificare un sistema di computer.
+Matrice contenente un set di dati aggiuntivi, oltre alle informazioni sul nome del sistema, che possono essere usati per identificare un sistema informatico.
 
 </dd> <dt>
 
 **PrimaryOwnerContact**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni generali \| 001,4 ")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. INFORMAZIONI \| GENERALI DMTF \| 001.4")
 </dt> </dl>
 
-Stringa che fornisce informazioni sul modo in cui il proprietario del sistema primario può essere raggiunto, ad esempio numero di telefono, indirizzo di posta elettronica e così via.
+Stringa che fornisce informazioni su come è possibile raggiungere il proprietario del sistema primario, ad esempio il numero di telefono, l'indirizzo di posta elettronica e così via.
 
 </dd> <dt>
 
 **PrimaryOwnerName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| informazioni generali \| 001,3 ")
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| General Information \| 001.3")
 </dt> </dl>
 
 Nome dell'utente primario del sistema.
@@ -176,13 +176,13 @@ Nome dell'utente primario del sistema.
 **Ruoli**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Matrice che contiene i ruoli eseguiti dal sistema in un ambiente aziendale.
+Matrice contenente i ruoli eseguiti dal sistema in un ambiente aziendale.
 
 </dd> </dl>
 
@@ -194,8 +194,8 @@ Matrice che contiene i ruoli eseguiti dal sistema in un ambiente aziendale.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -204,7 +204,7 @@ Matrice che contiene i ruoli eseguiti dal sistema in un ambiente aziendale.
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENT CIM**](cim-enabledlogicalelement.md)
+[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md)
 </dt> </dl>
 
  

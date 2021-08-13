@@ -1,7 +1,7 @@
 ---
-description: La proprietà FeatureState di sola lettura restituisce lo stato di installazione di una funzionalità.
+description: La proprietà FeatureState di sola lettura restituisce lo stato installato di una funzionalità.
 ms.assetid: a3d30296-191e-4446-b5b1-a92f8991926a
-title: Proprietà Installer. FeatureState
+title: Proprietà Installer.FeatureState
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: cf6fe61899ea1daac37fd678e9f0e70dfcc3af69
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 989abe860848b943e77b02910e9760f8fcaecc97fd8a2634f8147605577613d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631275"
 ---
-# <a name="installerfeaturestate-property"></a>Proprietà Installer. FeatureState
+# <a name="installerfeaturestate-property"></a>Proprietà Installer.FeatureState
 
-La proprietà **FeatureState** di sola lettura restituisce lo stato di installazione di una funzionalità.
+La proprietà **FeatureState** di sola lettura restituisce lo stato installato di una funzionalità.
 
 Questa proprietà è di sola lettura.
 
@@ -46,10 +46,10 @@ Questa proprietà restituisce uno dei valori seguenti.
 | Valore                     | Descrizione                                      |
 |---------------------------|--------------------------------------------------|
 | msiInstallStateAbsent     | La funzionalità non è installata.                    |
-| msiInstallStateAdvertised | La funzionalità è annunciata.                       |
-| msiInstallStateLocal      | La funzionalità è installata per l'esecuzione in locale.         |
-| msiInstallStateSource     | La funzionalità è installata per l'esecuzione dall'origine.     |
-| msiInstallStateInvalidArg | Un parametro non valido è stato passato alla funzione. |
+| msiInstallStateAdvertised | La funzionalità viene annunciata.                       |
+| msiInstallStateLocal      | La funzionalità viene installata per l'esecuzione in locale.         |
+| msiInstallStateSource     | La funzionalità viene installata per l'esecuzione dall'origine.     |
+| msiInstallStateInvalidArg | Alla funzione è stato passato un parametro non valido. |
 | msiInstallStateUnknown    | Il codice prodotto o l'ID funzionalità è sconosciuto.       |
 | msiInstallStateBadConfig  | I dati di configurazione sono danneggiati.               |
 
@@ -59,7 +59,7 @@ Questa proprietà restituisce uno dei valori seguenti.
 
  
 
-La proprietà **FeatureState** non verifica che la funzionalità sia accessibile.
+La **proprietà FeatureState** non convalida che la funzionalità sia accessibile.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ La proprietà **FeatureState** non verifica che la funzionalità sia accessibile
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Accelera il servizio nello stato interrotto.
+description: Paces the service in the stopped state.
 ms.assetid: d7469643-bccc-4f55-b2fc-d2bc2e392d84
 title: Metodo StopService della classe CIM_Service (gestione di Hyper-V)
 ms.topic: reference
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f4eb354a48b074bad8adac4d5635e204844c31b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b36cab1054e99ac306fb1b21fe9f08e0820974a0883e90655a180b07035b7f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647584"
 ---
 # <a name="stopservice-method-of-the-cim_service-class-hyper-v-management"></a>Metodo StopService della classe CIM_Service (gestione di Hyper-V)
 
-Accelera il servizio nello stato interrotto.
+Paces the service in the stopped state.
 
 > [!Note]
 >
-> La semantica di questo metodo si sovrappone al metodo **RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md). Questo metodo viene mantenuto perché è stato ampiamente implementato e la semplice semantica di "arresto" è comoda da usare.
+> La semantica di questo metodo si sovrappone al **metodo RequestStateChange** ereditato da [**CIM \_ EnabledLogicalElement.**](cim-enabledlogicalelement.md) Questo metodo viene mantenuto perché è stato ampiamente implementato e la semplice semantica di arresto è comoda da usare.
 
  
 
@@ -45,7 +45,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,9 +54,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -65,7 +65,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_Servizio CIM**](cim-service.md)
+[**Servizio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

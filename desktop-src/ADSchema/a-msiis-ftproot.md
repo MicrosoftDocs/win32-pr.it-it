@@ -1,11 +1,11 @@
 ---
-title: MS-IIS-FTP-root (attributo)
-description: Questo attributo determina la condivisione file server. Viene usato in combinazione con MS-IIS-FTP-dir per determinare la home directory dell'utente FTP.
+title: Attributo ms-IIS-FTP-Root
+description: Questo attributo determina la file server condivisione. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
 ms.assetid: b86dcafb-0b0d-4225-924c-690f739092a8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-IIS-FTP-root
-- msIIS-schema AD attributo FTPRoot
+- Schema AD dell'attributo ms-IIS-FTP-Root
+- Schema AD dell'attributo msIIS-FTPRoot
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7c55980b8b08865889f7567fa6bdb4dcf7bde1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aa4def81aa39c9df5aaa336a05514ab4581aa14533917fad008fc9c49d32d13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104480329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682525"
 ---
-# <a name="ms-iis-ftp-root-attribute"></a>MS-IIS-FTP-root (attributo)
+# <a name="ms-iis-ftp-root-attribute"></a>Attributo ms-IIS-FTP-Root
 
-Questo attributo determina la condivisione file server. Viene usato in combinazione con MS-IIS-FTP-dir per determinare la home directory dell'utente FTP.
+Questo attributo determina la file server condivisione. Viene usato insieme a ms-IIS-FTP-Dir per determinare la home directory dell'utente FTP.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| CN                | MS-IIS-FTP-radice                                                                                                                 |
-| LDAP-Display-Name | msIIS-FTPRoot                                                                                                                   |
+| CN                | ms-IIS-FTP-Root                                                                                                                 |
+| Ldap-Display-Name | msIIS-FTPRoot                                                                                                                   |
 | Dimensione              | 30-50 caratteri (15-25 caratteri Unicode per ogni proprietà)                                                                   |
-| Privilegio aggiornamento  | Amministratore di dominio & sistema locale                                                                                             |
-| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. In questo modo si modifica raramente. |
+| Privilegio di aggiornamento  | Amministratore di dominio & sistema locale                                                                                             |
+| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. Raramente cambierà dopo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
-| System-ID-GUID    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
+| System-Id-Guid    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
 
 
@@ -57,15 +57,15 @@ Questo attributo determina la condivisione file server. Viene usato in combinazi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo determina la condivisione file server. Viene usato in combinazi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo determina la condivisione file server. Viene usato in combinazi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo determina la condivisione file server. Viene usato in combinazi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo determina la condivisione file server. Viene usato in combinazi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

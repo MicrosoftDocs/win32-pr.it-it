@@ -1,7 +1,7 @@
 ---
 description: Restituisce informazioni sul provider di archiviazione.
 ms.assetid: bdacb5bb-a37a-4970-add7-57625bec1ce0
-title: 'Metodo IPStore:: GetInfo (PStore. h)'
+title: Metodo IPStore::GetInfo (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 7747c3acf15a60f5556a8855ef4825715ef5050b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 118f346acf550a8d4835931102a26d70f0c41fad7cc23ac706268b7778c31b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667272"
 ---
-# <a name="ipstoregetinfo-method"></a>Metodo IPStore:: GetInfo
+# <a name="ipstoregetinfo-method"></a>Metodo IPStore::GetInfo
 
-\[L'archiviazione protetta (PStore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. PStore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono vivamente invitati a sfruttare i vantaggi della protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Archiviazione (Pstore) è disponibile per l'uso in Windows Server 2003 e Windows XP. È disponibile solo per le operazioni di sola lettura in Windows Server 2008 e Windows Vista, ma potrebbe non essere disponibile nelle versioni successive. Pstore usa un'implementazione precedente della protezione dei dati. Gli sviluppatori sono fortemente invitati a sfruttare la protezione dei dati più avanzata fornita dalle funzioni [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Restituisce informazioni sul provider di archiviazione.
 
@@ -41,16 +41,16 @@ HRESULT GetInfo(
 
 <dl> <dt>
 
-*ppProperties* \[ out\]
+*ppProperties* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura **PPST \_ ProviderInfo restituito da** che contiene informazioni sul provider di archiviazione.
+Puntatore a una **struttura PPST \_ PROVIDERINFO** che contiene informazioni sul provider di archiviazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** indica che la funzione ha avuto esito positivo.
+Il valore restituito è un **valore HRESULT.** Il valore **PST \_ E \_ OK** indica che la funzione ha avuto esito positivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,7 +58,7 @@ Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** ind
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PStore. h</dt> </dl>    |
+| Intestazione<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
@@ -67,7 +67,7 @@ Il valore restituito è un valore **HRESULT** . Il valore **pst \_ E \_ OK** ind
 
 <dl> <dt>
 
-[**IPStore**](ipstore.md)
+[**Archivio IP**](ipstore.md)
 </dt> </dl>
 
  

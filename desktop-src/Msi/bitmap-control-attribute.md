@@ -1,21 +1,21 @@
 ---
-description: Se viene impostato il bit del controllo bitmap, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna di testo nella tabella dei controlli è una chiave esterna nella tabella binaria.
+description: Se il bit Bitmap Control è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text della tabella Control è una chiave esterna nella tabella Binary.
 ms.assetid: ec774f31-7712-4a70-8c69-1cc731009049
-title: Attributo di controllo bitmap
+title: Attributo del controllo Bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bda78231c1689c4c5faebeab98fbf6566c7e667
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2cd7ea8186d1ed16de71ae9974bb67a082142ed3e921d023ad905d4f47bbc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638740"
 ---
-# <a name="bitmap-control-attribute"></a>Attributo di controllo bitmap
+# <a name="bitmap-control-attribute"></a>Attributo del controllo Bitmap
 
-Se viene impostato il bit del controllo bitmap, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna di testo nella [tabella dei controlli](control-table.md) è una chiave esterna nella [tabella binaria](binary-table.md).
+Se il bit Bitmap Control è impostato, il testo nel controllo viene sostituito da un'immagine bitmap. La colonna Text nella [tabella Control è](control-table.md) una chiave esterna nella tabella [Binary](binary-table.md).
 
-Se questo bit non è impostato, il testo nel controllo viene specificato nella colonna di testo della tabella dei [controlli](control-table.md).
+Se questo bit non è impostato, il testo nel controllo viene specificato nella colonna Text della [tabella Control](control-table.md).
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -43,13 +43,13 @@ Se questo bit non è impostato, il testo nel controllo viene specificato nella c
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit bitmap nella colonna attributi del record del controllo nella [tabella dei controlli](control-table.md).
+Per impostare questo attributo in un controllo , includere il bit Bitmap nella colonna Attributes del record del controllo nella [tabella Control](control-table.md).
 
-La colonna di testo nella tabella dei controlli viene utilizzata come chiave esterna per la [tabella binaria](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che un testo.
+La colonna Text nella tabella Control viene usata come chiave esterna della tabella [Binary](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che testo.
 
-Non impostare sia l' [icona](icon-control-attribute.md) che i bit bitmap.
+Non impostare entrambi i bit [Icona](icon-control-attribute.md) e Bitmap.
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di](control-attributes.md) controllo e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

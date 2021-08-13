@@ -1,6 +1,6 @@
 ---
-title: parola chiave sh_mutex
-description: La \_ parola chiave \ SH mutex \ specifica che l'oggetto di sistema è un handle per un mutex.
+title: sh_mutex parola chiave
+description: La parola chiave \ sh \_ mutex\ specifica che l'oggetto di sistema è un handle per un mutex.
 keywords:
 - sh_mutex parola chiave MIDL
 topic_type:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 8616ded29d1d8c106af21e6cd1252535f4da8457
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: a355eb0121875e186a485ee6f7f96519a4fa0cfb1c75c806e1baea895691c914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641366"
 ---
-# <a name="sh_mutex-keyword"></a>SH \_ mutex (parola chiave)
+# <a name="sh_mutex-keyword"></a>Parola \_ chiave sh mutex
 
-La parola chiave del **\_ mutex SH** specifica che un oggetto `system_handle` include un handle per un mutex.
+La **parola chiave sh \_ mutex** specifica che un `system_handle` oggetto contiene un handle per un mutex.
 
 ``` syntax
 [system_handle(sh_mutex)]
@@ -32,11 +32,11 @@ La parola chiave del **\_ mutex SH** specifica che un oggetto `system_handle` in
 
 Questa parola chiave è un parametro per [**system_handle**](system-handle.md).
 
-La documentazione di [**system_handle**](system-handle.md) contiene inoltre informazioni dettagliate sull'utilizzo facoltativo del parametro *Access-Rights* . Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` per le specifiche della [funzione **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+La [**system_handle**](system-handle.md) contiene anche informazioni dettagliate sull'uso facoltativo del *parametro access-rights.* Il comportamento predefinito è `DUPLICATE_SAME_ACCESS` in base alle specifiche della funzione [ **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questa parola chiave con l' `system_handle` attributo, il `-target` flag deve essere impostato su `NT100` (o versione successiva) quando si esegue midl.exe.
+Per usare questa parola chiave con l'attributo , il flag deve essere impostato `system_handle` `-target` su `NT100` (o superiore) durante l'esecuzione midl.exe.
 
 ## <a name="examples"></a>Esempio
 
@@ -51,8 +51,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Client minimo supportato | Aggiornamento dell'anniversario di Windows 10 (versione 1607, Build 14393) |
-| Server minimo supportato | Windows Server 2016 (Build 14393) |
+| Client minimo supportato | Windows 10 Aggiornamento dell'anniversario (versione 1607, build 14393) |
+| Server minimo supportato | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -64,11 +64,11 @@ interface MyInterface : IUnknown
 [Oggetti mutex](../sync/mutex-objects.md)
 </dt> <dt>
 
-[Sicurezza e diritti di accesso degli oggetti di sincronizzazione](../sync/synchronization-object-security-and-access-rights.md)
+[Sicurezza degli oggetti di sincronizzazione e diritti di accesso](../sync/synchronization-object-security-and-access-rights.md)
 </dt> <dt>
 
-[**CreateMutex** (funzione)](/windows/win32/api/synchapi/nf-synchapi-createmutexa)
+[**Funzione CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa)
 </dt> <dt>
 
-[**CreateMutexEx** (funzione)](/windows/win32/api/synchapi/nf-synchapi-createmutexexa)
+[**Funzione CreateMutexEx**](/windows/win32/api/synchapi/nf-synchapi-createmutexexa)
 </dt> </dl>

@@ -1,7 +1,7 @@
 ---
 description: Rappresenta una raccolta di sistemi virtuali.
 ms.assetid: acf51beb-1103-43a4-8dc5-1a7f2a0482be
-title: Classe Msvm_VirtualSystemCollection
+title: Msvm_VirtualSystemCollection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a9746356744f2743a8d6656ef4c61044223be113
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04bb39e0c3ecb73facf09e962d2d189bd6ac59449908c0ed9e0214aa5551595e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644818"
 ---
-# <a name="msvm_virtualsystemcollection-class"></a>\_Classe MSVM VirtualSystemCollection
+# <a name="msvm_virtualsystemcollection-class"></a>Classe Msvm \_ VirtualSystemCollection
 
 Rappresenta una raccolta di sistemi virtuali.
 
@@ -53,26 +53,26 @@ class Msvm_VirtualSystemCollection : CIM_CollectionOfMSEs
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualSystemCollection di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualSystemCollection** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualSystemCollection di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualSystemCollection** ha queste proprietà.
 
 <dl> <dt>
 
 **CollectionID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**chiave**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionId"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificazione univoca dell'oggetto raccolta.
@@ -82,13 +82,13 @@ Identificazione univoca dell'oggetto raccolta.
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia univoco.
@@ -98,7 +98,7 @@ Nome definito dall'utente per la raccolta. Si noti che non è garantito che sia 
 **FailedOverReplicationType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -107,7 +107,7 @@ Tipo di accesso: sola lettura
 Tipo di failover eseguito per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -139,16 +139,16 @@ Tipo di failover eseguito per la raccolta di sistemi virtuali.
 **LastApplyConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Livello di coerenza dell'ultimo Delta applicato.
+Livello di coerenza dell'ultimo delta applicato.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -163,34 +163,34 @@ Livello di coerenza dell'ultimo Delta applicato.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Coerente** con l'applicazione (1)
+<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Coerente con l'applicazione** (1)
 
 
 </dt> <dd>
 
-L'ultimo Delta applicato indica un punto nel tempo in cui il sistema virtuale era in uno stato coerente con l'applicazione.
+L'ultimo delta applicato indica un punto nel tempo in cui il sistema virtuale era in stato coerente con l'applicazione.
 
 </dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coerente con l'arresto anomalo** (2)
+<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Coerenza arresto anomalo** del sistema (2)
 
 
 </dt> <dd>
 
-L'ultimo Delta applicato indica un punto nel tempo in cui il sistema virtuale si trova in uno stato di arresto anomalo.
+L'ultimo delta applicato indica un punto nel tempo in cui il sistema virtuale era in stato coerente con l'arresto anomalo del sistema.
 
 </dd> <dt>
 
 <span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>
 
-<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coerente con l'arresto anomalo del gruppo** (3)
+<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Coerenza dell'arresto anomalo del** gruppo (3)
 
 
 </dt> <dd>
 
-L'ultimo Delta applicato indica un momento in cui il gruppo si trova in uno stato di arresto anomalo del sistema.
+L'ultimo delta applicato indica un punto nel tempo in cui il gruppo era in stato coerente con l'arresto anomalo del sistema.
 
 </dd> </dl>
 
@@ -205,10 +205,10 @@ Tipo di dati: **DateTime**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ora in cui viene applicata l'ultima replica al recupero per la raccolta di sistemi virtuali.
+Ora in cui viene applicata l'ultima replica al ripristino per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -217,16 +217,16 @@ Ora in cui viene applicata l'ultima replica al recupero per la raccolta di siste
 **LastApplyVirtualMachineIds**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Matrice di ID di macchina virtuale che sono stati applicati correttamente nell'ultimo ciclo di applicazione.
+Matrice di ID macchina virtuale applicati correttamente nell'ultimo ciclo di applicazione.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -235,7 +235,7 @@ Matrice di ID di macchina virtuale che sono stati applicati correttamente nell'u
 **ReplicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -244,7 +244,7 @@ Tipo di accesso: sola lettura
 Tipo di replica per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -273,7 +273,7 @@ Tipo di replica per la raccolta di sistemi virtuali.
 
 <span id="Test_Replica"></span><span id="test_replica"></span><span id="TEST_REPLICA"></span>
 
-**Replica di test** (3)
+**Replica di** test (3)
 
 
 </dt> <dd></dd> </dl>
@@ -283,16 +283,16 @@ Tipo di replica per la raccolta di sistemi virtuali.
 **ReplicationState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Stato di replica per la raccolta di sistemi virtuali.
+Stato della replica per la raccolta di sistemi virtuali.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1703.
+> Aggiunta in Windows 10 versione 1703.
 
  
 
@@ -321,7 +321,7 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <span id="Replicating"></span><span id="replicating"></span><span id="REPLICATING"></span>
 
-**Replica** in corso (3)
+**Replica** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -335,14 +335,14 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <span id="Recovered"></span><span id="recovered"></span><span id="RECOVERED"></span>
 
-**Ripristino** (5)
+**Recuperato** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-**Commit eseguito** (6)
+**Commit** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -363,7 +363,7 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <span id="Waiting_to_start_resynchronization"></span><span id="waiting_to_start_resynchronization"></span><span id="WAITING_TO_START_RESYNCHRONIZATION"></span>
 
-**In attesa dell'avvio della risincronizzazione** (9)
+**In attesa di avviare la risincronizzazione** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -377,7 +377,7 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <span id="Planned_failover_initiatedRepurpose_initiatedTest_failover_initiatedPartially_enabled"></span><span id="planned_failover_initiatedrepurpose_initiatedtest_failover_initiatedpartially_enabled"></span><span id="PLANNED_FAILOVER_INITIATEDREPURPOSE_INITIATEDTEST_FAILOVER_INITIATEDPARTIALLY_ENABLED"></span>
 
-**Failover pianificato InitiatedRepurpose initiatedTest failover initiatedPartially abilitato** (11)
+**Failover pianificato avviatoRepurpose Failover** del test avviato Parzialmente abilitato (11)
 
 
 </dt> <dd></dd> <dt>
@@ -391,7 +391,7 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <span id="Partially_recovered"></span><span id="partially_recovered"></span><span id="PARTIALLY_RECOVERED"></span>
 
-**Parzialmente recuperato** (13)
+**Parzialmente ripristinato** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -425,10 +425,10 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -437,7 +437,7 @@ Stato di replica per la raccolta di sistemi virtuali.
 
 <dl> <dt>
 
-[**\_COLLECTIONOFMSES CIM**](cim-collectionofmses.md)
+[**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md)
 </dt> </dl>
 
  

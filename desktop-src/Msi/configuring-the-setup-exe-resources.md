@@ -1,21 +1,21 @@
 ---
-description: Un eseguibile di bootstrap configurabile (Setup.exe) e uno strumento di configurazione (Msistuff.exe) sono inclusi nei componenti di Windows SDK per gli sviluppatori Windows Installer.
+description: Un eseguibile bootstrap configurabile (Setup.exe) e uno strumento di configurazione (Msistuff.exe) sono inclusi in Windows SDK Components for Windows Installer Developers.
 ms.assetid: 95fcea5c-b107-48b7-9ae8-84629353c554
-title: Configurazione delle risorse Setup.exe
+title: Configurazione delle Setup.exe seguenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41b7907310ff6efcf41e984bf132bbbaedf38b6a
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: d3c181453f689b7f2c273ba8726097e5d1cd134d1b9675c8ffc42de42d902b89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "106322041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638730"
 ---
-# <a name="configuring-the-setupexe-resources"></a>Configurazione delle risorse Setup.exe
+# <a name="configuring-the-setupexe-resources"></a>Configurazione delle Setup.exe seguenti
 
-Un eseguibile di bootstrap configurabile (Setup.exe) e uno strumento di configurazione ( [Msistuff.exe](msistuff-exe.md)) sono inclusi nei [componenti di Windows SDK per gli sviluppatori Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Utilizzando Msistuff.exe per configurare le risorse in Setup.exe, gli sviluppatori possono creare facilmente un'installazione Web di un pacchetto di Windows Installer. Per ulteriori informazioni, vedere [bootstrap di download Internet](internet-download-bootstrapping.md).
+Un file eseguibile bootstrap configurabile (Setup.exe) e uno strumento di configurazione ( [Msistuff.exe](msistuff-exe.md)) sono inclusi in [Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md). Usando Msistuff.exe per configurare le risorse in Setup.exe, gli sviluppatori possono creare facilmente un'installazione Web di un pacchetto Windows Installer. Per altre informazioni, vedere [Bootstrap del download Internet.](internet-download-bootstrapping.md)
 
-Immettendo la seguente riga di comando vengono configurate le risorse per l'esempio descritto in [un URL basato Windows Installer esempio di installazione](a-url-based-windows-installer-installation-example.md).
+Se si immette la riga di comando seguente, vengono configurate le risorse per l'esempio descritto in [A URL Based Windows Installer Installation Example](a-url-based-windows-installer-installation-example.md).
 
 `MsiStuff setup.exe /u https://www.blueyonderairlines.com/Products/MySetup /d MySetup.msi /n MySetup /v 150 /i https://www.blueyonderairlines.com/Products/Common/InstMsi /a Ansi/Instmsi.exe /w Unicode/Instmsi.exe`
 

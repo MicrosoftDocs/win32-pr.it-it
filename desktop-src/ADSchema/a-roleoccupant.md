@@ -1,10 +1,10 @@
 ---
-title: Attributo Role-Occupant
-description: Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
+title: Role-Occupant attributo
+description: Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 ms.assetid: 47f5d367-d1da-4189-a73e-b6e6715bd297
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Role-Occupant attribute
+- Role-Occupant schema AD dell'attributo
 - Schema AD dell'attributo roleOccupant
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 283dbf37ae168a7130c3c5a86a484ee19e90a5c1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18d192f929e34961f3aaf3659aadf782b6194af6958a21c284213ad109451807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681684"
 ---
-# <a name="role-occupant-attribute"></a>Attributo Role-Occupant
+# <a name="role-occupant-attribute"></a>Role-Occupant attributo
 
-Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
+Nome distinto di un oggetto che soddisfa un ruolo aziendale.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Role-Occupant                           |
-| LDAP-Display-Name | roleOccupant                            |
+| Ldap-Display-Name | roleOccupant                            |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 2.5.4.33                                |
-| System-ID-GUID    | a8df7465-c5ea-11d1-bbcb-0080c76670c0    |
+| System-Id-Guid    | a8df7465-c5ea-11d1-bbcb-0080c76670c0    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome distinto di un oggetto che soddisfa un ruolo organizzativo.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Falso                                                          |
+| Is-Single-Valued       | Falso                                                          |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
+| Classi usate in        | [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> |
 
 
 

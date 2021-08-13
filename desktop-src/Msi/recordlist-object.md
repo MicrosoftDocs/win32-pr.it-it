@@ -1,7 +1,7 @@
 ---
-description: L'oggetto di Recording è una raccolta di oggetti record. Prima di fare riferimento alle relative proprietà, è necessario verificare che l'oggetto di registrazione esista e non sia vuoto.
+description: L'oggetto RecordList è una raccolta di oggetti Record. È necessario verificare che l'oggetto RecordList esista e non sia vuoto prima di fare riferimento alle relative proprietà.
 ms.assetid: 7f5ac153-8da1-4dc8-9bb7-defd4e821142
-title: Oggetto Recording
+title: Oggetto RecordList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b3f09887333d8ddbf83de4bea2b2e654411883e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4528b80b13fbf2667c33d9588dff2ce745d24f8575aa726ea67dc256fdebfd1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626809"
 ---
-# <a name="recordlist-object"></a>Oggetto Recording
+# <a name="recordlist-object"></a>Oggetto RecordList
 
-L'oggetto di **Recording** è una raccolta di oggetti [**record**](record-object.md) . Prima di fare riferimento alle relative proprietà, è necessario verificare che l'oggetto di **registrazione** esista e non sia vuoto.
+**L'oggetto RecordList** è una raccolta di [**oggetti Record.**](record-object.md) È necessario verificare che **l'oggetto RecordList** esista e non sia vuoto prima di fare riferimento alle relative proprietà.
 
 ## <a name="members"></a>Membri
 
-Questo tipo di membri è costituito dall'oggetto **Recorder** :
+**L'oggetto RecordList** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-Le proprietà dell'oggetto di **Recording** .
+**L'oggetto RecordList** ha queste proprietà.
 
 
 
 | Proprietà                                     | Descrizione                                                          |
 |:---------------------------------------------|:---------------------------------------------------------------------|
-| [**Conteggio**](recordlist-count.md)<br/> | Restituisce il numero di elementi contenuti nell'oggetto di **registrazione** .<br/> |
-| [**Elemento**](recordlist-item.md)<br/>   | Restituisce un record in una raccolta di oggetti di un oggetto di **registrazione** .<br/>   |
+| [**Conteggio**](recordlist-count.md)<br/> | Restituisce il numero di elementi **nell'oggetto RecordList.**<br/> |
+| [**Elemento**](recordlist-item.md)<br/>   | Restituisce un record in una **raccolta di oggetti RecordList.**<br/>   |
 
 
 
@@ -51,9 +51,9 @@ Le proprietà dell'oggetto di **Recording** .
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IRecordList è definito come 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID IRecordList è definito come \_ 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
 
 
 
@@ -64,7 +64,7 @@ Le proprietà dell'oggetto di **Recording** .
 [**Registra**](record-object.md)
 </dt> <dt>
 
-[Esempi di script di Windows Installer](windows-installer-scripting-examples.md)
+[Windows Esempi di scripting del programma di installazione](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

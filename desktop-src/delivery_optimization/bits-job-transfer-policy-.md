@@ -1,10 +1,10 @@
 ---
-title: Enumerazione BITS_JOB_TRANSFER_POLICY (Deliveryoptimization. h)
-description: L'enumerazione BITS_JOB_TRANSFER_POLICY definisce i valori ID corrispondenti alle proprietà DO.
+title: BITS_JOB_TRANSFER_POLICY enumerazione (Deliveryoptimization.h)
+description: L BITS_JOB_TRANSFER_POLICY enumere definisce i valori ID corrispondenti alle proprietà DO.
 ms.assetid: 4811ADBF-F097-4340-BFF2-52CC9556ACF6
 keywords:
-- Enumerazione BITS_JOB_TRANSFER_POLICY
-- Enumerazione BITS_JOB_TRANSFER_POLICY
+- BITS_JOB_TRANSFER_POLICY enumerazione
+- BITS_JOB_TRANSFER_POLICY enumerazione
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455752375b76e574923ccdd96d1d05fc9142c16c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 022d12b78416ce4ec84cf02ae8696f17bf5c315a207ae04f28a8980f6aaac073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544599"
 ---
-# <a name="bits_job_transfer_policy-enumeration"></a>Enumerazione BITS_JOB_TRANSFER_POLICY
+# <a name="bits_job_transfer_policy-enumeration"></a>BITS_JOB_TRANSFER_POLICY enumerazione
 
-L'enumerazione **BITS_JOB_TRANSFER_POLICY** definisce i valori ID corrispondenti alle proprietà do.
+L BITS_JOB_TRANSFER_POLICY enumere definisce i valori ID corrispondenti alle proprietà DO. 
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,28 +49,28 @@ typedef enum _BITS_JOB_TRANSFER_POLICY {
 <span id="BITS_JOB_TRANSFER_POLICY_ALWAYS"></span><span id="bits_job_transfer_policy_always"></span>**BITS_JOB_TRANSFER_POLICY_ALWAYS**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito quando la connettività è disponibile, indipendentemente dal costo.
+Specifica che il processo verrà trasferito quando sarà disponibile la connettività, indipendentemente dal costo.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_NOT_ROAMING"></span><span id="bits_job_transfer_policy_not_roaming"></span>**BITS_JOB_TRANSFER_POLICY_NOT_ROAMING**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito quando è disponibile la connettività, a meno che la connettività non sia soggetta a sovrapprezzi in roaming.
+Specifica che il processo verrà trasferito quando la connettività è disponibile, a meno che tale connettività non sia soggetta a costi di roaming.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE"></span><span id="bits_job_transfer_policy_no_surcharge"></span>**BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito solo quando è disponibile la connettività, che non è soggetta a un supplemento.
+Specifica che il processo verrà trasferito solo quando è disponibile la connettività che non è soggetta a un supplemento.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_STANDARD"></span><span id="bits_job_transfer_policy_standard"></span>**BITS_JOB_TRANSFER_POLICY_STANDARD**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito solo quando è disponibile la connettività, che non è soggetta a un sovrapprezzo né a un esaurimento.
+Specifica che il processo verrà trasferito solo quando è disponibile la connettività, che non è soggetta a un supplemento né a un esaurimento quasi.
 
 </dd> <dt>
 
@@ -87,9 +87,9 @@ Specifica che il processo verrà trasferito solo quando è disponibile la connet
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                         |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_DELETESTRING (winuser. h)
+title: LB_DELETESTRING messaggio (Winuser.h)
 description: Elimina una stringa in una casella di riepilogo.
 ms.assetid: 3f360e07-b70d-4bfc-89d4-18d3b18b0fcf
 keywords:
-- Controlli di Windows Message LB_DELETESTRING
+- LB_DELETESTRING di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 557256484ad5c5fa698d787144a37ff619b02ef2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3329f82babea73a6392f7c360623fdeadec843dfcfd62e70106e7fb1cb0367ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118671676"
 ---
-# <a name="lb_deletestring-message"></a>\_Messaggio DELETESTRING lb
+# <a name="lb_deletestring-message"></a>Messaggio \_ LB DELETESTRING
 
 Elimina una stringa in una casella di riepilogo.
 
@@ -34,7 +34,7 @@ Elimina una stringa in una casella di riepilogo.
 
 Indice in base zero della stringa da eliminare.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il parametro *wParam* è limitato ai valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Sebbene il numero di elementi sia limitato, le dimensioni totali in byte degli elementi in una casella di riepilogo sono limitate solo dalla memoria disponibile.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): il *parametro wParam* è limitato a valori a 16 bit. Ciò significa che le caselle di riepilogo non possono contenere più di 32.767 elementi. Anche se il numero di elementi è limitato, la dimensione totale in byte degli elementi in una casella di riepilogo è limitata solo dalla memoria disponibile.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un conteggio delle stringhe rimaste nell'elenco. Il valore restituito è LB \_ Err se il parametro *wParam* specifica un indice maggiore del numero di elementi nell'elenco.
+Il valore restituito è un conteggio delle stringhe rimanenti nell'elenco. Il valore restituito è LB ERR se il parametro wParam specifica un indice maggiore del \_ numero di elementi nell'elenco. 
 
 ## <a name="remarks"></a>Commenti
 
-Se un'applicazione crea la casella di riepilogo con uno stile disegnato dal proprietario ma senza lo stile [**\_ HASSTRINGS di lbs**](list-box-styles.md) , il sistema invia un messaggio [**WM \_ DeleteItem**](wm-deleteitem.md) al proprietario della casella di riepilogo in modo che l'applicazione possa liberare i dati aggiuntivi associati all'elemento.
+Se un'applicazione crea la casella di riepilogo con uno stile creato dal proprietario ma senza lo stile [**\_ HASSTRINGS di LBS,**](list-box-styles.md) il sistema invia un messaggio [**WM \_ DELETEITEM**](wm-deleteitem.md) al proprietario della casella di riepilogo in modo che l'applicazione possa liberare eventuali dati aggiuntivi associati all'elemento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Se un'applicazione crea la casella di riepilogo con uno stile disegnato dal prop
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,13 +72,13 @@ Se un'applicazione crea la casella di riepilogo con uno stile disegnato dal prop
 **Riferimento**
 </dt> <dt>
 
-[**\_ADDSTRING lb**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**\_INSERTSTRING lb**](lb-insertstring.md)
+[**LB \_ INSERTSTRING**](lb-insertstring.md)
 </dt> <dt>
 
-[**\_DeleteItem WM**](wm-deleteitem.md)
+[**WM \_ DELETEITEM**](wm-deleteitem.md)
 </dt> </dl>
 
  

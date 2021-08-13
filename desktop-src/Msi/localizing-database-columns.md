@@ -1,53 +1,53 @@
 ---
-description: Modificare le altre colonne localizzabili nel database MNPFren.msi usando un editor di tabelle, ad esempio Orca o query SQL.
+description: Modificare una qualsiasi delle altre colonne localizzabili nel database MNPFren.msi usando un editor di tabelle come Orca o SQL query.
 ms.assetid: b62cf529-71a0-47ff-99ea-a182c0fe4479
-title: Localizzazione di colonne di database
+title: Localizzazione delle colonne del database
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed36b1adb2c496c9019b482c929e449187b1e0bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a72d4d4d82f45be66f41710dea7294a63051d69750ade49ae3b66761964b579f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118629456"
 ---
-# <a name="localizing-database-columns"></a>Localizzazione di colonne di database
+# <a name="localizing-database-columns"></a>Localizzazione delle colonne del database
 
-Modificare le altre colonne localizzabili nel database MNPFren.msi usando un editor di tabelle, ad esempio Orca o query SQL. Per determinare quali colonne di una determinata tabella possono essere localizzate in un'altra lingua, vedere l'argomento di riferimento relativo a tale tabella di database. Per un elenco di tutte le tabelle di database, vedere [tabelle di database](database-tables.md) .
+Modificare una qualsiasi delle altre colonne localizzabili nel database MNPFren.msi usando un editor di tabelle come Orca o SQL query. Per determinare quali colonne di una determinata tabella possono essere localizzate in un'altra lingua, vedere l'argomento di riferimento per tale tabella di database. Per [un elenco di tutte](database-tables.md) le tabelle di database, vedere Tabelle di database.
 
-Ad esempio, potrebbe essere necessario localizzare in francese il campo di testo di alcuni record della [tabella dei controlli](control-table.md) . La stringa "annullare l' \[ installazione di ProductName \] ?" nella [finestra di dialogo Annulla](cancel-dialog.md) può essere modificato in questa tabella per essere visualizzato in francese. Il record originale nel file con estensione msi viene visualizzato come segue.
+Ad esempio, il campo Text di alcuni record nella [tabella Control potrebbe](control-table.md) dover essere localizzato in francese. La stringa "Si è certi di voler annullare \[ l'installazione di \] ProductName?" nella finestra [di dialogo Annulla](cancel-dialog.md) può essere modificata in questa tabella per essere visualizzata in francese. Il record originale nel .msi file viene visualizzato come segue.
 
-[Tabella di controllo](control-table.md) (parziale) del file con estensione msi originale
+[Tabella di](control-table.md) controllo (parziale) del file .msi originale
 
 
 
 | Finestra di dialogo\_  | Control | Tipo | X   | S   | Larghezza | Altezza | Attributi | Proprietà | Testo                                                          | Controllo \_ successivo | Help |
 |-----------|---------|------|-----|-----|-------|--------|------------|----------|---------------------------------------------------------------|---------------|------|
-| CancelDlg | Testo    | Testo | 48  | 15  | 194   | 30     | 3          |          | Annullare l' \[ installazione di ProductName \] ? |               |      |
+| CancelDlg | Testo    | Testo | 48  | 15  | 194   | 30     | 3          |          | Si è certi di voler annullare \[ l'installazione di \] ProductName? |               |      |
 
 
 
  
 
-È possibile usare un editor tabelle per modificare il campo di testo, ad esempio l'editor di tabelle Orca fornito con SDK o un altro editor di tabelle, oppure usare una query SQL per modificare il campo di testo del record della tabella di controllo. In Windows Installer SDK viene fornito un esempio che illustra le query di database basate su script come WiRunSQL.vbs di utilità. Utilizzare la riga di comando seguente per modificare il campo con WiRunSQL.vbs e Windows script host. Vedere anche [esempi di query di database con SQL e script](examples-of-database-queries-using-sql-and-script.md).
+È possibile usare un editor di tabelle per modificare il campo Text, ad esempio l'editor di tabelle Orca fornito con l'SDK o un altro editor di tabelle, oppure usare una query SQL per modificare il campo Text del record della tabella Control. Un esempio che illustra le query di database guidate da script viene fornito in Windows Installer SDK come utilità WiRunSQL.vbs. Usare la riga di comando seguente per modificare il campo con WiRunSQL.vbs e l'host Windows script. Vedere anche [Esempi di query di database con SQL e script](examples-of-database-queries-using-sql-and-script.md).
 
-**Cscript WiRunSQL.vbs MNPFren.msi "UPDATE Control SET Control. Text =' etes-vous sur de vouloir l'installation de \[ ProductName \] ?' DOVE Control. Dialog \_ =' CancelDlg ' e Control. Control =' text ' "**
+**Cscript WiRunSQL.vbs MNPFren.msi "UPDATE Control SET Control.Text='Etes-vous sur de vouloir annuler l'installation de \[ ProductName \] ?' WHERE Control.Dialog \_ ='CancelDlg' AND Control.Control='Text'"**
 
-[Tabella di controllo](control-table.md) (parziale) in MNPFren.msi
+[Tabella di](control-table.md) controllo (parziale) in MNPFren.msi
 
 
 
 | Finestra di dialogo\_  | Control | Tipo | X   | S   | Larghezza | Altezza | Attributi | Proprietà | Testo                                                                | Controllo \_ successivo | Help |
 |-----------|---------|------|-----|-----|-------|--------|------------|----------|---------------------------------------------------------------------|---------------|------|
-| CancelDlg | Testo    | Testo | 48  | 15  | 194   | 30     | 3          |          | Êtes-vous sûr de vouloir l'installation de \[ ProductName \] ? |               |      |
+| CancelDlg | Testo    | Testo | 48  | 15  | 194   | 30     | 3          |          | Êtes-vous sèr de vouloir annuler l'installation de \[ ProductName \] ? |               |      |
 
 
 
  
 
-Se l'installazione di MNPFren.msi viene annullata dall'utente, viene visualizzata la **finestra di dialogo Annulla** che Visualizza il testo: "êtes-vous sûr de vouloir anulare L'INSTALLATION de MNP2000?"
+Se l'installazione di MNPFren.msi viene annullata dall'utente, viene visualizzata la finestra di dialogo Annulla con il testo " Êtes-vous sèr de vouloir annuler l'installation de MNP2000?" 
 
-Quando si usa questo metodo per localizzare il testo dell'interfaccia utente in una lingua diversa, l'interfaccia utente localizzata deve essere testata per assicurarsi che le dimensioni dei controlli siano sufficientemente grandi da visualizzare l'intero testo localizzato. Questa operazione deve essere testata usando tutte le impostazioni relative alle dimensioni del carattere disponibili per la visualizzazione. Il testo localizzato può richiedere più spazio del testo originale e può essere troncato se visualizzato in un controllo troppo piccolo.
+Quando si usa questo metodo per localizzare il testo dell'interfaccia utente in una lingua diversa, è necessario testare l'interfaccia utente localizzata per assicurarsi che le dimensioni dei controlli siano sufficientemente grandi da visualizzare l'intero testo localizzato. Questa operazione deve essere testata usando tutte le impostazioni delle dimensioni del carattere disponibili per la visualizzazione. Il testo localizzato può richiedere più spazio del testo originale e può essere troncato se visualizzato in un controllo troppo piccolo.
 
 [Continua](updating-productlanguage-and-productcode-properties.md)
 

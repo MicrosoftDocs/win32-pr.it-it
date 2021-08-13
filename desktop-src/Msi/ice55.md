@@ -1,23 +1,23 @@
 ---
-description: ICE55 verifica che tutti gli oggetti LockPermission esistano e dispongano di valori di autorizzazione validi.
+description: ICE55 convalida che tutti gli oggetti LockPermission esistono e hanno valori di autorizzazione validi.
 ms.assetid: e23e43ce-942f-4f6b-b5fd-cf366f7a7fe5
 title: ICE55
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 239093e3502a1731c3248918750c18aa1b3e1f18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 044b9993c6c50dce32c04f98d8e000f0faae4280d244c4656d7b0cbed7b49749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635142"
 ---
 # <a name="ice55"></a>ICE55
 
-ICE55 verifica che tutti gli oggetti LockPermission esistano e dispongano di valori di autorizzazione validi.
+ICE55 convalida che tutti gli oggetti LockPermission esistono e hanno valori di autorizzazione validi.
 
 ## <a name="result"></a>Risultato
 
-ICE55 pubblica un errore se un LockObject elencato nella [tabella LockPermissions](lockpermissions-table.md) non esiste o se non è stato specificato alcun livello di privilegio nella colonna autorizzazione.
+ICE55 invia un errore se un LockObject elencato nella tabella [LockPermissions](lockpermissions-table.md) non esiste o se non viene specificato alcun livello di privilegio nella colonna Autorizzazione .
 
 ## <a name="example"></a>Esempio
 
@@ -34,7 +34,7 @@ Could not find item 'File3' in table 'File' which is referenced
 
 
 
-| LockObject | Tabella | Dominio | User  | Autorizzazione |
+| LockObject | Tabella | Dominio | Utente  | Autorizzazione |
 |------------|-------|--------|-------|------------|
 | File1      | File  |        | guest |            |
 | File3      | File  |        | guest | 1          |
@@ -47,7 +47,7 @@ Could not find item 'File3' in table 'File' which is referenced
 
 
 
-| File  | Versione | Linguaggio |
+| File  | Versione | Lingua |
 |-------|---------|----------|
 | File1 | File2   |          |
 | File2 | 1.0.0.0 | 1033     |
@@ -56,15 +56,15 @@ Could not find item 'File3' in table 'File' which is referenced
 
  
 
-L'oggetto file1 contiene un valore null nella colonna autorizzazione. Ogni riga deve avere un valore nella colonna autorizzazioni. Per correggere l'errore, specificare un valore numerico in questa colonna. Se non sono necessari privilegi per questo oggetto, è necessario rimuovere la riga.
+L'oggetto File1 ha un valore Null nella colonna Permission. Ogni riga deve avere un valore nella colonna Autorizzazioni . Per correggere l'errore, specificare un valore numerico in questa colonna. Se non sono necessari privilegi per questo oggetto, è necessario rimuovere la riga.
 
-L'oggetto file3 descritto nella tabella LockPermissions non è elencato nella tabella file. Per correggere l'errore, fare riferimento a un oggetto valido.
+L'oggetto File3 descritto nella tabella LockPermissions non è elencato nella tabella File. Per correggere questo errore, fare riferimento a un oggetto valido.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

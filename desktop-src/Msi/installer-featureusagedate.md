@@ -1,7 +1,7 @@
 ---
-description: La proprietà FeatureUsageDate è una proprietà di sola lettura che restituisce la data dell'ultima utilizzo della funzionalità specificata.
+description: La proprietà FeatureUsageDate è una proprietà di sola lettura che restituisce la data dell'ultimo utilizzo della funzionalità specificata.
 ms.assetid: 444e54b2-94e7-44ea-8d7b-eeac984e3715
-title: Proprietà Installer. FeatureUsageDate
+title: Proprietà Installer.FeatureUsageDate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b393f9a24b9d1ebeb82de86d26483f703d7854c5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15c628b95f6dab2d671e660c9783e071e1e4385c165363fdf9ad39abd571510e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631068"
 ---
-# <a name="installerfeatureusagedate-property"></a>Proprietà Installer. FeatureUsageDate
+# <a name="installerfeatureusagedate-property"></a>Proprietà Installer.FeatureUsageDate
 
-La proprietà **FeatureUsageDate** è una proprietà di sola lettura che restituisce la data dell'ultima utilizzo della funzionalità specificata.
+La **proprietà FeatureUsageDate** è una proprietà di sola lettura che restituisce la data dell'ultimo utilizzo della funzionalità specificata.
 
 Questa proprietà è di sola lettura.
 
@@ -39,17 +39,17 @@ propVal = Installer.FeatureUsageDate
 
 ## <a name="remarks"></a>Commenti
 
-L'uso dei metodi [**UseFeature**](installer-usefeature.md), [**ProvideComponent**](installer-providecomponent.md) o [**ProvideQualifiedComponent**](installer-providequalifiedcomponent.md) o i relativi equivalenti API nella funzionalità specificata consente di impostare questa proprietà.
+L'uso [**dei metodi UseFeature**](installer-usefeature.md), [**ProvideComponent**](installer-providecomponent.md) o [**ProvideQualifiedComponent**](installer-providequalifiedcomponent.md) o degli equivalenti dell'API nella funzionalità specificata imposta questa proprietà.
 
-La data è nel formato di data MS-DOS, come illustrato nella tabella seguente.
+La data è nel formato data MS-DOS, come illustrato nella tabella seguente.
 
 
 
 | BITS | Contenuto                                            |
 |------|-----------------------------------------------------|
 | 0-4  | Giorno del mese (1-31)                             |
-| 5-8  | Month (1 = gennaio, 2 = febbraio e così via)        |
-| 9-15 | Offset anno da 1980 (aggiungere 1980 per ottenere l'anno effettivo) |
+| 5-8  | Mese (1 = gennaio, 2 = febbraio e così via)        |
+| 9-15 | Offset anno dal 1980 (aggiungere 1980 per ottenere l'anno effettivo) |
 
 
 
@@ -61,9 +61,9 @@ La data è nel formato di data MS-DOS, come illustrato nella tabella seguente.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo IDWriteTextLayout3 SetLineSpacing
-description: Imposta spaziatura riga. | Metodo IDWriteTextLayout3 SetLineSpacing
+title: Metodo IdWriteTextLayout3 SetLineSpacing
+description: Impostare l'interlinea. | Metodo IdWriteTextLayout3 SetLineSpacing
 ms.assetid: 1bfca257-189c-4d18-628c-aff8217d2775
 keywords:
-- Scrittura diretta Metodo SetLineSpacing
-- Metodo SetLineSpacing scrittura diretta, interfaccia IDWriteTextLayout3
-- IDWriteTextLayout3 Interface Direct Write, Metodo SetLineSpacing
+- Metodo SetLineSpacing Direct Write
+- Metodo SetLineSpacing Direct Write, interfaccia IDWriteTextLayout3
+- Interfaccia IDWriteTextLayout3 Scrittura diretta, metodo SetLineSpacing
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 794df5b0dc993688c8bab15c927ae2c03bc18d69
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4d1c054fd63beb85303a7d163a16b55f07613b687085be53e22d814b0003c63c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118649379"
 ---
-# <a name="idwritetextlayout3setlinespacing-method"></a>Metodo IDWriteTextLayout3:: SetLineSpacing
+# <a name="idwritetextlayout3setlinespacing-method"></a>Metodo IDWriteTextLayout3::SetLineSpacing
 
-Imposta spaziatura riga.
+Impostare l'interlinea.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT SetLineSpacing(
 
 <dl> <dt>
 
-*lineSpacingOptions* \[ in\]
+*lineSpacingOptions* \[ Pollici\]
 </dt> <dd>
 
-Come gestire lo spazio tra le linee.
+Come gestire lo spazio tra le righe.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,10 +59,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                            |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                 |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/> |
-| Libreria<br/>                  | <dl> <dt>DWrite. lib</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                                 |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/> |
+| Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

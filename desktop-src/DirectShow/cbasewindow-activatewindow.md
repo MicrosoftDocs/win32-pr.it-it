@@ -1,7 +1,7 @@
 ---
 description: Il metodo ActivateWindow ridimensiona la finestra in base ai requisiti della classe derivata.
 ms.assetid: 39e23080-e4ae-46d5-bb3f-306c92bbfe14
-title: Metodo CBaseWindow. ActivateWindow (Winutil. h)
+title: Metodo CBaseWindow.ActivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f747f108bb6c7e42e90a0ff8503ec59a83c59699
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e00c3ccc43e2583ce8664e62967a22f753148cfa271dd1995e2374c2bfa53c71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658245"
 ---
-# <a name="cbasewindowactivatewindow-method"></a>CBaseWindow. ActivateWindow, metodo
+# <a name="cbasewindowactivatewindow-method"></a>Metodo CBaseWindow.ActivateWindow
 
 Il `ActivateWindow` metodo ridimensiona la finestra in base ai requisiti della classe derivata.
 
@@ -42,14 +42,14 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
+Restituisce uno dei **valori HRESULT** illustrati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                              |
 |-----------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | La finestra è già stata attivata.<br/> |
-| <dl> <dt>**\_OK**</dt> </dl>    | Esito positivo.<br/>                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Finestra già attivata.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Operazione completata.<br/>                      |
 
 
 
@@ -57,9 +57,9 @@ Restituisce uno dei valori **HRESULT** indicati nella tabella seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiama il metodo [**CBaseWindow:: GetDefaultRect**](cbasewindow-getdefaultrect.md) per determinare le dimensioni della finestra. La classe derivata deve eseguire l'override di **GetDefaultRect** per restituire la dimensione delle immagini che verranno visualizzate.
+Questo metodo chiama il [**metodo CBaseWindow::GetDefaultRect**](cbasewindow-getdefaultrect.md) per determinare le dimensioni della finestra. La classe derivata deve eseguire **l'override di GetDefaultRect** per restituire le dimensioni delle immagini che verranno visualizzate.
 
-Se la finestra è già attiva, la chiamata `ActivateWindow` Sposta la finestra nella parte superiore del z order, ma non ridimensiona la finestra. Lo stesso vale se la finestra dispone di un elemento padre.
+Se la finestra è già attiva, la chiamata di sposta la finestra nella parte superiore dell'ordine Z, ma `ActivateWindow` non ridimensiona la finestra. Lo stesso vale se la finestra ha un elemento padre.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Se la finestra è già attiva, la chiamata `ActivateWindow` Sposta la finestra n
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: /opzione di sistema
-description: Il parametro/System indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
+title: / commutatore di sistema
+description: L'opzione di sistema / indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
 ms.assetid: 0fb69ffc-5ab4-49f3-b34d-859da776ce9e
 keywords:
-- /opzione di sistema MIDL
+- / commutatore di sistema MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e09f2cf97f8edb86ad831cff35420fad9a07d76
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 31def6297a1a91f6ed28943290a66b544dc368d5a00a91932035a338af50bac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643779"
 ---
-# <a name="system-switch"></a>/<system> commutatore
+# <a name="system-switch"></a>/<system> Interruttore
 
-L' **/<system>** opzione indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
+**/<system>** L'opzione indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
 
 ``` syntax
 midl /{win32 | ia64 | amd64}
@@ -38,7 +38,7 @@ midl /{win32 | ia64 | amd64}
 
 <span id="win32"></span><span id="WIN32"></span>
 
-<span id="win32"></span><span id="WIN32"></span>Win32 * * * *
+<span id="win32"></span><span id="WIN32"></span>win32****
 
 
 </dt> <dd>
@@ -49,47 +49,47 @@ Windows 2000, Windows XP, Windows Vista, Windows 7
 
 <span id="ia64"></span><span id="IA64"></span>
 
-<span id="ia64"></span><span id="IA64"></span>ia64 * * * *
+<span id="ia64"></span><span id="IA64"></span>ia64****
 
 
 </dt> <dd>
 
-Un ambiente Windows basato su Intel a 64 bit, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
+Un ambiente Windows a 64 bit basato su Intel, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
 
 </dd> <dt>
 
 <span id="amd64"></span><span id="AMD64"></span>
 
-<span id="amd64"></span><span id="AMD64"></span>amd64 * * * *
+<span id="amd64"></span><span id="AMD64"></span>amd64****
 
 
 </dt> <dd>
 
-Un ambiente Windows a 64 bit basato sui dispositivi statunitensi, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
+Un ambiente Windows a 64 bit basato su American Micro Devices, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Lo **/<system>** Switch è funzionalmente uguale all'opzione MIDL [**/ENV**](-env.md) e viene riconosciuto dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti di mktyplib. Se si sta generando un nuovo Makefile, usare l'opzione **/ENV** .
+Dal punto di vista funzionale, l'opzione MIDL /env è riconosciuta dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti **/<system>** di MkTypLib. [](-env.md) Se si genera un nuovo makefile, usare **l'opzione /env.**
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/Win32 nomefile. idl**
+**midl /win32 filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**/ENV**](-env.md)
+[**/env**](-env.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

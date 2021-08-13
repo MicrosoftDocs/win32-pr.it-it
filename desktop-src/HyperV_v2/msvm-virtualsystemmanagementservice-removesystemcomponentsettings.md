@@ -1,5 +1,5 @@
 ---
-description: Rimuove le impostazioni del componente generico da una configurazione di sistema virtuale.
+description: Rimuove le impostazioni dei componenti generici da una configurazione del sistema virtuale.
 ms.assetid: 54ddb960-65b7-409d-ad80-f3685562a1a1
 title: Metodo RemoveSystemComponentSettings della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 93ef7b794b901212fad72a1fcdf6223d8344b8c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf8a4c25c01af62b22108d239e344dec9d3087021c3ec4962e7a30d578c7082e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644677"
 ---
-# <a name="removesystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo RemoveSystemComponentSettings della classe MSVM \_ VirtualSystemManagementService
+# <a name="removesystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo RemoveSystemComponentSettings della classe Msvm \_ VirtualSystemManagementService
 
-Rimuove le impostazioni del componente generico da una configurazione di sistema virtuale.
+Rimuove le impostazioni dei componenti generici da una configurazione del sistema virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 RemoveSystemComponentSettings(
 
 <dl> <dt>
 
-*ComponentSettings* \[ in\]
+*ComponentSettings* \[ Pollici\]
 </dt> <dd>
 
-Matrice di [**\_ SystemComponentSettingData MSVM**](msvm-systemcomponentsettingdata.md) che fanno riferimento alle impostazioni del componente da rimuovere.
+Matrice di [**Msvm \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md) che fanno riferimento alle impostazioni del componente da rimuovere.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -56,7 +56,7 @@ Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 o 4096 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce 0 o 4096 in un esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ Restituisce 0 o 4096 in caso di esito positivo; in caso contrario, restituisce u
 **Non supportato** (1)
 </dt> <dt>
 
-**Non riuscito** (2)
+**Operazione non** riuscita (2)
 </dt> <dt>
 
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -81,13 +81,13 @@ Restituisce 0 o 4096 in caso di esito positivo; in caso contrario, restituisce u
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -96,10 +96,10 @@ Restituisce 0 o 4096 in caso di esito positivo; in caso contrario, restituisce u
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                                               |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                                               |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -108,7 +108,7 @@ Restituisce 0 o 4096 in caso di esito positivo; in caso contrario, restituisce u
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

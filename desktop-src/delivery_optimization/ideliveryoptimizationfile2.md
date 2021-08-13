@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IDeliveryOptimizationFile2
-description: IDeliveryOptimizationFile2 supporta l'impostazione e il recupero di proprietà facoltative dei file.
+description: IDeliveryOptimizationFile2 supporta l'impostazione e il recupero di proprietà di file facoltative.
 keywords:
 - Interfaccia IDeliveryOptimizationFile2
 - Interfaccia IDeliveryOptimizationFile2, descritta
@@ -15,40 +15,40 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a45efd821116b24e883ec29d494a1d588559f57a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed7409635444885b662688ce94c300aae6e62186dd76bd7278b3e7445ef50c90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542046"
 ---
 # <a name="ideliveryoptimizationfile2-interface"></a>Interfaccia IDeliveryOptimizationFile2
 
-**IDeliveryOptimizationFile2** supporta l'impostazione e il recupero di proprietà facoltative dei file. 
+**IDeliveryOptimizationFile2** supporta l'impostazione e il recupero di proprietà di file facoltative. 
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IDeliveryOptimizationFile2** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IDeliveryOptimizationFile2** dispone anche di questi tipi di membri:
+**L'interfaccia IDeliveryOptimizationFile2** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDeliveryOptimizationFile2** include anche questi tipi di membri:
 
 - [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IDeliveryOptimizationFile2** dispone di questi metodi.
+**L'interfaccia IDeliveryOptimizationFile2** include questi metodi.
 
 | Metodo                                                 | Descrizione                                                  |
 |:-------------------------------------------------------|:-------------------------------------------------------------|
-| [**GetProperty**](ideliveryoptimizationfile2-getproperty.md)  | Questo metodo restituisce una singola proprietà del file DO. |
+| [**Getproperty**](ideliveryoptimizationfile2-getproperty.md)  | Questo metodo restituisce una singola proprietà del file DO. |
 | [**SetProperty**](ideliveryoptimizationfile2-setproperty.md)  | Questo metodo imposta una singola proprietà del file DO.    |
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |-------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato      | Solo app desktop Windows 10 versione 1803 \[\]                                    |
-| Server minimo supportato      | Windows Server, versione 1709 \[ solo per le app desktop\]                                |
-| Intestazione                        | Deliveryoptimization. h                                                            |
-| IDL                           | DeliveryOptimization. idl                                                          |
-| Libreria                       | Dosvc. lib                                                                         |
+| Client minimo supportato      | Windows 10, solo app desktop versione 1803 \[\]                                    |
+| Server minimo supportato      | Windows Server, solo app desktop versione 1709 \[\]                                |
+| Intestazione                        | Deliveryoptimization.h                                                            |
+| Idl                           | DeliveryOptimization.idl                                                          |
+| Libreria                       | Dosvc.lib                                                                         |
 | DLL                           | Dosvc.dll                                                                         |
-| IID                           | IID_IDeliveryOptimizationFile2 viene definito come 3A87296F-6EC2-4126-AB29-E3F8DC4CC390 |
+| IID                           | IID_IDeliveryOptimizationFile2 è definito come 3A87296F-6EC2-4126-AB29-E3F8DC4CC390 |

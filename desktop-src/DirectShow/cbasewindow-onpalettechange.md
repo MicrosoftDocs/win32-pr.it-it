@@ -1,7 +1,7 @@
 ---
 description: Il metodo OnPaletteChange gestisce i messaggi di modifica della tavolozza.
 ms.assetid: 2abae4f1-fbd0-4a32-8772-012fa96b6d6c
-title: Metodo CBaseWindow. OnPaletteChange (Winutil. h)
+title: Metodo CBaseWindow.OnPaletteChange (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9abcb2d9f5cdc875f70f5c1db1fd2f625ce911f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c881c519706ca0288847a7dc603cf513a99cdd76e4c83f0e53bec16df840e509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657954"
 ---
-# <a name="cbasewindowonpalettechange-method"></a>CBaseWindow. OnPaletteChange, metodo
+# <a name="cbasewindowonpalettechange-method"></a>Metodo CBaseWindow.OnPaletteChange
 
 Il `OnPaletteChange` metodo gestisce i messaggi di modifica della tavolozza.
 
@@ -43,7 +43,7 @@ virtual LRESULT OnPaletteChange(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle per la finestra.
@@ -63,7 +63,7 @@ Restituisce 0 se il messaggio è stato elaborato oppure 1 se il messaggio non è
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo gestisce \_ i messaggi WM PALETTECHANGED e WM \_ QUERYNEWPALETTE. Chiama il metodo [**CBaseWindow::D orealisepalette**](cbasewindow-dorealisepalette.md) per realizzare la nuova tavolozza.
+Questo metodo gestisce i messaggi WM \_ PALETTECHANGED e WM \_ QUERYNEWPALETTE. Chiama il metodo [**CBaseWindow::D oRealisePalette**](cbasewindow-dorealisepalette.md) per realizzare la nuova tavolozza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Questo metodo gestisce \_ i messaggi WM PALETTECHANGED e WM \_ QUERYNEWPALETTE. 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

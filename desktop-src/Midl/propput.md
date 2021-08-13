@@ -1,9 +1,9 @@
 ---
 title: propput (attributo)
-description: L'attributo \ propput \ specifica una funzione di impostazione di proprietà. La proprietà deve avere lo stesso nome della funzione.
+description: L'attributo \ propput\ specifica una funzione di impostazione delle proprietà. La proprietà deve avere lo stesso nome della funzione.
 ms.assetid: ffd8af15-42a4-4852-a29b-1fc66f673978
 keywords:
-- attributo MIDL di propput
+- Attributo propput MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79bf5520a3f4f4872801145064f49a8108cf602a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5f0e34d4826abfa2df6cd1262ccd4bcec04344f4500ddf5c146816d23f6261c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641934"
 ---
 # <a name="propput-attribute"></a>propput (attributo)
 
-L'attributo **\[ propput \]** specifica una funzione di impostazione di proprietà. La proprietà deve avere lo stesso nome della funzione *.*
+**\[ L'attributo \] propput** specifica una funzione di impostazione delle proprietà. La proprietà deve avere lo stesso nome della funzione *.*
 
 ``` syntax
 [propput [,optional-property-attributes]] return-type function-name( parameters);
@@ -31,21 +31,21 @@ L'attributo **\[ propput \]** specifica una funzione di impostazione di propriet
 
 <dl> <dt>
 
-*facoltativo-Property-Attributes* 
+*optional-property-attributes* 
 </dt> <dd>
 
-Zero o più attributi della proprietà.
+Zero o più attributi di proprietà.
 
 </dd> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
-Tipo di dati restituiti dalla procedura remota.
+Tipo dei dati restituiti dalla procedura remota.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Nome della procedura remota.
@@ -61,15 +61,15 @@ Zero o più parametri per la procedura remota.
 
 ## <a name="remarks"></a>Commenti
 
-Una funzione con l'attributo **\[ propput \]** deve avere anche l'ultimo parametro, ovvero un parametro **\[** [**con l'attributo in**](in.md) **\]** .
+Anche una funzione con **\[ l'attributo propput \]** deve avere, come ultimo parametro, un parametro con l'attributo **\[** [**in**](in.md) **\]** .
 
-**\[** [](propget.md) **\]** **\[ \]** **\[** [](propputref.md) **\]** Per una funzione è possibile specificare al massimo uno dei propget, propput e propputref.
+Al massimo, è possibile specificare uno tra **\[** [**propget**](propget.md) **\]** , **\[ propput \]** e **\[** [**propputref**](propputref.md) per una **\]** funzione.
 
-Se l' **\[** attributo [**LCID**](lcid.md) **\]** viene usato nell'elenco di parametri di una funzione che contiene un parametro con l'attributo **\[ propput \]** , il parametro **\[ LCID \]** deve essere il secondo all'ultimo.
+Se **\[** [**l'attributo lcid**](lcid.md) viene utilizzato nell'elenco di parametri di una funzione che contiene un parametro con l'attributo **\]** **\[ \] propput,** il parametro **\[ lcid \]** deve essere il secondo all'ultimo.
 
 ### <a name="flags"></a>Flags
 
-RICHIAMA \_ PROPERTYPUT
+INVOKE \_ PROPERTYPUT
 
 ## <a name="examples"></a>Esempi
 
@@ -93,10 +93,10 @@ interface InMyFace : IDispatch
 [Differenze tra MIDL e MKTYPLIB](differences-between-midl-and-mktyplib.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -108,6 +108,6 @@ interface InMyFace : IDispatch
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

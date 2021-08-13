@@ -1,9 +1,9 @@
 ---
-title: Messaggio IPM_ISBLANK (COMmctrl. h)
-description: Determina se tutti i campi nel controllo indirizzo IP sono vuoti.
+title: IPM_ISBLANK messaggio (Commctrl.h)
+description: Determina se tutti i campi nel controllo dell'indirizzo IP sono vuoti.
 ms.assetid: 6e35b848-943a-4475-890a-01fc3d8ed97d
 keywords:
-- Controlli di Windows Message IPM_ISBLANK
+- IPM_ISBLANK di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f5a33ee3c35779a02cdfcb0fcb7066098f3160
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba95002e840d70bc6375f79610f93ae94442d52f0f543db00d91db6a53783d1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118671697"
 ---
-# <a name="ipm_isblank-message"></a>Messaggio di IPM \_ vuoto
+# <a name="ipm_isblank-message"></a>Messaggio \_ IPM ISBLANK
 
-Determina se tutti i campi nel controllo indirizzo IP sono vuoti.
+Determina se tutti i campi nel controllo dell'indirizzo IP sono vuoti.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce un valore diverso da zero se tutti i campi sono vuoti oppure zero in
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

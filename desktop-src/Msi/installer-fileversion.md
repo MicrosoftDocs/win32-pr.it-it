@@ -1,7 +1,7 @@
 ---
-description: Il metodo FileVersion dell'oggetto Installer restituisce la stringa di versione o la stringa della lingua del percorso specificato nel percorso utilizzando il formato in cui il programma di installazione prevede di trovarle nel database.
+description: Il metodo FileVersion dell'oggetto Installer restituisce la stringa di versione o la stringa di lingua del percorso specificato in Path usando il formato in cui il programma di installazione prevede di trovarli nel database.
 ms.assetid: 387cf269-5a7a-476b-811e-d576da1c752f
-title: Installer. FileVersion (metodo)
+title: Metodo Installer.FileVersion
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a36a92b42815a1b2df913ba6bd9f687cdd1b609b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 492ebb0c7678b7819f3abc423517dcf77d071b81009c3b12017b1b627bb84057
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118630583"
 ---
-# <a name="installerfileversion-method"></a>Installer. FileVersion (metodo)
+# <a name="installerfileversion-method"></a>Metodo Installer.FileVersion
 
-Il metodo **fileversion** dell'oggetto [**Installer**](installer-object.md) restituisce la stringa di versione o la stringa della lingua del percorso specificato nel *percorso* utilizzando il formato in cui il programma di installazione prevede di trovarle nel database. Per le versioni, si tratta di una stringa \# nel \# formato ".. \# . \# ". Per la lingua, si tratta dell'ID della lingua decimale.
+Il **metodo FileVersion** dell'oggetto [**Installer**](installer-object.md) restituisce la stringa di versione o la stringa di lingua del percorso specificato in *Path* usando il formato in cui il programma di installazione prevede di trovarli nel database. Per le versioni, si tratta di una stringa in formato " \# \# . . . \# \# ". Per la lingua, si tratta dell'ID lingua decimale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Stringa obbligatoria contenente il percorso del file.
 *Lingua* 
 </dt> <dd>
 
-Flag che indica se il valore restituito è un ID lingua o una stringa di versione. TRUE restituisce il linguaggio, FALSE restituisce la versione. Questo parametro è facoltativo e il valore predefinito è FALSE.
+Flag per indicare se il valore restituito è un ID lingua o una stringa di versione. TRUE restituisce la lingua, FALSE restituisce la versione. Questo parametro è facoltativo, con il valore predefinito FALSE.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
