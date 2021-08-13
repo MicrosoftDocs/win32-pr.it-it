@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateBitmapFromWicBitmap di ID2D1RenderTarget
-description: Crea un ID2D1Bitmap copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.
+title: Metodi ID2D1RenderTarget CreateBitmapFromWicBitmap
+description: Crea un oggetto ID2D1Bitmap copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.
 ms.assetid: 463fc2f9-8ec6-47e8-8d48-a9015616e656
 keywords:
-- Metodo CreateBitmapFromWicBitmap Direct2D
+- Metodi CreateBitmapFromWicBitmap Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 23ad055beab9f24c39f032a3e28456c231480c68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d023db69afdc3cc69535d310cb21fb841c2f1bbe981df98e0aaa22074a46db0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119304341"
 ---
-# <a name="id2d1rendertargetcreatebitmapfromwicbitmap-methods"></a>Metodi ID2D1RenderTarget:: CreateBitmapFromWicBitmap
+# <a name="id2d1rendertargetcreatebitmapfromwicbitmap-methods"></a>Metodi ID2D1RenderTarget::CreateBitmapFromWicBitmap
 
-Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.
+Crea un [**oggetto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,19 +30,19 @@ Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando 
 
 | Metodo                                                                                                                                                                                                              | Descrizione                                                                                                                         |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateBitmapFromWicBitmap (IWICBitmapSource \* , ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap))                                                       | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/>  |
-| [**CreateBitmapFromWicBitmap (IWICBitmapSource \* , d2d1 \_ BITMAP \_ Properties&, ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1))  | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/> |
-| [**CreateBitmapFromWicBitmap ( \* proprietà bitmap IWICBitmapSource, d2d1 \_ \_ \* , ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties_id2d1bitmap)) | Crea un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/> |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource,ID2D1Bitmap \* \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap))                                                       | Crea un [**oggetto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/>  |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource,D2D1 \* \_ BITMAP PROPERTIES \_&,ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1))  | Crea un [**oggetto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/> |
+| [**CreateBitmapFromWicBitmap(IWICBitmapSource,D2D1 \* \_ BITMAP \_ \* PROPERTIES,ID2D1Bitmap \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties_id2d1bitmap)) | Crea un [**oggetto ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) copiando la bitmap di Microsoft Windows Imaging Component (WIC) specificata.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Prima che Direct2D possa caricare un'immagine WIC, è necessario convertirla in un formato pixel supportato e in modalità Alpha. Per un elenco dei formati pixel supportati e delle modalità Alpha, vedere [formati di pixel supportati e modalità Alpha](supported-pixel-formats-and-alpha-modes.md).
+Prima che Direct2D possa caricare un'immagine WIC, deve essere convertita in un formato pixel e in modalità alfa supportati. Per un elenco dei formati pixel supportati e delle modalità alfa, vedere [Formati di pixel supportati e modalità alfa](supported-pixel-formats-and-alpha-modes.md).
 
 ## <a name="examples"></a>Esempio
 
-Per esempi, vedere [come caricare una bitmap da un file](how-to-load-a-direct2d-bitmap-from-a-file.md) e [come caricare una bitmap da una risorsa](how-to-load-a-bitmap-from-a-resource.md).
+Per esempi, [vedere Come caricare una bitmap da un file](how-to-load-a-direct2d-bitmap-from-a-file.md) e Come caricare una bitmap da una [risorsa](how-to-load-a-bitmap-from-a-resource.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Per esempi, vedere [come caricare una bitmap da un file](how-to-load-a-direct2d-
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

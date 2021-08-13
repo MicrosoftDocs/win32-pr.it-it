@@ -1,11 +1,11 @@
 ---
 title: Metodo IConfigAsfWriter SetIndexMode
-description: Il metodo SetIndexMode consente all'applicazione di controllare se il file verrà indicizzato temporaneamente.
+description: Il metodo SetIndexMode consente all'applicazione di controllare se il file verrà indicizzato a livello temporale.
 ms.assetid: 104e29f4-a1e5-4e26-a9ef-52ef52d6f5b2
 keywords:
-- Metodo SetIndexMode Windows Media Format
-- Metodo SetIndexMode Windows Media Format, interfaccia IConfigAsfWriter
-- Interfaccia IConfigAsfWriter-formato Windows Media, metodo SetIndexMode
+- Metodo SetIndexMode windows Media Format
+- Metodo SetIndexMode windows Media Format , interfaccia IConfigAsfWriter
+- Interfaccia IConfigAsfWriter windows Media Format, metodo SetIndexMode
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 25d5f2b985aeca490323aecaef2595d52b99056c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2b65fbd3d279b8a66c132d24476b09b0f897c5993ea9a97d86096cf856832f9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433613"
 ---
-# <a name="iconfigasfwritersetindexmode-method"></a>Metodo IConfigAsfWriter:: SetIndexMode
+# <a name="iconfigasfwritersetindexmode-method"></a>Metodo IConfigAsfWriter::SetIndexMode
 
-Il metodo **SetIndexMode** consente all'applicazione di controllare se il file verrà indicizzato temporaneamente.
+Il **metodo SetIndexMode** consente all'applicazione di controllare se il file verrà indicizzato a livello temporale.
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
 HRESULT SetIndexMode(
-  [in] BOOL bIndexFile
+  [in] BOOL bIndexFile
 );
 ```
 
@@ -41,20 +41,20 @@ HRESULT SetIndexMode(
 
 <dl> <dt>
 
-*bIndexFile* \[ in\]
+*bIndexFile* \[ Pollici\]
 </dt> <dd>
 
-Variabile di tipo **bool**; **True** indica che il file verrà indicizzato temporaneamente.
+Variabile di tipo **BOOL**; **TRUE** specifica che il file verrà indicizzato a livello temporale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il [writer ASF WM](wm-asf-writer-filter.md) crea file ASF indicizzati temporaneamente. Esegue l'indicizzazione quando il grafico si arresta. È possibile disabilitare questo comportamento se si vuole eseguire l'indicizzazione basata su frame come passaggio di post-elaborazione. Per creare un file indicizzato con frame, chiamare **SetIndexMode**(false), creare il file e quindi usare direttamente i metodi Windows Media Format SDK per creare un indice basato su frame per il file.
+Per impostazione predefinita, [WM ASF Writer](wm-asf-writer-filter.md) crea file ASF con indicizzazione temporale. Esegue l'indicizzazione all'arresto del grafo. È possibile disabilitare questo comportamento se si vuole eseguire un'indicizzazione basata su frame come passaggio di post-elaborazione. Per creare un file indicizzato con frame, chiamare **SetIndexMode**(FALSE), creare il file e quindi usare direttamente i metodi sdk di Windows Media Format per creare un indice basato su frame per il file.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -63,6 +63,6 @@ Per impostazione predefinita, il [writer ASF WM](wm-asf-writer-filter.md) crea f
 [**Interfaccia IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

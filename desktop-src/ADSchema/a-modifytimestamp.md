@@ -1,10 +1,10 @@
 ---
-title: Modifica attributo timestamp
-description: Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replicato.
+title: Attributo Modify-Time-Stamp
+description: Attributo calcolato che rappresenta la data dell'ultima modifica dell'oggetto. Questo valore non viene replicato.
 ms.assetid: ad8fea90-9a78-484d-9549-26d78e87ec44
 ms.tgt_platform: multiple
 keywords:
-- Modifica dello schema AD dell'attributo Time-Stamp
+- Modify-Time-Stamp attribute AD Schema
 - Schema AD dell'attributo modifyTimeStamp
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c032d19c3bd2bf5a6ee0cfe038e9fa9b184d36
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dc32a0142d47f842429c3bf67d766ec708b7fc42b9f3285ee360ce3789c1a84f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300371"
 ---
-# <a name="modify-time-stamp-attribute"></a>Modifica attributo timestamp
+# <a name="modify-time-stamp-attribute"></a>Attributo Modify-Time-Stamp
 
-Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'oggetto. Questo valore non viene replicato.
+Attributo calcolato che rappresenta la data dell'ultima modifica dell'oggetto. Questo valore non viene replicato.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------|
-| CN                | Modifica-timestamp                                             |
-| LDAP-Display-Name | modifyTimeStamp                                               |
+| CN                | Modifica timestamp                                             |
+| Ldap-Display-Name | modifyTimeStamp                                               |
 | Dimensione              | 8 byte                                                       |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                              |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                              |
 | Frequenza di aggiornamento  | \-                                                            |
 | Attribute-Id      | 2.5.18.2                                                      |
-| System-ID-GUID    | 9a7ad94a-ca53-11d1-bbd0-0080c76670c0                          |
+| System-Id-Guid    | 9a7ad94a-ca53-11d1-bbd0-0080c76670c0                          |
 | Sintassi            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
@@ -44,7 +44,7 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| A valore singolo       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| A valore singolo       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| A valore singolo       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Attributo calcolato che rappresenta la data dell'Ultima modifica apportata all'o
 | ID collegamento                | \-                                                                          |
 | MAPI-Id                | \-                                                                          |
 | System-Only            | Vero                                                                        |
-| È a valore singolo       | Vero                                                                        |
+| Is-Single-Valued       | Vero                                                                        |
 | Indicizzato             | Falso                                                                       |
 | Nel catalogo globale      | Falso                                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | \-                                                                          |
 | Range-Upper            | \-                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x08000014                                                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**SubSchema**](c-subschema.md)<br/> [**In alto**](c-top.md)<br/> |
 
 
 

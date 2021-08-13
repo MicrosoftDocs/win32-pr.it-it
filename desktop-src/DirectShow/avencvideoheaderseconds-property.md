@@ -1,29 +1,29 @@
 ---
-description: Specifica il numero di secondi di inizio nell'intestazione Group of Pictures (GOP).
+description: Specifica il secondo numero iniziale nell'intestazione del gruppo di immagini (GOP).
 ms.assetid: 599964bd-a7d8-4cdd-82ce-d229b4b7ac72
-title: Proprietà AVEncVideoHeaderSeconds (codecapis. h)
+title: Proprietà AVEncVideoHeaderSeconds (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b0c2401631cfac0ab2d631440dc979449df88bc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 074a6dd0b2beab7a0245af4b513f5fffa5a543cf80e3fe3259309540bf0c2691
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342401"
 ---
-# <a name="avencvideoheaderseconds-property"></a>Proprietà AVEncVideoHeaderSeconds
+# <a name="avencvideoheaderseconds-property"></a>AVEncVideoHeaderSeconds - proprietà
 
-Specifica il numero di secondi di inizio nell'intestazione Group of Pictures (GOP).
+Specifica il secondo numero iniziale nell'intestazione del gruppo di immagini (GOP).
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoHeaderSeconds**
+**CODECAPI \_ AVEncVideoHeaderSeconds**
 
 ## <a name="property-value"></a>Valore proprietà
 
@@ -35,9 +35,9 @@ L'intervallo valido di questa proprietà è compreso tra 0 e 59, inclusi.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ L'intervallo valido di questa proprietà è compreso tra 0 e 59, inclusi.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

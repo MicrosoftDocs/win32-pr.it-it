@@ -1,25 +1,25 @@
 ---
-description: Le applicazioni ben scritte includono codice di gestione degli errori che consente di eseguire correttamente il ripristino in base a errori imprevisti.
+description: Le applicazioni ben scritte includono codice di gestione degli errori che consente loro di eseguire correttamente il ripristino da errori imprevisti.
 ms.assetid: b8d84980-6ba9-4784-8ab0-d5e9c5c95bae
 title: Gestione degli errori (gestione degli errori)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 781dee321acacbee8b740935d8b2569720cdb62f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fe2c7df2257fde950de2ed67bf92a1ec65fc805ff30f65aa7aef6fa246245a13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119343631"
 ---
 # <a name="error-handling-error-handling"></a>Gestione degli errori (gestione degli errori)
 
-Le applicazioni ben scritte includono codice di gestione degli errori che consente di eseguire correttamente il ripristino in base a errori imprevisti. Quando si verifica un errore, l'applicazione potrebbe dover richiedere l'intervento dell'utente o potrebbe essere in grado di eseguire il ripristino autonomamente. In casi estremi, l'applicazione può disconnettere l'utente o arrestare il sistema.
+Le applicazioni ben scritte includono codice di gestione degli errori che consente loro di eseguire correttamente il ripristino da errori imprevisti. Quando si verifica un errore, l'applicazione potrebbe dover richiedere l'intervento dell'utente o potrebbe essere in grado di eseguire il ripristino da sola. In casi estremi, l'applicazione può disconnettere l'utente o arrestare il sistema.
 
 -   [Informazioni sulla gestione degli errori](about-error-handling.md)
 -   [Uso della gestione degli errori](using-error-handling.md)
--   [Guida di riferimento alla gestione degli errori](error-handling-reference.md)
+-   [Informazioni di riferimento sulla gestione degli errori](error-handling-reference.md)
 
-Per informazioni sulla gestione delle eccezioni, vedere [gestione delle eccezioni strutturata](structured-exception-handling.md).
+Per informazioni sulla gestione delle eccezioni, vedere [Gestione delle eccezioni strutturata](structured-exception-handling.md).
 
  
 

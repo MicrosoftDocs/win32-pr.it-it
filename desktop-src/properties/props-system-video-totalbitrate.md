@@ -1,17 +1,17 @@
 ---
-description: Indica la velocità totale dei dati in &\# 0034, bit al secondo&\# 0034; per tutti i flussi video e audio.
+description: Indica la velocità totale dei dati in &\# 0034;bit al secondo&0034; per tutti i \# flussi video e audio.
 ms.assetid: 7667da66-261c-4627-8322-2c939738659b
-title: System. video. TotalBitrate
+title: System.Video.TotalBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f89af8e54051c8c6b1c5a2a2408f7bb24a6ae2a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e02616f2961af961f44875dfa28edda9b3beb15c585908727ebebbdd5a6b7e20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119396624"
 ---
-# <a name="systemvideototalbitrate"></a>System. video. TotalBitrate
+# <a name="systemvideototalbitrate"></a>System.Video.TotalBitrate
 
 Indica la velocità totale dei dati in "bit al secondo" per tutti i flussi video e audio.
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

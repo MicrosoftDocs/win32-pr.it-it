@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectConstantBuffer SetTextureBuffer (D3dx11effect. h)
+title: Metodo ID3DX11EffectConstantBuffer SetTextureBuffer (D3dx11effect.h)
 description: Impostare un buffer di trama.
 ms.assetid: b8c327e4-52ff-498e-81e9-187e58bbe5d2
 keywords:
 - Metodo SetTextureBuffer Direct3D 11
 - Metodo SetTextureBuffer Direct3D 11, interfaccia ID3DX11EffectConstantBuffer
-- Interfaccia ID3DX11EffectConstantBuffer Direct3D 11, metodo SetTextureBuffer
+- INTERFACCIA ID3DX11EffectConstantBuffer Direct3D 11, metodo SetTextureBuffer
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 736ec4c5f0125dfc37925d67875cf97c5441117c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f2d71b104d51b8310f2922c25e940cd559e2d47dca695cbe844e7526eb8235fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046370"
 ---
-# <a name="id3dx11effectconstantbuffersettexturebuffer-method"></a>Metodo ID3DX11EffectConstantBuffer:: SetTextureBuffer
+# <a name="id3dx11effectconstantbuffersettexturebuffer-method"></a>Metodo ID3DX11EffectConstantBuffer::SetTextureBuffer
 
 Impostare un buffer di trama.
 
@@ -48,7 +48,7 @@ HRESULT SetTextureBuffer(
 
 Tipo: **[ **ID3D11ShaderResourceView**](/windows/desktop/api/D3D11/nn-d3d11-id3d11shaderresourceview)\***
 
-Puntatore a un'interfaccia di visualizzazione delle risorse shader per accedere a un buffer di trama.
+Puntatore a un'interfaccia shader-resource-view per l'accesso a un buffer di trama.
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntatore a un'interfaccia di visualizzazione delle risorse shader per accedere 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei seguenti [codici restituiti Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

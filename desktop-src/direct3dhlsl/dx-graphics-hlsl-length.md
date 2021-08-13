@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a7a93b0a7d225a25273a2ab4f8bf1d24656b6ee1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1d6c361a7ad16216d686ab71747354a9b1ba3184d88759ed1e994c152c7b3636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791727"
 ---
 # <a name="length"></a>length
 
@@ -26,7 +26,7 @@ Restituisce la lunghezza del vettore a virgola mobile specificato.
 
 
 
-| lunghezza *ret* (*x*) |
+| *ret* length(*x*) |
 |-------------------|
 
 
@@ -39,7 +39,7 @@ Restituisce la lunghezza del vettore a virgola mobile specificato.
 
 | Elemento                                                   | Descrizione                                     |
 |--------------------------------------------------------|-------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | Vettore a virgola mobile specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | Vettore a virgola mobile specificato.<br/> |
 
 
 
@@ -47,7 +47,7 @@ Restituisce la lunghezza del vettore a virgola mobile specificato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Scalare a virgola mobile che rappresenta la lunghezza del parametro *x* .
+Valore scalare a virgola mobile che rappresenta la lunghezza del *parametro x.*
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -55,23 +55,23 @@ Scalare a virgola mobile che rappresenta la lunghezza del parametro *x* .
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| *x*   | [**vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any  |
-| *RET* | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1    |
+| *x*   | [**Vettore**](dx-graphics-hlsl-intrinsic-functions.md) | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any  |
+| *Ret* | [**Scalare**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types)                        | 1    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sì ( \_ solo vs 1 \_ 1) |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)                          | sì (solo \_ vs 1 \_ 1) |
 
 
 

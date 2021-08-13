@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93e5b967d0e2f41671f5924f7e92d06bae36ec1c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 997d6f7836b1657199b2b83e9b1ed758669dcf7264faa5b85ab3f9d999a6d741
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341621"
 ---
 # <a name="cbasemediafiltercbasemediafilter-destructor"></a>Distruttore CBaseMediaFilter.~CBaseMediaFilter
 
@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Arrestare sempre l'oggetto prima di eliminarlo.
+Arrestare sempre l'oggetto prima di eliminare l'oggetto.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Arrestare sempre l'oggetto prima di eliminarlo.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Streams.h)</dt> </dl>                                                                                  |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

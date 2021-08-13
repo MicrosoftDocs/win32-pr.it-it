@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f025b93e626c4b0f2ab6bb7729169aaff1d67707
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f258d291961add7f97fd8f67da46bc2e3e64d57eda942fbffd9aeded7f15aafc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118778509"
 ---
 # <a name="esentfatalexception-constructor-string-jet_err"></a>Costruttore EsentFatalException (String, JET_err)
 
 Inizializza una nuova istanza della classe EsentFatalException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ protected EsentFatalException(
 #### <a name="parameters"></a>Parametri
 
   - description  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Descrizione dell'errore.
 
 <!-- end list -->
 
   - Err  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
     Codice di errore dell'eccezione.
 
@@ -79,6 +79,6 @@ protected EsentFatalException(
 
 [Membri di EsentFatalException](./esentfatalexception-members.md)
 
-[Overload EsentFatalException](./esentfatalexception-constructor.md)
+[Overload di EsentFatalException](./esentfatalexception-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

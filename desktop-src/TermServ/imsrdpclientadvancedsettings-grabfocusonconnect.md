@@ -4,23 +4,23 @@ description: Specifica se il controllo client deve avere lo stato attivo durante
 ms.assetid: c67fc284-6e07-4749-84bf-70c0ae4d1b2b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà GrabFocusOnConnect
-- Servizi Desktop remoto proprietà GrabFocusOnConnect, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà GrabFocusOnConnect
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Interfaccia GrabFocusOnConnect Servizi Desktop remoto , IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Interfaccia GrabFocusOnConnect Servizi Desktop remoto , IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Interfaccia GrabFocusOnConnect Servizi Desktop remoto , IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà GrabFocusOnConnect
+- Proprietà GrabFocusOnConnect Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà GrabFocusOnConnect
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7fb04c00bd7aaaf4de1252d961206ffee0e6b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e759dd6bbd297dcd13eb9885b228f1a8257c293c099eaba3a6a8f1cf46c2a3f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475471"
 ---
-# <a name="imsrdpclientadvancedsettingsgrabfocusonconnect-property"></a>Proprietà IMsRdpClientAdvancedSettings:: GrabFocusOnConnect
+# <a name="imsrdpclientadvancedsettingsgrabfocusonconnect-property"></a>Proprietà IMsRdpClientAdvancedSettings::GrabFocusOnConnect
 
 Specifica se il controllo client deve avere lo stato attivo durante la connessione. Il controllo non tenterà di acquisire lo stato attivo da una finestra in esecuzione in un processo diverso.
 
@@ -84,15 +84,15 @@ HRESULT get_GrabFocusOnConnect(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ false** per disabilitare la funzionalità o la **variante \_ true** per abilitare la funzionalità. L'impostazione di questa proprietà su **Variant \_ false** impedisce al controllo di catturare lo stato attivo durante la connessione.
+Impostare questo parametro su **VARIANT \_ FALSE** per disabilitare la funzionalità o **SU VARIANT \_ TRUE** per abilitare la funzionalità. L'impostazione di questa proprietà **su VARIANT \_ FALSE** impedisce al controllo di acquisire lo stato attivo durante la connessione.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,7 +104,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

@@ -1,21 +1,21 @@
 ---
 description: Il metodo GetStreamCaps recupera le funzionalità associate a un indice di formato specificato.
 ms.assetid: 4c375369-51d9-44ac-a8f0-c2a96fc10805
-title: 'Metodo ITFormatControl:: GetStreamCaps (Ipmsp. h)'
+title: Metodo ITFormatControl::GetStreamCaps (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a1ccaf825912e53eafb5112f14ed369f999959a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f54cbd44a946c0fcd3cf297c4cacadc49369765b8c1b6505031a145768c3b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406111"
 ---
-# <a name="itformatcontrolgetstreamcaps-method"></a>Metodo ITFormatControl:: GetStreamCaps
+# <a name="itformatcontrolgetstreamcaps-method"></a>Metodo ITFormatControl::GetStreamCaps
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
-Il metodo **GetStreamCaps** recupera le funzionalità associate a un indice di formato specificato.
+Il **metodo GetStreamCaps** recupera le funzionalità associate a un indice di formato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,28 +35,28 @@ HRESULT GetStreamCaps(
 
 <dl> <dt>
 
-*dwIndex* \[ in\]
+*dwIndex* \[ Pollici\]
 </dt> <dd>
 
-Indice del formato di cui viene eseguito il probe.
+Indice del formato di cui viene probe.
 
 </dd> <dt>
 
-*ppMediaType* \[ out\]
+*ppMediaType* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un descrittore del **\_ \_ tipo di supporto am** del formato terminale. Per ulteriori informazioni sul **\_ \_ tipo di supporto am**, vedere la documentazione di DirectX.
+Puntatore a un **\_ descrittore AM MEDIA \_ TYPE** del formato terminale. Per altre informazioni su **AM \_ MEDIA \_ TYPE,** vedere la documentazione di DirectX.
 
 </dd> <dt>
 
-*pStreamConfigCaps* \[ out\]
+*pStreamConfigCaps* \[ Cambio\]
 </dt> <dd>
 
-Struttura [**di \_ \_ \_ Caps di configurazione del flusso TAPI**](tapi-stream-config-caps.md) che fornisce informazioni dettagliate sulle funzionalità di flusso.
+Struttura [**TAPI \_ STREAM CONFIG \_ \_ CAPS**](tapi-stream-config-caps.md) che fornisce informazioni dettagliate sulle funzionalità del flusso.
 
 </dd> <dt>
 
-*pfEnabled* \[ out\]
+*pfEnabled* \[ Cambio\]
 </dt> <dd>
 
 Indica se il formato associato all'indice corrente è abilitato.
@@ -71,8 +71,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -84,9 +84,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 
@@ -98,7 +98,7 @@ Questo metodo può restituire uno di questi valori.
 [**ITFormatControl**](itformatcontrol.md)
 </dt> <dt>
 
-[**\_ \_ tappi configurazione flusso TAPI \_**](tapi-stream-config-caps.md)
+[**TAPI \_ STREAM \_ CONFIG \_ CAPS**](tapi-stream-config-caps.md)
 </dt> </dl>
 
  

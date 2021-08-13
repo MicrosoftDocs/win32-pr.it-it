@@ -1,19 +1,19 @@
 ---
-description: 'Versione utilizzabile del metodo IMFSourceResolver:: EndCreateObjectFromURL.'
+description: Versione remota del metodo IMFSourceResolver::EndCreateObjectFromURL.
 ms.assetid: 42764869-9cbc-4f41-a3af-f2d869db9f99
-title: RemoteEndCreateObjectFromURL (Mfobjects. h)
+title: RemoteEndCreateObjectFromURL (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26fff650dca012b58dc6fd46b26f13b1c2ac3c8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c19951e9baedebb1713ad27faf8fa7848dad86eaea7ecefdd989b8cbd328783
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119229281"
 ---
 # <a name="remoteendcreateobjectfromurl"></a>RemoteEndCreateObjectFromURL
 
-Versione utilizzabile del metodo [**IMFSourceResolver:: EndCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-endcreateobjectfromurl) .
+Versione remota del metodo [**IMFSourceResolver::EndCreateObjectFromURL.**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-endcreateobjectfromurl)
 
 ``` syntax
 [call_as(EndCreateObjectFromURL)]
@@ -26,7 +26,7 @@ HRESULT RemoteEndCreateObjectFromURL(
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato in vtable per l'interfaccia. Se [**EndCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-endcreateobjectfromurl) viene chiamato tra i limiti del processo, la Media Foundation DLL di proxy/stub converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
+Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti non implementano questo metodo. Il metodo non viene visualizzato nella tabella vtable per l'interfaccia . Se [**EndCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-endcreateobjectfromurl) viene chiamato oltre i limiti del processo, la DLL proxy/stub di Media Foundation converte la chiamata in una chiamata al metodo remoto e quindi la converte nuovamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,10 +34,10 @@ Le applicazioni non possono chiamare direttamente questo metodo e gli oggetti no
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                                                    |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                                              |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mfuuid. lib</dt> </dl>                    |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                                                    |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                                              |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 
 
 

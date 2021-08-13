@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo QueryFilterInfo recupera le informazioni sul filtro. Questo metodo implementa il metodo IBaseFilter:: QueryFilterInfo.'
+description: Il metodo QueryFilterInfo recupera informazioni sul filtro. Questo metodo implementa il metodo IBaseFilter::QueryFilterInfo.
 ms.assetid: 0c25aa9e-933c-4c45-a1cc-ffc9253dd561
-title: Metodo CBaseFilter. QueryFilterInfo (Amfilter. h)
+title: Metodo CBaseFilter.QueryFilterInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4a706663c1fb39e0e2e84b4097ec620f9e608843
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 31eb135a29a6e8e1c4f27c28d24b5cbf50eba3bb87b99ba9a1d3a5868c2fbc49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341741"
 ---
-# <a name="cbasefilterqueryfilterinfo-method"></a>CBaseFilter. QueryFilterInfo, metodo
+# <a name="cbasefilterqueryfilterinfo-method"></a>Metodo CBaseFilter.QueryFilterInfo
 
-Il `QueryFilterInfo` metodo recupera le informazioni sul filtro. Questo metodo implementa il metodo [**IBaseFilter:: QueryFilterInfo**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo) .
+Il `QueryFilterInfo` metodo recupera informazioni sul filtro. Questo metodo implementa il [**metodo IBaseFilter::QueryFilterInfo.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-queryfilterinfo)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +45,19 @@ HRESULT QueryFilterInfo(
 *pInfo* 
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ informazioni sul filtro**](/windows/win32/api/strmif/ns-strmif-filter_info) .
+Puntatore a una [**struttura FILTER \_ INFO.**](/windows/win32/api/strmif/ns-strmif-filter_info)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un \_ puntatore S OK o e \_ .
+Restituisce S \_ OK o E \_ POINTER.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo copia il nome del filtro dalla variabile membro [**CBaseFilter:: m \_ pname**](cbasefilter-m-pname.md) nel membro **achName** della struttura delle informazioni sul filtro \_ . Se **m \_ pname** è **null**, il metodo imposta **achName** su L' \\ 0'.
+Questo metodo copia il nome del filtro dalla variabile membro [**CBaseFilter::m \_ pName**](cbasefilter-m-pname.md) nel membro **achName** della struttura FILTER \_ INFO. Se **m \_ pName** è **NULL,** il metodo imposta **achName** su L' \\ 0'.
 
-Il metodo imposta il membro **pGraph** della struttura di \_ informazioni sul filtro uguale alla variabile membro [**\_ pGraph di CBaseFilter:: m**](cbasefilter-m-pgraph.md) e incrementa il conteggio dei riferimenti. Il chiamante deve rilasciare l'interfaccia.
+Il metodo imposta il **membro pGraph** della struttura FILTER INFO uguale alla variabile membro \_ [**CBaseFilter::m \_ pGraph**](cbasefilter-m-pgraph.md) e incrementa il conteggio dei riferimenti. Il chiamante deve rilasciare l'interfaccia .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Il metodo imposta il membro **pGraph** della struttura di \_ informazioni sul fi
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

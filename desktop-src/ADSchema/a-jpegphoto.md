@@ -1,6 +1,6 @@
 ---
-title: attributo jpegPhoto
-description: Utilizzato per archiviare una o più immagini di una persona utilizzando il formato JPEG File Interchange Format \ JFIF \.
+title: Attributo jpegPhoto
+description: Consente di archiviare una o più immagini di una persona usando il formato di interscambio di file JPEG \ JFIF\ .
 ms.assetid: c9257acd-366c-4839-a8c6-0ef9d6b7e671
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8f7a9eb8ec1cee8d7ebede5d0e00dbe52e8b9b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ec57defb8bea779b43e27e5bd63cc03c68976b7a192e1f96d0faa5393ee93e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303901"
 ---
-# <a name="jpegphoto-attribute"></a>attributo jpegPhoto
+# <a name="jpegphoto-attribute"></a>Attributo jpegPhoto
 
-Utilizzato per archiviare una o più immagini di una persona utilizzando il formato di interscambio file JPEG \[ JFIF \] .
+Consente di archiviare una o più immagini di una persona usando il formato JFIF JFIF (Jpeg File Interchange \[ \] Format).
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | jpegPhoto                                             |
-| LDAP-Display-Name | jpegPhoto                                             |
+| Ldap-Display-Name | jpegPhoto                                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 0.9.2342.19200300.100.1.60                            |
-| System-ID-GUID    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
+| System-Id-Guid    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -56,15 +56,15 @@ Utilizzato per archiviare una o più immagini di una persona utilizzando il form
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Utilizzato per archiviare una o più immagini di una persona utilizzando il form
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Utilizzato per archiviare una o più immagini di una persona utilizzando il form
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Utilizzato per archiviare una o più immagini di una persona utilizzando il form
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Utilizzato per archiviare una o più immagini di una persona utilizzando il form
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

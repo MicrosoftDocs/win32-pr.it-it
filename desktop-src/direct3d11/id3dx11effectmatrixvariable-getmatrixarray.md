@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectMatrixVariable GetMatrixArray (D3dx11effect. h)
-description: Ottenere una matrice di matrici.
+title: Metodo GetMatrixArray ID3DX11EffectMatrixVariable (D3dx11effect.h)
+description: Ottiene una matrice di matrici.
 ms.assetid: a7598687-a11c-41ad-9fb6-2c16d12f5edc
 keywords:
 - Metodo GetMatrixArray Direct3D 11
 - Metodo GetMatrixArray Direct3D 11, interfaccia ID3DX11EffectMatrixVariable
-- Interfaccia ID3DX11EffectMatrixVariable Direct3D 11, metodo GetMatrixArray
+- ID3DX11EffectMatrixVariable interface Direct3D 11 , Metodo GetMatrixArray
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d4a339bf6918868473966b6d79bcbe6b6aa3eaa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8747e96469e061b93b063e4b91011e1a1b48bba3a10ba04b6b5eb20f179e0d13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046209"
 ---
-# <a name="id3dx11effectmatrixvariablegetmatrixarray-method"></a>Metodo ID3DX11EffectMatrixVariable:: GetMatrixArray
+# <a name="id3dx11effectmatrixvariablegetmatrixarray-method"></a>Metodo ID3DX11EffectMatrixVariable::GetMatrixArray
 
-Ottenere una matrice di matrici.
+Ottiene una matrice di matrici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT GetMatrixArray(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntatore al primo elemento della prima matrice in una matrice di matrici.
 
@@ -57,7 +57,7 @@ Puntatore al primo elemento della prima matrice in una matrice di matrici.
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Offset (in numero di matrici) tra l'inizio della matrice e la prima matrice restituita.
 
@@ -66,7 +66,7 @@ Offset (in numero di matrici) tra l'inizio della matrice e la prima matrice rest
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di matrici nella matrice restituita.
 
@@ -76,12 +76,12 @@ Numero di matrici nella matrice restituita.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

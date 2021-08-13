@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_GETBARCOLOR (COMmctrl. h)
+title: PBM_GETBARCOLOR messaggio (Commctrl.h)
 description: Ottiene il colore dell'indicatore di stato.
 ms.assetid: d046f7e4-e21e-4dd9-a7be-2bf820c3c492
 keywords:
-- Controlli di Windows Message PBM_GETBARCOLOR
+- PBM_GETBARCOLOR di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35586d3483d1d487f740a1a3d991c884c814f452
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb42d878840ad05f0854ec7ca9cb50dc1b3be2a55b3b65ddf652d961b6d818b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119312441"
 ---
-# <a name="pbm_getbarcolor-message"></a>\_Messaggio GETBARCOLOR PBM
+# <a name="pbm_getbarcolor-message"></a>Messaggio PBM \_ GETBARCOLOR
 
 Ottiene il colore dell'indicatore di stato.
 
@@ -41,9 +41,9 @@ Restituisce il colore dell'indicatore di stato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo è il colore impostato dal messaggio [**\_ SETBARCOLOR di PBM**](pbm-setbarcolor.md) . Il valore predefinito è CLR \_ default, definito in commctrl. h.
+Si tratta del colore impostato dal messaggio [**PBM \_ SETBARCOLOR.**](pbm-setbarcolor.md) Il valore predefinito è CLR DEFAULT, definito \_ in commctrl.h.
 
-Questa funzione ha effetto solo sulla modalità classica, non su qualsiasi stile di visualizzazione.
+Questa funzione influisce solo sulla modalità classica, non su qualsiasi stile di visualizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Questa funzione ha effetto solo sulla modalità classica, non su qualsiasi stile
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

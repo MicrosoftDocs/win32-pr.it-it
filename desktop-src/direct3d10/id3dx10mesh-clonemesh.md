@@ -1,7 +1,7 @@
 ---
-description: Crea una nuova mesh e la riempie con i dati di una mesh precedentemente caricata.
+description: Crea una nuova mesh e la riempie con i dati di una mesh caricata in precedenza.
 ms.assetid: 2ce39982-abc0-444b-bc6f-24508f76fe31
-title: 'Metodo ID3DX10Mesh:: CloneMesh (D3DX10. h)'
+title: Metodo ID3DX10Mesh::CloneMesh (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0f007475ea9f6aeaa6dc0c01bbd721c4a5103adf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 292522e47dbaf6937d871209006134e866e92fdeb27f6edba4f4f71f6d1fad14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409131"
 ---
-# <a name="id3dx10meshclonemesh-method"></a>Metodo ID3DX10Mesh:: CloneMesh
+# <a name="id3dx10meshclonemesh-method"></a>Metodo ID3DX10Mesh::CloneMesh
 
-Crea una nuova mesh e la riempie con i dati di una mesh precedentemente caricata.
+Crea una nuova mesh e la riempie con i dati di una mesh caricata in precedenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,43 +44,43 @@ HRESULT CloneMesh(
 
 <dl> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Flag di creazione da applicare alla nuova mesh. Vedere [**d3dx10 \_ mesh**](d3dx10-mesh.md).
+Flag di creazione da applicare alla nuova mesh. Vedere [**D3DX10 \_ MESH.**](d3dx10-mesh.md)
 
 </dd> <dt>
 
-*pPosSemantic* \[ in\]
+*pPosSemantic* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nome semantico per i dati di posizione.
+Nome semantico per i dati della posizione.
 
 </dd> <dt>
 
-*pDesc* \[ in\]
+*pDesc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**D3D10 \_ input \_ elemento \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \***
+Tipo: **const [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \***
 
-Matrice di \_ \_ strutture desc dell'elemento input D3D10, che \_ descrive il formato del vertice per la mesh restituita. Vedere [**l' \_ elemento di input D3D10 \_ \_ desc**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc).
+Matrice di strutture D3D10 \_ INPUT ELEMENT DESC, che descrive il formato dei vertici per la mesh \_ \_ restituita. Vedere [**D3D10 \_ INPUT ELEMENT DESC (ELEMENTO DI INPUT D3D10 \_ \_ DESC).**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)
 
 </dd> <dt>
 
-*DeclCount* \[ in\]
+*DeclCount* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero di elementi nella matrice pDesc.
 
 </dd> <dt>
 
-*ppCloneMesh* \[ out\]
+*ppCloneMesh* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10Mesh**](id3dx10mesh.md)\*\***
@@ -93,7 +93,7 @@ Nuova mesh.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -101,8 +101,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

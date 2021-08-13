@@ -1,19 +1,19 @@
 ---
-description: 'Cryptography API: Next Generation (CNG) definisce le funzioni seguenti che vengono usate per eseguire operazioni di crittografia.'
+description: "L'API cryptography: Next Generation (CNG) definisce le funzioni seguenti usate per l'esecuzione di operazioni di crittografia."
 ms.assetid: 7200efb5-2893-476c-9ad0-ba49bce92387
 title: Funzioni primitive di crittografia CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e173d9d92a3722352052bbe973cadf0b2bb762e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 561479c529fab95b96f988482472858e1a5eeecff95d77a493859d80174bed0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908789"
 ---
 # <a name="cng-cryptographic-primitive-functions"></a>Funzioni primitive di crittografia CNG
 
-Cryptography API: Next Generation (CNG) definisce le funzioni seguenti che vengono usate per eseguire operazioni di crittografia.
+L'API cryptography: Next Generation (CNG) definisce le funzioni seguenti usate per l'esecuzione di operazioni di crittografia.
 
 -   [**BCryptCloseAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptclosealgorithmprovider)
 -   [**BCryptCreateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash)

@@ -1,7 +1,7 @@
 ---
-description: Ottenere il numero massimo di output di animazione che il controller di animazione può supportare.
+description: Ottiene il numero massimo di output di animazione che il controller di animazione può supportare.
 ms.assetid: 32534c92-9f8d-4fab-9f56-fe83368c476a
-title: 'Metodo ID3DXAnimationController:: GetMaxNumAnimationOutputs (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::GetMaxNumAnimationOutputs (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 44060041bfb9368a8df0509ed72337aacfe3bc8b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3dd1c79d2b9738f5d99ec735c77a8b30b0b20b747e2604064466aff47890e892
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119373161"
 ---
-# <a name="id3dxanimationcontrollergetmaxnumanimationoutputs-method"></a>Metodo ID3DXAnimationController:: GetMaxNumAnimationOutputs
+# <a name="id3dxanimationcontrollergetmaxnumanimationoutputs-method"></a>Metodo ID3DXAnimationController::GetMaxNumAnimationOutputs
 
-Ottenere il numero massimo di output di animazione che il controller di animazione può supportare.
+Ottiene il numero massimo di output di animazione che il controller di animazione può supportare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di output di animazione che il controller è in grado di gestire.
+Numero massimo di output di animazione che il controller può gestire.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Numero massimo di output di animazione che il controller è in grado di gestire.
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

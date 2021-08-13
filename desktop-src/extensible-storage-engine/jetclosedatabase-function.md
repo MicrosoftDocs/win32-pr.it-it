@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: funzione JetCloseDatabase'
-title: JetCloseDatabase (funzione)
+description: Altre informazioni sulla funzione JetCloseDatabase
+title: Funzione JetCloseDatabase
 TOCTitle: JetCloseDatabase Function
 ms:assetid: e17a05dd-c30b-4e8f-8538-91a65e8052d2
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294123(v=EXCHG.10)
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9088e0ebc3b4778d6968c999afc238e49fb2f48f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 606a99610843b822635217042ee3293c53570d42d3a8c17baee0b5416d45ec54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472441"
 ---
-# <a name="jetclosedatabase-function"></a>JetCloseDatabase (funzione)
+# <a name="jetclosedatabase-function"></a>Funzione JetCloseDatabase
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jetclosedatabase-function"></a>JetCloseDatabase (funzione)
+## <a name="jetclosedatabase-function"></a>Funzione JetCloseDatabase
 
-La funzione **JetCloseDatabase** chiude un file di database precedentemente aperto con [JetOpenDatabase](./jetopendatabase-function.md).
+La **funzione JetCloseDatabase** chiude un file di database aperto in precedenza con [JetOpenDatabase](./jetopendatabase-function.md).
 
 ```cpp
     JET_ERR JET_API JetCloseDatabase(
@@ -46,9 +46,9 @@ La funzione **JetCloseDatabase** chiude un file di database precedentemente aper
 
 *sesid*
 
-Contesto della sessione del database che verrà usato per la chiamata API.
+Contesto della sessione di database che verrà usato per la chiamata API.
 
-*dbid*
+*Dbid*
 
 Database da chiudere.
 
@@ -58,7 +58,7 @@ Riservato per utilizzi futuri.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md) e Parametri [di gestione degli errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -78,7 +78,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidDatabaseId</p></td>
-<td><p>Il parametro <em>dbid</em> non è un identificatore di database valido.</p></td>
+<td><p>Il <em>parametro dbid</em> non è un identificatore di database valido.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errSuccess</p></td>
@@ -106,11 +106,11 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

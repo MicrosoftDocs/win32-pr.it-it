@@ -4,16 +4,16 @@ description: IAgentCommandEx SetHelpContextID
 ms.assetid: 861d55dc-f584-495c-a148-016af8f7a3e2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7539cef8e986db40ef94a8fd3d47073fbe489d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f6b876276d42ff07081b60194e90beff3ad9ef19fec383c50d70a551e1c9a5e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118750193"
 ---
 # <a name="iagentcommandexsethelpcontextid"></a>IAgentCommandEx::SetHelpContextID
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetHelpContextID(
@@ -21,31 +21,31 @@ HRESULT SetHelpContextID(
 );
 ```
 
-Imposta [**HelpContextID**](helpcontextid-property-com.md) per un oggetto [**comando**](/windows/desktop/lwef/the-command-object) .
+Imposta [**HelpContextID per**](helpcontextid-property-com.md) un [**oggetto**](/windows/desktop/lwef/the-command-object) Command.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="ulID"></span><span id="ulid"></span><span id="ULID"></span>*ulID*
 </dt> <dd>
 
-Il numero di contesto dell'argomento della Guida associato all'oggetto [**Command**](/windows/desktop/lwef/the-command-object) ; utilizzato per fornire la Guida sensibile al contesto per il comando.
+Numero di contesto dell'argomento della Guida associato [**all'oggetto**](/windows/desktop/lwef/the-command-object) Command. utilizzato per fornire la Guida sensibile al contesto per il comando.
 
 </dd> </dl>
 
-Se è stato creato un file della Guida di Windows per l'applicazione e questo è stato impostato [**nella proprietà**](helpfile-property.md) fileguida del carattere. Microsoft Agent chiama automaticamente la guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **true** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property-com.md), Agent chiama la guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore di **HelpContextID** per il comando.
+Se è stata creata una Windows file della Guida per l'applicazione e impostata nella proprietà [**HelpFile del**](helpfile-property.md) carattere. Microsoft Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se è presente un numero di contesto in [**HelpContextID**](helpcontextid-property-com.md), Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
 
 > [!Note]  
-> La compilazione di un file della guida richiede il compilatore della Guida di Microsoft Windows.
+> La compilazione di un file della Guida richiede il compilatore della Guida Windows Microsoft.
 
- 
+ 
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommandEx:: GetHelpContextID**](iagentcommandex--gethelpcontextid.md), [**IAgentCharacterEx:: SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md), [**IAgentCharacterEx:: SetHelpFileName**](iagentcharacterex--sethelpfilename.md)
+[**IAgentCommandEx::GetHelpContextID**](iagentcommandex--gethelpcontextid.md), [**IAgentCharacterEx::SetHelpModeOn**](iagentcharacterex--sethelpmodeon.md), [**IAgentCharacterEx::SetHelpFileName**](iagentcharacterex--sethelpfilename.md)
 
 
- 
+ 
 
- 
+ 

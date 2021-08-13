@@ -1,10 +1,10 @@
 ---
-title: Metodo IMsRdpClient7 GetStatusText (OpenService. h)
-description: Recupera il testo di stato per il codice di stato specificato.
+title: Metodo GetStatusText IMsRdpClient7 (Openservice.h)
+description: Recupera il testo dello stato per il codice di stato specificato.
 ms.assetid: 1da2280a-c26d-4caa-b227-c289055f3aa9
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetStatusText
+- Metodo GetStatusText Servizi Desktop remoto
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient7
 - Interfaccia IMsRdpClient7 Servizi Desktop remoto, metodo GetStatusText
 - Metodo GetStatusText Servizi Desktop remoto, interfaccia IMsRdpClient8
@@ -26,16 +26,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 820628bfba59ec980e5128b9d9df3ee21b49a064
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 42ecccb6535afec2d32ff0466428af36c432bc981a1bc23cfa24161ca969a80e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119285191"
 ---
-# <a name="imsrdpclient7getstatustext-method"></a>Metodo IMsRdpClient7:: GetStatusText
+# <a name="imsrdpclient7getstatustext-method"></a>Metodo IMsRdpClient7::GetStatusText
 
-Recupera il testo di stato per il codice di stato specificato.
+Recupera il testo dello stato per il codice di stato specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,10 +53,10 @@ HRESULT GetStatusText(
 
 <dl> <dt>
 
-*statusCode* \[ in\]
+*codice di stato* \[ Pollici\]
 </dt> <dd>
 
-**Uint** che specifica il codice di stato per il quale recuperare il testo.
+UINT **che** specifica il codice di stato per il quale recuperare il testo.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Indirizzo di un **BSTR** che riceve il testo dello stato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,10 +79,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 7<br/>                                                                     |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>OpenService. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Openservice.h</dt> </dl> |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444A-91D4-add26d070638<br/>         |
+| IID<br/>                      | IID \_ IMsRdpClient7 è definito come b2a5b5ce-3461-444a-91d4-add26d070638<br/>         |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: attributo memberUid
-description: Contiene i nomi di accesso dei membri di un gruppo.
+title: Attributo memberUid
+description: Contiene i nomi degli account di accesso dei membri di un gruppo.
 ms.assetid: e5679a3a-e4e6-4203-9c85-49cd19a551d5
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa64c0f1117b06f819ee3bbb6beb43fbdc8b647a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 55bfd733eab00bd34ca1320177aa616682d1fe3161126bf95f23df211a1780d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300421"
 ---
-# <a name="memberuid-attribute"></a>attributo memberUid
+# <a name="memberuid-attribute"></a>Attributo memberUid
 
-Contiene i nomi di accesso dei membri di un gruppo.
+Contiene i nomi degli account di accesso dei membri di un gruppo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | memberUid                            |
-| LDAP-Display-Name | memberUid                            |
+| Ldap-Display-Name | memberUid                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.12                     |
-| System-ID-GUID    | 03dab236-672e-4f61-ab64-f77d2dc2ffab |
+| System-Id-Guid    | 03dab236-672e-4f61-ab64-f77d2dc2ffab |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene i nomi di accesso dei membri di un gruppo.
 | ID collegamento                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| È a valore singolo       | Falso                                         |
+| A valore singolo       | Falso                                         |
 | Indicizzato             | Falso                                         |
 | Nel catalogo globale      | Falso                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
 | System-Flags           | 0x00000000                                    |
-| Classi utilizzate in        | [**posixGroup**](c-posixgroup.md)<br/> |
+| Classi usate in        | [**posixGroup**](c-posixgroup.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene i nomi di accesso dei membri di un gruppo.
 | ID collegamento                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| È a valore singolo       | Falso                                         |
+| A valore singolo       | Falso                                         |
 | Indicizzato             | Falso                                         |
 | Nel catalogo globale      | Falso                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
 | System-Flags           | 0x00000000                                    |
-| Classi utilizzate in        | [**posixGroup**](c-posixgroup.md)<br/> |
+| Classi usate in        | [**posixGroup**](c-posixgroup.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene i nomi di accesso dei membri di un gruppo.
 | ID collegamento                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| È a valore singolo       | Falso                                         |
+| A valore singolo       | Falso                                         |
 | Indicizzato             | Falso                                         |
 | Nel catalogo globale      | Falso                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
 | System-Flags           | 0x00000000                                    |
-| Classi utilizzate in        | [**posixGroup**](c-posixgroup.md)<br/> |
+| Classi usate in        | [**posixGroup**](c-posixgroup.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene i nomi di accesso dei membri di un gruppo.
 | ID collegamento                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| È a valore singolo       | Falso                                         |
+| A valore singolo       | Falso                                         |
 | Indicizzato             | Falso                                         |
 | Nel catalogo globale      | Falso                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
 | System-Flags           | 0x00000000                                    |
-| Classi utilizzate in        | [**posixGroup**](c-posixgroup.md)<br/> |
+| Classi usate in        | [**posixGroup**](c-posixgroup.md)<br/> |
 
 
 

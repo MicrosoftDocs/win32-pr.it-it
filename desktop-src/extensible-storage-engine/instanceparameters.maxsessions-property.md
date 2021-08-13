@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. MaxSessions'
-title: Proprietà InstanceParameters. MaxSessions
+description: Altre informazioni sulla proprietà InstanceParameters.MaxSessions
+title: InstanceParameters.MaxSessions - proprietà
 TOCTitle: 'MaxSessions property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxSessions
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxsessions(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2294a8de2e3603a638607efad5baaa6af6c1ec17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c2a25c117dfc60c7494ac532e178410b63260aa76aca7448ad07289347fffac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767882"
 ---
-# <a name="instanceparametersmaxsessions-property"></a>Proprietà InstanceParameters. MaxSessions
+# <a name="instanceparametersmaxsessions-property"></a>InstanceParameters.MaxSessions - proprietà
 
-Ottiene o imposta il numero di risorse delle sessioni riservate per questa istanza. Una risorsa di sessione corrisponde direttamente a una JET_SESID.
+Ottiene o imposta il numero di risorse di sessioni riservate per questa istanza. Una risorsa di sessione corrisponde direttamente a un JET_SESID.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int MaxSessions { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -72,4 +72,4 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Membri di InstanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

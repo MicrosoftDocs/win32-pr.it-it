@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b050aaa844ea814c0c24a62ccfb5ab332c611107
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 2b54ed8a95d81c148b68727384dd76fba3d2dc8b1f9d6452c2105bc45f015646
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "106323779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119362281"
 ---
 # <a name="jet_grbit"></a>JET_GRBIT
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_grbit"></a>JET_GRBIT
 
-Il tipo di dati **JET_GRBIT** è costituito da un gruppo di bit che contengono costanti specifiche per le funzioni e le strutture in cui vengono utilizzate.
+Il **JET_GRBIT** dati è un gruppo di bit che contengono costanti specifiche per le funzioni e le strutture in cui viene utilizzato.
 
 ```cpp
 typedef unsigned long JET_GRBIT;
@@ -39,13 +39,13 @@ typedef unsigned long JET_GRBIT;
 
 JET_GRBIT
 
-In generale, le costanti utilizzate come valori per questo tipo di dati riflettono il nome dell'elemento API in cui vengono utilizzate. Ad esempio, tutte le costanti passate a [JetRetrieveColumn](./jetretrievecolumn-function.md) iniziano con "JET_bitRetrieve". Analogamente, tutte le costanti passate a [JetSetColumn](./jetsetcolumn-function.md) iniziano con "JET_bitSet".
+In generale, le costanti usate come valori per questo tipo di dati riflettono il nome dell'elemento API in cui vengono usate. Ad esempio, tutte le costanti passate [a JetRetrieveColumn](./jetretrievecolumn-function.md) iniziano con "JET_bitRetrieve". Analogamente, tutte le costanti passate a [JetSetColumn](./jetsetcolumn-function.md) iniziano con "JET_bitSet".
 
 Se il valore è zero, il parametro viene ignorato.
 
 ### <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni, vedere la funzione o la struttura specifica. Le opzioni vengono in genere passate come un set di flag che possono essere combinati.
+Per altre informazioni, vedere la funzione o la struttura specifica. Le opzioni vengono in genere passate come set di flag che possono essere combinati.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Per ulteriori informazioni, vedere la funzione o la struttura specifica. Le opzi
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

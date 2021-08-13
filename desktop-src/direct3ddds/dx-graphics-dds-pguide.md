@@ -1,29 +1,29 @@
 ---
-title: Guida alla programmazione per DDS
+title: Guida per programmatori per DDS
 description: Direct3D implementa il formato di file DDS per l'archiviazione di trame non compresse o compresse (DXTn).
 ms.assetid: 39f9847e-3b1c-4401-a253-74c183ffcc83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4940db5ec40e6ec0b907aa4ee7ce725cd585e961
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: c8fc1f8b9b84c2dc1f9236c79c320ae75848834ef2183db55b189f6b9d340d06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104399938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118796721"
 ---
-# <a name="programming-guide-for-dds"></a>Guida alla programmazione per DDS
+# <a name="programming-guide-for-dds"></a>Guida per programmatori per DDS
 
-Direct3D implementa il formato di file DDS per l'archiviazione di trame non compresse o compresse (DXTn). Il formato di file implementa diversi tipi leggermente diversi, progettati per l'archiviazione di diversi tipi di dati, e supporta trame a livello singolo, trame con mipmap, mappe di cubi, mappe del volume e matrici di trame (in Direct3D 10/11). In questa sezione viene descritto il layout di un file DDS.
+Direct3D implementa il formato di file DDS per l'archiviazione di trame non compresse o compresse (DXTn). Il formato di file implementa diversi tipi leggermente diversi progettati per l'archiviazione di tipi diversi di dati e supporta trame a livello singolo, trame con mipmap, mappe cubo, mappe di volume e matrici di trame (in Direct3D 10/11). Questa sezione descrive il layout di un file DDS.
 
-Per informazioni sulla creazione di una trama in Direct3D 11, vedere [How to: Create a texture](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-create). Per informazioni su Direct3D 9, vedere [supporto delle trame in D3DX (Direct3D 9)](/windows/desktop/direct3d9/texture-support-in-d3dx).
+Per informazioni sulla creazione di una trama in Direct3D 11, vedere [Procedura: Creare una trama.](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-create) Per informazioni su Direct3D 9, vedere [Supporto delle trame in D3DX (Direct3D 9).](/windows/desktop/direct3d9/texture-support-in-d3dx)
 
--   [Layout file DDS](#dds-file-layout)
+-   [DDS File Layout](#dds-file-layout)
 -   [Varianti DDS](#dds-variants)
--   [Uso di matrici di trama in Direct3D 10/11](#using-texture-arrays-in-direct3d-1011)
--   [Formati di risorse file DDS comuni e contenuto di intestazione associato](#common-dds-file-resource-formats-and-associated-header-content)
+-   [Uso di matrici di trame in Direct3D 10/11](#using-texture-arrays-in-direct3d-1011)
+-   [Formati di risorse file DDS comuni e contenuto dell'intestazione associato](#common-dds-file-resource-formats-and-associated-header-content)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="dds-file-layout"></a>Layout file DDS
+## <a name="dds-file-layout"></a>DDS File Layout
 
 Un file DDS è un file binario contenente le informazioni seguenti:
 
@@ -31,7 +31,7 @@ Un file DDS è un file binario contenente le informazioni seguenti:
 
 -   Una descrizione dei dati nel file.
 
-    I dati vengono descritti con una descrizione dell'intestazione usando l' [**\_ intestazione DDS**](dds-header.md). il formato pixel viene definito usando [**DDS \_ PIXELFORMAT**](dds-pixelformat.md). Si noti che **l' \_ intestazione DDS** e le strutture **DDS \_ PIXELFORMAT** sostituiscono le strutture deprecate DDSURFACEDESC2, DDSCAPS2 e DDPIXELFORMAT di DirectDraw 7. **DDS \_ HEADER** è l'equivalente binario di DDSURFACEDESC2 e DDSCAPS2. **DDS \_ PIXELFORMAT** è l'equivalente binario di DDPIXELFORMAT.
+    I dati vengono descritti con una descrizione dell'intestazione [**tramite DDS \_ HEADER.**](dds-header.md)Il formato pixel viene definito tramite [**\_ PIXELFORMAT DDS.**](dds-pixelformat.md) Si noti che le **strutture DDS \_ HEADER** e **DDS \_ PIXELFORMAT** sostituiscono le strutture DDSURFACEDESC2, DDSCAPS2 e DDPIXELFORMAT DirectDraw 7 deprecate. **DDS \_ HEADER** è l'equivalente binario di DDSURFACEDESC2 e DDSCAPS2. **DDS \_ PIXELFORMAT è** l'equivalente binario di DDPIXELFORMAT.
 
     ```
     DWORD               dwMagic;
@@ -41,7 +41,7 @@ Un file DDS è un file binario contenente le informazioni seguenti:
 
     
 
-    Se l'oggetto \_ dwFlags PIXELFORMAT dwFlags è impostato su DDPF \_ fourcc e dwFourCC è impostato su "DX10", sarà presente un'intestazione DDS aggiuntiva struttura [**\_ \_ DXT10**](dds-header-dxt10.md) per contenere matrici di trama o formati DXGI che non possono essere espressi come formato pixel RGB, ad esempio formati a virgola mobile, formati sRGB e così via. Quando la struttura dell' **\_ intestazione DDS \_ DXT10** è presente, l'intera descrizione dei dati sarà simile alla seguente.
+    Se DDS PIXELFORMAT dwFlags è impostato su DDPF FOURCC e dwFourCC è impostato su "DX10", sarà presente una struttura \_ \_ [**\_ \_ DXT10 DDS HEADER**](dds-header-dxt10.md) aggiuntiva per supportare matrici di trame o formati DXGI che non possono essere espressi come formato pixel RGB, ad esempio formati a virgola mobile, formati sRGB e così via. Quando è **presente la struttura \_ DDS HEADER \_ DXT10,** l'intera descrizione dei dati sarà simile alla seguente.
 
     ```
     DWORD               dwMagic;
@@ -66,44 +66,44 @@ Un file DDS è un file binario contenente le informazioni seguenti:
 
     
 
-Per un supporto hardware ampio, è consigliabile usare il [**formato DXGI \_ \_ R8G8B8A8 \_ UNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ Format \_ R8G8B8A8 \_ UNORM \_ sRGB**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ Format \_ R8G8B8A8 \_ russar**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), DXGI [**\_ Format \_ B8G8R8A8 \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)UNORM, [**DXGI Format R16G16 \_ \_ \_ russar**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI Format R8G8 \_ \_ \_ russar**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ Format \_ R8 \_ UNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), DXGI [**\_ Format \_ BC1 \_ UNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ Format \_ BC1 \_ UNORM \_ sRGB**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ Format \_ \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)BC2 UNORM, DXGI [**\_ Format BC2 UNORM \_ \_ \_ sRGB**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ \_ \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)BC3 UNORM o DXGI Format BC3 [**UNORM in formato \_ \_ \_ \_ sRGB**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) .
+Per un ampio supporto hardware, è consigliabile usare [**DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM \_ SRGB,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ R8G8B8A8 \_ SNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ R16G16 \_ SNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format), [**DXGI \_ FORMAT \_ R8G8 \_ SNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ R8 \_ UNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ BC1 \_ UNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ BC1 \_ UNORM \_ SRGB,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ BC2 \_ UNORM,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ BC2 \_ UNORM \_ SRGB,**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) [**DXGI \_ FORMAT \_ BC3 \_ UNORM**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)o [**DXGI \_ FORMAT \_ BC3 \_ UNORM \_ SRGB**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) format.
 
-Per altre informazioni sui formati di trama compressi, vedere [compressione dei blocchi di trama in Direct3D 11](/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11) e [compressione dei blocchi (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+Per altre informazioni sui formati di trama compressi, vedere Compressione dei blocchi di trama [in Direct3D 11](/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11) e [Compressione a blocchi (Direct3D 10).](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)
 
-La libreria D3DX (ad esempio, D3DX11. lib) e altre librerie simili forniscono in modo non affidabile o in modo incoerente il valore di pitch nel membro **dwPitchOrLinearSize** della struttura dell' [**\_ intestazione DDS**](dds-header.md) . Pertanto, durante la lettura e la scrittura nei file DDS, è consigliabile calcolare il pitch in uno dei modi seguenti per i formati indicati:
+La libreria D3DX (ad esempio D3DX11.lib) e altre librerie simili forniscono in modo inaffidabile o incoerente il valore pitch nel membro **dwPitchOrLinearSize** della struttura [**DDS \_ HEADER.**](dds-header.md) Pertanto, quando si legge e si scrive nei file DDS, è consigliabile calcolare l'altezza in uno dei modi seguenti per i formati indicati:
 
--   Per i formati compressi a blocchi, calcolare il pitch come:
+-   Per i formati compressi a blocchi, calcolare l'altezza come:
 
-    numero massimo di blocchi (1, (larghezza + 3)/4) \*
+    max( 1, ((width+3)/4) ) \* block-size
 
-    Le dimensioni del blocco sono pari a 8 byte per i formati DXT1, BC1 e BC4 e 16 byte per altri formati compressi a blocchi.
+    Le dimensioni del blocco sono 8 byte per i formati DXT1, BC1 e BC4 e 16 byte per altri formati compressi a blocchi.
 
--   Per R8G8 \_ B8G8, G8R8 \_ G8B8, Legacy UYVY e i formati legacy YUY2 compressi, calcolare il passo come:
+-   Per I formati R8G8 \_ B8G8, G8R8 G8B8, legacy con pacchetto \_ UYVY e legacy con pacchetto YUY2, calcolare il passo come:
 
-    ((larghezza + 1)  >> 1) \* 4
+    ((larghezza+1) >> 1) \* 4
 
--   Per altri formati, calcolare il pitch come:
+-   Per altri formati, calcolare l'altezza come:
 
-    ( \* bit larghezza-per-pixel + 7)/8
+    ( width \* bits-per-pixel + 7 ) / 8
 
-    Dividere per 8 per l'allineamento dei byte.
+    Si divide per 8 per l'allineamento dei byte.
 
 > [!Note]  
-> Il valore di pitch calcolato non è sempre uguale al passo fornito dal runtime, che è allineato a DWORD in alcune situazioni e allineato a byte in altre situazioni. È pertanto consigliabile copiare una riga di analisi alla volta anziché tentare di copiare l'intera immagine in una copia.
+> Il valore dell'altezza calcolata non è sempre uguale all'altezza fornita dal runtime, che in alcune situazioni è allineato a DWORD e allineato a byte in altre situazioni. È pertanto consigliabile copiare una riga di analisi alla volta anziché provare a copiare l'intera immagine in un'unica copia.
 
  
 
 ## <a name="dds-variants"></a>Varianti DDS
 
-Sono disponibili molti strumenti per la creazione e l'utilizzo di file DDS, ma possono variare nei dettagli di ciò che richiedono nell'intestazione. I writer devono popolare le intestazioni nel modo più completo possibile e i lettori devono verificare i valori minimi per la massima compatibilità. Per convalidare un file DDS, un lettore deve verificare che il file sia di almeno 128 byte per contenere il valore di Magic e l'intestazione di base, il valore Magic è 0x20534444 ("DDS"), le \_ dimensioni dell'intestazione DDS sono 124 e le dimensioni dell' \_ intestazione dds è 32. Se DDS \_ PIXELFORMAT dwFlags è impostato su DDPF \_ fourcc e dwFourCC è impostato su "DX10", le dimensioni totali del file devono essere almeno di 148 byte.
+Esistono molti strumenti che creano e utilizzano file DDS, ma possono variare nei dettagli di ciò che richiedono nell'intestazione. I writer devono popolare le intestazioni nel modo più completo possibile e i lettori devono controllare i valori minimi per la massima compatibilità. Per convalidare un file DDS, un lettore deve assicurarsi che il file sia lungo almeno 128 byte per contenere il valore magico e l'intestazione di base, il valore magico è 0x20534444 ("DDS"), le dimensioni dell'intestazione DDS sono 124 e DDS PIXELFORMAT nelle dimensioni dell'intestazione \_ \_ è 32. Se DDS PIXELFORMAT dwFlags è impostato su DDPF FOURCC e dwFourCC è impostato su \_ "DX10", le dimensioni totali del file devono essere di \_ almeno 148 byte.
 
-Esistono alcune varianti comuni in uso, in cui il formato pixel è impostato su un \_ codice DDPF FourCC in cui dwFourCC è impostato su un valore di enumerazione di formato D3DFORMAT o DXGI \_ . Non esiste alcun modo per stabilire se un valore di enumerazione è un formato D3DFORMAT o DXGI \_ , quindi è consigliabile usare invece l'intestazione "DX10" e l' \_ intestazione DXT10 dell'intestazione DDS \_ per archiviare il dxgiFormat quando il formato DDS di base \_ non è in grado di esprimere il formato.
+Esistono alcune varianti comuni in uso in cui il formato pixel è impostato su un codice FOURCC DDPF in cui dwFourCC è impostato su un valore di enumerazione \_ D3DFORMAT o DXGI \_ FORMAT. Non è possibile determinare se un valore di enumerazione è D3DFORMAT o DXGI FORMAT, pertanto è consigliabile usare l'estensione "DX10" e l'intestazione \_ \_ DDS HEADER DXT10 per archiviare \_ dxgiFormat quando il formato PIXELFORMAT DDS di base non è in grado di esprimere \_ il formato.
 
-\_Per la massima compatibilità per archiviare i dati non compressi RGB e i dati DXT1-5 è consigliabile preferire la versione standard di DDS. non tutti gli strumenti DDS supportano l'estensione DX10.
+Per la massima compatibilità è consigliabile utilizzare lo standard PIXELFORMAT DDS per archiviare dati RGB non compressi e dati DXT1-5 perché non tutti gli strumenti DDS supportano \_ l'estensione DX10.
 
-## <a name="using-texture-arrays-in-direct3d-1011"></a>Uso di matrici di trama in Direct3D 10/11
+## <a name="using-texture-arrays-in-direct3d-1011"></a>Uso di matrici di trame in Direct3D 10/11
 
-Le nuove strutture DDS ([**\_ intestazione DDS**](dds-header.md) e [**\_ intestazione dds \_ DXT10**](dds-header-dxt10.md)) in Direct3D 10/11 estendono il formato di file DDS per supportare una matrice di trame, che è un nuovo tipo di risorsa in Direct3D 10/11. Di seguito è riportato un codice di esempio che illustra come accedere ai diversi livelli di mipmap in una matrice di trame usando le nuove intestazioni.
+Le nuove strutture DDS ([**DDS \_ HEADER**](dds-header.md) e [**\_ DDS HEADER \_ DXT10**](dds-header-dxt10.md)) in Direct3D 10/11 estendono il formato di file DDS per supportare una matrice di trame, ovvero un nuovo tipo di risorsa in Direct3D 10/11. Ecco un esempio di codice che illustra come accedere ai diversi livelli mipmap in una matrice di trame usando le nuove intestazioni.
 
 
 ```
@@ -122,32 +122,32 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 
 
 
-## <a name="common-dds-file-resource-formats-and-associated-header-content"></a>Formati di risorse file DDS comuni e contenuto di intestazione associato
+## <a name="common-dds-file-resource-formats-and-associated-header-content"></a>Formati di risorse file DDS comuni e contenuto dell'intestazione associato
 
 
 
 | Formato risorsa                                                                            | dwFlags        | dwRGBBitCount | dwRBitMask | dwGBitMask | dwBBitMask | dwABitMask |
 |--------------------------------------------------------------------------------------------|----------------|---------------|------------|------------|------------|------------|
-| \_Formato DXGI \_ R8G8B8A8 \_ UNORM<br/> \_A8B8G8R8 D3DFMT<br/>                       | \_RGBA DDS      | 32            | 0xFF       | 0xff00     | 0xFF0000   | 0xFF000000 |
-| \_Formato DXGI \_ R16G16 \_ UNORM<br/> \_G16R16 D3DFMT<br/>                           | \_RGBA DDS      | 32            | 0xFFFF     | 0xffff0000 |            |            |
-| \*\*<br/> \_Formato DXGI \_ R10G10B10A2 \_ UNORM<br/> \_A2B10G10R10 D3DFMT<br/> | \_RGBA DDS      | 32            | 0x3FF      | 0xffc00    | 0x3ff00000 |            |
-| \_Formato DXGI \_ R16G16 \_ UNORM<br/> \_G16R16 D3DFMT<br/>                           | \_RGB DDS       | 32            | 0xFFFF     | 0xffff0000 |            |            |
-| \_Formato DXGI \_ B5G5R5A1 \_ UNORM<br/> \_A1R5G5B5 D3DFMT<br/>                       | \_RGBA DDS      | 16            | 0x7c00     | 0x3e0      | 0x1F       | 0x8000     |
-| \_Formato DXGI \_ B5G6R5 \_ UNORM<br/> \_R5G6B5 D3FMT<br/>                            | \_RGB DDS       | 16            | 0xf800     | 0x7e0      | 0x1F       |            |
-| DXGI \_ a8 \_ UNORM<br/> D3DFMT \_ a8<br/>                                           | \_alfa DDS     | 8             |            |            |            | 0xFF       |
-| \_A8R8G8B8 D3DFMT<br/>                                                                | \_RGBA DDS      | 32            | 0xFF0000   | 0xff00     | 0xFF       | 0xFF000000 |
-| \_X8R8G8B8 D3DFMT<br/>                                                                | \_RGB DDS       | 32            | 0xFF0000   | 0xff00     | 0xFF       |            |
-| \_X8B8G8R8 D3DFMT<br/>                                                                | \_RGB DDS       | 32            | 0xFF       | 0xff00     | 0xFF0000   |            |
-| \*\*<br/> \_A2R10G10B10 D3DFMT<br/>                                             | \_RGBA DDS      | 32            | 0x3ff00000 | 0xffc00    | 0x3FF      | 0xC0000000 |
-| \_R8G8B8 D3DFMT<br/>                                                                  | \_RGB DDS       | 24            | 0xFF0000   | 0xff00     | 0xFF       |            |
-| \_X1R5G5B5 D3DFMT<br/>                                                                | \_RGB DDS       | 16            | 0x7c00     | 0x3e0      | 0x1F       |            |
-| \_A4R4G4B4 D3DFMT<br/>                                                                | \_RGBA DDS      | 16            | 0xf00      | 0xf0       | 0xF        | 0xF000     |
-| \_X4R4G4B4 D3DFMT<br/>                                                                | \_RGB DDS       | 16            | 0xf00      | 0xf0       | 0xF        |            |
-| \_A8R3G3B2 D3DFMT<br/>                                                                | \_RGBA DDS      | 16            | 0XE0       | 0x1C       | 0x3        | 0xff00     |
-| \_A8L8 D3DFMT<br/>                                                                    | \_luminanza DDS | 16            | 0xFF       |            |            | 0xff00     |
-| \_L16 D3DFMT<br/>                                                                     | \_luminanza DDS | 16            | 0xFFFF     |            |            |            |
-| \_L8 D3DFMT<br/>                                                                      | \_luminanza DDS | 8             | 0xFF       |            |            |            |
-| \_A4L4 D3DFMT<br/>                                                                    | \_luminanza DDS | 8             | 0xF        |            |            | 0xf0       |
+| FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM<br/> D3DFMT \_ A8B8G8R8<br/>                       | DDS \_ RGBA      | 32            | 0xff       | 0xff00     | 0xff0000   | 0xff000000 |
+| DXGI \_ FORMAT \_ R16G16 \_ UNORM<br/> D3DFMT \_ G16R16<br/>                           | DDS \_ RGBA      | 32            | 0xffff     | 0xffff0000 |            |            |
+| \*\*<br/> FORMATO DXGI \_ \_ R10G10B10A2 \_ UNORM<br/> D3DFMT \_ A2B10G10R10<br/> | DDS \_ RGBA      | 32            | 0x3ff      | 0xffc00    | 0x3ff00000 |            |
+| DXGI \_ FORMAT \_ R16G16 \_ UNORM<br/> D3DFMT \_ G16R16<br/>                           | DDS \_ RGB       | 32            | 0xffff     | 0xffff0000 |            |            |
+| FORMATO DXGI \_ \_ B5G5R5A1 \_ UNORM<br/> D3DFMT \_ A1R5G5B5<br/>                       | DDS \_ RGBA      | 16            | 0x7c00     | 0x3e0      | 0x1f       | 0x8000     |
+| FORMATO DXGI \_ \_ B5G6R5 \_ UNORM<br/> D3FMT \_ R5G6B5<br/>                            | DDS \_ RGB       | 16            | 0xf800     | 0x7e0      | 0x1f       |            |
+| DXGI \_ A8 \_ UNORM<br/> D3DFMT \_ A8<br/>                                           | DDS \_ ALPHA     | 8             |            |            |            | 0xff       |
+| D3DFMT \_ A8R8G8B8<br/>                                                                | DDS \_ RGBA      | 32            | 0xff0000   | 0xff00     | 0xff       | 0xff000000 |
+| D3DFMT \_ X8R8G8B8<br/>                                                                | DDS \_ RGB       | 32            | 0xff0000   | 0xff00     | 0xff       |            |
+| D3DFMT \_ X8B8G8R8<br/>                                                                | DDS \_ RGB       | 32            | 0xff       | 0xff00     | 0xff0000   |            |
+| \*\*<br/> D3DFMT \_ A2R10G10B10<br/>                                             | DDS \_ RGBA      | 32            | 0x3ff00000 | 0xffc00    | 0x3ff      | 0xc0000000 |
+| D3DFMT \_ R8G8B8<br/>                                                                  | DDS \_ RGB       | 24            | 0xff0000   | 0xff00     | 0xff       |            |
+| D3DFMT \_ X1R5G5B5<br/>                                                                | DDS \_ RGB       | 16            | 0x7c00     | 0x3e0      | 0x1f       |            |
+| D3DFMT \_ A4R4G4B4<br/>                                                                | DDS \_ RGBA      | 16            | 0xf00      | 0xf0       | 0xf        | 0xf000     |
+| D3DFMT \_ X4R4G4B4<br/>                                                                | DDS \_ RGB       | 16            | 0xf00      | 0xf0       | 0xf        |            |
+| D3DFMT \_ A8R3G3B2<br/>                                                                | DDS \_ RGBA      | 16            | 0xe0       | 0x1c       | 0x3        | 0xff00     |
+| D3DFMT \_ A8L8<br/>                                                                    | DDS \_ LUMINANCE | 16            | 0xff       |            |            | 0xff00     |
+| D3DFMT \_ L16<br/>                                                                     | DDS \_ LUMINANCE | 16            | 0xffff     |            |            |            |
+| D3DFMT \_ L8<br/>                                                                      | DDS \_ LUMINANCE | 8             | 0xff       |            |            |            |
+| D3DFMT \_ A4L4<br/>                                                                    | DDS \_ LUMINANCE | 8             | 0xf        |            |            | 0xf0       |
 
 
 
@@ -157,43 +157,43 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 
 | Formato risorsa                                                                             | dwFlags     | dwFourCC |
 |---------------------------------------------------------------------------------------------|-------------|----------|
-| \_Formato DXGI \_ BC1 \_ UNORM<br/> \_DXT1 D3DFMT<br/>                                 | \_fourcc DDS | DXT1   |
-| \_Formato DXGI \_ BC2 \_ UNORM<br/> \_DXT3 D3DFMT<br/>                                 | \_fourcc DDS | "DXT3"   |
-| \_Formato DXGI \_ BC3 \_ UNORM<br/> \_DXT5 D3DFMT<br/>                                 | \_fourcc DDS | DXT5   |
-| \*<br/> \_Formato DXGI \_ BC4 \_ UNORM<br/>                                           | \_fourcc DDS | "BC4U"   |
-| \*<br/> DXGI \_ Format \_ BC4 \_ russar<br/>                                           | \_fourcc DDS | "BC4S"   |
-| \*<br/> \_Formato DXGI \_ BC5 \_ UNORM<br/>                                           | \_fourcc DDS | "ATI2"   |
-| \*<br/> DXGI \_ Format \_ BC5 \_ russar<br/>                                           | \_fourcc DDS | "BC5S"   |
-| DXGI \_ Format \_ R8G8 \_ B8G8 \_ UNORM<br/> D3DFMT \_ R8G8 \_ B8G8<br/>                    | \_fourcc DDS | "RGBG"   |
-| DXGI \_ Format \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | \_fourcc DDS | "GRGB"   |
-| \*<br/> \_Formato DXGI \_ R16G16B16A16 \_ UNORM<br/> \_A16B16G16R16 D3DFMT<br/>  | \_fourcc DDS | 36       |
-| \*<br/> DXGI \_ Format \_ R16G16B16A16 \_ russar<br/> \_Q16W16V16U16 D3DFMT<br/>  | \_fourcc DDS | 110      |
-| \*<br/> \_Formato DXGI \_ R16 \_ float<br/> \_R16F D3DFMT<br/>                   | \_fourcc DDS | 111      |
-| \*<br/> \_Formato DXGI \_ R16G16 \_ float<br/> \_G16R16F D3DFMT<br/>             | \_fourcc DDS | 112      |
-| \*<br/> \_Formato DXGI \_ R16G16B16A16 \_ float<br/> \_A16B16G16R16F D3DFMT<br/> | \_fourcc DDS | 113      |
-| \*<br/> \_Formato DXGI \_ R32 \_ float<br/> \_R32F D3DFMT<br/>                   | \_fourcc DDS | 114      |
-| \*<br/> \_Formato DXGI \_ R32G32 \_ float<br/> \_G32R32F D3DFMT<br/>             | \_fourcc DDS | 115      |
-| \*<br/> \_Formato DXGI \_ R32G32B32A32 \_ float<br/> \_A32B32G32R32F D3DFMT<br/> | \_fourcc DDS | 116      |
-| \_DXT2 D3DFMT<br/>                                                                     | \_fourcc DDS | "DXT2"   |
-| \_DXT4 D3DFMT<br/>                                                                     | \_fourcc DDS | "DXT4"   |
-| \_UYVY D3DFMT<br/>                                                                     | \_fourcc DDS | UYVY   |
-| \_YUY2 D3DFMT<br/>                                                                     | \_fourcc DDS | YUY2   |
-| \_CXV8U8 D3DFMT<br/>                                                                   | \_fourcc DDS | 117      |
-| Qualsiasi formato DXGI                                                                             | \_fourcc DDS | DX10   |
+| DXGI \_ FORMAT \_ BC1 \_ UNORM<br/> D3DFMT \_ DXT1<br/>                                 | DDS \_ FOURCC | "DXT1"   |
+| DXGI \_ FORMAT \_ BC2 \_ UNORM<br/> D3DFMT \_ DXT3<br/>                                 | DDS \_ FOURCC | "DXT3"   |
+| DXGI \_ FORMAT \_ BC3 \_ UNORM<br/> D3DFMT \_ DXT5<br/>                                 | DDS \_ FOURCC | "DXT5"   |
+| \*<br/> FORMATO DXGI \_ \_ BC4 \_ UNORM<br/>                                           | DDS \_ FOURCC | "BC4U"   |
+| \*<br/> DXGI \_ FORMAT \_ BC4 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC4S"   |
+| \*<br/> FORMATO DXGI \_ \_ BC5 \_ UNORM<br/>                                           | DDS \_ FOURCC | "ATI2"   |
+| \*<br/> DXGI \_ FORMAT \_ BC5 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC5S"   |
+| FORMATO DXGI \_ \_ R8G8 \_ B8G8 \_ UNORM<br/> D3DFMT \_ R8G8 \_ B8G8<br/>                    | DDS \_ FOURCC | "RGBG"   |
+| FORMATO DXGI \_ \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | DDS \_ FOURCC | "GRGB"   |
+| \*<br/> FORMATO DXGI \_ \_ R16G16B16A16 \_ UNORM<br/> D3DFMT \_ A16B16G16R16<br/>  | DDS \_ FOURCC | 36       |
+| \*<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ SNORM<br/> D3DFMT \_ Q16W16V16U16<br/>  | DDS \_ FOURCC | 110      |
+| \*<br/> FORMATO DXGI \_ \_ R16 \_ FLOAT<br/> D3DFMT \_ R16F<br/>                   | DDS \_ FOURCC | 111      |
+| \*<br/> FORMATO DXGI \_ \_ R16G16 \_ FLOAT<br/> D3DFMT \_ G16R16F<br/>             | DDS \_ FOURCC | 112      |
+| \*<br/> FORMATO DXGI \_ \_ R16G16B16A16 \_ FLOAT<br/> D3DFMT \_ A16B16G16R16F<br/> | DDS \_ FOURCC | 113      |
+| \*<br/> FORMATO DXGI \_ \_ R32 \_ FLOAT<br/> D3DFMT \_ R32F<br/>                   | DDS \_ FOURCC | 114      |
+| \*<br/> FORMATO DXGI \_ \_ R32G32 \_ FLOAT<br/> D3DFMT \_ G32R32F<br/>             | DDS \_ FOURCC | 115      |
+| \*<br/> FORMATO DXGI \_ \_ R32G32B32A32 \_ FLOAT<br/> D3DFMT \_ A32B32G32R32F<br/> | DDS \_ FOURCC | 116      |
+| D3DFMT \_ DXT2<br/>                                                                     | DDS \_ FOURCC | "DXT2"   |
+| D3DFMT \_ DXT4<br/>                                                                     | DDS \_ FOURCC | "DXT4"   |
+| D3DFMT \_ UYVY<br/>                                                                     | DDS \_ FOURCC | "UYVY"   |
+| D3DFMT \_ YUY2<br/>                                                                     | DDS \_ FOURCC | "YUY2"   |
+| D3DFMT \_ CxV8U8<br/>                                                                   | DDS \_ FOURCC | 117      |
+| Qualsiasi formato DXGI                                                                             | DDS \_ FOURCC | "DX10"   |
 
 
 
  
 
-\* = Un lettore DDS affidabile deve essere in grado di gestire questi codici di formato legacy. Tuttavia, tale reader DDS dovrebbe preferire l'uso dell'estensione di intestazione "DX10" quando scrive questi codici di formato per evitare ambiguità.
+\* = Un solido lettore DDS deve essere in grado di gestire questi codici di formato legacy. Tuttavia, un lettore DDS di questo tipo deve preferire l'uso dell'estensione dell'intestazione "DX10" quando scrive questi codici di formato per evitare ambiguità.
 
-\*\* = A causa di alcuni problemi di lunga durata nelle implementazioni comuni di Reader e writer DDS, il modo più efficace per scrivere dati di tipo 10:10:10:2 consiste nell'usare l'estensione di intestazione "DX10" con il codice di [**\_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24", ovvero il \_ formato DXGI \_ R10G10B10A2 \_ UNORM value. \_I dati di D3DFMT A2R10G10B10 devono essere convertiti in dati di tipo 10:10:10:2 prima di essere scritti come dxgi \_ Format \_ R10G10B10A2 \_ UNORM Format DDS file.
+\*\* = A causa di alcuni problemi di lunga durata nelle implementazioni comuni di lettori e writer DDS, il modo più affidabile per scrivere dati di tipo 10:10:10:2 è usare l'estensione dell'intestazione "DX10" con il codice [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24", ovvero il valore DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM. I dati D3DFMT A2R10G10B10 devono essere convertiti in dati di tipo \_ 10:10:10:2 prima di essere scritti come file DDS in formato DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[DDS](dx-graphics-dds.md)
+[Dds](dx-graphics-dds.md)
 </dt> </dl>
 
  

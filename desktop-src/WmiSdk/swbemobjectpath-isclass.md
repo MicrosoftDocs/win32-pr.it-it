@@ -1,8 +1,8 @@
 ---
-description: La proprietà di classe dell'oggetto SWbemObjectPath è un valore booleano che indica se il percorso rappresenta una classe. Questa proprietà è di sola lettura.
+description: La proprietà IsClass dell'oggetto SWbemObjectPath è un valore booleano che indica se questo percorso rappresenta una classe. Questa proprietà è di sola lettura.
 ms.assetid: 55d50785-6cdb-4e42-8b59-121f339494df
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectPath. classe (wbemdisp. h)
+title: Proprietà SWbemObjectPath.IsClass (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 973fa72d3f41a5c2a762a6411d6e688459c8342b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c149084f9dbaec439432bc31997b9ebab06044cf5882734d418cb007b057c900
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383111"
 ---
-# <a name="swbemobjectpathisclass-property"></a>SWbemObjectPath. classe (proprietà)
+# <a name="swbemobjectpathisclass-property"></a>Proprietà SWbemObjectPath.IsClass
 
-La proprietà di **classe** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) è un valore booleano che indica se il percorso rappresenta una classe. Questa proprietà è di sola lettura.
+La **proprietà IsClass** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) è un valore booleano che indica se questo percorso rappresenta una classe. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -50,11 +50,11 @@ SWbemObjectPath.IsClass As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

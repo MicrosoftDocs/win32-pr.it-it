@@ -1,6 +1,6 @@
 ---
-title: Metodo ID3DX11EffectMatrixVariable SetMatrixTransposeArray (D3dx11effect. h)
-description: Trasponi e imposta una matrice di matrici a virgola mobile.
+title: Metodo ID3DX11EffectMatrixVariable SetMatrixTransposeArray (D3dx11effect.h)
+description: Trasporre e impostare una matrice di matrici a virgola mobile.
 ms.assetid: 08223022-5e77-4a84-9b68-b9b0c9a02270
 keywords:
 - Metodo SetMatrixTransposeArray Direct3D 11
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f70676b76658b5732c1a2ee15858f83694272b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0ff122a5c38d4d3d0a3eee96537077b8a09695c52cefe77b39c5f9b2a804692c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046059"
 ---
-# <a name="id3dx11effectmatrixvariablesetmatrixtransposearray-method"></a>Metodo ID3DX11EffectMatrixVariable:: SetMatrixTransposeArray
+# <a name="id3dx11effectmatrixvariablesetmatrixtransposearray-method"></a>Metodo ID3DX11EffectMatrixVariable::SetMatrixTransposeArray
 
-Trasponi e imposta una matrice di matrici a virgola mobile.
+Trasporre e impostare una matrice di matrici a virgola mobile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT SetMatrixTransposeArray(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntatore a una matrice di matrici.
 
@@ -57,7 +57,7 @@ Puntatore a una matrice di matrici.
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Offset (in numero di matrici) tra l'inizio della matrice e la prima matrice da impostare.
 
@@ -66,7 +66,7 @@ Offset (in numero di matrici) tra l'inizio della matrice e la prima matrice da i
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di matrici nella matrice da impostare.
 
@@ -76,14 +76,14 @@ Numero di matrici nella matrice da impostare.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se si traspone una matrice, l'ordine dei dati viene riorganizzato dall'ordine delle colonne di riga a quello delle righe di colonna (o viceversa).
+La trasposizione di una matrice riorganizza l'ordine dei dati dall'ordine di riga-colonna all'ordine delle righe di colonna (o viceversa).
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -93,8 +93,8 @@ Se si traspone una matrice, l'ordine dei dati viene riorganizzato dall'ordine de
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

@@ -1,41 +1,41 @@
 ---
-title: Enumerazioni IMAPi
+title: Enumerazioni IMAPI
 ms.assetid: 4b45d9b0-5e17-4b75-9e04-4786276b3106
-description: 'Altre informazioni su: enumerazioni IMAPi'
+description: 'Altre informazioni su: Enumerazioni IMAPI'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02230d9ea34429c3f2f4605b2300865a7583dbd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7e1ea83bbb632615240669fa205685d52a114633ad7976d5a3ff933f4689aa0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119399941"
 ---
-# <a name="imapi-enumerations"></a>Enumerazioni IMAPi
+# <a name="imapi-enumerations"></a>Enumerazioni IMAPI
 
-IMAPi definisce i tipi di enumerazione seguenti:
+IMAPI definisce i tipi di enumerazione seguenti:
 
 <dl>
 
-[**EmulationType**](/windows/desktop/api/imapi2fs/ne-imapi2fs-emulationtype)  
+[**Tipo di emulazione**](/windows/desktop/api/imapi2fs/ne-imapi2fs-emulationtype)  
 [**FsiFileSystems**](/windows/desktop/api/imapi2fs/ne-imapi2fs-fsifilesystems)  
 [**FsiItemType**](/windows/desktop/api/imapi2fs/ne-imapi2fs-fsiitemtype)  
-[**livello di \_ Verifica dell'ustione IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_burn_verification_level)  
-[**tipo di \_ settore CD IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_cd_sector_type)  
-[**impostazione della \_ \_ \_ \_ copia digitale \_ per la traccia del CD IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_cd_track_digital_copy_setting)  
-[**tipo di \_ pagina della funzionalità IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_feature_page_type)  
-[**Stato del \_ \_ supporto dati \_ format2 \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_data_media_state)  
-[**Azione di \_ \_ scrittura dati \_ format2 \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_data_write_action)  
-[**Tipo di \_ \_ \_ \_ settore dati CD \_ RAW \_ IMAPI format2**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_raw_cd_data_sector_type)  
-[**Azione di \_ \_ \_ scrittura CD RAW \_ IMAPI format2 \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_raw_cd_write_action)  
-[**Azione di \_ \_ scrittura Tao \_ format2 \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_tao_write_action)  
-[**\_tipo fisico del supporto IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_physical_type)  
-[**\_ \_ \_ stato protezione scrittura supporto IMAPI \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_write_protect_state)  
-[**tipo di \_ \_ richiesta della pagina modalità \_ IMAPI \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_request_type)  
-[**tipo di \_ pagina modalità IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_type)  
-[**tipo di \_ profilo IMAPI \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_profile_type)  
-[**tipo di \_ \_ Indirizzo Read \_ Track \_ di IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_read_track_address_type)  
-[**Idpiattaforma**](/windows/desktop/api/imapi2fs/ne-imapi2fs-platformid)  
+[**LIVELLO DI VERIFICA \_ DELLA \_ MASTERIZZAZIONE IMAPI \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_burn_verification_level)  
+[**TIPO DI SETTORE CD IMAPI \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_cd_sector_type)  
+[**IMPOSTAZIONE DI \_ COPIA DIGITALE DI IMAPI CD \_ \_ \_ TRACK \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_cd_track_digital_copy_setting)  
+[**TIPO DI PAGINA FUNZIONALITÀ IMAPI \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_feature_page_type)  
+[**STATO DEL SUPPORTO DATI IMAPI \_ FORMAT2 \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_data_media_state)  
+[**AZIONE DI SCRITTURA DATI IMAPI \_ FORMAT2 \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_data_write_action)  
+[**TIPO DI SETTORE DATI CD RAW IMAPI \_ FORMAT2 \_ \_ \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_raw_cd_data_sector_type)  
+[**AZIONE DI SCRITTURA CD RAW IMAPI \_ FORMAT2 \_ \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_raw_cd_write_action)  
+[**AZIONE DI \_ SCRITTURA IMAPI FORMAT2 \_ TAO \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_format2_tao_write_action)  
+[**TIPO FISICO DI SUPPORTI IMAPI \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_physical_type)  
+[**STATO DI PROTEZIONE \_ DELLA \_ SCRITTURA DEI SUPPORTI \_ IMAPI \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_write_protect_state)  
+[**TIPO DI RICHIESTA \_ \_ DELLA PAGINA \_ MODALITÀ \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_request_type)  
+[**TIPO DI PAGINA MODALITÀ IMAPI \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_type)  
+[**TIPO DI PROFILO IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_profile_type)  
+[**TIPO DI INDIRIZZO \_ DI \_ TRACCIA LETTURA \_ \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_read_track_address_type)  
+[**PlatformId**](/windows/desktop/api/imapi2fs/ne-imapi2fs-platformid)  
 </dl>
 
  

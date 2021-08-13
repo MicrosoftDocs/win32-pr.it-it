@@ -1,21 +1,21 @@
 ---
-description: Il provider di pacchetti di rete (NPP) è una DLL che comunica con il driver Network Monitor e fornisce le statistiche di rete e i dati dei pacchetti.
+description: Il provider di pacchetti di rete (NPP) è una DLL che comunica con il driver Network Monitor e fornisce statistiche di rete e dati dei pacchetti.
 ms.assetid: ee258bf7-7894-458d-b418-57a19ac985f2
 title: Fornire statistiche di rete e informazioni sui pacchetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c68be6b5b0db1fae2c19f5bc44e6e94a54c63b21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cb3165c56d3ca9b2fc06dd7162010b8a8813b59b1e08167c8c3229c2642bc4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119339531"
 ---
 # <a name="providing-network-statistics-and-packet-information"></a>Fornire statistiche di rete e informazioni sui pacchetti
 
-Il provider di pacchetti di rete (NPP) è una DLL che comunica con il driver Network Monitor e fornisce le statistiche di rete e i dati dei pacchetti.
+Il provider di pacchetti di rete (NPP) è una DLL che comunica con il driver Network Monitor e fornisce statistiche di rete e dati dei pacchetti.
 
-I modi più comuni per usare l'oggetto NPP includono:
+I modi più comuni per usare NPP includono:
 
 -   Statistiche di rete.
 -   Frame passati all'applicazione in tempo reale.

@@ -1,5 +1,5 @@
 ---
-title: MS-WMI-TargetType (attributo)
+title: Attributo ms-WMI-TargetType
 description: Riferimento WMI a una definizione di tipo per un oggetto criteri.
 ms.assetid: 0757d903-37f7-4830-9ba0-a971cf1bda04
 ms.tgt_platform: multiple
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af1bdaa670d68bcb562a894d826c2844756dfdd5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0e899168d1750fafe588130276c3729f692e50df01e525a9c00b9a4e87d13f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104520070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326281"
 ---
-# <a name="ms-wmi-targettype-attribute"></a>MS-WMI-TargetType (attributo)
+# <a name="ms-wmi-targettype-attribute"></a>Attributo ms-WMI-TargetType
 
 Riferimento WMI a una definizione di tipo per un oggetto criteri.
 
@@ -29,13 +29,13 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetType                           |
-| LDAP-Display-Name | msWMI-TargetType                            |
+| CN                | ms-WMI-TargetType                           |
+| Ldap-Display-Name | msWMI-TargetType                            |
 | Dimensione              | Meno di 100 caratteri.                   |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo                  |
+| Privilegio di aggiornamento  | Criteri di gruppo amministratore                  |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1649                     |
-| System-ID-GUID    | ca2a281e-262b-4ff7-b419-bc123352a4e9        |
+| System-Id-Guid    | ca2a281e-262b-4ff7-b419-bc123352a4e9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Riferimento WMI a una definizione di tipo per un oggetto criteri.
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| È a valore singolo       | Vero                                                                                                                          |
+| Is-Single-Valued       | Vero                                                                                                                          |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classi utilizzate in        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classi usate in        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: È un attributo a valore singolo
-description: Se TRUE, questo attributo può archiviare solo un valore.
+title: Attributo Is-Single-Valued
+description: Se TRUE, questo attributo può archiviare un solo valore.
 ms.assetid: 53dd8dfe-2123-4a61-a346-12abe340ea11
 ms.tgt_platform: multiple
 keywords:
-- È uno schema AD attributo a valore singolo
+- Schema AD dell'attributo Is-Single-Valued
 - Schema AD dell'attributo isSingleValued
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a1fafd047afa47b874fb0385a690e2c0d13161
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1677a5a9b412e315be8ec773f8d0b1cc54f341622d2129ca7f6f80252cc950a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303941"
 ---
-# <a name="is-single-valued-attribute"></a>È un attributo a valore singolo
+# <a name="is-single-valued-attribute"></a>Attributo Is-Single-Valued
 
-Se **true**, questo attributo può archiviare solo un valore.
+Se **TRUE,** questo attributo può archiviare un solo valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | È a valore singolo                     |
-| LDAP-Display-Name | isSingleValued                       |
+| CN                | Is-Single-Valued                     |
+| Ldap-Display-Name | isSingleValued                       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore schema                 |
+| Privilegio di aggiornamento  | Amministratore dello schema                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.33                |
-| System-ID-GUID    | bf967992-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967992-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -44,7 +44,7 @@ Se **true**, questo attributo può archiviare solo un valore.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Se **true**, questo attributo può archiviare solo un valore.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 

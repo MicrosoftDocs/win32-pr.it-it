@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM DeviceSAPImplementation rappresenta un'associazione tra un punto di accesso al servizio (SAP) e il modo in cui viene implementato.
+description: La classe CIM DeviceSAPImplementation rappresenta un'associazione tra un punto di accesso al servizio \_ (SAP) e la modalità di implementazione.
 ms.assetid: 6c059507-bfc0-4630-9b39-9c4bae2bf138
 ms.tgt_platform: multiple
-title: Classe CIM_DeviceSAPImplementation (provider WMI CIMWin32)
+title: CIM_DeviceSAPImplementation classe (provider WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: eadc1e42427c06717c7b0d7a13aba8a2a71ccddb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1643441d24e465ff7311daae52e4bc7773b556c7719ec7a93c35ff478740fd0f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321611"
 ---
-# <a name="cim_devicesapimplementation-class-cimwin32-wmi-providers"></a>Classe CIM_DeviceSAPImplementation (provider WMI CIMWin32)
+# <a name="cim_devicesapimplementation-class-cimwin32-wmi-providers"></a>CIM_DeviceSAPImplementation classe (provider WMI CIMWin32)
 
-La classe **CIM \_ DeviceSAPImplementation** rappresenta un'associazione tra un punto di accesso al servizio (SAP) e il modo in cui viene implementato. Quando molti dispositivi logici sono associati a un SAP, gli elementi operano insieme per fornire il punto di accesso. Se esistono implementazioni diverse di un SAP, ogni implementazione genera singole creazioni di istanze dell'oggetto SAP.
+La **classe CIM \_ DeviceSAPImplementation** rappresenta un'associazione tra un punto di accesso al servizio (SAP) e la modalità di implementazione. Quando molti dispositivi logici sono associati a un sap, gli elementi operano in combinazione per fornire il punto di accesso. Se esistono implementazioni diverse di sap, ogni implementazione comporta la creazione di singole istanze dell'oggetto SAP.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ class CIM_DeviceSAPImplementation : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ DeviceSAPImplementation** presenta questi tipi di membri:
+La **classe CIM \_ DeviceSAPImplementation** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ DeviceSAPImplementation** dispone di queste proprietà.
+La **classe CIM \_ DeviceSAPImplementation** ha queste proprietà.
 
 <dl> <dt>
 
@@ -66,26 +66,26 @@ Tipo di dati: **CIM \_ LogicalDevice**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Un [**\_ LogicalDevice CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
+[**LogicalDevice \_ CIM**](cim-logicaldevice.md) che descrive il dispositivo logico.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ serviceAccessPoint**
+Tipo di dati: **CIM \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Un [**\_ serviceAccessPoint CIM**](cim-serviceaccesspoint.md) che descrive il punto di accesso al servizio implementato usando il dispositivo logico.
+Oggetto [**CIM \_ ServiceAccessPoint**](cim-serviceaccesspoint.md) che descrive il punto di accesso del servizio implementato tramite il dispositivo logico.
 
 </dd> </dl>
 
@@ -93,9 +93,9 @@ Un [**\_ serviceAccessPoint CIM**](cim-serviceaccesspoint.md) che descrive il pu
 
 WMI non implementa questa classe.
 
-La classe **CIM \_ DeviceSAPImplementation** è derivata dalla [**\_ dipendenza CIM**](cim-dependency.md).
+La **classe CIM \_ DeviceSAPImplementation** è derivata da [**CIM \_ Dependency**](cim-dependency.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

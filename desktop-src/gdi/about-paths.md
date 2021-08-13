@@ -1,26 +1,26 @@
 ---
-description: Un percorso è uno degli oggetti associati a un contesto di dispositivo (DC). Tuttavia, a differenza degli oggetti predefiniti (la penna, il pennello e il tipo di carattere) che fanno parte di un nuovo controller di dominio, non esiste alcun percorso predefinito. Per ulteriori informazioni sui controller di dominio, vedere contesti di dispositivo.
+description: Un percorso è uno degli oggetti associati a un contesto di dispositivo (DC). Tuttavia, a differenza degli oggetti predefiniti (penna, pennello e tipo di carattere) che fanno parte di qualsiasi nuovo controller di dominio, non esiste alcun percorso predefinito. Per altre informazioni sui controller di dominio, vedere Contesti di dispositivo.
 ms.assetid: 67fdff34-6585-45c7-8627-91d126faad8c
 title: Informazioni sui percorsi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93dbd036bfd73f784c89fc24c5c8a9e030a30c23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e48ecd56be093503efd38a0f2d804685516ba3167de56b35207abe6fbeb55fb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119355231"
 ---
 # <a name="about-paths"></a>Informazioni sui percorsi
 
-Un percorso è uno degli oggetti associati a un contesto di dispositivo (DC). Tuttavia, a differenza degli oggetti predefiniti (la penna, il pennello e il tipo di carattere) che fanno parte di un nuovo controller di dominio, non esiste alcun percorso predefinito. Per ulteriori informazioni sui controller di dominio, vedere [contesti di dispositivo](device-contexts.md).
+Un percorso è uno degli oggetti associati a un contesto di dispositivo (DC). Tuttavia, a differenza degli oggetti predefiniti (penna, pennello e tipo di carattere) che fanno parte di qualsiasi nuovo controller di dominio, non esiste alcun percorso predefinito. Per altre informazioni sui controller di dominio, vedere [Contesti di dispositivo.](device-contexts.md)
 
--   [Creazione percorso](path-creation.md)
--   [Percorsi delineati e riempiti](outlined-and-filled-paths.md)
+-   [Creazione del percorso](path-creation.md)
+-   [Tracciati con contorni e riempiti](outlined-and-filled-paths.md)
 -   [Trasformazioni di percorsi](transformations-of-paths.md)
--   [Tracciare percorsi ed effetti grafici](clip-paths-and-graphic-effects.md)
--   [Conversione dei percorsi in aree](conversion-of-paths-to-regions.md)
--   [Percorsi curvi](curved-paths.md)
+-   [Tracciati di ritaglio ed effetti grafici](clip-paths-and-graphic-effects.md)
+-   [Conversione di percorsi in aree](conversion-of-paths-to-regions.md)
+-   [Tracciati curvi](curved-paths.md)
 
  
 

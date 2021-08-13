@@ -1,11 +1,11 @@
 ---
-title: Attributo GPC-Machine-Extension-names
-description: Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
+title: Attributo GPC-Machine-Extension-Names
+description: Usato dall'oggetto Criteri di gruppo per i criteri del computer.
 ms.assetid: a5e00bf6-d311-4ccd-a2cf-4f7506fec419
 ms.tgt_platform: multiple
 keywords:
-- GPC-Machine-Extension-names attributo AD schema
-- Schema AD dell'attributo gPCMachineExtensionNames
+- Attributo GPC-Machine-Extension-Names Schema di AD
+- Attributo AD Schema gPCMachineExtensionNames
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc9d9c1ce435a017bfefe88d728004f619e193f9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8eb23a805131f5ed3d87aae4a55f470fd302fe9d47ffcb1a1d17e41e748987fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305601"
 ---
-# <a name="gpc-machine-extension-names-attribute"></a>Attributo GPC-Machine-Extension-names
+# <a name="gpc-machine-extension-names-attribute"></a>Attributo GPC-Machine-Extension-Names
 
-Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
+Usato dall'oggetto Criteri di gruppo per i criteri del computer.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | GPC-Machine-Extension-nomi                                                     |
-| LDAP-Display-Name | gPCMachineExtensionNames                                                        |
-| Dimensione              | Dipende dal numero di estensioni lato client che hanno un criterio in questo oggetto Criteri di gruppo. |
-| Privilegio aggiornamento  | Amministratore del dominio o dei criteri.                                                 |
-| Frequenza di aggiornamento  | Ogni volta che un oggetto Criteri di gruppo viene aggiornato tramite il GPE.                                      |
+| CN                | GPC-Machine-Extension-Names                                                     |
+| Ldap-Display-Name | gPCMachineExtensionNames                                                        |
+| Dimensione              | Dipende dal numero di estensioni lato client che dispongono di criteri in questo oggetto Criteri di gruppo. |
+| Privilegio di aggiornamento  | Amministratore di dominio o criteri.                                                 |
+| Frequenza di aggiornamento  | Ogni volta che un oggetto Criteri di gruppo viene aggiornato tramite l'oggetto Criteri di gruppo.                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1348                                                         |
-| System-ID-GUID    | 32ff8ecc-783f-11d2-9916-0000f87a57d4                                            |
+| System-Id-Guid    | 32ff8ecc-783f-11d2-9916-0000f87a57d4                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
@@ -58,15 +58,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato dall'oggetto Criteri di gruppo per i criteri del computer.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 

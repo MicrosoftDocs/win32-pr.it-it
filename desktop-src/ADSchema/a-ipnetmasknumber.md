@@ -1,6 +1,6 @@
 ---
-title: attributo ipNetmaskNumber
-description: Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri iniziali.
+title: Attributo ipNetmaskNumber
+description: Contiene la netmask IP in notazione decimale punteggiata, omettendo gli zeri iniziali.
 ms.assetid: 7d61e551-fd5b-4388-8cfa-cef0f61c716a
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e65d402aaae3d9466980d963a167206adb89d16
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c18d6f1593ef35fda939e6e46cda479f3c9d1dc86f81c036072cbb05a5c69dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322921"
 ---
-# <a name="ipnetmasknumber-attribute"></a>attributo ipNetmaskNumber
+# <a name="ipnetmasknumber-attribute"></a>Attributo ipNetmaskNumber
 
-Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri iniziali.
+Contiene la netmask IP in notazione decimale punteggiata, omettendo gli zeri iniziali.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ipNetmaskNumber                      |
-| LDAP-Display-Name | ipNetmaskNumber                      |
+| Ldap-Display-Name | ipNetmaskNumber                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.21                     |
-| System-ID-GUID    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
+| System-Id-Guid    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -55,15 +55,15 @@ Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri 
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Vero                                        |
+| Is-Single-Valued       | Vero                                        |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri 
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Vero                                        |
+| Is-Single-Valued       | Vero                                        |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri 
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Vero                                        |
+| Is-Single-Valued       | Vero                                        |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene la netmask IP nella notazione decimale punteggiata, omettendo gli zeri 
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| È a valore singolo       | Vero                                        |
+| Is-Single-Valued       | Vero                                        |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x00000000                                  |
-| Classi utilizzate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
+| Classi usate in        | [**ipNetwork**](c-ipnetwork.md)<br/> |
 
 
 

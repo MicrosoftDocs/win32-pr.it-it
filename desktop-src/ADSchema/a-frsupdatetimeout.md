@@ -1,10 +1,10 @@
 ---
-title: FRS-Update-timeout-attributo
-description: Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento prima di rinunciare.
+title: Attributo FRS-Update-Timeout
+description: Tempo massimo, in minuti, per attendere il completamento di un aggiornamento prima di rinunciare.
 ms.assetid: 0c06510e-d4a8-42f8-bf81-13a9f103e237
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-Update-timeout
+- Schema AD dell'attributo FRS-Update-Timeout
 - Schema AD dell'attributo fRSUpdateTimeout
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73730ec18942f98c07c0a4756bb8c7716e6abfd2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 711177ae5c676e2a18bd89af772827a52dd475ec3831e11df71ba25c63fbc4c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323371"
 ---
-# <a name="frs-update-timeout-attribute"></a>FRS-Update-timeout-attributo
+# <a name="frs-update-timeout-attribute"></a>Attributo FRS-Update-Timeout
 
-Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento prima di rinunciare.
+Tempo massimo, in minuti, per attendere il completamento di un aggiornamento prima di rinunciare.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | FRS-aggiornamento-timeout                   |
-| LDAP-Display-Name | fRSUpdateTimeout                     |
+| CN                | FRS-Update-Timeout                   |
+| Ldap-Display-Name | fRSUpdateTimeout                     |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.485               |
-| System-ID-GUID    | 1be8f172-a9ff-11d0-afe2-00c04fd930c9 |
+| System-Id-Guid    | 1be8f172-a9ff-11d0-afe2-00c04fd930c9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Tempo massimo, in minuti, di attesa per il completamento di un aggiornamento pri
 | ID collegamento                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| È a valore singolo       | Vero                                                                                                      |
+| A valore singolo       | Vero                                                                                                      |
 | Indicizzato             | Falso                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

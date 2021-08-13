@@ -1,23 +1,23 @@
 ---
-description: In pratica, la struttura di una richiesta CMC, mostrata dalla sintassi seguente, è relativamente complessa perché contiene spesso richieste nidificate.
+description: In pratica, la struttura di una richiesta CMC, illustrata dalla sintassi seguente, è relativamente complessa perché spesso contiene richieste annidate.
 ms.assetid: faeee338-bce4-4b35-9be9-72a6568fa259
 title: Attributi CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e6778575a9359ad5b8764528fb0351b68efc1e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b98e30c257234ebee864a1749ceecee7b79e25a9e11c9f1f190c60f3154ef64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103758072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118902064"
 ---
 # <a name="cmc-attributes"></a>Attributi CMC
 
-In pratica, la struttura di una richiesta CMC, mostrata dalla sintassi seguente, è relativamente complessa perché contiene spesso richieste nidificate. Una richiesta CMC, ad esempio, può contenere una o più \# richieste PKCS 10 in una sequenza **TaggedRequest** e può contenere zero o un messaggio PKCS \# 7 in una sequenza **TaggedContentInfo** . Ogni messaggio PKCS \# 7 annidato può contenere una richiesta CMC che può, a sua volta, contenere più richieste. Il numero di livelli di nidificazione è teoricamente illimitato, ma l'autorità di certificazione (CA) viene in genere configurata per limitare le dimensioni di una richiesta. Gli attributi possono essere applicati alla richiesta di primo livello o alle richieste nidificate. Questo argomento viene descritto nelle sezioni seguenti.
+In pratica, la struttura di una richiesta CMC, illustrata dalla sintassi seguente, è relativamente complessa perché spesso contiene richieste annidate. Ad esempio, una richiesta CMC può contenere zero o una richiesta PKCS 10 in una sequenza TaggedRequest e può contenere zero o un messaggio PKCS 7 in una sequenza \#  \# **TaggedContentInfo.** Ogni messaggio PKCS 7 annidato può contenere una richiesta CMC che a sua volta può \# contenere più richieste. Il numero di livelli di annidamento è teoricamente illimitato, ma l'autorità di certificazione (CA) è in genere configurata per limitare le dimensioni di una richiesta. Gli attributi possono essere applicati alla richiesta di primo livello o alle richieste annidate. Questa operazione viene illustrata nelle sezioni seguenti.
 
 ## <a name="cmcdata-structure"></a>Struttura CMCData
 
-Una richiesta CMC contiene sequenze di strutture **TaggedAttribute**, **TaggedRequest** e **TaggedContentInfo** ASN. 1.
+Una richiesta CMC contiene sequenze di **strutture ASN.1,** **TaggedRequest** e **TaggedContentInfo.**
 
 ``` syntax
 CmcData ::= SEQUENCE 
@@ -58,7 +58,7 @@ AttributeSetValue ::= SET OF ANY
 
 ## <a name="taggedattribute-structure"></a>Struttura TaggedAttribute
 
-Gli attributi sono inclusi in una richiesta di certificato CMC aggiungendoli alla raccolta **TaggedAttribute** . Ogni struttura della raccolta contiene un ID di tipo Integer, un identificatore di oggetto ASN. 1 (OID) e un set di valori. I possibili valori sono i seguenti.
+Gli attributi vengono inclusi in una richiesta di certificato CMC aggiungendoli alla raccolta **TaggedAttribute.** Ogni struttura nella raccolta contiene un ID intero, un identificatore di oggetto ASN.1 (OID) e un set di valori. I valori possibili possono essere uno dei seguenti.
 
 ``` syntax
 CmcAddAttributes ::= SEQUENCE 
@@ -100,23 +100,23 @@ RegInfo ::= OCTET STRING
 
 ## <a name="cmcaddattributes"></a>CMCAddAttributes
 
-Se gli attributi in questa struttura si applicano a una \# richiesta PKCS 10 annidata, il campo **certReferences** conterrà il **BodyPartID** che identifica la richiesta. Se gli attributi si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà il **BodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero. Gli attributi che possono essere inclusi sono elencati nell'argomento [attributi supportati](supported-attributes.md) .
+Se gli attributi in questa struttura si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **bodyPartID** che identifica la richiesta. Se gli attributi si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **bodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero. Gli attributi che è possibile includere sono elencati [nell'argomento Attributi](supported-attributes.md) supportati.
 
 ## <a name="cmcaddextensions"></a>CmcAddExtensions
 
-Questa struttura può contenere le estensioni X. 509 versione 3 e le estensioni definite da Microsoft. Questo attributo viene definito tramite l'interfaccia [**IX509AttributeExtensions**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) . Se le estensioni si applicano a una \# richiesta PKCS 10 annidata, il campo **certReferences** conterrà il **BodyPartID** che identifica la richiesta. Se le estensioni si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà il **BodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero.
+Questa struttura può contenere estensioni X.509 versione 3 e estensioni definite da Microsoft. Questo attributo viene definito tramite [**l'interfaccia IX509AttributeExtensions.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) Se le estensioni si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **bodyPartID** che identifica la richiesta. Se le estensioni si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **bodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero.
 
 ## <a name="sendernonce"></a>SenderNonce
 
-Un parametro nonce è costituito da dati binari casuali o pseudo-casuali che possono essere inclusi in una richiesta di certificato e una transazione di risposta per garantire che la risposta o la richiesta non sia una ripetizione di un messaggio precedente. Per ulteriori informazioni, vedere la proprietà [**SenderNonce**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_sendernonce) .
+Un nonce è un dato binario casuale o pseudo-casuale che può essere incluso in una transazione di richiesta e risposta del certificato per garantire che la risposta o la richiesta non sia una ripetizione di un messaggio precedente. Per altre informazioni, vedere la [**proprietà SenderNonce.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_sendernonce)
 
 ## <a name="transactid"></a>TransactID
 
-È possibile tenere traccia di una richiesta di certificato round trip e di una transazione di risposta usando un identificatore. Il client genera un ID transazione e lo mantiene fino a quando il certificato o l'autorità di registrazione non risponde con un messaggio che completa la transazione. La risposta include l'identificatore. Per ulteriori informazioni, vedere la proprietà [**ID transazione**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid) .
+Una round trip richiesta di certificato e una transazione di risposta possono essere rilevate usando un identificatore. Il client genera un ID transazione e lo conserva fino a quando il certificato o l'autorità di registrazione non risponde con un messaggio che completa la transazione. La risposta include l'identificatore. Per altre informazioni, vedere la [**proprietà TransactionId.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid)
 
 ## <a name="reginfo"></a>RegInfo
 
-Questo attributo può essere usato per contenere le informazioni di registrazione che il client sceglie di inserire nella richiesta CMC. Il valore dell'attributo è una stringa che contiene coppie nome-valore concatenate. Per ulteriori informazioni, vedere la proprietà [**NameValuePairs**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs) .
+Questo attributo può essere usato per contenere le informazioni di registrazione che il client sceglie di inserire nella richiesta CMC. Il valore dell'attributo è una stringa che contiene coppie nome-valore concatenate. Per altre informazioni, vedere la [**proprietà NameValuePairs.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_namevaluepairs)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

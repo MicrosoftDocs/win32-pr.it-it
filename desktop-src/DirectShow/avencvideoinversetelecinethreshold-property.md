@@ -1,40 +1,40 @@
 ---
-description: Imposta la soglia in corrispondenza della quale il codificatore considera ridondante un campo video.
+description: Imposta la soglia alla quale il codificatore considera ridondante un campo video.
 ms.assetid: db6c2f0e-f451-4d2d-984f-b507083e8358
-title: Proprietà AVEncVideoInverseTelecineThreshold (codecapis. h)
+title: Proprietà AVEncVideoInverseTelecineThreshold (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3427a8ff1491277c2e36640560acf728c0ef7208
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 297dae601c5112714272a2d1c2e0b1a7ebeee5faa3aa2fabebc32e79c1745c9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103745658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275180"
 ---
-# <a name="avencvideoinversetelecinethreshold-property"></a>Proprietà AVEncVideoInverseTelecineThreshold
+# <a name="avencvideoinversetelecinethreshold-property"></a>AVEncVideoInverseTelecineThreshold - proprietà
 
-Imposta la soglia in corrispondenza della quale il codificatore considera ridondante un campo video.
+Imposta la soglia alla quale il codificatore considera ridondante un campo video.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncVideoInverseTelecineThreshold**
+**CODECAPI \_ AVEncVideoInverseTelecineThreshold**
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il valore di questa proprietà presenta l'intervallo seguente.
+Il valore di questa proprietà ha l'intervallo seguente.
 
 
 
 | Valore | Descrizione                                                    |
 |-------|----------------------------------------------------------------|
-| 0     | È meno probabile che il codificatore prenda in considerazione i campi video ridondanti. |
-| 100   | È più probabile che il codificatore prenda in considerazione i campi video ridondanti. |
+| 0     | È meno probabile che il codificatore consideri ridondanti i campi video. |
+| 100   | È più probabile che il codificatore consideri ridondanti i campi video. |
 
 
 
@@ -42,7 +42,7 @@ Il valore di questa proprietà presenta l'intervallo seguente.
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questa proprietà se il codificatore esegue una telecine inversa con un'origine video analoga.
+Impostare questa proprietà se il codificatore sta eseguendo telecine inverso con un'origine video analoga.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Impostare questa proprietà se il codificatore esegue una telecine inversa con u
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 app \[ desktop per app desktop \| UWP\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Impostare questa proprietà se il codificatore esegue una telecine inversa con u
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

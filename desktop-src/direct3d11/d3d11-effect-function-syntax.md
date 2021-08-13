@@ -1,23 +1,23 @@
 ---
 title: Sintassi della funzione Effect (Direct3D 11)
-description: Una funzione Effect viene scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
+description: Una funzione di effetto è scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
 ms.assetid: 5e12ba65-98bf-4f21-be75-602687157eb1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f569211d5f178b96cf7415478010285e7a836b58
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 945f7104d44947f37af71ce664dd99ff64362062b1d42af62af2054538bacb52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103727378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046619"
 ---
 # <a name="effect-function-syntax-direct3d-11"></a>Sintassi della funzione Effect (Direct3D 11)
 
-Una funzione Effect viene scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
+Una funzione di effetto è scritta in HLSL ed è dichiarata con la sintassi descritta in questa sezione.
 
 ## <a name="syntax"></a>Sintassi
 
-*ReturnType* *FunctionName* ( \[ *argomento* \] )
+*ReturnType* *FunctionName* ( \[ *ArgumentList* \] )
 
 {
 
@@ -30,20 +30,20 @@ Una funzione Effect viene scritta in HLSL ed è dichiarata con la sintassi descr
 
 | Nome         | Descrizione                                                                                                                                                                                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ReturnType   | Qualsiasi [tipo di HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
+| ReturnType   | Qualsiasi [tipo HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
 | FunctionName | Stringa ASCII che identifica in modo univoco il nome della funzione shader.                                                                                                                                                                                            |
-| ArgumentList | Uno o più argomenti separati da virgole (vedere [argomenti della funzione (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)).                                                                                                                             |
-| Istruzioni   | Una o più istruzioni (vedere le [istruzioni (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) che costituiscono il corpo della funzione. Se una funzione viene definita senza un corpo, viene considerato un prototipo; e devono essere ridefiniti con un corpo prima dell'uso. |
+| ArgumentList | Uno o più argomenti, separati da virgole (vedere [Argomenti di funzione (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)                                                                                                                             |
+| Istruzioni   | Una o più istruzioni (vedere [Istruzioni (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) che costituiscono il corpo della funzione. Se una funzione viene definita senza un corpo, viene considerata un prototipo. e devono essere ridefiniti con un corpo prima dell'uso. |
 
 
 
- 
+ 
 
-Una funzione Effect può essere uno shader oppure può essere semplicemente una funzione chiamata da uno shader. Una funzione viene identificata in modo univoco in base al nome, ai tipi dei relativi parametri e alla piattaforma di destinazione. è pertanto possibile eseguire l'overload delle funzioni. Qualsiasi funzione HLSL valida deve adattarsi a questo formato; per un elenco più dettagliato della sintassi per le funzioni HLSL, vedere [funzioni (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions).
+Una funzione di effetto può essere uno shader o semplicemente una funzione chiamata da uno shader. Una funzione viene identificata in modo univoco in base al nome, ai tipi dei relativi parametri e alla piattaforma di destinazione. Pertanto, le funzioni possono essere sovraccaricate. Qualsiasi funzione HLSL valida deve essere in questo formato. Per un elenco più dettagliato della sintassi per le funzioni HLSL, vedere [Funzioni (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions)
 
 ## <a name="example"></a>Esempio
 
-Di seguito è riportato un esempio di una funzione pixel shader.
+Di seguito è riportato un esempio di una pixel shader funzione .
 
 
 ```
@@ -73,6 +73,6 @@ PS_OUTPUT RenderScenePS( VS_OUTPUT In,
 [Formato effetto](d3d11-effect-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

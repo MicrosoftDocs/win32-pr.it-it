@@ -1,7 +1,7 @@
 ---
-description: Recupera un handle per l'hash di handshake utilizzato per l'autenticazione client.
+description: Recupera un handle per l'hash dell'handshake utilizzato per l'autenticazione client.
 ms.assetid: 55007ce0-4bf1-4605-9b34-2931935762aa
-title: Funzione SslCreateClientAuthHash (Sslprovider. h)
+title: Funzione SslCreateClientAuthHash (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 4ac83d6d8aeea8429812d80b7bf66de7c87062a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96f1e7fa0de86439f89bf5c4c610bf5b46640533071260852c47321c5a1c6673
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907088"
 ---
-# <a name="sslcreateclientauthhash-function"></a>SslCreateClientAuthHash (funzione)
+# <a name="sslcreateclientauthhash-function"></a>Funzione SslCreateClientAuthHash
 
-La funzione **SslCreateClientAuthHash** recupera un handle per l' [*hash*](/windows/desktop/SecGloss/h-gly) di handshake usato per l'autenticazione client.
+La **funzione SslCreateClientAuthHash** recupera un handle per l'hash dell'handshake usato per l'autenticazione client. [](/windows/desktop/SecGloss/h-gly)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,45 +44,45 @@ SECURITY_STATUS WINAPI SslCreateClientAuthHash(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'istanza del provider di protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+Handle [*dell'istanza Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) protocol (SSL).
 
 </dd> <dt>
 
-*phHandshakeHash* \[ out\]
+*phHandshakeHash* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile **dell' \_ \_ handle di hash NCRYPT** per la ricezione dell'handle hash.
+Puntatore a una **variabile HASH \_ \_ HANDLE NCRYPT** per ricevere l'handle hash.
 
 </dd> <dt>
 
-*dwProtocol* \[ in\]
+*dwProtocol* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del protocollo del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Protocol Identifier.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ in\]
+*dwCipherSuite* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del pacchetto di crittografia del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Cipher Suite Identifier.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*pszHashAlgId* \[ in\]
+*pszHashAlgId* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori degli [**identificatori dell'algoritmo CNG**](cng-algorithm-identifiers.md) .
+Uno dei valori [**di CNG Algorithm Identifiers.**](cng-algorithm-identifiers.md)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Questo parametro è riservato per utilizzi futuri e deve essere impostato su zero.
+Questo parametro è riservato per un uso futuro e deve essere impostato su zero.
 
 </dd> </dl>
 
@@ -92,17 +92,17 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Il parametro *hSslProvider* contiene un puntatore non valido.<br/>                |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *phHandshakeHash* è impostato su **null**.<br/>                               |
-| <dl> <dt>**Nte \_ 0x80090029L non \_ supportato**</dt> <dt></dt> </dl>     | La funzione selezionata non è supportata nella versione specificata dell'interfaccia.<br/> |
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>         | Memoria insufficiente per allocare i buffer.<br/>                                          |
-| <dl> <dt>**Nte \_ \_Flag non validi**</dt> <dt>0x80090009L</dt> </dl>         | Il parametro *dwFlags* deve essere impostato su zero.<br/>                                      |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | Il *parametro hSslProvider* contiene un puntatore non valido.<br/>                |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Il *parametro phHandshakeHash* è impostato su **NULL.**<br/>                               |
+| <dl> <dt>**NTE \_ NON \_ SUPPORTATO**</dt> <dt>0x80090029L</dt> </dl>     | La funzione selezionata non è supportata nella versione specificata dell'interfaccia.<br/> |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Memoria insufficiente per allocare buffer.<br/>                                          |
+| <dl> <dt>**NTE \_ BAD \_ FLAGS**</dt> <dt>0x80090009L</dt> </dl>         | Il *parametro dwFlags* deve essere impostato su zero.<br/>                                      |
 
 
 
@@ -110,7 +110,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **SslCreateClientAuthHash** viene chiamata per le conversazioni [*Transport Layer Security Protocol*](/windows/desktop/SecGloss/t-gly) (TLS) 1,2 o versioni successive per creare oggetti hash utilizzati per i messaggi di handshake hash. Viene chiamato una volta per ogni possibile [*algoritmo di hashing*](/windows/desktop/SecGloss/h-gly) che può essere usato nella firma di autenticazione client.
+La **funzione SslCreateClientAuthHash** viene chiamata per le conversazioni tls 1.2 o successive del protocollo [*Transport Layer Security*](/windows/desktop/SecGloss/t-gly) per creare oggetti hash usati per l'hashing dei messaggi di handshake. Viene chiamato una volta per ogni possibile algoritmo [*hash*](/windows/desktop/SecGloss/h-gly) che può essere usato nella firma di autenticazione client.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,9 +118,9 @@ La funzione **SslCreateClientAuthHash** viene chiamata per le conversazioni [*Tr
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

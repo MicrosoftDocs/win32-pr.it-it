@@ -1,17 +1,17 @@
 ---
 description: Specifica se il codificatore deve abilitare la codifica S/PDIF in tempo reale.
 ms.assetid: 36ac925b-d68b-4c39-9033-2c0a058125b5
-title: Proprietà MFPKEY_WMAENC_RTSPDIF (Wmcodecdsp. h)
+title: MFPKEY_WMAENC_RTSPDIF proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcfd34f12618d7cb1029ab4723a13002380f3380
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 296c02dfe67a945d5c1649bf524c3be3e01425a8b7885b702d044aece7b0bcf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119355571"
 ---
-# <a name="mfpkey_wmaenc_rtspdif-property"></a>MFPKEY \_ WMAENC- \_ Proprietà RTSPDIF
+# <a name="mfpkey_wmaenc_rtspdif-property"></a>Proprietà MFPKEY \_ WMAENC \_ RTSPDIF
 
 Specifica se il codificatore deve abilitare la codifica S/PDIF in tempo reale. Lettura/scrittura.
 
@@ -21,11 +21,11 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valore predefinito
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -34,7 +34,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Client<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

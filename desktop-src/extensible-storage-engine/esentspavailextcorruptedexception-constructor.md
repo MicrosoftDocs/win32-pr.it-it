@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentSPAvailExtCorruptedException'
+description: Altre informazioni sul costruttore EsentSPAvailExtCorruptedException
 title: Costruttore EsentSPAvailExtCorruptedException
 TOCTitle: 'EsentSPAvailExtCorruptedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSPAvailExtCorruptedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe38ab0fde81dcb95e5e1581af56b7630d0fc9a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db917e5aad78e0c9bbd6649c48a1a6e2d240a77d17a327a48a567302d2981280
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770049"
 ---
 # <a name="esentspavailextcorruptedexception-constructor"></a>Costruttore EsentSPAvailExtCorruptedException
 
 Inizializza una nuova istanza della classe EsentSPAvailExtCorruptedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentSPAvailExtCorruptedException()
 
 [Membri di EsentSPAvailExtCorruptedException](./esentspavailextcorruptedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -7,22 +7,22 @@ MSHAttr:
 title: PurposeGroupGuid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d20d6c9d1687ea0e3fca344fd3b534ccc0b3ee57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29ead67e44ac4735d17d97580b6bce5f187422994c9854bac19febf7a988bcbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119358835"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupguidspanpurposegroupguid"></a><span id="WWAN_profile_v4.element_PurposeGroupGuid"></span>PurposeGroupGuid
 
 Rappresenta un profilo in un PurposeGroup di profili.
 
-I profili sono specificati dal relativo valore [**guidType**](simpletype-guidtype.md) .
+I profili vengono specificati dal relativo [**valore guidType.**](simpletype-guidtype.md)
 
-Sono definiti quattro valori GUID, elencati nella tabella seguente.
+Vengono definiti quattro valori GUID, come elencato nella tabella seguente.
 
-| Gruppo scopo | GUID                                 |
+| Gruppo di scopi | GUID                                 |
 |---------------|--------------------------------------|
 | Internet      | 3E5545D2-1137-4DC8-A198-33F1C657515F |
 | mms           | 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8 |
@@ -51,11 +51,11 @@ Sono definiti quattro valori GUID, elencati nella tabella seguente.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
@@ -73,8 +73,8 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><a href="element-purposegroups.md">PurposeGroups</a></td>
-<td><p>Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili utilizzati per uno scopo comune.</p>
-<p>Questo elemento è nuovo per la V4 dello schema.</p>
+<td><p>Elenco facoltativo di gruppi di profili, in cui ogni gruppo include i profili usati per uno scopo comune.</p>
+<p>Questo elemento è nuovo per la versione 4 dello schema.</p>
 <p>Un profilo può essere elencato in più gruppi.</p></td>
 </tr>
 </tbody>

@@ -1,23 +1,23 @@
 ---
-description: La qualità della protezione determina il livello di sicurezza utilizzato durante l'invio e la ricezione di messaggi. Microsoft Digest seleziona un livello in base ai requisiti del client e del server.
+description: La qualità della protezione determina il livello di sicurezza utilizzato per l'invio e la ricezione di messaggi. Microsoft Digest seleziona un livello in base ai requisiti del client e del server.
 ms.assetid: d3788465-3e9f-4346-9e67-9626b48249b7
-title: Qualità della protezione e delle crittografie
+title: Qualità della protezione e crittografia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 679c2fd727565d6475cc96558e33b88d88dfda8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8c20643301dba767ae6decae0c0fb38b2c9923cb220cb66c3c564515c5ce6d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920500"
 ---
-# <a name="quality-of-protection-and-ciphers"></a>Qualità della protezione e delle crittografie
+# <a name="quality-of-protection-and-ciphers"></a>Qualità della protezione e crittografia
 
-La qualità della protezione determina il livello di sicurezza utilizzato durante l'invio e la ricezione di messaggi. Microsoft Digest seleziona un livello in base ai requisiti del client e del server.
+La qualità della protezione determina il livello di sicurezza utilizzato per l'invio e la ricezione di messaggi. Microsoft Digest seleziona un livello in base ai requisiti del client e del server.
 
-Quando si usa digest come meccanismo SASL, le applicazioni possono specificare che i messaggi vengono mantenuti riservati usando la crittografia. Il server specifica le crittografie supportate per i messaggi crittografati e il client seleziona una crittografia da questo elenco.
+Quando si usa digest come meccanismo SASL, le applicazioni possono specificare che i messaggi devono essere mantenuti riservati tramite la crittografia. Il server specifica le crittografie supportate per i messaggi crittografati e il client seleziona una crittografia da questo elenco.
 
-Negli argomenti seguenti vengono illustrati in dettaglio questi meccanismi di sicurezza:
+Gli argomenti seguenti illustrano in dettaglio questi meccanismi di sicurezza:
 
 -   [Qualità della protezione](quality-of-protection.md)
 -   [Ciphers](ciphers.md)

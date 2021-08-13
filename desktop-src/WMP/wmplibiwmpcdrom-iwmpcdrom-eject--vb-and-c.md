@@ -1,11 +1,11 @@
 ---
-title: Metodo EJECT IWMPCdrom
-description: Il metodo EJECT espelle il CD o il DVD dall'unità. | Metodo EJECT IWMPCdrom
+title: Metodo di espulsione IWMPCdrom
+description: Il metodo eject espulse il CD o il DVD dall'unità. | Metodo di espulsione IWMPCdrom
 ms.assetid: c0a69252-fd79-452c-bc61-3c3e8bcaaf48
 keywords:
-- Metodo EJECT Media Player Windows
-- Metodo EJECT Media Player Windows, interfaccia IWMPCdrom
-- Interfaccia IWMPCdrom Windows Media Player, metodo EJECT
+- Eject method Windows Media Player
+- Eject method Windows Media Player , interfaccia IWMPCdrom
+- Interfaccia IWMPCdrom Windows Media Player metodo , eject
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8ca2403b86b648e98861d91a21db80ddb64aac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00dbdf22d8eb0ba4073a1b74c25c0d610f3091477e5921dd0856fa835a9bccc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246761"
 ---
-# <a name="iwmpcdromeject-method"></a>Metodo IWMPCdrom:: Eject
+# <a name="iwmpcdromeject-method"></a>Metodo IWMPCdrom::eject
 
-Il metodo **eject** espelle il CD o il DVD dall'unità.
+Il **metodo eject** espulse il CD o il DVD dall'unità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,13 +55,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se lo sportello dell'unità è aperto, questo metodo chiude lo sportello.
+Se la porta dell'unità è aperta, questo metodo chiude la porta.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **eject** per aprire lo sportello dell'unità CD o DVD con indice zero in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **eject** per aprire la porta dell'unità CD o DVD con indice zero in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -91,7 +91,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,16 +101,16 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. riproduzione (VB e C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
+[**AxWindowsMediaPlayer.playState (VB e C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPCdrom (VB e C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

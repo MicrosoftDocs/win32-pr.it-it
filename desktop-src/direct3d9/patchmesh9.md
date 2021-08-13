@@ -1,15 +1,15 @@
 ---
-description: PatchMesh9 definisce una mesh definita dalle patch di Bézier, incluso un elenco di vertici e le patch per la mesh tramite l'indicizzazione nella matrice di vertici.
+description: PatchMesh9 definisce una mesh definita dalle patch di Bézier, incluso un elenco di vertici e le patch per la mesh tramite l'indicizzazione nella matrice dei vertici.
 ms.assetid: 642ca513-c83e-4c6d-845c-0eaecc232728
 title: PatchMesh9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 811e593117f2ec57a4718ea8078d96bcea87e71f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 20216bcfa33c3e3ef36dea999a6fef10384719254f4874a1da3907aa02551a3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798537"
 ---
 # <a name="patchmesh9"></a>PatchMesh9
 

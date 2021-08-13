@@ -1,10 +1,10 @@
 ---
-title: Attributo a livello di servizio FRS-partner-auth
+title: Attributo FRS-Partner-Auth-Level
 description: Livello di sicurezza RPC.
 ms.assetid: ec7a8d92-33c0-415a-bc38-5b7df81226bc
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo FRS-partner-auth-Level
+- Schema AD dell'attributo FRS-Partner-Auth-Level
 - Schema AD dell'attributo fRSPartnerAuthLevel
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10ba4b89c86b654ed434c012a0c2b683bf07c0e7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9549798a8360468a96e70e85906e9f83ae9cefedc5883247438105f104472839
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119306381"
 ---
-# <a name="frs-partner-auth-level-attribute"></a>Attributo a livello di servizio FRS-partner-auth
+# <a name="frs-partner-auth-level-attribute"></a>Attributo FRS-Partner-Auth-Level
 
 Livello di sicurezza RPC.
 
@@ -29,13 +29,13 @@ Livello di sicurezza RPC.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Livello di servizio FRS-partner-auth               |
-| LDAP-Display-Name | fRSPartnerAuthLevel                  |
+| CN                | FRS-Partner-Auth-Level               |
+| Ldap-Display-Name | fRSPartnerAuthLevel                  |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.877               |
-| System-ID-GUID    | 2a132580-9373-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 2a132580-9373-11d1-aebc-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| Is-Single-Valued       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| A valore singolo       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| A valore singolo       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Livello di sicurezza RPC.
 | ID collegamento                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| È a valore singolo       | Vero                                                                                                       |
+| A valore singolo       | Vero                                                                                                       |
 | Indicizzato             | Falso                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 

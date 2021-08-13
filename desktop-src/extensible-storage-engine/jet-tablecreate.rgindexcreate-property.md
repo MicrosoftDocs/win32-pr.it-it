@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_TABLECREATE. rgindexcreate'
-title: Proprietà JET_TABLECREATE. rgindexcreate
+description: 'Altre informazioni su: JET_TABLECREATE.rgindexcreate property'
+title: JET_TABLECREATE.rgindexcreate
 TOCTitle: 'rgindexcreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgindexcreate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.rgindexcreate(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 305db4e84c8ac08396217c8278042ab40a846952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fc843fca9bc807bc104cc277f1679925b947fd90a55ef88d9093a2c40c1959c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472791"
 ---
-# <a name="jet_tablecreatergindexcreate-property"></a>Proprietà JET_TABLECREATE. rgindexcreate
+# <a name="jet_tablecreatergindexcreate-property"></a>JET_TABLECREATE.rgindexcreate
 
-Ottiene o imposta una matrice di indici da creare, di tipo [JET_INDEXCREATE](./jet-indexcreate-class.md).
+Ottiene o imposta una matrice di indici da creare, [di tipo JET_INDEXCREATE](./jet-indexcreate-class.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public JET_INDEXCREATE[] rgindexcreate { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo \[\]  
+digitare: \[\]  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membri JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membri](./jet-tablecreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: Attributo GPC-funzionalità-Version
-description: Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
+title: Attributo GPC-Functionality-Version
+description: Versione dell'editor Criteri di gruppo che ha creato questo oggetto.
 ms.assetid: 6ea2cb35-ad62-47e1-bafe-591fe875a4c9
 ms.tgt_platform: multiple
 keywords:
-- GPC-funzionalità-attributo versione-schema AD
+- Attributo GPC-Functionality-Version Schema DI ACTIVE Directory
 - Schema AD dell'attributo gPCFunctionalityVersion
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27df43dfc439bfd0dd5eee1c0626d987c7d19c46
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c7038d8aba24358194225bc762fb5af4e8610fbec62c4cb624044d8f1c7d01ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323161"
 ---
-# <a name="gpc-functionality-version-attribute"></a>Attributo GPC-funzionalità-Version
+# <a name="gpc-functionality-version-attribute"></a>Attributo GPC-Functionality-Version
 
-Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
+Versione dell'editor Criteri di gruppo che ha creato questo oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | GPC-funzionalità-versione            |
-| LDAP-Display-Name | gPCFunctionalityVersion              |
+| CN                | GpC-Functionality-Version            |
+| Ldap-Display-Name | gPCFunctionalityVersion              |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.893               |
-| System-ID-GUID    | f30e3bc0-9ff0-11d1-b603-0000f80367c1 |
+| System-Id-Guid    | f30e3bc0-9ff0-11d1-b603-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Versione dell'Editor Criteri di gruppo che ha creato l'oggetto.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| È a valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi utilizzate in        | [**Gruppo-criteri-contenitore**](c-grouppolicycontainer.md)<br/> |
+| Classi usate in        | [**Contenitore criteri di gruppo**](c-grouppolicycontainer.md)<br/> |
 
 
 

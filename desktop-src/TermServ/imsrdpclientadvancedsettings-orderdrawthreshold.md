@@ -1,26 +1,26 @@
 ---
-title: Proprietà orderDrawThreshold di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà orderDrawThreshold di IMsRdpClientAdvancedSettings
+title: Proprietà orderDrawThreshold IMsRdpClientAdvancedSettings
+description: Questa proprietà non è supportata. | Proprietà orderDrawThreshold IMsRdpClientAdvancedSettings
 ms.assetid: 0a295e3d-6425-4ab8-907a-196d7b4999d4
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà orderDrawThreshold
-- Servizi Desktop remoto proprietà orderDrawThreshold, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto
+- Proprietà orderDrawThreshold Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà orderDrawThreshold
+- Proprietà orderDrawThreshold Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà orderDrawThreshold
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4c24576a8cbc72483822d4f327f09180364fe9d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 300ff528f6da4199a0ff05030bb5c8102c12f44448afdfb145ddc672b44b70f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119285031"
 ---
-# <a name="imsrdpclientadvancedsettingsorderdrawthreshold-property"></a>Proprietà IMsRdpClientAdvancedSettings:: orderDrawThreshold
+# <a name="imsrdpclientadvancedsettingsorderdrawthreshold-property"></a>Proprietà IMsRdpClientAdvancedSettings::orderDrawThreshold
 
 Questa proprietà non è supportata.
 
@@ -88,7 +88,7 @@ Nuovo numero massimo.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -102,7 +102,7 @@ Restituisce un valore **\_ false**.
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

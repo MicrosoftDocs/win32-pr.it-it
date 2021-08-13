@@ -1,10 +1,10 @@
 ---
-title: attributo MS-NET-IEEE-8023-GP-PolicyData
-description: Contiene tutte le impostazioni e i dati che costituiscono una configurazione Criteri di gruppo per le reti cablate 802,3.
+title: Attributo ms-net-ieee-8023-GP-PolicyData
+description: Contiene tutte le impostazioni e i dati che costituiscono una configurazione Criteri di gruppo per le reti cablate 802.3.
 ms.assetid: 9c68252f-cd0c-409f-9c57-1d00be246d20
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-NET-IEEE-8023-GP-PolicyData
+- Schema AD dell'attributo ms-net-ieee-8023-GP-PolicyData
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eb67527b6db64a4c4f3d4a8b216d6dccc51d2f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bcbe48346861415d298d5e9b4319d1f6aac6f73a403265ca6fac8c1d58ad4b22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300161"
 ---
-# <a name="ms-net-ieee-8023-gp-policydata-attribute"></a>attributo MS-NET-IEEE-8023-GP-PolicyData
+# <a name="ms-net-ieee-8023-gp-policydata-attribute"></a>Attributo ms-net-ieee-8023-GP-PolicyData
 
-Contiene tutte le impostazioni e i dati che costituiscono una configurazione Criteri di gruppo per le reti cablate 802,3.
+Contiene tutte le impostazioni e i dati che costituiscono una configurazione Criteri di gruppo per le reti cablate 802.3.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-NET-IEEE-8023-GP-PolicyData              |
-| LDAP-Display-Name | MS-NET-IEEE-8023-GP-PolicyData              |
+| CN                | ms-net-ieee-8023-GP-PolicyData              |
+| Ldap-Display-Name | ms-net-ieee-8023-GP-PolicyData              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1955                     |
-| System-ID-GUID    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
+| System-Id-Guid    | 8398948b-7457-4d91-bd4d-8d7ed669c9f7        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -54,15 +54,15 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| È a valore singolo       | Vero                                                                              |
+| A valore singolo       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Classi utilizzate in        | [**MS-NET-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| È a valore singolo       | Vero                                                                              |
+| A valore singolo       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Classi utilizzate in        | [**MS-NET-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
@@ -96,15 +96,15 @@ Contiene tutte le impostazioni e i dati che costituiscono una configurazione Cri
 | ID collegamento                | \-                                                                                |
 | MAPI-Id                | \-                                                                                |
 | System-Only            | Falso                                                                             |
-| È a valore singolo       | Vero                                                                              |
+| A valore singolo       | Vero                                                                              |
 | Indicizzato             | Falso                                                                             |
 | Nel catalogo globale      | Falso                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                      |
 | Range-Lower            | \-                                                                                |
 | Range-Upper            | \-                                                                                |
 | Search-Flags           | 0x00000000                                                                        |
 | System-Flags           | 0x00000010                                                                        |
-| Classi utilizzate in        | [**MS-NET-IEEE-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
+| Classi usate in        | [**ms-net-ieee-8023-GroupPolicy**](c-ms-net-ieee-8023-grouppolicy.md)<br/> |
 
 
 
