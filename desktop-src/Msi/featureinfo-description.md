@@ -1,7 +1,7 @@
 ---
-description: La proprietà Description è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Description della tabella Feature.
+description: La proprietà Description è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Descrizione della tabella Feature.
 ms.assetid: bab64ed7-4f98-4dc9-ac24-39d92904e1d3
-title: Proprietà FeatureInfo. Description
+title: FeatureInfo.Description - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: e5c6cfb28ecc2b515817728c8b029bc9b00eeb50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c6ef6879c6247b7df8f9c8786cb9532aa69977e61a0a35e5a08c60462429aa3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118636795"
 ---
-# <a name="featureinfodescription-property"></a>Proprietà FeatureInfo. Description
+# <a name="featureinfodescription-property"></a>FeatureInfo.Description - proprietà
 
-La proprietà **Description** è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Description della [tabella Feature](feature-table.md).
+La **proprietà Description** è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Descrizione della tabella [Feature](feature-table.md).
 
 Questa proprietà è di sola lettura.
 
@@ -43,7 +43,7 @@ propVal = FeatureInfo.Description
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IFeatureInfo è definito come 000C109F-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 

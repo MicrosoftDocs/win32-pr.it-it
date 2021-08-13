@@ -1,7 +1,7 @@
 ---
-description: Ottiene le interfacce di estensione che possono essere dotate di un driver di dispositivo Windows Image Acquisition (WIA) 2,0.
+description: Ottiene le interfacce di estensione che potrebbero essere associate a un driver di Windows Image Acquisition (WIA) 2.0.
 ms.assetid: 70f20f33-905c-4a88-8065-1cf876e98302
-title: 'Metodo IWiaItem2:: GetExtension (WIA. h)'
+title: Metodo IWiaItem2::GetExtension (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2fea4c4b9a2dd909b7ec49097ee94664b47f7e47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c9738afe60d79b73149c9dd7dda8c3bbd1017c3b41d023b47160b624bcd7c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450416"
 ---
-# <a name="iwiaitem2getextension-method"></a>Metodo IWiaItem2:: GetExtension
+# <a name="iwiaitem2getextension-method"></a>Metodo IWiaItem2::GetExtension
 
-Ottiene le interfacce di estensione che possono essere dotate di un driver di dispositivo Windows Image Acquisition (WIA) 2,0.
+Ottiene le interfacce di estensione che potrebbero essere associate a un driver di Windows Image Acquisition (WIA) 2.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ HRESULT GetExtension(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Attualmente non usato. Deve essere impostato su zero.
+Attualmente inutilizzato. Deve essere impostato su zero.
 
 </dd> <dt>
 
-*bstrName* \[ in\]
+*bstrName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -67,11 +67,11 @@ Specifica il nome dell'estensione a cui l'applicazione chiamante richiede un pun
 
 </dt> <dd>
 
-Estensione del filtro di segmentazione. Si tratta attualmente dell'unico valore valido per questo parametro.
+Estensione del filtro di segmentazione. Questo è attualmente l'unico valore valido per questo parametro.
 
 </dd> </dl> </dd> <dt>
 
-*riidExtensionInterface* \[ in\]
+*riidExtensionInterface* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **REFIID**
@@ -80,10 +80,10 @@ Specifica l'identificatore dell'interfaccia di estensione.
 
 </dd> <dt>
 
-*ppOut* \[ out\]
+*ppOut* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* VOID**
 
 Riceve l'indirizzo di un puntatore all'interfaccia di estensione.
 
@@ -93,17 +93,17 @@ Riceve l'indirizzo di un puntatore all'interfaccia di estensione.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione richiama questo metodo per creare un oggetto di estensione che implementa una delle interfacce di estensione del driver WIA 2,0. **IWiaItem2:: GetExtension** archivia l'indirizzo dell'interfaccia di estensione dell'oggetto estensione nel parametro *riidExtensionInterface* . L'applicazione usa quindi il puntatore di interfaccia per chiamare i relativi metodi.
+Un'applicazione richiama questo metodo per creare un oggetto di estensione che implementa una delle interfacce di estensione del driver WIA 2.0. **IWiaItem2::GetExtension** archivia l'indirizzo dell'interfaccia di estensione dell'oggetto estensione nel *parametro riidExtensionInterface.* L'applicazione usa quindi il puntatore a interfaccia per chiamare i relativi metodi.
 
-Le applicazioni devono chiamare il metodo [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sui puntatori di interfaccia ricevuti tramite il parametro *riidExtensionInterface* .
+Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sui puntatori a interfaccia ricevuti tramite il *parametro riidExtensionInterface.*
 
 ## <a name="examples"></a>Esempio
 
-CreateSegmentationFilter crea un'istanza del filtro di segmentazione ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)) del driver chiamando **IWiaItem2:: GetExtension** sull'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) passata.
+CreateSegmentationFilter crea un'istanza del filtro di segmentazione del driver ([**IWiaSegmentationFilter**](-wia-iwiasegmentationfilter.md)) chiamando **IWiaItem2::GetExtension** sull'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) passata.
 
 
 ```C++
@@ -156,10 +156,10 @@ CreateSegmentationFilter(
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

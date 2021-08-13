@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteTextAnalyzer GetGdiCompatibleGlyphPlacements
-description: Posizionare l'output dei glifi dal metodo GetGlyphs in base alle regole di rendering del tipo di carattere e del sistema di scrittura.
+description: Inserire l'output dei glifi dal metodo GetGlyphs in base al tipo di carattere e alle regole di rendering del sistema di scrittura.
 ms.assetid: 49312b03-9ee9-44ef-b3eb-a35631a6e693
 keywords:
-- Scrittura diretta metodo GetGdiCompatibleGlyphPlacements
-- Metodo GetGdiCompatibleGlyphPlacements scrittura diretta, interfaccia IDWriteTextAnalyzer
-- IDWriteTextAnalyzer Interface Direct Write, metodo GetGdiCompatibleGlyphPlacements
+- Metodo GetGdiCompatibleGlyphPlacements Direct Write
+- Metodo GetGdiCompatibleGlyphPlacements Direct Write, interfaccia IDWriteTextAnalyzer
+- Interfaccia IDWriteTextAnalyzer Direct Write, metodo GetGdiCompatibleGlyphPlacements
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f548e5fd20ce8814dc59657ff7bb422387c959fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d05fcf5595500f34730a720e4a4c2e80d68922929d8055b754a26a1dc92f63c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118650011"
 ---
-# <a name="idwritetextanalyzergetgdicompatibleglyphplacements-method"></a>Metodo IDWriteTextAnalyzer:: GetGdiCompatibleGlyphPlacements
+# <a name="idwritetextanalyzergetgdicompatibleglyphplacements-method"></a>Metodo IDWriteTextAnalyzer::GetGdiCompatibleGlyphPlacements
 
-Posizionare l'output dei glifi dal metodo [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs) in base alle regole di rendering del tipo di carattere e del sistema di scrittura.
+Inserire l'output dei glifi dal [**metodo GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs) in base al tipo di carattere e alle regole di rendering del sistema di scrittura.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,138 +62,138 @@ virtual HRESULT GetGdiCompatibleGlyphPlacements(
 
 <dl> <dt>
 
-*textString* \[ in\]
+*textString* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* WCHAR**
 
-Matrice di caratteri contenente la stringa originale da cui provengono i glifi.
+Matrice di caratteri contenente la stringa originale da cui derivano i glifi.
 
 </dd> <dt>
 
-*ClusterMap* \[ in\]
+*clusterMap* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* UInt16**
+Tipo: **const UINT16 \***
 
-Puntatore al mapping da intervalli di caratteri a intervalli di glifi. Questa operazione viene restituita da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Puntatore al mapping dagli intervalli di caratteri agli intervalli di glifi. Viene restituito da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
 
 </dd> <dt>
 
-*textProps* \[ in\]
+*textProps* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **DWrite \_ shaping \_ \_ Proprietà testo**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_text_properties)\***
+Tipo: **[ **DWRITE \_ SHAPING \_ TEXT \_ PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_text_properties)\***
 
-Puntatore a una matrice di strutture che contiene le proprietà di shaping per ogni carattere. Questa struttura viene restituita da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Puntatore a una matrice di strutture che contiene le proprietà di data shaping per ogni carattere. Questa struttura viene restituita [**da GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
 
 </dd> <dt>
 
 *textLength* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
 Lunghezza del testo di *textString*.
 
 </dd> <dt>
 
-*GlyphIndices* \[ in\]
+*glifoIndices* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* UInt16**
+Tipo: **const UINT16 \***
 
 Matrice di indici di glifi restituiti da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
 
 </dd> <dt>
 
-*glyphProps* \[ in\]
+*glyphProps* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**DWrite \_ shaping \_ Glyph \_ Properties**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) \***
+Tipo: **const [**DWRITE \_ SHAPING \_ \_ GLYPH PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) \***
 
-Puntatore a una matrice di strutture che contengono le proprietà di shaping per ogni glifo restituito da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Puntatore a una matrice di strutture che contengono proprietà di data shaping per ogni glifo restituito da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
 </dd> <dt>
 
 *glyphCount* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
-Numero di glifi restituiti da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Numero di glifi restituiti da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
 </dd> <dt>
 
-*fontFace* \[ in\]
+*fontFace* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface)\***
 
-Puntatore al tipo di carattere che rappresenta l'origine dei glifi di output.
+Puntatore al tipo di carattere che rappresenta l'origine per i glifi di output.
 
 </dd> <dt>
 
 *fontEmSize* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Dimensioni logiche del carattere in DIP.
+Dimensione logica del carattere in DIP.
 
 </dd> <dt>
 
 *pixelsPerDip* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Il numero di pixel fisici per DIP.
+Numero di pixel fisici per DIP.
 
 </dd> <dt>
 
 *trasformazione* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const [**DWrite \_ Matrix**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Trasformazione facoltativa applicata ai glifi e alle rispettive posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e da *pixelsPerDip*.
+Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e *pixelPerDip*.
 
 </dd> <dt>
 
 *useGdiNatural* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Se è impostato su **false**, le metriche corrispondono a quelle del testo con aliasing GDI. Quando è impostato su **true**, le metriche corrispondono a quelle del testo misurato da GDI usando un tipo di carattere creato con la **\_ \_ qualità naturale CLEARTYPE**.
+Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo con alias GDI. Se impostato su **TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY**.
 
 </dd> <dt>
 
  *isSideways* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Flag booleano impostato su **true** se il testo deve essere disegnato verticalmente.
+Flag booleano impostato su **TRUE** se il testo deve essere disegnato verticalmente.
 
 </dd> <dt>
 
  *isRightToLeft* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Flag booleano impostato su **true** per il testo da destra a sinistra.
+Flag booleano impostato su **TRUE per** il testo da destra a sinistra.
 
 </dd> <dt>
 
- *scriptAnalysis* \[ in\]
+ *scriptAnalysis* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**DWrite \_ script \_ Analysis**](/windows/win32/api/dwrite/ns-dwrite-dwrite_script_analysis) \***
+Tipo: **const [**DWRITE \_ SCRIPT \_ ANALYSIS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_script_analysis) \***
 
-Puntatore a un risultato dell'analisi di script da una chiamata [**AnalyzeScript**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-analyzescript) .
+Puntatore a un risultato dell'analisi script da [**una chiamata a AnalyzeScript.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-analyzescript)
 
 </dd> <dt>
 
@@ -202,52 +202,52 @@ Puntatore a un risultato dell'analisi di script da una chiamata [**AnalyzeScript
 
 Tipo: **const \* WCHAR**
 
-Matrice di caratteri contenente le impostazioni locali da utilizzare per la selezione dei glifi. Ad esempio, lo stesso carattere può essere mappato a glifi diversi per ja-JP rispetto a ZH-CHS. Se è **null**, viene utilizzato il mapping predefinito basato sullo script.
+Matrice di caratteri contenente le impostazioni locali da utilizzare per la selezione dei glifi. Ad esempio, lo stesso carattere può essere mappato a glifi diversi per ja-jp e zh-chs. Se è **NULL,** viene usato il mapping predefinito basato sullo script.
 
 </dd> <dt>
 
- *funzionalità* \[ di in, facoltativo\]
+ *funzionalità* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **\* \* const [**DWrite le \_ \_ funzionalità tipografiche**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features)**
+Tipo: **const [**DWRITE \_ TYPOGRAPHIC \_ FEATURES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features) \* \***
 
-Matrice di puntatori ai set di funzionalità tipografiche da utilizzare in ogni intervallo di funzionalità.
+Matrice di puntatori ai set di funzionalità tipografiche da usare in ogni intervallo di funzionalità.
 
 </dd> <dt>
 
  *featureRangeLengths* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const \* UInt32**
+Tipo: **const UINT32 \***
 
-Lunghezza di ogni intervallo di funzioni, in caratteri. La somma di tutte le lunghezze deve essere uguale a *TextLength*.
+Lunghezza di ogni intervallo di funzionalità, in caratteri. La somma di tutte le lunghezze deve essere uguale a *textLength*.
 
 </dd> <dt>
 
  *featureRanges* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
-Numero di intervalli di funzioni.
-
-</dd> <dt>
-
- *glyphAdvances* \[ out\]
-</dt> <dd>
-
-Tipo: **float \***
-
-Quando termina, questo metodo contiene la larghezza di avanzamento di ogni glifo.
+Numero di intervalli di funzionalità.
 
 </dd> <dt>
 
- *GlyphOffsets* \[ out\]
+ *glifoAdvances* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ offset glifo DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_offset)\***
+Tipo: **\* FLOAT**
 
-Quando termina, questo metodo contiene l'offset dell'origine di ogni glifo.
+Quando questo metodo viene restituito, contiene la larghezza di avanzamento di ogni glifo.
+
+</dd> <dt>
+
+ *glyphOffsets* \[ Cambio\]
+</dt> <dd>
+
+Tipo: **[ **DWRITE \_ GLYPH \_ OFFSET**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_offset)\***
+
+Quando questo metodo viene restituito, contiene l'offset dell'origine di ogni glifo.
 
 </dd> </dl>
 
@@ -255,7 +255,7 @@ Quando termina, questo metodo contiene l'offset dell'origine di ogni glifo.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -263,7 +263,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>DWrite. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

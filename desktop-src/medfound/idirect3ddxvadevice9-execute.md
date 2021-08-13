@@ -1,7 +1,7 @@
 ---
-description: Esegue un'operazione di decodifica DXVA (DirectX Video Acceleration).
+description: Esegue un'operazione di decodifica DirectX Video Acceleration (DXVA).
 ms.assetid: cb87a087-ca53-470e-ab46-f4022cfd7869
-title: 'Metodo IDirect3DDXVADevice9:: Execute (DXVA. h)'
+title: Metodo IDirect3DDXVADevice9::Execute (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: d624146c32b5f7eaeb4e680cf03878e8d065ee5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac00e5f78e4281523c006216f3173745ba26bc6429ddfdd9d74c9abbe616b89a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465961"
 ---
-# <a name="idirect3ddxvadevice9execute-method"></a>Metodo IDirect3DDXVADevice9:: Execute
+# <a name="idirect3ddxvadevice9execute-method"></a>Metodo IDirect3DDXVADevice9::Execute
 
-Esegue un'operazione di decodifica DXVA (DirectX Video Acceleration).
+Esegue un'operazione di decodifica DirectX Video Acceleration (DXVA).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT Execute(
 *FunctionNum* 
 </dt> <dd>
 
-**Valore DWORD** che contiene uno o più numeri di funzione DXVA. Per informazioni dettagliate, vedere la [specifica DXVA 1,0](/windows-hardware/drivers/display/directx-video-acceleration).
+Valore **DWORD che** contiene uno o più numeri di funzione DXVA. Per informazioni dettagliate, vedere la [specifica DXVA 1.0.](/windows-hardware/drivers/display/directx-video-acceleration)
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Puntatore a un buffer che contiene i dati di input per l'operazione di decodific
 *InputSize* 
 </dt> <dd>
 
-Dimensioni in byte dei dati di input.
+Dimensione in byte dei dati di input.
 
 </dd> <dt>
 
@@ -76,27 +76,27 @@ Puntatore a un buffer in cui l'acceleratore video scrive i dati di output.
 *OutputSize* 
 </dt> <dd>
 
-Dimensioni in byte del buffer *outputData* .
+Dimensioni del buffer *OutputData,* in byte.
 
 </dd> <dt>
 
 *NumBuffers* 
 </dt> <dd>
 
-Numero di elementi nella matrice *pBufferInfo* .
+Numero di elementi nella matrice *pBufferInfo.*
 
 </dd> <dt>
 
 *pBufferInfo* 
 </dt> <dd>
 
-Puntatore a una matrice di strutture [**DXVABufferInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo) .
+Puntatore a una matrice di [**strutture DXVABufferInfo.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -104,9 +104,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                    |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

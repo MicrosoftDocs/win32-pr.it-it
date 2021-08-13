@@ -1,17 +1,17 @@
 ---
-description: System.Music.AlbumArtist
+description: Sistema. Musica. AlbumArtist
 ms.assetid: 6b951418-9076-42ca-9ed5-4e260e8c19bc
-title: System.Music.AlbumArtist
+title: Sistema. Musica. AlbumArtist
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2108b9e9f958d7778dc369e1ee512eaa2faa644
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af4ecceb41b20843942b01323fe01c1aeb559dfec38d9e1fc10938a0ebae4cea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724508"
 ---
-# <a name="systemmusicalbumartist"></a>System.Music.AlbumArtist
+# <a name="systemmusicalbumartist"></a>Sistema. Musica. AlbumArtist
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

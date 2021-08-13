@@ -1,53 +1,53 @@
 ---
-description: "È possibile utilizzare un agente di raccolta input penna (InkCollector, InkOverlay o InkPicture) per accedere direttamente al riconoscitore di movimento Microsoft predefinito. Per utilizzare un agente di raccolta input penna per accedere al riconoscimento movimento: impostare la proprietà CollectionMode dell'agente di raccolta input penna su InkAndGesture mode o GestureOnly mode. inkOverlay. CollectionMode = CollectionMode. GestureOnly; Scegliere il movimento che si desidera supportare. inkOverlay. SetGestureStatus (ApplicationGesture. AllGestures, true); implementare un gestore eventi che riceve le notifiche di movimento. Nel gestore eventi è necessario implementare l'azione corrispondente a ogni evento ricevuto. Nota la modalità mista supporta solo movimenti a tratto singolo. La modalità movimento supporta più movimenti Stroke. inkOverlay. Gesture + = new InkCollectorGestureEventHandler ( \\_ gesto InkOverlay); in modalità InkAndGesture ogni singolo tratto viene inviato al riconoscitore di movimento Microsoft. Se viene riconosciuta come un movimento abilitato, viene inviata una notifica degli eventi. Se l'applicazione accetta la notifica degli eventi, il tratto verrà cancellato. Se l'applicazione non accetta la notifica o se il tratto non è riconosciuto come un movimento, il tratto viene archiviato nell'oggetto input penna. In modalità GestureOnly, i tratti sono delimitati da timeout prima e dopo i tratti. I tratti raccolti nel timeout vengono inviati al riconoscimento. Se i tratti sono riconosciuti come un movimento abilitato, viene inviata una notifica degli eventi. L'applicazione può accettare o rifiutare l'evento, effettuando o meno l'azione corrispondente. In modalità solo movimento, i tratti non vengono mai salvati nell'oggetto input penna."
+description: "Puoi usare un agente di raccolta input penna (InkCollector, InkOverlay o InkPicture) per accedere direttamente al riconoscimento dei movimenti Microsoft predefinito. Per usare un agente di raccolta input penna per accedere al riconoscimento del movimento: impostare la proprietà CollectionMode dell'agente di raccolta input penna sulla modalità InkAndGesture o sulla modalità GestureOnly.inkOverlay.CollectionMode = CollectionMode.GestureOnly; Scegliere il movimento che si vuole supportare.inkOverlay.SetGestureStatus(ApplicationGesture.AllGestures, true);Implementare un gestore eventi che riceve le notifiche dei movimenti. Nel gestore eventi è necessario implementare l'azione corrispondente a ogni evento ricevuto. Nota La modalità mista supporta solo movimenti a tratto singolo. La modalità movimento supporta più movimenti di tratto. inkOverlay.Gesture += new InkCollectorGestureEventHandler(inkOverlay \\_ Gesture);In inkAndGesture mode,each individual stroke is sent to the Microsoft gesture recognizer. Se viene riconosciuto come movimento abilitato, viene inviata una notifica degli eventi. Se l'applicazione accetta la notifica degli eventi, il tratto viene cancellato. Se l'applicazione non accetta la notifica o se il tratto non viene riconosciuto come movimento, il tratto viene archiviato nell'oggetto Ink. In modalità GestureOnly i tratti sono delimitati da timeout prima e dopo i tratti. I tratti raccolti entro il timeout vengono inviati al riconoscitore. Se i tratti vengono riconosciuti come movimenti abilitati, viene inviata una notifica degli eventi. L'applicazione può accettare o rifiutare l'evento, con effetti o meno sull'azione corrispondente. In modalità solo movimento, i tratti non vengono mai salvati nell'oggetto Ink."
 ms.assetid: 3f5f00a3-1f2c-4fa2-9738-bc5fb56e2208
-title: Uso del riconoscimento di Microsoft gesture
+title: Uso di Microsoft Gesture Recognizer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80504e8b32c0b9596936bb4f07d029cd4ea8ddbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08d7b27ae30e0bba98ee2c9db57cc0da2d6491932d0137cc5cd4d2b6f86420ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715178"
 ---
-# <a name="using-the-microsoft-gesture-recognizer-only"></a>Uso del riconoscimento di Microsoft gesture
+# <a name="using-the-microsoft-gesture-recognizer-only"></a>Uso di Microsoft Gesture Recognizer
 
-È possibile utilizzare un agente di raccolta input penna ([**InkCollector**](inkcollector-class.md), [**InkOverlay**](inkoverlay-class.md)o [InkPicture](inkpicture-control-reference.md)) per accedere direttamente al riconoscitore di movimento Microsoft predefinito.
+È possibile usare un agente di raccolta input [**penna (InkCollector,**](inkcollector-class.md) [**InkOverlay**](inkoverlay-class.md)o [InkPicture)](inkpicture-control-reference.md)per accedere direttamente al sistema di riconoscimento dei movimenti Microsoft predefinito.
 
-Per usare un agente di raccolta input penna per accedere al riconoscimento movimento:
+Per usare un agente di raccolta input penna per accedere al riconoscimento movimenti:
 
--   Impostare la proprietà [**CollectionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode) dell'agente di raccolta input penna su modalità **InkAndGesture** o **GestureOnly** .
+-   Impostare la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode) dell'agente di raccolta input penna sulla **modalità InkAndGesture** o **sulla modalità GestureOnly.**
 
 `inkOverlay.CollectionMode = CollectionMode.GestureOnly;`
 
--   Scegliere il movimento che si desidera supportare.
+-   Scegliere il movimento che si vuole supportare.
 
 `inkOverlay.SetGestureStatus(ApplicationGesture.AllGestures, true);`
 
--   Implementare un gestore eventi che riceve le notifiche di movimento. Nel gestore eventi è necessario implementare l'azione corrispondente a ogni evento ricevuto.
+-   Implementare un gestore eventi che riceve le notifiche dei movimenti. Nel gestore eventi è necessario implementare l'azione corrispondente a ogni evento ricevuto.
     > [!Note]  
-    > La modalità mista supporta solo movimenti a tratto singolo. La modalità movimento supporta più movimenti Stroke.
+    > La modalità mista supporta solo movimenti a tratto singolo. La modalità movimento supporta più movimenti di tratto.
 
      
 
 `inkOverlay.Gesture += new InkCollectorGestureEventHandler(inkOverlay_Gesture);`
 
-In modalità **InkAndGesture** ogni singolo tratto viene inviato al riconoscitore di movimento Microsoft. Se viene riconosciuta come un movimento abilitato, viene inviata una notifica degli eventi. Se l'applicazione accetta la notifica degli eventi, il tratto verrà cancellato. Se l'applicazione non accetta la notifica o se il tratto non è riconosciuto come un movimento, il tratto viene archiviato nell'oggetto [**input penna**](inkdisp-class.md) .
+In **modalità InkAndGesture** ogni singolo tratto viene inviato al sistema di riconoscimento movimenti Microsoft. Se viene riconosciuto come movimento abilitato, viene inviata una notifica degli eventi. Se l'applicazione accetta la notifica degli eventi, il tratto viene cancellato. Se l'applicazione non accetta la notifica o se il tratto non viene riconosciuto come movimento, il tratto viene archiviato [**nell'oggetto Ink.**](inkdisp-class.md)
 
-In modalità **GestureOnly** , i tratti sono delimitati da timeout prima e dopo i tratti. I tratti raccolti nel timeout vengono inviati al riconoscimento. Se i tratti sono riconosciuti come un movimento abilitato, viene inviata una notifica degli eventi. L'applicazione può accettare o rifiutare l'evento, effettuando o meno l'azione corrispondente. In modalità solo movimento, i tratti non vengono mai salvati nell'oggetto [**input penna**](inkdisp-class.md) .
+In **modalità GestureOnly** i tratti sono delimitati da timeout prima e dopo i tratti. I tratti raccolti entro il timeout vengono inviati al riconoscitore. Se i tratti vengono riconosciuti come movimenti abilitati, viene inviata una notifica degli eventi. L'applicazione può accettare o rifiutare l'evento, con effetti o meno sull'azione corrispondente. In modalità solo movimento, i tratti non vengono mai salvati [**nell'oggetto Ink.**](inkdisp-class.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Microsoft. Ink. InkCollector. CollectionMode](/previous-versions/ms836497(v=msdn.10))
+[Microsoft.Ink.InkCollector.CollectionMode](/previous-versions/ms836497(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. Ink. InkOverlay. CollectionMode](/previous-versions/ms833092(v=msdn.10))
+[Microsoft.Ink.InkOverlay.CollectionMode](/previous-versions/ms833092(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. Ink. InkPicture. CollectionMode](/previous-versions/ms582182(v=vs.100))
+[Microsoft.Ink.InkPicture.CollectionMode](/previous-versions/ms582182(v=vs.100))
 </dt> </dl>
 
  

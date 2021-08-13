@@ -1,28 +1,28 @@
 ---
-description: Pagina di navigazione della sezione di riferimento Windows Sockets (Winsock).
+description: Windows Pagina di spostamento della sezione di riferimento di Sockets (Winsock).
 ms.assetid: baae2bf9-f505-4365-b60e-e3247a0218c8
-title: Riferimento Winsock
+title: Informazioni di riferimento su Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef3d681d639c443182ae6d6b612dd4e2b27508b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86d86e33b7399bddca65e1c50675e0a50d2c9d096be1d2d2f0f0cde4f2279b4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558873"
 ---
-# <a name="winsock-reference"></a>Riferimento Winsock
+# <a name="winsock-reference"></a>Informazioni di riferimento su Winsock
 
-Il riferimento Winsock è suddiviso nelle sezioni seguenti:
+Il riferimento a Winsock è suddiviso nelle sezioni seguenti:
 
 -   [**Opzioni socket**](socket-options.md)
 -   [**IOCTL Winsock**](winsock-ioctls.md)
--   [Allegati Winsock](winsock-annexes.md)
+-   [Allegati winsock](winsock-annexes.md)
 -   [Enumerazioni Winsock](winsock-enumerations.md)
--   [Funzioni Winsock](winsock-functions.md)
--   [Strutture Winsock](winsock-structures.md)
--   [SPI di Winsock](winsock-spi.md)
--   [Codici di errore di Windows Sockets](windows-sockets-error-codes-2.md)
+-   [Funzioni di Winsock](winsock-functions.md)
+-   [Strutture di Winsock](winsock-structures.md)
+-   [Winsock SPI](winsock-spi.md)
+-   [Windows Codici di errore dei socket](windows-sockets-error-codes-2.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

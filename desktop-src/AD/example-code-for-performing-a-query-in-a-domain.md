@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per la ricerca di gruppi in un dominio
-description: Questo argomento include un esempio di codice che esegue la ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo che hanno il tipo di gruppo specificato.
+description: Questo argomento include un esempio di codice che cerca nel sottoalbero del contenitore specificato tutti gli oggetti gruppo con il tipo di gruppo specificato.
 ms.assetid: 07b27324-4f59-42c2-a42f-8c2cef138928
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, ricerca di gruppi in un dominio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59cb0e6d8e5aa6eb6a45d582b23fe0ee38f3d7dc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e15d2e0957032202e2080f85c71631daeddec70817ec09eb8432415aba47b3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693340"
 ---
 # <a name="example-code-for-searching-for-groups-in-a-domain"></a>Codice di esempio per la ricerca di gruppi in un dominio
 
-Nell'esempio di codice C/C++ riportato di seguito viene eseguita la ricerca nel sottoalbero del contenitore specificato di tutti gli oggetti gruppo con il tipo di gruppo specificato.
+Nell'esempio di codice C/C++ seguente viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo con il tipo di gruppo specificato.
 
 
 ```C++
@@ -115,7 +115,7 @@ HRESULT PrintGroupsInContainer(LPCWSTR pwszContainerDN, DWORD type)
 
 
 
-Nell'esempio di codice seguente Visual Basic viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo che hanno il tipo di gruppo specificato.
+Nell'Visual Basic di codice seguente viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo con il tipo di gruppo specificato.
 
 
 ```VB
@@ -164,9 +164,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMPDVD back
-description: Il metodo back modifica la visualizzazione da un sottomenu al relativo menu padre.
+title: Metodo indietro IWMPDVD
+description: Il metodo Indietro modifica la visualizzazione da un sottomenu al menu padre.
 ms.assetid: 81d033d4-f570-44a5-898a-e419101c04fa
 keywords:
-- Back metodo Windows Media Player
-- Metodo back Media Player Windows, interfaccia IWMPDVD
-- Interfaccia IWMPDVD Windows Media Player, metodo back
+- Metodo back Windows Media Player
+- metodo back Windows Media Player, interfaccia IWMPDVD
+- Interfaccia IWMPDVD Windows Media Player , metodo back
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cd31cd6365843a6905760c4447ea679e15e70ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 483e8e36f8ac5e539925306a53c04d144fb6de1281878840fc598c96c814f002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414561"
 ---
-# <a name="iwmpdvdback-method"></a>Metodo IWMPDVD:: back
+# <a name="iwmpdvdback-method"></a>Metodo IWMPDVD::back
 
-Il metodo **back** modifica la visualizzazione da un sottomenu al relativo menu padre.
+Il **metodo Indietro** modifica la visualizzazione da un sottomenu al menu padre.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni DVD viene creato in modo diverso. Alcuni DVD vengono creati in modo che il `back` metodo sia disponibile dal menu radice, ma quando viene richiamato, non eseguirà alcuna operazione.
+Ogni DVD viene creato in modo diverso. Alcuni DVD vengono creati in modo che il metodo sia disponibile dal menu radice, ma quando viene richiamato, non `back` esegue alcuna operazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Ogni DVD viene creato in modo diverso. Alcuni DVD vengono creati in modo che il 
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

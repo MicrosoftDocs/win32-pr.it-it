@@ -1,7 +1,7 @@
 ---
 description: Imposta le informazioni sul server proxy.
 ms.assetid: 279d0557-2718-4c50-b84c-cc7c8def57a6
-title: 'Metodo IWinHttpRequest:: seproxy'
+title: Metodo IWinHttpRequest::SetProxy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 7af3c7c33b17e14c3adbdd70f3d2031e7438747a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb85466da6b7492d04bd2e69f4cd51c0c390e9595df13af8d7e6768596771822
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562596"
 ---
-# <a name="iwinhttprequestsetproxy-method"></a>Metodo IWinHttpRequest:: seproxy
+# <a name="iwinhttprequestsetproxy-method"></a>Metodo IWinHttpRequest::SetProxy
 
-Il metodo **seproxy** imposta le informazioni sul server proxy.
+Il **metodo SetProxy** imposta le informazioni sul server proxy.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT SetProxy(
 
 <dl> <dt>
 
-*ProxySetting* \[ in\]
+*Impostazione proxy* \[ Pollici\]
 </dt> <dd>
 
 Flag che controllano questo metodo. Può essere uno dei valori seguenti.
@@ -51,10 +51,10 @@ Flag che controllano questo metodo. Può essere uno dei valori seguenti.
 
 | Valore                                                                                                           | Significato                                                                                                                                                                                                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>\_ \_ impostazione predefinita HTTPREQUEST PROXYSETTING</dt> </dl>   | Impostazione predefinita del proxy. Equivalente a **HTTPREQUEST \_ PROXYSETTING \_ preconfig**.<br/>                                                                                                                                                                                                                                                             |
-| <dl> <dt>preconfigurazione di HTTPREQUEST \_ PROXYSETTING \_</dt> </dl> | Indica che le impostazioni proxy devono essere ottenute dal registro di sistema. Si presuppone che [Proxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md) sia stato eseguito. Se Proxycfg.exe non è stato eseguito e viene specificato **HttpRequest \_ PROXYSETTING \_ preconfig** , il comportamento è equivalente a **HttpRequest \_ PROXYSETTING \_ Direct**.<br/> |
-| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ Direct</dt> </dl>    | Indica che è necessario accedere direttamente a tutti i server HTTP e HTTPS. Usare questo comando se non è presente alcun server proxy.<br/>                                                                                                                                                                                                                       |
-| <dl> <dt>\_proxy PROXYSETTING \_ HTTPREQUEST</dt> </dl>     | Quando si specifica il **\_ \_ proxy HTTPREQUEST PROXYSETTING** , *varProxyServer* deve essere impostato su una stringa del server proxy e *varBypassList* deve essere impostato su una stringa di elenco di bypass di dominio. Questa configurazione proxy si applica solo all'istanza corrente dell'oggetto [**WinHttpRequest**](winhttprequest.md) .<br/>                                    |
+| <dl> <dt>IMPOSTAZIONE PROXY \_ HTTPREQUEST \_ PREDEFINITA</dt> </dl>   | Impostazione proxy predefinita. Equivale a **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG**.<br/>                                                                                                                                                                                                                                                             |
+| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG</dt> </dl> | Indica che le impostazioni del proxy devono essere ottenute dal Registro di sistema. In questo modo si [ presuppone cheProxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md) sia stato eseguito. Se Proxycfg.exe non è stato eseguito ed è specificato **HTTPREQUEST \_ PROXYSETTING \_ PRECONFIG,** il comportamento è equivalente a **HTTPREQUEST \_ PROXYSETTING \_ DIRECT**.<br/> |
+| <dl> <dt>PROXY \_ HTTPREQUESTSETTING \_ DIRETTO</dt> </dl>    | Indica che è necessario accedere direttamente a tutti i server HTTP e HTTPS. Usare questo comando se non è presente alcun server proxy.<br/>                                                                                                                                                                                                                       |
+| <dl> <dt>HTTPREQUEST \_ PROXYSETTING \_ PROXY</dt> </dl>     | Quando **si specifica \_ HTTPREQUEST PROXYSETTING \_ PROXY,** *varProxyServer* deve essere impostato su una stringa del server proxy e *varBypassList* deve essere impostato su una stringa dell'elenco di bypass del dominio. Questa configurazione del proxy si applica solo all'istanza corrente [**dell'oggetto WinHttpRequest.**](winhttprequest.md)<br/>                                    |
 
 
 
@@ -65,35 +65,35 @@ Flag che controllano questo metodo. Può essere uno dei valori seguenti.
 *ProxyServer* \[ in, facoltativo\]
 </dt> <dd>
 
-Impostare su una stringa del server proxy quando *ProxySetting* è uguale a **HTTPREQUEST \_ ProxySetting \_ proxy**.
+Impostare su una stringa del server proxy quando *ProxySetting* è uguale a **HTTPREQUEST \_ PROXYSETTING \_ PROXY**.
 
 </dd> <dt>
 
-Sottopaginazione *ignorata* \[ in, facoltativo\]
+*BypassList* \[ in, facoltativo\]
 </dt> <dd>
 
-Impostare su una stringa di elenco di bypass del dominio quando *ProxySetting* è uguale a **HTTPREQUEST \_ ProxySetting \_ proxy**.
+Impostare su una stringa dell'elenco di bypass del dominio quando *ProxySetting* è uguale a **HTTPREQUEST \_ PROXYSETTING \_ PROXY**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Consente all'applicazione chiamante di specificare l'utilizzo di informazioni proxy predefinite (configurate dallo strumento di configurazione del proxy) o di eseguire l'override [Proxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md). Questo metodo deve essere chiamato prima di chiamare il metodo [**Send**](iwinhttprequest-send.md) . Se questo metodo viene chiamato dopo il metodo [**Send**](iwinhttprequest-send.md) , non ha alcun effetto.
+Consente all'applicazione chiamante di specificare l'uso di informazioni proxy predefinite (configurate dallo strumento di configurazione del proxy) o di eseguire l'override [Proxycfg.exe](proxycfg-exe--a-proxy-configuration-tool.md). Questo metodo deve essere chiamato prima di chiamare il [**metodo Send.**](iwinhttprequest-send.md) Se questo metodo viene chiamato dopo il [**metodo Send,**](iwinhttprequest-send.md) non ha alcun effetto.
 
-[**IWinHttpRequest**](iwinhttprequest-interface.md) passa questi parametri ai servizi HTTP di Microsoft Windows (WinHTTP).
+[**IWinHttpRequest**](iwinhttprequest-interface.md) passa questi parametri a Microsoft Windows servizi HTTP (WinHTTP).
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come impostare le impostazioni proxy per un server proxy specifico, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Questo esempio deve essere eseguito da un prompt dei comandi. Queste impostazioni proxy funzionano solo se si dispone di un server proxy denominato " \_ server proxy" che utilizza la porta 80 e se il computer è in grado di ignorare il server proxy quando il nome host termina con ". Microsoft.com".
+Nell'esempio seguente viene illustrato come impostare le impostazioni proxy per un server proxy specifico, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Questo esempio deve essere eseguito da un prompt dei comandi. Queste impostazioni proxy funzionano solo se si dispone di un server proxy denominato "server proxy" che usa la porta 80 e il computer può ignorare il server proxy quando il nome host termina con \_ ".microsoft.com".
 
 
 ```C++
@@ -199,7 +199,7 @@ int main()
 
 
 
-Nell'esempio di script seguente viene illustrato come impostare le impostazioni proxy per un server proxy specifico, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Queste impostazioni proxy funzionano solo se si dispone di un server proxy denominato " \_ server proxy" che utilizza la porta 80 e se il computer è in grado di ignorare il server proxy quando il nome host termina con ". Microsoft.com".
+L'esempio di scripting seguente illustra come impostare le impostazioni proxy per un server proxy specifico, aprire una connessione HTTP, inviare una richiesta HTTP e leggere il testo della risposta. Queste impostazioni proxy funzionano solo se si dispone di un server proxy denominato "server proxy" che usa la porta 80 e il computer può ignorare il server proxy quando il nome host termina con \_ ".microsoft.com".
 
 
 ```JScript
@@ -236,11 +236,11 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -255,7 +255,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

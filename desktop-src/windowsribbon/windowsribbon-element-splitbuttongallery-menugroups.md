@@ -1,9 +1,9 @@
 ---
-title: Proprietà SplitButtonGallery. MenuGroups
+title: SplitButtonGallery.MenuGroups - proprietà
 description: Rappresenta un contenitore per un set di voci di menu a discesa in un controllo SplitButtonGallery.
 ms.assetid: e30fcf9a-488b-423a-8bc4-fccbc78f74de
 keywords:
-- Barra multifunzione di Windows SplitButtonGallery. MenuGroups
+- Proprietà SplitButtonGallery.MenuGroups Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72176e7d7e79b076c3a7cf4d1fd847aa4f4e0561
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 931a66ffca192a1655f3eeffc405c4c02c8e298c28fe9cb9d0d8c6612e29d793
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441720"
 ---
-# <a name="splitbuttongallerymenugroups-property"></a>Proprietà SplitButtonGallery. MenuGroups
+# <a name="splitbuttongallerymenugroups-property"></a>SplitButtonGallery.MenuGroups - proprietà
 
-Rappresenta un contenitore per un set di voci di menu a discesa in un controllo [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Rappresenta un contenitore per un set di voci di menu a discesa in [**un controllo SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <SplitButtonGallery.MenuGroups>
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                         | Descrizione                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -59,13 +59,13 @@ Non ci sono attributi.
 
 Obbligatorio.
 
-Deve essere eseguita esattamente una volta per ogni elemento [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Deve verificarsi esattamente una volta per [**ogni elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per l'elemento **SplitButtonGallery. MenuGroups** .
+Nell'esempio seguente viene illustrato il markup di base per **l'elemento SplitButtonGallery.MenuGroups.**
 
-Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGallery. MenuGroups** .
+Questa sezione di codice illustra la dichiarazione del controllo **SplitButtonGallery.MenuGroups.**
 
 
 ```XML
@@ -98,8 +98,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGalle
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -107,7 +107,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGalle
 
 <dl> <dt>
 
-[Controllo raccolta pulsanti di suddivisione](windowsribbon-controls-splitbuttongallery.md)
+[Controllo Raccolta pulsanti di divisione](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

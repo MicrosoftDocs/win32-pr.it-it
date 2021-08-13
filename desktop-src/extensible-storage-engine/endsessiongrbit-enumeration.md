@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione EndSessionGrbit'
+description: Altre informazioni sull'enumerazione EndSessionGrbit
 title: Enumerazione EndSessionGrbit
 TOCTitle: EndSessionGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EndSessionGrbit
@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c99b9ff6e048297c0297eaa7b7241b23972e1aa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25732e23ff7c20242a7688eaacc0a4836b946e6a363a6369c058ad2ada9c1bb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104524698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454931"
 ---
 # <a name="endsessiongrbit-enumeration"></a>Enumerazione EndSessionGrbit
 
@@ -39,8 +39,8 @@ Opzioni per JetEndSession.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,4 +81,4 @@ public enum EndSessionGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

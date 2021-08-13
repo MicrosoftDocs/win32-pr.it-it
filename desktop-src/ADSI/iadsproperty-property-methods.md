@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsProperty (IADs. h)
+title: Metodi della proprietà IADsProperty (Iads.h)
 description: Leggere e scrivere le proprietà descritte nella tabella seguente.
 ms.assetid: dd348a3c-0386-4fa2-984d-cdea6f09bd72
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsProperty ADSI
+- Metodi della proprietà IADsProperty ADSI
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 233bd5411e1c82956ef745255418a1b176af5900
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bc0e15589b54fc6ca568a385e1a3806d5f0be206eedb6c263546bbd24e81274
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691060"
 ---
-# <a name="iadsproperty-property-methods"></a>Metodi di proprietà IADsProperty
+# <a name="iadsproperty-property-methods"></a>Metodi della proprietà IADsProperty
 
-I metodi di proprietà dell'interfaccia [**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty) leggono e scrivono le proprietà descritte nella tabella seguente. Per ulteriori informazioni sui metodi di proprietà, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty) leggono e scrivono le proprietà descritte nella tabella seguente. Per altre informazioni sui metodi di proprietà, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,10 +52,10 @@ Limite massimo di valori.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -73,17 +73,17 @@ HRESULT put_MaxRange(
 
 </dt> </dl> </dd> <dt>
 
-**MinRange**
+**Intervallo minimo**
 </dt> <dd> <dl>
 
-Limite inferiore dei valori.
+Limite inferiore di valori.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -104,14 +104,14 @@ HRESULT put_MinRange(
 **Multivalore**
 </dt> <dd> <dl>
 
-Indica se la proprietà supporta uno o più valori.
+Indica se la proprietà supporta valori singoli o multipli.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **\_ bool Variant**
+Tipo di dati di scripting: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -129,14 +129,14 @@ HRESULT put_MultiValued(
 
 </dt> </dl> </dd> <dt>
 
-**OID**
+**Oid**
 </dt> <dd> <dl>
 
 Identificatore di oggetto specifico della directory.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -164,7 +164,7 @@ Percorso relativo dell'oggetto sintassi.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -189,7 +189,7 @@ HRESULT put_Syntax(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene esaminato l'attributo **OperatingSystem** di un computer in una rete tramite il provider WinNT.
+Nell'esempio di codice seguente viene esaminato **l'attributo OperatingSystem** di un computer in una rete tramite il provider WinNT.
 
 
 ```VB
@@ -223,7 +223,7 @@ Cleanup:
 
 
 
-Nell'esempio di codice seguente viene esaminato l'attributo **OperatingSystem** di un computer in una rete tramite il provider WinNT. Per brevità, il controllo degli errori viene omesso.
+Nell'esempio di codice seguente viene esaminato **l'attributo OperatingSystem** di un computer in una rete tramite il provider WinNT. Per brevità, il controllo degli errori viene omesso.
 
 
 ```C++
@@ -315,9 +315,9 @@ CoUninitialize();
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsProperty è definito come C8F93DD3-4AE0-11CF-9E73-00AA004A5691<br/>         |
+| IID<br/>                      | IID \_ IADsProperty è definita come C8F93DD3-4AE0-11CF-9E73-00AA004A5691<br/>         |
 
 
 
@@ -328,7 +328,7 @@ CoUninitialize();
 [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 </dt> <dt>
 
-[**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty)
+[**Proprietà IADs**](/windows/desktop/api/Iads/nn-iads-iadsproperty)
 </dt> <dt>
 
 [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)

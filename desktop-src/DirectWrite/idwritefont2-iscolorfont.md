@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteFont2 IsColorFont
-description: Consente di determinare se un percorso di rendering del colore è potenzialmente necessario.
+description: Consente di determinare se un percorso di rendering dei colori è potenzialmente necessario.
 ms.assetid: E21BB773-923E-461B-B966-A186ACD0164A
 keywords:
-- Scrittura diretta metodo IsColorFont
-- Metodo IsColorFont scrittura diretta, interfaccia IDWriteFont2
-- IDWriteFont2 Interface Direct Write, metodo IsColorFont
+- Metodo IsColorFont Direct Write
+- Metodo IsColorFont Direct Write, interfaccia IDWriteFont2
+- Metodo IsColorFont dell'interfaccia IDWriteFont2 Direct Write
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 353499c5e1c00ae37e585ecc6be47e5a2033d795
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 144aded290c7a4121dd785a1844971e3c1b5501b8ae78707d8da5378c44b002a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118650185"
 ---
-# <a name="idwritefont2iscolorfont-method"></a>Metodo IDWriteFont2:: IsColorFont
+# <a name="idwritefont2iscolorfont-method"></a>Metodo IDWriteFont2::IsColorFont
 
-Consente di determinare se un percorso di rendering del colore è potenzialmente necessario.
+Consente di determinare se un percorso di rendering dei colori è potenzialmente necessario.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,9 +42,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Restituisce **true** se il tipo di carattere contiene informazioni sui colori (tabelle colr e CPAL); in caso contrario, **false**.
+Restituisce **TRUE se** il tipo di carattere contiene informazioni sul colore (tabelle COLR e CPAL); in caso **contrario, FALSE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,10 +52,10 @@ Restituisce **true** se il tipo di carattere contiene informazioni sui colori (t
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                     |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                          |
-| Telefono minimo supportato<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e app per Windows Runtime\]<br/> |
-| Libreria<br/>                  | <dl> <dt>DWrite. lib</dt> </dl>   |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                          |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/> |
+| Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 
 

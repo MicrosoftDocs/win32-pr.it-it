@@ -1,33 +1,33 @@
 ---
-description: L'azione RMCCPSearch usa le firme dei file per convalidare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
+description: L'azione RMCCPSearch usa le firme di file per convalidare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
 ms.assetid: d37b2434-86eb-4c6e-b817-77c75dcebbf5
 title: Azione RMCCPSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c273ccb03bb77e0346edf73177d938d6002878a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d18431a6806d055c824bf51331d6390a6f669100aa9a33db9665b9d7b37008c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625900"
 ---
 # <a name="rmccpsearch-action"></a>Azione RMCCPSearch
 
-L'azione RMCCPSearch usa le firme dei file per convalidare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
+L'azione RMCCPSearch usa le firme di file per convalidare che i prodotti idonei siano installati in un sistema prima di eseguire un'installazione dell'aggiornamento.
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
-È necessario creare l'azione RMCCPSearch nella tabella [InstallUISequence](installuisequence-table.md) e nella [tabella InstallExecuteSequence](installexecutesequence-table.md). Il programma di installazione impedisce l'esecuzione di RMCCPSearch nella sequenza InstallExecuteSequence se l'azione è già stata eseguita nella sequenza InstallUISequence.
+È necessario creare l'azione RMCCPSearch nella [tabella InstallUISequence](installuisequence-table.md) e [nella tabella InstallExecuteSequence](installexecutesequence-table.md). Il programma di installazione impedisce l'esecuzione di RMCCPSearch nella sequenza InstallExecuteSequence se l'azione è già stata eseguita nella sequenza InstallUISequence.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
-Nessun messaggio ActionData.
+Non sono presenti messaggi ActionData.
 
 ## <a name="remarks"></a>Commenti
 
-Per l'azione RMCCPSearch è necessario impostare la proprietà dell' [**\_ unità CCP**](ccp-drive.md) sul percorso radice sul [*volume*](v-gly.md) rimovibile con l'installazione di uno dei prodotti idonei.
+L'azione RMCCPSearch richiede che la proprietà [**CCP \_ DRIVE**](ccp-drive.md) sia impostata sul percorso radice del [*volume*](v-gly.md) rimovibile che include l'installazione per uno dei prodotti idonei.
 
-Ogni firma del file nella tabella CCPSearch viene cercata nel percorso a cui fa riferimento la proprietà dell' [**\_ unità CCP**](ccp-drive.md) usando la tabella [DrLocator](drlocator-table.md) . L'assenza della firma dalla tabella delle [firme](signature-table.md) indica una directory. Se viene determinata una firma esistente, l'azione RMCCPSearch viene terminata.
+Ogni firma di file nella tabella CCPSearch viene cercata nel percorso a cui fa riferimento la proprietà [**CCP \_ DRIVE**](ccp-drive.md) usando la [tabella DrLocator.](drlocator-table.md) L'assenza della firma dalla [tabella Signature](signature-table.md) indica una directory. Se si determina l'esistenza di una firma, l'azione RMCCPSearch termina.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

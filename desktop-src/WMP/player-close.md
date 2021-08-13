@@ -1,11 +1,11 @@
 ---
-title: Player. Close (metodo)
-description: Il metodo Close rilascia le risorse di Windows Media Player.
+title: Metodo Player.close
+description: Il metodo close rilascia Windows Media Player risorse.
 ms.assetid: 15bd5a05-dbfa-4bea-90c2-afd9f69631e0
 keywords:
-- Chiudi metodo Windows Media Player
-- Metodo Close Media Player Windows, classe Player
-- Classe Player Windows Media Player, metodo Close
+- Metodo close Windows Media Player
+- Metodo close Windows Media Player , classe Player
+- Classe Player Windows Media Player , metodo close
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: debc2667c42da92b3a2639e0f14c767d2b5b0651
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a29e68aed11b095dff80c8c91c88410f98b9a236bbcadcbff75da0fc0de392fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467881"
 ---
-# <a name="playerclose-method"></a>Player. Close (metodo)
+# <a name="playerclose-method"></a>Metodo Player.close
 
-Il metodo **Close** rilascia le risorse di Windows Media Player.
+Il **metodo close** rilascia Windows Media Player risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,11 +46,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo chiude il file multimediale digitale corrente, non Windows Media Player.
+Questo metodo chiude il file multimediale digitale corrente, non Windows Media Player stesso.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento BUTTON HTML che, quando selezionato, interrompe la riproduzione in Windows Media Player e rilascia le risorse in uso. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio seguente viene creato un elemento BUTTON HTML che, quando selezionato, interrompe la riproduzione Windows Media Player e rilascia le risorse in uso. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -70,7 +70,7 @@ Nell'esempio seguente viene creato un elemento BUTTON HTML che, quando seleziona
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

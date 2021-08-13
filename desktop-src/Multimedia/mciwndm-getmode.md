@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_GETMODE (VFW. h)
-description: Il \_ messaggio MCIWNDM GetMode recupera la modalità operativa corrente di un dispositivo MCI. I dispositivi MCI hanno diverse modalità operative, indicate da costanti. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndGetMode.
+title: MCIWNDM_GETMODE messaggio (Vfw.h)
+description: Il messaggio MCIWNDM \_ GETMODE recupera la modalità operativa corrente di un dispositivo MCI. I dispositivi MCI hanno diverse modalità operative, designate da costanti. È possibile inviare questo messaggio in modo esplicito o usando la macro MCIWndGetMode.
 ms.assetid: cc327281-434e-4047-9e15-c04a10953f47
 keywords:
-- MCIWNDM_GETMODE messaggi multimediali di Windows
+- MCIWNDM_GETMODE di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5daefea2c550a1d0cf807ae03840c38ae8b2567c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 645d7a660df8d22cb2adb70a775d5431eb31dc986b502bb4dbb36b1963ce06f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429271"
 ---
-# <a name="mciwndm_getmode-message"></a>\_Messaggio GETMODE MCIWNDM
+# <a name="mciwndm_getmode-message"></a>Messaggio MCIWNDM \_ GETMODE
 
-Il messaggio **MCIWNDM \_ GetMode** recupera la modalità operativa corrente di un dispositivo MCI. I dispositivi MCI hanno diverse modalità operative, indicate da costanti. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndGetMode**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode) .
+Il **messaggio MCIWNDM \_ GETMODE** recupera la modalità operativa corrente di un dispositivo MCI. I dispositivi MCI hanno diverse modalità operative, designate da costanti. È possibile inviare questo messaggio in modo esplicito o usando la macro [**MCIWndGetMode.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetmode)
 
 
 ```C++
@@ -45,34 +45,34 @@ Dimensione, in byte, del buffer.
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Puntatore al buffer definito dall'applicazione utilizzato per restituire la modalità.
+Puntatore al buffer definito dall'applicazione utilizzato per restituire la modalità .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un Integer che corrisponde alla costante MCI che definisce la modalità.
+Restituisce un intero corrispondente alla costante MCI che definisce la modalità.
 
 ## <a name="remarks"></a>Commenti
 
-Se la stringa con terminazione null che descrive la modalità è più lunga del buffer, viene troncata.
+Se la stringa con terminazione Null che descrive la modalità è più lunga del buffer, viene troncata.
 
-Non tutti i dispositivi possono funzionare in ogni modalità. Ad esempio, il dispositivo MCIAVI è un dispositivo di riproduzione; non supporta la modalità di registrazione. È possibile recuperare le modalità seguenti utilizzando **MCIWNDM \_ GetMode**.
+Non tutti i dispositivi possono funzionare in ogni modalità. Ad esempio, il dispositivo MCIAVI è un dispositivo di riproduzione. non supporta la modalità di registrazione. Le modalità seguenti possono essere recuperate **usando MCIWNDM \_ GETMODE.**
 
 
 
 | Modalità operativa | Costante MCI          |
 |----------------|-----------------------|
-| non pronto      | \_modalità MCI \_ non \_ pronta |
-| apre           | \_modalità MCI \_ aperta       |
-| in pausa         | \_sospensione della modalità MCI \_      |
-| riproduzione in corso        | \_riproduzione in modalità MCI \_       |
-| registrazione      | \_record in modalità MCI \_     |
-| ricerca        | \_ricerca in modalità MCI \_       |
-| Arrestato        | \_arresto modalità \_ MCI       |
+| non pronto      | MODALITÀ MCI \_ \_ NON \_ PRONTA |
+| apre           | MODALITÀ MCI \_ \_ APERTA       |
+| in pausa         | SOSPENSIONE DELLA MODALITÀ MCI \_ \_      |
+| riproduzione in corso        | RIPRODUZIONE IN MODALITÀ MCI \_ \_       |
+| registrazione      | RECORD IN MODALITÀ MCI \_ \_     |
+| ricerca        | MCI \_ MODE \_ SEEK       |
+| Arrestato        | ARRESTO DELLA MODALITÀ MCI \_ \_       |
 
 
 
@@ -86,7 +86,7 @@ Non tutti i dispositivi possono funzionare in ogni modalità. Ad esempio, il dis
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

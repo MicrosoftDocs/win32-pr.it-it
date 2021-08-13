@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETHYPHENATEINFO (RichEdit. h)
+title: EM_SETHYPHENATEINFO messaggio (Richedit.h)
 description: Imposta il modo in cui un controllo Rich Edit esegue la sillabazione.
 ms.assetid: 67126cb8-ab50-49a9-b32f-2245debf2fe3
 keywords:
-- Controlli di Windows Message EM_SETHYPHENATEINFO
+- EM_SETHYPHENATEINFO di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8369d463ae03e9410347ab58a50346625e3de47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5551aace3ab054c1c6fa322242ae06386ff19f5a44775bd6dcc6887d19c65c62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437561"
 ---
-# <a name="em_sethyphenateinfo-message"></a>\_Messaggio SETHYPHENATEINFO em
+# <a name="em_sethyphenateinfo-message"></a>Messaggio EM \_ SETHYPHENATEINFO
 
 Imposta il modo in cui un controllo Rich Edit esegue la sillabazione.
 
@@ -32,21 +32,21 @@ Imposta il modo in cui un controllo Rich Edit esegue la sillabazione.
 *wParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**HYPHENATEINFO**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo) .
+Puntatore a una [**struttura HYPHENATEINFO.**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato, deve essere zero.
+Non usato, deve essere zero.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per abilitare la sillabazione, il client deve chiamare [**em \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md), specificando \_ ADVANCEDTYPOGRAPHY.
+> Per abilitare la sillabazione, il client deve [**chiamare EM \_ SETTYPOGRAPHYOPTIONS,**](em-settypographyoptions.md)specificando TO \_ ADVANCEDTYPOGRAPHY.
 
  
 
@@ -56,9 +56,9 @@ Non utilizzato, deve essere zero.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP1 \[\]<br/>                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP1 \[\]<br/>                                  |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Non utilizzato, deve essere zero.
 
 <dl> <dt>
 
-[**\_GETHYPHENATEINFO em**](em-gethyphenateinfo.md)
+[**EM \_ GETHYPHENATEINFO**](em-gethyphenateinfo.md)
 </dt> </dl>
 
  

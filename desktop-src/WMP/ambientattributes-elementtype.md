@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. elementType
-description: L'attributo elementType Recupera il tipo dell'elemento, ad esempio BUTTON.
+title: AmbientAttributes.elementType
+description: L'attributo elementType recupera il tipo dell'elemento , ad esempio BUTTON.
 ms.assetid: afff5a23-d981-4a60-b709-a5b926ea1fc3
 keywords:
-- Media Player Windows AmbientAttributes. elementType
+- AmbientAttributes.elementType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cac3d4fa0914225d8cda540435b4ddb3a7f0691
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 580f88b92ba86d6546a538f98cd939b177644d32aa284751fe2b5a01b97c2d9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470071"
 ---
-# <a name="ambientattributeselementtype"></a>AmbientAttributes. elementType
+# <a name="ambientattributeselementtype"></a>AmbientAttributes.elementType
 
-L'attributo **elementType** Recupera il tipo dell'elemento, ad esempio Button.
+**L'attributo elementType** recupera il tipo dell'elemento , ad esempio BUTTON.
 
 ``` syntax
         elementID.elementType
@@ -29,7 +29,7 @@ L'attributo **elementType** Recupera il tipo dell'elemento, ad esempio Button.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di sola lettura che indica il nome dell'elemento.
+Questo attributo è una stringa di sola **lettura** che indica il nome dell'elemento.
 
 ## <a name="remarks"></a>Commenti
 
@@ -41,7 +41,7 @@ Questo attributo è utile per determinare il tipo di elemento che ha generato un
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

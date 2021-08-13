@@ -1,6 +1,6 @@
 ---
-title: Funzione MrmCreateResourceIndexerFromPreviousPriFile (MrmResourceIndexer. h)
-description: Crea un indicizzatore di risorse da un file PRI creato con una chiamata precedente a MrmCreateResourceFile. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere API PRI (Package Resource Indexing) e sistemi di compilazione personalizzati.
+title: Funzione MrmCreateResourceIndexerFromPreviousPriFile (MrmResourceIndexer.h)
+description: Crea un indicizzatore di risorse da un file PRI creato con una chiamata precedente a MrmCreateResourceFile. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti (PRI) e sistemi di compilazione personalizzati.
 ms.assetid: 8B3743EF-1A27-4B70-9577-8549B91DBC1E
 keywords:
 - Menu della funzione MrmCreateResourceIndexerFromPreviousPriFile e altre risorse
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be08170dc8ae25db34492273e7c612352d5e0530
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e820ce2dee747165720e0e47388ec6e66104340dec77bf9617569b2b0a797d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733671"
 ---
-# <a name="mrmcreateresourceindexerfrompreviousprifile-function"></a>MrmCreateResourceIndexerFromPreviousPriFile (funzione)
+# <a name="mrmcreateresourceindexerfrompreviousprifile-function"></a>Funzione MrmCreateResourceIndexerFromPreviousPriFile
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Crea un indicizzatore di risorse da un file PRI creato con una chiamata precedente a [**MrmCreateResourceFile**](mrmcreateresourcefile.md). Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Crea un indicizzatore di risorse da un file PRI creato con una chiamata precedente a [**MrmCreateResourceFile.**](mrmcreateresourcefile.md) Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,16 +46,16 @@ HRESULT HRESULT MrmCreateResourceIndexerFromPreviousPriFile(
 
 <dl> <dt>
 
-*projectRoot* \[ in\]
+*projectRoot* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-La radice del progetto dell'app UWP per cui verranno generati i file PRI. In altre parole, il percorso dei file di risorse dell'app. Questa impostazione viene specificata in modo che sia possibile specificare i percorsi relativi a tale radice nelle chiamate API successive allo stesso indicizzatore di risorse.
+Radice del progetto dell'app UWP per cui verranno generati i file PRI. In altre parole, il percorso dei file di risorse dell'app. Specificare questo valore in modo da poter specificare i percorsi relativi a tale radice nelle chiamate API successive allo stesso indicizzatore di risorse.
 
 </dd> <dt>
 
-*platformVersion* \[ in\]
+*platformVersion* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmPlatformVersion**](mrmplatformversion.md)**
@@ -69,23 +69,23 @@ Versione della piattaforma di destinazione per l'indicizzatore di risorse.
 
 Tipo: **PCWSTR**
 
-Elenco di qualificatori di risorse predefiniti. Ad esempio, L "lingua-en-US \_ scale-100 \_ contrasto-standard"
+Elenco di qualificatori di risorse predefiniti. Ad esempio, L"language-en-US \_ scale-100 \_ contrast-standard"
 
 </dd> <dt>
 
-*priFile* \[ in\]
+*priFile* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-Percorso di file completo di un file PRI.
+Percorso completo di un file PRI.
 
 </dd> <dt>
 
-*indicizzatore* \[ in uscita\]
+*indicizzatore* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[**MrmResourceIndexerHandle**](mrmresourceindexerhandle.md) \** _
+Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)\***
 
 Puntatore a un handle dell'indicizzatore di risorse.
 
@@ -93,9 +93,9 @@ Puntatore a un handle dell'indicizzatore di risorse.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,10 +103,10 @@ S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valor
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

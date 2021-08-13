@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_DROPDOWN (winuser. h)
-description: Inviato quando la casella di riepilogo di una casella combinata sta per essere resa visibile. La finestra padre della casella combinata riceve questo codice di notifica tramite il \_ messaggio di comando WM.
+title: CBN_DROPDOWN di notifica (Winuser.h)
+description: Inviato quando la casella di riepilogo di una casella combinata sta per essere resa visibile. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio WM \_ COMMAND.
 ms.assetid: 2ee9bb19-951b-46bb-a90d-1ade92c2d76c
 keywords:
-- Controlli di Windows per il codice di notifica CBN_DROPDOWN
+- CBN_DROPDOWN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 018dac2a17a656c11ac697836390ee64e55875db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 978ac01818f3e9ed7da9f3f1decc7398ab4af32df8f884041bec327640a8014d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438301"
 ---
-# <a name="cbn_dropdown-notification-code"></a>\_Codice di notifica a discesa CBN
+# <a name="cbn_dropdown-notification-code"></a>Codice di notifica A DISCESA CBN \_
 
-Inviato quando la casella di riepilogo di una casella combinata sta per essere resa visibile. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando la casella di riepilogo di una casella combinata sta per essere resa visibile. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_DROPDOWN
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-Questo codice di notifica viene inviato solo se la casella combinata include [**l' \_ elenco a discesa CBS**](combo-box-styles.md) o lo stile [**\_ DropDownList CBS**](combo-box-styles.md) .
+Questo codice di notifica viene inviato solo se la casella combinata ha lo stile [**CBS \_ DROPDOWN**](combo-box-styles.md) o [**CBS \_ DROPDOWNLIST.**](combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo codice di notifica viene inviato solo se la casella combinata include [**
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Questo codice di notifica viene inviato solo se la casella combinata include [**
 **Riferimento**
 </dt> <dt>
 
-[primo piano CBN \_](cbn-closeup.md)
+[CBN \_ CLOSEUP](cbn-closeup.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -88,7 +88,7 @@ Questo codice di notifica viene inviato solo se la casella combinata include [**
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo StartService della classe Msvm_VirtualSystemManagementService : avvia il servizio.'
+description: 'Metodo StartService della classe Msvm_VirtualSystemManagementService: avvia il servizio.'
 ms.assetid: 1a1819de-823e-4e97-9c04-fcaeea2c67d9
 title: Metodo StartService della classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6ebb07240fdd95d98269056eca4eefe691f52077
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5eb8ed4d3d4cbb589efc803c7afa0c14bececf90178ae7705ca9e75e392e464c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426171"
 ---
 # <a name="startservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo StartService della classe Msvm \_ VirtualSystemManagementService
 
@@ -43,7 +43,7 @@ Questo metodo restituisce uno dei valori seguenti:
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -56,7 +56,7 @@ Questo metodo restituisce uno dei valori seguenti:
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -3,9 +3,9 @@ title: Metodo insertItem IWMPPlaylist
 description: Il metodo insertItem inserisce un elemento multimediale in una posizione specificata in una playlist.
 ms.assetid: 6e472f0a-13df-41d9-8e6f-8430d87fe978
 keywords:
-- metodo insertItem Media Player Windows
-- metodo insertItem Windows Media Player, interfaccia IWMPPlaylist
-- Interfaccia IWMPPlaylist Windows Media Player, metodo insertItem
+- Metodo insertItem Windows Media Player
+- Metodo insertItem Windows Media Player, interfaccia IWMPPlaylist
+- Interfaccia IWMPPlaylist Windows Media Player , metodo insertItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1ef167a5f3931f34d4cd6fb91b3d044affb9484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10717c0891443aaa663b748be6a0cb57e04e58b96beb91db6b02b2f6a4b5b621
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464931"
 ---
-# <a name="iwmpplaylistinsertitem-method"></a>Metodo IWMPPlaylist:: insertItem
+# <a name="iwmpplaylistinsertitem-method"></a>Metodo IWMPPlaylist::insertItem
 
-Il metodo **InsertItem** inserisce un elemento multimediale in una posizione specificata in una playlist.
+Il **metodo insertItem** inserisce un elemento multimediale in una posizione specificata in una playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,17 +55,17 @@ Implements IWMPPlaylist.insertItem
 
 <dl> <dt>
 
-*lIndex* \[ in\]
+*lIndex* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che rappresenta l'indice in base zero in corrispondenza del quale verrà inserito l'elemento multimediale nella playlist.
+Oggetto **System.Int32** che rappresenta l'indice in base zero in corrispondenza del quale l'elemento multimediale verrà inserito nella playlist.
 
 </dd> <dt>
 
-*pIWMPMedia* \[ in\]
+*pIWMPMedia* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPMedia** che rappresenta l'elemento multimediale da inserire.
+Interfaccia **WMPLib.IWMPMedia** che rappresenta l'elemento multimediale da inserire.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti gli elementi multimediali dopo l'elemento inserito avranno indici aumentati di uno.
+Tutti gli elementi multimediali dopo l'elemento inserito avranno gli indici aumentati di uno.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,7 +101,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso completo al
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. removeItem (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-removeitem--vb-and-c.md)
+[**IWMPPlaylist.removeItem (VB e C#)**](wmplibiwmpplaylist-iwmpplaylist-removeitem--vb-and-c.md)
 </dt> </dl>
 
  

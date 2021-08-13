@@ -1,27 +1,27 @@
 ---
-description: Formati di immagini non ELABORAte in Windows Vista
+description: Formati di immagine RAW in Windows Vista
 ms.assetid: e28b642c-03c8-4ecc-b5f5-e3911b8003a7
-title: Formati di immagini non ELABORAte in Windows Vista
+title: Formati di immagine RAW in Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c48b4e3ab5b0d373dbc0313267e58177b189538
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88026e85780706ca2bd5f23f5ca43ec49ae614d4c65e42ec19367b01b3f43423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709859"
 ---
-# <a name="raw-image-formats-in-windows-vista"></a>Formati di immagini non ELABORAte in Windows Vista
+# <a name="raw-image-formats-in-windows-vista"></a>Formati di immagine RAW in Windows Vista
 
-Esplora risorse di Windows Vista, raccolta foto di Windows Vista, raccolta foto di Windows Live e Windows 7 Photo Viewer utilizzano Windows Imaging Component (WIC) e pertanto supportano i formati di immagine non ELABORAta quando nel computer sono installati codec appropriati.
+Windows Vista Explorer, Windows Vista Raccolta foto, Window Live Raccolta foto e Windows 7 Visualizzatore foto usano tutti Windows Imaging Component (WIC) e pertanto supportano i formati di immagine RAW quando nel computer sono installati codec appropriati.
 
-Poiché WIC è un'architettura di imaging estensibile, qualsiasi applicazione WIC può utilizzare nuovi formati di immagine non appena vengono installati nuovi codec nel sistema. In questo modo WIC è ideale come soluzione Plug and Play per i formati di immagine non ELABORAti prodotti dalle fotocamere digitali. Tramite WIC, le applicazioni Windows possono ottenere supporto per i nuovi modelli di fotocamera ogni volta che vengono resi disponibili codec aggiornati, idealmente con nuove fotocamere. Gli autori di codec possono supportare questi scenari implementando interfacce WIC comuni a tutti i tipi di immagine, come descritto in dettaglio in questo documento.
+Poiché WIC è un'architettura di creazione di immagini estendibile, qualsiasi applicazione WIC può utilizzare nuovi formati di immagine non appena vengono installati nuovi codec nel sistema. WiC è quindi ideale come soluzione Plug and Play per i formati di immagine RAW prodotti dalle fotocamere digitali. Tramite WIC, Windows applicazioni possono ottenere il supporto per i nuovi modelli di fotocamera ogni volta che vengono resi disponibili codec aggiornati (idealmente in box con nuove fotocamere). Gli autori di codec possono supportare questi scenari implementando interfacce WIC comuni a tutti i tipi di immagine, come descritto più dettagliatamente in questo documento.
 
-Attualmente, la maggior parte delle applicazioni consumer mainstream non ha alcuna conoscenza speciale dei formati di immagine RAW e non espone un'interfaccia utente per la modifica delle impostazioni di elaborazione non ELABORAte.
+Attualmente, la maggior parte delle applicazioni consumer mainstream non ha una conoscenza speciale dei formati di immagine RAW e non espone un'interfaccia utente per modificare le impostazioni di elaborazione RAW.
 
-Tuttavia, per supportare applicazioni di imaging specializzate, gli autori di codec RAW devono implementare anche l'interfaccia [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw) . Questa interfaccia espone funzionalità speciali per le immagini non ELABORAte, ad esempio la possibilità di apportare modifiche di immagine comuni e di elaborare (sviluppare) immagini non ELABORAte in spazi dei colori di colore rosso-verde-blu (RGB) specificati.
+Tuttavia, per supportare applicazioni di creazione di immagini specializzate, gli autori di codec RAW devono implementare anche [**l'interfaccia IWICDevelopRaw.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw) Questa interfaccia espone funzionalità speciali per le immagini RAW, ad esempio la possibilità di apportare modifiche comuni alle immagini ed elaborare (sviluppare) immagini RAW in spazi colori RGB (Red-Green-Blue) specificati.
 
-Molte altre interfacce WIC sono importanti per l'implementazione da autori di codec non ELABORAti. Questi argomenti sono illustrati in modo più dettagliato in questa serie di argomenti.
+Diverse altre interfacce WIC sono importanti per l'implementazione da parte degli autori di codec RAW. Questi argomenti vengono illustrati in modo più dettagliato in questa serie di argomenti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -30,13 +30,13 @@ Molte altre interfacce WIC sono importanti per l'implementazione da autori di co
 **Informazioni concettuali**
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Linee guida per WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
+[Linee guida WIC per i formati di immagine RAW della fotocamera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Come scrivere un CODEC WIC-Enabled](-wic-howtowriteacodec.md)
+[Come scrivere un codec WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

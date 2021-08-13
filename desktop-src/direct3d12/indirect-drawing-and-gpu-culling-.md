@@ -1,41 +1,41 @@
 ---
-title: Disegno indiretto e eliminazione della GPU
-description: Nell'esempio D3D12ExecuteIndirect viene illustrato come utilizzare i comandi indiretti per creare il contenuto. Viene inoltre illustrato come questi comandi possono essere modificati sulla GPU in un compute shader prima che vengano emessi.
+title: Disegno indiretto ed culling GPU
+description: L'esempio D3D12ExecuteIndirect illustra come usare i comandi indiretti per disegnare contenuto. Illustra anche come questi comandi possono essere manipolati nella GPU in uno shader di calcolo prima che siano emessi.
 ms.assetid: 09F90837-D6BF-498E-8018-5C28EDD9BDC3
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b016170fbd3b675d5d5a20c1de87f24b04d4804
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: b1eaab70be1f376856991156fe520919256e8f811c32ead4a5ce937fb4abc185
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119280141"
 ---
-# <a name="indirect-drawing-and-gpu-culling"></a>Disegno indiretto e eliminazione della GPU
+# <a name="indirect-drawing-and-gpu-culling"></a>Disegno indiretto ed culling GPU
 
-Nell'esempio D3D12ExecuteIndirect viene illustrato come utilizzare i comandi indiretti per creare il contenuto. Viene inoltre illustrato come questi comandi possono essere modificati sulla GPU in un compute shader prima che vengano emessi.
+L'esempio D3D12ExecuteIndirect illustra come usare i comandi indiretti per disegnare contenuto. Illustra anche come questi comandi possono essere manipolati nella GPU in uno shader di calcolo prima che siano emessi.
 
 -   [Definire i comandi indiretti](#define-the-indirect-commands)
--   [Creare una firma grafica e una firma radice di calcolo](#create-a-graphics-and-compute-root-signature)
--   [Creare una visualizzazione risorse dello shader (SRV) per compute shader](#create-a-shader-resource-view-srv-for-the-compute-shader)
+-   [Creare una firma radice grafica e di calcolo](#create-a-graphics-and-compute-root-signature)
+-   [Creare una visualizzazione delle risorse shader (SRV) per lo shader di calcolo](#create-a-shader-resource-view-srv-for-the-compute-shader)
 -   [Creare i buffer dei comandi indiretti](#create-the-indirect-command-buffers)
--   [Creare il UAV di calcolo](#create-the-compute-uavs)
--   [Disegno del frame](#drawing-the-frame)
+-   [Creare gli UAV di calcolo](#create-the-compute-uavs)
+-   [Disegno della cornice](#drawing-the-frame)
 -   [Eseguire l'esempio](#run-the-sample)
 -   [Argomenti correlati](#related-topics)
 
-Nell'esempio viene creato un buffer dei comandi che descrive 1024 chiamate di progetto. Ogni chiamata di disegnare esegue il rendering di un triangolo con un colore, una posizione e una velocità casuali. I triangoli hanno un'animazione infinita sullo schermo. In questo esempio sono disponibili due modalità. Nella prima modalità, un compute shader controlla i comandi indiretti e decide se aggiungere o meno tale comando a una visualizzazione di accesso non ordinata (UAV) che descrive i comandi da eseguire. Nella seconda modalità, tutti i comandi vengono eseguiti semplicemente. Premere la barra spaziatrice per passare da una modalità all'altra.
+L'esempio crea un buffer dei comandi che descrive le chiamate di disegno 1024. Ogni chiamata di disegno esegue il rendering di un triangolo con un colore, una posizione e una velocità casuali. I triangoli si animano senza fine sullo schermo. In questo esempio sono disponibili due modalità. Nella prima modalità, uno shader di calcolo controlla i comandi indiretti e decide se aggiungere o meno il comando a una visualizzazione di accesso non ordinata (UAV) che descrive i comandi da eseguire. Nella seconda modalità, tutti i comandi vengono eseguiti semplicemente. Premendo la barra spaziatrice si passa da una modalità all'altra.
 
 ## <a name="define-the-indirect-commands"></a>Definire i comandi indiretti
 
-Si inizia definendo i comandi indiretti che dovrebbero essere simili. In questo esempio i comandi che si desidera eseguire sono:
+Per iniziare, definire l'aspetto dei comandi indiretti. In questo esempio i comandi da eseguire sono:
 
 <dl> 1. Aggiornare la visualizzazione del buffer costante (CBV).  
-2. Creare il triangolo.  
+2. Disegnare il triangolo.  
 </dl>
 
-Questi comandi di disegno sono rappresentati dalla struttura seguente nella definizione della classe **D3D12ExecuteIndirect** . I comandi vengono eseguiti in modo sequenziale nell'ordine in cui sono definiti nella struttura.
+Questi comandi di disegno sono rappresentati dalla struttura seguente nella definizione della classe **D3D12ExecuteIndirect.** I comandi vengono eseguiti in sequenza nell'ordine in cui sono definiti in questa struttura.
 
 ``` syntax
   
@@ -51,14 +51,14 @@ struct IndirectCommand
 
 | Flusso di chiamate                                              | Parametri |
 |--------------------------------------------------------|------------|
-| \_ \_ Indirizzo virtuale GPU D3D12 \_ (semplicemente UInt64)         |            |
-| [**Argomenti di D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_arguments) |            |
+| D3D12 \_ GPU \_ VIRTUAL ADDRESS \_ (semplicemente UINT64)         |            |
+| [**ARGOMENTI DI DISEGNO D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_draw_arguments) |            |
 
 
 
  
 
-Per accompagnare la struttura dei dati, viene creata anche una firma del comando che indica alla GPU come interpretare i dati passati all'API [**ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) . Questa e la maggior parte del codice seguente vengono aggiunte al metodo **LoadAssets** .
+Per accompagnare la struttura dei dati, viene creata anche una firma di comando che indica alla GPU come interpretare i dati passati all'API [**ExecuteIndirect.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) Questo e la maggior parte del codice seguente vengono aggiunti al **metodo LoadAssets.**
 
 ``` syntax
 // Create the command signature used for indirect drawing.
@@ -82,26 +82,26 @@ Per accompagnare la struttura dei dati, viene creata anche una firma del comando
 
 | Flusso di chiamate                                                               | Parametri                                                              |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [**\_Desc D3D12 \_ argomento indiretto \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc) | [**\_Tipo di \_ argomento INdiretto D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_indirect_argument_type) |
-| [**\_Descrizione della \_ firma del comando D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc) |                                                                         |
+| [**D3D12 \_ ARGOMENTO \_ INDIRETTO \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc) | [**TIPO DI ARGOMENTO INDIRETTO D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_indirect_argument_type) |
+| [**D3D12 \_ COMMAND \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_command_signature_desc) |                                                                         |
 | [**CreateCommandSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommandsignature)   |                                                                         |
 
 
 
  
 
-## <a name="create-a-graphics-and-compute-root-signature"></a>Creare una firma grafica e una firma radice di calcolo
+## <a name="create-a-graphics-and-compute-root-signature"></a>Creare una firma radice grafica e di calcolo
 
-Vengono anche create una grafica e una firma radice di calcolo. La firma radice grafica definisce semplicemente un CBV radice. Si noti che viene mappato l'indice di questo parametro radice [**nell' \_ argomento D3D12 indiretto \_ \_ desc**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc) (riportato sopra) quando viene definita la firma del comando. La firma radice di calcolo definisce:
+Si creano anche una grafica e una firma radice di calcolo. La firma radice grafica definisce solo un CBV radice. Si noti che viene eseguito il mapping dell'indice di questo parametro radice in [**D3D12 \_ INDIRECT \_ ARGUMENT \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_indirect_argument_desc) (illustrato in precedenza) quando viene definita la firma del comando. La firma radice di calcolo definisce:
 
 -   Una tabella dei descrittori comune con tre slot (due SRV e un UAV):
-    -   Un SRV espone i buffer costanti al compute shader
-    -   Un SRV espone il buffer dei comandi al compute shader
-    -   Il UAV è il punto in cui compute shader Salva i comandi per i triangoli visibili
+    -   Uno SRV espone i buffer costanti allo shader di calcolo
+    -   Uno SRV espone il buffer dei comandi allo shader di calcolo
+    -   L'UAV è il punto in cui lo shader di calcolo salva i comandi per i triangoli visibili
 -   Quattro costanti radice:
     -   Metà della larghezza di un lato del triangolo
     -   Posizione z dei vertici del triangolo
-    -   Offset +/-x del piano di abbattimento nello spazio omogeneo \[ -1, 1\]
+    -   Offset +/- x del piano di culling nello spazio omogeneo \[ -1,1\]
     -   Numero di comandi indiretti nel buffer dei comandi
 
 ``` syntax
@@ -139,25 +139,25 @@ Vengono anche create una grafica e una firma radice di calcolo. La firma radice 
 
 | Flusso di chiamate                                                             | Parametri                                                            |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**\_Parametro radice \_ CD3DX12**](cd3dx12-root-parameter.md)            | [**\_Visibilità shader D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
-| [**\_Descrizione della \_ firma \_ radice CD3DX12**](cd3dx12-root-signature-desc.md) | [**\_Flag di \_ firma \_ radice D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
+| [**PARAMETRO RADICE CD3DX12 \_ \_**](cd3dx12-root-parameter.md)            | [**VISIBILITÀ DELLO SHADER D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
+| [**CD3DX12 \_ ROOT \_ SIGNATURE \_ DESC**](cd3dx12-root-signature-desc.md) | [**FLAG DI FIRMA RADICE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
 | [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))                                   |                                                                       |
-| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**\_Versione della \_ firma \_ radice D3D**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
+| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIONE DELLA FIRMA RADICE D3D \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
 | [**CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature)       |                                                                       |
-| [**\_Intervallo descrittore CD3DX12 \_**](cd3dx12-descriptor-range.md)        | [**\_Tipo di \_ intervallo descrittore D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
-| [**\_Parametro radice \_ CD3DX12**](cd3dx12-root-parameter.md)            | [**\_Visibilità shader D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
-| [**\_Descrizione della \_ firma \_ radice CD3DX12**](cd3dx12-root-signature-desc.md) | [**\_Flag di \_ firma \_ radice D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
+| [**INTERVALLO DESCRITTORE CD3DX12 \_ \_**](cd3dx12-descriptor-range.md)        | [**TIPO DI INTERVALLO DESCRITTORE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
+| [**PARAMETRO RADICE CD3DX12 \_ \_**](cd3dx12-root-parameter.md)            | [**VISIBILITÀ DELLO SHADER D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
+| [**CD3DX12 \_ ROOT \_ SIGNATURE \_ DESC**](cd3dx12-root-signature-desc.md) | [**FLAG DI FIRMA RADICE D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
 | [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))                                   |                                                                       |
-| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**\_Versione della \_ firma \_ radice D3D**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
+| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSIONE DELLA FIRMA RADICE D3D \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
 | [**CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature)       |                                                                       |
 
 
 
  
 
-## <a name="create-a-shader-resource-view-srv-for-the-compute-shader"></a>Creare una visualizzazione risorse dello shader (SRV) per compute shader
+## <a name="create-a-shader-resource-view-srv-for-the-compute-shader"></a>Creare una visualizzazione delle risorse shader (SRV) per lo shader di calcolo
 
-Dopo aver creato gli oggetti di stato della pipeline, i buffer dei vertici, un depth stencil e i buffer costanti, l'esempio crea quindi una visualizzazione risorse shader (SRV) del buffer costante in modo che compute shader possa accedere ai dati nel buffer costante.
+Dopo aver creato gli oggetti stato della pipeline, i vertex buffer, un depth stencil e i buffer costanti, l'esempio crea quindi una visualizzazione delle risorse shader (SRV) del buffer costante in modo che lo shader di calcolo possa accedere ai dati nel buffer costante.
 
 ``` syntax
 // Create shader resource views (SRV) of the constant buffers for the
@@ -213,7 +213,7 @@ Dopo aver creato gli oggetti di stato della pipeline, i buffer dei vertici, un d
 
 ## <a name="create-the-indirect-command-buffers"></a>Creare i buffer dei comandi indiretti
 
-Si creano quindi i buffer dei comandi indiretti e si definisce il relativo contenuto usando il codice seguente. Si ritraggono gli stessi vertici del triangolo 1024 volte, ma si punta a una posizione del buffer costante diversa con ogni chiamata di progetto.
+Creare quindi i buffer dei comandi indiretti e definirne il contenuto usando il codice seguente. Gli stessi vertici del triangolo vengono tracciati 1024 volte, ma puntano a una posizione del buffer costante diversa con ogni chiamata di disegno.
 
 ``` syntax
        D3D12_GPU_VIRTUAL_ADDRESS gpuAddress = m_constantBuffer->GetGPUVirtualAddress();
@@ -239,13 +239,13 @@ Si creano quindi i buffer dei comandi indiretti e si definisce il relativo conte
 
 | Flusso di chiamate                    | Parametri                                                          |
 |------------------------------|---------------------------------------------------------------------|
-| \_ \_ Indirizzo virtuale GPU \_ D3D12 | [**GetGPUVirtualAddress**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-getgpuvirtualaddress) |
+| INDIRIZZO VIRTUALE GPU D3D12 \_ \_ \_ | [**GetGPUVirtualAddress**](/windows/desktop/api/d3d12/nf-d3d12-id3d12resource-getgpuvirtualaddress) |
 
 
 
  
 
-Dopo aver caricato i buffer dei comandi nella GPU, viene anche creato un SRV di essi per la lettura del compute shader. Questa operazione è molto simile a quella di SRV creato dal buffer costante.
+Dopo aver caricato i buffer dei comandi nella GPU, ne viene creato anche uno SRV da cui il compute shader può leggere. Questo è molto simile al valore SRV creato del buffer costante.
 
 ``` syntax
 // Create SRVs for the command buffers.
@@ -299,9 +299,9 @@ Dopo aver caricato i buffer dei comandi nella GPU, viene anche creato un SRV di 
 
  
 
-## <a name="create-the-compute-uavs"></a>Creare il UAV di calcolo
+## <a name="create-the-compute-uavs"></a>Creare gli UAV di calcolo
 
-È necessario creare il UAV che archivia i risultati del lavoro di calcolo. Quando un triangolo viene considerato visibile alla destinazione di rendering dal compute shader, questo viene aggiunto a questo UAV e quindi utilizzato dall'API [**ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) di.
+È necessario creare gli UAV che archivieranno i risultati del lavoro di calcolo. Quando un triangolo viene considerato visibile dalla destinazione di rendering dal compute shader, verrà aggiunto a questo UAV e quindi utilizzato dall'API [**ExecuteIndirect.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)
 
 ``` syntax
 CD3DX12_CPU_DESCRIPTOR_HANDLE processedCommandsHandle(m_cbvSrvUavHeap->GetCPUDescriptorHandleForHeapStart(), ProcessedCommandsOffset, m_cbvSrvUavDescriptorSize);
@@ -382,9 +382,9 @@ for (UINT frame = 0; frame < FrameCount; frame++)
 
  
 
-## <a name="drawing-the-frame"></a>Disegno del frame
+## <a name="drawing-the-frame"></a>Disegno della cornice
 
-Quando si tratta di creare il frame, se si è in modalità quando si richiama compute shader e i comandi indiretti vengono elaborati dalla GPU, prima di tutto [**invierà**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-dispatch) il lavoro per popolare il buffer dei comandi per [**ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect). I frammenti di codice seguenti vengono aggiunti al metodo **PopulateCommandLists** .
+Quando arriva il momento di disegnare il frame, se è attiva la modalità quando lo shader di calcolo viene richiamato e i comandi indiretti vengono elaborati dalla GPU, si [**dispatcherà**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-dispatch) prima di tutto il lavoro per popolare il buffer dei comandi per [**ExecuteIndirect.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) I frammenti di codice seguenti vengono aggiunti al **metodo PopulateCommandLists.**
 
 ``` syntax
 // Record the compute commands that will cull triangles and prevent them from being processed by the vertex shader.
@@ -479,7 +479,7 @@ ThrowIfFailed(m_computeCommandList->Close());
 
  
 
-I comandi vengono quindi eseguiti nell'UAV (selezione della GPU abilitata) o nel buffer dei comandi completo (eliminazione della GPU disabilitata).
+I comandi verranno quindi eseguiti nell'UAV (gpu culling abilitato) o nel buffer completo dei comandi (l'eliminazione GPU è disabilitata).
 
 ``` syntax
 // Record the rendering commands.
@@ -639,7 +639,7 @@ I comandi vengono quindi eseguiti nell'UAV (selezione della GPU abilitata) o nel
 
  
 
-Se ci si trova in modalità di eliminazione GPU, la coda dei comandi di grafica attende il completamento del lavoro di calcolo prima di iniziare l'esecuzione dei comandi indiretti. Nel metodo **OnRender** viene aggiunto il frammento di codice seguente.
+Se è attiva la modalità di eliminazione GPU, la coda di comandi grafici attenderà il completamento del lavoro di calcolo prima di iniziare l'esecuzione dei comandi indiretti. Nel metodo **OnRender** viene aggiunto il frammento di codice seguente.
 
 ``` syntax
 // Execute the compute work.
@@ -663,11 +663,11 @@ m_commandQueue->ExecuteCommandLists(_countof(ppCommandLists), ppCommandLists);
 | Flusso di chiamate                                                             | Parametri |
 |-----------------------------------------------------------------------|------------|
 | [**ID3D12CommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandlist)                        |            |
-| [**Oggetti executecommandlist**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) |            |
+| [**ExecuteCommandLists**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) |            |
 | [**Segnale**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-signal)                           |            |
 | [**Attesa**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-wait)                               |            |
 | [**ID3D12CommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandlist)                        |            |
-| [**Oggetti executecommandlist**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) |            |
+| [**ExecuteCommandLists**](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) |            |
 
 
 
@@ -675,22 +675,22 @@ m_commandQueue->ExecuteCommandLists(_countof(ppCommandLists), ppCommandLists);
 
 ## <a name="run-the-sample"></a>Eseguire l'esempio
 
-Esempio con l'abbattimento delle primitive GPU.
+Esempio con l'culling primitivo della GPU.
 
-![screenshot dell'esempio indiretto Exectue con l'abbattimento della GPU](images/executeindirect-withculling.png)
+![Screenshot dell'esempio indiretto di exectue con l'culling gpu](images/executeindirect-withculling.png)
 
-Esempio senza eliminazione delle primitive GPU.
+Esempio senza l'culling primitivo della GPU.
 
-![screenshot dell'esempio indiretto Exectue senza eliminazione della GPU](images/executeindirect-withoutculling.png)
+![Screenshot dell'esempio indiretto di exectue senza culling gpu](images/executeindirect-withoutculling.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Procedure dettagliate per il codice D3D12](d3d12-code-walk-throughs.md)
+[Analisi del codice D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
-[Esercitazioni video su DirectX Advanced Learning: eseguire l'abbattimento indiretto e asincrono della GPU](https://www.youtube.com/watch?v=fKD-VKJeeds)
+[Esercitazioni video sull'apprendimento avanzato di DirectX: Eseguire il culling indiretto e asincrono della GPU](https://www.youtube.com/watch?v=fKD-VKJeeds)
 </dt> <dt>
 
 [Disegno indiretto](indirect-drawing.md)

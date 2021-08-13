@@ -4,35 +4,35 @@ ms.assetid: 3663b63f-127c-49fc-923a-d05521fe3d35
 title: Come impostare la velocità di riproduzione nella sessione multimediale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: deed8bf480bba1bf1e7d86a41a75b8f41f61046b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 696932d0da0147ba87e49cbc22d7ad53a525bc52c9bc2b3518c0f3e956a650aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103761369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465991"
 ---
 # <a name="how-to-set-the-playback-rate-on-the-media-session"></a>Come impostare la velocità di riproduzione nella sessione multimediale
 
-Per implementare la funzionalità di riproduzione, ad esempio l'avanzamento rapido e il rewind, è possibile che le applicazioni debbano modificare la velocità di riproduzione per un flusso multimediale. Media Foundation fornisce il servizio di controllo della velocità che le applicazioni devono utilizzare per impostare dinamicamente la velocità di riproduzione.
+Per implementare funzionalità di riproduzione, ad esempio avanzamento rapido e riavvolgimento rapido, le applicazioni potrebbero dover modificare la velocità di riproduzione per un flusso multimediale. Media Foundation fornisce il servizio di controllo della frequenza che le applicazioni devono usare per impostare la velocità di riproduzione in modo dinamico.
 
-Prima di impostare la velocità di riproduzione, un'applicazione deve controllare se la frequenza è supportata dall'origine multimediale. Per informazioni sulle frequenze supportate, vedere [come determinare le tariffe supportate](how-to-determine-supported-rates.md).
+Prima di impostare la velocità di riproduzione, un'applicazione deve verificare se la frequenza è supportata dall'origine multimediale. Per informazioni sull'esecuzione di query per le tariffe supportate, vedere [Come determinare le tariffe supportate.](how-to-determine-supported-rates.md)
 
-Per informazioni sulle frequenze di riproduzione, vedere [informazioni sul controllo della frequenza](about-rate-control.md).
+Per informazioni sulle frequenze di riproduzione, vedere [About Rate Control](about-rate-control.md).
 
 ## <a name="to-set-the-playback-rate"></a>Per impostare la velocità di riproduzione
 
-1.  Chiamare [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) per ottenere l'oggetto di controllo della velocità dalla sessione multimediale.
+1.  Chiamare [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) per ottenere l'oggetto di controllo della frequenza dalla sessione multimediale.
 
-    Le applicazioni che chiamano [**MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) devono garantire quanto segue:
+    Le applicazioni che [**chiamano MFGetService**](/windows/desktop/api/mfidl/nf-mfidl-mfgetservice) devono garantire quanto segue:
 
-    -   Il parametro *punkObject* contiene un puntatore a interfaccia [**IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato.
-    -   L'oggetto frequenza di controllo ricevuto nel parametro *ppvObject* viene rilasciato per evitare perdite di memoria.
+    -   Il *parametro punkObject* contiene un puntatore a interfaccia [**IMFMediaSession**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasession) inizializzato.
+    -   L'oggetto di controllo della frequenza ricevuto nel *parametro ppvObject* viene rilasciato per evitare perdite di memoria.
 
-2.  Chiamare il metodo [**IMFRateControl::**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) SetValue per impostare la velocità di riproduzione. Al termine dell'esecuzione della **velocità** in modo asincrono, l'applicazione riceve l'evento [MESessionRateChanged](mesessionratechanged.md) .
+2.  Chiamare il [**metodo IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) per impostare la velocità di riproduzione. Dopo il completamento asincrono di **SetRate,** l'applicazione riceve [l'evento MESessionRateChanged.](mesessionratechanged.md)
 
 ## <a name="example"></a>Esempio
 
-Il codice seguente illustra come impostare la velocità di riproduzione chiamando il metodo [**serate**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate) .
+Il codice seguente illustra come impostare la velocità di riproduzione chiamando il [**metodo SetRate.**](/windows/desktop/api/mfidl/nf-mfidl-imfclockstatesink-onclocksetrate)
 
 
 ```C++
@@ -77,7 +77,7 @@ HRESULT SetPlaybackRate(
 
 
 
-L'applicazione deve essere arrestata o sospesa prima di poter eseguire una transizione da una velocità negativa o zero a una velocità positiva. Per informazioni su questi Stati, vedere [come controllare gli Stati di presentazione](how-to-control-presentation-states.md).
+L'applicazione deve essere arrestata o sospesa prima di poter eseguire una transizione da un tasso negativo o zero a un tasso positivo. Per informazioni su questi stati, vedere [Come controllare gli stati di presentazione.](how-to-control-presentation-states.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

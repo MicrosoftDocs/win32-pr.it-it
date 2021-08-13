@@ -1,21 +1,21 @@
 ---
-description: 'Windows Installer funzioni che restituiscono dati in un utente specificato: la posizione di memoria non deve essere chiamata con null come valore per il puntatore.'
+description: Windows Le funzioni del programma di installazione che restituiscono dati in una posizione di memoria fornita dall'utente non devono essere chiamate con null come valore per il puntatore.
 ms.assetid: f566c4a4-b90c-4d73-9d7f-f5b836630636
-title: Passaggio di valori null alle funzioni Windows Installer
+title: Passaggio di null a funzioni Windows installer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb09ceb3982695792614a3c226af9ab276aa3a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc6964716479d7e64cc9aa70d7e49acc8fe78dd3343298826e011f6d72b4df1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627664"
 ---
-# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passaggio di null come argomento delle funzioni Windows Installer
+# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passaggio di null come argomento delle funzioni del Windows installer
 
-Windows Installer funzioni che restituiscono dati in un utente specificato: la posizione di memoria non deve essere chiamata con null come valore per il puntatore. Queste funzioni restituiscono una stringa o restituiscono dati come puntatori Integer, ma restituiscono valori incoerenti quando si passa null come valore per l'argomento di output.
+Windows Le funzioni del programma di installazione che restituiscono dati in una posizione di memoria fornita dall'utente non devono essere chiamate con null come valore per il puntatore. Queste funzioni restituiscono una stringa o restituiscono dati come puntatori integer, ma restituiscono valori incoerenti quando si passa null come valore per l'argomento di output.
 
-Non passare null come valore dell'argomento output per una delle funzioni seguenti:
+Non passare Null come valore dell'argomento di output per una delle funzioni seguenti:
 
 [**MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya)
 

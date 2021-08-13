@@ -1,10 +1,10 @@
 ---
-title: Attributo Attribute-Syntax
+title: Attribute-Syntax attributo
 description: OID per la sintassi per questo attributo.
 ms.assetid: 7ae16381-c8e9-4f85-b3e6-86c82b487ca2
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Attribute-Syntax attribute
+- Attribute-Syntax schema AD dell'attributo
 - Schema AD dell'attributo attributeSyntax
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed69d6886d25f1d47f4340ecfaecd74cc1ae591e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1eafc6c0ac493f1521e03810f986e18630cfe7352b4c2b88d725639bfa123279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443061"
 ---
-# <a name="attribute-syntax-attribute"></a>Attributo Attribute-Syntax
+# <a name="attribute-syntax-attribute"></a>Attribute-Syntax attributo
 
 OID per la sintassi per questo attributo.
 
@@ -30,12 +30,12 @@ OID per la sintassi per questo attributo.
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Attribute-Syntax                                                |
-| LDAP-Display-Name | attributeSyntax                                                 |
+| Ldap-Display-Name | attributeSyntax                                                 |
 | Dimensione              | \-                                                              |
-| Privilegio aggiornamento  | Amministratore schema                                            |
+| Privilegio di aggiornamento  | Amministratore dello schema                                            |
 | Frequenza di aggiornamento  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.32                                           |
-| System-ID-GUID    | bf967925-0de6-11d0-a285-00aa003049e2                            |
+| System-Id-Guid    | bf967925-0de6-11d0-a285-00aa003049e2                            |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -44,7 +44,7 @@ OID per la sintassi per questo attributo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 

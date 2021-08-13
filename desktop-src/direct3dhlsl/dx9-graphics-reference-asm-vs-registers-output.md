@@ -9,106 +9,106 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e4a0b397d17b841877796bd9c33432896208ed6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
-ms.translationtype: HT
+ms.openlocfilehash: 3cfa17c09315f4cdca98f5c5fc10f7ab15541eb8b774835963b06169c4afe225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104992752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457771"
 ---
 # <a name="output-registers"></a>Registri di output
 
--   Registro colori vertici
--   Registro di nebbia
--   Posizione \_ Registro
--   \_Registro dimensioni \_ punti
--   \_Registro coordinate \_ trama
+-   Registro colori vertice
+-   Registro Di Taschia
+-   Registro \_ delle posizioni
+-   Registro \_ dimensioni \_ punto
+-   Registro \_ delle coordinate della \_ trama
 
 I nomi dei registri sono preceduti da una lettera minuscola o, a indicare che i registri di output sono di sola scrittura.
 
-## <a name="vertex-color-register---od0-od1"></a>Registro colori vertici-oD0, oD1
+## <a name="vertex-color-register---od0-od1"></a>Registro colori vertice - oD0, oD1
 
-oD0 è il registro colori diffuso. oD1 è il registro colore speculare. Il valore oD0 viene interpolato e viene scritto nel registro colore di input 0 (V0) del pixel shader. Il valore oD1 viene interpolato e scritto nel registro colori di input 1 (V1) del pixel shader. Per ulteriori informazioni sui registri dei colori pixel shader, vedere registri.
+oD0 è il registro colori diffuso. oD1 è il registro colori speculare. Il valore oD0 è interpolato e viene scritto nel registro colori di input 0 (v0) del pixel shader. Il valore oD1 viene interpolato e scritto nel registro colori di input 1 (v1) del pixel shader. Per altre informazioni sui pixel shader colori, vedere Registri.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Registro colori vertici  | x    | x    | x     | x    |      |       |
+| Registro colori vertice  | x    | x    | x     | x    |      |       |
 
 
 
- 
+ 
 
-## <a name="fog-register---ofog"></a>Registro di nebbia-oFog
+## <a name="fog-register---ofog"></a>Registro Di Taschia - oFog
 
-Il valore di nebbia di output viene registrato. Il valore è il fattore di nebbia da interpolare e quindi indirizzato alla tabella Fog. Viene utilizzato solo il componente x scalare della nebbia. I valori vengono fissati tra zero e uno prima del passaggio al rasterizzatore.
+Il valore di nebbia di output viene registrato. Il valore è il fattore di nebbia da interpolare e quindi instradare alla tabella della nebbia. Viene usato solo il componente x scalare della nebbia. I valori sono compresi tra zero e uno prima di passare al rasterizzatore.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Registro di nebbia           | x    | x    | x     | x    |      |       |
+| Registro Di Taschia           | x    | x    | x     | x    |      |       |
 
 
 
- 
+ 
 
-## <a name="position-register---opos"></a>Posizione Register-oPos
+## <a name="position-register---opos"></a>Registro di posizione - oPos
 
-La posizione di output viene registrata. Il valore è la posizione nello spazio di ritaglio omogeneo. Questo valore deve essere scritto dal vertex shader.
+La posizione di output viene registrato. Il valore è la posizione nello spazio di ritaglio omogeneo. Questo valore deve essere scritto dal vertex shader.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Posizione registro      | x    | x    | x     | x    |      |       |
+| Registro delle posizioni      | x    | x    | x     | x    |      |       |
 
 
 
- 
+ 
 
-## <a name="point-size-register---opts"></a>Registro dimensioni punti-opz
+## <a name="point-size-register---opts"></a>Registro dimensioni punto - oPts
 
-Registri delle dimensioni del punto di output. Viene utilizzato solo il componente x scalare della dimensione del punto.
+Registri delle dimensioni del punto di output. Viene usato solo il componente x scalare delle dimensioni in punti.
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|-------|------|------|-------|
-| Registro dimensioni punti    | x    | x    | x     | x    |      |       |
+| Registro dimensioni punto    | x    | x    | x     | x    |      |       |
 
 
 
- 
+ 
 
-## <a name="texture-coordinate-register---ot0-to-ot7"></a>Registro delle coordinate di trama-oT0 in oT7
+## <a name="texture-coordinate-register---ot0-to-ot7"></a>Registro coordinate trama - da oT0 a oT7
 
-Le coordinate di trama di output vengono registrate. In particolare, si tratta di una matrice di registri di dati di output che vengono iterati e usati come coordinate di trama in base alle fasi di campionamento della trama che indirizzano i dati al pixel shader.
+Le coordinate della trama di output vengono registrate. In particolare, si tratta di una matrice di registri dati di output che vengono iterati e usati come coordinate di trama dalle fasi di campionamento trame instradando i dati al pixel shader.
 
 
 
-| Versioni vertex shader      | 1\_1 | 2 \_ 0 | 2 \_ SW | 2 \_ x | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader      | 1\_1 | 2 \_ 0 | 2 \_ sw | 2 \_ x | 3 \_ 0 | 3 \_ sw |
 |-----------------------------|------|------|-------|------|------|-------|
-| Registro coordinate trama | x    | x    | x     | x    |      |       |
+| Registro delle coordinate della trama | x    | x    | x     | x    |      |       |
 
 
 
- 
+ 
 
-Quando si scrive in un registro delle coordinate di trama, è consigliabile passare solo il numero di valori a virgola mobile della dimensione della mappa di trama corrispondente. Controllare i valori passati con un modificatore. Ad esempio, usare. XY per una mappa di trama 2D.
+Quando si scrive in un registro delle coordinate della trama, è consigliabile passare solo il numero di valori a virgola mobile della dimensione della mappa trame corrispondente. Controllare i valori passati con un modificatore . Ad esempio, usare .xy per una mappa trame 2D.
 
-Quando è abilitata la proiezione di trama per una fase di trama, è necessario scrivere tutti i quattro valori a virgola mobile nel registro di trama corrispondente.
+Quando la proiezione trame è abilitata per una fase di trama, tutti e quattro i valori a virgola mobile devono essere scritti nel registro trame corrispondente.
 
-\*Quando si usa la pipeline programmabile, i flag di trasformazione della trama D3DTTFF devono essere pari a zero.
+Uno dei flag di trasformazione della trama D3DTTFF deve essere zero quando viene usata la \* pipeline programmabile.
 
-### <a name="texture-coordinate-range"></a>Intervallo di coordinate di trama
+### <a name="texture-coordinate-range"></a>Intervallo di coordinate trama
 
-I dati dei vertici degli oggetti forniscono coordinate di trama di input. Per gli oggetti che non utilizzano trame affiancate sono in genere presenti coordinate di trama nell'intervallo compreso tra \[ 0 e 1 \] . Gli oggetti che utilizzano trame affiancate, ad esempio il terreno, presentano in genere coordinate di trama che variano da \[ -?, +? \] dove? può essere un numero a virgola mobile di grandi dimensioni.
+I dati dei vertici dell'oggetto specificano le coordinate della trama di input. Gli oggetti che non usano trame affiancate hanno in genere coordinate di trama nell'intervallo \[ 0,1. \] Gli oggetti che usano trame affiancate, ad esempio terreno, hanno in genere coordinate di trama che vanno \[ da -?,+? \] dove ? può essere un numero a virgola mobile di grandi dimensioni.
 
-L'interpolazione delle coordinate di trama viene eseguita sui dati dei vertici per la rasterizzazione. Durante la rasterizzazione, le coordinate di trama vengono interpolate tra i vertici degli oggetti, modificati dal wrapping della trama e ridimensionati in base alle dimensioni della trama (tenendo conto della modalità di indirizzamento della trama) per produrre un indice Integer. L'indice viene quindi utilizzato per eseguire una ricerca di trama. È possibile utilizzare MaxTextureRepeat per determinare il numero di volte in cui una trama può essere affiancata.
+L'interpolazione delle coordinate di trama viene eseguita sui dati dei vertici per la rasterizzazione. Durante la rasterizzazione, le coordinate della trama vengono interpolate tra i vertici degli oggetti, modificate dal wrapping della trama e ridimensionate in base alle dimensioni della trama (tenendo conto anche della modalità di indirizzo della trama) per produrre un indice integer. L'indice viene quindi usato per eseguire una ricerca di trame. MaxTextureRepeat può essere usato per determinare quante volte è possibile affiancare una trama.
 
-Se le coordinate di trama vengono lette direttamente in un pixel shader (usando TEXCOORD o texcrd), l'intervallo delle coordinate di trama dipende dall'istruzione e dalla versione pixel shader.
+Se le coordinate della trama vengono lette direttamente in un pixel shader (usando texcoord o texcrd), l'intervallo di coordinate della trama dipende dall'istruzione e dalla pixel shader versione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -117,9 +117,9 @@ Se le coordinate di trama vengono lette direttamente in un pixel shader (usando 
 [Registri vertex shader](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

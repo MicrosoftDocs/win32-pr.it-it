@@ -1,7 +1,7 @@
 ---
 description: Il metodo ClearSourceList dell'oggetto Installer rimuove tutte le origini di rete dall'elenco di origine.
 ms.assetid: a4e4beb2-a4d7-48e7-9c8d-dd1ae19fe92a
-title: Installer. ClearSourceList, metodo
+title: Metodo Installer.ClearSourceList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3f9468775c75533b766a160a390410908d04bf6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f16cc37556d217a217b814b5ce87cb705cd3105d4a8c2ad3f503d617aeda2cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118633039"
 ---
-# <a name="installerclearsourcelist-method"></a>Installer. ClearSourceList, metodo
+# <a name="installerclearsourcelist-method"></a>Metodo Installer.ClearSourceList
 
-Il metodo **ClearSourceList** dell'oggetto [**Installer**](installer-object.md) rimuove tutte le origini di rete dall'elenco di origine.
+Il **metodo ClearSourceList** dell'oggetto [**Installer**](installer-object.md) rimuove tutte le origini di rete dall'elenco di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ Installer.ClearSourceList(
 *Prodotto* 
 </dt> <dd>
 
-Specifica il codice del prodotto.
+Specifica il codice prodotto.
 
 </dd> <dt>
 
 *Utente* 
 </dt> <dd>
 
-Nome utente per l'installazione per utente; stringa null o vuota per l'installazione per computer.
+Nome utente per l'installazione per utente; Stringa null o vuota per l'installazione per computer.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

@@ -1,8 +1,8 @@
 ---
-description: Il metodo statico della classe WMI SetMTU viene usato per impostare l'unità di trasmissione massima (MTU) predefinita per un'interfaccia di rete.
+description: Il metodo statico della classe WMI SetMTU viene usato per impostare l'unità massima di trasmissione (MTU) predefinita per un'interfaccia di rete.
 ms.assetid: 262c8bd7-1057-4204-80ab-725c60fc9c52
 ms.tgt_platform: multiple
-title: Metodo SetMTU della classe Win32_NetworkAdapterConfiguration
+title: Metodo SetMTU della Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 466c344892f2c4bf4a1e979ac9c1f50cd709325a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 043138fd82f5d5423703e860c5811f3e21b8513adb7bb4238ad6d6f7fa7215cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439881"
 ---
-# <a name="setmtu-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetMTU della \_ classe NetworkAdapterConfiguration Win32
+# <a name="setmtu-method-of-the-win32_networkadapterconfiguration-class"></a>Metodo SetMTU della classe NetworkAdapterConfiguration Win32 \_
 
-Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetMTU** viene usato per impostare l'unità di trasmissione massima (MTU) predefinita per un'interfaccia di rete.
+Il metodo statico della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetMTU** viene usato per impostare l'unità massima di trasmissione (MTU) predefinita per un'interfaccia di rete.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,34 +42,34 @@ uint32 SetMTU(
 
 <dl> <dt>
 
-*MTU* \[ in\]
+*MTU* \[ Pollici\]
 </dt> <dd>
 
-Unità di trasmissione massima (MTU) predefinita per un'interfaccia di rete. L'intervallo di questo valore si estende alla dimensione minima del pacchetto (68) al valore MTU supportato dalla rete sottostante.
+Unità massima di trasmissione (MTU) predefinita per un'interfaccia di rete. L'intervallo di questo valore si estende tra le dimensioni minime del pacchetto (68) e le MTU supportate dalla rete sottostante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) per un completamento corretto quando non è richiesto il riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per ulteriori informazioni sui codici di errore, vedere [**costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
+Restituisce il valore 0 (zero) per un completamento corretto quando non è necessario alcun riavvio, 1 (uno) per un completamento corretto quando è necessario un riavvio e un numero diverso se si verifica un errore. Per altre informazioni sui codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Operazione completata, non è necessario riavviare il computer**
+**Completamento riuscito, riavvio non necessario**
 </dt> <dd>
 
 0
 
-Operazione completata. Non è necessario riavviare il computer.
+Completamento. Non è necessario alcun riavvio.
 
 </dd> <dt>
 
-**Operazione completata, riavvio richiesto**
+**Completamento riuscito, riavvio necessario**
 </dt> <dd>
 
 1
 
-Operazione completata. È necessario un riavvio.
+Completamento. È necessario un riavvio.
 
 </dd> <dt>
 
@@ -91,12 +91,12 @@ Errore sconosciuto.
 
 </dd> <dt>
 
-**subnet mask non valido**
+**Non subnet mask**
 </dt> <dd>
 
 66
 
-Subnet mask non valido.
+Non subnet mask.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Subnet mask non valido.
 
 67
 
-Si è verificato un errore durante l'elaborazione di un'istanza di restituita.
+Si è verificato un errore durante l'elaborazione di un'istanza restituita.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Parametro di input non valido.
 
 </dd> <dt>
 
-**Sono stati specificati più di 5 gateway**
+**Più di 5 gateway specificati**
 </dt> <dd>
 
 69
@@ -136,7 +136,7 @@ Indirizzo IP non valido.
 
 </dd> <dt>
 
-**Indirizzo IP gateway non valido**
+**Indirizzo IP del gateway non valido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Indirizzo IP del gateway non valido.
 
 </dd> <dt>
 
-**Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste**
+**Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste**
 </dt> <dd>
 
 72
 
-Si è verificato un errore durante l'accesso al registro di sistema per le informazioni richieste.
+Si è verificato un errore durante l'accesso al Registro di sistema per le informazioni richieste.
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Impossibile configurare il servizio TCP/IP.
 
 </dd> <dt>
 
-**Non è possibile configurare il servizio DHCP**
+**Impossibile configurare il servizio DHCP**
 </dt> <dd>
 
 81
@@ -235,12 +235,12 @@ Impossibile configurare il servizio DHCP.
 
 </dd> <dt>
 
-**Non è possibile rinnovare il lease DHCP**
+**Impossibile rinnovare il lease DHCP**
 </dt> <dd>
 
 82
 
-Non è possibile rinnovare il lease DHCP.
+Impossibile rinnovare il lease DHCP.
 
 </dd> <dt>
 
@@ -258,11 +258,11 @@ Impossibile rilasciare il lease DHCP.
 
 84
 
-IP non abilitato sulla scheda.
+IP non abilitato nella scheda.
 
 </dd> <dt>
 
-**IPX non abilitato sull'adapter**
+**IPX non abilitato sulla scheda**
 </dt> <dd>
 
 85
@@ -271,12 +271,12 @@ IPX non abilitato sulla scheda.
 
 </dd> <dt>
 
-**Errore limite numero frame/rete**
+**Errore di limiti dei numeri di rete/frame**
 </dt> <dd>
 
 86
 
-Errore dei limiti del numero di rete o del frame.
+Errore di limiti del numero di rete o del frame.
 
 </dd> <dt>
 
@@ -307,12 +307,12 @@ Numero di rete duplicato.
 
 </dd> <dt>
 
-**Parametro fuori limite**
+**Parametro fuori dai limiti**
 </dt> <dd>
 
 90
 
-Parametro fuori limite.
+Parametro al di fuori dei limiti.
 
 </dd> <dt>
 
@@ -348,20 +348,20 @@ Esiste già.
 
 94
 
-Il percorso, il file o l'oggetto non è stato trovato.
+Percorso, file o oggetto non trovato.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio**
+**Impossibile inviare una notifica al servizio**
 </dt> <dd>
 
 95
 
-Impossibile notificare il servizio.
+Impossibile inviare una notifica al servizio.
 
 </dd> <dt>
 
-**Non è possibile inviare una notifica al servizio DNS**
+**Impossibile inviare una notifica al servizio DNS**
 </dt> <dd>
 
 96
@@ -388,7 +388,7 @@ Non tutti i lease DHCP possono essere rilasciati o rinnovati.
 
 </dd> <dt>
 
-**DHCP non abilitato sull'adapter**
+**DHCP non abilitato sulla scheda**
 </dt> <dd>
 
 100
@@ -406,13 +406,13 @@ DHCP non è abilitato sulla scheda.
 
 ## <a name="remarks"></a>Commenti
 
-L'MTU corrisponde alla dimensione massima del pacchetto (in byte) che un trasporto trasmetterà sulla rete sottostante. Le dimensioni includono l'intestazione del trasporto.
+L'MTU è la dimensione massima del pacchetto (in byte) che un trasporto trasmetterà sulla rete sottostante. La dimensione include l'intestazione del trasporto.
 
-Si noti che un datagramma IP può estendersi su più pacchetti. I valori maggiori di quelli predefiniti per la rete sottostante comportano il trasporto usando la MTU predefinita di rete. I valori minori di 68 generano il trasporto usando un valore MTU pari a 68.
+Si noti che un datagramma IP può estendersi su più pacchetti. I valori maggiori del valore predefinito per la rete sottostante comportano il trasporto che usa il valore MTU predefinito di rete. I valori minori di 68 comportano l'uso di un valore MTU di 68 per il trasporto.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio [Modify the MTU for all Network Adapters](https://Gallery.TechNet.Microsoft.Com/49c26363-d46c-4288-9c8d-feb0a1982998) VBScript configura l'unità di trasmissione massima per tutte le schede di rete installate in un computer.
+L'esempio VBScript Modify [the MTU for all Network Adapters](https://Gallery.TechNet.Microsoft.Com/49c26363-d46c-4288-9c8d-feb0a1982998) configura l'unità massima di trasmissione per tutte le schede di rete installate in un computer.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -423,7 +423,7 @@ L'esempio [Modify the MTU for all Network Adapters](https://Gallery.TechNet.Micr
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -432,16 +432,16 @@ L'esempio [Modify the MTU for all Network Adapters](https://Gallery.TechNet.Micr
 
 <dl> <dt>
 
-[Classi hardware del sistema del computer](computer-system-hardware-classes.md)
+[Classi hardware del sistema computer](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Attività WMI: rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Attività WMI: Rete](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Attività WMI: account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Attività WMI: Account e domini](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Supporto di IPv6 e IPv4 in WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

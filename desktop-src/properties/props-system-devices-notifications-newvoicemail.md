@@ -1,19 +1,19 @@
 ---
-description: Notifica della segreteria telefonica del dispositivo.
+description: Notifica della posta vocale del dispositivo.
 ms.assetid: 91993898-a342-4009-b0eb-8d8286079e91
-title: System. Devices. Notifications. NewVoicemail
+title: System.Devices.Notifications.NewVoicemail
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ca1ea899139fbda60e1db49045d30a3e323487
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcc9cbe0ba090f258e70592b6a9327333ae8b993620931f97948c6d24acb350a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118728278"
 ---
-# <a name="systemdevicesnotificationsnewvoicemail"></a>System. Devices. Notifications. NewVoicemail
+# <a name="systemdevicesnotificationsnewvoicemail"></a>System.Devices.Notifications.NewVoicemail
 
-Notifica della segreteria telefonica del dispositivo.
+Notifica della posta vocale del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -63,7 +63,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -93,7 +93,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

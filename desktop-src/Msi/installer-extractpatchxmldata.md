@@ -1,7 +1,7 @@
 ---
-description: Il metodo ExtractPatchXMLData dell'oggetto Installer estrae le informazioni da una patch come stringa XML. Le informazioni possono essere utilizzate per determinare se la patch viene applicata a un sistema di destinazione. Questo metodo chiama MsiExtractPatchXMLData.
+description: Il metodo ExtractPatchXMLData dell'oggetto Installer estrae le informazioni da una patch come stringa XML. Le informazioni possono essere usate per determinare se la patch si applica a un sistema di destinazione. Questo metodo chiama MsiExtractPatchXMLData.
 ms.assetid: 85940940-2002-4cb1-8e29-ba2374bf3796
-title: Installer. ExtractPatchXMLData, metodo
+title: Metodo Installer.ExtractPatchXMLData
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 69c17236c0a4cd96820e0366df51b28cf47ecfb0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9b4df7d2ecedda5e3bac97a1dd80a002571f736ceb2ede6b8deac2f1a5f7802
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631544"
 ---
-# <a name="installerextractpatchxmldata-method"></a>Installer. ExtractPatchXMLData, metodo
+# <a name="installerextractpatchxmldata-method"></a>Metodo Installer.ExtractPatchXMLData
 
-Il metodo **ExtractPatchXMLData** dell'oggetto [**Installer**](installer-object.md) estrae le informazioni da una patch come stringa XML. Le informazioni possono essere utilizzate per determinare se la patch viene applicata a un sistema di destinazione. Questo metodo chiama [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa).
+Il **metodo ExtractPatchXMLData** dell'oggetto [**Installer**](installer-object.md) estrae le informazioni da una patch come stringa XML. Le informazioni possono essere usate per determinare se la patch si applica a un sistema di destinazione. Questo metodo chiama [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,9 +56,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003 o Windows XP.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP.<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
 
 
@@ -69,7 +69,7 @@ Questo metodo non restituisce valori.
 [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

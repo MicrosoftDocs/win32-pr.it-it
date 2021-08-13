@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFSR-ContentSetGuid
-description: Contiene il GUID del set di contenuti della replica file system distribuito (DFS).
+title: Attributo ms-DFSR-ContentSetGuid
+description: Contiene il GUID del set di file system distribuito replica (DFS).
 ms.assetid: 69b2a293-f80e-4af5-b06c-27d373994318
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-DFSR-ContentSetGuid-schema AD
-- msDFSR-schema AD attributo ContentSetGuid
+- Schema AD dell'attributo ms-DFSR-ContentSetGuid
+- Schema AD dell'attributo msDFSR-ContentSetGuid
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c75b055549a6c0e8d219120d2b0b3c0d0eea13
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 185711932f78356ae4fd515321008b20258f035a6a8a3cd7b03194d36c24436a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685965"
 ---
-# <a name="ms-dfsr-contentsetguid-attribute"></a>attributo ms-DFSR-ContentSetGuid
+# <a name="ms-dfsr-contentsetguid-attribute"></a>Attributo ms-DFSR-ContentSetGuid
 
-Contiene il GUID del set di contenuti della replica file system distribuito (DFS).
+Contiene il GUID del set di file system distribuito replica (DFS).
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DFSR-ContentSetGuid                                |
-| LDAP-Display-Name | msDFSR-ContentSetGuid                                 |
+| CN                | ms-DFSR-ContentSetGuid                                |
+| Ldap-Display-Name | msDFSR-ContentSetGuid                                 |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.18                            |
-| System-ID-GUID    | 1035a8e1-67a8-4c21-b7bb-031cdf99d7a0                  |
+| System-Id-Guid    | 1035a8e1-67a8-4c21-b7bb-031cdf99d7a0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -56,15 +56,15 @@ Contiene il GUID del set di contenuti della replica file system distribuito (DFS
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 16                                                               |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene il GUID del set di contenuti della replica file system distribuito (DFS
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 16                                                               |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene il GUID del set di contenuti della replica file system distribuito (DFS
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 16                                                               |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -119,21 +119,21 @@ Contiene il GUID del set di contenuti della replica file system distribuito (DFS
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Vero                                                             |
+| Is-Single-Valued       | Vero                                                             |
 | Indicizzato             | Falso                                                            |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | 16                                                               |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classi utilizzate in        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
+| Classi usate in        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **MS-DFSR-ContentSetGuid** fa parte del supporto del servizio Replica DFS.
+**L'attributo ms-DFSR-ContentSetGuid** fa parte del Replica DFS servizio.
 
  
 

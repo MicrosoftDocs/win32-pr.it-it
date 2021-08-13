@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: VistaApi. JetOSSnapshotTruncateLogInstance, metodo'
-title: Metodo VistaApi. JetOSSnapshotTruncateLogInstance (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Metodo VistaApi.JetOSSnapshotTruncateLogInstance'
+title: Metodo VistaApi.JetOSSnapshotTruncateLogInstance (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JetOSSnapshotTruncateLogInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetOSSnapshotTruncateLogInstance(Microsoft.Isam.Esent.Interop.JET_OSSNAPID,Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.Vista.SnapshotTruncateLogGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi.jetossnapshottruncateloginstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 75d694629585a730f5c1c7b9b08bb7b06e735cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00a30d604aa57aeaff1d97ca8f92397d6919a769f9416eb504b2d22abe186f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471221"
 ---
-# <a name="vistaapijetossnapshottruncateloginstance-method"></a>VistaApi. JetOSSnapshotTruncateLogInstance, metodo
+# <a name="vistaapijetossnapshottruncateloginstance-method"></a>Metodo VistaApi.JetOSSnapshotTruncateLogInstance
 
 Tronca il log per un'istanza specificata durante una sessione snapshot.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,27 +65,27 @@ public static void JetOSSnapshotTruncateLogInstance(
 #### <a name="parameters"></a>Parametri
 
   - snapshot  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Identificatore dello snapshot.
 
 <!-- end list -->
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Istanza per la quale troncare il log.
+    Istanza di per cui troncare il log.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. vista. SnapshotTruncateLogGrbit](./snapshottruncateloggrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.SnapshotTruncateLogGrbit](./snapshottruncateloggrbit-enumeration.md)  
     
     Opzioni per questa chiamata.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'opzione [ContinueAfterThaw](./vistagrbits.continueafterthaw-field.md) . In caso contrario, la sessione snapshot termina dopo la chiamata a [JetOSSnapshotThaw (JET_OSSNAPID, SnapshotThawGrbit)](./api.jetossnapshotthaw-method.md).
+Questa funzione deve essere chiamata solo se lo snapshot è stato creato con [l'opzione ContinueAfterThaw.](./vistagrbits.continueafterthaw-field.md) In caso contrario, la sessione snapshot termina dopo la chiamata a [JetOSSnapshotThaw(JET_OSSNAPID, SnapshotThawGrbit).](./api.jetossnapshotthaw-method.md)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -95,4 +95,4 @@ Questa funzione deve essere chiamata solo se lo snapshot è stato creato con l'o
 
 [Membri di VistaApi](./vistaapi-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

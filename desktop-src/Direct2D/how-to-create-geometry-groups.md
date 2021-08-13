@@ -3,29 +3,29 @@ title: Come creare gruppi di geometria
 description: In questo argomento viene descritto come creare gruppi di geometria.
 ms.assetid: be364440-75ab-4d8f-a359-39da275272fd
 keywords:
-- Direct2D, esempio di modalità di riempimento
-- gruppi di geometria
+- Direct2D, esempio di modalità riempimento
+- gruppi geometry
 - Direct2D, gruppi di geometria
-- geometrie percorso
+- geometrie di percorso
 - Direct2D, geometrie di percorso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb4a0e63a3274473153e1871a8a085bb04d5146
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5540d96b9befddaa8eb6eef7fcc61e3e6c7665a7319de1ea123c9ce94281f101
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259251"
 ---
 # <a name="how-to-create-geometry-groups"></a>Come creare gruppi di geometria
 
 In questo argomento viene descritto come creare gruppi di geometria.
 
-Per creare un gruppo di geometria, chiamare il metodo [**ID2D1Factory:: CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) e specificare una matrice di geometrie e una modalità di riempimento.
+Per creare un gruppo di geometria, chiamare il metodo [**ID2D1Factory::CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) e specificare una matrice di geometrie e una modalità di riempimento.
 
-Quando si combinano le geometrie in un gruppo di geometria, assicurarsi che le geometrie siano orientate in modo analogo. Se non si è certi dell'orientamento delle geometrie, chiamare [**ID2D1Geometry:: Outline**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)) su ognuno di essi singolarmente e quindi inserire le geometrie risultanti nel gruppo di geometria.
+Quando si combinano le geometrie in un gruppo di geometrie, assicurarsi che le geometrie siano orientate in modo analogo. Se non si è certi dell'orientamento delle geometrie, chiamare [**ID2D1Geometry::Outline**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)) su ognuna di esse singolarmente e quindi inserire le geometrie risultanti nel gruppo geometry.
 
-Nell'esempio di codice seguente viene illustrata la creazione di quattro cerchi concentrici: il primo cerchio ha un raggio di 25, il secondo 50, il terzo 75 e il quarto 100. Il codice mostra anche la creazione di un'istanza di una matrice di geometrie, nonché le due chiamate a [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup).
+L'esempio di codice seguente illustra la creazione di quattro cerchi concentrici: il primo cerchio ha un raggio di 25, il secondo 50, il terzo 75 e il quarto 100. Il codice mostra anche la creazione di un'istanza di una matrice di geometrie, nonché le due chiamate [**a CreateGeometryGroup.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup)
 
 
 ```C++
@@ -123,7 +123,7 @@ HRESULT DemoApp::CreateGeometryResources()
 
 ## <a name="drawing-and-filling-of-geometry-groups"></a>Disegno e riempimento di gruppi di geometria
 
-Per creare e riempire un gruppo di geometria, usare i metodi [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) . Nell'esempio di codice riportato di seguito viene illustrato come creare e riempire un gruppo di geometria.
+Per disegnare e riempire un gruppo di geometria, usare i metodi [**ID2D1RenderTarget::FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e [**ID2D1RenderTarget::D rawGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) Nell'esempio di codice seguente viene illustrato come disegnare e riempire un gruppo geometrico.
 
 
 ```C++
@@ -202,8 +202,8 @@ HRESULT DemoApp::OnRender()
 
 Il codice produce l'output illustrato nella figura seguente.
 
-![illustrazione di due set di quattro cerchi concentrici, uno con il secondo e il quarto anello pieni e uno con tutti gli anelli riempiti](images/create-geometry-group.png)
+![illustrazione di due set di quattro cerchi concentrici, uno con il secondo e il quarto anello riempito e uno con tutti gli anelli riempiti](images/create-geometry-group.png)
 
- 
+ 
 
- 
+ 

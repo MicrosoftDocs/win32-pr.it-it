@@ -1,7 +1,7 @@
 ---
-description: Larghezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce-1 se questo elemento non supporta le anteprime. Di sola lettura.
+description: Larghezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce -1 se questo elemento non supporta le anteprime. Di sola lettura.
 ms.assetid: 44930ca6-1ca9-40eb-b6f0-96094d9d03ad
-title: Proprietà Item. ThumbWidth
+title: Proprietà Item.ThumbWidth
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 14801c02207a06519a803ed13f23467ebe98f310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 023b2353c0806923491890416121db2eb3186dc11ec76478869ab8ca20d9d00f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440492"
 ---
-# <a name="itemthumbwidth-property"></a>Proprietà Item. ThumbWidth
+# <a name="itemthumbwidth-property"></a>Proprietà Item.ThumbWidth
 
-Larghezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce-1 se questo elemento non supporta le anteprime. Di sola lettura.
+Larghezza, in pixel, dell'immagine di anteprima. Questa proprietà restituisce -1 se questo elemento non supporta le anteprime. Di sola lettura.
 
 Questa proprietà è di sola lettura.
 
@@ -45,9 +45,9 @@ Variabile che riceve la larghezza.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

@@ -1,51 +1,51 @@
 ---
-description: ICE53 verifica la presenza di voci nella tabella del registro di sistema che scrivono le informazioni sul programma di installazione privato o i valori dei criteri nel registro di sistema.
+description: ICE53 verifica la presenza di voci nella tabella Registry che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
 ms.assetid: f5afca1f-bd36-4f95-a62a-f6b2e37238a6
 title: ICE53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c323a502642e3cf5999e6cb332a434a9fc8a41db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a2d1e661eb832439a9b4fde423e005dc4b3a0c3ca9b266045c0ddd04daa63f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635132"
 ---
 # <a name="ice53"></a>ICE53
 
-ICE53 verifica la presenza di voci nella tabella del registro di sistema che scrivono le informazioni sul programma di installazione privato o i valori dei criteri nel registro di sistema.
+ICE53 verifica la presenza di voci nella tabella Registry che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
 
 ## <a name="result"></a>Risultato
 
-ICE53 pubblica un avviso se la tabella del registro di sistema specifica la scrittura delle informazioni interne o dei criteri nel registro di sistema.
+ICE53 invia un avviso se la tabella Registry specifica la scrittura di informazioni interne o sui criteri nel Registro di sistema.
 
 ## <a name="example"></a>Esempio
 
-ICE53 invia l'avviso seguente per l'esempio illustrato.
+ICE53 pubblica l'avviso seguente per l'esempio illustrato.
 
 ``` syntax
 Registry Key 'Registry1' writes Installer internal or policy information.
 ```
 
-[Tabella del registro di sistema](registry-table.md) (parziale)
+[Tabella del Registro di](registry-table.md) sistema (parziale)
 
 
 
 | Registro             | Radice         | Chiave                                                                                                   |
 |----------------------|--------------|-------------------------------------------------------------------------------------------------------|
-| Registry1<br/> | 1<br/> | **Software** \\ di **Criteri** \\ di **Microsoft** \\ **Windows** \\ **Programma di installazione** \\ **DisableRollback**<br/> |
+| Registro di sistema1<br/> | 1<br/> | **Software** \\ **Criteri** \\ **Microsoft** \\ **Windows** \\ **Programma di installazione** \\ **DisableRollback**<br/> |
 
 
 
  
 
-La riga della tabella del registro di sistema ' Registry1' scrive un valore dei criteri di sistema nel registro di sistema che influiscono sull'installazione di tutti i pacchetti. A seconda del pacchetto, può essere possibile disabilitare il rollback solo per questo pacchetto impostando la proprietà [**DisableRollback**](-disablerollback.md) nella [tabella delle proprietà](property-table.md). Vedere eseguire il [rollback dell'installazione](rollback-installation.md).
+La riga della tabella del Registro di sistema 'Registry1' scrive un valore dei criteri di sistema nel Registro di sistema che influisce sull'installazione di tutti i pacchetti. A seconda del pacchetto, potrebbe essere possibile disabilitare il rollback solo per questo pacchetto impostando la proprietà [**DISABLEROLLBACK**](-disablerollback.md) nella [tabella Delle proprietà](property-table.md). Vedere Rollback Installation ( [Rollback dell'installazione).](rollback-installation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

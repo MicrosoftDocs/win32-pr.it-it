@@ -1,6 +1,6 @@
 ---
-description: Imposta i tipi di indirizzi di rete accettati da un controllo di indirizzo di rete specificato.
-title: Messaggio NCM_SETALLOWTYPE (Shellapi. h)
+description: Imposta i tipi di indirizzi di rete accettati da un controllo degli indirizzi di rete specificato.
+title: NCM_SETALLOWTYPE messaggio (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: FD998452-047A-4aea-A08E-8F6F8C30115B
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d9cc822e07022a01439fbe7e41243bd1b78e636b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3fc6b8ceb848d4738ff2d77b4441a29354bf09248e0de88008072dbf867e8a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719925"
 ---
-# <a name="ncm_setallowtype-message"></a>\_Messaggio NCM SETALLOWTYPE
+# <a name="ncm_setallowtype-message"></a>Messaggio NCM \_ SETALLOWTYPE
 
-Imposta i tipi di indirizzi di rete accettati da un controllo di indirizzo di rete specificato.
+Imposta i tipi di indirizzi di rete accettati da un controllo degli indirizzi di rete specificato.
 
 
 ```C++
@@ -41,21 +41,21 @@ NCM_SETALLOWTYPE
 
 <dl> <dt>
 
-*addrMask* \[ in\]
-</dt> <dd>Specifica i tipi di indirizzo di rete come una o più <a href="net-string.md">**costanti \_ stringa net**</a> .</dd> <dt>
+*addrMask* \[ Pollici\]
+</dt> <dd>Specifica i tipi di indirizzi di rete come una o più costanti <a href="net-string.md">**\_ NET STRING.**</a></dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve essere zero.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se l'esito è positivo o un valore di errore in caso contrario.
+Restituisce S \_ OK in caso di esito positivo oppure un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il set di maschere è il criterio utilizzato per convalidare un indirizzo di rete nel messaggio [**NCM \_ GetAddress**](ncm-getaddress.md) .
+Il set di maschere è il criterio usato per convalidare un indirizzo di rete nel [**messaggio NCM \_ GETADDRESS.**](ncm-getaddress.md)
 
-Utilizzare questo messaggio solo per un controllo degli indirizzi di rete. Per creare un'istanza di, usare la classe **msctls \_ Netaddress** definita in Shellapi. h. Chiamare [**InitNetworkAddressControl**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) in fase di esecuzione prima di inviare questo messaggio. Viene inizializzata la libreria di controlli comuni che contiene il controllo degli indirizzi di rete.
+Usare questo messaggio solo per un controllo degli indirizzi di rete. Per creare un'istanza, usare la **classe msctls \_ netaddress** definita in Shellapi.h. Chiamare [**InitNetworkAddressControl**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) in fase di esecuzione prima di inviare questo messaggio. In questo modo viene inizializzata la libreria di controlli comuni che contiene il controllo degli indirizzi di rete.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Utilizzare questo messaggio solo per un controllo degli indirizzi di rete. Per c
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Utilizzare questo messaggio solo per un controllo degli indirizzi di rete. Per c
 [**NCM \_ GETALLOWTYPE**](ncm-getallowtype.md)
 </dt> <dt>
 
-[**\_SetAllowType NetAddr**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_setallowtype)
+[**NetAddr \_ SetAllowType**](/windows/desktop/api/Shellapi/nf-shellapi-netaddr_setallowtype)
 </dt> </dl>
 
  

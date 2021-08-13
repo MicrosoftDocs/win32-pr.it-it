@@ -7,18 +7,18 @@ keywords:
 - Esempi di Active Directory Active Directory, visualizzazione dei membri di un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ef78c23c4a32b8a8ed36c98912f8cac24d5f375
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c0eb492b50a42cb400413d4cb1779c95e7da9d33fe828ee72be7d3b068f37f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104046508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693960"
 ---
 # <a name="example-code-for-displaying-members-of-a-group"></a>Codice di esempio per la visualizzazione dei membri di un gruppo
 
 Questo argomento include esempi di codice che visualizzano i membri di un gruppo.
 
-Nell'esempio di codice C++ riportato di seguito vengono utilizzate le classi [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) e [**IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) per visualizzare i membri di un gruppo.
+Nell'esempio di codice C++ seguente vengono utilizzate le classi [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) e [**IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) per visualizzare i membri di un gruppo.
 
 
 ```C++
@@ -134,7 +134,7 @@ HRESULT PrintGroupObjectMembers(IADsGroup * pADsGroup)
 
 
 
-Nell'esempio di codice seguente Visual Basic viene utilizzata la classe [**IADs**](/windows/desktop/api/iads/nn-iads-iads) per visualizzare i membri del gruppo.
+Nell'Visual Basic di codice seguente viene utilizzata la [**classe IADs**](/windows/desktop/api/iads/nn-iads-iads) per visualizzare i membri del gruppo.
 
 
 ```VB
@@ -167,6 +167,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: c7068673-bbff-4785-a78a-90e22f52b250
 title: System.Null
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90648fbdf689849c91f043258a97ff59fc1a3996
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c41197bb4fc3abdf452c7a167a72ee99b81eb4b301e2391a671fad8081cbc9bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724086"
 ---
 # <a name="systemnull"></a>System.Null
 
@@ -53,7 +53,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -83,7 +83,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

@@ -1,41 +1,41 @@
 ---
-description: Nella tabella InstallExecuteSequence sono elencate le azioni che vengono eseguite quando il programma di installazione esegue l'azione di installazione di primo livello. Vedere il gruppo di tabelle delle procedure di installazione, usando una tabella di sequenza e l'esempio dettagliato della tabella di sequenza.
+description: La tabella InstallExecuteSequence elenca le azioni eseguite quando il programma di installazione esegue l'azione INSTALL di primo livello. Vedere Installation Procedure Tables Group, Using a Sequence Table (Gruppo di tabelle delle procedure di installazione), Using a Sequence Table (Uso di una tabella di sequenza) e Sequence Table Detailed Example (Esempio dettagliato della tabella sequence).
 ms.assetid: cdd4f02a-cfe6-4a23-9fc2-f4cb810379aa
-title: Importazione del InstallExecuteSequence
+title: Importazione di InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e4728b0a59c92dcc0d007fc816fd298455e049
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 586557130c6aa9af197d5d28f6bd750f4de736feb6982f3b7f12ce73ccf41c83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430771"
 ---
-# <a name="importing-the-installexecutesequence"></a>Importazione del InstallExecuteSequence
+# <a name="importing-the-installexecutesequence"></a>Importazione di InstallExecuteSequence
 
-Nella [tabella InstallExecuteSequence](installexecutesequence-table.md) sono elencate le azioni che vengono eseguite quando il programma di installazione esegue l' [azione di installazione](install-action.md)di primo livello. Vedere il [gruppo di tabelle delle procedure di installazione](installation-procedure-tables-group.md), [usando una tabella di sequenza](using-a-sequence-table.md)e l' [esempio dettagliato della tabella di sequenza](sequence-table-detailed-example.md).
+La [tabella InstallExecuteSequence](installexecutesequence-table.md) elenca le azioni eseguite quando il programma di installazione esegue l'azione [INSTALL di primo livello.](install-action.md) Vedere [Installation Procedure Tables Group](installation-procedure-tables-group.md), Using a Sequence [Table](using-a-sequence-table.md)e Sequence [Table Detailed Example](sequence-table-detailed-example.md).
 
-Se nella sezione [importazione di un database vuoto](importing-a-blank-database.md) utilizzato uisample.msi da Windows Installer SDK, le tabelle di sequenza nella copia di MNP2000.msi contengono già le sequenze di azioni suggerite descritte in [utilizzo di una tabella di sequenza](using-a-sequence-table.md). Per creare il pacchetto di installazione del blocco note non è necessario apportare modifiche a tali sequenze.
+Se nella sezione Importazione di un [database](importing-a-blank-database.md) vuoto è stato usato uisample.msi da Windows Installer SDK, le tabelle di sequenza nella copia di MNP2000.msi contengono già le sequenze di azione suggerite descritte in [Uso](using-a-sequence-table.md)di una tabella di sequenza . Non sono necessarie modifiche a queste sequenze per creare il Blocco note di installazione.
 
-Utilizzare l'editor di database per aprire MNP2000.msi e immettere i dati seguenti nella tabella InstallExecuteSequence.
+Usare l'editor di database per MNP2000.msi e immettere i dati seguenti nella tabella InstallExecuteSequence.
 
 [Tabella InstallExecuteSequence](installexecutesequence-table.md)
 
 
 
-| Azione                   | Condizione     | Sequenza |
+| Azione                   | Condition     | Sequenza |
 |--------------------------|---------------|----------|
 | AllocateRegistrySpace    | NON installato | 1550     |
-| AppSearch                |               | 400      |
-| Azione BindImage sul                |               | 4300     |
+| Appsearch                |               | 400      |
+| BindImage                |               | 4300     |
 | CCPSearch                | NON installato | 500      |
-| CostFinalize secondo             |               | 1000     |
+| CostFinalize             |               | 1000     |
 | CostInitialize           |               | 800      |
 | CreateFolders            |               | 3700     |
 | CreateShortcuts          |               | 4500     |
 | DeleteServices           | VersionNT     | 2000     |
 | DuplicateFiles           |               | 4210     |
-| Filecost                 |               | 900      |
+| FileCost                 |               | 900      |
 | FindRelatedProducts      |               | 200      |
 | InstallFiles             |               | 4000     |
 | InstallFinalize          |               | 6600     |
@@ -87,7 +87,7 @@ Utilizzare l'editor di database per aprire MNP2000.msi e immettere i dati seguen
 | ValidateProductID        |               | 700      |
 | WriteEnvironmentStrings  |               | 5200     |
 | WriteIniValues           |               | 5100     |
-| WriteRegistryValori consente      |               | 5000     |
+| WriteRegistryValues      |               | 5000     |
 
 
 

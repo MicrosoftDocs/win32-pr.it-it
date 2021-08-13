@@ -1,12 +1,12 @@
 ---
-title: Metodo KeyValueCompareAndSet della classe Win32_RDSHCollection
-description: Confronta la chiave specificata nella raccolta con un comparand; Se corrispondono, la chiave viene impostata su un nuovo valore. Se la chiave non esiste, il metodo inserirà la chiave nella raccolta.
+title: Metodo KeyValueCompareAndSet della Win32_RDSHCollection classe
+description: Confronta la chiave specificata nella raccolta con un confronto; Se corrispondono, la chiave viene impostata su un nuovo valore. Se la chiave non esiste, il metodo inserirà la chiave nella raccolta .
 ms.assetid: ea6195b3-1a20-4d5b-b9a3-796976818b4f
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo KeyValueCompareAndSet
-- Metodo KeyValueCompareAndSet Servizi Desktop remoto, classe Win32_RDSHCollection
-- Classe Win32_RDSHCollection Servizi Desktop remoto, metodo KeyValueCompareAndSet
+- Metodo KeyValueCompareAndSet Servizi Desktop remoto
+- Metodo KeyValueCompareAndSet Servizi Desktop remoto , Win32_RDSHCollection classe
+- Win32_RDSHCollection classe Servizi Desktop remoto, metodo KeyValueCompareAndSet
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20b90d703b40cf76f59cc3caf5d8f197f387cfe8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52e1aaaf90313c8c1434a65c4ffd1045933ad503245f0dacbf78c2b7e1ca054a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422711"
 ---
-# <a name="keyvaluecompareandset-method-of-the-win32_rdshcollection-class"></a>Metodo KeyValueCompareAndSet della \_ classe RDSHCollection Win32
+# <a name="keyvaluecompareandset-method-of-the-win32_rdshcollection-class"></a>Metodo KeyValueCompareAndSet della classe RDSHCollection Win32 \_
 
-Confronta la chiave specificata nella raccolta con un comparand; Se corrispondono, la chiave viene impostata su un nuovo valore. Se la chiave non esiste, il metodo inserirà la chiave nella raccolta.
+Confronta la chiave specificata nella raccolta con un confronto; Se corrispondono, la chiave viene impostata su un nuovo valore. Se la chiave non esiste, il metodo inserirà la chiave nella raccolta .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ uint32 KeyValueCompareAndSet(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave da confrontare.
 
 </dd> <dt>
 
-*NewValue* \[ in\]
+*NewValue* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore.
 
 </dd> <dt>
 
-*Comparand* \[ in\]
+*Comparand* \[ Pollici\]
 </dt> <dd>
 
-Stringa da confrontare con la chiave.
+Stringa con cui confrontare la chiave.
 
 </dd> <dt>
 
-*InitialValue* \[ out\]
+*InitialValue* \[ Cambio\]
 </dt> <dd>
 
 In caso di esito positivo o negativo, contiene il valore iniziale della chiave.
@@ -76,7 +76,7 @@ In caso di esito positivo o negativo, contiene il valore iniziale della chiave.
 
 ## <a name="remarks"></a>Commenti
 
-Si noti che questo metodo può recuperare il valore della chiave e, di conseguenza, incapsula la funzionalità di [**KeyValueGet**](win32-rdshcollection-keyvalueget.md).
+Si noti che questo metodo può recuperare il valore della chiave e di conseguenza incapsula la funzionalità di [**KeyValueGet.**](win32-rdshcollection-keyvalueget.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -86,8 +86,8 @@ Si noti che questo metodo può recuperare il valore della chiave e, di conseguen
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ cimv2 \\ rdms<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -96,7 +96,7 @@ Si noti che questo metodo può recuperare il valore della chiave e, di conseguen
 
 <dl> <dt>
 
-[**\_RDSHCollection Win32**](win32-rdshcollection.md)
+[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
 </dt> </dl>
 
  

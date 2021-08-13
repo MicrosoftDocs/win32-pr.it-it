@@ -1,7 +1,7 @@
 ---
-description: La proprietà errori di sola lettura dell'oggetto merge restituisce una raccolta di oggetti Error che rappresenta il set di errori corrente.
+description: La proprietà Errors di sola lettura dell'oggetto Merge restituisce una raccolta di oggetti Error che rappresenta il set corrente di errori.
 ms.assetid: 619f17cc-131a-4262-ad48-9ab1318142aa
-title: Proprietà merge. Errors (Mergemod. h)
+title: Proprietà Merge.Errors (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 9f07bdbba9fecf48001aed1fbcd42e02abb5c5c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a6abd02a59582a9fbbc65772d781c93ec68f7ffd29cf165cb624daf7d5c6a3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118628909"
 ---
-# <a name="mergeerrors-property"></a>Merge. Errors (proprietà)
+# <a name="mergeerrors-property"></a>Merge.Errors - proprietà
 
-La proprietà **errori** di sola lettura dell'oggetto [**merge**](merge-object.md) restituisce una raccolta di oggetti [**Error**](error-object.md) che rappresenta il set di errori corrente.
+La proprietà **Errors di** sola lettura dell'oggetto [**Merge**](merge-object.md) restituisce una raccolta di oggetti [**Error**](error-object.md) che rappresenta il set corrente di errori.
 
 Questa proprietà è di sola lettura.
 
@@ -40,11 +40,11 @@ propVal = Merge.Errors
 
 ## <a name="remarks"></a>Commenti
 
-Il recupero non è distruttivo. È possibile recuperare più istanze della raccolta Error chiamando ripetutamente questo metodo.
+Il recupero non è distruttivo. È possibile recuperare più istanze della raccolta di errori chiamando ripetutamente questo metodo.
 
 ### <a name="c"></a>C++
 
-Vedere la funzione [**get \_ Errors**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-get_errors) .
+Vedere [**Funzione get \_ Errors.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-get_errors)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,8 +52,8 @@ Vedere la funzione [**get \_ Errors**](/windows/win32/api/mergemod/nf-mergemod-i
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | Mergemod.dll 1,0 o versione successiva<br/>                                                    |
-| Intestazione<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versione<br/> | Mergemod.dll 1.0 o versione successiva<br/>                                                    |
+| Intestazione<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,15 +1,15 @@
 ---
-description: Informazioni su DocumentOutputBin, che descrive l'elenco completo dei bin supportati per il dispositivo e consente di specificare il bin di output per ogni documento.
+description: Informazioni su DocumentOutputBin, che descrive l'elenco completo dei bin supportati per il dispositivo e consente la specifica del bin di output per ogni documento.
 ms.assetid: 73840548-f68b-4af8-acb4-6f7faa2e8879
 title: DocumentOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afc20f15aed8d3076afb79d755c54791573b393
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2d3027e405f5fa3c07a1af9aa6ae31aa13c8409bab6b8081d995be8405cd8cf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732869"
 ---
 # <a name="documentoutputbin"></a>DocumentOutputBin
 
@@ -80,7 +80,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave pubbliche dello schema di stampa sono definite nello spazio https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords dei nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentOutputBin">
