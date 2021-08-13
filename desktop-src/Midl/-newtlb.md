@@ -1,9 +1,9 @@
 ---
-title: opzione/newtlb
-description: Questa è l'impostazione predefinita per la scelta di un formato di libreria dei tipi.
+title: Opzione /newtlb
+description: Si tratta dell'impostazione predefinita per la scelta di un formato di libreria dei tipi.
 ms.assetid: 460bc6bc-0958-42bd-92e0-838b019ec79d
 keywords:
-- /newtlb switch MIDL
+- Opzione /newtlb MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f864a4bd4d5e4c7c899cda839ae39d95791c7b23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b15ebed12b968738c1d5b26e264b88879ab61e2e6d4d587663b03365548c8b87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644029"
 ---
-# <a name="newtlb-switch"></a>opzione/newtlb
+# <a name="newtlb-switch"></a>Opzione /newtlb
 
-Questa è l'impostazione predefinita per la scelta di un formato di libreria dei tipi.
+Si tratta dell'impostazione predefinita per la scelta di un formato di libreria dei tipi.
 
 ``` syntax
 midl /newtlb filename
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 Questa opzione non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Nelle versioni recenti di Windows, questa opzione non esegue alcuna operazione. Nelle versioni di Windows non supportate, se si specifica questa opzione nella riga di comando MIDL verrà generato un errore.
+Nelle versioni recenti di Windows questa opzione non esegue alcuna operazione. Nelle versioni non supportate di Windows, specificando questa opzione nella riga di comando MIDL verrà generato un errore.
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/newtlb nomefile. idl**
+**midl /newtlb filename.idl**
 
-**MIDL nomefile. idl**
+**midl filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -51,9 +51,9 @@ Nelle versioni recenti di Windows, questa opzione non esegue alcuna operazione. 
 [**/oldtlb**](-oldtlb.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

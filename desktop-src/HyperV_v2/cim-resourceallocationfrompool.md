@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui \_ viene allocata un'istanza CIM ResourceAllocationSettingData da un pool di risorse.
+description: Rappresenta un'associazione in cui un'istanza di CIM \_ ResourceAllocationSettingData viene allocata da un pool di risorse.
 ms.assetid: ca9060e5-4434-4302-a840-a7d9cf5db714
-title: Classe CIM_ResourceAllocationFromPool
+title: CIM_ResourceAllocationFromPool classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 09bd7b70d49d2304062d35d29586fea886c86a3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b73dd49232fd7c68ce5fbb52ecdb07d6721fbd83c3e9e60425178e0323b5dbf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648173"
 ---
-# <a name="cim_resourceallocationfrompool-class"></a>CIM \_ ResourceAllocationFromPool (classe)
+# <a name="cim_resourceallocationfrompool-class"></a>Classe CIM \_ ResourceAllocationFromPool
 
-Rappresenta un'associazione in cui viene allocata un'istanza [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) da un pool di risorse.
+Rappresenta un'associazione in cui [**un'istanza di CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) viene allocata da un pool di risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ class CIM_ResourceAllocationFromPool : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ ResourceAllocationFromPool** presenta questi tipi di membri:
+La **classe CIM \_ ResourceAllocationFromPool** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ ResourceAllocationFromPool** dispone di queste proprietà.
+La **classe CIM \_ ResourceAllocationFromPool** ha queste proprietà.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo di dati: **CIM \_ ResourcePool**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Pool di risorse.
@@ -74,7 +74,7 @@ Tipo di dati: **CIM \_ ResourceAllocationSettingData**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
 Dati di allocazione delle risorse.
@@ -89,8 +89,8 @@ Dati di allocazione delle risorse.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Dati di allocazione delle risorse.
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

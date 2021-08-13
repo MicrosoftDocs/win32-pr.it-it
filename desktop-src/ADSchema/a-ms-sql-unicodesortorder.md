@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9240844a45e8e4ea567ff96df0eb992f316a7787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f340541c4fddbed9671c8c7965b0d145175d8fd8c7964e779459ec7c3f79f5c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686461"
 ---
 # <a name="ms-sql-unicodesortorder-attribute"></a>Attributo MS-SQL-UnicodeSortOrder
 
@@ -30,12 +30,12 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-UnicodeSortOrder              |
-| LDAP-Display-Name | mS-SQL-UnicodeSortOrder              |
+| Ldap-Display-Name | mS-SQL-UnicodeSortOrder              |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Aggiorna privilegio  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | All'avvio del sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1372              |
-| System-ID-GUID    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
+| System-Id-Guid    | 72dc918a-ccee-11d2-9993-0000f87a57d4 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Ordinamento Unicode per l'istanza corrente di SQL Server.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 

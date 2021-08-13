@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsSession (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsSession ottengono o impostano le proprietà descritte nella tabella seguente. Per ulteriori informazioni e per una discussione generale sui metodi di proprietà, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsSession (Iads.h)
+description: I metodi delle proprietà dell'interfaccia IADsSession ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: b2366da7-c51c-4279-8931-2000d3110d72
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsSession ADSI
+- Metodi della proprietà IADsSession ADSI
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf7dd9abe25d731ba63385cd8d632c4212ea349
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8227c855be1704754be6e2b610f492eff26c8ceb966e3294c6672a8fbeb6dac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118690736"
 ---
-# <a name="iadssession-property-methods"></a>Metodi di proprietà IADsSession
+# <a name="iadssession-property-methods"></a>Metodi della proprietà IADsSession
 
-I metodi di proprietà dell'interfaccia [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) ottengono o impostano le proprietà descritte nella tabella seguente. Per ulteriori informazioni e per una discussione generale sui metodi di proprietà, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi delle proprietà [**dell'interfaccia IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni e una discussione generale sui metodi di proprietà, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -52,7 +52,7 @@ Nome della workstation client.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -77,7 +77,7 @@ ADsPath dell'oggetto computer per la workstation client.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -92,7 +92,7 @@ HRESULT get_ComputerPath(
 
 </dt> </dl> </dd> <dt>
 
-**Tempo**
+**ConnectTime**
 </dt> <dd> <dl>
 
 Tempo trascorso, in secondi, dall'avvio della sessione.
@@ -102,7 +102,7 @@ Tempo trascorso, in secondi, dall'avvio della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -117,7 +117,7 @@ HRESULT get_ConnectTime(
 
 </dt> </dl> </dd> <dt>
 
-**Tempoinattività**
+**IdleTime**
 </dt> <dd> <dl>
 
 Tempo di inattività, in secondi, della sessione.
@@ -127,7 +127,7 @@ Tempo di inattività, in secondi, della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -152,7 +152,7 @@ Nome dell'utente della sessione.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -170,14 +170,14 @@ HRESULT get_User(
 **UserPath**
 </dt> <dd> <dl>
 
-ADsPath dell'oggetto utente per l'utente della sessione.
+ADsPath dell'oggetto utente per l'utente di questa sessione.
 
 <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -196,7 +196,7 @@ HRESULT get_UserPath(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato come esaminare le sessioni per un servizio file.
+Nell'esempio di codice seguente viene illustrato come esaminare le sessioni per un servizio file.
 
 
 ```VB
@@ -297,9 +297,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsSession è definito come 398B7DA0-4aab-11CF-AE2C-00AA006EBFB9<br/>          |
+| IID<br/>                      | IADsSession IID è definito come \_ 398B7DA0-4AAB-11CF-AE2C-00AA006EBFB9<br/>          |
 
 
 
@@ -307,7 +307,7 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADsFileServiceOperations:: Sessions**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
+[**IADsFileServiceOperations::Sessions**](/windows/desktop/api/Iads/nf-iads-iadsfileserviceoperations-sessions)
 </dt> <dt>
 
 [**IADsSession**](/windows/desktop/api/Iads/nn-iads-iadssession)

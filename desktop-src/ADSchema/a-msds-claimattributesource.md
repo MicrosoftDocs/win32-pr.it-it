@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Claim-attribute-source
-description: Per un oggetto tipo di attestazione, questo attributo punta all'attributo che verrà utilizzato come origine per il tipo di attestazione.
+title: Attributo ms-DS-Claim-Attribute-Source
+description: Per un oggetto tipo di attestazione, questo attributo punta all'attributo che verrà usato come origine per il tipo di attestazione.
 ms.assetid: 5431007f-75c4-4212-8198-baad3c272823
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Claim-attribute-source
-- attributo msDS-ClaimAttributeSource-schema AD
+- Ms-DS-Claim-Attribute-Source attribute AD Schema
+- Schema AD dell'attributo msDS-ClaimAttributeSource
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d50a363cddb056ceaaa1c03905f724a394cf9b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 345bbc2e15dcea74d68c6c7c4c90298167f546aefc078e4c3d9f3baa1e347e93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685175"
 ---
-# <a name="ms-ds-claim-attribute-source-attribute"></a>attributo ms-DS-Claim-attribute-source
+# <a name="ms-ds-claim-attribute-source-attribute"></a>Attributo ms-DS-Claim-Attribute-Source
 
-Per un oggetto tipo di attestazione, questo attributo punta all'attributo che verrà utilizzato come origine per il tipo di attestazione.
+Per un oggetto tipo di attestazione, questo attributo punta all'attributo che verrà usato come origine per il tipo di attestazione.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Claim-attribute-source            |
-| LDAP-Display-Name | msDS-ClaimAttributeSource               |
+| CN                | ms-DS-Claim-Attribute-Source            |
+| Ldap-Display-Name | msDS-ClaimAttributeSource               |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2099                 |
-| System-ID-GUID    | eebc123e-bae6-4166-9e5b-29884a8b76b0    |
+| System-Id-Guid    | eebc123e-bae6-4166-9e5b-29884a8b76b0    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -53,15 +53,15 @@ Per un oggetto tipo di attestazione, questo attributo punta all'attributo che ve
 | ID collegamento                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| È a valore singolo       | Vero                                                    |
+| A valore singolo       | Vero                                                    |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
+| Classi usate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La proprietà Environment dell'oggetto Installer è una proprietà di lettura/scrittura che corrisponde al valore stringa per una variabile di ambiente del processo corrente.
+description: La proprietà Environment dell'oggetto Installer è una proprietà di lettura/scrittura che rappresenta il valore stringa per una variabile di ambiente del processo corrente.
 ms.assetid: f59a270f-9bd8-4d17-96e2-cb3c62a31cad
-title: Proprietà Installer. Environment
+title: Proprietà Installer.Environment
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3983eceecd8bc709bea4a094c61c9886c73def3a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f24237da6c140ef0d38ff17591bf214698cfa6731bd4e8d3cfcaa613b335404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631687"
 ---
-# <a name="installerenvironment-property"></a>Proprietà Installer. Environment
+# <a name="installerenvironment-property"></a>Proprietà Installer.Environment
 
-La proprietà **Environment** dell'oggetto [**Installer**](installer-object.md) è una proprietà di lettura/scrittura che corrisponde al valore stringa per una variabile di ambiente del processo corrente.
+La **proprietà Environment** dell'oggetto [**Installer**](installer-object.md) è una proprietà di lettura/scrittura che rappresenta il valore stringa per una variabile di ambiente del processo corrente.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -42,7 +42,7 @@ Nome della variabile di ambiente da leggere o scrivere. Questa operazione non fa
 
 ## <a name="remarks"></a>Commenti
 
-L'impostazione di una variabile di ambiente con la proprietà **Environment** ha effetto solo sulla sessione attiva. Per apportare modifiche permanenti a una variabile di ambiente, usare la [tabella Environment](environment-table.md).
+L'impostazione di una variabile di ambiente **con la proprietà Environment** influisce solo sulla sessione attiva. Per apportare modifiche permanenti a una variabile di ambiente, usare la [tabella Environment](environment-table.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ L'impostazione di una variabile di ambiente con la proprietà **Environment** ha
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

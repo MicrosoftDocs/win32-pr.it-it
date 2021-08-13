@@ -1,10 +1,10 @@
 ---
-title: Moniker-display-name-attributo
+title: Attributo Moniker-Display-Name
 description: Nome visualizzato per un moniker.
 ms.assetid: 6c352e25-5834-414d-af3f-c4a17b6bee7d
 ms.tgt_platform: multiple
 keywords:
-- Moniker-display-name-schema di AD attributo
+- Schema AD dell'attributo Moniker-Display-Name
 - Schema AD dell'attributo monikerDisplayName
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d9810fbb0ca45ffce7351bb32d3a7800b2c85e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6531c001ada864ff4f659868a5a4ef961c262d80fe8eb34bfcf7da4198c3bf9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687074"
 ---
-# <a name="moniker-display-name-attribute"></a>Moniker-display-name-attributo
+# <a name="moniker-display-name-attribute"></a>Attributo Moniker-Display-Name
 
 Nome visualizzato per un moniker.
 
@@ -30,12 +30,12 @@ Nome visualizzato per un moniker.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Moniker-Display-Name                        |
-| LDAP-Display-Name | monikerDisplayName                          |
+| Ldap-Display-Name | monikerDisplayName                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.83                       |
-| System-ID-GUID    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Com-Connection-Point**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome visualizzato per un moniker.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 

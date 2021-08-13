@@ -1,8 +1,8 @@
 ---
-description: Per ricevere notifiche dal provider del registro di sistema, un'applicazione di gestione deve registrarsi come consumer di eventi temporanei.
+description: Per ricevere notifiche dal provider del Registro di sistema, un'applicazione di gestione deve registrarsi come consumer di eventi temporaneo.
 ms.assetid: 4cac5fdd-c842-4d7e-a56e-2e1312df68b4
 ms.tgt_platform: multiple
-title: Registrazione per eventi registro di sistema
+title: Registrazione per gli eventi del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,36 +10,36 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 886046f5ffef366cdba2efb86629019f2ee0b5e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c6f60b21dee729a879aaeab676da67b06ca0a822bcfd6509bc0f406f96fecec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118554246"
 ---
-# <a name="registering-for-system-registry-events"></a>Registrazione per eventi registro di sistema
+# <a name="registering-for-system-registry-events"></a>Registrazione per gli eventi del Registro di sistema
 
-Per ricevere notifiche dal provider [del registro di sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) , un'applicazione di gestione deve registrarsi come consumer di eventi temporanei. La maggior parte dei requisiti per la registrazione per il provider del registro di sistema è identica a quella di qualsiasi altra registrazione di eventi, ad eccezione del fatto che è necessario eseguire anche la procedura riportata di seguito.
+Per ricevere notifiche dal provider del [Registro di sistema,](/previous-versions/windows/desktop/regprov/system-registry-provider) un'applicazione di gestione deve registrarsi come consumer di eventi temporaneo. La maggior parte dei requisiti per la registrazione per il provider del Registro di sistema è identica a qualsiasi altra registrazione di eventi, ad eccezione del fatto che è necessario eseguire anche la procedura seguente.
 
-Il provider del registro di sistema fornisce le classi di evento per gli eventi nel registro di sistema. Per ulteriori informazioni sulla registrazione di eventi generali, vedere [ricezione di un evento WMI](receiving-a-wmi-event.md).
+Il provider del Registro di sistema fornisce classi di evento per gli eventi nel Registro di sistema. Per altre informazioni sulla registrazione generale degli eventi, vedere [Ricezione di un evento WMI.](receiving-a-wmi-event.md)
 
-Nella procedura seguente viene descritto come eseguire la registrazione per gli eventi del registro di sistema.
+Nella procedura seguente viene descritto come eseguire la registrazione per gli eventi del Registro di sistema.
 
-**Per eseguire la registrazione per gli eventi del registro di sistema**
+**Per eseguire la registrazione per gli eventi del Registro di sistema**
 
 1.  Chiamare un metodo di query di notifica.
 
-    In uno script o in C++ usare una query di notifica, ad esempio [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) o [**IWbemServices:: ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync). Creare una stringa di query per il parametro *bstrQuery* di **IWbemServices:: ExecNotificationQueryAsync** o *strQuery* nello script.
+    Nello script o in C++, usare una query di notifica, ad esempio [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md) o [**IWbemServices::ExecNotificationQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationqueryasync). Creare una stringa di query per il parametro *bstrQuery* di **IWbemServices::ExecNotificationQueryAsync** o *strQuery* nello script.
 
-2.  Determinare il tipo di evento che si desidera ricevere e creare la query.
+2.  Determinare il tipo di evento che si vuole ricevere e creare la query.
 
-    Nella tabella seguente sono elencate le classi di eventi del registro di sistema che è possibile utilizzare.
+    Nella tabella seguente sono elencate le classi di eventi del Registro di sistema che è possibile utilizzare.
 
     
 
-    | classe di evento                                                      | Posizione hive        | Descrizione                                                 |
+    | classe di evento                                                      | Percorso Hive        | Descrizione                                                 |
     |------------------------------------------------------------------|----------------------|-------------------------------------------------------------|
-    | [**RegistryEvent**](/previous-versions/windows/desktop/regprov/registryevent)                       | N/D<br/>       | Classe di base astratta per le modifiche nel registro di sistema.<br/> |
+    | [**RegistryEvent**](/previous-versions/windows/desktop/regprov/registryevent)                       | N/A<br/>       | Classe di base astratta per le modifiche apportate al Registro di sistema.<br/> |
     | [**RegistryTreeChangeEvent**](/previous-versions/windows/desktop/regprov/registrytreechangeevent)   | RootPath<br/>  | Monitora le modifiche apportate a una gerarchia di chiavi.<br/>         |
     | [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent)     | KeyPath<br/>   | Monitora le modifiche apportate a una singola chiave.<br/>                |
     | [**RegistryValueChangeEvent**](/previous-versions/windows/desktop/regprov/registryvaluechangeevent) | ValueName<br/> | Monitora le modifiche apportate a un singolo valore.<br/>              |
@@ -48,19 +48,19 @@ Nella procedura seguente viene descritto come eseguire la registrazione per gli 
 
      
 
-    Queste classi hanno una proprietà denominata **hive** che identifica la gerarchia delle chiavi da monitorare per la modifica, ad esempio **il \_ \_ computer locale HKEY**.
+    Queste classi hanno una proprietà denominata **Hive** che identifica la gerarchia delle chiavi da monitorare per le modifiche, ad esempio **HKEY \_ LOCAL \_ MACHINE.**
 
-    Le modifiche apportate alle **\_ classi HKEY \_ radice** e HKEY gli hive **\_ correnti \_ dell'utente** non sono supportate da [**RegistryEvent**](/previous-versions/windows/desktop/regprov/registryevent) o dalle classi derivate, ad esempio [**RegistryTreeChangeEvent**](/previous-versions/windows/desktop/regprov/registrytreechangeevent).
+    Le modifiche agli **hive HKEY \_ CLASSES \_ ROOT** e **HKEY \_ CURRENT \_ USER** non sono supportate da [**RegistryEvent**](/previous-versions/windows/desktop/regprov/registryevent) o dalle classi da esso derivate, ad esempio [**RegistryTreeChangeEvent.**](/previous-versions/windows/desktop/regprov/registrytreechangeevent)
 
 3.  Creare la clausola WHERE per la registrazione dell'evento.
 
-    Il provider del registro di sistema ha regole specifiche per le clausole WHERE. Per ulteriori informazioni, vedere [creazione di una clausola WHERE corretta per il provider del registro di sistema](creating-a-proper-where-clause-for-the-registry-provider.md). Per informazioni generali sulla creazione di una clausola WHERE, vedere [esecuzione di query con WQL](querying-with-wql.md).
+    Il provider del Registro di sistema dispone di regole specifiche per le clausole WHERE. Per altre informazioni, vedere [Creazione di una clausola WHERE appropriata per il provider del Registro di sistema.](creating-a-proper-where-clause-for-the-registry-provider.md) Per informazioni più generali sulla creazione di una clausola WHERE, vedere [Esecuzione di query con WQL.](querying-with-wql.md)
 
-4.  Determinare se il consumer riceve gli eventi.
+4.  Determinare se il consumer sta ricevendo eventi.
 
-    Il provider del registro di sistema non garantisce che tutti gli eventi inviati vengano recapitati. Per ulteriori informazioni, vedere [ricezione degli eventi del registro di sistema](receiving-registry-events.md).
+    Il provider del Registro di sistema non garantisce che tutti gli eventi inviati siano recapitati. Per altre informazioni, vedere Ricezione [di eventi del Registro di sistema.](receiving-registry-events.md)
 
-Nell'esempio di codice VBScript seguente viene illustrato come rilevare una modifica del registro di sistema nel software del **\_ \_ computer locale HKEY** \\  \\ **Microsoft** hive o sottoalbero. Si tratta di uno script di monitoraggio che, a scopo dimostrativo, viene eseguito in un processo denominato Wscript.exe fino a quando non viene terminato in **Gestione attività**, WMI viene arrestato o il sistema operativo viene riavviato. Lo script usa una chiamata [*semisincrono*](gloss-s.md) per [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Per ulteriori informazioni sulle chiamate semisincrono, vedere [creazione di una chiamata semisincrono con VBScript](making-a-semisynchronous-call-with-vbscript.md).
+Nell'esempio di codice VBScript seguente viene illustrato come rilevare una modifica del Registro di sistema nell'hive o nel sottoalbero **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** di \\ **Microsoft.** Si tratta di uno script di monitoraggio che, a scopo dimostrativo, viene eseguito in un processo denominato Wscript.exe fino a quando non viene terminato in **Gestione attività**, WMI viene arrestato o il sistema operativo non viene riavviato. Lo script usa una [*chiamata semisincrono*](gloss-s.md) a [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md). Per altre informazioni sulle chiamate semisincrono, vedere Esecuzione di una chiamata [semisincrono con VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
 
 ```VB
@@ -81,9 +81,9 @@ Wend
 
 
 
-Nell'esempio di codice VBScript seguente viene illustrato come monitorare la modifica nei valori di una chiave eseguendo la registrazione per il tipo di evento del provider del registro di sistema [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). Lo script chiama un metodo asincrono, [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md). Per ulteriori informazioni sulle chiamate asincrone e sulla sicurezza, vedere [creazione di una chiamata asincrona con VBScript](making-an-asynchronous-call-with-vbscript.md).
+Nell'esempio di codice VBScript seguente viene illustrato come monitorare la modifica dei valori di una chiave registrando per il tipo di evento [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent)del provider del Registro di sistema. Lo script chiama un metodo asincrono, [**SWbemServices.ExecNotificationQueryAsync**](swbemservices-execnotificationqueryasync.md). Per altre informazioni sulle chiamate asincrone e sulla sicurezza, vedere [Esecuzione di una chiamata asincrona con VBScript.](making-an-asynchronous-call-with-vbscript.md)
 
-Lo script seguente viene eseguito a tempo indefinito fino a quando il computer non viene riavviato, WMI viene arrestato o lo script viene arrestato. Per arrestare manualmente lo script, utilizzare Gestione attività per arrestare il processo. Per arrestarla a livello di codice, usare il metodo [**Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) nella \_ classe del processo Win32.
+Lo script seguente viene eseguito per un periodo illimitato fino al riavvio del computer, all'arresto di WMI o all'arresto dello script. Per arrestare manualmente lo script, usare Gestione attività per arrestare il processo. Per arrestarlo a livello di codice, usare [**il metodo Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) nella classe Win32 \_ Process.
 
 
 ```VB

@@ -1,5 +1,5 @@
 ---
-description: Richiede la reimpostazione del LogicalDevice.
+description: Richiede una reimpostazione di LogicalDevice.
 ms.assetid: f7655825-3de5-421f-a3e9-97d2f605affd
 title: Metodo Reset della classe CIM_LogicalDevice (gestione Hyper-V)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 851332103143e84863762d8cc1183ec3ad841ca6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81f69f57af9d8633874a6b3713ff85cd1342c9df56b22924096619b834f1b867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648536"
 ---
 # <a name="reset-method-of-the-cim_logicaldevice-class-hyper-v-management"></a>Metodo Reset della classe CIM_LogicalDevice (gestione Hyper-V)
 
-Richiede la reimpostazione del LogicalDevice. In una sottoclasse è possibile specificare il set di possibili codici restituiti utilizzando un qualificatore ValueMap nel metodo. Le stringhe a cui è stato convertito il contenuto ValueMap possono anche essere specificate nella sottoclasse come qualificatore della matrice di valori.
+Richiede una reimpostazione di LogicalDevice. In una sottoclasse è possibile impostare il set di possibili codici restituiti usando un qualificatore ValueMap nel metodo . Le stringhe in cui il contenuto di ValueMap viene "tradotto" possono essere specificate anche nella sottoclasse come qualificatore di matrice Values.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,9 +48,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -59,7 +59,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

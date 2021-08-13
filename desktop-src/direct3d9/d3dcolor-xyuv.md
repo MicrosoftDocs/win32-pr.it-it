@@ -1,7 +1,7 @@
 ---
 description: Inizializza un colore con i valori (y, u, v).
 ms.assetid: e3091eaf-8639-428c-8dd8-6feeb7d7776e
-title: D3DCOLOR_XYUV macro (D3d9types. h)
+title: D3DCOLOR_XYUV macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 12d539e44528c5e54a54209763e4cbe262cd16f7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: caa6bc1eb9586c1526a7af674040fd703ff0a75a5055ce42e13378206e82c879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103886271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300325"
 ---
-# <a name="d3dcolor_xyuv-macro"></a>D3DCOLOR \_ XYUV-macro
+# <a name="d3dcolor_xyuv-macro"></a>Macro D3DCOLOR \_ XYUV
 
 Inizializza un colore con i valori (y, u, v).
 
@@ -44,7 +44,7 @@ D3DCOLOR D3DCOLOR_XYUV(
 *y* 
 </dt> <dd>
 
-Componente di luminanza del colore. Questo valore deve essere compreso tra 0 e 255.
+Componente Luminance del colore. Questo valore deve essere compreso tra 0 e 255.
 
 </dd> <dt>
 
@@ -64,11 +64,11 @@ Luminosità rossa del colore. Questo valore deve essere compreso tra 0 e 255.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore [**D3DCOLOR**](d3dcolor.md) che corrisponde ai valori specificati (y, u, v).
+Restituisce il [**valore D3DCOLOR**](d3dcolor.md) che corrisponde ai valori (y, u, v) forniti.
 
 ## <a name="remarks"></a>Commenti
 
-Un colore RGB può essere ridotto a 16 bit per pixel mediante conversione in luminanza e differenze di colore con le equazioni seguenti:
+Un colore RGB può essere ridotto a 16 bit per pixel conversione in luminance e differenze di colore con le equazioni seguenti:
 
 
 ```C++
@@ -85,7 +85,7 @@ v = red - luminance
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ v = red - luminance
 [**D3DCOLOR \_ ARGB**](d3dcolor-argb.md)
 </dt> <dt>
 
-[**\_AYUV D3DCOLOR**](d3dcolor-ayuv.md)
+[**D3DCOLOR \_ AYUV**](d3dcolor-ayuv.md)
 </dt> </dl>
 
  

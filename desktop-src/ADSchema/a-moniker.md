@@ -1,11 +1,11 @@
 ---
-title: Attributo moniker
+title: Attributo Moniker
 description: Nome o percorso di un oggetto COM.
 ms.assetid: e1ddcf9e-f8db-4aa0-a387-352a467a5b2c
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo moniker
-- Schema di AD dell'attributo moniker
+- Schema AD dell'attributo moniker
+- Schema AD dell'attributo moniker
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef9d1eeb5d4c635379704a7dc250c3c80a2f9c07
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f73aa1deee1052c070e948da29429f43d98acaf2b3d40d400d87ae0424b1c04d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687237"
 ---
-# <a name="moniker-attribute"></a>Attributo moniker
+# <a name="moniker-attribute"></a>Attributo Moniker
 
 Nome o percorso di un oggetto COM.
 
@@ -30,12 +30,12 @@ Nome o percorso di un oggetto COM.
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Moniker                                               |
-| LDAP-Display-Name | moniker                                               |
+| Ldap-Display-Name | moniker                                               |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.82                                 |
-| System-ID-GUID    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
+| System-Id-Guid    | bf9679c7-0de6-11d0-a285-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Nome o percorso di un oggetto COM.
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Falso                                                                                                   |
-| È a valore singolo       | Falso                                                                                                   |
+| A valore singolo       | Falso                                                                                                   |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | \-                                                                                                      |
 | Range-Upper            | \-                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000010                                                                                              |
-| Classi utilizzate in        | [**Com-punto di connessione**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
+| Classi usate in        | [**Punto di connessione com**](c-comconnectionpoint.md)<br/> [**Archiviazione**](c-storage.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Restituisce un oggetto elenco che elenca i prodotti che utilizzano un componente installato specificato.
+description: Restituisce un oggetto RecordList che elenca i prodotti che usano un componente installato specificato.
 ms.assetid: c9756526-68d7-4d04-97e2-56a5eaf816be
-title: Proprietà Installer. ClientsEx
+title: Proprietà Installer.ClientsEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 5a609ab0ba6edc5b0e3e9bbd26bc3539858ebdee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54ecc8c0d76ae5105aec07a85adb18d93a8e7a9b75162f8124bb32fdd7f64597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632928"
 ---
-# <a name="installerclientsex-property"></a>Proprietà Installer. ClientsEx
+# <a name="installerclientsex-property"></a>Proprietà Installer.ClientsEx
 
-Questa proprietà restituisce un [**oggetto elenco di elementi**](recordlist-object.md) che elenca i prodotti che utilizzano un componente installato specificato. Questa proprietà chiama [**MsiEnumClientsEx**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa).
+Questa proprietà restituisce un [**oggetto RecordList**](recordlist-object.md) che elenca i prodotti che usano un componente installato specificato. Questa proprietà chiama [**MsiEnumClientsEx**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa).
 
-**[Windows Installer 4,5 o versioni precedenti](not-supported-in-windows-installer-4-5.md):** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5,0.
+**[Windows Installer 4.5 o versioni precedenti:](not-supported-in-windows-installer-4-5.md)** Non supportato. Questa proprietà è disponibile a partire da Windows Installer 5.0.
 
 Questa proprietà è di sola lettura.
 
@@ -45,9 +45,9 @@ propVal = Installer.ClientsEx
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                      |
-| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                           |
+| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                           |
 
 
 

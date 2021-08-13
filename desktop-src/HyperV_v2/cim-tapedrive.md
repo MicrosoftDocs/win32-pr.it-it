@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le funzionalità e la gestione di un'unità nastro.
 ms.assetid: 8140fd9a-8a12-43b4-bc61-ec143e5d754c
-title: Classe CIM_TapeDrive (gestione Hyper-V)
+title: CIM_TapeDrive classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b92360388b71abcb0b67d30fddea9b4f5ed7920f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4c12dce8e67a2f46d9c7e7a1ab4ae0772b9e20517da6ab58c00c45a9ea8c71b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646709"
 ---
-# <a name="cim_tapedrive-class-hyper-v-management"></a>Classe CIM_TapeDrive (gestione Hyper-V)
+# <a name="cim_tapedrive-class-hyper-v-management"></a>CIM_TapeDrive classe (gestione Hyper-V)
 
 Rappresenta le funzionalità e la gestione di un'unità nastro.
 
@@ -43,36 +43,36 @@ class CIM_TapeDrive : CIM_MediaAccessDevice
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ TapeDrive** presenta questi tipi di membri:
+La **classe CIM \_ TapeDrive** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ TapeDrive** dispone di queste proprietà.
+La **classe CIM \_ TapeDrive** ha queste proprietà.
 
 <dl> <dt>
 
 **EOTWarningZoneSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("byte"), **punito** ("byte")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), **PUnit** ("byte")
 </dt> </dl>
 
-Dimensione, in byte, dell'area designata come "fine del nastro". L'accesso in quest'area genera un avviso "fine nastro".
+Dimensione, in byte, dell'area designata come "fine del nastro". L'accesso in questa area genera un avviso "fine del nastro".
 
 </dd> <dt>
 
 **MaxPartitionCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -85,32 +85,32 @@ Numero massimo di partizioni per l'unità nastro.
 **MaxRewindTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("millisecondi"), **punito** ("secondo \* 10 ^-3")
+Qualificatori: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("MilliSeconds"), **PUnit** ("second \* 10^-3")
 </dt> </dl>
 
-Tempo, in millisecondi, per lo spostamento dal punto più distante fisicamente sul nastro all'inizio.
+Tempo, in millisecondi, per lo spostamento dal punto fisicamente più distante sul nastro all'inizio.
 
 </dd> <dt>
 
 **Riempimento**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("byte"), **punito** ("byte")
+Qualificatori: [**Unità**](/windows/desktop/WmiSdk/standard-qualifiers) ("Byte"), **PUnit** ("byte")
 </dt> </dl>
 
-Numero di byte inseriti tra i blocchi sui supporti su nastro.
+Numero di byte inseriti tra blocchi su supporti nastro.
 
 </dd> </dl>
 
@@ -121,9 +121,9 @@ Numero di byte inseriti tra i blocchi sui supporti su nastro.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -132,7 +132,7 @@ Numero di byte inseriti tra i blocchi sui supporti su nastro.
 
 <dl> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> </dl>
 
  

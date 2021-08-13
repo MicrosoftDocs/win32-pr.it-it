@@ -1,8 +1,8 @@
 ---
-title: Struttura DO_DOWNLOAD_STATUS
-description: Utilizzato per ottenere lo stato di un download specifico.
+title: DO_DOWNLOAD_STATUS struttura
+description: Usato per ottenere lo stato di un download specifico.
 keywords:
-- Struttura DO_DOWNLOAD_STATUS
+- DO_DOWNLOAD_STATUS struttura
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 5e113bb4866ef1033886dbb1579d21aa296d0e5e
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 8775b7daf55d58698d00bcaa2820b909e302933c9f407d1cb6416d6b095a872b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "106299299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543735"
 ---
-# <a name="do_download_status-structure"></a>Struttura DO_DOWNLOAD_STATUS
+# <a name="do_download_status-structure"></a>DO_DOWNLOAD_STATUS struttura
 
-La struttura **DO_DOWNLOAD_STATUS** viene utilizzata per ottenere lo stato di un download specifico. Viene ottenuto chiamando la funzione **IDODownload:: GetStatus** .
+La **DO_DOWNLOAD_STATUS** struttura viene usata per ottenere lo stato di un download specifico. Viene ottenuto chiamando la **funzione IDODownload::GetStatus.**
 
 ## <a name="syntax"></a>Sintassi
 ```cpp
@@ -49,20 +49,20 @@ Numero di byte già scaricati.
 
 `State`
 
-Stato di download corrente in base a quanto definito dall'enumerazione **DODownloadState** .
+Stato di download corrente definito **dall'enumerazione DODownloadState.**
 
 `Error`
 
-Informazioni sull'errore, se esistenti, associate al download corrente.
+Informazioni sull'errore (se presenti) associate al download corrente.
 
 `ExtendedError`
 
-Informazioni estese sull'errore, se esistenti, associate al download corrente.
+Informazioni sull'errore estese (se presenti) associate al download corrente.
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | Do. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, solo applicazioni Win32 versione 1809 \[\] |
+| **Intestazione** | Do.h |

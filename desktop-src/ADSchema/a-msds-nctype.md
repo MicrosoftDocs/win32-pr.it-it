@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-NC-Type
-description: Oggetto bit che gestisce informazioni sugli aspetti di una replica NC rilevanti per la replica.
+title: Attributo ms-DS-NC-Type
+description: Campo di bit che gestisce informazioni sugli aspetti di una replica NC rilevanti per la replica.
 ms.assetid: 8e838e7b-b19f-4c9e-8fb9-cf9f1076af56
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo di tipo MS-DS-NC
-- attributo msDS-NcType-schema AD
+- Schema AD dell'attributo ms-DS-NC-Type
+- Schema AD dell'attributo msDS-NcType
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd2d5a6fdb3dcf4e21192b59323b3b6630597065
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 01da3f99ae6a3bdef6bb94396da869426a86fa1e09d46098c4831d8ec4c7c8ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684239"
 ---
-# <a name="ms-ds-nc-type-attribute"></a>attributo ms-DS-NC-Type
+# <a name="ms-ds-nc-type-attribute"></a>Attributo ms-DS-NC-Type
 
-Oggetto bit che gestisce informazioni sugli aspetti di una replica NC rilevanti per la replica.
+Campo di bit che gestisce informazioni sugli aspetti di una replica NC rilevanti per la replica.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-NC-Type                        |
-| LDAP-Display-Name | msDS-NcType                          |
+| Ldap-Display-Name | msDS-NcType                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2024              |
-| System-ID-GUID    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
+| System-Id-Guid    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Oggetto bit che gestisce informazioni sugli aspetti di una replica NC rilevanti 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Oggetto bit che gestisce informazioni sugli aspetti di una replica NC rilevanti 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Oggetto bit che gestisce informazioni sugli aspetti di una replica NC rilevanti 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

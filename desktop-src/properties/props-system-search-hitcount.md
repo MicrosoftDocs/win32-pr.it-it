@@ -1,19 +1,19 @@
 ---
-description: Quando si utilizza CONTAINs sull'indice di ricerca di Windows, questo è il numero di corrispondenze del termine. Se sono presenti più contenuti, un oggetto e calcola il numero minimo di riscontri e un oggetto o calcola il numero massimo di riscontri.
+description: Quando si usa CONTAINS sul Windows di ricerca, questo è il numero di corrispondenze del termine. Se sono presenti più contains, and calcola il numero minimo di riscontri e or calcola il numero massimo di riscontri.
 ms.assetid: 2f0cddba-7535-451f-9bb5-846c06c426f8
-title: System. search. HitCount
+title: System.Search.HitCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5bb3954d891c1f7c913036449094c27f64cea7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3836a6548197ee8a142e3a2db973808a9295a10aef119229d8d132dd8189aac8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464916"
 ---
-# <a name="systemsearchhitcount"></a>System. search. HitCount
+# <a name="systemsearchhitcount"></a>System.Search.HitCount
 
-Quando si utilizza CONTAINs sull'indice di ricerca di Windows, questo è il numero di corrispondenze del termine. Se sono presenti più contenuti, un oggetto e calcola il numero minimo di riscontri e un oggetto o calcola il numero massimo di riscontri.
+Quando si usa CONTAINS sul Windows di ricerca, questo è il numero di corrispondenze del termine. Se sono presenti più contains, and calcola il numero minimo di riscontri e or calcola il numero massimo di riscontri.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

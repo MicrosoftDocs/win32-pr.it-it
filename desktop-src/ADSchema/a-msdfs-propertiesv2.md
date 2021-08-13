@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-Properties-V2
-description: Proprietà associate alla radice DFS o al collegamento.
+title: Attributo ms-DFS-Properties-v2
+description: Proprietà associate alla radice o al collegamento DFS.
 ms.assetid: e7711f37-21ae-43ca-a064-917a730bb94a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-Properties-V2
-- msDFS-schema AD attributo Propertiesv2
+- Schema AD dell'attributo ms-DFS-Properties-v2
+- Schema AD dell'attributo msDFS-Propertiesv2
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cdb9592743b27ee4e63bde78693c299657716c7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a6e642dac8bbb955ff6f80eb31988c33dc47daa559e57f5ddbae2f8531a9b491
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686147"
 ---
-# <a name="ms-dfs-properties-v2-attribute"></a>attributo ms-DFS-Properties-V2
+# <a name="ms-dfs-properties-v2-attribute"></a>Attributo ms-DFS-Properties-v2
 
-Proprietà associate alla radice DFS o al collegamento.
+Proprietà associate alla radice o al collegamento DFS.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFS-Properties-V2                        |
-| LDAP-Display-Name | msDFS-Propertiesv2                          |
+| CN                | ms-DFS-Properties-v2                        |
+| Ldap-Display-Name | msDFS-Propertiesv2                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2037                     |
-| System-ID-GUID    | 0c3e5bc5-eb0e-40f5-9b53-334e958dffdb        |
+| System-Id-Guid    | 0c3e5bc5-eb0e-40f5-9b53-334e958dffdb        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Proprietà associate alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 0                                                                                                                 |
 | Range-Upper            | 1024                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Proprietà associate alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 0                                                                                                                 |
 | Range-Upper            | 1024                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Proprietà associate alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| È a valore singolo       | Falso                                                                                                             |
+| Is-Single-Valued       | Falso                                                                                                             |
 | Indicizzato             | Falso                                                                                                             |
 | Nel catalogo globale      | Falso                                                                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 0                                                                                                                 |
 | Range-Upper            | 1024                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classi utilizzate in        | [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

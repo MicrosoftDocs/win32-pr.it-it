@@ -1,36 +1,36 @@
 ---
-description: Gli sviluppatori creano un pacchetto di patch generando un file di creazione della patch e usando Msimsp.exe per chiamare la funzione UiCreatePatchPackageEx in Patchwiz.dll.
+description: Gli sviluppatori creano un pacchetto di patch generando un file di creazione di patch e usando Msimsp.exe per chiamare la funzione UiCreatePatchPackageEx in Patchwiz.dll.
 ms.assetid: 8a163653-6ba1-46ea-9832-f998749d29ae
-title: Creazione di un pacchetto di patch
+title: Creazione di un pacchetto patch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2561cb6729dc7b4e0e48acd13b6338f08a8ba943
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b2d784e02374eeee84a0c8b047e5a7b4db31f9c2b3090a68c31f35dece8c978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638291"
 ---
-# <a name="creating-a-patch-package"></a>Creazione di un pacchetto di patch
+# <a name="creating-a-patch-package"></a>Creazione di un pacchetto patch
 
-Gli sviluppatori creano un pacchetto di patch generando un file di creazione della patch e usando [Msimsp.exe](msimsp-exe.md) per chiamare la funzione [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) in [Patchwiz.dll](patchwiz-dll.md). In Windows Installer SDK sono disponibili Msimsp.exe e Patchwiz.dll. Per ulteriori informazioni, vedere [un esempio di patch per l'aggiornamento di piccole dimensioni](a-small-update-patching-example.md).
+Gli sviluppatori creano un pacchetto di patch generando un file [ di creazione ](msimsp-exe.md) di patch e usandoMsimsp.exeper chiamare la funzione [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) in [Patchwiz.dll](patchwiz-dll.md). Msimsp.exe e Patchwiz.dll sono disponibili in Windows Installer SDK. Per altre informazioni, vedere [A Small Update Patching Example](a-small-update-patching-example.md).
 
-Poiché l'applicazione di una patch a un pacchetto di Windows Installer comporta l'installazione delle origini originali utilizzando un nuovo file con estensione msi, il nuovo file con estensione msi deve rimanere compatibile con il layout dell'origine originale.
+Poiché l'applicazione di una patch a un pacchetto del programma di installazione di Windows comporta l'installazione delle origini originali usando un nuovo file .msi, il nuovo file .msi deve rimanere compatibile con il layout dell'origine originale.
 
-Quando si crea un pacchetto di patch, è necessario utilizzare un'immagine di installazione non compressa per creare una patch, ad esempio un'immagine amministrativa o un'immagine di configurazione non compressa da un CD-ROM. È necessario inoltre rispettare le restrizioni seguenti:
+Quando si crea un pacchetto di patch, è necessario usare un'immagine di installazione non compressa per creare una patch, ad esempio un'immagine amministrativa o un'immagine di installazione non compressa da un CD-ROM. È inoltre necessario rispettare le restrizioni seguenti:
 
 -   Non spostare i file da una cartella a un'altra.
--   Non spostare i file da un file CAB a un altro.
+-   Non spostare i file da un archivio a un altro.
 -   Non modificare l'ordine dei file in un file CAB.
--   Non modificare il numero di sequenza dei file esistenti. Il numero di sequenza è il valore specificato nella colonna sequenza della [tabella file](file-table.md).
--   Tutti i nuovi file aggiunti dalla patch devono essere inseriti alla fine della sequenza di file esistente. Il numero di sequenza di un nuovo file nell'immagine aggiornata deve essere maggiore del numero di sequenza più grande dei file esistenti nell'immagine di destinazione.
--   Non modificare le chiavi primarie nella [tabella file](file-table.md) tra le versioni originali e nuove del file con estensione msi.
+-   Non modificare il numero di sequenza dei file esistenti. Il numero di sequenza è il valore specificato nella colonna Sequenza della [tabella File](file-table.md).
+-   Tutti i nuovi file aggiunti dalla patch devono essere inseriti alla fine della sequenza di file esistente. Il numero di sequenza di qualsiasi nuovo file nell'immagine aggiornata deve essere maggiore del numero di sequenza più elevato di file esistenti nell'immagine di destinazione.
+-   Non modificare le chiavi primarie nella [tabella file tra](file-table.md) la versione originale e quella .msi file.
     > [!Note]  
-    > Il file deve avere la stessa chiave nella [tabella file](file-table.md) dell'immagine di destinazione e dell'immagine aggiornata. I valori stringa nella colonna file di entrambe le tabelle devono essere identici, inclusa la distinzione tra maiuscole e minuscole.
+    > Il file deve avere la stessa chiave nella tabella [file dell'immagine](file-table.md) di destinazione e dell'immagine aggiornata. I valori stringa nella colonna File di entrambe le tabelle devono essere identici, incluso il caso.
 
      
 
--   Non creare un pacchetto con chiavi della [tabella file](file-table.md) che differiscono solo per le maiuscole/minuscole, ad esempio, evitare l'esempio di tabella seguente.
+-   Non creare un pacchetto con chiavi [tabella file](file-table.md) che differiscono solo nel caso, ad esempio, evitare l'esempio di tabella seguente.
 
     
 
@@ -43,9 +43,9 @@ Quando si crea un pacchetto di patch, è necessario utilizzare un'immagine di in
 
      
 
-    Il Windows Installer può consentire l'esempio di tabella precedente quando comp1 e comp2 sono installati in directory diverse, ma non è possibile usare [Msimsp.exe](msimsp-exe.md) o [Patchwiz.dll](patchwiz-dll.md) per generare una patch per il pacchetto. Msimsp.exe e Patchwiz.dll chiamano Makecab.exe, senza distinzione tra maiuscole e minuscole e con esito negativo.
+    Il programma di installazione di Windows può consentire l'esempio di tabella precedente quando Comp1 e Comp2 sono installati in directory diverse, ma non è possibile usare [Msimsp.exe](msimsp-exe.md) o [Patchwiz.dll](patchwiz-dll.md) per generare una patch per il pacchetto. Msimsp.exe e Patchwiz.dll chiamare Makecab.exe, che non fa distinzione tra maiuscole e minuscole e ha esito negativo.
 
-    Quando si usano i modelli merge nel programma di installazione, assicurarsi che i numeri di sequenza e il layout dei file rispettino le linee guida indicate sopra.
+    Quando si usano i moduli unione nel programma di installazione, assicurarsi che i numeri di sequenza di file e il layout siano conformi alle linee guida precedenti.
 
  
 

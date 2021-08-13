@@ -1,9 +1,9 @@
 ---
-title: Transazione XTYP_ADVREQ (DDEML. h)
-description: La \_ transazione XTYP ADVREQ informa il server che una transazione advise è in attesa nella coppia nome argomento e nome elemento specificato e che i dati corrispondenti alla coppia nome argomento e nome elemento sono stati modificati.
+title: XTYP_ADVREQ transazione (Ddeml.h)
+description: La transazione ADVREQ XTYP informa il server che è in attesa una transazione di notifica nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento \_ sono stati modificati.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
-- Scambio di dati delle transazioni XTYP_ADVREQ
+- XTYP_ADVREQ dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2884e838268342ab10c556c6ae3cfc8349ed5d2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18e751f17fb8634b0a105a36af5036f07d0212532349c267e5526d5d41f09367
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544886"
 ---
-# <a name="xtyp_advreq-transaction"></a>\_Transazione ADVREQ XTYP
+# <a name="xtyp_advreq-transaction"></a>Transazione \_ ADVREQ XTYP
 
-La transazione **XTYP \_ ADVREQ** informa il server che una transazione advise è in attesa nella coppia nome argomento e nome elemento specificato e che i dati corrispondenti alla coppia nome argomento e nome elemento sono stati modificati. Il sistema invia questa transazione alla funzione di callback Dynamic Data Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), dopo che il server chiama la funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) .
+La **transazione \_ ADVREQ XTYP** informa il server che è in attesa una transazione di notifica nella coppia nome argomento e nome elemento specificata e che i dati corrispondenti alla coppia nome argomento e nome elemento sono stati modificati. Il sistema invia questa transazione alla funzione di callback Dynamic Data Exchange (DDE), [*DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)dopo che il server ha chiamato [**la funzione DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 
 
 ```C++
@@ -69,7 +69,7 @@ Handle per il nome dell'argomento.
 *hsz2* 
 </dt> <dd>
 
-Handle per il nome dell'elemento che è stato modificato.
+Handle per il nome dell'elemento modificato.
 
 </dd> <dt>
 
@@ -83,11 +83,11 @@ Non usato.
 *dwData1* 
 </dt> <dd>
 
-Conteggio, nella parola di basso livello, delle transazioni **\_ ADVREQ XTYP** che rimangono per essere elaborate nello stesso argomento, elemento e nome di formato impostati nel contesto della chiamata corrente alla funzione [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) . Il conteggio è zero se la transazione **XTYP \_ ADVREQ** corrente è l'ultima. Un server può utilizzare questo conteggio per determinare se creare un handle di dati **HDATA \_ APPOWNED** per i dati di notifica.
+Conteggio, nella parola più bassa, delle transazioni **\_ ADVREQ XTYP** che rimangono da elaborare nello stesso argomento, elemento e nome di formato impostati nel contesto della chiamata corrente alla [**funzione DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) Il conteggio è zero se la transazione **\_ XTYP ADVREQ** corrente è l'ultima. Un server può utilizzare questo conteggio per determinare se creare un handle di dati **\_ HDATA APPOWNED** per i dati consigliati.
 
-La parola meno ordinata è impostata su **CADV \_ LATEACK** se il DDEML ha emesso la transazione **XTYP \_ ADVREQ** a causa di un messaggio di ACK DDE in arrivo tardivo \_ da un client che è più veloce dal server.
+La parola più bassa è impostata su **CADV \_ LATEACK** se DDEML ha emesso la transazione **\_ XTYP ADVREQ** a causa di un messaggio DDE ACK in arrivo in ritardo da un client in uscita dal \_ server.
 
-La parola più ordinata non viene utilizzata.
+La parola più importante non viene usata.
 
 </dd> <dt>
 
@@ -100,11 +100,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il server deve prima chiamare la funzione [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) per creare un handle di dati che identifichi i dati modificati e quindi restituire l'handle. Il server deve restituire **null** se non è in grado di completare la transazione.
+Il server deve prima chiamare la [**funzione DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) per creare un handle di dati che identifica i dati modificati e quindi restituire l'handle. Il server deve restituire **NULL** se non è in grado di completare la transazione.
 
 ## <a name="remarks"></a>Commenti
 
-Un server non è in grado di bloccare questo tipo di transazione. il codice restituito del **\_ blocco CBR** viene ignorato.
+Un server non può bloccare questo tipo di transazione. Il **codice restituito da CBR \_ BLOCK** viene ignorato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -114,7 +114,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>DDEML. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ddeml.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -137,7 +137,7 @@ Un server non è in grado di bloccare questo tipo di transazione. il codice rest
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di gestione Dynamic Data Exchange](dynamic-data-exchange-management-library.md)
+[Dynamic Data Exchange Management Library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

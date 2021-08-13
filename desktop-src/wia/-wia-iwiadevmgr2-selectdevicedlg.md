@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 60ec24f264b8fe0424f17fc32deaf803e55c3346
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 344b13ec05e6f1d06011b3555e5b455202e5848b5000e799540d9f7c3160653b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441236"
 ---
 # <a name="iwiadevmgr2selectdevicedlg-method"></a>Metodo IWiaDevMgr2::SelectDeviceDlg
 
@@ -97,7 +97,7 @@ Visualizzare la finestra di dialogo anche se è presente un solo dispositivo cor
 
 Tipo: **BSTR \***
 
-Nell'output riceve una stringa che contiene la stringa dell'identificatore del dispositivo. Nell'input passare l'indirizzo di un puntatore se queste informazioni sono necessarie oppure **NULL** se non sono necessarie.
+Nell'output riceve una stringa che contiene la stringa dell'identificatore del dispositivo. In input, passare l'indirizzo di un puntatore se queste informazioni sono necessarie oppure **NULL** se non sono necessarie.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Nell'output riceve una stringa che contiene la stringa dell'identificatore del d
 
 Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\*\***
 
-Riceve l'indirizzo di un puntatore all'interfaccia [**IWiaItem2**](-wia-iwiaitem2.md) dell'elemento radice dell'albero gerarchico che rappresenta il dispositivo WIA 2.0 selezionato. Se non viene trovato alcun dispositivo, **riceve** NULL.
+Riceve l'indirizzo di un puntatore [**all'interfaccia IWiaItem2**](-wia-iwiaitem2.md) dell'elemento radice dell'albero gerarchico che rappresenta il dispositivo WIA 2.0 selezionato. Se non viene trovato alcun dispositivo, riceve **NULL.**
 
 </dd> </dl>
 
@@ -122,7 +122,7 @@ Questo metodo può restituire uno di questi valori.
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                         | Il dispositivo è stato selezionato correttamente. <br/>                                                          |
 | <dl> <dt>**S \_ FALSE**</dt> </dl>                      | L'utente ha annullato la finestra di dialogo. <br/>                                                              |
-| <dl> <dt>**WIA S NO DEVICE AVAILABLE (WIA \_ S \_ NESSUN DISPOSITIVO \_ \_ DISPONIBILE)**</dt> </dl> | Nessun dispositivo hardware WIA 2.0 corrisponde alle specifiche fornite nel *parametro lDeviceType.* <br/> |
+| <dl> <dt>**WIA \_ S NESSUN DISPOSITIVO \_ \_ \_ DISPONIBILE**</dt> </dl> | Nessun dispositivo hardware WIA 2.0 corrisponde alle specifiche fornite nel *parametro lDeviceType.* <br/> |
 
 
 
@@ -130,9 +130,9 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo crea e visualizza la finestra **di dialogo Seleziona** dispositivo in modo che l'utente possa selezionare un dispositivo WIA 2.0 per l'acquisizione dell'immagine. Se un dispositivo viene selezionato correttamente, il metodo **IWiaDevMgr2::SelectDeviceDlg** crea un albero gerarchico di oggetti [**IWiaItem2**](-wia-iwiaitem2.md) per il dispositivo. Archivia un puntatore **all'interfaccia IWiaItem2** dell'elemento radice nel parametro *ppItemRoot*.
+Questo metodo crea e visualizza la finestra **di** dialogo Seleziona dispositivo in modo che l'utente possa selezionare un dispositivo WIA 2.0 per l'acquisizione dell'immagine. Se un dispositivo viene selezionato correttamente, il **metodo IWiaDevMgr2::SelectDeviceDlg** crea un albero gerarchico di oggetti [**IWiaItem2**](-wia-iwiaitem2.md) per il dispositivo. Archivia un puntatore **all'interfaccia IWiaItem2** dell'elemento radice nel parametro *ppItemRoot*.
 
-L'applicazione può limitare i dispositivi visualizzati all'utente a tipi specifici specificando i tipi di dispositivo tramite il *parametro lDeviceType.* Se solo un dispositivo soddisfa la specifica, **IWiaDevMgr2::SelectDeviceDlg** non visualizza la **finestra di dialogo** Seleziona dispositivo. Crea invece [**l'albero IWiaItem2**](-wia-iwiaitem2.md) per il dispositivo e archivia un puntatore **all'interfaccia IWiaItem2 dell'elemento** radice nel parametro *ppItemRoot*. È possibile eseguire l'override di questo comportamento e forzare **IWiaDevMgr2::SelectDeviceDlg** a visualizzare la finestra di dialogo specificando WIA SELECT DEVICE NODEFAULT come valore per il \_ \_ parametro \_ *lFlags.* Se più di un dispositivo WIA 2.0 corrisponde alla specifica, tutti i dispositivi corrispondenti vengono visualizzati nella finestra di dialogo Seleziona dispositivo in modo che l'utente possa sceglierne uno. 
+L'applicazione può limitare i dispositivi visualizzati all'utente a tipi specifici specificando i tipi di dispositivo tramite il *parametro lDeviceType.* Se solo un dispositivo soddisfa la specifica, **IWiaDevMgr2::SelectDeviceDlg** non visualizza la **finestra** di dialogo Seleziona dispositivo. Crea invece [**l'albero IWiaItem2**](-wia-iwiaitem2.md) per il dispositivo e archivia un puntatore **all'interfaccia IWiaItem2** dell'elemento radice nel *parametro ppItemRoot*. È possibile eseguire l'override di questo comportamento e forzare **IWiaDevMgr2::SelectDeviceDlg** a visualizzare la finestra di dialogo specificando WIA SELECT DEVICE NODEFAULT come valore per il \_ \_ parametro \_ *lFlags.* Se più dispositivi WIA 2.0 corrispondono alla specifica, tutti  i dispositivi corrispondenti vengono visualizzati nella finestra di dialogo Seleziona dispositivo in modo che l'utente possa sceglierne uno.
 
 Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sui puntatori a interfaccia ricevuti tramite il *parametro ppItemRoot.*
 
@@ -147,8 +147,8 @@ Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                     |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                               |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
 | Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 

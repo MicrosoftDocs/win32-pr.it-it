@@ -1,7 +1,7 @@
 ---
 description: Rappresenta un controller di protocollo che gestisce un'interfaccia SCSI.
 ms.assetid: 01ef85fc-2f05-4453-b524-7d63b647f6fb
-title: Classe CIM_SCSIProtocolController
+title: CIM_SCSIProtocolController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d6479b405d3ca499615981d62744b1eaf25c7598
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f7e3db8cb1d0aa97446d503aff876c0270ddb16e5908b3b1c53c899c7617a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647676"
 ---
-# <a name="cim_scsiprotocolcontroller-class"></a>CIM \_ SCSIProtocolController (classe)
+# <a name="cim_scsiprotocolcontroller-class"></a>Classe CIM \_ SCSIProtocolController
 
 Rappresenta un controller di protocollo che gestisce un'interfaccia SCSI.
 
@@ -39,29 +39,29 @@ class CIM_SCSIProtocolController : CIM_ProtocolController
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SCSIProtocolController** presenta questi tipi di membri:
+La **classe CIM \_ SCSIProtocolController** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SCSIProtocolController** dispone di queste proprietà.
+La **classe CIM \_ SCSIProtocolController** ha queste proprietà.
 
 <dl> <dt>
 
 **NameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SCSIProtocolController**.**Nome**","**CIM \_ SCSIProtocolController**.**OtherNameFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SCSIProtocolController**.**Nome**", "**CIM \_ SCSIProtocolController**.**OtherNameFormat ")**
 </dt> </dl>
 
-Formato della proprietà **Name** del **\_ SCSIProtocolController CIM**.
+Formato della proprietà **Name** di **CIM \_ SCSIProtocolController.**
 
 <dt>
 
@@ -81,14 +81,14 @@ Formato della proprietà **Name** del **\_ SCSIProtocolController CIM**.
 
 <span id="FC_Port_WWN"></span><span id="fc_port_wwn"></span><span id="FC_PORT_WWN"></span>
 
-**Porta FC WWN** (2)
+**WWN della porta FC** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="iSCSI_Name"></span><span id="iscsi_name"></span><span id="ISCSI_NAME"></span>
 
-**nome iSCSI** (3)
+**Nome iSCSI** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -98,16 +98,16 @@ Formato della proprietà **Name** del **\_ SCSIProtocolController CIM**.
 **OtherNameFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SCSIProtocolController**.**Nome**","**CIM \_ SCSIProtocolController**.**NameFormat**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SCSIProtocolController**.**Nome**", "**CIM \_ SCSIProtocolController**.**NameFormat ")**
 </dt> </dl>
 
-Descrizione della proprietà **NameFormat** quando **NameFormat** è impostato su "1" (other).
+Descrizione della proprietà **NameFormat** quando **NameFormat** è impostato su "1" (altro).
 
 </dd> </dl>
 
@@ -119,8 +119,8 @@ Descrizione della proprietà **NameFormat** quando **NameFormat** è impostato s
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -129,7 +129,7 @@ Descrizione della proprietà **NameFormat** quando **NameFormat** è impostato s
 
 <dl> <dt>
 
-[**\_PROTOCOLCONTROLLER CIM**](cim-protocolcontroller.md)
+[**CIM \_ ProtocolController**](cim-protocolcontroller.md)
 </dt> </dl>
 
  

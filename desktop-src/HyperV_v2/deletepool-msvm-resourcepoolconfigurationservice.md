@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84273daa0aa30dca8722d90d4fcec22b88325bad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 110c380973b500e8c89b399cd688a6624e7059dc14c711dd2b1e356c6fb07c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645728"
 ---
-# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Metodo DeletePool della classe MSVM \_ ResourcePoolConfigurationService
+# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Metodo DeletePool della classe Msvm \_ ResourcePoolConfigurationService
 
-Elimina un pool di risorse. Per eliminare correttamente un pool di risorse, nessuna allocazione può essere in attesa o l'eliminazione avrà esito negativo con 32774 (in uso). Se il pool di risorse è un pool di risorse radice, tutte le risorse host vengono restituite al sistema sottostante.
+Elimina un pool di risorse. Per eliminare correttamente un pool di risorse, nessuna allocazione può essere in attesa o l'eliminazione avrà esito negativo con 32774 (In uso). Se il pool di risorse è un pool di risorse radice, tutte le risorse host vengono restituite al sistema sottostante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 DeletePool(
 
 <dl> <dt>
 
-*Pool* \[ di in\]
+*Pool* \[ Pollici\]
 </dt> <dd>
 
-Riferimento a un'istanza della classe [**CIM \_ ResourcePool**](cim-resourcepool.md) che rappresenta il pool da eliminare.
+Riferimento a un'istanza della [**classe \_ ResourcePool CIM**](cim-resourcepool.md) che rappresenta il pool da eliminare.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -63,13 +63,13 @@ Questo metodo restituisce uno dei valori seguenti.
 **Processo completato senza errori** (0)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo verificati - Processo avviato** (4096)
 </dt> <dt>
 
-**Metodo riservato** (4097.. 32767)
+**Metodo riservato** (4097..32767)
 </dt> <dt>
 
 **Non riuscito** (32768)
@@ -87,7 +87,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
 **In uso** (32774)
@@ -99,25 +99,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Tipo di risorsa non corretto per il pool** (32776)
 </dt> <dt>
 
-Non **disponibile** (32777)
+**Non disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
 </dt> <dt>
 
-**Fornitore riservato** (32779)
+**Vendor Reserved** (32779)
 </dt> <dt>
 
 **Risorse insufficienti** (32780)
 </dt> <dt>
 
-**Oggetto non trovato** (32781.. 32787)
+**Oggetto non trovato** (32781..32787)
 </dt> <dt>
 
-**Oggetto esistente** (32788)
+**Object Exists** (32788)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -126,10 +126,10 @@ Non **disponibile** (32777)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -138,7 +138,7 @@ Non **disponibile** (32777)
 
 <dl> <dt>
 
-[**\_ResourcePoolConfigurationService MSVM**](msvm-resourcepoolconfigurationservice.md)
+[**Msvm \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

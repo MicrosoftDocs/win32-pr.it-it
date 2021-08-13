@@ -1,8 +1,8 @@
 ---
-description: Utilizzato per determinare quando WMI rilascia un puntatore IWbemUnboundObjectSink per i provider di consumer di eventi.
+description: Utilizzato per determinare quando WMI rilascia un puntatore IWbemUnboundObjectSink dei provider di consumer di eventi.
 ms.assetid: f7b14efc-a2f7-4e99-8ec8-5b5af0743139
 ms.tgt_platform: multiple
-title: Classe __EventSinkCacheControl
+title: __EventSinkCacheControl classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: 9d20e64fed1ee6ba5622d5e6a342a60485f53d36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc73e2cb740486ad08172c10233f4865709a87d9f1122f399002133687744094
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557915"
 ---
 # <a name="__eventsinkcachecontrol-class"></a>\_\_Classe EventSinkCacheControl
 
-La classe di sistema **\_ \_ EventSinkCacheControl** viene utilizzata per determinare quando WMI rilascia un puntatore [**IWbemUnboundObjectSink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemunboundobjectsink) del provider di consumer di eventi. La classe **\_ \_ EventSinkCacheControl** è una classe singleton. Si trova solo nello \\ spazio dei nomi radice.
+La **\_ \_ classe di sistema EventSinkCacheControl** viene usata per determinare quando WMI rilascia il puntatore [**IWbemUnboundObjectSink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemunboundobjectsink) di un provider di consumer di eventi. La **\_ \_ classe EventSinkCacheControl** è una classe singleton. Si trova solo nello spazio dei \\ nomi radice.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,32 +40,32 @@ class __EventSinkCacheControl : CacheControl
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ EventSinkCacheControl** dispone di questi tipi di membri:
+La **\_ \_ classe EventSinkCacheControl** include i tipi di membri seguenti:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ EventSinkCacheControl** dispone di queste proprietà.
+La **\_ \_ classe EventSinkCacheControl** ha queste proprietà.
 
 <dl> <dt>
 
 **ClearAfter**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Intervallo di tempo dopo il quale WMI rilascia un provider di eventi. L'intervallo specificato per scaricare il provider può richiedere fino a due volte. L'ora è in [Formato intervallo](interval-format.md).
+Intervallo di tempo dopo il quale WMI rilascia un provider di eventi. Lo scaricamento del provider può richiedere fino al doppio dell'intervallo specificato. L'ora è nel [formato intervallo](interval-format.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ EventSinkCacheControl** deriva da [**\_ \_ CacheControl**](--cachecontrol.md). Per ulteriori informazioni sull'utilizzo di questa classe, vedere [scaricamento di un provider](unloading-a-provider.md).
+La **\_ \_ classe EventSinkCacheControl** è derivata da [**\_ \_ CacheControl.**](--cachecontrol.md) Per altre informazioni sull'uso di questa classe, vedere [Scaricamento di un provider.](unloading-a-provider.md)
 
 ## <a name="requirements"></a>Requisiti
 

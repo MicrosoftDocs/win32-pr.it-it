@@ -1,28 +1,28 @@
 ---
-description: La tabella SelfReg contiene informazioni sui moduli che devono essere registrati autonomamente.
+description: La tabella SelfReg contiene informazioni sui moduli che devono essere registrati automaticamente.
 ms.assetid: 7fe5c96e-16a4-49c9-9a93-616608aa55b2
 title: Tabella SelfReg
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5895b1d23369a7c121547fed841731b5d3e76ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61d00b9f18755cf3284edfd1ba9476b12ba6343c816dbafe84ac3c3676f663f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625507"
 ---
 # <a name="selfreg-table"></a>Tabella SelfReg
 
-La tabella SelfReg contiene informazioni sui moduli che devono essere registrati autonomamente. Il programma di installazione chiama la funzione [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) durante l'installazione del modulo. chiama [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) durante la disinstallazione del modulo. Il programma di installazione non registra autonomamente i file EXE.
+La tabella SelfReg contiene informazioni sui moduli che devono essere registrati automaticamente. Il programma di installazione chiama [**la funzione DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) durante l'installazione del modulo. chiama [**DllUnregisterServer durante**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) la disinstallazione del modulo. Il programma di installazione non registra automaticamente i file EXE.
 
-La tabella SelfReg include le colonne seguenti.
+La tabella SelfReg contiene le colonne seguenti.
 
 
 
 | Colonna | Tipo                         | Chiave | Nullable |
 |--------|------------------------------|-----|----------|
 | file\_ | [Identificatore](identifier.md) | S   | N        |
-| Costo   | [Integer](integer.md)       | N   | S        |
+| Cost   | [Integer](integer.md)       | N   | S        |
 
 
 
@@ -35,7 +35,7 @@ La tabella SelfReg include le colonne seguenti.
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>File\_
 </dt> <dd>
 
-Chiave esterna nella prima colonna della [tabella file](file-table.md) che indica il modulo che deve essere registrato.
+Chiave esterna nella prima colonna della tabella [File che](file-table.md) indica il modulo che deve essere registrato.
 
 </dd> <dt>
 
@@ -48,18 +48,18 @@ Costo della registrazione del modulo in byte. Deve essere un numero non negativo
 
 ## <a name="remarks"></a>Commenti
 
-Gli autori dei pacchetti di installazione si sconsigliano vivamente di usare la registrazione automatica. Devono invece registrare i moduli creando una o più tabelle fornite dal programma di installazione per questo scopo. Per ulteriori informazioni, vedere [gruppo di tabelle del registro di sistema](registry-tables-group.md). Molti dei vantaggi derivanti dalla presenza di un servizio di installazione centrale vengono persi con la registrazione automatica perché le routine di registrazione automatica tendono a nascondere le informazioni di configurazione critiche. I motivi per evitare la registrazione automatica includono:
+Gli autori di pacchetti di installazione sono fortemente sconsigliati di usare la registrazione automatica. Devono invece registrare i moduli mediante la creazione di una o più tabelle fornite dal programma di installazione a questo scopo. Per altre informazioni, vedere [Gruppo di tabelle del Registro di sistema.](registry-tables-group.md) Molti dei vantaggi derivanti dalla presenza di un servizio di installazione centrale vengono persi con la registrazione automatica perché le routine di registrazione automatica tendono a nascondere informazioni di configurazione critiche. I motivi per evitare la registrazione automatica includono:
 
--   Il rollback di un'installazione con moduli autoregistrati non può essere eseguito in modo sicuro con [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) perché non esiste alcun modo per stabilire se le chiavi autoregistrate vengono usate da un'altra funzionalità o applicazione.
--   La possibilità di usare l'annuncio è ridotta se la registrazione di classi o server di estensione viene eseguita in routine di registrazione automatica.
--   Il programma di installazione gestisce automaticamente le chiavi di HKCR nelle tabelle del registro di sistema per le installazioni per utente o per computer. Le routine [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) attualmente non supportano la nozione di chiave HKCR per utente.
--   Se più utenti usano un'applicazione autoregistrata nello stesso computer, ogni utente deve installare l'applicazione la prima volta che la esegue. In caso contrario, il programma di installazione non è in grado di determinare facilmente le chiavi di registro HKCU appropriate
--   A [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se un componente viene specificato come Run-from-source ed è elencato nella tabella SelfReg. Questa operazione può causare un errore di installazione del componente durante un'installazione amministrativa.
--   La registrazione automatica delle dll è più soggetta a errori di codifica perché il nuovo codice necessario per [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) è generalmente diverso per ogni dll. Usare invece le tabelle del registro di sistema nel database per sfruttare il codice esistente fornito dal programma di installazione.
--   La registrazione automatica delle dll può talvolta essere collegata a DLL ausiliarie che non sono presenti o sono la versione sbagliata. Al contrario, il programma di installazione può registrare le dll utilizzando le tabelle del registro di sistema senza dipendenze dallo stato corrente del sistema.
+-   Il rollback di un'installazione con moduli autoregistrato non può essere eseguito in modo sicuro usando [**DllUnregisterServer**](/windows/win32/api/olectl/nf-olectl-dllunregisterserver) perché non è possibile determinare se le chiavi autoregistrato vengono usate da un'altra funzionalità o applicazione.
+-   La possibilità di usare l'annuncio viene ridotta se la registrazione del server della classe o dell'estensione viene eseguita all'interno di routine di auto-registrazione.
+-   Il programma di installazione gestisce automaticamente le chiavi HKCR nelle tabelle del Registro di sistema per le installazioni per utente o per computer. Le routine [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) attualmente non supportano la nozione di chiave HKCR per utente.
+-   Se più utenti usano un'applicazione auto-registrata nello stesso computer, ogni utente deve installare l'applicazione la prima volta che la esegue. In caso contrario, il programma di installazione non è in grado di determinare facilmente l'esistenza delle chiavi del Registro di sistema HKCU appropriate.
+-   A [**DllRegisterServer può**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) essere negato l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se un componente è specificato come run-from-source ed è elencato nella tabella SelfReg. Ciò può causare l'esito negativo dell'installazione del componente durante un'installazione amministrativa.
+-   Le DLL con registrazione autonoma sono più soggette a errori di codifica perché il nuovo codice necessario per [**DllRegisterServer**](/windows/win32/api/olectl/nf-olectl-dllregisterserver) è in genere diverso per ogni DLL. Usare invece le tabelle del Registro di sistema nel database per sfruttare il codice esistente fornito dal programma di installazione.
+-   Le DLL con registrazione autonoma possono talvolta essere collegate a DLL ausiliarie che non sono presenti o sono la versione errata. Al contrario, il programma di installazione può registrare le DLL usando le tabelle del Registro di sistema senza alcuna dipendenza dallo stato corrente del sistema.
 
 > [!Note]  
-> Non è possibile specificare l'ordine in cui il programma di installazione registra o Annulla la registrazione delle dll con registrazione automatica usando le azioni [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules](selfunregmodules-action.md) . Vedere [specifica dell'ordine di registrazione automatica](specifying-the-order-of-self-registration.md).
+> Non è possibile specificare l'ordine in cui il programma di installazione registra o annulla la registrazione delle DLL con registrazione automatica usando le azioni [SelfRegModules](selfregmodules-action.md) e [SelfUnRegModules.](selfunregmodules-action.md) Vedere [Specifica dell'ordine di registrazione automatica.](specifying-the-order-of-self-registration.md)
 
  
 

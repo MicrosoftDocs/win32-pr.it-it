@@ -1,7 +1,7 @@
 ---
-description: Imposta i criteri di accesso automatici correnti.
+description: Imposta i criteri di accesso automatico correnti.
 ms.assetid: bc8e8c9c-574e-4392-b336-2c06947022ee
-title: 'Metodo IWinHttpRequest:: SetAutoLogonPolicy'
+title: Metodo IWinHttpRequest::SetAutoLogonPolicy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: cad8bd0080d10a1395a0a9d275951ff961a60bf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6375d5c5b6c9b6c8acebcdd05a2ad778bb37e75c067a44100a5c67a92876248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562887"
 ---
-# <a name="iwinhttprequestsetautologonpolicy-method"></a>Metodo IWinHttpRequest:: SetAutoLogonPolicy
+# <a name="iwinhttprequestsetautologonpolicy-method"></a>Metodo IWinHttpRequest::SetAutoLogonPolicy
 
-Il metodo **SetAutoLogonPolicy** imposta i [criteri di accesso automatici](authentication-in-winhttp.md)correnti.
+Il **metodo SetAutoLogonPolicy** imposta i criteri [di accesso automatico correnti.](authentication-in-winhttp.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,31 +40,31 @@ HRESULT SetAutoLogonPolicy(
 
 <dl> <dt>
 
-*AutoLogonPolicy* \[ in\]
+*AutoLogonPolicy* \[ Pollici\]
 </dt> <dd>
 
-Specifica i criteri di accesso automatici correnti.
+Specifica i criteri di accesso automatico correnti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è **\_ OK** in caso di esito positivo o un valore di errore.
+Il valore restituito è **S \_ OK in caso** di esito positivo o un valore di errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il criterio predefinito è [**AutoLogonPolicy \_ OnlyIfBypassProxy**](winhttprequestautologonpolicy.md).
+Il criterio predefinito è [**AutoLogonPolicy \_ OnlyIfBypassProxy.**](winhttprequestautologonpolicy.md)
 
-Chiamare **SetAutoLogonPolicy** per impostare i criteri di accesso automatici prima di chiamare [**Send**](iwinhttprequest-send.md) per inviare la richiesta.
+Chiamare **SetAutoLogonPolicy per** impostare i criteri di accesso automatico prima di chiamare [**Send**](iwinhttprequest-send.md) per inviare la richiesta.
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la sezione [Requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di script seguente viene illustrato come impostare i criteri di accesso automatici in modo da non utilizzare mai NTLM o negoziare automaticamente l'autenticazione.
+Nell'esempio di scripting seguente viene illustrato come impostare i criteri di accesso automatico in modo che non usino mai l'autenticazione NTLM o Negozia automaticamente.
 
 
 ```JScript
@@ -89,11 +89,11 @@ HttpReq.Send();
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con solo app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -111,7 +111,7 @@ HttpReq.Send();
 [Autenticazione in WinHTTP](authentication-in-winhttp.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Unsigned Integer contenente i flag di raggio correnti.
+description: Intero senza segno contenente i flag di raggio correnti.
 ms.assetid: ''
 title: RayFlags
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - RayFlags
 api_type:
 - NA
-ms.openlocfilehash: 3aedb39ebaaadfc5c3b17af31c9ac3d6670e0b89
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6f9fb95a11eb846807234848e085e1a5060108eae56af205f9899a4ac77d358b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300972"
 ---
 # <a name="rayflags"></a>RayFlags
 
-Unsigned Integer contenente i flag di [**ray_flag**](ray_flag.md) correnti. 
+Intero senza segno contenente i [**flag**](ray_flag.md) ray_flag corrente. 
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,12 +32,12 @@ uint RayFlags();
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 * [**Qualsiasi hit shader**](any-hit-shader.md)
 * [**Hit shader più vicino**](closest-hit-shader.md)
-* [**Intersezione shader**](intersection-shader.md)
-* [**Lo shader manca**](miss-shader.md)
+* [**Intersection Shader**](intersection-shader.md)
+* [**Miss Shader**](miss-shader.md)
 
 
 
@@ -47,7 +47,7 @@ Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
 
 <dl> <dt>
 
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

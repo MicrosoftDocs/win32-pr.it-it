@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-is-domain-for
-description: Collegamento all'indietro per MS-DS-has-Domain-NCs. Identifica i controller di dominio che contengono la partizione come dominio primario. | attributo ms-DS-is-domain-for
+title: Attributo ms-DS-Is-Domain-For
+description: Collegamento indietro per ms-DS-Has-Domain-NCs. Identifica i controller di dominio che contengono la partizione come dominio primario. | Attributo ms-DS-Is-Domain-For
 ms.assetid: ec63ddb4-c220-492b-92ce-e3da2069bcb8
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-is-Domain-per lo schema AD dell'attributo
-- attributo msDS-IsDomainFor-schema AD
+- Ms-DS-Is-Domain-For attribute AD Schema
+- Schema AD dell'attributo msDS-IsDomainFor
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56529497eb8081f53310e26b834194cdcdc11bf5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b63b0fce03a5e978172b5790cfeac3c9c6724244ab798fef6b0ca80508c22800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685111"
 ---
-# <a name="ms-ds-is-domain-for-attribute"></a>attributo ms-DS-is-domain-for
+# <a name="ms-ds-is-domain-for-attribute"></a>Attributo ms-DS-Is-Domain-For
 
-Collegamento all'indietro per [**ms-DS-has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica i controller di dominio che contengono la partizione come dominio primario.
+Collegamento indietro per [**ms-DS-Has-Domain-NCs**](a-msds-hasdomainncs.md). Identifica i controller di dominio che contengono la partizione come dominio primario.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-is-domain-for                     |
-| LDAP-Display-Name | msDS-IsDomainFor                        |
+| CN                | ms-DS-is-Domain-For                     |
+| Ldap-Display-Name | msDS-IsDomainFor                        |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
-| System-ID-GUID    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
+| System-Id-Guid    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Collegamento all'indietro per [**ms-DS-has-Domain-NCs**](a-msds-hasdomainncs.md)
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Collegamento all'indietro per [**ms-DS-has-Domain-NCs**](a-msds-hasdomainncs.md)
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Collegamento all'indietro per [**ms-DS-has-Domain-NCs**](a-msds-hasdomainncs.md)
 | ID collegamento                | 2027                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

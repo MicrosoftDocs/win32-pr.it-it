@@ -1,10 +1,10 @@
 ---
-title: Attributo msSFU-30-Search-attributo container
-description: Contiene l'identificatore di un oggetto che specifica la posizione in cui inizierà ogni ricerca.
+title: Attributo msSFU-30-Search-Container
+description: Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerca.
 ms.assetid: a1bb0ff1-d938-4792-aa68-3c335a1a3b43
 ms.tgt_platform: multiple
 keywords:
-- Attributo msSFU-30-Search-schema AD dell'attributo contenitore
+- Schema AD dell'attributo msSFU-30-Search-Container
 - Schema AD dell'attributo msSFU30SearchContainer
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7378af4b91a1a7153705e9d4e8280cdac02f1673
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4812f821c59cee6d538b475bef2feca032c4132d9a5c0f3f0dc4154c2c61173e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682432"
 ---
-# <a name="mssfu-30-search-container-attribute"></a>Attributo msSFU-30-Search-attributo container
+# <a name="mssfu-30-search-container-attribute"></a>Attributo msSFU-30-Search-Container
 
-Contiene l'identificatore di un oggetto che specifica la posizione in cui inizierà ogni ricerca.
+Contiene l'identificatore di un oggetto che specifica dove inizierà ogni ricerca.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Attributo msSFU-30-Search-container                   |
-| LDAP-Display-Name | msSFU30SearchContainer                      |
+| CN                | msSFU-30-Search-Container                   |
+| Ldap-Display-Name | msSFU30SearchContainer                      |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
-| System-ID-GUID    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
+| System-Id-Guid    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Contiene l'identificatore di un oggetto che specifica la posizione in cui inizie
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contiene l'identificatore di un oggetto che specifica la posizione in cui inizie
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contiene l'identificatore di un oggetto che specifica la posizione in cui inizie
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Contiene l'identificatore di un oggetto che specifica la posizione in cui inizie
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Falso                                                          |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classi utilizzate in        | [**Attributo msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
+| Classi usate in        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

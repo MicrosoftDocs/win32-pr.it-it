@@ -1,11 +1,11 @@
 ---
-title: Attributo Admin-Description
-description: Descrizione visualizzata sulle schermate amministrative.
+title: Admin-Description attributo
+description: Descrizione visualizzata nelle schermate di amministrazione.
 ms.assetid: 4307b85b-f285-4e72-a73f-1f179ebb991a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Admin-Description attribute
-- Schema AD dell'attributo adminDescription
+- Admin-Description schema AD dell'attributo
+- Attributo adminDescription - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 168dfacc2577c14a3c41541f5ca88f63331590dd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9d9da2c892db1ea648df7d0027a92bb5cf1f277e03489615b098628f8951b8ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688450"
 ---
-# <a name="admin-description-attribute"></a>Attributo Admin-Description
+# <a name="admin-description-attribute"></a>Admin-Description attributo
 
-Descrizione visualizzata sulle schermate amministrative.
+Descrizione visualizzata nelle schermate di amministrazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Admin-Description                           |
-| LDAP-Display-Name | adminDescription                            |
+| Ldap-Display-Name | adminDescription                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Amministratore di dominio                        |
+| Aggiorna privilegio  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.226                      |
-| System-ID-GUID    | bf967919-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967919-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Descrizione visualizzata sulle schermate amministrative.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Descrizione visualizzata sulle schermate amministrative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

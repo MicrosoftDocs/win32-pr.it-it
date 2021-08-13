@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXMatrixScaling (D3DX10Math.h): compila una matrice che viene ridimensionata lungo l'asse x, l'asse y e l'asse z."
+description: "Funzione D3DXMatrixScaling (D3DX10Math.h): crea una matrice che viene ridimensionata lungo l'asse x, l'asse y e l'asse z."
 ms.assetid: 1804bf41-26de-4be1-ad62-7a871d7408e6
 title: Funzione D3DXMatrixScaling (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: bf11b2196953775fb41412ad484a77ab00ae578e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b2a3bd8e657dde60ae1714a9696c07ad4d14e182c41bea5521f1009da03a54d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541144"
 ---
 # <a name="d3dxmatrixscaling-function-d3dx10mathh"></a>Funzione D3DXMatrixScaling (D3DX10Math.h)
 

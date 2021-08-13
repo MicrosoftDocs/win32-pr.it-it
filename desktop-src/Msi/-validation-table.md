@@ -1,21 +1,21 @@
 ---
-description: La \_ tabella di convalida è una tabella di sistema che contiene i nomi delle colonne e i valori delle colonne per tutte le tabelle del database.
+description: La tabella Validation è una tabella di sistema che contiene i nomi delle colonne e i valori delle colonne per \_ tutte le tabelle nel database.
 ms.assetid: 52b1c537-efb6-4bb8-9e7f-b4848be52a71
-title: Tabella _Validation
+title: _Validation tabella
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 666f00ccccda11706dce6a8d7e04e0efea91b7cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81a42fbe2a2f8da4abceb04912eee2a12edd708ff88d979fbf45f7de8051dc80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640446"
 ---
 # <a name="_validation-table"></a>\_Tabella di convalida
 
-La \_ tabella di convalida è una tabella di sistema che contiene i nomi delle colonne e i valori delle colonne per tutte le tabelle del database. Viene utilizzato durante il processo di convalida del database per garantire che tutte le colonne siano contabilizzate e dispongano dei valori corretti. Questa tabella non è inclusa nel database del programma di installazione.
+La tabella Validation è una tabella di sistema che contiene i nomi delle colonne e i valori delle colonne per \_ tutte le tabelle nel database. Viene usato durante il processo di convalida del database per garantire che tutte le colonne siano rappresentate e che i valori siano corretti. Questa tabella non viene fornita con il database del programma di installazione.
 
-La \_ tabella di convalida include le colonne seguenti.
+Nella \_ tabella Convalida sono disponibili le colonne seguenti.
 
 
 
@@ -24,12 +24,12 @@ La \_ tabella di convalida include le colonne seguenti.
 | Tabella       | [Identificatore](identifier.md)       | S   | N        |
 | Colonna      | [Identificatore](identifier.md)       | S   | N        |
 | Nullable    | [Text](text.md)                   | N   | N        |
-| MinValue    | [DoubleInteger](doubleinteger.md) | N   | S        |
+| Minvalue    | [DoubleInteger](doubleinteger.md) | N   | S        |
 | MaxValue    | [DoubleInteger](doubleinteger.md) | N   | S        |
 | KeyTable    | [Identificatore](identifier.md)       | N   | S        |
 | KeyColumn   | [Integer](integer.md)             | N   | S        |
 | Category    | [Text](text.md)                   | N   | S        |
-| Set         | [Text](text.md)                   | N   | S        |
+| Impostazione         | [Text](text.md)                   | N   | S        |
 | Descrizione | [Text](text.md)                   | N   | S        |
 
 
@@ -43,21 +43,21 @@ La \_ tabella di convalida include le colonne seguenti.
 <span id="Table"></span><span id="table"></span><span id="TABLE"></span>tavolo
 </dt> <dd>
 
-Utilizzato per identificare una tabella specifica. Questa chiave e la chiave della colonna formano la chiave primaria della \_ tabella di convalida.
+Utilizzato per identificare una tabella specifica. Questa chiave e la chiave di colonna formano la chiave primaria della \_ tabella Validation.
 
 </dd> <dt>
 
 <span id="Column"></span><span id="column"></span><span id="COLUMN"></span>Colonna
 </dt> <dd>
 
-Utilizzato per identificare una colonna specifica della tabella. Questa chiave e la chiave della tabella formano la chiave primaria della \_ tabella di convalida.
+Consente di identificare una colonna specifica della tabella. Questa chiave e la chiave table formano la chiave primaria della \_ tabella Validation.
 
 </dd> <dt>
 
 <span id="Nullable"></span><span id="nullable"></span><span id="NULLABLE"></span>Nullable
 </dt> <dd>
 
-Indica se la colonna può contenere un valore null.
+Identifica se la colonna può contenere un valore Null.
 
 Questa colonna può avere uno dei valori seguenti.
 
@@ -65,8 +65,8 @@ Questa colonna può avere uno dei valori seguenti.
 
 | string | Significato                                   |
 |--------|-------------------------------------------|
-| S      | Sì, la colonna potrebbe avere un valore null.    |
-| N      | No, la colonna non può avere un valore null. |
+| S      | Sì, la colonna può avere un valore Null.    |
+| N      | No, la colonna potrebbe non avere un valore Null. |
 
 
 
@@ -74,42 +74,42 @@ Questa colonna può avere uno dei valori seguenti.
 
 </dd> <dt>
 
-<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>MinValue
+<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>Minvalue
 </dt> <dd>
 
-Questo campo si applica alle colonne con valore numerico. Il campo contiene il valore minimo consentito. Può trattarsi del valore minimo per un numero intero o del valore minimo per una stringa di data o di versione.
+Questo campo si applica alle colonne con valore numerico. Il campo contiene il valore minimo consentito. Può trattarsi del valore minimo per un numero intero o del valore minimo per una stringa di data o versione.
 
 </dd> <dt>
 
-<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>MaxValue
+<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>Maxvalue
 </dt> <dd>
 
-Questo campo si applica alle colonne con valore numerico. Il campo è il valore massimo consentito. Può trattarsi del valore massimo per un numero intero o del valore massimo per una stringa di data o di versione.
+Questo campo si applica alle colonne con valore numerico. Il campo è il valore massimo consentito. Può trattarsi del valore massimo per un numero intero o del valore massimo per una stringa di data o versione.
 
 </dd> <dt>
 
 <span id="KeyTable"></span><span id="keytable"></span><span id="KEYTABLE"></span>KeyTable
 </dt> <dd>
 
-Questo campo si applica alle colonne che sono chiavi esterne. Il campo identificato nella colonna deve essere collegato al numero di colonna specificato da colonna colonna nella tabella denominata in tabella. Può trattarsi di un elenco di tabelle separate da punti e virgola.
+Questo campo si applica alle colonne che sono chiavi esterne. Il campo identificato in Column deve essere correlato al numero di colonna specificato da KeyColumn nella tabella denominata in KeyTable. Può trattarsi di un elenco di tabelle separate da punti e virgola.
 
 </dd> <dt>
 
 <span id="KeyColumn"></span><span id="keycolumn"></span><span id="KEYCOLUMN"></span>KeyColumn
 </dt> <dd>
 
-Questo campo si applica alle colonne della tabella che sono chiavi esterne. Il campo identificato nella colonna deve essere collegato al numero di colonna specificato da colonna colonna nella tabella denominata in tabella. L'intervallo consentito del campo colonna colonna è 1-32.
+Questo campo si applica alle colonne della tabella che sono chiavi esterne. Il campo identificato in Column deve essere correlato al numero di colonna specificato da KeyColumn nella tabella denominata in KeyTable. L'intervallo consentito del campo KeyColumn è compreso tra 1 e 32.
 
 </dd> <dt>
 
 <span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categoria
 </dt> <dd>
 
-Questo è il tipo di dati contenuti nel campo del database specificato dalle colonne della tabella e della colonna della \_ tabella di convalida. Se si tratta di un tipo con un valore numerico, ad esempio [Integer](integer.md), [DoubleInteger](doubleinteger.md) o [time/date](time-date.md), immettere null in questo campo e specificare l'intervallo del valore utilizzando le colonne MinValue e MaxValue. Utilizzare la colonna Categoria per specificare i tipi di dati non numerici descritti in [tipi di dati di colonna](column-data-types.md).
+Si tratta del tipo di dati contenuti nel campo del database specificato dalle colonne Table e Column della \_ tabella Validation. Se si tratta di un tipo con un valore numerico, ad esempio [Integer](integer.md), [DoubleInteger](doubleinteger.md) o [Time/Date](time-date.md), immettere null in questo campo e specificare l'intervallo del valore usando le colonne MinValue e MaxValue . Usare la colonna Categoria per specificare i tipi di dati non numerici descritti in [Tipi di dati delle colonne](column-data-types.md).
 
 </dd> <dt>
 
-<span id="Set"></span><span id="set"></span><span id="SET"></span>Set
+<span id="Set"></span><span id="set"></span><span id="SET"></span>Impostare
 </dt> <dd>
 
 Si tratta di un elenco di valori consentiti per questo campo separati da punti e virgola. Questo campo viene in genere usato per le enumerazioni.
@@ -134,7 +134,7 @@ Descrizione dei dati archiviati nella colonna.
 
 ## <a name="remarks"></a>Commenti
 
-Il campo categoria di questa tabella si applica solo ai dati stringa. Se il campo colonna fa riferimento a una colonna con dati binari, è necessario specificare il tipo di dati binario nel campo categoria. I tipi di colonna di dati Integer ignorano il campo categoria durante la convalida.
+Il campo Categoria di questa tabella si applica solo ai dati stringa. Se il campo Colonna fa riferimento a una colonna con dati binari, è necessario specificare il tipo di dati binary nel campo Categoria . Dati Integer I tipi di colonna ignorano il campo Categoria durante la convalida.
 
  
 

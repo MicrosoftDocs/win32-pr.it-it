@@ -1,10 +1,10 @@
 ---
-title: Attributo Birth-Location
-description: Località in cui è nato l'utente.
+title: Birth-Location attributo
+description: Posizione in cui è nato l'utente.
 ms.assetid: 566bdbf0-a298-465a-9dab-f9b013f3d98b
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Birth-Location attribute
+- Birth-Location schema AD dell'attributo
 - Schema AD dell'attributo birthLocation
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27d3ea30101c8797a9b12a20eb816e764f931227
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5d743e3a61942f6fecf2a8e8aa1ee267783ca44e3cb95d95e9fc4f4ab060c66c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103745287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688010"
 ---
-# <a name="birth-location-attribute"></a>Attributo Birth-Location
+# <a name="birth-location-attribute"></a>Birth-Location attributo
 
-Località in cui è nato l'utente.
+Posizione in cui è nato l'utente.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Birth-Location                                        |
-| LDAP-Display-Name | birthLocation                                         |
+| Ldap-Display-Name | birthLocation                                         |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Amministratore di dominio                                  |
+| Privilegio di aggiornamento  | Amministratore di dominio                                  |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.332                                |
-| System-ID-GUID    | 1f0075f9-7e40-11d0-afd6-00c04fd930c9                  |
+| System-Id-Guid    | 1f0075f9-7e40-11d0-afd6-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Località in cui è nato l'utente.
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Classi usate in        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 

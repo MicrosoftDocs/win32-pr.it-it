@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo CimMofDeserializer. DeserializeInstances (byte [], UInt32, OnClassNeeded, GetIncludedFileContent)'
-title: Metodo CimMofDeserializer. DeserializeInstances (byte [], UInt32, OnClassNeeded, GetIncludedFileContent) (Microsoft. Management. Infrastructure. Serialization)
+description: 'Altre informazioni su: Metodo CimMofDeserializer.DeserializeInstances (Byte[], UInt32, OnClassNeeded, GetIncludedFileContent)'
+title: Metodo CimMofDeserializer.DeserializeInstances (Byte[], UInt32, OnClassNeeded, GetIncludedFileContent) (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: CimMofDeserializer.DeserializeInstances method (Byte[], UInt32, OnClassNeeded, GetIncludedFileContent) (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: M:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.DeserializeInstances(System.Byte[],System.UInt32@,Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.OnClassNeeded,Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.GetIncludedFileContent)
 ms.date: 11/14/2019
@@ -20,19 +20,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 17a8a84f841f07439b716909fbc8d63232032263
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3540be5dd25210471f56d4c1418d9efa5b586d029b473ae5fb8c23ec535e5981
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555142"
 ---
-# <a name="cimmofdeserializerdeserializeinstances-method-byteuint32-onclassneeded-getincludedfilecontent"></a>Metodo CimMofDeserializer. DeserializeInstances (byte \[ \] , UInt32, OnClassNeeded, GetIncludedFileContent)
+# <a name="cimmofdeserializerdeserializeinstances-method-byteuint32-onclassneeded-getincludedfilecontent"></a>Metodo CimMofDeserializer.DeserializeInstances (Byte \[ \] , UInt32, OnClassNeeded, GetIncludedFileContent)
 
-Deserializza le istanze CIM basate sui dati serializzati e i callback.
+Deserializza le istanze CIM in base ai dati serializzati e ai callback.
 
-**Spazio dei nomi:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Assembly:**  Microsoft. Management. Infrastructure (in Microsoft.Management.Infrastructure.dll)  
+**Spazio dei nomi:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintassi
 
@@ -75,16 +75,16 @@ Public Function DeserializeInstances (
 #### <a name="parameters"></a>Parametri
 
   - serializedData  
-    Tipo: [System. byte](/dotnet/api/system.byte?view=netframework-4.8)\[\]
+    Tipo: [System.Byte](/dotnet/api/system.byte?view=netframework-4.8)\[\]
     
-    Buffer che contiene i dati serializzati.
+    Buffer contenente i dati serializzati.
 
 <!-- end list -->
 
   - offset  
-    Tipo: [System. UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
+    Tipo: [System.UInt32](/dotnet/api/system.uint32?view=netframework-4.8)
     
-    Offset dei byte nella posizione da cui iniziare la lettura dei dati. Quando il metodo restituisce un risultato, l'offset verrà puntato al byte successivo dopo le istanze deserializzate.
+    Offset di byte nella posizione in cui iniziare a leggere i dati. Quando il metodo viene restituito, l'offset punta al byte successivo dopo le istanze deserializzate.
 
 <!-- end list -->
 
@@ -102,11 +102,11 @@ Public Function DeserializeInstances (
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimInstance](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832336(v=vs.85))\>
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimInstance](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832336(v=vs.85))\>
 
-Interfaccia [IEnumerable \<T\> ](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8) che può essere utilizzata per enumerare le classi CIM.
+Interfaccia [IEnumerable \<T\> ](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8) che può essere usata per enumerare le classi CIM.
 
 ## <a name="see-also"></a>Vedi anche
 
 [Classe CimInstance](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832336(v=vs.85))  
-[Spazio dei nomi Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[Spazio dei nomi Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

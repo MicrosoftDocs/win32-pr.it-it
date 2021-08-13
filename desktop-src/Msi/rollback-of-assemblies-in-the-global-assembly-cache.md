@@ -1,23 +1,23 @@
 ---
-description: Un processo in due passaggi estende il modello di transazione Windows Installer ai prodotti contenenti Common Language Runtime assembly. Ciò consente al programma di installazione di eseguire il rollback di installazioni e rimozioni non riuscite degli assembly.
+description: Un processo in due passaggi estende il Windows di transazione del programma di installazione ai prodotti contenenti assembly Common Language Runtime. Ciò consente al programma di installazione di eseguire il rollback delle installazioni e delle rimozioni degli assembly non completate.
 ms.assetid: 065a380c-4eb5-48a5-ab0a-7f1229b77898
-title: Rollback degli assembly nella global assembly cache
+title: Rollback degli assembly nella Global Assembly Cache
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c84bc3107355cb50c17043ee571edff708ba3f6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef1379d8132e4a0789108bae4b26fc02c492f5ccb9a0ec7699bba3d9d4de04d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625826"
 ---
-# <a name="rollback-of-assemblies-in-the-global-assembly-cache"></a>Rollback degli assembly nella global assembly cache
+# <a name="rollback-of-assemblies-in-the-global-assembly-cache"></a>Rollback degli assembly nella Global Assembly Cache
 
-Un processo in due passaggi estende il modello di transazione Windows Installer ai prodotti contenenti Common Language Runtime assembly. Ciò consente al programma di installazione di eseguire il rollback di installazioni e rimozioni non riuscite degli assembly.
+Un processo in due passaggi estende il Windows di transazione del programma di installazione ai prodotti contenenti assembly Common Language Runtime. Ciò consente al programma di installazione di eseguire il rollback delle installazioni e delle rimozioni degli assembly non completate.
 
-Durante il primo passaggio, il Windows Installer utilizza il Framework Microsoft .NET per creare un'interfaccia per ogni assembly. Il Windows Installer utilizza il numero di interfacce disponibili per l'installazione degli assembly. Il commit di un assembly tramite una di queste interfacce significa solo che l'assembly è pronto per sostituire qualsiasi assembly esistente con lo stesso nome, ma non lo sostituisce. Se l'utente annulla l'installazione o se si verifica un errore di installazione irreversibile, il Windows Installer può comunque eseguire il rollback dell'assembly allo stato precedente rilasciando tali interfacce.
+Durante il primo passaggio, il Windows installer usa Microsoft .NET Framework per creare un'interfaccia per ogni assembly. Il Windows installer usa tutte le interfacce quanti sono gli assembly installati. Il commit di un assembly usando una di queste interfacce significa solo che l'assembly è pronto per sostituire qualsiasi assembly esistente con lo stesso nome, ma non lo sostituisce ancora. Se l'utente annulla l'installazione o se si verifica un errore di installazione irreversibile, il programma di installazione di Windows può comunque eseguire il rollback dell'assembly allo stato precedente rilasciando queste interfacce.
 
-Al termine Windows Installer dell'installazione di tutti gli assembly e dei componenti Windows Installer, il programma di installazione può avviare il secondo passaggio dell'installazione. Il secondo passaggio usa una funzione separata per eseguire il commit finale di tutti i nuovi assembly di Common Language Runtime. Vengono sostituiti tutti gli assembly esistenti con lo stesso nome.
+Al termine dell Windows installazione di tutti gli assembly e dei Windows installer, il programma di installazione può avviare il secondo passaggio dell'installazione. Il secondo passaggio usa una funzione separata per eseguire il commit finale di tutti i nuovi assembly di Common Language Runtime. In questo modo tutti gli assembly esistenti vengono sostituiti con lo stesso nome.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: Attributo public-Key-policy
-description: Riferimento ai criteri di chiave pubblica per il dominio.
+title: Attributo Public-Key-Policy
+description: Riferimento ai criteri di chiave pubblica per questo dominio.
 ms.assetid: 08426923-be3d-4dfe-9ef2-0679eccd1d25
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo public-Key-policy
-- Schema AD dell'attributo publicKeyPolicy
+- Schema AD dell'attributo Public-Key-Policy
+- Attributo publicKeyPolicy - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce12a0536b7e112aa1fccbb2c6cb685d4bedcc6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28b7a6ae02e960c99a540965889af1525c689a6453c09cfef399559bd96b3e24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681712"
 ---
-# <a name="public-key-policy-attribute"></a>Attributo public-Key-policy
+# <a name="public-key-policy-attribute"></a>Attributo Public-Key-Policy
 
-Riferimento ai criteri di chiave pubblica per il dominio.
+Riferimento ai criteri di chiave pubblica per questo dominio.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Public-Key-policy                                     |
-| LDAP-Display-Name | publicKeyPolicy                                       |
+| CN                | Criteri di chiave pubblica                                     |
+| Ldap-Display-Name | publicKeyPolicy                                       |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.420                                |
-| System-ID-GUID    | 80a67e28-9f22-11d0-afdd-00c04fd930c9                  |
+| System-Id-Guid    | 80a67e28-9f22-11d0-afdd-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento ai criteri di chiave pubblica per il dominio.
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 

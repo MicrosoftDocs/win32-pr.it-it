@@ -1,11 +1,11 @@
 ---
-title: Attributo Address-Type
-description: Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi di indirizzo sono mappati ai formati degli indirizzi. Ovvero osservando il tipo di indirizzo di un destinatario, le applicazioni client possono determinare come formattare un indirizzo appropriato per il destinatario.
+title: Address-Type attributo
+description: Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi di indirizzo vengono mappati ai formati di indirizzo. Ciò significa che esaminando il tipo di indirizzo di un destinatario, le applicazioni client possono determinare come formattare un indirizzo appropriato per il destinatario.
 ms.assetid: ff39b1f5-1844-43e9-a4a5-2b5f7c396f34
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Address-Type attribute
-- Schema AD dell'attributo addressType
+- Address-Type schema AD dell'attributo
+- Attributo addressType Schema di ACTIVE Directory
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ece3b396d619272c616ff1a959d01efb64ccd46
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: eec2ce0ff9651350803a05b3b3bf3dda663419c9948617b706688bf78057ad72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688488"
 ---
-# <a name="address-type-attribute"></a>Attributo Address-Type
+# <a name="address-type-attribute"></a>Address-Type attributo
 
-Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi di indirizzo sono mappati ai formati degli indirizzi. Ovvero osservando il tipo di indirizzo di un destinatario, le applicazioni client possono determinare come formattare un indirizzo appropriato per il destinatario.
+Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi di indirizzo vengono mappati ai formati di indirizzo. Ciò significa che esaminando il tipo di indirizzo di un destinatario, le applicazioni client possono determinare come formattare un indirizzo appropriato per il destinatario.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------|
 | CN                | Address-Type                                                                                                              |
-| LDAP-Display-Name | addressType                                                                                                               |
-| Dimensione              | Tipi di indirizzi: 3COM, ATT, CCMAIL, COMPUSERVE, EX, FAX, MSFAX, MCI, MHS, MS, MSA, MSN, PROFS, SMTP, SNADS, TELEX, X400, X500 |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                                                                          |
-| Frequenza di aggiornamento  | Set quando viene creato l'oggetto.                                                                                           |
+| Ldap-Display-Name | addressType                                                                                                               |
+| Dimensione              | Tipi di indirizzo: 3COM, ATT, CCMAIL, COMPUSERVE, EX, FAX, MSFAX, MCI, MHS, MS, MSA, MSN,PROFS,SMTP, SNADS, TELEX, X400, X500 |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                                                                                          |
+| Frequenza di aggiornamento  | Imposta quando viene creato l'oggetto.                                                                                           |
 | Attribute-Id      | 1.2.840.113556.1.2.350                                                                                                    |
-| System-ID-GUID    | 5fd42464-1262-11d0-a060-00aa006c33ed                                                                                      |
+| System-Id-Guid    | 5fd42464-1262-11d0-a060-00aa006c33ed                                                                                      |
 | Sintassi            | [**String(Teletex)**](s-string-teletex.md)                                                                               |
 
 
@@ -58,15 +58,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa di caratteri che descrive il formato dell'indirizzo dell'utente. I tipi 
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8048                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 

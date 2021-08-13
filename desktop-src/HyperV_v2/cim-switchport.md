@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una porta di commutazione che invia e riceve frame di dati.
+description: Rappresenta una porta del commutatore che invia e riceve frame di dati.
 ms.assetid: 015eed2a-1393-40ef-a190-832ab48766f9
-title: Classe CIM_SwitchPort
+title: CIM_SwitchPort classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cf63843fc5a246012d3af6a059c897956d6f19b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e52fc85f0891c5b8d1bc88f39437b4a70c5a172ba9af3ba02b08cc6b45dd6235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647189"
 ---
-# <a name="cim_switchport-class"></a>CIM \_ SwitchPort (classe)
+# <a name="cim_switchport-class"></a>Classe \_ CiM SwitchPort
 
-Rappresenta una porta di commutazione che invia e riceve frame di dati.
+Rappresenta una porta del commutatore che invia e riceve frame di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,29 +37,29 @@ class CIM_SwitchPort : CIM_ProtocolEndpoint
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SwitchPort** presenta questi tipi di membri:
+La **classe \_ CiM SwitchPort** include i tipi di membri seguenti:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SwitchPort** dispone di queste proprietà.
+La **classe \_ CiM SwitchPort** ha queste proprietà.
 
 <dl> <dt>
 
-**NumeroPorta**
+**Portnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dPort ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dPort")
 </dt> </dl>
 
-Identificatore numerico della porta di commutazione.
+Identificatore numerico della porta del commutatore.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Identificatore numerico della porta di commutazione.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -81,7 +81,7 @@ Identificatore numerico della porta di commutazione.
 
 <dl> <dt>
 
-[**\_PROTOCOLENDPOINT CIM**](cim-protocolendpoint.md)
+[**Protocollo \_ CIMEndpoint**](cim-protocolendpoint.md)
 </dt> </dl>
 
  

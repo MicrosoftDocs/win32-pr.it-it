@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Metodi IWbemEventProviderQuerySink
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c387b71d89b00c2557f950ce63a5eec6ff3d71b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61b3d8859e5808fad05953bbf5f7a9ee0ebe76194bf3e54ad1384edb2cfc018f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555925"
 ---
 # <a name="iwbemeventproviderquerysink-methods"></a>Metodi IWbemEventProviderQuerySink
 
-L'interfaccia [**IWbemEventProviderQuerySink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventproviderquerysink) espone i metodi seguenti.
+[**L'interfaccia IWbemEventProviderQuerySink**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemeventproviderquerysink) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,5 +1,5 @@
 ---
-title: attributo meetingIP
+title: Attributo meetingIP
 description: Indirizzo TCP/IP per la riunione.
 ms.assetid: ed18a170-aca9-4721-af36-77c120eadde1
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea3afff67c417f8bf2786421bb991f530e753b3e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13a675561bbed7fc4fb8ebad9846d1896a3f94ddd4ed4d7d456adc40958d8418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687801"
 ---
-# <a name="meetingip-attribute"></a>attributo meetingIP
+# <a name="meetingip-attribute"></a>Attributo meetingIP
 
 Indirizzo TCP/IP per la riunione.
 
@@ -29,12 +29,12 @@ Indirizzo TCP/IP per la riunione.
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingIP                                                                        |
-| LDAP-Display-Name | meetingIP                                                                        |
+| Ldap-Display-Name | meetingIP                                                                        |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Privilegio di aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.580                                                           |
-| System-ID-GUID    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
+| System-Id-Guid    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -57,15 +57,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Indirizzo TCP/IP per la riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Vero                                    |
+| Is-Single-Valued       | Vero                                    |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

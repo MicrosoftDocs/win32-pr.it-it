@@ -1,10 +1,10 @@
 ---
-title: Attributo Address-Syntax
-description: Grammatica per la codifica delle proprietà della tabella di visualizzazione sotto forma di stringa.
+title: Address-Syntax attributo
+description: Grammatica per la codifica delle proprietà della tabella di visualizzazione come stringa.
 ms.assetid: 809981da-8572-4a9f-a4c3-06cff95c8bdc
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Address-Syntax attribute
+- Address-Syntax schema AD dell'attributo
 - Schema AD dell'attributo addressSyntax
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db7ae0a0d5a4672168329b546dd53c19697eec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37734d2742d1297429995f56edd4a1667b6ffa64b776b8b61a50608c05ead0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688654"
 ---
-# <a name="address-syntax-attribute"></a>Attributo Address-Syntax
+# <a name="address-syntax-attribute"></a>Address-Syntax attributo
 
-Grammatica per la codifica delle proprietà della tabella di visualizzazione sotto forma di stringa.
+Grammatica per la codifica delle proprietà della tabella di visualizzazione come stringa.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Address-Syntax                                        |
-| LDAP-Display-Name | addressSyntax                                         |
+| Ldap-Display-Name | addressSyntax                                         |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.255                                |
-| System-ID-GUID    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
+| System-Id-Guid    | 5fd42463-1262-11d0-a060-00aa006c33ed                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Grammatica per la codifica delle proprietà della tabella di visualizzazione sot
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8018                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 4096                                                     |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Address-template**](c-addresstemplate.md)<br/> |
+| Classi usate in        | [**Modello di indirizzo**](c-addresstemplate.md)<br/> |
 
 
 

@@ -1,62 +1,62 @@
 ---
-description: Il file VBScript WiFilVer.vbs viene fornito nei componenti Windows SDK per Windows Installer sviluppatori. Nell'esempio viene illustrato come utilizzare uno script per segnalare o aggiornare la versione del file, le dimensioni e le informazioni sulla lingua.
+description: Il file VBScript WiFilVer.vbs disponibile in Windows SDK Components for Windows Installer Developers. Nell'esempio viene illustrato come utilizzare uno script per segnalare o aggiornare la versione del file, le dimensioni e le informazioni sulla lingua.
 ms.assetid: 21550eea-c30b-4738-9201-ab500356fabf
 title: Gestire le dimensioni e le versioni dei file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 426acf71956d87fe1458447119d79bc142f1ee75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79dcb5bec9b7fd24d7171efed9295479e56d979a3f7aa69352f2231d409417f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118629042"
 ---
 # <a name="manage-file-sizes-and-versions"></a>Gestire le dimensioni e le versioni dei file
 
-Il file VBScript WiFilVer.vbs viene fornito nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md). Nell'esempio viene illustrato come utilizzare uno script per segnalare o aggiornare la versione del file, le dimensioni e le informazioni sulla lingua.
+Il file VBScript WiFilVer.vbs in Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md). Nell'esempio viene illustrato come utilizzare uno script per segnalare o aggiornare la versione del file, le dimensioni e le informazioni sulla lingua.
 
-Nell'esempio vengono inoltre illustrate le azioni Windows Installer, le modalità di accesso a un database Windows Installer e l'utilizzo degli elementi seguenti:
+L'esempio illustra anche Windows del programma di installazione, come accedere a un database del programma di installazione di Windows e come usare quanto segue:
 
--   Metodo [**Installer. OpenDatabase**](installer-opendatabase.md) dell' [ **oggetto Installer**](installer-object.md)
--   Proprietà [**Installer. FileAttributes**](installer-fileattributes.md)
--   [**Installer. filehash**](installer-filehash.md) (metodo)
--   [**Installer. FileVersion**](installer-fileversion.md) (metodo)
--   Metodo [**Installer. LastErrorRecord**](installer-lasterrorrecord.md) dell' [ **oggetto Installer**](installer-object.md)
--   Metodo [**database. OpenView**](database-openview.md)
--   Proprietà [**database. SummaryInformation**](database-summaryinformation.md) dell' [ **oggetto di database**](database-object.md)
--   [**Session. DoAction,**](session-doaction.md) metodo
--   [**Session. Property**](session-session.md)
--   Proprietà [**Session. SourcePath**](session-sourcepath.md)
--   Proprietà [**Session. Mode**](session-mode.md) dell' [ **oggetto Session**](session-object.md)
--   Proprietà [**record. StringData**](record-stringdata.md)
--   Proprietà [**record. IntegerData**](record-integerdata.md) dell' [ **oggetto record**](record-object.md)
+-   [**Metodo Installer.OpenDatabase**](installer-opendatabase.md) [ **dell'oggetto Installer**](installer-object.md)
+-   [**Installer.FileAttributes -**](installer-fileattributes.md) proprietà
+-   [**Metodo Installer.FileHash**](installer-filehash.md)
+-   [**Metodo Installer.FileVersion**](installer-fileversion.md)
+-   [**Metodo Installer.LastErrorRecord**](installer-lasterrorrecord.md) dell'oggetto [ **Installer**](installer-object.md)
+-   [**Metodo Database.OpenView**](database-openview.md)
+-   [**Proprietà Database.SummaryInformation**](database-summaryinformation.md) [ **dell'oggetto di database**](database-object.md)
+-   [**Metodo Session.DoAction**](session-doaction.md)
+-   [**Session.Property**](session-session.md)
+-   [**Session.SourcePath -**](session-sourcepath.md) proprietà
+-   [**Proprietà Session.Mode**](session-mode.md) [ **dell'oggetto Session**](session-object.md)
+-   [**Record.StringData -**](record-stringdata.md) proprietà
+-   [**Proprietà Record.IntegerData**](record-integerdata.md) [ **dell'oggetto Record**](record-object.md)
 
-Per usare questo esempio è necessaria la versione CScript.exe o WScript.exe di Windows script host. Per utilizzare CScript.exe per eseguire questo esempio, digitare un comando al prompt dei comandi utilizzando la sintassi seguente:
+L'uso di questo esempio richiede CScript.exe o WScript.exe versione di Windows Script Host. Per usare CScript.exe eseguire questo esempio, digitare un comando al prompt dei comandi usando la sintassi seguente:
 
-**cscript WiFilVer.vbs \[ percorso di \] \[ origine facoltativo del database\]**
+**cscript WiFilVer.vbs \[ percorso di origine facoltativo del database \] \[\]**
 
-Tenere inoltre presente quanto segue:
+Tenere presente anche quanto segue:
 
--   La guida viene visualizzata se il primo argomento è/? oppure se vengono specificati troppi argomenti.
--   Per reindirizzare l'output a un file, terminare la riga di comando con VBS > \[ *percorso del file* \] .
--   L'esempio restituisce un valore pari a 0 (zero) per esito positivo, 1 (uno) se la guida viene richiamata e 2 (due) se lo script non riesce.
+-   La Guida viene visualizzata se il primo argomento è /? o se vengono specificati troppi argomenti.
+-   Per reindirizzare l'output a un file, terminare la riga di comando con vbs > \[ *percorso del file* \] .
+-   Nell'esempio viene restituito il valore 0 (zero) per l'esito positivo, 1 (uno) se viene richiamata la Guida e 2 (due) se lo script ha esito negativo.
 
-Specificare il database di Windows Installer che si desidera aggiornare, che deve trovarsi nella radice del file di origine. Tuttavia, è possibile specificare le origini per il database in posizioni separate. Se l'origine è compressa, tutti i file vengono aperti alla radice.
+Specificare il Windows del programma di installazione che si vuole aggiornare, che deve trovarsi nella radice del file di origine. Tuttavia, è possibile specificare le origini per il database in posizioni separate. Se l'origine è compressa, tutti i file vengono aperti nella radice.
 
-È possibile specificare le opzioni seguenti in qualsiasi posizione nella riga di comando.
+Le opzioni seguenti possono essere specificate in qualsiasi posizione nella riga di comando.
 
 
 
 | Opzione                | Descrizione                                                                              |
 |-----------------------|------------------------------------------------------------------------------------------|
-| *non è stata specificata alcuna opzione* | Visualizza le informazioni sul file del database.                                            |
-| /U                    | Aggiornare le informazioni relative alle dimensioni, alla versione e alla lingua del file nel database dall'origine. |
+| *nessuna opzione specificata* | Consente di visualizzare le informazioni sul file del database.                                            |
+| /U                    | Aggiornare le informazioni sulle dimensioni, la versione e la lingua del file nel database dall'origine. |
 
 
 
  
 
-Per ulteriori informazioni, vedere [Windows Installer esempi di script](windows-installer-scripting-examples.md) e [strumenti di sviluppo Windows Installer](windows-installer-development-tools.md).
+Per altre informazioni, vedere esempi [di Windows di script del](windows-installer-scripting-examples.md) programma di installazione e Windows di sviluppo del programma di [installazione.](windows-installer-development-tools.md)
 
  
 

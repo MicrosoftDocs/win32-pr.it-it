@@ -4,18 +4,18 @@ description: Per recuperare il nome della risorsa di rete associata a un disposi
 ms.assetid: 7c02cf9a-cca3-47d8-8a4b-f2245f1db92a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac84aec3c6aafb8a5113ea29251247a1de35aec
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 264a7352fb10139df538d5803fc94966b276fa334f2e4ef5f2c0799e1c32c4cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566828"
 ---
 # <a name="retrieving-the-connection-name"></a>Recupero del nome della connessione
 
-Per recuperare il nome della risorsa di rete associata a un dispositivo locale, un'applicazione può chiamare la funzione [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) , come illustrato nell'esempio seguente.
+Per recuperare il nome della risorsa di rete associata a un dispositivo locale, un'applicazione può chiamare la funzione [**WNetGetConnection,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) come illustrato nell'esempio seguente.
 
-Nell'esempio seguente viene chiamato un gestore degli errori definito dall'applicazione per elaborare gli errori e la funzione di [**testo**](/windows/desktop/api/wingdi/nf-wingdi-textouta) per la stampa.
+Nell'esempio seguente viene chiamato un gestore degli errori definito dall'applicazione per elaborare gli errori e la [**funzione TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) per la stampa.
 
 
 ```C++
@@ -58,8 +58,8 @@ switch (dwResult)
 
 
 
-Per ulteriori informazioni sull'utilizzo di un gestore degli errori definito dall'applicazione, vedere [recupero degli errori di rete](retrieving-network-errors.md).
+Per altre informazioni sull'uso di un gestore degli errori definito dall'applicazione, vedere [Recupero di errori di rete](retrieving-network-errors.md).
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione in cui un servizio è un componente di un servizio padre, che insieme, costituisce un servizio di livello superiore.
+description: Rappresenta un'associazione in cui un servizio è un componente di un servizio padre, che insieme formano un servizio di livello superiore.
 ms.assetid: c629d59d-d9d3-4019-a378-cd1d4d31a5d9
-title: Classe CIM_ServiceComponent
+title: CIM_ServiceComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2bfb9943685f8568674e696a76df94fda502fcb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7684b22bc7488093702e5050524ac6c36f719dd985f537570e0eb1395756e7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647546"
 ---
-# <a name="cim_servicecomponent-class"></a>CIM \_ servicecomponent (classe)
+# <a name="cim_servicecomponent-class"></a>Classe \_ CiM ServiceComponent
 
-Rappresenta un'associazione in cui un servizio è un componente di un servizio padre, che insieme, costituisce un servizio di livello superiore.
+Rappresenta un'associazione in cui un servizio è un componente di un servizio padre, che insieme formano un servizio di livello superiore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,36 +39,36 @@ class CIM_ServiceComponent : CIM_Component
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ servicecomponent** presenta questi tipi di membri:
+La **classe \_ CiM ServiceComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ servicecomponent** dispone di queste proprietà.
+La **classe \_ CiM ServiceComponent** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ servizio CIM**
+Tipo di dati: **servizio \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificatori: [**Aggregate,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Il servizio padre.
+Servizio padre.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati **: \_ servizio CIM**
+Tipo di dati: **servizio \_ CIM**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -77,7 +77,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Il servizio componenti.
+Servizio del componente.
 
 </dd> </dl>
 
@@ -88,9 +88,9 @@ Il servizio componenti.
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Il servizio componenti.
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

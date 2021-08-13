@@ -1,9 +1,9 @@
 ---
-title: attributo ncacn_ip_tcp
-description: La \_ \_ parola chiave TCP IP ncacn identifica TCP/IP come famiglia di protocolli per l'endpoint.
+title: ncacn_ip_tcp attributo
+description: La parola chiave ncacn \_ ip tcp identifica TCP/IP come famiglia di protocolli per \_ l'endpoint.
 ms.assetid: 8142c667-9a5f-4066-a36d-1bb5ce551d21
 keywords:
-- attributo ncacn_ip_tcp MIDL
+- ncacn_ip_tcp attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1adb57951e862ebcdfa6889aae170bfdf5a14f96
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c34ba0a872af79245469818121761a38d356316b53a31743f9ebf2cd66f72325
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642231"
 ---
-# <a name="ncacn_ip_tcp-attribute"></a>\_ \_ attributo TCP IP ncacn
+# <a name="ncacn_ip_tcp-attribute"></a>Attributo tcp ip ncacn \_ \_
 
-La parola chiave **\_ \_ TCP IP ncacn** identifica TCP/IP come famiglia di protocolli per l'endpoint.
+La **parola chiave ncacn \_ ip \_ tcp** identifica TCP/IP come famiglia di protocolli per l'endpoint.
 
 ``` syntax
 endpoint("ncacn_ip_tcp:server-name[port-name]")
@@ -31,23 +31,23 @@ endpoint("ncacn_ip_tcp:server-name[port-name]")
 
 <dl> <dt>
 
-*nome server* 
+*server-name* 
 </dt> <dd>
 
-Specifica il nome o l'indirizzo Internet per il server, o host, computer. Il nome è una stringa di caratteri. L'indirizzo Internet è una nota comune di indirizzo Internet.
+Specifica il nome o l'indirizzo Internet per il server o l'host del computer. Il nome è una stringa di caratteri. L'indirizzo Internet è una notazione di indirizzi Internet comune.
 
 </dd> <dt>
 
-*nome porta* 
+*port-name* 
 </dt> <dd>
 
-Specifica un numero facoltativo a 16 bit. I valori minori di 1024 sono generalmente riservati. Se non viene specificato alcun valore, il servizio di mapping degli endpoint seleziona un valore valido per il *nome di porta* .
+Specifica un numero facoltativo a 16 bit. I valori minori di 1024 sono in genere riservati. Se non viene specificato alcun valore, il servizio di mapping degli endpoint seleziona un valore *di nome porta* valido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La sintassi della stringa della porta di trasporto TCP/IP, come tutte le stringhe di porta, viene definita indipendentemente dalla specifica IDL. Il compilatore esegue alcune verifiche della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. È possibile che alcuni errori vengano segnalati in fase di esecuzione anziché in fase di compilazione.
+La sintassi della stringa di porta del trasporto TCP/IP, come tutte le stringhe di porta, è definita indipendentemente dalla specifica IDL. Il compilatore esegue un controllo della sintassi, ma non garantisce che la specifica dell'endpoint sia corretta. Alcuni errori possono essere segnalati in fase di esecuzione anziché in fase di compilazione.
 
 ## <a name="examples"></a>Esempi
 
@@ -70,27 +70,27 @@ endpoint("ncacn_ip_tcp:128.10.2.30[1404]")
 
 <dl> <dt>
 
-[**endpoint**](endpoint.md)
+[**Endpoint**](endpoint.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**ncacn \_ NB \_ TCP**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**\_NP ncacn**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**\_SPX ncacn**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**Associazione stringa**](/windows/desktop/Rpc/string-binding)
+[**associazione di stringhe**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

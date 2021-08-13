@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsADSystemInfo (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsADSystemInfo ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsADSystemInfo (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsADSystemInfo ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: 1cdaa610-4341-4825-b2f9-dd495a9147ff
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsADSystemInfo ADSI
+- Metodi della proprietà IADsADSystemInfo ADSI
 topic_type:
 - apiref
 api_name:
@@ -33,16 +33,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8dba53dfda4bb8f4dd3290cb2737cdeb4e8a6d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 177926924d989686dae33c3403c07bfe5e69d0ba1762dd2a1a1cdee78a2175f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691612"
 ---
-# <a name="iadsadsysteminfo-property-methods"></a>Metodi di proprietà IADsADSystemInfo
+# <a name="iadsadsysteminfo-property-methods"></a>Metodi della proprietà IADsADSystemInfo
 
-I metodi di proprietà dell'interfaccia [**IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -101,7 +101,7 @@ HRESULT get_DomainDNSName(
 **DomainShortName**
 </dt> <dd> <dl>
 
-Recupera il nome breve del dominio del computer locale, ad esempio "DomainName".
+Recupera il nome breve del dominio del computer locale, ad esempio "domainName".
 
 <dt>
 
@@ -158,7 +158,7 @@ Determina se il dominio del computer locale è in modalità nativa o mista.
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Tipo di dati di scripting: **bool**
+Tipo di dati di scripting: **BOOL**
 </dt> <dt>
 
 
@@ -176,7 +176,7 @@ HRESULT get_IsNativeMode(
 **PDCRoleOwner**
 </dt> <dd> <dl>
 
-Recupera il nome distinto dell'oggetto DSA (Directory Service Agent) per il controller di dominio proprietario del ruolo del controller di dominio primario nel dominio del computer locale.
+Recupera il nome distinto dell'oggetto agente del servizio directory (DSA) per il controller di dominio proprietario del ruolo del controller di dominio primario nel dominio del computer locale.
 
 <dt>
 
@@ -201,7 +201,7 @@ HRESULT get_PDCRoleOwner(
 **SchemaRoleOwner**
 </dt> <dd> <dl>
 
-Recupera il nome distinto dell'oggetto DSA (Directory Service Agent) per il controller di dominio proprietario del ruolo di master schema nella foresta del computer locale.
+Recupera il nome distinto dell'oggetto agente del servizio directory (DSA) per il controller di dominio proprietario del ruolo master schema nella foresta del computer locale.
 
 <dt>
 
@@ -223,7 +223,7 @@ HRESULT get_SchemaRoleOwner(
 
 </dt> </dl> </dd> <dt>
 
-**SiteName**
+**Sitename**
 </dt> <dd> <dl>
 
 Recupera il nome del sito del computer locale.
@@ -251,7 +251,7 @@ HRESULT get_SiteName(
 **UserName**
 </dt> <dd> <dl>
 
-Recupera il Active Directory nome distinto dell'utente corrente, ovvero l'utente connesso o l'utente rappresentato dal thread chiamante.
+Recupera il nome distinto di Active Directory dell'utente corrente, ovvero l'utente connesso o l'utente rappresentato dal thread chiamante.
 
 <dt>
 
@@ -277,7 +277,7 @@ HRESULT get_UserName(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice C++ riportato di seguito vengono recuperate le informazioni sul sistema di Windows. Per brevità, il controllo degli errori viene omesso.
+L'esempio di codice C++ seguente recupera le Windows di sistema. Per brevità, il controllo degli errori viene omesso.
 
 
 ```C++
@@ -333,7 +333,7 @@ int main()
 
 
 
-Nell'esempio di codice seguente Visual Basic vengono recuperate le informazioni sul sistema di Windows.
+Nell'esempio Visual Basic codice seguente vengono recuperate le Windows di sistema.
 
 
 ```VB
@@ -346,7 +346,7 @@ Debug.print "PDC Role Owner: " & sys.PDCRoleOwner
 
 
 
-Nell'esempio di codice VBScript/ASP riportato di seguito vengono recuperate le informazioni sul sistema di Windows.
+L'esempio di codice VBScript/ASP seguente recupera le Windows di sistema.
 
 
 ```VB
@@ -370,7 +370,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsADSystemInfo è definito come 5BB11929-AFD1-11D2-9CB9-0000F87A369E<br/>     |
 
@@ -383,7 +383,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 [**IADsADSystemInfo**](/windows/desktop/api/Iads/nn-iads-iadsadsysteminfo)
 </dt> <dt>
 
-[**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+[**Cocreateinstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> </dl>
 
  

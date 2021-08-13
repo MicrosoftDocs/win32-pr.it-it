@@ -1,11 +1,11 @@
 ---
-title: ACS-Total-No-of-flows (attributo)
-description: Numero totale di flussi che possono essere presenti in un determinato utente.
+title: Attributo ACS-Total-No-Of-Flows
+description: Numero totale di flussi che un determinato utente può avere.
 ms.assetid: cfbb4bc3-8233-47aa-8b67-88454d44e359
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-Total-No-of-Flows
-- Schema AD dell'attributo aCSTotalNoOfFlows
+- Schema AD dell'attributo ACS-Total-No-Of-Flows
+- Attributo aCSTotalNoOfFlows Schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7e50d31a7d706bc7a6b4311f6edaa3fa66dd8f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64c0382fc2b15f77fbccc7efb42973a33df3eca5e8fe6a2810b4fa47214231e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689187"
 ---
-# <a name="acs-total-no-of-flows-attribute"></a>ACS-Total-No-of-flows (attributo)
+# <a name="acs-total-no-of-flows-attribute"></a>Attributo ACS-Total-No-Of-Flows
 
-Numero totale di flussi che possono essere presenti in un determinato utente.
+Numero totale di flussi che un determinato utente può avere.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-totale senza flussi                |
-| LDAP-Display-Name | aCSTotalNoOfFlows                    |
+| CN                | ACS-Total-No-Of-Flows                |
+| Ldap-Display-Name | aCSTotalNoOfFlows                    |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.763               |
-| System-ID-GUID    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
+| System-Id-Guid    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Numero totale di flussi che possono essere presenti in un determinato utente.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

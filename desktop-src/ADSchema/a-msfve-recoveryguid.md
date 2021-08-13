@@ -1,11 +1,11 @@
 ---
-title: attributo ms-FVE-RecoveryGuid
+title: Attributo ms-FVE-RecoveryGuid
 description: Contiene il GUID associato a una password di ripristino FVE (Full Volume Encryption).
 ms.assetid: a26d6ef2-6fe6-4d30-9725-19f9f5ab1132
 ms.tgt_platform: multiple
 keywords:
-- attributo ms-FVE-RecoveryGuid-schema AD
-- msFVE-schema AD attributo RecoveryGuid
+- Schema AD dell'attributo ms-FVE-RecoveryGuid
+- Schema AD dell'attributo msFVE-RecoveryGuid
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2630f3d7c729073051ae2a1bd363a8c36387e8fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 808c3538591af9fb13553c66d75a0a7765174d647ae6c280ee22e8ff3b4a94a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682733"
 ---
-# <a name="ms-fve-recoveryguid-attribute"></a>attributo ms-FVE-RecoveryGuid
+# <a name="ms-fve-recoveryguid-attribute"></a>Attributo ms-FVE-RecoveryGuid
 
 Contiene il GUID associato a una password di ripristino FVE (Full Volume Encryption).
 
@@ -30,12 +30,12 @@ Contiene il GUID associato a una password di ripristino FVE (Full Volume Encrypt
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-RecoveryGuid                                   |
-| LDAP-Display-Name | msFVE-RecoveryGuid                                    |
+| Ldap-Display-Name | msFVE-RecoveryGuid                                    |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1965                               |
-| System-ID-GUID    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
+| System-Id-Guid    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -55,15 +55,15 @@ Contiene il GUID associato a una password di ripristino FVE (Full Volume Encrypt
 | ID collegamento                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| È a valore singolo       | Vero                                                                         |
+| A valore singolo       | Vero                                                                         |
 | Indicizzato             | Vero                                                                         |
 | Nel catalogo globale      | Vero                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classi utilizzate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Classi usate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene il GUID associato a una password di ripristino FVE (Full Volume Encrypt
 | ID collegamento                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| È a valore singolo       | Vero                                                                         |
+| A valore singolo       | Vero                                                                         |
 | Indicizzato             | Vero                                                                         |
 | Nel catalogo globale      | Vero                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classi utilizzate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Classi usate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene il GUID associato a una password di ripristino FVE (Full Volume Encrypt
 | ID collegamento                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| È a valore singolo       | Vero                                                                         |
+| A valore singolo       | Vero                                                                         |
 | Indicizzato             | Vero                                                                         |
 | Nel catalogo globale      | Vero                                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
 | System-Flags           | 0x00000010                                                                   |
-| Classi utilizzate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
+| Classi usate in        | [**ms-FVE-RecoveryInformation**](c-msfve-recoveryinformation.md)<br/> |
 
 
 

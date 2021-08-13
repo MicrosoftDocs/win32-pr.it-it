@@ -1,9 +1,9 @@
 ---
-title: opzione/tlb
-description: L'opzione/tlb specifica un nome di file per la libreria dei tipi generata dal compilatore MIDL.
+title: Opzione /tlb
+description: L'opzione /tlb specifica un nome file per la libreria dei tipi generata dal compilatore MIDL.
 ms.assetid: 7d5d9f92-ed1a-46bc-beb1-4be70d0a4813
 keywords:
-- /TLB switch MIDL
+- Opzione /tlb MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff0078f75865c8048eead911b310e102b779317
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 081723648788ec51fa65a4770deb336f665804a9527dc223000826870dbe1ee0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643751"
 ---
-# <a name="tlb-switch"></a>opzione/tlb
+# <a name="tlb-switch"></a>Opzione /tlb
 
-L'opzione **/tlb** specifica un nome di file per la libreria dei tipi generata dal compilatore MIDL.
+**L'opzione /tlb** specifica un nome file per la libreria dei tipi generata dal compilatore MIDL.
 
 ``` syntax
 midl /tlb filename
@@ -31,30 +31,30 @@ midl /tlb filename
 
 <dl> <dt>
 
-*filename* 
+*Filename* 
 </dt> <dd>
 
-Specifica il nome del file della libreria dei tipi di output (TLB). Per impostazione predefinita, se non si utilizza l'opzione **/tlb** , il file tlb avrà lo stesso nome del file IDL con estensione. TLB.
+Specifica il nome del file della libreria dei tipi di output (TLB). Per impostazione predefinita, se non si usa l'opzione **/tlb** , il file TLB ha lo stesso nome del file IDL, con estensione . Tlb.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/TLB NewName. tlb**
+**midl /tlb newname.tlb**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/notlb**](-notlb.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

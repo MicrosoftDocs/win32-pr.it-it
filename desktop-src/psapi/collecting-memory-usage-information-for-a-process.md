@@ -1,19 +1,19 @@
 ---
 title: Raccolta di informazioni sull'utilizzo della memoria per un processo
-description: Per determinare l'efficienza dell'applicazione, può essere utile esaminare l'utilizzo della memoria. Il codice di esempio seguente usa la funzione GetProcessMemoryInfo per ottenere informazioni sull'utilizzo della memoria di un processo.
+description: Per determinare l'efficienza dell'applicazione, è possibile esaminarne l'utilizzo della memoria. Il codice di esempio seguente usa la funzione GetProcessMemoryInfo per ottenere informazioni sull'utilizzo della memoria di un processo.
 ms.assetid: 23641bf8-3653-4cb9-8008-cd99137ca268
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ead17b8308424be8b959c4043eec606b18292708
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf9c2217f01c2c0f3a3ee1d2516b2e531cc243f5ac71c4022632d1b1c4dd4983
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462979"
 ---
 # <a name="collecting-memory-usage-information-for-a-process"></a>Raccolta di informazioni sull'utilizzo della memoria per un processo
 
-Per determinare l'efficienza dell'applicazione, può essere utile esaminare l'utilizzo della memoria. Il codice di esempio seguente usa la funzione [**GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere informazioni sull'utilizzo della memoria di un processo.
+Per determinare l'efficienza dell'applicazione, è possibile esaminarne l'utilizzo della memoria. Il codice di esempio seguente usa [**la funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere informazioni sull'utilizzo della memoria di un processo.
 
 
 ```C++
@@ -92,8 +92,8 @@ int main( void )
 
 
 
-La funzione Main ottiene un elenco di processi tramite la funzione [**EnumProcesses**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) . Per ogni processo, Main chiama la funzione PrintMemoryInfo, passando l'identificatore del processo. PrintMemoryInfo chiama a sua volta la funzione [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess** ha esito negativo, l'output Mostra solo l'identificatore del processo. Ad esempio, **OpenProcess** non riesce per i processi inattivi e CSRSS perché le relative restrizioni di accesso impediscono l'apertura del codice a livello di utente. Infine, PrintMemoryInfo chiama la funzione [**GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere le informazioni sull'utilizzo della memoria.
+La funzione main ottiene un elenco di processi usando la [**funzione EnumProcesses.**](/windows/desktop/api/Psapi/nf-psapi-enumprocesses) Per ogni processo, main chiama la funzione PrintMemoryInfo, passando l'identificatore del processo. PrintMemoryInfo chiama a sua volta la [**funzione OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) per ottenere l'handle del processo. Se **OpenProcess ha** esito negativo, l'output visualizza solo l'identificatore del processo. Ad esempio, **OpenProcess non** riesce per i processi Idle e CSRSS perché le restrizioni di accesso impediscono al codice a livello di utente di aprirli. PrintMemoryInfo chiama infine la [**funzione GetProcessMemoryInfo**](/windows/desktop/api/Psapi/nf-psapi-getprocessmemoryinfo) per ottenere le informazioni sull'utilizzo della memoria.
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Chiamato da un'intersezione shader per segnalare un'intersezione del raggio.
+description: Chiamato da uno shader di intersezione per segnalare un'intersezione di raggi.
 ms.assetid: ''
-title: ReportHit (funzione)
+title: Funzione ReportHit
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,19 +12,19 @@ api_name:
 - ReportHit
 api_type:
 - NA
-ms.openlocfilehash: 58d109f184974f76c533aaeee055f1ebf21d10eb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8714cabc02f70ca12bcc78493de3a61482ba5aed5490087d309f6ec091cecf75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118528109"
 ---
-# <a name="reporthit-function"></a>ReportHit (funzione)
+# <a name="reporthit-function"></a>Funzione ReportHit
 
-Chiamato da un'intersezione [shader](intersection-shader.md) per segnalare un'intersezione del raggio.
+Chiamato da uno [shader di intersezione per](intersection-shader.md) segnalare un'intersezione di raggi.
 
 ## <a name="syntax"></a>Sintassi
-Questa definizione di funzione intrinseca è equivalente al modello di funzione seguente:
+Questa definizione di funzione intrinseca equivale al modello di funzione seguente:
 
 ```
 template<attr_t>
@@ -41,21 +41,21 @@ Valore float che specifica la distanza parametrica dell'intersezione.
 
 `HitKind`
 
-Unsigned Integer che identifica il tipo di hit che si è verificato.  Si tratta di un valore specificato dall'utente compreso nell'intervallo 0-127.  Il valore può essere letto da [tutti](any-hit-shader.md) gli hit shader hit o [Closer](closest-hit-shader.md) con la funzione intrinseca **HitKind** .
+Intero senza segno che identifica il tipo di hit che si è verificato.  Si tratta di un valore specificato dall'utente nell'intervallo da 0 a 127.  Il valore può essere letto da [qualsiasi hit](any-hit-shader.md) shader o [hit](closest-hit-shader.md) shader più vicino con la funzione **intrinseca HitKind.**
 
 `Attributes`
 
-Struttura della struttura dell' [**attributo di intersezione**](intersection-attributes.md) definita dall'utente che specifica gli attributi di intersezione.  
+Struttura dell'attributo di intersezione definito [**dall'utente che**](intersection-attributes.md) specifica gli attributi di intersezione.  
 
 ## <a name="return-value"></a>Valore restituito
 
-**bool** True se il hit è stato accettato.  Un hit viene rifiutato se l'oggetto *SETI* non è compreso nell'intervallo corrente dei raggi o se qualsiasi hit shader chiama [**IgnoreHit**](ignorehit-function.md).  L'intervallo di raggi corrente è definito da **RayTMin** e **RayTCurrent**.
+**bool** True se l'hit è stato accettato.  Un hit viene rifiutato se *THit* non rientra nell'intervallo di raggi corrente o se qualsiasi hit shader [**chiama IgnoreHit.**](ignorehit-function.md)  L'intervallo di raggi corrente è definito **da RayTMin** e **RayTCurrent.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
+Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
-* [**Intersezione shader**](intersection-shader.md)
+* [**Intersection Shader**](intersection-shader.md)
 
 
 
@@ -65,7 +65,7 @@ Questa funzione può essere chiamata dai seguenti tipi di shader raytracing:
 
 <dl> <dt>
 
-[Guida di riferimento a Direct3D 12 raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

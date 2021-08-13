@@ -1,9 +1,9 @@
 ---
 title: max_is (attributo)
-description: L'attributo \ Max \_ is \ indica il valore massimo per un indice di matrice valido.
+description: L'attributo \ max \_ is\ definisce il valore massimo per un indice di matrice valido.
 ms.assetid: 8d09f610-cae6-45f6-815c-5ba916d8a5e7
 keywords:
-- attributo max_is MIDL
+- max_is attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27f2e2040acbc0e8f65c02f4f4ec7c3ad329959b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ca7dfa7e8cdc5b1df752a3a6eb442524157228d354079f262a27a5514860e335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642967"
 ---
-# <a name="max_is-attribute"></a>\_attributo max is
+# <a name="max_is-attribute"></a>attributo max \_ is
 
-L'attributo **\[ Max \_ is \]** indica il valore massimo per un indice di matrice valido.
+**\[ L'attributo max \_ è \]** che definisce il valore massimo per un indice di matrice valido.
 
 ``` syntax
 [max_is(limited-expression-list )]
@@ -31,20 +31,20 @@ L'attributo **\[ Max \_ is \]** indica il valore massimo per un indice di matric
 
 <dl> <dt>
 
-*elenco di espressioni limitate* 
+*limited-expression-list* 
 </dt> <dd>
 
-Specifica una o più espressioni del linguaggio C. Ogni espressione restituisce un intero che rappresenta l'indice di matrice valido più alto. Il compilatore MIDL supporta le espressioni condizionali, le espressioni logiche, le espressioni relazionali e le espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento. Separare più espressioni con virgole.
+Specifica una o più espressioni in linguaggio C. Ogni espressione restituisce un intero che rappresenta l'indice di matrice valido più alto. Il compilatore MIDL supporta espressioni condizionali, espressioni logiche, espressioni relazionali ed espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di incremento e decremento. Separare più espressioni con virgole.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ Max \_ is \]** non corrisponde necessariamente al numero di elementi nella matrice. Per una matrice di dimensioni *n* in C, dove il primo elemento della matrice è il numero di elemento zero, il valore massimo per un indice di matrice valido è *n*-1.
+**\[ L'attributo max \_ is \]** non corrisponde necessariamente al numero di elementi nella matrice. Per una matrice di dimensioni *n* in C, dove il primo elemento della matrice è il numero di elemento zero, il valore massimo per un indice di matrice valido *è n*-1.
 
-L'attributo **\[ Max \_ is \]** non può essere utilizzato come attributo di campo allo stesso tempo della **\[** [**dimensione \_**](size-is.md) **\]** Attribute.
+**\[ L'attributo max \_ is \]** non può essere usato come attributo di campo contemporaneamente all'attributo **\[** [**\_ size.**](size-is.md) **\]**
 
-Sebbene sia possibile utilizzare l'attributo **\[ Max \_ is \]** con un'espressione costante, questa operazione non è efficiente e non è necessaria. Ad esempio, usare una matrice a dimensione fissa:
+Anche se è legale usare **\[ l'attributo max \_ is \]** con un'espressione costante, questa operazione non è efficiente e non necessaria. Ad esempio, usare una matrice di dimensioni fisse:
 
 ``` syntax
 /* transmits values of a[0]... a[MAX_SIZE-1] */ 
@@ -85,9 +85,9 @@ HRESULT Proc2(
 [**min \_ è**](min-is.md)
 </dt> <dt>
 
-[**dimensioni \_**](size-is.md)
+[**size \_ è**](size-is.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

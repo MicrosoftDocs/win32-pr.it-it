@@ -1,8 +1,8 @@
 ---
-description: 'La classe del provider del registro di sistema WMI StdRegProv per WMI dispone di metodi che eseguono le operazioni seguenti:'
+description: 'La classe StdRegProv del provider del Registro di sistema per WMI dispone di metodi che consentono di eseguire le operazioni seguenti:'
 ms.assetid: d42248b3-2f96-4771-aee9-a0db139b149e
 ms.tgt_platform: multiple
-title: Modifica dei dati del registro di sistema
+title: Modifica dei dati del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,44 +10,44 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7b51f3f18eb718dab7c79f31a4b2188dd7afa529
-ms.sourcegitcommit: 3d9eb6638763fee8b87c378657458f814182e36c
+ms.openlocfilehash: 32258fb64e075889a6e423e2b6a3fa2e7b0fdeb0ee5a80e2f45436674ba79c4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556946"
 ---
-# <a name="changing-registry-data"></a>Modifica dei dati del registro di sistema
+# <a name="changing-registry-data"></a>Modifica dei dati del Registro di sistema
 
-La classe del [provider del registro di sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) [**WMI StdRegProv**](/previous-versions/windows/desktop/regprov/stdregprov) per WMI dispone di metodi che eseguono le operazioni seguenti:
+La classe [**StdRegProv del**](/previous-versions/windows/desktop/regprov/stdregprov) [provider](/previous-versions/windows/desktop/regprov/system-registry-provider) del Registro di sistema per WMI dispone di metodi che consentono di eseguire le operazioni seguenti:
 
--   Creare o eliminare chiavi del registro di sistema.
+-   Creare o eliminare chiavi del Registro di sistema.
 
-    Usare [**CreateKey**](/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov) o [**DeleteKey**](/previous-versions/windows/desktop/regprov/deletekey-method-in-class-stdregprov).
+    Usare [**CreateKey**](/previous-versions/windows/desktop/regprov/createkey-method-in-class-stdregprov) o [**DeleteKey.**](/previous-versions/windows/desktop/regprov/deletekey-method-in-class-stdregprov)
 
--   Creare o eliminare i valori denominati, chiamati voci quando sono sotto chiavi.
+-   Creare o eliminare valori denominati, detti voci quando si tratta di chiavi.
 
-    Usare il nome di un nuovo valore e [**SetBinaryValue**](/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov), [**SetDWORDValue**](/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov), [**SetExpandedStringValue**](/previous-versions/windows/desktop/regprov/setexpandedstringvalue-method-in-class-stdregprov), [**SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov)o [**SetStringValue**](/previous-versions/windows/desktop/regprov/setstringvalue-method-in-class-stdregprov) per creare un valore denominato. Usare [**DeleteValue**](/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov) per eliminare un valore denominato.
+    Usare il nome di un nuovo valore e [**SetBinaryValue,**](/previous-versions/windows/desktop/regprov/setbinaryvalue-method-in-class-stdregprov) [**SetDWORDValue,**](/previous-versions/windows/desktop/regprov/setdwordvalue-method-in-class-stdregprov) [**SetExpandedStringValue,**](/previous-versions/windows/desktop/regprov/setexpandedstringvalue-method-in-class-stdregprov) [**SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov)o [**SetStringValue**](/previous-versions/windows/desktop/regprov/setstringvalue-method-in-class-stdregprov) per creare un valore denominato. Usare [**DeleteValue**](/previous-versions/windows/desktop/regprov/deletevalue-method-in-class-stdregprov) per eliminare un valore denominato.
 
 -   Modificare i valori denominati.
 
-    Usare il nome di un valore e i metodi set (identificati nell'elemento puntato precedente) per modificare i valori denominati esistenti in una chiave. È necessario essere a conoscenza del nome di un valore per modificarlo. Se non si conoscono i nomi di valore in una chiave, utilizzare il metodo [**EnumValues**](/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov) per ottenere i nomi.
+    Usare il nome di un valore e i metodi Set (identificati nell'elemento puntato precedente) per modificare i valori denominati esistenti in una chiave. È necessario conoscere il nome di un valore per modificarlo. Se non si conoscono i nomi dei valori in una chiave, usare il [**metodo EnumValues**](/previous-versions/windows/desktop/regprov/enumvalues-method-in-class-stdregprov) per ottenere i nomi.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
--   [Creazione di una chiave del registro di sistema tramite VBScript](#creating-a-registry-key-using-vbscript)
--   [Creazione di un valore denominato del registro di sistema tramite PowerShell e VBScript](#creating-a-named-registry-value-using-powershell-and-vbscript)
+-   [Creazione di una chiave del Registro di sistema tramite VBScript](#creating-a-registry-key-using-vbscript)
+-   [Creazione di un valore del Registro di sistema denominato tramite PowerShell e VBScript](#creating-a-named-registry-value-using-powershell-and-vbscript)
 
-## <a name="creating-a-registry-key-using-vbscript"></a>Creazione di una chiave del registro di sistema tramite VBScript
+## <a name="creating-a-registry-key-using-vbscript"></a>Creazione di una chiave del Registro di sistema tramite VBScript
 
-Poiché il registro di sistema è il database di configurazione centrale per il sistema operativo, le applicazioni e i servizi, prestare attenzione quando si scrivono le modifiche ai valori del registro di sistema o si eliminano le chiavi.
+Poiché il Registro di sistema è il database di configurazione centrale per il sistema operativo, le applicazioni e i servizi, prestare attenzione quando si scrivono modifiche ai valori del Registro di sistema o si eliminano chiavi.
 
 > [!Note]  
-> Non è possibile monitorare la sottochiave **\_ \_ radice delle classi HKEY** dell' **\_ utente corrente di HKEY \_ (HKCU)**. Il **monitoraggio \_ degli utenti di HKEY** non è consigliato perché le sottochiavi vengono visualizzate e scompaiono durante il caricamento degli hive.
+> Non è possibile monitorare **la sottochiave \_ HKEY CLASSES \_ ROOT** di **HKEY \_ CURRENT \_ USER(HKCU)**. Il **monitoraggio di HKEY \_ USERS** non è consigliato perché le sottochiavi vengono visualizzate e scompaiono durante il caricamento degli hive.
 
  
 
-Negli esempi di codice seguenti viene illustrato come creare una nuova chiave del registro di sistema e una sottochiave.
+Gli esempi di codice seguenti illustrano come creare una nuova chiave del Registro di sistema e una sottochiave.
 
 
 ```VB
@@ -85,9 +85,9 @@ $reg = [wmiclass]"\\$strComputer\root\default:StdRegprov"
 
 
 
-## <a name="creating-a-named-registry-value-using-powershell-and-vbscript"></a>Creazione di un valore denominato del registro di sistema tramite PowerShell e VBScript
+## <a name="creating-a-named-registry-value-using-powershell-and-vbscript"></a>Creazione di un valore del Registro di sistema denominato tramite PowerShell e VBScript
 
-Nell'esempio di codice riportato di seguito viene illustrato come creare un valore denominato denominato **MultiStringValue** nella chiave **HKEY \_ locale \_** del \\ **software** \\ **myKey** \\ della **sottochiave** creata dallo script precedente. Lo script chiama [**WMI StdRegProv. SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov) per scrivere valori stringa in un nuovo valore denominato.
+L'esempio di codice seguente illustra come creare un valore denominato **MultiStringValue** sotto la chiave **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\  \\ **MyKey MySubKey** creata nello script precedente. Lo script chiama [**StdRegProv.SetMultiStringValue**](/previous-versions/windows/desktop/regprov/setmultistringvalue-method-in-class-stdregprov) per scrivere valori stringa in un nuovo valore denominato.
 
 
 ```VB
@@ -132,4 +132,4 @@ $multiValues = $reg.GetMultiStringValue($HKEY_LOCAL_MACHINE, $strKeyPath, $strVa
 $multiValues.sValue
 ```
 
-Utilizzando WMI, non è possibile impostare la sicurezza dell'accesso su una chiave del registro di sistema. Tuttavia, il metodo [**WMI StdRegProv. CheckAccess**](/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov) Confronta le impostazioni di sicurezza dell'utente corrente con il descrittore di sicurezza su una chiave del registro di sistema per determinare se l'utente dispone di un'autorizzazione specifica, ad esempio il **valore del \_ set \_ di chiavi**.
+Tramite WMI, non è possibile impostare la sicurezza di accesso su una chiave del Registro di sistema. Tuttavia, il metodo [**StdRegProv.CheckAccess**](/previous-versions/windows/desktop/regprov/checkaccess-method-in-class-stdregprov) confronta le impostazioni di sicurezza dell'utente corrente con il descrittore di sicurezza in una chiave del Registro di sistema per determinare se l'utente dispone di un'autorizzazione specifica, ad esempio **KEY SET \_ \_ VALUE.**

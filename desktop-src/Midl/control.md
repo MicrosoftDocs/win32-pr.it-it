@@ -1,6 +1,6 @@
 ---
-title: attributo Control
-description: L'attributo \ Control \ identifica una coclasse o una libreria come controllo COM, da cui un sito contenitore deriverà librerie dei tipi aggiuntive o classi di oggetti componente.
+title: Attributo control
+description: L'attributo \ control\ identifica una coclasse o una libreria come controllo COM, da cui un sito contenitore deriva librerie dei tipi aggiuntive o classi di oggetti componente.
 ms.assetid: c39dd4b6-743f-4888-8954-8b83584bdea5
 keywords:
 - attributo di controllo MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 982327d581ddb606f733e9efbbcb89e2f9972cf4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1b6372ffb7f7d9f19769e419b12c0b109736a9867360224e023f1b622c653854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103724954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643680"
 ---
-# <a name="control-attribute"></a>attributo Control
+# <a name="control-attribute"></a>Attributo control
 
-L'attributo **\[ Control \]** identifica una [**coclasse**](coclass.md) o una [**libreria**](library.md) come controllo com, da cui un sito contenitore deriverà librerie dei tipi aggiuntive o classi di oggetti componente.
+**\[ \] L'attributo** del controllo [](library.md) identifica [**una coclasse**](coclass.md) o una libreria come controllo COM, da cui un sito contenitore deriva librerie dei tipi aggiuntive o classi di oggetti componente.
 
 ``` syntax
 [
@@ -39,30 +39,30 @@ library | coclass lib-or-coclassname
 
 <dl> <dt>
 
-*elenco attributi* 
+*attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che si applicano alla [**libreria**](library.md) o all'istruzione [**coclasse**](coclass.md) . Separare più attributi con virgole.
+Specifica zero o più attributi che si applicano alla libreria [**o**](library.md) all'istruzione [**coclasse.**](coclass.md) Separare più attributi con virgole.
 
 </dd> <dt>
 
-*lib-o-CoClassname* 
+*lib-or-coclassname* 
 </dt> <dd>
 
-Specifica il nome della [**libreria**](library.md) o della [**coclasse**](coclass.md).
+Specifica il nome della libreria [**o della**](library.md) [**coclasse**](coclass.md).
 
 </dd> <dt>
 
-*definizioni* 
+*Definizioni* 
 </dt> <dd>
 
-Istruzioni MIDL che specificano i membri della [**libreria**](library.md) o della [**coclasse**](coclass.md).
+Istruzioni MIDL che specificano i membri della libreria [**o**](library.md) [**della coclasse**](coclass.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo consente di contrassegnare le librerie dei tipi che descrivono i controlli in modo che non vengano visualizzate nei browser dei tipi destinati agli oggetti non visivi.
+Questo attributo consente di contrassegnare le librerie dei tipi che descrivono i controlli in modo che non siano visualizzati nei browser dei tipi destinati agli oggetti non visualizzati.
 
 ### <a name="flags"></a>Flags
 
@@ -86,10 +86,10 @@ library Hello
 
 <dl> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
@@ -101,9 +101,9 @@ library Hello
 [**coclass**](coclass.md)
 </dt> <dt>
 
-[**libreria**](library.md)
+[**Libreria**](library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

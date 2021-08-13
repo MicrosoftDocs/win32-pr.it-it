@@ -1,19 +1,19 @@
 ---
-description: Se questo bit è impostato su un controllo ProgressBar, la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, la barra indicatore di stato viene disegnata come un singolo rettangolo continuo.
+description: Se questo bit è impostato su un controllo ProgressBar, la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come singolo rettangolo continuo.
 ms.assetid: b2c43763-799c-4f09-b9f8-47a4a5f4faf3
-title: Attributo di controllo Progress95
+title: Attributo del controllo Progress95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df2242dde671484274be946802ba4fd4c1cfd687
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a0e6fa8f2c0cd0e1622db4bb406d3ada1b63229e92b60a35e915bf0dacc72fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627350"
 ---
-# <a name="progress95-control-attribute"></a>Attributo di controllo Progress95
+# <a name="progress95-control-attribute"></a>Attributo del controllo Progress95
 
-Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md), la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, la barra indicatore di stato viene disegnata come un singolo rettangolo continuo.
+Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md), la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come singolo rettangolo continuo.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -33,9 +33,9 @@ Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md)
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit Progress95 nella colonna Attributes del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo su un controllo, includere il bit Progress95 nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di controllo](control-attributes.md) e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

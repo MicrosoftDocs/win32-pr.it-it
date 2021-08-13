@@ -1,11 +1,11 @@
 ---
-title: WWW-page-altro attributo
+title: Attributo WWW-Page-Other
 description: Elenco di pagine Web alternative.
 ms.assetid: 834a0020-2f0c-41e5-a0b0-5ef393df2b47
 ms.tgt_platform: multiple
 keywords:
-- WWW-page-altro schema AD dell'attributo
-- Schema di AD dell'attributo URL
+- Schema AD dell'attributo WWW-Page-Other
+- Schema DI AD dell'attributo url
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0dc607dfb29f1448138d29c47ec8bd17a2fcd00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6c2f5be844bc10e76ad3bda030922a9cf905696ce67b25acbd8f558dd7e4472b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118680974"
 ---
-# <a name="www-page-other-attribute"></a>WWW-page-altro attributo
+# <a name="www-page-other-attribute"></a>Attributo WWW-Page-Other
 
 Elenco di pagine Web alternative.
 
@@ -29,13 +29,13 @@ Elenco di pagine Web alternative.
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------------|
-| CN                | WWW-pagina-altro                                                              |
-| LDAP-Display-Name | url                                                                         |
+| CN                | WWW-Page-Other                                                              |
+| Ldap-Display-Name | url                                                                         |
 | Dimensione              | \-                                                                          |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                      |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                      |
 | Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che è necessario modificare la pagina Web. |
 | Attribute-Id      | 1.2.840.113556.1.4.749                                                      |
-| System-ID-GUID    | 9a9a0221-4a5b-11d1-a9c3-0000f80367c1                                        |
+| System-Id-Guid    | 9a9a0221-4a5b-11d1-a9c3-0000f80367c1                                        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
@@ -44,7 +44,7 @@ Elenco di pagine Web alternative.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di pagine Web alternative.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x8175                          |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

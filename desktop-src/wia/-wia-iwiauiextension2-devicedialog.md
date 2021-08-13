@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: 94e717184c936ae85ba1cf345a13b44f9bbdce4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 582a2fe90e6a455b2c0d0119b749a9d86b912b58150d30f3804466ef5bea2a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439885"
 ---
 # <a name="iwiauiextension2devicedialog-method"></a>Metodo IWiaUIExtension2::D eviceDialog
 
@@ -52,7 +52,7 @@ Punta a una [**struttura DEVICEDIALOGDATA2**](-wia-devicedialogdata2.md) che con
 
 Tipo: **HRESULT**
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla la finestra di dialogo, il metodo restituisce S \_ FALSE. Se il metodo ha esito negativo, restituisce un codice di errore appropriato. La tabella seguente illustra alcuni dei possibili codici di stato restituiti.
+Se il metodo ha esito positivo, restituisce S \_ OK. Se l'utente annulla il dialogo, il metodo restituisce S \_ FALSE. Se il metodo ha esito negativo, restituisce un codice di errore appropriato. La tabella seguente illustra alcuni dei possibili codici di stato restituiti.
 
 
 
@@ -75,8 +75,8 @@ Se si implementa [**l'interfaccia IWiaUIExtension2**](-wia-iwiauiextension2.md) 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | Intestazione<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 

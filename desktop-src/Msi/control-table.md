@@ -1,21 +1,21 @@
 ---
 description: La tabella Control definisce i controlli visualizzati in ogni finestra di dialogo.
 ms.assetid: cbe7acd6-b916-45f3-b694-d2345c5a892a
-title: Tabella di controllo
+title: Tabella dei controlli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ced41fcaf020a043962b16cf12d9c339901b415
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2e1832a2cb600e8d7a27b43bc28c94836396d74a50a90b44d0e5013bde973c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638533"
 ---
-# <a name="control-table"></a>Tabella di controllo
+# <a name="control-table"></a>Tabella dei controlli
 
 La tabella Control definisce i controlli visualizzati in ogni finestra di dialogo.
 
-La tabella di controllo include le colonne seguenti.
+La tabella Control include le colonne seguenti.
 
 
 
@@ -45,98 +45,98 @@ La tabella di controllo include le colonne seguenti.
 <span id="Dialog_"></span><span id="dialog_"></span><span id="DIALOG_"></span>Dialogo\_
 </dt> <dd>
 
-Chiave esterna per la prima colonna della [tabella della finestra di dialogo](dialog-table.md), il nome della finestra di dialogo.
+Chiave esterna alla prima colonna della tabella [Dialog](dialog-table.md), il nome della finestra di dialogo.
 
 </dd> <dt>
 
 <span id="Control"></span><span id="control"></span><span id="CONTROL"></span>Controllo
 </dt> <dd>
 
-Nome del controllo. Questo nome deve essere univoco all'interno di una finestra di dialogo, ma può essere ripetuto in diverse finestre di dialogo. La colonna di controllo combinata con la \_ colonna della finestra di dialogo forma la chiave primaria per questa tabella.
+Nome del controllo. Questo nome deve essere univoco all'interno di una finestra di dialogo, ma può essere ripetuto in finestre di dialogo diverse. La colonna Control combinata con la colonna Dialog \_ forma la chiave primaria per questa tabella.
 
 </dd> <dt>
 
-<span id="Type"></span><span id="type"></span><span id="TYPE"></span>Tipo
+<span id="Type"></span><span id="type"></span><span id="TYPE"></span>digitare
 </dt> <dd>
 
-Tipo del controllo. Per un elenco dei tipi di controllo, vedere [controlli](controls.md).
+Tipo del controllo. Per un elenco dei tipi di controllo, vedere [Controlli](controls.md).
 
 </dd> <dt>
 
 <span id="X"></span><span id="x"></span>X
 </dt> <dd>
 
-Coordinata orizzontale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [attributo di controllo posizione](position-control-attribute.md).
+Coordinata orizzontale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Y"></span><span id="y"></span>Y
 </dt> <dd>
 
-Coordinata verticale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [attributo di controllo posizione](position-control-attribute.md).
+Coordinata verticale dell'angolo superiore sinistro del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Width"></span><span id="width"></span><span id="WIDTH"></span>Larghezza
 </dt> <dd>
 
-Larghezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [attributo di controllo posizione](position-control-attribute.md).
+Larghezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Height"></span><span id="height"></span><span id="HEIGHT"></span>Altezza
 </dt> <dd>
 
-Altezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [attributo di controllo posizione](position-control-attribute.md).
+Altezza del limite rettangolare del controllo. Deve essere un numero non negativo. Vedere [Position Control Attribute](position-control-attribute.md).
 
 </dd> <dt>
 
 <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 </dt> <dd>
 
-Parola a 32 bit che specifica i flag di bit da applicare a questo controllo. Deve essere un numero non negativo e i valori consentiti dipendono dal tipo di controllo. Per un elenco di tutti gli attributi del controllo e il valore da immettere in questo campo, vedere [attributi del controllo](control-attributes.md).
+Parola a 32 bit che specifica i flag di bit da applicare a questo controllo. Deve essere un numero non negativo e i valori consentiti dipendono dal tipo di controllo. Per un elenco di tutti gli attributi del controllo e il valore da immettere in questo campo, vedere [Attributi di controllo.](control-attributes.md)
 
 </dd> <dt>
 
 <span id="Property"></span><span id="property"></span><span id="PROPERTY"></span>Proprietà
 </dt> <dd>
 
-Nome di una proprietà definita da collegare a questo controllo. I valori dei pulsanti di opzione, della casella di riepilogo e della casella combinata sono collegati alla stessa proprietà. Questa colonna è obbligatoria per i controlli attivi.
+Nome di una proprietà definita da collegare a questo controllo. I valori dei pulsanti di opzione, delle caselle di riepilogo e delle caselle combinate sono collegati a un gruppo tramite il collegamento alla stessa proprietà. Questa colonna è obbligatoria per i controlli attivi.
 
 </dd> <dt>
 
 <span id="Text"></span><span id="text"></span><span id="TEXT"></span>Testo
 </dt> <dd>
 
-Stringa localizzabile utilizzata per impostare il testo iniziale contenuto in un controllo. La stringa può contenere anche proprietà incorporate. Per la sintassi di una stringa formattata contenente proprietà, vedere la funzione [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) . Specificare le dimensioni, il tipo di carattere e il colore del testo anteponendo la stringa di testo { \\ Style}, dove Style è uno stile di testo creato nella colonna TextStyle della [tabella TextStyle](textstyle-table.md). La stringa di testo viene troncata se è troppo lungo per adattarsi al controllo. La stringa di testo può essere vuota.
+Stringa localizzabile utilizzata per impostare il testo iniziale contenuto in un controllo . La stringa può anche contenere proprietà incorporate. Per la sintassi di una stringa formattata contenente proprietà, vedere la [**funzione MsiFormatRecord.**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) Specificare le dimensioni, il tipo di carattere e il colore del testo antendo alla stringa di testo { style}, dove style è uno stile di testo creato nella colonna TextStyle della tabella \\ [TextStyle](textstyle-table.md). La stringa di testo viene troncata se è troppo lunga per adattarsi al controllo. La stringa di testo può essere vuota.
 
-La creazione speciale della stringa di testo [formattata](formatted.md) in questo campo è obbligatoria se il testo deve essere visualizzato da un [controllo di testo](text-control.md) che si trova in una finestra di dialogo con l'attributo TrackDiskpace. Questo è il caso specificato dal [bit di stile della finestra di dialogo TrackDiskSpace](trackdiskspace-dialog-style-bit.md) visualizzato negli attributi della [tabella della finestra di dialogo](dialog-table.md). In questo caso, se la stringa formattata nella colonna di testo della tabella dei controlli inizia con " \[ " e termina con " \] ", è necessario aggiungere uno spazio alla fine della stringa. Ad esempio, se DlgTextFont è una proprietà che verrà impostata su "{ \\ DlgFontBold}", la stringa formattata " \[ DlgTextFont il \] testo \[ ProductName \] " richiede lo spazio alla fine dopo la parentesi di chiusura. Questo spazio aggiuntivo è richiesto dal programma di installazione per visualizzare correttamente il testo nel controllo di testo.
+La creazione speciale [](formatted.md) della stringa di testo formattata in questo campo è [](text-control.md) necessaria se il testo deve essere visualizzato da un controllo Testo che si trova in una finestra di dialogo con l'attributo TrackDiskpace. Questo è il caso specificato dal bit di stile della finestra di [dialogo TrackDiskSpace](trackdiskspace-dialog-style-bit.md) visualizzato negli attributi della [tabella Dialog](dialog-table.md). In questo caso, se la stringa formattata nella colonna Text della tabella Control inizia con " " e termina con " ", è necessario aggiungere uno spazio alla fine \[ \] della stringa. Ad esempio, se DlgTextFont è una proprietà che verrà impostata su "{ DlgFontBold}" la stringa formattata \\ " \[ DlgTextFont \] MyText ProductName " richiede lo spazio alla fine dopo la parentesi di \[ \] chiusura. Questo spazio aggiuntivo è necessario al programma di installazione per visualizzare correttamente il testo nel controllo Text.
 
-È possibile immettere una stringa di testo descrittivo breve per i controlli [VolumeCostList](volumecostlist-control.md), [ListView](listview-control.md), [directory](directorylist-control.md)e [SelectionTree](selectiontree-control.md). Questo testo non viene visualizzato dall'utente, ma può essere letto dalle utilità per la lettura dello schermo come descrizione del controllo.
+È possibile immettere una breve stringa di testo descrittiva per i controlli [VolumeCostList](volumecostlist-control.md), [ListView](listview-control.md), [DirectoryList](directorylist-control.md)e [SelectionTree](selectiontree-control.md). Questo testo non viene visualizzato dall'utente, ma può essere letto dalle utilità per la lettura dello schermo come descrizione del controllo.
 
-Vedere anche [accessibilità](accessibility.md).
+Vedere anche [Accessibilità.](accessibility.md)
 
 </dd> <dt>
 
 <span id="Control_Next"></span><span id="control_next"></span><span id="CONTROL_NEXT"></span>Controllo \_ successivo
 </dt> <dd>
 
-Nome di un altro controllo nella stessa finestra di dialogo e in una chiave esterna per la seconda colonna della tabella dei controlli. Se lo stato attivo nella finestra di dialogo si trova sul controllo nella colonna del controllo, premendo il tasto TAB lo stato attivo viene spostato sul controllo elencato nella \_ colonna controllo successivo. Questa colonna viene pertanto utilizzata per specificare l'ordine di tabulazione dei controlli nella finestra di dialogo. I collegamenti tra i controlli devono formare un ciclo chiuso. Alcuni controlli, ad esempio i controlli di testo statici, possono essere esclusi dal ciclo. In questo caso, questo campo può essere lasciato vuoto.
+Nome di un altro controllo nella stessa finestra di dialogo e di una chiave esterna per la seconda colonna della tabella Control. Se lo stato attivo nella finestra di dialogo è sul controllo nella colonna Controllo , premendo TAB lo stato attivo viene spostato sul controllo elencato nella colonna \_ Controllo successivo . Questa colonna viene pertanto utilizzata per specificare l'ordine di tabulazione dei controlli nella finestra di dialogo. I collegamenti tra i controlli devono formare un ciclo chiuso. Alcuni controlli, ad esempio i controlli di testo statico, possono essere lasciati fuori dal ciclo. In questo caso, questo campo può essere lasciato vuoto.
 
-Vedere anche [accessibilità](accessibility.md).
+Vedere anche [Accessibilità.](accessibility.md)
 
 </dd> <dt>
 
 <span id="Help"></span><span id="help"></span><span id="HELP"></span>Guida
 </dt> <dd>
 
-Stringhe di testo facoltative e localizzabili utilizzate con il pulsante?. La stringa è divisa in due parti per un carattere separatore ( \| ). La prima parte della stringa viene usata come testo della descrizione comando. Questo testo viene usato dalle utilità per la lettura dello schermo per i controlli che contengono un'immagine. La seconda parte della stringa è riservata per un utilizzo futuro. Il carattere separatore è obbligatorio anche se è presente solo uno dei due tipi di testo.
+Stringhe di testo localizzabili facoltative usate con il pulsante ? . La stringa è divisa in due parti da un carattere separatore ( \| ). La prima parte della stringa viene usata come testo della descrizione comando. Questo testo viene usato dalle utilità per la lettura dello schermo per i controlli che contengono un'immagine. La seconda parte della stringa è riservata per un uso futuro. Il carattere separatore è obbligatorio anche se è presente solo uno dei due tipi di testo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori interi per x, y, larghezza e altezza si trovano nelle [unità del programma di installazione](installer-units.md), non nelle unità di dialogo. Un'unità del programma di installazione è uguale a un dodicesimo dell'altezza delle dimensioni del carattere MS Sans Serif a 10 punti. Le coordinate per i controlli sono relative al tabellone.
+I valori interi per x, y, larghezza e altezza sono nelle unità del programma [di installazione,](installer-units.md)non nelle unità di dialogo. Un'unità di installazione equivale a un dodicesimo di altezza delle dimensioni del carattere MS Sans Serif a 10 punti. Le coordinate per i controlli sono relative alla griglia.
 
 ## <a name="validation"></a>Convalida
 

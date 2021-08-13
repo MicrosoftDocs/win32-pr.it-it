@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-NC-REPL-Outbound-Neighbors
-description: Partner di replica per questa partizione. Questo server invia i dati di replica a questi altri server, che fungono da destinazioni. Questo server invierà una notifica a questi altri server quando sono disponibili nuovi dati.
+title: Attributo ms-DS-NC-Repl-Outbound-Neighbors
+description: Partner di replica per questa partizione. Questo server invia i dati di replica a questi altri server, che fungono da destinazioni. Questo server invierà una notifica agli altri server quando sono disponibili nuovi dati.
 ms.assetid: 9dcc7485-1999-47ff-bb57-8193768a15a9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-NC-REPL-Outbound-Neighbors
-- attributo msDS-NCReplOutboundNeighbors-schema AD
+- Schema AD dell'attributo ms-DS-NC-Repl-Outbound-Neighbors
+- Schema AD dell'attributo msDS-NCReplOutboundNeighbors
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fd37ccab1b3faef6ca2c84a52c05249a52ff38a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dc73585045701679899118f141d20575dcdf42f75c543f9a8dd1c269e4ca8dc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684266"
 ---
-# <a name="ms-ds-nc-repl-outbound-neighbors-attribute"></a>attributo ms-DS-NC-REPL-Outbound-Neighbors
+# <a name="ms-ds-nc-repl-outbound-neighbors-attribute"></a>Attributo ms-DS-NC-Repl-Outbound-Neighbors
 
-Partner di replica per questa partizione. Questo server invia i dati di replica a questi altri server, che fungono da destinazioni. Questo server invierà una notifica a questi altri server quando sono disponibili nuovi dati.
+Partner di replica per questa partizione. Questo server invia i dati di replica a questi altri server, che fungono da destinazioni. Questo server invierà una notifica agli altri server quando sono disponibili nuovi dati.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-NC-REPL-Outbound-Neighbors            |
-| LDAP-Display-Name | msDS-NCReplOutboundNeighbors                |
+| CN                | ms-DS-NC-Repl-Outbound-Neighbors            |
+| Ldap-Display-Name | msDS-NCReplOutboundNeighbors                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1706                     |
-| System-ID-GUID    | 855f2ef5-a1c5-4cc4-ba6d-32522848b61f        |
+| System-Id-Guid    | 855f2ef5-a1c5-4cc4-ba6d-32522848b61f        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -43,7 +43,7 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Partner di replica per questa partizione. Questo server invia i dati di replica 
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| È a valore singolo       | Falso                           |
+| Is-Single-Valued       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000014                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

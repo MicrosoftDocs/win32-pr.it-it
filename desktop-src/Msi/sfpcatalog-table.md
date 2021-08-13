@@ -1,19 +1,19 @@
 ---
-description: La tabella SFPCatalog contiene i cataloghi usati da Windows me.
+description: La tabella SFPCatalog contiene i cataloghi usati da Windows Me.
 ms.assetid: e9dc65a9-4ec9-4310-b03a-a2c38720ca8c
 title: Tabella SFPCatalog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08fe887644faf6cf0a5cda626bbf757e9f448ef1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97498ff6437967a4a588be7b957aea130dad201699d55fad3abace6ff094b271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118624892"
 ---
 # <a name="sfpcatalog-table"></a>Tabella SFPCatalog
 
-La tabella SFPCatalog contiene i cataloghi usati da Windows me.
+La tabella SFPCatalog contiene i cataloghi usati da Windows Me.
 
 La tabella SFPCatalog include le colonne seguenti.
 
@@ -36,7 +36,7 @@ La tabella SFPCatalog include le colonne seguenti.
 <span id="SFPCatalog"></span><span id="sfpcatalog"></span><span id="SFPCATALOG"></span>SFPCatalog
 </dt> <dd>
 
-Nome di file breve per il catalogo. Poiché i cataloghi non hanno versione, il catalogo specificato in questa colonna può sovrascrivere un catalogo con lo stesso nome ed è già installato nel sistema locale. Vedere l'argomento relativo al controllo delle versioni dei file. [Nessun file ha una versione](neither-file-has-a-version.md).
+Nome file breve per il catalogo. Poiché i cataloghi non hanno alcuna versione, il catalogo specificato in questa colonna può sovrascrivere un catalogo con lo stesso nome ed è già installato nel sistema locale. Vedere l'argomento relativo al controllo delle versioni dei [file Nessuno dei due file ha una versione](neither-file-has-a-version.md).
 
 </dd> <dt>
 
@@ -50,17 +50,17 @@ Dati binari per il catalogo.
 <span id="Dependency"></span><span id="dependency"></span><span id="DEPENDENCY"></span>Dipendenza
 </dt> <dd>
 
-Il catalogo specificato in questo campo è l'elemento padre del catalogo dipendente specificato nel campo SFPCatalog. Immettere il nome file breve del catalogo padre nel campo dipendenza. Questo campo è una chiave di nuovo nella colonna SFPCatalog. La corrispondenza tra maiuscole e minuscole.
+Il catalogo specificato in questo campo è l'elemento padre del catalogo dipendente specificato nel campo SFPCatalog. Immettere il nome file breve del catalogo padre nel campo Dipendenza. Questo campo è una chiave nella colonna SFPCatalog. La corrispondenza delle dipendenze fa distinzione tra maiuscole e minuscole.
 
-Se il campo di dipendenza fa riferimento a un altro record nella tabella SFPCatalog, il catalogo padre viene installato prima del catalogo dipendente.
+Se il campo Dipendenza fa riferimento a un altro record in questa tabella SFPCatalog, il catalogo padre viene installato prima del catalogo dipendente.
 
-Se il campo di dipendenza fa riferimento a un catalogo padre non presente nel campo SFPCatalog della tabella e se il catalogo padre non è già installato, l'installazione non riesce.
+Se il campo Dipendenza fa riferimento a un catalogo padre non presente nel campo SFPCatalog di questa tabella e se il catalogo padre non è già installato, l'installazione non riesce.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L' [azione InstallSFPCatalogFile](installsfpcatalogfile-action.md) esegue una query sulla tabella dei [componenti](component-table.md), sulla tabella [file](file-table.md), sulla tabella [FileSFPCatalog](filesfpcatalog-table.md) e sulla tabella SFPCatalog.
+[L'azione InstallSFPCatalogFile](installsfpcatalogfile-action.md) esegue una query sulla tabella [Component](component-table.md), sulla tabella [File](file-table.md), sulla [tabella FileSFPCatalog](filesfpcatalog-table.md) e sulla tabella SFPCatalog.
 
 ## <a name="validation"></a>Convalida
 

@@ -1,6 +1,6 @@
 ---
-title: attributo meetingApplication
-description: Questo attributo contiene il nome dell'applicazione che verrà usata per una riunione online, ad esempio Microsoft NetMeeting, servizi Windows Media o Microsoft Exchange Conference.
+title: Attributo meetingApplication
+description: Questo attributo contiene il nome dell'applicazione che verrà usata per una riunione online, ad esempio Microsoft NetMeeting, Servizi Windows Media o Microsoft Exchange Conferenza.
 ms.assetid: 6dbcafe1-dda6-41d6-893d-2c92bfe119e0
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc79876349ba15810a1848eba6d24752ab896ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9f7fd3da9f99f4aa9833e1d8a0fc845e8f0210e540819dbce71107f64ff99267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688000"
 ---
-# <a name="meetingapplication-attribute"></a>attributo meetingApplication
+# <a name="meetingapplication-attribute"></a>Attributo meetingApplication
 
-Questo attributo contiene il nome dell'applicazione che verrà usata per una riunione online, ad esempio Microsoft NetMeeting, servizi Windows Media o Microsoft Exchange Conference.
+Questo attributo contiene il nome dell'applicazione che verrà usata per una riunione online, ad esempio Microsoft NetMeeting, Servizi Windows Media o Microsoft Exchange Conferenza.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | meetingApplication                          |
-| LDAP-Display-Name | meetingApplication                          |
+| Ldap-Display-Name | meetingApplication                          |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.573                      |
-| System-ID-GUID    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Questo attributo contiene il nome dell'applicazione che verrà usata per una riu
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| A valore singolo       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

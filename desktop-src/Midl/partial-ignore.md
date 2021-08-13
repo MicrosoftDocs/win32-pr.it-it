@@ -1,9 +1,9 @@
 ---
-title: attributo partial_ignore
-description: L'attributo ACF \ partial \_ Ignore \ definisce una versione specializzata di \ Unique \ puntatori che fornisce la semantica facoltativa.
+title: partial_ignore attributo
+description: L'attributo ACF \ partial ignore\ definisce una versione specializzata dei \_ puntatori \ unique\ che fornisce la semantica facoltativa.
 ms.assetid: 8a8f88b0-4a12-496d-bf77-ee57241b577b
 keywords:
-- attributo partial_ignore MIDL
+- partial_ignore attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82d133275ca77032341d160b51b95b20235c8f2a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ac751e5b3bdb4a93c003e170333af8956048c9793630419fff0857d61f8c1f2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641974"
 ---
-# <a name="partial_ignore-attribute"></a>\_attributo parziale ignore
+# <a name="partial_ignore-attribute"></a>attributo \_ partial ignore
 
-L'attributo ACF **\[ partial \_ Ignore \]** definisce una versione specializzata di puntatori **\[ univoci \]** che fornisce la semantica facoltativa.
+L'attributo ACF **\[ partial \_ ignore \]** definisce una versione specializzata di puntatori **\[ univoci \]** che fornisce semantica facoltativa.
 
 ``` syntax
 [ [function-attribute-list <>] ] type-specifier <> [pointer- <>declarator <>] function-name <>( [ partial_ignore [ , parameter-attribute-list <> ] ] type-specifier <> [declarator <>] , ...);
@@ -29,13 +29,13 @@ L'attributo ACF **\[ partial \_ Ignore \]** definisce una versione specializzata
 
 ## <a name="remarks"></a>Commenti
 
-Quando si crea una funzione, è comune consentire agli utenti di specificare un puntatore non **null** ai dati restituiti facoltativi, spesso definito come un puntatore out facoltativo. Non è in genere necessario inizializzare la memoria a cui fa riferimento l'utente. Questa tecnica rappresenta un problema quando la funzione viene utilizzata tramite RPC.
+Quando si crea una funzione, è comune consentire agli utenti di specificare un puntatore non **NULL** ai dati restituiti facoltativi, spesso definiti puntatori facoltativi out. Non è in genere necessario inizializzare la memoria a cui punta l'utente. Questa tecnica rappresenta un problema quando la funzione viene usata su RPC.
 
-Se il puntatore facoltativo-out è valido, ma punta a dati non inizializzati, RPC tenta di effettuare il marshalling dei dati e di inviarli al server, il che può causare la mancata riuscita del marshalling e l'interruzione della chiamata. Anche in caso di esito positivo del marshalling, una quantità potenzialmente elevata di dati inutili viene inviata al server.
+Se il puntatore facoltativo out è valido, ma punta a dati non inizializzati, RPC tenta di effettuare il marshalling dei dati e di inviarli al server, causando l'esito negativo del marshalling e l'interruzione della chiamata. Anche se il marshalling ha esito positivo, al server viene inviata una quantità potenzialmente grande di dati inutili.
 
-Questi problemi vengono risolti contrassegnando il puntatore come **\[ in, out, Unique, partial \_ Ignore \]**. Devono essere presenti tutti e quattro gli attributi. Quando viene effettuato il marshalling di un puntatore di **\[ \_ Ignora \] parziale** sul lato client, gli unici dati inviati al server sono un indicatore che indica se il puntatore è **null**. Se il puntatore è diverso da **null**, la routine lato server riceve un puntatore valido a un blocco di memoria inizializzato con zeri. Se il puntatore è **null**, la routine lato server riceve un puntatore **null** .
+Questi problemi vengono risolti contrassegnando il puntatore come **\[ in, out, unique, partial \_ ignore. \]** Tutti e quattro gli attributi devono essere presenti. Quando viene **\[ effettuato il \_ marshalling \]** di un puntatore ignore parziale sul lato client, gli unici dati inviati al server sono un indicatore che indica se il puntatore è **NULL.** Se il puntatore è diverso da **NULL,** la routine sul lato server riceve un puntatore valido a un blocco di memoria inizializzato con zeri. Se il puntatore **è NULL,** la routine sul lato server riceve un **puntatore NULL.**
 
-In questa situazione, la dimensione massima del puntatore deve essere definita correttamente in fase di compilazione o in base ai parametri di input, perché il server deve allocare spazio per la posizione di memoria a cui punta. Un puntatore di **\[ stringa \]** semplice, ad esempio, non ha una dimensione ben definita perché la stringa viene terminata in modo implicito da un carattere null. In questo caso, se **\[ \_ si \]** specificano le dimensioni massime della stringa aggiungendo una dimensione, l'attributo otterrà il requisito di dimensione ben definito.
+In questo caso, le dimensioni massime del puntatore devono essere definite correttamente in fase di compilazione o in base ai parametri di input, perché il server deve allocare spazio per la posizione di memoria a cui punta. Ad esempio, un **\[ puntatore di \]** stringa semplice non ha una dimensione ben definita perché la stringa viene terminata in modo implicito da un carattere NULL. In questo caso, se si specificano le dimensioni massime della stringa aggiungendo un attributo **\[ size \_ \] is,** si ottiene il requisito di dimensioni ben definito.
 
 ## <a name="examples"></a>Esempi
 
@@ -48,12 +48,12 @@ void MoveLeft([in, out, unique, partial_ignore] long *pPrevPosition);
 
 <dl> <dt>
 
-[**unico**](unique.md)
+[**Unico**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

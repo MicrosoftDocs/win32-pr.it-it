@@ -2,25 +2,25 @@
 description: Una query sincrona è una query che mantiene il controllo sul processo dell'applicazione per la durata della query.
 ms.assetid: 628e9a31-7b0d-4099-bfa5-56330bb4eb6b
 ms.tgt_platform: multiple
-title: Richiamo di una query sincrona
+title: Chiamata di una query sincrona
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d4bb2ff61a1c94bf7390a65d51e773ad943a45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f089ac5a2d315aa55fe7af7e648d3b001bae032b92ed5b7d67a1b6b120b96561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556119"
 ---
-# <a name="invoking-a-synchronous-query"></a>Richiamo di una query sincrona
+# <a name="invoking-a-synchronous-query"></a>Chiamata di una query sincrona
 
-Una query sincrona è una query che mantiene il controllo sul processo dell'applicazione per la durata della query. Una query sincrona richiede una singola chiamata di interfaccia ed è quindi più semplice di una chiamata asincrona. Tuttavia, una query sincrona può causare il blocco dell'applicazione per query o query di grandi dimensioni in una rete.
+Una query sincrona è una query che mantiene il controllo sul processo dell'applicazione per la durata della query. Una query sincrona richiede una singola chiamata di interfaccia ed è quindi più semplice di una chiamata asincrona. Tuttavia, una query sincrona può bloccare l'applicazione per query di grandi dimensioni o query in rete.
 
-Nella procedura riportata di seguito viene descritto come eseguire una query di dati sincrona utilizzando PowerShell.
+La procedura seguente descrive come eseguire una query sui dati sincrona usando PowerShell.
 
 **Per eseguire una query di dati sincrona in PowerShell**
 
--   Descrivere la query a WMI utilizzando il cmdlet [Get-WMIOBJECT](https://technet.microsoft.com/library/dd315379.aspx) WMI e il parametro *-query* . Tramite il cmdlet viene restituito un singolo oggetto o una raccolta di oggetti, a seconda del numero di oggetti che si adattano alla query.
+-   Descrivere la query a WMI usando il cmdlet [WMI Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx) e il *parametro -query.* Il cmdlet restituisce un singolo oggetto o una raccolta di oggetti , a seconda del numero di oggetti che si adattano alla query.
 
     ```PowerShell
     Get-WmiObject -query "SELECT * FROM Win32_logicalDisk WHERE DeviceID = 'C:'"
@@ -28,11 +28,11 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-Nella procedura riportata di seguito viene descritto come eseguire una query di dati sincrona utilizzando C#.
+La procedura seguente descrive come eseguire una query sui dati sincrona usando C#.
 
-**Per eseguire una query di dati sincrona in C# (Microsoft. Management. Infrastructure)**
+**Per eseguire una query di dati sincrona in C# (Microsoft.Management.Infrastructure)**
 
-1.  Descrivere la query a WMI usando CimSession. QueryInstances. Questo metodo restituisce una raccolta di oggetti CimInstance.
+1.  Descrivere la query in WMI usando CimSession.QueryInstances. Questo metodo restituisce una raccolta di oggetti CimInstance.
 
     ```CSharp
     using Microsoft.Management.Infrastructure;
@@ -45,7 +45,7 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-2.  Usare le tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
+2.  Usare tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
 
     ```CSharp
     foreach (CimInstance drive in queryInstances)
@@ -56,13 +56,13 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-Nella procedura riportata di seguito viene descritto come eseguire una query di dati sincrona utilizzando C#.
+La procedura seguente descrive come eseguire una query sui dati sincrona usando C#.
 
-**Per eseguire una query di dati sincrona in C# (System. Management)**
+**Per eseguire una query di dati sincrona in C# (System.Management)**
 
-1.  Creare la query con un oggetto [ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) e recuperare le informazioni con una chiamata a [ManagementObjectSearcher. Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
+1.  Creare la query con un [oggetto ManagementObjectSearcher](/dotnet/api/system.management.managementobjectsearcher) e recuperare le informazioni con una chiamata a [ManagementObjectSearcher.Get](/dotnet/api/system.management.managementobjectsearcher.get#System_Management_ManagementObjectSearcher_Get).
 
-    Questo metodo restituisce un oggetto [ManagementObjectCollection](/dotnet/api/system.management.managementobjectcollection) .
+    Questo metodo restituisce un [oggetto ManagementObjectCollection.](/dotnet/api/system.management.managementobjectcollection)
 
     ```CSharp
     using System.Management;
@@ -73,7 +73,7 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-2.  Usare le tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
+2.  Usare tecniche standard di raccolta del linguaggio C# per accedere a ogni oggetto restituito.
 
     ```CSharp
     foreach (ManagementObject drive in objCol)
@@ -84,11 +84,11 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-Nella procedura riportata di seguito viene descritto come eseguire una query di dati sincrona utilizzando VBScript.
+La procedura seguente descrive come eseguire una query sui dati sincrona usando VBScript.
 
 **Per eseguire una query di dati sincrona in VBScript**
 
-1.  Descrivere la query in WMI con [**SWbemServices.ExecQuery**](swbemservices-execquery.md). Questo metodo restituisce un [**SWbemObjectSet**](swbemobjectset.md).
+1.  Descrivere la query in WMI [**usandoSWbemServices.ExecQuery**](swbemservices-execquery.md). Questo metodo restituisce un [**oggetto SWbemObjectSet**](swbemobjectset.md).
 
     ```VB
     GetObject("winmgmts:").ExecQuery _
@@ -97,7 +97,7 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-2.  Utilizzare le tecniche standard di [raccolta](accessing-a-collection.md) del linguaggio di scripting per accedere a ogni oggetto restituito.
+2.  Usare tecniche di raccolta del [linguaggio di](accessing-a-collection.md) scripting standard per accedere a ogni oggetto restituito.
 
     ```VB
     for each Service in _ 
@@ -109,17 +109,17 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-Nella procedura riportata di seguito viene descritto come eseguire una query di dati sincrona utilizzando C++.
+La procedura seguente descrive come eseguire una query di dati sincrona usando C++.
 
 **Per eseguire una query sincrona in C++**
 
-1.  Descrivere la query a WMI tramite una chiamata a [**IWbemServices:: ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
+1.  Descrivere la query in WMI tramite una chiamata a [**IWbemServices::ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery).
 
-    Il metodo [**ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) accetta una stringa di ricerca WQL come parametro che descrive la query. WMI esegue la query e restituisce un puntatore di interfaccia [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) . Tramite l'interfaccia **IEnumWbemClassObject** è possibile accedere alle classi o alle istanze che costituiscono il set di risultati.
+    Il [**metodo ExecQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execquery) accetta una stringa di ricerca WQL come parametro che descrive la query. WMI esegue la query e restituisce un puntatore a [**interfaccia IEnumWbemClassObject.**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) Tramite **l'interfaccia IEnumWbemClassObject** è possibile accedere alle classi o alle istanze che costituiscono il set di risultati.
 
-2.  Dopo aver ricevuto la query, è possibile enumerare la query con una chiamata a [**IEnumWbemClassObject:: Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Per ulteriori informazioni, vedere [enumerazione di WMI](enumerating-wmi.md).
+2.  Dopo aver ricevuto la query, è possibile enumerare la query con una chiamata a [**IEnumWbemClassObject::Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next). Per altre informazioni, vedere [Enumerazione di WMI.](enumerating-wmi.md)
 
-    Nell'esempio di codice seguente sono necessari i riferimenti seguenti e le \# istruzioni include per la compilazione corretta.
+    L'esempio di codice seguente richiede i riferimenti seguenti e \# le istruzioni include per la compilazione corretta.
 
     ```C++
     #include <wbemidl.h>
@@ -129,7 +129,7 @@ Nella procedura riportata di seguito viene descritto come eseguire una query di 
 
     
 
-    Nell'esempio di codice riportato di seguito viene illustrato come eseguire una query per gli oggetti che rappresentano gli utenti e i gruppi in WMI.
+    Nell'esempio di codice seguente viene descritto come eseguire una query per gli oggetti che rappresentano gli utenti e i gruppi in WMI.
 
     ```C++
     void ExecQuerySync(IWbemServices *pSvc)

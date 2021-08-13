@@ -1,10 +1,10 @@
 ---
-title: Attributo modified-count-at-Last-Prom
-description: Il numero di serie del log delle modifiche di accesso netto all'ultima promozione.
+title: Attributo Modified-Count-At-Last-Prom
+description: Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 ms.assetid: 9f907997-ad1a-451c-960d-e5d1d462c00a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo modified-count-at-Last-Prom
+- Schema AD dell'attributo Modified-Count-At-Last-Prom
 - Schema AD dell'attributo modifiedCountAtLastProm
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc0c049158250d0e19bfa01efb04bb583bc29f17
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: be3f4760c91ea76d4f9806a88c093bf763faab4905ecfc929eec10c6c6a01a3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687343"
 ---
-# <a name="modified-count-at-last-prom-attribute"></a>Attributo modified-count-at-Last-Prom
+# <a name="modified-count-at-last-prom-attribute"></a>Attributo Modified-Count-At-Last-Prom
 
-Il numero di serie del log delle modifiche di accesso netto all'ultima promozione.
+Numero di serie del log delle modifiche di Accesso rete all'ultima promozione.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Modificato-count-at-Last-Prom          |
-| LDAP-Display-Name | modifiedCountAtLastProm              |
+| CN                | Modified-Count-At-Last-Prom          |
+| Ldap-Display-Name | modifiedCountAtLastProm              |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.81                |
-| System-ID-GUID    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| A valore singolo       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il numero di serie del log delle modifiche di accesso netto all'ultima promozion
 | ID collegamento                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| È a valore singolo       | Vero                                                                                               |
+| Is-Single-Valued       | Vero                                                                                               |
 | Indicizzato             | Falso                                                                                              |
 | Nel catalogo globale      | Falso                                                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

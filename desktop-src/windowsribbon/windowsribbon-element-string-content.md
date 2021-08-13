@@ -1,9 +1,9 @@
 ---
-title: Proprietà String. Content
-description: Rappresenta il contenuto di una risorsa di stringa.
+title: Proprietà String.Content
+description: Rappresenta il contenuto di una risorsa stringa.
 ms.assetid: 86f34cdc-1311-4f52-979f-201d71bbb9e9
 keywords:
-- Barra multifunzione di Windows String. Content
+- Proprietà String.Content Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8912264e4f55568c190212227d2e305f9d676a1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 526062956c6ab7498caac8712ba932d6e7ac1f2dd6307359183d2529e35fc8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439506"
 ---
-# <a name="stringcontent-property"></a>Proprietà String. Content
+# <a name="stringcontent-property"></a>Proprietà String.Content
 
-Rappresenta il contenuto di una risorsa di stringa.
+Rappresenta il contenuto di una risorsa stringa.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <String.Content/>
@@ -51,15 +51,15 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**stringa**](windowsribbon-element-string.md) .
+Può verificarsi al massimo una volta per [**ogni elemento**](windowsribbon-element-string.md) String.
 
-Questo elemento contiene un valore di tipo *xs: String*. Il valore è vincolato a una stringa composta da qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.
+Questo elemento contiene un valore di tipo *xs:string*. Il valore è vincolato a una stringa composta da qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup per un elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) con una Dichiarazione **String. Content** .
+L'esempio seguente illustra il markup per [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con una **dichiarazione String.Content.**
 
 
 ```XML
@@ -80,8 +80,8 @@ Nell'esempio seguente viene illustrato il markup per un elemento [**Command. Lab
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

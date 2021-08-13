@@ -1,38 +1,38 @@
 ---
-title: Uso della configurazione di monitoraggio
-description: Uso della configurazione di monitoraggio
+title: Uso della configurazione del monitoraggio
+description: Uso della configurazione del monitoraggio
 ms.assetid: 2a868890-cc0c-4625-a87c-cafb1ecd5210
 keywords:
-- monitoraggio, funzioni
-- configurazione del monitoraggio, funzioni
-- monitoraggio, informazioni
-- configurazione del monitoraggio, informazioni
+- monitor,funzioni
+- monitorare la configurazione, funzioni
+- monitor,about
+- monitorare la configurazione, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 323561f345ce51570f79c4932be3ee4a56a27b33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 32db2ef6dfe73ab515beba99a9198c795fcd333c071fbc3e13340fe15b914dab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640605"
 ---
-# <a name="using-monitor-configuration"></a>Uso della configurazione di monitoraggio
+# <a name="using-monitor-configuration"></a>Uso della configurazione del monitoraggio
 
-In questa sezione viene descritto come utilizzare le funzioni di configurazione di monitoraggio.
+Questa sezione descrive come usare le funzioni di configurazione del monitoraggio.
 
--   [Uso delle funzioni di configurazione di monitoraggio High-Level](using-the-high-level-monitor-configuration-functions.md)
--   [Uso delle funzioni di configurazione di monitoraggio Low-Level](using-the-low-level-monitor-configuration-functions.md)
+-   [Uso delle funzioni High-Level monitoraggio](using-the-high-level-monitor-configuration-functions.md)
+-   [Uso delle funzioni Low-Level monitoraggio](using-the-low-level-monitor-configuration-functions.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Configurazione del monitoraggio](monitor-configuration.md)
+[Monitorare la configurazione](monitor-configuration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

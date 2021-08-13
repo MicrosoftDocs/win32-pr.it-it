@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsPath (IADs. h)
-description: Il metodo Property dell'interfaccia IADsPath imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsPath (Iads.h)
+description: Il metodo di proprietà dell'interfaccia IADsPath imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: 6fc7ce1a-575b-48c4-9f66-3ea22d60c96b
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsPath ADSI
+- Metodi della proprietà IADsPath ADSI
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5adcc1c60a9b678e99074ae3547d35c7ac8c7356
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 743410e7ceea97b7066979bf753a4e73afbc8a852b5b36175a9d62109b6d6ef8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691329"
 ---
-# <a name="iadspath-property-methods"></a>Metodi di proprietà IADsPath
+# <a name="iadspath-property-methods"></a>Metodi della proprietà IADsPath
 
-Il metodo Property dell'interfaccia [**IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+Il metodo di proprietà [**dell'interfaccia IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath) imposta la proprietà descritta nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -46,10 +46,10 @@ Percorso di una directory del file system.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -74,10 +74,10 @@ Tipo di file del file system.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati scripting: **LONG**
 </dt> <dt>
 
 
@@ -95,17 +95,17 @@ HRESULT put_Type(
 
 </dt> </dl> </dd> <dt>
 
-**NomeVolume**
+**VolumeName**
 </dt> <dd> <dl>
 
-Nome di un volume esistente del file system.
+Nome di un volume esistente dell'file system.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -133,9 +133,9 @@ HRESULT put_VolumeName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsPath è definito come B287FCD5-4080-11D1-A3AC-00C04FB950DC<br/>             |
+| IID<br/>                      | IADsPath IID è definito \_ come B287FCD5-4080-11D1-A3AC-00C04FB950DC<br/>             |
 
 
 
@@ -146,7 +146,7 @@ HRESULT put_VolumeName(
 [**IADsPath**](/windows/desktop/api/Iads/nn-iads-iadspath)
 </dt> <dt>
 
-[**\_percorso annunci**](/windows/win32/api/iads/ns-iads-ads_path)
+[**PERCORSO DI \_ ADS**](/windows/win32/api/iads/ns-iads-ads_path)
 </dt> </dl>
 
  

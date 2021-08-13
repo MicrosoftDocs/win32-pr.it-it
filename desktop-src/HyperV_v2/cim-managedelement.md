@@ -1,7 +1,7 @@
 ---
-description: La \_ classe CIM Managed è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione nello schema CIM.
+description: La classe CIM ManagedElement è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione \_ nello schema CIM.
 ms.assetid: 6655a480-37bd-403c-9673-4eaa3d381201
-title: Classe CIM_ManagedElement
+title: CIM_ManagedElement classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5d98c6e594103932b180fcb63a2eebaf2c328c4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acce9925f057ab63e0697c2bc12cae4336533068afdf43f46322e4d3718b25c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648183"
 ---
-# <a name="cim_managedelement-class"></a>CIM \_ managementelement (classe)
+# <a name="cim_managedelement-class"></a>Classe CIM \_ ManagedElement
 
-La classe **CIM \_ Managed** è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione nello schema CIM.
+La **classe CIM \_ ManagedElement** è una classe astratta che fornisce una superclasse comune (o parte superiore dell'albero di ereditarietà) per le classi non di associazione nello schema CIM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,80 +43,80 @@ class CIM_ManagedElement
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ Managed** presenta questi tipi di membri:
+La **classe CIM \_ ManagedElement** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ Managed** dispone di queste proprietà.
+La **classe CIM \_ ManagedElement** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione testuale dell'oggetto.
+Breve descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione testuale dell'oggetto.
+Descrizione testuale dell'oggetto .
 
 </dd> <dt>
 
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome descrittivo dell'oggetto. Questa proprietà consente a ogni istanza di definire un nome descrittivo in aggiunta alle relative proprietà chiave, dati di identità e informazioni sulla descrizione.
+Nome descrittivo per l'oggetto . Questa proprietà consente a ogni istanza di definire un nome descrittivo, oltre alle proprietà chiave, ai dati di identità e alle informazioni di descrizione.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello spazio dei nomi che lo contiene.
+Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello spazio dei nomi contenitore.
 
 > [!IMPORTANT]
 >
-> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalId*
+> Per garantire l'univocità all'interno dello spazio dei nomi, il valore della proprietà **InstanceID** deve essere costruito nel modello seguente: *OrgID*:*LocalID*
 >
-> *OrgID* deve includere un nome con copyright, marchio o in altro modo univoco, di proprietà dell'entità di business che definisce **InstanceID**, oppure essere un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalId*. Pertanto *OrgID* non deve contenere i due punti (':').
+> *OrgID* deve includere un nome protetto da copyright, con marchio o altrimenti univoco di proprietà dell'entità aziendale che definisce **InstanceID** o un ID registrato assegnato da un'autorità globale riconosciuta. Questo modello è simile alla struttura dei nomi delle classi dello schema. Inoltre, per garantire l'univocità, i primi due punti in **InstanceID** devono essere compresi tra *OrgID* e *LocalID*. OrgID *non deve* pertanto contenere i due punti (':').
 >
-> Il *localizzato* viene scelto dall'entità di business e non deve essere riutilizzato per identificare diversi elementi reali sottostanti.
+> *LocalID* viene scelto dall'entità aziendale e non deve essere usato nuovamente per identificare diversi elementi reali sottostanti.
 >
-> Se il criterio precedente non viene utilizzato, l'entità di definizione deve assicurare che il valore **InstanceID** risultante non venga riutilizzato nelle proprietà **InstanceID** generate dal provider o da altri provider per questo spazio dei nomi.
+> Se il modello precedente non viene usato, l'entità di definizione deve garantire che il valore **InstanceID** risultante non viene usato di nuovo in tutte le proprietà **InstanceID** prodotte da questo provider o da altri provider per questo spazio dei nomi.
 >
-> Per le istanze definite DMTF (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
+> Per le istanze definite dalla dmtf (Distributed Management Task Force), il modello deve essere usato con *OrgID* impostato su CIM.
 
  
 
@@ -130,8 +130,8 @@ Identifica in modo univoco e opaco un'istanza di questa classe nell'ambito dello
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

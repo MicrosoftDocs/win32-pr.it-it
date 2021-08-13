@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-AZ-Application-Name
+title: Attributo ms-DS-Az-Application-Name
 description: Stringa che identifica in modo univoco un oggetto applicazione.
 ms.assetid: 693a47f4-d3ae-4fae-8e5e-cbce41d00d45
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-AZ-Application-Name
-- attributo msDS-AzApplicationName-schema AD
+- Attributo MS-DS-Az-Application-Name Schema DI AD
+- Schema AD dell'attributo msDS-AzApplicationName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24166af15a250ec284eeb600b81bb8bb7d264369
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4a9e095c256ab920c431516f1b103ac3b7d4df4b1552f652762ea6ed06c2a3a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685696"
 ---
-# <a name="ms-ds-az-application-name-attribute"></a>attributo ms-DS-AZ-Application-Name
+# <a name="ms-ds-az-application-name-attribute"></a>Attributo ms-DS-Az-Application-Name
 
 Stringa che identifica in modo univoco un oggetto applicazione.
 
@@ -29,13 +29,13 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-AZ-Application-Name                   |
-| LDAP-Display-Name | msDS-AzApplicationName                      |
+| CN                | ms-DS-Az-Application-Name                   |
+| Ldap-Display-Name | msDS-AzApplicationName                      |
 | Dimensione              | 128 caratteri                              |
-| Privilegio aggiornamento  | Amministratore di AzRoles                               |
+| Aggiorna privilegio  | AzRoles admin                               |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1798                     |
-| System-ID-GUID    | db5b0728-6208-4876-83b7-95d3e5695275        |
+| System-Id-Guid    | db5b0728-6208-4876-83b7-95d3e5695275        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -57,15 +57,15 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 512                                                             |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: MS-SQL-attributo multiprotocollo
+title: Attributo MS-SQL-MultiProtocol
 description: Punto di connessione RPC.
 ms.assetid: 70cb9f80-7140-4c26-a1a4-f78a60de430f
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Multiprotocol per MS-SQL
-- Schema AD dell'attributo Multiprotocol per mS-SQL
+- Schema AD dell'attributo MS-SQL-MultiProtocol
+- Schema AD dell'attributo mS-SQL-MultiProtocol
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8cdfb8e42d8e3d533090b7b0bf49dcefc5492a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d3edc56c012b062a508c83fa18ed8c45b110d2b2d3b53ca052f357a3edabe3d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686649"
 ---
-# <a name="ms-sql-multiprotocol-attribute"></a>MS-SQL-attributo multiprotocollo
+# <a name="ms-sql-multiprotocol-attribute"></a>Attributo MS-SQL-MultiProtocol
 
 Punto di connessione RPC.
 
@@ -29,13 +29,13 @@ Punto di connessione RPC.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-Multiprotocol                        |
-| LDAP-Display-Name | mS-SQL-Multiprotocol                        |
+| CN                | MS-SQL-MultiProtocol                        |
+| Ldap-Display-Name | mS-SQL-MultiProtocol                        |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | All'avvio del sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1375                     |
-| System-ID-GUID    | 8157fa38-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | 8157fa38-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| Is-Single-Valued       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Punto di connessione RPC.
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-NC-RO-replica-locations
+title: Attributo ms-DS-NC-RO-Replica-Locations
 description: Attributo collegato in un oggetto di riferimento incrociato per una partizione. Elenca il controller di dominio che deve ospitare la partizione in modalità di sola lettura.
 ms.assetid: 2473f201-abf7-4fb1-b005-c8db528aeab8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-NC-RO-replica-locations
-- msDS-NC-RO-replica-locations attributo AD schema
+- Attributo MS-DS-NC-RO-Replica-Locations schema DI AD
+- Attributo MSDS-NC-RO-Replica-Locations schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 590661cb3dc096caa714066762f7b556e69c5145
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0a5fcbfe1b47eda3480cf18288a97dfbe5c21e7c66100954da4a7693222190cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684358"
 ---
-# <a name="ms-ds-nc-ro-replica-locations-attribute"></a>attributo ms-DS-NC-RO-replica-locations
+# <a name="ms-ds-nc-ro-replica-locations-attribute"></a>Attributo ms-DS-NC-RO-Replica-Locations
 
 Attributo collegato in un oggetto di riferimento incrociato per una partizione. Elenca il controller di dominio che deve ospitare la partizione in modalità di sola lettura.
 
@@ -29,13 +29,13 @@ Attributo collegato in un oggetto di riferimento incrociato per una partizione. 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-NC-RO-replica-posizioni           |
-| LDAP-Display-Name | msDS-NC-RO-replica-posizioni            |
+| CN                | ms-DS-NC-RO-Replica-Locations           |
+| Ldap-Display-Name | msDS-NC-RO-Replica-Locations            |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Privilegio di aggiornamento  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1967                 |
-| System-ID-GUID    | 3df793df-9858-4417-A701-735a1ecebf74    |
+| System-Id-Guid    | 3df793df-9858-4417-a701-735a1ecebf74    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Attributo collegato in un oggetto di riferimento incrociato per una partizione. 
 | ID collegamento                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Attributo collegato in un oggetto di riferimento incrociato per una partizione. 
 | ID collegamento                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Attributo collegato in un oggetto di riferimento incrociato per una partizione. 
 | ID collegamento                | 2114                                       |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| È a valore singolo       | Falso                                      |
+| Is-Single-Valued       | Falso                                      |
 | Indicizzato             | Falso                                      |
 | Nel catalogo globale      | Falso                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classi utilizzate in        | [**Riferimento incrociato**](c-crossref.md)<br/> |
+| Classi usate in        | [**Riferimenti incrociati**](c-crossref.md)<br/> |
 
 
 

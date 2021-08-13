@@ -1,10 +1,10 @@
 ---
-title: ACS-attributo time-of-Day
-description: Ora del giorno in cui si applicano i criteri.
+title: Attributo ACS-Time-Of-Day
+description: Ora del giorno in cui si applica questo criterio.
 ms.assetid: aacd604a-45cb-4815-bc6b-332cf090f4a2
 ms.tgt_platform: multiple
 keywords:
-- ACS-schema AD dell'attributo time-of-Day
+- Schema AD dell'attributo ACS-Time-Of-Day
 - Schema AD dell'attributo aCSTimeOfDay
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 212719ffa9e1aa37439def10a0991b256dd61fcb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3814b43e1f51561b5c43b959a9d4d18e7d56d02b7781692bcf46d150c925e783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689267"
 ---
-# <a name="acs-time-of-day-attribute"></a>ACS-attributo time-of-Day
+# <a name="acs-time-of-day-attribute"></a>Attributo ACS-Time-Of-Day
 
-Ora del giorno in cui si applicano i criteri.
+Ora del giorno in cui si applica questo criterio.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | ACS-ora del giorno                             |
-| LDAP-Display-Name | aCSTimeOfDay                                |
+| CN                | ACS-Time-of-Day                             |
+| Ldap-Display-Name | aCSTimeOfDay                                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.756                      |
-| System-ID-GUID    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
+| System-Id-Guid    | 7f561279-5301-11d1-a9c5-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Ora del giorno in cui si applicano i criteri.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 

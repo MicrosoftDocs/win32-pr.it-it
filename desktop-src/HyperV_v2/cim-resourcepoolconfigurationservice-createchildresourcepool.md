@@ -1,5 +1,5 @@
 ---
-description: Avviare un processo per creare un pool secondario da un pool padre utilizzando le impostazioni di allocazione specificate.
+description: Avviare un processo per creare un pool secondario da un pool padre usando le impostazioni di allocazione specificate.
 ms.assetid: 9b09221a-7c4e-4648-a2a8-012df1818c3e
 title: Metodo CreateChildResourcePool della classe CIM_ResourcePoolConfigurationService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e4e709fd240c849581f6dcd343001a9b1dee7003
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48a43baeefcbc56707fa6327930d9c18eaa57a2442b81fbc5f5cff17633b2148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648153"
 ---
-# <a name="createchildresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo CreateChildResourcePool della classe CIM \_ ResourcePoolConfigurationService
+# <a name="createchildresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo CreateChildResourcePool della classe \_ CIM ResourcePoolConfigurationService
 
-Avviare un processo per creare un pool secondario da un pool padre utilizzando le impostazioni di allocazione specificate.
+Avviare un processo per creare un pool secondario da un pool padre usando le impostazioni di allocazione specificate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,44 +43,44 @@ uint32 CreateChildResourcePool(
 
 <dl> <dt>
 
-*ElementName* \[ in\]
+*ElementName* \[ Pollici\]
 </dt> <dd>
 
-Nome pertinente dell'utente finale per il pool da creare. Se è **null**, è possibile usare un nome predefinito fornito dal sistema. Il valore verrà archiviato nella proprietà **ElementName** per l'elemento creato.
+Nome pertinente dell'utente finale per il pool da creare. Se **NULL,** è possibile usare un nome predefinito fornito dal sistema. Il valore verrà archiviato nella proprietà **ElementName** per l'elemento creato.
 
 </dd> <dt>
 
-*Impostazioni* \[ di in\]
+*Impostazioni* \[ Pollici\]
 </dt> <dd>
 
-Stringa contenente una rappresentazione di un'istanza [**CIM \_ SettingData**](cim-settingdata.md) utilizzata per specificare le impostazioni per il pool figlio.
+Stringa contenente una rappresentazione di [**un'istanza \_ CIM SettingData**](cim-settingdata.md) usata per specificare le impostazioni per il pool figlio.
 
 </dd> <dt>
 
-*ParentPool* \[ in\]
+*ParentPool* \[ Pollici\]
 </dt> <dd>
 
-[**\_ ResourcePool CIM**](cim-resourcepool.md) da cui creare il nuovo pool.
+Pool [**di risorse CIM \_**](cim-resourcepool.md) da cui creare il nuovo pool.
 
 </dd> <dt>
 
-*Pool* \[ di out\]
+*Pool* \[ Cambio\]
 </dt> <dd>
 
-Un [**\_ ResourcePool CIM**](cim-resourcepool.md) che fa riferimento al pool risultante.
+Pool [**di risorse CIM \_ che**](cim-resourcepool.md) fa riferimento al pool risultante.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Riferimento al processo (può essere null se il processo è stato completato).
+Riferimento al processo (può essere Null se il processo è stato completato).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -96,7 +96,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
 **Parametro non valido** (5)
@@ -105,7 +105,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **In uso** (6)
 </dt> <dt>
 
-**ResourceType errato per il pool** (7)
+**ResourceType non corretto per il pool** (7)
 </dt> <dt>
 
 **Risorse insufficienti** (8)
@@ -114,16 +114,16 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Dimensioni non supportate** (4097)
 </dt> <dt>
 
-**Metodo riservato** (4098.. 32767)
+**Metodo riservato** (4098..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -133,9 +133,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -144,7 +144,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  
