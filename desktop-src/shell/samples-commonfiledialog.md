@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come creare una finestra di dialogo Apri/Salva file personalizzata usando API della finestra di dialogo file comuni differenti.
+description: Illustra come creare una finestra di dialogo di apertura/salvataggio di file personalizzata usando diverse API della finestra di dialogo file comune.
 title: Esempio di finestre di dialogo comuni di file
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 42dc86cb1e777f3580a7f6fb349310621b703913
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2cb9a1a89f122d41066de75002ea0ed2c575a6208a06f0be99b5c7c7bfd2b97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858584"
 ---
 # <a name="common-file-dialog-sample"></a>Esempio di finestre di dialogo comuni di file
 
-Viene illustrato come creare una finestra di dialogo Apri/Salva file personalizzata usando API della finestra di dialogo file comuni differenti.
+Illustra come creare una finestra di dialogo di apertura/salvataggio di file personalizzata usando diverse API della finestra di dialogo file comune.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -41,11 +41,11 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio CommonFileDialog](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/commonfiledialog) |
 
@@ -61,7 +61,7 @@ Per istruzioni su come compilare l'esempio, vedere il file Leggimi incluso nell'
 
 <dl> <dt>
 
-[**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)
+[**Finestra di dialogo IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog)
 </dt> <dt>
 
 [**IFileSaveDialog**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ifilesavedialog)

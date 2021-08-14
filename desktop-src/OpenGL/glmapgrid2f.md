@@ -1,9 +1,9 @@
 ---
-title: funzione glMapGrid2f (GL. h)
-description: Definisce una mesh unidimensionale. | funzione glMapGrid2f (GL. h)
+title: Funzione glMapGrid2f (Gl.h)
+description: Definisce una mesh unidimensionale. | Funzione glMapGrid2f (Gl.h)
 ms.assetid: f9bc2b0c-dec5-4762-8c99-46546a81893e
 keywords:
-- funzione glMapGrid2f OpenGL
+- Funzione glMapGrid2f OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 087e42aa3d490ec605b4478d5691b256271268f5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f37975e7ca88f829286872b5352ff3e59d84fd4d123d457defb01b6d14003dad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358938"
 ---
-# <a name="glmapgrid2f-function"></a>glMapGrid2f (funzione)
+# <a name="glmapgrid2f-function"></a>Funzione glMapGrid2f
 
 Definisce una mesh unidimensionale.
 
@@ -45,45 +45,45 @@ void WINAPI glMapGrid2f(
 
 <dl> <dt>
 
-*non* 
+*un* 
 </dt> <dd>
 
-Il numero di partizioni nell'intervallo di intervallo della griglia \[ U1, U2 \] . Il valore deve essere positivo.
+Numero di partizioni nell'intervallo della griglia \[ u1, u2 \] . Il valore deve essere positivo.
 
 </dd> <dt>
 
-*U1* 
+*u1* 
 </dt> <dd>
 
 Valore usato come mapping per il valore di dominio della griglia integer i = 0.
 
 </dd> <dt>
 
-*U2* 
+*u2* 
 </dt> <dd>
 
 Valore usato come mapping per il valore di dominio della griglia integer i = un.
 
 </dd> <dt>
 
-*VN* 
+*Vn* 
 </dt> <dd>
 
-Numero di partizioni nell'intervallo di intervallo della griglia \[ V1, v2 \] .
+Numero di partizioni nell'intervallo della griglia \[ v1, v2 \] .
 
 </dd> <dt>
 
 *v1* 
 </dt> <dd>
 
-Valore utilizzato come mapping per il valore di dominio della griglia Integer j = 0.
+Valore usato come mapping per il valore di dominio della griglia integer j = 0.
 
 </dd> <dt>
 
 *v2* 
 </dt> <dd>
 
-Valore usato come mapping per il valore di dominio della griglia di tipo Integer j = VN.
+Valore usato come mapping per il valore di dominio della griglia integer j = vn.
 
 </dd> </dl>
 
@@ -93,43 +93,43 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valore GL non valido \_**</dt> </dl>     | Una o *VN* non è *un* valore positivo.<br/>                                                                                      |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALORE GL \_ NON \_ VALIDO**</dt> </dl>     | Un *o* *vn non* era positivo.<br/>                                                                                      |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Le funzioni **glMapGrid** e [glEvalMesh](glevalmesh-functions.md) vengono usate in tandem per generare e valutare in modo efficiente una serie di valori di dominio mappa uniformemente spazi. La funzione glEvalMesh esegue il passaggio del dominio Integer di una griglia bidimensionale, il cui intervallo è il dominio delle mappe di valutazione specificate da [**glMap1**](glmap1.md) e [**glMap2**](glmap2.md).
+Le **funzioni glMapGrid** [e glEvalMesh](glevalmesh-functions.md) vengono usate in tandem per generare e valutare in modo efficiente una serie di valori di dominio mappa spaziati in modo uniforme. La funzione glEvalMesh attraversa il dominio intero di una griglia unidimensionale o bidimensionale, il cui intervallo è il dominio delle mappe di valutazione specificate da [**glMap1**](glmap1.md) e [**glMap2.**](glmap2.md)
 
-Le funzioni [**glMapGrid1**](glmapgrid1d.md) e [**glMapGrid2**](glmapgrid2d.md) specificano i mapping della griglia lineare tra le coordinate di griglia integer i (o i e j), per le coordinate della mappa di valutazione a virgola mobile u (o u e v). Per informazioni dettagliate sulla valutazione delle coordinate di e v, vedere [**glMap1**](glmap1.md) e [**glMap2**](glmap2.md) .
+Le [**funzioni glMapGrid1**](glmapgrid1d.md) e [**glMapGrid2**](glmapgrid2d.md) specificano i mapping della griglia lineare tra le coordinate della griglia di interi i (o i e j) alle coordinate u (o you e v) della mappa di valutazione a virgola mobile. Vedere [**glMap1**](glmap1.md) e [**glMap2 per**](glmap2.md) informazioni dettagliate su come vengono valutate le coordinate v e .
 
-La funzione [**glMapGrid1**](glmapgrid1d.md) specifica un singolo mapping lineare, in modo tale che la *coordinata* della griglia Integer 0 sia mappata esattamente a U1 e che le coordinate della griglia integer non siano corrette per *U2*. Tutte le altre coordinate della griglia integer *di cui è* stato eseguito il mapping:
+La [**funzione glMapGrid1**](glmapgrid1d.md) specifica un singolo mapping lineare in modo che la coordinata della griglia di numeri interi 0 sia mappata esattamente a u1 e che la *coordinata* della griglia di interi unififi esattamente *a u2*. Tutte le altre coordinate della griglia *di interi i* vengono mappate in modo che:
 
-*u = i (U2 U1)/un + U1*
+*u = i(u2 u1)/un + u1*
 
-La funzione [**glMapGrid2**](glmapgrid2d.md) specifica due mapping lineari di questo tipo. Viene eseguito il mapping tra le coordinate della griglia integer *i = 0* esattamente la *U1* e la coordinata di griglia integer *i = un* esattamente con *U2*. L'altra coordinata della griglia di tipo integer *j = 0* esattamente alla *V1* e la coordinata della griglia integer *j = VN* esattamente alla versione *v2*. Sono state mappate altre coordinate della griglia integer i e j
+La [**funzione glMapGrid2**](glmapgrid2d.md) specifica due mapping lineari di questo tipo. Uno esegue il mapping delle coordinate della griglia di *interi i = 0* esattamente a *u1* e delle coordinate della griglia di *interi i = un* exactly to *u2*. L'altra mappa le coordinate della griglia integer *j = 0* esattamente a *v1* e le coordinate della griglia integer *j = vn* esattamente a *v2.* Viene eseguito il mapping di altre coordinate della griglia di interi i e j in modo che
 
-*u = i (U2 U1)/un + U1*
+*u = i(u2 u1)/un + u1*
 
-*v = j (v2 v1)/VN + V1*
+*v = j (v2 v1)/vn + v1*
 
-I mapping specificati da [**glMapGrid**](glmapgrid1d.md) vengono usati in modo identico da [glEvalMesh](glevalmesh-functions.md) e [**glEvalPoint**](glevalpoint.md).
+I mapping specificati da [**glMapGrid**](glmapgrid1d.md) vengono usati in modo identico da [glEvalMesh](glevalmesh-functions.md) e [**glEvalPoint.**](glevalpoint.md)
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a [**glMapGrid**](glmapgrid1d.md):
+Le funzioni seguenti recuperano informazioni correlate [**a glMapGrid:**](glmapgrid1d.md)
 
 <dl>
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ Mappa1 \_ Grid \_ Domain  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ map2 \_ Grid \_ Domain  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento dei \_ \_ segmenti della griglia Mappa1 \_  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento dei \_ \_ segmenti della griglia map2 \_  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAP1 \_ GRID \_ DOMAIN  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAP2 \_ GRID \_ DOMAIN  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAP1 \_ GRID \_ SEGMENTS  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAP2 \_ GRID \_ SEGMENTS  
 </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -140,8 +140,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a [**glMapG
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -153,7 +153,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a [**glMapG
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glEvalCoord**](glevalcoord-functions.md)

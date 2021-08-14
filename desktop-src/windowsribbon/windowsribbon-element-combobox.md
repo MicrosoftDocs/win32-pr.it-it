@@ -3,7 +3,7 @@ title: Elemento ComboBox
 description: Rappresenta un controllo Casella combinata.
 ms.assetid: d796e26b-44c2-4e11-b1a5-2ede5bcff676
 keywords:
-- Elemento ComboBox nella barra multifunzione di Windows
+- Elemento ComboBox Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 60ad8866b655be587e0c3d0f123d8bc59b6b8a21
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 60ee7a03d25508df45469577f4d4159b5db5f5190f188ca594b71f176d037526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851191"
 ---
 # <a name="combobox-element"></a>Elemento ComboBox
 
@@ -119,7 +119,7 @@ Non ci sono elementi figlio.
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Gruppo</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
@@ -149,9 +149,9 @@ facoltativo.
 
 Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-Poiché **ComboBox è** esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per altre informazioni, vedere [Uso delle raccolte.](ribbon-controls-galleries.md)
+Poiché **ComboBox è** esclusivamente una raccolta di elementi, non supporta gli elementi Command. È anche l'unico controllo della raccolta che non supporta uno spazio dei comandi (una raccolta di comandi dichiarati nel markup ed elencati nella parte inferiore di una raccolta di elementi o di una raccolta di comandi). Per altre informazioni, vedere [Uso delle raccolte.](ribbon-controls-galleries.md)
 
-Lo screenshot seguente illustra un controllo Casella combinata [della](windowsribbon-controls-combobox.md) barra multifunzione di Windows Live Movie Maker.
+Lo screenshot seguente illustra un controllo Casella combinata [della](windowsribbon-controls-combobox.md) barra multifunzione Windows Live Movie Maker.
 
 ![Screenshot di un controllo casella combinata nella barra multifunzione di Microsoft Paint.](images/controls/combobox.png)
 

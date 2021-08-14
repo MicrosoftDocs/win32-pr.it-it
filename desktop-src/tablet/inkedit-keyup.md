@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'utente rilascia un tasto mentre il controllo InkEdit dispone dello stato attivo.
+description: Si verifica quando l'utente rilascia un tasto mentre il controllo InkEdit ha lo stato attivo.
 ms.assetid: 973d99f2-df09-4315-aaab-72877272100b
-title: Evento InkEdit. KeyUp (inchiostrata. h)
+title: Evento InkEdit.KeyUp (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 590f5f6b2e81e1996bca973f4994c0eade7ead18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60ac908202a22fc1f564c3f21da4cc3cce2e79e2f093ec93b65ff56066f94510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220756"
 ---
-# <a name="inkeditkeyup-event"></a>Evento InkEdit. KeyUp
+# <a name="inkeditkeyup-event"></a>Evento InkEdit.KeyUp
 
-Si verifica quando l'utente rilascia un tasto mentre il controllo [InkEdit](inkedit-control-reference.md) dispone dello stato attivo.
+Si verifica quando l'utente rilascia un tasto mentre il [controllo InkEdit](inkedit-control-reference.md) ha lo stato attivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,22 +34,22 @@ HRESULT KeyUp(
 *pKey* 
 </dt> <dd>
 
-Codice della chiave virtuale del tasto premuto dall'utente.
+Codice del tasto virtuale del tasto premuto dall'utente.
 
 </dd> <dt>
 
-*ShiftKey* 
+*MaiuscKey* 
 </dt> <dd>
 
-Membro dell'enumerazione [**InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica i tasti di modifica che vengono depressi al momento dell'evento.
+Membro [**dell'enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags) che indica quali tasti di modifica vengono pre-modificati al momento dell'evento.
 
 
 
 | Valore                                                                                                                                                                                     | Significato                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**IKM \_ Shift**</dt> </dl>             | Specifica che il tasto MAIUSC è stato utilizzato come modificatore. <br/> |
-| <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Controllo** di</dt> </dl> | Specifica che il tasto CTRL è stato utilizzato come modificatore. <br/>  |
-| <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ Alt**</dt> </dl>                 | Specifica che il tasto ALT è stato utilizzato come modificatore. <br/>   |
+| <span id="IKM_Shift"></span><span id="ikm_shift"></span><span id="IKM_SHIFT"></span><dl> <dt>**Spostamento \_ IKM**</dt> </dl>             | Specifica che il tasto MAIUSC è stato usato come modificatore. <br/> |
+| <span id="IKM_Control_"></span><span id="ikm_control_"></span><span id="IKM_CONTROL_"></span><dl> <dt>**IKM \_ Controllo**</dt> </dl> | Specifica che il tasto CTRL è stato usato come modificatore. <br/>  |
+| <span id="IKM_Alt_"></span><span id="ikm_alt_"></span><span id="IKM_ALT_"></span><dl> <dt>**IKM \_ ALT**</dt> </dl>                 | Specifica che il tasto ALT è stato usato come modificatore. <br/>   |
 
 
 
@@ -59,11 +59,11 @@ Membro dell'enumerazione [**InkShiftKeyModifierFlags**](/windows/desktop/api/msi
 
 ## <a name="return-value"></a>Valore restituito
 
-Se l'evento ha esito positivo, viene restituito **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se l'evento ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'interfaccia **\_ IInkEditEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IeeKeyUp.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkEditEvents.** **\_ L'interfaccia IInkEditEvents** implementa [**l'interfaccia IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ di DISPID IeeKeyUp.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,9 +71,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Inchiostrato. h (richiede anche il \_ . c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Inked.h (richiede anche \_ i.c con input penna)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -82,16 +82,16 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkEditEvents** . L'i
 
 <dl> <dt>
 
-[InkEdit](inkedit-control-reference.md)
+[Inkedit](inkedit-control-reference.md)
 </dt> <dt>
 
 [**Enumerazione InkShiftKeyModifierFlags**](/windows/desktop/api/msinkaut/ne-msinkaut-inkshiftkeymodifierflags)
 </dt> <dt>
 
-[**\[Controllo InkEdit evento KeyDown\]**](inkedit-keydown.md)
+[**Controllo \[ InkEdit dell'evento KeyDown\]**](inkedit-keydown.md)
 </dt> <dt>
 
-[**\[Controllo InkEdit evento KeyPress\]**](inkedit-keypress.md)
+[**Controllo Input penna \[ evento KeyPressModifica\]**](inkedit-keypress.md)
 </dt> </dl>
 
  

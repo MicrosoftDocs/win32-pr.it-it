@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETCOLUMNORDERARRAY (COMmctrl. h)
-description: Ottiene l'ordine da sinistra a destra corrente delle colonne in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetColumnOrderArray di ListView.
+title: LVM_GETCOLUMNORDERARRAY messaggio (Commctrl.h)
+description: Ottiene l'ordine corrente da sinistra a destra delle colonne in un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetColumnOrderArray.
 ms.assetid: d4636aa8-c61e-4467-abc7-eea897bf370e
 keywords:
-- Controlli di Windows Message LVM_GETCOLUMNORDERARRAY
+- LVM_GETCOLUMNORDERARRAY dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aee387f65abd3f30826e361778d5acac02dfab7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea54c633c7ffc9bc580609678e8ba5f62e29429aaea6f866bb7d72b6ea326eb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411497"
 ---
-# <a name="lvm_getcolumnorderarray-message"></a>\_Messaggio GETCOLUMNORDERARRAY LVM
+# <a name="lvm_getcolumnorderarray-message"></a>Messaggio LVM \_ GETCOLUMNORDERARRAY
 
-Ottiene l'ordine da sinistra a destra corrente delle colonne in un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetColumnOrderArray di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumnorderarray) .
+Ottiene l'ordine corrente da sinistra a destra delle colonne in un controllo di visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView GetColumnOrderArray.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumnorderarray)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Numero di colonne nel controllo visualizzazione elenco.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice di numeri interi che riceve i valori di indice delle colonne nel controllo visualizzazione elenco. La matrice deve essere sufficientemente grande da contenere gli elementi *wParam* .
+Puntatore a una matrice di interi che riceve i valori di indice delle colonne nel controllo visualizzazione elenco. La matrice deve essere sufficientemente grande da contenere *gli elementi wParam.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce un valore diverso da zero e il buffer in *lParam* riceve l'indice di colonna di ogni colonna nel controllo nell'ordine in cui appaiono da sinistra a destra. In caso contrario, il valore restituito è zero.
+In caso di esito positivo, restituisce un valore diverso da zero e il buffer in *lParam* riceve l'indice di colonna di ogni colonna nel controllo nell'ordine in cui vengono visualizzate da sinistra a destra. In caso contrario, il valore restituito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ In caso di esito positivo, restituisce un valore diverso da zero e il buffer in 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

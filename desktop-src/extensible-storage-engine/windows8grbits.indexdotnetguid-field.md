@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Grbits. IndexDotNetGuid'
-title: Campo Windows8Grbits. IndexDotNetGuid (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul campo Windows8Grbits.IndexDotNetGuid
+title: Campo Windows8Grbits.IndexDotNetGuid (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: IndexDotNetGuid field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.IndexDotNetGuid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8grbits.indexdotnetguid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f14ee4785eb3819b346f1fd04d977392bf12616e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc53c5a9ff1f2e71e634c93081d183e0afbd19e46a758078881b4efb33e43689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889288"
 ---
-# <a name="windows8grbitsindexdotnetguid-field"></a>Campo Windows8Grbits. IndexDotNetGuid
+# <a name="windows8grbitsindexdotnetguid-field"></a>Campo Windows8Grbits.IndexDotNetGuid
 
-Se si specifica questo flag, il tipo di ordinamento del GUID verrà modificato in .NET Framework standard.
+Se si specifica questo flag, l'ordinamento dei GUID verrà modificato .NET Framework standard.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const CreateIndexGrbit IndexDotNetGuid
 
 [Membri di Windows8Grbits](./windows8grbits-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

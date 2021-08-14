@@ -1,20 +1,20 @@
 ---
 title: IDXCoreAdapterFactory
-description: L'interfaccia **IDXCoreAdapterFactory**   implementa metodi per la generazione di oggetti di enumerazione degli adapter DXCore e per il recupero dei relativi dettagli.
+description: "**L'interfaccia IDXCoreAdapterFactory** implementa metodi per la generazione di oggetti di enumerazione dell'adapter DXCore e per il recupero dei relativi dettagli."
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: ee5c985899e1d810057a736c679e10f69ef88d06
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 44b61e4b575c06a02c6dd7b437958053a7e34016af0994af0148fa23d084cc61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502491"
 ---
 # <a name="idxcoreadapterfactory-interface"></a>Interfaccia IDXCoreAdapterFactory
 
-L'interfaccia **IDXCoreAdapterFactory**   implementa metodi per la generazione di oggetti di enumerazione degli adapter DXCore e per il recupero dei relativi dettagli. **IDXCoreAdapterFactory** eredita dall'interfaccia [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) . Per istruzioni sulla programmazione ed esempi di codice, vedere [uso di DXCore per enumerare gli adapter](../dxcore-enum-adapters.md).
+**L'interfaccia IDXCoreAdapterFactory** implementa metodi per la generazione di oggetti di enumerazione dell'adapter DXCore e per il recupero dei relativi dettagli. **IDXCoreAdapterFactory** eredita [dall'interfaccia IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Per indicazioni sulla programmazione ed esempi di codice, vedere [Uso di DXCore per enumerare gli adattatori.](../dxcore-enum-adapters.md)
 
 ## <a name="see-also"></a>Vedi anche
 
-Guida di [riferimento a DXCore](../dxcore-reference.md), [uso di DXCore per enumerare gli adapter](../dxcore-enum-adapters.md)
+[Riferimento DXCore](../dxcore-reference.md), [Uso di DXCore per enumerare gli adattatori](../dxcore-enum-adapters.md)

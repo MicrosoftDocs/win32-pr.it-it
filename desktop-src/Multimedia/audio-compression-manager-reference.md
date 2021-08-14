@@ -3,26 +3,26 @@ title: Informazioni di riferimento su Gestione compressione audio
 description: Informazioni di riferimento su Gestione compressione audio
 ms.assetid: a4e234c7-4dd3-4269-90a5-5de2c8837c0f
 keywords:
-- Windows Multimedia, informazioni di riferimento su ACM
-- informazioni di riferimento su Multimedia, ACM
+- Windows multimediali, informazioni di riferimento su ACM
+- multimediali, informazioni di riferimento su ACM
 - audio multimediale, informazioni di riferimento su ACM
-- audio, riferimenti ACM)
-- Gestione compressione audio (ACM), riferimento
-- ACM (Gestione compressione audio), riferimento
-- Guida di riferimento a ACM, informazioni
-- informazioni di riferimento per ACM, informazioni
+- audio, informazioni di riferimento su ACM)
+- gestione compressione audio(ACM), riferimento
+- ACM (gestione compressione audio),riferimento
+- Informazioni di riferimento su ACM
+- informazioni di riferimento per ACM, informazioni su
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d365b0a69ecd94a07811b24762aa4bffdc8c9f1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 29729fa19e67fb4695d8e6eca986488735d9b4529d9479615665a9ba2b5f3360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104516720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375798"
 ---
 # <a name="audio-compression-manager-reference"></a>Informazioni di riferimento su Gestione compressione audio
 
-In questa sezione vengono descritte le funzioni, le strutture e i messaggi associati all'ACM. Questi elementi vengono raggruppati come indicato di seguito.
+In questa sezione vengono descritte le funzioni, le strutture e i messaggi associati a ACM. Questi elementi sono raggruppati come indicato di seguito.
 
 ## <a name="drivers"></a>Driver
 
@@ -63,8 +63,8 @@ In questa sezione vengono descritte le funzioni, le strutture e i messaggi assoc
 
 ## <a name="messages"></a>Messaggi
 
--   [**MM \_ ACM \_ FILTERCHOOSE**](mm-acm-filterchoose.md)
--   [**MM \_ ACM \_ FORMATCHOOSE**](mm-acm-formatchoose.md)
+-   [**FILTRO \_ ACM \_ MMSCEGLIERE**](mm-acm-filterchoose.md)
+-   [**FORMATO \_ ACM \_ MMSCEGLIERE**](mm-acm-formatchoose.md)
 
 ## <a name="streams"></a>Flussi
 
@@ -91,6 +91,6 @@ In questa sezione vengono descritte le funzioni, le strutture e i messaggi assoc
 [Gestione compressione audio](audio-compression-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

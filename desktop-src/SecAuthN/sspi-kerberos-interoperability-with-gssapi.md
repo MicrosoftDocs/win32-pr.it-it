@@ -1,66 +1,66 @@
 ---
-description: È necessario prestare attenzione quando si usa il Security Support Provider Kerberos (SSP) se l'interoperabilità con GSSAPI è un requisito.
+description: È necessario fare attenzione quando si usa il provider di supporto per la sicurezza Kerberos se l'interoperabilità con GSSAPI è un requisito.
 ms.assetid: 3ab29ee9-42d8-498b-b507-13f8efa0b0e2
 title: Interoperabilità SSPI/Kerberos con GSSAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9efaae6b2433d76dff290d57e27e893885692a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5907c79fbf4ef53a40b9dc2198715f216794de5634c60c66fe3d767bfe4af026
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916828"
 ---
 # <a name="sspikerberos-interoperability-with-gssapi"></a>Interoperabilità SSPI/Kerberos con GSSAPI
 
-È necessario prestare attenzione quando si usa il [*Security Support Provider*](../secgloss/s-gly.md) [*Kerberos*](../secgloss/k-gly.md) (SSP) se l'interoperabilità con GSSAPI è un requisito. Le convenzioni di codice seguenti consentono l'interoperabilità con le applicazioni basate su GSSAPI:
+È necessario fare attenzione quando si usa il provider di [*supporto*](../secgloss/s-gly.md) per la sicurezza [*Kerberos*](../secgloss/k-gly.md) se l'interoperabilità con GSSAPI è un requisito. Le convenzioni di codice seguenti consentono l'interoperabilità con le applicazioni basate su GSSAPI:
 
--   [Nomi compatibili con Windows](#windows-compatible-names)
+-   [Windows nomi compatibili con gli utenti](#windows-compatible-names)
 -   [autenticazione](#authentication)
 -   [Integrità e privacy dei messaggi](#message-integrity-and-privacy)
 
-È possibile trovare il codice di esempio nel Software Development Kit (SDK) della piattaforma in esempi di \\ sicurezza \\ SSPI \\ GSS. Inoltre, l'esempio UNIX equivalente viene distribuito nelle distribuzioni Kerberos MIT e Heimdal, client e server GSS.
+Il codice di esempio è disponibile in Platform Software Development Kit (SDK) in Samples \\ Security \\ SSPI GSS (Esempi di sicurezza SSPI \\ GSS). Inoltre, l'esempio di UNIX equivalente viene distribuito nelle distribuzioni Mit e Heimdal Kerberos, nel client e nel server GSS.
 
-## <a name="windows-compatible-names"></a>Nomi Windows-Compatible
+## <a name="windows-compatible-names"></a>Windows-Compatible nomi
 
-Le funzioni GSSAPI utilizzano un formato di nome noto \_ come \_ nome del servizio NT GSS \_ come specificato nella RFC. Ad esempio, sample@host.dom.com è un nome che può essere usato in un'applicazione basata su GSSAPI. Il sistema operativo Windows non riconosce il formato del \_ nome del servizio NT GSS \_ \_ ed è necessario utilizzare il nome completo dell' [*entità servizio*](../secgloss/s-gly.md), ad esempio sample/host.dom.com@REALM .
+Le funzioni GSSAPI usano un formato di nome noto come gss \_ nt service name come specificato nella \_ \_ RFC. Ad esempio, sample@host.dom.com è un nome che può essere usato in un'applicazione basata su GSSAPI. Il Windows operativo non riconosce il formato del nome del servizio gss nt e deve essere usato il nome completo dell'entità servizio, ad \_ \_ \_ esempio [](../secgloss/s-gly.md) sample/host.dom.com@REALM .
 
-## <a name="authentication"></a>Authentication
+## <a name="authentication"></a>Autenticazione
 
-L'autenticazione viene in genere gestita quando una connessione viene configurata per la prima volta tra un client e un server. In questo esempio, il client utilizza [*Security Support Provider Interface*](../secgloss/s-gly.md) (SSPI) e il server utilizza GSSAPI.
+L'autenticazione viene in genere gestita quando si configura per la prima volta una connessione tra un client e un server. In questo esempio il client usa [*Security Support Provider Interface*](../secgloss/s-gly.md) (SSPI) e il server usa GSSAPI.
 
-**Per impostare l'autenticazione nel client SSPI**
+**Per configurare l'autenticazione nel client SSPI**
 
-1.  Ottenere le [*credenziali*](../secgloss/c-gly.md) in uscita usando [**AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea).
-2.  Creare un nome di servizio con il **\_ nome di importazione GSS \_ ()** e ottenere le credenziali in ingresso usando **GSS \_ acquire \_ cred**.
-3.  Ottenere un token di autenticazione da inviare al server utilizzando [**InitializeSecurityContext (Kerberos)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta).
+1.  Ottenere le [*credenziali in uscita*](../secgloss/c-gly.md) usando [**AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea).
+2.  Creare un nome di servizio **con gss \_ import \_ name()** e ottenere le credenziali in ingresso usando **gss \_ acquire \_ cred**.
+3.  Ottenere un token di autenticazione da inviare al server tramite [**InitializeSecurityContext (Kerberos).**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta)
 4.  Inviare il token al server.
 
 **Per configurare l'autenticazione nel server GSSAPI**
 
-1.  Analizzare il messaggio dal client per estrarre il token di sicurezza. Utilizzare la funzione di **\_ \_ \_ contesto GSS Accept sec** , passando il token come argomento.
-2.  Analizzare il messaggio dal server per estrarre il token di sicurezza. Passare il token di sicurezza a [**InitializeSecurityContext (Kerberos)**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta).
+1.  Analizzare il messaggio dal client per estrarre il token di sicurezza. Usare la **funzione di contesto gss \_ accept \_ sec, \_** passando il token come argomento.
+2.  Analizzare il messaggio dal server per estrarre il token di sicurezza. Passare questo token di sicurezza [**a InitializeSecurityContext (Kerberos).**](/windows/win32/api/sspi/nf-sspi-initializesecuritycontexta)
 3.  Inviare un token di risposta al client.
 
-    La funzione di **\_ \_ \_ contesto GSS Accept sec** può restituire un token che è possibile inviare di nuovo al client.
+    La **funzione di contesto gss accept \_ \_ sec \_** può restituire un token che è possibile inviare al client.
 
-4.  Se è necessario continuare, inviare un token di risposta al server. in caso contrario, l'installazione dell'autenticazione è stata completata.
-5.  Se è necessario continuare, attendere il token successivo dal client; in caso contrario, l'installazione dell'autenticazione è stata completata.
+4.  Se è necessario continuare, inviare un token di risposta al server. In caso contrario, la configurazione dell'autenticazione è stata completata.
+5.  Se è necessario continuare, attendere il token successivo dal client. In caso contrario, la configurazione dell'autenticazione è stata completata.
 
 ## <a name="message-integrity-and-privacy"></a>Integrità e privacy dei messaggi
 
-La maggior parte delle applicazioni basate su GSSAPI usa la funzione di **\_ wrapping GSS** per firmare un messaggio prima di inviarlo. Viceversa, la funzione di **\_ Unwrap GSS** verifica la firma. **GSS \_ Il wrapping** è disponibile nella versione 2,0 dell'API ed è ora ampiamente usato e specificato negli standard Internet che descrivono l'uso di GSSAPI per l'aggiunta della sicurezza ai protocolli. Nelle versioni precedenti le funzioni GSS **SignMessage** e **SealMessage** sono state usate per l' [*integrità*](../secgloss/i-gly.md) e la [*privacy*](../secgloss/p-gly.md)dei messaggi. **GSS \_** L' **\_ Unwrap** a capo e GSS vengono usati per l'integrità e la privacy con l'uso della privacy controllata dal valore dell'argomento "conf \_ flag".
+La maggior parte delle applicazioni basate su GSSAPI usa la **funzione wrap \_ GSS** per firmare un messaggio prima di inviarlo. Al contrario, la **funzione GSS \_ Unwrap** verifica la firma. **GSS \_ Il** wrapping è disponibile nella versione 2.0 dell'API ed è ora ampiamente usato e specificato negli standard Internet che descrivono l'uso di GSSAPI per l'aggiunta della sicurezza ai protocolli. In precedenza, le funzioni **SignMessage** e **SealMessage** di GSS venivano usate per l'integrità [*e*](../secgloss/i-gly.md) la privacy dei [*messaggi.*](../secgloss/p-gly.md) **GSS \_ Wrap** e **GSS \_ Unwrap** vengono usati sia per l'integrità che per la privacy con l'uso della privacy controllata dal valore dell'argomento \_ "conf flag".
 
-Se viene specificato un protocollo basato su GSSAPI per l'utilizzo delle funzioni **GSS \_ get \_ MIC** e **GSS \_ Verify \_ MIC** , le funzioni SSPI corrette saranno [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) e [**VerifySignature**](/windows/desktop/api/Sspi/nf-sspi-verifysignature). Tenere presente che **MakeSignature** e **VerifySignature** non interagiscono con **GSS \_ Wrap** quando il \_ flag conf è impostato su zero oppure con il **\_ wrapping di GSS**. Lo stesso vale per la combinazione di [**EncryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) impostata solo per la firma e **GSS \_ Verify \_ MIC**.
+Se si specifica un protocollo basato su GSSAPI per usare le funzioni del microfono gss get e **gss \_ verify \_ mic,** le funzioni SSPI corrette saranno [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) e [**VerifySignature**](/windows/desktop/api/Sspi/nf-sspi-verifysignature). **\_ \_** Tenere presente che **MakeSignature** e **VerifySignature** non interoperabilità con **GSS \_ Wrap** quando il flag conf è impostato su zero o con \_ **GSS \_ Wrap**. Lo stesso vale per la combinazione [**di EncryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) impostato solo per la firma e **gss \_ verify \_ mic.**
 
 > [!Note]  
-> Non utilizzare le funzioni [**MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) o [**VerifySignature**](/windows/desktop/api/Sspi/nf-sspi-verifysignature) quando viene chiamato il metodo **GSS \_ Wrap** e **GSS \_ Unwrap** .
+> Non usare le [**funzioni MakeSignature**](/windows/desktop/api/Sspi/nf-sspi-makesignature) [**o VerifySignature**](/windows/desktop/api/Sspi/nf-sspi-verifysignature) quando vengono chiamate le funzioni **GSS \_ Wrap** e **GSS \_ Unwrap.**
 
  
 
-Il valore SSPI equivalente a **GSS \_ Wrap** è [**EncryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) per l'integrità e la privacy.
+L'oggetto SSPI equivalente a **GSS \_ Wrap** è [**EncryptMessage (Kerberos) sia**](/windows/win32/api/sspi/nf-sspi-encryptmessage) per l'integrità che per la privacy.
 
-Nell'esempio seguente viene illustrato l'utilizzo di [**EncryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) per firmare i dati che verranno verificati da **GSS \_ Unwrap**.
+L'esempio seguente illustra [**l'uso di EncryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-encryptmessage) per firmare i dati che verranno verificati da **GSS \_ Unwrap**.
 
 Nel client SSPI:
 
@@ -106,7 +106,7 @@ maj_stat = gss_unwrap(&min_stat, context, &recv_buf, &msg_buf,
 
 
 
-L'oggetto SSPI equivalente a **GSS \_ Unwrap** è [**DecryptMessage (Kerberos)**](/windows/win32/api/sspi/nf-sspi-decryptmessage). Di seguito è riportato un esempio in cui viene illustrato come utilizzare **DecryptMessage (Kerberos)** per decrittografare i dati crittografati da **GSS \_ Wrap**.
+L'oggetto SSPI equivalente a **GSS \_ Unwrap** è [**DecryptMessage (Kerberos).**](/windows/win32/api/sspi/nf-sspi-decryptmessage) Di seguito è riportato un esempio che illustra come usare **DecryptMessage (Kerberos)** per decrittografare i dati crittografati da **GSS \_ Wrap**.
 
 Nel server GSSAPI:
 

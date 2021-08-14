@@ -3,27 +3,27 @@ title: Uso della condivisione della larghezza di banda
 description: Uso della condivisione della larghezza di banda
 ms.assetid: 1df61a3a-d34a-447e-a7ee-d5d409e7c4fa
 keywords:
-- Windows Media Format SDK, condivisione della larghezza di banda
+- Windows MEDIA Format SDK, condivisione della larghezza di banda
 - condivisione della larghezza di banda, informazioni
 - profili, condivisione della larghezza di banda
 - flussi, condivisione della larghezza di banda
 - condivisione della larghezza di banda, interfaccia IWMProfile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 298c690b484a8b4b5990aacd5d525867da8923c0
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 7259ddf441a4e32eb7eb4aea19a52d633c6aacd3a27ad6d392e4fea41c3f4fa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104398768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845157"
 ---
 # <a name="using-bandwidth-sharing"></a>Uso della condivisione della larghezza di banda
 
-È possibile usare gli oggetti di condivisione della larghezza di banda per specificare che determinati flussi, quando combinati, non utilizzeranno più larghezza di banda di quanto specificato. Le informazioni in un oggetto di condivisione della larghezza di banda non vengono generate o verificate dal writer né utilizzate dal Reader per alcun elemento.
+È possibile usare oggetti di condivisione della larghezza di banda per specificare che determinati flussi, se combinati, non useranno più larghezza di banda di quella specificata. Le informazioni in un oggetto di condivisione della larghezza di banda non vengono generate o verificate dal writer né usate dal lettore per alcun elemento.
 
-Quando viene scritto un file con informazioni sulla condivisione della larghezza di banda nel profilo, i dati vengono archiviati nella relativa sezione di intestazione. È possibile usare l'interfaccia [**IWMProfile**](iwmprofile.md) nel lettore per verificare le informazioni di condivisione della larghezza di banda quando il file viene riprodotto.
+Quando viene scritto un file con informazioni sulla condivisione della larghezza di banda nel profilo, i dati vengono archiviati nella relativa sezione di intestazione. È possibile usare [**l'interfaccia IWMProfile**](iwmprofile.md) nel lettore per verificare la presenza di informazioni sulla condivisione della larghezza di banda quando viene riprodotto il file.
 
-Ogni oggetto di condivisione della larghezza di banda viene definito da due impostazioni. Per prima cosa si intende la larghezza di banda, definita da una larghezza di banda e una finestra del buffer. La seconda impostazione è un tipo di condivisione della larghezza di banda, che può essere esclusivo o parziale. La condivisione esclusiva della larghezza di banda indica che i flussi costitutivi vengono riprodotti uno alla volta, mentre quello parziale indica che i flussi vengono recapitati contemporaneamente.
+Ogni oggetto di condivisione della larghezza di banda è definito da due impostazioni. Il primo è la larghezza di banda, come definito da una larghezza di banda e da una finestra del buffer. La seconda impostazione è un tipo di condivisione della larghezza di banda, che può essere esclusivo o parziale. La condivisione esclusiva della larghezza di banda significa che i flussi costitutivi vengono riprodotti uno alla volta, mentre parziale significa che i flussi vengono recapitati contemporaneamente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -44,12 +44,12 @@ Ogni oggetto di condivisione della larghezza di banda viene definito da due impo
 [**IWMProfile3::GetBandwidthSharingCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmprofile3-getbandwidthsharingcount)
 </dt> <dt>
 
-[**Utilizzo dei profili**](working-with-profiles.md)
+[**Uso dei profili**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

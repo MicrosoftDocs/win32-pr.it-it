@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsAccessControlList (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsAccessControlList ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsAccessControlList (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsAccessControlList ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: cb68bb61-4216-4f69-bea1-ab7f98937a27
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsAccessControlList ADSI
+- Metodi della proprietà IADsAccessControlList ADSI
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55763b7c52071ca5bfd0a875912941090b7992c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29c42a005b89215a974fe0d546a1e87b23c78be25c33a1b494b172fa19bead94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428396"
 ---
-# <a name="iadsaccesscontrollist-property-methods"></a>Metodi di proprietà IADsAccessControlList
+# <a name="iadsaccesscontrollist-property-methods"></a>Metodi della proprietà IADsAccessControlList
 
-I metodi di proprietà dell'interfaccia [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) ottengono o impostano le proprietà descritte nella tabella seguente. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -43,10 +43,10 @@ Numero di voci di controllo di accesso nell'elenco di controllo di accesso.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -67,14 +67,14 @@ HRESULT put_AceCount(
 **AclRevision**
 </dt> <dd> <dl>
 
-Livello di revisione di un elenco di controllo di accesso. Questo valore può essere **\_ Revisione ACL** o **\_ \_ DS Revisione ACL**. Usare **ACL \_ Revisione \_ DS** se l'ACL contiene una voce ACE specifica dell'oggetto. Tutte le voci ACE in un ACL devono avere lo stesso livello di revisione.
+Livello di revisione di un elenco di controllo di accesso. Questo valore può essere **ACL \_ REVISION** o **ACL \_ REVISION \_ DS.** Utilizzare **ACL \_ REVISION \_ DS** se l'ACL contiene una ACE specifica dell'oggetto. Tutte le voci ACE in un ACL devono essere allo stesso livello di revisione.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -96,7 +96,7 @@ HRESULT put_AclRevision(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene visualizzato il numero di voci ACE in un ACL.
+Nell'esempio di codice seguente viene visualizzato il numero di ACE in un ACL.
 
 
 ```VB
@@ -120,7 +120,7 @@ Cleanup:
 
 
 
-Nell'esempio di codice seguente viene visualizzato il numero di voci ACE in un ACL.
+Nell'esempio di codice seguente viene visualizzato il numero di ACE in un ACL.
 
 
 ```C++
@@ -205,7 +205,7 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>        |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>  |
 | IID<br/>                      | IID \_ IADsAccessControlList è definito come B7EE91CC-9BDD-11D0-852C-00C04FD8D503<br/> |
 

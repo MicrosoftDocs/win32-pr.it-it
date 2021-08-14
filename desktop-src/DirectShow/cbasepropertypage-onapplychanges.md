@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnApplyChanges viene chiamato quando l'utente applica le modifiche alla pagina delle proprietà.
+description: Il metodo OnApplyChanges viene chiamato quando l'utente applica modifiche alla pagina delle proprietà.
 ms.assetid: 15a55644-b7bf-4c72-8e26-18fc4fb714b9
-title: Metodo CBasePropertyPage. OnApplyChanges (Cprop. h)
+title: Metodo CBasePropertyPage.OnApplyChanges (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cbcea308a8daaa8b9fdf15be765dc5d3a0df182c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f822bed433af6e3fab0250e06a04911ee10187039036211974b046b32df6b7b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823107"
 ---
-# <a name="cbasepropertypageonapplychanges-method"></a>CBasePropertyPage. OnApplyChanges, metodo
+# <a name="cbasepropertypageonapplychanges-method"></a>Metodo CBasePropertyPage.OnApplyChanges
 
-Il `OnApplyChanges` metodo viene chiamato quando l'utente applica le modifiche alla pagina delle proprietà.
+Il `OnApplyChanges` metodo viene chiamato quando l'utente applica modifiche alla pagina delle proprietà.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-L'implementazione della classe di base restituisce S \_ OK.
+L'implementazione della classe base restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBasePropertyPage:: Apply**](cbasepropertypage-apply.md) chiama `OnApplyChanges` se il flag [**CBasePropertyPage:: m \_ bDirty**](cbasepropertypage-m-bdirty.md) è **true**. Eseguire l'override `OnApplyChanges` di per elaborare le modifiche e reimpostare **m \_ bDirty** su **false**.
+Il [**metodo CBasePropertyPage::Apply**](cbasepropertypage-apply.md) chiama `OnApplyChanges` se il flag [**CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) è **TRUE.** Eseguire `OnApplyChanges` l'override di per elaborare le modifiche e **reimpostare m \_ bDirty** su **FALSE.**
 
 ## <a name="examples"></a>Esempio
 
@@ -67,8 +67,8 @@ HRESULT CMyProp::OnApplyChanges(void)
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Cprop. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Cprop.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

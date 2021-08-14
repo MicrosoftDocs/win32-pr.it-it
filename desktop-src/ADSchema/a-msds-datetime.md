@@ -1,11 +1,11 @@
 ---
-title: ms-DS-attributo data-ora
+title: Attributo ms-DS-Date-Time
 description: Attributo per l'archiviazione di un valore di data e ora.
 ms.assetid: 64813ce7-5ec0-45b8-8d27-f4d1e308789c
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo ms-DS-Date-Time
-- attributo msDS-DateTime-schema AD
+- Schema AD dell'attributo ms-DS-Date-Time
+- Schema AD dell'attributo msDS-DateTime
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e8367c4e9ca38fb12767eba6cd42ca6ecb082a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57b3417f1447e3c1a7b62b832c962e64317cef6f59a3167fc699742c05c59adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426709"
 ---
-# <a name="ms-ds-date-time-attribute"></a>ms-DS-attributo data-ora
+# <a name="ms-ds-date-time-attribute"></a>Attributo ms-DS-Date-Time
 
 Attributo per l'archiviazione di un valore di data e ora.
 
@@ -29,13 +29,13 @@ Attributo per l'archiviazione di un valore di data e ora.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------|
-| CN                | ms-DS-Data-ora                                               |
-| LDAP-Display-Name | msDS-DateTime                                                 |
+| CN                | ms-DS-Date-Time                                               |
+| Ldap-Display-Name | msDS-DateTime                                                 |
 | Dimensione              | \-                                                            |
-| Privilegio aggiornamento  | \-                                                            |
+| Aggiorna privilegio  | \-                                                            |
 | Frequenza di aggiornamento  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1832                                       |
-| System-ID-GUID    | 234fcbd8-fb52-4908-a328-fd9f6e58e403                          |
+| System-Id-Guid    | 234fcbd8-fb52-4908-a328-fd9f6e58e403                          |
 | Sintassi            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
@@ -57,15 +57,15 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Attributo per l'archiviazione di un valore di data e ora.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

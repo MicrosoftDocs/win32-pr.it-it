@@ -1,14 +1,14 @@
 ---
-title: Proprietà RemoteApplicationName di ITSRemoteProgram2
+title: ItsRemoteProgram2 RemoteApplicationName - proprietà
 description: Nome di RemoteApp.
 ms.assetid: e6bde351-dd4c-4b14-bb11-f155c526aced
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RemoteApplicationName
-- Servizi Desktop remoto proprietà RemoteApplicationName, interfaccia ITSRemoteProgram2
-- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto, proprietà RemoteApplicationName
-- Servizi Desktop remoto proprietà RemoteApplicationName, interfaccia ITSRemoteProgram3
-- Interfaccia ITSRemoteProgram3 Servizi Desktop remoto, proprietà RemoteApplicationName
+- Proprietà RemoteApplicationName Servizi Desktop remoto
+- Proprietà RemoteApplicationName Servizi Desktop remoto , interfaccia ITSRemoteProgram2
+- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto proprietà RemoteApplicationName
+- Proprietà RemoteApplicationName Servizi Desktop remoto, interfaccia ITSRemoteProgram3
+- ItsRemoteProgram3 interface Servizi Desktop remoto , RemoteApplicationName property
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5fd26ea4d9b7ca4bad5cbd8f16a0526978c2abc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2508b382fc3d79b64e976c69ab98932f5e4b38565b264d29729f5dc47008f9fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756746"
 ---
-# <a name="itsremoteprogram2remoteapplicationname-property"></a>Proprietà ITSRemoteProgram2:: RemoteApplicationName
+# <a name="itsremoteprogram2remoteapplicationname-property"></a>ItsRemoteProgram2::RemoteApplicationName - proprietà
 
 Nome di RemoteApp.
 
@@ -48,7 +48,7 @@ HRESULT put_RemoteApplicationName(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nome RemoteApp.
+Nome di RemoteApp.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: operatori JET_BKLOGTIME'
-title: Operatori di JET_BKLOGTIME
+description: 'Altre informazioni su: Operatori JET_BKLOGTIME'
+title: JET_BKLOGTIME seguenti
 TOCTitle: JET_BKLOGTIME operators
 ms:assetid: 633be928-2fde-b1cf-2761-b64764fd01b4
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh578711(v=EXCHG.10)
 ms:contentKeyID: 39512487
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 03a21347a2d88a21e08e086477c7c19ea827edac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5f95bb94424c85cc5b4cfb22272ec4af87077b029955ce281200daa6576138d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104554628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487838"
 ---
-# <a name="jet_bklogtime-operators"></a>Operatori di JET_BKLOGTIME
+# <a name="jet_bklogtime-operators"></a>JET_BKLOGTIME seguenti
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Il tipo di [JET_BKLOGTIME](./jet-bklogtime-structure2.md) espone i membri seguenti.
+Il [JET_BKLOGTIME](./jet-bklogtime-structure2.md) espone i membri seguenti.
 
 ## <a name="operators"></a>Operatori
 
@@ -52,6 +52,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME struttura](./jet-bklogtime-structure2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

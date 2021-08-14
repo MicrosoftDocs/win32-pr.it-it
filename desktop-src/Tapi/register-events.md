@@ -1,26 +1,26 @@
 ---
-description: Negli esempi di codice seguenti viene illustrata l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
+description: Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
 ms.assetid: e7662a26-d7b2-4bff-aa72-e38b58bc15df
-title: Registra eventi
+title: Registrare eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0a554c2e1ea5c226aa4a3c432f3430a30a978e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f61e9c6229525443b81429d713a58b19bfbb97d52745677d18e0e1c96f21a787
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761178"
 ---
-# <a name="register-events"></a>Registra eventi
+# <a name="register-events"></a>Registrare eventi
 
-Negli esempi di codice seguenti viene illustrata l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
+Gli esempi di codice seguenti illustrano l'implementazione di un semplice gestore eventi, la registrazione dell'interfaccia evento TAPI principale, l'impostazione del filtro eventi e la registrazione per le notifiche di chiamata.
 
-Il gestore eventi illustrato è un esempio anziché un requisito. L'obiettivo principale è garantire che il thread che riceve gli eventi esegue un'elaborazione minima prima di passare il lavoro a un altro thread. Ciò impedisce al gestore eventi di diventare un problema di prestazioni in situazioni di carico elevato degli eventi.
+Il gestore eventi illustrato è un esempio anziché un requisito. L'obiettivo principale è garantire che il thread che riceve gli eventi eserciti un'elaborazione minima prima di passare il lavoro a un altro thread. Ciò impedisce al gestore eventi di diventare un problema di prestazioni in situazioni di carico elevato degli eventi.
 
-Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [Initialize TAPI](initialize-tapi.md) e [selezionare un indirizzo](select-an-address.md).
+Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [Inizializza TAPI](initialize-tapi.md) [e Selezionare un indirizzo](select-an-address.md).
 
 > [!Note]  
-> Questo esempio non include il controllo degli errori e le versioni appropriate per il codice di produzione.
+> In questo esempio non sono disponibili il controllo degli errori e le versioni appropriate per il codice di produzione.
 
  
 
@@ -130,16 +130,16 @@ hr = gpTapi->RegisterCallNotifications(
 
 <dl> <dt>
 
-[**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
+[**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)
 </dt> <dt>
 
-[**\_evento TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
+[**EVENTO \_ TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event)
 </dt> <dt>
 
-[**ITTAPI::p UT \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
+[**ITTAPI::put \_ EventFilter**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter)
 </dt> <dt>
 
-[\_Costanti TAPIMEDIATYPE](tapimediatype--constants.md)
+[Costanti TAPIMEDIATYPE \_](tapimediatype--constants.md)
 </dt> <dt>
 
 [**ITTAPI::RegisterCallNotifications**](/windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registercallnotifications)

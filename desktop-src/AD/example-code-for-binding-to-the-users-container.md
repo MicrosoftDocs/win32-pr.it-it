@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per l'associazione al contenitore dell'utente
-description: Questo argomento include un esempio di codice che verrà associato al contenitore Users nel dominio corrente e restituirà l'interfaccia IADsContainer per il contenitore.
+description: Questo argomento include un esempio di codice che verrà associato al contenitore users nel dominio corrente e restituirà e l'interfaccia IADsContainer per il contenitore.
 ms.assetid: 78524b05-f57a-4816-92eb-e37be74dd245
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, associazione al contenitore dell'utente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8db1ccb3d2331c4ccef5bbf28f58fa5c046337c7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 21f270f1814f996e84b3fa57f9753219c957cb05cd7cf29a9622f4a64f3b907d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104046513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694564"
 ---
 # <a name="example-code-for-binding-to-the-users-container"></a>Codice di esempio per l'associazione al contenitore dell'utente
 
-Nell'esempio di codice C++ riportato di seguito viene associato al contenitore Users nel dominio corrente e viene restituita l'interfaccia [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) per il contenitore. Per altre informazioni sull'associazione a oggetti noti, vedere [associazione a oggetti di Well-Known con WKGUID](binding-to-well-known-objects-using-wkguid.md).
+L'esempio di codice C++ seguente esegue il binding al contenitore users nel dominio corrente e restituisce e [**l'interfaccia IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) per il contenitore. Per altre informazioni sull'associazione a oggetti noti, vedere [Binding a Well-Known Objects Using WKGUID](binding-to-well-known-objects-using-wkguid.md).
 
 
 ```C++
@@ -100,6 +100,6 @@ HRESULT GetUsersContainer(IADsContainer **ppContainer)
 
 
 
- 
+ 
 
- 
+ 

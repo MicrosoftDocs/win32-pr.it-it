@@ -1,7 +1,7 @@
 ---
 description: Il metodo CopyValuesToPropertyStore copia tutti i valori da una raccolta in un'interfaccia IPropertyStore.
 ms.assetid: 417a8723-fa46-44c8-9bdc-412c0f20969a
-title: 'Metodo IPortableDeviceValues:: CopyValuesToPropertyStore (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::CopyValuesToPropertyStore (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: d6ab6b4614c336d3e0da50c0291b2e69a260ae1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d134cb61831426451b1c6068bde5ca787b027fbe5b153587b45d9693ef739c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697248"
 ---
-# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Metodo IPortableDeviceValues:: CopyValuesToPropertyStore
+# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Metodo IPortableDeviceValues::CopyValuesToPropertyStore
 
-Il metodo **CopyValuesToPropertyStore** copia tutti i valori da una raccolta in un'interfaccia **IPropertyStore** .
+Il **metodo CopyValuesToPropertyStore** copia tutti i valori da una raccolta in **un'interfaccia IPropertyStore.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,22 +40,22 @@ HRESULT CopyValuesToPropertyStore(
 
 <dl> <dt>
 
-*pStore* \[ in\]
+*pStore* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un oggetto Store.
+Puntatore a un oggetto archivio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non converte i valori dei \_ LPWSTR VT in VT \_ BSTR. Molte applicazioni o componenti esterni che comunicano con l'applicazione, ad esempio alcune applicazioni shell, usano l'interfaccia **IPropertyStore** . Questo metodo consente di scambiare dati in modo semplice e rapido con questi programmi.
+Questo metodo non converte i valori di \_ VT LPWSTR in VT \_ BSTR. Molte applicazioni o componenti esterni che comunicano con l'applicazione, ad esempio alcune applicazioni shell, usano **l'interfaccia IPropertyStore.** Questo metodo offre un modo rapido e semplice per scambiare dati con questi programmi.
 
 Questo metodo è supportato in Windows Vista e nelle versioni successive di Windows.
 
@@ -73,8 +73,8 @@ Questo metodo è supportato in Windows Vista e nelle versioni successive di Wind
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

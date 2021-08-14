@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_OPENINTERFACE (VFW. h)
-description: Il \_ messaggio MCIWNDM OPENINTERFACE associa il flusso di dati o il file associato all'interfaccia specificata a una finestra di MCIWnd. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndOpenInterface.
+title: MCIWNDM_OPENINTERFACE messaggio (Vfw.h)
+description: Il messaggio MCIWNDM OPENINTERFACE allega il flusso di dati o il file associato all'interfaccia specificata \_ a una finestra MCIWnd. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndOpenInterface.
 ms.assetid: 73cbd637-d315-4b39-a978-2b72aed1f303
 keywords:
-- MCIWNDM_OPENINTERFACE messaggi multimediali di Windows
+- MCIWNDM_OPENINTERFACE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c40453f4d587429508a5aae19bc432fc46088ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83097ad6301dbfdb4636a8478c2df8e544207df334efd27fe9695f15e0693533
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373517"
 ---
-# <a name="mciwndm_openinterface-message"></a>\_Messaggio MCIWNDM OPENINTERFACE
+# <a name="mciwndm_openinterface-message"></a>Messaggio OPENINTERFACE MCIWNDM \_
 
-Il messaggio **MCIWNDM \_ OPENINTERFACE** associa il flusso di dati o il file associato all'interfaccia specificata a una finestra di MCIWnd. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndOpenInterface**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface) .
+Il **messaggio MCIWNDM \_ OPENINTERFACE** allega il flusso di dati o il file associato all'interfaccia specificata a una finestra MCIWnd. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndOpenInterface.**](/windows/desktop/api/Vfw/nf-vfw-mciwndopeninterface)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LPARAM) (LPUNKNOWN) pUnk;
 
 <dl> <dt>
 
-<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*pUnk*
+<span id="pUnk"></span><span id="punk"></span><span id="PUNK"></span>*Punk*
 </dt> <dd>
 
 Puntatore a un'interfaccia IAVI che punta a un file o a un flusso di dati in un file.
@@ -47,7 +47,7 @@ Puntatore a un'interfaccia IAVI che punta a un file o a un flusso di dati in un 
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Restituisce zero in caso di esito positivo o un errore.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

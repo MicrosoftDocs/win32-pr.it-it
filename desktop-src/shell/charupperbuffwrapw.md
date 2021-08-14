@@ -1,7 +1,7 @@
 ---
-description: Converte i caratteri minuscoli di un buffer in caratteri maiuscoli.
+description: Converte i caratteri minuscoli in un buffer in caratteri maiuscoli.
 ms.assetid: 63293fda-6f55-419a-b5b4-7a3ada31580c
-title: CharUpperBuffWrapW (funzione)
+title: Funzione CharUpperBuffWrapW
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: dacc5e7609ca7f91bf7c66651d7ba9bdd11ab688
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 288a119586e9f2e58172daaba33a8b9f27c791aa0005b5349f47cb0b2670a631
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861556"
 ---
-# <a name="charupperbuffwrapw-function"></a>CharUpperBuffWrapW (funzione)
+# <a name="charupperbuffwrapw-function"></a>Funzione CharUpperBuffWrapW
 
-\[**CharUpperBuffWrapW** è disponibile per l'utilizzo in Windows XP. Potrebbe non essere disponibile nelle versioni successive. È consigliabile usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) al suo posto.\]
+\[**CharUpperBuffWrapW** è disponibile per l'uso in Windows XP. Potrebbe non essere disponibile nelle versioni successive. È consigliabile [**usare CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) al suo posto.\]
 
-Converte i caratteri minuscoli di un buffer in caratteri maiuscoli. La funzione converte i caratteri sul posto.
+Converte i caratteri minuscoli in un buffer in caratteri maiuscoli. La funzione converte i caratteri sul posto.
 
 > [!Note]  
-> **CharUpperBuffWrapW** è un wrapper per la funzione **CharUpperBuffW** . Per ulteriori note sull'utilizzo, vedere la pagina [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) .
+> **CharUpperBuffWrapW** è un wrapper per la **funzione CharUpperBuffW.** Per altre note sull'utilizzo, vedere la pagina [**CharUpperBuff.**](/windows/win32/api/winuser/nf-winuser-charupperbuffa)
 
  
 
@@ -47,7 +47,7 @@ DWORD CharUpperBuffWrapW(
 
 <dl> <dt>
 
-*PCH* \[ in\]
+*pch* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPWSTR**
@@ -56,12 +56,12 @@ Puntatore a un buffer che contiene uno o più caratteri Unicode da elaborare.
 
 </dd> <dt>
 
-*cchLength* \[ in\]
+*cchLength* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Specifica la dimensione, in caratteri, del buffer a cui punta *PCH*.
+Specifica le dimensioni, in caratteri, del buffer a cui punta *pch*.
 
 </dd> </dl>
 
@@ -73,9 +73,9 @@ Numero di caratteri elaborati.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo preferito consiste nell'usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) insieme a Microsoft Layer for Unicode (MSLU).
+Il metodo preferito è usare [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) insieme al livello Microsoft per Unicode (MSLU).
 
-**CharUpperBuffWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando il numero ordinale 44.
+**CharUpperBuffWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando l'ordinale 44.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,9 +83,9 @@ Il metodo preferito consiste nell'usare [**CharUpperBuffW**](/windows/win32/api/
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

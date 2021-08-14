@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. Latitude.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.Latitude.
 ms.assetid: 0f8cea07-da96-4d2a-8444-6073b51e1236
-title: Criteri dei metadati delle foto di System. GPS. Latitude
+title: Criteri dei metadati delle foto di System.GPS.Latitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5320869c1e8fd0d4b17bb17da455fc939bf44b9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41dd1eb0ee21ab02eeb8c83d5ea84f28c07c2811929f2b8c973cace4a4a06fd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710625"
 ---
-# <a name="systemgpslatitude-photo-metadata-policy"></a>Criteri dei metadati delle foto di System. GPS. Latitude
+# <a name="systemgpslatitude-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.Latitude
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. Latitude](../properties/props-system-gps-latitude.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.Latitude.](../properties/props-system-gps-latitude.md)
 
 ### <a name="pkey"></a>PKEY
 
-\_Latitudine GPS \_ pkey
+\_Latitudine GPS \_ PKEY
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-VT \_ vettore \| VT \_ R8
+VT \_ VECTOR \| VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-Questo valore può essere scritto scrivendo in System. GPS. LatitudeNumerator e System. GPS. LatitudeDenominator. Non può essere scritto direttamente. I valori di schemi diversi vengono risolti.
+Questo valore può essere scritto in System.GPS.LatitudeNumerator e System.GPS.LatitudeDenominator. Non può essere scritto direttamente. I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 2} |             |
+| 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
@@ -56,20 +56,20 @@ Questo valore può essere scritto scrivendo in System. GPS. LatitudeNumerator e 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 2} |             |
+| 1     | /app1/ifd/gps/{ushort=2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 2} |
+| 1     | /app1/ifd/gps/{ushort=2} |
 | 2     | /xmp/exif:gpslatitude    |
 
 
@@ -78,13 +78,13 @@ Questo valore può essere scritto scrivendo in System. GPS. LatitudeNumerator e 
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 2}       |             |
+| 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
@@ -97,20 +97,20 @@ Questo valore può essere scritto scrivendo in System. GPS. LatitudeNumerator e 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 2}       |             |
+| 1     | /ifd/gps/{ushort=2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                      |
 |-------|---------------------------|
-| 1     | /IFD/GPS/{ushort = 2}       |
+| 1     | /ifd/gps/{ushort=2}       |
 | 2     | /ifd/xmp/exif:gpslatitude |
 
 
@@ -123,7 +123,7 @@ Questo valore può essere scritto scrivendo in System. GPS. LatitudeNumerator e 
 
 <dl> <dt>
 
-[System. GPS. Latitude](../properties/props-system-gps-latitude.md)
+[System.GPS.Latitude](../properties/props-system-gps-latitude.md)
 </dt> </dl>
 
  

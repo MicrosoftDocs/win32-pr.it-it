@@ -1,7 +1,7 @@
 ---
-description: La funzione SetNPPAddressFilterInBlob imposta il filtro degli indirizzi specificato nel BLOB.
+description: La funzione SetNPPAddressFilterInBlob imposta il filtro di indirizzo specificato nel BLOB.
 ms.assetid: bdd1482d-8be0-4999-9a7a-16b0400412fb
-title: Funzione SetNPPAddressFilterInBlob (Netmon. h)
+title: Funzione SetNPPAddressFilterInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 39e8a85599fa63b1320d707f648731a195dbb48e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da2119b30f690acf5deac46d43d9382e75c6caf1c2e9f41784a4b34f7f80e257
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363817"
 ---
-# <a name="setnppaddressfilterinblob-function"></a>SetNPPAddressFilterInBlob (funzione)
+# <a name="setnppaddressfilterinblob-function"></a>Funzione SetNPPAddressFilterInBlob
 
-La funzione **SetNPPAddressFilterInBlob** imposta il filtro degli indirizzi specificato nel BLOB.
+La **funzione SetNPPAddressFilterInBlob** imposta il filtro di indirizzo specificato nel BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ DWORD SetNPPAddressFilterInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per un BLOB.
 
 </dd> <dt>
 
-*pAddressTable* \[ in\]
+*pAddressTable* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**ADDRESSTABLE**](addresstable.md) che definisce la tabella degli indirizzi allocata dall'utente.
+Puntatore a una [**struttura ADDRESSTABLE**](addresstable.md) che definisce la tabella di indirizzi allocata dall'utente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -68,8 +68,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

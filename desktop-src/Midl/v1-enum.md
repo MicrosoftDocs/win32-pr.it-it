@@ -1,9 +1,9 @@
 ---
 title: v1_enum (attributo)
-description: L'attributo \ V1 \_ enum \ indica che il tipo enumerato specificato deve essere trasmesso come entità a 32 bit, anziché come valore predefinito a 16 bit.
+description: L'attributo \ v1 enum\ indica che il tipo enumerato specificato viene trasmesso come entità a 32 bit, anziché come valore predefinito \_ a 16 bit.
 ms.assetid: 46016131-b78e-4a7f-94c8-41ff1780b0b8
 keywords:
-- attributo v1_enum MIDL
+- v1_enum attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8183b8b91c4a061e6b91c67ab83bca6393751f4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4d7afb814cde879f0ada5124b1a19d8ac8b8c851deafcda7e75295a6e5338f68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103857438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382785"
 ---
-# <a name="v1_enum-attribute"></a>\_attributo enum V1
+# <a name="v1_enum-attribute"></a>Attributo di enumerazione v1 \_
 
-L'attributo **\[ \_ enum \] V1** indica che il tipo enumerato specificato deve essere trasmesso come entità a 32 bit, anziché come valore predefinito a 16 bit.
+**\[ L'attributo \_ \] di** enumerazione v1 indica che il tipo enumerato specificato viene trasmesso come entità a 32 bit, anziché come valore predefinito a 16 bit.
 
 ``` syntax
 [v1_enum] enum 
@@ -36,9 +36,9 @@ Questo attributo non ha parametri.
 
 ## <a name="remarks"></a>Commenti
 
-L'utilizzo dell'attributo **\[ \_ enum \] V1** per la trasmissione di un tipo enumerato come entità a 32 bit aumenta l'efficienza del marshalling e dell'unmarshalling dei dati quando tale enumerazione è incorporata in strutture o unioni.
+L'uso dell'attributo **\[ \_ \] di** enumerazione v1 per trasmettere un tipo enumerato come entità a 32 bit aumenta l'efficienza del marshalling e dell'unmarsaling dei dati quando tale enumerazione è incorporata in strutture o unioni.
 
-Per migliorare le prestazioni, è consigliabile applicare l'attributo **\[ \_ enum \] V1** agli enumeratori nelle applicazioni a 32 bit. Tenere presente, tuttavia, che nelle piattaforme a 16 bit il compilatore C considera un tipo enumerato come [**int**](int.md)a 16 bit. Pertanto, le applicazioni client a 16 bit devono convertire i tipi [**enum**](enum.md) in [**Long**](long.md) per la trasmissione remota, in modo da evitare la sovrascrittura dei dati o l'invio di valori non corretti.
+Per migliorare le prestazioni, è consigliabile applicare l'attributo **\[ \_ \] di enumerazione v1** agli enumeratori nelle applicazioni a 32 bit. Tenere presente, tuttavia, che nelle piattaforme a 16 bit il compilatore C considera un tipo enumerato come [**int**](int.md)a 16 bit. Le applicazioni client a 16 bit devono pertanto convertire i tipi [**enum**](enum.md) in [**long**](long.md) per la trasmissione remota per evitare la sovrascrittura dei dati o l'invio di valori non corretti.
 
 ## <a name="examples"></a>Esempi
 
@@ -54,7 +54,7 @@ typedef [v1_enum] enum
 
 <dl> <dt>
 
-[**enum**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [File di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md)
@@ -63,9 +63,9 @@ typedef [v1_enum] enum
 [**long**](long.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

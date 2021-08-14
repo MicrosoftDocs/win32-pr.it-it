@@ -1,17 +1,17 @@
 ---
-title: Effetto di raddrizzamento
+title: Effetto di raddrizza
 description: Ruota e, facoltativamente, ridimensiona un'immagine.
 ms.assetid: aa37cdf1-bbb6-db4e-45a7-67c7cc16b7b4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a8e521ca4c0c452301c0f8031c94ba8c22efe80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31d777859fa35dc3dafc3507586e76309049fa170e42bb29f4b214cc704fd24c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104563592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664964"
 ---
-# <a name="straighten-effect"></a>Effetto di raddrizzamento
+# <a name="straighten-effect"></a>Effetto di raddrizza
 
 Ruota e, facoltativamente, ridimensiona un'immagine.
 
@@ -19,13 +19,13 @@ Il CLSID per questo effetto è CLSID \_ D2D1Straighten.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/straighten-effect.png)
+![esempio di output dell'effetto](images/straighten-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -46,9 +46,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto di raddrizzamento sono definite dall'enumerazione [**d2d1 \_ Raddrizza \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop) .
+Le proprietà per l'effetto di raddrizza sono definite [**dall'enumerazione D2D1 \_ STRAIGHTEN \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_straighten_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,10 +56,10 @@ Le proprietà per l'effetto di raddrizzamento sono definite dall'enumerazione [*
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Argomenti correlati

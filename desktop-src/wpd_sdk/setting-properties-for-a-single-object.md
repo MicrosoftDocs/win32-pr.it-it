@@ -4,34 +4,34 @@ ms.assetid: 1c003534-96b4-419b-94d1-73b5ffa2eba1
 title: Impostazione delle proprietà per un singolo oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5649d05ccadfeaef0dd8805abd7d556f7725f175
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44a38964282b4ff6a51ee104bafc596f40f6107a87ae8069eba84a25386e7842
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704281"
 ---
 # <a name="setting-properties-for-a-single-object"></a>Impostazione delle proprietà per un singolo oggetto
 
-Dopo che l'applicazione ha recuperato un identificatore di oggetto (vedere l'argomento relativo all' [enumerazione del contenuto](enumerating-content.md) ) per un determinato oggetto, può impostare le proprietà di tale oggetto chiamando i metodi nelle interfacce descritte nella tabella seguente.
+Dopo che l'applicazione ha recuperato un identificatore di oggetto (vedere l'argomento [Enumerazione](enumerating-content.md) del contenuto) per un determinato oggetto, può impostare le proprietà per tale oggetto chiamando i metodi nelle interfacce descritte nella tabella seguente.
 
 
 
 | Interfaccia                                                                | Descrizione                                                                                                                                                 |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Utilizzato per determinare se una determinata proprietà può essere scritta e inviare l'operazione di scrittura.                                                                  |
+| [**Interfaccia IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Utilizzato per determinare se una determinata proprietà può essere scritta e per inviare l'operazione di scrittura.                                                                  |
 | [**Interfaccia IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Fornisce l'accesso ai metodi specifici del contenuto.                                                                                                            |
-| [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)         | Utilizzato per contenere i valori da scrivere, determinare i risultati dell'operazione di scrittura e recuperare gli attributi delle proprietà (quando si determina la funzionalità di scrittura). |
+| [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)         | Usato per contenere i valori da scrivere, determinare i risultati dell'operazione di scrittura e recuperare gli attributi delle proprietà (quando si determina la funzionalità di scrittura). |
 
 
 
  
 
-Le applicazioni impostano le proprietà su un oggetto creando innanzitutto un contenitore di proprietà che specifica i nuovi valori usando l' [**interfaccia IPortableDeviceValues**](iportabledevicevalues.md). Una volta creato il contenitore delle proprietà, un'applicazione imposta tali proprietà chiamando il metodo [**IPortableDeviceProperties:: SetValue**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues) .
+Le applicazioni impostano le proprietà di un oggetto creando prima un contenitore delle proprietà che specifica i nuovi valori usando [**l'interfaccia IPortableDeviceValues**](iportabledevicevalues.md). Dopo aver creato il contenitore delle proprietà, un'applicazione imposta tali proprietà chiamando il [**metodo IPortableDeviceProperties::SetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues)
 
-La `WriteContentProperties` funzione nel modulo ContentProperties. cpp dell'applicazione di esempio illustra come un'applicazione può impostare una nuova proprietà nome oggetto per un oggetto selezionato.
+La `WriteContentProperties` funzione nel modulo ContentProperties.cpp dell'applicazione di esempio illustra come un'applicazione può impostare una nuova proprietà nome oggetto per un oggetto selezionato.
 
-La prima attività eseguita dalla `WriteContentProperties` funzione consiste nel richiedere all'utente di immettere un identificatore di oggetto per l'oggetto per cui l'applicazione scriverà il nuovo nome.
+La prima attività eseguita dalla funzione è richiedere all'utente di immettere un identificatore di oggetto per l'oggetto per cui l'applicazione scriverà `WriteContentProperties` il nuovo nome.
 
 
 ```C++
@@ -56,7 +56,7 @@ if (FAILED(hr))
 
 
 
-Al termine di questa operazione, l'applicazione recupera l' \_ attributo della proprietà WPD \_ \_ in grado di scrivere un \_ valore per la \_ \_ proprietà nome oggetto WPD per determinare se la proprietà può essere scritta. Si noti che l'applicazione potrebbe impostare qualsiasi proprietà per la quale WPD \_ L' \_ attributo Property \_ può \_ scrivere un valore true.
+Successivamente, l'applicazione recupera il valore WPD PROPERTY ATTRIBUTE CAN WRITE per la proprietà WPD OBJECT NAME per determinare se la \_ \_ proprietà può essere \_ \_ \_ \_ scritta. Si noti che l'applicazione può impostare qualsiasi proprietà per cui la distribuzione WPD \_ PROPERTY \_ ATTRIBUTE CAN WRITE value is \_ \_ true.)
 
 
 ```C++
@@ -110,7 +110,7 @@ if (SUCCEEDED(hr))
 
 
 
-Il passaggio successivo consiste nel richiedere all'utente la nuova stringa del nome. Si noti che la chiamata al metodo [**IPortableDeviceValues:: SetStringValue**](iportabledevicevalues-setstringvalue.md) crea semplicemente il contenitore delle proprietà. la proprietà effettiva non è stata ancora scritta.
+Il passaggio successivo consiste nel richiedere all'utente la nuova stringa del nome. Si noti che la chiamata al metodo [**IPortableDeviceValues::SetStringValue**](iportabledevicevalues-setstringvalue.md) crea semplicemente il contenitore delle proprietà. La proprietà effettiva non è ancora stata scritta.
 
 
 ```C++
@@ -147,7 +147,7 @@ if (bCanWrite)
 
 
 
-Infine, il nuovo valore, specificato dall'utente, viene applicato all'oggetto.
+Infine, il nuovo valore, specificato dall'utente, viene applicato all'oggetto .
 
 
 ```C++

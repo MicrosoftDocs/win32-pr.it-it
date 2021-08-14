@@ -1,6 +1,6 @@
 ---
-title: dcl_constantBuffer (SM4-ASM)
-description: '\_constantBuffer DCL (SM4-ASM)'
+title: dcl_constantBuffer (sm4 - asm)
+description: dcl \_ constantBuffer (sm4 - asm)
 ms.assetid: 164fb2a4-8782-42f0-b4ba-1f87d9c7255d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b2eeb9368af0121ee61fde5d106eb0f3b08e5acb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 437266c5a37f266a4f8847f09719380f436b6d9d38e8dee21b3258c79adb32b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104117209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117727265"
 ---
-# <a name="dcl_constantbuffer-sm4---asm"></a>\_constantBuffer DCL (SM4-ASM)
+# <a name="dcl_constantbuffer-sm4---asm"></a>dcl \_ constantBuffer (sm4 - asm)
 
-Dichiara un buffer costante dello shader.
+Dichiara un buffer costante shader.
 
 
 
-| \_ *\[ dimensioni \] cbN* constantBuffer di DCL, *AccessPattern* |
+| dcl \_ constantBuffer *cbN \[ size \]*, *AccessPattern* |
 |----------------------------------------------------|
 
 
@@ -44,12 +44,12 @@ Dichiara un buffer costante dello shader.
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="cbN_size_"></span><span id="cbn_size_"></span><span id="CBN_SIZE_"></span>CB<em>N [dimensioni]</em><br/></td>
-<td>in Buffer costante dello shader dove N è un numero intero che denota il numero di registro constant-buffer e size è un numero intero che indica il numero di elementi nel buffer.<br/></td>
+<td><span id="cbN_size_"></span><span id="cbn_size_"></span><span id="CBN_SIZE_"></span>cb<em>N[size]</em><br/></td>
+<td>[in] Buffer costante shader in cui N è un numero intero che indica il numero del registro constant-buffer e size è un numero intero che indica il numero di elementi nel buffer.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="AccessPattern"></span><span id="accesspattern"></span><span id="ACCESSPATTERN"></span><em>AccessPattern</em><br/></td>
-<td>in Il modo in cui il buffer sarà accessibile dal codice dello shader, che è uno dei seguenti: <br/> 
+<td>[in] Il modo in cui il buffer sarà accessibile dal codice shader, che è uno dei seguenti: <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -90,11 +90,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader in linguaggio assembly usando il modello di Shader 4.
+Questa istruzione è inclusa per facilitare il debug di uno shader nell'assembly. non è possibile creare uno shader nel linguaggio di assembly usando Shader Model 4.
 
 ## <a name="example"></a>Esempio
 
-Questo esempio dichiara un buffer costante per Register CB0, che include 19 elementi. Questi elementi sono accessibili con un indice letterale.
+In questo esempio viene dichiarato un buffer costante per il registro cb0, che include 19 elementi. Questi elementi sono accessibili con un indice letterale.
 
 
 ```
@@ -103,7 +103,7 @@ dcl_constantbuffer  cb0[19], immediateIndexed
 
 
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -111,12 +111,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -126,7 +126,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

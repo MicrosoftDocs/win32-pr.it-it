@@ -1,30 +1,30 @@
 ---
-title: Controlli personalizzati del mixer audio
-description: Controlli personalizzati del mixer audio
+title: Controlli Mixer audio
+description: Controlli Mixer audio
 ms.assetid: 6ab7a016-a4c1-4eef-ba97-7031d7425ee2
 keywords:
-- audio multimediale, controlli Mixer
-- audio, controlli Mixer
+- audio multimediale, controlli mixer
+- audio, controlli mixer
 - mixer audio, controlli
-- mixer audio, controlli personalizzati
+- mixer audio,controlli personalizzati
 - mixer, controlli
 - mixer, controlli personalizzati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35c6b6d747009df035e3911c2823e99e9436195e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 618e6eb8109f60d83e71fa9f8bcd7ee03e275e452e8ff825ae46a19adf88c3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103713795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375690"
 ---
-# <a name="audio-mixer-custom-controls"></a>Controlli personalizzati del mixer audio
+# <a name="audio-mixer-custom-controls"></a>Controlli Mixer audio
 
-I controlli personalizzati sono i più generici dei controlli mixer. Questi controlli consentono a un driver di mixer di definire le caratteristiche del controllo e, in modo implicito, la rappresentazione visiva del controllo.
+I controlli personalizzati sono i più generici dei controlli mixer. Questi controlli consentono a un driver mixer di definire le caratteristiche del controllo e, per implicazione, la rappresentazione visiva del controllo.
 
- 
+ 
 
- 
+ 
 
 
 

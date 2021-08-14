@@ -1,7 +1,7 @@
 ---
-description: Blocco dello stato filtro.
+description: Blocco dello stato del filtro.
 ms.assetid: ff29d6b1-ff65-4ee9-b64e-6067a06671f4
-title: 'Membro CBaseRenderer:: m_InterfaceLock (Renbase. h)'
+title: Membro CBaseRenderer::m_InterfaceLock (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a3fd401419706cbe792ab52df691cf47a711c541
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec9e8a285c6333181efbef46a127ef930a496ba94e69a7e611413bd0ada246ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402965"
 ---
-# <a name="cbaserendererm_interfacelock-member"></a>Membro InterfaceLock di CBaseRenderer:: m \_
+# <a name="cbaserendererm_interfacelock-member"></a>Membro InterfaceLock CBaseRenderer::m \_
 
-Blocco dello stato filtro.
+Blocco dello stato del filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ CCritSec m_InterfaceLock;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

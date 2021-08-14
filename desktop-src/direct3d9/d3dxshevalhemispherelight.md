@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7bc06dcf866c21cc5dcb96b23dea5a4640293fef
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25f1ae13b800c99d3356147d0ac5aa73a2cf091882822bee4ccbed7e160516b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524246"
 ---
 # <a name="d3dxshevalhemispherelight-function-d3dx9mathh"></a>Funzione D3DXSHEvalHemisphereLight (D3dx9math.h)
 
@@ -117,13 +117,13 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-L'interpolazione viene eseguita in modo lineare tra i due punti, non sulla superficie della sfera ,ovvero se l'asse è (0,0,1) è lineare in Z, non nell'angolo azimutabile. La funzione di illuminazione sferica risultante viene normalizzata in modo che un punto su una superficie perfettamente diffusa senza ombreggiatura e un normale puntato nella direzione *pDir* comporterebbe la luminosità di uscita con un valore pari a 1 (se il colore superiore era bianco e il colore inferiore era nero). Si tratta di un modello molto semplice in cui *Top* rappresenta l'intensità del "cielo" e *Bottom* rappresenta l'intensità del "terreno".
+L'interpolazione viene eseguita in modo lineare tra i due punti, non sulla superficie della sfera ,ovvero se l'asse è (0,0,1) è lineare in Z, non nell'angolo azimuthal. La funzione di illuminazione sferica risultante viene normalizzata in modo che un punto su una superficie perfettamente diffusa senza ombreggiatura e un normale puntato nella direzione *pDir* comporterebbe una luminosità di uscita con valore 1 (se il colore superiore era bianco e il colore inferiore era nero). Si tratta di un modello molto semplice in cui *Top* rappresenta l'intensità del "cielo" e *Bottom* rappresenta l'intensità del "terreno".
 
-Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente [](coordinate-systems.md)con theta, l'angolo sull'asse z nella direzione a destra e phi, l'angolo da z.
+Sulla sfera con raggio unità, come illustrato nella figura seguente, la direzione può essere specificata semplicemente [](coordinate-systems.md)con theta, l'angolo circa l'asse z nella direzione destra e phi, l'angolo da z.
 
-![illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
+![Illustrazione di una sfera con raggio unità](images/spherical-coordinates.png)
 
-Le equazioni seguenti mostrano la relazione tra le coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
+Le equazioni seguenti mostrano la relazione tra coordinate cartesiane (x, y, z) e sferiche (theta, phi) sulla sfera unità. L'angolo theta varia nell'intervallo da 0 a 2 pi greco, mentre phi varia da 0 a pi greco.
 
 ![equazioni della relazione tra coordinate cartesiane e sferiche](images/spherical-coordinates-equations.png)
 

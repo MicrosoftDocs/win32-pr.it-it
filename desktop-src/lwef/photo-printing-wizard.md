@@ -1,55 +1,55 @@
 ---
 title: Stampa guidata foto
-description: La stampa guidata foto consente agli utenti di stampare le foto fornendo un'interfaccia di facile utilizzo della procedura guidata.
+description: La Stampa guidata foto consente agli utenti di stampare foto offrendo un'interfaccia della procedura guidata di facile utilizzo.
 ms.assetid: 9cc2c7d4-a2aa-4abc-9c63-b091e044804f
 keywords:
 - Stampa guidata foto
-- IDropTarget, stampa guidata foto
+- IDropTarget, Stampa guidata foto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 708f051f658739cebd08e4f8643e5dd7fc0c6f7f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 38199f7977e428f41cbc0560e0eab9ad2e106709579255ec8c3a1e74d7f7a402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104399001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118475450"
 ---
 # <a name="photo-printing-wizard"></a>Stampa guidata foto
 
-La stampa guidata foto consente agli utenti di stampare le foto fornendo un'interfaccia di facile utilizzo della procedura guidata. La procedura guidata consente all'utente di specificare le dimensioni di stampa foto e altre opzioni di stampa, quindi di inviare le foto alla stampante. La procedura guidata è progettata in modo da poter essere richiamata a livello di codice da qualsiasi applicazione che desideri offrire agli utenti la possibilità di stampare foto e specificare il ridimensionamento e altre opzioni di stampa. La stampa guidata foto è disponibile in Windows XP e Windows Vista.
+La Stampa guidata foto consente agli utenti di stampare foto offrendo un'interfaccia della procedura guidata di facile utilizzo. La procedura guidata consente all'utente di specificare le dimensioni di stampa delle foto e altre opzioni di stampa e quindi di inviare le foto alla stampante. La procedura guidata è progettata in modo che possa essere richiamata a livello di codice da qualsiasi applicazione che voglia offrire agli utenti la possibilità di stampare foto e specificare il ridimensionamento e altre opzioni di stampa. La Stampa guidata foto è disponibile in Windows XP e Windows Vista.
 
--   [Funzionalità fornite dalla procedura guidata di stampa foto](#features-provided-by-the-photo-print-wizard)
--   [Formati di file di foto supportati](#supported-photo-file-formats)
--   [Avvio a livello di codice della procedura guidata di stampa foto](#programmatically-launching-the-photo-print-wizard)
+-   [Funzionalità fornite dalla Stampa guidata foto](#features-provided-by-the-photo-print-wizard)
+-   [Formati di file foto supportati](#supported-photo-file-formats)
+-   [Avvio della stampa guidata foto a livello di codice](#programmatically-launching-the-photo-print-wizard)
 
-## <a name="features-provided-by-the-photo-print-wizard"></a>Funzionalità fornite dalla procedura guidata di stampa foto
+## <a name="features-provided-by-the-photo-print-wizard"></a>Funzionalità fornite dalla Stampa guidata foto
 
-La procedura guidata per la stampa fotografica offre diverse opzioni che potrebbero non essere disponibili nelle finestre di dialogo comuni della stampante, ad esempio modelli a più layout con dimensioni accurate. I modelli di layout consentono agli utenti di sfruttare al meglio lo spazio disponibile su carta stampata fotografica. Altre opzioni che è possibile specificare o a cui si accede tramite la procedura guidata di stampa foto includono:
+La Stampa guidata foto offre diverse opzioni che potrebbero non essere disponibili nelle finestre di dialogo comuni della stampante, ad esempio modelli multi-layout con dimensioni accurate. I modelli di layout consentono agli utenti di usare in modo più efficiente lo spazio disponibile sulla carta da stampa di un'immagine. Altre opzioni che è possibile specificare o accedere tramite la Stampa guidata foto includono:
 
--   Selezione di una stampante da un elenco di stampanti disponibili o destinazioni di stampa virtuale (ad esempio, Microsoft XPS Document Writer). In Windows Vista è possibile che siano disponibili le opzioni seguenti, a seconda delle funzionalità della stampante o della destinazione di stampa virtuale:
-    -   Formato della carta. Ad esempio, "Letter", "Legal", "a3".
-    -   Qualità di stampa, in termini di risoluzioni DPI (punti per pollice) supportati.
-    -   Tipo di carta. Ad esempio, "Plain" o "glossy".
--   Avvio delle preferenze di stampa e delle proprietà per una particolare stampante.
--   Impostazione delle **copie di ogni immagine** (in Windows Vista) o **numero di volte in cui utilizzare** i valori della casella di selezione di ogni immagine (in Windows XP).
--   Specifica di un modello di layout di stampa. Ad esempio, vengono **stampate** **foto a pagina intera** o portafogli.
--   Selezione dell'opzione **Adatta immagine a frame** (disponibile solo in Windows Vista).
--   Visualizzazione in anteprima della foto stampata con le opzioni attualmente specificate.
--   Accesso a opzioni di stampa avanzate, ad esempio **nitidezza per la stampa e la** **gestione dei colori** (disponibile solo in Windows Vista).
+-   Selezione di una stampante da un elenco di stampanti disponibili o destinazioni di stampa virtuale (ad esempio, Microsoft XPS Document Writer). In Windows Vista possono essere disponibili le opzioni seguenti, a seconda delle funzionalità della stampante o della destinazione di stampa virtuale:
+    -   Formato carta. Ad esempio, "Letter", "Legal", "A3".
+    -   Qualità di stampa, in termini di risoluzioni dpi (punti per pollice) supportate.
+    -   Tipo di carta. Ad esempio, "Plain" o "Glossy".
+-   Avvio delle preferenze e delle proprietà di stampa per una determinata stampante.
+-   Impostazione delle **copie di** ogni immagine (in Windows Vista) o Numero di volte in cui usare ogni immagine **(in** Windows XP) valori della casella di selezione.
+-   Specifica di un modello di layout di stampa. Ad esempio, **Foto a pagina intera** o Portafoglio **stampa**.
+-   Selezione **dell'opzione Adatta immagine al frame** (disponibile solo Windows Vista).
+-   Anteprima della foto stampata con le opzioni attualmente specificate.
+-   Accesso alle opzioni di stampa avanzate, ad esempio **La nitidezza** per la stampa e La gestione dei colori **(disponibile** solo Windows Vista).
 
-Qualsiasi applicazione può trarre vantaggio dalle funzionalità e dalla funzionalità di stampa foto offerte dalla procedura guidata di stampa foto. Un'applicazione può passare i file da stampare. La stampa guidata foto esegue quindi la preparazione del file per la stampa in base alle opzioni specificate dall'utente e invia i file preparati alla stampante.
+Qualsiasi applicazione può trarre vantaggio dalle funzionalità e dalla funzionalità di stampa foto offerte dalla Stampa guidata foto. Un'applicazione può passare i file da stampare. La Stampa guidata foto si occupa quindi della preparazione del file per la stampa in base alle opzioni specificate dall'utente e invia i file preparati alla stampante.
 
-Nella figura seguente è illustrata l'interfaccia della procedura guidata stampa foto in Windows Vista
+La figura seguente illustra l'interfaccia della Stampa guidata foto Windows Vista
 
-![Creazione guidata foto in Windows Vista](images/ppw-vista.png)
+![la stampa guidata foto in Windows Vista](images/ppw-vista.png)
 
-Nella figura seguente è illustrata l'interfaccia della procedura guidata stampa foto in Windows XP
+La figura seguente illustra l'interfaccia della Stampa guidata foto Windows XP
 
-![procedura guidata di stampa fotografica in Windows XP](images/ppw-xp.png)
+![la procedura guidata di stampa di foto in Windows XP](images/ppw-xp.png)
 
-## <a name="supported-photo-file-formats"></a>Formati di file di foto supportati
+## <a name="supported-photo-file-formats"></a>Formati di file foto supportati
 
-In Windows XP, la procedura guidata di stampa fotografica supporta tutti i formati di file grafici supportati da Windows GDI+. Attualmente, questi formati di file includono:
+In Windows XP, la Stampa guidata foto supporta tutti i formati di file di grafica supportati da Windows GDI+. Attualmente, questi formati di file includono:
 
 -   Bitmap (BMP)
 -   Graphics Interchange Format (GIF)
@@ -58,23 +58,23 @@ In Windows XP, la procedura guidata di stampa fotografica supporta tutti i forma
 -   Portable Network Graphics (PNG)
 -   Tagged Image File Format (TIFF)
 
-Per ulteriori informazioni sui formati di file grafici supportati da GDI+, vedere [tipi di bitmap](../gdiplus/-gdiplus-types-of-bitmaps-about.md).
+Per altre informazioni sui formati di file di grafica supportati GDI+, vedere [Tipi di bitmap.](../gdiplus/-gdiplus-types-of-bitmaps-about.md)
 
-In Windows Vista, la procedura guidata di stampa fotografica supporta qualsiasi formato di file di immagine per cui è installato un codec di Windows Imaging Component (WIC). WIC fornisce diversi codec standard, tra cui:
+In Windows Vista, la Stampa guidata foto supporta qualsiasi formato di file di immagine per il quale è installato un codec wic (Windows Imaging Component). WIC offre diversi codec standard, tra cui:
 
 -   Bitmap (BMP)
 -   GIF
--   Formato dell'icona (ICO)
+-   Formato icona (ICO)
 -   JPEG
 -   PNG
 -   TIFF
--   Formato foto Windows Media
+-   Windows Formato foto multimediale
 
-Per ulteriori informazioni sui codec WIC e WIC, vedere [componente Windows Imaging](https://msdn.microsoft.com/library/ms737408(VS.85).aspx)
+Per altre informazioni sui codec WIC e WIC, vedere Windows [Imaging Component](https://msdn.microsoft.com/library/ms737408(VS.85).aspx)
 
-## <a name="programmatically-launching-the-photo-print-wizard"></a>Avvio a livello di codice della procedura guidata di stampa foto
+## <a name="programmatically-launching-the-photo-print-wizard"></a>Avvio della stampa guidata foto a livello di codice
 
-Per richiamare la stampa guidata foto, chiamare l'interfaccia [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con l'identificatore di classe seguente (CLSID):
+Per richiamare la Stampa guidata foto, chiamare [l'interfaccia IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) con l'identificatore di classe (CLSID) seguente:
 
 
 ```
@@ -84,9 +84,9 @@ static const CLSID CLSID_PrintPhotosDropTarget =
 
 
 
-I file da elaborare tramite la procedura guidata di stampa foto sono specificati in un oggetto [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) .
+I file che devono essere elaborati dalla Stampa guidata foto vengono specificati in un [oggetto IDataObject.](/windows/win32/api/objidl/nn-objidl-idataobject)
 
-Nell'esempio di codice riportato di seguito viene illustrato come richiamare la stampa guidata foto.
+Nell'esempio di codice seguente viene illustrato come richiamare la Stampa guidata foto.
 
 
 ```
@@ -115,6 +115,6 @@ spDropTarget->Drop(pDataObject, MK_LBUTTON, pt, &dwEffect);}
 
 
 
- 
+ 
 
- 
+ 

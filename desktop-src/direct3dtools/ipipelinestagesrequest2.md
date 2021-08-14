@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b9dd185ba709aa4439deb98f92be3c8f2f456cea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 05b94094c897f4be55aea5d0de05a72e66b6c1eaa3b1adb3f9734d29bb78d80a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721694"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest2spanipipelinestagesrequest2-interface"></a><span id="vspixengine.ipipelinestagesrequest2"></span>Interfaccia IPipeLineStagesRequest2
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Other-Mailbox
-description: Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio CCMAIL BruceKeever.
+title: Other-Mailbox attributo
+description: Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio CCMAIL, Diocesi.
 ms.assetid: c7e49fbc-fb3a-487e-835b-ad2c1481425a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Other-Mailbox attribute
+- Other-Mailbox schema AD dell'attributo
 - Schema AD dell'attributo otherMailbox
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d02bb4031da8938fc38bf25562918204089db08
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99e3ce258d9adde1083d288d3668dce97dc43c3787a58606499636fa05702e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704441"
 ---
-# <a name="other-mailbox-attribute"></a>Attributo Other-Mailbox
+# <a name="other-mailbox-attribute"></a>Other-Mailbox attributo
 
-Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempio CCMAIL: BruceKeever.
+Contiene altri indirizzi di posta elettronica aggiuntivi in un formato, ad esempio CCMAIL: BruceKeever.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------|
 | CN                | Other-Mailbox                                            |
-| LDAP-Display-Name | otherMailbox                                             |
+| Ldap-Display-Name | otherMailbox                                             |
 | Dimensione              | \-                                                       |
-| Privilegio aggiornamento  | Amministratore di dominio                                     |
-| Frequenza di aggiornamento  | Ogni volta che l'utente viene rilasciato un indirizzo di posta elettronica aggiuntivo. |
+| Privilegio di aggiornamento  | Amministratore di dominio                                     |
+| Frequenza di aggiornamento  | Ogni volta che all'utente viene emesso un indirizzo di posta elettronica aggiuntivo. |
 | Attribute-Id      | 1.2.840.113556.1.4.651                                   |
-| System-ID-GUID    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
+| System-Id-Guid    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)              |
 
 
@@ -58,15 +58,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene altri indirizzi di posta elettronica aggiuntivi in un modulo, ad esempi
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000000                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

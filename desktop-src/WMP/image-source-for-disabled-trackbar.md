@@ -1,37 +1,27 @@
 ---
-title: Origine immagine per TrackBar disabilitato
-description: Origine immagine per TrackBar disabilitato
+title: Origine immagine per Trackbar disabilitato
+description: Origine immagine per Trackbar disabilitato
 ms.assetid: ecbe1670-2914-4b66-92bd-d854e6c1e897
 keywords:
-- Windows Media Player Mobile Skins, trackbars
-- interfacce, TrackBar
-- riferimento per Skin, trackbars
-- TrackBar in interfacce, origine immagine
-- origine immagine per Skin, trackbars
+- Windows Media Player Interfaccia per dispositivi mobili, trackbar
+- interfaccia, trackbar
+- informazioni di riferimento per le interfaccia, trackbar
+- trackbar nelle interfaccia, origine dell'immagine
+- origine dell'immagine per le interfaccia, trackbar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbae540f97c7d1f7241035b074f45e6267e51615
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d6b3f5f58198d55f2dcd17b23b102c91eb4dff4787489e13775c6be71faa3223
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338946"
 ---
-# <a name="image-source-for-disabled-trackbar"></a>Origine immagine per TrackBar disabilitato
+# <a name="image-source-for-disabled-trackbar"></a>Origine immagine per Trackbar disabilitato
 
-È necessario definire l'origine dell'immagine che si desidera visualizzare quando un TrackBar è disabilitato, utilizzando il tipo di bitmap da cui si desidera creare l'immagine. L'immagine visualizzata si trova in genere all'interno del file con privilegi avanzati o se si sta creando un'interfaccia per Windows Media Player 10 Mobile, l'immagine si trova all'interno del file SeekThumb. È necessario immettere il tipo di immagine seguito da uno spazio e dal simbolo @ e da un altro spazio. È quindi necessario immettere due numeri interi positivi che definiscono le coordinate in alto a sinistra (in pixel) dell'immagine che si vuole usare all'interno del tipo di bitmap da cui si sta disegnando.
+È necessario definire l'origine dell'immagine da visualizzare quando un trackbar è disabilitato, usando il tipo di bitmap da cui si vuole disegnare l'immagine. L'immagine visualizzata si trova in genere all'interno del file Super o se si sta creando un'interfaccia per Windows Media Player 10 Mobile, l'immagine si trova all'interno del file SeekThumb. È necessario immettere il tipo di immagine seguito da uno spazio, il simbolo @ e un altro spazio. È quindi necessario immettere due numeri interi positivi che definiscono le coordinate in alto a sinistra (in pixel) dell'immagine da usare all'interno del tipo di bitmap da cui si sta disegnando.
 
-Ad esempio, per usare un'immagine dalla bitmap SeekThumb con una posizione superiore e sinistra di 50, 60 pixel, digitare:
-
-
-```C++
-Disabled @ 50,60
-
-```
-
-
-
-È necessario definire un percorso immagine per un'immagine TrackBar disabilitata. Se non si vuole visualizzare una nuova immagine, è possibile definire l'immagine di sfondo come immagine disabilitata con un offset di 0, 0:
+Ad esempio, per usare un'immagine della bitmap SeekThumb con una posizione superiore e sinistra di 50,60 pixel, digitare:
 
 
 ```C++
@@ -41,18 +31,28 @@ Disabled @ 50,60
 
 
 
-Nell'esempio precedente, 50, 60 rappresenta la posizione del pulsante che si sta utilizzando nel file SeekThumb (in questo caso, la stessa posizione del pulsante nella bitmap di sfondo). Tuttavia, si consiglia di visualizzare un'immagine disabilitata per tutti i TrackBar per fornire all'utente un'indicazione visiva, perché i TrackBar non saranno utilizzabili in determinate condizioni. Ad esempio, la ricerca di TrackBar può essere disabilitata quando la playlist corrente è vuota.
+È necessario definire una posizione dell'immagine per un'immagine del trackbar disabilitata. Se non si vuole visualizzare una nuova immagine, è possibile definire l'immagine di sfondo come immagine disabilitata con un offset di 0,0:
+
+
+```C++
+Disabled @ 50,60
+
+```
+
+
+
+Nell'esempio precedente, 50,60 rappresenta la posizione del pulsante che si sta lavorando nel file SeekThumb (in questo caso, la stessa posizione del pulsante sulla bitmap Background). Tuttavia, è consigliabile visualizzare un'immagine Disabilitata per tutti i trackbar per fornire all'utente un'indicazione visiva, perché i trackbar non saranno utilizzabili in determinate condizioni. Ad esempio, i trackbar Seek possono essere disabilitati quando la playlist corrente è vuota.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**TrackBar**](trackbars.md)
+[**Trackbar**](trackbars.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

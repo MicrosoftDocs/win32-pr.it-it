@@ -4,12 +4,12 @@ ms.assetid: 8a4ebbe7-ba5b-487f-add4-20c5509ce0db
 title: System.Contact.BusinessAddress2Street
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2948a27d8f8afe386e525269839316d958e9906c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a7d193105ce9d6db90254c5458a46cf47f1ee7ddddb8984fa1b180a3727ebca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468941"
 ---
 # <a name="systemcontactbusinessaddress2street"></a>System.Contact.BusinessAddress2Street
 

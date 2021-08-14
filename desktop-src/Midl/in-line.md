@@ -1,9 +1,9 @@
 ---
-title: attributo in_line
-description: La parola chiave IDL DCE nella \_ riga non è supportata in Microsoft RPC.
+title: in_line attributo
+description: La parola chiave DCE IDL nella \_ riga non è supportata in Microsoft RPC.
 ms.assetid: 11ef8a9f-e358-4a38-bae2-fcd998f7fb76
 keywords:
-- attributo in_line MIDL
+- in_line attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c48778d3ff54ddfb3dc8c07bc606a0d9cac5acb
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c8d9f59cff23c1dfc7a258658f2a9839b8b6d135b44b40c49f81e44b478de76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118383705"
 ---
-# <a name="in_line-attribute"></a>\_attributo in linea
+# <a name="in_line-attribute"></a>attributo in \_ line
 
-La parola chiave IDL DCE **nella \_ riga** non è supportata in Microsoft RPC.
+La parola chiave DCE IDL **nella \_ riga** non è supportata in Microsoft RPC.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Speak (metodo)
-description: Speak (metodo)
+title: Metodo Speak
+description: Metodo Speak
 ms.assetid: 6267e04c-feb5-4f48-8a88-4e6ca3388bf3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88792a53fac80c68154f938e91fb9bfe63b2b8e3
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7c8798809dc4cdfa38438bee2fa9449f879871e4018b0e6b046d95a73583b03c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118475343"
 ---
-# <a name="speak-method"></a>Speak (metodo)
+# <a name="speak-method"></a>Metodo Speak
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,36 +27,36 @@ Pronuncia il testo o il file audio specificato per il carattere specificato.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*agente ***. Caratteri ("*** CharacterID * * *"). Pronuncia* *  \[ *testo* \] , \[ *URL*\]
+*agent***. Caratteri ("**_CharacterID_*_"). Speak_ *  \[ *Text* \] , \[ *URL*\]
 
 
 
 | Parte   | Descrizione                                                                                                                                                                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Text* | facoltativo. Stringa che specifica l'elemento indicato dal carattere.                                                                                                                                                                                                   |
-| *Url*  | facoltativo. Espressione stringa che specifica il percorso di un file audio (. WAV o. Formato LWV). Il percorso può essere specificato come file (inclusa una specifica del percorso UNC) o un URL (quando vengono recuperati anche i dati di animazione dei caratteri tramite il protocollo HTTP). |
+| *Text* | facoltativo. Stringa che specifica le informazioni del carattere.                                                                                                                                                                                                   |
+| *Url*  | facoltativo. Espressione stringa che specifica il percorso di un file audio (. WAV o . formato LWV). Il percorso può essere specificato come file (inclusa una specifica di percorso UNC) o URL (quando i dati di animazione dei caratteri vengono recuperati anche tramite il protocollo HTTP). |
 
 
 
- 
+ 
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene i parametri *Text* e *URL* siano facoltativi, è necessario specificare uno di essi. Per usare questo metodo con un carattere configurato per parlare solo nella relativa bolla di parola o usando un motore di sintesi vocale, è sufficiente fornire il parametro di *testo* . Includere uno spazio tra le parole per definire le interruzioni di parola appropriate nel fumetto di parole, anche per le lingue in cui non sono tradizionalmente inclusi gli spazi.
+Anche se *i parametri Text* e *Url* sono facoltativi, è necessario specificare uno di essi. Per usare questo metodo con un carattere configurato per parlare solo nel fumetto della parola o usando un motore di sintesi vocale (TTS), è sufficiente specificare il *parametro Text.* Includere uno spazio tra le parole per definire le interruzioni di parola appropriate nel fumetto, anche per le lingue che in genere non includono spazi.
 
-È anche possibile includere caratteri barra verticale ( \| ) nel parametro di *testo* per designare stringhe alternative, in modo che il server scelga in modo casuale una stringa diversa ogni volta che elabora il metodo.
+È anche possibile includere caratteri a barre verticali ( ) nel parametro Text per designare stringhe alternative, in modo che il server scegli in modo casuale una stringa diversa ogni volta che \| elabora il metodo. 
 
-Il supporto dei caratteri dell'output TTS viene definito quando il carattere viene compilato tramite l'editor dei caratteri di Microsoft Agent. Per generare l'output TTS, è necessario che sia già installato un motore TTS compatibile prima di chiamare questo metodo. Per ulteriori informazioni, vedere [accesso ai servizi di riconoscimento vocale](accessing-speech-services.md).
+Il supporto dei caratteri dell'output TTS viene definito quando il carattere viene compilato usando l'editor di caratteri di Microsoft Agent. Per generare l'output TTS, è necessario che sia già installato un motore TTS compatibile prima di chiamare questo metodo. Per altre informazioni, vedere [Accesso ai servizi voce](accessing-speech-services.md).
 
-Se si usa il file audio registrato (. WAV o. Output del formato LWV) per il carattere, specificare il percorso del file nel parametro *URL* . Questa specifica di file può includere un percorso locale (assoluto o relativo) o UNC (Universal Naming Convention). Il nome file non può includere caratteri non inclusi nella tabella codici degli Stati Uniti 1252. Tuttavia, se si utilizza il protocollo HTTP per accedere ai dati di animazione dei caratteri, utilizzare il metodo [**Get**](get-method.md) per caricare l'animazione prima di chiamare il metodo **Speak** . Per informazioni su Creative, vedere [uso dello strumento di modifica audio per informazioni linguistiche di Microsoft](using-the-microsoft-linguistic-information-sound-editing-tool.md) . File LWV.
+Se si usa il file audio registrato (. WAV o . Solo formato LWV) per il carattere, specificare il percorso del file nel *parametro Url.* Questa specifica di file può includere un percorso locale (assoluto o relativo) o un percorso UNC (Universal Naming Convention). Il nome file non può includere caratteri non inclusi nella tabella codici 1252 degli Stati Uniti. Tuttavia, se si usa il protocollo HTTP per accedere ai dati di animazione dei caratteri, usare il [**metodo Get**](get-method.md) per caricare l'animazione prima di chiamare il **metodo Speak.** Per informazioni sulla creatività, vedere Uso di [Microsoft Linguistic Information Sound Editing Tool.](using-the-microsoft-linguistic-information-sound-editing-tool.md) File LWV.
 
-Quando si usa l'output del file audio registrato, è comunque possibile usare il parametro *Text* per specificare le parole visualizzate nell'aerostato di parole del carattere. Tuttavia, se si specifica un file audio con funzionalità avanzate linguisticamente (. LWV) per il parametro *URL* e non specificare il testo per la parola Balloon, il parametro *Text* usa il testo archiviato nel file.
+Quando si usa l'output del file audio registrato, è comunque possibile usare il parametro *Text* per specificare le parole visualizzate nel fumetto delle parole del carattere. Tuttavia, se si specifica un file audio linguisticamente avanzato (. LWV) per il *parametro Url* e non specificano testo per il fumetto, il *parametro Text* usa il testo archiviato nel file.
 
-È anche possibile variare i parametri dell'output vocale con tag speciali inclusi nel parametro di *testo* . Per ulteriori informazioni, vedere [tag di output di sintesi vocale di Microsoft Agent](microsoft-agent-speech-output-tags.md).
+È anche possibile variare i parametri dell'output vocale con tag speciali inclusi nel *parametro* Text. Per altre informazioni, vedere [Tag di output del riconoscimento vocale di Microsoft Agent.](microsoft-agent-speech-output-tags.md)
 
-Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito un oggetto [**Request**](/windows/desktop/lwef/the-request-object) . È possibile usarlo per sincronizzare altre parti del codice con l'output parlato del carattere, come nell'esempio seguente:
+Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito [**un oggetto Request.**](/windows/desktop/lwef/the-request-object) È possibile usarlo per sincronizzare altre parti del codice con l'output parlato del carattere, come nell'esempio seguente:
 
 
 ```
@@ -78,11 +78,11 @@ Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, vie
 
 
 
-È anche possibile usare un oggetto [**Request**](/windows/desktop/lwef/the-request-object) per verificare la presenza di determinate condizioni di errore. Se, ad esempio, si usa il metodo **Speak** per parlare e non è installato un motore TTS compatibile, il server imposta la proprietà [**status**](status-property.md) dell'oggetto **Request** su "failed" con la relativa proprietà [**Description**](description-property.md) su "classe non registrata" o "errore sconosciuto o restituito oggetto". Per determinare se è installato un motore TTS, utilizzare la proprietà [**TTSModeID**](ttsmodeid-property.md) .
+È anche possibile usare un [**oggetto Request**](/windows/desktop/lwef/the-request-object) per verificare la presenza di determinate condizioni di errore. Ad esempio, se si usa il metodo **Speak** per parlare e non è  installato un [](status-property.md) motore TTS compatibile, il server imposta la proprietà Status dell'oggetto Request su "failed" con la relativa proprietà [**Description**](description-property.md) su "Class not registered" o "Unknown or object returned error". Per determinare se è installato un motore TTS, usare la [**proprietà TTSModeID.**](ttsmodeid-property.md)
 
-Analogamente, se il carattere tenta di pronunciare un file audio e se il file non è stato caricato o se si verifica un problema con il dispositivo audio, il server imposta anche la proprietà [**status**](status-property.md) dell'oggetto [**Request**](/windows/desktop/lwef/the-request-object) su "failed" con un numero di codice di errore appropriato.
+Analogamente, se il carattere tenta di pronunciare un file audio e se il file non è stato caricato o [](/windows/desktop/lwef/the-request-object) si verifica un problema con il dispositivo audio, il server imposta anche la proprietà [**Status**](status-property.md) dell'oggetto Request su "failed" con un numero di codice di errore appropriato.
 
-Per sincronizzare il codice, è anche possibile includere tag di riconoscimento vocale nel testo Speak:
+È anche possibile includere tag voce segnalibro nel testo Parla per sincronizzare il codice:
 
 
 ```
@@ -100,29 +100,29 @@ Per sincronizzare il codice, è anche possibile includere tag di riconoscimento 
 
 
 
-Per altre informazioni sul tag vocale del segnalibro, vedere [tag di output vocale](mrk-tag.md).
+Per altre informazioni sul tag di riconoscimento vocale segnalibro, vedere [Tag di output del riconoscimento vocale.](mrk-tag.md)
 
-Il metodo **Speak** usa l'ultima azione riprodotta per determinare quale animazione di pronuncia riprodurre. Se, ad esempio, il comando **Speak** è stato preceduto da [**Play**](play-method.md) "**GestureRight**", il server eseguirà **GestureRight** e quindi l'animazione **GestureRight** Speaking. Se l'ultima animazione riprodotta non ha un'animazione di pronuncia, Agent riproduce l'animazione assegnata allo stato di **pronuncia** del carattere.
+Il **metodo Speak** usa l'ultima azione riprodotta per determinare l'animazione parlata da riprodurre. Ad esempio, se il comando **Speak** è stato preceduto da [**play**](play-method.md) "**GestureRight**", il server riprodurrà **GestureRight** e quindi l'animazione **GestureRight** speaking. Se l'ultima animazione riprodotta non ha un'animazione parlata, Agent riproduce l'animazione assegnata allo stato **Speaking del** carattere.
 
-Se si chiama **Speak** e il canale audio è occupato, l'output audio del carattere non verrà udito, ma il testo verrà visualizzato nella parola Balloon.
+Se si chiama **Parla** e il canale audio è occupato, l'output audio del carattere non verrà ascoltato, ma il testo verrà visualizzato nel fumetto della parola.
 
-Il Word Breaking automatico dell'agente in Word Balloon interrompe le parole usando spazi vuoti (ad esempio, spazio o tabulazione). Tuttavia, se non è possibile, potrebbe interrompere una parola per adattarla al fumetto. In lingue quali giapponese, cinese e tailandese, in cui gli spazi non vengono usati per interrompere le parole, inserire un carattere di spazio a larghezza zero Unicode (0x200B) tra i caratteri per definire interruzioni di parola logiche.
-
-> [!Note]  
-> Anche la proprietà [**Enabled**](enabled-property.md) del fumetto di Word deve essere **true** per visualizzare il testo.
-
- 
+L'interruzione automatica delle parole di Agent nel fumetto di parole interrompe le parole usando spazi vuoti,ad esempio Spazio o Tab. Tuttavia, se non è possibile, potrebbe interrompere una parola per adattarla al fumetto. In lingue come il giapponese, il cinese e il tailandese, in cui gli spazi non vengono usati per interrompere le parole, inserire uno spazio unicode a larghezza zero (0x200B) tra i caratteri per definire interruzioni di parola logiche.
 
 > [!Note]  
-> Impostare l'ID lingua del carattere (impostando il **LanguageID** del carattere prima di usare il metodo **Speak** per garantire la visualizzazione del testo appropriata all'interno del fumetto di Word.
+> Anche la proprietà [**Enabled del fumetto**](enabled-property.md) deve essere **Impostata** su True per visualizzare il testo.
 
- 
+ 
+
+> [!Note]  
+> Impostare l'ID lingua del carattere ( impostando **languageID** del carattere prima di usare il **metodo Speak** per garantire la visualizzazione del testo appropriato all'interno del fumetto della parola.
+
+ 
 
 ## <a name="see-also"></a>Vedere anche
 
-[**Evento segnalibro**](bookmark-event.md), [**evento RequestStart**](requeststart-event.md), [**evento RequestComplete**](requestcomplete-event.md)
+[**Evento Bookmark,**](bookmark-event.md) [**evento RequestStart,**](requeststart-event.md) [**evento RequestComplete**](requestcomplete-event.md)
 
 
- 
+ 
 
- 
+ 

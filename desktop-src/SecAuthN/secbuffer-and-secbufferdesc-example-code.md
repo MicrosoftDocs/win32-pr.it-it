@@ -1,19 +1,19 @@
 ---
-description: In questo esempio viene illustrato come inizializzare una matrice di buffer di sicurezza.
+description: Questo esempio illustra come inizializzare una matrice di buffer di sicurezza.
 ms.assetid: f8196a9c-786a-49a3-85a4-1bd5f414a653
-title: Codice di esempio SecBuffer e SecBufferDesc
+title: Codice di esempio secBuffer e SecBufferDesc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d28e885d6eec65c209caeda299b2f7e5f2ad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b60b776dd85e29c3f91d2840849d18e48d100dada6037bff556074b1041bdb8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918448"
 ---
-# <a name="secbuffer-and-secbufferdesc-example-code"></a>Codice di esempio SecBuffer e SecBufferDesc
+# <a name="secbuffer-and-secbufferdesc-example-code"></a>Codice di esempio secBuffer e SecBufferDesc
 
-In questo esempio viene illustrato come inizializzare una matrice di buffer di sicurezza. Mostra i buffer di sicurezza di input inizializzati dal lato server di una connessione per prepararsi a una chiamata a [**AcceptSecurityContext (generale)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext). Si noti che l'ultimo buffer contiene il token di sicurezza opaco ricevuto dal client e che il \_ flag di sola lettura SECBUFFER è impostato su [**SECBUFFER**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
+Questo esempio illustra come inizializzare una matrice di buffer di sicurezza. Mostra i buffer di sicurezza di input inizializzati dal lato server di una connessione per preparare una chiamata ad [**AcceptSecurityContext (Generale).**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) Si noti che l'ultimo buffer contiene il token di sicurezza opaco ricevuto dal client e che il flag SECBUFFER \_ READONLY è impostato su [**SecBuffer**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
 
 
 ```C++

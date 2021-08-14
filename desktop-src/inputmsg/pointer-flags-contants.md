@@ -1,6 +1,6 @@
 ---
 title: Flag puntatore
-description: Valori che possono essere visualizzati nel campo pointerFlags della struttura POINTER_INFO.
+description: Valori che possono essere visualizzati nel campo pointerFlags della POINTER_INFO struttura .
 ms.assetid: CC3F8E21-F4FF-495C-922E-A3708D3F2093
 topic_type:
 - apiref
@@ -30,16 +30,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 21a4191aa09bcb0cb9fda1a4c9bc011d978e203a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ae56ebfc016b0e4497db7cc998753189ce36a87962c0305962800ad133e8bca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482037"
 ---
 # <a name="pointer-flags"></a>Flag puntatore
 
-Valori che possono essere visualizzati nel campo **pointerFlags** della struttura [**POINTER_INFO**](/previous-versions/windows/desktop/api) .
+Valori che possono essere visualizzati nel **campo pointerFlags** della [**POINTER_INFO**](/previous-versions/windows/desktop/api) struttura .
 
 <dl> <dt>
 
@@ -77,9 +77,9 @@ Indica l'arrivo di un nuovo puntatore.
 
 
 
-Indica che il puntatore continua a esistere. Quando questo flag non è impostato, indica che il puntatore ha un intervallo di rilevamento sinistro.
+Indica che il puntatore continua a esistere. Quando questo flag non è impostato, indica che il puntatore ha un intervallo di rilevamento a sinistra.
 
-Questo flag non viene in genere impostato solo quando un puntatore del mouse lascia un intervallo di rilevamento (**POINTER_FLAG_UPDATE** è impostato) o quando un puntatore in contatto con una superficie della finestra lascia un intervallo di rilevamento (**POINTER_FLAG_UP** è impostato).
+Questo flag non viene in genere impostato solo quando un puntatore al passaggio del mouse esce dall'intervallo di rilevamento **(è** impostato POINTER_FLAG_UPDATE) o quando un puntatore in contatto con una superficie della finestra lascia l'intervallo di rilevamento **(POINTER_FLAG_UP** è impostato).
 
 
 </dt> </dl> </dd> <dt>
@@ -92,7 +92,7 @@ Questo flag non viene in genere impostato solo quando un puntatore del mouse las
 
 
 
-Indica che il puntatore è in contatto con la superficie del digitalizzatore. Quando questo flag non è impostato, indica un puntatore al passaggio del mouse.
+Indica che questo puntatore è in contatto con la superficie del digitalizzatore. Quando questo flag non è impostato, indica un puntatore al passaggio del mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -105,13 +105,13 @@ Indica che il puntatore è in contatto con la superficie del digitalizzatore. Qu
 
 
 
-Indica un'azione primaria, analoga a un pulsante sinistro del mouse.
+Indica un'azione principale, analoga a un pulsante sinistro del mouse verso il basso.
 
-Questo flag è impostato in un puntatore tocco quando è in contatto con la superficie del digitalizzatore.
+Un puntatore tocco ha questo flag impostato quando è in contatto con la superficie del digitalizzatore.
 
-Questo flag è impostato in un puntatore di penna quando è in contatto con la superficie del digitalizzatore senza pulsanti premuti.
+Un puntatore penna ha questo flag impostato quando è in contatto con la superficie del digitalizzatore senza pulsanti premuti.
 
-Questo flag è impostato su un puntatore del mouse quando il pulsante sinistro del mouse è premuto.
+Un puntatore del mouse ha questo flag impostato quando il pulsante sinistro del mouse è premuto.
 
 
 </dt> </dl> </dd> <dt>
@@ -124,13 +124,13 @@ Questo flag è impostato su un puntatore del mouse quando il pulsante sinistro d
 
 
 
-Indica un'azione secondaria, analoga a un pulsante destro del mouse.
+Indica un'azione secondaria, analoga a un pulsante destro del mouse verso il basso.
 
-Un puntatore tocco non utilizza questo flag.
+Un puntatore tocco non usa questo flag.
 
-Questo flag è impostato in un puntatore di penna quando è in contatto con la superficie del digitalizzatore con il pulsante della penna premuto.
+Un puntatore della penna ha questo flag impostato quando è in contatto con la superficie del digitalizzatore con il pulsante della penna premuto.
 
-Questo flag è impostato da un puntatore del mouse quando il pulsante destro del mouse è premuto.
+Questo flag è impostato su un puntatore del mouse quando il pulsante destro del mouse è premuto.
 
 
 </dt> </dl> </dd> <dt>
@@ -143,13 +143,13 @@ Questo flag è impostato da un puntatore del mouse quando il pulsante destro del
 
 
 
-Analogo al pulsante della rotellina del mouse.
+Analogamente a un pulsante della rotellina del mouse verso il basso.
 
-Un puntatore tocco non utilizza questo flag.
+Un puntatore tocco non usa questo flag.
 
-Un puntatore penna non utilizza questo flag.
+Un puntatore penna non usa questo flag.
 
-Questo flag è impostato da un puntatore del mouse quando il pulsante della rotellina del mouse è inattivo.
+Un puntatore del mouse ha questo flag impostato quando la rotellina del mouse è in giù.
 
 
 </dt> </dl> </dd> <dt>
@@ -162,13 +162,13 @@ Questo flag è impostato da un puntatore del mouse quando il pulsante della rote
 
 
 
-Analogo a un primo pulsante del mouse esteso (XButton1).
+Analogamente a un primo pulsante esteso del mouse (XButton1) verso il basso.
 
-Un puntatore tocco non utilizza questo flag.
+Un puntatore tocco non usa questo flag.
 
-Un puntatore penna non utilizza questo flag.
+Un puntatore penna non usa questo flag.
 
-Questo flag è impostato da un puntatore del mouse quando il primo pulsante del mouse esteso (XBUTTON1) è inattivo.
+Un puntatore del mouse ha questo flag impostato quando il primo pulsante esteso del mouse (XBUTTON1) è in basso.
 
 
 </dt> </dl> </dd> <dt>
@@ -181,13 +181,13 @@ Questo flag è impostato da un puntatore del mouse quando il primo pulsante del 
 
 
 
-Analogo a un secondo pulsante del mouse esteso (XButton2).
+Analogamente a un secondo pulsante esteso del mouse (XButton2) verso il basso.
 
-Un puntatore tocco non utilizza questo flag.
+Un puntatore tocco non usa questo flag.
 
-Un puntatore penna non utilizza questo flag.
+Un puntatore penna non usa questo flag.
 
-Questo flag è impostato da un puntatore del mouse quando il secondo pulsante del mouse esteso (XBUTTON2) è inattivo.
+Un puntatore del mouse ha questo flag impostato quando il secondo pulsante esteso del mouse (XBUTTON2) è in basso.
 
 
 </dt> </dl> </dd> <dt>
@@ -200,9 +200,9 @@ Questo flag è impostato da un puntatore del mouse quando il secondo pulsante de
 
 
 
-Indica che il puntatore è stato designato come puntatore primario. Un puntatore primario è un puntatore singolo che può eseguire azioni oltre a quelle disponibili per i puntatori non primari. Ad esempio, quando un puntatore primario mette in contatto con una superficie della finestra, può fornire alla finestra la possibilità di attivare inviando una [**WM_POINTERACTIVATE**](wm-pointeractivate.md) messaggio.
+Indica che questo puntatore è stato designato come puntatore primario. Un puntatore primario è un singolo puntatore che può eseguire azioni oltre a quelle disponibili per i puntatori non primari. Ad esempio, quando un puntatore principale contatta la superficie di una finestra, può offrire alla finestra la possibilità di attivarsi inviando un [**messaggio WM_POINTERACTIVATE**](wm-pointeractivate.md) finestra.
 
-Il puntatore primario viene identificato da tutte le interazioni utente correnti nel sistema (mouse, tocco, penna e così via). Di conseguenza, il puntatore primario potrebbe non essere associato all'app. Il primo contatto in un'interazione multitocco viene impostato come puntatore primario. Una volta identificato un puntatore primario, è necessario rimuovere tutti i contatti prima che un nuovo contatto possa essere identificato come puntatore primario. Per le app che non elaborano l'input del puntatore, solo gli eventi del puntatore primario vengono promossi agli eventi del mouse.
+Il puntatore principale viene identificato da tutte le interazioni dell'utente correnti nel sistema (mouse, tocco, penna e così via). Di conseguenza, il puntatore principale potrebbe non essere associato all'app. Il primo contatto in un'interazione multitocchetto viene impostato come puntatore principale. Una volta identificato un puntatore primario, tutti i contatti devono essere eliminati prima che un nuovo contatto possa essere identificato come puntatore principale. Per le app che non elaborano l'input del puntatore, solo gli eventi del puntatore primario vengono promossi a eventi del mouse.
 
 
 </dt> </dl> </dd> <dt>
@@ -215,7 +215,7 @@ Il puntatore primario viene identificato da tutte le interazioni utente correnti
 
 
 
-Un suggerimento dal dispositivo di origine indica se il puntatore rappresenta un'interazione intenzionale o accidentale, che è particolarmente rilevante per PT_TOUCH puntatori in cui un'interazione accidentale (ad esempio con il Palm della mano) può attivare l'input. La presenza di questo flag indica che il dispositivo di origine ha una sicurezza elevata che questo input fa parte di un'interazione prevista.
+L'attendibilità è un suggerimento del dispositivo di origine che indica se il puntatore rappresenta un'interazione intenzionale o accidentale, particolarmente rilevante per i puntatori PT_TOUCH in cui un'interazione accidentale (ad esempio con il palmo della mano) può attivare l'input. La presenza di questo flag indica che il dispositivo di origine è molto sicuro che questo input fa parte di un'interazione prevista.
 
 
 </dt> </dl> </dd> <dt>
@@ -228,7 +228,7 @@ Un suggerimento dal dispositivo di origine indica se il puntatore rappresenta un
 
 
 
-Indica che il puntatore viene ripartito in modo anomalo, ad esempio quando il sistema riceve un input non valido per il puntatore o quando un dispositivo con puntatori attivi viene ripartito in modo improvviso. Se l'applicazione che riceve l'input è in una posizione a tale scopo, deve considerare l'interazione come non completata e invertire gli effetti del puntatore interessato.
+Indica che il puntatore si sta spostando in modo anomalo, ad esempio quando il sistema riceve un input non valido per il puntatore o quando un dispositivo con puntatori attivi si allontana improvvisamente. Se l'applicazione che riceve l'input è in grado di farlo, deve considerare l'interazione come non completata e invertire gli effetti del puntatore interessato.
 
 
 </dt> </dl> </dd> <dt>
@@ -241,7 +241,7 @@ Indica che il puntatore viene ripartito in modo anomalo, ad esempio quando il si
 
 
 
-Indica che il puntatore è passato a uno stato inattivo; ovvero è stato contattato con la superficie del digitalizzatore.
+Indica che il puntatore è stato spostato in uno stato verso il basso; ciò significa che è stato contattato con la superficie del digitalizzatore.
 
 
 </dt> </dl> </dd> <dt>
@@ -254,7 +254,7 @@ Indica che il puntatore è passato a uno stato inattivo; ovvero è stato contatt
 
 
 
-Indica che si tratta di un semplice aggiornamento che non include le modifiche dello stato del puntatore.
+Indica che si tratta di un aggiornamento semplice che non include modifiche dello stato del puntatore.
 
 
 </dt> </dl> </dd> <dt>
@@ -267,7 +267,7 @@ Indica che si tratta di un semplice aggiornamento che non include le modifiche d
 
 
 
-Indica che il puntatore è passato a uno stato attivo; ovvero il contatto con la superficie del digitalizzatore è terminato.
+Indica che il puntatore è stato spostato in uno stato verso l'alto; ciò significa che il contatto con la superficie del digitalizzatore è terminato.
 
 
 </dt> </dl> </dd> <dt>
@@ -280,7 +280,7 @@ Indica che il puntatore è passato a uno stato attivo; ovvero il contatto con la
 
 
 
-Indica l'input associato a una rotellina del puntatore. Per i puntatori del mouse, equivale all'azione della rotellina di scorrimento del mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
+Indica l'input associato a una rotellina del puntatore. Per i puntatori del mouse, equivale all'azione della rotellina del mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
 
 
 </dt> </dl> </dd> <dt>
@@ -293,7 +293,7 @@ Indica l'input associato a una rotellina del puntatore. Per i puntatori del mous
 
 
 
-Indica l'input associato a una rotellina h del puntatore. Per i puntatori del mouse, equivale all'azione della rotellina di scorrimento orizzontale del mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
+Indica l'input associato a una rotellina del puntatore. Per i puntatori del mouse, equivale all'azione della rotellina di scorrimento orizzontale del mouse ([**WM_MOUSEHWHEEL**](../inputdev/wm-mousehwheel.md)).
 
 
 </dt> </dl> </dd> <dt>
@@ -306,7 +306,7 @@ Indica l'input associato a una rotellina h del puntatore. Per i puntatori del mo
 
 
 
-Indica che il puntatore è stato acquisito da (associato a) un altro elemento e l'elemento originale ha perso l'acquisizione (vedere [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md)).
+Indica che questo puntatore è stato acquisito da (associato a) un altro elemento e che l'elemento originale ha perso l'acquisizione (vedere [**WM_POINTERCAPTURECHANGED**](wm-pointercapturechanged.md)).
 
 
 </dt> </dl> </dd> <dt>
@@ -326,7 +326,7 @@ Indica che a questo puntatore è associata una trasformazione.
 
 ## <a name="remarks"></a>Commenti
 
-XBUTTON1 e XBUTTON2 sono pulsanti aggiuntivi usati in molti dispositivi mouse. Restituiscono gli stessi dati dei pulsanti del mouse standard.
+XBUTTON1 e XBUTTON2 sono pulsanti aggiuntivi usati in molti dispositivi mouse. Restituiscono gli stessi dati dei pulsanti standard del mouse.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -334,9 +334,9 @@ XBUTTON1 e XBUTTON2 sono pulsanti aggiuntivi usati in molti dispositivi mouse. R
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

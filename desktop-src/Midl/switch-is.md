@@ -1,9 +1,9 @@
 ---
 title: switch_is (attributo)
-description: Il parametro \ Switch \_ is \ attribute specifica l'espressione o l'identificatore che funge da discriminante di Unione che seleziona il membro di Unione.
+description: L'attributo \ switch is\ specifica l'espressione o l'identificatore che funge da discriminante dell'unione che \_ seleziona il membro di unione.
 ms.assetid: 93552bdf-6a14-47ce-877e-32ed976bb895
 keywords:
-- attributo switch_is MIDL
+- switch_is attributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c52661c4fa1ebce57011f4424901dd1ec18250f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1975dcf38a04fc127de199e7cc663c8af41b63e6ce8f92d38be2115316ed0727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382842"
 ---
-# <a name="switch_is-attribute"></a>Switch \_ è attributo
+# <a name="switch_is-attribute"></a>\_l'opzione è l'attributo
 
-L' **\[ opzione \_ è \]** attribute specifica l'espressione o l'identificatore che funge da discriminante di Unione che seleziona il membro di Unione.
+**\[ \_ L'opzione \] è** l'attributo che specifica l'espressione o l'identificatore che funge da discriminante dell'unione che seleziona il membro dell'unione.
 
 ``` syntax
 typedef struct [[ struct-tag ]] 
@@ -39,93 +39,93 @@ typedef struct [[ struct-tag ]]
 
 <dl> <dt>
 
-*struct-Tag* 
+*struct-tag* 
 </dt> <dd>
 
-Specifica un tag facoltativo per una struttura.
+Specifica un tag facoltativo per una struttura .
 
 </dd> <dt>
 
-*Limited-expr* 
+*limited-expr* 
 </dt> <dd>
 
-Specifica un'espressione del linguaggio C supportata da MIDL. Sono supportate quasi tutte le espressioni in linguaggio C. Il compilatore MIDL supporta le espressioni condizionali, le espressioni logiche, le espressioni relazionali e le espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori di pre-e post-incremento e di pre-e post-decremento.
+Specifica un'espressione in linguaggio C supportata da MIDL. Quasi tutte le espressioni in linguaggio C sono supportate. Il compilatore MIDL supporta espressioni condizionali, espressioni logiche, espressioni relazionali ed espressioni aritmetiche. MIDL non consente chiamate di funzione nelle espressioni e non consente operatori pre e post-incremento e pre-decremento.
 
 </dd> <dt>
 
-*Field-attr-List* 
+*field-attr-list* 
 </dt> <dd>
 
-Specifica zero o più attributi di campo che si applicano a un membro di Unione. Gli attributi di campo validi includono **\[** [**First \_ è**](first-is.md) **\]** , **\[** [**Last \_ è**](last-is.md) **\]** , **\[** [**length \_ is**](length-is.md) **\]** , **\[** [**Max \_ is**](max-is.md) **\]** , **\[** [**size \_ is**](size-is.md) **\]** ; The usage Attributes **\[** [**String**](string.md) **\]** , **\[** [**Ignore**](ignore.md) **\]** e **\[** [**Context \_ handle**](context-handle.md), **\]** l'attributo Pointer **\[** [**ref**](ref.md) **\]** , **\[** [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** e per i membri che sono a loro volta Unions, il **\[** [**\_ tipo di opzione**](switch-type.md)dell'attributo Union **\]** . Separare più attributi di campo con virgole.
+Specifica zero o più attributi di campo applicabili a un membro di unione. Gli attributi di campo validi includono first è , last è , length è , max è , size è ; la stringa degli attributi di utilizzo , ignore e context handle ; l'attributo **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [**puntatore ref**](ref.md), **\]** unique o ptr ; **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** **\[** [**\_**](switch-type.md) **\]** e per i membri che sono unioni, il tipo di opzione dell'attributo union . Separare più attributi di campo con virgole.
 
 </dd> <dt>
 
-*Union-Type-specifier* 
+*union-type-specifier* 
 </dt> <dd>
 
-Specifica l'identificatore del tipo di [**Unione**](union.md) . Una specifica di archiviazione facoltativa può precedere *Type-specifier*.
+Specifica l'identificatore [**del tipo**](union.md) di unione. Una specifica di archiviazione facoltativa può precedere *type-specifier*.
 
 </dd> <dt>
 
-*dichiaratore e declarator-list* 
+*declarator e declarator-list* 
 </dt> <dd>
 
-Specifica un dichiaratore C standard, ad esempio un identificatore, un dichiaratore di puntatore e un dichiaratore di matrice. I dichiaratori di funzione e le dichiarazioni di campi di bit non sono consentiti nelle unioni trasmesse in chiamate a procedure remote. Questi dichiaratori sono consentiti nelle unioni non trasmesse. Separare più dichiaratori con virgole.
+Specifica un dichiaratore C standard, ad esempio un identificatore, un dichiaratore di puntatore e un dichiaratore di matrice. I dichiaratori di funzione e le dichiarazioni di campo di bit non sono consentiti nelle unioni trasmesse nelle chiamate di procedura remota. Questi dichiaratori sono consentiti nelle unioni che non vengono trasmesse. Separare più dichiaratori con virgole.
 
 </dd> <dt>
 
-*Function-Attribute-List* 
+*function-attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che si applicano alla funzione. Gli attributi di funzione validi sono **\[** [**callback**](callback.md) **\]** , **\[** [**local**](local.md) **\]** , l'attributo Pointer **\[ ref \]**, **\[ Unique \]** o **\[ ptr \]** e gli attributi Usage **\[ String \]**, **\[ Ignore \]** e **\[ Context \_ handle \]**.
+Specifica zero o più attributi che si applicano alla funzione. Gli attributi di funzione validi sono callback , local ; l'attributo **\[** [](callback.md) **\]** **\[** [](local.md) **\]** **\[ puntatore ref \]**, **\[ unique \]** o **\[ ptr \]** e **\[ \]** **\[ \]** **\[ \_ \]** gli attributi di utilizzo string , ignore e context handle .
 
 </dd> <dt>
 
-*identificatore di tipo* 
+*type-specifier* 
 </dt> <dd>
 
-Specifica un [tipo di base](midl-base-types.md), uno [**struct**](struct.md), un' [**Unione**](union.md), un tipo [**enum**](enum.md) o un identificatore di tipo. Una specifica di archiviazione facoltativa può precedere *Type-specifier*.
+Specifica un tipo [di base,](midl-base-types.md) [**uno struct,**](struct.md) [**un'unione,**](union.md) [**un tipo enum**](enum.md) o un identificatore di tipo. Una specifica di archiviazione facoltativa può precedere *type-specifier*.
 
 </dd> <dt>
 
-*puntatore-dichiaratore* 
+*dichiaratore di puntatore* 
 </dt> <dd>
 
-Specifica zero o più dichiaratori di puntatore. Un dichiaratore di puntatore è uguale al dichiaratore del puntatore utilizzato in C; viene costruita dall' \* indicatore, i modificatori, ad esempio **lontano**, e il qualificatore [**const**](const.md).
+Specifica zero o più dichiaratori di puntatore. Un dichiaratore di puntatore è lo stesso del dichiaratore di puntatore usato in C; viene costruito dal \* designatore, dai modificatori come **far** e dal qualificatore [**const**](const.md).
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Specifica il nome della procedura remota.
 
 </dd> <dt>
 
-*param-attr-List* 
+*param-attr-list* 
 </dt> <dd>
 
-Specifica zero o più attributi appropriati per il tipo di parametro specificato. Gli attributi **\[ di \]** parametro possono attivare e **\[ \]** disattivare gli attributi direzionali, gli attributi di campo **\[ First \_ \]** sono, **\[ Last \_ \] è**, **\[ length \_ is \]**, **\[ Max \_ is \]**, **\[ size \_ is \]** e **\[ Switch \_ Type \]**, l'attributo Pointer **\[ ref \]**, **\[ Unique \]** o **\[ ptr \]** e l' **\[ \_ handle \]** e la **\[ stringa \]** del contesto degli attributi Usage. L'attributo Usage **\[ Ignore \]** non può essere utilizzato come attributo di parametro. Separare più attributi con virgole.
+Specifica zero o più attributi appropriati per il tipo di parametro specificato. Gli attributi dei parametri possono assumere gli attributi direzionali **\[ \] in** e **\[ \] out**, **\[ \]** **\[ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** **\[ \_ \]** gli attributi del campo sono , **\[ \_ \]** last è , length è , max è , size è e switch type ; l'attributo **\[ puntatore ref \]**, unique o **\[ ptr \]** e l'handle **\[ \_ \]** di contesto degli attributi di utilizzo e string . L'attributo **\[ di utilizzo ignore \]** non può essere usato come attributo di parametro. Separare più attributi con virgole.
 
 </dd> <dt>
 
-*tipo Unione* 
+*union-type* 
 </dt> <dd>
 
-Identifica l'identificatore del tipo di [**Unione**](union.md) .
+Identifica [**l'identificatore del**](union.md) tipo di unione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il discriminante associato all' **\[ opzione \_ è \]** l'attributo deve essere definito allo stesso livello logico dell'Unione:
+La discriminante associata **\[ all'opzione \_ è \]** l'attributo deve essere definito allo stesso livello logico dell'unione:
 
--   Quando l'Unione è un parametro, il discriminante di Unione deve essere un altro parametro.
--   Quando l'Unione è un campo di una struttura, discriminante deve essere un altro campo della stessa struttura.
+-   Quando l'unione è un parametro, l'unione discriminante deve essere un altro parametro.
+-   Quando l'unione è un campo di una struttura, il discriminante deve essere un altro campo della stessa struttura.
 
-La sequenza in una struttura o in un elenco di parametri di funzione non è significativa. L'Unione può precedere o seguire discriminante.
+La sequenza in una struttura o in un elenco di parametri di funzione non è significativa. L'unione può precedere o seguire la discriminante.
 
-L' **\[ opzione \_ è \]** attributo può essere visualizzata come attributo di campo o come attributo di parametro.
+**\[ \_ L'opzione \] è** attribute può essere visualizzata come attributo di campo o come attributo di parametro.
 
 ## <a name="examples"></a>Esempi
 
@@ -160,31 +160,31 @@ typedef struct _WINNER_TYPE
 [**const**](const.md)
 </dt> <dt>
 
-[**handle di contesto \_**](context-handle.md)
+[**handle di \_ contesto**](context-handle.md)
 </dt> <dt>
 
 [Unioni incapsulate](encapsulated-unions.md)
 </dt> <dt>
 
-[**enum**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
-[**il primo \_ è**](first-is.md)
+[**il \_ primo è**](first-is.md)
 </dt> <dt>
 
-[**ignorare**](ignore.md)
+[**Ignorare**](ignore.md)
 </dt> <dt>
 
-[**ultimo \_ è**](last-is.md)
+[**\_l'ultimo è**](last-is.md)
 </dt> <dt>
 
-[**lunghezza \_**](length-is.md)
+[**length \_ è**](length-is.md)
 </dt> <dt>
 
-[**locale**](local.md)
+[**Locale**](local.md)
 </dt> <dt>
 
-[**Max \_ è**](max-is.md)
+[**max \_ è**](max-is.md)
 </dt> <dt>
 
 [Unioni non incapsulate](nonencapsulated-unions.md)
@@ -196,27 +196,27 @@ typedef struct _WINNER_TYPE
 [**ref**](ref.md)
 </dt> <dt>
 
-[**dimensioni \_**](size-is.md)
+[**size \_ è**](size-is.md)
 </dt> <dt>
 
 [**string**](string.md)
 </dt> <dt>
 
-[**struct**](struct.md)
+[**Struct**](struct.md)
 </dt> <dt>
 
-[**tipo di opzione \_**](switch-type.md)
+[**tipo di \_ commutatore**](switch-type.md)
 </dt> <dt>
 
 [**Unione**](union.md)
 </dt> <dt>
 
-[**unico**](unique.md)
+[**Unico**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
 title: Evento InkOverlay.NewInAirPackets (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f39e568941b1af0727ad9c8464913325409b4604
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7198fe2d105421654bfba037049e46a592d603bd94409350e97b794882ab4de2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219169"
 ---
 # <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay.NewInAirPackets
 
@@ -49,7 +49,7 @@ Numero di pacchetti in aria ricevuti.
 *PacketData* \[ in, out\]
 </dt> <dd>
 
-Matrice che contiene i dati selezionati per il pacchetto.
+Matrice contenente i dati selezionati per il pacchetto.
 
 Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
@@ -70,7 +70,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 Per impostare le proprietà contenute in questa matrice, usare la [**proprietà DesiredPacketDescription**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_desiredpacketdescription) dell'oggetto agente di raccolta input penna. La matrice *restituita dal parametro PacketData* contiene i dati per tali proprietà.
 
 > [!Note]  
-> Sebbene sia possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o utilizzate.
+> Anche se è possibile modificare i dati del pacchetto, queste modifiche non vengono rese persistenti o usate.
 
  
 
@@ -80,7 +80,7 @@ Per impostare le proprietà contenute in questa matrice, usare la [**proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

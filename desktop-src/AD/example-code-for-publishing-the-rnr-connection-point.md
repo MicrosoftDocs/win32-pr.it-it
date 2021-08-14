@@ -4,17 +4,17 @@ description: L'esempio di codice seguente viene usato dal servizio Winsock per r
 ms.assetid: dd2c7ac9-76fc-4366-8654-8048e6793a16
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per la pubblicazione del punto di connessione di RnR AD
-- Active Directory per la registrazione e la risoluzione di Windows Sockets, codice di esempio, pubblicazione del punto di connessione RnR
-- Pubblicazione del punto di connessione di RnR AD, codice di esempio
+- Codice di esempio per la pubblicazione del punto di connessione RnR AD
+- Windows Registrazione e risoluzione dei socket ad , codice di esempio, pubblicazione del punto di connessione RnR
+- Pubblicazione del punto di connessione RnR AD , codice di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e8f5337f80f9d05bcd1e9b25a963dadba4da21
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a66581ea20acc42993451a8074e08f8b15f2244d4db1c997da2a978c717aaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693204"
 ---
 # <a name="example-code-for-publishing-the-rnr-connection-point"></a>Codice di esempio per la pubblicazione del punto di connessione RnR
 
@@ -84,9 +84,9 @@ INT serverRegister(SOCKADDR * sa,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

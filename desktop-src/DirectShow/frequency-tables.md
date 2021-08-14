@@ -1,29 +1,29 @@
 ---
-description: Tabelle Frequency
+description: Tabelle di frequenza
 ms.assetid: 58a680ea-1f88-4900-8820-c30a2f3e3901
-title: Tabelle Frequency
+title: Tabelle di frequenza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 933152c7ac38eefe91468aff8bc3a8eb3ced05df
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: db832144aedb8f64d18692a30a8e8c7d812c4cbd517b1b9ab31bd9cdc231019b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104123561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401259"
 ---
-# <a name="frequency-tables"></a>Tabelle Frequency
+# <a name="frequency-tables"></a>Tabelle di frequenza
 
-Il filtro del sintonizzatore TV (kstvtune.ax) include un elenco interno di tabelle di frequenza. Ogni tabella Frequency contiene un elenco di frequenze e corrisponde alle frequenze broadcast o Cable per un determinato paese/area geografica. Un'applicazione viene ottimizzata per una determinata frequenza chiamando il metodo [**IAMTuner::p UT \_ Channel**](/windows/desktop/api/Strmif/nf-strmif-iamtuner-put_channel) con l'indice della frequenza desiderata.
+Il filtro Siner TV (kstvtune.ax) include un elenco interno di tabelle di frequenza. Ogni tabella delle frequenze contiene un elenco di frequenze e corrisponde alle frequenze di trasmissione o cavo per un determinato paese/area geografica. Un'applicazione esegue l'aggiornamento a una determinata frequenza chiamando il metodo [**IAMTuner::p ut \_ Channel**](/windows/desktop/api/Strmif/nf-strmif-iamtuner-put_channel) con l'indice della frequenza desiderata.
 
-Per alcuni paesi o aree geografiche, i numeri di indice delle tabelle di frequenza vengono mappati direttamente ai numeri di canale. Tuttavia, i numeri di canale fissi non sono appropriati per tutti i mercati. Ad esempio, i numeri di canale europei non vengono effettivamente utilizzati dai consumer. Al contrario, gli utenti si aspettano di scegliere e assegnare i propri numeri di canale per le frequenze usate dagli operatori broadcast o Cable nell'area. Per questi paesi/aree geografiche, le applicazioni non devono esporre i numeri di indice direttamente all'utente. Instread, l'applicazione deve tenere un mapping interno tra i numeri di canale (presentati all'utente) e gli indici di frequenza (per l'ottimizzazione).
+Per alcuni paesi/aree geografiche, i numeri di indice delle tabelle di frequenza vengono mappati direttamente ai numeri di canale. I numeri di canale fissi non sono tuttavia appropriati per tutti i mercati. Ad esempio, i numeri di canale europei non vengono effettivamente usati dai consumer. Al contrario, i consumer si aspettano di scegliere e assegnare i propri numeri di canale per le frequenze usate dagli operatori di trasmissione o cavo nella propria area. Per questi paesi/aree geografiche, le applicazioni non devono esporre i numeri di indice direttamente all'utente. Instread, l'applicazione deve mantenere un mapping interno tra i numeri di canale (presentati all'utente) e gli indici di frequenza (per l'ottimizzazione).
 
-La maggior parte degli operatori di cavi non statunitensi è gratuita per la trasmissione in base alle frequenze scelte, spesso combinando frequenze da standard diversi nella stessa linea di canali. Viene quindi usata una tabella con frequenza "Unicable" per qualsiasi paese/area geografica priva di standard Cable Channel standard Authority. Viene inoltre fornito un meccanismo per eseguire l'override delle singole frequenze nelle tabelle di frequenza. Questo meccanismo è descritto nella sezione seguente, [sostituzioni di frequenza](frequency-overrides.md).
+La maggior parte degli operatori di cavi non statunitensi è gratuita per la trasmissione su frequenze di propria scelta, spesso combinando frequenze di standard diversi nella stessa linea di canali. Pertanto, viene usata una tabella di frequenza "Unicable" per qualsiasi paese/area geografica che non dispone di un'autorità standard per gli standard del canale via cavo. Viene inoltre fornito un meccanismo per eseguire l'override delle singole frequenze nelle tabelle delle frequenze. Questo meccanismo è descritto nella sezione seguente, [Sostituzioni frequenza](frequency-overrides.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Ottimizzazione della TV analoga internazionale](international-analog-tv-tuning.md)
+[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

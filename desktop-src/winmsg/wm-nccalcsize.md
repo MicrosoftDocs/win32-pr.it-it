@@ -1,21 +1,21 @@
 ---
-description: Inviato quando è necessario calcolare le dimensioni e la posizione dell'area client di una finestra. Elaborando questo messaggio, un'applicazione può controllare il contenuto dell'area client della finestra quando cambiano le dimensioni o la posizione della finestra.
+description: Inviato quando devono essere calcolate le dimensioni e la posizione dell'area client di una finestra. Elaborando questo messaggio, un'applicazione può controllare il contenuto dell'area client della finestra quando le dimensioni o la posizione della finestra cambiano.
 ms.assetid: d2d5825e-02a5-44b8-8615-55b7259d24ba
-title: Messaggio WM_NCCALCSIZE (winuser. h)
+title: WM_NCCALCSIZE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b7d63fea3ad0a80bba686d8d86aa5354f0bb45b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f0a73b469a920bcba79cc19670a7b9536c1bac9e0b0ffcab7ddf5930b984dae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200077"
 ---
-# <a name="wm_nccalcsize-message"></a>\_Messaggio NCCALCSIZE WM
+# <a name="wm_nccalcsize-message"></a>Messaggio \_ WM NCCALCSIZE
 
-Inviato quando è necessario calcolare le dimensioni e la posizione dell'area client di una finestra. Elaborando questo messaggio, un'applicazione può controllare il contenuto dell'area client della finestra quando cambiano le dimensioni o la posizione della finestra.
+Inviato quando devono essere calcolate le dimensioni e la posizione dell'area client di una finestra. Elaborando questo messaggio, un'applicazione può controllare il contenuto dell'area client della finestra quando le dimensioni o la posizione della finestra cambiano.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,18 +31,18 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Se *wParam* è **true**, specifica che l'applicazione deve indicare quale parte dell'area client contiene informazioni valide. Il sistema copia le informazioni valide nell'area specificata all'interno della nuova area client.
+Se *wParam* è **TRUE,** specifica che l'applicazione deve indicare quale parte dell'area client contiene informazioni valide. Il sistema copia le informazioni valide nell'area specificata all'interno della nuova area client.
 
-Se *wParam* è **false**, non è necessario che l'applicazione indichi la parte valida dell'area client.
+Se *wParam* è **FALSE,** l'applicazione non deve indicare la parte valida dell'area client.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Se *wParam* è **true**, *lParam* punta a una struttura [**NCCALCSIZE \_ params**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) che contiene informazioni che possono essere utilizzate da un'applicazione per calcolare le nuove dimensioni e la posizione del rettangolo client.
+Se *wParam* è **TRUE,** *lParam* punta a una struttura [**NCCALCSIZE \_ PARAMS**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) che contiene informazioni che un'applicazione può usare per calcolare le nuove dimensioni e la nuova posizione del rettangolo client.
 
-Se *wParam* è **false**, *lParam* punta a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Alla voce, la struttura contiene il rettangolo della finestra proposto per la finestra. All'uscita, la struttura deve contenere le coordinate dello schermo dell'area client della finestra corrispondente.
+Se *wParam* è **FALSE,** *lParam* punta a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) All'ingresso, la struttura contiene il rettangolo della finestra proposto per la finestra. All'uscita, la struttura deve contenere le coordinate dello schermo dell'area client della finestra corrispondente.
 
 </dd> </dl>
 
@@ -50,24 +50,24 @@ Se *wParam* è **false**, *lParam* punta a una struttura [**Rect**](/previous-ve
 
 Tipo: **LRESULT**
 
-Se il parametro *wParam* è **false**, l'applicazione deve restituire zero.
+Se il *parametro wParam* è **FALSE,** l'applicazione deve restituire zero.
 
-Se *wParam* è **true**, l'applicazione deve restituire zero o una combinazione dei valori seguenti.
+Se *wParam è* **TRUE,** l'applicazione deve restituire zero o una combinazione dei valori seguenti.
 
-Se *wParam* è **true** e un'applicazione restituisce zero, l'area client precedente viene mantenuta ed è allineata all'angolo superiore sinistro della nuova area client.
+Se *wParam* è **TRUE** e un'applicazione restituisce zero, l'area client precedente viene mantenuta e allineata all'angolo superiore sinistro della nuova area client.
 
 
 
 | Codice/valore restituito                                                                                                                                           | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**WVR \_**</dt> <dt>0x0010</dt> ALIGNTOP </dl>    | Specifica che l'area client della finestra deve essere mantenuta e allineata con la parte superiore della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo superiore sinistro, restituire i \_ valori WVR ALIGNTOP e **WVR \_ ALIGNLEFT** .<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0080</dt> ALIGNRIGHT </dl>  | Specifica che l'area client della finestra deve essere mantenuta e allineata con il lato destro della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo inferiore destro, restituire i valori **WVR \_ ALIGNRIGHT** e WVR \_ ALIGNBOTTOM.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0020</dt> ALIGNLEFT </dl>   | Specifica che l'area client della finestra deve essere mantenuta e allineata con il lato sinistro della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo inferiore sinistro, restituire i valori **WVR \_ ALIGNLEFT** e **WVR \_ ALIGNBOTTOM** .<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0040</dt> ALIGNBOTTOM </dl> | Specifica che l'area client della finestra deve essere mantenuta e allineata con la parte inferiore della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo superiore sinistro, restituire i \_ valori WVR ALIGNTOP e **WVR \_ ALIGNLEFT** .<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0100</dt> HREDRAW </dl>     | Usato in combinazione con qualsiasi altro valore, ad eccezione di **WVR \_ VALIDRECTS**, fa sì che la finestra venga completamente ridisegnato se il rettangolo client cambia in orizzontale. Questo valore è simile allo stile della classe [cs \_ HREDRAW](about-window-classes.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0200</dt> VREDRAW </dl>     | Usato in combinazione con qualsiasi altro valore, ad eccezione di **WVR \_ VALIDRECTS**, fa sì che la finestra venga completamente ridisegnato se il rettangolo client cambia in verticale. Questo valore è simile allo stile della classe [cs \_ VREDRAW](about-window-classes.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <dl> <dt>**WVR \_ Ricreare**</dt> <dt>0x0300</dt> </dl>      | Questo valore causa il ridisegnato dell'intera finestra. Si tratta di una combinazione di valori **WVR \_ HREDRAW** e **WVR \_ VREDRAW** .<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| <dl> <dt>**WVR \_**</dt> <dt>0x0400</dt> VALIDRECTS </dl>  | Questo valore indica che, al ritorno da [**WM \_ NCCALCSIZE**](wm-nccalcsize.md), i rettangoli specificati dai membri **rgrc** \[ 1 \] e **rgrc** \[ 2 \] della struttura [**\_ params di NCCALCSIZE**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) contengono rispettivamente i rettangoli di area di destinazione e di origine validi. Il sistema combina questi rettangoli per calcolare l'area della finestra da mantenere. Il sistema copia qualsiasi parte dell'immagine della finestra che si trova all'interno del rettangolo di origine e ritaglia l'immagine nel rettangolo di destinazione. Entrambi i rettangoli si trovano in coordinate relative al padre o allo schermo. Questo flag non può essere combinato con altri flag. <br/> Questo valore restituito consente a un'applicazione di implementare strategie di conservazione dell'area client più elaborate, ad esempio il centramento o la conservazione di un subset dell'area client.<br/> |
+| <dl> <dt>**WVR \_ ALIGNTOP**</dt> <dt>0x0010</dt> </dl>    | Specifica che l'area client della finestra deve essere mantenuta e allineata con la parte superiore della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo superiore sinistro, restituire i valori WVR ALIGNTOP e \_ **WVR \_ ALIGNLEFT.**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| <dl> <dt>**WVR \_ ALIGNRIGHT**</dt> <dt>0x0080</dt> </dl>  | Specifica che l'area client della finestra deve essere mantenuta e allineata al lato destro della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo inferiore destro, restituire i valori **WVR \_ ALIGNRIGHT** e WVR \_ ALIGNBOTTOM.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| <dl> <dt>**WVR \_ AlignLEFT**</dt> <dt>0x0020</dt> </dl>   | Specifica che l'area client della finestra deve essere mantenuta e allineata al lato sinistro della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo inferiore sinistro, restituire i valori **WVR \_ ALIGNLEFT** e **WVR \_ ALIGNBOTTOM.**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| <dl> <dt>**WVR \_ AlignBOTTOM**</dt> <dt>0x0040</dt> </dl> | Specifica che l'area client della finestra deve essere mantenuta e allineata alla parte inferiore della nuova posizione della finestra. Ad esempio, per allineare l'area client all'angolo superiore sinistro, restituire i valori WVR ALIGNTOP e \_ **WVR \_ ALIGNLEFT.**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <dl> <dt>**WVR \_ Oggetto HREDRAW**</dt> <dt>0x0100</dt> </dl>     | Utilizzato in combinazione con qualsiasi altro valore, ad eccezione di **WVR \_ VALIDRECTS,** fa sì che la finestra venga ridisegnata completamente se le dimensioni del rettangolo client cambiano orizzontalmente. Questo valore è simile allo stile [della classe CS \_ HREDRAW](about-window-classes.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| <dl> <dt>**WVR \_ VREDRAW**</dt> <dt>0x0200</dt> </dl>     | Utilizzato in combinazione con qualsiasi altro valore, ad eccezione di **WVR \_ VALIDRECTS,** fa sì che la finestra venga ridisegnata completamente se le dimensioni del rettangolo del client cambiano verticalmente. Questo valore è simile allo stile [della classe CS \_ VREDRAW](about-window-classes.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <dl> <dt>**WVR \_ RIDISEGNA**</dt> <dt>0x0300</dt> </dl>      | Questo valore determina il ridisegno dell'intera finestra. È una combinazione di **valori WVR \_ HREDRAW** **e WVR \_ VREDRAW.**<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| <dl> <dt>**WVR \_ VALIDRECTS**</dt> <dt>0x0400</dt> </dl>  | Questo valore indica che, al ritorno da [**WM \_ NCCALCSIZE,**](wm-nccalcsize.md)i rettangoli specificati dai membri **rgrc** 1 e \[ \] **rgrc** 2 della struttura \[ \] [**NCCALCSIZE \_ PARAMS**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) contengono rispettivamente rettangoli di destinazione e area di origine validi. Il sistema combina questi rettangoli per calcolare l'area della finestra da mantenere. Il sistema copia qualsiasi parte dell'immagine della finestra all'interno del rettangolo di origine e ritaglia l'immagine nel rettangolo di destinazione. Entrambi i rettangoli sono in coordinate padre-relative o relative dello schermo. Questo flag non può essere combinato con altri flag. <br/> Questo valore restituito consente a un'applicazione di implementare strategie di conservazione dell'area client più elaborate, ad esempio centrare o mantenere un subset dell'area client.<br/> |
 
 
 
@@ -75,11 +75,11 @@ Se *wParam* è **true** e un'applicazione restituisce zero, l'area client preced
 
 ## <a name="remarks"></a>Commenti
 
-La finestra può essere ridisegnata, a seconda che lo stile della classe [cs \_ HREDRAW](about-window-classes.md) o cs \_ VREDRAW sia specificato. Si tratta dell'elaborazione predefinita compatibile con le versioni precedenti di questo messaggio tramite la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) (oltre al normale calcolo del rettangolo client descritto nella tabella precedente).
+La finestra può essere ridisegnata, a seconda che sia specificato lo stile della classe [CS \_ HREDRAW](about-window-classes.md) o CS \_ VREDRAW. Si tratta dell'elaborazione predefinita compatibile con le versioni precedenti di questo messaggio da parte della funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) (oltre al normale calcolo del rettangolo client descritto nella tabella precedente).
 
-Quando *wParam* è **true**, la semplice restituzione di 0 senza elaborare i rettangoli dei [**\_ parametri NCCALCSIZE**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) comporterà il ridimensionamento dell'area client fino alla dimensione della finestra, inclusa la cornice della finestra. Questa operazione eliminerà la cornice della finestra e gli elementi della didascalia dalla finestra, lasciando visualizzata solo l'area client.
+Quando *wParam* è **TRUE,** se si restituisce semplicemente 0 senza elaborare i rettangoli [**NCCALCSIZE \_ PARAMS,**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) l'area client verrà ridimensionata in base alle dimensioni della finestra, inclusa la cornice della finestra. In questo modo gli elementi della cornice e della didascalia della finestra verranno eliminati, lasciando visualizzata solo l'area client.
 
-A partire da Windows Vista, rimuovendo il frame standard semplicemente restituendo 0 quando il valore *wParam* è **true** non influisce sui frame che vengono estesi nell'area client tramite la funzione [**DwmExtendFrameIntoClientArea**](/windows/win32/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) . Solo il frame standard verrà rimosso.
+A partire da Windows Vista, la rimozione del frame standard semplicemente restituisce 0 quando *wParam* è **TRUE** non influisce sui frame estesi nell'area client usando la funzione [**DwmExtendFrameIntoClientArea.**](/windows/win32/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) Verrà rimosso solo il frame standard.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,7 +89,7 @@ A partire da Windows Vista, rimuovendo il frame standard semplicemente restituen
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -103,13 +103,13 @@ A partire da Windows Vista, rimuovendo il frame standard semplicemente restituen
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**MoveWindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
+[**Movewindow**](/windows/win32/api/winuser/nf-winuser-movewindow)
 </dt> <dt>
 
-[**SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos)
+[**Setwindowpos**](/windows/win32/api/winuser/nf-winuser-setwindowpos)
 </dt> <dt>
 
-[**\_parametri NCCALCSIZE**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params)
+[**NCCALCSIZE \_ PARAMS**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params)
 </dt> <dt>
 
 **Informazioni concettuali**
@@ -121,7 +121,7 @@ A partire da Windows Vista, rimuovendo il frame standard semplicemente restituen
 **Altre risorse**
 </dt> <dt>
 
-[**RECT**](/previous-versions//dd162897(v=vs.85))
+[**Rect**](/previous-versions//dd162897(v=vs.85))
 </dt> </dl>
 
  

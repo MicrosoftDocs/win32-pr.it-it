@@ -1,49 +1,49 @@
 ---
-title: Flussi di immagini
-description: Flussi di immagini
+title: Immagine Flussi
+description: Immagine Flussi
 ms.assetid: 17a945aa-463a-4aac-82cc-68b49c720c0a
 keywords:
-- Windows Media Format SDK, flussi di immagini
-- Formati di sistemi avanzati (ASF), flussi di immagini
-- ASF (formato avanzato dei sistemi), flussi di immagini
-- Windows Media Format SDK, flussi
-- Formato di sistemi avanzati (ASF), flussi
-- ASF (formato avanzato dei sistemi), flussi
+- Windows MEDIA Format SDK, flussi di immagini
+- Advanced Systems Format (ASF), flussi di immagini
+- ASF (Advanced Systems Format), flussi di immagini
+- Windows MEDIA Format SDK, flussi
+- Advanced Systems Format (ASF), flussi
+- ASF (Advanced Systems Format), flussi
 - flussi di immagini, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 280d029715a3c722d05ee335a3a88ae4632cabbb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c2067710e6b2be627bd16125d73e567a2f1ba1557ae01b81f55712d8c5a7b8bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702865"
 ---
-# <a name="image-streams"></a>Flussi di immagini
+# <a name="image-streams"></a>Immagine Flussi
 
-Un flusso di immagini è un tipo speciale di flusso che contiene ancora le immagini assegnate ai tempi di presentazione. Un'applicazione può visualizzare le immagini in un flusso di immagini come desiderato, ma l'implementazione tipica consiste nel visualizzare ogni immagine fino a quando non viene recapitata l'immagine successiva, ad esempio una presentazione. In genere, un flusso di immagini è codificato in un file con un flusso audio per produrre una semplice presentazione di immagini sincronizzate con musica o sintesi vocale.
+Un flusso di immagini è un tipo speciale di flusso che contiene immagini fisse assegnate agli orari di presentazione. Un'applicazione può visualizzare le immagini in un flusso di immagini in base alle esigenze, ma l'implementazione tipica è quella di visualizzare ogni immagine fino a quando non viene recapitata l'immagine successiva, ad esempio una presentazione. In genere, un flusso di immagini viene codificato in un file con un flusso audio per produrre una semplice presentazione di immagini sincronizzate con musica o voce.
 
-I flussi di immagini sono simili ai flussi video in quanto vengono creati da campioni non compressi compressi come parte del processo di scrittura di file, ma sono simili anche a flussi arbitrari perché è necessario assegnare una velocità in bit e una finestra del buffer appropriata per il contenuto senza basarsi sulle proprietà assegnate dal codec.
+I flussi di immagini sono simili ai flussi video in quanto vengono creati da esempi non compressi compressi come parte del processo di scrittura di file, ma sono anche simili a flussi arbitrari perché è necessario assegnare una frequenza in bit e una finestra del buffer appropriate al contenuto senza basarsi sulle proprietà assegnate dal codec.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Flussi arbitrari**](arbitrary-streams.md)
+[**Codice Flussi**](arbitrary-streams.md)
 </dt> <dt>
 
-[**Funzionalità file ASF**](asf-file-features.md)
+[**Funzionalità dei file ASF**](asf-file-features.md)
 </dt> <dt>
 
-[**Flussi audio e video**](audio-and-video-streams.md)
+[**Audio e video Flussi**](audio-and-video-streams.md)
 </dt> <dt>
 
-[**Scrittura di flussi di immagini**](writing-image-streams.md)
+[**Scrittura di immagini Flussi**](writing-image-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

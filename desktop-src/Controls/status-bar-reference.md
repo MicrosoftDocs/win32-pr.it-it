@@ -1,19 +1,19 @@
 ---
 title: Barra di stato
-description: Questa sezione contiene informazioni sugli elementi di programmazione usati con i controlli barra di stato.
+description: Questa sezione contiene informazioni sugli elementi di programmazione utilizzati con i controlli barra di stato.
 ms.assetid: 77923055-9d00-4528-bda7-b602a26b577f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca6e46f1c573b75439cc10aa27ae3245e47e3de9
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: a1be3ea518b63118fc80b02b382943c40ba2fd13b15713488b351b5d6cc827e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103731490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696491"
 ---
 # <a name="status-bar"></a>Barra di stato
 
-Questa sezione contiene informazioni sugli elementi di programmazione usati con i controlli barra di stato.
+Questa sezione contiene informazioni sugli elementi di programmazione utilizzati con i controlli barra di stato.
 
 ### <a name="overviews"></a>Cenni preliminari
 
@@ -45,20 +45,20 @@ Questa sezione contiene informazioni sugli elementi di programmazione usati con 
 <tbody>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Commctrl/nf-commctrl-createstatuswindowa"><strong>CreateStatusWindow</strong></a></td>
-<td>Crea una finestra di stato, che in genere viene utilizzata per visualizzare lo stato di un'applicazione. La finestra viene in genere visualizzata nella parte inferiore della finestra padre e contiene il testo specificato.
+<td>Crea una finestra di stato, in genere utilizzata per visualizzare lo stato di un'applicazione. La finestra viene in genere visualizzata nella parte inferiore della finestra padre e contiene il testo specificato.
 <blockquote>
 [!Note]<br />
-questa funzione è obsoleta. In alternativa, usare <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa"><strong>CreateWindow</strong></a> .
+questa funzione è obsoleta. In <a href="/windows/desktop/api/winuser/nf-winuser-createwindowa"><strong>alternativa, usare CreateWindow.</strong></a>
 </blockquote>
 <br/> <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Commctrl/nf-commctrl-drawstatustexta"><strong>DrawStatusText</strong></a></td>
-<td>La funzione <a href="/windows/desktop/api/Commctrl/nf-commctrl-drawstatustexta"><strong>DrawStatusText</strong></a> disegna il testo specificato nello stile di una finestra di stato con bordi.<br/></td>
+<td>La <a href="/windows/desktop/api/Commctrl/nf-commctrl-drawstatustexta"><strong>funzione DrawStatusText</strong></a> disegna il testo specificato nello stile di una finestra di stato con bordi.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Commctrl/nf-commctrl-menuhelp"><strong>MenuHelp</strong></a></td>
-<td>Elabora <a href="/windows/desktop/menurc/wm-menuselect"><strong>WM_MENUSELECT</strong></a> e <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> i messaggi e visualizza il testo della guida sul menu corrente nella finestra di stato specificata.<br/></td>
+<td>Elabora <a href="/windows/desktop/menurc/wm-menuselect"><strong>WM_MENUSELECT</strong></a> e <a href="/windows/desktop/menurc/wm-command"><strong>WM_COMMAND</strong></a> messaggi e visualizza il testo della Guida sul menu corrente nella finestra di stato specificata.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -73,23 +73,23 @@ questa funzione è obsoleta. In alternativa, usare <a href="/windows/desktop/api
 
 | Argomento                                               | Contenuto                                                                                                                                                                                             |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SB \_ GETborders**](sb-getborders.md)             | Recupera le larghezze correnti dei bordi orizzontali e verticali di una finestra di stato. <br/>                                                                                                  |
-| [**SB \_ GETicon**](sb-geticon.md)                   | Recupera l'icona per una parte in una barra di stato. <br/>                                                                                                                                           |
-| [**SB \_ GETparts**](sb-getparts.md)                 | Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera inoltre la coordinata del bordo destro del numero di parti specificato. <br/>                                         |
-| [**SB \_ GETrect**](sb-getrect.md)                   | Recupera il rettangolo di delimitazione di una parte in una finestra di stato. <br/>                                                                                                                           |
-| [**SB \_ GETtext**](sb-gettext.md)                   | Il messaggio [**SB \_ gettext**](sb-gettext.md) Recupera il testo dalla parte specificata di una finestra di stato. <br/>                                                                             |
-| [**\_GETTEXTLENGTH SB**](sb-gettextlength.md)       | Il messaggio [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md) recupera la lunghezza, in caratteri, del testo dalla parte specificata di una finestra di stato. <br/>                                   |
-| [**\_GETTIPTEXT SB**](sb-gettiptext.md)             | Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo stile della [**\_ Descrizione comando SBT**](status-bar-styles.md) per abilitare le descrizioni comandi. <br/>         |
-| [**\_GETUNICODEFORMAT SB**](sb-getunicodeformat.md) | Recupera il flag del formato carattere Unicode per il controllo. <br/>                                                                                                                             |
-| [**\_semplice SB**](sb-issimple.md)                 | Controlla un controllo barra di stato per determinare se è in modalità semplice. <br/>                                                                                                                        |
-| [**\_SETBKCOLOR SB**](sb-setbkcolor.md)             | Imposta il colore di sfondo di una barra di stato. <br/>                                                                                                                                               |
-| [**\_icona SB**](sb-seticon.md)                   | Imposta l'icona di una parte in una barra di stato. <br/>                                                                                                                                                |
-| [**\_SETMINHEIGHT SB**](sb-setminheight.md)         | Imposta l'altezza minima dell'area di disegno di una finestra di stato. <br/>                                                                                                                               |
-| [**sottoparti SB \_**](sb-setparts.md)                 | Imposta il numero di parti in una finestra di stato e la coordinata del bordo destro di ogni parte. <br/>                                                                                           |
-| [**\_testo SB**](sb-settext.md)                   | Il messaggio SB SetText \_ imposta il testo nella parte specificata di una finestra di stato.<br/>                                                                                                           |
-| [**\_SETTIPTEXT SB**](sb-settiptext.md)             | Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo stile [**SBT \_ Tooltips**](status-bar-styles.md) per abilitare le descrizioni comandi.<br/>        |
-| [**\_SETUNICODEFORMAT SB**](sb-setunicodeformat.md) | Imposta il flag di formato carattere Unicode per il controllo. Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover ricreare il controllo. <br/> |
-| [**\_semplice SB**](sb-simple.md)                     | Specifica se una finestra di stato Visualizza testo semplice o Visualizza tutte le parti della finestra impostate da un messaggio precedente della [**\_ parte SB**](sb-setparts.md) . <br/>                                       |
+| [**SB \_ GETBORDERS**](sb-getborders.md)             | Recupera le larghezze correnti dei bordi orizzontale e verticale di una finestra di stato. <br/>                                                                                                  |
+| [**SB \_ GETICON**](sb-geticon.md)                   | Recupera l'icona per una parte in una barra di stato. <br/>                                                                                                                                           |
+| [**SB \_ GETPARTS**](sb-getparts.md)                 | Recupera un conteggio delle parti in una finestra di stato. Il messaggio recupera anche la coordinata del bordo destro del numero specificato di parti. <br/>                                         |
+| [**SB \_ GETRECT**](sb-getrect.md)                   | Recupera il rettangolo di delimitazione di una parte in una finestra di stato. <br/>                                                                                                                           |
+| [**SB \_ GETTEXT**](sb-gettext.md)                   | Il [**messaggio \_ SB GETTEXT**](sb-gettext.md) recupera il testo dalla parte specificata di una finestra di stato. <br/>                                                                             |
+| [**SB \_ GETTEXTLENGTH**](sb-gettextlength.md)       | Il [**messaggio SB \_ GETTEXTLENGTH**](sb-gettextlength.md) recupera la lunghezza, in caratteri, del testo dalla parte specificata di una finestra di stato. <br/>                                   |
+| [**SB \_ GETTIPTEXT**](sb-gettiptext.md)             | Recupera il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere creata con lo stile [**SBT \_ TOOLTIPS**](status-bar-styles.md) per abilitare le descrizioni comando. <br/>         |
+| [**SB \_ GETUNICODEFORMAT**](sb-getunicodeformat.md) | Recupera il flag di formato carattere Unicode per il controllo . <br/>                                                                                                                             |
+| [**SB \_ ISSIMPLE**](sb-issimple.md)                 | Controlla un controllo barra di stato per determinare se è in modalità semplice. <br/>                                                                                                                        |
+| [**SB \_ SETBKCOLOR**](sb-setbkcolor.md)             | Imposta il colore di sfondo in una barra di stato. <br/>                                                                                                                                               |
+| [**SB \_ SETICON**](sb-seticon.md)                   | Imposta l'icona per una parte in una barra di stato. <br/>                                                                                                                                                |
+| [**SB \_ SETMINHEIGHT**](sb-setminheight.md)         | Imposta l'altezza minima dell'area di disegno di una finestra di stato. <br/>                                                                                                                               |
+| [**SB \_ SETPARTS**](sb-setparts.md)                 | Imposta il numero di parti in una finestra di stato e la coordinata del bordo destro di ogni parte. <br/>                                                                                           |
+| [**SB \_ SETTEXT**](sb-settext.md)                   | Il messaggio SETTEXT SB \_ imposta il testo nella parte specificata di una finestra di stato.<br/>                                                                                                           |
+| [**SB \_ SETTIPTEXT**](sb-settiptext.md)             | Imposta il testo della descrizione comando per una parte in una barra di stato. La barra di stato deve essere stata creata con lo [**stile SBT \_ TOOLTIPS**](status-bar-styles.md) per abilitare le descrizioni comando.<br/>        |
+| [**SB \_ SETUNICODEFORMAT**](sb-setunicodeformat.md) | Imposta il flag di formato carattere Unicode per il controllo . Questo messaggio consente di modificare il set di caratteri utilizzato dal controllo in fase di esecuzione anziché dover creare nuovamente il controllo. <br/> |
+| [**SB \_ SIMPLE**](sb-simple.md)                     | Specifica se una finestra di stato visualizza testo semplice o tutte le parti della finestra impostate da un messaggio [**\_ SETPARTS SB**](sb-setparts.md) precedente. <br/>                                       |
 
 
 
@@ -101,11 +101,11 @@ questa funzione è obsoleta. In alternativa, usare <a href="/windows/desktop/api
 
 | Argomento                                                 | Contenuto                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [\_Clic su Nm (barra di stato)](nm-click-status-bar.md)     | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto clic con il pulsante sinistro del mouse all'interno del controllo. [Nm \_ FARE clic su (barra di stato)](nm-click-status-bar.md) viene inviato sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) .<br/>              |
-| [NM \_ DBLCLK (barra di stato)](nm-dblclk-status-bar.md)   | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto doppio clic con il pulsante sinistro del mouse all'interno del controllo. Questa notifica viene inviata sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) .<br/>                                       |
-| [NM \_ RCLICK (barra di stato)](nm-rclick-status-bar.md)   | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto clic con il pulsante destro del mouse all'interno del controllo. Questa notifica viene inviata sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) .<br/>                                             |
-| [NM \_ RDBLCLK (barra di stato)](nm-rdblclk-status-bar.md) | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto doppio clic con il pulsante destro del mouse all'interno del controllo. [Nm \_ RDBLCLK (barra di stato)](nm-rdblclk-status-bar.md) viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .<br/> |
-| [\_SIMPLEMODECHANGE SBN](sbn-simplemodechange.md)     | Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un messaggio [**\_ semplice SB**](sb-simple.md) . Questa notifica viene inviata sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) . <br/>                                                        |
+| [NM \_ CLICK (barra di stato)](nm-click-status-bar.md)     | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto clic con il pulsante sinistro del mouse all'interno del controllo. [NM \_ CLICK (barra di stato)](nm-click-status-bar.md) viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)<br/>              |
+| [NM \_ DBLCLK (barra di stato)](nm-dblclk-status-bar.md)   | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto doppio clic sul pulsante sinistro del mouse all'interno del controllo. Questa notifica viene inviata sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)<br/>                                       |
+| [NM \_ RCLICK (barra di stato)](nm-rclick-status-bar.md)   | Notifica alla finestra padre di un controllo barra di stato che l'utente ha fatto clic con il pulsante destro del mouse all'interno del controllo. Questa notifica viene inviata sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)<br/>                                             |
+| [NM \_ RDBLCLK (barra di stato)](nm-rdblclk-status-bar.md) | Notifica alle finestre padre di un controllo barra di stato che l'utente ha fatto doppio clic sul pulsante destro del mouse all'interno del controllo. [NM \_ RDBLCLK (barra di stato)](nm-rdblclk-status-bar.md) viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)<br/> |
+| [SBN \_ SIMPLEMODECHANGE](sbn-simplemodechange.md)     | Inviato da un controllo barra di stato quando la modalità semplice cambia a causa di un [**messaggio SB \_**](sb-simple.md) SIMPLE. Questa notifica viene inviata sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md) <br/>                                                        |
 
 
 
@@ -117,7 +117,7 @@ questa funzione è obsoleta. In alternativa, usare <a href="/windows/desktop/api
 
 | Argomento                                      | Contenuto                                                                                                              |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Stili della barra di stato](status-bar-styles.md) | Questa sezione elenca gli stili, oltre agli stili standard della finestra, supportati dai controlli *barra di stato* . <br/> |
+| [Stili della barra di stato](status-bar-styles.md) | Questa sezione elenca gli stili, oltre agli stili di finestra standard, supportati dai controlli *barra di* stato. <br/> |
 
 
 

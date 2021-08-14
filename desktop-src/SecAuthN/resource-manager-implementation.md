@@ -1,21 +1,21 @@
 ---
-description: Resource Manager viene eseguito come servizio attendibile in un singolo processo. Tutte le richieste per l'accesso tramite smart card vengono effettuate al gestore di risorse, che le instrada al lettore che contiene la scheda di destinazione.
+description: Gestione risorse viene eseguito come servizio attendibile in un unico processo. Tutte le richieste smart card'accesso vengono effettuate al gestore di risorse, che le indirizza al lettore che contiene la scheda di destinazione.
 ms.assetid: 4a62588a-14d9-43dc-9572-25a9cbcd0efd
-title: Implementazione di Gestione risorse
+title: Resource Manager implementazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ec653f999b74bb9851893b11e1fa49120a7bd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d0dfd21ed7da466f84e867a6d28b0e826fc5c4733f24d2f5e1f0562f1b4156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919150"
 ---
-# <a name="resource-manager-implementation"></a>Implementazione di Gestione risorse
+# <a name="resource-manager-implementation"></a>Resource Manager implementazione
 
-[*Resource Manager*](../secgloss/r-gly.md) viene eseguito come servizio attendibile in un singolo processo. Tutte le richieste per l'accesso tramite [*Smart Card*](../secgloss/s-gly.md) vengono effettuate al gestore di risorse, che le instrada al [*lettore*](../secgloss/r-gly.md) che contiene la scheda di destinazione.
+Gestione [*risorse viene*](../secgloss/r-gly.md) eseguito come servizio attendibile in un unico processo. Tutte le richieste [*smart card'accesso*](../secgloss/s-gly.md) vengono effettuate al gestore di risorse, che le indirizza al [*lettore*](../secgloss/r-gly.md) che contiene la scheda di destinazione.
 
-Le smart card vengono spesso utilizzate in combinazione con sicurezza e privacy personali. Laddove possibile, Resource Manager usa i meccanismi di sicurezza esistenti all'interno del sistema operativo sottostante durante l'accesso a un lettore o a una smart card.
+Le smart card vengono spesso usate insieme alla sicurezza e alla privacy personale. Laddove possibile, resource manager usa i meccanismi di sicurezza esistenti nel sistema operativo sottostante quando accede a un lettore o a un smart card.
 
  
 

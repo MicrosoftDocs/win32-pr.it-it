@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: e44cd774-1d16-4faa-b5ca-fcaf2740cdca
-ms.openlocfilehash: 1627bb134066821444788ca44a3527278a02f4c7
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 203ee36994ca3a622d564f637598f4ef22b8494200e5d57faa1d47cb290fd49b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220337"
 ---
 # <a name="ishellfolderviewtypeenumviews-method"></a>Metodo IShellFolderViewType::EnumViews
 
@@ -45,7 +45,7 @@ HRESULT EnumViews(
 
 Tipo: **ULONG**
 
-Flag che indicano gli elementi da includere nell'enumerazione . Per un elenco dei valori possibili, vedere il [**tipo enumerato SHCONTF.**](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf) Questo parametro può essere ignorato.
+Flag che indicano quali elementi includere nell'enumerazione. Per un elenco dei valori possibili, vedere il [**tipo enumerato SHCONTF.**](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf) Questo parametro può essere ignorato.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 ## <a name="remarks"></a>Commenti
 
-Le visualizzazioni vengono rappresentate all'utente come cartelle nascoste dalla directory radice (rappresentate da PIDL). Se appropriato, la visualizzazione predefinita (all'di fuori della cartella radice) viene rappresentata come **NULL** o come PIDL vuoto.
+Le visualizzazioni sono rappresentate dall'utente come cartelle nascoste dalla directory radice (rappresentate da PID). Quando appropriato, la visualizzazione predefinita (all'di fuori della cartella radice) viene rappresentata come **NULL** o come PIDL vuoto.
 
 ## <a name="requirements"></a>Requisiti
 

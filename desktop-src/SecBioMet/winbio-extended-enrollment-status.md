@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EXTENDED_ENROLLMENT_STATUS ( \_ tipi WINBIO. h)
+title: WINBIO_EXTENDED_ENROLLMENT_STATUS struttura (Winbio \_ types.h)
 description: Contiene informazioni aggiuntive sullo stato di una registrazione in corso.
 ms.assetid: 2FDDF4D3-6A3E-4DF5-ACA4-423F893C6F2B
 keywords:
-- Struttura di WINBIO_EXTENDED_ENROLLMENT_STATUS Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EXTENDED_ENROLLMENT_STATUS
+- WINBIO_EXTENDED_ENROLLMENT_STATUS struttura Windows'API Biometric Framework
+- PWINBIO_EXTENDED_ENROLLMENT_STATUS puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 937e56e438feadc646329c673af4454cb39eaddd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16ab3736e3ad5b0bcf10bed1fb606d3e6283715a6b10c44dcb4923920597d5e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910446"
 ---
-# <a name="winbio_extended_enrollment_status-structure"></a>WINBIO \_ \_ \_ struttura dello stato di registrazione estesa
+# <a name="winbio_extended_enrollment_status-structure"></a>Struttura DELLO STATO \_ DI \_ REGISTRAZIONE ESTESA \_ WINBIO
 
 Contiene informazioni aggiuntive sullo stato di una registrazione in corso.
 
@@ -73,16 +73,16 @@ typedef struct _WINBIO_EXTENDED_ENROLLMENT_STATUS {
 **TemplateStatus**
 </dt> <dd>
 
-Stato della raccolta di esempi per il modello di registrazione. Per questo membro sono possibili i valori seguenti.
+Stato della raccolta di esempio per il modello di registrazione. Per questo membro sono possibili i valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                  | Significato                                                        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**\_OK**</dt> </dl>                                                                     | La registrazione è pronta per essere salvata.<br/>                |
-| <span id="WINBIO_E_INVALID_OPERATION"></span><span id="winbio_e_invalid_operation"></span><dl> <dt>**\_operazione WINBIO E \_ non valida \_**</dt> </dl> | Nessuna registrazione in corso.<br/>                       |
-| <span id="WINBIO_I_MORE_DATA"></span><span id="winbio_i_more_data"></span><dl> <dt>**WINBIO \_ \_ più \_ dati**</dt> </dl>                         | Per completare il modello sono necessari altri esempi.<br/> |
-| <span id="WINBIO_E_BAD_CAPTURE"></span><span id="winbio_e_bad_capture"></span><dl> <dt>**WINBIO \_ E \_ acquisizione non valida \_**</dt> </dl>                   | L'esempio più recente non è utilizzabile.<br/>               |
+| <span id="S_OK"></span><span id="s_ok"></span><dl> <dt>**S \_ OK**</dt> </dl>                                                                     | La registrazione è pronta per essere salvata.<br/>                |
+| <span id="WINBIO_E_INVALID_OPERATION"></span><span id="winbio_e_invalid_operation"></span><dl> <dt>**OPERAZIONE WINBIO \_ E \_ NON \_ VALIDA**</dt> </dl> | Nessuna registrazione in corso.<br/>                       |
+| <span id="WINBIO_I_MORE_DATA"></span><span id="winbio_i_more_data"></span><dl> <dt>**ALTRI DATI DI WINBIO \_ I \_ \_**</dt> </dl>                         | Per completare il modello sono necessari altri esempi.<br/> |
+| <span id="WINBIO_E_BAD_CAPTURE"></span><span id="winbio_e_bad_capture"></span><dl> <dt>**WINBIO \_ E \_ BAD \_ CAPTURE**</dt> </dl>                   | L'esempio più recente non è utilizzabile.<br/>               |
 
 
 
@@ -93,28 +93,28 @@ Stato della raccolta di esempi per il modello di registrazione. Per questo membr
 **RejectDetail**
 </dt> <dd>
 
-Il motivo per cui l'esempio più recente è inutilizzabile, se il valore del membro **TemplateStatus** è **WINBIO \_ E \_ Bad \_ Capture**.
+Il motivo per cui l'esempio più recente è inutilizzabile, se il valore del membro **TemplateStatus** è **WINBIO \_ E BAD \_ \_ CAPTURE**.
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd>
 
-Stima migliore dall'adattatore del motore per la percentuale del modello completo, come valore compreso tra 0 e 100.
+Stima migliore dell'adattatore motore per la percentuale di completamento del modello, come valore compreso tra 0 e 100.
 
 </dd> <dt>
 
 **Fattore**
 </dt> <dd>
 
-Tipo di unità biometrica per la quale questa struttura contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore. Se, ad esempio, il valore del membro **Factor** è **WINBIO \_ , \_** la struttura di [**\_ informazioni del \_ motore \_ esteso WINBIO**](winbio-extended-engine-info.md) si applica a un lettore di impronte digitali e contiene le informazioni rilevanti nella struttura **specifico. Fingerprint** .
+Tipo di unità biometrica per cui questa struttura contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore. Ad esempio, se il valore del membro **Factor** è **WINBIO \_ TYPE \_ FINGERPRINT,** la struttura [**WINBIO \_ EXTENDED ENGINE \_ \_ INFO**](winbio-extended-engine-info.md) si applica a un lettore di impronta digitale e contiene le informazioni rilevanti nella **struttura Specifc.Fingerprint.**
 
 </dd> <dt>
 
-**Sottofattore**
+**Sottofactoring**
 </dt> <dd>
 
-Valore **del \_ \_ SOTTOtipo biometrico WINBIO** che fornisce informazioni aggiuntive sulla registrazione.
+Valore **\_ \_ SUBTYPE BIOMETRICO WINBIO** che fornisce informazioni aggiuntive sulla registrazione.
 
 </dd> <dt>
 
@@ -135,21 +135,21 @@ Riservato. Deve essere zero.
 **FacialFeatures**
 </dt> <dd>
 
-Informazioni sullo stato di una registrazione in corso per le funzionalità facciali.
+Informazioni sullo stato di una registrazione in corso per le caratteristiche facciali.
 
 <dl> <dt>
 
-**BoundingBox**
+**Boundingbox**
 </dt> <dd>
 
-Posizione all'interno del frame della fotocamera della faccia del singolo oggetto da registrare, in pixel. La dimensione del fotogramma della fotocamera determina il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà \_ WINBIO \_ Extended \_ Sensor \_ info** per determinare la dimensione del fotogramma della fotocamera. Un client che utilizza il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al frame della fotocamera.
+Posizione all'interno del fotogramma della fotocamera del viso dell'utente da registrare, in pixel. Le dimensioni del fotogramma della fotocamera determinano il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà WINBIO \_ PROPERTY EXTENDED SENSOR \_ \_ \_ INFO** per determinare le dimensioni del fotogramma della fotocamera. Un client che usa il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al fotogramma della fotocamera.
 
 </dd> <dt>
 
 **Distanza**
 </dt> <dd>
 
-Distanza tra la posizione effettiva della faccia e la distanza focale ideale per la superficie. Questo valore è compreso tra-100 e 100. 0 indica la distanza ideale, i valori positivi indicano che la posizione effettiva della faccia è troppo distante e i valori negativi indicano che la posizione effettiva è troppo vicina.
+Distanza tra la posizione effettiva del viso e la distanza focale ideale per il viso. Questo valore è compreso tra -100 e 100. 0 indica la distanza ideale, i valori positivi indicano che la posizione effettiva del viso è troppo lontana e i valori negativi indicano che la posizione effettiva è troppo vicina.
 
 </dd> </dl> </dd> <dt>
 
@@ -170,81 +170,81 @@ Numero totale di campioni necessari per creare un nuovo modello di impronta digi
 **Center**
 </dt> <dd>
 
-Il numero di campioni per il centro dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di esempi per il centro dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **TopEdge**
 </dt> <dd>
 
-Il numero di campioni per il bordo superiore dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di esempi per il bordo superiore dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **BottomEdge**
 </dt> <dd>
 
-Il numero di campioni per il bordo inferiore dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di esempi per il bordo inferiore dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **LeftEdge**
 </dt> <dd>
 
-Il numero di campioni per il bordo sinistro dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di esempi per il bordo sinistro dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **RightEdge**
 </dt> <dd>
 
-Il numero di campioni per il bordo destro dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di esempi per il bordo destro dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
 
 </dd> </dl> </dd> <dt>
 
 **Iris**
 </dt> <dd>
 
-Informazioni sullo stato di una registrazione in corso per i modelli Iris.
+Informazioni sullo stato di una registrazione in corso per i modelli iris.
 
 <dl> <dt>
 
 **EyeBoundingBox \_ 1**
 </dt> <dd>
 
-Posizione all'interno del frame della fotocamera di uno degli Iris del singolo oggetto da registrare, in pixel. Se il sistema di riconoscimento Iris sta monitorando solo un occhio, questa posizione è l'iride di quell'occhio. Se il sistema di riconoscimento Iris monitora entrambi gli occhi, ma solo un occhio si trova nel fotogramma della fotocamera, questa posizione è l'iride dell'occhio nel frame della fotocamera. Se il sistema di riconoscimento Iris monitora entrambi gli occhi ed entrambi gli occhi si trovano nel frame della fotocamera, questa posizione è probabilmente l'iride dell'occhio destro del singolo utente.
+Posizione all'interno del fotogramma della fotocamera di una delle iris dell'utente da registrare, in pixel. Se il sistema di riconoscimento dell'iris monitora solo un occhio, questa posizione è dell'iris di quell'occhio. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi, ma nel frame della fotocamera è presente un solo occhio, questa posizione è dell'iris dell'occhio nel fotogramma della fotocamera. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi ed entrambi gli occhi sono nel frame della fotocamera, questa posizione è probabilmente dell'iris dell'occhio destro dell'individuo.
 
-La dimensione del fotogramma della fotocamera determina il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà \_ WINBIO \_ Extended \_ Sensor \_ info** per determinare la dimensione del fotogramma della fotocamera. Un client che utilizza il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al frame della fotocamera.
+Le dimensioni del fotogramma della fotocamera determinano il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà WINBIO \_ PROPERTY EXTENDED SENSOR \_ \_ \_ INFO** per determinare le dimensioni del fotogramma della fotocamera. Un client che usa il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al fotogramma della fotocamera.
 
 </dd> <dt>
 
 **EyeBoundingBox \_ 2**
 </dt> <dd>
 
-Posizione all'interno del frame della fotocamera di uno degli Iris del singolo oggetto da registrare, in pixel. Se il sistema di riconoscimento Iris sta monitorando solo un occhio o se solo un occhio è nel frame della fotocamera, questo valore è vuoto. Se il sistema di riconoscimento Iris monitora entrambi gli occhi ed entrambi gli occhi si trovano nel fotogramma della fotocamera, questa posizione è probabilmente di Iris dell'occhio sinistro del singolo utente.
+Posizione all'interno del fotogramma della fotocamera di una delle iris dell'utente da registrare, in pixel. Se il sistema di riconoscimento dell'iris monitora solo un occhio o se nel fotogramma della fotocamera è presente un solo occhio, questo valore è vuoto. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi ed entrambi gli occhi sono nel frame della fotocamera, questa posizione è probabilmente dell'iris dell'occhio sinistro dell'individuo.
 
-La dimensione del fotogramma della fotocamera determina il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà \_ WINBIO \_ Extended \_ Sensor \_ info** per determinare la dimensione del fotogramma della fotocamera. Un client che utilizza il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al frame della fotocamera.
-
-</dd> <dt>
-
-**PupilCenter \_ 1**
-</dt> <dd>
-
-Posizione del centro di uno degli alunni del singolo oggetto da registrare. Se il sistema di riconoscimento Iris sta monitorando solo un occhio, questa posizione è al centro della pupilla di quell'occhio. Se il sistema di riconoscimento Iris monitora entrambi gli occhi, ma solo un occhio si trova nel fotogramma della fotocamera, questa posizione è al centro della pupilla dell'occhio nel frame della fotocamera. Se il sistema di riconoscimento Iris monitora entrambi gli occhi ed entrambi gli occhi si trovano nel fotogramma della fotocamera, questa posizione è probabilmente al centro della pupilla dell'occhio destro della persona.
+Le dimensioni del fotogramma della fotocamera determinano il limite superiore per il numero di pixel per questa posizione. Ottenere la **proprietà WINBIO \_ PROPERTY EXTENDED SENSOR \_ \_ \_ INFO** per determinare le dimensioni del fotogramma della fotocamera. Un client che usa il monitoraggio della presenza deve eseguire l'operazione di ridimensionamento per eseguire il mapping della posizione al fotogramma della fotocamera.
 
 </dd> <dt>
 
-**PupilCenter \_ 2**
+**\_Epicentro 1**
 </dt> <dd>
 
-Posizione del centro di uno degli alunni del singolo oggetto da registrare. Se il sistema di riconoscimento Iris sta monitorando solo un occhio o se solo un occhio è nel frame della fotocamera, questo valore è vuoto. Se il sistema di riconoscimento Iris monitora entrambi gli occhi ed entrambi gli occhi si trovano nel fotogramma della fotocamera, questa posizione è probabilmente al centro della pupilla dell'occhio sinistro del singolo utente.
+Posizione del centro di uno degli studenti della persona da registrare. Se il sistema di riconoscimento dell'iris monitora solo un occhio, questa posizione è al centro dell'area dell'occhio. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi, ma nella cornice della fotocamera è presente un solo occhio, questa posizione è del centro dell'oculare nel fotogramma della fotocamera. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi ed entrambi gli occhi sono nel frame della fotocamera, questa posizione è probabilmente del centro dell'occhio destro dell'individuo.
+
+</dd> <dt>
+
+**\_Epicentro 2**
+</dt> <dd>
+
+Posizione del centro di uno degli studenti della persona da registrare. Se il sistema di riconoscimento dell'iris monitora solo un occhio o se nel fotogramma della fotocamera è presente un solo occhio, questo valore è vuoto. Se il sistema di riconoscimento dell'iris monitora entrambi gli occhi e entrambi gli occhi sono nel frame della fotocamera, questa posizione è probabilmente del centro dell'occhio sinistro dell'individuo.
 
 </dd> <dt>
 
 **Distanza**
 </dt> <dd>
 
-Distanza tra la posizione effettiva dell'iride e la distanza focale ideale per l'Iris. Questo valore è compreso tra-100 e 100. 0 indica la distanza ideale, i valori positivi indicano che la posizione effettiva dell'Iris è troppo distante e i valori negativi indicano che la posizione effettiva è troppo vicina.
+Distanza tra la posizione effettiva dell'iris e la distanza focale ideale per l'iris. Questo valore è compreso tra -100 e 100. 0 indica la distanza ideale, i valori positivi indicano che la posizione effettiva dell'iris è troppo lontana e i valori negativi indicano che la posizione effettiva è troppo vicina.
 
 </dd> </dl> </dd> <dt>
 
@@ -268,9 +268,9 @@ Riservato.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ types. h (includere WinBio. h per le applicazioni client o WinBio \_ Adapters. h per gli adapter)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (includere Winbio.h per le applicazioni client o Winbio \_ adapters.h per gli adapter)</dt> </dl> |
 
 
 

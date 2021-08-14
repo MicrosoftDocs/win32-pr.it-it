@@ -1,19 +1,19 @@
 ---
-description: CNG consente di crittografare i dati usando un numero minimo di chiamate di funzione e consente di eseguire tutte le operazioni di gestione della memoria.
+description: CNG consente di crittografare i dati usando un numero minimo di chiamate di funzione e consente di eseguire tutta la gestione della memoria.
 ms.assetid: 40622282-e190-40d0-80d4-cab9eddc2091
 title: Crittografia dei dati con CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8f161cd23ec6863bee7f5ffd5b696fa99880e3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b264518c2a0ccfe0f626c869ba3062c0429941234ca0c286f9e7801961485b74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907739"
 ---
 # <a name="encrypting-data-with-cng"></a>Crittografia dei dati con CNG
 
-L'uso principale di qualsiasi API di crittografia consiste nel crittografare e decrittografare i dati. CNG consente di crittografare i dati usando un numero minimo di chiamate di funzione e consente di eseguire tutte le operazioni di gestione della memoria. Sebbene molti dei dettagli di implementazione del protocollo vengano lasciati all'utente, CNG fornisce le primitive che eseguono le attività effettive di crittografia e decrittografia dei dati.
+L'uso principale di qualsiasi API di crittografia è la crittografia e la decrittografia dei dati. CNG consente di crittografare i dati usando un numero minimo di chiamate di funzione e consente di eseguire tutta la gestione della memoria. Anche se molti dei dettagli di implementazione del protocollo vengono lasciati all'utente, CNG fornisce le primitive che eseguono le attività effettive di crittografia e decrittografia dei dati.
 
 -   [Crittografia dei dati](#encrypting-data-with-cng)
 -   [Esempio di crittografia dei dati](#encrypting-data-example)
@@ -23,30 +23,30 @@ L'uso principale di qualsiasi API di crittografia consiste nel crittografare e d
 
 Per crittografare i dati, seguire questa procedura:
 
-1.  Aprire un provider di algoritmi che supporta la crittografia, ad esempio **BCRYPT \_ des \_ Algorithm**.
-2.  Creare una chiave con cui crittografare i dati. È possibile creare una chiave utilizzando una delle funzioni seguenti:
-    -   [**BCryptGenerateKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratekeypair) o [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) per provider asimmetrici.
-    -   [**BCryptGenerateSymmetricKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratesymmetrickey) o [**BCryptImportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkey) per i provider simmetrici.
+1.  Aprire un provider di algoritmi che supporta la crittografia, ad esempio **BCRYPT \_ DES \_ ALGORITHM.**
+2.  Creare una chiave con cui crittografare i dati. È possibile creare una chiave usando una delle funzioni seguenti:
+    -   [**BCryptGenerateKeyPair o**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratekeypair) [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) per i provider asimmetrici.
+    -   [**BCryptGenerateSymmetricKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratesymmetrickey) o [**BCryptImportKey per**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkey) i provider simmetrici.
 
     > [!Note]  
-    > La crittografia e la decrittografia dei dati con una chiave asimmetrica sono a elevato utilizzo di calcolo rispetto alla crittografia della chiave simmetrica. Se è necessario crittografare i dati con una chiave asimmetrica, è necessario crittografare i dati con una chiave simmetrica, crittografare la chiave simmetrica con una chiave asimmetrica e includere la chiave simmetrica crittografata con il messaggio. Il destinatario può quindi decrittografare la chiave simmetrica e utilizzare la chiave simmetrica per decrittografare i dati.
+    > La crittografia e la decrittografia dei dati con una chiave asimmetrica sono a elevato utilizzo di calcolo rispetto alla crittografia a chiave simmetrica. Se è necessario crittografare i dati con una chiave asimmetrica, è necessario crittografare i dati con una chiave simmetrica, crittografare la chiave simmetrica con una chiave asimmetrica e includere la chiave simmetrica crittografata con il messaggio. Il destinatario può quindi decrittografare la chiave simmetrica e utilizzare la chiave simmetrica per decrittografare i dati.
 
      
 
-3.  Ottenere le dimensioni dei dati crittografati. Si basa sull'algoritmo di crittografia, sullo schema di riempimento (se presente) e sulle dimensioni dei dati da crittografare. È possibile ottenere le dimensioni dei dati crittografati tramite la funzione [**BCryptEncrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) , passando **null** per il parametro *pbOutput* . Tutti gli altri parametri devono essere uguali a quelli di quando i dati sono effettivamente crittografati, ad eccezione del parametro *pbInput* , che non viene usato in questo caso.
+3.  Ottenere le dimensioni dei dati crittografati. Si basa sull'algoritmo di crittografia, sullo schema di riempimento (se presente) e sulle dimensioni dei dati da crittografare. È possibile ottenere le dimensioni dei dati crittografati usando la [**funzione BCryptEncrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) passando **NULL** per *il parametro pbOutput.* Tutti gli altri parametri devono essere uguali a quando i dati vengono effettivamente crittografati, ad eccezione del parametro *pbInput,* che in questo caso non viene usato.
 4.  È possibile crittografare i dati sul posto con lo stesso buffer o crittografare i dati in un buffer separato.
 
-    Se si desidera crittografare i dati sul posto, passare il puntatore del buffer di testo non crittografato per i parametri *pbInput* e *PbOutput* nella funzione [**BCryptEncrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) . È possibile che le dimensioni dei dati crittografati siano maggiori delle dimensioni dei dati non crittografati, pertanto il buffer di testo normale deve essere sufficientemente grande da contenere i dati crittografati, non solo il testo normale. È possibile utilizzare le dimensioni ottenute nel passaggio 3 per allocare il buffer di testo non crittografato.
+    Per crittografare i dati sul posto, passare il puntatore del buffer di testo non crittografato per entrambi i parametri *pbInput* *e pbOutput* nella [**funzione BCryptEncrypt.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) È possibile che le dimensioni dei dati crittografati siano maggiori delle dimensioni dei dati non crittografati, quindi il buffer di testo non crittografato deve essere sufficientemente grande da contenere i dati crittografati, non solo il testo non crittografato. È possibile usare le dimensioni ottenute nel passaggio 3 per allocare il buffer di testo non crittografato.
 
-    Se si desidera crittografare i dati in un buffer separato, allocare un buffer di memoria per i dati crittografati utilizzando le dimensioni ottenute nel passaggio 3.
+    Se si desidera crittografare i dati in un buffer separato, allocare un buffer di memoria per i dati crittografati usando le dimensioni ottenute nel passaggio 3.
 
-5.  Chiamare la funzione [**BCryptEncrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) per crittografare i dati. Questa funzione scriverà i dati crittografati nel percorso specificato nel parametro *pbOutput* .
-6.  Salva i dati crittografati in base alle esigenze.
+5.  Chiamare la [**funzione BCryptEncrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptencrypt) per crittografare i dati. Questa funzione scriverà i dati crittografati nella posizione specificata nel *parametro pbOutput.*
+6.  Rendere persistenti i dati crittografati in base alle esigenze.
 7.  Ripetere i passaggi 5 e 6 fino a quando tutti i dati non sono stati crittografati.
 
 ## <a name="encrypting-data-example"></a>Esempio di crittografia dei dati
 
-Nell'esempio seguente viene illustrato come crittografare i dati con CNG utilizzando l'algoritmo di crittografia simmetrica Advanced Encryption Standard.
+Nell'esempio seguente viene illustrato come crittografare i dati con CNG usando l'algoritmo di crittografia simmetrica standard di crittografia avanzata.
 
 
 ```C++
@@ -445,19 +445,19 @@ Cleanup:
 
 Per decrittografare i dati, seguire questa procedura:
 
-1.  Aprire un provider di algoritmi che supporta la crittografia, ad esempio **BCRYPT \_ des \_ Algorithm**.
-2.  Ottenere la chiave con cui sono stati crittografati i dati e utilizzare tale chiave per ottenere un handle per la chiave.
-3.  Ottenere le dimensioni dei dati decrittografati. Si basa sull'algoritmo di crittografia, sullo schema di riempimento (se presente) e sulle dimensioni dei dati da decrittografare. È possibile ottenere le dimensioni dei dati crittografati tramite la funzione [**BCryptDecrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) , passando **null** per il parametro *pbOutput* . I parametri che specificano lo schema di riempimento e il [*vettore di inizializzazione*](/windows/desktop/SecGloss/i-gly) (IV) devono essere uguali a quelli della crittografia dei dati, ad eccezione del parametro *pbInput* , che non viene usato in questo caso.
+1.  Aprire un provider di algoritmi che supporta la crittografia, ad esempio **BCRYPT \_ DES \_ ALGORITHM.**
+2.  Ottenere la chiave con cui sono stati crittografati i dati e usarla per ottenere un handle per la chiave.
+3.  Ottenere le dimensioni dei dati decrittografati. Si basa sull'algoritmo di crittografia, sullo schema di riempimento (se presente) e sulle dimensioni dei dati da decrittografare. È possibile ottenere le dimensioni dei dati crittografati usando la [**funzione BCryptDecrypt,**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) passando **NULL** per *il parametro pbOutput.* I parametri che specificano [](/windows/desktop/SecGloss/i-gly) lo schema di riempimento e il vettore di inizializzazione (IV) devono essere gli stessi di quando i dati sono stati crittografati, ad eccezione del *parametro pbInput,* che in questo caso non viene usato.
 4.  Allocare un buffer di memoria per i dati decrittografati.
 5.  È possibile decrittografare i dati sul posto usando lo stesso buffer o decrittografare i dati in un buffer separato.
 
-    Per decrittografare i dati sul posto, passare il puntatore del buffer del testo crittografato per i parametri *pbInput* e *PbOutput* nella funzione [**BCryptDecrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) .
+    Per decrittografare i dati sul posto, passare il puntatore del buffer del testo crittografato per entrambi i parametri *pbInput* e *pbOutput* nella [**funzione BCryptDecrypt.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt)
 
-    Se si desidera decrittografare i dati in un buffer separato, allocare un buffer di memoria per i dati decrittografati utilizzando le dimensioni ottenute nel passaggio 3.
+    Se si desidera decrittografare i dati in un buffer separato, allocare un buffer di memoria per i dati decrittografati usando le dimensioni ottenute nel passaggio 3.
 
-6.  Chiamare la funzione [**BCryptDecrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) per decrittografare i dati. I parametri che specificano lo schema di riempimento e il vettore di inizializzazione devono essere uguali a quelli dei dati crittografati. Questa funzione scriverà i dati decrittografati nel percorso specificato nel parametro *pbOutput* .
-7.  Salvare in modo permanente i dati decrittografati in base alle esigenze.
-8.  Ripetere i passaggi 5 e 6 fino a quando tutti i dati non vengono decrittografati.
+6.  Chiamare la [**funzione BCryptDecrypt**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptdecrypt) per decrittografare i dati. I parametri che specificano lo schema di riempimento e il vettore di inizializzazione devono essere gli stessi di quando i dati sono stati crittografati. Questa funzione scriverà i dati decrittografati nel percorso specificato nel *parametro pbOutput.*
+7.  Rendere persistenti i dati decrittografati in base alle esigenze.
+8.  Ripetere i passaggi 5 e 6 fino a quando tutti i dati non sono stati decrittografati.
 
  
 
