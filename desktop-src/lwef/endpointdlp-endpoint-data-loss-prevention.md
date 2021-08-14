@@ -1,29 +1,29 @@
 ---
-description: Le API DLP (Endpoint Data Loss Prevention) consentono alle applicazioni di inviare una notifica al sistema operativo prima e dopo determinate operazioni, ad esempio l'apertura o il salvataggio di un file.
-title: Prevenzione della perdita di dati degli endpoint
+description: Le API di prevenzione della perdita dei dati degli endpoint consentono alle applicazioni di inviare una notifica al sistema operativo prima e dopo determinate operazioni, ad esempio l'apertura o il salvataggio di un file.
+title: Prevenzione della perdita dei dati degli endpoint
 ms.topic: article
 ms.date: 03/18/2021
-ms.openlocfilehash: 3b8576f9eadd0037eca56c0ba183ea1d1825679a
-ms.sourcegitcommit: 8b543a86e551cb5b4270a3cc3590ad0758fb6156
+ms.openlocfilehash: fcbe17d30addb86e37330b210d224720f9b50e525e2b8d41d07d349ea5819c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479432"
 ---
-# <a name="endpoint-data-loss-prevention"></a>Prevenzione della perdita di dati degli endpoint
+# <a name="endpoint-data-loss-prevention"></a>Prevenzione della perdita dei dati degli endpoint
 
-Windows 10 implementa meccanismi che consentono di evitare la perdita di dati per i file sensibili. Le API DLP (Endpoint Data Loss Prevention) consentono alle applicazioni di inviare una notifica al sistema operativo prima e dopo determinate operazioni, ad esempio l'apertura o il salvataggio di un file. Queste notifiche fungono da "hint" che consentono al sistema di ottimizzare le operazioni di perdita dei dati.
+Windows 10 implementa meccanismi che consentono di evitare la perdita di dati per i file sensibili. Le API di prevenzione della perdita dei dati degli endpoint consentono alle applicazioni di inviare una notifica al sistema operativo prima e dopo determinate operazioni, ad esempio l'apertura o il salvataggio di un file. Queste notifiche fungono da "hint" che consentono al sistema di ottimizzare le operazioni di perdita dei dati.
 
 ## <a name="location-of-the-dlp-dll"></a>Percorso della DLL DLP
 
-Poiché la DLL DLP dell'endpoint non è in bundle con il Windows SDK, le applicazioni dovranno caricare manualmente la DLL in fase di esecuzione. Il percorso della DLL viene archiviato nel Registro di sistema. Nella tabella seguente sono elencati i valori e le chiavi del Registro di sistema in cui sono archiviate queste informazioni. Questi percorsi sono definiti come costanti nell'elenco di codice endpointdlp.h di esempio fornito di seguito per praticità per gli sviluppatori.
+Poiché la DLL DLP dell'endpoint non è in bundle con Windows SDK, le applicazioni dovranno caricare manualmente la DLL in fase di esecuzione. Il percorso della DLL viene archiviato nel Registro di sistema. Nella tabella seguente sono elencati i valori e le chiavi del Registro di sistema in cui sono archiviate queste informazioni. Questi percorsi sono definiti come costanti nel listato di codice endpointdlp.h di esempio fornito di seguito per comodità per gli sviluppatori.
 
 | Costante | Valore | Descrizione   |
 |----------|-------|---------------|
 | ENDPOINTDLP_DLL_NAME | "EndpointDlp.dll" | Nome della DLL DLP dell'endpoint che fornisce l'API |
 | ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY | "SOFTWARE \\ Microsoft \\ Windows Defender" | Windows Defender chiave del Registro di sistema in HKLM in cui sono archiviate alcune impostazioni DLP dell'endpoint |
-| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY | Valore di ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |  Percorso del Registro di sistema nella chiave HKLM da cui è possibile EndpointDlp.dll percorso di installazione |
-| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | "InstallLocation" | Valore del Registro di sistema in ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY in cui è archiviato il EndpointDlp.dll di installazione |
+| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY | Valore di ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |  Percorso del Registro di sistema nella chiave HKLM da cui è EndpointDlp.dll percorso di installazione |
+| ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | "InstallLocation" | Valore del Registro di sistema in ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY in cui è archiviato EndpointDlp.dll percorso di installazione |
 | ENDPOINTDLP_DLL_WOW64_X86_INSTALL_LOCATION_SUFFIX | "x86" | Nelle piattaforme x64 concatenare questa directory per ottenere la versione x86 di EndpointDlp.dll |
 
 ## <a name="check-if-endpoint-dlp-is-enabled"></a>Controllare se la prevenzione della perdita dei dati degli endpoint è abilitata
@@ -33,7 +33,7 @@ Per determinare se la prevenzione della perdita dei dati dell'endpoint è abilit
 | Costante | Valore | Descrizione   |
 |----------|-------|---------------|
 | ENDPOINTDLP_ENABLED_FLAG_REGKEY |  \\"Funzionalità" | Percorso della chiave del flag abilitata per la prevenzione della perdita dei dati dell'endpoint in (HKLM) ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |
-| ENDPOINTDLP_ENABLED_FLAG_REGVALUE | "SenseDlpEnabled" | Valore del Registro di sistema in ENDPOINTDLP_ENABLED_FLAG_REGKEY contenente la chiave del Registro di sistema del flag dlp abilitato
+| ENDPOINTDLP_ENABLED_FLAG_REGVALUE | "SenseDlpEnabled" | Valore del Registro di sistema in ENDPOINTDLP_ENABLED_FLAG_REGKEY contenente la chiave del Registro di sistema del flag DLP abilitato
 
 ## <a name="endpoint-dlp-apis"></a>API DLP degli endpoint
 
@@ -44,7 +44,7 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 | API | Descrizione |
 |-----|-------------|
 | [DlpInitializeEnforcementMode](endpointdlp-dlpinitializeenforcementmode.md)                       | Notifica al sistema le modalità di imposizione desiderate per un set di operazioni dlp (Data Loss Prevention) dell'endpoint.                                  |
-| [DlpGetEnforcementApiVersion](endpointdlp-dlpgetenforcementapiversion.md)                       | Recupera la versione dell'API prevenzione della perdita dei dati (DLP) dell'endpoint nel dispositivo corrente.                                  |
+| [DlpGetEnforcementApiVersion](endpointdlp-dlpgetenforcementapiversion.md)                       | Recupera la versione dell'API di prevenzione della perdita dei dati (DLP) dell'endpoint nel dispositivo corrente.                                  |
 
 
 ### <a name="document-operations"></a>Operazioni relative ai documenti
@@ -53,15 +53,15 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 |-----|-------------|
 | [DlpNotifyPreOpenDocument](endpointdlp-dlpnotifypreopendocument.md) | Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di apertura. |
 | [DlpNotifyPostOpenDocument](endpointdlp-dlpnotifypostopendocument.md) | Fornisce al sistema informazioni su un documento dopo il completamento dell'operazione di apertura.  |
-| [DlpNotifyCloseDocument](endpointdlp-dlpnotifyclosedocument.md)                       | Fornisce al sistema informazioni su un documento prima che venga avviata l'operazione di chiusura del documento.                                  |
+| [DlpNotifyCloseDocument](endpointdlp-dlpnotifyclosedocument.md)                       | Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di chiusura del documento.                                  |
 | [DlpNotifyPreOpenDocumentFile](endpointdlp-dlpnotifypreopendocumentfile.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di apertura.  |
 | [DlpNotifyPostOpenDocumentFile](endpointdlp-dlpnotifypostopendocumentfile.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento dell'operazione di apertura.                                  |
-| [DlpNotifyCloseDocumentFile](endpointdlp-dlpnotifyclosedocumentfile.md)                       | Fornisce al sistema informazioni su un documento prima che venga avviata l'operazione di chiusura del documento.                                  |
+| [DlpNotifyCloseDocumentFile](endpointdlp-dlpnotifyclosedocumentfile.md)                       | Fornisce al sistema informazioni su un documento prima dell'avvio dell'operazione di chiusura del documento.                                  |
 
 ### <a name="save-as-operations"></a>Salvare come operazioni
 | API | Descrizione |
 |-----|-------------|
-| [DlpNotifyPreSaveAsDocument](endpointdlp-dlpnotifypresaveasdocument.md)                       | Fornisce al sistema informazioni su un documento prima che venga avviata un'operazione di salvataggio con nome.                                  |
+| [DlpNotifyPreSaveAsDocument](endpointdlp-dlpnotifypresaveasdocument.md)                       | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione di salvataggio con nome.                                  |
 | [DlpNotifyPostSaveAsDocument](endpointdlp-dlpnotifypostsaveasdocument.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento dell'operazione di salvataggio con nome.                                  |
 
 
@@ -69,7 +69,7 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 
 | API | Descrizione |
 |-----|-------------|
-| [DlpNotifyEnterDropTarget](endpointdlp-dlpnotifyenterdroptarget.md)                       | Fornisce al sistema informazioni su un documento quando viene immessa una destinazione di rilascio.                                  |
+| [DlpNotifyEnterDropTarget](endpointdlp-dlpnotifyenterdroptarget.md)                       | Fornisce al sistema informazioni su un documento quando viene immesso un obiettivo di rilascio.                                  |
 | [DlpNotifyLeaveDropTarget](endpointdlp-dlpnotifyleavedroptarget.md)                       | Fornisce al sistema informazioni su un documento quando un obiettivo di rilascio viene chiuso.                                  |
 | [DlpNotifyPreDragDrop](endpointdlp-dlpnotifypredragdrop.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione di trascinamento della selezione.  |
 | [DlpNotifyPostDragDrop](endpointdlp-dlpnotifypostdragdrop.md)                         | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di trascinamento della selezione.  |
@@ -84,7 +84,7 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 | [DlpNotifyPrePasteFromClipboard](endpointdlp-dlpnotifyprepastefromclipboard.md)                         | Fornisce al sistema informazioni su un documento prima dell'avvio di un'operazione Incolla dagli Appunti.  |
 | [DlpNotifyPostPasteFromClipboard](endpointdlp-dlpnotifypostpastefromclipboard.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione Incolla dagli Appunti.                                  |
 | [DlpNotifyPostStashClipboard](endpointdlp-dlpnotifypoststashclipboard.md)                       | Fornisce al sistema informazioni sullo stato dopo il completamento di un'operazione di stash clipboard.                                  |
-| [DlpNotifyPreStashClipboard](endpointdlp-dlpnotifyprestashclipboard.md)                       | Notifica al sistema prima che venga avviata un'operazione stash clipboard.                                  |
+| [DlpNotifyPreStashClipboard](endpointdlp-dlpnotifyprestashclipboard.md)                       | Notifica al sistema prima che venga avviata un'operazione di stash clipboard.                                  |
 | [DlpMustPasteFromSystemClipboard](endpointdlp-dlpmustpastefromsystemclipboard.md)                       | Determina se l'app deve eseguire il pull dei dati dagli Appunti di sistema anziché dalla cache interna.                                  |
 
 ### <a name="print-operations"></a>Operazioni di stampa
@@ -93,11 +93,11 @@ Le tabelle seguenti elencano le API fornite dalla DLL DLP dell'endpoint.
 |-----|-------------|
 | [DlpNotifyPrePrint](endpointdlp-dlpnotifypreprint.md)                         | Fornisce al sistema informazioni su un documento prima che venga avviata un'operazione di stampa.  |
 | [DlpNotifyPostStartPrint](endpointdlp-dlpnotifypoststartprint.md)                       | Fornisce al sistema informazioni su un documento dopo l'avvio di un'operazione di stampa.                                  |
-| [DlpNotifyPostPrint](endpointdlp-dlpnotifypostprint.md)                       | Fornisce al sistema informazioni su un documento al termine di un'operazione di stampa.                                  |
+| [DlpNotifyPostPrint](endpointdlp-dlpnotifypostprint.md)                       | Fornisce al sistema informazioni su un documento dopo il completamento di un'operazione di stampa.                                  |
 
 ## <a name="endpoint-dlp-example-header"></a>Intestazione di esempio DLP dell'endpoint
 
-Poiché l'intestazione DLP dell'endpoint non è inclusa nel Windows SDK, è necessario creare manualmente il file di intestazione per ottenere le firme API da usare nell'implementazione. Per praticità, viene fornito codice di esempio che è possibile copiare e incollare nell'applicazione. Oltre alle dichiarazioni di funzione, questo elenco di codice definisce anche costanti utili come le informazioni sul controllo delle versioni e i percorsi delle chiavi del Registro di sistema.
+Poiché l'intestazione DLP dell'endpoint non è inclusa in Windows SDK, è necessario creare manualmente il file di intestazione per ottenere le firme API da usare nell'implementazione. Per praticità, viene fornito codice di esempio che è possibile copiare e incollare nell'applicazione. Oltre alle dichiarazioni di funzione, questo elenco di codice definisce anche costanti utili come le informazioni sul controllo delle versioni e i percorsi delle chiavi del Registro di sistema.
 
 ```cpp
 //

@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IShellDispatch.Explore: apre una cartella specificata in una Esplora risorse finestra.'
+description: 'Metodo IShellDispatch.Explore: apre una cartella specificata in una finestra Windows Explorer.'
 ms.assetid: DB434D02-56B2-4e8f-9E43-BBF47C7BE377
 title: Metodo IShellDispatch.Explore (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e693985cf7d8d83bd5a00595c42cd4427b0ebd5b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dd3696c5c07324c9a6827e5ac9521c51c9ff90d3622cc2249b0421c3bc9b4b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118221508"
 ---
 # <a name="ishelldispatchexplore-method"></a>Metodo IShellDispatch.Explore
 
-Apre una cartella specificata in una finestra Esplora risorse dati.
+Apre una cartella specificata in una finestra Windows Explorer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,9 +74,9 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.Explor
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di Esplora** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **Esplora** in JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -134,7 +134,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

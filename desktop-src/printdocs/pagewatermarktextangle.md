@@ -1,19 +1,19 @@
 ---
-description: Ottenere altre informazioni sul parametro PageWatermarkTextAngle. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Ottenere altre informazioni sul parametro PageWatermarkTextAngle. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dce37512314e1eaac0cbbe3b5b4b817cb2ee455
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: d8ccf422cb9c2f14850a89994873c1c8b9313178d82ecae9fe5ac06128e5a19e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470961"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica l'angolo del testo della filigrana rispetto alla direzione PageImageableSizeWidth. L'angolo viene misurato in senso antiorario.
 
@@ -78,8 +78,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | MaxValue<br/>     | numero intero<br/> | 359<br/>             |
 | Minvalue<br/>     | integer<br/> | 0<br/>               |
 | Multipli<br/>     | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | gradi<br/>         |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | gradi<br/>         |
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: Imposta la tolleranza, in millisecondi, utilizzata quando l'origine multimediale ASF esegue la ricerca iterativa.
+description: Imposta la tolleranza, in millisecondi, usata quando l'origine del supporto ASF esegue la ricerca iterativa.
 ms.assetid: 3ee4410f-857c-4978-a308-87decfba0e2f
-title: Proprietà MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond (Mfidl. h)
+title: MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond proprietà (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4190d9f87d906a701908dfc17b61633204fe8a2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b8cfc1ef656e1cff3da4bb33f19a3c2176729035f94a194a4ede21354f5dbc54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874132"
 ---
-# <a name="mfpkey_asfmediasource_iterativeseek_tolerance_in_millisecond-property"></a>MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ Tolerance \_ , \_ Proprietà in millisecondi
+# <a name="mfpkey_asfmediasource_iterativeseek_tolerance_in_millisecond-property"></a>MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ Tolerance In \_ \_ MilliSecond - proprietà
 
-Imposta la tolleranza, in millisecondi, utilizzata quando l'origine multimediale ASF esegue la ricerca iterativa.
+Imposta la tolleranza, in millisecondi, usata quando l'origine del supporto ASF esegue la ricerca iterativa.
 
 
 
 Tipo di dati
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 membro PROPVARIANT
 
-**ULONG**
+**Ulong**
 
-\_UI4 VT
+VT \_ UI4
 
 **ulVal**
 
@@ -33,9 +33,9 @@ membro PROPVARIANT
 
 ## <a name="remarks"></a>Commenti
 
-Usare questa proprietà per configurare l'origine del supporto ASF. Per impostare la proprietà, passare un puntatore **IPropertyStore** al resolver di origine. Per altre informazioni, vedere [configurazione di un'origine multimediale](configuring-a-media-source.md).
+Usare questa proprietà per configurare l'origine multimediale ASF. Per impostare la proprietà, passare un **puntatore IPropertyStore** al resolver di origine. Per altre informazioni, vedere [Configurazione di un'origine multimediale.](configuring-a-media-source.md)
 
-Questa proprietà si applica solo quando è abilitata la ricerca iterativa. Per ulteriori informazioni, vedere [MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex](mfpkey-asfmediasource-iterativeseekifnoindex.md).
+Questa proprietà si applica solo quando è abilitata la ricerca iterativa. Per altre informazioni, vedere [MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex.](mfpkey-asfmediasource-iterativeseekifnoindex.md)
 
 L'algoritmo di ricerca iterativo si interrompe se trova un pacchetto la cui distanza dal tempo di ricerca rientra nella tolleranza specificata. Il valore predefinito è 8000 millisecondi.
 
@@ -45,9 +45,9 @@ L'algoritmo di ricerca iterativo si interrompe se trova un pacchetto la cui dist
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ L'algoritmo di ricerca iterativo si interrompe se trova un pacchetto la cui dist
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

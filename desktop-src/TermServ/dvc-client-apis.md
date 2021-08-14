@@ -1,20 +1,20 @@
 ---
 title: API client DVC
-description: Le API client dinamiche del canale virtuale (DVC) sono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione.
+description: Le API client DVC (Dynamic Virtual Channel) vengono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione.
 ms.assetid: 976a6cc2-7bbe-4ecc-91b4-b7c659eca5ba
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25c29d360fb0ad4d6e31e828f9c62f42f64fb311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 557f51adbf10562465f93a101e502632a791d5c272b278c5a8b7ea6124637913
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130817"
 ---
 # <a name="dvc-client-apis"></a>API client DVC
 
-Le API client dinamiche del canale virtuale (DVC) sono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione. Alcune API sono implementate dal Framework DVC e alcune sono implementate dallo sviluppatore di plug-in. Alcune API vengono utilizzate per supportare il plug-in client di Connessione Desktop remoto (RDC) e non sono direttamente correlate al trasporto dati.
+Le API client DVC (Dynamic Virtual Channel) vengono implementate in modo specifico per il client Connessione Desktop remoto (RDC) della connessione. Alcune API vengono implementate dal framework DVC e altre dallo sviluppatore di plug-in. Alcune API vengono usate per supportare il plug-in client Connessione Desktop remoto (RDC) e non sono direttamente correlate al trasporto dei dati.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,42 +23,42 @@ Le API client dinamiche del canale virtuale (DVC) sono implementate in modo spec
 [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin)
 </dt> <dd>
 
-Consente il caricamento del plug-in del client Connessione Desktop remoto (RDC) dal client di Connessione Desktop remoto (RDC).
+Consente al plug-in Connessione Desktop remoto (RDC) di essere caricato dal client Connessione Desktop remoto (RDC).
 
 </dd> <dt>
 
 [**IWTSListener**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistener)
 </dt> <dd>
 
-Gestisce le impostazioni di configurazione per ogni listener per la connessione del canale virtuale dinamico (DVC).
+Gestisce le impostazioni di configurazione per ogni listener per la connessione DVC (Dynamic Virtual Channel).
 
 </dd> <dt>
 
 [**IWTSListenerCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtslistenercallback)
 </dt> <dd>
 
-Utilizzato per notificare al plug-in del client Connessione Desktop remoto (RDC) informazioni sulle richieste in ingresso su un listener specifico.
+Usato per notificare al plug-in del client Connessione Desktop remoto (RDC) le richieste in ingresso in un listener specifico.
 
 </dd> <dt>
 
 [**IWTSVirtualChannelManager**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelmanager)
 </dt> <dd>
 
-Gestisce tutti i plug-in del client Connessione Desktop remoto (RDC) e i listener del canale virtuale dinamico (DVC).
+Gestisce tutti Connessione Desktop remoto plug-in client (RDC) e listener DVC (Dynamic Virtual Channel).
 
 </dd> <dt>
 
 [**IWTSVirtualChannel**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannel)
 </dt> <dd>
 
-Utilizzato per controllare lo stato del canale e scrivere sul canale.
+Utilizzato per controllare lo stato del canale e scrive sul canale.
 
 </dd> <dt>
 
 [**IWTSVirtualChannelCallback**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsvirtualchannelcallback)
 </dt> <dd>
 
-Riceve le notifiche relative alle modifiche dello stato del canale o ai dati ricevuti.
+Riceve notifiche sulle modifiche dello stato del canale o sui dati ricevuti.
 
 </dd> <dt>
 
@@ -72,13 +72,13 @@ Questa interfaccia non è supportata.
 [**VirtualChannelGetInstance**](virtualchannelgetinstance.md)
 </dt> <dd>
 
-Chiamato per fare in modo che il plug-in crei un'istanza dell'interfaccia [**IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) per tutti i plug-in implementati dalla dll.
+Chiamato per fare in modo che il plug-in crei un'istanza [**dell'interfaccia IWTSPlugin**](/windows/desktop/api/TsVirtualChannels/nn-tsvirtualchannels-iwtsplugin) per tutti i plug-in implementati dalla DLL.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

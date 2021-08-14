@@ -7,23 +7,23 @@ keywords:
 - Gestione degli errori OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2005eb38f85e6e57f814a3ec61abf8b76fa4761
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 064330859b4e6b6d2d0bb9985e9f24d968a7daa5062215c64e82f89563ae06ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "106300827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361381"
 ---
 # <a name="error-handling-opengl"></a>Gestione degli errori (OpenGL)
 
-Quando OpenGL rileva un errore, registra un codice di errore corrente. La funzione che ha causato l'errore viene ignorata, quindi non ha alcun effetto sullo stato OpenGL o sul contenuto del framebuffer. (Se l'errore registrato è GL \_ \_ \_ Memoria insufficiente, tuttavia, i risultati della funzione non sono definiti. Una volta registrato, il codice di errore corrente non viene cancellato fino a quando non si chiama la funzione di query [**glGetError**](glgeterror.md) , che restituisce il codice di errore corrente.
+Quando OpenGL rileva un errore, registra un codice di errore corrente. La funzione che ha causato l'errore viene ignorata, quindi non ha alcun effetto sullo stato OpenGL o sul contenuto framebuffer. (Se l'errore registrato è gl \_ OUT \_ OF \_ MEMORY, tuttavia, i risultati della funzione non sono definiti. Dopo la registrazione, il codice di errore corrente non viene cancellato fino a quando non si chiama la funzione di query [**glGetError,**](glgeterror.md) che restituisce il codice di errore corrente.
 
-Le implementazioni di OpenGL possono restituire più codici di errore correnti, ognuno dei quali rimane impostato fino a quando non viene eseguita una query. La funzione **glGetError** restituisce GL \_ senza \_ errori dopo aver eseguito una query su tutti i codici di errore correnti o se non si è verificato alcun errore. Se pertanto si ottiene un codice di errore, chiamare **glGetError** fino a quando \_ non \_ viene restituito alcun errore per assicurarsi di aver individuato tutti gli errori. Per l'elenco dei codici di errore, vedere [codici di errore OpenGL](opengl-error-codes.md).
+Le implementazioni di OpenGL possono restituire più codici di errore correnti, ognuno dei quali rimane impostato fino a quando non viene eseguita una query. La **funzione glGetError** restituisce GL NO ERROR dopo aver sottoposto a query tutti i codici di errore correnti o se non è \_ presente alcun \_ errore. Pertanto, se si ottiene un codice di errore, chiamare **glGetError** fino a quando non viene restituito GL NO ERROR per assicurarsi di aver individuato \_ tutti gli \_ errori. Per l'elenco dei codici di errore, vedere [Codici di errore OpenGL](opengl-error-codes.md).
 
-Per ottenere una stringa descrittiva corrispondente al codice di errore passato, è possibile usare la funzione [**gluErrorString**](gluerrorstring.md) Glu. Per ulteriori informazioni su **gluErrorString**, vedere [gestione degli errori](handling-errors.md).
+È possibile usare la [**funzione GLU gluErrorString**](gluerrorstring.md) per ottenere una stringa descrittiva corrispondente al codice di errore passato. Per altre informazioni su **gluErrorString,** vedere [Gestione degli errori](handling-errors.md).
 
 > [!Note]  
-> Le funzioni GLU spesso restituiscono valori di errore se viene rilevato un errore. Inoltre, la libreria dell'utilità OpenGL definisce i codici di errore GLU \_ non validi \_ enum, Glu \_ non valido \_ e Glu \_ \_ di \_ memoria insufficiente, che hanno lo stesso significato dei codici di errore OpenGL correlati.
+> Le funzioni GLU spesso restituiscono valori di errore se viene rilevato un errore. Inoltre, la libreria dell'utilità OpenGL definisce i codici di errore GLU INVALID ENUM, GLU INVALID VALUE e GLU OUT OF MEMORY, che hanno lo stesso significato dei codici di errore \_ \_ \_ \_ \_ \_ \_ OpenGL correlati.
 
  
 

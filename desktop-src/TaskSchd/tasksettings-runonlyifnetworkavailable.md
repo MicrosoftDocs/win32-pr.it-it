@@ -1,11 +1,11 @@
 ---
-title: Proprietà TaskSettings. RunOnlyIfNetworkAvailable
-description: Per gli script, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
+title: TaskSettings.RunOnlyIfNetworkAvailable - proprietà
+description: Per lo scripting, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
 ms.assetid: 1a2b085f-0572-47d3-ac1f-0032c8427af0
 keywords:
-- Utilità di pianificazione proprietà RunOnlyIfNetworkAvailable
-- Utilità di pianificazione proprietà RunOnlyIfNetworkAvailable, oggetto TaskSettings
-- Oggetto TaskSettings Utilità di pianificazione, proprietà RunOnlyIfNetworkAvailable
+- Proprietà RunOnlyIfNetworkAvailable Utilità di pianificazione
+- Proprietà RunOnlyIfNetworkAvailable Utilità di pianificazione , oggetto TaskSettings
+- Oggetto TaskSettings Utilità di pianificazione proprietà RunOnlyIfNetworkAvailable
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8225d836e5bc87abd5ce9b6c311b4af527561d41
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 193d235276ffc37513c95b5ae0a4cef5a6e84cd0bc7d8bea7fab67a262110080
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354848"
 ---
-# <a name="tasksettingsrunonlyifnetworkavailable-property"></a>Proprietà TaskSettings. RunOnlyIfNetworkAvailable
+# <a name="tasksettingsrunonlyifnetworkavailable-property"></a>TaskSettings.RunOnlyIfNetworkAvailable - proprietà
 
-Per gli script, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
+Per lo scripting, ottiene o imposta un valore booleano che indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -40,11 +40,11 @@ TaskSettings.RunOnlyIfNetworkAvailable As Boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Se true, la proprietà indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete. Il valore predefinito è False.
+Se True, la proprietà indica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete. Il valore predefinito è False.
 
 ## <a name="remarks"></a>Commenti
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) dello schema Utilità di pianificazione attività.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,9 +52,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

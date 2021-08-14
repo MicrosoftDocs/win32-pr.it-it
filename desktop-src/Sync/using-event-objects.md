@@ -1,23 +1,23 @@
 ---
-description: Le applicazioni possono utilizzare oggetti evento in diverse situazioni per notificare a un thread in attesa l'occorrenza di un evento.
+description: Le applicazioni possono usare oggetti evento in diverse situazioni per notificare a un thread in attesa l'occorrenza di un evento.
 ms.assetid: f3f455bb-7563-4920-a728-f75fa5854dc9
-title: Utilizzo di oggetti evento (sincronizzazione)
+title: Uso di oggetti evento (sincronizzazione)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3c0c7ee5f58b8359e989b19ffc9c016dd1a6593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8466ca1104a4d8e6ddaaed3e0618bea3db68bd1954aaf3b859f66fb93a3aac79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765332"
 ---
-# <a name="using-event-objects-synchronization"></a>Utilizzo di oggetti evento (sincronizzazione)
+# <a name="using-event-objects-synchronization"></a>Uso di oggetti evento (sincronizzazione)
 
-Le applicazioni possono utilizzare [oggetti evento](event-objects.md) in diverse situazioni per notificare a un thread in attesa l'occorrenza di un evento. Ad esempio, le operazioni di I/O sovrapposte su file, named pipe e dispositivi di comunicazione usano un oggetto evento per segnalare il completamento. Per ulteriori informazioni sull'utilizzo di oggetti evento nelle operazioni di I/O sovrapposte, vedere [sincronizzazione e input e output sovrapposti](synchronization-and-overlapped-input-and-output.md).
+Le applicazioni possono [usare oggetti evento](event-objects.md) in diverse situazioni per notificare a un thread in attesa l'occorrenza di un evento. Ad esempio, le operazioni di I/O sovrapposte su file, named pipe e dispositivi di comunicazione usano un oggetto evento per segnalarne il completamento. Per altre informazioni sull'uso di oggetti evento in operazioni di I/O sovrapposte, vedere Sincronizzazione e [input e output sovrapposti.](synchronization-and-overlapped-input-and-output.md)
 
-Nell'esempio seguente vengono utilizzati oggetti evento per impedire che diversi thread leggano da un buffer di memoria condiviso mentre un thread master scrive in tale buffer. Innanzitutto, il thread master utilizza la funzione [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare un oggetto evento di reimpostazione manuale il cui stato iniziale non è segnalato. Quindi crea diversi thread Reader. Il thread master esegue un'operazione di scrittura e quindi imposta l'oggetto evento sullo stato segnalato al termine della scrittura.
+Nell'esempio seguente vengono utilizzati oggetti evento per impedire a diversi thread di leggere da un buffer di memoria condivisa mentre un thread master sta scrivendo in tale buffer. In primo luogo, il thread master usa la [**funzione CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) per creare un oggetto evento di reimpostazione manuale il cui stato iniziale non è associato a un'assegnazione. Crea quindi diversi thread di lettura. Il thread master esegue un'operazione di scrittura e quindi imposta l'oggetto evento sullo stato segnalato al termine della scrittura.
 
-Prima di avviare un'operazione di lettura, ogni thread di lettura USA [**WaitForSingleObject**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) per attendere la segnalazione dell'oggetto evento di reimpostazione manuale. Quando **WaitForSingleObject** restituisce, questo indica che il thread principale è pronto per avviare l'operazione di lettura.
+Prima di avviare un'operazione di lettura, ogni thread di lettura usa [**WaitForSingleObject per**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) attendere la segnalazione dell'oggetto evento di reimpostazione manuale. Quando **viene restituito WaitForSingleObject,** indica che il thread principale è pronto per iniziare l'operazione di lettura.
 
 
 ```C++

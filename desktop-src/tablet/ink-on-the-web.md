@@ -1,23 +1,23 @@
 ---
-description: Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere alle applicazioni remote.
+description: Il Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote.
 ms.assetid: 4ba1ab4b-57d2-40da-a7c7-2402f8845ff5
 title: Input penna sul Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4c3584fdc0f19cbf9ac1a60e8f1607971165077
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e916f35e81bdced9e5b57871529f010c8ab0b11bdf205b0a51c070730bd7adcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220804"
 ---
 # <a name="ink-on-the-web"></a>Input penna sul Web
 
-Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere alle applicazioni remote. Per eseguire questa operazione sono disponibili due tecniche di base: una distribuzione senza tocco, che consente di distribuire le applicazioni .NET da un Web o file server e l'altra per creare pagine Web abilitate per l'input penna con controlli Windows Form. In entrambi i casi, l'input penna viene gestito nel client, anziché nel server. Si noti che l'API COM non è supportata per il Web.
+Il Windows Vista Software Development Kit e Windows XP Tablet PC Edition Development Kit consentono di creare applicazioni Web abilitate per l'input penna per gli utenti di Tablet PC che devono accedere ad applicazioni remote. Esistono due tecniche di base per eseguire questa operazione: una è la distribuzione senza tocco, che consente la distribuzione di applicazioni .NET da un Web o da un file server e l'altra consiste nel creare pagine Web abilitate per l'input penna con controlli Windows Forms. In entrambi i casi, l'input penna viene gestito sul client, anziché sul server. Si noti che l'API COM non è supportata per il Web.
 
-Per utilizzare l'elaborazione lato client sul Web, è necessario comprendere il modello di sicurezza .NET e il modo in cui il funzionamento con attendibilità parziale influisca sull'applicazione. Per questo motivo, viene discussa anche la sicurezza e l'attendibilità per le applicazioni per Tablet PC.
+Per usare l'elaborazione lato client sul Web, è necessario comprendere il modello di sicurezza .NET e il modo in cui il funzionamento con attendibilità parziale influisce sull'applicazione. Per questo motivo, vengono discusse anche la sicurezza e l'attendibilità per le applicazioni Tablet PC.
 
-Gli argomenti seguenti contengono note su diversi modi di creare applicazioni Web abilitate per l'input penna.
+Gli argomenti seguenti contengono note su vari modi per creare applicazioni Web abilitate per l'input penna.
 
 -   [Nessuna distribuzione touch](no-touch-deployment.md)
 -   [Controlli Web](web-controls.md)

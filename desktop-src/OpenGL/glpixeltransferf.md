@@ -1,9 +1,9 @@
 ---
-title: funzione glPixelTransferf (GL. h)
-description: Le funzioni glPixelTransferf e glPixelTransferi impostano le modalità di trasferimento pixel. | funzione glPixelTransferf (GL. h)
+title: Funzione glPixelTransferf (Gl.h)
+description: Le funzioni glPixelTransferf e glPixelTransferi impostano le modalità di trasferimento pixel. | Funzione glPixelTransferf (Gl.h)
 ms.assetid: c18ecbb9-af2a-4662-8e3f-0ac850b04fc1
 keywords:
-- funzione glPixelTransferf OpenGL
+- Funzione glPixelTransferf OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6d6404c9b219b8a27dd3d422bfb85cd45ac8cac
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fc2268147511a40aaf70a928c77b177f76870e65a7f40da4f2c6bf9428f67db8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358571"
 ---
-# <a name="glpixeltransferf-function"></a>glPixelTransferf (funzione)
+# <a name="glpixeltransferf-function"></a>Funzione glPixelTransferf
 
-Le funzioni **glPixelTransferf** e [**glPixelTransferi**](glpixeltransferi.md) impostano le modalità di trasferimento pixel.
+Le **funzioni glPixelTransferf** [**e glPixelTransferi**](glpixeltransferi.md) impostano le modalità di trasferimento pixel.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ void WINAPI glPixelTransferf(
 
 <dl> <dt>
 
-*pname* 
+*Pname* 
 </dt> <dd>
 
-Nome simbolico del parametro di trasferimento pixel da impostare. La tabella seguente fornisce il tipo, il valore iniziale e l'intervallo di valori validi per ognuno dei parametri di trasferimento pixel impostati con **glPixelTransfer**.
+Nome simbolico del parametro di trasferimento pixel da impostare. La tabella seguente fornisce il tipo, il valore iniziale e l'intervallo di valori validi per ognuno dei parametri di trasferimento pixel impostati con **glPixelTransfer.**
 
 
 
 | Pname             | Tipo    | Valore iniziale  | Intervallo valido  |
 |-------------------|---------|----------------|--------------|
-| \_colore della mappa GL \_    | Boolean | false          | true/false   |
-| \_stencil mappa \_ GL  | Boolean | false          | true/false   |
-| \_spostamento indice \_ GL  | integer | 0              | (8, 8)        |
-| \_offset indice \_ GL | integer | 0              | (8, 8)        |
-| \_scala rossa \_ GL    | numero intero | 1.0            | (8, 8)        |
-| \_scala verde \_ GL  | float   | 1.0            | (8, 8)        |
-| \_scala GL blu \_   | float   | 1.0            | (8, 8)        |
-| \_scala GL Alpha \_  | float   | 1.0            | (8, 8)        |
-| \_scala di profondità GL \_  | float   | 1.0            | (8, 8)        |
-| \_Bias rosso \_ GL     | float   | 0,0            | (8, 8)        |
-| \_bias verde \_ GL   | float   | 0,0            | (8, 8)        |
-| \_Bias blu \_ GL    | float   | 0,0            | (8, 8)        |
-| \_ \_ distorsione GL Alpha   | float   | 0,0            | (8, 8)        |
-| \_Bias profondità \_ GL   | float   | 0,0            | (8, 8)        |
+| COLORE MAPPA GL \_ \_    | Boolean | false          | true/false   |
+| \_STENCIL MAPPA GL \_  | Boolean | false          | true/false   |
+| GL \_ INDEX \_ SHIFT  | integer | 0              | (8,8)        |
+| GL \_ INDEX \_ OFFSET | integer | 0              | (8,8)        |
+| GL \_ RED \_ SCALE    | numero intero | 1.0            | (8,8)        |
+| GL \_ GREEN \_ SCALE  | float   | 1.0            | (8,8)        |
+| GL \_ BLUE \_ SCALE   | float   | 1.0            | (8,8)        |
+| GL \_ ALPHA \_ SCALE  | float   | 1.0            | (8,8)        |
+| GL \_ DEPTH \_ SCALE  | float   | 1.0            | (8,8)        |
+| GL \_ RED \_ BIAS     | float   | 0,0            | (8,8)        |
+| GL \_ GREEN \_ BIAS   | float   | 0,0            | (8,8)        |
+| GL \_ BLUE \_ BIAS    | float   | 0,0            | (8,8)        |
+| DISTORSIONE ALFA GL \_ \_   | float   | 0,0            | (8,8)        |
+| DISTORSIONE \_ DELLA PROFONDITÀ \_ GL   | float   | 0,0            | (8,8)        |
 
 
 
@@ -74,7 +74,7 @@ Nome simbolico del parametro di trasferimento pixel da impostare. La tabella seg
 *param* 
 </dt> <dd>
 
-Valore su cui è impostato *pname* .
+Valore su cui *è impostato pname.*
 
 </dd> </dl>
 
@@ -84,60 +84,60 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-La **funzione glPixelTransfer** imposta le modalità di trasferimento pixel che interessano il funzionamento dei comandi successivi [**glCopyPixels**](glcopypixels.md), [**glCopyTexImage1D**](glcopyteximage1d.md), [**glCopyTexImage2D**](glcopyteximage2d.md) [**, glCopyTexSubImage1D, glCopyTexSubImage2D**](glcopytexsubimage1d.md) [**, glDrawPixels**](glcopytexsubimage2d.md) [**, glReadPixels**](gldrawpixels.md) [**,**](glreadpixels.md) [**glTexImage1D**](glteximage1d.md), [**glTexImage2D**](glteximage2d.md), [**glTexSubImage1D**](gltexsubimage1d.md)e [**glTexSubImage2D**](gltexsubimage2d.md) . Gli algoritmi specificati dalle modalità di trasferimento dei pixel operano su pixel dopo essere stati letti dal framebuffer (**glReadPixels** e **glCopyPixels**) o decompressi dalla memoria client (**glDrawPixels**, **glTexImage1D** e **glTexImage2D**). Le operazioni di trasferimento pixel si verificano nello stesso ordine e nello stesso modo, indipendentemente dal comando che ha generato l'operazione pixel. Le modalità di archiviazione in pixel ([**glPixelStore**](glpixelstore-functions.md)) controllano la decompressione dei pixel letti dalla memoria del client e la compressione dei pixel riscritti nella memoria del client.
+La funzione **glPixelTransfer** imposta le modalità di trasferimento pixel che influiscono sul funzionamento dei comandi [**glCopyPixels**](glcopypixels.md), [**glCopyTexImage1D**](glcopyteximage1d.md), [**glCopyTexImage2D**](glcopyteximage2d.md), [**glCopyTexSubImage1D**](glcopytexsubimage1d.md), [**glCopyTexSubImage2D**](glcopytexsubimage2d.md), [**glDrawPixels**](gldrawpixels.md), [**glReadPixels**](glreadpixels.md), [**glTexImage1D**](glteximage1d.md), [**glTexImage2D**](glteximage2d.md), [**glTexSubImage1D**](gltexsubimage1d.md)e [**glTexSubImage2D.**](gltexsubimage2d.md) Gli algoritmi specificati dalle modalità di trasferimento pixel operano sui pixel dopo essere stati letti da framebuffer (**glReadPixels** e **glCopyPixels**) o decompressi dalla memoria client (**glDrawPixels**, **glTexImage1D** e **glTexImage2D**). Le operazioni di trasferimento pixel vengono eseguite nello stesso ordine e nello stesso modo, indipendentemente dal comando che ha comportato l'operazione pixel. Le modalità di archiviazione pixel ([**glPixelStore**](glpixelstore-functions.md)) controllano la decompressione dei pixel letti dalla memoria del client e la creazione di un pacchetto di pixel da scrivere nella memoria client.
 
-Le operazioni di trasferimento pixel gestiscono quattro tipi di pixel fondamentali: *colore*, *indice colore*, *profondità* e *stencil*. I pixel dei colori sono costituiti da quattro valori a virgola mobile con dimensioni mantissa e esponenti non specificate, ridimensionati in modo che 0,0 rappresenti l'intensità zero e 1,0 rappresenti l'intensità completa. Gli indici dei colori includono un singolo valore a virgola fissa, con una precisione non specificata a destra del punto binario. I pixel di profondità includono un singolo valore a virgola mobile, con dimensioni mantissa e esponenti non specificate, ridimensionato in modo che 0,0 rappresenti il valore del buffer di profondità minimo e 1,0 rappresenta il valore massimo del buffer di profondità. Infine, i pixel dello stencil includono un singolo valore a virgola fissa, con una precisione non specificata a destra del punto binario.
+Le operazioni di trasferimento pixel gestiscono quattro tipi di pixel fondamentali: *colore,* *indice colori,* *profondità* e *stencil.* I pixel dei colori sono costituito da quattro valori a virgola mobile con dimensioni mantissa ed esponente non specifiche, ridimensionate in modo che 0,0 rappresenti l'intensità zero e 1,0 rappresenti l'intensità completa. Gli indici dei colori comprendono un singolo valore a virgola fissa, con precisione non specificata a destra del punto binario. I pixel di profondità comprendono un singolo valore a virgola mobile, con dimensioni mantissa ed esponente non specifiche, ridimensionate in modo che 0,0 rappresenti il valore minimo del buffer di profondità e 1,0 rappresenta il valore massimo del buffer di profondità. Infine, i pixel degli stencil comprendono un singolo valore a virgola fissa, con precisione non specificata a destra del punto binario.
 
-Le operazioni di trasferimento dei pixel eseguite sui quattro tipi di pixel di base sono le seguenti:
+Le operazioni di trasferimento pixel eseguite sui quattro tipi di pixel di base sono le seguenti:
 
 
 
 | Tipo di pixel  | Operazione di trasferimento pixel                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Colore       | Ognuno dei quattro componenti di colore viene moltiplicato per un fattore di scala e quindi aggiunto a un fattore di distorsione. Ovvero il componente rosso viene moltiplicato per la scala di contabilità di GL \_ \_ , quindi viene aggiunto alla \_ \_ polarizzazione rossa GL; il componente verde viene moltiplicato per la \_ \_ scalabilità verde GL, quindi viene aggiunto alla polarizzazione verde GL, \_ \_ il componente blu viene moltiplicato per la \_ scala GL blu \_ , quindi viene aggiunto alla \_ polarizzazione blu GL e \_ il componente alfa viene moltiplicato per la \_ scala GL Alpha \_ \_ \_ . Quando tutti e quattro i componenti di colore vengono ridimensionati e distorti, ognuno viene bloccato nell'intervallo compreso tra \[ 0 e 1 \] . Tutti i valori della scala dei colori e della distorsione sono specificati con **glPixelTransfer**. <br/> Se il \_ \_ colore della mappa GL è true, ogni componente colore viene ridimensionato in base alla dimensione della mappa da colore a colore corrispondente e quindi sostituito dal contenuto della mappa indicizzata dal componente ridimensionato. Ovvero il componente rosso viene ridimensionato in base alla \_ dimensione del mapping GL pixel \_ \_ r \_ a \_ r \_ e quindi sostituito dal contenuto di GL \_ pixel \_ Map \_ r \_ a \_ r indicizzato da solo. Il componente verde viene ridimensionato in base alle \_ \_ dimensioni della mappa da \_ g a g \_ \_ \_ , quindi sostituito dal contenuto della \_ mappa del pixel GL \_ \_ \_ a \_ g indicizzato da solo. Il componente blu viene ridimensionato in base alle dimensioni del pixel GL da \_ \_ \_ b \_ a \_ b \_ , quindi viene sostituito dal contenuto di GL \_ pixel \_ Map \_ b \_ a \_ b indicizzato da solo. Il componente alfa viene ridimensionato da GL \_ pixel \_ Map a \_ \_ su \_ una \_ dimensione e quindi sostituito dal contenuto di GL \_ pixel map a \_ \_ \_ \_ un oggetto indicizzato da solo. Tutti i componenti presi dalle mappe vengono quindi bloccati nell'intervallo compreso tra \[ 0 e 1 \] . Il \_ colore della mappa GL \_ è specificato con **glPixelTransfer**. Il contenuto delle diverse mappe viene specificato con **glPixelMap**.<br/>                                                                                                                        |
-| Indice colori | Ogni indice dei colori viene spostato a sinistra dei \_ bit di spostamento degli indici GL \_ , riempiendo gli zeri di tutti i bit oltre il numero di bit della frazione trasportati dall'indice a virgola fissa. Se \_ \_ il cambio di indice GL è negativo, lo spostamento è a destra, di nuovo riempito con zero. \_ \_ L'offset dell'indice GL viene quindi aggiunto all'indice. GL \_ index \_ Shift e GL \_ \_ offset sono specificati con **glPixelTransfer**.<br/> Da questo punto, l'operazione varia a seconda del formato richiesto dei pixel risultanti. Se i pixel risultanti devono essere scritti in un buffer di indice dei colori o se vengono letti nuovamente nella memoria del client nel formato di \_ \_ Indice dei colori GL, i pixel continuano a essere considerati come indici. Se il \_ \_ colore della mappa GL è true, ogni indice è mascherato da 2 ^ *n* 1, dove *n* è \_ la \_ dimensione della mappa di i pixel GL \_ \_ \_ \_ , quindi sostituito dal contenuto della \_ mappa GL pixel \_ \_ i \_ a \_ indicizzati in base al valore mascherato. Il \_ colore della mappa GL \_ è specificato con **glPixelTransfer**. Il contenuto della mappa dell'indice viene specificato con **glPixelMap**.<br/> Se i pixel risultanti devono essere scritti in un buffer dei colori RGBA o se vengono letti nuovamente nella memoria del client in un formato diverso dall'indice dei \_ colori GL \_ , i pixel vengono convertiti da indici a colori facendo riferimento alle quattro mappe GL \_ pixel \_ mappa \_ i \_ a \_ R, GL \_ pixel \_ mappa \_ i \_ a \_ G, GL \_ pixel \_ Map \_ i \_ a \_ B e GL \_ pixel \_ mappa \_ i \_ a \_ un. Prima di essere dereferenziato, l'indice viene mascherato da 2 n 1, dove n è \_ la \_ mappa GL pixel i a \_ \_ \_ \_ dimensione R per la mappa rossa, GL \_ pixel \_ mappa \_ i \_ a \_ G \_ size per la mappa verde, GL pixel mappa i a B dimensioni per la mappa \_ \_ \_ \_ \_ \_ blu e GL pixel mappa i a \_ \_ \_ \_ \_ una dimensione per la mappa \_ alfa. Tutti i componenti presi dalle mappe vengono quindi bloccati nell'intervallo compreso tra \[ 0 e 1 \] . Il contenuto delle quattro mappe viene specificato con **glPixelMap**.<br/> |
-| Profondità       | Ogni valore di profondità viene moltiplicato per la \_ scala di profondità GL \_ , aggiunto alla \_ \_ distorsione della profondità GL e quindi viene premuto per l'intervallo compreso tra \[ 0 e 1 \] .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Stencil     | Ogni indice viene spostato \_ in bit di spostamento dell'indice GL \_ come un indice di colore e quindi aggiunto all' \_ offset dell'indice GL \_ . Se lo \_ stencil della mappa GL \_ è true, ogni indice è mascherato da 2n 1, dove *n* è la \_ mappa dei pixel GL \_ \_ \_ alla dimensione s \_ \_ , quindi sostituito dal contenuto di GL \_ pixel \_ Map \_ s \_ a \_ s indicizzato dal valore mascherato.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Color       | Ognuno dei quattro componenti di colore viene moltiplicato per un fattore di scala e quindi aggiunto a un fattore di distorsione. Ciò significa che il componente rosso viene moltiplicato per GL RED SCALE e quindi aggiunto a GL RED BIAS. Il componente verde viene moltiplicato per GL GREEN SCALE e quindi aggiunto a GL GREEN BIAS. Il componente blu viene moltiplicato per GL BLUE SCALE e quindi aggiunto a GL BLUE BIAS e il componente alfa viene moltiplicato per GL ALPHA SCALE e quindi aggiunto a \_ \_ GL \_ \_ \_ ALPHA \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ BIAS. Dopo che tutti e quattro i componenti di colore sono stati ridimensionati e distorti, ognuno di essi viene adattato all'intervallo \[ 0,1. \] Tutti i valori di scala dei colori e distorsione vengono specificati **con glPixelTransfer.** <br/> Se GL MAP COLOR è true, ogni componente colore viene ridimensionato in base alle dimensioni della mappa da colore a colore corrispondente e quindi sostituito dal contenuto della mappa indicizzata dal componente \_ \_ ridimensionato. Ciò significa che il componente rosso viene ridimensionato in base a GL PIXEL MAP R TO R SIZE e quindi sostituito dal contenuto di GL PIXEL MAP R TO R indicizzato \_ \_ \_ da \_ \_ \_ \_ \_ \_ \_ \_ solo. Il componente verde viene ridimensionato in base a GL PIXEL MAP G TO G SIZE e quindi sostituito dal contenuto di GL PIXEL MAP G TO G indicizzato \_ \_ \_ da \_ \_ \_ \_ \_ \_ \_ \_ solo. Il componente blu viene ridimensionato in base a GL PIXEL MAP B TO B SIZE e quindi sostituito dal contenuto di GL PIXEL MAP B TO B indicizzato \_ \_ \_ da \_ \_ \_ \_ \_ \_ \_ \_ solo. Il componente alfa viene ridimensionato da GL PIXEL MAP A TO A SIZE e quindi sostituito dal contenuto di \_ GL PIXEL MAP A \_ TO A \_ \_ \_ \_ \_ \_ \_ \_ \_ indicizzato da solo. Tutti i componenti prelevati dalle mappe vengono quindi definiti nell'intervallo \[ 0,1. \] GL \_ MAP COLOR viene specificato con \_ **glPixelTransfer.** Il contenuto delle varie mappe viene specificato con **glPixelMap.**<br/>                                                                                                                        |
+| Indice colori | Ogni indice colori viene spostato a sinistra dei bit GL INDEX SHIFT, riempiendo con zeri qualsiasi bit oltre il numero di bit frazionari trasportati dall'indice \_ \_ a virgola fissa. Se GL \_ INDEX \_ SHIFT è negativo, lo spostamento si trova a destra, di nuovo con riempimento zero. GL \_ INDEX OFFSET viene quindi aggiunto \_ all'indice. GL \_ INDEX SHIFT e GL INDEX OFFSET vengono specificati con \_ \_ \_ **glPixelTransfer**.<br/> Da questo punto, l'operazione diverge a seconda del formato richiesto dei pixel risultanti. Se i pixel risultanti devono essere scritti in un index buffer di colori o se vengono letti nella memoria client in formato GL COLOR INDEX, i pixel continuano a essere considerati come \_ \_ indici. Se GL MAP COLOR è true, ogni indice viene mascherato da \_ \_ 2 ^ *n* 1, dove *n* è GL PIXEL MAP I TO I SIZE e quindi sostituito dal contenuto di GL PIXEL MAP I TO I indicizzato dal valore \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ mascherato. GL \_ MAP COLOR viene specificato con \_ **glPixelTransfer.** Il contenuto della mappa dell'indice viene specificato **con glPixelMap.**<br/> Se i pixel risultanti devono essere scritti in un buffer dei colori RGBA o se vengono letti nella memoria client in un formato diverso da GL COLOR INDEX, i pixel vengono convertiti da indici in colori facendo riferimento alle quattro mappe \_ GL PIXEL MAP I TO \_ \_ \_ \_ \_ \_ R, GL PIXEL MAP I TO G, GL PIXEL MAP I TO B e \_ GL \_ PIXEL MAP I \_ \_ TO \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ A. Prima di essere dereferenziato, l'indice viene mascherato da 2 n 1, dove n è GL PIXEL MAP I TO R SIZE per la mappa rossa, GL PIXEL MAP I TO G SIZE per la mappa \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ verde, GL PIXEL MAP I TO B \_ \_ \_ \_ \_ \_ \_ SIZE \_ \_ \_ \_ \_ \_ per la mappa blu e GL PIXEL MAP I TO A SIZE per la mappa alfa. Tutti i componenti prelevati dalle mappe vengono quindi definiti nell'intervallo \[ 0,1. \] Il contenuto delle quattro mappe viene specificato con **glPixelMap.**<br/> |
+| Profondità       | Ogni valore di profondità viene moltiplicato per GL DEPTH SCALE, aggiunto a GL DEPTH BIAS e quindi impostato \_ \_ \_ sull'intervallo \_ \[ 0,1. \]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Stencil     | Ogni indice viene spostato in bit GL INDEX SHIFT esattamente come un indice di colore e quindi \_ aggiunto a GL INDEX \_ \_ \_ OFFSET. Se GL MAP STENCIL è true, ogni indice viene mascherato da \_ \_ 2n 1, dove *n* è GL PIXEL MAP S TO S SIZE, quindi sostituito dal contenuto di GL PIXEL MAP S TO S indicizzato dal valore \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ mascherato.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
 
  
 
-La funzione [**glPixelTransferf**](glpixeltransfer.md) può essere utilizzata per impostare qualsiasi parametro di trasferimento pixel. Se il tipo di parametro è booleano, 0,0 implica false e qualsiasi altro valore implica true. Se *pname* è un parametro Integer, *param* viene arrotondato all'intero più vicino.
+La [**funzione glPixelTransferf**](glpixeltransfer.md) può essere usata per impostare qualsiasi parametro di trasferimento pixel. Se il tipo di parametro è booleano, 0,0 implica false e qualsiasi altro valore implica true. Se *pname* è un parametro integer, *il parametro* viene arrotondato all'intero più vicino.
 
-Analogamente, è possibile usare **glPixelTransferi** anche per impostare i parametri di trasferimento dei pixel. I parametri booleani sono impostati su false se *param* è 0 e true in caso contrario. Il parametro *param* viene convertito in virgola mobile prima di essere assegnato a parametri con valori reali.
+Analogamente, **glPixelTransferi** può essere usato anche per impostare i parametri di trasferimento pixel. I parametri booleani sono impostati su false se *param* è 0 e true in caso contrario. Il *parametro param* viene convertito in virgola mobile prima di essere assegnato a parametri con valori reali.
 
-Se un comando [**glDrawPixels**](gldrawpixels.md), [**glReadPixels**](glreadpixels.md), [**glCopyPixels**](glcopypixels.md), [**glTexImage1D**](glteximage1d.md)o [**glTexImage2D**](glteximage2d.md) viene inserito in un elenco di visualizzazione (vedere [**glNewList**](glnewlist.md) e [**glCallList**](glcalllist.md)), le impostazioni della modalità di trasferimento dei pixel attive quando viene *eseguito* l'elenco di visualizzazione sono quelle utilizzate. Potrebbero essere diverse dalle impostazioni durante la compilazione del comando nell'elenco di visualizzazione.
+Se un comando [**glDrawPixels,**](gldrawpixels.md) [**glReadPixels**](glreadpixels.md), [**glCopyPixels**](glcopypixels.md), [**glTexImage1D**](glteximage1d.md)o [**glTexImage2D**](glteximage2d.md) viene inserito in un elenco di visualizzazione (vedere [**glNewList**](glnewlist.md) e [**glCallList**](glcalllist.md)), le impostazioni della modalità di trasferimento pixel applicate quando viene eseguito l'elenco di visualizzazione sono quelle usate.  Possono essere diverse dalle impostazioni quando il comando è stato compilato nell'elenco di visualizzazione.
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glPixelTransfer**:
+Le funzioni seguenti recuperano informazioni correlate **a glPixelTransfer:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con \_ colore mappa GL \_ argomento
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento GL \_ MAP \_ COLOR
 
-**glGet** con \_ stencil Mappa GL \_ argomento
+**glGet** con argomento GL \_ MAP \_ STENCIL
 
-**glGet** con argomento \_ MAIUSC di indice GL \_
+**glGet** con argomento GL \_ INDEX \_ SHIFT
 
-**glGet** con \_ offset indice GL \_ argomento
+**glGet** con argomento GL \_ INDEX \_ OFFSET
 
-**glGet** con la \_ scala rossa argomento GL \_
+**glGet** con argomento GL \_ RED \_ SCALE
 
-**glGet** con \_ Bias rosso argomento \_ GL
+**glGet** con argomento GL \_ RED \_ BIAS
 
-**glGet** con argomento di \_ scala verde GL \_
+**glGet** con argomento GL \_ GREEN \_ SCALE
 
-**glGet** con argomento \_ bias verde \_
+**glGet** con argomento GL \_ GREEN \_ BIAS
 
-**glGet** con argomento con \_ scala GL blu \_
+**glGet con** argomento GL \_ BLUE \_ SCALE
 
-**glGet** con argomento \_ Bias Blue \_ Bias
+**glGet** con argomento GL \_ BLUE \_ BIAS
 
-**glGet** con argomento con \_ scala GL alfa \_
+**glGet con** argomento GL \_ ALPHA \_ SCALE
 
-**glGet** con argomento GL \_ Alpha \_ Bias
+**glGet** con argomento GL \_ ALPHA \_ BIAS
 
-**glGet** con livello di \_ profondità GL argomento \_
+**glGet con** argomento GL \_ DEPTH \_ SCALE
 
-**glGet** con argomento \_ Bias Depth Depth \_
+**glGet** con argomento GL \_ DEPTH \_ BIAS
 
 ## <a name="requirements"></a>Requisiti
 
@@ -147,8 +147,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glPixel
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glPixel
 [**glDrawPixels**](gldrawpixels.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glNewList**](glnewlist.md)

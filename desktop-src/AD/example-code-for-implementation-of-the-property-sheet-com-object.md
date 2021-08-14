@@ -1,26 +1,26 @@
 ---
 title: Codice di esempio per l'implementazione dell'oggetto COM della finestra delle proprietà
-description: L'esempio di codice seguente può essere usato per implementare un'estensione della finestra delle proprietà Active Directory.
+description: L'esempio di codice seguente può essere usato per implementare un'estensione della finestra delle proprietà di Active Directory.
 ms.assetid: aeee870e-1a0e-437f-a724-0bbac30f5e34
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'implementazione della finestra delle proprietà oggetto COM AD
+- Codice di esempio per l'implementazione dell'oggetto COM della finestra delle proprietà AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01ea28b3c1de9fa69d14db3168db821d8b38cfc5
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: a4eefc6cc047224caa22bfda1ab17fca4c3732e35c78b09c34d6b3c697b2947c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104472563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190602"
 ---
 # <a name="example-code-for-implementation-of-the-property-sheet-com-object"></a>Codice di esempio per l'implementazione dell'oggetto COM della finestra delle proprietà
 
-L'esempio di codice seguente può essere usato per implementare un'estensione della finestra delle proprietà Active Directory.
+L'esempio di codice seguente può essere usato per implementare un'estensione della finestra delle proprietà di Active Directory.
 
 ## <a name="ishellextinit-implementation"></a>Implementazione di IShellExtInit
 
-L'esempio di codice C++ seguente può essere usato per implementare i metodi [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) .
+L'esempio di codice C++ seguente può essere usato per implementare i [**metodi IShellExtInit.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit)
 
 
 ```C++
@@ -131,7 +131,7 @@ STDMETHODIMP CPropSheetExt::Initialize( LPCITEMIDLIST pidlFolder,
 
 ## <a name="ishellpropsheetext-implementation"></a>Implementazione di IShellPropSheetExt
 
-L'esempio di codice C++ seguente può essere usato per implementare i metodi [**IShellPropSheetExt**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext) .
+L'esempio di codice C++ seguente può essere usato per implementare i [**metodi IShellPropSheetExt.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellpropsheetext)
 
 
 ```C++
@@ -204,7 +204,7 @@ STDMETHODIMP CPropSheetExt::ReplacePage(    UINT uPageID,
 
 ## <a name="miscellaneous-implementation"></a>Implementazione varie
 
-L'esempio di codice C++ seguente può essere usato per implementare i metodi e le funzioni di utilità usati nell'esempio di codice precedente.
+L'esempio di codice C++ seguente può essere usato per implementare i metodi di utilità e le funzioni usati nell'esempio di codice precedente.
 
 
 ```C++
@@ -424,6 +424,6 @@ UINT CALLBACK CPropSheetExt::PageCallbackProc(  HWND hWnd,
 
 
 
- 
+ 
 
- 
+ 

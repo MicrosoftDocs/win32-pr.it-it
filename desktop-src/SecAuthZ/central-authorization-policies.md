@@ -1,30 +1,30 @@
 ---
-description: Un criterio di autorizzazione centrale (CAP) raccoglie le specifiche regole di autorizzazione (CAPRs) in un singolo criterio.
+description: Un criterio di autorizzazione centrale (CAP) raccoglie le regole di autorizzazione specifiche (CAP) in un singolo criterio.
 ms.assetid: E3E43D9F-6826-468A-86E9-AC8F9A381FD4
-title: Criteri di autorizzazione centrale
+title: Criteri di autorizzazione centrali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b890236b0dae0f8f8d51254def4e1607cc35894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0617f6bddb606d3c3fb3e5ccb6692c79c62a60f90de591b6ec3e04988db46f63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783225"
 ---
-# <a name="central-authorization-policies"></a>Criteri di autorizzazione centrale
+# <a name="central-authorization-policies"></a>Criteri di autorizzazione centrali
 
-Un criterio di autorizzazione centrale (CAP) raccoglie le specifiche regole di autorizzazione (CAPRs) in un singolo criterio. Per consentire la combinazione di regole di autorizzazione specifiche (CAPRs) nel criterio di autorizzazione olistica dell'organizzazione, è possibile fare riferimento a CAPRs insieme a un set di risorse. Questa operazione viene eseguita raccogliendo più (per riferimento) in un limite. Una volta definito un limite, è possibile distribuirlo utilizzato dai responsabili delle risorse per applicare i criteri di autorizzazione delle organizzazioni alle risorse.
+Un criterio di autorizzazione centrale (CAP) raccoglie le regole di autorizzazione specifiche (CAP) in un singolo criterio. Per consentire la combinazione delle regole di autorizzazione specifiche (CAPR) nei criteri di autorizzazione olistici dell'organizzazione, è possibile fare riferimento ai capr e applicarlo a un set di risorse. Questa operazione viene eseguita raccogliendo più (per riferimento) in un cap. Una volta definito, un CAP può essere distribuito dai responsabili delle risorse per applicare i criteri di autorizzazione delle organizzazioni alle risorse.
 
-Un limite ha gli attributi seguenti:
+Un cap ha gli attributi seguenti:
 
--   Raccolta di CAPRs: un elenco di riferimenti agli oggetti CAPR esistenti
--   Identificatore (SID)
+-   Raccolta di CAPR: elenco di riferimenti a oggetti CAPR esistenti
+-   Identificatore (Sid)
 -   Descrizione
 -   Nome
 
-Un limite viene valutato durante la valutazione dell'accesso per i file e le cartelle in cui è abilitato da un amministratore. Durante una chiamata [**AccessCheck**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) , il controllo della copertura viene combinato logicamente con il controllo ACL discrezionale; Ciò significa che per ottenere l'accesso a un file a cui si applica il limite, un utente deve avere accesso sia in base all'estremità (il CAPRs associato) che all'ACL discrezionale del file.
+Un CAP viene valutato durante la valutazione dell'accesso per i file e le cartelle in cui è abilitata da un amministratore. Durante una [**chiamata AccessCheck,**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-accesscheck) il controllo CAP viene combinato logicamente con il controllo ACL discrezionale. Ciò significa che per ottenere l'accesso a un file a cui si applica il cap, un utente deve avere accesso sia in base al CAP (capr associati) che all'ACL discrezionale sul file.
 
-LIMITE di esempio:
+Cap di esempio:
 
 ``` syntax
 CORPORATE-FINANCE-CAP]
@@ -34,7 +34,7 @@ Policies=HBI-CAPE;RETENTION-CAPR
 
 ## <a name="cap-definition"></a>Definizione CAP
 
-Un limite viene creato e modificato in Active Directory usando una nuova esperienza utente in centro di amministrazione di sistema (o PowerShell) che consente all'amministratore di creare un limite e specificare un set di CAPRs che costituiscono il limite.
+Un cap viene creato e modificato in Active Directory usando una nuova esperienza utente in ADAC (o PowerShell) che consente all'amministratore di creare un CAP e specificare un set di capr che costituiscono il CAP.
 
  
 

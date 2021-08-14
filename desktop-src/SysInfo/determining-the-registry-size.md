@@ -1,24 +1,24 @@
 ---
-description: In Windows 2000, in genere, un'utilità di installazione controlla le dimensioni correnti e massime del registro di sistema per determinare se lo spazio disponibile è sufficiente per i nuovi dati da aggiungere.
+description: In Windows 2000, è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati verrà aggiunto.
 ms.assetid: 87e7b9de-d571-41e4-817e-29023546e9bd
-title: Determinazione delle dimensioni del registro di sistema
+title: Determinazione delle dimensioni del Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4434b519625cf21c9e0076dc7c21d71e27c01778
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88e26fbeedf13ea66c93f7a13426819fb84df6ffa3f75c908462dcef8f8dcb54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764503"
 ---
-# <a name="determining-the-registry-size"></a>Determinazione delle dimensioni del registro di sistema
+# <a name="determining-the-registry-size"></a>Determinazione delle dimensioni del Registro di sistema
 
-In Windows 2000, in genere, un'utilità di installazione controlla le dimensioni correnti e massime del registro di sistema per determinare se lo spazio disponibile è sufficiente per i nuovi dati da aggiungere. In questo esempio viene illustrato come eseguire questa operazione a livello di codice utilizzando il contatore delle prestazioni "% quota registro in uso" all'interno dell'oggetto di sistema.
+In Windows 2000, è comune che un'utilità di installazione controlli le dimensioni correnti e massime del Registro di sistema per determinare se lo spazio disponibile per i nuovi dati verrà aggiunto. Questo esempio illustra come eseguire questa operazione a livello di codice usando il contatore delle prestazioni "% Quota registro in uso" all'interno dell'oggetto System.
 
-Nell'esempio seguente viene utilizzato il supporto dati prestazioni (PDH) per ottenere il valore del contatore. deve essere collegato a PDH. lib. PDH è un set di API di alto livello usato per ottenere i dati sulle prestazioni.
+L'esempio seguente usa l'helper dati delle prestazioni (PDH) per ottenere il valore del contatore. deve essere collegato a Pdh.lib. PDH è un set di API di alto livello usato per ottenere dati sulle prestazioni.
 
 > [!Note]  
-> Non è necessario implementare questa dimensione del registro di sistema: controllare in Windows Server 2003 o Windows XP perché non hanno un limite di quota del registro di sistema.
+> Non è necessario implementare questo controllo delle dimensioni del Registro di sistema in Windows Server 2003 o Windows XP perché non hanno un limite di quota del Registro di sistema.
 
  
 

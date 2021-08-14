@@ -1,9 +1,9 @@
 ---
-title: funzione glMultMatrixd (GL. h)
-description: La funzione glMultMatrixd moltiplica la matrice corrente in base a una matrice arbitraria. | funzione glMultMatrixd (GL. h)
+title: Funzione glMultMatrixd (Gl.h)
+description: La funzione glMultMatrixd moltiplica la matrice corrente per una matrice arbitraria. | Funzione glMultMatrixd (Gl.h)
 ms.assetid: 1f6cf4e4-e7bd-470c-b1f4-b9ccc1fb756e
 keywords:
-- funzione glMultMatrixd OpenGL
+- Funzione glMultMatrixd OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e24993fe5873be0af8713e3d127b86a7c593cd82
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fd31b3f84bbc8c75a3622b7b87f7a7577a33927bd489a06b8691377badaf0b56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358800"
 ---
-# <a name="glmultmatrixd-function"></a>glMultMatrixd (funzione)
+# <a name="glmultmatrixd-function"></a>Funzione glMultMatrixd
 
-Le funzioni **glMultMatrixd** e [**glMultMatrixf**](glmultmatrixf.md) moltiplicano la matrice corrente in base a una matrice arbitraria.
+Le **funzioni glMultMatrixd** e [**glMultMatrixf**](glmultmatrixf.md) moltiplicano la matrice corrente per una matrice arbitraria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ void WINAPI glMultMatrixd(
 *m* 
 </dt> <dd>
 
-Puntatore a una matrice 4x4 archiviato nell'ordine colonna-Major come 16 valori consecutivi.
+Puntatore a una matrice 4x4 archiviata nell'ordine principale della colonna come 16 valori consecutivi.
 
 </dd> </dl>
 
@@ -53,35 +53,35 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **glMultMatrix** moltiplica la matrice corrente in base a quella specificata in *m*. Ovvero, se M è la matrice corrente e T è la matrice passata a **glMultMatrix**, m viene sostituito con m T.
+La **funzione glMultMatrix** moltiplica la matrice corrente per quella specificata in *m*. In altri punti, se M è la matrice corrente e T è la matrice passata a **glMultMatrix**, M viene sostituito con M T.
 
-La matrice corrente è la matrice di proiezione, la matrice Modelview o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)).
+La matrice corrente è la matrice di proiezione, la matrice modelview o la matrice di trama, determinata dalla modalità matrice corrente (vedere [**glMatrixMode**](glmatrixmode.md)).
 
-Il parametro *m* punta a una matrice 4x4 di valori a virgola mobile a precisione singola o a precisione doppia archiviati in ordine colonna-principale. Ovvero la matrice viene archiviata come illustrato nella figura seguente.
+Il *parametro m* punta a una matrice 4x4 di valori a virgola mobile a precisione singola o a precisione doppia archiviati nell'ordine delle colonne principali. In altri modi, la matrice viene archiviata come illustrato nell'immagine seguente.
 
 ![! [Diagramma che mostra la matrice 4x4 a cui punta il parametro m.]](images/multi01.png)
 
-Le funzioni seguenti consentono di recuperare informazioni correlate a **glMultMatrix**:
+Le funzioni seguenti recuperano informazioni correlate **a glMultMatrix**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argomento della \_ modalità matrice GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) argomento GL \_ MATRIX \_ MODE
 
-**glGet** con argomento GL \_ MODELVIEW \_ Matrix
+**glGet con** argomento GL \_ MODELVIEW \_ MATRIX
 
-**glGet** con matrice di \_ proiezione GL argomento \_
+**glGet con** argomento GL \_ PROJECTION \_ MATRIX
 
-**glGet** con argomento della \_ matrice di trama GL \_
+**glGet con** argomento GL \_ TEXTURE \_ MATRIX
 
 ## <a name="requirements"></a>Requisiti
 
@@ -91,8 +91,8 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glMultM
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -104,7 +104,7 @@ Le funzioni seguenti consentono di recuperare informazioni correlate a **glMultM
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glLoadIdentity**](glloadidentity.md)

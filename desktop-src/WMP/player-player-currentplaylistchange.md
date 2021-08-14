@@ -1,10 +1,10 @@
 ---
-title: Evento Player. CurrentPlaylistChange
-description: L'evento CurrentPlaylistChange si verifica quando viene apportata una modifica all'interno della playlist corrente. | Evento Player. CurrentPlaylistChange
+title: Evento Player.CurrentPlaylistChange
+description: L'evento CurrentPlaylistChange si verifica quando cambia qualcosa all'interno della playlist corrente. | Evento Player.CurrentPlaylistChange
 ms.assetid: 5270373e-e401-40c6-bf8c-ef0557610372
 keywords:
-- Media Player di Windows Event CurrentPlaylistChange
-- Windows Event CurrentPlaylistChange Media Player, classe Player
+- Evento CurrentPlaylistChange Windows Media Player
+- Evento CurrentPlaylistChange Windows Media Player , classe Player
 - Classe Player Windows Media Player, evento CurrentPlaylistChange
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4722db224285587198e3ddb021022ec5d8f2cea6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 672ff739e60efe73e1d30670dec5bc956f9fdd56506464b036add6f52cc6fc34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338147"
 ---
-# <a name="playercurrentplaylistchange-event"></a>Evento Player. CurrentPlaylistChange
+# <a name="playercurrentplaylistchange-event"></a>Evento Player.CurrentPlaylistChange
 
-L'evento **CurrentPlaylistChange** si verifica quando viene apportata una modifica all'interno della playlist corrente.
+**L'evento CurrentPlaylistChange** si verifica quando cambia qualcosa all'interno della playlist corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Player.CurrentPlaylistChange(
 *change* 
 </dt> <dd>
 
-**Numero** (**Long**) che indica il tipo di modifica apportata alla playlist. Vedere il *lettore*. Evento **PlaylistChange** per una tabella di valori possibili.
+**Numero** (**long**) che indica il tipo di modifica apportata alla playlist. Vedere Il *lettore*. **Evento PlaylistChange** per una tabella di valori possibili.
 
 </dd> </dl>
 
@@ -57,11 +57,11 @@ Questo evento non restituisce un valore.
 
 Questo evento non si verifica quando una playlist diversa diventa la playlist corrente. Si verifica solo quando si verifica una modifica all'interno della playlist corrente, ad esempio un elemento multimediale aggiunto alla playlist.
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene aggiornato il testo in un elemento DIV HTML, denominato PlItems, per visualizzare i nomi degli elementi multimediali nella playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene aggiornato il testo in un elemento DIV HTML, denominato PlItems, per visualizzare i nomi degli elementi multimediali nella playlist corrente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -95,7 +95,7 @@ Nell'esempio JScript seguente viene aggiornato il testo in un elemento DIV HTML,
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -107,10 +107,10 @@ Nell'esempio JScript seguente viene aggiornato il testo in un elemento DIV HTML,
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. currentPlaylist**](player-currentplaylist.md)
+[**Player.currentPlaylist**](player-currentplaylist.md)
 </dt> <dt>
 
-[**Player. PlaylistChange**](player-player-playlistchange.md)
+[**Player.PlaylistChange**](player-player-playlistchange.md)
 </dt> </dl>
 
  

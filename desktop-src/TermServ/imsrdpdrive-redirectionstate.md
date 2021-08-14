@@ -1,12 +1,12 @@
 ---
-title: Proprietà RedirectionState di IMsRdpDrive
+title: IMsRdpDrive RedirectionState - proprietà
 description: Indica lo stato di reindirizzamento dell'unità.
 ms.assetid: 05333671-460d-4c07-8b7e-fbb7bc215353
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectionState
-- Servizi Desktop remoto proprietà RedirectionState, interfaccia IMsRdpDrive
-- Interfaccia IMsRdpDrive Servizi Desktop remoto, proprietà RedirectionState
+- Proprietà RedirectionState Servizi Desktop remoto
+- Proprietà RedirectionState Servizi Desktop remoto,interfaccia IMsRdpDrive
+- Interfaccia IMsRdpDrive Servizi Desktop remoto proprietà RedirectionState
 topic_type:
 - apiref
 api_name:
@@ -19,14 +19,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7561190e976e0b8190553376f5e9f7a5b2de2550
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6069ec911210fac3f4334bdf9e84da080e5536a4f4b6cfc7aca0e54fe0bd2228
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351959"
 ---
-# <a name="imsrdpdriveredirectionstate-property"></a>Proprietà IMsRdpDrive:: RedirectionState
+# <a name="imsrdpdriveredirectionstate-property"></a>Proprietà IMsRdpDrive::RedirectionState
 
 Indica lo stato di reindirizzamento dell'unità.
 
@@ -49,11 +49,11 @@ HRESULT get_RedirectionState(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su **Variant \_ false**. per disabilitare il reindirizzamento o la **variante \_ true**. per abilitare il reindirizzamento.
+Impostare questo parametro su **VARIANT \_ FALSE.** per disabilitare il reindirizzamento o **VARIANT \_ TRUE.** per abilitare il reindirizzamento.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Se il metodo ha esito positivo, viene restituito **S \_ OK** . Qualsiasi altro valore **HRESULT** indica che la chiamata non è riuscita.
+Se il metodo ha esito positivo, **viene restituito S \_ OK.** Qualsiasi altro **valore HRESULT** indica che la chiamata non è riuscita.
 
 ## <a name="requirements"></a>Requisiti
 

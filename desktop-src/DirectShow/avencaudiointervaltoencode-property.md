@@ -1,17 +1,17 @@
 ---
 description: Specifica il numero di campioni audio da codificare.
 ms.assetid: 2ef2241b-5ec4-4694-a0c9-7db395321471
-title: Proprietà AVEncAudioIntervalToEncode (codecapis. h)
+title: Proprietà AVEncAudioIntervalToEncode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7847f203c73846c8c8ef0415d91cd09677f53d21
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aeaf8b65469ba5d0df93b92fb7ef8b0b10d7fd783dfa3b481ddab2d4cf6a0548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403987"
 ---
-# <a name="avencaudiointervaltoencode-property"></a>Proprietà AVEncAudioIntervalToEncode
+# <a name="avencaudiointervaltoencode-property"></a>AVEncAudioIntervalToEncode - proprietà
 
 Specifica il numero di campioni audio da codificare.
 
@@ -19,11 +19,11 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt64** (**VT \_ UI8**)
+**UINT64** (**VT \_ UI8**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncAudioIntervalToEncode**
+**CODECAPI \_ AVEncAudioIntervalToEncode**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

@@ -1,8 +1,8 @@
 ---
-description: Rappresenta l'indice dell'elemento nell'oggetto SWbemRefresher padre.
+description: Rappresenta l'indice dell'elemento nel relativo oggetto SWbemRefresher padre.
 ms.assetid: f076eb01-1e71-487d-a1af-687a052b4d67
 ms.tgt_platform: multiple
-title: Proprietà SWbemRefreshableItem. index (wbemdisp. h)
+title: Proprietà SWbemRefreshableItem.Index (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 6ef1e7f4c646337f615d435587e0ae68286a8702
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e3c2da7800b74c45c917936f1a1e1f4cbf7de92c0362e70b446b7918a0c76a19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104132186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312930"
 ---
-# <a name="swbemrefreshableitemindex-property"></a>Proprietà SWbemRefreshableItem. index
+# <a name="swbemrefreshableitemindex-property"></a>SWbemRefreshableItem.Index - proprietà
 
-La proprietà **SWbemRefreshableItem. index** rappresenta l'indice dell'elemento nell'oggetto [**SWbemRefresher**](swbemrefresher.md) padre.
+La **proprietà SWbemRefreshableItem.Index** rappresenta l'indice dell'elemento nell'oggetto [**padre SWbemRefresher.**](swbemrefresher.md)
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -51,11 +51,11 @@ SWbemRefreshableItem.Index As Long
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMREFRESHABLEITEM CLSID<br/>                                                  |
-| IID<br/>                      | \_ISWBEMREFRESHABLEITEM IID<br/>                                                   |
+| CLSID<br/>                    | CLSID \_ SWbemRefreshableItem<br/>                                                  |
+| IID<br/>                      | IID \_ ISWbemRefreshableItem<br/>                                                   |
 
 
 

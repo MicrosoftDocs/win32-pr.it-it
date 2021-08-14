@@ -1,22 +1,22 @@
 ---
-title: Codice di esempio per l'aggiunta di una voce ACE a un file
-description: Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia IADsSecurityUtility per aggiungere una voce ACE a un file.
+title: Codice di esempio per l'aggiunta di una ACE a un file
+description: L'esempio di codice seguente illustra come usare l'interfaccia IADsSecurityUtility per aggiungere una ACE a un file.
 ms.assetid: d47d3ebe-cc14-412d-be27-841e25b43c3a
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'aggiunta di una voce ACE a un file ADSI
+- Codice di esempio per l'aggiunta di una ACE a un file ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ee69dd54c68722777f5c26c418bbb73a700cfac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f90c47892a75ea49b8e9b598b4cf07b02c1e22ed378f9a211175c74335199e5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428424"
 ---
-# <a name="example-code-for-adding-an-ace-to-a-file"></a>Codice di esempio per l'aggiunta di una voce ACE a un file
+# <a name="example-code-for-adding-an-ace-to-a-file"></a>Codice di esempio per l'aggiunta di una ACE a un file
 
-Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia [**IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) per aggiungere una voce ACE a un file.
+L'esempio di codice seguente illustra come usare [**l'interfaccia IADsSecurityUtility**](/windows/desktop/api/Iads/nn-iads-iadssecurityutility) per aggiungere una ACE a un file.
 
 
 ```VB
@@ -270,9 +270,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

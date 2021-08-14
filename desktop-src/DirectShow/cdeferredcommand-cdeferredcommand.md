@@ -1,5 +1,5 @@
 ---
-description: Costruttore CDeferredCommand.CDeferredCommand - Metodo costruttore.
+description: 'Costruttore CDeferredCommand.CDeferredCommand : metodo costruttore.'
 ms.assetid: 0b372fa2-78a9-4e38-813c-f18123716c6d
 title: Costruttore CDeferredCommand.CDeferredCommand (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a10d8bba48902ed2d6fd66da8483cea1ba9aacc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03c45979437c153e70aea16c6b6e48b052b0d84491dcd1880075c66c77c777d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822226"
 ---
 # <a name="cdeferredcommandcdeferredcommand-constructor"></a>Costruttore CDeferredCommand.CDeferredCommand
 
@@ -78,7 +78,7 @@ Puntatore a un valore **HRESULT** restituito.
 *pUnkExecutor* 
 </dt> <dd>
 
-Puntatore all'oggetto che eseererà questo comando.
+Puntatore all'oggetto che esee avrà eseguito questo comando.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Contesto della chiamata.
 
 </dd> <dt>
 
-*cArgs* 
+*Argomenti cArgs* 
 </dt> <dd>
 
 Numero di argomenti passati.
@@ -151,7 +151,7 @@ Valore che indica se l'ora del comando posticipato è nel tempo di flusso (**TRU
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

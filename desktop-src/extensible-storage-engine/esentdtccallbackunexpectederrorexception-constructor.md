@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDTCCallbackUnexpectedErrorException'
+description: Altre informazioni sul costruttore EsentDTCCallbackUnexpectedErrorException
 title: Costruttore EsentDTCCallbackUnexpectedErrorException
 TOCTitle: 'EsentDTCCallbackUnexpectedErrorException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDTCCallbackUnexpectedErrorException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3334aa6fc7c2d29e3a55854bc043c677c262b81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9611b45dac031a5897cc358c344a161197d04475aa44185cdc66ae2c498c0676
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117711172"
 ---
 # <a name="esentdtccallbackunexpectederrorexception-constructor"></a>Costruttore EsentDTCCallbackUnexpectedErrorException
 
 Inizializza una nuova istanza della classe EsentDTCCallbackUnexpectedErrorException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDTCCallbackUnexpectedErrorException()
 
 [Membri di EsentDTCCallbackUnexpectedErrorException](./esentdtccallbackunexpectederrorexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

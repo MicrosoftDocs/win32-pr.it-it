@@ -1,13 +1,13 @@
 ---
-title: Proprietà RemoteApplicationProgram di ITSRemoteProgram2
+title: ITSRemoteProgram2 RemoteApplicationProgram - proprietà
 description: Percorso e nome file del programma RemoteApp.
 ms.assetid: 1e8fc9a5-6622-40e2-b434-a26ce20bd9aa
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RemoteApplicationProgram
-- Servizi Desktop remoto proprietà RemoteApplicationProgram, interfaccia ITSRemoteProgram2
+- Proprietà RemoteApplicationProgram Servizi Desktop remoto
+- Proprietà RemoteApplicationProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram2
 - Interfaccia ITSRemoteProgram2 Servizi Desktop remoto, proprietà RemoteApplicationProgram
-- Servizi Desktop remoto proprietà RemoteApplicationProgram, interfaccia ITSRemoteProgram3
+- Proprietà RemoteApplicationProgram Servizi Desktop remoto, interfaccia ITSRemoteProgram3
 - Interfaccia ITSRemoteProgram3 Servizi Desktop remoto, proprietà RemoteApplicationProgram
 topic_type:
 - apiref
@@ -22,14 +22,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4a69190f4b8a161af8872c9b1dfb4937449c4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33e6d8cdd3dd54ffefdcbeb50b8d70c7b05aebafe852815e7eaa1fb0441636c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756685"
 ---
-# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>Proprietà ITSRemoteProgram2:: RemoteApplicationProgram
+# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>ItsRemoteProgram2::RemoteApplicationProgram - proprietà
 
 Percorso e nome file del programma RemoteApp.
 

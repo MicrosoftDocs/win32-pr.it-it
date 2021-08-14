@@ -1,23 +1,23 @@
 ---
-description: Usa una chiave precondicondisa per l'autenticazione di rete. Questo profilo di esempio usa Wi-Fi di accesso protetto in esecuzione in modalità personale (WPA-Personal).
+description: Usa una chiave precondidifazione per l'autenticazione di rete. Questo profilo di esempio usa Wi-Fi sicurezza dall'accesso protetto in esecuzione in modalità personale (WPA-Personale).
 ms.assetid: f04de28b-a98d-40cd-91c8-e446cf669555
 title: WPA-Personal di profilo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 334076d4b0cf10372ed845265a1fff652f0879b9
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: d196a327672ae31cb52d275be79193860fd89fff29f169be63018f5b848a4268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797421"
 ---
 # <a name="wpa-personal-profile-sample"></a>WPA-Personal di profilo
 
-Questo profilo di esempio usa una chiave precondicazione per l'autenticazione di rete. La chiave viene condivisa con il client e il punto di accesso. Questo profilo di esempio è configurato per l'Wi-Fi protezione dall'accesso protetto in esecuzione in modalità personale (WPA-Personal). Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
+Questo profilo di esempio usa una chiave precondicazione per l'autenticazione di rete. La chiave viene condivisa con il client e il punto di accesso. Questo profilo di esempio è configurato per l'Wi-Fi sicurezza dell'accesso protetto in esecuzione in modalità personale (WPA-Personal). Il protocollo TKIP (Temporal Key Integrity Protocol) viene usato per la crittografia.
 
-**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche vengono implementate in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è stato modificato. L'impostazione predefinita viene modificata in "false" in Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita era "true" in Windows Server 2008 e Windows Vista. Per altre informazioni, vedere la descrizione dell'elemento dello schema [**autoSwitch.**](wlan-profileschema-autoswitch-wlanprofile-element.md)
+**Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato:** Le modifiche vengono implementate Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato per ottimizzare le prestazioni di rete wireless. L'impostazione predefinita per [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando questo elemento non è impostato in un profilo LAN wireless è stato modificato. L'impostazione predefinita viene modificata in "false" Windows 7 e Windows Server 2008 R2 con il servizio LAN wireless installato. L'impostazione predefinita è "true" Windows Server 2008 e Windows Vista. Per altre informazioni, vedere la descrizione dell'elemento dello schema [**autoSwitch.**](wlan-profileschema-autoswitch-wlanprofile-element.md)
 
-**Windows XP con SP3 e API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
+**Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Il [**nome**](wlan-profileschema-name-wlanprofile-element.md) figlio dell'elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) viene ignorato. Il nome del profilo, archiviato nell'archivio profili, deriva dal nome [**figlio**](wlan-profileschema-name-ssid-element.md) [**dell'elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

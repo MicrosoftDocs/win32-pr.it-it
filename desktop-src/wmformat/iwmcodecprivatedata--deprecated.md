@@ -1,9 +1,9 @@
 ---
-title: IWMCodecPrivateData (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | IWMCodecPrivateData (Wmcodecdsp. h)
+title: IWMCodecPrivateData (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | IWMCodecPrivateData (Wmcodecdsp.h)
 ms.assetid: a2c7e727-52ce-495e-b538-5e1bd2ad4ce4
 keywords:
-- IWMCodecPrivateData Windows Media Format
+- Formato windows media IWMCodecPrivateData
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c51fe9c1df49dfd880fad74a0c4ec91b76c15da5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9da5870c3d724a6396aa8153e77a0c02ce0d20553e82d607c7688549122e328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118198240"
 ---
 # <a name="iwmcodecprivatedata"></a>IWMCodecPrivateData
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

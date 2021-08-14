@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentOutOfThreadsException'
+description: Altre informazioni sul costruttore EsentOutOfThreadsException
 title: Costruttore EsentOutOfThreadsException
 TOCTitle: 'EsentOutOfThreadsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOutOfThreadsException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5484da68d13488eaa50ca19889f0d21658361594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2543fc6887849cd594fc1df6085a5cd54854034ad3eb0a84c0e5b75c3e926a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118492288"
 ---
 # <a name="esentoutofthreadsexception-constructor"></a>Costruttore EsentOutOfThreadsException
 
 Inizializza una nuova istanza della classe EsentOutOfThreadsException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentOutOfThreadsException()
 
 [Membri di EsentOutOfThreadsException](./esentoutofthreadsexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

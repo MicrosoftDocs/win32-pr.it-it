@@ -1,7 +1,7 @@
 ---
-description: Il metodo KsQueryMediums recupera i supporti supportati da un PIN.
+description: Il metodo KsQueryMediums recupera i medie supportati da un pin.
 ms.assetid: 554bf968-6054-4f9d-95db-facf0444641f
-title: 'Metodo IKsPin:: KsQueryMediums (ksproxy. h)'
+title: Metodo IKsPin::KsQueryMediums (Ksproxy.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: f037317b49bc54f5ea9db5b7a4ae039ec0a9970d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 33edb7cb2ca959080878f7ce735930ceec9d95dc2f829aef6d50f72d764f2f00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103746575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398937"
 ---
-# <a name="ikspinksquerymediums-method"></a>Metodo IKsPin:: KsQueryMediums
+# <a name="ikspinksquerymediums-method"></a>Metodo IKsPin::KsQueryMediums
 
-Il `KsQueryMediums` metodo recupera i supporti supportati da un PIN.
+Il `KsQueryMediums` metodo recupera i medie supportati da un pin.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,28 +40,28 @@ HRESULT KsQueryMediums(
 
 <dl> <dt>
 
-*PPMI* \[ out\]
+*ppmi* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un puntatore a una struttura di [**\_ elementi KSMULTIPLE**](ksmultiple-item.md) .
+Indirizzo di un puntatore a [**una struttura KSMULTIPLE \_ ITEM.**](ksmultiple-item.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo restituisce una struttura di [**\_ elementi KSMULTIPLE**](ksmultiple-item.md) allocata dall'attività, che è seguita da zero o più strutture [**REGPINMEDIUM**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) . Il membro **count** della struttura **dell' \_ elemento KSMULTIPLE** specifica il numero di strutture **REGPINMEDIUM** . Ogni struttura **REGPINMEDIUM** definisce un supporto supportato dal pin.
+Questo metodo restituisce una struttura [**KSMULTIPLE \_ ITEM**](ksmultiple-item.md) allocata dall'attività, seguita da zero o più strutture [**REGPINMEDIUM.**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) Il **membro Count** della struttura **KSMULTIPLE \_ ITEM** specifica il numero di **strutture REGPINMEDIUM.** Ogni **struttura REGPINMEDIUM** definisce un supporto supportato dal pin.
 
-Il chiamante deve liberare le strutture restituite, usando la funzione **CoTaskMemFree** .
+Il chiamante deve liberare le strutture restituite usando la **funzione CoTaskMemFree.**
 
-Prima di ksproxy. h, è necessario includere KS. h.
+È necessario includere Ks.h prima di Ksproxy.h.
 
 ## <a name="examples"></a>Esempio
 
-La funzione helper seguente tenta di trovare una corrispondenza con un pin rispetto a un supporto specificato.
+La funzione helper seguente tenta di trovare una corrispondenza tra un pin e un supporto specificato.
 
 
 ```C++
@@ -111,8 +111,8 @@ HRESULT FindMatchingMedium(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Ksproxy. h</dt> </dl>    |
-| Libreria<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ksproxy.h</dt> </dl>    |
+| Libreria<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -126,7 +126,7 @@ HRESULT FindMatchingMedium(
 [**Interfaccia IKsPin**](ikspin.md)
 </dt> <dt>
 
-[Filtri driver di classe WDM](wdm-class-driver-filters.md)
+[Filtri del driver di classe WDM](wdm-class-driver-filters.md)
 </dt> </dl>
 
  

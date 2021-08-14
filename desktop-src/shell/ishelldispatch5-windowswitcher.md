@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 44a6411c-bcbc-4ef6-b5dc-7bdb4d482c6a
-ms.openlocfilehash: d4e5241625e80f9df254916a1cbb578f466c1c3c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 035e0689c10145a70cb6fe963bd50b880bef13b0b815ebfcc4b0b96bccdab5c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220957"
 ---
 # <a name="ishelldispatch5windowswitcher-method"></a>Metodo IShellDispatch5.WindowSwitcher
 
@@ -61,8 +61,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
-description: Struttura di supporto che contiene informazioni sulla struttura del membro.
+description: Struttura helper contenente informazioni sulla struttura dei membri.
 ms.assetid: 2fbe5e97-047e-48bf-9413-dd297632288a
-title: Struttura D3DXSHADER_STRUCTMEMBERINFO (D3dx9shader. h)
+title: D3DXSHADER_STRUCTMEMBERINFO struttura (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 01782331459956c0878b46861db0d4f11e19c7dc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6f41c3d1911a046165d929bee50ef4e0b5691cebee9d90007bc367636e343731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524214"
 ---
-# <a name="d3dxshader_structmemberinfo-structure"></a>\_Struttura D3DXSHADER STRUCTMEMBERINFO
+# <a name="d3dxshader_structmemberinfo-structure"></a>Struttura \_ STRUCTMEMBERINFO D3DXSHADER
 
-Struttura di supporto che contiene informazioni sulla struttura del membro.
+Struttura helper contenente informazioni sulla struttura dei membri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,18 +47,18 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset dall'inizio della struttura, in byte, alla stringa che contiene il nome del membro della struttura.
+Offset dall'inizio di questa struttura, in byte, alla stringa che contiene il nome del membro della struttura.
 
 </dd> <dt>
 
-**TypeInfo**
+**Typeinfo**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Offset dall'inizio della struttura, in byte, alla stringa che contiene le informazioni sul tipo. Vedere [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md).
+Offset dall'inizio di questa struttura, in byte, alla stringa che contiene le informazioni sul tipo. Vedere [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md).
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Offset dall'inizio della struttura, in byte, alla stringa che contiene le inform
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Offset dall'inizio della struttura, in byte, alla stringa che contiene le inform
 [Strutture D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
-[**\_TYPEINFO D3DXSHADER**](d3dxshader-typeinfo.md)
+[**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md)
 </dt> </dl>
 
  

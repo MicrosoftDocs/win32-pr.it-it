@@ -1,7 +1,7 @@
 ---
-description: GUID dell'applicazione del Sottoscrittore.
+description: GUID dell'applicazione del sottoscrittore.
 ms.assetid: 46c91cae-ca31-4eac-baa8-d36910917f0f
-title: 'Proprietà IEventSubscription3:: SubscriberApplicationID'
+title: Proprietà IEventSubscription3::SubscriberApplicationID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c2e726d97821a7a7143f4971a4918227235adb9c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 723a64b4e34c58b49f0ffa0851af836a536ff86ea23ee1b966a8ec243267950c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306369"
 ---
-# <a name="ieventsubscription3subscriberapplicationid-property"></a>Proprietà IEventSubscription3:: SubscriberApplicationID
+# <a name="ieventsubscription3subscriberapplicationid-property"></a>Proprietà IEventSubscription3::SubscriberApplicationID
 
-GUID dell'applicazione del Sottoscrittore.
+GUID dell'applicazione del sottoscrittore.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -44,11 +44,11 @@ HRESULT get_SubscriberApplicationID(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa che contiene il GUID dell'applicazione del Sottoscrittore.
+Stringa contenente il GUID dell'applicazione sottoscrittore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, e \_ OutOfMemory, e \_ imprevisto, e ha \_ esito negativo e S \_ OK.
+Questo metodo può restituire i valori restituiti standard E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL e S \_ OK.
 
 ## <a name="requirements"></a>Requisiti
 

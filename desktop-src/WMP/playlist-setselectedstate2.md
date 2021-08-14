@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. setSelectedState2
+title: PLAYLIST.setSelectedState2
 description: Il metodo setSelectedState2 imposta lo stato selezionato dell'elemento con l'indice specificato nell'elemento PLAYLIST.
 ms.assetid: 990b834a-f7ed-45b8-99e1-3efd7f4447f4
 keywords:
-- PLAYLIST. setSelectedState2 Windows Media Player
+- PLAYLIST.setSelectedState2 Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e1a4e317543765fb24755516a0637b16958ad679
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f952d00486fe2419ab48592c7624299ef466c5dfa2b96d53fefb308fc537488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335813"
 ---
-# <a name="playlistsetselectedstate2"></a>PLAYLIST. setSelectedState2
+# <a name="playlistsetselectedstate2"></a>PLAYLIST.setSelectedState2
 
-Il metodo **setSelectedState2** imposta lo stato selezionato dell'elemento con l'indice specificato nell'elemento **playlist** .
+Il **metodo setSelectedState2** imposta lo stato selezionato dell'elemento con l'indice specificato nell'elemento **PLAYLIST.**
 
 ``` syntax
         elementID.setSelectedState2(item, selected)
@@ -32,17 +32,17 @@ Il metodo **setSelectedState2** imposta lo stato selezionato dell'elemento con l
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*elemento*
+<span id="item"></span><span id="ITEM"></span>*Elemento*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice di un elemento nella playlist.
+**Numero** (**long**) che indica l'indice di un elemento nella playlist.
 
 </dd> <dt>
 
-<span id="selected"></span><span id="SELECTED"></span>*selezionato*
+<span id="selected"></span><span id="SELECTED"></span>*Selezionato*
 </dt> <dd>
 
-**Valore booleano** che indica se l'elemento specificato deve essere selezionato (true) o deselezionato (false).
+**Valore** booleano che indica se l'elemento specificato deve essere selezionato (true) o deselezionato (false).
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può funzionare con playlist annidate e sostituisce il metodo **setSelectedState** che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel parametro *Item* .
+Questo metodo può funzionare con playlist annidate e sostituisce il **metodo setSelectedState** che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel *parametro item.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Questo metodo può funzionare con playlist annidate e sostituisce il metodo **se
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -68,10 +68,10 @@ Questo metodo può funzionare con playlist annidate e sostituisce il metodo **se
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. setSelectedState**](playlist-setselectedstate.md)
+[**PLAYLIST.setSelectedState**](playlist-setselectedstate.md)
 </dt> </dl>
 
  

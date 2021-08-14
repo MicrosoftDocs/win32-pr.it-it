@@ -1,9 +1,9 @@
 ---
-title: funzione glHint (GL. h)
+title: Funzione glHint (Gl.h)
 description: La funzione glHint specifica hint specifici dell'implementazione.
 ms.assetid: 6d03e107-321a-45ee-9ce7-25fa9cab32d9
 keywords:
-- funzione glHint OpenGL
+- Funzione glHint OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2772c76868c741660486184e5ab51bd193d3667a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7602b4f0af35c8bc9aeb38cdcb613e30ded907ced75e2241c8ed9e23b57fd98f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118359647"
 ---
-# <a name="glhint-function"></a>glHint (funzione)
+# <a name="glhint-function"></a>Funzione glHint
 
-La funzione **glHint** specifica hint specifici dell'implementazione.
+La **funzione glHint** specifica hint specifici dell'implementazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,11 +50,11 @@ Costante simbolica che indica il comportamento da controllare. Vengono accettate
 
 | Valore                                                                                                                                                                                                              | Significato                                                                                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_FOG_HINT"></span><span id="gl_fog_hint"></span><dl> <dt>**\_hint di nebbia GL \_**</dt> </dl>                                                           | Indica l'accuratezza del calcolo di nebbia. Se il calcolo della nebbia per pixel non è supportato in modo efficiente dall'implementazione di OpenGL, l'hinting GL \_ dont \_ care o GL più \_ veloci possono determinare un calcolo per vertice degli effetti di nebbia.<br/>                                                                          |
-| <span id="GL_LINE_SMOOTH_HINT"></span><span id="gl_line_smooth_hint"></span><dl> <dt>**\_ \_ hint uniforme linea \_ GL**</dt> </dl>                                  | Indica la qualità di campionamento delle linee con antialias. L'hinting GL \_ più gradevole può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione di filtro di dimensioni maggiori.<br/>                                                                                                               |
-| <span id="GL_PERSPECTIVE_CORRECTION_HINT"></span><span id="gl_perspective_correction_hint"></span><dl> <dt>**HINT per la \_ correzione della prospettiva GL \_ \_**</dt> </dl> | Indica la qualità del colore e l'interpolazione delle coordinate di trama. Se l'interpolazione dei parametri con correzione della prospettiva non è supportata in modo efficiente dall'implementazione di OpenGL, l'hinting GL \_ dont \_ care o GL \_ più veloci possono produrre un'interpolazione lineare semplice di colori e/o coordinate di trama.<br/> |
-| <span id="GL_POINT_SMOOTH_HINT"></span><span id="gl_point_smooth_hint"></span><dl> <dt>**\_ \_ Suggerimento smussato del punto GL \_**</dt> </dl>                               | Indica la qualità di campionamento dei punti antialias. L'hinting GL \_ più gradevole può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione di filtro di dimensioni maggiori.<br/>                                                                                                              |
-| <span id="GL_POLYGON_SMOOTH_HINT"></span><span id="gl_polygon_smooth_hint"></span><dl> <dt>**\_hint Smooth poligono GL \_ \_**</dt> </dl>                         | Indica la qualità di campionamento dei poligoni con antialias. L'hinting GL \_ più gradevole può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione di filtro di dimensioni maggiori.<br/>                                                                                                            |
+| <span id="GL_FOG_HINT"></span><span id="gl_fog_hint"></span><dl> <dt>**SUGGERIMENTO \_ GL \_ OSANNA**</dt> </dl>                                                           | Indica l'accuratezza del calcolo della nebbia. Se il calcolo della nebbia per pixel non è supportato in modo efficiente dall'implementazione OpenGL, l'hintING GL DONT CARE o GL FASTEST può comportare il calcolo per vertice degli effetti \_ \_ della \_ nebbia.<br/>                                                                          |
+| <span id="GL_LINE_SMOOTH_HINT"></span><span id="gl_line_smooth_hint"></span><dl> <dt>**SUGGERIMENTO \_ DI \_ ARROTONDAMENTO LINEA GL \_**</dt> </dl>                                  | Indica la qualità di campionamento delle linee antialias. L'hint GL NICEST può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione \_ di filtro più grande.<br/>                                                                                                               |
+| <span id="GL_PERSPECTIVE_CORRECTION_HINT"></span><span id="gl_perspective_correction_hint"></span><dl> <dt>**SUGGERIMENTO \_ DI \_ CORREZIONE DELLA PROSPETTIVA GL \_**</dt> </dl> | Indica la qualità dell'interpolazione delle coordinate di colore e trama. Se l'interpolazione dei parametri con correzione della prospettiva non è supportata in modo efficiente dall'implementazione OpenGL, l'hintING GL DONT CARE o GL FASTEST può comportare una semplice interpolazione lineare di colori e/o coordinate di \_ \_ \_ trama.<br/> |
+| <span id="GL_POINT_SMOOTH_HINT"></span><span id="gl_point_smooth_hint"></span><dl> <dt>**SUGGERIMENTO \_ DI \_ ARROTONDAMENTO DEL PUNTO GL \_**</dt> </dl>                               | Indica la qualità di campionamento dei punti antialias. L'hint GL NICEST può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione \_ di filtro più grande.<br/>                                                                                                              |
+| <span id="GL_POLYGON_SMOOTH_HINT"></span><span id="gl_polygon_smooth_hint"></span><dl> <dt>**HINT DI \_ \_ ARROTONDAMENTO POLIGONO GL \_**</dt> </dl>                         | Indica la qualità di campionamento dei poligoni antialias. L'hint GL NICEST può comportare la generazione di più frammenti di pixel durante la rasterizzazione, se viene applicata una funzione \_ di filtro più grande.<br/>                                                                                                            |
 
 
 
@@ -65,15 +65,15 @@ Costante simbolica che indica il comportamento da controllare. Vengono accettate
 *mode* 
 </dt> <dd>
 
-Costante simbolica che indica il comportamento desiderato. Vengono accettate le seguenti costanti simboliche.
+Costante simbolica che indica il comportamento desiderato. Vengono accettate le costanti simboliche seguenti.
 
 
 
 | Valore                                                                                                                                                       | Significato                                                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <span id="GL_FASTEST"></span><span id="gl_fastest"></span><dl> <dt>**CONTABILITÀ più \_ veloce**</dt> </dl>        | È consigliabile scegliere l'opzione più efficiente.<br/>                    |
-| <span id="GL_NICEST"></span><span id="gl_nicest"></span><dl> <dt>**GL più \_ bello**</dt> </dl>           | È consigliabile scegliere l'opzione più corretta, o di qualità più elevata.<br/> |
-| <span id="GL_DONT_CARE"></span><span id="gl_dont_care"></span><dl> <dt>**GL \_ dont \_ care**</dt> </dl> | Il client non ha preferenze.<br/>                          |
+| <span id="GL_FASTEST"></span><span id="gl_fastest"></span><dl> <dt>**GL \_ PIÙ VELOCE**</dt> </dl>        | È consigliabile scegliere l'opzione più efficiente.<br/>                    |
+| <span id="GL_NICEST"></span><span id="gl_nicest"></span><dl> <dt>**GL \_ NICEST**</dt> </dl>           | È consigliabile scegliere l'opzione più corretta o di massima qualità.<br/> |
+| <span id="GL_DONT_CARE"></span><span id="gl_dont_care"></span><dl> <dt>**GL \_ DONT \_ CARE**</dt> </dl> | Il client non ha una preferenza.<br/>                          |
 
 
 
@@ -87,24 +87,24 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-I codici di errore seguenti possono essere recuperati dalla funzione [**glGetError**](glgeterror.md) .
+I codici di errore seguenti possono essere recuperati dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumerazione GL non valida \_**</dt> </dl>      | la *destinazione* o la *modalità* non è un valore accettato.<br/>                                                                              |
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERAZIONE GL \_ NON \_ VALIDA**</dt> </dl>      | *target* o *mode* non è un valore accettato.<br/>                                                                              |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Quando è disponibile spazio per l'interpretazione, è possibile controllare alcuni aspetti del comportamento di OpenGL con hint. È possibile specificare un hint con due argomenti. Il parametro di *destinazione* è una costante simbolica che indica il comportamento da controllare e la *modalità* è un'altra costante simbolica che indica il comportamento desiderato.
+Quando c'è spazio per l'interpretazione, è possibile controllare determinati aspetti del comportamento di OpenGL con suggerimenti. Specificare un hint con due argomenti. Il *parametro* target è una costante simbolica che indica il comportamento da controllare e *mode* è un'altra costante simbolica che indica il comportamento desiderato.
 
-Sebbene gli aspetti di implementazione che è possibile suggerire siano ben definiti, l'interpretazione degli hint dipende dall'implementazione di.
+Anche se gli aspetti di implementazione che possono essere hintati sono ben definiti, l'interpretazione degli hint dipende dall'implementazione.
 
-La funzione **glHint** può essere ignorata.
+La **funzione glHint** può essere ignorata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -114,8 +114,8 @@ La funzione **glHint** può essere ignorata.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -127,7 +127,7 @@ La funzione **glHint** può essere ignorata.
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> </dl>
 
  

@@ -4,17 +4,17 @@ description: Con una casella di controllo, gli utenti possono scegliere tra due 
 ms.assetid: 7c39987d-807b-41c1-9788-65c3d468b976
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 20cf5bc4fd13b974f87fbb33a5fea9a365f99735
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 29666991d0a0659f7ff3a95f12953504b70c6dc782049ac8d93d70df73afa5d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118040689"
 ---
 # <a name="check-boxes"></a>Caselle
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
 Con una casella di controllo, gli utenti possono scegliere tra due scelte chiaramente opposte. L'etichetta della casella di controllo indica lo stato selezionato, mentre il significato dello stato deselezionato deve essere l'opposto non ambiguo dello stato selezionato. Di conseguenza, le caselle di controllo devono essere usate solo per attivare o disattivare un'opzione **o per selezionare o deselezionare un elemento.**
 
@@ -31,7 +31,7 @@ Gruppo tipico di caselle di controllo.
 
 Per decidere, prendi in considerazione queste domande:
 
--   **La casella di controllo viene usata per attivare o disattivare un'opzione o per selezionare o deselezionare un elemento?** Se non è così, usa un altro controllo.
+-   **La casella di controllo consente di attivare o disattivare un'opzione o di selezionare o deselezionare un elemento?** Se non è così, usa un altro controllo.
 -   **Gli stati selezionati e deselezionati sono opposti chiari e non ambigui?** In caso contrario, usare [i pulsanti di opzione](ctrl-radio-buttons.md) o un elenco a [discesa](/windows/desktop/uxguide/ctrl-drop) in modo da poter etichettare gli stati in modo indipendente.
 -   **Se usato in un gruppo, il gruppo comprende scelte indipendenti, tra cui gli utenti possono scegliere zero o più?** In caso contrario, prendere in considerazione i controlli per le scelte dipendenti, ad esempio i pulsanti di opzione e [le visualizzazioni albero delle caselle di controllo.](ctrl-tree-views.md)
 -   **Se usato in un gruppo, il gruppo comprende scelte dipendenti, tra cui gli utenti devono sceglierne una o più?** In tal caso, usare un gruppo di caselle di controllo e gestire l'errore quando nessuna delle opzioni è selezionata.
@@ -79,7 +79,7 @@ Le caselle di controllo hanno diversi modelli di utilizzo:
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Una scelta individuale** Una singola casella di controllo viene usata per selezionare una singola scelta. <br/>                                                                                                             | ![Screenshot di una casella di controllo con promemoria etichetta ](images/ctrl-check-boxes-image6.png)<br/> Per una singola scelta viene utilizzata una singola casella di controllo.<br/>                                                                                                                                                                                                                                                                                                                        |
 | **Scelte indipendenti (zero o più)** Un gruppo di caselle di controllo viene usato per selezionare da un set di zero o più scelte.<br/>                                                                              | A differenza dei controlli a selezione singola, ad esempio [i pulsanti di](ctrl-radio-buttons.md)opzione , gli utenti possono selezionare qualsiasi combinazione di opzioni in un gruppo di caselle di controllo.<br/> ![Screenshot di due delle tre caselle di controllo selezionate ](images/ctrl-check-boxes-image7.png)<br/> Un gruppo di caselle di controllo viene utilizzato per le scelte indipendenti.<br/>                                                                                                                                                  |
-| **Scelte dipendenti (una o più)** È anche possibile usare un gruppo di caselle di controllo per eseguire una selezione da un set di una o più opzioni.<br/>                                                                         | **potrebbe essere necessario rappresentare una selezione di una o più scelte dipendenti.** Poiché microsoft?windows non ha un controllo che supporta direttamente questo tipo di input, la soluzione migliore consiste nell'usare un gruppo di caselle di controllo e gestire l'errore quando non è selezionata nessuna delle opzioni.<br/> ![Screenshot di una delle due caselle di controllo selezionate ](images/ctrl-check-boxes-image8.png)<br/> Viene utilizzato un gruppo di caselle di controllo in cui è necessario selezionare almeno un protocollo.<br/> |
+| **Scelte dipendenti (una o più)** È anche possibile utilizzare un gruppo di caselle di controllo per eseguire una selezione da un set di una o più opzioni.<br/>                                                                         | **potrebbe essere necessario rappresentare una selezione di una o più scelte dipendenti.** Poiché microsoft?windows non ha un controllo che supporta direttamente questo tipo di input, la soluzione migliore consiste nell'usare un gruppo di caselle di controllo e gestire l'errore quando non è selezionata nessuna delle opzioni.<br/> ![Screenshot di una delle due caselle di controllo selezionate ](images/ctrl-check-boxes-image8.png)<br/> Viene utilizzato un gruppo di caselle di controllo in cui è necessario selezionare almeno un protocollo.<br/> |
 | **Scelta mista** Oltre agli stati selezionati e deselezionati, le caselle di controllo hanno anche uno stato misto per la selezione multipla per indicare che l'opzione è impostata per alcuni, ma non per tutti gli oggetti.<br/> | ![Screenshot di una casella di controllo di sola lettura blu a tinta unita ](images/ctrl-check-boxes-image9.png)<br/> Casella di controllo con stato misto.<br/>                                                                                                                                                                                                                                                                                                                                                      |
 
 
@@ -137,7 +137,7 @@ Le caselle di controllo hanno diversi modelli di utilizzo:
 
     **Corretto:**
 
-    ![Screenshot di un indicatore di stato parzialmente riempito ](images/ctrl-check-boxes-image16.png)
+    ![Screenshot di un indicatore di stato parzialmente pieno ](images/ctrl-check-boxes-image16.png)
 
     Esempio di un indicatore di stato tipico.
 
@@ -152,13 +152,13 @@ Le caselle di controllo hanno diversi modelli di utilizzo:
 -   **Non usare la selezione di una casella di controllo per**:
     -   Eseguire comandi.
     -   Visualizzare altre finestre, ad esempio una finestra di dialogo per raccogliere più input.
-    -   Visualizzare dinamicamente altri controlli correlati al controllo selezionato (le utilità per la lettura dello schermo non possono rilevare tali eventi).
+    -   Visualizza in modo dinamico altri controlli correlati al controllo selezionato (le utilità per la lettura dello schermo non sono in grado di rilevare tali eventi).
 
-### <a name="dont-show-this-item-again"></a>Non visualizzare questa opzione <item> di nuovo
+### <a name="dont-show-this-item-again"></a>Non visualizzare questo <item> di nuovo
 
--   **È consigliabile usare l'opzione Non visualizzare più questa opzione per consentire agli utenti di eliminare una finestra di dialogo ricorrente solo se non è disponibile <item> un'alternativa migliore.** Provare a determinare in anticipo se gli utenti hanno realmente bisogno della finestra di dialogo. in caso contrario, visualizzare sempre il dialogo e, in caso contrario, eliminarlo.
+-   **È consigliabile usare l'opzione Non visualizzare più questa opzione per consentire agli utenti di eliminare una finestra di dialogo ricorrente solo se non esiste <item> un'alternativa migliore.** Provare a determinare in anticipo se gli utenti necessitano effettivamente del dialogo; In caso contrario, visualizzare sempre il dialogo e, in caso contrario, eliminarlo.
 
-Per altre linee guida ed esempi, vedere [Finestre di dialogo](win-dialog-box.md).
+Per altre linee guida ed esempi, vedere [Finestre di dialogo.](win-dialog-box.md)
 
 ### <a name="subordinate-controls"></a>Controlli subordinati
 
@@ -170,13 +170,13 @@ Per altre linee guida ed esempi, vedere [Finestre di dialogo](win-dialog-box.md)
 
 -   **Lasciare abilitate le caselle di testo modificabili dipendenti e gli elenchi a discesa se condividono l'etichetta della casella di controllo.** Quando gli utenti digitano o incollano qualsiasi elemento nella casella, selezionare automaticamente l'opzione corrispondente. Questa operazione semplifica l'interazione.
 
-    ![Screenshot delle caselle di testo intestazione e piè di pagina ](images/ctrl-check-boxes-image19.png)
+    ![Screenshot delle caselle di testo dell'intestazione e del piè di pagina ](images/ctrl-check-boxes-image19.png)
 
-    In questo esempio l'immissione di un'intestazione o di un piè di pagina seleziona automaticamente l'opzione .
+    In questo esempio, l'immissione di un'intestazione o di un piè di pagina seleziona automaticamente l'opzione .
 
--   Se si annidare le caselle di controllo con pulsanti di opzione o altre caselle di controllo, disabilitare questi controlli **subordinati** fino a quando non viene selezionata l'opzione di alto livello . In questo modo si evita confusione sul significato dei controlli subordinati.
+-   Se si annidare caselle di controllo con pulsanti di opzione o altre caselle di controllo, disabilitare questi controlli subordinati fino a quando non viene selezionata **l'opzione di alto livello**. In questo modo si evita confusione sul significato dei controlli subordinati.
 -   Rendere contigui i controlli subordinati a una casella di controllo con la casella di controllo nell'ordine di tabulazione.
--   **Se la selezione di un'opzione implica la selezione di caselle di controllo subordinate, selezionare in modo esplicito tali caselle di controllo per deselezionare la relazione.**
+-   **Se la selezione di un'opzione implica la selezione di caselle di controllo subordinate, selezionarle in modo esplicito per rendere chiara la relazione.**
 
     **Non corretto:**
 
@@ -190,29 +190,29 @@ Per altre linee guida ed esempi, vedere [Finestre di dialogo](win-dialog-box.md)
 
     In questo esempio le caselle di controllo subordinate sono selezionate, rendendo deselezionata la relazione con l'opzione selezionata.
 
--   **Usare le caselle di controllo dipendenti se le alternative aggiungono complessità non necessaria.** Anche se le caselle di controllo devono essere opzioni indipendenti, a volte alternative come i pulsanti di opzione aggiungono una complessità non necessaria.
+-   **Usare le caselle di controllo dipendenti se le alternative aggiungono complessità non necessaria.** Anche se le caselle di controllo devono essere opzioni indipendenti, a volte alternative come i pulsanti di opzione aggiungono complessità non necessaria.
 
     **Corretto:**
 
     ![Screenshot di pulsanti e caselle di controllo confusi ](images/ctrl-check-boxes-image22.png)
 
-    In questo esempio l'uso dei pulsanti di opzione è accurato, ma crea una complessità non necessaria.
+    In questo esempio l'uso dei pulsanti di opzione è accurato, ma crea complessità non necessaria.
 
     **Migliore:**
 
     ![Screenshot solo delle caselle di controllo ](images/ctrl-check-boxes-image23.png)
 
-    In questo esempio l'uso delle caselle di controllo è più semplice e consente agli utenti di concentrarsi sulla selezione delle opzioni desiderate anziché sulla relazione complessa.
+    In questo esempio, l'uso delle caselle di controllo è più semplice e consente agli utenti di concentrarsi sulla selezione delle opzioni desiderate anziché sulla relazione complessa.
 
-    **Importante: applicare questa linea guida solo in circostanze estremamente rare,** quando si visualizzano le dipendenze aggiunge una complessità significativa senza aggiungere chiarezza. Nell'esempio precedente è improbabile che gli utenti tentino di scegliere apice e pedice e, in caso contrario, sarebbe facile capire che si tratta di opzioni esclusive.
+    **Importante: applicare queste linee guida solo in circostanze estremamente rare,** quando la visualizzazione delle dipendenze aggiunge una complessità significativa senza maggiore chiarezza. Nell'esempio precedente è improbabile che gli utenti tentino di scegliere sia l'apice che l'indice e, in caso contrario, sarebbe facile comprendere che si trattasse di opzioni esclusive.
 
 ### <a name="default-values"></a>Valori predefiniti
 
--   Se una casella di controllo è per un'opzione utente, impostare il più sicuro (per evitare la perdita di dati o l'accesso al sistema), lo stato più sicuro e privato **per impostazione predefinita.** Se la sicurezza e la sicurezza non sono fattori, selezionare il valore più probabile o conveniente.
+-   Se una casella di controllo è per un'opzione utente, impostare lo stato più sicuro (per evitare la perdita di dati o l'accesso al sistema), lo stato più sicuro e privato **per impostazione predefinita.** Se la sicurezza e la sicurezza non sono fattori, selezionare il valore più probabile o conveniente.
 
 ## <a name="recommended-sizing-and-spacing"></a>Dimensioni e spaziatura consigliate
 
-![Figura del ridimensionamento e della spaziatura delle caselle di controllo suggerite ](images/ctrl-check-boxes-image24.png)
+![figura del ridimensionamento e della spaziatura delle caselle di controllo suggerite ](images/ctrl-check-boxes-image24.png)
 
 Dimensioni e spaziatura consigliate per le caselle di controllo.
 
@@ -220,52 +220,52 @@ Dimensioni e spaziatura consigliate per le caselle di controllo.
 
 **Etichette delle caselle di controllo**
 
--   Etichettare ogni casella di controllo.
--   Assegnare una chiave [di accesso univoca](glossary.md) a ogni etichetta. Per le linee guida, vedere [Tastiera](inter-keyboard.md).
+-   Assegnare un'etichetta a ogni casella di controllo.
+-   Assegnare una chiave [di accesso univoca](glossary.md) a ogni etichetta. Per le linee guida, vedere [Tastiera.](inter-keyboard.md)
 -   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
--   Scrivere l'etichetta come frase o frase imperativa e non usare la punteggiatura finale.
-    -   **Eccezione:** Se un'etichetta di casella di controllo etichetta anche un controllo subordinato che lo segue, terminare l'etichetta con due punti.
+-   Scrivere l'etichetta come frase o frase imperativa e non usare punteggiatura finale.
+    -   **Eccezione:** Se un'etichetta di casella di controllo etichetta anche un controllo subordinato che la segue, terminare l'etichetta con due punti.
 -   Scrivere l'etichetta in modo che descriva lo stato selezionato della casella di controllo.
 -   Per un gruppo di caselle di controllo, usare la formulazione parallela e provare a mantenere la lunghezza circa la stessa per tutte le etichette.
 -   Per un gruppo di caselle di controllo, concentrare il testo dell'etichetta sulle differenze tra le opzioni. Se tutte le opzioni hanno lo stesso testo introduttivo, spostare il testo nell'etichetta del gruppo.
--   Usare formulazioni positive. Non aggiungere frasi a un'etichetta in modo che la selezione di una casella di controllo non implica l'esecuzione di un'azione.
+-   Usare la formulazione positiva. Non formulare un'etichetta in modo che la selezione di una casella di controllo non comporta l'esecuzione di un'azione.
 
     -   **Eccezione: non visualizzare più le <item> caselle** di controllo.
 
     **Non corretto:**
 
-    ![Screenshot dell'etichetta negativa "spegni"](images/ctrl-check-boxes-image25.png)
+    ![Screenshot dell'etichetta negativa 'turn off'](images/ctrl-check-boxes-image25.png)
 
-    In questo esempio l'opzione non usa formulazioni positive.
+    In questo esempio l'opzione non usa la formulazione positiva.
 
--   Descrivere solo l'opzione con l'etichetta . Tenere brevi le etichette in modo che sia facile fare riferimento a esse nei messaggi e nella documentazione. Se l'opzione richiede ulteriori spiegazioni, fornire la spiegazione in un controllo [testo statico](./glossary.md) usando frasi complete e terminando la punteggiatura.
+-   Descrivere solo l'opzione con l'etichetta. Tenere brevi le etichette in modo che sia facile fare riferimento a esse nei messaggi e nella documentazione. Se l'opzione richiede un'ulteriore spiegazione, fornire la spiegazione in un controllo di testo [statico](./glossary.md) usando frasi complete e terminando la punteggiatura.
 
     > [!Note]
     >
-    > L'aggiunta di una spiegazione a una casella di controllo in un gruppo non significa che sia necessario fornire spiegazioni per tutte le caselle di controllo nel gruppo. Specificare le informazioni rilevanti nell'etichetta, se possibile, e usare le spiegazioni solo quando necessario. Non limitarsi a rievalutare l'etichetta per garantire la coerenza.
+    > L'aggiunta di una spiegazione a una casella di controllo in un gruppo non significa che sia necessario fornire spiegazioni per tutte le caselle di controllo nel gruppo. Se possibile, fornire le informazioni rilevanti nell'etichetta e usare le spiegazioni solo quando necessario. Non limitarsi a rievalutare l'etichetta per la coerenza.
 
      
 
     ![Screenshot della casella di controllo, dell'etichetta e della descrizione ](images/ctrl-check-boxes-image26.png)
 
-    In questo esempio, sotto un'etichetta di casella di controllo è presente testo esplicativo aggiuntivo.
+    In questo esempio, sotto l'etichetta di una casella di controllo è presente altro testo esplicativo.
 
 -   Se un'opzione è fortemente consigliata, è consigliabile aggiungere "(scelta consigliata)" all'etichetta. Assicurarsi di aggiungere all'etichetta del controllo, non le note supplementari.
--   Se è necessario usare etichette su più righe, allineare la parte superiore dell'etichetta alla casella di controllo .
--   Non usare un controllo subordinato, i valori contenuti o l'etichetta delle unità per creare una frase o una frase. Tale progettazione non è localizzabile perché la struttura delle frasi varia in base alla lingua.
+-   Se è necessario usare etichette su più righe, allineare la parte superiore dell'etichetta alla casella di controllo.
+-   Non usare un controllo subordinato, i valori in esso contenuti o l'etichetta di unità per creare una frase o una frase. Tale progettazione non è localizzabile perché la struttura delle frasi varia in base alla lingua.
 
     **Non corretto:**
 
-    ![Screenshot dell'etichetta della casella di controllo con una casella di testo al suo interno ](images/ctrl-check-boxes-image27.png)
+    ![Screenshot dell'etichetta della casella di controllo con la casella di testo al suo interno ](images/ctrl-check-boxes-image27.png)
 
-    In questo esempio la casella di testo viene inserita in modo non corretto all'interno dell'etichetta della casella di controllo.
+    In questo esempio la casella di testo viene inserita erroneamente all'interno dell'etichetta della casella di controllo.
 
-**Etichette di gruppo di caselle di controllo**
+**Etichette di gruppo delle caselle di controllo**
 
--   Usare l'etichetta del gruppo per spiegare lo scopo del gruppo, non come effettuare la selezione. Si supponga che gli utenti sappiano usare le caselle di controllo. Ad esempio, non pronunciare "Selezionare una delle scelte seguenti".
+-   Usare l'etichetta del gruppo per spiegare lo scopo del gruppo, non come effettuare la selezione. Si supponga che gli utenti sappiano come usare le caselle di controllo. Ad esempio, non pronunciare "Selezionare una delle opzioni seguenti".
 -   Terminare ogni etichetta con due punti.
 -   Non assegnare una chiave di accesso all'etichetta. Questa operazione non è necessaria e rende più difficile l'assegnazione delle altre chiavi di accesso.
--   Per una selezione di una o più scelte dipendenti, spiegare il requisito nell'etichetta.
+-   Per una selezione di una o più scelte dipendenti, spiegare il requisito sull'etichetta.
 
     **Corretto:**
 
@@ -275,18 +275,18 @@ Dimensioni e spaziatura consigliate per le caselle di controllo.
 
     **Migliore:**
 
-    ![Screenshot dell'etichetta: i protocolli selezionano uno o più protocolli ](images/ctrl-check-boxes-image29.png)
+    ![Screenshot dell'etichetta: i protocolli selezionano uno o più ](images/ctrl-check-boxes-image29.png)
 
     In questo esempio è chiaro che gli utenti possono effettuare più selezioni.
 
 ## <a name="documentation"></a>Documentazione
 
-Quando si fa riferimento alle caselle di controllo:
+Quando si fa riferimento a caselle di controllo:
 
--   Usare il testo esatto dell'etichetta, inclusa la combinazione di maiuscole e minuscole, ma non includere il carattere di sottolineatura del tasto di scelta o i due punti. Includere la casella di controllo della parola.
--   Fare riferimento a una casella di controllo come casella di controllo, non come opzione, casella di controllo o semplicemente casella, perché la casella da sola è ambigua per i localizzatori.
+-   Usare il testo esatto dell'etichetta, inclusa la combinazione di maiuscole e minuscole, ma non includere il carattere di sottolineatura o i due punti della chiave di accesso. Includere la casella di controllo della parola.
+-   Fare riferimento a una casella di controllo come casella di controllo, non come opzione, casella di controllo o semplicemente casella, perché la sola casella è ambigua per i localizzatori.
 -   Per descrivere l'interazione dell'utente, usare select e clear.
 -   Quando possibile, formattare l'etichetta usando il testo in grassetto. In caso contrario, inserire l'etichetta tra virgolette solo se necessario per evitare confusione.
 
-    Esempio: selezionare la **casella di controllo** Sottolinea.
+    Esempio: selezionare la **casella di controllo** Sottolineatura.
 

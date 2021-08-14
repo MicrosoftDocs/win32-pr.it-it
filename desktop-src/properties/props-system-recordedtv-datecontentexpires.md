@@ -4,12 +4,12 @@ ms.assetid: 01cdf99b-1c63-424b-b160-ee1ac5557ae7
 title: System.RecordedTV.DateContentExpires
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a604dad05ff47fe49817d1a01be588b6abd228de
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b747338991973965fda9e975328b5809a7171f95f60f5335875b0e8512f3002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227950"
 ---
 # <a name="systemrecordedtvdatecontentexpires"></a>System.RecordedTV.DateContentExpires
 

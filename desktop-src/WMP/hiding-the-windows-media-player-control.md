@@ -1,58 +1,58 @@
 ---
-title: Nascondere il controllo Media Player Windows
-description: Nascondere il controllo Media Player Windows
+title: Nascondere il Windows Media Player controllo
+description: Nascondere il Windows Media Player controllo
 ms.assetid: 754896af-b80d-4552-82c6-3fb65359accd
 keywords:
-- Windows Media Player, incorporamento del controllo ActiveX
-- Modello a oggetti di Windows Media Player, incorporamento del controllo ActiveX
-- modello a oggetti, incorporamento del controllo ActiveX
-- Windows Media Player Mobile, incorporamento del controllo ActiveX
-- Controllo ActiveX di Windows Media Player, incorporamento
-- Controllo ActiveX Windows Media Player Mobile, incorporamento
-- Controllo ActiveX, incorporamento
-- Controllo ActiveX di Windows Media Player, pagine Web
-- Controllo ActiveX Windows Media Player Mobile, pagine Web
-- Controllo ActiveX, pagine Web
+- Windows Media Player,incorporamento ActiveX controllo
+- Windows Media Player a oggetti, incorporamento ActiveX controllo
+- modello a oggetti, incorporamento ActiveX controllo
+- Windows Media Player Dispositivi mobili, incorporamento ActiveX controllo
+- Windows Media Player ActiveX, incorporamento
+- Windows Media Player controllo ActiveX per dispositivi mobili, incorporamento
+- ActiveX, incorporamento
+- Windows Media Player ActiveX, pagine Web
+- Windows Media Player controllo ActiveX per dispositivi mobili,pagine Web
+- ActiveX, pagine Web
 - incorporamento, pagine Web
-- Windows Media Player, nascondere il controllo ActiveX
-- Modello a oggetti di Windows Media Player, nascondere il controllo ActiveX
-- modello a oggetti, che nasconde il controllo ActiveX
-- Windows Media Player Mobile, controllo hidingActiveX
-- Controllo ActiveX di Windows Media Player, nascondere
-- Controllo ActiveX Windows Media Player Mobile, nascondere
-- Controllo ActiveX, nascondere
-- Controllo ActiveX di Windows Media Player, pagine Web
-- Controllo ActiveX Windows Media Player Mobile, pagine Web
-- Controllo ActiveX, pagine Web
-- Incorporamento di pagine Web, controllo ActiveX nascosto
-- nascondere il controllo ActiveX di Windows Media Player
+- Windows Media Player,nascondere ActiveX controllo
+- Windows Media Player a oggetti, nascondere ActiveX controllo
+- modello a oggetti, nascondere ActiveX controllo
+- Windows Media Player Mobile, nascondere il controlloActiveX
+- Windows Media Player ActiveX, nascondere
+- Windows Media Player Controllo ActiveX mobile, nascondere
+- ActiveX, nascondere
+- Windows Media Player ActiveX, pagine Web
+- Windows Media Player controllo ActiveX per dispositivi mobili,pagine Web
+- ActiveX, pagine Web
+- Incorporamento di pagine Web, nascondere ActiveX controllo
+- nascondere Windows Media Player ActiveX controllo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ba1add2b8f09829ad165f152c26c184d68ac183
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2fcb0b29bbbc1b2eb978c5bd9f29a58aa02bf629d5c6befe9f1dc68bbc92d280
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339182"
 ---
-# <a name="hiding-the-windows-media-player-control"></a>Nascondere il controllo Media Player Windows
+# <a name="hiding-the-windows-media-player-control"></a>Nascondere il Windows Media Player controllo
 
-L'oggetto ActiveX di Windows Media Player viene incorporato in una pagina Web utilizzando l'elemento oggetto. Diversamente dalle versioni precedenti, l'elemento oggetto che definisce Media Player di Windows deve essere inserito nella sezione del corpo di una pagina Web, tra i tag <BODY> e </BODY> . L'inserimento dell'oggetto ActiveX Media Player Windows nella sezione HEAD di una pagina Web per nascondere l'interfaccia utente può produrre risultati imprevisti.
+L Windows Media Player ActiveX o object viene incorporato in una pagina Web usando l'elemento OBJECT. A differenza delle versioni precedenti, l'elemento OBJECT che Windows Media Player deve essere inserito nella sezione BODY di una pagina Web, tra <BODY> e </BODY> Tag. L'inserimento Windows Media Player ActiveX'oggetto nella sezione HEAD di una pagina Web per nascondere l'interfaccia utente può produrre risultati imprevisti.
 
-Se si inserisce il controllo ActiveX di Windows Media Player nella sezione del corpo di una pagina Web, verrà visualizzata l'interfaccia utente del controllo. Se non si desidera che venga visualizzata e si desidera creare un'interfaccia utente personalizzata, impostare gli attributi Height e Width dell'elemento OBJECT su zero.
+Se si Windows Media Player ActiveX controllo nella sezione BODY di una pagina Web, verrà visualizzata l'interfaccia utente del controllo. Se non si vuole che sia visualizzata e si vuole creare un'interfaccia utente personalizzata, impostare gli attributi di altezza e larghezza dell'elemento OBJECT su zero.
 
-Il controllo può essere reso invisibile anche impostando il *lettore*. proprietà **uiMode** su "invisibile". Questa operazione può essere eseguita usando un tag PARAM, come illustrato nella sezione successiva. In questo caso, lo spazio è riservato per il controllo con altezza e larghezza, ma non viene visualizzato nulla nello spazio riservato fino a quando **uiMode** non viene modificato in un valore diverso da "invisibile".
+Il controllo può anche essere reso invisibile impostando l'oggetto *Player.* **Proprietà uiMode** su "invisibile". Questa operazione può essere eseguita usando un tag PARAM, come illustrato nella sezione successiva. In questo caso, lo spazio è riservato per il controllo usando altezza e larghezza, ma non viene visualizzato nulla nello spazio riservato fino a quando **uiMode** non viene modificato in un valore diverso da "invisibile".
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Uso del controllo Media Player di Windows in una pagina Web**](using-the-windows-media-player-control-in-a-web-page.md)
+[**Utilizzo del Windows Media Player in una pagina Web**](using-the-windows-media-player-control-in-a-web-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

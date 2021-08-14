@@ -1,9 +1,9 @@
 ---
-title: 'Funzione ByteAddressBuffer:: Load3 (uint)'
-description: 'Ottiene tre valori. | Funzione ByteAddressBuffer:: Load3 (uint)'
+title: Funzione ByteAddressBuffer::Load3(uint)
+description: Ottiene tre valori. | Funzione ByteAddressBuffer::Load3(uint)
 ms.assetid: 79afeb36-e0e7-44a2-b252-8e3577f4c1a5
 keywords:
-- Funzione Load3 HLSL
+- HLSL della funzione Load3
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e3975d454fcbb8c5dfa8cdef8d7f5718143546f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bd36958eb2c16d45e6228c9919cb22bb772c8861131c26710fff032276bce6e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510011"
 ---
-# <a name="byteaddressbufferload3uint-function"></a>Funzione ByteAddressBuffer:: Load3 (uint)
+# <a name="byteaddressbufferload3uint-function"></a>Funzione ByteAddressBuffer::Load3(uint)
 
 Ottiene tre valori.
 
@@ -36,7 +36,7 @@ uint3 Load3(
 
 <dl> <dt>
 
-*Indirizzo* \[ in\]
+*address* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Metodi Load3](byteaddressbuffer-load3.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

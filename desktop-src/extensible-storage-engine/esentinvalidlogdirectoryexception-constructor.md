@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidLogDirectoryException'
+description: Altre informazioni sul costruttore EsentInvalidLogDirectoryException
 title: Costruttore EsentInvalidLogDirectoryException
 TOCTitle: 'EsentInvalidLogDirectoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidLogDirectoryException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a662594968b7966fb6568e0e78202962a48a49b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6674c29b874a9a52b507a0e69e9027a33497a05c193f8eda29bf06988c34b822
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118777792"
 ---
 # <a name="esentinvalidlogdirectoryexception-constructor"></a>Costruttore EsentInvalidLogDirectoryException
 
 Inizializza una nuova istanza della classe EsentInvalidLogDirectoryException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidLogDirectoryException()
 
 [Membri di EsentInvalidLogDirectoryException](./esentinvalidlogdirectoryexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

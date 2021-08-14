@@ -1,36 +1,36 @@
 ---
-title: Gestione degli eventi in C++
-description: Gestione degli eventi in C++
+title: Gestione di eventi in C++
+description: Gestione di eventi in C++
 ms.assetid: 5d9eb1c7-7022-4442-b67a-6a96fe5ce97f
 keywords:
-- Windows Media Player, C++
-- Modello a oggetti di Windows Media Player, C++
-- modello a oggetti, C++
-- Windows Media Player Mobile, C++
-- Controllo ActiveX di Windows Media Player, C++
-- Controllo ActiveX Windows Media Player Mobile, C++
-- Controllo ActiveX, C++
-- Incorporamento del programma C++
+- Windows Media Player,C++
+- Windows Media Player a oggetti, C++
+- modello a oggetti,C++
+- Windows Media Player Mobile,C++
+- Windows Media Player ActiveX controllo, C++
+- Windows Media Player Controllo ActiveX per dispositivi mobili,C++
+- ActiveX controllo, C++
+- Incorporamento di programmi C++
 - incorporamento, programmi C++
-- Controllo ActiveX Windows Media Player, gestione eventi
-- Controllo ActiveX Windows Media Player Mobile, gestione eventi
-- Controllo ActiveX, gestione eventi
-- eventi, C++
+- Windows Media Player ActiveX, gestione degli eventi
+- Windows Media Player Controllo ActiveX per dispositivi mobili, gestione degli eventi
+- ActiveX, gestione degli eventi
+- eventi,C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16cbef547ab2604244c5c204707a08eb87a6b70a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cf5d50be4622cee9ee455710f8b9d2e4cafc63d6560e08faf5c3deaddcdaccc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748406"
 ---
-# <a name="handling-events-in-c"></a>Gestione degli eventi in C++
+# <a name="handling-events-in-c"></a>Gestione di eventi in C++
 
 È possibile ricevere eventi da Windows Media Player in due modi.
 
--   Tramite **IDispatch** usando l'interfaccia **\_ WMPOCXEvents** . Si tratta dell'interfaccia da utilizzare per la maggior parte degli scenari di incorporamento.
--   Tramite l'interfaccia **IWMPEvents** . Questa interfaccia è disponibile quando il codice è connesso al lettore in modalità completa, ad esempio quando si esegue la comunicazione remota del controllo Media Player Windows o in un plug-in dell'interfaccia utente.
+-   Tramite **IDispatch** usando **\_ l'interfaccia WMPOCXEvents.** Questa è l'interfaccia da usare per la maggior parte degli scenari di incorporamento.
+-   Tramite **l'interfaccia IWMPEvents.** Questa interfaccia è disponibile quando il codice è connesso al lettore in modalità completa, ad esempio quando si esegue la comunicazione remota del controllo Windows Media Player o in un plug-in dell'interfaccia utente.
 
 In ogni scenario si inizia ad ascoltare gli eventi usando i punti di connessione COM.
 
@@ -46,7 +46,7 @@ DWORD                       m_dwAdviseCookie;
 
 
 
-Per recuperare un punto di connessione, è necessario innanzitutto **QueryInterface** per il contenitore del punto di connessione.
+Per recuperare un punto di connessione, è necessario prima **QueryInterface** per il contenitore del punto di connessione.
 
 
 ```C++
@@ -60,7 +60,7 @@ hr = m_spWMPPlayer->QueryInterface(&spConnectionContainer);
 
 
 
-Successivamente, richiedere il punto di connessione per l'interfaccia evento che si vuole usare. Il codice di esempio seguente tenta prima di usare **IWMPEvents**. Se l'interfaccia non è disponibile, viene usato **\_ WMPOCXEvents**.
+Richiedere quindi il punto di connessione per l'interfaccia eventi che si vuole usare. Il codice di esempio seguente tenta prima di tutto di usare **IWMPEvents**. Se tale interfaccia non è disponibile, usa **\_ WMPOCXEvents**.
 
 
 ```C++
@@ -79,7 +79,7 @@ if(SUCCEEDED(hr))
 
 
 
-Infine, chiamare **IConnectionPoint:: Advise** per richiedere gli eventi.
+Chiamare infine **IConnectionPoint::Advise per** richiedere eventi.
 
 
 ```C++
@@ -92,7 +92,7 @@ if(SUCCEEDED(hr))
 
 
 
-Nell'esempio precedente, il primo parametro presuppone che la classe chiamante implementi sia **IWMPEvents** che **\_ WMPOCXEvents**. Il secondo parametro è un valore restituito che viene usato per arrestare l'ascolto degli eventi, ad esempio quando il programma viene chiuso, usando un codice simile al seguente:
+Nell'esempio precedente il primo parametro presuppone che la classe chiamante implementi sia **IWMPEvents** che **\_ WMPOCXEvents**. Il secondo parametro è un valore restituito che viene utilizzato per interrompere l'ascolto di eventi, ad esempio quando il programma viene chiuso, usando codice simile al seguente:
 
 
 ```C++
@@ -108,7 +108,7 @@ if (m_spConnectionPoint)
 
 
 
-L'implementazione dei gestori eventi per **IWMPEvents** e **\_ WMPOCXEvents** è diversa. Per **IWMPEvents**, è necessario implementare una funzione per gestire ogni evento definito dall'interfaccia, anche se non si intende usare l'evento.
+L'implementazione dei gestori eventi **per IWMPEvents** **\_ e WMPOCXEvents** è diversa. Per **IWMPEvents**, è necessario implementare una funzione per gestire ogni evento definito dall'interfaccia, anche se non si intende usare l'evento .
 
 
 ```C++
@@ -122,7 +122,7 @@ void STDMETHODCALLTYPE AudioLanguageChange( long LangID ){ return; }
 
 
 
-Per implementare i gestori **\_ WMPOCXEvents** , è necessario usare **IDispatch:: Invoke**, ovvero un'unica implementazione del gestore eventi per tutti gli eventi che si verificano nell'interfaccia **IDispatch** . Ciò significa che è possibile scegliere di gestire solo determinati eventi e ignorarne altri. Il codice di esempio seguente mostra un gestore **\_ WMPOCXEvents** , che usa **Invoke**, che gestisce solo gli eventi **OpenStateChange** e **PlayStateChange** :
+Per implementare i gestori **\_ WMPOCXEvents,** è necessario usare **IDispatch::Invoke**, che è una singola implementazione del gestore eventi per tutti gli eventi che si verificano **nell'interfaccia IDispatch.** Ciò significa che è possibile scegliere di gestire solo determinati eventi e ignorarli. Il codice di esempio seguente illustra un gestore **\_ WMPOCXEvents,** usando **Invoke,** che gestisce solo gli **eventi OpenStateChange** **e PlayStateChange:**
 
 
 ```C++
@@ -164,15 +164,15 @@ HRESULT CMyClass::Invoke(
 
 
 
-Nel codice di esempio precedente, ogni case esegue semplicemente chiamate al gestore **IWMPEvents** per l'evento corrispondente. Se il codice gestisce solo **\_ WMPOCXEvents**, è possibile chiamare semplicemente una funzione personalizzata o gestire l'evento inline dopo l'istruzione **case** .
+Nel codice di esempio precedente, ogni caso chiama semplicemente il gestore **IWMPEvents** per l'evento corrispondente. Se il codice gestisce **\_ solo WMPOCXEvents,** è sufficiente chiamare una funzione personalizzata o gestire l'evento inline dopo l'istruzione **case.**
 
 ## <a name="receiving-events-from-windows-media-player-10-mobile"></a>Ricezione di eventi da Windows Media Player 10 Mobile
 
-Il controllo Windows Media Player 10 Mobile supporta solo la ricezione di determinati eventi tramite **\_ WMPOCXEvents** e **IWMPEvents**. Per ulteriori informazioni, vedere la documentazione relativa a **IWMPEvents**.
+Il Windows Media Player 10 Mobile supporta solo la ricezione di determinati eventi **\_ tramite WMPOCXEvents** e **IWMPEvents**. Per altre informazioni, vedere la documentazione di **IWMPEvents.**
 
 ## <a name="samples"></a>Esempi
 
-Il pacchetto di installazione di Windows Media Player installa un esempio che illustra la gestione degli eventi. Per ulteriori informazioni, vedere l'esempio WMPHost.
+Il Windows Media Player di installazione installa un esempio che illustra la gestione degli eventi. Per altre informazioni, vedere l'esempio WMPHost.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -181,12 +181,12 @@ Il pacchetto di installazione di Windows Media Player installa un esempio che il
 [**Esempi**](samples.md)
 </dt> <dt>
 
-[**Uso del controllo Media Player di Windows in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**Uso del Windows Media Player in un programma C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: I dispositivi portatili Windows supportano le proprietà immagine seguenti.
+description: Windows Dispositivi portatili supporta le proprietà dell'immagine seguenti.
 ms.assetid: fb1707a7-16b0-4073-b21d-2ba2f4fd76f7
-title: Proprietà immagine (PortableDevice. h)
+title: Proprietà immagine (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,29 +13,29 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 959a008d9c30991058226e52db6e45ed417ee6e4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d2ebe552a66dadf6b9bec6a0a741d85e1c7f1f018ef108e36ec1bb3cb4b6165
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118430760"
 ---
 # <a name="image-properties"></a>Proprietà immagine
 
-I dispositivi portatili Windows supportano le proprietà immagine seguenti.
+Windows Dispositivi portatili supporta le proprietà dell'immagine seguenti.
 
 
 
 | Proprietà                                                                                                                                       | VarType     | Descrizione                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **immagine di WPD \_ \_ BITDEPTH**                                                                                                                       | **\_UI4 VT** | Profondità di bit dell'immagine.                                                                                                                                                                                                                                                                                                                     |
-| <span id="wpd_image_color_corrected_status"></span><span id="WPD_IMAGE_COLOR_CORRECTED_STATUS"></span>**\_ \_ \_ stato correzione colore immagine \_ WPD** | **\_UI4 VT** | Enumerazione [**\_ \_ \_ \_ dei valori di stato con correzione del colore WPD**](wpd-color-corrected-status-values.md) che specifica se il file è stato con correzione del colore. In questo modo si impedisce a più dispositivi di correggere automaticamente il colore dell'immagine durante la post-elaborazione.<br/>                                                                       |
-| **\_ \_ stato ritagliato immagine WPD \_**                                                                                                                | **\_UI4 VT** | Enumerazione [**\_ \_ \_ dei valori di stato ritagliata WPD**](wpd-cropped-status-values.md) che specifica se il file è stato ritagliato. In questo modo si impedisce a più dispositivi di ritagliare automaticamente l'immagine durante la post-elaborazione.<br/>                                                                                                        |
-| **\_indice di \_ esposizione \_ Immagini WPD**                                                                                                                | **\_UI4 VT** | Valore che identifica le impostazioni della velocità della pellicola quando l'immagine è stata acquisita. Le impostazioni corrispondono alle designazioni ISO di ASA/DIN.<br/> In genere, un dispositivo supporta valori enumerati discreti, ma è possibile il controllo continuo su un intervallo.<br/> Il valore 0xFFFFFFFF corrisponde all'impostazione ISO automatica.<br/> |
-| **WPD \_ \_ tempo di esposizione immagine \_**                                                                                                                 | **\_UI4 VT** | Identifica la velocità dell'otturatore del dispositivo quando l'immagine è stata acquisita. Le unità sono in secondi ridimensionate di 10000.<br/>                                                                                                                                                                                                                        |
-| **immagine di WPD \_ \_ FNUMBER**                                                                                                                        | **\_UI4 VT** | Identifica l'impostazione di apertura della lente quando l'immagine è stata acquisita. Le unità sono uguali al numero f ridimensionato di 100.<br/>                                                                                                                                                                                                              |
-| **\_ \_ risoluzione orizzontale immagine \_ WPD**                                                                                                         | **VT \_ R8**  | Indica la risoluzione orizzontale di un'immagine, espressa in punti per pollice (DPI).                                                                                                                                                                                                                                                                       |
-| **\_ \_ risoluzione verticale dell'immagine WPD \_**                                                                                                           | **VT \_ R8**  | Indica la risoluzione verticale di un'immagine, espressa in punti per pollice (DPI).                                                                                                                                                                                                                                                                         |
+| **\_BITDEPTH IMMAGINE \_ WPD**                                                                                                                       | **Interfaccia utente \_ VT4** | Profondità in bit dell'immagine.                                                                                                                                                                                                                                                                                                                     |
+| <span id="wpd_image_color_corrected_status"></span><span id="WPD_IMAGE_COLOR_CORRECTED_STATUS"></span>**STATO CORRETTO DEL COLORE \_ \_ \_ DELL'IMMAGINE WPD \_** | **Interfaccia utente \_ VT4** | Enumerazione [**WPD \_ COLOR \_ CORRECTED STATUS \_ \_ VALUES**](wpd-color-corrected-status-values.md) che specifica se il file è stato corretto a colori. Ciò impedisce a più dispositivi di correggere automaticamente il colore dell'immagine durante la post-elaborazione.<br/>                                                                       |
+| **STATO RITAGLIATO DELL'IMMAGINE WPD \_ \_ \_**                                                                                                                | **Interfaccia utente \_ VT4** | Enumerazione [**WPD \_ CROPPED \_ STATUS \_ VALUES**](wpd-cropped-status-values.md) che specifica se il file è stato ritagliato. Ciò impedisce a più dispositivi di ritagliare automaticamente l'immagine durante la post-elaborazione.<br/>                                                                                                        |
+| **INDICE DI ESPOSIZIONE DELLE IMMAGINI WPD \_ \_ \_**                                                                                                                | **Interfaccia utente \_ VT4** | Valore che identifica le impostazioni di velocità del film quando è stata acquisita l'immagine. Le impostazioni corrispondono alle designazioni ISO di ASA/DIN.<br/> In genere, un dispositivo supporta valori enumerati discreti, ma è possibile un controllo continuo su un intervallo.<br/> Il valore 0xFFFFFFFF corrisponde all'impostazione ISO automatica.<br/> |
+| **TEMPO DI ESPOSIZIONE DELL'IMMAGINE WPD \_ \_ \_**                                                                                                                 | **Interfaccia utente \_ VT4** | Identifica la velocità di chiusura del dispositivo quando è stata acquisita l'immagine. Le unità vengono ridimensionate in secondi di 10000.<br/>                                                                                                                                                                                                                        |
+| **FNUMBER \_ IMMAGINE WPD \_**                                                                                                                        | **Interfaccia utente \_ VT4** | Identifica l'impostazione di apertura dell'obiettivo quando è stata acquisita l'immagine. Le unità sono uguali al numero f ridimensionato di 100.<br/>                                                                                                                                                                                                              |
+| **RISOLUZIONE ORIZZONTALE \_ DELL'IMMAGINE WPD \_ \_**                                                                                                         | **VT \_ R8**  | Indica la risoluzione orizzontale di un'immagine, in punti per pollice (DPI).                                                                                                                                                                                                                                                                       |
+| **RISOLUZIONE VERTICALE \_ DELL'IMMAGINE WPD \_ \_**                                                                                                           | **VT \_ R8**  | Indica la risoluzione verticale di un'immagine, in punti per pollice (DPI).                                                                                                                                                                                                                                                                         |
 
 
 
@@ -47,7 +47,7 @@ I dispositivi portatili Windows supportano le proprietà immagine seguenti.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ I dispositivi portatili Windows supportano le proprietà immagine seguenti.
 
 <dl> <dt>
 
-[**Proprietà e attributi di WPD**](properties-and-attributes.md)
+[**Proprietà e attributi WPD**](properties-and-attributes.md)
 </dt> </dl>
 
  

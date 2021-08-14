@@ -4,16 +4,16 @@ ms.assetid: DAEEAC6D-ECEC-472B-A21A-94F8C872C585
 title: Metodi IAzScope2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a306342ef7e3286d9cf92bd9004c6c68a9083ba3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59f94807e73302db09c16b07d93491a022200fdab6b68f20f566510599c46c59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414971"
 ---
 # <a name="iazscope2-methods"></a>Metodi IAzScope2
 
-L'interfaccia [**IAzScope2**](/windows/desktop/api/Azroles/nn-azroles-iazscope2) espone i metodi seguenti.
+[**L'interfaccia IAzScope2**](/windows/desktop/api/Azroles/nn-azroles-iazscope2) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

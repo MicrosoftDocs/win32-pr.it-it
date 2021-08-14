@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso sendEmailType
-description: Definisce il tipo di azione utilizzato per specificare che un messaggio di posta elettronica verrà inviato quando viene eseguita un'attività. Questo tipo definisce tutti gli elementi utilizzati per modellare il messaggio di posta elettronica.
+description: Definisce il tipo di azione usato per specificare che verrà inviato un messaggio di posta elettronica quando viene eseguita un'attività. Questo tipo definisce tutti gli elementi usati per modellare il messaggio di posta elettronica.
 ms.assetid: e384971f-e7e4-4206-9d15-9555dfcbac2f
 keywords:
-- Utilità di pianificazione di tipo complesso sendEmailType
+- Tipo complesso sendEmailType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 959e0b8f03223eb23b7a7bec69ba9b2aeea66447
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0242700b2f22050741d9de175b7dae532cc5ef4bb2097fadb23799ce3b2f82b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356343"
 ---
 # <a name="sendemailtype-complex-type"></a>Tipo complesso sendEmailType
 
-Definisce il tipo di azione utilizzato per specificare che un messaggio di posta elettronica verrà inviato quando viene eseguita un'attività. Questo tipo definisce tutti gli elementi utilizzati per modellare il messaggio di posta elettronica.
+Definisce il tipo di azione usato per specificare che verrà inviato un messaggio di posta elettronica quando viene eseguita un'attività. Questo tipo definisce tutti gli elementi usati per modellare il messaggio di posta elettronica.
 
 ``` syntax
 <xs:complexType name="sendEmailType">
@@ -85,10 +85,10 @@ Definisce il tipo di azione utilizzato per specificare che un messaggio di posta
 | [**Allegati**](taskschedulerschema-attachments-sendemailtype-element.md)   | [**attachmentsType**](taskschedulerschema-attachmentstype-complextype.md)   | Specifica un elenco di allegati nel messaggio di posta elettronica.<br/>                                 |
 | [**Bcc**](taskschedulerschema-bcc-sendemailtype-element.md)                   | **string**                                                                   | Specifica gli indirizzi di posta elettronica utilizzati nella riga Ccn di un messaggio di posta elettronica.<br/>               |
 | [**Corpo**](taskschedulerschema-body-sendemailtype-element.md)                 | **string**                                                                   | Specifica il testo nel corpo del messaggio di posta elettronica.<br/>                                  |
-| [**CC**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Specifica gli indirizzi di posta elettronica usati nella riga CC di un messaggio di posta elettronica.<br/>                |
+| [**Cc**](taskschedulerschema-cc-sendemailtype-element.md)                     | **string**                                                                   | Specifica gli indirizzi di posta elettronica utilizzati nella riga Cc di un messaggio di posta elettronica.<br/>                |
 | [**Da**](taskschedulerschema-from-sendemailtype-element.md)                 | **string**                                                                   | Specifica l'indirizzo di posta elettronica del mittente.<br/>                                            |
-| [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Specifica i campi di intestazione e i relativi valori usati nell'intestazione del messaggio di posta elettronica.<br/> |
-| [**ReplyTo**](taskschedulerschema-replyto-sendemailtype-element.md)           | **string**                                                                   | Specifica gli indirizzi di posta elettronica a cui risponde nel messaggio di posta elettronica.<br/>               |
+| [**HeaderFields**](taskschedulerschema-headerfields-sendemailtype-element.md) | [**headerFieldsType**](taskschedulerschema-headerfieldstype-complextype.md) | Specifica i campi di intestazione e i relativi valori utilizzati nell'intestazione del messaggio di posta elettronica.<br/> |
+| [**ReplyTo**](taskschedulerschema-replyto-sendemailtype-element.md)           | **string**                                                                   | Specifica gli indirizzi di posta elettronica a cui viene inviata una risposta nel messaggio di posta elettronica.<br/>               |
 | [**Server**](taskschedulerschema-server-sendemailtype-element.md)             | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)      | Specifica il server di posta elettronica utilizzato per inviare il messaggio di posta elettronica. <br/>                           |
 | [**Oggetto**](taskschedulerschema-subject-sendemailtype-element.md)           | **string**                                                                   | Specifica l'oggetto del messaggio di posta elettronica.<br/>                                           |
 | [**A**](taskschedulerschema-to-sendemailtype-element.md)                     | **string**                                                                   | Specifica gli indirizzi di posta elettronica a cui verrà inviato il messaggio di posta elettronica.<br/>                        |
@@ -101,8 +101,8 @@ Definisce il tipo di azione utilizzato per specificare che un messaggio di posta
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

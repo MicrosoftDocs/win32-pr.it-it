@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f44f0959a9f67e4bfee0b0ef5dd7f095ffbadce
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: c03ede1b87f3969d12256df16c0b05c109391876a12c256190966c8befc7f2fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355749"
 ---
 # <a name="timetriggertype-complex-type"></a>Tipo complesso timeTriggerType
 
@@ -45,7 +45,7 @@ Definisce il tipo di base per [**l'elemento TimeTrigger.**](taskschedulerschema-
 
 
 
-| Elemento                                                                        | Type     | Descrizione                                                                                                                                                                                                                                 |
+| Elemento                                                                        | Tipo     | Descrizione                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**RandomDelay**](taskschedulerschema-randomdelay-timetriggertype-element.md) | duration | Specifica il tempo di ritardo aggiunto in modo casuale all'ora di inizio del trigger. Il formato di questa stringa è `P<days>DT<hours>H<minutes>M<seconds>S` (ad esempio, P2DT5S è un ritardo di 2 giorni e 5 secondi). <br/> |
 
@@ -61,8 +61,8 @@ Si noti che questo elemento non aggiunge elementi figlio a quelli definiti dal t
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Registry_TypeGroup1 classe: questa classe è la classe del tipo di evento per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
+description: 'Registry_TypeGroup1: questa classe è la classe del tipo di evento per gli eventi del Registro di sistema. La sintassi seguente è semplificata dal codice MOF.'
 ms.assetid: 8d0e9d97-3837-46da-a217-13e943580352
 title: Registry_TypeGroup1 classe
 ms.topic: reference
@@ -17,12 +17,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d86412a950246bee4f9a692ab80e91b99d945c20
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7bdb280f78f0c38cbb887920425c018ded1505aa2f1e01cc0981e292f9d139a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394243"
 ---
 # <a name="registry_typegroup1-class"></a>Classe \_ TypeGroup1 del Registro di sistema
 
@@ -46,13 +46,13 @@ class Registry_TypeGroup1 : Registry
 
 ## <a name="members"></a>Members
 
-La **classe \_ TypeGroup1** del Registro di sistema ha questi tipi di membri:
+La **classe \_ Registry TypeGroup1** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ TypeGroup1 del** Registro di sistema ha queste proprietà.
+La **classe \_ Registry TypeGroup1** ha queste proprietà.
 
 <dl> <dt>
 
@@ -97,7 +97,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(4), Puntatore
+Qualificatori: WmiDataId(4), Pointer
 </dt> </dl>
 
 Handle per la chiave del Registro di sistema.
@@ -107,7 +107,7 @@ Handle per la chiave del Registro di sistema.
 KeyName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -142,8 +142,8 @@ Valore NTSTATUS dell'operazione del Registro di sistema.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

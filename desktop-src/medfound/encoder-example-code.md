@@ -1,19 +1,19 @@
 ---
-description: In questo argomento viene illustrato un codice di esempio che esegue il wrapping del codificatore Windows Media Audio (WMA) in una classe C++ denominata CWmaEncoder.
+description: Questo argomento illustra codice di esempio che esegue il wrapping Windows codificatore WMA (Media Audio) in una classe C++ denominata CWmaEncoder.
 ms.assetid: 59bd5b6a-86fe-4d39-ab7c-9563ac1a8e94
 title: Codice di esempio del codificatore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa38e779a7751c22f2c463999619e77e05ef09b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9acf77224b71618068cb42e0b46e15b1063ae333cb1ed3f147ef1ee85e1b4207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879435"
 ---
 # <a name="encoder-example-code"></a>Codice di esempio del codificatore
 
-In questo argomento viene illustrato un codice di esempio che esegue il wrapping del codificatore Windows Media Audio (WMA) in una classe C++ denominata `CWmaEncoder` .
+Questo argomento illustra un codice di esempio che esegue il wrapping Windows codificatore WMA (Media Audio) in una classe C++ denominata `CWmaEncoder` .
 
 -   [Dichiarazione di classe](#class-declaration)
 -   [Inizializzare](#initialize)
@@ -23,14 +23,14 @@ In questo argomento viene illustrato un codice di esempio che esegue il wrapping
 -   [GetLeakyBucket1](#getleakybucket1)
 -   [ProcessInput](#processinput)
 -   [ProcessOutput](#processoutput)
--   [Scarico](#drain)
+-   [Drenaggio](#drain)
 -   [Argomenti correlati](#related-topics)
 
-Questo codice fa riferimento a diversi argomenti:
+A questo codice fanno riferimento diversi argomenti:
 
--   [Esercitazione: scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+-   [Esercitazione: Scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
-In Media Foundation i codificatori vengono implementati come [trasformazioni di Media Foundation](media-foundation-transforms.md) (MFTS) ed espongono l'interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) .
+In Media Foundation, i codificatori vengono implementati [come](media-foundation-transforms.md) trasformazioni Media Foundation (MFT) ed espongono [**l'interfaccia IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="class-declaration"></a>Dichiarazione di classe
 
@@ -89,7 +89,7 @@ protected:
 
 ## <a name="initialize"></a>Inizializzare
 
-Il `Initialize` metodo crea un'istanza del codificatore wma.
+Il `Initialize` metodo crea un'istanza del codificatore WMA.
 
 
 ```C++
@@ -411,7 +411,7 @@ done:
 
 
 
-## <a name="drain"></a>Scarico
+## <a name="drain"></a>Drenaggio
 
 
 ```C++
@@ -432,7 +432,7 @@ HRESULT CWmaEncoder::Drain()
 
 <dl> <dt>
 
-[Esercitazione: scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+[Esercitazione: Scrittura di un file WMA usando la codifica CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 </dt> <dt>
 
 [Codec Windows Media](windows-media-codecs.md)

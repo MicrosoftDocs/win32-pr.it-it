@@ -1,19 +1,19 @@
 ---
-title: IAgentCommands rimuovere
-description: IAgentCommands rimuovere
+title: Rimozione di IAgentCommands
+description: Rimozione di IAgentCommands
 ms.assetid: 1f41aa2d-e50b-48a8-87fc-fda4730b035a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d0c3321de3d06b5e2ebea873a4bace91482d8c5
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5875d1377aecc7e28554bac6aae1ccb2b4f515f730a6ab1b0b3a83cec7573418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104223618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477194"
 ---
-# <a name="iagentcommandsremove"></a>IAgentCommands:: Remove
+# <a name="iagentcommandsremove"></a>IAgentCommands::Remove
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT Remove(
@@ -21,26 +21,26 @@ HRESULT Remove(
 );
 ```
 
-Rimuove il [**comando**](/windows/desktop/lwef/the-command-object) specificato da un insieme di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) .
+Rimuove l'oggetto [**Command**](/windows/desktop/lwef/the-command-object) specificato da una [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
 <span id="dwID"></span><span id="dwid"></span><span id="DWID"></span>*dwID*
 </dt> <dd>
 
-ID di un [**comando**](/windows/desktop/lwef/the-command-object) da rimuovere dalla raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) .
+ID di un [**comando**](/windows/desktop/lwef/the-command-object) da rimuovere dalla [**raccolta Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
-La rimozione di un [**comando**](/windows/desktop/lwef/the-command-object) da una raccolta di [**comandi**](/windows/desktop/lwef/the-commands-collection-object) lo rimuove anche dal menu a comparsa e dalla **finestra comandi vocali** quando l'applicazione è di input-attivo.
+La rimozione di [**un comando**](/windows/desktop/lwef/the-command-object) da una raccolta [**Commands**](/windows/desktop/lwef/the-commands-collection-object) lo  rimuove anche dal menu a comparsa e dalla finestra Comandi vocali quando l'applicazione è attiva per l'input.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommands:: Add**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md), [**IAgentCommands:: RemoveAll**](iagentcommands--removeall.md)
+[**IAgentCommands::Add**](iagentcommands--add.md), [**IAgentCommands::Insert**](iagentcommands--insert.md), [**IAgentCommands::RemoveAll**](iagentcommands--removeall.md)
 
 
- 
+ 
 
- 
+ 

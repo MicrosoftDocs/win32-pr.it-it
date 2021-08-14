@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsClass (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsClass ottengono o impostano le proprietà seguenti. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsClass (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsClass ottengono o impostano le proprietà seguenti. Per altre informazioni, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: 191f6873-c4bd-4e71-9d23-478454b7cec2
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsClass ADSI
+- Metodi della proprietà IADsClass ADSI
 topic_type:
 - apiref
 api_name:
@@ -59,16 +59,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 358bc33347f035af92303a4ce9879105cd247a3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b8640c6a1d1f12ef959530b72618a503245992fae791dce4e6b9e9aec05bcb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428300"
 ---
-# <a name="iadsclass-property-methods"></a>Metodi di proprietà IADsClass
+# <a name="iadsclass-property-methods"></a>Metodi della proprietà IADsClass
 
-I metodi di proprietà dell'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) ottengono o impostano le proprietà seguenti. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) ottengono o impostano le proprietà seguenti. Per altre informazioni, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -77,14 +77,14 @@ I metodi di proprietà dell'interfaccia [**IADsClass**](/windows/desktop/api/Iad
 **Contenuto**
 </dt> <dd> <dl>
 
-Valore booleano che indica se questa classe è astratta o non astratta. Se è **true**, questa classe è una classe astratta e non è possibile crearne un'istanza direttamente nel servizio directory. Le classi astratte possono essere utilizzate solo come classi super.
+Valore booleano che indica se questa classe è Astratta o non astratta. Se **TRUE,** questa classe è una classe astratta e non è possibile crearne direttamente un'istanza nel servizio directory. Le classi astratte possono essere usate solo come super-classi.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **BOOLEAN**
 </dt> <dt>
 
 
@@ -105,14 +105,14 @@ HRESULT put_Abstract(
 **AuxDerivedFrom**
 </dt> <dd> <dl>
 
-Matrice di stringhe ADsPath che indicano le classi ausiliarie Super da cui deriva questa classe.
+Matrice di stringhe ADsPath che indicano le classi super ausiliarie da cui deriva questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -133,14 +133,14 @@ HRESULT put_AuxDerivedFrom(
 **Ausiliario**
 </dt> <dd> <dl>
 
-Valore booleano che indica se questa classe è ausiliaria o meno. Se è **true**, questa classe è una classe ausiliaria e non è possibile crearne un'istanza direttamente nel servizio directory. Le classi ausiliarie possono essere utilizzate solo come classi super di altre classi ausiliarie o come origine di proprietà aggiuntive nelle classi strutturali.
+Valore booleano che indica se questa classe è ausiliaria. Se **TRUE,** questa classe è una classe ausiliaria e non è possibile crearne direttamente un'istanza nel servizio directory. Le classi ausiliarie possono essere usate solo come super-classi di altre classi ausiliarie o come origine di proprietà aggiuntive nelle classi strutturali.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **BOOLEAN**
 </dt> <dt>
 
 
@@ -158,14 +158,14 @@ HRESULT put_Auxiliary(
 
 </dt> </dl> </dd> <dt>
 
-**CLSID**
+**Clsid**
 </dt> <dd> <dl>
 
 CLSID facoltativo specifico del provider che identifica l'oggetto COM che implementa questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -189,14 +189,14 @@ HRESULT put_CLSID(
 **Contenitore**
 </dt> <dd> <dl>
 
-Valore booleano che indica se questa classe può essere un contenitore di altre classi di oggetti. Se questo valore è **true**, è possibile chiamare il metodo **get \_ container** per ottenere una matrice delle classi di oggetti che questa classe può contenere.
+Valore booleano che indica se questa classe può essere un contenitore di altre classi di oggetti. Se questo valore è **TRUE,** è possibile chiamare il **metodo get \_ Container** per ottenere una matrice delle classi di oggetti che questa classe può contenere.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Boolean**
+Tipo di dati scripting: **BOOLEAN**
 </dt> <dt>
 
 
@@ -221,10 +221,10 @@ Matrice **BSTR** in cui ogni elemento è il nome di una classe di oggetti che qu
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -242,17 +242,17 @@ HRESULT put_Containment(
 
 </dt> </dl> </dd> <dt>
 
-**Estratta da**
+**DerivedFrom**
 </dt> <dd> <dl>
 
 Matrice di stringhe ADsPath che indicano da quali classi è stata derivata questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -270,17 +270,17 @@ HRESULT put_DerivedFrom(
 
 </dt> </dl> </dd> <dt>
 
-**HelpFileContext**
+**Oggetto HelpFileContext**
 </dt> <dd> <dl>
 
-ID del contesto in **HelpFileName** in cui è possibile trovare informazioni specifiche per questa classe.
+ID di contesto **all'interno di HelpFileName** dove è possibile trovare informazioni specifiche per questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **long**
 </dt> <dt>
 
 
@@ -301,11 +301,11 @@ HRESULT put_HelpFileContext(
 **HelpFileName**
 </dt> <dd> <dl>
 
-Nome di un file della guida che contiene ulteriori informazioni sugli oggetti di questa classe.
+Nome di un file della Guida che contiene altre informazioni sugli oggetti di questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -326,17 +326,17 @@ HRESULT put_HelpFileName(
 
 </dt> </dl> </dd> <dt>
 
-**MandatoryProperties**
+**Proprietà obbligatorie**
 </dt> <dd> <dl>
 
-**SAFEARRAY** di **varianti** che elenca le proprietà che devono essere impostate affinché questa classe venga scritta nell'archivio. Se la classe contiene solo una proprietà, **get \_ MandatoryProperties** restituirà un **BSTR**.
+**SAFEARRAY** di **VARIANT** che elenca le proprietà che devono essere impostate per la scrittura di questa classe nell'archiviazione. Se la classe contiene solo una proprietà, **get \_ MandatoryProperties** restituirà un **BSTR.**
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -354,17 +354,17 @@ HRESULT put_MandatoryProperties(
 
 </dt> </dl> </dd> <dt>
 
-**NamingProperties**
+**Proprietà di denominazione**
 </dt> <dd> <dl>
 
-**SAFEARRAY** di **BSTR** che elenca le proprietà utilizzate per denominare gli attributi di questa classe dello schema.
+**SAFEARRAY** di **BSTR** che elenca le proprietà utilizzate per assegnare un nome agli attributi di questa classe dello schema.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -382,14 +382,14 @@ HRESULT put_NamingProperties(
 
 </dt> </dl> </dd> <dt>
 
-**OID**
+**Oid**
 </dt> <dd> <dl>
 
-Identificatore di oggetto specifico del provider che definisce questa classe. Viene fornito per consentire l'estensione dello schema, utilizzando Active Directory, nei servizi directory che richiedono OID specifici del provider per le classi.
+Identificatore di oggetto specifico del provider che definisce questa classe. Viene fornito per consentire l'estensione dello schema, tramite Active Directory, nei servizi directory che richiedono OID specifici del provider per le classi.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
 Tipo di dati di scripting: **BSTR**
@@ -410,17 +410,17 @@ HRESULT put_OID(
 
 </dt> </dl> </dd> <dt>
 
-**OptionalProperties**
+**Proprietà facoltative**
 </dt> <dd> <dl>
 
-**SAFEARRAY** di **varianti** che elenca le proprietà facoltative per questa classe dello schema. Se la classe contiene solo una proprietà, **get \_ OptionalProperties** restituirà un **BSTR**.
+**SAFEARRAY** di **VARIANT** che elenca le proprietà facoltative per questa classe dello schema. Se la classe contiene solo una proprietà, **get \_ OptionalProperties** restituirà un **BSTR.**
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -438,17 +438,17 @@ HRESULT put_OptionalProperties(
 
 </dt> </dl> </dd> <dt>
 
-**PossibleSuperiors**
+**Possibilisuperiors**
 </dt> <dd> <dl>
 
 Matrice di stringhe ADsPath che indicano le classi dello schema che possono contenere istanze di questa classe.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati di scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -466,10 +466,10 @@ HRESULT put_PossibleSuperiors(
 
 </dt> </dl> </dd> <dt>
 
-**PrimaryInterface**
+**Interfaccia primaria**
 </dt> <dd> <dl>
 
-GUID dell'identificatore specifico del provider facoltativo che associa un'interfaccia a oggetti di questa classe dello schema. Ad esempio, la classe "User" che supporta [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) e **PrimaryInterface** è identificata da **IID \_ IADsUser**. Deve essere nel formato stringa standard di un GUID, come definito da COM. Questo GUID è il valore che viene visualizzato nella proprietà [**IADs:: Get \_ GUID**](/windows/desktop/api/Iads/nn-iads-iads) nelle istanze di questa classe per i provider che implementano questa proprietà. L'identificazione di una classe di schema per IID dell'interfaccia principale del codice della classe consente l'utilizzo di **QueryInterface** in fase di esecuzione per determinare se un oggetto è della classe desiderata.
+GUID facoltativo dell'identificatore specifico del provider che associa un'interfaccia agli oggetti di questa classe dello schema. Ad esempio, la classe "User" che supporta [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) e **PrimaryInterface** è identificata da **IID \_ IADsUser.** Deve essere nel formato stringa standard di un GUID, come definito da COM. Questo GUID è il valore visualizzato nella [**proprietà IADs::get \_ GUID**](/windows/desktop/api/Iads/nn-iads-iads) nelle istanze di questa classe per i provider che implementano questa proprietà. L'identificazione di una classe dello schema in base all'IID dell'interfaccia primaria del codice della classe consente l'uso di **QueryInterface** in fase di esecuzione per determinare se un oggetto è della classe desiderata.
 
 <dt>
 
@@ -495,7 +495,7 @@ HRESULT get_PrimaryInterface(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) per determinare se un oggetto può essere un contenitore e, in caso affermativo, elenca i nomi di tutti gli oggetti contenuti.
+Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) per determinare se un oggetto può essere un contenitore e, in tal caso, elenca i nomi di tutti gli oggetti contenuti.
 
 
 ```VB
@@ -523,7 +523,7 @@ Cleanup:
 
 
 
-Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) per determinare se un oggetto può essere un contenitore e, in caso affermativo, elenca i nomi di tutti gli oggetti contenuti.
+Nell'esempio di codice seguente viene illustrato come utilizzare l'interfaccia [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass) per determinare se un oggetto può essere un contenitore e, in tal caso, elenca i nomi di tutti gli oggetti contenuti.
 
 
 ```C++
@@ -576,7 +576,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsClass è definito come C8F93DD0-4AE0-11CF-9E73-00AA004A5691<br/>            |
 
@@ -589,7 +589,7 @@ Cleanup:
 [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 </dt> <dt>
 
-[**IADsClass:: Qualifiers**](/windows/desktop/api/Iads/nf-iads-iadsclass-qualifiers)
+[**IADsClass::Qualifiers**](/windows/desktop/api/Iads/nf-iads-iadsclass-qualifiers)
 </dt> </dl>
 
  

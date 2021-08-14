@@ -1,19 +1,19 @@
 ---
-description: È possibile utilizzare la finestra di dialogo comune carattere per visualizzare i tipi di carattere disponibili.
+description: È possibile usare la finestra di dialogo Tipo di carattere comune per visualizzare i tipi di carattere disponibili.
 ms.assetid: 317ea311-0592-432a-87b5-58296de003aa
 title: Creazione di un tipo di carattere logico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4398f426ae2dd0f18c21409422dfbcb53f0e6ee8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fb491a1af055963053e8b0247ecaa212547a750a7bd0a35db0ae983695a2420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104978706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117887471"
 ---
 # <a name="creating-a-logical-font"></a>Creazione di un tipo di carattere logico
 
-È possibile utilizzare la finestra di dialogo comune **carattere** per visualizzare i tipi di carattere disponibili. La finestra di dialogo **ChooseFont** viene visualizzata dopo che un'applicazione Inizializza i membri di una struttura [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) e chiama la funzione [**ChooseFont**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) . Dopo che l'utente ha selezionato uno dei tipi di carattere disponibili e ha premuto il pulsante **OK** , la funzione **ChooseFont** Inizializza una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) con i dati rilevanti. L'applicazione può quindi chiamare la funzione [**CreateFontIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta) e creare un tipo di carattere logico in base alla richiesta dell'utente. Nell'esempio seguente viene illustrato come eseguire questa operazione.
+È possibile usare la finestra **di dialogo Tipo** di carattere comune per visualizzare i tipi di carattere disponibili. La **finestra di dialogo ChooseFont** viene visualizzata dopo che un'applicazione inizializza i membri di una struttura [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) e chiama la [**funzione CHOOSEFONT.**](/windows/win32/api/commdlg/ns-commdlg-choosefonta) Dopo che l'utente ha selezionato uno dei tipi di carattere disponibili e ha premuto il pulsante **OK,** la funzione **ChooseFont** inizializza una struttura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) con i dati pertinenti. L'applicazione può quindi chiamare la [**funzione CreateFontIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta) e creare un tipo di carattere logico in base alla richiesta dell'utente. Nell'esempio seguente viene illustrato come eseguire questa operazione.
 
 
 ```C++

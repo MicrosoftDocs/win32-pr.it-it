@@ -1,24 +1,24 @@
 ---
-description: Per impostazione predefinita, il motore di ricerca di Windows e il catalogo non sono sensibili ai segni diacritici, che sono contrassegni accentati aggiunti alle lettere per modificare il significato o la pronuncia di una parola.
+description: Per impostazione predefinita, il motore di ricerca di Windows e il catalogo non sono sensibili ai segni diacritici, ovvero segni di accenti aggiunti alle lettere per modificare il significato o la pronuncia di una parola.
 ms.assetid: 71007bd4-5232-469c-982b-ff0d24bd0c1f
-title: Distinzione tra segni diacritici nelle ricerche
+title: Riservatezza dei segni diacritici nelle ricerche
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46fb68676418fc109fa24ed2d55fb9602b7ad41d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fcde4eb6cde6fe7a0b25a1d58f8026176de2fe30b6b0e2f020275821891a404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863684"
 ---
-# <a name="diacritic-sensitivity-in-searches"></a>Distinzione tra segni diacritici nelle ricerche
+# <a name="diacritic-sensitivity-in-searches"></a>Riservatezza dei segni diacritici nelle ricerche
 
-Per impostazione predefinita, il motore di ricerca di Windows e il catalogo non sono sensibili ai segni diacritici, che sono contrassegni accentati aggiunti alle lettere per modificare il significato o la pronuncia di una parola. Windows Search consente tuttavia di modificare questa impostazione per il catalogo usando [gestione catalogo](-search-3x-wds-mngidx-catalog-manager.md) per impostare la sensibilità dei segni diacritici. Con la sensibilità dei segni diacritici impostata su **false**, ad esempio, il catalogo considera "Resume" e "curriculum" come se fossero la stessa parola.
+Per impostazione predefinita, il motore di ricerca di Windows e il catalogo non sono sensibili ai segni diacritici, ovvero segni di accenti aggiunti alle lettere per modificare il significato o la pronuncia di una parola. Tuttavia, Windows ricerca consente di modificare questa impostazione per il catalogo usando [Gestione cataloghi per](-search-3x-wds-mngidx-catalog-manager.md) impostare la riservatezza dei segni diacritici. Ad esempio, con la distinzione dei segni diacritici impostata su **FALSE,** il catalogo considererebbe "resume" e "resumé" come se fossero la stessa parola.
 
-A livello di query, i termini di query con segni diacritici nelle clausole FREETEXT e CONTAINs vengono passati al motore e vengono quindi normalizzati (come in fase di indicizzazione) per la corrispondenza. La corrispondenza con il catalogo è sempre sensibile ai segni diacritici.
+A livello di query, i termini di query con segni diacritici nelle clausole FREETEXT e CONTAINS vengono passati al motore e quindi normalizzati (come in fase di indice) per la corrispondenza. La corrispondenza con il catalogo è sempre sensibile ai segni diacritici.
 
 > [!Note]  
-> Questo non avviene per gli intervalli di caratteri 0x2e81-F8FF e 0x1100-0x11ff.
+> Questo non è il caso per gli intervalli di caratteri 0x2e81-f8ff e 0x1100-0x11ff.
 
  
 

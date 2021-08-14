@@ -1,24 +1,24 @@
 ---
-title: Codice di esempio per determinare la modalità operativa
-description: Questo argomento include un esempio di codice che legge la proprietà ntMixedDomain di un dominio e determina la modalità operativa.
+title: Codice di esempio per determinare la modalità di funzionamento
+description: Questo argomento include un esempio di codice che legge la proprietà ntMixedDomain di un dominio e determina la modalità di funzionamento.
 ms.assetid: 4ea1ddc5-6f48-45d3-9763-7ef0e6e704e3
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, determinazione della modalità operativa
+- Esempi di Active Directory Active Directory, determinazione della modalità di funzionamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a059a750cf98efc066ac510c2c8acf58a65ab8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a2bb4a7d00a61298ad8b9b29d9208a50023a6885360d31b14933f83a3102ab1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190774"
 ---
-# <a name="example-code-for-determining-the-operation-mode"></a>Codice di esempio per determinare la modalità operativa
+# <a name="example-code-for-determining-the-operation-mode"></a>Codice di esempio per determinare la modalità di funzionamento
 
-Questo argomento include un esempio di codice che legge la proprietà **ntMixedDomain** di un dominio e determina la modalità operativa.
+Questo argomento include un esempio di codice che legge la **proprietà ntMixedDomain** di un dominio e determina la modalità di funzionamento.
 
-Nell'esempio di codice C++ riportato di seguito viene letta la proprietà **ntMixedDomain** di un dominio e viene determinata la modalità operativa.
+Nell'esempio di codice C++ seguente viene letta la **proprietà ntMixedDomain** di un dominio e viene determinata la modalità di operazione.
 
 
 ```C++
@@ -59,7 +59,7 @@ return hr;
 
 
 
-Nell'esempio di codice seguente Visual Basic viene letta la proprietà **ntMixedDomain** di un dominio e viene determinata la modalità operativa.
+Nell'Visual Basic di codice seguente viene letta la proprietà **ntMixedDomain** di un dominio e viene determinata la modalità operazione.
 
 
 ```VB
@@ -142,7 +142,7 @@ End Sub
 
 
 
-Nell'esempio di codice seguente Visual Basic Scripting Edition viene letta la proprietà **ntMixedDomain** di un dominio e viene determinata la modalità operativa.
+Nell'Visual Basic di codice di Scripting Edition seguente viene letta la proprietà **ntMixedDomain** di un dominio e viene determinata la modalità di funzionamento.
 
 
 ```VB
@@ -217,9 +217,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

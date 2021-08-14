@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentCannotDeleteTempTableException'
+description: Altre informazioni sul costruttore EsentCannotDeleteTempTableException
 title: Costruttore EsentCannotDeleteTempTableException
 TOCTitle: 'EsentCannotDeleteTempTableException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotDeleteTempTableException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad71d97bb6f35f268b070829f3c0c4decc7ef00d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 314e0fe1d2c7b048ba6b2a2daaedd923678bbd69bc49cbdb5cc7dc2e72121a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118783413"
 ---
 # <a name="esentcannotdeletetemptableexception-constructor"></a>Costruttore EsentCannotDeleteTempTableException
 
 Inizializza una nuova istanza della classe EsentCannotDeleteTempTableException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentCannotDeleteTempTableException()
 
 [Membri di EsentCannotDeleteTempTableException](./esentcannotdeletetemptableexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

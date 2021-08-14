@@ -1,10 +1,10 @@
 ---
 title: Attributo MS-TS-ManagingLS
-description: Servizi terminal che gestiscono il server licenze.
+description: Servizi terminal che gestisce il server licenze.
 ms.assetid: 657f005e-0f89-4df4-b0f8-00752827bece
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TS-ManagingLS-schema AD
+- Schema AD dell'attributo MS-TS-ManagingLS
 - Schema AD dell'attributo msTSManagingLS
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75944922fc648d124d9e10f8039a1fd94c28841f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8c79a91032e6f34f3cc69b9d7f172d9e28c0e757c20bda14f651b8810f71138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424119"
 ---
 # <a name="ms-ts-managingls-attribute"></a>Attributo MS-TS-ManagingLS
 
-Servizi terminal che gestiscono il server licenze.
+Servizi terminal che gestisce il server licenze.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS                            |
-| LDAP-Display-Name | msTSManagingLS                              |
+| Ldap-Display-Name | msTSManagingLS                              |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1995                     |
-| System-ID-GUID    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
+| System-Id-Guid    | f3bcc547-85b0-432c-9ac0-304506bf2c83        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Servizi terminal che gestiscono il server licenze.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -76,15 +76,15 @@ Servizi terminal che gestiscono il server licenze.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -97,15 +97,15 @@ Servizi terminal che gestiscono il server licenze.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| A valore singolo       | Vero         |
 | Indicizzato             | Vero         |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
