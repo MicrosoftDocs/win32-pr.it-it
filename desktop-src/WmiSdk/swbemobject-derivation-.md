@@ -1,8 +1,8 @@
 ---
-description: La proprietà di derivazione \_ dell'oggetto SWbemObject contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe per l'istanza a cui si fa riferimento.
+description: La proprietà Derivation dell'oggetto SWbemObject contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe \_ per l'istanza a cui si fa riferimento.
 ms.assetid: 8a4daab0-7d10-4a37-aacd-1f3f499b859a
 ms.tgt_platform: multiple
-title: Proprietà SWbemObject.Derivation_ (wbemdisp. h)
+title: SWbemObject.Derivation_ proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 84e7b4e53a1a5544c92bb5116f3f83189789487f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35195a6e3067fa68db747f04df8ec2c70480d297e4780c48059a1ba7f031e453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313903"
 ---
-# <a name="swbemobjectderivation_-property"></a>Proprietà SWbemObject. Derivation \_
+# <a name="swbemobjectderivation_-property"></a>Proprietà SWbemObject.Derivation \_
 
-La proprietà di **derivazione \_** dell'oggetto [**SWbemObject**](swbemobject.md) contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe per l'istanza a cui si fa riferimento. Il primo elemento nella matrice definisce la classe padre e l'ultimo elemento definisce la classe Dynasty. Questa proprietà è di sola lettura.
+La **proprietà \_ Derivation** dell'oggetto [**SWbemObject**](swbemobject.md) contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe per l'istanza a cui si fa riferimento. Il primo elemento nella matrice definisce la classe padre e l'ultimo elemento definisce la classe di cui è stato fatto parte. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,7 +44,7 @@ SWbemObject.Derivation_ As String
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio VBScript seguente viene descritto come recuperare la gerarchia di classi per Win32 \_ disco logico.
+Nell'esempio VBScript seguente viene descritto come recuperare la gerarchia di classi per il \_ disco logico win32.
 
 
 ```VB
@@ -64,7 +64,7 @@ end if
 
 
 
-nel seguente esempio Perl viene descritto come recuperare la gerarchia di classi per Win32 \_ disco logico.
+Nell'esempio Perl seguente viene descritto come recuperare la gerarchia di classi per il \_ disco logico win32.
 
 
 ```
@@ -105,11 +105,11 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECT CLSID<br/>                                                           |
-| IID<br/>                      | \_ISWBEMOBJECT IID<br/>                                                            |
+| CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 

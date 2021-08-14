@@ -1,6 +1,6 @@
 ---
-title: Per trovare i formati audio
-description: Per trovare i formati audio
+title: Per trovare formati audio
+description: Per trovare formati audio
 ms.assetid: f2001ed5-f07d-45a5-a566-45697024870e
 keywords:
 - flussi, ricerca di formati audio
@@ -9,16 +9,16 @@ keywords:
 - flussi audio, formati audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d85897d4d76a3bdb1e99902eb4f52336a3ad0874
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5c596c8efc1fc5315ad68bad51676888823ac4b3518232ec948ce38b2fb77075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118196507"
 ---
-# <a name="to-find-audio-formats"></a>Per trovare i formati audio
+# <a name="to-find-audio-formats"></a>Per trovare formati audio
 
-Nell'esempio di codice seguente viene illustrato come trovare un formato audio che corrisponda ai criteri specificati. La funzione **FindAudioFormat** accetta un puntatore a una struttura [**WAVEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) che contiene il numero di canali, i bit per campione e la frequenza di campionamento che si desidera utilizzare. La funzione trova il formato corrispondente a tali requisiti e presenta la velocità in bit più elevata che non supera il parametro *dwMaxRate* . Se si imposta *fAVSync* su **true**, la funzione convalida solo i formati che possono essere sincronizzati con il video. Per semplicità, questa funzione funziona solo con formati CBR a 1 pass.
+Nell'esempio di codice seguente viene illustrato come trovare un formato audio che corrisponda ai criteri specificati. La **funzione FindAudioFormat** accetta un puntatore a una struttura [**WAVEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) che contiene il numero di canali, i bit per campione e la frequenza di campionamento da usare. La funzione trova il formato che soddisfa tali requisiti e ha la velocità in bit più elevata che non supera *il parametro dwMaxRate.* Se si imposta *fAVSync* su **TRUE,** la funzione convalida solo i formati che possono essere sincronizzati con il video. Per semplicità, questa funzione funziona solo con formati CBR a 1 passaggio.
 
 
 ```C++
@@ -245,12 +245,12 @@ Exit:
 
 <dl> <dt>
 
-[**Configurazione di flussi audio**](configuring-audio-streams.md)
+[**Configurazione dei Flussi**](configuring-audio-streams.md)
 </dt> <dt>
 
 [**Per enumerare i formati di codec**](to-enumerate-codec-formats.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

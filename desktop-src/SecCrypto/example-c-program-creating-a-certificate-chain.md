@@ -1,30 +1,30 @@
 ---
-description: Nell'esempio seguente viene creato e installato un motore della catena di certificati non predefinito. Il motore viene utilizzato per compilare le catene di certificati per ciascuno dei certificati in un archivio certificati.
+description: Nell'esempio seguente viene creato e installato un motore di catena di certificati non predefinito. Il motore viene usato per creare catene di certificati per ognuno dei certificati in un archivio certificati.
 ms.assetid: 960f2bb9-130f-494f-9af0-0ab8ae3eb6e2
-title: 'Esempio di programma C: creazione di una catena di certificati'
+title: 'Programma C di esempio: creazione di una catena di certificati'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1857540f16cddfa754a0765d273a944e9a4a9044
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59bbc8e447a23a950280cb4cb9b9f20e7a7d4d09bb2384de19ca510c403dedd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765565"
 ---
-# <a name="example-c-program-creating-a-certificate-chain"></a>Esempio di programma C: creazione di una catena di certificati
+# <a name="example-c-program-creating-a-certificate-chain"></a>Programma C di esempio: creazione di una catena di certificati
 
-Nell'esempio seguente viene creato e installato un motore della catena di certificati non predefinito. Il motore viene utilizzato per compilare le catene di certificati per ciascuno dei certificati in un [*archivio certificati*](../secgloss/c-gly.md).
+Nell'esempio seguente viene creato e installato un motore di catena di certificati non predefinito. Il motore viene usato per creare catene di certificati per ognuno dei certificati in un [*archivio certificati.*](../secgloss/c-gly.md)
 
-In questo esempio vengono illustrate le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+Questo esempio illustra le attività e le [*funzioni CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Preparazione della creazione di un motore della catena di certificati non predefinito mediante la dichiarazione e l'inizializzazione di una struttura di dati di [**\_ configurazione del \_ motore \_ della catena**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config) di certificati
--   Creazione del motore di ricerca con [**CertCreateCertificateChainEngine**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine).
--   Uso di [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) per aprire l'archivio di sistema My.
+-   Preparazione alla creazione di un motore di catena di certificati non predefinito dichiarando e inizializzando una struttura di dati [**CERT \_ CHAIN ENGINE \_ \_ CONFIG.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_chain_engine_config)
+-   Creazione del motore di ricerca [**tramite CertCreateCertificateChainEngine.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatechainengine)
+-   Uso [**di CertOpenSystemStore per**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea) aprire l'archivio di sistema my.
 -   Recupero di tutti i certificati dall'archivio aperto tramite [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) in un ciclo.
--   Per ogni certificato nell'archivio aperto, recuperare il nome dell'oggetto dal certificato usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Compilazione di una catena di certificati per ogni certificato utilizzando [**CertGetCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain).
--   Creazione di un duplicato della catena di certificati utilizzando [**CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
--   Utilizzo di [**CertFreeCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) per rilasciare ogni catena prima che la catena successiva venga compilata.
+-   Per ogni certificato nell'archivio aperto, recuperare il nome del soggetto dal certificato [**usando CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Creazione di una catena di certificati per ogni certificato [**usando CertGetCertificateChain.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatechain)
+-   Creazione di un duplicato della catena di certificati [**tramite CertDuplicateCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatecertificatechain).
+-   Uso [**di CertFreeCertificateChain**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatechain) per rilasciare ogni catena prima che venga compilata la catena successiva.
 
 
 ```C++

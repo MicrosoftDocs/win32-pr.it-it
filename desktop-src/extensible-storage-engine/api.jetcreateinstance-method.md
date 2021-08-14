@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetCreateInstance'
-title: API. JetCreateInstance, metodo
+description: Altre informazioni sul metodo Api.JetCreateInstance
+title: Metodo Api.JetCreateInstance
 TOCTitle: 'JetCreateInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCreateInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE@,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetcreateinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1e865c443d4f19b14a955204840355ee73be8773
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0befe11e21a0711e9bcaed4baa8bea94ebce63a599b2e009ae0208cebe55ba3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719398"
 ---
-# <a name="apijetcreateinstance-method"></a>API. JetCreateInstance, metodo
+# <a name="apijetcreateinstance-method"></a>Metodo Api.JetCreateInstance
 
 Alloca una nuova istanza del motore di database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public static void JetCreateInstance(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    Restituisce la nuova istanza di.
+    Restituisce la nuova istanza di .
 
 <!-- end list -->
 
   - name  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nome dell’istanza. I nomi devono essere univoci.
 
@@ -79,6 +79,6 @@ public static void JetCreateInstance(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

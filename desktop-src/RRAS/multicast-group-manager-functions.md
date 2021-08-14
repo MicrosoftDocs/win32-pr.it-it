@@ -1,19 +1,19 @@
 ---
-title: Funzioni di gestione gruppi multicast
-description: Le funzioni seguenti vengono utilizzate per eseguire la registrazione con il gestore del gruppo multicast
+title: Funzioni di gestione del gruppo multicast
+description: Le funzioni seguenti vengono usate per la registrazione con il gestore del gruppo multicast
 ms.assetid: d4374ced-06ea-49dd-8f52-0d06612aa4c3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bbc3dbcfe24e63283907e5e68f211fd1f4cb6e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8d32ecaa5bc30aa9563ac15383cf17d9308c6c17b416b31a6c2b03b8b55d0710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790385"
 ---
-# <a name="multicast-group-manager-functions"></a>Funzioni di gestione gruppi multicast
+# <a name="multicast-group-manager-functions"></a>Funzioni di gestione del gruppo multicast
 
-Per eseguire la registrazione con il gestore del gruppo multicast vengono utilizzate le funzioni seguenti:
+Le funzioni seguenti vengono usate per la registrazione con il gestore di gruppi multicast:
 
 [**MgmRegisterMProtocol**](/windows/desktop/api/Mgm/nf-mgm-mgmregistermprotocol)
 
@@ -27,13 +27,13 @@ Per gestire la proprietà dell'interfaccia vengono usate le funzioni seguenti:
 
 [**MgmReleaseInterfaceOwnership**](/windows/desktop/api/Mgm/nf-mgm-mgmreleaseinterfaceownership)
 
-Per gestire l'appartenenza al gruppo vengono utilizzate le funzioni seguenti:
+Per gestire l'appartenenza ai gruppi vengono usate le funzioni seguenti:
 
 [**MgmAddGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmaddgroupmembershipentry)
 
 [**MgmDeleteGroupMembershipEntry**](/windows/desktop/api/Mgm/nf-mgm-mgmdeletegroupmembershipentry)
 
-Le funzioni seguenti vengono utilizzate per ottenere le statistiche di inoltring multicast (MFE) e MFE:
+Le funzioni seguenti vengono usate per ottenere le voci di inoltro multicast (MFE) e le statistiche MFE:
 
 [**MgmGetFirstMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmgetfirstmfe)
 
@@ -47,11 +47,11 @@ Le funzioni seguenti vengono utilizzate per ottenere le statistiche di inoltring
 
 [**MgmGetMfeStats**](/windows/desktop/api/Mgm/nf-mgm-mgmgetmfestats)
 
-Per modificare MFE, viene usata la funzione seguente:
+La funzione seguente viene usata per modificare gli MFE:
 
 [**MgmSetMfe**](/windows/desktop/api/Mgm/nf-mgm-mgmsetmfe)
 
-Vengono usate le funzioni seguenti per ottenere un elenco di gruppi che sono stati aggiunti:
+Le funzioni seguenti vengono usate per ottenere un elenco di gruppi aggiunti:
 
 [**MgmGroupEnumerationStart**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationstart)
 
@@ -59,9 +59,9 @@ Vengono usate le funzioni seguenti per ottenere un elenco di gruppi che sono sta
 
 [**MgmGroupEnumerationEnd**](/windows/desktop/api/Mgm/nf-mgm-mgmgroupenumerationend)
 
- 
+ 
 
- 
+ 
 
 
 

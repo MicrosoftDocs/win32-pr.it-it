@@ -1,6 +1,6 @@
 ---
-title: 'Funzione SampleCmp:: SampleCmp (S, float, float, float) per TextureCubeArray'
-description: 'Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. | Funzione SampleCmp:: SampleCmp (S, float, float, float) per TextureCubeArray'
+title: Funzione SampleCmp::SampleCmp(S,float,float,float) per TextureCubeArray
+description: Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione. | Funzione SampleCmp::SampleCmp(S,float,float,float) per TextureCubeArray
 ms.assetid: A8824A82-A3FD-4FEE-BC10-56843997BBCE
 keywords:
 - Funzione SampleCmp HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e65b1747d03b3a0555267f7b57e95a4d5aba54da
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c5d5e8945dc04f11e62cf668cfdd81fc2f8f616bce00482cadad4a7e1cde398f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104982643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723299"
 ---
-# <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecubearray"></a>Funzione SampleCmp:: SampleCmp (S, float, float, float) per TextureCubeArray
+# <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecubearray"></a>Funzione SampleCmp::SampleCmp(S,float,float,float) per TextureCubeArray
 
-Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,20 +47,20 @@ DXGI_FORMAT SampleCmp(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
+Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| Texture-Object tipo                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -73,7 +73,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*CompareValue* \[ in\]
+*CompareValue* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -82,26 +82,26 @@ Valore a virgola mobile da utilizzare come valore di confronto.
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si passa 2.0f per il valore di chiusura, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Metodi SampleCmp](texturecubearray-samplecmp.md)
+[Metodi sampleCmp](texturecubearray-samplecmp.md)
 </dt> <dt>
 
 [**TextureCubeArray**](texturecubearray.md)

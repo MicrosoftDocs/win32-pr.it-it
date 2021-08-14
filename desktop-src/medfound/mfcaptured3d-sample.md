@@ -1,23 +1,23 @@
 ---
-description: Mostra come visualizzare in anteprima i video da una videocamera, usando Direct3D per eseguire il rendering del video.
+description: Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per eseguire il rendering del video.
 ms.assetid: fe241201-f2b5-467c-9d6a-5fc147fa5e2a
-title: Esempio MFCaptureD3D
+title: Esempio di MFCaptureD3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ead8a026d3014c60e2411a031d43fe20214aa8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138da13efc97a6b8e3da2e021c5cdcfd368ef8cd5d268c8a285a8aabc6b4b12d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874757"
 ---
-# <a name="mfcaptured3d-sample"></a>Esempio MFCaptureD3D
+# <a name="mfcaptured3d-sample"></a>Esempio di MFCaptureD3D
 
-Mostra come visualizzare in anteprima i video da una videocamera, usando Direct3D per eseguire il rendering del video.
+Illustra come visualizzare in anteprima il video da una videocamera usando Direct3D per eseguire il rendering del video.
 
 ## <a name="apis-demonstrated"></a>API illustrate
 
-In questo esempio vengono illustrate le API seguenti.
+Questo esempio illustra le API seguenti.
 
 -   [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 -   [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)
@@ -37,7 +37,7 @@ In questo esempio vengono illustrate le API seguenti.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-Questo esempio è disponibile nel [repository GitHub degli esempi classici di Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D).
+Questo esempio è disponibile nel repository [github Windows esempi classici](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

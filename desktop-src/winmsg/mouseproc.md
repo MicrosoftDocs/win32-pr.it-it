@@ -32,22 +32,22 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: abdd74b5fed93e2c2ddbc8d037a657b779a62a05
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: fa1528ce2910e563e3fe930fe19960aa43b437b22c53c03d0febc51b98bcc55b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "106299552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200692"
 ---
-# <a name="mouseproc-function"></a>MouseProc (funzione)
+# <a name="mouseproc-function"></a>Funzione MouseProc
 
 ## <a name="description"></a>Descrizione
 
-Funzione di callback definita dall'applicazione o definita dalla libreria utilizzata con la funzione [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) .
-Il sistema chiama questa funzione ogni volta che un'applicazione chiama la funzione [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ed è presente un messaggio del mouse da elaborare.
+Funzione di callback definita dall'applicazione o definita dalla libreria usata con la [funzione SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+Il sistema chiama questa funzione ogni volta che un'applicazione chiama [la funzione GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) o [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew) ed è presente un messaggio del mouse da elaborare.
 
-Il tipo **HookProc** definisce un puntatore a questa funzione di callback.
-**MouseProc** è un segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
+Il **tipo HOOKPROC** definisce un puntatore a questa funzione di callback.
+**MouseProc è** un segnaposto per il nome di funzione definito dall'applicazione o dalla libreria.
 
 ```cpp
 LRESULT CALLBACK MouseProc(
@@ -63,45 +63,45 @@ LRESULT CALLBACK MouseProc(
 
 Tipo: **int**
 
-Codice utilizzato dalla routine hook per determinare la modalità di elaborazione del messaggio.
-Se *nCode* è minore di zero, la routine hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx**.
+Codice utilizzato dalla routine hook per determinare come elaborare il messaggio.
+Se *nCode* è minore di zero, la procedura hook deve passare il messaggio alla funzione [CallNextHookEx](/windows/desktop/api/winuser/nf-winuser-callnexthookex) senza ulteriore elaborazione e deve restituire il valore restituito da **CallNextHookEx**.
 Questo parametro può avere uno dei valori seguenti.
 
 | Valore | Significato |
 |-------|---------|
-| **HC_ACTION** 0 | I parametri *wParam* e *lParam* contengono informazioni su un messaggio del mouse. |
-| **HC_NOREMOVE** 3 | I parametri *wParam* e *lParam* contengono informazioni su un messaggio del mouse e il messaggio del mouse non è stato rimosso dalla coda di messaggi. (Applicazione chiamata funzione **PeekMessage** , che specifica il flag di **PM_NOREMOVE** ). |
+| **HC_ACTION** 0 | I *parametri wParam* *e lParam* contengono informazioni su un messaggio del mouse. |
+| **HC_NOREMOVE** 3 | I *parametri wParam* *e lParam* contengono informazioni su un messaggio del mouse e il messaggio del mouse non è stato rimosso dalla coda di messaggi. Un'applicazione denominata **funzione PeekMessage,** che specifica il flag **PM_NOREMOVE.** |
 
 ### <a name="wparam-in"></a>wParam [in]
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
 Identificatore del messaggio del mouse.
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-Puntatore a una struttura [MOUSEHOOKSTRUCT](/windows/desktop/api/winuser/ns-winuser-mousehookstruct) .
+Puntatore a una [struttura MOUSEHOOKSTRUCT.](/windows/desktop/api/winuser/ns-winuser-mousehookstruct)
 
 ## <a name="returns"></a>Restituisce
 
 Tipo: **LRESULT**
 
-Se *nCode* è minore di zero, la routine hook deve restituire il valore restituito da **CallNextHookEx**.
+Se *nCode* è minore di zero, la routine hook deve restituire il valore restituito **da CallNextHookEx.**
 
-Se *nCode* è maggiore o uguale a zero e la routine hook non ha elaborato il messaggio, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito; in caso contrario, altre applicazioni che hanno installato [WH_MOUSE](about-hooks.md) hook non riceveranno le notifiche Hook e potrebbero comportarsi in modo errato.
-Se la routine hook elabora il messaggio, può restituire un valore diverso da zero per impedire al sistema di passare il messaggio alla routine della finestra di destinazione.
+Se *nCode* è maggiore o uguale a zero e la procedura hook non ha elaborata il messaggio, è consigliabile chiamare **CallNextHookEx** e restituire il valore restituito. In caso contrario, le altre applicazioni in cui [WH_MOUSE](about-hooks.md) hook non riceveranno notifiche hook e potrebbero comportarsi in modo non corretto.
+Se la procedura hook ha elaborato il messaggio, può restituire un valore diverso da zero per impedire al sistema di passare il messaggio alla routine della finestra di destinazione.
 
 ## <a name="remarks"></a>Commenti
 
-Un'applicazione installa la routine hook specificando il tipo di hook WH_MOUSE e un puntatore alla routine hook in una chiamata alla funzione **SetWindowsHookEx** .
+Un'applicazione installa la procedura hook specificando il tipo hook WH_MOUSE e un puntatore alla routine hook in una chiamata alla **funzione SetWindowsHookEx.**
 
-La routine hook non deve installare una funzione di callback [WH_JOURNALPLAYBACK](about-hooks.md) .
+La routine hook non deve installare una funzione [WH_JOURNALPLAYBACK](about-hooks.md) callback.
 
 Questo hook può essere chiamato nel contesto del thread che lo ha installato.
 La chiamata viene effettuata inviando un messaggio al thread che ha installato l'hook.
-Pertanto, il thread che ha installato l'hook deve disporre di un ciclo di messaggi.
+Pertanto, il thread che ha installato l'hook deve avere un ciclo di messaggi.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -113,7 +113,7 @@ Pertanto, il thread che ha installato l'hook deve disporre di un ciclo di messag
 
 [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagew)
 
-[SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
+[Setwindowshookex](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 
 [Hook](hooks.md)
 

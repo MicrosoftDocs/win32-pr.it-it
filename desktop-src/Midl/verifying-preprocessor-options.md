@@ -1,25 +1,25 @@
 ---
 title: Verifica delle opzioni del preprocessore
-description: Il compilatore MIDL richiama in modo implicito il preprocessore e non Visualizza le opzioni del preprocessore.
+description: Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le opzioni del preprocessore.
 ms.assetid: 2f402af4-18d7-480c-a8d2-d16f402ef87a
 keywords:
-- MIDL Compiler MIDL, verifica delle opzioni del preprocessore
+- MIDL del compilatore MIDL, verifica delle opzioni del preprocessore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a047980c9f2f9dc8deffdcf85de767e4dc8705
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: acb9f5055623a44e88ed57b5ed0cadd0034c6962e160a081c7a55a9a51ca9e13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382766"
 ---
 # <a name="verifying-preprocessor-options"></a>Verifica delle opzioni del preprocessore
 
-Il compilatore MIDL richiama in modo implicito il preprocessore e non Visualizza le opzioni del preprocessore. In assenza del commutatore [**/cpp \_**](-cpp-opt.md) di MIDL, la riga di comando del preprocessore è costituita da tutte le opzioni [**/I**](-i.md), [**/d**](-d.md) e [**/u**](-u.md) usate nella riga di comando MIDL, oltre che dalle opzioni **/e** e [**/nologo**](-nologo.md) . Per visualizzare le opzioni passate al preprocessore, usare l'opzione [**/Confirm**](-confirm.md) del compilatore.
+Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le opzioni del preprocessore. In assenza dell'opzione MIDL [**/cpp \_ opt,**](-cpp-opt.md) la riga di comando del preprocessore è costituita da tutte le opzioni [**/I**](-i.md), [**/D**](-d.md) e [**/U**](-u.md) usate nella riga di comando MIDL, nonché dalle opzioni **/E** [**e /nologo.**](-nologo.md) Per visualizzare le opzioni passate al preprocessore, usare l'opzione [**/confirm del**](-confirm.md) compilatore.
 
 Ad esempio, la riga seguente
 
-**midl.exe-D \_ Win32 \_ WinNT = 0x501-Solid-DNTENV = 1-ID: \\ NT \\ public \\ SDK \\ Inc-Confirm-Oicf-ENV Win32-out x86 stub. idl**
+**midl.exe -D \_ WIN32 \_ WINNT=0x501 -robust -DNTENV=1 -Id: \\ nt public sdk inc \\ \\ \\ -confirm -Oicf -env win32 -out x86 stub.idl**
 
 produce l'output seguente:
 
@@ -58,9 +58,9 @@ E -nologo
                   Zp -  8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

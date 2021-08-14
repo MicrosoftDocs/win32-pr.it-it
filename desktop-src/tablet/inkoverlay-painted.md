@@ -1,19 +1,19 @@
 ---
-description: Si verifica quando l'oggetto InkOverlay o il controllo InkPicture ha completato il ridisegno.
+description: Si verifica quando l'oggetto InkOverlay o il controllo InkPicture ha completato il ridisegno di se stesso.
 ms.assetid: de3c69de-4a33-46e4-96e5-462805681bda
-title: Evento InkOverlay. Painted (Msinkaut. h)
+title: Evento InkOverlay.Painted (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3de0628679aa034b16a3562aa08cdbd1928653ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f433f18d5e94be1163be519f4ee33fbe0b8d08a2e33feadd363a8eb3a43a6b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104485764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118218935"
 ---
-# <a name="inkoverlaypainted-event"></a>Evento InkOverlay. Painted
+# <a name="inkoverlaypainted-event"></a>Evento InkOverlay.Painted
 
-Si verifica quando l'oggetto [**InkOverlay**](inkoverlay-class.md) o il controllo [InkPicture](inkpicture-control-reference.md) ha completato il ridisegno.
+Si verifica quando [**l'oggetto InkOverlay**](inkoverlay-class.md) [o il controllo InkPicture](inkpicture-control-reference.md) ha completato il ridisegno di se stesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,14 +31,14 @@ void Painted(
 
 <dl> <dt>
 
-*HDC* \[ in\]
+*hDC* \[ Pollici\]
 </dt> <dd>
 
 Contesto di dispositivo in cui si è verificato l'evento.
 
 </dd> <dt>
 
-*Rect* \[ in\]
+*Rect* \[ Pollici\]
 </dt> <dd>
 
 [**InkRectangle**](inkrectangle-class.md) ridisegnato.
@@ -51,7 +51,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ IInkPictureEvents dispatch-only (dispinterfaces) con ID DISPID \_ IOEPainted.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID IOEPainted.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -70,7 +70,7 @@ Questo metodo di evento è definito nelle \_ interfacce IInkOverlayEvents e \_ I
 
 <dl> <dt>
 
-[**InkOverlay (classe)**](inkoverlay-class.md)
+[**Classe InkOverlay**](inkoverlay-class.md)
 </dt> </dl>
 
  

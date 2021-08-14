@@ -1,9 +1,9 @@
 ---
-title: Ribbon. QuickAccessToolbar, proprietà
-description: Rappresenta un contenitore per la barra di accesso rapido (QAT).
+title: Ribbon.QuickAccessToolbar - proprietà
+description: Rappresenta un contenitore per la barra di accesso rapido.
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Barra multifunzione di Windows della proprietà Ribbon. QuickAccessToolbar
+- Proprietà Ribbon.QuickAccessToolbar Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad0e09b220bd60b60ccbb8ee05c2da9c4317ba78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83e1fa4cb5de43be2b7316d4ed1786c2a1325fa4468538e2ffea41d5d8c9ef0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202318"
 ---
-# <a name="ribbonquickaccesstoolbar-property"></a>Ribbon. QuickAccessToolbar, proprietà
+# <a name="ribbonquickaccesstoolbar-property"></a>Ribbon.QuickAccessToolbar - proprietà
 
-Rappresenta un contenitore per la barra di accesso rapido (QAT).
+Rappresenta un contenitore per la barra di accesso rapido.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -59,11 +59,11 @@ Non ci sono attributi.
 
 Obbligatorio.
 
-Può verificarsi una o più volte per ogni [**barra multifunzione**](windowsribbon-element-ribbon.md).
+Può verificarsi una o più volte per ogni barra [**multifunzione.**](windowsribbon-element-ribbon.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per l'elemento **Ribbon. QuickAccessToolBar** .
+L'esempio seguente illustra il markup di base per **l'elemento Ribbon.QuickAccessToolbar.**
 
 
 ```XML
@@ -87,8 +87,8 @@ Nell'esempio seguente viene illustrato il markup di base per l'elemento **Ribbon
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

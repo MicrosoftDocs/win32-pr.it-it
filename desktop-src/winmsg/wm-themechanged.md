@@ -1,19 +1,19 @@
 ---
-description: Trasmette a ogni finestra dopo un evento di modifica del tema. Esempi di eventi di modifica del tema sono l'attivazione di un tema, la disattivazione di un tema o una transizione da un tema a un altro.
+description: Trasmettere a ogni finestra dopo un evento di modifica del tema. Esempi di eventi di modifica del tema sono l'attivazione di un tema, la disattivazione di un tema o una transizione da un tema a un altro.
 ms.assetid: 1a4051ac-cc6e-4520-ab66-d0a41a8a4c73
-title: Messaggio WM_THEMECHANGED (winuser. h)
+title: WM_THEMECHANGED messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc15ab64126ff8972b858ef43ddd4d92cd62f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b070cb492fa5db94acb97cd07f3de87455189d542aaaad2a51a3e0ecc6b4268d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199910"
 ---
-# <a name="wm_themechanged-message"></a>\_Messaggio THEMECHANGED WM
+# <a name="wm_themechanged-message"></a>Messaggio \_ WM THEMECHANGED
 
-Trasmette a ogni finestra dopo un evento di modifica del tema. Esempi di eventi di modifica del tema sono l'attivazione di un tema, la disattivazione di un tema o una transizione da un tema a un altro.
+Trasmettere a ogni finestra dopo un evento di modifica del tema. Esempi di eventi di modifica del tema sono l'attivazione di un tema, la disattivazione di un tema o una transizione da un tema a un altro.
 
 
 ```C++
@@ -44,22 +44,22 @@ Questo parametro è riservato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 > [!Note]  
-> Questo messaggio viene pubblicato dal sistema operativo. Le applicazioni in genere non inviano questo messaggio.
+> Questo messaggio viene inviato dal sistema operativo. Le applicazioni in genere non inviano questo messaggio.
 
  
 
-I temi sono specifiche per l'aspetto dei controlli, in modo che l'elemento visivo di un controllo venga trattato separatamente dalla relativa funzionalità.
+I temi sono specifiche per l'aspetto dei controlli, in modo che l'elemento visivo di un controllo sia trattato separatamente dalla relativa funzionalità.
 
-Per rilasciare un handle del tema esistente, chiamare [**CloseThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-closethemedata). Per acquisire un nuovo handle del tema, usare [**OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata).
+Per rilasciare un handle del tema esistente, [**chiamare CloseThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-closethemedata). Per acquisire un nuovo handle del tema, [**usare OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata).
 
-Dopo la trasmissione **WM \_ THEMECHANGED** , gli eventuali handle di tema esistenti non sono validi. Una finestra sensibile al tema deve rilasciare e riaprire i relativi handle di tema preesistenti quando riceve il messaggio **\_ THEMECHANGED WM** . Se la funzione [**OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) restituisce **null**, la finestra deve disegnare senza tema.
+Dopo la **trasmissione WM \_ THEMECHANGED,** tutti gli handle del tema esistenti non sono validi. Una finestra in grado di riconoscere il tema deve rilasciare e riaprire uno degli handle di tema preesistenti quando riceve il **messaggio WM \_ THEMECHANGED.** Se la [**funzione OpenThemeData**](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) restituisce **NULL,** la finestra deve disegnare senzathemed.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Dopo la trasmissione **WM \_ THEMECHANGED** , gli eventuali handle di tema esist
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

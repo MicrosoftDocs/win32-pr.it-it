@@ -1,14 +1,14 @@
 ---
-title: Proprietà NetworkConnectionType di IMsRdpClientAdvancedSettings7
+title: Proprietà NetworkConnectionType IMsRdpClientAdvancedSettings7
 description: Ottiene o imposta il tipo di connessione di rete utilizzato tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
 ms.assetid: 4dd4fa17-f121-412d-a30d-1c01f4c892b0
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà NetworkConnectionType
-- Servizi Desktop remoto proprietà NetworkConnectionType, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà NetworkConnectionType
-- Servizi Desktop remoto proprietà NetworkConnectionType, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà NetworkConnectionType
+- Proprietà NetworkConnectionType Servizi Desktop remoto
+- Proprietà NetworkConnectionType Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà NetworkConnectionType
+- Proprietà NetworkConnectionType Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà NetworkConnectionType
 topic_type:
 - apiref
 api_name:
@@ -24,14 +24,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5df4c1e944920759f56f5d4b493b9cd47e7ebc29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e331fde1a8f7013c376b99184a90e7b3bb9f599197259b044c4d1cbd38841584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352158"
 ---
-# <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Proprietà IMsRdpClientAdvancedSettings7:: NetworkConnectionType
+# <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Proprietà IMsRdpClientAdvancedSettings7::NetworkConnectionType
 
 Ottiene o imposta il tipo di connessione di rete utilizzato tra il client e il server. Le informazioni sul tipo di connessione di rete passate al server consentono al server di ottimizzare diversi parametri in base al tipo di connessione di rete.
 
@@ -60,7 +60,7 @@ Tipo di connessione di rete.
 
 <span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>
 
-<span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>**Connessione \_ a TIPO \_ modem** (1 (0x1))
+<span id="CONNECTION_TYPE_MODEM"></span><span id="connection_type_modem"></span>**CONNESSIONE \_ TIPO \_ MODEM** (1 (0x1))
 
 
 </dt> <dd>
@@ -71,18 +71,18 @@ Modem (56 Kbps)
 
 <span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**Connessione \_ a TIPO \_ Broadband \_ low** (2 (0x2))
+<span id="CONNECTION_TYPE_BROADBAND_LOW"></span><span id="connection_type_broadband_low"></span>**CONNESSIONE \_ TYPE \_ BROADBAND \_ LOW** (2 (0x2))
 
 
 </dt> <dd>
 
-Banda larga a bassa velocità (256 kbps a 2 Mbps)
+Banda larga a bassa velocità (da 256 Kbps a 2 Mbps)
 
 </dd> <dt>
 
 <span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>
 
-<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**Connessione \_ a Digitare \_ satellite** (3 (0x3))
+<span id="CONNECTION_TYPE_SATELLITE"></span><span id="connection_type_satellite"></span>**CONNESSIONE \_ TYPE \_ SATELLITE** (3 (0x3))
 
 
 </dt> <dd>
@@ -93,7 +93,7 @@ Satellite (da 2 Mbps a 16 Mbps, con latenza elevata)
 
 <span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>
 
-<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**Connessione \_ a Digitare \_ Broadband \_ High** (4 (0x4))
+<span id="CONNECTION_TYPE_BROADBAND_HIGH"></span><span id="connection_type_broadband_high"></span>**CONNESSIONE \_ TYPE \_ BROADBAND \_ HIGH** (4 (0x4))
 
 
 </dt> <dd>
@@ -104,23 +104,23 @@ Banda larga ad alta velocità (da 2 Mbps a 10 Mbps)
 
 <span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>
 
-<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**Connessione \_ a Digitare \_ WAN** (5 (0x5))
+<span id="CONNECTION_TYPE_WAN"></span><span id="connection_type_wan"></span>**CONNESSIONE \_ TYPE \_ WAN** (5 (0x5))
 
 
 </dt> <dd>
 
-WAN (Wide Area Network) (10 Mbps o superiore, con latenza elevata)
+Rete WAN (Wide Area Network) (10 Mbps o superiore, con latenza elevata)
 
 </dd> <dt>
 
 <span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>
 
-<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**Connessione \_ a Digitare \_ LAN** (6 (0x6))
+<span id="CONNECTION_TYPE_LAN"></span><span id="connection_type_lan"></span>**CONNESSIONE \_ TYPE \_ LAN** (6 (0x6))
 
 
 </dt> <dd>
 
-LAN (Local Area Network) (10 Mbps o versione successiva)
+Rete locale (LAN) (10 Mbps o superiore)
 
 </dd> </dl>
 

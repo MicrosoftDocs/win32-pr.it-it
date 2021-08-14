@@ -1,11 +1,11 @@
 ---
-title: Playlist. appendItem, metodo
+title: Metodo Playlist.appendItem
 description: Il metodo appendItem aggiunge un elemento multimediale alla fine della playlist.
 ms.assetid: cc956491-7936-49e7-90ca-1f71e03448cd
 keywords:
 - Metodo appendItem Windows Media Player
-- Metodo appendItem Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo appendItem
+- Metodo appendItem Windows Media Player , classe Playlist
+- Classe Playlist Windows Media Player , metodo appendItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 828799d5b6e71e7ff0e7be4c1e55714f6343be51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79361ebcf2ea23b754a7bc86cb6fa4a0af465e4e6619ed692c027bc28eb7aa87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747120"
 ---
-# <a name="playlistappenditem-method"></a>Playlist. appendItem, metodo
+# <a name="playlistappenditem-method"></a>Metodo Playlist.appendItem
 
-Il metodo **appendItem** aggiunge un elemento multimediale alla fine della playlist.
+Il **metodo appendItem** aggiunge un elemento multimediale alla fine della playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ Playlist.appendItem(
 
 <dl> <dt>
 
-*elemento* \[ di in\]
+*item* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **multimediale** da aggiungere.
+**Oggetto** multimediale da aggiungere.
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *playlist*. **appendItem** aggiungere l'elemento multimediale corrente alla playlist denominata "Three". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la playlist*. **appendItem** per aggiungere l'elemento multimediale corrente alla playlist denominata "ThreeList". **L'oggetto Player** è stato creato con ID="Player".
 
 
 ```JScript
@@ -82,7 +82,7 @@ plThreeList.appendItem(currMedia);
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -91,13 +91,13 @@ plThreeList.appendItem(currMedia);
 
 <dl> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

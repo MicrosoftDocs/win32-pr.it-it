@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMLicenseManagement CreateLicenseRevocationChallenge (wmdrmsdk. h)
-description: Il metodo CreateLicenseRevocationChallenge genera una richiesta di revoca delle licenze.
+title: Metodo IWMDRMLicenseManagement CreateLicenseRevocationChallenge (Wmdrmsdk.h)
+description: Il metodo CreateLicenseRevocationChallenge genera una richiesta di revoca della licenza.
 ms.assetid: 31fcf7a7-1af8-4474-abac-eddb1070975b
 keywords:
-- Metodo CreateLicenseRevocationChallenge Windows Media Format
-- Metodo CreateLicenseRevocationChallenge Windows Media Format, interfaccia IWMDRMLicenseManagement
-- Interfaccia IWMDRMLicenseManagement-formato Windows Media, metodo CreateLicenseRevocationChallenge
+- Metodo CreateLicenseRevocationChallenge windows Media Format
+- Metodo CreateLicenseRevocationChallenge windows Media Format , interfaccia IWMDRMLicenseManagement
+- Metodo CreateLicenseRevocationChallenge dell'interfaccia IWMDRMLicenseManagement di Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e7fd0acb41b9a2548e5be708611529bea92e131
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 851233229d7dde113cf21cfb38419067679843b34ae59ece0e32e326c2a91c46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117846955"
 ---
-# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>Metodo IWMDRMLicenseManagement:: CreateLicenseRevocationChallenge
+# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>Metodo IWMDRMLicenseManagement::CreateLicenseRevocationChallenge
 
-Il metodo **CreateLicenseRevocationChallenge** genera una richiesta di revoca delle licenze.
+Il **metodo CreateLicenseRevocationChallenge** genera una richiesta di revoca della licenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,57 +47,57 @@ HRESULT CreateLicenseRevocationChallenge(
 
 <dl> <dt>
 
-*pbMachineID* \[ in\]
+*pbMachineID* \[ Pollici\]
 </dt> <dd>
 
-Identificatore computer specificato dall'utente. Questo valore viene utilizzato per eseguire una query per una licenza nel server e deve essere conforme a qualsiasi formato utilizzato dal server licenze.
+Identificatore del computer specificato dall'utente. Questo valore viene usato per eseguire query su una licenza nel server e deve essere conforme al formato usato dal server licenze.
 
 </dd> <dt>
 
-*cbMachineID* \[ in\]
+*cbMachineID* \[ Pollici\]
 </dt> <dd>
 
 Dimensione, in byte, dell'identificatore del computer.
 
 </dd> <dt>
 
-*pbChallenge* \[ in\]
+*pbChallenge* \[ Pollici\]
 </dt> <dd>
 
-Dati di richiesta specificati dall'utente. Questi dati, oltre all'identificatore del computer, vengono utilizzati per eseguire una query sul server licenze per la revoca delle licenze.
+Dati di richiesta specificati dall'utente. Questi dati, oltre all'identificatore del computer, vengono usati per eseguire query sul server licenze per ottenere le licenze da revocare.
 
 </dd> <dt>
 
-*cbChallenge* \[ in\]
+*cbChallenge* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni, in byte, dei dati della richiesta di verifica.
+Dimensioni, in byte, dei dati di richiesta.
 
 </dd> <dt>
 
-*ppbChallengeOutput* \[ out\]
+*ppbChallengeOutput* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un puntatore che riceve l'indirizzo dell'output della richiesta di verifica. Questo buffer corrisponde ai dati inviati al servizio di revoca delle licenze. Al termine di questi dati, è necessario rilasciare la memoria chiamando **CoTaskMemFree**.
+Indirizzo di un puntatore che riceve l'indirizzo dell'output di richiesta. Questo buffer è i dati inviati al servizio di revoca delle licenze. Al termine di questi dati, è necessario rilasciare la memoria chiamando **CoTaskMemFree**.
 
 </dd> <dt>
 
-*pcbChallengeOutput* \[ out\]
+*pcbChallengeOutput* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di una variabile che riceve la dimensione dei dati di output della richiesta di verifica allocata, in byte.
+Indirizzo di una variabile che riceve le dimensioni in byte dei dati di output della richiesta di richiesta allocati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -105,7 +105,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -113,7 +113,7 @@ Nessuna.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray GatherCmpGreen'
-description: 'Campiona e confronta una trama e restituisce il componente verde. | Metodi di TextureCubeArray:: TextureCubeArray GatherCmpGreen'
+title: Metodi TextureCubeArray::TextureCubeArray GatherCmpGreen
+description: Campione e confronta una trama e restituisce il componente verde. | Metodi TextureCubeArray::TextureCubeArray GatherCmpGreen
 ms.assetid: F4B58F67-E13C-4166-9793-4CD1E1712766
 keywords:
 - Metodi GatherCmpGreen HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7a8761682c07407e4ed413b26dd1f2617719db08
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b87dd5f008cdfdd19a325a53cc931e15ce6958c0c80bbc3ad077a349d7f1c2a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722371"
 ---
-# <a name="texturecubearraygathercmpgreen-methods"></a>Metodi TextureCubeArray:: GatherCmpGreen
+# <a name="texturecubearraygathercmpgreen-methods"></a>Metodi TextureCubeArray::GatherCmpGreen
 
-Campiona e confronta una trama e restituisce il componente verde.
+Campione e confronta una trama e restituisce il componente verde.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campiona e confronta una trama e restituisce il componente verde.
 
 | Metodo                                                                                      | Descrizione                                                                                                      |
 |:--------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen (S, float, float, uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Campiona e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpGreen(S,float,float,uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Campione e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-KeyVersionNumber
-description: Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un attributo costruito.
+title: Attributo ms-DS-KeyVersionNumber
+description: Numero di versione Kerberos della chiave corrente per questo account. Si tratta di un attributo costruito.
 ms.assetid: 21bd40d9-df90-4f46-90e7-582e86eef760
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-KeyVersionNumber
-- attributo msDS-KeyVersionNumber-schema AD
+- Schema AD dell'attributo msDS-KeyVersionNumber
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6caa860b01b2cefc9509a234af62d6ea57487048
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 488edc2feed2b7a9e7b4974e60d67b4338ebc90e34a9f928be2cc38e207d2f2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425847"
 ---
-# <a name="ms-ds-keyversionnumber-attribute"></a>attributo ms-DS-KeyVersionNumber
+# <a name="ms-ds-keyversionnumber-attribute"></a>Attributo ms-DS-KeyVersionNumber
 
-Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un attributo costruito.
+Numero di versione Kerberos della chiave corrente per questo account. Si tratta di un attributo costruito.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-KeyVersionNumber               |
-| LDAP-Display-Name | msDS-KeyVersionNumber                |
+| Ldap-Display-Name | msDS-KeyVersionNumber                |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1782              |
-| System-ID-GUID    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
+| System-Id-Guid    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Numero di versione Kerberos della chiave corrente per l'account. Si tratta di un
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Vero                                                         |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classi utilizzate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
+| Classi usate in        | [**Entità di sicurezza**](c-securityprincipal.md)<br/> |
 
 
 

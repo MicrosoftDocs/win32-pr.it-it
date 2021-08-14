@@ -1,19 +1,19 @@
 ---
 title: Mapping dei tipi di dati della descrizione del servizio ai tipi di dati IDL
-description: Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti utilizzati in IDL.
+description: Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti usati in IDL.
 ms.assetid: eeb86177-8c3b-47f1-bbe1-f9aabd2dde76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6b5fac697c41f54279ecde7436900434895ff23
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 22a34a5ec9ee092091dc00c7cc420b4474a38d8cba0d41c2691943c7dcd5b35e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347631"
 ---
 # <a name="mapping-service-description-data-types-to-idl-data-types"></a>Mapping dei tipi di dati della descrizione del servizio ai tipi di dati IDL
 
-Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti utilizzati in IDL.
+Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti usati in IDL.
 
 
 
@@ -21,8 +21,8 @@ Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specific
 |---------------|----------------|
 | bin.base64    | SAFEARRAY      |
 | bin.hex       | SAFEARRAY      |
-| boolean       | \_bool Variant  |
-| char          | WCHAR \_ t       |
+| boolean       | VARIANT \_ BOOL  |
+| char          | wchar \_ t       |
 | Data          | DATE           |
 | dateTime      | DATE           |
 | dateTime.tz   | DATE           |
@@ -46,11 +46,11 @@ Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specific
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

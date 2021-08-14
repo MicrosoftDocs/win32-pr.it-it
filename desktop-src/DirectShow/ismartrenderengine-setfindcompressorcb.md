@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ISmartRenderEngine::SetFindCompressorCB: non implementato.'
+description: 'Metodo ISmartRenderEngine::SetFindCompressorCB : non implementato.'
 ms.assetid: ed0aecfa-348c-4cf9-87c2-b701a552eec8
 title: Metodo ISmartRenderEngine::SetFindCompressorCB
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: aba7de54e02433762c63bc7bc8addea5b94b48e2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6c2c3407e3b18f66784a560ac6c57c7dd1aa2ece0a637600a33125345809d237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817395"
 ---
 # <a name="ismartrenderenginesetfindcompressorcb-method"></a>Metodo ISmartRenderEngine::SetFindCompressorCB
 
@@ -62,7 +62,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento [Microsoft Windows SDK per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: 242c19a7-179b-4fc0-a050-a1b598566a6b
 title: Funzione CryptUIDlgSelectCertificate
 ms.topic: reference
 ms.date: 05/29/2020
-ms.openlocfilehash: 8f015796671990491407d91cbd51761816c5434b
-ms.sourcegitcommit: 435ea8f5bf06808ffa7dce39afb0ee6de842ba2f
+ms.openlocfilehash: fb37eb664841331ce3f37e9ce37ca3ab9e5c0f92c254cff0896c6c682a9f2872
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107925692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768164"
 ---
 # <a name="cryptuidlgselectcertificate-function"></a>Funzione CryptUIDlgSelectCertificate
 
@@ -55,9 +55,9 @@ Se il **membro dwFlags** della struttura [**\_ \_ STRUCT CRYPTUI SELECTCERTIFICA
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                              |
-| Fine del supporto<br/> | Solo app desktop di Windows 7 \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows solo \[ app desktop XP\]<br/>                                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                              |
+| Fine del supporto<br/> | Windows 7 \[ app desktop\]<br/>                                                       |
 | Libreria<br/>                  | <dl> <dt>Cryptui.lib</dt> </dl>            |
 | DLL<br/>                      | <dl> <dt>Cryptui.dll</dt> </dl>            |
 | Nomi Unicode e ANSI<br/>   | **CryptUIDlgSelectCertificateW** (Unicode) e **CryptUIDlgSelectCertificateA** (ANSI)<br/> |

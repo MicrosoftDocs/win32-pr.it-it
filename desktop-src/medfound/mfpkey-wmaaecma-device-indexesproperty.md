@@ -1,23 +1,23 @@
 ---
-description: Specifica i dispositivi audio usati dal DSP di acquisizione vocale per l'acquisizione e il rendering dell'audio.
+description: Specifica i dispositivi audio che il DSP di acquisizione vocale usa per l'acquisizione e il rendering dell'audio.
 ms.assetid: 42b6b82b-ac64-4a07-956c-473dd57a128d
-title: Proprietà MFPKEY_WMAAECMA_DEVICE_INDEXES (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_DEVICE_INDEXES proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b377e4335e78e81c8e7d3c5a9a0c1d00b8f9bae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4e9fd9eae8d53f1fa19bd8b55d94d292b9cd6cbf214b7a71a6473f1af647f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872994"
 ---
-# <a name="mfpkey_wmaaecma_device_indexes-property"></a>\_Proprietà degli \_ indici del dispositivo WMAAECMA di MFPKEY \_
+# <a name="mfpkey_wmaaecma_device_indexes-property"></a>Proprietà MFPKEY \_ WMAAECMA \_ DEVICE \_ INDEXES
 
-Specifica i dispositivi audio usati dal DSP di acquisizione vocale per l'acquisizione e il rendering dell'audio.
+Specifica i dispositivi audio che il DSP di acquisizione vocale usa per l'acquisizione e il rendering dell'audio.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
-Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponibile solo tramite [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,23 +25,23 @@ VT \_ I4
 
 ## <a name="default-value"></a>Valore predefinito
 
-(-1,-1).
+(-1, -1).
 
 ## <a name="applies-to"></a>Si applica a
 
--   [DSP di acquisizione vocale](voicecapturedmo.md)
+-   [Voice Capture DSP](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Commenti
 
-Impostare questa proprietà se si utilizza il DSP in modalità origine. Il DSP ignora questa proprietà in modalità filtro.
+Impostare questa proprietà se si usa il provider di servizi di configurazione in modalità di origine. Il provider di servizi di dominio ignora questa proprietà in modalità filtro.
 
-Il valore della proprietà è costituito da **parole** a 2 16 bit compresse in un valore **DWORD**. I 16 bit superiori specificano il dispositivo di rendering audio (in genere un altoparlante) e i 16 bit inferiori specificano il dispositivo di acquisizione (in genere un microfono). Ogni dispositivo viene specificato come indice nella raccolta di dispositivi audio. Se l'indice è-1, viene usato il dispositivo predefinito.
+Il valore della proprietà è due WORD a 16 **bit,** suddivisi in un **valore DWORD.** I 16 bit superiori specificano il dispositivo di rendering audio (in genere un altoparlante) e i 16 bit inferiori specificano il dispositivo di acquisizione (in genere un microfono). Ogni dispositivo viene specificato come indice nella raccolta di dispositivi audio. Se l'indice è -1, viene usato il dispositivo predefinito.
 
-L'indice del dispositivo corrisponde all'indice della raccolta usato nell'interfaccia [**IMMDeviceCollection**](/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevicecollection) . L'applicazione deve riprodurre la voce finale tramite il dispositivo di rendering selezionato. (La voce finale è la voce della persona sull'altra estremità della linea telefonica, che viene riprodotta attraverso l'altoparlante sul computer dell'utente). Se il dispositivo di rendering selezionato non dispone di un flusso attivo, il DSP non può elaborare alcun output.
+L'indice del dispositivo corrisponde all'indice della raccolta usato [**nell'interfaccia IMMDeviceCollection.**](/windows/win32/api/mmdeviceapi/nn-mmdeviceapi-immdevicecollection) L'applicazione deve riprodurre la voce all'estremità attraverso il dispositivo di rendering selezionato. La voce all'estrema estremità è la voce della persona all'altra estremità della linea telefonica, che viene riprodotta tramite l'altoparlante sul computer dell'utente. Se il dispositivo di rendering selezionato non ha un flusso attivo, il DSP non può elaborare alcun output.
 
-Il valore predefinito di questa proprietà è (-1,-1).
+Il valore predefinito di questa proprietà è (-1, -1).
 
-Nell'esempio seguente viene illustrato come inizializzare **PROPVARIANT** per questa proprietà.
+Nell'esempio seguente viene illustrato come inizializzare **l'oggetto PROPVARIANT** per questa proprietà.
 
 
 ```
@@ -66,9 +66,9 @@ varDeviceIndexes.lVal = (unsigned long)(iSpeakerIndex << 16) +
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ varDeviceIndexes.lVal = (unsigned long)(iSpeakerIndex << 16) +
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP di acquisizione vocale](voicecapturedmo.md)
+[Voice Capture DSP](voicecapturedmo.md)
 </dt> </dl>
 
  

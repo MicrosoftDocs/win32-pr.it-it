@@ -4,12 +4,12 @@ ms.assetid: aa3ebe48-08e7-43d3-a25c-1a71d42267e9
 title: System.TransferSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55a1b70822a3ff960799b76e93b505130186169c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 64efb88f4988339b1b3eb419482204f8b69302dbd1c93a6ed2794557eafd8fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227383"
 ---
 # <a name="systemtransfersize"></a>System.TransferSize
 

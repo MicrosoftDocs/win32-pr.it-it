@@ -1,10 +1,10 @@
 ---
-title: Struttura MPENDOFLIFE_DATA (MpClient. h)
-description: '\ 0034; Fine vita \ 0034; dati di notifica.'
+title: MPENDOFLIFE_DATA struttura (MpClient.h)
+description: '\ 0034; Fine del ciclo di vita \ 0034; dati di notifica.'
 ms.assetid: 00C2E707-9034-4BBC-99CF-3DFA4B8C08D9
 keywords:
-- Struttura MPENDOFLIFE_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPENDOFLIFE_DATA
+- MPENDOFLIFE_DATA struttura Legacy Windows Environment Features
+- PMPENDOFLIFE_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e209b9b35a089523815c353e8a750152bf4af75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 532ee5f80e76de49c2c20bb01958e95fc13603b8f4b65666639834c5cad0fa72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476283"
 ---
-# <a name="mpendoflife_data-structure"></a>\_Struttura dei dati MPENDOFLIFE
+# <a name="mpendoflife_data-structure"></a>Struttura MPENDOFLIFE \_ DATA
 
-Dati di notifica di "fine vita".
+Dati di notifica "Fine vita".
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ typedef struct tagMPENDOFLIFE_DATA {
 **ftSignatureExpiry**
 </dt> <dd>
 
-Tipo: **FILEtime**
+Tipo: **FILETIME**
 
 </dd> <dd>
 
@@ -58,7 +58,7 @@ Ora di scadenza della firma.
 **ftPlatformExpiry**
 </dt> <dd>
 
-Tipo: **FILEtime**
+Tipo: **FILETIME**
 
 </dd> <dd>
 
@@ -69,7 +69,7 @@ Ora di scadenza della piattaforma.
 **fAdminControlled**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
@@ -80,7 +80,7 @@ True se l'amministratore controlla i criteri per la visualizzazione della notifi
 **fEndOfLifeImpendingOrPast**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
@@ -94,9 +94,9 @@ True se "End of Life" è in sospeso o passato. Se false, l'interfaccia utente e 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

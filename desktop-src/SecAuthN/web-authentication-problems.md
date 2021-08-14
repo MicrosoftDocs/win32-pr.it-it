@@ -1,35 +1,35 @@
 ---
-description: Questo argomento descrive i suggerimenti per la risoluzione dei problemi relativi all'uso delle API di Web Authentication Broker per le pagine Web.
+description: Questo argomento descrive i suggerimenti per la risoluzione dei problemi relativi all'uso delle API di Gestore autenticazione Web per le pagine Web.
 ms.assetid: 25A024AA-9A70-40A5-BF5E-452FD148D0D2
 title: Problemi relativi all'autenticazione Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f996527c58b9620b8417ac3e6cdd6e0f61bd5217
-ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+ms.openlocfilehash: 7c722aefa35849485d2c8958e17c654b5bb6477479ac1765e76e648fe15f9826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113353664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785871"
 ---
 # <a name="web-authentication-problems"></a>Problemi relativi all'autenticazione Web
 
-Questo argomento descrive i suggerimenti per la risoluzione dei problemi relativi all'uso delle API di Web Authentication Broker per le pagine Web.
+Questo argomento descrive i suggerimenti per la risoluzione dei problemi relativi all'uso delle API di Gestore autenticazione Web per le pagine Web.
 
 -   [Log operativi](#operational-logs)
--   [Uso di Fiddler con Web Authentication Broker](#using-fiddler-with-web-authentication-broker)
+-   [Uso di Fiddler con Gestore autenticazione Web](#using-fiddler-with-web-authentication-broker)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="operational-logs"></a>Log operativi
 
-Spesso, per identificare l'elemento problematico puoi usare i log operativi. È disponibile un canale di log eventi dedicato Microsoft-Windows-WebAuth Operational che consente agli sviluppatori di siti Web di comprendere come le pagine Web vengono elaborate da \\ Web Authentication Broker. Per abilitarlo, avviare eventvwr.exe e abilitare il log operativo in Application and Services \\ Microsoft \\ Windows \\ WebAuth. Web Authentication Broker aggiunge inoltre una stringa univoca alla stringa dell'agente utente per identificarsi nel server Web. Tale stringa è "MSAuthHost/1.0". Ricorda che il numero di versione può cambiare in futuro, pertanto il tuo codice non deve dipendere da tale valore. Di seguito è riportato un esempio della stringa completa dell'agente utente:
+Spesso, per identificare l'elemento problematico puoi usare i log operativi. È disponibile un canale di log eventi dedicato Microsoft-Windows-WebAuth Operational che consente agli sviluppatori di siti Web di comprendere come le pagine Web vengono elaborate da \\ Web Authentication Broker. Per abilitarlo, avviare eventvwr.exe e abilitare il log operativo in Applicazione e servizi \\ microsoft \\ Windows \\ WebAuth. Inoltre, Web Authentication Broker aggiunge una stringa univoca alla stringa agente utente per identificarsi nel server Web. Tale stringa è "MSAuthHost/1.0". Ricorda che il numero di versione può cambiare in futuro, pertanto il tuo codice non deve dipendere da tale valore. Di seguito è riportato un esempio della stringa agente utente completa:
 
 `User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0; MSAuthHost/1.0)`
 
 Esempio di uso dei log operativi
 
 1.  Abilitare i log operativi
-2.  Eseguire l'applicazione social Contoso![log operativi webauth visualizzati nel visualizzatore eventi](images/wab-figure15.png)
-3.  Le voci dei log generati possono essere usate per comprendere in modo più dettagliato il comportamento di Web Authentication Broker. In questo caso, tali voci possono includere:
+2.  Eseguire l'applicazione di social network Contoso![log operativi webauth visualizzati nel visualizzatore eventi](images/wab-figure15.png)
+3.  Le voci di log generate possono essere usate per comprendere in modo più dettagliato il comportamento di Gestore autenticazione Web. In questo caso, tali voci possono includere:
     -   Inizio esplorazione: registra l'avvio di AuthHost e contiene informazioni sugli URL di inizio e di fine.
     -   ![illustra in dettaglio l'inizio dell'esplorazione](images/wab-figure16.png)
     -   Completamento esplorazione: registra il completamento del caricamento di una pagina Web.
@@ -38,13 +38,13 @@ Esempio di uso dei log operativi
     -   Errore di esplorazione: AuthHost rileva un errore di esplorazione per l'URL che include HttpStatusCode.
     -   Fine esplorazione: rilevamento dell'URL di fine.
 
-## <a name="using-fiddler-with-web-authentication-broker"></a>Uso di Fiddler con Web Authentication Broker
+## <a name="using-fiddler-with-web-authentication-broker"></a>Uso di Fiddler con Gestore autenticazione Web
 
-Il debugger Web Fiddler può essere usato con Windows 8 app.
+Il debugger Web di Fiddler può essere usato con Windows 8 app.
 
 1.  Poiché AuthHost viene eseguito nel proprio contenitore di app per garantire la funzionalità di rete privata, devi impostare una chiave del Registro di sistema: Editor del Registro di sistema di Windows versione 5.00
 
-    **HKEY \_ LOCAL \_ MACHINE** SOFTWARE Microsoft Windows NT opzioni di esecuzione del file di immagine \\  \\  \\  \\ **CurrentVersion** \\  \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
+    **HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** Image File Execution \\ **Options** \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
 
                      Data type
 </dt> <dd>                     DWORD</dd> </dl>
@@ -71,7 +71,7 @@ Il debugger Web Fiddler può essere usato con Windows 8 app.
 
 3.  Aggiungi una regola firewall per il traffico in entrata in Fiddler.
 
-Per altre informazioni, vedere [Blog sull'uso del debugger Web Fiddler con Windows app di Store.](/archive/blogs/fiddler/revisiting-fiddler-and-win8-immersive-applications)
+Per altre informazioni, vedere [Blog sull'uso del debugger Web fiddler con Windows Store.](/archive/blogs/fiddler/revisiting-fiddler-and-win8-immersive-applications)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -83,7 +83,7 @@ Per altre informazioni, vedere [Blog sull'uso del debugger Web Fiddler con Windo
 [Domande frequenti su Web Authentication Broker](faq-for-web-authentication-broker.yml)
 </dt> <dt>
 
-[App di esempio di Web Authentication Broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
+[App di esempio Web Authentication Broker SDK](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)
 </dt> <dt>
 
 [**Windows.Security.Authentication.Web**](/uwp/api/Windows.Security.Authentication.Web?view=winrt-19041&preserve-view=true)

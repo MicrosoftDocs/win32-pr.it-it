@@ -1,7 +1,7 @@
 ---
-description: Questo argomento si applica a Windows XP Service Pack 2 o versioni successive. La \_ struttura di connessione KSTOPOLOGY descrive una connessione nodo all'interno di un filtro di streaming kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un pin sul filtro.
+description: Questo argomento si applica Windows XP Service Pack 2 o versione successiva. La struttura KSTOPOLOGY CONNECTION descrive una connessione di nodo \_ all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto nel filtro.
 ms.assetid: 8fca47b7-4c52-46db-809c-77a0e3414276
-title: Struttura KSTOPOLOGY_CONNECTION (KS. h)
+title: KSTOPOLOGY_CONNECTION struttura (Ks.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Ks.h
-ms.openlocfilehash: f523d378a54311845781c144b33e131d5875e41e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 80a7b6f046edd1cd7f602487a11d6a79c375276814f9374f4142d148699bb8b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397245"
 ---
-# <a name="kstopology_connection-structure"></a>\_Struttura di connessione KSTOPOLOGY
+# <a name="kstopology_connection-structure"></a>Struttura KSTOPOLOGY \_ CONNECTION
 
-Questo argomento si applica a Windows XP Service Pack 2 o versioni successive.
+Questo argomento si applica Windows XP Service Pack 2 o versione successiva.
 
-La struttura di **\_ connessione KSTOPOLOGY** descrive una connessione nodo all'interno di un filtro di streaming kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un pin sul filtro.
+La **struttura KSTOPOLOGY \_ CONNECTION** descrive una connessione di nodo all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto nel filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,31 +44,31 @@ typedef struct {
 
 <dl> <dt>
 
-**FromNode**
+**Fromnode**
 </dt> <dd>
 
-Indice del nodo upstream nella connessione. Se la connessione upstream è un PIN, anziché un nodo, il valore è KSFILTER \_ node.
+Indice del nodo upstream nella connessione. Se la connessione upstream è un pin, anziché un nodo, il valore è KSFILTER \_ NODE.
 
 </dd> <dt>
 
 **FromNodePin**
 </dt> <dd>
 
-Se il valore del campo **FromNode** è KSFILTER \_ node, questo campo specifica l'indice del pin upstream. In caso contrario, questo campo viene ignorato.
+Se il valore del **campo FromNode** è KSFILTER NODE, questo campo \_ specifica l'indice del pin upstream. In caso contrario, questo campo viene ignorato.
 
 </dd> <dt>
 
 **ToNode**
 </dt> <dd>
 
-Indice del nodo downstream nella connessione. Se la connessione downstream è un PIN, anziché un nodo, il valore è KSFILTER \_ node.
+Indice del nodo downstream nella connessione. Se la connessione downstream è un pin, anziché un nodo, il valore è KSFILTER \_ NODE.
 
 </dd> <dt>
 
 **ToNodePin**
 </dt> <dd>
 
-Se il valore del campo **ToNode** è KSFILTER \_ , questo campo specifica l'indice del pin downstream. In caso contrario, questo campo viene ignorato.
+Se il valore del **campo ToNode** è KSFILTER NODE, questo campo \_ specifica l'indice del pin downstream. In caso contrario, questo campo viene ignorato.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Se il valore del campo **ToNode** è KSFILTER \_ , questo campo specifica l'indi
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>KS. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Ks.h</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ Se il valore del campo **ToNode** è KSFILTER \_ , questo campo specifica l'indi
 
 <dl> <dt>
 
-[Strutture DirectShow](directshow-structures.md)
+[DirectShow Strutture](directshow-structures.md)
 </dt> <dt>
 
-[**IKsTopologyInfo:: Get \_ ConnectionInfo**](/previous-versions/windows/desktop/api/Vidcap/nf-vidcap-ikstopologyinfo-get_connectioninfo)
+[**IKsTopologyInfo::get \_ ConnectionInfo**](/previous-versions/windows/desktop/api/Vidcap/nf-vidcap-ikstopologyinfo-get_connectioninfo)
 </dt> </dl>
 
  

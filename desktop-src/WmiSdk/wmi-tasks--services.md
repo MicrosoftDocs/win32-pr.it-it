@@ -1,5 +1,5 @@
 ---
-description: Le attività WMI per i servizi ottengono informazioni sui servizi, inclusi i servizi dipendenti o precedenti. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
+description: Le attività WMI per i servizi ottengono informazioni sui servizi, inclusi i servizi dipendenti o meno. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
 ms.assetid: 1cd92981-c074-4ff7-a32c-ce492e6d6aa5
 ms.tgt_platform: multiple
 title: 'Attività WMI: Servizi'
@@ -10,34 +10,34 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b786ce0e358a59922728be4e90bc8cdeaa37a298
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e96080dfde59ac5ca910082b764700b9ce51149dce82d87e8a716cfdcf73027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117738830"
 ---
 # <a name="wmi-tasks-services"></a>Attività WMI: Servizi
 
-Le attività WMI per i servizi ottengono informazioni sui servizi, inclusi i servizi dipendenti o precedenti. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Le attività WMI per i servizi ottengono informazioni sui servizi, inclusi i servizi dipendenti o meno. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per ulteriori informazioni sull'utilizzo dello script per ottenere dati da computer remoti, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Gli esempi di script illustrati in questo argomento ottengono i dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
-Nella procedura riportata di seguito viene descritto come eseguire uno script.
+Nella procedura seguente viene descritto come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunga un'estensione txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non a .txt'estensione al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare che sia in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni log eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da controlli di accesso utente (UAC).
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da Controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript Visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
 
  
 
-Nella tabella seguente sono elencati esempi di script che è possibile utilizzare per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere utilizzati per ottenere vari tipi di dati dal computer locale.
 
 
 
@@ -56,7 +56,7 @@ Nella tabella seguente sono elencati esempi di script che è possibile utilizzar
 <tbody>
 <tr class="odd">
 <td>... determinare quali servizi sono in esecuzione e quali no?</td>
-<td>Utilizzare la classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> per verificare lo stato di tutti i servizi. La proprietà state indica se un servizio è stato interrotto o in esecuzione.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> per controllare lo stato di tutti i servizi. La proprietà state consente di sapere se un servizio è arrestato o in esecuzione.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -97,7 +97,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... arrestare l'avvio di determinati servizi da parte di Power Users?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e il metodo <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>ChangeStartMode</strong></a> per impostare la proprietà <strong>StartMode</strong> su Disabled. I servizi disabilitati non possono essere avviati e, per impostazione predefinita, Power Users non può modificare la modalità di avvio di un servizio.</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>metodo ChangeStartMode</strong></a> per impostare la proprietà <strong>StartMode</strong> su Disabled. I servizi disabilitati non possono essere avviati e, per impostazione predefinita, Power Users non può modificare la modalità di avvio di un servizio.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -143,7 +143,7 @@ Next</code></pre></td>
 </tr>
 <tr class="odd">
 <td>... avviare e arrestare i servizi?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e i metodi <a href="/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service"><strong>StopService</strong></a> e <a href="/windows/desktop/CIMWin32Prov/startservice-method-in-class-win32-service"><strong>StartService</strong></a> .</p>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e i <a href="/windows/desktop/CIMWin32Prov/stopservice-method-in-class-win32-service"><strong>metodi StopService</strong></a> e <a href="/windows/desktop/CIMWin32Prov/startservice-method-in-class-win32-service"><strong>StartService.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -189,8 +189,8 @@ Next
 </div></td>
 </tr>
 <tr class="even">
-<td>... modificare le password degli account del servizio utilizzando uno script?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e il metodo <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>Change</strong></a> .</p>
+<td>... modificare le password dell'account del servizio usando uno script?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e il <a href="/windows/desktop/CIMWin32Prov/change-method-in-class-win32-service"><strong>metodo Change.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -219,8 +219,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>.. determinare quali servizi posso arrestare?</td>
-<td><p>Usare la classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e controllare il valore della proprietà <strong>AcceptStop</strong> .</p>
+<td>.. determinare quali servizi è possibile arrestare?</td>
+<td><p>Usare la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> e controllare il valore della <strong>proprietà AcceptStop.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -264,8 +264,8 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... individuare i servizi che devono essere in esecuzione prima di poter avviare il servizio DHCP?</td>
-<td><p>Eseguire una query per gli <a href="associators-of-statement.md">associatori della</a> classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> denominata &quot; DHCP &quot; che si trovano nella classe <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong>Win32_DependentService</strong></a> e che &quot; dipendono dalla &quot; proprietà <strong>Role</strong> . <strong>Role</strong> indica il ruolo del servizio DHCP: in questo caso, dipende dagli altri servizi in fase di avvio.</p>
+<td>... trovare i servizi che devono essere in esecuzione prima di poter avviare il servizio DHCP?</td>
+<td><p>Eseguire una query <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> <a href="associators-of-statement.md">per</a> gli WIN32_SERVICE classe denominata DHCP che si Win32_DependentService classe e che hanno Dependent nella &quot; proprietà &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Ruolo</strong> indica il ruolo del servizio DHCP: in questo caso dipende dagli altri servizi in fase di avvio.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -312,8 +312,8 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Disp
 </div></td>
 </tr>
 <tr class="odd">
-<td>... individuare i servizi per i quali è necessario che il servizio WMI (Winmgmt) sia in esecuzione prima di poter iniziare?</td>
-<td><p>Eseguire una query per gli <a href="associators-of-statement.md">associatori della</a> classe <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> denominata &quot; DHCP &quot; che si trovano nella classe <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong>Win32_DependentService</strong></a> e hanno &quot; antecendent &quot; nella proprietà <strong>Role</strong> . <strong>Role</strong> indica il ruolo del servizio RASMAN: in questo caso, è necessario avviare prima i servizi dipendenti.</p>
+<td>... trovare i servizi che richiedono l'esecuzione del servizio WMI (Winmgmt) prima di poter essere avviati?</td>
+<td><p>Eseguire una query per cercare <a href="associators-of-statement.md">ASSOCIATORS OF</a> <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> classe denominata DHCP nella classe Win32_DependentService e che hanno &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; Antecendent &quot; nella proprietà <strong>Role.</strong> <strong>Ruolo</strong> indica il ruolo del servizio rasman: in questo caso, è un'attività precedente che deve essere avviata prima dei servizi dipendenti.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>

@@ -1,7 +1,7 @@
 ---
 description: Ottiene la posizione dell'icona assegnata al collegamento.
 ms.assetid: 3bb7f0f0-7ab9-41e6-b738-274efbcd52ab
-title: Metodo ShellLinkObject. GetIconLocation (Shlobj \_ Core. h)
+title: Metodo ShellLinkObject.GetIconLocation (Shlobj \_ core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ef2f502d30116def68aa43269b3020d404ce177d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ace233291d5eac285ac1115866a54cb9792c85aefbb8faa5a2d1f6c37393e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857582"
 ---
-# <a name="shelllinkobjectgeticonlocation-method"></a>ShellLinkObject. GetIconLocation, metodo
+# <a name="shelllinkobjectgeticonlocation-method"></a>Metodo ShellLinkObject.GetIconLocation
 
 Ottiene la posizione dell'icona assegnata al collegamento.
 
@@ -39,26 +39,26 @@ iRetVal = ShellLinkObject.GetIconLocation(
 
 <dl> <dt>
 
-*sPath* \[ out\]
+*sPath* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[**BSTR**](/previous-versions/windows/desktop/automat/bstr) \** _
+Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
-Quando termina, questo metodo contiene il percorso completo del file che contiene l'icona.
+Quando il metodo viene restituito, contiene il percorso completo del file che contiene l'icona.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _*integer \**_
+Tipo: **\* Integer**
 
-Restituisce l'indice dell'icona nel file specificato da _sPath *.
+Restituisce l'indice dell'icona nel file specificato da *sPath.*
 
 ## <a name="examples"></a>Esempio
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questo metodo per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -95,7 +95,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -175,11 +175,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shlobj \_ Core. h (include shldisp. h)</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shlobj \_ core.h (includere Shldisp.h)</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

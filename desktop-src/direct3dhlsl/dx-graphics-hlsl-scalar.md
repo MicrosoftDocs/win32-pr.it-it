@@ -13,35 +13,35 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/29/2020
-ms.openlocfilehash: 7198932c6edb91e6f797b232b6c980976f3696a7
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 39097dd358fcf9da1685be517742291ef96332f2307f255274445da70e4fc050
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "103761896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725935"
 ---
 # <a name="scalar-types"></a>Tipi scalari
 
 
 HLSL supporta diversi tipi di dati scalari:
 
--   **bool** : true o false.
--   intero con segno **int** a 32 bit.
--   **uint** -Unsigned Integer a 32 bit.
--   **DWORD** -Unsigned Integer a 32 bit.
--   valore a virgola mobile a **metà** 16 bit. Questo tipo di dati viene fornito solo per la compatibilità con le lingue. Le destinazioni Direct3D 10 shader mappano tutti i tipi di dati a metà per i tipi di dati float. Non è possibile usare un tipo di dati Half in una variabile globale uniforme (usare il flag/GEC se si desidera questa funzionalità).
+-   **bool:** true o false.
+-   **int** : intero con segno a 32 bit.
+-   **uint** : intero senza segno a 32 bit.
+-   **dword** : intero senza segno a 32 bit.
+-   **half** - valore a virgola mobile a 16 bit. Questo tipo di dati viene fornito solo per la compatibilità del linguaggio. Le destinazioni shader Direct3D 10 e mappano tutti i metà tipi di dati ai tipi di dati float. Non è possibile usare un tipo di dati half in una variabile globale uniforme (usare il flag /Gec se si desidera questa funzionalità).
 -   **float** : valore a virgola mobile a 32 bit.
--   valore a virgola mobile a 64 bit **doppio** . Non è possibile usare valori a precisione doppia come input e output per un flusso. Per passare valori a precisione doppia tra shader, dichiarare ogni **Double** come coppia di tipi di dati **uint** . Usare quindi la funzione [**asuint**](asuint.md) per comprimere ogni **Double** nella coppia di **uint** s e la funzione [**AsDouble**](asdouble.md) per decomprimere la coppia di **uint** di nuovo nel **valore Double**.
+-   **double** : valore a virgola mobile a 64 bit. Non è possibile usare valori a precisione doppia come input e output per un flusso. Per passare valori a precisione doppia tra shader, dichiarare ogni **valore double** come coppia di tipi di **dati uint.** Usare quindi la funzione [**asuint**](asuint.md) per imballare ogni valore **double** nella coppia di **uint** s e la funzione [**asdouble**](asdouble.md) per disimballare la coppia **di uint** s nel **valore double**.
 
-A partire da Windows 8 HLSL supporta anche i tipi di dati scalari con precisione minima. I driver grafici possono implementare tipi di dati scalari con precisione minima usando una precisione maggiore o uguale alla precisione dei bit specificata. Si consiglia di non basarsi sul comportamento di blocco o wrapping che dipende dalla precisione sottostante specifica. Ad esempio, il driver di grafica potrebbe eseguire operazioni aritmetiche su un valore **min16float** a una precisione completa a 32 bit.
+A partire da Windows 8 HLSL supporta anche tipi di dati scalari con precisione minima. I driver di grafica possono implementare tipi di dati scalari con precisione minima usando qualsiasi precisione maggiore o uguale alla precisione in bit specificata. È consigliabile non basarsi su un comportamento di chiusura o ritorno a capo che dipende da una precisione sottostante specifica. Ad esempio, il driver di grafica potrebbe eseguire operazioni aritmetiche su un valore **min16float** con una precisione a 32 bit completa.
 
--   **min16float** -valore minimo a virgola mobile a 16 bit.
--   **min10float** -valore a virgola mobile a 10 bit minimo.
--   **min16int** -intero con segno a 16 bit minimo.
--   **min12int** -valore intero con segno a 12 bit minimo.
--   **min16uint** -unsigned integer minimo a 16 bit.
+-   **min16float:** valore minimo a virgola mobile a 16 bit.
+-   **min10float:** valore minimo a virgola mobile a 10 bit.
+-   **min16int:** intero con segno a 16 bit minimo.
+-   **min12int:** intero con segno a 12 bit minimo.
+-   **min16uint:** intero senza segno a 16 bit minimo.
 
-Per ulteriori informazioni sui valori letterali scalari, vedere [grammatica](dx-graphics-hlsl-appendix-grammar.md).
+Per altre informazioni sui valori letterali scalari, vedere [Grammatica](dx-graphics-hlsl-appendix-grammar.md).
 
 
 
@@ -53,10 +53,10 @@ Per ulteriori informazioni sui valori letterali scalari, vedere [grammatica](dx-
 <tr class="odd">
 <td>Differenze tra Direct3D 9 e Direct3D 10:<br/> In Direct3D 10 i tipi seguenti sono modificatori del tipo float.<br/>
 <ul>
-<li><strong>russare float</strong> - IEEE a 32 bit con segno-float normalizzato nell'intervallo compreso tra 1 e 1.</li>
-<li><strong>float unorm</strong> - IEEE a 32 bit senza segno: float normalizzato nell'intervallo compreso tra 0 e 1 inclusi.</li>
+<li><strong>snorm float</strong> - Float con segno normalizzato IEEE a 32 bit nell'intervallo compreso tra -1 e 1 inclusi.</li>
+<li><strong>unorm float</strong> - Float senza segno a 32 bit IEEE nell'intervallo compreso tra 0 e 1 inclusi.</li>
 </ul>
-Ecco ad esempio una dichiarazione con variabile float normalizzata a 4 componenti.<br/> <span data-codelanguage=""></span>
+Ad esempio, di seguito è illustrata una dichiarazione float-variable con segno normalizzato a 4 componenti.<br/> <span data-codelanguage=""></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -78,7 +78,7 @@ Ecco ad esempio una dichiarazione con variabile float normalizzata a 4 component
 
 ## <a name="string-type"></a>Tipo di stringa
 
-HLSL supporta anche un tipo **stringa** , che è una stringa ASCII. Non sono presenti operazioni o Stati che accettano stringhe, ma gli effetti possono eseguire query su parametri e annotazioni di stringa.
+HLSL supporta anche un **tipo stringa,** ovvero una stringa ASCII. Non sono presenti operazioni o stati che accettano stringhe, ma gli effetti possono eseguire query su annotazioni e parametri di stringa.
 
 ## <a name="example"></a>Esempio
 

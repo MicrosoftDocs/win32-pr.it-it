@@ -4,18 +4,18 @@ ms.assetid: 74d9fe65-f7f4-4971-9550-27884ac4146b
 title: Trovare un peer di filtri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1717f6ad61ad7310fdaa11ea5baaab4dcb7f8011
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 60d2f20a7145d2365e7ee1ec261ea861ddc5fa1eb01d0c3b2503f6f53fa25815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104048874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401765"
 ---
 # <a name="find-a-filters-peer"></a>Trovare un peer di filtri
 
-Dato un filtro, è possibile attraversare il grafo individuando i filtri a cui è connessa. Per iniziare, è necessario enumerare i pin del filtro. Per ogni pin, controllare se il PIN è connesso a un altro pin. In tal caso, eseguire una query sull'altro pin per il filtro proprietario. È possibile esaminare il grafico nella direzione upstream enumerando i pin di input del filtro o nella direzione downstream enumerando i pin di output.
+Dato un filtro, è possibile attraversare il grafico individuando i filtri a cui è connesso. Per iniziare, enumerare i segnaposto del filtro. Per ogni pin, controllare se il pin è connesso a un altro pin. In questo caso, eseguire una query sull'altro segnaposto per il filtro proprietario. È possibile tracciare il grafico in direzione upstream enumerando i pin di input del filtro o in direzione downstream enumerando i pin di output.
 
-La funzione seguente cerca un filtro connesso a Monte o a valle. Restituisce il primo filtro corrispondente trovato:
+La funzione seguente cerca un filtro connesso a monte o a valle. Restituisce il primo filtro corrispondente trovato:
 
 
 ```C++
@@ -76,7 +76,7 @@ HRESULT GetNextFilter(
 
 
 
-La funzione chiama [**IBaseFilter:: EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) per enumerare i pin del primo filtro. Per ogni pin, viene chiamato [**Ipin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) per verificare se il PIN corrisponde alla direzione specificata (input o output). In tal caso, la funzione determina se il PIN è connesso a un altro pin, chiamando il metodo [**Ipin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) . Infine, viene chiamato [**Ipin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) sul pin connesso. Questo metodo restituisce una struttura che contiene, tra le altre cose, un puntatore al filtro proprietario del PIN. Questo puntatore viene restituito al chiamante nel parametro *ppNext* . Il chiamante deve rilasciare il puntatore.
+La funzione chiama [**IBaseFilter::EnumPins**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-enumpins) per enumerare i pin del primo filtro. Per ogni pin, chiama [**IPin::QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) per verificare se il pin corrisponde alla direzione specificata (input o output). In tal caso, la funzione determina se il pin è connesso a un altro pin, chiamando il [**metodo IPin::ConnectedTo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) Infine, chiama [**IPin::QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) sul pin connesso. Questo metodo restituisce una struttura che contiene, tra le altre cose, un puntatore al filtro proprietario di tale segnaposto. Questo puntatore viene restituito al chiamante nel *parametro ppNext.* Il chiamante deve rilasciare il puntatore.
 
 Il codice seguente illustra come chiamare questa funzione:
 
@@ -93,9 +93,9 @@ if (SUCCEEDED(GetNextFilter(pF, PINDIR_INPUT, &pUpstream)))
 
 
 
-Un filtro può essere connesso a due o più filtri in entrambe le direzioni. Ad esempio, potrebbe trattarsi di un filtro splitter con diversi filtri a valle. Oppure potrebbe trattarsi di un filtro Mux con diversi filtri a Monte. Pertanto, può essere necessario raccoglierli tutti in un elenco.
+Un filtro potrebbe essere connesso a due o più filtri in entrambe le direzioni. Ad esempio, potrebbe essere un filtro con separatore, con diversi filtri a valle. Oppure potrebbe trattarsi di un filtro mux, con diversi filtri upstream. È quindi consigliabile raccoglierli tutti in un elenco.
 
-Il codice seguente illustra un possibile metodo per implementare tale funzione. Usa la classe [**CGenericList**](cgenericlist.md) di DirectShow; è possibile scrivere una funzione equivalente usando un'altra struttura di dati.
+Il codice seguente illustra un modo possibile per implementare tale funzione. Usa la classe DirectShow [**CGenericList;**](cgenericlist.md) È possibile scrivere una funzione equivalente usando un'altra struttura di dati.
 
 
 ```C++
@@ -178,9 +178,9 @@ void AddFilterUnique(CFilterList &FilterList, IBaseFilter *pNew)
 
 
 
-Per complicare un po' le cose, un filtro può avere più connessioni pin allo stesso filtro. Per evitare di inserire duplicati nell'elenco, eseguire una query su ogni puntatore **IBaseFilter** per **IUnknown** e confrontare i puntatori **IUnknown** . Con le regole di COM, due puntatori di interfaccia fanno riferimento allo stesso oggetto solo se restituiscono puntatori **IUnknown** identici. Nell'esempio precedente, la funzione AddFilterUnique gestisce questo dettaglio.
+Per complicare le cose, un filtro può avere più connessioni pin allo stesso filtro. Per evitare di inserire duplicati nell'elenco, eseguire una query su ogni puntatore **IBaseFilter** **per IUnknown** e confrontare **i puntatori IUnknown.** In base alle regole di COM, due puntatori a interfaccia fanno riferimento allo stesso oggetto se e solo se restituiscono puntatori **IUnknown** identici. Nell'esempio precedente la funzione AddFilterUnique gestisce questo dettaglio.
 
-Nell'esempio seguente viene illustrato come utilizzare la funzione GetPeerFilters:
+L'esempio seguente illustra come usare la funzione GetPeerFilters:
 
 
 ```C++
@@ -204,7 +204,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Tecniche di Graph-Building generali](general-graph-building-techniques.md)
+[Tecniche Graph-Building generali](general-graph-building-techniques.md)
 </dt> </dl>
 
  

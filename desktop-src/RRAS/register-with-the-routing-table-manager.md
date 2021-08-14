@@ -1,19 +1,19 @@
 ---
-title: Eseguire la registrazione con gestione tabelle di routing
-description: Nell'esempio di codice seguente viene illustrato come registrare una nuova entità con gestione tabelle di routing.
+title: Eseguire la registrazione con Gestione tabelle di routing
+description: Il codice di esempio seguente illustra come registrare una nuova entità con il gestore tabelle di routing.
 ms.assetid: 320cc97f-2875-4d26-b2f4-5611a43d5839
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3b5e2f3ba3df414f383305d09c129b52bcb32cf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5ccb3aaae18d9e327bffb94019b1b69c4fc2b62bc36a7cb4ae31225f9a8a827d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788610"
 ---
-# <a name="register-with-the-routing-table-manager"></a>Eseguire la registrazione con gestione tabelle di routing
+# <a name="register-with-the-routing-table-manager"></a>Eseguire la registrazione con Gestione tabelle di routing
 
-Nell'esempio di codice seguente viene illustrato come registrare una nuova entità con gestione tabelle di routing.
+Il codice di esempio seguente illustra come registrare una nuova entità con il gestore tabelle di routing.
 
 
 ```C++
@@ -57,9 +57,9 @@ int __cdecl main(){
 
 
 
- 
+ 
 
- 
+ 
 
 
 

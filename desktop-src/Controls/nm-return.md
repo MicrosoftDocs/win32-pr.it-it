@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_RETURN (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo che il controllo ha lo stato attivo per l'input e che l'utente ha premuto il tasto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RETURN di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo che il controllo ha lo stato attivo per l'input e che l'utente ha premuto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 2c4839bc-6b23-469b-978f-cdf5f7bc0549
 keywords:
-- Controlli di Windows per il codice di notifica NM_RETURN
+- NM_RETURN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6cebd089873df5471c9b25710efafaab4d246f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5bc3104f87c6b0adf8c9ce486b62dc42ecd5e4a0fff6c407ce93bec9a3c8f90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410531"
 ---
-# <a name="nm_return-notification-code"></a>\_Codice di notifica restituito da Nm
+# <a name="nm_return-notification-code"></a>Codice di \_ notifica NM RETURN
 
-Notifica alla finestra padre di un controllo che il controllo ha lo stato attivo per l'input e che l'utente ha premuto il tasto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo che il controllo ha lo stato attivo per l'input e che l'utente ha premuto INVIO. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RETURN
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a una [**struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive sulla notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito viene ignorato dal controllo.
+Il valore restituito viene ignorato dal controllo .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato dal controllo.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

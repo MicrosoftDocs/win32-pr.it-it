@@ -1,9 +1,9 @@
 ---
-title: Messaggio di MCIWNDM_GET_DEST (VFW. h)
-description: Il \_ messaggio MCIWNDM Get \_ dest recupera le coordinate del rettangolo di destinazione usato per lo zoom o l'estensione delle immagini di un file AVI durante la riproduzione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro MCIWndGetDest.
+title: MCIWNDM_GET_DEST messaggio (Vfw.h)
+description: Il messaggio MCIWNDM GET DEST recupera le coordinate del rettangolo di destinazione usate per lo zoom o l'estensione delle immagini di un \_ \_ file AVI durante la riproduzione. È possibile inviare questo messaggio in modo esplicito o tramite la macro MCIWndGetDest.
 ms.assetid: d4d8a3eb-aad4-4435-a23b-7a9c55fc194d
 keywords:
-- MCIWNDM_GET_DEST messaggi multimediali di Windows
+- MCIWNDM_GET_DEST messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab5f16b434caef56e6c6aa97bfd767770dc05ee1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4a6326485bece572b03ceeca687ca4468b6d866c25c738c32d13763fd0931a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802905"
 ---
-# <a name="mciwndm_get_dest-message"></a>MCIWNDM \_ Ottieni \_ messaggio dest
+# <a name="mciwndm_get_dest-message"></a>Messaggio MCIWNDM \_ GET \_ DEST
 
-Il messaggio **MCIWNDM \_ get \_ dest** recupera le coordinate del rettangolo di destinazione usato per lo zoom o l'estensione delle immagini di un file AVI durante la riproduzione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest) .
+Il **messaggio MCIWNDM \_ GET \_ DEST** recupera le coordinate del rettangolo di destinazione usate per lo zoom o l'estensione delle immagini di un file AVI durante la riproduzione. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
 
 
 ```C++
@@ -38,16 +38,16 @@ lParam = (LPARAM) (LPRECT) prc;
 
 <dl> <dt>
 
-<span id="prc"></span><span id="PRC"></span>*PRC*
+<span id="prc"></span><span id="PRC"></span>*Rpc*
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) per restituire le coordinate del rettangolo di destinazione.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) per restituire le coordinate del rettangolo di destinazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,7 +57,7 @@ Restituisce zero in caso di esito positivo o un errore.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

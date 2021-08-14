@@ -4,12 +4,12 @@ ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 128a74e758248a8965c974603e3825899961ff10
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 2a8fb3d68436251da00a8862515ebc30b250d74134ab8fc54523abad4fb8e47c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220848"
 ---
 # <a name="inkclass-element"></a>Elemento InkClass
 
@@ -41,7 +41,7 @@ Nessuno.
 |--------------|--------------------------------------------|
 | Tipo di elemento | **xs:string**                              |
 | Spazio dei nomi    | urn:schemas-microsoft-com:tabletpc:richink |
-| Nome schema  | Lettore journal                             |
+| Nome schema  | Lettore di journal                             |
 
 
 

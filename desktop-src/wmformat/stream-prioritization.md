@@ -1,35 +1,35 @@
 ---
-title: Assegnazione di priorità al flusso
-description: Assegnazione di priorità al flusso
+title: Definizione delle priorità dei flussi
+description: Definizione delle priorità dei flussi
 ms.assetid: 6b3e9b03-62ef-422b-97ab-197d1cd15beb
 keywords:
-- Windows Media Format SDK, assegnazione di priorità al flusso
-- ASF (Advanced Systems Format), assegnazione di priorità ai flussi
-- ASF (formato avanzato dei sistemi), assegnazione di priorità ai flussi
-- Windows Media Format SDK, ordine di priorità per i flussi
+- Windows MEDIA Format SDK, definizione delle priorità dei flussi
+- Advanced Systems Format (ASF), definizione delle priorità dei flussi
+- ASF (Advanced Systems Format),definizione delle priorità dei flussi
+- Windows MEDIA Format SDK, ordine di priorità per i flussi
+- Advanced Systems Format (ASF), ordine di priorità per i flussi
 - ASF (Advanced Systems Format), ordine di priorità per i flussi
-- ASF (Advanced Systems Format), ordine di priorità per i flussi
-- flussi, priorità
+- flussi, assegnazione delle priorità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abe1628ef050d393cd2d98e73708d5a9ad6c3be4
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9fd34bab6a7957d7cbcdf97a78fc3d8be1f663d43ef1eb1ec8d4c575571ad0a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104046324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197277"
 ---
-# <a name="stream-prioritization"></a>Assegnazione di priorità al flusso
+# <a name="stream-prioritization"></a>Definizione delle priorità dei flussi
 
-Quando si crea un file ASF, è possibile specificare un ordine di priorità per i flussi costitutivi. Se si esegue il flusso di un file con priorità e la larghezza di banda disponibile non è sufficiente per la distribuzione di tutti i flussi, il lettore eliminerà i flussi in ordine di priorità inverso. In questo modo è possibile garantire che i flussi più importanti nel file non verranno eliminati a causa di problemi di rete.
+Quando si crea un file ASF, è possibile specificare un ordine di priorità per i flussi costitutivi. Se si streaming di un file con priorità e la larghezza di banda disponibile non è sufficiente per distribuire tutti i flussi, il lettore elimina i flussi in ordine di priorità inversa. In questo modo è possibile garantire che i flussi più importanti nel file non verranno eliminati a causa di problemi di rete.
 
-La definizione delle priorità del flusso viene configurata con un oggetto di assegnazione di priorità del flusso e aggiunta al profilo. Un profilo può contenere un solo oggetto di assegnazione di priorità del flusso.
+La definizione delle priorità dei flussi viene configurata con un oggetto di definizione delle priorità del flusso e aggiunta al profilo. Un profilo può contenere un solo oggetto di definizione delle priorità del flusso.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità file ASF**](asf-file-features.md)
+[**Funzionalità dei file ASF**](asf-file-features.md)
 </dt> <dt>
 
 [**IWMProfile3::CreateNewStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-createnewstreamprioritization)
@@ -47,12 +47,12 @@ La definizione delle priorità del flusso viene configurata con un oggetto di as
 [**Interfaccia IWMStreamPrioritization**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamprioritization)
 </dt> <dt>
 
-[**Uso della priorità di flusso**](using-stream-prioritization.md)
+[**Uso della definizione delle priorità dei flussi**](using-stream-prioritization.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

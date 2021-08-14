@@ -1,8 +1,8 @@
 ---
-description: La proprietà relpath dell'oggetto SWbemObjectPath contiene il percorso relativo del percorso completo.
+description: La proprietà Relpath dell'oggetto SWbemObjectPath contiene il percorso relativo del percorso completo.
 ms.assetid: 9a4363ae-b6b3-4e8c-a7ca-a9e48c28e19b
 ms.tgt_platform: multiple
-title: Proprietà SWbemObjectPath. RelPath (wbemdisp. h)
+title: Proprietà SWbemObjectPath.Relpath (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 8330d1cdc65e818acd4fda63b223303b779b5472
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4cb3cae6a6c5de5c955bb719880cd8b4be49208a8dc0c1fa3f85c0da5ff74a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313704"
 ---
-# <a name="swbemobjectpathrelpath-property"></a>Proprietà SWbemObjectPath. RelPath
+# <a name="swbemobjectpathrelpath-property"></a>Proprietà SWbemObjectPath.Relpath
 
-La proprietà **RelPath** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il percorso relativo del percorso completo.
+La **proprietà Relpath** dell'oggetto [**SWbemObjectPath**](swbemobjectpath.md) contiene il percorso relativo del percorso completo.
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -45,7 +45,7 @@ SWbemObjectPath.Relpath As String
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice VBScript riportato di seguito viene illustrata la differenza tra i dati ottenuti da [**SWbemObject. Path \_**](swbemobject-path-.md) e **SWbemObjectPath. RelPath**.
+Nell'esempio di codice VBScript seguente viene illustrata la differenza tra i dati ottenuti da [**SWbemObject.Path \_**](swbemobject-path-.md) e **SWbemObjectPath.Relpath**.
 
 
 ```VB
@@ -70,11 +70,11 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

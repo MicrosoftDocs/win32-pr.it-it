@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 6dd0d1159132e594b6d48ea6799da5846eeb626e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8023b9db00834b10fcce84510df5ccbafec0c7a2f6654ef73d71754e7c563044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365581"
 ---
 # <a name="iespstart-method"></a>Metodo IESP::Start
 
@@ -43,7 +43,7 @@ HRESULT STDMETHODCALLTYPE Start(
 *pFileName* \[ Cambio\]
 </dt> <dd>
 
-Puntatore al nome del [*file di acquisizione*](c.md) usato per archiviare i dati di rete. Assicurarsi di memorizzare nella cache questo nome file, se necessario per riferimento futuro.
+Puntatore al nome del [*file di acquisizione*](c.md) utilizzato per archiviare i dati di rete. Assicurarsi di memorizzare nella cache questo nome file, se necessario per riferimento futuro.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione viene sospesa e deve essere arrestata prima di poter essere riavviata. Chiamare [IESP::Stop per](iesp-stop.md) arrestare l'acquisizione.<br/> |
 | <dl> <dt>**ACQUISIZIONE DI \_ NMERR**</dt> </dl>       | L'acquisizione è già stata avviata.<br/>                                                                                             |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | NPP non è connesso alla rete. Chiamare [IESP::Connect](iesp-connect.md) per connettere NPP alla rete.<br/>          |
-| <dl> <dt>**NMERR \_ NON \_ ESP**</dt> </dl>        | NPP è connesso alla rete, ma non con il [metodo IESP::Connect.](iesp-connect.md)<br/>                              |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | NPP non è connesso alla rete. Chiamare [IESP::Connessione](iesp-connect.md) per connettere NPP alla rete.<br/>          |
+| <dl> <dt>**NMERR \_ NON \_ ESP**</dt> </dl>        | NPP è connesso alla rete, ma non con il metodo [IESP::Connessione.](iesp-connect.md)<br/>                              |
 
 
 
@@ -68,9 +68,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Il percorso del [*file di acquisizione*](c.md) è specificato nel Registro di sistema di Windows, ma è possibile usare Network Monitor per modificare il percorso della directory.
+Il percorso del [*file di acquisizione*](c.md) viene specificato nel registro Windows, ma è possibile usare Network Monitor per modificare il percorso della directory.
 
-Quando si riavvia l'acquisizione usando i metodi IESP::Start e [IESP::Stop,](iesp-stop.md) è necessario chiamare il metodo [IESP::Configure](iesp-configure.md) per riconfigurare la connessione ogni volta che si chiama IESP::Start per riavviare l'acquisizione dei dati. Quando si avvia e si arresta l'acquisizione con questi tre metodi, viene creato un nuovo file di acquisizione a ogni avvio dell'acquisizione.
+Quando si riavvia l'acquisizione usando i metodi IESP::Start e [IESP::Stop,](iesp-stop.md) è necessario chiamare il metodo [IESP::Configure](iesp-configure.md) per riconfigurare la connessione ogni volta che si chiama IESP::Start per riavviare l'acquisizione dei dati. Quando si avvia e si arresta l'acquisizione con questi tre metodi, viene creato un nuovo file di acquisizione ogni volta che viene avviata l'acquisizione.
 
 > [!Note]  
 > È anche possibile avviare e arrestare l'acquisizione usando i metodi [IESP::P ause](iesp-pause.md) e [IESP::Resume.](iesp-resume.md) Quando vengono usati questi due metodi, i dati acquisiti vengono archiviati nello stesso file di acquisizione.
@@ -100,7 +100,7 @@ Quando si riavvia l'acquisizione usando i metodi IESP::Start e [IESP::Stop,](ies
 [IESP::Configure](iesp-configure.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Connessione](iesp-connect.md)
 </dt> <dt>
 
 [IESP::P ause](iesp-pause.md)
