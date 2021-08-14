@@ -1,34 +1,34 @@
 ---
-description: "Programma C di esempio: operazioni sull'archivio certificati"
+description: "Programma C di esempio: operazioni dell'archivio certificati"
 ms.assetid: cf87791c-b98c-4dd7-b346-336c4b1a88ca
-title: "Programma C di esempio: operazioni sull'archivio certificati"
+title: "Programma C di esempio: operazioni dell'archivio certificati"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f20a56fd04eb79b1ebe2359e3c915d9aad60fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eba6a7634a5d3fbd6f1e4aab04c72d0c6eca0123fb037641f9625bb9900548b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765532"
 ---
-# <a name="example-c-program-certificate-store-operations"></a>Programma C di esempio: operazioni sull'archivio certificati
+# <a name="example-c-program-certificate-store-operations"></a>Programma C di esempio: operazioni dell'archivio certificati
 
-Nell'esempio seguente viene illustrata una serie di operazioni comuni sull' [*archivio certificati*](../secgloss/c-gly.md) , nonché le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
+L'esempio seguente illustra una serie di operazioni [*comuni sull'archivio*](../secgloss/c-gly.md) certificati, nonché le attività e le funzioni [*CryptoAPI*](../secgloss/c-gly.md) seguenti:
 
--   Apertura e chiusura di archivi di memoria e di sistema con [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Duplicazione di un archivio aperto con [**CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
--   La ricerca in archivia i certificati che soddisfano alcuni criteri usando [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Creazione di un nuovo contesto del certificato dalla parte codificata di un certificato esistente usando [**CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext).
--   Aggiunta di un certificato recuperato a un archivio in memoria utilizzando [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
--   Aggiunta di un collegamento a un certificato a un archivio usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
+-   Apertura e chiusura di archivi di memoria e di sistema [**tramite CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   Duplicazione di un archivio aperto [**tramite CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
+-   La ricerca in archivia i certificati che soddisfano alcuni criteri [**usando CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
+-   Creazione di un nuovo contesto di certificato dalla parte codificata di un certificato esistente [**usando CertCreateCertificateContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext)
+-   Aggiunta di un certificato recuperato a un archivio in memoria [**tramite CertAddCertificateContextToStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore)
+-   Aggiunta di un collegamento a un certificato a un archivio [**tramite CertAddCertificateLinkToStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore)
 -   Salvataggio dell'archivio in memoria in un file su disco.
 -   Apertura e chiusura di un archivio certificati basato su file.
 
-In questo esempio viene usata la funzione [**MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [funzioni per utilizzo generico](general-purpose-functions.md).
+In questo esempio viene utilizzata la [**funzione MyHandleError**](myhandleerror.md). Il codice per questa funzione è incluso nell'esempio. Il codice per questa e altre funzioni ausiliarie è elencato anche in [per utilizzo generico funzioni](general-purpose-functions.md).
 
-In questo esempio viene utilizzata la funzione **CreateMyDACL** , definita nell'argomento [Creating a DACL](../secbp/creating-a-dacl.md) , per garantire che il file aperto venga creato con un elenco DACL appropriato.
+In questo esempio viene utilizzata la funzione **CreateMyDACL,** definita nell'argomento Creazione di un [elenco DACL,](../secbp/creating-a-dacl.md) per assicurarsi che il file aperto sia stato creato con un DACL appropriato.
 
-In questo esempio viene creato un archivio certificati in memoria. Un archivio di sistema viene aperto e duplicato. Un certificato viene recuperato dall'archivio di sistema. Viene creato un nuovo certificato dalla parte codificata del certificato recuperato. Il certificato recuperato viene aggiunto all'archivio di memoria. Un secondo certificato viene recuperato dall'archivio personale e viene aggiunto un collegamento al certificato all'archivio di memoria. Il certificato e il collegamento vengono quindi recuperati dall'archivio di memoria e la memoria viene salvata su disco. Tutti gli archivi e i file vengono chiusi. Successivamente, l'archivio file viene riaperto e viene eseguita una ricerca per il collegamento al certificato. Il successo di questo programma dipende da un archivio personale disponibile. Tale archivio deve includere un certificato con il soggetto "Insert \_ CERT \_ Subject \_ name1" e un secondo certificato con l'oggetto "Insert \_ CERT \_ Subject \_ name2". I nomi degli oggetti devono essere modificati con i nomi degli oggetti certificato noti come presenti nell'archivio personale.
+In questo esempio viene creato un archivio certificati in memoria. Un archivio di sistema viene aperto e duplicato. Un certificato viene recuperato dall'archivio di sistema. Viene creato un nuovo certificato dalla parte codificata del certificato recuperato. Il certificato recuperato viene aggiunto all'archivio di memoria. Un secondo certificato viene recuperato dall'archivio e viene aggiunto un collegamento a tale certificato all'archivio di memoria. Il certificato e il collegamento vengono quindi recuperati dall'archivio di memoria e la memoria viene salvata su disco. Tutti gli archivi e i file vengono chiusi. Successivamente, l'archivio file viene riaperto e viene eseguita una ricerca per il collegamento al certificato. Il successo di questo programma dipende dalla disponibilità di un archivio my. Tale archivio deve includere un certificato con l'oggetto "Insert cert subject name1" e un secondo certificato con l'oggetto \_ \_ \_ "Insert \_ cert \_ subject \_ name2". I nomi degli oggetti devono essere modificati in nomi di soggetti certificato che si possono trovare nell'archivio my.
 
 
 ```C++

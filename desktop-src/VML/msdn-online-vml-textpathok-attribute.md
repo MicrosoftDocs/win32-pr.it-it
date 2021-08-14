@@ -1,24 +1,24 @@
 ---
-title: Attributo TextPathOK di la
-description: Attributo TextPathOK di la
+title: Attributo VML TextPathOK
+description: Attributo VML TextPathOK
 ms.assetid: 5d061258-1c4d-4391-81ce-13af90a4231c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06046a4f29c147ef109f0e4670d9965bab77a9fa
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dd2c14d613df36c314dea75275a4d60fe8792d6dea644ef2595422e74a73dc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103872569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597455"
 ---
-# <a name="vml-textpathok-attribute"></a>Attributo TextPathOK di la
+# <a name="vml-textpathok-attribute"></a>Attributo VML TextPathOK
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se verrà visualizzato un percorso di testo. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,25 +26,25 @@ Determina se verrà visualizzato un percorso di testo. Proprietà di lettura/scr
 
 [Percorso](msdn-online-vml-path-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* textpathok = " *Expression* " >
+<v: *elemento* textpathok=" *espressione* ">
 
 **Sintassi dello script**
 
-*elemento* . textpathok = "*Expression*"
+*Elemento* . textpathok= "*expression*"
 
-*espressione* = *elemento*. textpathok
+*expression* = *Elemento*. textpathok
 
 **Osservazioni:**
 
-Se **false**, il percorso non può contenere un percorso di testo. Il valore predefinito è **False**. Questo attributo deve essere impostato su **true** per visualizzare il testo in un percorso.
+Se **False,** il percorso non può avere un percorso di testo. Il valore predefinito è **False**. Questo attributo deve essere impostato su **True per** visualizzare il testo in un percorso.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-La forma ha un percorso di testo. Viene visualizzato il testo "Hello la" lungo una curva a forma di Smile.
+La forma ha un tracciato di testo. Il testo "Hello VML" viene visualizzato lungo una curva a forma di smile.
 
 
 ```HTML
@@ -63,6 +63,6 @@ La forma ha un percorso di testo. Viene visualizzato il testo "Hello la" lungo u
 
 
 
- 
+ 
 
- 
+ 

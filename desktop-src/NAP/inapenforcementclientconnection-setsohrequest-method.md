@@ -1,9 +1,9 @@
 ---
-title: Metodo INapEnforcementClientConnection SetSoHRequest (NapEnforcementClient. h)
-description: Imposta la richiesta di rapporto di integrità.
+title: Metodo INapEnforcementClientConnection SetSoHRequest (NapEnforcementClient.h)
+description: Imposta la richiesta SoH.
 ms.assetid: 87dbb982-a337-4644-a2fe-970bfdd6c140
 keywords:
-- NAP metodo SetSoHRequest
+- Metodo SetSoHRequest NAP
 - Metodo SetSoHRequest NAP, interfaccia INapEnforcementClientConnection
 - Interfaccia INapEnforcementClientConnection NAP, metodo SetSoHRequest
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92559d532e99bfa29d7f62fd29b279db20f2c0a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be2d2d3a4574b086d49cba7d9c0afda72cf62621dbed37add8550a7ae2f93cd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117799635"
 ---
-# <a name="inapenforcementclientconnectionsetsohrequest-method"></a>Metodo INapEnforcementClientConnection:: SetSoHRequest
+# <a name="inapenforcementclientconnectionsetsohrequest-method"></a>Metodo INapEnforcementClientConnection::SetSoHRequest
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: SetSoHRequest** imposta la richiesta di rapporto di integrità.
+Il **metodo INapEnforcementClientConnection::SetSoHRequest** imposta soH-Request.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT SetSoHRequest(
 
 <dl> <dt>
 
-*sohRequest* \[ in\]
+*sohRequest* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**NetworkSoHRequest**](/windows/win32/api/naptypes/ns-naptypes-networksoh) univoca, ovvero un BLOB di dati opachi per l'applicazione.
+Puntatore a una [**struttura NetworkSoHRequest**](/windows/win32/api/naptypes/ns-naptypes-networksoh) univoca, ovvero un BLOB di dati opaco per l'applicazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Il pacchetto del rapporto di integrità è valido.<br/>                                |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Il pacchetto SoH è valido.<br/>                                |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -72,9 +72,9 @@ Puntatore a una struttura [**NetworkSoHRequest**](/windows/win32/api/naptypes/ns
 
 ## <a name="remarks"></a>Commenti
 
-Questa impostazione è impostata da NapAgent ed è sottoposta a query da Enforcer da inviare in transito.
+Questo valore viene impostato da NapAgent e sottoposto a query dagli imponitori per l'invio in rete.
 
-Il pacchetto di rapporto di integrità con lunghezza zero byte non è valido.
+Un pacchetto SoH di lunghezza zero byte non è valido.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,10 +82,10 @@ Il pacchetto di rapporto di integrità con lunghezza zero byte non è valido.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

@@ -1,23 +1,23 @@
 ---
 title: Clonazione di un effetto
-description: La clonazione di un effetto crea una seconda copia pressoché identica dell'effetto.
+description: La clonazione di un effetto crea una seconda copia quasi identica dell'effetto.
 ms.assetid: e3870363-5ee8-4fdc-a489-cdaeef8c9c39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68607d3cc9f00a346fcfa65c255f3caa51dea384
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 195b4e9a42e595558acc4c512f8662c11b2acde7873e123b242ee272eeea7e8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118538005"
 ---
 # <a name="cloning-an-effect"></a>Clonazione di un effetto
 
-La clonazione di un effetto crea una seconda copia pressoché identica dell'effetto. Per una spiegazione del motivo per cui non è esatto, vedere il seguente qualificatore singolo. Una seconda copia di un effetto è utile quando si desidera utilizzare il Framework degli effetti su più thread, poiché il runtime di effetto non è thread-safe per garantire prestazioni elevate.
+La clonazione di un effetto crea una seconda copia quasi identica dell'effetto. Per una spiegazione del motivo per cui non è esatto, vedere il qualificatore singolo seguente. Una seconda copia di un effetto è utile quando si vuole usare il framework degli effetti su più thread, poiché il runtime dell'effetto non è thread-safe per mantenere prestazioni elevate.
 
-Poiché i contesti di dispositivo sono anche non thread-safe, i thread diversi devono passare contesti di dispositivo diversi al metodo ID3DX11EffectPass:: Apply.
+Poiché anche i contesti di dispositivo non sono thread-safe, thread diversi devono passare contesti di dispositivo diversi al metodo ID3DX11EffectPass::Apply.
 
-È possibile clonare un effetto con la sintassi seguente:
+Un effetto può essere clonato con la sintassi seguente:
 
 
 ```
@@ -28,37 +28,37 @@ HRESULT hr = pEffect->CloneEffect( Flags, &pClonedEffect );
 
 
 
-Nell'esempio precedente, la copia clonata incapsula lo stesso stato dell'effetto originale, indipendentemente dallo stato in cui si trova l'effetto originale. In particolare:
+Nell'esempio precedente la copia clonata incapsula lo stesso stato dell'effetto originale, indipendentemente dallo stato in cui si trova l'effetto originale. In particolare:
 
 1.  Se pEffect è ottimizzato, l'effetto pCloned è ottimizzato
-2.  Se pEffect dispone di alcune variabili gestite dall'utente, l'effetto pCloned avrà le stesse variabili gestite dall'utente (vedere la descrizione singola riportata di seguito)
-3.  Eventuali aggiornamenti di variabili in sospeso (fino a quando una chiamata Apply aggiorna lo stato del dispositivo) in pEffect sarà in sospeso in pClonedEffect
+2.  Se pEffect ha alcune variabili gestite dall'utente, l'effetto pCloned avrà le stesse variabili gestite dall'utente (vedere la singola descrizione seguente)
+3.  Eventuali aggiornamenti delle variabili in sospeso (fino a quando lo stato del dispositivo Applica aggiornamenti chiamata) in pEffect non saranno in sospeso in pClonedEffect
 
-Gli oggetti dispositivo Direct3D 11 seguenti non sono modificabili o non vengono mai aggiornati dal framework degli effetti, quindi l'effetto clonato punterà sugli stessi oggetti dell'effetto originale:
+Gli oggetti dispositivo Direct3D 11 seguenti non sono modificabili o non vengono mai aggiornati dal framework degli effetti, quindi l'effetto clonato farà riferimento agli stessi oggetti dell'effetto originale:
 
-1.  Oggetti Block di stato (ID3D11BlendState, ID3D11RasterizerState, ID3D11DepthStencilState, ID3D11SamplerState)
+1.  Oggetti blocco di stato (ID3D11BlendState, ID3D11RasterizerState, ID3D11DepthStencilState, ID3D11SamplerState)
 2.  Shader
 3.  Istanze di classe
-4.  Trame (esclusi i buffer di trama)
+4.  Trame (senza includere buffer di trama)
 5.  Viste di accesso non ordinate
 
-Gli oggetti dispositivo Direct3D 11 seguenti sono sia non modificabili che modificati dal runtime degli effetti (a meno che non sia gestito dall'utente o singolo in un effetto clonato); le nuove copie di questi oggetti vengono create quando non sono singole:
+Gli oggetti dispositivo Direct3D 11 seguenti non sono modificabili e modificati dal runtime dell'effetto (a meno che non siano gestiti dall'utente o singoli in un effetto clonato); Le nuove copie di questi oggetti vengono create quando non sono singole:
 
 1.  Buffer costanti
 2.  Buffer di trama
 
 ## <a name="single-constant-buffers-and-texture-buffers"></a>Buffer costanti singoli e buffer di trama
 
-Si noti che questa discussione si applica sia ai buffer costanti che alle trame, ma si presuppone che i buffer costanti siano facilmente leggibili.
+Si noti che questa discussione si applica sia ai buffer costanti che alle trame, ma si presuppone che i buffer costanti siano facili da leggere.
 
-In alcuni casi è possibile che un buffer costante venga aggiornato da un solo thread, ma questi dati verranno utilizzati dallo stato del dispositivo impostato dagli effetti clonati. Ad esempio, l'effetto principale può aggiornare le matrici World e View a cui viene fatto riferimento dagli shader negli effetti clonati che non modificano le matrici World e View. In questi casi, è necessario che gli effetti clonati facciano riferimento al buffer costante corrente anziché ricrearne uno.
+In alcuni casi un buffer costante viene aggiornato da un solo thread, ma lo stato del dispositivo impostato dagli effetti clonati userà questi dati. Ad esempio, l'effetto principale può aggiornare le matrici world e view a cui fanno riferimento gli shader negli effetti clonati che non modificano il mondo e visualizzano le matrici. In questi casi, gli effetti clonati devono fare riferimento al buffer costante corrente anziché ricrearlo.
 
 Esistono due modi per ottenere questo risultato desiderato:
 
-1.  Usare ID3DX11EffectConstantBuffer:: SetConstantBuffer per l'effetto clonato per renderlo gestito dall'utente
-2.  Contrassegnare il buffer costante come "singolo" nel codice HLSL, forzando il runtime di effetto a considerarlo come gestito dall'utente dopo la clonazione
+1.  Usare ID3DX11EffectConstantBuffer::SetConstantBuffer sull'effetto clonato per renderlo gestito dall'utente
+2.  Contrassegnare il buffer costante come "singolo" nel codice HLSL, forzando il runtime dell'effetto a considerare come gestito dall'utente dopo la clonazione
 
-Esistono due differenze tra i due metodi precedenti. Per prima cosa, nel metodo 1, viene creato un nuovo ID3D11Buffer e l'utente prima della chiamata a SetConstantBuffer. Inoltre, dopo aver chiamato UndoSetConstantBuffer nell'effetto clonato, la variabile nel metodo 1will punta al buffer appena creato (gli effetti verranno aggiornati su Apply), mentre la variabile nel metodo 2 continuerà a puntare al buffer originale (senza aggiornarlo all'applicazione).
+Esistono due differenze tra i due metodi precedenti. In primo luogo, nel metodo 1 verrà creato un nuovo ID3D11Buffer e l'utente prima della chiamata a SetConstantBuffer. Inoltre, dopo aver chiamato UndoSetConstantBuffer nell'effetto clonato, la variabile nel metodo 1 farà riferimento al buffer appena creato (che verrà aggiornato in Apply), mentre la variabile nel metodo 2 continuerà a puntare al buffer originale (non aggiornandolo in Apply).
 
 Vedere l'esempio seguente in HLSL:
 
@@ -76,7 +76,7 @@ single cbuffer ViewData
 
 
 
-Durante la clonazione, l'effetto clonato creerà un nuovo ID3D11Buffer per ObjectData e riempirà il relativo contenuto su Apply, ma fa riferimento al ID3D11Buffer originale per ViewData. Il qualificatore singolo può essere ignorato nel processo di clonazione impostando il \_ flag D3DX11 Effect \_ Clone \_ Force \_ unsingle flag.
+Durante la clonazione, l'effetto clonato creerà un nuovo OGGETTO ID3D11Buffer per ObjectData e ne riempirà il contenuto in Applica, ma farà riferimento all'oggetto ID3D11Buffer originale per ViewData. Il qualificatore singolo può essere ignorato nel processo di clonazione impostando il flag D3DX11 \_ EFFECT \_ CLONE FORCE \_ \_ NONSINGLE.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -85,9 +85,9 @@ Durante la clonazione, l'effetto clonato creerà un nuovo ID3D11Buffer per Objec
 [Effetti (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

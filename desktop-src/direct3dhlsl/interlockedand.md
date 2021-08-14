@@ -1,6 +1,6 @@
 ---
-title: Funzione InterlockedAnd (riferimento HLSL)
-description: Esegue una garanzia atomica e.
+title: Funzione InterlockedAnd (informazioni di riferimento su HLSL)
+description: Esegue un'operazione atomica garantita e .
 ms.assetid: 7dc5185a-ea37-493d-975d-dbb803c886d3
 keywords:
 - Funzione InterlockedAnd HLSL
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 487a7daaffe25e4e8bb22aec5805ded2a8091161
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: b058b5d235e04761c24ace1d6f1bb5cca1187f01d8fe0eb1a9d0178c036bf5f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "104993312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511331"
 ---
-# <a name="interlockedand-function-hlsl-reference"></a>Funzione InterlockedAnd (riferimento HLSL)
+# <a name="interlockedand-function-hlsl-reference"></a>Funzione InterlockedAnd (informazioni di riferimento su HLSL)
 
-Esegue una garanzia atomica e.
+Esegue un'operazione atomica garantita e .
 
 ## <a name="syntax"></a>Sintassi
 
 ``` syntax
 void InterlockedAnd(
-  in  R dest,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedAnd(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ Indirizzo di destinazione.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ Valore di input.
 
 </dd> <dt>
 
-*\_ valore originale* in \[ uscita\]
+*valore \_ originale* \[ out\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,9 +71,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse tipizzate int o uint e variabili di memoria condivisa. Esistono due possibili usi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue un'operazione atomica e di valore nel registro di memoria condiviso a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue un'operazione atomica e di valore nel percorso della risorsa a cui fa riferimento dest. La funzione in overload ha una variabile di output aggiuntiva che verrà impostata sul valore originale di dest. Questa operazione di overload è disponibile solo quando R è leggibile e scrivibile.
+Questa operazione può essere eseguita solo su risorse tipiche int o uint e variabili di memoria condivisa. Questa funzione può essere utilizzata in due modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue un'operazione atomica e di valore nel registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue un'operazione atomica e di valore nel percorso della risorsa a cui fa riferimento dest. La funzione di overload ha una variabile di output aggiuntiva che verrà impostata sul valore originale di dest. Questa operazione di overload è disponibile solo quando R è leggibile e scrivibile.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -81,23 +81,23 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
 
 
 
- 
+ 
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      |  x   |  x     |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -106,12 +106,12 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

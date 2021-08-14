@@ -1,7 +1,7 @@
 ---
-description: Evento che si verifica quando un nuovo dispositivo hardware di acquisizione immagini Windows (WIA) viene disconnesso.
+description: Evento che si verifica quando un nuovo Windows hardware WIA (Image Acquisition) viene disconnesso.
 ms.assetid: 9c3ccdba-288c-4bdd-b257-b03999bc6fd9
-title: Evento WIA. OnDeviceDisconnected
+title: Evento Wia.OnDeviceDisconnected
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 45652f3c447c1dd0f59b0470823782c6ba635cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9d61d196e3a9a7471b9a1fb1ab86c3ba918427ccc5dd5060ffaabdf28f80871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104231564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118442157"
 ---
-# <a name="wiaondevicedisconnected-event"></a>Evento WIA. OnDeviceDisconnected
+# <a name="wiaondevicedisconnected-event"></a>Evento Wia.OnDeviceDisconnected
 
-Evento che si verifica quando un nuovo dispositivo hardware di acquisizione immagini Windows (WIA) viene disconnesso.
+Evento che si verifica quando un nuovo Windows hardware WIA (Image Acquisition) viene disconnesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Wia.OnDeviceDisconnected(
 *Id* 
 </dt> <dd>
 
-Stringa che contiene l'ID del dispositivo connesso.
+Stringa contenente l'ID del dispositivo connesso.
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-WIA notifica lo script o l'applicazione ogni volta che un dispositivo hardware è disconnesso dal computer. Implementare la subroutine **objWia** \_ **OnDeviceDisconnected ()** per consentire all'applicazione o allo script di rispondere alla disconnessione del dispositivo.
+WiA invia una notifica allo script o all'applicazione ogni volta che un dispositivo hardware viene disconnesso dal computer. Implementare **la subroutine objWia** \_ **OnDeviceDisconnected()** per consentire allo script o all'applicazione di rispondere alla disconnessione del dispositivo.
 
-Ad esempio, potrebbe essere necessario uno script per aggiornare la raccolta di [**dispositivi**](-wia-iwia-devices.md) quando un dispositivo viene rimosso dal computer.
+Ad esempio, è possibile che uno script abiliti la raccolta [**Dispositivi**](-wia-iwia-devices.md) quando un dispositivo viene rimosso dal computer.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Ad esempio, potrebbe essere necessario uno script per aggiornare la raccolta di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

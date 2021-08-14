@@ -4,12 +4,12 @@ description: Questo esempio di codice illustra il markup e il codice necessari p
 ms.assetid: 1505aaea-76d2-47bc-bdc9-12e761da93f9
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: cfe75d13a69e0122766e51a00bcb1b15d52eab4e
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: 0f1299bdc20b1b94a5113d3cfcdda205b6ad8e513a59706d708362fbc8383bd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202119"
 ---
 # <a name="htmleditribbon-sample"></a>Esempio di HTMLEditRibbon
 
@@ -50,7 +50,7 @@ Per eseguire l'esempio compilato con il debug in Visual Studio, premere F5.
 
 ## <a name="support"></a>Supporto
 
-Il [Windows forum sullo sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni Windows ribbon.
+Il [Windows di sviluppo della](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) barra multifunzione è disponibile per discutere argomenti e porre domande relative allo sviluppo di applicazioni Windows ribbon.
 
 ## <a name="minimum-requirements"></a>Requisiti minimi
 
@@ -58,7 +58,7 @@ Il [Windows forum sullo sviluppo della](https://social.msdn.microsoft.com/Forums
 
 | Requisito | Valore |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) e aggiornamento della piattaforma [per Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
+| Client minimo supportato | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) e aggiornamento della piattaforma per [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
 | Server minimo supportato | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 e aggiornamento della piattaforma [per Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
 | Windows SDK              | 7.0                                                                                                                                                                      |
 | Visual Studio            | 2008                                                                                                                                                                     |

@@ -1,14 +1,14 @@
 ---
-title: Proprietà RemoteApplicationArgs di ITSRemoteProgram2
+title: ItsRemoteProgram2 RemoteApplicationArgs - proprietà
 description: Argomenti della riga di comando per RemoteApp.
 ms.assetid: c1c36876-df3d-4ef9-a5ac-f623bc51fe7b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RemoteApplicationArgs
-- Servizi Desktop remoto proprietà RemoteApplicationArgs, interfaccia ITSRemoteProgram2
-- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto, proprietà RemoteApplicationArgs
-- Servizi Desktop remoto proprietà RemoteApplicationArgs, interfaccia ITSRemoteProgram3
-- Interfaccia ITSRemoteProgram3 Servizi Desktop remoto, proprietà RemoteApplicationArgs
+- Proprietà RemoteApplicationArgs Servizi Desktop remoto
+- Proprietà RemoteApplicationArgs Servizi Desktop remoto, interfaccia ITSRemoteProgram2
+- Interfaccia ITSRemoteProgram2 Servizi Desktop remoto proprietà RemoteApplicationArgs
+- Proprietà RemoteApplicationArgs Servizi Desktop remoto, interfaccia ITSRemoteProgram3
+- ItsRemoteProgram3 interface Servizi Desktop remoto , proprietà RemoteApplicationArgs
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b77cc7259520156321140c8f85713095f02e2b78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd5ac7f2d909666e5938d28a313a6ac1b893204312c729880e7987e3fd10e263
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756773"
 ---
-# <a name="itsremoteprogram2remoteapplicationargs-property"></a>Proprietà ITSRemoteProgram2:: RemoteApplicationArgs
+# <a name="itsremoteprogram2remoteapplicationargs-property"></a>Proprietà ITSRemoteProgram2::RemoteApplicationArgs
 
 Argomenti della riga di comando per RemoteApp.
 

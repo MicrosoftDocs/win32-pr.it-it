@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d42af1912365a4237889e4e46d0fb3343377c772
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ad7ce342c1e0053622bfb77161ecd1e5d81c25d09af179108065b445dd4dc35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365076"
 ---
 # <a name="irtcpause-method"></a>Metodo IRTC::P ause
 
@@ -49,9 +49,9 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 | Codice restituito                                                                                           | Descrizione                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**ACQUISIZIONE NMERR \_ \_ SOSPESA**</dt> </dl> | L'acquisizione è già sospesa.<br/>                                                                                     |
-| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | Il NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | Il NPP non è connesso alla rete. Chiamare [IRTC::Connect](irtc-connect.md) per connettere il NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>   | Il protocollo NPP è connesso alla rete, ma non con [il metodo IRTC::Connect.](irtc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ ACQUISISCE**</dt> </dl>  | NPP non acquisisce dati. Chiamare [IRTC::Start](irtc-start.md) per avviare l'acquisizione.<br/>                            |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl>  | NPP non è connesso alla rete. Chiamare [IRTC::Connessione](irtc-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON IN TEMPO \_ REALE**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IRTC::Connessione.](irtc-connect.md)<br/>                     |
 
 
 
@@ -59,11 +59,11 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Mentre l'acquisizione è sospesa, i nuovi fotogrammi non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC::Resume](irtc-resume.md) per riavviare l'acquisizione.
+Mentre l'acquisizione è in stato di sospensione, i nuovi fotogrammi non vengono acquisiti fino a quando non viene chiamato il metodo [IRTC::Resume](irtc-resume.md) per riavviare l'acquisizione.
 
 Quando si usano i metodi **IRTC::P ause** e **IRTC::Resume** per controllare l'acquisizione, Network Monitor continua ad aggiungere statistiche di conversazione ogni volta che l'acquisizione è in esecuzione. [](c.md)
 
-Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arrestare l'acquisizione, [chiamare IRTC::Stop](irtc-stop.md).
+Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arrestare l'acquisizione, chiamare [IRTC::Stop](irtc-stop.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Per riavviare l'acquisizione, [chiamare IRTC::Resume](irtc-resume.md). Per arres
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC::Connect](irtc-connect.md)
+[IRTC::Connessione](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::Resume](irtc-resume.md)

@@ -1,7 +1,7 @@
 ---
-description: Indica che una pagina di memoria è stata rimossa dall'utilizzo del sistema a causa di errori di controllo degli errori hardware e correzione (ECC) eccessivi. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+description: Indica che una pagina di memoria è stata rimossa dall'uso da parte del sistema a causa di un numero eccessivo di errori ECC (Hardware Error Checking and Correcting). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 ms.assetid: 364a2520-8d7c-44f2-95f6-eea9a5531975
-title: Classe MSMCAEvent_MemoryPageRemoved
+title: MSMCAEvent_MemoryPageRemoved classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: dc29c5b51531e204ab50f062dd08ef8d5abf1bbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8229848cf1113736e3b9a4e37cd9493b8c724c58c384387536cded4742ca3c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558468"
 ---
-# <a name="msmcaevent_memorypageremoved-class"></a>\_Classe MSMCAEvent MemoryPageRemoved
+# <a name="msmcaevent_memorypageremoved-class"></a>Classe MSMCAEvent \_ MemoryPageRemoved
 
-La **classe \_ MemoryPageRemoved di MSMCAEvent** indica che una pagina di memoria è stata rimossa dall'utilizzo del sistema a causa di errori di controllo e correzione degli errori hardware (ecc) eccessivi. Questa classe è disponibile solo nei sistemi Windows a 64 bit.
+La **classe MSMCAEvent \_ MemoryPageRemoved** indica che una pagina di memoria è stata rimossa dall'uso da parte del sistema a causa di un numero eccessivo di errori ECC (Hardware Error Checking and Correcting). Questa classe è disponibile solo nei sistemi Windows a 64 bit.
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,63 +42,63 @@ class MSMCAEvent_MemoryPageRemoved : WmiEvent
 
 ## <a name="members"></a>Members
 
-La **classe \_ MemoryPageRemoved di MSMCAEvent** dispone di questi tipi di membri:
+La **classe MSMCAEvent \_ MemoryPageRemoved** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ MemoryPageRemoved di MSMCAEvent** dispone di queste proprietà.
+La **classe MSMCAEvent \_ MemoryPageRemoved** ha queste proprietà.
 
 <dl> <dt>
 
 **Attivo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se questa istanza della classe è attiva; in caso contrario, **false**.
+**TRUE** se questa istanza della classe è attiva; in caso **contrario, FALSE.**
 
 </dd> <dt>
 
 **InstanceName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **Chiave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificatore univoco per questa istanza della classe.
+Identificatore univoco per questa istanza della classe .
 
 </dd> <dt>
 
 **PhysicalAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo della pagina di memoria che è stata rimossa.
+Indirizzo della pagina di memoria rimossa.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/previous-versions//aa393262(v=vs.85)).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI.](/previous-versions//aa393262(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **MSMCAEvent \_ MemoryPageRemoved** è derivata da [**WmiEvent**](wmievent.md).
+La **classe MSMCAEvent \_ MemoryPageRemoved** è derivata da [**WMIEvent.**](wmievent.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -108,8 +108,8 @@ La classe **MSMCAEvent \_ MemoryPageRemoved** è derivata da [**WmiEvent**](wmie
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP<br/>                                                                  |
 | Server minimo supportato<br/> | Windows Server 2003<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

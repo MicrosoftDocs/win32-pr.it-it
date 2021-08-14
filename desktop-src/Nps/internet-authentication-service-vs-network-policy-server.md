@@ -5,12 +5,12 @@ ms.assetid: c7c6d1a3-d0c8-469e-ae1e-a848ef7fee2b
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd62a50021c485c7bf51cdc9caff4360e4cc863
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: f46e4052b2c7277f49f898a290d689928b5838c0562042c0ba8937c5daf00210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118362317"
 ---
 # <a name="internet-authentication-service--network-policy-server"></a>Servizio di autenticazione Internet & Server dei criteri di rete
 
@@ -91,7 +91,7 @@ Server dei criteri di rete, tramite Protezione accesso alla rete, interagisce co
 </tr>
 <tr class="even">
 <td>Strumento di gestione dei ruoli e integrazione Server Manager ruoli<br/></td>
-<td>Server dei criteri di rete è integrato con Server Manager e lo strumento di gestione dei ruoli. Questa integrazione facilita la configurazione e la gestione di Server dei criteri di rete e degli scenari correlati.<br/> Server Manager non è disponibile nei computer che eseguono IAS.<br/></td>
+<td>Server dei criteri di rete è integrato Server Manager e lo strumento di gestione dei ruoli. Questa integrazione facilita la configurazione e la gestione di Server dei criteri di rete e degli scenari correlati.<br/> Server Manager non è disponibile nei computer che eseguono IAS.<br/></td>
 </tr>
 <tr class="odd">
 <td>Aggiornamento dello scripting della riga di comando <a href="/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)">con Netsh</a>.<br/></td>

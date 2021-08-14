@@ -1,9 +1,9 @@
 ---
-title: PLAYERelement
-description: Si tratta di un pulsante predefinito con i seguenti valori predefiniti. | PLAYERelement
+title: PLAYERELEMENT
+description: Si tratta di un BUTTONELEMENT predefinito con i valori predefiniti seguenti. | PLAYERELEMENT
 ms.assetid: 7df93011-5d7a-4e2d-8c52-86274b0bf504
 keywords:
-- PLAYERelement Windows Media Player
+- PLAYERELEMENT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c9feb77219aea62e8905ef57148e1c6abac48bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e61f6a3563f211094e225345c86b999c6e0e93fc33d88adef0a1e942b2e3ff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571751"
 ---
-# <a name="playerelement"></a>PLAYERelement
+# <a name="playerelement"></a>PLAYERELEMENT
 
-Si tratta di un **pulsante** predefinito con i seguenti valori predefiniti.
+Si tratta di un **BUTTONELEMENT predefinito** con i valori predefiniti seguenti.
 
 ``` syntax
 onclick="jscript:player.controls.play()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.play"
 
 ## <a name="remarks"></a>Commenti
 
-Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possibile specificarle in modo esplicito.
+È possibile eseguire l'override di tutte le proprietà di **buttonELEMENT** specificandole in modo esplicito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per eseguire l'override di tutte le proprietà di questo **pulsante** , è possi
 
 <dl> <dt>
 
-[**BUTTONelement (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

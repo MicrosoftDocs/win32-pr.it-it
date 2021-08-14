@@ -1,25 +1,25 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_COLUMNDEF'
-title: Proprietà JET_COLUMNDEF
+description: 'Altre informazioni su: JET_COLUMNDEF proprietà'
+title: JET_COLUMNDEF proprietà
 TOCTitle: JET_COLUMNDEF properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef_properties(v=EXCHG.10)
 ms:contentKeyID: 55103489
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e39b0d2f86517c4fb6cab98a0127bc6827977adc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a5c370990c1b6648fb09cf5370f42dabaafca1673e6500512183641ca3adc99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487209"
 ---
-# <a name="jet_columndef-properties"></a>Proprietà JET_COLUMNDEF
+# <a name="jet_columndef-properties"></a>JET_COLUMNDEF proprietà
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [JET_COLUMNDEF](./jet-columndef-class.md) espone i membri seguenti.
+Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,7 +35,7 @@ Il tipo di [JET_COLUMNDEF](./jet-columndef-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335080(v=exchg.10).md">cbMax</a></td>
-<td>Ottiene o imposta la lunghezza massima della colonna. Questa operazione è significativa solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LONGTEXT</a>, <a href="hh577895(v=exchg.10).md">Binary</a> e <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
+<td>Ottiene o imposta la lunghezza massima della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> <a href="hh577895(v=exchg.10).md">e LongBinary</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -44,13 +44,13 @@ Il tipo di [JET_COLUMNDEF](./jet-columndef-class.md) espone i membri seguenti.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="dn335079(v=exchg.10).md">ColumnID</a></td>
-<td>Ottiene l'ColumnID della colonna.</td>
+<td><a href="dn335079(v=exchg.10).md">columnid</a></td>
+<td>Ottiene l'id colonna della colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335044(v=exchg.10).md">cp</a></td>
-<td>Ottiene o imposta la tabella codici della colonna. Questa operazione è significativa solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> e <a href="hh577895(v=exchg.10).md">LONGTEXT</a>.</td>
+<td>Ottiene o imposta la tabella codici della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> e <a href="hh577895(v=exchg.10).md">LongText.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -67,6 +67,6 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_COLUMNDEF](./jet-columndef-class.md)
+[JET_COLUMNDEF classe](./jet-columndef-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

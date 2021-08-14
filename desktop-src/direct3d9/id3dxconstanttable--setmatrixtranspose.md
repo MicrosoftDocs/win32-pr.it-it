@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 06cc989a14da6f2fe84d30f7f5d7d9fc35acd3bc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d2026b2bb8b3baeae778e66a0b226c63fa2aeec09cb0a5e790f989161ff7552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118521207"
 ---
 # <a name="id3dxconstanttablesetmatrixtranspose-method"></a>Metodo ID3DXConstantTable::SetMatrixTranspose
 
@@ -47,7 +47,7 @@ HRESULT SetMatrixTranspose(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella delle costanti.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Identificatore univoco della matrice di costanti. Vedere [D3DXHANDLE](dx9-graphi
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntatore a una matrice trasposta. Vedere [**D3DXMATRIX.**](d3dxmatrix.md)
+Puntatore a una matrice trasposta. Vedere [**D3DXMATRIX**](d3dxmatrix.md).
 
 </dd> </dl>
 

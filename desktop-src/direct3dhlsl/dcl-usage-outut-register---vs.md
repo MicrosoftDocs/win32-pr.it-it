@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 314c9c9a9a9e62915e9224b3cf165bc54d09a516
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9ee5f444cbf145957ad93db00160d812e75e4a624019ad9f578b5dc960e84f59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726718"
 ---
 # <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>Output dcl \_ usage (sm1, sm2, sm3 - vs asm)
 
-I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti). Possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate della trama, colori, tempo e così via.
+I vari tipi di registri di output sono stati compressi in dodici registri di output (due per il colore, otto per la trama, uno per la posizione e uno per le dimensioni dei punti e dei punti). Possono essere usati per qualsiasi elemento che l'utente vuole interpolare per il pixel shader: coordinate della trama, colori, colore, e così via.
 
 I registri di output richiedono dichiarazioni che includono semantica. Ad esempio, la posizione precedente e i registri delle dimensioni dei punti vengono sostituiti dichiarando un registro di output con una semantica di posizione o dimensione del punto.
 
-Dei dodici registri di output, ogni dieci (non necessariamente o0 a o9) ha quattro componenti (xyzw), un altro deve essere dichiarato come position (e deve includere anche tutti e quattro i componenti) e, facoltativamente, uno può essere una dimensione in punti scalari.
+Dei dodici registri di output, ogni dieci (non necessariamente o0 a o9) ha quattro componenti (xyzw), un altro deve essere dichiarato come position (e deve includere anche tutti e quattro i componenti) e, facoltativamente, uno di più può essere una dimensione in punti scalari.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,15 +42,15 @@ Dove:
 
 -   La semantica dcl \_ può usare lo stesso set di semantica della dichiarazione di input. I nomi semantici [**provengono da D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (e sono associati a un indice, ad esempio position3). Deve essere sempre presente un registro di output con la semantica positiont0 quando non viene usato per l'elaborazione dei vertici. La semantica positiont0 e la semantica pointsize0 sono gli unici che hanno significato oltre a consentire semplicemente il collegamento da vertex shader a pixel shader. Per gli shader con controllo di flusso, si presuppone che l'output del caso peggiore sia dichiarato. Non sono presenti impostazioni predefinite se uno shader non restituisce effettivamente l'output che dovrebbe (a causa del controllo di flusso).
 -   o è un registro di output. Vedere [Registri \_ di output.](dx9-graphics-reference-asm-vs-registers-vs-3-0.md)
--   write mask indica lo stesso registro di output che può essere dichiarato più volte (in modo che sia possibile applicare una semantica diversa ai singoli componenti), ogni volta con \_ una maschera di scrittura univoca. Tuttavia, la stessa semantica non può essere usata più volte in una dichiarazione. Ciò significa che i vettori devono essere quattro componenti o meno e non possono attraversare i limiti del registro a quattro componenti (singoli registri). Quando viene usata la semantica delle dimensioni in punti, deve avere una maschera di scrittura completa perché è considerata scalare. Quando viene usata la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti devono essere scritti.
+-   write mask indica lo stesso registro di output che può essere dichiarato più volte (in modo che sia possibile applicare una semantica diversa ai singoli componenti), ogni volta con \_ una maschera di scrittura univoca. Tuttavia, la stessa semantica non può essere usata più volte in una dichiarazione. Ciò significa che i vettori devono essere quattro o meno componenti e non possono attraversare i limiti del registro a quattro componenti (singoli registri). Quando viene usata la semantica delle dimensioni del punto, deve avere una maschera di scrittura completa perché è considerata scalare. Quando viene usata la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti devono essere scritti.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni di vertex shader | 3 \_ 0 | 3 \_ sw |
+| Versioni vertex shader | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|-------|
-| Utilizzo di \_ dcl             | x    | x     |
+| dcl \_ usage             | x    | x     |
 
 
 

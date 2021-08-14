@@ -1,19 +1,19 @@
 ---
-description: Questa stringa deve essere impostata sulla versione fonetica del nome visualizzato come definito in System. ItemNameDisplay nelle impostazioni locali CJK (CHS pinyin, JPN hiragana, KOR KOR e così via).
+description: Questa stringa deve essere impostata sulla versione fonetica del nome visualizzato come definito in System.ItemNameDisplay nelle impostazioni locali CJK (CHS Pinyin, JPN Hiragana, KOR Hangul e così via).
 ms.assetid: eb491644-bf59-4439-9e9b-bcafde619d66
-title: System. ItemNameSortOverride
+title: System.ItemNameSortOverride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d79f9bb07eb15eb5d25fbfa1e95d4c0f80b35611
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64c555007ae7bd2a0c7ca5f16e6e3ad26449942b2c7031b81a03317d0d6212a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865884"
 ---
-# <a name="systemitemnamesortoverride"></a>System. ItemNameSortOverride
+# <a name="systemitemnamesortoverride"></a>System.ItemNameSortOverride
 
-Questa stringa deve essere impostata sulla versione fonetica del nome visualizzato come definito in System. ItemNameDisplay nelle impostazioni locali CJK (CHS pinyin, JPN hiragana, KOR KOR e così via). Il primo carattere di questo campo viene usato anche per raggruppare i nomi in base a FirstLetter. Per la maggior parte dei linguaggi non CJK, questo campo non deve essere impostato, nel qual caso verrà usato System. ItemNameDisplay. Tuttavia, se si desidera eseguire l'override della lettera di raggruppamento, ad esempio per rimuovere gli articoli iniziali come "a" e "The", è possibile specificare una stringa alternativa.
+Questa stringa deve essere impostata sulla versione fonetica del nome visualizzato come definito in System.ItemNameDisplay nelle impostazioni locali CJK (CHS Pinyin, JPN Hiragana, KOR Hangul e così via). Il primo carattere di questo campo viene usato anche per raggruppare i nomi per firstletter. Per la maggior parte dei linguaggi non CJK, non è necessario impostare questo campo (nel qual caso verrà usato System.ItemNameDisplay). Tuttavia, se è consigliabile eseguire l'override della lettera di raggruppamento (ad esempio, per rimuovere gli articoli iniziali, ad esempio "a" e "the"), è possibile specificare una stringa alternativa qui.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

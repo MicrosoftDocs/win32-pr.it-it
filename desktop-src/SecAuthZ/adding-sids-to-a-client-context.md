@@ -1,27 +1,27 @@
 ---
-description: Un'applicazione può aggiungere identificatori di sicurezza (SID) a un contesto client esistente chiamando la funzione AuthzAddSidsToContext.
+description: Un'applicazione può aggiungere ID di sicurezza (SID) a un contesto client esistente chiamando la funzione AuthzAddSidsToContext.
 ms.assetid: d49ce47b-e91a-452b-b423-07e8d282d28a
 title: Aggiunta di SID a un contesto client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a601f485110ddacea0fdb54cb7dcef587a25cb9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f07805031d299efc400c491c7fff1c43653e90b53f6c753c81a8676d4b0941b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784923"
 ---
 # <a name="adding-sids-to-a-client-context"></a>Aggiunta di SID a un contesto client
 
-Un'applicazione può aggiungere [*identificatori di sicurezza*](/windows/desktop/SecGloss/s-gly) (SID) a un contesto client esistente chiamando la funzione [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) . La funzione [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) consente a un'applicazione di specificare sia un elenco di SID che un elenco di SID di restrizione al contesto client specificato.
+Un'applicazione [*può aggiungere*](/windows/desktop/SecGloss/s-gly) ID di sicurezza (SID) a un contesto client esistente chiamando la [**funzione AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) La [**funzione AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) consente a un'applicazione di specificare sia un elenco di SID che un elenco di SID di limitazione al contesto client specificato.
 
-Il sistema utilizza l'elenco dei SID di restrizione quando controlla l'accesso del token a un oggetto a protezione diretta. Quando un processo o un thread con restrizioni tenta di accedere a un oggetto a protezione diretta, il sistema esegue due controlli di accesso: uno usando i SID abilitati del token e un altro usando l'elenco dei SID di restrizione. L'accesso viene concesso solo se entrambi i controlli di accesso consentono i diritti di accesso richiesti.
+Il sistema usa l'elenco di SID di limitazione quando controlla l'accesso del token a un oggetto a protezione diretta. Quando un processo o un thread con restrizioni tenta di accedere a un oggetto a protezione diretta, il sistema esegue due controlli di accesso: uno tramite i SID abilitati del token e l'altro tramite l'elenco di SID di limitazione. L'accesso viene concesso solo se entrambi i controlli di accesso consentono i diritti di accesso richiesti.
 
-Le variabili di attributo devono essere sotto forma di espressione se utilizzate con operatori logici; in caso contrario, vengono valutati come sconosciuti.
+Le variabili di attributo devono essere nel formato di un'espressione se usate con operatori logici. in caso contrario, vengono valutati come sconosciuti.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono aggiunti un SID e un SID restrittivo al contesto client creato dall'esempio nell' [inizializzazione di un contesto client](initializing-a-client-context.md).
+Nell'esempio seguente vengono aggiunti un SID e un SID di limitazione al contesto client creato nell'esempio in [Inizializzazione di un contesto client.](initializing-a-client-context.md)
 
 
 ```C++
@@ -103,10 +103,10 @@ BOOL AddSidsToContext(AUTHZ_CLIENT_CONTEXT_HANDLE *phClientContext)
 
 <dl> <dt>
 
-[Memorizzazione nella cache di controlli di accesso](caching-access-checks.md)
+[Caching Controlli di accesso](caching-access-checks.md)
 </dt> <dt>
 
-[Verifica dell'accesso con l'API Authz](checking-access-with-authz-api.md)
+[Controllo dell'accesso con Authz API](checking-access-with-authz-api.md)
 </dt> <dt>
 
 [Inizializzazione di un contesto client](initializing-a-client-context.md)

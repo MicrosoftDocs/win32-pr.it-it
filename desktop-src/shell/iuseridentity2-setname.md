@@ -1,7 +1,7 @@
 ---
-description: 'IUserIdentity2:: Sename non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.'
+description: IUserIdentity2::SetName non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: 1c9c3beb-fa1c-4b4d-9cfd-656b97949036
-title: 'Metodo IUserIdentity2:: SetValue (Msident. h)'
+title: Metodo IUserIdentity2::SetName (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 0b0fd06ef4b582987e41c2343f2d4596db6b8528
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32c375f37fbc0bc6352a79c9eb37be56578b236f6131c4ead1ea721cc53ce5e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220073"
 ---
-# <a name="iuseridentity2setname-method"></a>Metodo IUserIdentity2:: SetValue
+# <a name="iuseridentity2setname-method"></a>Metodo IUserIdentity2::SetName
 
-\[**IUserIdentity2:: Sename** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**IUserIdentity2::SetName** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e Desktop remoto](fastuserswitching.md).\]
 
 Imposta il nome visualizzato dell'identità.
 
@@ -41,10 +41,10 @@ HRESULT SetName(
 
 <dl> <dt>
 
-*pszName* \[ in\]
+*pszName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Stringa di caratteri wide che contiene il nuovo nome dell'identità.
 
@@ -52,9 +52,9 @@ Stringa di caratteri wide che contiene il nuovo nome dell'identità.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,8 +66,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/>    | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

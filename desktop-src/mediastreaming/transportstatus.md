@@ -1,9 +1,9 @@
 ---
 title: Enumerazione TransportStatus
-description: Definisce lo stato del trasporto disponibile come definito dalle linee guida di UPnP.
+description: Definisce lo stato del trasporto disponibile in base alle linee guida UPnP.
 ms.assetid: 6fde82f0-9bc4-4abb-9d10-0000501c2b24
 keywords:
-- API di streaming multimediale dell'enumerazione TransportStatus
+- ENUMERAZIONE TransportStatus API Streaming multimediale
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb4a9de34f358db96b468dbd3329483a8e09b6b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e96b7d3892d0344b166665426c66313da370aed1abbdb80c17037ea6aeb44e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472997"
 ---
 # <a name="transportstatus-enumeration"></a>Enumerazione TransportStatus
 
-Definisce lo stato del trasporto disponibile come definito dalle linee guida di UPnP.
+Definisce lo stato del trasporto disponibile in base alle linee guida UPnP.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef enum TransportStatus {
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Sconosciuto**
 </dt> <dd>
 
-Stato del dispositivo errato.
+Stato del dispositivo erro.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Si è verificato un errore nel dispositivo.
 <span id="Last"></span><span id="last"></span><span id="LAST"></span>**Ultima**
 </dt> <dd>
 
-Stato precedente del dispositivo allo stato del trasporto corrente.
+Stato precedente del dispositivo allo stato di trasporto corrente.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Stato precedente del dispositivo allo stato del trasporto corrente.
 
 | Requisito | Valore |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| IDL<br/> | <dl> <dt>Windows. Media. streaming. IDL (riferimento a Windows. Media. streaming. idl)</dt> </dl> |
+| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (riferimento Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: d0c75091-0052-4ec0-a6cb-3bc0721a7b14
 title: System.Contact.BusinessAddress3Country
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2318628ce07b6e1d6940d21ffba574c7d2506931
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e9cd8720dd8dc9800d2e7b47fcbfbf9ddf5513fcad532cc9ca4129002301f08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468708"
 ---
 # <a name="systemcontactbusinessaddress3country"></a>System.Contact.BusinessAddress3Country
 

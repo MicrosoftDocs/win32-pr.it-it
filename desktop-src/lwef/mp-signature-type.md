@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MP_SIGNATURE_TYPE (MpClient. h)
+title: MP_SIGNATURE_TYPE enumerazione (MpClient.h)
 description: Tipi di firma possibili.
 ms.assetid: 44B195A8-866D-4B87-9576-54E00658F9B3
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MP_SIGNATURE_TYPE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMP_SIGNATURE_TYPE
+- MP_SIGNATURE_TYPE di enumerazione Legacy Windows Environment Features
+- PMP_SIGNATURE_TYPE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b99f7140706e9a6d3fa32e7eb346ef6478f3f26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3289f0cbc3eeb85f553adf97078b7d3c5c53a686e914f86a4edb80c5244f72af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883714"
 ---
-# <a name="mp_signature_type-enumeration"></a>Enumerazione del tipo di \_ firma MP \_
+# <a name="mp_signature_type-enumeration"></a>Enumerazione \_ MP SIGNATURE \_ TYPE
 
 Tipi di firma possibili.
 
@@ -45,35 +45,35 @@ typedef enum tagMP_SIGNATURE_TYPE {
 
 <dl> <dt>
 
-<span id="MP_SIGNATURE_ANTIMALWARE"></span><span id="mp_signature_antimalware"></span>**\_antimalware firma MP \_**
+<span id="MP_SIGNATURE_ANTIMALWARE"></span><span id="mp_signature_antimalware"></span>**\_ANTIMALWARE DI \_ FIRMA MP**
 </dt> <dd>
 
 Firme antivirus e antispyware.
 
 </dd> <dt>
 
-<span id="MP_SIGNATURE_ANTIVIRUS"></span><span id="mp_signature_antivirus"></span>**ANTIVIRUS per la \_ firma MP \_**
+<span id="MP_SIGNATURE_ANTIVIRUS"></span><span id="mp_signature_antivirus"></span>**\_ANTIVIRUS PER LA FIRMA \_ MP**
 </dt> <dd>
 
-Solo le firme antivirus.
+Solo firme antivirus.
 
 </dd> <dt>
 
-<span id="MP_SIGNATURE_ANTISPYWARE"></span><span id="mp_signature_antispyware"></span>**\_antispyware firma MP \_**
+<span id="MP_SIGNATURE_ANTISPYWARE"></span><span id="mp_signature_antispyware"></span>**\_ \_ ANTISPYWARE PER LA FIRMA MP**
 </dt> <dd>
 
-Solo le firme antispyware.
+Solo firme antispyware.
 
 </dd> <dt>
 
-<span id="MP_SIGNATURE_NIS"></span><span id="mp_signature_nis"></span>**\_NIS firma \_ MP**
+<span id="MP_SIGNATURE_NIS"></span><span id="mp_signature_nis"></span>**NIS \_ DI \_ FIRMA MP**
 </dt> <dd>
 
 Firme NIS.
 
 </dd> <dt>
 
-<span id="MP_SIGNATURE_TYPES_MAXVALUE"></span><span id="mp_signature_types_maxvalue"></span>**\_tipi di firma MP \_ \_ MaxValue**
+<span id="MP_SIGNATURE_TYPES_MAXVALUE"></span><span id="mp_signature_types_maxvalue"></span>**MAXVALUE \_ TIPI \_ DI FIRMA \_ MP**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -82,9 +82,9 @@ Firme NIS.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

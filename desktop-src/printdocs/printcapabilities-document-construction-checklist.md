@@ -4,12 +4,12 @@ ms.assetid: 4b8fa1a4-6461-4722-861b-354f206b2a73
 title: Elenco di controllo per la costruzione di documenti PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee309c96cf7b2d70cb78f125e7783668fb2298da
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3a5284a480f73151750926d975535ea799457a1ce2cd4c14f197a4fc6519b646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867963"
 ---
 # <a name="printcapabilities-document-construction-checklist"></a>Elenco di controllo per la costruzione di documenti PrintCapabilities
 
@@ -21,17 +21,17 @@ Il [riepilogo dei tipi di elemento](summary-of-element-types.md) illustra i vari
 
 2.  Per ogni funzionalità del dispositivo, determinare se può essere rappresentata da una funzionalità definita nelle parole chiave dello schema di stampa. In caso contrario, sarà necessario introdurre una nuova funzionalità definita privatamente (e un attributo del nome corrispondente).
 
-    -   Per le istanze di funzionalità definite da parole chiave dello schema di stampa, identificare ognuno degli stati disponibili su cui è possibile impostare questa funzionalità. Ogni stato corrisponde a un'opzione dell'istanza della funzionalità. Determinare quali di questi stati corrispondono alle istanze dell'opzione print schema-defined associate a questa funzionalità e quali richiedono un'istanza option personalizzata. [L'argomento Definizioni](option-definitions.md) di opzioni contiene informazioni su come costruire nuove istanze di Option e su come derivare nuove istanze di Option da istanze option esistenti.
+    -   Per le istanze di funzionalità definite da parole chiave dello schema di stampa, identificare ognuno degli stati disponibili su cui questa funzionalità può essere impostata. Ogni stato corrisponde a un'opzione dell'istanza della funzionalità. Determinare quali di questi stati corrispondono alle istanze dell'opzione print schema-defined associate a questa funzionalità e quali stati richiedono un'istanza option personalizzata. [L'argomento Definizioni](option-definitions.md) di opzioni presenta informazioni su come costruire nuove istanze di Option e su come derivare nuove istanze option da istanze option esistenti.
 
     -   Per le istanze di funzionalità non standard, identificare le caratteristiche che possono essere usate per distinguere un'opzione da un'altra. Rappresentare ogni caratteristica di questo tipo in base a un elemento ScoredProperty e, in ogni istanza di Option, assegnare a ogni ScoredProperty un valore specifico per tale opzione. Assicurarsi che siano disponibili elementi ScoredProperty sufficienti in modo che ogni opzione per una determinata funzionalità sia univoca. Le istanze di funzionalità e opzioni non standard sono per loro natura non portabili. Ciò significa che un altro driver non sarà in grado di trovare funzionalità o opzioni equivalenti per trovare una corrispondenza con una funzionalità o un'opzione non standard specificata nel PrintTicket creato dal driver.
 
-3.  Determinare se un elemento Option deve contenere elementi ParameterRef. Per altre informazioni, vedere [Costrutti di parametro ed](parameter-constructs.md) [Elementi di riferimento ai parametri.](parameter-reference-elements.md)
+3.  Determinare se un elemento Option deve contenere elementi ParameterRef. Per altre informazioni, vedere [Costrutti di parametro ed](parameter-constructs.md) [elementi di riferimento ai parametri.](parameter-reference-elements.md)
 
 4.  Per i parametri, determinare se una delle istanze ParameterDef definite nelle parole chiave dello schema di stampa è una corrispondenza adeguata. In tal caso, copiare l'istanza ParameterDef dalle parole chiave dello schema di stampa e modificare il valore di ogni istanza di proprietà modificabile in modo che sia più adatta. Se nessuna delle istanze di ParameterDef nelle parole chiave dello schema di stampa è una corrispondenza adeguata, creare la propria istanza di ParameterDef. Per altre informazioni, vedere [Parametri nel documento PrintCapabilities.](parameters-in-the-printcapabilities-document.md)
 
 5.  Assicurarsi che tutte le istanze Property e ScoredProperty richieste dal documento Print Schema Keywords siano presenti nel documento PrintCapabilities e che siano inizializzate correttamente.
 
-6.  Aggiungere altre istanze di proprietà e sottoproprietà in base alle esigenze. È possibile introdurre istanze di proprietà definite privatamente se sono presenti aspetti del dispositivo che è necessario caratterizzare che non sono coperti dalle istanze di proprietà definite nelle parole chiave dello schema di stampa.
+6.  Aggiungere altre istanze di proprietà e sottoproprietà in base alle esigenze. È possibile introdurre istanze di proprietà definite privatamente se esistono aspetti del dispositivo che è necessario caratterizzare che non sono coperti dalle istanze di proprietà definite nelle parole chiave dello schema di stampa.
 
 7.  Osservare la convenzione dello spazio dei nomi per gli attributi del nome. Questo vale per gli attributi dei nomi definiti privatamente e per quelli definiti nelle parole chiave dello schema di stampa.
 

@@ -1,21 +1,21 @@
 ---
-description: La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione viaggia la luce, ma anche la direzione verso l'occhio dello visualizzatore.
+description: La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione si sposta la luce, ma anche la direzione verso l'occhio dell'utente.
 ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Illuminazione speculare (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b16d71bd8d814e104cf8a90d1d1fe9b15ba10f3
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 84597b63ebd064fbe27ae90b673e9c91166be96f6f45b039ba29a16de9011054
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118520180"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Illuminazione speculare (Direct3D 9)
 
-La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione viaggia la luce, ma anche la direzione verso l'occhio dello visualizzatore. Il sistema usa una versione semplificata del modello phong specular-reflection, che usa un vettore a metà per approssimare l'intensità della reflection speculare.
+La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione si sposta la luce, ma anche la direzione verso l'occhio dell'utente. Il sistema usa una versione semplificata del modello di reflection speculare phong, che usa un vettore a metà strada per approssimare l'intensità della reflection speculare.
 
-Lo stato di illuminazione predefinito non calcola le evidenziazioni speculari. Per abilitare l'illuminazione speculare, assicurarsi di impostare D3DRS \_ SPECULARENABLE su **TRUE**.
+Lo stato di illuminazione predefinito non calcola le evidenziazioni speculari. Per abilitare l'illuminazione speculare, assicurarsi di impostare D3DRS \_ SPECULARENABLE su **TRUE.**
 
 ## <a name="specular-lighting-equation"></a>Equazione di illuminazione speculare
 
@@ -35,12 +35,12 @@ La tabella seguente identifica le variabili, i relativi tipi e i relativi interv
 |--------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------------|
 | Cs           | (0,0,0,0)     | D3DCOLORVALUE | Colore speculare.                                                                                                     |
 | Sum          | N/D           | N/D           | Somma del componente speculare di ogni luce.                                                                       |
-| N            | N/D           | D3DVECTOR     | Normale vertice.                                                                                                      |
-| H            | N/D           | D3DVECTOR     | Vettore a metà strada. Vedere la sezione sul vettore a metà.                                                             |
+| N            | N/A           | D3DVECTOR     | Vertex normal (Normale vertice).                                                                                                      |
+| H            | N/A           | D3DVECTOR     | Vettore a metà. Vedere la sezione sul vettore a metà.                                                             |
 | <sup>P</sup> | 0,0           | FLOAT         | Potenza di reflection speculare. L'intervallo è compreso tra 0 e +infinito                                                                  |
 | Ls           | (0,0,0,0)     | D3DCOLORVALUE | Colore speculare chiaro.                                                                                               |
-| Atten        | N/D           | FLOAT         | Valore di attenuazione della luce. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
-| Spot (Contante)         | N/D           | FLOAT         | Fattore Spotlight. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md)        |
+| Atten        | N/A           | FLOAT         | Valore di attenuazione della luce. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
+| Spot (Contante)         | N/A           | FLOAT         | Fattore Spotlight. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md)        |
 
 
 
@@ -56,7 +56,7 @@ if(SPECULARMATERIALSOURCE == D3DMCS_COLOR1)
 
 
 
--   vertex color1, se l'origine del materiale speculare è D3DMCS COLOR1 e il primo colore del vertice viene \_ fornito nella dichiarazione del vertice.
+-   vertex color1, se l'origine del materiale speculare è D3DMCS COLOR1 e il primo colore del vertice viene \_ specificato nella dichiarazione del vertice.
 -   vertex color2, se l'origine del materiale speculare è D3DMCS COLOR2 e il secondo colore del vertice viene \_ fornito nella dichiarazione del vertice.
 -   colore speculare materiale
 
@@ -69,7 +69,7 @@ I componenti speculari sono definiti in modo da essere da 0 a 255, dopo che tutt
 
 ## <a name="the-halfway-vector"></a>Vettore a metà strada
 
-Il vettore intermedio (H) si trova a metà tra due vettori: il vettore da un vertice dell'oggetto alla sorgente di luce e il vettore da un vertice dell'oggetto alla posizione della fotocamera. Direct3D offre due modi per calcolare il vettore a metà. Quando D3DRS LOCALVIEWER è impostato su TRUE, il sistema calcola il vettore a metà strada usando la posizione della fotocamera e la posizione del vertice, insieme al vettore di direzione della \_ luce.  La formula seguente illustra questa operazione.
+Il vettore intermedio (H) si trova a metà tra due vettori: il vettore da un vertice dell'oggetto alla sorgente di luce e il vettore da un vertice dell'oggetto alla posizione della fotocamera. Direct3D offre due modi per calcolare il vettore a metà strada. Quando D3DRS LOCALVIEWER è impostato su TRUE, il sistema calcola il vettore a metà strada usando la posizione della fotocamera e la posizione del vertice, insieme al vettore di direzione della \_ luce.  La formula seguente illustra questa operazione.
 
 **H = norm(norm(Cp - Vp) + L <sub>dir</sub>)**
 
@@ -81,15 +81,15 @@ Il vettore intermedio (H) si trova a metà tra due vettori: il vettore da un ver
 
 | Parametro       | Valore predefinito | Tipo      | Descrizione                                                  |
 |-----------------|---------------|-----------|--------------------------------------------------------------|
-| Cp              | N/D           | D3DVECTOR | Posizione della fotocamera.                                             |
-| Vp              | N/D           | D3DVECTOR | Posizione del vertice.                                             |
-| L<sub>dir</sub> | N/D           | D3DVECTOR | Vettore di direzione dalla posizione del vertice alla posizione della luce. |
+| Cp              | N/A           | D3DVECTOR | Posizione della fotocamera.                                             |
+| Vp              | N/A           | D3DVECTOR | Posizione del vertice.                                             |
+| L<sub>dir</sub> | N/A           | D3DVECTOR | Vettore di direzione dalla posizione del vertice alla posizione della luce. |
 
 
 
  
 
-Determinare il vettore a metà strada in questo modo può essere intensivo dal punto di vista del calcolo. In alternativa, l'impostazione di D3DRS LOCALVIEWER = FALSE indica al sistema di agire come se il punto di vista \_ fosse infinitamente distante sull'asse z.  Ciò si riflette nella formula seguente.
+Determinare il vettore a metà strada in questo modo può essere a elevato utilizzo di calcolo. In alternativa, l'impostazione di D3DRS LOCALVIEWER = FALSE indica al sistema di agire come se il punto di vista \_ fosse all'infinito distante sull'asse  z. Ciò si riflette nella formula seguente.
 
 **H = norm((0,0,1) + L <sub>dir</sub>)**
 
@@ -97,11 +97,11 @@ Determinare il vettore a metà strada in questo modo può essere intensivo dal p
 
  
 
-Questa impostazione è meno intensiva dal punto di vista del calcolo, ma molto meno accurata, quindi viene usata meglio dalle applicazioni che usano la proiezione ortogonale.
+Questa impostazione è meno intensiva dal punto di vista del calcolo, ma molto meno accurata, quindi è ideale per le applicazioni che usano la proiezione ortogonale.
 
 ## <a name="example"></a>Esempio
 
-In questo esempio l'oggetto viene colorato usando il colore della luce speculare della scena e un colore speculare materiale. Il codice è illustrato di seguito.
+In questo esempio, l'oggetto viene colorato usando il colore della luce speculare della scena e un colore speculare materiale. Il codice è illustrato di seguito.
 
 
 ```

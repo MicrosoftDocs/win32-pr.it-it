@@ -4,28 +4,28 @@ description: . | Messaggi comuni della finestra di dialogo
 ms.assetid: f08c19f8-c18d-4094-b8b6-161b0ceea239
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e724e48b199bcb98691ad4ae4eb7bb8029b565de
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 511f76d7da4f071e2f3a6766a10cf0486d3a969907f41959e8d617dbb51cb3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118503598"
 ---
 # <a name="common-dialog-box-messages"></a>Messaggi comuni della finestra di dialogo
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**CDM \_ filePath**](cdm-getfilepath.md)
--   [**\_GETFOLDERIDLIST CDM**](cdm-getfolderidlist.md)
--   [**\_GETFOLDERPATH CDM**](cdm-getfolderpath.md)
--   [**CDM \_ GETspec**](cdm-getspec.md)
--   [**\_HIDECONTROL CDM**](cdm-hidecontrol.md)
--   [**\_SETCONTROLTEXT CDM**](cdm-setcontroltext.md)
--   [**\_SETDEFEXT CDM**](cdm-setdefext.md)
+-   [**CDM \_ GETFILEPATH**](cdm-getfilepath.md)
+-   [**CDM \_ GETFOLDERIDLIST**](cdm-getfolderidlist.md)
+-   [**CDM \_ GETFOLDERPATH**](cdm-getfolderpath.md)
+-   [**CDM \_ GETSPEC**](cdm-getspec.md)
+-   [**CDM \_ HIDECONTROL**](cdm-hidecontrol.md)
+-   [**CDM \_ SETCONTROLTEXT**](cdm-setcontroltext.md)
+-   [**CDM \_ SETDEFEXT**](cdm-setdefext.md)
 -   [**SETRGBSTRING**](setrgbstring.md)
--   [**\_GETLOGFONT ChooseFont \_ WM**](wm-choosefont-getlogfont.md)
--   [**\_flag ChooseFont \_ WM**](wm-choosefont-setflags.md)
--   [**\_SETLOGFONT ChooseFont \_ WM**](wm-choosefont-setlogfont.md)
+-   [**WM \_ CHOOSEFONT \_ GETLOGFONT**](wm-choosefont-getlogfont.md)
+-   [**WM \_ CHOOSEFONT \_ SETFLAGS**](wm-choosefont-setflags.md)
+-   [**WM \_ CHOOSEFONT \_ SETLOGFONT**](wm-choosefont-setlogfont.md)
 
  
 

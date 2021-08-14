@@ -1,9 +1,9 @@
 ---
-title: Messaggio MM_MIM_ERROR (mmsystem. h)
-description: Il \_ \_ messaggio di errore mm MIM viene inviato a una finestra quando viene ricevuto un messaggio MIDI non valido.
+title: MM_MIM_ERROR messaggio (Mmsystem.h)
+description: Il messaggio MM \_ MIM ERROR viene inviato a una finestra quando viene ricevuto un messaggio \_ MIDI non valido.
 ms.assetid: 03760bfc-a4ef-48cd-97a9-1b93b56fc641
 keywords:
-- MM_MIM_ERROR messaggi multimediali di Windows
+- MM_MIM_ERROR messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76b45988259601b40a804f9eb8acfbb085bddcda
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15b2f615434d47a60297991e170a27acd2c6fabefcb5fed0b71624d373a35ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802419"
 ---
-# <a name="mm_mim_error-message"></a>MM \_ \_ messaggio di errore MIM
+# <a name="mm_mim_error-message"></a>MESSAGGIO \_ DI ERRORE MIM \_ MM
 
-Il messaggio di **\_ \_ errore mm MIM** viene inviato a una finestra quando viene ricevuto un messaggio MIDI non valido.
+Il **messaggio MM MIM \_ \_ ERROR** viene inviato a una finestra quando viene ricevuto un messaggio MIDI non valido.
 
 
 ```C++
@@ -48,13 +48,13 @@ Handle per il dispositivo di input MIDI che ha ricevuto il messaggio non valido.
 <span id="lMidiMessage"></span><span id="lmidimessage"></span><span id="LMIDIMESSAGE"></span>*lMidiMessage*
 </dt> <dd>
 
-Messaggio MIDI non valido. Il messaggio viene compresso in un valore **DWORD** con il primo byte del messaggio nel byte di ordine inferiore.
+Messaggio MIDI non valido. Il messaggio viene inserito in un **valore DWORD** con il primo byte del messaggio nel byte di ordine basso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Questo messaggio non restituisce alcun valore.
 
 <dl> <dt>
 
-[MIDI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
+[MidI (Musical Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Messaggi MIDI](midi-messages.md)

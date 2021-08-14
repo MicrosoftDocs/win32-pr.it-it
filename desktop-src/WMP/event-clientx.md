@@ -1,9 +1,9 @@
 ---
-title: Event. clientX
+title: event.clientX
 description: L'attributo clientX recupera la coordinata x del puntatore del mouse rispetto all'area client della finestra dell'applicazione.
 ms.assetid: d4be2620-17c3-429b-a80b-b8aec2aaa8b7
 keywords:
-- Media Player di Windows Event. clientX
+- event.clientX Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb817647c810be281f515bd81a053d17f73c049d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a690ef450e509cce97df74c24cfacc3c5de19d011186593874f7ab5e31cdb2e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577630"
 ---
-# <a name="eventclientx"></a>Event. clientX
+# <a name="eventclientx"></a>event.clientX
 
-L'attributo **clientX** recupera la coordinata x del puntatore del mouse rispetto all'area client della finestra dell'applicazione.
+**L'attributo clientX** recupera la coordinata x del puntatore del mouse rispetto all'area client della finestra dell'applicazione.
 
 ``` syntax
 event.clientX
@@ -29,7 +29,7 @@ event.clientX
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di sola lettura (**Long**).
+Questo attributo è un numero di sola **lettura** (**long**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,10 +45,10 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 <dl> <dt>
 
-[**Attributi dell'evento di ambiente**](ambient-event-attributes.md)
+[**Attributi degli eventi di ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**Event. clientY**](event-clienty.md)
+[**event.clientY**](event-clienty.md)
 </dt> </dl>
 
  

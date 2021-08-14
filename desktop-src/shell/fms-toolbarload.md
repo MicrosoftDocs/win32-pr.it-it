@@ -1,6 +1,6 @@
 ---
-description: Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti sono forniti da una DLL di estensione di File Manager.
-title: FMS_TOOLBARLOAD (Wfext.h)
+description: Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti vengono forniti da una DLL di estensione di File Manager.
+title: FMS_TOOLBARLOAD struttura (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 7185f9e5-10c6-43cc-b85b-cd077378338f
-ms.openlocfilehash: 3a993312b9e365561018459c43dab87afbd3c2b2
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 719e13e824778ec133ad761d09ccd3bd8f5846ae8cdb36c83ba4f85eca1c2408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224110"
 ---
-# <a name="fms_toolbarload-structure"></a>Struttura TOOLBARLOAD DI FMS \_
+# <a name="fms_toolbarload-structure"></a>Struttura TOOLBARLOAD di FMS \_
 
-Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti sono forniti da una DLL di estensione di File Manager.
+Contiene informazioni sui pulsanti personalizzati da aggiungere alla barra degli strumenti di File Manager. I pulsanti vengono forniti da una DLL di estensione di File Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Dimensione, in byte, della struttura . File Manager imposta le dimensioni prima di chiamare l'estensione e controlla le dimensioni al termine della procedura di estensione.
+Dimensione, in byte, della struttura . File Manager imposta le dimensioni prima di chiamare l'estensione e controlla le dimensioni dopo la fine della procedura di estensione.
 
 </dd> <dt>
 

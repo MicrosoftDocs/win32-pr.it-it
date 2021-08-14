@@ -1,21 +1,21 @@
 ---
-description: Uso delle API di registrazione per i controlli padre
+description: Uso delle API di registrazione per Controllo genitori
 ms.assetid: 6c38a634-53ba-4e76-83bf-1a3f36efb0bc
-title: Uso delle API di registrazione per i controlli padre
+title: Uso delle API di registrazione per Controllo genitori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37d1cedb9ff02856be6ea1ae2069d8635b980681
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 571a24f8bdbf687f8c1975cfc29057035ac56747edc0459682512531194c55a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869063"
 ---
-# <a name="using-logging-apis-for-parental-controls"></a>Uso delle API di registrazione per i controlli padre
+# <a name="using-logging-apis-for-parental-controls"></a>Uso delle API di registrazione per Controllo genitori
 
-### <a name="activity-reporting-logging"></a>Creazione di report attività (registrazione)
+### <a name="activity-reporting-logging"></a>Rapporto attività (registrazione)
 
-Il file di intestazione WpcEvent. h contiene le definizioni dei campi per ogni tipo di evento di attività predefinito e per il tipo personalizzato. In questo codice di esempio vengono illustrati i passaggi per la registrazione di un evento di invito di conversazione di messaggistica immediata mediante l'API di pubblicazione ETW:
+Il file di intestazione WpcEvent.h contiene le definizioni dei campi per ogni tipo di evento di attività predefinito e il tipo personalizzato. Questo codice di esempio illustra i passaggi per registrare un evento di invito alla conversazione di messaggistica immediata usando l'API di pubblicazione ETW:
 
 
 ```C++
@@ -88,36 +88,36 @@ void main()
 
 ### <a name="custom-logging"></a>Registrazione personalizzata
 
-Affinché un'applicazione estenda gli eventi registrati al di fuori del set di eventi predefiniti o di un tipo personalizzato, sarà necessario definire un provider per tale oggetto nel manifesto dell'applicazione. Il canale predefinito WPC può quindi essere importato e gli eventi definiti dall'applicazione possono essere registrati.
+Per estendere gli eventi registrati all'esterno del set di eventi predefiniti o di un tipo personalizzato, è necessario definire un provider per tale evento nel manifesto dell'applicazione. Il canale predefinito WPC può quindi essere importato e gli eventi definiti dall'applicazione possono quindi essere registrati.
 
 ### <a name="logging-rights"></a>Diritti di registrazione
 
-Il canale di registrazione WPC è controllato dall' [*elenco di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACL) per fornire accesso completo solo agli amministratori. Gli account non amministratore possono scrivere sul canale ma non dispongono di accesso in lettura o eliminazione. L'accesso al canale consiste nell'utilizzo dell'API ETW.
+Il canale di registrazione WPC è controllato [*dall'elenco*](/windows/desktop/SecGloss/a-gly) di controllo di accesso (ACL) per fornire l'accesso completo solo agli amministratori. Gli account non amministratori possono scrivere nel canale ma non hanno accesso in lettura o eliminazione. L'accesso al canale è tramite l'API ETW.
 
-### <a name="parental-controls-logging-provider-details"></a>Dettagli del provider di registrazione dei controlli padre
+### <a name="parental-controls-logging-provider-details"></a>Dettagli del provider di registrazione di Controllo genitori
 
 Il provider WPC è denominato Microsoft.com/Windows/ParentalControls con GUID {01090065-B467-4503-9B28-533766761087}. Il canale di registrazione locale predefinito è Microsoft.com/Windows/ParentalControls/LocalEvents.
 
-I file di log vengono archiviati nella \\ cartella Windows system32 \\ WPC \\ logs.
+I file di log vengono archiviati nella Windows \\ System32 \\ Wpc \\ Logs.
 
-### <a name="notification-of-impending-time-limits-logout"></a>Notifica dei limiti di tempo imminenti per la disconnessione
+### <a name="notification-of-impending-time-limits-logout"></a>Notifica della disconnessione dei limiti di tempo imminenti
 
-Il sistema di controlli padre genera un evento di avviso a 15 minuti e di nuovo a 1 minuto prima della disconnessione di un utente controllato in base alle restrizioni temporali. Le applicazioni possono sottoscrivere questi eventi, soprattutto quando sono in esecuzione in modalità a schermo intero DirectX in cui non vengono visualizzate le notifiche standard di Windows. Viene fornito codice di esempio che illustra come sottoscrivere gli eventi, registrare una funzione di callback e ricevere gli eventi.
+Il sistema Controllo genitori genera un evento di avviso a 15 minuti e di nuovo a 1 minuto prima della disconnessione di un utente controllato in base alle restrizioni di tempo. Le applicazioni possono sottoscrivere questi eventi, soprattutto quando sono in esecuzione in modalità schermo intero DirectX in cui le notifiche Windows standard non vengono visualizzate. Viene fornito codice di esempio che illustra come sottoscrivere gli eventi, registrare una funzione di callback e ricevere gli eventi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Cenni preliminari sulle funzionalità di estensibilità dei controlli padre](parental-controls-extensibility-features-overview.md)
+[Cenni preliminari sulle funzionalità di estendibilità di Controllo genitori](parental-controls-extensibility-features-overview.md)
 </dt> <dt>
 
-[**\_descrittore dati evento \_**](/windows/desktop/api/evntprov/ns-evntprov-event_data_descriptor)
+[**DESCRITTORE \_ DEI \_ DATI DEGLI EVENTI**](/windows/desktop/api/evntprov/ns-evntprov-event_data_descriptor)
 </dt> <dt>
 
 [**EventDataDescCreate**](/windows/desktop/api/evntprov/nf-evntprov-eventdatadesccreate)
 </dt> <dt>
 
-[**\_argomenti \_ CONVERSATIONINITEVENT di WPC**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

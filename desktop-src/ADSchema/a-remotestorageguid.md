@@ -1,10 +1,10 @@
 ---
-title: Remote-Storage-GUID (attributo)
-description: Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
+title: Attributo Remote-Archiviazione-GUID
+description: Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 ms.assetid: 9051666f-539c-4339-8652-3ebdab1af301
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo Remote-Storage-GUID
+- Schema AD Archiviazione-GUID remoto
 - Schema AD dell'attributo remoteStorageGUID
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f09677b970af3251664edd3901315189acfe18dc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 54b3f00137661f73356a8b0af41ca0f2882b0b0c6b0f5bfb210d185e7a1b3243
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423777"
 ---
-# <a name="remote-storage-guid-attribute"></a>Remote-Storage-GUID (attributo)
+# <a name="remote-storage-guid-attribute"></a>Attributo Remote-Archiviazione-GUID
 
-Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
+Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Remote-Storage-GUID                         |
-| LDAP-Display-Name | remoteStorageGUID                           |
+| CN                | GUID Archiviazione remoto                         |
+| Ldap-Display-Name | remoteStorageGUID                           |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.809                      |
-| System-ID-GUID    | 2a39c5b0-8960-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | 2a39c5b0-8960-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| A valore singolo       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| A valore singolo       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene il GUID di un oggetto di archiviazione remoto.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| È a valore singolo       | Vero                                                                           |
+| A valore singolo       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
 | Range-Lower            | \-                                                                             |
 | Range-Upper            | \-                                                                             |
 | Search-Flags           | 0x00000000                                                                     |
 | System-Flags           | 0x00000010                                                                     |
-| Classi utilizzate in        | [**Remote-Storage-Service-Point**](c-remotestorageservicepoint.md)<br/> |
+| Classi usate in        | [**Remote-Archiviazione-Service-Point**](c-remotestorageservicepoint.md)<br/> |
 
 
 

@@ -1,20 +1,20 @@
 ---
-title: Cenni preliminari sul controllo TrackBar
-description: Cenni preliminari sul controllo TrackBar
+title: Panoramica del controllo Trackbar
+description: Panoramica del controllo Trackbar
 ms.assetid: adfbc3d9-0f4c-45bf-8009-d477498f74a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c78e94ba4805a48fea9a991f621f241bff465ca
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a6e87ccc20d46a5460e956cb25d15800d656589ea3d09139311c4433ee308d34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414541"
 ---
-# <a name="trackbar-control-overview"></a>Cenni preliminari sul controllo TrackBar
+# <a name="trackbar-control-overview"></a>Panoramica del controllo Trackbar
 
--   [Informazioni sui controlli TrackBar](trackbar-controls.md)
--   [Uso di controlli TrackBar](using-trackbar-controls.md)
+-   [Informazioni sui controlli Trackbar](trackbar-controls.md)
+-   [Uso dei controlli Trackbar](using-trackbar-controls.md)
 
  
 

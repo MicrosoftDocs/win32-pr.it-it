@@ -1,11 +1,11 @@
 ---
-title: DownloadItem. Cancel, metodo
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. Il metodo Cancel Annulla il download.
+title: Metodo DownloadItem.cancel
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. Il metodo cancel annulla il download.
 ms.assetid: b3715fde-6a83-45fa-92ea-1cbffbee7274
 keywords:
-- Annulla il metodo Windows Media Player
-- Metodo Cancel Media Player Windows, classe DownloadItem
-- Classe DownloadItem Media Player Windows, metodo Cancel
+- Metodo cancel Windows Media Player
+- Metodo cancel Windows Media Player , classe DownloadItem
+- Classe DownloadItem Windows Media Player , metodo cancel
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c14d538e85d0930a43db883e226c007bea70de24
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6208719b5ac2e81fb9175db9de67bcf1f00ad7c34787ed1ab45251abd517bd65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749732"
 ---
-# <a name="downloaditemcancel-method"></a>DownloadItem. Cancel, metodo
+# <a name="downloaditemcancel-method"></a>Metodo DownloadItem.cancel
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-Il metodo **Cancel** Annulla il download.
+Il **metodo cancel** annulla il download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli elementi annullati restituiscono un valore **downloadState** pari a 4 (annullato).
+Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli elementi annullati restituiscono **un valore downloadState** pari a 4 (annullato).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,7 +59,7 @@ Gli elementi annullati non vengono rimossi dalla raccolta di download. Gli eleme
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

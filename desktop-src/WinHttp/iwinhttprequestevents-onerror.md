@@ -1,19 +1,19 @@
 ---
-description: Si verifica in presenza di un errore di run-time nell'applicazione.
+description: Si verifica quando si verifica un errore di run-time nell'applicazione.
 ms.assetid: d99400a4-3661-4162-bfd6-8c2a27e0f328
-title: 'Evento IWinHttpRequestEvents:: OnError'
+title: Evento IWinHttpRequestEvents::OnError
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8582deec90eb6bfc2985460f3127d5c7ee9c01b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31127dcc3155b804bbda1c3ab94ee8a410c73f5a96c3ecfc6f787479ccd51539
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744339"
 ---
-# <a name="iwinhttprequesteventsonerror-event"></a>Evento IWinHttpRequestEvents:: OnError
+# <a name="iwinhttprequesteventsonerror-event"></a>Evento IWinHttpRequestEvents::OnError
 
-L'evento **OnError** si verifica in presenza di un errore di run-time nell'applicazione.
+**L'evento OnError** si verifica quando si verifica un errore di run-time nell'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,14 +31,14 @@ void OnError(
 
 <dl> <dt>
 
-*Numero errore* \[ in\]
+*ErrorNumber* \[ Pollici\]
 </dt> <dd>
 
-Riceve il valore numerico dell'errore. I 16 bit inferiori di questo numero di errore corrispondono a uno degli errori elencati nei [**messaggi di errore**](error-messages.md).
+Riceve il valore numerico dell'errore. I 16 bit inferiori di questo numero di errore corrispondono a uno degli errori elencati in [**Messaggi di errore**](error-messages.md).
 
 </dd> <dt>
 
-*ErrorDescription* \[ in\]
+*ErrorDescription* \[ Pollici\]
 </dt> <dd>
 
 Specifica una breve descrizione dell'errore che si è verificato.
@@ -52,7 +52,7 @@ Questo evento non restituisce un valore.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per Windows XP e Windows 2000, vedere la sezione [requisiti di run-time](winhttp-start-page.md) della pagina iniziale di WinHTTP.
+> Per Windows XP e Windows 2000, vedere la [sezione Requisiti di run-time](winhttp-start-page.md) della pagina iniziale WinHTTP.
 
  
 
@@ -62,10 +62,10 @@ Questo evento non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional con \[ solo app desktop SP3\]<br/>            |
-| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server con \[ solo app desktop SP3\]<br/>         |
-| Componente ridistribuibile<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o versioni successive in Windows XP e Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP, Windows 2000 Professional solo con app desktop SP3 \[\]<br/>            |
+| Server minimo supportato<br/> | Windows Server 2003, Windows 2000 Server solo con app desktop SP3 \[\]<br/>         |
+| Componente ridistribuibile<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 o versioni successive in Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Questo evento non restituisce un valore.
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versioni WinHTTP](winhttp-versions.md)
+[Versioni di WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

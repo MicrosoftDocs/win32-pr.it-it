@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsLocality (IADs. h)
-description: I metodi dell'interfaccia IADsLocality leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsLocality (Iads.h)
+description: I metodi dell'interfaccia IADsLocality leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere Metodi delle proprietà dell'interfaccia.
 ms.assetid: 5d1cea40-62fb-49d4-857f-4563e9db7f51
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsLocality ADSI
+- Metodi della proprietà IADsLocality ADSI
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34023f0af5365deb4f023d53a843dcf688c40afd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03954f95446dc898c5992c0ac6a16cc9679e363e9574adc2e780d29c90cb26f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428038"
 ---
-# <a name="iadslocality-property-methods"></a>Metodi di proprietà IADsLocality
+# <a name="iadslocality-property-methods"></a>Metodi della proprietà IADsLocality
 
-I metodi dell'interfaccia [**IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality) leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi [**dell'interfaccia IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality) leggono e scrivono le proprietà descritte in questo argomento. Per altre informazioni, vedere [Metodi delle proprietà dell'interfaccia](interface-property-methods.md).
 
 ## <a name="properties"></a>Proprietà
 
@@ -45,14 +45,14 @@ I metodi dell'interfaccia [**IADsLocality**](/windows/desktop/api/Iads/nn-iads-i
 **Descrizione**
 </dt> <dd> <dl>
 
-Indica il testo che descrive la località.
+Indica il testo che descrive la posizione.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -73,14 +73,14 @@ HRESULT put_Description(
 **LocalityName**
 </dt> <dd> <dl>
 
-Indica il nome dell'area geografica come rappresentata da questo oggetto di località.
+Indica il nome dell'area geografica rappresentata da questo oggetto località.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -101,14 +101,14 @@ HRESULT put_LocalityName(
 **PostalAddress**
 </dt> <dd> <dl>
 
-Indica l'indirizzo postale principale della località.
+Indica l'indirizzo postale principale della posizione.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **BSTR**
+Tipo di dati scripting: **BSTR**
 </dt> <dt>
 
 
@@ -126,17 +126,17 @@ HRESULT put_PostalAddress(
 
 </dt> </dl> </dd> <dt>
 
-**SeeAlso**
+**VedereAlso**
 </dt> <dd> <dl>
 
-Indica una matrice di nomi di ADsPath di oggetti directory rilevanti per questo oggetto.
+Indica una matrice di nomi ADsPath di oggetti directory rilevanti per questo oggetto.
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Variant**
+Tipo di dati scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -158,7 +158,7 @@ HRESULT put_SeeAlso(
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente vengono visualizzati i dati di località di un oggetto contenitore. Si presuppone che sia stato creato un oggetto di località, denominato "setlocale", per l'oggetto contenitore e che le proprietà siano state impostate.
+Nell'esempio di codice seguente vengono visualizzati i dati di localizzazione di un oggetto contenitore. Presuppone che sia stato creato un oggetto locality denominato "myLocality" per l'oggetto contenitore e che le proprietà siano state impostate.
 
 
 ```VB
@@ -192,9 +192,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsLocality è definito come A05E03A2-Effe-11CF-8ABC-00C04FD8D503<br/>         |
+| IID<br/>                      | IADsLocality IID è definito come \_ A05E03A2-EFFE-11CF-8ABC-00C04FD8D503<br/>         |
 
 
 
@@ -202,13 +202,13 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADs**](/windows/desktop/api/Iads/nn-iads-iads)
+[**IAD**](/windows/desktop/api/Iads/nn-iads-iads)
 </dt> <dt>
 
 [**IADsLocality**](/windows/desktop/api/Iads/nn-iads-iadslocality)
 </dt> <dt>
 
-[Metodi di proprietà dell'interfaccia](interface-property-methods.md)
+[Metodi delle proprietà dell'interfaccia](interface-property-methods.md)
 </dt> </dl>
 
  

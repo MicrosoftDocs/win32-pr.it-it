@@ -1,26 +1,26 @@
 ---
-title: Altri esempi di Skin
-description: Altri esempi di Skin
+title: Altri esempi di interfaccia
+description: Altri esempi di interfaccia
 ms.assetid: 72eaa417-d7ce-4521-9289-17f392146ec9
 keywords:
-- creazione di interfacce, esempi di codice
-- Windows Media Player Skin, esempi di codice
-- interfacce, esempi di codice
-- creazione di interfacce, esempi
-- Windows Media Player Skin, esempi
-- interfacce, esempi
+- creazione di interfaccia, esempi di codice
+- Windows Media Player, esempi di codice
+- skins, esempi di codice
+- creazione di interfaccia, esempi
+- Windows Media Player, esempi
+- skins,examples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57d929ad874a9835a67346e70f26adfb3d24378b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b4fae322506d86e69564bc5ac0ca19cc3f972c107dd960b80e6210150593403
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338355"
 ---
-# <a name="other-skin-samples"></a>Altri esempi di Skin
+# <a name="other-skin-samples"></a>Altri esempi di interfaccia
 
-Per visualizzare esempi di interfacce di lavoro complete, fare clic sul pulsante **Start** , scegliere **programmi**, quindi **Windows Media**, **Windows Media SDK**, quindi fare clic su **Samples SDK samples**. Per usare gli esempi, è necessario innanzitutto installare Windows Media Player SDK.
+Per visualizzare esempi di interfaccia funzionanti complete, fare clic sul pulsante **Start,** scegliere **Programmi,** **Windows Media,** **Windows Media SDK** e quindi fare clic su Esempi di Player **SDK.** Per usare gli esempi, è necessario installare Windows Media Player SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -32,9 +32,9 @@ Per visualizzare esempi di interfacce di lavoro complete, fare clic sul pulsante
 [**Guida alla creazione dell'interfaccia**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

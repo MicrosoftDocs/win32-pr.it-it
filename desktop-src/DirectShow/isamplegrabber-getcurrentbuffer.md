@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetCurrentBuffer recupera una copia del buffer associato all'esempio più recente.
 ms.assetid: 08550c82-4711-4725-9cd0-19b43cf4c92e
-title: 'Metodo ISampleGrabber:: GetCurrentBuffer (qedit. h)'
+title: Metodo ISampleGrabber::GetCurrentBuffer (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d4df4c825761b42533590f10432bf62e5e4e0298
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 88af9469a1470a02be62b7684a66990c5622820e370518ed53267bd87d981879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818050"
 ---
-# <a name="isamplegrabbergetcurrentbuffer-method"></a>Metodo ISampleGrabber:: GetCurrentBuffer
+# <a name="isamplegrabbergetcurrentbuffer-method"></a>Metodo ISampleGrabber::GetCurrentBuffer
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il metodo **GetCurrentBuffer** recupera una copia del buffer associato all'esempio più recente.
+Il **metodo GetCurrentBuffer** recupera una copia del buffer associato all'esempio più recente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,17 +46,17 @@ HRESULT GetCurrentBuffer(
 
 <dl> <dt>
 
-*pBufferSize* \[ in uscita\]
+*pBufferSize* \[ in, out\]
 </dt> <dd>
 
-Puntatore alla dimensione del buffer. Se *pbuffer* è **null**, questo parametro riceve le dimensioni del buffer richieste, in byte. Se *pbuffer* non è **null**, impostare questo parametro in modo che corrisponda alla dimensione del buffer, in byte. Nell'output il parametro riceve il numero di byte che sono stati copiati nel buffer. Questo valore può essere inferiore alla dimensione del buffer.
+Puntatore alla dimensione del buffer. Se *pBuffer* è **NULL,** questo parametro riceve le dimensioni del buffer richieste, in byte. Se *pBuffer* non è **NULL,** impostare questo parametro sulla dimensione del buffer, in byte. Nell'output, il parametro riceve il numero di byte copiati nel buffer. Questo valore potrebbe essere inferiore alle dimensioni del buffer.
 
 </dd> <dt>
 
-*pbuffer* \[ out\]
+*pBuffer* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una matrice di byte di dimensioni *pBufferSize* o **null**. Se questo parametro non è **null**, il buffer corrente viene copiato nella matrice. Se questo parametro è **null**, il parametro *pBufferSize* riceve le dimensioni del buffer richieste.
+Puntatore a una matrice di byte di dimensioni *pBufferSize* o **NULL.** Se questo parametro non è **NULL,** il buffer corrente viene copiato nella matrice. Se questo parametro è **NULL,** il *parametro pBufferSize* riceve le dimensioni del buffer richieste.
 
 </dd> </dl>
 
@@ -68,12 +68,12 @@ Restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                                           | Descrizione                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Gli esempi non vengono memorizzati nel buffer. Chiamare [**ISampleGrabber:: SetBufferSamples**](isamplegrabber-setbuffersamples.md).<br/> |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl>         | Il buffer specificato non è sufficientemente grande.<br/>                                                                         |
-| <dl> <dt>**\_puntatore E**</dt> </dl>             | Argomento puntatore **null** .<br/>                                                                                        |
-| <dl> <dt>**\_OK**</dt> </dl>                  | Esito positivo.<br/>                                                                                                          |
-| <dl> <dt>**VFW \_ E \_ non \_ connesso**</dt> </dl> | Il filtro non è connesso.<br/>                                                                                      |
-| <dl> <dt>**\_ \_ stato non corretto di VFW E \_**</dt> </dl>   | Il filtro non ha ancora ricevuto esempi. Per recapitare un esempio, eseguire o sospendere il grafo.<br/>                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>          | Gli esempi non vengono memorizzati nel buffer. Chiamare [**ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md).<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Il buffer specificato non è sufficientemente grande.<br/>                                                                         |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>             | Argomento del puntatore **NULL.**<br/>                                                                                        |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione completata.<br/>                                                                                                          |
+| <dl> <dt>**VFW \_ E \_ NON \_ CONNESSO**</dt> </dl> | Il filtro non è connesso.<br/>                                                                                      |
+| <dl> <dt>**VFW \_ E \_ STATO \_ ERRATO**</dt> </dl>   | Il filtro non ha ancora ricevuto esempi. Per distribuire un esempio, eseguire o sospendere il grafo.<br/>                         |
 
 
 
@@ -81,23 +81,23 @@ Restituisce uno dei valori seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Per attivare il buffering, chiamare [**ISampleGrabber:: SetBufferSamples**](isamplegrabber-setbuffersamples.md) con il valore **true**.
+Per attivare il buffering, chiamare [**ISampleGrabber::SetBufferSamples**](isamplegrabber-setbuffersamples.md) con il valore **TRUE.**
 
-Chiamare questo metodo due volte. Alla prima chiamata, impostare *pbuffer* su **null**. La dimensione del buffer viene restituita in *pBufferSize*. Quindi allocare una matrice e chiamare di nuovo il metodo. Alla seconda chiamata, passare le dimensioni della matrice in *pBufferSize* e passare l'indirizzo della matrice in *pbuffer*. Se la matrice non è sufficientemente grande, il metodo restituisce E \_ OutOfMemory.
+Chiamare questo metodo due volte. Alla prima chiamata impostare *pBuffer* su **NULL.** Le dimensioni del buffer vengono restituite in *pBufferSize.* Allocare quindi una matrice e chiamare di nuovo il metodo . Nella seconda chiamata, passare le dimensioni della matrice in *pBufferSize* e passare l'indirizzo della matrice in *pBuffer*. Se la matrice non è sufficientemente grande, il metodo restituisce E \_ OUTOFMEMORY.
 
-Il parametro *pbuffer* è tipizzato come puntatore **Long** , ma il contenuto del buffer dipende dal formato dei dati. Chiamare [**ISampleGrabber:: GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md) per ottenere il tipo di supporto del formato.
+Il *parametro pBuffer* è tipidato come **puntatore long,** ma il contenuto del buffer dipende dal formato dei dati. Chiamare [**ISampleGrabber::GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md) per ottenere il tipo di supporto del formato.
 
-Non chiamare questo metodo mentre è in esecuzione il grafico dei filtri. Durante l'esecuzione del grafico del filtro, il filtro Grabber di esempio sovrascrive il contenuto del buffer ogni volta che viene ricevuto un nuovo esempio. Il modo migliore per utilizzare questo metodo consiste nell'utilizzare la modalità "One-Shot", che interrompe il grafico dopo la ricezione del primo campione. Per impostare la modalità One-Shot, chiamare [**ISampleGrabber:: SetOneShot**](isamplegrabber-setoneshot.md).
+Non chiamare questo metodo mentre il grafico dei filtri è in esecuzione. Mentre il grafico dei filtri è in esecuzione, il filtro Sample Grabber sovrascrive il contenuto del buffer ogni volta che riceve un nuovo campione. Il modo migliore per usare questo metodo è usare la "modalità di esecuzione unica", che arresta il grafico dopo aver ricevuto il primo campione. Per impostare la modalità one-shot, chiamare [**ISampleGrabber::SetOneShot**](isamplegrabber-setoneshot.md).
 
-Il filtro non memorizza nel buffer gli esempi di preroll o gli esempi in cui il membro **dwStreamId** della struttura delle [**\_ \_ Proprietà SAMPLE2 di Am**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) è diverso da quello dei flussi di dati \_ \_ .
+Il filtro non esegue il buffer degli esempi di preroll o degli esempi in cui il membro **dwStreamId** della struttura [**AM \_ SAMPLE2 \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) è diverso da AM \_ STREAM \_ MEDIA.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -107,8 +107,8 @@ Il filtro non memorizza nel buffer gli esempi di preroll o gli esempi in cui il 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

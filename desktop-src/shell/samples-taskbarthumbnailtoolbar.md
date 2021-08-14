@@ -1,5 +1,5 @@
 ---
-description: Viene illustrata una barra degli strumenti dell'anteprima, un controllo attivo della barra degli strumenti incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
+description: Illustra una barra degli strumenti di anteprima, un controllo della barra degli strumenti attivo incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
 title: Esempio di barra degli strumenti di anteprima della barra delle applicazioni
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e61208f15772a43138e6cd7a38fd6327445bdfa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd16ee40bfb480b3e7eacef2bc4681e61fdb24ace1ac68985e2016ce11b7c0e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219630"
 ---
 # <a name="taskbar-thumbnail-toolbar-sample"></a>Esempio di barra degli strumenti di anteprima della barra delle applicazioni
 
-Viene illustrata una barra degli strumenti dell'anteprima, un controllo attivo della barra degli strumenti incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
+Illustra una barra degli strumenti di anteprima, un controllo della barra degli strumenti attivo incorporato nell'anteprima dell'anteprima di una finestra, usato per fornire l'accesso ai comandi chiave di una finestra senza fare in modo che l'utente ripristini o attivi la finestra dell'applicazione.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -31,11 +31,11 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-In questo esempio viene illustrato come fornire una semplice barra degli strumenti per un'anteprima dell'anteprima della barra delle applicazioni. La barra degli strumenti è costituita da tre pulsanti. Quando si fa clic su un pulsante, viene visualizzata una finestra per confermare che il pulsante è stato attivato. Vengono illustrate le API seguenti:
+Questo esempio illustra come fornire una semplice barra degli strumenti a un'anteprima dell'anteprima della barra delle applicazioni. La barra degli strumenti è costituita da tre pulsanti. Facendo clic su un pulsante viene visualizzata una finestra per confermare che il pulsante è stato attivato. Vengono illustrate le API seguenti:
 
--   [**All'ITaskbarList3:: ThumbBarAddButtons**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist3-thumbbaraddbuttons)
--   [**All'ITaskbarList3:: ThumbBarSetImageList**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist3-thumbbarsetimagelist)
--   Struttura [**ThumbButton**](/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-thumbbutton)
+-   [**ITaskbarList3::ThumbBarAddButtons**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist3-thumbbaraddbuttons)
+-   [**ITaskbarList3::ThumbBarSetImageList**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist3-thumbbarsetimagelist)
+-   [**Struttura THUMBBUTTON**](/windows/desktop/api/Shobjidl_core/ns-shobjidl_core-thumbbutton)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,34 +52,34 @@ In questo esempio viene illustrato come fornire una semplice barra degli strumen
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio TaskbarThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
+| GitHub  | [Esempio di TaskbarThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 Per compilare l'esempio dal prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **TaskbarThumbnailToolbar** .
+1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **TaskbarThumbnailToolbar.**
 2.  Immettere `msbuild ThumbnailToolbar.sln`.
 
-Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
+Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Esplora risorse e passare alla directory del progetto **TaskbarThumbnailToolbar** .
-2.  Fare doppio clic sull'icona per il file ThumbnailToolbar. sln per aprire il progetto in Visual Studio.
-3.  Scegliere **Compila soluzione** dal menu **Compila** .
+1.  Aprire Windows Explorer e passare alla directory **del progetto TaskbarThumbnailToolbar.**
+2.  Fare doppio clic sull'icona per il file ThumbnailToolbar.sln per aprire il progetto in Visual Studio.
+3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Passare alla directory che contiene il nuovo file eseguibile (ad esempio, `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` ), usando il prompt dei comandi o Esplora risorse.
+1.  Passare alla directory che contiene il nuovo file eseguibile , ad esempio , usando il prompt dei comandi `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` o Windows Explorer.
 
     -   Se si usa la riga di comando, immettere `ThumbnailToolbar.exe` .
-    -   Se si usa Esplora risorse, fare doppio clic sull'icona per ThumbnailToolbar.exe.
+    -   Se si usa Windows Explorer, fare doppio clic sull'icona per ThumbnailToolbar.exe.
 
-    Viene aperta una nuova finestra con un pulsante della barra delle applicazioni associato.
+    Verrà aperta una nuova finestra, con un pulsante della barra delle applicazioni associato.
 
-2.  Posizionare il puntatore del mouse sul pulsante della barra delle applicazioni di **ThumbnailToolbar** in modo che l'anteprima venga visualizzata. Fare clic su uno dei tre pulsanti (verde, giallo, rosso) visualizzato sulla barra degli strumenti dell'anteprima.
-3.  Scegliere **Esci** dal menu **file** della finestra per terminare il programma.
+2.  Passare il cursore sul pulsante **della barra delle applicazioni ThumbnailToolbar** in modo che l'anteprima sia visualizzata. Fare clic su uno dei tre pulsanti (verde, giallo, rosso) visualizzati nella barra degli strumenti dell'anteprima.
+3.  Scegliere **Esci** dal menu **File della** finestra per terminare il programma.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,6 +1,6 @@
 ---
-title: Costanti movimenti tocco di Windows (winuser. h)
-description: In questa sezione sono elencate le costanti utilizzate per i movimenti tocco di Windows.
+title: Windows Costanti dei movimenti tocco (Winuser.h)
+description: Questa sezione elenca le costanti usate per i Windows tocco.
 ms.assetid: C5C3C533-A781-47EF-8209-2D94A94C9097
 topic_type:
 - apiref
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/18/2020
-ms.openlocfilehash: be1d8fe9354c7160643dcefb2d35938453ad5b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e980619a4f0f2a0df83ebfbe2fb8e8a767ef5f988e2bb3b769bde64e714eb80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435227"
 ---
-# <a name="windows-touch-gestures-constants"></a>Costanti movimenti tocco di Windows
+# <a name="windows-touch-gestures-constants"></a>Windows Costanti dei movimenti tocco
 
-In questa sezione sono elencate le costanti utilizzate per i movimenti tocco di Windows.
+Questa sezione elenca le costanti usate per i Windows tocco.
 
 <dl> <dt>
 
@@ -31,7 +31,7 @@ In questa sezione sono elencate le costanti utilizzate per i movimenti tocco di 
 256
 </dt> <dt>
 
-Definisce il numero massimo di configurazioni di movimento che possono essere incluse in una singola chiamata a [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) o [**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig).
+Definisce il numero massimo di configurazioni dei movimenti che possono essere incluse in una singola chiamata a [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) [**o GetGestureConfig.**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig)
 
 </dt> </dl> </dd> </dl>
 
@@ -39,10 +39,10 @@ Definisce il numero massimo di configurazioni di movimento che possono essere in
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                  |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                  |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 ## <a name="see-also"></a>Vedi anche
 
-[**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig), [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig), [movimenti tocco di Windows](multi-touch-gestures.md)
+[**GetGestureConfig,**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig) [**SetGestureConfig,**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) [Windows movimenti tocco](multi-touch-gestures.md)

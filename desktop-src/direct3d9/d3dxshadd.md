@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7333d1803b9f7ea7b056ff78ffd053bd6086184b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bc61777ecd44fa1d48bb2b105f856ab13f62efdf8dd33c7e64c84afa12c6e88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524224"
 ---
 # <a name="d3dxshadd-function-d3dx9mathh"></a>Funzione D3DXSHAdd (D3dx9math.h)
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria lÊ + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

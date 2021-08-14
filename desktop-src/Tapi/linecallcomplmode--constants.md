@@ -1,23 +1,23 @@
 ---
-description: Le \_ costanti del flag di bit LINECALLCOMPLMODE descrivono i diversi modi in cui è possibile completare una chiamata.
+description: Le costanti del flag di bit LINECALLCOMPLMODE \_ descrivono diversi modi in cui è possibile completare una chiamata.
 ms.assetid: 68f755a1-586b-4c5b-b8e8-c8b40eb71685
-title: Costanti LINECALLCOMPLMODE_ (TAPI. h)
+title: LINECALLCOMPLMODE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 373a66b6ce13b7bfba00303bea824f542bf0016a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d43f76c9b8012f9ecb60c6b0ffd787d5a0bad87794eb833cc4095c276ba983f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761755"
 ---
-# <a name="linecallcomplmode_-constants"></a>\_Costanti LINECALLCOMPLMODE
+# <a name="linecallcomplmode_-constants"></a>Costanti LINECALLCOMPLMODE \_
 
-Le costanti del flag di bit **LINECALLCOMPLMODE \_** descrivono i diversi modi in cui è possibile completare una chiamata.
+Le costanti del flag di bit **LINECALLCOMPLMODE \_** descrivono diversi modi in cui è possibile completare una chiamata.
 
 <dl> <dt>
 
-<span id="LINECALLCOMPLMODE_CALLBACK"></span><span id="linecallcomplmode_callback"></span>**\_callback LINECALLCOMPLMODE**
+<span id="LINECALLCOMPLMODE_CALLBACK"></span><span id="linecallcomplmode_callback"></span>**LINECALLCOMPLMODE \_ CALLBACK**
 </dt> <dd> <dl> <dt>
 
 
@@ -27,39 +27,39 @@ Richiede alla stazione chiamata di restituire la chiamata quando torna inattiva.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLCOMPLMODE_CAMPON"></span><span id="linecallcomplmode_campon"></span>**\_campo LINECALLCOMPLMODE**
+<span id="LINECALLCOMPLMODE_CAMPON"></span><span id="linecallcomplmode_campon"></span>**LINECALLCOMPLMODE \_ CAMPON**
 </dt> <dd> <dl> <dt>
 
 
 
-Accoda la chiamata fino a quando non è possibile completare la chiamata.
+Accoda la chiamata fino al completamento della chiamata.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLCOMPLMODE_INTRUDE"></span><span id="linecallcomplmode_intrude"></span>**LINECALLCOMPLMODE \_ intrusione**
+<span id="LINECALLCOMPLMODE_INTRUDE"></span><span id="linecallcomplmode_intrude"></span>**LINECALLCOMPLMODE \_ INTRUDE**
 </dt> <dd> <dl> <dt>
 
 
 
-Aggiunge l'applicazione alla chiamata esistente nella stazione chiamata (Barge in).
+Aggiunge l'applicazione alla chiamata esistente alla stazione chiamata (barge in).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLCOMPLMODE_MESSAGE"></span><span id="linecallcomplmode_message"></span>**\_messaggio LINECALLCOMPLMODE**
+<span id="LINECALLCOMPLMODE_MESSAGE"></span><span id="linecallcomplmode_message"></span>**LINECALLCOMPLMODE \_ MESSAGE**
 </dt> <dd> <dl> <dt>
 
 
 
-Lascia un breve messaggio predefinito per la stazione chiamata (lasciare la chiamata a Word). Il messaggio da inviare viene specificato separatamente.
+Lascia un breve messaggio predefinito per la stazione chiamata (Leave Word Calling). Il messaggio da inviare viene specificato separatamente.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Nessuna estensibilità. Tutti i 32 bit sono riservati.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

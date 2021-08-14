@@ -1,11 +1,11 @@
 ---
-title: Metodo Controls. Stop
-description: Il metodo Stop interrompe la riproduzione dell'elemento multimediale. | Metodo Controls. Stop
+title: Metodo Controls.stop
+description: Il metodo stop arresta la riproduzione dell'elemento multimediale. | Metodo Controls.stop
 ms.assetid: ace95fde-9c94-4737-88f2-94321cbc687c
 keywords:
-- arresta il metodo Windows Media Player
-- Metodo Stop Media Player Windows, classe Controls
-- Classe Controls Media Player Windows, metodo Stop
+- Metodo stop Windows Media Player
+- Metodo stop Windows Media Player , classe Controls
+- Classe Controls Windows Media Player, metodo stop
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e1ffc581fffbce0a341559e82c6bd196f712149
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b882f462903c2c5f75a3655cd26b927e7439043828dad41fcce7d0e64e4ce812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580160"
 ---
-# <a name="controlsstop-method"></a>Metodo Controls. Stop
+# <a name="controlsstop-method"></a>Metodo Controls.stop
 
-Il metodo **Stop** interrompe la riproduzione dell'elemento multimediale.
+Il **metodo stop** arresta la riproduzione dell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +46,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo fa in modo che Windows Media Player rilasciare tutte le risorse di sistema utilizzate, ad esempio il dispositivo audio. L'elemento multimediale corrente, tuttavia, non viene rilasciato.
+Questo metodo Windows Media Player rilasciare tutte le risorse di sistema in uso, ad esempio il dispositivo audio. L'elemento multimediale corrente, tuttavia, non viene rilasciato.
 
-Quando il lettore viene arrestato, la traccia viene ricaricata fino all'inizio. La chiamata di **Play** inizierà la riproduzione della clip dall'inizio. Per arrestare un'operazione di riproduzione senza modificare la posizione corrente, usare il metodo **pause** .
+Quando il giocatore viene arrestato, la traccia si riavvolge all'inizio. La **chiamata di** play inizierà quindi la riproduzione del clip dall'inizio. Per arrestare un'operazione di riproduzione senza modificare la posizione corrente, usare il **metodo pause.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento BUTTON HTML che utilizza **Stop** per arrestare la riproduzione. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **stop per** arrestare la riproduzione. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -76,7 +76,7 @@ Nell'esempio seguente viene creato un elemento BUTTON HTML che utilizza **Stop**
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -88,13 +88,13 @@ Nell'esempio seguente viene creato un elemento BUTTON HTML che utilizza **Stop**
 [**Oggetto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controlli. Next**](controls-next.md)
+[**Controls.next**](controls-next.md)
 </dt> <dt>
 
-[**Controls. pause**](controls-pause.md)
+[**Controls.pause**](controls-pause.md)
 </dt> <dt>
 
-[**Controlli. Previous**](controls-previous.md)
+[**Controls.previous**](controls-previous.md)
 </dt> </dl>
 
  

@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d57fcc71f912fe1ee896ec893ea8f556eeb2277
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f83d74c8c03f8b08936c3693c77e211cd87a8b42c2d020c26ee5133406a2a042
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746209"
 ---
-# <a name="iwmplibraryservicesgetlibrarybytype-method"></a>Metodo IWMPLibraryServices:: getLibraryByType
+# <a name="iwmplibraryservicesgetlibrarybytype-method"></a>Metodo IWMPLibraryServices::getLibraryByType
 
-Il metodo **getLibraryByType** restituisce un'interfaccia **IWMPLibrary** che rappresenta la libreria con il tipo e l'indice specificati.
+Il **metodo getLibraryByType** restituisce **un'interfaccia IWMPLibrary** che rappresenta la libreria con il tipo e l'indice specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,27 +55,27 @@ Implements IWMPLibraryServices.getLibraryByType
 
 <dl> <dt>
 
-*wmplt* \[ in\]
+*wmplt* \[ Pollici\]
 </dt> <dd>
 
-Valore dell'enumerazione **wmplib. WMPLibraryType** che specifica il tipo di libreria da recuperare.
+Valore **dell'enumerazione WMPLib.WMPLibraryType** che specifica il tipo di libreria da recuperare.
 
 </dd> <dt>
 
-*lIndex* \[ in\]
+*lIndex* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che rappresenta l'indice della libreria da recuperare.
+**System.Int32** che rappresenta l'indice della libreria da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPLibrary** per la libreria restituita.
+Interfaccia **WMPLib.IWMPLibrary** per la libreria restituita.
 
 ## <a name="remarks"></a>Commenti
 
-Esiste una sola libreria locale e le librerie di dischi sono disponibili solo sui CD di dati e i DVD che contengono contenuto multimediale.
+Esiste una sola libreria locale e le librerie dei dischi sono disponibili solo per i CD di dati e i DVD che contengono contenuto multimediale.
 
 ## <a name="requirements"></a>Requisiti
 

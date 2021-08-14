@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_CALLBACK delegate'
-title: Delegato JET_CALLBACK
+description: 'Altre informazioni su: JET_CALLBACK delegato'
+title: JET_CALLBACK delegato
 TOCTitle: JET_CALLBACK delegate
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_CALLBACK
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_callback(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 617cbefba047f822b338627a782be7e016c2a16f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30ba54414bcc7043edb06300b7bda31e40b838cbc6f78f32171f26c1e37684c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487307"
 ---
-# <a name="jet_callback-delegate"></a>Delegato JET_CALLBACK
+# <a name="jet_callback-delegate"></a>JET_CALLBACK delegato
 
-Funzione di callback multifunzione utilizzata dal motore di database per informare l'applicazione di un evento che implica la deframmentazione in linea e le notifiche dello stato del cursore.
+Funzione di callback multivalore utilizzata dal motore di database per informare l'applicazione di un evento che interessa la deframmentazione online e le notifiche sullo stato del cursore.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,65 +76,65 @@ public delegate JET_err JET_CALLBACK(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione per cui viene eseguito il callback.
+    Sessione per la quale viene eseguito il callback.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Database per il quale viene eseguito il callback.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore per il quale viene eseguito il callback.
 
 <!-- end list -->
 
   - cbtyp  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
     
-    Operazione per la quale viene eseguito il callback.
+    Operazione per cui viene eseguito il callback.
 
 <!-- end list -->
 
   - arg1  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
-    Primo argomento specifico della richiamata.
+    Primo argomento specifico del callback.
 
 <!-- end list -->
 
   - arg2  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
-    Secondo argomento specifico della richiamata.
+    Secondo argomento specifico del callback.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Contesto di callback.
 
 <!-- end list -->
 
   - unused  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Questo parametro non viene usato.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

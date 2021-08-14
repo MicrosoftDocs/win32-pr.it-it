@@ -1,65 +1,65 @@
 ---
-title: Comunicazione tra client NAP e componenti lato server
-description: Comunicazione tra client NAP e componenti lato server
+title: Comunicazione tra client e componenti lato server di Protezione accesso alla rete
+description: Comunicazione tra client e componenti lato server di Protezione accesso alla rete
 ms.assetid: 7658cf0c-607b-44ba-b579-72082d0d1f51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07597ac80a1e02c4f8528b3c99050aefb5963988
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f2d3c390aa8bdc8cc80eec8834dd1c250d523737d63963b4b9370877ffa46329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104396679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117799078"
 ---
-# <a name="nap-client-and-server-side-component-communication"></a>Comunicazione tra client NAP e componenti lato server
+# <a name="nap-client-and-server-side-component-communication"></a>Comunicazione tra client e componenti lato server di Protezione accesso alla rete
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
- 
+ 
 
-Il componente agente NAP è in grado di comunicare con il componente server di amministrazione NAP tramite il processo seguente:
+Il componente Agente Protezione accesso alla rete può comunicare con il componente Server di amministrazione protezione accesso alla rete tramite il processo seguente:
 
-1.  L'agente NAP passa il SSoH di protezione accesso alla rete EC.
-2.  NAP EC passa il SSoH di protezione accesso alla rete.
-3.  NAP ES passa il SSoH al servizio Server dei criteri di rete (NPS).
-4.  Il servizio NPS passa il SSoH al server di amministrazione NAP.
+1.  L'agente protezione accesso alla rete passa SSoH all'ec di Protezione accesso alla rete.
+2.  L'ec di Protezione accesso alla rete passa SSoH al sistema ES di Protezione accesso alla rete.
+3.  Il servizio Protezione accesso alla rete passa SSoH al servizio Server dei criteri di rete.
+4.  Il servizio Server dei criteri di rete passa SSoH al server di amministrazione di Protezione accesso alla rete.
 
-Un SHA può comunicare con l'integrità di sistema corrispondente tramite il processo seguente:
+Un'sha può comunicare con il valore SHV corrispondente tramite il processo seguente:
 
-1.  SHA passa il rapporto di integrità all'agente NAP.
-2.  L'agente NAP passa il rapporto di integrità, contenuto all'interno di SSoH, alla rete di protezione accesso alla rete (EC).
-3.  La protezione accesso alla rete EC passa il rapporto di integrità al NAP.
-4.  NAP ES passa il rapporto di integrità al server di amministrazione NAP.
-5.  Il server di amministrazione NAP passa il rapporto di integrità al servizio di convalida dell'integrità.
+1.  L'SHA passa il soH all'agente protezione accesso alla rete.
+2.  L'agente di Protezione accesso alla rete passa il file SoH, contenuto all'interno di SSoH, all'ec di Protezione accesso alla rete.
+3.  L'entità di protezione accesso alla rete passa il soH al servizio Protezione accesso alla rete.
+4.  Il servizio Protezione accesso alla rete passa il soH al server di amministrazione di Protezione accesso alla rete.
+5.  Il server di amministrazione di Protezione accesso alla rete passa il soh all'istanza shv.
 
-Nella figura seguente viene illustrato il processo di comunicazione tra i componenti client NAP e i componenti lato server di NAP.
+La figura seguente mostra il processo di comunicazione tra i componenti client di Protezione accesso alla rete e i componenti lato server di Protezione accesso alla rete.
 
-![architettura della comunicazione da client a server nella piattaforma NAP](images/nap-client-to-server-comm.png)
+![architettura della comunicazione client-server nella piattaforma nap](images/nap-client-to-server-comm.png)
 
-Il server di amministrazione NAP è in grado di comunicare con l'agente NAP tramite il processo seguente:
+Il server di amministrazione di Protezione accesso alla rete può comunicare con l'agente protezione accesso alla rete tramite il processo seguente:
 
-1.  Il server di amministrazione NAP passa il SoHRs al servizio Server dei criteri di rete.
-2.  Il servizio NPS passa il risposta al rapporto di protezione accesso alla rete.
-3.  NAP ES passa il risposta al rapporto di protezione accesso alla rete EC.
-4.  Il risposta al rapporto di protezione accesso alla rete EC passa l'agente protezione accesso alla rete.
+1.  Il server di amministrazione di Protezione accesso alla rete passa i soHR al servizio Server dei criteri di rete.
+2.  Il servizio Server dei criteri di rete passa SSoHR al servizio Protezione accesso alla rete.
+3.  L'ES di Protezione accesso alla rete passa SSoHR all'ec di Protezione accesso alla rete.
+4.  Nap EC passa SSoHR all'agente protezione accesso alla rete.
 
-Il servizio di convalida dell'integrità di sistema può comunicare con l'SHA corrispondente tramite il processo seguente:
+ShV può comunicare con l'SHA corrispondente tramite il processo seguente:
 
-1.  Il servizio di convalida dell'integrità di sistema passa il relativo SoHR al server di amministrazione NAP.
-2.  Il server di amministrazione NAP passa il SoHR al servizio Server dei criteri di rete.
-3.  Il servizio Server dei criteri di rete passa il SoHR, contenuto all'interno di risposta al rapporto, all'ES NAP.
-4.  NAP ES passa il SoHR di protezione accesso alla rete EC.
-5.  Il SoHR di protezione accesso alla rete EC passa l'agente protezione accesso alla rete.
-6.  L'agente NAP passa il SoHR all'SHA.
+1.  ShV passa il proprio SoHR al server di amministrazione di Protezione accesso alla rete.
+2.  Il server di amministrazione di Protezione accesso alla rete passa soHR al servizio Server dei criteri di rete.
+3.  Il servizio Server dei criteri di rete passa il soHR, contenuto all'interno di SSoHR, al sistema ES di Protezione accesso alla rete.
+4.  L'ES di Protezione accesso alla rete passa la sohr all'ec di Protezione accesso alla rete.
+5.  Nap EC passa il SoHR all'agente protezione accesso alla rete.
+6.  L'agente protezione accesso alla rete passa SoHR all'SHA.
 
-Nella figura seguente viene illustrato il processo di comunicazione tra i componenti lato server di NAP e i componenti client di protezione accesso alla rete.
+La figura seguente mostra il processo di comunicazione tra i componenti lato server di Protezione accesso alla rete e i componenti client di Protezione accesso alla rete.
 
-![architettura della comunicazione da server a client nella piattaforma NAP](images/nap-server-to-client-comm.png)
+![architettura della comunicazione da server a client nella piattaforma nap](images/nap-server-to-client-comm.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: Questo argomento illustra come ridimensionare un IWICBitmapSource usando il componente IWICBitmapScaler.
+description: Questo argomento illustra come ridimensionare un oggetto IWICBitmapSource usando il componente IWICBitmapScaler.
 ms.assetid: d2c65c9b-6f52-46f7-935d-0c582ca83867
 title: Come ridimensionare un'origine bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 737f72014929065bc63ec9c6021b05e38799d06e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2771ed13c23fdb3d74cf9c24899bea7a355efefcb5e541ac21aff53f372ded0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439694"
 ---
 # <a name="how-to-scale-a-bitmap-source"></a>Come ridimensionare un'origine bitmap
 
-Questo argomento illustra come ridimensionare un [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) usando il componente [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) .
+Questo argomento illustra come ridimensionare un [**oggetto IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) usando il [**componente IWICBitmapScaler.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler)
 
 Per ridimensionare un'origine bitmap
 
-1.  Creare un oggetto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare oggetti di Windows Imaging Component (WIC).
+1.  Creare un [**oggetto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) per creare Windows oggetti WIC (Imaging Component).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Per ridimensionare un'origine bitmap
 
     
 
-2.  Usare il metodo [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
+2.  Usare il [**metodo CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) per creare un [**oggetto IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) da un file di immagine.
 
     ```C++
     HRESULT hr = S_OK;
@@ -52,7 +52,7 @@ Per ridimensionare un'origine bitmap
 
     
 
-3.  Ottiene il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
+3.  Ottenere il primo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) dell'immagine.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -64,9 +64,9 @@ Per ridimensionare un'origine bitmap
 
     
 
-    Il formato del file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo frame ( `0` ). Per i formati di immagine con più frame, vedere [How to retrieve the Frames of an image to](-wic-bitmapsources-howto-retrieveimageframes.md) accessing Each frame of the image.
+    Il formato di file JPEG supporta solo un singolo frame. Poiché il file in questo esempio è un file JPEG, viene usato il primo frame ( `0` ). Per i formati di immagine con più fotogrammi, vedere How to Retrieve the Frames of an Image for accessing each frame of the image [(Come](-wic-bitmapsources-howto-retrieveimageframes.md) recuperare i fotogrammi di un'immagine per accedere a ogni fotogramma dell'immagine).
 
-4.  Creare il [**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) da usare per il ridimensionamento dell'immagine.
+4.  Creare [**L'oggetto IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) da usare per il ridimensionamento dell'immagine.
 
     ```C++
     // Create the scaler.
@@ -78,7 +78,7 @@ Per ridimensionare un'origine bitmap
 
     
 
-5.  Inizializzare l'oggetto scaler con i dati dell'immagine della cornice bitmap a metà delle dimensioni.
+5.  Inizializzare l'oggetto scaler con i dati dell'immagine del frame bitmap a metà delle dimensioni.
 
     ```C++
     // Initialize the scaler to half the size of the original source.
@@ -94,9 +94,9 @@ Per ridimensionare un'origine bitmap
 
     
 
-6.  Creare o elaborare l'origine bitmap ridimensionata.
+6.  Disegnare o elaborare l'origine bitmap ridimensionata.
 
-    La figura seguente illustra il ridimensionamento della creazione di immagini. L'immagine originale a sinistra è 200 x 130 pixel. L'immagine a destra è l'immagine originale ridimensionata alla metà della dimensione.
+    Nella figura seguente viene illustrato il ridimensionamento dell'immagine. L'immagine originale a sinistra è 200 x 130 pixel. L'immagine a destra è l'immagine originale ridimensionata a metà delle dimensioni.
 
     ![illustrazione che mostra il ridimensionamento di un'immagine a dimensioni inferiori](graphics/scaledregion.png)
 

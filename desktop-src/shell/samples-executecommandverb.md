@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come implementare un verbo della shell utilizzando il metodo ExecuteCommand.
+description: Illustra come implementare un verbo shell usando il metodo ExecuteCommand.
 title: Esempio di verbo del comando Execute
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 2deeb63fc6648d07b3d870888d6d2eabc6fb0490
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e32b472d63b9d2d779c97b64833f354e7d4d2eaed034d3a213ae4e101f7beb3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858270"
 ---
 # <a name="execute-command-verb-sample"></a>Esempio di verbo del comando Execute
 
-Viene illustrato come implementare un verbo della shell utilizzando il metodo ExecuteCommand.
+Illustra come implementare un verbo shell usando il metodo ExecuteCommand.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -30,7 +30,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-Questo metodo è preferibile per le implementazioni di verbi perché offre la massima flessibilità, è semplice e supporta l'attivazione out-of-process. In questo esempio viene implementato un oggetto server locale Component Object Model (COM) autonomo, ma si prevede che l'implementazione del verbo verrà integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale deve registrare un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se disponibile.
+Questo metodo è preferibile per le implementazioni verbo perché offre la massima flessibilità, è semplice e supporta l'attivazione out-of-process. In questo esempio viene implementato un oggetto com (Server Component Object Model) locale autonomo, ma è previsto che l'implementazione del verbo sia integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale deve registrare un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se presente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,28 +47,28 @@ Questo metodo è preferibile per le implementazioni di verbi perché offre la ma
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio ExecuteCommandVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/ExecuteCommandVerb) |
+| GitHub  | [Esempio di ExecuteCommandVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/ExecuteCommandVerb) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
 Per compilare l'esempio dal prompt dei comandi:
 
-1.  Aprire la finestra del prompt dei comandi e passare alla directory del progetto **ExecuteCommandVerb** .
+1.  Aprire la finestra del prompt dei comandi e passare alla directory **del progetto ExecuteCommandVerb.**
 2.  Immettere `msbuild ExecuteCommand.sln`.
 
-Per compilare l'esempio usando Microsoft Visual Studio (scelta consigliata):
+Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 
-1.  Aprire Esplora risorse e passare alla directory del progetto **ExecuteCommandVerb** .
-2.  Fare doppio clic sull'icona per il file ExecuteCommand. sln per aprire il progetto in Visual Studio.
-3.  Scegliere **Compila soluzione** dal menu **Compila** .
+1.  Aprire Windows Explorer e passare alla directory **del progetto ExecuteCommandVerb.**
+2.  Fare doppio clic sull'icona del file ExecuteCommand.sln per aprire il progetto in Visual Studio.
+3.  Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1.  Passare alla directory contenente il nuovo eseguibile, utilizzando il prompt dei comandi o Esplora risorse.
-2.  Nella riga di comando, immettere `ExecuteCommand.exe` . In alternativa, in Esplora risorse fare doppio clic sull'icona per ExecuteCommand.exe.
-3.  Seguire le istruzioni riportate nella finestra di dialogo visualizzata
+1.  Passare alla directory che contiene il nuovo eseguibile, usando il prompt dei comandi o Windows Explorer.
+2.  Nella riga di comando immettere `ExecuteCommand.exe` . In alternativa, in Windows Explorer fare doppio clic sull'icona per ExecuteCommand.exe.
+3.  Seguire le istruzioni nella finestra di dialogo visualizzata
 
  
 

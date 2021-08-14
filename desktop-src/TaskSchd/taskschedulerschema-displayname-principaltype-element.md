@@ -1,6 +1,6 @@
 ---
 title: Elemento DisplayName (principalType)
-description: Specifica il nome dell'entità visualizzata nell'interfaccia utente di Utilità di pianificazione.
+description: Specifica il nome dell'entità visualizzata nell'interfaccia Utilità di pianificazione interfaccia utente.
 ms.assetid: a8640cc9-fc16-4e73-9f0c-1ebff338fb84
 keywords:
 - Elemento DisplayName Utilità di pianificazione
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e8ef310869ea8558bca231e866ddeefc0dc35944
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ff653a2b2991622b2446bcc0fc74d7063319c2bb6b45556313034a3afb42480
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356914"
 ---
 # <a name="displayname-principaltype-element"></a>Elemento DisplayName (principalType)
 
-Specifica il nome dell'entità visualizzata nell'interfaccia utente di Utilità di pianificazione.
+Specifica il nome dell'entità visualizzata nell'interfaccia Utilità di pianificazione interfaccia utente.
 
 ``` syntax
 <xs:element name="DisplayName"
@@ -30,7 +30,7 @@ Specifica il nome dell'entità visualizzata nell'interfaccia utente di Utilità 
  />
 ```
 
-L'elemento **DisplayName** è definito dal tipo complesso [**PrincipalType**](taskschedulerschema-principaltype-complextype.md) .
+**L'elemento DisplayName** è definito dal [**tipo complesso principalType.**](taskschedulerschema-principaltype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **DisplayName** è definito dal tipo complesso [**PrincipalType**](ta
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il nome visualizzato dell'entità viene specificato utilizzando la proprietà [**Principal. DisplayName**](principal-displayname.md) .
+Per lo sviluppo di script, il nome visualizzato dell'entità viene specificato usando la [**proprietà Principal.DisplayName.**](principal-displayname.md)
 
-Per lo sviluppo in C++, il nome visualizzato dell'entità viene specificato tramite la proprietà [**IPrincipal::D**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname) la proprietà.
+Per lo sviluppo in C++, il nome visualizzato dell'entità viene specificato usando la proprietà [**IPrincipal::D isplayName.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname)
 
 ## <a name="examples"></a>Esempio
 
@@ -62,7 +62,7 @@ Nel codice XML seguente viene definito un oggetto utilizzando un identificatore 
 
 
 
-Il codice XML seguente definisce un'entità usando un identificatore utente e un nome visualizzato.
+Nel codice XML seguente viene definita un'entità utilizzando un identificatore utente e un nome visualizzato.
 
 
 ```XML
@@ -81,8 +81,8 @@ Il codice XML seguente definisce un'entità usando un identificatore utente e un
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

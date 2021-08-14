@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3922dd71b70ace579fa4b5f2318776779afdfa4e
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: cf55584aafd5c73ee3ec2b756b59054e8aabaaf4cf5974a09dd11d3b4f40b655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504189"
 ---
-# <a name="cdn_typechange-notification-code"></a>Codice di notifica TYPECHANGE della rete CDN \_
+# <a name="cdn_typechange-notification-code"></a>\_rete CDN Codice di notifica TYPECHANGE
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, le  **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
-Inviato da una finestra  di **dialogo** Apri o Salva con nome di tipo Esplora risorse quando l'utente seleziona un nuovo tipo di file dalla casella combinata dei tipi di file.
+Inviato da una  finestra  di dialogo Apri o Salva con nome di tipo Esplora risorse quando l'utente seleziona un nuovo tipo di file dalla casella combinata dei tipi di file.
 
 La procedura hook [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) riceve questo messaggio sotto forma di messaggio [**WM \_ NOTIFY.**](../controls/wm-notify.md)
 
@@ -53,7 +53,7 @@ Questo parametro non viene usato.
 
 Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 
-La [**struttura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di **codice** indica il messaggio di notifica **\_ TYPECHANGE della rete CDN.**
+La [**struttura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di **codice** indica rete CDN messaggio di **notifica \_ TYPECHANGE.**
 
 La [**struttura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene anche un puntatore a una struttura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) il cui membro **nFilterIndex** indica l'indice in base uno del filtro del tipo di file appena selezionato.
 

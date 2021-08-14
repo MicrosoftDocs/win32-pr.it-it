@@ -24,12 +24,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 91004ca276140271e8d73c3fc226e83c4e03d1fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09efeac38babb057621cb6f25d14d3a631c12242e91982ae3ab9e79570416be5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118395347"
 ---
 # <a name="cswitch-class"></a>Classe CSwitch
 
@@ -60,26 +60,26 @@ class CSwitch : Thread_V2
 
 ## <a name="members"></a>Members
 
-La classe **Cswitch** dispone di questi tipi di membri:
+La **classe CSwitch** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Cswitch** dispone di queste proprietà.
+La **classe CSwitch** ha queste proprietà.
 
 <dl> <dt>
 
 **NewThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Format ("x")
+Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Nuovo ID thread dopo l'opzione.
@@ -95,23 +95,23 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Priorità thread del nuovo thread.
+Priorità del thread del nuovo thread.
 
 </dd> <dt>
 
 **NewThreadWaitTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (11), Format ("x")
+Qualificatori: WmiDataId(11), Format("x")
 </dt> </dl>
 
 Tempo di attesa per il nuovo thread.
@@ -121,13 +121,13 @@ Tempo di attesa per il nuovo thread.
 **OldThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), Format ("x")
+Qualificatori: WmiDataId(2), Format("x")
 </dt> </dl>
 
 ID thread precedente.
@@ -143,7 +143,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
 Priorità del thread precedente.
@@ -159,10 +159,10 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (9)
+Qualificatori: WmiDataId(9)
 </dt> </dl>
 
-Stato del thread precedente. Di seguito sono riportati i valori di stato possibili:
+Stato del thread precedente. Di seguito sono riportati i possibili valori di stato:
 
 | State | Descrizione                                   |
 |-------|-----------------------------------------------|
@@ -190,7 +190,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (10), Format ("x")
+Qualificatori: WmiDataId(10), Format("x")
 </dt> </dl>
 
 Tempo di attesa ideale del thread precedente.
@@ -206,7 +206,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (8)
+Qualificatori: WmiDataId(8)
 </dt> </dl>
 
 Modalità di attesa per il thread precedente. Di seguito sono indicati i valori possibili:
@@ -214,7 +214,7 @@ Modalità di attesa per il thread precedente. Di seguito sono indicati i valori 
 | State | Descrizione |
 |-------|-------------|
 | 0     | KernelMode  |
-| 1     | UserMode    |
+| 1     | Usermode    |
 
 
 
@@ -231,16 +231,16 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7)
+Qualificatori: WmiDataId(7)
 </dt> </dl>
 
-Motivo dell'attesa per il thread precedente. Di seguito sono indicati i valori possibili:
+Motivo di attesa per il thread precedente. Di seguito sono indicati i valori possibili:
 
 | State | Descrizione       |
 |-------|-------------------|
 | 0     | Executive         |
 | 1     | FreePage          |
-| 2     | Inizio PageIn            |
+| 2     | PageIn            |
 | 3     | PoolAllocation    |
 | 4     | DelayExecution    |
 | 5     | Suspended         |
@@ -253,7 +253,7 @@ Motivo dell'attesa per il thread precedente. Di seguito sono indicati i valori p
 | 12    | WrSuspended       |
 | 13    | WrUserRequest     |
 | 14    | WrEventPair       |
-| 15    | WrQueue           |
+| 15    | Coda Wr           |
 | 16    | WrLpcReceive      |
 | 17    | WrLpcReply        |
 | 18    | WrVirtualMemory   |
@@ -286,29 +286,29 @@ Motivo dell'attesa per il thread precedente. Di seguito sono indicati i valori p
 **PreviousCState**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5)
+Qualificatori: WmiDataId(5)
 </dt> </dl>
 
-Indice dello stato C utilizzato per ultimo dal processore. Un valore pari a 0 rappresenta lo stato di inattività più chiaro con valori più alti che rappresentano stati C più profondi.
+Indice dello stato C utilizzato per l'ultima volta dal processore. Il valore 0 rappresenta lo stato di inattività più leggero con valori più elevati che rappresentano stati C più approfonditi.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (12)
+Qualificatori: WmiDataId(12)
 </dt> </dl>
 
 Riservato.
@@ -324,7 +324,7 @@ Tipo di dati: **sint8**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
 Non usato.
@@ -341,8 +341,8 @@ Questi eventi producono un volume elevato di eventi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -353,7 +353,7 @@ Questi eventi producono un volume elevato di eventi.
 [**Thread**](thread.md)
 </dt> <dt>
 
-[**Thread \_ v2**](thread-v2.md)
+[**Thread \_ V2**](thread-v2.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Si verifica prima che l'analizzatore input penna aggiunga un oggetto IContextLink tra due oggetti IContextNode.
+description: Si verifica prima dell'aggiunta di un oggetto IContextLink da parte dell'analizzatore input penna tra due oggetti IContextNode.
 ms.assetid: ec56cb8e-5154-45ee-911d-e2a240d19dc3
-title: 'Evento _IAnalysisProxyEvents:: ContextNodeLinkAdding (IACom. h)'
+title: _IAnalysisProxyEvents::ContextNodeLinkAdding (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 341c551064869532e8b51ddecdbe1d5a78878abd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1d100d4ecb4caa6fb7230afd3d4ae6572466ae86855ac9bd28155b6b181cdd5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452156"
 ---
-# <a name="_ianalysisproxyeventscontextnodelinkadding-event"></a>\_Evento IAnalysisProxyEvents:: ContextNodeLinkAdding
+# <a name="_ianalysisproxyeventscontextnodelinkadding-event"></a>\_Evento IAnalysisProxyEvents::ContextNodeLinkAdding
 
-Si verifica prima che l'analizzatore input penna aggiunga un oggetto [**IContextLink**](icontextlink.md) tra due oggetti [**IContextNode**](icontextnode.md) .
+Si verifica prima dell'aggiunta di un [**oggetto IContextLink**](icontextlink.md) da parte dell'analizzatore input penna tra due [**oggetti IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ HRESULT ContextNodeLinkAdding(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ in\]
+*pInkAnalyzer* \[ Pollici\]
 </dt> <dd>
 
-[**IInkAnalyzer**](iinkanalyzer.md) che aggiunge il collegamento.
+Oggetto [**IInkAnalyzer che aggiunge**](iinkanalyzer.md) il collegamento.
 
 </dd> <dt>
 
-*pContextLinkToBeAdded* \[ in\]
+*pContextLinkToBeAdded* \[ Pollici\]
 </dt> <dd>
 
 Oggetto [**IContextLink**](icontextlink.md) da aggiungere.
@@ -56,13 +56,13 @@ Oggetto [**IContextLink**](icontextlink.md) da aggiungere.
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Commenti
 
-Usare questo evento quando l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer**](iinkanalyzer.md). Questo evento si verifica durante la fase di riconciliazione dell'analisi dell'input penna o in risposta a un metodo dell'analizzatore di input penna che aggiunge un nuovo [**IContextLink**](icontextlink.md) a un [**IContextNode**](icontextnode.md).
+Usare questo evento quando l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer.**](iinkanalyzer.md) Questo evento si verifica durante la fase di riconciliazione dell'analisi dell'input penna o in risposta a un metodo dell'analizzatore input penna che aggiunge un nuovo [**IContextLink**](icontextlink.md) a [**un oggetto IContextNode**](icontextnode.md).
 
-Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer**](iinkanalyzer.md), vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con](data-proxy-with-ink-analysis.md)Analisi input penna .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -93,13 +93,13 @@ Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**
 [**IContextLink**](icontextlink.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Metodo IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Metodo IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Metodo IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

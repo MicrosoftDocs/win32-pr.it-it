@@ -4,18 +4,18 @@ description: Fornisce una designazione univoca di un oggetto, ad esempio un'inte
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 09/09/2019
-ms.openlocfilehash: 95d2d420502a5d92af64c902ffa82c709639d872
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 31ff8eb22a234020e0da5b5ebb5799d5ddb0c8d1dca7bc094394f79a5ceb0c0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104117177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925948"
 ---
-# <a name="uuid-structure"></a>UUID (struttura)
+# <a name="uuid-structure"></a>Struttura UUID
 
-La struttura **UUID** definisce un identificatore univoco universale (UUID). Un **UUID** fornisce una designazione univoca di un oggetto, ad esempio un'interfaccia, un vettore del punto di ingresso di gestione o un oggetto client.
+La **struttura UUID** definisce un UUID (Universally Unique Identifier). Un **UUID fornisce** una designazione univoca di un oggetto, ad esempio un'interfaccia, un vettore del punto di ingresso di gestione o un oggetto client.
 
-La struttura **UUID** è un `typedef` sinonimo della struttura [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) .
+La **struttura UUID** è un sinonimo di `typedef` "d" per la [struttura GUID.](/windows/win32/api/guiddef/ns-guiddef-guid)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -25,15 +25,15 @@ typedef GUID UUID;
 
 ## <a name="remarks"></a>Osservazioni
 
-Le librerie di runtime RPC utilizzano **UUID** s per verificare la compatibilità tra client e server e per scegliere tra più implementazioni di un'interfaccia.
+Le librerie di runtime RPC usano **UUID** per verificare la compatibilità tra client e server e per selezionare tra più implementazioni di un'interfaccia.
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Intestazione** | Definito in rpcdce. h; Includi RPC. h |
+| **Intestazione** | Definito in rpcdce.h; include rpc.h |
 
 ## <a name="see-also"></a>Vedi anche
 
 [GUID](/windows/win32/api/guiddef/ns-guiddef-guid) 
- [UUID \_ VETTORE](/windows/win32/api/rpcdce/ns-rpcdce-uuid_vector) di
+ [UUID \_ VETTORE](/windows/win32/api/rpcdce/ns-rpcdce-uuid_vector)
