@@ -1,23 +1,23 @@
 ---
-description: Il proxy di proprietà per i criteri dei metadati della foto System. Photo. SubjectDistance.
+description: Proxy di proprietà per i criteri dei metadati delle foto System.Photo.SubjectDistance.
 ms.assetid: 5a54183b-3e7c-41db-b225-2bf399c17629
-title: System. Photo. SubjectDistance proxy
+title: System.Photo.SubjectDistance Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65616eea0c1e6923cea774ca9e52be13617af93e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d143d2fc2986f58e1ce5a47f4d841d2f015e4b1e7cfc0763465278f330c3c76b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104132003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204639"
 ---
-# <a name="systemphotosubjectdistance-proxy"></a>System. Photo. SubjectDistance proxy
+# <a name="systemphotosubjectdistance-proxy"></a>System.Photo.SubjectDistance Proxy
 
-Il proxy di proprietà per i criteri dei metadati della foto System. Photo. SubjectDistance.
+Proxy di proprietà per i criteri dei metadati delle foto System.Photo.SubjectDistance.
 
 ### <a name="description"></a>Descrizione
 
-Il proxy della proprietà restituisce una coppia razionale a tramite il membro uhVal di [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Il proxy della proprietà restituisce una coppia razionale tramite il [membro uhVal PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI8 VT
+Interfaccia utente \_ VT8
 
 ### <a name="denominator"></a>Denominatore
 
-HighPart di uhVal.
+HighPart dell'oggetto uhVal.
 
 ### <a name="numerator"></a>Numeratore
 
-LowPart di uhVal.
+LowPart dell'oggetto uhVal.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[System. Photo. SubjectDistance](../properties/props-system-photo-subjectdistance.md)
+[System.Photo.SubjectDistance](../properties/props-system-photo-subjectdistance.md)
 </dt> </dl>
 
  

@@ -1,40 +1,40 @@
 ---
-title: Effetto trasferimento tabella
-description: Utilizzare l'effetto di trasferimento tabella per eseguire il mapping delle intensità di colore di un'immagine utilizzando una funzione di trasferimento creata dall'interpolazione di un elenco di valori forniti.
+title: Effetto di trasferimento tabelle
+description: Usare l'effetto di trasferimento tabella per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento creata dall'interpolazione di un elenco di valori specificati.
 ms.assetid: FB426909-3C91-4709-9E3A-E45C7AE345A3
 keywords:
-- effetto trasferimento tabella
+- Effetto di trasferimento tabelle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d590e7f232ac3d4cecd434786353dfc5b8ea80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8c533b55fd55c983b976633b766a6d8d273631d6111de9e2e36387f711f5f14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118665010"
 ---
-# <a name="table-transfer-effect"></a>Effetto trasferimento tabella
+# <a name="table-transfer-effect"></a>Effetto di trasferimento tabelle
 
-Utilizzare l'effetto di trasferimento tabella per eseguire il mapping delle intensità di colore di un'immagine utilizzando una funzione di trasferimento creata dall'interpolazione di un elenco di valori forniti.
+Usare l'effetto di trasferimento tabella per eseguire il mapping delle intensità dei colori di un'immagine usando una funzione di trasferimento creata dall'interpolazione di un elenco di valori specificati.
 
 Il CLSID per questo effetto è CLSID \_ D2D1TableTransfer.
 
 -   [Immagine di esempio](#example-image)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-L'immagine mostra l'input e l'output dell'effetto di trasferimento tabella.
+L'immagine mostra l'input e l'output dell'effetto di trasferimento della tabella.
 
 
 
 | Prima                                                         |
 |----------------------------------------------------------------|
-| ![immagine prima dell'effetto.](images/default-before.jpg)     |
+| ![l'immagine prima dell'effetto.](images/default-before.jpg)     |
 | After                                                          |
-| ![immagine dopo la trasformazione.](images/11-tabletransfer.png) |
+| ![l'immagine dopo la trasformazione.](images/11-tabletransfer.png) |
 
 
 
@@ -57,40 +57,40 @@ m_d2dContext->EndDraw();
 
 
 
-La funzione di trasferimento si basa su un elenco di input V = (V0, V1, V2, V3, V? , V<sub>n</sub>), dove N è il numero di elementi-1.
+La funzione di trasferimento è basata su un elenco di input V=(V0,V1,V2,V3, V? ,V<sub>N</sub>) dove N è il numero di elementi - 1.
 
-L'intensità dei pixel di input viene rappresentata come C. L'intensità del pixel di output, C può essere calcolata con l'equazione.
+L'intensità dei pixel di input è rappresentata come C. L'intensità in pixel di output, C, può essere calcolata con l'equazione.
 
-Per un valore C, scegliere un valore k, in modo che: k/N = C < (k + 1)/N
+Per un valore C, selezionare un valore k, in modo che: k/N = C < (k+1)/N
 
-L'output C viene calcolato utilizzando l'equazione seguente: C'= V? + (C-k/N) \* n \* (V??? 1? -V?
+L'output C viene calcolato usando l'equazione seguente: C' = V? + (C - k/N) \* N \* (V??? 1? - V?)
 
-Questo effetto funziona su immagini alfa diritte e premoltiplicate. L'effetto restituisce bitmap alfa premoltiplicate.
+Questo effetto funziona su immagini alfa rette e premoltilied. L'effetto restituisce bitmap alfa premoltilied.
 
-Di seguito è riportato il grafico della funzione di trasferimento della tabella se la proprietà Table è impostata su `[0.0, 0.25, 1.0]` .
+Ecco l'aspetto del grafico della funzione di trasferimento tabelle se la proprietà table è impostata su `[0.0, 0.25, 1.0]` .
 
-![grafico dell'intensità dei pixel per la funzione di trasferimento della tabella.](images/table-transfer-graph.png)
+![Grafico dell'intensità dei pixel per la funzione di trasferimento tabella.](images/table-transfer-graph.png)
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
 > [!Note]  
-> I valori di tutti i canali delle proprietà di trasferimento della tabella sono privi di unità e hanno un minimo di 0,0 e un massimo di 1,0.
+> I valori di tutti i canali delle proprietà di trasferimento tabelle sono senza unità e hanno un minimo di 0,0 e un massimo di 1,0.
 
  
 
 
 
-| Nome visualizzato e enumerazione dell'indice                                           | Tipo e valore predefinito                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Nome visualizzato ed enumerazione dell'indice                                           | Tipo e valore predefinito                       | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RedTable<br/> D2D1 \_ TABLETRANSFER \_ - \_ \_ tabella rossa<br/>         | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale rosso.                                                                                                                                                                                                                                                                                                                                                                                  |
-| RedDisable<br/> D2D1 \_ TABLETRANSFER \_ prop \_ Red \_ Disable<br/>     | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale rosso. Se si imposta questa opzione su FALSE, viene applicata la funzione RedTableTransfer al canale rosso.                                                                                                                                                                                                                                                                             |
-| GreenTable<br/> \_ \_ \_ Tabella verde prop d2d1 \_ TABLETRANSFER<br/>     | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                |
-| GreenDisable<br/> D2D1 \_ TABLETRANSFER \_ prop \_ Green \_ Disable<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa opzione su FALSE, viene applicata la funzione GreenTableTransfer al canale verde.                                                                                                                                                                                                                                                                       |
-| BlueTable<br/> D2D1 \_ TABLETRANSFER \_ - \_ tabella blu Prop \_<br/>       | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale blu.                                                                                                                                                                                                                                                                                                                                                                                 |
-| BlueDisable<br/> D2D1 \_ TABLETRANSFER \_ prop \_ Blue \_ Disable<br/>   | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale blu. Se si imposta questa opzione su FALSE, viene applicata la funzione BlueTableTransfer al canale blu.                                                                                                                                                                                                                                                                          |
-| AlphaTable<br/> Tabella D2D1 per il \_ trasferimento della tabella \_ \_ \_ \_<br/>   | FLOAT\[\]<br/> {0,0 f, 1.0 f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale alfa.                                                                                                                                                                                                                                                                                                                                                                                |
-| AlphaDisable<br/> D2D1 \_ TABLETRANSFER \_ prop \_ Alpha \_ Disable<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale alfa. Se si imposta questa opzione su FALSE, viene applicata la funzione AlphaTableTransfer al canale alfa.                                                                                                                                                                                                                                                                       |
-| ClampOutput<br/> D2D1 \_ TABLETRANSFER \_ prop \_ \_ output Clamp<br/>   | BOOL<br/> FALSE<br/>             | Indica se l'effetto fissa i valori dei colori a un valore compreso tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto blocca i valori prima di premoltiplicare l'alfa.<br/> Se si imposta questa impostazione su TRUE, i valori vengono bloccati dall'effetto. Se si imposta questa proprietà su FALSE, l'effetto non blocca i valori dei colori, mentre altri effetti e la superficie di output possono bloccare i valori se non hanno una precisione sufficientemente elevata.<br/> |
+| RedTable<br/> TABELLA D2D1 \_ TABLETRANSFER \_ PROP \_ RED \_ TABLE<br/>         | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale rosso.                                                                                                                                                                                                                                                                                                                                                                                  |
+| RedDisable<br/> D2D1 \_ TABLETRANSFER \_ PROP \_ RED \_ DISABLE<br/>     | BOOL<br/> FALSE<br/>             | Se si imposta questo valore su TRUE, l'effetto non applica la funzione di trasferimento al canale rosso. Se si imposta questa opzione su FALSE, la funzione RedTableTransfer viene applicata al canale Red.                                                                                                                                                                                                                                                                             |
+| GreenTable<br/> TABELLA VERDE DELLA PROPRIETÀ \_ TABLETRANSFER D2D1 \_ \_ \_<br/>     | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale verde.                                                                                                                                                                                                                                                                                                                                                                                |
+| GreenDisable<br/> D2D1 \_ TABLETRANSFER \_ PROP \_ GREEN \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questa opzione su TRUE, l'effetto non applica la funzione di trasferimento al canale verde. Se si imposta questa opzione su FALSE, la funzione GreenTableTransfer viene applicata al canale verde.                                                                                                                                                                                                                                                                       |
+| BlueTable<br/> TABELLA D2D1 \_ TABLETRANSFER \_ PROP \_ BLUE \_<br/>       | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale Blu.                                                                                                                                                                                                                                                                                                                                                                                 |
+| BlueDisable<br/> D2D1 \_ TABLETRANSFER \_ PROP \_ BLUE \_ DISABLE<br/>   | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale blu. Se si imposta questa opzione su FALSE, la funzione BlueTableTransfer viene applicata al canale Blu.                                                                                                                                                                                                                                                                          |
+| AlphaTable<br/> TABELLA ALFA DELLE PROPRIETÀ \_ \_ DI TRASFERIMENTO \_ TABELLE \_ \_ D2D1<br/>   | Galleggiante\[\]<br/> {0.0f, 1.0f}<br/> | Elenco di valori utilizzati per definire la funzione di trasferimento per il canale Alfa.                                                                                                                                                                                                                                                                                                                                                                                |
+| AlphaDisable<br/> D2D1 \_ TABLETRANSFER \_ PROP \_ ALPHA \_ DISABLE<br/> | BOOL<br/> FALSE<br/>             | Se si imposta questa proprietà su TRUE, l'effetto non applica la funzione di trasferimento al canale Alfa. Se si imposta questa opzione su FALSE, la funzione AlphaTableTransfer viene applicata al canale Alpha.                                                                                                                                                                                                                                                                       |
+| ClampOutput<br/> D2D1 \_ TABLETRANSFER \_ PROP \_ CLAMP \_ OUTPUT<br/>   | BOOL<br/> FALSE<br/>             | Indica se l'effetto stringe i valori dei colori a un valore compreso tra 0 e 1 prima che l'effetto passi i valori all'effetto successivo nel grafico. L'effetto stringe i valori prima che premultipli il valore alfa .<br/> Se si imposta questa proprietà su TRUE, l'effetto anteterà i valori. Se si imposta questa opzione su FALSE, l'effetto non stringerà i valori dei colori, ma altri effetti e la superficie di output potrebbero stringere i valori se non hanno una precisione sufficiente.<br/> |
 
 
 
@@ -102,10 +102,10 @@ Di seguito è riportato il grafico della funzione di trasferimento della tabella
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per app desktop Windows 7 app \[ \| Windows Store\] |
-| Intestazione                   | d2d1effects. h                                                                      |
-| Libreria                  | d2d1. lib, dxguid. lib                                                               |
+| Client minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects.h                                                                      |
+| Libreria                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

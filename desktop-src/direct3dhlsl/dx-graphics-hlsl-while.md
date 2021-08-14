@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7bf1f0049ac474e7840753a8cfe05c972aa346c1
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a4e9ae7dc0d8280c9b9823d77dcfe5968243a1ddebdaf78e76b03651ee465034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983161"
 ---
 # <a name="while-statement"></a>Istruzione while
 
@@ -44,7 +44,7 @@ Parametro facoltativo che controlla la modalità di compilazione dell'istruzione
 | Attributo             | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | unroll(x)             | Annullare la registrazione del ciclo fino all'arresto dell'esecuzione. Facoltativamente, è possibile specificare il numero massimo di volte in cui il ciclo può essere eseguito.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| loop                  | Usare istruzioni di controllo del flusso nello shader compilato; non annullare la registrazione del ciclo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| loop                  | Usare istruzioni di controllo del flusso nello shader compilato. non annullare la registrazione del ciclo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | fastopt               | Riduce il tempo di compilazione, ma produce ottimizzazioni meno aggressive. Se si usa questo attributo, il compilatore non annulla la registrazione dei cicli.<br/> Questo attributo influisce solo sulle destinazioni del modello shader che supportano [le istruzioni di](dx-graphics-hlsl-break.md) interruzione. Questo attributo è disponibile nel modello di shader [rispetto \_ a 2 \_ x](dx9-graphics-reference-asm-vs-2-x.md) e nel [modello shader 3](dx-graphics-hlsl-sm3.md) e versioni successive. È particolarmente utile nel modello [shader 4 e](dx-graphics-hlsl-sm4.md) versioni successive quando il compilatore compila i cicli. Il compilatore simula i cicli per impostazione predefinita per valutare se è possibile annullarne la registrazione. Se non si vuole che il compilatore srotoli i cicli, usare questo attributo per ridurre il tempo di compilazione.<br/> |
 | consenti \_ condizione \_ uav | Consente a una condizione di terminazione del ciclo compute shader di basarsi su una lettura UAV. Il ciclo non deve contenere oggetti intrinseci di sincronizzazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
@@ -72,7 +72,7 @@ Una o più [istruzioni](dx-graphics-hlsl-statement-blocks.md).
 
 <dl> <dt>
 
-[Controllo di flusso](dx-graphics-hlsl-flow-control.md)
+[Flow Controllo](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

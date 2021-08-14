@@ -1,7 +1,7 @@
 ---
-description: Apre un handle per il provider del protocollo SSL (Secure Sockets Layer Protocol) specificato.
+description: Apre un handle per il provider Secure Sockets Layer protocol (SSL) specificato.
 ms.assetid: 0d5c4da3-12d6-4a53-a4d0-f0f174a4c8d8
-title: Funzione SslOpenProvider (Sslprovider. h)
+title: Funzione SslOpenProvider (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 8a9ea6c97662d94fffef0c87a227d5e2ae052606
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bd24183fd96fd177e5ec958d84e7c4751af4226bb3d76de8bea2dba4b170b4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905640"
 ---
-# <a name="sslopenprovider-function"></a>SslOpenProvider (funzione)
+# <a name="sslopenprovider-function"></a>Funzione SslOpenProvider
 
-La funzione **SslOpenProvider** apre un handle per il provider del protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ) specificato.
+La **funzione SslOpenProvider** apre un handle per il provider [*di protocollo SECURE SOCKETS LAYER*](/windows/desktop/SecGloss/s-gly) (SSL) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,26 +41,26 @@ SECURITY_STATUS WINAPI SslOpenProvider(
 
 <dl> <dt>
 
-*phSslProvider* \[ out\]
+*phSslProvider* \[ Cambio\]
 </dt> <dd>
 
-Indirizzo di un **handle NCRYPT \_ prov \_** in cui scrivere l'handle del provider.
+Indirizzo di un **handle PROV NCRYPT \_ \_** in cui scrivere l'handle del provider.
 
-Al termine dell'utilizzo dell'handle, è necessario liberarlo chiamando la funzione [**SslFreeObject**](sslfreeobject.md) .
+Al termine dell'uso dell'handle, è necessario liberarlo chiamando la [**funzione SslFreeObject.**](sslfreeobject.md)
 
 </dd> <dt>
 
-*pszProviderName* \[ in\]
+*pszProviderName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode che contiene il nome del provider. Se il valore di questo parametro è **null**, viene restituito un handle per il **\_ \_ provider MS Schannel** .
+Puntatore a una stringa Unicode che contiene il nome del provider. Se il valore di questo parametro è **NULL,** viene restituito un handle per **MS \_ SCHANNEL \_ PROVIDER.**
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Questo parametro è riservato per utilizzi futuri e deve essere impostato su zero.
+Questo parametro è riservato per un uso futuro e deve essere impostato su zero.
 
 </dd> </dl>
 
@@ -70,15 +70,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Uno degli handle forniti non è valido.<br/>                      |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *phSslProvider* o *ppProviderList* è **null**.<br/> |
-| <dl> <dt>**Stato \_ di Nessun \_**</dt> <dt>0xC0000017L</dt> di memoria </dl>      | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/>  |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno degli handle forniti non è valido.<br/>                      |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Il *parametro phSslProvider* *o ppProviderList* è **NULL.**<br/> |
+| <dl> <dt>**STATO \_ NO \_ MEMORY**</dt> <dt>0xC0000017L</dt> </dl>      | Memoria insufficiente per allocare i buffer necessari.<br/>  |
 
 
 
@@ -90,9 +90,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Determina se un dispositivo di input supporta il multitouch.
+description: Determina se un dispositivo di input supporta multitocco.
 ms.assetid: 4fef7060-2235-4bee-a37b-40d827732b30
-title: 'Metodo ITablet3:: datamultitouch'
+title: Metodo ITablet3::IsMultiTouch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: ed05e110c13af8fe73eebf004183de42eb9fffd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbdd18d27c8b9f5f4b7567e6aa22fd0c74f5e2c2dc74d80e1f46aca4195b93ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717300"
 ---
-# <a name="itablet3ismultitouch-method"></a>Metodo ITablet3:: datamultitouch
+# <a name="itablet3ismultitouch-method"></a>Metodo ITablet3::IsMultiTouch
 
-Determina se un dispositivo di input supporta il multitouch.
+Determina se un dispositivo di input supporta multitocco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,20 +40,20 @@ HRESULT IsMultiTouch(
 
 <dl> <dt>
 
-*bIsMultiTouch* \[ out\]
+*bIsMultiTouch* \[ Cambio\]
 </dt> <dd>
 
-Indica se il dispositivo è multitouch.
+Indica se il dispositivo è multitocco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **\_ OK** in caso di esito positivo; in caso contrario, restituisce un codice di errore, ad esempio **E \_ Fail**.
+Restituisce **S OK in \_ caso** di esito positivo. In caso contrario, restituisce un codice di errore, **ad esempio E \_ FAIL.**
 
 ## <a name="remarks"></a>Commenti
 
-Dopo aver determinato l'utilizzo di [**IRealTimeStylus3:: MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) o **ITablet3::** multitouch, il multitouch è disponibile, un'applicazione può scegliere di acconsentire esplicitamente ai messaggi di input multitouch. Altre informazioni sul filtro dei metodi multitouch sono disponibili nella sezione proprietà **IRealTimeStylus3:: MultiTouchEnabled** .
+Dopo aver determinato tramite [**IRealTimeStylus3::MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) o **ITablet3::IsMultiTouch** che multitouch è disponibile, un'applicazione può scegliere di acconsentire esplicitamente ai messaggi di input multitouch. Altre informazioni sul filtro dei metodi multitouch sono disponibili nella sezione della proprietà **IRealTimeStylus3::MultiTouchEnabled.**
 
 ## <a name="examples"></a>Esempio
 
@@ -72,8 +72,8 @@ spITablet3->get_IsMultiTouch(&b);
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
@@ -82,7 +82,7 @@ spITablet3->get_IsMultiTouch(&b);
 
 <dl> <dt>
 
-[**ITablet3**](itablet3.md)
+[**Tabella ITablet3**](itablet3.md)
 </dt> <dt>
 
 [**MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled)

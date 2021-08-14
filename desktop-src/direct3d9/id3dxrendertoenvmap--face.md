@@ -1,7 +1,7 @@
 ---
-description: Avviare il disegno di ogni faccia di una mappa dell'ambiente.
+description: Avviare il disegno di ogni viso di una mappa dell'ambiente.
 ms.assetid: c100e138-c5a8-49bb-9a91-e7f70410470f
-title: 'Metodo ID3DXRenderToEnvMap:: Face (D3dx9core. h)'
+title: Metodo ID3DXRenderToEnvMap::Face (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 452933c0d85a7aad2987011796ff47eff41dc32b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1190e033f9aa83b13f327fcb8a8b530be17132bfd330c9be6b9cc6d87d5e35a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801220"
 ---
-# <a name="id3dxrendertoenvmapface-method"></a>Metodo ID3DXRenderToEnvMap:: Face
+# <a name="id3dxrendertoenvmapface-method"></a>Metodo ID3DXRenderToEnvMap::Face
 
-Avviare il disegno di ogni faccia di una mappa dell'ambiente.
+Avviare il disegno di ogni viso di una mappa dell'ambiente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT Face(
 
 <dl> <dt>
 
-*Faccia* \[ in\]
+*Viso* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DCUBEMAP \_ visi**](./d3dcubemap-faces.md)**
+Tipo: **[ **VISI D3DCUBEMAP \_**](./d3dcubemap-faces.md)**
 
-Prima faccia della mappa del cubo ambientale. Vedere [**D3DCUBEMAP \_ visi**](./d3dcubemap-faces.md).
+Prima faccia della mappa cubo ambientale. Vedere [**D3DCUBEMAP \_ FACES (VISI D3DCUBEMAP).**](./d3dcubemap-faces.md)
 
 </dd> <dt>
 
-*MipFilter* \[ in\]
+*Filtro mip* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione valida di uno o più flag [di \_ filtro D3DX](d3dx-filter.md) .
+Combinazione valida di uno o più [flag \_ FILTER D3DX.](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo deve essere chiamato una volta per ogni tipo di mappa dell'ambiente. L'unica eccezione è rappresentata da una mappa dell'ambiente cubica che richiede che questo metodo venga chiamato sei volte, una volta per ogni viso in D3DCUBEMAP \_ visi. Per altre informazioni, vedere [mapping dell'ambiente (Direct3D 9)](environment-mapping.md).
+Questo metodo deve essere chiamato una volta per ogni tipo di mappa dell'ambiente. L'unica eccezione è una mappa di ambiente cubica che richiede che questo metodo sia chiamato sei volte, una volta per ogni viso in D3DCUBEMAP \_ FACES. Per altre informazioni, vedere [Environment Mapping (Direct3D 9) (Mapping dell'ambiente (Direct3D 9)](environment-mapping.md)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Questo metodo deve essere chiamato una volta per ogni tipo di mappa dell'ambient
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

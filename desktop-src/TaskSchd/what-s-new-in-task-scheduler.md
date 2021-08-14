@@ -1,81 +1,81 @@
 ---
 title: Novità di Utilità di pianificazione
-description: Elenco di nuove funzionalità introdotte da diverse versioni di Utilità di pianificazione.
+description: Elenco delle nuove funzionalità introdotte dalle diverse versioni di Utilità di pianificazione.
 ms.assetid: 43fbbbd2-6e97-4ba5-9474-23c5e2b33612
 keywords:
-- Utilità di pianificazione Utilità di pianificazione, novità
+- Utilità di pianificazione Utilità di pianificazione , novità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5245ab4e681af937924cfbd217095009d80d6a11
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3592cc5efd08afe4737e9af429d52fa41216b6c756a64faeaa45f6cc5c0774b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354783"
 ---
 # <a name="whats-new-in-task-scheduler"></a>Novità di Utilità di pianificazione
 
-Le modifiche seguenti riepilogano le novità di versioni diverse di Utilità di pianificazione.
+Le modifiche seguenti riepilogano le novità nelle diverse versioni di Utilità di pianificazione.
 
 ## <a name="windows-10-and-windows-server-2016"></a>Windows 10 (e Windows Server 2016)
 
 Le modifiche Utilità di pianificazione seguenti sono state introdotte in Windows 10.
 
--   Quando lo screen saver batteria è acceso, le attività di Windows Utilità di pianificazione vengono attivate solo se l'attività è:
+-   Quando risparmio batteria è attivata, Windows Utilità di pianificazione attività vengono attivate solo se l'attività è:
 
-    -   Non impostato per **avviare l'attività solo se il computer è inattivo... (l'** attività non usa [**IdleSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings))
+    -   Non impostato su **Avvia l'attività solo se il computer è inattivo(** l'attività non usa [**IdleSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings))
     -   Non impostato per l'esecuzione durante la manutenzione automatica (l'attività non usa [**MaintenanceSettings**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings))
-    -   È impostato per l' **esecuzione solo quando l'utente è connesso** (l'attività [**LogonType**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_logontype) è un **\_ \_ \_ token interattivo di accesso attività** o un **\_ \_ gruppo di accesso attività**)
+    -   È impostato su **Esegui solo quando l'utente è connesso** (l'attività [**LogonType**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_logontype) è **TASK LOGON INTERACTIVE \_ \_ \_ TOKEN** o **TASK LOGON \_ \_ GROUP**)
 
-    Tutti gli altri trigger vengono posticipati fino a quando il risparmio di batteria non è disattivato. Per ulteriori informazioni sull'accesso allo stato di batteria saver nell'applicazione, vedere [**\_ \_ stato di alimentazione del sistema**](/windows/desktop/api/winbase/ns-winbase-system_power_status). Per informazioni generali sul risparmio di batteria, vedere [batteria saver (nelle linee guida del componente hardware)](/windows-hardware/design/component-guidelines/battery-saver).
+    Tutti gli altri trigger vengono posticilati finché risparmio batteria è disattivata. Per altre informazioni sull'accesso risparmio batteria stato dell'applicazione, vedere [**SYSTEM \_ POWER \_ STATUS**](/windows/desktop/api/winbase/ns-winbase-system_power_status). Per informazioni generali sui risparmio batteria, vedere [risparmio batteria (nelle linee guida dei componenti hardware).](/windows-hardware/design/component-guidelines/battery-saver)
 
--   Per motivi di sicurezza, un utente non amministratore non può visualizzare né gestire un'attività Utilità di pianificazione di Windows creata da un altro utente.
+-   Per motivi di sicurezza, un utente non amministratore non può visualizzare né gestire un'attività Windows Utilità di pianificazione creata da un altro utente.
 
 ## <a name="windows-8"></a>Windows 8
 
-In Windows 8 sono state introdotte le seguenti Utilità di pianificazione 2,0 modifiche:
+Le seguenti Utilità di pianificazione 2.0 sono state introdotte in Windows 8:
 
--   Supporto di PowerShell: gli utenti possono gestire (creare, eliminare, modificare, avviare, arrestare e così via in modo esplicito) Windows Utilità di pianificazione le attività usando il modulo ScheduledTasks di PowerShell.
--   Password gestite: gli amministratori possono usare gli account Active Directory password gestite come entità attività. Queste attività non richiedono più un criterio di reimpostazione della password applicato.
--   API changes (modifiche API): introduce due nuove impostazioni attività con l'interfaccia [**ITaskSettings3**](/windows/desktop/api/taskschd/nn-taskschd-itasksettings3) .
-    -   [**MaintenanceSettings**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings): le attività che usano queste impostazioni vengono considerate come un nuovo tipo di attività pianificate che vengono richiamate durante il periodo di manutenzione automatico del sistema operativo, in base alla periodicità e alla scadenza specificate.
-    -   [**Volatile**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_volatile): le attività impostate per essere volatili sono sempre disabilitate in un avvio del sistema operativo e devono essere riabilitate in modo esplicito quando necessario. Le attività volatili sono utilizzate dai cluster di failover per garantire che sia pianificata una sola istanza di attività in un cluster alla volta.
+-   Supporto di PowerShell: gli utenti possono gestire (creare, eliminare, modificare, avviare, arrestare in modo esplicito e così via) Windows Utilità di pianificazione attività con il modulo Di PowerShell ScheduledTasks.
+-   Password gestite: gli amministratori possono usare gli account password gestite di Active Directory come entità attività. Queste attività non richiedono più criteri di reimpostazione della password applicati.
+-   Modifiche dell'API: sono state introdotte due nuove impostazioni di attività con [**l'interfaccia ITaskSettings3.**](/windows/desktop/api/taskschd/nn-taskschd-itasksettings3)
+    -   [**MaintenanceSettings:**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)le attività che usano queste impostazioni vengono considerate come un nuovo tipo di attività pianificate che vengono richiamate durante il tempo di manutenzione automatica del sistema operativo, in base alla periodicità e alla scadenza specificate.
+    -   [**Volatile:**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_volatile)le attività impostate come volatili vengono sempre disabilitate in un avvio del sistema operativo e devono essere ri abilitate nuovamente in modo esplicito quando necessario. Le attività volatili vengono utilizzate dai cluster di failover per garantire che in un cluster sia pianificata una sola istanza di attività alla volta.
 -   Il motore di pianificazione unificato supporta ora le funzionalità seguenti:
-    -   Tipo di accesso S4U, tramite l'elemento [**LogonType**](taskschedulerschema-logontype-principaltype-element.md) .
-    -   Valori di query XPath per i trigger di evento, tramite l'elemento [**ValueQueries**](taskschedulerschema-valuequeries-eventtriggertype-element.md) .
-    -   Non consentire la terminazione dell'attività, tramite l'elemento [**AllowHardTerminate**](taskschedulerschema-allowhardterminate-settingstype-element.md) .
+    -   Tipo di accesso S4U, tramite [**l'elemento LogonType.**](taskschedulerschema-logontype-principaltype-element.md)
+    -   Valori di query XPath per i trigger di evento tramite [**l'elemento ValueQueries.**](taskschedulerschema-valuequeries-eventtriggertype-element.md)
+    -   Non consentire la terminazione hard dell'attività tramite [**l'elemento AllowHardTerminate.**](taskschedulerschema-allowhardterminate-settingstype-element.md)
 -   Funzionalità deprecate in questa versione
-    -   Azione: [**SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) (è possibile usare [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) con il cmdlet [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) di [Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)come soluzione alternativa).
+    -   Azione: [**sendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) (è possibile usare [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) con il cmdlet [Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)[Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) come soluzione alternativa).
     -   Azione: [**showMessage**](taskschedulerschema-showmessage-actiongroup-element.md).
     -   AT.exe utilità cmdline
 
 ## <a name="windows-7"></a>Windows 7
 
-In Windows 7 sono state introdotte le modifiche seguenti Utilità di pianificazione 2,0:
+Le seguenti Utilità di pianificazione 2.0 sono state introdotte in Windows 7:
 
--   Utilizzando il motore di pianificazione unificato fornito dal sistema operativo sottostante.
--   Possibilità di rifiutare l'avvio delle attività nelle sessioni remote (RAIL) delle applicazioni remote.
--   Protezione avanzata delle attività (solo per le attività in esecuzione come "servizio di rete" o "servizio locale"):
+-   Uso del motore di pianificazione unificato fornito dal sistema operativo sottostante.
+-   Possibilità di rifiutare le attività di avvio nelle sessioni REMOTE Applications Integrated Locally (RAIL).
+-   Protezione avanzata della sicurezza delle attività (solo per le attività in esecuzione come "NETWORK SERVICE" o "LOCAL SERVICE"):
 
-    -   Possibilità di assegnare un tipo di ID di sicurezza (SID) del token di processo (ad esempio, Unrestricted o None) a un'attività.
-    -   Consentire agli sviluppatori di attività di richiedere il set esatto di privilegi richiesti dall'attività.
+    -   Possibilità di assegnare un tipo di identificatore di sicurezza del token di processo (SID), ad esempio senza restrizioni o nessuno, a un'attività.
+    -   Consentire agli sviluppatori di attività di richiedere il set esatto di privilegi necessari per l'attività.
 
--   Modifiche API:
+-   Modifiche all'API:
 
-    -   Supporto per la protezione avanzata delle attività: la nuova funzionalità di protezione avanzata delle attività è stata introdotta con la nuova interfaccia IPrincipal2.
-    -   In sono state introdotte due nuove impostazioni attività con la nuova interfaccia ITaskSettings2.
+    -   Supporto della protezione avanzata per la sicurezza delle attività: la nuova funzionalità di protezione avanzata della sicurezza delle attività è stata introdotta con la nuova interfaccia IPrincipal2.
+    -   Sono state introdotte due nuove impostazioni di attività con la nuova interfaccia ITaskSettings2.
 
-        -   DisallowStartOnRemoteAppSession: la nuova impostazione DisallowStartOnRemoteAppSession può rifiutare l'avvio di un'attività se attivata nelle sessioni [remote (Rail) integrate delle applicazioni](/openspecs/windows_protocols/MS-WINPROTLP/df36f95e-6a6b-48d6-a3ae-35a17674f546) .
-        -   UseUnifiedSchedulingEngine: l'uso dell'impostazione UseUnifiedSchedulingEngine fornisce un comportamento coeso per le attività e i servizi di Windows perché viene gestito in modo uniforme da un motore di pianificazione comune a livello di sistema. Sebbene sia consigliabile utilizzare un motore unificato, non supporta alcune delle funzionalità Utilità di pianificazione. Se la combinazione di proprietà non consentirà l'esecuzione dell'attività in un motore unificato, la registrazione di tale oggetto verrà rifiutata.
-        -   Le funzionalità delle attività che non sono supportate dal motore di pianificazione unificato includono:
+        -   DisallowStartOnRemoteAppSession: la nuova impostazione DisallowStartOnRemoteAppSession può rifiutare l'avvio di un'attività se attivata nelle sessioni REMOTE [Applications Integrated Locally (RAIL).](/openspecs/windows_protocols/MS-WINPROTLP/df36f95e-6a6b-48d6-a3ae-35a17674f546)
+        -   UseUnifiedSchedulingEngine: l'uso dell'impostazione UseUnifiedSchedulingEngine offre un comportamento coerente per attività e servizi di Windows perché viene gestito in modo uniforme da un motore di pianificazione comune a livello di sistema. Anche se è consigliabile usare un motore unificato, non supporta alcune delle Utilità di pianificazione funzionalità. Se la combinazione di proprietà non consente l'esecuzione dell'attività in un motore unificato, la registrazione di tali proprietà verrà rifiutata.
+        -   Le funzionalità delle attività non supportate dal motore di pianificazione unificato includono:
 
             -   Tipi di accesso:
 
-                -   [\_ \_ \_ \_ password o token interattivo di accesso all'attività \_](./taskschedulerschema-logontype-principaltype-element.md)
+                -   [TOKEN \_ INTERATTIVO DI ACCESSO ATTIVITÀ O \_ \_ \_ \_ PASSWORD](./taskschedulerschema-logontype-principaltype-element.md)
 
-            -   Criteri per più istanze:
+            -   Criteri a istanze multiple:
 
-                -   [**\_ \_ arresto esistente delle istanze dell'attività \_**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)
+                -   [**LE ISTANZE \_ \_ DELL'ATTIVITÀ INTERROMPINO \_ L'ESECUZIONE**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)
 
             -   Azioni:
 
@@ -85,22 +85,22 @@ In Windows 7 sono state introdotte le modifiche seguenti Utilità di pianificazi
             -   Impostazioni:
 
                 -   [Impostazioni di rete delle attività](./taskschedulerschema-networksettings-settingstype-element.md)
-                -   [Non consentire la terminazione dell'attività](./taskschedulerschema-allowhardterminate-settingstype-element.md)
+                -   [Non consentire la terminazione rigida dell'attività](./taskschedulerschema-allowhardterminate-settingstype-element.md)
 
             -   Trigger:
 
-                -   [Limite tempo di esecuzione del trigger](./taskschedulerschema-executiontimelimit-triggerbasetype-element.md)
+                -   [Limite di tempo di esecuzione del trigger](./taskschedulerschema-executiontimelimit-triggerbasetype-element.md)
                 -   [Modelli di ripetizione per i trigger di calendario]( ./taskschedulerschema-repetition-triggerbasetype-element.md)
                 -   [Valori di query XPath per i trigger di evento]( ./taskschedulerschema-valuequeries-eventtriggertype-element.md)
-                -   Tipi [di trigger giornalieri](./taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) e mensili [mensili](./taskschedulerschema-schedulebymonth-calendartriggertype-element.md)
+                -   [Tipi](./taskschedulerschema-schedulebymonth-calendartriggertype-element.md) di trigger [giornalieri mensili e](./taskschedulerschema-schedulebymonthdayofweek-calendartriggertype-element.md) mensili
 
 ## <a name="windows-vista"></a>Windows Vista
 
-Per lo sviluppo di applicazioni che utilizzano il servizio Utilità di pianificazione in Windows Vista, è necessario utilizzare l'API Utilità di pianificazione 2,0. Per ulteriori informazioni, vedere [utilità di pianificazione riferimento](task-scheduler-reference.md) e [utilizzo del utilità di pianificazione](using-the-task-scheduler.md).
+L Utilità di pianificazione'API 2.0 deve essere usata nello sviluppo di applicazioni che usano il servizio Utilità di pianificazione in Windows Vista. Per altre informazioni, vedere [Riferimento Utilità di pianificazione](task-scheduler-reference.md) [e Uso dell'Utilità di pianificazione](using-the-task-scheduler.md).
 
 ## <a name="windows-2000-windows-xp-and-windows-server-2003"></a>Windows 2000, Windows XP e Windows Server 2003
 
-L'API Utilità di pianificazione 2,0 non è disponibile. Usare Utilità di pianificazione 1,0.
+L'API Utilità di pianificazione 2.0 non è disponibile. Usare Utilità di pianificazione 1.0.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

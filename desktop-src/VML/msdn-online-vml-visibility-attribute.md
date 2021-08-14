@@ -1,44 +1,44 @@
 ---
-title: Attributo di visibilità la
-description: Attributo di visibilità la
+title: Attributo di visibilità VML
+description: Attributo di visibilità VML
 ms.assetid: 1a15335b-e7e9-4bf1-9c0c-8d2e4704f256
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7325d09f60da13f0c7c44e73b347fa579870fcd0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2087a8c5915b400f32f6007d58c5c20344f9abab1e2c5bc5d4c93da74ddf1182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106299954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346183"
 ---
-# <a name="vml-visibility-attribute"></a>Attributo di visibilità la
+# <a name="vml-visibility-attribute"></a>Attributo di visibilità VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se una forma viene visualizzata. Proprietà di lettura/scrittura. **Stringa**.
+Determina se viene visualizzata una forma. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "Visibility: *Expression* " >
+<v: *element* style="visibility: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. Visibility = "*Expression*"
+*element* .style.visibility="*expression*"
 
-*espressione* = *element*. Style. Visibility
+*expression* = *elemento*.style.visibility
 
 **Osservazioni:**
 
-L'attributo **visibility** è simile all'attributo di **visibilità** HTML standard per gli stili.
+**L'attributo Visibility** è simile all'attributo **Visibility** HTML standard per gli stili.
 
 I possibili valori sono:
 
@@ -48,18 +48,18 @@ I possibili valori sono:
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | visible  | La forma è visibile.                                                                                                                                                                   |
 | hidden   | La forma non è visibile, ma fa ancora parte del flusso degli oggetti nel browser. Gli eventi del mouse non vengono elaborati.                                                                  |
-| inherit  | Valore predefinito. Lo stato di visibilità viene ereditato dall'elemento padre della forma. Le applicazioni Microsoft Office utilizzano solo **ereditarietà** e **Hidden**; tutti gli altri valori vengono mappati per **ereditare**. |
-| comprimere | Utilizzato per le applicazioni di modifica grafica che possono comprimere gruppi di forme; ad esempio, i delineatori.                                                                                     |
+| inherit  | Valore predefinito. Lo stato di visibilità viene ereditato dall'elemento padre della forma. Microsoft Office applicazioni usano solo **ereditare** e **nascondere**; Viene eseguito il mapping di qualsiasi altro valore per **ereditare**. |
+| comprimere | Usato per le applicazioni di modifica grafica in grado di comprimere gruppi di forme; ad esempio, strutture.                                                                                     |
 
 
 
- 
+ 
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il codice seguente crea una forma, ma la rende nascosta. Il flusso di altri oggetti nel documento verrà aggirato, lasciando uno spazio delle stesse dimensioni della forma.
+Il codice seguente crea una forma, ma la rende nascosta. Altri oggetti nel documento scorreranno intorno ad esso, lasciando uno spazio delle stesse dimensioni della forma.
 
 
 ```HTML
@@ -70,8 +70,8 @@ Il codice seguente crea una forma, ma la rende nascosta. Il flusso di altri ogge
 
 
 
-[Esempio di attributo Visibility](/previous-versions/bb264100(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo di visibilità](/previous-versions/bb264100(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

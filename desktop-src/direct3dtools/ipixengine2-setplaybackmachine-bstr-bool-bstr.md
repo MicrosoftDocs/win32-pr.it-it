@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixEngine2\_SetPlaybackMachine\_BSTR\_BOOL\_BSTR
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixEngine2:: SetPlaybackMachine'
+title: Metodo IPixEngine2::SetPlaybackMachine
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 181EE044-1FC4-484B-AE63-C33BC627C3B7
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 9d7366da4aa999828309136900edfe725af4f622
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 087d7febcb3231f68380494b4c7d0b8bf1389af178aedc624db1d7ac619e2079
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980810"
 ---
-# <a name="span-idvspixengineipixengine2_setplaybackmachine_bstr_bool_bstrspanipixengine2setplaybackmachine-method"></a><span id="vspixengine.ipixengine2_setplaybackmachine_bstr_bool_bstr"></span>Metodo IPixEngine2:: SetPlaybackMachine
+# <a name="span-idvspixengineipixengine2_setplaybackmachine_bstr_bool_bstrspanipixengine2setplaybackmachine-method"></a><span id="vspixengine.ipixengine2_setplaybackmachine_bstr_bool_bstr"></span>Metodo IPixEngine2::SetPlaybackMachine
 
 Imposta il computer di riproduzione corrente per il log di grafica specificato.
 
@@ -41,22 +41,22 @@ HRESULT SetPlaybackMachine(
 
 ## <a name="parameters"></a>Parametri
 
-*logFile*   
-Stringa COM che costituisce il nome del log di grafica.
+*Logfile*   
+Stringa COM che contiene il nome del log di grafica.
 
 *bUseAuthentication*   
-true per utilizzare l'autenticazione; in caso contrario, false.
+true per usare l'autenticazione; in caso contrario, false.
 
-*macchina*   
+*Macchina*   
 Stringa COM contenente il nome del computer di riproduzione.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica se il sink Sample-Grabber usa il clock di presentazione per pianificare gli esempi.
+description: Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare i campioni.
 ms.assetid: 780ec4a6-8e14-4b81-9d50-82b2850c70ae
-title: Attributo MF_SAMPLEGRABBERSINK_IGNORE_CLOCK (Mfidl. h)
+title: MF_SAMPLEGRABBERSINK_IGNORE_CLOCK attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ad5476779d958bdbf94af554d889dd8d174ca3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d757b02a060b4e598ff42d3bd8b9ad7f38af41143c807647aa6f2b8528677cf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474424"
 ---
-# <a name="mf_samplegrabbersink_ignore_clock-attribute"></a>\_ \_ Attributo Clock MF SAMPLEGRABBERSINK ignore \_
+# <a name="mf_samplegrabbersink_ignore_clock-attribute"></a>Attributo MF \_ SAMPLEGRABBERSINK \_ IGNORE \_ CLOCK
 
-Specifica se il sink Sample-Grabber usa il clock di presentazione per pianificare gli esempi.
+Specifica se il sink sample-grabber usa l'orologio di presentazione per pianificare i campioni.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,22 +21,22 @@ Specifica se il sink Sample-Grabber usa il clock di presentazione per pianificar
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare questo attributo sull'oggetto attivazione creato dalla funzione [**MFCreateSampleGrabberSinkActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) . Impostare l'attributo prima di chiamare il metodo [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) sull'oggetto Activation.
+È possibile impostare questo attributo nell'oggetto attivazione creato dalla [**funzione MFCreateSampleGrabberSinkActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatesamplegrabbersinkactivate) Impostare l'attributo prima di chiamare [**il metodo IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) sull'oggetto attivazione.
 
-Per impostazione predefinita, quando il sink Sample-Grabber riceve un campione, attende che l'ora di presentazione dell'esempio richiami il callback dell'applicazione. Se l' \_ \_ attributo Clock MF SAMPLEGRABBERSINK ignore \_ è diverso da zero, il sink Sample-Grabber ignora il clock di presentazione e richiama il callback non appena riceve ogni campione.
+Per impostazione predefinita, quando il sink sample-grabber riceve un esempio, attende fino all'ora di presentazione dell'esempio per richiamare il callback dell'applicazione. Se l'attributo MF SAMPLEGRABBERSINK IGNORE CLOCK è diverso da zero, il \_ \_ sink sample-grabber ignora il clock di presentazione e richiama il callback non appena riceve ogni \_ esempio.
 
 Utilizzo consigliato:
 
--   Se si desidera elaborare i campioni il più rapidamente possibile, impostare questo attributo su **true**.
--   Se si desidera che le chiamate al metodo di callback siano sincronizzate con il clock, non impostare questo attributo o impostarlo su **false**. È possibile ottenere campioni leggermente più avanti rispetto al clock, rimanendo comunque sincronizzati, impostando l'attributo di [**\_ offset dell'ora di \_ esempio \_ \_ MF SAMPLEGRABBERSINK**](mf-samplegrabbersink-sample-time-offset-attribute.md) .
+-   Se si desidera elaborare gli esempi il più rapidamente possibile, impostare questo attributo su **TRUE.**
+-   Se si desidera che le chiamate al metodo di callback siano sincronizzate con l'orologio, non impostare questo attributo o impostarlo su **FALSE.** È possibile ottenere campioni leggermente avanti rispetto all'orologio, pur rimanendo sincronizzati, impostando l'attributo [**MF \_ SAMPLEGRABBERSINK \_ SAMPLE TIME \_ \_ OFFSET.**](mf-samplegrabbersink-sample-time-offset-attribute.md)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,9 +44,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -54,10 +54,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Attributi di Media Foundation](media-foundation-attributes.md)
+[Media Foundation attributi](media-foundation-attributes.md)
 </dt> </dl>
 
  

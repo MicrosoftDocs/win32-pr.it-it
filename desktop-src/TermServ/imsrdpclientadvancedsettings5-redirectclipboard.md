@@ -1,18 +1,18 @@
 ---
-title: Proprietà RedirectClipboard di IMsRdpClientAdvancedSettings5
+title: Proprietà RedirectClipboard IMsRdpClientAdvancedSettings5
 description: Imposta o recupera la configurazione per il reindirizzamento degli Appunti.
 ms.assetid: c653f593-9912-4ade-a0a3-70d9afac2ab1
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectClipboard
-- Servizi Desktop remoto proprietà RedirectClipboard, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RedirectClipboard
-- Servizi Desktop remoto proprietà RedirectClipboard, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RedirectClipboard
-- Servizi Desktop remoto proprietà RedirectClipboard, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RedirectClipboard
-- Servizi Desktop remoto proprietà RedirectClipboard, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RedirectClipboard
+- Proprietà RedirectClipboard Servizi Desktop remoto
+- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà RedirectClipboard
+- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RedirectClipboard
+- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RedirectClipboard
+- Proprietà RedirectClipboard Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RedirectClipboard
 topic_type:
 - apiref
 api_name:
@@ -34,14 +34,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aba9950b8d602ca239d66364279a5876a432d04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5847ef4ccb5798ea74cccecbcabbb04303df93f3cd9a8a6155cd94eabbc8a824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352285"
 ---
-# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>Proprietà IMsRdpClientAdvancedSettings5:: RedirectClipboard
+# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>Proprietà IMsRdpClientAdvancedSettings5::RedirectClipboard
 
 Imposta o recupera la configurazione per il reindirizzamento degli Appunti.
 
@@ -64,7 +64,7 @@ HRESULT get_RedirectClipboard(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta la modalità di reindirizzamento degli appunti su **true** o **false**. Se impostato su **true**, la modalità di reindirizzamento degli Appunti è abilitata.
+Imposta la modalità di reindirizzamento degli Appunti **su TRUE** o **FALSE.** Se impostato su **TRUE,** la modalità di reindirizzamento degli Appunti è abilitata.
 
 ## <a name="requirements"></a>Requisiti
 

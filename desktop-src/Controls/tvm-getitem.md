@@ -1,9 +1,9 @@
 ---
-title: Messaggio TVM_GETITEM (COMmctrl. h)
-description: Recupera alcuni o tutti gli attributi di un elemento della visualizzazione struttura ad albero. È possibile inviare questo messaggio in modo esplicito o utilizzando la \_ macro TreeView GetItem.
+title: TVM_GETITEM messaggio (Commctrl.h)
+description: Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro GetItem di \_ TreeView.
 ms.assetid: e26ec000-967d-46de-8f71-6ebc36fefe5e
 keywords:
-- Controlli di Windows Message TVM_GETITEM
+- TVM_GETITEM di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dff96f4721a3c50eda54792b2b1c003cd808bf11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 425b0200df62b1cfcbc18556ad12513e43cebadf6e5742b36880464fad195fb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984891"
 ---
-# <a name="tvm_getitem-message"></a>\_Messaggio TVM GETitem
+# <a name="tvm_getitem-message"></a>Messaggio TVM \_ GETITEM
 
-Recupera alcuni o tutti gli attributi di un elemento della visualizzazione struttura ad albero. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**TreeView \_ GetItem**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem) .
+Recupera alcuni o tutti gli attributi di un elemento della visualizzazione albero. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ GetItem di TreeView.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitem)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,19 +37,19 @@ Recupera alcuni o tutti gli attributi di un elemento della visualizzazione strut
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che specifica le informazioni per recuperare e ricevere informazioni sull'elemento. Con la [versione 4,71](common-control-versions.md) e successive, è invece possibile usare una struttura [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) .
+Puntatore a [**una struttura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che specifica le informazioni da recuperare e riceve informazioni sull'elemento. Con [la versione 4.71](common-control-versions.md) e successive è invece possibile usare una [**struttura TVITEMEX.**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Quando il messaggio viene inviato, il membro **hitet** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica l'elemento per il quale recuperare le informazioni e il membro **mask** specifica gli attributi da recuperare.
+Quando il messaggio viene inviato, il membro **hItem** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) identifica l'elemento su cui recuperare le informazioni e il membro **mask** specifica gli attributi da recuperare.
 
-Se il \_ flag di testo TVIF è impostato nel membro **mask** della struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) , il membro **pszText** deve puntare a un buffer valido e il membro **cchTextMax** deve essere impostato sul numero di caratteri nel buffer.
+Se il flag TVIF TEXT è impostato nel membro mask della struttura \_ [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) o [**TVITEMEX,**](/windows/win32/api/commctrl/ns-commctrl-tvitemexa) il membro **pszText** deve puntare a un buffer valido e il membro **cchTextMax** deve essere impostato sul numero di caratteri in tale buffer. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,10 +57,10 @@ Se il \_ flag di testo TVIF è impostato nel membro **mask** della struttura [**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ getitema** (ANSI)<br/>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ GETITEMA** (ANSI)<br/>                   |
 
 
 

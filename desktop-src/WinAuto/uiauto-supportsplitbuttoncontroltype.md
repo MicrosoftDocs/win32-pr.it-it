@@ -1,19 +1,19 @@
 ---
 title: Tipo di controllo SplitButton
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo SplitButton.
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo SplitButton.
 ms.assetid: ca4f8e45-7487-4a8b-9df5-edc2b0e56663
 keywords:
 - Automazione interfaccia utente, supporto per il tipo di controllo SplitButton
 - Automazione interfaccia utente, tipo di controllo SplitButton
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo SplitButton
-- Automazione interfaccia utente, proprietà per il tipo di controllo SplitButton
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo SplitButton
-- Automazione interfaccia utente, eventi per il tipo di controllo SplitButton
+- Automazione interfaccia utente struttura ad albero per il tipo di controllo SplitButton
+- Automazione interfaccia utente,proprietà per il tipo di controllo SplitButton
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo SplitButton
+- Automazione interfaccia utente,eventi per il tipo di controllo SplitButton
 - strutture ad albero, tipo di controllo SplitButton
-- Proprietà, tipo di controllo SplitButton
+- proprietà, tipo di controllo SplitButton
 - pattern di controllo, tipo di controllo SplitButton
 - eventi, tipo di controllo SplitButton
-- supporto per il tipo di controllo SplitButton
+- Supporto per il tipo di controllo SplitButton
 - Tipo di controllo SplitButton
 - tipi di controllo, struttura ad albero per il tipo di controllo SplitButton
 - tipi di controllo, pattern di controllo per il tipo di controllo SplitButton
@@ -21,20 +21,20 @@ keywords:
 - tipi di controllo, SplitButton
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c56cd6b22838dfa92ba25ce05e74d228f4173ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb04f75a075fdd10b1cf31db01d09c6a9d9fd9a5d78c7c0499d9196a9ff8a956
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118825229"
 ---
 # <a name="splitbutton-control-type"></a>Tipo di controllo SplitButton
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **SplitButton** .
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo SplitButton.**
 
-Il controllo pulsante di divisione consente di eseguire un'azione su un controllo ed espandere il controllo per visualizzare un elenco di altre possibili azioni che è possibile eseguire.
+Il controllo pulsante di menu suddiviso consente di eseguire un'azione su un controllo e di espandere il controllo per visualizzare un elenco di altre possibili azioni che è possibile eseguire.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **SplitButton** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli pulsante di divisione in cui il Framework dell'interfaccia utente/piattaforma integra il supporto di automazione interfaccia utente per i tipi di controllo e i pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente struttura ad albero, le proprietà, i pattern di controllo e gli eventi per il **tipo di controllo SplitButton.** I Automazione interfaccia utente si applicano a tutti i controlli pulsante di menu suddiviso in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -47,7 +47,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli pulsante di suddivisione e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente relativo ai controlli pulsante di menu suddiviso e descrive gli elementi che possono essere contenuti in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica [Automazione interfaccia utente albero.](uiauto-treeoverview.md)
 
 
 
@@ -71,7 +71,7 @@ Nella tabella seguente viene illustrata una tipica visualizzazione del controllo
 <li>Text (0 o 1)</li>
 <li>Button (1 o 2)
 <ul>
-<li>Menu (0 o 1; viene visualizzato come elemento figlio di un pulsante secondario che supporta il pattern ExpandCollapse)
+<li>Menu (0 o 1; viene visualizzato come elemento figlio di un pulsante secondario che supporta il modello ExpandCollapse)
 <ul>
 <li>MenuItem (da 1 a molti)</li>
 </ul></li>
@@ -93,72 +93,72 @@ Nella tabella seguente viene illustrata una tipica visualizzazione del controllo
 
 
 
- 
+ 
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il tipo di controllo **SplitButton** . Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+La tabella seguente elenca le Automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per il **tipo di controllo SplitButton.** Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di [proprietà da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
 | Proprietà di automazione interfaccia utente                                                                                              | Valore           | Note                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note.      | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                         |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | Vedere le note.      | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue un hit testing specializzato, eseguire l'override e fornire un punto selezionabile. |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **SplitButton** | Questo valore è uguale per tutti i framework dell'interfaccia utente.                                                                                                                                                        |
-| [**\_HELPTEXTPROPERTYID UIA**](uiauto-automation-element-propids.md)                         | Vedere le note.      | Il testo della Guida può indicare il risultato dell'attivazione del pulsante di menu combinato, che in genere è lo stesso tipo di informazioni visualizzate mediante una descrizione comando.                                                   |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di menu combinato contiene informazioni per l'utente finale.                                                                                                                                      |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di menu combinato è visibile all'utente finale.                                                                                                                                                 |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | NULL            | I controlli pulsante di menu combinato non hanno un'etichetta di testo statico.                                                                                                                                               |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note.      | Stringa localizzata corrispondente al tipo di controllo **SplitButton** . Il valore predefinito è "Split Button" per en-US o English (Stati Uniti).                                                        |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note.      | Testo utilizzato per assegnare un'etichetta al pulsante di suddivisione. Ogni volta che viene usata un'immagine per etichettare un pulsante di suddivisione, è necessario specificare il testo alternativo per la proprietà nome pulsante di divisione.                              |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note.      | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                         |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note.      | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                             |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note.      | Supportata se è presente un rettangolo di delimitazione. Se non tutti i punti all'interno del rettangolo di delimitazione sono selezionabili e l'elemento esegue hit testing specializzati, eseguire l'override e fornire un punto selezionabile. |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **SplitButton** | Questo valore è uguale per tutti i framework dell'interfaccia utente.                                                                                                                                                        |
+| [**UIA \_ HelpTextPropertyId**](uiauto-automation-element-propids.md)                         | Vedere le note.      | Il testo della Guida può indicare il risultato dell'attivazione del pulsante di menu combinato, che in genere è lo stesso tipo di informazioni visualizzate mediante una descrizione comando.                                                   |
+| [**\_IsContentElementPropertyId dell'interfaccia utente**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di menu combinato contiene informazioni per l'utente finale.                                                                                                                                      |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true            | Il controllo pulsante di menu combinato è visibile all'utente finale.                                                                                                                                                 |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note.      | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                            |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL            | I controlli pulsante di menu combinato non hanno un'etichetta di testo statico.                                                                                                                                               |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note.      | Stringa localizzata corrispondente al **tipo di controllo SplitButton.** Il valore predefinito è "split button" per en-US o English (Stati Uniti).                                                        |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note.      | Testo utilizzato per etichettare il pulsante di menu suddiviso. Ogni volta che un'immagine viene usata per etichettare un pulsante di menu suddiviso, è necessario fornire testo alternativo per la proprietà Name del pulsante di menu suddiviso.                              |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati da tutti i controlli pulsante di comando combinato. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente di controllo personalizzati che devono essere supportati da tutti i controlli pulsante di menu suddiviso. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo                                                   | Supporto  | Note                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Necessario | Poiché i pulsanti Split hanno sempre la possibilità di espandere un elenco di opzioni, devono supportare il pattern di controllo [ExpandCollapse](uiauto-implementingexpandcollapse.md) .                                                      |
-| [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider)                 | Necessario | Poiché i pulsanti Split hanno sempre un'azione predefinita associata al metodo [**IInvokeProvider:: Invoke**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iinvokeprovider-invoke) , devono supportare il pattern di controllo [Invoke](uiauto-implementinginvoke.md) . |
+| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Necessario | Poiché i pulsanti di divisione hanno sempre la possibilità di espandere un elenco di opzioni, devono supportare il pattern di controllo [ExpandCollapse.](uiauto-implementingexpandcollapse.md)                                                      |
+| [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider)                 | Necessario | Poiché i pulsanti di divisione hanno sempre un'azione predefinita associata al metodo [**IInvokeProvider::Invoke,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iinvokeprovider-invoke) devono supportare il pattern di controllo [Invoke.](uiauto-implementinginvoke.md) |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente che sono necessari per supportare i controlli pulsante di suddivisione. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+La tabella seguente elenca gli eventi Automazione interfaccia utente che i controlli pulsante di menu suddiviso devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                                                | Note                                                                                                                      |
+| Automazione interfaccia utente evento                                                                                                                                                | Note                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                   |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId.                              |                                                                                                                            |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ExpandCollapseExpandCollapseStatePropertyId. |                                                                                                                            |
-| [**\_Richiama \_ InvokedEventId**](uiauto-event-ids.md)                                                                                  |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsEnabledPropertyId.                                              | Se il controllo supporta la proprietà [**IsEnabled**](uiauto-automation-element-propids.md) , deve supportare questo evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.                                          | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento. |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                               |                                                                                                                            |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                                   |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                              |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ExpandCollapseExpandCollapseStatePropertyId.**](uiauto-control-pattern-propids.md) |                                                                                                                            |
+| [**UIA \_ Invoke \_ InvokedEventId**](uiauto-event-ids.md)                                                                                  |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                              | Se il controllo supporta la [**proprietà IsEnabled,**](uiauto-automation-element-propids.md) deve supportare questo evento.   |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                          | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento. |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                               |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="splitbutton-control-type-example"></a>Esempio di tipo di controllo SplitButton
 
-Nell'immagine seguente viene illustrato un controllo che implementa il tipo di controllo **SplitButton** .
+L'immagine seguente illustra un controllo che implementa il **tipo di controllo SplitButton.**
 
-![screenshot che mostra l'esempio di un controllo SplitButton](images/splitbuttonxmpl.jpg)
+![Screenshot che mostra l'esempio di un controllo splitbutton](images/splitbuttonxmpl.jpg)
 
 
 
@@ -169,16 +169,16 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Albero di automazione interfaccia utente-visualizzazione controlli</th>
-<th>Albero di automazione interfaccia utente-visualizzazione contenuto</th>
+<th>Automazione interfaccia utente struttura ad albero- Visualizzazione controlli</th>
+<th>Automazione interfaccia utente struttura ad albero- Visualizzazione contenuto</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><ul>
-<li>&quot;Nome SplitButton &quot; (Invoke, ExpandCollapse)
+<li>Nome splitbutton &quot; &quot; (Invoke, ExpandCollapse)
 <ul>
-<li>&quot;Opzione altro pulsante &quot; (richiama)
+<li>Opzione &quot; Pulsante Altro &quot; (Richiama)
 <ul>
 <li>Menu
 <ul>
@@ -189,9 +189,9 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 </ul></li>
 </ul></td>
 <td><ul>
-<li>&quot;Nome SplitButton &quot; (Invoke, ExpandCollapse)
+<li>Nome splitbutton &quot; &quot; (Invoke, ExpandCollapse)
 <ul>
-<li>&quot;Opzione altro pulsante &quot; (richiama)
+<li>Opzione &quot; Pulsante Altro &quot; (Richiama)
 <ul>
 <li>Menu
 <ul>
@@ -207,7 +207,7 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -222,9 +222,9 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

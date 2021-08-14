@@ -1,10 +1,10 @@
 ---
-title: Attributo Remote-Source
-description: Puntatore indietro a oggetti esterni.
+title: Remote-Source attributo
+description: Puntatore all'indietro a oggetti estranei.
 ms.assetid: 99d6d80f-b11a-48f2-93c9-866a99105488
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Remote-Source attribute
+- Remote-Source schema AD dell'attributo
 - Schema AD dell'attributo remoteSource
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 147cfb24c72c4e0250d03def69d5cb5408778780
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ce5b833f409822934125eced7622e8aeeb38f8f9876cd446aa16ec5f9961747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423822"
 ---
-# <a name="remote-source-attribute"></a>Attributo Remote-Source
+# <a name="remote-source-attribute"></a>Remote-Source attributo
 
-Puntatore indietro a oggetti esterni.
+Puntatore all'indietro a oggetti estranei.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Remote-Source                               |
-| LDAP-Display-Name | remoteSource                                |
+| Ldap-Display-Name | remoteSource                                |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.107                      |
-| System-ID-GUID    | bf967a14-0de6-11d0-a285-00aa003049e2        |
+| System-Id-Guid    | bf967a14-0de6-11d0-a285-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Puntatore indietro a oggetti esterni.
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| È a valore singolo       | Vero                                                              |
+| Is-Single-Valued       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classi utilizzate in        | [**Messaggio remoto-destinatario**](c-remotemailrecipient.md)<br/> |
+| Classi usate in        | [**Destinatario della posta remota**](c-remotemailrecipient.md)<br/> |
 
 
 

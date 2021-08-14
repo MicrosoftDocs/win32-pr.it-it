@@ -1,9 +1,9 @@
 ---
-title: WM/umore
-description: L'attributo WM/mood contiene un nome di categoria per lo stato del contenuto.
+title: WM/Wm/Wm
+description: L'attributo WM/Attribute contiene un nome di categoria per l'inizio del contenuto.
 ms.assetid: 04a56354-e326-4c42-b124-249fa4d95ce7
 keywords:
-- Formato di Windows Media WM/Mood
+- WM/Wm/Wm Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea0a4380eba1304b34a24e1c24e306515614336
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 46a6cee8782a6bcec197378eb3d0d17afcebce5dde50da4c278f20b1aaf0340f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195651"
 ---
-# <a name="wmmood"></a>WM/umore
+# <a name="wmmood"></a>WM/Wm/Wm
 
-L'attributo **WM/mood** contiene un nome di categoria per lo stato del contenuto.
+**L'attributo WM/Attribute** contiene un nome di categoria per l'inizio del contenuto.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMMood
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Esempio
 
@@ -37,11 +37,11 @@ g \_ wszWMMood
 
 | Tipo file | Valore di esempio |
 |-----------|---------------|
-| Tutti       | Gioiosa      |
+| Tutti       | "Ous"      |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,9 +50,9 @@ g \_ wszWMMood
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Composizione dei pixel.
+description: Composizione in pixel.
 ms.assetid: e2bb7f82-10dc-4fa0-875d-fc58c133024d
-title: System. Photo. PhotometricInterpretation
+title: System.Photo.PhotometricInterpretation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79f6b431470780def946dbb8958e9e3eb6698322
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4e1a39928483b5d60f8d5dec35af27ab231da81dd8a1b6443a7b82e53deddf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228121"
 ---
-# <a name="systemphotophotometricinterpretation"></a>System. Photo. PhotometricInterpretation
+# <a name="systemphotophotometricinterpretation"></a>System.Photo.PhotometricInterpretation
 
-Composizione dei pixel. Nei dati compressi JPEG viene utilizzato un marcatore JPEG anziché questa proprietà.
+Composizione in pixel. Nei dati compressi JPEG viene usato un marcatore JPEG anziché questa proprietà.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -71,15 +71,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
-Il valore predefinito dell' `isInnate` attributo dell'elemento **TypeInfo** è stato modificato da **false** a **true** a partire da Windows Vista con Service Pack 1 (SP1).
+Il valore predefinito dell'attributo dell'elemento typeInfo è stato modificato da `isInnate` **false** a **true** Windows Vista con Service Pack 1  (SP1).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -88,13 +88,13 @@ Il valore predefinito dell' `isInnate` attributo dell'elemento **TypeInfo** è s
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -103,13 +103,13 @@ Il valore predefinito dell' `isInnate` attributo dell'elemento **TypeInfo** è s
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

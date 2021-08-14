@@ -1,10 +1,10 @@
 ---
-title: Struttura MPSIGUPDATE_DATA (MpClient. h)
-description: Dati di notifica passati alla funzione di callback dell'aggiornamento della firma.
+title: MPSIGUPDATE_DATA (MpClient.h)
+description: Dati di notifica passati alla funzione di callback di aggiornamento della firma.
 ms.assetid: E999ABC2-CC72-43CC-86D9-4F29E9128E1A
 keywords:
-- Struttura MPSIGUPDATE_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPSIGUPDATE_DATA
+- MPSIGUPDATE_DATA funzionalità dell'ambiente Windows legacy
+- PMPSIGUPDATE_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 442b19da394043b6fc6b8693f51c5f150233f970
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3c117b92882a24a825aee5c5b008e10721c40b8a93d26a9a677bb79858635c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476253"
 ---
-# <a name="mpsigupdate_data-structure"></a>\_Struttura dei dati MPSIGUPDATE
+# <a name="mpsigupdate_data-structure"></a>Struttura MPSIGUPDATE \_ DATA
 
-Dati di notifica passati alla funzione di callback dell'aggiornamento della firma.
+Dati di notifica passati alla funzione di callback di aggiornamento della firma.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Stima della percentuale in tutti gli aggiornamenti scaricati e/o installati.
+Stima della percentuale tra tutti gli aggiornamenti scaricati e/o installati.
 
 </dd> <dt>
 
@@ -75,14 +75,14 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valore di indice in base zero che specifica quale aggiornamento tra quelli richiesti è attualmente in fase di download e/o di installazione.
+Valore di indice in base zero che specifica quale aggiornamento tra quelli necessari è attualmente in fase di download e/o installazione.
 
 </dd> <dt>
 
 **eType**
 </dt> <dd>
 
-Tipo: **MPSIGUPDATE \_**
+Tipo: **MPSIGUPDATE \_ TYPE**
 
 </dd> <dd>
 
@@ -92,14 +92,14 @@ Tipo di aggiornamento. Uno dei valori possibili seguenti:
 
 | Valore                                                                                                                                                                                                                             | Significato                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <span id="MPSIGUPDATE_TYPE_NONE"></span><span id="mpsigupdate_type_none"></span><dl> <dt>**\_tipo MPSIGUPDATE \_ None**</dt> </dl>                                            |                                                                             |
-| <span id="MPSIGUPDATE_TYPE_MANAGED"></span><span id="mpsigupdate_type_managed"></span><dl> <dt>**\_tipo MPSIGUPDATE \_ gestito**</dt> </dl>                                   | Aggiornamento WSUS. Annulla è necessario disporre dei diritti di amministratore.<br/>               |
-| <span id="MPSIGUPDATE_TYPE_HTTP"></span><span id="mpsigupdate_type_http"></span><dl> <dt>**MPSIGUPDATE \_ tipo \_ http**</dt> </dl>                                            | Aggiornamento HTTP. Diritti di amministratore non necessari per l'annullamento.<br/>          |
-| <span id="MPSIGUPDATE_TYPE_HTTP_SRV"></span><span id="mpsigupdate_type_http_srv"></span><dl> <dt>**MPSIGUPDATE \_ digitare \_ http \_ SRV**</dt> </dl>                               | HTTP dal servizio. Annulla è necessario disporre dei diritti di amministratore.<br/>         |
-| <span id="MPSIGUPDATE_TYPE_UNC"></span><span id="mpsigupdate_type_unc"></span><dl> <dt>**\_UNC di tipo MPSIGUPDATE \_**</dt> </dl>                                               | Condivisione UNC. Diritti di amministratore non necessari per l'annullamento.<br/>            |
-| <span id="MPSIGUPDATE_TYPE_UNMANAGED"></span><span id="mpsigupdate_type_unmanaged"></span><dl> <dt>**tipo di MPSIGUPDATE \_ \_ non gestito**</dt> </dl>                             | Aggiornamento di MU/WU. Annulla è necessario disporre dei diritti di amministratore.<br/>              |
-| <span id="MPSIGUPDATE_TYPE_MANAGED_PLATFORM"></span><span id="mpsigupdate_type_managed_platform"></span><dl> <dt>**\_ \_ piattaforma gestita di tipo MPSIGUPDATE \_**</dt> </dl>       | Aggiornamento WSUS per la piattaforma. Annulla è necessario disporre dei diritti di amministratore.<br/>  |
-| <span id="MPSIGUPDATE_TYPE_UNMANAGED_PLATFORM"></span><span id="mpsigupdate_type_unmanaged_platform"></span><dl> <dt>**MPSIGUPDATE \_ tipo \_ piattaforma non gestita \_**</dt> </dl> | Aggiornamento di MU/WU per la piattaforma. Annulla è necessario disporre dei diritti di amministratore.<br/> |
+| <span id="MPSIGUPDATE_TYPE_NONE"></span><span id="mpsigupdate_type_none"></span><dl> <dt>**MPSIGUPDATE \_ TYPE \_ NONE**</dt> </dl>                                            |                                                                             |
+| <span id="MPSIGUPDATE_TYPE_MANAGED"></span><span id="mpsigupdate_type_managed"></span><dl> <dt>**TIPO MPSIGUPDATE \_ \_ GESTITO**</dt> </dl>                                   | Aggiornamento WSUS. L'annullamento richiede diritti di amministratore.<br/>               |
+| <span id="MPSIGUPDATE_TYPE_HTTP"></span><span id="mpsigupdate_type_http"></span><dl> <dt>**MPSIGUPDATE \_ TYPE \_ HTTP**</dt> </dl>                                            | Aggiornamento HTTP. Diritti di amministratore non necessari per l'annullamento.<br/>          |
+| <span id="MPSIGUPDATE_TYPE_HTTP_SRV"></span><span id="mpsigupdate_type_http_srv"></span><dl> <dt>**MPSIGUPDATE \_ TYPE \_ HTTP \_ SRV**</dt> </dl>                               | HTTP dal servizio. L'annullamento richiede diritti di amministratore.<br/>         |
+| <span id="MPSIGUPDATE_TYPE_UNC"></span><span id="mpsigupdate_type_unc"></span><dl> <dt>**TIPO MPSIGUPDATE \_ \_ UNC**</dt> </dl>                                               | Condivisione UNC. Diritti di amministratore non necessari per l'annullamento.<br/>            |
+| <span id="MPSIGUPDATE_TYPE_UNMANAGED"></span><span id="mpsigupdate_type_unmanaged"></span><dl> <dt>**TIPO MPSIGUPDATE \_ \_ NON GESTITO**</dt> </dl>                             | Aggiornamento MU/WU. L'annullamento richiede diritti di amministratore.<br/>              |
+| <span id="MPSIGUPDATE_TYPE_MANAGED_PLATFORM"></span><span id="mpsigupdate_type_managed_platform"></span><dl> <dt>**PIATTAFORMA GESTITA DI TIPO MPSIGUPDATE \_ \_ \_**</dt> </dl>       | Aggiornamento WSUS per PLATFORM. L'annullamento richiede diritti di amministratore.<br/>  |
+| <span id="MPSIGUPDATE_TYPE_UNMANAGED_PLATFORM"></span><span id="mpsigupdate_type_unmanaged_platform"></span><dl> <dt>**PIATTAFORMA NON \_ GESTITA DI TIPO MPSIGUPDATE \_ \_**</dt> </dl> | Aggiornamento mu/WU per PLATFORM. L'annullamento richiede diritti di amministratore.<br/> |
 
 
 
@@ -110,7 +110,7 @@ Tipo di aggiornamento. Uno dei valori possibili seguenti:
 **Fase**
 </dt> <dd>
 
-Tipo: **\_ \_ fase di aggiornamento MP**
+Tipo: **MP \_ UPDATE \_ STAGE**
 
 </dd> <dd>
 
@@ -120,10 +120,10 @@ Fase di aggiornamento. Uno dei valori possibili seguenti:
 
 | Valore                                                                                                                                                                         | Significato                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| <span id="MP_STAGE_UNKNOWN"></span><span id="mp_stage_unknown"></span><dl> <dt>**\_fase MP \_ sconosciuta**</dt> </dl>       | La fase di aggiornamento è sconosciuta.<br/>  |
-| <span id="MP_SEARCH_UPDATE"></span><span id="mp_search_update"></span><dl> <dt>**\_aggiornamento ricerca \_ MP**</dt> </dl>       | Fase di ricerca dell'aggiornamento.<br/>   |
-| <span id="MP_DOWNLOAD_UPDATE"></span><span id="mp_download_update"></span><dl> <dt>**\_aggiornamento del download MP \_**</dt> </dl> | Fase di download dell'aggiornamento.<br/> |
-| <span id="MP_INSTALL_UPDATE"></span><span id="mp_install_update"></span><dl> <dt>**\_aggiornamento installazione \_ MP**</dt> </dl>    | Aggiornare la fase di installazione.<br/>  |
+| <span id="MP_STAGE_UNKNOWN"></span><span id="mp_stage_unknown"></span><dl> <dt>**MP \_ STAGE \_ UNKNOWN**</dt> </dl>       | Fase di aggiornamento sconosciuta.<br/>  |
+| <span id="MP_SEARCH_UPDATE"></span><span id="mp_search_update"></span><dl> <dt>**AGGIORNAMENTO \_ DI MP SEARCH \_**</dt> </dl>       | Aggiornare la fase di ricerca.<br/>   |
+| <span id="MP_DOWNLOAD_UPDATE"></span><span id="mp_download_update"></span><dl> <dt>**AGGIORNAMENTO \_ DEL DOWNLOAD \_ MP**</dt> </dl> | Fase di download dell'aggiornamento.<br/> |
+| <span id="MP_INSTALL_UPDATE"></span><span id="mp_install_update"></span><dl> <dt>**MP \_ INSTALL \_ UPDATE**</dt> </dl>    | Fase di installazione dell'aggiornamento.<br/>  |
 
 
 
@@ -134,7 +134,7 @@ Fase di aggiornamento. Uno dei valori possibili seguenti:
 **Percorso**
 </dt> <dd>
 
-Tipo: **\_ \_ LPWSTR stringa MIDL MP**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -148,9 +148,9 @@ Percorso di aggiornamento.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

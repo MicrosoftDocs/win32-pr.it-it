@@ -1,7 +1,7 @@
 ---
 description: Salva una superficie in un file di immagine.
 ms.assetid: 6320e5ed-e43d-43bf-a746-5478df42941d
-title: Funzione D3DXSaveSurfaceToFileInMemory (D3dx9tex. h)
+title: Funzione D3DXSaveSurfaceToFileInMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8e8bbdd447b7154e150b3469a4b12180252ed516
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6dd6715c05be0e6472b1c630ebdda209d48dfc571d4b3d5234b80f3700e597d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986441"
 ---
-# <a name="d3dxsavesurfacetofileinmemory-function"></a>D3DXSaveSurfaceToFileInMemory (funzione)
+# <a name="d3dxsavesurfacetofileinmemory-function"></a>Funzione D3DXSaveSurfaceToFileInMemory
 
 Salva una superficie in un file di immagine.
 
@@ -44,48 +44,48 @@ HRESULT D3DXSaveSurfaceToFileInMemory(
 
 <dl> <dt>
 
-*ppDestBuf* \[ out\]
+*ppDestBuf* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un [**ID3DXBuffer**](id3dxbuffer.md) in cui viene archiviata l'immagine.
+Indirizzo di un puntatore a un [**OGGETTO ID3DXBuffer in**](id3dxbuffer.md) cui verrà archiviata l'immagine.
 
 </dd> <dt>
 
-*DestFormat* \[ in\]
+*DestFormat* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md)**
+Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md) che specifica il formato di file da utilizzare per il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **D3DXIMAGE \_ FileFormat** ad eccezione di Portable Pixmap (. ppm) e targa/Truevision Graphics Adapter (. tga).
+[**D3DXIMAGE \_ FILEFORMAT che**](./d3dximage-fileformat.md) specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (con estensione ppm) e Dell'adattatore grafico Bitmap/Truevision (TGA).
 
 </dd> <dt>
 
-*pSrcSurface* \[ in\]
+*pSrcSurface* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DSURFACE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9)**
 
-Puntatore all'interfaccia [**IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) che contiene l'immagine da salvare.
+Puntatore [**all'interfaccia IDirect3DSurface9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dsurface9) contenente l'immagine da salvare.
 
 </dd> <dt>
 
-*pSrcPalette* \[ in\]
+*pSrcPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di colori 256. Questo parametro può essere **NULL**.
+Puntatore a [**una struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
-*pSrcRect* \[ in\]
+*pSrcRect* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**Rect**](/previous-versions//dd162897(v=vs.85)) \***
+Tipo: **const [**RECT**](/previous-versions//dd162897(v=vs.85)) \***
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) . Specifica il rettangolo di origine. Impostare questo parametro su **null** per specificare l'intera immagine.
+Puntatore a una [**struttura RECT.**](/previous-versions//dd162897(v=vs.85)) Specifica il rettangolo di origine. Impostare questo parametro su **NULL per** specificare l'intera immagine.
 
 </dd> </dl>
 
@@ -105,8 +105,8 @@ Questa funzione gestisce la conversione da e verso formati di trama compressi.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

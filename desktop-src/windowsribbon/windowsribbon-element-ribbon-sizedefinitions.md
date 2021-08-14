@@ -1,9 +1,9 @@
 ---
-title: Ribbon. SizeDefinitions, proprietà
+title: Ribbon.SizeDefinitions - proprietà
 description: Rappresenta un contenitore per i modelli di layout personalizzati dei controlli della barra multifunzione.
 ms.assetid: 1f5fcffc-7f2e-4763-b0a7-4e8f46534da8
 keywords:
-- Barra multifunzione di Windows della proprietà Ribbon. SizeDefinitions
+- Proprietà Ribbon.SizeDefinitions Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b8ffe5a3339b0f32e493a1f7ddc33789526695e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24f3109c7e9f709267310415b48238b24050c7531bc0f784290876ab47706d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202257"
 ---
-# <a name="ribbonsizedefinitions-property"></a>Ribbon. SizeDefinitions, proprietà
+# <a name="ribbonsizedefinitions-property"></a>Ribbon.SizeDefinitions - proprietà
 
 Rappresenta un contenitore per i modelli di layout personalizzati dei controlli della barra multifunzione.
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                                   | Descrizione                                        |
 |---------------------------------------------------------------------------|----------------------------------------------------|
-| [**SizeDefinition**](windowsribbon-element-sizedefinition.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**SizeDefinition**](windowsribbon-element-sizedefinition.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -59,11 +59,11 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**barra multifunzione**](windowsribbon-element-ribbon.md).
+Può verificarsi al massimo una volta per ogni [**barra multifunzione.**](windowsribbon-element-ribbon.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice riportato di seguito viene illustrato un modello personalizzato di base.
+Nell'esempio di codice seguente viene illustrato un modello personalizzato di base.
 
 
 ```
@@ -90,8 +90,8 @@ Nell'esempio di codice riportato di seguito viene illustrato un modello personal
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -99,7 +99,7 @@ Nell'esempio di codice riportato di seguito viene illustrato un modello personal
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

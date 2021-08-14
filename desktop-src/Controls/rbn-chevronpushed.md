@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica RBN_CHEVRONPUSHED (COMmctrl. h)
-description: Inviato da un controllo Rebar quando viene eseguito il push di una freccia di espansione. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: RBN_CHEVRONPUSHED di notifica (Commctrl.h)
+description: Inviato da un controllo Rebar quando viene premuto un elemento chevron. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 58aa2c9d-8ab6-46ee-b32f-5c04fb7afa84
 keywords:
-- Controlli di Windows per il codice di notifica RBN_CHEVRONPUSHED
+- RBN_CHEVRONPUSHED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab28d992b6d4a617b7aa7ee144eb50aef3b0e834
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a3f5f8d52558251524e9d978c52ae703565a9641febdd53190925cfb8b127160
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985321"
 ---
-# <a name="rbn_chevronpushed-notification-code"></a>\_Codice di notifica CHEVRONPUSHED di RBN
+# <a name="rbn_chevronpushed-notification-code"></a>Codice di \_ notifica RBN CHEVRONPUSHED
 
-Inviato da un controllo Rebar quando viene eseguito il push di una freccia di espansione. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Inviato da un controllo Rebar quando viene premuto un elemento chevron. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ RBN_CHEVRONPUSHED
 *lParam* 
 </dt> <dd>
 
-Puntatore alla struttura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) della banda.
+Puntatore alla struttura [**NMREBARCHEVRON della**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) banda.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 ## <a name="remarks"></a>Commenti
 
-Quando un'applicazione riceve il codice di notifica, è responsabile della visualizzazione di un menu popup con elementi per ogni strumento nascosto. Usare il membro **RC** della struttura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) per trovare la posizione corretta per il menu di scelta rapida.
+Quando un'applicazione riceve questo codice di notifica, è responsabile della visualizzazione di un menu popup con voci per ogni strumento nascosto. Usare il **membro rc** della struttura [**NMREBARCHEVRON**](/windows/win32/api/commctrl/ns-commctrl-nmrebarchevron) per trovare la posizione corretta per il menu di scelta rapida.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Quando un'applicazione riceve il codice di notifica, è responsabile della visua
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

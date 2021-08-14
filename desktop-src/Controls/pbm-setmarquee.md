@@ -1,9 +1,9 @@
 ---
-title: Messaggio PBM_SETMARQUEE (COMmctrl. h)
-description: Imposta l'indicatore di stato sulla modalità marquee. Questo fa sì che l'indicatore di stato si sposti come un Marquee.
+title: PBM_SETMARQUEE messaggio (Commctrl.h)
+description: Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato viene spostato come un rettangolo di selezione.
 ms.assetid: 6501bcb9-a711-470f-874f-f3484d3613b6
 keywords:
-- Controlli di Windows Message PBM_SETMARQUEE
+- PBM_SETMARQUEE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9229291113f034924cf9ce8112c0e99376d37932
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f724f87faa6e989fddb17e8d6fb3b115dd04859ea426addb7d4c0b893aff407a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986141"
 ---
-# <a name="pbm_setmarquee-message"></a>\_Messaggio di RISELEZIONE PBM
+# <a name="pbm_setmarquee-message"></a>Messaggio PBM \_ SETMARQUEE
 
-Imposta l'indicatore di stato sulla modalità marquee. Questo fa sì che l'indicatore di stato si sposti come un Marquee.
+Imposta l'indicatore di stato sulla modalità di selezione. In questo modo l'indicatore di stato viene spostato come un rettangolo di selezione.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,30 +32,30 @@ Imposta l'indicatore di stato sulla modalità marquee. Questo fa sì che l'indic
 *wParam* 
 </dt> <dd>
 
-Indica se attivare o disattivare la modalità marquee.
+Indica se attivare o disattivare la modalità di selezione.
 
 </dd> <dt>
 
 *lParam* 
-</dt> <dd>Tempo, in millisecondi, tra gli aggiornamenti di animazione Marquee. Se questo parametro è zero, l'animazione Marquee viene aggiornata ogni 30 millisecondi.</dd> </dl>
+</dt> <dd>Tempo, in millisecondi, tra gli aggiornamenti dell'animazione del rettangolo di selezione. Se questo parametro è zero, l'animazione del rettangolo di selezione viene aggiornata ogni 30 millisecondi.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce sempre **true**.
+Restituisce sempre **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo messaggio quando non si conosce la quantità di avanzamento verso il completamento, ma si desidera indicare che lo stato di avanzamento è stato eseguito.
+Usare questo messaggio quando non si conosce la quantità di avanzamento verso il completamento, ma si vuole indicare che lo stato di avanzamento è in corso.
 
-Inviare il **messaggio \_ per** l'avvio o l'arresto dell'animazione.
+Inviare il **messaggio PBM \_ SETMARQUEE** per avviare o arrestare l'animazione.
 
 > [!Note]  
-> È necessario impostare lo stile del controllo su [**PBS \_ Marquee**](progress-bar-control-styles.md) prima di provare ad avviare l'animazione.
+> È necessario impostare lo stile del controllo [**su PBS \_ MARQUEE**](progress-bar-control-styles.md) prima di tentare di avviare l'animazione.
 
  
 
 > [!Note]  
-> Per questo messaggio è necessario ComCtl32.dll versione 6,00 o successiva.
+> Questo messaggio richiede ComCtl32.dll versione 6.00 o successiva.
 
  
 
@@ -65,9 +65,9 @@ Inviare il **messaggio \_ per** l'avvio o l'arresto dell'animazione.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

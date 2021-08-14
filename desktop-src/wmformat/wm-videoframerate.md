@@ -1,9 +1,9 @@
 ---
 title: WM/VideoFrameRate
-description: L'attributo WM/VideoFrameRate contiene la frequenza, in frame al secondo, del video in un flusso.
+description: L'attributo WM/VideoFrameRate contiene la frequenza, in fotogrammi al secondo, del video in un flusso.
 ms.assetid: dcab75b3-6d08-4551-9145-c8307eb70557
 keywords:
-- Formato di Windows Media WM/VideoFrameRate
+- WM/VideoFrameRate windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf28ba8864199a2b0c94151ba6f45731feaa226
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8d5b20b1d7598c32cc9dbb25b472688cd69de5b000fd1de7936babd93f391c85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698311"
 ---
 # <a name="wmvideoframerate"></a>WM/VideoFrameRate
 
-L'attributo **WM/VideoFrameRate** contiene la frequenza, in frame al secondo, del video in un flusso.
+**L'attributo WM/VideoFrameRate** contiene la frequenza, in fotogrammi al secondo, del video in un flusso.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMVideoFrameRate
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WMT \_ tipo \_ DWORD**
+**DWORD \_ DI TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,9 +38,9 @@ g \_ wszWMVideoFrameRate
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

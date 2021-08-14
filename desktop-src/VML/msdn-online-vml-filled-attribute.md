@@ -1,50 +1,50 @@
 ---
-title: Attributo riempito la
-description: Attributo riempito la
+title: Attributo compilato VML
+description: Attributo compilato VML
 ms.assetid: c5a71a8d-5310-4e58-9153-c5cc64b0a5e0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 232d8b36b6d272c3a1ee8c17f3ddeca023ab4708
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c7053263f989dbbef163e04ca19e28afa882d20347b103c97cf2db3be4b8d25b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104474187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346605"
 ---
-# <a name="vml-filled-attribute"></a>Attributo riempito la
+# <a name="vml-filled-attribute"></a>Attributo compilato VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se verrà compilato il percorso chiuso. Proprietà di lettura/scrittura. **VgTriState**.
+Determina se il percorso chiuso verrà riempito. Proprietà di lettura/scrittura. **VgTriState**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* filled = " *Expression* " >
+<v: *element* filled=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . filled = "*Expression*"
+*element* .filled="*expression*"
 
-*espressione* = *elemento*. filled
+*expression* = *elemento*.filled
 
 **Osservazioni:**
 
-Il valore viene duplicato dall'attributo **on** dell'elemento [Fill](msdn-online-vml-fill-element.md) .
+Il valore viene duplicato **dall'attributo On** dell'elemento [Fill.](msdn-online-vml-fill-element.md)
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il percorso della forma è pieno.
+Il tracciato della forma è riempito.
 
 
 ```HTML
@@ -58,8 +58,8 @@ Il percorso della forma è pieno.
 
 
 
-[Esempio di attributo compilato](/previous-versions/bb229669(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo compilato](/previous-versions/bb229669(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

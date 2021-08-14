@@ -1,9 +1,9 @@
 ---
-title: Messaggio DM_POINTERHITTEST
-description: Inviato a una finestra, quando viene rilevato per la prima volta l'input del puntatore, per determinare la destinazione di input più probabile per la manipolazione diretta.
+title: DM_POINTERHITTEST messaggio
+description: Inviato a una finestra, quando viene rilevato l'input del puntatore per la prima volta, per determinare la destinazione di input più probabile per la manipolazione diretta.
 ms.assetid: E4CE60F0-0C2A-440A-8F64-B070867A1572
 keywords:
-- Messaggi e notifiche di input del messaggio DM_POINTERHITTEST
+- DM_POINTERHITTEST messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 23efab4606f758acfffdd02fa4c53a729f1f4a99
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fda57a0c7084ae0c6ab85514244ed531a182108ec5dce7aae7794de2c38c903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482472"
 ---
-# <a name="dm_pointerhittest-message"></a>Messaggio DM_POINTERHITTEST
+# <a name="dm_pointerhittest-message"></a>DM_POINTERHITTEST messaggio
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Inviato a una finestra, quando viene rilevato per la prima volta l'input del puntatore, per determinare la destinazione di input più probabile per la [manipolazione diretta](/previous-versions/windows/desktop/directmanipulation/direct-manipulation-portal).
+Inviato a una finestra, quando viene rilevato l'input del puntatore per la prima volta, per determinare la destinazione di input più probabile per [la manipolazione diretta.](/previous-versions/windows/desktop/directmanipulation/direct-manipulation-portal)
 
 > \[! Importante\]  
-> Le applicazioni desktop devono essere compatibili con DPI. Se l'app non è compatibile con DPI, le coordinate dello schermo contenute nei messaggi puntatore e le strutture correlate potrebbero sembrare non accurate a causa della virtualizzazione DPI. La virtualizzazione DPI fornisce il supporto per il ridimensionamento automatico per le applicazioni che non sono compatibili con DPI ed è attivo per impostazione predefinita (gli utenti possono disabilitarlo). Per altre informazioni, vedere [scrittura di applicazioni Win32 ad alta risoluzione](/previous-versions//dd464660(v=vs.85)).
+> Le app desktop devono essere in grado di riconoscere DPI. Se l'app non è in grado di riconoscere DPI, le coordinate dello schermo contenute nei messaggi del puntatore e nelle strutture correlate potrebbero apparire inesatte a causa della virtualizzazione DPI. La virtualizzazione DPI offre il supporto automatico del ridimensionamento per le applicazioni che non supportano DPI ed è attiva per impostazione predefinita (gli utenti possono disattivarla). Per altre informazioni, vedere [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
 
  
 
@@ -67,9 +67,9 @@ NULL
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

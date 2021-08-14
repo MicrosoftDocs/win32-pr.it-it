@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_PROPERTY_TYPE (WinBio. h)
-description: Specificare l'origine delle informazioni sulle proprietà nella funzione WinBioGetProperty.
+title: WINBIO_PROPERTY_TYPE costanti (Winbio.h)
+description: Specificare l'origine delle informazioni sulla proprietà nella funzione WinBioGetProperty.
 ms.assetid: 82C54092-032B-4F32-820E-A1D4BB81ECCE
 topic_type:
 - apiref
@@ -15,20 +15,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4a1420af18bfa4d2ba5d0457b22cd5f77e7b0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be7b7c17da736e117f099ec66dafc4ef2cfbba037f90a35f2522d7710cb3cef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909359"
 ---
-# <a name="winbio_property_type-constants"></a>Costanti del tipo di \_ Proprietà WINBIO \_
+# <a name="winbio_property_type-constants"></a>Costanti PROPERTY \_ \_ TYPE WINBIO
 
-Le costanti **di \_ \_ tipo di proprietà WINBIO** seguenti possono essere utilizzate per specificare l'origine delle informazioni sulle proprietà nella funzione [**WinBioGetProperty**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty) .
+Le costanti **PROPERTY \_ \_ TYPE WINBIO** seguenti possono essere usate per specificare l'origine delle informazioni sulle proprietà nella [**funzione WinBioGetProperty.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetproperty)
 
 <dl> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_SESSION"></span><span id="winbio_property_type_session"></span>**\_sessione del \_ tipo di proprietà WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_SESSION"></span><span id="winbio_property_type_session"></span>**SESSIONE DEL TIPO DI PROPRIETÀ WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -38,7 +38,7 @@ La proprietà si applica a una sessione biometrica specifica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_TEMPLATE"></span><span id="winbio_property_type_template"></span>**\_modello di \_ tipo di proprietà WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_TEMPLATE"></span><span id="winbio_property_type_template"></span>**MODELLO DI TIPO DI PROPRIETÀ WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -48,7 +48,7 @@ La proprietà si applica a un modello biometrico specifico.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_UNIT"></span><span id="winbio_property_type_unit"></span>**\_unità del \_ tipo di proprietà WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_UNIT"></span><span id="winbio_property_type_unit"></span>**UNITÀ DEL TIPO DI PROPRIETÀ WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -58,12 +58,12 @@ La proprietà si applica a un'unità biometrica specifica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WINBIO_PROPERTY_TYPE_ACCOUNT"></span><span id="winbio_property_type_account"></span>**\_account del \_ tipo di proprietà WINBIO \_**
+<span id="WINBIO_PROPERTY_TYPE_ACCOUNT"></span><span id="winbio_property_type_account"></span>**ACCOUNT DEL TIPO DI PROPRIETÀ WINBIO \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 
 
-La proprietà si applica a un account utente specifico che ha una registrazione biometrica. Questo valore è supportato a partire da Windows 10.
+La proprietà si applica a un account utente specifico con registrazione biometrica. Questo valore è supportato a partire da Windows 10.
 
 
 </dt> </dl> </dd> </dl>
@@ -74,9 +74,9 @@ La proprietà si applica a un account utente specifico che ha una registrazione 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>WinBio. h (include WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>Winbio.h (includere Winbio.h)</dt> </dl> |
 
 
 

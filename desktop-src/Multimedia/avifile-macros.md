@@ -4,22 +4,22 @@ description: Macro AVIFile
 ms.assetid: 5544e706-89e9-46e8-8703-ad978e675bbf
 keywords:
 - Video per Windows (VFW), macro AVIFile
-- VFW (video per Windows), macro AVIFile
-- Macro AVIFile, riferimento
-- Riferimento AVIFile, macro
+- VFW (Video per Windows),macro AVIFile
+- macro AVIFile, informazioni di riferimento
+- Informazioni di riferimento su AVIFile, macro
 - informazioni di riferimento per AVIFile, macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3963c8d937e8fabdaf9006d349a1ab6b1a103ab8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 25356bd7086a24ee82b2252e8a5d80b051680c431fd8b1b11e36afddcf5cf406
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375618"
 ---
 # <a name="avifile-macros"></a>Macro AVIFile
 
-Con AVIFile vengono usate le macro seguenti.
+Le macro seguenti vengono usate con AVIFile.
 
 -   [**AVIStreamDataSize**](/windows/desktop/api/Vfw/nf-vfw-avistreamdatasize)
 -   [**AVIStreamEnd**](/windows/desktop/api/Vfw/nf-vfw-avistreamend)
@@ -47,12 +47,12 @@ Con AVIFile vengono usate le macro seguenti.
 
 <dl> <dt>
 
-[Riferimento a AVIFile](avifile-reference.md)
+[Informazioni di riferimento su AVIFile](avifile-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

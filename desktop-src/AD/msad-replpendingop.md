@@ -1,11 +1,11 @@
 ---
-title: Classe MSAD_ReplPendingOp
-description: Rappresenta la \_ struttura op REPL di DS \_ , che descrive un'attività di replica attualmente in esecuzione o in attesa di esecuzione.
+title: MSAD_ReplPendingOp classe
+description: Rappresenta la struttura DS REPL OP, che descrive un'attività di replica attualmente in esecuzione \_ \_ o in sospeso.
 ms.assetid: d1c101fa-ae33-48da-9b00-93fde553a4f9
 ms.tgt_platform: multiple
 keywords:
-- Classe MSAD_ReplPendingOp Active Directory
-- Classe MSAD_ReplPendingOp Active Directory, descritta
+- MSAD_ReplPendingOp classe Active Directory
+- MSAD_ReplPendingOp classe Active Directory , descritto
 topic_type:
 - apiref
 api_name:
@@ -28,16 +28,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f1c3faddac915f602104d7e5dc4e9b6bc7d6944
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 164c5ebe672a52bb399727940e5e51b98904f7db322cc362425dabda25f547a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186076"
 ---
-# <a name="msad_replpendingop-class"></a>\_Classe MSAD ReplPendingOp
+# <a name="msad_replpendingop-class"></a>Classe \_ MSAD ReplPendingOp
 
-Rappresenta la [**struttura \_ \_ op REPL di DS**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_opw) , che descrive un'attività di replica attualmente in esecuzione o in attesa di esecuzione. Questa struttura viene restituita dalla funzione [**DsReplicaGetInfo**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicagetinfow) .
+Rappresenta la [**struttura DS \_ REPL \_ OP,**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_opw) che descrive un'attività di replica attualmente in esecuzione o in sospeso. Questa struttura viene restituita [**dalla funzione DsReplicaGetInfo.**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicagetinfow)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,159 +62,159 @@ class MSAD_ReplPendingOp
 
 ## <a name="members"></a>Members
 
-La **classe \_ ReplPendingOp di MSAD** dispone di questi tipi di membri:
+La **classe MSAD \_ ReplPendingOp** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ReplPendingOp di MSAD** dispone di queste proprietà.
+La **classe MSAD \_ ReplPendingOp** ha queste proprietà.
 
 <dl> <dt>
 
 **DsaAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene l'indirizzo di rete specifico del trasporto del server remoto associato a questa operazione. **Null** se non è presente alcun server remoto associato a questa operazione.
+Ottiene l'indirizzo di rete specifico del trasporto del server remoto associato a questa operazione. **NULL** se non è presente alcun server remoto associato a questa operazione.
 
 </dd> <dt>
 
 **DsaDN**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il percorso X. 500 del DSA associato al server remoto che corrisponde a questa operazione. **Null** se nessun server remoto corrisponde a questa operazione.
+Ottiene il percorso X.500 dell'oggetto DSA associato al server remoto che corrisponde a questa operazione. **NULL** se nessun server remoto corrisponde a questa operazione.
 
 </dd> <dt>
 
 **DsaObjGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il valore dell'attributo [**objectGUID**](/windows/desktop/ADSchema/a-objectguid) dell'oggetto DSA identificato dalla proprietà **DsaDN** .
+Ottiene il valore [**dell'attributo objectGuid**](/windows/desktop/ADSchema/a-objectguid) dell'oggetto DSA identificato dalla **proprietà DsaDN.**
 
 </dd> <dt>
 
 **NamingContextDN**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il percorso X. 500 del contesto dei nomi (NC) associato a questa operazione.
+Ottiene il percorso X.500 del contesto dei nomi (NC) associato a questa operazione.
 
 </dd> <dt>
 
 **NamingContextObjGuid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene l'attributo [**objectGUID**](/windows/desktop/ADSchema/a-objectguid) del NC identificato dalla proprietà **NamingContextDN** .
+Ottiene [**l'attributo objectGuid**](/windows/desktop/ADSchema/a-objectguid) del NC identificato dalla **proprietà NamingContextDN.**
 
 </dd> <dt>
 
 **OpStartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene l'ora in cui è stata avviata l'operazione. **Null** se l'operazione è ancora in coda.
+Ottiene l'ora di avvio dell'operazione. **NULL** se questa operazione è ancora presente nella coda.
 
 </dd> <dt>
 
 **Opzioni**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il set di flag che fornisce dati aggiuntivi sull'operazione. Il contenuto di questo membro è determinato dal valore della proprietà **optype** .
+Ottiene il set di flag che fornisce dati aggiuntivi sull'operazione. Il contenuto di questo membro è determinato dal valore della **proprietà OpType.**
 
 <dt>
 
 <span id="DS_REPL_OP_TYPE_SYNC"></span><span id="ds_repl_op_type_sync"></span>
 
-<span id="DS_REPL_OP_TYPE_SYNC"></span><span id="ds_repl_op_type_sync"></span>**\_sincronizzazione del \_ \_ tipo op REPL DS \_**
+<span id="DS_REPL_OP_TYPE_SYNC"></span><span id="ds_repl_op_type_sync"></span>**DS \_ REPL \_ OP \_ TYPE \_ SYNC**
 
 
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più valori di **DS \_ REPSYNC \_ \** _ come definito per il parametro _Options * in [**DsReplicaSync**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicasynca).
+Contiene zero o una combinazione di uno o più valori **DS \_ \_ \* REPSYNC* _ definiti per il parametro _Options* in [**DsReplicaSync**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicasynca).
 
 </dd> <dt>
 
 <span id="DS_REPL_OP_TYPE_ADD"></span><span id="ds_repl_op_type_add"></span>
 
-<span id="DS_REPL_OP_TYPE_ADD"></span><span id="ds_repl_op_type_add"></span>**\_aggiunta del \_ \_ tipo op REPL DS \_**
+<span id="DS_REPL_OP_TYPE_ADD"></span><span id="ds_repl_op_type_add"></span>**DS \_ REPL \_ OP \_ TYPE \_ ADD**
 
 
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più valori di **DS \_ REPADD \_ \** _ come definito per il parametro _Options * in [**DsReplicaAdd**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicaadda).
+Contiene zero o una combinazione di uno o più valori **DS \_ \_ \* REPADD* _ definiti per il parametro _Options* in [**DsReplicaAdd**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicaadda).
 
 </dd> <dt>
 
 <span id="DS_REPL_OP_TYPE_DELETE"></span><span id="ds_repl_op_type_delete"></span>
 
-<span id="DS_REPL_OP_TYPE_DELETE"></span><span id="ds_repl_op_type_delete"></span>**\_eliminazione del \_ \_ tipo op REPL DS \_**
+<span id="DS_REPL_OP_TYPE_DELETE"></span><span id="ds_repl_op_type_delete"></span>**DS \_ REPL \_ OP \_ TYPE \_ DELETE**
 
 
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più valori di **DS \_ REPDEL \_ \** _ come definito per il parametro _Options * in [**DsReplicaDel**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicadela).
+Contiene zero o una combinazione di uno o più valori **DS \_ \_ \* REPDEL* _ definiti per il parametro _Options* in [**DsReplicaDel**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicadela).
 
 </dd> <dt>
 
 <span id="DS_REPL_OP_TYPE_MODIFY"></span><span id="ds_repl_op_type_modify"></span>
 
-<span id="DS_REPL_OP_TYPE_MODIFY"></span><span id="ds_repl_op_type_modify"></span>**\_ \_ \_ modifica tipo op REPL \_ di DS**
+<span id="DS_REPL_OP_TYPE_MODIFY"></span><span id="ds_repl_op_type_modify"></span>**DS \_ REPL \_ OP \_ TYPE \_ MODIFY**
 
 
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più valori di **DS \_ REPMOD \_ \** _ come definito per il parametro _Options * in [**DsReplicaModify**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicamodifya).
+Contiene zero o una combinazione di uno o più valori **DS \_ REPMOD \_ \** _ definiti per il parametro _Options* in [**DsReplicaModify**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicamodifya).
 
 </dd> <dt>
 
 <span id="DS_REPL_OP_TYPE_UPDATE_REFS"></span><span id="ds_repl_op_type_update_refs"></span>
 
-<span id="DS_REPL_OP_TYPE_UPDATE_REFS"></span><span id="ds_repl_op_type_update_refs"></span>**\_ \_ \_ refs aggiornamento del tipo \_ op \_ di DS repl**
+<span id="DS_REPL_OP_TYPE_UPDATE_REFS"></span><span id="ds_repl_op_type_update_refs"></span>**DS \_ REPL \_ OP \_ TYPE \_ UPDATE \_ REFS**
 
 
 </dt> <dd>
 
-Contiene zero o una combinazione di uno o più valori di **DS \_ REPSUPD \_ \** _ come definito per il parametro _Options * in [**DsReplicaUpdateRefs**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicaupdaterefsa).
+Contiene zero o una combinazione di uno o più valori **DS \_ \_ \* REPSUPD* _ definiti per il parametro _Options* in [**DsReplicaUpdateRefs**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsreplicaupdaterefsa).
 
 </dd> </dl>
 
@@ -223,20 +223,20 @@ Contiene zero o una combinazione di uno o più valori di **DS \_ REPSUPD \_ \** 
 **OpType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il valore del [**\_ \_ \_ tipo op REPL di DS**](/windows/desktop/api/Ntdsapi/ne-ntdsapi-ds_repl_op_type) che indica il tipo di operazione rappresentata da questa classe.
+Ottiene il [**valore DS \_ REPL \_ OP \_ TYPE**](/windows/desktop/api/Ntdsapi/ne-ntdsapi-ds_repl_op_type) che indica il tipo di operazione rappresentato da questa classe.
 
 </dd> <dt>
 
 **PositionInQ**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -249,20 +249,20 @@ Ottiene la posizione di questa operazione nella coda.
 **Priorità**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene la priorità di questa operazione. Le attività con priorità più alta vengono eseguite per prime. La priorità viene calcolata dal server in base al tipo di operazione rappresentata da questa classe e ai parametri dell'operazione.
+Ottiene la priorità di questa operazione. Le attività con priorità più alta vengono eseguite per prime. La priorità viene calcolata dal server in base al tipo di operazione rappresentato da questa classe e ai parametri dell'operazione.
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -271,20 +271,20 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Ottiene l'ID dell'operazione, che è univoco per computer e per avvio.
+Ottiene l'ID dell'operazione, univoco per computer e per avvio.
 
 </dd> <dt>
 
 **TimeEnqueued**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene l'ora in cui l'operazione è stata aggiunta alla coda.
+Ottiene l'ora in cui questa operazione è stata aggiunta alla coda.
 
 </dd> </dl>
 
@@ -296,8 +296,8 @@ Ottiene l'ora in cui l'operazione è stata aggiunta alla coda.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | \\MicrosoftActiveDirectory radice<br/>                                               |
-| MOF<br/>                      | <dl> <dt>Replprov. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ MicrosoftActiveDirectory<br/>                                               |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 

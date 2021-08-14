@@ -1,5 +1,5 @@
 ---
-title: Esempio di codice per l'utilizzo di messaggi di errore ADSI
+title: Esempio di codice per l'utilizzo dei messaggi di errore ADSI
 description: Nell'esempio di codice seguente viene illustrato come recuperare un messaggio di errore ADSI.
 ms.assetid: c09fea2e-b6c1-4318-a7a6-b1c4c30ef4cb
 ms.tgt_platform: multiple
@@ -7,14 +7,14 @@ keywords:
 - messaggi di errore e codice di esempio per ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aed5285a41dc51b8c42a82f7c1f600d1bae33e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70e378e7ae73002e4fdbb7137f89d895ddf23d3e51a87bafa533a4a07722a61d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118692232"
 ---
-# <a name="code-example-for-working-with-adsi-error-messages"></a>Esempio di codice per l'utilizzo di messaggi di errore ADSI
+# <a name="code-example-for-working-with-adsi-error-messages"></a>Esempio di codice per l'utilizzo dei messaggi di errore ADSI
 
 Nell'esempio di codice seguente viene illustrato come recuperare un messaggio di errore ADSI.
 
@@ -163,9 +163,9 @@ CString GetADSIError( HRESULT hr )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

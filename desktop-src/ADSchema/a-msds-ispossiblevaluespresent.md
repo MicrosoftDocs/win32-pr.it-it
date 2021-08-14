@@ -1,11 +1,11 @@
 ---
-title: ms-DS-is-possible-values-present (attributo)
-description: Questo attributo identifica se MS-DS-Claim-possible-values sulla proprietà della risorsa collegata deve avere valore o non deve avere un valore.
+title: Attributo ms-DS-Is-Possible-Values-Present
+description: Questo attributo identifica se ms-DS-Claim-Possible-Values nella proprietà della risorsa collegata deve avere valore o non deve avere valore.
 ms.assetid: a63d7937-5045-4d38-a436-b47acde6399d
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-is-possible-values-schema AD dell'attributo present
-- attributo msDS-IsPossibleValuesPresent-schema AD
+- Schema AD dell'attributo ms-DS-Is-Possible-Values-Present
+- Schema AD dell'attributo msDS-IsPossibleValuesPresent
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3acac2c36b2962ff2ae9f4c3f36375f09abe0a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 815c6a5c90aa331390bbe5e35b97bf93e1230dcfbdddbfcfbd078fc97e935ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426101"
 ---
-# <a name="ms-ds-is-possible-values-present-attribute"></a>ms-DS-is-possible-values-present (attributo)
+# <a name="ms-ds-is-possible-values-present-attribute"></a>Attributo ms-DS-Is-Possible-Values-Present
 
-Questo attributo identifica se MS-DS-Claim-possible-values sulla proprietà della risorsa collegata deve avere valore o non deve avere un valore.
+Questo attributo identifica se ms-DS-Claim-Possible-Values nella proprietà della risorsa collegata deve avere valore o non deve avere valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-is-possible-values-present     |
-| LDAP-Display-Name | msDS-IsPossibleValuesPresent         |
+| CN                | ms-DS-Is-Possible-Values-Present     |
+| Ldap-Display-Name | MsDS-IsPossibleValuesPresent         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2186              |
-| System-ID-GUID    | 6fabdcda-8c53-204f-b1a4-9df0c67c1eb4 |
+| System-Id-Guid    | 6fabdcda-8c53-204f-b1a4-9df0c67c1eb4 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -53,15 +53,15 @@ Questo attributo identifica se MS-DS-Claim-possible-values sulla proprietà dell
 | ID collegamento                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Vero                                                    |
-| È a valore singolo       | Vero                                                    |
+| Is-Single-Valued       | Vero                                                    |
 | Indicizzato             | Falso                                                   |
 | Nel catalogo globale      | Falso                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classi utilizzate in        | [**ms-DS-valore-tipo**](c-msds-valuetype.md)<br/> |
+| Classi usate in        | [**ms-DS-Value-Type**](c-msds-valuetype.md)<br/> |
 
 
 

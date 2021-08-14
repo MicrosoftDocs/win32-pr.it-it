@@ -1,19 +1,19 @@
 ---
-description: Un cerchio nero che conduce a un diamante aperto indica una relazione uno-a-molti tra la chiave primaria della prima tabella e la chiave esterna della seconda tabella.
+description: Un cerchio nero che porta a un rombo aperto indica una relazione uno-a-molti tra la chiave primaria della prima tabella e la chiave esterna della seconda tabella.
 ms.assetid: a72d9b7c-e1ed-422c-a5d2-b19060c72487
-title: Legenda diagramma delle relazioni tra entità
+title: Legenda del diagramma delle relazioni tra entità
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 216ab8ce79821a811f4da766979b6cb590eacf15
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4c8cec380eb3cae0234c83e338891c2fec37e6b36fbcc81e57a2ae95968205
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118378162"
 ---
-# <a name="entity-relationship-diagram-legend"></a>Legenda diagramma delle relazioni tra entità
+# <a name="entity-relationship-diagram-legend"></a>Legenda del diagramma delle relazioni tra entità
 
-Un cerchio nero che conduce a un diamante aperto indica una relazione uno-a-molti tra la chiave primaria della prima tabella e la chiave esterna della seconda tabella. Per un esempio di questo aspetto, vedere la figura per il [gruppo di tabelle del registro di sistema](registry-tables-group.md). Extension è una chiave primaria della tabella di estensione e una chiave esterna della tabella dei verbi. Un'estensione può quindi essere registrata per avere diversi verbi, ma un verbo particolare può essere associato a un'unica estensione.
+Un cerchio nero che porta a un rombo aperto indica una relazione uno-a-molti tra la chiave primaria della prima tabella e la chiave esterna della seconda tabella. Per un esempio di questo esempio, vedere la figura per il gruppo [Tabelle del Registro di sistema](registry-tables-group.md). Extension è una chiave primaria della tabella Extension e una chiave esterna della tabella Verbo. Un'estensione può quindi essere registrata per avere diversi verbi, ma un particolare verbo può essere associato solo a un'estensione.
 
  
 

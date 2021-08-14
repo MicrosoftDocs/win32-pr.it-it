@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per l'associazione a oggetti noti
-description: Questo argomento include un esempio di codice associato a un oggetto noto usando la stringa di associazione WKGUID.
+description: Questo argomento include un esempio di codice che esegue l'associazione a un oggetto noto usando la stringa di associazione WKGUID.
 ms.assetid: 59345173-5598-4b0a-976c-c5741b785ce1
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, associazione a oggetti noti
+- Esempi di Active Directory, associazione a oggetti noti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f60a1bbf457bab5b6a22a1b4b5470a4f4dbb4c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb113e13889dfebdd34adc553ea21693684d6848f9d25bc2bb4c436fe0b71b5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191284"
 ---
 # <a name="example-code-for-binding-to-well-known-objects"></a>Codice di esempio per l'associazione a oggetti noti
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come eseguire l'associazione a un oggetto noto utilizzando la stringa di associazione WKGUID.
+Nell'esempio di codice C++ seguente viene illustrato come eseguire l'associazione a un oggetto noto usando la stringa di associazione WKGUID.
 
 
 ```C++
@@ -98,9 +98,9 @@ HRESULT BindToWellKnownObject(LPCWSTR pwszGUID, IADs **ppObject)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Riferimento a MCIWnd
-description: Riferimento a MCIWnd
+title: Informazioni di riferimento su MCIWnd
+description: Informazioni di riferimento su MCIWnd
 ms.assetid: 11fba6bb-17f1-4fbe-b148-4755a3c6216a
 keywords:
-- MCI (Media Control Interface), Guida di riferimento a MCIWnd
-- Classe della finestra MCIWnd, riferimento
-- Finestra di MCIWnd, riferimento
-- Riferimento a MCIWnd, informazioni
+- MCI (Media Control Interface), informazioni di riferimento su MCIWnd
+- classe finestra MCIWnd,riferimento
+- FINESTRA MCIWnd,riferimento
+- Informazioni di riferimento su MCIWnd, informazioni su
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76333f38a5dec3edaadcae69777703ebea61296f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03249d5e0f0a0f4fef8110d878021437f7aee667085a0720a86de77c8cbdfe49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104471059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374362"
 ---
-# <a name="mciwnd-reference"></a>Riferimento a MCIWnd
+# <a name="mciwnd-reference"></a>Informazioni di riferimento su MCIWnd
 
-In questa sezione vengono descritte le funzioni, i messaggi e le macro associate alla classe della finestra MCIWnd. Questi elementi vengono raggruppati come indicato di seguito.
+In questa sezione vengono descritte le funzioni, i messaggi e le macro associate alla classe della finestra MCIWnd. Questi elementi sono raggruppati nel modo seguente.
 
 ## <a name="window-management"></a>Gestione finestre
 
@@ -83,7 +83,7 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 -   [**MCIWndSetVolume**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetvolume)
 -   [**MCIWndSetZoom**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetzoom)
 
-## <a name="image-and-palette-adjustments"></a>Regolazioni di immagini e tavolozza
+## <a name="image-and-palette-adjustments"></a>Regolazioni di immagini e tavolozze
 
 -   [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
 -   [**MCIWndGetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette)
@@ -96,11 +96,11 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 ## <a name="event-and-error-notification"></a>Notifica degli eventi e degli errori
 
 -   [**MCIWndGetError**](/windows/desktop/api/Vfw/nf-vfw-mciwndgeterror)
--   [**\_NOTIFYERROR MCIWNDM**](mciwndm-notifyerror.md)
--   [**\_NOTIFYMEDIA MCIWNDM**](mciwndm-notifymedia.md)
--   [**\_NOTIFYMODE MCIWNDM**](mciwndm-notifymode.md)
--   [**\_NOTIFYPOS MCIWNDM**](mciwndm-notifypos.md)
--   [**\_NOTIFYSIZE MCIWNDM**](mciwndm-notifysize.md)
+-   [**MCIWNDM \_ NOTIFYERROR**](mciwndm-notifyerror.md)
+-   [**MCIWNDM \_ NOTIFYMEDIA**](mciwndm-notifymedia.md)
+-   [**MCIWNDM \_ NOTIFYMODE**](mciwndm-notifymode.md)
+-   [**MCIWNDM \_ NOTIFYPOS**](mciwndm-notifypos.md)
+-   [**MCIWNDM \_ NOTIFYSIZE**](mciwndm-notifysize.md)
 
 ## <a name="time-formats"></a>Formati di ora
 
@@ -127,7 +127,7 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 -   [**MCIWndCanSave**](/windows/desktop/api/Vfw/nf-vfw-mciwndcansave)
 -   [**MCIWndCanWindow**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanwindow)
 
-## <a name="mci-device-settings"></a>Impostazioni del dispositivo MCI
+## <a name="mci-device-settings"></a>Gestione dei dispositivi MCI Impostazioni
 
 -   [**MCIWndGetAlias**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetalias)
 -   [**MCIWndGetDevice**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdevice)
@@ -144,12 +144,12 @@ In questa sezione vengono descritte le funzioni, i messaggi e le macro associate
 
 <dl> <dt>
 
-[Classe della finestra MCIWnd](mciwnd-window-class.md)
+[Classe finestra MCIWnd](mciwnd-window-class.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_VERSION ( \_ tipi WINBIO. h)
-description: Contiene il numero di versione del software di un componente del provider di servizi biometrico.
+title: WINBIO_VERSION struttura (Winbio \_ types.h)
+description: Contiene il numero di versione software di un componente del provider di servizi biometrici.
 ms.assetid: b9d08e10-00db-4f3f-9e27-6063aafa4151
 keywords:
-- Struttura di WINBIO_VERSION Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_VERSION
+- WINBIO_VERSION struttura Windows'API Biometric Framework
+- PWINBIO_VERSION puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d9cda802e89006ed49f6ec4b4e96c88602c511
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de81dd3da7f37e473a65caaf3e4cd52c8fd2f6732dced45f43245cb4e4c5c905
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909116"
 ---
-# <a name="winbio_version-structure"></a>Struttura della versione di WINBIO \_
+# <a name="winbio_version-structure"></a>Struttura WINBIO \_ VERSION
 
-La struttura della **\_ versione WINBIO** contiene il numero di versione del software di un componente del provider di servizi biometrico.
+La **struttura WINBIO \_ VERSION** contiene il numero di versione software di un componente del provider di servizi biometrici.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,14 +45,14 @@ typedef struct _WINBIO_VERSION {
 **MajorVersion**
 </dt> <dd>
 
-**Valore DWORD** che contiene il numero di versione principale.
+Valore **DWORD** che contiene il numero di versione principale.
 
 </dd> <dt>
 
 **MinorVersion**
 </dt> <dd>
 
-**Valore DWORD** che contiene il numero di versione secondario.
+Valore **DWORD** che contiene il numero di versione secondaria.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ typedef struct _WINBIO_VERSION {
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ typedef struct _WINBIO_VERSION {
 [Strutture delle applicazioni client](client-application-structures.md)
 </dt> <dt>
 
-[**\_schema BSP \_ WINBIO**](winbio-bsp-schema.md)
+[**SCHEMA DI WINBIO \_ BSP \_**](winbio-bsp-schema.md)
 </dt> <dt>
 
-[**\_schema unità \_ WINBIO**](winbio-unit-schema.md)
+[**SCHEMA UNITÀ \_ WINBIO \_**](winbio-unit-schema.md)
 </dt> </dl>
 
  

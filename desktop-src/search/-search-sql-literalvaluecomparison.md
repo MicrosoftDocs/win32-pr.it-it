@@ -1,21 +1,21 @@
 ---
-description: Il confronto dei valori letterali usa gli operatori di confronto standard per la corrispondenza di una colonna a valore singolo con un valore letterale.
+description: Nel confronto dei valori letterali vengono utilizzati operatori di confronto standard per la corrispondenza tra una colonna a valore singolo e un valore letterale.
 ms.assetid: 941298b4-d703-4b3f-8bde-0e6e158560df
-title: Confronto di valori letterali
+title: Confronto tra valori letterali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8577e5a97dcc92131658c325f175efa1d0c3fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c1e311c6f98c1114b63a1bf650d6e7be004e1e8e4cf5848b962a7cbf8049bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227176"
 ---
-# <a name="literal-value-comparison"></a>Confronto di valori letterali
+# <a name="literal-value-comparison"></a>Confronto tra valori letterali
 
-Il confronto dei valori letterali usa gli operatori di confronto standard per la corrispondenza di una colonna a valore singolo con un valore [letterale](-search-sql-literals.md) . Per informazioni sul confronto tra colonne multivalore, vedere [confronti con più valori (Array)](-search-sql-multivaluedcomparisons.md).
+Nel confronto dei valori letterali vengono utilizzati operatori di confronto standard per la corrispondenza tra una colonna a valore singolo e un [valore letterale.](-search-sql-literals.md) Per informazioni sul confronto di colonne multivalore, vedere [Confronti multivalore (ARRAY).](-search-sql-multivaluedcomparisons.md)
 
-Il predicato di confronto dei valori letterali presenta la sintassi seguente:
+Il predicato di confronto dei valori letterali ha la sintassi seguente:
 
 
 ```
@@ -29,9 +29,9 @@ Il predicato di confronto dei valori letterali presenta la sintassi seguente:
 
  
 
-La parte colonna è qualsiasi colonna di proprietà valida ed è possibile eseguirne il cast a un altro tipo, se necessario. Facoltativamente, è possibile racchiudere il nome della colonna tra virgolette doppie per migliorare la leggibilità senza influire sulle funzionalità. Per ulteriori informazioni, vedere [cast del tipo di dati di una colonna](-search-sql-castingdatacolumntype.md).
+La parte della colonna è qualsiasi colonna di proprietà valida ed è possibile eseguire il cast a un altro tipo, se necessario. Facoltativamente, è possibile racchiudere il nome della colonna tra virgolette doppie per una leggibilità senza influire sulla funzionalità. Per altre informazioni, vedere [Cast del tipo di dati di una colonna.](-search-sql-castingdatacolumntype.md)
 
-Il valore letterale può essere qualsiasi valore letterale stringa, numerico, esadecimale, booleano o data, racchiuso tra virgolette singole. Vengono riconosciute solo le corrispondenze esatte e i caratteri jolly vengono ignorati. È anche possibile eseguire il cast del valore letterale a un altro tipo.
+Il valore letterale può essere qualsiasi stringa, numerico, esadecimale, booleano o valore letterale data, racchiuso tra virgolette singole. Vengono riconosciute solo le corrispondenze esatte e i caratteri jolly vengono ignorati. È anche possibile eseguire il cast del valore letterale a un altro tipo.
 
 ## <a name="comparison-operators"></a>Operatori di confronto
 
@@ -42,7 +42,7 @@ Nella tabella seguente vengono descritti gli operatori di confronto supportati.
 | Operatore di confronto | Descrizione              |
 |---------------------|--------------------------|
 | =                   | Uguale a                 |
-| ! = o <>      | Diverso da             |
+| != o <>      | Diverso da             |
 | >                | Maggiore di             |
 | >=               | Maggiore o uguale a |
 | <                | Minore di                |
@@ -54,7 +54,7 @@ Nella tabella seguente vengono descritti gli operatori di confronto supportati.
 
  
 
-In combinazione con l'operatore "=", Windows Search Structured Query Language (SQL) supporta l'utilizzo delle parole chiave BEFORe e AFTER, che specificano se la query deve confrontare i valori di colonna prima o dopo un valore specificato, nell'ordinamento del dizionario.
+Insieme all'operatore "=", Windows Search Structured Query Language (SQL) supporta l'uso delle parole chiave BEFORE e AFTER, che specificano se la query deve confrontare i valori di colonna prima o dopo un valore specificato nell'ordinamento del dizionario.
 
 
 ```
@@ -94,10 +94,10 @@ SELECT System.ItemUrl,System.ItemNameDisplay FROM SystemIndex
 [Predicato LIKE](-search-sql-like.md)
 </dt> <dt>
 
-[DATEADD (funzione)](-search-sql-dateadd.md)
+[Funzione DATEADD](-search-sql-dateadd.md)
 </dt> <dt>
 
-[Confronti multivalore (matrice)](-search-sql-multivaluedcomparisons.md)
+[Confronti multivalore (ARRAY)](-search-sql-multivaluedcomparisons.md)
 </dt> <dt>
 
 [Predicato NULL](-search-sql-null.md)

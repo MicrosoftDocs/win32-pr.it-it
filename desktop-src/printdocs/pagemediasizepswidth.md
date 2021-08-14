@@ -1,21 +1,21 @@
 ---
-description: Ottenere informazioni sul parametro PageMediaSizePSWidth. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
+description: Ottenere informazioni sul parametro PageMediaSizePSWidth. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
 ms.assetid: a1a684ce-5615-4ff7-a7aa-5c9f786f84ed
 title: PageMediaSizePSWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe678107d2a183ee0f0bf6ce290dfe230fa8cc2
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 125116e2dc1273f791822e73a057eede70784bfe4c9b3dfef15171b234ea7d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118471034"
 ---
 # <a name="pagemediasizepswidth"></a>PageMediaSizePSWidth
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica la larghezza della pagina perpendicolare alla direzione di orientamento del feed (Specifica del formato del file di descrizione della stampante PostScript di [riferimento).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+Specifica la larghezza della pagina perpendicolare alla direzione di orientamento del feed (Riferimento PostScript specifica del formato del file di [descrizione della stampante).](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -77,9 +77,9 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | numero intero<br/> | Non definito<br/>       |
 | MaxValue<br/>     | numero intero<br/> | Non definito<br/>       |
 | Minvalue<br/>     | numero intero<br/> | Non definito<br/>       |
-| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
 | Multipli<br/>     | integer<br/> | 1<br/>               |
-| Tipo di unità<br/>     | string<br/>  | Micron<br/>         |
+| UnitType<br/>     | string<br/>  | Micron<br/>         |
 
 
 
@@ -89,7 +89,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 <dl> <dt>
 
-[Specifica del formato del file di descrizione della stampante PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[PostScript Specifica del formato del file di descrizione della stampante](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
 [Specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)

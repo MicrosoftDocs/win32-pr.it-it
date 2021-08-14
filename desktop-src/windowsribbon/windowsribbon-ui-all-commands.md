@@ -1,5 +1,5 @@
 ---
-title: UI_ALL_COMMANDS (UIRibbon. h)
+title: UI_ALL_COMMANDS (Uiribbon.h)
 description: Specifica una costante che identifica la raccolta di comandi dichiarati nel file di risorse di markup.
 ms.assetid: b0046d8c-bb54-4231-90f0-c0b2c8790b1a
 topic_type:
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cce287d6ee03734ecbb0dd84e020ec542a83f04b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24767f2d3839b94ee83c6a9a527b2e80dcf8c1960e877f65a0e7e96fff4e3ec4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118705960"
 ---
-# <a name="ui_all_commands"></a>\_tutti i comandi dell'interfaccia utente \_
+# <a name="ui_all_commands"></a>TUTTI \_ I COMANDI \_ DELL'INTERFACCIA UTENTE
 
 Specifica una costante che identifica la raccolta di comandi dichiarati nel file di risorse di markup.
 
 ## <a name="remarks"></a>Commenti
 
-**Interfaccia utente \_ TUTTI i \_ comandi** sono utili quando è necessario accedere a proprietà simili in tutti i comandi. Ad esempio, **\_ tutti i \_ comandi dell'interfaccia utente** possono essere passati a [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) per invalidare e aggiornare tutti i comandi della barra multifunzione eseguendo una query sull'applicazione host per i nuovi valori delle proprietà.
+**Interfaccia utente \_ ALL \_ COMMANDS** è utile quando è necessario accedere a proprietà simili in tutti i comandi. Ad esempio, è possibile passare **UI \_ ALL \_ COMMANDS** a [**IUIFramework::InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) per invalidare e aggiornare tutti i comandi della barra multifunzione tramite una query sull'applicazione host per i nuovi valori delle proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,10 +33,10 @@ Specifica una costante che identifica la raccolta di comandi dichiarati nel file
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e aggiornamento della piattaforma solo per le applicazioni desktop di Windows Vista \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per le \[ app desktop Windows server 2008\]<br/> |
-| Intestazione<br/>                   | <dl> <dt>UIRibbon. h</dt> </dl>                                             |
-| IDL<br/>                      | <dl> <dt>UIRibbon. idl</dt> </dl>                                           |
+| Client minimo supportato<br/> | Windows 7, Windows Vista con SP2 e Aggiornamento piattaforma solo per Windows app desktop di Vista \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 e aggiornamento della piattaforma solo per Windows app desktop di Windows Server 2008 \[\]<br/> |
+| Intestazione<br/>                   | <dl> <dt>Uiribbon.h</dt> </dl>                                             |
+| Idl<br/>                      | <dl> <dt>Uiribbon.idl</dt> </dl>                                           |
 
 
 
