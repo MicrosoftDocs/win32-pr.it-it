@@ -1,75 +1,75 @@
 ---
-description: Windows Imaging Component (WIC) è stato aggiornato con le nuove versioni di Windows. In questo argomento viene fornita una rapida introduzione a queste nuove funzionalità.
+description: Windows Il componente di creazione dell'immagine (WIC) è stato aggiornato con le nuove versioni di Windows. Questo argomento offre una rapida introduzione a queste nuove funzionalità.
 ms.assetid: 710B71CE-6FCC-46DA-A65C-6E4FC6A04275
 title: Novità in WIC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b8b3783ac2fd8ef6a971f785cec80f868a6b80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 420d501dd495081764a7fba89f73d21077c04b05d92e7c2b47c3c2c2d51d7d10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204016"
 ---
 # <a name="whats-new-in-wic"></a>Novità in WIC
 
-Windows Imaging Component (WIC) è stato aggiornato con le nuove versioni di Windows. In questo argomento viene fornita una rapida introduzione a queste nuove funzionalità.
+Windows Il componente di creazione dell'immagine (WIC) è stato aggiornato con le nuove versioni di Windows. Questo argomento offre una rapida introduzione a queste nuove funzionalità.
 
 ## <a name="whats-new-for-windows-10-version-1507"></a>Novità di Windows 10 versione 1507
 
-### <a name="access-to-low-level-jpeg-data-for-wic-decoding-and-encoding"></a>Accesso ai dati JPEG di basso livello per la decodifica e la codifica di WIC
+### <a name="access-to-low-level-jpeg-data-for-wic-decoding-and-encoding"></a>Accesso ai dati JPEG di basso livello per la decodifica e la codifica WIC
 
-A partire da Windows 10, versione 1507, WIC fornisce l'accesso alle strutture di dati JPEG di basso livello, incluse le tabelle Huffman e Quantity. Per altre informazioni, vedere i seguenti argomenti:
+A partire Windows 10 versione 1507, WIC fornisce l'accesso a strutture di dati JPEG di basso livello, tra cui le tabelle di quantizzazione e Huffman. Per altre informazioni, vedere i seguenti argomenti:
 
--   Interfaccia [**IWICJpegFrameDecode**](/windows/win32/api/Wincodec/nn-wincodec-iwicjpegframedecode)
--   Interfaccia [**IWICJpegFrameEncode**](/windows/win32/api/Wincodec/nn-wincodec-iwicjpegframeencode)
+-   [**Interfaccia IWICJpegFrameDecode**](/windows/win32/api/Wincodec/nn-wincodec-iwicjpegframedecode)
+-   [**Interfaccia IWICJpegFrameEncode**](/windows/win32/api/Wincodec/nn-wincodec-iwicjpegframeencode)
 
 ### <a name="jpeg-indexing"></a>Indicizzazione JPEG
 
-L'indicizzazione JPEG è una tecnica che migliora significativamente le prestazioni di accesso casuale ad aree secondarie di un'immagine JPEG di grandi dimensioni, al costo di un utilizzo di memoria aggiuntivo. L'indicizzazione JPEG può essere sfruttata da qualsiasi chiamante di WIC.
+L'indicizzazione JPEG è una tecnica che migliora significativamente le prestazioni dell'accesso casuale a piccole sottoaree di un'immagine JPEG di grandi dimensioni, a costo di un utilizzo aggiuntivo della memoria. L'indicizzazione JPEG può essere sfruttata da qualsiasi chiamante di WIC.
 
-L'interfaccia [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic) è progettata per sfruttare l'indicizzazione JPEG se è attivata. L'API ID2D1ImageSource, ad esempio, richiederà solo le sezioni necessarie dell'immagine in uno scenario come Pan e zoom per un'immagine di risoluzione di grandi dimensioni. Per altre informazioni, vedere i seguenti argomenti:
+[**L'interfaccia ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic) è progettata per sfruttare l'indicizzazione JPEG se è attivata. Ad esempio, l'API ID2D1ImageSource richiederà solo le sezioni necessarie dell'immagine in uno scenario come panoramica e zoom per un'immagine con risoluzione di grandi dimensioni. Per altre informazioni, vedere i seguenti argomenti:
 
--   Metodo [**IWICJpegFrameDecode:: SetIndex**](/windows/win32/api/Wincodec/nf-wincodec-iwicjpegframedecode-setindexing)
--   Interfaccia [**ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic)
+-   [**Metodo IWICJpegFrameDecode::SetIndexing**](/windows/win32/api/Wincodec/nf-wincodec-iwicjpegframedecode-setindexing)
+-   [**Interfaccia ID2D1ImageSourceFromWic**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesourcefromwic)
 
 ## <a name="whats-new-for-windows-81"></a>Novità di Windows 8.1
 
-### <a name="support-for-jpeg-ycbcr-images"></a>Supporto per immagini JPEG YCbCr
+### <a name="support-for-jpeg-ycbcr-images"></a>Supporto per immagini YCbCr JPEG
 
-A partire da Windows 8.1, WIC fornisce supporto per la decodifica, la trasformazione e la codifica dei dati dell'immagine JPEG CbCr nel formato nativo. Ciò consente alle app di ridurre significativamente il tempo di elaborazione e il consumo di memoria per determinate operazioni di imaging quando si utilizzano JPEG con codifica CbCr. Per altre informazioni, vedere i seguenti argomenti:
+A partire Windows 8.1, WIC fornisce il supporto per la decodifica, la trasformazione e la codifica dei dati di immagine JPEG Y'CbCr nel formato nativo. Ciò consente alle app di ridurre significativamente il tempo di elaborazione e l'utilizzo della memoria per determinate operazioni di creazione di immagini quando si lavora con JPEG con codifica Y'CbCr. Per altre informazioni, vedere i seguenti argomenti:
 
--   [](-wic-sample-d2d-viewer.md)[Effetto YCbCr](../direct2d/ycbcr-effect.md) Direct2D
--   Interfaccia [**IWICPlanarBitmapSourceTransform**](/windows/win32/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform)
--   Interfaccia [**IWICPlanarBitmapFrameEncode**](/windows/win32/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode)
+-   [Effetto Direct2D](-wic-sample-d2d-viewer.md)[YCbCr](../direct2d/ycbcr-effect.md)
+-   [**Interfaccia IWICPlanarBitmapSourceTransform**](/windows/win32/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform)
+-   [**Interfaccia IWICPlanarBitmapFrameEncode**](/windows/win32/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode)
 
 ### <a name="support-for-block-compressed-formats-dds-files"></a>Supporto per formati compressi a blocchi (file DDS)
 
-A partire da Windows 8.1, WIC aggiunge un nuovo codec che supporta le immagini DDS codificate nei formati seguenti: DXGI \_ Format \_ BC1 \_ UNORM, DXGI \_ Format \_ BC2 UNORM \_ e DXGI \_ Format BC3 \_ UNORM \_ . È possibile accedere ai dati compressi del blocco DDS in un formato decodificato utilizzando interfacce WIC standard o a cui si accede direttamente usando le nuove interfacce DDS specifiche. Per altre informazioni, vedere i seguenti argomenti:
+A partire da Windows 8.1, WIC aggiunge un nuovo codec che supporta immagini DDS codificate nei formati seguenti: \_ \_ DXGI FORMAT BC1 \_ UNORM, DXGI \_ FORMAT BC2 UNORM e \_ \_ DXGI \_ FORMAT \_ BC3 \_ UNORM. È possibile accedere ai dati compressi in blocchi DDS in forma decodificata usando interfacce WIC standard o direttamente usando nuove interfacce specifiche di DDS. Per altre informazioni, vedere i seguenti argomenti:
 
--   Interfaccia [**IWICDdsDecoder**](/windows/win32/api/Wincodec/nn-wincodec-iwicddsdecoder)
--   Interfaccia [**IWICDdsEncoder**](/windows/win32/api/Wincodec/nn-wincodec-iwicddsencoder)
+-   [**Interfaccia IWICDdsDecoder**](/windows/win32/api/Wincodec/nn-wincodec-iwicddsdecoder)
+-   [**Interfaccia IWICDdsEncoder**](/windows/win32/api/Wincodec/nn-wincodec-iwicddsencoder)
 
 ## <a name="whats-new-for-windows-8"></a>Novità di Windows 8
 
-In Windows 8, WIC è stato aggiornato con alcune nuove funzionalità. La versione aggiornata di WIC è disponibile anche in Windows 7 e Windows Server 2008 R2 tramite l' [aggiornamento della piattaforma per Windows 7](../direct3darticles/platform-update-for-windows-7.md), disponibile tramite l' [aggiornamento della piattaforma per Windows 7](https://support.microsoft.com/kb/2670838).
+In Windows 8, WIC è stato aggiornato con diverse nuove funzionalità. La versione aggiornata di WIC è disponibile anche in Windows 7 e Windows Server 2008 R2 tramite l'aggiornamento della piattaforma [per Windows 7,](../direct3darticles/platform-update-for-windows-7.md)disponibile tramite l'aggiornamento della piattaforma per [Windows 7](https://support.microsoft.com/kb/2670838).
 
-### <a name="improved-direct2d-integration"></a>Integrazione Direct2D migliorata
+### <a name="improved-direct2d-integration"></a>Integrazione di Direct2D migliorata
 
-WIC in Windows 8 fornisce queste API per migliorare l'integrazione Direct2D con WIC:
+WIC in Windows 8 queste API per migliorare l'integrazione direct2D con WIC:
 
--   [**IWICImageEncoder**](/windows/win32/api/Wincodec/nn-wincodec-iwicimageencoder) : nuova interfaccia che consente di codificare il contenuto [**ID2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) Direct2D in un [IWICBitmapFrameEncode](-wic-imp-iwicbitmapframeencode.md). I metodi di questa interfaccia accettano un puntatore a [**WICImageParameters**](/windows/win32/api/Wincodec/ns-wincodec-wicimageparameters), che sono parametri per controllare la codifica.
--   [**IWICImagingFactory2**](/windows/win32/api/Wincodec/nn-wincodec-iwicimagingfactory2) : nuova Factory WIC con il metodo [**CreateImageEncoder**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory2-createimageencoder) . Questa interfaccia eredita dalla factory WIC originale, [**IWICImagingFactory**](/windows/win32/api/Wincodec/nn-wincodec-iwicimagingfactory), e viene creata allo stesso modo.
+-   [**IWICImageEncoder:**](/windows/win32/api/Wincodec/nn-wincodec-iwicimageencoder) nuova interfaccia in grado di codificare il contenuto [**DIRECT2D ID2D1Image**](/windows/win32/api/d2d1/nn-d2d1-id2d1image) in [un oggetto IWICBitmapFrameEncode.](-wic-imp-iwicbitmapframeencode.md) I metodi di questa interfaccia accettano un puntatore a [**WICImageParameters,**](/windows/win32/api/Wincodec/ns-wincodec-wicimageparameters)che sono parametri per controllare la codifica.
+-   [**IWICImagingFactory2:**](/windows/win32/api/Wincodec/nn-wincodec-iwicimagingfactory2) nuova factory WIC con il [**metodo CreateImageEncoder.**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory2-createimageencoder) Questa interfaccia eredita dalla factory WIC originale, [**IWICImagingFactory,**](/windows/win32/api/Wincodec/nn-wincodec-iwicimagingfactory)e viene creata allo stesso modo.
 
-### <a name="changes-to-bmp-codec-alpha-support"></a>Modifiche al supporto per il codec BMP
+### <a name="changes-to-bmp-codec-alpha-support"></a>Modifiche al supporto alfa del codec BMP
 
-WIC in Windows 8 supporta il caricamento di file di immagine [**BITMAPV5HEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapv5header) come immagini in formato [WICPixelFormat32bppBGRA](-wic-codec-native-pixel-formats.md). Inoltre, il codificatore BMP supporta una nuova opzione del codificatore booleano "EnableV5Header32bppBGRA", che indica al codificatore di scrivere un **BITMAPV5HEADER** con i dati dell'immagine 32bppBGRA.
+WIC in Windows 8 supporta il caricamento [**di file di immagine BITMAPV5HEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapv5header) come immagini in formato [WICPixelFormat32bppBGRA.](-wic-codec-native-pixel-formats.md) Inoltre, il codificatore BMP supporta una nuova opzione booleana del codificatore "EnableV5Header32bppBGRA", che indica al codificatore di scrivere un **OGGETTO BITMAPV5HEADER** con i dati immagine di 32bppBGRA.
 
-Per altre informazioni sui formati BMP, vedere [Cenni preliminari sul formato BMP](bmp-format-overview.md).
+Per altre informazioni sui formati BMP, vedere [Panoramica del formato BMP.](bmp-format-overview.md)
 
-### <a name="new-pixel-formats"></a>Nuovi formati pixel
+### <a name="new-pixel-formats"></a>Nuovi formati di pixel
 
-WIC in Windows 8 definisce questi nuovi formati pixel:
+WIC in Windows 8 definisce questi nuovi formati di pixel:
 
 -   GUID \_ WICPixelFormat32bppRGB
 -   GUID \_ WICPixelFormat64bppRGB
@@ -77,87 +77,87 @@ WIC in Windows 8 definisce questi nuovi formati pixel:
 -   GUID \_ WICPixelFormat64bppPRGBAHalf
 
 > [!Note]  
-> Il codec predefinito TIFF restituirà i dati GUID \_ WICPixelFormat96bppRGBFloat. Gli altri tre formati non vengono usati dai codec predefiniti.
+> Il codec predefinito TIFF restituirà i dati \_ GUID WICPixelFormat96bppRGBFloat. Gli altri tre formati non vengono usati dai codec predefiniti.
 
  
 
-### <a name="restrictions-to-component-extensibility-in-appcontainer"></a>Restrizioni per l'estendibilità di componenti in AppContainer
+### <a name="restrictions-to-component-extensibility-in-appcontainer"></a>Restrizioni all'estendibilità dei componenti in AppContainer
 
-Quando si esegue un processo AppContainer, che include tutte le app di Windows Store, in WIC verranno utilizzati solo i componenti forniti da Windows, indipendentemente dal fatto che nel sistema siano installati componenti aggiuntivi. L'app che non è in esecuzione in AppContainer non è interessata.
+Quando viene eseguito in un processo AppContainer, che include tutte le app di Windows Store, WIC userà solo componenti forniti da Windows, indipendentemente dal fatto che nel sistema siano installati componenti aggiuntivi. L'app che non è in esecuzione in AppContainer non è interessata.
 
-Per le app non è necessario apportare modifiche al codice per l'esecuzione in un AppContainger, ma i parametri del flag [**WICComponentEnumerateOptions**](/windows/win32/api/Wincodec/ne-wincodec-wiccomponentenumerateoptions) e del GUID del fornitore non avranno alcun effetto. WIC non riuscirà a caricare un'immagine se non può essere decodificata da un codec fornito da Windows e la chiamata al metodo [**CreateComponentEnumerator**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createcomponentenumerator) restituirà solo i componenti forniti da Windows.
+Le app non devono apportare modifiche al codice per l'esecuzione in un AppContainger, ma il flag [**WICComponentEnumerateOptions**](/windows/win32/api/Wincodec/ne-wincodec-wiccomponentenumerateoptions) e i parametri GUID del fornitore non avranno alcun effetto. WiC non riuscirà a caricare un'immagine se non può essere decodificata da un codec fornito da Windows e la chiamata al metodo [**CreateComponentEnumerator**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createcomponentenumerator) restituirà solo Windows componenti forniti.
 
-### <a name="changes-to-clsid_wicpngdecoder-and-png-decoder-color-context-support"></a>Modifiche al \_ supporto del contesto di colore del decodificatore CLSID WICPngDecoder e png
+### <a name="changes-to-clsid_wicpngdecoder-and-png-decoder-color-context-support"></a>Modifiche al supporto del contesto colori del decodificatore PNG e \_ WICPngDecoder CLSID
 
-**CLSID \_ WICPngDecoder1** è stato aggiunto con lo stesso GUID di **CLSID \_ WICPngDecoder** e è stato aggiunto **CLSID \_ WICPngDecoder2** .
+**CLSID \_ WICPngDecoder1** è stato aggiunto con lo stesso GUID del **CLSID \_ WICPngDecoder** e **il CLSID \_ WICPngDecoder2** è stato aggiunto.
 
-Quando viene compilato con Windows 8 SDK, **CLSID \_ WICPngDecoder** viene \# definito per **CLSID \_ WICPngDecoder2** per promuovere le nuove app compilate usando il nuovo comportamento del decodificatore PNG. Le app devono continuare a specificare **CLSID \_ WICPngDecoder**.
+Quando viene compilato in Windows 8 SDK, **CLSID \_ WICPngDecoder** viene definito in \# **CLSID \_ WICPngDecoder2** per promuovere le app appena compilate usando il nuovo comportamento del decodificatore PNG. Le app devono continuare a specificare **CLSID \_ WICPngDecoder**.
 
-Se si specifica **CLSID \_ WICPngDecoder2** , viene creata una versione del decodificatore PNG WIC che genererà un [**IWICColorContext**](/windows/win32/api/Wincodec/nn-wincodec-iwiccolorcontext) dai blocchi chrm e Gama. Questo consente di usare questi metadati dello spazio colore con altre API Windows per la gestione dei colori dell'immagine di origine. Un **IWICColorContext** non viene generato dai blocchi Gama e chrm se è presente un blocco ICCP, se è presente un blocco sRGB o se i blocchi Gama e chrm indicano uno spazio colore sRGB.
+Se si specifica **CLSID \_ WICPngDecoder2,** verrà creata una versione del decodificatore PNG WIC che genererà un [**oggetto IWICColorContext**](/windows/win32/api/Wincodec/nn-wincodec-iwiccolorcontext) dai blocchi cHRM e gAMA. In questo modo è possibile usare questi metadati dello spazio colore con altre API Windows per la gestione del colore dell'immagine di origine. Un **oggetto IWICColorContext** non viene generato dai blocchi gAMA e cHRM se è presente un blocco iCCP, se è presente un blocco sRGB o se i blocchi gAMA e cHRM indicano uno spazio colore sRGB.
 
-Un'app può specificare **CLSID \_ WICPngDecoder1** per creare una versione del decodificatore PNG di WIC che non genera un [**IWICColorContext**](/windows/win32/api/Wincodec/nn-wincodec-iwiccolorcontext) dai blocchi Gama e chrm. Corrisponde al comportamento del decodificatore PNG nelle versioni precedenti di Windows.
+Un'app può specificare **\_ CLSID WICPngDecoder1** per creare una versione del decodificatore PNG WIC che non genera [**un oggetto IWICColorContext**](/windows/win32/api/Wincodec/nn-wincodec-iwiccolorcontext) dai blocchi gAMA e cHRM. Corrisponde al comportamento del decodificatore PNG nelle versioni precedenti di Windows.
 
-### <a name="changes-to-wincodec_sdk_version"></a>Modifiche alla versione di WINCODEC \_ SDK \_
+### <a name="changes-to-wincodec_sdk_version"></a>Modifiche a WINCODEC \_ SDK \_ VERSION
 
-Quando viene compilato con Windows 8 SDK, **la \_ \_ versione di WINCODEC SDK** viene \# definita in **WINCODEC \_ SDK \_ VERSION2** per promuovere le nuove app compilate usando il nuovo comportamento del decodificatore PNG. In caso contrario, viene \# definito in **WINCODEC \_ SDK \_ Version1**. Le app devono continuare a specificare la **\_ \_ versione dell'SDK di WINCODEC**.
+Quando viene compilato in Windows 8 SDK, **WINCODEC \_ SDK \_ VERSION** viene definito in \# **WINCODEC \_ SDK \_ VERSION2** per promuovere le app appena compilate usando il nuovo comportamento del decodificatore PNG. In caso contrario, \# viene definito in **WINCODEC \_ SDK \_ VERSION1.** Le app devono continuare a specificare **WINCODEC \_ SDK \_ VERSION**.
 
-Se si specifica la **\_ \_ versione dell'SDK di WINCODEC** quando si chiama il [**\_ proxy WICCreateImagingFactory**](-wic-codec-wiccreateimagingfactory-proxy.md) per creare la factory di imaging, viene creato il **CLSID \_ WICPngDecoder2** anziché il **CLSID \_ WICPngDecoder1** dal metodo [**CreateDecoder**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoder) e le relative varianti. Inoltre, un enumeratore info componente decodificatore restituisce **CLSID \_ WICPngDecoder2** informazioni sul componente, ma non **CLSID \_ WICPngDecoder1** info.
+Se si specifica **WINCODEC \_ SDK \_ VERSION** quando si chiama [**il \_ proxy WICCreateImagingFactory**](-wic-codec-wiccreateimagingfactory-proxy.md) per creare la factory di creazione dell'immagine, viene creato **CLSID \_ WICPngDecoder2** anziché **CLSID \_ WICPngDecoder1** dal [**metodo CreateDecoder**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoder) e dalle relative varianti. Inoltre, un enumeratore di informazioni sul componente del decodificatore restituirà informazioni sul componente **\_ CLSID WICPngDecoder2,** ma non informazioni **su \_ CLSID WICPngDecoder1.**
 
-Se si specifica **WINCODEC \_ SDK \_ Version1** , verrà utilizzato **CLSID \_ WICPngDecoder1** anziché **CLSID \_ WICPngDecoder2** nei casi precedenti.
+Se si **specifica WINCODEC \_ SDK \_ VERSION1,** verrà usato **\_ CLSID WICPngDecoder1** anziché **\_ CLSID WICPngDecoder2** nei casi precedenti.
 
 ### <a name="changes-to-clsid_wicimagingfactory"></a>Modifiche a CLSID \_ WICImagingFactory
 
-**CLSID \_ WICImagingFactory1** è stato aggiunto con lo stesso GUID di **CLSID \_ WICImagingFactory** e è stato aggiunto **CLSID \_ WICImagingFactory2** .
+**CLSID \_ WICImagingFactory1** è stato aggiunto con lo stesso GUID del **CLSID \_ WICImagingFactory** e **il CLSID \_ WICImagingFactory2** è stato aggiunto.
 
-Quando viene compilato con Windows 8 SDK, **CLSID \_ WICImagingFactory** viene \# definito per **CLSID \_ WICImagingFactory2** per promuovere le nuove app compilate usando il nuovo comportamento del decodificatore PNG. Le app devono continuare a specificare **CLSID \_ WICImagingFactory**.
+Quando viene compilato in Windows 8 SDK, **CLSID \_ WICImagingFactory** viene definito in \# **CLSID \_ WICImagingFactory2** per promuovere le app appena compilate usando il nuovo comportamento del decodificatore PNG. Le app devono continuare a specificare **CLSID \_ WICImagingFactory.**
 
-Se si specifica **CLSID \_ WICImagingFactory2** quando si chiama [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) per creare la factory di imaging, viene creato **CLSID \_ WICPngDecoder2** anziché **CLSID \_ WICPngDecoder1** dal metodo [**CreateDecoder**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoder) e dalle relative varianti. Inoltre, un enumeratore info componente decodificatore restituisce **CLSID \_ WICPngDecoder2** informazioni sul componente, ma non **CLSID \_ WICPngDecoder1** info.
+Se si specifica **CLSID \_ WICImagingFactory2** quando si chiama [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) per creare la factory di creazione dell'immagine, viene creato **CLSID \_ WICPngDecoder2** anziché **CLSID \_ WICPngDecoder1** dal [**metodo CreateDecoder**](/windows/win32/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoder) e dalle relative varianti. Inoltre, un enumeratore di informazioni sul componente del decodificatore restituirà informazioni sul componente **\_ CLSID WICPngDecoder2,** ma non informazioni **su \_ CLSID WICPngDecoder1.**
 
-Se si specifica **CLSID \_ WICImagingFactory1** , viene utilizzato **CLSID \_ WICPngDecoder1** anziché **CLSID \_ WICPngDecoder2** nei casi precedenti.
+Se si specifica **\_ CLSID WICImagingFactory1,** verrà usato **\_ CLSID WICPngDecoder1** anziché **\_ CLSID WICPngDecoder2** nei casi precedenti.
 
 ## <a name="whats-new-for-windows-7"></a>Novità di Windows 7
 
-In Windows 7, WIC è stato aggiornato con alcune nuove funzionalità. In questo argomento viene fornita una rapida introduzione a queste nuove funzionalità.
+In Windows 7, WIC è stato aggiornato con diverse nuove funzionalità. Questo argomento offre una rapida introduzione a queste nuove funzionalità.
 
-### <a name="updates-to-the-tiff-codec"></a>Aggiornamenti per il codec TIFF
+### <a name="updates-to-the-tiff-codec"></a>Aggiornamenti al codec TIFF
 
-Il codec TIFF WIC è stato aggiornato per Windows 7 per supportare diverse funzionalità non supportate dalla versione precedente di WIC.
+Il codec WIC TIFF è stato aggiornato per Windows 7 per supportare diverse funzionalità non supportate dalla versione precedente di WIC.
 
 -   Supporto per file TIFF di grandi dimensioni.
--   Decodifica le immagini TIFF affiancate.
--   Decodifica immagini TIFF Flat (planari).
--   Decodifica le immagini TIFF codificate JPEG.
+-   Decodificare immagini TIFF affiancate.
+-   Decodificare immagini TIFF flat (planari).
+-   Decodificare immagini TIFF con codifica JPEG.
 
 ### <a name="progressive-decoding"></a>Decodifica progressiva
 
-La decodifica progressiva consente di decodificare in modo incrementale ed eseguire il rendering di parti di un'immagine prima del completamento del download dell'intera immagine. Questa funzionalità migliora notevolmente l'esperienza utente durante la visualizzazione di immagini da Internet, in quanto l'utente non deve attendere il download dell'intera immagine prima che possa iniziare la decodifica. Con la decodifica progressiva, gli utenti possono visualizzare un'anteprima dell'immagine con dati disponibili molto prima che venga scaricata l'intera immagine. Questa funzionalità è essenziale per qualsiasi applicazione utilizzata per visualizzare immagini da Internet o da origini dati con larghezza di banda limitata.
+La decodifica progressiva consente di decodificare ed eseguire il rendering incrementale di parti di un'immagine prima del termine del download dell'intera immagine. Questa funzionalità migliora notevolmente l'esperienza utente durante la visualizzazione di immagini da Internet, perché l'utente non deve attendere il download dell'intera immagine prima che possa iniziare la decodifica. Con la decodifica progressiva, gli utenti possono visualizzare un'anteprima dell'immagine con i dati disponibili molto prima che venga scaricata l'intera immagine. Questa funzionalità è essenziale per qualsiasi applicazione usata per visualizzare immagini da Internet o da origini dati con larghezza di banda limitata.
 
-Per ulteriori informazioni, vedere [Cenni preliminari sulla decodifica progressiva](-wic-progressive-decoding.md).
+Per altre informazioni, vedere Cenni [preliminari sulla decodifica progressiva.](-wic-progressive-decoding.md)
 
 ### <a name="extended-metadata-support-for-jpeg-png-and-gif"></a>Supporto dei metadati estesi per JPEG, PNG e GIF
 
 In Windows 7, WIC ha esteso il supporto dei metadati per le immagini JPEG, PNG e GIF.
 
 -   Aggiunta del supporto per le proprietà GIF e GIF animate.
--   Gestori dei metadati JPG espansi per supportare i metadati cromatura, Luminance e comment.
--   Gestori di metadati PNG espansi per supportare i metadati tIME, sRGB, iCCP, cron, cHRM, iTXt, bKGD e gAMA.
--   Aggiunta di nuovi gestori di metadati 8BIM per metadati ResolutionInfo e metadati digest IPTC.
--   Sono stati aggiunti nuovi gestori di metadati per il descrittore di schermate logiche (LSD), il descrittore di immagini (IMD), le estensioni del controllo grafico (GCE) e i metadati di Application Extensions (APE).
--   Supporto per i metadati che si estendono su blocchi APPn.
+-   Gestori di metadati JPG espansi per supportare i metadati di chrominance, luminance e comment.
+-   Gestori di metadati PNG espansi per supportare i metadati tIME, sRGB, iCCP, hIST, cHRM, iTXt, bKGD e gAMA.
+-   Sono stati aggiunti nuovi gestori di metadati 8BIM per i metadati ResolutionInfo e i metadati digest IPTC.
+-   Sono stati aggiunti nuovi gestori di metadati per i metadati LSD (Logical Screen Descriptor), Image Descriptor (IMD), Graphic Control Extensions (GCE) e Application Extensions (APE).
+-   Supporto per i metadati che si estendono sui blocchi APPn.
 
-### <a name="multi-threaded-apartment-support"></a>Supporto per Apartment multithread
+### <a name="multi-threaded-apartment-support"></a>Supporto di apartment multi-thread
 
-Gli oggetti all'interno di un Apartment a thread multipli (MTA) possono essere chiamati simultaneamente da un numero qualsiasi di thread all'interno dell'MTA, consentendo prestazioni migliori nei sistemi multicore e in alcuni scenari server. Inoltre, i codec WIC che risiedono all'interno di un MTA possono chiamare altri oggetti che risiedono all'interno dell'MTA senza il costo del marshalling associato alla chiamata tra thread che si trovano in diversi apartment STA. In Windows 7, tutti i codec WIC inclusi sono stati aggiornati per supportare MTA, tra cui JPEG, TIFF, PNG, GIF, ICO e BMP. È consigliabile scrivere codec per supportare l'MTA. I codec che non supportano MTA provocheranno un notevole peggioramento delle prestazioni nelle applicazioni multithread a causa del marshalling. Per abilitare il supporto MTA, è necessario implementare correttamente la sincronizzazione nel codec. L'implementazione esatta di queste tecniche di sincronizzazione esula dall'ambito di questo documento. Di seguito è riportato un riferimento generale per la sincronizzazione di oggetti Component Object Model (COM).
+Gli oggetti all'interno di un apartment multithreading (MTA) possono essere chiamati contemporaneamente da qualsiasi numero di thread all'interno dell'MTA, consentendo prestazioni migliori nei sistemi multicore e in determinati scenari server. Inoltre, i codec WIC che si trovano all'interno di un MTA possono chiamare altri oggetti che si trovano all'interno dell'MTA senza il costo di marshalling associato alla chiamata tra thread che si trova in apartment STA diversi. Nella Windows 7, tutti i codec WIC predefiniti sono stati aggiornati per supportare MTA, tra cui JPEG, TIFF, PNG, GIF, ICO e BMP. È consigliabile scrivere codec per supportare L'agente di trasferimento messaggi. I codec che non supportano L'agente di trasferimento messaggi causeranno una riduzione significativa delle prestazioni nelle applicazioni multithreading a causa del marshalling. L'abilitazione del supporto MTA richiede l'implementazione della sincronizzazione appropriata nel codec. L'implementazione esatta di queste tecniche di sincronizzazione non è nell'ambito di questo documento. Di seguito viene fornito un riferimento generale per Component Object Model oggetti com(COM).
 
-### <a name="metadata-working-group-implementations"></a>Implementazioni del gruppo di lavoro dei metadati
+### <a name="metadata-working-group-implementations"></a>Implementazioni di gruppi di lavoro dei metadati
 
-Attualmente è disponibile un'ampia gamma di formati di archiviazione di metadati che contengono proprietà sovrapposte, senza alcun chiaro standard di settore o linee guida sui metodi coerenti per la lettura e la scrittura di questi formati di metadati. Per semplificare questa varietà di formati e proprietà, è stato creato il gruppo di lavoro dei metadati (MWG). Lo scopo di MWG è fornire linee guida per garantire l'interoperabilità tra un'ampia gamma di piattaforme, applicazioni e dispositivi. Le linee guida stabilite da MWG si applicano ai campi di metadati XMP, EXIF e IPTC e ai formati di immagine JPEG, TIFF e PSD.
+Esistono attualmente diversi formati di archiviazione dei metadati che contengono proprietà sovrapposte, senza standard di settore chiari o indicazioni su metodi coerenti per la lettura e la scrittura di questi formati di metadati. Per facilitare questa varietà di formati e proprietà, è stato formato il gruppo di lavoro metadati (MWG). L'obiettivo del gruppo MWG è fornire linee guida che garantiscono l'interoperabilità tra un'ampia gamma di piattaforme, applicazioni e dispositivi. Le linee guida stabilite dal MWG si applicano ai campi di metadati XMP, Exif e IPTC e ai formati di immagine JPEG, TIFF e PSD.
 
-In Windows 7, il gestore dei metadati delle foto e il livello di criteri dei metadati sono stati aggiornati per leggere e scrivere i metadati delle immagini in base alle linee guida stabilite da MWG. Per ulteriori informazioni sul gruppo di lavoro dei metadati (MWG), visualizzare le [linee guida per i metadati stabilite](https://s3.amazonaws.com/software.tagthatphoto.com/docs/mwg_guidance.pdf).
+Nella Windows 7, il gestore dei metadati delle foto e il livello dei criteri dei metadati sono stati aggiornati per leggere e scrivere i metadati dell'immagine in base alle linee guida stabilite dal MWG. Per altre informazioni sul gruppo di lavoro dei metadati (MWG), vedere le linee guida [sui metadati stabilite.](https://s3.amazonaws.com/software.tagthatphoto.com/docs/mwg_guidance.pdf)
 
-### <a name="windows-7-features-supported-on-windows-vista-and-windows-server-2008"></a>Funzionalità di Windows 7 supportate in Windows Vista e Windows Server 2008
+### <a name="windows-7-features-supported-on-windows-vista-and-windows-server-2008"></a>Windows 7 funzionalità supportate in Windows Vista e Windows Server 2008
 
-L' [aggiornamento della piattaforma per Windows Vista](../win7ip/platform-update-for-windows-vista-portal.md) è costituito da un set di librerie di runtime che consente agli sviluppatori di utilizzare le applicazioni in Windows 7 e Windows Vista. L'aggiornamento della piattaforma per Windows Server 2008 è costituito da un set di librerie di runtime che consente agli sviluppatori di utilizzare le applicazioni in Windows Server 2008 R2 e Windows Server 2008. L'aggiornamento della piattaforma per Windows Vista e l'aggiornamento della piattaforma per Windows Server 2008 saranno disponibili per tutti i clienti di Windows Vista e Windows Server 2008 tramite Windows Update. Le applicazioni di terze parti che richiedono l'aggiornamento della piattaforma per Windows Vista o l'aggiornamento della piattaforma per Windows Server 2008 possono avere Windows Update rilevare se l'aggiornamento richiesto è installato; in caso contrario, Windows Update lo scaricherà e installerà in background. Per ulteriori informazioni su entrambi gli aggiornamenti, vedere Aggiornamento della piattaforma per Windows Vista
+[L'aggiornamento della piattaforma Windows Vista](../win7ip/platform-update-for-windows-vista-portal.md) è un set di librerie di runtime che consente agli sviluppatori di scegliere come destinazione le applicazioni Windows 7 e Windows Vista. L'aggiornamento della piattaforma per Windows Server 2008 è un set di librerie di runtime che consente agli sviluppatori di scegliere come destinazione le applicazioni Windows Server 2008 R2 e Windows Server 2008. L'aggiornamento della piattaforma per Windows Vista e l'aggiornamento della piattaforma per Windows Server 2008 saranno disponibili per tutti i clienti di Windows Vista e Windows Server 2008 tramite Windows Update. Le applicazioni di terze parti che richiedono l'aggiornamento della piattaforma per Windows Vista o l'aggiornamento della piattaforma per Windows Server 2008 possono fare in modo che Windows Update rilevi se l'aggiornamento richiesto è installato; In caso contrario, Windows update lo scariderà e lo installerà in background. Per altre informazioni su entrambi gli aggiornamenti, vedere Aggiornamento della piattaforma per Windows Vista
 
  
 

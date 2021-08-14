@@ -8,21 +8,21 @@ keywords:
 - flussi, formati di codec
 - codec, formati
 - codecs,interfaccia IWMCodecInfo
-- IWMCodecInfo,formati codec
+- IWMCodecInfo, formati di codec
 - codecs,interfaccia IWMCodecInfo3
 - IWMCodecInfo3,formati codec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a00c9afdbeba5a187be4b992a19d4c9bdb138e1
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 5221b675c5aa3b5602bcfda96b22233f77d4ba92199f29f36885a4053700dfd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118196517"
 ---
 # <a name="to-enumerate-codec-formats"></a>Per enumerare i formati di codec
 
-Un formato codec è un oggetto di configurazione del flusso popolato con i dati di un codec. Ogni formato di codec contiene una configurazione multimediale supportata dal codec. La maggior parte dei codec audio supporta un numero finito di formati, ognuno dei quali viene enumerato dal codec ed è accessibile tramite i metodi [**di IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo). I codec video, d'altra parte, forniscono un solo formato. Questo perché i flussi video hanno variabili, come le dimensioni dei fotogrammi, più flessibili rispetto alle impostazioni di un flusso audio. Con un flusso video, è necessario compilare alcuni dei valori di configurazione del flusso. Le configurazioni del flusso audio devono essere modificate solo per assegnare un nome, un nome di connessione e un numero di flusso. Per altre informazioni, vedere [Configurazione comune a tutti i flussi.](configuration-common-to-all-streams.md)
+Un formato codec è un oggetto di configurazione del flusso popolato con i dati di un codec. Ogni formato di codec contiene una configurazione multimediale supportata dal codec. La maggior parte dei codec audio supporta un numero finito di formati, ognuno dei quali viene enumerato dal codec ed è accessibile tramite i metodi [**di IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo). I codec video, d'altra parte, forniscono un solo formato. Questo perché i flussi video hanno variabili, come le dimensioni dei fotogrammi, più flessibili rispetto alle impostazioni di un flusso audio. Con un flusso video, è necessario compilare alcuni dei valori di configurazione del flusso. Le configurazioni del flusso audio devono essere modificate solo per assegnare un nome, un nome di connessione e un numero di flusso. Per altre informazioni, vedere [Configurazione comune a tutti Flussi](configuration-common-to-all-streams.md).
 
 I formati di codec enumerati dipendono dalle impostazioni correnti dell'enumerazione dei codec, impostate tramite [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting). Attualmente sono supportate solo due proprietà del codec: g wszNumPasses, che specifica il numero di passaggi di codifica che il codec eseguirà, e \_ g wszVBREnabled, che specifica se il codec userà la codifica a velocità in \_ bit variabile. Il numero massimo di passaggi di codifica supportati da uno dei codec è due, quindi sono disponibili quattro configurazioni distinte per cui è possibile recuperare i codec, come illustrato nella tabella seguente.
 

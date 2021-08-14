@@ -3,10 +3,10 @@ title: Creazione di playlist di metafile
 description: Creazione di playlist di metafile
 ms.assetid: 0afe3aaa-bcd1-4060-8772-add50f3b6bac
 keywords:
-- Playlist Windows Media Metafile, creazione
+- Windows playlist di metafile multimediali, creazione
 - playlist, creazione
 - playlist di metafile, creazione
-- creazione di playlist Windows Media Metafile
+- creazione Windows playlist di metafile multimediali
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -14,39 +14,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d4acff6452640c3f0b66219b765a931033b9f3a8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 765d8ab507c2ce502f1cad021696b0fc2ecfd110da8dfa95ccc84a43a8987561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750468"
 ---
 # <a name="creating-metafile-playlists"></a>Creazione di playlist di metafile
 
-È possibile creare una playlist utilizzando qualsiasi editor di testo, ad esempio Blocco note di Microsoft. Aprire l'editor di testo. Digitare le voci di script che si desidera implementare. Al termine della digitazione nel blocco note, salvare il file con un nome file e un'estensione di file appropriati. Per altre informazioni sulle estensioni, vedere [linee guida sull'estensione metafile](metafile-extension-guidelines.md). Il nome file è in genere il nome del file o del flusso di Windows Media seguito da un'estensione di. Wax,. wvx o. asx. Se, ad esempio, il contenuto multimediale è un file audio Windows Media con estensione WMA, utilizzare l'estensione cera quando si assegna un nome alla playlist. Le playlist non devono includere codici di formattazione da un elaboratore di testo, ad esempio Microsoft Word. Per assicurarsi che nella playlist non siano inclusi codici di formattazione, salvare il file come file di testo normale o ASCII.
+È possibile creare una playlist usando qualsiasi editor di testo, ad esempio Microsoft Blocco note. Aprire l'editor di testo. Digitare le voci di script da implementare. Dopo aver terminato di digitare in Blocco note, salvare il file con un nome file e un'estensione di file appropriati. Per altre informazioni sulle estensioni, vedere [Linee guida per le estensioni dei metafile.](metafile-extension-guidelines.md) Il nome del file è in genere il nome del flusso o del file multimediale Windows seguito da un'estensione di file con estensione .più, .wvx o .asx. Ad esempio, se il contenuto multimediale è un file audio di Windows Media con estensione wma, usare l'estensione .extension per denominare la playlist. Le playlist non devono includere codici di formattazione di un elaboratore di testo, ad esempio Microsoft Word. Per assicurarsi che nella playlist non siano inclusi codici di formattazione, salvare il file come file di testo normale o ASCII.
 
 > [!Note]  
-> Elementi e attributi non fanno distinzione tra maiuscole e minuscole. Il testo usato nella playlist per definire un elemento o un attributo può essere maiuscolo o minuscolo o una combinazione di entrambi.
+> Gli elementi e gli attributi non supportano la distinzione tra maiuscole e minuscole. Il testo usato nella playlist per definire un elemento o un attributo può essere maiuscolo o minuscolo o una combinazione di entrambi.
 
- 
+ 
 
-Se un elemento non dispone di elementi figlio (quelli che modificano o sono contenuti all'interno di un altro elemento), è possibile usare una singola barra (/) alla fine del tag di apertura, immediatamente prima di ">", al posto di un tag di chiusura. Gli elementi figlio di un elemento devono essere visualizzati tra il tag di apertura e di chiusura per l'elemento. in caso contrario, non si tratta di elementi figlio per l'elemento e vengono ignorati o generano un errore nella sintassi della playlist.
+Se un elemento non ha elementi figlio (quelli che modificano o sono contenuti all'interno di un altro elemento), è possibile usare un singolo carattere barra (/) alla fine del tag di apertura, subito prima del tag ">", al posto di un tag di chiusura. Gli elementi figlio di un elemento devono essere presenti tra il tag di apertura e quello di chiusura dell'elemento; in caso contrario, non sono elementi figlio per tale elemento e vengono ignorati o causano un errore nella sintassi della playlist.
 
-I primi quattro caratteri di una playlist devono essere " &lt; ASX". L'elemento **ASX** viene usato in tutte le playlist se la relativa estensione è. Wax,. wvx o. asx. Deve essere presente un solo elemento **ASX** per playlist. Questo elemento identifica il file come playlist Windows Media Metafile. Non specifica il tipo di playlist.
+I primi quattro caratteri di una playlist devono essere &lt; "ASX". **L'elemento ASX** viene usato in tutte le playlist, indipendentemente dal fatto che l'estensione sia .tutto, .wvx o .asx. Deve essere presente un solo **elemento ASX** per playlist. Questo elemento identifica il file come playlist di metafile Windows media. Non specifica il tipo di playlist.
 
-L'elemento **ASX** ha tre attributi possibili:
+**L'elemento ASX** ha tre attributi possibili:
 
 **VERSION**
 
-L'attributo **Version** è obbligatorio e deve essere seguito immediatamente dopo l'elemento **ASX** , ad esempio "<ASX Version =" 3,0 " &gt; ". Il numero di versione corrente è 3,0. Windows Media Player supporta tutte le versioni precedenti. I valori accettabili per l'attributo **Version** includono sia 3,0 che 3 (senza virgola decimale).
+**L'attributo VERSION** è obbligatorio e deve seguire immediatamente dopo l'elemento **ASX,** ad esempio "<ASX version = "3.0" &gt; ". Il numero di versione corrente è 3.0. Windows Media Player supporta tutte le versioni precedenti. I valori accettabili per **l'attributo VERSION** includono sia 3.0 che 3 (senza separatore decimale).
 
-**PREVIEWMODE**
+**MODALITÀ DI ANTEPRIMA**
 
-L'attributo **PREVIEWMODE** è facoltativo. Fornisce un altro meccanismo per specificare per quanto tempo eseguire il rendering di un clip. Se il valore dell'attributo **PREVIEWMODE** è sì, Windows Media Player eseguirà il rendering di ogni clip per la durata specificata dall'elemento **PREVIEWDURATION**. Ogni clip può avere un **PREVIEWDURATION** specificato.
+**L'attributo PREVIEWMODE** è facoltativo. Fornisce un altro meccanismo per specificare per quanto tempo eseguire il rendering di una clip. Se il valore **dell'attributo PREVIEWMODE** è YES, Windows Media Player eseguirà il rendering di ogni clip per la durata specificata dall'elemento **PREVIEWDURATION.** Per ogni clip può essere **specificata un'opzione PREVIEWDURATION.**
 
-**BANNERBAR**
+**BARRA BANNER**
 
-L'attributo facoltativo **BANNERBAR** definisce se il controllo Media Player Windows riserva spazio per una rappresentazione grafica del banner. (Usare l'elemento **banner** per specificare l'immagine da visualizzare). Se il valore di **BANNERBAR** è fixed, Windows Media Player riserva lo spazio del banner per la visualizzazione e per ogni clip, indipendentemente dal fatto che la playlist del metafile specifichi un banner per la visualizzazione o la clip. In questo modo, le dimensioni della finestra di Media Player di Windows vengono mantenute uguali (tranne quando le dimensioni del video cambiano) indipendentemente dall'assenza o dalla presenza di un grafico del banner. Se alla Mostra o alla clip non è associato alcun banner, lo spazio riservato per uno è nero. Se il valore dell'attributo **BANNERBAR** è auto, Windows Media Player riserva spazio per il banner solo quando la visualizzazione o la clip ne include una.
+**L'attributo BANNERBAR facoltativo** definisce se il Windows Media Player riserva spazio per un'immagine banner. Usare **l'elemento BANNER** per specificare l'elemento grafico da visualizzare. Se il valore di **BANNERBAR** è FIXED, Windows Media Player riserva spazio banner per la visualizzazione e per ogni clip, indipendentemente dal fatto che la playlist del metafile specifichi un banner per la presentazione o il clip. In questo modo le dimensioni della finestra Windows Media Player verranno conservate allo stesso modo (tranne quando le dimensioni del video cambiano) indipendentemente dall'assenza o dalla presenza di un banner grafico. Se alla visualizzazione o al clip non è associato un banner, lo spazio riservato per uno è nero. Se il valore **dell'attributo BANNERBAR** è AUTO, Windows Media Player riserva spazio per il banner solo quando la visualizzazione o il clip ne include uno.
 
 
 ```XML
@@ -56,13 +56,13 @@ L'attributo facoltativo **BANNERBAR** definisce se il controllo Media Player Win
 
 
 
-Per ulteriori informazioni sui tre attributi dell'elemento **ASX** , vedere la voce di riferimento per l' [elemento ASX](asx-element.md).
+Per altre informazioni sui tre attributi **dell'elemento ASX,** vedere la voce di riferimento per l'elemento [ASX](asx-element.md).
 
-Un elemento **ASX** contiene elementi figlio **entry** che definiscono informazioni sui file multimediali a cui accedere. Ogni elemento **entry** deve contenere un elemento **ref** che specifica il percorso del file multimediale da trasmettere. È necessario che sia presente almeno un elemento **entry** o **ENTRYREF** all'interno di un elemento **ASX** .
+Un **elemento ASX** contiene **elementi figlio ENTRY** che definiscono le informazioni sui file multimediali a cui accedere. Ogni **elemento ENTRY** deve contenere un elemento **REF** che specifica il percorso del file multimediale da trasmettere. In un elemento **ASX** deve essere presente almeno un elemento **ENTRY** o **ENTRYREF.**
 
-Gli altri elementi definiti nell'ambito dell'elemento **ASX** , ad esempio **titolo** e **autore**, sono associati ai metadati visualizzati da Windows Media Player.
+Altri elementi definiti nell'ambito dell'elemento **ASX,** ad esempio **TITLE** e **AUTHOR,** sono associati ai metadati visualizzati da Windows Media Player.
 
-Le playlist più semplici vengono create aggiungendo più elementi **entry** con un singolo elemento **ref** a un metafile. Ogni elemento **entry** in una playlist di metafile viene sottoposto a rendering nell'ordine in cui viene visualizzato nel file come se l'utente avesse aperto manualmente ogni clip.
+Le playlist più semplici vengono create aggiungendo più **elementi ENTRY** con un singolo **elemento REF** a un metafile. Il **rendering di** ogni elemento ENTRY in una playlist di metafile viene eseguito nell'ordine in cui appare nel file come se l'utente avesse aperto manualmente ogni clip.
 
 Codice di esempio
 
@@ -86,12 +86,12 @@ Codice di esempio
 
 
 
-Assicurarsi che la playlist funzioni facendo doppio clic su di essa in Esplora risorse. Windows Media Player dovrebbe aprire e avviare lo streaming del contenuto multimediale. Dopo aver verificato il corretto funzionamento della playlist, salvarla nel server Web insieme alle pagine Web e collegarla tramite un elemento **href** oppure incorporarla in una pagina Web usando l'elemento **oggetto** di Windows Media Player.
+Assicurarsi che la playlist funzioni facendo doppio clic su di essa in Windows Explorer. Windows Media Player aprire e avviare lo streaming del contenuto multimediale. **Dopo** aver confermato il funzionamento della playlist, salvarla nel server Web insieme alle pagine Web e collegarla tramite un elemento **HREF** oppure incorporarla in una pagina Web usando l'elemento OBJECT Windows Media Player.
 
-Le sezioni seguenti contengono ulteriori informazioni:
+Le sezioni seguenti contengono altre informazioni:
 
 -   [Annidamento di metafile](nesting-metafiles.md)
--   [Utilizzo di pagine ASP per la creazione dinamica di playlist di metafile di Windows Media](using-asp-pages-to-dynamically-create-windows-media-metafile-playlists.md)
+-   [Uso di pagine ASP per creare in modo Windows playlist di metafile multimediali](using-asp-pages-to-dynamically-create-windows-media-metafile-playlists.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -103,15 +103,15 @@ Le sezioni seguenti contengono ulteriori informazioni:
 [**Playlist di esempio**](example-playlists.md)
 </dt> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guida ai metafile di Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guida ai metafile multimediali**](windows-media-metafile-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

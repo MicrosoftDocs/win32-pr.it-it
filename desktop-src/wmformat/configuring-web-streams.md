@@ -1,61 +1,61 @@
 ---
-title: Configurazione di flussi Web
-description: Configurazione di flussi Web
+title: Configurazione dei Flussi
+description: Configurazione dei Flussi
 ms.assetid: 1eeb6243-5095-4dba-994c-2083beda7b78
 keywords:
 - flussi, configurazione di flussi Web
 - codec, configurazione di flussi Web
-- Flussi Web, configurazione
+- flussi Web, configurazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c91c36788b858b2378ebf46b553f076c5ec490
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8df1ced96a772a26b674fb47a30a8664d6431ff946328f45467554857b1ee4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199122"
 ---
-# <a name="configuring-web-streams"></a>Configurazione di flussi Web
+# <a name="configuring-web-streams"></a>Configurazione dei Flussi
 
-I flussi Web sono un tipo specializzato di flusso di trasferimento di file usato per recapitare i file associati a un sito Web in un singolo flusso. La configurazione del flusso Web è riepilogata nella tabella seguente.
+I flussi Web sono un tipo specializzato di flusso di trasferimento file usato per recapitare i file associati a un sito Web in un unico flusso. La configurazione del flusso Web è riepilogata nella tabella seguente.
 
 
 
 | Impostazione                                            | Descrizione                                                                       |
 |----------------------------------------------------|-----------------------------------------------------------------------------------|
-| **\_Tipo di supporto WM \_ . majortype**                      | Impostare su WMMEDIATYPE \_ filetransfer.                                                 |
-| **\_Tipo di supporto WM \_ . sottotipo**                        | Impostare su WMMEDIASUBTYPE \_ webstream.                                                 |
-| **\_Tipo di supporto WM \_ . bFixedSizeSamples**              | Impostare su false.                                                                     |
-| **\_Tipo di supporto WM \_ . bTemporalCompression**           | Impostare su true.                                                                      |
-| **\_Tipo di supporto WM \_ . lSampleSize**                    | Impostare su 0.                                                                         |
-| **\_Tipo di supporto WM \_ . formatType**                     | Impostare su WMFORMAT \_ webstream.                                                       |
-| **\_Tipo di supporto WM \_ . punk**                           | Impostare su **null**.                                                                  |
-| **\_Tipo di supporto WM \_ . cbFormat**                       | Impostare su `sizeof(WMT_WEBSTREAM_FORMAT)`.                                            |
-| **\_Tipo di supporto WM \_ . pbFormat**                       | Impostare sull'indirizzo di una struttura del **\_ \_ formato webstream WMT** correttamente configurata. |
-| **\_Formato WEBSTREAM WMT \_ . cbSampleHeaderFixedData** | Impostare su `sizeof(WMT_WEBSTREAM_SAMPLE_HEADER)`.                                     |
-| **\_Formato WEBSTREAM WMT \_ . wVersion**                | impostare su 1.                                                                         |
-| **\_Formato WEBSTREAM WMT \_ . wReserved**               | Impostare su 0.                                                                         |
+| **WM \_ MEDIA \_ TYPE.majortype**                      | Impostare su WMMEDIATYPE \_ FileTransfer.                                                 |
+| **WM \_ MEDIA \_ TYPE.subtype**                        | Impostare su WMMEDIASUBTYPE \_ WebStream.                                                 |
+| **WM \_ MEDIA \_ TYPE.bFixedSizeSamples**              | Impostare su False.                                                                     |
+| **WM \_ MEDIA \_ TYPE.bTemporalCompression**           | Impostare su True.                                                                      |
+| **WM \_ MEDIA \_ TYPE.lSampleSize**                    | Impostare su 0.                                                                         |
+| **WM \_ MEDIA \_ TYPE.formattype**                     | Impostare su WMFORMAT \_ WebStream.                                                       |
+| **WM \_ MEDIA \_ TYPE.pUnk**                           | Impostare su **NULL.**                                                                  |
+| **WM \_ MEDIA \_ TYPE.cbFormat**                       | Impostare su `sizeof(WMT_WEBSTREAM_FORMAT)`.                                            |
+| **WM \_ MEDIA \_ TYPE.pbFormat**                       | Impostare sull'indirizzo di una struttura **WMT \_ WEBSTREAM \_ FORMAT** configurata correttamente. |
+| **WMT \_ WEBSTREAM \_ FORMAT.cbSampleHeaderFixedData** | Impostare su `sizeof(WMT_WEBSTREAM_SAMPLE_HEADER)`.                                     |
+| **WMT \_ WEBSTREAM \_ FORMAT.wVersion**                | impostare su 1.                                                                         |
+| **WMT \_ WEBSTREAM \_ FORMAT.wreserved**               | Impostare su 0.                                                                         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Configurazione comune a tutti i flussi**](configuration-common-to-all-streams.md)
+[**Configurazione comune a tutti Flussi**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
 [**Configurazione di tipi di flusso arbitrari**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
-[**Flussi Web**](web-streams.md)
+[**Web Flussi**](web-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Tipo complesso networkSettingsType
 description: Definisce gli elementi che forniscono le impostazioni utilizzate dal servizio Utilità di pianificazione per ottenere un profilo di rete.
 ms.assetid: e5df1dda-b691-47ff-a956-50ff1ce9c7cc
 keywords:
-- Utilità di pianificazione di tipo complesso networkSettingsType
+- Tipo complesso networkSettingsType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb2a8389b1e1f368bedf03fa38dce9c8e262a401
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9969e4e3827d926d8c295d4e1a3ce7b77550804eb4995a267a920a16871837f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758471"
 ---
 # <a name="networksettingstype-complex-type"></a>Tipo complesso networkSettingsType
 
@@ -45,7 +45,7 @@ Definisce gli elementi che forniscono le impostazioni utilizzate dal servizio Ut
 
 | Elemento                                                              | Tipo                                                        | Descrizione                                                                                 |
 |----------------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [**ID**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidType**](taskschedulerschema-guidtype-simpletype.md) | Specifica un valore GUID che identifica un profilo di rete. <br/>                       |
+| [**Id**](taskschedulerschema-id-networksettingstype-element.md)     | [**guidType**](taskschedulerschema-guidtype-simpletype.md) | Specifica un valore GUID che identifica un profilo di rete. <br/>                       |
 | [**Nome**](taskschedulerschema-name-networksettingstype-element.md) | nonEmptyString                                              | Specifica il nome di un profilo di rete. Il nome viene usato a scopo di visualizzazione. <br/> |
 
 
@@ -56,8 +56,8 @@ Definisce gli elementi che forniscono le impostazioni utilizzate dal servizio Ut
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

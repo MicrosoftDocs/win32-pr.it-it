@@ -3,7 +3,7 @@ title: Elemento Name (networkSettingsType)
 description: Contiene il nome di un profilo di rete. Il nome viene usato a scopo di visualizzazione.
 ms.assetid: 86e4e68d-3c36-41eb-8563-d7d5125a5957
 keywords:
-- Utilità di pianificazione elemento Name
+- Nome dell'elemento Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ed877b731b64ee8f2d807067b59399decc0eefe4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c41b92c7e63a820c2a2a34378b041bec3a49f432b52887a732c3f3bfd360b10f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758501"
 ---
 # <a name="name-networksettingstype-element"></a>Elemento Name (networkSettingsType)
 
@@ -31,7 +31,7 @@ Contiene il nome di un profilo di rete. Il nome viene usato a scopo di visualizz
  />
 ```
 
-L'elemento **Name** è definito dal tipo complesso [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) .
+**L'elemento** Name è definito dal [**tipo complesso networkSettingsType.**](taskschedulerschema-networksettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -39,15 +39,15 @@ L'elemento **Name** è definito dal tipo complesso [**networkSettingsType**](tas
 
 | Elemento                                                                                            | Derivato da                                                                       | Descrizione                                                                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**NetworkSettings (settingsType)**](taskschedulerschema-networksettings-settingstype-element.md) | [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) | Contiene le impostazioni utilizzate dal servizio Utilità di pianificazione per ottenere un profilo di rete. Il servizio Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **true**.<br/> |
+| [**NetworkSettings (settingsType)**](taskschedulerschema-networksettings-settingstype-element.md) | [**networkSettingsType**](taskschedulerschema-networksettingstype-complextype.md) | Contiene le impostazioni utilizzate dal Utilità di pianificazione per ottenere un profilo di rete. Il Utilità di pianificazione controlla la disponibilità di questa rete quando l'elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) è impostato su **True.**<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**proprietà Name di INetworkSettings**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_name).
+Per lo sviluppo in C++, vedere [**Proprietà Name di INetworkSettings.**](/windows/desktop/api/taskschd/nf-taskschd-inetworksettings-get_name)
 
-Per lo sviluppo di script, vedere [**NetworkSettings.Name**](networksettings-name.md).
+Per lo sviluppo di script, [**vedere NetworkSettings.Name**](networksettings-name.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,8 +55,8 @@ Per lo sviluppo di script, vedere [**NetworkSettings.Name**](networksettings-nam
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

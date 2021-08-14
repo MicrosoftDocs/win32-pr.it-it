@@ -4,16 +4,16 @@ ms.assetid: 75C20ECB-E79C-4C67-96C7-FF1EAC34D4D9
 title: Metodi IX509CertificateRequestPkcs7V2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 512211fe34a7c3caafbb3e227c32284cc8271953
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc7286dcd340831cdedaf05445b0ea78fb715cc7b52493a6b909c1a97ae9b849
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776402"
 ---
 # <a name="ix509certificaterequestpkcs7v2-methods"></a>Metodi IX509CertificateRequestPkcs7V2
 
-L'interfaccia [**IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) espone i metodi seguenti.
+[**L'interfaccia IX509CertificateRequestPkcs7V2**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificaterequestpkcs7v2) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

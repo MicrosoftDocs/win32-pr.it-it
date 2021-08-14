@@ -1,5 +1,5 @@
 ---
-title: attributo meetingEndTime
+title: Attributo meetingEndTime
 description: Data e ora di fine della riunione.
 ms.assetid: b2eb0dac-11fe-4bc4-9271-f481dd4afd27
 ms.tgt_platform: multiple
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7f0387f7b6dc9c57e12621d98bd4504020e4b0b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c70c8f5fc19982b5292975a2ea961fca9c3712a7d66db9ef3e003b23f033febf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118016740"
 ---
-# <a name="meetingendtime-attribute"></a>attributo meetingEndTime
+# <a name="meetingendtime-attribute"></a>Attributo meetingEndTime
 
 Data e ora di fine della riunione.
 
@@ -29,12 +29,12 @@ Data e ora di fine della riunione.
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingEndTime                                                                   |
-| LDAP-Display-Name | meetingEndTime                                                                   |
+| Ldap-Display-Name | meetingEndTime                                                                   |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto da creare. |
+| Privilegio di aggiornamento  | Chiunque può aggiornare questo oggetto in base alla sicurezza dell'oggetto creato. |
 | Frequenza di aggiornamento  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.588                                                           |
-| System-ID-GUID    | 11b6cc91-48c4-11d1-a9c3-0000f80367c1                                             |
+| System-Id-Guid    | 11b6cc91-48c4-11d1-a9c3-0000f80367c1                                             |
 | Sintassi            | [**String(Generalized-Time)**](s-string-generalized-time.md)                    |
 
 
@@ -57,15 +57,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 
@@ -162,15 +162,15 @@ Data e ora di fine della riunione.
 | ID collegamento                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| È a valore singolo       | Falso                                   |
+| Is-Single-Valued       | Falso                                   |
 | Indicizzato             | Falso                                   |
 | Nel catalogo globale      | Falso                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Classi utilizzate in        | [**Riunione**](c-meeting.md)<br/> |
+| Classi usate in        | [**Riunione**](c-meeting.md)<br/> |
 
 
 

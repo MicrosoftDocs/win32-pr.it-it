@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe DoubleColumnValue'
+description: Altre informazioni sulla classe DoubleColumnValue
 title: Classe DoubleColumnValue
 TOCTitle: DoubleColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DoubleColumnValue
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 430b940f13585de4f33c94450b858c83a9300028
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cecf37a7d312e02258ed38fb7b6bf659d9890b9377582c30fa1b381d88db38bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716532"
 ---
 # <a name="doublecolumnvalue-class"></a>Classe DoubleColumnValue
 
-Valore di colonna [doppia](/dotnet/api/system.double) .
+Valore [di](/dotnet/api/system.double) colonna Double.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Double](/dotnet/api/system.double)\>  
-      Microsoft. ISAM. esent. Interop. DoubleColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Double](/dotnet/api/system.double)\>  
+      Microsoft.Isam.Esent.Interop.DoubleColumnValue  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,6 +67,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri di DoubleColumnValue](./doublecolumnvalue-members.md)
+[Membri DoubleColumnValue](./doublecolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

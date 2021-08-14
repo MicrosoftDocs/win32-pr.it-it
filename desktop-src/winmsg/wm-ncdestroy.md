@@ -1,23 +1,23 @@
 ---
-description: Notifica a una finestra che la relativa area non client viene eliminata definitivamente. La funzione DestroyWindow invia il \_ messaggio WM NCDESTROY alla finestra che segue il \_ messaggio WM Destroy.
+description: Notifica a una finestra che la relativa area non client viene distrutta. La funzione DestroyWindow invia il messaggio \_ WM NCDESTROY alla finestra che segue il messaggio WM \_ DESTROY.
 ms.assetid: 64ab268d-0e90-4401-81d3-a4da64196001
-title: Messaggio WM_NCDESTROY (winuser. h)
+title: WM_NCDESTROY messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a462f679a29f471638299e037749adaf32a85dea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a2e74db0abf22fc2fb3d2a16b5cc63187514d1bee26079490c8d19eae13787e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200047"
 ---
-# <a name="wm_ncdestroy-message"></a>\_Messaggio NCDESTROY WM
+# <a name="wm_ncdestroy-message"></a>Messaggio \_ WM NCDESTROY
 
-Notifica a una finestra che la relativa area non client viene eliminata definitivamente. La funzione [**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) invia il messaggio **WM \_ NCDESTROY** alla finestra che segue il messaggio [**WM \_ Destroy**](wm-destroy.md) .[**WM \_ Destroy**](wm-destroy.md) viene usato per liberare l'oggetto Memory allocato associato alla finestra.
+Notifica a una finestra che la relativa area non client viene distrutta. La [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) invia il **messaggio WM \_ NCDESTROY** alla finestra che segue il [**messaggio WM \_ DESTROY.**](wm-destroy.md) [**WM \_ DESTROY**](wm-destroy.md) viene usato per liberare l'oggetto memoria allocato associato alla finestra.
 
-Il messaggio **WM \_ NCDESTROY** viene inviato dopo che le finestre figlio sono state eliminate definitivamente. Al contrario, [**WM \_ Destroy**](wm-destroy.md) viene inviato prima che vengano distrutte le finestre figlio.
+Il **messaggio \_ WM NCDESTROY** viene inviato dopo l'eliminazione delle finestre figlio. Al contrario, [**WM \_ DESTROY viene**](wm-destroy.md) inviato prima che le finestre figlio siano distrutte.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -48,7 +48,7 @@ Questo parametro non viene usato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
@@ -62,7 +62,7 @@ Questo messaggio libera la memoria allocata internamente per la finestra.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ Questo messaggio libera la memoria allocata internamente per la finestra.
 **Riferimento**
 </dt> <dt>
 
-[**DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
+[**Destroywindow**](/windows/win32/api/winuser/nf-winuser-destroywindow)
 </dt> <dt>
 
-[**eliminazione di WM \_**](wm-destroy.md)
+[**WM \_ DESTROY**](wm-destroy.md)
 </dt> <dt>
 
-[**\_NCCREATE WM**](wm-nccreate.md)
+[**WM \_ NCCREATE**](wm-nccreate.md)
 </dt> <dt>
 
 **Informazioni concettuali**

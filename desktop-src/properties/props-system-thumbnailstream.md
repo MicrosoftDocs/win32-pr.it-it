@@ -1,19 +1,19 @@
 ---
-description: Dati che rappresentano l'anteprima nel \_ formato di flusso VT, supportati da Windows GDI+ e da codec Windows, ad esempio. jpg e. png.
+description: Dati che rappresentano l'anteprima in formato STREAM VT, supportati da codec Windows GDI+ e Windows quali .jpg \_ e .png.
 ms.assetid: 7ffdf9e4-69b1-4946-8867-73696cd241e0
-title: System. ThumbnailStream
+title: System.ThumbnailStream
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 378fbb885dfac216186fbc402090a2786d2b27ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecabbcc3f634e3ff2e614b81a839f2108dfd4261fa1a3ec7e06cc07e74c05cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864260"
 ---
-# <a name="systemthumbnailstream"></a>System. ThumbnailStream
+# <a name="systemthumbnailstream"></a>System.ThumbnailStream
 
-Dati che rappresentano l'anteprima nel \_ formato di flusso VT, supportati da Windows GDI+ e da codec Windows, ad esempio. jpg e. png.
+Dati che rappresentano l'anteprima in formato STREAM VT, supportati da codec Windows GDI+ e Windows quali .jpg \_ e .png.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -49,13 +49,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -64,13 +64,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -79,13 +79,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

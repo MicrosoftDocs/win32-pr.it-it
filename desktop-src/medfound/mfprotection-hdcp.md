@@ -1,19 +1,19 @@
 ---
-description: Specifica la protezione HDCP High-Bandwidth Digital protezione del contenuto (HDCP).
+description: Specifica la protezione High-Bandwidth hdcp protezione del contenuto (HDCP).
 ms.assetid: 3C4B6E66-D68B-4BE9-A821-8F91EF28B70B
-title: Attributo MFPROTECTION_HDCP (Mfidl. h)
+title: MFPROTECTION_HDCP attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5126bbab3c030a07cfee3d5b3a1f187079e1f869
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ed0f0412165f1376a298486894654b2282143113e05d99d3b167cbe8fcc8163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872475"
 ---
-# <a name="mfprotection_hdcp-attribute"></a>\_Attributo MFPROTECTION HDCP
+# <a name="mfprotection_hdcp-attribute"></a>Attributo \_ HDCP MFPROTECTION
 
-Specifica la protezione HDCP High-Bandwidth Digital protezione del contenuto (HDCP).
+Specifica la protezione High-Bandwidth hdcp protezione del contenuto (HDCP).
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Specifica la protezione HDCP High-Bandwidth Digital protezione del contenuto (HD
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Specifica la protezione HDCP High-Bandwidth Digital protezione del contenuto (HD
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

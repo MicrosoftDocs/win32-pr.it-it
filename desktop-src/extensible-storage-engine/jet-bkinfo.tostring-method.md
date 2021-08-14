@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1db865b87cbf9b1bbb486360404252d97d4459d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 877b92165dd339f2e4f8b3ee5b72ac9f1001eaf8332854f62d042b618eac7195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117705453"
 ---
 # <a name="jet_bkinfotostring-method"></a>JET_BKINFO. Metodo ToString
 
-Genera una rappresentazione di stringa della struttura.
+Generare una rappresentazione di stringa della struttura .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Struttura sotto forma di stringa.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Struttura come stringa.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_BKINFO](./jet-bkinfo-structure2.md)
+[JET_BKINFO struttura](./jet-bkinfo-structure2.md)
 
-[Membri JET_BKINFO](./jet-bkinfo-members.md)
+[JET_BKINFO membri](./jet-bkinfo-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,21 +1,21 @@
 ---
-description: Il sistema carica un provider di tempo in base alle informazioni di configurazione archiviate nel registro di sistema.
+description: Il sistema carica un provider di servizi ora in base alle informazioni di configurazione archiviate nel Registro di sistema.
 ms.assetid: 67f79c31-9dd7-4e3f-bfe1-701b10611f91
-title: Registrazione di un provider Time
+title: Registrazione di un provider di servizi ora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a98e5e516db6b2c800c917c5e47da9bd75ba5c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eeb7bce1370e443eaf3eb42d78cdfd058cf2c38147da038de1e921d85e957f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763926"
 ---
-# <a name="registering-a-time-provider"></a>Registrazione di un provider Time
+# <a name="registering-a-time-provider"></a>Registrazione di un provider di servizi ora
 
-Il sistema carica un provider di tempo in base alle informazioni di configurazione archiviate nel registro di sistema. Ogni provider di servizi temporali deve creare la chiave del registro di sistema seguente:
+Il sistema carica un provider di servizi ora in base alle informazioni di configurazione archiviate nel Registro di sistema. Ogni provider di tempo deve creare la chiave del Registro di sistema seguente:
 
-**HKEY \_ \_Computer locale \\ System** \\ **CurrentControlSet** \\ **Services** \\ **W32Time** \\ **TimeProviders** \\ *providerName*
+**HKEY \_ Local \_ MACHINE \\ System** \\ **CurrentControlSet** \\ **Services** \\ **W32Time** \\ **TimeProviders** \\ *ProviderName*
 
 Nella tabella seguente vengono descritti i valori che devono esistere nella chiave di ogni provider.
 
@@ -23,17 +23,17 @@ Nella tabella seguente vengono descritti i valori che devono esistere nella chia
 
 | Valore             | Descrizione                                                                                                                                                                                                              |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **DllName**       | Nome della DLL che contiene il provider. Questo valore è di tipo **reg \_ SZ**.                                                                                                                                     |
-| **Enabled**       | Indica se il provider deve essere avviato. Se questo valore è 1, il provider viene avviato. In caso contrario, il provider non viene avviato. Questo valore è di tipo **reg \_ DWORD**.                                           |
-| **InputProvider** | Indica se il provider è un provider di input o un provider di output. Se questo valore è 1, il provider è un provider di input. In caso contrario, il provider è un provider di output. Questo valore è di tipo **reg \_ DWORD**. |
+| **DllName**       | Nome della DLL che contiene il provider. Questo valore è di tipo **REG \_ SZ**.                                                                                                                                     |
+| **Enabled**       | Indica se il provider deve essere avviato. Se questo valore è 1, il provider viene avviato. In caso contrario, il provider non viene avviato. Questo valore è di tipo **REG \_ DWORD**.                                           |
+| **InputProvider** | Indica se il provider è un provider di input o un provider di output. Se questo valore è 1, il provider è un provider di input. In caso contrario, il provider è un provider di output. Questo valore è di tipo **REG \_ DWORD**. |
 
 
 
  
 
-Gestione provider di servizi temporali enumera le chiavi sotto la chiave **TimeProviders** e avvia ogni provider abilitato. I provider vengono avviati all'avvio del sistema e ogni volta che vengono apportate modifiche ai parametri.
+Il gestore del provider di servizi ora enumera le chiavi nella **chiave TimeProviders** e avvia ogni provider abilitato. I provider vengono avviati all'avvio del sistema e ogni volta che vengono apportate modifiche ai parametri.
 
-Ogni provider di servizi temporali può inoltre archiviare informazioni di configurazione specifiche dell'applicazione nel registro di sistema.
+Ogni provider di servizi di tempo può anche archiviare le informazioni di configurazione specifiche dell'applicazione nel Registro di sistema.
 
  
 

@@ -1,69 +1,69 @@
 ---
 title: Dichiarazione di comandi e controlli con markup della barra multifunzione
-description: Il Framework della barra multifunzione di Windows usa un linguaggio di markup basato su Extensible Application Markup Language (XAML) per implementare in modo dichiarativo l'aspetto di un'applicazione Ribbon.
+description: Il framework Windows ribbon usa un linguaggio di markup basato su Extensible Application Markup Language (XAML) per implementare in modo dichiarativo l'aspetto di un'applicazione della barra multifunzione.
 ms.assetid: 76bacfb3-ecaf-47b3-be97-afa5e7e52330
 keywords:
-- Barra multifunzione di Windows, struttura markup
-- Barra multifunzione, struttura markup
-- Barra multifunzione di Windows, separazione della presentazione dalla logica dei comandi
-- Barra multifunzione, separazione della presentazione dalla logica del comando
-- Barra multifunzione di Windows, componenti
+- Windows Barra multifunzione, struttura di markup
+- Barra multifunzione, struttura di markup
+- Windows Barra multifunzione, separazione della presentazione dalla logica dei comandi
+- Barra multifunzione, separazione della presentazione dalla logica dei comandi
+- Windows Barra multifunzione, componenti
 - Barra multifunzione, componenti
-- sistema di comando per la barra multifunzione di Windows
-- controlli per la barra multifunzione di Windows
+- Sistema di comandi per Windows barra multifunzione
+- Controlli per la Windows multifunzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c97c5c193332ce217709c825a58f0ae546c03c9c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 20ae6c8d62012fac240c6d044c688295d89d8d5899e3673a3b914d8d142111d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118201323"
 ---
 # <a name="declaring-commands-and-controls-with-ribbon-markup"></a>Dichiarazione di comandi e controlli con markup della barra multifunzione
 
-Il Framework della barra multifunzione di Windows usa un linguaggio di markup basato su Extensible Application Markup Language (XAML) per implementare in modo dichiarativo l'aspetto di un'applicazione Ribbon.
+Il framework Windows ribbon usa un linguaggio di markup basato su Extensible Application Markup Language (XAML) per implementare in modo dichiarativo l'aspetto di un'applicazione della barra multifunzione.
 
--   [Separazione della presentazione dalla logica del comando](#separating-presentation-from-command-logic)
+-   [Separazione della presentazione dalla logica dei comandi](#separating-presentation-from-command-logic)
 -   [Struttura di markup](#markup-structure)
 -   [Componenti della barra multifunzione](#ribbon-components)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="separating-presentation-from-command-logic"></a>Separazione della presentazione dalla logica del comando
+## <a name="separating-presentation-from-command-logic"></a>Separazione della presentazione dalla logica dei comandi
 
-La separazione degli attributi di presentazione e visualizzazione dalla logica dei comandi nel framework della barra multifunzione viene eseguita tramite due piattaforme di sviluppo distinte, ma dipendenti. I layout di controllo, i comportamenti di ridimensionamento, le dichiarazioni di comando e le specifiche delle risorse sono il dominio della fase di progettazione di una sintassi di markup dichiarativa basata sulla specifica [Extensible Application Markup Language (XAML)](/dotnet/framework/wpf/advanced/xaml-in-wpf) . Funzionalità di basso livello, hook dell'applicazione e gestori di comandi sono definiti nelle implementazioni di interfaccia basate su Component Object Model (COM).
+La separazione degli attributi di presentazione e di visualizzazione dalla logica di comando nel framework della barra multifunzione viene eseguita tramite due piattaforme di sviluppo distinte, ma dipendenti. Layout di controllo, comportamenti di ridimensionamento, dichiarazioni command e specifiche di risorse sono il dominio della fase di progettazione di una sintassi di markup dichiarativa basata [sulla specifica Extensible Application Markup Language (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) Funzionalità di basso livello, hook dell'applicazione e gestori di comandi sono definiti nelle implementazioni Component Object Model interfacce basate su Component Object Model (COM).
 
-Questa separazione di presentazione e logica offre i vantaggi seguenti:
+Questa separazione tra presentazione e logica offre i vantaggi seguenti:
 
--   Un ciclo di sviluppo di applicazioni più efficiente che consente agli sviluppatori e ai progettisti dell'interfaccia utente di implementare l'interfaccia utente grafica dell'applicazione Ribbon indipendentemente dalla funzionalità di base dell'applicazione. Questa funzionalità di base può essere lasciata agli sviluppatori di software dedicati.
--   Manutenzione meno costosa poiché le modifiche all'interfaccia utente grafica sono possibili senza modifiche alle funzionalità principali (e viceversa).
--   Specifica semplice delle risorse stringa e immagine tramite markup.
--   Semplicità di prototipo.
+-   Ciclo di sviluppo di applicazioni più efficiente che consente agli sviluppatori e ai progettisti dell'interfaccia utente di implementare l'interfaccia utente grafica dell'applicazione barra multifunzione indipendentemente dalla funzionalità principale dell'applicazione. Questa funzionalità di base può essere lasciata agli sviluppatori di software dedicati.
+-   Manutenzione meno dis costosa perché è possibile apportare modifiche all'interfaccia utente grafica senza apportare modifiche alle funzionalità di base (e viceversa).
+-   Specifica semplice delle risorse di tipo stringa e immagine tramite markup.
+-   Facilità di prototipazione.
 
 ## <a name="markup-structure"></a>Struttura di markup
 
-All'interno della struttura del markup del Framework Ribbon sono presenti due rami distinti.
+Nella struttura del markup del framework della barra multifunzione sono presenti due rami distinti.
 
-Il primo ramo contiene un manifesto di dichiarazioni di comando e di risorse (stringhe e immagini). Ogni voce di comando viene utilizzata dal Framework per associare un controllo Ribbon, tramite un ID di comando, a un gestore di comandi definito nel codice dell'applicazione.
+Il primo ramo contiene un manifesto di dichiarazioni di comando e di risorse (stringhe e immagini). Ogni voce command viene usata dal framework per associare un controllo barra multifunzione, tramite un ID comando, a un gestore command definito nel codice dell'applicazione.
 
-Il secondo ramo contiene le dichiarazioni di controllo effettive. Ogni controllo è associato a un comando tramite un attributo *CommandName* che esegue il mapping a un attributo *Name* specificato in ogni dichiarazione di comando.
+Il secondo ramo contiene le dichiarazioni di controllo effettive. Ogni controllo è associato a un comando tramite un *attributo CommandName* che esegue il mapping a un *attributo Name* specificato in ogni dichiarazione Command.
 
 ## <a name="ribbon-components"></a>Componenti della barra multifunzione
 
-La funzionalità dell'interfaccia utente del Framework Ribbon è esposta tramite [viste](windowsribbon-reference-elements-view.md). Una vista è essenzialmente un contenitore, ad esempio la [**barra multifunzione**](windowsribbon-element-ribbon.md) e [**ContextPopup**](windowsribbon-element-contextpopup.md), usato per presentare i controlli del Framework e i comandi a cui sono associati.
+La funzionalità dell'interfaccia utente del framework della barra multifunzione viene esposta [tramite visualizzazioni.](windowsribbon-reference-elements-view.md) Una visualizzazione è essenzialmente un contenitore, ad esempio la barra multifunzione e [**ContextPopup,**](windowsribbon-element-contextpopup.md)usato per presentare i controlli del framework e i comandi a cui sono associati. [](windowsribbon-element-ribbon.md)
 
-La visualizzazione della [**barra multifunzione**](windowsribbon-element-ribbon.md) è costituita da diversi componenti che includono un [menu applicazione](windowsribbon-controls-applicationmenu.md), la [barra di accesso rapido (QAT)](windowsribbon-controls-quickaccesstoolbar.md) per la visualizzazione dei comandi di uso comune dall'interfaccia utente della barra multifunzione, le [schede](windowsribbon-controls-tab.md) core e contestuali che contengono [gruppi](windowsribbon-controls-group.md) di controlli e il sistema di menu di scelta rapida completo del [**ContextPopup**](windowsribbon-element-contextpopup.md).
+La [](windowsribbon-element-ribbon.md) visualizzazione barra multifunzione è costituita da diversi componenti che includono un [menu](windowsribbon-controls-applicationmenu.md)dell'applicazione, la barra di [](windowsribbon-controls-tab.md) accesso [](windowsribbon-controls-group.md) rapido [(QAT)](windowsribbon-controls-quickaccesstoolbar.md) per visualizzare i comandi di uso comune dall'interfaccia utente della barra multifunzione, le schede principali e contestuali che contengono gruppi di controlli e il sistema di menu di scelta rapida completo di [**ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-Tutti i componenti della barra multifunzione sono dichiarati in un file di markup autonomo:
+Tutti i componenti della barra multifunzione vengono dichiarati in un file di markup autonomo che:
 
 -   Specifica le proprietà di base per ogni elemento.
 -   Mostra chiaramente le relazioni gerarchiche.
--   Fornisce le preferenze di layout e gli hint di scalabilità. Per ulteriori informazioni sui modelli di layout del Framework della barra multifunzione, vedere [personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di scalabilità](windowsribbon-templates.md).
--   Fornisce un modo per definire risorse quali immagini ed etichette. Per altre informazioni sulle risorse di immagine, vedere [specifica delle risorse dell'immagine della barra multifunzione](windowsribbon-imageformats.md).
+-   Fornisce preferenze di layout e suggerimenti per il ridimensionamento. Per altre informazioni sui modelli di layout del framework della barra multifunzione, vedere Personalizzazione di una barra multifunzione tramite definizioni [delle dimensioni e criteri di ridimensionamento.](windowsribbon-templates.md)
+-   Consente di definire risorse quali immagini ed etichette. Per altre informazioni sulle risorse immagine, vedere [Specifica delle risorse immagine della barra multifunzione.](windowsribbon-imageformats.md)
 
-I due esempi di markup della barra multifunzione seguenti illustrano come un set di voci di menu dell'applicazione Ribbon è associato a un nome di comando e a un ID.
+I due esempi di markup della barra multifunzione seguenti illustrano come un set di voci del menu dell'applicazione della barra multifunzione sia associato a un nome di comando e a un ID.
 
-1.  In questa sezione vengono illustrate le dichiarazioni di comando necessarie per un menu dell'applicazione con comandi di base, ad esempio nuovo, Apri e Salva.
+1.  Questa sezione illustra le dichiarazioni di comando necessarie per un menu dell'applicazione con comandi di base, ad esempio Nuovo, Apri e Salva.
     ```XML
     <!-- Command declarations for the Application Menu. -->
     <Command Name="cmdFileMenu"
@@ -114,7 +114,7 @@ I due esempi di markup della barra multifunzione seguenti illustrano come un set
 
     
 
-2.  In questa sezione vengono illustrate le dichiarazioni di controllo associate.
+2.  Questa sezione illustra le dichiarazioni Control associate.
     ```XML
     <!-- Control declarations for Application Menu items. -->
     <Ribbon.ApplicationMenu>
@@ -139,7 +139,7 @@ I due esempi di markup della barra multifunzione seguenti illustrano come un set
 
     
 
-Quando il markup viene compilato con lo strumento del compilatore di comandi dell'interfaccia utente (UICC), i nomi e gli ID del comando vengono inseriti in un file di intestazione utilizzato dall'applicazione host della barra multifunzione.
+Quando il markup viene compilato con lo strumento UICC (Ui Command Compiler), i nomi e gli ID dei comandi vengono inseriti in un file di intestazione usato dall'applicazione host della barra multifunzione.
 
 Di seguito è riportato un esempio di un file di intestazione generato da UICC.
 
@@ -175,6 +175,6 @@ Di seguito è riportato un esempio di un file di intestazione generato da UICC.
 [Compilazione del markup della barra multifunzione](windowsribbon-intentcl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

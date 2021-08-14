@@ -1,37 +1,37 @@
 ---
 title: Modifiche e inerzia
-description: Questa sezione contiene argomenti correlati a modifiche e inerzia.
+description: Questa sezione contiene argomenti correlati alle modifiche e all'inerzia.
 ms.assetid: ba56fa56-c74f-47ac-a15c-ba82a0521995
 keywords:
-- Windows Touch, modifiche
-- Windows Touch, inerzia
-- modifiche, informazioni
-- inerzia, informazioni
+- Windows Tocco, manipolazioni
+- Windows Tocco, inerzia
+- manipolazioni, informazioni
+- inerzia, informazioni su
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a55def8acb5f3dcf517ae90f4f220511e0650a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03d47661630fd0cc3f14125d1590816145d48a0f3485cedde68c76b52064eb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199489"
 ---
 # <a name="manipulations-and-inertia"></a>Modifiche e inerzia
 
-Questa sezione contiene argomenti correlati a modifiche e inerzia.
+Questa sezione contiene argomenti correlati alle modifiche e all'inerzia.
 
-Questa sezione è costituita dagli argomenti seguenti.
+Questa sezione è costituita dai seguenti argomenti.
 
 
 
 | Argomento                                                   | Descrizione                               |
 |---------------------------------------------------------|-------------------------------------------|
-| [Modifiche](getting-started-with-manipulations.md) | Illustra le modifiche per Windows Touch. |
-| [Inerzia](getting-started-with-inertia.md)             | Spiega l'inerzia per Windows Touch.       |
+| [Modifiche](getting-started-with-manipulations.md) | Illustra le manipolazioni per Windows Touch. |
+| [Inerzia](getting-started-with-inertia.md)             | Illustra l'inerzia per Windows Touch.       |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -40,9 +40,9 @@ Questa sezione è costituita dagli argomenti seguenti.
 [Guida per programmatori](programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

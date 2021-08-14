@@ -1,10 +1,10 @@
 ---
-title: Attributo Volume-Count
-description: Quota del volume rilevata per un determinato computer.
+title: Volume-Count attributo
+description: Quota di volume rilevata per un determinato computer.
 ms.assetid: a764a650-2cce-4df4-9a5e-d5fc8de196cb
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Volume-Count attribute
+- Volume-Count schema AD dell'attributo
 - Schema AD dell'attributo volumeCount
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd2242926ce379cdba9a19ae1ad0dc2612a3375f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e83fba5496bd954bf4f774ca30da6f5ba1b030999e549d52b3d7bcb172736440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176143"
 ---
-# <a name="volume-count-attribute"></a>Attributo Volume-Count
+# <a name="volume-count-attribute"></a>Volume-Count attributo
 
-Quota del volume rilevata per un determinato computer.
+Quota di volume rilevata per un determinato computer.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Volume-Count                         |
-| LDAP-Display-Name | volumeCount                          |
+| Ldap-Display-Name | volumeCount                          |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.507               |
-| System-ID-GUID    | 34aaa217-b699-11d0-afee-0000f80367c1 |
+| System-Id-Guid    | 34aaa217-b699-11d0-afee-0000f80367c1 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Quota del volume rilevata per un determinato computer.
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

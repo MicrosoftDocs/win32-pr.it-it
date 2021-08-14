@@ -1,19 +1,19 @@
 ---
-description: Imposta il tipo di carattere che un controllo deve usare durante il disegno del testo.
+description: Imposta il tipo di carattere che deve essere utilizzato da un controllo durante il disegno di testo.
 ms.assetid: 7db6b8af-dbec-4c29-8bf7-d7e95d9813c3
-title: Messaggio WM_SETFONT (winuser. h)
+title: WM_SETFONT messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fc334e6b8c937759555c471f00ec56254a629c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 811bee30237a64955197588f87866d4a64af89edc640762ec16333839aee9220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199937"
 ---
-# <a name="wm_setfont-message"></a>\_Messaggio del tipo di carattere WM
+# <a name="wm_setfont-message"></a>Messaggio \_ WM SETFONT
 
-Imposta il tipo di carattere che un controllo deve usare durante il disegno del testo.
+Imposta il tipo di carattere che deve essere utilizzato da un controllo durante il disegno di testo.
 
 
 ```C++
@@ -29,14 +29,14 @@ Imposta il tipo di carattere che un controllo deve usare durante il disegno del 
 *wParam* 
 </dt> <dd>
 
-Handle per il tipo di carattere (**Hfont**). Se questo parametro è **null**, il controllo Usa il tipo di carattere di sistema predefinito per creare il testo.
+Handle per il tipo di carattere (**HFONT**). Se questo parametro è **NULL,** il controllo usa il tipo di carattere di sistema predefinito per disegnare testo.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La parola di basso livello di *lParam* specifica se il controllo deve essere ridisegnato immediatamente dopo l'impostazione del tipo di carattere. Se questo parametro è **true**, il controllo viene ridisegnato.
+La parola meno ordinata di *lParam* specifica se il controllo deve essere ridisegnato immediatamente dopo l'impostazione del tipo di carattere. Se questo parametro è **TRUE,** il controllo si ridisegna.
 
 </dd> </dl>
 
@@ -44,17 +44,17 @@ La parola di basso livello di *lParam* specifica se il controllo deve essere rid
 
 Tipo: **LRESULT**
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **WM di \_ tipo carattere** si applica a tutti i controlli, non solo alle finestre di dialogo.
+Il **messaggio \_ WM SETFONT** si applica a tutti i controlli, non solo a quelli nelle finestre di dialogo.
 
-Il momento migliore per il proprietario di un controllo finestra di dialogo per impostare il tipo di carattere del controllo è quando riceve il messaggio [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md) . L'applicazione deve chiamare la funzione [**DeleteObject**](/windows/win32/api/wingdi/nf-wingdi-deleteobject) per eliminare il tipo di carattere quando non è più necessario. ad esempio, dopo l'eliminazione del controllo.
+Il momento migliore per il proprietario di un controllo finestra di dialogo per impostare il tipo di carattere del controllo è quando riceve il [**messaggio \_ WM INITDIALOG.**](../dlgbox/wm-initdialog.md) L'applicazione deve chiamare [**la funzione DeleteObject**](/windows/win32/api/wingdi/nf-wingdi-deleteobject) per eliminare il tipo di carattere quando non è più necessario. ad esempio dopo l'eliminazione del controllo.
 
-Le dimensioni del controllo non cambiano in seguito alla ricezione del messaggio. Per evitare di ritagliare il testo che non rientra nei limiti del controllo, l'applicazione deve correggere le dimensioni della finestra del controllo prima di impostare il tipo di carattere.
+Le dimensioni del controllo non cambiano in seguito alla ricezione di questo messaggio. Per evitare di ritagliare testo che non rientra nei limiti del controllo, l'applicazione deve correggere le dimensioni della finestra di controllo prima di impostare il tipo di carattere.
 
-Quando in una finestra di dialogo viene utilizzato lo stile del [ \_ tipo di carattere DS](../dlgbox/about-dialog-boxes.md) per impostare il testo nei relativi controlli, il sistema invia il messaggio di **carattere di \_ tipo WM** alla routine della finestra di dialogo prima di creare i controlli. Un'applicazione può creare una finestra di dialogo che contiene lo \_ stile del tipo di carattere DS chiamando una delle funzioni seguenti:
+Quando una finestra di dialogo usa lo stile [ \_ DS SETFONT](../dlgbox/about-dialog-boxes.md) per impostare il testo nei relativi controlli, il sistema invia il messaggio **WM \_ SETFONT** alla procedura della finestra di dialogo prima di creare i controlli. Un'applicazione può creare una finestra di dialogo contenente lo stile SETFONT DS \_ chiamando una delle funzioni seguenti:
 
 -   [**CreateDialogIndirect**](/windows/win32/api/winuser/nf-winuser-createdialogindirecta)
 -   [**CreateDialogIndirectParam**](/windows/win32/api/winuser/nf-winuser-createdialogindirectparama)
@@ -69,7 +69,7 @@ Quando in una finestra di dialogo viene utilizzato lo stile del [ \_ tipo di car
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Quando in una finestra di dialogo viene utilizzato lo stile del [ \_ tipo di car
 [**MAKELPARAM**](/windows/win32/api/winuser/nf-winuser-makelparam)
 </dt> <dt>
 
-[**\_tipo di carattere WM GetFont**](wm-getfont.md)
+[**WM \_ GETFONT**](wm-getfont.md)
 </dt> <dt>
 
-[**\_INITDIALOG WM**](../dlgbox/wm-initdialog.md)
+[**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md)
 </dt> <dt>
 
 **Informazioni concettuali**

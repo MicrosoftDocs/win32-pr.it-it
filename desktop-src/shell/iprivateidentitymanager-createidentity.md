@@ -9,12 +9,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: a9beff0f-570f-48ee-93ed-b3fa6efa7a38
-ms.openlocfilehash: 904cf62e32ffa2a51668865437163d0ed3b0bece
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: b7bb09eaaae32d441d1e3b268f5d8fa4a579f34695b8bc0bf34012f964485159
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049631"
 ---
 # <a name="iprivateidentitymanagercreateidentity-method"></a>Metodo IPrivateIdentityManager::CreateIdentity
 

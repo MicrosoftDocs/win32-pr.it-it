@@ -1,22 +1,22 @@
 ---
 title: Oggetti ADSI di WinNT
-description: Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le funzionalità e i servizi di diverse interfacce ADSI.
+description: Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare funzionalità e servizi di varie interfacce ADSI.
 ms.assetid: ce6f8638-aa9e-4036-b597-077da4c3c534
 ms.tgt_platform: multiple
 keywords:
-- Provider di servizi WinNT ADSI, oggetti ADSI
+- Oggetti ADSI ,ADSI del provider di servizi WinNT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d0c9e5c486d07e1e392a9f307ecd9af4509ed3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93332a2b0501c9c7c4140d83ff7358f18ae68adc50f9f9f3b689765d947ef01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104116697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118180585"
 ---
 # <a name="adsi-objects-of-winnt"></a>Oggetti ADSI di WinNT
 
-Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le funzionalità e i servizi di diverse interfacce ADSI.
+Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare funzionalità e servizi di varie interfacce ADSI.
 
 
 
@@ -28,7 +28,7 @@ Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le fun
 </colgroup>
 <thead>
 <tr class="header">
-<th>ADSI (oggetto)</th>
+<th>Oggetto ADSI</th>
 <th>Descrizione</th>
 <th>Interfacce supportate</th>
 </tr>
@@ -37,7 +37,7 @@ Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le fun
 <tr class="odd">
 <td><strong>Classe</strong></td>
 <td>Oggetto ADSI che rappresenta una definizione di classe.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsclass"> <strong>IADsClass</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsclass"> <strong>IADsClass</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Computer</strong></td>
@@ -46,7 +46,7 @@ Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le fun
 </tr>
 <tr class="odd">
 <td><strong>Dominio</strong></td>
-<td>Oggetto ADSI che rappresenta un dominio nella rete.</td>
+<td>Oggetto ADSI che rappresenta un dominio in rete.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsdomain"><strong>IADsDomain</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadscontainer"><strong>IADsContainer</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
@@ -95,24 +95,24 @@ Il provider ADSI WinNT implementa gli oggetti COM seguenti per supportare le fun
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADsGroup</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl>
 <blockquote>
 [!Note]<br />
-Impossibile utilizzare GetInfo per i gruppi che contengono membri che sono entità di sicurezza nota nell'ambito WinNT.
+Non è possibile usare GetInfo per i gruppi che contengono membri che sono entità di sicurezza ben noti nell'ambito WinNT.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
-<td><strong>GroupCollection</strong></td>
+<td><strong>Groupcollection</strong></td>
 <td>Oggetto ADSI che rappresenta una raccolta di gruppi.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"> <strong>IADsMembers</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"> <strong>IADsMembers</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>LocalGroup</strong></td>
+<td><strong>Localgroup</strong></td>
 <td>Oggetto ADSI che rappresenta un gruppo locale.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADsGroup</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>LocalgroupCollection</strong></td>
 <td>Oggetto ADSI che rappresenta una raccolta di gruppi locali.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"> <strong>IADsMembers</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"> <strong>IADsMembers</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Namespace</strong></td>
@@ -120,7 +120,7 @@ Impossibile utilizzare GetInfo per i gruppi che contengono membri che sono entit
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadscontainer"><strong>IADsContainer</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsopendsobject"><strong>IADsOpenDSObject</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>PrintJob</strong></td>
+<td><strong>Printjob</strong></td>
 <td>Oggetto ADSI che rappresenta un processo di stampa.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsprintjob"><strong>IADsPrintJob</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations"><strong>IADsPrintJobOperations</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
@@ -137,7 +137,7 @@ Impossibile utilizzare GetInfo per i gruppi che contengono membri che sono entit
 <tr class="even">
 <td><strong>Proprietà</strong></td>
 <td>Oggetto ADSI che rappresenta una definizione di attributo.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsproperty"> <strong>IADsProperty</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsproperty"> <strong>IADsProperty</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Risorsa</strong></td>
@@ -145,14 +145,14 @@ Impossibile utilizzare GetInfo per i gruppi che contengono membri che sono entit
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsresource"><strong>IADsResource</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>ResourceCollection</strong></td>
+<td><strong>ResourcesCollection</strong></td>
 <td>Oggetto ADSI che rappresenta una raccolta di risorse.</td>
 <td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="odd">
 <td><strong>Schema</strong></td>
 <td>Oggetto ADSI che rappresenta il contenitore dello schema.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadscontainer"> <strong>IADsContainer</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadscontainer"> <strong>IADsContainer</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Servizio</strong></td>
@@ -165,14 +165,14 @@ Impossibile utilizzare GetInfo per i gruppi che contengono membri che sono entit
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadssession"><strong>IADsSession</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>SessionCollection</strong></td>
+<td><strong>SessionsCollection</strong></td>
 <td>Oggetto ADSI che rappresenta una raccolta di sessioni.</td>
 <td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="odd">
 <td><strong>Sintassi</strong></td>
 <td>Oggetto ADSI che rappresenta la sintassi di un attributo.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong></strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadssyntax"> <strong>IADsSyntax</strong> IADs</a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadssyntax"> <strong>IADsSyntax</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Utente</strong></td>

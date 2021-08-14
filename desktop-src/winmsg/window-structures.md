@@ -4,12 +4,12 @@ ms.assetid: 8254174d-d19f-4177-91b0-dc87aa1e40e0
 title: Strutture delle finestre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9845b70afaec92d116dd709ddee4f533b69900aa
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 511014a51e7dfd0fc569c0a583c7fa6e79954da4fc234afe5ffc6ec20f23ede1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200582"
 ---
 # <a name="window-structures"></a>Strutture delle finestre
 

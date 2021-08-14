@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 359def5c-d7ad-46bd-bdda-30a7b3eea56c
-ms.openlocfilehash: 6daa00e6821833d783aefa95be23b7b8de769907
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 249ec6e6f1d4cbe471a89b19138a5b7a235536e595c62bc6d4a655bf55eee8d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220394"
 ---
 # <a name="ishellfoldersearchable-interface"></a>Interfaccia IShellFolderSearchable
 
@@ -32,7 +32,7 @@ Espone metodi che consentono a un'estensione shell di fornire uno spazio dei nom
 
 ### <a name="methods"></a>Metodi
 
-**L'interfaccia IShellFolderSearchable** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IShellFolderSearchable.**
 
 
 
@@ -40,7 +40,7 @@ Espone metodi che consentono a un'estensione shell di fornire uno spazio dei nom
 |:----------------------------------------------------------------------|:--------------------------------------------------------------------------|
 | [**CancelAsyncSearch**](ishellfoldersearchable-cancelasyncsearch.md) | Avvia il processo di annullamento di una ricerca asincrona in sospeso.<br/> |
 | [**Findstring**](ishellfoldersearchable-findstring.md)               | Avvia una ricerca per una stringa di ricerca specificata.<br/>                 |
-| [**InvalidateSearch**](ishellfoldersearchable-invalidatesearch.md)   | Rende questo PIDL una parte non valida della cartella Shell.<br/>        |
+| [**InvalidateSearch**](ishellfoldersearchable-invalidatesearch.md)   | Rende questo FILE PIDL una parte non valida della cartella Shell.<br/>        |
 
 
 

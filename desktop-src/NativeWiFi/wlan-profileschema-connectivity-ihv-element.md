@@ -1,7 +1,7 @@
 ---
 description: Contiene le impostazioni di connettività correlate a IHV. Non è attualmente implementato.
 ms.assetid: d943e82a-8660-4df7-8f5c-42ed83f17313
-title: Connectivity (IHV)-elemento
+title: Elemento connectivity (IHV)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 257addbcbd721e5930405e3954dcb348f367af93
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 393a07df451c0a9e79f74f369a84bed5310d5efc6eae2186fe8da4844d3bb806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103753751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797911"
 ---
-# <a name="connectivity-ihv-element"></a>Connectivity (IHV)-elemento
+# <a name="connectivity-ihv-element"></a>Elemento connectivity (IHV)
 
-L'elemento Connectivity (IHV) contiene le impostazioni di connettività correlate a IHV. Non è attualmente implementato.
+L'elemento connectivity (IHV) contiene le impostazioni di connettività correlate a IHV. Non è attualmente implementato.
 
 **Windows XP con SP3 e l'API LAN wireless per Windows XP con SP2:** Questo elemento non è supportato.
 
@@ -40,7 +40,7 @@ L'elemento Connectivity (IHV) contiene le impostazioni di connettività correlat
 </xs:element>
 ```
 
-L'elemento è definito dall'elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+L'elemento è definito [**dall'elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,8 +48,8 @@ L'elemento è definito dall'elemento [**IHV**](wlan-profileschema-ihv-wlanprofil
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -60,10 +60,10 @@ L'elemento è definito dall'elemento [**IHV**](wlan-profileschema-ihv-wlanprofil
 **Contesto di definizione dell'elemento nello schema**
 </dt> <dt>
 
-[**IHV**](wlan-profileschema-ihv-wlanprofile-element.md)
+[**Ihv**](wlan-profileschema-ihv-wlanprofile-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**IHV (WLANProfile)**](wlan-profileschema-ihv-wlanprofile-element.md)

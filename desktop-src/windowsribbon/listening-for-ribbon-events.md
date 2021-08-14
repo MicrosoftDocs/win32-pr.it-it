@@ -1,31 +1,31 @@
 ---
-title: Ascolto degli eventi della barra multifunzione
-description: Il Framework della barra multifunzione di Windows usa l'infrastruttura Event Tracing for Windows (ETW) per consentire agli sviluppatori di apprendere il modo in cui gli utenti interagiscono con la barra multifunzione dell'applicazione.
+title: Ascolto di eventi della barra multifunzione
+description: Il framework Windows ribbon usa l'infrastruttura Event Tracing for Windows (ETW) per consentire agli sviluppatori di apprendere come gli utenti interagiscono con la barra multifunzione dell'applicazione.
 ms.assetid: F29A8E41-C902-410E-BD28-653E078320E9
 keywords:
-- Barra multifunzione di Windows, eventi
+- Windows Barra multifunzione, eventi
 - Barra multifunzione, eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcbfb2c6417c1423cb785b6b80de4396146535c2
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: f9519553a40cd613085949d4650c2689e817f387e47e9ab4380b629464e90d2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104339447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202971"
 ---
-# <a name="listening-for-ribbon-events"></a>Ascolto degli eventi della barra multifunzione
+# <a name="listening-for-ribbon-events"></a>Ascolto di eventi della barra multifunzione
 
-Il Framework della barra multifunzione di Windows usa l'infrastruttura [Event Tracing for Windows (ETW)](../etw/event-tracing-portal.md) per consentire agli sviluppatori di apprendere il modo in cui gli utenti interagiscono con la barra multifunzione dell'applicazione.
+Il framework Windows ribbon usa l'infrastruttura [Event Tracing for Windows (ETW)](../etw/event-tracing-portal.md) per consentire agli sviluppatori di apprendere come gli utenti interagiscono con la barra multifunzione dell'applicazione.
 
 ## <a name="introduction"></a>Introduzione
 
-Il meccanismo degli eventi della barra multifunzione è progettato in modo che il Framework segnali gli eventi dell'interfaccia utente della barra multifunzione all'applicazione, in modo da poter monitorare le attività degli utenti, apprendere i modelli di interazione e valutare le tendenze Queste informazioni possono essere usate per ottimizzare l'esperienza utente per le iterazioni future dell'app della barra multifunzione.
+Il meccanismo degli eventi del framework della barra multifunzione è progettato in modo che il framework segnala gli eventi dell'interfaccia utente della barra multifunzione all'applicazione in modo da poter monitorare l'attività dell'utente, apprendere i modelli di interazione e valutare le tendenze di utilizzo. Queste informazioni possono essere usate per perfezionare l'esperienza utente per le iterazioni future dell'app barra multifunzione.
 
-L'utilizzo degli eventi del Framework della barra multifunzione prevede quanto segue:
+L'uso degli eventi del framework della barra multifunzione comporta quanto segue:
 
-1.  L'applicazione Ribbon deve registrare un listener di [Event Tracing for Windows (ETW)](../etw/event-tracing-portal.md) per ricevere le notifiche degli eventi della barra multifunzione dal framework della barra multifunzione.
-2.  Il Framework della barra multifunzione attiva i callback degli eventi dell'interfaccia utente della barra multifunzione in fase di esecuzione, se l'applicazione ha registrato un listener di [Event Tracing for Windows (ETW)](../etw/event-tracing-portal.md) .
+1.  L'applicazione della barra multifunzione deve registrare un listener Event [Tracing for Windows (ETW) per](../etw/event-tracing-portal.md) ricevere notifiche degli eventi della barra multifunzione dal framework della barra multifunzione.
+2.  Il framework della barra multifunzione attiva i callback degli eventi dell'interfaccia utente della barra multifunzione in fase di esecuzione, se l'applicazione ha registrato un listener [Event Tracing for Windows (ETW).](../etw/event-tracing-portal.md)
 
 ## <a name="supported-events"></a>Eventi supportati
 
@@ -45,81 +45,81 @@ Gli eventi esposti alle applicazioni della barra multifunzione sono descritti ne
 <tbody>
 <tr class="odd">
 <td>Scheda attivata</td>
-<td>ID comando<br/> Nome comando<br/> Verbo evento<br/></td>
+<td>ID comando<br/> Nome comando<br/> Verbo di evento<br/></td>
 </tr>
 <tr class="even">
 <td>Scheda contestuale attivata</td>
-<td>ID comando<br/> Nome comando<br/> Verbo evento<br/></td>
+<td>ID comando<br/> Nome comando<br/> Verbo di evento<br/></td>
 </tr>
 <tr class="odd">
-<td>Menu applicazione aperto</td>
-<td>Verbo evento<br/></td>
+<td>Menu dell'applicazione aperto</td>
+<td>Verbo di evento<br/></td>
 </tr>
 <tr class="even">
-<td>Menu applicazione chiuso</td>
-<td>Verbo evento<br/></td>
+<td>Menu dell'applicazione chiuso</td>
+<td>Verbo di evento<br/></td>
 </tr>
 <tr class="odd">
-<td>Menu (Regular o Gallery) aperto</td>
-<td>ID comando<br/> Nome comando<br/> Verbo evento<br/>
+<td>Menu (normale o raccolta) aperto</td>
+<td>ID comando<br/> Nome comando<br/> Verbo di evento<br/>
 <blockquote>
 [!Note]<br />
-Gli eventi del menu QAT non sono esposti.
+Gli eventi del menu QAT non vengono esposti.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td>Menu (Regular o Gallery) chiuso</td>
-<td>ID comando<br/> Nome comando<br/> Verbo evento<br/>
+<td>Menu (normale o raccolta) chiuso</td>
+<td>ID comando<br/> Nome comando<br/> Verbo di evento<br/>
 <blockquote>
 [!Note]<br />
-Gli eventi del menu QAT non sono esposti.
+Gli eventi del menu QAT non vengono esposti.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td>Comando</td>
-<td>ID comando<br/> Nome comando<br/> Verbo evento<br/> Uno dei percorsi degli eventi seguenti:
+<td>ID comando<br/> Nome comando<br/> Verbo di evento<br/> Uno dei percorsi degli eventi seguenti:
 <ul>
-<li>RIBBON</li>
+<li>Nastro</li>
 <li>QUICKACCESSTOOLBAR</li>
-<li>APPLICATIONMENU</li>
+<li>MENU APPLICAZIONE</li>
 <li>CONTEXTPOPUP</li>
 </ul>
-<br/> ID comando padre<br/> Nome del comando padre<br/> Uno dei metodi Invoke seguenti:
+<br/> ID comando padre<br/> Nome comando padre<br/> Uno dei metodi invoke seguenti:
 <ul>
-<li>Clicca</li>
-<li>SUGGERIMENTO tasto</li>
-<li>TASTIERA</li>
-<li>TOCCO</li>
+<li>Fare clic su</li>
+<li>Keytip</li>
+<li>Tastiera</li>
+<li>tocco</li>
 </ul>
 <br/>
 <blockquote>
 [!Note]<br />
-Le raccolte di elementi e le caselle combinate includono l'indice dell'elemento selezionato, ma non includono valori stringa e Integer. Gli Spinner non includono il valore integer.
+Le raccolte di elementi e le caselle combinate includono l'indice dell'elemento selezionato, ma non includono valori stringa e interi. I selettori non includono il valore intero.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>Barra multifunzione ridotta a icona</td>
-<td>Verbo evento<br/></td>
+<td>Verbo di evento<br/></td>
 </tr>
 <tr class="odd">
 <td>Barra multifunzione espansa (pulsante di espansione selezionato o tocco aggiunto)</td>
-<td>Verbo evento<br/></td>
+<td>Verbo di evento<br/></td>
 </tr>
 <tr class="even">
-<td>Modalità applicazione cambiata</td>
-<td>Verbo evento<br/> ID modalità (valore impostato tramite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes"><strong>Semodes</strong></a>)<br/>
+<td>Modalità applicazione attivata</td>
+<td>Verbo di evento<br/> ID modalità (valore impostato tramite <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes"><strong>SetModes</strong></a>)<br/>
 <blockquote>
 [!Note]<br />
-L'applicazione è responsabile della decompressione di questo Integer per determinare le modalità impostate.
+L'applicazione è responsabile della decompressione di questo numero intero per determinare le modalità impostate.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td>Descrizione comando visualizzata</td>
-<td>Verbo evento<br/> ID comando padre<br/> Nome del comando padre<br/></td>
+<td>Verbo di evento<br/> ID comando padre<br/> Nome comando padre<br/></td>
 </tr>
 </tbody>
 </table>
@@ -132,13 +132,13 @@ L'applicazione è responsabile della decompressione di questo Integer per determ
 
 <dl> <dt>
 
-[Guide per gli sviluppatori di Windows Ribbon Framework](windowsribbon-guides-entry.md)
+[Windows Guide per gli sviluppatori di Ribbon Framework](windowsribbon-guides-entry.md)
 </dt> <dt>
 
 [Dichiarazione di comandi e controlli con markup della barra multifunzione](./windowsribbon-schema.md)
 </dt> <dt>
 
-[Linee guida sull'esperienza utente della barra multifunzione](https://msdn.microsoft.com/library/cc872782.aspx)
+[Linee guida per l'esperienza utente della barra multifunzione](https://msdn.microsoft.com/library/cc872782.aspx)
 </dt> <dt>
 
 [Processo di progettazione della barra multifunzione](https://msdn.microsoft.com/library/cc872781.aspx)

@@ -1,52 +1,52 @@
 ---
-title: Attributo Rotation (Shape) (la)
-description: Attributo Rotation (Shape) (la)
+title: Attributo rotation (Shape)(VML)
+description: Attributo rotation (Shape)(VML)
 ms.assetid: e1a648a4-1e87-4bec-90b2-6d3a57c0dba0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f03b114c885cbeaf5392068e79cd7f63bbc1fc52
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d0f73b55b57a7b9d9d7f14cdae4ec71a38a1e38246a4430339db23f35a339430
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754136"
 ---
-# <a name="rotation-attribute-shapevml"></a>Attributo Rotation (Shape) (la)
+# <a name="rotation-attribute-shapevml"></a>Attributo rotation (Shape)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'angolo di rotazione di una forma. Proprietà di lettura/scrittura. [VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md).
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "Rotation: *Expression* " >
+<v: *element* style="rotation: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Rotation = "*Expression*"
+*elemento* .rotation="*expression*"
 
-*espressione* = *elemento*. Rotation
+*expression* = *elemento*.rotation
 
 **Osservazioni:**
 
-Il valore in gradi può essere positivo o negativo e i valori maggiori di 360 vengono modulati in un cerchio di 360 gradi. Gli angoli positivi sono in senso orario. Il valore predefinito è 0.
+Il valore in gradi può essere positivo o negativo e i valori maggiori di 360 sono modularizzati in un cerchio di 360 gradi. Gli angoli positivi sono in senso orario. Il valore predefinito è 0.
 
-Si noti che la forma viene riposizionata dopo la rotazione in modo da riflettere le nuove coordinate del rettangolo di delimitazione.
+Si noti che la forma viene riposizionata dopo la rotazione per riflettere le nuove coordinate del rettangolo di selezione.
 
-Si noti inoltre che, per gli script, l'attributo di **stile** non viene utilizzato e che la **rotazione** viene considerata come un attributo diretto della forma.
+Si noti anche che per lo scripting **l'attributo di** stile non viene usato e **che Rotation** viene considerato come un attributo diretto della forma.
 
-L'attributo **Rotation** è simile all'attributo standard di **rotazione** HTML per gli stili.
+**L'attributo Rotation** è simile all'attributo **Rotation** HTML standard per gli stili.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Vedere anche**
 
@@ -63,8 +63,8 @@ Il rettangolo verrà inclinato di 45 gradi.
 
 
 
-[Esempio di attributo Rotation](/previous-versions/bb264091(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo Rotation](/previous-versions/bb264091(v=vs.85)). Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

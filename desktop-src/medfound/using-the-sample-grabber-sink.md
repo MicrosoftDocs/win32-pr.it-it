@@ -4,12 +4,12 @@ ms.assetid: AC5970A2-6F12-448D-A444-40020C5C2607
 title: Uso del sink Grabber di esempio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 043f64d8fdc3ac3084d2c59be8917acbbd32dde5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 410d3a21faf132ee087660665dee0ae4118a2d16154e2080042f34eacbe4355b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871277"
 ---
 # <a name="using-the-sample-grabber-sink"></a>Uso del sink Grabber di esempio
 

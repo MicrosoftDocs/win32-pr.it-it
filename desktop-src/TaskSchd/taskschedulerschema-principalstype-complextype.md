@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso principalsType
-description: Definisce l'elemento figlio per l'elemento principals.
+description: Definisce l'elemento figlio per l'elemento Principals.
 ms.assetid: a501534b-eb0f-480f-a2c9-d2015262a9a7
 keywords:
-- Utilità di pianificazione di tipo complesso principalsType
+- Tipo complesso principalsType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 56cd26a4dff31ce86b218e5a4a2662d678327625
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa2aecd8ea71769b51792fcc5bd26ceca11309f43697037964a900d45c0d8254
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131742"
 ---
 # <a name="principalstype-complex-type"></a>Tipo complesso principalsType
 
-Definisce l'elemento figlio per l'elemento [**Principals**](taskschedulerschema-principals-tasktype-element.md) .
+Definisce l'elemento figlio per [**l'elemento Principals.**](taskschedulerschema-principals-tasktype-element.md)
 
 ``` syntax
 <xs:complexType name="principalsType">
@@ -51,8 +51,8 @@ Definisce l'elemento figlio per l'elemento [**Principals**](taskschedulerschema-
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

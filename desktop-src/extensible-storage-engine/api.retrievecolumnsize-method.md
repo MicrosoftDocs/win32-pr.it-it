@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. RetrieveColumnSize'
-title: API. RetrieveColumnSize, metodo
+description: 'Altre informazioni su: Metodo Api.RetrieveColumnSize'
+title: Metodo Api.RetrieveColumnSize
 TOCTitle: 'RetrieveColumnSize method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.RetrieveColumnSize
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievecolumnsize(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0a38ab29b3a5931570a88e4bd904df0553e097c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 687be9cfdb60a1a8936378c852d18cbd17dbd06e99ce48e54fcf2a5e50a0fc63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117718034"
 ---
-# <a name="apiretrievecolumnsize-method"></a>API. RetrieveColumnSize, metodo
+# <a name="apiretrievecolumnsize-method"></a>Metodo Api.RetrieveColumnSize
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334076(v=exchg.10).md">RetrieveColumnSize (JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
-<td>Recupera le dimensioni di un valore di colonna singola dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore. In alternativa, questa funzione può recuperare una colonna da un record creato nel buffer di copia del cursore. Questa funzione può anche recuperare i dati di colonna da una voce di indice che fa riferimento al record corrente.</td>
+<td><a href="dn334076(v=exchg.10).md">RetrieveColumnSize(JET_SESID, JET_TABLEID, JET_COLUMNID)</a></td>
+<td>Recupera le dimensioni di un singolo valore di colonna dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore. In alternativa, questa funzione può recuperare una colonna da un record creato nel buffer di copia del cursore. Questa funzione può anche recuperare i dati della colonna da una voce di indice che fa riferimento al record corrente.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
-<td><a href="dn334117(v=exchg.10).md">RetrieveColumnSize (JET_SESID, JET_TABLEID, JET_COLUMNID, Int32, RetrieveColumnGrbit)</a></td>
-<td>Recupera le dimensioni di un valore di colonna singola dal record corrente. Il record è il record associato alla voce di indice in corrispondenza della posizione corrente del cursore. In alternativa, questa funzione può recuperare una colonna da un record creato nel buffer di copia del cursore. Questa funzione può anche recuperare i dati di colonna da una voce di indice che fa riferimento al record corrente.</td>
+<td><a href="dn334117(v=exchg.10).md">RetrieveColumnSize(JET_SESID, JET_TABLEID, JET_COLUMNID, Int32, RetrieveColumnGrbit)</a></td>
+<td>Recupera le dimensioni di un singolo valore di colonna dal record corrente. Il record è il record associato alla voce di indice nella posizione corrente del cursore. In alternativa, questa funzione può recuperare una colonna da un record creato nel buffer di copia del cursore. Questa funzione può anche recuperare i dati della colonna da una voce di indice che fa riferimento al record corrente.</td>
 </tr>
 </tbody>
 </table>
@@ -59,6 +59,6 @@ Inizio
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: Aggiunge una voce all'elenco MRU (Most Recently Used).
+description: Aggiunge una voce all'elenco degli elementi usati più di recente.
 title: Metodo IACLCustomMRU::AddMRUString
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: d8fb8fa5-452b-45fd-b015-d9bf3d0c642e
-ms.openlocfilehash: 300474dde82274c668e52d9fe9910634d0ac904c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e5acd71a56ef0dd569315ee924313b10e27e6a4ba7ca75d1dbfa0d1e50932cdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223595"
 ---
 # <a name="iaclcustommruaddmrustring-method"></a>Metodo IACLCustomMRU::AddMRUString
 
-Aggiunge una voce all'elenco MRU (Most Recently Used).
+Aggiunge una voce all'elenco degli elementi usati più di recente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,8 +59,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>          |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

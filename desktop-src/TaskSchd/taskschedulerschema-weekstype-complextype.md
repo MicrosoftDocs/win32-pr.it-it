@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso weeksType
-description: Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento week.
+description: Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento Week.
 ms.assetid: c9e8814c-b8f9-426d-943d-ca3efa5d914b
 keywords:
-- Utilità di pianificazione di tipo complesso weeksType
+- Tipo complesso weeksType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 597cc72c043a478a414187f63a9aa89516dee658
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 876d798acdf1f8684fc4f2cecac8e77bceb73dddd0036f2117d4bb55a77a71ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757988"
 ---
 # <a name="weekstype-complex-type"></a>Tipo complesso weeksType
 
-Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento [**week**](taskschedulerschema-week-weekstype-element.md) .
+Definisce l'elemento figlio e le informazioni di sequenziazione per [**l'elemento Week.**](taskschedulerschema-week-weekstype-element.md)
 
 ``` syntax
 <xs:complexType name="weeksType">
@@ -52,8 +52,8 @@ Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento [
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

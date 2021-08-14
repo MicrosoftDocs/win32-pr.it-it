@@ -1,38 +1,38 @@
 ---
-description: Il supporto di Windows 7 per la Federazione di ricerca negli archivi dati remoti tramite le tecnologie OpenSearch consente agli utenti di accedere ai dati remoti e interagire con essi da Esplora risorse.
+description: Windows 7 il supporto per la federazione della ricerca in archivi dati remoti tramite tecnologie OpenSearch consente agli utenti di accedere e interagire con i dati remoti da Windows Explorer.
 ms.assetid: 2014b7ac-4885-4f17-b6d4-5fd95872ed59
 title: Ricerca federata in Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc7d7718bb5215072ceeb8786f5728017ed329e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4e93af59bd83765c693165676eab80e8adf42b151c2b5473a0f0a3e5aa5fcc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864170"
 ---
 # <a name="federated-search-in-windows"></a>Ricerca federata in Windows
 
-Il supporto di Windows 7 per la Federazione di ricerca negli archivi dati remoti tramite le tecnologie OpenSearch consente agli utenti di accedere ai dati remoti e interagire con essi da Esplora risorse.
+Windows 7 il supporto per la federazione della ricerca in archivi dati remoti tramite tecnologie OpenSearch consente agli utenti di accedere e interagire con i dati remoti da Windows Explorer.
 
-Nell'elenco di argomenti riportato di seguito viene descritto come creare un archivio dati basato sul Web in cui è possibile eseguire ricerche mediante la ricerca federata di Windows e come abilitare l'integrazione completa delle origini dati remote con Esplora risorse senza dover scrivere o distribuire codice sul lato client di Windows.
+L'elenco di argomenti seguente descrive come compilare un archivio dati basato sul Web in cui è possibile eseguire ricerche usando la ricerca federata di Windows e come abilitare l'integrazione avanzata delle origini dati remote con Windows Explorer senza dover scrivere o distribuire codice sul lato client Windows.
 
--   [Introduzione con ricerca federata in Windows](getting-started-with-federated-search-in-windows.md)
--   [Connessione del servizio Web in ricerca federata di Windows](-search-federated-search-web-service.md)
--   [Abilitazione dell'archivio dati in ricerca federata di Windows](-search-federated-search-data-store.md)
--   [Creazione di un file di descrizione OpenSearch nella ricerca federata di Windows](-search-federated-search-osdx-file.md)
--   [Procedure consigliate seguenti in ricerca federata di Windows](-search-fedsearch-best.md)
--   [Distribuzione di connettori di ricerca nella ricerca federata di Windows](-search-federated-search-deploying.md)
--   [Cerca nello schema di descrizione del connettore](search-sconn-desc-schema-entry.md)
+-   [Attività iniziali con ricerca federata in Windows](getting-started-with-federated-search-in-windows.md)
+-   [Connessione del servizio Web in Windows ricerca federata](-search-federated-search-web-service.md)
+-   [Abilitazione dell'archivio dati Windows ricerca federata](-search-federated-search-data-store.md)
+-   [Creazione di un OpenSearch di descrizione in Windows ricerca federata](-search-federated-search-osdx-file.md)
+-   [Procedure consigliate seguenti per Windows ricerca federata](-search-fedsearch-best.md)
+-   [Distribuzione di connettori di ricerca Windows ricerca federata](-search-federated-search-deploying.md)
+-   [Schema di descrizione del connettore di ricerca](search-sconn-desc-schema-entry.md)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
--   Nell'esempio di codice [OpenSearch](-search-sample-opensearch.md) viene illustrato come creare un servizio di ricerca federato utilizzando il protocollo [OpenSearch](https://github.com/dewitt/opensearch) e un file descrittore OpenSearch (con estensione osdx) (un connettore di ricerca).
--   Per una dimostrazione video della creazione di un servizio Web [OpenSearch](https://github.com/dewitt/opensearch) per un database SQL, vedere [Windows 7: consentire agli utenti di trovare, visualizzare e organizzare i dati con librerie e Esplora risorse](https://channel9.msdn.com/pdc2008/PC16/).
--   Se si sta scrivendo un provider [OpenSearch](https://github.com/dewitt/opensearch) sul lato client, vedere:
-    -   Guida per gli [sviluppatori di OpenSearch](https://github.com/dewitt/opensearch/blob/master/mediawiki/Documentation/Developer%20how%20to%20guide.wiki) per altre informazioni sulla connessione a un provider lato client usando i protocolli o le API di un archivio dati proprietario.
-    -   Panoramica della documentazione dello schema della [Descrizione del connettore di ricerca](search-sconn-desc-schema-entry.md) (. searchconnector-ms).
--   Visitare il sito Web [area download Microsoft](https://www.microsoft.com/DOWNLOADS/en/default.aspx) per la seguente risorsa scaricabile: esempio di ricerca Server 2008: connettore di ricerca federata.
+-   [L OpenSearch](-search-sample-opensearch.md) di codice seguente illustra come creare un servizio di ricerca federato usando il protocollo [OpenSearch](https://github.com/dewitt/opensearch) e un file di descrittore di OpenSearch (con estensione osdx) (un connettore di ricerca).
+-   Per una dimostrazione video della creazione di un servizio Web [OpenSearch](https://github.com/dewitt/opensearch) per un database SQL, vedere [Windows 7: Consentire](https://channel9.msdn.com/pdc2008/PC16/)agli utenti di trovare, visualizzare e organizzare i dati con librerie ed Explorer.
+-   Se si scrive un [provider](https://github.com/dewitt/opensearch) di servizi OpenSearch client, vedere:
+    -   La [OpenSearch](https://github.com/dewitt/opensearch/blob/master/mediawiki/Documentation/Developer%20how%20to%20guide.wiki) per gli sviluppatori per altre informazioni sulla connessione a un provider sul lato client usando i protocolli o le API di un archivio dati proprietario.
+    -   Panoramica dello schema [dello schema di descrizione del connettore di](search-sconn-desc-schema-entry.md) ricerca (.searchconnector-ms).
+-   Vedere il [sito Web dell'Area](https://www.microsoft.com/DOWNLOADS/en/default.aspx) download Microsoft per la risorsa scaricabile seguente: Esempio di Search Server 2008: Esempio di connettore di ricerca federata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -41,19 +41,19 @@ Nell'elenco di argomenti riportato di seguito viene descritto come creare un arc
 [Panoramica di Windows Search](-search-3x-wds-overview.md)
 </dt> <dt>
 
-[Guida per gli sviluppatori di Windows Search](-search-developers-guide-entry-page.md)
+[Windows Guida per gli sviluppatori di ricerca](-search-developers-guide-entry-page.md)
 </dt> <dt>
 
-[Informazioni di riferimento su Windows Search](-search-reference-entry-page.md)
+[Windows Informazioni di riferimento sulla ricerca](-search-reference-entry-page.md)
 </dt> <dt>
 
-[Esempi di codice di Windows Search](-search-samples-ovw.md)
+[Windows Esempi di codice di ricerca](-search-samples-ovw.md)
 </dt> <dt>
 
 [Tecnologie di ricerca correlate](-search-3x-wds-sampleentry.md)
 </dt> <dt>
 
-[Glossario di Windows Search](search-glossary.md)
+[Windows Glossario della ricerca](search-glossary.md)
 </dt> </dl>
 
  

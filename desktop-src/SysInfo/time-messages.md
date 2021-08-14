@@ -1,23 +1,23 @@
 ---
-description: Il messaggio seguente viene utilizzato con il tempo.
+description: Il messaggio seguente viene usato con l'ora.
 ms.assetid: 8aced280-0af9-4e9e-ba6a-d02d41602466
-title: Messaggi temporali
+title: Messaggi di ora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78cc8460bba9500cef2ed3b958342d7510225f8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bbc6cb6bc04034507f307c6ac4655450f2b3d3a5586358d0976904f25f9664b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763082"
 ---
-# <a name="time-messages"></a>Messaggi temporali
+# <a name="time-messages"></a>Messaggi di ora
 
-Il messaggio seguente viene utilizzato con il tempo.
+Il messaggio seguente viene usato con l'ora.
 
 <dl>
 
-[**\_TIMECHANGE WM**](wm-timechange.md)  
+[**WM \_ TIMECHANGE**](wm-timechange.md)  
 </dl>
 
  

@@ -1,21 +1,21 @@
 ---
 title: Enumerazioni QMGR
-description: Le interfacce di gestione code (QMGR) utilizzano l'enumerazione seguente.
+description: Le interfacce di Gestione code (QMGR) usano l'enumerazione seguente.
 ms.assetid: 2382996d-a3a7-4008-adaa-6297a414e1ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00c514765f6404a9649ce19d61d99d912727e71f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa65a5925888fb6bc92e01da7fa9c15ea4c4a6da664694347fd2af4c3a3dff94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104395423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118010508"
 ---
 # <a name="qmgr-enumerations"></a>Enumerazioni QMGR
 
-\[Le enumerazioni di gestione code (QMGR) sono disponibili per l'uso nei sistemi operativi specificati nella sezione requisiti di un argomento. Possono essere modificati o non disponibili nelle versioni successive. Usare invece le [enumerazioni bits](bits-enumerations.md).\]
+\[Le enumerazioni di Gestione code (QMGR) sono disponibili per l'uso nei sistemi operativi specificati nella sezione Requisiti di un argomento. Possono essere modificati o non disponibili nelle versioni successive. Usare invece le [enumerazioni BITS](bits-enumerations.md).\]
 
-Le [interfacce](qmgr-interfaces.md) di gestione code (QMGR) utilizzano l'enumerazione seguente.
+Le interfacce di Gestione [](qmgr-interfaces.md) code (QMGR) usano l'enumerazione seguente.
 
 
 

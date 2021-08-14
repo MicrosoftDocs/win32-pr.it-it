@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_SETITEM (COMmctrl. h)
-description: Imposta gli attributi dell'elemento specificato in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro elemento intestazione.
+title: HDM_SETITEM messaggio (Commctrl.h)
+description: Imposta gli attributi dell'elemento specificato in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header SetItem.
 ms.assetid: c8f0d526-3ebe-48c5-8aea-ea3703e2d983
 keywords:
-- Controlli di Windows Message HDM_SETITEM
+- HDM_SETITEM di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71b03a05b909cf8c7887edd2031f5346c419f1cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd0e2709a1b40bd4a564498cd0ae0b5d4e11861066aa9b0951815f92ee1c295f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118171066"
 ---
-# <a name="hdm_setitem-message"></a>HDM- \_ messaggio di elemento
+# <a name="hdm_setitem-message"></a>Messaggio \_ SETITEM HDM
 
-Imposta gli attributi dell'elemento specificato in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ elemento intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_setitem) .
+Imposta gli attributi dell'elemento specificato in un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header SetItem.**](/windows/desktop/api/Commctrl/nf-commctrl-header_setitem)
 
 ## <a name="parameters"></a>Parametri
 
@@ -41,17 +41,17 @@ Indice corrente dell'elemento i cui attributi devono essere modificati.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) che contiene informazioni sull'elemento. Quando viene inviato questo messaggio, è necessario impostare il membro **mask** della struttura per indicare gli attributi da impostare.
+Puntatore a una [**struttura HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) che contiene informazioni sull'elemento. Quando viene inviato questo messaggio, il **membro mask** della struttura deve essere impostato per indicare gli attributi da impostare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore diverso da zero in caso di esito positivo o zero.
+Restituisce un valore diverso da zero in caso di esito positivo oppure zero in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-La struttura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) che supporta questo messaggio supporta le informazioni sull'ordine degli elementi e sull'elenco di immagini. Usando questi membri, è possibile controllare l'ordine in cui vengono visualizzati gli elementi e specificare le immagini da visualizzare con gli elementi.
+La [**struttura HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) che supporta questo messaggio supporta le informazioni sull'ordine degli elementi e sull'elenco di immagini. Usando questi membri, è possibile controllare l'ordine di visualizzazione degli elementi e specificare le immagini da visualizzare con gli elementi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,10 +59,10 @@ La struttura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) che s
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomi Unicode e ANSI<br/>   | **HDM \_ SETITEMW** (Unicode) e **HDM \_ setitema** (ANSI)<br/>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomi Unicode e ANSI<br/>   | **HDM \_ SETITEMW** (Unicode) e **HDM \_ SETITEMA** (ANSI)<br/>                   |
 
 
 

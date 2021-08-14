@@ -4,12 +4,12 @@ ms.assetid: ccfe6273-0dcf-4b42-9d74-665a0b4cd14a
 title: Visualizzazioni trama (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83dd83b1a3896637ce73505de00027ea9dfadac4
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: cc420e39c4d577947cae657f3296b15f0052db9e823e07d3a3ba1ccb641fb6b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118101348"
 ---
 # <a name="texture-views-direct3d-10"></a>Visualizzazioni trama (Direct3D 10)
 
@@ -31,7 +31,7 @@ Creare un oggetto visualizzazione per una destinazione di rendering chiamando Cr
 
 Differenze tra Direct3D 9 e Direct3D 10:
 
-- In Direct3D 10 non si associa più una risorsa direttamente alla pipeline, si crea una visualizzazione di una risorsa e quindi si imposta la visualizzazione sulla pipeline. In questo modo la convalida e il mapping nel runtime e nel driver possono verificarsi durante la creazione della visualizzazione, riducendo al minimo il controllo dei tipi in fase di associazione.
+- In Direct3D 10 non si associa più una risorsa direttamente alla pipeline, si crea una visualizzazione di una risorsa e quindi si imposta la vista sulla pipeline. In questo modo la convalida e il mapping nel runtime e nel driver possono essere eseguiti durante la creazione della visualizzazione, riducendo al minimo il controllo dei tipi in fase di associazione.
 
 
 

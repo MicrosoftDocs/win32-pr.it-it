@@ -1,34 +1,34 @@
 ---
-description: Connessione e disconnessione di nodi della topologia
+description: Connessione e disconnessione di nodi di topologia
 ms.assetid: b2f70989-f0a8-4a11-baeb-18f026afaeab
-title: Connessione e disconnessione di nodi della topologia
+title: Connessione e disconnessione di nodi di topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08057eba74314ae6b87da418b743a089506a3b26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6113f4648d0aafbe41dc13090dc83807f746f0acc945f76eca0acf1b4898913f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064627"
 ---
-# <a name="connecting-and-disconnecting-topology-nodes"></a>Connessione e disconnessione di nodi della topologia
+# <a name="connecting-and-disconnecting-topology-nodes"></a>Connessione e disconnessione di nodi di topologia
 
-Per una topologia funzionante, è necessario che il nodo di origine e il nodo di output siano connessi. Per connettere due nodi della topologia, trascinare l'output del nodo di un nodo nell'input del nodo dell'altro nodo. TopoEdit Visualizza la connessione al nodo come linea nera. Equivale a connettere i nodi della topologia chiamando il metodo [**IMFTopologyNode:: ConnectOutput**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput) .
+Perché una topologia funzioni, è necessario che il nodo di origine e il nodo di output siano connessi. Per connettere due nodi di topologia, trascinare l'output del nodo di un nodo nell'input del nodo dell'altro nodo. TopoEdit visualizza la connessione del nodo come linea nera. Equivale a connettere i nodi della topologia chiamando il [**metodo IMFTopologyNode::ConnectOutput.**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput)
 
-La topologia può essere risolta solo se la connessione al nodo è valida. ovvero se i tipi di supporti dei due nodi sono compatibili. Per informazioni sulla risoluzione delle topologie, vedere la pagina relativa alla [risoluzione di una topologia con TopoEdit](resolving-a-topology-with-topoedit.md).
+La topologia può essere risolta solo se la connessione del nodo è valida. cio, se i tipi di supporto dei due nodi sono compatibili. Per informazioni sulla risoluzione delle topologie, vedere Risoluzione di [una topologia con TopoEdit](resolving-a-topology-with-topoedit.md).
 
-Se si tenta di effettuare una connessione da un nodo già connesso, la nuova connessione al nodo sostituisce quella precedente.
+Se si tenta di stabilire una connessione da un nodo già connesso, la nuova connessione al nodo sostituisce quella precedente.
 
-Per eliminare una connessione, selezionare la connessione al nodo e premere il tasto CANC o scegliere **Elimina** dal menu **topologia** .
+Per eliminare una connessione, selezionare la connessione del nodo e premere CANC oppure **scegliere Elimina** dal menu **Topologia.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Compilazione di topologie tramite TopoEdit](building-topologies-by-using-topoedit.md)
+[Creazione di topologie tramite TopoEdit](building-topologies-by-using-topoedit.md)
 </dt> <dt>
 
-[TopoEdit](topoedit.md)
+[TopoModifica](topoedit.md)
 </dt> </dl>
 
  

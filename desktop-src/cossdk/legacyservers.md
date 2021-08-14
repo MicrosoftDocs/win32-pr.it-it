@@ -1,5 +1,5 @@
 ---
-description: Identico alla raccolta InprocServers con la differenza che questa raccolta include anche server locali.
+description: Identica alla raccolta InprocServers, ad eccezione del fatto che questa raccolta include anche server locali.
 ms.assetid: b185f568-ec97-4710-b744-5d69e71d6f60
 title: Raccolta LegacyServers
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 2ea542fa539ea1eb1cceae0f4cb8ba8dc2012085
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3968b3cb7068f994d3ff44e7182add2b1e3cb7a44c0d73019cf583a0e8c7f70f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306359"
 ---
 # <a name="legacyservers-collection"></a>Raccolta LegacyServers
 
-Identico alla raccolta [**InprocServers**](inprocservers.md) con la differenza che questa raccolta include anche server locali.
+Identica alla raccolta [**InprocServers,**](inprocservers.md) ad eccezione del fatto che questa raccolta include anche server locali.
 
-Questa raccolta non supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta non supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **LegacyServers** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta LegacyServers** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -43,10 +43,10 @@ La raccolta **LegacyServers** eredita dall'interfaccia [**IUnknown**](/windows/d
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
--   [ClassName](#classname)
--   [CLSID](#clsid)
+-   [Classname](#classname)
+-   [Clsid](#clsid)
 -   [InprocServer32](#inprocserver32)
 -   [LocalServer32](#localserver32)
 -   [ProgID](#progid)
@@ -60,7 +60,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Nome della classe. |
 | Access         | ReadOnly               |
 | Type           | string                 |
-| Predefinito        | N/D                    |
+| Predefinito        | N/A                    |
 | Sistema minimo | Windows XP             |
 
 
@@ -73,10 +73,10 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | GUID per il componente. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | GUID per il componente. Questa proprietà viene restituita quando [**il metodo**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) della proprietà Key viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                  |
 | Type           | string                                                                                                                                                    |
-| Predefinito        | N/D                                                                                                                                                       |
+| Predefinito        | N/A                                                                                                                                                       |
 | Sistema minimo | Windows XP                                                                                                                                                |
 
 
@@ -92,7 +92,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Percorso del file per il componente. |
 | Access         | ReadOnly                         |
 | Type           | string                           |
-| Predefinito        | N/D                              |
+| Predefinito        | N/A                              |
 | Sistema minimo | Windows XP                       |
 
 
@@ -108,7 +108,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Specifica il percorso completo di un'applicazione server locale a 32 bit. |
 | Access         | ReadOnly                                                      |
 | Type           | string                                                        |
-| Predefinito        | N/D                                                           |
+| Predefinito        | N/A                                                           |
 | Sistema minimo | Windows XP                                                    |
 
 
@@ -124,7 +124,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Nome che identifica il componente. Questa proprietà viene restituita quando il metodo della proprietà [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                            |
 | Type           | string                                                                                                                                                              |
-| Predefinito        | N/D                                                                                                                                                                 |
+| Predefinito        | N/A                                                                                                                                                                 |
 | Sistema minimo | Windows XP                                                                                                                                                          |
 
 

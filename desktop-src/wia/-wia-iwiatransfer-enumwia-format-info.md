@@ -1,7 +1,7 @@
 ---
-description: Crea un enumeratore per i formati di trasferimento supportati dal dispositivo Windows Image Acquisition (WIA) 2,0.
+description: Crea un enumeratore per i formati di trasferimento supportati Windows dispositivo WIA (Image Acquisition) 2.0.
 ms.assetid: 70fffc7b-b500-4404-9d94-76d1828ddc8c
-title: 'Metodo IWiaTransfer:: EnumWIA_FORMAT_INFO (WIA. h)'
+title: Metodo IWiaTransfer::EnumWIA_FORMAT_INFO (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 66f3c91d6023655daf85b2a0d726d98a685b001b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e497d389646249c03bfaa4ac8625ce2a440b97f4ff6b8c0b0942ec957d0901e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669476"
 ---
-# <a name="iwiatransferenumwia_format_info-method"></a>\_Metodo informazioni sul formato IWiaTransfer:: EnumWIA \_
+# <a name="iwiatransferenumwia_format_info-method"></a>Metodo IWiaTransfer::EnumWIA \_ FORMAT \_ INFO
 
-Crea un enumeratore per i formati di trasferimento supportati dal dispositivo Windows Image Acquisition (WIA) 2,0.
+Crea un enumeratore per i formati di trasferimento supportati Windows dispositivo WIA (Image Acquisition) 2.0.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT EnumWIA_FORMAT_INFO(
 
 <dl> <dt>
 
-*ppIEnum* \[ out\]
+*ppIEnum* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **IEnumWIA \_ \_ info Format**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info)\*\***
+Tipo: **[ **IEnumWIA \_ FORMAT \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info)\*\***
 
-Indirizzo del puntatore all'interfaccia [**IEnumWIA \_ Format \_ info**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info) per l'enumeratore.
+Indirizzo del puntatore [**all'interfaccia IEnumWIA \_ FORMAT \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info) per l'enumeratore.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Indirizzo del puntatore all'interfaccia [**IEnumWIA \_ Format \_ info**](/window
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono chiamare il metodo [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sul puntatore a interfaccia ricevuto tramite il parametro *ppIEnum* .
+Le applicazioni devono chiamare [il metodo IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) sul puntatore di interfaccia ricevuto tramite il *parametro ppIEnum.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,11 +65,11 @@ Le applicazioni devono chiamare il metodo [IUnknown:: Release](/windows/win32/ap
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

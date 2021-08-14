@@ -4,12 +4,12 @@ ms.assetid: 35e38d70-3029-4e22-ab70-718911654979
 title: System.Search.ExtendedProperties
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2e4ef139b0bc5b33c0ce1a50ca7fa26a7c91c2a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0f55f99988395bcb76efcad79f30c0044ef62686ffafd5c1c9bbdced5b9fb4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865172"
 ---
 # <a name="systemsearchextendedproperties"></a>System.Search.ExtendedProperties
 
@@ -36,7 +36,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

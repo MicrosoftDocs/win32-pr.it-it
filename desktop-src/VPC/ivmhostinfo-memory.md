@@ -1,10 +1,10 @@
 ---
-title: Proprietà Memory IVMHostInfo (VPCCOMInterfaces. h)
+title: Proprietà Memory di IVMHostInfo (VPCCOMInterfaces.h)
 description: Recupera la quantità totale di memoria fisica nel computer host, in megabyte.
 ms.assetid: 178013c0-cf29-4f1e-9a9d-d6a5dbd4fe2d
 keywords:
-- Proprietà memoria Virtual PC
-- Proprietà Memory Virtual PC, interfaccia IVMHostInfo
+- Proprietà Memoria Virtual PC
+- Proprietà Memory Virtual PC , interfaccia IVMHostInfo
 - Interfaccia IVMHostInfo Virtual PC, proprietà Memory
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f634bfe3bf81dcb13c9f09d8f19a5a82aa6902
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d22eeae9bcd7be7436d02f9aa116882acc4d8e0e8ee5d2703790b5e20cd4d744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753330"
 ---
-# <a name="ivmhostinfomemory-property"></a>Proprietà IVMHostInfo:: memory
+# <a name="ivmhostinfomemory-property"></a>Proprietà IVMHostInfo::Memory
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera la quantità totale di memoria fisica nel computer host, in megabyte.
 
@@ -45,7 +45,7 @@ HRESULT get_Memory(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Quantità totale di memoria fisica, in megabyte. Questo valore è una **variante** di tipo \_ decimale VT.
+Quantità totale di memoria fisica, in megabyte. Questo valore è variant **di** tipo VT \_ DECIMAL.
 
 ## <a name="error-codes"></a>Codici di errore
 
@@ -54,8 +54,8 @@ Quantità totale di memoria fisica, in megabyte. Questo valore è una **variante
 | Nome/valore                                                                                                                                                    | Significato                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
-| <dl> <dt>E \_ PUNTATORE</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **null**.<br/>        |
-| <dl> <dt>Disp \_ 0x80020009 \_ eccezione E</dt> <dt></dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -65,12 +65,12 @@ Quantità totale di memoria fisica, in megabyte. Questo valore è una **variante
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo è definito come 5b5cf343-05ad-453B-be99-adf4e27b2ebc<br/>                |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMHostInfo è definito come 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

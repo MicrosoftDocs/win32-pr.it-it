@@ -2,7 +2,7 @@
 description: Controlla la cache quando viene scaricato un provider di proprietà.
 ms.assetid: 8fc7de7a-889c-4d53-97ea-a676879de1d3
 ms.tgt_platform: multiple
-title: Classe __PropertyProviderCacheControl
+title: __PropertyProviderCacheControl classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 1d153049a9635b4b77a1ad09ca0ee64835b9bcfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33edad107859328e9a81a6c77c3c02e29e2ee3aebbbe411ee20fb438e51517a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110539"
 ---
 # <a name="__propertyprovidercachecontrol-class"></a>\_\_Classe PropertyProviderCacheControl
 
-La classe **\_ \_ PropertyProviderCacheControl** controlla la cache quando viene scaricato un provider di proprietà. Questa classe esiste solo nello \\ spazio dei nomi radice.
+La **\_ \_ classe PropertyProviderCacheControl** controlla la cache quando viene scaricato un provider di proprietà. Questa classe esiste solo nello spazio dei \\ nomi radice.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,32 +39,32 @@ class __PropertyProviderCacheControl
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ PropertyProviderCacheControl** dispone di questi tipi di membri:
+La **\_ \_ classe PropertyProviderCacheControl** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ PropertyProviderCacheControl** dispone di queste proprietà.
+La **\_ \_ classe PropertyProviderCacheControl** ha queste proprietà.
 
 <dl> <dt>
 
 **ClearAfter**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Intervallo di tempo dopo il rilascio di un provider di proprietà da WMI. L'ora è nel formato intervallo.
+Intervallo di tempo dopo il rilascio di un provider di proprietà da parte di WMI. L'ora è nel formato intervallo.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ PropertyProviderCacheControl** deriva da [**\_ \_ CacheControl**](--cachecontrol.md). Per ulteriori informazioni, vedere [scaricamento di un provider](unloading-a-provider.md).
+La **\_ \_ classe PropertyProviderCacheControl** è derivata da [**\_ \_ CacheControl.**](--cachecontrol.md) Per altre informazioni, vedere [Scaricamento di un provider.](unloading-a-provider.md)
 
 ## <a name="requirements"></a>Requisiti
 

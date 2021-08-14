@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 63cfc56c-4e6f-4e69-9fce-f625d550023b
-ms.openlocfilehash: b24e9310eae82f88e11de4e3781585e7f769d3c7
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 932664bbfa95b060a2a0f63a64b49901a43c1dd70b6030c20e8572e88e9714ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223693"
 ---
 # <a name="folderitemverbs_newenum-method"></a>FolderItemVerbs. \_ Metodo NewEnum
 
@@ -47,7 +47,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

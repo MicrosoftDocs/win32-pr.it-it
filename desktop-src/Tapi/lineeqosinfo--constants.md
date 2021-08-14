@@ -1,23 +1,23 @@
 ---
-description: Queste costanti vengono utilizzate da un TSP per identificare il risultato di una richiesta QoS (Quality of Service).
+description: Queste costanti vengono usate da un provider di servizi di rete per identificare il risultato di una richiesta QoS (Quality of Service).
 ms.assetid: 617ddbf4-212f-4990-93c2-f38f04b035ab
-title: Costanti LINEEQOSINFO_ (TSPI. h)
+title: LINEEQOSINFO_ costanti (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 423cc6172a1c6c87c1f3bb38929f727a15dad5c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c07a2d532e578b1f7df752cfd4930660d1d22dd4dd8406f0f8cc8bd61924bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761394"
 ---
-# <a name="lineeqosinfo_-constants"></a>\_Costanti LINEEQOSINFO
+# <a name="lineeqosinfo_-constants"></a>Costanti LINEEQOSINFO \_
 
-Queste costanti vengono utilizzate da un TSP per identificare il risultato di una richiesta QoS (Quality of Service).
+Queste costanti vengono usate da un provider di servizi di rete per identificare il risultato di una richiesta QoS (Quality of Service).
 
 <dl> <dt>
 
-<span id="LINEEQOSINFO_NOQOS"></span><span id="lineeqosinfo_noqos"></span>**\_NOQOS LINEEQOSINFO**
+<span id="LINEEQOSINFO_NOQOS"></span><span id="lineeqosinfo_noqos"></span>**LINEEQOSINFO \_ NOQOS**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -30,7 +30,7 @@ QoS non è disponibile.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEEQOSINFO_ADMISSIONFAILURE"></span><span id="lineeqosinfo_admissionfailure"></span>**\_ADMISSIONFAILURE LINEEQOSINFO**
+<span id="LINEEQOSINFO_ADMISSIONFAILURE"></span><span id="lineeqosinfo_admissionfailure"></span>**AMMISSIONE DI \_ LINEEQOSINFOFAILURE**
 </dt> <dd> <dl> <dt>
 
  0x00000002
@@ -38,12 +38,12 @@ QoS non è disponibile.
 
 
 
-Non è stato possibile soddisfare la richiesta QoS.
+Impossibile soddisfatta la richiesta QoS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEEQOSINFO_POLICYFAILURE"></span><span id="lineeqosinfo_policyfailure"></span>**\_POLICYFAILURE LINEEQOSINFO**
+<span id="LINEEQOSINFO_POLICYFAILURE"></span><span id="lineeqosinfo_policyfailure"></span>**LINEEQOSINFO \_ POLICYFAILURE**
 </dt> <dd> <dl> <dt>
 
  0x00000003
@@ -56,7 +56,7 @@ Il tipo di QoS richiesto non è supportato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEEQOSINFO_GENERICERROR"></span><span id="lineeqosinfo_genericerror"></span>**\_errore generico LINEEQOSINFO**
+<span id="LINEEQOSINFO_GENERICERROR"></span><span id="lineeqosinfo_genericerror"></span>**LINEEQOSINFO \_ GENERICERROR**
 </dt> <dd> <dl> <dt>
 
  0x00000004
@@ -75,8 +75,8 @@ Errore QoS non specificato.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,2<br/>                                                      |
-| Intestazione<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.2<br/>                                                      |
+| Intestazione<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

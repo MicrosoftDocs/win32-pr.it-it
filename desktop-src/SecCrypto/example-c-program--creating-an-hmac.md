@@ -1,27 +1,27 @@
 ---
 description: Utilizzato per verificare che un messaggio non sia stato modificato durante il transito.
 ms.assetid: a4bb67fb-8217-4e76-b1bf-461ccd39f58a
-title: 'Esempio di programma C: creazione di un HMAC'
+title: 'Programma C di esempio: creazione di un HMAC'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a18da226c9e88d535b34fe9c319a042132749e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25d4f6a91025ed159e580cfcb9780527536a31f4f72ae54d5a821a328d45abec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765889"
 ---
-# <a name="example-c-program-creating-an-hmac"></a>Esempio di programma C: creazione di un HMAC
+# <a name="example-c-program-creating-an-hmac"></a>Programma C di esempio: creazione di un HMAC
 
-Per verificare che un messaggio non sia stato modificato durante il transito, viene in genere utilizzato un codice HMAC (Hashed Message Authentication checksum). Entrambe le parti del messaggio devono disporre di una chiave privata condivisa. Il mittente combina la chiave e il messaggio in una stringa, crea un digest della stringa usando un algoritmo quale SHA-1 o MD5 e trasmette il messaggio e il digest. Il ricevitore combina la chiave condivisa con il messaggio, applica l'algoritmo appropriato e confronta il digest ottenuto con quello trasmesso dal mittente. Se i digest sono esattamente uguali, il messaggio non è stato alterato.
+Un checksum di autenticazione del messaggio con hash (HMAC) viene in genere usato per verificare che un messaggio non sia stato modificato durante il transito. Entrambe le parti del messaggio devono avere una chiave privata condivisa. Il mittente combina la chiave e il messaggio in una stringa, crea un digest della stringa usando un algoritmo come SHA-1 o MD5 e trasmette il messaggio e il digest. Il ricevitore combina la chiave condivisa con il messaggio, applica l'algoritmo appropriato e confronta il digest ottenuto con quello trasmesso dal mittente. Se i digest sono esattamente gli stessi, il messaggio non è stato manomesso.
 
-In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
 
--   Acquisizione di un handle per un [*provider del servizio di crittografia*](../secgloss/c-gly.md) chiamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Acquisizione di un handle per un [*provider del servizio di*](../secgloss/c-gly.md) crittografia chiamando [**CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   Derivazione di una chiave simmetrica da una stringa di byte chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash), [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)e [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
--   Utilizzare la chiave simmetrica per creare un oggetto hash HMAC chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) e [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
--   Hashing di un messaggio tramite la chiamata a [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Recupero dell'hash chiamando [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).
+-   Uso della chiave simmetrica per creare un oggetto hash HMAC chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) e [**CryptSetHashParam.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam)
+-   Hashing di un messaggio chiamando [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
+-   Recupero dell'hash chiamando [**CryptGetHashParam.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam)
 
 
 ```C++

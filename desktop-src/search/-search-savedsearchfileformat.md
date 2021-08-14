@@ -1,19 +1,19 @@
 ---
-description: Gli utenti di Windows possono salvare le ricerche come una cartella di ricerca generata da un file XML che archivia la query in un modulo che può essere utilizzato dal sottosistema di ricerca di Windows.
+description: Windows utenti possono salvare le ricerche come cartella di ricerca generata da un file XML che archivia la query in un modulo che può essere usato dal sottosistema di ricerca Windows ricerca.
 ms.assetid: 1c73e220-a999-4243-879c-ac7310151def
-title: Formato file di ricerca salvato
+title: Formato del file di ricerca salvato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d19cf936f78b045814bf7cba31a123c40d61927a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 614eb357a82d2c70e068a9fa5258974423d755c48e779d5f5fe8be184a864d9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863724"
 ---
-# <a name="saved-search-file-format"></a>Formato file di ricerca salvato
+# <a name="saved-search-file-format"></a>Formato del file di ricerca salvato
 
-In Windows Vista e versioni successive, gli utenti possono salvare le ricerche come una cartella di ricerca generata da un file XML in cui è archiviata la query in un modulo che può essere utilizzato dal sottosistema di ricerca di Windows. In questo argomento viene descritto il formato di file ( \* . search-ms) e sono incluse le sezioni seguenti:
+In Windows Vista e versioni successive gli utenti possono salvare le ricerche come cartella di ricerca generata da un file XML che archivia la query in un modulo che può essere usato dal sottosistema di ricerca Windows. Questo argomento descrive il formato di file ( \* .search-ms) e include le sezioni seguenti:
 
 - [Panoramica delle ricerche salvate](#overview-of-saved-searches)
 - [\<viewInfo> Elemento](/windows)
@@ -27,15 +27,15 @@ In Windows Vista e versioni successive, gli utenti possono salvare le ricerche c
 
 ## <a name="overview-of-saved-searches"></a>Panoramica delle ricerche salvate
 
-Gli utenti possono salvare una query di ricerca come cartella di ricerca, una cartella virtuale visualizzata in Esplora risorse sotto la cartella ricerche. Aprendo una cartella di ricerca viene eseguita la ricerca salvata e vengono visualizzati i risultati aggiornati. Il file di ricerca salvato archivia la query in un formato in cui Windows Search può agire, specificando gli elementi da cercare, dove eseguire la ricerca e come presentare i risultati.
+Gli utenti possono salvare una query di ricerca come cartella di ricerca, una cartella virtuale visualizzata in Windows Explorer nella cartella Ricerche. L'apertura di una cartella di ricerca esegue la ricerca salvata e visualizza risultati aggiornati. Il file di ricerca salvato archivia la query in un formato Windows ricerca può agire, specificando cosa cercare, dove eseguire la ricerca e come presentare i risultati.
 
-La ricerca salvata viene generata da un file XML ( \* con estensione search-ms) nella cartella% UserProfile% search \\ . I dati sono divisi in tre elementi primari nel file XML:
+La ricerca salvata viene generata da un file XML ( \* .search-ms) nella cartella %userprofile% \\ Searches. I dati sono suddivisi in tre elementi principali nel file XML:
 
-- \<viewInfo> Specifica le informazioni di presentazione
-- \<query> specifica (Cerca informazioni sulle query
-- \<properties> Specifica le proprietà del \* file con estensione search-ms.
+- \<viewInfo> specifica le informazioni di presentazione
+- \<query> specifies (cerca informazioni sulle query)
+- \<properties> specifica le proprietà del \* file con estensione search-ms stesso
 
-Nell'esempio seguente viene illustrata la struttura di alto livello di un file di ricerca salvato.
+L'esempio seguente illustra la struttura di alto livello di un file di ricerca salvato.
 
 ```XML
 <?xml version="1.0"?>
@@ -58,7 +58,7 @@ Nell'esempio seguente viene illustrata la struttura di alto livello di un file d
 
 ## <a name="viewinfo-element"></a>\<viewInfo> Elemento
 
-L' \<viewInfo> elemento specifica il modo in cui i risultati vengono presentati all'utente finale. Nell'esempio seguente viene illustrata la struttura dell'elemento.
+\<viewInfo>L'elemento specifica il modo in cui i risultati vengono presentati all'utente finale. Nell'esempio seguente viene illustrata la struttura dell'elemento .
 
 ```XML
 ...
@@ -103,8 +103,8 @@ La tabella seguente descrive gli attributi dell'elemento \<viewInfo>.
 
 | Attributo     | Descrizione                                                                     | Valori                     |
 |---------------|---------------------------------------------------------------------------------|----------------------------|
-| viewMode      | Specifica la visualizzazione cartelle.                                                      | \|Riquadri icone Dettagli \|  |
-| iconSize      | Controlla le dimensioni predefinite delle icone e delle anteprime per gli elementi quando non lo stack. | Intero compreso tra 16 e 256 |
+| Viewmode      | Specifica la visualizzazione cartelle.                                                      | Riquadri \| delle icone \| dei dettagli  |
+| iconSize      | Controlla le dimensioni predefinite delle icone e delle anteprime per gli elementi quando non sono sovrapposti. | Numero intero compreso tra 16 e 256 |
 | stackIconSize | Solo per uso interno. Non usare.                                              | n/d                        |
 | displayName   | Solo per uso interno. Non usare.                                              | n/d                        |
 | autoListFlags | Solo per uso interno. Non usare.                                              | n/d                        |
@@ -113,20 +113,20 @@ La tabella seguente descrive gli attributi dell'elemento \<viewInfo>.
 
 ### <a name="viewinfo-child-elements"></a>\<viewInfo> Elementi figlio
 
-Gli elementi figlio dell' \<viewInfo> elemento specificano le colonne visualizzate nei risultati della ricerca in Esplora risorse e il modo in cui i risultati vengono raggruppati e ordinati. Ogni elemento figlio contiene un set ordinato di colonne, identificato dai nomi canonici delle proprietà di sistema, ad esempio System. DisplayName. Se non è definito nel file di ricerca salvato, i risultati della ricerca vengono presentati con un set predefinito di colonne appropriato per i tipi di file visualizzati.
+Gli elementi figlio dell'elemento specificano quali colonne vengono visualizzate nei risultati della ricerca Windows Explorer e come vengono raggruppati \<viewInfo> e ordinati i risultati. Ogni elemento figlio contiene un set ordinato di colonne, identificate da nomi canonici delle proprietà di sistema, ad esempio System.DisplayName. Se non è definito nel file di ricerca salvato, i risultati della ricerca vengono presentati con un set predefinito di colonne appropriate per i tipi di file visualizzati.
 
 | Elemento               | Descrizione                                                                                        | Valori                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| visibleColumns        | Specifica un elenco ordinato di colonne da visualizzare nella visualizzazione dei risultati. L'utente può modificare l'elenco. | Qualsiasi proprietà di sistema.                                         |
+| oggetti visibleColumns        | Specifica un elenco ordinato di colonne da visualizzare nella visualizzazione risultati. L'utente può modificare questo elenco. | Qualsiasi proprietà di sistema.                                         |
 | frequentlyUsedColumns | Solo per uso interno. Non usare.                                                                 | n/d                                                          |
 | columnChooserColumns  | Solo per uso interno. Non usare.                                                                 | n/d                                                          |
-| groupBy               | Specifica una singola proprietà di sistema in base alla quale raggruppare i risultati. L'utente può modificare questo valore.  | Qualsiasi proprietà di sistema.                                         |
-| sortList              | Specifica un elenco ordinato di colonne per ordinare i risultati in base a.                                       | Fino a quattro proprietà di sistema. L'utente può modificare l'elenco. |
+| Groupby               | Specifica una singola proprietà di sistema in base alla quale raggruppare i risultati. L'utente può modificare questo valore.  | Qualsiasi proprietà di sistema.                                         |
+| sortList              | Specifica un elenco ordinato di colonne in base a cui ordinare i risultati.                                       | Fino a quattro proprietà di sistema. L'utente può modificare questo elenco. |
 | stackList             | Solo per uso interno. Non usare.                                                                 | n/d                                                          |
 
 ## <a name="query-element"></a>\<query> Elemento
 
-L' \<query> elemento specifica gli attributi che definiscono il modo in cui vengono eseguite le query sui risultati. Nell'esempio seguente viene illustrata la struttura dell'elemento.
+\<query>L'elemento specifica gli attributi che definiscono la modalità di esecuzione delle query sui risultati. Nell'esempio seguente viene illustrata la struttura dell'elemento .
 
 ```XML
 ...
@@ -170,15 +170,15 @@ La tabella seguente descrive gli elementi figlio dell'elemento \<scope>.
 |------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | provider  | Solo per uso interno. Non usare.                                                                                        | n/d                                                                                                                                                                                                                                                            |
 | Sottoquery | Solo per uso interno. Non usare.                                                                                        | n/d                                                                                                                                                                                                                                                            |
-| Ambito      | Identifica le posizioni da includere o escludere nella ricerca.                                                                 | Un percorso o un [ID di cartella noto](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) della posizione da includere o escludere. Questo elemento consente inoltre di specificare se la ricerca deve includere/escludere percorsi figlio (ricerca superficiale o approfondita). |
-| tipo di   | Identifica il tipo di file da cercare.                                                                             | Qualsiasi valore System. Kind.                                                                                                                                                                                                                                         |
+| Ambito      | Identifica le posizioni da includere o escludere nella ricerca.                                                                 | Un percorso o un [ID di cartella](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) noto del percorso da includere o escludere. Questo elemento può anche specificare se la ricerca deve includere/escludere percorsi figlio (una ricerca superficiale o approfondita). |
+| kindList   | Identifica il tipo di file da cercare.                                                                             | Qualsiasi valore System.Kind.                                                                                                                                                                                                                                         |
 | condizioni | Specifica le regole per filtrare i risultati. Ad esempio, i risultati potrebbero essere limitati ai messaggi di posta elettronica inviati da o a una determinata persona. | andCondition, orCondition, notCondition, leafCondition.                                                                                                                                                                                                        |
 
 ### <a name="scope-element"></a>\<scope> Elemento
 
-L' \<scope> elemento identifica i percorsi da includere o escludere dalla ricerca. L' \<scope> elemento deve contenere almeno un \<include> elemento figlio presente e zero o più \<exclude> elementi. I percorsi possono essere specificati come un percorso (le variabili di ambiente sono supportati) o come un [identificatore di cartella noto](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid). Inoltre, è possibile specificare ognuno di questi percorsi per eseguire una ricerca approfondita o superficiale impostando l'oggetto non ricorsivo su "true" o "false" (il valore predefinito è ricorsivo). Le parti dell'elenco di percorsi incluso possono essere escluse specificando gli elementi exclude.
+\<scope>L'elemento identifica le posizioni da includere o escludere dalla ricerca. \<scope>L'elemento deve contenere almeno \<include> un elemento figlio presente e zero o più elementi \<exclude> . I percorsi possono essere specificati come percorso (le variabili di ambiente sono supportate) o come identificatore [di cartella noto.](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) Inoltre, ognuno di questi percorsi può essere specificato per la ricerca approfondita o superficiale impostando nonRecursive su "true" o "false" (il valore predefinito è ricorsivo). È possibile escludere parti dell'elenco di posizioni incluse specificando elementi exclude.
 
-Di seguito viene illustrato un \<scope> elemento che eseguirà la ricerca nella cartella speciale documenti, ma non nei relativi elementi figlio, nel volume "e:" e nei relativi elementi figlio, ma non nella directory "e: \\ Windows" o in uno dei relativi elementi figlio:
+Di seguito è riportato un elemento che consente di eseguire la ricerca nella cartella speciale dei documenti, ma non nei relativi elementi figlio, nel volume "E:" e nei relativi elementi figlio, ma non nella \<scope> directory "E: windows" o in uno dei relativi elementi \\ figlio:
 
 ```XML
 ...
@@ -196,7 +196,7 @@ Di seguito viene illustrato un \<scope> elemento che eseguirà la ricerca nella 
 
 ### <a name="kindlist-element"></a>\<kindList> Elemento
 
-Questi elementi definiscono l'Unione del "tipo" di elementi che devono essere visualizzati nella libreria. I valori validi sono:
+Questi elementi definiscono l'unione del "tipo" di elementi che devono essere visualizzati nella libreria. I valori validi sono:
 
 - calendario
 - communication
@@ -205,28 +205,28 @@ Questi elementi definiscono l'Unione del "tipo" di elementi che devono essere vi
 - email
 - feed
 - folder
-- gioco
-- instantmessage
-- Journal
+- Gioco
+- messaggio istantaneo
+- Gazzetta
 - link
-- film
+- Film
 - music
 - nota
 - picture
 - programma
 - recordedtv
-- SearchFolder
+- searchfolder
 - attività
 - Video
-- cronologia webhistory
+- webhistory
 - item
 - altro
 
 ### <a name="conditions-element"></a>\<conditions> Elemento
 
-Le condizioni sono filtri in base ai quali vengono confrontati i risultati della ricerca. Ad esempio, è possibile filtrare i risultati che soddisfano determinati criteri, come il nome dell'autore o le dimensioni del file. Il set di condizioni è incorporato in un singolo albero di condizione con rami AND, OR e NOT logici.
+Le condizioni sono filtri rispetto ai quali vengono confrontati i risultati della ricerca. Ad esempio, è possibile filtrare i risultati che soddisfano determinati criteri, ad esempio il nome dell'autore o le dimensioni del file. Il set di condizioni viene compilato in un singolo albero delle condizioni con rami LOGICI AND, OR e NOT.
 
-Nell'esempio seguente viene illustrata la struttura dell' \<condition> elemento.
+Nell'esempio seguente viene illustrata la struttura \<condition> dell'elemento .
 
 ```XML
 ...
@@ -247,16 +247,16 @@ Il tipo di condizione può essere uno dei seguenti:
 
 | Tipo          | Descrizione                                 | Attributi disponibili                               |
 |---------------|---------------------------------------------|----------------------------------------------------|
-| andCondition  | Combinazione di due o più condizioni figlio | n/d                                                |
-| orCondition   | Disgiunzione di due di più condizioni figlio | n/d                                                |
+| andCondition  | Congiunzione di due o più condizioni figlio | n/d                                                |
+| OrCondition   | Disgiunzione di due altre condizioni figlio | n/d                                                |
 | notCondition  | Negazione di una condizione figlio               | n/d                                                |
-| leafCondition | Confronta una proprietà con value                | Proprietà, propertyType, operatore, valore, ValueType |
+| leafCondition | Confronta una proprietà con il valore                | property, propertyType, operator, value, valuetype |
 
-Gli \<leafCondition> attributi dell'elemento identificano le proprietà e i valori con i quali vengono filtrati i risultati.
+Gli \<leafCondition> attributi dell'elemento identificano le proprietà e i valori in base ai quali vengono filtrati i risultati.
 
-### <a name="example-conditions-element"></a>Esempio: \<conditions> element
+### <a name="example-conditions-element"></a>Esempio: \<conditions> Elemento
 
-Nell'esempio seguente vengono filtrati i risultati per tutti gli elementi non letti creati da John. Ovvero la proprietà System. IsAuthorized è false e la stringa "John" viene visualizzata nelle proprietà System. Author o System. ItemAuthors.
+L'esempio seguente filtra i risultati per tutti gli elementi non letti creati da John. In altre informazioni, la proprietà System.IsRead è false e la stringa "john" viene visualizzata nelle proprietà System.Author o System.ItemAuthors.
 
 ```XML
 ...
@@ -299,7 +299,7 @@ Nell'esempio seguente vengono filtrati i risultati per tutti gli elementi non le
 
 ## <a name="properties-element"></a>\<properties> Elemento
 
-L' \<properties> elemento descrive le proprietà della ricerca salvata. I file di ricerca salvati supportano quattro proprietà: \<author> , \<kind> , \<description> e \<tags> . Sono solo per uso interno.
+\<properties>L'elemento descrive le proprietà della ricerca salvata stessa. I file di ricerca salvati supportano quattro \<author> proprietà: \<kind> , , e \<description> \<tags> . Sono solo per uso interno.
 
 ## <a name="full-specification-of-the-search-ms-file-format"></a>Specifica completa del formato di file search-ms
 
@@ -385,9 +385,9 @@ Di seguito è riportato un esempio del codice XML completo per un file di ricerc
 
 ## <a name="examples-of-saved-searches"></a>Esempi di ricerche salvate
 
-Di seguito sono riportati alcuni esempi di \* file con estensione search-ms.
+Di seguito sono riportati esempi \* di file con estensione search-ms.
 
-### <a name="recent-documentssearch-ms"></a>Documenti recenti. search-ms
+### <a name="recent-documentssearch-ms"></a>Recent Documents.search-ms
 
 ```XML
 <?xml version="1.0"?>
@@ -412,7 +412,7 @@ Di seguito sono riportati alcuni esempi di \* file con estensione search-ms.
 </persistedQuery>
 ```
 
-### <a name="recent-musicsearch-ms"></a>Music recenti. search-ms
+### <a name="recent-musicsearch-ms"></a>Recent Musica.search-ms
 
 ```XML
 <?xml version="1.0"?>
@@ -437,7 +437,7 @@ Di seguito sono riportati alcuni esempi di \* file con estensione search-ms.
 </persistedQuery>
 ```
 
-### <a name="recently-shared-by-mesearch-ms"></a>Condiviso recentemente da me. search-ms
+### <a name="recently-shared-by-mesearch-ms"></a>Recently Shared by Me.search-ms
 
 ```XML
 <?xml version="1.0"?>

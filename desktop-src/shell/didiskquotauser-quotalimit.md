@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 7eee1be7-8ad5-4796-910c-987fe3fd6338
-ms.openlocfilehash: b1971871bdeb18e3c7dd4c7978152bbec276fa8b
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: db0b6154d6eb6940a83434c010e7da1e124110f94cae7637d340621c86e7a30c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224731"
 ---
 # <a name="didiskquotauserquotalimit-property"></a>DIDiskQuotaUser.QuotaLimit - proprietà
 

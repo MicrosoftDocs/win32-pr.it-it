@@ -1,28 +1,28 @@
 ---
-title: Impostazione delle estensioni delle unità dati
-description: Impostazione delle estensioni delle unità dati
+title: Impostazione delle estensioni per unità dati
+description: Impostazione delle estensioni per unità dati
 ms.assetid: 28328c9e-8590-48b8-92b6-1c0475978246
 keywords:
-- ASF (Advanced Systems Format), estensioni di unità dati
-- ASF (formato di sistemi avanzati), estensioni di unità dati
-- estensioni unità dati, impostazione
+- Advanced Systems Format (ASF), estensioni per unità dati
+- ASF (Advanced Systems Format),estensioni unità dati
+- estensioni unità dati,impostazione
 - flussi, estensioni di unità dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 822a05a6e6bcbb9f0101d32eed05f2b6c5c68dc8
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: f1bb88e9aa0c3bc00d4c21a1c262b7ff4a44fbc2f426f139b3b782a0bbdb7b83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104516663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197483"
 ---
-# <a name="setting-data-unit-extensions"></a>Impostazione delle estensioni delle unità dati
+# <a name="setting-data-unit-extensions"></a>Impostazione delle estensioni per unità dati
 
-Alcuni flussi sono configurati per l'uso di estensioni di unità dati per associare dati supplementari a singoli esempi. Per ulteriori informazioni sugli esempi estesi, vedere [estensioni di unità dati](data-unit-extensions.md).
+Alcuni flussi sono configurati per l'uso di estensioni per unità dati per associare dati supplementari a singoli esempi. Per altre informazioni sugli esempi estesi, vedere [Estensioni unità dati.](data-unit-extensions.md)
 
-Per la maggior parte dei sistemi di estensione dell'unità dati è necessaria un'estensione per ogni esempio nel flusso. Se non si specifica un'estensione della dimensione corretta, il writer rifiuterà l'esempio.
+La maggior parte dei sistemi di estensione per unità dati richiede un'estensione per ogni esempio nel flusso. Se non si specifica un'estensione delle dimensioni corrette, il writer rifiuterà l'esempio.
 
-Per aggiungere dati estesi a un esempio, usare il metodo [**INSSBuffer3:: SetProperty**](/previous-versions/windows/desktop/api/Wmsbuffer/nf-wmsbuffer-inssbuffer3-setproperty) . Per ottenere informazioni sulle estensioni dell'unità dati configurate in un flusso, è possibile usare i metodi [**IWMStreamConfig2:: GetDataUnitExtensionCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount) e [**IWMStreamConfig2:: GetDataUnitExtension**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension) .
+Per aggiungere dati estesi a un esempio, usare il [**metodo INSSBuffer3::SetProperty.**](/previous-versions/windows/desktop/api/Wmsbuffer/nf-wmsbuffer-inssbuffer3-setproperty) È possibile ottenere informazioni sulle estensioni delle unità dati configurate in un flusso usando i metodi [**IWMStreamConfig2::GetDataUnitExtensionCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount) e [**IWMStreamConfig2::GetDataUnitExtension.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -34,9 +34,9 @@ Per aggiungere dati estesi a un esempio, usare il metodo [**INSSBuffer3:: SetPro
 [**Scrittura di file ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

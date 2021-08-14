@@ -4,12 +4,12 @@ ms.assetid: b6e1b229-e86f-4417-9db2-b3fb3eab419f
 title: System.RecordedTV.IsRepeatBroadcast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c176edc94ca5af480c12559c1daa5ba249fd2b8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d09a2a95d79ae4766dcd0fccf82a7f94cfdba9107fcfc53d6992a73019daa26f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227628"
 ---
 # <a name="systemrecordedtvisrepeatbroadcast"></a>System.RecordedTV.IsRepeatBroadcast
 
