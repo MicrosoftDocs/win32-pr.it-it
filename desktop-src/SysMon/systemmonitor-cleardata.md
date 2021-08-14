@@ -1,11 +1,11 @@
 ---
-title: SystemMonitor. ClearData, metodo
-description: Cancella tutti i campi dati nel controllo.
+title: Metodo SystemMonitor.ClearData
+description: Cancella tutti i campi dati nel controllo .
 ms.assetid: 6d7e510c-7f76-42b1-b470-1110d124448f
 keywords:
 - Metodo ClearData SysMon
-- Metodo ClearData SysMon, oggetto SystemMonitor
-- Oggetto SystemMonitor SysMon, Metodo ClearData
+- Metodo ClearData SysMon , oggetto SystemMonitor
+- Oggetto SystemMonitor SysMon , metodo ClearData
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b346dacaf9df945be8c4c55ce9ee2be3eb76e9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebd2ad0e748a3b914db8bb92e8a7b6405dbef8fdc56e04a5b6cd02bfe9a74b8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118882646"
 ---
-# <a name="systemmonitorcleardata-method"></a>SystemMonitor. ClearData, metodo
+# <a name="systemmonitorcleardata-method"></a>Metodo SystemMonitor.ClearData
 
-Cancella tutti i campi dati nel controllo.
+Cancella tutti i campi dati nel controllo .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,9 +50,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 

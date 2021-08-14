@@ -1,11 +1,11 @@
 ---
-title: Classe MSAD_ReplCursor
-description: Fornisce informazioni sullo stato di replica in ingresso su tutte le repliche di un determinato contesto dei nomi (NC).
+title: MSAD_ReplCursor classe
+description: Fornisce informazioni sullo stato della replica in ingresso su tutte le repliche di un determinato contesto dei nomi (NC).
 ms.assetid: 5746cfe9-b113-4be3-b609-15cb937c271b
 ms.tgt_platform: multiple
 keywords:
-- Classe MSAD_ReplCursor Active Directory
-- Classe MSAD_ReplCursor Active Directory, descritta
+- MSAD_ReplCursor classe Active Directory
+- MSAD_ReplCursor classe Active Directory , descritto
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f725ac8e9eee9f921ce4109e0b0e42ed85e75ab8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c001adf774321ba61e232298d070fb4a29d4b3f0740dd8ef900ff4ea0b4cb83a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186066"
 ---
-# <a name="msad_replcursor-class"></a>\_Classe MSAD ReplCursor
+# <a name="msad_replcursor-class"></a>Classe \_ MSAD ReplCursor
 
-Fornisce informazioni sullo stato di replica in ingresso su tutte le repliche di un determinato contesto dei nomi (NC).
+Fornisce informazioni sullo stato della replica in ingresso su tutte le repliche di un determinato contesto dei nomi (NC).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,20 +48,20 @@ class MSAD_ReplCursor
 
 ## <a name="members"></a>Members
 
-La **classe \_ ReplCursor di MSAD** dispone di questi tipi di membri:
+La **classe MSAD \_ ReplCursor** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ReplCursor di MSAD** dispone di queste proprietà.
+La **classe MSAD \_ ReplCursor** ha queste proprietà.
 
 <dl> <dt>
 
 **NamingContextDN**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -70,27 +70,27 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Ottiene il percorso X. 500 per il contesto dei nomi (NC) che include il cursore.
+Ottiene il percorso X.500 per il contesto dei nomi (NC) che contiene questo cursore.
 
 </dd> <dt>
 
 **SourceDsaDN**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il percorso X. 500 per il Directory System Agent (DSA) che rappresenta il controller di dominio di origine (DC).
+Ottiene il percorso X.500 per l'agente del sistema di directory (DSA) che rappresenta il controller di dominio di origine.
 
 </dd> <dt>
 
 **SourceDsaInvocationID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **Stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -99,33 +99,33 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Ottiene l'identificatore di chiamata del server di origine a cui corrisponde l'oggetto **USNAttributeFilter** .
+Ottiene l'identificatore di chiamata del server di origine a cui **corrisponde USNAttributeFilter.**
 
 </dd> <dt>
 
 **TimeOfLastSuccessfulSync**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il timestamp dell'ultima sincronizzazione corretta della replica con il DSA di origine. Indica l'ora in cui il controller di dominio ha rilevato le modifiche apportate nell'origine DSA per questo NC.
+Ottiene il timestamp dell'ultima sincronizzazione della replica riuscita con il DSA di origine. Indica l'ora dell'ultima volta in cui questo controller di dominio ha visto le modifiche apportate al DSA di origine per questo NC.
 
 </dd> <dt>
 
 **USNAttributeFilter**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ottiene il numero di sequenza di aggiornamento massimo a cui il server di destinazione può indicare che ha registrato tutte le modifiche originate dal server specificato in corrispondenza dei numeri di sequenza di aggiornamento minori o uguali a questo numero di sequenza dell'aggiornamento. Questa proprietà viene utilizzata per filtrare le modifiche che il server di destinazione ha già applicato ai server di origine della replica.
+Ottiene il numero massimo di sequenza di aggiornamento a cui il server di destinazione può indicare di avere registrato tutte le modifiche originate dal server specificato in numeri di sequenza di aggiornamento minori o uguali a questo numero di sequenza di aggiornamento. Questa proprietà viene usata per filtrare le modifiche già applicate dal server di destinazione nei server di origine della replica.
 
 </dd> </dl>
 
@@ -137,8 +137,8 @@ Ottiene il numero di sequenza di aggiornamento massimo a cui il server di destin
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | \\MicrosoftActiveDirectory radice<br/>                                               |
-| MOF<br/>                      | <dl> <dt>Replprov. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Radice \\ MicrosoftActiveDirectory<br/>                                               |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 
@@ -147,7 +147,7 @@ Ottiene il numero di sequenza di aggiornamento massimo a cui il server di destin
 
 <dl> <dt>
 
-[**\_cursore REPL \_ DS**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_cursor)
+[**CURSORE REPL DS \_ \_**](/windows/desktop/api/Ntdsapi/ns-ntdsapi-ds_repl_cursor)
 </dt> </dl>
 
  

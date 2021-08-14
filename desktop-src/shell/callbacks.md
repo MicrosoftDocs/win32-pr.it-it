@@ -1,5 +1,5 @@
 ---
-description: In questa sezione vengono descritte le funzioni di callback della shell di Windows.
+description: Questa sezione descrive le funzioni di callback Windows Shell.
 title: Funzioni di callback della shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 4f6ae93437caa740c8c1349690b7e1452a032491
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3fd334dd49d2b9cec3322630866fde4a99ccad0b5f253dd7253e551264737a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460844"
 ---
 # <a name="shell-callback-functions"></a>Funzioni di callback della shell
 
-In questa sezione vengono descritte le funzioni di callback della shell di Windows.
+Questa sezione descrive le funzioni di callback Windows Shell.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -26,12 +26,12 @@ In questa sezione vengono descritte le funzioni di callback della shell di Windo
 
 | Argomento                                                                     | Descrizione                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BFFCALLBACK**](/previous-versions/windows/desktop/legacy/bb762598(v=vs.85))<br/>                      | Specifica una funzione di callback definita dall'applicazione utilizzata per inviare e elaborare messaggi da una finestra di dialogo di **esplorazione** visualizzata in risposta a una chiamata a [**SHBrowseForFolder**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera).<br/> |
-| [*FMExtensionProc*](fmextensionproc.md)<br/>                       | Specifica una funzione di callback definita dall'applicazione chiamata da file Manager per comunicare con un'estensione di file Manager.<br/>                                                                                            |
-| [*MRUCMPPROC*](mrucmpproc.md)<br/>                                 | Usato per determinare se un elemento è presente in un elenco degli ultimi elementi usati (MRU).<br/>                                                                                                                                   |
-| [**\_routine di modifica PAPPSTATE \_**](/windows/desktop/api/appnotify/nc-appnotify-pappstate_change_routine)<br/> | Specifica una funzione di callback definita dall'app che invia una notifica all'app quando l'app entra o esce da uno stato sospeso.<br/>                                                                                            |
-| [**SUBCLASSPROC**](/windows/win32/api/commctrl/nc-commctrl-subclassproc)<br/>                  | Definisce il prototipo per la funzione di callback utilizzata da [**RemoveWindowSubclass**](/windows/desktop/api/Commctrl/nf-commctrl-removewindowsubclass) e [**SetWindowSubclass**](/windows/desktop/api/Commctrl/nf-commctrl-setwindowsubclass).<br/>                                                   |
-| [**procedura di \_ annullamento dell'eliminazione di FM \_**](undeletefile.md)<br/>                     | Specifica una funzione di callback definita dall'applicazione chiamata da file Manager quando l'utente sceglie il comando **Annulla eliminazione** dal menu **file** .<br/>                                                                   |
+| [**BFFCALLBACK**](/previous-versions/windows/desktop/legacy/bb762598(v=vs.85))<br/>                      | Specifica una funzione di callback definita dall'applicazione utilizzata per inviare ed elaborare messaggi da una finestra di dialogo Sfoglia visualizzata in risposta a una chiamata a [**SHBrowseForFolder.**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shbrowseforfoldera) <br/> |
+| [*FMExtensionProc*](fmextensionproc.md)<br/>                       | Specifica una funzione di callback definita dall'applicazione chiamata da File Manager per comunicare con un'estensione di File Manager.<br/>                                                                                            |
+| [*MRUCMPPROC*](mrucmpproc.md)<br/>                                 | Consente di determinare se un elemento è presente in un elenco degli elementi usati più di recente.<br/>                                                                                                                                   |
+| [**ROUTINE DI MODIFICA \_ \_ PAPPSTATE**](/windows/desktop/api/appnotify/nc-appnotify-pappstate_change_routine)<br/> | Specifica una funzione di callback definita dall'app che notifica all'app quando l'app entra o esce da uno stato sospeso.<br/>                                                                                            |
+| [**SUBCLASSPROC**](/windows/win32/api/commctrl/nc-commctrl-subclassproc)<br/>                  | Definisce il prototipo per la funzione di callback usata [**da RemoveWindowSubclass**](/windows/desktop/api/Commctrl/nf-commctrl-removewindowsubclass) e [**SetWindowSubclass**](/windows/desktop/api/Commctrl/nf-commctrl-setwindowsubclass).<br/>                                                   |
+| [**FM \_ UNDELETE \_ PROC**](undeletefile.md)<br/>                     | Specifica una funzione di callback definita dall'applicazione chiamata da  File Manager quando l'utente sceglie il comando Annulla eliminazione dal menu **File.**<br/>                                                                   |
 
 
 

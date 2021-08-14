@@ -1,30 +1,30 @@
 ---
-title: Modifica di defaultSecurityDescriptor per una classe di oggetti
-description: Nell'esempio di codice seguente viene recuperato il descrittore di sicurezza predefinito per una classe di oggetti, viene aggiunta una voce ACE all'elenco DACL, quindi viene impostato il descrittore di sicurezza modificato sulla classe di oggetti.
+title: Modifica di defaultSecurityDescriptor per una classe object
+description: Nell'esempio di codice seguente viene recuperato il descrittore di sicurezza predefinito per una classe di oggetti , viene aggiunta una ACE all'elenco DACL e quindi viene impostato il descrittore di sicurezza modificato nella classe dell'oggetto .
 ms.assetid: 38b4d129-f98f-43da-9bd9-1ae23c090657
 ms.tgt_platform: multiple
 keywords:
-- descrittori di sicurezza AD, modificando defaultSecurityDescriptor per una classe di oggetti
-- oggetti AD, modificando defaultSecurityDescriptor per una classe di oggetti
-- Classe AD, modifica di defaultSecurityDescriptor per una classe di oggetti
+- descrittori di sicurezza AD, modifica di defaultSecurityDescriptor per una classe di oggetti
+- oggetti AD, modifica di defaultSecurityDescriptor per una classe di oggetti
+- classe AD, modifica di defaultSecurityDescriptor per una classe di oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efc3bd441cb19c43ee36550520d18ee38726b05e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be0d837530454e8e563718d3f5974be22e5b7d42dfa5e29b8424a51c7a5c993d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186326"
 ---
-# <a name="modifying-the-defaultsecuritydescriptor-for-an-object-class"></a>Modifica di defaultSecurityDescriptor per una classe di oggetti
+# <a name="modifying-the-defaultsecuritydescriptor-for-an-object-class"></a>Modifica di defaultSecurityDescriptor per una classe object
 
-Nell'esempio di codice seguente viene recuperato il descrittore di sicurezza predefinito per una classe di oggetti, viene aggiunta una voce ACE all'elenco DACL, quindi viene impostato il descrittore di sicurezza modificato sulla classe di oggetti.
+Nell'esempio di codice seguente viene recuperato il descrittore di sicurezza predefinito per una classe di oggetti , viene aggiunta una ACE all'elenco DACL e quindi viene impostato il descrittore di sicurezza modificato nella classe dell'oggetto .
 
-Tenere presente che la modifica dello schema è disabilitata per impostazione predefinita su tutti i controller di dominio di Windows 2000. Per abilitare la modifica dello schema in un controller di dominio specifico, impostare un \_ valore reg DWORD denominato "aggiornamento dello schema consentito" nella chiave del registro di sistema seguente:
+Tenere presente che la modifica dello schema è disabilitata per impostazione predefinita in tutti Windows 2000 controller di dominio. Per abilitare la modifica dello schema in un controller di dominio specifico, impostare un valore DWORD REG \_ denominato "Schema Update Allowed" nella chiave del Registro di sistema seguente:
 
-**HKEY \_ \_** \\  \\  \\  \\  \\ **Parametri** NTDS dei servizi CurrentControlSet del sistema del computer locale
+**HKEY \_ Parametri \_** \\  \\ NTDS **del servizio CurrentControlSet** \\ **del** \\ **sistema LOCAL** \\  MACHINE
 
-Aggiungere questo valore se non esiste già. Impostare questo valore su 1 per abilitare la modifica dello schema. Se questo valore è zero, la modifica dello schema è disabilitata. Lo snap-in MMC Gestione schema fornisce una casella di controllo che seleziona o cancella la chiave del registro di sistema.
+Aggiungere questo valore se non esiste già. Impostare questo valore su 1 per abilitare la modifica dello schema. Se questo valore è zero, la modifica dello schema è disabilitata. Lo snap-in MMC Gestione schemi include una casella di controllo che consente di selezionare o deselezionare questa chiave del Registro di sistema.
 
 
 ```C++
@@ -276,9 +276,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

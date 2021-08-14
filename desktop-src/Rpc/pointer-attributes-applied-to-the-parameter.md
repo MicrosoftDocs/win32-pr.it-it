@@ -1,35 +1,35 @@
 ---
 title: Attributi del puntatore applicati al parametro
-description: Ogni attributo del puntatore (\ Ref \, \ Unique \ e \ PTR \) presenta caratteristiche che influiscono sull'allocazione della memoria. Nella tabella seguente sono riepilogate queste caratteristiche.
+description: Ogni attributo del puntatore (\ ref\ , \ unique\ e \ ptr\ ) ha caratteristiche che influiscono sull'allocazione di memoria. Nella tabella seguente vengono riepilogate queste caratteristiche.
 ms.assetid: 25a609cd-efe7-4cbb-b80e-b6a3ad8cda38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c7710fb3c39702b2b2fdb789ed1218dc88d44ea
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0bcc6649dc663d7b029a7d7f345719330719d2eb19b6b7a63fa02797c17df16c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927496"
 ---
 # <a name="pointer-attributes-applied-to-the-parameter"></a>Attributi del puntatore applicati al parametro
 
-Ogni attributo del puntatore ( \[ [ref](/windows/desktop/Midl/ref) \] , \[ [Unique](/windows/desktop/Midl/unique) \] e \[ [ptr](/windows/desktop/Midl/ptr) \] ) presenta caratteristiche che influiscono sull'allocazione di memoria. Nella tabella seguente sono riepilogate queste caratteristiche.
+Ogni attributo del puntatore ( \[ [ref](/windows/desktop/Midl/ref) \] , \[ [unique](/windows/desktop/Midl/unique) \] e \[ [ptr](/windows/desktop/Midl/ptr)) ha caratteristiche che \] influiscono sull'allocazione di memoria. Nella tabella seguente vengono riepilogate queste caratteristiche.
 
 
 
-| Puntatore (attributo)       | Client                                                                                                                                                                                                            | Server                                                              |
+| Attributo puntatore       | Client                                                                                                                                                                                                            | Server                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Riferimento ( \[ **ref** \] ) | L'applicazione client deve allocare.                                                                                                                                                                                 | Gestione speciale necessaria per i puntatori a **\[ \] livello di nontop**. |
-| Univoco ( \[ **univoco** \] ) | Se un parametro, l'applicazione client deve allocare; Se incorporato, può essere null. Se si modifica da null a non null, lo stub client viene allocato; la modifica da un valore diverso da null a null può causare l'isolamento.<br/> |                                                                     |
-| Completo ( \[ **ptr** \] )      | Se un parametro, l'applicazione client deve allocare; Se incorporato, può essere null. Se si modifica da null a non null, lo stub client viene allocato; la modifica da un valore diverso da null a null può causare l'isolamento.<br/> |                                                                     |
+| Reference ( \[ **ref** \] ) | L'applicazione client deve allocare.                                                                                                                                                                                 | Gestione speciale necessaria per **\[ i puntatori \]** di livello non superiore out. |
+| Univoco ( \[ **univoco** \] ) | Se un parametro, l'applicazione client deve allocare; se incorporato, può essere Null. La modifica da Null a non Null comporta l'allocazione dello stub del client. La modifica da non Null a Null può causare l'orfano.<br/> |                                                                     |
+| Full ( \[ **ptr** \] )      | Se un parametro, l'applicazione client deve allocare; se incorporato, può essere Null. La modifica da Null a non Null comporta l'allocazione dello stub del client. La modifica da non Null a Null può causare l'orfano.<br/> |                                                                     |
 
 
 
  
 
-L'attributo **\[ ref \]** indica che il puntatore punta alla memoria valida. Per definizione, l'applicazione client deve allocare tutta la memoria necessaria per i puntatori di riferimento.
+**\[ L'attributo ref \]** indica che il puntatore punta alla memoria valida. Per definizione, l'applicazione client deve allocare tutta la memoria richiesta dai puntatori di riferimento.
 
-Il puntatore univoco può variare da null a non null. Se il puntatore univoco passa da null a non null, viene allocata una nuova memoria nel client. Se il puntatore univoco passa da un valore diverso da null a un valore null, è possibile che venga generato un orfano. Per ulteriori informazioni, vedere [orfano di memoria](memory-orphaning.md).
+Il puntatore univoco può passare da Null a non Null. Se il puntatore univoco cambia da Null a non Null, nel client viene allocata nuova memoria. Se il puntatore univoco cambia da non Null a Null, può verificarsi l'orfano. Per altre informazioni, vedere [Orfano della memoria.](memory-orphaning.md)
 
  
 

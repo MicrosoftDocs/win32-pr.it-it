@@ -1,21 +1,21 @@
 ---
-description: Informazioni sull'elemento JobPrimaryCoverBackSource, che specifica l'origine per un foglio primario di copertura posteriore personalizzato per il processo.
+description: Informazioni sull'elemento JobPrimaryCoverBackSource, che specifica l'origine per un foglio principale di copertura posteriore personalizzato per il processo.
 ms.assetid: b5c8e79c-cdae-4c53-b594-915726423b4f
 title: JobPrimaryCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74ed9bbc1b49e230eabc3fd7f45773a73401e058
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 70ac990caca0f10e03f33eda9971ad967c1c7192ae07a1326675f66880c27857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118471683"
 ---
 # <a name="jobprimarycoverbacksource"></a>JobPrimaryCoverBackSource
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Specifica l'origine per un foglio primario di copertura posteriore personalizzato per il processo.
+Specifica l'origine per un foglio principale di copertura posteriore personalizzato per il processo.
 
 -   [Informazioni sull'elemento](#element-information)
 -   [Contenuto della struttura](#structure-content)
@@ -73,8 +73,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

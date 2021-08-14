@@ -1,19 +1,19 @@
 ---
-description: Curve ellittiche abilitate in Windows 10 versioni 1507 e 1511.
-title: Curve di TLS ellittiche in Windows 10 versione 1507 e 1511
+description: Le curve ellittiche abilitate nelle Windows 10 1507 e 1511.
+title: Curve ellittiche TLS nelle Windows 10 1507 e 1511
 ms.topic: article
 ms.keywords: ecc curves, elliptic curves, tls elliptic curves, ECC curves, schannel, ECC, EC, Elliptic Curve Cryptography
 ms.date: 06/10/2020
-ms.openlocfilehash: c38d1014433e1274d8dff52be09d59761d3b1761
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91dfc7dac8f45b9c4f2231f6db93e776c75544373199170146f55362f02f2be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915866"
 ---
-# <a name="tls-elliptic-curves-in-windows-10-version-1507-and-1511"></a>Curve di TLS ellittiche in Windows 10 versione 1507 e 1511
+# <a name="tls-elliptic-curves-in-windows-10-version-1507-and-1511"></a>Curve ellittiche TLS nelle Windows 10 1507 e 1511
 
-Per Windows 10, versioni 1507 e 1511, le seguenti curve ellittiche sono abilitate e in questo ordine di priorità per impostazione predefinita viene usato il provider Microsoft Schannel:
+Per Windows 10, versioni 1507 e 1511, le curve ellittiche seguenti sono abilitate e in questo ordine di priorità per impostazione predefinita tramite il provider Microsoft Schannel:
 
 | Stringa a curva ellittica | Disponibile in modalità FIPS |
 |-------------|--------------|
@@ -21,7 +21,7 @@ Per Windows 10, versioni 1507 e 1511, le seguenti curve ellittiche sono abilitat
 | NistP384 | Sì |
 
 
-Le seguenti curve ellittiche sono supportate dal provider Microsoft Schannel, ma non sono abilitate per impostazione predefinita:
+Le curve ellittiche seguenti sono supportate dal provider Microsoft Schannel, ma non sono abilitate per impostazione predefinita:
 
 | Stringa a curva ellittica | Disponibile in modalità FIPS |
 |-------------|--------------|
@@ -43,24 +43,24 @@ Le seguenti curve ellittiche sono supportate dal provider Microsoft Schannel, ma
 | secP384r1 | No |
 | secP521r1 | No |
 
-## <a name="enabling-elliptic-curves"></a>Abilitazione di curve ellittiche
+## <a name="enabling-elliptic-curves"></a>Abilitazione delle curve ellittiche
 
-Per aggiungere curve ellittiche, distribuire un criterio di gruppo o usare i cmdlet di TLS:
-- Per usare criteri di gruppo, [configurare l'ordine di curva ecc](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order) in configurazione Computer > modelli amministrativi > rete > impostazioni di configurazione SSL con l'elenco di priorità per tutte le curve ellittiche che si vuole abilitare.
+Per aggiungere curve ellittiche, distribuire criteri di gruppo o usare i cmdlet TLS:
+- Per usare Criteri di gruppo, configurare [ECC Curve Order](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order) in Configurazione computer > Modelli amministrativi > Rete > Ssl Configuration Impostazioni con l'elenco di priorità per tutte le curve ellittiche che si desidera sia abilitato.
 
-- Per usare PowerShell, vedere [cmdlet TLS](/powershell/module/tls) per un elenco completo della sintassi e delle descrizioni dei cmdlet TLS.
+- Per usare PowerShell, vedere [Cmdlet TLS per](/powershell/module/tls) un elenco completo della sintassi e delle descrizioni dei cmdlet TLS.
 
 
 > [!NOTE]
-> Prima di Windows 10, le stringhe del pacchetto di crittografia venivano aggiunte con la curva ellittica per determinare la priorità della curva. Windows 10 supporta un'impostazione dell'ordine di priorità a curva ellittica, quindi il suffisso della curva ellittica non è obbligatorio e viene sostituito dal nuovo ordine di priorità della curva ellittica, se specificato, per consentire alle organizzazioni di utilizzare criteri di gruppo per configurare versioni diverse di Windows con gli stessi pacchetti di crittografia.
+> Prima di Windows 10, le stringhe del gruppo di crittografia venivano aggiunte con la curva ellittica per determinare la priorità della curva. Windows 10 supporta un'impostazione dell'ordine di priorità a curva ellittica in modo che il suffisso a curva ellittica non sia obbligatorio e venga sostituito dal nuovo ordine di priorità a curva ellittica, se specificato, per consentire alle organizzazioni di usare Criteri di gruppo per configurare versioni diverse di Windows con gli stessi pacchetti di crittografia.
 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione dell'ordine delle curve TLS ECC](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order)
+[Configurazione dell'ordine delle curve ECC TLS](/windows-server/security/tls/manage-tls#configuring-tls-ecc-curve-order)
 
-[Gestione dell'ordine di TLS](/windows-server/security/tls/manage-tls#managing-tls-ecc-order)
+[Gestione dell'ordine ECC TLS](/windows-server/security/tls/manage-tls#managing-tls-ecc-order)
 
-[Gestione delle curve ECC di Windows con Criteri di gruppo](/windows-server/security/tls/manage-tls#managing-windows-ecc-curves-using-group-policy)
+[Gestione Windows curve ECC tramite Criteri di gruppo](/windows-server/security/tls/manage-tls#managing-windows-ecc-curves-using-group-policy)
 
 [Cmdlet TLS](/powershell/module/tls)

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e5f5a6e842dc9906ce98e34d45698737234562f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f6d94462b4bdd462e940cf825251098aef82b04b4921512e4213ced003c8a6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119358277"
 ---
 # <a name="jet_unicodeindextostring-method"></a>JET_UNICODEINDEX. Metodo ToString
 
-Generare una rappresentazione di stringa dell'istanza.
+Generare una rappresentazione di stringa dell'istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Struttura sotto forma di stringa.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Struttura come stringa.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_UNICODEINDEX](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX classe](./jet-unicodeindex-class.md)
 
-[Membri JET_UNICODEINDEX](./jet-unicodeindex-members.md)
+[JET_UNICODEINDEX membri](./jet-unicodeindex-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

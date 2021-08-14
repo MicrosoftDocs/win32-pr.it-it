@@ -1,7 +1,7 @@
 ---
 description: Restituisce un codice FVF (Flexible Vertex Format) da un dichiaratore.
 ms.assetid: 4f30087e-0042-44bc-a7a5-5386b18fcad7
-title: Funzione D3DXFVFFromDeclarator (D3DX9Mesh. h)
+title: Funzione D3DXFVFFromDeclarator (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fdaf6f80340a08562ed644ee44ac92c42874d149
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f9bad9968a52fb6c3b11de96936f48e432bd038e172318cb52f21fad4b08ae2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525648"
 ---
-# <a name="d3dxfvffromdeclarator-function"></a>D3DXFVFFromDeclarator (funzione)
+# <a name="d3dxfvffromdeclarator-function"></a>Funzione D3DXFVFFromDeclarator
 
 Restituisce un codice FVF (Flexible Vertex Format) da un dichiaratore.
 
@@ -41,21 +41,21 @@ HRESULT D3DXFVFFromDeclarator(
 
 <dl> <dt>
 
-*pDeclaration* \[ in\]
+*pDeclaration* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**LPD3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , che descrive il codice FVF.
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrivono il codice FVF.
 
 </dd> <dt>
 
-*pFVF* \[ out\]
+*pFVF* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore a un valore DWORD che rappresenta la combinazione restituita di [D3DFVF](d3dfvf.md) che descrive il formato del vertice restituito dal dichiaratore.
+Puntatore a un valore DWORD, che rappresenta la combinazione restituita di [D3DFVF](d3dfvf.md) che descrive il formato dei vertici restituito dal dichiaratore.
 
 </dd> </dl>
 
@@ -75,8 +75,8 @@ Questa funzione avrà esito negativo per qualsiasi dichiaratore che non esegue i
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

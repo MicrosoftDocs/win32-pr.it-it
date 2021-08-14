@@ -1,7 +1,7 @@
 ---
-description: Statistiche delle risorse raccolte da D3DDEVINFO \_ ResourceManager quando si usa il meccanismo di query asincrono.
+description: Statistiche sulle risorse raccolte dal ResourceManager D3DDEVINFO \_ quando si usa il meccanismo di query asincrono.
 ms.assetid: f4d9c6db-4002-439c-9a88-485763badc82
-title: Struttura D3DRESOURCESTATS (D3D9Types. h)
+title: Struttura D3DRESOURCESTATS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f6f549011b9750f69187c0e0cbf34ec94764c9ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc992c5b8246ce302cda8924b8521c923575c8914c83b35c8c1e789e4bc1c826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527473"
 ---
 # <a name="d3dresourcestats-structure"></a>Struttura D3DRESOURCESTATS
 
-Statistiche delle risorse raccolte da [**D3DDEVINFO \_ ResourceManager**](d3ddevinfo-resourcemanager.md) quando si usa il meccanismo di query asincrono.
+Statistiche sulle risorse raccolte dal [**\_ ResourceManager D3DDEVINFO**](d3ddevinfo-resourcemanager.md) quando si usa il meccanismo di query asincrono.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,11 +52,11 @@ typedef struct D3DRESOURCESTATS {
 **bThrashing**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indica se il thrashing si sta verificando.
+Indica se è in corso la thrashing.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di oggetti rimossi.
+Numero di oggetti che sono stati sgomberati.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Priorità dell'ultimo oggetto eliminato.
+Priorità dell'ultimo oggetto che è stato sgomberato.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di oggetti impostati sul dispositivo, che si trovano già nella memoria del video.
+Numero di oggetti impostati sul dispositivo, che sono già presenti nella memoria video.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Numero totale di byte di oggetti gestiti.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

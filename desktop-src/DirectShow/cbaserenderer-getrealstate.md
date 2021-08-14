@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetRealState recupera lo stato del filtro.
 ms.assetid: d31c5c0b-6220-4d2e-a81a-d16b7d513c87
-title: Metodo CBaseRenderer. GetRealState (Renbase. h)
+title: Metodo CBaseRenderer.GetRealState (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40f2e49137a4324b14f25e4abb9b14cb919efbb9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c65ac4310abddc619296776981040cc5e1e6c5ad48ce37ea24210bc5a85d94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403420"
 ---
-# <a name="cbaserenderergetrealstate-method"></a>CBaseRenderer. GetRealState, metodo
+# <a name="cbaserenderergetrealstate-method"></a>Metodo CBaseRenderer.GetRealState
 
 Il `GetRealState` metodo recupera lo stato del filtro.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore dello [**\_ stato CBaseFilter:: m**](cbasefilter-m-state.md). Il valore è un membro del tipo enumerato [**\_ stato filtro**](/windows/win32/api/strmif/ne-strmif-filter_state) .
+Restituisce il valore di [**CBaseFilter::m \_ State**](cbasefilter-m-state.md). Il valore è un membro del [**tipo enumerato FILTER \_ STATE.**](/windows/win32/api/strmif/ne-strmif-filter_state)
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo fornisce un'alternativa più semplice al metodo [**CBaseRenderer:: GetState**](cbaserenderer-getstate.md) , per uso interno.
+Questo metodo offre un'alternativa più semplice al [**metodo CBaseRenderer::GetState,**](cbaserenderer-getstate.md) per uso interno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo fornisce un'alternativa più semplice al metodo [**CBaseRenderer::
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

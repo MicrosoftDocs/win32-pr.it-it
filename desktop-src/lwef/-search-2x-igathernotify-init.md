@@ -1,11 +1,11 @@
 ---
-title: Metodo IGatherNotify init (deprecated)
-description: Questo argomento dell'interfaccia di ricerca desktop di Windows è deprecato e viene sostituito dall'API di ricerca di Windows ISearchPersistentItemsChangedSink nel Windows SDK. | Metodo IGatherNotify init (deprecated)
+title: Metodo IGatherNotify Init (deprecato)
+description: Questo Windows dell'interfaccia di Desktop Search è deprecato e viene sostituito dall'API ISearchPersistentItemsChangedSink di Windows Search nell'SDK Windows. | Metodo IGatherNotify Init (deprecato)
 ms.assetid: 6a5f89eb-10f4-4262-89bf-b47e345f12eb
 keywords:
-- Metodo Init (deprecated) ambiente Windows legacy
-- Metodo Init (deprecated) Windows legacy environment features, interfaccia IGatherNotify
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IGatherNotify, metodo init (deprecated)
+- Metodo Init (deprecato) Legacy Windows Environment Features
+- Metodo Init (deprecato) Legacy Windows Environment Features , interfaccia IGatherNotify
+- Interfaccia IGatherNotify Legacy Windows environment features , Metodo Init (deprecato)
 topic_type:
 - apiref
 api_name:
@@ -15,20 +15,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81379bb4a9a7c6099912bfc9ebca170141d76cd2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: db5666197524afb454927036cdd68375dfb2937197ed211646b63d80a09e5b12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359301"
 ---
-# <a name="igathernotifyinit-deprecated-method"></a>Metodo IGatherNotify:: init (deprecated)
+# <a name="igathernotifyinit-deprecated-method"></a>Metodo IGatherNotify::Init (deprecato)
 
 \[**Init** può essere modificato o non disponibile nelle versioni successive del sistema operativo o del prodotto.\]
 
-Questo argomento dell'interfaccia di ricerca desktop di Windows è deprecato e viene sostituito dall'API di ricerca di Windows [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) nel Windows SDK.
+Questo Windows'interfaccia di Desktop Search è deprecato e viene sostituito dall'API [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) di Windows Search nell'SDK Windows.
 
-Inizializza l'interfaccia del Gatherer. Consente inoltre di specificare l'indice da notificare e l'archivio applicazioni da monitorare.
+Inizializza l'interfaccia Gatherer. Specifica anche l'indice da notificare e l'archivio applicazioni da monitorare.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ void Init (Deprecated)(
 
 <dl> <dt>
 
-*bstrApplication* \[ in\]
+*bstrApplication* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -56,19 +56,19 @@ Stringa che specifica l'applicazione di destinazione.
 
 </dd> <dt>
 
-*bstrProject* \[ in\]
+*bstrProject* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Stringa che specifica il nome dell'indicizzatore a cui passare le informazioni del Gatherer.
+Stringa che specifica il nome dell'indicizzatore a cui passare le informazioni sul gatherer.
 
 </dd> <dt>
 
-*varScopesBstrArray* \[ in\]
+*varScopesBstrArray* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **variante**
 
 Parametro facoltativo che consente di passare una matrice di ambiti da inizializzare.
 
@@ -80,7 +80,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Inizializzare con Application = "RSApp", Project = "SetIndex".
+Inizializzare con application="RSApp", Project="MyIndex".
 
  
 

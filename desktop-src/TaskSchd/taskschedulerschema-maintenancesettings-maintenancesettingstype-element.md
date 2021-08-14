@@ -1,9 +1,9 @@
 ---
 title: Elemento MaintenanceSettings (maintenanceSettingsType)
-description: Specifica il modo in cui il Utilità di pianificazione esegue le attività durante la manutenzione automatica.
+description: Specifica il modo in cui Utilità di pianificazione attività durante la manutenzione automatica.
 ms.assetid: 6A204980-851D-4487-A6CC-01BE262A517A
 keywords:
-- Utilità di pianificazione elemento MaintenanceSettings
+- Elemento MaintenanceSettings Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca68876d8742ea04faa972d2ea7fd5f4b2071ffc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5724a5dff942377af783970e5d011e8f8a1ce9123039112917a3f652372495d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119309341"
 ---
 # <a name="maintenancesettings-maintenancesettingstype-element"></a>Elemento MaintenanceSettings (maintenanceSettingsType)
 
-Specifica il modo in cui il Utilità di pianificazione esegue le attività durante la manutenzione automatica.
+Specifica il modo in cui Utilità di pianificazione attività durante la manutenzione automatica.
 
 ``` syntax
 <xs:element name="MaintenanceSettings"
@@ -31,7 +31,7 @@ Specifica il modo in cui il Utilità di pianificazione esegue le attività duran
  />
 ```
 
-L'elemento **MaintenanceSettings** è definito dal tipo complesso [**maintenanceSettingsType**](taskschedulerschema-maintenancesettingstype-complextype.md) .
+**L'elemento MaintenanceSettings** è definito dal tipo complesso [**maintenanceSettingsType.**](taskschedulerschema-maintenancesettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -49,19 +49,19 @@ L'elemento **MaintenanceSettings** è definito dal tipo complesso [**maintenance
 
 | Elemento                                                    | Tipo    | Descrizione                                                                                                                                                                                     |
 |------------------------------------------------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Scadenza**](taskschedulerschema-deadline-element.md)   |         | Specifica il periodo di tempo dopo il quale l'utilità di pianificazione tenterà di avviare l'attività durante la manutenzione automatica di emergenza, se non è stata completata durante la normale manutenzione. <br/> |
-| [**Esclusivo**](taskschedulerschema-exclusive-element.md) | boolean | Se è impostato su true, l'attività verrà avviata esclusivamente tra le altre attività di manutenzione. <br/>                                                                                                 |
+| [**Scadenza**](taskschedulerschema-deadline-element.md)   |         | Specifica l'intervallo di tempo dopo il quale l'Utilità di pianificazione tenterà di avviare l'attività durante la manutenzione automatica di emergenza, se non è stato possibile completarla durante la manutenzione regolare. <br/> |
+| [**Esclusivo**](taskschedulerschema-exclusive-element.md) | boolean | Se impostato su true, l'attività verrà avviata esclusivamente tra le altre attività di manutenzione. <br/>                                                                                                 |
 | [**Periodo**](taskschedulerschema-period-element.md)       |         | Specifica la frequenza con cui l'attività deve essere avviata durante la manutenzione automatica. <br/>                                                                                                      |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per la programmazione in C++, questa impostazione di inattività viene specificata tramite la proprietà [**ITaskSettings3:: MaintenanceSettings**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings) .
+Per la programmazione C++, questa impostazione di inattività viene specificata usando la [**proprietà ITaskSettings3::MaintenanceSettings.**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che indica Utilità di pianificazione eseguire un'attività una volta in 5 giorni durante la manutenzione automatica normale e se non riesce per 15 giorni, avviare il tentativo di esecuzione dell'attività durante la manutenzione automatica di emergenza.
+Nel codice XML seguente viene definito un elemento settings che indica a Utilità di pianificazione di eseguire l'attività una volta ogni 5 giorni durante la normale manutenzione automatica e, in caso di esito negativo per 15 giorni, avviare il tentativo di eseguire l'attività durante la manutenzione automatica di emergenza.
 
 
 ```XML
@@ -81,8 +81,8 @@ Nel codice XML seguente viene definito un elemento Settings che indica Utilità 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/> |
 
 
 
@@ -90,7 +90,7 @@ Nel codice XML seguente viene definito un elemento Settings che indica Utilità 
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

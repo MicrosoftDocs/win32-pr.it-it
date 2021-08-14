@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4f0b652530167c71fbea7bc23d27434ae458f9b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6198d31a53dbd7d30100a8df56536cf0336c9c1e7ca5b78ad4e9e73e40da13cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913987"
 ---
 # <a name="defining-groups-of-users-in-script"></a>Definizione di gruppi di utenti nello script
 
-In Gestione autorizzazioni, un oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati a questo gruppo di utenti collettivamente. Un oggetto **IAzApplicationGroup** può includere anche altri oggetti **IAzApplicationGroup** come membri. Per ulteriori informazioni sui gruppi di applicazioni, vedere [utenti e gruppi](users-and-groups.md).
+In Gestione autorizzazioni un [**oggetto IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) rappresenta un gruppo di utenti. I ruoli possono quindi essere assegnati a questo gruppo di utenti collettivamente. Un **oggetto IAzApplicationGroup** può includere anche altri **oggetti IAzApplicationGroup** come membri. Per altre informazioni sui gruppi di applicazioni, vedere [Utenti e gruppi](users-and-groups.md).
 
-Un gruppo può essere definito da elenchi espliciti di membri e non membri o da una query LDAP ( [*Lightweight Directory Access Protocol*](/windows/desktop/SecGloss/l-gly) ). Negli esempi seguenti viene illustrato come creare ogni tipo di gruppo di applicazioni:
+Un gruppo può essere definito da elenchi espliciti di membri e non membri o da una query [*Lightweight Directory Access Protocol*](/windows/desktop/SecGloss/l-gly) (LDAP). Gli esempi seguenti illustrano come creare ogni tipo di gruppo di applicazioni:
 
 -   [Creazione di un gruppo di base](#creating-a-basic-group)
 -   [Creazione di un gruppo di query LDAP](#creating-an-ldap-query-group)
 
 ## <a name="creating-a-basic-group"></a>Creazione di un gruppo di base
 
-Un gruppo di applicazioni di base viene definito dai membri inclusi nelle proprietà [**membri**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members) e non [**membri**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers) dell'oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) che rappresenta il gruppo. Gli utenti e i gruppi elencati nella proprietà **membri** sono inclusi nel gruppo di applicazioni e gli utenti e i gruppi elencati nella proprietà non **membri** vengono esclusi dal gruppo di applicazioni. L'elenco nella proprietà non **Members** sostituisce l'elenco nella proprietà **Members** .
+Un gruppo di applicazioni di base viene definito dai membri inclusi nelle proprietà [**Members**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members) e [**NonMembers**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers) dell'oggetto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) che rappresenta il gruppo. Gli utenti e i gruppi elencati nella proprietà **Members** sono inclusi nel gruppo di applicazioni e gli utenti e i gruppi elencati nella proprietà **NonMembers** vengono esclusi dal gruppo di applicazioni. L'elenco **nella proprietà NonMembers** sostituisce l'elenco nella **proprietà** Members.
 
-Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni di base e come aggiungere tutti gli utenti locali come membri del gruppo. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+L'esempio seguente illustra come creare un gruppo di applicazioni di base e aggiungere tutti gli utenti locali come membri di tale gruppo. L'esempio presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```VB
@@ -59,9 +59,9 @@ appGroup.Submit
 
 ## <a name="creating-an-ldap-query-group"></a>Creazione di un gruppo di query LDAP
 
-Un gruppo di query LDAP ha un'appartenenza definita dalla query contenuta nel valore della relativa proprietà [**LdapQuery**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery) .
+Un gruppo di query LDAP ha un'appartenenza definita dalla query contenuta nel valore della relativa [**proprietà LdapQuery.**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)
 
-Nell'esempio seguente viene illustrato come creare un gruppo di applicazioni di query LDAP e come aggiungere tutti gli utenti come membri di tale gruppo. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+L'esempio seguente illustra come creare un gruppo di applicazioni di query LDAP e aggiungere tutti gli utenti come membri di tale gruppo. L'esempio presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```VB

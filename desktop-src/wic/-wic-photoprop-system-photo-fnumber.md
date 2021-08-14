@@ -1,21 +1,21 @@
 ---
-description: Criteri dei metadati della foto per la proprietà System.Photo.FNumber.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.FNumber.
 ms.assetid: 434d52cb-c98d-4860-87f7-4aedab7f8188
 title: Criteri metadati foto System.Photo.FNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85443b849d9f810709f3e75c3082738e5377092f
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c90ad29c4dc6211f66df8621cfb589c2947f08dbb9f0b4f0fe03196c23909a2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204811"
 ---
 # <a name="systemphotofnumber-photo-metadata-policy"></a>Criteri metadati foto System.Photo.FNumber
 
-Criteri dei metadati della foto per [la proprietà System.Photo.FNumber.](../properties/props-system-photo-fnumber.md)
+Criteri dei metadati delle foto per [la proprietà System.Photo.FNumber.](../properties/props-system-photo-fnumber.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ FNumber
 
@@ -41,7 +41,7 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
 
 
-| Ordine | Percorso                          | Formato disco |
+| JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
 | 1     | /app1/ifd/exif/{ushort=33437} |             |
 | 2     | /xmp/exif:FNumber             |             |
@@ -54,17 +54,17 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
 
 
-| Ordine | Percorso                          | Formato disco |
+| JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
 | 1     | /app1/ifd/exif/{ushort=33437} |             |
 | 2     | /xmp/exif:FNumber             |             | 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 
-| Ordine | Percorso                          |
+| JSON | Percorso                          |
 |-------|-------------------------------|
 | 1     | /app1/ifd/exif/{ushort=33437} |
 | 2     | /xmp/exif:fnumber             |
@@ -79,7 +79,7 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
 
 
-| Ordine | Percorso                     | Formato disco |
+| JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
 | 1     | /ifd/exif/{ushort=33437} |             |
 | 2     | /ifd/xmp/exif:FNumber    |             |
@@ -92,7 +92,7 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
 
 
-| Ordine | Percorso                     | Formato disco |
+| JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
 | 1     | /ifd/exif/{ushort=33437} |             |
 | 2     | /ifd/xmp/exif:FNumber    |             |
@@ -101,11 +101,11 @@ Questo valore viene generato da System.Photo.FNumberNumerator e System.Photo.FNu
 
  
 
-### <a name="remove-paths"></a>Rimuovere i percorsi
+### <a name="remove-paths"></a>Rimuovi percorsi
 
 
 
-| Ordine | Percorso                     |
+| JSON | Percorso                     |
 |-------|--------------------------|
 | 1     | /ifd/exif/{ushort=33437} |
 | 2     | /ifd/xmp/exif:fnumber    |

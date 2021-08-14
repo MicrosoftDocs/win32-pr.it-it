@@ -1,9 +1,9 @@
 ---
-title: /enum_class opzione
-description: L' \_ opzione della classe/enum consente l'uso del costrutto della classe enum C++.
+title: Opzione /enum_class
+description: L'opzione /enum \_ class consente l'uso del costrutto di classe enum C++.
 ms.assetid: 801C00DF-6798-4650-9141-56B89C9241E4
 keywords:
-- /enum_class switch MIDL
+- Opzione /enum_class MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6c61affceacbe11707c57ac11f17d4027901d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8bae465e1e47802b2b6ba961586bf8f09eb255fdcbe238d666ceeee26808b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385768"
 ---
-# <a name="enum_class-switch"></a>/enum ( \_ opzione della classe)
+# <a name="enum_class-switch"></a>Opzione della classe /enum \_
 
-L'opzione della **\_ classe/enum** consente l'uso del costrutto della classe **enum** C++.
+**L'opzione /enum \_ class** consente l'uso del costrutto di classe **enum** C++.
 
 ``` syntax
 midlrt /enum_class 
@@ -35,7 +35,7 @@ Questa opzione non ha parametri.
 
 ## <a name="examples"></a>Esempi
 
-**Classe midlrt/enum \_**
+**Classe midlrt \_ /enum**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Questa opzione non ha parametri.
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

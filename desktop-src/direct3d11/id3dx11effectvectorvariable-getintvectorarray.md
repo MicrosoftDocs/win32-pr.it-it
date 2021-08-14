@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVectorVariable GetIntVectorArray (D3dx11effect. h)
-description: Ottenere una matrice di vettori a quattro componenti che contengono dati di tipo Integer.
+title: Metodo ID3DX11EffectVectorVariable GetIntVectorArray (D3dx11effect.h)
+description: Ottiene una matrice di vettori a quattro componenti che contengono dati integer.
 ms.assetid: cabc3bb1-8b65-455a-af84-f96219f7cfb5
 keywords:
 - Metodo GetIntVectorArray Direct3D 11
 - Metodo GetIntVectorArray Direct3D 11, interfaccia ID3DX11EffectVectorVariable
-- Interfaccia ID3DX11EffectVectorVariable Direct3D 11, metodo GetIntVectorArray
+- INTERFACCIA ID3DX11EffectVectorVariable Direct3D 11, metodo GetIntVectorArray
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 024db61b559d74c6453c6838795d5785ca7a0eec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 813f8cb952e8dc82f7cd3bd9eecce18029947ece9e607121c18b9570f25d5cbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104355474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045789"
 ---
-# <a name="id3dx11effectvectorvariablegetintvectorarray-method"></a>Metodo ID3DX11EffectVectorVariable:: GetIntVectorArray
+# <a name="id3dx11effectvectorvariablegetintvectorarray-method"></a>Metodo ID3DX11EffectVectorVariable::GetIntVectorArray
 
-Ottenere una matrice di vettori a quattro componenti che contengono dati di tipo Integer.
+Ottiene una matrice di vettori a quattro componenti che contengono dati integer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,18 +57,18 @@ Puntatore all'inizio dei dati da impostare.
 *Offset* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Deve essere impostato su 0; Questa operazione è riservata per un utilizzo futuro.
+Deve essere impostato su 0. è riservato per un uso futuro.
 
 </dd> <dt>
 
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Numero di elementi di matrice da impostare.
+Numero di elementi della matrice da impostare.
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ Numero di elementi di matrice da impostare.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Restituisce uno dei codici [restituiti Direct3D 11 seguenti.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -91,8 +91,8 @@ Restituisce uno dei seguenti [codici restituiti Direct3D 11](d3d11-graphics-refe
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

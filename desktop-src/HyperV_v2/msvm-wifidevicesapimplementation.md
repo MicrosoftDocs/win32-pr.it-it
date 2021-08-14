@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 99826ce3a37e19867cef1a6ddf276f5136b21a3d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31200fc05e87a15b00463903a21a4e1822df50d9f286162ee75e7bbe4da0daa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980421"
 ---
 # <a name="msvm_wifidevicesapimplementation-class"></a>Classe Msvm \_ WiFiDeviceSAPImplementation
 
@@ -79,7 +79,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappresenta il punto di accesso del servizio implementato tramite il dispositivo logico.
+Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappresenta il punto di accesso del servizio implementato usando il dispositivo logico.
 
 </dd> </dl>
 
@@ -89,9 +89,9 @@ Istanza della classe [**Msvm \_ WiFiEndpoint**](msvm-wifiendpoint.md) che rappre
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8 solo \[ app desktop\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2012 \[\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

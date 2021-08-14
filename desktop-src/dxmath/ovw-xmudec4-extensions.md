@@ -1,19 +1,19 @@
 ---
-description: XMUDEC4describes un vettore 4D con i componenti x, y e z rappresentati come valori di Unsigned Integer a 10 bit e il componente w come valore di Unsigned Integer a 2 bit.
+description: XMUDEC4describes a 4D vector with x-,y-, and z- components represented as 10 bit unsigned integer values, and the w-component as a 2 bit unsigned integer value.
 ms.assetid: 9861c484-b80d-41a6-a938-322fd8cafdad
 title: Estensioni XMUDEC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1522004c65340d445fe43672b23bc193e51a8a60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4b280423f920b74674339647771d81919d0932ab9109e0ae63f193749208160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500898"
 ---
 # <a name="xmudec4-extensions"></a>Estensioni XMUDEC4
 
-[**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)descrive un vettore 4D con i componenti x, y e z rappresentati come valori Unsigned Integer a 10 bit e il componente w come valore Unsigned Integer a 2 bit.
+[**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4)descrive un vettore 4D con componenti x-, y-e z- rappresentati come valori interi senza segno a 10 bit e il componente w come valore intero senza segno a 2 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

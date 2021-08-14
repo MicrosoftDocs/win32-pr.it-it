@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_TOOLTIPSCREATED (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo che il controllo ha creato un controllo ToolTip. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_TOOLTIPSCREATED di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo che il controllo ha creato un controllo descrizione comando. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 8108f084-212d-4a16-b604-1ec134b1bb43
 keywords:
-- Controlli di Windows per il codice di notifica NM_TOOLTIPSCREATED
+- NM_TOOLTIPSCREATED del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e2e99850b17b0f2b06948a09b70a89e67e65a50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 35006c7c7f4cc66cc9ce5e387a362f423db43b6b7aab914d26360dd08d13b37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410314"
 ---
-# <a name="nm_tooltipscreated-notification-code"></a>\_Codice di notifica TOOLTIPSCREATED Nm
+# <a name="nm_tooltipscreated-notification-code"></a>NM TOOLTIPSCREATED notification code (CODICE di notifica NM \_ TOOLTIPSCREATED)
 
-Notifica alla finestra padre di un controllo che il controllo ha creato un controllo ToolTip. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo che il controllo ha creato un controllo descrizione comando. Questo codice di notifica viene inviato sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_TOOLTIPSCREATED
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTOOLTIPSCREATED**](/windows/win32/api/commctrl/ns-commctrl-nmtooltipscreated) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a una [**struttura NMTOOLTIPSCREATED**](/windows/win32/api/commctrl/ns-commctrl-nmtooltipscreated) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se non diversamente specificato, il controllo Ignora il valore restituito da questo codice di notifica.
+Se non diversamente specificato, il controllo ignora il valore restituito da questo codice di notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Se non diversamente specificato, il controllo Ignora il valore restituito da que
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

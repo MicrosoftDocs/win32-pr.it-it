@@ -1,7 +1,7 @@
 ---
 description: Il metodo WriteBinary costruisce un comando APDU (Application Protocol Data Unit) che scrive valori binari in un file elementare.
 ms.assetid: e38273d5-4eb0-4c0b-829a-c78e511a38bc
-title: 'Metodo ISCardISO7816:: WriteBinary (scardssp. h)'
+title: Metodo ISCardISO7816::WriteBinary (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,26 +13,26 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 330e817bc501c451026589087991fb43c0b5ac57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 198a8eedc38636f60886af251c8520ef4726f362958c13a25fc3bf32653d7c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118922920"
 ---
-# <a name="iscardiso7816writebinary-method"></a>Metodo ISCardISO7816:: WriteBinary
+# <a name="iscardiso7816writebinary-method"></a>Metodo ISCardISO7816::WriteBinary
 
-\[Il metodo **WriteBinary** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo WriteBinary** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo **WriteBinary** costruisce un comando APDU ( [*Application Protocol Data Unit*](../secgloss/a-gly.md) ) che scrive valori binari in un file elementare.
+Il **metodo WriteBinary** costruisce un comando APDU [*(Application Protocol Data Unit)*](../secgloss/a-gly.md) che scrive valori binari in un file elementare.
 
 A seconda degli attributi del file, il comando esegue una delle operazioni seguenti:
 
--   L'OR logico dei bit già presenti nella scheda con i bit specificati nel comando APDU (lo stato di cancellazione logica dei bit del file è 0).
--   Il AND logico dei bit già presenti nella scheda con i bit specificati nel comando APDU (lo stato di cancellazione logica dei bit del file è 1).
--   Scrittura singola nella scheda dei bit specificati nel comando APDU.
+-   OR logico dei bit già presenti nella scheda con i bit specificati nel comando APDU (lo stato logico dei bit del file è 0).
+-   AND logico dei bit già presenti nella scheda con i bit specificati nel comando APDU (lo stato logico dei bit del file è 1).
+-   La scrittura una sola volta nella scheda dei bit dati nel comando APDU.
 
-Quando non viene specificata alcuna indicazione nel byte di codifica dei dati, viene applicato il comportamento logico OR.
+Quando non viene specificata alcuna indicazione nel byte di codifica dei dati, viene applicato il comportamento OR logico.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,33 +52,33 @@ HRESULT WriteBinary(
 
 <dl> <dt>
 
-*byP1* \[ in\]
+*byP1* \[ Pollici\]
 </dt> <dd>
 
-Offset alla posizione di scrittura dall'inizio del file binario (EF). Se B8 = 1 in P1, B7 e B6 di P1 sono impostati su zero (RFU bit), B5 a B1 di P1 sono un identificatore EF breve e P2 è l'offset del primo byte da scrivere in unità dati dall'inizio del file. Se B8 = 0 in P1, P1 \| \| P2 è l'offset del primo byte da scrivere in unità dati a partire dall'inizio del file.
+Offset nel percorso di scrittura dall'inizio del file binario (EF). Se b8=1 in P1, b7 e b6 di P1 sono impostati su zero (bit RFU), b5 a b1 di P1 sono un identificatore EF breve e P2 è l'offset del primo byte da scrivere in unità dati dall'inizio del file. Se b8=0 in P1, P1 P2 è l'offset del primo byte da scrivere in unità dati \| \| dall'inizio del file.
 
 </dd> <dt>
 
-*byP2* \[ in\]
+*byP2* \[ Pollici\]
 </dt> <dd>
 
-Offset alla posizione di scrittura dall'inizio del file binario (EF). Se B8 = 1 in P1, B7 e B6 di P1 sono impostati su zero (RFU bit), B5 a B1 di P1 sono un identificatore EF breve e P2 è l'offset del primo byte da scrivere in unità dati dall'inizio del file. Se B8 = 0 in P1, P1 \| \| P2 è l'offset del primo byte da scrivere in unità dati a partire dall'inizio del file.
+Offset nel percorso di scrittura dall'inizio del file binario (EF). Se b8=1 in P1, b7 e b6 di P1 sono impostati su zero (bit RFU), b5 a b1 di P1 sono un identificatore EF breve e P2 è l'offset del primo byte da scrivere in unità dati dall'inizio del file. Se b8=0 in P1, P1 P2 è l'offset del primo byte da scrivere in unità dati \| \| dall'inizio del file.
 
 </dd> <dt>
 
-*pData* \[ in\]
+*pData* \[ Pollici\]
 </dt> <dd>
 
 Puntatore alla stringa di unità dati da scrivere.
 
 </dd> <dt>
 
-*ppCmd* \[ in uscita\]
+*ppCmd* \[ in, out\]
 </dt> <dd>
 
-In input, un puntatore a un oggetto di interfaccia [**ISCardCmd**](iscardcmd.md) o **null**.
+Nell'input, un puntatore a un [**oggetto interfaccia ISCardCmd**](iscardcmd.md) o **NULL.**
 
-Al ritorno, viene compilato con il comando APDU creato da questa operazione. Se *ppCmd* è stato impostato su **null**, un oggetto [**ISCardCmd**](iscardcmd.md) della [*Smart Card*](../secgloss/s-gly.md) viene creato e restituito internamente tramite il puntatore *ppCmd* .
+Al ritorno, viene riempito con il comando APDU costruito da questa operazione. Se *ppCmd è* stato impostato su **NULL,** [**smart card'oggetto ISCardCmd**](iscardcmd.md) viene creato internamente e restituito tramite il *puntatore ppCmd.* [](../secgloss/s-gly.md)
 
 </dd> </dl>
 
@@ -90,10 +90,10 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                   | Descrizione                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operazione completata correttamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parametro non valido.<br/>                |
-| <dl> <dt>**\_puntatore E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria insufficiente.<br/>                    |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>     | È stato passato un puntatore non valido.<br/>      |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente.<br/>                    |
 
 
 
@@ -101,17 +101,17 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Il comando incapsulato può essere eseguito solo se lo stato di sicurezza della [*Smart Card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare elaborato.
+Il comando incapsulato può essere eseguito solo se lo stato di sicurezza del [*smart card*](../secgloss/s-gly.md) soddisfa gli attributi di sicurezza del file elementare elaborato.
 
 Quando il comando contiene un identificatore elementare breve valido, imposta il file come file elementare corrente.
 
-Quando un'operazione di scrittura binaria è stata applicata a un'unità dati di un EF di scrittura monouso, eventuali altre operazioni di scrittura che fanno riferimento a questa unità dati verranno interrotte se il contenuto dell'unità dati o l'indicatore di stato cancellato logico (se presente) collegato a questa unità dati è diverso dallo stato di cancellazione logica.
+Quando un'operazione di scrittura binaria è stata applicata a un'unità dati di un EF di scrittura singola, qualsiasi altra operazione di scrittura che fa riferimento a questa unità dati verrà interrotta se il contenuto dell'unità dati o l'indicatore di stato di cancellazione logica (se presente) collegato a questa unità dati è diverso dallo stato di cancellazione logica.
 
-Non è possibile scrivere i file elementari senza una struttura trasparente. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura trasparente.
+Non è possibile scrivere file elementari senza una struttura trasparente. Il comando incapsulato viene interrotto se applicato a un file elementare senza una struttura trasparente.
 
-Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816**](iscardiso7816.md).
+Per un elenco di tutti i metodi forniti da questa interfaccia, vedere [**ISCardISO7816.**](iscardiso7816.md)
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un codice di errore smart card se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Valori restituiti delle smart card.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -119,12 +119,12 @@ Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 è definito come 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

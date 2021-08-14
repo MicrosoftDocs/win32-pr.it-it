@@ -4,12 +4,12 @@ ms.assetid: ce7205f7-727c-4acf-a727-4dbb3cc42441
 title: Evento InkOverlay.CursorButtonUp (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f22590362c6eb9a987da94bf3adb4e99943c12cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60e94fb9c1727e0c8fce13f3696397462fdf590c076627df869dcafd177190c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220846"
 ---
 # <a name="inkoverlaycursorbuttonup-event"></a>Evento InkOverlay.CursorButtonUp
 
@@ -34,7 +34,7 @@ void CursorButtonUp(
 *Cursore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto [**interfaccia IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**CursorButtonUp.**](inkcollector-cursorbuttonup.md)
+Oggetto [**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) che ha generato l'evento [**CursorButtonUp.**](inkcollector-cursorbuttonup.md)
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

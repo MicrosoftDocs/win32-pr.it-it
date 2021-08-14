@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 19587cbaa79e2b89633560a7b7889219172d0c25
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 79145936709e43fab9b87602233225567a0067528a31036aacc11c5b425c0dfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512893"
 ---
 # <a name="ps_3_0"></a>ps \_ 3 \_ 0
 
@@ -31,7 +31,7 @@ Un'pixel shader programmabile è costituito da un set di istruzioni che operano 
 
 Aggiungere un registro viso. Aggiungere un registro di posizione. I registri colori (v ) sono ora completamente a virgola mobile e i registri delle coordinate della \# trama (t \# ) sono stati consolidati. Le dichiarazioni di input accettano i nomi di utilizzo e sono consentiti più utilizzi per i componenti di un determinato registro.
 
-## <a name="dynamic-flow-control"></a>Controllo dinamico del flusso
+## <a name="dynamic-flow-control"></a>Controllo Flow dinamico
 
 Il dispositivo supporta il controllo dinamico del flusso ([if bool - ps](if-bool---ps.md), break - [ps](break---ps.md)e break comp [- \_ ps](break-comp---ps.md)). La profondità di annidamento è compreso tra 0 e 24.
 
@@ -39,7 +39,7 @@ Il dispositivo supporta il controllo dinamico del flusso ([if bool - ps](if-bool
 
 Il numero di registri temporanei supportati è 32.
 
-## <a name="static-flow-control-nesting-depth"></a>Profondità di annidamento del controllo flusso statico
+## <a name="static-flow-control-nesting-depth"></a>Profondità Flow annidamento dei controlli statici
 
 La [chiamata - ps](call---ps.md) / [callnz](callnz-bool---ps.md)call  / [ \_ pred](callnz-pred---ps.md) può essere annidata a una profondità massima di 4. In modo indipendente, [le istruzioni loop - ps](loop---ps.md)rep - / [ps](rep---ps.md) possono essere annidate fino a una profondità massima di 4.
 
@@ -73,7 +73,7 @@ Il numero di campionatori di trama disponibili è 16.
 
 ## <a name="device-caps"></a>Tappi dispositivo
 
-Se ps \_ 3 \_ 0 è supportato, nell'hardware sono supportati almeno i limiti seguenti:
+Se ps \_ 3 \_ 0 è supportato, nell'hardware sono supportati i limiti seguenti (almeno):
 
 
 

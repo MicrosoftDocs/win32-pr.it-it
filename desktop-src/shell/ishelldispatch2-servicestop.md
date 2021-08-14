@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 651138eb687cfd83406bc6e1a7fcf520ff001171
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71bc0502d45e4092decfe1b712ed11f75a02bf50d112436ad1d21f9e02c17e72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118221022"
 ---
 # <a name="ishelldispatch2servicestop-method"></a>Metodo IShellDispatch2.ServiceStop
 
@@ -73,13 +73,13 @@ Impostare su **true per** fare in modo che il servizio sia avviato da Gestione c
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **\* Variant**
+Tipo: **\* Variante**
 
 Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **\* Variant**
+Tipo: **\* Variante**
 
 Restituisce **true se** ha esito positivo; in caso contrario, **false.**
 
@@ -93,9 +93,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di ServiceStop** per arrestare il servizio Messenger. L'utilizzo è illustrato per JScript e VBScript.
+Gli esempi seguenti illustrano l'uso **di ServiceStop** per arrestare il servizio Messenger. L'utilizzo viene visualizzato JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -138,8 +138,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

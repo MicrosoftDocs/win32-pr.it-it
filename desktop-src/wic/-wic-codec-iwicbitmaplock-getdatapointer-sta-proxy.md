@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetDataPointer.
 ms.assetid: 7256d6eb-cb7c-4067-8382-511d64da6825
-title: Funzione IWICBitmapLock_GetDataPointer_STA_Proxy
+title: IWICBitmapLock_GetDataPointer_STA_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 957ae5974d65430bd39ea41f2e094e9f9c7efb06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b693c78ba3a3d7c68c33f68ec1494997536ffb10272cc384d89d9e94ded7145b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206747"
 ---
-# <a name="iwicbitmaplock_getdatapointer_sta_proxy-function"></a>\_ \_ Funzione proxy sta IWICBitmapLock GetDataPointer \_
+# <a name="iwicbitmaplock_getdatapointer_sta_proxy-function"></a>Funzione proxy IWICBitmapLock \_ GetDataPointer \_ STA \_
 
-Funzione proxy per il metodo [**GetDataPointer**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getdatapointer) .
+Funzione proxy per il [**metodo GetDataPointer.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getdatapointer)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,28 +42,28 @@ HRESULT IWICBitmapLock_GetDataPointer_STA_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) \** _
+Tipo: **[ **IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)\***
 
-Puntatore a questo oggetto [_ *IWICBitmapLock* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) .
+Puntatore a [**questo oggetto IWICBitmapLock.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)
 
 </dd> <dt>
 
-*pcbBufferSize* \[ out\]
+*pcbBufferSize* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntatore che riceve le dimensioni del buffer.
 
 </dd> <dt>
 
-_ppbData * \[ out\]
+*ppbData* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **byte \* \***
+Tipo: **\* \* BYTE**
 
 Puntatore che riceve un puntatore al pixel superiore sinistro nel rettangolo bloccato.
 
@@ -73,7 +73,7 @@ Puntatore che riceve un puntatore al pixel superiore sinistro nel rettangolo blo
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -83,9 +83,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

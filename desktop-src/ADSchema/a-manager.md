@@ -1,11 +1,11 @@
 ---
-title: Gestore (attributo)
-description: Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utente. L'oggetto utente del Manager contiene una proprietà directReports che contiene riferimenti a tutti gli oggetti utente che hanno le proprietà Manager impostate su questo nome distinto.
+title: Attributo manager
+description: Contiene il nome distinto dell'utente che è il responsabile dell'utente. L'oggetto utente del manager contiene una proprietà directReports che contiene riferimenti a tutti gli oggetti utente con le proprietà di gestione impostate su questo nome distinto.
 ms.assetid: 40743784-a99c-4ec0-9140-9f865c073244
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo Manager
-- Schema AD dell'attributo Manager
+- Schema AD dell'attributo manager
+- Schema AD dell'attributo manager
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f42c659a436f9798861f5c37df19f8d10db91127
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e87b17f3252963e03c86b5b25a3651606a004afe672f1c8ec07f419ddff3a826
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301261"
 ---
-# <a name="manager-attribute"></a>Gestore (attributo)
+# <a name="manager-attribute"></a>Attributo manager
 
-Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utente. L'oggetto utente del Manager contiene una proprietà directReports che contiene riferimenti a tutti gli oggetti utente che hanno le proprietà Manager impostate su questo nome distinto.
+Contiene il nome distinto dell'utente che è il responsabile dell'utente. L'oggetto utente del manager contiene una proprietà directReports che contiene riferimenti a tutti gli oggetti utente con le proprietà di gestione impostate su questo nome distinto.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------------------|
 | CN                | Manager                                                                     |
-| LDAP-Display-Name | manager                                                                     |
+| Ldap-Display-Name | manager                                                                     |
 | Dimensione              | \-                                                                          |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                      |
-| Frequenza di aggiornamento  | Quando il record dell'utente viene creato e ogni volta che il responsabile deve cambiare. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                      |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il manager deve cambiare. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.10                                                  |
-| System-ID-GUID    | bf9679b5-0de6-11d0-a285-00aa003049e2                                        |
+| System-Id-Guid    | bf9679b5-0de6-11d0-a285-00aa003049e2                                        |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)                                     |
 
 
@@ -58,15 +58,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                 |
 | MAPI-Id                | 0x8005                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Vero                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000010                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Vero                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| Is-Single-Valued       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Vero                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Vero                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Vero                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contiene il nome distinto dell'utente che corrisponde al responsabile dell'utent
 | ID collegamento                | 42                                                                                                                     |
 | MAPI-Id                | 0x8005                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| È a valore singolo       | Vero                                                                                                                   |
+| A valore singolo       | Vero                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                  |
 | Nel catalogo globale      | Vero                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | \-                                                                                                                     |
 | Range-Upper            | \-                                                                                                                     |
 | Search-Flags           | 0x00000010                                                                                                             |
 | System-Flags           | 0x00000010                                                                                                             |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

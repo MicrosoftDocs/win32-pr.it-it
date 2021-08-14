@@ -1,7 +1,7 @@
 ---
 description: Restituisce una stringa contenente il nome del dispositivo tablet.
 ms.assetid: 025620b5-ab68-4e36-ae26-2226a2fdeb61
-title: 'Metodo ITablet:: GetName'
+title: Metodo ITablet::GetName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c2d6bd20a011b1bf5cfbe7582445de45728bbd7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 089bebc48fce9c720933f829ab83d04bf24fac3d8e2678369865cf2fe58650f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104231914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350680"
 ---
-# <a name="itabletgetname-method"></a>Metodo ITablet:: GetName
+# <a name="itabletgetname-method"></a>Metodo ITablet::GetName
 
 Restituisce una stringa contenente il nome del dispositivo tablet.
 
@@ -40,10 +40,10 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*ppwszName* \[ out\]
+*ppwszName* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una stringa che contiene il nome del dispositivo tablet.
+Puntatore a una stringa contenente il nome del dispositivo tablet.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                            | Descrizione                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>   | Esito positivo.<br/>                       |
-| <dl> <dt>**E \_ non riescono**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Operazione completata.<br/>                       |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Si è verificato un errore non specificato.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Questo metodo può restituire uno di questi valori.
 
 ## <a name="remarks"></a>Commenti
 
-È responsabilità del chiamante liberare la memoria restituita da questo metodo usando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+È responsabilità del chiamante liberare la memoria restituita da questo metodo usando [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

@@ -1,22 +1,22 @@
 ---
 title: Informazioni di riferimento su D3DX 11
-description: L'API D3DX 11 è descritta in questa sezione.
+description: In questa sezione viene descritta l'API D3DX 11.
 ms.assetid: 78520da0-4be0-42d8-93a4-9bd17ef50007
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e6938c28869745a26799fb654ae27c89e296ce2
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 798efe22595d867b205927cd1031135bf84a11837f616513523e962dd6a57052
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119378461"
 ---
 # <a name="d3dx-11-reference"></a>Informazioni di riferimento su D3DX 11
 
-L'API D3DX 11 è descritta in questa sezione.
+In questa sezione viene descritta l'API D3DX 11.
 
 > [!NOTE]  
-> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Microsoft Store. Per informazioni dettagliate sulle sostituzioni consigliate per D3DX11, vedere [Living without D3DX](https://walbourn.github.io/living-without-d3dx/). Per i progetti precedenti, è possibile usare il pacchetto [NuGet Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) anziché basarsi su DirectX SDK o DirectSetup legacy.
+> La libreria di utilità D3DX (D3DX 9, D3DX 10 e D3DX 11) è deprecata per Windows 8 e non è supportata per le app Microsoft Store. Per informazioni dettagliate sulle sostituzioni consigliate per D3DX11, vedere [Living without D3DX (Vita senza D3DX).](https://walbourn.github.io/living-without-d3dx/) Per i progetti precedenti, è possibile usare il pacchetto di NuGet [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) invece di basarsi su DirectX SDK o DirectSetup legacy.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,45 +1,45 @@
 ---
 title: Stringhe di formato
-description: Una stringa di formato è un token interpretato che il motore di rapporto di recapito riconosce. Le stringhe di formato sono spesso denominate MOPs; Questa documentazione usa il termine formato stringa in tutto.
+description: Una stringa di formato è un token interpretato che il motore NDR comprende. Le stringhe di formato vengono spesso definite MOP. questa documentazione usa il termine stringa di formato in tutto.
 ms.assetid: 548283bd-023a-41dd-b1d0-661305d019e9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 563dd9e4145a7d83b2e49f180329c05c1d55155d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7a8c14fa649e71411c5706193e83fd9a09d30f8a0c57fec411d8c34fef675ab5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103711428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929868"
 ---
 # <a name="format-strings"></a>Stringhe di formato
 
-Una stringa di formato è un token interpretato che il motore di rapporto di recapito riconosce. Le stringhe di formato sono spesso denominate MOPs; Questa documentazione usa il termine formato stringa in tutto.
+Una stringa di formato è un token interpretato che il motore NDR comprende. Le stringhe di formato vengono spesso definite MOP. questa documentazione usa il termine stringa di formato in tutto.
 
-Per maggiore precisione, un carattere di formato è un singolo token interpretabile (Atomic). Ogni carattere di formato è di dimensioni pari a un byte. Una stringa di formato è una sequenza di caratteri di formato o caratteri di formato e dati numerici. Il termine descrittore viene utilizzato anche per la denominazione di sequenze comuni; una stringa di formato di parametro o un descrittore di parametro è ad esempio una stringa di formato utilizzata per descrivere un parametro di una routine.
+Per essere più precisi, un carattere di formato è un token interpretabile singolo (atomico). Ogni carattere di formato ha dimensioni di un byte. Una stringa di formato è una sequenza di caratteri di formato o caratteri di formato e dati numerici. Il termine descrittore viene usato anche per la denominazione di sequenze comuni. Ad esempio, una stringa di formato di parametro o un descrittore di parametro è una stringa di formato usata per descrivere un parametro di una routine.
 
-I caratteri di formato presentano nomi simbolici suggestivi, ad esempio FC \_ Long o FC \_ struct. Tutti i caratteri stringa di formato usati da MIDL e dal motore NDR sono definiti nel file Ndrtypes. h.
+I caratteri di formato hanno nomi simbolici indicativi, ad esempio FC \_ LONG o FC \_ STRUCT. Tutti i caratteri stringa di formato usati da MIDL e dal motore NDR sono definiti nel file Ndrtypes.h.
 
-## <a name="format-string-tables"></a>Formattare le tabelle di stringhe
+## <a name="format-string-tables"></a>Formattare tabelle di stringhe
 
-Due tabelle di stringhe di formato primarie vengono usate dal motore: la tabella delle stringhe di formato della procedura, **\_ \_ MIDL \_ ProcFormatString**, che mantiene i descrittori di routine e la tabella di stringhe di formato del tipo, **\_ \_ MIDL \_ TypeFormatString**, che mantiene i descrittori del tipo di dati. Il compilatore genera entrambi i file stub principali ( \* \_ c. c, \* \_ s. c, \* \_ p. c). La tabella delle stringhe di formato delle procedure viene utilizzata principalmente da diversi interpreti, ma viene utilizzata anche per la conversione del buffer indipendentemente dalla modalità del compilatore. La tabella delle stringhe di formato del tipo viene utilizzata quando si chiama il motore di recapito di base per indicare tipi di dati specifici su cui lavorare.
+Il motore usa due tabelle di stringhe di formato primarie: la tabella delle stringhe di formato della **\_ \_ procedura, MIDL \_ ProcFormatString**, che mantiene i descrittori della procedura e la tabella delle stringhe di formato **\_ \_ del tipo, MIDL \_ TypeFormatString**, che mantiene i descrittori del tipo di dati. Il compilatore genera entrambi nei file stub principali ( \* \_ c.c, \* \_ s.c, \* \_ p.c). La tabella delle stringhe di formato della procedura viene usata principalmente da vari interpreti, ma viene usata anche per la conversione del buffer indipendentemente dalla modalità del compilatore. La tabella delle stringhe di formato del tipo viene usata quando si chiama il motore NDR principale per indicare tipi di dati specifici su cui lavorare.
 
 ## <a name="format-string-notation"></a>Notazione stringa di formato
 
-La notazione utilizzata in questo documento segue le linee guida comuni per la descrizione della programmazione, con una barra ( \| ) utilizzata per indicare costrutti alternativi e parentesi quadre ( \[ \] ) utilizzati per indicare gli elementi facoltativi. Le stringhe di formato vengono spesso impilate per migliorare la leggibilità (responsabilità). In questo documento FC indica un singolo carattere di formato. I caratteri di formato vengono presentati in tutte le MAIUSCOLe, usando i nomi simbolici effettivi. Altri campi arbitrari sono rappresentati da un nome e da una dimensione.
+La notazione usata in questo documento segue le linee guida comuni per la descrizione della programmazione, con una barra ( ) usata per indicare costrutti alternativi e parentesi quadre ( ) usate per indicare elementi \| \[ \] facoltativi. Le stringhe di formato vengono spesso impilate per la leggibilità (responsabilità). In questo documento, FC indica un singolo carattere di formato. I caratteri di formato vengono presentati in tutte le maiuscole, usando i nomi simbolici effettivi. Altri campi arbitrari sono rappresentati da un nome e da una dimensione.
 
-Le parentesi angolari ( <> ) vengono utilizzate per indicare le dimensioni dei descrittori. Vengono utilizzate le convenzioni illustrate nella tabella seguente.
+Le parentesi angolari ( <> ) vengono usate per indicare le dimensioni dei descrittori. Vengono utilizzate le convenzioni illustrate nella tabella seguente.
 
 
 
 | Notation     | Significato                                                   |
 |--------------|-----------------------------------------------------------|
-| <*n*>  | Le dimensioni del descrittore sono pari a n byte.                        |
+| <*N*>  | La dimensione del descrittore è n byte.                        |
 | <>     | Le dimensioni del descrittore variano.                            |
-| {<>}\* | Il descrittore viene ripetuto per un numero qualsiasi di volte (0, 1, 2...). |
+| {<>}\* | Il descrittore viene ripetuto un numero qualsiasi di volte (0,1,2 ...). |
 
 
 
- 
+ 
 
 I caratteri di formato seguenti hanno un significato speciale.
 
@@ -47,16 +47,16 @@ I caratteri di formato seguenti hanno un significato speciale.
 
 | Carattere | Significato                                   |
 |-----------|-------------------------------------------|
-| \_fine FC   | Indica la fine di alcune stringhe di formato. |
-| \_Pad FC   | Carattere di riempimento non interpretato.              |
+| FC \_ END   | Indica la fine di alcune stringhe di formato. |
+| FC \_ PAD   | Carattere di riempimento non interpretato.              |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

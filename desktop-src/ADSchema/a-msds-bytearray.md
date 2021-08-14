@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-byte-array
+title: Attributo ms-DS-Byte-Array
 description: Attributo per l'archiviazione di dati binari.
 ms.assetid: 0053b11a-d55d-4d4e-998d-d9536c326f60
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-byte-array
-- attributo msDS-ByteArray-schema AD
+- Schema AD dell'attributo ms-DS-Byte-Array
+- Schema AD dell'attributo msDS-ByteArray
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d63b421d008fc277799df1e7b58362d1d8b480
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d69e27dda0808bd1f8f2db706f726d0d64fae205fd6a4c60aba11fc487e91e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426724"
 ---
-# <a name="ms-ds-byte-array-attribute"></a>attributo ms-DS-byte-array
+# <a name="ms-ds-byte-array-attribute"></a>Attributo ms-DS-Byte-Array
 
 Attributo per l'archiviazione di dati binari.
 
@@ -29,13 +29,13 @@ Attributo per l'archiviazione di dati binari.
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | ms-DS-byte-array                                      |
-| LDAP-Display-Name | msDS-ByteArray                                        |
+| CN                | ms-DS-Byte-Array                                      |
+| Ldap-Display-Name | msDS-ByteArray                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1831                               |
-| System-ID-GUID    | f0d8972e-dd5b-40e5-a51d-044c7c17ece7                  |
+| System-Id-Guid    | f0d8972e-dd5b-40e5-a51d-044c7c17ece7                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -57,15 +57,15 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| Is-Single-Valued       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Attributo per l'archiviazione di dati binari.
 | ID collegamento                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| È a valore singolo       | Falso                                                                                                                      |
+| A valore singolo       | Falso                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                      |
 | Nel catalogo globale      | Falso                                                                                                                      |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classi utilizzate in        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-app-dati**](c-msds-appdata.md)<br/> |
+| Classi usate in        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

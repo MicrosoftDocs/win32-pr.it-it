@@ -1,9 +1,9 @@
 ---
-title: opzione/ACF
-description: L'opzione/ACF consente all'utente di specificare un nome di file ACF esplicito. L'opzione consente inoltre l'utilizzo di nomi di interfaccia diversi nei file IDL e ACF.
+title: Opzione /acf
+description: L'opzione /acf consente all'utente di specificare un nome file ACF esplicito. L'opzione consente anche l'uso di nomi di interfaccia diversi nei file IDL e ACF.
 ms.assetid: 8f0833ec-1dbc-4c8a-af7e-3de42169af8d
 keywords:
-- /ACF switch MIDL
+- Opzione /acf MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e24d66982628fbd0052e8a3f573901c430e8b8b1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 37248ac346350f618eebc5ca81af144ecee91ce2acf40c39b9e980b574df4764
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386128"
 ---
-# <a name="acf-switch"></a>opzione/ACF
+# <a name="acf-switch"></a>Opzione /acf
 
-L'opzione **/ACF** consente all'utente di specificare un nome di file ACF esplicito. L'opzione consente inoltre l'utilizzo di nomi di interfaccia diversi nei file IDL e ACF.
+**L'opzione /acf** consente all'utente di specificare un nome file ACF esplicito. L'opzione consente anche l'uso di nomi di interfaccia diversi nei file IDL e ACF.
 
 ``` syntax
 midl /acf acf_filename
@@ -31,43 +31,43 @@ midl /acf acf_filename
 
 <dl> <dt>
 
-*\_nome file ACF* 
+*acf \_ filename* 
 </dt> <dd>
 
-Specifica il nome dell'oggetto ACF. Gli spazi vuoti possono essere presenti tra l'opzione **/ACF** e il nome file.
+Specifica il nome del file ACF. Gli spazi vuoti possono essere presenti o meno tra **l'opzione /acf** e il nome del file.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per impostazione predefinita, il compilatore MIDL costruisce il nome dell'ACF sostituendo l'estensione del nome file IDL (in genere IDL) con. ACF. Quando l'opzione **/ACF** è presente, l'ACF prende il nome dal nome file specificato. L'opzione **/ACF** si applica solo al file idl specificato nella riga di comando del compilatore MIDL. Non si applica ai file importati.
+Per impostazione predefinita, il compilatore MIDL costruisce il nome del file ACF sostituendo l'estensione di file IDL (in genere con estensione idl) con acf. Quando è **presente l'opzione /acf,** il file ACF prende il nome dal nome file specificato. **L'opzione /acf** si applica solo al file IDL specificato nella riga di comando del compilatore MIDL. Non si applica ai file importati.
 
-Quando si usa l'opzione **/ACF** , il nome dell'interfaccia in ACF non deve corrispondere al nome dell'interfaccia MIDL. Questa funzionalità consente alle interfacce di condividere una specifica ACF.
+Quando si **usa l'opzione /acf,** il nome dell'interfaccia in ACF non deve corrispondere al nome dell'interfaccia MIDL. Questa funzionalità consente alle interfacce di condividere una specifica ACF.
 
-Quando non viene specificato un percorso assoluto di un ACF, il compilatore MIDL Cerca nella directory corrente le directory fornite dall'opzione [**/i**](-i.md) e le directory nel percorso di inclusione.
+Quando non viene specificato un percorso assoluto a un file ACF, il compilatore MIDL cerca nella directory corrente, nelle directory fornite dall'opzione [**/I**](-i.md) e nelle directory nel percorso INCLUDE.
 
-Se l'ACF non viene trovato, il compilatore MIDL presuppone che non esista alcun ACF per questa interfaccia. Per ulteriori informazioni sulla sequenza di directory, vedere le voci di riferimento per le opzioni [**/i**](-i.md) e [**/No \_ def \_ Idir**](-no-def-idir.md) . Per ulteriori informazioni relative a **/ACF**, vedere [file di definizione dell'interfaccia (IDL)](interface-definition-idl-file.md).
+Se il file ACF non viene trovato, il compilatore MIDL presuppone che non sia presente alcun ACF per questa interfaccia. Per altre informazioni sulla sequenza di directory, vedere le voci di riferimento per le opzioni [**/I**](-i.md) e [**/no \_ def \_ idir.**](-no-def-idir.md) Per altre informazioni relative a **/acf**, vedere [File di definizione dell'interfaccia (IDL).](interface-definition-idl-file.md)
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/ACF bar. ACF nomefile. idl**
+**midl /acf bar.acf filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**/I**](-i.md)
+[**/i**](-i.md)
 </dt> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**/No \_ def \_ Idir**](-no-def-idir.md)
+[**/no \_ def \_ idir**](-no-def-idir.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

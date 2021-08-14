@@ -1,29 +1,29 @@
 ---
 description: Contiene il nome di un flusso.
 ms.assetid: 80235820-761f-4deb-9bf6-82ef402b3ee4
-title: Attributo MF_SD_STREAM_NAME (Mfidl. h)
+title: MF_SD_STREAM_NAME attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 734c2d20390ba1a450a40c03054b4c67c5c0409a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 312ca788b03c3bef075c2c51d06df921d258e7372c091c5ccb43ec248444fcfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474057"
 ---
-# <a name="mf_sd_stream_name-attribute"></a>\_ \_ Attributo nome flusso MF SD \_
+# <a name="mf_sd_stream_name-attribute"></a>Attributo \_ MF SD \_ STREAM \_ NAME
 
 Contiene il nome di un flusso.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WCHAR \** _
+**Wchar\***
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [_ *IMFAttributes:: GetString* *](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Per impostare questo attributo, chiamare [**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Per impostare questo attributo, chiamare [**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes:: sestring**](/windows
 
 ## <a name="remarks"></a>Commenti
 
-L'origine multimediale AVI imposta questo attributo se il file AVI contiene un blocco ' STRN '.
+L'origine multimediale AVI imposta questo attributo se il file AVI contiene un blocco 'strn'.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 R2 \[ \|\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del descrittore di flusso](stream-descriptor-attributes.md)

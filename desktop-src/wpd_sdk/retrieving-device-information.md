@@ -4,16 +4,16 @@ ms.assetid: 5c35da1c-f55c-4b92-8ac6-8c71466707f1
 title: Recupero delle informazioni sul dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9facd9c1bba2b0153c0e3254578d3617352154ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d9a24a157d8170cf3f4d6660c19f656faab0b02c9ce78e7d717011a14780263
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193832"
 ---
 # <a name="retrieving-device-information"></a>Recupero delle informazioni sul dispositivo
 
-L'API WPD fornisce un set completo di interfacce e metodi che è possibile usare per recuperare le informazioni per un determinato dispositivo. In generale, i dati del dispositivo possono essere divisi in tre categorie, come descritto nella tabella seguente.
+L'API WPD offre un set ricco di interfacce e metodi che è possibile usare per recuperare informazioni per un determinato dispositivo. In generale, i dati del dispositivo possono essere suddivisi in tre categorie, come descritto nella tabella seguente.
 
 
 

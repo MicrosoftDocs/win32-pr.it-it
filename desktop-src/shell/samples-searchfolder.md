@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come creare una ricerca con vincoli di query utilizzando il modello di programmazione della shell.
+description: Viene illustrato come creare una ricerca con vincoli di query usando il modello di programmazione Shell.
 title: Esempio di cartella di ricerca
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c86a29c4a7d01fad3b91db20035cb84751e0b78a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8af53b6617ad2d655367969195e16854715e9ab75b65416bd9c75deaa9932988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219817"
 ---
 # <a name="search-folder-sample"></a>Esempio di cartella di ricerca
 
-Viene illustrato come creare una ricerca con vincoli di query utilizzando il modello di programmazione della shell.
+Viene illustrato come creare una ricerca con vincoli di query usando il modello di programmazione Shell.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -30,7 +30,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-In questo esempio viene illustrato come creare una ricerca vincolata utilizzando l'interfaccia [**ISearchFolderItemFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory) per costruire un elemento della shell di cartelle (un contenitore) che rappresenta la query. I risultati vengono visualizzati utilizzando la finestra di dialogo Apri file.
+Questo esempio illustra come creare una ricerca vincolata usando [**l'interfaccia ISearchFolderItemFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory) per costruire un elemento Shell della cartella (un contenitore) che rappresenta la query. I risultati vengono visualizzati usando la finestra di dialogo apri file.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,13 +45,13 @@ In questo esempio viene illustrato come creare una ricerca vincolata utilizzando
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio SearchFolder](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/searchfolder) |
+| GitHub  | [Esempio di SearchFolder](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/searchfolder) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

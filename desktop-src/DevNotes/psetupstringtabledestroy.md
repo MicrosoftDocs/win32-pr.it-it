@@ -1,7 +1,7 @@
 ---
 description: Elimina una tabella di stringhe.
 ms.assetid: a3ac1672-f898-44a0-bb7b-64ac24bdb9bf
-title: pSetupStringTableDestroy (funzione)
+title: Funzione pSetupStringTableDestroy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 472ee152d98c064edb8bac5d4de849b505b634da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: adbde578b144aaa79993ede50ef5fbd480582c3354467a2d37b424a1897cae63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119386411"
 ---
-# <a name="psetupstringtabledestroy-function"></a>pSetupStringTableDestroy (funzione)
+# <a name="psetupstringtabledestroy-function"></a>Funzione pSetupStringTableDestroy
 
 \[Questa funzione non è disponibile in Windows Vista o Windows Server 2008.\]
 
@@ -41,10 +41,10 @@ void WINAPI pSetupStringTableDestroy(
 
 <dl> <dt>
 
-*Un'STRINGTABLE* \[ in\]
+*StringTable* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla tabella delle stringhe.
+Puntatore alla tabella di stringhe.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
