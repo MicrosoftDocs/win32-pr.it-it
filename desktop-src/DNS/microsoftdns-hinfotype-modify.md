@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_HINFOType
-description: Il metodo modify aggiorna un record di risorse host Information (HINFO).
+description: Il metodo Modify aggiorna un record di risorse HINFO (Host Information).
 ms.assetid: 8f8148f3-804f-4f99-8e79-606cd3cea660
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_HINFOType classe
-- Classe MicrosoftDNS_HINFOType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il DNS del metodo , MicrosoftDNS_HINFOType classe
+- MicrosoftDNS_HINFOType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29a01eb94d82d080142d3496bab5f7f0b9acac8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 344177f0e0a18da22294faef24a6d1c4e61598b4b5e8a804081bdd3a592cf440
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984641"
 ---
-# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Metodo Modify della \_ classe HINFOType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Metodo Modify della classe MicrosoftDNS \_ HINFOType
 
-Il metodo **Modify** aggiorna un record di risorse host Information (HINFO).
+Il **metodo Modify** aggiorna un record di risorse HINFO (Host Information).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
@@ -66,10 +66,10 @@ Sistema operativo del proprietario del record.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Riferimento al nuovo oggetto.
+Riferimento al nuovo oggetto .
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_HINFOType MicrosoftDNS**](microsoftdns-hinfotype.md)
+[**MicrosoftDNS \_ HINFOType**](microsoftdns-hinfotype.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ HINFOType**](microsoftdns-hinfotype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe \_ HINFOType MicrosoftDNS**](microsoftdns-hinfotype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

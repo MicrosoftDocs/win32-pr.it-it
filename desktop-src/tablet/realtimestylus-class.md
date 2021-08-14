@@ -1,7 +1,7 @@
 ---
 description: Implementa l'interfaccia COM IRealTimeStylus.
 ms.assetid: fd686a78-b0a8-41d2-a37b-90544f531270
-title: Classe RealTimeStylus (RTSCom. h)
+title: Classe RealTimeStylus (RTSCom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - RTSCom.dll
-ms.openlocfilehash: 7e0b7e92d4a3da0bf8186f001bc9f9bec850bedd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea3fd1cba6e23997cdf9896e793c5776ce84b245bea10868f7f505c54de21aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715999"
 ---
 # <a name="realtimestylus-class"></a>Classe RealTimeStylus
 
-Implementa l'interfaccia com [**IRealTimeStylus**](/windows/desktop/api/RTSCom/nn-rtscom-irealtimestylus) .
+Implementa [**l'interfaccia COM IRealTimeStylus.**](/windows/desktop/api/RTSCom/nn-rtscom-irealtimestylus)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -30,9 +30,9 @@ Implementa l'interfaccia com [**IRealTimeStylus**](/windows/desktop/api/RTSCom/n
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                   |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                   |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                       |
-| Intestazione<br/>                   | <dl> <dt>RTSCom. h (richiede anche RTSCom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>RTSCom.h (richiede anche RTSCom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RTSCom.dll</dt> </dl>                           |
 
 
@@ -44,7 +44,7 @@ Implementa l'interfaccia com [**IRealTimeStylus**](/windows/desktop/api/RTSCom/n
 [**Classe DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85))
 </dt> <dt>
 
-[Riferimento a RealTimeStylus](realtimestylus-reference.md)
+[Informazioni di riferimento su RealTimeStylus](realtimestylus-reference.md)
 </dt> <dt>
 
 [**IRealTimeStylus**](/windows/desktop/api/RTSCom/nn-rtscom-irealtimestylus)

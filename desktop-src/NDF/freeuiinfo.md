@@ -1,9 +1,9 @@
 ---
-title: Funzione FreeUiInfo (Ndattributils. h)
-description: Consente di deallocare la memoria allocata internamente a una struttura UiInfo.
+title: Funzione FreeUiInfo (Ndattributils.h)
+description: Dealloca la memoria allocata internamente a una struttura UiInfo.
 ms.assetid: 41d923fd-2fb3-406e-a5cf-f3ba475685f6
 keywords:
-- FreeUiInfo funzione NDF
+- Funzione FreeUiInfo NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a96d859faa80e3e2269981d206c96e780d05c37
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e2008ddabdb412c117a3cfac5f2eb5ebf1e722f5f3729fb7c8b2ee0c394c454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939048"
 ---
-# <a name="freeuiinfo-function"></a>FreeUiInfo (funzione)
+# <a name="freeuiinfo-function"></a>Funzione FreeUiInfo
 
-La funzione **FreeUiInfo** consente di deallocare la memoria allocata internamente a una struttura [**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) . Questa funzione chiama [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) per deallocare la memoria.
+La **funzione FreeUiInfo** dealloca la memoria allocata internamente a una [**struttura UiInfo.**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) Questa funzione chiama [**CoTaskMemFree per**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) deallocare la memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ VOID FreeUiInfo(
 
 <dl> <dt>
 
-*pInfo* \[ in\]
+*pInfo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) \** _
+Tipo: **[ **UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)\***
 
-Struttura. La memoria allocata a cui fa riferimento questa struttura verrà liberata.
+Struttura . La memoria allocata a cui punta questa struttura verrà liberata.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                 |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Questa funzione non restituisce un valore.
 
 <dl> <dt>
 
-[_ *UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)
+[**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)
 </dt> <dt>
 
 [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)

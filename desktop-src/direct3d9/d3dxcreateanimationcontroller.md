@@ -1,7 +1,7 @@
 ---
 description: Crea un oggetto controller di animazione.
 ms.assetid: 771e5966-ac1a-43c2-8e81-b6d573343ff0
-title: Funzione D3DXCreateAnimationController (D3dx9anim. h)
+title: Funzione D3DXCreateAnimationController (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a61b2c42a1eafa2ed28ac98c753588181a0ccf7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0edda07aa5ae443a268bd5df50a154aa2a7f2ec9ca1873dc486e8e46532ae468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526636"
 ---
-# <a name="d3dxcreateanimationcontroller-function"></a>D3DXCreateAnimationController (funzione)
+# <a name="d3dxcreateanimationcontroller-function"></a>Funzione D3DXCreateAnimationController
 
 Crea un oggetto controller di animazione.
 
@@ -44,48 +44,48 @@ HRESULT D3DXCreateAnimationController(
 
 <dl> <dt>
 
-*MaxNumAnimationOutputs* \[ in\]
+*MaxNumAnimationOutputs* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Numero massimo di output di animazione che il controller può supportare.
 
 </dd> <dt>
 
-*MaxNumAnimationSets* \[ in\]
+*MaxNumAnimationSets* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di set di animazioni che è possibile combinare.
+Numero massimo di set di animazione che possono essere misti.
 
 </dd> <dt>
 
-*MaxNumTracks* \[ in\]
+*MaxNumTracks* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di set di animazioni che è possibile combinare simultaneamente.
+Numero massimo di set di animazioni che possono essere misti contemporaneamente.
 
 </dd> <dt>
 
-*MaxNumEvents* \[ in\]
+*MaxNumEvents* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero massimo di eventi in attesa che il controller supporterà.
+Numero massimo di eventi in sospeso che il controller supporterà.
 
 </dd> <dt>
 
-*ppAnimController* \[ out\]
+*ppAnimController* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Puntatore all'oggetto controller di animazione creato. Vedere [**ID3DXAnimationController**](id3dxanimationcontroller.md).
+Puntatore all'oggetto controller di animazione creato. Vedere [**ID3DXAnimationController.**](id3dxanimationcontroller.md)
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntatore all'oggetto controller di animazione creato. Vedere [**ID3DXAnimationC
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Un controller di animazione controlla un mixer di animazioni. Il controller aggiunge metodi per modificare i parametri di fusione nel tempo per consentire transizioni senza problemi.
+Un controller di animazione controlla un mixer di animazione. Il controller aggiunge metodi per modificare i parametri di fusione nel tempo per abilitare transizioni uniformi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ Un controller di animazione controlla un mixer di animazioni. Il controller aggi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

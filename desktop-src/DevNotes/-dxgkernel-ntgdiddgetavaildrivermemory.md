@@ -1,7 +1,7 @@
 ---
-description: Esegue una query sulla quantità di memoria libera in tutti gli heap di memoria video.
+description: Esegue una query sulla quantità di memoria disponibile in tutti gli heap di memoria video.
 ms.assetid: 6718e8da-0da0-42e3-a02b-6884b141fe24
-title: Funzione NtGdiDdGetAvailDriverMemory (Ntgdi. h)
+title: Funzione NtGdiDdGetAvailDriverMemory (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: c6ec322665b84b3ddad14b7032b8e49245377d40
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4c2a66c174538c128185b2e8d4939a76d50a4ba6d3aff4347e7a6e0af9b4f549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956380"
 ---
-# <a name="ntgdiddgetavaildrivermemory-function"></a>NtGdiDdGetAvailDriverMemory (funzione)
+# <a name="ntgdiddgetavaildrivermemory-function"></a>Funzione NtGdiDdGetAvailDriverMemory
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Esegue una query sulla quantità di memoria libera in tutti gli heap di memoria video.
+Esegue una query sulla quantità di memoria disponibile in tutti gli heap di memoria video.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdGetAvailDriverMemory(
 
 <dl> <dt>
 
-*hDirectDraw* \[ in\]
+*hDirectDraw* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto DirectDraw in modalità kernel creato in precedenza.
+Handle all'oggetto DirectDraw in modalità kernel creato in precedenza.
 
 </dd> <dt>
 
-*puGetAvailDriverMemoryData* \[ in uscita\]
+*puGetAvailDriverMemoryData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [DD \_ GETAVAILDRIVERMEMORYDATA](https://msdn.microsoft.com/library/ms794088.aspx) che contiene le informazioni necessarie per eseguire la query.
+Puntatore a [una struttura \_ DD GETAVAILDRIVERMEMORYDATA](https://msdn.microsoft.com/library/ms794088.aspx) che contiene le informazioni necessarie per eseguire la query.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntatore a una struttura [DD \_ GETAVAILDRIVERMEMORYDATA](https://msdn.microsof
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Puntatore a una struttura [DD \_ GETAVAILDRIVERMEMORYDATA](https://msdn.microsof
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Puntatore a una struttura [DD \_ GETAVAILDRIVERMEMORYDATA](https://msdn.microsof
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

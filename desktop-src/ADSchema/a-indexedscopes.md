@@ -1,6 +1,6 @@
 ---
 title: Attributo IndexedScopes
-description: Elenco degli ambiti di directory (ad esempio, C \\ o D \) indicizzati.
+description: Elenco di ambiti di directory , ad esempio C \\ o D \) indicizzati.
 ms.assetid: e706f64d-642b-4114-9f9d-2a0c342b59e8
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370d5b5a9b8cec34ed4f6e0edafe4189fde1c646
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53d8588d18e7eef7fde8b31dfceea82c6d789c4d726bb266d7ab756345aefbb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961310"
 ---
 # <a name="indexedscopes-attribute"></a>Attributo IndexedScopes
 
-Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
+Elenco di ambiti di directory , ad esempio C: \\ o D: \) indicizzati.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | IndexedScopes                               |
-| LDAP-Display-Name | indexedScopes                               |
+| CN                | Ambiti indicizzati                               |
+| Ldap-Display-Name | indexedScopes                               |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.681                      |
-| System-ID-GUID    | 7bfdcb87-4807-11d1-a9c3-0000f80367c1        |
+| System-Id-Guid    | 7bfdcb87-4807-11d1-a9c3-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| A valore singolo       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| A valore singolo       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco degli ambiti di directory (ad esempio, C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| È a valore singolo       | Falso                                                           |
+| A valore singolo       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classi utilizzate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
+| Classi usate in        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> |
 
 
 

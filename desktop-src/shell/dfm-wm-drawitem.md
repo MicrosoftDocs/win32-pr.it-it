@@ -1,19 +1,19 @@
 ---
-description: Inviato alla finestra padre di un controllo o di un menu creato dal proprietario quando un aspetto visivo del controllo o del menu è stato modificato.
+description: Inviato alla finestra padre di un controllo o di un menu disegnato dal proprietario quando viene modificato un aspetto visivo del controllo o del menu.
 ms.assetid: 2515bbab-025f-4f00-8564-a732d68edea3
-title: Messaggio DFM_WM_DRAWITEM (Shlobj. h)
+title: DFM_WM_DRAWITEM messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67255fea5c39bebc995e5c53d90378536b12921b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7190d445490b581967c8dda67e170eb5db5665dfa59302313d7af736b275944d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969470"
 ---
-# <a name="dfm_wm_drawitem-message"></a>\_Messaggio DFM WM \_ DrawItem
+# <a name="dfm_wm_drawitem-message"></a>Messaggio WM \_ DRAWITEM DFM \_
 
-Inviato alla finestra padre di un controllo o di un menu creato dal proprietario quando un aspetto visivo del controllo o del menu è stato modificato.
+Inviato alla finestra padre di un controllo o di un menu disegnato dal proprietario quando viene modificato un aspetto visivo del controllo o del menu.
 
 
 ```C++
@@ -32,29 +32,29 @@ DFM_WM_DRAWITEM
 
 <dl> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
-Identificatore del controllo che ha inviato il messaggio **DFM \_ WM \_ DrawItem** . Se il messaggio è stato inviato da un menu, questo parametro è zero.
+Identificatore del controllo che ha inviato il messaggio **\_ WM \_ DRAWITEM di DFM.** Se il messaggio è stato inviato da un menu, questo parametro è zero.
 
 </dd> <dt>
 
-*lpDrawItem* \[ out\]
+*lpDrawItem* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) contenente le informazioni sull'elemento da disegnare e il tipo di disegno necessario.
+Puntatore a una [**struttura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) contenente informazioni sull'elemento da disegnare e sul tipo di disegno richiesto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire **true**.
+Se un'applicazione elabora questo messaggio, deve restituire **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Il membro **itemAction** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) specifica l'operazione di disegno che deve essere eseguita da un'applicazione.
+Il **membro itemAction** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) specifica l'operazione di disegno che deve essere eseguita da un'applicazione.
 
-Prima di restituire l'elaborazione di questo messaggio, un'applicazione deve garantire che il contesto di dispositivo identificato dal membro **HDC** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) sia nello stato predefinito.
+Prima di tornare dall'elaborazione di questo messaggio, un'applicazione deve garantire che il contesto di dispositivo identificato dal membro **hDC** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) sia nello stato predefinito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Prima di restituire l'elaborazione di questo messaggio, un'applicazione deve gar
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

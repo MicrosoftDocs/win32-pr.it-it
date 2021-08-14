@@ -1,9 +1,9 @@
 ---
-title: Struttura CD3DX12_TILE_SHAPE (D3dx12. h)
-description: Struttura di supporto per consentire l'inizializzazione semplificata di una \_ struttura di forma del riquadro D3D12 \_ .
+title: CD3DX12_TILE_SHAPE struttura (D3dx12.h)
+description: Struttura helper per consentire una facile inizializzazione di una struttura TILE SHAPE D3D12. \_ \_
 ms.assetid: 0A5963F1-8CE5-4B03-B69F-83B2B801CC21
 keywords:
-- Struttura CD3DX12_TILE_SHAPE
+- CD3DX12_TILE_SHAPE struttura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 998a14e1bd4898d83d049ea50bc056abaeb68544
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b02f699ab06ef93f3eeace3ce515b0947030e4824e2cb0fa51034c3e33f51dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987871"
 ---
-# <a name="cd3dx12_tile_shape-structure"></a>\_ \_ Struttura forma sezione CD3DX12
+# <a name="cd3dx12_tile_shape-structure"></a>Struttura CD3DX12 \_ TILE \_ SHAPE
 
-Struttura di supporto per consentire l'inizializzazione semplificata di una struttura di [**\_ \_ forma del riquadro D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape) .
+Struttura helper per consentire una facile inizializzazione di [**una struttura TILE \_ \_ SHAPE D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,37 +44,37 @@ struct CD3DX12_TILE_SHAPE  : public D3D12_TILE_SHAPE{
 
 <dl> <dt>
 
-**\_Forma riquadro CD3DX12 \_ ()**
+**CD3DX12 \_ TILE \_ SHAPE()**
 </dt> <dd>
 
-Crea una nuova istanza non inizializzata di una \_ forma affiancata CD3DX12 \_ .
+Crea una nuova istanza non inizializzata di un oggetto CD3DX12 \_ TILE \_ SHAPE.
 
 </dd> <dt>
 
-**forma riquadro CD3DX12 esplicita \_ \_ (const D3D12 \_ forma affiancata \_ &o)**
+**EXPLICIT CD3DX12 \_ TILE \_ SHAPE(const D3D12 \_ TILE SHAPE &\_ o)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ forma affiancata CD3DX12 \_ , inizializzata con il contenuto di un'altra struttura della [**\_ \_ forma affiancata D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape) .
+Crea una nuova istanza di una struttura CD3DX12 TILE SHAPE, inizializzata con il contenuto di un'altra struttura \_ \_ TILE [**\_ \_ SHAPE D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape)
 
 </dd> <dt>
 
-**\_Forma riquadro CD3DX12 \_ (uint WIDTHINTEXELS, uint HEIGHTINTEXELS, uint depthInTexels)**
+**CD3DX12 \_ TILE \_ SHAPE(UINT widthInTexels, UINT heightInTexels, UINT depthInTexels)**
 </dt> <dd>
 
-Crea una nuova istanza di una \_ forma affiancata CD3DX12 \_ , inizializzando i parametri seguenti:
+Crea una nuova istanza di un oggetto CD3DX12 \_ TILE \_ SHAPE, inizializzando i parametri seguenti:
 
-WidthInTexels UINT
+UiNT widthInTexels
 
-HeightInTexels UINT
+UINT heightInTexels
 
-DepthInTexels UINT
+UINT depthInTexels
 
 </dd> <dt>
 
-**operatore const \_ D3D12 \_ forma riquadro& () const**
+**operator const D3D12 \_ TILE \_ SHAPE&() const**
 </dt> <dd>
 
-Definisce il & operatore pass-by-reference per il tipo di struttura padre.
+Definisce l'& operatore pass-by-reference per il tipo di struttura padre.
 
 </dd> </dl>
 
@@ -84,7 +84,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Definisce il & operatore pass-by-reference per il tipo di struttura padre.
 
 <dl> <dt>
 
-[**\_Forma riquadro \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape)
+[**FORMA RIQUADRO D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_tile_shape)
 </dt> <dt>
 
 [Strutture helper per D3D12](helper-structures-for-d3d12.md)

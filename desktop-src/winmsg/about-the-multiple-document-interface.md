@@ -1,128 +1,128 @@
 ---
-description: Ogni documento in un'applicazione con interfaccia a documenti multipli (MDI) viene visualizzato in una finestra figlio separata all'interno dell'area client della finestra principale dell'applicazione.
+description: Ogni documento in un'applicazione MDI (Multiple Document Interface) viene visualizzato in una finestra figlio separata all'interno dell'area client della finestra principale dell'applicazione.
 ms.assetid: 35dff281-3b11-4954-85cf-a0f1c9ed346a
-title: Informazioni sull'interfaccia a più documenti
+title: Informazioni sull'interfaccia a documenti multipli
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0397127d7ec343ebdb7696c2dd7d57204a5d5ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 071d3bebad8e6aba48b69b66fd41f9f7933c1d9785ae38512003aaf1bd9a19e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706002"
 ---
-# <a name="about-the-multiple-document-interface"></a>Informazioni sull'interfaccia a più documenti
+# <a name="about-the-multiple-document-interface"></a>Informazioni sull'interfaccia a documenti multipli
 
-Ogni documento in un'applicazione con interfaccia a documenti multipli (MDI) viene visualizzato in una finestra figlio separata all'interno dell'area client della finestra principale dell'applicazione. Le applicazioni MDI tipiche includono applicazioni di elaborazione di testi che consentono all'utente di usare più documenti di testo e applicazioni di fogli di calcolo che consentono all'utente di usare più grafici e fogli di calcolo. Per ulteriori informazioni, vedere gli argomenti seguenti.
+Ogni documento in un'applicazione MDI (Multiple Document Interface) viene visualizzato in una finestra figlio separata all'interno dell'area client della finestra principale dell'applicazione. Le applicazioni MDI tipiche includono applicazioni di elaborazione di testo che consentono all'utente di usare più documenti di testo e fogli di calcolo che consentono all'utente di usare più grafici e fogli di calcolo. Per ulteriori informazioni, vedere gli argomenti seguenti.
 
--   [Frame, client e finestre figlio](#frame-client-and-child-windows)
--   [Creazione finestra figlio](#child-window-creation)
+-   [Frame, client e figlio Windows](#frame-client-and-child-windows)
+-   [Creazione della finestra figlio](#child-window-creation)
 -   [Attivazione della finestra figlio](#child-window-activation)
--   [Menu di più documenti](#multiple-document-menus)
+-   [Menu a più documenti](#multiple-document-menus)
 -   [Più acceleratori di documenti](#multiple-document-accelerators)
 -   [Dimensioni e disposizione della finestra figlio](#child-window-size-and-arrangement)
--   [Finestre del titolo dell'icona](#icon-title-windows)
+-   [Icona Titolo Windows](#icon-title-windows)
 -   [Dati della finestra figlio](#child-window-data)
-    -   [Struttura finestra](#window-structure)
+    -   [Struttura della finestra](#window-structure)
     -   [Proprietà finestra](#window-properties)
 
-## <a name="frame-client-and-child-windows"></a>Frame, client e finestre figlio
+## <a name="frame-client-and-child-windows"></a>Frame, client e figlio Windows
 
-Un'applicazione MDI dispone di tre tipi di finestre: una finestra cornice, una finestra client MDI, oltre a un numero di finestre figlio. La *finestra cornice* è simile alla finestra principale dell'applicazione: dispone di un bordo di ridimensionamento, una barra del titolo, un menu finestra, un pulsante Riduci a icona e un pulsante Ingrandisci. L'applicazione deve registrare una classe di finestra per la finestra cornice e fornire una routine della finestra per supportarla.
+Un'applicazione MDI ha tre tipi di finestre: una finestra cornice, una finestra client MDI, nonché una serie di finestre figlio. La *finestra cornice* è simile alla finestra principale dell'applicazione: ha un bordo di ridimensionamento, una barra del titolo, un menu della finestra, un pulsante di riduzione a icona e un pulsante di ingrandimento. L'applicazione deve registrare una classe finestra per la finestra cornice e fornire una routine della finestra per supportarla.
 
-Un'applicazione MDI non Visualizza l'output nell'area client della finestra cornice. Viene invece visualizzata la finestra client MDI. Una *finestra client MDI* è un tipo speciale di finestra figlio appartenente alla classe della finestra pre-registrata **MdiClient**. La finestra del client è un elemento figlio della finestra cornice; funge da background per le finestre figlio. Fornisce inoltre il supporto per la creazione e la modifica delle finestre figlio. Ad esempio, un'applicazione MDI può creare, attivare o ingrandire le finestre figlio inviando messaggi alla finestra del client MDI.
+Un'applicazione MDI non visualizza l'output nell'area client della finestra cornice. Viene invece visualizzata la finestra del client MDI. Una *finestra client MDI* è un tipo speciale di finestra figlio appartenente alla classe finestra **preregistrata MDICLIENT**. La finestra client è un elemento figlio della finestra cornice. funge da sfondo per le finestre figlio. Fornisce anche il supporto per la creazione e la modifica di finestre figlio. Ad esempio, un'applicazione MDI può creare, attivare o ingrandire le finestre figlio inviando messaggi alla finestra client MDI.
 
-Quando l'utente apre o crea un documento, la finestra del client crea una finestra figlio per il documento. La finestra client è la finestra padre di tutte le finestre figlio MDI nell'applicazione. Ogni finestra figlio ha un bordo di ridimensionamento, una barra del titolo, un menu finestra, un pulsante Riduci a icona e un pulsante Ingrandisci. Poiché una finestra figlio viene ritagliata, viene limitata alla finestra client e non può essere visualizzata all'esterno.
+Quando l'utente apre o crea un documento, la finestra client crea una finestra figlio per il documento. La finestra client è la finestra padre di tutte le finestre figlio MDI nell'applicazione. Ogni finestra figlio ha un bordo di ridimensionamento, una barra del titolo, un menu della finestra, un pulsante di riduzione a icona e un pulsante di ingrandimento. Poiché una finestra figlio viene ritagliata, è limitata alla finestra client e non può essere visualizzata all'esterno di essa.
 
-Un'applicazione MDI può supportare più di un tipo di documento. Ad esempio, un'applicazione di foglio di calcolo tipica consente all'utente di usare sia i grafici che i fogli di calcolo. Per ogni tipo di documento supportato, un'applicazione MDI deve registrare una classe della finestra figlio e fornire una routine della finestra per supportare le finestre che appartengono a tale classe. Per ulteriori informazioni sulle classi della finestra, vedere [classi di finestra](window-classes.md). Per ulteriori informazioni sulle routine della finestra, vedere [routine della finestra](window-procedures.md).
+Un'applicazione MDI può supportare più di un tipo di documento. Ad esempio, una tipica applicazione foglio di calcolo consente all'utente di usare sia grafici che fogli di calcolo. Per ogni tipo di documento supportato, un'applicazione MDI deve registrare una classe finestra figlio e fornire una routine finestra per supportare le finestre appartenenti a tale classe. Per altre informazioni sulle classi finestra, vedere [Classi finestra](window-classes.md). Per altre informazioni sulle procedure di finestra, vedere [Procedure finestra](window-procedures.md).
 
-Di seguito è riportata una tipica applicazione MDI. Il nome è MultiPad.
+Di seguito è riportata una tipica applicazione MDI. Il nome è Multipad.
 
-![finestra cornice dell'applicazione MDI MultiPad e finestra client](images/csmdi-01.png)
+![finestra cornice dell'applicazione multipad mdi e finestra client](images/csmdi-01.png)
 
-## <a name="child-window-creation"></a>Creazione finestra figlio
+## <a name="child-window-creation"></a>Creazione della finestra figlio
 
-Per creare una finestra figlio, un'applicazione MDI chiama la funzione [**CreateMDIWindow**](/windows/win32/api/winuser/nf-winuser-createmdiwindowa) o invia il messaggio [**WM \_ MDICREATE**](wm-mdicreate.md) alla finestra client MDI. Un modo più efficiente per creare una finestra figlio MDI consiste nel chiamare la funzione [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) , specificando lo stile esteso **WS \_ ex \_ MDIChild** .
+Per creare una finestra figlio, un'applicazione MDI chiama la [**funzione CreateMDIWindow**](/windows/win32/api/winuser/nf-winuser-createmdiwindowa) o invia il messaggio [**WM \_ MDICREATE**](wm-mdicreate.md) alla finestra client MDI. Un modo più efficiente per creare una finestra figlio MDI è chiamare la [**funzione CreateWindowEx,**](/windows/win32/api/winuser/nf-winuser-createwindowexa) specificando lo **stile esteso \_ WS EX \_ MDICHILD.**
 
-Per eliminare definitivamente una finestra figlio, un'applicazione MDI Invia un messaggio [**\_ MDIDESTROY WM**](wm-mdidestroy.md) alla finestra del client MDI.
+Per eliminare una finestra figlio, un'applicazione MDI invia un [**messaggio \_ MDIDESTROY WM**](wm-mdidestroy.md) alla finestra client MDI.
 
 ## <a name="child-window-activation"></a>Attivazione della finestra figlio
 
-Qualsiasi numero di finestre figlio può essere visualizzato nella finestra del client in qualsiasi momento, ma solo uno può essere attivo. La finestra figlio attiva è posizionata davanti a tutte le altre finestre figlio e il bordo è evidenziato.
+Qualsiasi numero di finestre figlio può essere visualizzato nella finestra client contemporaneamente, ma solo una può essere attiva. La finestra figlio attiva viene posizionata davanti a tutte le altre finestre figlio e il bordo è evidenziato.
 
-L'utente può attivare una finestra figlio inattiva facendo clic su di essa. Un'applicazione MDI attiva una finestra figlio inviando un messaggio [**WM \_ MDIACTIVATE**](wm-mdiactivate.md) alla finestra del client MDI. Quando la finestra client elabora questo messaggio, invia un messaggio **WM \_ MDIACTIVATE** alla routine della finestra figlio da attivare e alla routine della finestra della finestra figlio da disattivare.
+L'utente può attivare una finestra figlio inattiva facendo clic su di essa. Un'applicazione MDI attiva una finestra figlio inviando un [**messaggio \_ MDIACTIVATE WM**](wm-mdiactivate.md) alla finestra client MDI. Quando la finestra client elabora questo messaggio, invia un messaggio **WM \_ MDIACTIVATE** alla routine della finestra della finestra figlio da attivare e alla routine della finestra figlio in fase di disattivazione.
 
-Per impedire l'attivazione di una finestra figlio, gestire il messaggio [**WM \_ NCACTIVATE**](wm-ncactivate.md) alla finestra figlio restituendo **false**.
+Per impedire l'attivazione di una finestra figlio, gestire il [**messaggio WM \_ NCACTIVATE**](wm-ncactivate.md) nella finestra figlio restituisce **FALSE.**
 
-Il sistema tiene traccia della posizione di ogni finestra figlio nello stack di finestre sovrapposte. Questo stack è noto come [ordine Z](window-features.md). L'utente può attivare la finestra figlio successiva nella z order facendo clic su **Avanti** dal menu finestra della finestra attiva. Un'applicazione attiva la finestra figlio successiva o precedente nel z order inviando un messaggio [**WM \_ MDINEXT**](wm-mdinext.md) alla finestra client.
+Il sistema tiene traccia della posizione di ogni finestra figlio nello stack di finestre sovrapposte. Questo stacking è noto come [Z-Order.](window-features.md) L'utente può attivare la finestra figlio successiva nell'ordine Z facendo clic su **Avanti** dal menu della finestra nella finestra attiva. Un'applicazione attiva la finestra figlio successiva (o precedente) nell'ordine Z inviando un messaggio [**\_ WM MDINEXT**](wm-mdinext.md) alla finestra client.
 
-Per recuperare l'handle per la finestra figlio attiva, l'applicazione MDI Invia un [**messaggio \_ MDIGETACTIVE WM**](wm-mdigetactive.md) alla finestra client.
+Per recuperare l'handle alla finestra figlio attiva, l'applicazione MDI invia un [**messaggio WM \_ MDIGETACTIVE**](wm-mdigetactive.md) alla finestra client.
 
-## <a name="multiple-document-menus"></a>Menu di più documenti
+## <a name="multiple-document-menus"></a>Menu a più documenti
 
-La finestra cornice di un'applicazione MDI deve includere una barra dei menu con un menu finestra. Il menu finestra deve includere elementi che dispongono le finestre figlio nella finestra del client o che chiudono tutte le finestre figlio. Il menu finestra di una tipica applicazione MDI potrebbe includere gli elementi indicati nella tabella seguente.
+La finestra cornice di un'applicazione MDI deve includere una barra dei menu con un menu della finestra. Il menu della finestra deve includere elementi che dispongono le finestre figlio all'interno della finestra client o che chiudono tutte le finestre figlio. Il menu della finestra di una tipica applicazione MDI può includere gli elementi nella tabella seguente.
 
 
 
 | Voce di menu         | Scopo                                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Tile**          | Dispone le finestre figlio in un formato di sezione in modo che ognuna venga visualizzata completamente nella finestra del client.                       |
-| **Cascata**       | Dispone le finestre figlio in un formato Cascade. Le finestre figlio si sovrappongono l'una all'altra, ma la barra del titolo di ogni è visibile. |
-| **Disponi icone** | Dispone le icone delle finestre figlio ridotte a icona lungo la parte inferiore della finestra del client.                                     |
+| **Tile**          | Dispone le finestre figlio in un formato riquadro in modo che ognuna venga visualizzata nella sua interezza nella finestra client.                       |
+| **Cascata**       | Dispone le finestre figlio in un formato a cascata. Le finestre figlio si sovrappongono tra loro, ma la barra del titolo di ognuna è visibile. |
+| **Disponi icone** | Dispone le icone delle finestre figlio ridotte a icona nella parte inferiore della finestra client.                                     |
 | **Chiudi tutto**     | Chiude tutte le finestre figlio.                                                                                                |
 
 
 
  
 
-Ogni volta che viene creata una finestra figlio, il sistema aggiunge automaticamente una nuova voce di menu al menu finestra. Il testo della voce di menu corrisponde al testo sulla barra dei menu della nuova finestra figlio. Facendo clic sulla voce di menu, l'utente può attivare la finestra figlio corrispondente. Quando una finestra figlio viene distrutta, il sistema rimuove automaticamente la voce di menu corrispondente dal menu finestra.
+Ogni volta che viene creata una finestra figlio, il sistema aggiunge automaticamente una nuova voce di menu al menu della finestra. Il testo della voce di menu corrisponde al testo sulla barra dei menu della nuova finestra figlio. Facendo clic sulla voce di menu, l'utente può attivare la finestra figlio corrispondente. Quando una finestra figlio viene rimossa definitivamente, il sistema rimuove automaticamente la voce di menu corrispondente dal menu della finestra.
 
-Il sistema può aggiungere fino a dieci voci di menu al menu finestra. Quando viene creata la decima finestra figlio, il sistema aggiunge l' **altro** elemento di Windows al menu finestra. Quando si fa clic su questa voce, viene visualizzata la finestra di dialogo **Seleziona finestra** . La finestra di dialogo contiene una casella di riepilogo con i titoli di tutte le finestre figlio MDI attualmente disponibili. L'utente può attivare una finestra figlio facendo clic sul titolo nella casella di riepilogo.
+Il sistema può aggiungere fino a dieci voci di menu al menu della finestra. Quando viene creata la decimo finestra figlio, il sistema aggiunge la voce **Windows** al menu della finestra. Facendo clic su questo elemento viene visualizzata **la finestra di dialogo** Seleziona finestra. La finestra di dialogo contiene una casella di riepilogo con i titoli di tutte le finestre figlio MDI attualmente disponibili. L'utente può attivare una finestra figlio facendo clic sul titolo nella casella di riepilogo.
 
-Se l'applicazione MDI supporta diversi tipi di finestre figlio, adattare la barra dei menu in modo da riflettere le operazioni associate alla finestra attiva. A tale scopo, specificare risorse di menu separate per ogni tipo di finestra figlio supportata dall'applicazione. Quando viene attivato un nuovo tipo di finestra figlio, l'applicazione deve inviare un messaggio [**WM \_ MDISETMENU**](wm-mdisetmenu.md) alla finestra del client, passando all'handle il menu corrispondente.
+Se l'applicazione MDI supporta diversi tipi di finestre figlio, adattare la barra dei menu in base alle operazioni associate alla finestra attiva. A tale scopo, fornire risorse di menu separate per ogni tipo di finestra figlio supportato dall'applicazione. Quando viene attivato un nuovo tipo di finestra figlio, l'applicazione deve inviare un messaggio [**\_ WM MDISETMENU**](wm-mdisetmenu.md) alla finestra client, passando l'handle al menu corrispondente.
 
-Quando non esiste alcuna finestra figlio, la barra dei menu deve contenere solo elementi utilizzati per creare o aprire un documento.
+Se non esiste alcuna finestra figlio, la barra dei menu deve contenere solo gli elementi usati per creare o aprire un documento.
 
-Quando l'utente si sposta attraverso i menu di un'applicazione MDI usando i tasti di cursore, le chiavi si comportano in modo diverso rispetto a quando l'utente si sposta nei menu di un'applicazione tipica. In un'applicazione MDI, il controllo passa dal menu della finestra dell'applicazione al menu finestra della finestra figlio attiva e quindi al primo elemento sulla barra dei menu.
+Quando l'utente esplora i menu di un'applicazione MDI usando i tasti di cursore, i tasti si comportano in modo diverso rispetto a quando l'utente esplora i menu di un'applicazione tipica. In un'applicazione MDI il controllo passa dal menu della finestra dell'applicazione al menu della finestra della finestra figlio attiva e quindi alla prima voce della barra dei menu.
 
 ## <a name="multiple-document-accelerators"></a>Più acceleratori di documenti
 
-Per ricevere ed elaborare i tasti di scelta rapida per le finestre figlio, un'applicazione MDI deve includere la funzione [**TranslateMDISysAccel**](/windows/win32/api/winuser/nf-winuser-translatemdisysaccel) nel ciclo di messaggi. Il ciclo deve chiamare **TranslateMDISysAccel** prima di chiamare la funzione [**TranslateAccelerator**](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) o [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) .
+Per ricevere ed elaborare i tasti di scelta rapida per le finestre figlio, un'applicazione MDI deve includere la [**funzione TranslateMDISysAccel**](/windows/win32/api/winuser/nf-winuser-translatemdisysaccel) nel ciclo di messaggi. Il ciclo deve chiamare **TranslateMDISysAccel** prima di chiamare la [**funzione TranslateAccelerator**](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) o [**DispatchMessage.**](/windows/win32/api/winuser/nf-winuser-dispatchmessage)
 
-I tasti di scelta rapida del menu finestra per una finestra figlio MDI sono diversi da quelli per una finestra figlio non MDI. In una finestra figlio MDI la combinazione di tasti ALT +-(meno) apre il menu finestra, la combinazione di tasti CTRL + F4 chiude la finestra figlio attiva e la combinazione di tasti CTRL + F6 attiva la finestra figlio successiva.
+I tasti di scelta rapida nel menu della finestra per una finestra figlio MDI sono diversi da quelli per una finestra figlio non MDI. In una finestra figlio MDI la combinazione di tasti ALT+ - (meno) apre il menu della finestra, la combinazione di tasti CTRL+F4 chiude la finestra figlio attiva e la combinazione di tasti CTRL+F6 attiva la finestra figlio successiva.
 
 ## <a name="child-window-size-and-arrangement"></a>Dimensioni e disposizione della finestra figlio
 
-Un'applicazione MDI controlla le dimensioni e la posizione delle finestre figlio inviando messaggi alla finestra del client MDI. Per ingrandire la finestra figlio attiva, l'applicazione invia il messaggio [**\_ MDIMAXIMIZE WM**](wm-mdimaximize.md) alla finestra client. Quando una finestra figlio viene ingrandita, la relativa area client riempie completamente la finestra del client MDI. Inoltre, il sistema nasconde automaticamente la barra del titolo della finestra figlio e aggiunge l'icona del menu della finestra figlio e il pulsante Ripristina alla barra dei menu dell'applicazione MDI. L'applicazione può ripristinare le dimensioni e la posizione originali (premassimizzate) inviando la finestra client di un messaggio [**WM \_ MDIRESTORE**](wm-mdirestore.md) .
+Un'applicazione MDI controlla le dimensioni e la posizione delle finestre figlio inviando messaggi alla finestra client MDI. Per ingrandire la finestra figlio attiva, l'applicazione invia il [**messaggio \_ WM MDIMAXIMIZE**](wm-mdimaximize.md) alla finestra client. Quando una finestra figlio viene ingrandita, la relativa area client riempie completamente la finestra client MDI. Inoltre, il sistema nasconde automaticamente la barra del titolo della finestra figlio e aggiunge l'icona di menu della finestra figlio e il pulsante Ripristina alla barra dei menu dell'applicazione MDI. L'applicazione può ripristinare le dimensioni e la posizione originali (premaximizzate) della finestra client inviando alla finestra client un [**messaggio WM \_ MDIRESTORE.**](wm-mdirestore.md)
 
-Un'applicazione MDI può disporre le finestre figlio in formato Cascade o Tile. Quando le finestre figlio vengono propagate a catena, le finestre vengono visualizzate in uno stack. La finestra nella parte inferiore dello stack occupa l'angolo superiore sinistro dello schermo e le finestre rimanenti vengono sfalsate verticalmente e orizzontalmente, in modo che il bordo sinistro e la barra del titolo di ogni finestra figlio siano visibili. Per disporre le finestre figlio nel formato Cascade, un'applicazione MDI invia il messaggio [**WM \_ MDICASCADE**](wm-mdicascade.md) . In genere, l'applicazione invia questo messaggio quando l'utente fa clic su **Cascade** nel menu finestra.
+Un'applicazione MDI può disporre le finestre figlio in un formato a catena o affiancato. Quando le finestre figlio vengono propagate, le finestre vengono visualizzate in uno stack. La finestra nella parte inferiore dello stack occupa l'angolo superiore sinistro dello schermo e le finestre rimanenti vengono offset verticalmente e orizzontalmente in modo che il bordo sinistro e la barra del titolo di ogni finestra figlio siano visibili. Per disporre le finestre figlio nel formato a catena, un'applicazione MDI invia il [**messaggio WM \_ MDICASCADE.**](wm-mdicascade.md) In genere, l'applicazione invia questo messaggio quando l'utente fa clic su **Propaga** nel menu della finestra.
 
-Quando le finestre figlio sono affiancate, il sistema Visualizza ogni finestra figlio nella sua interezza, sovrapposta a nessuna delle finestre. Tutte le finestre vengono dimensionate in base alle esigenze per adattarsi alla finestra del client. Per disporre le finestre figlio nel formato tessera, un'applicazione MDI Invia un [**messaggio \_ MDITILE WM**](wm-mditile.md) alla finestra client. In genere, l'applicazione invia questo messaggio quando l'utente fa clic sul **riquadro** nel menu finestra.
+Quando le finestre figlio vengono affiancate, il sistema visualizza ogni finestra figlio nella sua interezza, non sovrapponendo nessuna delle finestre. Tutte le finestre vengono ridimensionate, in base alle esigenze, per adattarsi alla finestra del client. Per disporre le finestre figlio nel formato riquadro, un'applicazione MDI invia un [**messaggio \_ WM MDITILE**](wm-mditile.md) alla finestra client. In genere, l'applicazione invia questo messaggio quando l'utente fa clic **su Riquadro** nel menu della finestra.
 
-Un'applicazione MDI deve fornire un'icona diversa per ogni tipo di finestra figlio supportata. L'applicazione specifica un'icona quando si registra la classe della finestra figlio. Il sistema visualizza automaticamente l'icona di una finestra figlio nella parte inferiore della finestra del client quando la finestra figlio è ridotta a icona. Un'applicazione MDI indica al sistema di disporre le icone della finestra figlio inviando un messaggio [**\_ MDIICONARRANGE WM**](wm-mdiiconarrange.md) alla finestra client. In genere, l'applicazione invia questo messaggio quando l'utente fa clic su **Disponi icone** nel menu finestra.
+Un'applicazione MDI deve fornire un'icona diversa per ogni tipo di finestra figlio che supporta. L'applicazione specifica un'icona durante la registrazione della classe della finestra figlio. Il sistema visualizza automaticamente l'icona di una finestra figlio nella parte inferiore della finestra client quando la finestra figlio è ridotta a icona. Un'applicazione MDI indica al sistema di disporre le icone della finestra figlio inviando un messaggio [**\_ WM MDIICONARRANGE**](wm-mdiiconarrange.md) alla finestra client. In genere, l'applicazione invia questo messaggio quando l'utente fa clic **su Disponi** icone nel menu della finestra.
 
-## <a name="icon-title-windows"></a>Finestre del titolo dell'icona
+## <a name="icon-title-windows"></a>Icona Titolo Windows
 
-Poiché le finestre figlio MDI possono essere ridotte a icona, un'applicazione MDI deve evitare di manipolare le finestre del titolo delle icone come se fossero finestre figlio MDI normali. Le finestre del titolo dell'icona vengono visualizzate quando l'applicazione enumera le finestre figlio della finestra del client MDI. Le finestre del titolo dell'icona sono diverse dalle altre finestre figlio, tuttavia, in quanto sono di proprietà di una finestra figlio MDI.
+Poiché le finestre figlio MDI possono essere ridotte a icona, un'applicazione MDI deve evitare di modificare le finestre del titolo dell'icona come se fossero normali finestre figlio MDI. Le finestre del titolo dell'icona vengono visualizzate quando l'applicazione enumera le finestre figlio della finestra client MDI. Le finestre del titolo delle icone sono tuttavia diverse da altre finestre figlio, in quanto sono di proprietà di una finestra figlio MDI.
 
-Per determinare se una finestra figlio è una finestra del titolo dell'icona, usare la funzione [**GetWindow**](/windows/win32/api/winuser/nf-winuser-getwindow) con l' \_ indice del proprietario GW. Le finestre non di titolo restituiscono **null**. Si noti che questo test non è sufficiente per le finestre di primo livello, perché i menu e le finestre di dialogo sono di proprietà di Windows.
+Per determinare se una finestra figlio è una finestra del titolo dell'icona, usare la [**funzione GetWindow**](/windows/win32/api/winuser/nf-winuser-getwindow) con l'indice GW \_ OWNER. Le finestre non titolo restituiscono **NULL.** Si noti che questo test non è sufficiente per le finestre di primo livello, perché i menu e le finestre di dialogo sono finestre di proprietà.
 
 ## <a name="child-window-data"></a>Dati della finestra figlio
 
-Poiché il numero di finestre figlio varia a seconda del numero di documenti aperti dall'utente, un'applicazione MDI deve essere in grado di associare i dati, ad esempio il nome del file corrente, a ogni finestra figlio. A questo scopo è possibile procedere in due modi:
+Poiché il numero di finestre figlio varia a seconda del numero di documenti aperti dall'utente, un'applicazione MDI deve essere in grado di associare dati (ad esempio, il nome del file corrente) a ogni finestra figlio. A questo scopo è possibile procedere in due modi:
 
 -   Archiviare i dati della finestra figlio nella struttura della finestra.
--   Utilizzare le proprietà della finestra.
+-   Usare le proprietà della finestra.
 
-### <a name="window-structure"></a>Struttura finestra
+### <a name="window-structure"></a>Struttura della finestra
 
-Quando un'applicazione MDI registra una classe della finestra, può riservare ulteriore spazio nella struttura della finestra per i dati dell'applicazione specifici per questa particolare classe di finestre. Per archiviare e recuperare i dati in questo spazio aggiuntivo, l'applicazione usa le funzioni [**GetWindowLong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga) e [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) .
+Quando un'applicazione MDI registra una classe finestra, può riservare spazio aggiuntivo nella struttura della finestra per i dati dell'applicazione specifici di questa particolare classe di finestre. Per archiviare e recuperare dati in questo spazio aggiuntivo, l'applicazione usa le [**funzioni GetWindowLong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga) [**e SetWindowLong.**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)
 
 Per mantenere una grande quantità di dati per una finestra figlio, un'applicazione può allocare memoria per una struttura di dati e quindi archiviare l'handle nella memoria contenente la struttura nello spazio aggiuntivo associato alla finestra figlio.
 
 ### <a name="window-properties"></a>Proprietà finestra
 
-Un'applicazione MDI può inoltre archiviare dati per documento utilizzando le proprietà della finestra. I *dati per documento* sono dati specifici del tipo di documento contenuto in una particolare finestra figlio. Le proprietà sono diverse dallo spazio aggiuntivo nella struttura della finestra perché non è necessario allocare spazio aggiuntivo durante la registrazione della classe di finestra. Una finestra può avere un numero qualsiasi di proprietà. Inoltre, quando vengono usati gli offset per accedere allo spazio aggiuntivo nelle strutture della finestra, le proprietà vengono definite in base ai nomi delle stringhe. Per ulteriori informazioni sulle proprietà della finestra, vedere [proprietà della finestra](window-properties.md).
+Un'applicazione MDI può anche archiviare dati per documento usando le proprietà della finestra. *I dati per documento* sono dati specifici del tipo di documento contenuto in una determinata finestra figlio. Le proprietà sono diverse dallo spazio aggiuntivo nella struttura della finestra in in cui non è necessario allocare spazio aggiuntivo durante la registrazione della classe della finestra. Una finestra può avere un numero qualsiasi di proprietà. Inoltre, quando gli offset vengono usati per accedere allo spazio aggiuntivo nelle strutture della finestra, le proprietà vengono definite dai nomi di stringa. Per altre informazioni sulle proprietà della finestra, vedere [Proprietà finestra](window-properties.md).
 
  
 

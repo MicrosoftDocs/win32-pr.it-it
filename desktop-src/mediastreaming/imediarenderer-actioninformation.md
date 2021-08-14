@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRenderer ActionInformation
-description: Recupera informazioni sui metodi che possono essere attualmente richiamati in ricevitore.
+description: Recupera informazioni sui metodi che possono essere attualmente richiamati nella dmr.
 ms.assetid: 7681FF92-DD13-4BBC-B860-E2BDFDA74FB9
 keywords:
-- API di streaming multimediale del metodo ActionInformation
-- API di streaming multimediale del metodo ActionInformation, interfaccia IMediaRenderer
-- API di streaming multimediale dell'interfaccia IMediaRenderer, metodo ActionInformation
+- Metodo ActionInformation API Streaming multimediale
+- Metodo ActionInformation API Streaming multimediale, interfaccia IMediaRenderer
+- Interfaccia IMediaRenderer API Streaming multimediale, metodo ActionInformation
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 346e43d6aaf3503c21f6a7586db5a731f0a7c478
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3caf251c080f218b99861d4a81920cd5c95c1f0e53bc6b006c84536f33f7f29c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104046659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118735524"
 ---
-# <a name="imediarendereractioninformation-method"></a>Metodo IMediaRenderer:: ActionInformation
+# <a name="imediarendereractioninformation-method"></a>Metodo IMediaRenderer::ActionInformation
 
-Recupera informazioni sui metodi che possono essere attualmente richiamati in ricevitore.
+Recupera informazioni sui metodi che possono essere attualmente richiamati nella dmr.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT ActionInformation(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Riceve un riferimento a un'interfaccia [**IMediaRendererActionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation) .
+Riceve un riferimento a [**un'interfaccia IMediaRendererActionInformation.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

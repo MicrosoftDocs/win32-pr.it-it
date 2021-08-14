@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWTexture1D:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione RWTexture1D:: GetDimensions'
+title: Funzione RWTexture1D::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione RWTexture1D::GetDimensions
 ms.assetid: 1bbd53ed-9396-4e8e-b2f3-3bd85f6e1a90
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b65f0113ecf2c91786e45c35f5e8e832744bc952
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: eb779d071f471abe92b18ef456a2a016536a5231ccf327f8ebd175be8e5ff224
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509293"
 ---
-# <a name="rwtexture1dgetdimensions-function"></a>Funzione RWTexture1D:: GetDimensions
+# <a name="rwtexture1dgetdimensions-function"></a>Funzione RWTexture1D::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Nothing
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -66,7 +66,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -81,7 +81,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture1D](sm5-object-rwtexture1d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

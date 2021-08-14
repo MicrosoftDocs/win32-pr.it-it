@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_NCXBUTTONDBLCLK (winuser. h)
-description: Inviato quando l'utente fa doppio clic sul primo o sul secondo pulsante X mentre il cursore si trova nell'area non client di una finestra. Questo messaggio viene inserito nella finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene inviato.
+title: WM_NCXBUTTONDBLCLK messaggio (Winuser.h)
+description: Inviato quando l'utente fa doppio clic sul primo o sul secondo pulsante X mentre il cursore si trova nell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 ms.assetid: 8c0b1e96-9cbb-4ef8-83ff-9253f1a934ef
 keywords:
-- Input della tastiera e del mouse WM_NCXBUTTONDBLCLK messaggio
+- WM_NCXBUTTONDBLCLK messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1455f6d6c2fa40f34bbfbe00e0c7a30daa52f375
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46b5b0deb3efb84af2bdd862377411d86328ee7ef72242a6e27759b819cdab2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482641"
 ---
-# <a name="wm_ncxbuttondblclk-message"></a>\_Messaggio NCXBUTTONDBLCLK WM
+# <a name="wm_ncxbuttondblclk-message"></a>Messaggio \_ WM NCXBUTTONDBLCLK
 
-Inviato quando l'utente fa doppio clic sul primo o sul secondo pulsante X mentre il cursore si trova nell'area non client di una finestra. Questo messaggio viene inserito nella finestra che contiene il cursore. Se una finestra ha acquisito il mouse, questo messaggio non viene inviato.
+Inviato quando l'utente fa doppio clic sul primo o sul secondo pulsante X mentre il cursore si trova nell'area non client di una finestra. Questo messaggio viene inviato alla finestra che contiene il cursore. Se il mouse è stato acquisito da una finestra, questo messaggio non viene inviato.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,16 +41,16 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-La parola di ordine inferiore specifica il valore di hit test restituito dalla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) dall'elaborazione del messaggio [**WM \_ NCHITTEST**](wm-nchittest.md) . Per un elenco dei valori di hit test, vedere **WM \_ NCHITTEST**.
+La parola più bassa specifica il valore dell'hit test restituito dalla funzione [**DefWindowProc dall'elaborazione**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) del [**messaggio WM \_ NCHITTEST.**](wm-nchittest.md) Per un elenco di valori di hit test, vedere **WM \_ NCHITTEST.**
 
-La parola più ordinata indica il pulsante su cui è stato fatto doppio clic. Può essere uno dei valori seguenti.
+La parola più alta indica il pulsante su cui è stato fatto doppio clic. Può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                     | Significato                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <span id="XBUTTON1"></span><span id="xbutton1"></span><dl> <dt></dt> <dt>0x0001</dt> XBUTTON1 </dl> | È stato fatto doppio clic sul primo pulsante X.<br/> |
-| <span id="XBUTTON2"></span><span id="xbutton2"></span><dl> <dt></dt> <dt>0x0002</dt> XBUTTON2 </dl> | È stato fatto doppio clic sul secondo pulsante X.<br/> |
+| <span id="XBUTTON1"></span><span id="xbutton1"></span><dl> <dt>**XBUTTON1**</dt> <dt>0x0001</dt> </dl> | È stato fatto doppio clic sul primo pulsante X.<br/> |
+| <span id="XBUTTON2"></span><span id="xbutton2"></span><dl> <dt>**XBUTTON2**</dt> <dt>0x0002</dt> </dl> | È stato fatto doppio clic sul secondo pulsante X.<br/> |
 
 
 
@@ -61,17 +61,17 @@ La parola più ordinata indica il pulsante su cui è stato fatto doppio clic. Pu
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**Points**](/previous-versions//dd162808(v=vs.85)) che contiene le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
+Puntatore a [**una struttura POINTS**](/previous-versions//dd162808(v=vs.85)) che contiene le coordinate x e y del cursore. Le coordinate sono relative all'angolo superiore sinistro dello schermo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire **true**. Per ulteriori informazioni sull'elaborazione del valore restituito, vedere la sezione Osservazioni.
+Se un'applicazione elabora questo messaggio, deve restituire **TRUE.** Per altre informazioni sull'elaborazione del valore restituito, vedere la sezione Osservazioni.
 
 ## <a name="remarks"></a>Commenti
 
-Usare il codice seguente per ottenere le informazioni nel parametro *wParam* .
+Usare il codice seguente per ottenere le informazioni nel *parametro wParam.*
 
 
 ```
@@ -92,15 +92,15 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 > [!IMPORTANT]
-> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitoraggi. I sistemi con più monitoraggi possono avere coordinate x e y negative e **LOWORD** e **HIWORD** considerano le coordinate come quantità senza segno.
+> Non usare le macro [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) per estrarre le coordinate x e y della posizione del cursore perché queste macro restituiscono risultati non corretti nei sistemi con più monitor. I sistemi con più monitor possono avere coordinate x e y negative e **LOWORD** e **HIWORD** trattano le coordinate come quantità senza segno.
 
  
 
-Per impostazione predefinita, la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) testa il punto specificato per ottenere la posizione del cursore ed esegue l'azione appropriata. Se appropriato, invia il messaggio [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) alla finestra.
+Per impostazione predefinita, [**la funzione DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) verifica il punto specificato per ottenere la posizione del cursore ed esegue l'azione appropriata. Se appropriato, invia il [**messaggio \_ SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand) alla finestra.
 
-Una finestra non deve avere lo stile **cs \_ DBLCLKS** per ricevere i messaggi **WM \_ NCXBUTTONDBLCLK** . Il sistema genera un messaggio **WM \_ NCXBUTTONDBLCLK** quando l'utente preme, rilascia e preme di nuovo un pulsante X entro il limite di tempo doppio clic del sistema. Facendo doppio clic su uno di questi pulsanti vengono effettivamente generati quattro messaggi: [**WM \_ NCXBUTTONDOWN**](wm-ncxbuttondown.md), [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md), **WM \_ NCXBUTTONDBLCLK** e **WM \_ NCXBUTTONUP** .
+Una finestra non deve avere lo stile **\_ CS DBLCLKS** per ricevere **messaggi WM \_ NCXBUTTONDBLCLK.** Il sistema genera un messaggio **WM \_ NCXBUTTONDBLCLK** quando l'utente preme, rilascia e preme di nuovo un pulsante X entro il limite di tempo del doppio clic del sistema. Facendo doppio clic su uno di questi pulsanti vengono generati di nuovo quattro messaggi: [**WM \_ NCXBUTTONDOWN**](wm-ncxbuttondown.md), [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md), **WM \_ NCXBUTTONDBLCLK** e **WM \_ NCXBUTTONUP.**
 
-A differenza dei [**messaggi \_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e [**WM \_ NCRBUTTONDBLCLK**](wm-ncrbuttondblclk.md) , un'applicazione deve restituire **true** da questo messaggio se viene elaborata. In questo modo si consentirà il software che simula questo messaggio nei sistemi Windows precedenti a Windows 2000 per determinare se la routine della finestra ha elaborato il messaggio o chiamato [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) per elaborarlo.
+A differenza dei messaggi [**\_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e [**WM \_ NCRBUTTONDBLCLK,**](wm-ncrbuttondblclk.md) un'applicazione deve restituire **TRUE** da questo messaggio se viene elaborata. In questo modo il software che simula questo messaggio in sistemi Windows precedenti Windows 2000 può determinare se la procedura della finestra ha elaborato il messaggio o ha chiamato [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) per elaborarlo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -110,7 +110,7 @@ A differenza dei [**messaggi \_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [*
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include WINDOWSX. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windowsx.h)</dt> </dl> |
 
 
 
@@ -124,37 +124,37 @@ A differenza dei [**messaggi \_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [*
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**Ottieni \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OTTENERE \_ il \_ lParam Y**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
-[**\_NCHITTEST WM**](wm-nchittest.md)
+[**WM \_ NCHITTEST**](wm-nchittest.md)
 </dt> <dt>
 
-[**\_NCXBUTTONDOWN WM**](wm-ncxbuttondown.md)
+[**WM \_ NCXBUTTONDOWN**](wm-ncxbuttondown.md)
 </dt> <dt>
 
-[**\_NCXBUTTONUP WM**](wm-ncxbuttonup.md)
+[**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md)
 </dt> <dt>
 
-[**\_SYSCOMMAND WM**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Input del mouse](mouse-input.md)
+[Mouse Input](mouse-input.md)
 </dt> <dt>
 
 **Altre risorse**
 </dt> <dt>
 
-[**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
+[**PUNTI DI APPLICAZIONE**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**PUNTI**](/previous-versions//dd162808(v=vs.85))
+[**Punti**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

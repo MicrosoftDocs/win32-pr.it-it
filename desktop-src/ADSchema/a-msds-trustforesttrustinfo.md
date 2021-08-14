@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-Trust-Forest-Trust-Info
-description: Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utilizzato dal sistema per un oggetto Trusted-Domain.
+title: Attributo ms-DS-Trust-Forest-Trust-Info
+description: Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema per un Trusted-Domain oggetto .
 ms.assetid: 60944ff6-d2b1-4f53-8557-7d79a7d9df51
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo ms-DS-Trust-Forest-Trust-Info
-- attributo msDS-TrustForestTrustInfo-schema AD
+- Schema AD dell'attributo ms-DS-Trust-Forest-Trust-Info
+- Schema AD dell'attributo msDS-TrustForestTrustInfo
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e259abaeae4d99b80b8ff6a390901f1c9f51e6a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ae350001aa616052c1f0358497364ecfbce55d40e91314c56100d12848efc0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960570"
 ---
-# <a name="ms-ds-trust-forest-trust-info-attribute"></a>attributo ms-DS-Trust-Forest-Trust-Info
+# <a name="ms-ds-trust-forest-trust-info-attribute"></a>Attributo ms-DS-Trust-Forest-Trust-Info
 
-Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utilizzato dal sistema per un oggetto Trusted-Domain.
+Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema per un Trusted-Domain oggetto .
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
 | CN                | ms-DS-Trust-Forest-Trust-Info                                                                                      |
-| LDAP-Display-Name | msDS-TrustForestTrustInfo                                                                                          |
+| Ldap-Display-Name | msDS-TrustForestTrustInfo                                                                                          |
 | Dimensione              | \-                                                                                                                 |
-| Privilegio aggiornamento  | \-                                                                                                                 |
-| Frequenza di aggiornamento  | Solo quando la relazione di trust tra le foreste cambia. Questo problema può verificarsi se la topologia di una foresta trusted viene modificata. |
+| Aggiorna privilegio  | \-                                                                                                                 |
+| Frequenza di aggiornamento  | Solo quando cambia la relazione di trust tra foreste. Questo problema può verificarsi in caso di modifica della topologia di una foresta trusted. |
 | Attribute-Id      | 1.2.840.113556.1.4.1702                                                                                            |
-| System-ID-GUID    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
+| System-Id-Guid    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                              |
 
 
@@ -57,15 +57,15 @@ Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utiliz
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utiliz
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utiliz
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utiliz
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Contiene informazioni sull'attendibilità della foresta (un BLOB binario) utiliz
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

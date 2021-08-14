@@ -1,9 +1,9 @@
 ---
-title: Funzione MrmIndexEmbeddedData (MrmResourceIndexer. h)
-description: Indicizza una singola risorsa dati incorporata che appartiene a un'app UWP.
+title: Funzione MrmIndexEmbeddedData (MrmResourceIndexer.h)
+description: Indicizza una singola risorsa dati incorporata appartenente a un'app UWP.
 ms.assetid: 4DA37CF9-43B6-44EE-8A10-DBD4510D7885
 keywords:
-- Menu della funzione MrmIndexEmbeddedData e altre risorse
+- Menu e altre risorse della funzione MrmIndexEmbeddedData
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 308d08e0e125e7919ad3eb32e6cba2184356fce5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7897df30506b66e74122c238e25a5b20fa5e1635e299c8a08db2519c842bdf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972000"
 ---
-# <a name="mrmindexembeddeddata-function"></a>MrmIndexEmbeddedData (funzione)
+# <a name="mrmindexembeddeddata-function"></a>Funzione MrmIndexEmbeddedData
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Indicizza una singola risorsa **dati incorporata** che appartiene a un'app UWP. Accetta un elenco esplicito (ma facoltativo) di qualificatori di risorse. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere [API pri (Package Resource Indexing) e sistemi di compilazione personalizzati](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Indicizza una singola **risorsa dati incorporata** appartenente a un'app UWP. Accetta un elenco esplicito (ma facoltativo) di qualificatori di risorsa. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT HRESULT MrmIndexEmbeddedData(
 
 <dl> <dt>
 
-*indicizzatore* \[ in\]
+*indicizzatore* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)**
@@ -55,7 +55,7 @@ Handle che identifica l'indicizzatore di risorse che indicizza il file di risors
 
 </dd> <dt>
 
-*resourceUri* \[ in\]
+*resourceUri* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
@@ -64,21 +64,21 @@ URI della risorsa da assegnare alla risorsa. Il percorso verrà usato come nome 
 
 </dd> <dt>
 
-*dati incorporata* \[ in\]
+*dati incorporati* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* byte* _
+Tipo: **const \* BYTE**
 
-Puntatore ai dati della risorsa che si desidera indicizzare.
+Puntatore ai dati della risorsa da indicizzare.
 
 </dd> <dt>
 
-_embeddedDataSize * \[ in\]
+*embeddedDataSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **ULONG**
 
-Dimensione dei dati a cui punta *dati incorporata*.
+Dimensioni dei dati a cui punta *embeddedData.*
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Dimensione dei dati a cui punta *dati incorporata*.
 
 Tipo: **PCWSTR**
 
-Elenco facoltativo di qualificatori di risorse, ad esempio L "lingua-en-US \_ scale-100 \_ contrasto-standard". Una stringa vuota o **nullptr** indica una risorsa neutra. I qualificatori di risorse *non* vengono dedotti da *resourceUri*.
+Elenco facoltativo di qualificatori di risorsa, ad esempio L"language-en-US \_ scale-100 \_ contrast-standard". Una stringa vuota o **nullptr** indica una risorsa neutra. I qualificatori di *risorsa non* vengono dedotte da *resourceUri.*
 
 </dd> </dl>
 
@@ -95,13 +95,13 @@ Elenco facoltativo di qualificatori di risorse, ad esempio L "lingua-en-US \_ sc
 
 Tipo: **HRESULT**
 
-S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Utilizzare le macro SUCCEEDed () o FAILED () (definite in Winerror. h) per determinare l'esito positivo o negativo.
+S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valore. Usare le macro SUCCEEDED() o FAILED() (definite in winerror.h) per determinare l'esito positivo o negativo.
 
 ## <a name="remarks"></a>Commenti
 
-Se si desidera specificare i qualificatori delle risorse, passarli nel parametro *Qualifiers* . I qualificatori di risorse *non* vengono dedotti da *resourceUri*.
+Se si vogliono specificare qualificatori di risorsa, passarli nel *parametro qualifiers.* I qualificatori di *risorsa non* vengono dedotte da *resourceUri.*
 
-Il segmento di nome file di *resourceUri* viene usato come nome della risorsa.
+Il segmento del nome file *di resourceUri* viene usato come nome della risorsa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,10 +109,10 @@ Il segmento di nome file di *resourceUri* viene usato come nome della risorsa.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1803 \[\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1803 \[\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo \[ app desktop server\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

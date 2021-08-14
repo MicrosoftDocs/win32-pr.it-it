@@ -1,26 +1,26 @@
 ---
-title: Per enumerare tutti i codec Windows Media installati
-description: Per enumerare tutti i codec Windows Media installati
+title: Per enumerare tutti i codec Windows multimediali installati
+description: Per enumerare tutti i codec Windows multimediali installati
 ms.assetid: 651c8624-0b66-4d0e-a25f-6c4b1a94e849
 keywords:
-- flussi, enumerazione dei codec Windows Media installati
+- flussi, enumerazione dei codec Windows multimediali
 - codec, enumerazioni
 - flussi, indici di codec
 - codec, indici
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db9a35913dde13f563ee57d54ee5e7de87d82cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b63f58f94cf36e18fcbaa31bb9cff0dd8b5ab4717cc88e6f05657c7a2c72b429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699813"
 ---
-# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Per enumerare tutti i codec Windows Media installati
+# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Per enumerare tutti i codec Windows multimediali installati
 
-Le interfacce di informazioni del codec utilizzano tutti gli indici codec per identificare i singoli codec. I codec sono indicizzati in modo indipendente per l'audio e per i video. All'interno di un tipo di codec, gli indici variano da 0 a uno inferiore al numero di codec di quel tipo.
+Le interfacce di informazioni sui codec usano tutti gli indici dei codec per identificare i singoli codec. I codec vengono indicizzati in modo indipendente per l'audio e per il video. All'interno di un tipo di codec, gli indici vanno da 0 a uno inferiore al numero di codec di quel tipo.
 
-Nell'esempio di codice seguente viene illustrato come ottenere l'indice associato a ciascun codec. Per compilare il codice nell'applicazione, includere STDIO. h.
+Il codice di esempio seguente illustra come ottenere l'indice associato a ogni codec. Per compilare questo codice nell'applicazione, includere stdio.h.
 
 
 ```C++
@@ -148,12 +148,12 @@ HRESULT GetCodecNames(IWMCodecInfo3* pCodecInfo)
 
 <dl> <dt>
 
-[**Recupero delle informazioni di configurazione dei flussi dai codec**](getting-stream-configuration-information-from-codecs.md)
+[**Recupero delle informazioni di configurazione del flusso dai codec**](getting-stream-configuration-information-from-codecs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

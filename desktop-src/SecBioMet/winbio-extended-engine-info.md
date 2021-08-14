@@ -1,10 +1,10 @@
 ---
-title: Struttura WINBIO_EXTENDED_ENGINE_INFO ( \_ tipi WINBIO. h)
-description: Contiene informazioni sulle funzionalità e i requisiti di registrazione della scheda del motore per un'unità biometrica.
+title: WINBIO_EXTENDED_ENGINE_INFO struttura (Winbio \_ types.h)
+description: Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore per un'unità biometrica.
 ms.assetid: 83586E04-24CA-4A39-836F-C80DB1508C71
 keywords:
-- Struttura di WINBIO_EXTENDED_ENGINE_INFO Windows Biometric Framework API
-- API Windows Biometric Framework puntatore alla struttura PWINBIO_EXTENDED_ENGINE_INFO
+- WINBIO_EXTENDED_ENGINE_INFO struttura Windows'API Biometric Framework
+- PWINBIO_EXTENDED_ENGINE_INFO puntatore alla struttura Windows'API Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829bd0423ab6add41b17f59d308aea850c5b2f42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df59b10400729150a13f2a8a5476c46507867777f71641a01ea0c08e064b4c40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910517"
 ---
-# <a name="winbio_extended_engine_info-structure"></a>\_ \_ Struttura informazioni motore esteso WINBIO \_
+# <a name="winbio_extended_engine_info-structure"></a>Struttura DELLE INFORMAZIONI \_ SUL \_ MOTORE \_ ESTESO WINBIO
 
-Contiene informazioni sulle funzionalità e i requisiti di registrazione della scheda del motore per un'unità biometrica.
+Contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore per un'unità biometrica.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -84,14 +84,14 @@ Funzionalità generiche del componente motore connesso a un'unità biometrica sp
 **Fattore**
 </dt> <dd>
 
-Tipo di unità biometrica per la quale questa struttura contiene informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore. Se, ad esempio, il valore del membro **Factor** è **WINBIO \_ , \_** la struttura di **\_ informazioni del \_ motore \_ esteso WINBIO** si applica a un lettore di impronte digitali e contiene le informazioni rilevanti nella struttura **specifico. Fingerprint** .
+Tipo di unità biometrica per cui questa struttura contiene informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore. Ad esempio, se il valore del membro **Factor** è **WINBIO \_ TYPE \_ FINGERPRINT,** la struttura **WINBIO \_ EXTENDED ENGINE \_ \_ INFO** si applica a un lettore di impronta digitale e contiene le informazioni rilevanti nella **struttura Specifc.Fingerprint.**
 
 </dd> <dt>
 
 **Specifica**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore per un'unità biometrica correlata a un fattore biometrico specifico.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore per un'unità biometrica correlata a un fattore biometrico specifico.
 
 <dl> <dt>
 
@@ -102,10 +102,10 @@ Riservato. Deve essere zero.
 
 </dd> <dt>
 
-**FacialFeatures**
+**Funzionalità del viso**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore per un'unità biometrica correlata alle funzionalità facciali.
+Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore motore per un'unità biometrica correlata alle caratteristiche facciali.
 
 <dl> <dt>
 
@@ -129,7 +129,7 @@ Riservato. Deve essere zero.
 **Impronta digitale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore per un'unità biometrica relativa ai modelli di impronta digitale.
+Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore motore per un'unità biometrica correlata ai modelli di impronta digitale.
 
 <dl> <dt>
 
@@ -143,56 +143,56 @@ Riservato. Deve essere zero.
 **EnrollmentRequirements**
 </dt> <dd>
 
-Il numero di campioni validi necessari per creare un nuovo modello di impronta digitale.
+Numero di esempi buoni necessari per creare un nuovo modello di impronta digitale.
 
 <dl> <dt>
 
 **GeneralSamples**
 </dt> <dd>
 
-Numero totale di campioni validi necessari per creare un nuovo modello di impronta digitale.
+Numero totale di campioni buoni necessari per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **Center**
 </dt> <dd>
 
-Il numero di campioni validi per il centro dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di campioni per il centro dell'impronta digitale necessari per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **TopEdge**
 </dt> <dd>
 
-Il numero di campioni validi per il bordo superiore dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di campioni per il bordo superiore dell'impronta digitale necessari per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **BottomEdge**
 </dt> <dd>
 
-Il numero di campioni validi per il bordo inferiore dell'impronta digitale necessario per creare un nuovo modello di impronta digitale.
+Numero di campioni per il bordo inferiore dell'impronta digitale necessari per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **LeftEdge**
 </dt> <dd>
 
-Il numero di campioni validi per il bordo sinistro dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
+Numero di campioni per il bordo sinistro dell'impronta digitale necessari per creare un nuovo modello di impronta digitale.
 
 </dd> <dt>
 
 **RightEdge**
 </dt> <dd>
 
-Il numero di campioni validi per il bordo destro dell'impronta digitale necessaria per creare un nuovo modello di impronta digitale.
+Numero di campioni per il bordo destro dell'impronta digitale necessari per creare un nuovo modello di impronta digitale.
 
 </dd> </dl> </dd> </dl> </dd> <dt>
 
 **Iris**
 </dt> <dd>
 
-Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore del motore per un'unità biometrica relativa ai modelli Iris.
+Informazioni sulle funzionalità e i requisiti di registrazione dell'adattatore motore per un'unità biometrica correlata ai modelli iris.
 
 <dl> <dt>
 
@@ -216,7 +216,7 @@ Riservato. Deve essere zero.
 **Chiamata vocale**
 </dt> <dd>
 
-Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore del motore per un'unità biometrica relativa ai modelli vocali.
+Informazioni sulle funzionalità e sui requisiti di registrazione dell'adattatore motore per un'unità biometrica correlata ai modelli vocali.
 
 <dl> <dt>
 
@@ -243,9 +243,9 @@ Riservato. Deve essere zero.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>WinBio \_ types. h (includere WinBio. h per le applicazioni client o WinBio \_ Adapters. h per gli adapter)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                                                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                                                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (includere Winbio.h per le applicazioni client o Winbio \_ adapters.h per gli adapter)</dt> </dl> |
 
 
 
@@ -253,10 +253,10 @@ Riservato. Deve essere zero.
 
 <dl> <dt>
 
-[**\_Costanti della funzionalità WINBIO**](winbio-capability-constants.md)
+[**Costanti CAPABILITY WINBIO \_**](winbio-capability-constants.md)
 </dt> <dt>
 
-[**\_ \_ Costanti di tipo biometrico WINBIO**](winbio-biometric-type-constants.md)
+[**Costanti DI TIPO \_ BIOMETRICO WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> </dl>
 
  

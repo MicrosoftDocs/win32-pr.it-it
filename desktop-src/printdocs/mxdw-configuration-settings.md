@@ -1,28 +1,28 @@
 ---
-description: Microsoft XPS Document Writer (MXDW) consente agli utenti di creare file di documenti XPS stampando da qualsiasi applicazione Windows.
+description: Il Microsoft XPS Document Writer (MXDW) consente agli utenti di creare file di documenti XPS stampando da qualsiasi Windows applicazione.
 ms.assetid: 1fa50337-2df7-48d3-a179-0ca5ae3dfda3
-title: Impostazioni di configurazione di MXDW
+title: Configurazione di MXDW Impostazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4026a99baa33ec50bc3ad129ef6610a428f83ab
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 7a75d45ea3ad9c8c74280d1e70e418ee0bf4823d1f0332e3d5c772d29976cf2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971190"
 ---
-# <a name="mxdw-configuration-settings"></a>Impostazioni di configurazione di MXDW
+# <a name="mxdw-configuration-settings"></a>Configurazione di MXDW Impostazioni
 
-Microsoft XPS Document Writer (MXDW) consente agli utenti di creare file di documenti XPS stampando da qualsiasi applicazione Windows. Gli sviluppatori di applicazioni possono controllare le seguenti impostazioni di output di MXDW utilizzando le parti PrintTicket e PrintCapabilities dello [schema di stampa](./printschema.md).
+Il Microsoft XPS Document Writer (MXDW) consente agli utenti di creare file di documenti XPS stampando da qualsiasi Windows applicazione. Gli sviluppatori di applicazioni possono controllare le impostazioni di output seguenti di MXDW usando le parti PrintTicket e PrintCapabilities dello [schema di stampa.](./printschema.md)
 
 ## <a name="jobinterleaving"></a>JobInterleaving
 
-L'impostazione JobInterleaving controlla l'ordine di interfoliazione del contenuto per i documenti XPS. Per informazioni sull'interfoliazione dei processi, vedere la [specifica del documento XML](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf). MXDW supporta le due opzioni seguenti per questa impostazione:
+L'impostazione JobInterleaving controlla l'ordine di interfoliazione del contenuto per i documenti XPS. Per informazioni sull'interfoliazione dei processi, vedere [l'XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf). MXDW supporta le due opzioni seguenti per questa impostazione:
 
--   **Off** : questa opzione Disabilita l'interfoliazione in modo che tutti i dati per ogni elemento contenuto nel documento siano contigui, migliorando così l'efficienza dell'accesso casuale. Questa opzione è consigliata per la visualizzazione di un documento XPS.
--   **On** : questa opzione consente l'interfoliazione in modo che i dati per ogni elemento di contenuto vengano suddivisi e riordinati per un'elaborazione sequenziale più efficiente. Questa opzione è consigliata per il download e la stampa Web.
+-   **Off:** questa opzione disabilita l'interfoliazione in modo che tutti i dati per ogni elemento di contenuto nel documento siano contigui, migliorando così l'efficienza dell'accesso casuale. Questa opzione è ideale per la visualizzazione di un documento XPS.
+-   **Sì:** questa opzione abilita l'interfoliazione in modo che i dati per ogni elemento di contenuto vengono suddivisi e riordinati per un'elaborazione sequenziale più efficiente. Questa opzione è ideale per il download Web e la stampa.
 
-Nell'esempio seguente viene riportato un esempio del codice XML PrintCapabilities che include l'impostazione JobInterleaving.
+L'esempio seguente è un esempio del file XML PrintCapabilities che include l'impostazione JobInterleaving.
 
 
 ```XML
@@ -48,9 +48,9 @@ Nell'esempio seguente viene riportato un esempio del codice XML PrintCapabilitie
 
 
 
-Il codice XML PrintTicket è simile, ad eccezione del fatto che specifica una particolare opzione. Per informazioni dettagliate, vedere lo [schema di stampa](./printschema.md) .
+Il codice XML PrintTicket è simile, ad eccezione del fatto che specifica un'opzione specifica. Per informazioni [dettagliate, vedere Schema](./printschema.md) di stampa.
 
-Poiché JobInterleaving non è una delle [parole chiave pubbliche dello schema di stampa](./print-schema-public-keywords.md), è necessario includere una dichiarazione dello spazio dei nomi (in questo caso "ns0000" nel tag **PrintCapabilities** (o **PrintTicket**) all'inizio del documento PrintCapabilities (o PrintTicket), come illustrato nell'esempio seguente:
+Poiché JobInterleaving non è una delle parole chiave pubbliche dello [schema](./print-schema-public-keywords.md)di stampa , è necessario includere una dichiarazione dello spazio dei nomi (in questo caso "ns0000" nel tag **PrintCapabilities** (o **PrintTicket**) all'inizio del documento PrintCapabilities (o PrintTicket), come illustrato nell'esempio seguente:
 
 
 ```XML
@@ -67,12 +67,12 @@ xmlns:ns0000=http://schemas.microsoft.com/windows/2006/06/printing/printschemake
 
 JobImageType controlla il formato di output dei formati bitmap incorporati. MXDW supporta le quattro opzioni seguenti per questa impostazione:
 
--   **JPEGHigh** : questa opzione specifica l'immagine JPEG con un livello elevato di compressione. Questa opzione produce le dimensioni del file più piccole, ma la qualità dell'immagine più bassa.
--   **JPEGMed** : questa opzione specifica l'immagine JPEG con un livello di compressione medio. Questa opzione offre il migliore equilibrio tra dimensioni del file e qualità dell'immagine.
--   **JPEGLow** : questa opzione specifica l'immagine JPEG con un basso livello di compressione. Questa opzione produce una riduzione minima delle dimensioni dei file e della qualità dell'immagine elevata.
--   **Png** : questa opzione specifica il formato dell'immagine PNG con compressione senza perdita di perdite. Questa opzione produce le dimensioni massime del file e la qualità dell'immagine più elevata.
+-   **JPEGHigh:** questa opzione specifica l'immagine JPEG con un livello elevato di compressione. Questa opzione produce le dimensioni del file più piccole, ma la qualità dell'immagine più bassa.
+-   **JPEGMed:** questa opzione specifica l'immagine JPEG con un livello medio di compressione. Questa opzione offre il miglior equilibrio tra dimensioni del file e qualità dell'immagine.
+-   **JPEGLow:** questa opzione specifica l'immagine JPEG con un basso livello di compressione. Questa opzione produce la riduzione minima delle dimensioni del file e la qualità elevata dell'immagine.
+-   **PNG:** questa opzione specifica il formato di immagine PNG con compressione senza perdita di dati. Questa opzione produce le dimensioni massime del file e la massima qualità dell'immagine.
 
-Di seguito è riportato il codice XML PrintCapabilities dell'impostazione JobImageType:
+Il file XML PrintCapabilities dell'impostazione JobImageType viene visualizzato di seguito:
 
 
 ```XML
@@ -108,9 +108,9 @@ Di seguito è riportato il codice XML PrintCapabilities dell'impostazione JobIma
 
 
 
-Il codice XML PrintTicket è simile, ad eccezione del fatto che specifica una particolare opzione. Per informazioni dettagliate, vedere lo [schema di stampa](./printschema.md) .
+Il codice XML PrintTicket è simile, ad eccezione del fatto che specifica un'opzione specifica. Per informazioni [dettagliate, vedere Schema](./printschema.md) di stampa.
 
-Poiché JobImageType non è una delle [parole chiave pubbliche dello schema di stampa](./print-schema-public-keywords.md), è necessario includere una dichiarazione dello spazio dei nomi (in questo caso "ns0000" nel tag **PrintCapabilities** (o **PrintTicket**) all'inizio del documento PrintCapabilities (o PrintTicket), come illustrato nell'esempio seguente:
+Poiché JobImageType non è una delle parole chiave pubbliche dello [schema](./print-schema-public-keywords.md)di stampa , è necessario includere una dichiarazione dello spazio dei nomi (in questo caso "ns0000" nel tag **PrintCapabilities** (o **PrintTicket**) all'inizio del documento PrintCapabilities (o PrintTicket), come illustrato nell'esempio seguente:
 
 
 ```XML
@@ -133,7 +133,7 @@ xmlns:ns0000=http://schemas.microsoft.com/windows/2006/06/printing/printschemake
 [Specifica dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> <dt>
 
-[Stampa schema](./printschema.md)
+[Schema di stampa](./printschema.md)
 </dt> <dt>
 
 [Specifiche XPS e download delle licenze](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

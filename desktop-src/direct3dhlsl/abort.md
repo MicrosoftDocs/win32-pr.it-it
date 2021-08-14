@@ -1,9 +1,9 @@
 ---
-title: funzione Abort (Corecrt \_ Terminate. h)
-description: Invia un messaggio di errore alla coda di informazioni e termina la chiamata di progetto o di invio corrente eseguita.
+title: Funzione abort (Corecrt \_ terminate.h)
+description: Invia un messaggio di errore alla coda di informazioni e termina la chiamata di disegno o invio corrente in esecuzione.
 ms.assetid: b8ce153b-0d1c-4294-b88e-b7e50e708ab9
 keywords:
-- funzione Abort HLSL
+- Funzione abort HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9428a03b422aed9ff6fae097459a53369d3a30e1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4a708d2893a19369d2db42f4551e3fafa4a1ff7a4680bf8676de32f79764289b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104982635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795525"
 ---
 # <a name="abort-function"></a>abort (funzione)
 
-Invia un messaggio di errore alla coda di informazioni e termina la chiamata di progetto o di invio corrente eseguita.
+Invia un messaggio di errore alla coda di informazioni e termina la chiamata di disegno o invio corrente in esecuzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,11 +50,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione non esegue alcuna operazione nei rasterizzatori che non lo supportano.
+Questa operazione non esegue alcuna operazione sui rasterizzatori che non la supportano.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
@@ -72,7 +72,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Corecrt \_ termina. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Corecrt \_ terminate.h</dt> </dl> |
 
 
 

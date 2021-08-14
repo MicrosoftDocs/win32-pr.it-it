@@ -4,12 +4,12 @@ ms.assetid: 78be9ad1-a795-4fd9-835c-3db9fbecab1c
 title: System.PropGroup.Content
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70288758dfda4440e4544db8f234e106fd8da972
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a11e5a4c95c6fabf7a69cd8c81f7d5639988e728cc2be7435053adfc4dccf9ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969960"
 ---
 # <a name="systempropgroupcontent"></a>System.PropGroup.Content
 

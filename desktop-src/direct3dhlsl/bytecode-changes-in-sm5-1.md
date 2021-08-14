@@ -1,21 +1,21 @@
 ---
-title: Modifiche bytecode in SM 5.1
-description: SM 5.1 modifica il modo in cui i registri delle risorse vengono dichiarati e viene fatto riferimento nelle istruzioni.
+title: Modifiche al bytecode in SM5.1
+description: SM5.1 modifica il modo in cui i registri delle risorse vengono dichiarati e a cui viene fatto riferimento nelle istruzioni.
 ms.assetid: ABECF705-67B8-4419-8D18-74B43B9DC3AF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d66db788b0012a1c3221e37d4c2dd4e41566c6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e93d7d8533bac3750e743166a9d64b687fc06f0fbf21931d44e7d83d462cf15a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794559"
 ---
-# <a name="bytecode-changes-in-sm51"></a>Modifiche bytecode in SM 5.1
+# <a name="bytecode-changes-in-sm51"></a>Modifiche al bytecode in SM5.1
 
-SM 5.1 modifica il modo in cui i registri delle risorse vengono dichiarati e viene fatto riferimento nelle istruzioni.
+SM5.1 modifica il modo in cui i registri delle risorse vengono dichiarati e a cui viene fatto riferimento nelle istruzioni.
 
-SM 5.1 si sposta verso la dichiarazione di una "variabile" del registro, in modo analogo al modo in cui viene eseguita per i registri di memoria condivisa del gruppo, illustrata nell'esempio seguente:
+SM5.1 si sposta verso la dichiarazione di un registro "variabile", simile a come viene eseguita per i registri di memoria condivisa di gruppo, illustrata nell'esempio seguente:
 
 ``` syntax
 Texture2D<float4> tex0          : register(t5,  space0);
@@ -33,7 +33,7 @@ float4 main(float4 coord : COORD) : SV_TARGET
 }
 ```
 
-Il disassembly di questo esempio segue:
+Il disassembly di questo esempio è il seguente:
 
 ``` syntax
 // Resource Bindings:
@@ -84,36 +84,36 @@ ret
 // Approximately 12 instruction slots used
 ```
 
-Ogni intervallo di risorse shader dispone ora di un ID (un nome) nel bytecode dello shader. Ad esempio, Tex1 texture array diventa ' T'1' nel codice byte dello shader. L'assegnazione di ID univoci a ogni intervallo di risorse consente due elementi:
+Ogni intervallo di risorse shader ha ora un ID (un nome) nel bytecode dello shader. Ad esempio, la matrice di trame tex1 diventa "t1" nel codice byte dello shader. L'impostazione di ID univoci per ogni intervallo di risorse consente due operazioni:
 
--   Identificare in modo univoco l'intervallo di risorse (vedere \_ la pagina relativa \_ all'indicizzazione della risorsa DCL Texture2D) in un'istruzione (vedere l'istruzione di esempio).
--   Alleghi set di attributi alla dichiarazione, ad esempio il tipo di elemento, le dimensioni stride, la modalità operativa raster e così via.
+-   Identificare in modo univoco l'intervallo di risorse (vedere dcl resource texture2d) indicizzato in un'istruzione \_ \_ (vedere l'istruzione di esempio).
+-   Associare un set di attributi alla dichiarazione, ad esempio il tipo di elemento, le dimensioni dello stride, la modalità di operazione raster e così via.
 
-Si noti che l'ID dell'intervallo non è correlato alla dichiarazione di limite inferiore HLSL.
+Si noti che l'ID dell'intervallo non è correlato alla dichiarazione del limite inferiore HLSL.
 
-L'ordine delle associazioni delle risorse di reflection e delle istruzioni di dichiarazione dello shader è lo stesso per facilitare l'identificazione della corrispondenza tra le variabili HLSL e gli ID bytecode.
+L'ordine delle associazioni di risorse di reflection e delle istruzioni di dichiarazione dello shader è lo stesso per facilitare l'identificazione della corrispondenza tra variabili HLSL e ID bytecode.
 
-Ogni istruzione di dichiarazione in SM 5.1 utilizza un operando 3D per definire: ID intervallo, limiti inferiori e superiori. Viene emesso un token aggiuntivo per specificare lo spazio del registro. È possibile che vengano generati anche altri token per fornire proprietà aggiuntive dell'intervallo, ad esempio cbuffer o l'istruzione di dichiarazione del buffer strutturato genera la dimensione di cbuffer o della struttura. I dettagli esatti della codifica sono disponibili in d3d12TokenizedProgramFormat. h e D3D10ShaderBinary:: CShaderCodeParser.
+Ogni istruzione di dichiarazione in SM5.1 usa un operando 3D per definire: ID intervallo, limiti inferiore e superiore. Viene generato un token aggiuntivo per specificare lo spazio di registrazione. È possibile generare anche altri token per trasmettere proprietà aggiuntive dell'intervallo, ad esempio l'istruzione cbuffer o di dichiarazione del buffer strutturato genera le dimensioni del cbuffer o della struttura. I dettagli esatti della codifica sono disponibili in d3d12TokenizedProgramFormat.h e D3D10ShaderBinary::CShaderCodeParser.
 
-Le istruzioni di SM 5.1 non emetteranno Informazioni aggiuntive sull'operando delle risorse come parte dell'istruzione (ad esempio, SM 5.0). Queste informazioni vengono ora spostate nelle istruzioni di dichiarazione. In SM 5.0, le istruzioni per l'indicizzazione delle risorse gli attributi delle risorse devono essere descritte in token opcode estesi, perché l'indicizzazione ha offuscato l'associazione alla dichiarazione. In SM 5.1 ogni ID (ad esempio,' t 1') viene associato in modo non ambiguo a una singola dichiarazione che descrive le informazioni necessarie sulle risorse. Pertanto, i token opcode estesi usati sulle istruzioni per descrivere le informazioni sulle risorse non vengono più generati.
+Le istruzioni SM5.1 non generano informazioni aggiuntive sull'operando di risorsa come parte dell'istruzione (come in SM5.0). Queste informazioni vengono ora spostate nelle istruzioni di dichiarazione. In SM5.0 le istruzioni per l'indicizzazione delle risorse richiedevano la descrizione degli attributi delle risorse nei token del codice operativo estesi, poiché l'indicizzazione offuscava l'associazione alla dichiarazione. In SM5.1 ogni ID (ad esempio 't1') è associato in modo non ambiguo a una singola dichiarazione che descrive le informazioni sulle risorse necessarie. Di conseguenza, i token opcode estesi usati nelle istruzioni per descrivere le informazioni sulle risorse non vengono più generati.
 
-Nelle istruzioni di non dichiarazione, un operando di risorsa per Samplers, SRVs e UAV è un operando 2D. Il primo indice è una costante letterale che specifica l'ID intervallo. Il secondo indice rappresenta il valore linearizzato dell'indice. Il valore viene calcolato in relazione all'inizio dello spazio di registro corrispondente (non relativo all'inizio dell'intervallo logico) per una migliore correlazione con la firma radice e per ridurre il carico del compilatore del driver per la modifica dell'indice.
+Nelle istruzioni non di dichiarazione, un operando di risorsa per campionatori, SPV e UAV è un operando 2D. Il primo indice è una costante letterale che specifica l'ID intervallo. Il secondo indice rappresenta il valore linearizzato dell'indice. Il valore viene calcolato in relazione all'inizio dello spazio del registro corrispondente (non rispetto all'inizio dell'intervallo logico) per correlare meglio con la firma radice e ridurre il carico del compilatore del driver di regolazione dell'indice.
 
-Un operando di risorsa per CBVs è un operando 3D: ID letterale dell'intervallo, indice di cbuffer, offset nell'istanza specifica di cbuffer.
+Un operando di risorsa per CBV è un operando 3D: ID letterale dell'intervallo, indice del cbuffer, offset nell'istanza specifica di cbuffer.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Funzionalità del modello HLSL shader 5,1 per Direct3D 12](hlsl-shader-model-5-1-features-for-direct3d-12.md)
+[Funzionalità di HLSL Shader Model 5.1 per Direct3D 12](hlsl-shader-model-5-1-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modello Shader 5,1](shader-model-5-1.md)
+[Modello shader 5.1](shader-model-5-1.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

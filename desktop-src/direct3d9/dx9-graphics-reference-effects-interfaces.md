@@ -1,19 +1,19 @@
 ---
-description: Gli effetti sono implementati con le interfacce seguenti.
+description: Gli effetti vengono implementati con le interfacce seguenti.
 ms.assetid: 7170b9db-7c6b-4a1d-a920-15b5b2eab8b0
 title: Interfacce degli effetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a2fe64bb4a850d0f888e16a9500928084d2540c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ceb72d68dd3a6ef05ada06651786b45d8c15106bd88d3b716beb57e44e64eafa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986021"
 ---
 # <a name="effect-interfaces"></a>Interfacce degli effetti
 
-Gli effetti sono implementati con le interfacce seguenti.
+Gli effetti vengono implementati con le interfacce seguenti.
 
 
 
@@ -24,7 +24,7 @@ Gli effetti sono implementati con le interfacce seguenti.
 | [**ID3DXEffectCompiler**](id3dxeffectcompiler.md)         | ID3DXBaseEffect |
 | [**ID3DXEffectPool**](id3dxeffectpool.md)                 | IUnknown        |
 | [**ID3DXEffectStateManager**](id3dxeffectstatemanager.md) | IUnknown        |
-| [**ID3DXInclude**](id3dxinclude.md)                       | nessuno            |
+| [**ID3DXInclude**](id3dxinclude.md)                       | Nessuno            |
 
 
 
@@ -34,7 +34,7 @@ Gli effetti sono implementati con le interfacce seguenti.
 
 <dl> <dt>
 
-[Riferimento a effetti](dx9-graphics-reference-effects.md)
+[Informazioni di riferimento sull'effetto](dx9-graphics-reference-effects.md)
 </dt> </dl>
 
  

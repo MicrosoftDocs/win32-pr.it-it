@@ -1,7 +1,7 @@
 ---
 description: Definisce le primitive supportate da Direct3D.
 ms.assetid: 89e697f9-02b9-4ae1-9e86-6178da0cb008
-title: Enumerazione D3DPRIMITIVETYPE (D3D9Types. h)
+title: Enumerazione D3DPRIMITIVETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 933bbec72950bd2c73fda8b3781dd46393ca4c96
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a7406670b055a11f30a71677a88dc6230aecec8d7660d886b1d63f53e6e61566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527517"
 ---
 # <a name="d3dprimitivetype-enumeration"></a>Enumerazione D3DPRIMITIVETYPE
 
@@ -45,60 +45,60 @@ typedef enum D3DPRIMITIVETYPE {
 
 <dl> <dt>
 
-<span id="D3DPT_POINTLIST"></span><span id="d3dpt_pointlist"></span>**D3DPT \_**
+<span id="D3DPT_POINTLIST"></span><span id="d3dpt_pointlist"></span>**D3DPT \_ POINTLIST**
 </dt> <dd>
 
-Esegue il rendering dei vertici come una raccolta di punti isolati. Questo valore non è supportato per le primitive indicizzate.
+Esegue il rendering dei vertici come raccolta di punti isolati. Questo valore non è supportato per le primitive indicizzate.
 
 </dd> <dt>
 
-<span id="D3DPT_LINELIST"></span><span id="d3dpt_linelist"></span>**\_Linea D3DPT**
+<span id="D3DPT_LINELIST"></span><span id="d3dpt_linelist"></span>**D3DPT \_ LINELIST**
 </dt> <dd>
 
-Esegue il rendering dei vertici come un elenco di segmenti di linea rettilinei isolati.
+Esegue il rendering dei vertici come elenco di segmenti rette isolati.
 
 </dd> <dt>
 
-<span id="D3DPT_LINESTRIP"></span><span id="d3dpt_linestrip"></span>**\_LINESTRIP D3DPT**
+<span id="D3DPT_LINESTRIP"></span><span id="d3dpt_linestrip"></span>**D3DPT \_ LINESTRIP**
 </dt> <dd>
 
-Esegue il rendering dei vertici come una singola polilinea.
+Esegue il rendering dei vertici come singola polilinea.
 
 </dd> <dt>
 
-<span id="D3DPT_TRIANGLELIST"></span><span id="d3dpt_trianglelist"></span>**Triangolo D3DPT \_**
+<span id="D3DPT_TRIANGLELIST"></span><span id="d3dpt_trianglelist"></span>**TRIANGOLO \_ D3DPTLIST**
 </dt> <dd>
 
-Esegue il rendering dei vertici specificati come una sequenza di triangoli isolati. Ogni gruppo di tre vertici definisce un triangolo separato.
+Esegue il rendering dei vertici specificati come sequenza di triangoli isolati. Ogni gruppo di tre vertici definisce un triangolo separato.
 
-L'abbattimento di back-face è influenzato dallo stato di rendering dell'ordine di esecuzione corrente.
+L'culling del back-face è interessato dallo stato di rendering corrente dell'ordine di avvolgimento.
 
 </dd> <dt>
 
-<span id="D3DPT_TRIANGLESTRIP"></span><span id="d3dpt_trianglestrip"></span>**\_TRIANGLESTRIP D3DPT**
+<span id="D3DPT_TRIANGLESTRIP"></span><span id="d3dpt_trianglestrip"></span>**TRIANGOLO \_ D3DPTSTRIP**
 </dt> <dd>
 
-Esegue il rendering dei vertici come una striscia di triangolo. Il flag per l'abbattimento delle backvisore viene automaticamente capovolto in triangoli uniformi.
+Esegue il rendering dei vertici come striscia triangolare. Il flag di backface-culling viene capovolto automaticamente su triangoli pari.
 
 </dd> <dt>
 
-<span id="D3DPT_TRIANGLEFAN"></span><span id="d3dpt_trianglefan"></span>**\_TRIANGLEFAN D3DPT**
+<span id="D3DPT_TRIANGLEFAN"></span><span id="d3dpt_trianglefan"></span>**TRIANGOLO D3DPTFAN \_**
 </dt> <dd>
 
-Esegue il rendering dei vertici come ventola del triangolo.
+Esegue il rendering dei vertici come ventola triangolare.
 
 </dd> <dt>
 
-<span id="D3DPT_FORCE_DWORD"></span><span id="d3dpt_force_dword"></span>**D3DPT \_ Force \_ DWORD**
+<span id="D3DPT_FORCE_DWORD"></span><span id="d3dpt_force_dword"></span>**D3DPT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-L'uso di [strisce triangolari](triangle-strips.md) o [ventilatori triangolari (Direct3D 9)](triangle-fans.md) è spesso più efficiente rispetto all'uso di elenchi di triangolo, perché i vertici sono duplicati.
+[L'uso di strisce triangolo](triangle-strips.md) o ventole triangolo [(Direct3D 9)](triangle-fans.md) è spesso più efficiente rispetto all'uso di elenchi di triangoli perché vengono duplicati meno vertici.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ L'uso di [strisce triangolari](triangle-strips.md) o [ventilatori triangolari (D
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

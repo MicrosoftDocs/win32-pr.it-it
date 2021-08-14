@@ -1,9 +1,9 @@
 ---
 title: ASFLeakyBucketPairs
-description: L'attributo ASFLeakyBucketPairs è un attributo facoltativo che descrive i requisiti del buffer per un file di velocità in bit variabile.
+description: L'attributo ASFLeakyBucketPairs è un attributo facoltativo che descrive i requisiti di memorizzazione nel buffer per un file a velocità in bit variabile.
 ms.assetid: d1b3e8cc-c082-4283-88bc-172f58adf2d9
 keywords:
-- ASFLeakyBucketPairs Windows Media Format
+- ASFLeakyBucketPairs windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6e94bfa6084c67428fb89e57b9152283cc3d4a3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 76de649a069b0cfec74fabe1a41d6cfa659b39448257a4bc966065e1bce98ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118434620"
 ---
 # <a name="asfleakybucketpairs"></a>ASFLeakyBucketPairs
 
-L'attributo **ASFLeakyBucketPairs** è un attributo facoltativo che descrive i requisiti del buffer per un file di velocità in bit variabile.
+**L'attributo ASFLeakyBucketPairs** è un attributo facoltativo che descrive i requisiti di memorizzazione nel buffer per un file a velocità in bit variabile.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszASFLeakyBucketPairs
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_binario di tipo WMT \_**
+**FILE \_ BINARIO DI TIPO WMT \_**
 
 ## <a name="remarks"></a>Commenti
 
@@ -43,7 +43,7 @@ struct
 };
 ```
 
-Dove *wReserved* deve essere uguale a zero e *bucket* è una matrice di strutture di coppie di bucket a perdita di [**WM \_ \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) . La matrice deve contenere almeno due voci, ma può avere dimensioni maggiori. L'oggetto Reader utilizza questo attributo per determinare la quantità di contenuto da memorizzare nel buffer prima della riproduzione.
+Dove *wReserved deve* essere uguale a zero e *bucket* è una matrice di strutture [**BUCKET PAIR WM \_ \_ \_ LEAKY.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) La matrice deve contenere almeno due voci, ma può essere più grande. L'oggetto lettore usa questo attributo per determinare la quantità di contenuto da bufferare prima della riproduzione.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -52,9 +52,9 @@ Dove *wReserved* deve essere uguale a zero e *bucket* è una matrice di struttur
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

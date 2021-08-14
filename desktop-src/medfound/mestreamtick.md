@@ -1,53 +1,53 @@
 ---
-description: Segnala che a un flusso multimediale non sono disponibili dati a un'ora specificata.
+description: Segnala che in un flusso multimediale non sono disponibili dati in un momento specificato.
 ms.assetid: 1a00fff1-c3ab-4965-a663-3c15bb48ea98
-title: Evento MEStreamTick (Mfobjects. h)
+title: Evento MEStreamTick (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27123569e991043a534883964ba94e4955d60a40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42b72a61964e296ac5f7aa69eb2be6773b622f7b44df8300affa0150af2f8a77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974060"
 ---
 # <a name="mestreamtick-event"></a>Evento MEStreamTick
 
-Segnala che a un flusso multimediale non sono disponibili dati a un'ora specificata.
+Segnala che in un flusso multimediale non sono disponibili dati in un momento specificato.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE           | Descrizione                                                                   |
 |-------------------|-------------------------------------------------------------------------------|
-| \_I8 VT<br/> | Data e ora in cui si verifica il gap, in unità di 100 nanosecondi.<br/> <br/> |
+| VT \_ I8<br/> | Ora in cui si verifica il gap, in unità di 100 nanosecondi.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questo evento segnala un gap nei dati. L'evento notifica ai componenti downstream di non prevedere i dati all'ora specificata.
+Questo evento segnala un gap nei dati. L'evento notifica ai componenti downstream di non aspettarsi dati al momento specificato.
 
-L'evento deve essere inviato da qualsiasi oggetto genera i timestamp per gli esempi di supporti nel flusso. A seconda del formato dei dati, è possibile:
+L'evento deve essere inviato da qualsiasi oggetto che genera i timestamp per gli esempi di supporti nel flusso. A seconda del formato dei dati, si tratta di uno dei seguenti:
 
--   Il flusso multimediale nell'origine supporto (interfaccia [**IMFMediaStream**](/windows/desktop/api/mfidl/nn-mfidl-imfmediastream) ) o
--   Trasformazione del decodificatore (interfaccia [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) ).
+-   Flusso multimediale nell'origine multimediale [**(interfaccia IMFMediaStream)**](/windows/desktop/api/mfidl/nn-mfidl-imfmediastream) o
+-   Trasformazione del decodificatore [**(interfaccia IMFTransform).**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
-Durante il gap, l'oggetto deve inviare l'evento con la stessa frequenza con cui produrrebbe normalmente esempi. Per video, inviare un evento per ogni frame mancante. Per l'audio, inviare l'evento almeno una volta al secondo durante il gap. Il valore dell'evento è il timestamp dell'esempio mancante. Inviare tutti gli eventi MEStreamTick necessari per colmare il gap nei dati.
+Durante il gap, l'oggetto deve inviare l'evento con la frequenza con cui normalmente produrrebbe campioni. Per il video, inviare un evento per ogni fotogramma mancante. Per l'audio, inviare l'evento almeno una volta al secondo durante il gap. Il valore dell'evento è il timestamp dell'esempio mancante. Inviare tutti gli eventi MEStreamTick necessari per colmare il gap nei dati.
 
-Se un'origine multimediale presenta diversi flussi e si verifica un gap in più di un flusso, ogni flusso deve inviare eventi MEStreamTick. Se, ad esempio, è presente un gap nei dati audio e video, entrambi i flussi inviano l'evento.
+Se un'origine multimediale ha più flussi ed è presente un gap in più di un flusso, ogni flusso deve inviare eventi MEStreamTick. Ad esempio, se si verifica un gap nei dati audio e video, entrambi i flussi inviano l'evento.
 
-L'evento MEStreamTick non completa una richiesta [**IMFMediaStream:: RequestSample**](/windows/desktop/api/mfidl/nf-mfidl-imfmediastream-requestsample) . L'origine multimediale deve comunque inviare un evento [MEMediaSample](memediasample.md) per ogni chiamata a **RequestSample**.
+L'evento MEStreamTick non completa una [**richiesta IMFMediaStream::RequestSample.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediastream-requestsample) L'origine multimediale deve comunque inviare un [evento MEMediaSample](memediasample.md) per ogni chiamata a **RequestSample.**
 
-I sink di supporto non possono utilizzare direttamente questo evento. Per segnalare un gap nel flusso a un sink multimediale, chiamare [**IMFStreamSink::P lacemarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) con un marcatore di segno di **MFSTREAMSINK \_ \_** . Quando necessario, la pipeline Media Foundation Converte gli eventi MEStreamTick in marcatori di segno di **MFSTREAMSINK \_ \_** .
+I sink multimediali non possono utilizzare direttamente questo evento. Per segnalare un gap nel flusso a un sink multimediale, chiamare [**IMFStreamSink::P laceMarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) con un marcatore **TICK MARCATORE MFSTREAMSINK. \_ \_** La Media Foundation pipeline converte gli eventi MEStreamTick in **marcatori MFSTREAMSINK \_ MARKER \_ TICK** quando necessario.
 
-Non impostare l'attributo [**di \_ discontinuità MFSampleExtension**](mfsampleextension-discontinuity-attribute.md) nel successivo esempio di supporto dopo un evento MEStreamTick. L'attributo di **\_ discontinuità MFSampleExtension** implica che il timestamp è discontinuo con i timestamp precedenti, mentre MEStreamTick implica che i timestamp sono continui ma alcuni dati risultano mancanti.
+Non impostare [**l'attributo MFSampleExtension \_ Discontinuity**](mfsampleextension-discontinuity-attribute.md) nell'esempio multimediale successivo dopo un evento MEStreamTick. **L'attributo MFSampleExtension \_ Discontinuity** implica che il timestamp è discontinuo con i timestamp precedenti, mentre MEStreamTick implica che i timestamp sono continui, ma alcuni dati mancano.
 
 > [!Note]  
-> Una versione precedente della documentazione ha erroneamente dichiarato che l'esempio dopo un evento MEStreamTick deve avere l'attributo [**di \_ discontinuità MFSampleExtension**](mfsampleextension-discontinuity-attribute.md) .
+> Una versione precedente della documentazione ha erroneamente dichiarato che l'esempio dopo un evento MEStreamTick deve avere [**l'attributo MFSampleExtension \_ Discontinuity.**](mfsampleextension-discontinuity-attribute.md)
 
  
 
@@ -57,9 +57,9 @@ Non impostare l'attributo [**di \_ discontinuità MFSampleExtension**](mfsamplee
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Non impostare l'attributo [**di \_ discontinuità MFSampleExtension**](mfsamplee
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

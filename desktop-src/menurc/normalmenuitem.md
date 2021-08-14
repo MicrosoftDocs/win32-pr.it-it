@@ -1,9 +1,9 @@
 ---
 title: Struttura NORMALMENUITEM
-description: Contiene informazioni su ogni elemento in una risorsa di menu che non apre un menu o un sottomenu. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
+description: Contiene informazioni su ogni voce di una risorsa di menu che non apre un menu o un sottomenu. La definizione della struttura qui fornita è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 ms.assetid: c1b84264-2d7f-4bc3-8e74-7b921a0bfe30
 keywords:
-- Menu struttura NORMALMENUITEM e altre risorse
+- Struttura NORMALMENUITEM Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c90efe624346e30483c42f6f8ff51cd6d3550922
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f47fef5e1481d56671cd525061f1a5fcf88481213671bac45c923cfbae0ebbd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733691"
 ---
 # <a name="normalmenuitem-structure"></a>Struttura NORMALMENUITEM
 
-Contiene informazioni su ogni elemento in una risorsa di menu che non apre un menu o un sottomenu. La definizione della struttura fornita qui è solo per la spiegazione. non è presente in alcun file di intestazione standard.
+Contiene informazioni su ogni voce di una risorsa di menu che non apre un menu o un sottomenu. La definizione della struttura qui fornita è solo per la spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ typedef struct {
 
 <dl> <dt>
 
-**resInfo**
+**Resinfo**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Tipo di voce di menu. Il membro può essere uno dei valori seguenti.
+Tipo di voce di menu. Questo membro può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                       | Significato                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="MFR_END"></span><span id="mfr_end"></span><dl> <dt>**Fabbisogno \_ di FINE**</dt> <dt>0x80</dt> </dl>       | La voce di menu è l'ultima in questo sottomenu o risorsa di menu; Questo flag viene utilizzato internamente dal sistema.<br/> |
-| <span id="MFR_POPUP"></span><span id="mfr_popup"></span><dl> <dt>**Fabbisogno \_ di POPUP**</dt> <dt>0x01</dt> </dl> | La voce di menu apre un menu o un sottomenu; il flag viene utilizzato internamente dal sistema. <br/>                    |
+| <span id="MFR_END"></span><span id="mfr_end"></span><dl> <dt>**MFR \_ END**</dt> <dt>0x80</dt> </dl>       | La voce di menu è l'ultima in questo sottomenu o in questa risorsa di menu. questo flag viene usato internamente dal sistema.<br/> |
+| <span id="MFR_POPUP"></span><span id="mfr_popup"></span><dl> <dt>**MFR \_ POPUP**</dt> <dt>0x01</dt> </dl> | La voce di menu apre un menu o un sottomenu. il flag viene usato internamente dal sistema. <br/>                    |
 
 
 
@@ -69,15 +69,15 @@ Tipo: **szOrOrd**
 
 </dd> <dd>
 
-Stringa Unicode con terminazione null che contiene il testo di questa voce di menu. Non esiste un limite fisso per le dimensioni di questa stringa.
+Stringa Unicode con terminazione Null che contiene il testo per questa voce di menu. Non esiste alcun limite fisso per le dimensioni di questa stringa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Esiste una struttura **NORMALMENUITEM** per ogni voce di menu che non apre un menu o un sottomenu. Indica l'ultima voce di menu in un menu impostando il membro **resInfo** su **fabbisogno \_ finale**.
+Esiste una struttura **NORMALMENUITEM** per ogni voce di menu che non apre un menu o un sottomenu. Indicare l'ultima voce di menu in un menu impostando il membro **resInfo** su **MFR \_ END**.
 
-Un separatore di menu è un tipo speciale di voce di menu che è inattivo, ma viene visualizzato come una barra di divisione tra due voci di menu attive. Indicare un separatore di menu lasciando vuoto il membro **menuText** .
+Un separatore di menu è un tipo speciale di voce di menu inattiva ma visualizzata come barra di divisione tra due voci di menu attive. Indicare un separatore di menu lasciando vuoto **il membro menuText.**
 
 ## <a name="requirements"></a>Requisiti
 

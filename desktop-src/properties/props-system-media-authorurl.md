@@ -4,12 +4,12 @@ ms.assetid: b8891bae-31da-48f6-b4e6-18799a199c9a
 title: System.Media.AuthorUrl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c7e94e13db057a9b71c5a1735f896d71c32cf5b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b2e7e6be1c3a93dc44b3ada4d4d4ac3e4388de521941900fd13822dba8aee3e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970380"
 ---
 # <a name="systemmediaauthorurl"></a>System.Media.AuthorUrl
 

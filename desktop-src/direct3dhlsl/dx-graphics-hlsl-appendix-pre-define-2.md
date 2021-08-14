@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d0c54c0c433c91522c8a72c5955a419eb72f9eee
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 49f89847a47a173f8f7d3bcbb22464fecad658068031f62559bde6ec0735f7f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514812"
 ---
 # <a name="define-directive-macro"></a>\#Direttiva define (macro)
 

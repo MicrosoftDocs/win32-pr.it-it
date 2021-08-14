@@ -1,12 +1,12 @@
 ---
 title: Metodo IMsTscAxEvents OnRequestLeaveFullScreen
-description: Chiamato quando il client richiede di uscire dalla modalità a schermo intero e la proprietà IMsTscAdvancedSettings put \_ ContainerHandledFullScreen è stata impostata su un valore diverso da zero.
+description: Chiamato quando il client richiede di uscire dalla modalità schermo intero e la proprietà IMsTscAdvancedSettings put ContainerHandledFullScreen è stata impostata su un valore \_ diverso da zero.
 ms.assetid: db6ee012-8288-4360-98b2-12858ea65baa
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo OnRequestLeaveFullScreen
+- Metodo OnRequestLeaveFullScreen Servizi Desktop remoto
 - Metodo OnRequestLeaveFullScreen Servizi Desktop remoto, interfaccia IMsTscAxEvents
-- Interfaccia IMsTscAxEvents Servizi Desktop remoto, metodo OnRequestLeaveFullScreen
+- Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnRequestLeaveFullScreen
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e814d6153e32fdf4fa498a6630fc9ca2908510e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74f82cd71942f559039a175fdfff9319cae5ea35a73d4698760be4642a23c448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757341"
 ---
-# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>Metodo IMsTscAxEvents:: OnRequestLeaveFullScreen
+# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>Metodo IMsTscAxEvents::OnRequestLeaveFullScreen
 
-Chiamato quando il client richiede di uscire dalla modalità a schermo intero e la proprietà [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) è stata impostata su un valore diverso da zero.
+Chiamato quando il client richiede di uscire dalla modalità schermo intero e la proprietà [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) è stata impostata su un valore diverso da zero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,9 +47,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-In modalità a schermo intero gestita dal contenitore il contenitore deve lasciare la modalità standard a schermo intero in risposta a questo evento.
+In modalità schermo intero gestita dal contenitore, il contenitore deve uscire dalla modalità schermo intero standard in risposta a questo evento.
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 

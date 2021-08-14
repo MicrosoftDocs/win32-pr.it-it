@@ -4,16 +4,16 @@ description: Proprietà LanguageID
 ms.assetid: f57b0fa1-b3b8-49c8-b441-2a40e564d6ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a7a10e6b16f9e35b223bada728871d253685538
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13af9f7a508732444be83fd56cce2fad6c7d7a5c148e196e2c466db102d2e6e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748699"
 ---
 # <a name="languageid-property"></a>Proprietà LanguageID
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Restituisce o imposta l'ID lingua per il carattere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*Agent. * * * caratteri* *  **("***CharacterID***").** \[  =  *LanguageID* LanguageID\]
+*agent.***Caratteri* *  **("**_CharacterID_*_"). LanguageID_* \[  =  *LanguageID*\]
 
 
 
@@ -37,9 +37,9 @@ Descrizione
 
 LanguageID
 
-Valore long integer che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID di lingua primario e da un ID di lingua secondaria. Gli esempi seguenti sono valori per le lingue supportate da Microsoft Agent. Per determinare il valore per altre lingue, vedere la *documentazione di Platform SDK*.
+Intero lungo che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID lingua primaria e un ID lingua secondaria. Gli esempi seguenti sono i valori per le lingue supportate da Microsoft Agent. Per determinare il valore per altri linguaggi, vedere la documentazione *di Platform SDK.*
 
- 
+ 
 
 Arabo
 
@@ -49,7 +49,7 @@ Italiano
 
 &H0410
 
- 
+ 
 
 Basco
 
@@ -59,7 +59,7 @@ Giapponese
 
 &H0411
 
- 
+ 
 
 Cinese (semplificato)
 
@@ -69,7 +69,7 @@ Coreano
 
 &H0412
 
- 
+ 
 
 Cinese (tradizionale)
 
@@ -79,7 +79,7 @@ Norvegese
 
 &H0414
 
- 
+ 
 
 Croato
 
@@ -89,7 +89,7 @@ Polacco
 
 &H0415
 
- 
+ 
 
 Ceco
 
@@ -99,7 +99,7 @@ Portoghese (Portogallo)
 
 &H0816
 
- 
+ 
 
 Danese
 
@@ -109,7 +109,7 @@ Portoghese (Brasile)
 
 &H0416
 
- 
+ 
 
 Olandese
 
@@ -119,7 +119,7 @@ Romeno
 
 &H0418
 
- 
+ 
 
 Inglese (Regno Unito)
 
@@ -129,7 +129,7 @@ Russo
 
 &H0419
 
- 
+ 
 
 Inglese (Stati Uniti)
 
@@ -139,7 +139,7 @@ Slovacco
 
 &H041B
 
- 
+ 
 
 Finlandese
 
@@ -149,7 +149,7 @@ Sloveno
 
 &H0424
 
- 
+ 
 
 Francese
 
@@ -159,7 +159,7 @@ Spagnolo
 
 &H0C0A
 
- 
+ 
 
 Tedesco
 
@@ -169,7 +169,7 @@ Svedese
 
 &H041D
 
- 
+ 
 
 Greco
 
@@ -179,7 +179,7 @@ Thai
 
 &H041E
 
- 
+ 
 
 Ebraico
 
@@ -189,47 +189,47 @@ Turco
 
 &H041F
 
- 
+ 
 
 Ungherese
 
 &H040E
 
- 
+ 
 
- 
+ 
 
 
 
- 
+ 
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Se non si imposta **LanguageID** per il carattere, il relativo ID lingua sarà l'ID della lingua di sistema corrente se è installata la dll della lingua dell'agente corrispondente. in caso contrario, la lingua del carattere sarà inglese (Stati Uniti).
+Se non si imposta **LanguageID** per il carattere, il relativo ID lingua sarà l'ID lingua di sistema corrente se è installata la DLL della lingua dell'agente corrispondente. In caso contrario, la lingua del carattere sarà Inglese (Stati Uniti).
 
-Questa proprietà determina anche la lingua del testo del fumetto di parole, i comandi nel menu a comparsa del carattere e il motore di riconoscimento vocale. Consente inoltre di determinare la lingua predefinita per l'output TTS.
+Questa proprietà determina anche la lingua per il testo del fumetto, i comandi nel menu a comparsa del carattere e il motore di riconoscimento vocale. Determina anche la lingua predefinita per l'output TTS.
 
-Se si tenta di impostare **LanguageID** per un carattere e la dll della lingua dell'agente per tale lingua non è installata o non è disponibile un tipo di carattere visualizzato per l'ID lingua, Agent genera un errore e **LanguageID** rimane all'ultima impostazione.
+Se si tenta di impostare **LanguageID** per un carattere e la DLL della lingua dell'agente per tale lingua non è installata o non è disponibile un tipo di carattere visualizzato per l'ID lingua, Agent genera un errore e **LanguageID** rimane all'ultima impostazione.
 
-L'impostazione di questa proprietà non genera un errore se non sono presenti motori di riconoscimento vocale corrispondenti per la lingua. Per determinare se è disponibile un motore vocale compatibile per **LanguageID**, controllare [**SRModeID**](srmodeid-property.md) o [**TTSModeID**](ttsmodeid-property.md). Se non si imposta **LanguageID**, questo verrà impostato sull'impostazione ID lingua predefinita dell'utente.
+L'impostazione di questa proprietà non genera un errore se non sono presenti motori di riconoscimento vocale corrispondenti per la lingua. Per determinare se è disponibile un motore di riconoscimento vocale compatibile per **LanguageID,** controllare [**SRModeID**](srmodeid-property.md) o [**TTSModeID**](ttsmodeid-property.md). Se non si imposta **LanguageID,** verrà impostato sull'impostazione dell'ID lingua predefinita dell'utente.
 
-Questa proprietà si applica solo all'utilizzo del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
 
 > [!Note]  
-> Se si imposta **LanguageID** su una lingua che supporta il testo bidirezionale, ad esempio l'arabo o l'ebraico, ma nel sistema in cui è in esecuzione l'applicazione non è installato il supporto bidirezionale, il testo nella parola Balloon verrà visualizzato nell'ordine logico anziché in quello di visualizzazione.
+> Se si imposta **LanguageID** su una lingua che supporta il testo bidirezionale (ad esempio arabo o ebraico), ma nel sistema che esegue l'applicazione non è installato il supporto bidirezionale, il testo nel fumetto della parola verrà visualizzato in ordine logico anziché di visualizzazione.
 
- 
+ 
 
 ## <a name="see-also"></a>Vedere anche
 
-[**Proprietà SRModeID**](srmodeid-property.md), [ **Proprietà TTSModeID**](ttsmodeid-property.md)
+[**Proprietà SRModeID**](srmodeid-property.md), [ **proprietà TTSModeID**](ttsmodeid-property.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

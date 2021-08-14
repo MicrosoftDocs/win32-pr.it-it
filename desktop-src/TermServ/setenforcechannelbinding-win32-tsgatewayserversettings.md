@@ -1,12 +1,12 @@
 ---
-title: Metodo SetEnforceChannelBinding della classe Win32_TSGatewayServerSettings
+title: Metodo SetEnforceChannelBinding della Win32_TSGatewayServerSettings classe
 description: Imposta la proprietà EnforceChannelBinding.
 ms.assetid: 8bd64fe7-bad5-44e6-a309-10802d9a8bd4
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetEnforceChannelBinding
-- Metodo SetEnforceChannelBinding Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo SetEnforceChannelBinding
+- Metodo SetEnforceChannelBinding Servizi Desktop remoto
+- Metodo SetEnforceChannelBinding Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto, metodo SetEnforceChannelBinding
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b236341f0fdac31f80f7e7d77aa12a4b22eb9731
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1a2e076fb4ba439faa7cc22f30da1f815b0571ede0477b875e25176a7f0297e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988031"
 ---
-# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetEnforceChannelBinding della \_ classe TSGatewayServerSettings Win32
+# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo SetEnforceChannelBinding della classe \_ Win32 TSGatewayServerSettings
 
-Imposta la proprietà **EnforceChannelBinding** .
+Imposta la **proprietà EnforceChannelBinding.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ uint32 SetEnforceChannelBinding(
 
 <dl> <dt>
 
-*EnforceChannelBinding* \[ in\]
+*EnforceChannelBinding* \[ Pollici\]
 </dt> <dd>
 
-Specifica il nuovo valore della proprietà **EnforceChannelBinding** .
+Specifica il nuovo valore **della proprietà EnforceChannelBinding.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -72,7 +72,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

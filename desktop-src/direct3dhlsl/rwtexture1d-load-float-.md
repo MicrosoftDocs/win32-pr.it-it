@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture1D:: Load (int)'
-description: 'Legge i dati della trama. | Funzione RWTexture1D:: Load (int)'
+title: Funzione RWTexture1D::Load(int)
+description: Legge i dati della trama. | Funzione RWTexture1D::Load(int)
 ms.assetid: AA5E324E-A2C0-45C5-92A8-E4DBC4EB684C
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e78cd12502ada91e48df1ce88be6a19fb714327f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f8d502d6e4fd1f13355c17fbd1ef9c42b3c6de2ec5aa20176aec562af807dd3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981621"
 ---
-# <a name="rwtexture1dloadint-function"></a>Funzione RWTexture1D:: Load (int)
+# <a name="rwtexture1dloadint-function"></a>Funzione RWTexture1D::Load(int)
 
 Legge i dati della trama.
 
@@ -39,7 +39,7 @@ Legge i dati della trama.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Località* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,7 +52,7 @@ Posizione della trama.
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWTexture1D**](sm5-object-rwtexture1d.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWTexture1D.**](sm5-object-rwtexture1d.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,7 +60,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwtexture1d-load.md)
+[Metodi di caricamento](rwtexture1d-load.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-PKI-RA-Application-Policies
-description: OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori della richiesta di certificato.
+title: Attributo ms-PKI-RA-Application-Policies
+description: OID dei criteri dell'applicazione ra richiesto nelle firme dei contatori della richiesta di certificato.
 ms.assetid: 1ce61107-01aa-4a03-8a00-21890fb610d7
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-PKI-RA-Application-Policies
-- msPKI-RA-Application-Policies attributo AD schema
+- Attributo ms-PKI-RA-Application-Policies schema DI AD
+- Schema AD dell'attributo msPKI-RA-Application-Policies
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01aab7c8da5c6267efe954cac71dc8c9c98c18f4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cd982f4568d8d148c64930a9a7099dc5a48da2b542e8cf08c53905ad86ee6733
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960350"
 ---
-# <a name="ms-pki-ra-application-policies-attribute"></a>attributo ms-PKI-RA-Application-Policies
+# <a name="ms-pki-ra-application-policies-attribute"></a>Attributo ms-PKI-RA-Application-Policies
 
-OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori della richiesta di certificato.
+OID dei criteri dell'applicazione ra richiesto nelle firme dei contatori della richiesta di certificato.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------------------------------------------------------|
 | CN                | ms-PKI-RA-Application-Policies                                                             |
-| LDAP-Display-Name | msPKI-RA-Application-Policies                                                              |
+| Ldap-Display-Name | msPKI-RA-Application-Policies                                                              |
 | Dimensione              | \-                                                                                         |
-| Privilegio aggiornamento  | Amministratore dell'organizzazione                                                                   |
-| Frequenza di aggiornamento  | Ogni volta che viene creato un nuovo modello o vengono modificati gli attributi di modelli esistenti. |
+| Privilegio di aggiornamento  | Amministratore dell'organizzazione                                                                   |
+| Frequenza di aggiornamento  | Ogni volta che viene creato un nuovo modello o vengono modificati gli attributi di un modello esistente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1675                                                                    |
-| System-ID-GUID    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
+| System-Id-Guid    | 3c91fbbf-4773-4ccd-a87b-85d53e7bcf6a                                                       |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
@@ -57,15 +57,15 @@ OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori del
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori del
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori del
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| Is-Single-Valued       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori del
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ OID del criterio dell'applicazione RA obbligatorio nelle firme dei contatori del
 | ID collegamento                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| È a valore singolo       | Falso                                                                   |
+| A valore singolo       | Falso                                                                   |
 | Indicizzato             | Falso                                                                   |
 | Nel catalogo globale      | Falso                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classi utilizzate in        | [**PKI-certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Classi usate in        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

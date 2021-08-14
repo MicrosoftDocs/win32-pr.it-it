@@ -1,33 +1,33 @@
 ---
 title: Novità (controlli Windows)
-description: In questo argomento vengono descritte le differenze di supporto per gli stili di visualizzazione e di visualizzazione tra Windows 8 e le versioni precedenti di Windows.
+description: In questo argomento vengono descritte le differenze nel supporto per stili di visualizzazione e tema tra Windows 8 e le versioni precedenti di Windows .
 ms.assetid: 866C2E0B-D3AF-4DA0-8B45-D5FF1335C350
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b203152c8fae5b844eeab334870bf8efb04ac20
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8d7801eea011aabb05663cc2e29f18e0dd58edc9fddc4f32014fcffb96c559cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104474819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957550"
 ---
 # <a name="whats-new-windows-controls"></a>Novità (controlli Windows)
 
-In questo argomento vengono descritte le differenze di supporto per gli stili di visualizzazione e di visualizzazione tra Windows 8 e le versioni precedenti di Windows.
+In questo argomento vengono descritte le differenze nel supporto per stili di visualizzazione e tema tra Windows 8 e le versioni precedenti di Windows .
 
-## <a name="through-windows-7"></a>Tramite Windows 7
+## <a name="through-windows-7"></a>Fino Windows 7
 
-Grazie a Windows 7, gli stili di visualizzazione sono attivati per impostazione predefinita, ma l'utente può disattivarli selezionando il tema classico di Windows o disattivando il servizio temi. Quando gli stili di visualizzazione sono spenti, tutte le interfacce utente ottengono l'aspetto classico e la maggior parte delle API degli stili di visualizzazione non sono disponibili. La modalità di visualizzazione degli stili di visualizzazione è stata mantenuta attraverso Windows 7 per supportare i diversi temi a contrasto elevato, oltre al tema Windows classico. Se si desidera supportare sia gli stili visivi che i temi a contrasto elevato nella stessa applicazione, in genere è necessario mantenere due percorsi di codice distinti per il rendering dei controlli.
+Tramite Windows 7, gli stili di visualizzazione sono attivati per impostazione predefinita, ma l'utente può disattivarli selezionando Windows tema classico o disattivando il servizio Temi. Quando gli stili di visualizzazione sono disattivati, tutta l'interfaccia utente ottiene l'aspetto classico e la maggior parte delle API degli stili di visualizzazione non è disponibile. Gli stili di visualizzazione disattivati sono stati mantenuti Windows 7 per supportare i vari temi a contrasto elevato, nonché Windows tema classico. Se si vuole supportare sia gli stili di visualizzazione che i temi a contrasto elevato nella stessa applicazione, in genere è necessario mantenere due percorsi di codice separati per i controlli di rendering.
 
 ## <a name="windows-8-and-later"></a>Windows 8 e versioni successive
 
-In Windows 8 gli stili visivi non possono essere disattivati tramite la pagina **personalizzazione** delle **impostazioni del PC** oppure disattivando il servizio temi. La modalità classica di Windows non esiste più e la modalità a contrasto elevato è stata modificata per funzionare con gli stili di visualizzazione. A causa di queste modifiche, le applicazioni destinate solo a Windows 8 non necessitano più di due percorsi di codice distinti per supportare gli stili visivi e i temi a contrasto elevato.
+In Windows 8, gli stili di visualizzazione non possono  essere disattivati tramite la pagina Personalizzazione di **Pc Impostazioni** o disattivando il servizio Temi. Windows La modalità classica non esiste più e la modalità a contrasto elevato è stata modificata per funzionare con gli stili di visualizzazione. A causa di queste modifiche, le applicazioni che hanno come destinazione Windows 8 non necessitano più di due percorsi di codice separati per supportare gli stili di visualizzazione e i temi a contrasto elevato.
 
-Gli stili di visualizzazione in Windows 8 includono il supporto per la compatibilità con le versioni precedenti di Windows classico. Qualsiasi codice di rendering dell'interfaccia utente che funziona nelle versioni precedenti continuerà a funzionare in Windows 8 senza modifiche.
+Gli stili di visualizzazione in Windows 8 supportano la compatibilità con le versioni precedenti Windows modalità tema classica. Qualsiasi codice di rendering dell'interfaccia utente che funziona nelle versioni precedenti continuerà a funzionare Windows 8 senza modifiche.
 
-In Windows 8, se si desidera che l'applicazione supporti i temi a contrasto elevato basati sugli stili di visualizzazione, è necessario includere il GUID di Windows 8 nella sezione compatibilità del manifesto dell'applicazione. In caso contrario, il sistema presuppone che l'applicazione sia progettata per una versione precedente ed esegua il rendering dell'area client simulando i temi classici a contrasto elevato di Windows. Per ulteriori informazioni, vedere [supporto di contrasto elevato temi](supporting-high-contrast-themes.md).
+In Windows 8, se si vuole che l'applicazione supporti i temi a contrasto elevato basati su stili di visualizzazione, è necessario includere il GUID di Windows 8 nella sezione di compatibilità del manifesto dell'applicazione. In caso contrario, il sistema presuppone che l'applicazione sia progettata per una versione precedente ed esegue il rendering dell'area client simulando Windows classici a contrasto elevato. Per altre informazioni, vedere [Supporto dei Contrasto elevato .](supporting-high-contrast-themes.md)
 
-Come nelle versioni precedenti, Windows 8 supporta sia la versione 5 che la versione 6 dei controlli comuni, con la versione 5 predefinita. Poiché solo la versione 6 supporta gli stili di visualizzazione, è necessario specificare la versione 6 nel manifesto dell'applicazione se si desidera applicare gli stili di visualizzazione ai controlli comuni nell'area client dell'applicazione. Per altre informazioni, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+Come nelle versioni precedenti, Windows 8 supporta sia la versione 5 che la versione 6 dei controlli comuni, con la versione 5 come predefinita. Poiché solo la versione 6 supporta gli stili di visualizzazione, è necessario specificare la versione 6 nel manifesto dell'applicazione se si vuole che gli stili di visualizzazione siano applicati ai controlli comuni nell'area client dell'applicazione. Per altre informazioni, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -36,7 +36,7 @@ Come nelle versioni precedenti, Windows 8 supporta sia la versione 5 che la vers
 [Abilitazione degli stili di visualizzazione](cookbook-overview.md)
 </dt> <dt>
 
-[Supporto di Contrasto elevato temi](supporting-high-contrast-themes.md)
+[Supporto dei Contrasto elevato personalizzati](supporting-high-contrast-themes.md)
 </dt> <dt>
 
 [Stili di visualizzazione](themes-overview.md)

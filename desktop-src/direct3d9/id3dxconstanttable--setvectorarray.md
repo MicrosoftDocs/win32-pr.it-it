@@ -1,5 +1,5 @@
 ---
-description: 'Metodo ID3DXConstantTable::SetVectorArray : imposta una matrice di vettori 4D.'
+description: 'Metodo ID3DXConstantTable::SetVectorArray: imposta una matrice di vettori 4D.'
 ms.assetid: bd453384-4f38-4017-a9a5-cac605919940
 title: Metodo ID3DXConstantTable::SetVectorArray (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fe93ef7a75cda743399133445a5f6efd34dd5ad7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 694f51a08260a6e75ddde6b6abae2114ae7a001d68809fbf667b1c53d66c3dad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118521237"
 ---
 # <a name="id3dxconstanttablesetvectorarray-method"></a>Metodo ID3DXConstantTable::SetVectorArray
 
@@ -48,7 +48,7 @@ HRESULT SetVectorArray(
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a [**un'interfaccia IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella costante.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta il dispositivo associato alla tabella delle costanti.
 
 </dd> <dt>
 

@@ -1,90 +1,90 @@
 ---
-title: Strumento compilatore servizio Web
-description: Per supportare il modello di servizio, wsutil.exe genera un'intestazione da usare sia sul lato client che sul lato servizio. Genera il file proxy C per il lato client e il file stub C per il lato del servizio, in base alle esigenze.
+title: Strumento del compilatore del servizio Web
+description: Per supportare il modello di servizio, wsutil.exe genera un'intestazione da usare sia sul lato client che sul lato servizio. Genera il file proxy C per il lato client e il file stub C per il lato servizio, in base alle esigenze.
 ms.assetid: 1c73297d-0d3d-421c-9e19-44a6012a5c65
 keywords:
-- Servizi Web per lo strumento di compilazione del servizio Web per Windows
+- Web Service Compiler Tool Web Services for Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9931f228a36832fc83d84d584a151de41f5868d
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: e92e1195cd9d3a8e8d9fa1b7be94421d68f3cbdf2242be6fa0d05be5cc3c743f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104399961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962840"
 ---
-# <a name="web-service-compiler-tool"></a>Strumento compilatore servizio Web
+# <a name="web-service-compiler-tool"></a>Strumento del compilatore del servizio Web
 
-Per supportare il modello di servizio, wsutil.exe genera un'intestazione da usare sia sul lato client che sul lato servizio. Genera il file proxy C per il lato client e il file stub C per il lato del servizio, in base alle esigenze.
+Per supportare il modello di servizio, wsutil.exe genera un'intestazione da usare sia sul lato client che sul lato servizio. Genera il file proxy C per il lato client e il file stub C per il lato servizio, in base alle esigenze.
 
 
-Per supportare la [serializzazione](serialization.md), il compilatore genera intestazioni per le descrizioni di elementi per le definizioni di elementi globali e tutte le informazioni sulla definizione del tipo nel file proxy che devono essere utilizzate dal motore di serializzazione.
+Per [supportare la serializzazione](serialization.md), il compilatore genera intestazioni per le descrizioni degli elementi per le definizioni di elementi globali e tutte le informazioni sulla definizione del tipo nel file proxy che verranno utilizzate dal motore di serializzazione.
 
 Utilizzo
 
-**WsUtil.exe \[ Opzioni switch della riga di comando \[ \] :\]<filename>**
+**WsUtil.exe opzioni \[ della riga di comando \[ switch-options \] :\]<filename>**
 
 opzioni della riga di comando
 
-Specifica WsUtil.exe opzioni del compilatore. Le opzioni possono essere visualizzate in qualsiasi ordine. Il trattino ('-') e la barra ('/') vengono considerati uguali.
+Specifica le WsUtil.exe del compilatore. I commutatori possono essere visualizzati in qualsiasi ordine. Trattino ('-') e barra ('/') vengono considerati uguali.
 
 Elenco di opzioni della riga di comando
 
--   @filename Specifica che il file di input deve essere trattato come un file di risposta. Questa opzione può essere usata più volte, in qualsiasi posizione nell'elenco di argomenti.
--   /WSDL: <filename> : <\_ url facoltativo> specifica che il file di input deve essere trattato come un file WSDL. Sono consentiti più input WSDL e vengono elaborati tutti i file WSDL specificati. L' \_ URL facoltativo specifica il percorso da cui vengono recuperati i metadati. Se non \_ viene specificato alcun URL facoltativo, WSUTIL genera internamente un URL univoco. Vedere anche [supporto dei criteri](policy-support.md).
--   /xsd: <filename> specifica che il nome file di input deve essere considerato come un file di schema. Sono consentiti più input XSD e vengono elaborati tutti i file di schema specificati.
--   /wsp: <filename> : <\_ url facoltativo> specifica che il nome del file di input deve essere trattato come metadati del criterio. Sono consentiti più input WSP e vengono elaborati tutti i file di criteri specificati. L' \_ URL facoltativo specifica il percorso da cui vengono recuperati i metadati. Se non \_ viene specificato alcun URL facoltativo, WSUTIL genera internamente un URL univoco. I file dei criteri vengono ignorati se viene specificato il flag/nopolicy. Vedere anche [supporto dei criteri](policy-support.md).
+-   @filename Specifica che il file di input deve essere considerato come un file di risposta. Questa opzione può essere usata più volte, in qualsiasi luogo nell'elenco di argomenti.
+-   /wsdl: :<url facoltativo> specifica che il file di <filename> input deve essere considerato come file \_ wsdl. Sono consentiti più input wsdl e vengono elaborati tutti i file wsdl specificati. \_L'URL facoltativo specifica il percorso da cui sono stati recuperati i metadati. Se non viene \_ specificato alcun URL facoltativo, Wsutil genera un URL univoco internamente. Vedere anche [Supporto dei criteri](policy-support.md).
+-   /xsd: <filename> specifica che il nome file di input deve essere considerato come file di schema. Sono consentiti più input xsd e vengono elaborati tutti i file di schema specificati.
+-   /wsp: :<url facoltativo> specifica che il nome file di <filename> input deve essere considerato come metadati dei \_ criteri. Sono consentiti più input wsp e vengono elaborati tutti i file di criteri specificati. \_L'URL facoltativo specifica il percorso da cui sono stati recuperati i metadati. Se non viene \_ specificato alcun URL facoltativo, Wsutil genera un URL univoco internamente. I file di criteri vengono ignorati se viene specificato il flag /nopolicy. Vedere anche [Supporto dei criteri](policy-support.md).
 -   /nopolicy Disabilita l'elaborazione dei criteri.
--   /out: <dirname> specifica il nome di directory per i file di output
--   /NoClient non generano lo stub lato client.
--   /noservice non genera lo stub del lato servizio.
--   /prefix: <string> anteporre la stringa specificata a tutti gli identificatori generati.
--   /FullName anteporre il nome file normalizzato agli identificatori generati. Per impostazione predefinita, solo il nome specificato nell'attributo "Name" verrà usato per generare gli identificatori per le descrizioni correlate.
--   /String: <WS \_ string>\|<WCHAR \*> per impostazione predefinita, WSUTIL genera WCHAR \* per il tipo XSD: String. L'applicazione può utilizzare questo flag per sovrascrivere tale comportamento e genera \_ invece una stringa WS per xsd: Type.
--   /Help Visualizza il messaggio della Guida
--   /? Uguale a/Help
--   /W: x opzioni di gestione degli errori. Potrebbe essere W:0-W: 4 \| WX
--   /nologo non generano informazioni specifiche del compilatore nell'output della console.
--   /nostamp non generano informazioni specifiche del compilatore sui file generati.
+-   /out: <dirname> specifica il nome della directory per i file di output
+-   /noclient Non genera lo stub sul lato client.
+-   /noservice Non genera lo stub sul lato servizio.
+-   /prefix: <string> antepone la stringa specificata a tutti gli identificatori generati.
+-   /fullname Antepone il nome file normalizzato agli identificatori generati. Per impostazione predefinita, verrà usato solo il nome specificato nell'attributo "name" per generare identificatori per le descrizioni correlate.
+-   /string:<WS STRING><WCHAR> Per impostazione predefinita, wsutil genera WCHAR per il tipo \_ \| \* \* xsd:string. L'applicazione può usare questo flag per sovrascrivere tale comportamento e genera invece WS \_ STRING per xsd:type.
+-   /help Visualizza il messaggio della Guida
+-   /? Uguale a /help
+-   /W:x Opzioni di gestione degli errori. Potrebbe essere W:0-W:4 \| WX
+-   /nologo Non genera informazioni specifiche del compilatore sull'output della console.
+-   /nostamp Non genera informazioni specifiche del compilatore sui file generati.
 
-Per impostazione predefinita, il compilatore genera i file seguenti per il file WSDL o WSDL restituito dallo scambio di metadati:
+Per impostazione predefinita, il compilatore genera i file seguenti per il file WSDL o WSDL restituiti dallo scambio di metadati:
 
--   Proxy client ({inputFilename}. c)
--   Stub servizio ({inputFilename}. c)
--   File di intestazione ({inputFilename}. h)
+-   Proxy client ({inputfilename}.c)
+-   Stub del servizio ({inputfilename}.c)
+-   File di intestazione ({inputfilename}.h)
 
-    La radice del nome file generato è il nome del file di input. Le estensioni di file di input originali vengono mantenute per impedire il conflitto di nomi di file per i file generati. Per impostazione predefinita, gli stub client e servizio vengono generati nello stesso file, con codice stub servizio generato dopo il codice proxy.
+    La radice del nome file generato è il nome del file di input. Le estensioni dei file di input originali vengono mantenute per evitare conflitti di nomi file per i file generati. Per impostazione predefinita, gli stub client e del servizio vengono generati nello stesso file, con il codice stub del servizio generato dopo il codice proxy.
 
-    Per impostazione predefinita, il compilatore genera i seguenti file per un file XSD per lo schema restituito dallo scambio di metadati:
+    Per impostazione predefinita, il compilatore genera i file seguenti per un file XSD per lo schema restituito dallo scambio di metadati:
 
--   descrizioni della serializzazione ({inputFilename}. c)
--   File di intestazione ({inputFilename}. h)
+-   descrizioni di serializzazione ({inputfilename}.c)
+-   File di intestazione ({inputfilename}.h)
 
     La radice del nome file è il nome del servizio.
 
-Wsutil.exe genera una sezione "timbro" all'inizio di tutti i file generati, che indica l'opzione del compilatore, la versione dello strumento, l'opzione della riga di comando applicabile e così via. Questa sezione può essere disattivata utilizzando l'opzione/nostamp per evitare rumore con il confronto dei file generati.
+Wsutil.exe genera una sezione "stamp" all'inizio di tutti i file generati, che indica l'opzione del compilatore, la versione dello strumento, l'opzione della riga di comando applicabile e così via. Questa sezione può essere disattivata usando l'opzione /nostamp per evitare problemi con il confronto dei file generati.
 
 Wsutil non supporta il download dei metadati
 
-Il compilatore WSUTIL funziona solo dal file di metadati locale. Lo strumento non supporta il download dei metadati dall'esecuzione di servizi Web. Gli sviluppatori possono utilizzare altri strumenti WebService supportati, ad esempio Svcutil, per scaricare i metadati nel computer locale, controllare i file salvati e passare i file a wsutil.exe per la compilazione.
+Il compilatore Wsutil funziona solo dal file di metadati locale. Lo strumento non supporta il download di metadati dall'esecuzione di servizi Web. Gli sviluppatori possono usare altri strumenti di servizio Web supportati, ad esempio svcutil, per scaricare metadati nel computer locale, esaminare i file salvati e passare tali file wsutil.exe per la compilazione.
 
 Supporto di più file di input/output
 
-WSDL e XML Schema consentono di includere/importare definizioni da altri spazi dei nomi specificati in altri percorsi o file. Wsutil supporta più input schema/WSDL/Policy e genera un set di Stub/intestazione per ogni file di input. Wsutil non segue le istruzioni include e Import. Al contrario, l'applicazione deve passare i file contenenti tutti gli spazi dei nomi necessari a WSUTIL in modo che lo strumento possa risolvere tutte le dipendenze durante la compilazione.
+WSDL e XML Schema consentono di includere/importare definizioni da altri spazi dei nomi specificati in altri file o percorso. Wsutil supporta più input schema/wsdl/criteri e genera un set di stub/intestazione per ogni file di input. Wsutil non segue le istruzioni include e import. L'applicazione deve invece passare i file contenenti tutti gli spazi dei nomi necessari a wsutil in modo che lo strumento possa risolvere tutte le dipendenze durante la compilazione.
 
-**WsUtil.exe/xsd: stockquote. xsd/WSDL: stockquote. WSDL/WSDL: StockQuoteService. WSDL**
+**WsUtil.exe /xsd:stockquote.xsd /wsdl:stockquote.wsdl /wsdl:stockquoteservice.wsdl**
 
 wsutil genera tre set di file di output:
 
--   stockquote. xsd. c stockquote. xsd. h
--   stockquote. WSDL. c stockquote. WSDL. h
--   StockQuoteService. WSDL. h stockquoteservices. WSDL. c
+-   stockquote.xsd.c stockquote.xsd.h
+-   stockquote.wsdl.c stockquote.wsdl.h
+-   stockquoteservice.wsdl.h stockquoteservices.wsdl.c
 
 Tipi di file di output
 
-Per ogni file di output, WSUTIL genera definizioni disponibili esternamente nel file di intestazione. A parte le definizioni della struttura C e i prototipi di funzioni stub, tutte le altre definizioni correlate ai servizi Web sono incapsulate in una struttura globale denominata con il nome file normalizzato.
+Per ogni file di output, wsutil genera definizioni disponibili esternamente nel file di intestazione. Oltre alle definizioni di struttura C e ai prototipi di funzione stub, tutte le altre definizioni correlate ai servizi Web vengono incapsulate in una struttura globale denominata con nome file normalizzato.
 
 ``` syntax
 typedef struct _stockquote_wsdl {
@@ -105,24 +105,24 @@ typedef struct _stockquote_wsdl {
 EXTERN_C _stockquote_wsdl stockquote_wsdl;
 ```
 
-Si noti che non tutti i campi vengono generati per la struttura globale. Un campo di livello principale viene generato solo quando le definizioni correlate vengono specificate nel file di input. Per i file XSD, ad esempio, non viene generato alcun campo relativo a messaggi, operazioni e contratti.
+Si noti che non tutti i campi vengono generati per la struttura globale. Un campo di primo livello viene generato solo quando le definizioni correlate vengono specificate nel file di input. Ad esempio, non vengono generati campi di messaggio, operazioni e contratti per i file xsd.
 
 Livelli di avviso e livello di errore
 
 Analogamente al compilatore C, WsUtil.exe supporta quattro livelli di avviso e un livello di errore:
 
--   WsUtil.exe genera errori con errori irreversibili, ad esempio file WSDL non valido, opzioni del compilatore non valide e così via.
--   WsUtil genera avvisi W1 con gravi problemi reversibili. Il compilatore può continuare, ma è necessario che l'utente sia a conoscenza del problema. Ad esempio, verrà generato un avviso W1 se sono presenti attributi non supportati, come alcuni facet WSDL, in WSDL che non influisce sulla generazione del codice.
--   WsUtil genera avvisi W2 con problemi meno gravi. Non vi è alcuna perdita di funzionalità, ma lo sviluppatore di applicazioni potrebbe volerne saperlo. Comportamenti simili che potrebbero essere diversi dalle altre piattaforme.
--   WsUtil genera avvisi W3 con un minimo effetto sul codice generato. wsutil.exe, ad esempio, genera un avviso W3 quando la stringa normalizzata è diversa dalla stringa originale.
--   W4 Warning è più simile a "Informational" Warnings e WsUtil Issue W4 in casi come ignorare l'attributo Documentation in WSDL.
--   WX indica che il compilatore considera l'avviso come errore. Ad esempio, WSUTIL genera un errore per tutti gli avvisi W1 se/W: 1/WX è specificato.
+-   WsUtil.exe genera errori con errori irreversibili, ad esempio file wsdl non validi, opzioni del compilatore non valide e così via.
+-   WsUtil genera avvisi W1 con gravi problemi ripristinabili. Il compilatore può andare avanti, ma l'utente deve essere a conoscenza del problema. Ad esempio, verrà generato un avviso W1 se sono presenti attributi non supportati, ad esempio alcuni facet WSDL, in wsdl che non influiscono sulla generazione del codice.
+-   WsUtil genera avvisi W2 con problemi meno gravi. Non c'è perdita di funzionalità, ma lo sviluppatore di applicazioni potrebbe voler sapere questo. Come i comportamenti che potrebbero essere diversi da altre piattaforme.
+-   WsUtil genera avvisi W3 con un impatto minimo sul codice generato. Ad esempio, wsutil.exe genera un avviso W3 quando la stringa normalizzata è diversa dalla stringa originale.
+-   L'avviso W4 è più simile agli avvisi "in formato informativo" e WsUtil emettere W4 in casi come ignorare l'attributo della documentazione in WSDL.
+-   WX indica che il compilatore considera l'avviso come errore. Ad esempio, wsutil genera un errore per tutti gli avvisi W1 se si specifica /W:1 /WX.
 
-/W: {N} specificare il livello di messaggio di avviso da generare. /W: 1 indica che devono essere generati avvisi di livello 1, mentre gli avvisi di livello 2 e di avviso indicati di seguito devono essere mascherati e non generati dallo strumento.
+/W:{N} specifica il livello di messaggio di avviso da generare. /W:1 indica che devono essere generati avvisi di livello 1 e gli avvisi del livello di avviso 2 e inferiore devono essere mascherati e non generati dallo strumento.
 
 ## <a name="fullname"></a>/fullname
 
-Questa opzione indica che WsUtil.exe genera il nome completo per gli identificatori per evitare potenziali conflitti di nomi. Ad esempio, in XSD sono disponibili:
+Questa opzione indica che WsUtil.exe nome completo per gli identificatori per evitare potenziali conflitti di nomi. Ad esempio, in example.xsd sono presenti:
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -142,7 +142,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Per impostazione predefinita WsUtil.exe genera:
+Per impostazione predefinita, WsUtil.exe genera:
 
 ``` syntax
 typedef struct SimpleStruct {
@@ -151,7 +151,7 @@ typedef struct SimpleStruct {
 };
 ```
 
-Tuttavia, se viene specificata l'opzione della riga di comando/FullName, WsUtil.exe genera invece la definizione della struttura seguente:
+Se tuttavia si specifica l'opzione della riga di comando /fullname, WsUtil.exe genera invece la definizione di struttura seguente:
 
 ``` syntax
 typedef struct exmaple_xsd_SimpleStruct {
@@ -162,17 +162,17 @@ typedef struct exmaple_xsd_SimpleStruct {
 
 ## <a name="globalization"></a>Globalizzazione
 
-Lo strumento è indipendente dalla lingua e può essere localizzato in lingue diverse. È possibile localizzare tutti i messaggi di errore o l'output della console. Tuttavia, le opzioni della riga di comando restano in inglese.
+Lo strumento è indipendente dalla lingua e può essere localizzato in lingue diverse. Tutti i messaggi di errore o l'output della console possono essere localizzati. Tuttavia, le opzioni della riga di comando rimangono in inglese.
 
 ## <a name="environment-variable"></a>Variabile di ambiente
 
-WsUtil.exe non utilizza alcuna variabile di ambiente.
+WsUtil.exe non usa variabili di ambiente.
 
 ## <a name="platform-independent"></a>Indipendente dalla piattaforma
 
-I file di output di WsUtil.exe sono indipendenti dalla piattaforma. Nessun codice dipendente dall'architettura generato nello stub; qualsiasi architettura specifica verrà gestita dal compilatore C. Lo stub può essere usato in tutte le piattaforme supportate.
+I file di output WsUtil.exe sono indipendenti dalla piattaforma. Nello stub non viene generato codice dipendente dall'architettura. qualsiasi architettura specifica verrà curata dal compilatore C. Lo stub può essere usato in tutte le piattaforme supportate.
 
-La descrizione dell'output wsutil.exe è disponibile nel [supporto WSDL](wsdl-support.md) e nella parte relativa al [supporto dello schema](schema-support.md) .
+La descrizione dellwsutil.exe output è disponibile nella parte [Supporto WSDL](wsdl-support.md) e [Supporto](schema-support.md) schema.
 
  
 

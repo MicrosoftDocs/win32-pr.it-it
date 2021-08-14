@@ -1,54 +1,54 @@
 ---
-title: Miglioramento dell'esperienza di Single-Finger Panoramica
-description: Se si compila un'applicazione destinata a Windows Touch, fornisce automaticamente il supporto per la Panoramica di base. Tuttavia, è possibile usare il \_ messaggio di movimento WM per fornire supporto avanzato per la panoramica su un singolo dito.
+title: Miglioramento dell'Single-Finger panoramica
+description: Se si compila un'applicazione destinata a Windows Touch, fornisce automaticamente il supporto per la panoramica di base. È tuttavia possibile usare il messaggio WM GESTURE per fornire supporto avanzato per la panoramica \_ con un solo dito.
 ms.assetid: eb01a6df-9969-44d1-a657-4f83fb0b67cb
 keywords:
-- Windows Touch, panoramica a singolo dito
-- Windows Touch, panoramica
-- Windows Touch, barre di scorrimento
-- Windows Touch, gesti rapidi
-- Windows Touch, messaggi di Pan di movimento
-- Windows Touch, commenti sui limiti
-- Panoramica su un solo dito
-- Panoramica, Single-Finger
-- Panoramica, commenti sui limiti
-- barre di scorrimento, panoramica a dito singolo
-- scorrimenti rapidi, panoramica a singolo dito
+- Windows Tocco, panoramica con un dito
+- Windows Tocco, panoramica
+- Windows Tocco, barre di scorrimento
+- Windows Tocco, gesti rapidi
+- Windows Tocco, messaggi di panoramica dei movimenti
+- Windows Tocco, feedback sui limiti
+- panoramica con un solo dito
+- panoramica, dito singolo
+- panoramica, feedback sui limiti
+- barre di scorrimento, panoramica con un dito
+- gesti rapidi, panoramica con un solo dito
 - barre di scorrimento, disabilitazione
 - gesti rapidi, disabilitazione
-- movimenti, messaggi di Pan di movimento
-- Panoramica, messaggi di Pan movimento
-- Commenti sui limiti, panoramica su un singolo dito
+- movimenti, messaggi di panoramica dei movimenti
+- panoramica, messaggi di panoramica dei movimenti
+- feedback sui limiti, panoramica con un dito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9081903600918485f1e3241a02c01b5438c1aae
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf740d673e8bd2d2711238902d3de6c89d21a01fe330524b910db050011872f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103728018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435444"
 ---
-# <a name="improving-the-single-finger-panning-experience"></a>Miglioramento dell'esperienza di Single-Finger Panoramica
+# <a name="improving-the-single-finger-panning-experience"></a>Miglioramento dell'Single-Finger panoramica
 
-Se si compila un'applicazione destinata a Windows Touch, fornisce automaticamente il supporto per la Panoramica di base. Tuttavia, è possibile usare il messaggio di [**\_ movimento WM**](wm-gesture.md) per fornire supporto avanzato per la panoramica su un singolo dito.
+Se si compila un'applicazione destinata a Windows Touch, fornisce automaticamente il supporto per la panoramica di base. È tuttavia possibile usare il messaggio [**WM \_ GESTURE**](wm-gesture.md) per fornire supporto avanzato per la panoramica con un solo dito.
 
 ## <a name="overview"></a>Panoramica
 
-Per migliorare l'esperienza di panning a dito singolo, attenersi alla procedura descritta nelle sezioni successive di questo argomento:
+Per migliorare l'esperienza di panoramica con un solo dito, seguire questa procedura, come illustrato nelle sezioni successive di questo argomento:
 
--   Creare un'applicazione con le barre di scorrimento e con i gesti rapidi disabilitati.
--   Aggiunta del supporto per i messaggi di Pan di movimento.
--   Abilita rimbalzo.
+-   Creare un'applicazione con barre di scorrimento e gesti rapidi disabilitati.
+-   Aggiunta del supporto per i messaggi di panoramica dei movimenti.
+-   Abilitare il bounce.
 
-## <a name="create-an-application-with-scroll-bars-and-with-flicks-disabled"></a>Creare un'applicazione con le barre di scorrimento e con i gesti rapidi disabilitati
+## <a name="create-an-application-with-scroll-bars-and-with-flicks-disabled"></a>Creare un'applicazione con barre di scorrimento e gesti rapidi disabilitati
 
-Prima di iniziare, è necessario creare un'applicazione con barre di scorrimento. Questo processo è illustrato nella sezione [supporto legacy per la panoramica con le barre di scorrimento](legacy-support-for-panning-with-scrollbars.md) . Se si vuole iniziare con il contenuto di esempio, passare alla sezione e creare un'applicazione con le barre di scorrimento e quindi disabilitare i gesti rapidi. Se si dispone già di un'applicazione con barre di scorrimento funzionanti, disabilitare i gesti rapidi come descritto in questa sezione.
+Prima di iniziare, è necessario creare un'applicazione con barre di scorrimento. La sezione [Supporto legacy per la panoramica con barre di scorrimento](legacy-support-for-panning-with-scrollbars.md) illustra questo processo. Se si vuole iniziare con il contenuto di esempio, passare a tale sezione e creare un'applicazione con barre di scorrimento e quindi disabilitare i gesti rapidi. Se si dispone già di un'applicazione con barre di scorrimento funzionanti, disabilitare i gesti rapidi come descritto in tale sezione.
 
-## <a name="add-custom-panning-support-for-gesture-pan-messages"></a>Aggiunta del supporto personalizzato per la panoramica dei movimenti
+## <a name="add-custom-panning-support-for-gesture-pan-messages"></a>Aggiungere il supporto per la panoramica personalizzata per i messaggi di panoramica movimenti
 
-Per supportare i messaggi del Pan di movimento, è necessario gestirli nel metodo **WndProc** . I messaggi di movimento vengono utilizzati per determinare i Delta orizzontali e verticali per i messaggi di Pan. I Delta vengono usati per aggiornare l'oggetto barra di scorrimento, che aggiorna l'interfaccia utente.
+Per supportare i messaggi di panoramica dei movimenti, è necessario gestirli nel **metodo WndProc.** I messaggi di movimento vengono usati per determinare i delta orizzontali e verticali per i messaggi di panoramica. I delta vengono usati per aggiornare l'oggetto barra di scorrimento, che aggiorna l'interfaccia utente.
 
-Aggiornare innanzitutto le impostazioni della versione di Windows nel file targetver. h per abilitare Windows Touch. Nel codice seguente vengono illustrate le diverse impostazioni della versione di Windows che devono essere sostituite in targetver. h.
+Prima di tutto, aggiornare Windows le impostazioni della versione nel file targetver.h per abilitare Windows Touch. Il codice seguente illustra le varie impostazioni Windows versione che devono sostituire quelle in targetver.h.
 
 
 ```C++
@@ -63,7 +63,7 @@ Aggiornare innanzitutto le impostazioni della versione di Windows nel file targe
 
 
 
-Aggiungere quindi il file UXTheme. h al progetto e aggiungere la libreria uxtheme. lib alle dipendenze aggiuntive del progetto.
+Aggiungere quindi il file UXTheme.h al progetto e aggiungere la libreria uxtheme.lib alle dipendenze aggiuntive del progetto.
 
 
 ```C++
@@ -72,7 +72,7 @@ Aggiungere quindi il file UXTheme. h al progetto e aggiungere la libreria uxthem
 
 
 
-Aggiungere quindi le variabili seguenti all'inizio della funzione **WndProc** . Questi verranno utilizzati nei calcoli per la panoramica.
+Aggiungere quindi le variabili seguenti all'inizio della **funzione WndProc.** Questi verranno usati nei calcoli per la panoramica.
 
 
 ```C++
@@ -87,9 +87,9 @@ GESTUREINFO gi;
 
 
 
-Aggiungere quindi il gestore per il messaggio [**di \_ movimento WM**](wm-gesture.md) in modo che le barre di scorrimento vengano aggiornate con i Delta basati sui movimenti di panoramica. In questo modo si ottiene un controllo più dettagliato della panoramica.
+Aggiungere quindi il gestore per il messaggio [**WM \_ GESTURE**](wm-gesture.md) in modo che le barre di scorrimento siano aggiornate con delta in base ai movimenti di panoramica. In questo modo si ha un controllo molto più granulare della panoramica.
 
-Il codice seguente ottiene la struttura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo) da *lParam*, Salva l'ultima coordinata y dalla struttura e determina la modifica della posizione per aggiornare l'oggetto barra di scorrimento. Il codice seguente deve essere inserito nell'istruzione switch **WndProc** .
+Il codice seguente ottiene la struttura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo) da *lParam*, salva l'ultima coordinata y dalla struttura e determina la modifica della posizione per aggiornare l'oggetto barra di scorrimento. Il codice seguente deve essere inserito **nell'istruzione switch WndProc.**
 
 
 ```C++
@@ -160,11 +160,11 @@ Il codice seguente ottiene la struttura [**GESTUREINFO**](/windows/win32/api/win
 
 
 
-A questo punto, quando si esegue il movimento della panoramica sulla finestra, viene visualizzato lo scorrimento del testo con inerzia. A questo punto, potrebbe essere necessario modificare il testo in modo da avere più righe, in modo da poter esplorare sezioni di testo di grandi dimensioni.
+A questo punto, quando si esegue il movimento di panoramica nella finestra, il testo scorre con inerzia. A questo punto, è possibile modificare il testo in modo che abbia più righe in modo da poter esplorare la panoramica di sezioni di testo di grandi dimensioni.
 
-## <a name="boundary-feedback-in-wndproc"></a>Commenti sui limiti in WndProc
+## <a name="boundary-feedback-in-wndproc"></a>Feedback sui limiti in WndProc
 
-Il feedback dei limiti è un tipo di feedback visivo assegnato agli utenti quando raggiungono la fine di un'area a cui è possibile accedere. Viene attivato dall'applicazione quando viene raggiunto un limite. Nell'implementazione di esempio precedente del messaggio [**del \_ movimento WM**](wm-gesture.md) , la condizione finale `(si.nPos == si.yPos)` dal caso **del \_ movimento WM** viene utilizzata per verificare che sia stata raggiunta la fine di un'area di cui è possibile eseguire il provisioning. Le variabili seguenti vengono utilizzate per tenere traccia dei valori e verificare gli errori.
+Il feedback sui limiti è un tipo di feedback visivo fornito agli utenti quando raggiungono la fine di un'area panoramica. Viene attivato dall'applicazione quando viene raggiunto un limite. Nell'implementazione di esempio precedente del messaggio [**WM \_ GESTURE**](wm-gesture.md) viene usata la condizione finale del caso WM GESTURE per verificare che sia stata raggiunta la fine di un'area `(si.nPos == si.yPos)` **\_** panoramica. Le variabili seguenti vengono usate per tenere traccia dei valori e degli errori di test.
 
 
 ```C++
@@ -179,7 +179,7 @@ static long yOverpan   = 0;
 
 
 
-Il caso di movimento Pan viene aggiornato per attivare il feedback del limite. Nel codice riportato di seguito viene illustrato il caso della **\_ Panoramica GID** dal gestore di messaggi con [**\_ movimento WM**](wm-gesture.md) .
+Il caso del movimento di panoramica viene aggiornato per attivare il feedback sui limiti. Il codice seguente illustra il case **GID \_ PAN** del gestore [**di messaggi WM \_ GESTURE.**](wm-gesture.md)
 
 
 ```C++
@@ -218,13 +218,13 @@ Il caso di movimento Pan viene aggiornato per attivare il feedback del limite. N
 
 
 
-A questo punto, la finestra dell'applicazione deve avere un feedback sui limiti quando un utente passa dalla parte inferiore dell'area della barra di scorrimento.
+Ora la finestra dell'applicazione deve avere un feedback sui limiti quando un utente esegue una panoramica oltre la parte inferiore dell'area della barra di scorrimento.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Movimenti tocco di Windows](guide-multi-touch-gestures.md)
+[Windows Movimenti tocco](guide-multi-touch-gestures.md)
 </dt> <dt>
 
 [**BeginPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-beginpanningfeedback)
@@ -236,6 +236,6 @@ A questo punto, la finestra dell'applicazione deve avere un feedback sui limiti 
 [**UpdatePanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-updatepanningfeedback)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

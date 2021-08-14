@@ -1,9 +1,9 @@
 ---
-title: Struttura MENUEX_TEMPLATE_ITEM
-description: Definisce una voce di menu in un modello di menu esteso. Questa definizione di struttura è solo per la spiegazione; non è presente in alcun file di intestazione standard.
+title: MENUEX_TEMPLATE_ITEM struttura
+description: Definisce una voce di menu in un modello di menu esteso. Questa definizione di struttura è solo a scopo di spiegazione. non è presente in alcun file di intestazione standard.
 ms.assetid: f6e2fd0a-16b8-48e3-8597-341085a7adbd
 keywords:
-- Menu struttura MENUEX_TEMPLATE_ITEM e altre risorse
+- MENUEX_TEMPLATE_ITEM struttura menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca1f73d1174590db5948f54f5c51c91a8c65a8c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6352c7ce596a59d69b21f1ba424ac50b471e13cd97320f0df184bce2e1abd295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733906"
 ---
-# <a name="menuex_template_item-structure"></a>Struttura dell'elemento del \_ modello menuex \_
+# <a name="menuex_template_item-structure"></a>Struttura MENUEX \_ TEMPLATE \_ ITEM
 
-Definisce una voce di menu in un modello di menu esteso. Questa definizione di struttura è solo per la spiegazione; non è presente in alcun file di intestazione standard.
+Definisce una voce di menu in un modello di menu esteso. Questa definizione di struttura è solo a scopo di spiegazione. non è presente in alcun file di intestazione standard.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +47,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Tipo di voce di menu. Questo membro può essere una combinazione dei valori di tipo (a partire da MFT) elencati con la struttura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) .
+Tipo di voce di menu. Questo membro può essere una combinazione dei valori di tipo (a partire da MFT) elencati con la [**struttura MENUITEMINFO.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa)
 
 </dd> <dt>
 
@@ -58,43 +58,43 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Stato della voce di menu. Questo membro può essere una combinazione dei valori di stato (a partire da MFS) elencati con la struttura [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) .
+Stato della voce di menu. Questo membro può essere una combinazione dei valori di stato (a partire da MFS) elencati con la [**struttura MENUITEMINFO.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa)
 
 </dd> <dt>
 
-**uId**
+**Uid**
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dd>
 
-Identificatore della voce di menu. Si tratta di un valore definito dall'applicazione che identifica la voce di menu. In una risorsa di menu esteso gli elementi che aprono menu a discesa o sottomenu nonché elementi di comando possono avere identificatori.
+Identificatore della voce di menu. Si tratta di un valore definito dall'applicazione che identifica la voce di menu. In una risorsa di menu estesa, le voci che aprono menu a discesa o sottomenu, nonché le voci di comando, possono avere identificatori.
 
 </dd> <dt>
 
-**wFlags**
+**Wflags**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Specifica se la voce di menu è l'ultimo elemento della barra dei menu, il menu a discesa, il sottomenu o il menu di scelta rapida e se è un elemento che apre un menu a discesa o un sottomenu. Questo membro può essere zero o più di questi valori. Per le applicazioni a 32 bit, questo membro è una parola; per le applicazioni a 16 bit, si tratta di un byte.
+Specifica se la voce di menu è l'ultima voce nella barra dei menu, nel menu a discesa, nel sottomenu o nel menu di scelta rapida e se si tratta di una voce che apre un menu a discesa o un sottomenu. Questo membro può essere zero o più di questi valori. Per le applicazioni a 32 bit, questo membro è una parola; Per le applicazioni a 16 bit, è un byte.
 
 <dt>
 
 0x80
 </dt> <dd>
 
-La struttura definisce l'ultima voce di menu della barra dei menu, il menu a discesa, il sottomenu o il menu di scelta rapida.
+La struttura definisce l'ultima voce di menu nella barra dei menu, nel menu a discesa, nel sottomenu o nel menu di scelta rapida.
 
 </dd> <dt>
 
 0x01
 </dt> <dd>
 
-La struttura definisce un elemento che apre un menu a discesa o un sottomenu. Le strutture successive definiscono le voci di menu nel menu a discesa o nel sottomenu corrispondente.
+La struttura definisce un elemento che apre un menu a discesa o un sottomenu. Le strutture successive definiscono le voci di menu nel sottomenu o nel menu a discesa corrispondente.
 
 </dd> </dl> </dd> <dt>
 
@@ -105,13 +105,13 @@ Tipo: **WCHAR**
 
 </dd> <dd>
 
-Testo della voce di menu. Questo membro è una stringa Unicode con terminazione null, allineata al confine di una parola. Le dimensioni della definizione della voce di menu variano a seconda della lunghezza di questa stringa.
+Testo della voce di menu. Questo membro è una stringa Unicode con terminazione Null, allineata su un confine di parola. Le dimensioni della definizione della voce di menu variano a seconda della lunghezza di questa stringa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Un modello di menu esteso è costituito da una struttura di [**\_ \_ intestazione del modello menuex**](menuex-template-header.md) seguita da una o più strutture di **\_ \_ elementi del modello menuex** contigue. Le strutture degli **\_ \_ elementi del modello menuex** , che sono di lunghezza variabile, sono allineate ai limiti **DWORD** . Per creare un menu da un modello di menu esteso in memoria, usare la funzione [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta) .
+Un modello di menu esteso è costituito da una [**struttura MENUEX \_ TEMPLATE \_ HEADER**](menuex-template-header.md) seguita da una o più strutture **MENUEX TEMPLATE \_ \_ ITEM** contigue. Le **strutture MENUEX \_ TEMPLATE \_ ITEM,** di lunghezza variabile, sono allineate in base **ai limiti DWORD.** Per creare un menu da un modello di menu esteso in memoria, usare la [**funzione LoadMenuIndirect.**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -134,7 +134,7 @@ Un modello di menu esteso è costituito da una struttura di [**\_ \_ intestazion
 [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 </dt> <dt>
 
-[**\_intestazione del modello menuex \_**](menuex-template-header.md)
+[**INTESTAZIONE DEL MODELLO MENUEX \_ \_**](menuex-template-header.md)
 </dt> <dt>
 
 [**MENUITEMINFO**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa)

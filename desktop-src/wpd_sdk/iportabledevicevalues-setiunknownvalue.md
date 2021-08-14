@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetIUnknownValue aggiunge un nuovo valore IUnknown (Type VT \_ Unknown) o ne sovrascrive uno esistente.
+description: Il metodo SetIUnknownValue aggiunge un nuovo valore IUnknown (tipo VT UNKNOWN) o \_ ne sovrascrive uno esistente.
 ms.assetid: 292adf45-439c-4aae-9b17-e4d9ed701eda
-title: 'Metodo IPortableDeviceValues:: SetIUnknownValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetIUnknownValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2c3a27fe5ea89359884d70162000b5164b7c1aec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4a7c8a77cfef505b2a507b6281b931eea7f09c4ea1fbc79e651e7f517593799
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697052"
 ---
-# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Metodo IPortableDeviceValues:: SetIUnknownValue
+# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Metodo IPortableDeviceValues::SetIUnknownValue
 
-Il metodo **SetIUnknownValue** aggiunge un nuovo valore **IUnknown** (Type VT \_ Unknown) o ne sovrascrive uno esistente.
+Il **metodo SetIUnknownValue** aggiunge un nuovo **valore IUnknown** (tipo VT UNKNOWN) o \_ ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetIUnknownValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*pValue* \[ in\]
+*pValue* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un'interfaccia **IUnknown** che specifica il nuovo valore. L'SDK copia un riferimento all'interfaccia inviata e chiama **AddRef** .
+Puntatore a **un'interfaccia IUnknown** che specifica il nuovo valore. L'SDK copia un riferimento all'interfaccia inviata e chiama **AddRef** su di essa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso. La memoria della chiave esistente viene rilasciata in modo appropriato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

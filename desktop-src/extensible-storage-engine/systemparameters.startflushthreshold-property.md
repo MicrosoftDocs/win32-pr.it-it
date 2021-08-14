@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà SystemParameters. StartFlushThreshold'
-title: Proprietà SystemParameters. StartFlushThreshold
+description: Altre informazioni sulla proprietà SystemParameters.StartFlushThreshold
+title: SystemParameters.StartFlushThreshold - proprietà
 TOCTitle: 'StartFlushThreshold property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.StartFlushThreshold
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.startflushthreshold(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4a0e520682253d7a586c36366d229be59e014c9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49a868bf06f6994d61e3f901d5d9a447d2ef63c7909c33db3689fda343e16c27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484860"
 ---
-# <a name="systemparametersstartflushthreshold-property"></a>Proprietà SystemParameters. StartFlushThreshold
+# <a name="systemparametersstartflushthreshold-property"></a>SystemParameters.StartFlushThreshold - proprietà
 
-Ottiene o imposta la soglia in corrispondenza della quale la cache delle pagine del database inizia a rimuovere le pagine dalla cache per creare spazio per le pagine che non sono memorizzate nella cache. Quando il numero di buffer di pagina nella cache scende al di sotto di questa soglia, viene avviato un processo in background per ripristinare il pool di buffer disponibili. Questa soglia è sempre relativa alle dimensioni massime della cache impostate dal JET_paramCacheSizeMax. Anche questa soglia deve essere sempre inferiore alla soglia di arresto impostata dal JET_paramStopFlushThreshold. L'altezza della distanza della soglia iniziale determina il tempo di risposta che la cache delle pagine del database deve avere per produrre i buffer disponibili prima che siano necessari per l'applicazione. Una soglia di inizio elevata offrirà al processo in background più tempo per rispondere. Tuttavia, una soglia di avvio elevata implica una soglia di arresto superiore e che ridurrà le dimensioni effettive della cache delle pagine del database.
+Ottiene o imposta la soglia alla quale la cache delle pagine del database inizia a rimuovere le pagine dalla cache per fare spazio alle pagine non memorizzate nella cache. Quando il numero di buffer di pagina nella cache scende al di sotto di questa soglia, verrà avviato un processo in background per riempire il pool di buffer disponibili. Questa soglia è sempre relativa alla dimensione massima della cache impostata da JET_paramCacheSizeMax. Anche questa soglia deve essere sempre inferiore alla soglia di arresto impostata da JET_paramStopFlushThreshold. L'altezza della distanza della soglia iniziale determinerà il tempo di risposta che la cache delle pagine del database deve avere per produrre buffer disponibili prima che l'applicazione ne abbia bisogno. Una soglia di avvio elevata offrirà al processo in background più tempo per reagire. Tuttavia, una soglia di avvio elevata implica una soglia di arresto più elevata che ridurrà le dimensioni effettive della cache delle pagine del database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ public static int StartFlushThreshold { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -69,6 +69,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (classe)](./systemparameters-class.md)
 
-[Membri SystemParameters](./systemparameters-members.md)
+[Membri di SystemParameters](./systemparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

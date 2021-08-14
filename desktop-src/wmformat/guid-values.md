@@ -4,42 +4,42 @@ description: Valori GUID
 ms.assetid: 11da870b-f222-44f3-b3ea-f80ca6c04f79
 keywords:
 - Windows Media Format SDK, valori GUID
-- ASF (Advanced Systems Format), valori GUID
+- Advanced Systems Format (ASF), valori GUID
 - ASF (Advanced Systems Format), valori GUID
 - Windows Media Format SDK, costanti globali
 - Advanced Systems Format (ASF), costanti globali
-- ASF (formato avanzato dei sistemi), costanti globali
-- Windows Media Format SDK, costanti
+- ASF (Advanced Systems Format), costanti globali
+- Windows Media Format SDK,costanti
 - Advanced Systems Format (ASF), costanti
-- ASF (formato avanzato dei sistemi), costanti
-- costanti globali, valori GUID
-- costanti, valori GUID
+- ASF (Advanced Systems Format), costanti
+- costanti globali,valori GUID
+- costanti,valori GUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f42590eca079503e3205d152ec0af263a7d8bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 10564b0e845140b7c0588de0929e5f29c46fab34b5628ab3e18095d8ce6a48ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433877"
 ---
 # <a name="guid-values"></a>Valori GUID
 
-Nelle sezioni seguenti sono elencati i valori GUID utilizzati in Windows Media Format SDK e le costanti globali utilizzate per rappresentarli.
+Le sezioni seguenti elencano i valori GUID usati in Windows Media Format SDK e le costanti globali usate per rappresentarli.
 
 
 
 | Sezione                                                  | Descrizione                                                                                                               |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | [Identificatori di interfaccia](interface-identifiers.md)       | Elenca i valori GUID e le costanti associate per le interfacce supportate da Windows Media Format SDK.              |
-| [Identificatori del tipo di supporto](media-type-identifiers.md)     | Elenca i valori GUID e le costanti associate per i tipi di supporto supportati da Windows Media Format SDK.             |
+| [Identificatori dei tipi di supporti](media-type-identifiers.md)     | Elenca i valori GUID e le costanti associate per i tipi di supporti supportati da Windows Media Format SDK.             |
 | [Tipi di esclusione reciproca](mutual-exclusion-types.md)     | Elenca i valori GUID e le costanti associate per i tipi di esclusione reciproca supportati da Windows Media Format SDK.  |
 | [Tipi di condivisione della larghezza di banda](bandwidth-sharing-types.md)   | Elenca i valori GUID e le costanti associate per i tipi di condivisione della larghezza di banda supportati da Windows Media Format SDK. |
-| [Tipi di categoria filigrana](watermark-category-types.md) | Elenca i valori GUID e le costanti associate che identificano le categorie di watermarking DMO.                                 |
+| [Tipi di categoria di filigrane](watermark-category-types.md) | Elenca i valori GUID e le costanti associate che identificano la filigrana DMO categorie.                                 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,9 +48,9 @@ Nelle sezioni seguenti sono elencati i valori GUID utilizzati in Windows Media F
 [**Guida di riferimento alla programmazione**](programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

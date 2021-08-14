@@ -3,7 +3,7 @@ title: WM/StreamTypeInfo
 description: L'attributo WM/StreamTypeInfo contiene le informazioni di configurazione per il flusso specificato nel file ASF.
 ms.assetid: 4d7f18d4-d76d-4e2e-b8a9-eb96844a2fa1
 keywords:
-- Formato di Windows Media WM/StreamTypeInfo
+- WM/StreamTypeInfo windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c410b470e9ddb4ec874325d9c1cca2839c00b1d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6fb40926d5ecba3aea2c7f2db64850152c66a25861d4422fddf04670c76d8148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698273"
 ---
 # <a name="wmstreamtypeinfo"></a>WM/StreamTypeInfo
 
-L'attributo **WM/StreamTypeInfo** contiene le informazioni di configurazione per il flusso specificato nel file ASF.
+**L'attributo WM/StreamTypeInfo** contiene le informazioni di configurazione per il flusso specificato nel file ASF.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMStreamTypeInfo
 
 ## <a name="data-type"></a>Tipo di dati
 
-[**WM \_ \_ \_ informazioni sul tipo di flusso**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_type_info) (**\_ \_ Binary di tipo WMT**)
+[**WM \_ INFORMAZIONI \_ SUL TIPO DI \_ FLUSSO**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_type_info) (**FILE \_ BINARIO DI TIPO \_ WMT**)
 
 ## <a name="remarks"></a>Commenti
 
@@ -37,7 +37,7 @@ Questo attributo si applica a flussi specifici. Non è possibile recuperare ques
 
 Questo attributo è di sola lettura.
 
-È possibile accedere a **WM/StreamTypeInfo** dall'oggetto dell'editor di metadati. Questo è l'unico modo per accedere alle informazioni di configurazione del flusso senza aprire il file con l'oggetto Reader (o l'oggetto Reader sincrono).
+**WM/StreamTypeInfo** è accessibile dall'oggetto dell'editor di metadati. Questo è l'unico modo per accedere alle informazioni di configurazione del flusso senza aprire il file con l'oggetto lettore (o l'oggetto lettore sincrono).
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -46,9 +46,9 @@ Questo attributo è di sola lettura.
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

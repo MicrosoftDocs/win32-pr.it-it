@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c506d2ad23003f93bbaea409cacc60b18c86534
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 91a57ec2eabbef2cd62fec8fa95fbf9d2da47a5bfcdb339bf30ed8da5b11c9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792930"
 ---
 # <a name="dcl_semantics-sm3---ps-asm"></a>semantica dcl \_ (sm3 - ps asm)
 
@@ -31,7 +31,7 @@ dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\]
 Dove:
 
 -   \_semantica: identifica l'utilizzo dei dati previsto e può essere uno dei valori in [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (senza il prefisso D3DDECLUSAGE). \_ Inoltre, è possibile aggiungere un indice integer alla semantica per distinguere i parametri che usano una semantica simile.
--   \[\_[Centroid](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] è un modificatore di istruzione facoltativo. È supportato nelle istruzioni di utilizzo dcl che dichiarano i registri \_ di input e nelle istruzioni di ricerca trame. Il centroide viene aggiunto senza spazio.
+-   \[\_[Centroide](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] è un modificatore di istruzione facoltativo. È supportato nelle istruzioni di utilizzo dcl che dichiarano i registri \_ di input e nelle istruzioni di ricerca trame. Il centroide viene aggiunto senza spazio.
 -   dst: registro di destinazione. Vedere [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
 -   write mask: lo stesso registro di output può essere dichiarato più volte, ogni volta con una maschera di scrittura univoca (in modo che sia possibile applicare una semantica diversa \_ ai singoli componenti). Tuttavia, la stessa semantica non può essere usata più volte in una dichiarazione. Ciò significa che i vettori devono essere quattro componenti o meno e non possono attraversare i limiti del registro a quattro componenti (registri di output singoli). Quando viene \_ usata la semantica psize, deve avere una maschera di scrittura completa perché è considerata scalare. Quando viene usata la semantica di posizione, deve avere una maschera di scrittura completa perché tutti e quattro i componenti \_ devono essere scritti.
 
@@ -47,7 +47,7 @@ Dove:
 
  
 
-Tutte le istruzioni di \_ utilizzo dcl devono essere visualizzate prima della prima istruzione eseguibile.
+Tutte le istruzioni dcl \_ usage devono essere visualizzate prima della prima istruzione eseguibile.
 
 ## <a name="declaration-examples"></a>Esempi di dichiarazione
 

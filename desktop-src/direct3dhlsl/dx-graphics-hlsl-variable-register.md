@@ -3,7 +3,7 @@ title: register
 description: register
 ms.assetid: 45149f8c-8b76-4247-98d7-d141d7268da3
 keywords:
-- Registra HLSL
+- registrare HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b378cd97bc9779951d62873d393009c98d32823
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0102716529471b3e867e17b0e9b635274cdfc28ec603f239d66c76ffb0fdaa19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983211"
 ---
 # <a name="register"></a>register
 
-Parola chiave facoltativa per l'assegnazione di una variabile shader a un particolare registro, che usa la sintassi seguente:
+Parola chiave facoltativa per l'assegnazione di una variabile shader a un registro specifico, che usa la sintassi seguente:
 
 
 
-| : Register ( *\[ \_ profilo \] shader*, *tipo \# \[ sottocomponente \]* ) |
+| : register ( *\[ profilo shader, \_ \]* *\# \[ sottocomponente Type \]* ) |
 |----------------------------------------------------------------|
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,39 +40,39 @@ Parola chiave facoltativa per l'assegnazione di una variabile shader a un partic
 <span id="register"></span><span id="REGISTER"></span>Registro
 </dt> <dd>
 
-Parola chiave required.
+Parola chiave obbligatoria.
 
 </dd> <dt>
 
-<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[profilo shader \_\]*
+<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[Profilo \_ shader\]*
 </dt> <dd>
 
-[Profilo shader](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)facoltativo, che può essere una destinazione shader o semplicemente **PS** o **vs**.
+Profilo [shader facoltativo,](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)che può essere una destinazione shader o semplicemente **ps** **o vs**.
 
 </dd> <dt>
 
-<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*Sottocomponente di tipo \# \[\]*
+<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*\# \[ Sottocomponente type\]*
 </dt> <dd>
 
-Tipo di registrazione, numero e dichiarazione di sottocomponente.
+Registrare la dichiarazione di tipo, numero e sottocomponente.
 
 -   Il tipo è uno dei seguenti:
 
     
 
-    | Tipo | Descrizione registro       |
+    | Tipo | Descrizione del registro       |
     |------|----------------------------|
     | b    | Buffer costante            |
-    | u    | Trama e buffer di trama |
+    | t    | Buffer trame e trame |
     | c    | Offset del buffer              |
     | s    | Campionatore                    |
     | u    | Unordered Access View      |
 
     
 
-     
+     
 
--   *\#* numero del registro, ovvero un numero intero.
+-   *\#* è il numero di registro, ovvero un numero intero.
 -   Il *sottocomponente* è un numero intero facoltativo.
 
 </dd> </dl>
@@ -81,11 +81,11 @@ Tipo di registrazione, numero e dichiarazione di sottocomponente.
 
 È possibile aggiungere una o più assegnazioni di registro alla stessa dichiarazione di variabile, separate da spazi.
 
-Per le variabili Direct3D 10 nell'ambito globale, la parola chiave **Register** funziona come la parola chiave [PACKOFFSET (DirectX HLSL)](dx-graphics-hlsl-variable-packoffset.md) .
+Per le variabili Direct3D 10 nell'ambito globale, la parola chiave **register** agisce come la parola chiave [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
 ## <a name="examples"></a>Esempio
 
-Ecco alcuni esempi:
+Di seguito sono riportati alcuni esempi:
 
 
 ```
@@ -120,6 +120,6 @@ sampler myVar : register( ps, s[2] )
 [Variabili (DirectX HLSL)](dx-graphics-hlsl-variables.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

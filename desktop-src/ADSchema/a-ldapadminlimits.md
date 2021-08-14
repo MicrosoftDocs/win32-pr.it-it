@@ -1,10 +1,10 @@
 ---
-title: Attributo LDAP-admin-limits
+title: Attributo LDAP-Admin-Limits
 description: Contiene un set di coppie attributo-valore che definiscono i limiti amministrativi del server LDAP.
 ms.assetid: 335d666e-3f96-4df8-9555-e913efb8da2d
 ms.tgt_platform: multiple
 keywords:
-- Attributo LDAP-admin-limits-schema AD
+- Schema AD dell'attributo LDAP-Admin-Limits
 - Schema AD dell'attributo lDAPAdminLimits
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99d3dc16bdc16b04fe0dbfe295fbece83d57ebda
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f66509cc1ea616f6e4caabba877648b90fa3ec8fed5298d3eb58a62fbf2ed1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961290"
 ---
-# <a name="ldap-admin-limits-attribute"></a>Attributo LDAP-admin-limits
+# <a name="ldap-admin-limits-attribute"></a>Attributo LDAP-Admin-Limits
 
 Contiene un set di coppie attributo-valore che definiscono i limiti amministrativi del server LDAP.
 
@@ -29,13 +29,13 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | LDAP-admin-limiti                           |
-| LDAP-Display-Name | lDAPAdminLimits                             |
+| CN                | Ldap-Admin-Limits                           |
+| Ldap-Display-Name | lDAPAdminLimits                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.843                      |
-| System-ID-GUID    | 7359a352-90f7-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | 7359a352-90f7-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| È a valore singolo       | Falso                                            |
+| A valore singolo       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Query-criteri**](c-querypolicy.md)<br/> |
+| Classi usate in        | [**Criteri di query**](c-querypolicy.md)<br/> |
 
 
 

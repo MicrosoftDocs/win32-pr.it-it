@@ -1,17 +1,17 @@
 ---
 description: Questa proprietà identifica i criteri di conservazione applicati all'elemento.
 ms.assetid: 17bd4f09-675f-4e3b-989b-40a0a775e6ba
-title: System. Communication. PolicyTag
+title: System.Communication.PolicyTag
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fcbb9211d7a25f50170422935a0602e856b80a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 314c4e220d6a77521d5358ad14aae42ff13d51264518fef7f3937dcf2f49f7b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970750"
 ---
-# <a name="systemcommunicationpolicytag"></a>System. Communication. PolicyTag
+# <a name="systemcommunicationpolicytag"></a>System.Communication.PolicyTag
 
 Questa proprietà identifica i criteri di conservazione applicati all'elemento.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

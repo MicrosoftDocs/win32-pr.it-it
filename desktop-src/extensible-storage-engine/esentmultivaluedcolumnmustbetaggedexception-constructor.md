@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentMultiValuedColumnMustBeTaggedException'
+description: Altre informazioni sul costruttore EsentMultiValuedColumnMustBeTaggedException
 title: Costruttore EsentMultiValuedColumnMustBeTaggedException
 TOCTitle: 'EsentMultiValuedColumnMustBeTaggedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMultiValuedColumnMustBeTaggedException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0824d46f488625f57e30577801e31a39a8838db1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35e41f1dfdc24af9a2442796461e987567e794b592d7428ce9bfcd44707f5b2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118775573"
 ---
 # <a name="esentmultivaluedcolumnmustbetaggedexception-constructor"></a>Costruttore EsentMultiValuedColumnMustBeTaggedException
 
 Inizializza una nuova istanza della classe EsentMultiValuedColumnMustBeTaggedException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentMultiValuedColumnMustBeTaggedException()
 
 [Membri di EsentMultiValuedColumnMustBeTaggedException](./esentmultivaluedcolumnmustbetaggedexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

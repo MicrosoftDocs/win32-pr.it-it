@@ -1,7 +1,7 @@
 ---
-description: "Restituisce l'identificatore dell'algoritmo CNG (Cryptography API: Next Generation) dell'algoritmo hash utilizzato per Transport Layer Security la funzione pseudo-casuale (PRF) del protocollo di crittografia per il protocollo di input, il pacchetto di crittografia e il tipo di chiave."
+description: "Restituisce l'identificatore di algoritmo CNG (Cryptography API: Next Generation) dell'algoritmo hash usato per la funzione pseudo-casuale TLS (Transport Layer Security Protocol) per il protocollo di input, la suite di crittografia e il tipo di chiave."
 ms.assetid: 8d20b2da-390e-458e-b122-f5ef3722ad87
-title: Funzione SslGetCipherSuitePRFHashAlgorithm (Sslprovider. h)
+title: Funzione SslGetCipherSuitePRFHashAlgorithm (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 452cb7b36b20697a95b2c2abae7d8cd3b4180050
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f328f5e4746d3a66f614e8ccbbfe66bbf3475b7f7a1a98a8a68c11df96412bf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906163"
 ---
-# <a name="sslgetciphersuiteprfhashalgorithm-function"></a>SslGetCipherSuitePRFHashAlgorithm (funzione)
+# <a name="sslgetciphersuiteprfhashalgorithm-function"></a>Funzione SslGetCipherSuitePRFHashAlgorithm
 
-La funzione **SslGetCipherSuitePRFHashAlgorithm** restituisce l'identificatore dell'algoritmo CNG (Cryptography API: Next Generation) dell' [*algoritmo di hash*](/windows/desktop/SecGloss/h-gly) utilizzato per Transport Layer Security la [*funzione pseudo-casuale*](/windows/desktop/SecGloss/p-gly) (PRF) del [*protocollo*](/windows/desktop/SecGloss/t-gly) di input (PRF) per il protocollo di input, il pacchetto di crittografia e il tipo di chiave.
+La funzione **SslGetCipherSuitePRFHashAlgorithm** restituisce l'identificatore dell'algoritmo CNG (Cryptography API: Next Generation) dell'algoritmo [*hash*](/windows/desktop/SecGloss/h-gly) usato per la funzione [*pseudo-casuale*](/windows/desktop/SecGloss/p-gly) [*TLS (Transport Layer Security Protocol)*](/windows/desktop/SecGloss/t-gly) per il protocollo di input, il pacchetto di crittografia e il tipo di chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,45 +44,45 @@ SECURITY_STATUS WINAPI SslGetCipherSuitePRFHashAlgorithm(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
-Handle dell'istanza del provider di protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+Handle [*dell'istanza del*](/windows/desktop/SecGloss/s-gly) provider Secure Sockets Layer protocollo SSL (Secure Sockets Layer Protocol).
 
 </dd> <dt>
 
-*dwProtocol* \[ in\]
+*dwProtocol* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del protocollo del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Protocol Identifier.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ in\]
+*dwCipherSuite* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del pacchetto di crittografia del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno dei valori [**di CNG SSL Provider Cipher Suite Identifier.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ in\]
+*dwKeyType* \[ Pollici\]
 </dt> <dd>
 
-Uno dei valori dell' [**identificatore del tipo di chiave del provider SSL CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) . Per i tipi di chiave che non sono la [*crittografia a curva ellittica*](/windows/desktop/SecGloss/e-gly) (ecc), impostare questo parametro su zero.
+Uno dei valori [**dell'identificatore del tipo di chiave del provider SSL CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) Per i tipi di chiave che non sono ecc [*(elliptic curve cryptography),*](/windows/desktop/SecGloss/e-gly) impostare questo parametro su zero.
 
 </dd> <dt>
 
-*szPRFHash* \[ out\]
+*szPRFHash* \[ Cambio\]
 </dt> <dd>
 
-Uno degli [**identificatori dell'algoritmo CNG**](cng-algorithm-identifiers.md) per l'hash che verrà usato per la PRF TLS.
+Uno degli identificatori [**di algoritmo CNG per**](cng-algorithm-identifiers.md) l'hash che verrà usato per la PRF TLS.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Questo parametro è riservato per utilizzi futuri e deve essere impostato su zero.
+Questo parametro è riservato per un uso futuro e deve essere impostato su zero.
 
 </dd> </dl>
 
@@ -92,16 +92,16 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non sono limitati, i seguenti.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl>    | Il parametro *hSslProvider* contiene un puntatore non valido.<br/>                |
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *szPRFHash* è impostato su **null**.<br/>                                     |
-| <dl> <dt>**Nte \_ 0x80090029L non \_ supportato**</dt> <dt></dt> </dl>     | La funzione selezionata non è supportata nella versione specificata dell'interfaccia.<br/> |
-| <dl> <dt>**Nte \_ \_Flag non validi**</dt> <dt>0x80090009L</dt> </dl>         | Il parametro *dwFlags* deve essere impostato su zero.<br/>                                      |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl>    | Il *parametro hSslProvider* contiene un puntatore non valido.<br/>                |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON**</dt> <dt>VALIDO 0x80090027L</dt> </dl> | Il *parametro szPRFHash* è impostato su **NULL.**<br/>                                     |
+| <dl> <dt>**NTE \_ NON \_ SUPPORTATO**</dt> <dt>0x80090029L</dt> </dl>     | La funzione selezionata non è supportata nella versione specificata dell'interfaccia.<br/> |
+| <dl> <dt>**NTE \_ BAD \_ FLAGS**</dt> <dt>0x80090009L</dt> </dl>         | Il *parametro dwFlags* deve essere impostato su zero.<br/>                                      |
 
 
 
@@ -109,7 +109,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione **SslGetCipherSuitePRFHashAlgorithm** viene chiamata per le conversazioni TLS 1,2 o successive per eseguire una query sull'algoritmo di hash che verrà usato in TLS PRF.
+Questa **funzione SslGetCipherSuitePRFHashAlgorithm** viene chiamata per le conversazioni TLS 1.2 o successive per eseguire query sull'algoritmo hash che verrà usato nella PRF TLS.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -117,9 +117,9 @@ Questa funzione **SslGetCipherSuitePRFHashAlgorithm** viene chiamata per le conv
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                               |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                               |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

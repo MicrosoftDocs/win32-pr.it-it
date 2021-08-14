@@ -1,18 +1,18 @@
 ---
-title: P (Framework dei servizi di testo)
+title: P (Framework servizi di testo)
 description: Pagina del glossario
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 60666b4e-4aac-4a81-9675-46bc77e56133
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd3d50077d4797e7f3bb26d2ab28e574b33dc3a
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8888bfaff3a6c935acbff24b42b1413a0a301bea2cc51e5629d960040fd0bb33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104340123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118876173"
 ---
-# <a name="p-text-services-framework"></a>P (Framework dei servizi di testo)
+# <a name="p-text-services-framework"></a>P (Framework servizi di testo)
 
 <dl> <dt>
 

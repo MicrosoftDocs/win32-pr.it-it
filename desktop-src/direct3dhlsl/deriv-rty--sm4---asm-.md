@@ -1,23 +1,23 @@
 ---
-title: deriv_rty (SM4-ASM)
-description: 'Render: destinazione y equivalente di RTX di derivazione \_ .'
+title: deriv_rty (sm4 - asm)
+description: Equivalente y della destinazione di rendering di deriv \_ rtx.
 ms.assetid: F78F2DBD-9428-4F34-85AD-276DF54C52D1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e4517782c687473b4789229334b4cafc94b989
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: fb522076435b525252e8cab40590c649e5cc8af8a83023ebd6cace1695fbb729
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515469"
 ---
-# <a name="deriv_rty-sm4---asm"></a>derivare \_ valore (SM4-ASM)
+# <a name="deriv_rty-sm4---asm"></a>deriv \_ rty (sm4 - asm)
 
-Render: destinazione y equivalente di [ \_ RTX di derivazione](deriv-rtx--sm4---asm-.md).
+Equivalente y della destinazione di rendering [di deriv \_ rtx](deriv-rtx--sm4---asm-.md).
 
 
 
-| derivare \_ valore \[ \_ Sat \] dest \[ . mask \] , \[ - \] src0 \[ \_ ABS \] \[ . Swizzle \] , |
+| deriv \_ rty \[ \_ sat \] dest \[ \] .mask, \[ - \] src0 \[ \_ abs \] \[ .swizzle \] , |
 |--------------------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Render: destinazione y equivalente di [ \_ RTX di derivazione](deriv-rtx--sm4---
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] componente dell'operazione.<br/>             |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componente nell'operazione.<br/>             |
 
 
 
@@ -37,17 +37,17 @@ Render: destinazione y equivalente di [ \_ RTX di derivazione](deriv-rtx--sm4---
 
 ## <a name="remarks"></a>Commenti
 
-Viene calcolata solo una singola coppia derivata x e y per ogni timbro 2x2 di pixel.
+Viene calcolata una sola coppia derivata x,y per ogni timbro 2x2 di pixel.
 
 Questa operazione dipende dall'hardware.
 
-Implementazione dell'rasterizzazione dei riferimenti per i triangoli:
+Implementazione del rasterizzatore di riferimento per i triangoli:
 
--   Pixel shader esegue sempre lo shader su 2x2 quad di pixel in contemporanea (anche attraverso il controllo di flusso, mascherando i pixel disabilitati).
--   I quad hanno sempre le coordinate dei pixel numerate (entrambe x e y) per il pixel superiore sinistro.
--   I pixel fittizi vengono spenti primitivi se la primitiva è troppo piccola per riempire un quad 2x2.
--   la [derivazione \_ RTX](deriv-rtx--sm4---asm-.md) viene calcolata scegliendo 2 pixel: il pixel corrente e l'altro pixel con la stessa coordinata y del quad. Il risultato viene quindi calcolato come: *src0*(Odd x pixel)- *src0*(anche x pixel) \[ per componente\]
--   la **derivazione \_ valore** viene calcolata scegliendo 2 pixel: il pixel corrente e l'altro pixel con la stessa coordinata x del quad. Il risultato viene quindi calcolato come: *src0*(pixel dispari y)- *src0*(anche pixel y) \[ per componente\]
+-   Pixel Shader esegue sempre Shader su 2x2 quad di pixel in lockstep (anche tramite il controllo di flusso, mascherando i pixel disabilitati).
+-   I quad hanno sempre coordinate pixel pari numerate (x e y) per i pixel in alto a sinistra.
+-   I pixel fittizi eseguono la primitiva se la primitiva è troppo piccola per riempire un quad 2x2.
+-   [deriv \_ rtx](deriv-rtx--sm4---asm-.md) viene calcolato scegliendo prima 2 pixel: il pixel corrente e l'altro pixel con la stessa coordinata y del quad. Il risultato viene quindi calcolato come: *src0*(x pixel dispari) - *src0*(anche x pixel) \[ per componente\]
+-   **La \_ derivazione viene** calcolata scegliendo prima 2 pixel: il pixel corrente e l'altro pixel con la stessa coordinata x del quad. Il risultato viene quindi calcolato come: *src0*(pixel y dispari) - *src0*(pixel y pari) \[ per componente\]
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -61,7 +61,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -69,12 +69,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -84,7 +84,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

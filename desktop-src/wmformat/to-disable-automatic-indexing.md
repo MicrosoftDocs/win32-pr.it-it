@@ -5,26 +5,26 @@ ms.assetid: 41fe18de-3a94-4001-83ce-0bb5dd086995
 keywords:
 - Windows Media Format SDK, disabilitazione dell'indicizzazione automatica
 - Windows Media Format SDK, indicizzazione automatica
-- Formato Advanced Systems (ASF), disabilitazione dell'indicizzazione automatica
+- Advanced Systems Format (ASF), disabilitazione dell'indicizzazione automatica
 - ASF (Advanced Systems Format), disabilitazione dell'indicizzazione automatica
+- Advanced Systems Format (ASF), indicizzazione automatica
 - ASF (Advanced Systems Format), indicizzazione automatica
-- ASF (formato avanzato dei sistemi), indicizzazione automatica
 - indici, disabilitazione dell'indicizzazione automatica
 - indici, indicizzazione automatica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0235ddac8093d9b1c6d40fde341ee32d078b84b7
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 61f3b63d58b8f9a0fbbdff88369832b67abca7d9f11a39c56613c6e5d867d6a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103956197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699911"
 ---
 # <a name="to-disable-automatic-indexing"></a>Per disabilitare l'indicizzazione automatica
 
-Quando si scrive un file ASF, è possibile che non si desideri sempre generare un indice per impostazione predefinita. È possibile disabilitare l'indicizzazione automatica usando il metodo [**IWMWriterFileSink3:: SetAutoIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink3-setautoindexing) .
+È possibile che non sempre venga generato un indice per impostazione predefinita quando si scrive un file ASF. È possibile disabilitare l'indicizzazione automatica usando il [**metodo IWMWriterFileSink3::SetAutoIndexing.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterfilesink3-setautoindexing)
 
-Nell'esempio di codice seguente viene illustrato come disabilitare l'indicizzazione automatica da parte del writer.
+Il codice di esempio seguente illustra come disabilitare l'indicizzazione automatica dal writer.
 
 
 ```C++
@@ -78,9 +78,9 @@ pMySink = NULL;
 [**Operazioni con gli indici**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

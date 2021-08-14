@@ -1,11 +1,11 @@
 ---
 title: Metodo IMediaRendererActionInformation IsVolumeAvailable
-description: Recupera un valore che indica se ricevitore è in grado di regolare il livello del volume audio.
+description: Recupera un valore che indica se la dmr è in grado di regolare il livello del volume audio.
 ms.assetid: 6DFDC37A-3304-4CDB-9928-C113D2F64ED0
 keywords:
-- API di streaming multimediale del metodo IsVolumeAvailable
-- API di streaming multimediale del metodo IsVolumeAvailable, interfaccia IMediaRendererActionInformation
-- API di streaming multimediale dell'interfaccia IMediaRendererActionInformation, metodo IsVolumeAvailable
+- Metodo IsVolumeAvailable API Streaming multimediale
+- Metodo IsVolumeAvailable API Streaming multimediale, interfaccia IMediaRendererActionInformation
+- Interfaccia IMediaRendererActionInformation API Streaming multimediale , metodo IsVolumeAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb8dc60c25cf3ec12e0ebeaa863e239c287d7c46
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ce36a9151998a5f7b0a7785aebc1795bd29d31ff47cfdd2368978ad040f3597c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104117619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972210"
 ---
-# <a name="imediarendereractioninformationisvolumeavailable-method"></a>Metodo IMediaRendererActionInformation:: IsVolumeAvailable
+# <a name="imediarendereractioninformationisvolumeavailable-method"></a>Metodo IMediaRendererActionInformation::IsVolumeAvailable
 
-Recupera un valore che indica se ricevitore è in grado di regolare il livello del volume audio.
+Recupera un valore che indica se la dmr è in grado di regolare il livello del volume audio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,22 +41,22 @@ HRESULT IsVolumeAvailable(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Valore booleano che è **true** se ricevitore è in grado di regolare il livello del volume audio e **false** in caso contrario.
+Valore booleano True **se** la dmr è in grado di regolare il livello del volume audio e **False** in caso contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 

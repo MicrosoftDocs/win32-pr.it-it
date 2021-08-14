@@ -1,45 +1,45 @@
 ---
 title: UI_PKEY_ThemeColors
-description: Identifica la proprietà ThemeColors dell'interfaccia utente \_ pkey \_ .
+description: Identifica la proprietà \_ PKEY \_ ThemeColors dell'interfaccia utente.
 ms.assetid: d539cbaa-45dc-4f9e-830e-e81fb289b4ac
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f5991ce5058de5a6f49ca8929de02e19657a610
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ab5c4582561e3c86ba19b2821cf600d0a1da614cfc9fc7144b935665c8af7f14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104337774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118437796"
 ---
-# <a name="ui_pkey_themecolors"></a>Interfaccia utente \_ pkey \_ ThemeColors
+# <a name="ui_pkey_themecolors"></a>\_ThemeColors PKEY \_ dell'interfaccia utente
 
-Identifica la proprietà ThemeColors dell'interfaccia utente \_ pkey \_ .
+Identifica la proprietà \_ PKEY \_ ThemeColors dell'interfaccia utente.
 
 ```
 propertyDescription
-   name = UI_PKEY_ThemeColors
-   shellPKey = UI_PKEY_ThemeColors
-   formatID = 00000409-7363-696e-8441798acf5aebb7
-   propID = 409
-   typeInfo
-      type = VT_VECTOR | VT_UI4
+   name = UI_PKEY_ThemeColors
+   shellPKey = UI_PKEY_ThemeColors
+   formatID = 00000409-7363-696e-8441798acf5aebb7
+   propID = 409
+   typeInfo
+      type = VT_VECTOR | VT_UI4
 ```
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente \_ pkey \_ ThemeColors viene usata da un'applicazione per eseguire una query sui valori dei campioni di colore di un [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md).
+L'interfaccia utente PKEY ThemeColors viene usata da un'applicazione per eseguire query nei valori dei campioni \_ di colore di un controllo \_ [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
-Ogni valore di [COLORREF](../gdi/colorref.md) corrisponde a un campione di colore in un [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) in cui `ThemeColors` viene specificato come valore dell'attributo **ColorTemplate** .
+Ogni [valore COLORREF](../gdi/colorref.md) corrisponde a un campione di colore in [**un controllo DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) dove è specificato come `ThemeColors` valore **dell'attributo ColorTemplate.**
 
-Il valore della proprietà è una matrice di valori [COLORREF](../gdi/colorref.md) .
+Il valore della proprietà è una matrice di [valori COLORREF.](../gdi/colorref.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà selezione colori](windowsribbon-reference-properties-colorpicker.md)
+[Selezione colori proprietà](windowsribbon-reference-properties-colorpicker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
-description: Informazioni sul parametro PageDestinationColorProfileEmbedded. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica dello schema di stampa.
+description: Informazioni sul parametro PageDestinationColorProfileEmbedded. Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print Schema Specification( Specifica dello schema di stampa).
 ms.assetid: b360f870-bfaa-4d4d-adce-17fcfc48b6a6
 title: PageDestinationColorProfileEmbedded
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05865636b6554873844a99b523f8c21fe2bfc1c7
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 8f1a66daa2ed8cc4db9cbcc390030dde05b034808f9326fee73f1fe28e3d91cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732644"
 ---
 # <a name="pagedestinationcolorprofileembedded"></a>PageDestinationColorProfileEmbedded
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Specifica il profilo colori di destinazione incorporato.
 
@@ -74,8 +74,8 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 | DefaultValue<br/> | string<br/>  | Non definito<br/>       |
 | MaxLength<br/>    | numero intero<br/> | Non definito<br/>       |
 | Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obbligatorio<br/>    | string<br/>  | psk:Conditional<br/> |
-| UnitType<br/>     | string<br/>  | caratteri<br/>      |
+| Obbligatorio<br/>    | string<br/>  | psk:Condizionale<br/> |
+| Tipo di unità<br/>     | string<br/>  | caratteri<br/>      |
 
 
 

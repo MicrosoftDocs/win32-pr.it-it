@@ -1,38 +1,38 @@
 ---
-description: "Nella tabella seguente vengono descritti i thread sui quali è possibile attivare gli eventi di controllo InkEdit. EventThreadsChangeFires sull'interfaccia utente dell'applicazione threadClickFires sull'interfaccia utente dell'applicazione threadDblClickFires sull'interfaccia utente dell'applicazione threadGestureFires sull'interfaccia utente dell'applicazione threadKeyDownFires sull'interfaccia utente dell'applicazione threadKeyPressFires sull'interfaccia utente dell'applicazione threadKeyUpFires nell'interfaccia utente dell'applicazione threadMouseDownFires nell'interfaccia utente dell'applicazione threadMouseMoveFires nell'interfaccia utente dell'applicazione threadMouseUpFires nell'interfaccia utente dell'applicazione threadRecognition (solo libreria gestita). Generato sull'interfaccia utente dell'applicazione threadRecognitionResultFires sull'interfaccia utente dell'applicazione threadSelChangeFires nell'interfaccia utente dell'applicazione threadStrokeFires nel thread UI dell'applicazione "
+description: "La tabella seguente descrive i thread su cui possono essere generati gli eventi del controllo InkEdit. EventThreadsChangeFires nel thread dell'interfaccia utente dell'applicazioneClickFires nel thread dell'interfaccia utente dell'applicazioneDblClickFires nel thread dell'interfaccia utente dell'applicazioneGestureFires nel thread dell'interfaccia utente dell'applicazioneKeyDownFires nel thread dell'interfaccia utente dell'applicazioneKeyPressFires nel thread dell'interfaccia utente dell'applicazioneKeyUpFires nel thread dell'interfaccia utente dell'applicazioneMouseDownFires nel thread dell'interfaccia utente dell'applicazioneMouseMoveFires nel thread ui dell'applicazioneMouseUpFires nel thread dell'interfaccia utente dell'applicazioneRecognition (solo libreria gestita). Viene generato nel thread dell'interfaccia utente dell'applicazioneRecognitionResultFires nel thread dell'interfaccia utente dell'applicazioneSelChangeFires nel thread dell'interfaccia utente dell'applicazioneStrokeFires nel thread dell'interfaccia utente dell'applicazione "
 ms.assetid: 8554a1ab-3288-4bdd-866b-dd2c25842b1f
 title: Eventi del controllo InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1547df05b438e6ade49663f5095dfd6674dbe4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bfb6c572214e6fca560a6f52f87f20695df5849ae008d3690b1241f061212b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967160"
 ---
 # <a name="inkedit-control-events"></a>Eventi del controllo InkEdit
 
-Nella tabella seguente vengono descritti i thread sui quali è possibile attivare gli eventi di controllo [InkEdit](inkedit-control-reference.md) .
+La tabella seguente descrive i thread su cui possono essere generati gli eventi del controllo [InkEdit.](inkedit-control-reference.md)
 
 
 
 | Evento                                                                          | Thread                                                          |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**Modificare**](inkedit-change.md)                                               | Generato nel thread dell'interfaccia utente dell'applicazione<br/> |
-| [**Clic**](inkedit-click.md)                                                 | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**DblClick**](inkedit-dblclick.md)                                           | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**Movimento**](inkedit-gesture.md)                                             | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**KeyDown**](inkedit-keydown.md)                                             | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**KeyPress**](inkedit-keypress.md)                                           | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**KeyUp**](inkedit-keyup.md)                                                 | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**MouseDown**](inkedit-mousedown.md)                                         | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**MouseMove**](inkedit-mousemove.md)                                         | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**MouseUp**](inkedit-mouseup.md)                                             | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**Riconoscimento**](/previous-versions/ms567627(v=vs.100)) (solo libreria gestita). | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**RecognitionResult**](inkedit-recognitionresult.md)                         | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**SelChange**](inkedit-selchange.md)                                         | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
-| [**Stroke**](inkedit-stroke.md)                                               | Generato sul thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Cambiare**](inkedit-change.md)                                               | Viene generato sul thread dell'interfaccia utente dell'applicazione<br/> |
+| [**Clic**](inkedit-click.md)                                                 | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Dblclick**](inkedit-dblclick.md)                                           | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Movimento**](inkedit-gesture.md)                                             | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**KeyDown**](inkedit-keydown.md)                                             | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Keypress**](inkedit-keypress.md)                                           | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**KeyUp**](inkedit-keyup.md)                                                 | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Mousedown**](inkedit-mousedown.md)                                         | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Mousemove**](inkedit-mousemove.md)                                         | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Mouseup**](inkedit-mouseup.md)                                             | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Riconoscimento**](/previous-versions/ms567627(v=vs.100)) (solo libreria gestita). | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Recognitionresult**](inkedit-recognitionresult.md)                         | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**Selchange**](inkedit-selchange.md)                                         | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
+| [**infarto**](inkedit-stroke.md)                                               | Viene generato nel thread dell'interfaccia utente dell'applicazione<br/>                  |
 
 
 

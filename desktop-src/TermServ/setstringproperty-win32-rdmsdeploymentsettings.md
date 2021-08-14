@@ -1,12 +1,12 @@
 ---
-title: Metodo SetStringProperty della classe Win32_RDMSDeploymentSettings (CertEnroll. h)
-description: Aggiorna una proprietà di stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
+title: Metodo SetStringProperty della Win32_RDMSDeploymentSettings classe (Certenroll.h)
+description: Aggiorna una proprietà stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
 ms.assetid: 500ab1cb-7336-47a8-adee-790976ea30fe
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo SetStringProperty
-- Metodo SetStringProperty Servizi Desktop remoto, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Servizi Desktop remoto, Metodo SetStringProperty
+- Metodo SetStringProperty Servizi Desktop remoto
+- Metodo SetStringProperty Servizi Desktop remoto , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Servizi Desktop remoto, metodo SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 138f6d91ed428caabf8da69e3d958675f879dd15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1001d5c723642357263a6029c3569eaa861f7dcf3689cc7d06b42e04ef461aa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987501"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetStringProperty della \_ classe RDMSDeploymentSettings Win32
+# <a name="setstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Metodo SetStringProperty della classe \_ RDMSDeploymentSettings Win32
 
-Aggiorna una proprietà di stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
+Aggiorna una proprietà stringa per le impostazioni di distribuzione di un insieme di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Alias dell'insieme di desktop virtuali.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore della proprietà.
@@ -66,9 +66,9 @@ Nuovo valore della proprietà.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| Intestazione<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| Intestazione<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -77,7 +77,7 @@ Nuovo valore della proprietà.
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

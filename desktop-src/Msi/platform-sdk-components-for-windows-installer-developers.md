@@ -1,21 +1,21 @@
 ---
-description: I componenti di Windows Installer Software Development Kit sono inclusi nel Software Development Kit (SDK) di Microsoft Windows.
+description: I componenti di Windows Installer Software Development Kit sono inclusi in Microsoft Windows Software Development Kit (SDK).
 ms.assetid: d2947c01-8a2b-42b1-b94e-06a100f70f4f
-title: Componenti di Windows SDK per sviluppatori di Windows Installer
+title: Windows Componenti SDK per sviluppatori Windows Installer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a03e138f1bb46185bebaad9c15f982229517fba4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46633e3248c1178cec503e98fcee0703503a4a554f41a6b813918d8fa3fa0727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118377342"
 ---
-# <a name="windows-sdk-components-for-windows-installer-developers"></a>Componenti di Windows SDK per sviluppatori di Windows Installer
+# <a name="windows-sdk-components-for-windows-installer-developers"></a>Windows Componenti SDK per sviluppatori Windows Installer
 
-I componenti di Windows Installer Software Development Kit sono inclusi nel Software Development Kit (SDK) di Microsoft Windows. Il Windows SDK include componenti ridistribuibili, documentazione, strumento di convalida del database del programma di installazione, Editor tabelle di database, schema del database, strumenti di sviluppo, strumenti di Visual Basic Scripting Edition (VBScript), prodotto di esempio ed esempi di codice.
+I componenti di Windows Installer Software Development Kit sono inclusi in Microsoft Windows Software Development Kit (SDK). Windows SDK include componenti ridistribuibili, documentazione, strumento di convalida del database del programma di installazione, editor di tabelle di database, schema del database, strumenti di sviluppo, strumenti di Visual Basic Scripting Edition (VBScript), prodotti di esempio ed esempi di codice.
 
-Per la pagina di download per la Windows SDK, vedere [Microsoft Windows Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+Per la pagina di download di Windows SDK, vedere [Microsoft Windows Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

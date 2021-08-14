@@ -1,50 +1,50 @@
 ---
-title: Attributo font la
-description: Attributo font la
+title: Attributo del tipo di carattere VML
+description: Attributo del tipo di carattere VML
 ms.assetid: 5a48fc54-e2dd-4b68-863c-3a83f9386108
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bace73b90cac7519ea6abacb73c80506c655e133
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 074aa0672002dcbbac55d21ed27383d5a3fd6e3b9ccfe9125ad89c2c43ac71ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986661"
 ---
-# <a name="vml-font-attribute"></a>Attributo font la
+# <a name="vml-font-attribute"></a>Attributo del tipo di carattere VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Specifica un valore composto di attributi del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
+Specifica un valore composto degli attributi del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Percorso di testo](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "font: *Expression* " >
+<v: *element* style="font: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. font = "*Expression*"
+*element* .style.font="*expression*"
 
-*espressione* = *element*. Style. font
+*expression* = *elemento*.style.font
 
 **Osservazioni:**
 
-Definisce gli attributi di un tipo di carattere, inclusi famiglia, stile, peso, dimensioni e Variant. L'ordine delle definizioni nella stringa è: tipo di **carattere**, **variante del tipo** di carattere, **spessore** del carattere, dimensioni del **carattere**, **altezza della riga** e **famiglia di caratteri**. I valori corrispondono agli attributi di stile HTML standard.
+Definisce gli attributi di un tipo di carattere, inclusi famiglia, stile, spessore, dimensione e variante. L'ordine delle definizioni nella stringa è: **font-style,** **font-variant,** **font-weight,** **font-size,** **line-height** e **font-family.** I valori sono gli stessi degli attributi di stile HTML standard.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Il tipo di carattere del testo TextPath è Italic, Small Caps, Bold, 36 Point Arial.
+Il tipo di carattere del testo del percorso di testo è corsivo, maiuscoletto, grassetto e Arial a 36 punti.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Il tipo di carattere del testo TextPath è Italic, Small Caps, Bold, 36 Point Ar
 
 
 
- 
+ 
 
- 
+ 

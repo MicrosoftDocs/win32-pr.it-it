@@ -1,9 +1,9 @@
 ---
-title: Enumerazione SoHAttributeType (NapProtocol. h)
-description: Specifica il tipo di attributo archiviato nell'oggetto del tipo di attributo-length-value (TLV).
+title: Enumerazione SoHAttributeType (NapProtocol.h)
+description: Specifica il tipo di attributo archiviato nell'oggetto type-length-value (TLV) dell'attributo.
 ms.assetid: ba725bf1-1d0a-4489-b912-3e761557d772
 keywords:
-- SoHAttributeType enumerazione NAP
+- Enumerazione SoHAttributeType NAP
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db164bbedf2267aaa5941a21a56ccfd53e1e1646
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c3fabf3a8911274b912f3762dd07d0c64fc4111d22e372d1962a92221f1d068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939058"
 ---
 # <a name="sohattributetype-enumeration"></a>Enumerazione SoHAttributeType
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-L'enumerazione **SoHAttributeType** specifica il tipo di attributo archiviato nell'oggetto Type-Length-Value (TLV) dell'attributo.
+**L'enumerazione SoHAttributeType** specifica il tipo di attributo archiviato nell'oggetto TLV (Type-Length-Value) dell'attributo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -83,7 +83,7 @@ Specifica il tipo di attributo del codice del risultato di conformità.
 <span id="sohAttributeTypeTimeOfLastUpdate"></span><span id="sohattributetypetimeoflastupdate"></span><span id="SOHATTRIBUTETYPETIMEOFLASTUPDATE"></span>**sohAttributeTypeTimeOfLastUpdate**
 </dt> <dd>
 
-Specifica l'ora dell'ultimo tipo di attributo Update.
+Specifica l'ora dell'ultimo tipo di attributo di aggiornamento.
 
 </dd> <dt>
 
@@ -111,28 +111,28 @@ Specifica il tipo di attributo della classe di integrità.
 <span id="sohAttributeTypeSoftwareVersion"></span><span id="sohattributetypesoftwareversion"></span><span id="SOHATTRIBUTETYPESOFTWAREVERSION"></span>**sohAttributeTypeSoftwareVersion**
 </dt> <dd>
 
-Specifica il tipo di attributo della versione del software.
+Specifica il tipo di attributo della versione software.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeProductName"></span><span id="sohattributetypeproductname"></span><span id="SOHATTRIBUTETYPEPRODUCTNAME"></span>**sohAttributeTypeProductName**
 </dt> <dd>
 
-Specifica il tipo di attributo Product Name.
+Specifica il tipo di attributo product name.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeHealthClassStatus"></span><span id="sohattributetypehealthclassstatus"></span><span id="SOHATTRIBUTETYPEHEALTHCLASSSTATUS"></span>**sohAttributeTypeHealthClassStatus**
 </dt> <dd>
 
-Specifica il tipo di attributo status della classe Health.
+Specifica il tipo di attributo di stato della classe di integrità.
 
 </dd> <dt>
 
 <span id="sohAttributeTypeSoHGenerationTime"></span><span id="sohattributetypesohgenerationtime"></span><span id="SOHATTRIBUTETYPESOHGENERATIONTIME"></span>**sohAttributeTypeSoHGenerationTime**
 </dt> <dd>
 
-Specifica la data e l'ora di generazione dell'istruzione del tipo di attributo Health.
+Specifica l'ora di generazione del tipo di attributo Statement of Health.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Specifica il tipo di attributo del codice di errore.
 <span id="sohAttributeTypeFailureCategory"></span><span id="sohattributetypefailurecategory"></span><span id="SOHATTRIBUTETYPEFAILURECATEGORY"></span>**sohAttributeTypeFailureCategory**
 </dt> <dd>
 
-Specifica il tipo di attributo della categoria di errore.
+Specifica il tipo di attributo della categoria di errori.
 
 </dd> <dt>
 
@@ -160,15 +160,15 @@ Specifica il tipo di attributo del server di correzione IPv6.
 <span id="sohAttributeTypeExtendedIsolationState"></span><span id="sohattributetypeextendedisolationstate"></span><span id="SOHATTRIBUTETYPEEXTENDEDISOLATIONSTATE"></span>**sohAttributeTypeExtendedIsolationState**
 </dt> <dd>
 
-Specifica il tipo di attributo di stato di isolamento esteso.
+Specifica il tipo di attributo dello stato di isolamento esteso.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura [**SoHAttributeValue**](sohattributevalue-union.md) definisce i valori dell'attributo che corrispondono a ogni tipo di attributo.
+La [**struttura SoHAttributeValue**](sohattributevalue-union.md) definisce i valori degli attributi che corrispondono a ogni tipo di attributo.
 
-Questi tipi di attributo vengono utilizzati dal sistema NAP:
+Questi tipi di attributi vengono utilizzati dal sistema di Protezione accesso alla rete:
 
 -   sohAttributeTypeSystemHealthId
 -   sohAttributeTypeIpv4FixupServers
@@ -176,7 +176,7 @@ Questi tipi di attributo vengono utilizzati dal sistema NAP:
 -   sohAttributeTypeComplianceResultCodes
 -   sohAttributeTypeFailureCategory
 
-Il resto dei tipi viene progettato solo per guidare l'utilizzo di SHAs e SHV.
+Il resto dei tipi è destinato solo a guidare l'utilizzo da parte di SHAs e SHV.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -184,10 +184,10 @@ Il resto dei tipi viene progettato solo per guidare l'utilizzo di SHAs e SHV.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 
 
 
@@ -201,7 +201,7 @@ Il resto dei tipi viene progettato solo per guidare l'utilizzo di SHAs e SHV.
 [**SoHAttribute**](/windows/win32/api/naptypes/ns-naptypes-sohattribute)
 </dt> <dt>
 
-[**Rapporto**](/windows/win32/api/naptypes/ns-naptypes-soh)
+[**Soh**](/windows/win32/api/naptypes/ns-naptypes-soh)
 </dt> <dt>
 
 [**INapSoHConstructor**](inapsohconstructor.md)

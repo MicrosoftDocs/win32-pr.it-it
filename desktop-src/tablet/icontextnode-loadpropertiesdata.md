@@ -1,7 +1,7 @@
 ---
-description: "Ricrea i dati delle proprietà specifiche dell'applicazione e interni per una matrice di byte creata in precedenza con IContextNode:: SavePropertiesData."
+description: Ricrea i dati delle proprietà interne e specifici dell'applicazione per una matrice di byte creata in precedenza con IContextNode::SavePropertiesData.
 ms.assetid: 2d24d0da-16f1-4ddc-8e2e-93c312ecfa42
-title: 'Metodo IContextNode:: LoadPropertiesData (IACom. h)'
+title: Metodo IContextNode::LoadPropertiesData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: bc495aaa52ebfbca088f954b34f22f9d6e1e53d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d58c37dc91fac9704221fae13505f5e32c6e48d097133e3aad9154f5f2ec3e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719675"
 ---
-# <a name="icontextnodeloadpropertiesdata-method"></a>Metodo IContextNode:: LoadPropertiesData
+# <a name="icontextnodeloadpropertiesdata-method"></a>Metodo IContextNode::LoadPropertiesData
 
-Ricrea i dati delle proprietà specifiche dell'applicazione e interni per una matrice di byte creata in precedenza con [**IContextNode:: SavePropertiesData**](icontextnode-savepropertiesdata.md).
+Ricrea i dati delle proprietà interne e specifici dell'applicazione per una matrice di byte creata in precedenza con [**IContextNode::SavePropertiesData.**](icontextnode-savepropertiesdata.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ HRESULT LoadPropertiesData(
 
 <dl> <dt>
 
-*cbPropertiesDataSize* \[ in\]
+*cbPropertiesDataSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni della matrice di dati delle proprietà.
+Dimensione della matrice di dati delle proprietà.
 
 </dd> <dt>
 
-*pbPropertiesData* \[ in\]
+*pbPropertiesData* \[ Pollici\]
 </dt> <dd>
 
-Matrice Unsigned Integer a 8 bit contenente le informazioni sulle proprietà da caricare.
+Matrice di interi senza segno a 8 bit contenente le informazioni sulla proprietà da caricare.
 
 </dd> <dt>
 
-*pfSuccessful* \[ out\]
+*pfSuccessful* \[ Cambio\]
 </dt> <dd>
 
-**Variante \_ TRUE** se i dati della proprietà sono stati caricati correttamente; in caso contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** se i dati della proprietà sono stati caricati correttamente. in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi input penna](classes-and-interfaces---ink-analysis.md).
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,9 +72,9 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -86,25 +86,25 @@ Per una descrizione dei valori restituiti, vedere [classi e interfacce-analisi i
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: AddPropertyData**](icontextnode-addpropertydata.md)
+[**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: ContainsPropertyData**](icontextnode-containspropertydata.md)
+[**IContextNode::ContainsPropertyData**](icontextnode-containspropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md)
+[**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: GetPropertyDataIds**](icontextnode-getpropertydataids.md)
+[**IContextNode::GetPropertyDataIds**](icontextnode-getpropertydataids.md)
 </dt> <dt>
 
-[**IContextNode:: RemovePropertyData**](icontextnode-removepropertydata.md)
+[**IContextNode::RemovePropertyData**](icontextnode-removepropertydata.md)
 </dt> <dt>
 
-[**IContextNode:: SavePropertiesData**](icontextnode-savepropertiesdata.md)
+[**IContextNode::SavePropertiesData**](icontextnode-savepropertiesdata.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

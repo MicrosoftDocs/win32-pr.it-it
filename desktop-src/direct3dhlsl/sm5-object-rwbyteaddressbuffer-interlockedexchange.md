@@ -1,5 +1,5 @@
 ---
-title: 'Funzione RWByteAddressBuffer:: InterlockedExchange'
+title: Funzione RWByteAddressBuffer::InterlockedExchange
 description: Scambia un valore in modo atomico.
 ms.assetid: a50f4cba-a7a2-44b0-9de7-003b4c7a947f
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 47c51374b7dcd62ac208e0aa8811a8d693ce0ac6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 39adccfbd4b852b8a8caeab602d089ae52ed56bb4367e3af6c11763c39a2b7e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104993352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509570"
 ---
-# <a name="interlockedexchange-function"></a>InterlockedExchange (funzione)
+# <a name="interlockedexchange-function"></a>Funzione InterlockedExchange
 
 Scambia un valore in modo atomico.
 
@@ -28,9 +28,9 @@ Scambia un valore in modo atomico.
 
 ``` syntax
 void InterlockedExchange(
-  in  UINT dest,
-  in  UINT value,
-  out UINT original_value
+  in  UINT dest,
+  in  UINT value,
+  out UINT original_value
 );
 ```
 
@@ -38,28 +38,28 @@ void InterlockedExchange(
 
 <dl> <dt>
 
-*dest* \[ in\]
+*dest* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Indirizzo di destinazione.
 
 </dd> <dt>
 
-*valore* \[ di in\]
+*value* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore di input.
 
 </dd> <dt>
 
-*\_ valore originale* in \[ uscita\]
+*valore \_ originale* \[ in uscita\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Valore originale.
 
@@ -71,19 +71,19 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse con tipizzazione scalare e variabili di memoria condivisa. Per questa funzione sono disponibili tre possibili utilizzi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul Registro di memoria condiviso a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione riduce l'operazione eseguita usando le operazioni locali. Questa operazione è disponibile solo se R è leggibile e scrivibile.
+Questa operazione può essere eseguita solo su risorse di tipo scalare e variabili di memoria condivisa. Questa funzione può essere utilizzata in tre modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario la funzione si riduce all'operazione eseguita usando operazioni locali. Questa operazione è disponibile solo quando R è leggibile e scrivibile.
 
 Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| VS  | HS  | DS  | GS  | PS  | CS  |
+| VS  | Hs  | DS  | GS  | PS  | CS  |
 |-----|-----|-----|-----|-----|-----|
 |  x  |  x  |  x  |  x  | x   | x   |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -92,9 +92,9 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [RWByteAddressBuffer](sm5-object-rwbyteaddressbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

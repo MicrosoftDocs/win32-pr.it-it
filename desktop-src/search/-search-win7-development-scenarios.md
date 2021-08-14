@@ -1,79 +1,79 @@
 ---
 description: Descrive l'introduzione delle librerie per Windows 7.
 ms.assetid: 83c47963-4c8e-45ee-b707-bd45cfe048cd
-title: Librerie shell di Windows in Windows 7
+title: Windows Librerie shell in Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb94551d80d0230966626f1bd6499801aff889c4
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 28f120f1bc4e4208a7e6bbf35bbcfc4717ed05dfb7344658a80b1ea1d9a3ba50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969600"
 ---
-# <a name="windows-shell-libraries-in-windows"></a>Librerie della shell di Windows in Windows
+# <a name="windows-shell-libraries-in-windows"></a>Windows Librerie shell in Windows
 
-Questo argomento descrive l'introduzione delle librerie per Windows 7 e versioni successive. Le librerie sono una funzionalità della shell di Windows. Per accedere alla funzionalità della shell di Windows, ad esempio le librerie, gli sviluppatori di terze parti di applicazioni Windows Search devono implementare prima di tutto un archivio dati della shell. Per ulteriori informazioni, vedere [implementazione delle interfacce di oggetti della cartella di base](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
+Questo argomento descrive l'introduzione delle librerie per Windows 7 e versioni successive. Le librerie sono Windows shell. Per accedere Windows funzionalità shell, ad esempio librerie, gli sviluppatori di terze parti Windows le applicazioni di ricerca devono prima implementare un archivio dati shell. Per altre informazioni, vedere [Implementazione delle interfacce dell'oggetto cartella di base](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
 
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
 - [Raccolte](#libraries)
-  - [Punti di ingresso dati utente](#user-data-entry-points)
+  - [Punti di immissione dati utente](#user-data-entry-points)
   - [Raccolte di cartelle](#collections-of-folders)
   - [Cartelle supportate nelle librerie](#supported-folders-in-libraries)
-  - [Archiviazione supportata](#storage-backed)
-  - [Contenitori della shell non del file System](#non-file-system-shell-containers)
+  - [Archiviazione supportato](#storage-backed)
+  - [Contenitori della shell non del file system](#non-file-system-shell-containers)
   - [Descrizioni delle librerie](#library-descriptions)
 - [Argomenti correlati](#related-topics)
 
 ## <a name="libraries"></a>Librerie
 
-In Windows 7 e versioni successive, le librerie sono il repository predefinito dei dati utente. Gli utenti possono esplorare i file nello stesso modo in cui si trovino in una cartella oppure possono visualizzare i file disposti per proprietà quali data, tipo e autore. Diversamente da una cartella, una libreria non archivia effettivamente gli elementi, ma Visualizza i file archiviati in diverse cartelle nello stesso momento. Le librerie offrono un unico punto di accesso e pivot di visualizzazione completa per gli utenti del contenuto aggregato. Se, ad esempio, un utente dispone di file musicali nelle cartelle di un'unità esterna oltre alla cartella **Music** , potrà accedere immediatamente a tutti i file musicali tramite la raccolta musicale.
+In Windows 7 e versioni successive, le librerie sono il repository predefinito dei dati utente. Gli utenti possono esplorare i file nello stesso modo in cui si possono trovare in una cartella oppure possono visualizzare i file disposti in base a proprietà quali data, tipo e autore. A differenza di una cartella, una libreria non archivia effettivamente gli elementi, ma visualizza i file archiviati in più cartelle contemporaneamente. Le librerie forniscono un singolo punto di accesso e pivot di visualizzazione rtf agli utenti del contenuto aggregato. Ad esempio, se un utente ha file musicali in cartelle in un'unità esterna oltre alla cartella **My Musica,** sarà in grado di accedere immediatamente a tutti i file musicali tramite la libreria Musica.
 
-### <a name="user-data-entry-points"></a>Punti di ingresso dati utente
+### <a name="user-data-entry-points"></a>Punti di immissione dati utente
 
-Le librerie predefinite, ad esempio **documenti**, **Immagini** e così via, sono equivalenti alla [cartella nota](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)). Le librerie predefinite forniscono punti di ingresso noti agli utenti, ma poiché il contenuto della libreria non è limitato alle librerie di contenuto di cartelle note, gli utenti possono ottenere maggiore libertà per determinare la posizione in cui archiviare documenti e supporti. Le librerie vengono esposte tramite lo spazio dei nomi della shell (origine dati della Shell). L'applicazione può fornire agli utenti gli stessi punti di ingresso noti ai propri dati abilitando la conoscenza della libreria e l'esplorazione.
+Le librerie predefinite **(ad esempio Documenti**, **Immagini** e così via) sono l'equivalente di [Cartella nota](/previous-versions/windows/desktop/legacy/bb776911(v=vs.85)). Le librerie predefinite forniscono agli utenti punti di ingresso familiari, ma poiché il contenuto della raccolta non è limitato alle librerie di contenuto cartella nota, offre agli utenti maggiore libertà per determinare dove archiviare documenti e supporti. Le librerie vengono esposte tramite lo spazio dei nomi Shell (origine dati shell). L'applicazione può fornire agli utenti gli stessi punti di ingresso familiari ai propri dati abilitando la conoscenza della libreria e l'esplorazione.
 
 ### <a name="collections-of-folders"></a>Raccolte di cartelle
 
-Le librerie sono raccolte di contenuto definite dall'utente. Windows Search indicizza le cartelle supportate quando sono incluse nelle librerie. In questo modo è possibile abilitare la ricerca immediata e le visualizzazioni di disposizione dello stack basate su proprietà nelle librerie.
+Le librerie sono raccolte di contenuto definite dall'utente. Windows La ricerca indicizza le cartelle supportate quando sono incluse nelle librerie. Ciò consente la ricerca immediata e le visualizzazioni di disposizione dello stack basate su proprietà nelle librerie.
 
 ### <a name="supported-folders-in-libraries"></a>Cartelle supportate nelle librerie
 
-Per poter supportare le cartelle nelle librerie, è necessario che siano indicizzabili nel computer locale e indicizzate in un computer Windows remoto oppure indicizzate in un server con file indicizzati da Windows Search.
+Per poter essere supportate nelle librerie, le cartelle devono essere indicizzabili nel computer locale e indicizzate in un computer Windows remoto o indicizzate in un server con file indicizzati da Windows Ricerca.
 
-Le cartelle non supportate vengono bloccate dall'aggiunta degli utenti nella finestra di dialogo Gestione libreria Windows. Se le cartelle remote non indicizzate vengono aggiunte a una libreria tramite l'API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) , l'esperienza utente della libreria verrà ripristinata in **modalità provvisoria**. Nelle funzionalità della **modalità provvisoria** , ad esempio le visualizzazioni di disposizione dello stack basate su proprietà, i suggerimenti per i filtri e il supporto per la ricerca dei **menu Start** vengono rimossi dalla libreria interessata.
+Le cartelle non supportate non vengono aggiunte dagli utenti nella finestra Windows di gestione delle librerie. Se a una libreria vengono aggiunte cartelle remote non indicizzate usando l'API [IShellLibrary,](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) l'esperienza utente della libreria tornerà alla modalità Cassaforte **libreria**. In **Cassaforte modalità** di avvio, ad esempio le visualizzazioni di disposizione dello stack basate su proprietà, i suggerimenti di filtro e il supporto per la ricerca nel menu **Start,** vengono rimosse dalla libreria interessata.
 
-Nella tabella seguente sono elencate le cartelle incluse nelle librerie utilizzando la finestra di dialogo Gestione libreria Esplora risorse e le cartelle non supportate in **modalità provvisoria**:
+Nella tabella seguente sono elencate le cartelle incluse nelle librerie usando la finestra di Windows di gestione delle librerie di Esplora risorse e le cartelle non supportate in **Cassaforte modalità :**
 
 | Cartelle supportate                                                                                                                            | Cartelle non supportate                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Dischi rigidi NTFS e FAT32 fissi ed esterni                                                                                                | Unità rimovibili (ad esempio Thumbdrives e schede SD)                                                     |
-| Condivisioni indicizzate da ricerca di Windows (ad esempio i server di reparto e nei computer che eseguono Windows 10 e Windows 7 Home Edition) | Supporti rimovibili, ad esempio CD e DVD                                                                  |
-| Condivisioni disponibili offline, ad esempio **Reindirizzamento documenti**, **cache lato client**                                               | Condivisioni di rete non disponibili né offline né indicizzate in modalità remota, ad esempio unità NAS             |
-| n/d                                                                                                                                          | Altre origini dati, ad esempio Microsoft SharePoint, Microsoft Exchange, Microsoft OneDrive e così via. |
+| Dischi rigidi NTFS e FAT32 fissi ed esterni                                                                                                | Unità rimovibili (ad esempio unità di identificazione personale e schede SD)                                                     |
+| Condivisioni indicizzate dalla ricerca Windows ,ad esempio i server di reparto e nei computer che eseguono Windows 10 e Windows 7 Home Edition) | Supporti rimovibili (ad esempio CD e DVD)                                                                  |
+| Condivisioni disponibili offline (ad esempio **Reindirizzamento Documenti**, **Cache lato client**)                                               | Condivisioni di rete non disponibili offline né indicizzate in remoto (ad esempio unità NAS)             |
+| n/d                                                                                                                                          | Altre origini dati(ad esempio Microsoft SharePoint, Microsoft Exchange, Microsoft OneDrive e così via) |
 
 ### <a name="storage-backed"></a>Storage-Backed
 
-Le librerie sono raccolte di cartelle di archiviazione. Gli utenti possono salvare e copiare i file direttamente in una raccolta, poiché ogni libreria dispone di un percorso di salvataggio predefinito a cui inviare tali file. Per le librerie predefinite, si tratta di una cartella nota dall'utente inclusa in una libreria, ad esempio **documenti**, oppure la prima cartella aggiunta a una libreria personalizzata. Si tratta della cartella in cui i file vengono inseriti quando un utente trascina e rilascia i file in una raccolta o li salva in una raccolta con la finestra di dialogo file comune. L'utente può modificare il percorso di salvataggio predefinito di una libreria in qualsiasi momento, ma se rimuove il percorso di salvataggio predefinito, la cartella successiva nella libreria verrà selezionata come nuovo percorso di salvataggio. Gli utenti possono inoltre salvare le cartelle per le quali dispongono delle autorizzazioni incluse in una raccolta.
+Le librerie sono raccolte di cartelle di archiviazione. Gli utenti possono salvare e copiare i file direttamente in una libreria, poiché ogni libreria ha un percorso di salvataggio predefinito a cui inviare questi file. Per le librerie predefinite, si tratta della cartella nota dell'utente inclusa in una libreria **(ad** esempio Documenti ) o della prima cartella aggiunta a una libreria personalizzata. Questa è la cartella in cui vengono copiati i file quando un utente trascina e rilascia i file in una libreria o salva in una libreria con la finestra di dialogo file comune. L'utente può modificare il percorso di salvataggio predefinito di una libreria in qualsiasi momento, ma se rimuove il percorso di salvataggio predefinito, la cartella successiva nella libreria verrà selezionata come nuovo percorso di salvataggio. Gli utenti possono inoltre salvare in qualsiasi cartella per cui hanno le autorizzazioni incluse in una libreria.
 
-### <a name="non-file-system-shell-containers"></a>Contenitori della shell non del file System
+### <a name="non-file-system-shell-containers"></a>Contenitori della shell non del file system
 
-Le librerie possono contenere contenitori della shell file system, ad esempio il **computer** e il **Pannello di controllo**, ma contengono file System elementi. È possibile enumerare e accedere alle cartelle e ai contenuti della libreria usando le API per file system file e cartelle nei sistemi operativi precedenti. Se l'applicazione dipende molto da file system API specifiche, l'API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) può essere usata per ottenere i percorsi di file System di cartelle e file all'interno delle librerie. Nella maggior parte dei casi è consigliabile usare il modello di programmazione della Shell per supportare più versioni di Windows e la flessibilità degli elementi. Per ulteriori informazioni, vedere [spostamento nello spazio dei nomi della shell](https://msdn.microsoft.com/library/dd378496(VS.85).aspx).
+Le librerie possono contenere contenitori file system Shell locale, ad esempio **Computer** **e Pannello di controllo**, ma file system elementi. Le cartelle e i contenuti delle librerie possono essere enumerati e accessibili usando le API per file system file e cartelle nei sistemi operativi precedenti. Se l'applicazione dipende in modo file system API specifiche, è possibile usare l'API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per ottenere i percorsi file system di cartelle e file all'interno delle librerie. Nella maggior parte dei casi è consigliabile usare il modello di programmazione Shell per supportare più versioni Windows e flessibilità degli elementi. Per altre informazioni, vedere [Esplorazione dello spazio dei nomi della shell](https://msdn.microsoft.com/library/dd378496(VS.85).aspx).
 
 ### <a name="library-descriptions"></a>Descrizioni delle librerie
 
-Le descrizioni delle librerie vengono salvate su disco come file XML nella cartella% AppData% Microsoft \\ Windows \\ Libraries e potenzialmente come **\_ librerie FOLDERID**. Per ulteriori informazioni sulle **\_ librerie FOLDERID**, vedere [KNOWNFOLDERID](/windows/desktop/shell/knownfolderid).
+Le descrizioni delle librerie vengono salvate su disco come file XML nella cartella %appdata%Microsoft Windows Libraries (e potenzialmente \\ \\ come **librerie FOLDERID \_**). Per altre informazioni sulle **librerie FOLDERID, \_** vedere [KNOWNFOLDERID](/windows/desktop/shell/knownfolderid).
 
-I file di descrizione della libreria sono file XML con estensione del nome file. library-ms. I file non devono essere mai accessibili o modificati dalle applicazioni. Il testo del percorso della cartella salvato in modo permanente nei file di descrizione della libreria non è sempre aggiornato. Le cartelle di libreria vengono rese permanente nel file di descrizione della libreria nel formato di [collegamenti della shell](/windows/desktop/shell/links) binaria serializzata. Per ulteriori informazioni sulle librerie e sullo schema di descrizione della libreria, vedere [Library Description schema](../shell/library-schema-entry.md). Per altre informazioni sui connettori di ricerca federati e sullo schema di descrizione del connettore di ricerca, [cercare Connector Description schema](search-sconn-desc-schema-entry.md).
+I file di descrizione della libreria sono file XML con estensione library-ms. I file non devono mai essere accessibili o modificati dalle applicazioni. Il testo del percorso della cartella persistente nei file di descrizione della libreria non è sempre corrente. Le cartelle della libreria vengono rese persistenti nel file di descrizione della libreria nel formato binario serializzato [Shell Links.](/windows/desktop/shell/links) Per altre informazioni sulle librerie e sullo schema di descrizione della libreria, vedere [Schema di descrizione della libreria](../shell/library-schema-entry.md). Per altre informazioni sui connettori di ricerca federati e sullo schema di descrizione del connettore di ricerca, [vedere Schema di descrizione del connettore di ricerca](search-sconn-desc-schema-entry.md).
 
 > [NOTA]  
-> Le applicazioni devono sempre usare il modello di programmazione shell o l'API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per utilizzare e modificare il contenuto della libreria e non tentare mai di accedere o modificare manualmente il file di descrizione della libreria.
+> Le applicazioni devono sempre usare il modello di programmazione Shell o l'API [IShellLibrary](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) per utilizzare e modificare il contenuto della libreria e non tentare mai di accedere o modificare manualmente il file di descrizione della libreria.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ricerca di Windows 7](./-search-3x-wds-overview.md)
+[Windows 7 Ricerca](./-search-3x-wds-overview.md)
 
-[Novità per ricerca Windows 7](new-for-windows-7-search.md)
+[Novità della Windows 7](new-for-windows-7-search.md)
 
-[Indicizzazione delle priorità e degli eventi del set di righe in Windows 7](indexing-prioritization-and-rowset-events.md)
+[Indicizzazione di priorità ed eventi del set di righe in Windows 7](indexing-prioritization-and-rowset-events.md)

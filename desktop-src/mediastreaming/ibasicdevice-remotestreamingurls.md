@@ -3,9 +3,9 @@ title: Metodo IBasicDevice RemoteStreamingUrls
 description: Restituisce un vettore di URL di streaming remoto.
 ms.assetid: 19B4475F-A7E4-4DC4-9C88-68D91D023AF4
 keywords:
-- API di streaming multimediale del metodo RemoteStreamingUrls
-- API di streaming multimediale del metodo RemoteStreamingUrls, interfaccia IBasicDevice
-- API di streaming multimediale dell'interfaccia IBasicDevice, metodo RemoteStreamingUrls
+- Metodo RemoteStreamingUrls API Streaming multimediale
+- Metodo RemoteStreamingUrls API Streaming multimediale, interfaccia IBasicDevice
+- Interfaccia IBasicDevice API Streaming multimediale, metodo RemoteStreamingUrls
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fdc4bd363096e7b808a51cfbddb764daabe03a55
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 90d98d908cb582c0c2885a9b24a0a525f1e719c82bdffe20e74597ca5fc262a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104397603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972330"
 ---
-# <a name="ibasicdeviceremotestreamingurls-method"></a>Metodo IBasicDevice:: RemoteStreamingUrls
+# <a name="ibasicdeviceremotestreamingurls-method"></a>Metodo IBasicDevice::RemoteStreamingUrls
 
 Restituisce un vettore di URL di streaming remoto.
 
@@ -41,22 +41,22 @@ HRESULT RemoteStreamingUrls(
 
 <dl> <dt>
 
-*valore* \[ di out\]
+*value* \[ Cambio\]
 </dt> <dd>
 
-Riceve una raccolta enumerabile di puntatori agli URL di streaming remoto.
+Riceve una raccolta enumerabile di puntatori a URL di streaming remoti.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
