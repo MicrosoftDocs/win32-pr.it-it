@@ -1,5 +1,5 @@
 ---
-description: 'Metodo StopService della classe Msvm_CollectionManagementService : arresta il servizio.'
+description: 'Metodo StopService della classe Msvm_CollectionManagementService: arresta il servizio.'
 ms.assetid: 26d0aa9f-f5ca-481f-9bed-6788b0dc2803
 title: Metodo StopService della classe Msvm_CollectionManagementService
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f46b7416a3f17788cbfc0af5aacba014d680dbf6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cfbd33b1c16cabbe7196283b0afac31fbe28aba7b6d5b3f82b067b3bfbe7e8fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980411"
 ---
 # <a name="stopservice-method-of-the-msvm_collectionmanagementservice-class"></a>Metodo StopService della classe Msvm \_ CollectionManagementService
 
@@ -43,7 +43,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un error
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -55,7 +55,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un error
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

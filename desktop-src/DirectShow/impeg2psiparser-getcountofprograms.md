@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d6bfe698a45ea1cfe0a4bac6e65b839292bc1996
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c0c5609f82db98caea02e08f1e4fbd3877eeccbae25a5e83da3ac2804577b100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398108"
 ---
 # <a name="impeg2psiparsergetcountofprograms-method"></a>Metodo IMpeg2PsiParser::GetCountOfPrograms
 
@@ -49,7 +49,7 @@ Puntatore a una variabile che riceve il numero di programmi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore HRESULT. I valori possibili includono, ma non solo, i valori illustrati nella tabella seguente.
+Il metodo restituisce un valore HRESULT. I valori possibili includono, ma non sono limitati, i valori illustrati nella tabella seguente.
 
 
 

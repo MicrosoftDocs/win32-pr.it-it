@@ -1,5 +1,5 @@
 ---
-description: 'Membro CImagePalette::m_pFilter : la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
+description: 'Membro CImagePalette::m_pFilter: la variabile membro m pFilter è un puntatore \_ al filtro proprietario.'
 ms.assetid: f1a75a75-5f5c-420d-a7ab-5f0f03c6afb1
 title: Membro CImagePalette::m_pFilter (Winutil.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 883fa5bc1aeac57bfa861385cb2d10c563341d52
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4419c8371a4be1f622e23a7662c28106f3ea9ae093a3a7f3045a61e1ca81ff98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402541"
 ---
-# <a name="cimagepalettem_pfilter-member"></a>Membro PFilter CImagePalette::m \_
+# <a name="cimagepalettem_pfilter-member"></a>Membro CImagePalette::m \_ pFilter
 
 La `m_pFilter` variabile membro è un puntatore al filtro proprietario.
 
@@ -42,7 +42,7 @@ CBaseFilter *m_pFilter;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Winutil.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

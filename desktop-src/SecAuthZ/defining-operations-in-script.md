@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ef1337bc8e5c44ccce25e3f6d87f7cf6240d2d2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bb93b9f4c39ddb4af0501711f1101d37459651015977e045c112cdaf742e51f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994450"
 ---
 # <a name="defining-operations-in-script"></a>Definizione di operazioni nello script
 
-In Gestione autorizzazioni un'operazione è una funzione o un metodo di basso livello di un'applicazione. Queste operazioni sono raggruppate come attività. Gli utenti dell'applicazione richiedono l'autorizzazione per completare le attività. Un'operazione è rappresentata da un oggetto [**IAzOperation**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) . Per ulteriori informazioni sulle operazioni, vedere [operazioni e attività](operations-and-tasks.md).
+In Gestione autorizzazioni un'operazione è una funzione o un metodo di basso livello di un'applicazione. Queste operazioni vengono raggruppate come attività. Gli utenti dell'applicazione richiedono l'autorizzazione per completare le attività. Un'operazione è rappresentata da un [**oggetto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Per altre informazioni sulle operazioni, vedere [Operazioni e attività.](operations-and-tasks.md)
 
-Nell'esempio seguente viene illustrato come definire le operazioni in un archivio dei criteri di autorizzazione. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che l'archivio contenga un'applicazione denominata Expense.
+Nell'esempio seguente viene illustrato come definire operazioni in un archivio criteri di autorizzazione. Nell'esempio si presuppone che sia presente un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C e che questo archivio contenga un'applicazione denominata Expense.
 
 
 ```VB

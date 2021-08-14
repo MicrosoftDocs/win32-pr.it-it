@@ -1,36 +1,36 @@
 ---
-title: Modalità RGBA e gestione tavolozza Windows
-description: Sebbene la maggior parte delle applicazioni GDI tenda a usare l'indicizzazione dei colori con le tavolozze logiche, la modalità RGBA è in genere preferibile per le applicazioni OpenGL. Funziona meglio del mapping dei colori per diversi effetti, ad esempio ombreggiatura, illuminazione, nebbia e mapping di trama.
+title: RGBA Mode and Windows Palette Management
+description: Anche se la maggior parte delle applicazioni GDI tende a usare l'indicizzazione dei colori con tavolozze logiche, la modalità RGBA è in genere preferibile per le applicazioni OpenGL. Funziona meglio del mapping dei colori per diversi effetti, ad esempio ombreggiatura, illuminazione, illuminazione e mapping della trama.
 ms.assetid: 68c35173-e792-4770-9404-5503344f475b
 keywords:
-- OpenGL in Windows, modalità RGBA
-- OpenGL per Windows, gestione tavolozza
-- OpenGL in modalità RGBA
-- gestione tavolozza OpenGL
+- OpenGL in Windows,modalità RGBA
+- OpenGL in Windows,gestione della tavolozza
+- Modalità RGBA OpenGL
+- Gestione della tavolozza OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2e04110d1dfe489a145a8de9bdc7c3d9b726acd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 53016764636cadd9fe85e0478905958788ca2557a308375bc8d6d9826462c6b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932953"
 ---
-# <a name="rgba-mode-and-windows-palette-management"></a>Modalità RGBA e gestione tavolozza Windows
+# <a name="rgba-mode-and-windows-palette-management"></a>RGBA Mode and Windows Palette Management
 
-Sebbene la maggior parte delle applicazioni GDI tenda a usare l'indicizzazione dei colori con le tavolozze logiche, la modalità RGBA è in genere preferibile per le applicazioni OpenGL. Funziona meglio del mapping dei colori per diversi effetti, ad esempio ombreggiatura, illuminazione, nebbia e mapping di trama.
+Anche se la maggior parte delle applicazioni GDI tende a usare l'indicizzazione dei colori con tavolozze logiche, la modalità RGBA è in genere preferibile per le applicazioni OpenGL. Funziona meglio del mapping dei colori per diversi effetti, ad esempio ombreggiatura, illuminazione, illuminazione e mapping della trama.
 
-La modalità RGBA usa i valori di colore rosso, verde e blu (R, G e B) che insieme specificano il colore di ogni pixel nella visualizzazione. I valori R, G e B specificano l'intensità di ogni colore (rosso, verde e blu); i valori variano da 0,0 (minimo intenso) a 1,0 (più intenso). Il numero di bit per ogni componente varia a seconda dell'hardware utilizzato (2, 3, 5, 6 e 8 bit possibili). Il colore visualizzato è il risultato della somma dei tre valori di colore. Se tutti e tre i valori sono 0,0, il risultato è nero. Se i tre valori sono tutti 1,0, il risultato è bianco. Altri colori sono il risultato di una combinazione di valori di R, G e B compresi tra 0 e 1,0. Il bit A (Alpha) non viene usato per specificare il colore.
+La modalità RGBA usa valori di colore rosso, verde e blu (R, G e B) che insieme specificano il colore di ogni pixel nello schermo. I valori R, G e B specificano l'intensità di ogni colore (rosso, verde e blu); i valori sono compreso tra 0,0 (meno intenso) e 1,0 (più intenso). Il numero di bit per ogni componente varia a seconda dell'hardware usato (sono possibili 2, 3, 5, 6 e 8 bit). Il colore visualizzato è il risultato della somma dei tre valori di colore. Se tutti e tre i valori sono 0,0, il risultato è nero. Se i tre valori sono tutti 1,0, il risultato è bianco. Altri colori sono il risultato di una combinazione di valori di R, G e B compresi tra 0 e 1,0. Il bit A (alfa) non viene usato per specificare il colore.
 
-La visualizzazione standard con Super-VGA USA tavolozze con otto bit di colore per pixel. Gli otto bit vengono letti dal buffer e usati come indice nella tavolozza di sistema per ottenere i valori R, G e B. Quando viene selezionata e realizzata una tavolozza RGB in un contesto di dispositivo, è possibile eseguire il rendering di OpenGL usando la modalità RGBA.
+Lo schermo Super VGA standard usa tavolozze con otto bit di colore per pixel. Gli otto bit vengono letti dal buffer e usati come indice nella tavolozza di sistema per ottenere i valori R, G e B. Quando una tavolozza RGB viene selezionata e realizzata in un contesto di dispositivo, OpenGL può eseguire il rendering usando la modalità RGBA.
 
-Poiché sono presenti otto bit di colore per pixel, OpenGL enfatizza l'uso di una tavolozza RGBA da tre tre due. "Tre-tre-due" indica il modo in cui i dati a colori sono gestiti dalla tavolozza hardware o fisica. I rossi (R) e i verdi (G) sono specificati da tre bit; il blu (B) è specificato da due bit. Il colore rosso è il bit meno significativo e il blu è il bit più significativo.
+Poiché sono presenti otto bit di colore per pixel, OpenGL evidenzia l'uso di una tavolozza RGBA tre-tre-due. "Three-three-two" si riferisce al modo in cui i dati a bit di colore vengono gestiti dall'hardware o dalla tavolozza fisica. Il rosso (R) e il verde (G) sono specificati da tre bit; blue (B) è specificato da due bit. Red è il bit meno significativo e blue è il bit più significativo.
 
-Si determinano i colori della tavolozza logica dell'applicazione con le strutture [PaletteEntry](/previous-versions//dd162769(v=vs.85)) . In genere si crea una matrice di strutture **PaletteEntry** per specificare l'intera tabella delle voci della tavolozza della tavolozza logica.
+È possibile determinare i colori della tavolozza logica dell'applicazione con [strutture PALETTEENTRY.](/previous-versions//dd162769(v=vs.85)) In genere si crea una matrice di **strutture PALETTEENTRY** per specificare l'intera tabella di voci della tavolozza logica.
 
 ## <a name="rgba-mode-palette-sample"></a>Esempio di tavolozza in modalità RGBA
 
-Il frammento di codice seguente mostra come è possibile creare una tavolozza RGBA da tre tre tre due.
+Il frammento di codice seguente illustra come creare una tavolozza RGBA tre-tre-due.
 
 
 ```C++
@@ -297,6 +297,6 @@ main(int argc, char *argv[])
 
 
 
- 
+ 
 
- 
+ 

@@ -4,16 +4,16 @@ ms.assetid: b48399f5-daaa-40e4-bd80-a918539d25c6
 title: Metodo IEnumMedia::Clone (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f81542e1b0e3fc5bfb44e59827608396d7d906c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 894457684e94d07426511979dcb40cfcbbe75ed9fec91e024f09175389261620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119992441"
 ---
 # <a name="ienummediaclone-method"></a>Metodo IEnumMedia::Clone
 
-\[ Le interfacce e i controlli di conferenza di telefonia IP di Rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[I controlli e le interfacce della conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
 
 Il **metodo Clone** crea un altro enumeratore che contiene lo stesso stato di enumerazione di quello corrente.
 

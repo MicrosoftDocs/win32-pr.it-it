@@ -4,9 +4,9 @@ description: Assegna un desktop virtuale a un utente.
 ms.assetid: 6a96ccb7-5d3d-4164-a0a3-286a700b414c
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetUserAssignment
-- Metodo SetUserAssignment Servizi Desktop remoto, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Servizi Desktop remoto, metodo SetUserAssignment
+- Metodo SetUserAssignment Servizi Desktop remoto
+- Metodo SetUserAssignment Servizi Desktop remoto , Win32_RDMSVirtualDesktop classe
+- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto metodo SetUserAssignment
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f02e1cc935e344edd6a9c52016052e082e08d8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f38f87209ba8c8ebd82637f72cea2e798844e6081cd000f2161ee21681422e40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349412"
 ---
-# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetUserAssignment della \_ classe RDMSVirtualDesktop Win32
+# <a name="setuserassignment-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetUserAssignment della classe \_ RDMSVirtualDesktop Win32
 
 Assegna un desktop virtuale a un utente.
 
@@ -44,14 +44,14 @@ uint32 SetUserAssignment(
 
 <dl> <dt>
 
-*Nome utente* \[ in\]
+*UserName* \[ Pollici\]
 </dt> <dd>
 
 Nome utente dell'utente.
 
 </dd> <dt>
 
-*UserDomain* \[ in\]
+*UserDomain* \[ Pollici\]
 </dt> <dd>
 
 Nome di dominio dell'utente.
@@ -70,8 +70,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

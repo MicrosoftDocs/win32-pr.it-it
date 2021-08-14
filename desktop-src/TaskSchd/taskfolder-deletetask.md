@@ -1,10 +1,10 @@
 ---
-title: TaskFolder. DeleteTask, metodo
-description: Per lo scripting, Elimina un'attività dalla cartella.
+title: Metodo TaskFolder.DeleteTask
+description: Per lo scripting, elimina un'attività dalla cartella.
 ms.assetid: c030b2bf-fbde-4b8b-b38b-763938855d12
 keywords:
-- Utilità di pianificazione del metodo DeleteTask
-- Metodo DeleteTask Utilità di pianificazione, oggetto TaskFolder
+- Metodo DeleteTask Utilità di pianificazione
+- Metodo DeleteTask Utilità di pianificazione , oggetto TaskFolder
 - Oggetto TaskFolder Utilità di pianificazione, metodo DeleteTask
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aad4cf0a881a62cf5e9c1600653e5df58f3000f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c12b3ca9d66817972d75bd3ffbab61bcdcdff5dcc227e680ed6548f77d1b0de3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119402401"
 ---
-# <a name="taskfolderdeletetask-method"></a>TaskFolder. DeleteTask, metodo
+# <a name="taskfolderdeletetask-method"></a>Metodo TaskFolder.DeleteTask
 
-Per lo scripting, Elimina un'attività dalla cartella.
+Per lo scripting, elimina un'attività dalla cartella.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ TaskFolder.DeleteTask( _
 
 <dl> <dt>
 
-*Nome* \[ in\]
+*Nome* \[ Pollici\]
 </dt> <dd>
 
-Nome dell'attività specificata quando l'attività è stata registrata. Non è possibile usare il carattere ' .' per specificare la cartella attività corrente è. .' non è possibile utilizzare i caratteri per specificare la cartella attività padre nel percorso.
+Nome dell'attività specificato al momento della registrazione dell'attività. Il carattere '.' non può essere usato per specificare la cartella dell'attività corrente e '.'. Non è possibile usare caratteri per specificare la cartella dell'attività padre nel percorso.
 
 </dd> <dt>
 
-*flag* \[ in\]
+*flag* \[ Pollici\]
 </dt> <dd>
 
 Non supportata. Il valore è 0
@@ -67,9 +67,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

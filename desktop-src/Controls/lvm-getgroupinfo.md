@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETGROUPINFO (COMmctrl. h)
-description: Ottiene le informazioni sul gruppo.
+title: LVM_GETGROUPINFO messaggio (Commctrl.h)
+description: Ottiene informazioni sui gruppi.
 ms.assetid: 72d84e0b-121e-473b-a34d-874234c598b6
 keywords:
-- Controlli di Windows Message LVM_GETGROUPINFO
+- LVM_GETGROUPINFO controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,37 +14,37 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b55d5b1d781e7749df97bd0c9f7782f56545dbee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5c48a21a1bba0c6dd1af3fd567ea853dc922591c553ea11a935fb705ad65bf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411395"
 ---
-# <a name="lvm_getgroupinfo-message"></a>\_Messaggio GETGROUPINFO LVM
+# <a name="lvm_getgroupinfo-message"></a>Messaggio \_ LVM GETGROUPINFO
 
-Ottiene le informazioni sul gruppo.
+Ottiene informazioni sui gruppi.
 
 ## <a name="parameters"></a>Parametri
 
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>ID che specifica il gruppo le cui informazioni vengono recuperate.</dd> <dt>
+</dt> <dd>ID che specifica il gruppo di cui vengono recuperate le informazioni.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntatore A una struttura <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroup">**LVGROUP**</a> che riceve le informazioni recuperate. Impostare il membro **cbSize** della struttura su sizeof (LVGROUP). </dd> </dl>
+</dt> <dd>Puntatore a <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroup">**una struttura LVGROUP**</a> che riceve le informazioni recuperate. Impostare il **membro cbSize** di questa struttura su sizeof(LVGROUP). </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'ID del gruppo, se ha esito positivo, oppure-1 in caso contrario.
+Restituisce l'ID del gruppo in caso di esito positivo oppure -1 in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di tentare di recuperare l'intestazione per un gruppo, verificare innanzitutto che il gruppo non abbia lo \_ stile NOheader LBGS.
+Prima di tentare di recuperare l'intestazione per un gruppo, assicurarsi che il gruppo non abbia lo stile \_ LBGS NOHEADER.
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -54,9 +54,9 @@ Prima di tentare di recuperare l'intestazione per un gruppo, verificare innanzit
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

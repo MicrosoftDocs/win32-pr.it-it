@@ -1,6 +1,6 @@
 ---
-title: attributo carLicense
-description: Licenza del veicolo o targa di registrazione.
+title: Attributo carLicense
+description: Licenza del veicolo o la targhetta di registrazione.
 ms.assetid: 09505889-3dcc-46a3-851d-d9594c3a2ccb
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00a9b9a249b5076bf821c17156b090466aefe3ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a1308fd63f675d8d58d7450999032b0330bac8a0b8635319bb4bb89da4ad47bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427596"
 ---
-# <a name="carlicense-attribute"></a>attributo carLicense
+# <a name="carlicense-attribute"></a>Attributo carLicense
 
-Licenza del veicolo o targa di registrazione.
+Licenza del veicolo o la targhetta di registrazione.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | carLicense                                  |
-| LDAP-Display-Name | carLicense                                  |
+| Ldap-Display-Name | carLicense                                  |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.1                     |
-| System-ID-GUID    | d4159c92-957d-4a87-8a67-8d2934e01649        |
+| System-Id-Guid    | d4159c92-957d-4a87-8a67-8d2934e01649        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -56,15 +56,15 @@ Licenza del veicolo o targa di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Licenza del veicolo o targa di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Licenza del veicolo o targa di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -119,15 +119,15 @@ Licenza del veicolo o targa di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -140,15 +140,15 @@ Licenza del veicolo o targa di registrazione.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| È a valore singolo       | Falso                                                                                 |
+| A valore singolo       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Classi utilizzate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

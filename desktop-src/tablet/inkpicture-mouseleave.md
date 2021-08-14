@@ -1,19 +1,19 @@
 ---
 description: Si verifica quando il puntatore del mouse esce dal controllo InkPicture.
 ms.assetid: 4b7961cd-58a3-4e75-bb9e-fbb6dc225d3d
-title: Evento InkPicture. MouseLeave (Msinkaut. h)
+title: Evento InkPicture.MouseLeave (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7283bbee20416691e5e9351897c7af2074fa4164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff08c3ffbac12911d5eda02a67da2bd31213f943a14afe77f5e7fc17ca885933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118218377"
 ---
-# <a name="inkpicturemouseleave-event"></a>Evento InkPicture. MouseLeave
+# <a name="inkpicturemouseleave-event"></a>Evento InkPicture.MouseLeave
 
-Si verifica quando il puntatore del mouse esce dal controllo [InkPicture](inkpicture-control-reference.md) .
+Si verifica quando il puntatore del mouse esce [dal controllo InkPicture.](inkpicture-control-reference.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -26,7 +26,7 @@ void MouseLeave();
 
 ## <a name="parameters"></a>Parametri
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -34,7 +34,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . L'interfaccia **\_ IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore di DISPID \_ IPEMouseLeave.
+Questo metodo di evento è definito **\_ nell'interfaccia IInkPictureEvents.** **\_ L'interfaccia IInkPictureEvents** implementa l'interfaccia [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificatore \_ DISPID IPEMouseLeave.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,9 +42,9 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Msinkaut. h (richiede anche Msinkaut \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -53,7 +53,7 @@ Questo metodo di evento è definito nell'interfaccia **\_ IInkPictureEvents** . 
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5ef68998e3e131223e6f64637cbccb4d5a5a3d9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cf8d547b9f7412cec956c19539a2919f9bdb8f62381f2b6643058a8984cdf81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119978561"
 ---
 # <a name="xmxdecn4-constructors"></a>Costruttori XMXDECN4
 
 Costruttori esposti da `XMXDECN4` .
 
-Costruisce istanze della struttura [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) .
+Costruisce istanze della [**struttura XMXDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4)
 
 > [!Note]  
 > I costruttori elencati di seguito sono disponibili solo in C++.
@@ -47,7 +47,7 @@ Costruisce istanze della struttura [**XMXDECN4**](/windows/win32/api/directxpack
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a></td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMXDECN4</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
+<td style="text-align: left;">Costruttore predefinito per <code>XMXDECN4</code> . <br/> Costruttore predefinito per <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -56,7 +56,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMXDECN4</code> da una <code>uint32_t</code> variabile che contiene i dati del componente in un formato compresso. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da una <code>uint32_t</code> variabile che contiene i dati del componente in un formato compresso. <br/>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMXDECN4</code> una variabile contenente i dati del componente in un formato di tipo <code>uint32_t</code> packed. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da una variabile contenente i <code>uint32_t</code> dati dei componenti in un formato di pacchetto. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -64,8 +64,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const Float *)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMXDECN4</code> da un argomento di matrice di quattro elementi <code>float</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da un argomento di matrice di quattro elementi <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a></td>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMXDECN4</code> un argomento di matrice di quattro <code>float</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da un oggetto da un argomento di matrice di <code>float</code> quattro elementi. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -73,8 +73,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMXDECN4</code> da quattro argomenti normalizzati <code>float</code> . <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da quattro argomenti normalizzati <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float,float,float,float)</strong></a></td>
+<td style="text-align: left;">Inizializza una nuova istanza di <code>XMXDECN4</code> da quattro argomenti <code>float</code> normalizzati. <br/> Questo costruttore inizializza una nuova istanza di <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> da quattro argomenti <code>float</code> normalizzati. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.

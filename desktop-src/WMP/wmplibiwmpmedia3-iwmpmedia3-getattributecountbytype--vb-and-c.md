@@ -5,7 +5,7 @@ ms.assetid: d692635f-f9f1-4d8e-a9c5-9d7fa84f41bd
 keywords:
 - Metodo getAttributeCountByType Windows Media Player
 - Metodo getAttributeCountByType Windows Media Player, interfaccia IWMPMedia3
-- Interfaccia IWMPMedia3 Windows Media Player, metodo getAttributeCountByType
+- Interfaccia IWMPMedia3 Windows Media Player metodo , getAttributeCountByType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49505f9e9df8778cc2c17ba062da6700b9b8aec4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c8e3fc681ea5471457bd9a80ac3e26dabc08b2112387dd8c5f785bf5f055dfc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000111"
 ---
-# <a name="iwmpmedia3getattributecountbytype-method"></a>Metodo IWMPMedia3:: getAttributeCountByType
+# <a name="iwmpmedia3getattributecountbytype-method"></a>Metodo IWMPMedia3::getAttributeCountByType
 
-Il metodo **getAttributeCountByType** restituisce il numero di attributi associati al tipo di attributo specificato.
+Il **metodo getAttributeCountByType** restituisce il numero di attributi associati al tipo di attributo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,29 +55,29 @@ Implements IWMPMedia3.getAttributeCountByType
 
 <dl> <dt>
 
-*bstrType* \[ in\]
+*bstrType* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il tipo di attributo.
+Oggetto **System.String** che rappresenta il tipo di attributo.
 
 </dd> <dt>
 
-*bstrLanguage* \[ in\]
+*bstrLanguage* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il linguaggio. Se il valore è impostato su null o su una stringa di lunghezza zero (""), viene utilizzata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di linguaggio RFC 1766 valida, ad esempio "en-US".
+Oggetto **System.String** che rappresenta la lingua. Se il valore è impostato su Null o su una stringa di lunghezza zero (""), viene usata la stringa delle impostazioni locali corrente. In caso contrario, il valore deve essere una stringa di lingua RFC 1766 valida, ad esempio "en-us".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**System. Int32** che rappresenta il numero di attributi associati al tipo.
+Oggetto **System.Int32** che rappresenta il numero di attributi associati al tipo.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene utilizzato per individuare il numero di attributi corrispondente a un nome di attributo specifico per un determinato elemento multimediale. I numeri di indice possono quindi essere passati al metodo **getItemInfoByType** . Questa operazione è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
+Questo metodo viene usato per individuare il numero di attributi corrispondenti a un nome di attributo specifico per un determinato elemento multimediale. I numeri di indice possono quindi essere passati al **metodo getItemInfoByType.** Ciò è utile, ad esempio, quando un elemento multimediale è stato categorizzato in più generi.
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,7 +85,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura 
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -98,7 +98,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura 
 [**Interfaccia IWMPMedia3 (VB e C#)**](iwmpmedia3--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia3. getItemInfoByType (VB e C#)**](wmplibiwmpmedia3-iwmpmedia3-getiteminfobytype--vb-and-c.md)
+[**IWMPMedia3.getItemInfoByType (VB e C#)**](wmplibiwmpmedia3-iwmpmedia3-getiteminfobytype--vb-and-c.md)
 </dt> </dl>
 
  

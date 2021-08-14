@@ -1,9 +1,9 @@
 ---
 title: helpfile (attributo)
-description: L'attributo \ fileguide \ imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della guida.
+description: L'attributo \helpfile\ imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della Guida.
 ms.assetid: caa248b1-a1a7-4c36-886a-079a66a01907
 keywords:
-- attributo filelima MIDL
+- Attributo helpfile MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0b4283b0285631a710af774d364a01b82c9d44b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1557d96f35913e5e1ed9b784bedfc430e6c4d77b65954583ca6923e4728af9a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384022"
 ---
 # <a name="helpfile-attribute"></a>helpfile (attributo)
 
-L'attributo **\[ filelima \]** imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della guida.
+**\[ L'attributo \] helpfile** imposta il nome del file della Guida per una libreria dei tipi. Tutti i tipi in una libreria condividono lo stesso file della Guida.
 
 ``` syntax
 [
@@ -39,28 +39,28 @@ library
 
 <dl> <dt>
 
-*UUID-numero* 
+*uuid-number* 
 </dt> <dd>
 
-Specifica un numero di identificazione univoco universale per la [**libreria**](library.md).
+Specifica un numero di identificazione universalmente univoco per la [**libreria**](library.md).
 
 </dd> <dt>
 
-*filename* 
+*Filename* 
 </dt> <dd>
 
-Specifica il nome del file contenente il testo della guida.
+Specifica il nome del file contenente il testo della Guida.
 
 </dd> <dt>
 
-*facoltativo-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Specifica zero o più attributi che verranno applicati al compilatore MIDL alla [**libreria**](library.md).
+Specifica zero o più attributi che verranno applicati dal compilatore MIDL alla [**libreria**](library.md).
 
 </dd> <dt>
 
-*istruzioni Library* 
+*istruzioni library* 
 </dt> <dd>
 
 Specifica una o più istruzioni MIDL che definiscono l'interfaccia della libreria.
@@ -69,7 +69,7 @@ Specifica una o più istruzioni MIDL che definiscono l'interfaccia della libreri
 
 ## <a name="remarks"></a>Commenti
 
-Usare le funzioni **GetDocumentation** nelle interfacce **ITypeLib** e **ITypeInfo** per recuperare il nome del file.
+Usare le **funzioni GetDocumentation** nelle **interfacce ITypeLib** e **ITypeInfo** per recuperare il nome del file.
 
 ## <a name="examples"></a>Esempi
 
@@ -90,18 +90,18 @@ library Hello
 
 <dl> <dt>
 
-[**libreria**](library.md)
+[**Libreria**](library.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

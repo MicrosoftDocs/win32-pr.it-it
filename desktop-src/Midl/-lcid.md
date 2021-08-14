@@ -1,9 +1,9 @@
 ---
-title: opzione/LCID
-description: L'opzione del compilatore MIDL/LCID consente di usare i caratteri internazionali nei file di input, nei nomi file e nei percorsi di directory.
+title: Opzione /lcid
+description: L'opzione del compilatore MIDL /lcid consente di usare caratteri internazionali nei file di input, nei nomi di file e nei percorsi di directory.
 ms.assetid: 2ab4ba67-4414-4889-8ed7-83f4888caf8b
 keywords:
-- /LCID switch MIDL
+- Opzione /lcid MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370548bb9899ce84173f2321a129aaeda1c6fe81
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b5ceff1f9a4ef2f6c95a8dac12ff689995efe4fdd3619cf48e11043967fec053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385514"
 ---
-# <a name="lcid-switch"></a>opzione/LCID
+# <a name="lcid-switch"></a>Opzione /lcid
 
-L'opzione del compilatore MIDL **/LCID** consente di usare i caratteri internazionali nei file di input, nei nomi file e nei percorsi di directory.
+L'opzione del compilatore MIDL **/lcid** consente di usare caratteri internazionali nei file di input, nei nomi di file e nei percorsi di directory.
 
 ``` syntax
 midl /lcid localeID
@@ -31,39 +31,39 @@ midl /lcid localeID
 
 <dl> <dt>
 
-*localeID* 
+*Localeid* 
 </dt> <dd>
 
-Specifica l'identificatore delle impostazioni locali a 32 bit utilizzato nel supporto della lingua nazionale di Windows. L'identificatore delle impostazioni locali deve essere specificato in decimale.
+Specifica l'identificatore delle impostazioni locali a 32 bit usato in Windows national language support. L'identificatore delle impostazioni locali deve essere specificato in formato decimale.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nei file di input è possibile utilizzare commenti, stringhe, HelpStrings e identificatori localizzati. In particolare, l'opzione **/LCID** fornisce un supporto DBCS completo, per rappresentare lingue asiatiche quali giapponese, cinese e coreano.
+All'interno dei file di input è possibile usare commenti, stringhe, helpstring e identificatori localizzati. In particolare, **l'opzione /lcid** fornisce il supporto DBCS completo per rappresentare le lingue dell'Asia, ad esempio giapponese, cinese e coreano.
 
 > [!Note]  
-> L'opzione **/LCID** è disponibile con MIDL versione 3.01.75 e versioni successive.
+> **L'opzione /lcid** è disponibile con MIDL versione 3.01.75 e successive.
 
- 
+ 
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/LCID 1041 iface. idl**
+**midl /lcid 1041 iface.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
+[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

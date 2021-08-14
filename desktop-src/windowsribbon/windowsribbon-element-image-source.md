@@ -1,9 +1,9 @@
 ---
-title: Proprietà Image. Source
-description: Rappresenta il percorso della directory di un'immagine.
+title: Image.Source - proprietà
+description: Rappresenta il percorso di directory di un'immagine.
 ms.assetid: 174a518a-e9a3-4461-a9a3-d61b62d2b718
 keywords:
-- Proprietà Image. Source-barra multifunzione di Windows
+- Proprietà Image.Source Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ace2a907280a11c54452b54bfb6172539980e38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20612f0d25f914cb4c80ae77bb001a678af79e4605c3e1358ed7e33f6b19d805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202406"
 ---
-# <a name="imagesource-property"></a>Proprietà Image. Source
+# <a name="imagesource-property"></a>Image.Source - proprietà
 
-Rappresenta il percorso della directory di un'immagine.
+Rappresenta il percorso di directory di un'immagine.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -51,13 +51,13 @@ Non ci sono elementi figlio.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**immagine**](windowsribbon-element-image.md).
+Può verificarsi al massimo una volta per ogni [**immagine**](windowsribbon-element-image.md).
 
-Questo elemento contiene un valore di tipo *xs: anyURI* o qualsiasi sequenza di caratteri che rappresenta un Uniform Resource Identifier (URI). Il valore URI è un percorso di directory assoluto o relativo (al file di markup della barra multifunzione) di una risorsa immagine di tipo bitmap (BMP).
+Questo elemento contiene un valore di tipo *xs:anyURI* o qualsiasi sequenza di caratteri che rappresenta un Uniform Resource Identifier (URI). Il valore URI è un percorso di directory assoluto o relativo (al file di markup della barra multifunzione) di una risorsa immagine di tipo bitmap (BMP).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato il markup necessario per dichiarare, tramite un set di elementi [**immagine**](windowsribbon-element-image.md) , una raccolta di risorse immagine progettate per supportare quattro impostazioni DPI dello schermo specifiche. La proprietà **Image. Source** viene utilizzata per specificare il percorso della risorsa immagine.
+L'esempio di codice seguente illustra il markup necessario per dichiarare, tramite un set di elementi [**Image,**](windowsribbon-element-image.md) una raccolta di risorse immagine progettate per supportare quattro impostazioni dpi dello schermo specifiche. La **proprietà Image.Source** viene usata per specificare il percorso della risorsa immagine.
 
 
 ```C++
@@ -90,8 +90,8 @@ Nell'esempio di codice seguente viene illustrato il markup necessario per dichia
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 

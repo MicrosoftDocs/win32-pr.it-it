@@ -1,5 +1,5 @@
 ---
-description: 'D3DX10_MESHOPT enumerazione : specifica il tipo di ottimizzazione mesh da eseguire.'
+description: 'D3DX10_MESHOPT enumerazione : specifica il tipo di ottimizzazione della mesh da eseguire.'
 ms.assetid: 20d1da8c-8c3d-4045-9a37-d534a8682716
 title: D3DX10_MESHOPT enumerazione (D3DX10Mesh.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: 7b3085cf9970f2c1f6fe3748cc4db8f4fb2b2a78
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 193bf832f00c9812a515ae9b5c478f6baed637d87605e9f8d04349a12d79aac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989221"
 ---
 # <a name="d3dx10_meshopt-enumeration"></a>Enumerazione D3DX10 \_ MESHOPT
 
-Specifica il tipo di ottimizzazione mesh da eseguire.
+Specifica il tipo di ottimizzazione della mesh da eseguire.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,10 +52,10 @@ Riordina i visi per rimuovere i vertici e i visi inutilizzati.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_ATTR_SORT"></span><span id="d3dx10_meshopt_attr_sort"></span>**D3DX10 \_ MESHOPT \_ ATTR \_ SORT**
+<span id="D3DX10_MESHOPT_ATTR_SORT"></span><span id="d3dx10_meshopt_attr_sort"></span>**ORDINAMENTO ATTR D3DX10 \_ MESHOPT \_ \_**
 </dt> <dd>
 
-Riordina i visi per ottimizzare un minor numero di modifiche dello stato di aggregazione degli attributi e migliorare le prestazioni di DrawSubset.
+Riordina i visi per ottimizzare un minor numero di modifiche dello stato del bundle di attributi e migliorare le prestazioni di DrawSubset.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Riordina i visi per aumentare la frequenza di riscontri nella cache delle cache 
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**D3DX10 \_ MESHOPT \_ STRIP \_ REORDER**
+<span id="D3DX10_MESHOPT_STRIP_REORDER"></span><span id="d3dx10_meshopt_strip_reorder"></span>**RIORDINO DELLA STRISCIA D3DX10 \_ MESHOPT \_ \_**
 </dt> <dd>
 
 Riordina i visi per ottimizzare la lunghezza dei triangoli adiacenti.
@@ -80,25 +80,25 @@ Ottimizzare solo i visi; non ottimizzare i vertici.
 
 </dd> <dt>
 
-<span id="D3DX10_MESHOPT_DO_NOT_SPLIT"></span><span id="d3dx10_meshopt_do_not_split"></span>**D3DX10 \_ MESHOPT \_ NON \_ \_ SUDDIVISO**
+<span id="D3DX10_MESHOPT_DO_NOT_SPLIT"></span><span id="d3dx10_meshopt_do_not_split"></span>**D3DX10 \_ MESHOPT \_ NON SI \_ DIVIDE \_**
 </dt> <dd>
 
-Durante l'ordinamento degli attributi, non suddividere i vertici condivisi tra gruppi di attributi.
+Durante l'ordinamento degli attributi, non dividere i vertici condivisi tra gruppi di attributi.
 
 </dd> <dt>
 
 <span id="D3DX10_MESHOPT_DEVICE_INDEPENDENT"></span><span id="d3dx10_meshopt_device_independent"></span>**D3DX10 \_ MESHOPT \_ DEVICE \_ INDEPENDENT**
 </dt> <dd>
 
-Influisce sulle dimensioni della cache dei vertici. L'uso di questo flag specifica una dimensione predefinita della cache dei vertici che funziona bene nell'hardware legacy.
+Influisce sulle dimensioni della cache dei vertici. L'uso di questo flag specifica una dimensione predefinita della cache dei vertici che funziona correttamente nell'hardware legacy.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I flag di ottimizzazione \_ VERTEXCACHE D3DXMESHOPT STRIPREORDER e D3DXMESHOPT si \_ escludono a vicenda.
+I flag di ottimizzazione D3DXMESHOPT \_ STRIPREORDER e D3DXMESHOPT \_ VERTEXCACHE si escludono a vicenda.
 
-Il flag D3DXMESHOPT \_ SHAREVB è stato rimosso da questa enumerazione. Usare D3DXMESH \_ VB \_ SHARE in D3DXMESH.
+Il flag D3DXMESHOPT \_ SHAREVB è stato rimosso da questa enumerazione. Usare D3DXMESH \_ VB \_ SHARE, in D3DXMESH.
 
 ## <a name="requirements"></a>Requisiti
 

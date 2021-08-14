@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DMSArray:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione Texture2DMSArray:: GetDimensions'
+title: Funzione Texture2DMSArray::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione Texture2DMSArray::GetDimensions
 ms.assetid: 86d54e0d-f168-479f-b2af-f021b8994741
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e22a225178c2fa965ea842b8c86692d09b87168f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d6f9d4fc24cb1f8933bdb67796aebe3fe7d7406b114eea8a12f507c5f04591f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104353721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508427"
 ---
-# <a name="texture2dmsarraygetdimensions-function"></a>Funzione Texture2DMSArray:: GetDimensions
+# <a name="texture2dmsarraygetdimensions-function"></a>Funzione Texture2DMSArray::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -39,39 +39,39 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Altezza* \[ out\]
+*Altezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Altezza della risorsa, in Texel.
+Altezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Elementi* \[ di out\]
+*Elementi* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
 </dd> <dt>
 
-*NumberOfSamples* \[ out\]
+*NumberOfSamples* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Il numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ Nothing
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -97,7 +97,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -112,7 +112,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DMSArray](sm5-object-texture2dmsarray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

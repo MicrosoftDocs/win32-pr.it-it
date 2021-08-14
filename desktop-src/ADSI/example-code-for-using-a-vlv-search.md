@@ -7,16 +7,16 @@ keywords:
 - Codice di esempio per l'uso di una ricerca VLV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2049d0650728066789f23921caf697e8aaa9d988
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e3714216e985ac4b45227fa1d9db10826d0fe1f32ab636a711fe98790647238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428434"
 ---
 # <a name="example-code-for-using-a-vlv-search"></a>Codice di esempio per l'uso di una ricerca VLV
 
-Gli esempi di codice seguenti usano le ricerche VLV per ottenere i risultati della ricerca.
+Gli esempi di codice seguenti usano ricerche VLV per ottenere i risultati della ricerca.
 
 -   **GetVLVItemCount**
 -   **GetVLVItemText**
@@ -114,7 +114,7 @@ int WideCharToLocal(LPTSTR pLocal, LPCWSTR pWide, DWORD dwChars)
 
 ## <a name="getvlvitemcount-example-function"></a>Funzione di esempio GetVLVItemCount
 
-Nell'esempio di codice seguente viene illustrato come utilizzare una ricerca VLV per ottenere una stima del numero di elementi risultante dalla ricerca.
+Nell'esempio di codice seguente viene illustrato come usare una ricerca VLV per ottenere una stima del numero di elementi che verrebbero restituiti dalla ricerca.
 
 
 ```C++
@@ -227,7 +227,7 @@ HRESULT GetVLVItemCount(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemtext-example-function"></a>Funzione di esempio GetVLVItemText
 
-Nell'esempio di codice seguente viene illustrato come utilizzare una ricerca VLV per ottenere il testo per un singolo elemento in base a un indice.
+L'esempio di codice seguente illustra come usare una ricerca VLV per ottenere il testo per un singolo elemento in base a un indice.
 
 
 ```C++
@@ -350,7 +350,7 @@ HRESULT GetVLVItemText(IDirectorySearch *pSearch,
 
 ## <a name="getvlvitemsbystring-example-function"></a>Funzione di esempio GetVLVItemsByString
 
-Nell'esempio di codice seguente viene illustrato come utilizzare una ricerca VLV per ottenere il testo per un numero specificato di elementi in base a una stringa. In questo esempio vengono aggiunti gli ordinamenti recuperati a una casella di riepilogo.
+Nell'esempio di codice seguente viene illustrato come usare una ricerca VLV per ottenere il testo per un numero specificato di elementi in base a una stringa. In questo esempio verranno aggiunti gli ordinamenti recuperati a una casella di riepilogo.
 
 
 ```C++
@@ -474,9 +474,9 @@ HRESULT GetVLVItemsByString(HWND hwndListbox,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

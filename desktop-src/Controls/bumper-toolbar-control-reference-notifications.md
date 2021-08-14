@@ -1,55 +1,55 @@
 ---
-title: Notifiche di controllo della barra degli strumenti
-description: Notifiche di controllo della barra degli strumenti
+title: Notifiche dei controlli barra degli strumenti
+description: Notifiche dei controlli barra degli strumenti
 ms.assetid: a12ba343-e51c-4850-afb7-4307dfb6fd03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee3d6662cc4f4d4b347eda05928945c6315130b0
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3804a676d7bf99e618a1fb18608498ddcde6b0eb47445a9d2efd51b0934e8a2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118415845"
 ---
-# <a name="toolbar-control-notifications"></a>Notifiche di controllo della barra degli strumenti
+# <a name="toolbar-control-notifications"></a>Notifiche dei controlli barra degli strumenti
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [NM \_ char (barra degli strumenti)](nm-char-toolbar.md)
--   [\_Clic su Nm (barra degli strumenti)](nm-click-toolbar.md)
--   [\_CUSTOMDRAW Nm (barra degli strumenti)](nm-customdraw-toolbar.md)
--   [\_DBLCLK Nm (barra degli strumenti)](nm-dblclk-toolbar.md)
--   [\_KeyDown Nm (barra degli strumenti)](nm-keydown-toolbar.md)
--   [\_LDOWN Nm](nm-ldown-toolbar.md)
--   [\_RCLICK Nm (barra degli strumenti)](nm-rclick-toolbar.md)
--   [\_RDBLCLK Nm (barra degli strumenti)](nm-rdblclk-toolbar.md)
--   [\_RELEASEDCAPTURE Nm (barra degli strumenti)](nm-releasedcapture-toolbar-.md)
--   [\_TOOLTIPSCREATED Nm (barra degli strumenti)](nm-tooltipscreated-toolbar-.md)
--   [\_BEGINADJUST TBN](tbn-beginadjust.md)
--   [\_BEGINDRAG TBN](tbn-begindrag.md)
--   [\_CUSTHELP TBN](tbn-custhelp.md)
--   [\_DELETINGBUTTON TBN](tbn-deletingbutton.md)
--   [\_trascinamento TBN](tbn-dragout.md)
--   [TBN \_ DRAGOVER](tbn-dragover.md)
--   [\_elenco a discesa TBN](tbn-dropdown.md)
--   [\_DUPACCELERATOR TBN](tbn-dupaccelerator.md)
--   [\_ENDADJUST TBN](tbn-endadjust.md)
--   [\_ENDDRAG TBN](tbn-enddrag.md)
--   [\_GETBUTTONINFO TBN](tbn-getbuttoninfo.md)
--   [\_GETDISPINFO TBN](tbn-getdispinfo.md)
--   [\_GETINFOTIP TBN](tbn-getinfotip.md)
--   [TBN \_ GETobject](tbn-getobject.md)
--   [\_HOTITEMCHANGE TBN](tbn-hotitemchange.md)
--   [\_INITCUSTOMIZE TBN](tbn-initcustomize.md)
--   [\_MAPACCELERATOR TBN](tbn-mapaccelerator.md)
--   [\_QUERYDELETE TBN](tbn-querydelete.md)
--   [\_QUERYINSERT TBN](tbn-queryinsert.md)
--   [reimpostazione TBN \_](tbn-reset.md)
--   [\_ripristino TBN](tbn-restore.md)
--   [\_Salva TBN](tbn-save.md)
--   [\_TOOLBARCHANGE TBN](tbn-toolbarchange.md)
--   [\_WRAPACCELERATOR TBN](tbn-wrapaccelerator.md)
--   [\_WRAPHOTITEM TBN](tbn-wraphotitem.md)
+-   [NM \_ CHAR (barra degli strumenti)](nm-char-toolbar.md)
+-   [NM \_ CLICK (barra degli strumenti)](nm-click-toolbar.md)
+-   [NM \_ CUSTOMDRAW (barra degli strumenti)](nm-customdraw-toolbar.md)
+-   [NM \_ DBLCLK (barra degli strumenti)](nm-dblclk-toolbar.md)
+-   [NM \_ KEYDOWN (barra degli strumenti)](nm-keydown-toolbar.md)
+-   [NM \_ LDOWN](nm-ldown-toolbar.md)
+-   [NM \_ RCLICK (barra degli strumenti)](nm-rclick-toolbar.md)
+-   [NM \_ RDBLCLK (barra degli strumenti)](nm-rdblclk-toolbar.md)
+-   [NM \_ RELEASEDCAPTURE (barra degli strumenti)](nm-releasedcapture-toolbar-.md)
+-   [DESCRIZIONI \_ COMANDO NMCREATED (barra degli strumenti)](nm-tooltipscreated-toolbar-.md)
+-   [TBN \_ BEGINADJUST](tbn-beginadjust.md)
+-   [TBN \_ BEGINDRAG](tbn-begindrag.md)
+-   [TBN \_ CUSTHELP](tbn-custhelp.md)
+-   [TBN \_ DELETINGBUTTON](tbn-deletingbutton.md)
+-   [TRASCINAMENTO \_ TBN](tbn-dragout.md)
+-   [TRASCINAMENTO \_ TBN](tbn-dragover.md)
+-   [ELENCO A DISCESA TBN \_](tbn-dropdown.md)
+-   [TBN \_ DUPACCELERATOR](tbn-dupaccelerator.md)
+-   [TBN \_ ENDADJUST](tbn-endadjust.md)
+-   [TBN \_ ENDDRAG](tbn-enddrag.md)
+-   [TBN \_ GETBUTTONINFO](tbn-getbuttoninfo.md)
+-   [TBN \_ GETDISPINFO](tbn-getdispinfo.md)
+-   [TBN \_ GETINFOTIP](tbn-getinfotip.md)
+-   [TBN \_ GETOBJECT](tbn-getobject.md)
+-   [TBN \_ HOTITEMCHANGE](tbn-hotitemchange.md)
+-   [TBN \_ INITCUSTOMIZE](tbn-initcustomize.md)
+-   [TBN \_ MAPACCELERATOR](tbn-mapaccelerator.md)
+-   [TBN \_ QUERYDELETE](tbn-querydelete.md)
+-   [TBN \_ QUERYINSERT](tbn-queryinsert.md)
+-   [REIMPOSTAZIONE \_ TBN](tbn-reset.md)
+-   [RIPRISTINO \_ TBN](tbn-restore.md)
+-   [TBN \_ SAVE](tbn-save.md)
+-   [BARRA DEGLI \_ STRUMENTI TBNMODIFICA](tbn-toolbarchange.md)
+-   [TBN \_ WRAPACCELERATOR](tbn-wrapaccelerator.md)
+-   [TBN \_ WRAPHOTITEM](tbn-wraphotitem.md)
 
  
 

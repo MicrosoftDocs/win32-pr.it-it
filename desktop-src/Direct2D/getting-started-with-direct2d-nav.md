@@ -1,17 +1,17 @@
 ---
-title: Introduzione con Direct2D
+title: Attività iniziali con Direct2D
 description: Negli argomenti di questa sezione viene descritto come iniziare a creare applicazioni Direct2D e fornire codice di esempio.
 ms.assetid: 48aae6dd-0f23-43ab-9deb-e6f42c57be4a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6668740bec15f032768fbba61042ec159c063940
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7fa5ffd1ffa734a3d0aa5dc41a83c2bbc6a51df7b8ae14468f761ea14562b757
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260121"
 ---
-# <a name="getting-started-with-direct2d"></a>Introduzione con Direct2D
+# <a name="getting-started-with-direct2d"></a>Attività iniziali con Direct2D
 
 Negli argomenti di questa sezione viene descritto come iniziare a creare applicazioni Direct2D e fornire codice di esempio.
 
@@ -21,8 +21,8 @@ Negli argomenti di questa sezione viene descritto come iniziare a creare applica
 
 | Argomento                                                                        | Descrizione                                                                                  |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Avvio rapido di Direct2D](getting-started-with-direct2d.md)<br/>          | Vengono riepilogati i passaggi necessari per creare con Direct2D e viene fornito codice di esempio.<br/>    |
-| [Creazione di un'applicazione Direct2D semplice](direct2d-quickstart.md)<br/> | Viene illustrato il processo di creazione di una finestra che esegue il rendering del contenuto Direct2D.<br/> |
+| [Guida introduttiva a Direct2D](getting-started-with-direct2d.md)<br/>          | Riepiloga i passaggi necessari per disegnare con Direct2D e fornisce codice di esempio.<br/>    |
+| [Creazione di una semplice applicazione Direct2D](direct2d-quickstart.md)<br/> | Illustra il processo di creazione di una finestra che esegue il rendering del contenuto Direct2D.<br/> |
 
 
 

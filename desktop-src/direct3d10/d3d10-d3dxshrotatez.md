@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 55e4663057bd25ac9768a5913963a5511b662f11
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2ea15bf7bbcbea68fabf592ec8bad409990038d03fb1f4014f760b92d124408b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990021"
 ---
 # <a name="d3dxshrotatez-function-d3dx10h"></a>Funzione D3DXSHRotateZ (D3DX10.h)
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l I + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

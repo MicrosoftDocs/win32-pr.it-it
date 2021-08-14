@@ -1,7 +1,7 @@
 ---
-description: Contiene l'oggetto ShellLinkObject dell'elemento, se l'elemento è un tasto di scelta rapida.
+description: Contiene l'oggetto ShellLinkObject dell'elemento, se l'elemento è un collegamento.
 ms.assetid: 6444476a-a065-4f69-9330-584e30dbe30d
-title: Proprietà FolderItem. GetLink (shldisp. h)
+title: Proprietà FolderItem.GetLink (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d12c0fbd296610174c8b8363602288f59fcb9714
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f4eaf3019ad46599fe572cdc403738d281f97eecd0b09752cdcc35335abb856
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224065"
 ---
-# <a name="folderitemgetlink-property"></a>Proprietà FolderItem. GetLink
+# <a name="folderitemgetlink-property"></a>FolderItem.GetLink - proprietà
 
-Contiene l'oggetto [**ShellLinkObject**](shelllinkobject-object.md) dell'elemento, se l'elemento è un tasto di scelta rapida.
+Contiene l'oggetto [**ShellLinkObject dell'elemento,**](shelllinkobject-object.md) se l'elemento è un collegamento.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ objGetLink = FolderItem.GetLink
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che riceve l'oggetto [**ShellLinkObject**](shelllinkobject-object.md) .
+Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che riceve [**l'oggetto ShellLinkObject.**](shelllinkobject-object.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **GetLink** per recuperare l'oggetto [**ShellLinkObject**](shelllinkobject-object.md) per un collegamento a Internet Explorer. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente usa **GetLink** per recuperare [**l'oggetto ShellLinkObject**](shelllinkobject-object.md) per un collegamento Internet Explorer. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -77,7 +77,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -163,11 +163,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

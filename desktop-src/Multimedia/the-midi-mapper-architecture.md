@@ -3,41 +3,41 @@ title: Architettura del mapper MIDI
 description: Architettura del mapper MIDI
 ms.assetid: d08d1442-bf9f-46bb-bd44-f512ff4b6bd5
 keywords:
-- MIDI (Musical Instrument Digital Interface), Mapper MIDI
-- MIDI (Musical Instrument Digital Interface), MIDI Mapper
-- Mapper MIDI, architettura
-- Mapper MIDI, mappa di installazione
-- Mappa di installazione MIDI
-- Mapper MIDI, mappa canali
-- Mapper MIDI, mappe patch
-- Mapper MIDI, mappe chiave
-- Mappa canali
+- Instrument Digital Interface (MIDI), MIDI Mapper
+- MIDI (Instrument Digital Interface), MIDI Mapper
+- MIDI Mapper, architettura
+- MIDI Mapper, mappa di configurazione
+- Mappa di configurazione MIDI
+- MIDI Mapper, mappa dei canali
+- MIDI Mapper, mappe patch
+- MIDI Mapper, mappe delle chiavi
+- channel map
 - Mappe patch
-- Mappe chiave
+- mappe delle chiavi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba337b05fcff1bd0bb0e948e36e7d290eacb9604
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a20e73c9a361487468870698d3c36d59ef35bb6a28da1b03957dd24f1d7b7dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136404"
 ---
 # <a name="the-midi-mapper-architecture"></a>Architettura del mapper MIDI
 
-Il mapper MIDI usa una mappa di installazione MIDI per determinare come tradurre e reindirizzare i messaggi ricevuti. Una mappa di installazione MIDI è costituita dai tipi di mappe seguenti.
+MidI Mapper usa una mappa di configurazione MIDI per determinare come tradurre e reindirizzare i messaggi ricevuti. Una mappa di configurazione MIDI è costituita dai tipi di mappe seguenti.
 
--   [Mappa del canale](the-channel-map.md)
--   [Mappe patch](patch-maps.md)
--   [Mappe chiave](key-maps.md)
+-   [Mappa dei canali](the-channel-map.md)
+-   [Applicazione di patch Mappe](patch-maps.md)
+-   [Chiave Mappe](key-maps.md)
 
-Nella figura seguente sono illustrati i ruoli di canale, patch e mappe chiave in una mappa di installazione MIDI.
+La figura seguente mostra i ruoli delle mappe canale, patch e chiave in una mappa di configurazione MIDI.
 
-![ruoli del canale, della patch e delle mappe delle chiavi in un'immagine della mappa di installazione MIDI](images/mmap-a02.gif)
+![ruoli delle mappe canale, patch e chiave in un'immagine della mappa di configurazione midi](images/mmap-a02.gif)
 
- 
+ 
 
- 
+ 
 
 
 

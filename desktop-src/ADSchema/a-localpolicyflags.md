@@ -1,10 +1,10 @@
 ---
 title: Attributo Local-Policy-Flags
-description: Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Policy-Reference.
+description: Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
 ms.assetid: 1f2fa723-507a-4e27-a325-8bd6f6cb6bd6
 ms.tgt_platform: multiple
 keywords:
-- Local-Policy-Flags attributo AD schema
+- Schema AD dell'attributo Local-Policy-Flags
 - Schema AD dell'attributo localPolicyFlags
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc077fe793a523b41974280ada7e54b82335d733
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b03901c7caeec4107a00ac8f3ba4f18af8f281ce152612a62a82de61812262bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301851"
 ---
 # <a name="local-policy-flags-attribute"></a>Attributo Local-Policy-Flags
 
-Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Policy-Reference.
+Flag che determinano dove un computer ottiene i criteri. Local-Policy-Reference.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Local-Policy-Flags                   |
-| LDAP-Display-Name | localPolicyFlags                     |
+| CN                | Flag di criteri locali                   |
+| Ldap-Display-Name | localPolicyFlags                     |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.56                |
-| System-ID-GUID    | bf96799e-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf96799e-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Flag che determinano la posizione in cui un computer ottiene i criteri. Local-Po
 | ID collegamento                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| È a valore singolo       | Vero                                      |
+| Is-Single-Valued       | Vero                                      |
 | Indicizzato             | Falso                                     |
 | Nel catalogo globale      | Falso                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000010                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: aaa7bde759b9023b69204d6cb39259f0905b9928
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 771b8d20fd24a3f22ebf856a4d76dfb6c504bcb50995f9ade76282d2ff6425ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989931"
 ---
 # <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Funzione D3DXVec2Normalize (D3DX10Math.h)
 
@@ -46,7 +46,7 @@ D3DXVECTOR2* D3DXVec2Normalize(
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Puntatore a [**D3DXVECTOR2**](d3d10-d3dxvector2.md) che rappresenta il risultato dell'operazione.
+Puntatore [**all'oggetto D3DXVECTOR2**](d3d10-d3dxvector2.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 

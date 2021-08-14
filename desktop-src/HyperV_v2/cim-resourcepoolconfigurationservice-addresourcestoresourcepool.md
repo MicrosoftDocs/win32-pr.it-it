@@ -1,5 +1,5 @@
 ---
-description: Avvia un processo per l'aggiunta di risorse a un pool di risorse.
+description: Avvia un processo per aggiungere risorse a un pool di risorse.
 ms.assetid: b163619a-19bd-43d7-ba35-ec4bd8192100
 title: Metodo AddResourcesToResourcePool della classe CIM_ResourcePoolConfigurationService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d3aed59267bd064e95b62431064fbd54bb9168aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55191f3ddce5672d1b76987b8a7c2ce1f87b9cca330a7ba14aa4ae10bacc5b67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980931"
 ---
-# <a name="addresourcestoresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo AddResourcesToResourcePool della classe CIM \_ ResourcePoolConfigurationService
+# <a name="addresourcestoresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Metodo AddResourcesToResourcePool della classe \_ CIM ResourcePoolConfigurationService
 
-Avvia un processo per l'aggiunta di risorse a un pool di risorse.
+Avvia un processo per aggiungere risorse a un pool di risorse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ uint32 AddResourcesToResourcePool(
 
 <dl> <dt>
 
-*HostResources* \[ in\]
+*HostResources* \[ Pollici\]
 </dt> <dd>
 
-Matrice di istanze [**CIM \_ LogicalDevice**](cim-logicaldevice.md) da aggiungere al pool.
+Matrice di [**istanze \_ di CIM LogicalDevice**](cim-logicaldevice.md) da aggiungere al pool.
 
 </dd> <dt>
 
-*Pool* \[ di in\]
+*Pool* \[ Pollici\]
 </dt> <dd>
 
-Un [**\_ ResourcePool CIM**](cim-resourcepool.md) che rappresenta il pool al quale aggiungere le risorse.
+Pool [**di risorse CIM \_**](cim-resourcepool.md) che rappresenta il pool a cui aggiungere le risorse.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
-Un [**\_ ConcreteJob CIM**](cim-concretejob.md) che fa riferimento al processo (può essere **null** se il processo è stato completato).
+[**Cim \_ ConcreteJob che**](cim-concretejob.md) fa riferimento al processo (può essere **Null** se il processo è stato completato).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **Timeout** (3)
 </dt> <dt>
 
-**Non riuscito** (4)
+**Operazione non** riuscita (4)
 </dt> <dt>
 
 **Parametro non valido** (5)
@@ -89,22 +89,22 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 **In uso** (6)
 </dt> <dt>
 
-**ResourceType errato per il pool** (7)
+**ResourceType non corretto per il pool** (7)
 </dt> <dt>
 
 **DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Dimensioni non supportate** (4097)
 </dt> <dt>
 
-**Metodo riservato** (4098.. 32767)
+**Metodo riservato** (4098..32767)
 </dt> <dt>
 
-**Specifico del fornitore** (32768.. 65535)
+**Specifico del** fornitore (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisiti
@@ -114,9 +114,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -125,7 +125,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

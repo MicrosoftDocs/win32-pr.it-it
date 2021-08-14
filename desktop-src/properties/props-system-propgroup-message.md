@@ -1,19 +1,19 @@
 ---
-description: Informazioni sulla proprietà System.PropGroup.Message. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
+description: Informazioni sulla proprietà System.PropGroup.Message. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
 ms.assetid: bbb475f3-f5da-42f1-be8f-396c5be86417
 title: System.PropGroup.Message
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 603a0e85c54d736a086585d932638ec908a0f566
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7911153a0b6082ff447efefab8098e5dd298e67395a8f424033e5323501ae7ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228111"
 ---
 # <a name="systempropgroupmessage"></a>System.PropGroup.Message
 
-Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
+Separatore di gruppi di proprietà usato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

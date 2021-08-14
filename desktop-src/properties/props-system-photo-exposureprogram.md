@@ -1,19 +1,19 @@
 ---
-description: Modalità del programma di esposizione della fotocamera nel momento in cui è stata eseguita la foto, come letto dalle informazioni sul file di immagine scambiabile (EXIF).
+description: Modalità programma di esposizione della fotocamera al momento della foto, come letto dalle informazioni del file di immagine scambiabile (EXIF).
 ms.assetid: d27003b4-f30a-4c48-b32f-933b2f29182a
-title: System. Photo. ExposureProgram
+title: System.Photo.ExposureProgram
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e0678f4316cf5aee9c5e13b26518208bf546c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1c7c537255c235082402c71d784ab75b20202a085228c8631b68bc77ddd0a5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229976"
 ---
-# <a name="systemphotoexposureprogram"></a>System. Photo. ExposureProgram
+# <a name="systemphotoexposureprogram"></a>System.Photo.ExposureProgram
 
-Modalità del programma di esposizione della fotocamera nel momento in cui è stata eseguita la foto, come letto dalle informazioni sul file di immagine scambiabile (EXIF).
+Modalità programma di esposizione della fotocamera al momento della foto, come letto dalle informazioni del file di immagine scambiabile (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -132,13 +132,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Exchangeable Image File Format per fotocamere digitali ancora: EXIF versione 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -150,13 +150,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -165,7 +165,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

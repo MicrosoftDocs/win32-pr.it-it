@@ -1,19 +1,19 @@
 ---
-description: Gli alias dei gruppi di colonne consentono di utilizzare nomi più brevi al posto del nome di una colonna o di un gruppo di colonne. Il predicato alias del gruppo facoltativo fa parte della clausola WHERE.
+description: Gli alias dei gruppi di colonne consentono di utilizzare nomi più brevi al posto del nome di una colonna o di un gruppo di colonne. Il predicato dell'alias di gruppo facoltativo fa parte della clausola WHERE.
 ms.assetid: 7782ac24-ea6c-4a97-b1b6-982f276fcefc
-title: CON il predicato alias gruppo AS
+title: WITH -- Predicato alias del gruppo AS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29218e11fbffe5f47128eeefba3a7fe847a5b21d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ed77072c83d1c28dcc3ec63396b46a21a57c4a97d9c6dcd70259bd861d19762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226734"
 ---
-# <a name="with----as-group-alias-predicate"></a>CON il predicato alias gruppo AS
+# <a name="with----as-group-alias-predicate"></a>WITH -- Predicato alias del gruppo AS
 
-Gli alias dei gruppi di colonne consentono di utilizzare nomi più brevi al posto del nome di una colonna o di un gruppo di colonne. Il predicato alias del gruppo facoltativo fa parte della clausola WHERE. La sintassi è la seguente:
+Gli alias dei gruppi di colonne consentono di utilizzare nomi più brevi al posto del nome di una colonna o di un gruppo di colonne. Il predicato dell'alias di gruppo facoltativo fa parte della clausola WHERE. La sintassi è la seguente:
 
 
 ```
@@ -23,13 +23,13 @@ Gli alias dei gruppi di colonne consentono di utilizzare nomi più brevi al post
 
 
 
-È possibile specificare più di un alias di gruppo, separando con... COME predicati per virgole.
+È possibile specificare più alias di gruppo, separando with... Predicati AS con virgole.
 
-Quando si fa riferimento a un alias di gruppo in un predicato della clausola WHERE, la condizione viene applicata a ogni colonna del gruppo. I valori logici risultanti dalla corrispondenza di ogni colonna vengono combinati utilizzando l'operatore logico **or** .
+Quando si fa riferimento a un alias di gruppo in un predicato della clausola WHERE, la condizione viene applicata a ogni colonna del gruppo. I valori logici risultanti dalla corrispondenza di ogni colonna vengono combinati usando l'operatore **LOGICO OR.**
 
-È necessario definire un alias per poterlo utilizzare e utilizzarlo solo all'interno della clausola WHERE. Il nome dell'alias deve essere un identificatore regolare preceduto da un simbolo di cancelletto obbligatorio ( \# ).
+Un alias deve essere definito prima di poter essere usato e può essere usato solo all'interno della clausola WHERE. Il nome dell'alias deve essere un identificatore regolare preceduto da un simbolo di cancelletto ( \# ).
 
-L'identificatore di colonna può contenere uno o più identificatori di colonna separati da virgole. L'elenco di colonne deve essere racchiuso tra parentesi e la ponderazione può essere assegnata a ciascuna. Ogni colonna presenta la sintassi seguente:
+L'identificatore di colonna può contenere uno o più identificatori di colonna, separati da virgole. L'elenco di colonne deve essere racchiuso tra parentesi ed è possibile assegnare la ponderazione a ognuna. Ogni colonna ha la sintassi seguente:
 
 
 ```
@@ -38,13 +38,13 @@ L'identificatore di colonna può contenere uno o più identificatori di colonna 
 
 
 
-Per informazioni su come specificare i pesi delle colonne, vedere [predicato FREETEXT](-search-sql-freetext.md) e [predicato CONTAINS](-search-sql-contains.md).
+Per informazioni sulla specifica dei pesi delle colonne, vedere [Predicato FREETEXT](-search-sql-freetext.md) e [Predicato CONTAINS.](-search-sql-contains.md)
 
 L'identificatore di colonna può essere regolare o delimitato.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi di clausole WHERE seguenti viene illustrato quando e come è possibile utilizzare il predicato alias di gruppo. Nel primo esempio viene illustrata una clausola WHERE più ripetitiva che non utilizza l'aliasing del gruppo.
+Gli esempi di clausola WHERE seguenti illustrano quando e come è possibile usare il predicato alias di gruppo. Nel primo esempio viene illustrata una clausola WHERE più ripetitiva che non usa l'aliasing di gruppo.
 
 
 ```
@@ -70,7 +70,7 @@ L'esempio precedente può essere semplificato usando un alias di gruppo, come il
 
 
 
-Di seguito è riportato un esempio di ponderazione positiva, in cui la proprietà **title** viene assegnata più peso alla determinazione della classificazione relativa.
+Di seguito è riportato un esempio di ponderazione positiva in cui alla **proprietà Title** viene assegnato un peso maggiore per determinare la classificazione relativa.
 
 
 ```
@@ -83,7 +83,7 @@ Di seguito è riportato un esempio di ponderazione positiva, in cui la propriet�
 
 
 
-Di seguito è riportato un esempio di ponderazione negativa in cui la proprietà **title** con peso 0 non viene considerata.
+Di seguito è riportato un esempio di ponderazione negativa in cui la **proprietà Title** con peso 0 non viene considerata.
 
 
 ```

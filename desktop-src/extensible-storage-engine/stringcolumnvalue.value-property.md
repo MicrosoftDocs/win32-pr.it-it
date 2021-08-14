@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà StringColumnValue. Value'
-title: Proprietà StringColumnValue. Value
+description: Altre informazioni sulla proprietà StringColumnValue.Value
+title: StringColumnValue.Value - proprietà
 TOCTitle: 'Value property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.StringColumnValue.Value
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.stringcolumnvalue.value(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b1f5dc65f41e1714858c75bed2c22e23680b60cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfc3167cc62faa2b7c25a670bc8ad1bc7cc31795a62361e36025c09f53ffbac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485383"
 ---
-# <a name="stringcolumnvaluevalue-property"></a>Proprietà StringColumnValue. Value
+# <a name="stringcolumnvaluevalue-property"></a>StringColumnValue.Value - proprietà
 
-Ottiene o imposta il valore della colonna. Utilizzare le [colonne (JET_SESID, JET_TABLEID, \[ \] )](./api.setcolumns-method.md) per aggiornare un record con il valore della colonna.
+Ottiene o imposta il valore della colonna. Usare [SetColumns(JET_SESID, JET_TABLEID, \[ \] )](./api.setcolumns-method.md) per aggiornare un record con il valore della colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public string Value { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -72,4 +72,4 @@ Tipo: [System. String](/dotnet/api/system.string)
 
 [Membri di StringColumnValue](./stringcolumnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

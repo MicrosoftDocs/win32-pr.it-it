@@ -1,39 +1,39 @@
 ---
-title: Creazione del controllo Media Player Windows a livello di codice
-description: Creazione del controllo Media Player Windows a livello di codice
+title: Creazione del controllo Windows Media Player a livello di codice
+description: Creazione del controllo Windows Media Player a livello di codice
 ms.assetid: 9a4856ce-6a44-47fb-b863-59ce4deb0597
 keywords:
-- Windows Media Player, creazione di un controllo ActiveX a livello di codice
-- Modello a oggetti di Windows Media Player, creazione di controlli ActiveX a livello di codice
-- modello a oggetti, creazione di un controllo ActiveX a livello di codice
-- Windows Media Player Mobile, creazione di un controllo ActiveX a livello di codice
-- Controllo ActiveX di Windows Media Player, creazione a livello di codice
-- Controllo ActiveX Windows Media Player Mobile, creazione a livello di codice
-- Controllo ActiveX, creazione a livello di codice
-- creazione di un controllo ActiveX a livello di codice
+- Windows Media Player,creazione di un ActiveX a livello di codice
+- Windows Media Player a oggetti, creazione di un ActiveX a livello di codice
+- modello a oggetti, creazione di ActiveX a livello di codice
+- Windows Media Player Dispositivi mobili, creazione di ActiveX a livello di codice
+- Windows Media Player ActiveX, creazione a livello di codice
+- Windows Media Player controllo ActiveX mobile, creazione a livello di codice
+- ActiveX, creazione a livello di codice
+- creazione di ActiveX a livello di codice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 222c207b33dcc13a5392f79dad267d6ee82a677c
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 6f57b3f4ba9d8c297aee9feb14fc05a35306e1a85d8a718aef6721b92475e19c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "104332871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340964"
 ---
-# <a name="creating-the-windows-media-player-control-programmatically"></a>Creazione del controllo Media Player Windows a livello di codice
+# <a name="creating-the-windows-media-player-control-programmatically"></a>Creazione del controllo Windows Media Player a livello di codice
 
-Quando si aggiunge il controllo Media Player Windows a un form dalla casella degli strumenti, viene creato un oggetto della classe **AxWMPLib. AxWindowsMediaPlayer** . Questa classe wrapper fornisce al lettore tutte le funzionalità di un controllo ActiveX, incluso l'accesso alle proprietà dell'interfaccia utente, ad esempio la **posizione** e le **dimensioni**.
+Quando si aggiunge il Windows Media Player a un form dalla casella degli strumenti, viene creato un oggetto della classe **AxWMPLib.AxWindowsMediaPlayer.** Questa classe wrapper fornisce al lettore tutte le funzionalità di un controllo ActiveX, incluso l'accesso alle proprietà dell'interfaccia utente, ad esempio **Location** e **Size.**
 
-Se non sono necessarie le proprietà esposte da **AxWindowsMediaPlayer** o se l'applicazione non dispone di un'interfaccia utente grafica, è possibile creare un controllo lettore a livello di codice. In questo caso, si crea un oggetto della classe **wmplib. WindowsMediaPlayer** .
+Se non sono necessarie le proprietà esposte da **AxWindowsMediaPlayer** o se l'applicazione non ha un'interfaccia utente grafica, è possibile creare un controllo Player a livello di codice. In questo caso, si crea un oggetto della **classe WMPLib.WindowsMediaPlayer.**
 
 > [!Note]  
-> Poiché l'oggetto **windowsmediaplayer** non viene incapsulato come controllo ActiveX, non dispone di alcuna proprietà ereditata da **System. Windows. Forms. Control**. Di conseguenza, la proprietà **Controls** non viene rinominata in **CtlControls**, così come si trova in **AxWindowsMediaPlayer**.
+> Poiché non viene eseguito il wrapping dell'oggetto **WindowsMediaPlayer** come controllo ActiveX, non ha proprietà ereditate da **System.Windows. Forms.Control**. Di conseguenza, la **proprietà Controls** non viene rinominata **in CtlControls,** come in **AxWindowsMediaPlayer.**
 
- 
+ 
 
-Per creare il controllo Media Player di Windows a livello di codice, è innanzitutto necessario aggiungere un riferimento a wmp.dll, disponibile nella \\ \\ cartella system32 di Windows. L'aggiunta di questo riferimento crea WMPLib.dll nella cartella del progetto e viene visualizzato un riferimento a WMPLib in Esplora soluzioni.
+Per creare il Windows Media Player a livello di codice, è necessario innanzitutto aggiungere un riferimento a wmp.dll, disponibile nella \\ cartella Windows \\ system32. L'aggiunta di questo riferimento WMPLib.dll nella cartella del progetto e un riferimento a WMPLib viene visualizzato in Esplora soluzioni.
 
-Il codice di esempio seguente, parte di una classe Form1, Mostra come creare un oggetto **Player** e riprodurre un file. Al termine della riproduzione o se il file non può essere riprodotto, il form viene chiuso.
+Il codice di esempio seguente, parte di una classe Form1, illustra come creare un oggetto **Player** e riprodurre un file. Al termine della riproduzione o se non è possibile riprodurre il file, il modulo viene chiuso.
 
 
 ```VB
@@ -112,12 +112,12 @@ private void Player_MediaError(object pMediaObject)
 
 <dl> <dt>
 
-[**Incorporamento del controllo Media Player Windows in una soluzione .NET Framework**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
+[**Incorporamento del controllo Windows Media Player in una .NET Framework soluzione**](using-the-windows-media-player-control-in-a--net-framework-solution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

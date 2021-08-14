@@ -1,7 +1,7 @@
 ---
-description: Il metodo Connect connette l'oggetto NPP alla rete utilizzando una scheda di interfaccia di rete specificata e fornisce le informazioni di configurazione relative alla connessione.
+description: Il Connessione connette il NPP alla rete usando una scheda di interfaccia di rete specificata e fornisce informazioni di configurazione sulla connessione.
 ms.assetid: 48189b2b-9889-4bd8-8972-26005fb7c341
-title: 'Metodo IESP:: Connect (Netmon. h)'
+title: Metodo IESP::Connessione (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 4fc9c88b0eb4671c61f268c5857dceba3dc500f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2095f25128e524b32b8ad8561ee85119537c32be5e61f77d5c72637396a2183
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365609"
 ---
-# <a name="iespconnect-method"></a>Metodo IESP:: Connect
+# <a name="iespconnect-method"></a>Metodo IESP::Connessione
 
-Il metodo **Connect** connette l'oggetto NPP alla rete utilizzando una scheda di interfaccia di rete specificata e fornisce le informazioni di configurazione relative alla connessione.
+Il **Connessione** connette il NPP alla rete usando una scheda di interfaccia di rete specificata e fornisce informazioni di configurazione sulla connessione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT STDMETHODCALLTYPE Connect(
 
 <dl> <dt>
 
-*hInputBlob* \[ in\]
+*hInputBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per il BLOB che specifica la scheda di interfaccia di rete a cui si connette l'oggetto NPP e le informazioni di configurazione per tale connessione.
+Handle al BLOB che specifica la scheda di interfaccia di rete a cui si connette il NPP e le informazioni di configurazione per tale connessione.
 
 </dd> <dt>
 
-*StatusCallbackProc* \[ in\]
+*StatusCallbackProc* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo della funzione di callback dell'utente, che riceve gli aggiornamenti di stato, ad esempio i trigger. Se non viene utilizzata una funzione di callback, impostare questo parametro e il parametro *userContext* su **null**.
+Indirizzo della funzione di callback dell'utente, che riceve gli aggiornamenti dello stato, ad esempio i trigger. Se non viene usata una funzione di callback, impostare questo parametro e il *parametro UserContext* su **NULL.**
 
 </dd> <dt>
 
-*UserContext* \[ in\]
+*Oggetto UserContext* \[ Pollici\]
 </dt> <dd>
 
-Valore passato quando viene chiamata la funzione di callback dell'utente. Il valore di questo parametro è in genere HWND o un puntatore ' This '. Se non viene specificata una funzione di callback, impostare questo parametro e il parametro *StatusCallbackProc* su **null**.
+Valore passato quando viene chiamata la funzione di callback dell'utente. Il valore di questo parametro è in genere HWND o un puntatore 'this'. Se non viene specificata una funzione di callback, impostare questo parametro e *il parametro StatusCallbackProc* su **NULL.**
 
 </dd> <dt>
 
-*hErrorBlob* \[ out\]
+*hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errori che contiene informazioni aggiuntive sull'errore.
+Handle a un BLOB di errore che contiene informazioni aggiuntive sull'errore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, il valore restituito è NMERR \_ Success.
+Se il metodo ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
-Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti (che includono gli errori restituiti dalla chiamata interna **IESP:: Configure** ):
+Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore seguenti,che includono gli errori restituiti dalla chiamata **IESP::Configure** interna:
 
 
 
@@ -97,44 +97,44 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>Il BLOB di configurazione è danneggiato. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>Il BLOB di configurazione è danneggiato. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>Il BLOB di input specificato dal parametro <em>hInputBlob</em> non dispone di una voce necessaria per eseguire questa operazione. Questo errore potrebbe essere generato dalla chiamata <strong>IESP:: Connect</strong> o <strong>IESP:: Configure</strong> . Esaminare il BLOB di errore restituito da <em>hErrorBlob</em> per determinare quale voce non è stata trovata.<br/></td>
+<td>Nel BLOB di input specificato dal <em>parametro hInputBlob</em> manca una voce necessaria per eseguire questa operazione. Questo errore può essere generato dalla chiamata <strong>IESP::Connessione</strong> <strong>o IESP::Configure.</strong> Esaminare il BLOB di errore restituito <em>da hErrorBlob</em> per determinare quale voce non è stata trovata.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>La funzione <strong>CreateBlob</strong> non è stata chiamata. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>La <strong>funzione CreateBlob</strong> non è stata chiamata. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>La stringa non termina con null. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>La stringa non ha terminazione Null. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>La parte del trigger del BLOB di input è danneggiata. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>La parte trigger del BLOB di input è danneggiata. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>L'oggetto specificato in <em>hInputBlob</em> non è un BLOB. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>L'oggetto specificato in <em>hInputBlob</em> non è un BLOB. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>La directory di acquisizione predefinita non è stata impostata nel registro di sistema. Usare il percorso seguente per impostare la directory di acquisizione. <br/>
+<td>La directory di acquisizione predefinita non è stata impostata nel Registro di sistema. Usare il percorso seguente per impostare la directory di acquisizione. <br/>
 <pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>La memoria necessaria per eseguire questa operazione non è disponibile. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>La memoria necessaria per eseguire questa operazione non è disponibile. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>Timeout della richiesta. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>Timeout della richiesta. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>Il numero di versione del BLOB specificato in <em>hInputBlob</em> non è corretto. Questo errore viene generato dalla chiamata <strong>IESP:: Configure</strong> .<br/></td>
+<td>Il numero di versione del BLOB specificato in <em>hInputBlob</em> non è corretto. Questo errore viene generato dalla <strong>chiamata IESP::Configure.</strong><br/></td>
 </tr>
 </tbody>
 </table>
@@ -145,13 +145,13 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene chiamato il metodo **Connect** , Network Monitor chiama automaticamente **IESP:: Configure** usando il BLOB fornito dal parametro *hInputBlob* . Si noti che tutti i codici di errore restituiti dalla chiamata a **IESP:: Configure** vengono passati nuovamente e restituiti dalla chiamata **IESP:: Connect** .
+Quando viene **Connessione** metodo , Network Monitor chiama **automaticamente IESP::Configure** usando il BLOB fornito dal *parametro hInputBlob.* Si noti che tutti i codici di errore restituiti dalla chiamata a **IESP::Configure** vengono restituiti dalla chiamata **di IESP::Connessione.**
 
-Questo metodo deve essere chiamato prima che sia possibile avviare l'acquisizione di frame. Si noti che quando ci si connette alla rete usando questo metodo, è necessario continuare a usare l'interfaccia **IESP** per acquisire i frame.
+Questo metodo deve essere chiamato prima di poter avviare l'acquisizione di frame. Si noti che quando ci si connette alla rete usando questo metodo, è necessario continuare a usare **l'interfaccia IESP** per acquisire i frame.
 
-Il BLOB di input specificato da *hInputBlob* può essere ottenuto chiamando **GetNPPBlobFromUI**, **GetNPPBlobTable** e **SelectNPPBlobFromTable**.
+Il BLOB di input specificato da *hInputBlob* può essere ottenuto chiamando **GetNPPBlobFromUI,** **GetNPPBlobTable** e **SelectNPPBlobFromTable.**
 
-Il BLOB di errore restituito da *hErrorBlob* contiene voci che Network Monitor non è stato in grado di comprendere o trovare nel BLOB di input specificato in *hInputBlob*. Il BLOB di errori restituito contiene informazioni sugli errori che possono essere utilizzate dall'applicazione per la risoluzione dei problemi. Se, ad esempio, \_ \_ \_ \_ \_ viene restituita la voce del BLOB NMERR non esiste, la voce che Network Monitor non è stata trovata è inclusa nel BLOB di errore restituito.
+Il BLOB di errore restituito da *hErrorBlob* contiene voci che Network Monitor non sono in grado di comprendere o trovare nel BLOB di input specificato in *hInputBlob*. Il BLOB dell'errore restituito contiene informazioni sull'errore che l'applicazione può usare per la risoluzione dei problemi. Ad esempio, se viene restituito NMERR BLOB ENTRY DOES NOT EXIST, la voce Network Monitor non è stata individuata viene inclusa nel \_ \_ BLOB di errore \_ \_ \_ restituito.
 
 
 
@@ -171,7 +171,7 @@ Il BLOB di errore restituito da *hErrorBlob* contiene voci che Network Monitor n
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
@@ -183,13 +183,13 @@ Il BLOB di errore restituito da *hErrorBlob* contiene voci che Network Monitor n
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: Configure](iesp-configure.md)
+[IESP::Configure](iesp-configure.md)
 </dt> <dt>
 
-[IESP::D la connessione](iesp-disconnect.md)
+[IESP::D isconnect](iesp-disconnect.md)
 </dt> <dt>
 
-[IESP:: Start](iesp-start.md)
+[IESP::Start](iesp-start.md)
 </dt> </dl>
 
  

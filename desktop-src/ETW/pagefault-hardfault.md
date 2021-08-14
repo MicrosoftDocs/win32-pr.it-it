@@ -1,7 +1,7 @@
 ---
-description: Questa classe è la classe del tipo di evento per gli eventi di errore di pagina hardware. La sintassi seguente è semplificata dal codice MOF.
+description: Questa classe è la classe del tipo di evento per gli eventi di errore di pagina hard. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 9837cc45-6485-46c3-a5d9-0d33e443cd32
-title: Classe PageFault_HardFault
+title: PageFault_HardFault classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 08afd3df20260a8ede63f4d741b3045ce3a39c1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdabfab80eadc75fa05ffe148363a85cb5ddefad9abb626cfa4e1c3fa6fe2a37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394614"
 ---
-# <a name="pagefault_hardfault-class"></a>\_Classe pagefault HardFault
+# <a name="pagefault_hardfault-class"></a>Classe PageFault \_ HardFault
 
-Questa classe è la classe del tipo di evento per gli eventi di errore di pagina hardware.
+Questa classe è la classe del tipo di evento per gli eventi di errore di pagina hard.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -48,26 +48,26 @@ class PageFault_HardFault : PageFault_V2
 
 ## <a name="members"></a>Members
 
-La **classe \_ HardFault di pagefault** dispone di questi tipi di membri:
+La **classe PageFault \_ HardFault** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ HardFault di pagefault** dispone di queste proprietà.
+La **classe PageFault \_ HardFault** ha queste proprietà.
 
 <dl> <dt>
 
 **ByteCount**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6)
+Qualificatori: WmiDataId(6)
 </dt> </dl>
 
 Quantità di dati letti da ReadOffset per soddisfare l'errore.
@@ -77,61 +77,61 @@ Quantità di dati letti da ReadOffset per soddisfare l'errore.
 **FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4), puntatore
+Qualificatori: WmiDataId(4), Pointer
 </dt> </dl>
 
-Corrisponde al valore di questo puntatore al valore del puntatore **FileObject** in un evento del [**\_ nome**](fileio-name.md) di FileIO per determinare il nome del file.
+Trova la corrispondenza del valore di questo puntatore al valore del puntatore **FileObject** in un [**evento FileIo \_ Name**](fileio-name.md) per determinare il nome del file.
 
 </dd> <dt>
 
 **InitialTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Object**
+Tipo di dati: **object**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Extension ("WmiTime")
+Qualificatori: WmiDataId(1), Extension("WmiTime")
 </dt> </dl>
 
-Timestamp di inizio in cui si è verificato l'errore di pagina.
+Timestamp di inizio in corrispondenza del quale si è verificato l'errore di pagina.
 
 </dd> <dt>
 
 **ReadOffset**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2), Format ("x")
+Qualificatori: WmiDataId(2), Format("x")
 </dt> </dl>
 
-Offset del file da cui sono stati letti i dati per soddisfare l'errore.
+Offset di file da cui sono stati letti i dati per soddisfare l'errore.
 
 </dd> <dt>
 
 **TThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), Format ("x")
+Qualificatori: WmiDataId(5), Format("x")
 </dt> </dl>
 
 Identificatore del thread che ha rilevato l'errore di pagina.
@@ -141,13 +141,13 @@ Identificatore del thread che ha rilevato l'errore di pagina.
 **VirtualAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3), puntatore
+Qualificatori: WmiDataId(3), Pointer
 </dt> </dl>
 
 Indirizzo di errore.
@@ -160,8 +160,8 @@ Indirizzo di errore.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -169,7 +169,7 @@ Indirizzo di errore.
 
 <dl> <dt>
 
-[**PageFault \_ v2**](pagefault-v2.md)
+[**PageFault \_ V2**](pagefault-v2.md)
 </dt> </dl>
 
  

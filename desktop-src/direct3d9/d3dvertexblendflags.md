@@ -1,7 +1,7 @@
 ---
-description: Definisce i flag utilizzati per controllare il numero o le matrici applicate dal sistema quando si esegue la fusione dei vertici a più matrici.
+description: Definisce i flag usati per controllare il numero o le matrici applicate dal sistema durante l'esecuzione della fusione dei vertici multimatrix.
 ms.assetid: 5314f455-ce5f-4ff5-81fc-d3dffc8705b7
-title: Enumerazione D3DVERTEXBLENDFLAGS (D3D9Types. h)
+title: Enumerazione D3DVERTEXBLENDFLAGS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 0b4d22740a9ad06a9848dc7649d62ac06d37a056
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ecc7f99e26088ff03b626604279bffe5c64ddb82b95a6f6219b637b3fce5a59b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527305"
 ---
 # <a name="d3dvertexblendflags-enumeration"></a>Enumerazione D3DVERTEXBLENDFLAGS
 
-Definisce i flag utilizzati per controllare il numero o le matrici applicate dal sistema quando si esegue la fusione dei vertici a più matrici.
+Definisce i flag usati per controllare il numero o le matrici applicate dal sistema durante l'esecuzione della fusione dei vertici multimatrix.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,53 +44,53 @@ typedef enum D3DVERTEXBLENDFLAGS {
 
 <dl> <dt>
 
-<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**\_Disabilitazione D3DVBF**
+<span id="D3DVBF_DISABLE"></span><span id="d3dvbf_disable"></span>**D3DVBF \_ DISABLE**
 </dt> <dd>
 
-Disabilitare la fusione del vertice; applicare solo la matrice globale impostata dalla macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , in cui il valore di indice per lo stato della trasformazione è 0.
+Disabilitare la fusione dei vertici; applica solo la matrice globale impostata dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore di indice per lo stato della trasformazione è 0.
 
 </dd> <dt>
 
-<span id="D3DVBF_1WEIGHTS"></span><span id="d3dvbf_1weights"></span>**\_1WEIGHTS D3DVBF**
+<span id="D3DVBF_1WEIGHTS"></span><span id="d3dvbf_1weights"></span>**D3DVBF \_ 1WEIGHTS**
 </dt> <dd>
 
-Abilitare la fusione dei vertici tra le due matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , in cui il valore di indice per gli Stati di trasformazione è 0 e 1.
+Abilitare la fusione dei vertici tra le due matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore di indice per gli stati di trasformazione è 0 e 1.
 
 </dd> <dt>
 
-<span id="D3DVBF_2WEIGHTS"></span><span id="d3dvbf_2weights"></span>**\_2WEIGHTS D3DVBF**
+<span id="D3DVBF_2WEIGHTS"></span><span id="d3dvbf_2weights"></span>**D3DVBF \_ 2WEIGHTS**
 </dt> <dd>
 
-Abilitare la fusione dei vertici tra le tre matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , in cui il valore di indice per gli Stati di trasformazione è 0, 1 e 2.
+Abilitare la fusione dei vertici tra le tre matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore di indice per gli stati di trasformazione è 0, 1 e 2.
 
 </dd> <dt>
 
-<span id="D3DVBF_3WEIGHTS"></span><span id="d3dvbf_3weights"></span>**\_3WEIGHTS D3DVBF**
+<span id="D3DVBF_3WEIGHTS"></span><span id="d3dvbf_3weights"></span>**D3DVBF \_ 3WEIGHTS**
 </dt> <dd>
 
-Abilitare la fusione dei vertici tra le quattro matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) , in cui il valore di indice per gli Stati di trasformazione sono 0, 1, 2 e 3.
+Abilitare la fusione dei vertici tra le quattro matrici impostate dalla macro [**D3DTS \_ WORLDMATRIX,**](d3dts-worldmatrix.md) dove il valore di indice per gli stati di trasformazione è 0, 1, 2 e 3.
 
 </dd> <dt>
 
-<span id="D3DVBF_TWEENING"></span><span id="d3dvbf_tweening"></span>**\_Interpolazione D3DVBF**
+<span id="D3DVBF_TWEENING"></span><span id="d3dvbf_tweening"></span>**D3DVBF \_ TWEENING**
 </dt> <dd>
 
 La fusione dei vertici viene eseguita usando il valore assegnato a D3DRS \_ TWEENFACTOR.
 
 </dd> <dt>
 
-<span id="D3DVBF_0WEIGHTS"></span><span id="d3dvbf_0weights"></span>**\_0WEIGHTS D3DVBF**
+<span id="D3DVBF_0WEIGHTS"></span><span id="d3dvbf_0weights"></span>**D3DVBF \_ 0WEIGHTS**
 </dt> <dd>
 
-Usare una singola matrice con un peso pari a 1,0.
+Usare una singola matrice con un peso di 1,0.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I membri di questo tipo vengono utilizzati con lo \_ stato di rendering VERTEXBLEND di D3DRS.
+I membri di questo tipo vengono usati con lo stato di rendering \_ VERTEXBLEND D3DRS.
 
-La combinazione di geometria (combinazione di vertici multimatrice) richiede che l'applicazione usi un formato di vertice con pesi di fusione (beta) per ogni vertice.
+La fusione geometrica (fusione di vertici multimatrix) richiede che l'applicazione usi un formato vertice con pesi di fusione (beta) per ogni vertice.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,7 +98,7 @@ La combinazione di geometria (combinazione di vertici multimatrice) richiede che
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -112,13 +112,13 @@ La combinazione di geometria (combinazione di vertici multimatrice) richiede che
 [**D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
 </dt> <dt>
 
-[**\_Mondo D3DTS**](d3dts-world.md)
+[**MONDO D3DTS \_**](d3dts-world.md)
 </dt> <dt>
 
-[**D3DTS \_ mondo**](d3dts-worldn.md)
+[**D3DTS \_ WORLDn**](d3dts-worldn.md)
 </dt> <dt>
 
-[**\_WORLDMATRIX D3DTS**](d3dts-worldmatrix.md)
+[**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md)
 </dt> </dl>
 
  

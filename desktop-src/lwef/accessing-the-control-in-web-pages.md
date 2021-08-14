@@ -4,22 +4,22 @@ description: Accesso al controllo nelle pagine Web
 ms.assetid: 0c799c60-c81a-44ea-a9e0-1a385208528f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a965d73f7277b2b4a62c08a949782488f1e4dba4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc3766475dc798f8f61e98b818fc8e71205bbc72c34f2282098f00b5f03ed3ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118480737"
 ---
 # <a name="accessing-the-control-in-web-pages"></a>Accesso al controllo nelle pagine Web
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Per accedere ai servizi di Microsoft Agent da una pagina Web, usare il <OBJECT> tag HTML nel <HEAD> oppure <BODY> elemento della pagina, che specifica il CLSID Microsoft (identificatore di classe) per il controllo. Usare inoltre un parametro codebase per specificare il percorso del file di installazione dell'agente Microsoft e il relativo numero di versione.
+Per accedere ai servizi di Microsoft Agent da una pagina Web, usare il tag HTML <OBJECT> all'interno di <HEAD> oppure <BODY> elemento della pagina, che specifica il CLSID Microsoft (identificatore di classe) per il controllo. Usare inoltre un parametro CODEBASE per specificare il percorso del file di installazione di Microsoft Agent e il relativo numero di versione.
 
-Se nel sistema è installato Microsoft Internet Explorer (versione 3,02 o successiva), ma Microsoft Agent non è ancora installato e l'utente accede a una pagina <OBJECT> Web con il tag con l'agente CLSID, il browser tenterà automaticamente di scaricare l'agente dal sito Web Microsoft. A questo punto, all'utente verrà chiesto se procedere con l'installazione. Per gli altri browser, rivolgersi al fornitore per informazioni relative al supporto o al supporto di terze parti per i controlli ActiveX.
+Se Microsoft Internet Explorer (versione 3.02 o successiva) è installato nel sistema, ma Microsoft Agent non è ancora installato e l'utente accede a una pagina Web con il tag con il CLSID di Agent, il browser tenterà automaticamente di scaricare Agent dal sito <OBJECT> Web Microsoft. All'utente verrà quindi chiesto se procedere con l'installazione. Per altri browser, contattare il fornitore per informazioni relative al supporto o al supporto di terze parti per ActiveX controllo.
 
-Nell'esempio seguente viene illustrato come utilizzare il parametro codebase per scaricare il download della versione in lingua inglese 2,0 di Microsoft Agent.
+L'esempio seguente illustra come usare il parametro CODEBASE per scaricare automaticamente la versione in lingua inglese 2.0 di Microsoft Agent.
 
 ``` syntax
 <OBJECT
@@ -30,7 +30,7 @@ CODEBASE = "#VERSION=2,0,0,0"
 </OBJECT>
 ```
 
-Agent può anche essere installato dal server HTTP o come parte del processo di installazione di un'applicazione. Per supportare l'installazione dal server HTTP, è necessario pubblicare il file CAB di installazione automatica di Microsoft Agent. File exe e specificare il relativo URL nel tag codebase.
+Agent può anche essere installato dal server HTTP o come parte del processo di installazione di un'applicazione. Per supportare l'installazione dal proprio server HTTP, è necessario inviare il file CAB autoinstallato di Microsoft Agent .Exe e specificarne l'URL nel tag CODEBASE.
 
 ``` syntax
 <OBJECT
@@ -41,7 +41,7 @@ CODEBASE = "https://your server/msagent.exe#VERSION=2,0,0,0"
 </OBJECT>
 ```
 
-Per supportare il download automatico di un componente della lingua di Microsoft Agent da una pagina Web, includere il tag oggetto del componente della lingua nella pagina prima del tag Object del controllo agente:
+Per supportare il download automatico di un componente del linguaggio di Microsoft Agent da una pagina Web, includere il tag Object del componente della lingua nella pagina prima del tag Object del controllo di Agent:
 
 ``` syntax
 <OBJECT width=0 height=0
@@ -50,16 +50,16 @@ CODEBASE = "#VERSION=2,0,0,0">
 </OBJECT>
 ```
 
-dove XXXX viene sostituito con un ID di lingua. Per le lingue attualmente supportate, controllare il sito Web Microsoft Agent.
+dove XXXX viene sostituito con un ID lingua. Per le lingue attualmente supportate, vedere il sito Web Microsoft Agent.
 
--   Il <OBJECT> tag per un componente del linguaggio deve precedere il <OBJECT> tag per il componente principale di Microsoft Agent.
+-   Il <OBJECT> tag per un componente del linguaggio deve precedere il tag per il componente principale di Microsoft <OBJECT> Agent.
 -   È possibile installare più lingue nello stesso client.
--   Prima di impostare il [**LanguageID**](https://www.bing.com/search?q=**LanguageID**) di un carattere, è consigliabile che lo script verifichi che le impostazioni locali del browser, disponibili nella proprietà [**UserLanguage**](https://www.bing.com/search?q=**userLanguage**) , corrispondano alla lingua impostata.
+-   Prima di impostare [**languageID**](https://www.bing.com/search?q=**LanguageID**) di un carattere, è consigliabile che lo script verifichi che le impostazioni locali del browser, disponibili nella proprietà [**userLanguage,**](https://www.bing.com/search?q=**userLanguage**) corrispondano alla lingua impostata.
 
-Per supportare altre versioni in lingua di Agent, è possibile usare un altro tag Object che specifica il componente del linguaggio. Tuttavia, tenere presente che il tentativo di installare più lingue contemporaneamente potrebbe richiedere l'avvio del riavvio dell'utente. I componenti della lingua dell'agente possono essere ottenuti dal sito Web dell'agente utilizzando la stessa procedura usata per il componente core dell'agente. Le licenze per la distribuzione per i componenti del linguaggio sono incluse nella licenza standard per la distribuzione degli agenti. Per iniziare a usare un carattere, è necessario caricare il carattere usando il metodo [**Load**](/previous-versions/visualstudio/foxpro/h1tx7zt1(v=vs.71)) . Un carattere può essere caricato dalla risorsa di archiviazione locale dell'utente o da un server HTTP. Per ulteriori informazioni sulla sintassi per il caricamento di un carattere, vedere il metodo **Load** . Una volta completato il caricamento del carattere, è possibile usare i metodi, le proprietà e gli eventi esposti dal controllo Agent per programmare il carattere. È anche possibile usare i metodi, le proprietà e gli eventi esposti dal linguaggio di programmazione e dal browser per programmare il carattere; ad esempio, per programmare la reazione a un clic del pulsante. Consultare la documentazione del browser per determinare le funzionalità che espone nel modello di scripting. Per Microsoft Internet Explorer, vedere il modello a oggetti di scripting, disponibile in ActiveX SDK.
+Per supportare altre versioni del linguaggio di Agent, usare un altro tag Object che specifica il componente del linguaggio. Tenere tuttavia presente che il tentativo di installare più lingue contemporaneamente può richiedere il riavvio dell'utente. I componenti del linguaggio di Agent possono essere ottenuti dal sito Web di Agent usando la stessa procedura del componente principale di Agent. Le licenze di distribuzione per i componenti del linguaggio sono coperte dalla licenza di distribuzione standard di Agent. Per iniziare a usare un carattere, è necessario caricare il carattere usando il [**metodo Load.**](/previous-versions/visualstudio/foxpro/h1tx7zt1(v=vs.71)) Un carattere può essere caricato dalla memoria locale dell'utente o da un server HTTP. Per altre informazioni sulla sintassi per il caricamento di un carattere, vedere il **metodo Load.** Al termine del caricamento del carattere, è possibile usare i metodi, le proprietà e gli eventi esposti dal controllo Agent per programmare il carattere. È anche possibile usare i metodi, le proprietà e gli eventi esposti dal linguaggio di programmazione e dal browser per programmare il carattere. ad esempio per programmarne la reazione al clic di un pulsante. Consultare la documentazione del browser per determinare quali funzionalità espone nel modello di scripting. Per microsoft Internet Explorer, vedere scripting object model, disponibile in ActiveX SDK.
 
-I servizi dell'agente rimangono caricati solo quando esiste almeno un'applicazione client con una connessione. Ciò significa che quando un utente si sposta tra pagine Web abilitate per l'agente, l'agente verrà arrestato e tutti i caratteri caricati scompariranno. Per mantenere l'agente in esecuzione tra le pagine (mantenendo quindi un carattere visibile), creare un altro client che rimanga caricato tra le modifiche della pagina. Ad esempio, è possibile creare un frame HTML e dichiarare un <OBJECT> tag per Agent nel frame padre. È quindi possibile generare uno script per le pagine caricate nei frame figlio, per chiamare lo script del padre. In alternativa, è anche possibile includere un <OBJECT> tag in ogni pagina caricata nel frame figlio. In questo caso, tenere presente che ogni pagina sarà il proprio client. Potrebbe essere necessario utilizzare il metodo [**Activate**](/previous-versions/visualstudio/foxpro/01ayxx68(v=vs.71)) per impostare il client che dispone del controllo quando l'utente interagisce con la pagina padre o figlio.
+I servizi dell'agente rimangono caricati solo quando è presente almeno un'applicazione client con una connessione. Ciò significa che quando un utente si sposta tra pagine Web abilitate per Agent, Agent verrà arrestato e tutti i caratteri caricati scompariranno. Per mantenere Agent in esecuzione tra le pagine e quindi mantenere visibile un carattere, creare un altro client che rimane caricato tra le modifiche della pagina. Ad esempio, è possibile creare un set di frame HTML e dichiarare un <OBJECT> tag per Agent nel frame padre. È quindi possibile creare script per le pagine caricate nei frame figlio, per chiamare lo script dell'elemento padre. In alternativa, è anche possibile includere un <OBJECT> tag in ogni pagina caricata nel frame figlio. In questo caso, tenere presente che ogni pagina sarà il proprio client. Potrebbe essere necessario usare il [**metodo Activate**](/previous-versions/visualstudio/foxpro/01ayxx68(v=vs.71)) per impostare quale client ha il controllo quando l'utente interagisce con la pagina padre o figlio.
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: La \_ classe NIC HWConfig è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete. La sintassi seguente è semplificata dal codice MOF.
+description: La classe NIC HWConfig \_ è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: e544a27b-17f8-402c-9c92-578cf2a38ca8
-title: Classe HWConfig_NIC
+title: HWConfig_NIC classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: df3897c67ed65eeec5ace49dac1088ca35223a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d9b82f8a97c1ca47734b5bb0a1db09167510978c53f86870df01f2acc59b2ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394725"
 ---
-# <a name="hwconfig_nic-class"></a>\_Classe NIC HWConfig
+# <a name="hwconfig_nic-class"></a>Classe NIC \_ HWConfig
 
-La **classe \_ NIC HWConfig** è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete.
+La **classe NIC HWConfig \_ è** la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -38,26 +38,26 @@ class HWConfig_NIC : HWConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ NIC HWConfig** dispone di questi tipi di membri:
+La **classe \_ NIC HWConfig** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ NIC HWConfig** dispone di queste proprietà.
+La **classe \_ NIC HWConfig** ha queste proprietà.
 
 <dl> <dt>
 
 NICName
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(1), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome della scheda di interfaccia di rete.
@@ -70,7 +70,7 @@ Nome della scheda di interfaccia di rete.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

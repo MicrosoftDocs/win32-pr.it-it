@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_CREATEDRAGIMAGE (COMmctrl. h)
+title: LVM_CREATEDRAGIMAGE messaggio (Commctrl.h)
 description: Crea un elenco di immagini di trascinamento per l'elemento specificato. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro CreateDragImage di ListView.
 ms.assetid: face4c8f-01ff-4f5a-a468-e306a50dae35
 keywords:
-- Controlli di Windows Message LVM_CREATEDRAGIMAGE
+- LVM_CREATEDRAGIMAGE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace975b178fee85e2794b518a78b40b375c65ae7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d551dfa7b14ecff8c9fd1efe015e173403c1b5981f294a18b3180a42cc03de63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411997"
 ---
-# <a name="lvm_createdragimage-message"></a>\_Messaggio CREATEDRAGIMAGE LVM
+# <a name="lvm_createdragimage-message"></a>Messaggio LVM \_ CREATEDRAGIMAGE
 
-Crea un elenco di immagini di trascinamento per l'elemento specificato. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ CreateDragImage di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_createdragimage) .
+Crea un elenco di immagini di trascinamento per l'elemento specificato. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ CreateDragImage di ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_createdragimage)
 
 ## <a name="parameters"></a>Parametri
 
@@ -39,13 +39,13 @@ Indice dell'elemento.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) che riceve la posizione iniziale dell'angolo superiore sinistro dell'immagine, in coordinate della visualizzazione.
+Puntatore a una [**struttura POINT**](/previous-versions//dd162805(v=vs.85)) che riceve la posizione iniziale dell'angolo superiore sinistro dell'immagine, nelle coordinate di visualizzazione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per l'elenco di immagini di trascinamento, in caso di esito positivo, oppure **null** .
+Restituisce l'handle all'elenco di immagini di trascinamento in caso di esito positivo oppure **NULL in caso** contrario.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ L'applicazione è responsabile dell'eliminazione dell'elenco di immagini quando 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

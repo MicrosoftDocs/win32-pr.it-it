@@ -4,12 +4,12 @@ ms.assetid: 11b48fbc-0c93-4c3c-b218-258028822544
 title: Evento InkOverlay.Gesture (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b414aa1d0feaa19c5caee049eea29c59e90b58d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 01689465e9951a5b8cd6548cabb0be4a0bde32c7cf46c2ea4c71b3bb38151eef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219312"
 ---
 # <a name="inkoverlaygesture-event"></a>Evento InkOverlay.Gesture
 
@@ -43,16 +43,16 @@ Oggetto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) c
 *Tratti* \[ Pollici\]
 </dt> <dd>
 
-Raccolta [IInkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) restituita dal riconoscimento come movimento.
+Raccolta [IInkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) restituita dal riconoscitore come movimento.
 
 </dd> <dt>
 
 *Movimenti* \[ Pollici\]
 </dt> <dd>
 
-Matrice di [**oggetti IInkGesture,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) in ordine di confidenza, dal sistema di riconoscimento.
+Matrice di [**oggetti IInkGesture,**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture) in ordine di attendibilità, dal sistema di riconoscimento.
 
-Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM.](using-the-com-library.md)
+Per altre informazioni sulla struttura VARIANT, vedere [Uso della libreria COM](using-the-com-library.md).
 
 </dd> <dt>
 
@@ -71,11 +71,11 @@ Questo evento non restituisce un valore.
 
 Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ ICEGesture DISPID.
 
-Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) è impostata su [**GestureOnly,**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento [**Gesture**](inkcollector-gesture.md) è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento del movimento è più **veloce in modalità InkAndGesture.**
+Quando la [**proprietà CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) è impostata su [**GestureOnly,**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)il timeout tra quando un utente aggiunge un movimento e quando si verifica l'evento [**Gesture**](inkcollector-gesture.md) è un valore fisso che non è possibile modificare a livello di codice. Il riconoscimento dei movimenti è più **veloce in modalità InkAndGesture.**
 
 Per impedire la raccolta di input penna in [**modalità InkAndGesture:**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
 
--   Impostare [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) su [**InkAndGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode)
+-   Impostare [**CollectionMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_collectionmode) su [**InkAndGesture**](/windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode).
 -   Eliminare il tratto [**nell'evento Stroke.**](inkcollector-stroke.md)
 -   Elaborare il movimento [**nell'evento Gesture.**](inkcollector-gesture.md)
 
@@ -100,7 +100,7 @@ Per un elenco di movimenti specifici dell'applicazione, vedere il tipo di enumer
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

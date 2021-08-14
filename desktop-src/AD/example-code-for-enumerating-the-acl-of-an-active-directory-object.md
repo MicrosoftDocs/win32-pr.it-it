@@ -7,18 +7,18 @@ keywords:
 - Codice di esempio per l'enumerazione dell'ACL di un oggetto Active Directory AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c30bdec125d0f7bbc40fe6903460165722a614
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17ff3a28b66b0217e2b10037ec5a6ebb817aec33780a5ad1ba4efa6092a3cbe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190629"
 ---
 # <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a>Codice di esempio per l'enumerazione dell'ACL di un oggetto in Active Directory Domain Services
 
 Gli esempi di codice seguenti possono essere usati per enumerare l'elenco di controllo di accesso (ACL) di un oggetto in Active Directory Domain Services.
 
-Nell'esempio di codice seguente viene illustrata una funzione che enumera i trustee di un oggetto.
+Nell'esempio di codice seguente viene illustrata una funzione che enumera i trustee di un oggetto .
 
 
 ```C++
@@ -171,7 +171,7 @@ HRESULT EnumAccessInfo(IADs *pads)
 
 
 
-Nell'esempio di codice seguente viene illustrata una funzione che enumera i trustee di un oggetto.
+Nell'esempio di codice seguente viene illustrata una funzione che enumera i trustee di un oggetto .
 
 
 ```VB
@@ -202,9 +202,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

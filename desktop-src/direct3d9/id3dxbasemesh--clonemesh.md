@@ -1,7 +1,7 @@
 ---
 description: Clona una mesh usando un dichiaratore.
 ms.assetid: 47e0329a-ea85-478d-af8b-cf85d2a779f6
-title: 'Metodo ID3DXBaseMesh:: CloneMesh (D3DX9Mesh. h)'
+title: Metodo ID3DXBaseMesh::CloneMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 421b72a080564886a10c187594223fb58a0b69fb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97fec8b0881cdef43051afcb06d63ec20284cb116299912ce0acf7ac4c54a0f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118521864"
 ---
-# <a name="id3dxbasemeshclonemesh-method"></a>Metodo ID3DXBaseMesh:: CloneMesh
+# <a name="id3dxbasemeshclonemesh-method"></a>Metodo ID3DXBaseMesh::CloneMesh
 
 Clona una mesh usando un dichiaratore.
 
@@ -43,30 +43,30 @@ HRESULT CloneMesh(
 
 <dl> <dt>
 
-*Opzioni* \[ di in\]
+*Opzioni* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di uno o più flag [**D3DXMESH**](./d3dxmesh.md) che specificano le opzioni di creazione per la mesh.
+Combinazione di uno o più [**flag D3DXMESH**](./d3dxmesh.md) che specificano le opzioni di creazione per la mesh.
 
 </dd> <dt>
 
-*pDeclaration* \[ in\]
+*pDeclaration* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) , che specifica il formato del vertice per i vertici nella mesh di output.
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che specificano il formato dei vertici per i vertici nella mesh di output.
 
 </dd> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , che rappresenta l'oggetto dispositivo associato alla mesh.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) che rappresenta l'oggetto dispositivo associato alla mesh.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che rappresenta la mesh clonata.
+Indirizzo di un puntatore a [**un'interfaccia ID3DXMesh,**](id3dxmesh.md) che rappresenta la mesh clonata.
 
 </dd> </dl>
 
@@ -83,13 +83,13 @@ Indirizzo di un puntatore a un'interfaccia [**ID3DXMesh**](id3dxmesh.md) , che r
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-**ID3DXBaseMesh:: CloneMesh** viene usato per riformattare e modificare il layout dei dati del vertice. Questa operazione viene eseguita creando un nuovo oggetto mesh. Ad esempio, usarlo per aggiungere spazio per normali, coordinate di trama, colori, pesi e così via, che non erano presenti prima.
+**ID3DXBaseMesh::CloneMesh** viene usato per riformattare e modificare il layout dei dati dei vertici. Questa operazione viene eseguita creando un nuovo oggetto mesh. Ad esempio, usarlo per aggiungere spazio per normali, coordinate della trama, colori, pesi e così via che non erano presenti in precedenza.
 
-[**ID3DXBaseMesh:: UpdateSemantics**](id3dxbasemesh--updatesemantics.md) aggiorna la dichiarazione di vertice con informazioni semantiche diverse senza modificare il layout del buffer del vertice. Questo metodo non modifica il contenuto del buffer dei vertici. Ad esempio, usarlo per rietichettare una coordinata di trama 3D come una binormale o tangente o viceversa.
+[**ID3DXBaseMesh::UpdateSemantics**](id3dxbasemesh--updatesemantics.md) aggiorna la dichiarazione dei vertici con informazioni semantiche diverse senza modificare il layout del vertex buffer. Questo metodo non modifica il contenuto del vertex buffer. Ad esempio, usarlo per rietichettare una coordinata di trama 3D come binormale o tangente o viceversa.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,8 +97,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

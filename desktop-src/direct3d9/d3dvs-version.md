@@ -1,7 +1,7 @@
 ---
-description: Creare un token di numero di versione del vertex shader.
+description: Creare un token del numero di versione di vertex shader.
 ms.assetid: c3aa6b01-7949-4171-a8b5-2f453fd7a422
-title: D3DVS_VERSION macro (D3d9types. h)
+title: D3DVS_VERSION macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 915d5b843287602c80572d739d8b369d8c301770
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 861295c9068bee9e40174d877a78628aa405b9cfa5d46414190fbb7b37904e89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527257"
 ---
-# <a name="d3dvs_version-macro"></a>D3DVS \_ versione macro
+# <a name="d3dvs_version-macro"></a>Macro D3DVS \_ VERSION
 
-Creare un token di numero di versione del vertex shader.
+Creare un token del numero di versione di vertex shader.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,34 +43,34 @@ DWORD D3DVS_VERSION(
 *\_Principali* 
 </dt> <dd>
 
-Versione principale del vertex shader. Vedere la sezione Osservazioni per i valori appropriati.
+Versione principale del vertex shader. Vedere le osservazioni per i valori appropriati.
 
 </dd> <dt>
 
 *\_Minorenne* 
 </dt> <dd>
 
-Versione del vertex shader secondaria. Vedere la sezione Osservazioni per i valori appropriati.
+Versione del vertex shader secondario. Vedere le osservazioni per i valori appropriati.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore DWORD che è una versione del vertex shader.
+Restituisce un valore DWORD che è una versione vertex shader.
 
 ## <a name="remarks"></a>Commenti
 
 Numeri di versione
 
-Il numero di versione è una combinazione della versione principale e dei numeri di versione di vertex shader secondari. I numeri validi sono visualizzati nella tabella.
+Il numero di versione è una combinazione della versione principale e dei numeri di versione del vertex shader secondario. I numeri validi vengono visualizzati nella tabella.
 
 
 
 | Principale | Minorenne | Esempio             |
 |-------|-------|---------------------|
-| 1     | 1     | \_Versione di D3DVS (1,1) |
-| 2     | 0     | \_Versione di D3DVS (2, 0) |
-| 3     | 0     | \_Versione di D3DVS (3, 0) |
+| 1     | 1     | VERSIONE \_ D3DVS(1,1) |
+| 2     | 0     | VERSIONE \_ D3DVS(2,0) |
+| 3     | 0     | VERSIONE \_ D3DVS(3,0) |
 
 
 
@@ -82,7 +82,7 @@ Il numero di versione è una combinazione della versione principale e dei numeri
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

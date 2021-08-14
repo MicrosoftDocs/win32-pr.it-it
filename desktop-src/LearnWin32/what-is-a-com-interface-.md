@@ -4,20 +4,20 @@ description: Che cos'è un'interfaccia COM
 ms.assetid: 36f27a58-cc63-4b67-bdcb-8f9a19650c6a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da703569beae7a9aa2fc41bcea0214cc9aa488ad
-ms.sourcegitcommit: 8eac40ea4d87a85e036ed5bbffec7b7a3dab39ec
+ms.openlocfilehash: d4a6eac63fb6395e04f36c89826a392046c906a70105e19bb6b9514975d89197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "104397023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387606"
 ---
 # <a name="what-is-a-com-interface"></a>Che cos'è un'interfaccia COM?
 
-Se si conosce C# o Java, le interfacce devono essere un concetto familiare. Un' *interfaccia* definisce un set di metodi che possono essere supportati da un oggetto, senza che venga dettata alcuna parte dell'implementazione. L'interfaccia contrassegna un limite chiaro tra il codice che chiama un metodo e il codice che implementa il metodo. In termini di informatica, il chiamante viene *separato* dall'implementazione di.
+Se si conosce C# o Java, le interfacce devono essere un concetto familiare. *Un'interfaccia* definisce un set di metodi che un oggetto può supportare, senza dettare nulla sull'implementazione. L'interfaccia contrassegna un limite chiaro tra il codice che chiama un metodo e il codice che implementa il metodo . In termini di informatica, il chiamante è *disaccoccodato* dall'implementazione.
 
 ![illustrazione che mostra il limite dell'interfaccia tra un oggetto e un'applicazione](images/com01.png)
 
-In C++, l'equivalente più vicino a un'interfaccia è una classe virtuale pura, ovvero una classe che contiene solo metodi virtuali puri e nessun altro membro. Di seguito è riportato un esempio ipotetico di un'interfaccia:
+In C++ l'equivalente più vicino a un'interfaccia è una classe virtuale pura, ovvero una classe che contiene solo metodi virtuali puri e nessun altro membro. Ecco un esempio ipotetico di un'interfaccia:
 
 ```C++
 // The following is not actual COM.
@@ -30,16 +30,16 @@ interface IDrawable
 };
 ```
 
-L'idea di questo esempio è che un set di oggetti in una raccolta grafica è disegnato. L' `IDrawable` interfaccia definisce le operazioni che qualsiasi oggetto disegnatore deve supportare. (Per convenzione, i nomi di interfaccia iniziano con "I"). In questo esempio, l' `IDrawable` interfaccia definisce una singola operazione: `Draw` .
+L'idea di questo esempio è che un set di oggetti in alcune librerie grafiche sia disegnabile. `IDrawable`L'interfaccia definisce le operazioni che qualsiasi oggetto drawable deve supportare. Per convenzione, i nomi delle interfacce iniziano con "I". In questo esempio `IDrawable` l'interfaccia definisce una singola operazione: `Draw` .
 
-Tutte le interfacce sono *astratte*, quindi un programma non è stato in grado di creare un'istanza di un `IDrawable` oggetto. Il codice seguente, ad esempio, non verrà compilato.
+Tutte le interfacce sono *astratte,* pertanto un programma non è stato in grado di creare un'istanza di `IDrawable` un oggetto come tale. Ad esempio, il codice seguente non viene compilato.
 
 ```C++
 IDrawable draw;
 draw.Draw();
 ```
 
-La libreria grafica fornisce invece oggetti che *implementano* l' `IDrawable` interfaccia. È ad esempio possibile che la libreria fornisca un oggetto Shape per disegnare forme e un oggetto bitmap per il disegno di immagini. In C++ questa operazione viene eseguita ereditando da una classe base astratta comune:
+La libreria grafica fornisce invece oggetti che *implementano l'interfaccia* `IDrawable` . Ad esempio, la libreria potrebbe fornire un oggetto forma per il disegno di forme e un oggetto bitmap per il disegno di immagini. In C++ questa operazione viene eseguita ereditando da una classe di base astratta comune:
 
 ```C++
 class Shape : public IDrawable
@@ -55,9 +55,9 @@ public:
 };
 ```
 
-Le `Shape` `Bitmap` classi e definiscono due tipi distinti di oggetto disegnatore. Ogni classe eredita da `IDrawable` e fornisce la propria implementazione del `Draw` metodo. Naturalmente, le due implementazioni potrebbero differire considerevolmente. Ad esempio, il `Shape::Draw` metodo può rasterizzare un set di righe, mentre `Bitmap::Draw` blit una matrice di pixel.
+Le `Shape` classi e definiscono due tipi distinti di oggetto `Bitmap` drawable. Ogni classe eredita da `IDrawable` e fornisce la propria implementazione del metodo `Draw` . Naturalmente, le due implementazioni potrebbero differire notevolmente. Ad esempio, il `Shape::Draw` metodo potrebbe rasterizzare un set di righe, mentre sarebbe `Bitmap::Draw` b blit una matrice di pixel.
 
-Un programma che usa questa libreria grafica gestirebbe `Shape` `Bitmap` oggetti e tramite `IDrawable` puntatori, anziché usare `Shape` direttamente i `Bitmap` puntatori o.
+Un programma che usa questa libreria grafica manipola gli oggetti e tramite i `Shape` puntatori, anziché usare direttamente i `Bitmap` `IDrawable` `Shape` `Bitmap` puntatori o .
 
 ```C++
 IDrawable *pDrawable = CreateTriangleShape();
@@ -68,7 +68,7 @@ if (pDrawable)
 }
 ```
 
-Di seguito è riportato un esempio che esegue il ciclo su una matrice di `IDrawable` puntatori. La matrice potrebbe contenere un insieme eterogeneo di forme, bitmap e altri oggetti grafici, a condizione che ogni oggetto nella matrice erediti `IDrawable` .
+Di seguito è riportato un esempio che esegue il ciclo su una matrice `IDrawable` di puntatori. La matrice può contenere un'ampia gamma eterogenea di forme, bitmap e altri oggetti grafici, purché ogni oggetto nella matrice erediti `IDrawable` .
 
 ```C++
 void DrawSomeShapes(IDrawable **drawableArray, size_t count)
@@ -80,12 +80,12 @@ void DrawSomeShapes(IDrawable **drawableArray, size_t count)
 }
 ```
 
-Un punto chiave di COM è che il codice chiamante non vede mai il tipo della classe derivata. In altre parole, non si dichiarerà mai una variabile di tipo `Shape` o `Bitmap` nel codice. Tutte le operazioni sulle forme e le bitmap vengono eseguite utilizzando i `IDrawable` puntatori. In questo modo, COM mantiene una stretta separazione tra l'interfaccia e l'implementazione. I dettagli di implementazione delle `Shape` `Bitmap` classi e possono cambiare, ad esempio per correggere i bug o aggiungere nuove funzionalità, senza apportare modifiche al codice chiamante.
+Un punto chiave di COM è che il codice chiamante non vede mai il tipo della classe derivata. In altre parole, non si dichiara mai una variabile di `Shape` tipo o `Bitmap` nel codice. Tutte le operazioni su forme e bitmap vengono eseguite usando `IDrawable` i puntatori. In questo modo, COM mantiene una netta separazione tra interfaccia e implementazione. I dettagli di implementazione delle classi e possono cambiare, ad esempio per correggere bug o aggiungere nuove funzionalità, senza apportare `Shape` `Bitmap` modifiche al codice chiamante.
 
-In un'implementazione C++, le interfacce vengono dichiarate usando una classe o una struttura.
+In un'implementazione C++ le interfacce vengono dichiarate usando una classe o una struttura.
 
 > [!Note]  
-> Gli esempi di codice in questo argomento hanno lo scopo di fornire concetti generali, non procedure reali. La definizione di nuove interfacce COM esula dall'ambito di questa serie, ma non si definisce un'interfaccia direttamente in un file di intestazione. Un'interfaccia COM viene invece definita utilizzando un linguaggio denominato IDL (Interface Definition Language). Il file IDL viene elaborato da un compilatore IDL, che genera un file di intestazione C++.
+> Gli esempi di codice in questo argomento hanno lo scopo di illustrare i concetti generali, non la pratica reale. La definizione di nuove interfacce COM non è nell'ambito di questa serie, ma non è necessario definire un'interfaccia direttamente in un file di intestazione. Al contrario, un'interfaccia COM viene definita usando un linguaggio denominato Interface Definition Language (IDL). Il file IDL viene elaborato da un compilatore IDL che genera un file di intestazione C++.
 
 ```C++
 class IDrawable
@@ -95,7 +95,7 @@ public:
 };
 ```
 
-Quando si utilizza COM, è importante ricordare che le interfacce non sono oggetti. Sono raccolte di metodi che devono essere implementati dagli oggetti. Diversi oggetti possono implementare la stessa interfaccia, come illustrato con gli `Shape` `Bitmap` esempi e. Inoltre, un oggetto può implementare più interfacce. Ad esempio, la libreria grafica potrebbe definire un'interfaccia denominata `ISerializable` che supporta il salvataggio e il caricamento di oggetti grafici. Si considerino ora le dichiarazioni di classe seguenti:
+Quando si utilizza COM, è importante ricordare che le interfacce non sono oggetti. Si tratta di raccolte di metodi che gli oggetti devono implementare. Diversi oggetti possono implementare la stessa interfaccia, come illustrato con `Shape` gli esempi `Bitmap` e . Inoltre, un oggetto può implementare diverse interfacce. Ad esempio, la libreria grafica potrebbe definire un'interfaccia denominata `ISerializable` che supporta il salvataggio e il caricamento di oggetti grafici. Si considerino ora le dichiarazioni di classe seguenti:
 
 ```C++
 // An interface for serialization.
@@ -119,11 +119,11 @@ class Bitmap : public IDrawable, public ISerializable
 };
 ```
 
-In questo esempio, la `Bitmap` classe implementa `ISerializable` . Il programma può utilizzare questo metodo per salvare o caricare la bitmap. Tuttavia, la `Shape` classe non implementa `ISerializable` , quindi non espone tale funzionalità. Nel diagramma seguente vengono illustrate le relazioni di ereditarietà in questo esempio.
+In questo esempio la `Bitmap` classe implementa `ISerializable` . Il programma può usare questo metodo per salvare o caricare la bitmap. Tuttavia, la `Shape` classe non implementa , pertanto non espone tale `ISerializable` funzionalità. Il diagramma seguente illustra le relazioni di ereditarietà in questo esempio.
 
-![illustrazione che mostra l'ereditarietà dell'interfaccia, con le classi Shape e bitmap che puntano a IDrawable, ma solo bitmap che punta a ISerializable](images/com02.png)
+![illustrazione che mostra l'ereditarietà dell'interfaccia, con le classi shape e bitmap che puntano a idrawable, ma solo bitmap che punta a iserializable](images/com02.png)
 
-In questa sezione è stata esaminata la base concettuale delle interfacce, ma finora non è stato visto il codice COM effettivo. Si inizierà con la prima cosa che qualsiasi applicazione COM deve eseguire: inizializzare la libreria COM.
+In questa sezione è stata esaminata la base concettuale delle interfacce, ma finora non è stato visto il codice COM effettivo. Si inizierà con la prima operazione che qualsiasi applicazione COM deve eseguire: inizializzare la libreria COM.
 
 ## <a name="next"></a>Prossima
 

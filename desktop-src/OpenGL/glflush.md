@@ -1,9 +1,9 @@
 ---
-title: funzione glFlush (GL. h)
-description: La funzione glFlush forza l'esecuzione delle funzioni OpenGL in tempo limitato.
+title: Funzione glFlush (Gl.h)
+description: La funzione glFlush forza l'esecuzione di funzioni OpenGL nel tempo finito.
 ms.assetid: 7544b724-472f-4055-8f1c-64ddb58caaf3
 keywords:
-- funzione glFlush OpenGL
+- Funzione glFlush OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8366fd5c42f68c495d544c20c3382b4e9fd37665
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ece5f0aa96140b6fa16b5fbde1a857f1e14f1570ad7fc734626a27ac660a65ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118360408"
 ---
-# <a name="glflush-function"></a>glFlush (funzione)
+# <a name="glflush-function"></a>Funzione glFlush
 
-La funzione **glFlush** forza l'esecuzione delle funzioni OpenGL in tempo limitato.
+La **funzione glFlush** forza l'esecuzione di funzioni OpenGL nel tempo finito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,23 +44,23 @@ Questa funzione non restituisce un valore.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Il codice di errore seguente può essere recuperato dalla funzione [**glGetError**](glgeterror.md) .
+Il codice di errore seguente può essere recuperato dalla [**funzione glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significato                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operazione GL non valida \_**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAZIONE GL \_ NON \_ VALIDA**</dt> </dl> | La funzione è stata chiamata tra una chiamata a [**glBegin**](glbegin.md) e la chiamata corrispondente a [**glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Diverse implementazioni di OpenGL sono comandi del buffer in diverse posizioni, inclusi i buffer di rete e l'acceleratore grafico stesso. La funzione **glFlush** svuota tutti questi buffer, facendo sì che tutti i comandi rilasciati vengano eseguiti con la stessa velocità con cui vengono accettati dal motore di rendering effettivo. Sebbene questa esecuzione non venga completata in un determinato periodo di tempo, viene completata in un intervallo di tempo limitato.
+Diverse implementazioni di OpenGL consentono di eseguire il buffer dei comandi in diverse posizioni, inclusi i buffer di rete e l'acceleratore grafico stesso. La **funzione glFlush** svuota tutti questi buffer, causando l'esecuzione di tutti i comandi emessi non appena vengono accettati dal motore di rendering effettivo. Anche se questa esecuzione potrebbe non essere completata in un determinato periodo di tempo, viene completata in un periodo di tempo limitato.
 
-Poiché qualsiasi programma OpenGL può essere eseguito in una rete o in un acceleratore che memorizza i comandi nel buffer, assicurarsi di chiamare **glFlush** in tutti i programmi che richiedono che tutti i comandi rilasciati in precedenza siano stati completati. Ad esempio, chiamare **glFlush** prima di attendere l'input dell'utente che dipende dall'immagine generata.
+Poiché qualsiasi programma OpenGL può essere eseguito in rete o su un acceleratore che bufferi i comandi, assicurarsi di chiamare **glFlush** in tutti i programmi che richiedono che tutti i comandi eseguiti in precedenza siano stati completati. Ad esempio, chiamare **glFlush prima** di attendere l'input dell'utente che dipende dall'immagine generata.
 
-La funzione **glFlush** può restituire in qualsiasi momento. Non attende il completamento dell'esecuzione di tutte le funzioni OpenGL rilasciate in precedenza.
+La **funzione glFlush** può restituire in qualsiasi momento. Non attende il completamento dell'esecuzione di tutte le funzioni OpenGL rilasciate in precedenza.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ La funzione **glFlush** può restituire in qualsiasi momento. Non attende il com
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Libreria<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Libreria<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 
@@ -83,7 +83,7 @@ La funzione **glFlush** può restituire in qualsiasi momento. Non attende il com
 [**glBegin**](glbegin.md)
 </dt> <dt>
 
-[**Remo**](glend.md)
+[**glEnd**](glend.md)
 </dt> <dt>
 
 [**glFinish**](glfinish.md)

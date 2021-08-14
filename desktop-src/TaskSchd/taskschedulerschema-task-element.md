@@ -1,9 +1,9 @@
 ---
 title: Elemento Task
-description: Definisce l'attività eseguita dal servizio Utilità di pianificazione.
+description: Definisce l'attività eseguita dal Utilità di pianificazione servizio.
 ms.assetid: 103a332a-8620-4e0c-81b5-4782d85fc391
 keywords:
-- Utilità di pianificazione elemento attività
+- Elemento Task Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 38bac482f8546028d21db913e31dc4152f19f599
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3be36d0799e98b99a6d5ebe6430220b29fe2192935f67e9df5e189bc0f970a58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356234"
 ---
 # <a name="task-element"></a>Elemento Task
 
-Definisce l'attività eseguita dal servizio Utilità di pianificazione.
+Definisce l'attività eseguita dal Utilità di pianificazione servizio.
 
 ``` syntax
 <xs:element name="Task"
@@ -62,7 +62,7 @@ Definisce l'attività eseguita dal servizio Utilità di pianificazione.
 | Elemento                                                                           | Tipo                                                                                 | Descrizione                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | [**Azioni**](taskschedulerschema-actions-tasktype-element.md)                   | [**actionsType**](taskschedulerschema-actionstype-complextype.md)                   | Specifica le azioni eseguite dall'attività.<br/>                                                                             |
-| [**Data**](taskschedulerschema-data-tasktype-element.md)                         | [**dataType**](taskschedulerschema-datatype-complextype.md)                         | Specifica i dati aggiuntivi associati all'attività, ma in caso contrario non viene utilizzato dal servizio Utilità di pianificazione.<br/>         |
+| [**Dati**](taskschedulerschema-data-tasktype-element.md)                         | [**dataType**](taskschedulerschema-datatype-complextype.md)                         | Specifica i dati di addizione associati all'attività, ma che in caso contrario non vengono usati dal Utilità di pianificazione servizio.<br/>         |
 | [**Principals**](taskschedulerschema-principals-tasktype-element.md)             | [**principalsType**](taskschedulerschema-principalstype-complextype.md)             | Specifica i contesti di sicurezza che possono essere utilizzati per eseguire l'attività.<br/>                                                        |
 | [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Specifica le informazioni amministrative sull'attività, ad esempio l'autore dell'attività e la data di registrazione dell'attività.<br/> |
 | [**Impostazioni**](taskschedulerschema-settings-tasktype-element.md)                 | [**settingsType**](taskschedulerschema-settingstype-complextype.md)                 | Specifica le impostazioni utilizzate dal Utilità di pianificazione per eseguire l'attività.<br/>                                                 |
@@ -72,9 +72,9 @@ Definisce l'attività eseguita dal servizio Utilità di pianificazione.
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition).
+Per lo sviluppo in C++, [**vedere ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-Per lo sviluppo di script, vedere [**TaskDefinition**](taskdefinition.md).
+Per lo sviluppo di script, vedere [**TaskDefinition.**](taskdefinition.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ Per lo sviluppo di script, vedere [**TaskDefinition**](taskdefinition.md).
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

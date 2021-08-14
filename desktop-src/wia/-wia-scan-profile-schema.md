@@ -1,31 +1,31 @@
 ---
-description: Lo schema del profilo di analisi definisce un formato XML che può essere utilizzato per archiviare le proprietà degli elementi di acquisizione immagini Windows (WIA), ad esempio scanner e fotocamere.
+description: Lo schema del profilo di analisi definisce un formato XML che può essere usato per archiviare le proprietà degli elementi wia (Image Acquisition) di Windows, ad esempio scanner e fotocamere.
 ms.assetid: e0848db3-652a-45be-a18b-99b82420c586
 title: Schema del profilo di analisi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 331c52e933e1e6b771c477bdc8a38f1c5f749448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81091e75269206b6b3b5a89f86c6f92da5c1d2080d90382ac6af48c6d1cc32ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208017"
 ---
 # <a name="scan-profile-schema"></a>Schema del profilo di analisi
 
-Lo schema del profilo di analisi definisce un formato XML che può essere utilizzato per archiviare le proprietà degli elementi di acquisizione immagini Windows (WIA), ad esempio scanner e fotocamere. Questi file permanenti consentono alle applicazioni di fornire analisi automatica senza richiedere agli utenti di ricordare le impostazioni delle proprietà degli elementi.
+Lo schema del profilo di analisi definisce un formato XML che può essere usato per archiviare le proprietà degli elementi wia (Image Acquisition) di Windows, ad esempio scanner e fotocamere. Questi file permanenti consentono alle applicazioni di fornire l'analisi automatica senza richiedere agli utenti di ricordare le impostazioni delle proprietà degli elementi.
 
-Qualsiasi dispositivo [**IWiaItem2**](-wia-iwiaitem2.md) può avere un profilo di analisi. Tuttavia, gli elementi di **IWiaItem2** di tipo WIA \_ Category \_ finished \_ file e WIA \_ Category \_ root non possono avere profili.
+Qualsiasi [**dispositivo IWiaItem2**](-wia-iwiaitem2.md) può avere un profilo di analisi. Tuttavia, **gli elementi IWiaItem2** di tipo WIA \_ CATEGORY FINISHED FILE e \_ \_ WIA CATEGORY \_ ROOT non possono \_ avere profili.
 
-I profili di analisi vengono creati e gestiti tramite le interfacce [**IScanProfile**](-wia-iscanprofile.md), [**IScanProfileMgr**](-wia-iscanprofilemgr.md)e [**IScanProfileUI**](-wia-iscanprofileui.md) . Gli utenti dell'applicazione possono modificare i profili in modo limitato usando il metodo [**IScanProfileUI:: ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) .
+I profili di analisi vengono creati e gestiti tramite [**le interfacce IScanProfile**](-wia-iscanprofile.md), [**IScanProfileMgr**](-wia-iscanprofilemgr.md)e [**IScanProfileUI.**](-wia-iscanprofileui.md) Gli utenti dell'applicazione possono modificare i profili in modi limitati usando il [**metodo IScanProfileUI::ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-Tutti i profili di analisi hanno gli elementi seguenti: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` , e `<Properties>` . Il profilo predefinito di un dispositivo contiene anche un `<Default>` elemento.
+Tutti i profili di analisi hanno gli elementi seguenti: `<ProfileGUID>, <DeviceID>, <ProfileName>, <WiaItem>` e `<Properties>` . Anche il profilo predefinito di un dispositivo ha un `<Default>` elemento .
 
-L'elemento `<ProfileGUID>` e l' `<DeviceID>` elemento non possono essere modificati dopo la creazione del profilo di analisi. `<ProfileName>`È possibile modificare i valori dell'elemento e dell' `<WiaItem>` elemento. L' `<Default>` elemento può essere aggiunto o eliminato. Questa operazione può essere eseguita a livello usando i metodi [**IScanProfile:: Sename**](-wia-iscanprofile-setname.md), [**IScanProfile:: SetItem**](-wia-iscanprofile-setitem.md)e [**IScanProfileMgr:: sedefault**](-wia-iscanprofilemgr-setdefault.md) . Queste proprietà possono anche essere modificate dagli utenti tramite il metodo [**IScanProfileUI:: ScanProfileDialog**](-wia-iscanprofileui-scanprofiledialog.md) .
+`<ProfileGUID>`L'elemento e `<DeviceID>` l'elemento non possono essere modificati dopo la creazione del profilo di analisi. I valori `<ProfileName>` dell'elemento e `<WiaItem>` dell'elemento possono essere modificati. `<Default>`L'elemento può essere aggiunto o eliminato. Questa operazione può essere eseguita a livello di codice usando i metodi [**IScanProfile::SetName**](-wia-iscanprofile-setname.md), [**IScanProfile::SetItem**](-wia-iscanprofile-setitem.md)e [**IScanProfileMgr::SetDefault.**](-wia-iscanprofilemgr-setdefault.md) Queste proprietà possono anche essere modificate dagli utenti tramite il [**metodo IScanProfileUI::ScanProfileDialog.**](-wia-iscanprofileui-scanprofiledialog.md)
 
-L' `<Properties>` elemento contiene `<Property>` elementi figlio. Usare questi elementi per aggiungere qualsiasi proprietà del dispositivo o elemento WIA al profilo. È anche possibile sviluppare una propria immagine acquisizione `<Property>` Children. In questo modo lo schema del profilo di analisi diventa estendibile. Per ulteriori informazioni sull'estensione dello schema, vedere [definizione di proprietà personalizzate](-wia-defining-custom-properties.md), [**IScanProfile:: GetProperty**](-wia-iscanprofile-getproperty.md)e [**IScanProfile:: SetProperty**](-wia-iscanprofile-setproperty.md).
+`<Properties>`L'elemento contiene `<Property>` elementi figlio. Usare questi elementi per aggiungere qualsiasi elemento WIA o proprietà del dispositivo al profilo. È anche possibile sviluppare un'immagine personalizzata per gli elementi `<Property>` figlio. In questo modo lo schema del profilo di analisi è estensibile. Per altre informazioni sull'estensione dello schema, vedere [Definizione](-wia-defining-custom-properties.md)di proprietà personalizzate, [**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)e [**IScanProfile::SetProperty.**](-wia-iscanprofile-setproperty.md)
 
-Di seguito è riportato lo schema completo del profilo di analisi. Segue un profilo di esempio.
+Ecco lo schema completo del profilo di analisi. Segue un profilo di esempio.
 
 
 ```
@@ -71,7 +71,7 @@ Di seguito è riportato lo schema completo del profilo di analisi. Segue un prof
 
 
 
-Fare clic su **Mostra esempio** per visualizzare un profilo di esempio.
+Fare **clic su Mostra** esempio per visualizzare un profilo di esempio.
 
 
 ```
@@ -117,10 +117,10 @@ Fare clic su **Mostra esempio** per visualizzare un profilo di esempio.
 **Riferimento**
 </dt> <dt>
 
-[**IScanProfile:: GetProperty**](-wia-iscanprofile-getproperty.md)
+[**IScanProfile::GetProperty**](-wia-iscanprofile-getproperty.md)
 </dt> <dt>
 
-[**IScanProfile:: SetProperty**](-wia-iscanprofile-setproperty.md)
+[**IScanProfile::SetProperty**](-wia-iscanprofile-setproperty.md)
 </dt> <dt>
 
 **Informazioni concettuali**

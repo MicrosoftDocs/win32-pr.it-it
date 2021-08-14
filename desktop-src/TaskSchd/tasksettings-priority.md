@@ -1,10 +1,10 @@
 ---
-title: Proprietà TaskSettings. Priority
+title: TaskSettings.Priority - proprietà
 description: Per lo scripting, ottiene o imposta il livello di priorità dell'attività.
 ms.assetid: 2548fcb6-c649-4822-a2ea-77546aac2ec5
 keywords:
 - Proprietà Priority Utilità di pianificazione
-- Utilità di pianificazione proprietà priorità, oggetto TaskSettings
+- Proprietà Priority Utilità di pianificazione , oggetto TaskSettings
 - Oggetto TaskSettings Utilità di pianificazione, proprietà Priority
 topic_type:
 - apiref
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 282c688d63bb21f2dc0bab43acde7f089fa960b2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7b24c0281e8df314b070e0569176899b96071e1ef43caab17af4978e74f6b18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118354828"
 ---
-# <a name="tasksettingspriority-property"></a>Proprietà TaskSettings. Priority
+# <a name="tasksettingspriority-property"></a>TaskSettings.Priority - proprietà
 
 Per lo scripting, ottiene o imposta il livello di priorità dell'attività.
 
@@ -46,29 +46,29 @@ Livello di priorità (0-10) dell'attività. Il valore predefinito è 7.
 
 Il livello di priorità 0 è la priorità più alta e il livello di priorità 10 è la priorità più bassa. Il valore predefinito è 7. I livelli di priorità 7 e 8 vengono usati per le attività in background e i livelli di priorità 4, 5 e 6 vengono usati per le attività interattive.
 
-L'azione dell'attività viene avviata in un processo con una priorità basata su un valore della classe di priorità. Un valore del livello di priorità (priorità thread) viene usato per le azioni del gestore COM, della finestra di messaggio e dell'attività di posta elettronica. Per ulteriori informazioni sui valori della classe di priorità e del livello di priorità, vedere [priorità di pianificazione](/windows/desktop/ProcThread/scheduling-priorities). Nella tabella seguente sono elencati i valori possibili per il parametro *Priority* e i valori della classe di priorità e del livello di priorità corrispondenti.
+L'azione dell'attività viene avviata in un processo con una priorità basata su un valore classe di priorità. Un valore livello di priorità (priorità del thread) viene usato per le azioni del gestore COM, della finestra di messaggio e dell'attività di posta elettronica. Per altre informazioni sui valori Classe di priorità e Livello di priorità, vedere [Priorità di pianificazione](/windows/desktop/ProcThread/scheduling-priorities). Nella tabella seguente sono elencati i valori possibili per il *parametro priority* e i valori Priority Class e Priority Level corrispondenti.
 
 
 
-| *Priorità* attività | Classe Priority                 | Livello di priorità                   |
+| Priorità *attività* | Classe Priority                 | Livello di priorità                   |
 |-----------------|--------------------------------|----------------------------------|
-| 0               | \_classe priorità in tempo reale \_      | \_tempo di priorità thread \_ \_ critico |
-| 1               | \_classe con priorità alta \_          | \_priorità thread \_ più elevata        |
-| 2               | \_classe di \_ priorità \_ normale sopra | \_priorità thread \_ superiore al \_ normale  |
-| 3               | \_classe di \_ priorità \_ normale sopra | \_priorità thread \_ superiore al \_ normale  |
-| 4               | \_classe di priorità normale \_        | priorità THREAD- \_ \_ normale         |
-| 5               | \_classe di priorità normale \_        | priorità THREAD- \_ \_ normale         |
-| 6               | \_classe di priorità normale \_        | priorità THREAD- \_ \_ normale         |
-| 7               | classe di priorità inferiore al \_ normale \_ \_ | priorità THREAD al di \_ \_ sotto del \_ normale  |
-| 8               | classe di priorità inferiore al \_ normale \_ \_ | priorità THREAD al di \_ \_ sotto del \_ normale  |
-| 9               | \_classe priorità INattiva \_          | \_priorità thread \_ più bassa         |
-| 10              | \_classe priorità INattiva \_          | \_priorità thread \_ inattiva           |
+| 0               | CLASSE DI \_ PRIORITÀ IN \_ TEMPO REALE      | PRIORITÀ \_ THREAD \_ TIME \_ CRITICAL |
+| 1               | CLASSE \_ CON \_ PRIORITÀ ALTA          | PRIORITÀ \_ THREAD \_ PIÙ ALTA        |
+| 2               | CLASSE \_ DI PRIORITÀ SUPERIORE ALLA \_ \_ NORMALE | PRIORITÀ \_ DEL THREAD SUPERIORE ALLA \_ \_ NORMALE  |
+| 3               | CLASSE \_ DI PRIORITÀ SUPERIORE ALLA \_ \_ NORMALE | PRIORITÀ \_ DEL THREAD SUPERIORE ALLA \_ \_ NORMALE  |
+| 4               | CLASSE \_ DI PRIORITÀ \_ NORMALE        | PRIORITÀ \_ THREAD \_ NORMALE         |
+| 5               | CLASSE \_ DI PRIORITÀ \_ NORMALE        | PRIORITÀ \_ THREAD \_ NORMALE         |
+| 6               | CLASSE \_ DI PRIORITÀ \_ NORMALE        | PRIORITÀ \_ THREAD \_ NORMALE         |
+| 7               | SOTTO \_ LA CLASSE DI PRIORITÀ \_ \_ NORMALE | PRIORITÀ \_ THREAD AL DI SOTTO DEL \_ \_ NORMALE  |
+| 8               | SOTTO \_ LA CLASSE DI PRIORITÀ \_ \_ NORMALE | PRIORITÀ \_ THREAD AL DI SOTTO DEL \_ \_ NORMALE  |
+| 9               | CLASSE \_ DI PRIORITÀ IDLE \_          | PRIORITÀ \_ THREAD \_ PIÙ BASSA         |
+| 10              | CLASSE \_ DI PRIORITÀ IDLE \_          | PRIORITÀ \_ THREAD \_ INATTIVA           |
 
 
 
  
 
-Durante la lettura o la scrittura di codice XML per un'attività, questa impostazione viene specificata nell'elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) dello schema utilità di pianificazione.
+Quando si legge o si scrive codice XML per un'attività, questa impostazione viene specificata nell'elemento [**Priority (settingsType)**](taskschedulerschema-priority-settingstype-element.md) dello schema Utilità di pianificazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,9 +76,9 @@ Durante la lettura o la scrittura di codice XML per un'attività, questa imposta
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

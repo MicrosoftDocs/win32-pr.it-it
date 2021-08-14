@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. setCheckedState2
-description: Il metodo setCheckedState2 imposta lo stato di selezione dell'elemento con l'indice specificato nell'elemento PLAYLIST.
+title: PLAYLIST.setCheckedState2
+description: Il metodo setCheckedState2 imposta lo stato selezionato dell'elemento con l'indice specificato nell'elemento PLAYLIST.
 ms.assetid: 241221a3-810b-422d-8f73-25c5b5c82c70
 keywords:
-- PLAYLIST. setCheckedState2 Windows Media Player
+- PLAYLIST.setCheckedState2 Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 37cc9c821ae783e79d327e93b0c2f297fb75eab1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6b95cb332c5f5a9d86e6f49484b27c1ab5802f28b18195f610395a1c732e369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336220"
 ---
-# <a name="playlistsetcheckedstate2"></a>PLAYLIST. setCheckedState2
+# <a name="playlistsetcheckedstate2"></a>PLAYLIST.setCheckedState2
 
-Il metodo **setCheckedState2** imposta lo stato di selezione dell'elemento con l'indice specificato nell'elemento **playlist** .
+Il **metodo setCheckedState2** imposta lo stato selezionato dell'elemento con l'indice specificato nell'elemento **PLAYLIST.**
 
 ``` syntax
         elementID.setCheckedState(item, checked)
@@ -32,27 +32,27 @@ Il metodo **setCheckedState2** imposta lo stato di selezione dell'elemento con l
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*elemento*
+<span id="item"></span><span id="ITEM"></span>*Elemento*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice dell'elemento della playlist da controllare o deselezionare.
+**Numero** (**long**) che indica l'indice dell'elemento della playlist da controllare o deselezionare.
 
 </dd> <dt>
 
-<span id="checked"></span><span id="CHECKED"></span>*selezionata*
+<span id="checked"></span><span id="CHECKED"></span>*Controllato*
 </dt> <dd>
 
-**Valore booleano** che indica se l'elemento specificato deve essere selezionato (true) o deselezionato (false).
+**Valore** booleano che indica se l'elemento specificato deve essere controllato (true) o deselezionato (false).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **valore booleano**.
+Questo metodo restituisce un valore **booleano.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può funzionare con playlist annidate e sostituisce il metodo **setCheckedState** , che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel parametro *Item* .
+Questo metodo può essere utilizzato con playlist annidate e sostituisce il **metodo setCheckedState,** che non può. È possibile impostare tutti gli elementi sullo stato richiesto specificando 1 nel *parametro item.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Questo metodo può funzionare con playlist annidate e sostituisce il metodo **se
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -68,10 +68,10 @@ Questo metodo può funzionare con playlist annidate e sostituisce il metodo **se
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. setCheckedState**](playlist-setcheckedstate.md)
+[**PLAYLIST.setCheckedState**](playlist-setcheckedstate.md)
 </dt> </dl>
 
  
