@@ -4,12 +4,12 @@ ms.assetid: 10e1f806-e408-48ab-8fe7-1d7a4d41f320
 title: System.TotalFileSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 511f21fb8f900fa85513cf8369ea54f1f52edf12
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8b27ab02b07890453210a6617fe128cf545dcd491678f94151ca407c3a1ce677
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119352351"
 ---
 # <a name="systemtotalfilesize"></a>System.TotalFileSize
 

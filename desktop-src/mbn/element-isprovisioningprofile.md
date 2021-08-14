@@ -7,18 +7,18 @@ MSHAttr:
 title: IsProvisioningProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be857d96473fa81f0bf72580ced811de56eb2436
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5f385b1d81f926956a2686bce42643b02fb22a56a95a32769ffe975da9a655c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066425"
 ---
 # <a name="span-idwwan_profile_v4element_isprovisioningprofilespanisprovisioningprofile"></a><span id="WWAN_profile_v4.element_IsProvisioningProfile"></span>IsProvisioningProfile
 
-Specifica che il profilo deve essere usato solo per il provisioning. In caso contrario, il profilo non è applicabile e non può essere utilizzato per attivare un contesto del protocollo PDP (Packet Data Protocol). Questo elemento è nuovo per V4.
+Specifica che questo profilo deve essere usato solo per il provisioning. In caso contrario, il profilo non è applicabile e non può essere usato per attivare un contesto PDP (Packet Data Protocol). Questo elemento è una novità per v4.
 
-Se **IsProvisioningProfile** è true, l' [**impostazione predefinita**](element-isdefault.md) deve essere false e [**ConnectionMode**](element-connectionmode.md) deve essere manuale.
+Se **IsProvisioningProfile** è true, [**IsDefault**](element-isdefault.md) deve essere false e [**ConnectionMode**](element-connectionmode.md) deve essere manuale.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -39,11 +39,11 @@ Se **IsProvisioningProfile** è true, l' [**impostazione predefinita**](element-
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 
@@ -61,8 +61,8 @@ Nessuna.
 <tbody>
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>L'elemento <strong>MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo a banda larga mobile con un set di opzioni più completo rispetto all'elemento MBNProfile.</p>
-<p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un determinato set di condizioni operative. Usare l'elemento figlio <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono il profilo attivo un profilo specifico.</p></td>
+<td><p><strong>L'elemento MBNProfileExt</strong> è un'estensione dell'elemento MBNProfile precedente. Identifica un profilo Mobile Broadband con un set di opzioni più ricco rispetto all'elemento MBNProfile.</p>
+<p>In un profilo possono essere presenti più elementi MbnProfileExt, che descrivono le impostazioni del profilo per un particolare set di condizioni operative. Usare <a href="element-profileconditionedon.md"><strong>l'elemento figlio ProfileConditionedOn</strong></a> di <strong>MBNProfileExt</strong> per specificare le condizioni operative che rendono un profilo specifico il profilo attivo.</p></td>
 </tr>
 </tbody>
 </table>

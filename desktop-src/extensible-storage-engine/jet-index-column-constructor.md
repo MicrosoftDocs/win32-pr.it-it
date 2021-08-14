@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Costruttore JET_INDEX_COLUMN'
-title: Costruttore JET_INDEX_COLUMN (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: JET_INDEX_COLUMN costruttore'
+title: JET_INDEX_COLUMN costruttore (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JET_INDEX_COLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_COLUMN.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_column.jet_index_column(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dabf9e7ffa4d823fe96b0306850d1e7d54fc4a0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cbf910f6b4e80bea217901e02845cbdcdffebe215206638dce7bfdd651b0be7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980391"
 ---
-# <a name="jet_index_column-constructor"></a>Costruttore JET_INDEX_COLUMN
+# <a name="jet_index_column-constructor"></a>JET_INDEX_COLUMN costruttore
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,8 +54,8 @@ public JET_INDEX_COLUMN()
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_INDEX_COLUMN](./jet-index-column-class.md)
+[JET_INDEX_COLUMN classe](./jet-index-column-class.md)
 
-[Membri JET_INDEX_COLUMN](./jet-index-column-members.md)
+[JET_INDEX_COLUMN membri](./jet-index-column-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

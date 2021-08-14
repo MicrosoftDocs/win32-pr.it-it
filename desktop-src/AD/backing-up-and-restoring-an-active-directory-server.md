@@ -1,53 +1,53 @@
 ---
-title: Backup e ripristino di un server di Active Directory
-description: Active Directory Domain Services forniscono funzioni per il backup e il ripristino dei dati nel database di directory.
+title: Backup e ripristino di un server Active Directory
+description: Active Directory Domain Services funzioni per il backup e il ripristino dei dati nel database della directory.
 ms.assetid: d9b9db51-ed1b-4db4-a4de-b8798c9647ac
 ms.tgt_platform: multiple
 keywords:
-- Active Directory Domain Services, utilizzo, backup e ripristino
+- Active Directory Domain Services, uso, backup e ripristino
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a92d57c2ddf572db8806aca71282e6b4fd8799ee
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 1955c70daed8cfaed0f5afe6c498a599aebb30f5d7b1846442d22cf84e9634e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118024158"
 ---
-# <a name="backing-up-and-restoring-an-active-directory-server"></a>Backup e ripristino di un server di Active Directory
+# <a name="backing-up-and-restoring-an-active-directory-server"></a>Backup e ripristino di un server Active Directory
 
-Active Directory Domain Services forniscono funzioni per il backup e il ripristino dei dati nel database di directory. In questa sezione viene descritto come [eseguire il backup](backing-up-an-active-directory-server.md) e il [ripristino](restoring-an-active-directory-server.md) di un server Active Directory. Per ulteriori informazioni sul backup di un server di Active Directory utilizzando le utilità disponibili nei sistemi operativi Windows 2000 e Windows Server 2003, vedere il Resource Kit applicabile, disponibile sul sito Web Microsoft TechNet.
+Active Directory Domain Services funzioni per il backup e il ripristino dei dati nel database della directory. Questa sezione descrive come eseguire [il backup e](backing-up-an-active-directory-server.md) il ripristino di [un](restoring-an-active-directory-server.md) server Active Directory. Per altre informazioni sul backup di un server Active Directory usando le utilità fornite nei sistemi operativi Windows 2000 e Windows Server 2003, vedere il Resource Kit applicabile, disponibile nel sito Web Microsoft TechNet.
 
-Il backup di un server di Active Directory deve essere eseguito online e deve essere eseguito durante l'installazione del Active Directory Domain Services. Active Directory Domain Services si basano su un database speciale ed esporta un set di funzioni di backup che forniscono l'interfaccia di backup a livello di codice. Il backup non supporta i backup incrementali. Un'applicazione di backup viene associata a una DLL sul lato client locale con i punti di ingresso definiti in ntdsbcli. h.
+Il backup di un server Active Directory deve essere eseguito online e deve essere eseguito quando Active Directory Domain Services installati. Active Directory Domain Services si basano su un database speciale ed esportano un set di funzioni di backup che forniscono l'interfaccia di backup a livello di codice. Il backup non supporta i backup incrementali. Un'applicazione di backup esegue il binding a una DLL sul lato client locale con i punti di ingresso definiti in Ntdsbcli.h.
 
-Il ripristino di un server di Active Directory viene sempre eseguito offline.
+Il ripristino di un server Active Directory viene sempre eseguito offline.
 
-Sebbene gli argomenti di questa sezione descrivano solo come eseguire il backup e il ripristino di un server di Active Directory, tenere presente che Windows 2000 e i sistemi operativi Windows Server 2003 hanno diversi componenti "stato del sistema" che devono essere sottoposti a backup e ripristinati insieme. Questi componenti di stato del sistema sono costituiti da:
+Anche se negli argomenti di questa sezione viene descritto solo come eseguire il backup e il ripristino di un server Active Directory, tenere presente che Windows 2000 e i sistemi operativi Windows Server 2003 hanno diversi componenti "stato del sistema" che devono essere sottoposti a backup e ripristino insieme. Questi componenti dello stato del sistema sono costituiti da:
 
--   File di avvio, ad esempio Ntldr, Ntdetect, tutti i file protetti da SFP e la configurazione del contatore delle prestazioni
--   Controller di Dominio di Active Directory
+-   File di avvio come ntldr, ntdetect, tutti i file protetti da SFP e la configurazione dei contatori delle prestazioni
+-   Controller Dominio di Active Directory
 -   SysVol (solo controller di dominio)
--   Server di certificazione (solo CA)
--   Database cluster (solo nodo cluster)
+-   Server dei certificati (solo CA)
+-   Database del cluster (solo nodo del cluster)
 -   Registro
 -   Database di registrazione della classe COM+
 
 È possibile eseguire il backup dello stato del sistema in qualsiasi ordine, ma il ripristino dello stato del sistema deve essere eseguito nell'ordine seguente:
 
 1.  Ripristinare i file di avvio.
-2.  Ripristinare SysVol, server di certificati, database cluster e database di registrazione della classe COM+, come applicabile.
+2.  Ripristinare SysVol, Il server di certificati, il database cluster e il database di registrazione della classe COM+, se applicabile.
 3.  Ripristinare il server Active Directory.
-4.  Ripristinare il registro di sistema.
+4.  Ripristinare il Registro di sistema.
 
-Per ulteriori informazioni sul backup e il ripristino di Servizi certificati, vedere [utilizzo delle funzioni di backup e ripristino di Servizi certificati](/windows/desktop/SecCrypto/using-the-certificate-services-backup-and-restore-functions).
+Per altre informazioni sul backup e il ripristino di Servizi certificati, vedere [Uso delle funzioni di backup e](/windows/desktop/SecCrypto/using-the-certificate-services-backup-and-restore-functions)ripristino di Servizi certificati .
 
-Per ulteriori informazioni sul backup e il ripristino di Active Directory Domain Services, vedere:
+Per altre informazioni sul backup e il ripristino di Active Directory Domain Services, vedere:
 
--   [Considerazioni per il backup Active Directory Domain Services](considerations-for-active-directory-domain-services-backup.md)
--   [Esecuzione del backup di un server di Active Directory](backing-up-an-active-directory-server.md)
--   [Ripristino di un server di Active Directory](restoring-an-active-directory-server.md)
+-   [Considerazioni per il Active Directory Domain Services backup](considerations-for-active-directory-domain-services-backup.md)
+-   [Backup di un server Active Directory](backing-up-an-active-directory-server.md)
+-   [Ripristino di un server Active Directory](restoring-an-active-directory-server.md)
 -   [Funzioni di backup della directory](directory-backup-functions.md)
 
- 
+ 
 
- 
+ 

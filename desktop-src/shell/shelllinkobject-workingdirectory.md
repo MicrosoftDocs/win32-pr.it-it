@@ -1,7 +1,7 @@
 ---
 description: Ottiene o imposta la directory di lavoro specificata nel collegamento.
 ms.assetid: c3820deb-9f00-42a9-ab0e-c0f6389e9f29
-title: Proprietà ShellLinkObject. WorkingDirectory (shldisp. h)
+title: Proprietà ShellLinkObject.WorkingDirectory (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d8788899a06179056cd871b68e4e64566bcd5ee6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa5718f26a3947244657904c2ac03a67fa7e8f2f947983f008e272e46456d2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119337101"
 ---
-# <a name="shelllinkobjectworkingdirectory-property"></a>Proprietà ShellLinkObject. WorkingDirectory
+# <a name="shelllinkobjectworkingdirectory-property"></a>ShellLinkObject.WorkingDirectory - proprietà
 
 Ottiene o imposta la directory di lavoro specificata nel collegamento.
 
@@ -38,13 +38,13 @@ ShellLinkObject.WorkingDirectory(sWorkingDirectory) = strWorkingDirectory
 
 ## <a name="property-value"></a>Valore proprietà
 
-percorso completo della directory di lavoro del collegamento.
+Percorso completo della directory di lavoro del collegamento.
 
 ## <a name="examples"></a>Esempio
 
 Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà in JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -172,11 +172,11 @@ Private Sub fnShellLinkObjectWorkingDirectoryVB()
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Contiene un vettore di inizializzazione (IV) per la crittografia a blocchi a 128 bit Advanced Encryption Standard CTR (AES-CTR).
+description: Contiene un vettore di inizializzazione (IV) per la crittografia a blocchi Advanced Encryption Standard CTR (AES-CTR) a 128 bit.
 ms.assetid: 2ee738c2-d56c-4a50-94b8-b7180918aa8c
-title: Struttura D3DAES_CTR_IV (D3d9types. h)
+title: D3DAES_CTR_IV struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 6e0d543fb0e57ae34f181e7ff0f40a1a1f8222b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09535b432ff1af60ad33b622810d0d8a4d190cb81650214aa71b445ba3c22f4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974790"
 ---
-# <a name="d3daes_ctr_iv-structure"></a>\_Struttura D3DAES CTR \_ IV
+# <a name="d3daes_ctr_iv-structure"></a>Struttura \_ CTR IV D3DAES \_
 
-Contiene un vettore di inizializzazione (IV) per la crittografia a blocchi a 128 bit Advanced Encryption Standard CTR (AES-CTR).
+Contiene un vettore di inizializzazione (IV) per la crittografia a blocchi Advanced Encryption Standard CTR (AES-CTR) a 128 bit.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,22 +43,22 @@ typedef struct _D3DAES_CTR_IV {
 **IV**
 </dt> <dd>
 
-IV, nel formato big-endian.
+Vettore di inizializzazione, in formato big-endian.
 
 </dd> <dt>
 
 **Count**
 </dt> <dd>
 
-Conteggio dei blocchi, nel formato big-endian.
+Numero di blocchi, in formato big-endian.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La struttura **D3DAES \_ CTR \_ IV** e la struttura [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) sono equivalenti.
+La **struttura \_ CTR \_ IV D3DAES** e la struttura [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv) sono equivalenti.
 
-Per informazioni dettagliate, vedere [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv).
+Per informazioni dettagliate, vedere [**DXVA2 \_ AES \_ CTR \_ IV.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_aes_ctr_iv)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,9 +66,9 @@ Per informazioni dettagliate, vedere [**DXVA2 \_ AES \_ CTR \_ IV**](/windows/de
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h (include d3d9. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                 |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h (includere D3d9.h)</dt> </dl> |
 
 
 

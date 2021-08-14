@@ -1,17 +1,17 @@
 ---
-title: Effetto seppia
+title: Effetto Sepia
 description: Converte un'immagine in tonalità seppia.
 ms.assetid: fe321be9-6ade-bd0c-1c66-cc8042e5a5e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf6ead1d439e86cbd35be14d1f0ae32923de408d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c30b2fcd49b30306b055f60bb3e4262a22740d8efa168ade428698c7b23ce10d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664984"
 ---
-# <a name="sepia-effect"></a>Effetto seppia
+# <a name="sepia-effect"></a>Effetto Sepia
 
 Converte un'immagine in tonalità seppia.
 
@@ -19,13 +19,13 @@ Il CLSID per questo effetto è CLSID \_ D2D1Sepia.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/sepia-effect.png)
+![esempio di output dell'effetto](images/sepia-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -47,9 +47,9 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto seppia sono definite dall'enumerazione [**d2d1 \_ seppia \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_sepia_prop) .
+Le proprietà per l'effetto seppia sono definite [**dall'enumerazione D2D1 \_ SEPIA \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_sepia_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,10 +57,10 @@ Le proprietà per l'effetto seppia sono definite dall'enumerazione [**d2d1 \_ se
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Argomenti correlati

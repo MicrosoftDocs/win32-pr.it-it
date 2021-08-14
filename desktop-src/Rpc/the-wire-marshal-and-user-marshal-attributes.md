@@ -1,28 +1,28 @@
 ---
-title: Attributi wire_marshal e user_marshal
-description: In questa sezione viene illustrata l'implementazione della conversione dei tipi di dati del programmatore mediante gli attributi MIDL \ Wire \_ Marshal \ e \ User \_ Marshal \.
+title: Attributi wire_marshal e user_marshal personalizzati
+description: In questa sezione viene illustrata l'implementazione della conversione dei tipi di dati del programmatore tramite gli attributi MIDL \ wire \_ marshal\ e \ user \_ marshal\.
 ms.assetid: 0ee2ce86-cd14-4659-a69f-6336145359da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a789f11fa15a20eab0fcd468cc410bb5a7200717
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 31cd6391648cf2ac94cead13b55f7724e7e4125cb99f9a2610ad032dc08a5447
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923470"
 ---
-# <a name="the-wire_marshal-and-user_marshal-attributes"></a>\_Attributi di marshalling di rete e di \_ marshalling degli utenti
+# <a name="the-wire_marshal-and-user_marshal-attributes"></a>Attributi wire \_ marshal e user \_ marshal
 
-In questa sezione viene illustrata l'implementazione della conversione dei tipi di dati del programmatore utilizzando il \[ [ \_ marshalling Wire](/windows/desktop/Midl/wire-marshal) \] e \[ gli attributi di [ \_ marshalling degli utenti](/windows/desktop/Midl/user-marshal) \] . Le informazioni vengono presentate nelle sezioni seguenti:
+In questa sezione viene illustrata l'implementazione della conversione dei tipi di dati del programmatore tramite il wire marshal MIDL e gli attributi di \[ [ \_ ](/windows/desktop/Midl/wire-marshal) \] \[ [ \_ marshalling utente.](/windows/desktop/Midl/user-marshal) \] Le informazioni vengono presentate nelle sezioni seguenti:
 
--   [Attributo Wire \_ Marshal](the-wire-marshal-attribute.md)
--   [\_Attributo Marshal utente](the-user-marshal-attribute.md)
--   [Funzione di tipo \_ UserSize](the-type-usersize-function.md)
--   [Funzione di tipo \_ UserMarshal](the-type-usermarshal-function.md)
--   [Funzione di tipo \_ UserUnmarshal](the-type-userunmarshal-function.md)
--   [Funzione di tipo \_ UserFree](the-type-userfree-function.md)
--   [Regole di marshalling per \_ marshalling utente e \_ marshalling di rete](marshaling-rules-for-user-marshal-and-wire-marshal.md)
+-   [Attributo wire \_ marshal](the-wire-marshal-attribute.md)
+-   [Attributo \_ marshalling utente](the-user-marshal-attribute.md)
+-   [Funzione \_ UserSize di tipo](the-type-usersize-function.md)
+-   [Funzione \_ UserMarshal di tipo](the-type-usermarshal-function.md)
+-   [Funzione \_ UserUnmarshal di tipo](the-type-userunmarshal-function.md)
+-   [Funzione \_ UserFree di tipo](the-type-userfree-function.md)
+-   [Regole di marshalling per il marshalling \_ dell'utente e il wire \_ marshal](marshaling-rules-for-user-marshal-and-wire-marshal.md)
 
- 
+ 
 
- 
+ 

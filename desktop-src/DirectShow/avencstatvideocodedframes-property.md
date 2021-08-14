@@ -1,17 +1,17 @@
 ---
 description: Restituisce il numero di fotogrammi video codificati.
 ms.assetid: ade9fe69-b3dd-44aa-856b-75d4a7e4c680
-title: Proprietà AVEncStatVideoCodedFrames (codecapis. h)
+title: Proprietà AVEncStatVideoCodedFrames (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aed3ed0a06003807a6bd0db90b8978282042daf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 34f8858aba7a36d79096eccad40990e1859d4073695aaf80910587bac4005d6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342562"
 ---
-# <a name="avencstatvideocodedframes-property"></a>Proprietà AVEncStatVideoCodedFrames
+# <a name="avencstatvideocodedframes-property"></a>AVEncStatVideoCodedFrames - proprietà
 
 Restituisce il numero di fotogrammi video codificati.
 
@@ -19,17 +19,17 @@ Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncStatVideoCodedFrames**
+**CODECAPI \_ AVEncStatVideoCodedFrames**
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà è disponibile al termine della codifica.
+Questa proprietà è disponibile dopo il completamento della codifica.
 
-Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md) meno il numero di frame eliminati. Il codificatore potrebbe rilasciare frame per rimanere entro i vincoli di velocità in bit specificati. Potrebbe inoltre rilasciare frame alla fine del flusso (vedere la proprietà [**AVEncCommonStreamEndHandling**](avenccommonstreamendhandling-property.md) ).
+Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md) meno il numero di fotogrammi rilasciati. Il codificatore potrebbe eliminare i fotogrammi per rimanere entro i vincoli di velocità in bit specificati. Potrebbe anche eliminare i frame alla fine del flusso (vedere la proprietà [**AVEncCommonStreamEndHandling).**](avenccommonstreamendhandling-property.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalF
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalF
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà dell'API Codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

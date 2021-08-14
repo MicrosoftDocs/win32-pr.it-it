@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: e8463cc3940b69e326f13df6be9602dd6073fec0
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: b03a6c2a4806724cd7cfdc97354e29e86dc60e0f1729ee9efeca89d971ca0a64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758101"
 ---
 # <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: Uso del livello quando la clip è sufficiente
 

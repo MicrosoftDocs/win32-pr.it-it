@@ -1,9 +1,9 @@
 ---
-title: Attributo IDLibreria
-description: L'attributo IDLibreria è l'identificatore della libreria a cui appartiene l'elemento.
+title: Attributo LibraryID
+description: L'attributo LibraryID è l'identificatore della libreria a cui appartiene l'elemento.
 ms.assetid: 680d9374-8729-4258-8672-b4b93b65e20a
 keywords:
-- Attributo IDLibreria Windows Media Player
+- Attributo LibraryID Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47ae9e5ad097bc188b8de1e76a09448c57aa9b83
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a011db4e18509761c232bcf5439e33445128ef77c50945f84662a7b7956f607f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468221"
 ---
-# <a name="libraryid-attribute"></a>Attributo IDLibreria
+# <a name="libraryid-attribute"></a>Attributo LibraryID
 
-L'attributo **IDLibreria** è l'identificatore della libreria a cui appartiene l'elemento.
+**L'attributo LibraryID** è l'identificatore della libreria a cui appartiene l'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -32,9 +32,9 @@ L'attributo **IDLibreria** è l'identificatore della libreria a cui appartiene l
 
 ## <a name="remarks"></a>Commenti
 
-Un elemento multimediale può appartenere alla libreria locale dell'utente corrente oppure può appartenere a una libreria resa disponibile da un altro utente nella rete domestica o in Internet.
+Un elemento multimediale potrebbe appartenere alla libreria locale dell'utente corrente o a una libreria resa disponibile da un altro utente nella rete domestica o in Internet.
 
-Il valore di questo attributo corrisponde al valore restituito dal metodo [**IWMPLibrary2:: GetItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name) .
+Il valore di questo attributo è lo stesso del valore restituito dal metodo [**IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Il valore di questo attributo corrisponde al valore restituito dal metodo [**IWM
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

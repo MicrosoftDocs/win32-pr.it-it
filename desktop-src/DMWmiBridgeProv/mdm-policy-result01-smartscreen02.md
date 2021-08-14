@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_SmartScreen02
-description: La \_ classe SmartScreen02 dei criteri MDM \_ Result01 \_ rappresenta i criteri della Smart Screen.
+title: MDM_Policy_Result01_SmartScreen02 classe
+description: La classe Mdm \_ \_ Policy Result01 \_ SmartScreen02 rappresenta i criteri dello smart screen.
 ms.assetid: 9a775712-ce42-48c2-b286-eaf7ca8fed20
 keywords:
-- Classe MDM_Policy_Result01_SmartScreen02
-- Classe MDM_Policy_Result01_SmartScreen02, descritta
+- MDM_Policy_Result01_SmartScreen02 classe
+- MDM_Policy_Result01_SmartScreen02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03a49aad764492c54b43327cfb71c0c93fa36870
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e3cf7a422a92b2e4dc58c991301caeb5cbcfd6b7f05bd83736ccb6565cb44a36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433271"
 ---
-# <a name="mdm_policy_result01_smartscreen02-class"></a>\_ \_ Classe Result01 SmartScreen02 di criteri \_ MDM
+# <a name="mdm_policy_result01_smartscreen02-class"></a>Classe \_ \_ SmartScreen02 MDM Policy \_ Result01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-la \_ classe SmartScreen02 dei criteri MDM \_ Result01 \_ rappresenta i criteri della Smart Screen.
+La classe \_ \_ \_ SmartScreen02 MDM Policy Result01 rappresenta i criteri dello smart screen.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -48,13 +48,13 @@ class MDM_Policy_Result01_SmartScreen02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ SmartScreen02 dei criteri MDM** ha questi tipi di membri:
+La **classe \_ \_ \_ SmartScreen02 MDM Policy Result01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ SmartScreen02 dei criteri MDM Result01** ha queste proprietà.
+La **classe \_ \_ \_ SmartScreen02 MDM Policy Result01** ha queste proprietà.
 
 <dl> <dt>
 
@@ -64,7 +64,7 @@ La **classe \_ \_ \_ SmartScreen02 dei criteri MDM Result01** ha queste propriet
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,7 +75,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -83,27 +83,27 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -114,7 +114,7 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -125,10 +125,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. editButtonVisible
-description: L'attributo editButtonVisible specifica o recupera un valore che indica se il pulsante di modifica della playlist è visibile.
+title: PLAYLIST.editButtonVisible
+description: L'attributo editButtonVisible specifica o recupera un valore che indica se il pulsante di modifica playlist è visibile.
 ms.assetid: 716e5484-b4b0-49a6-a778-ead1479fda54
 keywords:
-- PLAYLIST. editButtonVisible Windows Media Player
+- PLAYLIST.editButtonVisible Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48534d9e933f5c0e304fe0bb743c048c765cc772
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8e22712e37f3fcd800677af0659673d9ca85d818b86b1efdf8f039f731b0306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467741"
 ---
-# <a name="playlisteditbuttonvisible"></a>PLAYLIST. editButtonVisible
+# <a name="playlisteditbuttonvisible"></a>PLAYLIST.editButtonVisible
 
-L'attributo **editButtonVisible** specifica o recupera un valore che indica se il pulsante di modifica della playlist è visibile.
+**L'attributo editButtonVisible** specifica o recupera un valore che indica se il pulsante di modifica playlist è visibile.
 
 ``` syntax
         elementID.editButtonVisible
@@ -29,7 +29,7 @@ L'attributo **editButtonVisible** specifica o recupera un valore che indica se i
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
@@ -44,7 +44,7 @@ Questo attributo è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si imposta questo attributo su true, il pulsante di modifica della playlist verrà visualizzato nell'angolo inferiore sinistro dell'elemento **playlist** . Se si fa clic su questo pulsante, viene visualizzato un menu di opzioni che consente all'utente di modificare, deselezionare, ordinare, aprire, salvare o copiare una playlist.
+Quando si imposta questo attributo su true, il pulsante di modifica della playlist verrà visualizzato nell'angolo inferiore sinistro **dell'elemento PLAYLIST.** Facendo clic su questo pulsante viene visualizzato un menu di opzioni che consente all'utente di modificare, cancellare, ordinare, aprire, salvare o copiare una playlist.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,7 +52,7 @@ Quando si imposta questo attributo su true, il pulsante di modifica della playli
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -60,7 +60,7 @@ Quando si imposta questo attributo su true, il pulsante di modifica della playli
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

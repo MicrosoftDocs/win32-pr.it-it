@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 66a5cf068545f31f9919a9da60a1b09b32f78e4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7352c00ead9647c887bf9901f8c159dae2883f77d6d263fcea39de0063b34a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431511"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Metodo RemoveAssociatedData della classe Msvm \_ CollectionReferencePointService
 
@@ -50,7 +50,7 @@ Riferimento alla raccolta di punti di riferimento del sistema virtuale interessa
 *Processo* \[ Cambio\]
 </dt> <dd>
 
-Se l'operazione è a esecuzione lunga, facoltativamente può essere restituito un processo.
+Se l'operazione è a esecuzione lunga, è possibile che venga restituito un processo.
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ In caso di esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviat
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DmTF riservato** (..)
+**DMTF riservato** (..)
 </dt> <dt>
 
 **Parametri del metodo controllati - Processo avviato** (4096)
@@ -99,7 +99,7 @@ In caso di esito positivo, restituisce 0 (nessun errore) o 4096 (processo avviat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

@@ -1,10 +1,10 @@
 ---
-title: Struttura DRM_LICENSE_STATE_DATA (wmdrmsdk. h)
-description: La \_ \_ struttura dei dati di stato delle licenze DRM \_ contiene informazioni sulle restrizioni di licenza per un diritto DRM.
+title: DRM_LICENSE_STATE_DATA struttura (Wmdrmsdk.h)
+description: La struttura DRM \_ LICENSE STATE DATA contiene informazioni sulle restrizioni di licenza per un diritto \_ \_ DRM.
 ms.assetid: 822d60ae-5d96-4577-8564-0e1adafa5dd5
 keywords:
-- Formato di Windows Media per la struttura DRM_LICENSE_STATE_DATA
-- struttura Windows Media Format
+- DRM_LICENSE_STATE_DATA struttura windows Media Format
+- Struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b02f38b8f09b7b444949e9477635e6b8770fc168
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63ba00384ec7c3340aa099f1b427cd8953969704bd0585f0da58cd4fd0ffd6ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708931"
 ---
-# <a name="drm_license_state_data-structure-wmdrmsdkh"></a>Struttura DRM_LICENSE_STATE_DATA (wmdrmsdk. h)
+# <a name="drm_license_state_data-structure-wmdrmsdkh"></a>DRM_LICENSE_STATE_DATA struttura (Wmdrmsdk.h)
 
-La **struttura \_ \_ \_ dei dati di stato delle licenze DRM** contiene informazioni sulle restrizioni di licenza per un diritto DRM.
+La **struttura DRM \_ LICENSE STATE \_ \_ DATA** contiene informazioni sulle restrizioni di licenza per un diritto DRM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,14 +50,14 @@ typedef struct DRM_LICENSE_STATE_DATA {
 **dwStreamId**
 </dt> <dd>
 
-Numero di flusso a cui si applica la licenza. Deve essere 0, che indica che la licenza viene applicata a tutti i flussi del file.
+Numero di flusso a cui si applica la licenza. Deve essere 0, che indica che la licenza si applica a tutti i flussi nel file.
 
 </dd> <dt>
 
 **dwCategory**
 </dt> <dd>
 
-Categoria di stringa da visualizzare. Vedere [**la \_ \_ \_ categoria dello stato della licenza DRM**](drmdrm-license-state-category.md) per i valori possibili e il relativo significato.
+Categoria di stringa da visualizzare. Vedere [**DRM \_ LICENSE STATE \_ CATEGORY \_ per**](drmdrm-license-state-category.md) i valori possibili e il relativo significato.
 
 </dd> <dt>
 
@@ -71,36 +71,36 @@ Numero di elementi forniti in **dwCount**. Questo valore è in genere 0 o 1.
 **dwCount \[ 4\]**
 </dt> <dd>
 
-Matrice di 0 o 1 o più valori **DWORD** che rappresentano il numero di volte in cui è possibile eseguire l'azione specificata in **dwCategory** . Vedere la sezione Osservazioni.
+Matrice di 0 o 1 o più **valori DWORD** che rappresentano il numero di volte in cui può essere eseguita l'azione specificata in **dwCategory.** Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
 **dwNumDates**
 </dt> <dd>
 
-Numero di elementi forniti in **DateTime**. In genere, non vengono usate più di due date, ad esempio, con una licenza valida da una data fino a un'altra data.
+Numero di elementi forniti in **datetime.** In genere non vengono usate più di due date, ad esempio con una licenza valida da una data a un'altra.
 
 </dd> <dt>
 
-**DateTime \[ 4\]**
+**datetime \[ 4\]**
 </dt> <dd>
 
-Matrice di una o più strutture **FILETIME** che rappresentano una o più date nella licenza. Il significato di una determinata data dipende dal valore di **dwCategory**.
+Matrice di una o più **strutture FILETIME** che rappresentano una o più date nella licenza. Il significato di una data specifica dipende dal valore di **dwCategory**.
 
 </dd> <dt>
 
 **dwVague**
 </dt> <dd>
 
-Zero o più dei flag seguenti combinati con un **or** bit per bit:
+Zero o più dei flag seguenti combinati con un'operazione OR bit per **bit:**
 
 
 
 | Flag                                    | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_dati di stato della licenza DRM \_ \_ \_ vaghi        | Se impostato, potrebbero essere presenti più licenze valide per il contenuto. L'unico modo per essere certi sulle singole licenze che si applicano a un ID chiave specifico è enumerare le licenze. A tale scopo, chiamare [**IWMDRMLicenseManagement:: CreateLicenseEnumeration**](iwmdrmlicensemanagement-createlicenseenumeration.md), passando l'ID chiave come parametro bstrKID. Usare quindi l'interfaccia IWMDRMLicense recuperata per esaminare le licenze. |
-| \_OPL dati di stato della licenza DRM \_ \_ \_ \_ presenti | Se impostata, la licenza include i livelli di protezione dell'output (OPLs) che devono essere recuperati e controllati rispetto alla destinazione dell'output dell'applicazione.                                                                                                                                                                                                                                                                                  |
-| \_ \_ \_ \_ SAP presente dati di stato delle licenze DRM \_ | Se impostato, il contenuto deve essere recapitato usando il percorso audio sicuro (SAP).                                                                                                                                                                                                                                                                                                                                                                   |
+| DATI SULLO STATO DELLE LICENZE DRM \_ \_ \_ \_ VAGHE        | Se impostato, potrebbero essere presenti più licenze che si applicano al contenuto. L'unico modo per essere certi delle singole licenze che si applicano a un DETERMINATO ID chiave è enumerare le licenze. A tale scopo, chiamare [**IWMDRMLicenseManagement::CreateLicenseEnumeration**](iwmdrmlicensemanagement-createlicenseenumeration.md), passando l'ID chiave come parametro bstrKID. Usare quindi l'interfaccia IWMDRMLicense recuperata per esaminare le licenze. |
+| DRM \_ LICENSE \_ STATE \_ DATA \_ OPL \_ PRESENT | Se impostata, la licenza include i livelli di protezione dell'output (OPL) che devono essere recuperati e verificati rispetto alla destinazione dell'output dell'applicazione.                                                                                                                                                                                                                                                                                  |
+| DRM \_ LICENSE \_ STATE \_ DATA \_ SAP \_ PRESENT | Se impostato, il contenuto deve essere recapitato usando un percorso audio sicuro (SAP).                                                                                                                                                                                                                                                                                                                                                                   |
 
 
 
@@ -110,13 +110,13 @@ Zero o più dei flag seguenti combinati con un **or** bit per bit:
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene recuperata chiamando **IWMDRMLicenseQuery:: QueryLicenseState**.
+Questa struttura viene recuperata chiamando **IWMDRMLicenseQuery::QueryLicenseState**.
 
-Se **dwCategory** è **il \_ \_ \_ conteggio dello stato di licenza WM DRM \_ \_ da \_ fino a**, la matrice **DateTime** conterrà in genere due date: una data "from" e una data "until". È anche possibile specificare due coppie di date per creare licenze più complesse.
+Se **dwCategory** è **WM \_ DRM LICENSE STATE COUNT \_ FROM \_ \_ \_ \_ UNTIL**, la matrice **datetime** conterrà in genere due date: una data "da" e una data "fino a". È anche possibile specificare due coppie di date per creare licenze più complesse.
 
-Gli elementi della matrice **dwCount** corrispondono agli intervalli di date o date specificati nella matrice **DateTime** . Se **dwCategory** è **il \_ \_ \_ conteggio dello stato di licenza WM DRM \_ \_ da \_ until** e **DateTime** contiene una coppia di date, **dwCount** conterrà un elemento. Se **DateTime** contiene due coppie di date (quattro elementi), **dwCount** deve contenere due elementi, uno per ogni coppia di date.
+Gli elementi della matrice **dwCount** corrispondono alle date o agli intervalli di date specificati nella **matrice datetime.** Se **dwCategory è** **WM \_ DRM LICENSE STATE COUNT \_ \_ FROM \_ \_ \_ UNTIL** e **datetime** contiene una coppia di date, **dwCount** conterrà un elemento. Se **datetime** contiene due coppie di date (quattro elementi), **dwCount** deve contenere due elementi, uno per ogni coppia di date.
 
-In alcuni casi, è possibile che agli utenti sia stata rilasciata più di una licenza per un file. Potrebbero ad esempio avere acquisito una licenza che consentiva cinque Play fino alla fine del mese e successivamente ha acquisito una seconda licenza per diritti illimitati. In tal caso, il \_ \_ flag di dati dello stato delle licenze DRM \_ \_ è impostato in **dwVague** ( `dwVague & DRM_LICENSE_STATE_DATA_VAGUE != 0` ) e il componente DRM utilizzerà un algoritmo per determinare il set di diritti più probabile applicato. Quando una licenza scade, il componente DRM esaminerà le licenze rimanenti e così via fino a quando tutte le licenze non saranno scadute.
+In alcuni casi, è possibile che agli utenti sia stata rilasciata più di una licenza per un file. Ad esempio, potrebbero aver acquisito una licenza che ha consentito cinque giochi fino alla fine del mese e successivamente acquisito una seconda licenza per diritti illimitati. In tal caso, il flag DRM LICENSE STATE DATA VAGUE è impostato \_ \_ in \_ \_ **dwVague** ( ) e il componente `dwVague & DRM_LICENSE_STATE_DATA_VAGUE != 0` DRM userà un algoritmo per determinare il set più probabile di diritti applicati. Alla scadenza di una licenza, il componente DRM esaminerà le licenze rimanenti e così via fino alla scadenza di tutte le licenze.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -124,7 +124,7 @@ In alcuni casi, è possibile che agli utenti sia stata rilasciata più di una li
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

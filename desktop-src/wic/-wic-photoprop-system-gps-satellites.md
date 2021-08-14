@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. satellites.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.Satellites.
 ms.assetid: 5dbbbeaf-e67d-45f6-95b2-de3287202d41
-title: Criteri dei metadati delle foto di System. GPS. Satellites
+title: Criteri dei metadati delle foto di System.GPS.Satellites
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 980393accdb1bee3d2a44dd539f3c9fb169c648b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a65bdc244324df513b5029c682e9c2cb355da58f2c95d13910fe093ce2521c8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964840"
 ---
-# <a name="systemgpssatellites-photo-metadata-policy"></a>Criteri dei metadati delle foto di System. GPS. Satellites
+# <a name="systemgpssatellites-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.Satellites
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. Satellites](../properties/props-system-gps-satellites.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.Satellites.](../properties/props-system-gps-satellites.md)
 
 ### <a name="pkey"></a>PKEY
 
-\_ \_ Satelliti GPS pkey
+PKEY \_ GPS \_ Satellites
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ Stringa.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 8} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | unicode     |
 
 
@@ -60,20 +60,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 8} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 8} |
+| 1     | /app1/ifd/gps/{ushort=8} |
 | 2     | /xmp/exif:gpssatellites  |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                        | Formato disco |
 |-------|-----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 8}         | ascii       |
+| 1     | /ifd/gps/{ushort=8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | unicode     |
 
 
@@ -101,20 +101,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                        | Formato disco |
 |-------|-----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 8}         | ascii       |
+| 1     | /ifd/gps/{ushort=8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                        |
 |-------|-----------------------------|
-| 1     | /IFD/GPS/{ushort = 8}         |
+| 1     | /ifd/gps/{ushort=8}         |
 | 2     | /ifd/xmp/exif:gpssatellites |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. Satellites](../properties/props-system-gps-satellites.md)
+[System.GPS.Satellites](../properties/props-system-gps-satellites.md)
 </dt> </dl>
 
  

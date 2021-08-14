@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo IndexSegment. Equals (IndexSegment)'
-title: Metodo IndexSegment. Equals (IndexSegment)
+description: 'Altre informazioni su: Metodo IndexSegment.Equals (IndexSegment)'
+title: Metodo IndexSegment.Equals (IndexSegment)
 TOCTitle: Equals method (IndexSegment)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.IndexSegment.Equals(Microsoft.Isam.Esent.Interop.IndexSegment)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexsegment.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad14e8a22ab3e64f9df870f1e0a218e83f30a0aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 656fc4112f19f2152ea6d6eae3add2b5fef18445fbb4d920f9310ef47b8e48b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117896025"
 ---
-# <a name="indexsegmentequals-method-indexsegment"></a>Metodo IndexSegment. Equals (IndexSegment)
+# <a name="indexsegmentequals-method-indexsegment"></a>Metodo IndexSegment.Equals (IndexSegment)
 
-Restituisce un valore che indica se questa istanza è uguale a un'altra istanza.
+Restituisce un valore che indica se questa istanza è uguale a un'altra istanza di .
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,18 +58,18 @@ public bool Equals(
 #### <a name="parameters"></a>Parametri
 
   - altro  
-    Tipo: [Microsoft. ISAM. esent. Interop. IndexSegment](./indexsegment-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.IndexSegment](./indexsegment-class.md)  
     
-    Istanza di da confrontare con questa istanza.
+    Istanza da confrontare con questa istanza.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se le due istanze sono uguali.  
 
 #### <a name="implements"></a>Implementazioni
 
-[IEquatable \<T\> . Uguale a (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable. \<T\> Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -77,8 +77,8 @@ True se le due istanze sono uguali.
 
 [Classe IndexSegment](./indexsegment-class.md)
 
-[Membri di IndexSegment](./indexsegment-members.md)
+[Membri indexSegment](./indexsegment-members.md)
 
 [Confronta l'overload](./indexsegment.equals-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 721fb27e8cfd5e83f94b93079ee66e4a1c35992d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 12d6a990d3d65c1a711825e6d45720f3df977ca78efb16c1d39bb9b2251c53b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758151"
 ---
 # <a name="d1110-flush-failure"></a>D1110: Errore di scaricamento
 
@@ -101,7 +101,7 @@ In questo esempio viene generato il messaggio di debug seguente:
 D2D DEBUG WARNING - Flush call on render target failed [88990001]. Tags [0, 0].
 ```
 
-**Esempio 2:** Il codice seguente mostra che [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la [**chiamata di EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
+**Esempio 2:** Il codice seguente mostra che [**Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) viene chiamato dopo la [**chiamata EndDraw.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw)
 
 
 ```C++
@@ -122,7 +122,7 @@ DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
 
 ## <a name="possible-causes"></a>Possibili cause
 
-La [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può avere esito negativo per uno dei due motivi seguenti. L'operazione potrebbe non riuscire perché [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)il metodo è stato chiamato all'esterno della chiamata / [**BeginDraw EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) oppure perché si è verificato un errore generato da una delle operazioni di destinazione di rendering elaborate dopo l'ultima chiamata **Flush** o **EndDraw.** Per risolvere il problema, l'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
+La [**chiamata Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) può non riuscire per uno dei due motivi seguenti. Potrebbe non riuscire perché il metodo [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)è stato chiamato all'esterno della chiamata / [**BeginDraw EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) oppure potrebbe non riuscire perché si è verificato un errore generato da una delle operazioni di destinazione di rendering elaborate dopo l'ultima chiamata **Flush** o **EndDraw.** Per risolvere il problema, l'applicazione deve determinare la causa dell'errore ed eseguire l'azione appropriata.
 
 ## <a name="fixes"></a>Correzioni
 

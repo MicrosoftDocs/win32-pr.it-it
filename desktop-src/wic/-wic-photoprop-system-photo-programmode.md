@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. ProgramMode.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.ProgramMode.
 ms.assetid: f1954dc7-d4df-4675-ab3b-a65f2354e57a
-title: Criteri per i metadati delle foto di System. Photo. ProgramMode
+title: Criteri metadati foto System.Photo.ProgramMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6f5dffa822454509134c485e4792f4be4270912
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 260bf4ae5ca26fa26848765a76f5fdbc36eef48e2806909f46e5ab256f5acd7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118032501"
 ---
-# <a name="systemphotoprogrammode-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. ProgramMode
+# <a name="systemphotoprogrammode-photo-metadata-policy"></a>Criteri metadati foto System.Photo.ProgramMode
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. ProgramMode](../properties/props-system-photo-programmode.md) .
+Criteri dei metadati delle foto per [la proprietà System.Photo.ProgramMode.](../properties/props-system-photo-programmode.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ ProgramMode
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI4 VT
+VT \_ UI4
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,18 +37,18 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 34850} | ushort      |
-| 2     | /XMP/EXIF: ExposureProgram     | unicode     |
+| 1     | /app1/ifd/exif/{ushort=34850} | ushort      |
+| 2     | /xmp/exif:ExposureProgram     | unicode     |
 | 3     | /xmp/exif:ProgramMode         | unicode     |
 
 
@@ -61,8 +61,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 34850} | ushort      |
-| 2     | /XMP/EXIF: ExposureProgram     | unicode     |
+| 1     | /app1/ifd/exif/{ushort=34850} | ushort      |
+| 2     | /xmp/exif:ExposureProgram     | unicode     |
 | 3     | /xmp/exif:ProgramMode         | unicode     |
 
 
@@ -75,8 +75,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 34850} |
-| 2     | /XMP/EXIF: ExposureProgram     |
+| 1     | /app1/ifd/exif/{ushort=34850} |
+| 2     | /xmp/exif:exposureprogram     |
 | 3     | /xmp/exif:programmode         |
 
 
@@ -85,14 +85,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 34850}      | ushort      |
-| 2     | /IFD/XMP/EXIF: ExposureProgram | unicode     |
+| 1     | /ifd/exif/{ushort=34850}      | ushort      |
+| 2     | /ifd/xmp/exif:ExposureProgram | unicode     |
 | 3     | /ifd/xmp/exif:ProgramMode     | unicode     |
 
 
@@ -105,8 +105,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 34850}      | ushort      |
-| 2     | /IFD/XMP/EXIF: ExposureProgram | unicode     |
+| 1     | /ifd/exif/{ushort=34850}      | ushort      |
+| 2     | /ifd/xmp/exif:ExposureProgram | unicode     |
 | 3     | /ifd/xmp/exif:ProgramMode     | unicode     |
 
 
@@ -119,8 +119,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /IFD/EXIF/{ushort = 34850}      |
-| 2     | /IFD/XMP/EXIF: ExposureProgram |
+| 1     | /ifd/exif/{ushort=34850}      |
+| 2     | /ifd/xmp/exif:exposureprogram |
 | 3     | /ifd/xmp/exif:programmode     |
 
 
@@ -133,7 +133,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. ProgramMode](../properties/props-system-photo-programmode.md)
+[System.Photo.ProgramMode](../properties/props-system-photo-programmode.md)
 </dt> </dl>
 
  

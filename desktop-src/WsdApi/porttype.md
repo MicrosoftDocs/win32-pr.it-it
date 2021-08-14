@@ -4,12 +4,12 @@ ms.assetid: 8a7762ae-2e39-46e1-b49f-09cae1af9b0d
 title: elemento portType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a98f02fc5a18e330bb5617b52563adc79a039831
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: ad7fc502b2d899998a7f3e0f199c7804856317744ec8d127fb712a3f98c3bd0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991651"
 ---
 # <a name="porttype-element"></a>elemento portType
 
@@ -59,7 +59,7 @@ Per impostazione predefinita, il codice viene generato per tutti i tipi di porta
 
 
 
-| Label | Valore |
+| Etichetta | Valore |
 |-------------------------------------|---------------|
 | Sistema minimo supportato<br/> | Windows Vista |
 | Può essere vuoto                        | Sì           |

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: UInt64ColumnValue. GetValueFromBytes, metodo'
-title: UInt64ColumnValue. GetValueFromBytes, metodo
+description: 'Altre informazioni su: Metodo UInt64ColumnValue.GetValueFromBytes'
+title: Metodo UInt64ColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.UInt64ColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.uint64columnvalue.getvaluefrombytes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ccf4a0d85c6d712a81222f77b954d46f55a28df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f34d5b8a96e8c838176f099112371ccb736248e794678c145a24a0f57a67d29c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978301"
 ---
-# <a name="uint64columnvaluegetvaluefrombytes-method"></a>UInt64ColumnValue. GetValueFromBytes, metodo
+# <a name="uint64columnvaluegetvaluefrombytes-method"></a>Metodo UInt64ColumnValue.GetValueFromBytes
 
-Dato che i dati sono stati recuperati da ESENT, decodificano i dati e impostano il valore nell'oggetto ColumnValue.
+Dati recuperati da ESENT, decodificare i dati e impostare il valore nell'oggetto ColumnValue.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -70,28 +70,28 @@ protected override void GetValueFromBytes(
 #### <a name="parameters"></a>Parametri
 
   - Valore  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Matrice di byte.
 
 <!-- end list -->
 
   - startIndex  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Posizione iniziale all'interno dei byte.
 
 <!-- end list -->
 
   - count  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Numero di byte da decodificare.
 
 <!-- end list -->
 
   - Err  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Errore restituito da ESENT.
 
@@ -103,4 +103,4 @@ protected override void GetValueFromBytes(
 
 [Membri di UInt64ColumnValue](./uint64columnvalue-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetSampleSize specifica una dimensione del campione fissa o specifica che i campioni hanno una dimensione variabile.
+description: Il metodo SetSampleSize specifica una dimensione di campionamento fissa o specifica che i campioni hanno dimensioni variabili.
 ms.assetid: b0f9dd7b-4ff9-4d11-9c13-b52d7b1549b5
-title: Metodo CMediaType. SetSampleSize (mtype. h)
+title: Metodo CMediaType.SetSampleSize (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0992afd0576c1039397e6ecaa2119a989283136e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a29393ed4c9251d1e12895ad57a61f96bdc80bb05757ce72fc9485bb42a1047
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954410"
 ---
-# <a name="cmediatypesetsamplesize-method"></a>CMediaType. SetSampleSize, metodo
+# <a name="cmediatypesetsamplesize-method"></a>Metodo CMediaType.SetSampleSize
 
-Il `SetSampleSize` metodo specifica una dimensione del campione fissa o specifica che i campioni hanno una dimensione variabile.
+Il `SetSampleSize` metodo specifica una dimensione fissa del campione o specifica che i campioni hanno dimensioni variabili.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ void SetSampleSize(
 
 <dl> <dt>
 
-*SZ* 
+*Sz* 
 </dt> <dd>
 
-Dimensioni campione, in byte o zero.
+Dimensioni del campione, in byte o zero.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore di *SZ* è zero, il tipo di supporto utilizza dimensioni campione variabili. In caso contrario, le dimensioni del campione vengono fissate a *SZ* bytes.
+Se il valore di *sz* è zero, il tipo di supporto usa dimensioni di campionamento variabili. In caso contrario, le dimensioni del campione sono fisse *in sz* bytes.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ Se il valore di *SZ* è zero, il tipo di supporto utilizza dimensioni campione v
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

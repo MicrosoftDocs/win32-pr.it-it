@@ -4,23 +4,23 @@ description: Per recuperare tutti i metadati in un file
 ms.assetid: c1de58d7-25a8-4416-9ee9-6ebe641ed640
 keywords:
 - Windows Media Format SDK, recupero di metadati
-- Formato di sistemi avanzati (ASF), recupero di metadati
+- Advanced Systems Format (ASF), recupero di metadati
 - ASF (Advanced Systems Format), recupero di metadati
-- metadati, recupero di tutti i
+- metadati, recupero di tutti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc5d63a27cd4455d8d39cebee894dfbfc8d5bf2c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: fab81f151cbb661cc7769128e2d4371dd0b24869317d1888769ed66a60de86f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "106299397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807471"
 ---
 # <a name="to-retrieve-all-metadata-in-a-file"></a>Per recuperare tutti i metadati in un file
 
-L'esempio di codice seguente è una funzione che Visualizza tutti i metadati in un file. Per usare la funzione, è necessario passare un puntatore all'interfaccia [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) di un oggetto editor di metadati, un oggetto Reader, un oggetto Reader sincrono o un oggetto writer. È inoltre necessario includere il file di intestazione stdio. h in un punto qualsiasi del progetto. Per ulteriori informazioni sull'utilizzo di questo esempio, vedere [utilizzo degli esempi di codice](using-the-code-examples.md).
+L'esempio di codice seguente è una funzione che visualizza tutti i metadati in un file. Per usare la funzione, è necessario passarla a un puntatore all'interfaccia [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) di un oggetto editor di metadati, un oggetto lettore, un oggetto lettore sincrono o un oggetto writer. È anche necessario includere il file di intestazione Stdio.h in un punto qualsiasi del progetto. Per altre informazioni su come usare questo esempio, vedere [Uso degli esempi di codice.](using-the-code-examples.md)
 
-Per maggiore chiarezza, in questo esempio non vengono visualizzati i valori degli attributi Binary e GUID. Per gli attributi binari, è necessario verificare se il nome dell'attributo corrisponde a uno qualsiasi degli attributi di metadati complessi noti. In tal caso, è necessario formattare l'output in base alla struttura utilizzata per l'attributo. Analogamente, i valori degli attributi GUID possono essere visualizzati in diversi modi. È possibile scegliere di visualizzare ogni membro della struttura uno alla volta oppure convertire la struttura in una stringa e visualizzarla come un unico valore.
+Per maggiore chiarezza, in questo esempio non vengono visualizzati i valori degli attributi binari e GUID. Per gli attributi binari, è necessario verificare se il nome dell'attributo corrisponde a uno degli attributi di metadati complessi noti. In caso contrario, è necessario formattare l'output in base alla struttura usata per l'attributo. Analogamente, i valori degli attributi GUID possono essere visualizzati in diversi modi. È possibile scegliere di visualizzare ogni membro della struttura uno alla volta o convertire la struttura in una stringa e visualizzarla come un unico valore.
 
 
 ```C++
@@ -139,9 +139,9 @@ Exit:
 [**Recupero degli attributi dei metadati**](retrieving-metadata-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

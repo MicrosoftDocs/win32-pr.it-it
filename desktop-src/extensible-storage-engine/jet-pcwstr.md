@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 51cd0dab17096fb8f7371a01ebabfca3abc595be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3958baa23228bdf32807cc4fdc07a471e625d553f57672e318a062038923b5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473891"
 ---
 # <a name="jet_pcwstr"></a>JET_PCWSTR
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_pcwstr"></a>JET_PCWSTR
 
-Il tipo di dati **JET_PCWSTR** contiene una stringa **Unicode** costante con terminazione null (char \* ).
+Il **JET_PCWSTR** dati contiene una stringa **Unicode** costante con terminazione Null (char \* ).
 
 **Windows Vista: JET_PCWSTR** è stato introdotto in Windows Vista.
 
@@ -41,7 +41,7 @@ Il tipo di dati **JET_PCWSTR** contiene una stringa **Unicode** costante con ter
 
 JET_PCWSTR
 
-Stringa Unicode costante con terminazione null (char \* ).
+Stringa Unicode costante con terminazione Null (char \* ).
 
 ### <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Stringa Unicode costante con terminazione null (char \* ).
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

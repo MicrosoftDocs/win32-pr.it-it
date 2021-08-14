@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_WiFi02
-description: La \_ classe WiFi02 dei criteri MDM \_ Result01 \_ rappresenta i criteri di Wi-Fi disponibili.
+title: MDM_Policy_Result01_WiFi02 classe
+description: La classe Mdm \_ Policy \_ Result01 \_ WiFi02 rappresenta i Wi-Fi disponibili.
 ms.assetid: 074C4428-401D-4564-B7AC-45C2221EEC3A
 keywords:
-- Classe MDM_Policy_Result01_WiFi02
-- Classe MDM_Policy_Result01_WiFi02, descritta
+- MDM_Policy_Result01_WiFi02 classe
+- MDM_Policy_Result01_WiFi02 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ff9e0349f7a18da3320fab333d5b5fd36715999
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2089b04cd13444e7d81c791b588bbb1bc5eabc197ed8deb4206af4f9851a8d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694511"
 ---
-# <a name="mdm_policy_result01_wifi02-class"></a>\_ \_ Classe Result01 WiFi02 di criteri \_ MDM
+# <a name="mdm_policy_result01_wifi02-class"></a>Classe \_ Mdm Policy \_ Result01 \_ WiFi02
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La **classe \_ \_ \_ WiFi02 dei criteri MDM Result01** rappresenta i criteri di Wi-Fi disponibili. Questi criteri determinano Wi-Fi configurazioni consentite.
+La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** rappresenta i Wi-Fi disponibili. Questi criteri determinano Wi-Fi le configurazioni consentite.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -51,13 +51,13 @@ class MDM_Policy_Result01_WiFi02
 
 ## <a name="members"></a>Members
 
-La **classe \_ \_ Result01 \_ WiFi02 dei criteri MDM** ha questi tipi di membri:
+La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ \_ \_ WiFi02 dei criteri MDM Result01** ha queste proprietà.
+La **classe Mdm Policy \_ \_ Result01 \_ WiFi02** ha queste proprietà.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ La **classe \_ \_ \_ WiFi02 dei criteri MDM Result01** ha queste proprietà.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -78,7 +78,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -89,18 +89,18 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
 
-[AllowWiFi consente](/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
+[AllowWiFi](/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi)
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -111,7 +111,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -119,7 +119,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -128,14 +128,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "WiFi".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "WiFi".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -144,7 +144,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/Policy/Result"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/Policy/Result"
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -165,10 +165,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -177,7 +177,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

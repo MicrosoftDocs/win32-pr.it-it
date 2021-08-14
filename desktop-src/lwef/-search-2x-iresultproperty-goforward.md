@@ -1,11 +1,11 @@
 ---
-title: Metodo IResultProperty GoForward
-description: Riservato. | Metodo IResultProperty GoForward
+title: Metodo GoForward IResultProperty
+description: Riservato. | Metodo GoForward IResultProperty
 ms.assetid: d1615051-d110-4b3c-902f-70c17a6a0fc9
 keywords:
-- Funzionalità dell'ambiente Windows legacy del metodo GoForward
-- Funzionalità dell'ambiente Windows legacy del metodo GoForward, interfaccia IResultProperty
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultProperty, metodo GoForward
+- Metodo GoForward Funzionalità dell'Windows legacy
+- Metodo GoForward Legacy Windows Environment Features , interfaccia IResultProperty
+- Interfaccia IResultProperty Legacy Windows Environment Features , metodo GoForward
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: de7e2ebf54971601716619b5049b94ccc5316d27
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e36f232b7b11d1dbfe4764a82bf1dc4c1d03b8f6ce6c6d50629a5fffd0d03a9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754998"
 ---
-# <a name="iresultpropertygoforward-method"></a>Metodo IResultProperty:: GoForward
+# <a name="iresultpropertygoforward-method"></a>Metodo IResultProperty::GoForward
 
 Questo metodo non è implementato.
 

@@ -1,8 +1,8 @@
 ---
-description: "Metodo TakeOwnerShip della Win32_CodecFile: il metodo della classe WMI TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto."
+description: "Metodo TakeOwnerShip della classe Win32_CodecFile: il metodo della classe WMI TakeOwnerShip ottiene la proprietà del file logico specificato nel percorso dell'oggetto."
 ms.assetid: c8fa0706-1f7e-4e68-aea6-694ba24c16c3
 ms.tgt_platform: multiple
-title: Metodo TakeOwnerShip della Win32_CodecFile classe
+title: Metodo TakeOwnerShip della classe Win32_CodecFile
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e52e5dafe5f0453861ddcddadf9f7115d17ee404
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 96997b7a29d4a7ca0ad586263bfe7846142963f7ba60e4bdf01a3991e3cfcbff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751691"
 ---
 # <a name="takeownership-method-of-the-win32_codecfile-class"></a>Metodo TakeOwnerShip della classe CodecFile Win32 \_
 
-Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenuti nella directory.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **TakeOwnerShip** ottiene la proprietà del file logico specificato nel percorso dell'oggetto. Se il file logico è effettivamente una directory, **TakeOwnerShip** agisce in modo ricorsivo, assumendo la proprietà di tutti i file e le sottodirectory contenute nella directory.
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -42,21 +42,21 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei seguenti valori interi.
+Restituisce uno dei valori integer seguenti.
 
 <dl> <dt>
 
 **0**
 </dt> <dd>
 
-La richiesta ha avuto esito positivo.
+La richiesta è stata completata.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 

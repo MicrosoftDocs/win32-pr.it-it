@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IDODownloadInternal
-description: Utilizzato per ottenere o impostare le proprietà di download estese.
+description: Usato per ottenere o impostare le proprietà di download estese.
 keywords:
 - Interfaccia IDODownloadInternal
 topic_type:
@@ -14,33 +14,33 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2019
-ms.openlocfilehash: 89dcf0e397e9761c1b156a4ad4b245209cf50020
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: de9079f7b87822ce950bc4e6c3ece6457e62775c32f7c0d51e76959332298bb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755781"
 ---
 # <a name="idodownloadinternal-interface"></a>Interfaccia IDODownloadInternal
 
 > [!IMPORTANT]
-> L'interfaccia **IDODownloadInternal** è deprecata. Usare invece l'interfaccia [IDODownload](../do/nn-do-idodownload.md) .
+> **L'interfaccia IDODownloadInternal** è deprecata. Usare invece [l'interfaccia IDODownload.](../do/nn-do-idodownload.md)
 
-L'interfaccia **IDODownloadInternal** viene utilizzata per ottenere o impostare le proprietà di download estese.
+**L'interfaccia IDODownloadInternal** viene usata per ottenere o impostare le proprietà di download estese.
 
 ## <a name="methods"></a>Metodi
 
-L'interfaccia **IDODownloadInternal** dispone di questi metodi.
+**L'interfaccia IDODownloadInternal** include questi metodi.
 
 | Metodo | Descrizione |
 | ---- |:---- |
-| [IDODownloadInternal::GetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-getpropertyex.md) | Recupera un puntatore a un **Variant** che contiene un valore di proprietà di download esteso specifico. |
-| [IDODownloadInternal::SetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-setpropertyex.md) | Imposta una proprietà di download estesa. Il metodo accetta un puntatore a una **variante** che contiene un valore della proprietà specifico da applicare al download. |
+| [IDODownloadInternal::GetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-getpropertyex.md) | Recupera un puntatore a un **variant che** contiene un valore della proprietà di download esteso specifico. |
+| [IDODownloadInternal::SetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-setpropertyex.md) | Imposta una proprietà di download estesa. Il metodo accetta un puntatore a **un variant** che contiene un valore di proprietà specifico da applicare al download. |
 
 ## <a name="requirements"></a>Requisiti
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Client minimo supportato** | Solo applicazioni Win32 Windows 10 versione 1809 \[\] |
-| **Server minimo supportato** | Windows Server, \[ solo applicazioni Win32 versione 1809\] |
-| **Intestazione** | DODownloadInternal. h |
+| **Client minimo supportato** | \[Windows 10, versione 1809 Solo applicazioni Win32\] |
+| **Server minimo supportato** | Windows Server, versione 1809 \[ Solo applicazioni Win32\] |
+| **Intestazione** | DODownloadInternal.h |

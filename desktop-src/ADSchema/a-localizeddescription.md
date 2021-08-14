@@ -1,10 +1,10 @@
 ---
-title: Attributo Localized-Description
-description: ID di localizzazione e nome visualizzato di un oggetto.
+title: Localized-Description attributo
+description: ID di localizzazione e nome visualizzato per un oggetto.
 ms.assetid: 22c0df15-8245-49c6-b5ca-57ac48b57c3a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Localized-Description attribute
+- Localized-Description schema AD dell'attributo
 - Schema AD dell'attributo localizedDescription
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2270492258593c1e09128726b286539f8fc9ec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c33bc2119a920140c45c831787e5810b8f481be036abb53c5bd165cdf3a111e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705831"
 ---
-# <a name="localized-description-attribute"></a>Attributo Localized-Description
+# <a name="localized-description-attribute"></a>Localized-Description attributo
 
-ID di localizzazione e nome visualizzato di un oggetto.
+ID di localizzazione e nome visualizzato per un oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | Localized-Description                       |
-| LDAP-Display-Name | localizedDescription                        |
+| Ldap-Display-Name | localizedDescription                        |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.817                      |
-| System-ID-GUID    | d9e18316-8939-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | d9e18316-8939-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ ID di localizzazione e nome visualizzato di un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Categoria-registrazione**](c-categoryregistration.md)<br/> |
+| Classi usate in        | [**Category-Registration**](c-categoryregistration.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Specifica il livello di imposizione di un'operazione dlp (Data Loss Prevention) dell'endpoint.
+description: Specifica il livello di imposizione di un'operazione DLP (Data Loss Prevention) dell'endpoint.
 title: Enumerazione DlpAppEnforceLevel (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: d0ccc8d0d39bc4022899deaeb9e8a81eae1f720f
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 99bd06a41c88ff0b5a02b9b329877c015aea7dfb3fdbc58fea3c2e305829faf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119349351"
 ---
 # <a name="dlpappenforcelevel-enumeration"></a>Enumerazione DlpAppEnforceLevel
 

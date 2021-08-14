@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateEllipseGeometry di ID2D1Factory (D2d1. h)
+title: Metodi ID2D1Factory CreateEllipseGeometry (D2d1.h)
 description: Crea un ID2D1EllipseGeometry.
 ms.assetid: 4c03bb0b-74fe-456a-aa26-5449d758c0ea
 keywords:
-- Metodo CreateEllipseGeometry Direct2D
+- Metodi CreateEllipseGeometry Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: ca991732b9a80fd93e3df3c2b72493f5195ea0a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85026ad8459fdb2e7ef89c1d1a6b339d8e252188e27957e8848aaf02247d2694
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259117"
 ---
-# <a name="id2d1factorycreateellipsegeometry-methods"></a>Metodi ID2D1Factory:: CreateEllipseGeometry
+# <a name="id2d1factorycreateellipsegeometry-methods"></a>Metodi ID2D1Factory::CreateEllipseGeometry
 
-Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry).
+Crea un [**id2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,14 +29,14 @@ Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipseg
 
 | Metodo                                                                                                                                                      | Descrizione                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**CreateEllipseGeometry (D2D1 \_ ELLIPSE&, ID2D1EllipseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
-| [**CreateEllipseGeometry ( \_ ellisse d2d1 \* , ID2D1EllipseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Crea un [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
+| [**CreateEllipseGeometry(D2D1 \_ ELLIPSE&,ID2D1EllipseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Crea un [**id2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
+| [**CreateEllipseGeometry(D2D1 \_ ELLIPSE \* ,ID2D1EllipseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Crea un [**id2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Il codice seguente crea due oggetti [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) e li combina usando le diverse modalità di combinazione della geometria.
+L'esempio seguente [**crea due oggetti ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) e li combina usando le diverse modalità di combinazione geometrica.
 
 
 ```C++
@@ -202,7 +202,7 @@ HRESULT DemoApp::CreateGeometryResources()
 
 Questo codice produce l'output illustrato nella figura seguente.
 
-![illustrazione di due ellissi combinati usando quattro modalità di combinazione di geometria (Union, Intersect, XOR ed Exclude)](images/combine-modes.png)
+![illustrazione di due ellissi combinate usando quattro modalità di combinazione di geometria (unione, intersezione, xor ed esclusione)](images/combine-modes.png)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -210,8 +210,8 @@ Questo codice produce l'output illustrato nella figura seguente.
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

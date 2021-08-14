@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_SNP'
-title: Enumerazione JET_SNP
+description: 'Altre informazioni su: enumerazione JET_SNP dati'
+title: JET_SNP enumerazione
 TOCTitle: JET_SNP enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNP
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snp(v=EXCHG.10)
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 10061d0c00d90aa5ca4e0778cba046d2e6f62f4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a18858b7dba79c8e8d0d2a6ab51783ab0a602d595214895f1798b2ef0e084731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979262"
 ---
-# <a name="jet_snp-enumeration"></a>Enumerazione JET_SNP
+# <a name="jet_snp-enumeration"></a>JET_SNP enumerazione
 
 Tipo di operazione per cui viene segnalato lo stato di avanzamento.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ public enum JET_SNP
 <tr class="odd">
 <td></td>
 <td>Ripristina</td>
-<td>Il callback è per un'opzione di correzione.</td>
+<td>Il callback è per un'opzione di ripristino.</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -97,12 +97,12 @@ public enum JET_SNP
 <tr class="odd">
 <td></td>
 <td>Scrub</td>
-<td>Il callback è per lo zero del database.</td>
+<td>Il callback è per l'azzeramento del database.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UpgradeRecordFormat</td>
-<td>Il callback è il processo di aggiornamento del formato di record di tutte le pagine del database.</td>
+<td>Il callback è per il processo di aggiornamento del formato di record di tutte le pagine del database.</td>
 </tr>
 </tbody>
 </table>
@@ -112,4 +112,4 @@ public enum JET_SNP
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

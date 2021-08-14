@@ -1,9 +1,9 @@
 ---
-title: Messaggio TTM_SETTIPBKCOLOR (COMmctrl. h)
+title: TTM_SETTIPBKCOLOR messaggio (Commctrl.h)
 description: Imposta il colore di sfondo in una finestra della descrizione comando.
 ms.assetid: ed7860db-a221-4855-85d6-1b3b356279ed
 keywords:
-- Controlli di Windows Message TTM_SETTIPBKCOLOR
+- TTM_SETTIPBKCOLOR del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cbd830f9a9fbdad428766bd12d82c059e37418e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb56f62e7ebc8cab8b7773048767cecbe188abf698aaae15db6f7fb73d10bd95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433751"
 ---
-# <a name="ttm_settipbkcolor-message"></a>\_Messaggio TTM SETTIPBKCOLOR
+# <a name="ttm_settipbkcolor-message"></a>TTM \_ SETTIPBKCOLOR message
 
 Imposta il colore di sfondo in una finestra della descrizione comando.
 
@@ -53,9 +53,9 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Quando gli stili di visualizzazione sono abilitati, questo messaggio non ha alcu
 
 <dl> <dt>
 
-[**\_GETTIPBKCOLOR TTM**](ttm-gettipbkcolor.md)
+[**TTM \_ GETTIPBKCOLOR**](ttm-gettipbkcolor.md)
 </dt> </dl>
 
  

@@ -11,16 +11,16 @@ api_name:
 - simIccIDType
 api_type:
 - Schema
-ms.openlocfilehash: 410145e659a4845c9c96aaeb76d522de3e0c7b53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33a984875e1e6840787d81dc53c8fc13ead54a0328f6610d75c30075066c13c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035759"
 ---
 # <a name="simiccidtype-simple-type"></a>Tipo semplice simIccIDType
 
-Il tipo semplice **simIccIDType** definisce un tipo per l'elemento [**SimIccID**](schema-simiccid-mbnprofile-element.md) del profilo Mobile Broadband. Questo tipo è una raccolta di cifre e/o lettere maiuscole e minuscole, con una lunghezza di almeno un carattere e un massimo di 20 caratteri.
+Il **tipo semplice simIccIDType** definisce un tipo per l'elemento [**SimIccID**](schema-simiccid-mbnprofile-element.md) del profilo Mobile Broadband. Questo tipo è una raccolta di cifre e/o lettere maiuscole e minuscole, lunghe almeno un carattere e al massimo 20 caratteri.
 
 ``` syntax
 <xs:simpleType name="simIccIDType">
@@ -36,7 +36,7 @@ Il tipo semplice **simIccIDType** definisce un tipo per l'elemento [**SimIccID**
 
 ## <a name="patterns"></a>Modelli
 
-Il tipo semplice **simIccIDType** è un token che è limitato dal modello seguente:
+Il **tipo semplice simIccIDType** è un token limitato dal modello seguente:
 
 -   `[a-zA-Z\d]{1,20}`
 
@@ -46,7 +46,7 @@ Il tipo semplice **simIccIDType** è un token che è limitato dal modello seguen
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

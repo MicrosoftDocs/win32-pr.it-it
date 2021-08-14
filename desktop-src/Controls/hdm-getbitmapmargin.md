@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_GETBITMAPMARGIN (COMmctrl. h)
-description: Ottiene la larghezza del margine bitmap per un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetBitmapMargin dell'intestazione.
+title: HDM_GETBITMAPMARGIN messaggio (Commctrl.h)
+description: Ottiene la larghezza del margine della bitmap per un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro Header GetBitmapMargin.
 ms.assetid: 67794ad4-3c22-4fad-a1d7-7a5d5cc6ad67
 keywords:
-- Controlli di Windows Message HDM_GETBITMAPMARGIN
+- HDM_GETBITMAPMARGIN di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c3f0fced77edd3f149009e1b3c2bb1eb75182c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 685fb96e2ecf97a33b264de7bb3a6579f0c3480b6a15fdf99929ae879f4b35c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436211"
 ---
-# <a name="hdm_getbitmapmargin-message"></a>\_Messaggio HDM GETBITMAPMARGIN
+# <a name="hdm_getbitmapmargin-message"></a>Messaggio \_ HDM GETBITMAPMARGIN
 
-Ottiene la larghezza del margine bitmap per un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetBitmapMargin dell'intestazione**](/windows/desktop/api/Commctrl/nf-commctrl-header_getbitmapmargin) .
+Ottiene la larghezza del margine della bitmap per un controllo intestazione. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ Header GetBitmapMargin.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getbitmapmargin)
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,9 +45,9 @@ Restituisce la larghezza del margine della bitmap in pixel. Se il margine bitmap
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Restituisce la larghezza del margine della bitmap in pixel. Se il margine bitmap
 
 <dl> <dt>
 
-[**\_SETBITMAPMARGIN HDM**](hdm-setbitmapmargin.md)
+[**HDM \_ SETBITMAPMARGIN**](hdm-setbitmapmargin.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Modifica i dati dell'impostazione per il servizio di migrazione.
+description: Modifica i dati delle impostazioni per il servizio di migrazione.
 ms.assetid: 5162fe88-dd39-4fe0-b8e9-e9b70c2b6a5c
 title: Metodo ModifyServiceSettings della classe Msvm_VirtualSystemMigrationService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e1e9dc96196752ec4408939adc418e7c43bc0c35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1542091acde74f5079d01ebd3fecb548378a1c5ac78f4b42e0a7d98e6f3d3a47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693871"
 ---
-# <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo ModifyServiceSettings della classe MSVM \_ VirtualSystemMigrationService
+# <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Metodo ModifyServiceSettings della classe Msvm \_ VirtualSystemMigrationService
 
-Modifica i dati dell'impostazione per il servizio di migrazione.
+Modifica i dati delle impostazioni per il servizio di migrazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 ModifyServiceSettings(
 
 <dl> <dt>
 
-*ServiceSettingData* \[ in\]
+*ServiceSettingData* \[ Pollici\]
 </dt> <dd>
 
-Istanza incorporata della classe [**\_ VirtualSystemManagementServiceSettingData MSVM**](msvm-virtualsystemmanagementservicesettingdata.md) che contiene le nuove impostazioni del servizio.
+Istanza incorporata della [**classe Msvm \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) che contiene le nuove impostazioni del servizio.
 
 </dd> <dt>
 
-*Processo* \[ di out\]
+*Processo* \[ Cambio\]
 </dt> <dd>
 
 Se l'operazione viene eseguita in modo asincrono, questo metodo restituirà 4096 e questo parametro conterrà un riferimento a un oggetto derivato da [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
@@ -63,10 +63,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -105,10 +105,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_VirtualSystemMigrationService MSVM**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

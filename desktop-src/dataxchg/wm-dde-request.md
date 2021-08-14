@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_DDE_REQUEST (DDE. h)
-description: Un'applicazione client di Dynamic Data Exchange (DDE) Invia un \_ \_ messaggio di richiesta DDE di WM a un'applicazione server DDE per richiedere il valore di un elemento di dati. Per pubblicare questo messaggio, chiamare la funzione PostMessage con i parametri seguenti.
+title: WM_DDE_REQUEST messaggio (Dde.h)
+description: Un'applicazione client DDE (Dynamic Data Exchange) invia un messaggio WM DDE REQUEST a un'applicazione server DDE per richiedere il valore \_ di un elemento di \_ dati. Per pubblicare questo messaggio, chiamare la funzione PostMessage con i parametri seguenti.
 ms.assetid: 922452d2-455c-43e1-a8a8-e3c52b0fab51
 keywords:
-- Scambio di dati del messaggio WM_DDE_REQUEST
+- WM_DDE_REQUEST messaggio Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f7d5eab75d3b7298d78547b17fccfb164a47ae4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05c58877b15f39d2de907688972905e98007658981bcc57df62655634bafe8be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118811351"
 ---
-# <a name="wm_dde_request-message"></a>\_Messaggio di \_ richiesta DDE WM
+# <a name="wm_dde_request-message"></a>Messaggio WM \_ DDE \_ REQUEST
 
-Un'applicazione client di Dynamic Data Exchange (DDE) Invia un messaggio di **\_ \_ richiesta DDE di WM** a un'applicazione server DDE per richiedere il valore di un elemento di dati.
+Un'applicazione client DDE (Dynamic Data Exchange) invia un messaggio **WM \_ DDE \_ REQUEST** a un'applicazione server DDE per richiedere il valore di un elemento di dati.
 
-Per pubblicare questo messaggio, chiamare la funzione [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con i parametri seguenti.
+Per pubblicare questo messaggio, chiamare [**la funzione PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con i parametri seguenti.
 
 
 ```C++
@@ -41,16 +41,16 @@ Per pubblicare questo messaggio, chiamare la funzione [**PostMessage**](/windows
 *wParam* 
 </dt> <dd>
 
-Handle per la finestra client che invia il messaggio.
+Handle alla finestra client che invia il messaggio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La parola di ordine inferiore specifica un formato degli Appunti standard o registrato.
+La parola meno ordinata specifica un formato degli Appunti standard o registrato.
 
-La parola più ordinata contiene un Atom che identifica l'elemento dati richiesto dal server.
+La parola di ordine elevato contiene un atom che identifica l'elemento di dati richiesto dal server.
 
 </dd> </dl>
 
@@ -58,13 +58,13 @@ La parola più ordinata contiene un Atom che identifica l'elemento dati richiest
 
 ### <a name="posting"></a>Distacco
 
-L'applicazione client alloca il Atom chiamando la funzione [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+L'applicazione client alloca l'atom chiamando la [**funzione GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
 ### <a name="receiving"></a>Ricezione
 
-Se l'applicazione ricevente (Server) può soddisfare la richiesta, risponde con un messaggio [**di \_ \_ dati DDE WM**](wm-dde-data.md) contenente i dati richiesti. In caso contrario, risponde con un messaggio [**di \_ \_ ACK DDE WM**](wm-dde-ack.md) negativo.
+Se l'applicazione ricevente (server) può soddisfare la richiesta, risponde con un messaggio [**WM \_ DDE \_ DATA**](wm-dde-data.md) contenente i dati richiesti. In caso contrario, risponde con un messaggio [**\_ \_ ACK WM DDE**](wm-dde-ack.md) negativo.
 
-Quando si rispondono a un messaggio [**WM \_ DDE \_**](wm-dde-data.md) o a un messaggio [**\_ \_ ACK DDE**](wm-dde-ack.md) , l'applicazione server può riutilizzare il formato Atom o eliminare l'Atom e crearne uno nuovo.
+Quando si risponde con un messaggio [**WM \_ DDE \_ DATA**](wm-dde-data.md) o [**WM \_ DDE \_ ACK,**](wm-dde-ack.md) l'applicazione server può riutilizzare l'atom o eliminare l'atom e crearne uno nuovo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Quando si rispondono a un messaggio [**WM \_ DDE \_**](wm-dde-data.md) o a un me
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                 |
-| Intestazione<br/>                   | <dl> <dt>DDE. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Dde.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -100,19 +100,19 @@ Quando si rispondono a un messaggio [**WM \_ DDE \_**](wm-dde-data.md) o a un me
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+[**DisimballareDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_ACK DDE \_ WM**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-[**\_dati DDE di WM \_**](wm-dde-data.md)
+[**DATI \_ WM DDE \_**](wm-dde-data.md)
 </dt> <dt>
 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Informazioni su Dynamic Data Exchange](about-dynamic-data-exchange.md)
+[Informazioni Dynamic Data Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

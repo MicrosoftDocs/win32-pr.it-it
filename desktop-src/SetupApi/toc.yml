@@ -9,14 +9,14 @@
           items:
             - name: Informazioni sui file INF
               href: about-inf-files.md
-            - name: Uso dei file INF
+            - name: Uso di file INF
               href: using-inf-files.md
               items:
                 - name: Creazione di un file INF
                   href: authoring-an-inf-file.md
                 - name: Esempio di sezione di installazione INF
                   href: inf-install-section-example.md
-                - name: Esempio di sezioni INF SourceDisksNames e SourceDisksFiles
+                - name: Esempio di sezioni SourceDisksNames e SourceDisksFiles in INF
                   href: inf-sourcedisksnames-and-sourcedisksfiles-sections-example.md
                 - name: Apertura e chiusura di un file INF
                   href: opening-and-closing-an-inf-file.md
@@ -26,23 +26,23 @@
                   href: installing-from-an-inf-file.md
                 - name: Specifica di un descrittore di sicurezza da un file INF
                   href: specifying-a-security-descriptor-from-an-inf-file.md
-            - name: Riferimento file INF
+            - name: Informazioni di riferimento sul file INF
               href: inf-file-reference.md
               items:
-                - name: Funzioni di impostazione del file INF
+                - name: Funzioni di installazione del file INF
                   href: inf-file-setup-functions.md
                 - name: Handle per un file INF
                   href: handle-to-an-inf-file.md
                 - name: Strutture di file INF
                   href: inf-file-structures.md
-                - name: Notifiche file INF
+                - name: Notifiche dei file INF
                   href: inf-file-notifications.md
-        - name: Confronti tra versioni di file
+        - name: Confronti tra le versioni dei file
           href: file-version-comparisons.md
-        - name: Richieste di dischi e gestione degli errori
+        - name: Richiesta del disco e gestione degli errori
           href: disk-prompting-and-error-handling.md
           items:
-            - name: Informazioni su richiesta disco e gestione degli errori
+            - name: Informazioni sulla richiesta del disco e sulla gestione degli errori
               href: about-disk-prompting-and-error-handling.md
             - name: Uso della richiesta del disco e della gestione degli errori
               href: using-disk-prompting-and-error-handling.md
@@ -51,10 +51,10 @@
                   href: prompting-for-a-disk.md
                 - name: Gestione degli errori
                   href: error-handling.md
-            - name: Informazioni di riferimento sul disco e gestione degli errori
+            - name: Riferimento alla richiesta del disco e alla gestione degli errori
               href: disk-prompting-and-error-handling-reference.md
               items:
-                - name: Richieste di disco e funzioni di gestione degli errori
+                - name: Funzioni di richiesta del disco e gestione degli errori
                   href: disk-prompting-and-error-handling-functions.md
         - name: Code di file
           href: file-queues.md
@@ -66,7 +66,7 @@
                   href: order-of-queue-commitment.md
                 - name: Notifiche della coda
                   href: queue-notifications.md
-            - name: Uso di code di file
+            - name: Uso delle code di file
               href: using-file-queues.md
               items:
                 - name: Apertura e chiusura di una coda
@@ -79,29 +79,29 @@
                   href: committing-a-queue.md
                 - name: Override del percorso della piattaforma
                   href: platform-path-override.md
-            - name: Riferimento alla coda di file
+            - name: Informazioni di riferimento sulla coda di file
               href: file-queue-reference.md
               items:
-                - name: Tipi di dati della coda di file
+                - name: Tipi di dati delle code di file
                   href: file-queue-data-types.md
-                - name: Funzioni della coda di file
+                - name: Funzioni di accodamento file
                   href: file-queue-functions.md
                 - name: Notifiche della coda di file
                   href: file-queue-notifications.md
         - name: Routine di callback della coda predefinita
           href: default-queue-callback-routine.md
           items:
-            - name: Riferimento alla routine di callback della coda predefinita
+            - name: Riferimento predefinito alla routine di callback della coda
               href: default-queue-callback-routine-reference.md
               items:
-                - name: Funzioni di routine di callback della coda predefinita
+                - name: Funzioni di routine di callback della coda predefinite
                   href: default-queue-callback-routine-functions.md
             - name: Informazioni sulla routine di callback della coda predefinita
               href: about-the-default-queue-callback-routine.md
               items:
                 - name: Creazione di una routine di callback della coda personalizzata
                   href: creating-a-custom-queue-callback-routine.md
-            - name: Uso della routine di callback della coda predefinita
+            - name: Utilizzo della routine di callback della coda predefinita
               href: using-the-default-queue-callback-routine.md
               items:
                 - name: Inizializzazione e terminazione del contesto di callback
@@ -113,59 +113,59 @@
           items:
             - name: Informazioni sui file CAB
               href: about-cabinet-files.md
-            - name: Uso dei file CAB
+            - name: Uso di file CAB
               href: using-cabinet-files.md
               items:
                 - name: Estrazione di file da file CAB
                   href: extracting-files-from-cabinets.md
-                - name: Creazione di una routine di callback del cabinet
+                - name: Creazione di una routine di callback cabinet
                   href: creating-a-cabinet-callback-routine.md
-            - name: Riferimento al file CAB
+            - name: Informazioni di riferimento sul file CAB
               href: cabinet-file-reference.md
               items:
                 - name: Strutture di file CAB
                   href: cabinet-file-structures.md
                 - name: Funzioni file CAB
                   href: cabinet-file-functions.md
-                - name: Notifiche file CAB
+                - name: Notifiche dei file CAB
                   href: cabinet-file-notifications.md
-        - name: Elenco origine MRU
+        - name: Elenco di origini MRU
           href: mru-source-list.md
           items:
             - name: Informazioni sull'elenco di origini MRU
               href: about-the-mru-source-list.md
-            - name: Uso dell'elenco di origine MRU
+            - name: Uso dell'elenco di origini MRU
               href: using-the-mru-source-list.md
             - name: Riferimento all'elenco di origini MRU
               href: mru-source-list-reference.md
               items:
-                - name: Funzioni di origine di MRU
+                - name: Funzioni di origine MRU
                   href: mru-source-functions.md
-        - name: Log file
+        - name: File Log
           href: file-log.md
           items:
-            - name: Informazioni sul log del file
+            - name: Informazioni sul log dei file
               href: about-the-file-log.md
-            - name: Uso del file di log
+            - name: Uso del log dei file
               href: using-the-file-log.md
-            - name: Riferimento al log file
+            - name: Informazioni di riferimento sul log dei file
               href: file-log-reference.md
               items:
-                - name: Funzioni log file
+                - name: Funzioni di log dei file
                   href: file-log-functions.md
-        - name: Elenco Disk-Space
+        - name: Disk-Space elenco
           href: disk-space-list.md
           items:
-            - name: Informazioni sull'elenco di Disk-Space
+            - name: Informazioni sull'Disk-Space dati
               href: about-the-disk-space-list.md
-            - name: Uso dell'elenco Disk-Space
+            - name: Uso dell'Disk-Space dati
               href: using-the-disk-space-list.md
-            - name: Riferimento all'elenco di Disk-Space
+            - name: Disk-Space di riferimento all'elenco
               href: disk-space-list-reference.md
               items:
-                - name: Tipi di dati elenco Disk-Space
+                - name: Disk-Space di dati dell'elenco
                   href: disk-space-list-data-types.md
-                - name: Funzioni elenco Disk-Space
+                - name: Disk-Space list
                   href: disk-space-list-functions.md
     - name: Creazione di applicazioni di installazione
       href: creating-setup-applications.md
@@ -174,13 +174,13 @@
           href: opening-the-inf-file.md
         - name: Estrazione di informazioni sui file dal file INF
           href: extracting-file-information-from-the-inf-file.md
-        - name: Raccolta delle informazioni di installazione dall'utente
+        - name: Raccolta di informazioni di installazione dall'utente
           href: gathering-setup-information-from-the-user.md
-        - name: Creazione di una coda e operazioni di Accodamento di file
+        - name: Creazione di una coda e operazioni su file di accodamento
           href: creating-a-queue-and-queuing-file-operations.md
         - name: Commit della coda
           href: committing-the-queue.md
-        - name: Aggiornamento delle informazioni del registro di sistema
+        - name: Aggiornamento delle informazioni del Registro di sistema
           href: updating-registry-information.md
         - name: Chiusura della coda di file e del file INF
           href: closing-the-file-queue-and-inf-file.md
@@ -192,7 +192,7 @@
         - name: Funzioni
           href: functions.md
           items:
-            - name: Filecallback
+            - name: Oggetto FileCallback
               href: /windows/desktop/api/setupapi/nc-setupapi-psp_file_callback_a
             - name: InstallHinfSection
               href: /windows/desktop/api/Setupapi/nf-setupapi-installhinfsectiona
@@ -393,7 +393,7 @@
               href: /windows/win32/api/Setupapi/ns-setupapi-cabinet_info_a
             - name: FILE_IN_CABINET_INFO
               href: /windows/win32/api/Setupapi/ns-setupapi-file_in_cabinet_info_a
-            - name: FILEPATHS
+            - name: Filepaths
               href: /windows/win32/api/Setupapi/ns-setupapi-filepaths_a
             - name: FILEPATHS_SIGNERINFO
               href: /windows/win32/api/Setupapi/ns-setupapi-filepaths_signerinfo_a
@@ -472,5 +472,5 @@
               href: spfilenotify-targetnewer.md
         - name: Codici di errore (API di installazione)
           href: error-codes--setup-api-.md
-        - name: Chiavi del registro di sistema Run e RunOnce
+        - name: Chiavi del Registro di sistema Run ed RunOnce
           href: run-and-runonce-registry-keys.md

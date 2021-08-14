@@ -1,7 +1,7 @@
 ---
-description: Il metodo di riconnessione Reimposta o reinizializza la smart card.
+description: Il metodo ReAttach reimposta o reinizializza il smart card.
 ms.assetid: c9cd9cd7-5ee6-48dc-8460-deb9c827fcc4
-title: 'Metodo IsValid:: reconnettite (Scardmgr. h)'
+title: Metodo ISCard::ReAttach (Scardmgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 3f5ff4cd46b2b523b0031e1389b96d9c2c3973a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f28caee7a40574bf7f31fdc4fb55ddd81ea9e22cca12f1664950c96922d50902
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482111"
 ---
-# <a name="iscardreattach-method"></a>Metodo IsValid:: reconnetti
+# <a name="iscardreattach-method"></a>Metodo ISCard::ReAttach
 
-\[Il metodo di **riconnessione** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Non è disponibile per l'utilizzo in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli Smart Card](/previous-versions/windows/desktop/secsmart/smart-card-modules) offrono funzionalità simili.\]
+\[Il **metodo Ricollegare** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Non è disponibile per l'uso in Windows Server 2003 con Service Pack 1 (SP1) e versioni successive, Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. I [moduli smart card offrono](/previous-versions/windows/desktop/secsmart/smart-card-modules) funzionalità simili.\]
 
-Il metodo di **riconnessione** Reimposta o reinizializza la [*Smart Card*](../secgloss/s-gly.md).
+Il **metodo ReAttach** reimposta o reinizializza [*l'smart card*](../secgloss/s-gly.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,17 +42,17 @@ HRESULT ReAttach(
 
 <dl> <dt>
 
-*SHAREMODE* \[ in\]
+*ShareMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di condivisione o esclusiva della connessione alla smart card.
+Modalità in cui condividere o possedere esclusivamente la connessione al smart card.
 
 
 
 | Valore                                                                                                                                            | Significato                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**ESCLUSIVO**</dt> </dl> | Nessun altro usa questa connessione alla smart card.<br/> |
-| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**CONDIVISO**</dt> </dl>          | Questa connessione può essere utilizzata da altre applicazioni.<br/>        |
+| <span id="EXCLUSIVE"></span><span id="exclusive"></span><dl> <dt>**Esclusivo**</dt> </dl> | Nessun altro usa questa connessione al smart card.<br/> |
+| <span id="SHARED"></span><span id="shared"></span><dl> <dt>**condiviso**</dt> </dl>          | Altre applicazioni possono usare questa connessione.<br/>        |
 
 
 
@@ -60,19 +60,19 @@ Modalità di condivisione o esclusiva della connessione alla smart card.
 
 </dd> <dt>
 
-*InitState* \[ in\]
+*InitState* \[ Pollici\]
 </dt> <dd>
 
-Indica le operazioni da eseguire con la scheda.
+Indica cosa fare con la scheda.
 
 
 
 | Valore                                                                                                                                      | Significato                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| <span id="LEAVE"></span><span id="leave"></span><dl> <dt>**LASCIARE**</dt> </dl>       | Lascia la smart card nello [*stato*](../secgloss/s-gly.md)corrente.<br/> |
-| <span id="RESET"></span><span id="reset"></span><dl> <dt>**REIMPOSTAZIONE**</dt> </dl>       | Reimposta la smart card in uno stato noto.<br/>                                                              |
-| <span id="UNPOWER"></span><span id="unpower"></span><dl> <dt>**Non alimentato**</dt> </dl> | Rimuove l'alimentazione dalla smart card.<br/>                                                                      |
-| <span id="EJECT"></span><span id="eject"></span><dl> <dt>**EJECT**</dt> </dl>       | Espelle la smart card se il lettore dispone di funzionalità di espulsione.<br/>                                             |
+| <span id="LEAVE"></span><span id="leave"></span><dl> <dt>**Lasciare**</dt> </dl>       | Lascia il smart card nello stato [*corrente.*](../secgloss/s-gly.md)<br/> |
+| <span id="RESET"></span><span id="reset"></span><dl> <dt>**Reimpostare**</dt> </dl>       | Reimposta l'smart card su uno stato noto.<br/>                                                              |
+| <span id="UNPOWER"></span><span id="unpower"></span><dl> <dt>**UNPOWER**</dt> </dl> | Rimuove l'alimentazione dal smart card.<br/>                                                                      |
+| <span id="EJECT"></span><span id="eject"></span><dl> <dt>**Espellere**</dt> </dl>       | Espulse il smart card se il lettore ha funzionalità di espulsione.<br/>                                             |
 
 
 
@@ -88,8 +88,8 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 | Codice restituito                                                                                  | Descrizione                                                                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>         | Operazione completata correttamente.<br/>                                                     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Si è verificato un problema con uno o più parametri passati nella funzione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Operazione completata correttamente.<br/>                                                     |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Si è verificato un errore in uno o più parametri passati alla funzione.<br/> |
 
 
 
@@ -97,11 +97,11 @@ Il metodo restituisce uno dei valori possibili seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-Oltre ai codici di errore COM elencati sopra, questa interfaccia può restituire un codice di errore della smart card se è stata chiamata una funzione Smart Card per completare la richiesta. Per ulteriori informazioni, vedere [valori restituiti della smart card](authentication-return-values.md).
+Oltre ai codici di errore COM elencati in precedenza, questa interfaccia può restituire un smart card di errore se è stata chiamata una funzione smart card per completare la richiesta. Per altre informazioni, vedere [Smart Card Return Values](authentication-return-values.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata la reinizializzazione della smart card.
+Nell'esempio seguente viene illustrata la reinizializzazione del smart card.
 
 
 ```C++
@@ -124,14 +124,14 @@ if (FAILED(hr))
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | Fine del supporto client<br/>    | Windows XP<br/>                                                                   |
 | Fine del supporto server<br/>    | Windows Server 2003<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Scardmgr.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Scardmgr.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | La \_ scheda IID è definita come 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
+| IID<br/>                      | IID ISCard è definito come \_ 1461AAC3-6810-11D0-918F-00AA00C18068<br/>               |
 
 
 
@@ -145,10 +145,10 @@ if (FAILED(hr))
 [**AttachByReader**](iscard-attachbyreader.md)
 </dt> <dt>
 
-[**Scollegare**](iscard-detach.md)
+[**Detach**](iscard-detach.md)
 </dt> <dt>
 
-[**Scheda di**](iscard.md)
+[**ISCard**](iscard.md)
 </dt> </dl>
 
  

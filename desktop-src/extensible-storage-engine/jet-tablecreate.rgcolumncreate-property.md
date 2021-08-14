@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_TABLECREATE. rgcolumncreate'
-title: Proprietà JET_TABLECREATE. rgcolumncreate
+description: 'Altre informazioni su: JET_TABLECREATE.rgcolumncreate property'
+title: JET_TABLECREATE.rgcolumncreate
 TOCTitle: 'rgcolumncreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgcolumncreate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.rgcolumncreate(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 97392c9dd89502dc713f4fa7dd2c79de90360930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbbdea76b79bf650009a7e667c4a5136697079569f6d43f9a93f11febba00369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472861"
 ---
-# <a name="jet_tablecreatergcolumncreate-property"></a>Proprietà JET_TABLECREATE. rgcolumncreate
+# <a name="jet_tablecreatergcolumncreate-property"></a>JET_TABLECREATE.rgcolumncreate
 
-Ottiene o imposta una matrice di informazioni sulla creazione di colonne, di tipo [JET_COLUMNCREATE](./jet-columncreate-class.md).
+Ottiene o imposta una matrice di informazioni sulla creazione di colonne di [tipo JET_COLUMNCREATE](./jet-columncreate-class.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public JET_COLUMNCREATE[] rgcolumncreate { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo \[\]  
+digitare: \[\]  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membri JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membri](./jet-tablecreate-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

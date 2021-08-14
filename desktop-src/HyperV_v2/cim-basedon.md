@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un'associazione tra un oggetto StorageExtent CIM di livello superiore \_ e un oggetto STORAGEEXTENT CIM di livello inferiore \_ . Un \_ oggetto CIM ProtectedSpaceExtent, ad esempio, fa parte di un \_ oggetto CIM PhysicalExtent.
+description: Rappresenta un'associazione tra un oggetto CIM StorageExtent di livello superiore \_ e un oggetto CIM \_ StorageExtent di livello inferiore. Ad esempio, un oggetto CIM \_ ProtectedSpaceExtent fa parte di un oggetto CIM \_ PhysicalExtent.
 ms.assetid: 40a88927-981b-4fc4-af5f-be91d9933284
-title: Classe CIM_BasedOn (gestione Hyper-V)
+title: CIM_BasedOn classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 47d2e44d1106eba57f4c46c0957662c348c9ca1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd07a329388d1c4883674bc86f9cadf648746487ea44769141d91e90548722c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995767"
 ---
-# <a name="cim_basedon-class-hyper-v-management"></a>Classe CIM_BasedOn (gestione Hyper-V)
+# <a name="cim_basedon-class-hyper-v-management"></a>CIM_BasedOn classe (gestione Hyper-V)
 
-Rappresenta un'associazione tra un oggetto **\_ StorageExtent CIM** di livello superiore e un oggetto **\_ StorageExtent CIM** di livello inferiore. Un oggetto [**CIM \_ ProtectedSpaceExtent**](/windows/desktop/CIMWin32Prov/cim-protectedspaceextent) , ad esempio, fa parte di un oggetto [**CIM \_ PhysicalExtent**](/windows/desktop/CIMWin32Prov/cim-physicalextent) .
+Rappresenta un'associazione tra un oggetto **CIM \_ StorageExtent** di livello superiore e un oggetto **CIM \_ StorageExtent di** livello inferiore. Ad esempio, [**un oggetto CIM \_ ProtectedSpaceExtent**](/windows/desktop/CIMWin32Prov/cim-protectedspaceextent) fa parte di un [**oggetto CIM \_ PhysicalExtent.**](/windows/desktop/CIMWin32Prov/cim-physicalextent)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ class CIM_BasedOn : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ BasedOn** presenta questi tipi di membri:
+La **classe CIM \_ BasedOn** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ BasedOn** dispone di queste proprietà.
+La **classe CIM \_ BasedOn** ha queste proprietà.
 
 <dl> <dt>
 
@@ -64,10 +64,10 @@ Tipo di dati: **CIM \_ StorageExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Oggetto **\_ StorageExtent CIM** di livello inferiore.
+Oggetto **CIM \_ StorageExtent di livello** inferiore.
 
 </dd> <dt>
 
@@ -80,51 +80,51 @@ Tipo di dati: **CIM \_ StorageExtent**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-Oggetto **\_ StorageExtent CIM** di livello superiore.
+Oggetto **CIM \_ StorageExtent di livello** superiore.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo che indica il punto in cui si conclude l'oggetto di archiviazione di livello inferiore, l'oggetto **\_ StorageExtent** di livello superiore. Questa proprietà è utile quando si esegue il mapping di oggetti **CIM \_ StorageExtent** non contigui in un raggruppamento di livello superiore.
+Indirizzo che indica dove termina l'oggetto **CIM \_ StorageExtent** di livello superiore nell'archiviazione di livello inferiore. Questa proprietà è utile quando si esegue il mapping di oggetti **CIM \_ StorageExtent** non contigui in un raggruppamento di livello superiore.
 
 </dd> <dt>
 
 **OrderIndex**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indice utilizzato per specificare l'ordine delle associazioni **CIM \_ BasedOn** in una raccolta; in caso contrario, "0" indica nessun ordine. **CIM \_** Le istanze di BasedOn con lo stesso valore dipendente devono inserire valori univoci nella proprietà **OrderIndex** . Il valore **OrderIndex** più basso specifica il primo membro della raccolta.
+Indice utilizzato per specificare l'ordine delle associazioni **CIM \_ BasedOn** in una raccolta. In caso contrario, "0" non indica alcun ordine. **CIM \_ Le istanze di BasedOn** con lo stesso valore dipendente devono inserire valori univoci nella **proprietà OrderIndex.** Il valore **OrderIndex più** basso specifica il primo membro della raccolta.
 
-Un esempio di utilizzo di questa proprietà è la definizione di una matrice con striping RAID 0 di 3 dischi. La matrice RAID risultante è un extent di archiviazione che dipende dagli extent di archiviazione che descrivono ognuno dei 3 dischi. Il valore **OrderIndex** di ogni associazione **CIM \_ BasedOn** da extent del disco all'array RAID può essere specificato come 1, 2 e 3 per indicare l'ordine in cui gli extent del disco vengono usati per accedere ai dati RAID.
+Un esempio dell'uso di questa proprietà è la definizione di una matrice con striped RAID-0 di 3 dischi. L'array RAID risultante è un extent di archiviazione dipendente da extent di archiviazione che descrivono ognuno dei 3 dischi. Il **valore OrderIndex** di ogni associazione **CIM \_ BasedOn** dagli extent del disco alla matrice RAID può essere specificato come 1, 2 e 3 per indicare l'ordine in cui gli extent del disco vengono usati per accedere ai dati RAID.
 
 </dd> <dt>
 
-**IndirizzoIniziale**
+**StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indirizzo che indica il punto in cui viene avviata l'oggetto **\_ StorageExtent** di livello più alto.
+Indirizzo che indica dove inizia l'oggetto **CIM \_ StorageExtent** di livello superiore nell'archiviazione di livello inferiore.
 
 </dd> </dl>
 
@@ -136,8 +136,8 @@ Indirizzo che indica il punto in cui viene avviata l'oggetto **\_ StorageExtent*
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                                    |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -146,7 +146,7 @@ Indirizzo che indica il punto in cui viene avviata l'oggetto **\_ StorageExtent*
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

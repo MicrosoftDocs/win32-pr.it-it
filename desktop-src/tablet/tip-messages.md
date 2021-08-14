@@ -1,19 +1,19 @@
 ---
-description: Il pannello input di testo supporta i messaggi seguenti.
+description: Il pannello di input di testo supporta i messaggi seguenti.
 ms.assetid: cb11ac2a-c7bb-4d13-b203-f4a4968dc7ae
-title: Messaggi del pannello di input di testo
+title: Messaggi del pannello input di testo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7766e0a0cd6c7b843f32b1ae5cd53fd4d1b8a37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d6bc62fd132e6c029468d8b00107a2e16218fe343b4a8cd23e7e1a7f87ef571
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119265521"
 ---
-# <a name="text-input-panel-messages"></a>Messaggi del pannello di input di testo
+# <a name="text-input-panel-messages"></a>Messaggi del pannello input di testo
 
-Il pannello input di testo supporta i messaggi seguenti.
+Il pannello di input di testo supporta i messaggi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Il pannello input di testo supporta i messaggi seguenti.
 
 | Message                                                           | Descrizione                                                                                                                 |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [**\_messaggio di \_ apertura del suggerimento Microsoft \_**](microsoft-tip-opening-msg.md) | Il messaggio di [**\_ \_ apertura \_ del suggerimento Microsoft**](microsoft-tip-opening-msg.md) viene inviato quando viene aperto il pannello input di testo. |
+| [**MICROSOFT \_ TIP \_ OPENING \_ MSG**](microsoft-tip-opening-msg.md) | Il [**messaggio MICROSOFT TIP OPENING \_ \_ \_ MSG**](microsoft-tip-opening-msg.md) viene inviato all'apertura del pannello di input di testo. |
 
 
 

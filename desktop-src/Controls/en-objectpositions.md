@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica EN_OBJECTPOSITIONS (RichEdit. h)
-description: Notifica alla finestra padre di un controllo Rich Edit quando il controllo legge negli oggetti. Un controllo Rich Edit invia questo codice di notifica sotto forma di un \_ messaggio di notifica WM.
+title: EN_OBJECTPOSITIONS di notifica (Richedit.h)
+description: Notifica alla finestra padre di un controllo Rich Edit quando il controllo legge negli oggetti . Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 1965185f-8a13-4989-8574-af8b9b30f6b0
 keywords:
-- Controlli di Windows per il codice di notifica EN_OBJECTPOSITIONS
+- EN_OBJECTPOSITIONS del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35681f6734457eb6b6ebcac1bcb67227cbd3b9e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3be6f3f41877a56396ef021e97130f4c174516160d7243144f10ea1dfd3951b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436691"
 ---
-# <a name="en_objectpositions-notification-code"></a>\_Codice di notifica en OBJECTPOSITIONS
+# <a name="en_objectpositions-notification-code"></a>Codice di notifica EN \_ OBJECTPOSITIONS
 
-Notifica alla finestra padre di un controllo Rich Edit quando il controllo legge negli oggetti. Un controllo Rich Edit invia questo codice di notifica sotto forma di un messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo Rich Edit quando il controllo legge negli oggetti . Un controllo Rich Edit invia questo codice di notifica sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,19 +41,19 @@ EN_OBJECTPOSITIONS
 *lParam* 
 </dt> <dd>
 
-Struttura [**OBJECTPOSITIONS**](/windows/desktop/api/Richedit/ns-richedit-objectpositions) .
+Struttura [**OBJECTPOSITIONS.**](/windows/desktop/api/Richedit/ns-richedit-objectpositions)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero per continuare l'operazione di **lettura** .
+Restituire zero per continuare **l'operazione di** lettura.
 
-Restituisce un valore diverso da zero per arrestare l'operazione di **lettura** .
+Restituire un valore diverso da zero per arrestare **l'operazione di** lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Per ricevere un \_ codice di notifica en OBJECTPOSITIONS, specificare il flag [**ENM \_ OBJECTPOSITIONS**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio \_ SETEVENTMASK em**](em-seteventmask.md) .
+Per ricevere un codice di notifica EN OBJECTPOSITIONS, specificare il \_ flag [**ENM \_ OBJECTPOSITIONS**](rich-edit-control-event-mask-flags.md) nella maschera inviata con il [**messaggio EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Per ricevere un \_ codice di notifica en OBJECTPOSITIONS, specificare il flag [*
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -74,13 +74,13 @@ Per ricevere un \_ codice di notifica en OBJECTPOSITIONS, specificare il flag [*
 **Riferimento**
 </dt> <dt>
 
-[**\_SETEVENTMASK em**](em-seteventmask.md)
+[**EM \_ SETEVENTMASK**](em-seteventmask.md)
 </dt> <dt>
 
 [**OBJECTPOSITIONS**](/windows/desktop/api/Richedit/ns-richedit-objectpositions)
 </dt> <dt>
 
-[**\_notifica WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> <dt>
 
 **Altre risorse**

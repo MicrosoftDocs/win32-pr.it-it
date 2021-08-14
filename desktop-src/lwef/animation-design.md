@@ -1,49 +1,49 @@
 ---
-title: Progettazione dell'animazione
-description: Progettazione dell'animazione
+title: Progettazione di animazioni
+description: Progettazione di animazioni
 ms.assetid: 8812e4cc-9062-4c65-81ef-229bd29534cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d6cf86cfe115ec209fb305f0ae017951bd7f41
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 225a500d94b4de6f9133650a6aed415a49329585bc9bc9f83dec028668e51215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118752292"
 ---
-# <a name="animation-design"></a>Progettazione dell'animazione
+# <a name="animation-design"></a>Progettazione di animazioni
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-### <a name="image-design"></a>Progettazione immagine
+### <a name="image-design"></a>Progettazione di immagini
 
-Usare la tavolozza Microsoft Office durante la progettazione dei caratteri per ridurre al minimo i potenziali problemi di realizzazione della tavolozza. Evitare di selezionare un colore di trasparenza simile ai colori usati nel documento.
+Usare il riquadro Microsoft Office quando si progettano i caratteri per ridurre al minimo eventuali problemi di realizzazione del riquadro. Evitare di selezionare un colore di trasparenza simile ai colori utilizzati nel documento.
 
 ### <a name="sounds"></a>Suoni
 
-Microsoft Agent consente di riprodurre suoni nelle animazioni. Si consiglia di non includere suoni per le animazioni **inattive** . In questo modo, se l'agente deve caricare la DLL multimediale di sistema, non si verifica alcun ritardo al centro dell'animazione.
+Microsoft Agent consente di riprodurre suoni nelle animazioni. È consigliabile non includere  suoni per le animazioni inattive. In questo modo non si verifica un ritardo nel mezzo dell'animazione, se Agent deve caricare la DLL multimediale di sistema.
 
-### <a name="frame-size"></a>Dimensioni frame
+### <a name="frame-size"></a>Dimensioni fotogramma
 
-Gli assistenti di Office tipici sono 123 x 93 pixel. Sebbene sia possibile creare caratteri di altre dimensioni, questi verranno ridimensionati a 123 x 93 nella raccolta di assistenti.
+Gli assistenti Office sono tipici di 123 x 93 pixel. Anche se è possibile creare caratteri di altre dimensioni, verranno ridimensionati a 123 x 93 nella Raccolta assistenti.
 
-### <a name="frame-transition"></a>Transizione del frame
+### <a name="frame-transition"></a>Transizione di frame
 
-Tutte le animazioni eccetto **Goodbye**, **Greeting**, **show** e **Hide** devono iniziare e terminare con l'animazione RestPose. Microsoft Office non riproduce animazioni di **restituzione** esplicite, pertanto non è necessario definirle. Tutte le animazioni devono anche avere una diramazione di uscita. Exit Branching consente di affrettare e completare l'animazione corrente prima di chiamare l'animazione successiva. Se non si fornisce la diramazione di uscita, la transizione tra le animazioni potrebbe essere Jerky.
+Tutte le animazioni ad eccezione **di Goodbye,** **Greeting,** **Show** e **Hide** devono iniziare e terminare con l'animazione RestPose. Microsoft Office non riproduce animazioni **return** esplicite, pertanto non è consigliabile definirle. Anche tutte le animazioni devono avere Exit Branching. La diramazione di uscita consente di "sbrigare e terminare" l'animazione corrente prima di chiamare l'animazione successiva. Se non si specifica Exit Branching, la transizione tra animazioni può risultare a scatti.
 
 ### <a name="character-properties"></a>Proprietà carattere
 
-Microsoft Agent consente di impostare il [**nome**](name-property.md), la [**Descrizione**](description-property.md) e le proprietà [**dei dati**](extradata-property.md) di tipo carattere. Microsoft Office utilizza il campo **dei dati** di prima per conservare una o più frasi introduttive e frasi di promemoria. Microsoft Office preleva dalle altre frasi introduttive da inserire nell'aerostato vocale della raccolta di assistenti. Le frasi promemoria vengono usate quando si riceve un promemoria da Outlook.
+Microsoft Agent consente di impostare le proprietà [**Name**](name-property.md), [**Description**](description-property.md) [**ed ExtraData del**](extradata-property.md) carattere. Microsoft Office usa il **campo ExtraData** per contenere una o più frasi introduttive e frasi di promemoria. Microsoft Office le altre frasi introduttive da inserire nel fumetto della raccolta di assistenti. Le frasi di promemoria vengono usate quando si riceve un promemoria da Outlook.
 
-Il campo [**dati**](extradata-property.md) non è formattato come segue:
+Il [**campo ExtraData**](extradata-property.md) viene formattato come segue:
 
-IntroPhrase1~~IntroPhrase2~~IntroPhrase3 ^ ^ ReminderPhrase1~~ReminderPhrase2~~ReminderPhrase3
+IntroPhrase1~~IntroPhrase2~~IntroPhrase3^^^ReminderPhrase1~~ReminderPhrase2~~ReminderPhrase3
 
-Le frasi introduttive sono separate da una coppia di caratteri tilde (~), seguite da frasi di promemoria. Queste frasi di promemoria sono separate anche da una coppia di caratteri tilde. I due set di frasi sono separati da due caratteri di accento (^^). Non esiste alcun limite al numero di ogni tipo di frase, ad eccezione del fatto che deve essere presente almeno uno di essi.
+Le frasi introduttive sono separate da una coppia di caratteri tilde (~), seguite da frasi di promemoria. Queste frasi di promemoria sono separate anche da una coppia di caratteri tilde. I due set di frasi sono separati da due caratteri di (^^). Non esiste alcun limite al numero di ogni tipo di frase, ad eccezione del fatto che deve essere presente almeno uno di essi.
 
- 
+ 
 
- 
+ 
 
 
 

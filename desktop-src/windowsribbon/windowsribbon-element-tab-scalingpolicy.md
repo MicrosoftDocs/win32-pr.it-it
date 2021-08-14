@@ -1,9 +1,9 @@
 ---
-title: Tab. ScalingPolicy, proprietà
+title: Tab.ScalingPolicy - proprietà
 description: Rappresenta un contenitore per le specifiche di ridimensionamento delle schede.
 ms.assetid: cc1e4a35-9348-459b-a2f1-25c34d49e5e8
 keywords:
-- Tab. ScalingPolicy proprietà barra multifunzione di Windows
+- Proprietà Tab.ScalingPolicy Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46528e7b5957415db55f1a51dd6dafed7e1da98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11b98174ff5c3426a4805905f0aa7ada86d63a644f4245135bcede5c71d11e75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850797"
 ---
-# <a name="tabscalingpolicy-property"></a>Tab. ScalingPolicy, proprietà
+# <a name="tabscalingpolicy-property"></a>Tab.ScalingPolicy - proprietà
 
-Rappresenta un contenitore per le specifiche di ridimensionamento delle [schede](windowsribbon-controls-tab.md) .
+Rappresenta un contenitore per le specifiche [di](windowsribbon-controls-tab.md) ridimensionamento delle schede.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -51,7 +51,7 @@ Non ci sono attributi.
 
 | Elemento                                             |
 |-----------------------------------------------------|
-| [**Scheda**](windowsribbon-element-tab.md)<br/> |
+| [**TAB**](windowsribbon-element-tab.md)<br/> |
 
 
 
@@ -59,13 +59,13 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**scheda**](windowsribbon-element-tab.md).
+Può verificarsi al massimo una volta per ogni [**scheda**](windowsribbon-element-tab.md).
 
-Le specifiche di ridimensionamento descrivono le dimensioni e il comportamento del layout per i controlli in una [scheda](windowsribbon-controls-tab.md) quando la barra multifunzione viene ridimensionata.
+Le specifiche di ridimensionamento descrivono le dimensioni e il comportamento del layout per i controlli in [una](windowsribbon-controls-tab.md) scheda quando la barra multifunzione viene ridimensionata.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato un manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) che specifica una preferenza [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in una scheda **Home** . Inoltre, gli elementi di [**scala**](windowsribbon-element-scale.md) vengono specificati per influenzare il comportamento di compressione, in ordine di ridimensionamento decrescente, di ogni gruppo.
+L'esempio di codice seguente illustra un manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) che specifica una preferenza [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) per ognuno dei quattro gruppi di controlli in **una scheda Home.** Inoltre, gli [**elementi Scale**](windowsribbon-element-scale.md) vengono specificati per influire sul comportamento di compressione, in ordine decrescente, di ogni gruppo.
 
 
 ```C++
@@ -137,8 +137,8 @@ Nell'esempio di codice seguente viene illustrato un manifesto [**ScalingPolicy**
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -146,7 +146,7 @@ Nell'esempio di codice seguente viene illustrato un manifesto [**ScalingPolicy**
 
 <dl> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

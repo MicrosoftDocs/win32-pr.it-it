@@ -1,7 +1,7 @@
 ---
-description: Il Metodo GetOwnerWindow recupera l'handle della finestra proprietaria, m \_ hwndOwner.
+description: Il metodo GetOwnerWindow recupera l'handle di finestra proprietario, m \_ hwndOwner.
 ms.assetid: fa576b42-b4a7-4374-8ba4-7d21e86d9d61
-title: Metodo CBaseControlWindow. GetOwnerWindow (Ctlutil. h)
+title: Metodo CBaseControlWindow.GetOwnerWindow (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4e4d3811f85abd68bcd7d625dce0e9e8963be39a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cdb3073d1dd8055986b905d6e8f50967a304e5f294b0ffcaeddcd50d8c0ee33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432511"
 ---
-# <a name="cbasecontrolwindowgetownerwindow-method"></a>CBaseControlWindow. GetOwnerWindow, metodo
+# <a name="cbasecontrolwindowgetownerwindow-method"></a>Metodo CBaseControlWindow.GetOwnerWindow
 
-Il `GetOwnerWindow` metodo recupera l'handle della finestra proprietaria, **m \_ hwndOwner**.
+Il `GetOwnerWindow` metodo recupera l'handle di finestra proprietario, **m \_ hwndOwner.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Restituisce la finestra proprietaria.
 
 ## <a name="remarks"></a>Commenti
 
-Recupera la finestra proprietaria senza chiamare il metodo di interfaccia. Usare questa funzione membro invece di [**CBaseControlWindow:: Get \_ owner**](cbasecontrolwindow-get-owner.md), a meno che non si chiami esternamente tramite il metodo [**IVideoWindow:: Get \_ owner**](/windows/desktop/api/Control/nf-control-ivideowindow-get_owner) .
+Recupera la finestra proprietaria senza chiamare il metodo di interfaccia . Usare questa funzione membro anziché [**CBaseControlWindow::get \_ Owner**](cbasecontrolwindow-get-owner.md), a meno che non venga chiamato esternamente tramite il metodo [**IVideoWindow::get \_ Owner.**](/windows/desktop/api/Control/nf-control-ivideowindow-get_owner)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Recupera la finestra proprietaria senza chiamare il metodo di interfaccia. Usare
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

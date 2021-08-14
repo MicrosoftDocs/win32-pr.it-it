@@ -1,17 +1,17 @@
 ---
 description: Contiene le proprietà di configurazione per l'origine di acquisizione.
 ms.assetid: 9A21D21B-E77F-4C7C-B41F-361CEDA322E7
-title: Attributo MF_CAPTURE_ENGINE_MEDIASOURCE_CONFIG (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_MEDIASOURCE_CONFIG attributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8afaea6e47b729e325e67135c8a1d39fa88bdc4c
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a3d111aa41d423f39bb55597d75ec18cc2ee24d93a7f250074a10882c6f38f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103885944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464371"
 ---
-# <a name="mf_capture_engine_mediasource_config-attribute"></a>Attributo di configurazione di MF \_ Capture \_ Engine \_ MEDIASOURCE \_
+# <a name="mf_capture_engine_mediasource_config-attribute"></a>Attributo MF \_ CAPTURE \_ ENGINE \_ MEDIASOURCE \_ CONFIG
 
 Contiene le proprietà di configurazione per l'origine di acquisizione.
 
@@ -29,9 +29,9 @@ Attualmente, questo attributo viene ignorato. In futuro, potrebbe essere usato p
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                   |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                         |
-| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                   |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                         |
+| Intestazione<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -39,13 +39,13 @@ Attualmente, questo attributo viene ignorato. In futuro, potrebbe essere usato p
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del motore di acquisizione](capture-engine-attributes.md)
 </dt> <dt>
 
-[**IMFCaptureEngine:: Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
+[**IMFCaptureEngine::Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Ottiene il numero di oggetti IMFSourceBuffer nell'elenco.
 ms.assetid: 551d2f40-85ad-45af-9191-9fb2b2c44913
-title: 'Metodo IMFSourceBufferList:: GetLength'
+title: Metodo IMFSourceBufferList::GetLength
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 1591fd47cb3d5e758dee8814dc9736e94ca4ee7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f219566db6e0e9a485839fee3d22e540d82f38f13819e03e3e3d092a23b21a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878433"
 ---
-# <a name="imfsourcebufferlistgetlength-method"></a>Metodo IMFSourceBufferList:: GetLength
+# <a name="imfsourcebufferlistgetlength-method"></a>Metodo IMFSourceBufferList::GetLength
 
-Ottiene il numero di oggetti [**IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) nell'elenco.
+Ottiene il numero di [**oggetti IMFSourceBuffer**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfsourcebuffer) nell'elenco.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,9 +47,9 @@ Numero di buffer di origine nell'elenco.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
