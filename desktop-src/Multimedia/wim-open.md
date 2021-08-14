@@ -1,9 +1,9 @@
 ---
-title: Messaggio WIM_OPEN (mmsystem. h)
-description: Il \_ messaggio di apertura WIM viene inviato a una funzione di callback di input della forma d'onda-audio quando viene aperto un dispositivo di input audio e di forma d'onda.
+title: WIM_OPEN messaggio (Mmsystem.h)
+description: Il messaggio WIM OPEN viene inviato a una funzione di callback di input audio-waveform all'apertura di un dispositivo di \_ input audio-forma d'onda.
 ms.assetid: de18e6b2-ea28-46d9-812c-e6dac49838ee
 keywords:
-- WIM_OPEN messaggi multimediali di Windows
+- WIM_OPEN di Windows multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c1661482149c90cf3f2bd6b10620cb32f380be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 337d86c7c1262094993bbac4973b96f1d442149b07d3a48a3e88bd384fee2997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369754"
 ---
-# <a name="wim_open-message"></a>\_Messaggio aperto Wim
+# <a name="wim_open-message"></a>Messaggio WIM \_ OPEN
 
-Il messaggio di **\_ apertura Wim** viene inviato a una funzione di callback di input della forma d'onda-audio quando viene aperto un dispositivo di input audio e di forma d'onda.
+Il **messaggio WIM \_ OPEN viene** inviato a una funzione di callback di input audio-waveform all'apertura di un dispositivo di input audio-forma d'onda.
 
 
 ```C++
@@ -41,20 +41,20 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Riservati deve essere zero.
+Riservato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questo messaggio non restituisce alcun valore.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Questo messaggio non restituisce alcun valore.
 
 <dl> <dt>
 
-[Audio Waveform](waveform-audio.md)
+[Waveform Audio](waveform-audio.md)
 </dt> <dt>
 
-[Messaggi di forma d'onda](waveform-messages.md)
+[Messaggi Waveform](waveform-messages.md)
 </dt> </dl>
 
  

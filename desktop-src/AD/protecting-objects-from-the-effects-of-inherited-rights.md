@@ -1,41 +1,41 @@
 ---
-title: Protezione di oggetti dagli effetti dei diritti ereditati
-description: Come illustrato nell'argomento ereditarietà e delega dell'amministrazione, le voci ACE possono essere impostate su un oggetto contenitore, ad esempio organizationalUnit, domainDNS, container e così via, e propagate agli oggetti figlio in base ai flag ACE impostati su tali ACE.
+title: Protezione degli oggetti dagli effetti dei diritti ereditati
+description: Come illustrato nell'argomento Ereditarietà e delega dell'amministrazione, le voci ACE possono essere impostate su un oggetto contenitore, ad esempio organizationalUnit, domainDNS, contenitore e così via, e propagate agli oggetti figlio in base ai flag ACE impostati su tali ACE.
 ms.assetid: 3da000dd-3a32-4294-a636-ad077e618db2
 ms.tgt_platform: multiple
 keywords:
-- Protezione di oggetti dagli effetti di Active Directory con diritti ereditati
+- Protezione degli oggetti dagli effetti dei diritti ereditati di ACTIVE Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78e49991cd8a479e05b024c6ea2538783a843025
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 7dcc1067fcfe0d57e2e7aca837b97d73f18b55a41a4f1347ac36224b987918aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104046497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118185016"
 ---
-# <a name="protecting-objects-from-the-effects-of-inherited-rights"></a>Protezione di oggetti dagli effetti dei diritti ereditati
+# <a name="protecting-objects-from-the-effects-of-inherited-rights"></a>Protezione degli oggetti dagli effetti dei diritti ereditati
 
-Come illustrato nell'argomento [ereditarietà e delega dell'amministrazione](inheritance-and-delegation-of-administration.md), le voci ACE possono essere impostate su un oggetto contenitore, ad esempio **OrganizationalUnit**, **domainDNS**, **container** e così via, e propagate agli oggetti figlio in base ai flag ACE impostati su tali ACE.
+Come illustrato nell'argomento Ereditarietà e delega dell'amministrazione, [](inheritance-and-delegation-of-administration.md)le voci ACE possono essere impostate su un oggetto contenitore, ad esempio **organizationalUnit,** **domainDNS,** **container** e così via, e propagate agli oggetti figlio in base ai flag ACE impostati su tali ACE.
 
-Se si dispone di un oggetto protetto o di un oggetto le cui voci ACE si desidera controllare in modo esplicito, ad esempio un'unità organizzativa privata o un utente speciale, è possibile impedire la propagazione delle voci ACE all'oggetto tramite il contenitore padre o i predecessori del contenitore padre.
+Se si dispone di un oggetto protetto o di un oggetto di cui si desidera controllare in modo esplicito le voci ACE, ad esempio un'unità organizzativa privata o un utente speciale, è possibile impedire la propagazione delle voci ACE all'oggetto dal contenitore padre o dai predecessori del contenitore padre.
 
-Utilizzare la proprietà [**IADsSecurityDescriptor. Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) per controllare se i DACL e i SACL vengono ereditati dall'oggetto dal relativo contenitore padre.
+Usare la [**proprietà IADsSecurityDescriptor.Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) per controllare se i DACL e i SACL vengono ereditati dall'oggetto dal contenitore padre.
 
-È possibile usare la proprietà [**IADsSecurityDescriptor. Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) per proteggere un oggetto dagli effetti delle voci ACE ereditate. I flag seguenti consentono di impostare in modo esplicito il controllo di accesso sull'oggetto e impedire a un utente di modificare il controllo di accesso all'oggetto impostando le voci ACE ereditabili sul contenitore padre dell'oggetto o i predecessori del relativo contenitore padre.
+La [**proprietà IADsSecurityDescriptor.Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) può essere usata per proteggere un oggetto dagli effetti delle ACE ereditate. I flag seguenti forzano l'impostazione esplicita del controllo di accesso sull'oggetto e impediscono a un utente di modificare il controllo di accesso per l'oggetto impostando le voci ACE ereditabili nel contenitore padre dell'oggetto o nei predecessori del contenitore padre.
 
 
 
 | Flag                               | Descrizione                                                                                                                                                                     |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_elenco DACL se \_ protetto**<br/> | Impedisce l'applicazione degli ACE impostati sull'elenco DACL del contenitore padre e di tutti gli oggetti sopra il contenitore padre nella gerarchia di directory, dall'applicazione all'oggetto DACL.<br/> |
-| **SE \_ SACL è \_ protetto**<br/> | Impedisce l'applicazione di Ace impostati sull'elenco SACL del contenitore padre e di tutti gli oggetti sopra il contenitore padre nella gerarchia di directory, dall'applicazione al SACL dell'oggetto.<br/> |
+| **\_edizione Standard DACL \_ PROTETTO**<br/> | Impedisce che le voci ACE impostate nell'elenco DACL del contenitore padre e tutti gli oggetti al di sopra del contenitore padre nella gerarchia di directory vengano applicati all'elenco DACL dell'oggetto.<br/> |
+| **\_edizione Standard SACL \_ PROTETTO**<br/> | Impedisce l'applicazione di voci ACE impostate nel SACL del contenitore padre e di tutti gli oggetti al di sopra del contenitore padre nella gerarchia di directory all'oggetto SACL.<br/> |
 
 
 
  
 
-Tenere presente che il flag di **\_ \_ presenza DACL se** deve essere presente per impostare **se \_ DACL \_ protected** e **se SACL è \_ \_ presente** devono essere presenti per impostare **se \_ SACL \_ protected**.
+Tenere presente il flag **\_ EDIZIONE STANDARD DACL \_ PRESENT** per impostare **edizione Standard \_ DACL \_ PROTECTED** e **edizione Standard \_ SACL \_ PRESENT** per impostare edizione Standard **\_ SACL \_ PROTECTED**.
 
  
 

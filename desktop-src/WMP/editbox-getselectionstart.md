@@ -1,9 +1,9 @@
 ---
-title: CASELLA. getSelectionStart
-description: Il metodo getSelectionStart recupera la posizione iniziale del testo selezionato nel controllo casella.
+title: EDITBOX.getSelectionStart
+description: Il metodo getSelectionStart recupera la posizione iniziale del testo selezionato nel controllo casella di modifica.
 ms.assetid: 2d7efe14-549c-4f73-96a7-b8ce88b881ad
 keywords:
-- Media Player Windows casella. getSelectionStart
+- EditBOX.getSelectionStart Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2508119e5b1d46d09b3531582e86caad7e7facbd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c555cc7231440e15275dcd44a2508f1d8cc5ba53a8137db861cc71b61528ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340032"
 ---
-# <a name="editboxgetselectionstart"></a>CASELLA. getSelectionStart
+# <a name="editboxgetselectionstart"></a>EDITBOX.getSelectionStart
 
-Il metodo **getSelectionStart** recupera la posizione iniziale del testo selezionato nel controllo casella.
+Il **metodo getSelectionStart** recupera la posizione iniziale del testo selezionato nel controllo casella di modifica.
 
 ``` syntax
         elementID.getSelectionStart()
@@ -34,7 +34,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
@@ -50,7 +50,7 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -58,16 +58,16 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**CASELLA. getSelectionEnd**](editbox-getselectionend.md)
+[**EDITBOX.getSelectionEnd**](editbox-getselectionend.md)
 </dt> <dt>
 
-[**CASELLA. replaceSelection**](editbox-replaceselection.md)
+[**EDITBOX.replaceSelection**](editbox-replaceselection.md)
 </dt> <dt>
 
-[**CASELLA. seselection**](editbox-setselection.md)
+[**EDITBOX.setSelection**](editbox-setselection.md)
 </dt> </dl>
 
  

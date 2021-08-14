@@ -4,33 +4,33 @@ ms.assetid: 31244998-34f5-4fd8-95f6-adcc134bcaf3
 title: Progettazione per la distribuzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e60ac561bd05d08253433e52c7f00c2def54df3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 54a755132f1be35ecb6913b7690bce11e342fceb957e63607ee4e9b579bcc758
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118307303"
 ---
 # <a name="designing-for-deployment"></a>Progettazione per la distribuzione
 
-La pianificazione dell'ambito delle applicazioni COM+ è un'attività di progettazione importante da considerare prima. I sistemi distribuiti che devono essere eseguiti utilizzando COM+ devono essere progettati per la distribuzione con la quantità minima di configurazione singola e per utilizzare in modo più efficiente ogni processo. Sono inoltre disponibili tecniche che consentono di ottenere prestazioni ottimali quando si distribuisce un'applicazione COM+. Per ulteriori informazioni, vedere [distribuzione per una comunicazione più rapida](deploying-for-faster-communication.md).
+La pianificazione dell'ambito delle applicazioni COM+ è un'attività di progettazione importante da prendere in considerazione nelle prime fasi. I sistemi distribuiti destinati all'esecuzione con COM+ devono essere progettati per la distribuzione con la minima quantità di configurazione singola e per usare in modo più efficiente ogni processo. Esistono anche tecniche che consentono di ottenere prestazioni ottimali durante la distribuzione di un'applicazione COM+. Per altre informazioni, vedere [Distribuzione per una comunicazione più veloce.](deploying-for-faster-communication.md)
 
-Quando viene visualizzato con lo strumento di amministrazione Servizi componenti, ogni applicazione COM+ viene visualizzata come una cartella all'interno della quale vengono raggruppati logicamente i set di componenti. Sebbene sia possibile spostare singoli componenti tra cartelle dei **componenti** dell'applicazione com+ (in altre parole, da un'applicazione a un'altra), diversi servizi impostati a livello di applicazione com+, ad esempio la sicurezza, possono variare. Queste impostazioni del servizio possono influire sulla portabilità.
+Quando viene visualizzata con lo strumento di amministrazione Servizi componenti, ogni applicazione COM+ viene visualizzata come una cartella all'interno della quale i set di componenti vengono raggruppati logicamente. Anche se è possibile spostare  singoli componenti tra le cartelle Componenti dell'applicazione COM+, ovvero da un'applicazione a un'altra, diversi servizi impostati a livello di applicazione COM+, ad esempio la sicurezza, possono essere diversi. Queste impostazioni del servizio possono influire sulla portabilità.
 
 ## <a name="a-com-server-application-defines-a-process-boundary"></a>Un'applicazione server COM+ definisce un limite di processo
 
-Quando si crea una nuova applicazione server COM+, si definisce realmente un nuovo limite di processo. Si noti l'eccezione per le applicazioni di libreria descritte di seguito. Questo processo diventa l'istanza dell'applicazione di controllo per i componenti contenuti nell'applicazione COM+. Tutti questi componenti vengono eseguiti in-process in una nuova istanza del programma eseguibile COM+ ogni volta che un programma chiama in un'applicazione COM+ per la prima volta. Ciò significa che tutti i componenti all'interno di una determinata cartella dei **componenti** dell'applicazione com+ vengono eseguiti in un singolo spazio di processo che funge da server DCOM. All'interno dell'applicazione COM+, COM+ gestisce la memoria, coordinando il Distributed Transaction Coordinator (DTC), l'attivazione dell'istanza del componente JIT, il rilevamento e il recupero di arresti anomali e la protezione basata sui ruoli.
+Quando si crea una nuova applicazione server COM+, si definisce effettivamente un nuovo limite di processo. Si noti l'eccezione per le applicazioni di libreria illustrate di seguito. Questo processo diventa l'istanza dell'applicazione di controllo per i componenti contenuti nell'applicazione COM+. Tutti questi componenti vengono eseguiti in-process in una nuova istanza del programma eseguibile COM+ ogni volta che un programma chiama un'applicazione COM+ per la prima volta. Ciò significa che tutti i componenti all'interno della cartella **Components** di una determinata applicazione COM+ vengono eseguiti in un unico spazio di elaborazione che funge da server DCOM. All'interno dell'applicazione COM+, COM+ gestisce la memoria, il coordinamento con Distributed Transaction Coordinator (DTC), l'attivazione just-in-time dell'istanza del componente, il rilevamento e il ripristino in caso di arresto anomalo del sistema e la sicurezza basata sui ruoli.
 
 ## <a name="calling-across-com-application-boundaries"></a>Chiamata attraverso i limiti dell'applicazione COM+
 
-Poiché ogni applicazione COM+ viene normalmente implementata come file eseguibile separato, l'effetto della suddivisione di un'applicazione distribuita in più applicazioni COM+ introduce chiamate COM out-of-process quando i componenti di un'applicazione COM+ chiamano i componenti in un'altra applicazione COM+. In questo modo si introduce un calo delle prestazioni a causa del carico aggiuntivo che il marshalling dei parametri COM nei processi impone.
+Poiché in genere ogni applicazione COM+ viene implementata come eseguibile separato, l'effetto della suddivisione di un'applicazione distribuita tra più applicazioni COM+ introduce chiamate COM out-of-process quando i componenti in un'applicazione COM+ chiamano i componenti in un'altra applicazione COM+. Ciò introduce una riduzione delle prestazioni a causa del carico aggiuntivo imposto dal marshalling dei parametri COM tra processi.
 
 > [!Note]  
-> Non vi sono problemi intrinseci che incorrano a questa riduzione delle prestazioni. è sufficiente tenere presente che si verificherà. A seconda del tempo di risposta richiesto, del numero di utenti che richiederanno simultaneamente servizi aziendali e del carico di avvio aggiunto che ogni componente aggiunge a ogni applicazione COM+, è accettabile che l'impatto sulle prestazioni sia attribuibile alle chiamate tra applicazioni.
+> Non c'è nulla di intrinsecamente errato nell'incorrere in questa penalità delle prestazioni. È sufficiente tenere presente che si verificherà. A seconda del tempo di risposta richiesto, del numero di utenti che richiederanno contemporaneamente servizi aziendali e dell'ulteriore carico di avvio che ogni componente aggiunge a ogni applicazione COM+, è possibile che il livello di prestazioni attribuibile alle chiamate tra applicazioni sia accettabile.
 
  
 
-Una possibilità che elimina la riduzione delle prestazioni della chiamata attraverso i limiti dell'applicazione COM+ consiste nel contrassegnare un'applicazione COM+ specifica come applicazione di libreria. Un'applicazione libreria COM+ viene eseguita nel processo del client che la crea. Naturalmente, nessun miglioramento delle prestazioni ha un costo zero. In questo caso, il compromesso riguarda le limitazioni delle applicazioni di libreria COM+. Sebbene un'applicazione di libreria possa utilizzare la protezione basata sui ruoli, non è in grado di supportare i componenti in coda o l'accesso remoto.
+Una possibilità che elimina la penalità delle prestazioni delle chiamate oltre i limiti dell'applicazione COM+ è contrassegnare una determinata applicazione COM+ come applicazione di libreria. Un'applicazione della libreria COM+ viene eseguita nel processo del client che la crea. Naturalmente, nessun miglioramento delle prestazioni ha un costo zero. In questo caso, il compromesso implica le limitazioni delle applicazioni della libreria COM+. Sebbene un'applicazione di libreria possa usare la sicurezza basata sui ruoli, non può supportare i componenti in coda o l'accesso remoto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

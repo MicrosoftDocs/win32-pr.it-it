@@ -1,38 +1,38 @@
 ---
 title: Come le applicazioni devono usare gli identificatori di visualizzazione
-description: Per visualizzare Dominio di Active Directory oggetti servizio, usare gli identificatori di visualizzazione per ottenere i dati di visualizzazione localizzati per gli oggetti classe e attributo.
+description: Per visualizzare Dominio di Active Directory oggetti Service, usare gli identificatori di visualizzazione per ottenere i dati di visualizzazione localizzati per gli oggetti classe e attributo.
 ms.assetid: 2ba62906-47ae-4aab-8cb1-a5734eae5984
 ms.tgt_platform: multiple
 keywords:
 - Come le applicazioni devono usare gli identificatori di visualizzazione AD
-- Visualizza gli identificatori di Active Directory, come le applicazioni devono usare gli identificatori di visualizzazione
+- identificatori di visualizzazione AD , come le applicazioni devono usare gli identificatori di visualizzazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41f7045b03da282a9c64b216031e3da03a427268
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 12b2083b55a23ed3f0c1a82ba4524ba3f27445840da3d19812d26c7e05af92ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103734818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188260"
 ---
 # <a name="how-applications-should-use-display-specifiers"></a>Come le applicazioni devono usare gli identificatori di visualizzazione
 
-Per visualizzare Dominio di Active Directory oggetti servizio, usare gli identificatori di visualizzazione per ottenere i dati di visualizzazione localizzati per gli oggetti classe e attributo. In questo modo è possibile utilizzare i nomi visualizzati e le icone localizzati ed evitare la localizzazione non necessaria dei dati visualizzati.
+Per visualizzare Dominio di Active Directory oggetti Service, usare gli identificatori di visualizzazione per ottenere i dati di visualizzazione localizzati per gli oggetti classe e attributo. In questo modo è possibile usare i nomi e le icone localizzati ed evitare una localizzazione non necessaria dei dati visualizzati.
 
 ## <a name="display-names"></a>Nomi visualizzati
 
-È necessario usare le proprietà **classDisplayName** e **nell'attributeDisplayNames** degli oggetti identificatore di visualizzazione per le impostazioni locali appropriate per ottenere il testo visualizzato per i nomi di classe e di attributo. Non usare le proprietà **CN**, **classDisplayName** o **ldapDisplayName** degli oggetti **classSchema** o **attributeSchema** per ottenere le etichette di testo da visualizzare perché tali valori non sono localizzati. Per ulteriori informazioni su come recuperare il testo localizzato per un oggetto classe, vedere il codice di esempio seguente.
+Le **proprietà classDisplayName** e **attributeDisplayNames** degli oggetti identificatore di visualizzazione per le impostazioni locali appropriate devono essere usate per ottenere il testo visualizzato per i nomi di classi e attributi. Non usare le proprietà **cn**, **classDisplayName** o **ldapDisplayName** degli oggetti **classSchema** o **attributeSchema** per ottenere etichette di testo visualizzate perché questi valori non sono localizzati. Per altre informazioni su come recuperare il testo localizzato per un oggetto classe, vedere il codice di esempio seguente.
 
 ## <a name="icons"></a>Icone
 
-Per ottenere l'icona da visualizzare per un oggetto classe, è necessario utilizzare la proprietà **iconPath** degli oggetti identificatore di visualizzazione per le impostazioni locali appropriate. Per altre informazioni, vedere [Icone di classe](class-icons.md). Se per un oggetto classe non viene specificata alcuna icona localizzata, per l'elemento deve essere visualizzata un'icona predefinita.
+La **proprietà iconPath** degli oggetti identificatore di visualizzazione per le impostazioni locali appropriate deve essere usata per ottenere l'icona da visualizzare per un oggetto classe. Per altre informazioni, vedere [Icone delle classi](class-icons.md). Se non viene specificata alcuna icona localizzata per un oggetto classe, per l'elemento deve essere visualizzata un'icona predefinita.
 
 ## <a name="creating-new-objects"></a>Creazione di nuovi oggetti
 
-Quando possibile, utilizzare le procedure guidate di creazione di oggetti appropriate per creare nuovi oggetti. Per ulteriori informazioni, vedere [richiamo di creazioni guidate dall'applicazione](invoking-creation-wizards-from-your-application.md).
+Quando possibile, usare le procedure guidate appropriate per la creazione di oggetti per creare nuovi oggetti. Per altre informazioni, vedere [Chiamata di creazioni guidate dall'applicazione](invoking-creation-wizards-from-your-application.md).
 
 
-Nell'esempio di codice seguente viene illustrato come ottenere il testo visualizzato per una classe e un attributo di una classe.
+Nell'esempio di codice seguente viene illustrato come ottenere il testo visualizzato per una classe e un attributo di una classe .
 
 
 ```C++

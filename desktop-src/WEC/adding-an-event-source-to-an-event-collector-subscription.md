@@ -1,47 +1,47 @@
 ---
 title: Aggiunta di un'origine evento a una sottoscrizione avviata dall'agente di raccolta
-description: Per ricevere un evento trasmesso da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale.
+description: Per ricevere un evento inoltrato da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale.
 ms.assetid: f0100938-1702-4ef7-b20e-a0e8df224d18
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88c639b496a00f56a38a0f9f8e72b9d099e58c17
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 905dd9b5a250f9ab12397f851f79a8374c6847235acb34013972dea445f3622b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344212"
 ---
 # <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Aggiunta di un'origine evento a una sottoscrizione avviata dall'agente di raccolta
 
-Per ricevere un evento trasmesso da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale. Per ulteriori informazioni su come creare una sottoscrizione avviata dall'agente di raccolta, vedere l'esempio di codice C++ illustrato in [creazione di una sottoscrizione di raccolta eventi](creating-an-event-collector-subscription.md).
+Per ricevere un evento inoltrato da una sottoscrizione di eventi, è possibile creare una sottoscrizione avviata dall'agente di raccolta nel computer locale. Per altre informazioni su come creare una sottoscrizione avviata dall'agente di raccolta, vedere l'esempio di codice C++ illustrato in [Creazione di una sottoscrizione dell'agente di raccolta eventi.](creating-an-event-collector-subscription.md)
 
-Dopo la creazione di una sottoscrizione avviata dall'agente di raccolta, è possibile aggiungere origini eventi alla sottoscrizione. Per raccogliere gli eventi, è necessario aggiungere almeno un'origine evento a una sottoscrizione.
+Dopo aver creato una sottoscrizione avviata dall'agente di raccolta, è possibile aggiungere origini evento alla sottoscrizione. È necessario aggiungere almeno un'origine evento a una sottoscrizione per raccogliere gli eventi.
 
 > [!Note]
 >
-> Questo esempio di codice può essere usato per aggiungere un'origine evento a una sottoscrizione oppure è possibile digitare il comando seguente al prompt dei comandi:
+> È possibile usare questo esempio di codice per aggiungere un'origine evento a una sottoscrizione oppure digitare il comando seguente al prompt dei comandi:
 >
-> **wecutil SS** *subscriptionname*  * */ESA: * * * EventSourceAddress* **/AES/ESE**
+> **wecutil ss** *SubscriptionName* **/esa:**_EventSourceAddress_ **/aes /ese**
 >
 > *EventSourceAddress* può essere localhost per il computer locale o un nome di dominio completo per un computer remoto.
 
- 
+ 
 
-Per altre informazioni su come aggiungere origini eventi a una sottoscrizione avviata dall'origine, vedere [configurazione di una sottoscrizione avviata dall'origine](setting-up-a-source-initiated-subscription.md).
+Per altre informazioni su come aggiungere origini evento a una sottoscrizione avviata dall'origine, vedere [Impostazione di una sottoscrizione avviata dall'origine.](setting-up-a-source-initiated-subscription.md)
 
 Questo esempio segue una serie di passaggi per aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta.
 
 **Per aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta**
 
-1.  Aprire la sottoscrizione esistente fornendo il nome della sottoscrizione e i diritti di accesso come parametri per la funzione [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Per ulteriori informazioni sui diritti di accesso, vedere [**costanti dell'agente di raccolta eventi di Windows**](windows-event-collector-constants.md).
-2.  Ottenere la matrice di origini eventi della sottoscrizione chiamando la funzione [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Per ulteriori informazioni sulle proprietà di sottoscrizione che possono essere recuperate, vedere l'enumerazione di [**\_ \_ \_ ID proprietà della sottoscrizione EC**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Aggiungere una nuova origine evento alla matrice di origini eventi della sottoscrizione chiamando la funzione [**EcInsertObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement) .
-4.  Impostare le proprietà dell'origine evento chiamando la funzione [**EcSetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) . La proprietà **EcSubscriptionEventSourceAddress** è impostata su un indirizzo per il computer locale (localhost) o su un nome di dominio completo per un computer remoto. Per ulteriori informazioni sulle proprietà dell'origine evento che è possibile impostare, vedere l'enumerazione dell' **\_ \_ \_ ID proprietà della sottoscrizione EC** .
-5.  Salvare la sottoscrizione chiamando la funzione [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-6.  Chiudere la sottoscrizione chiamando la funzione [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Aprire la sottoscrizione esistente specificando il nome della sottoscrizione e i diritti di accesso come parametri per [**la funzione EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Per altre informazioni sui diritti di accesso, vedere l'Windows [**costanti dell'agente di raccolta eventi**](windows-event-collector-constants.md).
+2.  Ottenere la matrice di origini evento della sottoscrizione chiamando la [**funzione EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Per altre informazioni sulle proprietà di sottoscrizione che possono essere recuperate, vedere l'enumerazione [**EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+3.  Aggiungere una nuova origine evento alla matrice di origini eventi della sottoscrizione chiamando la [**funzione EcInsertObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
+4.  Impostare le proprietà dell'origine evento chiamando [**la funzione EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **proprietà EcSubscriptionEventSourceAddress** è impostata su un indirizzo per il computer locale (Localhost) o su un nome di dominio completo per un computer remoto. Per altre informazioni sulle proprietà dell'origine evento che è possibile impostare, vedere l'enumerazione **EC \_ SUBSCRIPTION PROPERTY \_ \_ ID.**
+5.  Salvare la sottoscrizione chiamando la [**funzione EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+6.  Chiudere la sottoscrizione chiamando la [**funzione EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta:
+L'esempio di codice C++ seguente illustra come aggiungere un'origine evento a una sottoscrizione avviata dall'agente di raccolta:
 
 
 ```C++
@@ -298,15 +298,15 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
 <dl> <dt>
 
-[Configurare i computer per l'invio e la raccolta di eventi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
+[Configurare i computer per l'inoltro e la raccolta di eventi](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
 </dt> <dt>
 
-[Creazione di una sottoscrizione di raccolta eventi](creating-an-event-collector-subscription.md)
+[Creazione di una sottoscrizione dell'agente di raccolta eventi](creating-an-event-collector-subscription.md)
 </dt> <dt>
 
-[Informazioni di riferimento sull'agente di raccolta eventi Windows](windows-event-collector-reference.md)
+[Windows Informazioni di riferimento sull'agente di raccolta eventi](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

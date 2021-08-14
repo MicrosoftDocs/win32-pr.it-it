@@ -1,12 +1,12 @@
 ---
 title: Metodo CancelPatch della classe Win32_RDMSVirtualDesktopCollection
-description: Annulla un processo di provisioning degli aggiornamenti software per le macchine virtuali in un insieme di desktop virtuali.
+description: Annulla un processo di provisioning degli aggiornamenti software per le macchine virtuali in una raccolta di desktop virtuali.
 ms.assetid: fb0d6831-5c69-4017-b725-1a5038ad69f5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo CancelPatch
-- Metodo CancelPatch Servizi Desktop remoto, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Servizi Desktop remoto, metodo CancelPatch
+- Metodo CancelPatch Servizi Desktop remoto
+- Metodo CancelPatch Servizi Desktop remoto , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Servizi Desktop remoto , metodo CancelPatch
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e56f33a819da976187fba823ac30fada9ff38730
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 04e355051fd1ef9ceca2925ab3e499824dabe605670ee9e732a08809e474f5ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131330"
 ---
-# <a name="cancelpatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo CancelPatch della \_ classe RDMSVirtualDesktopCollection Win32
+# <a name="cancelpatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo CancelPatch della classe \_ RDMSVirtualDesktopCollection Win32
 
-Annulla un processo di provisioning degli aggiornamenti software per le macchine virtuali in un insieme di desktop virtuali.
+Annulla un processo di provisioning degli aggiornamenti software per le macchine virtuali in una raccolta di desktop virtuali.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,8 +53,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

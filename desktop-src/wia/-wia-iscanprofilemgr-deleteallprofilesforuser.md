@@ -1,7 +1,7 @@
 ---
 description: Elimina tutti i profili di analisi disponibili per l'utente nel sistema in cui è in esecuzione l'applicazione.
 ms.assetid: 1a79fd0e-1309-4fc4-863f-6dfb20594d91
-title: Metodo IScanProfileMgr::D eleteAllProfilesForUser (Scanprofilemgr. h)
+title: Metodo IScanProfileMgr::D eleteAllProfilesForUser (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: c5d723379bb542346e3612f70c19a1629d325ebe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 967a2ca3e2ed313c024f52cec6d8064c702c6caedc122ce7bd4409f3408ec995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209101"
 ---
-# <a name="iscanprofilemgrdeleteallprofilesforuser-method"></a>IScanProfileMgr::D Metodo eleteAllProfilesForUser
+# <a name="iscanprofilemgrdeleteallprofilesforuser-method"></a>Metodo IScanProfileMgr::D eleteAllProfilesForUser
 
 Elimina tutti i profili di analisi disponibili per l'utente nel sistema in cui è in esecuzione l'applicazione.
 
@@ -41,7 +41,7 @@ Questo metodo non presenta parametri.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,10 +49,10 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

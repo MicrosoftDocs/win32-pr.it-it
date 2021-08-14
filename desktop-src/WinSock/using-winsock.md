@@ -1,31 +1,31 @@
 ---
-description: In questa sezione vengono descritte le procedure e le tecniche di programmazione utilizzate con Winsock. Sono incluse tecniche di programmazione Winsock di base, ad esempio Introduzione con Winsock, nonché tecniche avanzate utili per gli sviluppatori Winsock esperti.
+description: In questa sezione vengono descritte le procedure e le tecniche di programmazione utilizzate con Winsock. Include tecniche di programmazione Winsock di base, ad esempio Attività iniziali With Winsock, nonché tecniche avanzate utili per sviluppatori Winsock esperti.
 ms.assetid: 614ead82-b3fc-4023-8ecc-9f0212f0b194
 title: Uso di Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 361e303605809bc3570d503a66788b3a32c824ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac191f914e1a95a8331b0445fc9e73226f2fdd6661543140eae95c2540159be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322034"
 ---
 # <a name="using-winsock"></a>Uso di Winsock
 
-In questa sezione vengono descritte le procedure e le tecniche di programmazione utilizzate con Winsock. Sono incluse tecniche di programmazione Winsock di base, ad esempio [Introduzione con Winsock](getting-started-with-winsock.md), nonché tecniche avanzate utili per gli sviluppatori Winsock esperti.
+In questa sezione vengono descritte le procedure e le tecniche di programmazione utilizzate con Winsock. Include tecniche di programmazione Winsock di base, ad esempio [Attività iniziali With Winsock,](getting-started-with-winsock.md)nonché tecniche avanzate utili per sviluppatori Winsock esperti.
 
-Nell'elenco seguente vengono descritti gli argomenti di questa sezione:
+L'elenco seguente descrive gli argomenti di questa sezione:
 
--   [Introduzione con Winsock](getting-started-with-winsock.md)
+-   [Attività iniziali con Winsock](getting-started-with-winsock.md)
 -   [Programmazione Winsock sicura](secure-winsock-programming.md)
--   [Porting delle applicazioni socket in Winsock](porting-socket-applications-to-winsock.md)
--   [Guida a IPv6 per le applicazioni Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
--   [Applicazioni Windows Sockets a prestazioni elevate](high-performance-windows-sockets-applications-2.md)
+-   [Porting di applicazioni socket in Winsock](porting-socket-applications-to-winsock.md)
+-   [Guida IPv6 per applicazioni Windows Sockets](ipv6-guide-for-windows-sockets-applications-2.md)
+-   [Applicazioni socket Windows ad alte prestazioni](high-performance-windows-sockets-applications-2.md)
 -   [Categorizzazione di applicazioni e provider di servizi a più livelli](categorizing-layered-service-providers-and-applications.md)
 -   [Programmazione multicast](multicast-programming.md)
 -   [Programmazione multicast affidabile (PGM)](reliable-multicast-programming--pgm-.md)
--   [Traccia Winsock](winsock-tracing.md)
+-   [Traccia winsock](winsock-tracing.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -40,7 +40,7 @@ Nell'elenco seguente vengono descritti gli argomenti di questa sezione:
 [Supporto del protocollo di rete Winsock in Windows](network-protocol-support-in-windows.md)
 </dt> <dt>
 
-[Riferimento Winsock](winsock-reference.md)
+[Informazioni di riferimento su Winsock](winsock-reference.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
-title: Modalità di supporto di queste estensioni per i protocolli multipoint
-description: Gli argomenti seguenti indicano il modo in cui è possibile accedere alle funzionalità di multicast IP e ATM da punto a MultiPoint tramite le funzioni MultiPoint di Windows Sockets 2.
+title: Supporto di queste estensioni da parte dei protocolli multipoint
+description: Gli argomenti seguenti indicano come è possibile accedere alle funzionalità multicast IP e da punto a multipunto di ATM tramite le funzioni multipunto Windows Sockets 2.
 ms.assetid: f6f1dcfa-c316-455b-a993-e09f02c2eedb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47b0d9a65db576ec4e5cdd7ba79e2203ebbb797a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac77c68a7cef8c6b75e2442591f0a7f0e618cf9074dd9d0812772d6bd3bafba2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322191"
 ---
-# <a name="how-multipoint-protocols-support-these-extensions"></a>Modalità di supporto di queste estensioni per i protocolli multipoint
+# <a name="how-multipoint-protocols-support-these-extensions"></a>Supporto di queste estensioni da parte dei protocolli multipoint
 
-Gli argomenti seguenti indicano il modo in cui è possibile accedere alle funzionalità di multicast IP e ATM da punto a MultiPoint tramite le funzioni MultiPoint di Windows Sockets 2. Abbiamo scelto questi due esempi, perché sono popolari e ben conosciuti.
+Gli argomenti seguenti indicano come è possibile accedere alle funzionalità multicast IP e da punto a multipunto di ATM tramite le funzioni multipunto Windows Sockets 2. Questi due esempi sono stati scelti perché sono popolari e ben compresi.
 
--   [Multicast IP](ip-multicast-2.md)
--   [Da punto ATM a MultiPoint](atm-point-to-multipoint-2.md)
+-   [IP Multicast](ip-multicast-2.md)
+-   [ATM Point to Multipoint](atm-point-to-multipoint-2.md)
 
  
 

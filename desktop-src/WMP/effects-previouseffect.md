@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. previousEffect
-description: Il metodo previousEffect Visualizza la visualizzazione precedente, ignorando le impostazioni predefinite.
+title: EFFECTS.previousEffect
+description: Il metodo previousEffect visualizza la visualizzazione precedente, ignorando i set di impostazioni.
 ms.assetid: f1cfef29-0241-4028-b047-4f17bf0e9250
 keywords:
-- EFFECTs. previousEffect Windows Media Player
+- Effects.previousEffect Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b5482e7c202d6d35f3a833b5bafc8a41dca38956
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7e73ab00fa5092f4b67f659c30705a9e7b57a1a159d4a41017783c1f1ee91dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339976"
 ---
-# <a name="effectspreviouseffect"></a>EFFECTs. previousEffect
+# <a name="effectspreviouseffect"></a>EFFECTS.previousEffect
 
-Il metodo **previousEffect** Visualizza la visualizzazione precedente, ignorando le impostazioni predefinite.
+Il **metodo previousEffect** visualizza la visualizzazione precedente, ignorando i set di impostazioni.
 
 ``` syntax
         elementID.previousEffect()
@@ -38,7 +38,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo Visualizza la visualizzazione precedente nell'ordine di creazione. Se la visualizzazione corrente è la prima nell'ordine di creazione e se **allowAll** è false, l'ultima visualizzazione viene resa corrente.
+Questo metodo visualizza la visualizzazione precedente nell'ordine di creazione. Se la visualizzazione corrente è la prima nell'ordine di creazione e se **allowAll** è false, l'ultima visualizzazione viene resa corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Questo metodo Visualizza la visualizzazione precedente nell'ordine di creazione.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,13 +54,13 @@ Questo metodo Visualizza la visualizzazione precedente nell'ordine di creazione.
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. nextEffect**](effects-nexteffect.md)
+[**EFFECTS.nextEffect**](effects-nexteffect.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> </dl>
 
  

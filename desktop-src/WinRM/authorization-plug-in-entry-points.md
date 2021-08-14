@@ -5,12 +5,12 @@ ms.assetid: 6cbfa79a-b57b-44b8-a421-d5e79c1b3757
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ee0db76457860106e51bd6c29cead3d0f8227d7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d16ca861df6b6546920aaf3f778c61117776ff3861556377b280c990c03711fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324079"
 ---
 # <a name="authorization-plug-in-entry-points"></a>Punti di ingresso del plug-in di autorizzazione
 
@@ -27,16 +27,16 @@ Il punto di ingresso seguente è facoltativo:
 
 -   [**WSManPluginAuthzQueryQuota**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota)
 
-Nella tabella seguente viene fornita una panoramica dei punti di ingresso del plug-in di autorizzazione nell'API del plug-in Gestione remota Windows (WinRM).
+La tabella seguente offre una panoramica dei punti di ingresso del plug-in di autorizzazione nell'API plug-in di gestione remota Windows (WinRM).
 
 
 
 | Funzione                                                                                      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_operazione di \_ autorizzazione \_ plug-in WSMan**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)              | Chiamato per autorizzare un'operazione specifica. <br/> Il nome del punto di ingresso della DLL per questo metodo deve essere [**WSManPluginAuthzOperation**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation).<br/>                                                                                                                                                                                                       |
-| [**\_richiesta di \_ autorizzazione \_ plug \_ -in di WSMan**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)           | Chiamato dopo che una connessione è stata autorizzata a recuperare le informazioni sulla quota per l'utente. <br/> Il nome del punto di ingresso della DLL per questo metodo deve essere [**WSManPluginAuthzQueryQuota**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota).<br/>                                                                                                                                                    |
-| [**\_contesto di \_ \_ rilascio autorizzazione plug- \_ in WSMan**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context) | Chiamato per rilasciare il contesto che un plug-in segnala dai metodi [**WSManPluginAuthzUserComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzusercomplete) o [**WSManPluginAuthzOperationComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzoperationcomplete) . <br/> Il nome del punto di ingresso della DLL per questo metodo deve essere [**WSManPluginAuthzReleaseContext**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context).<br/> |
-| [**\_ \_ utente autorizzato per il plug-in WSMan \_**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user)                         | Chiamata eseguita per determinare se l'utente è autorizzato a eseguire una richiesta. <br/> Il nome del punto di ingresso della libreria di collegamento dinamico (DLL) per questo metodo deve essere [**WSManPluginAuthzUser**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user).<br/>                                                                                                                                                            |
+| [**OPERAZIONE DI \_ AUTORIZZAZIONE DEL \_ PLUG-IN WSMAN \_**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)              | Chiamata eseguita per autorizzare un'operazione specifica. <br/> Il nome del punto di ingresso DLL per questo metodo deve [**essere WSManPluginAuthzOperation.**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)<br/>                                                                                                                                                                                                       |
+| [**QUOTA DI \_ QUERY \_ AUTORIZZA IL \_ PLUG-IN \_ WSMAN**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_operation)           | Chiamato dopo che una connessione è stata autorizzata a recuperare le informazioni sulla quota per l'utente. <br/> Il nome del punto di ingresso DLL per questo metodo deve [**essere WSManPluginAuthzQueryQuota.**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_query_quota)<br/>                                                                                                                                                    |
+| [**IL PLUG-IN WSMAN \_ \_ AUTORIZZA \_ IL CONTESTO DI \_ RILASCIO**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context) | Chiamato per rilasciare il contesto che un plug-in segnala dai metodi [**WSManPluginAuthzUserComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzusercomplete) o [**WSManPluginAuthzOperationComplete.**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginauthzoperationcomplete) <br/> Il nome del punto di ingresso DLL per questo metodo deve [**essere WSManPluginAuthzReleaseContext.**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_release_context)<br/> |
+| [**UTENTE AUTORIZZATO \_ DAL \_ PLUG-IN WSMAN \_**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user)                         | Chiamato per determinare se all'utente è consentito eseguire una richiesta. <br/> Il nome del punto di ingresso della libreria a collegamento dinamico (DLL) per questo metodo deve [**essere WSManPluginAuthzUser.**](/windows/win32/api/wsman/nc-wsman-wsman_plugin_authorize_user)<br/>                                                                                                                                                            |
 
 
 

@@ -1,51 +1,51 @@
 ---
-description: Questo argomento introduce il nuovo schema XMP (Extensible Metadata Platform) e la proprietà Photo System. Photo. PeopleNames di Windows 7 che consente l'assegnazione di tag a singoli utenti in una foto digitale.
+description: Questo argomento presenta il nuovo schema XMP (Extensible Metadata Platform) e la proprietà Windows 7 photo System.Photo.PeopleNames che consente l'assegnazione di tag a singoli utenti in una foto digitale.
 ms.assetid: 557c3e9a-1756-4abb-8465-b12195ecbc91
-title: Cenni preliminari sull'assegnazione di tag agli utenti
+title: Panoramica dell'assegnazione di tag alle persone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e64f2080e51d4d340474e0610fcce9512fc72429
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66a262acd70474f75689e99a3bcd1087cd0117ae3602b78a90357aa932fdd7fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205706"
 ---
-# <a name="people-tagging-overview"></a>Cenni preliminari sull'assegnazione di tag agli utenti
+# <a name="people-tagging-overview"></a>Panoramica dell'assegnazione di tag alle persone
 
-Questo argomento introduce il nuovo schema XMP (Extensible Metadata Platform) e la proprietà Photo [System. Photo. PeopleNames](../properties/props-system-photo-peoplenames.md) di Windows 7 che consente l'assegnazione di tag a singoli utenti in una foto digitale. In questo argomento viene inoltre illustrato come utilizzare l'API di Windows Imaging Component (WIC) per leggere e scrivere i metadati necessari per l'assegnazione di tag agli utenti.
+Questo argomento presenta il nuovo schema XMP (Extensible Metadata Platform) e la proprietà Windows 7 photo [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) che consente l'assegnazione di tag a singoli utenti in una foto digitale. Questo argomento illustra anche come usare l'API wic (Windows Imaging Component) per leggere e scrivere i metadati necessari per l'assegnazione di tag agli utenti.
 
 In questo argomento sono contenute le sezioni seguenti.
 
 -   [Prerequisiti](#prerequisites)
 -   [Introduzione](#introduction)
--   [Assegnazione di tag agli utenti](#people-tagging-overview)
+-   [Assegnazione di tag alle persone](#people-tagging-overview)
     -   [Nomi di persone](#people-names)
-    -   [Rettangoli people](#people-rectangles)
--   [Riferimento allo schema](#schema-reference)
-    -   [Schema di Microsoft Photo 1,2](#microsoft-photo-12-schema)
-    -   [Schema Microsoft Photo RegionInfo](#microsoft-photo-regioninfo-schema)
-    -   [Schema area foto Microsoft](#microsoft-photo-regioninfo-schema)
+    -   [Rettangoli di persone](#people-rectangles)
+-   [Informazioni di riferimento sullo schema](#schema-reference)
+    -   [Microsoft Photo 1.2 Schema](#microsoft-photo-12-schema)
+    -   [Microsoft Photo RegionInfo Schema](#microsoft-photo-regioninfo-schema)
+    -   [Schema dell'area di Microsoft Photo](#microsoft-photo-regioninfo-schema)
     -   [Metadati di esempio](#sample-metadata)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per comprendere questo argomento, è necessario avere familiarità con le interfacce del decodificatore WIC e i componenti di Component Object Model correlati (COM), come descritto in [Panoramica dei componenti di Windows Imaging](-wic-about-windows-imaging-codec.md). Consente inoltre di avere una conoscenza generale dei metadati di imaging, in particolare XMP.
+Per comprendere questo argomento, è necessario avere familiarità con le interfacce del decodificatore WIC e i relativi componenti Component Object Model (COM), come descritto nella panoramica del componente di Windows [Imaging](-wic-about-windows-imaging-codec.md). Consente inoltre di avere una familiarità generale con i metadati di creazione dell'immagine, in particolare XMP.
 
 ## <a name="introduction"></a>Introduzione
 
-Microsoft ha creato un nuovo schema XMP per l'assegnazione di tag alle persone all'interno di un'immagine digitale. Questo schema consente alle applicazioni di archiviare i nomi e i percorsi di singoli utenti presenti nell'immagine come metadati all'interno dell'immagine. Oltre al nuovo schema, la nuova proprietà Photo [System. Photo. PeopleNames](../properties/props-system-photo-peoplenames.md) è disponibile in Windows 7. Questa nuova proprietà consente alle applicazioni di leggere i nomi dei singoli archiviati nei metadati dell'immagine. WIC utilizza queste nuove funzionalità consentendo alle applicazioni di leggere e scrivere facilmente i metadati per l'assegnazione di tag a foto digitali.
+Microsoft ha creato un nuovo schema XMP per l'assegnazione di tag alle persone all'interno di un'immagine digitale. Questo schema consente alle applicazioni di archiviare i nomi e i percorsi degli utenti che si trova nell'immagine come metadati all'interno dell'immagine. Oltre al nuovo schema, la nuova proprietà photo [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) è disponibile in Windows 7. Questa nuova proprietà consente alle applicazioni di leggere i nomi dei singoli archiviati nei metadati dell'immagine. WIC usa queste nuove funzionalità consentendo alle applicazioni di leggere e scrivere facilmente i metadati delle persone che contrassegnano i metadati nelle foto digitali.
 
-## <a name="people-tagging"></a>Assegnazione di tag agli utenti
+## <a name="people-tagging"></a>Assegnazione di tag alle persone
 
-WIC fornisce agli sviluppatori di applicazioni i componenti COM che leggono i dati delle immagini e i metadati delle immagini. Per la lettura e la scrittura di metadati, ad esempio la nuova funzionalità di assegnazione di tag agli utenti, WIC fornisce le interfacce [**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) e [**IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) . Queste interfacce consentono alle applicazioni di usare il [linguaggio di query dei metadati](-wic-codec-metadataquerylanguage.md) per scrivere i metadati nei singoli frame di un'immagine. Nella sezione seguente viene illustrato come leggere e scrivere i metadati per l'assegnazione di tag alle persone nei metadati di un'immagine usando Reader e writer di query WIC.
+WIC fornisce agli sviluppatori di applicazioni componenti COM che leggono i dati delle immagini e i metadati dell'immagine. Per la lettura e la scrittura di metadati, ad esempio la nuova funzionalità di assegnazione di tag people, WIC fornisce le [**interfacce IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) e [**IWICMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) Queste interfacce consentono alle applicazioni di usare il [linguaggio di query dei](-wic-codec-metadataquerylanguage.md) metadati per scrivere metadati nei singoli fotogrammi di un'immagine. La sezione seguente illustra come leggere e scrivere i metadati di assegnazione di tag agli utenti nei metadati di un'immagine usando i lettori e i writer di query WIC.
 
-### <a name="people-names"></a>Nomi di persone
+### <a name="people-names"></a>Nomi delle persone
 
-Parte della funzionalità di assegnazione di tag agli utenti è la possibilità di ottenere semplicemente un elenco dei nomi delle persone contrassegnate all'interno dell'immagine. Questa parte della funzionalità è supportata dai gestori di metadati [System. Photo. PeopleNames](../properties/props-system-photo-peoplenames.md) e WIC. L'interfaccia [**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) , in combinazione con la proprietà System. Photo. PeopleNames, viene usata per leggere i nomi delle persone identificate in un'immagine e archiviate nei metadati dell'immagine.
+Parte della funzionalità di assegnazione di tag alle persone è la possibilità di ottenere semplicemente un elenco dei nomi delle persone contrassegnate all'interno dell'immagine. Questa parte della funzionalità è supportata dai gestori di metadati [system.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) e WIC. [**L'interfaccia IWICMetadataQueryReader,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) insieme alla proprietà System.Photo.PeopleNames, viene usata per leggere i nomi delle persone identificate in un'immagine e archiviate nei metadati dell'immagine.
 
-Nell'esempio di codice seguente viene illustrato un lettore di query ottenuto da un frame immagine per eseguire una query sui metadati di un'immagine per i nomi con tag della proprietà [System. Photo. PeopleNames](../properties/props-system-photo-peoplenames.md) .
+Nell'esempio di codice seguente viene illustrato un lettore di query ottenuto da una cornice di immagine per eseguire query sui metadati di un'immagine per i nomi con tag della proprietà [System.Photo.PeopleNames.](../properties/props-system-photo-peoplenames.md)
 
 
 ```C++
@@ -70,9 +70,9 @@ if (SUCCEEDED(hr))
 
 
 
-L'espressione di query "System. Photo. PeopleNames" esegue una query sul frame per la proprietà. Se i metadati per l'assegnazione di tag sono presenti e contengono i nomi delle persone, il valore [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) verrà impostato su VT \_ LPWSTR e il valore dei dati conterrà l'elenco dei nomi con tag. Per altre informazioni sulla lettura dei metadati delle immagini, vedere [Cenni preliminari sulla lettura e scrittura dei metadati delle immagini](-wic-codec-readingwritingmetadata.md).
+L'espressione di query "System.Photo.PeopleNames" esegue una query sul frame per la proprietà . Se i metadati di assegnazione di tag people esistono e contengono i nomi delle persone, il valore [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) verrà impostato su VT LPWSTR e il valore dei dati conterrà l'elenco di nomi con \_ tag. Per altre informazioni sulla lettura dei metadati dell'immagine, vedere [Panoramica della lettura e della scrittura di metadati dell'immagine.](-wic-codec-readingwritingmetadata.md)
 
-L'esecuzione di query per il tag People names è utile solo se l'immagine contiene effettivamente i metadati di Tag people. Per eseguire questa operazione, un'applicazione deve prima di tutto scriverla. Per scrivere i metadati dei nomi di persone, usare un [**IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) e il percorso XMP esplicito dei metadati. Nell'esempio di codice riportato di seguito viene illustrato l'utilizzo di un writer di query per scrivere un nome nel percorso della query.
+L'esecuzione di query per il tag people names è utile solo se l'immagine contiene effettivamente i metadati di assegnazione di tag people. A tale scopo, un'applicazione deve prima di tutto scriverla. Per scrivere i metadati dei nomi delle persone, usare [**un oggetto IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) e il percorso XMP esplicito dei metadati. Nell'esempio di codice seguente viene illustrato l'uso di un writer di query per scrivere un nome nel percorso della query.
 
 
 ```C++
@@ -137,15 +137,15 @@ if(SUCCEEDED(hr))
 
 
 
-Si noti il passaggio che costruisce la struttura XMP e la relativa impostazione `MPRI:Regions/{ulong=0}` . Senza questo passaggio, WIC non è in grado di identificare la posizione in cui posizionare il `PersonDisplayName` in un secondo momento. Si noti inoltre che viene utilizzato il percorso di query esplicito anziché [System. Photo. PeopleNames](-wic-photoprop-system-photo-peoplenames.md), i cui criteri dei metadati non supportano la scrittura di metadati.
+Si noti il passaggio che crea la struttura XMP e la imposta in `MPRI:Regions/{ulong=0}` . Senza questo passaggio, il wic non è in grado di identificare la posizione in un `PersonDisplayName` secondo momento. Si noti anche che viene usato il percorso di query esplicito anziché [System.Photo.PeopleNames](-wic-photoprop-system-photo-peoplenames.md), i cui criteri di metadati non supportano la scrittura di metadati.
 
 ### <a name="people-rectangles"></a>Rettangoli people
 
-I nomi delle persone, tuttavia, fanno parte della funzionalità di assegnazione di tag degli utenti. Oltre a archiviare i nomi delle persone nei metadati, lo schema supporta anche le informazioni sull'area che identificano l'area specifica (un rettangolo) che la persona viene visualizzata nell'immagine.
+I nomi delle persone, tuttavia, fanno solo parte della funzionalità di assegnazione di tag alle persone. Oltre a archiviare i nomi delle persone nei metadati, lo schema supporta anche le informazioni sull'area che identificano l'area specifica (un rettangolo) che la persona viene visualizzata nell'immagine.
 
-Le informazioni sul rettangolo sono rappresentate da quattro valori decimali delimitati da virgole, ad esempio "0,25, 0,25, 0,25, 0,25". I primi due valori specificano la coordinata superiore sinistra; gli ultimi due specificano l'altezza e la larghezza del rettangolo. Le dimensioni dell'immagine ai fini della definizione dei rettangoli people vengono normalizzate su 1, il che significa che nell'esempio "0,25, 0,25, 0,25, 0,25", il rettangolo inizia con 1/4 della distanza dalla parte superiore e 1/4 della distanza dalla sinistra dell'immagine. Sia l'altezza che la larghezza del rettangolo sono pari a 1/4 della dimensione delle rispettive dimensioni di immagine.
+Le informazioni sul rettangolo sono rappresentate da quattro valori decimali delimitati da virgole, ad esempio "0,25, 0,25, 0,25, 0,25". I primi due valori specificano la coordinata superiore sinistra. gli ultimi due specificano l'altezza e la larghezza del rettangolo. Le dimensioni dell'immagine ai fini della definizione dei rettangoli delle persone vengono normalizzate su 1, il che significa che nell'esempio "0,25, 0,25, 0,25, 0,25" il rettangolo inizia 1/4 della distanza dalla parte superiore e 1/4 della distanza dalla sinistra dell'immagine. Sia l'altezza che la larghezza del rettangolo sono 1/4 delle dimensioni delle rispettive dimensioni dell'immagine.
 
-Le informazioni sul rettangolo che identificano i singoli vengono scritte nello stesso modo in cui vengono scritti i nomi delle persone, all'interno della stessa struttura. Per scrivere i metadati del rettangolo, usare un [**IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) e il percorso XMP esplicito dei metadati. Nell'esempio di codice seguente viene continuato l'esempio precedente e viene aggiunto un rettangolo che rappresenta ' John Doe ' ai metadati dell'immagine. Si noti che usa lo stesso `{ulong=0}` indice per associare il rettangolo a "John Doe".
+Le informazioni sul rettangolo che identificano le persone vengono scritte nello stesso modo in cui vengono scritti i nomi delle persone, all'interno della stessa struttura. Per scrivere i metadati del rettangolo, usare [**un oggetto IWICMetadataQueryWriter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) e il percorso XMP esplicito dei metadati. L'esempio di codice seguente continua l'esempio precedente e aggiunge un rettangolo che rappresenta "John Doe" ai metadati dell'immagine. Si noti che usa lo stesso `{ulong=0}` indice per associare questo rettangolo a 'John Doe'.
 
 
 ```C++
@@ -169,25 +169,25 @@ if(SUCCEEDED(hr))
 
 ## <a name="schema-reference"></a>Riferimenti agli schemi
 
-Gli schemi Microsoft XMP per la codifica di persone definiscono un set di proprietà per contrassegnare i singoli utenti nelle foto digitali.
+Gli schemi Microsoft XMP per gli utenti che contrassegnano i tag definiscono un set di proprietà per contrassegnare singoli utenti nelle foto digitali.
 
-Le sezioni seguenti forniscono le definizioni dello schema necessarie per l'assegnazione di tag agli utenti. Laddove possibile, le definizioni dello schema utilizzano le convenzioni fornite dalle [specifiche di Adobe Extensible Metadata Platform (XMP)](https://www.adobe.com/devnet/xmp/). Le definizioni dello schema in questo argomento illustrano lo spazio dei nomi XML Uniform Resource Identifier (URI) che identifica lo schema e il prefisso dello spazio dei nomi dello schema preferito, seguito da una tabella in cui sono elencate tutte le proprietà definite per lo schema. Ogni tabella contiene le colonne seguenti:
+Le sezioni seguenti forniscono le definizioni dello schema necessarie per l'assegnazione di tag agli utenti. Laddove possibile, le definizioni dello schema usano le convenzioni fornite dalle specifiche [XMP (Extensible Metadata Platform) di Adobe.](https://www.adobe.com/devnet/xmp/) Le definizioni dello schema in questo argomento illustrano l'URI (XML Namespace Uniform Resource Identifier) che identifica lo schema e il prefisso dello spazio dei nomi dello schema preferito, seguito da una tabella che elenca tutte le proprietà definite per lo schema. Ogni tabella include le colonne seguenti:
 
--   **Proprietà** : nome della proprietà, incluso il prefisso dello spazio dei nomi preferito.
+-   **Proprietà:** nome della proprietà, incluso il prefisso dello spazio dei nomi preferito.
 
--   **Tipo valore** : tipo di valore della proprietà. Gli schemi di supporto per l'assegnazione di tag degli utenti usano i tipi di valore XMP, quando possibile, inclusi data e testo. I tipi di matrice sono preceduti dal tipo di contenitore: `alt` , `bag` o `seq` .
+-   **Tipo di** valore: tipo di valore della proprietà. Gli schemi di supporto per l'assegnazione di tag alle persone usano i tipi di valore XMP quando possibile, inclusi Date e Text. I tipi di matrice sono preceduti dal tipo di contenitore: `alt` `bag` , o `seq` .
 
--   **Category** : le proprietà dello schema sono interne o esterne:
+-   **Categoria:** le proprietà dello schema sono interne o esterne:
 
     -   I metadati interni devono essere impostati dall'applicazione.
 
-    -   I metadati esterni devono essere impostati dall'utente e sono indipendenti dal contenuto del documento.
+    -   I metadati esterni devono essere impostati dall'utente ed è indipendente dal contenuto del documento.
 
--   **Descrizione** : Descrizione della proprietà.
+-   **Descrizione:** descrizione della proprietà.
 
-### <a name="microsoft-photo-12-schema"></a>Schema di Microsoft Photo 1,2
+### <a name="microsoft-photo-12-schema"></a>Microsoft Photo 1.2 Schema
 
-Lo schema Microsoft Photo 1,2 fornisce un set di proprietà per le aree dell'immagine.
+Lo schema di Microsoft Photo 1.2 fornisce un set di proprietà per le aree immagine.
 
 -   L'URI dello spazio dei nomi dello schema è `https://ns.microsoft.com/photo/1.2/` .
 -   Il prefisso dello spazio dei nomi dello schema preferito è `MP` .
@@ -196,15 +196,15 @@ Lo schema Microsoft Photo 1,2 fornisce un set di proprietà per le aree dell'imm
 
 | Proprietà      | Tipo di valore | Category | Descrizione                                                                                                                     |
 |---------------|------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
-| MP: RegionInfo | RegionInfo | Interno | **obbligatorio** : archivia la radice dei metadati per l'assegnazione di tag agli utenti. Vedere la sezione schema di Microsoft Photo RegionInfo che segue. |
+| MP:RegionInfo | Regioninfo | Interno | **required** : archivia la radice dei metadati di assegnazione di tag alle persone. Vedere la sezione Microsoft Photo RegionInfo Schema che segue. |
 
 
 
  
 
-### <a name="microsoft-photo-regioninfo-schema"></a>Schema Microsoft Photo RegionInfo
+### <a name="microsoft-photo-regioninfo-schema"></a>Microsoft Photo RegionInfo Schema
 
-Lo schema Microsoft Photo RegionInfo 1,2 fornisce un set di proprietà per informazioni sull'area.
+Lo schema Microsoft Photo RegionInfo 1.2 fornisce un set di proprietà per le informazioni sull'area.
 
 -   L'URI dello spazio dei nomi dello schema è `https://ns.microsoft.com/photo/1.2/t/RegionInfo#` .
 -   Il prefisso dello spazio dei nomi dello schema preferito è `MPRI` .
@@ -213,28 +213,28 @@ Lo schema Microsoft Photo RegionInfo 1,2 fornisce un set di proprietà per infor
 
 | Proprietà              | Tipo di valore | Category | Descrizione                                                                                                    |
 |-----------------------|------------|----------|----------------------------------------------------------------------------------------------------------------|
-| MPRI:DateRegionsValid | Data       | Esterno | **facoltativo** : data di creazione dell'ultima area.                                                          |
-| MPRI: aree          | Area del contenitore | Esterno | **obbligatorio** : archivia le aree di tag degli utenti. Vedere la sezione relativa allo schema dell'area di foto Microsoft riportata di seguito. |
+| MPRI:DateRegionsValid | Data       | Esterno | **facoltativo:** data di creazione dell'ultima area.                                                          |
+| MPRI:Regions          | Area del contenitore | Esterno | **required** : archivia le aree di assegnazione tag degli utenti. Vedere la sezione Microsoft Photo Region Schema (Schema dell'area foto Microsoft) che segue. |
 
 
 
  
 
-### <a name="microsoft-photo-region-schema"></a>Schema area foto Microsoft
+### <a name="microsoft-photo-region-schema"></a>Schema dell'area di Microsoft Photo
 
-Lo schema Microsoft Photo Region 1,2 fornisce un set di proprietà per le aree dell'immagine.
+Lo schema Microsoft Photo Region 1.2 fornisce un set di proprietà per le aree immagine.
 
 -   L'URI dello spazio dei nomi dello schema è `https://ns.microsoft.com/photo/1.2/t/Region#` .
 -   Il prefisso dello spazio dei nomi dello schema preferito è `MPReg` .
 
 
 
-| MPReg: Proprietà          | Tipo di valore | Category | Descrizione                                                                                                                                                                                                                                                                                                     |
+| MPReg:Property          | Tipo di valore | Category | Descrizione                                                                                                                                                                                                                                                                                                     |
 |-------------------------|------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MPReg:PersonDisplayName | Testo       | Esterno | **obbligatorio** : archivia il nome della persona nel rettangolo specificato.                                                                                                                                                                                                                                            |
-| MPReg: rettangolo         | Testo       | Esterno | **facoltativo** : archivia il rettangolo che identifica la persona all'interno della foto. Il rettangolo viene archiviato come quattro valori decimali delimitati da virgole. I primi due valori specificano la coordinata superiore sinistra; gli ultimi due specificano l'altezza e la larghezza del rettangolo. I valori decimali devono essere normalizzati in 1. |
-| MPReg:PersonEmailDigest | Testo       | Esterno | **facoltativo** : archivia l'hash del messaggio crittografato SHA-1 dell'indirizzo di posta elettronica attivo della persona.                                                                                                                                                                                                                     |
-| MPReg:PersonLiveIdCID   | Testo       | Esterno | **facoltativo** : archivia la rappresentazione decimale con segno del CID attivo della persona, un intero a 64 bit che identifica pubblicamente un'identità Live.                                                                                                                                                                     |
+| MPReg:PersonDisplayName | Testo       | Esterno | **required** : archivia il nome della persona nel rettangolo specificato.                                                                                                                                                                                                                                            |
+| MPReg:Rectangle         | Testo       | Esterno | **facoltativo:** archivia il rettangolo che identifica la persona all'interno della foto. Il rettangolo viene archiviato come quattro valori decimali delimitati da virgole. I primi due valori specificano la coordinata superiore sinistra. gli ultimi due specificano l'altezza e la larghezza del rettangolo. I valori decimali devono essere normalizzati a 1. |
+| MPReg:PersonEmailDigest | Testo       | Esterno | **facoltativo:** archivia l'hash del messaggio crittografato SHA-1 dell'indirizzo di posta elettronica live della persona.                                                                                                                                                                                                                     |
+| MPReg:PersonLiveIdCID   | Testo       | Esterno | **facoltativo:** archivia la rappresentazione decimale con segno del CID live della persona, un numero intero a 64 bit che identifica pubblicamente un'identità live.                                                                                                                                                                     |
 
 
 
@@ -279,16 +279,16 @@ Di seguito è riportata una rappresentazione dei metadati XMP per l'assegnazione
 **Informazioni concettuali**
 </dt> <dt>
 
-[Panoramica del componente imaging Windows](-wic-about-windows-imaging-codec.md)
+[Windows Panoramica del componente di creazione dell'immagine](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Cenni preliminari sui metadati WIC](-wic-about-metadata.md)
+[Panoramica dei metadati WIC](-wic-about-metadata.md)
 </dt> <dt>
 
-[Panoramica della lettura e della scrittura dei metadati delle immagini](-wic-codec-readingwritingmetadata.md)
+[Panoramica della lettura e della scrittura di metadati dell'immagine](-wic-codec-readingwritingmetadata.md)
 </dt> <dt>
 
-[Cenni preliminari sul linguaggio di query dei metadati](-wic-codec-metadataquerylanguage.md)
+[Panoramica del linguaggio di query sui metadati](-wic-codec-metadataquerylanguage.md)
 </dt> </dl>
 
  

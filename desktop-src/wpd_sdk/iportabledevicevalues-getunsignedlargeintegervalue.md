@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetUnsignedLargeIntegerValue recupera un valore ULONGLONG (di tipo VT \_ UI8) specificato da una chiave.
+description: Il metodo GetUnsignedLargeIntegerValue recupera un valore ULONGLONG (tipo VT \_ UI8) specificato da una chiave.
 ms.assetid: de37c49b-a5f4-424d-8320-1de2d5a624aa
-title: 'Metodo IPortableDeviceValues:: GetUnsignedLargeIntegerValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::GetUnsignedLargeIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 48f6093f32d43737b1999c3474f74569ecd3f8cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df10faa20094623940e9694a5612c4f49b45f3c979d7e05df3239512cb021ab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194030"
 ---
-# <a name="iportabledevicevaluesgetunsignedlargeintegervalue-method"></a>Metodo IPortableDeviceValues:: GetUnsignedLargeIntegerValue
+# <a name="iportabledevicevaluesgetunsignedlargeintegervalue-method"></a>Metodo IPortableDeviceValues::GetUnsignedLargeIntegerValue
 
-Il metodo **GetUnsignedLargeIntegerValue** recupera un valore **ULONGLONG** (di tipo VT \_ UI8) specificato da una chiave.
+Il **metodo GetUnsignedLargeIntegerValue** recupera un **valore ULONGLONG** (tipo VT \_ UI8) specificato da una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ HRESULT GetUnsignedLargeIntegerValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave **REFPROPERTYKEY** che specifica l'elemento da recuperare.
 
 </dd> <dt>
 
-*pValue* \[ out\]
+*pValue* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al valore **ULONGLONG** recuperato.
@@ -57,15 +57,15 @@ Puntatore al valore **ULONGLONG** recuperato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                             |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                        |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *Key* non è di tipo **ULONGLONG** .<br/> |
-| <dl> <dt>**HRESULT \_ da \_ Win32 (errore \_ non \_ trovato)**</dt> </dl> | La proprietà specificata dalla *chiave* non è presente nella raccolta.<br/>    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                        |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *key* non è di **tipo ULONGLONG.**<br/> |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nella raccolta.<br/>    |
 
 
 
@@ -77,8 +77,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

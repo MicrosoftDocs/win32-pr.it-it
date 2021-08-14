@@ -1,21 +1,21 @@
 ---
-title: Metodi IVMVirtualPC
+title: Metodi di IVMVirtualPC
 description: L'interfaccia IVMVirtualPC espone i metodi seguenti.
 ms.assetid: 3098D0ED-B16F-4CA1-A76B-83B4988CB6B3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 197ba4ea639fc6c82fc6501a03a73122af9975b5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 102fe792e2656a45c997dec0d6e955044864837c0aa7c9366407e86810db8641
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344298"
 ---
-# <a name="ivmvirtualpc-methods"></a>Metodi IVMVirtualPC
+# <a name="ivmvirtualpc-methods"></a>Metodi di IVMVirtualPC
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-L'interfaccia [**IVMVirtualPC**](ivmvirtualpc.md) espone i metodi seguenti.
+[**L'interfaccia IVMVirtualPC**](ivmvirtualpc.md) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,7 +31,7 @@ L'interfaccia [**IVMVirtualPC**](ivmvirtualpc.md) espone i metodi seguenti.
 -   [**Metodo GetDVDFiles**](ivmvirtualpc-getdvdfiles.md)
 -   [**Metodo GetFloppyDiskFiles**](ivmvirtualpc-getfloppydiskfiles.md)
 -   [**Metodo GetFloppyDiskImageType**](ivmvirtualpc-getfloppydiskimagetype.md)
--   [**Metodo getharddisk**](ivmvirtualpc-getharddisk.md)
+-   [**Metodo GetHardDisk**](ivmvirtualpc-getharddisk.md)
 -   [**Metodo GetHardDiskFiles**](ivmvirtualpc-getharddiskfiles.md)
 -   [**Metodo GetVirtualMachineFiles**](ivmvirtualpc-getvirtualmachinefiles.md)
 -   [**Metodo RegisterVirtualMachine**](ivmvirtualpc-registervirtualmachine.md)
@@ -39,6 +39,6 @@ L'interfaccia [**IVMVirtualPC**](ivmvirtualpc.md) espone i metodi seguenti.
 -   [**Metodo SetConfigurationValue**](ivmvirtualpc-setconfigurationvalue.md)
 -   [**Metodo UnregisterVirtualMachine**](ivmvirtualpc-unregistervirtualmachine.md)
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_STAR (Wmsdkidl. h)
+title: WMT_VIDEOIMAGE_TRANSITION_STAR (Wmsdkidl.h)
 description: La transizione a stella rivela la nuova immagine in una stella a cinque punte all'interno del frame.
 ms.assetid: d16f73ce-0fa8-47b4-8146-32f276e6d16c
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_STAR formato Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_STAR windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af064682c4488153823164433bd432a9080336fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fd5a00c7cf68feea13dc0e617e5fe2adb34551032c8ec54bda6e0810fbb092e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195171"
 ---
-# <a name="wmt_videoimage_transition_star"></a>\_stella della \_ transizione \_ VIDEOIMAGE di WMT
+# <a name="wmt_videoimage_transition_star"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ STAR
 
 La transizione a stella rivela la nuova immagine in una stella a cinque punte all'interno del frame.
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella seguente vengono descritti i parametri utilizzati da questa transizione ed elencati i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
+La tabella seguente descrive i parametri usati da questa transizione ed elenca i membri della struttura [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) a cui sono assegnati.
 
 
 
@@ -48,12 +48,12 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 <tr class="odd">
 <td>Centra X</td>
 <td><strong>fEffectPara0</strong></td>
-<td>Coordinata X, relativa al frame video, del centro della stella.</td>
+<td>Coordinata X, relativa al fotogramma video, del centro della stella.</td>
 </tr>
 <tr class="even">
 <td>Centra Y</td>
 <td><strong>fEffectPara1</strong></td>
-<td>Coordinata Y, relativa al frame video, del centro della stella.</td>
+<td>Coordinata Y, relativa al fotogramma video, del centro della stella.</td>
 </tr>
 <tr class="odd">
 <td>Radius</td>
@@ -65,8 +65,8 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 <td><strong>fEffectPara3</strong></td>
 <td>Impostare su uno dei valori seguenti:
 <ul>
-<li>0: specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è il primo piano.</li>
-<li>1-specifica la composizione invertita, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è il primo piano.</li>
+<li>0 : specifica la composizione normale, in cui l'immagine precedente è lo sfondo e l'immagine corrente è in primo piano.</li>
+<li>1 : specifica la composizione inversa, in cui l'immagine corrente è l'immagine di sfondo e l'immagine precedente è in primo piano.</li>
 </ul></td>
 </tr>
 </tbody>
@@ -82,7 +82,7 @@ Nella tabella seguente vengono descritti i parametri utilizzati da questa transi
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 

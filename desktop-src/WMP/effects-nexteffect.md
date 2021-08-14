@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. nextEffect
-description: Il metodo nextEffect Visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni che interessano.
+title: EFFECTS.nextEffect
+description: Il metodo nextEffect visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni.
 ms.assetid: dedd8e8b-2337-46f5-91a8-43ef54c86012
 keywords:
-- EFFECTs. nextEffect Windows Media Player
+- Effects.nextEffect Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b84d7ec4d6095ffdac2a0f0592aa3f3e832e68e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 359571dde65c8cb65f422de58667c715cb7a3099e79a443dd64777edbf8767d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339986"
 ---
-# <a name="effectsnexteffect"></a>EFFECTs. nextEffect
+# <a name="effectsnexteffect"></a>EFFECTS.nextEffect
 
-Il metodo **nextEffect** Visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni che interessano.
+Il **metodo nextEffect** visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni.
 
 ``` syntax
         elementID.nextEffect()
@@ -38,7 +38,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo Visualizza il primo set di impostazioni della visualizzazione successiva nell'ordine di creazione. Se la visualizzazione corrente è l'ultima nell'ordine di creazione e se **allowAll** è false, la prima visualizzazione viene resa corrente.
+Questo metodo visualizza il primo set di impostazioni della visualizzazione successiva nell'ordine di creazione. Se la visualizzazione corrente è l'ultima nell'ordine di creazione e se **allowAll** è false, la prima visualizzazione viene resa corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Questo metodo Visualizza il primo set di impostazioni della visualizzazione succ
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,13 +54,13 @@ Questo metodo Visualizza il primo set di impostazioni della visualizzazione succ
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. allowAll**](effects-allowall.md)
+[**EFFECTS.allowAll**](effects-allowall.md)
 </dt> <dt>
 
-[**EFFECTs. previousEffect**](effects-previouseffect.md)
+[**EFFECTS.previousEffect**](effects-previouseffect.md)
 </dt> </dl>
 
  

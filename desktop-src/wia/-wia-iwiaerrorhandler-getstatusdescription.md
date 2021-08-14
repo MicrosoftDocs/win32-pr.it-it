@@ -1,7 +1,7 @@
 ---
 description: Restituisce una stringa che descrive il codice di stato.
 ms.assetid: d3007f3e-46e1-4ab6-8ce3-c4e38f87ce61
-title: 'Metodo IWiaErrorHandler:: GetStatusDescription (WIA. h)'
+title: Metodo IWiaErrorHandler::GetStatusDescription (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: da23e413ee238f43ae577a51b18a542dc1b0768c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963dc0059cf4fd45dffb0fc406cb6b2849aef456309cf15e80bf094c2ce01d20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208303"
 ---
-# <a name="iwiaerrorhandlergetstatusdescription-method"></a>Metodo IWiaErrorHandler:: GetStatusDescription
+# <a name="iwiaerrorhandlergetstatusdescription-method"></a>Metodo IWiaErrorHandler::GetStatusDescription
 
 Restituisce una stringa che descrive il codice di stato.
 
@@ -44,48 +44,48 @@ HRESULT GetStatusDescription(
 
 <dl> <dt>
 
-*punkItem* \[ in\]
+*oggetto punkItem* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntatore all' [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) dell'elemento da trasferire. Questo oggetto implementa almeno [_ *IWiaItem2* *](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
+Puntatore [all'oggetto IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) dell'elemento da trasferire. Questo oggetto implementa minimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
 
 </dd> <dt>
 
-*hrStatus* \[ in\]
+*hrStatus* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HRESULT**
 
-**HRESULT** che rappresenta il codice di stato ricevuto da [**BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+**HRESULT** che è il codice di stato ricevuto da [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> <dt>
 
-*cbResLength* \[ in\]
+*cbResLength* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-**Long** che corrisponde alla dimensione dei dati a cui fa riferimento *pbData*.
+**LONG** che rappresenta le dimensioni dei dati a cui fa riferimento *pbData*.
 
 </dd> <dt>
 
-*pbData* \[ in\]
+*pbData* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Puntatore al buffer di dati ricevuto da [_ *BandedDataCallback* *](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+Puntatore al buffer di dati ricevuto da [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> <dt>
 
-*pbstrDescription* \[ out\]
+*pbstrDescription* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **BSTR \** _
+Tipo: **BSTR \***
 
-_ *BSTR** che riceve una descrizione dello stato o dell'errore rilevato durante il trasferimento dei dati. Questo parametro non può essere **null**. Il chiamante deve liberare la stringa usando [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)e l'implementatore deve allocare la stringa usando [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring).
+**BSTR** che riceve una descrizione dello stato o dell'errore rilevato durante il trasferimento dei dati. Questo parametro non può essere **NULL.** Il chiamante deve liberare la stringa [usando SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)e l'implementatore deve allocare la stringa [usando SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring).
 
 </dd> </dl>
 
@@ -99,8 +99,8 @@ Restituisce uno dei valori seguenti.
 
 | Codice restituito                                                                             | Descrizione                                                        |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>    | *pbstrDescription* contiene un puntatore **BSTR** valido. <br/>  |
-| <dl> <dt>**S \_ false**</dt> </dl> | *hrStatus* è sconosciuto e non è disponibile alcuna descrizione. <br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | *pbstrDescription* contiene un puntatore **BSTR** valido. <br/>  |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | *hrStatus* è sconosciuto e non è disponibile alcuna descrizione. <br/> |
 
 
 
@@ -112,11 +112,11 @@ Restituisce uno dei valori seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

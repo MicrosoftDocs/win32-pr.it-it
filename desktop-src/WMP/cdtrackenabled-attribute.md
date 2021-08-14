@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c81c231dbdfc432ea7aa510a19b1f85e0826c836
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a86c94c2c1b44327cdbfb35544c3e0b5b34d25885215d78dbec0ec084d056e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342684"
 ---
 # <a name="cdtrackenabled-attribute"></a>Attributo CDTrackEnabled
 
-L'attributo **CDTrackEnabled** indica se la traccia è abilitata per la riproduzione.
+**L'attributo CDTrackEnabled** indica se la traccia è abilitata per la riproduzione.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ L'attributo **CDTrackEnabled** indica se la traccia è abilitata per la riproduz
 
 Questo attributo viene archiviato solo nella cache della libreria.
 
-Quando si riproduce un CD in Windows Media Player, l'utente può selezionare una traccia e specificare che non deve essere riprodotta. Questo valore di questo attributo è true se la traccia può essere riprodotta oppure false se l'utente ha specificato che la traccia non deve essere riprodotta.
+Quando si riproduce un CD in Windows Media Player, l'utente può selezionare una traccia e specificare che non deve essere riprodotta. Questo valore di questo attributo è True se la traccia può essere riprodotta oppure False se l'utente ha specificato che la traccia non deve essere riprodotta.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

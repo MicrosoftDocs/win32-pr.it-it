@@ -7,18 +7,18 @@ keywords:
 - Esempi di Active Directory Active Directory, impostazione e rimozione della protezione SACL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c77cb1da29aa650fe4559c3da27c6a00f59e98
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6c3ed7c32ebdeb7408037e2e3fcff294f0750fb6a8dcd19837ee9154c65f0c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "106299577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190153"
 ---
 # <a name="example-code-for-setting-and-removing-sacl-and-dacl-protection"></a>Codice di esempio per l'impostazione e la rimozione della protezione SACL e DACL
 
 Questo argomento include un esempio di codice usato per impostare e rimuovere la protezione SACL e DACL.
 
-Nell'esempio di codice C e C++ riportato di seguito vengono impostati e rimossi gli elementi di **se \_ DACL \_ protetti** e **se \_ SACL \_** nella proprietà [**IADsSecurityDescriptor. Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) del descrittore di sicurezza di un oggetto.
+L'esempio di codice C e C++ seguente imposta e rimuove gli elementi PROTECTED edizione Standard **\_ \_ DACL** e **edizione Standard \_ SACL \_ PROTECTED** nella proprietà [**IADsSecurityDescriptor.Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) di un descrittore di sicurezza dell'oggetto.
 
 
 ```C++
@@ -131,6 +131,6 @@ HRESULT SetSDInheritProtect(IADs *pObject, long lControl)
 
 
 
- 
+ 
 
- 
+ 

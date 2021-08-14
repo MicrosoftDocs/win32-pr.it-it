@@ -1,19 +1,19 @@
 ---
-description: Forma intuitiva di System. Photo. Flash. Non concepito per essere analizzato a livello di codice.
+description: Formato descrittivo di System.Photo.Flash. Non deve essere analizzato a livello di codice.
 ms.assetid: 192cab30-2fa0-4036-b9b4-544bea8e6ac1
-title: System. Photo. FlashText
+title: System.Photo.FlashText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fea902b3890eb40c9c8d944c567b20a18412e716
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74e0881abfa2b6fb6900503c2f7168dad98c6e398f2bffc23cc7096d1086adc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229805"
 ---
-# <a name="systemphotoflashtext"></a>System. Photo. FlashText
+# <a name="systemphotoflashtext"></a>System.Photo.FlashText
 
-Forma intuitiva di [System. Photo. Flash](./props-system-photo-flash.md). Non concepito per essere analizzato a livello di codice.
+Il formato descrittivo di [System.Photo.Flash](./props-system-photo-flash.md). Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

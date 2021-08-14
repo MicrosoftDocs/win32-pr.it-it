@@ -1,39 +1,39 @@
 ---
-title: effetto tabella di ricerca 3D
-description: Una tabella di ricerca 3D è un effetto generico che viene usato per incapsulare qualsiasi effetto di imaging 1 1, precalcolando il modo in cui l'effetto esegue il mapping degli input agli output per un subset di tutti i valori di input.
+title: Effetto tabella di ricerca 3D
+description: Una tabella di ricerca 3D è un effetto generico usato per incapsulare qualsiasi effetto di creazione di immagini 11 pre-calcolando il modo in cui l'effetto esegue il mapping degli input agli output per un subset di tutti i valori di input.
 ms.assetid: 2f0b4b6d-f371-101c-918a-bf564778e593
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d0c6c5df1aa873d3458345d77a46f6f3fdae40b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5b6d7cee4d21af5f7bc56ee4982f64523e892e616263b3cf5ed7ea84294fbb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161027"
 ---
-# <a name="3d-lookup-table-effect"></a>effetto tabella di ricerca 3D
+# <a name="3d-lookup-table-effect"></a>Effetto tabella di ricerca 3D
 
-Una tabella di ricerca 3D è un effetto generico che viene usato per incapsulare qualsiasi effetto di imaging 1:1, precalcolando il modo in cui l'effetto esegue il mapping degli input agli output per un subset di tutti i valori di input.
+Una tabella di ricerca 3D è un effetto generico usato per incapsulare qualsiasi effetto di creazione di immagini 1:1 pre-calcolando il modo in cui l'effetto esegue il mapping degli input agli output per un subset di tutti i valori di input.
 
-L'effetto della tabella di ricerca 3D (LUT) modifica un'immagine di input usando il valore di colore RGB dell'immagine per indicizzare una trama 3D, in cui la trama contiene un valore di output pre-calcolato di una pipeline di effetto arbitrario.
+L'effetto Tabella di ricerca 3D (LUT) modifica un'immagine di input usando il valore del colore RGB dell'immagine per indicizzare una trama 3D, in cui la trama contiene un valore di output pre-ricalcolato di una pipeline di effetti arbitrari.
 
-Per poter eseguire il rendering, la LUT 3D deve essere caricata in una risorsa di trama GPU, che può essere costosa a seconda delle dimensioni della trama e delle funzionalità del dispositivo. Gli sviluppatori di applicazioni possono specificare quando pagare questo costo usando la risorsa [**ID2D1LookupTable3D**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1lookuptable3d) D2D. **ID2D1LookupTable3D** ha gli attributi seguenti:
+L'LUT 3D deve essere caricato in una risorsa di trama GPU per poter essere sottoposto a rendering e questo può essere costoso a seconda delle dimensioni della trama e delle funzionalità del dispositivo. Gli sviluppatori di applicazioni possono specificare quando pagare questo costo usando la [**risorsa D2D ID2D1LookupTable3D.**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1lookuptable3d) **ID2D1LookupTable3D** ha gli attributi seguenti:
 
--   Fornisce una rappresentazione astratta della risorsa GPU di LUT 3D.
--   A seconda delle funzionalità del dispositivo, una trama 2D o 3D verrà creata e compilata con i dati LUT specificati.
+-   Fornisce una rappresentazione astratta della risorsa GPU di 3D LUT.
+-   A seconda delle funzionalità del dispositivo, verrà creata e riempita una trama 2D o 3D con i dati LUT forniti.
 -   Può essere passato alla proprietà dell'effetto LUT 3D per il rendering.
 
 Il CLSID per questo effetto è CLSID \_ D2D1LookupTable3D.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà effetto](#effect-properties)
+-   [Proprietà degli effetti](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output di effetto](images/3dlookuptable-effect.png)
+![Esempio di output dell'effetto](images/3dlookuptable-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 
@@ -116,9 +116,9 @@ Il CLSID per questo effetto è CLSID \_ D2D1LookupTable3D.
     IFR(sp3dLutEffect->SetValue(D2D1_LOOKUPTABLE3D_PROP_LUT, _spLut));
 ```
 
-## <a name="effect-properties"></a>Proprietà effetto
+## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto della tabella di ricerca 3D sono definite dall'enumerazione [**d2d1 \_ LOOKUPTABLE3D \_ prop**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_lookuptable3d_prop) .
+Le proprietà per l'effetto tabella di ricerca 3D sono definite dall'enumerazione [**D2D1 \_ LOOKUPTABLE3D \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_lookuptable3d_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -126,10 +126,10 @@ Le proprietà per l'effetto della tabella di ricerca 3D sono definite dall'enume
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Server minimo supportato | App \[ Windows 10 desktop app \| Windows Store\] |
-| Intestazione                   | d2d1effects \_ 2. h                                  |
-| Libreria                  | d2d1. lib, dxguid. lib                              |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Intestazione                   | d2d1effects \_ 2.h                                  |
+| Libreria                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

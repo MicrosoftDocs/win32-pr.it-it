@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentBinding NotifySoHChange (NapSystemHealthAgent. h)
-description: Viene usato da SHAs quando cambia il rapporto di integrità.
+title: Metodo INapSystemHealthAgentBinding NotifySoHChange (NapSystemHealthAgent.h)
+description: Viene usato dagli sha quando il relativo soH cambia.
 ms.assetid: 3a653282-03b0-49d5-833f-966497f46faa
 keywords:
-- NAP metodo NotifySoHChange
+- Metodo NotifySoHChange NAP
 - Metodo NotifySoHChange NAP, interfaccia INapSystemHealthAgentBinding
 - Interfaccia INapSystemHealthAgentBinding NAP, metodo NotifySoHChange
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b18c03be03c4bc5282e9ea62ec10d5356871cf5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a418a78e0d21178f3dd1889816873afb1c7ec7212da48be5d75e44d40d0a61d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118367839"
 ---
-# <a name="inapsystemhealthagentbindingnotifysohchange-method"></a>Metodo INapSystemHealthAgentBinding:: NotifySoHChange
+# <a name="inapsystemhealthagentbindingnotifysohchange-method"></a>Metodo INapSystemHealthAgentBinding::NotifySoHChange
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentBinding:: NotifySoHChange** viene usato da Shas quando il rapporto di integrità viene modificato.
+Il **metodo INapSystemHealthAgentBinding::NotifySoHChange** viene usato dagli sha quando il relativo soH cambia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,17 +47,17 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                             | Descrizione                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione riuscita.<br/>                                                                                                |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>         | Errore delle autorizzazioni, accesso negato.<br/>                                                                                   |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>         | Errore di autorizzazione, accesso negato.<br/>                                                                                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/>                                                             |
-| <dl> <dt>**NAP \_ E \_ non \_ inizializzato**</dt> </dl> | SHA non è stato inizializzato in precedenza.<br/>                                                                        |
-| <dl> <dt>**RPC \_ E \_ disconnessa**</dt> </dl>     | Il NapAgent è stato arrestato. Questo oggetto verrà ripristinato automaticamente e riassociato a NapAgent, una volta riavviato.<br/> |
+| <dl> <dt>**PROTEZIONE \_ ACCESSO ALLA RETE E NON \_ \_ INIZIALIZZATA**</dt> </dl> | L'sha non è stato inizializzato in precedenza.<br/>                                                                        |
+| <dl> <dt>**RPC \_ E \_ DISCONNESSO**</dt> </dl>     | NapAgent è stato arrestato. Questo oggetto verrà ripristinato automaticamente e riassociato a NapAgent, dopo il riavvio.<br/> |
 
 
 
@@ -65,11 +65,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="remarks"></a>Commenti
 
-SHAs non deve chiamare questa API speculativamente perché comporta uno scambio di rapporto di integrità in rete. Le chiamate a questa API devono essere effettuate solo quando necessario.
+Gli sha non devono chiamare questa API in modo speculativo perché comportano uno scambio SoH in transito. Le chiamate a questa API devono essere effettuate solo quando necessario.
 
-Il NapAgent non tiene presente questo thread per elaborare la modifica del rapporto di integrità. Viene invece restituito immediatamente e la modifica viene elaborata in modo asincrono.
+NapAgent non contiene questo thread per elaborare la modifica soh. Restituisce invece immediatamente ed elabora la modifica in modo asincrono.
 
-SHA deve chiamare [**Initialize**](inapsystemhealthagentbinding-initialize-method.md) prima di chiamare questo metodo o qualsiasi altro metodo dell'interfaccia [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) .
+L'SHA deve [**chiamare Initialize**](inapsystemhealthagentbinding-initialize-method.md) prima di chiamare questo metodo o qualsiasi altro metodo dell'interfaccia [**INapSystemHealthAgentBinding2.**](inapsystemhealthagentbinding2.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -77,10 +77,10 @@ SHA deve chiamare [**Initialize**](inapsystemhealthagentbinding-initialize-metho
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

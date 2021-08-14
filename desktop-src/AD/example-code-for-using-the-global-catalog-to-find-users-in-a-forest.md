@@ -1,24 +1,24 @@
 ---
-title: Codice di esempio per l'uso del catalogo globale per trovare gli utenti in una foresta
-description: Questo argomento include esempi di codice usati per cercare gli utenti in una foresta.
+title: Codice di esempio per l'uso del catalogo globale per trovare utenti in una foresta
+description: Questo argomento include esempi di codice usati per cercare utenti in una foresta.
 ms.assetid: bdcbfb7e-e1ea-4275-96b0-1c895e28e176
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, uso del catalogo globale per trovare gli utenti in una foresta
+- Esempi di Active Directory Active Directory, utilizzo del catalogo globale per trovare gli utenti in una foresta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bea13ac3dbc4455d10dbd56f78e50c0f2ea27301
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac868537e1bbb8d4b2400f5cd32dd0d55efeb448b10b40ae88aaf5a35bfb2d8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189714"
 ---
-# <a name="example-code-for-using-the-global-catalog-to-find-users-in-a-forest"></a>Codice di esempio per l'uso del catalogo globale per trovare gli utenti in una foresta
+# <a name="example-code-for-using-the-global-catalog-to-find-users-in-a-forest"></a>Codice di esempio per l'uso del catalogo globale per trovare utenti in una foresta
 
-Questo argomento include esempi di codice usati per cercare gli utenti in una foresta.
+Questo argomento include esempi di codice usati per cercare utenti in una foresta.
 
-Nell'esempio di codice Visual Basic riportato di seguito viene illustrato come utilizzare ADSI per cercare gli utenti in una foresta.
+L'Visual Basic di codice seguente illustra come usare ADSI per cercare utenti in una foresta.
 
 
 ```VB
@@ -81,7 +81,7 @@ End Sub
 
 
 
-Nell'esempio di codice C++ riportato di seguito viene utilizzato ADSI per cercare gli utenti in una foresta.
+L'esempio di codice C++ seguente usa ADSI per cercare utenti in una foresta.
 
 
 ```C++
@@ -233,9 +233,9 @@ HRESULT PrintAllUsersInGlobalCatalog()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

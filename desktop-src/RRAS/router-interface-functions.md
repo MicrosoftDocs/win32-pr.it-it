@@ -1,19 +1,19 @@
 ---
-title: Funzioni di interfaccia del router
-description: Usare le funzioni seguenti per amministrare le interfacce sul router.
+title: Funzioni dell'interfaccia router
+description: Usare le funzioni seguenti per amministrare le interfacce nel router.
 ms.assetid: e988753e-908a-4c42-aad3-dd9f641c90a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3a5318eedfbc3a04c13549012fda3bd4d93b4d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9bcaaf257e31623036a075c21da66d4665b3afe7e821f8f246f6a225e02b8272
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787837"
 ---
-# <a name="router-interface-functions"></a>Funzioni di interfaccia del router
+# <a name="router-interface-functions"></a>Funzioni dell'interfaccia router
 
-Usare le funzioni seguenti per amministrare le interfacce sul router.
+Usare le funzioni seguenti per amministrare le interfacce nel router.
 
 
 
@@ -28,17 +28,17 @@ Usare le funzioni seguenti per amministrare le interfacce sul router.
 
 
 
- 
+ 
 
-Queste funzioni influiscono sulle interfacce stesse, non sui client in esecuzione sulle interfacce. Per questo motivo, nessuna delle funzioni richiede che il chiamante specifichi un trasporto specifico (IP o IPX); Sebbene i client, ad esempio i protocolli di routing, siano associati a trasporti particolari, le interfacce non lo sono.
+Queste funzioni influiscono sulle interfacce stesse, non sui client in esecuzione sulle interfacce. Per questo motivo, nessuna delle funzioni richiede al chiamante di specificare un trasporto specifico (IP o IPX). anche se i client ( ad esempio i protocolli di routing) sono associati a trasporti specifici, le interfacce stesse non lo sono.
 
-Queste funzioni vengono gestite direttamente da DIM. Non utilizzano i gestori dei router.
+Queste funzioni vengono gestite direttamente da DIM. Non utilizzano i gestori router.
 
-Le funzioni [**MprAdminInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacecreate) e [**MprAdminInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacedelete) non possono creare o eliminare interfacce LAN. Possono solo creare o eliminare le interfacce di connessione a richiesta. Vedere [**\_ \_ tipo di interfaccia del router**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type) per un elenco di tipi di interfaccia.
+Le [**funzioni MprAdminInterfaceCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacecreate) e [**MprAdminInterfaceDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacedelete) non possono creare o eliminare interfacce LAN. Possono solo creare o eliminare interfacce di connessione a richiesta. Per [**un elenco dei tipi di \_ \_ interfaccia,**](/windows/desktop/api/Mprapi/ne-mprapi-router_interface_type) vedere TIPO DI INTERFACCIA ROUTER.
 
- 
+ 
 
- 
+ 
 
 
 

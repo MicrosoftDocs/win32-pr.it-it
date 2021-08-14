@@ -1,28 +1,28 @@
 ---
-title: Notifica di congestione esplicita di Winsock (ECN)
-description: Alcune applicazioni e/o protocolli basati sul protocollo UDP (User Datagram Protocol), ad esempio QUIC, cercano di sfruttare l'uso di punti di codice ECN (Explicit Congestion Notification) per migliorare la latenza e jitter nelle reti congestionate.
+title: Notifica esplicita di congestione (ECN) di Winsock
+description: Alcune applicazioni e/o protocolli basati sul protocollo UDP (User Datagram Protocol), ad esempio QUIC, cercano di sfruttare l'uso di punti di codice ECN (Explicit Congestion Notification) per migliorare la latenza e instabilità nelle reti congestionate.
 ms.topic: article
 ms.date: 11/13/2020
-ms.openlocfilehash: 090ac9b0575cb491aa6d726e7507223156460ace
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 79b38611cd0301d0b5d301592eec02b68c02353246c67a6c94528417623834f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322024"
 ---
-# <a name="winsock-explicit-congestion-notification-ecn"></a>Notifica di congestione esplicita di Winsock (ECN)
+# <a name="winsock-explicit-congestion-notification-ecn"></a>Notifica esplicita di congestione (ECN) di Winsock
 
 ## <a name="introduction"></a>Introduzione
 
-Alcune applicazioni e/o protocolli basati sul protocollo UDP (User Datagram Protocol), ad esempio QUIC, cercano di sfruttare l'uso di punti di codice ECN (Explicit Congestion Notification) per migliorare la latenza e jitter nelle reti congestionate.
+Alcune applicazioni e/o protocolli basati sul protocollo UDP (User Datagram Protocol), ad esempio QUIC, cercano di sfruttare l'uso di punti di codice ECN (Explicit Congestion Notification) per migliorare la latenza e instabilità nelle reti congestionate.
 
-Le API ECN Winsock estendono l'interfaccia dei messaggi di controllo **getsockopt** / **setsockopt** e &mdash; [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) / [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) con il supporto per la modifica e la ricezione di punti di codice ECN nelle intestazioni &mdash; IP. La funzionalità fornita consente di ottenere e impostare punti di codice ECN in base al pacchetto.
+Le API ECN Winsock estendono l'interfaccia dei messaggi di controllo **getsockopt** setsockopt, nonché l'interfaccia del messaggio di controllo /  &mdash; [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) / [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) con il supporto per la modifica e la ricezione di punti di codice ECN nelle intestazioni &mdash; IP. La funzionalità fornita consente di ottenere e impostare punti di codice ECN in base al pacchetto.
 
-Per altre informazioni su ECN, vedere Aggiunta della notifica di congestione esplicita [(ECN) all'indirizzo IP.](https://tools.ietf.org/html/rfc3168)
+Per altre informazioni su ECN, vedere The Addition of Explicit Congestion Notification (ECN) to IP ( Aggiunta della notifica di congestione esplicita [(ECN) all'INDIRIZZO IP).](https://tools.ietf.org/html/rfc3168)
 
 L'applicazione non può specificare il punto di codice Congestion Encountered (CE) durante l'invio di datagrammi. L'invio restituirà **l'errore WSAEINVAL**.
 
-## <a name="query-ecn-with-wsagetrecvipecn"></a>Eseguire query ecn con WSAGetRecvIPEcn
+## <a name="query-ecn-with-wsagetrecvipecn"></a>Eseguire query ECN con WSAGetRecvIPEcn
 
 [**WSAGetRecvIPEcn**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsagetrecvipecn) è una funzione inline, definita in `ws2tcpip.h` .
 
@@ -30,12 +30,12 @@ Chiamare **WSAGetRecvIPEcn** per eseguire una query sull'abilitazione corrente d
 
 Vedere anche la [**struttura WSAMSG.**](/windows/win32/api/ws2def/ns-ws2def-wsamsg)
 
-- **Protocollo**: IPv4
+- **Protocollo:** IPv4
 - **Cmsg_level**: IPPROTO_IP
 - **Cmsg_type**: IP_ECN (50 decimali)
 - **Descrizione:** specifica/riceve il punto di codice ECN nel campo di intestazione IPv4 Tipo di servizio (TOS).
 
-- **Protocollo**: IPv6
+- **Protocollo:** IPv6
 - **Cmsg_level**: IPPROTO_IPV6
 - **Cmsg_type**: IPV6_ECN (50 decimali)
 - **Descrizione:** specifica/riceve il punto di codice ECN nel campo intestazione IPv6 della classe di traffico.
@@ -44,7 +44,7 @@ Vedere anche la [**struttura WSAMSG.**](/windows/win32/api/ws2def/ns-ws2def-wsam
 
 [**WSASetRecvIPEcn**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetrecvipecn) è una funzione inline, definita in `ws2tcpip.h` .
 
-Chiamare **WSASetRecvIPEcn** per specificare se lo stack IP deve popolare il buffer di controllo con un messaggio contenente il punto di codice ECN del campo di intestazione Tipo di servizio IPv4 (o campo di intestazione IPv6 della classe di traffico) in un datagramma ricevuto. Se impostata su `TRUE` , la funzione LPFN_WSARECVMSG [**(WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) restituisce dati di controllo facoltativi contenenti il punto di codice ECN del datagramma ricevuto. Il tipo di messaggio di controllo restituito **sarà IP_ECN** (o **IPV6_ECN**) con livello IPPROTO_IP **(o IPPROTO_IPV6**).  I dati del messaggio di controllo vengono restituiti come **INT.** Questa opzione è valida solo nei socket di datagramma (il tipo di socket deve **essere SOCK_DGRAM**).
+Chiamare **WSASetRecvIPEcn** per specificare se lo stack IP deve popolare il buffer di controllo con un messaggio contenente il punto di codice ECN del campo di intestazione Tipo di servizio IPv4 (o campo di intestazione IPv6 della classe di traffico) in un datagramma ricevuto. Se impostata su `TRUE` , la funzione LPFN_WSARECVMSG [**(WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) restituisce dati di controllo facoltativi contenenti il punto di codice ECN del datagramma ricevuto. Il tipo di messaggio di controllo restituito **sarà IP_ECN** (o **IPV6_ECN**) con livello IPPROTO_IP **(o** **IPPROTO_IPV6**). I dati del messaggio di controllo vengono restituiti come **INT.** Questa opzione è valida solo nei socket di datagramma (il tipo di socket deve **essere SOCK_DGRAM**).
 
 ## <a name="code-example-1mdashapplication-advertising-ecn-support"></a>Esempio di codice 1 &mdash; applicazione che pubblicizza il supporto ECN
 

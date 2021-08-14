@@ -1,5 +1,5 @@
 ---
-description: La classe singleton ScriptingStandardConsumerSetting fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard ActiveScriptEventConsumer.
+description: La classe Singleton ScriptingStandardConsumerSetting fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard ActiveScriptEventConsumer.
 ms.assetid: d217e058-3529-4173-b896-ebff3d7b05c6
 ms.tgt_platform: multiple
 title: Classe ScriptingStandardConsumerSetting
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - Scrcons.exe
-ms.openlocfilehash: 43eae14eea445f546f731605c94b38e770b08691
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a69d30511d01fba2df39483d1f76616bfae7c92812ce75989fd0c23558558b33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316205"
 ---
 # <a name="scriptingstandardconsumersetting-class"></a>Classe ScriptingStandardConsumerSetting
 
-La classe singleton **ScriptingStandardConsumerSetting** fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard [**ActiveScriptEventConsumer**](activescripteventconsumer.md) . Un'istanza di **ActiveScriptEventConsumer** usa le proprietà **MaximumScripts** e **timeout** . Per altre informazioni, vedere [monitoraggio e risposta agli eventi con consumer standard](monitoring-and-responding-to-events-with-standard-consumers.md).
+La classe **Singleton ScriptingStandardConsumerSetting** fornisce dati di registrazione comuni a tutte le istanze della classe consumer standard [**ActiveScriptEventConsumer.**](activescripteventconsumer.md) **Un'istanza di ActiveScriptEventConsumer** usa **le proprietà MaximumScripts** **e Timeout.** Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,36 +48,36 @@ class ScriptingStandardConsumerSetting : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La classe **ScriptingStandardConsumerSetting** dispone di questi tipi di membri:
+La **classe ScriptingStandardConsumerSetting** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **ScriptingStandardConsumerSetting** dispone di queste proprietà.
+La **classe ScriptingStandardConsumerSetting** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](standard-qualifiers.md) (64)
+Qualificatori: [**MaxLen**](standard-qualifiers.md) (64)
 </dt> </dl>
 
-Una breve descrizione di un oggetto a una stringa di riga. Contiene la stringa **ScriptingStandardConsumerSetting** perché si tratta di una classe singleton.
+Breve descrizione di un oggetto una stringa di una riga. Contiene la stringa **ScriptingStandardConsumerSetting** perché si tratta di una classe singleton.
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -90,51 +90,51 @@ Descrizione testuale di un oggetto.
 **MaximumScripts**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Numero massimo di script eseguiti prima che un consumer avvii una nuova istanza. Per eliminare le perdite di memoria dagli script, arrestare regolarmente il consumer. Il valore predefinito è 300.
+Numero massimo di script eseguiti prima che un consumer inizi una nuova istanza. Per cancellare le perdite di memoria dagli script, arrestare regolarmente il consumer. Il valore predefinito è 300.
 
 </dd> <dt>
 
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](standard-qualifiers.md) (256)
+Qualificatori: [**MaxLen**](standard-qualifiers.md) (256)
 </dt> </dl>
 
-Identificatore per l'oggetto Setting.
+Identificatore per l'oggetto impostazione.
 
 </dd> <dt>
 
 **Timeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Qualificatori: [**unità**](standard-qualifiers.md) ("minuti")
+Qualificatori: [**unità**](standard-qualifiers.md) ("Minuti")
 </dt> </dl>
 
-Numero massimo di minuti prima che un consumer avvii una nuova istanza. Se è 0 (zero), la proprietà **MaximumScripts** controlla la durata del consumer. L'intervallo valido per il **timeout** è compreso tra 0 e 71.000 e il valore predefinito è 0 (zero).
+Numero massimo di minuti prima che un consumer inizi una nuova istanza. Se 0 (zero), la **proprietà MaximumScripts** controlla la durata del consumer. L'intervallo valido **per Timeout** è compreso tra 0 e 71.000 e il valore predefinito è 0 (zero).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La singola istanza della classe **ScriptingStandardConsumerSetting** risiede nello \\ spazio dei nomi CIMV2 radice.
+La singola istanza della classe **ScriptingStandardConsumerSetting** si trova nello spazio dei \\ nomi radice cimv2.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -144,8 +144,8 @@ La singola istanza della classe **ScriptingStandardConsumerSetting** risiede nel
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\Sottoscrizione radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Scrcons. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Sottoscrizione \\ radice<br/>                                                          |
+| MOF<br/>                      | <dl> <dt>Scrcons.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scrcons.exe</dt> </dl> |
 
 
@@ -154,7 +154,7 @@ La singola istanza della classe **ScriptingStandardConsumerSetting** risiede nel
 
 <dl> <dt>
 
-[**\_Impostazione CIM**](/windows/desktop/CIMWin32Prov/cim-setting)
+[**Impostazione \_ CIM**](/windows/desktop/CIMWin32Prov/cim-setting)
 </dt> <dt>
 
 [Classi consumer standard](standard-consumer-classes.md)

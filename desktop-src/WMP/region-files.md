@@ -3,53 +3,53 @@ title: File di area
 description: File di area
 ms.assetid: 20952eb9-4cd1-4d7d-b5cc-f1741977745f
 keywords:
-- Interfacce di Windows Media Player per dispositivi mobili, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di immagine per le interfacce, i file di area
-- Interfacce di Windows Media Player Mobile, file di area
-- interfacce, file di area
-- File di area in interfacce
+- Windows Media Player Interfaccia per dispositivi mobili, file di grafica
+- skins, file art
+- file per le interfaccia, grafica
+- file di grafica per le interfaccia, file di area
+- Windows Media Player Interfaccia per dispositivi mobili, file di area
+- skins, file region
+- File di area nelle interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d258afeab029df7218d3616b8aecdb62c72806
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48ce26db27ef6ad3373916337c6378886a2846f71f1d8aa0e8d5266aae23eff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934091"
 ---
 # <a name="region-files"></a>File di area
 
-I file di area sono necessari se si usa qualsiasi tipo di pulsante di hit (2PushHit, PushHit o ToggleHit).
+I file di area sono necessari se si usa qualsiasi tipo di pulsante di scelta (2PushHit, PushHit o ToggleHit).
 
-I file di area vengono usati per definire aree che risponderanno a un tocco, noto anche come hit, su un pulsante specifico. Per ogni pulsante hit, a un'area nella bitmap dell'area viene assegnato un colore Web specifico, ad esempio \# FF0000, che rappresenta il valore di rosso a tinta unita. Il numero di colore viene specificato nella definizione del pulsante Region. Quando l'utente Visualizza l'interfaccia, l'immagine del pulsante viene sovrapposta allo sfondo usando le coordinate dell'area nella bitmap della regione.
+I file di area vengono usati per definire le aree che risponderanno a un tocco, noto anche come hit, su un pulsante specifico. Per ogni pulsante di scelta, a un'area nella bitmap Region viene assegnato un colore Web specifico, ad esempio FF0000, che è il valore per \# il rosso a tinta unita. Il numero di colore viene specificato nella definizione del pulsante area. Quando l'utente visualizza l'interfaccia, l'immagine del pulsante viene sovrapposta sullo sfondo usando le coordinate dell'area nella bitmap Region.
 
-Ad esempio, è possibile creare un cerchio rosso in una posizione corrispondente alla posizione del pulsante Avanti e colorarlo a tinta unita rossa ( \# FF0000). Nella definizione del pulsante è quindi possibile assegnare un valore RGB raggiunto di 255, 0, 0, ovvero l'equivalente RGB di \# ff0000. In questo caso, il pulsante Avanti risponderà solo ai tocchi (riscontri) all'interno del cerchio rosso.
+Ad esempio, è possibile disegnare un cerchio rosso in una posizione corrispondente alla posizione del pulsante Avanti e colorarlo di rosso a tinta \# unita (FF0000). Nella definizione del pulsante è quindi possibile assegnare un valore RGB di hit pari a 255,0,0 (equivalente RGB a \# FF0000). In questo caso, il pulsante Avanti risponderà solo ai tocchi (riscontri) all'interno del cerchio rosso.
 
-I pulsanti hit vengono usati quando si desidera definire forme diverse dai rettangoli. È comunque necessario definire le coordinate per ciascun pulsante in modo che le immagini secondarie come push e Disable possano trovarsi correttamente. In pratica, ogni pulsante è limitato da un rettangolo e questi rettangoli di limite immaginari non devono sovrapporsi.
+I pulsanti di scelta vengono usati quando si vogliono definire forme diverse dai rettangoli. È comunque necessario definire le coordinate per ogni pulsante in modo che le immagini secondarie, ad esempio Push e Disabled, possano essere individuate correttamente. In pratica, ogni pulsante è delimitato da un rettangolo e questi rettangoli limite immaginari non devono sovrapporsi.
 
 > [!Note]  
-> I file di arte dell'area non sono necessari nelle interfacce Windows Media Player 10 mobile perché i tipi di pulsante non sono supportati in Windows Media Player 10 mobile o versioni successive.
+> I file di grafica dell'area non sono necessari in Windows Media Player 10 skin per dispositivi mobili perché i tipi di pulsante non sono supportati in Windows Media Player 10 Mobile o versioni successive.
 
- 
+ 
 
-L'immagine seguente è un file di area tipico.
+L'immagine seguente è un tipico file Region.
 
-![file Region](images/cesdkreg.png)
+![file di area](images/cesdkreg.png)
 
-Questo file definisce le parti dell'interfaccia per ogni pulsante di tipo hit. Ogni colore verrà identificato in base al relativo numero di colore nella sezione dei pulsanti del file di definizione dell'interfaccia.
+Questo file definisce le parti dell'interfaccia per ogni pulsante di tipo hit. Ogni colore verrà identificato dal relativo numero di colore nella sezione Buttons del file di definizione dell'interfaccia.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**File di immagine**](art-files-mobile.md)
+[**File di grafica**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

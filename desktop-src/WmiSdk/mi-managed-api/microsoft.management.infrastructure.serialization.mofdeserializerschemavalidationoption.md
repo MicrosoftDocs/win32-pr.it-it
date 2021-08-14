@@ -38,16 +38,16 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 18baf6fa3ab837a82d725b72b8b60e3b33b7175f
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 8892b145ebf03fdd995de8ef414394a79bb9b6b67514cde37a461003483534d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317187"
 ---
 # <a name="mofdeserializerschemavalidationoption-enumeration"></a>Enumerazione MofDeserializerSchemaValidationOption
 
-Definisce le costanti che specificano le opzioni di convalida dello schema per la deserializzazione.
+Definisce costanti che specificano le opzioni di convalida dello schema per la deserializzazione.
 
 **Spazio dei nomi:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
 **Assembly:**  Microsoft.Management.Infrastructure (in Microsoft.Management.Infrastructure.dll)  
@@ -75,7 +75,7 @@ Friend Enumeration MofDeserializerSchemaValidationOption
 |Nome del membro|Descrizione|
 |-|-|
 |Predefinito|Specifica la convalida dello schema predefinita.|
-|Strict|Specifica una convalida rigida dello schema.|
+|Strict|Specifica la convalida rigorosa dello schema.|
 |Sciolto|Specifica la convalida dello schema libero.|
 |IgnorePropertyType|Specifica che la convalida dello schema deve ignorare i tipi di proprietà.|
 |Ignora|Specifica che la convalida dello schema deve essere ignorata.|

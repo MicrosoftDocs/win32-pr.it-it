@@ -1,7 +1,7 @@
 ---
-description: Avvia un caricamento di dati di un singolo elemento dal chiamante.
+description: Avvia un caricamento dei dati di un singolo elemento dal chiamante.
 ms.assetid: 301ac5d9-b864-4c3c-bd4b-143cc4032dcb
-title: 'Metodo IWiaTransfer:: upload (WIA. h)'
+title: Metodo IWiaTransfer::Upload (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 6aae6ca8f86d07ec052fdd59d24b0da2b96599d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66bd542d27f29aa8fd531b6f3d8089d296efe2d963bcf967a0c1ab07e6f0db8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208239"
 ---
-# <a name="iwiatransferupload-method"></a>Metodo IWiaTransfer:: upload
+# <a name="iwiatransferupload-method"></a>Metodo IWiaTransfer::Upload
 
-Avvia un caricamento di dati di un singolo elemento dal chiamante.
+Avvia un caricamento dei dati di un singolo elemento dal chiamante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT Upload(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Attualmente non usato. Deve essere impostato su zero.
+Attualmente inutilizzato. Deve essere impostato su zero.
 
 </dd> <dt>
 
-*pSource* \[ in\]
+*pSource* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream)\***
 
-Specifica un puntatore ai dati [IStream](/windows/win32/api/objidl/nn-objidl-istream) .
+Specifica un puntatore ai [dati IStream.](/windows/win32/api/objidl/nn-objidl-istream)
 
 </dd> <dt>
 
-_pIWiaTransferCallback * \[ in\]
+*pIWiaTransferCallback* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Specifica un puntatore all'interfaccia [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) del chiamante.
+Specifica un puntatore all'interfaccia [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) del chiamante.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Specifica un puntatore all'interfaccia [_ *IWiaTransferCallback* *](-wia-iwiatra
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,11 +81,11 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

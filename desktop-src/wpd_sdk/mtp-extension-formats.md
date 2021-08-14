@@ -4,22 +4,22 @@ ms.assetid: 318b7267-f4ba-43ad-aa24-8cfacf056558
 title: Formati di estensione MTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff86265e47071fce9fe523cfbb64f2e355ed541e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a490c29c98b454b7d563e8af46131b040f123b9de2ef689ea5ede1a2ac100ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193957"
 ---
 # <a name="mtp-extension-formats"></a>Formati di estensione MTP
 
-Il formato di un file in un dispositivo può essere descritto da un valore GUID. Questo valore viene specificato dalla proprietà del \_ formato dell'oggetto WPD \_ .
+Il formato di un file in un dispositivo può essere descritto da un valore GUID. Questo valore viene specificato dalla proprietà WPD \_ OBJECT \_ FORMAT.
 
-## <a name="vendor-extended-formats"></a>Formati estesi fornitore
+## <a name="vendor-extended-formats"></a>Formati estesi del fornitore
 
-Quando un produttore di dispositivi supporta un formato esteso dal fornitore, il driver combina il codice del formato del fornitore (UINT16) con i 16 bit più alti del GUID del **formato dell'oggetto WPD non \_ \_ \_ specificato** .
+Quando un produttore di dispositivi supporta un formato esteso del fornitore, il driver combina il codice di formato del fornitore (UINT16) con i 16 bit più alti del GUID NON SPECIFICATO **WPD \_ OBJECT \_ FORMAT. \_**
 
-Se, ad esempio, il codice esteso del fornitore è 0xB001, il GUID risultante sarà come illustrato nell'esempio seguente:
+Ad esempio, se il codice esteso del fornitore è 0xB001, il GUID risultante sarà come illustrato nell'esempio seguente:
 
 
 ```C++

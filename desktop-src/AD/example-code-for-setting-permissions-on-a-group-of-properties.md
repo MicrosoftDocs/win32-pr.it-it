@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per l'impostazione delle autorizzazioni per un gruppo di proprietà
-description: Gli esempi di codice C e C++ seguenti creano una voce ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà di informazioni personali degli oggetti utente al trustee specificato.
+description: Negli esempi di codice C e C++ seguenti viene creata una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà Informazioni personali degli oggetti utente al fiduciare specificato.
 ms.assetid: 46d53b41-02eb-4830-b625-2d9ffa21a312
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, impostazione delle autorizzazioni per un gruppo di proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb45e75aaab9399fc2962b95397380f4bb4eeb3
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 220a9f306a4691aed53ec5c769405ae5db9f9c53fcb192cc383fbf9e8235def4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103956328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190099"
 ---
 # <a name="example-code-for-setting-permissions-on-a-group-of-properties"></a>Codice di esempio per l'impostazione delle autorizzazioni per un gruppo di proprietà
 
-Gli esempi di codice C e C++ seguenti creano una voce ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà di [**informazioni personali**](/windows/desktop/ADSchema/r-personal-information) degli oggetti utente al trustee specificato.
+Negli esempi di codice C e C++ seguenti viene creata una ACE che assegna l'accesso in lettura e scrittura agli attributi del set di proprietà [**Informazioni**](/windows/desktop/ADSchema/r-personal-information) personali degli oggetti utente al fiduciare specificato.
 
 
 ```C++
@@ -132,6 +132,6 @@ HRESULT CreateAceChangePersonalInfoPropGroupOfUsers(LPWSTR pwszTrustee,
 
 
 
- 
+ 
 
- 
+ 

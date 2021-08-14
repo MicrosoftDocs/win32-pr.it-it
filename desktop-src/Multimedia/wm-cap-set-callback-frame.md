@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_CALLBACK_FRAME (VFW. h)
-description: Il \_ messaggio WM Cap \_ set \_ callback \_ frame imposta una funzione di callback di anteprima nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i frame di anteprima. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capSetCallbackOnFrame.
+title: WM_CAP_SET_CALLBACK_FRAME messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP SET CALLBACK FRAME imposta una funzione di callback di anteprima \_ \_ \_ nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i fotogrammi di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro capSetCallbackOnFrame.
 ms.assetid: 3882e6f6-c48c-4e50-9697-cbdf5b9342a5
 keywords:
-- WM_CAP_SET_CALLBACK_FRAME messaggi multimediali di Windows
+- WM_CAP_SET_CALLBACK_FRAME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b91c2f30ac0875e2f45592d3aa7e0a3ce9c296b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f85321483639135db31750cacf76cc5f0dc4ad42e96474efa1dc17ac84ba4a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369509"
 ---
-# <a name="wm_cap_set_callback_frame-message"></a>Messaggio del frame di callback di WM \_ Cap \_ set \_ \_
+# <a name="wm_cap_set_callback_frame-message"></a>Messaggio \_ WM CAP SET CALLBACK \_ \_ \_ FRAME
 
-Il messaggio **WM \_ Cap \_ set \_ callback \_ frame** imposta una funzione di callback di anteprima nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i frame di anteprima. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capSetCallbackOnFrame**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe) .
+Il **messaggio WM CAP SET CALLBACK \_ \_ \_ \_ FRAME** imposta una funzione di callback di anteprima nell'applicazione. AVICap chiama questa procedura quando la finestra di acquisizione acquisisce i fotogrammi di anteprima. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntatore alla funzione di callback di anteprima, di tipo [**capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Specificare **null** per questo parametro per disabilitare una funzione di callback installata in precedenza.
+Puntatore alla funzione di callback di anteprima di [**tipo capVideoStreamCallback**](/windows/desktop/api/Vfw/nc-vfw-capvideocallback). Specificare **NULL per** questo parametro per disabilitare una funzione di callback installata in precedenza.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito **positivo o negativo** se è in corso l'acquisizione di flussi o una sessione di acquisizione a singolo frame.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se è in corso un'acquisizione di streaming o una sessione di acquisizione a frame singolo.
 
 ## <a name="remarks"></a>Commenti
 
-La finestra di acquisizione chiama la funzione di callback prima di visualizzare i frame di anteprima. Questo consente a un'applicazione di modificare il frame se lo si desidera. Questa funzione di callback non viene usata durante l'acquisizione video di streaming.
+La finestra di acquisizione chiama la funzione di callback prima di visualizzare i frame di anteprima. Ciò consente a un'applicazione di modificare il frame, se necessario. Questa funzione di callback non viene usata durante l'acquisizione di video in streaming.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ La finestra di acquisizione chiama la funzione di callback prima di visualizzare
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

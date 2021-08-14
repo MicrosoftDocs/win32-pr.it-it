@@ -1,5 +1,5 @@
 ---
-description: Recupera le informazioni per le applicazioni importate.
+description: Recupera informazioni per le applicazioni importate.
 ms.assetid: 9ed4bc3f-3490-4c36-ba94-bc803886a4d2
 title: Raccolta FilesForImport
 ms.topic: reference
@@ -12,29 +12,29 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8e7ba3b0bd44cf2f6bb40ecf89f86dd68c21cf3c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3b6351edd58691db3a499a6c0512e76fe87167f888289b8a2d2a947fe1304cf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118307328"
 ---
 # <a name="filesforimport-collection"></a>Raccolta FilesForImport
 
-Recupera le informazioni per le applicazioni importate.
+Recupera informazioni per le applicazioni importate.
 
-Questa raccolta supporta i metodi [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Questa raccolta supporta i [**metodi Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**e Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) dell'oggetto [**COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membri
 
-La raccolta **FilesForImport** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
+La **raccolta FilesForImport** eredita dall'interfaccia [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ma non dispone di membri aggiuntivi.
 
 ## <a name="related-collections"></a>Raccolte correlate
 
 È possibile passare da questa raccolta a una delle raccolte seguenti:
 
--   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Errorinfo**](errorinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 È possibile passare a questa raccolta dalle raccolte seguenti:
@@ -43,7 +43,7 @@ La raccolta **FilesForImport** eredita dall'interfaccia [**IUnknown**](/windows/
 
 ## <a name="properties"></a>Proprietà
 
-Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](comadmincatalogobject.md) all'interno della raccolta:
+Le proprietà seguenti sono supportate [**dall'oggetto COMAdminCatalogObject all'interno**](comadmincatalogobject.md) della raccolta:
 
 -   [ApplicationFileName](#applicationfilename)
 -   [ApplicationName](#applicationname)
@@ -53,7 +53,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 -   [IsProxy](#isproxy)
 -   [IsService](#isservice)
 -   [PartitionDescription](#partitiondescription)
--   [PartitionID](#partitionid)
+-   [Partitionid](#partitionid)
 -   [PartitionName](#partitionname)
 
 ### <a name="applicationfilename"></a>ApplicationFileName
@@ -65,7 +65,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 | Descrizione    | Nome del file MSI che contiene l'applicazione che può essere importata. |
 | Access         | ReadOnly                                                                     |
 | Type           | string                                                                       |
-| Predefinito        | N/D                                                                          |
+| Predefinito        | N/A                                                                          |
 | Sistema minimo | Windows XP                                                                   |
 
 
@@ -110,7 +110,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
 | Voce | Valore |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrizione    | Nome della DLL o del file EXE che contiene l'applicazione. Questa proprietà viene restituita quando il metodo della proprietà [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
+| Descrizione    | Nome della DLL o del file EXE che contiene l'applicazione. Questa proprietà viene restituita quando il [**metodo della**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) proprietà Key o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) viene chiamato su un oggetto di questa raccolta. |
 | Access         | ReadOnly                                                                                                                                                                                                                              |
 | Type           | string                                                                                                                                                                                                                                |
 | Predefinito        | ""                                                                                                                                                                                                                                    |
@@ -184,7 +184,7 @@ Le proprietà seguenti sono supportate dall'oggetto [**COMAdminCatalogObject**](
 
  
 
-### <a name="partitionid"></a>PartitionID
+### <a name="partitionid"></a>Partitionid
 
 
 

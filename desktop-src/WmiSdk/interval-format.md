@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Formato intervallo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e10e13d5febbce22648ec76961269ab18b1c028a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30db455b6b39349b3da2f8328b22597d8b9c16c47387ba7f6b15d81e62ceb134
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118318537"
 ---
 # <a name="interval-format"></a>Formato intervallo
 
@@ -22,23 +22,23 @@ Nell'esempio seguente viene illustrato il formato di un intervallo di data e ora
 ddddddddHHMMSS.mmmmmm:000
 ```
 
-Nella tabella seguente sono elencati i campi dell'intervallo di data/ora.
+Nella tabella seguente sono elencati i campi dell'intervallo di data e ora.
 
 
 
 | Campo    | Descrizione                                                                                                                                                                                                                                  |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| dddddddd | Otto cifre che rappresentano un numero di giorni (da 00000000 a 99999999).                                                                                                                                                                    |
-| HH       | Ora del giorno a due cifre che utilizza il formato a 24 ore (da 00 a 23).                                                                                                                                                                       |
+| ddddddddd | Otto cifre che rappresentano un numero di giorni (da 000000000 a 99999999).                                                                                                                                                                    |
+| HH       | Ora a due cifre del giorno che usa il formato a 24 ore (da 00 a 23).                                                                                                                                                                       |
 | MM       | Minuto a due cifre nell'ora (da 00 a 59).                                                                                                                                                                                                |
-| SS       | Numero di secondi di due cifre nel minuto (da 00 a 59).                                                                                                                                                                                   |
-| mmmmmm   | Numero di microsecondi a sei cifre nel secondo (da 000000 a 999999). L'implementazione non è necessaria per supportare la valutazione con questo campo, ma questo campo deve essere sempre presente per mantenere la natura a lunghezza fissa della stringa. |
+| SS       | Numero di secondi a due cifre nel minuto (da 00 a 59).                                                                                                                                                                                   |
+| mmmmmm   | Numero di microsecondi a sei cifre nel secondo (da 000000 a 999999). L'implementazione non è necessaria per supportare la valutazione tramite questo campo, ma questo campo deve essere sempre presente per mantenere la natura a lunghezza fissa della stringa. |
 
 
 
  
 
-Gli intervalli hanno sempre una ": 000" finale come gli ultimi quattro caratteri. A differenza di data e ora, inoltre, non è possibile utilizzare asterischi per indicare i campi inutilizzati. Inoltre, tutte le proprietà di tipo [CIM \_ DateTime](cim-datetime.md) che rappresentano gli intervalli devono essere contrassegnate con il qualificatore standard del [sottotipo](standard-wmi-qualifiers.md) , con il qualificatore impostato su "Interval".
+Gli intervalli hanno sempre un carattere ":000" finale come ultimi quattro caratteri. Inoltre, a differenza di data e ora, non è possibile usare asterischi per indicare i campi inutilizzati. Inoltre, tutte le proprietà di tipo [CIM \_ DATETIME](cim-datetime.md) che rappresentano gli intervalli devono essere contrassegnate con il qualificatore standard [SubType,](standard-wmi-qualifiers.md) con il qualificatore impostato su "interval".
 
 La stringa seguente rappresenta un intervallo di 1 giorno, 12 ore, 0 minuti e 32 secondi.
 
@@ -56,7 +56,7 @@ La stringa seguente rappresenta un intervallo di 1 giorno, 12 ore, 0 minuti e 32
 [Informazioni su WMI](about-wmi.md)
 </dt> <dt>
 
-[\_DateTime CIM](cim-datetime.md)
+[CIM \_ DATETIME](cim-datetime.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Ottiene il metodo chiamato al completamento dell'azione asincrona.
 ms.assetid: 5050BF84-F9E0-4B3E-9252-6C5C1060826E
-title: 'Metodo IAsyncAction:: get_Completed'
+title: Metodo IAsyncAction::get_Completed
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: bc018912b2b4643cc4ef2f48cc76eb997a2627fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90e26947f0771490334ee731b25576759943c44cc47a9fda6681da9aa1f11fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323442"
 ---
-# <a name="iasyncactionget_completed-method"></a>Metodo IAsyncAction:: Get \_ Completed
+# <a name="iasyncactionget_completed-method"></a>Metodo IAsyncAction::get \_ Completed
 
 Ottiene il metodo chiamato al completamento dell'azione asincrona.
 
@@ -39,10 +39,10 @@ HRESULT get_Completed(
 
 <dl> <dt>
 
-*gestore* \[ di out\]
+*gestore* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **asyncActionCompletedHandler**](asyncactioncompletedhandler.md)\*\***
+Tipo: **[ **AsyncActionCompletedHandler**](asyncactioncompletedhandler.md)\*\***
 
 Metodo che gestisce la notifica di completamento.
 
@@ -52,7 +52,7 @@ Metodo che gestisce la notifica di completamento.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8<br/>                                                                              |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                                    |
-| Intestazione<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 <dl> <dt>
 
-[**IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction)
+[**Iasyncaction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction)
 </dt> </dl>
 
  

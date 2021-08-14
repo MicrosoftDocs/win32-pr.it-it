@@ -3,7 +3,7 @@ title: Tipo semplice QNameList
 description: Definisce un elenco di nomi completi.
 ms.assetid: 727d87a0-82f5-44fa-a841-4c2445f78063
 keywords:
-- Log eventi di tipo semplice QNameList
+- EventLog di tipo semplice QNameList
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ffcb078c2fcddd9b1549ff095820ce19eb7d5a13
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e499af7080564d508dcc74cded115748fc231d65e6cbade35a68b6526c6711f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103739727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343549"
 ---
 # <a name="qnamelist-simple-type"></a>Tipo semplice QNameList
 
@@ -38,8 +38,8 @@ Definisce un elenco di nomi completi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

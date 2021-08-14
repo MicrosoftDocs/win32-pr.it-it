@@ -1,19 +1,19 @@
 ---
-description: Forma descrittiva di System. Photo. GainControl. Non concepito per essere analizzato a livello di codice.
+description: Formato descrittivo di System.Photo.GainControl. Non deve essere analizzato a livello di codice.
 ms.assetid: 18fd47dc-b428-4ada-aee5-e696e23c1f26
-title: System. Photo. GainControlText
+title: System.Photo.GainControlText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38edf2bc287bc4abc683f4c3f3abb0c21273e9ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a80f8443a8d78afb91efeb44834a9e6861eb3b0f13b6a2097185413cf5d7b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228725"
 ---
-# <a name="systemphotogaincontroltext"></a>System. Photo. GainControlText
+# <a name="systemphotogaincontroltext"></a>System.Photo.GainControlText
 
-Forma descrittiva di [System. Photo. GainControl](./props-system-photo-gaincontrol.md). Non concepito per essere analizzato a livello di codice.
+Formato descrittivo di [System.Photo.GainControl](./props-system-photo-gaincontrol.md). Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

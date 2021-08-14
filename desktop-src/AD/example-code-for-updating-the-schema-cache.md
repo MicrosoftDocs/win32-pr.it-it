@@ -1,24 +1,24 @@
 ---
-title: Codice di esempio per l'aggiornamento della cache degli schemi
-description: Le seguenti funzioni C/C++ ottengono il nome DNS del master schema (GetSchemaMasterDNSName) e aggiornano la cache dello schema nel master schema (UpdateSchemaMasterCache).
+title: Codice di esempio per l'aggiornamento della cache dello schema
+description: Le funzioni C/C++ seguenti ottengono il nome DNS del master dello schema (GetSchemaMasterDNSName) e aggiornano la cache dello schema nel master schema (UpdateSchemaMasterCache).
 ms.assetid: e955588d-a92c-4406-a197-bb8c36329f88
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'aggiornamento della cache degli schemi AD
+- Codice di esempio per l'aggiornamento di Active Directory della cache dello schema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c9ebbf721bc8d3e960b02de14ac7f9179bf5787
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 267c0090a04e6831b395f566762c2d80526cfd754d367acda235f257eaf76195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189792"
 ---
-# <a name="example-code-for-updating-the-schema-cache"></a>Codice di esempio per l'aggiornamento della cache degli schemi
+# <a name="example-code-for-updating-the-schema-cache"></a>Codice di esempio per l'aggiornamento della cache dello schema
 
-Le seguenti funzioni C/C++ ottengono il nome DNS del master schema (GetSchemaMasterDNSName) e aggiornano la cache dello schema nel master schema (UpdateSchemaMasterCache). Per utilizzare queste funzioni, chiamare GetSchemaMasterDNSName per ottenere il nome DNS master dello schema, passare il nome DNS del master schema a UpdateSchemaMasterCache, chiamare CoTaskMemFree sulla stringa che contiene il nome DNS del master schema.
+Le funzioni C/C++ seguenti ottengono il nome DNS del master dello schema (GetSchemaMasterDNSName) e aggiornano la cache dello schema nel master schema (UpdateSchemaMasterCache). Per usare queste funzioni, chiamare GetSchemaMasterDNSName per ottenere il nome DNS master dello schema, passare il nome DNS master dello schema a UpdateSchemaMasterCache, chiamare CoTaskMemFree sulla stringa contenente il nome DNS master dello schema.
 
-Per ulteriori informazioni, vedere [aggiornamento della cache dello schema](updating-the-schema-cache.md).
+Per altre informazioni, vedere [Aggiornamento della cache dello schema](updating-the-schema-cache.md).
 
 
 ```C++
@@ -165,9 +165,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Tipo complesso InputTypeListType
 description: Definisce un elenco di tipi di input.
 ms.assetid: e6bba894-7c17-411e-92e5-9276728a5e4b
 keywords:
-- Log eventi di tipo complesso InputTypeListType
+- EventLog di tipo complesso InputTypeListType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e68b4077bfb08b69a31f18d81aa55d0b5ac54f78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 156ee19a90cdbb64e742d9876a39741155a3d5172f8da05f38f666cc077fc47c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118343742"
 ---
 # <a name="inputtypelisttype-complex-type"></a>Tipo complesso InputTypeListType
 
@@ -51,8 +51,8 @@ Definisce un elenco di tipi di input.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

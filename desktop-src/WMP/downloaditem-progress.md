@@ -1,9 +1,9 @@
 ---
-title: DownloadItem. Progress
-description: Si noti che questa sezione descrive la funzionalità progettata per l'uso da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato. La proprietà Progress recupera lo stato di avanzamento del download in byte.
+title: DownloadItem.progress
+description: Nota Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato. La proprietà progress recupera lo stato di avanzamento del download in byte.
 ms.assetid: 58644eac-8dd0-4e9d-8055-03833c863a6e
 keywords:
-- Media Player di Windows DownloadItem. Progress
+- DownloadItem.progress Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9a1967c1eb3dc72c00b8b10b70da5d797343e5f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9bf88e57ce044381ca20685e68009e2ea7aa48463734fc10c1f2128768a36f49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340731"
 ---
-# <a name="downloaditemprogress"></a>DownloadItem. Progress
+# <a name="downloaditemprogress"></a>DownloadItem.progress
 
 > [!Note]  
-> In questa sezione viene descritta la funzionalità progettata per l'utilizzo da parte degli archivi online. L'uso di questa funzionalità al di fuori del contesto di un archivio online non è supportato.
+> Questa sezione descrive le funzionalità progettate per l'uso da parte dei negozi online. L'uso di questa funzionalità al di fuori del contesto di uno store online non è supportato.
 
  
 
-La proprietà **Progress** recupera lo stato di avanzamento del download in byte.
+La **proprietà** progress recupera lo stato di avanzamento del download in byte.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,7 +51,7 @@ Questa proprietà è un **numero** di sola lettura (**Long**).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/>                                  |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ Questa proprietà è un **numero** di sola lettura (**Long**).
 [**Oggetto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. size**](downloaditem-size.md)
+[**DownloadItem.size**](downloaditem-size.md)
 </dt> </dl>
 
  

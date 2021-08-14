@@ -1,7 +1,7 @@
 ---
 description: Enumera nuovamente tutti i profili di analisi nel sistema.
 ms.assetid: f5e49645-e81a-4750-8ea5-f0c698a61752
-title: 'Metodo IScanProfileMgr:: Refresh (Scanprofilemgr. h)'
+title: Metodo IScanProfileMgr::Refresh (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: e4af44e95889abf35fe13e1669411513458a16c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb343d310be3aa352c4777275c231f6264d6d25fe5ad88cde559995da915aa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208944"
 ---
-# <a name="iscanprofilemgrrefresh-method"></a>Metodo IScanProfileMgr:: Refresh
+# <a name="iscanprofilemgrrefresh-method"></a>Metodo IScanProfileMgr::Refresh
 
 Enumera nuovamente tutti i profili di analisi nel sistema.
 
@@ -41,11 +41,11 @@ Questo metodo non presenta parametri.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo quando è possibile che più di un oggetto [**IScanProfileMgr**](-wia-iscanprofilemgr.md) crei o elimini profili nello stesso momento.
+Usare questo metodo quando più oggetti [**IScanProfileMgr**](-wia-iscanprofilemgr.md) potrebbero creare o eliminare profili contemporaneamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,10 +53,10 @@ Utilizzare questo metodo quando è possibile che più di un oggetto [**IScanProf
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                        |
+| Intestazione<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

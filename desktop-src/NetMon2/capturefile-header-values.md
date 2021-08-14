@@ -1,7 +1,7 @@
 ---
-description: Definisce la struttura del file di intestazione Network Monitor.
+description: Definisce la struttura Network Monitor file di intestazione.
 ms.assetid: 944980c9-ebaa-4042-a112-d32b7a28ba21
-title: Struttura CAPTUREFILE_HEADER_VALUES (Netmon. h)
+title: CAPTUREFILE_HEADER_VALUES struttura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 2597b3f83a65dafd2da0198aade5243acc1184fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29ee0ab0a9a927b3860760877457735198465b7c28789a542c040fc9e9e788a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118367417"
 ---
-# <a name="capturefile_header_values-structure"></a>\_ \_ Struttura dei valori dell'intestazione CAPTUREFILE
+# <a name="capturefile_header_values-structure"></a>Struttura CAPTUREFILE \_ HEADER \_ VALUES
 
-La struttura dei **\_ \_ valori dell'intestazione CAPTUREFILE** definisce la struttura del file di intestazione Network Monitor.
+La **struttura CAPTUREFILE \_ HEADER \_ VALUES** definisce la Network Monitor del file di intestazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,21 +58,21 @@ typedef struct _CAPTUREFILE_HEADER_VALUES {
 **Firma**
 </dt> <dd>
 
-Identificatore univoco:' GMBU.
+Identificatore univoco: 'GMBU.
 
 </dd> <dt>
 
 **BCDVerMinor**
 </dt> <dd>
 
-Binario, decimale codificato (minore). Il valore di questo membro deve essere zero (0).
+Decimale binario codificato (secondario). Il valore di questo membro deve essere zero (0).
 
 </dd> <dt>
 
 **BCDVerMajor**
 </dt> <dd>
 
-Decimal codificato binario (principale). Questo valore deve essere 2.
+Decimale codificato binario (principale). Questo valore deve essere 2.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Tipo di topologia.
 
 </dd> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd>
 
 Ora di acquisizione.
@@ -93,21 +93,21 @@ Ora di acquisizione.
 **FrameTableOffset**
 </dt> <dd>
 
-Tabella dell'indice del frame.
+Tabella dell'indice dei frame.
 
 </dd> <dt>
 
 **FrameTableLength**
 </dt> <dd>
 
-Dimensioni tabella indice frame.
+Dimensioni della tabella dell'indice dei frame.
 
 </dd> <dt>
 
 **UserDataOffset**
 </dt> <dd>
 
-Offset dati utente.
+Offset dei dati utente.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Lunghezza dei dati utente.
 **CommentDataOffset**
 </dt> <dd>
 
-Offset dei dati di commento.
+Offset dei dati del commento.
 
 </dd> <dt>
 
@@ -135,42 +135,42 @@ Lunghezza dei dati di commento.
 **StatisticsOffset**
 </dt> <dd>
 
-Offset alla struttura delle **statistiche** .
+Offset della **struttura STATISTICS.**
 
 </dd> <dt>
 
 **StatisticsLength**
 </dt> <dd>
 
-Lunghezza della struttura delle **statistiche** .
+Lunghezza della **struttura STATISTICS.**
 
 </dd> <dt>
 
 **NetworkInfoOffset**
 </dt> <dd>
 
-Offset alla struttura **NETWORKINFO** .
+Offset della **struttura NETWORKINFO.**
 
 </dd> <dt>
 
 **NetworkInfoLength**
 </dt> <dd>
 
-Lunghezza della struttura **NETWORKINFO** .
+Lunghezza della **struttura NETWORKINFO.**
 
 </dd> <dt>
 
 **ConversationStatsOffset**
 </dt> <dd>
 
-Questo membro non viene utilizzato.
+Questo membro non viene usato.
 
 </dd> <dt>
 
 **ConversationStatsLength**
 </dt> <dd>
 
-Questo membro non viene utilizzato.
+Questo membro non viene usato.
 
 </dd> </dl>
 
@@ -182,7 +182,7 @@ Questo membro non viene utilizzato.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Esempi di livelli di canale named pipe
+title: Esempi di livello canale named pipe
 ms.assetid: 6222BEA5-C746-4301-8186-110669A0BFDC
-description: 'Altre informazioni su: esempi di livelli di canale named pipe'
+description: 'Altre informazioni: Esempi di livello canale named pipe'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d42ea839c9f667e1fea0b7006399c5d5c6823373
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d705b5b40b7afd9d984c9195c3a1a279ad8193ac19018101614cb18c77ba4242
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192907"
 ---
-# <a name="named-pipes-channel-layer-examples"></a>Esempi di livelli di canale named pipe
+# <a name="named-pipes-channel-layer-examples"></a>Esempi di livello canale named pipe
 
-Negli esempi seguenti viene illustrato l'utilizzo di named pipe con il [livello del canale](channel-layer-overview.md):
+Gli esempi seguenti illustrano l'uso di named pipe con [il livello channel](channel-layer-overview.md):
 
-Esempio di named pipe che invia messaggi usando un modello Request/Reply: client: [RequestReplyNamedPipesClientExample](requestreplynamedpipesclientexample.md), server: [RequestReplyNamedPipesServerExample](requestreplynamedpipesserverexample.md)
+Esempio di named pipe che invia messaggi usando un modello request-reply: Client: [RequestReplyNamedPipesClientExample](requestreplynamedpipesclientexample.md), Server: [RequestReplyNamedPipesServerExample](requestreplynamedpipesserverexample.md)
 
-Esempio di streaming Named Pipes: client: [StreamingNamedPipesClientExample](streamingnamedpipesclientexample.md), server: [StreamingNamedPipesServerExample](streamingnamedpipesserverexample.md)
+Esempio di named pipe di streaming: Client: [StreamingNamedPipesClientExample](streamingnamedpipesclientexample.md), Server: [StreamingNamedPipesServerExample](streamingnamedpipesserverexample.md)
 
  
 
