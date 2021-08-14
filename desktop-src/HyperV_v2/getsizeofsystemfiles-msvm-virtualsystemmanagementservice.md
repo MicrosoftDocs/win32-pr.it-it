@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ed9fcf93093e17c2989121bf33ee5f5fbf09bab0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 385235e407cac2dd67f3dade99e4d1c834d082dfe59b541020a4548e8eea383c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392904"
 ---
-# <a name="getsizeofsystemfiles-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetSizeOfSystemFiles della classe MSVM \_ VirtualSystemManagementService
+# <a name="getsizeofsystemfiles-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Metodo GetSizeOfSystemFiles della classe Msvm \_ VirtualSystemManagementService
 
-Recupera le dimensioni totali dei file di sistema della macchina virtuale. Sono inclusi i file di configurazione e di stato salvato.
+Recupera le dimensioni totali dei file di sistema della macchina virtuale. tra cui la configurazione e i file di stato salvati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,14 +40,14 @@ uint32 GetSizeOfSystemFiles(
 
 <dl> <dt>
 
-*VSSD* \[ in\]
+*Vssd* \[ Pollici\]
 </dt> <dd>
 
-Riferimento all'istanza [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) di cui devono essere recuperate le dimensioni dei file di sistema. Questa istanza può rappresentare l'istanza corrente della macchina virtuale o un'istanza di uno snapshot della macchina virtuale.
+Riferimento [**all'istanza CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) di cui recuperare le dimensioni dei file di sistema. Questa istanza può rappresentare la creazione corrente di un'istanza della macchina virtuale o un'istanza di uno snapshot della macchina virtuale.
 
 </dd> <dt>
 
-*Dimensioni* \[ out\]
+*Dimensioni* \[ Cambio\]
 </dt> <dd>
 
 Dimensioni totali, in byte, dei file di sistema.
@@ -63,10 +63,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo controllati-processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -75,25 +75,25 @@ Questo metodo restituisce uno dei valori seguenti.
 **Non supportato** (32770)
 </dt> <dt>
 
-**Stato sconosciuto** (32771)
+**Lo stato è sconosciuto** (32771)
 </dt> <dt>
 
 **Timeout** (32772)
 </dt> <dt>
 
-**Parametro non valido** (32773)
+**Parametro non** valido (32773)
 </dt> <dt>
 
-Il **sistema è in uso** (32774)
+**Sistema in uso** (32774)
 </dt> <dt>
 
-**Stato non valido per l'operazione** (32775)
+**Stato non valido per questa operazione** (32775)
 </dt> <dt>
 
-**Tipo di dati non corretto** (32776)
+**Tipo di dati non** corretto (32776)
 </dt> <dt>
 
-**Sistema non disponibile** (32777)
+**Il sistema non è disponibile** (32777)
 </dt> <dt>
 
 **Memoria insufficiente** (32778)
@@ -105,10 +105,10 @@ Il **sistema è in uso** (32774)
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ Il **sistema è in uso** (32774)
 
 <dl> <dt>
 
-[**\_VirtualSystemManagementService MSVM**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

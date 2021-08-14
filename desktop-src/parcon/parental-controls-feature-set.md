@@ -1,25 +1,25 @@
 ---
-description: Set di funzionalità dei controlli padre
+description: Set di funzionalità di Controllo genitori
 ms.assetid: 25b9d906-6e26-488c-9d5b-a0c27d6cfe76
-title: Set di funzionalità dei controlli padre
+title: Set di funzionalità di Controllo genitori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc5f43a2e393356dca760f2df70de415b430aeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89544e39ee3a2d4c2c894739ca7ddaf525ed0b8a93c634bcc85153afa1c41dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869286"
 ---
-# <a name="parental-controls-feature-set"></a>Set di funzionalità dei controlli padre
+# <a name="parental-controls-feature-set"></a>Set di funzionalità di Controllo genitori
 
-Le informazioni sul set di funzionalità nei controlli padre sono organizzate nel modo seguente:
+Le informazioni sul set di funzionalità in Controllo genitori sono organizzate come segue:
 
--   [Controlli padre Top-Level interfaccia utente](parental-controls-top-level-user-interface.md)
--   [Segnalazione attività dei controlli padre](parental-controls-activity-reporting.md)
--   [Controlli padre In-Box restrizioni e interfacce utente](parental-controls-in-box-restrictions-and-user-interfaces.md)
--   [Cenni preliminari sull'API dei controlli padre](parental-controls-api-overview.md)
--   [Cenni preliminari sulle funzionalità di estensibilità dei controlli padre](parental-controls-extensibility-features-overview.md)
+-   [Controllo genitori Top-Level Interfaccia utente](parental-controls-top-level-user-interface.md)
+-   [Controllo genitori Rapporto attività](parental-controls-activity-reporting.md)
+-   [Controllo genitori In-Box restrizioni e interfacce utente](parental-controls-in-box-restrictions-and-user-interfaces.md)
+-   [Panoramica dell'API Controllo genitori](parental-controls-api-overview.md)
+-   [Cenni preliminari sulle funzionalità di estendibilità di Controllo genitori](parental-controls-extensibility-features-overview.md)
 
  
 

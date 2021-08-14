@@ -1,19 +1,19 @@
 ---
-description: Dopo l'istruzione SELECT, si utilizza la clausola FROM per specificare dove cercare i documenti corrispondenti.
+description: Dopo l'istruzione SELECT, si usa la clausola FROM per specificare dove cercare i documenti corrispondenti.
 ms.assetid: 437d36d1-dd6d-4405-8f35-c37fd04fa0f6
 title: Clausola FROM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37100a614ca7cc08cdf510f27e42b045acc1ec23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e6231244df2a2ec8753950ccb1a7d046c3510eff6582215d0aa3d71ebc127e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863397"
 ---
 # <a name="from-clause"></a>Clausola FROM
 
-Dopo l'istruzione SELECT, si utilizza la clausola FROM per specificare dove cercare i documenti corrispondenti. Di seguito è riportata la sintassi della clausola FROM per una query locale:
+Dopo l'istruzione SELECT, si usa la clausola FROM per specificare dove cercare i documenti corrispondenti. Di seguito è riportata la sintassi della clausola FROM per una query locale:
 
 
 ```
@@ -22,9 +22,9 @@ FROM [<ComputerName>.]SystemIndex
 
 
 
-Attualmente, Windows Search supporta solo un catalogo, SystemIndex. Per eseguire una query sul catalogo locale di un computer remoto, includere il nome del computer prima del catalogo e un percorso di Universal Naming Convention (UNC) nel computer remoto nella clausola SCOPE o DIRECTORY.
+Attualmente, Windows ricerca supporta un solo catalogo, SystemIndex. Per eseguire una query sul catalogo locale di un computer remoto, includere il nome del computer prima del catalogo e un percorso Universal Naming Convention (UNC) nel computer remoto nella clausola SCOPE o DIRECTORY.
 
-Un ambito viene specificato come restrizione nella clausola WHERE, come descritto nell'argomento [ambito e predicati di directory](-search-sql-folderdepth.md) .
+Specificare un ambito come restrizione nella clausola WHERE, come descritto [nell'argomento Predicati SCOPE e DIRECTORY.](-search-sql-folderdepth.md)
 
 ## <a name="examples"></a>Esempio
 
@@ -42,7 +42,7 @@ FROM server.SystemIndex WHERE SCOPE='file://server/users' AND CONTAINS('Microsof
 
 
 
-Nel secondo degli esempi precedenti, la query è destinata a un computer remoto denominato "zarascomputer". Si noti che questo nome computer viene visualizzato sia nelle clausole FROM che nell'ambito. Nel terzo esempio, la query è destinata a un nome di condivisione "Users" in un server denominato "Server" (dove il percorso UNC sarà \\ \\ utenti del server \\ ).
+Nel secondo degli esempi precedenti la query è destinata a un computer remoto denominato "zarascomputer". Si noti che il nome del computer viene visualizzato nelle clausole FROM e SCOPE. Nel terzo esempio, la query è destinata a un nome di condivisione "users" in un server denominato "server" (dove il percorso UNC sarebbe utenti \\ \\ del \\ server).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -51,16 +51,16 @@ Nel secondo degli esempi precedenti, la query è destinata a un computer remoto 
 **Riferimento**
 </dt> <dt>
 
-[Panoramica della sintassi SQL di ricerca](-search-sql-ovwofsearchquery.md)
+[Panoramica della sintassi SQL ricerca](-search-sql-ovwofsearchquery.md)
 </dt> <dt>
 
-[SELECT (istruzione)](-search-sql-select.md)
+[Istruzione SELECT](-search-sql-select.md)
 </dt> <dt>
 
 [Clausola WHERE](-search-sql-where.md)
 </dt> <dt>
 
-[Predicati di ambito e DIRECTORY](-search-sql-folderdepth.md)
+[Predicati SCOPE e DIRECTORY](-search-sql-folderdepth.md)
 </dt> </dl>
 
  

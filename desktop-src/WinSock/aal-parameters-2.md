@@ -4,12 +4,12 @@ ms.assetid: 0afc6713-2e91-4914-8039-1ecaed104826
 title: Parametri AAL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66658a3705efb9c5a9ea16027808de330cff6dd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecf6077c787493afc8282b9b19f0f6aaef79bd4f7a3713b06e9693d02b95e7da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322706"
 ---
 # <a name="aal-parameters"></a>Parametri AAL
 

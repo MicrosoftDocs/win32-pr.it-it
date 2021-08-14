@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPDETECTION_STATE (MpClient. h)
+title: MPDETECTION_STATE enumerazione (MpClient.h)
 description: Stato della minaccia attualmente rilevata.
 ms.assetid: 293771FF-A210-41D0-88A5-3B52ACAA9295
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPDETECTION_STATE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPDETECTION_STATE
+- MPDETECTION_STATE funzionalità dell'ambiente Windows legacy
+- PMPDETECTION_STATE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9265a15641d2072d87b33af2782f17974bf07be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0443e0c47eef4d4943d39bd671c28c19db0ff5e1fbe79e5af8d034603b1ab78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883518"
 ---
-# <a name="mpdetection_state-enumeration"></a>\_Enumerazione dello stato MPDETECTION
+# <a name="mpdetection_state-enumeration"></a>Enumerazione MPDETECTION \_ STATE
 
 Stato della minaccia attualmente rilevata.
 
@@ -47,52 +47,52 @@ typedef enum tagMPDETECTION_STATE {
 
 <dl> <dt>
 
-<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**stato di MPDETECTION \_ \_ sconosciuto**
+<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**STATO MPDETECTION \_ \_ SCONOSCIUTO**
 </dt> <dd>
 
 In uno stato di errore.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**\_stato MPDETECTION \_ attivo**
+<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**MPDETECTION \_ STATE \_ ACTIVE**
 </dt> <dd>
 
 Minaccia attiva.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**\_stato MPDETECTION \_ terminato**
+<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**MPDETECTION \_ STATE \_ FINISHED**
 </dt> <dd>
 
-In sospeso 24 ore su uno spostamento da cancellare.
+In attesa di 24 ore per lo spostamento a cancellato.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**\_azioni aggiuntive sullo stato MPDETECTION \_ \_**
+<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**AZIONI AGGIUNTIVE SULLO \_ STATO \_ MPDETECTION \_**
 </dt> <dd>
 
 Sono necessarie azioni aggiuntive.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**\_stato MPDETECTION \_ non riuscito**
+<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**MPDETECTION \_ STATE \_ FAILED**
 </dt> <dd>
 
 Errore di correzione non critico.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**stato di MPDETECTION \_ \_ \_ non riuscito**
+<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**MPDETECTION \_ STATE \_ CRITICALLY \_ FAILED**
 </dt> <dd>
 
-Errore critico di correzione.
+Errore di correzione critico.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**\_stato MPDETECTION \_ cancellato**
+<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**STATO MPDETECTION \_ \_ DESELEZIONATO**
 </dt> <dd>
 
-La minaccia non viene visualizzata nella query di stato, ma solo nella cronologia.
+La minaccia non viene mostrata nella query di stato, ma solo nella cronologia.
 
 </dd> </dl>
 
@@ -102,9 +102,9 @@ La minaccia non viene visualizzata nella query di stato, ma solo nella cronologi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

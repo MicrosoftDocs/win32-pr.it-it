@@ -1,21 +1,21 @@
 ---
-description: Negli esempi seguenti viene usata la funzione SetStringInBlob per creare voci di BLOB speciali.
+description: Negli esempi seguenti viene utilizzata la funzione SetStringInBlob per creare voci BLOB speciali.
 ms.assetid: 4a921b0d-9934-48e2-8837-be0bd7b7fa7a
 title: Voci BLOB speciali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfc40029e0a0f88c2f7bd242881b0d750a5dfa1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0659fa05219dcc715c6c00b3d28635e2500f73e4e5bece72049ee43839a0820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363139"
 ---
 # <a name="special-blob-entries"></a>Voci BLOB speciali
 
-Negli esempi seguenti viene usata la funzione [**SetStringInBlob**](setstringinblob.md) per creare voci di BLOB speciali.
+Negli esempi seguenti viene utilizzata [**la funzione SetStringInBlob**](setstringinblob.md) per creare voci BLOB speciali.
 
-## <a name="npp-name"></a>Nome della NPP
+## <a name="npp-name"></a>Nome NPP
 
 ``` syntax
 SetStringInBlob(
@@ -37,7 +37,7 @@ SetClassIDInBlob(
    &CLSID_ThisNPP);
 ```
 
-## <a name="cfgproc-procedure-name"></a>Nome della procedura CFGPROC
+## <a name="cfgproc-procedure-name"></a>Nome procedura CFGPROC
 
 ``` syntax
 SetStringInBlob(
@@ -48,7 +48,7 @@ SetStringInBlob(
    "MyGetNPPBlobs");
 ```
 
-## <a name="tree-root-name-for-finder-ui"></a>Nome radice dell'albero per l'interfaccia utente di Finder
+## <a name="tree-root-name-for-finder-ui"></a>Nome radice albero per l'interfaccia utente di Finder
 
 ``` syntax
 SetStringInBlob(
@@ -72,7 +72,7 @@ SetStringInBlob(
 
 ## <a name="interface-tags"></a>Tag di interfaccia
 
-Questo esempio include tutte le interfacce supportate dall'oggetto NPP.
+Questo esempio include tutte le interfacce supportate da NPP.
 
 ``` syntax
 SetBoolInBlob(  

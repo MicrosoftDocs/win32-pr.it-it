@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_SET_SCALE (VFW. h)
-description: Il \_ \_ \_ messaggio di scalabilità set di WM consente di abilitare o disabilitare il ridimensionamento delle immagini video di anteprima.
+title: WM_CAP_SET_SCALE messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP SET SCALE abilita o disabilita il \_ \_ ridimensionamento delle immagini video di anteprima.
 ms.assetid: f15f1d18-2c5a-40c1-baa1-0d18549bee23
 keywords:
-- WM_CAP_SET_SCALE messaggi multimediali di Windows
+- WM_CAP_SET_SCALE messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd3bfc5dc463d84c935f994519060c33f89b8c0a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3293be6917917581957df0f5dae9456274f1d2cc3eeffff5ea971c3596209a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369395"
 ---
-# <a name="wm_cap_set_scale-message"></a>\_Messaggio di \_ \_ scalabilità set di WM Cap
+# <a name="wm_cap_set_scale-message"></a>Messaggio WM \_ CAP \_ SET \_ SCALE
 
-Il messaggio di **\_ \_ \_ scalabilità set di WM** consente di abilitare o disabilitare il ridimensionamento delle immagini video di anteprima. Se il ridimensionamento è abilitato, il fotogramma video acquisito viene allungato alle dimensioni della finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capPreviewScale**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale) .
+Il **messaggio WM CAP SET \_ \_ \_ SCALE** abilita o disabilita il ridimensionamento delle immagini video di anteprima. Se il ridimensionamento è abilitato, il fotogramma video acquisito viene adattato alle dimensioni della finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capPreviewScale.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewscale)
 
 
 ```C++
@@ -38,22 +38,22 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="f"></span><span id="F"></span>*f*
+<span id="f"></span><span id="F"></span>*F*
 </dt> <dd>
 
-Flag di ridimensionamento anteprima. Specificare **true** per questo parametro per estendere i frame di anteprima alla dimensione della finestra di acquisizione o **false** per visualizzarli alla dimensione naturale.
+Flag di ridimensionamento di anteprima. Specificare **TRUE** per questo parametro per adattare i fotogrammi di anteprima alle dimensioni della finestra di acquisizione o **FALSE** per visualizzarli alle dimensioni naturali.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione è riuscita o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo o FALSE **in** caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Il ridimensionamento delle immagini di anteprima controlla la presentazione immediata dei frame acquisiti all'interno della finestra di acquisizione. Non ha alcun effetto sulle dimensioni dei frame salvati in un file.
+Il ridimensionamento delle immagini di anteprima controlla la presentazione immediata dei fotogrammi acquisiti all'interno della finestra di acquisizione. Non ha alcun effetto sulle dimensioni dei frame salvati nel file.
 
-La scalabilità non ha alcun effetto quando si usa la sovrimpressione per visualizzare il video nel buffer del frame.
+Il ridimensionamento non ha alcun effetto quando si usa la sovrimpressione per visualizzare i video nel buffer dei fotogrammi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ La scalabilità non ha alcun effetto quando si usa la sovrimpressione per visual
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-AZ-Domain-timeout
-description: Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e prima che il controller di dominio venga ritentato.
+title: Attributo ms-DS-Az-Domain-Timeout
+description: Tempo, in millisecondi, dopo che un dominio è stato rilevato non raggiungibile e prima che il controller di dominio venga riprovato.
 ms.assetid: b2523faa-7cf1-4325-a3fa-70c5f568adaa
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-AZ-Domain-timeout
-- attributo msDS-AzDomainTimeout-schema AD
+- Schema AD dell'attributo ms-DS-Az-Domain-Timeout
+- Schema AD dell'attributo msDS-AzDomainTimeout
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dce6f457977de1124438fa4b54e4a84d1cb6d54e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3019f0942a536c34b654737e645f17c1387e1bfb203b6110d3289683f505e34e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426734"
 ---
-# <a name="ms-ds-az-domain-timeout-attribute"></a>attributo ms-DS-AZ-Domain-timeout
+# <a name="ms-ds-az-domain-timeout-attribute"></a>Attributo ms-DS-Az-Domain-Timeout
 
-Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e prima che il controller di dominio venga ritentato.
+Tempo, in millisecondi, dopo che un dominio è stato rilevato non raggiungibile e prima che il controller di dominio venga riprovato.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-AZ-Domain-timeout                 |
-| LDAP-Display-Name | msDS-AzDomainTimeout                    |
+| CN                | ms-DS-Az-Domain-Timeout                 |
+| Ldap-Display-Name | msDS-AzDomainTimeout                    |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Amministratore di AzRoles                           |
+| Privilegio di aggiornamento  | Amministratore di AzRoles                           |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri. |
 | Attribute-Id      | 1.2.840.113556.1.4.1795                 |
-| System-ID-GUID    | 6448f56a-ca70-4e2e-b0af-d20e4ce653d0    |
+| System-Id-Guid    | 6448f56a-ca70-4e2e-b0af-d20e4ce653d0    |
 | Sintassi            | [**Enumerazione**](s-enumeration.md)    |
 
 
@@ -57,15 +57,15 @@ Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| Is-Single-Valued       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Tempo, in millisecondi, dopo il rilevamento di un dominio come irraggiungibile e
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Vero                                                               |
+| A valore singolo       | Vero                                                               |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**ms-DS-AZ-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classi usate in        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 

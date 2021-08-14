@@ -1,19 +1,19 @@
 ---
-title: GetGuid IAgentCharacterEx
-description: GetGuid IAgentCharacterEx
+title: IAgentCharacterEx GetGUID
+description: IAgentCharacterEx GetGUID
 ms.assetid: 25fb2531-a81c-4add-8134-77b1cd57cfe3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c9e0e14d0931774bf6ab5e1c8599bbebaadd0ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e43a98617b1e2d25a25167ad5b95462eeb462f40f5a353b5a5ec45ffb3a9cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477969"
 ---
-# <a name="iagentcharacterexgetguid"></a>IAgentCharacterEx:: GetGuid
+# <a name="iagentcharacterexgetguid"></a>IAgentCharacterEx::GetGUID
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT GetGUID(
@@ -23,7 +23,7 @@ HRESULT GetGUID(
 
 Recupera l'ID univoco per il carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
@@ -34,11 +34,11 @@ Indirizzo di un BSTR che riceve l'ID per il carattere.
 
 </dd> </dl>
 
-La proprietà restituisce una rappresentazione di stringa del GUID (formattato con parentesi graffe e trattini) utilizzata dal server per identificare in modo univoco il carattere. Quando viene compilato con l'editor dei caratteri di Microsoft Agent, viene impostato un identificatore di caratteri. la proprietà è di sola lettura.
+La proprietà restituisce una rappresentazione di stringa del GUID (formattato con parentesi graffe e trattini) utilizzato dal server per identificare in modo univoco il carattere. Un identificatore di carattere viene impostato quando viene compilato con l'editor di caratteri di Microsoft Agent. la proprietà è di sola lettura.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,21 +6,21 @@ keywords:
 - MIDI (Musical Instrument Digital Interface), invio di messaggi
 - MIDI (Musical Instrument Digital Interface), invio di messaggi
 - invio di messaggi MIDI
-- MIDI (Musical Instrument Digital Interface), funzione midiOutShortMsg
-- MIDI (Musical Instrument Digital Interface), funzione midiOutShortMsg
-- midiOutShortMsg (funzione)
+- Funzione MIDI (Musical Instrument Digital Interface),midiOutShortMsg
+- MIDI (Musical Instrument Digital Interface),funzione midiOutShortMsg
+- Funzione midiOutShortMsg
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 905b0ce924f9aebce67f515fc0714fdc855cbe33
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: accd4f1f7482c81acdff1c950ada8947d3b1d456438dd96092ae094ae587de42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800823"
 ---
 # <a name="using-midioutshortmsg-to-send-individual-midi-messages"></a>Uso di midiOutShortMsg per inviare singoli messaggi MIDI
 
-Nell'esempio seguente viene usata la funzione [**midiOutShortMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) per inviare un evento MIDI specificato a un dispositivo di output MIDI specificato:
+L'esempio seguente usa la [**funzione midiOutShortMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutshortmsg) per inviare un evento MIDI specificato a un determinato dispositivo di output MIDI:
 
 
 ```C++
@@ -47,10 +47,10 @@ UINT sendMIDIEvent(HMIDIOUT hmo, BYTE bStatus, BYTE bData1,
 
 
 > [!Note]  
-> I driver di output MIDI non sono necessari per verificare i dati prima di inviarli a una porta di output. Le applicazioni devono garantire che vengano inviati solo i dati validi.
+> I driver di output MIDI non sono necessari per verificare i dati prima di inviarli a una porta di output. Le applicazioni devono garantire che siano inviati solo dati validi.
 
- 
+ 
 
- 
+ 
 
- 
+ 

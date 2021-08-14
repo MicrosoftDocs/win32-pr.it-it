@@ -1,7 +1,7 @@
 ---
 description: La proprietà SourceListInfo dell'oggetto Product ottiene e imposta le proprietà delle informazioni di origine per un prodotto. Questa proprietà chiama MsiSourceListGetInfo o MsiSourceListSetInfo. Si tratta di una proprietà di lettura o scrittura.
 ms.assetid: 3a2c4af5-592f-4acd-b7d8-df163e00b1e2
-title: Proprietà Product. SourceListInfo
+title: Product.SourceListInfo - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 23fff0cd478a8345e72b79632817e856c40eb7b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d58bc3f9eae1f953d67d2bd83b951bda1d2fe17f3f2b00cbaa9b5b7f9ad3a968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118376704"
 ---
-# <a name="productsourcelistinfo-property"></a>Proprietà Product. SourceListInfo
+# <a name="productsourcelistinfo-property"></a>Product.SourceListInfo - proprietà
 
-La proprietà **SourceListInfo** dell'oggetto [**Product**](product-object.md) ottiene e imposta le proprietà delle informazioni di origine per un prodotto. Questa proprietà chiama [**MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistgetinfoa) o [**MsiSourceListSetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa). Si tratta di una proprietà di lettura o scrittura.
+La **proprietà SourceListInfo** dell'oggetto [**Product**](product-object.md) ottiene e imposta le proprietà delle informazioni di origine per un prodotto. Questa proprietà chiama [**MsiSourceListGetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistgetinfoa) o [**MsiSourceListSetInfo.**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa) Si tratta di una proprietà di lettura o scrittura.
 
 Questa proprietà è di sola lettura.
 
@@ -37,21 +37,21 @@ propVal = Product.SourceListInfo
 
 ## <a name="property-value"></a>Valore proprietà
 
-Nome delle proprietà delle informazioni di origine per un prodotto da interrogare o impostare. Per i valori possibili, vedere la sezione Osservazioni di questo argomento.
+Nome delle proprietà delle informazioni di origine per un prodotto su cui eseguire query o impostare. Per i valori possibili, vedere la sezione Osservazioni di questo argomento.
 
 ## <a name="remarks"></a>Commenti
 
-Non è possibile impostare tutte le proprietà che possono essere recuperate. Il parametro *szProperty* può essere uno dei valori seguenti.
+Non tutte le proprietà che possono essere recuperate possono essere impostate. Il *parametro szProperty* può essere uno dei valori seguenti.
 
 
 
-| Proprietà         | È possibile impostare? | Significato                                                                                                                                                                                                                                                        |
+| Proprietà         | Può essere impostato? | Significato                                                                                                                                                                                                                                                        |
 |------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MediaPackagePath | S        | Percorso relativo alla radice del supporto di installazione.                                                                                                                                                                                                       |
-| DiskPrompt       | S        | Modello di richiesta utilizzato quando viene richiesto all'utente il supporto di installazione.                                                                                                                                                                                       |
-| LastUsedSource   | S        | Il percorso di origine utilizzato più di recente per il prodotto. Quando si imposta questa proprietà, anteporre il prefisso "n;" al percorso di origine di rete o "u;" per il tipo di URL. Ad esempio, "n; \\ \\ Scratch \\ My \\ source "e" u; https://MyServer/MyFolder/MySource ". |
-| LastUsedType     | N        | "n" se l'ultima origine usata è un percorso di rete. "u" se l'ultima origine usata era un percorso URL. "m" se l'ultima origine usata era un supporto. Stringa vuota ("") se non è disponibile l'ultima origine usata.                                                                   |
-| PackageName      | S        | Nome del pacchetto di Windows Installer o del pacchetto di patch nell'origine.                                                                                                                                                                                      |
+| DiskPrompt       | S        | Modello di richiesta utilizzato quando si richiede all'utente di specificare i supporti di installazione.                                                                                                                                                                                       |
+| LastUsedSource   | S        | Posizione di origine usata più di recente per il prodotto. Quando si imposta questa proprietà, aggiungere al percorso di origine il prefisso "n;" per un'origine di rete o "u;" per il tipo di URL. Ad esempio, "n; \\ \\ scratch \\ scratch \\ MySource" e "u; https://MyServer/MyFolder/MySource ". |
+| LastUsedType     | N        | "n" se l'ultima origine usata è un percorso di rete. "u" se l'ultima origine usata è un percorso URL. "m" se l'ultima origine usata è un supporto. Stringa vuota ("") se non è presente l'ultima origine utilizzata.                                                                   |
+| PackageName      | S        | Nome del pacchetto di Windows o del pacchetto patch nell'origine.                                                                                                                                                                                      |
 
 
 
@@ -63,7 +63,7 @@ Non è possibile impostare tutte le proprietà che possono essere recuperate. Il
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
@@ -82,7 +82,7 @@ Non è possibile impostare tutte le proprietà che possono essere recuperate. Il
 [**MsiSourceListSetInfo**](/windows/desktop/api/Msi/nf-msi-msisourcelistsetinfoa)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

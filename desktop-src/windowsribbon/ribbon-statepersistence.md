@@ -1,72 +1,72 @@
 ---
-title: Mantenimento dello stato della barra multifunzione
-description: Windows Ribon Framework (barra multifunzione) offre la possibilità di mantenere lo stato di un'ampia gamma di impostazioni utente e preferenze tra le sessioni dell'applicazione.
+title: Persistenza dello stato della barra multifunzione
+description: Il Windows Ribon Framework (barra multifunzione) offre la possibilità di mantenere lo stato di un'ampia gamma di impostazioni utente e preferenze tra le sessioni dell'applicazione.
 ms.assetid: f59e36be-8e3d-454a-b93c-9fc5fc5ecb47
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a3b704151b657bdfe95845c8473a0fd197e87b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c1e506d1cc8138f569dc21b491cc11ed58411131c0dd80532c19043c5974995e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104338311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707953"
 ---
-# <a name="persisting-ribbon-state"></a>Mantenimento dello stato della barra multifunzione
+# <a name="persisting-ribbon-state"></a>Persistenza dello stato della barra multifunzione
 
-Windows Ribon Framework (barra multifunzione) offre la possibilità di mantenere lo stato di un'ampia gamma di impostazioni utente e preferenze tra le sessioni dell'applicazione.
+Il Windows Ribon Framework (barra multifunzione) offre la possibilità di mantenere lo stato di un'ampia gamma di impostazioni utente e preferenze tra le sessioni dell'applicazione.
 
 -   [Introduzione](#introduction)
 -   [Un'esperienza prevedibile](#a-predictable-experience)
--   [Salva le impostazioni della barra multifunzione](#save-ribbon-settings)
--   [Caricare le impostazioni della barra multifunzione](#load-ribbon-settings)
+-   [Salva barra multifunzione Impostazioni](#save-ribbon-settings)
+-   [Caricare la barra multifunzione Impostazioni](#load-ribbon-settings)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="introduction"></a>Introduzione
 
-Diversi aspetti di una barra multifunzione, incluse le preferenze di configurazione e interazione, possono essere personalizzati da un utente in fase di esecuzione per migliorare l'usabilità e la produttività. Il Framework della barra multifunzione fornisce la funzionalità per mantenere queste impostazioni tra le sessioni dell'applicazione tramite due metodi definiti nell'implementazione dell'interfaccia [**IUIRibbon**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiribbon) : [**IUIRibbon:: LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) e [**IUIRibbon:: SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream).
+Diversi aspetti di una barra multifunzione, incluse le preferenze di configurazione e interazione, possono essere personalizzati da un utente in fase di esecuzione per migliorare l'usabilità e la produttività. Il framework della barra multifunzione offre la funzionalità per mantenere queste impostazioni tra le sessioni dell'applicazione tramite due metodi definiti nell'implementazione [**dell'interfaccia IUIRibbon:**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiribbon) [**IUIRibbon::LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) e [**IUIRibbon::SaveSettingsToStream.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream)
 
 ## <a name="a-predictable-experience"></a>Un'esperienza prevedibile
 
-Le [linee guida sull'esperienza utente della barra multifunzione](https://msdn.microsoft.com/library/cc872782.aspx) consigliano che, per offrire l'esperienza utente più prevedibile, le applicazioni Ribbon devono mantenere lo stato della barra multifunzione (a parte l'ultima scheda selezionata) quando l'applicazione viene chiusa. In questo modo, quando viene avviata la stessa applicazione, è possibile ripristinare le impostazioni e le personalizzazioni della sessione precedente e l'utente può prevedere di continuare a interagire con l'applicazione nello stesso modo in cui è stata lasciata.
+Le [](https://msdn.microsoft.com/library/cc872782.aspx) linee guida sull'esperienza utente della barra multifunzione consigliano che, per offrire l'esperienza utente più prevedibile possibile, le applicazioni della barra multifunzione devono mantenere lo stato della barra multifunzione (a parte l'ultima scheda selezionata) quando l'applicazione viene chiusa. In questo modo, quando viene avviata la stessa applicazione, è possibile ripristinare le impostazioni e le personalizzazioni della sessione precedente e l'utente può aspettarsi di continuare a interagire con l'applicazione nello stesso modo in cui l'ha lasciata.
 
-Le impostazioni della barra multifunzione che possono essere modificate in fase di esecuzione e mantenute tra le sessioni dell'applicazione sono elencate nel menu di scelta rapida del comando. e comprendono:
+Le impostazioni della barra multifunzione che possono essere modificate in fase di esecuzione e mantenute tra le sessioni dell'applicazione sono elencate nel menu di scelta rapida Comando. includono:
 
--   Comandi aggiunti all'elenco di comandi della [barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md) dall'utente. Specificato da un oggetto [**IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) tramite la chiave della proprietà [ \_ \_ ItemsSource pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-itemssource.md) .
+-   Comandi aggiunti [all'elenco Comandi della barra di accesso](windowsribbon-controls-quickaccesstoolbar.md) rapido dall'utente. Specificato da un [**oggetto IUICollection**](/windows/desktop/api/uiribbon/nn-uiribbon-iuicollection) tramite la chiave [di proprietà \_ ItemsSource PKEY \_ dell'interfaccia](windowsribbon-reference-properties-uipkey-itemssource.md) utente.
 
-    Lo screenshot seguente mostra il comando del menu **di scelta rapida Aggiungi a barra di accesso rapido** .
+    Lo screenshot seguente mostra il comando del menu **di scelta rapida Aggiungi alla barra** di accesso rapido.
 
-    ![screenshot del menu di scelta rapida del comando sulla barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
+    ![Screenshot del menu di scelta rapida del comando nella barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
 
--   Stato di ancoraggio della [barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md) preferito. Specificata dal valore [**\_ CONTROLDOCK dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_controldock) utente della chiave della proprietà [ \_ \_ QuickAccessToolbarDock pkey dell'interfaccia utente](windowsribbon-reference-properties-uipkey-quickaccesstoolbardock.md) .
+-   Stato di [ancoraggio preferito della barra](windowsribbon-controls-quickaccesstoolbar.md) di accesso rapido. Specificato dal valore [**\_ CONTROLDOCK dell'interfaccia**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_controldock) utente [ \_ PKEY \_ QuickAccessToolbarDock.](windowsribbon-reference-properties-uipkey-quickaccesstoolbardock.md)
 
-    Questa schermata mostra la barra di [accesso rapido](windowsribbon-controls-quickaccesstoolbar.md) nella posizione predefinita della barra del titolo dell'applicazione e la **barra di accesso rapido Visualizza sotto il comando del menu di scelta rapida della barra multifunzione** .
+    Questa schermata mostra la barra di accesso rapido [nella](windowsribbon-controls-quickaccesstoolbar.md) posizione predefinita della barra del titolo dell'applicazione e la barra di accesso rapido Mostra barra di accesso rapido sotto **il** comando del menu di scelta rapida della barra multifunzione.
 
-    ![screenshot del menu di scelta rapida del comando sulla barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
+    ![Screenshot del menu di scelta rapida del comando nella barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
 
-    Questo screenshot mostra la [barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md) sotto la barra multifunzione.
+    Questa schermata mostra la barra [di accesso rapido sotto](windowsribbon-controls-quickaccesstoolbar.md) la barra multifunzione.
 
-    ![screenshot della barra di accesso rapido ancorata sotto la barra multifunzione.](images/controls/qat-dockbottom.png)
+    ![screenshot della barra degli strumenti di accesso rapido ancorata sotto la barra multifunzione.](images/controls/qat-dockbottom.png)
 
--   Stato ridotto a icona della barra multifunzione come specificato dal valore booleano della chiave della proprietà [ \_ ridotta a \_ icona dell'interfaccia utente pkey](windowsribbon-reference-properties-uipkey-minimized.md) .
+-   Stato ridotto a icona della barra multifunzione come specificato dal valore booleano della chiave di [ \_ proprietà UI PKEY \_ Minimized.](windowsribbon-reference-properties-uipkey-minimized.md)
 
     > [!Note]  
-    > Lo stato ridotto a icona della barra multifunzione non è equivalente allo stato compresso della barra multifunzione. Quando lo stato è compresso, la barra multifunzione è completamente nascosta e non può essere interagito con. Il Framework richiama questo stato automaticamente se la dimensione della finestra dell'applicazione è ridotta, orizzontalmente o verticalmente, al punto in cui la barra multifunzione nasconde l'area di lavoro dell'applicazione. Il Framework ripristina la barra multifunzione quando vengono aumentate le dimensioni della finestra dell'applicazione.
+    > Lo stato ridotto a icona della barra multifunzione non equivale allo stato compresso della barra multifunzione. Quando lo stato è compresso, la barra multifunzione è completamente nascosta e non è possibile interagire. Il framework richiama questo stato automaticamente se le dimensioni della finestra dell'applicazione, orizzontalmente o verticalmente, vengono ridotte al punto in cui la barra multifunzione nasconde l'area di lavoro dell'applicazione. Il framework ripristina la barra multifunzione quando vengono aumentate le dimensioni della finestra dell'applicazione.
 
-     
+     
 
-    Questa schermata mostra il comando del menu di scelta rapida **della barra multifunzione** .
+    Questa schermata mostra il comando Riduci a **icona il** menu di scelta rapida della barra multifunzione.
 
-    ![screenshot del menu di scelta rapida del comando sulla barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
+    ![Screenshot del menu di scelta rapida del comando nella barra multifunzione di Microsoft Paint.](images/controls/qat-contextmenu-add.png)
 
-    Questo screenshot mostra una barra multifunzione ridotta a icona.
+    Questa schermata mostra una barra multifunzione ridotta a icona.
 
-    ![screenshot della barra multifunzione di Microsoft Paint ridotta a icona.](images/properties/ui-pkey-minimized.png)
+    ![Screenshot della barra multifunzione Microsoft Paint ridotta a icona.](images/properties/ui-pkey-minimized.png)
 
-## <a name="save-ribbon-settings"></a>Salva le impostazioni della barra multifunzione
+## <a name="save-ribbon-settings"></a>Salva barra multifunzione Impostazioni
 
-Il metodo [**IUIRibbon:: SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) scrive una rappresentazione binaria dello stato della barra multifunzione persistente, descritta nella sezione precedente, in un oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) . L'applicazione salva quindi il contenuto dell'oggetto IStream in un file o nel registro di sistema di Windows.
+Il [**metodo IUIRibbon::SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) scrive una rappresentazione binaria dello stato persistente della barra multifunzione (descritto nella sezione precedente) in un [oggetto IStream.](/windows/win32/api/objidl/nn-objidl-istream) L'applicazione salva quindi il contenuto dell'oggetto IStream in un file o nel Windows sistema.
 
-Nell'esempio seguente viene illustrato il codice di base necessario per scrivere lo stato della barra multifunzione in un oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) usando il metodo [**IUIRibbon:: SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) .
+L'esempio seguente illustra il codice di base necessario per scrivere lo stato della barra multifunzione in un oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) usando il [**metodo IUIRibbon::SaveSettingsToStream.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream)
 
 
 ```C++
@@ -98,11 +98,11 @@ HRESULT CApplication::SaveRibbonStatusToStream(
 
 
 
-## <a name="load-ribbon-settings"></a>Caricare le impostazioni della barra multifunzione
+## <a name="load-ribbon-settings"></a>Caricare la barra multifunzione Impostazioni
 
-Il metodo [**IUIRibbon:: LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) viene usato per recuperare le informazioni sullo stato della barra multifunzione permanenti archiviate come oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) dal metodo [**IUIRibbon:: SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) . Le informazioni nell'oggetto IStream vengono applicate all'interfaccia utente della barra multifunzione quando l'applicazione viene inizializzata.
+Il [**metodo IUIRibbon::LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) viene usato per recuperare le informazioni persistenti sullo stato della barra multifunzione archiviate come oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) dal metodo [**IUIRibbon::SaveSettingsToStream.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) Le informazioni nell'oggetto IStream vengono applicate all'interfaccia utente della barra multifunzione quando l'applicazione viene inizializzata.
 
-Nell'esempio seguente viene illustrato il codice di base necessario per caricare lo stato della barra multifunzione da un oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) con il metodo [**IUIRibbon:: LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) .
+L'esempio seguente illustra il codice di base necessario per caricare lo stato della barra multifunzione da un oggetto [IStream](/windows/win32/api/objidl/nn-objidl-istream) con [**il metodo IUIRibbon::LoadSettingsFromStream.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream)
 
 
 ```C++
@@ -127,7 +127,7 @@ HRESULT CApplication::LoadRibbonStatusFromStream(
 
 
 
-Per ottenere prestazioni ottimali, è necessario chiamare il metodo [**IUIRibbon:: LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) dalla funzione di callback [**IUIApplication:: OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged) durante la fase di inizializzazione del Framework, come illustrato nell'esempio seguente.
+Per prestazioni ottimali, il metodo [**IUIRibbon::LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) deve essere chiamato dalla funzione di callback [**IUIApplication::OnViewChanged**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiapplication-onviewchanged) durante la fase di inizializzazione del framework, come illustrato nell'esempio seguente.
 
 
 ```C++
@@ -163,9 +163,9 @@ HRESULT CMyRibbonApplication::_LoadRibbonSettings(IUIRibbon* pRibbon)
 
 
 
-Più istanze della stessa applicazione del Framework della barra multifunzione possono gestire ogni stato della barra multifunzione indipendentemente da oggetti [IStream](/windows/win32/api/objidl/nn-objidl-istream) separati o come gruppo tramite un singolo oggetto IStream.
+Più istanze della stessa applicazione del framework della barra multifunzione possono gestire ogni stato della barra multifunzione in modo indipendente come oggetti [IStream](/windows/win32/api/objidl/nn-objidl-istream) separati o come gruppo tramite un singolo oggetto IStream.
 
-Quando si sincronizza lo stato della barra multifunzione in un gruppo di istanze dell'applicazione, ogni finestra di primo livello deve restare in attesa di una notifica di [ \_ attivazione WM](../inputdev/wm-activate.md) . La finestra di primo livello da disattivare Salva lo stato della barra multifunzione usando il metodo [**IUIRibbon:: SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) e la finestra di primo livello attivata carica lo stato della barra multifunzione usando il metodo [**IUIRibbon:: LoadSettingsFromStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream) .
+Quando si sincronizza lo stato della barra multifunzione in un gruppo di istanze dell'applicazione, ogni finestra di primo livello deve essere in ascolto di una notifica [WM \_ ACTIVATE.](../inputdev/wm-activate.md) La finestra di primo livello disattivata salva lo stato della barra multifunzione usando il metodo [**IUIRibbon::SaveSettingsToStream**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-savesettingstostream) e la finestra di primo livello attivata carica lo stato della barra multifunzione usando il metodo [**IUIRibbon::LoadSettingsFromStream.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiribbon-loadsettingsfromstream)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -174,6 +174,6 @@ Quando si sincronizza lo stato della barra multifunzione in un gruppo di istanze
 [Barra di accesso rapido](windowsribbon-controls-quickaccesstoolbar.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

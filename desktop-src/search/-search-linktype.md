@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e5b2105e8d56a9c8042f341ffc3f24a4d7995f4e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16c61f8d92a6f90be0fa4b64ddd9d582987ac0bdf52ca1c596c7db3a7fa4b669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463044"
 ---
 # <a name="linktype-enumeration"></a>Enumerazione LINKTYPE
 
-\[L'enumerazione **LinkType** è supportata solo in Windows XP e windows Server 2003 e non deve più essere utilizzata.\]
+\[**L'enumerazione LINKTYPE** è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.\]
 
 Specifica il tipo di collegamento durante la ricerca per indicizzazione o l'indicizzazione.
 
@@ -42,21 +42,21 @@ typedef enum _LINKTYPE {
 
 <dl> <dt>
 
-<span id="LINKTYPE_URL"></span><span id="linktype_url"></span>**\_URL LinkType**
+<span id="LINKTYPE_URL"></span><span id="linktype_url"></span>**LINKTYPE \_ URL**
 </dt> <dd>
 
 Specifica se il tipo di collegamento URL deve essere indicizzato.
 
 </dd> <dt>
 
-<span id="LINKTYPE_CONTENT"></span><span id="linktype_content"></span>**contenuto di LINKTYPE \_**
+<span id="LINKTYPE_CONTENT"></span><span id="linktype_content"></span>**CONTENUTO \_ LINKTYPE**
 </dt> <dd>
 
 Specifica se il contenuto del collegamento deve essere indicizzato.
 
 </dd> <dt>
 
-<span id="LINKTYPE_RELATED"></span><span id="linktype_related"></span>**correlate a LINKTYPE \_**
+<span id="LINKTYPE_RELATED"></span><span id="linktype_related"></span>**LINKTYPE \_ CORRELATO**
 </dt> <dd>
 
 Specifica un collegamento correlato.
@@ -65,7 +65,7 @@ Specifica un collegamento correlato.
 
 ## <a name="remarks"></a>Commenti
 
-Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti in computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare i flag **LinkType** e le altre API seguenti: i metodi [**IItemPreviewerExt:: GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt:: GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e la struttura [**LINKINFO**](-search-linkinfo.md) .
+Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare i flag **LINKTYPE** e le altre API seguenti: i metodi [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e [**la struttura LINKINFO.**](-search-linkinfo.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/> |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 

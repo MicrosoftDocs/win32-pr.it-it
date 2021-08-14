@@ -4,20 +4,20 @@ ms.assetid: f579745a-5327-4c8b-bfa7-fe81d9657a3b
 title: Comandi (API WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 974c6b2b68949e53ae778ed56adcfcb10d2edd5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a723e9eff52bf0b0b301d1fba672db5887afebef701a312786aeafb4decb733f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431114"
 ---
 # <a name="commands-wpd-api"></a>Comandi (API WPD)
 
-L'applicazione client e il driver comunicano per mezzo di comandi inviati dal client (tramite l'API di Windows Portable Device) al driver (tramite il Framework del driver User-Mode). Un comando può includere o meno un parametro e non può restituire un risultato. Un client può inviare un comando in modo esplicito, chiamando il metodo [**IPortableDevice:: SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand) o **IPortableDeviceService: SendCommand** oppure, in modo implicito, chiamando uno dei metodi delle interfacce client. Alcuni comandi possono essere inviati solo in modo esplicito; Questi sono indicati nella documentazione del comando. Le pagine di riferimento del comando descrivono lo scopo di un comando, nonché i parametri che prevede di ricevere e i parametri che dovrebbero restituire.
+L'applicazione client e il driver comunicano tramite comandi inviati dal client (tramite l'API dispositivo portatile Windows) al driver (tramite User-Mode Driver Framework). Un comando può includere o meno un parametro e può o meno restituire un risultato. Un client può inviare un comando in modo esplicito chiamando il metodo [**IPortableDevice::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand) o **IPortableDeviceService:SendCommand** oppure in modo implicito chiamando uno dei metodi delle interfacce client. Alcuni comandi possono essere inviati solo in modo esplicito. queste informazioni sono presenti nella documentazione del comando. Le pagine di riferimento dei comandi descrivono lo scopo di un comando, nonché i parametri che si aspetta di ricevere e i parametri che dovrebbe restituire.
 
-Un comando è identificato da una struttura **PropertyKey** . Questa operazione è costituita da due parti: una parte GUID (membro *fmtid* ) e una parte DWORD (il membro *PID* ). La parte GUID viene utilizzata per indicare la categoria a cui appartiene il comando (i comandi correlati appartengono alla stessa categoria e pertanto avranno lo stesso *fmtid*). La parte DWORD indica l'ID di comando e viene usata per distinguere i singoli comandi all'interno di una categoria di comandi (i valori *PID* per i comandi nella stessa categoria saranno diversi).
+Un comando è identificato da una **struttura PROPERTYKEY.** È costituito da due parti: una parte GUID (il membro *fmtid)* e una parte DWORD (il *membro pid).* La parte GUID viene usata per indicare la categoria a cui appartiene il comando (i comandi correlati appartengono alla stessa categoria e di conseguenza avranno lo stesso *fmtid*). La parte DWORD indica l'ID del comando e viene usata per distinguere i singoli comandi all'interno di una categoria di comandi (i *valori pid* per i comandi nella stessa categoria saranno diversi).
 
-Nella tabella seguente sono elencate le categorie di comandi definiti da dispositivi portatili Windows. I produttori di dispositivi possono definire i propri comandi creando proprie categorie di comando e ID di comando. Tuttavia, un produttore non deve aggiungere comandi alle categorie elencate di seguito, perché sono riservate da Microsoft.
+La tabella seguente elenca le categorie di comandi Windows dispositivi portatili. I produttori di dispositivi possono definire i propri comandi creando categorie di comandi e ID di comando personalizzati. Tuttavia, un produttore non deve aggiungere comandi alle categorie elencate di seguito, poiché sono riservati da Microsoft.
 
 **Categorie di comandi**
 
@@ -25,50 +25,50 @@ Nella tabella seguente sono elencate le categorie di comandi definiti da disposi
 
 | Categoria                         | Descrizione                                                                                                                             |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| **\_categoria WPD \_ comune**                | Comandi comuni a tutti gli oggetti e i dispositivi.                                                                                    |
-| **\_hint per \_ dispositivi di categoria WPD \_**         | Comandi usati per recuperare informazioni facoltative sul dispositivo che possono essere usate per migliorare l'esperienza dell'utente finale.                         |
-| **\_SMS della categoria WPD \_**                   | Comandi usati per i dispositivi che supportano la funzionalità SMS (Short Message Service), che in genere è esposta nei telefoni cellulari. |
-| **\_acquisizione di \_ \_ Immagini ancora della categoria \_ WPD** | Comandi usati per i dispositivi che supportano l'acquisizione di immagini ancora.                                                                    |
-| **\_archiviazione categoria \_ WPD**               | Comandi utilizzati per gli oggetti funzionali di archiviazione.                                                                                  |
+| **CATEGORIA WPD \_ \_ COMUNE**                | Comandi comuni a tutti gli oggetti e i dispositivi.                                                                                    |
+| **HINT PER DISPOSITIVI \_ DELLA CATEGORIA WPD \_ \_**         | Comandi usati per recuperare informazioni facoltative sul dispositivo che possono essere usate per migliorare l'esperienza dell'utente finale.                         |
+| **SMS DI CATEGORIA WPD \_ \_**                   | Comandi usati per i dispositivi che supportano la funzionalità SMS (Short Message Service), che viene in genere esposta nei telefoni cellulari. |
+| **ACQUISIZIONE DI IMMAGINI ANCORA \_ \_ NELLA \_ CATEGORIA \_ WPD** | Comandi usati per i dispositivi che supportano l'acquisizione di immagini statiche.                                                                    |
+| **ARCHIVIAZIONE DI CATEGORIE WPD \_ \_**               | Comandi usati per gli oggetti funzionali di archiviazione.                                                                                  |
 
 
 
  
 
-I comandi specifici definiti per ognuno di questi tipi sono forniti nelle tabelle seguenti, organizzati per tipo di comando.
+I comandi specifici definiti per ognuno di questi tipi sono disponibili nelle tabelle seguenti, organizzate in base al tipo di comando.
 
-**\_ \_ Categoria comune categoria WPD**
+**Categoria COMUNE CATEGORIA WPD \_ \_**
 
 
 
 | Comando                                                                                | Descrizione        |
 |----------------------------------------------------------------------------------------|--------------------|
-| [**\_dispositivo di \_ \_ reimpostazione comune comando \_ WPD**](wpd-command-common-reset-device-command.md) | Reimposta il dispositivo. |
+| [**DISPOSITIVO DI \_ REIMPOSTAZIONE COMUNE \_ DEL COMANDO \_ WPD \_**](wpd-command-common-reset-device-command.md) | Reimposta il dispositivo. |
 
 
 
  
 
-**Categoria \_ di \_ hint del dispositivo categoria WPD \_**
+**Categoria HINT \_ DISPOSITIVO CATEGORIA WPD \_ \_**
 
 
 
 | Comando                                                                                                              | Descrizione                                                                      |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [**\_suggerimenti del \_ dispositivo comando WPD ottenere il \_ \_ \_ percorso del contenuto \_**](wpd-command-device-hints-get-content-location-command.md) | Recupera gli ID oggetto delle cartelle che possono ospitare un oggetto di un tipo specificato. |
+| [**WPD \_ COMMAND \_ DEVICE \_ HINTS \_ GET \_ CONTENT \_ LOCATION**](wpd-command-device-hints-get-content-location-command.md) | Recupera gli ID oggetto delle cartelle che possono contenere un oggetto di un tipo specificato. |
 
 
 
  
 
-**\_ \_ Categoria archiviazione categoria WPD**
+**Categoria DI ARCHIVIAZIONE DELLA CATEGORIA WPD \_ \_**
 
 
 
 | Comando                                                                     | Descrizione                                                         |
 |-----------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [**\_espulsione \_ archiviazione comando WPD \_**](wpd-command-storage-eject-command.md)   | Espelle un supporto di archiviazione che può essere espulso in remoto dal driver. |
-| [**\_formato di \_ archiviazione \_ comando WPD**](wpd-command-storage-format-command.md) | Formatta un oggetto funzionale di archiviazione nel dispositivo.                  |
+| [**WPD \_ COMMAND \_ STORAGE \_ EJECT**](wpd-command-storage-eject-command.md)   | Espelle un supporto di archiviazione che può essere espulso in remoto dal driver. |
+| [**FORMATO DI ARCHIVIAZIONE \_ DEI COMANDI WPD \_ \_**](wpd-command-storage-format-command.md) | Formatta un oggetto funzionale di archiviazione nel dispositivo.                  |
 
 
 
@@ -80,19 +80,19 @@ I comandi specifici definiti per ognuno di questi tipi sono forniti nelle tabell
 
 | Comando                                                         | Descrizione                                                          |
 |-----------------------------------------------------------------|----------------------------------------------------------------------|
-| [**\_comando WPD \_ SMS \_ Send**](wpd-command-sms-send-command.md) | Avvia l'invio di un messaggio SMS da un oggetto funzionale SMS. |
+| [**INVIO \_ SMS DEL \_ COMANDO WPD \_**](wpd-command-sms-send-command.md) | Avvia l'invio di un messaggio SMS da parte di un oggetto funzionale SMS. |
 
 
 
  
 
-**Categoria \_ WPD \_ still \_ Image \_ Capture**
+**Categoria WPD \_ \_ STILL IMAGE CAPTURE \_ \_ Category**
 
 
 
 | Comando                                                                                                   | Descrizione                                                         |
 |-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [**il \_ comando WPD ha \_ ancora \_ avviato l'acquisizione dell'immagine \_ \_**](wpd-command-still-image-capture-initiate-command.md) | Avvia un'acquisizione di immagini ancora da un oggetto funzionale dell'immagine ancora. |
+| [**COMANDO WPD \_ \_ STILL IMAGE CAPTURE \_ \_ \_ INITIATE**](wpd-command-still-image-capture-initiate-command.md) | Avvia un'acquisizione di immagini ancorate da un oggetto funzionale dell'immagine ancorata. |
 
 
 

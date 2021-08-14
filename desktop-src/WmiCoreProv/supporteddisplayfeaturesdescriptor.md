@@ -1,5 +1,5 @@
 ---
-description: Rappresenta le funzionalità di visualizzazione supportate del monitoraggio.
+description: Rappresenta le funzionalità di visualizzazione supportate del monitor.
 ms.assetid: 28eeead3-8fb9-4720-8d93-1c6757dfb31b
 title: Classe SupportedDisplayFeaturesDescriptor
 ms.topic: reference
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 30350d477533b7e51ba8b3130c5a24d81c12f10e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9e71eeda4ab47cba5e88a548421c89815b7d0d87d511709b9a73573e2582077
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321537"
 ---
 # <a name="supporteddisplayfeaturesdescriptor-class"></a>Classe SupportedDisplayFeaturesDescriptor
 
-**SupportedDisplayFeaturesDescriptor** rappresenta le funzionalità di visualizzazione supportate del monitoraggio. Le informazioni contenute in questa classe corrispondono ai dati nella definizione di input video dello standard EDID (video Electronics Standard Association) Enhanced Extended Display Data (VESA).
+**SupportedDisplayFeaturesDescriptor rappresenta** le funzionalità di visualizzazione supportate del monitor. Le informazioni in questa classe corrispondono ai dati nella definizione di input video dello standard VESA (Video Electronics Standard Association) Enhanced Extended Display Identification Data (E-EDID).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,33 +48,33 @@ class SupportedDisplayFeaturesDescriptor
 
 ## <a name="members"></a>Members
 
-La classe **SupportedDisplayFeaturesDescriptor** dispone di questi tipi di membri:
+La **classe SupportedDisplayFeaturesDescriptor** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **SupportedDisplayFeaturesDescriptor** dispone di queste proprietà.
+La **classe SupportedDisplayFeaturesDescriptor** ha queste proprietà.
 
 <dl> <dt>
 
 **ActiveOffSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Supporto per il risparmio di energia attivo e molto basso. La visualizzazione consuma meno energia quando riceve un segnale temporale che non rientra nell'intervallo operativo attivo dichiarato. Se il segnale di temporizzazione torna al normale intervallo operativo, verrà ripristinata l'operazione normale. Esempi di segnali di temporizzazione al di fuori dell'intervallo operativo normale non sono segnali di sincronizzazione o nessun segnale.
+Supporto per alimentazione attiva disattivata e a potenza molto bassa. Lo schermo consuma meno potenza quando riceve un segnale di temporizzazione non compreso nell'intervallo operativo attivo dichiarato. Lo schermo tornerà al normale funzionamento se il segnale temporale torna all'intervallo operativo normale. Esempi di segnali di temporizzazione al di fuori dell'intervallo operativo normale sono i segnali di sincronizzazione o nessun segnale DE.
 
 </dd> <dt>
 
 **DisplayType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Uint8**
+Tipo di dati: **uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -86,8 +86,8 @@ Tipo di visualizzazione per il monitoraggio. Nella tabella seguente sono elencat
 
 | Valore                                                                              | Significato                                 |
 |------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl> | Visualizzazione monocromatico/scala di grigi<br/> |
-| <dl> <dt>1 (0x1)</dt> </dl> | Visualizzazione colori RGB<br/>            |
+| <dl> <dt>0 (0x0)</dt> </dl> | Schermo monocromatico/in scala di grigi<br/> |
+| <dl> <dt>1 (0x1)</dt> </dl> | Visualizzazione dei colori RGB<br/>            |
 | <dl> <dt>2 (0x2)</dt> </dl> | Visualizzazione multicolore non RGB<br/>   |
 
 
@@ -99,65 +99,65 @@ Tipo di visualizzazione per il monitoraggio. Nella tabella seguente sono elencat
 **GTFSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la visualizzazione dispone del supporto GTF. Se **true**, la visualizzazione supporta le tempistiche basate sullo standard GTF usando i valori predefiniti del parametro GTF.
+Indica se la visualizzazione dispone del supporto GTF. Se **True,** la visualizzazione supporta intervalli basati sullo standard GTF usando i valori predefiniti dei parametri GTF.
 
 </dd> <dt>
 
 **HasPreferredTimingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la visualizzazione ha una modalità temporizzata preferita. Se **true**, il primo blocco di intervallo dettagliato contiene la modalità di temporizzazione preferita del monitoraggio. L'uso della modalità di temporizzazione preferita è richiesto da EDID v. 1.3 e versioni successive.
+Indica se la visualizzazione ha una modalità di temporizzazione preferita. Se **True,** il primo blocco di temporizzazione dettagliato contiene la modalità di temporizzazione preferita del monitoraggio. L'uso della modalità di temporizzazione preferita è richiesto da EDID v.1.3 e versioni successive.
 
 </dd> <dt>
 
 **sRGBSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se **true**, la visualizzazione supporta sRGB.
+Se **True,** la visualizzazione supporta sRGB.
 
 </dd> <dt>
 
-**StandbySupported**
+**Standby Supportato**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la visualizzazione supporta la modalità standby per la segnalazione di risparmio energia DPMS (VESA). Se è **true**, DPMS standby è supportato.
+Indica se lo schermo supporta lo standby DISA Display Power Management Signaling (DPMS). Se **True,** dpms standby è supportato.
 
 </dd> <dt>
 
 **SuspendSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la visualizzazione supporta la sospensione di DPMS (Display Power Management Signaling). Se è **true**, DPMS Suspend è supportato.
+Indica se la visualizzazione supporta la sospensione di VESA Display Power Management Signaling (DPMS). Se **True,** DPMS sospende è supportato.
 
 </dd> </dl>
 
@@ -169,8 +169,8 @@ Indica se la visualizzazione supporta la sospensione di DPMS (Display Power Mana
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                         |
-| Spazio dei nomi<br/>                | \\WMI radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Wmi \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

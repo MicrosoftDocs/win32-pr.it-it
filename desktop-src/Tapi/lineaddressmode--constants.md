@@ -1,47 +1,47 @@
 ---
-description: Le \_ costanti del flag di bit LINEADDRESSMODE descrivono diversi modi per identificare un indirizzo in un dispositivo a linee.
+description: Le costanti del flag di bit LINEADDRESSMODE descrivono vari modi per \_ identificare un indirizzo in un dispositivo a linee.
 ms.assetid: f0f132a0-2e8e-478f-909b-c100aa360daa
-title: Costanti LINEADDRESSMODE_ (TAPI. h)
+title: LINEADDRESSMODE_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5e926772c82a36865c7f3b95c1ca1321db5682
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4863b79c4527395f6ecb2d28c4d9ef718ff5a7fd99681185ba892bac2b4639ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761863"
 ---
-# <a name="lineaddressmode_-constants"></a>\_Costanti LINEADDRESSMODE
+# <a name="lineaddressmode_-constants"></a>Costanti \_ LINEADDRESSMODE
 
-Le costanti del flag di bit **LINEADDRESSMODE \_** descrivono diversi modi per identificare un indirizzo in un dispositivo a linee.
+Le costanti del flag di bit **LINEADDRESSMODE \_** descrivono vari modi per identificare un indirizzo in un dispositivo a linee.
 
 <dl> <dt>
 
-<span id="LINEADDRESSMODE_ADDRESSID"></span><span id="lineaddressmode_addressid"></span>**\_ADDRESSID LINEADDRESSMODE**
+<span id="LINEADDRESSMODE_ADDRESSID"></span><span id="lineaddressmode_addressid"></span>**LINEADDRESSMODE \_ ADDRESSID**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo viene specificato con un numero intero piccolo nell'intervallo compreso tra 0 e *dwNumAddresses* meno uno, dove *dwNumAddresses* è il valore nelle funzionalità del dispositivo della riga.
+L'indirizzo viene specificato con un numero intero piccolo compreso nell'intervallo da 0 a *dwNumAddresses* meno uno, dove *dwNumAddresses* è il valore nelle funzionalità del dispositivo della riga.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEADDRESSMODE_DIALABLEADDR"></span><span id="lineaddressmode_dialableaddr"></span>**\_DIALABLEADDR LINEADDRESSMODE**
+<span id="LINEADDRESSMODE_DIALABLEADDR"></span><span id="lineaddressmode_dialableaddr"></span>**LINEADDRESSMODE \_ DIALABLEADDR**
 </dt> <dd> <dl> <dt>
 
 
 
-L'indirizzo viene specificato tramite il numero di telefono.
+L'indirizzo viene specificato tramite il relativo numero di telefono.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile assegnare i 16 bit più significativi per le estensioni specifiche del dispositivo. I 16 bit di ordine inferiore sono riservati.
+I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit meno bassi sono riservati.
 
-Questa costante viene utilizzata per selezionare un indirizzo su una riga in cui viene originata una chiamata. Il modello usuale seleziona l'indirizzo per mezzo del relativo identificatore di indirizzo. Gli identificatori di indirizzo sono il meccanismo usato per identificare gli indirizzi in TAPI. Tuttavia, in alcuni ambienti, quando si effettua una chiamata, è spesso più pratico identificare l'indirizzo di origine di una chiamata in base al numero di telefono anziché all'identificatore dell'indirizzo. Un esempio è la possibile modellazione di un numero elevato di stazioni (di terze parti) nel compartimento per mezzo di un dispositivo a linee con molti indirizzi. La riga rappresenta il set di tutte le stazioni e ogni stazione viene mappata a un indirizzo con il proprio numero di telefono primario e identificatore di indirizzo.
+Questa costante viene usata per selezionare un indirizzo in una riga da cui ha origine una chiamata. Il modello consueto seleziona l'indirizzo tramite il relativo identificatore di indirizzo. Gli identificatori di indirizzo sono il meccanismo usato per identificare gli indirizzi in TAPI. Tuttavia, in alcuni ambienti, quando si effettua una chiamata, è spesso più pratico identificare l'indirizzo di origine di una chiamata in base al numero di telefono anziché in base all'identificatore dell'indirizzo. Un esempio è la possibile modellazione di un numero elevato di stazioni (terze parti) sul commutatore tramite un dispositivo linea con molti indirizzi. La linea rappresenta il set di tutte le stazioni e ogni stazione è mappata a un indirizzo con il proprio numero di telefono principale e il proprio identificatore di indirizzo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,8 +49,8 @@ Questa costante viene utilizzata per selezionare un indirizzo su una riga in cui
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

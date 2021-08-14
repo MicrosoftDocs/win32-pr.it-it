@@ -1,9 +1,9 @@
 ---
-title: comando Close (Corecrt \_ io. h)
-description: Il comando Chiudi chiude il dispositivo o il file e tutte le risorse associate. MCI Scarica un dispositivo quando vengono chiuse tutte le istanze del dispositivo o tutti i file. Tutti i dispositivi MCI riconoscono questo comando.
+title: Comando close (Corecrt \_ io.h)
+description: Il comando close chiude il dispositivo o il file e tutte le risorse associate. MCI scarica un dispositivo quando tutte le istanze del dispositivo o tutti i file vengono chiusi. Tutti i dispositivi MCI riconoscono questo comando.
 ms.assetid: 0fd7b271-b29e-4170-9a14-81b14dc8a5ee
 keywords:
-- Chiudi comando Windows Multimedia
+- Comando close Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d28c255e518553c022dfc833c857b792f43fdbe8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b02acd3ebe3d45a402ae565c6fcac121f712df4374924bcb0e02c3dcadf9ceeb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807960"
 ---
-# <a name="close-command"></a>Chiudi comando
+# <a name="close-command"></a>comando close
 
-Il comando Chiudi chiude il dispositivo o il file e tutte le risorse associate. MCI Scarica un dispositivo quando vengono chiuse tutte le istanze del dispositivo o tutti i file. Tutti i dispositivi MCI riconoscono questo comando.
+Il comando close chiude il dispositivo o il file e tutte le risorse associate. MCI scarica un dispositivo quando tutte le istanze del dispositivo o tutti i file vengono chiusi. Tutti i dispositivi MCI riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -43,32 +43,32 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify" o entrambi. Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify" o entrambi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Per chiudere tutti i dispositivi aperti dall'applicazione, specificare l'identificatore di dispositivo "All" per il parametro *lpszDeviceID* .
+Per chiudere tutti i dispositivi aperti dall'applicazione, specificare l'identificatore di dispositivo "all" per il *parametro lpszDeviceID.*
 
-La chiusura del dispositivo **CDAudio** interrompe la riproduzione audio.
+La chiusura del **dispositivo cdaudio** interrompe la riproduzione audio.
 
-**Windows 2000/XP:** Se il dispositivo **CDAudio** è in esecuzione, la chiusura del dispositivo **CDAudio** non comporta l'interruzione della riproduzione dell'audio. Inviare prima il comando [Stop](stop.md) .
+**Windows 2000/XP:** Se il **dispositivo cdaudio** è in riproduzione, la chiusura del **dispositivo cdaudio** non causa l'interruzione della riproduzione dell'audio. Inviare prima [il comando](stop.md) stop.
 
 ## <a name="examples"></a>Esempio
 
-Il comando seguente chiude il dispositivo "audio".
+Il comando seguente chiude il dispositivo "mysound".
 
 ``` syntax
 close mysound
@@ -82,7 +82,7 @@ close mysound
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>\_Io. h Corecrt</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Corecrt \_ io.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ close mysound
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

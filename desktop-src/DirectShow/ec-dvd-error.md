@@ -1,7 +1,7 @@
 ---
 description: Segnala una condizione di errore DVD.
 ms.assetid: 2cd3e0c4-e2b7-4aa1-9f3c-9003eabfb08a
-title: EC_DVD_ERROR (Dvdevcode. h)
+title: EC_DVD_ERROR (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 3b338889836bf78a334784ea66c0e346e9f6b672
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0afa9ce750016001ddbe054d8cb9a589a2c68d8856e8e4db5c59043eb881129
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820528"
 ---
-# <a name="ec_dvd_error"></a>\_errore DVD \_ EC
+# <a name="ec_dvd_error"></a>ERRORE \_ DEL DVD \_ EC
 
 Segnala una condizione di errore DVD.
 
@@ -31,14 +31,14 @@ Segnala una condizione di errore DVD.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valore **DWORD** che indica la condizione di errore. Membro del tipo di dati enumerato [**\_ errore DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) .
+**Valore DWORD** che indica la condizione di errore. Membro del tipo [**di dati enumerato \_ DVD ERROR.**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error)
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Il significato dipende dal valore di *lParam1*. Per ulteriori informazioni, vedere l' [**\_ errore DVD**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error) .
+Il significato dipende dal valore di *lParam1*. Per [**altre \_ informazioni, vedere ERRORE DVD.**](/previous-versions/windows/desktop/api/dvdevcod/ne-dvdevcod-dvd_error)
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Questo evento viene generato in tutti i domini.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dvdevcode. h (include dshow. h)</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dvdevcode.h (includere Dshow.h)</dt> </dl> |
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Specifica il numero di gruppi di immagini (GOPs) tra le intestazioni di sequenza. Questa proprietà si applica ai codificatori video MPEG.
+description: Specifica il numero di gruppi di immagini (GOP) tra le intestazioni di sequenza. Questa proprietà si applica ai codificatori video MPEG.
 ms.assetid: 439be951-0185-4578-8b79-a5dfce254a68
-title: Proprietà AVEncMPVGOPSInSeq (codecapis. h)
+title: Proprietà AVEncMPVGOPSInSeq (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61414bd7389448e7ae43a52a065142fc40867f0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 61a4aba43159bc50509ee2ed045e2f5b2d277f7dff7011a3f959c3d1735a6f0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403753"
 ---
-# <a name="avencmpvgopsinseq-property"></a>Proprietà AVEncMPVGOPSInSeq
+# <a name="avencmpvgopsinseq-property"></a>AvEncMPVGOPSInSeq - proprietà
 
-Specifica il numero di gruppi di immagini (GOPs) tra le intestazioni di sequenza. Questa proprietà si applica ai codificatori video MPEG.
+Specifica il numero di gruppi di immagini (GOP) tra le intestazioni di sequenza. Questa proprietà si applica ai codificatori video MPEG.
 
 Si tratta di una proprietà di lettura/scrittura.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**UInt32** (**VT \_ UI4**)
+**UINT32** (**VT \_ UI4**)
 
 ## <a name="property-guid"></a>GUID proprietà
 
-**Codecapis \_ AVEncMPVGOPSInSeq**
+**CODECAPI \_ AVEncMPVGOPSInSeq**
 
 ## <a name="remarks"></a>Commenti
 
@@ -35,9 +35,9 @@ Si tratta di una proprietà di lettura/scrittura.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App UWP di Windows 2000 Professional \[ desktop apps \|\]<br/>                     |
-| Server minimo supportato<br/> | App desktop di Windows 2000 Server \[ \| UWP\]<br/>                           |
-| Intestazione<br/>                   | <dl> <dt>Codecapis. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| app UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
+| Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 <dl> <dt>
 
-[Proprietà dell'API codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

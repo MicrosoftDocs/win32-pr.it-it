@@ -1,21 +1,21 @@
 ---
-description: Inviato quando un'applicazione modifica lo stato di abilitazione di una finestra.
+description: Inviato quando un'applicazione modifica lo stato abilitato di una finestra.
 ms.assetid: df2cf953-121f-43bb-a06c-d10e445bfb5e
-title: Messaggio WM_ENABLE (winuser. h)
+title: WM_ENABLE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82bc83b84cbbf8e0c0145ef7d2730179cab54a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e01477de7cf1b9052bba752929210a1bc7553445f81f971aec67d7b510653a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200482"
 ---
-# <a name="wm_enable-message"></a>\_Messaggio di abilitazione WM
+# <a name="wm_enable-message"></a>Messaggio \_ WM ENABLE
 
-Inviato quando un'applicazione modifica lo stato di abilitazione di una finestra. Viene inviata alla finestra il cui stato abilitato è in corso di modifica. Questo messaggio viene inviato prima della restituzione della funzione [**EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) , ma dopo la modifica dello stato abilitato ([**WS \_ disabled**](window-styles.md) Style bit) della finestra.
+Inviato quando un'applicazione modifica lo stato abilitato di una finestra. Viene inviato alla finestra il cui stato abilitato sta cambiando. Questo messaggio viene inviato prima del ritorno della funzione [**EnableWindow,**](/windows/win32/api/winuser/nf-winuser-enablewindow) ma dopo la modifica dello stato abilitato (bit di stile [**WS \_ DISABLED)**](window-styles.md) della finestra.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,7 +31,7 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Indica se la finestra è stata abilitata o disabilitata. Questo parametro è **true** se la finestra è stata abilitata o **false** se la finestra è stata disabilitata.
+Indica se la finestra è stata abilitata o disabilitata. Questo parametro è **TRUE** se la finestra è stata abilitata o **FALSE** se la finestra è stata disabilitata.
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ Questo parametro non viene usato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Se un'applicazione elabora il messaggio, deve restituire zero.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

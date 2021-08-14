@@ -1,9 +1,9 @@
 ---
 title: ClosedCaption.SAMILang
-description: La proprietà SAMILang specifica o recupera la lingua visualizzata per la didascalia chiusa.
+description: La proprietà SAMILang specifica o recupera la lingua visualizzata per i sottotitoli codificati.
 ms.assetid: 990fb180-cb37-4022-b236-03f5acfd3ad3
 keywords:
-- Media Player Windows ClosedCaption. SAMILang
+- ClosedCaption.SAMILang Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae99b9a164e29b4adeb2fd7b23a1b79945dcb26e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c423b041601a38e81b1c4e83c34c010edb3365a4eb7e05596038fa887818ba1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342286"
 ---
 # <a name="closedcaptionsamilang"></a>ClosedCaption.SAMILang
 
-La proprietà **SAMILang** specifica o recupera la lingua visualizzata per la didascalia chiusa.
+La **proprietà SAMILang** specifica o recupera la lingua visualizzata per i sottotitoli codificati.
 
 ``` syntax
 player.closedCaption.SAMILang
@@ -31,11 +31,11 @@ player.closedCaption.SAMILang
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è una **stringa** di lettura/scrittura.
+Questa proprietà è una stringa di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per la didascalia chiusa sono definite tra i tag <STYLE> e </STYLE> nel file Sami. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. È ad esempio possibile utilizzare il codice seguente per definire l'inglese (Stati Uniti):
+Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili per i sottotitoli codificati sono definite tra <STYLE> i tag </STYLE> e nel file SAMI. Un identificatore di lingua viene specificato con una stringa alfanumerica univoca preceduta da un punto (.). Il nome specificato per una lingua può essere qualsiasi stringa. Ad esempio, per definire l'inglese (Stati Uniti) è possibile usare quanto segue:
 
 
 ```
@@ -45,15 +45,15 @@ Un file SAMI può contenere testo per una o più lingue. Le lingue disponibili p
 
 
 
-Se non si specifica alcun linguaggio SAMI, per impostazione predefinita viene usata la prima lingua definita nel file SAMI.
+Se non viene specificata alcuna lingua SAMI, per impostazione predefinita viene usata la prima lingua definita nel file SAMI.
 
-Valore passato utilizzando *ClosedCaption*. **SAMILang** deve corrispondere all'attributo **Name** nell'identificatore di linguaggio.
+Valore passato usando *ClosedCaption.* **SAMILang deve** corrispondere **all'attributo Name** nell'identificatore di lingua.
 
 **Windows Media Player 10 Mobile:** Questa proprietà è di sola lettura e restituisce sempre una stringa vuota.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene usato *ClosedCaption*. **SAMILang** in un elemento HTML SELECT per specificare la lingua del titolo closed. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene *utilizzato ClosedCaption*. **SAMILang** in un elemento HTML SELECT per specificare la lingua del sottotitolo codificato. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript
@@ -82,7 +82,7 @@ Nell'esempio JScript seguente viene usato *ClosedCaption*. **SAMILang** in un el
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Nell'esempio JScript seguente viene usato *ClosedCaption*. **SAMILang** in un el
 
 <dl> <dt>
 
-[**Aggiunta di didascalie chiuse a file multimediali digitali**](adding-closed-captions-to-digital-media.md)
+[**Aggiunta di sottotitoli codificati a supporti digitali**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Oggetto ClosedCaption**](closedcaption-object.md)

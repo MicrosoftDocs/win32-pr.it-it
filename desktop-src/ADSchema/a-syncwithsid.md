@@ -1,10 +1,10 @@
 ---
-title: Sync-with-SID (attributo)
-description: Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo è il gruppo locale al quale corrisponde un oggetto.
+title: Attributo Sync-With-SID
+description: Per la sincronizzazione dell'oggetto gruppo predefinito SAM o dei criteri locali, si tratta del gruppo locale a cui corrisponde un oggetto.
 ms.assetid: b983210d-1c54-4355-bc37-771e51016175
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo sync-with-SID
+- Schema AD dell'attributo Sync-With-SID
 - Schema AD dell'attributo syncWithSID
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 845a95b737a56a853fa7fb4e77d5612f1efc3c37
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 795fff281a75fe02f459c6128b0ac244b62d5542594532aefc5e9b1901a3841f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802021"
 ---
-# <a name="sync-with-sid-attribute"></a>Sync-with-SID (attributo)
+# <a name="sync-with-sid-attribute"></a>Attributo Sync-With-SID
 
-Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo è il gruppo locale al quale corrisponde un oggetto.
+Per la sincronizzazione dell'oggetto gruppo predefinito SAM o dei criteri locali, si tratta del gruppo locale a cui corrisponde un oggetto.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Sync-with-SID                        |
-| LDAP-Display-Name | syncWithSID                          |
+| CN                | Sincronizza con SID                        |
+| Ldap-Display-Name | syncWithSID                          |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.667               |
-| System-ID-GUID    | 037651e5-441d-11d1-a9c3-0000f80367c1 |
-| Sintassi            | [**Stringa (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | 037651e5-441d-11d1-a9c3-0000f80367c1 |
+| Sintassi            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
@@ -58,15 +58,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -79,15 +79,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ Per l'oggetto gruppo incorporato SAM/sincronizzazione dei criteri locali, questo
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: La funzione GetNPPTriggerFromBlob Recupera il trigger dal BLOB specificato.
+description: La funzione GetNPPTriggerFromBlob recupera il trigger dal BLOB specificato.
 ms.assetid: 48a27cf3-57b0-4241-a925-4209e0d384e2
-title: Funzione GetNPPTriggerFromBlob (Netmon. h)
+title: Funzione GetNPPTriggerFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 11622078354012de4796ddd43a698ac812951742
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8faa4dd2cbd4d54fa0fb43b371529a4e867c50c9ff7237f2860c83cff911628
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366039"
 ---
-# <a name="getnpptriggerfromblob-function"></a>GetNPPTriggerFromBlob (funzione)
+# <a name="getnpptriggerfromblob-function"></a>Funzione GetNPPTriggerFromBlob
 
-La funzione **GetNPPTriggerFromBlob** Recupera il trigger dal blob specificato.
+La **funzione GetNPPTriggerFromBlob** recupera il trigger dal BLOB specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,36 +41,36 @@ DWORD GetNPPTriggerFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per il BLOB.
 
 </dd> <dt>
 
-*pTrigger* \[ out\]
+*pTrigger* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al valore del trigger.
 
 </dd> <dt>
 
-*hErrorBlob* \[ out\]
+*hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errori che specifica il punto in cui si è verificato l'errore (se presente) nel BLOB originale.
+Handle a un BLOB di errore che specifica dove si è verificato l'errore (se presente) nel BLOB originale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni sul trigger sono archiviate nella categoria **trigger** del BLOB.
+Le informazioni sul trigger vengono archiviate **nella categoria Trigger** del BLOB.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,8 +80,8 @@ Le informazioni sul trigger sono archiviate nella categoria **trigger** del BLOB
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

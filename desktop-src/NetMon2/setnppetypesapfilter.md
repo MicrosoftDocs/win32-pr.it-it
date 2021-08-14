@@ -1,7 +1,7 @@
 ---
-description: Imposta il filtro ETYPE/SAP del BLOB.
+description: Imposta il filtro BLOB Etype/Sap.
 ms.assetid: cd659c93-3415-4737-b848-936e80318544
-title: Funzione SetNPPEtypeSapFilter (Netmon. h)
+title: Funzione SetNPPEtypeSapFilter (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 14657536e09b65912afa1715c296663d8d1916b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30b2f6ffbefad955034f520162b6fdc44d80198d926f35443ce21fefd80ef5c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363827"
 ---
-# <a name="setnppetypesapfilter-function"></a>SetNPPEtypeSapFilter (funzione)
+# <a name="setnppetypesapfilter-function"></a>Funzione SetNPPEtypeSapFilter
 
-La funzione **SetNPPEtypeSapFilter** imposta il filtro ETYPE/SAP del BLOB.
+La **funzione SetNPPEtypeSapFilter** imposta il filtro BLOB Etype/Sap.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,58 +45,58 @@ DWORD SetNPPEtypeSapFilter(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
 Handle per il BLOB.
 
 </dd> <dt>
 
-*nSaps* \[ in\]
+*nSaps* \[ Pollici\]
 </dt> <dd>
 
-Numero di succhi.
+Numero di sap.
 
 </dd> <dt>
 
-*nEtypes* \[ in\]
+*nEtypes* \[ Pollici\]
 </dt> <dd>
 
-Numero di ETYPE del nella tabella etype da impostare.
+Numero di Etype nella tabella Etype da impostare.
 
 </dd> <dt>
 
-*lpSapTable* \[ in\]
+*lpSapTable* \[ Pollici\]
 </dt> <dd>
 
 Puntatore alla tabella SAP impostata.
 
 </dd> <dt>
 
-*lpEtypeTable* \[ in\]
+*lpEtypeTable* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla tabella ETYPE impostata.
+Puntatore alla tabella Etype impostata.
 
 </dd> <dt>
 
-*FilterFlags* \[ in\]
+*FilterFlags* \[ Pollici\]
 </dt> <dd>
 
 Flag di filtro impostati.
 
 </dd> <dt>
 
-*hErrorBlob* \[ out\]
+*hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errori che specifica il punto in cui si è verificato l'errore (se presente) nel BLOB originale.
+Handle per un BLOB di errore che specifica dove si è verificato l'errore (se presente) nel BLOB originale.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -108,8 +108,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

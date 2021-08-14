@@ -1,21 +1,21 @@
 ---
-description: La \_ struttura della \_ richiesta GETUSERINFO MSV1 0 \_ è obsoleta.
+description: La struttura MSV1 \_ 0 \_ GETUSERINFO \_ REQUEST è obsoleta.
 ms.assetid: c5a668d4-f22b-4992-acde-96dc21f033c5
 title: MSV1_0_GETUSERINFO_REQUEST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e5aed671b8bbf4f9b35cf6b20d59085db8f542c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c4f385f2facbf3751610f3bc1075e620d4d7bae13574e257ae39e93b468581a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786730"
 ---
-# <a name="msv1_0_getuserinfo_request"></a>MSV1 \_ 0 \_ - \_ richiesta GETUSERINFO
+# <a name="msv1_0_getuserinfo_request"></a>RICHIESTA \_ \_ GETUSERINFO MSV1 0 \_
 
-La \_ struttura della \_ richiesta GETUSERINFO MSV1 0 \_ è obsoleta.
+La struttura MSV1 \_ 0 \_ GETUSERINFO \_ REQUEST è obsoleta.
 
-Per recuperare informazioni sull'utente della workstation, vedere la funzione [**NetWkstaUserGetInfo**](/windows/win32/api/lmwksta/nf-lmwksta-netwkstausergetinfo) .
+Per recuperare informazioni sull'utente della workstation, vedere la [**funzione NetWkstaUserGetInfo.**](/windows/win32/api/lmwksta/nf-lmwksta-netwkstausergetinfo)
 
  
 

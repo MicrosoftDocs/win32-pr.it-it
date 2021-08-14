@@ -1,30 +1,30 @@
 ---
-title: Modifica della proprietà del plug-in audio DSP di esempio
-description: Modifica della proprietà del plug-in audio DSP di esempio
+title: Modifica della proprietà del plug-in Audio DSP di esempio
+description: Modifica della proprietà del plug-in Audio DSP di esempio
 ms.assetid: 9e742bcd-cff8-422f-ad91-d8d46f15bdc4
 keywords:
-- Plug-in di Windows Media Player, DSP audio
-- plug-in, audio DSP
-- plug-in di elaborazione dei segnali digitali, proprietà audio
+- Windows Media Player plug-in, DSP audio
+- plug-in, DSP audio
+- plug-in di elaborazione del segnale digitale, proprietà audio
 - Plug-in DSP, proprietà audio
-- plug-in DSP audio, proprietà
+- plug-in DSP audio,proprietà
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbc27f58fa8c8903b54f9903797dcc32a7795841
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b8aac1cf385f41e966bec51f19454308cf52697c995db4962a45486999ebae9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342624"
 ---
-# <a name="changing-the-sample-audio-dsp-plug-in-property"></a>Modifica della proprietà del plug-in audio DSP di esempio
+# <a name="changing-the-sample-audio-dsp-plug-in-property"></a>Modifica della proprietà del plug-in Audio DSP di esempio
 
-È probabile che si desideri modificare la proprietà creata dalla procedura guidata plug-in di Windows Media Player per impostazione predefinita. Nell'elenco seguente vengono illustrati in dettaglio gli elementi che potrebbero richiedere modifiche:
+È probabile che si voglia modificare la proprietà creata per impostazione Windows Media Player guidata plug-in. L'elenco seguente elenca in dettaglio gli elementi che potrebbero richiedere la modifica:
 
--   **Risorsa della finestra di dialogo.** Fare clic sulla scheda **ResourceView** nella finestra dell'area di lavoro progetto. Espandere l'elenco di cartelle per aprire la cartella della finestra di dialogo. Fare doppio clic sulla risorsa finestra di dialogo per aprire l'editor risorse. È possibile apportare modifiche alla finestra di dialogo della pagina delle proprietà per soddisfare le proprie esigenze. Ad esempio, è possibile modificare il testo nell'etichetta o sostituire il controllo di modifica con una casella di controllo.
--   **Codice dell'oggetto della pagina delle proprietà.** L'implementazione predefinita usa una variabile di tipo Double per archiviare il fattore di scala. Potrebbe essere necessario un tipo di dati diverso. Questa operazione richiede anche la modifica del codice che rende permanente i dati nel registro di sistema e legge i dati dal registro di sistema (incluso il codice che legge dal registro di sistema in *CProjectName*::**FinalConstruct**).
--   **Variabile membro che archivia il valore della proprietà.** Questa variabile è denominata "m \_ fScaleFactor" ed è dichiarata come tipo Double. Potrebbe essere necessario modificare il nome e il tipo di questa variabile in tutto il progetto.
--   **Metodi get e Property put della proprietà.** Potrebbe essere necessario modificare i nomi, i parametri e le implementazioni di questi metodi. Non dimenticare di riflettere anche le modifiche apportate altrove nel progetto. Ad esempio, la pagina delle proprietà **Apply** Method chiama *CProjectName*::**put \_ scale**.
+-   **Risorsa della finestra di dialogo.** Fare clic **sulla scheda ResourceView** nella finestra dell Project workspace. Espandere l'elenco di cartelle per aprire la cartella Finestra di dialogo. Fare doppio clic sulla risorsa finestra di dialogo per aprire l'editor di risorse. È possibile apportare modifiche alla finestra di dialogo della pagina delle proprietà per soddisfare le proprie esigenze. Ad esempio, è possibile modificare il testo nell'etichetta o sostituire il controllo di modifica con una casella di controllo.
+-   **Codice dell'oggetto della pagina delle proprietà.** L'implementazione predefinita usa una variabile di tipo double per archiviare il fattore di scala. Potrebbe essere necessario un tipo di dati diverso. Ciò richiederebbe anche di modificare il codice che rende persistenti i dati nel Registro di sistema e legge i dati dal Registro di sistema (incluso il codice che legge dal Registro di sistema in *CProjectName*::**FinalConstruct**).
+-   **Variabile membro che archivia il valore della proprietà.** Questa variabile è denominata "m \_ fScaleFactor" ed è dichiarata come tipo double. È possibile modificare il nome e il tipo di questa variabile in tutto il progetto.
+-   **I metodi property get e property put.** È possibile modificare i nomi, i parametri e le implementazioni di questi metodi. Non dimenticare di riflettere anche queste modifiche altrove nel progetto. Ad esempio, il metodo **Apply della pagina delle** proprietà chiama *CProjectName*::**put \_ scale**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -33,9 +33,9 @@ ms.locfileid: "103712184"
 [**Implementazione di un plug-in DSP audio**](implementing-an-audio-dsp-plug-in.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

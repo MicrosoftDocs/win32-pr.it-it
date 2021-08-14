@@ -1,29 +1,29 @@
 ---
-description: Questo argomento descrive come rilevare la perdita di un dispositivo quando si usa un dispositivo di acquisizione video.
+description: Questo argomento descrive come rilevare la perdita di dispositivi quando si usa un dispositivo di acquisizione video.
 ms.assetid: 2bffe156-c507-437e-8f32-62aaebedd6f0
 title: Gestione della perdita di dispositivi video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0d083ebeb1203b0bba49a63745f62a4dff6b231
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6219518d3018aae5600e66387363bbd71e29e72b83174b370bf25377c8c6b669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878953"
 ---
 # <a name="handling-video-device-loss"></a>Gestione della perdita di dispositivi video
 
-Questo argomento descrive come rilevare la perdita di un dispositivo quando si usa un dispositivo di acquisizione video. Contiene le sezioni seguenti:
+Questo argomento descrive come rilevare la perdita di dispositivi quando si usa un dispositivo di acquisizione video. Contiene le sezioni seguenti:
 
--   [Registra per la notifica del dispositivo](#register-for-device-notification)
+-   [Registrarsi per la notifica del dispositivo](#register-for-device-notification)
 -   [Ottenere il collegamento simbolico del dispositivo](#get-the-symbolic-link-of-the-device)
--   [Gestisci \_ DEVICECHANGE WM](/windows)
--   [Annulla registrazione per notifica](#unregister-for-notification)
+-   [Gestire WM \_ DEVICECHANGE](/windows)
+-   [Annullare la registrazione per la notifica](#unregister-for-notification)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="register-for-device-notification"></a>Registra per la notifica del dispositivo
+## <a name="register-for-device-notification"></a>Registrarsi per la notifica del dispositivo
 
-Prima di iniziare l'acquisizione dal dispositivo, chiamare la funzione [**RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationa) per registrarsi per le notifiche del dispositivo. Eseguire la registrazione per la classe del dispositivo di **\_ acquisizione KSCATEGORY** , come illustrato nel codice seguente.
+Prima di iniziare l'acquisizione dal dispositivo, chiamare la [**funzione RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationa) per registrarsi per le notifiche del dispositivo. Eseguire la registrazione per la classe di dispositivo **KSCATEGORY \_ CAPTURE,** come illustrato nel codice seguente.
 
 
 ```C++
@@ -59,7 +59,7 @@ BOOL RegisterForDeviceNotification(HWND hwnd)
 
 ## <a name="get-the-symbolic-link-of-the-device"></a>Ottenere il collegamento simbolico del dispositivo
 
-Enumerare i dispositivi video nel sistema, come descritto in [enumerazione dei dispositivi di acquisizione video](enumerating-video-capture-devices.md). Scegliere un dispositivo dall'elenco e quindi eseguire una query sull'oggetto attivazione per il [ \_ tipo di \_ origine attributo MF DEVSOURCE VidCap attributo di \_ \_ \_ \_ \_ collegamento simbolico](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) , come illustrato nel codice seguente.
+Enumerare i dispositivi video nel sistema, come descritto in [Enumerazione dei dispositivi di acquisizione video](enumerating-video-capture-devices.md). Scegliere un dispositivo dall'elenco e quindi eseguire una query sull'oggetto di attivazione per l'attributo [MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP \_ SYMBOLIC \_ LINK,](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) come illustrato nel codice seguente.
 
 
 ```C++
@@ -78,9 +78,9 @@ HRESULT GetSymbolicLink(IMFActivate *pActivate)
 
 
 
-## <a name="handle-wm_devicechange"></a>Gestisci \_ DEVICECHANGE WM
+## <a name="handle-wm_devicechange"></a>Gestire WM \_ DEVICECHANGE
 
-Nel ciclo di messaggi, ascoltare i messaggi [**WM \_ DEVICECHANGE**](../devio/wm-devicechange.md) . Il parametro del messaggio *lParam* è un puntatore a una struttura [**HDR per dev \_ broadcast \_**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_hdr) .
+Nel ciclo di messaggi restare in ascolto dei [**messaggi \_ DEVICECHANGE WM.**](../devio/wm-devicechange.md) Il *parametro di messaggio lParam* è un puntatore a una struttura DEV BROADCAST [**\_ \_ HDR.**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_hdr)
 
 
 ```C++
@@ -106,8 +106,8 @@ Nel ciclo di messaggi, ascoltare i messaggi [**WM \_ DEVICECHANGE**](../devio/wm
 
 Confrontare quindi il messaggio di notifica del dispositivo con il collegamento simbolico del dispositivo, come indicato di seguito:
 
-1.  Controllare il **membro \_ DeviceType di dbch** della struttura dello [**sviluppatore \_ broadcast \_ HDR**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_hdr) . Se il valore è **DBT \_ DEVTYP \_ DEVICEINTERFACE**, eseguire il cast del puntatore della struttura a una struttura [**\_ \_ DEVICEINTERFACE dev broadcast**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_deviceinterface_a) .
-2.  Confrontare il membro **DBCC \_ Name** della struttura con il collegamento simbolico del dispositivo.
+1.  Controllare il **membro dbch \_ devicetype** della [**struttura DEV BROADCAST \_ \_ HDR.**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_hdr) Se il valore è **DBT \_ DEVTYP \_ DEVICEINTERFACE,** eseguire il cast del puntatore della struttura a una [**struttura DEV BROADCAST \_ \_ DEVICEINTERFACE.**](/windows/win32/api/dbt/ns-dbt-dev_broadcast_deviceinterface_a)
+2.  Confrontare il **membro nome dbcc \_** di questa struttura con il collegamento simbolico del dispositivo.
 
 
 ```C++
@@ -153,9 +153,9 @@ HRESULT CheckDeviceLost(DEV_BROADCAST_HDR *pHdr, BOOL *pbDeviceLost)
 
 
 
-## <a name="unregister-for-notification"></a>Annulla registrazione per notifica
+## <a name="unregister-for-notification"></a>Annullare la registrazione per la notifica
 
-Prima della chiusura dell'applicazione, chiamare [**UnregisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-unregisterdevicenotification) per annullare la registrazione per le notifiche del dispositivo/
+Prima che l'applicazione venga chiusa, chiamare [**UnregisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-unregisterdevicenotification) per annullare la registrazione per le notifiche del dispositivo/
 
 
 ```C++

@@ -4,16 +4,16 @@ description: Identità del servizio
 ms.assetid: 1d21d4eb-27e1-482b-9ceb-cea1d266df83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31211dac1940f6caff34c52e2ea1e74af269c980
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c47c2516d720fd1e4dc40962a1735aafc2e893853255917964a95f607db4b56a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118309322"
 ---
 # <a name="service-identity"></a>Identità del servizio
 
-La scelta di questa identità comporta l'esecuzione dell'applicazione come servizio. È possibile impostare gli account del servizio scegliendo l'opzione **Servizi** dal **Pannello di controllo**. Per ulteriori informazioni, vedere [installazione come applicazione di servizio](installing-as-a-service-application.md).
+Se si sceglie questa identità, l'applicazione verrà eseguita come servizio. È possibile impostare gli account del servizio scegliendo **l'opzione Servizi** dal menu **Pannello di controllo**. Per altre informazioni, vedere [Installazione come applicazione di servizio](installing-as-a-service-application.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -31,9 +31,9 @@ La scelta di questa identità comporta l'esecuzione dell'applicazione come servi
 [Utente specificato](specified-user.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

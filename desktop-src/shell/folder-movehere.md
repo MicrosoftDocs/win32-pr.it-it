@@ -1,7 +1,7 @@
 ---
-description: Sposta un elemento o elementi in questa cartella.
+description: Sposta uno o più elementi in questa cartella.
 ms.assetid: 07723dc1-5d9d-4f32-ab18-52617b0988c4
-title: Metodo Folder. MoveHere (shldisp. h)
+title: Metodo Folder.MoveHere (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: da6590d63f4a3c79252e25f3625c0ee75b146b6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb826d23a168d81d838341e96fa5e613f8b6f5261a3cda548a2be320acebbde8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103749178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458919"
 ---
-# <a name="foldermovehere-method"></a>Folder. MoveHere, metodo
+# <a name="foldermovehere-method"></a>Metodo Folder.MoveHere
 
-Sposta un elemento o elementi in questa cartella.
+Sposta uno o più elementi in questa cartella.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,21 +40,21 @@ Folder.MoveHere(
 
 <dl> <dt>
 
-*vite* \[ in\]
+*vItem* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Elemento o elementi da spostare. Può trattarsi di una stringa che rappresenta un nome file, un oggetto [**FolderItem**](folderitem.md) o un oggetto [**FolderItems**](folderitems.md) .
+Elemento o elementi da spostare. Può trattarsi di una stringa che rappresenta un nome file, un [**oggetto FolderItem**](folderitem.md) o [**un oggetto FolderItems.**](folderitems.md)
 
 </dd> <dt>
 
 *vOptions* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
-Opzioni per l'operazione di spostamento. Questo valore può essere zero o una combinazione dei valori seguenti. Questi valori sono basati su flag definiti per l'uso con il membro **fFlags** della struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) di C++. Questi flag non sono definiti come tali per Visual Basic, VBScript o JScript, quindi è necessario definirli autonomamente o utilizzarne gli equivalenti numerici.
+Opzioni per l'operazione di spostamento. Questo valore può essere zero o una combinazione dei valori seguenti. Questi valori sono basati sui flag definiti per l'uso con il membro **fFlags** della struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) di C++. Questi flag non sono definiti come tali per Visual Basic, VBScript o JScript, pertanto è necessario definirli manualmente o usare i relativi equivalenti numerici.
 
 <dt>
 
@@ -76,7 +76,7 @@ Non visualizzare una finestra di dialogo di stato.
 
 </dt> <dd>
 
-Assegnare al file un nuovo nome in un'operazione di spostamento, copia o ridenominazione se esiste già un file con il nome di destinazione.
+Assegnare al file utilizzato un nuovo nome in un'operazione di spostamento, copia o ridenominazione se esiste già un file con il nome di destinazione.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Rispondere con "Sì a tutti" per qualsiasi finestra di dialogo visualizzata.
 
 </dt> <dd>
 
-Mantenere le informazioni di annullamento, se possibile.
+Se possibile, mantenere le informazioni di annullamento.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Mantenere le informazioni di annullamento, se possibile.
 
 </dt> <dd>
 
-Eseguire l'operazione sui file solo se viene specificato un nome file con caratteri jolly ( \* . \* ).
+Eseguire l'operazione sui file solo se è specificato un nome di file con caratteri jolly ( \* . \* ).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Eseguire l'operazione sui file solo se viene specificato un nome file con caratt
 
 </dt> <dd>
 
-Visualizza una finestra di dialogo di stato ma non Mostra i nomi dei file.
+Consente di visualizzare una finestra di dialogo di stato senza visualizzare i nomi dei file.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Visualizza una finestra di dialogo di stato ma non Mostra i nomi dei file.
 
 </dt> <dd>
 
-Non confermare la creazione di una nuova directory se l'operazione ne richiede la creazione.
+Non confermare la creazione di una nuova directory se l'operazione ne richiede una.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Non confermare la creazione di una nuova directory se l'operazione ne richiede l
 
 </dt> <dd>
 
-Se si verifica un errore, non visualizzare un'interfaccia utente.
+Non visualizzare un'interfaccia utente se si verifica un errore.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Se si verifica un errore, non visualizzare un'interfaccia utente.
 
 </dt> <dd>
 
-[Versione 4,71.](versions.md) Non copiare gli attributi di sicurezza del file.
+[Versione 4.71.](versions.md) Non copiare gli attributi di sicurezza del file.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Se si verifica un errore, non visualizzare un'interfaccia utente.
 
 </dt> <dd>
 
-Utilizzare solo nella directory locale. Non funzionano in modo ricorsivo nelle sottodirectory.
+Operare solo nella directory locale. Non operare in modo ricorsivo nelle sottodirectory.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Utilizzare solo nella directory locale. Non funzionano in modo ricorsivo nelle s
 
 </dt> <dd>
 
-[Versione 5,0.](versions.md) Non spostare i file connessi come gruppo. Spostare solo i file specificati.
+[Versione 5.0.](versions.md) Non spostare i file connessi come gruppo. Spostare solo i file specificati.
 
 </dd> </dl> </dd> </dl>
 
@@ -186,15 +186,15 @@ Questo metodo non restituisce valori.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi sono implementati per tutte le cartelle. Il metodo [**ParseName**](folder-parsename.md) , ad esempio, non è implementato per la cartella del pannello di controllo ( \_ controlli CSIDL). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non è implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **MoveHere** per spostare il file Temp.txt dalla directory radice dell'unità c alla cartella c: \\ Windows. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa MoveHere** per spostare il file Temp.txt dalla directory radice dell'unità C alla cartella C: \\ Windows. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -217,7 +217,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -273,11 +273,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

@@ -1,27 +1,27 @@
 ---
-title: Co-Branding negozi online
-description: Co-Branding negozi online
+title: Co-Branding online
+description: Co-Branding online
 ms.assetid: b564845a-a4e0-4fe6-90cb-63ef320c7e52
 keywords:
-- Windows Media Player Online Stores, co-branding
-- negozi online, co-branding
-- digitare 1 negozi online, co-branding
-- digitare 2 negozi online, co-branding
-- negozi online di co-branding
+- Windows Media Player online store, co-branding
+- online store, co-branding
+- tipo 1 punti vendita online, co-personalizzazione
+- store online di tipo 2, co-personalizzazione
+- co-branding di negozi online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c3cae110d3ed04e864f1b617cb4fd6fcdee3b1f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db3ca69c377a7aedeb71f05008d707fab955f02bf0e02d7b0ca35861105aade1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342132"
 ---
-# <a name="co-branding-online-stores"></a>Co-Branding negozi online
+# <a name="co-branding-online-stores"></a>Co-Branding online
 
-I personal computer OEM che non operano in un Music Store possono coesistere con i provider di negozio online. Il programma di installazione di Windows Media Player supporta il parametro della riga di comando ServiceExtra per consentire agli OEM hardware di impostare un attributo personalizzato che può essere utilizzato dall'archivio online per identificare quale OEM ha installato l'archivio online iniziale.
+Gli OEM di personal computer che non gestiscono un negozio di musica possono creare un co-brand con i provider di store online. Windows Media Player programma di installazione supporta il parametro della riga di comando ServiceExtra per consentire agli OEM hardware di impostare un attributo personalizzato che lo store online può usare per identificare quale OEM ha installato lo store online iniziale.
 
-Ad esempio, se un produttore di computer denominato Fabrikam vuole impostare l'archivio online iniziale su Proseware Music Store, potrebbe usare la riga di comando seguente per installare Windows Media Player 10:
+Ad esempio, se un autore di computer denominato Fabrikam vuole impostare lo store online iniziale su Proseware Music Store, potrebbe usare la riga di comando seguente per installare Windows Media Player 10:
 
 
 ```C++
@@ -30,7 +30,7 @@ MP10Setup.exe /q:A /c:"setup_wm.exe /Q /R:N /DefaultService:Proseware /ServiceIn
 
 
 
-Quando Windows Media Player viene installato in questo modo, il lettore aggiunge la stringa ServiceExtra ogni volta che viene aperto il servizio proseware. Nell'esempio seguente viene illustrato l'URL che Windows Media Player invierà al servizio Proseware per recuperare il documento ServiceInfo:
+Quando Windows Media Player viene installato in questo modo, il lettore aggiunge la stringa ServiceExtra ogni volta che apre il servizio Proseware. L'esempio seguente mostra l'URL che Windows Media Player inviare al servizio Proseware per recuperare il documento ServiceInfo:
 
 
 ```C++
@@ -39,7 +39,7 @@ https://www.proseware.com/XML/serviceinfo.asp?OEM=Fabrikam
 
 
 
-L'archivio online di Proseware può quindi usare la stringa di query per determinare quale Windows OEM installato Media Player e restituire un documento ServiceInfo generato in modo dinamico che punti alla versione co-branding del negozio online.
+Lo store online Proseware può quindi usare la stringa di query per determinare quale OEM installato Windows Media Player e restituire un documento ServiceInfo generato dinamicamente che punta alla versione con marchio co-branded dello store online.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -51,9 +51,9 @@ L'archivio online di Proseware può quindi usare la stringa di query per determi
 [**Configurare i parametri della riga di comando per i negozi online**](setup-command-line-parameters-for-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

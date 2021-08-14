@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene illustrato il codice sul lato server Diffie-Hellman/SChannel tipico per la creazione di una chiave master.
+description: L'esempio seguente illustra il tipico codice lato server Diffie-Hellman/Schannel per la creazione di una chiave master.
 ms.assetid: 1ef0a2ea-8684-425c-abfe-9f65d8df7bbd
-title: Diffie-Hellman del codice server per la creazione della chiave master
+title: Diffie-Hellman codice server per la creazione della chiave master
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31dd93f06e4675123e3bb1a6981c0135cc229513
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f8b074c0069e325d7bd2b0e383fa2fe44beff2b3d10429b3af5aa396205270a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106311926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767624"
 ---
-# <a name="diffie-hellman-server-code-for-creating-the-master-key"></a>Diffie-Hellman del codice server per la creazione della chiave master
+# <a name="diffie-hellman-server-code-for-creating-the-master-key"></a>Diffie-Hellman codice server per la creazione della chiave master
 
-Nell'esempio seguente viene illustrato il codice del lato Server/Schannel di [*Diffie-Hellman*](../secgloss/d-gly.md)tipico per la creazione di una [*chiave master*](../secgloss/m-gly.md).
+L'esempio seguente illustra il tipico codice lato server [*Diffie-Hellman*](../secgloss/d-gly.md)/Schannel per la creazione di una [*chiave master.*](../secgloss/m-gly.md)
 
 
 ```C++

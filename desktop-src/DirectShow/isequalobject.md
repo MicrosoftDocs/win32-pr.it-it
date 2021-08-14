@@ -1,7 +1,7 @@
 ---
-description: La funzione IsEqualObject controlla se due interfacce si trovano nello stesso oggetto.
+description: La funzione IsEqualObject controlla se due interfacce si trova nello stesso oggetto.
 ms.assetid: 51325e05-5a7f-4a80-a12e-2e7dedc028e2
-title: Funzione IsEqualObject (Wxutil. h)
+title: Funzione IsEqualObject (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e959d687d7d6b11dc6055daeda789e728d875d70
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e385cf887dceddcdc470b908d46f59405f573ab47837b26f8453ce6154eb0d72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817453"
 ---
-# <a name="isequalobject-function"></a>IsEqualObject (funzione)
+# <a name="isequalobject-function"></a>Funzione IsEqualObject
 
-La `IsEqualObject` funzione controlla se due interfacce si trovano nello stesso oggetto.
+La `IsEqualObject` funzione controlla se due interfacce sono nello stesso oggetto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Puntatore all'altra interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se le interfacce si trovano entrambi nello stesso oggetto. in caso contrario, **false** .
+Restituisce **TRUE** se le interfacce sono entrambe nello stesso oggetto oppure **FALSE in caso** contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,8 +67,8 @@ Restituisce **true** se le interfacce si trovano entrambi nello stesso oggetto. 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

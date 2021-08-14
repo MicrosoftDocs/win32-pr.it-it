@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_SETHANDLE (winuser. h)
+title: EM_SETHANDLE messaggio (Winuser.h)
 description: Imposta l'handle della memoria che verrà utilizzata da un controllo di modifica su più righe.
 ms.assetid: 0eae9365-62af-4040-8a51-273997a00b81
 keywords:
-- Controlli di Windows Message EM_SETHANDLE
+- EM_SETHANDLE dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac8f918d056db1000c6018f55d89095a73a15109
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b3ece3eb9c385b5f4d468a7dd2f08ff3335a4314b4c90569cdba453c4815728f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412592"
 ---
-# <a name="em_sethandle-message"></a>\_Messaggio filehandle em
+# <a name="em_sethandle-message"></a>Messaggio \_ EM SETHANDLE
 
 Imposta l'handle della memoria che verrà utilizzata da un controllo di modifica su più righe.
 
@@ -32,7 +32,7 @@ Imposta l'handle della memoria che verrà utilizzata da un controllo di modifica
 *wParam* 
 </dt> <dd>
 
-Handle per il buffer di memoria utilizzato dal controllo di modifica per archiviare il testo attualmente visualizzato anziché allocare la propria memoria. Se necessario, il controllo rialloca la memoria.
+Handle per il buffer di memoria utilizzato dal controllo di modifica per archiviare il testo attualmente visualizzato anziché allocare la propria memoria. Se necessario, il controllo rialloca questa memoria.
 
 </dd> <dt>
 
@@ -45,17 +45,17 @@ Questo parametro non viene usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Prima che un'applicazione imposti un nuovo handle di memoria, deve inviare un messaggio [**\_ GetHandle em**](em-gethandle.md) per recuperare l'handle del buffer di memoria corrente e liberare tale memoria.
+Prima che un'applicazione imposta un nuovo handle di memoria, deve inviare un messaggio [**EM \_ GETHANDLE**](em-gethandle.md) per recuperare l'handle del buffer di memoria corrente e deve liberare tale memoria.
 
-Un controllo di modifica rialloca automaticamente il buffer specificato ogni volta che è necessario spazio aggiuntivo per il testo o rimuove un testo sufficiente, in modo che non sia più necessario spazio aggiuntivo.
+Un controllo di modifica rialloca automaticamente il buffer specificato ogni volta che necessita di spazio aggiuntivo per il testo oppure rimuove un testo sufficiente in modo che non sia più necessario spazio aggiuntivo.
 
-L'invio di un messaggio di controllo **\_ em** Cancella il buffer di annullamento ([**em \_ CANUNDO**](em-canundo.md) restituisce zero) e il flag di modifica interno ([**em \_ GetModify**](em-getmodify.md) restituisce zero). La finestra modifica controllo viene ridisegnato.
+L'invio di un messaggio **EM \_ SETHANDLE** cancella il buffer di [**annullamento (EM \_ CANUNDO**](em-canundo.md) restituisce zero) e il flag di modifica interno ([**EM \_ GETMODIFY**](em-getmodify.md) restituisce zero). La finestra del controllo di modifica viene ridisegnata.
 
-**Modifica avanzata:** Il messaggio della **\_ gestione** dei messaggi em non è supportato. I controlli Rich Edit non archiviano il testo come una semplice matrice di caratteri.
+**Rich Edit:** Il **messaggio EM \_ SETHANDLE** non è supportato. I controlli Rich Edit non archiviano il testo come semplice matrice di caratteri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ L'invio di un messaggio di controllo **\_ em** Cancella il buffer di annullament
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,13 +76,13 @@ L'invio di un messaggio di controllo **\_ em** Cancella il buffer di annullament
 **Riferimento**
 </dt> <dt>
 
-[**\_CANUNDO em**](em-canundo.md)
+[**EM \_ CANUNDO**](em-canundo.md)
 </dt> <dt>
 
-[**GetHandle EM \_**](em-gethandle.md)
+[**EM \_ GETHANDLE**](em-gethandle.md)
 </dt> <dt>
 
-[**GetModify EM \_**](em-getmodify.md)
+[**EM \_ GETMODIFY**](em-getmodify.md)
 </dt> </dl>
 
  

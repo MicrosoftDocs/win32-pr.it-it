@@ -1,25 +1,25 @@
 ---
 title: ReadWriteBytesXmlExample
-description: Questo esempio scrive i dati binari usando la codifica MTOM e lo legge.
+description: Questo esempio scrive dati binari usando la codifica MTOM e li legge nuovamente.
 ms.assetid: 6b80846e-6959-4c38-bf1b-17827ecb9d1a
 keywords:
 - Servizi Web ReadWriteBytesXmlExample per Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8000413cefefc4e0b571e872332560b1b4c8444f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 69b39a5061295afde96d2c0a3622d3121eb58fdb2fd5bdd7a92e8fa72d6eeaf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192877"
 ---
 # <a name="readwritebytesxmlexample"></a>ReadWriteBytesXmlExample
 
-Questo esempio scrive i dati binari usando la codifica MTOM e lo legge.
+Questo esempio scrive dati binari usando la codifica MTOM e li legge nuovamente.
 
-## <a name="readwritebytesxmlcpp"></a>ReadWriteBytesXml. cpp
+## <a name="readwritebytesxmlcpp"></a>ReadWriteBytesXml.cpp
 
 
 ```C++
@@ -384,9 +384,9 @@ Exit:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

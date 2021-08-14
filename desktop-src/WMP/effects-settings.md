@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. Settings
-description: Il metodo Settings Visualizza la pagina attribute per la visualizzazione corrente, se presente.
+title: EFFECTS.settings
+description: Il metodo settings visualizza la pagina dell'attributo per la visualizzazione corrente, se presente.
 ms.assetid: d5c858d4-b5ee-4490-bc58-1fd38bd6a250
 keywords:
-- EFFETTI. Impostazioni Media Player Windows
+- Effects.settings Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 511e7d4a2890c45e30d497280c3907c3517ee761
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 556bbc388cac62d69758c7047d43a1a9a56a1be30015ebdb3bcfc27212e429c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339966"
 ---
-# <a name="effectssettings"></a>EFFECTs. Settings
+# <a name="effectssettings"></a>EFFECTS.settings
 
-Il metodo **Settings** Visualizza la pagina attribute per la visualizzazione corrente, se presente.
+Il **metodo settings** visualizza la pagina dell'attributo per la visualizzazione corrente, se presente.
 
 ``` syntax
         elementID.settings()
@@ -42,7 +42,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -50,7 +50,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**EFFECTs-elemento**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

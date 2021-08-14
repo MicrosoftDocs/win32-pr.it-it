@@ -1,9 +1,9 @@
 ---
 title: Elemento Delay (eventTriggerType)
-description: Specifica la quantità di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività.
+description: Specifica il periodo di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività.
 ms.assetid: b38bebc7-9818-41f0-a277-cb0e63c28d86
 keywords:
-- Utilità di pianificazione elemento Delay
+- Ritardo dell'Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: de1117ff4f7e0f823b1b213721521e1b526125bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9c9523b450d5f1ea86bdf09afba26604ebfe8055661fc18c439b4e30c97169d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357107"
 ---
 # <a name="delay-eventtriggertype-element"></a>Elemento Delay (eventTriggerType)
 
-Specifica la quantità di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni,' t'è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per ulteriori informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
+Specifica il periodo di tempo tra il momento in cui si verifica l'evento e l'avvio dell'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni, 'T' è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per altre informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
 
 ``` syntax
 <xs:element name="Delay"
@@ -30,7 +30,7 @@ Specifica la quantità di tempo tra il momento in cui si verifica l'evento e l'a
  />
 ```
 
-L'elemento **delay** viene definito dal tipo complesso [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md) .
+**L'elemento Delay** è definito dal tipo complesso [**eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,9 +44,9 @@ L'elemento **delay** viene definito dal tipo complesso [**eventTriggerType**](ta
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il ritardo del trigger dell'evento viene specificato dalla proprietà [**EventTrigger. Delay**](eventtrigger-delay.md) .
+Per lo sviluppo di script, il ritardo del trigger di evento viene specificato dalla [**proprietà EventTrigger.Delay.**](eventtrigger-delay.md)
 
-Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dalla proprietà [**IEventTrigger::D Elay**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_delay) .
+Per lo sviluppo C++, il ritardo del trigger di evento viene specificato dalla [**proprietà IEventTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-ieventtrigger-get_delay)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dal
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -63,7 +63,7 @@ Per lo sviluppo in C++, il ritardo del trigger dell'evento viene specificato dal
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

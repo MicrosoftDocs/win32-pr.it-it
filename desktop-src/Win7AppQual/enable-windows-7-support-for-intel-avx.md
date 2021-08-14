@@ -1,17 +1,17 @@
 ---
-description: Abilitare il supporto di Windows 7 per Intel AVX
+description: Abilitare Windows 7 supporto per Intel AVX
 ms.assetid: fe19e337-3109-42d6-a704-70662ac7c684
-title: Abilitare il supporto di Windows 7 per Intel AVX
+title: Abilitare Windows 7 supporto per Intel AVX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1509bac62634c85aa733b2c1de0c152169ac6cda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f30469d0218f5da2c9f6df2b4f5637edffe09153ebad721f48b47401ecb1f3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118329815"
 ---
-# <a name="enable-windows-7-support-for-intel-avx"></a>Abilitare il supporto di Windows 7 per Intel AVX
+# <a name="enable-windows-7-support-for-intel-avx"></a>Abilitare Windows 7 supporto per Intel AVX
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
@@ -30,19 +30,19 @@ ms.locfileid: "108088459"
 
 ## <a name="description"></a>Descrizione
 
-Intel<sup>?</sup> Advanced Vector Extensions (AVX)<sup>?</sup> è un'estensione di vettore a virgola mobile SIMD a 256 bit dell'architettura Intel. Include estensioni sia per i set di istruzioni che per i set di registri.
+Intel<sup>?</sup> Advanced Vector Extensions (AVX)<sup>?</sup> è un'estensione del vettore a virgola mobile SIMD a 256 bit dell'architettura Intel. Include estensioni sia per i set di istruzioni che per i set di registri.
 
-Microsoft ha sviluppato alcuni miglioramenti delle API, ad esempio le funzioni XState, che consentono alle applicazioni di accedere e modificare le informazioni e lo stato delle funzionalità estese del processore, incluso AVX.
+Microsoft ha sviluppato alcuni miglioramenti delle API, ad esempio le funzioni XState, che consentono alle applicazioni di accedere e modificare le informazioni e lo stato delle funzionalità estese del processore, tra cui AVX.
 
 ## <a name="usage-scenarios"></a>Scenari di utilizzo
 
 Esistono tre livelli generali di potenziale impatto.
 
-**Livello 1:** Le applicazioni che non usano direttamente Intel AVX non noteranno alcun impatto sulle relative funzionalità, anche se chiamano librerie o usano compilatori che usano o generano indirettamente estensioni Intel AVX. Rappresenta di gran lunga la maggior parte delle applicazioni.
+**Livello 1:** Le applicazioni che non usano direttamente Intel AVX non noteranno alcun impatto sulle relative funzionalità, anche se chiamano in librerie o usano compilatori che usano o generano indirettamente estensioni Intel AVX. Rappresenta di gran lunga la maggior parte delle applicazioni.
 
-**Livello 2:** Le applicazioni avanzate che usano in modo esplicito il set di istruzioni Intel AVX potranno accedere e modificare il contenuto del registro AVX quando viene generata un'eccezione hardware. Un numero molto ridotto di applicazioni rientra in questa categoria, perché implica una conoscenza approfondita del flusso di istruzioni in esecuzione al momento dell'eccezione, ad esempio le applicazioni con sezioni scritte in linguaggio assembly o quelle che generano codice macchina in fase di esecuzione (ad esempio, runtime di codice gestito con compilazione JIT).
+**Livello 2:** Le applicazioni avanzate che usano in modo esplicito il set di istruzioni Intel AVX potranno accedere e modificare il contenuto del registro AVX quando viene generata un'eccezione hardware. Un numero molto ridotto di applicazioni rientra in questa categoria, perché implica una conoscenza approfondita del flusso di istruzioni in esecuzione al momento dell'eccezione, ad esempio le applicazioni con sezioni scritte nel linguaggio assembly o quelle che generano codice macchina in fase di esecuzione (ad esempio, runtime di codice gestito con compilazione JIT).
 
-**Livello 3:** Le applicazioni del debugger saranno in grado di accedere e modificare lo stato AVX nell'applicazione di cui è in corso il debug.
+**Livello 3:** Le applicazioni debugger saranno in grado di accedere e modificare lo stato AVX nell'applicazione in fase di debug.
 
 ## <a name="how-to-leverage-feature-capabilities"></a>Come sfruttare le funzionalità delle funzionalità
 
@@ -78,7 +78,7 @@ Esistono tre livelli generali di potenziale impatto.
 
 ## <a name="links-to-other-resources"></a>Collegamenti ad altre risorse
 
--   Per informazioni sulle funzioni XState nel Windows SDK, vedere [Funzioni di debug.](../debug/debugging-functions.md)
+-   Per informazioni sulle funzioni XState in Windows SDK, vedere [Funzioni di debug](../debug/debugging-functions.md).
 -   Per una panoramica delle istruzioni e delle funzionalità di Intel AVX, vedere [Intel AVX: New Frontiers in Performance Improvements and Energy Efficiency](https://software.intel.com/articles/intel-avx-new-frontiers-in-performance-improvements-and-energy-efficiency/).
 
  

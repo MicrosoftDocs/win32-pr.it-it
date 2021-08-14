@@ -1,5 +1,5 @@
 ---
-description: 'Metodo IXml2Dex::CreateGraphFromFile: non implementato.'
+description: 'Metodo IXml2Dex::CreateGraphFromFile : non implementato.'
 ms.assetid: b476e0c9-1432-4644-8002-154797a2a594
 title: Metodo IXml2Dex::CreateGraphFromFile
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a79b4115dddb0e15adb4284bbefd245aba088d5f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3e3ce23fd92a843219490202d42ead4e386deddc8c056b883d2ac45b77a8555d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817068"
 ---
 # <a name="ixml2dexcreategraphfromfile-method"></a>Metodo IXml2Dex::CreateGraphFromFile
 
@@ -78,7 +78,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento [Microsoft Windows SDK per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

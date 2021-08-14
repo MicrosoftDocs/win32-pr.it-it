@@ -1,9 +1,9 @@
 ---
-title: Metodo INapEnforcementClientConnection GetPrivateData (NapEnforcementClient. h)
-description: Viene usato da NapAgent per ottenere i dati privati.
+title: Metodo INapEnforcementClientConnection GetPrivateData (NapEnforcementClient.h)
+description: Viene usato da NapAgent per ottenere dati privati.
 ms.assetid: d38ef523-b645-401f-b3a9-1315ef39931a
 keywords:
-- NAP metodo GetPrivateData
+- Metodo GetPrivateData NAP
 - Metodo GetPrivateData NAP, interfaccia INapEnforcementClientConnection
 - Interfaccia INapEnforcementClientConnection NAP, metodo GetPrivateData
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6618ff7b25ad57cbb943107e80f299d9b6a68bea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bab38a949e2c6c00cececc4b4db21da904b19552c88609e9c181a5146d6ac8df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117799625"
 ---
-# <a name="inapenforcementclientconnectiongetprivatedata-method"></a>Metodo INapEnforcementClientConnection:: GetPrivateData
+# <a name="inapenforcementclientconnectiongetprivatedata-method"></a>Metodo INapEnforcementClientConnection::GetPrivateData
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapEnforcementClientConnection:: GetPrivateData** viene usato da napagent per ottenere i dati privati.
+Il **metodo INapEnforcementClientConnection::GetPrivateData** viene usato da NapAgent per ottenere dati privati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,23 +47,23 @@ HRESULT GetPrivateData(
 
 <dl> <dt>
 
-*PrivateData* \[ out\]
+*privateData* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un puntatore a un BLOB di dati opachi [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) che può essere interpretato solo da napagent.
+Puntatore a un puntatore a un BLOB di dati opaco [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) che solo NapAgent può interpretare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
@@ -76,10 +76,10 @@ Puntatore a un puntatore a un BLOB di dati opachi [**PrivateData**](/windows/win
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

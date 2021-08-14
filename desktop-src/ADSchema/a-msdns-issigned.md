@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DNS-is-signed
-description: Attributo usato per definire se la zona DNS è firmata o meno.
+title: Attributo ms-DNS-Is-Signed
+description: Attributo utilizzato per definire se la zona DNS è firmata o meno.
 ms.assetid: 488661fd-1a3b-4b63-9ec6-d402f4318c59
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DNS-is-signed
-- msDNs-schema AD dell'attributo con firma
+- Schema AD dell'attributo ms-DNS-Is-Signed
+- Schema AD dell'attributo msDNS-IsSigned
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 142fdda1a0c072159cdee1f21982099609472bfe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: daaabf907d75db04eb0c760e79cb48e37814141cdfa24bdc9513db5ee189ab7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104400992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427085"
 ---
-# <a name="ms-dns-is-signed-attribute"></a>attributo ms-DNS-is-signed
+# <a name="ms-dns-is-signed-attribute"></a>Attributo ms-DNS-Is-Signed
 
-Attributo usato per definire se la zona DNS è firmata o meno.
+Attributo utilizzato per definire se la zona DNS è firmata o meno.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-firmato                     |
-| LDAP-Display-Name | msDNs-con firma                       |
+| CN                | ms-DNS-Is-Signed                     |
+| Ldap-Display-Name | msDNS-IsSigned                       |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
-| System-ID-GUID    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
+| System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -53,15 +53,15 @@ Attributo usato per definire se la zona DNS è firmata o meno.
 | ID collegamento                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| È a valore singolo       | Vero                                     |
+| A valore singolo       | Vero                                     |
 | Indicizzato             | Falso                                    |
 | Nel catalogo globale      | Falso                                    |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Classi utilizzate in        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Classi usate in        | [**Zona DNS**](c-dnszone.md)<br/> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0773aa74-adf2-4e90-aead-2a9a981be3cb
-ms.openlocfilehash: e9aa647434aab5a483626757179a7b23b3372a02
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: befc217eeb24453d7db726cf68d233fa57e5a7971fd148406cf90810b52b070d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459038"
 ---
 # <a name="fmevent_selchange-message"></a>Messaggio FMEVENT \_ SELCHANGE
 

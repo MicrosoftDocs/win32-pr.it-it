@@ -1,6 +1,6 @@
 ---
-title: Metodo IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces. h)
-description: Riceve una notifica che segnala che il supporto è stato espulso dall'unità. | Metodo IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces. h)
+title: Metodo IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces.h)
+description: Riceve la notifica che il supporto è stato espulso dall'unità. | Metodo IVMDVDDriveEvents OnMediaEject (VPCCOMInterfaces.h)
 ms.assetid: ec90fbce-7123-4bfa-abab-300e916fa089
 keywords:
 - Metodo OnMediaEject Virtual PC
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b66091dcc6cc5ee28ab6e0cb3d58e3e647e41cb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6e2fbf9ffe589597e1baab7c0b503cf94384cfa540749cfe49e083286f743370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753752"
 ---
-# <a name="ivmdvddriveeventsonmediaeject-method"></a>Metodo IVMDVDDriveEvents:: OnMediaEject
+# <a name="ivmdvddriveeventsonmediaeject-method"></a>Metodo IVMDVDDriveEvents::OnMediaEject
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Riceve una notifica che segnala che il supporto è stato espulso dall'unità.
+Riceve la notifica che il supporto è stato espulso dall'unità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,20 +44,20 @@ HRESULT OnMediaEject(
 
 <dl> <dt>
 
-*mediaPath* \[ in\]
+*mediaPath* \[ Pollici\]
 </dt> <dd>
 
-Lettera o percorso dell'unità host nell'immagine ISO.
+Lettera di unità host, o percorso, dell'immagine ISO.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene chiamato quando viene espulso il supporto (un'immagine ISO o un disco in un'unità host). Il programma client deve implementare questo metodo di interfaccia per ricevere una notifica dell' \_ evento vmDVDDriveEvent oneject originato da [**IVMDVDDrive**](ivmdvddrive.md).
+Questo metodo viene chiamato quando viene espulso un supporto (un'immagine ISO o un disco in un'unità host). Il programma client deve implementare questo metodo di interfaccia per ricevere la notifica dell'evento OnEject vmDVDDriveEvent \_ originato da [**IVMDVDDrive.**](ivmdvddrive.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,12 +65,12 @@ Questo metodo viene chiamato quando viene espulso il supporto (un'immagine ISO o
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                    |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                     |
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | DIID \_ IVMDVDDriveEvents è definito come c2a7d8e9-E76C-4EB8-94f7-71a5122d249b<br/>         |
+| Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | DIID \_ IVMDVDDriveEvents è definito come c2a7d8e9-e76c-4eb8-94f7-71a5122d249b<br/>         |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Recupera i dati di stringa per il TAGID specificato.
+description: Recupera i dati stringa per l'ELEMENTO TAGID specificato.
 ms.assetid: c558e0bb-7e35-4298-93fb-400db00a2972
-title: SdbGetStringTagPtr (funzione)
+title: Funzione SdbGetStringTagPtr
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 56c80c4000df95fe13486d95bb872bfc39274389
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e14c499b5f23f342192ad42b72f8a4c29f8312adbf6bbcb8310ee182cd457f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404430"
 ---
-# <a name="sdbgetstringtagptr-function"></a>SdbGetStringTagPtr (funzione)
+# <a name="sdbgetstringtagptr-function"></a>Funzione SdbGetStringTagPtr
 
-Recupera i dati di stringa per il **TagId** specificato.
+Recupera i dati stringa per **l'ELEMENTO TAGID specificato.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ LPTSTR WINAPI SdbGetStringTagPtr(
 
 <dl> <dt>
 
-*PDB* \[ in\]
+*pdb* \[ Pollici\]
 </dt> <dd>
 
 Handle per il database shim.
 
 </dd> <dt>
 
-*tiWhich* \[ in\]
+*tiWhich* \[ Pollici\]
 </dt> <dd>
 
-**TagId** che corrisponde ai dati stringa da recuperare.
+**TAGID** che corrisponde ai dati stringa da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce un puntatore ai dati di tipo stringa o **null** se **TagId** non è valido o non è di tipo **\_ \_ stringa** o **tipo di tag \_ \_ STRINGREF**.
+La funzione restituisce un puntatore ai dati stringa o **NULL** se **TAGID** non è valido o non è di tipo **TAG TYPE \_ \_ STRING** o **TAG TYPE \_ \_ STRINGREF.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ La funzione restituisce un puntatore ai dati di tipo stringa o **null** se **Tag
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_CONDITIONALCOLUMN. szColumnName'
-title: Proprietà JET_CONDITIONALCOLUMN. szColumnName
+description: 'Altre informazioni su: JET_CONDITIONALCOLUMN.szColumnName'
+title: JET_CONDITIONALCOLUMN.szColumnName
 TOCTitle: 'szColumnName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN.szColumnName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_conditionalcolumn.szcolumnname(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e9e8b7bd9c148ffce5bc92d6908aa6b5bf4f7f66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdac3c7196ed2931aa49e3c91ea3bc01d8014bdc58145f65965546e9f2a73177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486865"
 ---
-# <a name="jet_conditionalcolumnszcolumnname-property"></a>Proprietà JET_CONDITIONALCOLUMN. szColumnName
+# <a name="jet_conditionalcolumnszcolumnname-property"></a>JET_CONDITIONALCOLUMN.szColumnName
 
 Ottiene o imposta il nome della colonna condizionale.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,14 +62,14 @@ public string szColumnName { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md)
+[JET_CONDITIONALCOLUMN classe](./jet-conditionalcolumn-class.md)
 
-[Membri JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-members.md)
+[JET_CONDITIONALCOLUMN membri](./jet-conditionalcolumn-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

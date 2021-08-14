@@ -1,40 +1,40 @@
 ---
 title: Accessibilità e supporto globale
-description: La piattaforma Windows 7 semplifica la creazione di soluzioni accessibili a più utenti e che soddisfino o superino gli standard di conformità per l'accessibilità.
+description: La Windows 7 semplifica la creazione di soluzioni accessibili a più utenti e che soddisfino o superino gli standard di conformità dell'accessibilità.
 ms.assetid: bcad2f00-7885-461c-a2dc-0a0a176962b4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cea7f710850f419493c5a8435626d163361c8a03
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 320f6e52dba4f2a6d9c89a7bdea287e948a1bca048b0d3e88a2a8978e8085d0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709118"
 ---
 # <a name="accessibility-and-global-support"></a>Accessibilità e supporto globale
 
-La piattaforma Windows 7 semplifica la creazione di soluzioni accessibili a più utenti e che soddisfino o superino gli standard di conformità per l'accessibilità. La community del fornitore di Assistive Technology (ATV) può ora creare soluzioni per un'ampia gamma di applicazioni client e gli sviluppatori di applicazioni troveranno più semplice creare e convalidare interfacce utente accessibili.
+La Windows 7 semplifica la creazione di soluzioni accessibili a più utenti e che soddisfino o superino gli standard di conformità dell'accessibilità. La community assistive technology fornitori di applicazioni (ATV) può ora creare soluzioni per una più ampia gamma di applicazioni client e gli sviluppatori di applicazioni troveranno più facile creare e convalidare interfacce utente accessibili.
 
-Windows 7 rende inoltre più semplice il supporto di più linguaggi globali rispetto alle versioni precedenti di Windows. Dal momento in cui un utente seleziona una lingua e una località, Windows 7 presenta date, numeri, calendari, regole di confronto e altre informazioni usando le convenzioni culturali che i clienti si aspettano.
+Windows 7 semplifica anche il supporto di più lingue globali rispetto alle versioni precedenti di Windows. Dal momento in cui un utente seleziona una lingua e una posizione, Windows 7 presenta date, numeri, calendari, regole di confronto e altre informazioni usando le convenzioni culturali previste dai clienti.
 
-## <a name="windows-automation"></a>Automazione di Windows
+## <a name="windows-automation"></a>Windows Automazione
 
-Windows 7 offre un livello di automazione avanzato e basato su standard, esteso per le applicazioni native. Si basa su Microsoft Active Accessibility e automazione interfaccia utente Microsoft. È anche progettato per funzionare con gli standard del settore, ad esempio la W3C Web ARIA (applicazione Internet avanzata accessibile) e le *specifiche della sezione 508*.
+Windows 7 offre un livello di automazione ricco e basato su standard esteso per le applicazioni native. Si basa su Microsoft Active Accessibility e Microsoft Automazione interfaccia utente. È progettato anche per funzionare con gli standard del settore, ad esempio W3C Web ARIA (Accessible Rich Internet Application) e *Section 508 Specifications.*
 
-Automazione interfaccia utente offre prestazioni migliori grazie all'introduzione di proxy di automazione non gestiti più veloci per i controlli Win32 Microsoft e le applicazioni Microsoft Active Accessibility (*MSAA*) legacy, nonché registrazioni di eventi e proxy di automazione interfaccia utente migliori e più veloci. Le nuove funzionalità di estensibilità estendono i pattern di controllo, le proprietà e gli eventi personalizzati. (Vedere [API di automazione Windows: Panoramica](../winauto/windows-automation-api-overview.md)).
+Automazione interfaccia utente offre prestazioni migliori grazie all'introduzione di proxy di automazione non gestiti più veloci per i controlli Microsoft Win32 e le applicazioni legacy Microsoft Active Accessibility *(MSAA)* e registrazioni di eventi e proxy Automazione interfaccia utente migliori e più veloci. Le nuove funzionalità di estendibilità estendono pattern di controllo, proprietà ed eventi personalizzati. Vedere API [Windows: Panoramica.](../winauto/windows-automation-api-overview.md)
 
 ## <a name="accessibility-support-tools"></a>Strumenti di supporto per l'accessibilità
 
-Il controllo di accessibilità dell'interfaccia utente è un pratico strumento di interfaccia utente grafica che consente agli sviluppatori e ai tester di verificare rapidamente se la loro interfaccia utente è conforme ai requisiti di accessibilità principali, ad esempio *MSAA* (che verifica le relazioni padre-figlio o i rettangoli di delimitazione) e l'accesso a livello di codice all'automazione interfaccia utente, alla generazione di eventi Vedere [controllo dell'accessibilità dell'interfaccia utente](https://www.codeplex.com/AccCheck).
+Controllo accessibilità interfaccia utente è un pratico strumento dell'interfaccia utente grafica che consente a sviluppatori e tester di verificare rapidamente se l'interfaccia utente è conforme ai requisiti di accessibilità dei tasti, ad esempio *MSAA* (che verifica le relazioni padre-figlio o i rettangoli di delimitazione) e Automazione interfaccia utente accesso a livello di codice, generazione di eventi, layout e navigazione da tastiera. Vedere Ui [Accessibility Checker (Controllo accessibilità interfaccia](https://www.codeplex.com/AccCheck)utente).
 
-La verifica di UIA è un Framework di automazione di test che facilita il test manuale e automatizzato dell'implementazione del provider di automazione interfaccia utente di un controllo o di un'applicazione. Questi due nuovi strumenti consentono agli sviluppatori di testare le implementazioni e le funzionalità di accessibilità nelle applicazioni che utilizzano *MSAA* o l'automazione interfaccia utente. Entrambi gli strumenti sono disponibili tramite [codeplex](https://www.codeplex.com/), un sito Web creato da Microsoft per ospitare progetti open source e per offrire una migliore gestione alla community di sviluppatori. Vedere [Framework di automazione di test di automazione interfaccia utente](https://uiautomationverify.codeplex.com/).
+UiA Verify è un framework di automazione dei test che facilita il test manuale e automatizzato dell'implementazione del provider Automazione interfaccia utente di un controllo o di un'applicazione. Questi due nuovi strumenti consentono agli sviluppatori di testare le implementazioni e le funzionalità di accessibilità nelle applicazioni che usano *MSAA* o Automazione interfaccia utente. Entrambi gli strumenti sono disponibili tramite [CodePlex,](https://www.codeplex.com/)un sito Web creato da Microsoft per ospitare progetti open source e servire al meglio la community di sviluppatori. Vedere verifica [Automazione interfaccia utente test (uia verify) framework di automazione](https://uiautomationverify.codeplex.com/)dei test.
 
-## <a name="improved-multi-language-user-interface-support-and-linguistic-services"></a>Miglioramento del supporto dell'interfaccia utente multilingue e dei servizi linguistici
+## <a name="improved-multi-language-user-interface-support-and-linguistic-services"></a>Miglioramento del supporto multilingue Interfaccia utente e dei servizi linguistici
 
-Windows 7 offre agli sviluppatori un metodo standard per preparare le proprie applicazioni per il mercato internazionale offrendo un supporto migliorato per l'interfaccia utente multilingue e i servizi linguistici che possono usare nelle applicazioni.
+Windows 7 offre agli sviluppatori un metodo standard per preparare le applicazioni per il mercato internazionale offrendo un supporto migliorato per l'interfaccia utente multilingue e servizi linguistici che possono essere utilizzati nelle proprie applicazioni.
 
-Extended Linguistic Services è una nuova funzionalità di Windows 7 che consente agli sviluppatori di utilizzare lo stesso set di API per sfruttare una vasta gamma di funzionalità linguistiche avanzate. Grazie all'utilizzo di ServicesAPIs linguistici estesi in Windows 7, gli sviluppatori possono rilevare automaticamente il linguaggio di qualsiasi testo Unicode e utilizzare tali informazioni per migliorare le scelte di esperienza utente per i clienti in tutto il mondo. Servizi linguistici estesi offre anche il supporto per la traslitterazione incorporato che converte il testo da un sistema di scrittura a un altro. Ad esempio, gli sviluppatori possono ora convertire automaticamente il testo tra il cinese semplificato e quello tradizionale per aiutare gli utenti a comunicare tra loro attraverso i confini linguistici. Grazie all'utilizzo di ServicesAPIs linguistici estesi, gli sviluppatori saranno in grado di utilizzare servizi linguistici estesi esistenti, nonché di prelevare nuovi servizi in futuro senza dover imparare nuovo codice. (Vedere [servizi linguistici estesi](../intl/extended-linguistic-services.md)).
+Servizi linguistici estesi è una nuova funzionalità di Windows 7 che consente agli sviluppatori di usare lo stesso piccolo set di API per sfruttare un'ampia gamma di funzionalità linguistiche avanzate. Usando i Servizi linguistici estesiAPIs in Windows 7, gli sviluppatori possono rilevare automaticamente la lingua di qualsiasi parte del testo Unicode e usare queste informazioni per consentire ai clienti di tutto il mondo di scegliere un'esperienza utente più intelligente. Servizi linguistici estesi offre anche il supporto incorporato per la traslitterazione che converte il testo da un sistema di scrittura a un altro. Ad esempio, gli sviluppatori possono ora convertire automaticamente il testo tra il cinese semplificato e il cinese tradizionale per consentire alle persone di comunicare tra loro attraverso limiti linguistici. Usando i Servizi linguistici estesiARTI, gli sviluppatori potranno usare i servizi linguistici estesi esistenti e scegliere nuovi servizi in futuro senza apprendere nuovo codice. Vedere [Servizi linguistici estesi.](../intl/extended-linguistic-services.md)
 
- 
+ 
 
- 
+ 

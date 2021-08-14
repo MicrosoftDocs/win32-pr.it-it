@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. foregroundColor
-description: L'attributo foregroundColor specifica o Recupera il colore di primo piano.
+title: PLAYLIST.foregroundColor
+description: L'attributo foregroundColor specifica o recupera il colore di primo piano.
 ms.assetid: a83ceeec-033e-4060-b968-1d19bd7e391b
 keywords:
-- PLAYLIST. foregroundColor Windows Media Player
+- PROPRIETÀ PLAYLIST.foregroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 754544dec05319a6d4f1ce0d14b593969d543813
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98dbacf3d6439dc379c41163557189b98b8cdcc27db82eb4ec1bb04ad8de03be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336757"
 ---
-# <a name="playlistforegroundcolor"></a>PLAYLIST. foregroundColor
+# <a name="playlistforegroundcolor"></a>PLAYLIST.foregroundColor
 
-L'attributo **ForegroundColor** specifica o Recupera il colore di primo piano.
+**L'attributo foregroundColor** specifica o recupera il colore di primo piano.
 
 ``` syntax
         elementID.foregroundColor
@@ -29,7 +29,7 @@ L'attributo **ForegroundColor** specifica o Recupera il colore di primo piano.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi valore di colore di Microsoft Internet Explorer. Il valore predefinito è uguale al colore del testo del sistema di Windows.
+Questo attributo è una stringa di **lettura/scrittura contenente** qualsiasi valore di colore Internet Explorer Microsoft. Ha un valore predefinito uguale al colore del Windows di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi va
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,10 +45,10 @@ Questo attributo è una **stringa** di lettura/scrittura contenente qualsiasi va
 
 <dl> <dt>
 
-[**Riferimento ai colori**](color-reference.md)
+[**Informazioni di riferimento sul colore**](color-reference.md)
 </dt> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

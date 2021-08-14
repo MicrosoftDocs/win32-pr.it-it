@@ -4,16 +4,16 @@ description: La direttiva \ ifndef controlla la compilazione condizionale del fi
 ms.assetid: b83d7b0e-1a37-47a8-b495-0eab05ed3a9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 984a969123ea68fd68b14c1b98354b8bc5205aba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 23728acabc0ca0179c544a66657a2d1b8343d5eae24556018e0e65025420bfba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472987"
 ---
 # <a name="ifndef"></a>\#ifndef
 
-La direttiva **\# ifndef** controlla la compilazione condizionale del file di risorse controllando il nome specificato. Se il nome non è stato definito o la relativa definizione è stata rimossa usando la direttiva **\# undef** , **\# ifndef** indirizza il compilatore affinché continui a elaborare istruzioni fino alla successiva direttiva **\# endif**, **\# else** o **\# Elif** , quindi passare all'istruzione dopo la direttiva **\# endif** . Se il nome è definito, **\# ifndef** indica al compilatore di ignorare la direttiva **\# endif**, **\# else** o **\# Elif** successiva.
+La **\# direttiva ifndef** controlla la compilazione condizionale del file di risorse controllando il nome specificato. Se il nome non è stato definito o se la relativa definizione è stata rimossa tramite la direttiva **\# undef,** **\# ifndef** indica al compilatore di continuare l'elaborazione delle istruzioni fino alla direttiva **\# endif** successiva, **\# else** o **\# elif** e quindi di passare all'istruzione dopo la **\# direttiva endif.** Se il nome è definito, **\# sendef** indica al compilatore di passare alla successiva direttiva **\# endif**, **\# else** o **\# elif.**
 
 ``` syntax
 #ifndef name
@@ -21,16 +21,16 @@ La direttiva **\# ifndef** controlla la compilazione condizionale del file di ri
 
 <dl> <dt>
 
-<span id="name"></span><span id="NAME"></span>*nome*
+<span id="name"></span><span id="NAME"></span>*Nome*
 </dt> <dd>
 
-Nome che deve essere controllato dalla direttiva.
+Nome che deve essere controllato dalla direttiva .
 
 </dd> </dl>
 
 ## <a name="example"></a>Esempio
 
-In questo esempio viene compilata l'istruzione [**bitmap**](bitmap-resource.md) solo se Optimize non è definito:
+Questo esempio compila [**l'istruzione BITMAP**](bitmap-resource.md) solo se Optimize non è definito:
 
 ``` syntax
 #ifndef Optimize
@@ -45,9 +45,9 @@ BITMAP 1 errbox.bmp
 [Direttive per il preprocessore](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

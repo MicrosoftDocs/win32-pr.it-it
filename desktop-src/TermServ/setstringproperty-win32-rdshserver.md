@@ -1,12 +1,12 @@
 ---
-title: Metodo SetStringProperty della classe Win32_RDSHServer (CertEnroll. h)
-description: Aggiorna il valore di una proprietà di stringa di un \_ oggetto Win32 RDSHServer.
+title: Metodo SetStringProperty della Win32_RDSHServer classe (Certenroll.h)
+description: Aggiorna il valore di una proprietà stringa di un oggetto \_ RDSHServer Win32.
 ms.assetid: 9a338872-27fc-4e37-afd6-20a42c7859e5
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del Metodo SetStringProperty
-- Metodo SetStringProperty Servizi Desktop remoto, classe Win32_RDSHServer
-- Classe Win32_RDSHServer Servizi Desktop remoto, Metodo SetStringProperty
+- Metodo SetStringProperty Servizi Desktop remoto
+- Metodo SetStringProperty Servizi Desktop remoto , Win32_RDSHServer classe
+- Win32_RDSHServer classe Servizi Desktop remoto, metodo SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d30812c0df943175f96c8ae43a4fe094725c74
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2715271bcb73efd15acbef2097a29a978774e575a4fb115a9ef9e727e3efa91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349392"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Metodo SetStringProperty della \_ classe RDSHServer Win32
+# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Metodo SetStringProperty della classe RDSHServer Win32 \_
 
-Aggiorna il valore di una proprietà di stringa di un oggetto [**Win32 \_ RDSHServer**](win32-rdshserver.md) .
+Aggiorna il valore di una proprietà stringa di [**un oggetto \_ RDSHServer Win32.**](win32-rdshserver.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,14 +44,14 @@ uint32 SetStringProperty(
 
 <dl> <dt>
 
-*Chiave* \[ di in\]
+*Chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave che identifica la proprietà da aggiornare.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
 Nuovo valore della proprietà.
@@ -60,7 +60,7 @@ Nuovo valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,9 +70,9 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| Intestazione<br/>                   | <dl> <dt>CertEnroll. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| Intestazione<br/>                   | <dl> <dt>Certenroll.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -81,7 +81,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDSHServer Win32**](win32-rdshserver.md)
+[**Win32 \_ RDSHServer**](win32-rdshserver.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. AreaInformation.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.AreaInformation.
 ms.assetid: d9ecb00b-1f97-4f53-909f-30231104d398
-title: Criteri per i metadati delle foto di System. GPS. AreaInformation
+title: Criteri dei metadati delle foto di System.GPS.AreaInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86e14837da9ffa8b688caf1a544e222043988cf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4eee2cf4234902049241c833d1077814f5daf88187323c43bc1cb00f6f44aa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205522"
 ---
-# <a name="systemgpsareainformation-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. GPS. AreaInformation
+# <a name="systemgpsareainformation-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.AreaInformation
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. AreaInformation](../properties/props-system-gps-areainformation.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.AreaInformation.](../properties/props-system-gps-areainformation.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ Stringa.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                         | Formato disco |
 |-------|------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 28}    |             |
+| 1     | /app1/ifd/gps/{ushort=28}    |             |
 | 2     | /xmp/exif:GPSAreaInformation | unicode     |
 
 
@@ -60,20 +60,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                         | Formato disco |
 |-------|------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 28}    |             |
+| 1     | /app1/ifd/gps/{ushort=28}    |             |
 | 2     | /xmp/exif:GPSAreaInformation | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                         |
 |-------|------------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 28}    |
+| 1     | /app1/ifd/gps/{ushort=28}    |
 | 2     | /xmp/exif:GPSAreaInformation |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                             | Formato disco |
 |-------|----------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 28}             |             |
+| 1     | /ifd/gps/{ushort=28}             |             |
 | 2     | /ifd/xmp/exif:GPSAreaInformation | unicode     |
 
 
@@ -101,20 +101,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                             | Formato disco |
 |-------|----------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 28}             |             |
+| 1     | /ifd/gps/{ushort=28}             |             |
 | 2     | /ifd/xmp/exif:GPSAreaInformation | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                             |
 |-------|----------------------------------|
-| 1     | /IFD/GPS/{ushort = 28}             |
+| 1     | /ifd/gps/{ushort=28}             |
 | 2     | /ifd/xmp/exif:GPSAreaInformation |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. AreaInformation](../properties/props-system-gps-areainformation.md)
+[System.GPS.AreaInformation](../properties/props-system-gps-areainformation.md)
 </dt> </dl>
 
  

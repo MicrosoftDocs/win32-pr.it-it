@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. toolbarVisible
-description: L'attributo toolbarVisible specifica o recupera un valore che indica se la barra degli strumenti della playlist viene visualizzata.
+title: PLAYLIST.toolbarVisible
+description: L'attributo toolbarVisible specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti playlist.
 ms.assetid: cf5d1d53-ed0a-4018-8b07-758d6790260e
 keywords:
-- PLAYLIST. toolbarVisible Windows Media Player
+- PLAYLIST.toolbarVisible Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bf2fae4f62facfde9284f00c580431d615c07f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc7a85dde2c3bb0a8ee7a6208e2eb84a6797dda7265a5181e10e92409add4d4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335679"
 ---
-# <a name="playlisttoolbarvisible"></a>PLAYLIST. toolbarVisible
+# <a name="playlisttoolbarvisible"></a>PLAYLIST.toolbarVisible
 
-L'attributo **toolbarVisible** specifica o recupera un valore che indica se la barra degli strumenti della playlist viene visualizzata.
+**L'attributo toolbarVisible** specifica o recupera un valore che indica se viene visualizzata la barra degli strumenti playlist.
 
 ``` syntax
         elementID.toolbarVisible
@@ -29,11 +29,11 @@ L'attributo **toolbarVisible** specifica o recupera un valore che indica se la b
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura. Il valore predefinito è false.
+Questo attributo è un valore booleano di **lettura/scrittura.** Il valore predefinito è false.
 
 ## <a name="remarks"></a>Commenti
 
-La barra degli strumenti della playlist fornisce elementi dell'interfaccia utente che semplificano l'uso delle playlist.
+La barra degli strumenti Playlist fornisce elementi dell'interfaccia utente che semplificano l'utilizzo delle playlist.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ La barra degli strumenti della playlist fornisce elementi dell'interfaccia utent
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

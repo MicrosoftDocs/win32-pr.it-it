@@ -4,26 +4,26 @@ description: Progettazione di caratteri per Microsoft Office
 ms.assetid: ac536662-cc3b-42db-81cb-e5eb60039a4d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ad771cc42d23c875c28ef5bda6e42eaa8cd4e3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0a73ff4ef69a956f15fa83769df12181f910cb8aa777c309d9fbb0d65fba04b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103712127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479863"
 ---
 # <a name="designing-characters-for-microsoft-office"></a>Progettazione di caratteri per Microsoft Office
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-In questo documento vengono fornite informazioni che consentono di progettare e sviluppare un carattere Microsoft Agent per l'utilizzo in Microsoft Office 2000 (i caratteri dell'agente Microsoft non funzionano con Microsoft Office 97). In questo documento si presuppone che l'utente abbia familiarità con l'editor dei caratteri di Microsoft Agent e che sia in grado di creare caratteri di Microsoft Agent. Per ulteriori informazioni sull'editor dei caratteri di Agent e sulla progettazione e lo sviluppo di caratteri, [utilizzare l'editor dei caratteri di Microsoft Agent](using-the-microsoft-agent-character-editor.md). Ulteriori informazioni sulla creazione di caratteri per Microsoft Agent sono disponibili in [progettazione di caratteri per Microsoft Agent](designing-characters-for-microsoft-agent.md).
+Questo documento fornisce informazioni utili per progettare e sviluppare un carattere di Microsoft Agent da usare entro Microsoft Office 2000 (i caratteri di Microsoft Agent non funzionano con Microsoft Office 97). Questo documento presuppone che l'utente abbia una conoscenza approfondita dell'Editor caratteri di Microsoft Agent e che sappia come creare i caratteri di Microsoft Agent. Per altre informazioni sull'Editor caratteri dell'agente e sulla progettazione e sullo sviluppo di caratteri, vedere [Uso dell'editor di caratteri di Microsoft Agent.](using-the-microsoft-agent-character-editor.md) Per altre informazioni sulla creazione di caratteri per Microsoft Agent, vedere [Progettazione di caratteri per Microsoft Agent.](designing-characters-for-microsoft-agent.md)
 
--   [Progettazione dell'animazione](animation-design.md)
--   [Set di animazioni di Office](the-office-animation-set.md)
--   [Installazione del carattere](installing-your-character.md)
+-   [Progettazione di animazioni](animation-design.md)
+-   [Set Office animazione](the-office-animation-set.md)
+-   [Installazione del tuo carattere](installing-your-character.md)
 
- 
+ 
 
- 
+ 
 
 
 

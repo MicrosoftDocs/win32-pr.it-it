@@ -1,25 +1,25 @@
 ---
-title: Funzioni di NPS Extensions
-description: Funzioni di NPS Extensions
+title: Funzioni delle estensioni NPS
+description: Funzioni delle estensioni NPS
 ms.assetid: ca217314-00f9-4f9d-a9fe-ed928b3c3b3d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a20b424b8ef5109cea7f4d00b97f1a545b89ff
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b7cecf8ead61e94287ba4846b82f922af40068a771a9bcadd8ccb51693709c17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118362361"
 ---
-# <a name="nps-extensions-functions"></a>Funzioni di NPS Extensions
+# <a name="nps-extensions-functions"></a>Funzioni delle estensioni NPS
 
 > [!Note]  
-> Il servizio di autenticazione Internet (IAS) è stato rinominato server dei criteri di rete (NPS) a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a NPS. In tutto il testo, NPS viene utilizzato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente indicate come IAS.
+> Il servizio Autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a Server dei criteri di rete. In tutto il testo, Server dei criteri di rete viene usato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente denominate IAS.
 
- 
+ 
 
-## <a name="application-defined"></a>Applicazione definita
+## <a name="application-defined"></a>Definito dall'applicazione
 
 L'architettura per le DLL di estensione NPS supporta le funzioni esportate seguenti:
 
@@ -30,33 +30,33 @@ L'architettura per le DLL di estensione NPS supporta le funzioni esportate segue
 -   [**RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2)
 -   [**RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term)
 
-Le funzioni [**RadiusExtensionInit**](/windows/desktop/api/authif/nc-authif-pradius_extension_init) e [**RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term) sono facoltative.
+Le [**funzioni RadiusExtensionInit**](/windows/desktop/api/authif/nc-authif-pradius_extension_init) [**e RadiusExtensionTerm**](/windows/desktop/api/authif/nc-authif-pradius_extension_term) sono facoltative.
 
-La DLL di estensione può esportare [**RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2) invece di [**RadiusExtensionProcess**](/windows/desktop/api/authif/nc-authif-pradius_extension_process) o [**RadiusExtensionProcessEx**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex).
+La DLL di estensione può esportare [**RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2) anziché [**RadiusExtensionProcess**](/windows/desktop/api/authif/nc-authif-pradius_extension_process) [**o RadiusExtensionProcessEx**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex).
 
-Se la DLL di estensione Esporta [**RadiusExtensionProcessEx**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex), è necessario esportare anche [**RadiusExtensionFreeAttributes**](/windows/desktop/api/authif/nc-authif-pradius_extension_free_attributes).
+Se la DLL di estensione esporta [**RadiusExtensionProcessEx,**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_ex)deve esportare [**anche RadiusExtensionFreeAttributes**](/windows/desktop/api/authif/nc-authif-pradius_extension_free_attributes).
 
 ## <a name="system-defined"></a>Definito dal sistema
 
-Quando NPS chiama un'implementazione di [**RadiusExtensionProcess2**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2), NPS passa la funzione un puntatore a una struttura del [**\_ blocco di \_ controllo \_ dell'estensione RADIUS**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block) .
+Quando Server dei criteri di rete chiama un'implementazione di [**RadiusExtensionProcess2,**](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2)Server dei criteri di rete passa alla funzione un puntatore a una [**struttura RADIUS \_ EXTENSION CONTROL \_ \_ BLOCK.**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block)
 
-La struttura del [**\_ blocco di \_ controllo \_ dell'estensione RADIUS**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block) contiene i puntatori a funzione delle funzioni seguenti fornite da NPS:
+La [**struttura RADIUS \_ EXTENSION CONTROL \_ \_ BLOCK**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block) contiene puntatori a funzione alle funzioni seguenti fornite da Server dei criteri di rete:
 
--   [**GetRequest**](/previous-versions/ms688263(v=vs.85))
--   [**GetResponse**](/previous-versions/ms688270(v=vs.85))
+-   [**Getrequest**](/previous-versions/ms688263(v=vs.85))
+-   [**Getresponse**](/previous-versions/ms688270(v=vs.85))
 -   [**SetResponseType**](/previous-versions/ms688462(v=vs.85))
 
-Le funzioni [**GetRequest**](/previous-versions/ms688263(v=vs.85)) e [**GetResponse**](/previous-versions/ms688270(v=vs.85)) restituiscono puntatori a una struttura di tipo [**RADIUS \_ Attribute \_ Array**](/windows/desktop/api/authif/ns-authif-radius_attribute_array).
+Le funzioni [**GetRequest**](/previous-versions/ms688263(v=vs.85)) e [**GetResponse**](/previous-versions/ms688270(v=vs.85)) restituiscono puntatori a una struttura di tipo [**RADIUS \_ ATTRIBUTE \_ ARRAY**](/windows/desktop/api/authif/ns-authif-radius_attribute_array).
 
-La struttura della [**\_ \_ matrice di attributi RADIUS**](/windows/desktop/api/authif/ns-authif-radius_attribute_array) contiene i puntatori a funzione delle funzioni seguenti fornite da NPS:
+La [**struttura RADIUS \_ ATTRIBUTE \_ ARRAY**](/windows/desktop/api/authif/ns-authif-radius_attribute_array) contiene puntatori a funzione alle funzioni seguenti fornite da Server dei criteri di rete:
 
--   [**Aggiungere**](/previous-versions/ms688246(v=vs.85))
+-   [**Add**](/previous-versions/ms688246(v=vs.85))
 -   [**AttributeAt**](/previous-versions/ms688253(v=vs.85))
 -   [**GetSize**](/previous-versions/ms688277(v=vs.85))
 -   [**InsertAt**](/previous-versions/ms688296(v=vs.85))
 -   [**RemoveAt**](/previous-versions/ms688452(v=vs.85))
 -   [**SetAt**](/previous-versions/ms688456(v=vs.85))
 
- 
+ 
 
- 
+ 

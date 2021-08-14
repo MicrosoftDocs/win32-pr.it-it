@@ -1,21 +1,21 @@
 ---
-description: Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le \* funzioni ScriptString.
+description: Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le funzioni \* ScriptString.
 ms.assetid: bfbba5df-ce06-4012-a7b1-55d8ea580942
 title: Uso delle funzioni ScriptString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93a2df5e7515bd605ad48cc7a246941e9b6f08f2
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 6685af7dad2c9e1b8d0cf460d526155f967a9105e1b107047afb99c18a5124f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104047554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389407"
 ---
 # <a name="using-the-scriptstring-functions"></a>Uso delle funzioni ScriptString
 
-Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le funzioni **scriptString \*** . Queste funzioni sono simili a [**ExtTextOut**](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), ma forniscono un supporto completo per gli script, incluso il posizionamento del punto di inserimento. Queste funzioni sono simili alle altre funzioni Uniscribe, ma sono adattate ai requisiti più semplici di elaborazione del testo normale.
+Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le funzioni **ScriptString \** _. Queste funzioni sono simili [a _ *ExtTextOut* *](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), ma forniscono il supporto completo di script complessi, incluso il posizionamento del punto di inserimento. Queste funzioni sono simili alle altre funzioni Uniscribe, ma sono personalizzate in base ai requisiti più semplici dell'elaborazione del testo normale.
 
-La tabella seguente illustra in dettaglio le funzioni **scriptString \*** e tutte le controparti nelle altre funzioni Uniscribe.
+Nella tabella seguente vengono fornite informazioni **dettagliate sulle funzioni ScriptString \*** e su eventuali controparti nelle altre funzioni Uniscribe.
 
 
 
@@ -40,23 +40,23 @@ La tabella seguente illustra in dettaglio le funzioni **scriptString \*** e tutt
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringcptox"><strong>ScriptStringCPtoX</strong></a></td>
-<td>Recupera la coordinata x per una posizione del carattere. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptcptox"><strong>ScriptCPtoX</strong></a>.</td>
+<td>Recupera la coordinata x per una posizione di carattere. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptcptox"><strong>ScriptCPtoX</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringfree"><strong>ScriptStringFree</strong></a></td>
-<td>Libera una struttura <a href="script-string-analysis.md"><strong>SCRIPT_STRING_ANALYSIS</strong></a> .</td>
+<td>Libera una struttura <a href="script-string-analysis.md"><strong>SCRIPT_STRING_ANALYSIS</strong></a> struttura .</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringgetlogicalwidths"><strong>ScriptStringGetLogicalWidths</strong></a></td>
-<td>Converte le larghezze visive in larghezze logiche. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptgetlogicalwidths"><strong>ScriptGetLogicalWidths</strong></a>.</td>
+<td>Converte la larghezza dell'oggetto visivo in larghezze logiche. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptgetlogicalwidths"><strong>ScriptGetLogicalWidths.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringgetorder"><strong>ScriptStringGetOrder</strong></a></td>
-<td>Esegue il mapping delle posizioni del glifo di caratteri in modo analogo a <a href="/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa">GetCharacterPlacement</a>, solo per uso legacy. Questa funzione non funziona correttamente con gli script che generano più di un glifo per ogni punto di codice.</td>
+<td>Mappe le posizioni dei glifi dei caratteri in modo simile a <a href="/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa">GetCharacterPlacement</a>, solo per uso legacy. Questa funzione non funziona correttamente con gli script che generano più di un glifo per ogni punto di codice.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringout"><strong>ScriptStringOut</strong></a></td>
-<td>Visualizza testo normale. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scripttextout"><strong>ScriptTextOut</strong></a>.</td>
+<td>Visualizza testo normale. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scripttextout"><strong>ScriptTextOut.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstring_pcoutchars"><strong>ScriptString_pcOutChars</strong></a></td>
@@ -68,15 +68,15 @@ La tabella seguente illustra in dettaglio le funzioni **scriptString \*** e tutt
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstring_psize"><strong>ScriptString_pSize</strong></a></td>
-<td>Restituisce un puntatore alla dimensione (larghezza e altezza) per una stringa di testo normale analizzata.</td>
+<td>Restituisce un puntatore alle dimensioni (larghezza e altezza) di una stringa di testo normale analizzata.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringvalidate"><strong>ScriptStringValidate</strong></a></td>
-<td>Identifica le sequenze di punti di codice non valide nello script specificato. Questa funzione è diversa da <a href="/windows/desktop/api/Usp10/nf-usp10-scriptgetcmap"><strong>ScriptGetCMap</strong></a>, che identifica i punti di codice non presenti in un tipo di carattere.</td>
+<td>Identifica sequenze di punti di codice non valide nello script specificato. Questa funzione è diversa da <a href="/windows/desktop/api/Usp10/nf-usp10-scriptgetcmap"><strong>ScriptGetCMap</strong></a>, che identifica i punti di codice non presenti in un tipo di carattere.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringxtocp"><strong>ScriptStringXtoCP</strong></a></td>
-<td>Converte una coordinata x in una posizione del carattere. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptxtocp"><strong>ScriptXtoCP</strong></a>.</td>
+<td>Converte una coordinata x in una posizione di carattere. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scriptxtocp"><strong>ScriptXtoCP</strong></a>.</td>
 </tr>
 </tbody>
 </table>
@@ -90,6 +90,6 @@ Per visualizzare solo testo normale senza modifiche, un'applicazione deve chiama
 [Uso di Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

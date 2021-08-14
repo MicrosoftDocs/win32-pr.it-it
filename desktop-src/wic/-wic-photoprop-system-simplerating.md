@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. SimpleRating.
+description: Criteri dei metadati delle foto per la proprietà System.SimpleRating.
 ms.assetid: d932a251-f238-4582-a1c4-cf4855f26fb3
-title: Criteri per i metadati delle foto System. SimpleRating
+title: Criteri dei metadati delle foto di System.SimpleRating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63b91e41a0684c8e395992683e0a1d4fe43306a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c65c9e49d7e905a4cefe890b6c5aab257250baa41171470666ba38b3fb5c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709965"
 ---
-# <a name="systemsimplerating-photo-metadata-policy"></a>Criteri per i metadati delle foto System. SimpleRating
+# <a name="systemsimplerating-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.SimpleRating
 
-Criteri per i metadati delle foto per la proprietà [System. SimpleRating](../properties/props-system-simplerating.md) .
+Criteri dei metadati delle foto per [la proprietà System.SimpleRating.](../properties/props-system-simplerating.md)
 
 ### <a name="pkey"></a>PKEY
 
-\_SIMPLERATING pkey
+PKEY \_ SimpleRating
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,28 +27,28 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI4 VT
+Interfaccia utente \_ VT4
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-Può essere VT \_ Ui1, VT \_ UI2 o VT \_ UI4. Il valore integer può variare da 0 a 5.
+Può essere VT \_ UI1, VT \_ UI2 o VT \_ UI4. Il valore intero può essere compreso tra 0 e 5.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 18246} | ushort      |
-| 2     | /XMP/XMP: valutazione          | unicode     |
+| 1     | /app1/ifd/{ushort=18246} | ushort      |
+| 2     | /xmp/xmp:Rating          | unicode     |
 
 
 
@@ -60,21 +60,21 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 18246} | ushort      |
-| 2     | /XMP/XMP: valutazione          | unicode     |
+| 1     | /app1/ifd/{ushort=18246} | ushort      |
+| 2     | /xmp/xmp:Rating          | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/{ushort = 18246} |
-| 2     | /XMP/XMP: valutazione          |
+| 1     | /app1/ifd/{ushort=18246} |
+| 2     | /xmp/xmp:rating          |
 
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                | Formato disco |
 |-------|---------------------|-------------|
-| 1     | /IFD/{ushort = 18246} | ushort      |
-| 2     | /IFD/XMP/XMP: valutazione | unicode     |
+| 1     | /ifd/{ushort=18246} | ushort      |
+| 2     | /ifd/xmp/xmp:Rating | unicode     |
 
 
 
@@ -101,21 +101,21 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                | Formato disco |
 |-------|---------------------|-------------|
-| 1     | /IFD/{ushort = 18246} | ushort      |
-| 2     | /IFD/XMP/XMP: valutazione | unicode     |
+| 1     | /ifd/{ushort=18246} | ushort      |
+| 2     | /ifd/xmp/xmp:Rating | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                |
 |-------|---------------------|
-| 1     | /IFD/{ushort = 18246} |
-| 2     | /IFD/XMP/XMP: valutazione |
+| 1     | /ifd/{ushort=18246} |
+| 2     | /ifd/xmp/xmp:rating |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. SimpleRating](../properties/props-system-simplerating.md)
+[System.SimpleRating](../properties/props-system-simplerating.md)
 </dt> </dl>
 
  

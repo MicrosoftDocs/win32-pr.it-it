@@ -1,6 +1,6 @@
 ---
-title: WaveActiveAllTrue (funzione)
-description: Restituisce true se l'espressione è true in tutte le corsie attive nell'onda corrente.
+title: Funzione WaveActiveAllTrue
+description: Restituisce true se l'espressione è true in tutte le corsie attive nell'ondata corrente.
 ms.assetid: C4EC5A02-6070-4FF4-B855-F597FFFE66F0
 keywords:
 - Funzione WaveActiveAllTrue HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a26e0ce757257d6fdd8296239dcf086bff5f1666
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 9f80c9af3bb9a1be47a3d64f31f0b3c3c610022d3a017a13053c0e4fc7db3a82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104474639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504871"
 ---
-# <a name="waveactivealltrue-function"></a>WaveActiveAllTrue (funzione)
+# <a name="waveactivealltrue-function"></a>Funzione WaveActiveAllTrue
 
-Restituisce true se l'espressione è true in tutte le corsie attive nell'onda corrente.
+Restituisce true se l'espressione è true in tutte le corsie attive nell'ondata corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ bool WaveActiveAllTrue(
 
 <dl> <dt>
 
-*expr* 
+*Expr* 
 </dt> <dd>
 
 Espressione booleana da valutare.
@@ -49,7 +49,7 @@ True se l'espressione è true in tutte le corsie.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -59,7 +59,7 @@ Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello s
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)
