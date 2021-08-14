@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM VideoControllerResolution rappresenta le varie modalità video che un controller video può supportare.
+description: La classe CIM \_ VideoControllerResolution rappresenta le varie modalità video supportate da un controller video.
 ms.assetid: 954ac3fe-9777-460c-8929-853f19379256
 ms.tgt_platform: multiple
-title: Classe CIM_VideoControllerResolution
+title: CIM_VideoControllerResolution classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,25 +24,25 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d448d92d79163bc6a4e1056e88434081c5878159
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: af943df981ca2043e83dfcdd3daade0a1c13b63222a163d7e6ecf1d6110396e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118420378"
 ---
-# <a name="cim_videocontrollerresolution-class"></a>CIM \_ VideoControllerResolution (classe)
+# <a name="cim_videocontrollerresolution-class"></a>Classe CIM \_ VideoControllerResolution
 
-La classe **CIM \_ VideoControllerResolution** rappresenta le varie modalità video che un controller video può supportare. Le modalità video sono definite in base alle possibili risoluzioni orizzontali e verticali, alla frequenza di aggiornamento, alla modalità di analisi e al numero di impostazioni del colore supportate da un controller. Le risoluzioni effettive in uso sono i valori specificati nell'oggetto [**\_ VideoController CIM**](cim-videocontroller.md) .
+La **classe CIM \_ VideoControllerResolution** rappresenta le varie modalità video supportate da un controller video. Le modalità video sono definite dalle possibili risoluzioni orizzontali e verticali, dalla frequenza di aggiornamento, dalla modalità di analisi e dal numero di impostazioni di colore supportate da un controller. Le risoluzioni effettive in uso sono i valori specificati [**nell'oggetto CIM \_ VideoController.**](cim-videocontroller.md)
 
 L'hardware non compatibile con Windows Display Driver Model (WDDM) restituisce valori di proprietà non accurati per le istanze di questa classe.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,38 +65,38 @@ class CIM_VideoControllerResolution : CIM_Setting
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ VideoControllerResolution** presenta questi tipi di membri:
+La **classe CIM \_ VideoControllerResolution** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ VideoControllerResolution** dispone di queste proprietà.
+La **classe CIM \_ VideoControllerResolution** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Breve descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -104,62 +104,62 @@ Tipo di accesso: sola lettura
 
 Descrizione testuale dell'oggetto corrente.
 
-Questa proprietà viene ereditata [**dall' \_ impostazione CIM**](cim-setting.md).
+Questa proprietà viene ereditata [**dall'impostazione CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
 **HorizontalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| monitor risoluzioni \| 002,2 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" pixel ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
-Risoluzione orizzontale in pixel.
+Risoluzione orizzontale, in pixel.
 
 </dd> <dt>
 
 **MaxRefreshRate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MaxRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| monitor risoluzioni \| 002,7 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" Hertz ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MaxRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.7"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza di aggiornamento massima quando un intervallo di frequenze è supportato alle risoluzioni specificate, in Hertz.
+Frequenza di aggiornamento massima quando un intervallo di frequenze è supportato alle risoluzioni specificate, in hertz.
 
 </dd> <dt>
 
 **MinRefreshRate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MinRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| monitor risoluzioni \| 002,6 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" Hertz ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MinRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza di aggiornamento minima quando un intervallo di frequenze è supportato alle risoluzioni specificate, in Hertz.
+Frequenza di aggiornamento minima quando un intervallo di frequenze è supportato alle risoluzioni specificate, in hertz.
 
 </dd> <dt>
 
 **NumberOfColors**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -168,38 +168,38 @@ Tipo di accesso: sola lettura
 Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentNumberOfColors**")
 </dt> </dl>
 
-Numero di colori supportati nella risoluzione corrente.
+Numero di colori supportati alla risoluzione corrente.
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **RefreshRate**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| monitor risoluzioni \| 002,4 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" Hertz ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.4"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frequenza di aggiornamento, in Hertz. Se è supportato un intervallo di frequenze, usare le proprietà **MinRefreshRate** e **MaxRefreshRate** e impostare questa proprietà su 0.
+Frequenza di aggiornamento, in hertz. Se è supportato un intervallo di frequenze, usare le **proprietà MinRefreshRate** e **MaxRefreshRate** e impostare questa proprietà su 0.
 
 </dd> <dt>
 
 **ScanMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. Risoluzioni di \| monitoraggio DMTF \| 002,5 ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.5")
 </dt> </dl>
 
 Modalità di analisi in cui opera il controller.
@@ -250,13 +250,13 @@ Operazione non interlacciata
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("settingID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 ID che funge da parte della chiave per l'istanza corrente.
@@ -266,13 +266,13 @@ ID che funge da parte della chiave per l'istanza corrente.
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentVerticalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| monitor risoluzioni \| 002,3 "), [**unità**](/windows/desktop/WmiSdk/standard-qualifiers) (" pixel ")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentVerticalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.3"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Risoluzione verticale del controller, in pixel.
@@ -281,11 +281,11 @@ Risoluzione verticale del controller, in pixel.
 
 ## <a name="remarks"></a>Commenti
 
-WMI implementa la classe **CIM \_ VideoControllerResolution** . La classe **CIM \_ VideoControllerResolution** è una classe dinamica.
+WMI implementa la **classe CIM \_ VideoControllerResolution.** La **classe CIM \_ VideoControllerResolution** è una classe dinamica.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
-Si noti che questa classe è una classe di base. Se si sta tentando di accedere al controller video tramite WMI, è possibile utilizzare [**Win32 \_ VideoController**](win32-videocontroller.md) .
+Si noti che questa classe è una classe di base. Se si sta tentando di accedere al controller video tramite WMI, è possibile usare [**Win32 \_ VideoController.**](win32-videocontroller.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -296,7 +296,7 @@ Si noti che questa classe è una classe di base. Se si sta tentando di accedere 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -305,7 +305,7 @@ Si noti che questa classe è una classe di base. Se si sta tentando di accedere 
 
 <dl> <dt>
 
-[**\_Impostazione CIM**](cim-setting.md)
+[**Impostazione \_ CIM**](cim-setting.md)
 </dt> </dl>
 
  

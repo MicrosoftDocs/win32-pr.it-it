@@ -3,7 +3,7 @@ title: Tipo complesso headerFieldType
 description: Definisce gli elementi utilizzati per creare un campo di intestazione in un messaggio di posta elettronica.
 ms.assetid: 66036875-1116-46eb-b2f5-8c8ad8373ab1
 keywords:
-- Utilità di pianificazione di tipo complesso headerFieldType
+- Tipo complesso headerFieldType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ddbc0ae22c6baf3fd288cbe2ead19dac506afee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 78c4fb3a8ca85cea5b765fc1fc4521f968efd76e9169613dc4a1565a43ee1b36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131830"
 ---
 # <a name="headerfieldtype-complex-type"></a>Tipo complesso headerFieldType
 
@@ -54,8 +54,8 @@ Definisce gli elementi utilizzati per creare un campo di intestazione in un mess
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

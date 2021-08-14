@@ -1,21 +1,21 @@
 ---
 title: Come ruotare un oggetto
-description: Viene illustrato come ruotare un oggetto.
+description: Illustra come ruotare un oggetto.
 ms.assetid: 468e29b6-941b-4cf8-8649-9e513326ccb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b69cd900a78ba4d81919df91b85fd97723172eba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: babc84c08af759d8484c8ba85db40780f68570d93a0a8b9442e93b960ecac39c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003533"
 ---
 # <a name="how-to-rotate-an-object"></a>Come ruotare un oggetto
 
-In questo argomento viene descritto come ruotare un oggetto relativo a un punto specificato. Per ruotare un oggetto, chiamare il metodo [**Matrix3x2F:: Rotation**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) . Questo metodo accetta due parametri, l'angolo e il punto centrale specificati. L'angolo è un angolo di rotazione in senso orario in gradi e il punto centrale è il punto in cui l'oggetto ruota. Il punto centrale è espresso nel sistema di coordinate dell'oggetto trasformato.
+Questo argomento descrive come ruotare un oggetto intorno a un punto specificato. Per ruotare un oggetto, chiamare [**il metodo Matrix3x2F::Rotation.**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) Questo metodo accetta due parametri, l'angolo specificato e il punto centrale. L'angolo è un angolo di rotazione in senso orario in gradi e il punto centrale è il punto su cui ruota l'oggetto. Il punto centrale viene espresso nel sistema di coordinate dell'oggetto trasformato.
 
-Il codice seguente, ad esempio, ruota un quadrato di 45 gradi in senso orario sul centro del quadrato.
+Ad esempio, il codice seguente ruota un quadrato in senso orario di 45 gradi intorno al centro del quadrato.
 
 
 ```C++
@@ -47,24 +47,24 @@ Il codice seguente, ad esempio, ruota un quadrato di 45 gradi in senso orario su
 
 
 
-Nella figura seguente viene illustrato l'effetto dell'applicazione della trasformazione di rotazione precedente al quadrato. Il quadrato originale è un contorno tratteggiato e il quadrato ruotato è un contorno a tinta unita.
+Nella figura seguente viene illustrato l'effetto dell'applicazione della trasformazione di rotazione precedente al quadrato. Il quadrato originale è un contorno punteggiato e il quadrato ruotato è un contorno a tinta unita.
 
-![illustrazione di un quadrato ruotato di 45 gradi in senso orario rispetto al centro del quadrato originale](images/rotate-ovw.png)
+![illustrazione di un quadrato ruotato in senso orario di 45 gradi al centro del quadrato originale](images/rotate-ovw.png)
 
-Nella figura seguente viene illustrato l'effetto della rotazione in base allo stesso angolo di un punto centrale diverso. Si noti che gli oggetti ruotati si trovano in posizioni diverse rispetto all'originale. Il quadrato delineato a sinistra è il risultato della rotazione intorno al centro del quadrato originale e il quadrato con l'allineamento a destra è il risultato della rotazione sull'angolo superiore sinistro del quadrato originale.
+La figura seguente mostra l'effetto della rotazione dello stesso angolo rispetto a un punto centrale diverso. Si noti che gli oggetti ruotati sono in posizioni diverse rispetto all'originale. Il quadrato con contorni a sinistra è il risultato della rotazione attorno al centro del quadrato originale e il quadrato con contorno destro è il risultato della rotazione attorno all'angolo superiore sinistro del quadrato originale.
 
-![illustrazione di un quadrato ruotato di 45 gradi in senso orario su un punto centrale diverso](images/translate-rotationcompare.png)
+![illustrazione di un quadrato ruotato in senso orario di 45 gradi su un punto centrale diverso](images/translate-rotationcompare.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Riferimento Direct2D](reference.md)
+[Informazioni di riferimento su Direct2D](reference.md)
 </dt> <dt>
 
-[Cenni preliminari sulle trasformazioni Direct2D](direct2d-transforms-overview.md)
+[Panoramica delle trasformazioni Direct2D](direct2d-transforms-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

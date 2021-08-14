@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per la creazione di un gruppo
-description: Questo argomento include un codice di esempio per la creazione di un gruppo.
+description: Questo argomento include un codice di esempio di codice che crea un gruppo.
 ms.assetid: f6bba6fc-fec2-4dd9-b7f2-da7782a6caa5
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, creazione di un gruppo
+- Esempi di Active Directory Active Directory , creazione di un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 817ea5ddd9201addccd4df4ed7a1f268d7f5e2c4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1d7f0740150990efdd333f25e69210a85452653ca99163f2793e2aca8495f4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190814"
 ---
 # <a name="example-code-for-creating-a-group"></a>Codice di esempio per la creazione di un gruppo
 
-L'esempio di codice C++ riportato di seguito contiene una funzione che crea un gruppo solo con le proprietà essenziali impostate in modo esplicito (**CN**, **sAMAccountType**, **GroupType**) e che non contiene membri.
+L'esempio di codice C++ seguente contiene una funzione che crea un gruppo con solo le proprietà essenziali impostate in modo esplicito (**cn**, **sAMAccountType**, **groupType**) e senza membri.
 
 
 ```C++
@@ -304,7 +304,7 @@ WCHAR * GetDirectoryObjectAttrib(IDirectoryObject *pDirObject,
 
 
 
-Nell'esempio di codice Visual Basic seguente viene creato un gruppo con solo le proprietà essenziali impostate in modo esplicito (**CN**, **sAMAccountType**, **GroupType**) e che non contiene membri.
+Nell'Visual Basic di codice seguente viene creato un gruppo con solo le proprietà essenziali impostate in modo esplicito (**cn**, **sAMAccountType**, **groupType**) e senza membri.
 
 
 ```VB
@@ -379,9 +379,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

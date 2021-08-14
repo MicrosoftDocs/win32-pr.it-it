@@ -1,24 +1,24 @@
 ---
 description: Costruttori esposti da XMUINT3.
 ms.assetid: f3737cb1-36a0-4dbc-94d5-237e7395670e
-title: Costruttori XMUINT3 (DirectXMath. h)
+title: Costruttori XMUINT3 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e67bd4f9b86c3d8eddd998db61e0e4b7573852b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40dd1701cf984cab0e725b3b0fa5598c704cc28818756cc382e08ea2ead716fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499596"
 ---
 # <a name="xmuint3-constructors"></a>Costruttori XMUINT3
 
 Costruttori esposti da `XMUINT3` .
 
-Costruisce istanze della struttura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) .
+Costruisce istanze della [**struttura XMUINT3.**](/windows/win32/api/directxmath/ns-directxmath-xmuint3)
 
 > [!Note]  
-> I costruttori elencati di seguito sono disponibili solo in C++.
+> I costruttori elencati qui sono disponibili solo in C++.
 
  
 
@@ -39,8 +39,8 @@ Costruisce istanze della struttura [**XMUINT3**](/windows/win32/api/directxmath/
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT3 ()</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmuint3-xmuint3 (constuint32_t))</td>
-<td style="text-align: left;">Costruttore predefinito per <code>XMUINT3</code> .<br/> Costruttore predefinito per [<strong>XMUINT3</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmuint3).<br/>
+<td style="text-align: left;">[<strong>XMUINT3 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
+<td style="text-align: left;">Costruttore predefinito per <code>XMUINT3</code> .<br/> Costruttore predefinito per [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3).<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -48,8 +48,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMUINT3 (const uint32_t *)</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmuint3-xmuint3 (constuint32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUINT3</code> da un argomento di matrice a tre elementi <code>uint32_t</code> .<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmuint3) da un argomento di matrice a tre elementi <code>uint32_t</code> .<br/>
+<td style="text-align: left;">[<strong>XMUINT3 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMUINT3</code> un argomento della matrice di tre <code>uint32_t</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) da un argomento di matrice a tre <code>uint32_t</code> elementi.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -57,8 +57,8 @@ Questo costruttore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT3 (uint32_t, uint32_t, uint32_t)</strong>] (/Windows/Win32/API/DirectXMath/NF-DirectXMath-xmuint3-xmuint3 (uint32_t_uint32_t_uint32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUINT3</code> da tre <code>uint32_t</code> argomenti.<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>] (/Windows/Win32/API/DirectXMath/NS-DirectXMath-xmuint3) da tre <code>uint32_t</code> argomenti.<br/>
+<td style="text-align: left;">[<strong>XMUINT3 (uint32_t,uint32_t,uint32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(uint32_t_uint32_t_uint32_t))</td>
+<td style="text-align: left;">Inizializza una nuova istanza di <code>XMUINT3</code> da tre <code>uint32_t</code> argomenti.<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) da tre <code>uint32_t</code> argomenti.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.
@@ -76,7 +76,7 @@ Questo costruttore è disponibile solo in C++.
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

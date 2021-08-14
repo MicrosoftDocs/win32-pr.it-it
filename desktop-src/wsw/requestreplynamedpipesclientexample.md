@@ -1,25 +1,25 @@
 ---
 title: RequestReplyNamedPipesClientExample
-description: Questo esempio mostra un client named pipe che invia messaggi request/reply.
+description: In questo esempio viene illustrato named pipe client che invia messaggi request-reply.
 ms.assetid: 38FC4A47-349B-406D-A6AA-8072AA24E3AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c671048f0ad528f6b5edd5157dcb8f7fe9a6134
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab118a900b177d94a5b192f3f3e57e23c3950d66013f88f36f73aa8d8289d64c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192867"
 ---
 # <a name="requestreplynamedpipesclientexample"></a>RequestReplyNamedPipesClientExample
 
-Questo esempio mostra un client named pipe che invia messaggi request/reply.
+In questo esempio viene illustrato named pipe client che invia messaggi request-reply.
 
--   [RequestReplyNamedPipesClient. cpp](#requestreplynamedpipesclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [RequestReplyNamedPipesClient.cpp](#requestreplynamedpipesclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="requestreplynamedpipesclientcpp"></a>RequestReplyNamedPipesClient. cpp
+## <a name="requestreplynamedpipesclientcpp"></a>RequestReplyNamedPipesClient.cpp
 
 
 ```C++
@@ -404,7 +404,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -548,9 +548,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Indica se il punto di destinazione della longitudine è la longitudine est o ovest.
+description: Indica se il punto di destinazione della longitudine è longitudine orientale o occidentale.
 ms.assetid: 47c3720f-4650-49ad-a32b-9339718d7c8f
-title: System. GPS. DestLongitudeRef
+title: System.GPS.DestLongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 865613dc00fe82348a070d29db014e4044547950
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3074d0b53372e30bca4feeba9a7cc522f32636bf7899593922b6f624cb0bdaba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466554"
 ---
-# <a name="systemgpsdestlongituderef"></a>System. GPS. DestLongitudeRef
+# <a name="systemgpsdestlongituderef"></a>System.GPS.DestLongitudeRef
 
-Indica se il punto di destinazione della longitudine è la longitudine est o ovest.
+Indica se il punto di destinazione della longitudine è longitudine orientale o occidentale.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

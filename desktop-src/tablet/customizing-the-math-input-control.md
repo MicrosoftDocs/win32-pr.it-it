@@ -1,21 +1,21 @@
 ---
 description: Viene illustrato come modificare l'aspetto del controllo di input matematico.
 ms.assetid: 922562be-4d5b-45b6-ad0b-49176f893c8e
-title: Personalizzazione del controllo di input matematico
+title: Personalizzazione del Controllo input penna espressioni matematiche
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3cab7c6efe003738c46a89d07866fcc9302ec5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8adedc4ab5b655f4f753a1b83cabe28e322adaad3c73bcf9f25ea1dea6d0bc08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104555584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118045640"
 ---
-# <a name="customizing-the-math-input-control"></a>Personalizzazione del controllo di input matematico
+# <a name="customizing-the-math-input-control"></a>Personalizzazione del Controllo input penna espressioni matematiche
 
-È possibile modificare l'aspetto del controllo di input matematico in modo che sia più adatto per l'applicazione. In questo argomento vengono illustrati i vari modi in cui gli sviluppatori possono personalizzare il controllo di input matematico.
+È possibile modificare l'aspetto del controllo di input matematico in modo che sia più adatto all'applicazione. In questo argomento vengono illustrati i vari modi in cui gli sviluppatori possono personalizzare il controllo di input matematico.
 
-Sono possibili le seguenti personalizzazioni:
+Sono possibili le personalizzazioni seguenti:
 
 -   [Modifica dei pulsanti visualizzati](#changing-the-displayed-buttons)
 -   [Modifica della didascalia del controllo](#changing-the-control-caption)
@@ -23,7 +23,7 @@ Sono possibili le seguenti personalizzazioni:
 
 ## <a name="changing-the-displayed-buttons"></a>Modifica dei pulsanti visualizzati
 
-È possibile modificare i pulsanti visualizzati nel controllo di input matematico in modo che il controllo abbia funzionalità estese o venga visualizzato più piccolo sullo schermo. Se si Abilita il set di pulsanti estesi, vengono visualizzati i pulsanti **Ripeti** e **Annulla** . Nel codice seguente viene illustrato come abilitare il set di pulsanti esteso.
+È possibile modificare i pulsanti visualizzati nel controllo di input matematico in modo che il controllo abbia funzionalità estese o venga visualizzato più piccolo sullo schermo. Se si abilita il set di pulsanti esteso, verranno visualizzati **i pulsanti Ripeti** e **Annulla.** Nel codice seguente viene illustrato come abilitare il set di pulsanti estesi.
 
 
 ```
@@ -53,17 +53,17 @@ Sono possibili le seguenti personalizzazioni:
 
 
 
-La figura seguente mostra il controllo con il set esteso di pulsanti.
+L'immagine seguente mostra il controllo con il set esteso di pulsanti.
 
-![controllo di input matematico con un set esteso di pulsanti](images/mic.png)
+![Controllo input matematico con un set esteso di pulsanti](images/mic.png)
 
-La figura seguente mostra il controllo senza il set esteso di pulsanti.
+L'immagine seguente mostra il controllo senza il set esteso di pulsanti.
 
-![controllo di input matematico senza un set esteso di pulsanti](images/mic-no-extended.png)
+![Controllo input matematico senza un set esteso di pulsanti](images/mic-no-extended.png)
 
 ## <a name="changing-the-control-caption"></a>Modifica della didascalia del controllo
 
-È possibile modificare la didascalia del controllo per il controllo di input matematico per impostare la didascalia nella finestra del controllo di input matematico. Il codice seguente illustra come impostare la didascalia.
+È possibile modificare la didascalia del controllo per il controllo di input matematico per impostare la didascalia nella finestra del controllo di input matematico. Nel codice seguente viene illustrato come impostare la didascalia.
 
 
 ```
@@ -79,13 +79,13 @@ La figura seguente mostra il controllo senza il set esteso di pulsanti.
 
 
 
-La figura seguente mostra il controllo dopo l'impostazione della didascalia.
+L'immagine seguente mostra il controllo dopo l'impostazione della didascalia.
 
-![controllo di input matematico con un set di didascalie](images/mic-caption.png)
+![Controllo di input matematico con un set di didascalie](images/mic-caption.png)
 
 ## <a name="changing-the-controls-preview-area-size"></a>Modifica delle dimensioni dell'area di anteprima del controllo
 
-È possibile personalizzare il controllo di input matematico in modo che il controllo imposti in modo esplicito le dimensioni dell'area di anteprima. In questo modo viene creata un'area più grande in cui vengono visualizzate le formule matematiche. Nel codice seguente viene illustrato come impostare le dimensioni dell'area di anteprima.
+È possibile personalizzare il controllo di input matematico in modo che il controllo ne imposta in modo esplicito le dimensioni dell'area di anteprima. Verrà creata un'area più ampia in cui vengono visualizzate le formule matematiche. Il codice seguente illustra come impostare le dimensioni dell'area di anteprima.
 
 
 ```
@@ -102,7 +102,7 @@ La figura seguente mostra il controllo dopo l'impostazione della didascalia.
 
 Le immagini seguenti mostrano un controllo con aree di anteprima di dimensioni diverse.
 
-![controllo di input matematico con le dimensioni dell'area di anteprima predefinite](images/mic.png)![controllo di input matematico con un'area di anteprima più ampia](images/mic-big-preview.png)
+![Controllo di input matematico con le dimensioni predefinite dell'area di anteprima](images/mic.png)![Controllo di input matematico con un'area di anteprima più grande](images/mic-big-preview.png)
 
  
 

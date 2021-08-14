@@ -1,7 +1,7 @@
 ---
-description: Assegna i dati del componente vettore all'istanza corrente di XMCOLOR.
+description: Assegna i dati del componente vettoriale all'istanza corrente di XMCOLOR.
 ms.assetid: 'overload:microsoft.directx_sdk.reference.xmcolor.operator = '
-title: Operatori XMCOLOR operator =
+title: Operatore XMCOLOR = operatori
 ms.topic: reference
 ms.date: 12/06/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 737076e4988edd08eb1e313cc604999f07e5e08f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f7b158c0f059e6bc3efda9d7a45cf62a8d524271fea98c18ebd02ed503a9777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103754066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276525"
 ---
-# <a name="xmcolor-operator--operators"></a>Operatori XMCOLOR operator =
+# <a name="xmcolor-operator--operators"></a>Operatore XMCOLOR = operatori
 
-Assegna i dati del componente vettore all'istanza corrente di [**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor).
+Assegna i dati del componente vettoriale all'istanza corrente di [**XMCOLOR.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -39,8 +39,8 @@ Assegna i dati del componente vettore all'istanza corrente di [**XMCOLOR**](/win
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-operator-assign(constuint32_t)">XMCOLOR:: operator = (const XMCOLOR&)</a></td>
-<td style="text-align: left;">Questo operatore assegna i dati del componente Vector da un'istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> all'istanza corrente di <strong>XMCOLOR</strong>.<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-operator-assign(constuint32_t)">XMCOLOR::operator = (const XMCOLOR&)</a></td>
+<td style="text-align: left;">Questo operatore assegna i dati del componente vettoriale da un'istanza di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a> all'istanza corrente di <strong>XMCOLOR</strong>.<br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.
@@ -48,8 +48,8 @@ Questo operatore è disponibile solo in C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-operator-assign(constuint32_t)">XMCOLOR:: operator = (const uint32_t)</a></td>
-<td style="text-align: left;">Questo operatore assegna i dati del componente vettoriale compressi in un'istanza di <code>uint32_t</code> all'istanza corrente di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a>.<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmcolor-operator-assign(constuint32_t)">XMCOLOR::operator = (const uint32_t)</a></td>
+<td style="text-align: left;">Questo operatore assegna i dati del componente vettoriale in un'istanza di <code>uint32_t</code> all'istanza corrente di <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor"><strong>XMCOLOR</strong></a>.<br/>
 <blockquote>
 [!Note]<br />
 Questo operatore è disponibile solo in C++.

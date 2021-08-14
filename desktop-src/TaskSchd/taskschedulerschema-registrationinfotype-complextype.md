@@ -3,7 +3,7 @@ title: Tipo complesso registrationInfoType
 description: Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento RegistrationInfo.
 ms.assetid: 855eb0a4-6037-4868-ae09-6c9f01d91545
 keywords:
-- Utilità di pianificazione di tipo complesso registrationInfoType
+- Tipo complesso registrationInfoType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe98a06daf84ec753c26903cc09787cec65c8d10
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 704fcb3205f032654ef6a666dd119dec34f88992018f16b1715ba4982847149d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131661"
 ---
 # <a name="registrationinfotype-complex-type"></a>Tipo complesso registrationInfoType
 
-Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) .
+Definisce gli elementi figlio e le informazioni di sequenziazione per [**l'elemento RegistrationInfo.**](taskschedulerschema-registrationinfo-tasktype-element.md)
 
 ``` syntax
 <xs:complexType name="registrationInfoType">
@@ -74,7 +74,7 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 | [**Descrizione**](taskschedulerschema-description-registrationinfotype-element.md)               | string   | Specifica la descrizione dell'attività.<br/>                                                                  |
 | [**Documentazione**](taskschedulerschema-documentation-registrationinfotype-element.md)           | string   | Specifica qualsiasi documentazione aggiuntiva per l'attività.<br/>                                                    |
 | [**SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) | string   | Specifica il descrittore di sicurezza dell'attività.<br/>                                                          |
-| [**Origine**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Specifica la posizione da cui ha avuto origine l'attività. Ad esempio, da un componente, un servizio, un'applicazione o un utente.<br/> |
+| [**fonte**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Specifica la posizione di origine dell'attività. Ad esempio, da un componente, un servizio, un'applicazione o un utente.<br/> |
 | [**URI**](taskschedulerschema-uri-registrationinfotype-element.md)                               | anyURI   | Specifica l'URI dell'attività.<br/>                                                                          |
 | [**Versione**](taskschedulerschema-version-registrationinfotype-element.md)                       | string   | Specifica il numero di versione dell'attività.<br/>                                                               |
 
@@ -86,8 +86,8 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -95,7 +95,7 @@ Definisce gli elementi figlio e le informazioni di sequenziazione per l'elemento
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

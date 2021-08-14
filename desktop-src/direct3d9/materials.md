@@ -1,51 +1,51 @@
 ---
 description: I materiali descrivono il modo in cui i poligoni riflettono la luce o sembrano emettere luce in una scena 3D.
 ms.assetid: vs|directx_sdk|~\materials.htm
-title: Materiali (Direct3D 9)
+title: Materials (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e75953fd5839e1b3e7b9cc89b7331147cdb585
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5e8140de30243c7a0f7290715da3d0720cd15cea769bd78cbf66893c0082062d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104558073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118092955"
 ---
-# <a name="materials-direct3d-9"></a>Materiali (Direct3D 9)
+# <a name="materials-direct3d-9"></a>Materials (Direct3D 9)
 
-I materiali descrivono il modo in cui i poligoni riflettono la luce o sembrano emettere luce in una scena 3D. Le proprietà del materiale illustrano in dettaglio la reflection diffusa del materiale, la reflection ambiente, le emissioni chiare e le caratteristiche di evidenziazione speculare. Direct3D usa la struttura [**D3DMATERIAL9**](d3dmaterial9.md) per contenere tutte le informazioni sulle proprietà del materiale. Fatta eccezione per la proprietà speculare, ogni proprietà viene descritta come un colore RGBA che rappresenta la quantità di parti rosse, verdi e blu di un determinato tipo di luce che riflette e un fattore di fusione alfa.
+I materiali descrivono il modo in cui i poligoni riflettono la luce o sembrano emettere luce in una scena 3D. Le proprietà dei materiali illustrano in dettaglio le caratteristiche di riflessione diffusa, riflessione ambientale, emissione di luce e evidenziazione speculare di un materiale. Direct3D usa la [**struttura D3DMATERIAL9**](d3dmaterial9.md) per portare tutte le informazioni sulle proprietà dei materiali. Ad eccezione della proprietà speculare, ogni proprietà viene descritta come un colore RGBA che rappresenta la quantità di parti rosse, verdi e blu di un determinato tipo di luce che riflette e un fattore di fusione alfa.
 
-## <a name="diffuse-and-ambient-reflection"></a>Reflection diffusa e di ambiente
+## <a name="diffuse-and-ambient-reflection"></a>Reflection diffusa e ambientale
 
-I membri diffusi e di ambiente della struttura [**D3DMATERIAL9**](d3dmaterial9.md) descrivono in che modo un materiale riflette l'ambiente e diffonde la luce in una scena. Poiché la maggior parte delle scene contiene una luce molto più diffusa rispetto alla luce ambientale, la reflection diffusa riproduce la parte più ampia per determinare il colore. Inoltre, poiché la luce diffusa è direzionale, l'angolo di incidenza della luce diffusa influiscono sull'intensità complessiva della reflection. La reflection diffusa è maggiore quando la luce colpisce un vertice parallelo alla normale del vertice. Con l'aumentare dell'angolo, l'effetto della reflection diffusa diminuisce. La quantità di luce riflessa è il coseno dell'angolo tra la luce in arrivo e il vertice normale, come illustrato nella figura seguente.
+I membri Diffuse e Ambient della [**struttura D3DMATERIAL9**](d3dmaterial9.md) descrivono in che modo un materiale riflette la luce ambientale e diffusa in una scena. Poiché la maggior parte delle scene contiene una luce molto più diffusa rispetto alla luce ambientale, la reflection diffusa svolge la parte più importante nella determinazione del colore. Inoltre, poiché la luce diffusa è direzionale, l'angolo di inclinazione per la luce diffusa influisce sull'intensità complessiva della reflection. La reflection diffusa è massima quando la luce sfora un vertice parallelo alla normale del vertice. Con l'aumentare dell'angolo, l'effetto della reflection diffusa diminuisce. La quantità di luce riflessa è il coseno dell'angolo tra la luce in ingresso e la normale del vertice, come illustrato nella figura seguente.
 
 ![illustrazione della quantità di luce riflessa](images/incident.png)
 
-La reflection di ambiente, ad esempio la luce di ambiente, non è direzionale. La reflection di ambiente ha un impatto minore sul colore apparente di un oggetto di cui è stato eseguito il rendering, ma influisce sul colore complessivo ed è più evidente quando poca o nessuna luce diffusa riflette il materiale. La reflection di ambiente di un materiale è interessata dal set di luce di ambiente per una scena chiamando il metodo [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) con il \_ flag di ambiente D3DRS.
+La reflection ambientale, come la luce ambientale, non è direzionale. La reflection ambientale ha un impatto minore sul colore apparente di un oggetto sottoposto a rendering, ma influisce sul colore complessivo ed è più evidente quando una luce diffusa poco o nessuna riflette il materiale. La reflection ambientale di un materiale è influenzata dalla luce ambientale impostata per una scena chiamando il metodo [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) con il \_ flag AMBIENT D3DRS.
 
-La reflection diffusa e di ambiente interagiscono per determinare il colore percepito di un oggetto e sono in genere valori identici. Ad esempio, per eseguire il rendering di un oggetto cristallino blu, si crea un materiale che riflette solo il componente blu di diffusione e luce ambientale. Quando viene inserita in una stanza con una luce bianca, il cristallo sembra essere blu. Tuttavia, in una stanza con solo luce rossa, lo stesso cristallo sembrerebbe nero, perché il materiale non riflette la luce rossa.
+La reflection diffusa e ambientale funzionano insieme per determinare il colore percepito di un oggetto e sono in genere valori identici. Ad esempio, per eseguire il rendering di un oggetto blu della sfera, si crea un materiale che riflette solo il componente blu della luce diffusa e ambientale. Quando viene posizionato in una stanza con una luce bianca, il cristallo sembra essere blu. Tuttavia, in una stanza con solo luce rossa, lo stesso cristallo apparirebbe nero, perché il materiale non riflette la luce rossa.
 
 ## <a name="emission"></a>Emissione
 
-I materiali possono essere usati per fare in modo che un oggetto di cui è stato eseguito il rendering risulti con luminosità automatica. Il membro emissivo della struttura [**D3DMATERIAL9**](d3dmaterial9.md) viene usato per descrivere il colore e la trasparenza della luce emessa. L'emissione influiscono sul colore di un oggetto e può, ad esempio, rendere un materiale scuro più chiaro e assumere parte del colore emesso.
+I materiali possono essere usati per fare in modo che un oggetto di cui è stato eseguito il rendering sia auto-lumineso. Il membro Emissive della struttura [**D3DMATERIAL9**](d3dmaterial9.md) viene usato per descrivere il colore e la trasparenza della luce emessa. L'emissione influisce sul colore di un oggetto e può, ad esempio, rendere più chiaro un materiale scuro e assumere parte del colore emesso.
 
-È possibile usare la proprietà emissivo di un materiale per aggiungere l'illusione che un oggetto emette la luce, senza incorrere nel sovraccarico computazionale dell'aggiunta di una luce alla scena. Nel caso del cristallo blu, la proprietà emissivo è utile se si vuole che il cristallo appaia chiaro, ma non viene eseguito il cast della luce sugli altri oggetti nella scena. Tenere presente che i materiali con proprietà emissivo non emettono luce che possono essere riflessi da altri oggetti in una scena. Per ottenere questa luce riflessa, è necessario inserire una luce aggiuntiva all'interno della scena.
+È possibile usare la proprietà emissiva di un materiale per aggiungere l'effetto che un oggetto sta emettendo luce, senza incorrere nell'overhead di calcolo dovuto all'aggiunta di una luce alla scena. Nel caso del cristallo blu, la proprietà emissiva è utile se si vuole far apparire il cristallo in luce, ma non proiettare luce su altri oggetti nella scena. Tenere presente che i materiali con proprietà emissive non emettono luce che può essere riflessa da altri oggetti in una scena. Per ottenere questa luce riflessa, è necessario posizionare una luce aggiuntiva all'interno della scena.
 
 ## <a name="specular-reflection"></a>Reflection speculare
 
-La reflection speculare crea evidenziazioni sugli oggetti, facendo in modo che vengano visualizzate lucide. La struttura [**D3DMATERIAL9**](d3dmaterial9.md) contiene due membri che descrivono il colore di evidenziazione speculare, nonché il lucentezza globale del materiale. Il colore delle evidenziazioni speculari viene stabilito impostando il membro speculare sul colore RGBA desiderato. i colori più comuni sono bianco o grigio chiaro. I valori impostati in Power membri controllano la nitidezza degli effetti speculari.
+La reflection speculare crea evidenziazioni sugli oggetti, rendendoli molto luminosi. La [**struttura D3DMATERIAL9**](d3dmaterial9.md) contiene due membri che descrivono il colore di evidenziazione speculare e la luminosità complessiva del materiale. È possibile stabilire il colore delle evidenziazioni speculari impostando il membro Specular sul colore RGBA desiderato. I colori più comuni sono il bianco o il grigio chiaro. I valori impostati nel membro Power controllano la nitidezza degli effetti speculari.
 
-Le evidenziazioni speculari possono creare effetti drammatici. Disegno di nuovo in Blue Crystal analogy: un valore di potenza maggiore crea evidenziazioni speculari più nitide, rendendo il cristallo apparentemente chiaro. I valori più piccoli aumentano l'area dell'effetto, creando una reflection noiosa che rende l'aspetto cristallizzato. Per fare in modo che un oggetto sia effettivamente opaco, impostare il membro di alimentazione su zero e il colore da speculare a nero. Sperimentare diversi livelli di reflection per produrre un aspetto realistico per le proprie esigenze. Nella figura seguente vengono illustrati due modelli identici. Quello a sinistra usa una potenza di Reflection speculare di 10. il modello a destra non ha Reflection speculare.
+Le evidenziazioni speculari possono creare effetti notevoli. Disegnando di nuovo sull'analogia blu del cristallo: un valore di Potenza maggiore crea evidenziazioni speculari più nitide, facendo sembrare il cristallo piuttosto chiaro. I valori più piccoli aumentano l'area dell'effetto, creando un effetto di riflessione che rende l'aspetto del cristallo insoddibile. Per rendere un oggetto realmente opaco, impostare il membro Power su zero e il colore in Specular (Speculare) su nero. Sperimentare diversi livelli di reflection per produrre un aspetto realistico per le proprie esigenze. Nella figura seguente vengono illustrati due modelli identici. Quella a sinistra usa una potenza di reflection speculare di 10; il modello a destra non ha reflection speculare.
 
-![illustrazione dei modelli di Reflection speculare](images/spechigh.png)
+![illustrazione di modelli di reflection speculari](images/spechigh.png)
 
-## <a name="setting-material-properties"></a>Impostazione delle proprietà del materiale
+## <a name="setting-material-properties"></a>Impostazione delle proprietà dei materiali
 
-I dispositivi di rendering Direct3D possono eseguire il rendering con un set di proprietà del materiale alla volta.
+I dispositivi di rendering Direct3D possono eseguire il rendering con un set di proprietà materiale alla volta.
 
-In un'applicazione C++ è possibile impostare le proprietà del materiale utilizzate dal sistema preparando una struttura [**D3DMATERIAL9**](d3dmaterial9.md) , quindi chiamando il metodo [**IDirect3DDevice9:: sematerial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial) .
+In un'applicazione C++ è possibile impostare le proprietà del materiale utilizzate dal sistema preparando una struttura [**D3DMATERIAL9**](d3dmaterial9.md) e quindi chiamando il [**metodo IDirect3DDevice9::SetMaterial.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)
 
-Per preparare la struttura [**D3DMATERIAL9**](d3dmaterial9.md) per l'uso, impostare le informazioni sulle proprietà nella struttura per creare l'effetto desiderato durante il rendering. Nell'esempio di codice seguente viene impostata la struttura **D3DMATERIAL9** per un materiale viola con evidenziazioni speculari bianche nitide.
+Per preparare la [**struttura D3DMATERIAL9 per**](d3dmaterial9.md) l'uso, impostare le informazioni sulla proprietà nella struttura per creare l'effetto desiderato durante il rendering. Nell'esempio di codice seguente viene impostata la **struttura D3DMATERIAL9** per un materiale viola con evidenziazioni speculari di colore bianco acuto.
 
 
 ```
@@ -79,7 +79,7 @@ mat.Emissive.a = 0.0f;
 
 
 
-Dopo aver preparato la struttura [**D3DMATERIAL9**](d3dmaterial9.md) , è necessario applicare le proprietà chiamando il metodo [**IDirect3DDevice9:: sematerial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial) del dispositivo di rendering. Questo metodo accetta l'indirizzo di una struttura **D3DMATERIAL9** predisposta come unico parametro. È possibile chiamare **IDirect3DDevice9:: sematerial** con le nuove informazioni necessarie per aggiornare le proprietà del materiale per il dispositivo. Nell'esempio di codice riportato di seguito viene illustrato come potrebbe apparire nel codice.
+Dopo aver preparato [**la struttura D3DMATERIAL9,**](d3dmaterial9.md) applicare le proprietà chiamando il metodo [**IDirect3DDevice9::SetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial) del dispositivo di rendering. Questo metodo accetta l'indirizzo di una struttura **D3DMATERIAL9 preparata** come unico parametro. È possibile chiamare **IDirect3DDevice9::SetMaterial** con le nuove informazioni necessarie per aggiornare le proprietà dei materiali per il dispositivo. Nell'esempio di codice seguente viene illustrato l'aspetto che può avere nel codice.
 
 
 ```
@@ -96,7 +96,7 @@ if(FAILED(hr))
 
 
 
-Quando si crea un dispositivo Direct3D, il materiale corrente viene impostato automaticamente sul valore predefinito indicato nella tabella seguente.
+Quando si crea un dispositivo Direct3D, il materiale corrente viene impostato automaticamente sul valore predefinito illustrato nella tabella seguente.
 
 
 
@@ -106,15 +106,15 @@ Quando si crea un dispositivo Direct3D, il materiale corrente viene impostato au
 | Speculare | (R:0, G:0, B:0, A:0) |
 | Di ambiente  | (R:0, G:0, B:0, A:0) |
 | Emissiva | (R:0, G:0, B:0, A:0) |
-| Potenza    | (0,0)                |
+| Elettricità    | (0.0)                |
 
 
 
  
 
-## <a name="retrieving-material-properties"></a>Recupero delle proprietà del materiale
+## <a name="retrieving-material-properties"></a>Recupero delle proprietà dei materiali
 
-È possibile recuperare le proprietà del materiale utilizzate attualmente dal dispositivo di rendering chiamando il metodo [**IDirect3DDevice9:: getmaterial**](/windows/desktop/api) per il dispositivo. A differenza del metodo [**IDirect3DDevice9:: sematerial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial) , **IDirect3DDevice9:: getmaterial** non richiede la preparazione. Il metodo **IDirect3DDevice9:: getmaterial** accetta l'indirizzo di una struttura [**D3DMATERIAL9**](d3dmaterial9.md) e riempie la struttura fornita con le informazioni che descrivono le proprietà Material correnti prima di restituire.
+È possibile recuperare le proprietà materiali attualmente in uso nel dispositivo di rendering chiamando il metodo [**IDirect3DDevice9::GetMaterial**](/windows/desktop/api) per il dispositivo. A differenza [**del metodo IDirect3DDevice9::SetMaterial,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial) **IDirect3DDevice9::GetMaterial** non richiede la preparazione. Il **metodo IDirect3DDevice9::GetMaterial** accetta l'indirizzo di una struttura [**D3DMATERIAL9**](d3dmaterial9.md) e inserisce nella struttura fornita informazioni che descrivono le proprietà dei materiali correnti prima della restituzione.
 
 
 ```
@@ -133,7 +133,7 @@ if(FAILED(hr))
 
 
 > [!Note]  
-> Se l'applicazione non specifica le proprietà del materiale per il rendering, il sistema utilizza un materiale predefinito. Il materiale predefinito riflette tutto il bianco chiaro, ad esempio, senza reflection di ambiente o speculare e nessun colore emissivo.
+> Se l'applicazione non specifica le proprietà dei materiali per il rendering, il sistema usa un materiale predefinito. Il materiale predefinito riflette tutta la luce diffusa, ad esempio il bianco, senza riflessi ambientali o speculari e senza colore emissivo.
 
  
 

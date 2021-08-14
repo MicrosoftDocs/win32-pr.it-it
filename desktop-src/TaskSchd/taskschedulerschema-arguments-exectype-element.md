@@ -1,9 +1,9 @@
 ---
-title: Arguments (execType)-elemento
+title: Elemento Arguments (execType)
 description: Specifica gli argomenti associati all'operazione della riga di comando.
 ms.assetid: 37207c4f-941c-4cbf-9a81-5876b224a7c1
 keywords:
-- Elemento arguments Utilità di pianificazione
+- Elemento Arguments Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ff35465fbad1de82d096b583499ea6cdafe93ca7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: edf76f7073e62aac10c85dc035d3b441a90a4e0ee1fae90b4decf5cffc4568df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104518195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132076"
 ---
-# <a name="arguments-exectype-element"></a>Arguments (execType)-elemento
+# <a name="arguments-exectype-element"></a>Elemento Arguments (execType)
 
 Specifica gli argomenti associati all'operazione della riga di comando.
 
@@ -30,7 +30,7 @@ Specifica gli argomenti associati all'operazione della riga di comando.
  />
 ```
 
-L'elemento **arguments** è definito dal tipo complesso [**execType**](taskschedulerschema-exectype-complextype.md) .
+**L'elemento** Arguments è definito dal [**tipo complesso execType.**](taskschedulerschema-exectype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -44,13 +44,13 @@ L'elemento **arguments** è definito dal tipo complesso [**execType**](tasksched
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere la [**proprietà Arguments di IExecAction**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments).
+Per lo sviluppo C++, vedere la [**proprietà Arguments di IExecAction**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments).
 
-Per lo sviluppo di script, vedere [**ExecAction. Arguments**](execaction-arguments.md).
+Per lo sviluppo di script, [**vedere ExecAction.Arguments**](execaction-arguments.md).
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio completo del codice XML per un'attività che usa un'azione eseguibile, vedere [esempio di trigger temporale (XML)](time-trigger-example--xml-.md).
+Per un esempio completo del codice XML per un'attività che usa un'azione eseguibile, vedere [Esempio di trigger temporale (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -58,8 +58,8 @@ Per un esempio completo del codice XML per un'attività che usa un'azione esegui
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ Per un esempio completo del codice XML per un'attività che usa un'azione esegui
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

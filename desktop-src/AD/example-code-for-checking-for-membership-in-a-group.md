@@ -1,22 +1,22 @@
 ---
-title: Codice di esempio per verificare l'appartenenza a un gruppo
-description: Nell'esempio di codice seguente viene verificata l'appartenenza assoluta di un oggetto mediante la verifica ricorsiva che un oggetto sia membro di un gruppo o di qualsiasi gruppo annidato in tale gruppo.
+title: Codice di esempio per il controllo dell'appartenenza a un gruppo
+description: Nell'esempio di codice seguente viene verificata l'appartenenza assoluta di un oggetto verificando in modo ricorsivo che un oggetto sia membro di un gruppo o di qualsiasi gruppo annidato in tale gruppo.
 ms.assetid: 4b6ef607-8d2e-4209-be61-498302749f7c
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, verifica dell'appartenenza a un gruppo
+- Esempi di Active Directory Active Directory, controllo dell'appartenenza a un gruppo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2043808dc31fb3c154a050fb77a7e4f44f44632d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c929580bec3717f0dd1bd82520af7755061112eca7a28226275f796f4d41af22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191152"
 ---
-# <a name="example-code-for-checking-for-membership-in-a-group"></a>Codice di esempio per verificare l'appartenenza a un gruppo
+# <a name="example-code-for-checking-for-membership-in-a-group"></a>Codice di esempio per il controllo dell'appartenenza a un gruppo
 
-Nell'esempio di codice seguente viene verificata l'appartenenza assoluta di un oggetto mediante la verifica ricorsiva che un oggetto sia membro di un gruppo o di qualsiasi gruppo annidato in tale gruppo.
+Nell'esempio di codice seguente viene verificata l'appartenenza assoluta di un oggetto verificando in modo ricorsivo che un oggetto sia membro di un gruppo o di qualsiasi gruppo annidato in tale gruppo.
 
 
 ```C++
@@ -356,9 +356,9 @@ void PrintBanner(LPOLESTR pwszBanner)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

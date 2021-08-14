@@ -1,22 +1,22 @@
 ---
 title: Controlli (nozioni di base sulla progettazione)
-description: I controlli sono elementi dell'interfaccia utente con cui gli utenti interagiscono nell'area della finestra principale dell'app. Vedere esempi visivi di controlli nelle app desktop basate su Windows e ottenere collegamenti alle linee guida per ogni controllo.
+description: I controlli sono elementi dell'interfaccia utente con cui gli utenti interagiscono nell'area della finestra principale dell'app. Vedere esempi visivi di controlli nelle Windows desktop basate su applicazioni desktop e ottenere collegamenti alle linee guida per ogni controllo.
 ms.assetid: 5c48728b-6d86-4827-9757-f06c23ca54d8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c44e7b5f3772984b1dc24b166b9fe8c03a395f8a
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 7254608502145c0e64098941f923ac2051008aa2db2936fe8baf439455c0cfaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118040347"
 ---
 # <a name="controls-design-basics"></a>Controlli (nozioni di base sulla progettazione)
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida alla progettazione è stata creata Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-I controlli sono elementi dell'interfaccia utente con cui gli utenti interagiscono nell'area della finestra principale dell'app. Vedere esempi visivi di controlli nelle app desktop basate su Windows e ottenere collegamenti alle linee guida per ogni controllo.
+I controlli sono elementi dell'interfaccia utente con cui gli utenti interagiscono nell'area della finestra principale dell'app. Vedere esempi visivi di controlli nelle Windows desktop basate su applicazioni desktop e ottenere collegamenti alle linee guida per ogni controllo.
 
 
 
@@ -30,7 +30,7 @@ I controlli sono elementi dell'interfaccia utente con cui gli utenti interagisco
 | ![casella di gruppo](images/controls-image6.png)<br/> [Le caselle](ctrl-group-boxes.md) di gruppo consentono agli utenti di visualizzare le relazioni tra un set di controlli correlati.<br/>                                                                                                                                                                                                                |
 | ![Link](images/controls-image7.png)<br/> [I collegamenti](ctrl-links.md) consentono agli utenti di passare a un'altra pagina, finestra o argomento della Guida. visualizzare una definizione; avviare un comando; o scegliere un'opzione.<br/>                                                                                                                                                                    |
 | ![casella di riepilogo](images/controls-image8.png)<br/> [Le caselle](ctrl-list-boxes.md) di riepilogo consentono agli utenti di eseguire la selezione da un set di valori presentati in un elenco sempre visibile. Con una casella di riepilogo a selezione singola, gli utenti selezionano un elemento da un elenco di valori che si escludono a vicenda. Con una casella di riepilogo a selezione multipla, gli utenti selezionano zero o più elementi da un elenco di valori.<br/> |
-| ![visualizzazione elenco](images/controls-image9.png)<br/> [Le visualizzazioni](ctrl-list-views.md) elenco consentono agli utenti di visualizzare e interagire con una raccolta di oggetti dati, usando una selezione singola o più selezioni.<br/>                                                                                                                                                           |
+| ![visualizzazione elenco](images/controls-image9.png)<br/> [Le visualizzazioni](ctrl-list-views.md) elenco consentono agli utenti di visualizzare e interagire con una raccolta di oggetti dati, usando una singola selezione o più selezioni.<br/>                                                                                                                                                           |
 | ![Notifica](images/controls-image10.png)<br/> [Le](mess-notif.md) notifiche informano gli utenti di eventi non correlati all'attività dell'utente corrente.<br/>                                                                                                                                                                                                          |
 | ![Indicatore](images/controls-image11.png)<br/> [Le barre di](progress-bars.md) avanzamento consentono agli utenti di seguire lo stato di avanzamento di un'operazione di lunga durata.<br/>                                                                                                                                                                                                                    |
 | ![divulgazione progressiva](images/controls-image12.png)<br/> [I controlli di diffusione](ctrl-progressive-disclosure-controls.md) progressiva consentono agli utenti di visualizzare o nascondere informazioni aggiuntive, inclusi dati, opzioni o comandi.<br/>                                                                                                                                   |
@@ -43,7 +43,7 @@ I controlli sono elementi dell'interfaccia utente con cui gli utenti interagisco
 | ![casella di testo](images/controls-image19.png)<br/> [Le caselle](ctrl-text-boxes.md) di testo consentono agli utenti di visualizzare, immettere o modificare un testo o un valore numerico.<br/>                                                                                                                                                                                                                    |
 | ![Descrizione comandi](images/controls-image20.png)<br/> [Le descrizioni](ctrl-tooltips-and-infotips.md) comando etichettano un controllo senza etichetta.<br/>                                                                                                                                                                                                                                                |
 | ![infotip](images/controls-image21.png)<br/> [Le descrizioni comandi](ctrl-tooltips-and-infotips.md) descrivono un oggetto a cui l'utente punta.<br/>                                                                                                                                                                                                                          |
-| ![treeview](images/controls-image22.png)<br/> [Le visualizzazioni](ctrl-tree-views.md) albero consentono agli utenti di visualizzare e interagire con una raccolta di oggetti disposti gerarchicamente, usando una selezione singola o più selezioni.<br/>                                                                                                                                        |
+| ![treeview](images/controls-image22.png)<br/> [Le visualizzazioni](ctrl-tree-views.md) albero consentono agli utenti di visualizzare e interagire con una raccolta di oggetti disposti gerarchicamente, usando una singola selezione o più selezioni.<br/>                                                                                                                                        |
 
 
 

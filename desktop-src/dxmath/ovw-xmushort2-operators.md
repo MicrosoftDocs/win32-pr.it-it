@@ -4,16 +4,16 @@ ms.assetid: f57c9445-bd7f-42f7-b892-1023b76c792e
 title: Operatori XMUSHORT2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 281c5a741e94746c81d98e3836ba2ba980533d0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e95dd1bb1cf008c9a3447014bcafed0ff41a94ee204b5b7b7649aa7d7b385032
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500776"
 ---
 # <a name="xmushort2-operators"></a>Operatori XMUSHORT2
 
-La struttura [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) espone gli operatori seguenti.
+La [**struttura XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,7 +26,7 @@ La struttura [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 | Metodi                                                | Descrizione                                                                                                            |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/previous-versions/windows/desktop/legacy/ee420700(v=vs.85))<br/> | Assegna i dati del componente vettore da un'istanza di `XMUSHORT2` all'istanza corrente di `XMUSHORT2` . <br/> |
+| [**operator =**](/previous-versions/windows/desktop/legacy/ee420700(v=vs.85))<br/> | Assegna i dati del componente vettore da un'istanza `XMUSHORT2` di all'istanza corrente di `XMUSHORT2` . <br/> |
 
 
 

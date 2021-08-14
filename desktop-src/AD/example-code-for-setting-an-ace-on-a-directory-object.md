@@ -1,32 +1,32 @@
 ---
-title: Codice di esempio per l'impostazione di una voce ACE in un oggetto directory
-description: Questo argomento include diversi esempi di codice che aggiungono una voce di controllo di accesso (ACE) all'elenco di controllo di accesso discrezionale (DACL) del descrittore di sicurezza di un oggetto directory.
+title: Codice di esempio per l'impostazione di una ACE in un oggetto directory
+description: Questo argomento include diversi esempi di codice che aggiungono una voce di controllo di accesso (ACE) all'elenco DICL (Discretionary Access Control List) del descrittore di sicurezza di un oggetto directory.
 ms.assetid: fb1ad9f5-af2f-4ad1-a58b-6439cca6fd23
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, impostazione di una voce ACE in un oggetto directory
+- Active Directory esempi di Active Directory, impostazione di una ACE su un oggetto directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e16180a2e1216c749c35d68ff607e81320a1482c
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 86bf938e113a9293bf13e2bbb5a910617e41cba0ee411a15598966ea7a54628a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "106299579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190173"
 ---
-# <a name="example-code-for-setting-an-ace-on-a-directory-object"></a>Codice di esempio per l'impostazione di una voce ACE in un oggetto directory
+# <a name="example-code-for-setting-an-ace-on-a-directory-object"></a>Codice di esempio per l'impostazione di una ACE in un oggetto directory
 
-## <a name="define-the-setright-function"></a>Definire la funzione Seright
+## <a name="define-the-setright-function"></a>Definire la funzione SetRight
 
-Nell'esempio di codice seguente viene definita una funzione che aggiunge una voce di controllo di accesso (ACE) all'elenco di controllo di accesso discrezionale (DACL) del descrittore di sicurezza di un oggetto specificato in Active Directory Domain Services. La subroutine consente di:
+Nell'esempio di codice seguente viene definita una funzione che aggiunge una voce di controllo di accesso (ACE) all'elenco DACL (Discretionary Access Control List) del descrittore di sicurezza di un oggetto specificato in Active Directory Domain Services. La subroutine consente di:
 
 -   Concedere o negare l'accesso all'intero oggetto.
--   Concedere o negare l'accesso a una proprietà specifica dell'oggetto.
--   Concedere o negare l'accesso a un set di proprietà nell'oggetto.
+-   Concedere o negare l'accesso a una proprietà specifica nell'oggetto .
+-   Concedere o negare l'accesso a un set di proprietà nell'oggetto .
 -   Concedere o negare il diritto di creare un tipo specifico di oggetto figlio.
--   Impostare una voce ACE che può essere ereditata da tutti gli oggetti figlio o da oggetti figlio di una classe di oggetti specificata.
+-   Imposta una ACE che può essere ereditata da tutti gli oggetti figlio o da oggetti figlio di una classe di oggetti specificata.
 
-Seguendo questo Visual Basic esempio di codice sono disponibili diversi esempi di codice che illustrano come usare la funzione **Seright** per impostare tipi diversi di ACE.
+In questo Visual Basic di codice sono riportati diversi esempi di codice che illustrano come usare la **funzione SetRight** per impostare tipi diversi di ACE.
 
 
 ```VB
@@ -249,7 +249,7 @@ return hr;
 
 ## <a name="grant-or-deny-access-to-the-entire-object"></a>Concedere o negare l'accesso all'intero oggetto
 
-Nell'esempio di codice Visual Basic seguente viene compilata una stringa di associazione per il contenitore Users, quindi viene chiamata la funzione **Seright** per impostare una voce ACE nel contenitore Users. In questo esempio viene impostata una voce ACE che concede al trustee il diritto di leggere o scrivere qualsiasi proprietà nell'oggetto.
+Nell'esempio Visual Basic codice seguente viene compilata una stringa di associazione per il contenitore Users e quindi viene chiamata la **funzione SetRight** per impostare una ACE nel contenitore Users. In questo esempio viene impostata una ACE che concede al trustee il diritto di leggere o scrivere qualsiasi proprietà nell'oggetto .
 
 
 ```VB
@@ -281,7 +281,7 @@ End If
 
 
 
-Nell'esempio di codice C++ riportato di seguito viene impostata una voce ACE che concede al trustee l'autorizzazione per la lettura o la scrittura di qualsiasi proprietà nell'oggetto. Nell'esempio di codice si presuppone che *pObject* e *szTrustee* siano impostati su valori validi. Per ulteriori informazioni, vedere [impostazione dei diritti di accesso per un oggetto](setting-access-rights-on-an-object.md).
+Nell'esempio di codice C++ seguente viene impostata una ACE che concede al trustee l'autorizzazione per leggere o scrivere qualsiasi proprietà nell'oggetto . L'esempio di codice presuppone che *pObject* *e szTrustee* siano impostati su valori validi. Per altre informazioni, vedere [Impostazione dei diritti di accesso per un oggetto](setting-access-rights-on-an-object.md).
 
 
 ```C++
@@ -304,7 +304,7 @@ hr = SetRight(
 
 ## <a name="grant-or-deny-access-to-a-specific-property-on-the-object"></a>Concedere o negare l'accesso a una proprietà specifica nell'oggetto
 
-In questo esempio di codice viene chiamata la funzione **Seright** per concedere al trustee il diritto di leggere o scrivere una proprietà specifica dell'oggetto. Tenere presente che è necessario specificare il **schemaIDGUID** della proprietà ed è necessario specificare **Ads \_ ACETYPE \_ accesso \_ consentito \_** per indicare che si tratta di una voce ACE specifica dell'oggetto. In questo esempio di codice viene inoltre specificato il flag **\_ \_ \_ ACE ACEFLAG ereditate ADS** che indica che la voce ACE può essere ereditata dagli oggetti figlio.
+Questo esempio di codice chiama **la funzione SetRight** per concedere al trustee il diritto di leggere o scrivere una proprietà specifica nell'oggetto . Tenere presente che è necessario specificare **schemaIDGUID** della proprietà ed è necessario specificare **ADS \_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** per indicare che si tratta di una ACE specifica dell'oggetto. In questo esempio di codice viene specificato anche il flag **ACE INHERIT di ADS \_ \_ \_ ACEFLAG** che indica che la ACE può essere ereditata dagli oggetti figlio.
 
 
 ```VB
@@ -351,11 +351,11 @@ hr = SetRight(
 
 ## <a name="grant-or-deny-access-to-a-set-of-properties-on-the-object"></a>Concedere o negare l'accesso a un set di proprietà nell'oggetto
 
-In questo esempio di codice viene chiamata la funzione **Seright** per concedere al trustee il diritto di leggere o scrivere un set specifico di proprietà nell'oggetto. Specificare **Ads \_ ACETYPE \_ accesso \_ consentito all' \_ oggetto** per indicare che si tratta di una voce ACE specifica dell'oggetto.
+Questo esempio di codice chiama **la funzione SetRight** per concedere al trustee il diritto di leggere o scrivere un set specifico di proprietà nell'oggetto . Specificare **ADS \_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** per indicare che si tratta di una ACE specifica dell'oggetto.
 
-Un set di proprietà viene definito da un oggetto **controlAccessRight** nel contenitore dei diritti estesi della partizione di configurazione. Per identificare il set di proprietà nella voce ACE, specificare la proprietà **rightsGuid** di un oggetto **controlAccessRight** . Tenere presente che questo GUID del set di proprietà viene impostato anche nella proprietà **attributeSecurityGUID** di ogni oggetto **attributeSchema** incluso nel set di proprietà. Per altre informazioni, vedere [controllare i diritti di accesso](control-access-rights.md).
+Un set di proprietà è definito da un **oggetto controlAccessRight** nel contenitore Extended Rights della partizione Configuration. Per identificare il set di proprietà nella ACE, specificare la **proprietà rightsGUID** di un **oggetto controlAccessRight.** Tenere presente che questo GUID del set di proprietà viene impostato anche nella proprietà **attributeSecurityGUID** di ogni **oggetto attributeSchema** incluso nel set di proprietà. Per altre informazioni, vedere Controllare [i diritti di accesso.](control-access-rights.md)
 
-Questo esempio di codice consente inoltre di specificare i flag di ereditarietà che impostano la voce ACE come ereditabile dagli oggetti figlio, ma inefficace sull'oggetto immediato. Nell'esempio viene inoltre specificato il GUID della classe User, che indica che la voce ACE può essere ereditata solo dagli oggetti di tale classe.
+Questo esempio di codice specifica anche i flag di ereditarietà che impostano la ACE come ereditabile dagli oggetti figlio, ma inefficaci nell'oggetto immediato. Inoltre, l'esempio specifica il GUID della classe User, che indica che la ACE può essere ereditata solo dagli oggetti di tale classe.
 
 
 ```VB
@@ -402,9 +402,9 @@ hr = SetRight(
 
 
 
-## <a name="grant-or-deny-permission-to-create-a-specific-type-of-child-object"></a>Concedere o negare l'autorizzazione per la creazione di un tipo specifico di oggetto figlio
+## <a name="grant-or-deny-permission-to-create-a-specific-type-of-child-object"></a>Concedere o negare l'autorizzazione per creare un tipo specifico di oggetto figlio
 
-Nell'esempio di codice seguente viene chiamata la funzione **Seright** per concedere a un trustee specificato il diritto di creare ed eliminare oggetti utente nel sottoalbero sotto l'oggetto specificato. Tenere presente che l'esempio specifica il GUID della classe utente, il che significa che la voce ACE consente solo al trustee di creare oggetti utente, non a oggetti di altre classi. Specificare **Ads \_ ACETYPE \_ accesso \_ consentito all' \_ oggetto** per indicare che si tratta di una voce ACE specifica dell'oggetto.
+Nell'esempio di codice seguente viene chiamata la funzione **SetRight** per concedere a un trustee specificato il diritto di creare ed eliminare oggetti User nel sottoalbero dell'oggetto specificato. Tenere presente che l'esempio specifica il GUID della classe User, il che significa che la ACE consente solo al trustee di creare oggetti User, non oggetti di altre classi. Specificare **ADS \_ ACETYPE \_ ACCESS ALLOWED \_ \_ OBJECT** per indicare che si tratta di una ACE specifica dell'oggetto.
 
 
 ```VB
@@ -449,8 +449,8 @@ hr = SetRight(
 
 
 
-Per ulteriori informazioni e per **schemaIDGUID** di un attributo o di una classe predefiniti, vedere la pagina relativa al riferimento all'attributo o alla classe nel riferimento allo [schema Active Directory](/windows/desktop/ADSchema/active-directory-schema) . Per altre informazioni e un esempio di codice che può essere usato per ottenere un **schemaIDGUID** a livello di codice, vedere [lettura di oggetti attributeSchema e classSchema](reading-attributeschema-and-classschema-objects.md).
+Per altre informazioni e il **valore schemaIDGUID** di una classe o di un attributo predefinito, vedere la pagina di riferimento per l'attributo o la classe in Riferimento [allo schema di Active Directory.](/windows/desktop/ADSchema/active-directory-schema) Per altre informazioni e un esempio di codice che può essere usato per ottenere uno **schemaIDGUID** a livello di codice, vedere [Lettura di oggetti attributeSchema e classSchema](reading-attributeschema-and-classschema-objects.md).
 
- 
+ 
 
- 
+ 

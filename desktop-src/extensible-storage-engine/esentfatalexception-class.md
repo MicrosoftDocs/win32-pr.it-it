@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: classe EsentFatalException'
+description: Altre informazioni sulla classe EsentFatalException
 title: Classe EsentFatalException
 TOCTitle: EsentFatalException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentFatalException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c38df447f2eb816772713ba930204e75aa38a88c
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 53e5653d33dfd586ca5a066231f512c83684f3ea6ba53de74c0d3cb29cc4dbb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104234442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496740"
 ---
 # <a name="esentfatalexception-class"></a>Classe EsentFatalException
 
@@ -38,15 +38,15 @@ Classe di base per le eccezioni irreversibili.
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. esent. Interop. EsentFatalException  
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentFatalException  
             
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,19 +74,19 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 [Membri di EsentFatalException](./esentfatalexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 ## <a name="derived-types"></a>Tipi derivati
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. esent. Interop. EsentFatalException  
-            [Microsoft. ISAM. esent. Interop. EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentLogDisabledDueToRecoveryFailureException](./esentlogdisabledduetorecoveryfailureexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentRollbackErrorException](./esentrollbackerrorexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentSectorSizeNotSupportedException](./esentsectorsizenotsupportedexception-class.md)  
-            [Microsoft. ISAM. esent. Interop. EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-class.md)
+  [Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentFatalException  
+            [Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLogDisabledDueToRecoveryFailureException](./esentlogdisabledduetorecoveryfailureexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRollbackErrorException](./esentrollbackerrorexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentSectorSizeNotSupportedException](./esentsectorsizenotsupportedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentUnloadableOSFunctionalityException](./esentunloadableosfunctionalityexception-class.md)

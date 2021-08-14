@@ -1,10 +1,10 @@
 ---
-title: Funzione DsSetCurrentBackupLog (ntdsbcli. h)
+title: Funzione DsSetCurrentBackupLog (Ntdsbcli.h)
 description: Imposta il numero di log di backup corrente dopo un ripristino riuscito.
 ms.assetid: 903bddea-c5a7-4b3f-819c-0467a9c5ae1b
 ms.tgt_platform: multiple
 keywords:
-- Active Directory funzione DsSetCurrentBackupLog
+- Funzione DsSetCurrentBackupLog active Directory
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f50fc41317ae22ae89c47f63bb19f981563e5c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab10ac21d1a3cb2501a809b938252414c756bdfbd62f1e142ba3b902cde8c291
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191780"
 ---
-# <a name="dssetcurrentbackuplog-function"></a>DsSetCurrentBackupLog (funzione)
+# <a name="dssetcurrentbackuplog-function"></a>Funzione DsSetCurrentBackupLog
 
-\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, usare invece [servizio Copia Shadow del volume (VSS)](../vss/volume-shadow-copy-service-overview.md) .\]
+\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
 
-La funzione **DsSetCurrentBackupLog** imposta il numero di log di backup corrente dopo un ripristino riuscito. Poiché Active Directory Domain Services supporta solo la registrazione circolare, questa funzione non viene in genere utilizzata.
+La **funzione DsSetCurrentBackupLog** imposta il numero di log di backup corrente dopo un ripristino riuscito. Poiché Active Directory Domain Services solo la registrazione circolare, questa funzione non viene in genere usata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,34 +46,34 @@ HRESULT DsSetCurrentBackupLog(
 
 <dl> <dt>
 
-*szServerName* \[ in\]
+*szServerName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa con terminazione null che contiene il nome del server per il quale impostare il numero di log di backup. Le barre rovesciate precedenti sono facoltative. Il server deve essere lo stesso computer da cui viene chiamata la funzione. Il nome del server non può contenere caratteri di sottolineatura ( \_ ). Un esempio di nome di server è " \\ \\ Server1".
+Puntatore a una stringa con terminazione Null contenente il nome del server per cui impostare il numero di log di backup. Le barre rovesciate precedenti sono facoltative. Il server deve essere lo stesso computer da cui viene chiamata questa funzione. Il nome del server non può contenere caratteri di sottolineatura ( \_ ). Un esempio di nome server è \\ \\ "server1".
 
 </dd> <dt>
 
-*dwCurrentLog* \[ in\]
+*dwCurrentLog* \[ Pollici\]
 </dt> <dd>
 
-Contiene il numero di log di backup da impostare.
+Contiene il numero del log di backup da impostare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **\_ OK** se la funzione ha esito positivo o un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati i possibili codici di errore.
+Restituisce **S \_ OK se** la funzione ha esito positivo o un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati i possibili codici di errore.
 
 <dl> <dt>
 
-**ERRORE \_ parametro non valido \_**
+**ERRORE \_ PARAMETRO NON \_ VALIDO**
 </dt> <dd>
 
 Uno o più parametri non sono validi.
 
 </dd> <dt>
 
-**ERRORE \_ di \_ memoria insufficiente \_**
+**MEMORIA \_ INSUFFICIENTE \_ PER \_ L'ERRORE**
 </dt> <dd>
 
 Si è verificato un errore di allocazione della memoria.
@@ -82,7 +82,7 @@ Si è verificato un errore di allocazione della memoria.
 
 ## <a name="remarks"></a>Commenti
 
-In genere non è necessario chiamare la funzione **DsSetCurrentBackupLog** . Le funzioni di backup determinano e impostano automaticamente il backup dell'ultimo numero di log. Usare **DsSetCurrentBackupLog** per evitare che un altro backup incrementale riesca fino a quando non viene eseguito un backup completo.
+In genere non è necessario chiamare la **funzione DsSetCurrentBackupLog.** Le funzioni di backup determinano e impostano automaticamente l'ultimo numero di log di cui è stato eseguito il backup. Usare **DsSetCurrentBackupLog** per impedire il completamento di un altro backup incrementale fino a quando non viene eseguito un backup completo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,8 +92,8 @@ In genere non è necessario chiamare la funzione **DsSetCurrentBackupLog** . Le 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **DsSetCurrentBackupLogW** (Unicode) e **DsSetCurrentBackupLogA** (ANSI)<br/>   |
 
@@ -103,7 +103,7 @@ In genere non è necessario chiamare la funzione **DsSetCurrentBackupLog** . Le 
 
 <dl> <dt>
 
-[Backup e ripristino di un server di Active Directory](backing-up-and-restoring-an-active-directory-server.md)
+[Backup e ripristino di un server Active Directory](backing-up-and-restoring-an-active-directory-server.md)
 </dt> <dt>
 
 [Funzioni di backup della directory](directory-backup-functions.md)

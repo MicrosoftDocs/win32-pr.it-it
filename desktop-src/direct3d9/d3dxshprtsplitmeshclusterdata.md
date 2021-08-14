@@ -1,7 +1,7 @@
 ---
 description: Struttura D3DXSHPRTSPLITMESHCLUSTERDATA
 ms.assetid: 6a53420c-06bc-4f52-ac2e-5adda5e34cb2
-title: Struttura D3DXSHPRTSPLITMESHCLUSTERDATA (D3dx9mesh. h)
+title: Struttura D3DXSHPRTSPLITMESHCLUSTERDATA (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: e7b1bc23606dbf08f5a924860e12c9c09d719287
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c4405b383e0403326c3cb84f43c97f4c7da826872b62cb21c94b3edb9ef0e475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298290"
 ---
 # <a name="d3dxshprtsplitmeshclusterdata-structure"></a>Struttura D3DXSHPRTSPLITMESHCLUSTERDATA
 
@@ -45,66 +45,66 @@ typedef struct D3DXSHPRTSPLITMESHCLUSTERDATA {
 **uVertStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Vertice iniziale in una matrice di vertici con mapping.
+Vertice iniziale in matrice di vertici mappata nuovamente.
 
 </dd> <dt>
 
 **uVertLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di vertici in questo Supercluster.
+Numero di vertici in questo supercluster.
 
 </dd> <dt>
 
 **uFaceStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indice iniziale nella matrice della superficie.
+Indice iniziale nella matrice del viso.
 
 </dd> <dt>
 
 **uFaceLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di visi in questo Supercluster.
+Numero di visi in questo supercluster.
 
 </dd> <dt>
 
 **uClusterStart**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indice iniziale nella matrice del cluster.
+Indice iniziale nell'array cluster.
 
 </dd> <dt>
 
 **uClusterLength**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Numero di cluster in questa matrice di Supercluster.
+Numero di cluster in questa matrice di cluster supercluster.
 
 </dd> </dl>
 
@@ -114,7 +114,7 @@ Numero di cluster in questa matrice di Supercluster.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

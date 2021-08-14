@@ -1,24 +1,24 @@
 ---
-title: Codice di esempio per la ricerca di oggetti dello schema
-description: In questo argomento è incluso un esempio di codice utilizzato per cercare gli oggetti dello schema.
+title: Codice di esempio per la ricerca di oggetti schema
+description: Questo argomento include un esempio di codice usato per cercare oggetti dello schema.
 ms.assetid: 539e0127-1355-4606-97bd-49dfafb25f8d
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per la ricerca di oggetti dello schema AD
+- Codice di esempio per la ricerca di oggetti schema AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f58fda74e637430cc2d773c00cb020a848dbf9e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d28bb0a873f3a867934521607239a96611bbdc4cd4738edcd766cc0bad852311
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190261"
 ---
-# <a name="example-code-for-searching-for-schema-objects"></a>Codice di esempio per la ricerca di oggetti dello schema
+# <a name="example-code-for-searching-for-schema-objects"></a>Codice di esempio per la ricerca di oggetti schema
 
-In questo argomento è incluso un esempio di codice utilizzato per cercare gli oggetti dello schema.
+Questo argomento include un esempio di codice usato per cercare oggetti dello schema.
 
-Nell'esempio di codice C++ riportato di seguito viene illustrato come cercare oggetti dello schema con bit impostati nell'attributo **systemFlags** .
+Nell'esempio di codice C++ seguente viene illustrato come cercare oggetti dello schema con bit impostati **nell'attributo systemFlags.**
 
 
 ```C++
@@ -152,7 +152,7 @@ HRESULT PrintAttributesByType(IDirectorySearch *pSchemaNC,
 
 
 
-Nell'esempio di codice C e C++ riportato di seguito viene illustrato come cercare gli oggetti dello schema replicati nel catalogo globale.
+Nell'esempio di codice C e C++ seguente viene illustrato come cercare gli oggetti dello schema replicati nel catalogo globale.
 
 
 ```C++
@@ -260,7 +260,7 @@ HRESULT PrintGCAttributes(IDirectorySearch *pSchemaNC)
 
 
 
-Nell'esempio di codice C e C++ riportato di seguito viene illustrato come cercare oggetti dello schema indicizzati.
+Nell'esempio di codice C e C++ seguente viene illustrato come cercare oggetti dello schema indicizzato.
 
 
 ```C++
@@ -373,9 +373,9 @@ HRESULT PrintIndexedAttributes(IDirectorySearch *pSchemaNC)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

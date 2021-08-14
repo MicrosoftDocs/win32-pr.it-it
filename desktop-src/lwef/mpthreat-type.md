@@ -1,10 +1,10 @@
 ---
-title: Enumerazione MPTHREAT_TYPE (MpClient. h)
-description: Tipi di minacce possibili.
+title: MPTHREAT_TYPE enumerazione (MpClient.h)
+description: Possibili tipi di minaccia.
 ms.assetid: 56061F12-AA89-4203-BED4-99613E24002A
 keywords:
-- Funzionalità dell'ambiente Windows legacy dell'enumerazione MPTHREAT_TYPE
-- Caratteristiche dell'ambiente Windows legacy del puntatore di enumerazione PMPTHREAT_TYPE
+- MPTHREAT_TYPE funzionalità dell'ambiente Windows legacy
+- PMPTHREAT_TYPE puntatore di enumerazione Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ed823b100c91f259252d7cad71e554099caf6a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b858501603b67451db9b565609d0c263040d2186cf44d91646e6df6ce3871ea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247142"
 ---
-# <a name="mpthreat_type-enumeration"></a>\_Enumerazione del tipo MPTHREAT
+# <a name="mpthreat_type-enumeration"></a>Enumerazione MPTHREAT \_ TYPE
 
-Tipi di minacce possibili.
+Possibili tipi di minaccia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,42 +46,42 @@ typedef enum tagMPTHREAT_TYPE {
 
 <dl> <dt>
 
-<span id="MPTHREAT_TYPE_KNOWNBAD"></span><span id="mpthreat_type_knownbad"></span>**MPTHREAT \_ tipo \_ KNOWNBAD**
+<span id="MPTHREAT_TYPE_KNOWNBAD"></span><span id="mpthreat_type_knownbad"></span>**TIPO MPTHREAT \_ \_ NOTOBAD**
 </dt> <dd>
 
-È stata rilevata una cattiva minaccia nota tramite firma.
+Rilevata minaccia non valida nota tramite firma.
 
 </dd> <dt>
 
-<span id="MPTHREAT_TYPE_BEHAVIOR"></span><span id="mpthreat_type_behavior"></span>**\_comportamento del tipo MPTHREAT \_**
+<span id="MPTHREAT_TYPE_BEHAVIOR"></span><span id="mpthreat_type_behavior"></span>**COMPORTAMENTO DEL TIPO \_ \_ MPTHREAT**
 </dt> <dd>
 
-Minaccia sospetta rilevata tramite il monitoraggio del comportamento.
+Rilevata minaccia sospetta tramite il monitoraggio del comportamento.
 
 </dd> <dt>
 
-<span id="MPTHREAT_TYPE_UNKNOWN"></span><span id="mpthreat_type_unknown"></span>**\_tipo MPTHREAT \_ sconosciuto**
+<span id="MPTHREAT_TYPE_UNKNOWN"></span><span id="mpthreat_type_unknown"></span>**TIPO MPTHREAT \_ \_ SCONOSCIUTO**
 </dt> <dd>
 
 Minacce sconosciute (non classificate).
 
 </dd> <dt>
 
-<span id="MPTHREAT_TYPE_KNOWNGOOD"></span><span id="mpthreat_type_knowngood"></span>**MPTHREAT \_ tipo \_ KNOWNGOOD**
+<span id="MPTHREAT_TYPE_KNOWNGOOD"></span><span id="mpthreat_type_knowngood"></span>**TIPO MPTHREAT \_ \_ KNOWNGOOD**
 </dt> <dd>
 
-Una minaccia nota.
+Minaccia nota.
 
 </dd> <dt>
 
-<span id="MPTHREAT_TYPE_NIS"></span><span id="mpthreat_type_nis"></span>**MPTHREAT di \_ tipo \_ NIS**
+<span id="MPTHREAT_TYPE_NIS"></span><span id="mpthreat_type_nis"></span>**MPTHREAT \_ TYPE \_ NIS**
 </dt> <dd>
 
 Rilevamento delle minacce NIS.
 
 </dd> <dt>
 
-<span id="MPTHREAT_TYPE_MAXVALUE"></span><span id="mpthreat_type_maxvalue"></span>**MPTHREAT di \_ tipo \_ MaxValue**
+<span id="MPTHREAT_TYPE_MAXVALUE"></span><span id="mpthreat_type_maxvalue"></span>**TIPO MPTHREAT \_ \_ MAXVALUE**
 </dt> <dd>
 
 Valore massimo possibile.
@@ -94,9 +94,9 @@ Valore massimo possibile.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

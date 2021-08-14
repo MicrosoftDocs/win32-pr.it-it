@@ -1,7 +1,7 @@
 ---
 description: Salva un volume in un buffer. Il metodo crea un buffer ID3DXBuffer per archiviare i dati e restituisce tale oggetto.
 ms.assetid: 4887ff1f-7904-4764-b284-b2c8e037f806
-title: Funzione D3DXSaveVolumeToFileInMemory (D3dx9tex. h)
+title: Funzione D3DXSaveVolumeToFileInMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7daaa41e0cc87ea03a0aedc5fc2f7ca96653329f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f7c7326609d6d3c006f3c97aeff18de425a27569db63378864fc34335558117e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298404"
 ---
-# <a name="d3dxsavevolumetofileinmemory-function"></a>D3DXSaveVolumeToFileInMemory (funzione)
+# <a name="d3dxsavevolumetofileinmemory-function"></a>Funzione D3DXSaveVolumeToFileInMemory
 
 Salva un volume in un buffer. Il metodo crea un buffer [**ID3DXBuffer**](id3dxbuffer.md) per archiviare i dati e restituisce tale oggetto.
 
@@ -44,48 +44,48 @@ HRESULT D3DXSaveVolumeToFileInMemory(
 
 <dl> <dt>
 
-*ppDestBuf* \[ out\]
+*ppDestBuf* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Indirizzo di un puntatore a un buffer [**ID3DXBuffer**](id3dxbuffer.md) che archivia l'immagine.
+Indirizzo di un puntatore a un buffer [**ID3DXBuffer**](id3dxbuffer.md) in cui verrà archiviata l'immagine.
 
 </dd> <dt>
 
-*DestFormat* \[ in\]
+*DestFormat* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md)**
+Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md) che specifica il formato di file da utilizzare per il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **D3DXIMAGE \_ FileFormat** ad eccezione di Portable Pixmap (. ppm) e targa/Truevision Graphics Adapter (. tga).
+[**D3DXIMAGE \_ FILEFORMAT che**](./d3dximage-fileformat.md) specifica il formato di file da usare durante il salvataggio. Questa funzione supporta il salvataggio in tutti i formati **\_ FILEFORMAT D3DXIMAGE,** ad eccezione di Portable Pixmap (con estensione ppm) e Dell'adattatore grafico Bitmap/Truevision (TGA).
 
 </dd> <dt>
 
-*pSrcVolume* \[ in\]
+*pSrcVolume* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVOLUME9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9)**
 
-Puntatore all'interfaccia [**IDirect3DVolume9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9) che contiene l'immagine da salvare.
+Puntatore [**all'interfaccia IDirect3DVolume9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9) contenente l'immagine da salvare.
 
 </dd> <dt>
 
-*pSrcPalette* \[ in\]
+*pSrcPalette* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Puntatore a una struttura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di colori 256. Questo parametro può essere **NULL**.
+Puntatore a [**una struttura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) contenente una tavolozza di 256 colori. Questo parametro può essere **NULL**.
 
 </dd> <dt>
 
-*pSrcBox* \[ in\]
+*pSrcBox* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DBOX**](d3dbox.md) \***
 
-Puntatore a una struttura [**D3DBOX**](d3dbox.md) . Specifica la casella di origine. Impostare questo parametro su **null** per specificare l'intero volume.
+Puntatore a [**una struttura D3DBOX.**](d3dbox.md) Specifica la casella di origine. Impostare questo parametro su **NULL per** specificare l'intero volume.
 
 </dd> </dl>
 
@@ -101,8 +101,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

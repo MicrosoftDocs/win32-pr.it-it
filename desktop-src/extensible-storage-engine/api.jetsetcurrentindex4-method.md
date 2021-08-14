@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetCurrentIndex4'
-title: API. JetSetCurrentIndex4, metodo
+description: Altre informazioni sul metodo Api.JetSetCurrentIndex4
+title: Metodo Api.JetSetCurrentIndex4
 TOCTitle: 'JetSetCurrentIndex4 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetCurrentIndex4(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_INDEXID,Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcurrentindex4(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d2b9319554b998175b3f533c6cd5f4c2d05ba02f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53b35384607e988c2456f4d48f93b49b6974b138e4a71ef8916b174a92a61611
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118497885"
 ---
-# <a name="apijetsetcurrentindex4-method"></a>API. JetSetCurrentIndex4, metodo
+# <a name="apijetsetcurrentindex4-method"></a>Metodo Api.JetSetCurrentIndex4
 
-Imposta l'indice corrente di un cursore.
+Impostare l'indice corrente di un cursore.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -74,44 +74,44 @@ public static void JetSetCurrentIndex4(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore su cui impostare l'indice.
 
 <!-- end list -->
 
-  - indice  
-    Tipo: [System. String](/dotnet/api/system.string)  
+  - index  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Nome dell'indice da selezionare. Se è null o vuoto, verrà selezionato l'indice primario.
+    Nome dell'indice da selezionare. Se è Null o vuoto, verrà selezionato l'indice primario.
 
 <!-- end list -->
 
   - indexid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
-    ID dell'indice da selezionare. Questo ID può essere ottenuto tramite JetGetIndexInfo o JetGetTableIndexInfo con l'opzione [indexid](./jet-idxinfo-enumeration.md) .
+    ID dell'indice da selezionare. Questo ID può essere ottenuto usando JetGetIndexInfo o JetGetTableIndexInfo con [l'opzione IndexId.](./jet-idxinfo-enumeration.md)
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SetCurrentIndexGrbit](./setcurrentindexgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit](./setcurrentindexgrbit-enumeration.md)  
     
-    Impostare le opzioni relative agli indici.
+    Impostare le opzioni di indice.
 
 <!-- end list -->
 
   - itagSequence  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di sequenza del valore della colonna multivalore che verrà utilizzato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [nomove](./setcurrentindexgrbit-enumeration.md). Se questo parametro non è presente o è impostato su zero, il relativo valore si presume essere 1.
+    Numero di sequenza del valore della colonna multivalore che verrà usato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [NoMove](./setcurrentindexgrbit-enumeration.md). Quando questo parametro non è presente o è impostato su zero, si presuppone che il relativo valore sia 1.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -119,6 +119,6 @@ public static void JetSetCurrentIndex4(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,8 +1,8 @@
 ---
-description: Il metodo Invoke della classe CIM \_ DirectorySpecification valuta un particolare controllo.
+description: Il metodo Invoke della classe CIM \_ DirectorySpecification valuta un controllo specifico.
 ms.assetid: 63289f94-f134-4159-898c-404cdd8f2a5c
 ms.tgt_platform: multiple
-title: Metodo Invoke della classe CIM_DirectorySpecification
+title: Richiamare il metodo della CIM_DirectorySpecification classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 48e5cb315f7dba6be187280ee6a16d7c4711752f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b8dd080d2bf28bbddf047b4712d5e5688f16be460749df4f5fc28f023697dbf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419305"
 ---
-# <a name="invoke-method-of-the-cim_directoryspecification-class"></a>Metodo Invoke della classe CIM \_ DirectorySpecification
+# <a name="invoke-method-of-the-cim_directoryspecification-class"></a>Metodo Invoke della classe \_ CiM DirectorySpecification
 
-Il metodo **Invoke** della classe [**CIM \_ DirectorySpecification**](cim-directoryspecification.md) valuta un particolare controllo. Informazioni dettagliate sul modo in cui il metodo valuta un particolare controllo in un contesto CIM sono descritte dalle sottoclassi [**di \_ controllo CIM**](cim-check.md) non astratte. Questo metodo viene ereditato dal **\_ controllo CIM**.
+Il **metodo Invoke** della classe [**CIM \_ DirectorySpecification**](cim-directoryspecification.md) valuta un controllo specifico. Informazioni dettagliate sul modo in cui il metodo valuta un particolare controllo in un contesto CIM sono descritte dalle sottoclassi [**CIM \_ Check**](cim-check.md) non astratte. Questo metodo viene ereditato da **CIM \_ Check**.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM DMTF (Distributed Management Task Force) (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,13 +47,13 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 se ha esito positivo, 1 se il metodo non è supportato e qualsiasi altro valore indica un errore.
+Restituisce 0 in caso di esito positivo, 1 se il metodo non è supportato e qualsiasi altro valore indica un errore.
 
 ## <a name="remarks"></a>Commenti
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -73,10 +73,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_DIRECTORYSPECIFICATION CIM](invoke-method-in-class-cim-directoryspecification.md)
+[Directory \_ CIMSpecification](invoke-method-in-class-cim-directoryspecification.md)
 </dt> <dt>
 
-[**\_DIRECTORYSPECIFICATION CIM**](cim-directoryspecification.md)
+[**Directory \_ CIMSpecification**](cim-directoryspecification.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b69ca7cf4ee4e16a5fbcb6a5f10c659f713ab458
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5cfe3bfd4509a02eeafcb014f9265f810e4cb942e87b67390dbd1cbf841f7295
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393790"
 ---
 # <a name="systemconfig_v0_services-class"></a>Classe SystemConfig \_ V0 \_ Services
 
@@ -125,7 +125,7 @@ Identificatore univoco del servizio. L'identificatore fornisce un'indicazione de
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

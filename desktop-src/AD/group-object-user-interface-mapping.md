@@ -1,38 +1,38 @@
 ---
-title: Mapping dell'interfaccia utente dell'oggetto gruppo
-description: In questo argomento vengono descritte le finestre delle proprietà dell'oggetto gruppo nello snap-in utenti e computer di Active Directory. Proprietà generale SheetMember della proprietà SheetMembers della proprietà SheetManaged dalla finestra delle proprietà
+title: Mapping dell'Interfaccia utente gruppo
+description: In questo argomento vengono descritte le finestre delle proprietà dell'oggetto Group Utenti e computer di Active Directory snap-in. Finestra delle proprietà GeneraleMembro della finestra delle proprietà Foglio delle proprietà MembriManaged by Property Sheet
 ms.assetid: c0cd73f0-f09f-4645-966d-6149888ce482
 ms.tgt_platform: multiple
 keywords:
-- Active Directory mapping dell'interfaccia utente oggetto
-- Mapping dell'interfaccia utente, oggetto gruppo Active Directory
+- Mapping di Active Directory Interfaccia utente oggetti gruppo
+- Interfaccia utente Mapping, Group Object AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe2277c24f621f8e32f46b9e9571d0d0d4de9cfc
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 308b3bafc24f8b8419b23c351d981f4f01961885cd535ac2d24b96cd62e17633
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104046505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188965"
 ---
-# <a name="group-object-user-interface-mapping"></a>Mapping dell'interfaccia utente dell'oggetto gruppo
+# <a name="group-object-user-interface-mapping"></a>Mapping dell'Interfaccia utente gruppo
 
-In questo argomento vengono descritte le finestre delle proprietà dell'oggetto gruppo nello snap-in utenti e computer di Active Directory.
+In questo argomento vengono descritte le finestre delle proprietà dell'oggetto Group Utenti e computer di Active Directory snap-in.
 
--   [Finestra delle proprietà generale](#general-property-sheet)
+-   [Finestra delle proprietà Generale](#general-property-sheet)
 -   [Membro della finestra delle proprietà](#member-of-property-sheet)
--   [Finestra delle proprietà dei membri](#members-property-sheet)
--   [Gestito da finestra delle proprietà](#managed-by-property-sheet)
+-   [Finestra delle proprietà Membri](#members-property-sheet)
+-   [Finestra delle proprietà Gestita da](#managed-by-property-sheet)
 
-## <a name="general-property-sheet"></a>Finestra delle proprietà generale
+## <a name="general-property-sheet"></a>Finestra delle proprietà Generale
 
-Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente della finestra delle proprietà **generale** .
+La tabella seguente mostra le etichette dell'interfaccia utente della **finestra delle proprietà** Generale.
 
 
 
-| Etichetta interfaccia utente                      | Attributo in Active Directory Domain Services     |
+| Etichetta dell'interfaccia utente                      | Attributo in Active Directory Domain Services     |
 |-------------------------------|---------------------------------------------------|
-| Nome gruppo (precedente a Windows 2000) | [**Nome account SAM**](/windows/desktop/ADSchema/a-samaccountname) |
+| Nome gruppo (versione Windows 2000) | [**SAM-Account-Name**](/windows/desktop/ADSchema/a-samaccountname) |
 | Descrizione                   | [**Descrizione**](/windows/desktop/ADSchema/a-description)         |
 | Posta elettronica                        | [**Indirizzi di posta elettronica**](/windows/desktop/ADSchema/a-mail)           |
 | Ambito gruppo                   | [**Tipo di gruppo**](/windows/desktop/ADSchema/a-grouptype)            |
@@ -45,25 +45,25 @@ Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente d
 
 ## <a name="member-of-property-sheet"></a>Membro della finestra delle proprietà
 
-Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente del **membro della finestra delle** proprietà.
+La tabella seguente mostra le etichette dell'interfaccia utente della **finestra delle proprietà Membro** di.
 
 
 
-| Etichetta interfaccia utente  | Attributo in Active Directory Domain Services | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Etichetta dell'interfaccia utente  | Attributo in Active Directory Domain Services | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-----------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Membro di | [**Is-member-of-DL**](/windows/desktop/ADSchema/a-memberof)    | Contiene i nomi distinti dei gruppi a cui appartiene il gruppo. L'attributo member di ogni gruppo in questo elenco contiene il nome distinto di questo oggetto gruppo. L'interfaccia utente non modifica direttamente l'attributo [**is-member-of-DL**](/windows/desktop/ADSchema/a-memberof) . Modifica l'attributo [**member**](/windows/desktop/ADSchema/a-member) nell'oggetto Group di cui è membro l'oggetto. Il server di Active Directory gestisce l'attributo **is-member-of-DL** .<br/> |
+| Membro di | [**Is-Member-Of-DL**](/windows/desktop/ADSchema/a-memberof)    | Contiene i nomi distinti dei gruppi a cui appartiene questo gruppo. L'attributo member di ogni gruppo in questo elenco contiene il nome distinto di questo oggetto gruppo. L'interfaccia utente non modifica direttamente [**l'attributo Is-Member-Of-DL.**](/windows/desktop/ADSchema/a-memberof) Modifica [**l'attributo Member**](/windows/desktop/ADSchema/a-member) nell'oggetto gruppo di cui l'oggetto è membro. Il server Active Directory gestisce **l'attributo Is-Member-Of-DL.**<br/> |
 
 
 
  
 
-## <a name="members-property-sheet"></a>Finestra delle proprietà dei membri
+## <a name="members-property-sheet"></a>Finestra delle proprietà Membri
 
-Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente della finestra delle proprietà dei **membri** .
+La tabella seguente mostra le etichette dell'interfaccia utente della **finestra delle proprietà** Membri.
 
 
 
-| Etichetta interfaccia utente | Attributo in Active Directory Domain Services | Descrizione                                                           |
+| Etichetta dell'interfaccia utente | Attributo in Active Directory Domain Services | Descrizione                                                           |
 |----------|-----------------------------------------------|-----------------------------------------------------------------------|
 | Membri  | [**Membro**](/windows/desktop/ADSchema/a-member)               | Contiene i nomi distinti dei membri di questo oggetto gruppo. |
 
@@ -71,23 +71,23 @@ Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente d
 
  
 
-## <a name="managed-by-property-sheet"></a>Gestito da finestra delle proprietà
+## <a name="managed-by-property-sheet"></a>Finestra delle proprietà Gestita da
 
-Nella tabella seguente vengono illustrate le etichette dell'interfaccia utente della finestra delle proprietà **gestite da** .
+La tabella seguente mostra le etichette dell'interfaccia utente della **finestra delle proprietà Managed By.**
 
 
 
-| Etichetta interfaccia utente                           | Attributo in Active Directory Domain Services                                                                                   |
+| Etichetta dell'interfaccia utente                           | Attributo in Active Directory Domain Services                                                                                   |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Nome                               | [**Gestito da**](/windows/desktop/ADSchema/a-managedby)                                                                                          |
-| Il responsabile può aggiornare l'elenco di appartenenze | Nessuna. Viene aggiunta una voce ACE con l'autorizzazione "Consenti-scrittura membri" all'account identificato in base al **nome**.                        |
-| Office                             | L'attributo [**Physical-Delivery-Office-Name**](/windows/desktop/ADSchema/a-physicaldeliveryofficename) dell'account identificato in base al **nome**. |
-| Indirizzo                             | Attributo [**via-indirizzo**](/windows/desktop/ADSchema/a-street) dell'account identificato in base al **nome**.                                    |
-| City                               | Attributo [**Locality-Name**](/windows/desktop/ADSchema/a-l) dell'account identificato in base al **nome**.                                          |
-| Provincia                     | Attributo [**state-o-Province-Name**](/windows/desktop/ADSchema/a-st) dell'account identificato in base al **nome**.                                |
-| Paese/Area geografica                     | Attributo [**Country-Name**](/windows/desktop/ADSchema/a-c) dell'account identificato in base al **nome**.                                           |
-| Numero di telefono                   | Attributo del [**numero telefonico**](/windows/desktop/ADSchema/a-telephonenumber) dell'account identificato in base al **nome**.                         |
-| Numero fax                         | L'attributo [**Fax-Phone-Number**](/windows/desktop/ADSchema/a-facsimiletelephonenumber) dell'account identificato in base al **nome**.      |
+| Manager può aggiornare l'elenco di appartenenze | Nessuno. Viene aggiunta una ACE con l'autorizzazione "Consenti - Scrittura membri" all'account identificato da **Nome**.                        |
+| Office                             | Attributo [**Physical-Delivery-Office-Name**](/windows/desktop/ADSchema/a-physicaldeliveryofficename) dell'account identificato da **Name**. |
+| Indirizzo                             | Attributo [**Street-Address**](/windows/desktop/ADSchema/a-street) dell'account identificato da **Name**.                                    |
+| City                               | Attributo [**Locality-Name dell'account**](/windows/desktop/ADSchema/a-l) identificato da **Name**.                                          |
+| Provincia                     | Attributo [**State-Or-Province-Name**](/windows/desktop/ADSchema/a-st) dell'account identificato da **Name**.                                |
+| Paese/Area geografica                     | Attributo [**Country-Name**](/windows/desktop/ADSchema/a-c) dell'account identificato da **Name**.                                           |
+| Numero di telefono                   | Attributo [**Telephone-Number**](/windows/desktop/ADSchema/a-telephonenumber) dell'account identificato da **Name**.                         |
+| Numero fax                         | Attributo [**Facsimile-Telephone-Number dell'account**](/windows/desktop/ADSchema/a-facsimiletelephonenumber) identificato da **Name**.      |
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Attachments (sendEmailType)-elemento
+title: Elemento Attachments (sendEmailType)
 description: Contiene un elenco di allegati nel messaggio di posta elettronica.
 ms.assetid: 5ae22481-af70-42eb-a964-e63d800be17d
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 67eed8f82f0caa27f44070bd109d4fa4560472eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8aa87679c6d6db725c26deee817fe04acacca85e39d3a8f75c04cba9680ea846
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132066"
 ---
-# <a name="attachments-sendemailtype-element"></a>Attachments (sendEmailType)-elemento
+# <a name="attachments-sendemailtype-element"></a>Elemento Attachments (sendEmailType)
 
 Contiene un elenco di allegati nel messaggio di posta elettronica.
 
@@ -30,7 +30,7 @@ Contiene un elenco di allegati nel messaggio di posta elettronica.
  />
 ```
 
-L'elemento **Attachments** viene definito dal tipo complesso [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+**L'elemento Attachments** è definito dal [**tipo complesso sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -54,9 +54,9 @@ L'elemento **Attachments** viene definito dal tipo complesso [**sendEmailType**]
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**Proprietà Attachments di IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments).
+Per lo sviluppo in C++, vedere [**Proprietà Attachments di IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments)
 
-Per lo sviluppo di script, vedere [**EmailAction. Attachments**](emailaction-attachments.md).
+Per lo sviluppo di script, [**vedere EmailAction.Attachments.**](emailaction-attachments.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,8 +64,8 @@ Per lo sviluppo di script, vedere [**EmailAction. Attachments**](emailaction-att
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

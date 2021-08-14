@@ -1,6 +1,6 @@
 ---
-title: Connections-elemento
-description: Informazioni sull'elemento Connections. Questo elemento raccoglie e contiene zero o più elementi di connessione.
+title: Elemento Connections
+description: Informazioni sull'elemento Connections. Questo elemento raccoglie e contiene zero o più elementi Connection.
 ms.assetid: 2c199338-892f-4d8c-bf33-4a19f362de3e
 keywords:
 - Elemento Connections EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6cdb23c9f1a6130e2fe77061286e8a0657c3e2f5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 62635d09030875a4f17deefa1aec05432df5662369eb483894f1a8cef4bbaf5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498219"
 ---
-# <a name="connections-element"></a>Connections-elemento
+# <a name="connections-element"></a>Elemento Connections
 
-L'elemento **Connections** raccoglie e contiene zero o più elementi [**Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) .
+**L'elemento Connections** raccoglie e contiene zero o più [**elementi Connection.**](eapconnectionpropertiesv1schema-connection-connections-element.md)
 
 ``` syntax
 <xs:element name="Connections">
@@ -56,24 +56,24 @@ L'elemento **Connections** raccoglie e contiene zero o più elementi [**Connecti
 
 | Elemento                                                                              | Tipo   | Descrizione                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)                       |        | Identifica l'elemento di configurazione EAP.<br/>                                                                                                                                       |
-| [**Connessioni**](eapconnectionpropertiesv1schema-connection-connections-element.md) |        | Definisce ogni impostazione di configurazione e la associa a un nome. L'elemento [**Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) è facoltativo.<br/> |
-| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md)              | string | Acquisisce il nome della connessione da definire, per facilitare l'identificazione di più connessioni.<br/>                                                                     |
+| [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)                       |        | Identifica l'elemento di configurazione EAP.<br/>                                                                                                                                       |
+| [**Connessione**](eapconnectionpropertiesv1schema-connection-connections-element.md) |        | Definisce ogni impostazione di configurazione e la associa a un nome. [**L'elemento Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) è facoltativo.<br/> |
+| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md)              | string | Acquisisce il nome della connessione definita, assistendo nell'identificazione di più connessioni.<br/>                                                                     |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-L'elemento **Connections** non viene usato con i metodi legacy tramite le API EAPHost.
+**L'elemento Connections** non viene usato con i metodi legacy tramite le API EAPHost.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

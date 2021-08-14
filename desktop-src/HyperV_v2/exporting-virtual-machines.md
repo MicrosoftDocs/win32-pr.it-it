@@ -4,18 +4,18 @@ ms.assetid: 4DEC4962-99E1-42BB-81B1-8530BF9C4B92
 title: Esportazione di uno snapshot di una macchina virtuale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bef5cb0f86c1de1b82c294760f7e2a33539218b
-ms.sourcegitcommit: 3d9eb6638763fee8b87c378657458f814182e36c
+ms.openlocfilehash: 07b8ce51f8cddeb648b5d4a5c58166eda3fcd2841a55f2eeda9e4f42e3f3e8fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "106320429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393355"
 ---
 # <a name="exporting-a-snapshot-of-a-virtual-machine"></a>Esportazione di uno snapshot di una macchina virtuale
 
-Gli esempi C# e Visual Basic Scripting Edition (VBScript) seguenti illustrano l'esportazione di uno snapshot di una macchina virtuale. Gli esempi che illustrano l'esportazione di una macchina virtuale sono disponibili nell'argomento [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) .
+Gli esempi C# e Visual Basic Scripting Edition (VBScript) seguenti illustrano l'esportazione di uno snapshot di una macchina virtuale. Gli esempi che illustrano l'esportazione di una macchina virtuale sono disponibili [**nell'argomento ExportSystemDefinition.**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md)
 
-Le utilità C# a cui si fa riferimento sono disponibili in [utilità comuni per gli esempi di virtualizzazione (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+Le utilità C# a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6e71c6a47dc708a4ba4404c67a53dcbfe1c59e1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d88cdf5126c97ba09724e3d5a3cc70ed78e40a31871c8a2ccb3017a2e93cd86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496867"
 ---
 # <a name="esentdtcmissingcallbackonrecoveryexception-constructor"></a>Costruttore EsentDTCMissingCallbackOnRecoveryException
 
 Inizializza una nuova istanza della classe EsentDTCMissingCallbackOnRecoveryException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDTCMissingCallbackOnRecoveryException()
 
 [Membri di EsentDTCMissingCallbackOnRecoveryException](./esentdtcmissingcallbackonrecoveryexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

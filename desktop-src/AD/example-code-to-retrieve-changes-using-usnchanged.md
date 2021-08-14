@@ -1,32 +1,32 @@
 ---
-title: Codice di esempio per recuperare le modifiche tramite USNChanged
-description: Nell'esempio di codice seguente viene usato l'attributo uSNChanged di un oggetto in Active Directory Domain Services per recuperare le modifiche da una query precedente.
+title: Codice di esempio per recuperare le modifiche usando USNChanged
+description: Nell'esempio di codice seguente viene utilizzato l'attributo uSNChanged di un oggetto in Active Directory Domain Services recuperare le modifiche apportate da una query precedente.
 ms.assetid: 519fd20f-9eb4-4702-9338-8cda899604bd
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, recupero di modifiche tramite USNChanged
+- Esempi di Active Directory Active Directory, recupero delle modifiche tramite USNChanged
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 175092699d6f0e99c20dcc4af136cfea792c3754
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 244bb2ad1133925cf44e0183c66955f523d1e55db617fd964e43f5b9e8aa6800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104336806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189694"
 ---
-# <a name="example-code-to-retrieve-changes-using-usnchanged"></a>Codice di esempio per recuperare le modifiche tramite USNChanged
+# <a name="example-code-to-retrieve-changes-using-usnchanged"></a>Codice di esempio per recuperare le modifiche usando USNChanged
 
-Nell'esempio di codice seguente viene usato l'attributo **uSNChanged** di un oggetto in Active Directory Domain Services per recuperare le modifiche da una query precedente. Nell'esempio di codice può essere eseguita una sincronizzazione completa o un aggiornamento incrementale. Per una sincronizzazione completa, l'applicazione di esempio si connette al rootDSE di un controller di dominio e legge i parametri seguenti archiviati per l'utilizzo nella successiva sincronizzazione incrementale:
+Nell'esempio di codice seguente viene utilizzato **l'attributo uSNChanged** di un oggetto in Active Directory Domain Services recuperare le modifiche apportate da una query precedente. L'esempio di codice può eseguire una sincronizzazione completa o un aggiornamento incrementale. Per una sincronizzazione completa, l'applicazione di esempio si connette all'oggetto rootDSE di un controller di dominio e legge i parametri seguenti archiviati da usare nella successiva sincronizzazione incrementale:
 
 -   Nome DNS del controller di dominio. Le sincronizzazioni incrementali devono essere eseguite nello stesso controller di dominio della sincronizzazione precedente.
--   GUID **invocationID** del controller di dominio. Nell'esempio di codice viene utilizzato questo valore per rilevare che il controller di dominio è stato ripristinato da un backup, nel qual caso l'esempio deve eseguire una sincronizzazione completa.
--   **HighestCommittedUSN**. Questo valore diventa il limite inferiore per il filtro **uSNChanged** alla successiva sincronizzazione incrementale.
+-   GUID **invocationID** del controller di dominio. L'esempio di codice usa questo valore per rilevare che il controller di dominio è stato ripristinato da un backup. In questo caso, l'esempio deve eseguire una sincronizzazione completa.
+-   Oggetto **highestCommittedUSN.** Questo valore diventa il limite inferiore per il **filtro uSNChanged** alla successiva sincronizzazione incrementale.
 
-Nell'esempio di codice viene utilizzata l'interfaccia [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) , specificando il nome distinto della base della ricerca, un ambito di ricerca e un filtro. Non esistono restrizioni per la base o l'ambito di ricerca. Oltre a specificare gli oggetti di interesse, è necessario che il filtro specifichi anche un confronto **uSNChanged** , ad esempio "uSNChanged >= <lower bound USN> ". Per una sincronizzazione completa, " &lt; USN limite inferiore &gt; " è zero. Per una sincronizzazione incrementale, è il valore 1 più il valore **highestCommittedUSN** della ricerca precedente.
+L'esempio di codice usa [**l'interfaccia IDirectorySearch,**](/windows/desktop/api/iads/nn-iads-idirectorysearch) specificando il nome distinto della base della ricerca, un ambito di ricerca e un filtro. Non sono presenti restrizioni per la base o l'ambito di ricerca. Oltre a specificare gli oggetti di interesse, il filtro deve specificare anche un confronto **uSNChanged,** ad esempio "uSNChanged >= <lower bound USN> ". Per una sincronizzazione completa, " &lt; LOWER BOUND USN &gt; " è zero. Per una sincronizzazione incrementale, è il valore 1 più **il valore highestCommittedUSN** della ricerca precedente.
 
-Tenere presente che questa applicazione di esempio è destinata solo a mostrare come usare **uSNChanged** per recuperare le modifiche dal server Active Directory. Stampa le modifiche e non sincronizza effettivamente i dati in una risorsa di archiviazione secondaria. Di conseguenza, non viene illustrato come gestire problemi come gli oggetti spostati o le condizioni "nessun elemento padre". Viene illustrato come recuperare gli oggetti eliminati, ma non viene illustrato il modo in cui un'applicazione utilizza **objectGUID** degli oggetti eliminati per determinare l'oggetto corrispondente da eliminare nell'archivio.
+Tenere presente che questa applicazione di esempio ha lo scopo di mostrare solo come usare **uSNChanged** per recuperare le modifiche dal server Active Directory. Stampa le modifiche e non sincronizza effettivamente i dati in un archivio secondario. Di conseguenza, non viene illustrato come gestire problemi come gli oggetti spostati o le condizioni "no parent". Illustra come recuperare gli oggetti eliminati, ma non come un'applicazione usa **l'objectGUID** degli oggetti eliminati per determinare l'oggetto corrispondente da eliminare nell'archiviazione.
 
-Inoltre, l'esempio memorizza nella cache il nome del controller di dominio, **invocationID** e **highestCommittedUSN** nel registro di sistema. In un'applicazione di sincronizzazione reale è necessario archiviare i parametri nello stesso spazio di archiviazione mantenuto coerente con il server Active Directory. In questo modo si garantisce che i parametri e i dati oggetto rimangano sincronizzati se il database viene ripristinato da un backup.
+Inoltre, l'esempio memorizza nella cache il nome del controller di dominio, **invocationID** e **highestCommittedUSN** nel Registro di sistema. In un'applicazione di sincronizzazione reale è necessario archiviare i parametri nella stessa archiviazione che vengono mantenuti coerenti con il server Active Directory. In questo modo si garantisce che i parametri e i dati degli oggetti rimangano sincronizzati se il database viene ripristinato da un backup.
 
 
 ```C++
@@ -817,6 +817,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetTruncateLogInstance'
-title: API. JetTruncateLogInstance, metodo
+description: Altre informazioni sul metodo Api.JetTruncateLogInstance
+title: Metodo Api.JetTruncateLogInstance
 TOCTitle: 'JetTruncateLogInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetTruncateLogInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jettruncateloginstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fc1693b3f84cd594bfeca81a8e854e49e28d955f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d2e040a9bda9a6e0d5f491190a41bda3e1f76f645fe5ec3870ab83aeb200965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118497782"
 ---
-# <a name="apijettruncateloginstance-method"></a>API. JetTruncateLogInstance, metodo
+# <a name="apijettruncateloginstance-method"></a>Metodo Api.JetTruncateLogInstance
 
-Utilizzato durante un backup avviato da JetBeginExternalBackup per eliminare tutti i file di log delle transazioni che non saranno più necessari dopo il completamento corretto del backup corrente.
+Utilizzato durante un backup avviato da JetBeginExternalBackup per eliminare tutti i file di log delle transazioni che non saranno più necessari al termine del backup corrente.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,7 +58,7 @@ public static void JetTruncateLogInstance(
 #### <a name="parameters"></a>Parametri
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     Istanza da troncare.
 
@@ -68,6 +68,6 @@ public static void JetTruncateLogInstance(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

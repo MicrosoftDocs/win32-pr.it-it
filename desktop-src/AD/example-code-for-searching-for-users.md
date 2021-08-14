@@ -1,29 +1,29 @@
 ---
 title: Codice di esempio per la ricerca di utenti
-description: Negli esempi di codice seguenti viene eseguita la ricerca di utenti nel dominio dell'account utente con cui viene eseguito il processo chiamante. Esempio di base di C++ ExampleVisual
+description: Negli esempi di codice seguenti vengono cercati gli utenti nel dominio dell'account utente con cui è in esecuzione il processo chiamante. Esempio di C++Visual Basic
 ms.assetid: 53bbd57b-0bd2-4acb-a69f-89764b85e257
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, ricerca di utenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34d587cf6264017fccb35fc7a82ac1e2c68c1785
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b974299416a508546fd8bc6108890579726c9dba6b01bb485f2160f04491923e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104398834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190163"
 ---
 # <a name="example-code-for-searching-for-users"></a>Codice di esempio per la ricerca di utenti
 
-Negli esempi di codice seguenti viene eseguita la ricerca di utenti nel dominio dell'account utente con cui viene eseguito il processo chiamante.
+Negli esempi di codice seguenti vengono cercati gli utenti nel dominio dell'account utente con cui è in esecuzione il processo chiamante.
 
 -   [Esempio di C++](#c-example)
--   [Esempio di Visual Basic](#visual-basic-example)
+-   [Visual Basic Esempio](#visual-basic-example)
 
 ## <a name="c-example"></a>Esempio C++
 
-Nell'esempio di codice C++ riportato di seguito viene eseguita la ricerca del dominio corrente per tutti gli utenti o di un utente specifico in base a un filtro specificato.
+L'esempio di codice C++ seguente cerca nel dominio corrente tutti gli utenti o un utente specifico in base a un filtro specificato.
 
 
 ```C++
@@ -484,9 +484,9 @@ HRESULT FindUsers(IDirectorySearch *pContainerToSearch,  //  IDirectorySearch po
 
 
 
-## <a name="visual-basic-example"></a>Esempio di Visual Basic
+## <a name="visual-basic-example"></a>Visual Basic Esempio
 
-Nell'esempio di codice seguente Visual Basic viene eseguita la ricerca nel dominio corrente degli utenti con il cognome specificato e vengono restituiti gli attributi Name e [**Distinguishname**](/windows/desktop/ADSchema/a-distinguishedname) per gli oggetti trovati. Nell'esempio di codice riportato di seguito viene utilizzato ADO per eseguire la ricerca.
+Nell'Visual Basic di codice seguente viene eseguita una ricerca nel dominio corrente degli utenti con il cognome specificato e vengono restituiti gli attributi name e [**distinguishedName**](/windows/desktop/ADSchema/a-distinguishedname) per gli oggetti trovati. Nell'esempio di codice seguente viene utilizzato ADO per eseguire la ricerca.
 
 
 ```VB
@@ -619,6 +619,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

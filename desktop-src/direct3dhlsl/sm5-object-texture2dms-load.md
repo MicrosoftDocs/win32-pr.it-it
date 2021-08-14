@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture2DMS:: Load (int, int)'
-description: 'Ottiene un valore. | Funzione Texture2DMS:: Load (int, int)'
+title: Funzione Texture2DMS::Load(int,int)
+description: Ottiene un valore. | Funzione Texture2DMS::Load(int,int)
 ms.assetid: b49b94e0-5c49-4901-b49d-3e652d4fd2d1
 keywords:
-- Funzione Load DXGI
+- Caricare la funzione DXGI
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d9c86bea7d914dd5975105a00a64789864a1fbd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0997a1bd30b4912864674015057fcafec227d90ad05b16b88fd3f05b671f155c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285729"
 ---
-# <a name="texture2dmsloadintint-function"></a>Funzione Texture2DMS:: Load (int, int)
+# <a name="texture2dmsloadintint-function"></a>Funzione Texture2DMS::Load(int,int)
 
 Ottiene un valore.
 
@@ -37,16 +37,16 @@ T Load(
 
 <dl> <dt>
 
-*Coord* \[ in\]
+*coord* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int2**
 
-Percorso di input.
+Posizione di input.
 
 </dd> <dt>
 
-*sampleindex* \[ in\]
+*sampleindex* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -63,7 +63,7 @@ Un valore il cui tipo corrisponde al tipo di modello di trama.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -78,7 +78,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -90,10 +90,10 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](texture2dms-load.md)
+[Metodi di caricamento](texture2dms-load.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Copia il file o la directory della voce di directory logica specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.
+description: Copia il file di voce di directory logica o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input.
 ms.assetid: 038e23d7-71db-4db6-8fb1-e84e972510c9
 ms.tgt_platform: multiple
 title: Metodo Copy della classe Win32_Directory
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 25568167d9532303a7cbee794757bc674a378b39
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 85a16d3e63ef46ad2c536103a4e462a3e830e17f56f83cdcf39bbad5a33ebb23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118419756"
 ---
-# <a name="copy-method-of-the-win32_directory-class"></a>Metodo Copy della classe di \_ directory Win32
+# <a name="copy-method-of-the-win32_directory-class"></a>Metodo Copy della classe Directory Win32 \_
 
-Il metodo **Copy** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) copia il file di voce della directory logica o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
+Il **metodo copia** [la](/windows/desktop/WmiSdk/retrieving-a-class) voce di directory logica o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ uint32 Copy(
 *FileName* 
 </dt> <dd>
 
-Nome completo della copia del file (o directory). Esempio: c: \\ temp \\ NewDirectory
+Nome completo della copia del file (o directory). Esempio: c: \\ temp \\ newdirectory
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato copiato correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -128,7 +128,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -148,17 +148,17 @@ Un parametro specificato non è valido.
 
 ## <a name="remarks"></a>Commenti
 
-Spesso è necessario copiare le cartelle da una posizione a un'altra. Ad esempio, è possibile copiare una cartella da un server a un altro per creare una copia di backup della cartella. In alternativa, è possibile che sia presente una cartella templates che deve essere copiata nelle workstation utente o una cartella Scripts che deve essere copiata in tutti i server DNS.
+Le cartelle devono spesso essere copiate da un percorso a un altro. Ad esempio, è possibile copiare una cartella da un server a un altro per creare una copia di backup di tale cartella. Oppure si potrebbe avere una cartella templates che deve essere copiata nelle workstation utente o una cartella di script che deve essere copiata in tutti i server DNS.
 
-Il \_ metodo di copia della directory Win32 consente di copiare una cartella da un percorso a un altro nello stesso computer (ad esempio, copiando una cartella dall'unità C all'unità D) o in un computer remoto. Per copiare una cartella, viene restituita un'istanza della cartella da copiare e quindi viene chiamato il metodo Copy, passando come parametro il percorso di destinazione per la nuova copia della cartella. Questa riga di codice, ad esempio, copia una cartella nella cartella script nell'unità F:
+Il metodo Win32 Directory Copy consente di copiare una cartella da un percorso a un altro, nello stesso computer (ad esempio, copiando una cartella dall'unità C all'unità D) o in un \_ computer remoto. Per copiare una cartella, si restituisce un'istanza della cartella da copiare e quindi si chiama il metodo Copy, passando come parametro il percorso di destinazione per la nuova copia della cartella. Ad esempio, questa riga di codice copia una cartella nella cartella Scripts nell'unità F:
 
 `objFolder.Copy("F:\Scripts")`
 
-Quando si esegue il metodo di copia, WMI non sovrascriverà una cartella esistente. Ciò significa che l'operazione di copia ha esito negativo se la cartella di destinazione esiste. Si supponga, ad esempio, di disporre di una cartella denominata scripts e di copiare la cartella in una condivisione remota denominata \\ \\ Archivio ATL-FS-01 \\ . Se nella condivisione è già presente una cartella denominata scripts, l'operazione di copia ha esito negativo.
+WMI non sovrascriverà una cartella esistente durante l'esecuzione del metodo Copy. Ciò significa che l'operazione di copia ha esito negativo se la cartella di destinazione esiste. Si supponga, ad esempio, di avere una cartella denominata Scripts e di provare a copiare tale cartella in una condivisione remota denominata \\ \\ atl-fs-01 \\ archive. Se nella condivisione esiste già una cartella denominata Scripts, l'operazione di copia non riesce.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio di codice followng, tratto da [copy a folder using WMI](https://Gallery.TechNet.Microsoft.Com/71b8f517-0240-42a2-be5c-e5a3921604d2), usa il metodo Copy per copiare la cartella C: \\ Scripts in D: \\ Archive.
+L'esempio di codice seguente, tratto da Copia una cartella tramite [WMI,](https://Gallery.TechNet.Microsoft.Com/71b8f517-0240-42a2-be5c-e5a3921604d2)usa il metodo Copy per copiare la cartella C: \\ Scripts in D: \\ Archive.
 
 
 ```VB
@@ -185,7 +185,7 @@ Next
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -197,7 +197,7 @@ Next
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directory Win32**](win32-directory.md)
+[**Win32 \_ Directory**](win32-directory.md)
 </dt> </dl>
 
  

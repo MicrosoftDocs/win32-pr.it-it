@@ -1,10 +1,10 @@
 ---
-title: Funzione DsBackupClose (ntdsbcli. h)
+title: Funzione DsBackupClose (Ntdsbcli.h)
 description: Chiude un file di backup aperto con la funzione DsBackupOpenFile.
 ms.assetid: 5452a222-abe8-4d2d-84ff-6f577073b220
 ms.tgt_platform: multiple
 keywords:
-- Active Directory funzione DsBackupClose
+- Funzione DsBackupClose active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d03c9cd7f125d223d264236a52120714d5198c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 00c9c8931d67b33fdad1f9e3605ee6efe801dac988d3931d96d1417561c093b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192189"
 ---
-# <a name="dsbackupclose-function"></a>DsBackupClose (funzione)
+# <a name="dsbackupclose-function"></a>Funzione DsBackupClose
 
-\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, usare invece [servizio Copia Shadow del volume (VSS)](../vss/volume-shadow-copy-service-overview.md) .\]
+\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
 
-La funzione **DsBackupClose** chiude un file di backup aperto con la funzione [**DsBackupOpenFile**](dsbackupopenfile.md) . Per ogni handle di backup, è possibile aprire un solo file alla volta, quindi questa funzione chiude il file attualmente aperto.
+La **funzione DsBackupClose** chiude un file di backup aperto con la [**funzione DsBackupOpenFile.**](dsbackupopenfile.md) Per ogni handle di backup, è possibile aprire un solo file alla volta, quindi questa funzione chiude il file attualmente aperto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,23 +43,23 @@ HRESULT DsBackupClose(
 
 <dl> <dt>
 
-*HBC* \[ in\]
+*hbc* \[ Pollici\]
 </dt> <dd>
 
-Contiene l'handle del contesto di backup ottenuto con la funzione [**DsBackupPrepare**](dsbackupprepare.md) .
+Contiene l'handle del contesto di backup ottenuto con [**la funzione DsBackupPrepare.**](dsbackupprepare.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **\_ OK** se la funzione ha esito positivo o un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati altri possibili codici di errore.
+Restituisce **S \_ OK se** la funzione ha esito positivo o un codice di errore Win32 o RPC in caso contrario. Nell'elenco seguente sono elencati altri possibili codici di errore.
 
 <dl> <dt>
 
-**ERRORE \_ parametro non valido \_**
+**ERRORE \_ PARAMETRO NON \_ VALIDO**
 </dt> <dd>
 
-*HBC* non è valido.
+*hbc* non è valido.
 
 </dd> <dt>
 
@@ -78,8 +78,8 @@ Nessun file attualmente aperto.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
-| Libreria<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>   |
+| Libreria<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 
 
@@ -94,7 +94,7 @@ Nessun file attualmente aperto.
 [**DsBackupPrepare**](dsbackupprepare.md)
 </dt> <dt>
 
-[Esecuzione del backup di un server di Active Directory](backing-up-an-active-directory-server.md)
+[Backup di un server Active Directory](backing-up-an-active-directory-server.md)
 </dt> <dt>
 
 [Funzioni di backup della directory](directory-backup-functions.md)

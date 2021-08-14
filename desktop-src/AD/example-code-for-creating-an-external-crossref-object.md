@@ -1,11 +1,11 @@
 ---
 title: Codice di esempio per la creazione di un oggetto crossRef esterno
-description: Questo argomento include un esempio di codice che consente di creare un oggetto crossRef esterno.
+description: Questo argomento include un esempio di codice che crea un oggetto crossRef esterno.
 ms.assetid: 282ca648-3bc7-4c5b-98db-1d8f2d040e3a
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, creazione di un oggetto crossRef esterno
-- Esempi di Active Directory Active Directory creazione di un riferimento esterno AD, codice di esempio
+- Esempi di Active Directory Active Directory creazione di un ad di riferimento esterno , codice di esempio
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 484fafed7e77fcd4d97c74c26acf8dfaf058dcf4
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 19b3ee6eb9f13171576cac1a0c656139cee83b7a689eadcb89a33f2807eb8b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104046509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190754"
 ---
 # <a name="example-code-for-creating-an-external-crossref-object"></a>Codice di esempio per la creazione di un oggetto crossRef esterno
 
-Nell'esempio di codice Visual Basic riportato di seguito viene illustrato come creare un oggetto [**crossRef**](/windows/desktop/ADSchema/c-crossref) esterno.
+Nell'Visual Basic di codice seguente viene illustrato come creare un [**oggetto crossRef**](/windows/desktop/ADSchema/c-crossref) esterno.
 
 
 ```VB
@@ -75,6 +75,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
