@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetSecondaryIndexBookmark'
-title: API. JetGetSecondaryIndexBookmark, metodo
+description: Altre informazioni sul metodo Api.JetGetSecondaryIndexBookmark
+title: Metodo Api.JetGetSecondaryIndexBookmark
 TOCTitle: 'JetGetSecondaryIndexBookmark method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetSecondaryIndexBookmark(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,System.Int32@,System.Byte[],System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.GetSecondaryIndexBookmarkGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetsecondaryindexbookmark(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b0a25e78ca291271a96d06e5c0bf61c691acd4de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a1ca2430ae188b256fb1c6d026db7b6d78e45fdbfeaec158242019b7795d910
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042529"
 ---
-# <a name="apijetgetsecondaryindexbookmark-method"></a>API. JetGetSecondaryIndexBookmark, metodo
+# <a name="apijetgetsecondaryindexbookmark-method"></a>Metodo Api.JetGetSecondaryIndexBookmark
 
-Recupera un segnalibro speciale per la voce di indice secondaria in corrispondenza della posizione corrente di un cursore. Questo segnalibro può quindi essere utilizzato per riposizionare in modo efficiente il cursore sulla stessa voce di indice utilizzando JetGotoSecondaryIndexBookmark. Questa operazione è particolarmente utile quando si riposiziona in un indice secondario che contiene chiavi duplicate o che contiene più voci di indice per lo stesso record.
+Recupera un segnalibro speciale per la voce di indice secondaria nella posizione corrente di un cursore. Questo segnalibro può quindi essere usato per riposizionare in modo efficiente il cursore sulla stessa voce di indice usando JetGotoSecondaryIndexBookmark. Ciò è particolarmente utile quando si riposiziona in un indice secondario che contiene chiavi duplicate o che contiene più voci di indice per lo stesso record.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -86,63 +86,63 @@ public static void JetGetSecondaryIndexBookmark(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da cui recuperare il segnalibro.
 
 <!-- end list -->
 
   - secondaryKey  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Buffer di output per la chiave secondaria.
 
 <!-- end list -->
 
   - secondaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Dimensioni del buffer della chiave secondaria.
 
 <!-- end list -->
 
   - actualSecondaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Restituisce la dimensione della chiave secondaria.
+    Restituisce le dimensioni della chiave secondaria.
 
 <!-- end list -->
 
   - primaryKey  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Buffer di output per la chiave primaria.
 
 <!-- end list -->
 
   - primaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensioni del buffer di chiave primaria.
+    Dimensioni del buffer della chiave primaria.
 
 <!-- end list -->
 
   - actualPrimaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Restituisce la dimensione della chiave primaria.
+    Restituisce le dimensioni della chiave primaria.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. GetSecondaryIndexBookmarkGrbit](./getsecondaryindexbookmarkgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.GetSecondaryIndexBookmarkGrbit](./getsecondaryindexbookmarkgrbit-enumeration.md)  
     
     Opzioni per la chiamata.
 
@@ -152,6 +152,6 @@ public static void JetGetSecondaryIndexBookmark(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

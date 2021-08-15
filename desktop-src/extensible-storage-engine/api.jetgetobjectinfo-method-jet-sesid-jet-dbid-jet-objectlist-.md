@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)'
-title: Metodo API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
+description: 'Altre informazioni su: Metodo Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)'
+title: Metodo Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
 TOCTitle: JetGetObjectInfo method (JET_SESID, JET_DBID, JET_OBJECTLIST)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetObjectInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.JET_OBJECTLIST@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetobjectinfo(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9564b0eb2dc8a5bee2e65b729164f39a19d349fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37c22a805ccf1a2cf77cecd134e6c2743a89f59c9b5d8936a9199d80eeb23815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103750762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983301"
 ---
-# <a name="apijetgetobjectinfo-method-jet_sesid-jet_dbid-jet_objectlist"></a>Metodo API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
+# <a name="apijetgetobjectinfo-method-jet_sesid-jet_dbid-jet_objectlist"></a>Metodo Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
 
-Recupera le informazioni sugli oggetti di database.
+Recupera informazioni sugli oggetti di database.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,23 +61,23 @@ public static void JetGetObjectInfo(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione da utilizzare.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     Database da utilizzare.
 
 <!-- end list -->
 
   - objectlist  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OBJECTLIST](./jet-objectlist-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OBJECTLIST](./jet-objectlist-class.md)  
     
-    Compilato con informazioni sugli oggetti nel database.
+    Vengono fornite informazioni sugli oggetti nel database.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -85,8 +85,8 @@ public static void JetGetObjectInfo(
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetGetObjectInfo](./api.jetgetobjectinfo-method.md)
+[Overload di JetGetObjectInfo](./api.jetgetobjectinfo-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

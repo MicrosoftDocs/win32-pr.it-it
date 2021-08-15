@@ -1,6 +1,6 @@
 ---
-title: M3X3-vs
-description: Moltiplica un vettore a 3 componenti per una matrice 3x3. | M3X3-vs
+title: m3x3 - vs
+description: Moltiplica un vettore a 3 componenti per una matrice 3x3. | m3x3 - vs
 ms.assetid: 6a749ed0-097d-4354-bc70-fbcd879eafab
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e75cdb4b098b92ea358c32e40b3948c7ac73e0cf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 11c1caa682751c3c4d112efd07643233e9cac91392c9e3bb9c575b1f89f5b53f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104401899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562061"
 ---
-# <a name="m3x3---vs"></a>M3X3-vs
+# <a name="m3x3---vs"></a>m3x3 - vs
 
 Moltiplica un vettore a 3 componenti per una matrice 3x3.
 
@@ -24,7 +24,7 @@ Moltiplica un vettore a 3 componenti per una matrice 3x3.
 
 
 
-| M3X3 DST, src0, src1 |
+| m3x3 dst, src0, src1 |
 |----------------------|
 
 
@@ -33,7 +33,7 @@ Moltiplica un vettore a 3 componenti per una matrice 3x3.
 
 dove
 
--   DST è il registro di destinazione. Result è un vettore a 3 componenti.
+-   dst è il registro di destinazione. Il risultato è un vettore a 3 componenti.
 -   src0 è un registro di origine che rappresenta un vettore a 3 componenti.
 -   src1 è un registro di origine che rappresenta una matrice 3x3, che corrisponde al primo di 3 registri consecutivi.
 
@@ -41,7 +41,7 @@ dove
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m3x3                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ dove
 
  
 
-La maschera XYZ è obbligatoria per il registro di destinazione. I modificatori negate e swizzle sono consentiti per src0 ma non per src1.
+La maschera xyz è necessaria per il registro di destinazione. I modificatori di negazione e swizzle sono consentiti per src0 ma non per src1.
 
 Nel frammento di codice seguente vengono illustrate le operazioni eseguite.
 
@@ -62,9 +62,9 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z);
 
 
 
-Il vettore di input si trova in Register src0. La matrice di input 3x3 si trova in Register src1 e i successivi due registri successivi, come illustrato nell'espansione riportata di seguito. Viene generato un risultato 3D, lasciando l'altro elemento del registro di destinazione (dest. w) non interessato.
+Il vettore di input si trova nel registro src0. La matrice di input 3x3 si trova nel registro src1 e nei due registri successivi, come illustrato nell'espansione seguente. Viene prodotto un risultato 3D, lasciando inalterato l'altro elemento del registro di destinazione (dest.w).
 
-Questa operazione viene in genere usata per trasformare i vettori normali durante i calcoli di illuminazione. Questa istruzione viene implementata come coppia di prodotti punto, come illustrato di seguito.
+Questa operazione viene comunemente usata per trasformare vettori normali durante i calcoli di illuminazione. Questa istruzione viene implementata come coppia di prodotti punto, come illustrato di seguito.
 
 
 ```
@@ -81,7 +81,7 @@ dp3   r0.z, r1, c2
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
  

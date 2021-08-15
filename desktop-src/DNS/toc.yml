@@ -85,13 +85,13 @@
               href: /windows/desktop/api/Windns/nf-windns-dnsservicebrowse
             - name: DnsServiceBrowseCancel
               href: /windows/desktop/api/Windns/nf-windns-dnsservicebrowsecancel
-            - name: DnsServiceConstructInstance
+            - name: Istanza di DnsServiceConstructInstance
               href: /windows/desktop/api/Windns/nf-windns-dnsserviceconstructinstance
-            - name: DnsServiceCopyInstance
+            - name: Istanza di DnsServiceCopy
               href: /windows/desktop/api/Windns/nf-windns-dnsservicecopyinstance
             - name: DnsServiceDeRegister
               href: /windows/desktop/api/Windns/nf-windns-dnsservicederegister
-            - name: DnsServiceFreeInstance
+            - name: Istanza DnsServiceFreeInstance
               href: /windows/desktop/api/Windns/nf-windns-dnsservicefreeinstance
             - name: DnsServiceRegister
               href: /windows/desktop/api/Windns/nf-windns-dnsserviceregister
@@ -215,7 +215,7 @@
     - name: DNS WMI Provider
       href: dns-wmi-provider.md
       items:
-        - name: Individuazione degli elementi necessari nel provider WMI DNS
+        - name: Ricerca di elementi necessari nel provider WMI DNS
           href: finding-what-you-need-in-the-dns-wmi-provider.md
         - name: Informazioni sulle risorse per il provider WMI DNS
           href: resource-information-for-the-dns-wmi-provider.md
@@ -534,7 +534,7 @@
                       href: microsoftdns-x25type-createinstancefrompropertydata.md
                     - name: Metodo Modify
                       href: microsoftdns-x25type-modify.md
-        - name: Esempi di script del provider WMI DNS
+        - name: Esempi di scripting del provider WMI DNS
           href: dns-wmi-provider-scripting-examples.md
           items:
             - name: Esempi di provider WMI DNS- Gestione di un server DNS

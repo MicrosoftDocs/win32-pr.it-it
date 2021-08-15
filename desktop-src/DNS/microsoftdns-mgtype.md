@@ -3,7 +3,7 @@ title: MicrosoftDNS_MGType classe
 description: Sottoclasse di MicrosoftDNS \_ ResourceRecord che rappresenta un record del gruppo di posta (MG).
 ms.assetid: ce5795d1-e575-46ef-ad82-62b329e261d6
 keywords:
-- MicrosoftDNS_MGType DNS della classe
+- MicrosoftDNS_MGType DNS di classe
 - MicrosoftDNS_MGType classe DNS , descritto
 topic_type:
 - apiref

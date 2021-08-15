@@ -5,7 +5,7 @@ ms.assetid: 22c0df15-8245-49c6-b5ca-57ac48b57c3a
 ms.tgt_platform: multiple
 keywords:
 - Localized-Description schema AD dell'attributo
-- Schema AD dell'attributo localizedDescription
+- Attributo localizedDescription - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ ID di localizzazione e nome visualizzato per un oggetto.
 | CN                | Localized-Description                       |
 | Ldap-Display-Name | localizedDescription                        |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.817                      |
 | System-Id-Guid    | d9e18316-8939-11d1-aebc-0000f80367c1        |
@@ -121,7 +121,7 @@ ID di localizzazione e nome visualizzato per un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
@@ -142,7 +142,7 @@ ID di localizzazione e nome visualizzato per un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
@@ -163,7 +163,7 @@ ID di localizzazione e nome visualizzato per un oggetto.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| A valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                       |

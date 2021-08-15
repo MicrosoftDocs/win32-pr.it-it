@@ -1,5 +1,5 @@
 ---
-description: Distruttore CGenericList.~CGenericList - Metodo del distruttore.
+description: 'Distruttore CGenericList.~CGenericList : metodo del distruttore.'
 ms.assetid: a5594dd2-b29b-49d6-b4de-5074ba3d0ce3
 title: Distruttore CGenericList.~CGenericList (Wxlist.h)
 ms.topic: reference

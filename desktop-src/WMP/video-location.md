@@ -3,22 +3,22 @@ title: Posizione video
 description: Posizione video
 ms.assetid: d7785890-36a1-4077-b878-4845f2829101
 keywords:
-- Windows Media Player Mobile Skins, video
-- interfacce, video
-- informazioni di riferimento per Skins, video
-- video in Skin, informazioni
+- Windows Media Player Interfaccia per dispositivi mobili, video
+- skins, video
+- informazioni di riferimento per le interfaccia, video
+- video nelle interfaccia, informazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d12a21343e0eef035bd4ff860bb0a30c1db0f30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2df310c1c439ac06317ff67c36bea340339233f93821fba059db642400f00e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104220865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054159"
 ---
 # <a name="video-location"></a>Posizione video
 
-È necessario definire il percorso dell'area di visualizzazione video nell'interfaccia. È necessario immettere quattro numeri interi positivi, separati da virgole, che definiscono la sinistra, la parte superiore, la larghezza e l'altezza dello schermo video, in pixel, rispetto all'immagine di sfondo.
+È necessario definire la posizione dell'area di visualizzazione del video nell'interfaccia. È necessario immettere quattro numeri interi positivi, separati da virgole, che definiscono la sinistra, la parte superiore, la larghezza e l'altezza della visualizzazione video, in pixel, rispetto all'immagine di sfondo.
 
 
 ```C++
@@ -35,9 +35,9 @@ ms.locfileid: "104220865"
 [**Video**](video.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo max-ticket-Age
-description: Questo attributo determina la quantità massima di tempo, in ore, che un ticket di concessione ticket (TGT) di un utente può essere utilizzato per l'autenticazione Kerberos.
+title: Attributo Max-Ticket-Age
+description: Questo attributo determina la quantità massima di tempo, in ore, in cui il ticket di concessione ticket (TGT) di un utente può essere usato ai fini dell'autenticazione Kerberos.
 ms.assetid: 54ab0f2b-31eb-45d7-9a43-e70dc78136b5
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo max-ticket-Age
+- Schema AD dell'attributo Max-Ticket-Age
 - Schema AD dell'attributo maxTicketAge
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d68bca2f8dd87d37be7215e26f549424cd32b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9c876bbab2b60d655464129d0a59aeda110f78d8e2514866a3bcf28a859cb3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301011"
 ---
-# <a name="max-ticket-age-attribute"></a>Attributo max-ticket-Age
+# <a name="max-ticket-age-attribute"></a>Attributo Max-Ticket-Age
 
-Questo attributo determina la quantità massima di tempo, in ore, che un ticket di concessione ticket (TGT) di un utente può essere utilizzato per l'autenticazione Kerberos. Quando il TGT di un utente scade, ne deve essere richiesto uno nuovo oppure è necessario rinnovarne uno esistente. Per impostazione predefinita, questa impostazione è impostata su 10 ore nell'oggetto Criteri di gruppo dominio predefinito (GPO).
+Questo attributo determina la quantità massima di tempo, in ore, in cui il ticket di concessione ticket (TGT) di un utente può essere usato ai fini dell'autenticazione Kerberos. Quando il TGT di un utente scade, ne deve essere richiesto uno nuovo o quello esistente deve essere rinnovato. Per impostazione predefinita, questa impostazione è impostata su 10 ore nell'oggetto Criteri di gruppo Criteri di gruppo dominio predefinito.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Numero massimo-ticket-Age                       |
-| LDAP-Display-Name | maxTicketAge                         |
+| CN                | Max-Ticket-Age                       |
+| Ldap-Display-Name | maxTicketAge                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.77                |
-| System-ID-GUID    | bf9679be-0de6-11d0-a285-00aa003049e2 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679be-0de6-11d0-a285-00aa003049e2 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| A valore singolo       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo determina la quantità massima di tempo, in ore, che un ticket 
 | ID collegamento                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| È a valore singolo       | Vero                                               |
+| Is-Single-Valued       | Vero                                               |
 | Indicizzato             | Falso                                              |
 | Nel catalogo globale      | Falso                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> |
 
 
 

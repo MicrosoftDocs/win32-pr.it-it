@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_KILLFOCUS (visualizzazione elenco) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_KILLFOCUS di notifica (visualizzazione elenco) (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: f60064da-21e1-4555-ae72-cda8bd76175a
 keywords:
-- Codice di notifica NM_KILLFOCUS (visualizzazione elenco) controlli Windows
+- NM_KILLFOCUS di notifica (visualizzazione elenco) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d1c031f3ab23d9f79ccf7f29dcfdf5472162214
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34335644af6e1657f6e50792e4d9d2477ad06306977d754d3757bb49ebbb799d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018849"
 ---
-# <a name="nm_killfocus-list-view-notification-code"></a>\_Codice di notifica di KILLFOCUS Nm (visualizzazione elenco)
+# <a name="nm_killfocus-list-view-notification-code"></a>Codice \_ di notifica NM KILLFOCUS (visualizzazione elenco)
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo ha perso lo stato attivo per l'input. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_KILLFOCUS
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito per questa notifica non viene utilizzato.
+Il valore restituito per questa notifica non viene usato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il valore restituito per questa notifica non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

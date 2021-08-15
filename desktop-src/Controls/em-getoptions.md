@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_GETOPTIONS (RichEdit. h)
-description: Recupera le opzioni di controllo Rich Edit.
+title: EM_GETOPTIONS messaggio (Richedit.h)
+description: Recupera le opzioni del controllo Rich Edit.
 ms.assetid: 183f0fed-8666-4ed5-ac48-362c818378d2
 keywords:
-- Controlli di Windows Message EM_GETOPTIONS
+- EM_GETOPTIONS dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b31af3663331b63553fc262fc9bdbd5613c5768
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cba85b5fe3ffd47763d25b9ca13bf10f6202a6876e25d300f66d9af3852edd5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019519"
 ---
-# <a name="em_getoptions-message"></a>\_Messaggio GEToptions em
+# <a name="em_getoptions-message"></a>Messaggio EM \_ GETOPTIONS
 
-Recupera le opzioni di controllo Rich Edit.
+Recupera le opzioni del controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Recupera le opzioni di controllo Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio restituisce una combinazione dei valori del flag di opzione correnti descritti nel [**messaggio \_ seoptions em**](em-setoptions.md) .
+Questo messaggio restituisce una combinazione dei valori del flag di opzione corrente descritti nel messaggio [**EM \_ SETOPTIONS.**](em-setoptions.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Questo messaggio restituisce una combinazione dei valori del flag di opzione cor
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Questo messaggio restituisce una combinazione dei valori del flag di opzione cor
 
 <dl> <dt>
 
-[**\_Opzioni em**](em-setoptions.md)
+[**EM \_ SETOPTIONS**](em-setoptions.md)
 </dt> </dl>
 
  

@@ -32,7 +32,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | CN                | When-Created                                                  |
 | Ldap-Display-Name | whenCreated                                                   |
 | Dimensione              | 8 byte                                                       |
-| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                              |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                              |
 | Frequenza di aggiornamento  | Quando viene creato l'oggetto .                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.2                                          |
 | System-Id-Guid    | bf967a78-0de6-11d0-a285-00aa003049e2                          |
@@ -59,7 +59,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -122,7 +122,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -143,7 +143,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -164,7 +164,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -185,7 +185,7 @@ Data di creazione dell'oggetto. Questo valore viene replicato e si trova nel cat
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Vero                            |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

@@ -1,9 +1,9 @@
 ---
-title: index (comando)
-description: Il comando index controlla la visualizzazione sullo schermo di un videoregistratore. I dispositivi VCR riconoscono questo comando.
+title: comando index
+description: Il comando index controlla la visualizzazione su schermo di un videoregistratore. I dispositivi vcr riconoscono questo comando.
 ms.assetid: 16066acf-37aa-4bff-b97e-5eb2420ac3c4
 keywords:
-- comando indice Windows Multimedia
+- Comando index Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da652b1a7a48dffd9850c435345fcfcb11c2e674
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9044ce01db5f35354390fd8d09cc085416202f670c8378a2e1a10311b12ab94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690551"
 ---
-# <a name="index-command"></a>index (comando)
+# <a name="index-command"></a>comando index
 
-Il comando index controlla la visualizzazione sullo schermo di un videoregistratore. I dispositivi VCR riconoscono questo comando.
+Il comando index controlla la visualizzazione su schermo di un videoregistratore. I dispositivi vcr riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno dei flag seguenti.
 
 | Valore | Significato                                                                                                                  |
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| spento   | Disattiva la visualizzazione sullo schermo.                                                                                         |
-| on    | Attiva la visualizzazione sullo schermo. L'elemento da visualizzare è specificato dal flag "index" del comando [set](set.md) . |
+| spento   | Disattiva la visualizzazione su schermo.                                                                                         |
+| on    | Attiva la visualizzazione su schermo. L'elemento da visualizzare viene specificato dal flag "index" del [comando set.](set.md) |
 
 
 
@@ -67,13 +67,13 @@ Uno dei flag seguenti.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify" o "test". Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify" o "test". Per altre informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Restituisce zero in caso di esito positivo o un errore.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

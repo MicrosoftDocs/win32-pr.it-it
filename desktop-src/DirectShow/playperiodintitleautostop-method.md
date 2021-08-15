@@ -4,12 +4,12 @@ ms.assetid: 0c4df76d-3991-4a6c-a8e5-5fd713eeffc2
 title: Metodo PlayPeriodInTitleAutoStop
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d05899b66b7f1a11f8f5b177d311b9634a52595b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 93dbf0a5c157efcf4d22e7e5ba650bfdfebc57fe6a43d319e0be14958d732024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564061"
 ---
 # <a name="playperiodintitleautostop-method"></a>Metodo PlayPeriodInTitleAutoStop
 
@@ -31,21 +31,21 @@ MSWebDVD.PlayPeriodInTitleAutoStop(iTitle, sStartTime, sEndTime)
 <span id="iTitle"></span><span id="ititle"></span><span id="ITITLE"></span>*iTitle*
 </dt> <dd>
 
-Specifica il titolo come intero.
+Specifica il titolo come integer.
 
 </dd> <dt>
 
 <span id="sStartTime"></span><span id="sstarttime"></span><span id="SSTARTTIME"></span>*sStartTime*
 </dt> <dd>
 
-Specifica l'ora di inizio come stringa nel formato "HH: mm: SS: FF" (specifica di ore, minuti, secondi, frame).
+Specifica l'ora di inizio come stringa nel formato "hh:mm:ss:ff" (specificando ore, minuti, secondi, fotogrammi).
 
 </dd> <dt>
 
 <span id="sEndTime"></span><span id="sendtime"></span><span id="SENDTIME"></span>*sEndTime*
 </dt> <dd>
 
-Specifica l'ora di fine come stringa nel formato "HH: mm: SS: FF".
+Specifica l'ora di fine come stringa nel formato "hh:mm:ss:ff".
 
 </dd> </dl>
 

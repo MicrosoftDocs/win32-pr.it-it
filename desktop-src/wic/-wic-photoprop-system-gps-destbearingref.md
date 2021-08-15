@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. DestBearingRef.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.DestBearingRef.
 ms.assetid: d1c8b3cc-ed52-43ca-a0ba-045a2c5fe274
-title: Criteri per i metadati delle foto di System. GPS. DestBearingRef
+title: Criteri metadati foto System.GPS.DestBearingRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f00d3083459fe365fc54e81dc485ddd26887a46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26ee4b984d0a759769b80be76b53499690673c7ec630c759aa0371b53ea9368f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087852"
 ---
-# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. GPS. DestBearingRef
+# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Criteri metadati foto System.GPS.DestBearingRef
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.DestBearingRef.](../properties/props-system-gps-destbearingref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ GPS \_ DestBearingRef
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ Stringa.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                        | Formato disco |
 |-------|-----------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -60,7 +60,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                        | Formato disco |
 |-------|-----------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -73,7 +73,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                        |
 |-------|-----------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 23}   |
+| 1     | /app1/ifd/gps/{ushort=23}   |
 | 2     | /xmp/exif:gpsdestbearingref |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                            | Formato disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -101,7 +101,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                            | Formato disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | unicode     |
 
 
@@ -114,7 +114,7 @@ I valori di schemi diversi vengono risolti.
 
 | order | path                            |
 |-------|---------------------------------|
-| 1     | /IFD/GPS/{ushort = 23}            |
+| 1     | /ifd/gps/{ushort=23}            |
 | 2     | /ifd/xmp/exif:gpsdestbearingref |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md)
+[System.GPS.DestBearingRef](../properties/props-system-gps-destbearingref.md)
 </dt> </dl>
 
  

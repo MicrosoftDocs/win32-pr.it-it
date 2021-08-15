@@ -1,7 +1,7 @@
 ---
-description: "Segnala quanto segue: le metriche disponibili per la raccolta per tutte le istanze di una classe CIM, le classi CIM per le quali è possibile raccogliere una metrica definita da un'istanza di CIM BaseMetricDefinition e se una metrica specifica è attualmente raccolta per un elemento \\_ gestito."
+description: "Segnala quanto segue: le metriche disponibili per la raccolta per tutte le istanze di una classe CIM, le classi CIM per le quali è disponibile per la raccolta una metrica definita da un'istanza di CIM BaseMetricDefinition e se è in corso la raccolta di una particolare metrica per un elemento \\_ gestito."
 ms.assetid: 0115a5b5-2824-4c43-a8dc-757524c5d3dd
-title: Metodo ShowMetricsByClass della classe CIM_MetricService
+title: Metodo ShowMetricsByClass della CIM_MetricService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "119694951"
 ---
 # <a name="showmetricsbyclass-method-of-the-cim_metricservice-class"></a>Metodo ShowMetricsByClass della classe \_ CIM MetricService
 
-Segnala quanto segue: le metriche disponibili per la raccolta per tutte le istanze di una classe CIM, le classi CIM per le quali è possibile raccogliere una metrica definita da un'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) e se una metrica specifica è attualmente raccolta per un elemento gestito.
+Segnala quanto segue: le metriche disponibili per la raccolta per tutte le istanze di una classe CIM, le classi CIM per le quali è disponibile per la raccolta una metrica definita da un'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) e se è in corso la raccolta di una particolare metrica per un elemento gestito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,28 +46,28 @@ uint32 ShowMetricsByClass(
 *Oggetto* \[ Pollici\]
 </dt> <dd>
 
-Identifica una classe CIM per cui il metodo restituisce riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per l'acquisizione per tutte le istanze della classe.
+Identifica una classe CIM per la quale il metodo restituisce riferimenti a istanze di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per l'acquisizione per tutte le istanze della classe.
 
 </dd> <dt>
 
 *Definizione* \[ Pollici\]
 </dt> <dd>
 
-Identifica un'istanza di [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) Il metodo restituisce riferimenti a istanze [**di CIM \_ ManagedElement**](cim-managedelement.md) per le quali le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** sono disponibili per la raccolta.
+Identifica un'istanza di [**CIM \_ BaseMetricDefinition.**](cim-basemetricdefinition.md) Il metodo restituisce riferimenti a istanze di [**CIM \_ ManagedElement**](cim-managedelement.md) per le quali le metriche definite dall'istanza di **CIM \_ BaseMetricDefinition** sono disponibili per la raccolta.
 
 </dd> <dt>
 
-*DefinitionList* \[ Cambio\]
+*Elenco definizioni* \[ Cambio\]
 </dt> <dd>
 
-In caso di esito positivo, può contenere riferimenti a istanze [**di oggetti CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per [**CIM \_ ManagedElement**](cim-managedelement.md) identificato dal *parametro Subject.*
+In caso di esito positivo, può contenere riferimenti a istanze di oggetti [**\_ CiM BaseMetricDefinition**](cim-basemetricdefinition.md) che definiscono le metriche disponibili per la raccolta per [**l'elemento \_ CIM ManagedElement**](cim-managedelement.md) identificato dal *parametro Subject.*
 
 </dd> <dt>
 
 *MetricNames* \[ Cambio\]
 </dt> <dd>
 
-In caso di esito positivo, ogni indice di matrice deve contenere il valore della proprietà **Name** per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice di matrice corrispondente del *parametro DefinitionList.*
+In caso di esito positivo, ogni indice di matrice deve contenere il valore della proprietà **Name** per l'istanza di [**CIM \_ BaseMetricDefinition**](cim-basemetricdefinition.md) a cui fa riferimento l'indice di matrice corrispondente *del parametro DefinitionList.*
 
 </dd> <dt>
 
@@ -101,21 +101,21 @@ Indica se viene raccolta una metrica per tutte le istanze di una classe di eleme
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF riservato** (..)
+**DmTF Reserved** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornitore riservato** (32768..65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 <dl> <dt>
 

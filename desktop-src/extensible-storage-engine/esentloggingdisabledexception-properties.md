@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: EsentLoggingDisabledException Properties'
+description: Altre informazioni sulle proprietà di EsentLoggingDisabledException
 title: Proprietà di EsentLoggingDisabledException
 TOCTitle: EsentLoggingDisabledException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentLoggingDisabledException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102205
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b7f75ff43f026c028da83e9b8e7d940f8613d0ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39f9c2e019502a53c4849837142ab899a576886f1efd3d9161a36254adc75863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982131"
 ---
 # <a name="esentloggingdisabledexception-properties"></a>Proprietà di EsentLoggingDisabledException
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo [EsentLoggingDisabledException](./esentloggingdisabledexception-class.md) espone i membri seguenti.
+Il [tipo EsentLoggingDisabledException](./esentloggingdisabledexception-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,47 +35,47 @@ Il tipo [EsentLoggingDisabledException](./esentloggingdisabledexception-class.md
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Dati</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Error (Errore) (Error (Errore)e)</a></td>
-<td>Ottiene l'errore ESENT sottostante per questa eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.</td>
+<td>Ottiene l'errore Esent sottostante per questa eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Hresult</a></td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.innerexception#System_Exception_InnerException">InnerException</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.message#System_Exception_Message">Messaggio</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.source#System_Exception_Source">Origine</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Stacktrace</a></td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="/dotnet/api/system.exception.targetsite#System_Exception_TargetSite">TargetSite</a></td>
-<td>(Ereditato da <a href="/dotnet/api/system.exception">Exception</a>).</td>
+<td>Ereditato <a href="/dotnet/api/system.exception">dall'eccezione</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -89,4 +89,4 @@ Inizio
 
 [Classe EsentLoggingDisabledException](./esentloggingdisabledexception-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

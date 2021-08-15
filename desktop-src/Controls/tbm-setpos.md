@@ -1,9 +1,9 @@
 ---
 title: TBM_SETPOS messaggio (Commctrl.h)
-description: 'TBM_SETPOS: imposta la posizione logica corrente del dispositivo di scorrimento in un trackbar.'
+description: 'TBM_SETPOS messaggio: imposta la posizione logica corrente del dispositivo di scorrimento in un trackbar.'
 ms.assetid: df6c4e5d-2847-419d-82b5-334d53bb6ba1
 keywords:
-- TBM_SETPOS di windows del messaggio
+- TBM_SETPOS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f10e05a677119f18489d0eb9eebc4528d3ad115
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3ccd1cb35f8cde672c51baafe5623291e5449f90aa118eb36cb12152fe155385
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078045"
 ---
 # <a name="tbm_setpos-message"></a>Messaggio \_ SETPOS TBM
 
@@ -39,7 +39,7 @@ Flag di ridisegno. Se questo parametro è **TRUE,** il messaggio ridisegna il co
 *lParam* 
 </dt> <dd>
 
-Nuova posizione logica del dispositivo di scorrimento. Le posizioni logiche valide sono i valori interi nell'intervallo di posizioni del dispositivo di scorrimento minimo e massimo del trackbar. Se questo valore non rientra nell'intervallo massimo e minimo del controllo, la posizione viene impostata sul valore massimo o minimo.
+Nuova posizione logica del dispositivo di scorrimento. Le posizioni logiche valide sono i valori interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar. Se questo valore non rientra nell'intervallo massimo e minimo del controllo, la posizione viene impostata sul valore massimo o minimo.
 
 </dd> </dl>
 
@@ -53,8 +53,8 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

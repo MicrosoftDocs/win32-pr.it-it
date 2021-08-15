@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXVec2Hermite (D3DX10Math.h): esegue un'interpolazione spline hermite, usando i vettori 2D specificati."
+description: "Funzione D3DXVec2Hermite (D3DX10Math.h): esegue un'interpolazione spline hermite usando i vettori 2D specificati."
 ms.assetid: 2d6ff836-a1a7-4cd0-aea3-4fe344f4e211
 title: Funzione D3DXVec2Hermite (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e64350d4f54fef493ec7fe935474218a1b111503
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60e4aef5183e7c107b0853794b9e63c288916763daa4784e21241d55c1bfec89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990711"
 ---
 # <a name="d3dxvec2hermite-function-d3dx10mathh"></a>Funzione D3DXVec2Hermite (D3DX10Math.h)
 
-Esegue un'interpolazione spline hermite, usando i vettori 2D specificati.
+Esegue un'interpolazione spline hermite usando i vettori 2D specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -111,7 +111,7 @@ La **funzione D3DXVec2Hermite** interpola da (positionA, tangentA) a (positionB,
 
 L'interpolazione spline è una generalizzazione della spline ease-in e ease-out. La rampa è una funzione di Q(s) con le proprietà seguenti.
 
-Q(s) = As³ + Bs² + Cs + D (e quindi, Q(s) = 3As² + 2Bs + C)
+Q(s) = As² + Bs² + Cs + D (e pertanto, Q(s) = 3As² + 2Bs + C)
 
 a) Q(0) = v1, quindi Q'(0) = t1
 

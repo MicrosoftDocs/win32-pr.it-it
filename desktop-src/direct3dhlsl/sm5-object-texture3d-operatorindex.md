@@ -1,9 +1,9 @@
 ---
-title: 'Funzione Texture3D:: operator'
-description: 'Restituisce una variabile di risorsa di sola lettura. | Funzione Texture3D:: operator'
+title: Funzione Texture3D::Operator
+description: Restituisce una variabile di risorsa di sola lettura. | Funzione Texture3D::Operator
 ms.assetid: d7e27778-6a96-47f8-a58a-1966452adf04
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5c3bb3718094ee859d1e33a046fde7016973a0aa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d701e5f9ba46d17c305fda0a936700e10a1348440e55c913537f2a2d00a5c57c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103761723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985701"
 ---
-# <a name="texture3doperator--function"></a>Funzione Texture3D:: operator
+# <a name="texture3doperator--function"></a>Funzione Texture3D::Operator
 
 Restituisce una variabile di risorsa di sola lettura.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -49,17 +49,17 @@ Posizione dell'indice. Contiene le coordinate (x, y, z).
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo accede sempre al primo livello MIP. Per specificare altri livelli MIP, usare invece l' [**operatore \[ \] \[ \] MIP.**](sm5-object-texture3d-mipsoperatorindex.md)
+Questo metodo accede sempre al primo livello mip. Per specificare altri livelli mip, usare [**invece \[ \] \[ \] mip.operator.**](sm5-object-texture3d-mipsoperatorindex.md)
 
 Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -74,7 +74,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture3D](sm5-object-texture3d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 58de9d1b2a88a7fa02504f5eac91e9a55e286304
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e32043747b7493d8f59b2028587d60b5b9593a73ac60bf99a81beea8b5c97ae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104483349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080195"
 ---
-# <a name="copy-method-of-the-win32_shortcutfile-class"></a>Metodo Copy della classe Win32 \_ ShortcutFile
+# <a name="copy-method-of-the-win32_shortcutfile-class"></a>Metodo Copy della classe ShortcutFile Win32 \_
 
-Il metodo **Copy** [WMI class](/windows/desktop/WmiSdk/retrieving-a-class) copia il file di collegamento logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
+Il **metodo Copia** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia il file di collegamento logico o la directory specificata nel percorso dell'oggetto nel percorso specificato dal parametro di input. Una copia non è supportata se è necessario sovrascrivere un file logico esistente.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+In questo argomento viene Managed Object Format sintassi MOF (Managed Object Format). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,12 +42,12 @@ uint32 Copy(
 
 <dl> <dt>
 
-*Nome file* \[ in\]
+*FileName* \[ Pollici\]
 </dt> <dd>
 
 Nome completo della copia del file (o directory).
 
-Esempio: c: \\ temp \\ NewDirectory
+Esempio: c: \\ temp \\ newdirectory
 
 </dd> </dl>
 
@@ -130,7 +130,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ShortcutFile Win32**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

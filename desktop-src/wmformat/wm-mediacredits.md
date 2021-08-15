@@ -1,9 +1,9 @@
 ---
 title: WM/MediaCredits
-description: L'attributo WM/MediaCredits contiene i crediti per i supporti di broadcast.
+description: L'attributo WM/MediaCredits contiene i crediti per i supporti di trasmissione.
 ms.assetid: 2ad91dc7-3ebc-403b-9096-ebb8087d7c8e
 keywords:
-- Formato di Windows Media WM/MediaCredits
+- WM/MediaCredits windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad132522e193e517d6627b34ea679c871100c109
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7a242f477954f863f041c8f98b402a539ea30c24eae426c523a900072c0ea530
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083976"
 ---
 # <a name="wmmediacredits"></a>WM/MediaCredits
 
-L'attributo **WM/MediaCredits** contiene i crediti per i supporti di broadcast.
+**L'attributo WM/MediaCredits** contiene i crediti per i supporti di trasmissione.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaCredits
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene usato per trasmissioni televisive o radio.
+Questo attributo viene usato per la trasmissione di programmi televisivi o radio.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,9 +42,9 @@ Questo attributo viene usato per trasmissioni televisive o radio.
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

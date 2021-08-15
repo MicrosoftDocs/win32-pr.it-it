@@ -1,26 +1,26 @@
 ---
-description: Nell'esempio di codice seguente viene illustrata la gestione di nuove notifiche di chiamata, ad esempio la ricerca o la creazione di terminali appropriati per il rendering del supporto.
+description: Nell'esempio di codice seguente viene illustrata la gestione delle nuove notifiche di chiamata, ad esempio la ricerca o la creazione di terminali appropriati per il rendering del contenuto multimediale.
 ms.assetid: 77f6e1b5-b60e-4e8d-b747-7eceae8b0611
 title: Ricevere una chiamata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6a78ebf5b77569f8468a8b2c0a30217f4f7430e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e4ce02ec11a1373d16b9b9ebd0fba29313b1d532175894c6fd1b12a38e2bf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060469"
 ---
 # <a name="receive-a-call"></a>Ricevere una chiamata
 
-Nell'esempio di codice seguente viene illustrata la gestione di nuove notifiche di chiamata, ad esempio la ricerca o la creazione di terminali appropriati per il rendering del supporto. Questo esempio è una parte dell'istruzione switch che deve essere implementata da un'applicazione per la gestione degli eventi. Il codice può essere contenuto nell'implementazione di [**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)oppure il metodo **Event** può inviare un messaggio a un thread di lavoro che contiene l'opzione.
+Nell'esempio di codice seguente viene illustrata la gestione delle nuove notifiche di chiamata, ad esempio la ricerca o la creazione di terminali appropriati per il rendering del contenuto multimediale. Questo esempio è una parte dell'istruzione switch che un'applicazione deve implementare per la gestione degli eventi. Il codice stesso può essere contenuto nell'implementazione di [**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)oppure il metodo **Event** può inviare un messaggio a un thread di lavoro che contiene l'opzione .
 
-Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [Initialize TAPI](initialize-tapi.md), [selezionare un indirizzo](select-an-address.md)e [registrare gli eventi](register-events.md).
+Prima di usare questo esempio di codice, è necessario eseguire le operazioni in [Inizializza TAPI,](initialize-tapi.md) [Selezionare un indirizzo](select-an-address.md)e [Registrare eventi](register-events.md).
 
-Inoltre, è necessario eseguire le operazioni illustrate in [selezionare un terminale](select-a-terminal.md) dopo il recupero dei puntatori dell'interfaccia [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress) .
+È inoltre necessario eseguire le operazioni illustrate in Selezionare un [terminale](select-a-terminal.md) dopo il recupero dei puntatori all'interfaccia [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) [**e ITAddress.**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress)
 
 > [!Note]  
-> Questo esempio non include il controllo degli errori e le versioni appropriate per il codice di produzione.
+> In questo esempio non sono disponibili il controllo degli errori e le versioni appropriate per il codice di produzione.
 
  
 

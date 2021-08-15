@@ -1,21 +1,21 @@
 ---
-description: Se questo bit è impostato, il testo viene sostituito da un'immagine dell'icona e la colonna di testo nella tabella del controllo è una chiave esterna nella tabella binaria.
+description: Se questo bit è impostato, il testo viene sostituito da un'immagine icona e la colonna Text nella tabella Control è una chiave esterna nella tabella Binary.
 ms.assetid: 5eefdfcb-89a5-4885-bab0-6409ef3ce349
 title: Attributo del controllo Icon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e60c19674ac26f108109fad04e0836ed8dfeba6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2caeb407b86b888a5dd3b1c08f16d0893233f82cec29b92519c267b286ea121
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315121"
 ---
 # <a name="icon-control-attribute"></a>Attributo del controllo Icon
 
-Se questo bit è impostato, il testo viene sostituito da un'immagine dell'icona e la colonna di testo nella [tabella del controllo](control-table.md) è una chiave esterna nella [tabella binaria](binary-table.md).
+Se questo bit è impostato, il testo viene sostituito da un'immagine icona e la colonna Text nella tabella [Control](control-table.md) è una chiave esterna nella [tabella Binary](binary-table.md).
 
-Se questo bit non è impostato, il testo nel controllo viene specificato nella colonna di testo della [tabella dei controlli](control-table.md).
+Se questo bit non è impostato, il testo nel controllo viene specificato nella colonna Text della [tabella Control](control-table.md).
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -39,13 +39,13 @@ Se questo bit non è impostato, il testo nel controllo viene specificato nella c
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere i bit dell'icona nella colonna attributi del record del controllo nella tabella del [controllo](control-table.md).
+Per impostare questo attributo in un controllo, includere i bit icona nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
 
-La colonna di testo nella tabella dei controlli viene utilizzata come chiave esterna per la [tabella binaria](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che un testo.
+La colonna Text nella tabella Control viene usata come chiave esterna per la tabella [Binary](binary-table.md), pertanto il controllo non può contenere sia un'immagine icona che un testo.
 
-Non impostare sia l'icona che i bit [bitmap](bitmap-control-attribute.md) .
+Non impostare i bit Icona [e Bitmap.](bitmap-control-attribute.md)
 
-Vedere [gli attributi del controllo](control-attributes.md) e il controllo che è necessario creare sotto i [controlli](controls.md).
+Vedere [Attributi di controllo](control-attributes.md) e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

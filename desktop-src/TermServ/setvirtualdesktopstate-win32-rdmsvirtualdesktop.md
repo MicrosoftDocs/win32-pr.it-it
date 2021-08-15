@@ -1,12 +1,12 @@
 ---
-title: Metodo SetVirtualDesktopState della classe Win32_RDMSVirtualDesktop
+title: Metodo SetVirtualDesktopState della Win32_RDMSVirtualDesktop classe
 description: Aggiorna lo stato del desktop virtuale.
 ms.assetid: 8f4f3d31-0434-4018-a33a-2ffd62c09669
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetVirtualDesktopState
-- Metodo SetVirtualDesktopState Servizi Desktop remoto, classe Win32_RDMSVirtualDesktop
-- Classe Win32_RDMSVirtualDesktop Servizi Desktop remoto, metodo SetVirtualDesktopState
+- Metodo SetVirtualDesktopState Servizi Desktop remoto
+- Metodo SetVirtualDesktopState Servizi Desktop remoto , Win32_RDMSVirtualDesktop classe
+- Win32_RDMSVirtualDesktop classe Servizi Desktop remoto, metodo SetVirtualDesktopState
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af913e29857a59cacf283bff6a1642e0ea4cef9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8b970f70996d5052674949f7ae6c89d71cbf69dc0ac90df46caaf975f8a1e279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058439"
 ---
-# <a name="setvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetVirtualDesktopState della \_ classe RDMSVirtualDesktop Win32
+# <a name="setvirtualdesktopstate-method-of-the-win32_rdmsvirtualdesktop-class"></a>Metodo SetVirtualDesktopState della classe \_ RDMSVirtualDesktop Win32
 
 Aggiorna lo stato del desktop virtuale.
 
@@ -43,23 +43,23 @@ uint32 SetVirtualDesktopState(
 
 <dl> <dt>
 
-*VMState* \[ in\]
+*VMState* \[ Pollici\]
 </dt> <dd>
 
 Valore che specifica il nuovo stato della macchina virtuale.
 
-Questo parametro può scommettere su uno dei valori seguenti:
+Questo parametro può essere impostato su uno dei valori seguenti:
 
 <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0 (impostazione predefinita))
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Sconosciuto** (0 (impostazione predefinita))
 
 
 </dt> <dd>
 
-Non è stato possibile determinare lo stato della macchina virtuale.
+Impossibile determinare lo stato della macchina virtuale.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ La macchina virtuale è disattivata.
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**Sospeso** (32768)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**In pausa** (32768)
 
 
 </dt> <dd>
@@ -103,13 +103,13 @@ La macchina virtuale è sospesa.
 
 </dt> <dd>
 
-La macchina virtuale si trova in uno stato salvato.
+La macchina virtuale è in uno stato salvato.
 
 </dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Avvio** di (32770)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A** partire da (32770)
 
 
 </dt> <dd>
@@ -125,18 +125,18 @@ Avvio della macchina virtuale in corso.
 
 </dt> <dd>
 
-Lo stato della macchina virtuale è salvato.
+La macchina virtuale sta salvando lo stato.
 
 </dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Arresto** in corso (32774)
+<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Arresto** (32774)
 
 
 </dt> <dd>
 
-La macchina virtuale è disattivata.
+La macchina virtuale è in stato di spegnimento.
 
 </dd> <dt>
 
@@ -153,12 +153,12 @@ La macchina virtuale è in pausa.
 
 <span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>
 
-<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Ripresa** in (32777)
+<span id="Resuming"></span><span id="resuming"></span><span id="RESUMING"></span>**Ripresa** (32777)
 
 
 </dt> <dd>
 
-La macchina virtuale riprende da uno stato di sospensione.
+La macchina virtuale sta riprendendo da uno stato di sospensione.
 
 </dd> </dl> </dd> </dl>
 
@@ -174,8 +174,8 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ RDBMS<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -184,7 +184,7 @@ Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktop Win32**](win32-rdmsvirtualdesktop.md)
+[**Win32 \_ RDMSVirtualDesktop**](win32-rdmsvirtualdesktop.md)
 </dt> </dl>
 
  

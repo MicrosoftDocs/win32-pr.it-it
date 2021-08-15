@@ -1,6 +1,6 @@
 ---
 title: Attributo CRL-Partitioned-Revocation-List
-description: Infrastruttura a chiave pubblica \ 8211;elenchi di revoche.
+description: Infrastruttura a chiave pubblica \ 8211; elenchi di revoche.
 ms.assetid: ecee7ee6-21e7-4861-a7f5-5e8e3579978a
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "119706741"
 ---
 # <a name="crl-partitioned-revocation-list-attribute"></a>Attributo CRL-Partitioned-Revocation-List
 
-Elenchi di revoche di infrastruttura a chiave pubblica.
+Elenchi di revoche dell'infrastruttura a chiave pubblica.
 
 
 
@@ -32,7 +32,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | CN                | CRL-Partitioned-Revocation-List                       |
 | Ldap-Display-Name | cRLPartitionedRevocationList                          |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.683                                |
 | System-Id-Guid    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
@@ -58,7 +58,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Is-Single-Valued       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -66,7 +66,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Is-Single-Valued       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -87,7 +87,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Is-Single-Valued       | Vero                                                                |
+| A valore singolo       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -108,7 +108,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classi usate in        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classi usate in        | [**Punto di distribuzione CRL**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -142,7 +142,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
@@ -163,7 +163,7 @@ Elenchi di revoche di infrastruttura a chiave pubblica.
 | ID collegamento                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| A valore singolo       | Vero                                                                |
+| Is-Single-Valued       | Vero                                                                |
 | Indicizzato             | Falso                                                               |
 | Nel catalogo globale      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                        |

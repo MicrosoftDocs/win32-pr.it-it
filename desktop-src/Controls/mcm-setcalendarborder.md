@@ -1,9 +1,9 @@
 ---
 title: MCM_SETCALENDARBORDER messaggio (Commctrl.h)
-description: Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro MonthCal SetCalendarBorder.
+description: Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio in modo esplicito o tramite la \_ macro MonthCal SetCalendarBorder.
 ms.assetid: 2a64a08f-a1fb-47a8-8f09-725807e87a03
 keywords:
-- MCM_SETCALENDARBORDER controlli Windows messaggio
+- MCM_SETCALENDARBORDER di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119697201"
 ---
-# <a name="mcm_setcalendarborder-message"></a>MESSAGGIO \_ DI MCM SETCALENDARBORDER
+# <a name="mcm_setcalendarborder-message"></a>Messaggio \_ MCM SETCALENDARBORDER
 
-Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ MonthCal SetCalendarBorder.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalendarborder)
+Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**\_ MonthCal SetCalendarBorder.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalendarborder)
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Imposta le dimensioni del bordo, in pixel. È possibile inviare questo messaggio
 *wParam* 
 </dt> <dd>
 
-Se **TRUE,** le dimensioni del bordo vengono impostate sul numero di pixel specificato *da lParam.* Se **FALSE,** le dimensioni del bordo vengono reimpostate sul valore predefinito specificato dal tema oppure su zero se i temi non vengono usati.
+Se **TRUE,** le dimensioni del bordo vengono impostate sul numero di pixel specificato *da lParam.* Se **FALSE,** le dimensioni del bordo vengono reimpostate sul valore predefinito specificato dal tema oppure zero se i temi non vengono usati.
 
 </dd> <dt>
 
@@ -53,8 +53,8 @@ Non usato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_SETWINDOWTHEME (COMmctrl. h)
+title: RB_SETWINDOWTHEME messaggio (Commctrl.h)
 description: Imposta lo stile di visualizzazione di un controllo Rebar.
 ms.assetid: 5b32b354-3e25-4d02-9334-cc57acf41a73
 keywords:
-- Controlli di Windows Message RB_SETWINDOWTHEME
+- RB_SETWINDOWTHEME del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e136562394d26dd56d8d4c0c9ae916948144dbb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea2def8b1e4e1961ab549468260760d80182e466e44841fbbb767929a8033893
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078550"
 ---
-# <a name="rb_setwindowtheme-message"></a>\_Messaggio SETWINDOWTHEME RB
+# <a name="rb_setwindowtheme-message"></a>Messaggio RB \_ SETWINDOWTHEME
 
 Imposta lo stile di visualizzazione di un controllo Rebar.
 
@@ -35,7 +35,7 @@ Imposta lo stile di visualizzazione di un controllo Rebar.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una stringa Unicode che contiene lo stile di visualizzazione Rebar da impostare.
+Puntatore a una stringa Unicode che contiene lo stile di visualizzazione rebar da impostare.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ Il valore restituito non viene utilizzato.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario specificare un manifesto Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ Il valore restituito non viene utilizzato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

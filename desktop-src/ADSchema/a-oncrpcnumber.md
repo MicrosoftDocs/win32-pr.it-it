@@ -1,6 +1,6 @@
 ---
-title: attributo oncRpcNumber
-description: Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
+title: Attributo oncRpcNumber
+description: Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 ms.assetid: c824d740-5c68-4fce-93f3-01ac52b47e5b
 ms.tgt_platform: multiple
 keywords:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2394395f7be9a9f5f9dfe1fd312dcf4f8957c4d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0ea1416fb950a4b666be16f8848cc89d4c63bd4108e41a5e55a0450f8622d59e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442171"
 ---
-# <a name="oncrpcnumber-attribute"></a>attributo oncRpcNumber
+# <a name="oncrpcnumber-attribute"></a>Attributo oncRpcNumber
 
-Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
+Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | oncRpcNumber                         |
-| LDAP-Display-Name | oncRpcNumber                         |
+| Ldap-Display-Name | oncRpcNumber                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.18                     |
-| System-ID-GUID    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
+| System-Id-Guid    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**oncRpc**](c-oncrpc.md)<br/> |
+| Classi usate in        | [**oncRpc**](c-oncrpc.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**oncRpc**](c-oncrpc.md)<br/> |
+| Classi usate in        | [**oncRpc**](c-oncrpc.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**oncRpc**](c-oncrpc.md)<br/> |
+| Classi usate in        | [**oncRpc**](c-oncrpc.md)<br/> |
 
 
 
@@ -118,15 +118,15 @@ Contiene parte della mappa RPC e archivia il numero RPC per le RPC UNIX.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| È a valore singolo       | Vero                                  |
+| A valore singolo       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000000                            |
-| Classi utilizzate in        | [**oncRpc**](c-oncrpc.md)<br/> |
+| Classi usate in        | [**oncRpc**](c-oncrpc.md)<br/> |
 
 
 

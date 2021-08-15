@@ -1,7 +1,7 @@
 ---
-description: Il metodo Exit segnala al thread di streaming di uscire.
+description: Il metodo Exit segnala la chiusura del thread di streaming.
 ms.assetid: 1bb59848-e405-40f9-87ec-33de8754e2dd
-title: Metodo CSourceStream. Exit (source. h)
+title: Metodo CSourceStream.Exit (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1ede6cf2318fa9226b8e220ff526f411def9b0f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2c1c0de67eaa1067a4c72f3500674dddef65ddbb11af1b520973120d2df3c00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687431"
 ---
-# <a name="csourcestreamexit-method"></a>Metodo CSourceStream. Exit
+# <a name="csourcestreamexit-method"></a>Metodo CSourceStream.Exit
 
-Il `Exit` metodo segnala al thread di streaming di uscire.
+Il `Exit` metodo segnala la chiusura del thread di streaming.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce S \_ OK o e \_ imprevisto.
+Restituisce S \_ OK o E \_ UNEXPECTED.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CSourceStream:: inactive**](csourcestream-inactive.md) chiama questo metodo.
+Il [**metodo CSourceStream::Inactive**](csourcestream-inactive.md) chiama questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Il metodo [**CSourceStream:: inactive**](csourcestream-inactive.md) chiama quest
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Source. h (Includi Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Source.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

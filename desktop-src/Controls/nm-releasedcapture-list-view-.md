@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica NM_RELEASEDCAPTURE (visualizzazione elenco) (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: NM_RELEASEDCAPTURE (visualizzazione elenco) codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: a43879d9-1465-4c25-936f-cda9b8b8b465
 keywords:
-- Codice di notifica NM_RELEASEDCAPTURE (visualizzazione elenco) controlli Windows
+- NM_RELEASEDCAPTURE di notifica (visualizzazione elenco) Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f42af9dddf6f9864251eff5e2f5a6aebbfa9cd20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d75717f937c94b4ba19cd78490b0cf9254394dfc7a6766352a9a535ee7405275
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319071"
 ---
-# <a name="nm_releasedcapture-list-view-notification-code"></a>\_Codice di notifica di RELEASEDCAPTURE Nm (visualizzazione elenco)
+# <a name="nm_releasedcapture-list-view-notification-code"></a>Codice di notifica NM \_ RELEASEDCAPTURE (visualizzazione elenco)
 
-Notifica alla finestra padre di un controllo di visualizzazione elenco che il controllo sta rilasciando l'acquisizione del mouse. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione elenco che il controllo sta rilasciando mouse capture. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
+Puntatore a [**una struttura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) che contiene informazioni aggiuntive su questa notifica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il controllo Ignora il valore restituito da questo codice di notifica.
+Il controllo ignora il valore restituito da questo codice di notifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,9 +55,9 @@ Il controllo Ignora il valore restituito da questo codice di notifica.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

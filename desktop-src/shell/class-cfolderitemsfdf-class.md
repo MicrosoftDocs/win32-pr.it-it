@@ -12,20 +12,20 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: 7da6ebdf-dced-402f-a8ad-c10d78593f86
-ms.openlocfilehash: c303af68fe0e83fd8c1a5b20411445c8626987a6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a581e046031e88c38ab2db45d5ac563abaec8e4ebfe9ae54b58dfdffdc946563
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444391"
 ---
 # <a name="cfolderitemsfdf-class"></a>Classe CFolderItemsFDF
 
-**CFolderItemsFDF** è una raccolta [**di FolderItems.**](folderitems.md) Implementa [**l'interfaccia IInsertItem.**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem)
+**CFolderItemsFDF è** una raccolta di [**FolderItems.**](folderitems.md) Implementa [**l'interfaccia IInsertItem.**](/windows/desktop/api/Shobjidl/nn-shobjidl-iinsertitem)
 
 ## <a name="members"></a>Membri
 
-La **classe CFolderItemsFDF** eredita [**da CFolderItems,**](class-cfolderitems-class.md) ma non dispone di membri aggiuntivi.
+La **classe CFolderItemsFDF** eredita da [**CFolderItems,**](class-cfolderitems-class.md) ma non dispone di membri aggiuntivi.
 
 ## <a name="remarks"></a>Commenti
 

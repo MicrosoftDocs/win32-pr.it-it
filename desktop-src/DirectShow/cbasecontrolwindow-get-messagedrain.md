@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get MessageDrain recupera lo svuotamento del messaggio corrente.
+description: Il metodo get \_ MessageDrain recupera lo svuotamento dei messaggi corrente.
 ms.assetid: d679e7f7-4628-479b-b722-843cdd91ffe6
-title: Metodo CBaseControlWindow.get_MessageDrain (Ctlutil. h)
+title: CBaseControlWindow.get_MessageDrain metodo (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aaf51c3f4297f238e51bbe8677303730c04b89d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9a1e63e96950093bb7cc5760032d0b1f622c5df93a6f31673c595f54e5ea8e70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017399"
 ---
-# <a name="cbasecontrolwindowget_messagedrain-method"></a>Metodo CBaseControlWindow. Get \_ MessageDrain
+# <a name="cbasecontrolwindowget_messagedrain-method"></a>Metodo CBaseControlWindow.get \_ MessageDrain
 
-Il `get_MessageDrain` metodo recupera lo svuotamento del messaggio corrente.
+Il `get_MessageDrain` metodo recupera lo svuotamento dei messaggi corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ HRESULT get_MessageDrain(
 
 <dl> <dt>
 
-*Scarico* 
+*Drenaggio* 
 </dt> <dd>
 
 Puntatore alla finestra corrente che riceve i messaggi della finestra.
@@ -51,11 +51,11 @@ Puntatore alla finestra corrente che riceve i messaggi della finestra.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore **HRESULT** .
+Restituisce un **valore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-I messaggi inviati al filtro renderer video possono essere inseriti in un'altra finestra. La finestra registrata per ricevere questi messaggi (usando la funzione membro **CBaseControlWindow:: Get \_ MessageDrain** ) è lo svuotamento del messaggio corrente.
+I messaggi inviati al filtro del renderer video possono essere inviati a un'altra finestra. La finestra registrata per ricevere questi messaggi (usando la funzione membro **CBaseControlWindow::get \_ MessageDrain)** è lo svuotamento dei messaggi corrente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ I messaggi inviati al filtro renderer video possono essere inseriti in un'altra 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

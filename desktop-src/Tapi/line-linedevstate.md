@@ -1,19 +1,19 @@
 ---
-description: Il messaggio della linea TAPI \_ LINEDEVSTATE viene inviato quando lo stato di un dispositivo a linee è cambiato. L'applicazione può richiamare lineGetLineDevStatus per determinare il nuovo stato della riga.
+description: Il messaggio TAPI LINE \_ LINEDEVSTATE viene inviato quando lo stato di un dispositivo line è stato modificato. L'applicazione può richiamare lineGetLineDevStatus per determinare il nuovo stato della riga.
 ms.assetid: 15f616de-db47-4577-9a47-94f9292253dd
-title: Messaggio di LINE_LINEDEVSTATE (TAPI. h)
+title: LINE_LINEDEVSTATE messaggio (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 079e4494b7eb2e1bfe46b5470138e4e9f44fbb0b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 261e7527354b84801437e48ffc13ba4dbad60ced0cca61be65eb96ce6417bb10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682389"
 ---
-# <a name="line_linedevstate-message"></a>\_Messaggio linea LINEDEVSTATE
+# <a name="line_linedevstate-message"></a>Line \_ LINEDEVSTATE message
 
-Il messaggio della **linea TAPI \_ LINEDEVSTATE** viene inviato quando lo stato di un dispositivo a linee è cambiato. L'applicazione può richiamare [**lineGetLineDevStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetlinedevstatus) per determinare il nuovo stato della riga.
+Il messaggio TAPI **LINE \_ LINEDEVSTATE** viene inviato quando lo stato di un dispositivo linea è stato modificato. L'applicazione può richiamare [**lineGetLineDevStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetlinedevstatus) per determinare il nuovo stato della riga.
 
 
 ```C++
@@ -29,39 +29,39 @@ Il messaggio della **linea TAPI \_ LINEDEVSTATE** viene inviato quando lo stato 
 *hDevice* 
 </dt> <dd>
 
-Handle per il dispositivo della linea. Questo parametro è **null** se *dwParam1* è LINEDEVSTATE \_ reinit.
+Handle per il dispositivo di linea. Questo parametro è **NULL quando** *dwParam1* è LINEDEVSTATE \_ REINIT.
 
 </dd> <dt>
 
 *dwCallbackInstance* 
 </dt> <dd>
 
-Istanza di callback fornita all'apertura della riga. Se il parametro *dwParam1* è LINEDEVSTATE \_ reinit, il parametro *dwCallbackInstance* non è valido e è impostato su zero.
+Istanza di callback fornita all'apertura della riga. Se il *parametro dwParam1* è LINEDEVSTATE \_ REINIT, *il parametro dwCallbackInstance* non è valido e viene impostato su zero.
 
 </dd> <dt>
 
 *dwParam1* 
 </dt> <dd>
 
-Elemento di stato del dispositivo di linea modificato. Il parametro può essere costituito da una o [**più \_ costanti LINEDEVSTATE**](linedevstate--constants.md).
+Elemento di stato del dispositivo linea che è stato modificato. Il parametro può essere una o più costanti [**LINEDEVSTATE \_**](linedevstate--constants.md).
 
 </dd> <dt>
 
 *dwParam2* 
 </dt> <dd>
 
-L'interpretazione di questo parametro dipende dal valore di *dwParam1*. Se *dwParam1* è LINEDEVSTATE \_ Ringing, *dwParam2* contiene la modalità ring con cui l'opzione indica alla riga di squillare. Le modalità anello valide sono numeri nell'intervallo da uno a **dwNumRingModes**, dove **dwNumRingModes** è una funzionalità di dispositivo linea.
+L'interpretazione di questo parametro dipende dal valore *di dwParam1*. Se *dwParam1* è LINEDEVSTATE \_ RINGING, *dwParam2* contiene la modalità anello con cui l'opzione indica alla riga di eseguire l'anello. Le modalità anello valide sono numeri nell'intervallo da uno a **dwNumRingModes,** dove **dwNumRingModes** è una funzionalità del dispositivo linea.
 
-Se *dwParam1* è LINEDEVSTATE \_ reinit e il messaggio è stato emesso da TAPI come risultato della conversione di un nuovo messaggio API in un messaggio reinit, *DwParam2* contiene il parametro *dwMsg* del messaggio originale (ad esempio, [**riga \_ creazione**](line-create.md) o riga \_ LINEDEVSTATE). Se *dwParam2* è zero, questo indica che il messaggio reinit è un messaggio "Real" reinit che richiede che l'applicazione chiami [**lineShutdown**](/windows/desktop/api/Tapi/nf-tapi-lineshutdown) alla prima convenienza.
+Se *dwParam1* è LINEDEVSTATE REINIT e il messaggio è stato emesso da TAPI come risultato della conversione di un nuovo messaggio API in un messaggio \_ REINIT, *dwParam2* contiene il *parametro dwMsg* del messaggio originale,ad esempio [**LINE \_ CREATE**](line-create.md) o LINE \_ LINEDEVSTATE. Se *dwParam2* è zero, significa che il messaggio REINIT è un messaggio REINIT "reale" che richiede all'applicazione di chiamare [**lineShutdown**](/windows/desktop/api/Tapi/nf-tapi-lineshutdown) al più presto.
 
 </dd> <dt>
 
 *dwParam3* 
 </dt> <dd>
 
-L'interpretazione di questo parametro dipende dal valore di *dwParam1*. Se *dwParam1* è LINEDEVSTATE \_ Ringing, *dwParam3* contiene il numero di squilli per questo evento ring. Il numero di squilli inizia da zero.
+L'interpretazione di questo parametro dipende dal valore *di dwParam1*. Se *dwParam1 è* LINEDEVSTATE \_ RINGING, *dwParam3* contiene il numero di anelli per questo evento circolare. Il conteggio degli anelli inizia da zero.
 
-Se *dwParam1* è LINEDEVSTATE \_ reinit e il messaggio è stato emesso da TAPI come risultato della conversione di un nuovo messaggio API in un messaggio reinit, *DwParam3* contiene il parametro *dwParam1* del messaggio originale (ad esempio, LINEDEVSTATE \_ TRANSLATECHANGE o un altro \_ valore LINEDEVSTATE, se *dwParam2* è la riga LINEDEVSTATE o \_ il nuovo identificatore di dispositivo, se *dwParam2* è [**line \_ create**](line-create.md)).
+Se *dwParam1* è LINEDEVSTATE REINIT e il messaggio è stato inviato da TAPI come risultato della conversione di un nuovo messaggio API in un messaggio \_ REINIT, *dwParam3* contiene il *parametro dwParam1* del messaggio originale (ad esempio, LINEDEVSTATE TRANSLATECHANGE o un altro valore \_ LINEDEVSTATE, se \_ *dwParam2* è LINE \_ LINEDEVSTATE o [**\_**](line-create.md)il nuovo identificatore di dispositivo, se *dwParam2* è LINE CREATE ).
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-L'invio del messaggio di **riga \_ LINEDEVSTATE** può essere controllato con [**lineSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-linesetstatusmessages). Un'applicazione può indicare le modifiche degli elementi di stato per le quali si desidera ricevere una notifica. Per impostazione predefinita, tutti i rapporti di stato sono disabilitati, ad eccezione di LINEDEVSTATE \_ reinit, che non può essere disabilitato. Questo messaggio viene inviato a tutte le applicazioni che dispongono di un handle per la riga, inclusi quelli che hanno chiamato [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) con il parametro *DWPRIVILEGES* impostato su LINECALLPRIVILEGE \_ None, LINECALLPRIVILEGE \_ Owner, LINECALLPRIVILEGE \_ monitor o combinazioni consentite di questi.
+L'invio **del \_ messaggio LINE LINEDEVSTATE** può essere controllato [**con lineSetStatusMessages**](/windows/desktop/api/Tapi/nf-tapi-linesetstatusmessages). Un'applicazione può indicare le modifiche dell'elemento di stato per cui vuole ricevere una notifica. Per impostazione predefinita, tutti i report sullo stato sono disabilitati ad eccezione di LINEDEVSTATE \_ REINIT, che non può essere disabilitato. Questo messaggio viene inviato a tutte le applicazioni che hanno un handle alla riga, incluse quelle che hanno chiamato [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) con il parametro *dwPrivileges* impostato su LINECALLPRIVILEGE \_ NONE, LINECALLPRIVILEGE \_ OWNER, LINECALLPRIVILEGE MONITOR o combinazioni \_ consentite.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ L'invio del messaggio di **riga \_ LINEDEVSTATE** può essere controllato con [*
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ L'invio del messaggio di **riga \_ LINEDEVSTATE** può essere controllato con [*
 
 <dl> <dt>
 
-[**\_chiusura riga**](line-close.md)
+[**LINE \_ CLOSE**](line-close.md)
 </dt> <dt>
 
-[**\_creazione linea**](line-create.md)
+[**LINE \_ CREATE**](line-create.md)
 </dt> <dt>
 
 [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)

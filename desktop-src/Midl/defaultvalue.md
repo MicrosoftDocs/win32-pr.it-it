@@ -1,9 +1,9 @@
 ---
 title: defaultvalue (attributo)
-description: L'attributo \ DefaultValue \ consente di specificare un valore predefinito per un parametro facoltativo tipizzato.
+description: L'attributo \defaultvalue\ consente di specificare un valore predefinito per un parametro facoltativo tipidato.
 ms.assetid: a974a0f7-7b08-4f17-bb28-0e23e6aa97db
 keywords:
-- attributo DefaultValue MIDL
+- Attributo defaultvalue MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04f4efaac16325ec77721665a4dee14c9514a192
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 97f38fe7dfc99c5c9c1c6a7cae1a5fdd5750c5f3e9af37e56706b27300876da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067351"
 ---
 # <a name="defaultvalue-attribute"></a>defaultvalue (attributo)
 
-L'attributo **\[ DefaultValue \]** consente di specificare un valore predefinito per un parametro facoltativo tipizzato.
+**\[ L'attributo \] defaultvalue** consente di specificare un valore predefinito per un parametro facoltativo tipidato.
 
 ``` syntax
 interface interface-name
@@ -37,56 +37,56 @@ interface interface-name
 
 <dl> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Specifica il nome dell'interfaccia.
 
 </dd> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
 Specifica il tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
-Specifica il nome della funzione a cui verrà applicato l'attributo **\[ DefaultValue \]** .
+Specifica il nome della funzione a cui verrà applicato **\[ l'attributo defaultvalue. \]**
 
 </dd> <dt>
 
-*elenco di parametri obbligatori* 
+*mandatory-param-list* 
 </dt> <dd>
 
-Specifica o più parametri obbligatori.
+Specifica uno o più parametri obbligatori.
 
 </dd> <dt>
 
-*elenco attributi* 
+*attribute-list* 
 </dt> <dd>
 
-Specifica un elenco di uno o più attributi, separati da virgole, che si applicano al parametro.
+Specifica un elenco di uno o più attributi, separati da virgole, che si applicano al parametro .
 
 </dd> <dt>
 
-*param-Type* 
+*param-type* 
 </dt> <dd>
 
 Indica il tipo del parametro facoltativo.
 
 </dd> <dt>
 
-*nome param* 
+*param-name* 
 </dt> <dd>
 
 Specifica il nome del parametro facoltativo.
 
 </dd> <dt>
 
-*facoltativo-param-list* 
+*optional-param-list* 
 </dt> <dd>
 
 Specifica zero o più parametri aggiuntivi, ognuno dei quali deve avere un valore predefinito.
@@ -95,15 +95,15 @@ Specifica zero o più parametri aggiuntivi, ognuno dei quali deve avere un valor
 
 ## <a name="remarks"></a>Commenti
 
-Il valore predefinito specificato per il parametro può essere qualsiasi costante oppure un'espressione che viene risolta in una costante, che può essere rappresentata da un **Variant**. In particolare, non è possibile applicare l'attributo **\[ \] DefaultValue** a un parametro che è una struttura, una matrice o un tipo **SAFEARRAY** .
+Il valore predefinito specificato per il parametro può essere qualsiasi costante o espressione che viene risolta in una costante, che può essere rappresentata da **variant.** In particolare, non è possibile applicare **\[ l'attributo defaultvalue \]** a un parametro che è una struttura, una matrice o un **tipo SAFEARRAY.**
 
 Il compilatore MIDL accetta l'ordinamento dei parametri seguente (da sinistra a destra):
 
-1.  Parametri obbligatori (parametri che non dispongono degli attributi **\[ DefaultValue \]** o **\[** [**Optional**](optional.md) **\]** ),
-2.  parametri facoltativi con o senza l'attributo **\[ DefaultValue \]** ,
-3.  parametri con l'attributo **\[ facoltativo \]** e senza l'attributo **\[ DefaultValue \]** ,
-4.  **\[** parametro [**LCID**](lcid.md) **\]** , se presente,
-5.  **\[**[**retval**](retval.md) **\]** parametro
+1.  Parametri obbligatori (parametri che non hanno il **\[ valore predefinito o \]** attributi **\[** [**facoltativi),**](optional.md) **\]**
+2.  parametri facoltativi con o senza **\[ l'attributo defaultvalue, \]**
+3.  parametri con **\[ l'attributo facoltativo \]** e senza **\[ l'attributo defaultvalue, \]**
+4.  **\[**[**Parametro lcid,**](lcid.md) **\]** se presente,
+5.  **\[**[**retval**](retval.md) **\]** Parametro
 
 ## <a name="examples"></a>Esempi
 
@@ -136,19 +136,19 @@ interface QueryDef : IUnknown
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaccia**](interface.md)
+[**Interfaccia**](interface.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
-[**opzionale**](optional.md)
+[**Opzionale**](optional.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**retval**](retval.md)
@@ -157,6 +157,6 @@ interface QueryDef : IUnknown
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

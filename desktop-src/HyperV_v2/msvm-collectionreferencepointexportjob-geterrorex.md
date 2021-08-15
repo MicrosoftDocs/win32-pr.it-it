@@ -1,5 +1,5 @@
 ---
-description: 'Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob: recupera informazioni aggiuntive su un errore.'
+description: 'Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob : recupera informazioni aggiuntive su un errore.'
 ms.assetid: 64a90f18-3ae7-4021-857f-64adf8c40430
 title: Metodo GetErrorEx della classe Msvm_CollectionReferencePointExportJob
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3b84c41776c081c302078773d9402145b0fe41e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 56eec72d70acbaa55374b54ba0e1eda161ba0b6e608069cc86a07518d8b735da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681961"
 ---
 # <a name="geterrorex-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Metodo GetErrorEx della classe Msvm \_ CollectionReferencePointExportJob
 
@@ -48,14 +48,14 @@ Se lo stato operativo del processo non è "OK", questo parametro restituisce una
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0. In caso contrario, restituisce uno dei valori di errore seguenti:
+In caso di esito positivo, restituisce 0; In caso contrario, restituisce uno dei valori di errore seguenti:
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
-**Operazione non** riuscita (32768)
+**Non riuscito** (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)

@@ -9,24 +9,24 @@
         - name: Creazione di proprietà personalizzate.
           href: building-property-handlers-property-schemas.md
           items:
-            - name: Informazioni sullo schema di descrizione della proprietà
+            - name: Informazioni sullo schema di descrizione delle proprietà
               href: propdesc-schema-entry.md
         - name: Implementazione di gestori di proprietà
           href: building-property-handlers.md
           items:
-            - name: Informazioni sui gestori delle proprietà
+            - name: Informazioni sui gestori di proprietà
               href: building-property-handlers-properties.md
-            - name: Uso dei nomi dei tipi
+            - name: Uso di nomi di tipi
               href: building-property-handlers-user-friendly-kind-names.md
             - name: Uso degli elenchi di proprietà
               href: building-property-handlers-property-lists.md
-            - name: Inizializzazione dei gestori di proprietà
+            - name: Inizializzazione di gestori di proprietà
               href: building-property-handlers-property-handlers.md
             - name: Registrazione e distribuzione di gestori di proprietà
               href: prophand-reg-dist.md
             - name: Procedure consigliate e domande frequenti sul gestore delle proprietà
               href: prophand-bestprac-faq.yml
-    - name: Informazioni di riferimento sul sistema di proprietà
+    - name: Riferimento al sistema di proprietà
       href: property-system-reference.md
       items:
         - name: Proprietà Windows
@@ -131,7 +131,7 @@
                   href: props-system-contact-assistantname.md
                 - name: System.Contact.AssistantTelephone
                   href: props-system-contact-assistanttelephone.md
-                - name: System.Contact.Birthday
+                - name: System.Contact.Eserciti
                   href: props-system-contact-birthday.md
                 - name: System.Contact.BusinessAddress
                   href: props-system-contact-businessaddress.md
@@ -141,7 +141,7 @@
                   href: props-system-contact-businessaddress1locality.md
                 - name: System.Contact.BusinessAddress1PostalCode
                   href: props-system-contact-businessaddress1postalcode.md
-                - name: Area System.Contact.BusinessAddress1
+                - name: System.Contact.BusinessAddress1Region
                   href: props-system-contact-businessaddress1region.md
                 - name: System.Contact.BusinessAddress1Street
                   href: props-system-contact-businessaddress1street.md
@@ -243,7 +243,7 @@
                   href: props-system-contact-homeaddress1locality.md
                 - name: System.Contact.HomeAddress1PostalCode
                   href: props-system-contact-homeaddress1postalcode.md
-                - name: Area System.Contact.HomeAddress1
+                - name: System.Contact.HomeAddress1Region
                   href: props-system-contact-homeaddress1region.md
                 - name: System.Contact.HomeAddress1Street
                   href: props-system-contact-homeaddress1street.md
@@ -349,7 +349,7 @@
                   href: props-system-contact-middlename.md
                 - name: System.Contact.MobileTelephone
                   href: props-system-contact-mobiletelephone.md
-                - name: System.Contact.NickName
+                - name: System.Contact.Name
                   href: props-system-contact-nickname.md
                 - name: System.Contact.OfficeLocation
                   href: props-system-contact-officelocation.md
@@ -361,7 +361,7 @@
                   href: props-system-contact-otheraddress1locality.md
                 - name: System.Contact.OtherAddress1PostalCode
                   href: props-system-contact-otheraddress1postalcode.md
-                - name: Area System.Contact.OtherAddress1
+                - name: System.Contact.OtherAddress1Region
                   href: props-system-contact-otheraddress1region.md
                 - name: System.Contact.OtherAddress1Street
                   href: props-system-contact-otheraddress1street.md
@@ -423,9 +423,9 @@
                   href: props-system-contact-primaryemailaddress.md
                 - name: System.Contact.PrimaryTelephone
                   href: props-system-contact-primarytelephone.md
-                - name: System.Contact.Profession
+                - name: System.Contact.Più
                   href: props-system-contact-profession.md
-                - name: System.Contact.IName
+                - name: System.Contact.EnteretimalName
                   href: props-system-contact-spousename.md
                 - name: System.Contact.Suffix
                   href: props-system-contact-suffix.md
@@ -1561,7 +1561,7 @@
                   href: props-system-media-providerrating.md
                 - name: System.Media.ProviderStyle
                   href: props-system-media-providerstyle.md
-                - name: System.Media. Publisher
+                - name: Oggetto System.Media. Publisher
                   href: props-system-media-publisher.md
                 - name: System.Media.SeasonNumber
                   href: props-system-media-seasonnumber.md
@@ -1687,7 +1687,7 @@
                   href: props-system-music-partofset.md
                 - name: Sistema. Musica. Periodo
                   href: props-system-music-period.md
-                - name: Sistema. Musica. SynchronizedLyrics
+                - name: Sistema. Musica. Elementi SynchronizedLyrics
                   href: props-system-music-synchronizedlyrics.md
                 - name: Sistema. Musica. TrackNumber
                   href: props-system-music-tracknumber.md
@@ -1851,7 +1851,7 @@
                   href: props-system-photo-sharpness.md
                 - name: System.Photo.SharpnessText
                   href: props-system-photo-sharpnesstext.md
-                - name: System.Photo.PersianeSpeed
+                - name: System.Photo.Dispeed
                   href: props-system-photo-shutterspeed.md
                 - name: System.Photo.PersianiSpeedDenominator
                   href: props-system-photo-shutterspeeddenominator.md
@@ -1978,7 +1978,7 @@
                   href: props-system-recordedtv-stationcallsign.md
                 - name: System.RecordedTV.StationName
                   href: props-system-recordedtv-stationname.md
-            - name: Security
+            - name: Sicurezza
               href: security-buffer.md
               items:
                 - name: Entità System.Security.AllowedEnterpriseDataProtectionIde

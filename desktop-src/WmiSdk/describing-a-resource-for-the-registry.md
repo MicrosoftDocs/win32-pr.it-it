@@ -1,20 +1,20 @@
 ---
-description: Il registro di sistema contiene dati correlati alle risorse.
+description: Il Registro di sistema contiene dati relativi alle risorse.
 ms.assetid: e66f1db8-a5f3-41d3-9835-34b81b9da5ed
 ms.tgt_platform: multiple
-title: Descrizione di una risorsa per il registro di sistema
+title: Descrizione di una risorsa per il Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ba175120b5abec238d1b9078010359effef8ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30be25eed569f212e435827023eed132cf1c6ead49be37eabb6fe4ac30e8e3b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097271"
 ---
-# <a name="describing-a-resource-for-the-registry"></a>Descrizione di una risorsa per il registro di sistema
+# <a name="describing-a-resource-for-the-registry"></a>Descrizione di una risorsa per il Registro di sistema
 
-Il registro di sistema contiene dati correlati alle risorse. Questi dati si trovano nella seguente chiave del registro di sistema e vengono conservati in un tipo di dati del registro di sistema speciale denominato **reg \_ Resource \_ List**. Le applicazioni possono ottenere i dati correlati alle risorse tramite il provider del registro di sistema. È possibile aggiungere e modificare le risorse di sistema nel registro di sistema.
+Il Registro di sistema contiene dati relativi alle risorse. Questi dati si trovano nella chiave del Registro di sistema seguente e vengono mantenuti in uno speciale tipo di dati del Registro di sistema denominato **REG \_ RESOURCE \_ LIST**. Le applicazioni possono ottenere i dati relativi alle risorse tramite il provider del Registro di sistema. È possibile aggiungere e modificare le risorse di sistema nel Registro di sistema.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -22,11 +22,11 @@ HKEY_LOCAL_MACHINE
       ResourceMap
 ```
 
-Nella procedura seguente viene descritto come archiviare le informazioni relative alle risorse nel registro di sistema.
+La procedura seguente descrive come archiviare le informazioni relative alle risorse nel Registro di sistema.
 
-**Per archiviare le informazioni relative alle risorse nel registro di sistema**
+**Per archiviare le informazioni relative alle risorse nel Registro di sistema**
 
-1.  Creare una stringa che contiene i campi seguenti.
+1.  Creare una stringa contenente i campi seguenti.
 
     
 
@@ -41,8 +41,8 @@ Nella procedura seguente viene descritto come archiviare le informazioni relativ
     <tr class="odd">
     <td>Tipo interfaccia</td>
     <td>Uno dei valori seguenti:<br/> <dl> Interno<br />
-    ISA<br />
-    EISA<br />
+    Isa<br />
+    Eisa<br />
     MicroChannel<br />
     TurboChannel<br />
     PCIBus<br />
@@ -56,29 +56,29 @@ Nella procedura seguente viene descritto come archiviare le informazioni relativ
     </tr>
     <tr class="even">
     <td>Numero bus</td>
-    <td>Integer che specifica il numero del bus.</td>
+    <td>Numero intero che specifica il numero del bus.</td>
     </tr>
     <tr class="odd">
-    <td>Numero descrittore parziale</td>
-    <td>Integer che specifica il numero di descrittori.</td>
+    <td>Numero di descrittore parziale</td>
+    <td>Numero intero che specifica il numero del descrittore.</td>
     </tr>
     <tr class="even">
-    <td>Offset o tipo di Unione</td>
-    <td>Uno dei valori seguenti:<br/> <dl> Port. Start<br />
-    Port. PhysicalAddress<br />
-    Port. length<br />
-    Interrompi livello<br />
-    Interrompi. Vector<br />
-    Interrupt. affinità<br />
-    Memoria. avvio<br />
-    Memory. PhysicalAddress<br />
-    Memoria. lunghezza<br />
-    Canale DMA<br />
-    DMA. Port<br />
-    DMA. Reserved1<br />
-    DeviceSpecificData. DataSize<br />
-    DeviceSpecificData. Reserved1<br />
-    DeviceSpecificData. Reserved2<br />
+    <td>Tipo di offset o unione</td>
+    <td>Uno dei valori seguenti:<br/> <dl> Port.Start<br />
+    Port.PhysicalAddress<br />
+    Port.Length<br />
+    Interrupt.Level<br />
+    Interrupt.Vector<br />
+    Interrupt.Affinity<br />
+    Memory.Start<br />
+    Memory.PhysicalAddress<br />
+    Memory.Length<br />
+    Dma.Channel<br />
+    Dma.Port<br />
+    Dma.Reserved1<br />
+    DeviceSpecificData.DataSize<br />
+    DeviceSpecificData.Reserved1<br />
+    DeviceSpecificData.Reserved2<br />
     </dl></td>
     </tr>
     </tbody>
@@ -88,7 +88,7 @@ Nella procedura seguente viene descritto come archiviare le informazioni relativ
 
      
 
-2.  Inserire la stringa nella chiave appropriata sotto la chiave del registro di sistema.
+2.  Inserire la stringa nella chiave appropriata nella chiave del Registro di sistema.
 
     ```
     HKEY_LOCAL_MACHINE
@@ -96,7 +96,7 @@ Nella procedura seguente viene descritto come archiviare le informazioni relativ
           ResourceMap
     ```
 
-Nell'esempio di codice riportato di seguito viene descritto un descrittore di risorse valido.
+Nell'esempio di codice seguente viene descritto un descrittore di risorsa valido.
 
 ``` syntax
 local|hkey_local_machine\hardware\resourcemap\
@@ -104,7 +104,7 @@ local|hkey_local_machine\hardware\resourcemap\
   pc compatible eisa/isa HAL|.raw("eisa",0,0,"interrupt.affinity")
 ```
 
-Nell'esempio di codice seguente viene illustrata la sintassi MOF valida per il recupero di un descrittore di risorse.
+Nell'esempio di codice seguente viene illustrata la sintassi MOF valida per il recupero di un descrittore di risorsa.
 
 ``` syntax
 [DYNPROPS] 

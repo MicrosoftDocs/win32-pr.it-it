@@ -1,10 +1,10 @@
 ---
 title: MDM_Policy_User_Config01_Printers02 classe
-description: La classe Mdm \_ Policy \_ User \_ Config01 \_ Printers02 rappresenta i criteri di stampa disponibili.
+description: La classe MDM \_ Policy \_ User \_ Config01 \_ Printers02 rappresenta i criteri di stampa disponibili.
 ms.assetid: 9faeaa04-92b4-43b0-be17-0f85f2eb493c
 keywords:
 - MDM_Policy_User_Config01_Printers02 classe
-- MDM_Policy_User_Config01_Printers02 classe, descritta
+- MDM_Policy_User_Config01_Printers02 classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -26,9 +26,9 @@ ms.locfileid: "119694011"
 ---
 # <a name="mdm_policy_user_config01_printers02-class"></a>Classe \_ Mdm Policy User \_ \_ Config01 \_ Printers02
 
-\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe Mdm \_ Policy \_ User \_ Config01 \_ Printers02 rappresenta i criteri di stampa disponibili.
+La classe MDM \_ Policy \_ User \_ Config01 \_ Printers02 rappresenta i criteri di stampa disponibili.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -46,7 +46,7 @@ class MDM_Policy_User_Config01_Printers02
 
 ## <a name="members"></a>Members
 
-La **classe Mdm Policy User \_ \_ \_ Config01 \_ Printers02** ha questi tipi di membri:
+La **classe MDM Policy User \_ \_ \_ Config01 \_ Printers02** include questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -59,13 +59,13 @@ La **classe Mdm Policy User \_ \_ \_ Config01 \_ Printers02** ha queste propriet
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -73,13 +73,13 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 **Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -87,10 +87,10 @@ Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 [Utente PointAndPrintRestrictions \_](/windows/client-management/mdm/policy-csp-printers#printers-pointandprintrestrictions-user)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: Lettura/Scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -103,7 +103,7 @@ Tipo di accesso: Lettura/Scrittura
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                             |
+| Spazio dei nomi<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 

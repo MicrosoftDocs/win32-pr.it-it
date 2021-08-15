@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica CBN_EDITUPDATE (winuser. h)
-description: Inviato quando la parte del controllo di modifica di una casella combinata sta per visualizzare il testo modificato.
+title: CBN_EDITUPDATE codice di notifica (Winuser.h)
+description: Inviato quando la parte di controllo di modifica di una casella combinata sta per visualizzare il testo modificato.
 ms.assetid: cae9cbf5-d420-4dfb-a46f-8c1a77de6ecf
 keywords:
-- Controlli di Windows per il codice di notifica CBN_EDITUPDATE
+- CBN_EDITUPDATE del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ef56b97bf8f4c4aebb4a11383be1b5a1941167b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eeaf787fd241d9dd87457273bd76c07eebe12fa99f2635643b4a4eaa8eaf4952
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314731"
 ---
-# <a name="cbn_editupdate-notification-code"></a>\_Codice di notifica EDITUPDATE CBN
+# <a name="cbn_editupdate-notification-code"></a>Codice di notifica \_ CBN EDITUPDATE
 
-Inviato quando la parte del controllo di modifica di una casella combinata sta per visualizzare il testo modificato. Questo codice di notifica viene inviato dopo che il controllo ha formattato il testo, ma prima di visualizzare il testo. La finestra padre della casella combinata riceve questo codice di notifica tramite il messaggio di [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+Inviato quando la parte di controllo di modifica di una casella combinata sta per visualizzare il testo modificato. Questo codice di notifica viene inviato dopo che il controllo ha formattato il testo, ma prima di visualizzare il testo. La finestra padre della casella combinata riceve questo codice di notifica tramite il [**messaggio WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_EDITUPDATE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica il codice di notifica.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene l'identificatore di controllo della casella combinata. HIWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) il codice di notifica.
 
 </dd> <dt>
 
@@ -55,7 +55,7 @@ Handle per la casella combinata.
 
 ## <a name="remarks"></a>Commenti
 
-Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-styles.md) , questo codice di notifica non viene inviato.
+Se la casella combinata ha lo stile [**CBS \_ DROPDOWNLIST,**](combo-box-styles.md) questo codice di notifica non viene inviato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 **Riferimento**
 </dt> <dt>
 
-[\_EDITCHANGE CBN](cbn-editchange.md)
+[CBN \_ EDITCHANGE](cbn-editchange.md)
 </dt> <dt>
 
 **Altre risorse**
@@ -88,7 +88,7 @@ Se la casella combinata ha lo stile di [**\_ DropDownList CBS**](combo-box-style
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**\_comando WM**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

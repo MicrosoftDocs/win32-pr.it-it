@@ -1,6 +1,6 @@
 ---
-title: 'Funzione Texture2DMS:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione Texture2DMS:: GetDimensions'
+title: Funzione Texture2DMS::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione Texture2DMS::GetDimensions
 ms.assetid: badf4127-2498-4c2e-acc7-20507488fc6b
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f720a10ac73f48ce1f27c5676d706a75178aa8ee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: dbe034b6484b80efb58712196c4bd4d0aa67800c51f659c97b0d400e934eeecb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985831"
 ---
-# <a name="texture2dmsgetdimensions-function"></a>Funzione Texture2DMS:: GetDimensions
+# <a name="texture2dmsgetdimensions-function"></a>Funzione Texture2DMS::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -38,30 +38,30 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Altezza* \[ out\]
+*Altezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Altezza della risorsa, in Texel.
+Altezza della risorsa, in texel.
 
 </dd> <dt>
 
-*NumberOfSamples* \[ out\]
+*NumberOfSamples* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Il numero di percorsi di esempio.
+Numero di posizioni di esempio.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -86,7 +86,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -101,7 +101,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Texture2DMS](sm5-object-texture2dms.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

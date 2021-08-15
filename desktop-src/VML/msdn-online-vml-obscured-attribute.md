@@ -1,24 +1,24 @@
 ---
-title: LA-attributo oscurato
-description: LA-attributo oscurato
+title: Attributo VML nascosto
+description: Attributo VML nascosto
 ms.assetid: b8cdb066-e4fc-4dd6-a55a-7c2488f89e61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e383061d3210c9c52dc8c89322bd617257555e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f9122b3a9828fde816684cb20035949628ef25e38d06fb188d8271f0d5384f1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104046948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119308281"
 ---
-# <a name="vml-obscured-attribute"></a>LA-attributo oscurato
+# <a name="vml-obscured-attribute"></a>Attributo VML nascosto
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se un'ombreggiatura è trasparente. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,25 +26,25 @@ Determina se un'ombreggiatura è trasparente. Proprietà di lettura/scrittura. *
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* Obscured = " *Expression* " >
+<v: *element* obscured=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Obscured = "*Expression*"
+*elemento* .obscured="*expression*"
 
-*espressione* = *elemento*. Obscured
+*expression* = *elemento*.obscured
 
 **Osservazioni:**
 
-Se **true**, consente di visualizzare l'ombreggiatura se non è presente alcun riempimento della forma. L'impostazione predefinita è **False**.
+Se **True**, consente di visualizzare attraverso l'ombreggiatura se non è presente alcun riempimento sulla forma. L'impostazione predefinita è **False**.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Lo sfondo viene visualizzato attraverso l'ombreggiatura.
+Lo sfondo viene visualizzato tramite l'ombreggiatura.
 
 
 ```HTML
@@ -59,6 +59,6 @@ Lo sfondo viene visualizzato attraverso l'ombreggiatura.
 
 
 
- 
+ 
 
- 
+ 

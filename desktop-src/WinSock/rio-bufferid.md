@@ -1,19 +1,19 @@
 ---
-description: Specifica un descrittore di buffer registrato utilizzato con le estensioni I/O registrate di Winsock.
+description: Specifica un descrittore di buffer registrato utilizzato con le estensioni di I/O registrate di Winsock.
 ms.assetid: 87D0A3F6-A44C-4D7F-B276-7FD5DC2DE7A3
-title: RIO_BUFFERID (Mswsockdef. h)
+title: RIO_BUFFERID (Mswsockdef.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75bb439a567c361a056b750728d986891a1da468
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6bde67e14a1cb591922ddc180ab8f308b8429c2b36c5998d313876200cd3a26c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097551"
 ---
 # <a name="rio_bufferid"></a>RIO \_ BUFFERID
 
-Il **typedef \_ BUFFERID di Rio** specifica un descrittore di buffer registrato usato con le estensioni i/O registrate di Winsock.
+Il **typedef RIO \_ BUFFERID** specifica un descrittore di buffer registrato usato con le estensioni di I/O registrate di Winsock.
 
 
 ```C++
@@ -33,17 +33,17 @@ Tipo di dati che specifica un descrittore di buffer registrato utilizzato con le
 
 ## <a name="remarks"></a>Commenti
 
-Le estensioni I/O registrate di Winsock operano principalmente sui buffer registrati tramite oggetti **Rio \_ BUFFERID** . Un'applicazione ottiene un **\_ BUFFERID Rio** per un buffer esistente usando la funzione [**RIORegisterBuffer**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) . Un'applicazione può rilasciare una registrazione usando la funzione [**RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer) .
+Le estensioni di I/O registrate di Winsock operano principalmente sui buffer registrati usando **oggetti \_ BUFFERID RIO.** Un'applicazione ottiene un **\_ BUFFERID RIO** per un buffer esistente usando la [**funzione RIORegisterBuffer.**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) Un'applicazione può rilasciare una registrazione usando la [**funzione RIODeregisterBuffer.**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer)
 
-Quando un buffer esistente viene registrato come oggetto **Rio \_ BUFFERID** usando la funzione [**RIORegisterBuffer**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) , alcune risorse interne vengono allocate dalla memoria fisica e il buffer dell'applicazione esistente verrà bloccato nella memoria fisica. La funzione [**RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer) viene chiamata per annullare la registrazione del buffer, liberare queste risorse interne e consentire il sblocco e il rilascio del buffer dalla memoria fisica.
+Quando un buffer esistente viene registrato come oggetto **\_ RIO BUFFERID** usando la [**funzione RIORegisterBuffer,**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85)) alcune risorse interne vengono allocate dalla memoria fisica e il buffer dell'applicazione esistente verrà bloccato nella memoria fisica. La [**funzione RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer) viene chiamata per annullare la registrazione del buffer, liberare queste risorse interne e consentire lo sblocco e il rilascio del buffer dalla memoria fisica.
 
-La registrazione ripetuta e l'annullamento della registrazione dei buffer di applicazione mediante le estensioni I/O registrate di Winsock possono causare un calo significativo delle prestazioni. Quando si progetta un'applicazione utilizzando le estensioni I/O registrate di Winsock, è necessario considerare i seguenti approcci di gestione del buffer per ridurre al minimo la registrazione e l'annullamento della registrazione ripetuti dei buffer dell'applicazione:
+La registrazione ripetuta e la deregistrazione dei buffer dell'applicazione tramite le estensioni I/O registrate di Winsock possono causare una riduzione significativa delle prestazioni. Quando si progetta un'applicazione usando le estensioni I/O registrate di Winsock per ridurre al minimo la registrazione ripetuta e la deregistrazione dei buffer dell'applicazione, è necessario considerare gli approcci seguenti per la gestione del buffer:
 
 -   • Ottimizzare il riutilizzo dei buffer.
--   • Mantenere un pool limitato di buffer registrati non usati per l'uso da parte dell'applicazione.
+-   • Mantenere un pool limitato di buffer registrati inutilizzati per l'uso da parte dell'applicazione.
 -   • Mantenere un pool limitato di buffer registrati ed eseguire copie del buffer tra questi buffer registrati e altri buffer non registrati.
 
-Il typedef **Rio \_ BUFFERID** è definito nel file di intestazione *Mswsockdef. h* , che viene incluso automaticamente nel file di intestazione *mswsock. h* . Il file di intestazione *Mswsockdef. h* non deve mai essere utilizzato direttamente.
+Il **typedef RIO \_ BUFFERID** è definito nel file di intestazione *Mswsockdef.h* che viene automaticamente incluso nel file di intestazione *Mswsock.h.* Il file *di intestazione Mswsockdef.h* non deve mai essere usato direttamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ Il typedef **Rio \_ BUFFERID** è definito nel file di intestazione *Mswsockdef.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Mswsockdef. h (include mswsock. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                        |
+| Intestazione<br/>                   | <dl> <dt>Mswsockdef.h (includere Mswsock.h)</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ Il typedef **Rio \_ BUFFERID** è definito nel file di intestazione *Mswsockdef.
 
 <dl> <dt>
 
-[**\_BUF Rio**](/windows/desktop/api/Mswsockdef/ns-mswsockdef-rio_buf)
+[**RIO \_ BUF**](/windows/desktop/api/Mswsockdef/ns-mswsockdef-rio_buf)
 </dt> <dt>
 
 [**RIODeregisterBuffer**](/windows/win32/api/mswsock/nc-mswsock-lpfn_rioderegisterbuffer)
@@ -76,7 +76,7 @@ Il typedef **Rio \_ BUFFERID** è definito nel file di intestazione *Mswsockdef.
 [**RIORegisterBuffer**](/previous-versions/windows/desktop/legacy/hh437199(v=vs.85))
 </dt> <dt>
 
-[**RIOSend**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riosend)
+[**RIOSEND**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riosend)
 </dt> <dt>
 
 [**RIOSendEx**](/previous-versions/windows/desktop/legacy/hh437216(v=vs.85))

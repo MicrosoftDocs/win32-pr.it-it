@@ -1,6 +1,6 @@
 ---
 title: MDM_Policy_Result01_WiFi02 classe
-description: La classe Mdm \_ Policy \_ Result01 \_ WiFi02 rappresenta i Wi-Fi disponibili.
+description: La classe Mdm \_ \_ Policy Result01 \_ WiFi02 rappresenta i Wi-Fi disponibili.
 ms.assetid: 074C4428-401D-4564-B7AC-45C2221EEC3A
 keywords:
 - MDM_Policy_Result01_WiFi02 classe

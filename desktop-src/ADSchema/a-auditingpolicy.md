@@ -1,10 +1,10 @@
 ---
-title: Attributo Auditing-Policy
+title: Auditing-Policy attributo
 description: Criteri di controllo per i criteri locali.
 ms.assetid: bbe96a2a-5ad0-4160-894c-ff04b829b00a
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Auditing-Policy attribute
+- Auditing-Policy schema AD dell'attributo
 - Schema AD dell'attributo auditingPolicy
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b70c117ff7d7153224d004dbc5663febcce30a5b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7783f672719c547bd336eb2cb5815ee22616744f65c4b866d216b329965ac4a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022809"
 ---
-# <a name="auditing-policy-attribute"></a>Attributo Auditing-Policy
+# <a name="auditing-policy-attribute"></a>Auditing-Policy attributo
 
 Criteri di controllo per i criteri locali.
 
@@ -30,12 +30,12 @@ Criteri di controllo per i criteri locali.
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Auditing-Policy                                       |
-| LDAP-Display-Name | auditingPolicy                                        |
+| Ldap-Display-Name | auditingPolicy                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.202                                |
-| System-ID-GUID    | 6da8a4fe-0e52-11d0-a286-00aa003049e2                  |
+| System-Id-Guid    | 6da8a4fe-0e52-11d0-a286-00aa003049e2                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Criteri di controllo per i criteri locali.
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| A valore singolo       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
