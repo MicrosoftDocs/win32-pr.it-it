@@ -1,9 +1,9 @@
 ---
-title: Proprietà inribbongallery. MenuLayout
-description: Rappresenta un contenitore per i layout del menu a discesa della raccolta In-Ribbon.
+title: InRibbonGallery.MenuLayout - proprietà
+description: Rappresenta un contenitore per In-Ribbon menu a discesa raccolta.
 ms.assetid: 89e0eb39-2790-4571-a661-ab3ebafbb13f
 keywords:
-- Proprietà inribbongallery. MenuLayout barra multifunzione di Windows
+- Proprietà InRibbonGallery.MenuLayout Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d2fc5e0eab5d8dbc35cd9cb3be96e5d5d351416
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f3748e35280972f115ae22792f28847df675b3aafe8ac91d29d930c9fd15bca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850764"
 ---
-# <a name="inribbongallerymenulayout-property"></a>Proprietà inribbongallery. MenuLayout
+# <a name="inribbongallerymenulayout-property"></a>InRibbonGallery.MenuLayout - proprietà
 
-Rappresenta un contenitore per i layout [del menu a discesa della raccolta della barra multifunzione](windowsribbon-controls-inribbongallery.md) .
+Rappresenta un contenitore per [i](windowsribbon-controls-inribbongallery.md) layout del menu a discesa Raccolta nella barra multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -52,7 +52,7 @@ Non ci sono attributi.
 
 | Elemento                                                                     |
 |-----------------------------------------------------------------------------|
-| [**Inribbongallery**](windowsribbon-element-inribbongallery.md)<br/> |
+| [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)<br/> |
 
 
 
@@ -60,18 +60,18 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**inribbongallery**](windowsribbon-element-inribbongallery.md) .
+Può verificarsi al massimo una volta per [**ogni elemento InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 > [!Note]  
-> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per la [raccolta della barra multifunzione](windowsribbon-controls-inribbongallery.md).
+L'esempio seguente illustra il markup di base per [la raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md).
 
-Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery. MenuLayout** .
+Questa sezione di codice illustra la **dichiarazione del controllo InRibbonGallery.MenuLayout.**
 
 
 ```XML
@@ -108,8 +108,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -117,7 +117,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery.
 
 <dl> <dt>
 
-[Controllo raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md)
+[Controllo Raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

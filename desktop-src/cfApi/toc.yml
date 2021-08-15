@@ -1,12 +1,12 @@
 - name: Motori di sincronizzazione cloud
   href: cloud-files-api-portal.md
   items:
-    - name: Creare un motore di sincronizzazione cloud che supporti i file segnaposto
+    - name: Creare un motore di sincronizzazione cloud che supporta i file segnaposto
       href: build-a-cloud-file-sync-engine.md
-    - name: Riferimento al filtro cloud
+    - name: Informazioni di riferimento sul filtro cloud
       href: cloud-filter-reference.md
       items:
-        - name: Enumerazioni filtro cloud
+        - name: Enumerazioni di filtri cloud
           href: cloud-files-enumerations.md
           items:
             - name: CF_CALLBACK_CANCEL_FLAGS

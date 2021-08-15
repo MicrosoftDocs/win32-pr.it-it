@@ -1,7 +1,7 @@
 ---
-description: 'Il metodo FreeProps libera le risorse allocate dal metodo IPropertySetter:: GetProps. Chiamare questo metodo dopo la chiamata a GetProps, passandogli le strutture restituite da GetProps.'
+description: Il metodo FreeProps libera le risorse allocate dal metodo IPropertySetter::GetProps. Chiamare questo metodo dopo aver chiamato GetProps, passando le strutture restituite da GetProps.
 ms.assetid: 5920d63d-d8eb-4fd5-b0d6-9d175e8e2c86
-title: 'Metodo IPropertySetter:: FreeProps (qedit. h)'
+title: Metodo IPropertySetter::FreeProps (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 3cc90d094d3213b5b68f61585296bcb21ebbf5a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 34529c7d78ad36a87eb441f624af8daf1167a77148758ff376feacc70250f18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397552"
 ---
-# <a name="ipropertysetterfreeprops-method"></a>Metodo IPropertySetter:: FreeProps
+# <a name="ipropertysetterfreeprops-method"></a>Metodo IPropertySetter::FreeProps
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `FreeProps` metodo libera le risorse allocate dal metodo [**IPropertySetter:: GetProps**](ipropertysetter-getprops.md) . Chiamare questo metodo dopo la chiamata a **GetProps**, passandogli le strutture restituite da **GetProps**.
+Il `FreeProps` metodo libera le risorse allocate dal metodo [**IPropertySetter::GetProps.**](ipropertysetter-getprops.md) Chiamare questo metodo dopo aver **chiamato GetProps**, passando le strutture restituite da **GetProps**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ void FreeProps(
 
 <dl> <dt>
 
-*cParams* \[ in\]
+*cParams* \[ Pollici\]
 </dt> <dd>
 
-Numero di elementi nella matrice *Pieri* .
+Numero di elementi nella matrice *paParam.*
 
 </dd> <dt>
 
-*Pieri* \[ in\]
+*paParam* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una matrice di strutture di [**\_ parametri Dexter**](dexter-param.md) .
+Puntatore a una matrice di [**strutture PARAM DI TIPO \_ PARAM.**](dexter-param.md)
 
 </dd> <dt>
 
-*paValue* \[ in\]
+*paValue* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una matrice di strutture di [**\_ valori Dexter**](dexter-value.md) .
+Puntatore a una matrice di [**strutture DEXTER \_**](dexter-value.md) VALUE.
 
 </dd> </dl>
 
@@ -75,12 +75,12 @@ Questo metodo non restituisce valori.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -90,8 +90,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

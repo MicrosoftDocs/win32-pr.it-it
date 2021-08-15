@@ -1,20 +1,20 @@
 - name: Servizi di base TPM
   href: tpm-base-services-portal.md
   items:
-    - name: Informazioni su TBS
+    - name: Informazioni sui TB
       href: about-tbs.md
     - name: Uso di TBS
       href: using-tbs.md
       items:
         - name: Virtualizzazione delle risorse
           href: resource-virtualization.md
-        - name: Pianificazione comandi
+        - name: Pianificazione dei comandi
           href: command-scheduling.md
         - name: Risparmio energia
           href: power-management.md
-        - name: Blocco comandi
+        - name: Blocco dei comandi
           href: command-blocking.md
-    - name: Riferimento a TBS
+    - name: Informazioni di riferimento su TBS
       href: tbs-reference.md
       items:
         - name: Tipi di dati TBS
@@ -46,7 +46,7 @@
               href: /windows/desktop/api/Tbs/nf-tbs-tbsip_context_close
             - name: Tbsip_Submit_Command
               href: /windows/desktop/api/Tbs/nf-tbs-tbsip_submit_command
-        - name: Codici restituiti di TBS
+        - name: Codici restituiti da TBS
           href: tbs-return-codes.md
         - name: Strutture TBS
           href: tbs-structures.md

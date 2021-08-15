@@ -1,21 +1,21 @@
 ---
-description: L'API Location fornisce le seguenti interfacce COM.
+description: L'API Location fornisce le interfacce COM seguenti.
 ms.assetid: f49f886b-971a-469d-a3fb-057f88d8ae43
 title: Interfacce COM (API Location)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02017e4e34c0fcc61f279a2151dc550658a31936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e5fad40f0102789dc9739ff8b8d6ffb6675ec944d4bf0cceca0f96389824363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387386"
 ---
 # <a name="com-interfaces-location-api"></a>Interfacce COM (API Location)
 
-\[L'API del percorso Win32 è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece l'API [**Windows. Devices. Geolocation**](/uwp/api/Windows.Devices.Geolocation) . \]
+\[L'API Percorso Win32 è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Usare invece il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation) \]
 
-L'API Location fornisce le seguenti interfacce COM.
+L'API Location fornisce le interfacce COM seguenti.
 
 -   [**ICivicAddressReport**](/windows/desktop/api/LocationApi/nn-locationapi-icivicaddressreport)
 -   [**IDefaultLocation**](/windows/desktop/api/LocationApi/nn-locationapi-idefaultlocation)

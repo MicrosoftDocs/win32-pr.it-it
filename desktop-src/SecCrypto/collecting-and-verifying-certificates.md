@@ -1,25 +1,25 @@
 ---
-description: Nell'esempio seguente, i certificati in un archivio locale vengono enumerati e controllati per verificarne la validità.
+description: Nell'esempio seguente i certificati in un archivio locale vengono enumerati e verificati per verifica della validità.
 ms.assetid: 59ae22f6-aa6d-4b53-8a27-73e1e5c62755
 title: Raccolta e verifica dei certificati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0b160f373d5ade65679fcc4dd87e3c1c86dc4ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60b793cf4aeca7d05d166a4b205b924db53faee09683cefcef7b0244a9eb0289
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769532"
 ---
 # <a name="collecting-and-verifying-certificates"></a>Raccolta e verifica dei certificati
 
-\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [alternative all'uso di CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM è un componente solo a 32 bit disponibile per l'uso nei sistemi operativi seguenti: Windows Server 2008, Windows Vista e Windows XP. Usare invece il .NET Framework per implementare le funzionalità di sicurezza. Per altre informazioni, vedere [Alternative all'uso di CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Spesso è necessario raccogliere e verificare un gruppo di [*certificati*](../secgloss/c-gly.md) . Questa operazione può essere eseguita spesso per preparare un gruppo di destinatari per un messaggio in busta digitale. Nell'esempio seguente, i certificati in un archivio locale vengono enumerati e controllati per verificarne la validità. Viene quindi aperto un archivio Active Directory per recuperare e aggiungere i nuovi certificati dell'archivio locale. Viene verificata la validità dei certificati recuperati dall'archivio di Active Directory e, se validi, vengono aggiunti all'archivio locale. Entrambi gli archivi vengono quindi chiusi.
+Spesso è necessario [*raccogliere e*](../secgloss/c-gly.md) verificare un gruppo di certificati. Questa operazione viene spesso eseguita per preparare un gruppo di destinatari per un messaggio in busta. Nell'esempio seguente i certificati in un archivio locale vengono enumerati e verificati per verifica della validità. Viene quindi aperto un archivio di Active Directory per recuperare e aggiungere nuovi certificati all'archivio locale. I certificati recuperati dall'archivio di Active Directory vengono verificati per verifica della validità e, se validi, vengono aggiunti all'archivio locale. Entrambi i negozi vengono quindi chiusi.
 
-In caso di errore di CAPICOM, viene restituito un valore decimale negativo di **Err. Number** . Per altre informazioni, vedere [**\_ \_ codice di errore di CAPICOM**](capicom-error-code.md). Per informazioni sui valori decimali positivi di **Err. Number**, vedere Winerror. h.
+In caso di errore CAPICOM, viene restituito un valore decimale negativo **di Err.Number.** Per altre informazioni, vedere [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Per informazioni sui valori decimali positivi **di Err.Number,** vedere Winerror.h.
 
-In questo esempio, il nome dell'archivio locale viene passato come parametro di stringa. Una stringa che indica i criteri di ricerca per i certificati nell'archivio Active Directory viene passata anche come parametro.
+In questo esempio il nome dell'archivio locale viene passato come parametro di stringa. Come parametro viene passata anche una stringa che indica i criteri di ricerca per i certificati nell'archivio di Active Directory.
 
 
 ```VB

@@ -1,19 +1,19 @@
 ---
-description: Questa proprietà rappresenta un elenco di Stati di condivisione per il file o la cartella specificati dal provider di archiviazione. Ogni stato di condivisione deve essere uno dei valori noti specificati dalle enumerazioni belowStorageProviderShareStatuses è una proprietà ReadOnly, che deve essere aggiornata solo dal provider di archiviazione.
+description: Questa proprietà rappresenta un elenco di stati di condivisione per il file/cartella specificato dal provider di archiviazione. Ogni stato di condivisione deve essere uno dei valori noti specificati dalle enumerazioni seguentiStorageProviderShareStatuses è una proprietà di sola lettura, che deve essere aggiornata solo dal provider di archiviazione.
 ms.assetid: 131bf48a-0ab9-4b1f-9625-6fca5d15219f
-title: System. StorageProviderShareStatuses
+title: System.StorageProviderShareStatuses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c92340e4afb1005146a32d2505292a5e60dec971
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f573ad8ee6b10828e5172755d7a28d8df61b7033f924c1007cec2a440f6145a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227508"
 ---
-# <a name="systemstorageprovidersharestatuses"></a>System. StorageProviderShareStatuses
+# <a name="systemstorageprovidersharestatuses"></a>System.StorageProviderShareStatuses
 
-Questa proprietà rappresenta un elenco di Stati di condivisione per il file o la cartella specificati dal provider di archiviazione. Ogni stato di condivisione deve essere uno dei valori noti specificati dalle enumerazioni belowStorageProviderShareStatuses è una proprietà ReadOnly, che deve essere aggiornata solo dal provider di archiviazione.
+Questa proprietà rappresenta un elenco di stati di condivisione per il file/cartella specificato dal provider di archiviazione. Ogni stato di condivisione deve essere uno dei valori noti specificati dalle enumerazioni seguentiStorageProviderShareStatuses è una proprietà di sola lettura, che deve essere aggiornata solo dal provider di archiviazione.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -65,7 +65,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -80,13 +80,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -95,7 +95,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

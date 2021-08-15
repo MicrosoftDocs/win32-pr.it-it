@@ -1,9 +1,9 @@
 ---
-title: Elemento Head
-description: L'elemento Head contiene i metadati che si applicano all'intera playlist.
+title: Elemento head
+description: L'elemento head contiene i metadati che si applicano all'intera playlist.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
-- Media Player di Windows elemento Head
+- Elemento head Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8708a8a683f7457e6568df3a897c71253ad76c02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a865419a005927cd85ea6b03d4fabad2e2ac3ef15a840b3bd01209a4df00c075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339171"
 ---
-# <a name="head-element"></a>Elemento Head
+# <a name="head-element"></a>Elemento head
 
-L'elemento **Head** contiene i metadati che si applicano all'intera playlist.
+**L'elemento** head contiene i metadati che si applicano all'intera playlist.
 
 ``` syntax
 <head>
@@ -39,8 +39,8 @@ Questo elemento non ha attributi.
 
 | Gerarchia | Elementi                                                  |
 |-----------|-----------------------------------------------------------|
-| Padre    | [SMIL](smil-element.md)                                  |
-| Figlio     | [titolo](title-element--wpl.md), [meta](meta-element.md) |
+| Padre    | [Smil](smil-element.md)                                  |
+| Figlio     | [title](title-element--wpl.md), [meta](meta-element.md) |
 
 
 
@@ -48,7 +48,7 @@ Questo elemento non ha attributi.
 
 ## <a name="remarks"></a>Commenti
 
-In genere l'elemento **Head** contiene un elemento **title** e uno o più elementi **meta** che definiscono le caratteristiche globali della playlist.
+In genere **l'elemento** head contiene **un elemento titolo** e uno o più **meta** elementi che definiscono le caratteristiche globali della playlist.
 
 ## <a name="examples"></a>Esempio
 
@@ -72,7 +72,7 @@ In genere l'elemento **Head** contiene un elemento **title** e uno o più elemen
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/> |
 
 
 
@@ -86,7 +86,7 @@ In genere l'elemento **Head** contiene un elemento **title** e uno o più elemen
 [**Elemento title (WPL)**](title-element--wpl.md)
 </dt> <dt>
 
-[**Riferimento agli elementi della playlist Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi della playlist multimediale**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

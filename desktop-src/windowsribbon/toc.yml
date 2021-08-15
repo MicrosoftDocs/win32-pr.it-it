@@ -1,19 +1,19 @@
-- name: Framework della barra multifunzione di Windows
+- name: Windows Framework della barra multifunzione
   href: '-uiplat-windowsribbon-entry.md'
   items:
     - name: Cenni preliminari sul framework della barra multifunzione
       href: windowsribbon-overviews-entry.md
       items:
-        - name: Introduzione al framework della barra multifunzione di Windows
+        - name: Introduzione al framework Windows Ribbon
           href: windowsribbon-introduction.md
         - name: Dichiarazione di comandi e controlli con markup della barra multifunzione
           href: windowsribbon-schema.md
-    - name: Guide per gli sviluppatori di Ribbon Framework
+    - name: Guide per gli sviluppatori del framework della barra multifunzione
       href: windowsribbon-guides-entry.md
       items:
         - name: Creazione di un'applicazione barra multifunzione
           href: windowsribbon-stepbystep.md
-        - name: Migrazione al framework della barra multifunzione di Windows
+        - name: Migrazione al framework Windows Ribbon
           href: ribbon-migration.md
         - name: Informazioni su comandi e controlli
           href: windowsribbon-commandscontrols.md
@@ -21,13 +21,13 @@
           href: listening-for-ribbon-events.md
         - name: Specifica delle risorse immagine della barra multifunzione
           href: windowsribbon-imageformats.md
-        - name: Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento
+        - name: Personalizzazione di una barra multifunzione tramite definizioni delle dimensioni e criteri di ridimensionamento
           href: windowsribbon-templates.md
         - name: Uso delle raccolte
           href: ribbon-controls-galleries.md
-        - name: Visualizzazione di schede contestuali
+        - name: Visualizzazione delle schede contestuali
           href: ribbon-contextualtabs.md
-        - name: Riconfigurazione della barra multifunzione con modalità applicazione
+        - name: Riconfigurazione della barra multifunzione con le modalità dell'applicazione
           href: ribbon-applicationmodes.md
         - name: Personalizzazione dei colori della barra multifunzione
           href: ribbon-color.md
@@ -39,12 +39,12 @@
           href: windowsribbon-intentcl.md
         - name: Informazioni sui messaggi del compilatore di markup
           href: windowsribbon-compilationerrors.md
-    - name: Libreria di controlli Ribbon Framework
+    - name: Libreria di controlli del framework della barra multifunzione
       href: windowsribbon-controls-entry.md
       items:
         - name: Menu dell'applicazione
           href: windowsribbon-controls-applicationmenu.md
-        - name: Pulsante
+        - name: Button
           href: windowsribbon-controls-button.md
         - name: CheckBox
           href: windowsribbon-controls-checkbox.md
@@ -118,7 +118,7 @@
                       href: windowsribbon-element-command-smallimages.md
                     - name: Simbolo
                       href: windowsribbon-element-command-symbol.md
-                    - name: TooltipDescription
+                    - name: Descrizione comando
                       href: windowsribbon-element-command-tooltipdescription.md
                     - name: TooltipTitle
                       href: windowsribbon-element-command-tooltiptitle.md
@@ -127,7 +127,7 @@
                   items:
                     - name: Source (Sorgente)
                       href: windowsribbon-element-image-source.md
-                - name: Stringa
+                - name: string
                   href: windowsribbon-element-string.md
                   items:
                     - name: Content
@@ -171,7 +171,7 @@
                   items:
                     - name: Elementi recenti
                       href: windowsribbon-element-applicationmenu-recentitems.md
-                - name: Pulsante
+                - name: Button
                   href: windowsribbon-element-button.md
                 - name: CheckBox
                   href: windowsribbon-element-checkbox.md
@@ -188,7 +188,7 @@
                 - name: DropDownGallery
                   href: windowsribbon-element-dropdowngallery.md
                   items:
-                    - name: MenuGroup
+                    - name: Gruppi di menu
                       href: windowsribbon-element-dropdowngallery-menugroups.md
                     - name: MenuLayout
                       href: windowsribbon-element-dropdowngallery-menulayout.md
@@ -478,7 +478,7 @@
                   href: windowsribbon-reference-properties-uipkey-themecolorscategorylabel.md
                 - name: UI_PKEY_ThemeColorsTooltips
                   href: windowsribbon-reference-properties-uipkey-themecolorstooltips.md
-            - name: Proprietà carattere
+            - name: Proprietà dei tipi di carattere
               href: windowsribbon-reference-properties-fontcontrol.md
               items:
                 - name: UI_PKEY_FontProperties
@@ -587,9 +587,9 @@
     - name: Esempi di framework della barra multifunzione
       href: windowsribbon-samples-entry.md
       items:
-        - name: Esempio di SimpleRibbon
+        - name: Esempio SimpleRibbon
           href: windowsribbon-sample1.md
-        - name: Esempio di ContextPopup
+        - name: Esempio ContextPopup
           href: windowsribbon-contextpopupsample.md
         - name: Esempio di DropDownColorPicker
           href: windowsribbon-dropdowncolorpickersample.md
@@ -599,5 +599,5 @@
           href: windowsribbon-htmleditribbonsample.md
         - name: Esempio di FontControl
           href: windowsribbon-fontcontrolsample.md
-    - name: Glossario di Ribbon Framework
+    - name: Glossario del framework della barra multifunzione
       href: windowsribbon-glossary.md

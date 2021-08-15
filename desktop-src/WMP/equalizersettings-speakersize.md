@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.speakerSize
-description: L'attributo speakerSize specifica o Recupera il numero di indice della dimensione del relatore corrente.
+description: L'attributo speakerSize specifica o recupera il numero di indice delle dimensioni correnti del parlante.
 ms.assetid: 454d07bf-49cd-48a5-9724-6415a925367a
 keywords:
-- Media Player Windows EQUALIZERSETTINGS. speakerSize
+- EQUALIZERSETTINGS.speakerSize Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26dc49af55e96d3ef8de4e8a4567b3a4296ca214
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46d289a89a22e8c10cf669e9b55fc304826acb3ce0f72468f725e7d5fae0dfc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748649"
 ---
 # <a name="equalizersettingsspeakersize"></a>EQUALIZERSETTINGS.speakerSize
 
-L'attributo **speakerSize** specifica o Recupera il numero di indice della dimensione del relatore corrente.
+**L'attributo speakerSize** specifica o recupera il numero di indice delle dimensioni correnti del parlante.
 
 ``` syntax
         elementID.speakerSize
@@ -29,14 +29,14 @@ L'attributo **speakerSize** specifica o Recupera il numero di indice della dimen
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (Long) contenente uno dei valori seguenti.
+Questo attributo è un numero **di** lettura/scrittura (long) contenente uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                              |
 |-------|------------------------------------------|
-| 0     | Gli altoparlanti correnti sono cuffie.     |
-| 1     | Gli altoparlanti correnti hanno dimensioni normali. |
+| 0     | Gli altoparlanti correnti sono cuffia.     |
+| 1     | I parlanti correnti hanno dimensioni normali. |
 | 2     | Gli altoparlanti correnti sono di grandi dimensioni.          |
 
 
@@ -45,9 +45,9 @@ Questo attributo è un **numero** di lettura/scrittura (Long) contenente uno dei
 
 ## <a name="remarks"></a>Commenti
 
-Il nome descrittivo della dimensione del relatore può essere recuperato usando l'attributo **currentSpeakerName** .
+Il nome descrittivo delle dimensioni del parlante può essere recuperato usando **l'attributo currentSpeakerName.**
 
-Questo attributo viene ignorato se **enhancedAudio** è impostato su false.
+Questo attributo viene ignorato **se enhancedAudio** è impostato su false.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Questo attributo viene ignorato se **enhancedAudio** è impostato su false.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successive<br/> |
 
 
 

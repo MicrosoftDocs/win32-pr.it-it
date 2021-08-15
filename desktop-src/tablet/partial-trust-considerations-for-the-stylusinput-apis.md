@@ -13,7 +13,7 @@ ms.locfileid: "118449351"
 ---
 # <a name="partial-trust-considerations-for-the-stylusinput-api"></a>Considerazioni sull'attendibilità parziale per l'API StylusInput
 
-L'oggetto [**RealTimeStylus**](realtimestylus-class.md) che accetta il parametro *handle* richiede le autorizzazioni [UIPermissionWindow.AllWindows](/dotnet/api/system.security.permissions.uipermissionwindow?view=dotnet-plat-ext-3.1&preserve-view=true) e [SecurityPermissionFlag.UnmanagedCode,](/previous-versions/windows/) oltre alle autorizzazioni richieste dal costruttore che accetta il parametro *attachedControl.*
+L'oggetto [**RealTimeStylus**](realtimestylus-class.md) che accetta il parametro *handle* richiede le autorizzazioni [UIPermissionWindow.AllWindows](/dotnet/api/system.security.permissions.uipermissionwindow?view=dotnet-plat-ext-3.1&preserve-view=true) e [SecurityPermissionFlag.UnmanagedCode,](/previous-versions/windows/) oltre alle autorizzazioni richieste dal costruttore che accetta il *parametro attachedControl.*
 
 Per altre informazioni sui problemi di sicurezza e attendibilità, vedere [Sicurezza e attendibilità](security-and-trust.md).
 

@@ -22,7 +22,7 @@ ms.locfileid: "118393382"
 ---
 # <a name="destroysnapshot-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Metodo DestroySnapshot della classe Msvm \_ VirtualSystemSnapshotService
 
-Elimina uno snapshot di macchina virtuale esistente. Questo metodo può, come effetto collaterale, eliminare altri snapshot che dipendono dagli snapshot interessati.
+Elimina uno snapshot di macchina virtuale esistente. Questo metodo può, come effetto collaterale, eliminare altri snapshot dipendenti dagli snapshot interessati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,7 +81,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Tipo non valido** (6)
 </dt> <dt>
 
-**DMTF riservato** (..)
+**DmTF riservato** (..)
 </dt> <dt>
 
 **Parametri del metodo controllati - Processo avviato** (4096)

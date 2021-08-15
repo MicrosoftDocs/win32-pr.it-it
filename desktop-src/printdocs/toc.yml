@@ -1,33 +1,33 @@
 - name: 'Documenti e stampa '
   href: documents-and-printing.md
   items:
-    - name: Novità relative alla stampa
+    - name: Novità per la stampa
       href: what-s-new-for-printing-in-windows-vnext.md
       items:
-        - name: Novità relative alla stampa in Windows 7
+        - name: Novità della stampa in Windows 7
           href: what-s-new-in-windows-7.md
-        - name: Novità relative alla stampa in Windows Vista
+        - name: Novità della stampa in Windows Vista
           href: what-s-new-in-windows-vista.md
-    - name: Supporto delle app per la stampa OpenXPS
+    - name: Supporto app per la stampa OpenXPS
       href: app-support-for-openxps-printing.md
     - name: Documenti XPS
       href: documents.md
       items:
-        - name: API documenti XPS
+        - name: API documento XPS
           href: documents-xps.md
           items:
             - name: Informazioni sull'API documento XPS
               href: about-xps-document-api.md
               items:
-                - name: Interfacce trunk XPS OM
+                - name: Interfacce trunk OM XPS
                   href: xps-om-trunk-interfaces.md
                   items:
-                    - name: Interfacce del pacchetto XPS OM
+                    - name: Interfacce dei pacchetti OM XPS
                       href: xps-object-model-package-interfaces.md
                       items:
                         - name: Uso dell'interfaccia IXpsOMPackageWriter
                           href: using-the-ixpsompackagewriter-interface.md
-                    - name: Interfacce del documento XPS OM
+                    - name: Interfacce di documenti XPS OM
                       href: xps-object-model-document-interfaces.md
                       items:
                         - name: Uso delle interfacce IXpsOMDocumentSequence
@@ -38,32 +38,32 @@
                           href: working-with-xpsompagereference-interfaces.md
                     - name: Interfacce della parte OM XPS
                       href: working-with-xps-object-model-part-interfaces.md
-                - name: Interfacce di pagine XPS OM
+                - name: Interfacce di pagina OM XPS
                   href: xps-object-model-page-interfaces.md
                   items:
-                    - name: Uso di Canvas e interfacce visive di XPS OM
+                    - name: Uso delle interfacce canvas e visive di XPS OM
                       href: working-with-xpsomcanvas-interfaces.md
-                    - name: Utilizzo delle interfacce di percorso OM XPS
+                    - name: Uso delle interfacce di percorso OM XPS
                       href: working-with-xps-object-model-path-interfaces.md
                       items:
                         - name: Pennelli OM XPS
                           href: xps-object-model-brushes.md
-                        - name: Gradienti OM XPS
+                        - name: Sfumature OM XPS
                           href: xps-object-model-gradients.md
-                        - name: Oggetti Geometry OM di XPS
+                        - name: Oggetti Geometry OM XPS
                           href: xps-object-model-geometry-objects.md
-                    - name: 'Utilizzo di interfacce di testo, grafica e immagini XPS OM'
+                    - name: 'Uso delle interfacce di testo, grafica e immagine di XPS OM'
                       href: working-with-xps-object-model-text-and-image-interfaces.md
                       items:
-                        - name: Gestione colori XPS OM
+                        - name: Gestione dei colori di XPS OM
                           href: xps-object-model-color-interfaces.md
-                    - name: Utilizzo di interfacce di pagine XPS OM
+                    - name: Uso delle interfacce di pagina OM XPS
                       href: working-with-xpsompage-interfaces.md
                 - name: Firme digitali XPS OM
                   href: using-the-xps-digital-signatures.md
-                - name: Interfacce del ticket di stampa XPS OM
+                - name: Interfacce dei ticket di stampa OM XPS
                   href: xps-object-model-print-ticket-interfaces.md
-            - name: Uso dell'API Document XPS
+            - name: Uso dell'API documento XPS
               href: using-xps-document-api.md
               items:
                 - name: Uso delle interfacce di raccolta OM XPS
@@ -71,35 +71,35 @@
                 - name: Attività comuni di programmazione di documenti XPS
                   href: common-xps-document-tasks.md
                   items:
-                    - name: Inizializzare un OM XPS
+                    - name: Inizializzare un sistema operativo XPS
                       href: xps-object-model-initialization.md
-                    - name: Creazione di un OM XPS vuoto
+                    - name: Creare un sistema operativo XPS vuoto
                       href: create-a-blank-xps-om.md
-                    - name: Leggere un documento XPS in un OM XPS
+                    - name: Leggere un documento XPS in un sistema operativo XPS
                       href: read-an-xps-document-into-an-xps-om.md
-                    - name: Esplorare XPS OM
+                    - name: Esplorare il sistema operativo XPS
                       href: navigate-the-xps-om.md
-                    - name: Scrivere testo in un OM XPS
+                    - name: Scrivere testo in un sistema operativo XPS
                       href: write-text-to-an-xps-om.md
-                    - name: Creare grafica in un OM XPS
+                    - name: Disegnare grafica in un sistema operativo XPS
                       href: draw-graphics-in-an-xps-om.md
-                    - name: Inserire immagini in un OM XPS
+                    - name: Inserire immagini in un sistema operativo XPS
                       href: place-images-in-an-xps-om.md
-                    - name: Scrivere un OM XPS in un documento XPS
+                    - name: Scrivere un file OM XPS in un documento XPS
                       href: write-an-xps-om-to-an-xps-document.md
-                    - name: Stampare un OM XPS
+                    - name: Stampare un sistema operativo XPS
                       href: print-an-xps-om.md
-                - name: Attività avanzate di programmazione documenti XPS
+                - name: Attività avanzate di programmazione di documenti XPS
                   href: advanced-xps-document-tasks.md
                   items:
-                    - name: Unisci documenti XPS
+                    - name: Unire documenti XPS
                       href: merging-xps-documents.md
                     - name: Elaborazione di documenti XPS in un filtro XPSDrv
                       href: processing-xps-documents-in-an-xpsdrv-filter.md
-            - name: Informazioni di riferimento sulle API documento XPS
+            - name: Informazioni di riferimento sulle API dei documenti XPS
               href: xps-programming-reference.md
               items:
-                - name: Interfacce di documenti XPS
+                - name: Interfacce documento XPS
                   href: document-object-model-interfaces.md
                   items:
                     - name: IXpsDocumentPackageTarget
@@ -142,7 +142,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-getdictionaryresource
                         - name: GetUseAliasedEdgeMode
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-getusealiasededgemode
-                        - name: Getoggetti visivi
+                        - name: GetVisuals
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-getvisuals
                         - name: SetAccessibilityLongDescription
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-setaccessibilitylongdescription
@@ -157,14 +157,14 @@
                     - name: IXpsOMColorProfileResource
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcolorprofileresource
                       items:
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcolorprofileresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcolorprofileresource-setcontent
                     - name: IXpsOMColorProfileResourceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcolorprofileresourcecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcolorprofileresourcecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcolorprofileresourcecollection-getat
@@ -189,9 +189,9 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getcontentstatus
                         - name: GetContentType
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getcontenttype
-                        - name: Getcreated
+                        - name: GetCreated
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getcreated
-                        - name: Getcreator
+                        - name: GetCreator
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getcreator
                         - name: GetDescription
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getdescription
@@ -205,11 +205,11 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getlastmodifiedby
                         - name: GetLastPrinted
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getlastprinted
-                        - name: Getmodified
+                        - name: GetModified
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getmodified
                         - name: GetOwner
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getowner
-                        - name: Getrevisione
+                        - name: GetRevision
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getrevision
                         - name: GetSubject
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getsubject
@@ -217,23 +217,23 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-gettitle
                         - name: GetVersion
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-getversion
-                        - name: Secategory
+                        - name: SetCategory
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setcategory
                         - name: SetContentStatus
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setcontentstatus
                         - name: SetContentType
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setcontenttype
-                        - name: Con creazione
+                        - name: SetCreated
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setcreated
-                        - name: Secreator
+                        - name: SetCreator
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setcreator
                         - name: SetDescription
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setdescription
                         - name: SetIdentifier
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setidentifier
-                        - name: Parole chiave
+                        - name: SetKeywords
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setkeywords
-                        - name: Lingua
+                        - name: SetLanguage
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setlanguage
                         - name: SetLastModifiedBy
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setlastmodifiedby
@@ -241,18 +241,18 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setlastprinted
                         - name: SetModified
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setmodified
-                        - name: Revisione della versione
+                        - name: SetRevision
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setrevision
                         - name: SetSubject
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setsubject
-                        - name: Nome
+                        - name: SetTitle
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-settitle
                         - name: SetVersion
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcoreproperties-setversion
                     - name: IXpsOMDashCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdashcollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdashcollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdashcollection-getat
@@ -267,7 +267,7 @@
                     - name: IXpsOMDictionary
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdictionary
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdictionary-append
                         - name: Clone
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdictionary-clone
@@ -309,7 +309,7 @@
                     - name: IXpsOMDocumentCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentcollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentcollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentcollection-getat
@@ -337,7 +337,7 @@
                       items:
                         - name: GetOwner
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentstructureresource-getowner
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentstructureresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentstructureresource-setcontent
@@ -346,14 +346,14 @@
                       items:
                         - name: GetEmbeddingOption
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomfontresource-getembeddingoption
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomfontresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomfontresource-setcontent
                     - name: IXpsOMFontResourceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomfontresourcecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomfontresourcecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomfontresourcecollection-getat
@@ -372,7 +372,7 @@
                       items:
                         - name: Clone
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometry-clone
-                        - name: Getfigures
+                        - name: GetFigures
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometry-getfigures
                         - name: GetFillRule
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometry-getfillrule
@@ -417,14 +417,14 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setisclosed
                         - name: SetIsFilled
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setisfilled
-                        - name: Segmentazione
+                        - name: SetSegments
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setsegments
                         - name: SetStartPoint
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigure-setstartpoint
                     - name: IXpsOMGeometryFigureCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigurecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigurecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgeometryfigurecollection-getat
@@ -489,7 +489,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomglyphs-setfontrenderingemsize
                         - name: SetFontResource
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomglyphs-setfontresource
-                        - name: Origine
+                        - name: SetOrigin
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomglyphs-setorigin
                         - name: SetStyleSimulations
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomglyphs-setstylesimulations
@@ -568,12 +568,12 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstop-getowner
                         - name: SetColor
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstop-setcolor
-                        - name: Offset
+                        - name: SetOffset
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstop-setoffset
                     - name: IXpsOMGradientStopCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientstopcollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstopcollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstopcollection-getat
@@ -585,7 +585,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstopcollection-removeat
                         - name: SetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomgradientstopcollection-setat
-                    - name: IXpsOMImageBrush
+                    - name: Oggetto IXpsOMImageBrush
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush
                       items:
                         - name: Clone
@@ -596,21 +596,21 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimagebrush-getimageresource
                         - name: SetColorProfileResource
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimagebrush-setcolorprofileresource
-                        - name: SetImageResource
+                        - name: Risorsa SetImageResource
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimagebrush-setimageresource
                     - name: IXpsOMImageResource
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimageresource
                       items:
                         - name: GetImageType
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimageresource-getimagetype
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimageresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimageresource-setcontent
                     - name: IXpsOMImageResourceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimageresourcecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimageresourcecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomimageresourcecollection-getat
@@ -633,7 +633,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomlineargradientbrush-getendpoint
                         - name: GetStartPoint
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomlineargradientbrush-getstartpoint
-                        - name: EndPoint
+                        - name: SetEndPoint
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomlineargradientbrush-setendpoint
                         - name: SetStartPoint
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomlineargradientbrush-setstartpoint
@@ -644,7 +644,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsommatrixtransform-clone
                         - name: GetMatrix
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsommatrixtransform-getmatrix
-                        - name: Sematrix
+                        - name: SetMatrix
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsommatrixtransform-setmatrix
                     - name: IXpsOMNameCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomnamecollection
@@ -676,7 +676,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-creategeometry
                         - name: CreateGeometryFigure
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-creategeometryfigure
-                        - name: CreateGlyphs
+                        - name: Oggetti CreateGlyphs
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createglyphs
                         - name: CreateGradientStop
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-creategradientstop
@@ -793,7 +793,7 @@
                     - name: IXpsOMPackageWriter
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter
                       items:
-                        - name: AddPage
+                        - name: Addpage
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage
                         - name: AddResource
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addresource
@@ -810,7 +810,7 @@
                           href: /windows/desktop/api/XpsObjectModel_2/nf-xpsobjectmodel_2-ixpsompackagewriter3d-addmodeltexture
                         - name: Metodo SetModelPrintTicket
                           href: /windows/desktop/api/XpsObjectModel_2/nf-xpsobjectmodel_2-ixpsompackagewriter3d-setmodelprintticket
-                    - name: IXpsOMPage
+                    - name: Pagina IXpsOMPage
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage
                       items:
                         - name: Clone
@@ -837,7 +837,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-getowner
                         - name: GetPageDimensions
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-getpagedimensions
-                        - name: Getoggetti visivi
+                        - name: GetVisuals
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-getvisuals
                         - name: SetBleedBox
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setbleedbox
@@ -845,11 +845,11 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setcontentbox
                         - name: SetDictionaryLocal
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setdictionarylocal
-                        - name: SetDictionaryResource
+                        - name: Risorsa SetDictionaryResource
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setdictionaryresource
                         - name: SetIsHyperlinkTarget
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setishyperlinktarget
-                        - name: Lingua
+                        - name: SetLanguage
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setlanguage
                         - name: SetName
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-setname
@@ -902,7 +902,7 @@
                     - name: IXpsOMPageReferenceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereferencecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereferencecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereferencecollection-getat
@@ -917,9 +917,9 @@
                     - name: IXpsOMPart
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompart
                       items:
-                        - name: Getpartname
+                        - name: GetPartName
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompart-getpartname
-                        - name: Separtname
+                        - name: SetPartName
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompart-setpartname
                     - name: IXpsOMPartResources
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompartresources
@@ -935,7 +935,7 @@
                     - name: IXpsOMPartUriCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomparturicollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomparturicollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomparturicollection-getat
@@ -1027,7 +1027,7 @@
                     - name: IXpsOMPrintTicketResource
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomprintticketresource
                       items:
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomprintticketresource-setcontent
@@ -1042,7 +1042,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomradialgradientbrush-getgradientorigin
                         - name: GetRadiiSizes
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomradialgradientbrush-getradiisizes
-                        - name: Data Center
+                        - name: SetCenter
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomradialgradientbrush-setcenter
                         - name: SetGradientOrigin
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomradialgradientbrush-setgradientorigin
@@ -1053,7 +1053,7 @@
                       items:
                         - name: GetDictionary
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomremotedictionaryresource-getdictionary
-                        - name: Dizionario di
+                        - name: SetDictionary
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomremotedictionaryresource-setdictionary
                     - name: IXpsOMRemoteDictionaryResource1
                       href: /windows/desktop/api/XpsObjectModel_1/nn-xpsobjectmodel_1-ixpsomremotedictionaryresource1
@@ -1065,7 +1065,7 @@
                     - name: IXpsOMRemoteDictionaryResourceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomremotedictionaryresourcecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomremotedictionaryresourcecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomremotedictionaryresourcecollection-getat
@@ -1093,14 +1093,14 @@
                       items:
                         - name: GetOwner
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomsignatureblockresource-getowner
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomsignatureblockresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomsignatureblockresource-setcontent
                     - name: IXpsOMSignatureBlockResourceCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsignatureblockresourcecollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomsignatureblockresourcecollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomsignatureblockresourcecollection-getat
@@ -1128,7 +1128,7 @@
                       items:
                         - name: GetOwner
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomstoryfragmentsresource-getowner
-                        - name: GetStream
+                        - name: Getstream
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomstoryfragmentsresource-getstream
                         - name: SetContent
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomstoryfragmentsresource-setcontent
@@ -1160,7 +1160,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomtilebrush-settransformlookup
                         - name: SetViewbox
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomtilebrush-setviewbox
-                        - name: Viewport
+                        - name: SetViewport
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomtilebrush-setviewport
                     - name: IXpsOMVisual
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisual
@@ -1201,7 +1201,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisual-sethyperlinknavigateuri
                         - name: SetIsHyperlinkTarget
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisual-setishyperlinktarget
-                        - name: Lingua
+                        - name: SetLanguage
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisual-setlanguage
                         - name: SetName
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisual-setname
@@ -1220,7 +1220,7 @@
                       items:
                         - name: Clone
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualbrush-clone
-                        - name: Getvisual
+                        - name: GetVisual
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualbrush-getvisual
                         - name: GetVisualLocal
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualbrush-getvisuallocal
@@ -1233,7 +1233,7 @@
                     - name: IXpsOMVisualCollection
                       href: /windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualcollection
                       items:
-                        - name: Accoda
+                        - name: Accodamento
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualcollection-append
                         - name: GetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualcollection-getat
@@ -1245,7 +1245,7 @@
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualcollection-removeat
                         - name: SetAt
                           href: /windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomvisualcollection-setat
-                - name: Strutture documento XPS
+                - name: Strutture di documenti XPS
                   href: document-object-model-structures.md
                   items:
                     - name: XPS_COLOR
@@ -1308,7 +1308,7 @@
                       href: /windows/win32/api/xpsobjectmodel/ne-xpsobjectmodel-xps_thumbnail_size
                     - name: XPS_TILE_MODE
                       href: /windows/win32/api/xpsobjectmodel/ne-xpsobjectmodel-xps_tile_mode
-                - name: Errori del documento XPS
+                - name: Errori dei documenti XPS
                   href: xps-document-errors.md
         - name: API di firma digitale XPS
           href: xps-digital-signatures.md
@@ -1321,7 +1321,7 @@
                 - name: Attività comuni di programmazione della firma digitale
                   href: basic-digital-signature-programming-tasks.md
                   items:
-                    - name: Inizializzazione di gestione firme
+                    - name: Inizializzare il gestore delle firme
                       href: initialize-the-signature-manager.md
                     - name: Firmare un documento
                       href: sign-a-document.md
@@ -1340,10 +1340,10 @@
                       href: verify-a-certificate-supports-a-digest-method.md
                     - name: Incorporare catene di certificati in un documento
                       href: embedding-certificate-trust-chains-in-a-document.md
-            - name: Informazioni di riferimento sull'API di firma digitale XPS
+            - name: Informazioni di riferimento sulle API di firma digitale XPS
               href: xps-digital-signatures-programming-reference.md
               items:
-                - name: Interfacce API per la firma digitale XPS
+                - name: Interfacce API di firma digitale XPS
                   href: xps-digital-signatures-interfaces.md
                   items:
                     - name: IXpsSignature
@@ -1371,18 +1371,18 @@
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-getsigningtimeformat
                         - name: SetSignatureXml
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-setsignaturexml
-                        - name: Verifica
+                        - name: Verificare
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify
                     - name: IXpsSignatureBlock
                       href: /windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssignatureblock
                       items:
-                        - name: CreateRequest
+                        - name: Createrequest
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignatureblock-createrequest
                         - name: GetDocumentIndex
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignatureblock-getdocumentindex
                         - name: GetDocumentName
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignatureblock-getdocumentname
-                        - name: Getpartname
+                        - name: GetPartName
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignatureblock-getpartname
                         - name: GetRequests
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignatureblock-getrequests
@@ -1413,7 +1413,7 @@
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-createsigningoptions
                         - name: GetSignatureOriginPartName
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-getsignatureoriginpartname
-                        - name: Getsignatures
+                        - name: GetSignatures
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-getsignatures
                         - name: GetSignatureBlocks
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-getsignatureblocks
@@ -1432,7 +1432,7 @@
                     - name: IXpsSignatureRequest
                       href: /windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssignaturerequest
                       items:
-                        - name: Gettent
+                        - name: GetIntent
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-getintent
                         - name: GetRequestedSigner
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-getrequestedsigner
@@ -1446,7 +1446,7 @@
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-getsigninglocale
                         - name: GetSpotLocation
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-getspotlocation
-                        - name: Per finalità
+                        - name: SetIntent
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-setintent
                         - name: SetRequestedSigner
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturerequest-setrequestedsigner
@@ -1468,7 +1468,7 @@
                     - name: IXpsSigningOptions
                       href: /windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssigningoptions
                       items:
-                        - name: Getcertificat
+                        - name: GetCertificateSet
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-getcertificateset
                         - name: GetCustomObjects
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-getcustomobjects
@@ -1488,11 +1488,11 @@
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-getsignaturepartname
                         - name: GetSigningTimeFormat
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-getsigningtimeformat
-                        - name: SetDigestMethod
+                        - name: Metodo SetDigest
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setdigestmethod
                         - name: SetFlags
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setflags
-                        - name: Criteri di
+                        - name: SetPolicy
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setpolicy
                         - name: SetSignatureId
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsignatureid
@@ -1502,7 +1502,7 @@
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsignaturepartname
                         - name: SetSigningTimeFormat
                           href: /windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssigningoptions-setsigningtimeformat
-                - name: Enumerazioni API per la firma digitale XPS
+                - name: Enumerazioni dell'API di firma digitale XPS
                   href: xps-digital-signatures-enumerations.md
                   items:
                     - name: XPS_SIGN_FLAGS
@@ -1513,7 +1513,7 @@
                       href: /windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_signature_status
                 - name: Errori dell'API firma digitale XPS
                   href: xps-digital-signatures-errors.md
-        - name: Glossario documenti XPS
+        - name: Glossario dei documenti XPS
           href: xpsapi-glossary.md
     - name: Stampa
       href: printdocs-printing.md
@@ -1521,25 +1521,25 @@
         - name: Stampa di app desktop
           href: using-printing.md
           items:
-            - name: 'Procedura: stampare da un programma Windows'
+            - name: 'Procedura: Stampare da un programma Windows dati'
               href: how-to--print-from-a-windows-application.md
               items:
-                - name: 'Procedura: raccogliere informazioni sui processi di stampa dall''utente'
+                - name: 'Procedura: Raccogliere informazioni sul processo di stampa dall''utente'
                   href: preparing-to-print.md
-                - name: 'Procedura: visualizzare lo stato di avanzamento del processo di stampa'
+                - name: 'Procedura: Visualizzare lo stato del processo di stampa'
                   href: cancel-dialog-box.md
-                - name: 'Procedura: avviare e arrestare un thread di stampa'
+                - name: 'Procedura: Avviare e arrestare un thread di stampa'
                   href: how-to--start-and-stop-a-printing-thread.md
-                - name: 'Procedura: eseguire il rendering dei dati del processo di stampa'
+                - name: 'Procedura: Eseguire il rendering dei dati del processo di stampa'
                   href: how-to--render-the-print-job-data.md
-                - name: 'Procedura: usare l''isolamento delle applicazioni'
+                - name: 'Procedura: Usare l''isolamento dell''applicazione'
                   href: use-application-isolation.md
-            - name: 'Procedura: recuperare un contesto di dispositivo stampante'
+            - name: 'Procedura: Recuperare un contesto di dispositivo della stampante'
               href: retrieving-a-printer-device-context.md
-        - name: API di stampa del pacchetto di documenti
+        - name: API per la stampa di pacchetti di documenti
           href: tailored-app-printing-api.md
           items:
-            - name: Interfacce API del pacchetto di stampa del documento
+            - name: Interfacce API per la stampa di pacchetti di documenti
               href: tailored-app-printing-api-interfaces.md
               items:
                 - name: IPrintDocumentPackageStatusEvent
@@ -1561,20 +1561,20 @@
                   items:
                     - name: CreateDocumentPackageTargetForPrintJob
                       href: /windows/desktop/api/Documenttarget/nf-documenttarget-iprintdocumentpackagetargetfactory-createdocumentpackagetargetforprintjob
-            - name: Stampare le strutture API del pacchetto di documenti
+            - name: Strutture dell'API Per la stampa di pacchetti di documenti
               href: tailored-app-printing-api-structures.md
               items:
                 - name: PRINTDOCUMENTPACKAGESTATUS
                   href: /windows/win32/api/Documenttarget/ns-documenttarget-printdocumentpackagestatus
-            - name: Stampare le enumerazioni API del pacchetto di documenti
+            - name: Enumerazioni dell'API del pacchetto di documenti di stampa
               href: tailored-app-printing-api-enumerations.md
               items:
                 - name: PRINTDOCUMENTPACKAGECOMPLETION
                   href: /windows/desktop/api/Documenttarget/ne-documenttarget-printdocumentpackagecompletion
-        - name: API spooler di stampa
+        - name: API Spooler di stampa
           href: print-spooler-api.md
           items:
-            - name: Informazioni di riferimento sull'API spooler di stampa
+            - name: Informazioni di riferimento sulle API dello spooler di stampa
               href: printing-and-print-spooler-reference.md
               items:
                 - name: Funzioni dell'API spooler di stampa
@@ -1586,7 +1586,7 @@
                       href: addform.md
                     - name: AddJob
                       href: addjob.md
-                    - name: AddPrinter
+                    - name: Addprinter
                       href: addprinter.md
                     - name: AddPrinterConnection
                       href: addprinterconnection.md
@@ -1636,7 +1636,7 @@
                       href: enumprinterdataex.md
                     - name: EnumPrinterKey
                       href: enumprinterkey.md
-                    - name: EnumPrinters
+                    - name: Enumprinters
                       href: enumprinters.md
                     - name: FindClosePrinterChangeNotification
                       href: findcloseprinterchangenotification.md
@@ -1680,17 +1680,17 @@
                       href: reportjobprocessingprogress.md
                     - name: ResetPrinter
                       href: resetprinter.md
-                    - name: ScheduleJob
+                    - name: Processo di pianificazione
                       href: schedulejob.md
                     - name: SetDefaultPrinter
                       href: setdefaultprinter.md
-                    - name: Diformi
+                    - name: SetForm
                       href: setform.md
                     - name: SetJob
                       href: setjob.md
-                    - name: Porta
+                    - name: SetPort
                       href: setport.md
-                    - name: SetPrinter
+                    - name: Setprinter
                       href: setprinter.md
                     - name: SetPrinterData
                       href: setprinterdata.md
@@ -1702,7 +1702,7 @@
                       href: startpageprinter.md
                     - name: WritePrinter
                       href: writeprinter.md
-                - name: Enumerazioni API spooler di stampa
+                - name: Enumerazioni dell'API Spooler di stampa
                   href: enumerations.md
                   items:
                     - name: EPrintXPSJobOperation
@@ -1713,7 +1713,7 @@
                       href: print-execution-context.md
                     - name: PRINTER_OPTION_FLAGS
                       href: printer-option-flags.md
-                - name: Strutture dell'API spooler di stampa
+                - name: Strutture dell'API Spooler di stampa
                   href: printing-and-print-spooler-structures.md
                   items:
                     - name: ADDJOB_INFO_1
@@ -1810,15 +1810,15 @@
                       href: providor-info-1.md
                     - name: PROVIDOR_INFO_2
                       href: providor-info-2.md
-                - name: Messaggi dell'API spooler di stampa
+                - name: Messaggi dell'API Spooler di stampa
                   href: printing-and-print-spooler-messages.md
                   items:
                     - name: WM_SPOOLERSTATUS
                       href: wm-spoolerstatus.md
-            - name: Informazioni di riferimento sulle notifiche di stampa asincrone
+            - name: Informazioni di riferimento sulla notifica di stampa asincrona
               href: asynchronous-printing-notification.md
               items:
-                - name: Funzioni di notifica di stampa asincrone
+                - name: Funzioni di notifica di stampa asincrona
                   href: asynchronous-printing-notification-functions.md
                   items:
                     - name: CreatePrintAsyncNotifyChannel
@@ -1827,7 +1827,7 @@
                       href: /windows/desktop/api/prnasnot/nf-prnasnot-registerforprintasyncnotifications
                     - name: UnRegisterForPrintAsyncNotifications
                       href: /windows/desktop/api/prnasnot/nf-prnasnot-unregisterforprintasyncnotifications
-                - name: Interfacce di notifica di stampa asincrone
+                - name: Interfacce di notifica per la stampa asincrona
                   href: asynchronous-notification-interfaces.md
                   items:
                     - name: IPrintAsyncNotifyCallback
@@ -1851,7 +1851,7 @@
                           href: /windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-acquiredata
                         - name: ReleaseData
                           href: /windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-releasedata
-                - name: Enumerazioni di notifiche di stampa asincrone
+                - name: Enumerazioni di notifica di stampa asincrona
                   href: asynchronous-printing-notification-enumerations.md
                   items:
                     - name: PrintAsyncNotifyConversationStyle
@@ -1860,14 +1860,14 @@
                       href: /windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyerror
                     - name: PrintAsyncNotifyUserFilter
                       href: /windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyuserfilter
-            - name: Riferimento per l'installazione del driver della stampante
+            - name: Informazioni di riferimento sull'installazione del driver della stampante
               href: printer-driver-installation-reference.md
               items:
                 - name: AddMonitor
                   href: addmonitor.md
                 - name: AddPort
                   href: addport.md
-                - name: AddPrinterDriver
+                - name: Addprinterdriver
                   href: addprinterdriver.md
                 - name: AddPrinterDriverEx
                   href: addprinterdriverex.md
@@ -1903,11 +1903,11 @@
                   href: enumprintprocessors.md
                 - name: GetCorePrinterDrivers
                   href: getcoreprinterdrivers.md
-                - name: GetPrinterDriver
+                - name: Getprinterdriver
                   href: getprinterdriver.md
                 - name: GetPrinterDriver2
                   href: getprinterdriver2.md
-                - name: GetPrinterDriverDirectory
+                - name: Getprinterdriverdirectory
                   href: getprinterdriverdirectory.md
                 - name: GetPrinterDriverPackagePath
                   href: getprinterdriverpackagepath.md
@@ -1917,10 +1917,10 @@
                   href: installprinterdriverfrompackage.md
                 - name: UploadPrinterDriverPackage
                   href: uploadprinterdriverpackage.md
-        - name: API Print Ticket
+        - name: Print Ticket API
           href: print-ticket-api.md
           items:
-            - name: Funzioni API del ticket di stampa
+            - name: Funzioni dell'API Print Ticket
               href: print-ticket-api-functions.md
               items:
                 - name: ConvertDevModeToPrintTicketThunk2
@@ -1953,7 +1953,7 @@
                   href: /windows/desktop/api/prntvpt/nf-prntvpt-ptreleasememory
                 - name: UnbindPTProviderThunk
                   href: unbindptproviderthunk.md
-            - name: Enumerazioni API del ticket di stampa
+            - name: Enumerazioni dell'API Print Ticket
               href: print-ticket-api-enumerations.md
               items:
                 - name: EDefaultDevmodeType
@@ -1973,11 +1973,11 @@
                       href: print-spooler.md
                     - name: Processore di stampa
                       href: print-processor.md
-                    - name: Monitoraggi porta
+                    - name: Monitoraggi porte
                       href: port-monitors.md
-                - name: Contesti di dispositivo stampante
+                - name: Contesti di dispositivo della stampante
                   href: printer-output.md
-                - name: Caratteri di escape della stampante
+                - name: Escape della stampante
                   href: printer-escapes.md
                 - name: Visualizzazione e output WYSIWYG
                   href: wysiwyg-display-and-output.md
@@ -1986,14 +1986,14 @@
             - name: Uso dell'API di stampa GDI
               href: using-the-printing-functions.md
               items:
-                - name: 'Procedura: stampare con l''API di stampa GDI'
+                - name: 'Procedura: Stampare usando l''API di stampa GDI'
                   href: how-to--print-using-the-gdi-print-api.md
-                - name: 'Procedura: inviare dati direttamente a una stampante GDI'
+                - name: 'Procedura: Inviare dati direttamente a una stampante GDI'
                   href: sending-data-directly-to-a-printer.md
             - name: Informazioni di riferimento sulle API di stampa GDI
               href: gdi-print-api-reference.md
               items:
-                - name: Funzioni API di stampa GDI
+                - name: Funzioni dell'API di stampa GDI
                   href: gdi-print-api-functions.md
                   items:
                     - name: AbortDoc
@@ -2016,14 +2016,14 @@
                       href: /windows/desktop/api/Winuser/nf-winuser-printwindow
                     - name: SetAbortProc
                       href: /windows/desktop/api/Wingdi/nf-wingdi-setabortproc
-                    - name: StartDoc
+                    - name: Startdoc
                       href: /windows/desktop/api/Wingdi/nf-wingdi-startdoca
                     - name: StartPage
                       href: /windows/desktop/api/Wingdi/nf-wingdi-startpage
-                - name: Strutture API di stampa GDI
+                - name: Strutture dell'API di stampa GDI
                   href: gdi-print-api-structures.md
                   items:
-                    - name: DEVMODE
+                    - name: Devmode
                       href: /windows/win32/api/wingdi/ns-wingdi-devmodea
                     - name: DOCINFO
                       href: /windows/win32/api/Wingdi/ns-wingdi-docinfoa
@@ -2038,38 +2038,38 @@
                 - name: Funzioni di escape della stampante GDI
                   href: printer-escapes.md
                   items:
-                    - name: Escape della stampante CHECKJPEGFORMAT
+                    - name: CHECKJPEGFORMAT Printer Escape
                       href: /previous-versions/windows/desktop/legacy/dd183421(v=vs.85)
-                    - name: Escape della stampante CHECKPNGFORMAT
+                    - name: Escape stampante CHECKPNGFORMAT
                       href: /previous-versions/windows/desktop/legacy/dd183424(v=vs.85)
-                    - name: Escape della stampante DRAWPATTERNRECT
+                    - name: Escape stampante DRAWPATTERNRECT
                       href: /previous-versions/windows/desktop/legacy/dd162495(v=vs.85)
-                    - name: Escape della stampante GET_PS_FEATURESETTING
+                    - name: GET_PS_FEATURESETTING escape della stampante
                       href: /previous-versions/windows/desktop/legacy/dd144954(v=vs.85)
-                    - name: Escape della stampante GetTechnology
+                    - name: GETTECHNOLOGY Printer Escape
                       href: /previous-versions/windows/desktop/legacy/dd144931(v=vs.85)
                     - name: Escape della stampante PASSTHROUGH
                       href: /previous-versions/windows/desktop/legacy/dd162776(v=vs.85)
-                    - name: Escape della stampante POSTSCRIPT_DATA
+                    - name: POSTSCRIPT_DATA escape della stampante
                       href: /previous-versions/windows/desktop/legacy/dd162828(v=vs.85)
-                    - name: Escape della stampante POSTSCRIPT_IDENTIFY
+                    - name: POSTSCRIPT_IDENTIFY escape della stampante
                       href: /previous-versions/windows/desktop/legacy/dd162829(v=vs.85)
-                    - name: Escape della stampante POSTSCRIPT_INJECTION
+                    - name: POSTSCRIPT_INJECTION escape della stampante
                       href: /previous-versions/windows/desktop/legacy/dd162830(v=vs.85)
-                    - name: Escape della stampante POSTSCRIPT_PASSTHROUGH
+                    - name: POSTSCRIPT_PASSTHROUGH escape della stampante
                       href: /previous-versions/windows/desktop/legacy/dd162831(v=vs.85)
                     - name: Escape della stampante QUERYESCSUPPORT
                       href: /previous-versions/windows/desktop/legacy/ff686811(v=vs.85)
-                    - name: Escape della stampante SPCLPASSTHROUGH2
+                    - name: SPCLPASSTHROUGH2 Printer Escape
                       href: /previous-versions/windows/desktop/legacy/dd145110(v=vs.85)
             - name: Microsoft XPS Document Converter (MXDC)
               href: microsoft-xps-document-converter--mxdc-.md
               items:
-                - name: Funzione MXDC_ESCAPE
+                - name: MXDC_ESCAPE funzione
                   href: mxdc-escape.md
-                - name: Enumerazione MXDC_S0_PAGE_ENUMS
+                - name: enumerazione MXDC_S0_PAGE_ENUMS
                   href: mxdcs0pageenums.md
-                - name: Strutture di codice di escape MXDC
+                - name: Strutture del codice di escape MXDC
                   href: mxdc-escape-codes.md
                   items:
                     - name: MXDC_ESCAPE_HEADER_T
@@ -2091,7 +2091,7 @@
             - name: Microsoft XPS Document Writer (MXDW)
               href: microsoft-xps-document-writer.md
               items:
-                - name: Impostazioni di configurazione di MXDW
+                - name: Configurazione MXDW Impostazioni
                   href: mxdw-configuration-settings.md
         - name: API di stampa XPS
           href: xps-printing.md
@@ -2101,9 +2101,9 @@
             - name: Uso dell'API di stampa XPS
               href: using-the-xps-print-api.md
               items:
-                - name: 'Procedura: stampare con l''API di stampa XPS'
+                - name: 'Procedura: Stampare con l''API di stampa XPS'
                   href: printing-with-the-xpsprint-api.md
-                - name: 'Procedura: inviare dati direttamente a una stampante XPS'
+                - name: 'Procedura: Inviare dati direttamente a una stampante XPS'
                   href: sending-data-directly-to-an-xps-printer.md
             - name: Informazioni di riferimento sulle API di stampa XPS
               href: xpsprint-api.md
@@ -2123,7 +2123,7 @@
                       items:
                         - name: Chiudi
                           href: /windows/desktop/api/XpsPrint/nf-xpsprint-ixpsprintjobstream-close
-                - name: Funzioni API di stampa XPS
+                - name: Funzioni dell'API di stampa XPS
                   href: xpsprint-functions.md
                   items:
                     - name: StartXpsPrintJob
@@ -2135,22 +2135,22 @@
                   items:
                     - name: XPS_JOB_STATUS
                       href: /windows/win32/api/XpsPrint/ns-xpsprint-xps_job_status
-                - name: Enumerazioni API di stampa XPS
+                - name: Enumerazioni dell'API di stampa XPS
                   href: xpsprint-enumerations.md
                   items:
                     - name: XPS_JOB_COMPLETION
                       href: /windows/win32/api/XpsPrint/ne-xpsprint-xps_job_completion
-    - name: Stampa schema
+    - name: Schema di stampa
       href: printschema.md
       items:
         - name: Riferimento allo schema di stampa legacy
           href: print-schema.md
           items:
-            - name: Sfondo dello schema di stampa
+            - name: Stampare lo sfondo dello schema
               href: print-schema-background.md
             - name: Guida introduttiva
               href: quick-starter-guide.md
-            - name: Tecnologie Schema-Related di stampa
+            - name: Tecnologie di Schema-Related stampa
               href: print-schema-related-technologies.md
             - name: Note sulla lingua dello schema di stampa
               href: print-schema-language-notes.md
@@ -2181,10 +2181,10 @@
                   href: scoredproperty.md
                 - name: Valore
                   href: value.md
-            - name: Print Schema Framework
+            - name: Framework dello schema di stampa
               href: print-schema-framework.md
               items:
-                - name: Prefisso ambito
+                - name: Prefisso di ambito
                   href: scoping-prefix.md
                 - name: Costrutti di parametro
                   href: parameter-constructs.md
@@ -2197,12 +2197,12 @@
                   href: objects-and-names-defined-in-the-print-schema-keywords.md
                 - name: Attributi XML
                   href: xml-attributes.md
-                - name: Gestione dei colori e dello schema di stampa
+                - name: Gestione colori e schema di stampa
                   href: color-management-and-the-print-schema.md
             - name: Parole chiave pubbliche dello schema di stampa
               href: print-schema-public-keywords.md
               items:
-                - name: Parole chiave Public PrintCapabilities
+                - name: Parole chiave pubbliche PrintCapabilities
                   href: printcapabilities-public-keywords.md
                   items:
                     - name: Elementi configurabili dall'utente
@@ -2210,7 +2210,7 @@
                       items:
                         - name: DocumentBannerSheet
                           href: documentbannersheet.md
-                        - name: Documento di
+                        - name: Associazione documento
                           href: documentbinding.md
                         - name: DocumentCollate
                           href: documentcollate.md
@@ -2290,13 +2290,13 @@
                           href: pageforcefrontside.md
                         - name: PageICMRenderingIntent
                           href: pageicmrenderingintent.md
-                        - name: PageImageableSize dell'oggetto
+                        - name: PageImageableSize
                           href: pageimageablesize.md
                         - name: PageInputBin
                           href: pageinputbin.md
                         - name: PageMediaColor
                           href: pagemediacolor.md
-                        - name: PageMediaSize
+                        - name: Pagemediasize
                           href: pagemediasize.md
                         - name: PageMediaType
                           href: pagemediatype.md
@@ -2304,7 +2304,7 @@
                           href: pagemirrorimage.md
                         - name: PageNegativeImage
                           href: pagenegativeimage.md
-                        - name: PageOrientation
+                        - name: Orientamento pagina
                           href: pageorientation.md
                         - name: PageOutputBin
                           href: pageoutputbin.md
@@ -2316,9 +2316,9 @@
                           href: pagephotoprintingintent.md
                         - name: PagePoster
                           href: pageposter.md
-                        - name: PageResolution
+                        - name: Pageresolution
                           href: pageresolution.md
-                        - name: PageScaling
+                        - name: Scalabilità di pagine
                           href: pagescaling.md
                         - name: PageSourceColorProfile
                           href: pagesourcecolorprofile.md
@@ -2341,7 +2341,7 @@
                           href: documentcoverfrontsource.md
                         - name: DocumentImpositionColor
                           href: documentimpositioncolor.md
-                        - name: DocumentPageRanges
+                        - name: Controlli DocumentPageRanges
                           href: documentpageranges.md
                         - name: JobPrimaryBannerSheetSource
                           href: jobprimarybannersheetsource.md
@@ -2443,21 +2443,21 @@
                           href: joburi.md
                     - name: Inizializzatori di parametro
                       href: parameter-initializers.md
-            - name: Struttura del documento e dello schema PrintCapabilities
+            - name: Schema PrintCapabilities e costruzione di documenti
               href: printcapabilities-schema-and-document-construction.md
               items:
-                - name: Cenni preliminari sull'oggetto PrintCapabilities
+                - name: Panoramica di PrintCapabilities
                   href: overview-of-the-printcapabilities.md
                   items:
-                    - name: Configurazioni del dispositivo e dello spazio di configurazione del dispositivo
+                    - name: Spazio di configurazione del dispositivo e configurazioni dei dispositivi
                       href: device-configuration-space-and-device-configurations.md
                     - name: Documento PrintCapabilities come snapshot delle proprietà
                       href: printcapabilities-document-as-a-snapshot-of-properties.md
-                    - name: Rappresentazione di attributi come costrutti di funzionalità o di opzioni o come parametri
+                    - name: Rappresentazione degli attributi come costrutti di funzionalità/opzione o come parametri
                       href: representing-attributes-as-feature-option-constructs-or-as-parameters.md
-                    - name: Cosa non è un documento PrintCapabilities
+                    - name: Che cosa non è un documento PrintCapabilities
                       href: what-a-printcapabilities-document-is-not.md
-                    - name: Utilizzi dell'oggetto PrintCapabilities
+                    - name: Usi di PrintCapabilities
                       href: uses-of-the-printcapabilities.md
                 - name: Dipendenza di configurazione nello schema PrintCapabilities
                   href: configuration-dependency-in-the-printcapabilities-schema.md
@@ -2474,27 +2474,27 @@
                         - name: Definizioni di opzioni più elaborate
                           href: more-elaborate-option-definitions.md
                           items:
-                            - name: Istanze ScoredProperty annidate
+                            - name: Istanze scoredProperty annidate
                               href: nested-scoredproperty-instances.md
-                            - name: Parametri di riferimento
+                            - name: Riferimento ai parametri
                               href: referencing-parameters.md
-                            - name: Comportamento dell'interfaccia utente
+                            - name: Interfaccia utente comportamento
                               href: user-interface-behavior.md
-                            - name: Opzioni con parametri rispetto alle opzioni non parametrizzate
+                            - name: Opzioni con parametri e opzioni non parametrizzate
                               href: parameterized-options-versus-nonparameterized-options.md
                             - name: Aggiunta di istanze di proprietà
                               href: adding-property-instances.md
                         - name: Istanze di proprietà importanti
                           href: important-property-instances.md
                           items:
-                            - name: Nota per gli autori di GPD
+                            - name: Nota per gli autori gpd
                               href: note-to-gpd-authors.md
                     - name: Parametri nel documento PrintCapabilities
                       href: parameters-in-the-printcapabilities-document.md
                       items:
                         - name: Utilizzo di parametri
                           href: using-parameters.md
-                    - name: Limitazioni Schema-Imposed
+                    - name: Schema-Imposed limitazioni
                       href: schema-imposed-limitations.md
                 - name: Connessione di PrintCapabilities con lo schema di stampa
                   href: connecting-printcapabilities-with-the-print-schema.md
@@ -2504,13 +2504,13 @@
                   href: responsibilities-of-printcapabilities-providers.md
                 - name: Esempio di documento PrintCapabilities
                   href: printcapabilities-document-example.md
-            - name: Schema e costruzione di documenti PrintTicket
+            - name: Schema PrintTicket e costruzione di documenti
               href: printticket-schema-and-document-construction.md
               items:
                 - name: Panoramica della funzionalità PrintTicket
                   href: overview-of-printticket-functionality.md
                   items:
-                    - name: Scopo dell'oggetto PrintTicket
+                    - name: Scopo di PrintTicket
                       href: purpose-of-the-printticket.md
                     - name: Informazioni di configurazione non correlate a PrintCapabilities
                       href: configuration-information-not-related-to-printcapabilities.md
@@ -2518,21 +2518,21 @@
                       href: constraints-and-printticket-validation.md
                 - name: Sintassi e schema di PrintTicket
                   href: printticket-syntax-and-schema.md
-                - name: Elenchi di controllo di costruzione PrintTicket
+                - name: Elenchi di controllo per la costruzione di PrintTicket
                   href: printticket-construction-checklists.md
                   items:
-                    - name: Creazione di un oggetto PrintTicket generico
+                    - name: Creazione di un printticket generico
                       href: creating-a-generic-printticket.md
                     - name: Creazione di un Device-Specific PrintTicket
                       href: creating-a-device-specific-printticket.md
-                - name: Elenco di controllo convalida PrintTicket
+                - name: Elenco di controllo per la convalida di PrintTicket
                   href: printticket-validation-checklist.md
                 - name: Considerazioni aggiuntive per i provider PrintTicket
                   href: additional-considerations-for-printticket-providers.md
                   items:
-                    - name: Supporto di Delta PrintTicket
+                    - name: Supporto dei delta di PrintTicket
                       href: supporting-printticket-deltas.md
-                    - name: Creazione di un oggetto PrintTicket predefinito
+                    - name: Creazione di un printticket predefinito
                       href: creating-a-default-printticket.md
                     - name: Creazione di un documento PrintCapabilities
                       href: creating-a-printcapabilities-document.md

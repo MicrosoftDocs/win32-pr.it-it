@@ -1,11 +1,11 @@
 ---
-title: Proprietà Contents di IResultsViewer (WdsView. h)
+title: Proprietà Contents di IResultsViewer (WdsView.h)
 description: Questa proprietà tiene traccia del tipo di contenuto visualizzato nella visualizzazione risultati.
 ms.assetid: fad3c9c9-9bf4-4725-962a-ae285bcd23d4
 keywords:
-- Funzionalità contenuto proprietà ambiente Windows legacy
-- Contenuto proprietà caratteristiche ambiente Windows legacy, interfaccia IResultsViewer
-- Funzionalità dell'ambiente Windows legacy dell'interfaccia IResultsViewer, proprietà Contents
+- Proprietà Contents Funzionalità legacy Windows'ambiente
+- Proprietà Contents Legacy Windows Environment Features , interfaccia IResultsViewer
+- Interfaccia IResultsViewer legacy Windows funzionalità dell'ambiente, proprietà Contents
 topic_type:
 - apiref
 api_name:
@@ -16,17 +16,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05a7e0bc5b4d444b6af5639390d13fbfa8365ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 357b472dc73260f5374b317eed3c1c5d631560b247bcac947d3cfb899b39e20f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104341273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754538"
 ---
-# <a name="iresultsviewercontents-property"></a>Proprietà IResultsViewer:: Contents
+# <a name="iresultsviewercontents-property"></a>Proprietà IResultsViewer::Contents
 
 > [!NOTE]
-> Windows Desktop Search 2. x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece l' [API di ricerca di Windows](../search/-search-reference-entry-page.md) . 
+> Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
 Questa proprietà tiene traccia del tipo di contenuto visualizzato nella visualizzazione risultati.
 
@@ -34,7 +34,7 @@ Questa proprietà tiene traccia del tipo di contenuto visualizzato nella visuali
 
 ## <a name="property-value"></a>Valore proprietà
 
-Restituisce un puntatore al tipo di contenuto visualizzato nella visualizzazione dei risultati.
+Restituisce un puntatore al tipo di contenuto visualizzato nella visualizzazione risultati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -42,10 +42,10 @@ Restituisce un puntatore al tipo di contenuto visualizzato nella visualizzazione
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP con SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Server 2003 con \[ solo app desktop SP1\]<br/>                        |
+| Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Intestazione<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

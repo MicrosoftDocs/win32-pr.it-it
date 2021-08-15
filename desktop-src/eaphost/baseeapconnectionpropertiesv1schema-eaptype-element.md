@@ -41,8 +41,8 @@ ms.locfileid: "118498787"
 
 | Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ ms.locfileid: "118498787"
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapconnectionpropertiesv1](baseeapconnectionpropertiesv1schema-schema.md)

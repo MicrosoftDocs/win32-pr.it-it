@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_POINTERROUTEDTO
-description: Inviato quando l'input del puntatore in corso, per un ID puntatore esistente, esegue la transizione da un processo a un altro tra i contenuti configurati per il concatenamento tra processi (AddContentWithCrossProcessChaining).
+title: WM_POINTERROUTEDTO messaggio
+description: Inviato quando l'input del puntatore in corso, per un ID puntatore esistente, passa da un processo a un altro attraverso il contenuto configurato per il concatenamento tra processi (AddContentWithCrossProcessChaining).
 ms.assetid: 163E2C31-4E29-4CBA-B079-1963D4762D7B
 keywords:
-- Messaggi e notifiche di input del messaggio WM_POINTERROUTEDTO
+- WM_POINTERROUTEDTO messaggi di input e notifiche
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 7658aeef77a0f7e19f2449213e9332b4e60c9450
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9b7de7dd1affb9100a29613e3b4186d3d5bdaa32d853e683579fdcc62e7f981f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117695622"
 ---
-# <a name="wm_pointerroutedto-message"></a>Messaggio WM_POINTERROUTEDTO
+# <a name="wm_pointerroutedto-message"></a>WM_POINTERROUTEDTO messaggio
 
-Inviato quando l'input del puntatore in corso, per un ID puntatore esistente, esegue la transizione da un processo a un altro tra i contenuti configurati per il concatenamento tra processi ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
+Inviato quando l'input del puntatore in corso, per un ID puntatore esistente, passa da un processo a un altro attraverso il contenuto configurato per il concatenamento tra processi ([**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining)).
 
-Questo messaggio viene inviato al processo che non riceve attualmente l'input del puntatore.
+Questo messaggio viene inviato al processo che attualmente non riceve l'input del puntatore.
 
 
 ```C++
@@ -58,9 +58,9 @@ NULL
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio non viene inviato quando viene pubblicato un messaggio di [**WM_POINTERDOWN**](wm-pointerdown.md) per un nuovo ID puntatore in un processo diverso.
+Questo messaggio non viene inviato quando viene pubblicato [**WM_POINTERDOWN**](wm-pointerdown.md) messaggio per un nuovo ID puntatore in un processo diverso.
 
-Se un messaggio di **WM_POINTERROUTEDTO** viene pubblicato per primo, un messaggio di [**WM_POINTERDOWN**](wm-pointerdown.md) non viene inviato.
+Un [**WM_POINTERDOWN**](wm-pointerdown.md) messaggio non viene inviato se **viene WM_POINTERROUTEDTO** un messaggio di posta elettronica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,9 +68,9 @@ Se un messaggio di **WM_POINTERROUTEDTO** viene pubblicato per primo, un messagg
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2016\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2016 solo app desktop\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

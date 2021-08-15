@@ -4,12 +4,12 @@ ms.assetid: df6c69a7-6eb0-4662-a3aa-f3f895b42cbc
 title: Metodo IsAudioStreamEnabled
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c92df59479e5729c392eb25b6c6c075a52b4835b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a2131376346f2a0311fc5acd8e0051292a12fb0145b44226363c7d891a5ef3c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104520394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817476"
 ---
 # <a name="isaudiostreamenabled-method"></a>Metodo IsAudioStreamEnabled
 
@@ -28,10 +28,10 @@ Il `IsAudioStreamEnabled` metodo recupera un valore che indica se il flusso audi
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Specifica il flusso audio come valore intero compreso tra 0 e 7.
+Specifica il flusso audio come valore Intero compreso tra 0 e 7.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Restituisce un valore booleano che indica se il flusso audio specificato è disp
 
 ## <a name="remarks"></a>Commenti
 
-Sebbene un disco possa contenere fino a otto flussi audio indipendenti, ogni flusso non è necessariamente disponibile per ogni titolo. Un titolo di film principale, ad esempio, potrebbe avere tre flussi audio per l'inglese, spagnolo e giapponese, ma il titolo "attractions" potrebbe avere un solo flusso audio in inglese. Verificare sempre che un flusso sia disponibile per un titolo prima di impostare la proprietà [**CurrentAudioStream**](currentaudiostream-property.md) .
+Anche se un disco può contenere fino a otto flussi audio indipendenti, ogni flusso non è necessariamente disponibile per ogni titolo. Ad esempio, un titolo di film principale potrebbe avere tre flussi audio per l'inglese, lo spagnolo e il giapponese, ma il titolo "ComingAs" potrebbe avere un solo flusso audio in inglese. Verificare sempre che un flusso sia disponibile per un titolo prima di impostare la [**proprietà CurrentAudioStream.**](currentaudiostream-property.md)
 
  
 

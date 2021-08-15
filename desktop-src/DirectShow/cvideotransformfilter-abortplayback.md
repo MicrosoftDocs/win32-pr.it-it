@@ -1,7 +1,7 @@
 ---
-description: Il metodo AbortPlayback viene usato per segnalare un errore di streaming. Invia un \_ evento ERRORABORT EC al gestore del grafico dei filtri e invia una notifica di fine flusso a valle.
+description: Il metodo AbortPlayback viene usato per segnalare un errore di streaming. Invia un evento EC ERRORABORT a Filter Graph Manager e invia una notifica di fine \_ flusso a valle.
 ms.assetid: b48ec72f-d220-4b27-98fc-88eaa4f663eb
-title: Metodo CVideoTransformFilter. AbortPlayback (Vtrans. h)
+title: Metodo CVideoTransformFilter.AbortPlayback (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 952987dec315408920e92d79003480a01640d14e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6560e7ce704423bfecc519c709c2c08733fe90a2346324f9e1282571530293ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821936"
 ---
-# <a name="cvideotransformfilterabortplayback-method"></a>CVideoTransformFilter. AbortPlayback, metodo
+# <a name="cvideotransformfilterabortplayback-method"></a>Metodo CVideoTransformFilter.AbortPlayback
 
-Il `AbortPlayback` metodo viene usato per segnalare un errore di streaming. Invia un evento [**\_ ERRORABORT EC**](ec-errorabort.md) al gestore del grafico dei filtri e invia una notifica di fine flusso a valle.
+Il `AbortPlayback` metodo viene usato per segnalare un errore di streaming. Invia un [**evento EC \_ ERRORABORT**](ec-errorabort.md) a Filter Graph Manager e invia una notifica downstream di fine flusso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,13 +45,13 @@ HRESULT AbortPlayback(
 *h* 
 </dt> <dd>
 
-Valore **HRESULT** dell'operazione non riuscita. Questo valore viene utilizzato come primo parametro di evento per l' \_ evento ERRORABORT EC.
+**Valore HRESULT** dell'operazione non riuscita. Questo valore viene usato come primo parametro di evento per \_ l'evento EC ERRORABORT.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il valore del parametro *HR* .
+Restituisce il valore del *parametro hr.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,8 +59,8 @@ Restituisce il valore del parametro *HR* .
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Vtrans. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Vtrans.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

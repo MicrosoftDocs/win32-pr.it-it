@@ -1,6 +1,6 @@
 ---
 title: Proprietà connessione
-description: Informazioni sulle proprietà di connessione. Vedere le proprietà XML di esempio per varie configurazioni di rete e visualizzare altre risorse disponibili.
+description: Informazioni sulle proprietà di connessione. Vedere le proprietà XML di esempio per varie configurazioni di rete e visualizzare risorse aggiuntive disponibili.
 ms.assetid: 95c8f5d5-75c5-48c7-b6af-e9908df56c71
 ms.topic: article
 ms.date: 05/31/2018
@@ -15,13 +15,13 @@ ms.locfileid: "118498630"
 
 Negli argomenti seguenti vengono mostrate proprietà XML di esempio per varie configurazioni di rete. Queste proprietà XML usano gli elementi dello schema **EapHostConfig** **e Config.**
 
-Per altri esempi di schema, vedere [Schema EAP](https://go.microsoft.com/fwlink/p/?linkid=83914).
+Per altri esempi di schema, vedere [Schema EAP.](https://go.microsoft.com/fwlink/p/?linkid=83914)
 
 -   [Proprietà di MS-CHAPv2 EAP](eap-ms-chapv2-connection-properties.md)
 -   [Proprietà di connessione EAP-TLS](eap-tls-connection-properties.md)
--   [Proprietà di MS-CHAPv2 PEAP](peap-ms-chapv2-connection-properties.md)
+-   [Proprietà connessione MS-CHAPv2 PEAP](peap-ms-chapv2-connection-properties.md)
 -   [Proprietà connessione PEAP-TLS](peap-tls-connection-properties.md)
--   [Proprietà di connessione EAP dell'SDK](sdk-connection-properties.md)
+-   [Proprietà di connessione SDK EAP](sdk-connection-properties.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -30,7 +30,7 @@ Per altri esempi di schema, vedere [Schema EAP](https://go.microsoft.com/fwlink/
 [Proprietà utente](user-profiles.md)
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> </dl>
 
  

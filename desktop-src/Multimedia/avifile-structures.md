@@ -3,8 +3,8 @@ title: Strutture AVIFile
 description: Strutture AVIFile
 ms.assetid: 2b7cdbb6-8c53-49ad-a171-b58357531887
 keywords:
-- Informazioni di riferimento su AVIFile, strutture
-- informazioni di riferimento per AVIFile, strutture
+- Riferimento AVIFile,strutture
+- riferimento per AVIFile,strutture
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2c0cb11b7481c055f584401b830191ff07273693aa5b12dbf768217dd00997ab

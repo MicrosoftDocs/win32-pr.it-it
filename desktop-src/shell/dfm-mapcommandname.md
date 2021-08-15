@@ -1,6 +1,6 @@
 ---
-description: Inviato dall'implementazione del menu di scelta rapida predefinito per assegnare un nome a un comando di menu.
-title: Messaggio DFM_MAPCOMMANDNAME (Shlobj. h)
+description: Inviato dall'implementazione predefinita del menu di scelta rapida per assegnare un nome a un comando di menu.
+title: DFM_MAPCOMMANDNAME messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 8aa764f7-d5d4-4a84-94d2-993265e1eb5a
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 312817e5c530078b906af63e4e8c3d00595d3a04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e3dac1cdb3c04397a59b26a2212fe1c46b611ce72ba029aabd25e0b01c9000b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459977"
 ---
-# <a name="dfm_mapcommandname-message"></a>\_Messaggio DFM MAPCOMMANDNAME
+# <a name="dfm_mapcommandname-message"></a>Messaggio MAPCOMMANDNAME DFM \_
 
-Inviato dall'implementazione del menu di scelta rapida predefinito per assegnare un nome a un comando di menu.
+Inviato dall'implementazione predefinita del menu di scelta rapida per assegnare un nome a un comando di menu.
 
 
 ```C++
@@ -41,25 +41,25 @@ DFM_MAPCOMMANDNAME
 
 <dl> <dt>
 
-*defaultID* \[ in uscita\]
+*defaultID* \[ in, out\]
 </dt> <dd>
 
 Puntatore all'ID del comando di menu selezionato.
 
 </dd> <dt>
 
-*pszCommandName* \[ in\]
+*pszCommandName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una stringa Unicode che contiene il nome del comando.
+Puntatore a una stringa Unicode contenente il nome del comando.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene inviato alla funzione di callback o all'oggetto callback a seconda della modalità di implementazione dell'oggetto menu di scelta rapida predefinito. Sono disponibili due API per la relativa implementazione, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
+Questo messaggio viene inviato alla funzione di callback o all'oggetto callback a seconda della modalità di implementazione dell'oggetto menu di scelta rapida predefinito. Sono disponibili due API per l'implementazione, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
 
-[**DFM \_ INVOKECOMMANDEX**](dfm-invokecommandex.md) è una versione estesa di questo messaggio e fornisce ulteriori informazioni al callback. Usare **DFM \_ INVOKECOMMANDEX** se nell'implementazione sono necessarie informazioni aggiuntive fornite da tale interfaccia.
+[**DFM \_ INVOKECOMMANDEX è**](dfm-invokecommandex.md) una versione estesa di questo messaggio e fornisce ulteriori informazioni al callback. Usare **DFM \_ INVOKECOMMANDEX** se le informazioni aggiuntive fornite da tale interfaccia sono necessarie nell'implementazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,9 +67,9 @@ Questo messaggio viene inviato alla funzione di callback o all'oggetto callback 
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

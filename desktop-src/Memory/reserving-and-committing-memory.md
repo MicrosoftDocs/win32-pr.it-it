@@ -1,27 +1,27 @@
 ---
-description: Nell'esempio seguente viene illustrato l'utilizzo delle funzioni VirtualAlloc e VirtualFree per la conservazione e il commit della memoria in base alle esigenze di una matrice dinamica.
+description: L'esempio seguente illustra l'uso delle funzioni VirtualAlloc e VirtualFree per riservare e eseguire il commit della memoria in base alle esigenze per una matrice dinamica.
 ms.assetid: f46bd57d-7684-4a08-8ac7-de204aecb207
-title: Riserva e commit della memoria
+title: Prenotazione e commit della memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66ff5853d01561454265e1ee2102fbf6ebd9bb04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 615f3c4321dc432b5ef83a841cea12215563e7d103443512a4d3b2c553849540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386279"
 ---
-# <a name="reserving-and-committing-memory"></a>Riserva e commit della memoria
+# <a name="reserving-and-committing-memory"></a>Prenotazione e commit della memoria
 
-Nell'esempio seguente viene illustrato l'utilizzo delle funzioni [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) e [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) per la conservazione e il commit della memoria in base alle esigenze di una matrice dinamica. Per prima cosa, viene chiamato **VirtualAlloc** per riservare un blocco di pagine con **null** specificato come parametro dell'indirizzo di base, forzando il sistema a determinare il percorso del blocco. Successivamente, **VirtualAlloc** viene chiamato ogni volta che è necessario eseguire il commit di una pagina da questa area riservata e viene specificato l'indirizzo di base della pagina successiva di cui è stato eseguito il commit.
+L'esempio seguente illustra l'uso delle funzioni [**VirtualAlloc**](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) e [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) per riservare e eseguire il commit della memoria in base alle esigenze per una matrice dinamica. In primo **luogo, VirtualAlloc** viene chiamato per riservare un blocco di pagine con **NULL** specificato come parametro dell'indirizzo di base, forzando il sistema a determinare la posizione del blocco. In un secondo **momento, VirtualAlloc** viene chiamato ogni volta che è necessario eseguire il commit di una pagina da questa area riservata e viene specificato l'indirizzo di base della pagina successiva di cui eseguire il commit.
 
-Nell'esempio viene usata la sintassi strutturata di gestione delle eccezioni per eseguire il commit di pagine dall'area riservata. Ogni volta che si verifica un'eccezione di errore di pagina durante l'esecuzione del blocco **\_ \_ try** , viene eseguita la funzione di filtro nell'espressione che precede il blocco **\_ \_ except** . Se la funzione di filtro può allocare un'altra pagina, l'esecuzione continua nel blocco **\_ \_ try** nel punto in cui si è verificata l'eccezione. In caso contrario, viene eseguito il gestore di eccezioni nel blocco **\_ \_ except** . Per altre informazioni, vedere [gestione delle eccezioni strutturata](../debug/structured-exception-handling.md).
+Nell'esempio viene utilizzata la sintassi strutturata di gestione delle eccezioni per eseguire il commit di pagine dall'area riservata. Ogni volta che si verifica un'eccezione di errore di pagina durante l'esecuzione del blocco **\_ \_ try,** viene eseguita la funzione di filtro nell'espressione che precede il **\_ \_ blocco** except. Se la funzione di filtro può allocare un'altra pagina, l'esecuzione continua nel **\_ \_ blocco try** nel punto in cui si è verificata l'eccezione. In caso contrario, viene eseguito il gestore **eccezioni \_ \_** nel blocco except. Per altre informazioni, vedere [Structured Exception Handling](../debug/structured-exception-handling.md).
 
-In alternativa all'allocazione dinamica, il processo può semplicemente eseguire il commit dell'intera area anziché riservarlo. Entrambi i metodi generano lo stesso utilizzo di memoria fisica, perché le pagine di cui è stato eseguito il commit non utilizzano alcuna risorsa di archiviazione fisica fino a quando non vengono prima Il vantaggio dell'allocazione dinamica è che riduce al minimo il numero totale di pagine di cui è stato eseguito il commit nel sistema. Per le allocazioni di grandi dimensioni, il precommit di un'intera allocazione può causare l'esaurimento delle pagine di cui è possibile eseguire il commit, causando errori di allocazione della memoria virtuale.
+In alternativa all'allocazione dinamica, il processo può semplicemente eseguire il commit dell'intera area invece di riservarla. Entrambi i metodi comportano lo stesso utilizzo della memoria fisica perché le pagine di cui è stato eseguito il commit non utilizzano alcuna archiviazione fisica fino al primo accesso. Il vantaggio dell'allocazione dinamica è che riduce al minimo il numero totale di pagine di cui è stato eseguito il commit nel sistema. Per le allocazioni di dimensioni molto grandi, il pre-commit di un'intera allocazione può causare l'eccesso delle pagine di cui è possibile eseguire il commit da parte del sistema, causando errori di allocazione della memoria virtuale.
 
-La funzione [**ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) nel blocco **\_ \_ except** rilascia automaticamente le allocazioni di memoria virtuale, pertanto non è necessario liberare in modo esplicito le pagine quando il programma termina attraverso questo percorso di esecuzione. La funzione [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) libera le pagine riservate e di cui è stato eseguito il commit se il programma viene compilato con la gestione delle eccezioni disabilitata. Questa funzione usa **la \_ versione di MEM** per eseguire il commit e rilasciare l'intera area di pagine riservate e di cui è stato eseguito il commit
+La [**funzione ExitProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) nel blocco **\_ \_ except** rilascia automaticamente le allocazioni di memoria virtuale, pertanto non è necessario liberare in modo esplicito le pagine quando il programma termina tramite questo percorso di esecuzione. La [**funzione VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) libera le pagine riservate e di cui è stato eseguito il commit se il programma viene compilato con la gestione delle eccezioni disabilitata. Questa funzione usa **MEM \_ RELEASE per** decommettere e rilasciare l'intera area delle pagine riservate e di cui è stato eseguito il commit.
 
-Nell'esempio C++ riportato di seguito viene illustrata l'allocazione di memoria dinamica utilizzando un gestore di eccezioni strutturato
+Nell'esempio C++ seguente viene illustrata l'allocazione dinamica della memoria tramite un gestore eccezioni strutturato.
 
 
 ```C++

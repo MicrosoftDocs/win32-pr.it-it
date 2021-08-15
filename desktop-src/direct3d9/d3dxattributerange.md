@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7dfdf15f653fda77b1ca8c9a14cd32decee9658e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73fe2214b2c1b8acb1bc657bd41803c425b4c86f34d022d6367c3011eebd6d50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526809"
 ---
 # <a name="d3dxattributerange-structure"></a>Struttura D3DXATTRIBUTERANGE
 
@@ -100,9 +100,9 @@ Numero di vertici.
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un determinato identificatore di attributo (AttribId) durante il disegno del frame.
+Una tabella di attributi viene usata per identificare le aree della mesh che devono essere disegnate con trame, stati di rendering, materiali e così via diversi. Inoltre, l'applicazione può usare la tabella degli attributi per nascondere parti di una mesh non disegnando un determinato identificatore di attributo (AttribId) quando si disegna il frame.
 
-Il tipo LPD3DXATTRIBUTERANGE è definito come puntatore alla **struttura D3DXATTRIBUTERANGE.**
+Il tipo LPD3DXATTRIBUTERANGE è definito come un puntatore alla **struttura D3DXATTRIBUTERANGE.**
 
 
 ```

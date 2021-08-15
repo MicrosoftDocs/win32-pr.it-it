@@ -1,19 +1,19 @@
 ---
 description: GetFinalPathNameByHandle, introdotto in Windows Vista e Windows Server 2008, restituirà un percorso da un handle.
 ms.assetid: 359673bf-cc4c-4881-b946-ecdbef4a7ecb
-title: Acquisizione di un nome file da un handle di file
+title: Recupero di un nome file da un handle di file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d0c6fd8ea6839fdbfbe887f7a28b38571013b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f905051fdc9c26d16c00f3f1acb2629ae06b8581abb5e5de50944a74e0c6b8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386414"
 ---
-# <a name="obtaining-a-file-name-from-a-file-handle"></a>Acquisizione di un nome file da un handle di file
+# <a name="obtaining-a-file-name-from-a-file-handle"></a>Recupero di un nome file da un handle di file
 
-[**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea), introdotto in Windows Vista e windows Server 2008, restituirà un percorso da un handle. Se è necessario eseguire questa operazione nelle versioni precedenti di Windows, nell'esempio seguente viene ottenuto un nome file da un handle a un oggetto file utilizzando un oggetto mapping di file. Usa le funzioni [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) e [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) per creare il mapping. USA quindi la funzione [**GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) per ottenere il nome del file. Per i file remoti, stampa il percorso del dispositivo ricevuto da questa funzione. Per i file locali, converte il percorso in modo da usare una lettera di unità e stampa il percorso. Per testare questo codice, creare una funzione **Main** che apre un file usando [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) e passa l'handle risultante a `GetFileNameFromHandle` .
+[**GetFinalPathNameByHandle,**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea)introdotto in Windows Vista e Windows Server 2008, restituirà un percorso da un handle. Se è necessario eseguire questa operazione nelle versioni precedenti di Windows, nell'esempio seguente viene ottenuto un nome file da un handle a un oggetto file usando un oggetto mapping file. Usa le [**funzioni CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) e [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) per creare il mapping. Usa quindi la [**funzione GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) per ottenere il nome del file. Per i file remoti, stampa il percorso del dispositivo ricevuto da questa funzione. Per i file locali, converte il percorso per usare una lettera di unità e stampa questo percorso. Per testare questo codice, creare una **funzione main** che apre un file usando [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) e passa l'handle risultante a `GetFileNameFromHandle` .
 
 
 ```C++

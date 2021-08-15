@@ -1,6 +1,6 @@
 ---
-title: callnz bool-PS
-description: Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione contrassegnata dall'indice dell'etichetta. | callnz bool-PS
+title: callnz bool - ps
+description: Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione contrassegnata dall'indice dell'etichetta. | callnz bool - ps
 ms.assetid: 1b9ff276-c2b8-46cc-96ac-a5b5455c5cc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0516e62ce07c60866715591bc59123f38dc5c272
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 793feb1934b86b46f26050a67b5f26d94b9f277e31735c4d1912805374bab903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516627"
 ---
-# <a name="callnz-bool---ps"></a>callnz bool-PS
+# <a name="callnz-bool---ps"></a>callnz bool - ps
 
 Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione contrassegnata dall'indice dell'etichetta.
 
@@ -24,7 +24,7 @@ Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione con
 
 
 
-| callnz l \# , \[ ! \] b\# |
+| callnz l \# , \[ ! \] B\# |
 |----------------------|
 
 
@@ -33,17 +33,17 @@ Chiamare se diverso da zero. Esegue una chiamata condizionale all'istruzione con
 
 Dove:
 
--   l \# è un' [etichetta-PS](label---ps.md) che contrassegna l'inizio della subroutine da chiamare.
--   \[!\] modificatore negazioni facoltativo.
--   b \# identifica un [Registro booleano costante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   l \# è [un'etichetta , che](label---ps.md) contrassegna l'inizio della subroutine da chiamare.
+-   \[!\] è un modificatore di negazione facoltativo.
+-   b \# identifica un registro [booleano costante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni pixel shader | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| bool callnz           |      |      |      |      |      | x    | x     | x    | x     |
+| callnz bool           |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
@@ -66,7 +66,7 @@ if (specified Boolean register is not zero)
 
 <dl> <dt>
 
-[Istruzioni pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
+[Istruzioni per pixel shader](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
  

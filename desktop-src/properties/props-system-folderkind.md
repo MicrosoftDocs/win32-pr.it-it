@@ -1,19 +1,19 @@
 ---
-description: Questa proprietà rappresenta i tipi di contenuto archiviati in questa cartella specificata dal provider di archiviazione. Ogni tipo di cartella deve essere uno dei valori noti specificati da System. Kind definitionSystem. FolderKind è una proprietà ReadOnly, che deve essere aggiornata solo dal provider di archiviazione.
+description: Questa proprietà rappresenta i tipi di contenuto archiviati in questa cartella specificata dal provider di archiviazione. Ogni tipo di cartella deve essere uno dei valori noti specificati da System.Kind definitionSystem.FolderKind è una proprietà di sola lettura, che deve essere aggiornata solo dal provider di archiviazione.
 ms.assetid: 8a53c8bf-b564-4b01-880c-6e3ae0aaff58
-title: System. FolderKind
+title: System.FolderKind
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 979b7aeeab5f2117994aea89ba5fdaa7412a39f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f95a6cbdabe9b48f48f85f4fad34f62aaee055c2dd4635da7e52583ca0d0f2d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466616"
 ---
-# <a name="systemfolderkind"></a>System. FolderKind
+# <a name="systemfolderkind"></a>System.FolderKind
 
-Questa proprietà rappresenta i tipi di contenuto archiviati in questa cartella specificata dal provider di archiviazione. Ogni tipo di cartella deve essere uno dei valori noti specificati da System. Kind definitionSystem. FolderKind è una proprietà ReadOnly, che deve essere aggiornata solo dal provider di archiviazione.
+Questa proprietà rappresenta i tipi di contenuto archiviati in questa cartella specificata dal provider di archiviazione. Ogni tipo di cartella deve essere uno dei valori noti specificati da System.Kind definitionSystem.FolderKind è una proprietà di sola lettura, che deve essere aggiornata solo dal provider di archiviazione.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

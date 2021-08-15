@@ -22,7 +22,7 @@ Questa sezione contiene strutture che appartengono alla [**classe RealTimeStylus
 | Struttura                                        | Descrizione                                                           |
 |--------------------------------------------------|-----------------------------------------------------------------------|
 | [**Struttura StylusInfo**](/windows/desktop/api/RTSCom/ns-rtscom-stylusinfo)       | Fornisce informazioni sui tratti che definiscono un movimento.<br/> |
-| [**DATI \_ DEGLI EVENTI DI \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) | Contiene informazioni su un evento del sistema tablet.<br/>          |
+| [**DATI DEGLI \_ EVENTI DI \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) | Contiene informazioni su un evento del sistema tablet.<br/>          |
 
 
 

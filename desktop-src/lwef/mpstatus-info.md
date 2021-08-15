@@ -1,10 +1,10 @@
 ---
-title: Struttura MPSTATUS_INFO (MpClient. h)
-description: Informazioni sullo stato di malware Protection Manager.
+title: MPSTATUS_INFO struttura (MpClient.h)
+description: Informazioni sullo stato per Malware Protection Manager.
 ms.assetid: 614F14EC-64CC-4E3F-8A89-42AA1E0DC95D
 keywords:
-- Struttura MPSTATUS_INFO le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPSTATUS_INFO
+- MPSTATUS_INFO struttura Legacy Windows Environment Features
+- PMPSTATUS_INFO puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efe31981f819d85d13457553beb1ce3c869b98bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb93bd15fe05955c9e8d87828d4b94b08e3d577659c629b52b3f908cb045ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883302"
 ---
-# <a name="mpstatus_info-structure"></a>Struttura delle informazioni di MPSTATUS \_
+# <a name="mpstatus_info-structure"></a>Struttura MPSTATUS \_ INFO
 
-Informazioni sullo stato di malware Protection Manager.
+Informazioni sullo stato per Malware Protection Manager.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,73 +54,73 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Stato generale del prodotto. Si tratta di una combinazione di flag di bit del [**\_ flag MPSTATUS**](mpstatus-flag.md).
+Stato complessivo del prodotto. Si tratta di una combinazione di flag di bit [**da MPSTATUS \_ FLAG**](mpstatus-flag.md).
 
 </dd> <dt>
 
 **LastQuickScan**
 </dt> <dd>
 
-Tipo: **[ **\_ risultato MPSCAN**](mpscan-result.md)**
+Tipo: **[ **MPSCAN \_ RESULT**](mpscan-result.md)**
 
 </dd> <dd>
 
-Risultati dell'ultima analisi da parte di malware Protection Manager. Vedere [**il \_ risultato di MPSCAN**](mpscan-result.md).
+Risultati dell'ultima analisi da parte di Malware Protection Manager. Vedere [**MPSCAN \_ RESULT**](mpscan-result.md).
 
 </dd> <dt>
 
 **LastFullScan**
 </dt> <dd>
 
-Tipo: **[ **\_ risultato MPSCAN**](mpscan-result.md)**
+Tipo: **[ **MPSCAN \_ RESULT**](mpscan-result.md)**
 
 </dd> <dd>
 
-Risultati dell'ultima analisi completa da parte di malware Protection Manager. Vedere [**il \_ risultato di MPSCAN**](mpscan-result.md).
+Risultati dell'ultima analisi completa da parte di Malware Protection Manager. Vedere [**MPSCAN \_ RESULT**](mpscan-result.md).
 
 </dd> <dt>
 
 **ThreatStats**
 </dt> <dd>
 
-Tipo: **[ **MPTHREAT \_ stats**](mpthreat-stats.md)**
+Tipo: **[ **MPTHREAT \_ STATS**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Statistiche sulle minacce attive. Vedere [**MPTHREAT \_ Statistics**](mpthreat-stats.md).
+Statistiche sulle minacce attive. Vedere [**MPTHREAT \_ STATS**](mpthreat-stats.md).
 
 </dd> <dt>
 
 **ThreatState**
 </dt> <dd>
 
-Tipo: **[**MPTHREAT \_ stats \_ Data**](mpthreat-stats-data.md) \[ MP \_ Threat \_ Stat \_ Max \_ value + 1\]**
+Tipo: **[**MPTHREAT \_ STATS \_ DATA**](mpthreat-stats-data.md) \[ MP THREAT \_ \_ STAT MAX \_ \_ VALUE+1\]**
 
 </dd> <dd>
 
-Dati aggiuntivi sulle statistiche sulle minacce, ad esempio il numero di minacce. Vedere [**MPTHREAT \_ stats \_ Data**](mpthreat-stats-data.md).
+Dati aggiuntivi sulle statistiche delle minacce, ad esempio il numero di minacce. Vedere [**MPTHREAT \_ STATS \_ DATA**](mpthreat-stats-data.md).
 
 </dd> <dt>
 
 **Componente**
 </dt> <dd>
 
-Tipo: **[**MPCOMPONENT \_ stato**](mpcomponent-status.md) \[ MPCOMPONENT \_ MaxValue + 1\]**
+Tipo: **[**MPCOMPONENT \_ STATUS**](mpcomponent-status.md) \[ MPCOMPONENT \_ MAXVALUE+1\]**
 
 </dd> <dd>
 
-Matrice di stati per più componenti. Usare un valore dall'enumerazione [**\_ ID MPCOMPONENT**](mpcomponent-id.md) come indice nella matrice.
+Matrice di stati per più componenti. Usare un valore [**dell'enumerazione MPCOMPONENT \_ ID**](mpcomponent-id.md) come indice nella matrice.
 
 </dd> <dt>
 
 **ProductExpirationTime**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
-Timestamp scadenza prodotto in UNC. Questa operazione è valida solo se lo stato di scadenza è impostato.
+Timestamp di scadenza del prodotto in UNC. Questa opzione è valida solo se lo stato di scadenza è impostato.
 
 </dd> </dl>
 
@@ -130,9 +130,9 @@ Timestamp scadenza prodotto in UNC. Questa operazione è valida solo se lo stato
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -140,22 +140,22 @@ Timestamp scadenza prodotto in UNC. Questa operazione è valida solo se lo stato
 
 <dl> <dt>
 
-[**\_ID MPCOMPONENT**](mpcomponent-id.md)
+[**MPCOMPONENT \_ ID**](mpcomponent-id.md)
 </dt> <dt>
 
-[**\_stato MPCOMPONENT**](mpcomponent-status.md)
+[**STATO \_ MPCOMPONENT**](mpcomponent-status.md)
 </dt> <dt>
 
-[**risultato di MPSCAN \_**](mpscan-result.md)
+[**RISULTATO \_ MPSCAN**](mpscan-result.md)
 </dt> <dt>
 
-[**\_flag MPSTATUS**](mpstatus-flag.md)
+[**MPSTATUS \_ FLAG**](mpstatus-flag.md)
 </dt> <dt>
 
-[**\_statistiche MPTHREAT**](mpthreat-stats.md)
+[**STATISTICHE DI \_ MPTHREAT**](mpthreat-stats.md)
 </dt> <dt>
 
-[**\_dati statistiche \_ MPTHREAT**](mpthreat-stats-data.md)
+[**DATI DELLE STATISTICHE DI MPTHREAT \_ \_**](mpthreat-stats-data.md)
 </dt> </dl>
 
  

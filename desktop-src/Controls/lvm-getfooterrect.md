@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETFOOTERRECT (COMmctrl. h)
-description: Recupera le coordinate del piè di pagina per un controllo visualizzazione elenco. Inviare questo messaggio in modo esplicito o utilizzando la \_ macro GetFooterRect di ListView.
+title: LVM_GETFOOTERRECT messaggio (Commctrl.h)
+description: Recupera le coordinate del piè di pagina per un controllo di visualizzazione elenco. Inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetFooterRect.
 ms.assetid: f8816f35-c1d2-4072-81d3-0a9a3df53d64
 keywords:
-- Controlli di Windows Message LVM_GETFOOTERRECT
+- LVM_GETFOOTERRECT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31df3a1b7b29e5ad9191da9e990e04daec99e948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 39bc2c5cd724c9b5b4885b99123489e49ead52243d43388e7eb22808fb43a826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104118999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411460"
 ---
-# <a name="lvm_getfooterrect-message"></a>\_Messaggio GETFOOTERRECT LVM
+# <a name="lvm_getfooterrect-message"></a>Messaggio LVM \_ GETFOOTERRECT
 
-Recupera le coordinate del piè di pagina per un controllo visualizzazione elenco. Inviare questo messaggio in modo esplicito o utilizzando la macro [**\_ GetFooterRect di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooterrect) .
+Recupera le coordinate del piè di pagina per un controllo di visualizzazione elenco. Inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView GetFooterRect.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooterrect)
 
 ## <a name="parameters"></a>Parametri
 
@@ -36,16 +36,16 @@ Non usato. Deve essere 0.
 
 </dd> <dt>
 
-*lParam* \[ in uscita\]
+*lParam* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) per ricevere le coordinate. Il processo chiamante è responsabile dell'allocazione di questa struttura. Le coordinate ricevute sono espresse come coordinate client.
+Puntatore a una [**struttura RECT**](/previous-versions//dd162897(v=vs.85)) per ricevere le coordinate. Il processo chiamante è responsabile dell'allocazione di questa struttura. Le coordinate ricevute sono espresse come coordinate client.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

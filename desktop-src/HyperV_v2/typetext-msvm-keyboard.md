@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391630"
 ---
-# <a name="typetext-method-of-the-msvm_keyboard-class"></a>Metodo TypeText della classe Msvm \_ Keyboard
+# <a name="typetext-method-of-the-msvm_keyboard-class"></a>Metodo TypeText della classe Keyboard \_ Msvm
 
-Simula una serie di caratteri digitati. Equivale a chiamare [**PressKey seguito**](presskey-msvm-keyboard.md) da [**ReleaseKey**](releasekey-msvm-keyboard.md) per ogni carattere nella stringa.
+Simula una serie di caratteri digitati. Equivale a chiamare [**PressKey**](presskey-msvm-keyboard.md) seguito da [**ReleaseKey**](releasekey-msvm-keyboard.md) per ogni carattere nella stringa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ uint32 TypeText(
 *asciiText* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **string**
+Tipo: **stringa**
 
 Serie di caratteri ASCII o Unicode da digitare. La lunghezza massima di questa stringa dipende dal tipo di caratteri nella stringa.
 
@@ -67,13 +67,13 @@ Un valore restituito pari a zero indica l'esito positivo. Un valore restituito p
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
-**Non riuscito** (32768)
+**Operazione non** riuscita (32768)
 </dt> <dt>
 
 **Accesso negato** (32769)
@@ -108,11 +108,11 @@ Un valore restituito pari a zero indica l'esito positivo. Un valore restituito p
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla [**classe Tastiera Msvm \_**](msvm-keyboard.md) potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+L'accesso alla [**classe Tastiera Msvm \_**](msvm-keyboard.md) potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio C# seguente simula la digitazione di testo. Le utilità a cui si fa riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
+L'esempio C# seguente simula la digitazione di testo. Le utilità di riferimento sono disponibili in [Utilità comuni per gli esempi di virtualizzazione (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -191,7 +191,7 @@ namespace HyperVSamples
 
 
 
-Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene simulata la digitazione di testo.
+L'esempio Visual Basic Scripting Edition (VBScript) seguente simula la digitazione di testo.
 
 
 ```VB
@@ -330,7 +330,7 @@ End Function
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

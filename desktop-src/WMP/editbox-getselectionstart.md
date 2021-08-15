@@ -3,7 +3,7 @@ title: EDITBOX.getSelectionStart
 description: Il metodo getSelectionStart recupera la posizione iniziale del testo selezionato nel controllo casella di modifica.
 ms.assetid: 2d7efe14-549c-4f73-96a7-b8ce88b881ad
 keywords:
-- EditBOX.getSelectionStart Windows Media Player
+- EDITBOX.getSelectionStart Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -50,7 +50,7 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
 
 
 

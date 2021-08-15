@@ -14,7 +14,7 @@ ms.locfileid: "118450033"
 # <a name="toolbars"></a>Barre degli strumenti
 
 > [!NOTE]
-> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida alla progettazione è stata creata Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
 Le barre degli strumenti consentono di raggruppare i comandi per un accesso efficiente.
 
@@ -22,12 +22,12 @@ Le barre degli strumenti consentono di raggruppare i comandi per un accesso effi
 
 Alcune barre degli strumenti tipiche.
 
-**Usare le barre degli strumenti oltre o al posto delle barre dei menu.** Le barre degli strumenti possono essere più efficienti delle barre dei menu perché sono dirette (sempre visualizzate invece di essere visualizzate al clic del mouse), immediate (anziché richiedere input aggiuntivo) e contengono i comandi usati più di frequente (anziché un elenco completo). A differenza delle barre dei menu, le barre degli strumenti non devono essere complete o facilmente esplicativi, ma solo rapide, convenienti ed efficienti.
+**Usare le barre degli strumenti oltre o al posto delle barre dei menu.** Le barre degli strumenti possono essere più efficienti rispetto alle barre dei menu perché sono dirette (sempre visualizzate invece di essere visualizzate al clic del mouse), immediate (anziché richiedere input aggiuntivo) e contengono i comandi usati più di frequente (anziché un elenco completo). A differenza delle barre dei menu, le barre degli strumenti non devono essere complete o autosplicative, ma solo rapide, convenienti ed efficienti.
 
-Alcune barre degli strumenti sono personalizzabili, consentendo agli utenti di aggiungere o rimuovere barre degli strumenti, modificarne le dimensioni e la posizione e persino modificarne il contenuto. Alcuni tipi di barre degli strumenti possono essere disancosi, determinando una finestra della tavolozza. Per altre informazioni sui tipi di barre degli strumenti, vedere [Modelli di utilizzo](#usage-patterns) in questo articolo.
+Alcune barre degli strumenti sono personalizzabili, consentendo agli utenti di aggiungere o rimuovere barre degli strumenti, modificarne le dimensioni e la posizione e persino modificarne il contenuto. Alcuni tipi di barre degli strumenti possono essere disinseriti, determinando una finestra del riquadro. Per altre informazioni sulle varietà di barre degli strumenti, vedere [Modelli di utilizzo](#usage-patterns) in questo articolo.
 
 > [!Note]  
-> Le linee guida [relative a menu,](cmd-menus.md) [pulsanti di](ctrl-command-buttons.md)comando e [icone](vis-icons.md) sono presentate in articoli separati.
+> Le linee guida relative [a menu,](cmd-menus.md) [pulsanti](ctrl-command-buttons.md)di comando e [icone](vis-icons.md) sono presentate in articoli separati.
 
  
 
@@ -35,89 +35,89 @@ Alcune barre degli strumenti sono personalizzabili, consentendo agli utenti di a
 
 Per decidere, prendi in considerazione queste domande:
 
--   **La finestra è una finestra primaria?** Le barre degli strumenti funzionano bene per le finestre primarie, ma in genere sono opprimenti per le finestre secondarie. Per le finestre secondarie, usare invece i [pulsanti di](ctrl-command-buttons.md)comando , i pulsanti di [menu](ctrl-command-buttons.md)e [i](ctrl-command-links.md) collegamenti.
--   **È presente un numero ridotto di comandi usati di frequente?** Le barre degli strumenti non possono gestire il numero di comandi delle barre dei menu, quindi funzionano meglio come un modo per accedere in modo efficiente a un numero ridotto di comandi usati di frequente.
+-   **La finestra è una finestra primaria?** Le barre degli strumenti funzionano bene per le finestre primarie, ma in genere sono molto grandi per le finestre secondarie. Per le finestre secondarie, [usare i pulsanti di](ctrl-command-buttons.md)comando, i pulsanti di [menu](ctrl-command-buttons.md)e [i collegamenti.](ctrl-command-links.md)
+-   **È presente un numero ridotto di comandi usati di frequente?** Le barre degli strumenti non possono gestire tutti i comandi delle barre dei menu, quindi funzionano meglio come un modo per accedere in modo efficiente a un numero ridotto di comandi usati di frequente.
 -   **La maggior parte dei comandi è immediata?** In altre informazioni, si tratta principalmente di comandi che non richiedono input aggiuntivo? Per essere efficienti, le barre degli strumenti devono avere un aspetto diretto e immediato. In caso contrario, le barre dei menu sono più adatte per i comandi che richiedono input aggiuntivo.
--   **La maggior parte dei comandi può essere presentata direttamente?** Ciò significa che gli utenti interagiscono con loro con un solo clic? Anche se alcuni comandi possono essere presentati usando i pulsanti di menu, presentando la maggior parte dei comandi in questo modo si omette l'efficienza della barra degli strumenti, rendendo una barra dei menu una scelta migliore.
--   **I comandi sono rappresentati in modo ben da icone?** I pulsanti della barra degli strumenti sono in genere rappresentati da icone anziché da etichette di testo (anche se alcuni pulsanti della barra degli strumenti usano entrambi), mentre i comandi di menu sono rappresentati dal relativo testo. Se le icone dei comandi non sono di alta qualità e non sono auto-esplicativi, una barra dei menu può essere una scelta migliore.
+-   **La maggior parte dei comandi può essere presentata direttamente?** In altri, gli utenti interagiscono con loro con un solo clic? Anche se alcuni comandi possono essere presentati usando i pulsanti di menu, la visualizzazione della maggior parte dei comandi in questo modo compromette l'efficienza della barra degli strumenti, rendendo una barra dei menu una scelta migliore.
+-   **I comandi sono ben rappresentati dalle icone?** I pulsanti della barra degli strumenti sono in genere rappresentati da icone anziché etichette di testo (anche se alcuni pulsanti della barra degli strumenti usano entrambi), mentre i comandi di menu sono rappresentati dal relativo testo. Se le icone dei comandi non sono di alta qualità e non sono auto-esplicativi, una barra dei menu potrebbe essere una scelta migliore.
 
-Se il programma dispone di una barra degli strumenti senza barra dei menu [](ctrl-command-buttons.md)e la maggior parte dei comandi è accessibile indirettamente tramite pulsanti di menu e pulsanti di menu, questa barra degli strumenti è essenzialmente una barra dei menu. Applicare invece [il modello di menu della](cmd-menus.md) barra degli strumenti nelle linee guida per i menu.
+Se il programma dispone di una barra degli strumenti senza barra dei menu e la maggior parte dei comandi è accessibile indirettamente tramite pulsanti di menu e pulsanti di [divisione,](ctrl-command-buttons.md)questa barra degli strumenti è essenzialmente una barra dei menu. Applicare invece [il modello di menu della](cmd-menus.md) barra degli strumenti nelle linee guida menu.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-Una buona barra dei menu è un catalogo completo di tutti i comandi di primo livello disponibili, mentre una buona barra degli strumenti offre un accesso rapido e pratico ai comandi usati di frequente. Una barra degli strumenti non tenta di formare gli utenti semplicemente renderli produttivi. Quando gli utenti imparano ad accedere a un comando su una barra degli strumenti, raramente continuano ad accedere al comando dalla barra dei menu. Per questi motivi, non è necessario che la barra dei menu di un programma e la relativa barra degli strumenti corrispondano direttamente.
+Una buona barra dei menu è un catalogo completo di tutti i comandi di primo livello disponibili, mentre una buona barra degli strumenti offre un accesso rapido e pratico ai comandi usati di frequente. Una barra degli strumenti non tenta di eseguire il training degli utenti solo per renderli produttivi. Dopo aver appreso come accedere a un comando su una barra degli strumenti, gli utenti raramente continuano ad accedere al comando dalla barra dei menu. Per questi motivi, non è necessario che la barra dei menu di un programma e la relativa barra degli strumenti corrispondano direttamente.
 
 ### <a name="toolbars-vs-menu-bars"></a>Barre degli strumenti e barre dei menu
 
-In genere, le barre degli strumenti sono diverse dalle barre dei menu nei modi seguenti:
+Tradizionalmente, le barre degli strumenti sono diverse dalle barre dei menu nei modi seguenti:
 
 -   **Frequenza.** Le barre degli strumenti presentano solo i comandi usati più di frequente, mentre le barre dei menu catalogano tutti i comandi di primo livello disponibili all'interno di un programma.
--   **Immediatezza.** Il clic su un comando della barra degli strumenti viene eseguito immediatamente, mentre un comando di menu potrebbe richiedere un input aggiuntivo. Ad esempio, un comando Stampa in una barra dei menu visualizza prima la finestra di dialogo Stampa, mentre un pulsante della barra degli strumenti Stampa stampa immediatamente una singola copia di un documento sulla stampante predefinita.
+-   **Immediatezza.** Facendo clic su un comando della barra degli strumenti viene eseguito immediatamente, mentre un comando di menu potrebbe richiedere un input aggiuntivo. Ad esempio, un comando Stampa in una barra dei menu visualizza prima la finestra di dialogo Stampa, mentre un pulsante della barra degli strumenti Stampa stampa immediatamente una singola copia di un documento nella stampante predefinita.
 
     ![Screenshot del pulsante della stampante della barra degli strumenti selezionato ](images/cmd-toolbars-image2.png)
 
-    In questo esempio, facendo clic sul pulsante della barra degli strumenti Stampa viene stampata immediatamente una singola copia di un documento sulla stampante predefinita.
+    In questo esempio, facendo clic sul pulsante Della barra degli strumenti Stampa viene immediatamente stampata una singola copia di un documento nella stampante predefinita.
 
 -   **Immediatezza.** I comandi della barra degli strumenti vengono richiamati con un solo clic, mentre i comandi della barra dei menu richiedono lo spostamento all'interno del menu.
--   **Numero e densità.** Lo spazio sullo schermo richiesto da una barra degli strumenti è proporzionale al numero di comandi e lo spazio viene sempre usato, anche se non lo sono. Di conseguenza, le barre degli strumenti devono usare il proprio spazio in modo efficiente. Al contrario, i comandi della barra dei menu sono in genere nascosti e la loro struttura gerarchica consente un numero qualsiasi di comandi.
--   **Dimensioni e presentazione.** Per creare un pacchetto di molti comandi in uno spazio ridotto, le barre degli strumenti usano in genere comandi basati su icone (con etichette basate su descrizione comando), mentre le barre dei menu usano comandi basati su testo (con icone facoltative). Anche se i pulsanti della barra degli strumenti possono avere etichette di testo standard, usano molto più spazio.
+-   **Numero e densità.** Lo spazio dello schermo richiesto da una barra degli strumenti è proporzionale al numero di comandi e lo spazio viene sempre usato, anche se non lo sono. Di conseguenza, le barre degli strumenti devono usare il proprio spazio in modo efficiente. Al contrario, i comandi della barra dei menu sono in genere nascosti alla visualizzazione e la relativa struttura gerarchica consente qualsiasi numero di comandi.
+-   **Dimensioni e presentazione.** Per imballare molti comandi in uno spazio ridotto, le barre degli strumenti in genere usano comandi basati su icone (con etichette basate su descrizione comando), mentre le barre dei menu usano comandi basati su testo (con icone facoltative). Anche se i pulsanti della barra degli strumenti possono avere etichette di testo standard, questi usano molto più spazio.
 
     ![Screenshot della barra degli strumenti con etichetta di invio/ricezione ](images/cmd-toolbars-image3.png)
 
-    I pulsanti della barra degli strumenti con etichetta hanno una quantità di spazio almeno tre volte superiore a quelli senza etichetta.
+    I pulsanti della barra degli strumenti con etichetta hanno almeno tre volte più spazio di quelli senza etichetta.
 
--   **Auto-esplicativo.** Le barre degli strumenti ben progettate necessitano di icone per lo più auto-esplicativi perché gli utenti non possono trovare i comandi in modo efficiente usando solo le descrizioni comando. Tuttavia, le barre degli strumenti continuano a funzionare correttamente se alcuni comandi usati meno di frequente non sono auto-esplicativi.
+-   **Auto-esplicativo.** Le barre degli strumenti ben progettate necessitano di icone per lo più autosplicative perché gli utenti non possono trovare i comandi in modo efficiente solo usando le descrizioni comando. Tuttavia, le barre degli strumenti funzionano ancora bene se alcuni comandi usati meno di frequente non sono auto-esplicativi.
 
     ![Screenshot della barra degli strumenti con icone familiari ](images/cmd-toolbars-image4.png)
 
-    In questo esempio, le icone usate più di frequente sono di tipo auto-esplicativo.
+    In questo esempio, le icone usate più di frequente sono auto-esplicativi.
 
--   **Riconoscibile e distinguibile.** Per i comandi usati di frequente, gli utenti ricordano gli attributi dei pulsanti della barra degli strumenti, ad esempio posizione, forma e colore. Con le barre degli strumenti ben progettate, gli utenti possono trovare rapidamente i comandi anche se non ricordano esattamente il simbolo dell'icona. Al contrario, gli utenti ricordano le posizioni dei comandi della barra dei menu usate di frequente, ma si basano sulle etichette dei comandi per effettuare le selezioni.
+-   **Riconoscibile e distinguibile.** Per i comandi usati di frequente, gli utenti ricordano gli attributi dei pulsanti della barra degli strumenti, ad esempio posizione, forma e colore. Con le barre degli strumenti ben progettate, gli utenti possono trovare rapidamente i comandi anche se non ricordano il simbolo esatto dell'icona. Al contrario, gli utenti ricordano le posizioni dei comandi della barra dei menu usate di frequente, ma si basano sulle etichette dei comandi per effettuare selezioni.
 
     ![Screenshot della finestra di dialogo delle opzioni dello strumento di cattura ](images/cmd-toolbars-image5.png)
 
-    Per i comandi della barra degli strumenti, la posizione distintiva, la forma e il colore consentono di rendere le icone riconoscibili e distinguibili.
+    Per i comandi della barra degli strumenti, la posizione, la forma e il colore distintivi consentono di rendere le icone riconoscibili e distinguibili.
 
     ![Screenshot della barra dei menu con il comando file selezionato ](images/cmd-toolbars-image6.png)
 
-    Per i comandi della barra dei menu, gli utenti dipendono in definitiva dalle etichette.
+    Per i comandi della barra dei menu, gli utenti dipendono in ultima analisi dalle etichette.
 
 ### <a name="efficiency"></a>Efficienza
 
-Date le caratteristiche, le barre degli strumenti devono essere progettate principalmente per migliorare l'efficienza. Una barra degli strumenti inefficiente non ha senso.
+Date le caratteristiche, le barre degli strumenti devono essere progettate principalmente per l'efficienza. Una barra degli strumenti inefficiente non ha alcun senso.
 
 **Se si fa una sola cosa...**
 
-Assicurarsi che le barre degli strumenti siano progettate principalmente per l'efficienza. Concentrare le barre degli strumenti sui comandi usati di frequente, immediati, diretti e rapidamente riconoscibili.
+Assicurarsi che le barre degli strumenti siano progettate principalmente per garantire l'efficienza. Concentrare le barre degli strumenti sui comandi usati di frequente, immediati, diretti e rapidamente riconoscibili.
 
 ### <a name="hiding-menu-bars"></a>Nascondere le barre dei menu
 
-In genere, le barre degli strumenti funzionano in modo ottimale insieme alle barre dei menu: le barre degli strumenti sono efficienti e offrono una buona completezza. **La presenza di barre dei menu e barre degli strumenti consente a ognuna di concentrarsi sui punti di forza senza compromissione.**
+In genere, le barre degli strumenti funzionano in modo ottimale insieme alle barre dei menu: le barre degli strumenti sono efficienti e le barre dei menu sono complete. **La presenza di barre dei menu e barre degli strumenti consente a ognuna di concentrarsi sui punti di forza senza compromessi.**
 
 Sorprendentemente, questo modello si suddivide in semplici programmi. Per i programmi con pochi comandi, avere sia una barra dei menu che una barra degli strumenti non ha senso perché la barra dei menu finisce per essere una versione ridondante e inefficiente della barra degli strumenti.
 
-Per eliminare questa ridondanza, molti programmi semplici in Windows Vista si concentrano sulla fornitura di comandi esclusivamente tramite la barra degli strumenti e sul nascondere la barra dei menu per impostazione predefinita. Tali programmi includono Windows Explorer, Windows Internet Explorer, Windows Media Player e Windows Raccolta foto.
+Per eliminare questa ridondanza, molti semplici programmi in Windows Vista si concentrano sulla necessità di fornire comandi esclusivamente tramite la barra degli strumenti e nascondere la barra dei menu per impostazione predefinita. Tali programmi includono Windows Explorer, Windows Internet Explorer, Windows Media Player e Windows Raccolta foto.
 
-Questa non è una piccola modifica. La rimozione della barra dei menu modifica fondamentalmente la natura delle barre degli strumenti perché tali barre degli strumenti devono essere complete e modificare nei modi seguenti:
+Questa non è una piccola modifica. La rimozione della barra dei menu modifica fondamentalmente la natura delle barre degli strumenti, perché tali barre degli strumenti devono essere complete e modificare nei modi seguenti:
 
 -   **Frequenza.** La rimozione della barra dei menu significa che tutti i comandi non disponibili direttamente da una finestra o dai relativi menu di scelta rapida devono essere accessibili dalla barra degli strumenti, indipendentemente dalla frequenza d'uso.
--   **Immediatezza.** La rimozione della barra dei menu rende la barra degli strumenti l'unico punto di accesso visibile per i comandi, richiedendo che la barra degli strumenti abbia le versioni completamente funzionali. Ad esempio, se non è presente alcuna barra dei menu, un comando Stampa su una barra degli strumenti deve visualizzare la finestra di dialogo Stampa anziché stampare immediatamente. Anche se l'uso di un pulsante di menu suddiviso è un compromesso eccellente in questo caso. Vedere [Menu Standard e pulsanti di menu suddivisi](#standard-menu-and-split-buttons) per il pulsante di menu standard Stampa.
+-   **Immediatezza.** La rimozione della barra dei menu rende la barra degli strumenti l'unico punto di accesso visibile per i comandi, richiedendo che la barra degli strumenti abbia le versioni completamente funzionali. Ad esempio, se non è presente alcuna barra dei menu, un comando Stampa su una barra degli strumenti deve visualizzare la finestra di dialogo Stampa anziché stampare immediatamente. Anche se in questo caso l'uso di un pulsante di divisione è un compromesso eccellente. Vedere [Menu Standard e pulsanti di divisione](#standard-menu-and-split-buttons) per il pulsante di divisione Stampa standard.
 
-    ![Screenshot delle opzioni della barra degli strumenti e del comando di stampa ](images/cmd-toolbars-image7.png)
+    ![Screenshot della barra degli strumenti e delle opzioni del comando di stampa ](images/cmd-toolbars-image7.png)
 
-    In questo esempio il pulsante della barra degli strumenti Stampa Windows Raccolta foto dispone di un comando Stampa che visualizza la finestra di dialogo Stampa .
+    In questo esempio il pulsante della barra degli strumenti Stampa Windows Raccolta foto un comando Stampa che visualizza la finestra di dialogo Stampa .
 
 -   **Immediatezza.** Per risparmiare spazio ed evitare confusione, i comandi usati meno di frequente possono essere spostati nei pulsanti di menu, rendendoli meno diretti.
 
-Le barre degli strumenti usate per integrare una barra dei menu sono progettate in modo diverso rispetto alle barre degli strumenti progettate per l'uso con una barra dei menu rimossa o nascosta. E poiché non è possibile presupporre che gli utenti visualizzano una barra dei menu nascosta per eseguire un singolo comando, nascondere una barra dei menu deve essere considerato come rimuoverla completamente quando si prendono decisioni di progettazione. Se si nasconde la barra dei menu per impostazione predefinita, non presupporre che gli utenti pensino a visualizzare la barra dei menu per trovare un comando o persino a capire come visualizzarla.
+Le barre degli strumenti usate per integrare una barra dei menu sono progettate in modo diverso rispetto alle barre degli strumenti progettate per l'uso con una barra dei menu rimossa o nascosta. Inoltre, poiché non è possibile presupporre che gli utenti visualizzano una barra dei menu nascosta per eseguire un singolo comando, nascondere una barra dei menu deve essere considerata come rimuoverla completamente quando si prendono decisioni di progettazione. Se si nasconde la barra dei menu per impostazione predefinita, non presupporre che gli utenti pensino a visualizzare la barra dei menu per trovare un comando o persino a capire come visualizzarla.
 
 La progettazione di una barra degli strumenti per il funzionamento senza una barra dei menu spesso comporta alcune compromissione. Ma per efficienza, non compromettere troppo. Se nascondere la barra dei menu comporta una barra degli strumenti inefficiente, non nascondere la barra dei menu.
 
 ### <a name="keyboard-accessibility"></a>Accessibilità tramite tastiera
 
-Dalla tastiera, l'accesso alle barre degli strumenti è piuttosto diverso dall'accesso alle barre dei menu. Le barre dei menu ricevono lo stato attivo quando gli utenti premono ALT e perdono lo stato attivo per l'input con il tasto ESC. Quando una barra dei menu ha lo stato attivo per l'input, viene spostata indipendentemente dal resto della finestra, gestendo tutti i tasti di direzione, Home, Fine e Tab. Al contrario, le barre degli strumenti ricevono lo stato attivo per l'input quando gli utenti premono TAB per l'intero contenuto della finestra. Poiché le barre degli strumenti sono l'ultima nell'ordine di tabulazione, l'attivazione potrebbe richiedere molto tempo in una pagina occupata (a meno che gli utenti non sappiano usare MAIUSC+TAB per spostarsi all'indietro).
+Dalla tastiera, l'accesso alle barre degli strumenti è piuttosto diverso dall'accesso alle barre dei menu. Le barre dei menu ricevono lo stato attivo quando gli utenti premono ALT e perdono lo stato attivo per l'input con il tasto ESC. Quando una barra dei menu ha lo stato attivo per l'input, viene spostata indipendentemente dal resto della finestra, gestendo tutti i tasti di direzione, Home, Fine e Tab. Al contrario, le barre degli strumenti ricevono lo stato attivo per l'input quando gli utenti preme TAB per l'intero contenuto della finestra. Poiché le barre degli strumenti sono l'ultima nell'ordine di tabulazione, l'attivazione potrebbe richiedere molto tempo in una pagina occupata(a meno che gli utenti non sappiano usare MAIUSC+TAB per spostarsi all'indietro).
 
-L'accessibilità presenta un problema: anche se le barre degli strumenti sono più facili per gli utenti del mouse, sono meno accessibili per gli utenti della tastiera. Questo non è un problema se sono presenti sia una barra dei menu che una barra degli strumenti, ma se la barra dei menu viene rimossa o nascosta.
+L'accessibilità presenta un problema: sebbene le barre degli strumenti siano più facili per gli utenti del mouse, sono meno accessibili per gli utenti della tastiera. Questo non è un problema se sono presenti sia una barra dei menu che una barra degli strumenti, ma se la barra dei menu viene rimossa o nascosta.
 
 Per motivi di accessibilità, è quindi preferibile mantenere la barra dei menu anziché rimuoverla completamente a favore di una barra degli strumenti. Se è necessario scegliere tra rimuovere la barra dei menu e nasconderla, è preferibile nasconderla.
 
@@ -127,12 +127,12 @@ Le barre degli strumenti hanno diversi modelli di utilizzo:
 
 
 
-|     Uso                                                                                                                 |     Esempio                                                                                                                                                                                                                                                                                                                                          |
+|     Utilizzo                                                                                                                 |     Esempio                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Barre degli strumenti principali**<br/> una barra degli strumenti progettata per funzionare senza una barra dei menu, nascosta o rimossa. <br/> | Le barre degli strumenti principali devono bilanciare la necessità di efficienza con la completezza, in modo che funzionino meglio per i programmi semplici. <br/> ![Screenshot della barra degli strumenti di Esplora risorse ](images/cmd-toolbars-image8.png)<br/> Barra degli strumenti principale da Windows Explorer.<br/>                                                                        |
-| **Barre degli strumenti supplementari**<br/> una barra degli strumenti progettata per l'utilizzo con una barra dei menu. <br/>                         | le barre degli strumenti supplementari possono concentrarsi sull'efficienza senza compromessi. <br/> ![Screenshot di una barra dei menu su una barra degli strumenti ](images/cmd-toolbars-image9.png)<br/> Barra degli strumenti supplementare da Windows Movie Maker.<br/>                                                                                                                  |
+| **Barre degli strumenti supplementari**<br/> una barra degli strumenti progettata per l'utilizzo con una barra dei menu. <br/>                         | Le barre degli strumenti supplementari possono concentrarsi sull'efficienza senza compromessi. <br/> ![Screenshot di una barra dei menu su una barra degli strumenti ](images/cmd-toolbars-image9.png)<br/> Barra degli strumenti supplementare da Windows Movie Maker.<br/>                                                                                                                  |
 | **Menu della barra degli strumenti**<br/> una barra dei menu implementata come barra degli strumenti. <br/>                                        | I menu della barra degli strumenti sono barre degli strumenti costituite principalmente da comandi nei pulsanti di [menu](ctrl-command-buttons.md) e nei pulsanti di divisione, con solo alcuni comandi diretti, se presenti. <br/> ![Screenshot della barra dei menu con icone e comandi ](images/cmd-toolbars-image10.png)<br/> Menu della barra degli strumenti Windows Raccolta foto.<br/> |
-| **Barre degli strumenti personalizzabili**<br/> una barra degli strumenti che può essere personalizzata dagli utenti. <br/>                          | Le barre degli strumenti personalizzabili consentono agli utenti di aggiungere o rimuovere barre degli strumenti, modificarne le dimensioni e la posizione e persino modificarne il contenuto. <br/> ![Screenshot di una barra degli strumenti con decine di icone ](images/cmd-toolbars-image11.png)<br/> Barra degli strumenti personalizzabile Microsoft Visual Studio.<br/>                                             |
+| **Barre degli strumenti personalizzabili**<br/> una barra degli strumenti che può essere personalizzata dagli utenti. <br/>                          | Le barre degli strumenti personalizzabili consentono agli utenti di aggiungere o rimuovere barre degli strumenti, modificarne le dimensioni e la posizione e persino modificarne il contenuto. <br/> ![Screenshot di una barra degli strumenti con decine di icone ](images/cmd-toolbars-image11.png)<br/> Barra degli strumenti personalizzabile da Microsoft Visual Studio.<br/>                                             |
 | **Finestre del riquadro**<br/> una finestra di dialogo non modabile che presenta una matrice di comandi. <br/>                 | Le finestre della tavolozza sono barre degli strumenti non ancorate. <br/> ![Screenshot di una finestra di dialogo colori ](images/cmd-toolbars-image12.png)<br/> ![Screenshot di una finestra di dialogo dei tipi di carattere ](images/cmd-toolbars-image13.png)<br/> Finestre della tavolozza Windows Paint.<br/>                                                                             |
 
 
@@ -149,7 +149,7 @@ Gli stili delle barre degli strumenti sono i seguenti:
 | **Icone grandi senza etichetta**<br/> una singola riga di pulsanti di icone grandi senza etichetta. <br/>                                         | usare questo stile per utilità semplici che hanno icone facilmente riconoscibili e vengono in genere eseguite in finestre di piccole dimensioni. <br/> ![Screenshot della barra degli strumenti con icone grandi senza etichetta ](images/cmd-toolbars-image15.png)<br/> ![Screenshot della barra degli strumenti con icone grandi ](images/cmd-toolbars-image16.png)<br/> Barre degli strumenti di icone grandi senza etichetta Windows Live Messenger e dal Windows Strumento di cattura.<br/>                                                                       |
 | **Icone con etichetta**<br/> una singola riga di piccole icone con etichetta. <br/>                                                          | usare questo stile se sono presenti pochi comandi o se il programma non viene usato di frequente. questo stile ha sempre una singola riga. <br/> ![Screenshot della barra degli strumenti con icone con etichetta ](images/cmd-toolbars-image8.png)<br/> Barra degli strumenti delle icone con etichetta Windows Explorer.<br/>                                                                                                                                                                                                               |
 | **Barre degli strumenti parziali**<br/> una riga parziale di icone piccole usata per risparmiare spazio quando non è necessaria una barra degli strumenti completa. <br/>       | usare questo stile per le finestre con pulsanti di spostamento, una casella di ricerca o schede per eliminare il peso non necessario nella parte superiore della finestra. <br/> ![Screenshot della barra dei menu, della barra degli strumenti e della barra preferiti ](images/cmd-toolbars-image17.png)<br/> Le barre degli strumenti parziali possono essere combinate con pulsanti di spostamento, una casella di ricerca o schede.<br/>                                                                                                                                                  |
-| **Barre degli strumenti parziali di grandi dimensioni**<br/> una riga parziale di icone grandi usata per risparmiare spazio quando non è necessaria una barra degli strumenti completa. <br/> | usare questo stile per utilità semplici con pulsanti di spostamento o una casella di ricerca per eliminare il peso non necessario nella parte superiore della finestra. <br/> ![Screenshot di una barra degli strumenti parziale di grandi dimensioni ](images/cmd-toolbars-image18.png)<br/> Barra degli strumenti parziale di grandi dimensioni Windows Defender.<br/>                                                                                                                                                                                         |
+| **Barre degli strumenti parziali di grandi dimensioni**<br/> una riga parziale di icone grandi usata per risparmiare spazio quando non è necessaria una barra degli strumenti completa. <br/> | Usare questo stile per utilità semplici con pulsanti di spostamento o una casella di ricerca per eliminare il peso non necessario nella parte superiore della finestra. <br/> ![Screenshot di una barra degli strumenti parziale di grandi dimensioni ](images/cmd-toolbars-image18.png)<br/> Barra degli strumenti parziale di grandi dimensioni Windows Defender.<br/>                                                                                                                                                                                         |
 
 
 
@@ -159,15 +159,15 @@ Infine, i controlli barra degli strumenti hanno diversi modelli di utilizzo:
 
 
 
-|     Uso                                                                                                                 |     Esempio                                                                                                                                                                                                                                                                                                                                          |
+|     Utilizzo                                                                                                                 |     Esempio                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pulsanti dell'icona di comando**<br/> Facendo clic su un pulsante di comando viene avviata un'azione immediata. <br/>                                                                                                 | ![Screenshot di una barra degli strumenti con icone con etichetta ](images/cmd-toolbars-image19.png)<br/> Esempi di pulsanti di comando icona Windows Fax e Scansione.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Pulsanti dell'icona modalità**<br/> Se si fa clic su un pulsante modalità, viene attivata la modalità selezionata. <br/>                                                                                                            | ![Screenshot di una barra degli strumenti verticale ](images/cmd-toolbars-image20.png)<br/> Esempi di pulsanti di modalità Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Pulsanti dell'icona delle proprietà**<br/> Lo stato di un pulsante di proprietà riflette lo stato degli oggetti attualmente selezionati, se presenti. Facendo clic sul pulsante, la modifica viene applicata agli oggetti selezionati. <br/> | ![Screenshot delle icone di formattazione e del testo selezionato ](images/cmd-toolbars-image21.png)<br/> Esempi di pulsanti di proprietà Microsoft Word.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Pulsanti delle icone con etichette**<br/> un pulsante di comando o un pulsante di proprietà con un'icona e un'etichetta di testo. <br/>                                                                               | questi pulsanti vengono usati per i pulsanti della barra degli strumenti usati di frequente la cui icona non è sufficientemente auto-esplicativa. vengono usati anche nelle barre degli strumenti con così pochi pulsanti che ogni pulsante può avere un'etichetta di testo. <br/> ![Screenshot che mostra la barra degli strumenti con icone etichettate per i pulsanti usati più di frequente. ](images/cmd-toolbars-image22.png)<br/> Barra degli strumenti con i pulsanti usati più di frequente etichettati.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Pulsanti di menu**<br/> un pulsante di comando usato per presentare un piccolo set di comandi correlati. <br/>                                                                                                | un singolo triangolo verso il basso indica che facendo clic sul pulsante viene visualizzato un menu. <br/> ![Screenshot della barra degli strumenti e dell'elenco a discesa dei comandi ](images/cmd-toolbars-image23.png)<br/> Pulsante di menu con un piccolo set di comandi correlati.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Pulsanti di divisione**<br/> un pulsante di comando usato per consolidare le variazioni di un comando, soprattutto quando uno dei comandi viene usato per la maggior parte del tempo. <br/>                                     | ![Screenshot del pulsante Dividi stampa ](images/cmd-toolbars-image24.png)<br/> un pulsante di divisione nello stato normale.<br/> come un pulsante di menu, un singolo triangolo verso il basso indica che facendo clic sulla parte più a destra del pulsante viene visualizzato un menu. <br/> ![Screenshot dei comandi del pulsante Dividi stampa ](images/cmd-toolbars-image25.png)<br/> un pulsante di divisione rilasciato verso il basso.<br/> In questo esempio viene usato un pulsante di divisione per consolidare tutti i comandi correlati alla stampa. Il comando di stampa immediata viene usato nella maggior parte dei casi, quindi gli utenti in genere non devono visualizzare gli altri comandi. <br/> A differenza di un pulsante di menu, facendo clic sulla parte sinistra del pulsante viene eseguita direttamente l'azione sull'etichetta. I pulsanti di divisione sono efficaci in situazioni in cui è probabile che il comando successivo sia lo stesso dell'ultimo comando. In questo caso, l'etichetta viene modificata nell'ultimo comando, come con un selettore colori:<br/> ![Screenshot dell'icona del bucket che versa il colore ](images/cmd-toolbars-image26.png)<br/> In questo esempio l'etichetta viene modificata nell'ultimo comando.<br/> |
-| **Elenchi a discesa**<br/> elenco a discesa (modificabile o di sola lettura) usato per visualizzare o modificare una proprietà. <br/>                                                                                   | ![Screenshot dell'elenco a discesa dei tipi di carattere ](images/cmd-toolbars-image27.png)<br/> In questo esempio, gli elenchi a discesa vengono usati per visualizzare e impostare gli attributi del tipo di carattere.<br/> Un elenco a discesa in una barra degli strumenti riflette lo stato dell'oggetto attualmente selezionato, se presente. La modifica dell'elenco modifica lo stato dell'oggetto selezionato. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Pulsanti dell'icona di comando**<br/> Facendo clic su un pulsante di comando viene avviata un'azione immediata. <br/>                                                                                                 | ![Screenshot di una barra degli strumenti con icone etichettate ](images/cmd-toolbars-image19.png)<br/> Esempi di pulsanti di comando icona Windows Fax e Scansione.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Pulsanti icona modalità**<br/> Se si fa clic su un pulsante modalità, viene attivata la modalità selezionata. <br/>                                                                                                            | ![Screenshot di una barra degli strumenti verticale ](images/cmd-toolbars-image20.png)<br/> Esempi di pulsanti di modalità Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Pulsanti dell'icona delle proprietà**<br/> Lo stato di un pulsante di proprietà riflette lo stato degli oggetti attualmente selezionati, se presenti. Se si fa clic sul pulsante, la modifica viene applicata agli oggetti selezionati. <br/> | ![Screenshot delle icone di formattazione e del testo selezionato ](images/cmd-toolbars-image21.png)<br/> Esempi di pulsanti di proprietà Microsoft Word.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Pulsanti delle icone con etichette**<br/> un pulsante di comando o un pulsante di proprietà etichettato con un'icona e un'etichetta di testo. <br/>                                                                               | questi pulsanti vengono usati per i pulsanti della barra degli strumenti usati di frequente la cui icona non è sufficientemente auto-esplicativa. vengono usati anche nelle barre degli strumenti con così pochi pulsanti che ogni pulsante può avere un'etichetta di testo. <br/> ![Screenshot che mostra la barra degli strumenti con icone etichettate per i pulsanti usati più di frequente. ](images/cmd-toolbars-image22.png)<br/> Barra degli strumenti con i pulsanti usati più di frequente etichettati.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Pulsanti di menu**<br/> un pulsante di comando usato per presentare un piccolo set di comandi correlati. <br/>                                                                                                | Un singolo triangolo che punta verso il basso indica che facendo clic sul pulsante viene visualizzato un menu. <br/> ![Screenshot della barra degli strumenti e dell'elenco a discesa dei comandi ](images/cmd-toolbars-image23.png)<br/> Pulsante di menu con un piccolo set di comandi correlati.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Pulsanti di menu suddivisi**<br/> un pulsante di comando usato per consolidare le varianti di un comando, soprattutto quando uno dei comandi viene usato nella maggior parte dei casi. <br/>                                     | ![Screenshot del pulsante di divisione della stampa ](images/cmd-toolbars-image24.png)<br/> Pulsante di menu suddiviso nello stato normale.<br/> Come un pulsante di menu, un singolo triangolo che punta verso il basso indica che facendo clic sulla parte più a destra del pulsante viene visualizzato un menu. <br/> ![Screenshot dei comandi del pulsante di divisione della stampa ](images/cmd-toolbars-image25.png)<br/> pulsante di menu a discesa.<br/> In questo esempio viene usato un pulsante di menu suddiviso per consolidare tutti i comandi correlati alla stampa. Il comando di stampa immediato viene usato nella maggior parte dei casi, quindi gli utenti in genere non devono visualizzare gli altri comandi. <br/> A differenza di un pulsante di menu, facendo clic sulla parte sinistra del pulsante viene eseguita direttamente l'azione sull'etichetta. I pulsanti di divisione sono efficaci nelle situazioni in cui è probabile che il comando successivo sia uguale all'ultimo comando. In questo caso, l'etichetta viene modificata nell'ultimo comando, come con una selezione colori:<br/> ![screenshot dell'icona del bucket che colora ](images/cmd-toolbars-image26.png)<br/> In questo esempio l'etichetta viene modificata nell'ultimo comando.<br/> |
+| **Elenchi a discesa**<br/> Elenco a discesa (modificabile o di sola lettura) usato per visualizzare o modificare una proprietà. <br/>                                                                                   | ![Screenshot dell'elenco a discesa dei tipi di carattere ](images/cmd-toolbars-image27.png)<br/> In questo esempio gli elenchi a discesa vengono usati per visualizzare e impostare gli attributi del tipo di carattere.<br/> Un elenco a discesa in una barra degli strumenti riflette lo stato dell'oggetto attualmente selezionato, se presente. La modifica dell'elenco modifica lo stato dell'oggetto selezionato. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
 
@@ -183,61 +183,61 @@ Infine, i controlli barra degli strumenti hanno diversi modelli di utilizzo:
 
     -   Omissione delle etichette delle icone note e dei comandi usati meno di frequente.
     -   Usando solo una barra degli strumenti parziale anziché l'intera larghezza della finestra.
-    -   Consolidamento dei comandi correlati con un pulsante di menu o un pulsante di divisione.
-    -   Uso di [una barra di overflow per](glossary.md) visualizzare i comandi usati meno di frequente.
+    -   Consolidamento dei comandi correlati con un pulsante di menu o un pulsante di menu suddiviso.
+    -   Uso di [una chevron di overflow](glossary.md) per rivelare i comandi usati meno di frequente.
     -   Visualizzazione dei comandi solo quando si applicano al contesto corrente.
 
     ![Screenshot delle icone comuni della barra degli strumenti non etichettate ](images/cmd-toolbars-image28.png)
 
-    La Windows Internet Explorer barra degli strumenti consente di risparmiare spazio omettendo etichette di icone note, usando una barra degli strumenti parziale e usando una barra degli strumenti di overflow per i comandi usati meno di frequente.
+    La Windows Internet Explorer barra degli strumenti consente di risparmiare spazio omettendo le etichette delle icone note, usando una barra degli strumenti parziale e usando una chevron di overflow per i comandi usati meno di frequente.
 
--   **Per il modello della barra degli strumenti delle icone senza etichetta, usare una configurazione predefinita con non più di due righe di barre degli strumenti.** Se possono essere utili più di due righe, rendere personalizzabili le barre degli strumenti. A partire da più di due righe, gli utenti possono sovraccaricare e richiedere troppo spazio dall'area di lavoro del programma.
+-   **Per il modello della barra degli strumenti icone senza etichetta, usare una configurazione predefinita con non più di due righe di barre degli strumenti.** Se potrebbero essere utili più di due righe, rendere personalizzabili le barre degli strumenti. Iniziare con più di due righe può sovraccaricare gli utenti e richiedere troppo spazio dall'area di lavoro del programma.
 
     **Non corretto:**
 
     ![Screenshot della barra dei menu e di tre righe di barre degli strumenti ](images/cmd-toolbars-image29.png)
 
-    Una configurazione predefinita con più di due righe di barre degli strumenti comporta troppi disordini visivi.
+    Una configurazione predefinita con più di due righe di barre degli strumenti comporta un numero troppo di confusione visiva.
 
--   **Disabilitare i singoli pulsanti della barra degli strumenti che** non si applicano al contesto corrente, anziché rimuoverli. In questo modo, il contenuto della barra degli strumenti risulta stabile e più facile da trovare.
+-   **Disabilitare i singoli pulsanti della barra degli strumenti che** non si applicano al contesto corrente, invece di rimuoverli. In questo modo il contenuto della barra degli strumenti risulta stabile e più facile da trovare.
 -   **Disabilitare i singoli pulsanti della barra degli strumenti se facendo clic su di essi si verifica direttamente un errore.** Questa operazione è necessaria per mantenere un'aspetto diretto.
--   **Per il modello della barra degli strumenti delle icone senza etichetta, rimuovere intere barre degli strumenti se non si applicano al contesto corrente.** Visualizzarli solo nelle modalità applicabili.
+-   **Per il modello della barra degli strumenti icone senza etichetta, rimuovere intere barre degli strumenti se non si applicano al contesto corrente.** Visualizzarli solo nelle modalità applicabili.
 
     ![Screenshot della barra degli strumenti di debug ](images/cmd-toolbars-image30.png)
 
-    In questo esempio la barra degli strumenti Debug viene visualizzata solo durante l'esecuzione del programma.
+    In questo esempio la barra degli strumenti Debug viene visualizzata solo quando il programma è in esecuzione.
 
 -   **Visualizzare i pulsanti della barra degli strumenti allineati a sinistra.** L'icona della Guida, se presente, è allineata a destra.
 
-    ![Screenshot della barra degli strumenti, icona della Guida allineata a destra ](images/cmd-toolbars-image31.png)
+    ![screenshot della barra degli strumenti, icona della Guida allineata a destra ](images/cmd-toolbars-image31.png)
 
-    Tutti i pulsanti della barra degli strumenti vengono allineati a sinistra, ad eccezione della Guida.
+    Tutti i pulsanti della barra degli strumenti sono allineati a sinistra, ad eccezione della Guida.
 
-    **Eccezione: Windows** barre degli strumenti in stile 7 allineano a sinistra i comandi specifici del programma, ma allineano a destra comandi standard noti come Opzioni, Visualizza e Guida.
+    **Eccezione: Windows** barre degli strumenti in stile 7 allineano a sinistra i comandi specifici del programma, ma allineano a destra i comandi standard noti, ad esempio Opzioni, Visualizza e Guida.
 
--   **Non modificare le etichette dei pulsanti della barra degli strumenti in modo dinamico.** Questa operazione è confusa e imprevista. Tuttavia, è possibile modificare l'icona in modo che rifletta lo stato corrente.
+-   **Non modificare dinamicamente le etichette dei pulsanti della barra degli strumenti.** Questa operazione è confusa e imprevista. È tuttavia possibile modificare l'icona per riflettere lo stato corrente.
 
-    ![Screenshot dell'icona del bucket che versa il colore ](images/cmd-toolbars-image26.png)
+    ![screenshot dell'icona del bucket che colora ](images/cmd-toolbars-image26.png)
 
     In questo esempio l'icona viene modificata per indicare il comando predefinito.
 
 ### <a name="controls-and-commands"></a>Controlli e comandi
 
 -   **Preferire i comandi usati più di frequente.**
-    -   **Per le barre degli strumenti principali, fornire comandi completi.** Le barre degli strumenti primarie non devono essere complete come le barre dei menu, ma devono fornire tutti i comandi che non sono facilmente individuabili altrove. Le barre degli strumenti primarie non devono avere comandi per:
-        -   Comandi direttamente nell'interfaccia utente stessa.
+    -   **Per le barre degli strumenti principali, fornire comandi completi.** Le barre degli strumenti principali non devono essere complete come le barre dei menu, ma devono fornire tutti i comandi che non sono facilmente individuabili altrove. Le barre degli strumenti principali non devono avere comandi per:
+        -   Comandi direttamente nell'interfaccia utente.
         -   Comandi a cui si accede in genere tramite menu di scelta rapida.
-        -   Comandi standard, noti come Taglia, Copia e Incolla.
+        -   Comandi standard noti come Taglia, Copia e Incolla.
     -   **Per le barre degli strumenti supplementari, specificare i comandi usati più di frequente.** I comandi della barra dei menu sono un superset dei comandi della barra degli strumenti, quindi non è necessario fornire tutto. Concentrarsi sull'accesso rapido e pratico ai comandi e ignorare il resto.
 -   **Preferisce i controlli diretti.** Usare i pulsanti della barra degli strumenti nell'ordine di preferenza seguente:
     -   **Pulsante icona.** Diretto e richiede spazio minimo.
     -   **Pulsante icona con etichetta.** Diretto, ma richiede più spazio.
-    -   **Pulsante Dividi.** Diretto per il comando più comune, ma gestisce le variazioni dei comandi.
+    -   **Pulsante di menu suddiviso.** Diretto per il comando più comune, ma gestisce le varianti dei comandi.
     -   **Pulsante di menu.** Indiretto, ma presenta molti comandi.
--   **Preferire i comandi immediati.** Per i comandi che possono essere immediati o avere un input aggiuntivo per la flessibilità:
+-   **Preferisce comandi immediati.** Per i comandi che possono essere immediati o avere un input aggiuntivo per la flessibilità:
     -   Per le barre degli strumenti principali, usare le versioni flessibili dei comandi, ad esempio Stampa.
     -   Per le barre degli strumenti supplementari, usare le versioni immediate sulla barra degli strumenti (ad esempio Stampa) e usare versioni flessibili nella barra dei menu (ad esempio Stampa...).
--   **Specificare etichette per i comandi usati di frequente,** soprattutto se le relative icone non sono icone note.
+-   **Fornire etichette per i comandi usati di frequente,** soprattutto se le icone non sono icone note.
 
     **Accettabile:**
 
@@ -247,20 +247,20 @@ Infine, i controlli barra degli strumenti hanno diversi modelli di utilizzo:
 
     ![Screenshot della barra degli strumenti con alcune icone etichettate ](images/cmd-toolbars-image33.png)
 
-    La Windows barra degli strumenti Fax e Digitalizzazione include pochi comandi, quindi la versione migliore etichetta quelle più importanti.
+    La barra Windows Fax e Digitalizzazione include pochi comandi, quindi la versione migliore etichetta quelle più importanti.
 
--   Non inserire i comandi nei menu della barra degli strumenti che sono anche direttamente sulla barra degli strumenti.
+-   Non inserire comandi nei menu della barra degli strumenti che sono anche direttamente sulla barra degli strumenti.
 
     **Non corretto:**
 
-    ![Screenshot del comando print sulla barra degli strumenti e sul menu ](images/cmd-toolbars-image34.png)
+    ![Screenshot del comando di stampa sulla barra degli strumenti e sul menu ](images/cmd-toolbars-image34.png)
 
-    In questo esempio Print si trova direttamente sulla barra degli strumenti, quindi non deve essere presente nel menu.
+    In questo esempio Print è direttamente sulla barra degli strumenti, quindi non deve essere presente nel menu.
 
 ### <a name="organization-and-order"></a>Organizzazione e ordine
 
 -   **Organizzare i comandi all'interno di una barra degli strumenti in gruppi correlati.**
--   **Posizionare prima i gruppi usati più di frequente. All'interno di un gruppo, inserire i comandi nell'ordine logico.** In generale, i comandi devono avere un flusso logico per semplificare l'individuazione, pur mantenendo i comandi usati più di frequente. Questa operazione è più efficiente, soprattutto in caso di overflow.
+-   **Posizionare prima i gruppi usati più di frequente. All'interno di un gruppo, inserire i comandi nell'ordine logico.** In generale, i comandi devono avere un flusso logico per semplificare l'individuazione, mantenendo al tempo stesso i comandi usati più di frequente per primi. Questa operazione è più efficiente, soprattutto in caso di overflow.
 -   **Usare i divisori di gruppo solo se i comandi tra gruppi sono ad accoppiato debole.** In questo modo i raggruppamenti sono ovvi e i comandi sono più facili da trovare.
 
     ![Screenshot che mostra una barra degli strumenti con icone ben organizzate usando i divisori di gruppo.](images/cmd-toolbars-image35.png)
@@ -438,7 +438,7 @@ In questo esempio la barra degli strumenti deve usare Modifica anziché Organizz
 
     ![Screenshot della finestra di dialogo di personalizzazione e delle opzioni ](images/cmd-toolbars-image46.png)
 
-    In questo esempio, Visual Studio una finestra di dialogo opzioni per personalizzare le barre degli strumenti.
+    In questo esempio, Visual Studio una finestra di dialogo di opzioni per personalizzare le barre degli strumenti.
 
 -   Specificare un comando Reimposta per tornare alla configurazione originale della barra degli strumenti nella finestra di dialogo Personalizza opzioni.
 -   **È possibile personalizzare le barre degli strumenti usando il trascinamento della selezione nei modi seguenti:**
@@ -502,11 +502,11 @@ Dimensioni e spaziatura consigliate per le barre degli strumenti standard.
 
 -   **Usare un'etichetta concisa.** Usare una singola parola, se possibile, al massimo quattro parole.
 -   **Posizionare l'etichetta a destra dell'icona.**
--   **Usare un suggerimento per descrivere il comando.** Poiché i pulsanti sono etichettati, l'uso di una descrizione comando anziché di una descrizione comando sarebbe ridondante.
+-   **Usare un infotip per descrivere il comando.** Poiché i pulsanti sono etichettati, l'uso di una descrizione comando anziché di una descrizione comando sarebbe ridondante.
 
     ![Screenshot del pulsante con etichetta con suggerimento ](images/cmd-toolbars-image51.png)
 
-    Un esempio di suggerimento per un pulsante con un'icona con etichetta.
+    Un esempio di suggerimento per un pulsante icona con etichetta.
 
 ### <a name="drop-down-lists"></a>Elenchi a discesa
 
@@ -525,8 +525,8 @@ Dimensioni e spaziatura consigliate per le barre degli strumenti standard.
 ### <a name="menu-buttons-and-split-buttons"></a>Pulsanti di menu e pulsanti di divisione
 
 -   **Preferisce i nomi dei pulsanti di menu basati su verbi.** Tuttavia, omettere il verbo se è Create, Show, View o Manage. Ad esempio, **i pulsanti di** menu Strumenti e Pagina non hanno verbi. 
--   **Usare una singola parola specifica che descriva in modo chiaro e accurato il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi nel menu, dovrebbero essere sufficientemente prevedibili in modo che gli utenti non siano sorprese da ciò che trovano nel menu.
--   **Anche se non è obbligatorio, fornire descrizioni infotip se sono utili.**
+-   **Usare una singola parola specifica che descriva in modo chiaro e accurato il contenuto del menu.** Anche se i nomi non devono essere così generali da descrivere tutti gli elementi nel menu, devono essere sufficientemente prevedibili in modo che gli utenti non siano sorprese da ciò che trovano nel menu.
+-   **Anche se non sono obbligatorie, fornire descrizioni infotip se sono utili.**
 
 ### <a name="menu-items"></a>Voci di menu
 
@@ -539,8 +539,8 @@ Dimensioni e spaziatura consigliate per le barre degli strumenti standard.
     -   Opzioni
     -   Proprietà
 -   **Usare verbi specifici.** Evitare verbi generici e inutili, ad esempio Change e Manage.
--   **Usare sostantivi singolari per i comandi che si applicano a un singolo oggetto,** in caso contrario usare sostantivi plurali.
--   **Per coppie di comandi complementari, scegliere nomi chiaramente complementari.** Esempi: Aggiungi, Rimuovi; Mostra, Nascondi; Inserisci, Elimina.
+-   **Usare sostantivi singolari per i comandi che si applicano a un singolo oggetto, altrimenti** usare sostantivi plurali.
+-   **Per coppie di comandi complementari, scegliere nomi chiaramente complementari.** Esempi: Add, Remove; Mostra, Nascondi; Inserisci, Elimina.
 -   **Scegliere i nomi delle voci di menu in base a obiettivi e attività dell'utente, non alla tecnologia.**
 -   Usare i nomi delle voci di menu seguenti per lo scopo indicato:
     -   **Opzioni:** Per visualizzare le opzioni del programma.
@@ -558,7 +558,7 @@ Quando si fa riferimento alle barre degli strumenti:
 -   Se è presente una sola barra degli strumenti, fare riferimento a essa come barra degli strumenti.
 -   Se sono presenti più barre degli strumenti, fare riferimento a esse in base al nome, seguito dalla barra degli strumenti delle parole. Fare riferimento alla barra degli strumenti principale che è aperta per impostazione predefinita e contiene pulsanti per attività di base, ad esempio l'apertura e la stampa di un file, come barra degli strumenti standard.
 -   La barra degli strumenti è una singola parola non maiuscola. Al contrario, la barra dei menu è di due parole.
--   Fare riferimento ai pulsanti della barra degli strumenti in base alle relative etichette di descrizione comando. Usare il testo esatto dell'etichetta, incluse le lettere maiuscole, ma non i puntini di sospensione.
+-   Fare riferimento ai pulsanti della barra degli strumenti in base alle etichette della descrizione comando. Usare il testo esatto dell'etichetta, inclusa l'uso di maiuscole e minuscole, ma non includere puntini di sospensione.
 -   Fare riferimento ai pulsanti di menu della barra degli strumenti in base alle etichette e al menu delle parole. Usare il testo esatto dell'etichetta, inclusa l'uso di maiuscole e minuscole.
 -   Fare riferimento ai controlli barra degli strumenti in genere come pulsanti della barra degli strumenti.
 -   Per descrivere l'interazione dell'utente, usare fare clic per i pulsanti della barra degli strumenti e gli elenchi a discesa di sola lettura e immettere per gli elenchi a discesa modificabili. Non usare scegliere, selezionare o selezionare.
@@ -568,7 +568,7 @@ Quando si fa riferimento alle barre degli strumenti:
 
 Esempi:
 
--   Scegliere **Invia** pagina tramite posta elettronica dal menu Pagina sulla barra degli **strumenti.**
+-   Scegliere **Invia** pagina tramite posta elettronica dal menu Pagina sulla barra **degli strumenti.**
 -   Nella casella **Tipi di** carattere sulla barra degli strumenti immettere "Segoe UI".
 -   Sulla barra **degli strumenti** Formattazione scegliere **Mostra** e quindi fare clic **su Commenti**.
 

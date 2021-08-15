@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0d945dff9c124f4c66cea4f9d61c490c6eaf7a66
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 313273ab791fe63fa85440a5bfe3fdffe41726f15c2d6a8d0343408fdf7d67f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524938"
 ---
 # <a name="d3dxplanefrompoints-function-d3dx9mathh"></a>Funzione D3DXPlaneFromPoints (D3dx9math.h)
 

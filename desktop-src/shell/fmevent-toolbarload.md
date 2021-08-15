@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: c5daab49-4ed5-439b-b1b7-a87f70c379f0
-ms.openlocfilehash: c4195acedbd696679a2deea2f4d6e268717566d1
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a8aba636910735e9baa0bd3ebbcf846ecf69a2174b56372a387b541c92e59732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860393"
 ---
 # <a name="fmevent_toolbarload-message"></a>FMEVENT \_ TOOLBARLOAD message
 
@@ -34,7 +34,7 @@ Inviato a una DLL di estensione quando File Manager carica la relativa barra deg
 *lpfmstbl* 
 </dt> <dd>
 
-Indirizzo di una [**struttura \_ TOOLBARLOAD fms.**](fms-toolbarload.md) Se la DLL di estensione aggiunge un pulsante alla barra degli strumenti in File Manager, la DLL deve riempire la struttura con le informazioni sul pulsante.
+Indirizzo di una [**struttura \_ TOOLBARLOAD di FMS.**](fms-toolbarload.md) Se la DLL di estensione aggiunge un pulsante alla barra degli strumenti in File Manager, la DLL deve riempire la struttura con le informazioni sul pulsante.
 
 </dd> </dl>
 

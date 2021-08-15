@@ -4,17 +4,17 @@ ms.assetid: 904e5325-4bcb-42cf-8e7f-eb9641c94633
 title: Esecuzione di query su interfacce
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc41b9b17ac2da10e6ac36294845cf8c4bf8b0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d1d03c1901d47c0242d6e1c39327b41e2bf1e491bee02a430347c4be2cec3823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462792"
 ---
 # <a name="querying-interfaces"></a>Esecuzione di query su interfacce
 
 
-Questa Windows Search di riferimento è costituita dalle interfacce di query seguenti:
+Questa Windows di riferimento per la ricerca è costituita dalle interfacce di query seguenti:
 
 [**ICondition**](/windows/desktop/api/Structuredquerycondition/nn-structuredquerycondition-icondition)
 

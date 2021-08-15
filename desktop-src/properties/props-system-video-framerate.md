@@ -1,19 +1,19 @@
 ---
-description: Indica la frequenza dei fotogrammi per il flusso video, in frame per 1000 secondi.
+description: Indica la frequenza dei fotogrammi per il flusso video, in fotogrammi per 1000 secondi.
 ms.assetid: cd5a2ae0-43ef-44e4-aa70-bca33baf2a56
-title: System. video. FrameRate
+title: System.Video.FrameRate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcbdee7991186621a9d636e2072cecafc70176d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ee60d2a222809616064b57a90f9909909c4165494f0d9b62a3c16acd42d0339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227373"
 ---
-# <a name="systemvideoframerate"></a>System. video. FrameRate
+# <a name="systemvideoframerate"></a>System.Video.FrameRate
 
-Indica la frequenza dei fotogrammi per il flusso video, in frame per 1000 secondi.
+Indica la frequenza dei fotogrammi per il flusso video, in fotogrammi per 1000 secondi.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -48,9 +48,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Per ridurre l'errore di troncamento, questa proprietà non usa la misura di frequenza dei fotogrammi standard di frame al secondo (FPS). Questa proprietà misura invece la frequenza dei fotogrammi come frame per 1000 secondi (FPS moltiplicato per 1000). Ad esempio, [System. video. framerate]() esprime una frequenza di fotogrammi pari a 29,97 fps come valore intero pari a 29970.
+Per ridurre gli errori di troncamento, questa proprietà non usa la misura della frequenza fotogrammi standard dei fotogrammi al secondo (FPS). Questa proprietà misura invece la frequenza dei fotogrammi come fotogrammi per 1000 secondi (FPS moltiplicato per 1000). Ad esempio, [System.Video.FrameRate]() esprime una frequenza di fotogrammi di 29,97 FPS come valore intero di 29970.
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -65,13 +65,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -80,7 +80,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

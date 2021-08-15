@@ -1,22 +1,22 @@
 ---
-title: Codice di esempio per l'aggiunta di un utente o gruppo di dominio a un gruppo locale
-description: Questo argomento include un esempio di codice che illustra come aggiungere un utente o un gruppo di dominio a un gruppo locale in un server membro o a un computer che esegue Windows NT Workstation o Windows 2000 Professional.
+title: Codice di esempio per l'aggiunta di un utente o un gruppo di dominio a un gruppo locale
+description: Questo argomento include un esempio di codice che illustra come aggiungere un utente o un gruppo di dominio a un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
 ms.assetid: 6333ce9f-0396-4af7-9e81-f008cf4536ec
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, aggiunta di un utente o gruppo di dominio a un gruppo locale
+- Esempi di Active Directory Active Directory , aggiunta di un utente o di un gruppo di dominio a un gruppo locale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 539e8fbbeed3d865a0878236745b7a3c74c76d27
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bdca65c26c6ab1195dcd0d7fc3f44b36e39bed1d15e97627664754c918e57e96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694689"
 ---
-# <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a>Codice di esempio per l'aggiunta di un utente o gruppo di dominio a un gruppo locale
+# <a name="example-code-for-adding-a-domain-user-or-group-to-a-local-group"></a>Codice di esempio per l'aggiunta di un utente o un gruppo di dominio a un gruppo locale
 
-Nell'esempio di codice C++ riportato di seguito viene aggiunto un utente o un gruppo di dominio a un gruppo locale in un server membro o a un computer in cui è in esecuzione la workstation Windows NT o Windows 2000 Professional.
+L'esempio di codice C++ seguente aggiunge un utente o un gruppo di dominio a un gruppo locale in un server membro o in un computer in esecuzione in Windows NT Workstation o Windows 2000 Professional.
 
 
 ```C++
@@ -106,7 +106,7 @@ HRESULT AddDomainUserToLocalGroup(LPCWSTR pwszComputerName,
 
 
 
-Nell'esempio di codice seguente Visual Basic viene aggiunto un utente o un gruppo di dominio a un gruppo locale in un server membro o a un computer in cui è in esecuzione la workstation Windows NT o Windows 2000 Professional.
+Nell'esempio di codice Visual Basic seguente viene aggiunto un utente o un gruppo di dominio a un gruppo locale in un server membro o in un computer in esecuzione Windows NT Workstation o Windows 2000 Professional.
 
 
 ```VB
@@ -154,9 +154,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Handle per il contesto di dispositivo della finestra.
+description: Handle al contesto di dispositivo della finestra.
 ms.assetid: a9fa4340-f20f-44a4-b553-052fe5c3e0e6
-title: 'Membro CBaseWindow:: m_hdc (Winutil. h)'
+title: Membro CBaseWindow::m_hdc (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1e6bb2661af96ab4c32f97d56856c5420dab4c0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cd5f994f43a1b96be2ce19b0e7d38b0416286e4d39b4f89a425e5468737de47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822496"
 ---
-# <a name="cbasewindowm_hdc-member"></a>Membro HDC CBaseWindow:: m \_
+# <a name="cbasewindowm_hdc-member"></a>Membro CBaseWindow::m \_ hdc
 
-Handle per il contesto di dispositivo della finestra.
+Handle al contesto di dispositivo della finestra.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ HDC m_hdc;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

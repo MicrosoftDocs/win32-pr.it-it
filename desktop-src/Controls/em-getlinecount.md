@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_GETLINECOUNT (winuser. h)
-description: Ottiene il numero di righe in un controllo di modifica su più righe. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_GETLINECOUNT messaggio (Winuser.h)
+description: Ottiene il numero di righe in un controllo di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: 9fe63c10-7395-4f98-a672-14960a70d14f
 keywords:
-- Controlli di Windows Message EM_GETLINECOUNT
+- EM_GETLINECOUNT di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15ffbeafb13850317faccb4be44571d81b0d7e36
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 44487084da8df8edd463fc0683c9d27fcba19a2993465e5493edfd8bb7c3c6b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006684"
 ---
-# <a name="em_getlinecount-message-winuserh"></a>Messaggio EM_GETLINECOUNT (winuser. h)
+# <a name="em_getlinecount-message-winuserh"></a>EM_GETLINECOUNT messaggio (Winuser.h)
 
-Ottiene il numero di righe in un controllo di modifica su più righe. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Ottiene il numero di righe in un controllo di modifica su più righe. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,28 +32,28 @@ Ottiene il numero di righe in un controllo di modifica su più righe. Questo mes
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è un Integer che specifica il numero totale di righe di testo nel controllo di modifica su più righe o in un controllo Rich Edit. Se il controllo non ha testo, il valore restituito è 1. Il valore restituito non sarà mai minore di 1.
+Il valore restituito è un numero intero che specifica il numero totale di righe di testo nel controllo di modifica su più righe o nel controllo Rich Edit. Se il controllo non contiene testo, il valore restituito è 1. Il valore restituito non sarà mai minore di 1.
 
 ## <a name="remarks"></a>Commenti
 
-Il **messaggio \_ GETLINECOUNT em** Recupera il numero totale di righe di testo, non solo il numero di righe attualmente visibili.
+Il **messaggio EM \_ GETLINECOUNT** recupera il numero totale di righe di testo, non solo il numero di righe attualmente visibili.
 
-Se la funzionalità WordWrap è abilitata, il numero di righe può cambiare quando cambiano le dimensioni della finestra di modifica.
+Se la funzionalità Wordwrap è abilitata, il numero di righe può cambiare quando cambiano le dimensioni della finestra di modifica.
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Se la funzionalità WordWrap è abilitata, il numero di righe può cambiare quan
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -74,13 +74,13 @@ Se la funzionalità WordWrap è abilitata, il numero di righe può cambiare quan
 **Riferimento**
 </dt> <dt>
 
-[**\_riga em**](em-getline.md)
+[**EM \_ GETLINE**](em-getline.md)
 </dt> <dt>
 
-[**\_LINELENGTH em**](em-linelength.md)
+[**EM \_ LINELENGTH**](em-linelength.md)
 </dt> <dt>
 
-[**Modifica \_ GetLineCount**](/windows/desktop/api/Windowsx/nf-windowsx-edit_getlinecount)
+[**Modificare \_ GetLineCount**](/windows/desktop/api/Windowsx/nf-windowsx-edit_getlinecount)
 </dt> </dl>
 
  

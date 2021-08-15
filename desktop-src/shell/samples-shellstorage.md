@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come creare file e cartelle nei contenitori della shell. Viene inoltre illustrato come salvare l'elemento della shell restituito dalla finestra di dialogo file.
+description: Illustra come creare file e cartelle nei contenitori della shell. Illustra anche come salvare nell'elemento della shell restituito dalla finestra di dialogo del file.
 title: Esempio di archiviazione della shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: af4b1f13daf9cd0ec99dce542195d5e5e374a6d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3698a89566b65a8a263d39b3957285d4ffde07fda1ff754792b545959b987d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858260"
 ---
 # <a name="shell-storage-sample"></a>Esempio di archiviazione della shell
 
-Viene illustrato come creare file e cartelle nei contenitori della shell. Viene inoltre illustrato come salvare l'elemento della shell restituito dalla finestra di dialogo file.
+Illustra come creare file e cartelle nei contenitori della shell. Illustra anche come salvare nell'elemento della shell restituito dalla finestra di dialogo del file.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio ShellStorage](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellStorage) |
+| GitHub  | [Esempio shellStorage](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellStorage) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo partial-attribute-deletion-List
-description: Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei cataloghi globali. Attributo dell'oggetto NC della replica parziale. Utilizzato quando il Garbage Collector è in corso di rimozione degli attributi dagli oggetti nel relativo NCs di replica parziale.
+title: Attributo Partial-Attribute-Deletion-List
+description: Tiene traccia dello stato della replica interna delle repliche parziali, ovvero nei gruppi di disponibilità. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi controller di rete di replica parziali.
 ms.assetid: 0084774b-7231-4cfc-8f60-c014006da2b9
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo partial-attribute-deletion-List
+- Schema AD dell'attributo Partial-Attribute-Deletion-List
 - Schema AD dell'attributo partialAttributeDeletionList
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2c6c0428d71dbba4199eeb441c838fb54a4463
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6d3dafe1a3e4913d8f6f6d1ba60dd0afa576e8bcb3ecf398e7f3cdc5c9075156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423944"
 ---
-# <a name="partial-attribute-deletion-list-attribute"></a>Attributo partial-attribute-deletion-List
+# <a name="partial-attribute-deletion-list-attribute"></a>Attributo Partial-Attribute-Deletion-List
 
-Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei cataloghi globali. Attributo dell'oggetto NC della replica parziale. Utilizzato quando il Garbage Collector è in corso di rimozione degli attributi dagli oggetti nel relativo NCs di replica parziale.
+Tiene traccia dello stato della replica interna delle repliche parziali, ovvero nei gruppi di disponibilità. Attributo dell'oggetto NC di replica parziale. Usato quando gc sta rimuovendo gli attributi dagli oggetti nei relativi controller di rete di replica parziali.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
-| CN                | Elenco di eliminazione-attributo parziale                       |
-| LDAP-Display-Name | partialAttributeDeletionList                          |
+| CN                | Partial-Attribute-Deletion-List                       |
+| Ldap-Display-Name | partialAttributeDeletionList                          |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | Durante la replica                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.663                                |
-| System-ID-GUID    | 28630ec0-41d5-11d1-a9c1-0000f80367c1                  |
+| System-Id-Guid    | 28630ec0-41d5-11d1-a9c1-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -44,7 +44,7 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Tiene traccia dello stato di replica interno delle repliche parziali, ovvero nei
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Vero                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000013                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

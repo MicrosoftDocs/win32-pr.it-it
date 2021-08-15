@@ -4,12 +4,12 @@ ms.assetid: fb2ff37c-cfee-498f-8fc3-5d73ee84bc84
 title: System.TransferOrder
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab5e18c3cff5622e444e22d65ca147a44c7099ce
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f359657025d93c53aa8b466c903b456ef0ae70c03166fe2850814a6cd23a7d76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117681636"
 ---
 # <a name="systemtransferorder"></a>System.TransferOrder
 
@@ -37,7 +37,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -67,7 +67,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

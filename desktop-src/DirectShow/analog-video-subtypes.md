@@ -1,19 +1,19 @@
 ---
-description: I sottotipi video analoghi seguenti sono ora obsoleti. Usare invece l'enumerazione AnalogVideoStandard.
+description: I sottotipi video analogici seguenti sono ora obsoleti. In alternativa, usare l'enumerazione AnalogVideoStandard.
 ms.assetid: 67db7ee1-88ec-4e4f-be5e-8b4a7a652bca
-title: Sottotipi video analogici (dshow. h)
+title: Sottotipi video analogico (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a45021badb630b071a57479cb74874fec6f77da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb40aec061f7ec59c03a425cc80b4e1ea7f568845fdd0769f4d32fdfc110caf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824727"
 ---
-# <a name="analog-video-subtypes"></a>Sottotipi video analogici
+# <a name="analog-video-subtypes"></a>Sottotipi video analogico
 
-I sottotipi video analoghi seguenti sono ora obsoleti. Usare invece l'enumerazione [**AnalogVideoStandard**](/windows/win32/api/strmif/ne-strmif-analogvideostandard) .
+I sottotipi video analogici seguenti sono ora obsoleti. In [**alternativa, usare l'enumerazione AnalogVideoStandard.**](/windows/win32/api/strmif/ne-strmif-analogvideostandard)
 
 
 
@@ -32,7 +32,7 @@ I sottotipi video analoghi seguenti sono ora obsoleti. Usare invece l'enumerazio
 | <span id="MEDIASUBTYPE_AnalogVideo_SECAM_G"></span><span id="mediasubtype_analogvideo_secam_g"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_G"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ G**</dt> </dl>     | (G) SECAM<br/>  |
 | <span id="MEDIASUBTYPE_AnalogVideo_SECAM_H"></span><span id="mediasubtype_analogvideo_secam_h"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_H"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ H**</dt> </dl>     | (H) SECAM<br/>  |
 | <span id="MEDIASUBTYPE_AnalogVideo_SECAM_K"></span><span id="mediasubtype_analogvideo_secam_k"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_K"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ K**</dt> </dl>     | (K) SECAM<br/>  |
-| <span id="MEDIASUBTYPE_AnalogVideo_SECAM_K1"></span><span id="mediasubtype_analogvideo_secam_k1"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_K1"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ K1**</dt> </dl> | K1 SECAM<br/> |
+| <span id="MEDIASUBTYPE_AnalogVideo_SECAM_K1"></span><span id="mediasubtype_analogvideo_secam_k1"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_K1"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ K1**</dt> </dl> | (K1) Secam<br/> |
 | <span id="MEDIASUBTYPE_AnalogVideo_SECAM_L"></span><span id="mediasubtype_analogvideo_secam_l"></span><span id="MEDIASUBTYPE_ANALOGVIDEO_SECAM_L"></span><dl> <dt>**MEDIASUBTYPE \_ AnalogVideo \_ SECAM \_ L**</dt> </dl>     | (L) SECAM<br/>  |
 
 
@@ -43,7 +43,7 @@ I sottotipi video analoghi seguenti sono ora obsoleti. Usare invece l'enumerazio
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 26208e02-6119-47be-86d6-5432723e4b1f
 title: System.StartDate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd9ce6a5b1b648cac769ba87a62e61960919badd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8e6fba721f3acccd16749b0a9e8c80414e7d6dd2af929f2e863e4661d828740a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227528"
 ---
 # <a name="systemstartdate"></a>System.StartDate
 

@@ -1,12 +1,12 @@
 ---
-title: Metodo WSMan. EnumerationFlagHierarchyDeep (WSManDisp. h)
-description: Restituisce il valore del flag di enumerazione EnumerationFlagHierarchyDeep per l'utilizzo nel parametro Flags di Session. enumerate.
+title: Metodo WSMan.EnumerationFlagHierarchyDeep (WSManDisp.h)
+description: Restituisce il valore del flag di enumerazione EnumerationFlagHierarchyDeep da usare nel parametro flags di Session.Enumerate.
 ms.assetid: b84b82fa-0b2e-418e-850f-6d7a4749fdc1
 ms.tgt_platform: multiple
 keywords:
-- Gestione remota Windows del metodo EnumerationFlagHierarchyDeep
-- Metodo EnumerationFlagHierarchyDeep Gestione remota Windows, oggetto WSMan
-- Gestione remota Windows oggetto WSMan, metodo EnumerationFlagHierarchyDeep
+- Metodo EnumerationFlagHierarchyDeep Windows Remote Management
+- Metodo EnumerationFlagHierarchyDeep Windows gestione remota , oggetto WSMan
+- Oggetto WSMan Windows gestione remota, metodo EnumerationFlagHierarchyDeep
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61982c6117d0a91ec253af35657f0cbbf5af12c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38ccd7aa4884a916a9b8ae8d364679263fa0b217dccef1065c58c332678b9f07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117742594"
 ---
-# <a name="wsmanenumerationflaghierarchydeep-method"></a>WSMan. EnumerationFlagHierarchyDeep, metodo
+# <a name="wsmanenumerationflaghierarchydeep-method"></a>Metodo WSMan.EnumerationFlagHierarchyDeep
 
-Il metodo **EnumerationFlagHierarchyDeep** restituisce il valore del flag di enumerazione **EnumerationFlagHierarchyDeep** per l'utilizzo nel parametro *Flags* di [**Session. enumerate**](session-enumerate.md). Questo metodo fornisce una sintassi più efficiente per l'utilizzo della costante, in modo che gli script non siano necessari per impostare un valore costante. Per ulteriori informazioni su come chiamare questo metodo, vedere [costanti di sessione](session-constants.md).
+Il **metodo EnumerationFlagHierarchyDeep** restituisce il valore del flag di enumerazione **EnumerationFlagHierarchyDeep** da usare nel parametro *flags* di [**Session.Enumerate**](session-enumerate.md). Questo metodo fornisce una sintassi più efficiente per l'uso della costante in modo che gli script non siano necessari per impostare un valore costante. Per altre informazioni su come chiamare questo metodo, vedere [Costanti di sessione](session-constants.md).
 
-**EnumerationFlagHierarchyDeep** è una costante nell'enumerazione **\_ WSManEnumFlags** ed è descritta in [**costanti di enumerazione**](enumeration-constants.md).
+**EnumerationFlagHierarchyDeep** è una costante nell'enumerazione **\_ WSManEnumFlags** ed è descritta in [**Costanti di enumerazione**](enumeration-constants.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ WSMan.EnumerationFlagHierarchyDeep( _
 
 <dl> <dt>
 
-*flag* \[ out\]
+*flag* \[ Cambio\]
 </dt> <dd>
 
 Valore della costante.
@@ -54,7 +54,7 @@ Valore della costante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

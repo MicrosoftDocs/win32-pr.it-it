@@ -1,6 +1,6 @@
 ---
-title: 'Funzione TextureCubeArray:: Sample (S, float, float)'
-description: 'Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. | Funzione TextureCubeArray:: Sample (S, float, float)'
+title: Funzione TextureCubeArray::Sample(S,float,float)
+description: Campionare una trama con un valore facoltativo in cui impostare i valori di livello di dettaglio (LOD) del campione. | Funzione TextureCubeArray::Sample(S,float,float)
 ms.assetid: E3BACA5E-18FC-4BD7-A8D8-C2808BDF1517
 keywords:
 - Funzione di esempio HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0f3f822ee334262dc50950064c6b4257aca3dd1f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a3341401c67f534e68b2262c73d8a74ee851f0ec3bea11574011226165056805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723326"
 ---
-# <a name="texturecubearraysamplesfloatfloat-function"></a>Funzione TextureCubeArray:: Sample (S, float, float)
+# <a name="texturecubearraysamplesfloatfloat-function"></a>Funzione TextureCubeArray::Sample(S,float,float)
 
-Esegue il campionamento di una trama con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.
+Campionare una trama con un valore facoltativo in cui impostare i valori di livello di dettaglio (LOD) del campione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,20 +46,20 @@ DXGI_FORMAT Sample(
 
 Tipo: **SamplerState**
 
-[Stato del campionatore](dx-graphics-hlsl-sampler.md). Si tratta di un oggetto dichiarato in un file di effetti che contiene le assegnazioni di stato.
+Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto dichiarato in un file di effetti che contiene assegnazioni di stato.
 
 </dd> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
+Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
 
 
 
-| Tipo di Texture-Object                    | Tipo di parametro |
+| Texture-Object tipo                    | Tipo di parametro |
 |----------------------------------------|----------------|
 | Texture1D                              | float          |
 | Texture1DArray, Texture2D              | float2         |
@@ -72,20 +72,20 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo di oggetto trama.
 
 </dd> <dt>
 
-*Blocca* \[ in\]
+*Clamp* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
 
-Valore facoltativo a cui bloccare i valori LOD di esempio. Se ad esempio si passa 2.0 f per il valore del morsetto, si garantisce che nessun singolo campione acceda a un livello MIP inferiore a 2.0 f.
+Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si passa 2.0f per il valore di chiusura, si garantisce che nessun singolo campione accerta un livello mip inferiore a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **DXGI \_ Format**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato di trama, che è uno dei valori tipizzati elencati [**nel \_ formato DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vedi anche
 

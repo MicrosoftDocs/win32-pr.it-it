@@ -1,5 +1,5 @@
 ---
-description: Si verifica quando il controllo InkPicture ha completato il ridisegno stesso.
+description: Si verifica quando il controllo InkPicture ha completato il ridisegno di se stesso.
 ms.assetid: a8194cff-ed94-402e-8564-08d370f958b4
 title: Evento InkPicture.Painted (Msinkaut.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118451057"
 ---
-# <a name="inkpicturepainted-event"></a>Evento InkPicture.Painted
+# <a name="inkpicturepainted-event"></a>InkPicture.Painted - evento
 
-Si verifica quando [il controllo InkPicture](inkpicture-control-reference.md) ha completato il ridisegno stesso.
+Si verifica quando [il controllo InkPicture](inkpicture-control-reference.md) ha completato il ridisegno di se stesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Questo metodo di evento è definito nelle interfacce dispatch **\_ IInkOverlayEv
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

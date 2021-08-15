@@ -1,23 +1,23 @@
 ---
-title: uge (SM4-ASM)
-description: Il vettore Component-Wise Unsigned Integer il confronto maggiore di o uguale a.
+title: uge (sm4 - asm)
+description: Confronto intero senza segno vettore per componente maggiore di o uguale.
 ms.assetid: CA8E19EC-619F-4C19-B6FD-91650B5DAF9F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4aecd9e39aa94c69acefff0f6a0fdf843cec5d8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a7145e011b9d08bc64ab6b2252afbfb7506a115f5a0f30c3d02db450371c569c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103857766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505079"
 ---
-# <a name="uge-sm4---asm"></a>uge (SM4-ASM)
+# <a name="uge-sm4---asm"></a>uge (sm4 - asm)
 
-Il vettore Component-Wise Unsigned Integer il confronto maggiore di o uguale a.
+Confronto intero senza segno vettore per componente maggiore di o uguale.
 
 
 
-| uge dest \[ . mask \] , src0 \[ . Swizzle \] , src1 \[ . Swizzle\] |
+| uge dest \[ \] .mask, src0 \[ .swizzle, \] src1 \[ .swizzle\] |
 |-------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Il vettore Component-Wise Unsigned Integer il confronto maggiore di o uguale a.
 
 | Elemento                                                            | Descrizione                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nell' \] indirizzo del risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nei \] componenti da confrontare con *src1*.<br/>        |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nei \] componenti da confrontare con *src0*.<br/>        |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Indirizzo del risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Componenti da confrontare con *src1*.<br/>        |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Componenti da confrontare con *src0*.<br/>        |
 
 
 
@@ -38,9 +38,9 @@ Il vettore Component-Wise Unsigned Integer il confronto maggiore di o uguale a.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue il confronto unsigned integer (*src0*  >=  *src1*) per ogni componente e scrive il risultato in *dest*.
+Questa istruzione esegue il confronto di interi senza segno (*src0*  >=  *src1*) per ogni componente e scrive il risultato in *dest*.
 
-Se il confronto è true, viene restituito 0xFFFFFFFF per quel componente. In caso contrario, viene restituito 0x0000000.
+Se il confronto è true, viene restituito 0xFFFFFFFF per tale componente. In caso 0x0000000 viene restituito .
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -54,7 +54,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -62,12 +62,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -77,7 +77,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

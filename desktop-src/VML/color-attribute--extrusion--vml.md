@@ -1,6 +1,6 @@
 ---
-title: Attributo Color (Extrusion)(VML)
-description: Attributo Color (Extrusion)(VML)
+title: Attributo Color (estrusione)(VML)
+description: Attributo Color (estrusione)(VML)
 ms.assetid: 52ee2210-5e32-4e01-9af7-b511e43f987a
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,16 +11,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118347307"
 ---
-# <a name="color-attribute-extrusionvml"></a>Attributo Color (Extrusion)(VML)
+# <a name="color-attribute-extrusionvml"></a>Attributo Color (estrusione)(VML)
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Definisce il colore delle facce di estrusione. Proprietà di lettura/scrittura. **VgColor**.
+Definisce il colore dei visi di estrusione. Proprietà di lettura/scrittura. **VgColor**.
 
 **Si applica a**
 

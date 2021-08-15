@@ -1,21 +1,21 @@
 ---
-description: Tempo di esposizione per la foto, in secondi, letto dalle informazioni sul file di immagine scambiabile (EXIF).
+description: Tempo di esposizione della foto, espresso in secondi, letto dalle informazioni exIF (Exchangeable Image File).
 ms.assetid: 44f7e6d5-c4d9-4b41-b6c6-15145abb7983
-title: System. Photo. ExposureTime
+title: System.Photo.ExposureTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5811a3d375f41883d1db8f392e714b7bbe0dfa8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2bc1c767344187efd0107d4efa7bcec23d6f099497d9a26f29b89153a73a2e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723866"
 ---
-# <a name="systemphotoexposuretime"></a>System. Photo. ExposureTime
+# <a name="systemphotoexposuretime"></a>System.Photo.ExposureTime
 
-Tempo di esposizione per la foto, in secondi, letto dalle informazioni sul file di immagine scambiabile (EXIF). Questa proprietà viene calcolata da [System. Photo. ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) e [System. Photo. ExposureTimeDenominator](./props-system-photo-exposuretimedenominator.md).
+Tempo di esposizione della foto, espresso in secondi, letto dalle informazioni exIF (Exchangeable Image File). Questa proprietà viene calcolata da [System.Photo.ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) e [System.Photo.ExposureTimeDenominator](./props-system-photo-exposuretimedenominator.md).
 
-Di seguito è riportato un elenco dei valori possibili ricavati dalla specifica EXIF 2,2.
+Di seguito è riportato un elenco di valori possibili della specifica EXIF 2.2.
 
 -   30
 -   15
@@ -53,16 +53,16 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Exchangeable Image File Format per fotocamere digitali ancora: EXIF versione 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -71,13 +71,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -86,13 +86,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

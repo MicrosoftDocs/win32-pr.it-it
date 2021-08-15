@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 569a8dd4352edb0c4660fecd3e77fdfaec0ec4c4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fdd646458bb10287e1a76ffed897f1ea039e1b047ccf14d10aeb990ebfc74622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403450"
 ---
 # <a name="cbaserenderergetpincount-method"></a>Metodo CBaseRenderer.GetPinCount
 
-Il `GetPinCount` metodo recupera il numero di pin.
+Il `GetPinCount` metodo recupera il numero di segnaposto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,7 +54,7 @@ Questo metodo implementa il [**metodo CBaseFilter::GetPinCount,**](cbasefilter-g
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase.h (include Streams.h)</dt> </dl>                                                                                   |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
 | Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 

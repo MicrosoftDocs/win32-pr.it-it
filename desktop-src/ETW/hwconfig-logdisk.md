@@ -1,7 +1,7 @@
 ---
-description: La \_ classe HWConfig LogDisk è la classe del tipo di evento per gli eventi di configurazione del disco logico. La sintassi seguente è semplificata dal codice MOF.
+description: La classe HWConfig \_ LogDisk è la classe del tipo di evento per gli eventi di configurazione del disco logico. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 2b7038fa-2f20-4bb5-bac1-76b272b3421c
-title: Classe HWConfig_LogDisk
+title: HWConfig_LogDisk classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: dce4faed913d01f76ff23177b2dad42ea74e5c08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01d200fc5c34546c96f6a78fd55548e8d5a7b0dacf74d46c411174beb66f6f4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394805"
 ---
-# <a name="hwconfig_logdisk-class"></a>\_Classe HWConfig LogDisk
+# <a name="hwconfig_logdisk-class"></a>Classe HWConfig \_ LogDisk
 
-La classe **HWConfig \_ LogDisk** è la classe del tipo di evento per gli eventi di configurazione del disco logico.
+La **classe HWConfig \_ LogDisk** è la classe del tipo di evento per gli eventi di configurazione del disco logico.
 
 La sintassi seguente è semplificata dal codice MOF.
 
@@ -44,42 +44,42 @@ class HWConfig_LogDisk : HWConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ LogDisk di HWConfig** dispone di questi tipi di membri:
+La **classe \_ HWConfig LogDisk** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ LogDisk di HWConfig** dispone di queste proprietà.
+La **classe HWConfig \_ LogDisk** ha queste proprietà.
 
 <dl> <dt>
 
-Numerodisco
+DiskNumber
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1)
+Qualificatori: WmiDataId(1)
 </dt> </dl>
 
-Numero di indice del disco contenente questa partizione.
+Numero di indice del disco contenente la partizione.
 
 </dd> <dt>
 
 Pad
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Riservato.
@@ -89,29 +89,29 @@ Riservato.
 PartitionSize
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Dimensioni totali, in byte, della partizione.
+Dimensioni totali della partizione, in byte.
 
 </dd> <dt>
 
 StartOffset
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
 Offset iniziale (in byte) della partizione dall'inizio del disco.
@@ -124,7 +124,7 @@ Offset iniziale (in byte) della partizione dall'inizio del disco.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                   |
 
 

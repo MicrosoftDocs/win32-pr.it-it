@@ -1,9 +1,9 @@
 ---
 title: show cachestate
-description: Elenca tutte le risorse e le relative proprietà associate memorizzate nella cache di risposta HTTP o Visualizza una singola risorsa e le proprietà associate.
+description: Elenca tutte le risorse e le relative proprietà associate memorizzate nella cache delle risposte HTTP o visualizza una singola risorsa e le relative proprietà associate.
 ms.assetid: 9daa445e-dd2f-4b73-8938-58df931c015b
 keywords:
-- Mostra HTTP capetto
+- show cachestate HTTP
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 088a59eaa92db8ed9e8cbe59075d540507e51535
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: c13051b3ba7367eac4e40e941749767308a7e156beb1b086e196f96942bfdace
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104335047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393551"
 ---
 # <a name="show-cachestate"></a>show cachestate
 
-Elenca tutte le risorse e le relative proprietà associate memorizzate nella cache di risposta HTTP o Visualizza una singola risorsa e le proprietà associate.
+Elenca tutte le risorse e le relative proprietà associate memorizzate nella cache delle risposte HTTP o visualizza una singola risorsa e le relative proprietà associate.
 
 ``` syntax
 show cachestate [[url=]string]
@@ -32,7 +32,7 @@ show cachestate [[url=]string]
 
 <dl> <dt>
 
-<span id="__url__string_"></span><span id="__URL__STRING_"></span>**\[\[URL = \] ***stringa***\]**
+<span id="__url__string_"></span><span id="__URL__STRING_"></span>**\[ \[ url= \]**_stringa_*_\]_*
 </dt> <dd>
 
 URL completo. Se non specificato, implica tutti gli URL. L'URL può anche essere un prefisso per gli URL registrati.
@@ -41,11 +41,11 @@ URL completo. Se non specificato, implica tutti gli URL. L'URL può anche essere
 
 ## <a name="examples"></a>Esempio
 
-**Mostra URL capetto =https://www.contoso.com:80/myresource**
+**show cachestate url=https://www.contoso.com:80/myresource**
 
- 
+ 
 
- 
+ 
 
 
 

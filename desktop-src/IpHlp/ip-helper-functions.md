@@ -4,12 +4,12 @@ description: Le funzioni seguenti recuperano e modificano le impostazioni di con
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
-ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
+ms.openlocfilehash: 050db5574a1c10f01dadd1f53bb8e5a5aee2625a922680fe44f50a76e07ada97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114394213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389132"
 ---
 # <a name="ip-helper-functions"></a>Funzioni helper IP
 
@@ -19,7 +19,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**GetNetworkConnectivityHintForInterface**](/windows/win32/api/netioapi/nf-netioapi-getnetworkconnectivityhintforinterface)
 -   [**NotifyNetworkConnectivityHintChange**](/windows/win32/api/netioapi/nf-netioapi-notifynetworkconnectivityhintchange)
 
-## <a name="adapter-management"></a>Gestione degli adapter
+## <a name="adapter-management"></a>Gestione dell'adapter
 
 -   [**GetAdapterIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getadapterindex)
 -   [**GetAdaptersAddresses**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getadaptersaddresses)
@@ -53,7 +53,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**if \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
 -   [**if \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
-## <a name="interface-management"></a>Gestione delle interfacce
+## <a name="interface-management"></a>Gestione dell'interfaccia
 
 -   [**FreeInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-freeinterfacednssettings)
 -   [**GetFriendlyIfIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getfriendlyifindex)
@@ -75,7 +75,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**SetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-setinterfacednssettings)
 -   [**SetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-setipinterfaceentry)
 
-## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Ip (Internet Protocol) e Internet Control Message Protocol (ICMP)
+## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>IP (Internet Protocol) e Internet Control Message Protocol (ICMP)
 
 -   [**GetIcmpStatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-geticmpstatistics)
 -   [**GetIpStatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getipstatistics)
@@ -111,7 +111,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 -   [**SetUnicastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-setunicastipaddressentry)
 
-## <a name="ip-address-string-conversion"></a>Conversione della stringa di indirizzo IP
+## <a name="ip-address-string-conversion"></a>Conversione di stringhe di indirizzi IP
 
 -   [**RtlIpv4AddressToString**](/windows/win32/api/ip2string/nf-ip2string-rtlipv4addresstostringa)
 -   [**RtlIpv4AddressToStringEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv4addresstostringexw)
@@ -122,7 +122,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**RtlIpv6StringToAddress**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressa)
 -   [**RtlIpv6StringToAddressEx**](/windows/win32/api/ip2string/nf-ip2string-rtlipv6stringtoaddressexw)
 
-## <a name="ip-neighbor-address-management"></a>Gestione degli indirizzi ip adiacenti
+## <a name="ip-neighbor-address-management"></a>Gestione degli indirizzi adiacenti IP
 
 -   [**CreateIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-createipnetentry2)
 -   [**DeleteIpNetEntry2**](/windows/win32/api/Netioapi/nf-netioapi-deleteipnetentry2)
@@ -161,7 +161,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**SetIpStatisticsEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setipstatisticsex)
 -   [**UnenableRouter**](/windows/win32/api/Iphlpapi/nf-iphlpapi-unenablerouter)
 
-## <a name="ip-table-memory-management"></a>Gestione della memoria delle tabelle IP
+## <a name="ip-table-memory-management"></a>Gestione della memoria della tabella IP
 
 -   [**FreeMibTable**](/windows/win32/api/Netioapi/nf-netioapi-freemibtable)
 
@@ -193,7 +193,7 @@ Le funzioni seguenti recuperano e modificano le impostazioni di configurazione p
 -   [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange)
 -   [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/unregisterinterfacetimestampconfigchange)
 
-## <a name="persistent-port-reservation"></a>Prenotazione di porte persistenti
+## <a name="persistent-port-reservation"></a>Prenotazione di porte persistente
 
 -   [**CreatePersistentTcpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistenttcpportreservation)
 -   [**CreatePersistentUdpPortReservation**](/windows/win32/api/Iphlpapi/nf-iphlpapi-createpersistentudpportreservation)

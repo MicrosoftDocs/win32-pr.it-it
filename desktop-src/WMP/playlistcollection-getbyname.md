@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. getByName (metodo)
-description: Il metodo getByName recupera un oggetto PlaylistArray contenente playlist con il nome specificato, se esistente.
+title: Metodo PlaylistCollection.getByName
+description: Il metodo getByName recupera un oggetto PlaylistArray contenente playlist con il nome specificato, se presente.
 ms.assetid: 0308a98d-1149-4367-b602-33fa54c1760f
 keywords:
-- metodo getByName Media Player Windows
-- metodo getByName Windows Media Player, Classe PlaylistCollection
-- Classe PlaylistCollection Windows Media Player, metodo getByName
+- Metodo getByName Windows Media Player
+- Metodo getByName Windows Media Player , classe PlaylistCollection
+- Classe PlaylistCollection Windows Media Player metodo , getByName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7954df8e0ccc487df77ea31b3a26dce9eea6d2e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 300307ff011abf8b28c645901422291ccab4cf7c66a7a3ba81121ffe1c22e573
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334642"
 ---
-# <a name="playlistcollectiongetbyname-method"></a>PlaylistCollection. getByName (metodo)
+# <a name="playlistcollectiongetbyname-method"></a>Metodo PlaylistCollection.getByName
 
-Il metodo **GetByName** recupera un oggetto **PlaylistArray** contenente playlist con il nome specificato, se esistente.
+Il **metodo getByName** recupera un oggetto **PlaylistArray** contenente playlist con il nome specificato, se presente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ retVal = PlaylistCollection.getByName(
 
 <dl> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome delle playlist da recuperare.
@@ -51,17 +51,17 @@ retVal = PlaylistCollection.getByName(
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **PlaylistArray** .
+Questo metodo restituisce un **oggetto PlaylistArray.**
 
 ## <a name="remarks"></a>Commenti
 
-Usare *PlaylistArray*. **conteggio** per determinare se esiste una playlist. Se **count** è zero, una playlist non esiste.
+Usare *PlaylistArray.* **count per** determinare se esiste una playlist. Se **count** è zero, non esiste una playlist.
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria.](library-access.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice JScript seguente viene usato *PlaylistCollection*. **GetByName** per controllare l'oggetto **PlaylistCollection** per una playlist denominata "Three". Se è presente la playlist "Three-", **GetByName** imposta "Three" come playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzato *playlistCollection*. **getByName per** controllare **l'oggetto playlistCollection** per una playlist denominata "ThreeList". Se la playlist "Threelist" esiste, **getByName** imposta "ThreeList" come playlist corrente. **L'oggetto** Player è stato creato con l'ID = "Player".
 
 
 ```JScript
@@ -89,7 +89,7 @@ if (Checkit > 0){
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -101,16 +101,16 @@ if (Checkit > 0){
 [**Oggetto PlaylistArray**](playlistarray-object.md)
 </dt> <dt>
 
-[**PlaylistArray. Count**](playlistarray-count.md)
+[**PlaylistArray.count**](playlistarray-count.md)
 </dt> <dt>
 
-[**PlaylistCollection (oggetto)**](playlistcollection-object.md)
+[**Oggetto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

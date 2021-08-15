@@ -1,11 +1,11 @@
 ---
-title: Proprietà IVMHostInfo OSVersionString (VPCCOMInterfaces.h)
+title: Proprietà OSVersionString IVMHostInfo (VPCCOMInterfaces.h)
 description: Recupera la versione del sistema operativo in esecuzione nel computer host.
 ms.assetid: ac3a162a-d3e6-420d-ac26-d77f1c9646a6
 keywords:
 - Proprietà OSVersionString Virtual PC
 - Proprietà OSVersionString Virtual PC, interfaccia IVMHostInfo
-- Interfaccia IVMHostInfo Virtual PC , proprietà OSVersionString
+- Interfaccia IVMHostInfo Virtual PC, proprietà OSVersionString
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Versione del sistema operativo.
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | L'operazione è stata completata.<br/>     |
 | <dl> <dt>E \_ Puntatore</dt> <dt>0x80004003</dt> </dl>         | Il parametro è **NULL.**<br/>        |
-| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
+| <dl> <dt>DISP \_ E \_ ECCEZIONE</dt> <dt>0x80020009</dt> </dl> | Si è verificato un errore imprevisto.<br/> |
 
 
 
@@ -70,7 +70,7 @@ Versione del sistema operativo.
 | Fine del supporto client<br/>    | Windows 7<br/>                                                                          |
 | Prodotto<br/>                  | Windows Virtual PC<br/>                                                                 |
 | Intestazione<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
-| IID<br/>                      | IID IVMHostInfo è definito come \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| IID<br/>                      | IID \_ IVMHostInfo è definito come 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

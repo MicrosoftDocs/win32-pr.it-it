@@ -1,6 +1,6 @@
 ---
 title: CFSTR_DS_MULTISELECTPROPPAGE
-description: Il \_ formato degli Appunti MULTISELECTPROPPAGE di CFSTR DS \_ fornisce un handle di memoria globale (HGLOBAL) che contiene una stringa Unicode con terminazione null.
+description: Il formato degli Appunti CFSTR DS MULTISELECTPROPPAGE fornisce un handle di memoria \_ \_ globale (HGLOBAL) che contiene una stringa Unicode con terminazione Null.
 ms.assetid: cff8d696-b947-4cc2-a3b2-5b69f388957b
 ms.tgt_platform: multiple
 topic_type:
@@ -11,18 +11,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c56927b615616bf9fab822cd96d5170237967e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bd62a35d3feb105b08000ec131616ee7c811c86e90bd8cc27158a14c1f72e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023679"
 ---
-# <a name="cfstr_ds_multiselectproppage"></a>\_MULTISELECTPROPPAGE DS \_ CFSTR
+# <a name="cfstr_ds_multiselectproppage"></a>CFSTR \_ DS \_ MULTISELECTPROPPAGE
 
 <dl> <dt>
 
-<span id="CFSTR_DS_MULTISELECTPROPPAGE"></span><span id="cfstr_ds_multiselectproppage"></span>**\_MULTISELECTPROPPAGE DS \_ CFSTR**
+<span id="CFSTR_DS_MULTISELECTPROPPAGE"></span><span id="cfstr_ds_multiselectproppage"></span>**CFSTR \_ DS \_ MULTISELECTPROPPAGE**
 </dt> <dd> <dl> <dt>
 
 "DsAdminMultiSelectClipFormat"
@@ -30,10 +30,10 @@ ms.locfileid: "103964060"
 
 
 
-Il formato degli Appunti **\_ \_ MULTISELECTPROPPAGE di CFSTR DS** fornisce un handle di memoria globale (**HGLOBAL**) che contiene una stringa Unicode con terminazione null che contiene un nome univoco che viene usato per creare l'oggetto notifica per un'estensione della finestra delle proprietà con selezione multiselezione.
+Il formato degli Appunti **CFSTR \_ DS \_ MULTISELECTPROPPAGE** fornisce un handle di memoria globale (**HGLOBAL**) che contiene una stringa Unicode con terminazione Null che contiene un nome univoco usato per creare l'oggetto notifica per un'estensione della finestra delle proprietà a selezione multipla.
 
 > [!Note]  
-> Il valore del formato degli Appunti non è definito in un file di intestazione pubblicato. Per usare questo valore del formato degli Appunti, è necessario definirlo nel formato esatto indicato.
+> Questo valore di formato degli Appunti non è definito in un file di intestazione pubblicato. Per usare questo valore di formato degli Appunti, è necessario definirlo manualmente nel formato esatto visualizzato.
 
  
 

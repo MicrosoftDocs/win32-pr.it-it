@@ -1,5 +1,5 @@
 ---
-title: Metodi di IVMVirtualPC
+title: Metodi IVMVirtualPC
 description: L'interfaccia IVMVirtualPC espone i metodi seguenti.
 ms.assetid: 3098D0ED-B16F-4CA1-A76B-83B4988CB6B3
 ms.topic: reference
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118344298"
 ---
-# <a name="ivmvirtualpc-methods"></a>Metodi di IVMVirtualPC
+# <a name="ivmvirtualpc-methods"></a>Metodi IVMVirtualPC
 
 \[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 

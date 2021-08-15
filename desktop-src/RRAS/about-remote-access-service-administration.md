@@ -1,45 +1,45 @@
 ---
-title: Informazioni sull'amministrazione del servizio di accesso remoto
-description: I sistemi operativi Windows 2000 e versioni successive forniscono un set di funzioni per l'amministrazione delle autorizzazioni e delle porte utente nei server RAS.
+title: Informazioni sull'amministrazione del servizio Accesso remoto
+description: Windows 2000 e versioni successive forniscono un set di funzioni per l'amministrazione delle autorizzazioni utente e delle porte nei server RAS.
 ms.assetid: 95c6dceb-e3a9-421e-b43f-88b18b9e64ff
 keywords:
-- Servizio Routing e accesso remoto RRAS, amministrazione RAS
-- Servizio Routing e accesso remoto RRAS, amministrazione RAS, descrizione
-- RRAS amministrazione RAS
-- Amministrazione RAS RRAS, descrizione
+- Servizio Routing e Accesso remoto RRAS, amministrazione RAS
+- Servizio Routing e Accesso remoto RRAS, amministrazione RAS, descritto
+- Amministrazione RAS RRAS
+- Amministrazione RAS RRAS, descritto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73bdb55049e99b6d3df9980fc35879341b488531
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67939d142763f45bc2eb52e959d8448904559c98357544c6c858b46e8f87a917
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792284"
 ---
-# <a name="about-remote-access-service-administration"></a>Informazioni sull'amministrazione del servizio di accesso remoto
+# <a name="about-remote-access-service-administration"></a>Informazioni sull'amministrazione del servizio Accesso remoto
 
-I sistemi operativi Windows 2000 e versioni successive forniscono un set di funzioni per l'amministrazione delle autorizzazioni e delle porte utente nei server RAS. Utilizzando queste funzioni, è possibile sviluppare un'applicazione di amministrazione del server RAS per eseguire le attività seguenti:
+Windows 2000 e versioni successive forniscono un set di funzioni per l'amministrazione delle autorizzazioni utente e delle porte nei server RAS. Usando queste funzioni, è possibile sviluppare un'applicazione di amministrazione server RAS per eseguire le attività seguenti:
 
 -   Enumerare gli utenti che dispongono di un set specificato di autorizzazioni RAS
 -   Assegnare o revocare le autorizzazioni RAS per un utente specificato
 -   Enumerare le porte configurate in un server RAS
 -   Ottenere informazioni e statistiche su una porta specificata in un server RAS
--   Reimposta i contatori delle statistiche per una porta specificata
+-   Reimpostare i contatori delle statistiche per una porta specificata
 -   Disconnettere una porta specificata
 
-È anche possibile installare una DLL di amministrazione del server RAS per controllare le connessioni utente e assegnare gli indirizzi IP agli utenti con connessione remota. La DLL esporta un set di funzioni che il server RAS chiama ogni volta che un utente tenta di connettersi o disconnettersi.
+È anche possibile installare una DLL di amministrazione del server RAS per controllare le connessioni utente e assegnare indirizzi IP agli utenti connessi. La DLL esporta un set di funzioni chiamate dal server RAS ogni volta che un utente tenta di connettersi o disconnettersi.
 
-In questa documentazione vengono descritti gli argomenti seguenti:
+Questa documentazione descrive gli argomenti seguenti:
 
--   [Confronto tra le funzioni: Windows 2000 e RRAS ridistribuibile](function-comparison-windows-2000-versus-rras-redistributable.md)
+-   [Confronto tra funzioni: Windows 2000 e RRAS Redistributable](function-comparison-windows-2000-versus-rras-redistributable.md)
 -   [Amministrazione utenti RAS](ras-user-administration.md)
 -   [Amministrazione di server e porte RAS](ras-server-and-port-administration.md)
 -   [DLL di amministrazione RAS](ras-administration-dll.md)
--   [Configurazione del registro di sistema della DLL di amministrazione RAS](ras-administration-dll-registry-setup.md)
+-   [Configurazione del Registro di sistema della DLL di amministrazione RAS](ras-administration-dll-registry-setup.md)
 
- 
+ 
 
- 
+ 
 
 
 

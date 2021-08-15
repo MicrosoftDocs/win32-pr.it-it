@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5aabc29a7fe5122a7f7571750b97ebccb38158d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6948675f7910c46cb2b5db4285ce0df795fa057f275ce29b7f4c664b14c4ce1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498371"
 ---
 # <a name="connection-connections-element"></a>Elemento Connection (Connections)
 
-L'elemento **Connection (Connections)** definisce ogni impostazione di configurazione e la associa a un nome. L'elemento **Connection** è facoltativo.
+**L'elemento Connection (Connections)** definisce ogni impostazione di configurazione e la associa a un nome. **L'elemento Connection** è facoltativo.
 
 ``` syntax
 <xs:element name="Connection">
@@ -41,7 +41,7 @@ L'elemento **Connection (Connections)** definisce ogni impostazione di configura
 </xs:element>
 ```
 
-L'elemento **Connection** è definito dall'elemento [**Connections**](eapconnectionpropertiesv1schema-connections-element.md) .
+**L'elemento Connection** è definito dall'elemento [**Connections.**](eapconnectionpropertiesv1schema-connections-element.md)
 
 ## <a name="child-elements"></a>Elementi figlio
 
@@ -49,8 +49,8 @@ L'elemento **Connection** è definito dall'elemento [**Connections**](eapconnect
 
 | Elemento                                                                 | Tipo   | Descrizione                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
-| [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica l'elemento di configurazione EAP.<br/>                                                                    |
-| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Acquisisce il nome della connessione da definire, per facilitare l'identificazione di più connessioni. <br/> |
+| [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica l'elemento di configurazione EAP.<br/>                                                                    |
+| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Acquisisce il nome della connessione da definire, assistendo nell'identificazione di più connessioni. <br/> |
 
 
 
@@ -60,8 +60,8 @@ L'elemento **Connection** è definito dall'elemento [**Connections**](eapconnect
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -75,13 +75,13 @@ L'elemento **Connection** è definito dall'elemento [**Connections**](eapconnect
 [**Connessioni**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
-**Possibile elemento padre immediato nell'istanza dello schema**
+**Possibile elemento padre diretto nell'istanza dello schema**
 </dt> <dt>
 
 [**Connessioni**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)

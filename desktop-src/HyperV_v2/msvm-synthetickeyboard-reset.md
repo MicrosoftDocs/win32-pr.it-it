@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118392049"
 ---
-# <a name="reset-method-of-the-msvm_synthetickeyboard-class"></a>Metodo Reset della classe Msvm \_ SyntheticKeyboard
+# <a name="reset-method-of-the-msvm_synthetickeyboard-class"></a>Metodo Reset della classe \_ SyntheticKeyboard Msvm
 
 Reimposta la tastiera virtuale.
 
@@ -39,11 +39,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, restituisce 0. In caso contrario, restituisce un errore.
+In caso di esito positivo, restituisce 0; In caso contrario, restituisce un errore.
 
 <dl> <dt>
 
-**Completato senza errori** (0)
+**Completata senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -67,7 +67,7 @@ In caso di esito positivo, restituisce 0. In caso contrario, restituisce un erro
 
 <dl> <dt>
 
-[**Msvm \_ SyntheticKeyboard**](msvm-synthetickeyboard.md)
+[**Scheda \_ Sintetica Msvm**](msvm-synthetickeyboard.md)
 </dt> </dl>
 
  

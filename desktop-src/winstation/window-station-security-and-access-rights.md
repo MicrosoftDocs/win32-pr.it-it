@@ -1,6 +1,6 @@
 ---
 title: Sicurezza e diritti di accesso di Window Station
-description: La sicurezza consente di controllare l'accesso agli oggetti stazione finestra. Per altre informazioni sulla sicurezza, vedere Access-Control modello.
+description: La sicurezza consente di controllare l'accesso agli oggetti stazione finestra. Per altre informazioni sulla sicurezza, vedere Access-Control sicurezza.
 ms.assetid: b132da61-26b7-4457-9433-4894ca0e640a
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,22 +13,22 @@ ms.locfileid: "118435996"
 ---
 # <a name="window-station-security-and-access-rights"></a>Sicurezza e diritti di accesso di Window Station
 
-La sicurezza consente di controllare l'accesso agli oggetti stazione finestra. Per altre informazioni sulla sicurezza, vedere [Modello di controllo di accesso](/windows/desktop/SecAuthZ/access-control-model).
+La sicurezza consente di controllare l'accesso agli oggetti stazione finestra. Per altre informazioni sulla sicurezza, vedere [Modello di controllo di accesso.](/windows/desktop/SecAuthZ/access-control-model)
 
-È possibile specificare un [descrittore di sicurezza](/windows/desktop/SecAuthZ/security-descriptors) per un oggetto stazione finestra quando si chiama la [**funzione CreateWindowStation.**](/windows/win32/api/winuser/nf-winuser-createwindowstationa) Se si specifica NULL, la stazione finestra ottiene un descrittore di sicurezza predefinito. Gli ACL nel descrittore di sicurezza predefinito per una stazione finestra provengono dal token primario o di rappresentazione dell'autore.
+È possibile specificare un [descrittore di sicurezza](/windows/desktop/SecAuthZ/security-descriptors) per un oggetto stazione finestra quando si chiama la [**funzione CreateWindowStation.**](/windows/win32/api/winuser/nf-winuser-createwindowstationa) Se si specifica NULL, la stazione finestra ottiene un descrittore di sicurezza predefinito. Gli ACL nel descrittore di sicurezza predefinito per una stazione finestra provengono dal token di rappresentazione o primario dell'autore.
 
 Per ottenere o impostare il descrittore di sicurezza di un oggetto stazione finestra, chiamare le [**funzioni GetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) [**e SetSecurityInfo.**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)
 
-Quando si chiama la [**funzione OpenWindowStation,**](/windows/win32/api/winuser/nf-winuser-openwindowstationa) il sistema controlla i diritti di accesso richiesti rispetto al descrittore di sicurezza dell'oggetto.
+Quando chiami la [**funzione OpenWindowStation,**](/windows/win32/api/winuser/nf-winuser-openwindowstationa) il sistema controlla i diritti di accesso richiesti rispetto al descrittore di sicurezza dell'oggetto.
 
-I diritti di accesso validi per gli oggetti window station includono i [diritti di accesso standard](/windows/desktop/SecAuthZ/standard-access-rights) e alcuni diritti di accesso specifici degli oggetti. Nella tabella seguente sono elencati i diritti di accesso standard usati da tutti gli oggetti.
+I diritti di accesso validi per gli oggetti window station includono i [diritti di accesso standard](/windows/desktop/SecAuthZ/standard-access-rights) e alcuni diritti di accesso specifici dell'oggetto. Nella tabella seguente sono elencati i diritti di accesso standard utilizzati da tutti gli oggetti.
 
 | Valore                       | Significato                                                                                                                                                                                                                                                                              |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DELETE (0x00010000L)        | Obbligatorio per eliminare l'oggetto.                                                                                                                                                                                                                                                       |
-| CONTROLLO \_ LETTURA (0x00020000L) | Obbligatorio per leggere le informazioni nel descrittore di sicurezza per l'oggetto, senza includere le informazioni nel SACL. Per leggere o scrivere il SACL, è necessario richiedere il diritto di accesso ACCESS \_ SYSTEM \_ SECURITY. Per altre informazioni, vedere [Diritto di accesso SACL.](/windows/desktop/SecAuthZ/sacl-access-right) |
-| SYNCHRONIZE (0x00100000L)   | Non supportato per gli oggetti stazione finestra.                                                                                                                                                                                                                                            |
-| APPLICAZIONE \_ LIVELLO DATI WRITE (0x00040000L)    | Obbligatorio per modificare l'elenco DACL nel descrittore di sicurezza per l'oggetto.                                                                                                                                                                                                               |
+| READ \_ CONTROL (0x00020000L) | Necessario per leggere le informazioni nel descrittore di sicurezza per l'oggetto, senza includere le informazioni nell'elenco SACL. Per leggere o scrivere l'elenco SACL, è necessario richiedere il diritto di accesso ACCESS \_ SYSTEM \_ SECURITY. Per altre informazioni, vedere [Diritto di accesso SACL.](/windows/desktop/SecAuthZ/sacl-access-right) |
+| SYNCHRONIZE (0x00100000L)   | Non supportato per gli oggetti window station.                                                                                                                                                                                                                                            |
+| WRITE \_ DAC (0x00040000L)    | Necessario per modificare l'elenco DACL nel descrittore di sicurezza per l'oggetto.                                                                                                                                                                                                               |
 | WRITE \_ OWNER (0x00080000L)  | Obbligatorio per modificare il proprietario nel descrittore di sicurezza per l'oggetto.                                                                                                                                                                                                              |
 
 
@@ -43,20 +43,20 @@ Nella tabella seguente sono elencati i diritti di accesso specifici dell'oggetto
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WINSTA \_ ALL \_ ACCESS (0x37F)         | Tutti i diritti di accesso possibili per la stazione finestra.                                                                                                                                                                                                                            |
 | WINSTA \_ ACCESSCLIPBOARD (0x0004L)   | Obbligatorio per usare gli Appunti.                                                                                                                                                                                                                                                |
-| WINSTA \_ ACCESSGLOBALATOMS (0x0020L) | Obbligatorio per modificare gli atomi globali.                                                                                                                                                                                                                                          |
-| WINSTA \_ CREATEDESKTOP (0x0008L)     | Obbligatorio per creare nuovi oggetti desktop nella stazione della finestra.                                                                                                                                                                                                                 |
+| WINSTA \_ ACCESSGLOBALATOMS (0x0020L) | Necessario per modificare gli atomi globali.                                                                                                                                                                                                                                          |
+| WINSTA \_ CREATEDESKTOP (0x0008L)     | Necessario per creare nuovi oggetti desktop nella stazione della finestra.                                                                                                                                                                                                                 |
 | WINSTA \_ ENUMDESKTOPS (0x0001L)      | Obbligatorio per enumerare gli oggetti desktop esistenti.                                                                                                                                                                                                                               |
 | WINSTA \_ ENUMERATE (0x0100L)         | Obbligatorio per l'enumerazione della stazione finestra.                                                                                                                                                                                                                             |
-| WINSTA \_ EXITWINDOWS (0x0040L)       | Obbligatorio per chiamare correttamente [**la funzione ExitWindows**](/windows/desktop/api/winuser/nf-winuser-exitwindows) [**o ExitWindowsEx.**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) Le stazioni finestra possono essere condivise dagli utenti e questo tipo di accesso può impedire ad altri utenti di una stazione finestra di disconnettersi dal proprietario della stazione finestra. |
-| WINSTA \_ READATTRIBUTES (0x0002L)    | Obbligatorio per leggere gli attributi di un oggetto stazione finestra. Questo attributo include le impostazioni dei colori e altre proprietà globali della stazione della finestra.                                                                                                                                |
-| WINSTA \_ READSCREEN (0x0200L)        | Obbligatorio per accedere al contenuto dello schermo.                                                                                                                                                                                                                                           |
-| WINSTA \_ WRITEATTRIBUTES (0x0010L)   | Obbligatorio per modificare gli attributi di un oggetto stazione finestra. Gli attributi includono le impostazioni dei colori e altre proprietà globali della stazione della finestra.                                                                                                                               |
+| WINSTA \_ EXITWINDOWS (0x0040L)       | Necessario per chiamare correttamente [**la funzione ExitWindows**](/windows/desktop/api/winuser/nf-winuser-exitwindows) [**o ExitWindowsEx.**](/windows/desktop/api/winuser/nf-winuser-exitwindowsex) Le stazioni finestra possono essere condivise dagli utenti e questo tipo di accesso può impedire ad altri utenti di una stazione di finestre di disconnettersi dal proprietario della stazione finestra. |
+| WINSTA \_ READATTRIBUTES (0x0002L)    | Obbligatorio per leggere gli attributi di un oggetto stazione finestra. Questo attributo include le impostazioni del colore e altre proprietà globali della stazione finestra.                                                                                                                                |
+| WINSTA \_ READSCREEN (0x0200L)        | Obbligatorio per accedere al contenuto della schermata.                                                                                                                                                                                                                                           |
+| WINSTA \_ WRITEATTRIBUTES (0x0010L)   | Obbligatorio per modificare gli attributi di un oggetto stazione finestra. Gli attributi includono le impostazioni del colore e altre proprietà globali della stazione finestra.                                                                                                                               |
 
 
 
  
 
-Di seguito sono riportati i diritti di accesso [generici](/windows/desktop/SecAuthZ/generic-access-rights) per l'oggetto stazione finestra interattiva, ovvero la stazione finestra assegnata alla sessione di accesso dell'utente interattivo.
+Di seguito sono riportati i diritti di accesso [generici](/windows/desktop/SecAuthZ/generic-access-rights) per l'oggetto finestra interattiva stazione, ovvero la stazione finestra assegnata alla sessione di accesso dell'utente interattivo.
 
 
 
@@ -166,7 +166,7 @@ WINSTA_READATTRIBUTES<br />
 
  
 
-È possibile richiedere il diritto di accesso ACCESS SYSTEM SECURITY a un oggetto stazione finestra se si vuole leggere o scrivere il \_ \_ SACL dell'oggetto. Per altre informazioni, vedere [Elenchi di controllo di accesso (ACL)](/windows/desktop/SecAuthZ/access-control-lists) e Diritto di accesso [SACL.](/windows/desktop/SecAuthZ/sacl-access-right)
+È possibile richiedere il diritto di accesso ACCESS SYSTEM SECURITY a un oggetto stazione finestra se si vuole leggere o \_ \_ scrivere l'elenco SACL dell'oggetto. Per altre informazioni, vedere [Elenchi di controllo di accesso (ACL)](/windows/desktop/SecAuthZ/access-control-lists) e Diritto di accesso [SACL.](/windows/desktop/SecAuthZ/sacl-access-right)
 
  
 

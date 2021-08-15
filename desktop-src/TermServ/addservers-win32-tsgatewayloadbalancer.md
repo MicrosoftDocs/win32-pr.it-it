@@ -1,12 +1,12 @@
 ---
 title: Metodo AddServers della classe Win32_TSGatewayLoadBalancer
-description: Aggiunge server ai server di bilanciamento del carico del gateway di Desktop remoto (Gateway Desktop remoto) nella proprietà Servers.
+description: Aggiunge server ai server di bilanciamento del carico Desktop remoto Gateway Desktop remoto nella proprietà Server.
 ms.assetid: ffcbe14b-5ada-4951-bf51-95db14af41d7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo AddServers
-- Metodo AddServers Servizi Desktop remoto, classe Win32_TSGatewayLoadBalancer
-- Classe Win32_TSGatewayLoadBalancer Servizi Desktop remoto, metodo AddServers
+- Metodo AddServers Servizi Desktop remoto
+- Metodo AddServers Servizi Desktop remoto , Win32_TSGatewayLoadBalancer classe
+- Win32_TSGatewayLoadBalancer classe Servizi Desktop remoto , metodo AddServers
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a510fd6ecee12b5251ec84773327d6217463240f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 00bb232572c49b77f11de469f8e09fc536e73354f907d4070bc2281d42fc87fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117942269"
 ---
-# <a name="addservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Metodo AddServers della \_ classe TSGatewayLoadBalancer Win32
+# <a name="addservers-method-of-the-win32_tsgatewayloadbalancer-class"></a>Metodo AddServers della classe \_ Win32 TSGatewayLoadBalancer
 
-Aggiunge server ai server di bilanciamento del carico del gateway di Desktop remoto (Gateway Desktop remoto) nella proprietà **Servers** .
+Aggiunge server ai server Desktop remoto Gateway Desktop remoto nella **proprietà** Server.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ uint32 AddServers(
 
 <dl> <dt>
 
-*Server* \[ di in\]
+*Server* \[ Pollici\]
 </dt> <dd>
 
-Elenco delimitato da punti e virgola dei server di bilanciamento del carico di Gateway Desktop remoto da aggiungere alla proprietà **Server** .
+Elenco delimitato da punto e virgola dei server di bilanciamento del carico di Gateway Desktop remoto da aggiungere alla **proprietà Server.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
-Se più server si trovano nel parametro *Server* e uno dei server non può essere elaborato, nessuno dei server verrà elaborato.
+Se nel parametro *Servers sono* presenti più server e uno dei server non può essere elaborato, non verrà elaborato nessuno dei server.
 
-Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -80,7 +80,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> </dl>
 
  

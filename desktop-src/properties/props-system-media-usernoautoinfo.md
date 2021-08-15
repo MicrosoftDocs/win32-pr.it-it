@@ -1,19 +1,19 @@
 ---
-description: Se true, non modificare i metadati del file. Impostato dall'utente.
+description: Se true, non modificare i metadati di questo file. Impostata dall'utente.
 ms.assetid: ee4ae7f9-0c4f-4127-9098-282641f9ab46
-title: System. Media. UserNoAutoInfo
+title: System.Media.UserNoAutoInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed168c26ffcc05deeb37cf19629b3864f26c88ce
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 829456f11e71f561bfc5e5c06d94bac5c88b16dbeb8f90e250daa43c6f479615
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104058432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724841"
 ---
-# <a name="systemmediausernoautoinfo"></a>System. Media. UserNoAutoInfo
+# <a name="systemmediausernoautoinfo"></a>System.Media.UserNoAutoInfo
 
-Se true, non modificare i metadati del file. Impostato dall'utente.
+Se true, non modificare i metadati di questo file. Impostata dall'utente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
