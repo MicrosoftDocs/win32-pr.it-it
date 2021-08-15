@@ -1,19 +1,19 @@
 ---
-description: Definisce un colore di materiale di base che può essere applicato a una mesh completa o ai singoli visi della mesh. La potenza è l'esponente speculare del materiale.
+description: Definisce un colore di materiale di base che può essere applicato a una mesh completa o ai singoli visi di una mesh. La potenza è l'esponente speculare del materiale.
 ms.assetid: vs|directx_sdk|~\material.htm
 title: Materiale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54c13d201152350a8a61950bb609f73cbdb2a3aa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 53d4dcb1cef7597ff7c02d16f1db311287511166c9259c89a0ea60a0c49fb7bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104480701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798968"
 ---
 # <a name="material"></a>Materiale
 
-Definisce un colore di materiale di base che può essere applicato a una mesh completa o ai singoli visi della mesh. La potenza è l'esponente speculare del materiale.
+Definisce un colore di materiale di base che può essere applicato a una mesh completa o ai singoli visi di una mesh. La potenza è l'esponente speculare del materiale.
 
 ``` syntax
 template Material
@@ -29,17 +29,17 @@ template Material
 
 Dove:
 
--   faceColor-colore della faccia. Modello ColorRGBA. Vedere [**ColorRGBA**](colorrgba.md).
--   esponente di colore speculare del materiale di alimentazione.
--   specularColor-colore speculare materiale. Modello ColorRGB. Vedere [**ColorRGB**](colorrgb.md).
--   emissiveColor-colore emissivo materiale. Modello ColorRGB. Vedere [**ColorRGB**](colorrgb.md).
+-   faceColor: colore del viso. Un modello ColorRGBA. Vedere [**ColorRGBA.**](colorrgba.md)
+-   power : esponente di colore speculare materiale.
+-   specularColor: colore speculare materiale. Un modello ColorRGB. Vedere [**ColorRGB.**](colorrgb.md)
+-   emissiveColor: colore emissivo materiale. Un modello ColorRGB. Vedere [**ColorRGB.**](colorrgb.md)
 
 > [!Note]  
 > Il colore di ambiente richiede un componente alfa.
 
  
 
-[**TextureFilename**](texturefilename.md) è un oggetto dati facoltativo. Se questo oggetto non è presente, il volto è senza trame.
+[**TextureFilename è**](texturefilename.md) un oggetto dati facoltativo. Se questo oggetto non è presente, il viso non viene visualizzato come testo.
 
 ## <a name="see-also"></a>Vedi anche
 

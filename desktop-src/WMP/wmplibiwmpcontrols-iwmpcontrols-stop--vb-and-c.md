@@ -1,11 +1,11 @@
 ---
-title: Metodo Stop IWMPControls
-description: Il metodo Stop interrompe la riproduzione dell'elemento multimediale. | Metodo Stop IWMPControls
+title: Metodo stop IWMPControls
+description: Il metodo stop arresta la riproduzione dell'elemento multimediale. | Metodo stop IWMPControls
 ms.assetid: 4be601af-6321-4115-a94d-cfc9228991cb
 keywords:
-- arresta il metodo Windows Media Player
-- Metodo Stop Media Player Windows, interfaccia IWMPControls
-- Interfaccia IWMPControls Windows Media Player, metodo Stop
+- Metodo stop Windows Media Player
+- Metodo stop Windows Media Player, interfaccia IWMPControls
+- Interfaccia IWMPControls Windows Media Player , metodo stop
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a73271098340ea0cf0a645472b5ef6333ae0f4b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f941ac90fa86cdd16dedf5349c0a6d614c57f49bc91009f5d62c56bb83144bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332076"
 ---
-# <a name="iwmpcontrolsstop-method"></a>Metodo IWMPControls:: Stop
+# <a name="iwmpcontrolsstop-method"></a>Metodo IWMPControls::stop
 
-Il metodo **Stop** interrompe la riproduzione dell'elemento multimediale.
+Il **metodo stop** arresta la riproduzione dell'elemento multimediale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,13 +55,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo fa in modo che Windows Media Player rilasciare tutte le risorse di sistema utilizzate, ad esempio il dispositivo audio. L'elemento multimediale corrente, tuttavia, non viene rilasciato.
+Questo metodo Windows Media Player rilasciare tutte le risorse di sistema in uso, ad esempio il dispositivo audio. L'elemento multimediale corrente, tuttavia, non viene rilasciato.
 
-Quando Windows Media Player viene arrestato, la posizione di riproduzione corrente nell'elemento multimediale viene reimpostata all'inizio dell'elemento. Successivamente, la chiamata a **IWMPControls. Play** avvierà la riproduzione dall'inizio dell'elemento multimediale. Per arrestare un'operazione di riproduzione senza modificare la posizione corrente, usare il metodo **IWMPControls. pause** .
+Quando Windows Media Player viene arrestata, la posizione di riproduzione corrente nell'elemento multimediale viene reimpostata all'inizio dell'elemento. Successivamente, **la chiamata a IWMPControls.play** inizierà la riproduzione dall'inizio dell'elemento multimediale. Per interrompere un'operazione di riproduzione senza modificare la posizione corrente, usa il **metodo IWMPControls.pause.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **Stop** per arrestare l'elemento multimediale corrente in risposta all'evento Click di un pulsante. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio seguente usa **stop** per arrestare l'elemento multimediale corrente in risposta all'evento Click di un pulsante. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -108,7 +108,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -121,16 +121,16 @@ End Sub
 [**Interfaccia IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Next (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-next--vb-and-c.md)
+[**IWMPControls.next (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-next--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. pause (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-pause--vb-and-c.md)
+[**IWMPControls.pause (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-pause--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Play (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
+[**IWMPControls.play (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Previous (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-previous--vb-and-c.md)
+[**IWMPControls.previous (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-previous--vb-and-c.md)
 </dt> </dl>
 
  

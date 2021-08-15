@@ -35,7 +35,7 @@ I comandi script possono essere recapitati in uno dei due modi seguenti: in un f
 
 ## <a name="script-commands-in-the-file-header"></a>Comandi script nell'intestazione del file
 
-I comandi script possono essere inclusi nell'intestazione del file per il recupero al momento della riproduzione. L'applicazione in riproduzione è responsabile dell'esecuzione dei comandi script nel momento appropriato. Il vantaggio dell'uso di comandi script nell'intestazione del file è che tutti i comandi script sono disponibili prima di iniziare a ricevere gli esempi.
+I comandi script possono essere inclusi nell'intestazione del file per il recupero al momento della riproduzione. L'applicazione in riproduzione è responsabile dell'esecuzione dei comandi script nel momento appropriato. Il vantaggio dell'uso di comandi script nell'intestazione del file è che tutti i comandi script sono disponibili prima di iniziare a ricevere esempi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

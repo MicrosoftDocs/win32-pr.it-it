@@ -1,7 +1,7 @@
 ---
 description: Contiene una descrizione del profilo.
 ms.assetid: 8251ed29-d5b9-4ab9-861e-9b265766303f
-title: Description (MBNProfile)-elemento
+title: Elemento Description (MBNProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,18 +11,18 @@ api_name:
 - Description
 api_type:
 - Schema
-ms.openlocfilehash: 02bec9af9900b622622757433c6241d9df7bde36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff00dbc03503b51faa9dc734db61fd912da0ecf8f10f19adcbfb17b510c4834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744458"
 ---
-# <a name="description-mbnprofile-element"></a>Description (MBNProfile)-elemento
+# <a name="description-mbnprofile-element"></a>Elemento Description (MBNProfile)
 
-L'elemento **Description (MBNProfile)** contiene una descrizione del profilo.
+**L'elemento Description (MBNProfile)** contiene una descrizione del profilo.
 
-È una stringa di lunghezza fino a 255 caratteri.
+È una stringa di lunghezza massima di 255 caratteri.
 
 ``` syntax
 <xs:element name="Description"
@@ -30,7 +30,7 @@ L'elemento **Description (MBNProfile)** contiene una descrizione del profilo.
  />
 ```
 
-L'elemento **Description** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento Description** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,7 +38,7 @@ L'elemento **Description** è definito dall'elemento [**MBNProfile**](schema-mbn
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

@@ -1,26 +1,26 @@
 ---
-title: Proprietà BitmapPersistence di IMsRdpClientAdvancedSettings
-description: Specifica se utilizzare la memorizzazione nella cache permanente della bitmap. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
+title: Proprietà IMsRdpClientAdvancedSettings BitmapPersistence
+description: Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
 ms.assetid: ffaa9277-9dd7-4b2a-9de5-009b7e8766bc
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà BitmapPersistence
-- Servizi Desktop remoto proprietà BitmapPersistence, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà BitmapPersistence
+- Interfaccia bitmapPersistence Servizi Desktop remoto , IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà BitmapPersistence
+- Proprietà BitmapPersistence Servizi Desktop remoto , interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà BitmapPersistence
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65795b5217c785befe0db6ac529d5760a6211d4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1dc22347941d71cec7002fef8841f95b548075070c221ddd21c9d331aab8c5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353458"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmappersistence-property"></a>Proprietà IMsRdpClientAdvancedSettings:: BitmapPersistence
+# <a name="imsrdpclientadvancedsettingsbitmappersistence-property"></a>Proprietà IMsRdpClientAdvancedSettings::BitmapPersistence
 
-Specifica se utilizzare la memorizzazione nella cache permanente della bitmap. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
+Specifica se deve essere utilizzata la memorizzazione nella cache delle bitmap persistenti. La memorizzazione nella cache persistente può migliorare le prestazioni, ma richiede ulteriore spazio su disco.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -84,7 +84,7 @@ HRESULT get_BitmapPersistence(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Impostare questo parametro su 0 per disabilitare la memorizzazione nella cache o un valore diverso da zero per abilitare la memorizzazione nella cache.
+Impostare questo parametro su 0 per disabilitare la memorizzazione nella cache o su un valore diverso da zero per abilitare la memorizzazione nella cache.
 
 > [!Note]  
 > L'errore di ortografia nel nome del parametro si trova nella versione rilasciata del controllo.
@@ -93,11 +93,11 @@ Impostare questo parametro su 0 per disabilitare la memorizzazione nella cache o
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce **\_ OK** se ha esito positivo.
+Restituisce **S \_ OK in** caso di esito positivo.
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                  |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

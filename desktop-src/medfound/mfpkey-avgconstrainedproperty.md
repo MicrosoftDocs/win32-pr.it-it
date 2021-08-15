@@ -1,19 +1,19 @@
 ---
-description: Specifica se il codificatore usa la codifica VBR media controllabile.
+description: Specifica se il codificatore usa la codifica VBR con controllo medio.
 ms.assetid: 2c150eb1-4ffe-4f77-8ef8-e3bf29b17b10
-title: Proprietà MFPKEY_AVGCONSTRAINED (Wmcodecdsp. h)
+title: MFPKEY_AVGCONSTRAINED proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0623fb4a73e3721f9079f2a1e5e330ecb466a774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3e7231cb3807be8f4467592ac0138a75ea277bdf8a13dfb3564d3572036e7ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874093"
 ---
-# <a name="mfpkey_avgconstrained-property"></a>\_Proprietà AVGCONSTRAINED di MFPKEY
+# <a name="mfpkey_avgconstrained-property"></a>Proprietà MFPKEY \_ AVGCONSTRAINED
 
-Specifica se il codificatore usa la codifica VBR media controllabile.
+Specifica se il codificatore usa la codifica VBR con controllo medio.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -21,15 +21,15 @@ Disponibile solo tramite [**IPropertyStore**](/windows/win32/api/propsys/nn-prop
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_bool VT**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valore predefinito
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
 ## <a name="remarks"></a>Commenti
 
-Se questa proprietà e la proprietà [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **Variant \_ true**, il codificatore usa la codifica VBR media controllabile. In tal caso, il codificatore viene configurato in base ai valori di [**MFPKEY \_ dyn \_ VBR \_ BAVG**](mfpkey-dyn-vbr-bavgproperty.md) e [**MFPKEY \_ dyn \_ VBR \_ RAVG**](mfpkey-dyn-vbr-ravgproperty.md).
+Se questa proprietà e la [**proprietà MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md) sono entrambe impostate su **VARIANT \_ TRUE,** il codificatore usa la codifica VBR con controllo medio. In tal caso, il codificatore si configura in base ai valori di [**MFPKEY \_ DYN \_ VBR \_ BAVG**](mfpkey-dyn-vbr-bavgproperty.md) e [**MFPKEY \_ DYN \_ VBR \_ RAVG**](mfpkey-dyn-vbr-ravgproperty.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Se questa proprietà e la proprietà [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenable
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Se questa proprietà e la proprietà [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenable
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

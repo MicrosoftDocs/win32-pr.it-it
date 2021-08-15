@@ -5,7 +5,7 @@ ms.assetid: eda4829a-4869-4557-8fe9-8061a1e0f586
 keywords:
 - Metodo getProxySettings Windows Media Player
 - Metodo getProxySettings Windows Media Player, interfaccia IWMPNetwork
-- Interfaccia IWMPNetwork Windows Media Player, metodo getProxySettings
+- Interfaccia IWMPNetwork Windows Media Player metodo , getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d970160c07c90e84585c87ed1abf740fbe3c6318
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e69c990b01ed885b80c96e3e36ad28c2793baf618fea68b0e20006390c2adeed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331641"
 ---
-# <a name="iwmpnetworkgetproxysettings-method"></a>Metodo IWMPNetwork:: getProxySettings
+# <a name="iwmpnetworkgetproxysettings-method"></a>Metodo IWMPNetwork::getProxySettings
 
-Il metodo **getProxySettings** restituisce informazioni sulle impostazioni proxy per un protocollo.
+Il **metodo getProxySettings** restituisce informazioni sulle impostazioni proxy per un protocollo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,24 +53,24 @@ Implements IWMPNetwork.getProxySettings
 
 <dl> <dt>
 
-*bstrProtocol* \[ in\]
+*bstrProtocol* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il nome del protocollo. Per un elenco di protocolli supportati, vedere [protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+Oggetto **System.String** che rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-**System. Int32** che corrisponde a uno dei valori seguenti.
+Oggetto **System.Int32** che è uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                                                                      |
 |-------|----------------------------------------------------------------------------------|
-| 0     | Non è in uso un server proxy.                                                |
-| 1     | Vengono usate le impostazioni proxy per il browser corrente (valido solo per HTTP). |
-| 2     | Sono in uso le impostazioni proxy specificate manualmente.                            |
+| 0     | Un server proxy non è in uso.                                                |
+| 1     | Vengono usate le impostazioni proxy per il browser corrente (valide solo per HTTP). |
+| 2     | Vengono usate le impostazioni proxy specificate manualmente.                            |
 | 3     | Le impostazioni proxy vengono rilevate automaticamente.                                      |
 
 
@@ -83,7 +83,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene usato **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti del lettore, in un'etichetta. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+L'esempio di codice seguente usa **getProxySettings** per visualizzare un messaggio, che fornisce informazioni sulle impostazioni proxy correnti di Player, in un'etichetta. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -152,7 +152,7 @@ End Select
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -165,7 +165,7 @@ End Select
 [**Interfaccia IWMPNetwork (VB e C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
+[**IWMPNetwork.setProxySettings (VB e C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxysettings--vb-and-c.md)
 </dt> </dl>
 
  

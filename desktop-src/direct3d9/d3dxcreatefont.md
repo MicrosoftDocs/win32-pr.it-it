@@ -1,7 +1,7 @@
 ---
-description: Crea un oggetto del tipo di carattere per un dispositivo e un tipo di carattere.
+description: Crea un oggetto tipo di carattere per un dispositivo e un tipo di carattere.
 ms.assetid: 3e65dfdc-9608-420c-9672-c38289d13ab1
-title: Funzione D3DXCreateFont (D3dx9core. h)
+title: Funzione D3DXCreateFont (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 488a400928ecc270612a307fbede971e02b43b25
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d9bac71e89657f4df176a1ee15e2dca0cda6e4a25b8c47560adc5cf26c982383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526155"
 ---
-# <a name="d3dxcreatefont-function"></a>D3DXCreateFont (funzione)
+# <a name="d3dxcreatefont-function"></a>Funzione D3DXCreateFont
 
-Crea un oggetto del tipo di carattere per un dispositivo e un tipo di carattere.
+Crea un oggetto tipo di carattere per un dispositivo e un tipo di carattere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,61 +51,61 @@ HRESULT D3DXCreateFont(
 
 <dl> <dt>
 
-*PDEVICE* \[ in\]
+*pDevice* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntatore a un'interfaccia [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , il dispositivo da associare all'oggetto del tipo di carattere.
+Puntatore a [**un'interfaccia IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) il dispositivo da associare all'oggetto tipo di carattere.
 
 </dd> <dt>
 
-*Altezza* \[ in\]
+*Altezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
-Altezza dei caratteri nelle unità logiche.
+Altezza dei caratteri in unità logiche.
 
 </dd> <dt>
 
-*Larghezza* \[ in\]
+*Larghezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Larghezza dei caratteri nelle unità logiche.
+Larghezza dei caratteri in unità logiche.
 
 </dd> <dt>
 
-*Peso* \[ in\]
+*Peso* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Spessore carattere. Un esempio è grassetto.
+Spessore carattere tipografico. Un esempio è il grassetto.
 
 </dd> <dt>
 
-*MipLevels* \[ in\]
+*MipLevels* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Il numero di livelli di mipmap.
+Numero di livelli mipmap.
 
 </dd> <dt>
 
-*Corsivo* \[ in\]
+*Corsivo* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-True per il tipo di carattere corsivo, false in caso contrario.
+True per il tipo di carattere corsivo; in caso contrario, false.
 
 </dd> <dt>
 
-*Set di caratteri* \[ in\]
+*Set di caratteri* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -114,25 +114,25 @@ Set di caratteri del tipo di carattere.
 
 </dd> <dt>
 
-*OutputPrecision* \[ in\]
+*OutputPrecision* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Specifica il modo in cui Windows deve tentare di trovare le dimensioni e le caratteristiche dei caratteri desiderate con i tipi di carattere effettivi Usare OUT \_ TT \_ solo \_ per l'istanza, per assicurarsi di ottenere sempre un tipo di carattere TrueType.
+Specifica in che modo Windows deve tentare di trovare una corrispondenza tra le dimensioni e le caratteristiche dei caratteri desiderate con i tipi di carattere effettivi. Usare OUT \_ TT ONLY PRECIS, ad esempio, per assicurarsi di ottenere \_ sempre un tipo di carattere \_ TrueType.
 
 </dd> <dt>
 
-*Qualità* \[ in\]
+*Qualità* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Specifica il modo in cui Windows deve corrispondere al tipo di carattere desiderato con un tipo di carattere reale. Si applica solo ai tipi di carattere raster e non deve influire sui tipi di carattere TrueType.
+Specifica in che modo Windows deve corrispondere al tipo di carattere desiderato con un tipo di carattere reale. Si applica solo ai tipi di carattere raster e non deve influire sui tipi di carattere TrueType.
 
 </dd> <dt>
 
-*PitchAndFamily* \[ in\]
+*PitchAndFamily* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -141,21 +141,21 @@ Indice di passo e famiglia.
 
 </dd> <dt>
 
-*pFacename* \[ in\]
+*pFacename* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Stringa contenente il nome del carattere tipografico. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati String viene risolto in LPCSTR. Vedere la sezione Osservazioni.
+Stringa contenente il nome del carattere tipografico. Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati string viene risolto in LPCSTR. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
-*ppFont* \[ out\]
+*ppFont* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFONT**](id3dxfont.md)\***
 
-Restituisce un puntatore a un'interfaccia [**ID3DXFont**](id3dxfont.md) , che rappresenta l'oggetto del tipo di carattere creato.
+Restituisce un puntatore a [**un'interfaccia ID3DXFont**](id3dxfont.md) che rappresenta l'oggetto tipo di carattere creato.
 
 </dd> </dl>
 
@@ -163,15 +163,15 @@ Restituisce un puntatore a un'interfaccia [**ID3DXFont**](id3dxfont.md) , che ra
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è S \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-Per la creazione di un oggetto ID3DXFont è necessario che il dispositivo supporti il colore a 32 bit.
+La creazione di un oggetto ID3DXFont richiede che il dispositivo supporti il colore a 32 bit.
 
-L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXCreateFontW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateFontA perché vengono utilizzate le stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXCreateFontW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateFontA perché vengono usate stringhe ANSI.
 
-Per ulteriori informazioni sui parametri dei tipi di carattere, vedere [il tipo di carattere logico](../gdi/creating-a-logical-font.md).
+Per altre informazioni sui parametri dei tipi di carattere, vedere [Tipo di carattere logico.](../gdi/creating-a-logical-font.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -179,8 +179,8 @@ Per ulteriori informazioni sui parametri dei tipi di carattere, vedere [il tipo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -188,7 +188,7 @@ Per ulteriori informazioni sui parametri dei tipi di carattere, vedere [il tipo 
 
 <dl> <dt>
 
-[Funzioni per utilizzo generico](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[Per utilizzo generico funzioni](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

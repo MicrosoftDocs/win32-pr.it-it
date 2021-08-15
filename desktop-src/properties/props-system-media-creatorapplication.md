@@ -4,12 +4,12 @@ ms.assetid: ba60825d-1b0d-4b0c-a5ed-5dfa486eac68
 title: System.Media.CreatorApplication
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07f8be91c1eb74f5106e36abd4989cdf1a99e67a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6075bbaa081e396b61835ae44e39d842f8b688b69e2bee0621f36909e43831d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725555"
 ---
 # <a name="systemmediacreatorapplication"></a>System.Media.CreatorApplication
 

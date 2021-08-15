@@ -1,23 +1,23 @@
 ---
-title: atomic_cmp_store (SM5-ASM)
+title: atomic_cmp_store (sm5 - asm)
 description: Confronto atomico e scrittura in memoria.
 ms.assetid: 1B97E983-11A9-47E4-B274-E94083837C6E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26a5292d65b32988017044a2ec52680848dffbef
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 7dbc57b14b4279b9bd4844d89492852ae915d9d900ed04421eeeccc367979a63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795163"
 ---
-# <a name="atomic_cmp_store-sm5---asm"></a>\_ \_ Archivio di CMP atomico (SM5-ASM)
+# <a name="atomic_cmp_store-sm5---asm"></a>atomic \_ cmp \_ store (sm5 - asm)
 
 Confronto atomico e scrittura in memoria.
 
 
 
-| Atomic \_ CMP \_ Store DST, dstAddress \[ . Swizzle \] , src0 \[ . Select \_ Component \] , src1 \[ . Select \_ Component\] |
+| atomic \_ cmp \_ store dst, dstAddress \[ .swizzle, \] src0 \[ .select component , \_ \] src1 \[ .select \_ component\] |
 |--------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Confronto atomico e scrittura in memoria.
 
 | Elemento                                                                                                           | Descrizione                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dst"></span><span id="DST"></span>*DST*<br/>                                                   | \[nei \] componenti da confrontare con *src0*. Questo valore deve essere una visualizzazione di accesso non ordinato (UAV) (u \# ). Nel compute shader può anche essere la memoria condivisa del gruppo di thread (g \# ). <br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[nell' \] indirizzo di memoria.<br/>                                                                                                                                                     |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[nel \] valore a 32 bit da confrontare con l' *ora legale*.<br/>                                                                                                                                 |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                                | \[nel \] valore da scrivere in memoria se i valori confrontati sono identici. <br/>                                                                                                     |
+| <span id="dst"></span><span id="DST"></span>*Dst*<br/>                                                   | \[in \] Componenti da confrontare con *src0*. Questo valore deve essere una visualizzazione di accesso non ordinato (UAV) (u \# ). Nello shader di calcolo può anche essere memoria condivisa del gruppo di thread (g \# ). <br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[in \] Indirizzo di memoria.<br/>                                                                                                                                                     |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[in \] Valore a 32 bit da confrontare con *dst*.<br/>                                                                                                                                 |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/>                                                | \[in \] Valore da scrivere in memoria se i valori confrontati sono identici. <br/>                                                                                                     |
 
 
 
@@ -39,31 +39,31 @@ Confronto atomico e scrittura in memoria.
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un confronto tra i valori a 32 bit del singolo componente dell'operando *src0* con *DST* a 32 bit per ogni indirizzo del componente *dstAddress*.
+Questa istruzione esegue un confronto di valori a 32 bit di un singolo componente dell'operando *src0* con *dst* a 32 bit per ogni indirizzo del componente *dstAddress*.
 
-Se i valori confrontati sono identici, il valore a 32 bit a singolo componente in *src1* viene scritto nella memoria di destinazione. In caso contrario, la destinazione non viene modificata.
+Se i valori confrontati sono identici, il valore a 32 bit a componente singolo in *src1* viene scritto nella memoria di destinazione. In caso contrario, la destinazione non viene modificata.
 
 L'intera operazione di confronto e scrittura viene eseguita in modo atomico.
 
-Se *DST* è un u \# , può essere dichiarato come RAW, tipizzato o strutturato. Se tipizzata, deve essere dichiarata come UINT/SINT con il formato di risorsa associato R32 \_ uint/ \_ Sint.
+Se *dst* è un u \# , può essere dichiarato come non elaborato, tipidato o strutturato. Se tipiggiato, deve essere dichiarato come UINT/SINT con il formato di risorsa associato che è R32 \_ \_ UINT/SINT.
 
-Se *DST* è g \# , deve essere dichiarato come RAW o Structured.
+Se *dst* è g \# , deve essere dichiarato come non elaborato o strutturato.
 
-Il numero di componenti presi dall'indirizzo è determinato dalla dimensionalità dell'ora legale u \# o g \# .
+Il numero di componenti presi dall'indirizzo è determinato dalla dimensionalità di dst u \# o g \# .
 
 Non viene restituito nulla allo shader.
 
-Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato scartato in precedenza durante l'esecuzione o se un'istruzione pixel/Sample non modifica la memoria *DST* (in modo invisibile all'utente).
+Se la chiamata dello shader è inattiva, ad esempio se il pixel è stato eliminato in precedenza durante l'esecuzione o un'istruzione pixel/campione non modifica affatto la memoria *dst* (invisibile all'utente).
 
-L'indirizzamento fuori dall'indirizzamento su u \# non comporta la scrittura in memoria, tranne nel caso in cui l'u \# sia strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) provochi l'accesso fuori limite, quindi l'intero contenuto del UAV diventa non definito.
+Se l'offset di byte nello struct (secondo componente dell'indirizzo) non comporta la scrittura in memoria di alcun elemento, tranne se u è strutturato e l'offset dei byte nello struct (secondo componente dell'indirizzo) causa l'accesso fuori dai limiti, l'intero contenuto dell'UAV diventa \# \# indefinito.
 
-All'esterno dei limiti che puntano a g \# (i limiti di tale particolare g \# , anziché di tutta la memoria condivisa), l'intero contenuto di tutta la memoria condivisa diventa indefinito.
+Fuori dai limiti che si indirizzano a g (i limiti di quel particolare g , anziché di tutta la memoria condivisa) fa sì che l'intero contenuto di tutta la memoria condivisa diventi \# \# indefinito.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -71,11 +71,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -83,7 +83,7 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -91,12 +91,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -106,7 +106,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

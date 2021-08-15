@@ -1,7 +1,7 @@
 - name: Hit testing tocco
   href: touch-hit-testing-portal.md
   items:
-    - name: Riferimento all'hit testing tocco
+    - name: Informazioni di riferimento sui test di hit testing tocco
       href: touchhittest-reference.md
       items:
         - name: Costanti
@@ -9,7 +9,7 @@
           items:
             - name: Comportamenti di hit testing tocco
               href: hit-testing-behaviors.md
-            - name: Punteggi hit testing tocco
+            - name: Punteggi di hit testing tocco
               href: hit-testing-scores.md
         - name: Funzioni
           href: functions.md

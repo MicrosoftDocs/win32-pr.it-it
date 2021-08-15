@@ -1,4 +1,4 @@
-- name: OpenGL
+- name: Opengl
   href: opengl.md
   items:
     - name: Informazioni legali
@@ -14,7 +14,7 @@
           href: execution-model.md
         - name: Operazione OpenGL di base
           href: basic-opengl-operation.md
-        - name: Nomi di funzioni OpenGL
+        - name: Nomi delle funzioni OpenGL
           href: opengl-function-names.md
         - name: Pipeline di elaborazione OpenGL
           href: opengl-processing-pipeline.md
@@ -24,7 +24,7 @@
               items:
                 - name: Dati di input
                   href: input-data.md
-                - name: Trasformazioni matrice
+                - name: Trasformazioni di matrice
                   href: matrix-transformations.md
                 - name: Impostazione dell'illuminazione e della colorazione
                   href: setting-lighting-and-coloring.md
@@ -32,29 +32,29 @@
                   href: generating-texture-coordinates.md
                 - name: Assemblaggio di primitive
                   href: assembling-primitives.md
-                - name: Riferimento ai vertici
+                - name: Informazioni di riferimento sui vertici
                   href: vertices-reference.md
             - name: Primitives
               href: primitives.md
               items:
                 - name: Ritaglio
                   href: clipping.md
-                - name: Trasformazione in coordinate finestra
+                - name: Trasformazione in coordinate della finestra
                   href: transforming-to-window-coordinates.md
                 - name: Rasterizzazione
                   href: rasterizing.md
-                - name: Informazioni di riferimento sulle primitive
+                - name: Informazioni di riferimento per le primitive
                   href: primitives-reference.md
             - name: Frammenti
               href: fragments.md
               items:
-                - name: Test di proprietà pixel
+                - name: Test di proprietà dei pixel
                   href: pixel-ownership-test.md
-                - name: Test Scissor
+                - name: Test di forbice
                   href: scissor-test.md
                 - name: Test alfa
                   href: alpha-test.md
-                - name: Test stencil
+                - name: Stencil Test
                   href: stencil-test.md
                 - name: Test del buffer di profondità
                   href: depth-buffer-test.md
@@ -64,42 +64,42 @@
                   href: dithering.md
                 - name: Operazioni logiche
                   href: logical-operations.md
-                - name: Riferimenti per frammenti
+                - name: Informazioni di riferimento su frammenti
                   href: fragments-reference.md
             - name: Pixel
               href: pixels.md
               items:
                 - name: Operazioni framebuffer
                   href: framebuffer-operations.md
-                - name: Lettura o copia dei pixel
+                - name: Lettura o copia di pixel
                   href: reading-or-copying-pixels.md
-                - name: Riferimento pixel
+                - name: Informazioni di riferimento su pixel
                   href: pixels-reference.md
-        - name: Utilizzo degli analizzatori
+        - name: Uso degli analizzatori
           href: using-evaluators.md
           items:
-            - name: Riferimento per gli analizzatori
+            - name: Informazioni di riferimento per gli analizzatori
               href: evaluators-reference.md
-        - name: Esecuzione di selezioni e commenti
+        - name: Esecuzione della selezione e dei commenti e suggerimenti
           href: performing-selection-and-feedback.md
           items:
             - name: Selezione
               href: selection.md
             - name: Commenti e suggerimenti
               href: feedback.md
-            - name: Guida di riferimento a selezione e feedback
+            - name: Informazioni di riferimento su selezione e feedback
               href: selection-and-feedback-reference.md
         - name: Uso degli elenchi di visualizzazione
           href: using-display-lists.md
           items:
-            - name: Riferimenti a elenchi di visualizzazione
+            - name: Informazioni di riferimento per gli elenchi di visualizzazione
               href: display-lists-reference.md
-        - name: Gestione di modalità ed esecuzione
+        - name: Gestione delle modalità e dell'esecuzione
           href: managing-modes-and-execution.md
           items:
-            - name: Modalità e riferimento all'esecuzione
+            - name: Informazioni di riferimento su modalità ed esecuzione
               href: modes-and-execution-reference.md
-        - name: Acquisizione delle informazioni sullo stato
+        - name: Recupero di informazioni sullo stato
           href: obtaining-state-information.md
           items:
             - name: Uso delle funzioni di query
@@ -112,26 +112,26 @@
               href: saving-and-restoring-sets-of-state-variables.md
             - name: Variabili di stato OpenGL
               href: opengl-state-variables.md
-            - name: Riferimento alle informazioni sullo stato
+            - name: Informazioni di riferimento sullo stato
               href: state-information-reference.md
         - name: Libreria di utilità OpenGL
           href: opengl-utility-library.md
           items:
             - name: Inizializzazione in corso
               href: initializing.md
-            - name: Manipolazione di immagini da utilizzare per la texturing
+            - name: Modifica delle immagini per l'uso nella texturing
               href: manipulating-images-for-use-in-texturing.md
             - name: Trasformazione delle coordinate
               href: transforming-coordinates.md
-            - name: Poligoni tessellating
+            - name: Poligoni a tessellazione
               href: tessellating-polygons.md
-            - name: Utilizzo di funzioni di callback
+            - name: Uso delle funzioni di callback
               href: using-callback-functions.md
-            - name: Uso di oggetti mosaico
+            - name: Uso di oggetti a tessellazione
               href: using-tessellation-objects.md
-            - name: Specifica di callback
+            - name: Specifica dei callback
               href: specifying-callbacks.md
-            - name: Specifica del poligono da tassellati
+            - name: Specifica del poligono da a tessellare
               href: specifying-the-polygon-to-be-tessellated.md
             - name: Rendering di superfici semplici
               href: rendering-simple-surfaces.md
@@ -139,10 +139,10 @@
               href: using-nurbs-curves-and-surfaces.md
             - name: Gestione degli errori
               href: handling-errors.md
-    - name: Estensioni Windows per OpenGL
+    - name: Windows Estensioni di OpenGL
       href: windows-extensions-to-opengl.md
       items:
-        - name: OpenGL per Windows
+        - name: OpenGL in Windows
           href: opengl-on-windows-nt--windows-2000--and-windows-95-98.md
           items:
             - name: Guida alla documentazione
@@ -162,7 +162,7 @@
             - name: Formati pixel
               href: pixel-formats.md
               items:
-                - name: Funzioni in formato pixel
+                - name: Funzioni di formato pixel
                   href: pixel-format-functions.md
             - name: 'Front, back e altri buffer'
               href: front--back--and-other-buffers.md
@@ -172,26 +172,26 @@
             - name: Tipi di carattere e testo
               href: fonts-and-text.md
               items:
-                - name: Funzioni di tipo carattere e testo
+                - name: Funzioni carattere e testo
                   href: font-and-text-functions.md
-            - name: Modalità colori OpenGL e gestione tavolozza Windows
+            - name: Modalità colori OpenGL e gestione Windows tavolozza
               href: opengl-color-modes-and-windows-palette-management.md
               items:
-                - name: Tavolozze e gestione tavolozze
+                - name: Tavolozze e Gestione tavolozze
                   href: palettes-and-the-palette-manager.md
                 - name: Riconoscimento della tavolozza
                   href: palette-awareness.md
-                - name: Lettura dei valori di colore dal framebuffer
+                - name: Lettura dei valori dei colori da Framebuffer
                   href: reading-color-values-from-the-framebuffer.md
-                - name: Scelta tra RGBA e modalità Color-Index
+                - name: Scelta tra RGBA e Color-Index predefinita
                   href: choosing-between-rgba-and-color-index-mode.md
-                - name: Modalità RGBA e gestione tavolozza Windows
+                - name: Modalità RGBA e gestione Windows palette
                   href: rgba-mode-and-windows-palette-management.md
-                - name: Modalità Color-Index e gestione tavolozza Windows
+                - name: Color-Index modalità e gestione Windows palette
                   href: color-index-mode-and-windows-palette-management.md
-            - name: 'Sovrapposizione, sottoposto e piani principali'
+            - name: 'Piani di sovrapposizione, sottolivelli e principali'
               href: overlay--underlay--and-main-planes.md
-            - name: Condivisione degli elenchi di visualizzazione
+            - name: Condivisione di elenchi di visualizzazione
               href: sharing-display-lists.md
             - name: Estensione di funzioni OpenGL
               href: extending-opengl-functions.md
@@ -202,27 +202,27 @@
               items:
                 - name: File di intestazione
                   href: header-files.md
-                - name: Attività in formato pixel
+                - name: Attività relative al formato pixel
                   href: pixel-format-tasks.md
                   items:
                     - name: Scelta e impostazione di un formato Best-Match pixel
                       href: choosing-and-setting-a-best-match-pixel-format.md
-                    - name: Esame del formato pixel corrente di un contesto di dispositivo
+                    - name: Analisi del formato pixel corrente di un contesto di dispositivo
                       href: examining-a-device-contexts-current-pixel-format.md
-                    - name: Esame dei formati pixel supportati del dispositivo
+                    - name: Analisi dei formati pixel supportati di un dispositivo
                       href: examining-a-devices-supported-pixel-formats.md
                 - name: Attività del contesto di rendering
                   href: rendering-context-tasks.md
                   items:
-                    - name: Creazione di un contesto di rendering e resa corrente
+                    - name: Creazione di un contesto di rendering e renderlo corrente
                       href: creating-a-rendering-context-and-making-it-current.md
-                    - name: Creazione di un contesto di rendering non corrente
+                    - name: Rendere un contesto di rendering non corrente
                       href: making-a-rendering-context-not-current.md
                     - name: Eliminazione di un contesto di rendering
                       href: deleting-a-rendering-context.md
                 - name: Disegno con buffer doppi
                   href: drawing-with-double-buffers.md
-                - name: Disegno di testo in una finestra Double-Buffered OpenGL
+                - name: Disegno di testo in una Double-Buffered OpenGL
                   href: drawing-text-in-a-double-buffered-opengl-window.md
                 - name: Stampa di un'immagine OpenGL
                   href: printing-an-opengl-image.md
@@ -232,12 +232,12 @@
                   href: multithread-opengl-drawing-strategies.md
                 - name: Uso della libreria ausiliaria
                   href: using-the-auxiliary-library.md
-            - name: Informazioni di riferimento sulle estensioni Windows per OpenGL
+            - name: Informazioni di riferimento Windows estensioni per OpenGL
               href: reference-for-win-32-extensions-to-opengl.md
               items:
                 - name: Funzioni WGL
                   href: wgl-functions.md
-                - name: Funzioni di Windows
+                - name: Windows Funzioni
                   href: win32-functions.md
                 - name: Strutture
                   href: structures.md
@@ -299,13 +299,13 @@
     - name: Suggerimenti per la programmazione
       href: programming-tips.md
       items:
-        - name: Suggerimenti sulla correttezza OpenGL
+        - name: OpenGL Correctness Suggerimenti
           href: opengl-correctness-tips.md
-        - name: Suggerimenti sulle prestazioni di OpenGL
+        - name: OpenGL Performance Suggerimenti
           href: opengl-performance-tips.md
         - name: 'Considerazioni sulla sicurezza: OpenGL'
           href: security-considerations--opengl.md
-    - name: Riferimento OpenGL
+    - name: Informazioni di riferimento su OpenGL
       href: opengl-reference.md
       items:
         - name: Variabili di stato
@@ -317,27 +317,27 @@
               href: state-variables-for-current-values-and-associated-data.md
             - name: Variabili di stato della trasformazione
               href: transformation-state-variables.md
-            - name: Variabili di stato colorazione
+            - name: Colorazione delle variabili di stato
               href: coloring-state-variables.md
             - name: Variabili di stato di illuminazione
               href: lighting-state-variables.md
             - name: Variabili di stato di rasterizzazione
               href: rasterization-state-variables.md
-            - name: Variabili di stato di texturing
+            - name: Texturing delle variabili di stato
               href: texturing-state-variables.md
-            - name: Operazioni pixel
+            - name: Operazioni sui pixel
               href: pixel-operations.md
-            - name: Variabili di stato del controllo framebuffer
+            - name: Variabili di stato del controllo Framebuffer
               href: framebuffer-control-state-variables.md
             - name: Variabili di stato pixel
               href: pixel-state-variables.md
             - name: Variabili di stato dell'analizzatore
               href: evaluator-state-variables.md
-            - name: Variabili di stato dell'hint
+            - name: Variabili di stato hint
               href: hint-state-variables.md
-            - name: Variabili di stato Implementation-Dependent
+            - name: Implementation-Dependent di stato
               href: implementation-dependent-state-variables.md
-            - name: Variabili di stato Implementation-Dependent Pixel-Depth
+            - name: Implementation-Dependent Pixel-Depth di stato
               href: implementation-dependent-pixel-depth-state-variables.md
             - name: Variabili di stato varie
               href: miscellaneous-state-variables.md
@@ -504,7 +504,7 @@
               href: glenable.md
             - name: glEnableClientState
               href: glenableclientstate.md
-            - name: Remo
+            - name: glEnd
               href: glend.md
             - name: glEndList
               href: glendlist.md
@@ -688,7 +688,7 @@
               href: glinterleavedarrays.md
             - name: glIsEnabled
               href: glisenabled.md
-            - name: Pagina di
+            - name: glIsList
               href: glislist.md
             - name: glIsTexture
               href: glistexture.md
@@ -1235,7 +1235,7 @@
               href: glutessendpolygon.md
             - name: gluTessNormal
               href: glutessnormal.md
-            - name: gluTessProperty
+            - name: GluTessProperty
               href: glutessproperty.md
             - name: gluTessVertex
               href: glutessvertex.md
@@ -1247,142 +1247,142 @@
         - name: Introduzione al porting in OpenGL per Windows
           href: introduction-to-porting-to-opengl-for-windows-nt--windows-2000--and-windows-95-98.md
           items:
-            - name: Porting di applicazioni di sistema X Window
+            - name: Porting X Window System Applications
               href: porting-x-window-system-applications.md
-            - name: Conversione della libreria GLX
+            - name: Traduzione della libreria GLX
               href: translating-the-glx-library.md
             - name: Porting di contesti di dispositivo e formati pixel
               href: porting-device-contexts-and-pixel-formats.md
               items:
-                - name: Esempio di codice in formato pixel GLX
+                - name: Esempio di codice di formato pixel GLX
                   href: glx-pixel-format-code-sample.md
-                - name: Esempio di codice in formato pixel Windows
+                - name: Windows Esempio di codice in formato pixel
                   href: win32-pixel-format-code-sample.md
-            - name: Porting di contesti di rendering
+            - name: Porting dei contesti di rendering
               href: porting-rendering-contexts.md
               items:
                 - name: Esempio di codice del contesto di rendering GLX
                   href: glx-rendering-context-code-sample.md
-                - name: Esempio di codice del contesto di rendering Windows
+                - name: Windows Esempio di codice del contesto di rendering
                   href: win32-rendering-context-code-sample.md
-            - name: Porting del codice pixmap di GLX
+            - name: Porting del codice GLX Pixmap
               href: porting-glx-pixmap-code.md
-            - name: Porting di altro codice GLX
+            - name: Porting Other GLX Code
               href: porting-other-glx-code.md
             - name: Esempio di porting
               href: a-porting-sample.md
               items:
-                - name: Programma OpenGL del sistema X Window
+                - name: Programma OpenGL di X Window System
                   href: an-x-window-system-opengl-program.md
-                - name: Programma trasferito a Windows
+                - name: Il programma è stato Windows
                   href: the-program-ported-to-win32.md
-            - name: Porting di applicazioni da IRIS GL
+            - name: Porting Applications from IRIS GL
               href: porting-applications-from-iris-gl.md
-            - name: Problemi speciali di porting di IRIS GL
+            - name: Problemi speciali di porting IRIS GL
               href: special-iris-gl-porting-issues.md
               items:
-                - name: Portabilità del porting
+                - name: Porting greset
                   href: porting-greset.md
-                - name: Porting delle &quot; funzioni Get di Iris GL &quot;
+                - name: Porting IRIS GL &quot; Get &quot; Functions
                   href: porting-iris-gl-get-functions.md
-                - name: Codice porta che necessita di una posizione grafica corrente
+                - name: Codice di porta che richiede una posizione grafica corrente
                   href: porting-code-that-requires-a-current-graphics-position.md
                   items:
-                    - name: Porting dei comandi di cancellazione dello schermo e del buffer
+                    - name: Comandi di cancellazione dello schermo e del buffer
                       href: porting-screen-and-buffer-clearing-commands.md
-                    - name: Porting di matrici e funzioni di trasformazione
+                    - name: Funzioni di trasformazione e matrice di porting
                       href: porting-matrix-and-transformation-functions.md
                     - name: Porting del codice in modalità MSINGLE
                       href: porting-msingle-mode-code.md
                     - name: Funzioni di porting che ottengono matrici e trasformazioni
                       href: porting-functions-that-get-matrices-and-transformations.md
-                    - name: 'Porting di viewport, Screenmasks e Scrboxes'
+                    - name: 'Porting viewports, Screenmasks e Scrboxes'
                       href: porting-viewports--screenmasks--and-scrboxes.md
-                    - name: Porting di piani di ritaglio
+                    - name: Porting dei piani di ritaglio
                       href: porting-clipping-planes.md
-                - name: Porting di funzioni di disegno
+                - name: Funzioni di disegno di porting
                   href: porting-drawing-functions.md
                   items:
                     - name: Libreria IRIS GL Sphere
                       href: the-iris-gl-sphere-library.md
-                    - name: Funzioni di porting v
+                    - name: Porting v Functions
                       href: porting-v-functions.md
-                    - name: Porting di comandi BGN/end
+                    - name: Porting di comandi bgn/end
                       href: porting-bgn-end-commands.md
                     - name: Punti di porting
                       href: porting-points.md
                     - name: Linee di porting
                       href: porting-lines.md
-                    - name: Porting di poligoni e quadrilateri
+                    - name: Porting di poligoni e quadrilaterali
                       href: porting-polygons-and-quadrilaterals.md
-                    - name: Triangoli di porting
+                    - name: Porting Triangles
                       href: porting-triangles.md
                     - name: Porting di archi e cerchi
                       href: porting-arcs-and-circles.md
-                    - name: Porting di sfere
+                    - name: Porting Spheres
                       href: porting-spheres.md
-                - name: 'Porting di colori, ombreggiatura e codice Writemask'
+                - name: 'Porting color, shading e writemask Code'
                   href: porting-color--shading--and-writemask-code.md
                   items:
-                    - name: Chiamate di colore di porting
+                    - name: Porting di chiamate a colori
                       href: porting-color-calls.md
-                    - name: Porting di modelli di ombreggiatura
+                    - name: Porting Shading Models
                       href: porting-shading-models.md
                 - name: Porting di operazioni pixel
                   href: porting-pixel-operations.md
-                - name: Porting di profondità e comandi di nebbia
+                - name: Porting Depth Cueing and Fog Commands
                   href: porting-depth-cueing-and-fog-commands.md
-                - name: Curva di porting e funzioni di superficie
+                - name: Funzioni curve e surface di porting
                   href: porting-curve-and-surface-functions.md
                   items:
                     - name: Porting di oggetti NURBS
                       href: porting-nurbs-objects.md
                     - name: Porting di curve NURBS
                       href: porting-nurbs-curves.md
-                    - name: Porting delle curve di taglio
+                    - name: Porting di curve di taglio
                       href: porting-trimming-curves.md
                     - name: Porting di superfici NURBS
                       href: porting-nurbs-surfaces.md
-                - name: Porting di funzioni di anti-aliasing
+                - name: Porting Antialiasing Functions
                   href: porting-antialiasing-functions.md
                   items:
-                    - name: Porting del codice di fusione
+                    - name: Porting del codice di blending
                       href: porting-blending-code.md
-                    - name: Porting di funzioni di test AFunction
+                    - name: Porting afunction Test Functions
                       href: porting-afunction-test-functions.md
-                    - name: Uso di funzioni di anti-aliasing
+                    - name: Uso delle funzioni di antialiasing
                       href: using-antialiasing-functions.md
-                - name: Porting di chiamate del buffer di accumulo
+                - name: Porting delle chiamate al buffer di accumulo
                   href: porting-accumulation-buffer-calls.md
-                - name: Porting di chiamate del piano stencil
+                - name: Porting di chiamate al piano di stencil
                   href: porting-stencil-plane-calls.md
-                - name: Porting degli elenchi di visualizzazione
+                - name: Porting di elenchi di visualizzazione
                   href: porting-display-lists.md
                   items:
                     - name: Porting della funzione bbox2
                       href: porting-the-bbox2-function.md
-                    - name: Porting degli elenchi di visualizzazione modificati
+                    - name: Porting Edited Display Lists
                       href: porting-edited-display-lists.md
                     - name: Una porta di esempio di un elenco di visualizzazione
                       href: a-sample-port-of-a-display-list.md
-                - name: 'Porting di defs, binding e set'
+                - name: 'Porting di def, associazioni e set'
                   href: porting-defs--binds--and-sets.md
-                - name: Porting di funzioni di illuminazione e materiali
+                - name: Funzioni di porting di illuminazione e materiali
                   href: porting-lighting-and-materials-functions.md
-                - name: Porting di funzioni di trama
+                - name: Funzioni di trame di porting
                   href: porting-texture-functions.md
                   items:
-                    - name: Conversione di tevdef
+                    - name: Traduzione di tevdef
                       href: translating-tevdef.md
-                    - name: Conversione di texdef
+                    - name: Traduzione di texdef
                       href: translating-texdef.md
-                    - name: Conversione di texgen
+                    - name: Traduzione di texgen
                       href: translating-texgen.md
-                - name: Funzioni di selezione del porting
+                - name: Porting delle funzioni di selezione
                   href: porting-picking-functions.md
-                - name: Porting di funzioni di feedback
+                - name: Funzioni di porting dei commenti e suggerimenti
                   href: porting-feedback-functions.md
-        - name: Funzioni OpenGL e rispettivi equivalenti IRIS GL
+        - name: Funzioni OpenGL e equivalenti IRIS GL
           href: opengl-functions-and-their-iris-gl-equivalents.md
         - name: Differenze tra IRIS GL e OpenGL
           href: iris-gl-and-opengl-differences.md

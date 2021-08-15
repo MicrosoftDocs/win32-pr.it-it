@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentSoftRecoveryOnBackupDatabaseException
+description: 'Altre informazioni su: Costruttore EsentSoftRecoveryOnBackupDatabaseException'
 title: Costruttore EsentSoftRecoveryOnBackupDatabaseException
 TOCTitle: 'EsentSoftRecoveryOnBackupDatabaseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSoftRecoveryOnBackupDatabaseException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118771020"
 
 Inizializza una nuova istanza della classe EsentSoftRecoveryOnBackupDatabaseException.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

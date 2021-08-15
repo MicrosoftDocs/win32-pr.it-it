@@ -1,11 +1,11 @@
 ---
-title: Proprietà ActiveBasicDevice LogicalNetworkInterface (PlayToDevice. h)
+title: Proprietà ActiveBasicDevice LogicalNetworkInterface (PlayToDevice.h)
 description: Ottiene l'ID dell'interfaccia di rete logica.
 ms.assetid: 47C2E0BE-D3E3-4A9F-9FC6-873882811506
 keywords:
-- API di streaming multimediale della proprietà LogicalNetworkInterface
-- API di streaming multimediale della proprietà LogicalNetworkInterface, interfaccia ActiveBasicDevice
-- API di streaming multimediale dell'interfaccia ActiveBasicDevice, proprietà LogicalNetworkInterface
+- Proprietà LogicalNetworkInterface API streaming multimediale
+- Proprietà LogicalNetworkInterface API Streaming multimediale, interfaccia ActiveBasicDevice
+- Interfaccia ActiveBasicDevice API Streaming multimediale, proprietà LogicalNetworkInterface
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a87f2951ea09a0bba3d56da50b8f77a9d4a980
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 41ee3e2b23a43e29daf2438cee517220f895ad601607dbdc6a61497f8ef1afa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736387"
 ---
-# <a name="activebasicdevicelogicalnetworkinterface-property"></a>Proprietà ActiveBasicDevice:: LogicalNetworkInterface
+# <a name="activebasicdevicelogicalnetworkinterface-property"></a>Proprietà ActiveBasicDevice::LogicalNetworkInterface
 
 Ottiene l'ID dell'interfaccia di rete logica.
 
@@ -43,7 +43,7 @@ HRESULT get_LogicalNetworkInterface(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Puntatore a un **GUID** che specifica l'ID dell'interfaccia di rete logica.
+Puntatore a un **GUID che** specifica l'ID dell'interfaccia di rete logica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,10 +51,10 @@ Puntatore a un **GUID** che specifica l'ID dell'interfaccia di rete logica.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

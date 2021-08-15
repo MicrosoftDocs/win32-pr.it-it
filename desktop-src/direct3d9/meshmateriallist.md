@@ -1,19 +1,19 @@
 ---
-description: Utilizzato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
+description: Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
 ms.assetid: b38fd445-1a31-41ed-abbe-084abfe1c221
 title: MeshMaterialList
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b746802dc3ef54a8feacc8ddfdaa0db1e45112b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a9ef1d200e5f6a6913f996c186e121a8390de01e8f3347b6dcbaeac8eeefa708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798787"
 ---
 # <a name="meshmateriallist"></a>MeshMaterialList
 
-Utilizzato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
+Usato in un oggetto mesh per specificare il materiale da applicare ai visi. Il membro nMaterials specifica il numero di materiali presenti e i materiali specificano il materiale da applicare.
 
 ``` syntax
 template MeshMaterialList
@@ -28,9 +28,9 @@ template MeshMaterialList
 
 Dove:
 
--   nMaterials-un valore DWORD. Il numero di materiali.
--   nFaceIndexes-un valore DWORD. Numero di indici.
--   faceIndexes \[ nFaceIndexes \] : matrice di DWORD contenenti gli indici dei volti.
+-   nMaterials: valore DWORD. Numero di materiali.
+-   nFaceIndexes: valore DWORD. Numero di indici.
+-   faceIndexes \[ nFaceIndexes: \] matrice di DWORD contenenti gli indici del viso.
 
 ## <a name="see-also"></a>Vedi anche
 

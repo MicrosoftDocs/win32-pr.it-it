@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. status.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.Status.
 ms.assetid: 74ea0384-3b1f-4d5e-8713-7b3936813a3a
-title: Criteri dei metadati della foto System. GPS. status
+title: Criteri dei metadati delle foto system.GPS.Status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dac08139a267052f8d6dd3dc463e2a2768309a41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a99237b9fe14d9adbc97dd5de95158a8aa714caaa4a0a8440d9f3798a2155d20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710516"
 ---
-# <a name="systemgpsstatus-photo-metadata-policy"></a>Criteri dei metadati della foto System. GPS. status
+# <a name="systemgpsstatus-photo-metadata-policy"></a>Criteri dei metadati delle foto system.GPS.Status
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. status](../properties/props-system-gps-status.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.Status.](../properties/props-system-gps-status.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_Stato pkey GPS \_
+Stato GPS PKEY \_ \_
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-VT \_ LPWSTR è preferibile, ma \_ viene accettato anche VT LPSTR.
+VT \_ LPWSTR è preferibile, ma viene accettato anche \_ VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 9} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
 
 
@@ -60,7 +60,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 9} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
 
 
@@ -73,7 +73,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 9} |
+| 1     | /app1/ifd/gps/{ushort=9} |
 | 2     | /xmp/exif:gpsstatus      |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                    | Formato disco |
 |-------|-------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 9}     | ascii       |
+| 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
 
 
@@ -101,7 +101,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                    | Formato disco |
 |-------|-------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 9}     | ascii       |
+| 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
 
 
@@ -114,7 +114,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                    |
 |-------|-------------------------|
-| 1     | /IFD/GPS/{ushort = 9}     |
+| 1     | /ifd/gps/{ushort=9}     |
 | 2     | /ifd/xmp/exif:gpsstatus |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. status](../properties/props-system-gps-status.md)
+[System.GPS.Status](../properties/props-system-gps-status.md)
 </dt> </dl>
 
  

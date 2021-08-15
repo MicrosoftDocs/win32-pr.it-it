@@ -4,7 +4,7 @@
     - name: Appunti
       href: clipboard.md
       items:
-        - name: Panoramica degli Appunti
+        - name: Cenni preliminari sugli Appunti
           href: clipboard-overviews.md
           items:
             - name: Informazioni sugli Appunti
@@ -13,14 +13,14 @@
               href: clipboard-formats.md
             - name: Formato degli Appunti HTML
               href: html-clipboard-format.md
-            - name: Operazioni degli Appunti
+            - name: Operazioni sugli Appunti
               href: clipboard-operations.md
             - name: Uso degli Appunti
               href: using-the-clipboard.md
         - name: Informazioni di riferimento sugli Appunti
           href: clipboard-reference.md
           items:
-            - name: Funzioni degli Appunti
+            - name: Funzioni clipboard
               href: clipboard-functions.md
               items:
                 - name: AddClipboardFormatListener
@@ -121,16 +121,16 @@
     - name: Dynamic Data Exchange (DDE)
       href: dynamic-data-exchange.md
       items:
-        - name: Panoramiche DDE
+        - name: Panoramiche di DDE
           href: dynamic-data-exchange-overviews.md
           items:
-            - name: Informazioni su Dynamic Data Exchange
+            - name: Informazioni Dynamic Data Exchange
               href: about-dynamic-data-exchange.md
             - name: Informazioni sulle tabelle Atom
               href: about-atom-tables.md
-            - name: Utilizzo di Dynamic Data Exchange
+            - name: Uso di Dynamic Data Exchange
               href: using-dynamic-data-exchange.md
-        - name: Riferimento a DDE
+        - name: Informazioni di riferimento su DDE
           href: dynamic-data-exchange-reference.md
           items:
             - name: Funzioni DDE
@@ -146,7 +146,7 @@
                   href: /windows/desktop/api/Dde/nf-dde-packddelparam
                 - name: ReuseDDElParam
                   href: /windows/desktop/api/Dde/nf-dde-reuseddelparam
-                - name: UnpackDDElParam
+                - name: DisimballareDElParam
                   href: /windows/desktop/api/Dde/nf-dde-unpackddelparam
             - name: Messaggi DDE
               href: dynamic-data-exchange-messages.md
@@ -185,7 +185,7 @@
                   href: /windows/desktop/api/Dde/ns-dde-ddepoke
                 - name: HSZPAIR
                   href: /windows/win32/api/Ddeml/ns-ddeml-hszpair
-        - name: Riferimento Atom
+        - name: Informazioni di riferimento su Atom
           href: atoms-reference.md
           items:
             - name: Funzioni Atom
@@ -216,7 +216,7 @@
               items:
                 - name: MAKEINTATOM
                   href: /windows/desktop/api/Winbase/nf-winbase-makeintatom
-    - name: Libreria di gestione Dynamic Data Exchange (DDEML)
+    - name: Dynamic Data Exchange Management Library (DDEML)
       href: dynamic-data-exchange-management-library.md
       items:
         - name: Panoramica di DDEML
@@ -232,11 +232,11 @@
               href: data-management.md
             - name: Monitoraggio di applicazioni
               href: monitoring-applications.md
-            - name: Nome servizio
+            - name: Name Service
               href: name-service.md
             - name: Gestione transazioni
               href: transaction-management.md
-        - name: Riferimento a DDEML
+        - name: Informazioni di riferimento su DDEML
           href: dynamic-data-exchange-management-library-reference.md
           items:
             - name: Funzioni DDEML
@@ -250,7 +250,7 @@
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeadddata
                 - name: DdeCallback
                   href: /windows/desktop/api/ddeml/nc-ddeml-pfncallback
-                - name: DdeClientTransaction
+                - name: Ddeclienttransaction
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction
                 - name: DdeCmpStringHandles
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddecmpstringhandles
@@ -268,7 +268,7 @@
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddedisconnectlist
                 - name: DdeEnableCallback
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddeenablecallback
-                - name: DdeFreeDataHandle
+                - name: Ddefreedatahandle
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddefreedatahandle
                 - name: DdeFreeStringHandle
                   href: /windows/desktop/api/Ddeml/nf-ddeml-ddefreestringhandle

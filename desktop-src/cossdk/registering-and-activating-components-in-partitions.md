@@ -13,14 +13,14 @@ ms.locfileid: "118547063"
 ---
 # <a name="registering-and-activating-components-in-partitions"></a>Registrazione e attivazione di componenti nelle partizioni
 
-Dopo aver creato una partizione, il passaggio successivo consiste nel registrare i componenti COM+ all'interno di tale partizione. Un componente viene registrato all'interno di una partizione quando viene creata una nuova applicazione COM+ o quando un'applicazione COM+ esistente viene installata nella partizione. Per semplificare l'amministrazione della registrazione quando più partizioni contengono gli stessi componenti COM+, il servizio partizioni consente a un amministratore di copiare applicazioni o componenti da una partizione a un'altra. Quando un'applicazione COM+ o un componente viene copiato, vengono copiate tutte le proprietà di partizione associate, ad eccezione dell'identità dell'applicazione o di uno dei membri di un ruolo.
+Dopo aver creato una partizione, il passaggio successivo consiste nel registrare i componenti COM+ all'interno di tale partizione. Un componente viene registrato all'interno di una partizione quando viene creata una nuova applicazione COM+ o quando un'applicazione COM+ esistente viene installata nella partizione. Per semplificare l'amministrazione della registrazione quando più partizioni contengono gli stessi componenti COM+, il servizio partizioni consente a un amministratore di copiare applicazioni o componenti da una partizione a un'altra. Quando viene copiata un'applicazione COM+ o un componente, vengono copiate tutte le proprietà di partizione associate, ad eccezione dell'identità dell'applicazione o di uno dei membri di un ruolo.
 
 Quando il programma client chiama la [**funzione CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) o [**CoGetObject**](/windows/desktop/api/objbase/nf-objbase-cogetobject) per creare un'istanza di un oggetto, COM+ esegue due passaggi distinti, come indicato di seguito:
 
 1.  Individua la partizione in cui risiede il componente
-2.  Individua il componente corretto all'interno di tale partizione
+2.  Individua il componente corretto all'interno della partizione
 
-Negli argomenti seguenti di questa sezione vengono descritti in dettaglio questi passaggi:
+Gli argomenti seguenti in questa sezione descrivono in dettaglio questi passaggi:
 
 -   [Individuazione delle partizioni durante l'attivazione](locating-partitions-during-activation.md)
 -   [Individuazione di un componente per l'attivazione](locating-a-component-for-activation.md)

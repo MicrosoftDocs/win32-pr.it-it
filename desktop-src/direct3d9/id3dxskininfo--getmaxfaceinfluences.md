@@ -1,7 +1,7 @@
 ---
-description: Ottiene le influenze massime della faccia in una mesh triangolare con il buffer di indice specificato.
+description: Ottiene il numero massimo di influenze del viso in una mesh triangolare con l'oggetto index buffer.
 ms.assetid: 72dc2440-87df-461e-80d0-9ad9b1e4d8ee
-title: 'Metodo ID3DXSkinInfo:: GetMaxFaceInfluences (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::GetMaxFaceInfluences (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 11724c50d5224f0bcb2c9ced25523b869f3e347f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 84e949c0b6140b4be0f55c47c0f24b3e3b2843009c5c0cd039c76caefa0667a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800670"
 ---
-# <a name="id3dxskininfogetmaxfaceinfluences-method"></a>Metodo ID3DXSkinInfo:: GetMaxFaceInfluences
+# <a name="id3dxskininfogetmaxfaceinfluences-method"></a>Metodo ID3DXSkinInfo::GetMaxFaceInfluences
 
-Ottiene le influenze massime della faccia in una mesh triangolare con il buffer di indice specificato.
+Ottiene il numero massimo di influenze del viso in una mesh triangolare con l'oggetto index buffer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ HRESULT GetMaxFaceInfluences(
 
 <dl> <dt>
 
-*pIB* \[ in\]
+*pIB* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DINDEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9)**
 
-Puntatore al buffer di indice contenente i dati dell'indice mesh.
+Puntatore al index buffer che contiene i dati dell'indice mesh.
 
 </dd> <dt>
 
-*NumFaces* \[ in\]
+*NumFaces* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Numero di visi nella rete.
+Numero di visi nella mesh.
 
 </dd> <dt>
 
-*maxFaceInfluences* \[ in\]
+*maxFaceInfluences* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore alle influenze massime della faccia.
+Puntatore al numero massimo di influenze del viso.
 
 </dd> </dl>
 
@@ -81,8 +81,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

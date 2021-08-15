@@ -1,23 +1,23 @@
 ---
-description: Il valore NULL viene codificato in una tripletta di TLV che inizia con un valore di Tag pari a 0x05, una lunghezza di 0x00 e nessun byte di valore, come illustrato nella figura seguente.
+description: Il valore NULL viene codificato in una tripletta TLV che inizia con un valore Tag di 0x05, una lunghezza di 0x00 e nessun byte Valore, come illustrato nella figura seguente.
 ms.assetid: f712f84a-c4d3-41bb-b151-62b0f86046af
 title: "NULL"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6dec81fb2024899121ad4e2eb78aa54372a1b71
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9be83b4e57640fdee783214186a8a2135f3d7d14325a4b3235f80d729ef4b6e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903809"
 ---
 # <a name="null"></a>NULL
 
-Il valore **null** viene codificato in una tripletta di TLV che inizia con un valore di **tag** pari a 0x05, una **lunghezza** di 0x00 e nessun byte di **valore** , come illustrato nella figura seguente.
+Il **valore NULL** viene codificato in una tripletta TLV che inizia con un valore **tag** di 0x05, una **lunghezza** di 0x00 e nessun byte **valore,** come illustrato nella figura seguente.
 
-![codifica der del tipo di dati null](images/der-tlv-null.png)
+![Codifica der del tipo di dati Null](images/der-tlv-null.png)
 
-La Quinta riga dell'esempio seguente, adattata dall'argomento [ \# ASN. 1 con codifica PKCS 10](pkcs--10-encoded-asn-1.md) , Mostra un valore **null** codificato. Il primo byte è 0x05 e il secondo byte è 0x00. Nessun byte di contenuto.
+La quinta riga dell'esempio seguente, adattata dall'argomento [ \# PKCS 10 Encoded ASN.1](pkcs--10-encoded-asn-1.md) , mostra un valore **NULL codificato.** Il primo byte è 0x05 e il secondo byte è 0x00. Non è presente alcun byte di contenuto.
 
 ``` syntax
 30 81 9f                                ; SEQUENCE (9f Bytes)
@@ -46,10 +46,10 @@ La Quinta riga dell'esempio seguente, adattata dall'argomento [ \# ASN. 1 con co
 
 <dl> <dt>
 
-[Sistema di tipi ASN. 1](about-asn-1-type-system.md)
+[Sistema di tipi ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codifica DER dei tipi ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codifica DER dei tipi ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

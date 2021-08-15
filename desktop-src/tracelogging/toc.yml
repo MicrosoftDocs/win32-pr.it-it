@@ -6,19 +6,19 @@
     - name: Uso di TraceLogging
       href: tracelogging-using-tracelogging.md
       items:
-        - name: Avvio rapido C/C++ TraceLogging
+        - name: TraceLogging C/C++ Avvio rapido
           href: tracelogging-native-quick-start.md
-        - name: Avvio rapido gestiti TraceLogging
+        - name: TraceLogging Managed Avvio rapido
           href: tracelogging-managed-quick-start.md
-        - name: Registrare e visualizzare gli eventi TraceLogging
+        - name: Registrare e visualizzare eventi TraceLogging
           href: tracelogging-record-and-display-tracelogging-events.md
-        - name: Esempi di Tracelogging C/C++
+        - name: Esempi di traccia C/C++
           href: tracelogging-c-cpp-tracelogging-examples.md
-        - name: Esempi di .NET Tracelogging
+        - name: Esempi di tracelogging .NET
           href: tracelogging-net-examples.md
-        - name: Esempio di registrazione piattaforma UWP (Universal Windows Platform)
+        - name: Esempio di registrazione della Windows Universal Windows Platform
           href: universal-windows-platform-logging-examples.md
-    - name: Riferimento a TraceLogging
+    - name: Informazioni di riferimento su TraceLogging
       href: trace-logging-reference.md
       items:
         - name: Classi TraceLogging
@@ -33,15 +33,15 @@
                   href: /windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig
                 - name: Distruttore TraceLoggingActivity
                   href: /previous-versions/windows/desktop/legacy/dn975135(v=vs.85)
-                - name: Costante Level
+                - name: Costante di livello
                   href: level-constant.md
-                - name: Constant (parola chiave)
+                - name: Costante di parola chiave
                   href: keyword-constant.md
                 - name: Id (metodo)
                   href: /previous-versions/windows/desktop/legacy/dn975132(v=vs.85)
                 - name: IsStarted (metodo)
                   href: /previous-versions/windows/desktop/legacy/dn975133(v=vs.85)
-                - name: Metodo del provider
+                - name: Metodo provider
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-provider
                 - name: Metodo SetRelatedActivity
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingactivity-setrelatedactivity
@@ -56,15 +56,15 @@
                   href: /previous-versions/windows/desktop/legacy/dn975141(v=vs.85)
                 - name: Distruttore TraceLoggingThreadActivity
                   href: /previous-versions/windows/desktop/legacy/dn975140(v=vs.85)
-                - name: Constant (parola chiave)
+                - name: Costante di parola chiave
                   href: keyword-constant.md
-                - name: Costante Level
+                - name: Costante di livello
                   href: level-constant.md
                 - name: Id (metodo)
                   href: /previous-versions/windows/desktop/legacy/dn975137(v=vs.85)
                 - name: IsStarted (metodo)
                   href: /previous-versions/windows/desktop/legacy/dn975138(v=vs.85)
-                - name: Metodo del provider
+                - name: Metodo provider
                   href: /windows/desktop/api/traceloggingactivity/nf-traceloggingactivity-traceloggingthreadactivity-provider
             - name: TraceLoggingThreadActivityIdSetter
               href: /windows/desktop/api/traceloggingactivity/nl-traceloggingactivity-traceloggingthreadactivityidsetter
@@ -90,7 +90,7 @@
               href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingsetinformation
             - name: TraceLoggingUnregister
               href: /windows/desktop/api/traceloggingprovider/nf-traceloggingprovider-traceloggingunregister
-        - name: Macro TraceLogging
+        - name: Macro tracelogging
           href: trace-logging-macros.md
           items:
             - name: Macro wrapper TraceLogging

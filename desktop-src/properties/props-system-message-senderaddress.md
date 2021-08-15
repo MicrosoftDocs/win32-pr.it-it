@@ -4,12 +4,12 @@ ms.assetid: 14291b2a-87d1-4acf-9f31-d4014e941cbb
 title: System.Message.SenderAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc42eafec0a66241955f9b8bce81c5c457c95fe1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d93e15cc13a03d835aebc110895b39a6051e1d0b1d83db36eed1a320d01a550d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724689"
 ---
 # <a name="systemmessagesenderaddress"></a>System.Message.SenderAddress
 

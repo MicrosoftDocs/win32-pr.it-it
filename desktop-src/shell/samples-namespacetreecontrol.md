@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come implementare un controllo struttura ad albero dello spazio dei nomi personalizzato per un'applicazione.
+description: Illustra come implementare un controllo struttura ad albero dello spazio dei nomi personalizzato per un'applicazione.
 title: Esempio di controllo della struttura NameSpace
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 131007472f07e3b1f047767ee508c7a0591b8b51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1332a2d6e4059a0aca4eda69c17f6584100d8706cef5db027d685a46203f393
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719145"
 ---
 # <a name="namespace-tree-control-sample"></a>Esempio di controllo della struttura NameSpace
 
-Viene illustrato come implementare un controllo struttura ad albero dello spazio dei nomi personalizzato per un'applicazione.
+Illustra come implementare un controllo struttura ad albero dello spazio dei nomi personalizzato per un'applicazione.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -31,7 +31,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 
 
-| Prodotto                                | Versione minima del prodotto |
+| Product                                | Versione minima del prodotto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
 | Windows Software Development Kit (SDK) | 6.1                     |
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio NameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
+| GitHub  | [Esempio nameSpaceTreeControl](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/namespacetreecontrol) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

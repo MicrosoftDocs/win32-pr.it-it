@@ -1,10 +1,10 @@
 ---
-title: Struttura MPSAMPLE_DATA (MpClient. h)
-description: Dati di notifica passati alla funzione di callback di invio dell'esempio.
+title: MPSAMPLE_DATA struttura (MpClient.h)
+description: Dati di notifica passati alla funzione di callback di invio di esempio.
 ms.assetid: 58F348C6-411D-4545-9D4D-A80095FD139B
 keywords:
-- Struttura MPSAMPLE_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPSAMPLE_DATA
+- MPSAMPLE_DATA struttura Legacy Windows Environment Features
+- PMPSAMPLE_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24a894638465c0362069b8fdcbacddf98bfdd2c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aafafd2ff7162dcb50bd5e2ea92cd56ab9f073332238dc0742845f9c48c5a588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104121515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747414"
 ---
-# <a name="mpsample_data-structure"></a>\_Struttura dei dati MPSAMPLE
+# <a name="mpsample_data-structure"></a>Struttura MPSAMPLE \_ DATA
 
-Dati di notifica passati alla funzione di callback di invio dell'esempio.
+Dati di notifica passati alla funzione di callback di invio di esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Indice dell'elemento di esempio per il quale viene segnalato lo stato di invio.
+Indice dell'elemento di esempio per cui viene segnalato lo stato di invio.
 
 </dd> </dl>
 
@@ -58,9 +58,9 @@ Indice dell'elemento di esempio per il quale viene segnalato lo stato di invio.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

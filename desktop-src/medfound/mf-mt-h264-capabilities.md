@@ -1,19 +1,19 @@
 ---
-description: Specifica i flag delle funzionalità per un flusso video H. 264.
+description: Specifica i flag di funzionalità per un flusso video H.264.
 ms.assetid: 59EF18D6-6063-4EF3-BBFB-51A966CFF09E
-title: Attributo MF_MT_H264_CAPABILITIES (Mfapi. h)
+title: MF_MT_H264_CAPABILITIES attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b67f796e09d4b57667a3d8f7c7c0fa888eba7894
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138cfa32fc50ebb02ca4d399a178b338e58016c64ae3486d7f7b4a76f3e47afe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741803"
 ---
-# <a name="mf_mt_h264_capabilities-attribute"></a>\_ \_ Attributo funzionalità MF mt H264 \_
+# <a name="mf_mt_h264_capabilities-attribute"></a>Attributo MF \_ MT \_ H264 \_ CAPABILITIES
 
-Specifica i flag delle funzionalità per un flusso video H. 264.
+Specifica i flag di funzionalità per un flusso video H.264.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,9 +21,9 @@ Specifica i flag delle funzionalità per un flusso video H. 264.
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai tipi di supporto per i flussi H. 264 trasmessi tramite USB. Il valore corrisponde al campo **bmCapabilities** nel descrittore del frame video UVC 1,5 H. 264.
+Questo attributo si applica ai tipi di supporti per i flussi H.264 trasmessi tramite USB. Il valore corrisponde al **campo bmCapabilities** nel descrittore del fotogramma video UVC 1.5 H.264.
 
-Questo attributo viene usato anche con [codificatori della fotocamera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Questo attributo viene usato anche con codificatori [di fotocamera H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ Questo attributo viene usato anche con [codificatori della fotocamera H. 264 UVC
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Questo attributo viene usato anche con [codificatori della fotocamera H. 264 UVC
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

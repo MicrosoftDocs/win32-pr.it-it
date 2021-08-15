@@ -1,21 +1,21 @@
 ---
-title: Esempio di codice C/C++ impostazione del nome dell'applicazione
-description: In questo esempio viene impostato il nome dell'applicazione associata a un'attività nota. In questo esempio si presuppone che l'attività \ 0034; test attività \ 0034; esiste già nel computer locale e il servizio Utilità di pianificazione è in esecuzione.
+title: Esempio di codice C/C++ - Impostazione del nome dell'applicazione
+description: In questo esempio viene impostato il nome dell'applicazione associata a un'attività nota. Questo esempio presuppone che l'attività \ 0034;test task \ 0034; esiste già nel computer locale e il servizio Utilità di pianificazione è in esecuzione.
 ms.assetid: 1d86f945-0f13-4a7f-8123-df7e63a02238
 keywords:
-- impostazione delle proprietà dell'attività Utilità di pianificazione, nome applicazione
+- impostazione delle proprietà delle attività Utilità di pianificazione , nome dell'applicazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cc5ce664079217778e08dcd44ef8c646a4c4eaf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7861a62360ef97fdb9be5c691084cad98d594fc44030467e16058f7a8efd2c7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943842"
 ---
 # <a name="cc-code-example-setting-application-name"></a>Esempio di codice C/C++: impostazione del nome dell'applicazione
 
-In questo esempio viene impostato il nome dell'applicazione associata a un'attività nota. In questo esempio si presuppone che l'attività "test Task" esista già nel computer locale e che il servizio Utilità di pianificazione sia in esecuzione.
+In questo esempio viene impostato il nome dell'applicazione associata a un'attività nota. In questo esempio si presuppone che l'attività "test task" esista già nel computer locale e che il servizio Utilità di pianificazione sia in esecuzione.
 
 
 ```C++
@@ -138,12 +138,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Esempi di Utilità di pianificazione 1,0](task-scheduler-1-0-examples.md)
+[Utilità di pianificazione 1.0 Esempi](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,32 +1,32 @@
 ---
-title: Modalità di autenticazione di un client in un servizio Windows Sockets
-description: Quando un client si connette al servizio Windows Sockets, il servizio avvia le operazioni per la sequenza di autenticazione reciproca, illustrato negli esempi di codice seguenti.
+title: Come un Windows Sockets autentica un client
+description: Quando un client si connette al servizio Windows Sockets, il servizio inizia le operazioni per la sequenza di autenticazione reciproca, come illustrato negli esempi di codice seguenti.
 ms.assetid: 32f62fb9-41c6-4932-9b91-753174919707
 ms.tgt_platform: multiple
 keywords:
-- Come un servizio Windows Sockets autentica un annuncio client
+- Come un Windows Sockets autentica un'istanza di Active Directory client
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cad096ddfb9569d6289c1e775465232431c20ad6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c2975d356de011818514d6999f03d1998e066a4b8bdadd6eaba8835541e4b8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103956322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188523"
 ---
-# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>Modalità di autenticazione di un client in un servizio Windows Sockets
+# <a name="how-a-windows-sockets-service-authenticates-a-client"></a>Come un Windows Sockets autentica un client
 
-Quando un client si connette al servizio Windows Sockets, il servizio avvia le operazioni per la sequenza di autenticazione reciproca, illustrato negli esempi di codice seguenti.
+Quando un client si connette al servizio Windows Sockets, il servizio inizia le operazioni per la sequenza di autenticazione reciproca, come illustrato negli esempi di codice seguenti.
 
-La routine **DoAuthentication** usa l'handle socket per ricevere il primo pacchetto di autenticazione dal client. Il buffer client viene passato alla funzione **GenServerContext** , che quindi passa il buffer al pacchetto di sicurezza SSPI per l'autenticazione. **DoAuthentication** quindi invia nuovamente l'output del pacchetto di sicurezza al client. Questo ciclo viene ripetuto fino a quando l'autenticazione non riesce o **GenServerContext** imposta un flag che indica che l'autenticazione è stata completata.
+La **routine DoAuthentication** usa l'handle del socket per ricevere il primo pacchetto di autenticazione dal client. Il buffer client viene passato alla funzione **GenServerContext,** che quindi passa il buffer al pacchetto di sicurezza SSPI per l'autenticazione. **DoAuthentication** invia quindi l'output del pacchetto di sicurezza al client. Questo ciclo viene ripetuto fino a quando l'autenticazione non riesce **o GenServerContext** imposta un flag che indica che l'autenticazione è riuscita.
 
-**GenServerContext** chiama le funzioni seguenti da un pacchetto di sicurezza SSPI:
+**GenServerContext chiama** le funzioni seguenti da un pacchetto di sicurezza SSPI:
 
 -   [**AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) estrae le credenziali del servizio dal contesto di sicurezza del servizio stabilito all'avvio del servizio.
--   [**AcceptSecurityContext**](../SecAuthN/acceptsecuritycontext--general.md) tenta di eseguire l'autenticazione reciproca usando le credenziali del servizio e i dati di autenticazione ricevuti dal client. Per richiedere l'autenticazione reciproca, la chiamata **AcceptSecurityContext** deve specificare il flag di autenticazione \_ \_ reciproca ASC req \_ .
--   [**CompleteAuthToken**](/windows/desktop/api/sspi/nf-sspi-completeauthtoken) viene chiamato, se necessario, per completare l'operazione di autenticazione.
+-   [**AcceptSecurityContext tenta**](../SecAuthN/acceptsecuritycontext--general.md) di eseguire l'autenticazione reciproca usando le credenziali del servizio e i dati di autenticazione ricevuti dal client. Per richiedere l'autenticazione reciproca, **la chiamata AcceptSecurityContext** deve specificare il flag ASC \_ REQ MUTUAL \_ \_ AUTH.
+-   [**CompleteAuthToken viene**](/windows/desktop/api/sspi/nf-sspi-completeauthtoken) chiamato, se necessario, per completare l'operazione di autenticazione.
 
-Nell'esempio di codice seguente viene utilizzato il pacchetto Negotiate dalla libreria Secur32.dll di pacchetti di sicurezza.
+Nell'esempio di codice seguente viene utilizzato il pacchetto negotiate della Secur32.dll di pacchetti di sicurezza.
 
 
 ```C++
@@ -206,6 +206,6 @@ return TRUE;
 
 
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Opzione/i
-description: L'opzione/I specifica le directory in cui ricercare i file IDL importati, i file di intestazione inclusi e i file ACF.
+title: Opzione /I
+description: L'opzione /I specifica le directory in cui cercare i file IDL importati, i file di intestazione inclusi e i file ACF.
 ms.assetid: cdb0a1c2-ff99-4060-be72-a54dd20dbf93
 keywords:
-- /I switch MIDL
+- Opzione /I MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,51 +12,51 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49ee48ad1e66caf5ed8facbf09ebf2c517c8c895
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 40fa167ea2ef95074d201ff460eb8eece79e43442a35985921c97455f086b46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117992338"
 ---
-# <a name="i-switch"></a>Opzione/i
+# <a name="i-switch"></a>Opzione /I
 
-L'opzione **/i** specifica le directory in cui ricercare i file IDL importati, i file di intestazione inclusi e i file ACF.
+**L'opzione /I** specifica le directory in cui cercare i file IDL importati, i file di intestazione inclusi e i file ACF.
 
 ``` syntax
 midl /I include_path
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 <dl> <dt>
 
-*Includi \_ percorso* 
+*percorso \_ di inclusione* 
 </dt> <dd>
 
-Specifica una o più directory che contengono file di importazione, inclusione e ACF. Gli spazi vuoti tra l'opzione **/i** e il *\_ percorso di inclusione* sono facoltativi. Separare più directory con un carattere punto e virgola (;).
+Specifica una o più directory che contengono file di importazione, inclusione e ACF. Lo spazio vuoto tra **l'opzione /I** e *il percorso di \_ inclusione* è facoltativo. Separare più directory con un punto e virgola (;).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-È possibile visualizzare più directory con ogni opzione **/i** e più di un'opzione **/i** può comparire con ogni chiamata del compilatore MIDL. Viene eseguita la ricerca nelle directory nell'ordine in cui sono specificate.
+È possibile visualizzare più directory con ogni **opzione /I** e più di un'opzione **/I** può essere visualizzata con ogni chiamata del compilatore MIDL. Le directory vengono ricercate nell'ordine in cui vengono specificate.
 
-L'impostazione dell'opzione **/i** viene passata anche dal compilatore MIDL al preprocessore c del compilatore c. Quando è presente l'opzione [**\_ cmd/cpp**](-cpp-cmd.md) e l' [**opzione \_ /cpp opz**](-cpp-opt.md) non è, il compilatore MIDL concatena la stringa specificata dall'opzione **\_ cmd di/cpp** con le opzioni **/i**, [**/d**](-d.md)e [**/U**](-u.md) e usa questa stringa concatenata per richiamare il preprocessore C per ogni file di origine IDL e ACF. L'opzione del compilatore MIDL **/i** non viene passata al preprocessore quando si specifica l'opzione del compilatore MIDL **/No \_ cpp** o **/cpp \_ opz** .
+**L'impostazione dell'opzione /I** viene passata anche dal compilatore MIDL al preprocessore C del compilatore C. Quando l'opzione [**/cpp \_ cmd**](-cpp-cmd.md) è presente e l'opzione [**/cpp \_ opt**](-cpp-opt.md) non lo è, il compilatore MIDL concatena la stringa specificata dall'opzione **cmd \_ /cpp** con le opzioni **/I**, [**/D**](-d.md)e [**/U**](-u.md) e usa questa stringa concatenata per richiamare il preprocessore C per ogni file di origine IDL e ACF. L'opzione **/I** del compilatore MIDL non viene passata al preprocessore quando viene specificata l'opzione del compilatore MIDL **/no \_ cpp** o **/cpp \_ opt.**
 
-Negli ambienti del sistema operativo Microsoft (Windows a 64 bit, Windows a 32 bit, Windows a 16 bit e MS-DOS), le directory vengono ricercate nella sequenza seguente:
+Negli ambienti del sistema operativo Microsoft (Windows a 64 bit, Windows a 32 bit, Windows a 16 bit e MS-DOS), le directory vengono cercate nella sequenza seguente:
 
 1.  La directory corrente
-2.  Directory specificate dall'opzione **/i** (nell'ordine in cui seguono l'opzione)
+2.  Directory specificate **dall'opzione /I** (nell'ordine in cui seguono l'opzione )
 3.  Directory specificate dalla variabile di ambiente INCLUDE
 
-Quando si specificano le directory con l'opzione **/i** , l'opzione [**/No \_ def \_ Idir**](-no-def-idir.md) indica al compilatore MIDL di ignorare la directory corrente, ignorare le directory specificate dalla variabile di ambiente include e cercare solo le directory specificate.
+Quando le directory vengono specificate con l'opzione **/I,** l'opzione [**/no \_ def \_ idir**](-no-def-idir.md) indica al compilatore MIDL di ignorare la directory corrente, ignorare le directory specificate dalla variabile di ambiente INCLUDE ed eseguire la ricerca solo nelle directory specificate.
 
-Quando non viene specificata alcuna directory con l'opzione **/i** , l'opzione [**/No \_ def \_ Idir**](-no-def-idir.md) indica al compilatore MIDL di eseguire la ricerca solo nella directory corrente.
+Quando non viene specificata alcuna directory con l'opzione **/I,** l'opzione [**/no \_ def \_ idir**](-no-def-idir.md) indica al compilatore MIDL di cercare solo la directory corrente.
 
 ## <a name="examples"></a>Esempio
 
-**MIDL/I c: \\ include; c: \\ Includi \\ h/i \\ INCLUDE2 nomefile. idl**
+**midl /I c: \\ include;c: \\ include \\ h /I \\ include2 filename.idl**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -74,12 +74,12 @@ Quando non viene specificata alcuna directory con l'opzione **/i** , l'opzione [
 [**/cpp \_ opt**](-cpp-opt.md)
 </dt> <dt>
 
-[**/No \_ def \_ Idir**](-no-def-idir.md)
+[**/no \_ def \_ idir**](-no-def-idir.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

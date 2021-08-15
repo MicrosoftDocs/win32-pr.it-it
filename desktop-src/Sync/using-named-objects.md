@@ -1,23 +1,23 @@
 ---
-description: Nell'esempio seguente viene illustrato l'utilizzo dei nomi di oggetto tramite la creazione e l'apertura di un mutex denominato.
+description: L'esempio seguente illustra l'uso dei nomi di oggetto creando e aprendo un mutex denominato.
 ms.assetid: 06199f83-8fe0-42b9-9db1-58fe1443db4e
 title: Uso di oggetti denominati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a349e3e26f661ca988bc5c5ebbc7b3c6ea622956
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24e31d21af713a28d5bee501349e818327750cba15a961ebd0f6a5295be91e0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765130"
 ---
 # <a name="using-named-objects"></a>Uso di oggetti denominati
 
-Nell'esempio seguente viene illustrato l'utilizzo dei [nomi di oggetto](object-names.md) tramite la creazione e l'apertura di un mutex denominato.
+L'esempio seguente illustra l'uso dei nomi [di oggetto](object-names.md) creando e aprendo un mutex denominato.
 
 ## <a name="first-process"></a>Primo processo
 
-Il primo processo utilizza la funzione [**CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) per creare l'oggetto mutex. Si noti che questa funzione ha esito positivo anche se è presente un oggetto esistente con lo stesso nome.
+Il primo processo usa la [**funzione CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) per creare l'oggetto mutex. Si noti che questa funzione ha esito positivo anche se è presente un oggetto esistente con lo stesso nome.
 
 
 ```C++
@@ -56,7 +56,7 @@ int main(void)
 
 ## <a name="second-process"></a>Secondo processo
 
-Il secondo processo usa la funzione [**errore in OpenMutex**](/windows/win32/api/synchapi/nf-synchapi-openmutexw) per aprire un handle per il mutex esistente. Questa funzione ha esito negativo se non esiste un oggetto mutex con il nome specificato. Il parametro di accesso richiede l'accesso completo all'oggetto mutex, che è necessario per l'utilizzo dell'handle in una qualsiasi delle funzioni di attesa.
+Il secondo processo usa la [**funzione OpenMutex**](/windows/win32/api/synchapi/nf-synchapi-openmutexw) per aprire un handle per il mutex esistente. Questa funzione ha esito negativo se non esiste un oggetto mutex con il nome specificato. Il parametro di accesso richiede l'accesso completo all'oggetto mutex, necessario per l'uso dell'handle in una delle funzioni di attesa.
 
 
 ```C++
@@ -93,7 +93,7 @@ int main(void)
 [Nomi degli oggetti](object-names.md)
 </dt> <dt>
 
-[Utilizzo di oggetti mutex](using-mutex-objects.md)
+[Uso di oggetti Mutex](using-mutex-objects.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-title: imm_atomic_alloc (SM5-ASM)
-description: Incrementare atomicamente il contatore nascosto a 32 bit archiviato con un conteggio o aggiungere la visualizzazione di accesso non ordinato (UAV), restituendo il valore originale.
+title: imm_atomic_alloc (sm5 - asm)
+description: Incrementare in modo atomico il contatore nascosto a 32 bit archiviato con una visualizzazione di accesso non ordinato Count o Append, che restituisce il valore originale.
 ms.assetid: 534FA3C3-6FAC-41DC-AC07-0E53FEED000C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a97709629497bae9af0298789453ef1d1172b7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cf18b7602803f5f1128d942cc59b8f5365c2e1b69fb1287aaba682f690c52a3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103719426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907205"
 ---
-# <a name="imm_atomic_alloc-sm5---asm"></a>IMM \_ Atomic \_ Alloc (SM5-ASM)
+# <a name="imm_atomic_alloc-sm5---asm"></a>imm \_ atomic \_ alloc (sm5 - asm)
 
-Incrementare atomicamente il contatore nascosto a 32 bit archiviato con un conteggio o aggiungere la visualizzazione di accesso non ordinato (UAV), restituendo il valore originale.
+Incrementare in modo atomico il contatore nascosto a 32 bit archiviato con una visualizzazione di accesso non ordinato Count o Append, che restituisce il valore originale.
 
 
 
-| IMM \_ Atomic \_ Alloc dst0 \[ . Single \_ Component \_ mask \] , dstUAV |
+| imm \_ atomic \_ alloc dst0 \[ .single component mask , \_ \_ \] dstUAV |
 |-------------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Incrementare atomicamente il contatore nascosto a 32 bit archiviato con un conte
 
 | Elemento                                                                                           | Descrizione                                                               |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                | \[in \] contiene il valore del contatore restituito.<br/>                    |
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/> | \[in \] un buffer strutturato UAV con il flag count o Append. <br/> |
+| <span id="dst0"></span><span id="DST0"></span>*dst0*<br/>                                | \[in \] Contiene il valore del contatore restituito.<br/>                    |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/> | \[in \] un UAV del buffer strutturato con il flag Count o Append. <br/> |
 
 
 
@@ -37,25 +37,25 @@ Incrementare atomicamente il contatore nascosto a 32 bit archiviato con un conte
 
 ## <a name="remarks"></a>Commenti
 
-È presente un valore di contatore intero senza segno a 32 bit nascosto associato a ogni conteggio o visualizzazione buffer di Accodamento, che viene inizializzato quando la vista è associata alla pipeline, inclusa l'opzione per il mantenimento del valore precedente.
+È presente un valore del contatore intero senza segno a 32 bit nascosto associato a ogni visualizzazione Conteggio o Accoda buffer che viene inizializzata quando la vista è associata alla pipeline, inclusa l'opzione per mantenere il valore precedente.
 
-Questa istruzione esegue un incremento atomico del valore del contatore, restituendo l'originale a *dst0*.
+Questa istruzione esegue un incremento atomico del valore del contatore, restituisce l'oggetto originale *a dst0*.
 
-Per un UAV Append, il valore restituito è valido solo per la durata della chiamata dello shader. Successivamente, l'implementazione può riorganizzare il layout di memoria. Tutti gli indirizzi di memoria basati sul valore restituito devono essere limitati alla chiamata dello shader.
+Per un UAV append, il valore restituito è valido solo per la durata della chiamata dello shader. successivamente l'implementazione può ridisporre il layout di memoria. Qualsiasi indirizzamento alla memoria basato sul valore restituito deve essere limitato alla chiamata dello shader.
 
-Per un UAV Append, all'interno della chiamata dello shader il compilatore HLSL può usare il valore restituito come indice struct da usare per l'accesso al buffer strutturato. L'accesso a qualsiasi indice struct diverso da quello restituito dalle chiamate a **IMM \_ Atomic \_ Alloc** o [ \_ consume](imm-atomic-consume--sm5---asm-.md) genera risultati non definiti in quanto la posizione di memoria all'interno del UAV viene eseguita in modo casuale e fissa solo per la durata della chiamata dello shader.
+Per un UAV append, all'interno della chiamata dello shader il compilatore HLSL può usare il valore restituito come indice dello struct da usare per accedere al buffer strutturato. L'accesso a qualsiasi indice di struct diverso da quelle restituite [ \_](imm-atomic-consume--sm5---asm-.md) dalle chiamate a **imm \_ atomic \_ alloc** o consume produce risultati indefiniti in quanto la posizione di memoria all'interno dell'UAV a cui si accede è casuale e fissa solo per la durata della chiamata dello shader.
 
-Per un numero UAV, il valore restituito può essere salvato dall'applicazione come riferimento a un percorso fisso all'interno del UAV che è significativo dopo la chiamata dello shader. È possibile accedere sempre a qualsiasi posizione in un UAV di conteggio indipendentemente dal valore del conteggio.
+Per un UAV Count, il valore restituito può essere salvato dall'applicazione come riferimento a una posizione fissa all'interno dell'UAV che è significativa al termine della chiamata dello shader. È sempre possibile accedere a qualsiasi posizione in un UAV Count indipendentemente dal valore del conteggio.
 
-Non è presente alcun blocco del conteggio, quindi esegue il wrapping in caso di overflow.
+Non è presente alcuna chiusura del conteggio, quindi esegue il wrapping in caso di overflow.
 
-Lo stesso shader non è in grado di tentare di usare sia l' **\_ \_ allocazione** atomica di IMM che il **\_ \_ consumo atomico di IMM** nello stesso UAV. Inoltre, la GPU non può consentire la combinazione di più chiamate shader per la combinazione di **IMM \_ Atomic \_ Alloc** e **IMM \_ Atomic \_ consume** nello stesso UAV.
+Lo stesso shader non può tentare sia **l'utilizzo \_ \_ atomico imm che** **l'utilizzo \_ atomico \_ imm** sullo stesso UAV. Inoltre, la GPU non può consentire a più chiamate di shader di combinare **imm \_ atomic \_ alloc** e **imm \_ atomic \_ consume** sullo stesso UAV.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -63,11 +63,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -75,20 +75,20 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -98,7 +98,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

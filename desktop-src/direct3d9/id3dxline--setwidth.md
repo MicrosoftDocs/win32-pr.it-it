@@ -1,7 +1,7 @@
 ---
 description: Specifica lo spessore della linea.
 ms.assetid: cedf9217-2b47-40c3-a64c-9872c1083d71
-title: 'Metodo ID3DXLine:: sewidth (D3dx9core. h)'
+title: Metodo ID3DXLine::SetWidth (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d357d7516233caf6ef9206aa2aecc2a98a435cde
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d429ff05d2ee6c905cf273e47658d38d5b0e6b3de458a1ad55eaf16156f3081a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802191"
 ---
-# <a name="id3dxlinesetwidth-method"></a>Metodo ID3DXLine:: sewidth
+# <a name="id3dxlinesetwidth-method"></a>Metodo ID3DXLine::SetWidth
 
 Specifica lo spessore della linea.
 
@@ -40,12 +40,12 @@ HRESULT SetWidth(
 
 <dl> <dt>
 
-*fWidth* \[ in\]
+*fWidth* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Descrive lo spessore riga.
+Descrive lo spessore della linea.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

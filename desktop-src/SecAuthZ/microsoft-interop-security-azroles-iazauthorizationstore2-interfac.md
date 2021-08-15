@@ -1,7 +1,7 @@
 ---
-description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità di IAzAuthorizationStore2.
+description: Collegamenti alla documentazione per i metodi e le proprietà del wrapper di interoperabilità IAzAuthorizationStore2.
 ms.assetid: e29fb253-d954-4219-abd4-270891a52dd8
-title: Interfaccia Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2
+title: Interfaccia Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -153,61 +153,61 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: 07db9e4463d39bfb0a9e090b6f735c07b76afbe8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca12c0529cde75c40b8fc83426facc643a977432b24e056413a5681d26d6f4ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913079"
 ---
-# <a name="microsoftinteropsecurityazrolesiazauthorizationstore2-interface"></a>Interfaccia Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2
+# <a name="microsoftinteropsecurityazrolesiazauthorizationstore2-interface"></a>Interfaccia Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2
 
-I metodi e le proprietà del wrapper di interoperabilità **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2** sono documentati nella versione com del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
+I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2** sono documentati nella versione COM del metodo o della proprietà. Un collegamento alla documentazione COM correlata segue il nome di ogni membro.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2** include questi tipi di membri:
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2** include questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2** ha questi metodi.
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2** include questi metodi.
 
 
 
 | Metodo                                                                                      | Descrizione                                                                                                                  |
 |:--------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddDelegatedPolicyUser**        | [**AzAuthorizationStore:: AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyuser)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddDelegatedPolicyUserName**    | [**AzAuthorizationStore:: AddDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyusername)<br/>       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddPolicyAdministrator**        | [**AzAuthorizationStore:: AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyadministrator)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddPolicyAdministratorName**    | [**AzAuthorizationStore:: AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyadministratorname)<br/>       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddPolicyReader**               | [**AzAuthorizationStore:: AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreader)<br/>                             |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddPolicyReaderName**           | [**AzAuthorizationStore:: AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreadername)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. AddPropertyItem**               | [**AzAuthorizationStore:: AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpropertyitem)<br/>                             |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. CloseApplication**              | [**AzAuthorizationStore:: CloseApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-closeapplication)<br/>                           |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. CreateApplication**             | [**AzAuthorizationStore:: CreateApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplication)<br/>                         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. CreateApplication2**            | [**IAzAuthorizationStore2::CreateApplication2**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-createapplication2)<br/>                   |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. CreateApplicationGroup**        | [**AzAuthorizationStore:: CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplicationgroup)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. Delete**                        | [**AzAuthorizationStore::D Elimina**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-delete)<br/>                                               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeleteApplication**             | [**AzAuthorizationStore::D eleteApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplication)<br/>                         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeleteApplicationGroup**        | [**AzAuthorizationStore::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplicationgroup)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeleteDelegatedPolicyUser**     | [**AzAuthorizationStore::D eleteDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyuser)<br/>         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeleteDelegatedPolicyUserName** | [**AzAuthorizationStore::D eleteDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyusername)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeletePolicyAdministrator**     | [**AzAuthorizationStore::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministrator)<br/>         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeletePolicyAdministratorName** | [**AzAuthorizationStore::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministratorname)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeletePolicyReader**            | [**AzAuthorizationStore::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreader)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeletePolicyReaderName**        | [**AzAuthorizationStore::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreadername)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DeletePropertyItem**            | [**AzAuthorizationStore::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepropertyitem)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. GetProperty**                   | [**AzAuthorizationStore:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-getproperty)<br/>                                     |
-| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Initialize**                    | [**AzAuthorizationStore:: Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)<br/>                                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. OpenApplication**               | [**AzAuthorizationStore:: OpenApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplication)<br/>                             |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. OpenApplication2**              | [**IAzAuthorizationStore2::OpenApplication2**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-openapplication2)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. OpenApplicationGroup**          | [**AzAuthorizationStore:: OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplicationgroup)<br/>                   |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. SetProperty**                   | [**AzAuthorizationStore:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-setproperty)<br/>                                     |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. Submit**                        | [**AzAuthorizationStore:: Submit**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-submit)<br/>                                               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. UpdateCache**                   | [**AzAuthorizationStore:: UpdateCache**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-updatecache)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddDelegatedPolicyUser**        | [**AzAuthorizationStore::AddDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyuser)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddDelegatedPolicyUserName**    | [**AzAuthorizationStore::AddDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-adddelegatedpolicyusername)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddPolicyAdministrator**        | [**AzAuthorizationStore::AddPolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyadministrator)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddPolicyAdministratorName**    | [**AzAuthorizationStore::AddPolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyadministratorname)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddPolicyReader**               | [**AzAuthorizationStore::AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreader)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddPolicyReaderName**           | [**AzAuthorizationStore::AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpolicyreadername)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.AddPropertyItem**               | [**AzAuthorizationStore::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-addpropertyitem)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.CloseApplication**              | [**AzAuthorizationStore::CloseApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-closeapplication)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.CreateApplication**             | [**AzAuthorizationStore::CreateApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplication)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.CreateApplication2**            | [**IAzAuthorizationStore2::CreateApplication2**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-createapplication2)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.CreateApplicationGroup**        | [**AzAuthorizationStore::CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-createapplicationgroup)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Delete**                        | [**AzAuthorizationStore::D elete**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-delete)<br/>                                               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeleteApplication**             | [**AzAuthorizationStore::D eleteApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplication)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeleteApplicationGroup**        | [**AzAuthorizationStore::D eleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deleteapplicationgroup)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeleteDelegatedPolicyUser**     | [**AzAuthorizationStore::D eleteDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyuser)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeleteDelegatedPolicyUserName** | [**AzAuthorizationStore::D eleteDelegatedPolicyUserName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletedelegatedpolicyusername)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePolicyAdministrator**     | [**AzAuthorizationStore::D eletePolicyAdministrator**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministrator)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePolicyAdministratorName** | [**AzAuthorizationStore::D eletePolicyAdministratorName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyadministratorname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePolicyReader**            | [**AzAuthorizationStore::D eletePolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreader)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePolicyReaderName**        | [**AzAuthorizationStore::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreadername)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePropertyItem**            | [**AzAuthorizationStore::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepropertyitem)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.GetProperty**                   | [**AzAuthorizationStore::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-getproperty)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Initialize**                    | [**AzAuthorizationStore::Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplication**               | [**AzAuthorizationStore::OpenApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplication)<br/>                             |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplication2**              | [**IAzAuthorizationStore2::OpenApplication2**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-openapplication2)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplicationGroup**          | [**AzAuthorizationStore::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplicationgroup)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.SetProperty**                   | [**AzAuthorizationStore::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-setproperty)<br/>                                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Submit**                        | [**AzAuthorizationStore::Submit**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-submit)<br/>                                               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.UpdateCache**                   | [**AzAuthorizationStore::UpdateCache**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-updatecache)<br/>                                     |
 
 
 
@@ -215,29 +215,29 @@ L'interfaccia **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2** 
 
 ### <a name="properties"></a>Proprietà
 
-L'interfaccia **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2** dispone di queste proprietà.
+Queste **proprietà sono disponibili nell'interfaccia Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2.**
 
 
 
 | Proprietà                                                                                          | Tipo di accesso           | Descrizione                                                                                                                   |
 |:--------------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. ApplicationData**<br/>          | Lettura/Scrittura<br/> | [**Proprietà ApplicationData di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationdata)<br/>                   |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. ApplicationGroups**<br/>        | Sola lettura<br/>  | [**Proprietà ApplicationGroups di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationgroups)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. Applications**<br/>             | Sola lettura<br/>  | [**Proprietà Applications di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applications)<br/>                         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. ApplyStoreSacl**<br/>           | Lettura/Scrittura<br/> | [**Proprietà ApplyStoreSacl di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applystoresacl)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DelegatedPolicyUsers**<br/>     | Sola lettura<br/>  | [**Proprietà DelegatedPolicyUsers di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_delegatedpolicyusers)<br/>         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DelegatedPolicyUsersName**<br/> | Sola lettura<br/>  | [**Proprietà DelegatedPolicyUsersName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_delegatedpolicyusersname)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. Description**<br/>              | Lettura/Scrittura<br/> | [**Proprietà Description di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_description)<br/>                           |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. DomainTimeout**<br/>            | Lettura/Scrittura<br/> | [**Proprietà DomainTimeout di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_domaintimeout)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. GenerateAudits**<br/>           | Lettura/Scrittura<br/> | [**Proprietà GenerateAudits di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_generateaudits)<br/>                     |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. MaxScriptEngines**<br/>         | Lettura/Scrittura<br/> | [**Proprietà MaxScriptEngines di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_maxscriptengines)<br/>                 |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. PolicyAdministrators**<br/>     | Sola lettura<br/>  | [**Proprietà PolicyAdministrators di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyadministrators)<br/>         |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. PolicyAdministratorsName**<br/> | Sola lettura<br/>  | [**Proprietà PolicyAdministratorsName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyadministratorsname)<br/> |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. PolicyReaders**<br/>            | Sola lettura<br/>  | [**Proprietà PolicyReaders di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyreaders)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. PolicyReadersName**<br/>        | Sola lettura<br/>  | [**Proprietà PolicyReadersName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyreadersname)<br/>               |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. ScriptEngineTimeout**<br/>      | Lettura/Scrittura<br/> | [**Proprietà ScriptEngineTimeout di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_scriptenginetimeout)<br/>           |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. TargetMachine**<br/>            | Sola lettura<br/>  | [**Proprietà TargetMachine di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_targetmachine)<br/>                       |
-| **Microsoft. Interop. Security. azroles. IAzAuthorizationStore2. scrivibile**<br/>                 | Sola lettura<br/>  | [**Proprietà scrivibile di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_writable)<br/>                                 |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.ApplicationData**<br/>          | Lettura/Scrittura<br/> | [**Proprietà ApplicationData di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationdata)<br/>                   |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.ApplicationGroups**<br/>        | Sola lettura<br/>  | [**Proprietà ApplicationGroups di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applicationgroups)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Applications**<br/>             | Sola lettura<br/>  | [**Proprietà Applications di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applications)<br/>                         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.ApplyStoreSacl**<br/>           | Lettura/Scrittura<br/> | [**Proprietà ApplyStoreSacl di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_applystoresacl)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DelegatedPolicyUsers**<br/>     | Sola lettura<br/>  | [**Proprietà DelegatedPolicyUsers di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_delegatedpolicyusers)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DelegatedPolicyUsersName**<br/> | Sola lettura<br/>  | [**Proprietà DelegatedPolicyUsersName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_delegatedpolicyusersname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Description**<br/>              | Lettura/Scrittura<br/> | [**Proprietà Description di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_description)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DomainTimeout**<br/>            | Lettura/Scrittura<br/> | [**Proprietà DomainTimeout di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_domaintimeout)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.GenerateAudits**<br/>           | Lettura/Scrittura<br/> | [**Proprietà GenerateAudits di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_generateaudits)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.MaxScriptEngines**<br/>         | Lettura/Scrittura<br/> | [**Proprietà MaxScriptEngines di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_maxscriptengines)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.PolicyAdministrators**<br/>     | Sola lettura<br/>  | [**Proprietà PolicyAdministrators di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyadministrators)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.PolicyAdministratorsName**<br/> | Sola lettura<br/>  | [**Proprietà PolicyAdministratorsName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyadministratorsname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.PolicyReaders**<br/>            | Sola lettura<br/>  | [**Proprietà PolicyReaders di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyreaders)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.PolicyReadersName**<br/>        | Sola lettura<br/>  | [**Proprietà PolicyReadersName di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_policyreadersname)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.ScriptEngineTimeout**<br/>      | Lettura/Scrittura<br/> | [**Proprietà ScriptEngineTimeout di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_scriptenginetimeout)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.TargetMachine**<br/>            | Sola lettura<br/>  | [**Proprietà TargetMachine di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_targetmachine)<br/>                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Writable**<br/>                 | Sola lettura<br/>  | [**Proprietà scrivibile di AzAuthorizationStore**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-get_writable)<br/>                                 |
 
 
 

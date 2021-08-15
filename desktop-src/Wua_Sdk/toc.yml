@@ -1,46 +1,46 @@
-- name: API dell'agente Windows Update
+- name: Windows API dell'agente di aggiornamento
   href: portal-client.md
   items:
     - name: Uso dell'API Windows Update Agent
       href: using-the-windows-update-agent-api.md
       items:
-        - name: Modello a oggetti di Windows Update Agent
+        - name: Windows Aggiornare il modello a oggetti dell'agente
           href: windows-update-agent-object-model.md
         - name: Determinazione della versione corrente di WUA
           href: determining-the-current-version-of-wua.md
-        - name: Aggiornamento dell'agente di Windows Update
+        - name: Aggiornamento dell Windows di aggiornamento
           href: updating-the-windows-update-agent.md
-        - name: Aggiornamento dei file di intestazione di Windows Update Agent
+        - name: Aggiornamento dei Windows di intestazione dell'agente di aggiornamento
           href: updating-windows-update-agent-header-files.md
-        - name: Utilizzo di WUA per la ricerca di aggiornamenti offline
+        - name: Uso di WUA per l'analisi degli aggiornamenti offline
           href: using-wua-to-scan-for-updates-offline.md
-        - name: Proprietà e metodi protetti nell'API WUA
+        - name: Metodi e proprietà protetti nell'API WUA
           href: secured-methods-and-properties-in-the-wua-api.md
-        - name: 'Ricerca, download e installazione degli aggiornamenti'
+        - name: 'Ricerca, download e installazione di aggiornamenti'
           href: searching--downloading--and-installing-updates.md
         - name: 'Ricerca, download e installazione di aggiornamenti specifici'
           href: searching--downloading--and-installing-specific-updates.md
-        - name: Opt-In Microsoft Update
+        - name: Opt-In da Microsoft Update
           href: opt-in-to-microsoft-update.md
         - name: Uso di WUA da un computer remoto
           href: using-wua-from-a-remote-computer.md
-        - name: Linee guida per le operazioni WUA asincrone
+        - name: Linee guida per le operazioni wua asincrone
           href: guidelines-for-asynchronous-wua-operations.md
         - name: Uso di WUA da un processo di accesso secondario (RunAs)
           href: using-wua-from-a-secondary-logon--run-as--process.md
-        - name: Codici di errore e WUA riuscita
+        - name: Codici di errore e di esito positivo wua
           href: wua-success-and-error-codes-.md
         - name: Codici di errore di rete WUA
           href: wua-networking-error-codes-.md
-    - name: Altre origini di Windows Update informazioni sull'agente
+    - name: Altre origini delle informazioni Windows'agente di aggiornamento
       href: other-sources-of-windows-update-agent-information.md
-    - name: Informazioni di riferimento sulle API di Windows Update Agent (WUA)
+    - name: Windows Informazioni di riferimento sulle API dell'agente di aggiornamento (WUA)
       href: windows-update-agent--wua--api-reference.md
       items:
         - name: Enumerazioni
           href: enumerations.md
           items:
-            - name: AddServiceFlag
+            - name: Flag AddServiceFlag
               href: /windows/win32/api/Wuapi/ne-wuapi-addserviceflag
             - name: AutoDownloadMode
               href: /windows/win32/api/Wuapi/ne-wuapi-autodownloadmode
@@ -52,7 +52,7 @@
               href: /windows/win32/api/Wuapi/ne-wuapi-automaticupdatesscheduledinstallationday
             - name: AutomaticUpdatesUserType
               href: /windows/win32/api/Wuapi/ne-wuapi-automaticupdatesusertype
-            - name: Autoselectionmode
+            - name: AutoSelectionMode
               href: /windows/win32/api/Wuapi/ne-wuapi-autoselectionmode
             - name: DeploymentAction
               href: /windows/win32/api/Wuapi/ne-wuapi-deploymentaction
@@ -66,9 +66,9 @@
               href: /windows/win32/api/Wuapi/ne-wuapi-installationrebootbehavior
             - name: OperationResultCode
               href: /windows/win32/api/Wuapi/ne-wuapi-operationresultcode
-            - name: SearchScope
+            - name: Searchscope
               href: /windows/win32/api/Wuapi/ne-wuapi-searchscope
-            - name: ServerSelection
+            - name: Selezione server
               href: /windows/win32/api/wuapicommon/ne-wuapicommon-serverselection
             - name: UpdateEndpointAuthTokenType
               href: updateendpointauthtokentype.md
@@ -78,7 +78,7 @@
               href: /windows/win32/api/Wuapi/ne-wuapi-updateexceptioncontext
             - name: UpdateLockdownOption
               href: /windows/win32/api/Wuapi/ne-wuapi-updatelockdownoption
-            - name: Insert
+            - name: UpdateOperation
               href: /windows/win32/api/Wuapi/ne-wuapi-updateoperation
             - name: UpdateServiceOption
               href: /windows/win32/api/Wuapi/ne-wuapi-updateserviceoption
@@ -99,9 +99,9 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-detectnow
                     - name: Metodo EnableService
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-enableservice
-                    - name: Pause (metodo)
+                    - name: Metodo Pause
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-pause
-                    - name: Resume (metodo)
+                    - name: Metodo Resume
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-resume
                     - name: Metodo ShowSettingsDialog
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-showsettingsdialog
@@ -110,7 +110,7 @@
                   items:
                     - name: Proprietà ServiceEnabled
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-get_serviceenabled
-                    - name: Proprietà Settings
+                    - name: Impostazioni Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdates-get_settings
             - name: IAutomaticUpdates2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iautomaticupdates2
@@ -136,7 +136,7 @@
                 - name: Metodi IAutomaticUpdatesSettings
                   href: iautomaticupdatessettings-methods.md
                   items:
-                    - name: Refresh (metodo)
+                    - name: Metodo Refresh
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings-refresh
                     - name: Metodo Save
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings-save
@@ -145,7 +145,7 @@
                   items:
                     - name: Proprietà NotificationLevel
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings-get_notificationlevel
-                    - name: ReadOnly (proprietà)
+                    - name: Proprietà ReadOnly
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings-get_readonly
                     - name: Proprietà obbligatoria
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings-get_required
@@ -176,19 +176,19 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings3-get_featuredupdatesenabled
                     - name: Proprietà NonAdministratorsElevated
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iautomaticupdatessettings3-get_nonadministratorselevated
-            - name: ICategory
+            - name: Categoria I
               href: /windows/desktop/api/Wuapi/nn-wuapi-icategory
               items:
-                - name: Proprietà di ICategory
+                - name: Proprietà ICategory
                   href: icategory-properties.md
                   items:
-                    - name: CategoryID (proprietà)
+                    - name: Proprietà CategoryID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_categoryid
                     - name: Proprietà Children
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children
                     - name: Proprietà Description
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_description
-                    - name: Image (proprietà)
+                    - name: Proprietà Image
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_image
                     - name: Proprietà Name
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_name
@@ -196,9 +196,9 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_order
                     - name: Parent Property
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_parent
-                    - name: Type (proprietà)
+                    - name: Proprietà Type
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_type
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategory-get_updates
             - name: ICategoryCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-icategorycollection
@@ -206,7 +206,7 @@
                 - name: Proprietà di ICategoryCollection
                   href: icategorycollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategorycollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-icategorycollection-get_count
@@ -218,7 +218,7 @@
                 - name: Metodi IDownloadCompletedCallback
                   href: idownloadcompletedcallback-methods.md
                   items:
-                    - name: Invoke (metodo)
+                    - name: Metodo Invoke
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadcompletedcallback-invoke
             - name: IDownloadCompletedCallbackArgs
               href: /previous-versions/windows/desktop/aa385859(v=vs.85)
@@ -230,7 +230,7 @@
                   items:
                     - name: Metodo CleanUp
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-cleanup
-                    - name: Metodo getProgress
+                    - name: Metodo GetProgress
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-getprogress
                     - name: Metodo RequestAbort
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-requestabort
@@ -239,9 +239,9 @@
                   items:
                     - name: Proprietà AsyncState
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-get_asyncstate
-                    - name: Proprietà di completamento
+                    - name: Proprietà IsCompleted
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-get_iscompleted
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadjob-get_updates
             - name: IDownloadProgress
               href: /windows/desktop/api/Wuapi/nn-wuapi-idownloadprogress
@@ -251,7 +251,7 @@
                   items:
                     - name: Metodo GetUpdateResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadprogress-getupdateresult
-                - name: Proprietà di IDownloadProgress
+                - name: Proprietà IDownloadProgress
                   href: idownloadprogress-properties.md
                   items:
                     - name: Proprietà CurrentUpdateBytesDownloaded
@@ -276,12 +276,12 @@
                 - name: Metodi IDownloadProgressChangedCallback
                   href: idownloadprogresschangedcallback-methods.md
                   items:
-                    - name: Invoke (metodo)
+                    - name: Metodo Invoke
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadprogresschangedcallback-invoke
             - name: IDownloadProgressChangedCallbackArgs
               href: /windows/desktop/api/Wuapi/nn-wuapi-idownloadprogresschangedcallbackargs
               items:
-                - name: Proprietà di IDownloadChangedCallbackArgs
+                - name: Proprietà IDownloadChangedCallbackArgs
                   href: idownloadchangedcallbackargs-properties.md
                   items:
                     - name: Proprietà Progress
@@ -294,10 +294,10 @@
                   items:
                     - name: Metodo GetUpdateResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadresult-getupdateresult
-                - name: Proprietà di IDownloadResult
+                - name: Proprietà IDownloadResult
                   href: idownloadresult-properties.md
                   items:
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadresult-get_hresult
                     - name: Proprietà ResultCode
                       href: /windows/desktop/api/Wuapi/nf-wuapi-idownloadresult-get_resultcode
@@ -309,11 +309,11 @@
                   items:
                     - name: Proprietà AltText
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iimageinformation-get_alttext
-                    - name: Height (proprietà)
+                    - name: Proprietà Height
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iimageinformation-get_height
                     - name: Proprietà Source
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iimageinformation-get_source
-                    - name: Width (proprietà)
+                    - name: Proprietà Width
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iimageinformation-get_width
             - name: IInstallationAgent
               href: /windows/desktop/api/Wuapi/nn-wuapi-iinstallationagent
@@ -340,7 +340,7 @@
                 - name: Metodi IInstallationCompletedCallback
                   href: iinstallationcompletedcallback-methods.md
                   items:
-                    - name: Invoke (metodo)
+                    - name: Metodo Invoke
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationcompletedcallback-invoke
             - name: IInstallationCompletedCallbackArgs
               href: /previous-versions/windows/desktop/aa385908(v=vs.85)
@@ -352,18 +352,18 @@
                   items:
                     - name: Metodo CleanUp
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-cleanup
-                    - name: Metodo getProgress
+                    - name: Metodo GetProgress
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-getprogress
                     - name: Metodo RequestAbort
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-requestabort
-                - name: Proprietà di IInstallationJob
+                - name: Proprietà IInstallationJob
                   href: iinstallationjob-properties.md
                   items:
                     - name: Proprietà AsyncState
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-get_asyncstate
-                    - name: Proprietà di completamento
+                    - name: Proprietà IsCompleted
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-get_iscompleted
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationjob-get_updates
             - name: IInstallationProgress
               href: /windows/desktop/api/Wuapi/nn-wuapi-iinstallationprogress
@@ -388,7 +388,7 @@
                 - name: Metodi IInstallationProgressChangedCallback
                   href: iinstallationprogresschangedcallback-methods.md
                   items:
-                    - name: Invoke (metodo)
+                    - name: Metodo Invoke
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationprogresschangedcallback-invoke
             - name: IInstallationProgressChangedCallbackArgs
               href: /windows/desktop/api/Wuapi/nn-wuapi-iinstallationprogresschangedcallbackargs
@@ -406,10 +406,10 @@
                   items:
                     - name: Metodo GetUpdateResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationresult-getupdateresult
-                - name: Proprietà di IInstallationResult
+                - name: Proprietà IInstallationResult
                   href: iinstallationresult-properties.md
                   items:
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationresult-get_hresult
                     - name: Proprietà RebootRequired
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinstallationresult-get_rebootrequired
@@ -421,7 +421,7 @@
                 - name: Proprietà di IInvalidProductLicenseException
                   href: iinvalidproductlicenseexception-properties.md
                   items:
-                    - name: Product (proprietà)
+                    - name: Proprietà Product
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iinvalidproductlicenseexception-get_product
             - name: ISearchCompletedCallback
               href: /windows/desktop/api/Wuapi/nn-wuapi-isearchcompletedcallback
@@ -429,7 +429,7 @@
                 - name: Metodi ISearchCompletedCallback
                   href: isearchcompletedcallback-methods.md
                   items:
-                    - name: Invoke (metodo)
+                    - name: Metodo Invoke
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchcompletedcallback-invoke
             - name: ISearchCompletedCallbackArgs
               href: /previous-versions/windows/desktop/aa386067(v=vs.85)
@@ -448,7 +448,7 @@
                   items:
                     - name: Proprietà AsyncState
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchjob-get_asyncstate
-                    - name: Proprietà di completamento
+                    - name: Proprietà IsCompleted
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchjob-get_iscompleted
             - name: ISearchResult
               href: /windows/desktop/api/Wuapi/nn-wuapi-isearchresult
@@ -460,14 +460,14 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchresult-get_resultcode
                     - name: Proprietà RootCategories
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchresult-get_rootcategories
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchresult-get_updates
                     - name: Proprietà Warnings
                       href: /windows/desktop/api/Wuapi/nf-wuapi-isearchresult-get_warnings
-            - name: Tringcollection
+            - name: IStringCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-istringcollection
               items:
-                - name: Metodi di metodo di detringcollection
+                - name: Metodi di IStringCollection
                   href: istringcollection-methods.md
                   items:
                     - name: Aggiungi metodo
@@ -476,25 +476,25 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-clear
                     - name: Metodo di copia
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-copy
-                    - name: Insert (metodo)
+                    - name: Metodo Insert
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-insert
-                    - name: RemoveAt (metodo)
+                    - name: Metodo RemoveAt
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-removeat
-                - name: Proprietà di tringcollection
+                - name: Proprietà IStringCollection
                   href: istringcollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-get_count
                     - name: Proprietà Item
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-get_item
-                    - name: ReadOnly (proprietà)
+                    - name: Proprietà ReadOnly
                       href: /windows/desktop/api/Wuapi/nf-wuapi-istringcollection-get_readonly
             - name: ISystemInformation
               href: /windows/desktop/api/Wuapi/nn-wuapi-isysteminformation
               items:
-                - name: Proprietà di ISystemInformation
+                - name: Proprietà ISystemInformation
                   href: isysteminformation-properties.md
                   items:
                     - name: Proprietà OemHardwareSupportLink
@@ -511,7 +511,7 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-accepteula
                     - name: Metodo CopyFromCache
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-copyfromcache
-                - name: Proprietà di IUpdate
+                - name: Proprietà IUpdate
                   href: iupdate-properties.md
                   items:
                     - name: Proprietà AutoSelectOnWebSites
@@ -522,7 +522,7 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_canrequiresource
                     - name: Proprietà Categories
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_categories
-                    - name: Proprietà scadenza
+                    - name: Proprietà Deadline
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_deadline
                     - name: Proprietà DeltaCompressedContentAvailable
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_deltacompressedcontentavailable
@@ -544,25 +544,25 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_handlerid
                     - name: Proprietà Identity
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_identity
-                    - name: Image (proprietà)
+                    - name: Proprietà Image
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_image
                     - name: Proprietà InstallationBehavior
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_installationbehavior
-                    - name: Proprietà beta
+                    - name: Proprietà IsBeta
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_isbeta
-                    - name: Proprietà scaricata
+                    - name: Proprietà IsDownloaded
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_isdownloaded
-                    - name: Proprietà Hidden
+                    - name: Proprietà IsHidden
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_ishidden
-                    - name: Proprietà disinstallata
+                    - name: Proprietà IsInstalled
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_isinstalled
-                    - name: Proprietà imobbligatoria
+                    - name: Proprietà IsMandatory
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_ismandatory
-                    - name: Proprietà disinstallabile
+                    - name: Proprietà IsUninstallable
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_isuninstallable
                     - name: Proprietà KBArticleIDs
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_kbarticleids
-                    - name: Lingua (proprietà)
+                    - name: Proprietà Languages
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_languages
                     - name: Proprietà LastDeploymentChangeTime
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_lastdeploymentchangetime
@@ -588,15 +588,15 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_supersededupdateids
                     - name: Proprietà SupportUrl
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_supporturl
-                    - name: Proprietà title
+                    - name: Proprietà Title
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_title
-                    - name: Type (proprietà)
+                    - name: Proprietà Type
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_type
                     - name: Proprietà UninstallationBehavior
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_uninstallationbehavior
                     - name: Proprietà UninstallationNotes
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_uninstallationnotes
-                    - name: Proprietà UninstallationSteps
+                    - name: UninstallationSteps - proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate-get_uninstallationsteps
             - name: IUpdate2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdate2
@@ -606,19 +606,19 @@
                   items:
                     - name: Metodo CopyToCache
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate2-copytocache
-                - name: Proprietà di IUpdate2
+                - name: Proprietà IUpdate2
                   href: iupdate2-properties.md
                   items:
                     - name: Proprietà CveIDs
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate2-get_cveids
-                    - name: Proprietà di presenza
+                    - name: Proprietà IsPresent
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate2-get_ispresent
                     - name: Proprietà RebootRequired
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate2-get_rebootrequired
             - name: IUpdate3
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdate3
               items:
-                - name: Proprietà di IUpdate3
+                - name: Proprietà IUpdate3
                   href: iupdate3-properties.md
                   items:
                     - name: Proprietà BrowseOnly
@@ -626,25 +626,25 @@
             - name: IUpdate4
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdate4
               items:
-                - name: Proprietà di IUpdate4
+                - name: Proprietà IUpdate4
                   href: iupdate4-properties.md
                   items:
-                    - name: Proprietà di lettura
+                    - name: Proprietà PerUser
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate4-get_peruser
             - name: IUpdate5
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdate5
               items:
-                - name: Proprietà di IUpdate5
+                - name: Proprietà IUpdate5
                   href: iupdate5-properties.md
                   items:
-                    - name: AutoDownload (proprietà)
+                    - name: Proprietà AutoDownload
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate5-get_autodownload
-                    - name: Proprietà selezione autoselezione
+                    - name: Proprietà AutoSelection
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdate5-get_autoselection
             - name: IUpdateCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatecollection
               items:
-                - name: Metodi IUpdateCollection
+                - name: Metodi di IUpdateCollection
                   href: iupdatecollection-methods.md
                   items:
                     - name: Aggiungi metodo
@@ -653,25 +653,25 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-clear
                     - name: Metodo di copia
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-copy
-                    - name: Insert (metodo)
+                    - name: Metodo Insert
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-insert
-                    - name: RemoveAt (metodo)
+                    - name: Metodo RemoveAt
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-removeat
-                - name: Proprietà di IUpdateCollection
+                - name: Proprietà IUpdateCollection
                   href: iupdatecollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-get_count
                     - name: Proprietà Item
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-get_item
-                    - name: ReadOnly (proprietà)
+                    - name: Proprietà ReadOnly
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatecollection-get_readonly
             - name: IUpdateDownloadContent
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadcontent
               items:
-                - name: Proprietà di IUpdateDownloadContent
+                - name: Proprietà IUpdateDownloadContent
                   href: iupdatedownloadcontent-properties.md
                   items:
                     - name: Proprietà DownloadUrl
@@ -679,7 +679,7 @@
             - name: IUpdateDownloadContent2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadcontent2
               items:
-                - name: Proprietà di IUpdateDownloadContent2
+                - name: Proprietà IUpdateDownloadContent2
                   href: iupdatedownloadcontent2-properties.md
                   items:
                     - name: Proprietà IsDeltaCompressedContent
@@ -687,10 +687,10 @@
             - name: IUpdateDownloadContentCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadcontentcollection
               items:
-                - name: Proprietà di IUpdateDownloadContentCollection
+                - name: Proprietà IUpdateDownloadContentCollection
                   href: iupdatedownloadcontentcollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloadcontentcollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloadcontentcollection-get_count
@@ -699,40 +699,40 @@
             - name: IUpdateDownloader
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloader
               items:
-                - name: Metodi IUpdateDownloader
+                - name: Metodi di IUpdateDownloader
                   href: iupdatedownloader-methods.md
                   items:
                     - name: Metodo BeginDownload
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-begindownload
                     - name: Metodo di download
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-download
-                    - name: Metodo metodo
+                    - name: Metodo EndDownload
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-enddownload
-                - name: Proprietà di IUpdateDownloader
+                - name: Proprietà IUpdateDownloader
                   href: iupdatedownloader-properties.md
                   items:
                     - name: Proprietà ClientApplicationID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-get_clientapplicationid
-                    - name: Proprietà enforced
+                    - name: Proprietà IsForced
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-get_isforced
                     - name: Proprietà Priority
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-get_priority
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloader-get_updates
             - name: IUpdateDownloadResult
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatedownloadresult
               items:
-                - name: Proprietà di IUpdateDownloadResult
+                - name: Proprietà IUpdateDownloadResult
                   href: iupdatedownloadresult-properties.md
                   items:
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloadresult-get_hresult
                     - name: Proprietà ResultCode
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatedownloadresult-get_resultcode
             - name: IUpdateEndpointAuthProvider
               href: iupdateendpointauthprovider.md
               items:
-                - name: Metodi IUpdateEndpointAuthProvider
+                - name: Metodi di IUpdateEndpointAuthProvider
                   href: iupdateendpointauthprovider-medthods.md
                   items:
                     - name: Metodo GetEndpointToken
@@ -760,30 +760,30 @@
             - name: IUpdateEndpointProvider
               href: iupdateendpointprovider.md
               items:
-                - name: Metodi IUpdateEndpointProvider
+                - name: Metodi di IUpdateEndpointProvider
                   href: iupdateendpointprovider-medthods.md
                   items:
-                    - name: Metodo getserviceendpoint
+                    - name: Metodo GetServiceEndpoint
                       href: iupdateendpointauthprovider-getserviceendpoint.md
             - name: IUpdateException
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateexception
               items:
-                - name: Proprietà di IUpdateException
+                - name: Proprietà IUpdateException
                   href: iupdateexception-properties.md
                   items:
                     - name: Proprietà Context
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateexception-get_context
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateexception-get_hresult
                     - name: Proprietà messaggio
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateexception-get_message
             - name: IUpdateExceptionCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateexceptioncollection
               items:
-                - name: Proprietà di IUpdateExceptionCollection
+                - name: Proprietà IUpdateExceptionCollection
                   href: iupdateexceptioncollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateexceptioncollection-get_count
@@ -792,7 +792,7 @@
             - name: IUpdateHistoryEntry
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatehistoryentry
               items:
-                - name: Proprietà di IUpdateHistoryEntry
+                - name: Proprietà IUpdateHistoryEntry
                   href: iupdatehistoryentry-properties.md
                   items:
                     - name: Proprietà ClientApplicationID
@@ -801,9 +801,9 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_date
                     - name: Proprietà Description
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_description
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_hresult
-                    - name: Operation (proprietà)
+                    - name: Proprietà Operation
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_operation
                     - name: Proprietà ResultCode
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_resultcode
@@ -813,11 +813,11 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_serviceid
                     - name: Proprietà SupportUrl
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_supporturl
-                    - name: Proprietà title
+                    - name: Proprietà Title
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_title
                     - name: Proprietà UninstallationNotes
                       href: /windows/desktop/api/wuapi/nf-wuapi-iupdatehistoryentry-get_uninstallationnotes
-                    - name: Proprietà UninstallationSteps
+                    - name: UninstallationSteps - proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_uninstallationsteps
                     - name: Proprietà UnmappedResultCode
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentry-get_unmappedresultcode
@@ -826,7 +826,7 @@
             - name: IUpdateHistoryEntry2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatehistoryentry2
               items:
-                - name: Proprietà di IUpdateHistoryEntry2
+                - name: Proprietà IUpdateHistoryEntry2
                   href: iupdatehistoryentry2-properties.md
                   items:
                     - name: Proprietà Categories
@@ -834,10 +834,10 @@
             - name: IUpdateHistoryEntryCollection
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatehistoryentrycollection
               items:
-                - name: Proprietà di IUpdateHistoryEntryCollection
+                - name: Proprietà IUpdateHistoryEntryCollection
                   href: iupdatehistoryentrycollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum Proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentrycollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatehistoryentrycollection-get_count
@@ -846,20 +846,20 @@
             - name: IUpdateIdentity
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateidentity
               items:
-                - name: Proprietà di IUpdateIdentity
+                - name: Proprietà IUpdateIdentity
                   href: iupdateidentity-properties.md
                   items:
                     - name: Proprietà RevisionNumber
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateidentity-get_revisionnumber
-                    - name: Proprietà codice UpdateID
+                    - name: Proprietà UpdateID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateidentity-get_updateid
             - name: IUpdateInstallationResult
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateinstallationresult
               items:
-                - name: Proprietà di IUpdateInstallationResult
+                - name: Proprietà IUpdateInstallationResult
                   href: iupdateinstallationresult-properties.md
                   items:
-                    - name: HResult (proprietà)
+                    - name: Proprietà HResult
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstallationresult-get_hresult
                     - name: Proprietà RebootRequired
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstallationresult-get_rebootrequired
@@ -868,7 +868,7 @@
             - name: IUpdateInstaller
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateinstaller
               items:
-                - name: Metodi IUpdateInstaller
+                - name: Metodi di IUpdateInstaller
                   href: iupdateinstaller-methods.md
                   items:
                     - name: Metodo BeginInstall
@@ -879,11 +879,11 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-endinstall
                     - name: Metodo EndUninstall
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-enduninstall
-                    - name: Metodo di installazione
+                    - name: Metodo Install
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-install
                     - name: Metodo RunWizard
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-runwizard
-                    - name: Uninstall (metodo)
+                    - name: Metodo Uninstall
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-uninstall
                 - name: Proprietà di IUpdateInstaller
                   href: iupdateinstaller-properties.md
@@ -892,9 +892,9 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_allowsourceprompts
                     - name: Proprietà ClientApplicationID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_clientapplicationid
-                    - name: Proprietà occupato
+                    - name: Proprietà IsBusy
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_isbusy
-                    - name: Proprietà enforced
+                    - name: Proprietà IsForced
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_isforced
                     - name: Proprietà ParentHwnd
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_parenthwnd
@@ -902,12 +902,12 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_parentwindow
                     - name: Proprietà RebootRequiredBeforeInstallation
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_rebootrequiredbeforeinstallation
-                    - name: Updates (proprietà)
+                    - name: Proprietà Updates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_updates
             - name: IUpdateInstaller2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdateinstaller2
               items:
-                - name: Proprietà di IUpdateInstaller2
+                - name: Proprietà IUpdateInstaller2
                   href: iupdateinstaller2-properties.md
                   items:
                     - name: Proprietà ForceQuiet
@@ -923,7 +923,7 @@
             - name: IUpdateSearcher
               href: /windows/desktop/api/Wuapi/nn-wuapi-iupdatesearcher
               items:
-                - name: Metodi IUpdateSearcher
+                - name: Metodi di IUpdateSearcher
                   href: iupdatesearcher-methods.md
                   items:
                     - name: Metodo BeginSearch
@@ -936,7 +936,7 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-gettotalhistorycount
                     - name: Metodo QueryHistory
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-queryhistory
-                    - name: Metodo search
+                    - name: Metodo Search
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-search
                 - name: Proprietà di IUpdateSearcher
                   href: iupdatesearcher-properties.md
@@ -945,7 +945,7 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-get_canautomaticallyupgradeservice
                     - name: Proprietà ClientApplicationID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-get_clientapplicationid
-                    - name: Proprietà IncludePotentiallySupersededUpdates
+                    - name: Proprietà IncludePotentiallySupersedUpdates
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-get_includepotentiallysupersededupdates
                     - name: Proprietà online
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesearcher-get_online
@@ -981,13 +981,13 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_contentvalidationcert
                     - name: Proprietà ExpirationDate
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_expirationdate
-                    - name: Proprietà gestita
+                    - name: Proprietà IsManaged
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_ismanaged
                     - name: Proprietà IsRegisteredWithAU
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_isregisteredwithau
                     - name: Proprietà IsScanPackageService
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_isscanpackageservice
-                    - name: Proprietà emesso
+                    - name: Proprietà IssueDate
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_issuedate
                     - name: Proprietà Name
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservice-get_name
@@ -1015,7 +1015,7 @@
                 - name: Proprietà di IUpdateServiceCollection
                   href: iupdateservicecollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservicecollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdateservicecollection-get_count
@@ -1088,7 +1088,7 @@
                   items:
                     - name: Proprietà ClientApplicationID
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesession-get_clientapplicationid
-                    - name: ReadOnly (proprietà)
+                    - name: Proprietà ReadOnly
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesession-get_readonly
                     - name: Proprietà WebProxy
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesession-get_webproxy
@@ -1110,7 +1110,7 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesession3-createupdateservicemanager
                     - name: Metodo QueryHistory
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iupdatesession3-queryhistory
-            - name: IWebProxy
+            - name: Iwebproxy
               href: /windows/desktop/api/Wuapi/nn-wuapi-iwebproxy
               items:
                 - name: Metodi IWebProxy
@@ -1120,22 +1120,22 @@
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-promptforcredentials
                     - name: Metodo PromptForCredentialsFromHwnd
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-promptforcredentialsfromhwnd
-                    - name: Metodo sepassword
+                    - name: Metodo SetPassword
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-setpassword
                 - name: Proprietà di IWebProxy
                   href: iwebproxy-properties.md
                   items:
-                    - name: Address (proprietà)
+                    - name: Proprietà Address
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_address
-                    - name: Proprietà rilevamento automatico
+                    - name: Proprietà AutoDetect
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_autodetect
-                    - name: Proprietà Ignore
+                    - name: Proprietà BypassList
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_bypasslist
                     - name: Proprietà BypassProxyOnLocal
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_bypassproxyonlocal
-                    - name: ReadOnly (proprietà)
+                    - name: Proprietà ReadOnly
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_readonly
-                    - name: UserName (proprietà)
+                    - name: Proprietà UserName
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwebproxy-get_username
             - name: IWindowsDriverUpdate
               href: /windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate
@@ -1162,7 +1162,7 @@
             - name: IWindowsDriverUpdate2
               href: /windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdate2
               items:
-                - name: Metodi IWindowsDriverUpdate2
+                - name: Metodi di IWindowsDriverUpdate2
                   href: iwindowsdriverupdate2-methods.md
                   items:
                     - name: Metodo CopyToCache
@@ -1172,7 +1172,7 @@
                   items:
                     - name: Proprietà CveIDs
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate2-get_cveids
-                    - name: Proprietà di presenza
+                    - name: Proprietà IsPresent
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate2-get_ispresent
                     - name: Proprietà RebootRequired
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate2-get_rebootrequired
@@ -1190,7 +1190,7 @@
                 - name: Proprietà di IWindowsDriverUpdate4
                   href: iwindowsdriverupdate4-properties.md
                   items:
-                    - name: Proprietà di lettura
+                    - name: Proprietà PerUser
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_peruser
                     - name: Proprietà WindowsDriverUpdateEntries
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate4-get_windowsdriverupdateentries
@@ -1200,9 +1200,9 @@
                 - name: Proprietà di IWindowsDriverUpdate5
                   href: iwindowsdriverupdate5-properties.md
                   items:
-                    - name: AutoDownload (proprietà)
+                    - name: Proprietà AutoDownload
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate5-get_autodownload
-                    - name: Proprietà selezione autoselezione
+                    - name: Proprietà AutoSelection
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdate5-get_autoselection
             - name: IWindowsDriverUpdateEntry
               href: /windows/desktop/api/Wuapi/nn-wuapi-iwindowsdriverupdateentry
@@ -1232,7 +1232,7 @@
                 - name: Proprietà di IWindowsDriverUpdateEntryCollection
                   href: iwindowsdriverupdateentrycollection-properties.md
                   items:
-                    - name: Proprietà _NewEnum
+                    - name: _NewEnum proprietà
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdateentrycollection-get__newenum
                     - name: Proprietà Count
                       href: /windows/desktop/api/Wuapi/nf-wuapi-iwindowsdriverupdateentrycollection-get_count

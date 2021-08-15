@@ -1,7 +1,7 @@
 ---
-description: Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste degli utenti per cambiare l'identità dell'utente corrente.
+description: Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste dell'utente di cambiare l'identità utente corrente.
 ms.assetid: 09903aa6-62bf-4820-9a09-79956d775441
-title: Interfaccia IIdentityChangeNotify (Msident. h)
+title: Interfaccia IIdentityChangeNotify (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,36 +13,36 @@ api_type:
 - COM
 api_location:
 - Msoe.dll
-ms.openlocfilehash: 4a217b2cfb046bfb9ae5546e015264f74d00b1d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4419f55b2fe4561a22035d962da5e3c271108d06fa417cfbed1b603c883e5b32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721909"
 ---
 # <a name="iidentitychangenotify-interface"></a>Interfaccia IIdentityChangeNotify
 
-\[L'interfaccia **IIdentityChangeNotify** è disponibile per l'uso in Windows 2000. In Windows XP questa funzionalità è stata sostituita dagli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md)e potrebbe essere modificata o non disponibile nelle versioni successive.\]
+\[**L'interfaccia IIdentityChangeNotify** è disponibile per l'uso in Windows 2000. In Windows XP questa funzionalità è stata sostituita dagli account utente con cambio rapido utente [e Desktop remoto](fastuserswitching.md)e potrebbe essere modificata o non disponibile nelle versioni successive.\]
 
-Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste degli utenti per cambiare l'identità dell'utente corrente.
+Deprecato. Fornisce la notifica delle modifiche alle identità utente nel sistema, nonché le richieste dell'utente di cambiare l'identità utente corrente.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IIdentityChangeNotify** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IIdentityChangeNotify** dispone anche di questi tipi di membri:
+**L'interfaccia IIdentityChangeNotify** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IIdentityChangeNotify** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IIdentityChangeNotify** dispone di questi metodi.
+**L'interfaccia IIdentityChangeNotify** include questi metodi.
 
 
 
 | Metodo                                                                                 | Descrizione                                                                                                                           |
 |:---------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
-| [**IdentityInformationChanged**](iidentitychangenotify-identityinformationchanged.md) | Deprecato. Chiamato quando le informazioni relative a un'identità utente sono state modificate o quando un'identità utente è stata aggiunta o eliminata.<br/>  |
-| [**QuerySwitchIdentities**](iidentitychangenotify-queryswitchidentities.md)           | Deprecato. Viene chiamato quando l'utente corrente ha richiesto la commutazione dell'identità utente, ma prima che si verifichi l'opzione.<br/> |
-| [**SwitchIdentities**](iidentitychangenotify-switchidentities.md)                     | Deprecato. Chiamato quando le identità utente sono cambiate.<br/>                                                                      |
+| [**IdentityInformationChanged**](iidentitychangenotify-identityinformationchanged.md) | Deprecato. Chiamato quando le informazioni su un'identità utente sono state modificate o quando un'identità utente è stata aggiunta o eliminata.<br/>  |
+| [**QuerySwitchIdentities**](iidentitychangenotify-queryswitchidentities.md)           | Deprecato. Chiamato quando l'utente corrente ha richiesto di cambiare l'identità utente, ma prima che si verifichi il passaggio.<br/> |
+| [**SwitchIdentities**](iidentitychangenotify-switchidentities.md)                     | Deprecato. Chiamato quando vengono cambiate le identità utente.<br/>                                                                      |
 
 
 
@@ -50,7 +50,7 @@ L'interfaccia **IIdentityChangeNotify** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Per implementare le notifiche, un'interfaccia derivata deve connettersi a [**IUserIdentityManager**](iuseridentitymanager.md) chiamando [**IConnectionPoint:: Advise**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) e passando un puntatore all'interfaccia.
+Per implementare le notifiche, un'interfaccia derivata deve connettersi a [**IUserIdentityManager**](iuseridentitymanager.md) chiamando [**IConnectionPoint::Advise e**](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) passando un puntatore all'interfaccia.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Per implementare le notifiche, un'interfaccia derivata deve connettersi a [**IUs
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                             |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msoe.dll</dt> </dl>    |
 
 

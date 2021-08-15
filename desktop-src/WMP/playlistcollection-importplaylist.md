@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. importPlaylist, metodo
-description: Il metodo importPlaylist aggiunge una playlist statica alla libreria. | PlaylistCollection. importPlaylist, metodo
+title: Metodo PlaylistCollection.importPlaylist
+description: Il metodo importPlaylist aggiunge una playlist statica alla libreria. | Metodo PlaylistCollection.importPlaylist
 ms.assetid: 0611ba42-fd8f-4fb9-9fbb-809a82775c2a
 keywords:
 - Metodo importPlaylist Windows Media Player
-- Metodo importPlaylist Windows Media Player, Classe PlaylistCollection
-- Classe PlaylistCollection Windows Media Player, metodo importPlaylist
+- Metodo importPlaylist Windows Media Player , classe PlaylistCollection
+- Classe PlaylistCollection Windows Media Player , metodo importPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 736e9afa17f571428fada48660726b606268796a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f6c2a61b6603c0bfb38025548eaa4b0943bcdd1a5e81cb1ac27c17969fe87ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334843"
 ---
-# <a name="playlistcollectionimportplaylist-method"></a>PlaylistCollection. importPlaylist, metodo
+# <a name="playlistcollectionimportplaylist-method"></a>Metodo PlaylistCollection.importPlaylist
 
-Il metodo **importPlaylist** aggiunge una playlist statica alla libreria.
+Il **metodo importPlaylist** aggiunge una playlist statica alla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ retVal = PlaylistCollection.importPlaylist(
 
 <dl> <dt>
 
-*playlist* \[ in\]
+*playlist* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **playlist** da aggiungere.
+**Oggetto playlist** da aggiungere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce l'oggetto **playlist** che è stato aggiunto.
+Questo metodo restituisce **l'oggetto Playlist** aggiunto.
 
 ## <a name="remarks"></a>Commenti
 
-Le playlist che non contengono elementi multimediali non possono essere aggiunte alla libreria utilizzando questo metodo. Per creare una playlist vuota nella libreria, usare il metodo **nuova playlist** . È quindi possibile compilare la playlist risultante con elementi multimediali usando *playlist*. **appendItem** o *playlist*. **InsertItem**.
+Le playlist che non contengono elementi multimediali non possono essere aggiunte alla libreria usando questo metodo. Per creare una playlist vuota nella libreria, usare il **metodo newPlaylist.** È quindi possibile riempire la playlist risultante con elementi multimediali usando *Playlist*. **appendItem o** *Playlist.* **insertItem**.
 
-Se si passa questo metodo una playlist automatica, la query viene eseguita una volta e il risultato viene aggiunto alla libreria come playlist statica. Per aggiungere una playlist automatica alla libreria e mantenerne il comportamento automatico, usare *mediacollection*. **Aggiungi**. Per altre informazioni, vedere [playlist statiche e automatiche](static-and-auto-playlists.md).
+Se si passa questo metodo a una playlist automatica, la query viene eseguita una sola volta e il risultato viene aggiunto alla libreria come playlist statica. Per aggiungere una playlist automatica alla libreria e mantenere il comportamento automatico, usare *MediaCollection*. **aggiungere**. Per altre informazioni, vedere [Playlist statiche e auto.](static-and-auto-playlists.md)
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -79,31 +79,31 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 [**Gestione delle playlist**](managing-playlists.md)
 </dt> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Mediacollection. Add**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Playlist. appendItem**](playlist-appenditem.md)
+[**Playlist.appendItem**](playlist-appenditem.md)
 </dt> <dt>
 
-[**Playlist. insertItem**](playlist-insertitem.md)
+[**Playlist.insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
-[**PlaylistCollection (oggetto)**](playlistcollection-object.md)
+[**Oggetto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. nuova playlist**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. Remove**](playlistcollection-remove.md)
+[**PlaylistCollection.remove**](playlistcollection-remove.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

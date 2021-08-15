@@ -1,23 +1,23 @@
 ---
-description: Divide due interi LONGLONG. Ad esempio, per dividere due valori Int64, il compilatore potrebbe generare una chiamata alla \_ routine alldiv.
+description: Divide due interi LONGLONG. Ad esempio, per dividere due valori int64, il compilatore potrebbe generare una chiamata alla \_ routine alldiv.
 ms.assetid: 13496ea8-cbd7-4fe3-a795-f6f28bca995f
-title: Routine di _alldiv
+title: routine _alldiv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c82b6173f7064ec56678f6a2b00e36d9b6d3b9d6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: affcdc3a7c319f1d990cca3f0a960e2cc1e36e0bff794a1959d87f733bf9b3f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827911"
 ---
 # <a name="_alldiv-routine"></a>\_Routine alldiv
 
-Divide due interi **LONGLONG** . Ad esempio, per dividere due valori Int64, il compilatore potrebbe generare una chiamata alla \_ routine alldiv.
+Divide due **interi LONGLONG.** Ad esempio, per dividere due valori int64, il compilatore potrebbe generare una chiamata alla \_ routine alldiv.
 
 ## <a name="remarks"></a>Commenti
 
-\_la routine alldiv è una routine di supporto per il compilatore C. Il fatto che il compilatore chiami la \_ routine alldiv dipenda completamente dal set di ottimizzazione.
+\_Routine alldiv è una routine helper per il compilatore C. Il fatto che il compilatore \_ chiami la routine alldiv dipende completamente dal set di ottimizzazione.
 
  
 

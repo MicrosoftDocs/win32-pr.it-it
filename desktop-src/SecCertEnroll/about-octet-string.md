@@ -1,19 +1,19 @@
 ---
-description: Il tipo di dati della stringa di ottetto ASN. 1 è codificato in una tripletta TLV che inizia con un byte di tag di 0x04.
+description: Il tipo di dati ASN.1 OCTET STRING viene codificato in una tripletta TLV che inizia con un byte Tag di 0x04.
 ms.assetid: 9d07a6c8-a15f-4030-838c-3063e315684f
-title: STRINGA OTTETTO
+title: OCTET STRING
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed2a042312a4415ea9554b7519404097287244f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 588547e5211efbe6b4b91a8a72f6644de0c7c4dcbacc570f0a1f272e7cc97962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104485420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903745"
 ---
-# <a name="octet-string"></a>STRINGA OTTETTO
+# <a name="octet-string"></a>OCTET STRING
 
-Il tipo di dati della **stringa di ottetto** ASN. 1 è codificato in una tripletta TLV che inizia con un byte di **tag** di 0x04. I tipi di dati **stringa ottetto** e [stringa di bit](about-bit-string.md) sono molto simili. Pertanto, i due tipi sono codificati in modo simile, ad eccezione del fatto che, poiché il byte finale di una **stringa di ottetti** non può contenere bit inutilizzati, non è necessario aggiungere byte iniziali al contenuto. Nell'esempio seguente, adattato dall'argomento [ASN. 1 con codifica CMC](cmc-encoded-asn-1.md) , viene illustrato il modo in cui il nome di un modello di certificato viene codificato come una matrice di byte.
+Il tipo di dati ASN.1 **OCTET STRING** viene codificato in una tripletta TLV che inizia con un byte **Tag** di 0x04. I **tipi di dati OCTET STRING** e BIT [STRING](about-bit-string.md) sono molto simili. Di conseguenza, i due tipi vengono codificati in modo simile, ad eccezione del fatto che, poiché il byte finale di **una STRINGA OCTET** non può avere bit inutilizzati, non è necessario aggiungere byte iniziali al contenuto. L'esempio seguente, adattato dall'argomento [CMC Encoded ASN.1](cmc-encoded-asn-1.md) ,mostra come il nome di un modello di certificato viene codificato come matrice di byte.
 
 ``` syntax
 30 17                                 ; SEQUENCE (17 Bytes)
@@ -23,7 +23,7 @@ Il tipo di dati della **stringa di ottetto** ASN. 1 è codificato in una triplet
 |     1e 08 00 55 00 73 00 65  00 72  ;   ...U.s.e.r
 ```
 
-Se la matrice di byte contiene meno di 128 byte, il campo **lunghezza** della tripletta TLV richiede un solo byte per specificare la lunghezza del contenuto. Se è maggiore di 127 byte, bit 7 del campo **lunghezza** è impostato su 1 e BITS 6-0 specifica il numero di byte aggiuntivi usati per identificare la lunghezza del contenuto. Questa operazione viene illustrata nell'esempio seguente in cui il bit di ordine superiore del secondo byte nella prima riga è impostato su 1 e il byte indica che è presente un byte di **lunghezza** finale. Il terzo byte indica quindi che il contenuto è 0x80 byte.
+Se la matrice di byte contiene meno di 128 byte, il campo **Length** della tripletta TLV richiede un solo byte per specificare la lunghezza del contenuto. Se è maggiore di 127 byte, il bit 7 del campo **Length** è impostato su 1 e i bit da 6 a 0 specificano il numero di byte aggiuntivi usati per identificare la lunghezza del contenuto. Questo è illustrato nell'esempio seguente in cui il bit di ordine superiore del secondo byte nella prima riga è impostato su 1 e il byte indica che è presente un byte **length** finale. Il terzo byte specifica quindi che il contenuto è lungo 0x80 byte.
 
 ``` syntax
 04 81 80                       ; OCTET_STRING (80 Bytes)
@@ -49,10 +49,10 @@ Se la matrice di byte contiene meno di 128 byte, il campo **lunghezza** della tr
 
 <dl> <dt>
 
-[Sistema di tipi ASN. 1](about-asn-1-type-system.md)
+[Sistema di tipi ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codifica DER dei tipi ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codifica DER dei tipi ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

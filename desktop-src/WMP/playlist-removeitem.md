@@ -1,11 +1,11 @@
 ---
-title: Playlist. removeItem, metodo
+title: Metodo Playlist.removeItem
 description: Il metodo removeItem rimuove l'elemento specificato dalla playlist.
 ms.assetid: 294ba4fb-967b-4a03-b0c5-6e9c15db3bff
 keywords:
 - Metodo removeItem Windows Media Player
-- Metodo removeItem Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo removeItem
+- Metodo removeItem Windows Media Player , classe Playlist
+- Classe playlist Windows Media Player metodo removeItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2de03333e2373744f9e9197be8ed8582997c557d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8a55fb45fa7ea8d172d76321d7c907fbedfd3f868448f1ad63e220ff8e69f9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336592"
 ---
-# <a name="playlistremoveitem-method"></a>Playlist. removeItem, metodo
+# <a name="playlistremoveitem-method"></a>Metodo Playlist.removeItem
 
-Il metodo **RemoveItem** rimuove l'elemento specificato dalla playlist.
+Il **metodo removeItem** rimuove l'elemento specificato dalla playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ Playlist.removeItem(
 
 <dl> <dt>
 
-*elemento* \[ di in\]
+*elemento* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **multimediale** da rimuovere.
+**Oggetto** multimediale da rimuovere.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento rimosso è la traccia attualmente in gioco (*Player*.**currentMedia**), la riproduzione viene arrestata e l'elemento successivo nella playlist diventa quello corrente. Se non è presente alcun elemento successivo, viene usato l'elemento precedente o se non sono presenti altri elementi, quindi *Player*. **currentMedia** è impostato su **null**.
+Se l'elemento rimosso è la traccia attualmente in riproduzione (*Player*.**currentMedia**), la riproduzione si arresta e l'elemento successivo nella playlist diventa quello corrente. Se non è presente alcun elemento successivo, viene usato l'elemento precedente o se non sono presenti altri elementi, *player*. **currentMedia** è impostato su **NULL.**
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,7 +65,7 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,22 +74,22 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 <dl> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Playlist. insertItem**](playlist-insertitem.md)
+[**Playlist.insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
-[**Playlist. Item**](playlist-item.md)
+[**Playlist.item**](playlist-item.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

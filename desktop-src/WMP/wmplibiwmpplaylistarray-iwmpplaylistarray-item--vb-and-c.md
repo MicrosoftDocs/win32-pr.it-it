@@ -1,11 +1,11 @@
 ---
-title: Metodo elemento IWMPPlaylistArray
+title: Metodo IWMPPlaylistArray Item
 description: Il metodo Item restituisce un'interfaccia IWMPPlaylist che rappresenta la playlist in corrispondenza dell'indice specificato.
 ms.assetid: 5cb4b89f-b679-4d92-a5f9-5d0fe686775d
 keywords:
-- Metodo Item Media Player Windows
-- Metodo Item Media Player Windows, interfaccia IWMPPlaylistArray
-- Interfaccia IWMPPlaylistArray Windows Media Player, metodo Item
+- Metodo Item Windows Media Player
+- Metodo Item Windows Media Player, interfaccia IWMPPlaylistArray
+- Interfaccia IWMPPlaylistArray Windows Media Player , metodo Item
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 660e919ef51bbb9584971f25bdf92296d331de23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e73614e1ef00f29d6b09d3d49e2c7e514bae807245f00f30f4d3382d8f1a2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331160"
 ---
-# <a name="iwmpplaylistarrayitem-method"></a>Metodo IWMPPlaylistArray:: Item
+# <a name="iwmpplaylistarrayitem-method"></a>Metodo IWMPPlaylistArray::Item
 
-Il metodo **Item** restituisce un'interfaccia **IWMPPlaylist** che rappresenta la playlist in corrispondenza dell'indice specificato.
+Il **metodo Item** restituisce **un'interfaccia IWMPPlaylist** che rappresenta la playlist in corrispondenza dell'indice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,20 +53,20 @@ Implements IWMPPlaylistArray.Item
 
 <dl> <dt>
 
-*lIndex* \[ in\]
+*lIndex* \[ Pollici\]
 </dt> <dd>
 
-**System. Int32** che contiene l'indice che identifica la playlist che il metodo deve recuperare.
+Oggetto **System.Int32** contenente l'indice che identifica la playlist che il metodo deve recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPPlaylist** per la playlist recuperata.
+Interfaccia **WMPLib.IWMPPlaylist** per la playlist recuperata.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura 
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva.<br/>                                                                     |
+| Versione<br/>   | Windows Media Player serie 9 o successive.<br/>                                                                     |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

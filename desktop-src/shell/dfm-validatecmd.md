@@ -1,6 +1,6 @@
 ---
 description: Inviato per verificare l'esistenza di un comando di menu.
-title: Messaggio DFM_VALIDATECMD (Shlobj. h)
+title: DFM_VALIDATECMD messaggio (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 97ff3cdf-ed0c-4813-8d5a-b5141636d32c
@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5aa171f19d4d08c3ba3088676a4ae5364f0826f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fd647d5cd6e171cc71e0968abb29d80e7aef5900d43fe4bd4b88f5f49bbdc7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721947"
 ---
-# <a name="dfm_validatecmd-message"></a>\_Messaggio DFM VALIDATECMD
+# <a name="dfm_validatecmd-message"></a>Messaggio DFM \_ VALIDATECMD
 
 Inviato per verificare l'esistenza di un comando di menu.
 
@@ -49,13 +49,13 @@ DFM_INVOKECOMMAND
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il comando esiste oppure S \_ false in caso contrario.
+Restituisce S \_ OK se il comando esiste oppure S FALSE in caso \_ contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene inviato alla funzione di callback o all'oggetto callback a seconda del modo in cui viene costruito l'oggetto menu di scelta rapida predefinito. Sono disponibili due API per la relativa costruzione, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
+Questo messaggio viene inviato alla funzione di callback o all'oggetto callback a seconda della modalità di costruzione dell'oggetto menu di scelta rapida predefinito. Per la costruzione sono disponibili due API, [**CDefFolderMenu \_ Create2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-cdeffoldermenu_create2), [**SHCreateDefaultContextMenu**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedefaultcontextmenu).
 
-[**DFM \_ INVOKECOMMANDEX**](dfm-invokecommandex.md) è una versione estesa di questo messaggio e fornisce ulteriori informazioni al callback. Usare **DFM \_ INVOKECOMMANDEX** se nell'implementazione sono necessarie informazioni aggiuntive fornite da tale interfaccia.
+[**DFM \_ INVOKECOMMANDEX**](dfm-invokecommandex.md) è una versione estesa di questo messaggio e fornisce altre informazioni al callback. Usare **DFM \_ INVOKECOMMANDEX** se le informazioni aggiuntive fornite da tale interfaccia sono necessarie nell'implementazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,9 +63,9 @@ Questo messaggio viene inviato alla funzione di callback o all'oggetto callback 
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

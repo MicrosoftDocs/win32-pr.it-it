@@ -1,10 +1,10 @@
 ---
-title: Struttura MPSCAN_RESOURCES (MpClient. h)
+title: MPSCAN_RESOURCES struttura (MpClient.h)
 description: Informazioni sulle risorse passate durante un'operazione di analisi.
 ms.assetid: D97712A6-547D-44CC-B55D-039A5CCE20BF
 keywords:
-- Struttura MPSCAN_RESOURCES le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPSCAN_RESOURCES
+- MPSCAN_RESOURCES struttura Legacy Windows Environment Features
+- PMPSCAN_RESOURCES puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69ee9ea259bca6bf66eb81fcd17b13d509d5a065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd70b442e7179d516d2e9c60b81e6c52b0f696f5719a255871e8687773bf71ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747350"
 ---
-# <a name="mpscan_resources-structure"></a>\_Struttura delle risorse di MPSCAN
+# <a name="mpscan_resources-structure"></a>Struttura MPSCAN \_ RESOURCES
 
 Informazioni sulle risorse passate durante un'operazione di analisi.
 
@@ -53,14 +53,14 @@ Numero di risorse.
 
 </dd> <dt>
 
-**origine dati**
+**pResourceList**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Matrice di risorse. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
+Matrice di risorse. Vedere [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Matrice di risorse. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Matrice di risorse. Vedere [**MPRESOURCE \_ info**](mpresource-info.md).
 
 <dl> <dt>
 
-[**\_informazioni MPRESOURCE**](mpresource-info.md)
+[**INFORMAZIONI SU \_ MPRESOURCE**](mpresource-info.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: DropDownButton - elemento
+title: Elemento DropDownButton
 description: Rappresenta un controllo pulsante Drop-Down standard.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
-- Elemento DropDownButton Windows barra multifunzione
+- Elemento DropDownButton Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -20,11 +20,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118707269"
 ---
-# <a name="dropdownbutton-element"></a>DropDownButton - elemento
+# <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
-Rappresenta un [controllo pulsante a discesa](windowsribbon-controls-dropdownbutton.md) standard.
+Rappresenta un [controllo Pulsante a discesa](windowsribbon-controls-dropdownbutton.md) standard.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <DropDownButton
@@ -65,8 +65,8 @@ Rappresenta un [controllo pulsante a discesa](windowsribbon-controls-dropdownbut
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -112,17 +112,17 @@ Rappresenta un [controllo pulsante a discesa](windowsribbon-controls-dropdownbut
 
 Facoltativo o obbligatorio, a seconda dell'elemento padre.
 
-Può verificarsi una o più volte per ogni elemento [**ControlGroup**](windowsribbon-element-controlgroup.md), **DropDownButton**, [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Può verificarsi una o più volte per ogni elemento [**ControlGroup,**](windowsribbon-element-controlgroup.md) **DropDownButton,** [**DropDownGallery,**](windowsribbon-element-dropdowngallery.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-**DropDownButton** supporta le [modalità](ribbon-applicationmodes.md) dell'applicazione quando è ospitato nella colonna sinistra del menu dell'applicazione.
+**DropDownButton** supporta le [modalità dell'applicazione](ribbon-applicationmodes.md) quando è ospitato nella colonna sinistra del menu dell'applicazione.
 
 [**DropDownGallery e**](windowsribbon-element-dropdowngallery.md) [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) non sono elementi figlio validi di **DropDownButton** quando **DropDownButton** è un discendente di [**ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra il markup di base per **DropDownButton.**
+Nell'esempio seguente viene illustrato il markup di base per **DropDownButton**.
 
-Questa sezione di codice illustra le **dichiarazioni di Comando DropDownButton,** con un oggetto [**Group**](windowsribbon-element-group.md) associato che funziona come contenitore padre per **l'elemento DropDownButton.**
+Questa sezione di codice illustra le dichiarazioni del comando **DropDownButton,** con un [**gruppo**](windowsribbon-element-group.md) associato che funziona come contenitore padre per **l'elemento DropDownButton.**
 
 
 ```XML

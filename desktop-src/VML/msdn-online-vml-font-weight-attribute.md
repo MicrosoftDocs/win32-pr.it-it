@@ -1,24 +1,24 @@
 ---
-title: Attributo Font-Weight la
-description: Attributo Font-Weight la
+title: Attributo Font-Weight VML
+description: Attributo Font-Weight VML
 ms.assetid: d7b2b0c5-b5cf-4e7d-bbca-c554d12bf97e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70e4de8a1bb4132c75d4520dcacc661fbbc97eef
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a14dd5edb3fed869390edeff514471359162ee39fd1d78796af3d2a260c96bdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754642"
 ---
-# <a name="vml-font-weight-attribute"></a>Attributo Font-Weight la
+# <a name="vml-font-weight-attribute"></a>Attributo Font-Weight VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce lo spessore delle lettere del tipo di carattere. Proprietà di lettura/scrittura. **Stringa**.
 
@@ -26,19 +26,19 @@ Definisce lo spessore delle lettere del tipo di carattere. Proprietà di lettura
 
 [TextPath](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "font-weight: *Expression* " >
+<v: *element* style="font-weight: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. FontWeight = "*Expression*"
+*element* .style.fontweight="*expression*"
 
-*espressione* = *element*. Style. FontWeight
+*expression* = *elemento*.style.fontweight
 
 **Osservazioni:**
 
-I valori corrispondono agli attributi di stile HTML standard. I possibili valori sono:
+I valori sono gli stessi degli attributi di stile HTML standard. I possibili valori sono:
 
 
 
@@ -47,22 +47,22 @@ I valori corrispondono agli attributi di stile HTML standard. I possibili valori
 | normale  | Normale. Valore predefinito.                                                            |
 | Grassetto    | Grassetto.                                                                       |
 | bolder  | Più pesante del normale.                                                        |
-| lighter | Più chiaro del normale.                                                        |
-| 100     | Almeno leggero come 200 peso.                                        |
-| 200     | Almeno come grassetto come 100 e almeno come il peso 300. |
-| 300     | Almeno come grassetto come 200 e almeno come il peso 400. |
+| lighter | Più leggero del normale.                                                        |
+| 100     | Almeno leggero come il peso di 200.                                        |
+| 200     | Almeno come grassetto come il peso 100 e almeno leggero come il peso 300. |
+| 300     | Almeno in grassetto come il peso 200 e almeno leggero come il peso 400. |
 | 400     | Normale.                                                                     |
-| 500     | Almeno come grassetto come 400 e almeno come il peso 600. |
-| 600     | Almeno come grassetto come 500 e almeno come il peso 700. |
+| 500     | Almeno in grassetto come il peso 400 e almeno leggero come il peso 600. |
+| 600     | Almeno in grassetto come il peso 500 e almeno leggero come il peso 700. |
 | 700     | Grassetto.                                                                       |
-| 800     | Almeno come grassetto come 700 e almeno come il peso 900. |
-| 900     | Almeno in grassetto come 800 peso.                                         |
+| 800     | Almeno in grassetto come il peso 700 e almeno leggero come il peso 900. |
+| 900     | Almeno in grassetto come il peso 800.                                         |
 
 
 
- 
+ 
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
@@ -80,6 +80,6 @@ Lo spessore del carattere è in grassetto.
 
 
 
- 
+ 
 
- 
+ 

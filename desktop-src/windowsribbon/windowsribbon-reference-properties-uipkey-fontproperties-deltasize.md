@@ -4,12 +4,12 @@ description: Identifica la proprietà \_ \_ DeltaSize FontProperties PKEY \_ del
 ms.assetid: 021a6c79-1d3e-47d2-9601-cdaa2e66a50a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67778a710de8f69e0aea1134c12fb9ee3ebe0133
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: a35d2660d2221b4edad567b0fd05eb8283fce4b3cc7d1cb8e35c735838f385d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118438754"
 ---
 # <a name="ui_pkey_fontproperties_deltasize"></a>UI \_ PKEY \_ FontProperties \_ DeltaSize
 
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui PKEY FontProperties DeltaSize viene usato da un'applicazione nei casi in cui non è possibile per l'applicazione specificare un valore per Dimensioni carattere, ad esempio quando viene selezionata un'esecuzione di testo di \_ \_ dimensioni \_ eterogenee.  Il **controllo Dimensioni carattere è** impostato su vuoto e l'interfaccia utente \_ PKEY FontProperties DeltaSize viene usata per acquisire l'interazione dell'utente con i pulsanti Aumenta e Riduci \_ \_ carattere.  
+Ui PKEY FontProperties DeltaSize viene usato da un'applicazione nei casi in cui non è possibile per l'applicazione specificare un valore per Dimensioni carattere, ad esempio quando viene selezionata un'esecuzione di testo di \_ \_ dimensioni \_ eterogenee.  Il **controllo Dimensioni carattere è** impostato su vuoto e l'interfaccia utente \_ PKEY FontProperties DeltaSize viene usata per acquisire l'interazione dell'utente con i pulsanti Aumenta carattere e Riduci \_ \_ **carattere.** 
 
 UI \_ PKEY \_ FontProperties \_ DeltaSize è incluso in [UI \_ PKEY \_ FontProperties \_ ChangedProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md).
 

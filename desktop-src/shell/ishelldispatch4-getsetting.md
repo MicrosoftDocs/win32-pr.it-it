@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a4345812925849831a6f0064c608f0c4be052c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec31516f88dc9b79169a0272cfca735080e28aaebc81ac49cc7a8b083bc9377e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720855"
 ---
 # <a name="ishelldispatch4getsetting-method"></a>Metodo IShellDispatch4.GetSetting
 
@@ -87,7 +87,7 @@ Non usato.
 
 </dt> <dd>
 
-Stato **dell'opzione Consenti tutti i nomi maiuscoli** . A data di Windows Vista, questa opzione di cartella non è più disponibile.
+Stato **dell'opzione Consenti tutti i nomi maiuscoli.** A Windows Vista, questa opzione di cartella non è più disponibile.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Non usato.
 
 </dt> <dd>
 
-Lo stato dell'icona viene visualizzato nella Esplora risorse elenco. Se questa opzione è attiva, nella visualizzazione elenco non viene visualizzata alcuna icona.
+Lo stato dell'icona viene visualizzato nella Windows elenco di Esplora risorse. Se questa opzione è attiva, nella visualizzazione elenco non viene visualizzata alcuna icona.
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Lo stato dell'icona viene visualizzato nella Esplora risorse elenco. Se questa o
 
 </dt> <dd>
 
-**Windows Vista e versioni successive.** Stato del nome visualizzato visualizzato nella visualizzazione Esplora risorse elenco. Se questa opzione è attiva, le icone vengono visualizzate nella visualizzazione elenco, ma non i nomi visualizzati.
+**Windows Vista e versioni successive.** Lo stato del nome visualizzato viene visualizzato nella Windows elenco di Esplora risorse. Se questa opzione è attiva, le icone vengono visualizzate nella visualizzazione elenco, ma non i nomi visualizzati.
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Lo stato dell'icona viene visualizzato nella Esplora risorse elenco. Se questa o
 
 </dt> <dd>
 
-Stato dell'opzione **Mostra unità di rete mappa nella barra degli** strumenti. A causa di Windows Vista, questa opzione non è più disponibile.
+Stato dell'opzione **Mostra unità di rete mappa nella barra degli** strumenti. A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Stato dell'opzione **Mostra unità di rete mappa nella barra degli** strumenti. 
 
 </dt> <dd>
 
-Lo stato dell'opzione Cestino finestra di dialogo Visualizza conferma **eliminazione.**
+Stato dell'opzione visualizza Cestino di conferma **dell'eliminazione** della finestra di dialogo.
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Lo stato dell'opzione Cestino finestra di dialogo Visualizza conferma **eliminaz
 
 </dt> <dd>
 
-Stato **dell'opzione Cerca automaticamente cartelle e stampanti di** rete. A causa di Windows Vista, questa opzione non è più disponibile.
+Stato dell'opzione **Cerca automaticamente cartelle di rete e** stampanti . A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Stato **dell'opzione Cerca automaticamente cartelle e stampanti di** rete. A cau
 
 </dt> <dd>
 
-Stato delle finestre **della cartella Launch in un processo** separato.
+Stato delle finestre **della cartella di avvio in un'opzione di processo** separata.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ Stato **dell'opzione File e cartelle nascosti.**
 
 </dt> <dd>
 
-Stato **dell'opzione Mostra attributi file nella visualizzazione** dettagli . A data di Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Mostra attributi file nella visualizzazione** dettagli . A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -241,7 +241,7 @@ Stato **dell'opzione Mostra a colori i file NTFS crittografati o compressi.**
 
 </dt> <dd>
 
-Stato dell'opzione **Nascondi estensioni per tipi di file** noti.
+Stato **dell'opzione Nascondi estensioni per tipi di file** noti.
 
 </dd> <dt>
 
@@ -252,7 +252,7 @@ Stato dell'opzione **Nascondi estensioni per tipi di file** noti.
 
 </dt> <dd>
 
-Stato dell'opzione **Mostra descrizione popup per elementi della cartella e del desktop.**
+Stato dell'opzione **Mostra descrizione popup per elementi della** cartella e del desktop.
 
 </dd> <dt>
 
@@ -285,7 +285,7 @@ Stato **dell'opzione Nascondi file del sistema operativo** protetti.
 
 </dt> <dd>
 
-Stato **dell'opzione File e cartelle nascosti.** In Windows Vista e versioni successive è equivalente a SSF \_ SHOWALLOBJECTS. Nelle versioni di Windows precedenti a Windows Vista, questo valore fa riferimento allo stato **dell'opzione Non visualizzare** file e cartelle nascosti.
+Stato **dell'opzione File e cartelle nascosti.** In Windows Vista e versioni successive è equivalente a SSF \_ SHOWALLOBJECTS. Nelle versioni di Windows precedenti Windows Vista, questo valore fa riferimento allo stato dell'opzione Non visualizzare file **e cartelle** nascosti.
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Stato **dell'opzione File e cartelle nascosti.** In Windows Vista e versioni suc
 
 </dt> <dd>
 
-**Windows Vista e versioni successive.** Stato **dell'opzione Visualizza icona file nelle anteprime.** Se questa opzione è attiva, viene applicata una sovrimpressione del tipo di file quando un file fornisce una rappresentazione di anteprima.
+**Windows Vista e versioni successive.** Stato **dell'opzione Visualizza icona file nelle anteprime.** Se questa opzione è attiva, viene applicata una sovrimpressione del tipo di file quando un file fornisce una rappresentazione in anteprima.
 
 </dd> <dt>
 
@@ -318,7 +318,7 @@ Non usato.
 
 </dt> <dd>
 
-Stato dell'opzione di visualizzazione di Windows XP, che consente di selezionare tra lo stile di Windows XP e lo stile classico. A causa di Windows Vista, questa opzione non è più disponibile.
+Lo stato dell'Windows di visualizzazione XP, che consente di selezionare tra lo Windows stile XP e lo stile classico. A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ Stato dell'opzione di visualizzazione di Windows XP, che consente di selezionare
 
 </dt> <dd>
 
-Stato **dell'opzione Visualizza come visualizzazione Web**. A causa di Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Visualizza come visualizzazione Web**. A Windows Vista, questa opzione non è più disponibile.
 
 </dd> <dt>
 
@@ -340,7 +340,7 @@ Stato **dell'opzione Visualizza come visualizzazione Web**. A causa di Windows V
 
 </dt> <dd>
 
-Stato **dell'opzione Stile** classico. A causa di Windows Vista, questa opzione non è più disponibile.
+Stato **dell'opzione Stile** classico. A Windows Vista, questa opzione non è più disponibile.
 
 </dd> </dl> </dd> </dl>
 
@@ -350,19 +350,19 @@ Stato **dell'opzione Stile** classico. A causa di Windows Vista, questa opzione 
 
 Tipo: **VARIANT \_ BOOL \***
 
-Impostare su **true se** l'impostazione esiste; in caso contrario, **false**.
+Impostare su **true se** l'impostazione esiste; in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
 Tipo: **VARIANT \_ BOOL \***
 
-Impostare su **true se** l'impostazione esiste; in caso contrario, **false**.
+Impostare su **true se** l'impostazione esiste; in caso contrario, **false.**
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'uso **di GetSetting** per JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di **GetSetting** per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -433,8 +433,8 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                                                                   |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

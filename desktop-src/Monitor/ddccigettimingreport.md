@@ -24,7 +24,7 @@ ms.locfileid: "118382364"
 # <a name="ddccigettimingreport-function"></a>Funzione DDCCIGetTimingReport
 
 > [!IMPORTANT]
-> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver video. Le applicazioni non devono chiamare questa funzione.
 
  
 
@@ -49,14 +49,14 @@ NTSTATUS WINAPI DDCCIGetTimingReport(
 *hMonitor* \[ Pollici\]
 </dt> <dd>
 
-Handle per un monitoraggio fisico.
+Handle per un monitor fisico.
 
 </dd> <dt>
 
 *pmtr* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una [**struttura MC \_ TIMING \_ REPORT**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) che riceve le informazioni di intervallo.
+Puntatore a una [**struttura MC \_ TIMING \_ REPORT**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) che riceve le informazioni sull'intervallo.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contr
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono [**chiamare GetTimingReport**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) anziché questa funzione.
+Le applicazioni devono [**chiamare GetTimingReport**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) invece di chiamare questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi in modo dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

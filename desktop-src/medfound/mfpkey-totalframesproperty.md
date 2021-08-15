@@ -1,19 +1,19 @@
 ---
-description: Specifica il numero totale di fotogrammi video passati al codificatore durante il processo endocing.
+description: Specifica il numero totale di fotogrammi video passati al codificatore durante il processo di endocing.
 ms.assetid: 33009587-6fb2-4331-88d7-21886125467e
-title: Proprietà MFPKEY_TOTALFRAMES (Wmcodecdsp. h)
+title: MFPKEY_TOTALFRAMES proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfbdd02de8ae37918bb81691ad545b0cc3ebbca7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0a45c67bd457fc792af2f2f3d99f6cc346fe01dbebe735b9340c79ccc54fe27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872977"
 ---
-# <a name="mfpkey_totalframes-property"></a>\_Proprietà TOTALFRAMES di MFPKEY
+# <a name="mfpkey_totalframes-property"></a>Proprietà MFPKEY \_ TOTALFRAMES
 
-Specifica il numero totale di fotogrammi video passati al codificatore durante il processo endocing.
+Specifica il numero totale di fotogrammi video passati al codificatore durante il processo di endocing.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="remarks"></a>Commenti
 
-È possibile ottenere questo valore al termine del passaggio degli esempi.
+È possibile ottenere questo valore dopo aver completato il passaggio degli esempi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

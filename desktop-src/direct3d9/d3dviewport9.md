@@ -1,7 +1,7 @@
 ---
-description: Definisce le dimensioni della finestra di una superficie di destinazione di rendering su cui si proietta un volume 3D.
+description: Definisce le dimensioni della finestra di una superficie di destinazione di rendering su cui proietta un volume 3D.
 ms.assetid: fb2c6048-f837-497d-8e4f-e18942d37899
-title: Struttura D3DVIEWPORT9 (D3D9Types. h)
+title: Struttura D3DVIEWPORT9 (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 3d96000de50934ebdc893ffc3866dd3252703bdc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 40162e4350e5a68670023701f1cdae973fb8a7bac3a6d4f5c301136c4e8c2702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527267"
 ---
 # <a name="d3dviewport9-structure"></a>Struttura D3DVIEWPORT9
 
-Definisce le dimensioni della finestra di una superficie di destinazione di rendering su cui si proietta un volume 3D.
+Definisce le dimensioni della finestra di una superficie di destinazione di rendering su cui proietta un volume 3D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,7 +51,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordinata pixel dell'angolo superiore sinistro del viewport sulla superficie di destinazione di rendering. A meno che non si desideri eseguire il rendering in un subset della superficie, questo membro può essere impostato su 0.
+Coordinata in pixel dell'angolo superiore sinistro del viewport sulla superficie di destinazione di rendering. A meno che non si voglia eseguire il rendering in un subset della superficie, questo membro può essere impostato su 0.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordinata pixel dell'angolo superiore sinistro del viewport sulla superficie di destinazione di rendering. A meno che non si desideri eseguire il rendering in un subset della superficie, questo membro può essere impostato su 0.
+Coordinata in pixel dell'angolo superiore sinistro del viewport sulla superficie di destinazione di rendering. A meno che non si voglia eseguire il rendering in un subset della superficie, questo membro può essere impostato su 0.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensione della larghezza del volume di ritaglio, in pixel. A meno che non si esegua il rendering solo in un subset della superficie, questo membro deve essere impostato sulla dimensione Width della superficie di destinazione di rendering.
+Dimensione larghezza del volume della clip, in pixel. A meno che il rendering non venga eseguito solo in un subset della superficie, questo membro deve essere impostato sulla dimensione larghezza della superficie di destinazione del rendering.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Dimensione dell'altezza del volume di ritaglio, in pixel. A meno che non si esegua il rendering solo in un subset della superficie, questo membro deve essere impostato sulla dimensione Height della superficie di destinazione di rendering.
+Dimensione dell'altezza del volume della clip, in pixel. A meno che il rendering non venga eseguito solo su un subset della superficie, questo membro deve essere impostato sulla dimensione altezza della superficie di destinazione del rendering.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Tipo: **float**
 
 </dd> <dd>
 
-Insieme a MaxZ, valore che descrive l'intervallo di valori di profondità in cui deve essere eseguito il rendering di una scena, i valori minimo e massimo del volume di ritaglio. La maggior parte delle applicazioni imposta questo valore su 0,0. Il ritaglio viene eseguito dopo l'applicazione della matrice di proiezione.
+Insieme a MaxZ, valore che descrive l'intervallo di valori di profondità in cui eseguire il rendering di una scena, i valori minimo e massimo del volume della clip. La maggior parte delle applicazioni imposta questo valore su 0,0. Il ritaglio viene eseguito dopo l'applicazione della matrice di proiezione.
 
 </dd> <dt>
 
@@ -106,15 +106,15 @@ Tipo: **float**
 
 </dd> <dd>
 
-Insieme a MinZ, valore che descrive l'intervallo di valori di profondità in cui deve essere eseguito il rendering di una scena, i valori minimo e massimo del volume di ritaglio. La maggior parte delle applicazioni imposta questo valore su 1,0. Il ritaglio viene eseguito dopo l'applicazione della matrice di proiezione.
+Insieme a MinZ, valore che descrive l'intervallo di valori di profondità in cui eseguire il rendering di una scena, i valori minimo e massimo del volume della clip. La maggior parte delle applicazioni imposta questo valore su 1.0. Il ritaglio viene eseguito dopo l'applicazione della matrice di proiezione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I membri X, Y, larghezza e altezza descrivono la posizione e le dimensioni del viewport sulla superficie di destinazione di rendering. In genere, le applicazioni eseguono il rendering sull'intera superficie di destinazione; Quando si esegue il rendering in una superficie 640 x 480, i membri devono essere rispettivamente 0, 0, 640 e 480. MinZ e MaxZ vengono in genere impostati su 0,0 e 1,0, ma possono essere impostati su altri valori per ottenere effetti specifici. Ad esempio, è possibile impostare entrambi su 0,0 per forzare il rendering degli oggetti in primo piano di una scena o entrambi a 1,0 per forzare gli oggetti in background.
+I membri X, Y, Width e Height descrivono la posizione e le dimensioni del viewport sulla superficie di destinazione di rendering. In genere, il rendering delle applicazioni viene eseguito sull'intera superficie di destinazione. Quando si esegue il rendering su una superficie 640 x 480, questi membri devono essere rispettivamente 0, 0, 640 e 480. MinZ e MaxZ sono in genere impostati su 0.0 e 1.0, ma possono essere impostati su altri valori per ottenere effetti specifici. Ad esempio, è possibile impostarli entrambi su 0.0 per forzare il sistema a eseguire il rendering degli oggetti in primo piano di una scena o entrambi su 1.0 per forzare gli oggetti in background.
 
-Quando i parametri del viewport per un dispositivo cambiano (a causa di una chiamata al metodo [**seviewport**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setviewport) ), il driver compila una nuova matrice di trasformazione.
+Quando i parametri del viewport per un dispositivo cambiano (a causa di una chiamata al [**metodo SetViewport),**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setviewport) il driver compila una nuova matrice di trasformazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -122,7 +122,7 @@ Quando i parametri del viewport per un dispositivo cambiano (a causa di una chia
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -136,7 +136,7 @@ Quando i parametri del viewport per un dispositivo cambiano (a causa di una chia
 [**GetViewport**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getviewport)
 </dt> <dt>
 
-[**Viewport**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setviewport)
+[**SetViewport**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setviewport)
 </dt> </dl>
 
  

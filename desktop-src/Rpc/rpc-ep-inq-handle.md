@@ -1,21 +1,21 @@
 ---
-title: RPC_EP_INQ_HANDLE (Rpcasync. h)
-description: Il \_ \_ \_ tipo di dati della gestione INQ RPC EP dichiara un handle per un contesto di richiesta. Le applicazioni RPC lo usano per visualizzare le informazioni sull'indirizzo del server archiviate nella mappa dell'endpoint.
+title: RPC_EP_INQ_HANDLE (Rpcasync.h)
+description: Il tipo \_ di dati \_ RPC EP INQ \_ HANDLE dichiara un handle per un contesto di richiesta. Le applicazioni RPC lo usano per visualizzare le informazioni sull'indirizzo del server archiviate nella mappa degli endpoint.
 ms.assetid: e18ce800-0110-4450-9a1b-a3f777d00f2d
 keywords:
 - RPC_EP_INQ_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c34c64b5601b31485808924fc57dbe3412b6009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a401f06077c2f636f679a7733dc7ed99abbdbb5e6b9959998b1f8234b0e4adfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926494"
 ---
-# <a name="rpc_ep_inq_handle"></a>\_ \_ handle INQ EP \_ RPC
+# <a name="rpc_ep_inq_handle"></a>RPC \_ EP \_ INQ \_ HANDLE
 
-Il tipo di dati della **\_ \_ \_ gestione INQ RPC EP** dichiara un handle per un contesto di richiesta. Le applicazioni RPC lo usano per visualizzare le informazioni sull'indirizzo del server archiviate nella mappa dell'endpoint.
+Il **tipo di dati RPC \_ \_ EP INQ \_ HANDLE** dichiara un handle per un contesto di richiesta. Le applicazioni RPC lo usano per visualizzare le informazioni sull'indirizzo del server archiviate nella mappa degli endpoint.
 
 
 ```C++
@@ -32,7 +32,7 @@ typedef I_RPC_HANDLE* RPC_EP_INQ_HANDLE;
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                  |
-| Intestazione<br/>                   | <dl> <dt>Rpcasync. h (include RPC. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Rpcasync.h (includere Rpc.h)</dt> </dl> |
 
 
 

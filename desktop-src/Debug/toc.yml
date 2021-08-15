@@ -6,11 +6,11 @@
       items:
         - name: Modalità di errore
           href: error-mode.md
-        - name: Codice Last-Error
+        - name: Last-Error code
           href: last-error-code.md
         - name: Notifica all'utente
           href: notifying-the-user.md
-        - name: Tabelle messaggi
+        - name: Tabelle dei messaggi
           href: message-tables.md
         - name: Chiusura dell'applicazione irreversibile
           href: fatal-application-exit.md
@@ -19,9 +19,9 @@
     - name: Uso della gestione degli errori
       href: using-error-handling.md
       items:
-        - name: Recupero del codice Last-Error
+        - name: Recupero del codice Last-Error dati
           href: retrieving-the-last-error-code.md
-    - name: Guida di riferimento alla gestione degli errori
+    - name: Informazioni di riferimento sulla gestione degli errori
       href: error-handling-reference.md
       items:
         - name: Funzioni di gestione degli errori
@@ -33,11 +33,11 @@
               href: /previous-versions/windows/desktop/legacy/bb204633(v=vs.85)
             - name: FatalAppExit
               href: /windows/desktop/api/winbase/nf-winbase-fatalexit
-            - name: FlashWindow
+            - name: Flashwindow
               href: /windows/desktop/api/Winuser/nf-winuser-flashwindow
             - name: FlashWindowEx
               href: /windows/desktop/api/Winuser/nf-winuser-flashwindowex
-            - name: FormatMessage
+            - name: Messaggio di formato
               href: /windows/desktop/api/WinBase/nf-winbase-formatmessage
             - name: GetErrorMode
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-geterrormode
@@ -71,7 +71,7 @@
               href: /windows/desktop/api/Winuser/nf-winuser-setlasterrorex
             - name: SetThreadErrorMode
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-setthreaderrormode
-        - name: Gestione degli errori delle macro
+        - name: Macro di gestione degli errori
           href: error-handling-macro.md
           items:
             - name: C_ASSERT
@@ -84,7 +84,7 @@
         - name: Codici di errore di sistema
           href: system-error-codes.md
           items:
-            - name: Scaricare e usare lo strumento ricerca errori Microsoft
+            - name: Scaricare e usare lo strumento Di ricerca errori Microsoft
               href: system-error-code-lookup-tool.md
             - name: Codici di errore di sistema (0-499)
               href: system-error-codes--0-499-.md
@@ -112,14 +112,14 @@
     - name: Informazioni sul debug di base
       href: about-basic-debugging.md
       items:
-        - name: Terminologia di debug
+        - name: Terminologia relativa al debug
           href: debugging-terminology.md
-        - name: 'Supporto del debug da funzioni di processo, thread ed eccezioni'
+        - name: 'Supporto del debug da funzioni di processo, thread ed eccezione'
           href: debug-support-from-process-thread-and-exception-functions.md
           items:
             - name: Funzioni di elaborazione per il debug
               href: process-functions-for-debugging.md
-            - name: Funzioni thread per il debug
+            - name: Funzioni di thread per il debug
               href: thread-functions-for-debugging.md
             - name: Funzioni di eccezione per il debug
               href: exception-handling-functions-for-debugging.md
@@ -133,11 +133,11 @@
           items:
             - name: Debug di un processo in esecuzione
               href: debugging-a-running-process.md
-            - name: Scrittura del ciclo principale del debugger
+            - name: Scrittura del ciclo main del debugger
               href: writing-the-debugger-s-main-loop.md
             - name: Comunicazione con il debugger
               href: communicating-with-the-debugger.md
-    - name: Riferimento al debug
+    - name: Informazioni di riferimento sul debug
       href: debugging-reference.md
       items:
         - name: Eventi di debug
@@ -153,13 +153,13 @@
               href: /windows/desktop/api/debugapi/nf-debugapi-debugactiveprocess
             - name: DebugActiveProcessStop
               href: /windows/desktop/api/debugapi/nf-debugapi-debugactiveprocessstop
-            - name: DebugBreak
+            - name: Debugbreak
               href: /windows/desktop/api/debugapi/nf-debugapi-debugbreak
             - name: DebugBreakProcess
               href: /windows/desktop/api/WinBase/nf-winbase-debugbreakprocess
             - name: DebugSetProcessKillOnExit
               href: /windows/desktop/api/WinBase/nf-winbase-debugsetprocesskillonexit
-            - name: FatalExit
+            - name: Errore irreversibile
               href: /windows/desktop/api/WinBase/nf-winbase-fatalexit
             - name: FlushInstructionCache
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache
@@ -169,7 +169,7 @@
               href: /windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry
             - name: IsDebuggerPresent
               href: /windows/desktop/api/debugapi/nf-debugapi-isdebuggerpresent
-            - name: OutputDebugString
+            - name: Outputdebugstring
               href: /windows/desktop/api/debugapi/nf-debugapi-outputdebugstringw
             - name: ReadProcessMemory
               href: /windows/desktop/api/memoryapi/nf-memoryapi-readprocessmemory
@@ -212,7 +212,7 @@
               href: /windows/desktop/api/minwinbase/ns-minwinbase-output_debug_string_info
             - name: RIP_INFO
               href: /windows/desktop/api/minwinbase/ns-minwinbase-rip_info
-            - name: Blocco ambiente thread (note di debug)
+            - name: Blocco dell'ambiente thread (note sul debug)
               href: thread-environment-block--debugging-notes-.md
             - name: UNLOAD_DLL_DEBUG_INFO
               href: /windows/desktop/api/minwinbase/ns-minwinbase-unload_dll_debug_info
@@ -222,7 +222,7 @@
               href: /windows/win32/api/WinNT/ns-winnt-wow64_floating_save_area
             - name: WOW64_LDT_ENTRY
               href: /windows/win32/api/WinNT/ns-winnt-wow64_ldt_entry
-- name: Libreria della Guida di debug
+- name: Eseguire il debug della libreria della Guida
   href: debug-help-library.md
   items:
     - name: Informazioni su DbgHelp
@@ -239,9 +239,9 @@
               href: symbol-handler-initialization.md
             - name: Percorsi dei simboli
               href: symbol-paths.md
-            - name: Caricamento simboli
+            - name: Caricamento dei simboli
               href: symbol-loading.md
-            - name: Caricamento posticipato dei simboli
+            - name: Caricamento dei simboli posticipato
               href: deferred-symbol-loading.md
             - name: Nomi di simboli decorati
               href: decorated-symbol-names.md
@@ -249,7 +249,7 @@
               href: finding-symbols.md
             - name: 'Simboli pubblici, globali e locali'
               href: public--global--and-local-symbols.md
-            - name: Pulitura gestore simboli
+            - name: Pulizia del gestore dei simboli
               href: symbol-handler-cleanup.md
         - name: '  Server di simboli e archivi simboli'
           href: symbol-servers-and-symbol-stores.md
@@ -258,7 +258,7 @@
               href: using-symsrv.md
             - name: Uso di SymStore
               href: using-symstore.md
-            - name: Uso di altri archivi simboli
+            - name: Uso di altri archivi di simboli
               href: using-other-symbol-stores.md
             - name: Opzioni Command-Line SymStore
               href: symstore-command-line-options.md
@@ -275,27 +275,27 @@
       items:
         - name: Chiamata della libreria DbgHelp
           href: calling-the-dbghelp-library.md
-        - name: Inizializzazione del gestore di simboli
+        - name: Inizializzazione del gestore simboli
           href: initializing-the-symbol-handler.md
-        - name: Caricamento di un modulo dei simboli
+        - name: Caricamento di un modulo di simboli
           href: loading-a-symbol-module.md
         - name: Ricezione di notifiche
           href: getting-notifications.md
-        - name: Enumerazione dei moduli di simboli
+        - name: Enumerazione di moduli di simboli
           href: enumerating-symbol-modules.md
         - name: Enumerazione dei simboli
           href: enumerating-symbols.md
-        - name: Recupero delle informazioni sui simboli per nome
+        - name: Recupero delle informazioni sui simboli in base al nome
           href: retrieving-symbol-information-by-name.md
-        - name: Recupero delle informazioni sui simboli per indirizzo
+        - name: Recupero di informazioni sui simboli in base all'indirizzo
           href: retrieving-symbol-information-by-address.md
-        - name: Recupero dei nomi di simboli non decorati
+        - name: Recupero di nomi di simboli non dichiarati
           href: retrieving-undecorated-symbol-names.md
         - name: Scaricamento di un modulo di simboli
           href: unloading-a-symbol-module.md
-        - name: Terminazione del gestore di simboli
+        - name: Terminazione del gestore simboli
           href: terminating-the-symbol-handler.md
-    - name: Riferimento a DbgHelp
+    - name: Informazioni di riferimento su DbgHelp
       href: dbghelp-reference.md
       items:
         - name: Enumerazioni DbgHelp
@@ -589,7 +589,7 @@
           items:
             - name: _IMAGE_RUNTIME_FUNCTION_ENTRY
               href: /windows/win32/api/winnt/ns-winnt-runtime_function
-            - name: ADDRESS64
+            - name: INDIRIZZO64
               href: /windows/desktop/api/DbgHelp/ns-dbghelp-address
             - name: API_VERSION
               href: /windows/desktop/api/DbgHelp/ns-dbghelp-api_version
@@ -709,7 +709,7 @@
               href: /windows/win32/api/DbgHelp/ns-dbghelp-modload_cvmisc
             - name: MODLOAD_DATA
               href: /windows/win32/api/DbgHelp/ns-dbghelp-modload_data
-            - name: OMAP
+            - name: Omap
               href: /windows/win32/api/Dbghelp/ns-dbghelp-omap
             - name: SOURCEFILE
               href: /windows/win32/api/DbgHelp/ns-dbghelp-sourcefile
@@ -725,7 +725,7 @@
               href: /windows/desktop/api/Dbghelp/ns-dbghelp-symsrv_index_info
             - name: TI_FINDCHILDREN_PARAMS
               href: /windows/win32/api/DbgHelp/ns-dbghelp-ti_findchildren_params
-        - name: Libreria della Guida dell'immagine
+        - name: Libreria della Guida immagini
           href: image-help-library.md
           items:
             - name: Informazioni su ImageHlp
@@ -739,13 +739,13 @@
                   href: image-integrity-functions.md
                 - name: Funzioni di modifica delle immagini ImageHlp
                   href: image-modification-functions.md
-            - name: Riferimento a ImageHlp
+            - name: Informazioni di riferimento su ImageHlp
               href: imagehlp-reference.md
               items:
-                - name: Funzioni ImageHlp
+                - name: Funzioni imageHlp
                   href: imagehlp-functions.md
                   items:
-                    - name: Azione BindImage sul
+                    - name: BindImage
                       href: /windows/desktop/api/Imagehlp/nf-imagehlp-bindimage
                     - name: BindImageEx
                       href: /windows/desktop/api/Imagehlp/nf-imagehlp-bindimageex
@@ -833,30 +833,30 @@
               href: floating-point-exceptions.md
         - name: Gestione delle eccezioni basata su frame
           href: frame-based-exception-handling.md
-        - name: Gestione delle eccezioni con vettori
+        - name: Gestione delle eccezioni vettoriali
           href: vectored-exception-handling.md
         - name: Gestione della terminazione
           href: termination-handling.md
         - name: Sintassi del gestore
           href: handler-syntax.md
           items:
-            - name: Sintassi Exception-Handler
+            - name: Exception-Handler sintassi
               href: exception-handler-syntax.md
-            - name: Sintassi Termination-Handler
+            - name: Termination-Handler sintassi
               href: termination-handler-syntax.md
     - name: Uso della gestione strutturata delle eccezioni
       href: using-structured-exception-handling.md
       items:
-        - name: Uso di un gestore di eccezioni
+        - name: Uso di un gestore eccezioni
           href: using-an-exception-handler.md
         - name: Uso di un gestore di terminazione
           href: using-a-termination-handler.md
-        - name: Uso di un gestore di eccezioni con vettori
+        - name: Uso di un gestore eccezioni vettoriali
           href: using-a-vectored-exception-handler.md
-    - name: Guida di riferimento alla gestione delle eccezioni strutturata
+    - name: Informazioni di riferimento sulla gestione strutturata delle eccezioni
       href: structured-exception-handling-reference.md
       items:
-        - name: Funzioni di gestione delle eccezioni strutturate
+        - name: Funzioni di gestione strutturata delle eccezioni
           href: structured-exception-handling-functions.md
           items:
             - name: AbnormalTermination
@@ -899,7 +899,7 @@
               href: /windows/desktop/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter
             - name: VectoredHandler
               href: /windows/desktop/api/WinNT/nc-winnt-pvectored_exception_handler
-        - name: Strutture di gestione delle eccezioni strutturate
+        - name: Strutture strutturate di gestione delle eccezioni
           href: structured-exception-handling-structures.md
           items:
             - name: EXCEPTION_POINTERS
@@ -911,7 +911,7 @@
   items:
     - name: Uso di WCT
       href: using-wct.md
-    - name: Riferimento a WCT
+    - name: Informazioni di riferimento su WCT
       href: wct-reference.md
       items:
         - name: CloseThreadWaitChainSession

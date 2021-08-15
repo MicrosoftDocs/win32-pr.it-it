@@ -1,35 +1,35 @@
 ---
-description: Imposta la priorità del thread di base per il writer del sink o del lettore di origine.
+description: Imposta la priorità del thread di base per il lettore di origine o il writer di sink.
 ms.assetid: 9513AE28-2AF4-45EC-AC19-C0718540E26F
-title: Attributo MF_READWRITE_MMCSS_PRIORITY (Mfreadwrite. h)
+title: MF_READWRITE_MMCSS_PRIORITY attributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad7b83485b49e6ae584a38024e180f37c878d27d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56f108b7cce9f1c9d6226803bf2a2cc32b62ac94077f7f84cbc78e632cb25ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740603"
 ---
-# <a name="mf_readwrite_mmcss_priority-attribute"></a>\_Attributo di \_ priorità MMCSS MF ReadWrite \_
+# <a name="mf_readwrite_mmcss_priority-attribute"></a>Attributo MF \_ READWRITE \_ MMCSS \_ PRIORITY
 
-Imposta la priorità del thread di base per il writer del sink o del lettore di origine.
+Imposta la priorità del thread di base per il lettore di origine o il writer di sink.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Int32** archiviato come **UInt32**
+**INT32** archiviato come **UINT32**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Commenti
 
-Facoltativamente, impostare questo attributo quando si crea un'istanza di [Reader di origine](source-reader.md) o di [sink writer](sink-writer.md). Se si imposta questo attributo, impostare anche l'attributo della [ \_ \_ \_ classe MF ReadWrite MMCSS](mf-readwrite-mmcss-class.md) . In caso contrario, questo attributo viene ignorato.
+Facoltativamente, impostare questo attributo quando si crea un'istanza del lettore di [origine](source-reader.md) o del [writer di sink.](sink-writer.md) Se si imposta questo attributo, impostare anche [l'attributo MF \_ READWRITE \_ MMCSS \_ CLASS.](mf-readwrite-mmcss-class.md) In caso contrario, questo attributo viene ignorato.
 
-Quando i thread vengono registrati con il [servizio Utilità di pianificazione classi multimediali](../procthread/multimedia-class-scheduler-service.md), il valore di questo attributo viene specificato dalla priorità del thread di base. Se questo attributo non è impostato, il valore predefinito è zero.
+Quando il lettore di origine o il writer sink registra i thread con il servizio [Utilità](../procthread/multimedia-class-scheduler-service.md)di pianificazione classi multimediali , il valore di questo attributo specifica la priorità del thread di base. Se questo attributo non è impostato, il valore predefinito è zero.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ Quando i thread vengono registrati con il [servizio Utilità di pianificazione c
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                        |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                              |
-| Intestazione<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                        |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                              |
+| Intestazione<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Quando i thread vengono registrati con il [servizio Utilità di pianificazione c
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  
