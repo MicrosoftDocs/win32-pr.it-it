@@ -1,9 +1,9 @@
 ---
 title: Elemento StopOnIdleEnd (idleSettingsType)
-description: Specifica che il Utilità di pianificazione arresterà l'attività se la condizione di inattività termina prima del completamento dell'attività.
+description: Specifica che l'Utilità di pianificazione arresterà l'attività se la condizione di inattività termina prima del completamento dell'attività.
 ms.assetid: 5e8e4fd9-bba1-4ede-a0b3-9f50feb1b6f3
 keywords:
-- Utilità di pianificazione elemento StopOnIdleEnd
+- Elemento StopOnIdleEnd Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a47a01d7d77f3dd20f055bce8e4bb12fad82c771
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e6497ca88d43b96096ee6a23ee81a322b0f397757466ed8cf09dd1b3cd45fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356059"
 ---
 # <a name="stoponidleend-idlesettingstype-element"></a>Elemento StopOnIdleEnd (idleSettingsType)
 
-Specifica che il Utilità di pianificazione arresterà l'attività se la condizione di inattività termina prima del completamento dell'attività.
+Specifica che l'Utilità di pianificazione arresterà l'attività se la condizione di inattività termina prima del completamento dell'attività.
 
 ``` syntax
 <xs:element name="StopOnIdleEnd"
@@ -32,7 +32,7 @@ Specifica che il Utilità di pianificazione arresterà l'attività se la condizi
  />
 ```
 
-L'elemento **StopOnIdleEnd** è definito dal tipo complesso [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) .
+**L'elemento StopOnIdleEnd** è definito dal tipo complesso [**idleSettingsType.**](taskschedulerschema-idlesettingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -40,19 +40,19 @@ L'elemento **StopOnIdleEnd** è definito dal tipo complesso [**idleSettingsType*
 
 | Elemento                                                                       | Derivato da                                                                 | Descrizione                                                                                       |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Specifica il modo in cui il Utilità di pianificazione esegue le attività quando il computer si trova in uno stato inattivo.<br/> |
+| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Specifica il modo in cui Utilità di pianificazione le attività quando il computer è in uno stato di inattività.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà StopOnIdleEnd di IIdleSettings**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_stoponidleend).
+Per lo sviluppo in C++, [**vedere Proprietà StopOnIdleEnd di IIdleSettings.**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_stoponidleend)
 
-Per lo sviluppo di script, vedere [**IdleSettings. StopOnIdleEnd**](idlesettings-stoponidleend.md).
+Per lo sviluppo di script, [**vedere IdleSettings.StopOnIdleEnd.**](idlesettings-stoponidleend.md)
 
 ## <a name="examples"></a>Esempio
 
-Il codice XML seguente definisce un'impostazione inattiva che indica che l'attività non deve essere eseguita al termine della condizione di inattività.
+Nel codice XML seguente viene definita un'impostazione di inattività che indica che l'attività non deve essere eseguita al termine della condizione di inattività.
 
 
 ```XML
@@ -69,8 +69,8 @@ Il codice XML seguente definisce un'impostazione inattiva che indica che l'attiv
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Il codice XML seguente definisce un'impostazione inattiva che indica che l'attiv
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

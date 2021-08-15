@@ -1,41 +1,41 @@
 ---
 title: Uso dell'input non elaborato
-description: In questa sezione è incluso il codice di esempio per le attività relative all'input non elaborato.
+description: Questa sezione include codice di esempio per le attività relative all'input non elaborato.
 ms.assetid: e078e13c-06b8-4440-9d37-78c344b587e9
 keywords:
 - input utente, input non elaborato
-- acquisizione dell'input dell'utente, input non elaborato
+- acquisizione di input utente, input non elaborato
 - input non elaborato
-- lettura con memorizzazione nel buffer di input non elaborato
+- lettura memorizzata nel buffer dell'input non elaborato
 - lettura standard dell'input non elaborato
-- registrazione dell'input non elaborato
-- lettura dell'input non elaborato
+- registrazione di input non elaborato
+- lettura di input non elaborato
 - input non elaborato del joystick
-- input raw di Game Pad
+- game pad input non elaborato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 637137481fd930214beb04d2c75a7a2921d8b5fa
-ms.sourcegitcommit: ae1241c7d27e0bd128dfa40ca0b4187728b2a9e0
+ms.openlocfilehash: ed7c020af77c20e191f0c71a2e89f66d13dddb9e85c3753ff1789e02729e0495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "106334289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884308"
 ---
 # <a name="using-raw-input"></a>Uso dell'input non elaborato
 
-In questa sezione è incluso il codice di esempio per gli scopi seguenti:
+Questa sezione include codice di esempio per gli scopi seguenti:
 
 -   [Registrazione per l'input non elaborato](#registering-for-raw-input)
     -   [Esempio 1](#example-1)
     -   [Esempio 2](#example-2)
 -   [Esecuzione di una lettura standard dell'input non elaborato](#performing-a-standard-read-of-raw-input)
--   [Esecuzione di una lettura con memorizzazione nel buffer di input non elaborato](#performing-a-buffered-read-of-raw-input)
+-   [Esecuzione di una lettura memorizzata nel buffer dell'input non elaborato](#performing-a-buffered-read-of-raw-input)
 
 ## <a name="registering-for-raw-input"></a>Registrazione per l'input non elaborato
 
 ### <a name="example-1"></a>Esempio 1
 
-In questo esempio, un'applicazione specifica l'input non elaborato dai controller di gioco (sia i pad del gioco che i joystick) e tutti i dispositivi fuori dalla pagina di utilizzo della telefonia, ad eccezione dei computer che rispondono.
+In questo esempio, un'applicazione specifica l'input non elaborato dai controller di gioco (sia game pad che rossetti) e tutti i dispositivi dalla pagina di utilizzo della telefonia, ad eccezione dei computer di risposta.
 
 ```cpp
 RAWINPUTDEVICE Rid[4];
@@ -68,7 +68,7 @@ if (RegisterRawInputDevices(Rid, 4, sizeof(Rid[0])) == FALSE)
 
 ### <a name="example-2"></a>Esempio 2
 
-In questo esempio, un'applicazione vuole un input non elaborato della tastiera e del mouse, ma vuole ignorare [i messaggi](mouse-input-notifications.md) della tastiera e del mouse [legacy](keyboard-input-notifications.md) (che derivano dalla stessa tastiera e mouse).
+In questo esempio un'applicazione desidera l'input non [](keyboard-input-notifications.md) elaborato dalla tastiera e dal mouse, ma vuole ignorare i messaggi legacy della tastiera e della finestra del [mouse](mouse-input-notifications.md) (che provengono dalla stessa tastiera e dallo stesso mouse).
 
 ```cpp
 RAWINPUTDEVICE Rid[2];
@@ -91,7 +91,7 @@ if (RegisterRawInputDevices(Rid, 2, sizeof(Rid[0])) == FALSE)
 
 ## <a name="performing-a-standard-read-of-raw-input"></a>Esecuzione di una lettura standard dell'input non elaborato
 
-Questo esempio mostra in che modo un'applicazione esegue una lettura senza buffer (o standard) dell'input non elaborato da una tastiera o da un dispositivo di interfaccia umana del mouse (HID), quindi stampa le varie informazioni dal dispositivo.
+Questo esempio illustra come un'applicazione esegue una lettura senza buffer (o standard) di input non elaborato da una tastiera o da un dispositivo HID (Human Interface Device) del mouse e quindi stampa varie informazioni dal dispositivo.
 
 ```cpp
 case WM_INPUT: 
@@ -151,9 +151,9 @@ case WM_INPUT:
 } 
 ```
 
-## <a name="performing-a-buffered-read-of-raw-input"></a>Esecuzione di una lettura con memorizzazione nel buffer di input non elaborato
+## <a name="performing-a-buffered-read-of-raw-input"></a>Esecuzione di una lettura memorizzata nel buffer dell'input non elaborato
 
-Questo esempio mostra in che modo un'applicazione esegue una lettura con memorizzazione nel buffer di input non elaborato da un oggetto generico nascosto.
+Questo esempio illustra come un'applicazione esegue una lettura memorizzata nel buffer dell'input non elaborato da un HID generico.
 
 ```cpp
 case MSG_GETRIBUFFER: // Private message

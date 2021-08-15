@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 29561519b95329093ef1f7bfc64023fd1ac4533d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a8f4d70d4f4c8a1b8c2745739e2434be0cfde936facd9dbb43cb04c6b7de5c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858044"
 ---
 # <a name="shellcanstartstopservice-method"></a>Metodo Shell.CanStartStopService
 
@@ -52,7 +52,7 @@ Shell.CanStartStopService( _
 *sServiceName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **Stringa**
 
 Valore **String** contenente il nome del servizio.
 
@@ -64,13 +64,13 @@ Valore **String** contenente il nome del servizio.
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false**.
 
 ### <a name="vb"></a>VB
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false**.
 
 ## <a name="remarks"></a>Commenti
 
@@ -78,9 +78,9 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo **di CanStartStopService** per JScript e VBScript.
+Gli esempi seguenti illustrano l'utilizzo di **CanStartStopService** per JScript e VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -123,8 +123,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

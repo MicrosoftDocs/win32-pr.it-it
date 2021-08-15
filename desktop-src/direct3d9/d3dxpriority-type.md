@@ -1,7 +1,7 @@
 ---
 description: Definisce il tipo di priorità a cui viene assegnata una traccia di animazione.
 ms.assetid: 7bd83e31-09c4-4376-a22d-ed8023b78e84
-title: Enumerazione D3DXPRIORITY_TYPE (D3dx9anim. h)
+title: D3DXPRIORITY_TYPE enumerazione (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 5e6d82807cbd0e93e7a1127db80726c0ec06b5da
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7ea5b7447b896c6b582280216af4d6c05cc540286ad31a2bfb337975fe6c88a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104401953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524850"
 ---
-# <a name="d3dxpriority_type-enumeration"></a>\_Enumerazione del tipo D3DXPRIORITY
+# <a name="d3dxpriority_type-enumeration"></a>Enumerazione D3DXPRIORITY \_ TYPE
 
 Definisce il tipo di priorità a cui viene assegnata una traccia di animazione.
 
@@ -41,30 +41,30 @@ typedef enum D3DXPRIORITY_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXPRIORITY_LOW"></span><span id="d3dxpriority_low"></span>**D3DXPRIORITY \_ basso**
+<span id="D3DXPRIORITY_LOW"></span><span id="d3dxpriority_low"></span>**D3DXPRIORITY \_ LOW**
 </dt> <dd>
 
-Il rilevamento deve essere combinato con tutte le tracce con priorità bassa prima che la Blend con priorità bassa venga combinata con la combinazione di priorità alta.
+La traccia deve essere confusa con tutte le tracce con priorità bassa prima che la combinazione con priorità bassa venga mixata con la combinazione con priorità alta.
 
 </dd> <dt>
 
-<span id="D3DXPRIORITY_HIGH"></span><span id="d3dxpriority_high"></span>**D3DXPRIORITY- \_ alto**
+<span id="D3DXPRIORITY_HIGH"></span><span id="d3dxpriority_high"></span>**D3DXPRIORITY \_ HIGH**
 </dt> <dd>
 
-Il rilevamento deve essere combinato con tutte le tracce ad alta priorità prima che la Blend con priorità alta venga combinata con la Blend con priorità bassa.
+La traccia deve essere confusa con tutte le tracce con priorità alta prima che la combinazione con priorità alta venga mista alla combinazione con la combinazione con priorità bassa.
 
 </dd> <dt>
 
-<span id="D3DXPRIORITY_FORCE_DWORD"></span><span id="d3dxpriority_force_dword"></span>**D3DXPRIORITY \_ Force \_ DWORD**
+<span id="D3DXPRIORITY_FORCE_DWORD"></span><span id="d3dxpriority_force_dword"></span>**D3DXPRIORITY \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Le tracce con la stessa priorità vengono combinate insieme e i due valori risultanti vengono combinati utilizzando il fattore di sfumatura della priorità.
+Le tracce con la stessa priorità vengono combinate tra loro e i due valori risultanti vengono quindi sfusi usando il fattore di blend di priorità.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Le tracce con la stessa priorità vengono combinate insieme e i due valori risul
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 

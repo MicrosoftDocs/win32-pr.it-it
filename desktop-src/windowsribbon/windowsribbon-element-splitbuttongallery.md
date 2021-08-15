@@ -3,7 +3,7 @@ title: Elemento SplitButtonGallery
 description: Rappresenta un controllo Split Button Gallery con un menu a discesa basato su raccolta.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- Elemento SplitButtonGallery nella barra multifunzione di Windows
+- Elemento SplitButtonGallery Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f5f8767135b9472acba333b1cdfa6ab102e9b7f4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: c28c2f87a1d8fb165f02ad71c96b38bcbb381bb3590bd9bff98b3feb364044bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850818"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
@@ -64,7 +64,7 @@ Rappresenta un [controllo Split Button Gallery](windowsribbon-controls-splitbutt
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Valido solo se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> è l'elemento padre.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa che contiene un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Stringa contenente un elenco delimitato da virgole di numeri interi compresi tra 0 e 31.<br/> Gli spazi vuoti sono validi e ignorati.<br/> Lunghezza massima: 250 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
@@ -123,7 +123,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 | Elemento                                                                                                 | Descrizione                                        |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                                               | Può verificarsi una o più volte<br/> <br/> |
-| [**Casella**](windowsribbon-element-checkbox.md)<br/>                                           | Può verificarsi una o più volte<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                           | Può verificarsi una o più volte<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                     | Può verificarsi una o più volte<br/> <br/> |
 | [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md)<br/> | Deve verificarsi esattamente una volta<br/> <br/>     |
 | [**SplitButtonGallery.MenuLayout**](windowsribbon-element-splitbuttongallery-menulayout.md)<br/> | Può verificarsi al massimo una volta<br/> <br/>      |
@@ -152,7 +152,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Gruppo</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
@@ -182,9 +182,9 @@ facoltativo.
 
 Può verificarsi una o più volte per [**ogni elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup**](windowsribbon-element-menugroup.md) [**o SplitButton.**](windowsribbon-element-splitbutton.md)
 
-**SplitButtonGallery supporta** le [modalità applicazione](ribbon-applicationmodes.md).
+**SplitButtonGallery supporta** le [modalità dell'applicazione](ribbon-applicationmodes.md).
 
-[Interfaccia utente \_ PKEY \_ BooleanValue viene](windowsribbon-reference-properties-uipkey-booleanvalue.md) usato da un'applicazione per eseguire una query sullo stato di attivazione/disattivazione per il controllo pulsante di un controllo **SplitButtonGallery.**
+[Interfaccia utente \_ PKEY \_ BooleanValue viene](windowsribbon-reference-properties-uipkey-booleanvalue.md) usato da un'applicazione per eseguire una query sullo stato di attivazione/disattivazione per il controllo pulsante di un oggetto **SplitButtonGallery.**
 
 Lo screenshot seguente illustra il controllo Raccolta pulsanti di menu [suddivisi](windowsribbon-controls-splitbuttongallery.md) della barra multifunzione in Microsoft Paint per Windows 7.
 
@@ -250,7 +250,7 @@ Questa sezione di codice mostra le **dichiarazioni del controllo SplitButtonGall
 
 <dl> <dt>
 
-[Controllo Raccolta pulsanti di divisione](windowsribbon-controls-splitbuttongallery.md)
+[Controllo Raccolta di pulsanti di menu suddivisi](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

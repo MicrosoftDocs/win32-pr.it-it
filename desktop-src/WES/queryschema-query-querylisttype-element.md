@@ -1,9 +1,9 @@
 ---
-title: Elemento query (QueryListType)
-description: Definisce un set di selettori ed eliminati utilizzati per includere eventi in o escludere eventi dal set di risultati.
+title: Elemento Query (QueryListType)
+description: Definisce un set di selettori ed eliminatori usati per includere o escludere eventi dal set di risultati.
 ms.assetid: 2491d7b7-6fbb-4230-92cf-4bef3d2a51cc
 keywords:
-- Log eventi dell'elemento query
+- Elemento Query EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c105a43d325c0399c681ca9093f1d62d3fb2b973
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6e6b3519a09e404e979e7164b178e0cad937bd74a305cc249ba57de65b3c465
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005181"
 ---
-# <a name="query-querylisttype-element"></a>Elemento query (QueryListType)
+# <a name="query-querylisttype-element"></a>Elemento Query (QueryListType)
 
-Definisce un set di selettori ed eliminati utilizzati per includere eventi in o escludere eventi dal set di risultati.
+Definisce un set di selettori ed eliminatori usati per includere o escludere eventi dal set di risultati.
 
 ``` syntax
 <xs:element name="Query"
@@ -30,7 +30,7 @@ Definisce un set di selettori ed eliminati utilizzati per includere eventi in o 
  />
 ```
 
-L'elemento **query** è definito dal tipo complesso [**QueryListType**](queryschema-querylisttype-complextype.md) .
+**L'elemento Query** è definito dal tipo complesso [**QueryListType.**](queryschema-querylisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **query** è definito dal tipo complesso [**QueryListType**](querysch
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **query** è definito dal tipo complesso [**QueryListType**](querysch
 **Elemento padre**
 </dt> <dt>
 
-[**Query di**](queryschema-querylist-element.md)
+[**QueryList**](queryschema-querylist-element.md)
 </dt> </dl>
 
  

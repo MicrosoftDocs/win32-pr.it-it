@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 82041b36592f00bf71dc7e2d744fcf94b7a666c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7becb86f19c245488d779e1b26ab5321ba3f2aa0ac3c7811d96f9d1cb8a5dbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995693"
 ---
-# <a name="quiescedevice-method-of-the-cim_logicaldevice-class"></a>Metodo QuiesceDevice della classe CIM \_ LogicalDevice
+# <a name="quiescedevice-method-of-the-cim_logicaldevice-class"></a>Metodo QuiesceDevice della classe \_ CiM LogicalDevice
 
-Il metodo **QuiesceDevice** è stato deprecato al posto del metodo **RequestStateChange** più generale che si sovrappone direttamente alla funzionalità fornita da questo metodo.
+Il **metodo QuiesceDevice** è stato deprecato al posto del metodo **RequestStateChange** più generale che si sovrappone direttamente alla funzionalità fornita da questo metodo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,16 +39,16 @@ uint32 QuiesceDevice(
 
 <dl> <dt>
 
-*Mettere in stato* \[ in\]
+*Inattiva* \[ Pollici\]
 </dt> <dd>
 
-Se impostato su **true** , interrompere in modo semplice tutte le attività, se **false** Riprendi.
+Se è impostata **su TRUE,** tutte le attività vengono ripristinate in modo pulito, se **FALSE** riprende l'attività.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -68,7 +68,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

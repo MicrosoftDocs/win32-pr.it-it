@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. columnCount
-description: L'attributo columnCount Recupera il numero di colonne visualizzate.
+title: PLAYLIST.columnCount
+description: L'attributo columnCount recupera il numero di colonne visualizzate.
 ms.assetid: 967e711c-302a-429a-89bd-dcfd9d4dbe45
 keywords:
-- PLAYLIST. columnCount Windows Media Player
+- PLAYLIST.columnCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ee13cc3aa357327eea7d547e73002d410712285
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c2fff66ae4ad7deca4aa49536e973c4e62cfc7ebd64ccb1acc620081f82cfd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747093"
 ---
-# <a name="playlistcolumncount"></a>PLAYLIST. columnCount
+# <a name="playlistcolumncount"></a>PLAYLIST.columnCount
 
-L'attributo **ColumnCount** Recupera il numero di colonne visualizzate.
+**L'attributo columnCount** recupera il numero di colonne visualizzate.
 
 ``` syntax
         elementID.columnCount
@@ -29,7 +29,7 @@ L'attributo **ColumnCount** Recupera il numero di colonne visualizzate.
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di sola lettura (**Long**).
+Questo attributo è un numero di sola **lettura** (**long**).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -45,7 +45,7 @@ Questo attributo è un **numero** di sola lettura (**Long**).
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

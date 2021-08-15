@@ -1,24 +1,24 @@
 ---
-title: Attributo on (Shadow) (la)
-description: Attributo on (Shadow) (la)
+title: Su attributo (shadow)(VML)
+description: Su attributo (shadow)(VML)
 ms.assetid: 234fe63e-8a4a-4067-9d05-a8990d1cee5c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83df69d8c90c99839f55836941746717a205d07a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6fda4d33fbd22d2a7913f13ae8ad874ba3240944f06303f020888aeaafaee88f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103963291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118345852"
 ---
-# <a name="on-attribute-shadowvml"></a>Attributo on (Shadow) (la)
+# <a name="on-attribute-shadowvml"></a>Su attributo (shadow)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina se verrà visualizzata un'ombreggiatura. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,21 +26,21 @@ Determina se verrà visualizzata un'ombreggiatura. Proprietà di lettura/scrittu
 
 [Shadow](msdn-online-vml-shadow-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* on = " *Expression* " >
+<v: *element* on=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . on = "*Expression*"
+*element* .on="*expression*"
 
-*espressione* = *elemento*. on
+*expression* = *Elemento*.on
 
 **Osservazioni:**
 
-Se **true**, verrà visualizzata l'ombreggiatura. Il valore predefinito è **False**.
+Se **True,** verrà visualizzata l'ombreggiatura. Il valore predefinito è **False**.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
@@ -61,6 +61,6 @@ Verrà visualizzata l'ombreggiatura.
 
 
 
- 
+ 
 
- 
+ 

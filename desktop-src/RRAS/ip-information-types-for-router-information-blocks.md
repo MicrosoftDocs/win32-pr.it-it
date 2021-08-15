@@ -4,12 +4,12 @@ description: Informazioni sui tipi di informazioni IP elencati in Ipinfoid.h. Us
 ms.assetid: 911c61d4-e500-48c6-8861-39dbc09ab4e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a49abdb139eaa94440e380ce710280d744bd6ac5
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 93a94829c116ac2dece2a9076d2b3cf37b42d60874bcc063a6f43811ee61b82b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117790985"
 ---
 # <a name="ip-information-types-for-router-information-blocks"></a>Tipi di informazioni IP per i blocchi di informazioni del router
 
@@ -28,7 +28,7 @@ I tipi di informazioni seguenti sono elencati in Ipinfoid.h. Usare questi tipi d
 -   INFORMAZIONI SUL \_ LIMITE MCAST \_ \_ IP
 -   INFORMAZIONI \_ SULLA PRIORITÀ DEL \_ PROT \_ IP
 -   INFORMAZIONI \_ SULLA ROUTE \_ IP
--   INFORMAZIONI \_ SUL DISCO DEL ROUTER \_ \_ IP
+-   INFORMAZIONI \_ SUL DISCO DEL \_ \_ ROUTER IP
 
  
 

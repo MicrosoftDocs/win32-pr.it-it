@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture2D:: Load (int)'
-description: 'Legge i dati della trama. | Funzione RWTexture2D:: Load (int)'
+title: Funzione RWTexture2D::Load(int)
+description: Legge i dati delle trame. | Funzione RWTexture2D::Load(int)
 ms.assetid: AEBB9C78-BE4B-4121-93CC-EE03B9925CF0
 keywords:
-- Funzione Load HLSL
+- Caricare la funzione HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab5f8d755ad4af3127a0c238defc9f1c422061bc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 913cf8372cb08860db639a9ba10bed872648526e7c8850e2e101912fb9f1354e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510918"
 ---
-# <a name="rwtexture2dloadint-function"></a>Funzione RWTexture2D:: Load (int)
+# <a name="rwtexture2dloadint-function"></a>Funzione RWTexture2D::Load(int)
 
-Legge i dati della trama.
+Legge i dati delle trame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ Legge i dati della trama.
 
 <dl> <dt>
 
-*Posizione* \[ in\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,7 +52,7 @@ Posizione della trama.
 
 Digitare:
 
-Il tipo restituito corrisponde al tipo nella dichiarazione per l'oggetto [**RWTexture2D**](sm5-object-rwtexture2d.md) .
+Il tipo restituito corrisponde al tipo nella dichiarazione per [**l'oggetto RWTexture2D.**](sm5-object-rwtexture2d.md)
 
 ## <a name="remarks"></a>Commenti
 
@@ -60,7 +60,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 <dl> <dt>
 
-[Metodi Load](rwtexture2d-load.md)
+[Metodi di caricamento](rwtexture2d-load.md)
 </dt> </dl>
 
  

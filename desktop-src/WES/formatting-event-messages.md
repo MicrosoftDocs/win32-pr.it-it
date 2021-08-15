@@ -1,32 +1,32 @@
 ---
 title: Formattazione dei messaggi di evento
-description: Un evento può contenere stringhe di messaggi localizzate che è possibile formattare per la visualizzazione.
+description: Un evento può contenere stringhe di messaggio localizzate che è possibile formattare per la visualizzazione.
 ms.assetid: 31dd8276-1925-4a0e-9e2a-6966e8086238
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 314742838e5a756787385930e5122117b3a012c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 119f7467ab36a46039c32c6ffb6f347ca4450966da5b69c1531ac1a966e0b7f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005291"
 ---
 # <a name="formatting-event-messages"></a>Formattazione dei messaggi di evento
 
-Un evento può contenere stringhe di messaggi localizzate che è possibile formattare per la visualizzazione. Per ottenere una stringa di messaggio dall'evento, chiamare la funzione [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) . Un evento può contenere le stringhe di messaggio seguenti:
+Un evento può contenere stringhe di messaggio localizzate che è possibile formattare per la visualizzazione. Per ottenere una stringa di messaggio dall'evento, chiamare la [**funzione EvtFormatMessage.**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) Un evento può contenere le stringhe di messaggio seguenti:
 
--   Una stringa di messaggio per l'evento stesso.
--   Stringa di messaggio che descrive il valore di livello assegnato all'evento.
+-   Stringa di messaggio per l'evento stesso.
+-   Stringa di messaggio che descrive il valore del livello assegnato all'evento.
 -   Stringa di messaggio che descrive il valore dell'attività assegnato all'evento.
--   Stringa di messaggio che descrive il valore opcode assegnato all'evento.
+-   Stringa di messaggio che descrive il valore del codice operativo assegnato all'evento.
 -   Stringa di messaggio che descrive i valori delle parole chiave assegnati all'evento.
 -   Stringa di messaggio che descrive il valore del canale assegnato all'evento.
 
 È anche possibile usare [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) per ottenere la stringa di messaggio per il provider o una stringa XML che contiene l'evento e tutte le stringhe di messaggio.
 
-Oltre a recuperare le stringhe di messaggio dagli eventi interrogati, è anche possibile ottenere le stringhe di messaggio dai metadati del provider. Per informazioni dettagliate sulla formattazione di un messaggio in base a un identificatore di messaggio ottenuto dai metadati del provider, vedere [recupero dei metadati di un provider](getting-a-provider-s-metadata-.md).
+Oltre a ottenere le stringhe di messaggio dagli eventi su cui si esegue la query, è anche possibile ottenere le stringhe di messaggio dai metadati del provider. Per informazioni dettagliate sulla formattazione di un messaggio in base a un identificatore di messaggio che si ottiene dai metadati del provider, vedere [Recupero dei metadati di un provider.](getting-a-provider-s-metadata-.md)
 
-Nell'esempio seguente viene illustrato come ottenere le stringhe di messaggio da un evento.
+Nell'esempio seguente viene illustrato come ottenere le stringhe di messaggio da un evento .
 
 
 ```C++
@@ -218,9 +218,9 @@ LPWSTR GetMessageString(EVT_HANDLE hMetadata, EVT_HANDLE hEvent, EVT_FORMAT_MESS
 
 
 
- 
+ 
 
- 
+ 
 
 
 

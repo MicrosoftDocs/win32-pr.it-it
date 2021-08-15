@@ -1,19 +1,19 @@
 ---
 title: Funzioni per i client
-description: Questa sezione descrive le funzioni API usate nelle applicazioni client di automazione interfaccia utente Microsoft.
+description: Questa sezione descrive le funzioni API usate in Microsoft Automazione interfaccia utente applicazioni client.
 ms.assetid: abf28ebe-c902-4690-a445-d3e73214c41b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad63b78ee8419e4e095626e609db22127e84ba53
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 612283f20305e67302e243edd5e1c76d144e5c413989fdba382deb003b9fb024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324712"
 ---
 # <a name="functions-for-clients"></a>Funzioni per i client
 
-Questa sezione descrive le funzioni API usate nelle applicazioni client di automazione interfaccia utente Microsoft.
+Questa sezione descrive le funzioni API usate in Microsoft Automazione interfaccia utente applicazioni client.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,7 +21,7 @@ Questa sezione descrive le funzioni API usate nelle applicazioni client di autom
 
 | Funzione                                                                               | Descrizione                                                                         |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Verifica se una finestra dispone di un'implementazione del provider di automazione interfaccia utente.<br/> |
+| [**UiaHasServerSideProvider**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiahasserversideprovider)<br/> | Verifica se una finestra ha un'implementazione Automazione interfaccia utente provider.<br/> |
 
 
 
@@ -31,7 +31,7 @@ Questa sezione descrive le funzioni API usate nelle applicazioni client di autom
 
 <dl> <dt>
 
-[Client di automazione interfaccia utente](uiauto-entry-uiautoclientsforwin32apps.md)
+[Automazione interfaccia utente client](uiauto-entry-uiautoclientsforwin32apps.md)
 </dt> </dl>
 
  

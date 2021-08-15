@@ -1,7 +1,7 @@
 ---
-description: La struttura STATIONQUERY fornisce informazioni su un computer specifico utilizzando Network Monitor.
+description: La struttura STATIONQUERY fornisce informazioni su un computer specifico usando Network Monitor.
 ms.assetid: b7202c6b-e2b9-4a6f-8b87-3d11879f1d69
-title: Struttura STATIONQUERY (Netmon. h)
+title: Struttura STATIONQUERY (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: de76c4da7bc27d76c04aeeaa7a46d69134e411ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2e46f4c0d213091a3915b5310d7768a193d33e5ac3391fd3bc3c6781e32cb57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363057"
 ---
 # <a name="stationquery-structure"></a>Struttura STATIONQUERY
 
-La struttura **STATIONQUERY** fornisce informazioni su un computer specifico utilizzando Network Monitor.
+La **struttura STATIONQUERY** fornisce informazioni su un computer specifico usando Network Monitor.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,16 +51,16 @@ typedef struct _STATIONQUERY {
 **Flag**
 </dt> <dd>
 
-Flag che identificano lo stato corrente del Network Monitor.
+Flag che identificano lo stato corrente Network Monitor.
 
 
 
 | Valore                                                                                                                                                                                                                | Significato                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <span id="STATIONQUERY_FLAGS_LOADED"></span><span id="stationquery_flags_loaded"></span><dl> <dt>**\_flag STATIONQUERY \_ caricati**</dt> </dl>                   | Il driver viene caricato, ma il kernel non lo è.<br/> |
-| <span id="STATIONQUERY_FLAGS_RUNNING"></span><span id="stationquery_flags_running"></span><dl> <dt>**\_flag STATIONQUERY \_ in esecuzione**</dt> </dl>                | Il driver viene caricato ma non acquisisce i dati.<br/> |
-| <span id="STATIONQUERY_FLAGS_CAPTURING"></span><span id="stationquery_flags_capturing"></span><dl> <dt>**\_acquisizione di flag STATIONQUERY \_**</dt> </dl>          | Il driver è attivamente coinvolto in un'acquisizione.<br/> |
-| <span id="STATIONQUERY_FLAGS_TRANSMITTING"></span><span id="stationquery_flags_transmitting"></span><dl> <dt>**\_trasmissione di flag STATIONQUERY \_**</dt> </dl> | Questo flag è obsoleto.<br/>                       |
+| <span id="STATIONQUERY_FLAGS_LOADED"></span><span id="stationquery_flags_loaded"></span><dl> <dt>**FLAG STATIONQUERY \_ \_ CARICATI**</dt> </dl>                   | Il driver viene caricato, ma il kernel non lo è.<br/> |
+| <span id="STATIONQUERY_FLAGS_RUNNING"></span><span id="stationquery_flags_running"></span><dl> <dt>**FLAG STATIONQUERY \_ \_ IN ESECUZIONE**</dt> </dl>                | Il driver viene caricato ma non acquisisce dati.<br/> |
+| <span id="STATIONQUERY_FLAGS_CAPTURING"></span><span id="stationquery_flags_capturing"></span><dl> <dt>**ACQUISIZIONE DI FLAG STATIONQUERY \_ \_**</dt> </dl>          | Il driver è attivamente coinvolto in un'acquisizione.<br/> |
+| <span id="STATIONQUERY_FLAGS_TRANSMITTING"></span><span id="stationquery_flags_transmitting"></span><dl> <dt>**FLAG STATIONQUERY \_ \_ CHE TRASMETTONO**</dt> </dl> | Questo flag è obsoleto.<br/>                       |
 
 
 
@@ -71,14 +71,14 @@ Flag che identificano lo stato corrente del Network Monitor.
 **BCDVerMinor**
 </dt> <dd>
 
-Numero di versione secondario di Network Monitor installato nel computer.
+Numero di versione secondaria Network Monitor installato nel computer.
 
 </dd> <dt>
 
 **BCDVerMajor**
 </dt> <dd>
 
-Numero di versione principale di Network Monitor installato nel computer.
+Numero di versione principale Network Monitor installato nel computer.
 
 </dd> <dt>
 
@@ -120,20 +120,20 @@ Indirizzo NIC.
 **WMachineName**
 </dt> <dd>
 
-Nome del computer Unicode. Questo membro si applica a Network Monitor 2,0 o versione successiva.
+Nome del computer Unicode. Questo membro si applica Network Monitor 2.0 o versione successiva.
 
 </dd> <dt>
 
 **WUserName**
 </dt> <dd>
 
-Nome utente Unicode. Questo membro si applica a Network Monitor 2,0 o versione successiva.
+Nome utente Unicode. Questo membro si applica Network Monitor 2.0 o versione successiva.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice di queste strutture viene utilizzata dalla struttura [QUERYTABLE](querytable.md) per fornire un elenco dei computer che attualmente utilizzano Network Monitor per acquisire i dati.
+Una matrice di queste strutture viene usata dalla struttura [QUERYTABLE](querytable.md) per fornire un elenco dei computer che attualmente usano Network Monitor per acquisire i dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -143,7 +143,7 @@ Una matrice di queste strutture viene utilizzata dalla struttura [QUERYTABLE](qu
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -151,7 +151,7 @@ Una matrice di queste strutture viene utilizzata dalla struttura [QUERYTABLE](qu
 
 <dl> <dt>
 
-[QUERYTABLE](querytable.md)
+[Querytable](querytable.md)
 </dt> </dl>
 
  

@@ -1,24 +1,24 @@
 ---
-description: Uso di gestione metodi di input
+description: Uso di Gestione metodi di input
 ms.assetid: d98d5273-7827-4d77-8a4a-cc93dcf9a497
-title: Uso di gestione metodi di input
+title: Uso di Gestione metodi di input
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f10d4bf2f166352a9b783efe03748ef480d01b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89ee284ae9ad41ba5637ad1e02538ff7f1b269cb4f161d57b51b24e8419c5d0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389535"
 ---
-# <a name="using-input-method-manager"></a>Uso di gestione metodi di input
+# <a name="using-input-method-manager"></a>Uso di Gestione metodi di input
 
-La discussione sull'uso di IMM è divisa nelle sezioni seguenti:
+La discussione sull'uso di IMM è suddivisa nelle sezioni seguenti:
 
--   [Sviluppo di applicazioni con più thread IME-Aware](developing-ime-aware-multiple-thread-applications.md)
--   [Gestione di Unicode in un'applicazione IME-Aware](handling-unicode-in-an-ime-aware-application.md)
--   [Elaborazione del \_ messaggio di \_ composizione IME WM](processing-the-wm-ime-composition-message.md)
--   [Utilizzo della riconversione con un IME](using-reconversion-with-an-ime.md)
+-   [Sviluppo IME-Aware applicazioni a thread multipli](developing-ime-aware-multiple-thread-applications.md)
+-   [Gestione di Unicode in un'applicazione IME-Aware unicode](handling-unicode-in-an-ime-aware-application.md)
+-   [Elaborazione del messaggio COMPOSIZIONE \_ IME WM \_](processing-the-wm-ime-composition-message.md)
+-   [Uso della riconversione con un IME](using-reconversion-with-an-ime.md)
 
  
 

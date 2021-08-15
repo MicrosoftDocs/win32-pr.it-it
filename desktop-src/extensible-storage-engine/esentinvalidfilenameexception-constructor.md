@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentInvalidFilenameException'
+description: Altre informazioni sul costruttore EsentInvalidFilenameException
 title: Costruttore EsentInvalidFilenameException
 TOCTitle: 'EsentInvalidFilenameException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidFilenameException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 14d7258c553e99491e114ea89db4a5379b619f3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f4e4a7115fe535f6796939fe002e2d951477f18b995b968d529a95318411901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118494388"
 ---
 # <a name="esentinvalidfilenameexception-constructor"></a>Costruttore EsentInvalidFilenameException
 
 Inizializza una nuova istanza della classe EsentInvalidFilenameException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentInvalidFilenameException()
 
 [Membri di EsentInvalidFilenameException](./esentinvalidfilenameexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

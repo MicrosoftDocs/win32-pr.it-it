@@ -1,7 +1,7 @@
 ---
-description: Timestamp l'oggetto specificato e, facoltativamente, restituisce un puntatore a una struttura del contesto del FIRMATARIo \_ che contiene un puntatore a un BLOB. Questa funzione può essere usata per eseguire l'infrastruttura a chiave pubblica X. 509, i timestamp RFC 3161&\# 8211; conformi.
+description: Timestamp dell'oggetto specificato e, facoltativamente, restituisce un puntatore a una struttura SIGNER \_ CONTEXT che contiene un puntatore a un BLOB. Questa funzione può essere usata per eseguire L'infrastruttura a chiave pubblica X.509, RFC 3161&\# 8211; conforme, timestamp.
 ms.assetid: fb82545b-c00f-44eb-96f4-aa27a125c8d9
-title: SignerTimeStampEx2 (funzione)
+title: Funzione SignerTimeStampEx2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 07dc9162c9cb8832e93e2518c7208d235d878875
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5a9bfc81c3196657f611c9263e0d957ca867a64479b34900dce7078237e195f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898270"
 ---
-# <a name="signertimestampex2-function"></a>SignerTimeStampEx2 (funzione)
+# <a name="signertimestampex2-function"></a>Funzione SignerTimeStampEx2
 
-Il timestamp della funzione **SignerTimeStampEx2** indica l'oggetto specificato e, facoltativamente, restituisce un puntatore a una struttura del [**\_ contesto del firmatario**](signer-context.md) che contiene un puntatore a un [*BLOB*](../secgloss/b-gly.md). Questa funzione può essere usata per eseguire l'infrastruttura a chiave pubblica X. 509, conforme a RFC 3161, timestamp.
+La **funzione SignerTimeStampEx2** contrassegna l'oggetto specificato e restituisce facoltativamente un puntatore a una [**struttura SIGNER \_ CONTEXT**](signer-context.md) che contiene un puntatore a un [*BLOB.*](../secgloss/b-gly.md) Questa funzione può essere usata per eseguire timestamp con chiave pubblica X.509, conformi a RFC 3161.
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e utilizzare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegare dinamicamente a Mssign32.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mssign32.dll.
 
  
 
@@ -50,7 +50,7 @@ HRESULT WINAPI SignerTimeStampEx2(
 
 <dl> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Valore che specifica il tipo di timestamp da generare. Questo parametro può avere uno dei valori seguenti. I valori si escludono a vicenda.
@@ -59,8 +59,8 @@ Valore che specifica il tipo di timestamp da generare. Questo parametro può ave
 
 | Valore                                                                                                                                                                                                          | Significato                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl> <dt>**TIMESTAMP del FIRMATARIo \_ \_ AUTHENTICODE**</dt> </dl> | Specifica un timestamp Authenticode.<br/>       |
-| <span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl> <dt>**TIMESTAMP del FIRMATARIo \_ \_ RFC3161**</dt> </dl>                | Specifica un timestamp conforme a RFC 3161.<br/> |
+| <span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl> <dt>**\_AUTHENTICODE DEL TIMESTAMP \_ DEL FIRMATARIO**</dt> </dl> | Specifica un timestamp Authenticode.<br/>       |
+| <span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl> <dt>**TIMESTAMP \_ DEL \_ FIRMATARIO RFC3161**</dt> </dl>                | Specifica un timestamp conforme a RFC 3161.<br/> |
 
 
 
@@ -68,49 +68,49 @@ Valore che specifica il tipo di timestamp da generare. Questo parametro può ave
 
 </dd> <dt>
 
-*pSubjectInfo* \[ in\]
+*pSubjectInfo* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo di una struttura di [**\_ \_ informazioni sul soggetto del firmatario**](signer-subject-info.md) che rappresenta l'oggetto di cui è stato indicato il timestamp.
+Indirizzo di una struttura [**SIGNER \_ SUBJECT \_ INFO**](signer-subject-info.md) che rappresenta l'oggetto da impostare come timestamp.
 
 </dd> <dt>
 
-*pwszHttpTimeStamp* \[ in\]
+*pwszHttpTimeStamp* \[ Pollici\]
 </dt> <dd>
 
-Indirizzo di una stringa Unicode con terminazione null che contiene l'URL di un server di timestamp.
+Indirizzo di una stringa Unicode con terminazione Null che contiene l'URL di un server timestamp.
 
 </dd> <dt>
 
-*dwAlgId* \[ in\]
+*dwAlgId* \[ Pollici\]
 </dt> <dd>
 
-Specifica un algoritmo hash da usare per l'esecuzione di timestamp conformi a RFC 3161. Questo parametro viene ignorato per gli indicatori di data e ora Authenticode.
+Specifica un algoritmo hash da utilizzare per l'esecuzione di timestamp conformi a RFC 3161. Questo parametro viene ignorato per i timestamp Authenticode.
 
 </dd> <dt>
 
-*psRequest* \[ in\]
+*psRequest* \[ Pollici\]
 </dt> <dd>
 
-facoltativo. Indirizzo di una struttura [**degli \_ attributi Crypt**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attributes) che contiene attributi aggiuntivi aggiunti alla richiesta del timestamp.
+facoltativo. Indirizzo di una [**struttura CRYPT \_ ATTRIBUTES**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_attributes) che contiene attributi aggiuntivi che vengono aggiunti alla richiesta di timestamp.
 
-Questo parametro è facoltativo e può essere **null** se non è incluso.
+Questo parametro è facoltativo e può essere **NULL** se non è incluso.
 
 </dd> <dt>
 
-*pSipData* \[ in\]
+*pSipData* \[ Pollici\]
 </dt> <dd>
 
-facoltativo. Valore a 32 bit passato come dati aggiuntivi alle funzioni SIP ( [*Subject Interface Package*](../secgloss/s-gly.md) ). Il formato e il contenuto di questo parametro sono definiti dal provider SIP.
+facoltativo. Valore a 32 bit passato come dati aggiuntivi alle funzioni [*DELS (Subject Interface Package).*](../secgloss/s-gly.md) Il formato e il contenuto di questo parametro sono definiti dal provider SIP.
 
-Questo parametro è facoltativo e può essere **null** se non è incluso.
+Questo parametro è facoltativo e può essere **NULL** se non è incluso.
 
 </dd> <dt>
 
-*ppSignerContext* \[ out\]
+*ppSignerContext* \[ Cambio\]
 </dt> <dd>
 
-facoltativo. Indirizzo di un puntatore alla struttura del [**\_ contesto del firmatario**](signer-context.md) che contiene il BLOB firmato. Al termine dell'uso della struttura del **\_ contesto del firmatario** , liberarla chiamando la funzione [**SignerFreeSignerContext**](signerfreesignercontext.md) .
+facoltativo. Indirizzo di un puntatore alla struttura [**SIGNER \_ CONTEXT**](signer-context.md) che contiene il BLOB firmato. Al termine dell'uso della **struttura SIGNER \_ CONTEXT,** liberarla chiamando la [**funzione SignerFreeSignerContext.**](signerfreesignercontext.md)
 
 </dd> </dl>
 
@@ -118,7 +118,7 @@ facoltativo. Indirizzo di un puntatore alla struttura del [**\_ contesto del fir
 
 Se la funzione ha esito positivo, la funzione restituisce S \_ OK.
 
-Se la funzione ha esito negativo, restituisce un valore **HRESULT** che indica l'errore. Per un elenco di codici di errore comuni, vedere [valori HRESULT comuni](common-hresult-values.md).
+Se la funzione ha esito negativo, restituisce un **valore HRESULT** che indica l'errore. Per un elenco dei codici di errore comuni, vedere [Valori HRESULT comuni](common-hresult-values.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -126,8 +126,8 @@ Se la funzione ha esito negativo, restituisce un valore **HRESULT** che indica l
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                 |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

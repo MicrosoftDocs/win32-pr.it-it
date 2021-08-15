@@ -1,5 +1,5 @@
 ---
-description: Informazioni su come usare l'argomento CRUMB in Windows ricerca come mezzo per controllare l'ambito di una ricerca.
+description: Informazioni su come usare l'argomento CRUMB Windows ricerca come mezzo per controllare l'ambito di una ricerca.
 ms.assetid: b0b974ae-0573-45e4-888e-07138604b62e
 title: Argomento CRUMB (Windows ricerca)
 ms.topic: article
@@ -56,7 +56,7 @@ crumb=location:c%3a%5cMyVacationPix,Vacation&
 
 ## <a name="using-crumb-with-vista-location"></a>Uso di crumb con Vista (posizione)
 
-Nel parametro crumb Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale disponibile solo `location` in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
+Nel parametro crumb, Windows Vista supporta AQS completo e anche la proprietà , che ha un'implementazione speciale disponibile solo `location` in Windows Vista. È possibile usare una stringa AQS o la proprietà `location` all'interno di un singolo parametro crumb, ma non entrambi. Se il parametro crumb include AQS, tutti gli altri elementi nel parametro crumb vengono ignorati.
 
 La `location` proprietà consente di specificare un percorso in cui eseguire la ricerca. Windows Vista può ignorare l'indicizzatore e attraversare direttamente la directory se il percorso non rientra nell'ambito della ricerca per indicizzazione dell'indicizzatore. Di conseguenza, queste ricerche possono essere più lente delle ricerche che usano l'indicizzatore.
 
@@ -102,7 +102,7 @@ search-ms:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-Nel primo esempio viene eseguita una ricerca di "vacation" a partire dal percorso shell://Personal (un collegamento speciale alla cartella Documenti dell'utente), incluse tale cartella e tutte le sottocartelle. Vedere la tabella seguente.
+Nel primo esempio viene eseguita una ricerca di "vacation" a partire dal percorso shell://Personal (un collegamento speciale alla cartella Documenti dell'utente), inclusa la cartella e tutte le sottocartelle. Vedere la tabella seguente.
 
 Nel secondo esempio viene eseguita una ricerca all'interno di C: \\ Immagini, ma non in C: \\ Immagini \\ duplicate.
 
@@ -125,7 +125,7 @@ crumb=location:shell%3a<LocationName>&
 
 ## <a name="using-crumb-with-windows-xp-kind-and-store"></a>Uso di crumb con Windows XP (tipo e archivio)
 
-Per Windows ricerca in Windows XP (WDS 3.x), i termini "kind" e "store" di AQS hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
+Ad Windows ricerca in Windows XP (WDS 3.x), i termini "kind" e "store" di AQS hanno un'implementazione speciale. I valori "kind" sono gli stessi [usati in WDS 2.x.](../lwef/-search-2x-wds-perceivedtype.md) I valori "store" includono quanto segue:
 
 -   Mapi
 -   file

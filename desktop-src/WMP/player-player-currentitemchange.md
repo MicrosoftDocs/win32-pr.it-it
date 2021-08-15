@@ -1,10 +1,10 @@
 ---
-title: Evento Player. CurrentItemChange
-description: L'evento CurrentItemChange si verifica quando viene modificato Controls. currentItem.
+title: Evento Player.CurrentItemChange
+description: L'evento CurrentItemChange si verifica quando viene modificato Controls.currentItem.
 ms.assetid: e6f68aeb-d7e7-460b-adc9-647f28c678a1
 keywords:
-- Media Player di Windows Event CurrentItemChange
-- Windows Event CurrentItemChange Media Player, classe Player
+- Evento CurrentItemChange Windows Media Player
+- Evento CurrentItemChange Windows Media Player , classe Player
 - Classe Player Windows Media Player, evento CurrentItemChange
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4c425184bf4b338177ec892ed5362c085dd8cb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ed0ca3c8333c7261c8332bcc124c905c5540f5cdf0dbefe3f34f121eb901cc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338126"
 ---
-# <a name="playercurrentitemchange-event"></a>Evento Player. CurrentItemChange
+# <a name="playercurrentitemchange-event"></a>Evento Player.CurrentItemChange
 
-L'evento **CurrentItemChange** si verifica quando i *controlli*. **CurrentItem** modifiche.
+**L'evento CurrentItemChange** si verifica quando *controls*. **modifiche currentItem.**
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ Player.CurrentItemChange()
 
 ## <a name="parameters"></a>Parametri
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -46,7 +46,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene illustrato un gestore eventi per il *lettore*. evento **currentItemChange** . L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene illustrato un gestore eventi per *player*. **Evento currentItemChange.** **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -70,7 +70,7 @@ Nell'esempio JScript seguente viene illustrato un gestore eventi per il *lettore
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Nell'esempio JScript seguente viene illustrato un gestore eventi per il *lettore
 
 <dl> <dt>
 
-[**Controls. currentItem**](controls-currentitem.md)
+[**Controls.currentItem**](controls-currentitem.md)
 </dt> <dt>
 
 [**Oggetto Player**](player-object.md)

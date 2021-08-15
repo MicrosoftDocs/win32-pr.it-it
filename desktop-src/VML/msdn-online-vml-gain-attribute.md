@@ -1,24 +1,24 @@
 ---
-title: Attributo Gain la
-description: Attributo Gain la
+title: Attributo di guadagno VML
+description: Attributo di guadagno VML
 ms.assetid: 2ac034ff-f3dd-4e98-ad9d-4d9cdad28f3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5675503def2f48d4c5fbf7154f0d0d05b2fe417d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cc7b72f1588608f4988731111583e758b0207080eb3e02768a45b58c39071b18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104399379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057829"
 ---
-# <a name="vml-gain-attribute"></a>Attributo Gain la
+# <a name="vml-gain-attribute"></a>Attributo di guadagno VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce l'intensità di tutti i colori in un'immagine. Proprietà di lettura/scrittura. **VgNumber**.
 
@@ -26,27 +26,27 @@ Definisce l'intensità di tutti i colori in un'immagine. Proprietà di lettura/s
 
 [ImageData](msdn-online-vml-imagedata-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* Gain = " *Expression* " >
+<v: *element* gain=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . Gain = "*Expression*"
+*elemento* .gain="*expression*"
 
-*espressione* = *elemento*. Gain
+*expression* = *elemento*.gain
 
 **Osservazioni:**
 
-Questo attributo definisce la luminosità del colore bianco, che influisce su tutti gli altri colori. I valori variano da 0 a infinito. Il valore predefinito è 1,0. Il valore 0 non visualizza alcuna immagine. I valori maggiori di 1 alleggeriscono l'immagine e i valori minori di 1 fanno sembrare il grigio.
+Questo attributo definisce la luminosità del colore bianco, che influisce su tutti gli altri colori. I valori sono da 0 a infinito. Il valore predefinito è 1,0. Il valore 0 non visualizza alcuna immagine. I valori maggiori di 1 illuminano l'immagine e i valori minori di 1 rendono l'immagine più grigia.
 
-Questo attributo può essere utilizzato per creare effetti interessanti.
+Questo attributo può essere usato per creare effetti interessanti.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-L'immagine verrà visualizzata con tutti i colori tendenti verso il grigio.
+L'immagine verrà visualizzata con tutti i colori tendenti al grigio.
 
 
 ```HTML
@@ -63,6 +63,6 @@ L'immagine verrà visualizzata con tutti i colori tendenti verso il grigio.
 
 
 
- 
+ 
 
- 
+ 

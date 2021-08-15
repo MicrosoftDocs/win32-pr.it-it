@@ -1,9 +1,9 @@
 ---
-title: 'Metodi di caricamento di StructuredBuffer:: StructuredBuffer'
-description: Legge i dati del buffer da un StructuredBuffer.
+title: Metodi StructuredBuffer::StructuredBuffer Load
+description: Legge i dati del buffer da un structuredbuffer.
 ms.assetid: 4c797f36-d8e6-46ed-8ff0-248c28f82998
 keywords:
-- Metodi Load HLSL
+- Metodi di caricamento HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: b294671ab1d67b3583f2f119f2a77cf3d22a301f
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 3a92c96283a8d835c4717a9ab54b580d8caf97b227b9a12aa0d97d0022d4350d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104045977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117724440"
 ---
-# <a name="structuredbufferload-methods"></a>Metodi StructuredBuffer:: Load
+# <a name="structuredbufferload-methods"></a>Metodi StructuredBuffer::Load
 
-Legge i dati del buffer da un [**StructuredBuffer**](sm5-object-structuredbuffer.md).
+Legge i dati del buffer da [**un oggetto StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,8 +29,8 @@ Legge i dati del buffer da un [**StructuredBuffer**](sm5-object-structuredbuffer
 
 | Metodo                                                      | Descrizione                                                          |
 |:------------------------------------------------------------|:---------------------------------------------------------------------|
-| [**Load (int, uint)**](structuredbuffer-load-float-uint-.md) | Legge i dati del buffer e restituisce lo stato dell'operazione.<br/> |
-| [**Caricamento (int)**](structuredbuffer-load-float-.md)           | Legge i dati del buffer.<br/>                                        |
+| [**Load(int,uint)**](structuredbuffer-load-float-uint-.md) | Legge i dati del buffer e restituisce lo stato dell'operazione.<br/> |
+| [**Load(int)**](structuredbuffer-load-float-.md)           | Legge i dati del buffer.<br/>                                        |
 
 
 

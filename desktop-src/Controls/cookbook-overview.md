@@ -4,12 +4,12 @@ description: Questo argomento illustra come configurare l'applicazione per garan
 ms.assetid: eb6c2469-25b9-43c4-a6ca-391a7b2859b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4673d0a47f42f557e09f4afe46131cd48bad1b0
-ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
+ms.openlocfilehash: f259be6165bd3a4f9f5a655aaecf0fe6837de3dce057848ba92ac737e608fbc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113102170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413367"
 ---
 # <a name="enabling-visual-styles"></a>Abilitazione degli stili di visualizzazione
 
@@ -29,13 +29,13 @@ In questo argomento sono incluse le sezioni seguenti.
 
 ## <a name="using-manifests-or-directives-to-ensure-that-visual-styles-can-be-applied-to-applications"></a>Uso di manifesti o direttive per garantire che gli stili di visualizzazione possano essere applicati alle applicazioni
 
-Per consentire all'applicazione di usare gli stili di visualizzazione, è necessario usare ComCtl32.dll versione 6 o successiva. Poiché la versione 6 non è ridistribuibile, è disponibile solo quando l'applicazione è in esecuzione in una versione di Windows che la contiene. Windows viene fornito sia con la versione 5 che con la versione 6. ComCtl32.dll versione 6 contiene sia i controlli utente che i controlli comuni. Per impostazione predefinita, le applicazioni usano i controlli utente definiti in User32.dll e i controlli comuni definiti in ComCtl32.dll versione 5. Per un elenco delle versioni dll e delle relative piattaforme di distribuzione, vedere [Versioni di controllo comuni](common-control-versions.md).
+Per consentire all'applicazione di usare gli stili di visualizzazione, è necessario usare ComCtl32.dll versione 6 o successiva. Poiché la versione 6 non è ridistribuibile, è disponibile solo quando l'applicazione è in esecuzione in una versione di Windows che la contiene. Windows è disponibile sia con la versione 5 che con la versione 6. ComCtl32.dll versione 6 contiene sia i controlli utente che i controlli comuni. Per impostazione predefinita, le applicazioni usano i controlli utente definiti in User32.dll e i controlli comuni definiti in ComCtl32.dll versione 5. Per un elenco delle versioni dll e delle relative piattaforme di distribuzione, vedere [Versioni di controllo comuni](common-control-versions.md).
 
 Se si vuole che l'applicazione usi gli stili di visualizzazione, è necessario aggiungere un manifesto dell'applicazione o una direttiva del compilatore che indichi che è necessario usare ComCtl32.dll versione 6, se disponibile.
 
 Un manifesto dell'applicazione consente a un'applicazione di specificare le versioni di un assembly necessarie. In Microsoft Win32 un assembly è un set di DLL e un elenco di oggetti versionable contenuti all'interno di tali DLL.
 
-I manifesti vengono scritti in XML. Il nome del file manifesto dell'applicazione è il nome del file eseguibile seguito dall'estensione .manifest. ad esempio MyApp.exe.manifest. Il manifesto di esempio seguente mostra che la prima sezione descrive il manifesto stesso. Nella tabella seguente vengono illustrati gli attributi impostati **dall'elemento assemblyIdentity** nella sezione relativa alla descrizione del manifesto.
+I manifesti vengono scritti in XML. Il nome del file manifesto dell'applicazione è il nome del file eseguibile seguito dall'estensione manifest. ad esempio MyApp.exe.manifest. Il manifesto di esempio seguente mostra che la prima sezione descrive il manifesto stesso. Nella tabella seguente vengono illustrati gli attributi impostati **dall'elemento assemblyIdentity** nella sezione relativa alla descrizione del manifesto.
 
 
 
@@ -44,7 +44,7 @@ I manifesti vengono scritti in XML. Il nome del file manifesto dell'applicazione
 | version               | Versione del manifesto. La versione deve essere nel formato major.minor.revision.build, ovvero n.n.n.n.n, dove n <=65535). |
 | processorArchitecture | Processore per cui viene sviluppata l'applicazione.                                                                          |
 | name                  | Include il nome della società, il nome del prodotto e il nome dell'applicazione.                                                                   |
-| tipo                  | Tipo dell'applicazione, ad esempio Win32.                                                                                    |
+| tipo                  | Tipo di applicazione, ad esempio Win32.                                                                                    |
 
 
 
@@ -70,7 +70,7 @@ Il manifesto di esempio fornisce anche una descrizione dell'applicazione e speci
 Di seguito è riportato un esempio di file manifesto.
 
 > [!IMPORTANT]
-> Impostare la voce **processorArchitecture** su **"X86"** se l'applicazione è destinata alla piattaforma Windows a 32 bit o **su "amd64"** se l'applicazione è destinata alla piattaforma Windows a 64 bit. È anche possibile specificare **" \* "**, che garantisce che tutte le piattaforme siano destinate, come illustrato negli esempi seguenti.
+> Impostare la voce **processorArchitecture** su **"X86"** se l'applicazione è destinata alla piattaforma Windows a 32 bit o su **"amd64"** se l'applicazione è destinata alla piattaforma Windows a 64 bit. È anche possibile specificare **" \* "**, che garantisce che tutte le piattaforme siano destinate, come illustrato negli esempi seguenti.
 
  
 
@@ -214,7 +214,7 @@ Quando si compila l'applicazione, il manifesto verrà aggiunto come risorsa bina
 
 È possibile aggiungere il supporto per gli stili di visualizzazione a un'estensione, a un plug-in, a uno snap-in MMC o a una DLL che viene portata in un processo. Ad esempio, usare la procedura seguente per aggiungere il supporto degli stili di visualizzazione per uno snap-in Microsoft Management Console (MMC).
 
-1.  Compilare lo snap-in con il flag -DISOLATION AWARE ENABLED o inserire l'istruzione seguente prima dell'istruzione \_ \_ di inclusione \# "windows.h".
+1.  Compilare lo snap-in con il flag -DISOLATION AWARE ENABLED o inserire l'istruzione seguente \_ prima dell'istruzione di inclusione \_ \# "windows.h".
 
     ```C++
     #define ISOLATION_AWARE_ENABLED 1
@@ -224,7 +224,7 @@ Quando si compila l'applicazione, il manifesto verrà aggiunto come risorsa bina
 
     Per altre informazioni su ISOLATION \_ AWARE \_ ENABLED, vedere [Isolamento dei componenti](/windows/desktop/SbsCs/isolating-components).
 
-2.  Includere il file di intestazione del controllo comune nell'origine snap-in.
+2.  Includere il file di intestazione del controllo comune nell'origine dello snap-in.
     ```C++
     #include <commctrl.h>
     ```
@@ -276,7 +276,7 @@ Nell'esempio precedente *hwnd* è l'handle della finestra in cui disabilitare gl
 
 ## <a name="using-visual-styles-with-html-content"></a>Uso degli stili di visualizzazione con contenuto HTML
 
-Alle pagine HTML che modificano le Cascading Style Sheets (CSS), ad esempio sfondo o bordo, non sono stati applicati stili di visualizzazione. Visualizzano l'attributo CSS specificato. Quando viene specificata come parte del contenuto, la maggior parte delle proprietà CSS si applica agli elementi a cui sono applicati stili di visualizzazione.
+Alle pagine HTML che modificano le Cascading Style Sheets (CSS), ad esempio lo sfondo o il bordo, non sono applicati stili di visualizzazione. Visualizzano l'attributo CSS specificato. Se specificata come parte del contenuto, la maggior parte delle proprietà CSS si applica agli elementi a cui sono applicati stili di visualizzazione.
 
 Per impostazione predefinita, gli stili di visualizzazione vengono applicati ai controlli HTML intrinseci nelle pagine visualizzate in Microsoft Internet Explorer 6 e versioni successive. Per disattivare gli stili di visualizzazione per una pagina HTML, aggiungere un tag META a <head> . Questa tecnica si applica anche al contenuto in pacchetto come applicazioni HTML (HTA). Per disattivare gli stili di visualizzazione, il tag META deve essere il seguente:
 
@@ -288,30 +288,30 @@ Per impostazione predefinita, gli stili di visualizzazione vengono applicati ai 
 
 
 > [!Note]  
-> Se l'impostazione del browser e l'impostazione del tag non sono d'accordo, la pagina non applica gli stili di visualizzazione. Ad esempio, se il tag META è impostato su "no" e il browser è impostato per abilitare gli stili di visualizzazione, gli stili di visualizzazione non verranno applicati alla pagina. Tuttavia, se il browser o il tag META è impostato su "sì" e l'altro elemento non è specificato, verranno applicati gli stili di visualizzazione.
+> Se l'impostazione del browser e l'impostazione del tag non sono d'accordo, la pagina non applica gli stili di visualizzazione. Ad esempio, se il tag META è impostato su "no" e il browser è impostato per abilitare gli stili di visualizzazione, gli stili di visualizzazione non verranno applicati alla pagina. Tuttavia, se il browser o il tag META è impostato su "yes" e l'altro elemento non è specificato, verranno applicati gli stili di visualizzazione.
 
  
 
-Gli stili di visualizzazione possono modificare il layout del contenuto. Inoltre, se si impostano determinati attributi su controlli HTML intrinseci, ad esempio la larghezza di un pulsante, è possibile che l'etichetta del pulsante sia illeggibile in determinati stili di visualizzazione.
+Gli stili di visualizzazione potrebbero modificare il layout del contenuto. Inoltre, se si impostano determinati attributi su controlli HTML intrinseci, ad esempio la larghezza di un pulsante, è possibile che l'etichetta del pulsante sia illeggibile in determinati stili di visualizzazione.
 
 È necessario testare accuratamente il contenuto usando gli stili di visualizzazione per determinare se l'applicazione di stili di visualizzazione ha un effetto negativo sul contenuto e sul layout.
 
 ## <a name="when-visual-styles-are-not-applied"></a>Quando gli stili di visualizzazione non vengono applicati
 
-Per evitare di applicare gli stili di visualizzazione a una finestra di primo livello, assegnare alla finestra un'area non Null (**SetWindowRgn**). Il sistema presuppone che una finestra con un'area non NULL sia una finestra specializzata che non usa gli stili di visualizzazione. Una finestra figlio associata a una finestra di primo livello non di stili di visualizzazione può comunque applicare gli stili di visualizzazione anche se la finestra padre non lo fa.
+Per evitare di applicare stili di visualizzazione a una finestra di primo livello, assegnare alla finestra un'area non Null (**SetWindowRgn**). Il sistema presuppone che una finestra con un'area non NULL sia una finestra specializzata che non usa stili di visualizzazione. Una finestra figlio associata a una finestra di primo livello non di stili di visualizzazione può comunque applicare gli stili di visualizzazione anche se la finestra padre non lo fa.
 
-Se si vuole disabilitare l'uso degli stili di visualizzazione per tutte le finestre nell'applicazione, chiamare [**SetThemeAppProperties**](/windows/desktop/api/Uxtheme/nf-uxtheme-setthemeappproperties) e non passare il flag STAP \_ ALLOW \_ NONCLIENT. Se un'applicazione non chiama **SetThemeAppProperties,** i valori del flag presunti sono STAP \_ ALLOW \_ NONCLIENT \| STAP \_ ALLOW CONTROLS \_ \| STAP ALLOW \_ \_ WEBCONTENT. I valori presunti determinano l'applicazione di uno stile di visualizzazione all'area non client, ai controlli e al contenuto Web.
+Se si vuole disabilitare l'uso degli stili di visualizzazione per tutte le finestre dell'applicazione, chiamare [**SetThemeAppProperties**](/windows/desktop/api/Uxtheme/nf-uxtheme-setthemeappproperties) e non passare il flag STAP \_ ALLOW \_ NONCLIENT. Se un'applicazione non chiama **SetThemeAppProperties**, i valori del flag presupposti sono STAP \_ ALLOW \_ NONCLIENT \| STAP \_ ALLOW CONTROLS \_ \| STAP ALLOW \_ \_ WEBCONTENT. I valori presupposti determinano l'applicazione di uno stile di visualizzazione all'area non client, ai controlli e al contenuto Web.
 
 ## <a name="making-your-application-compatible-with-earlier-versions-of-windows"></a>Rendere l'applicazione compatibile con le versioni precedenti di Windows
 
-Gran parte dell'architettura dello stile di visualizzazione è progettata per semplificare la spedizione del prodotto nelle versioni precedenti di Windows che non supportano la modifica dell'aspetto dei controlli. Quando si spediva un'applicazione per più di un sistema operativo, tenere presente quanto segue:
+Gran parte dell'architettura dello stile di visualizzazione è progettata per semplificare la spedizione del prodotto in versioni precedenti di Windows che non supportano la modifica dell'aspetto dei controlli. Quando si spedire un'applicazione per più di un sistema operativo, tenere presente quanto segue:
 
--   Nelle versioni di Windows precedenti a Windows 8, gli stili di visualizzazione sono disattivati quando il contrasto elevato è on. Per supportare il contrasto elevato, un'applicazione legacy che supporta gli stili di visualizzazione deve fornire un percorso di codice separato per disegnare correttamente gli elementi dell'interfaccia utente a contrasto elevato. In Windows 8, il contrasto elevato fa parte degli stili di visualizzazione. Tuttavia, un'applicazione Windows 8 (che include il GUID Windows 8 nella sezione di compatibilità del manifesto dell'applicazione) deve comunque fornire un percorso di codice separato per il corretto rendering a contrasto elevato in Windows 7 in precedenza.
+-   Nelle versioni di Windows precedenti Windows 8, gli stili di visualizzazione sono disattivati quando il contrasto elevato è on. Per supportare il contrasto elevato, un'applicazione legacy che supporta gli stili di visualizzazione deve fornire un percorso di codice separato per disegnare correttamente gli elementi dell'interfaccia utente a contrasto elevato. In Windows 8, il contrasto elevato fa parte degli stili di visualizzazione. Tuttavia, un'applicazione Windows 8 (che include il GUID di Windows 8 nella sezione di compatibilità del manifesto dell'applicazione) deve comunque fornire un percorso di codice separato per eseguire correttamente il rendering a contrasto elevato in Windows 7 in precedenza.
 -   Se si usano le funzionalità di ComCtl32.dll versione 6, ad esempio la visualizzazione affiancata o il controllo collegamento, è necessario gestire il caso in cui tali controlli non sono disponibili nel computer dell'utente. ComCtl32.dll versione 6 non è ridistribuibile.
 -   Testare l'applicazione per assicurarsi di non basarsi sulle funzionalità di ComCtl32.dll versione 6 senza prima verificare la versione corrente.
--   Non collegarsi a UxTheme.lib.
+-   Non creare un collegamento a UxTheme.lib.
 -   Scrivere codice di gestione degli errori per le istanze quando gli stili di visualizzazione non funzionano come previsto.
--   L'installazione del manifesto dell'applicazione nelle versioni precedenti non influisce sul rendering dei controlli.
+-   L'installazione del manifesto dell'applicazione nelle versioni precedenti non influirà sul rendering dei controlli.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

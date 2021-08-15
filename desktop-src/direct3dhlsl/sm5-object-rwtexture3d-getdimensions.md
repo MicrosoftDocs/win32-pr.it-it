@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWTexture3D:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione RWTexture3D:: GetDimensions'
+title: Funzione RWTexture3D::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione RWTexture3D::GetDimensions
 ms.assetid: ba70b955-1e80-4f27-84f1-fc9d26a1f1ab
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 499ab493851257030921e9d55f4873eef8726915
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2fcd1f5e5fb1ab87193c2946e68a8144f34a7275c9ad90e87e9cc7e960336e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104352966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509209"
 ---
-# <a name="rwtexture3dgetdimensions-function"></a>Funzione RWTexture3D:: GetDimensions
+# <a name="rwtexture3dgetdimensions-function"></a>Funzione RWTexture3D::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -38,30 +38,30 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Altezza* \[ out\]
+*Altezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Altezza della risorsa, in Texel.
+Altezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Profondità* \[ out\]
+*Profondità* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Profondità della risorsa, in Texel.
+Profondità delle risorse, in texel.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -90,7 +90,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -105,7 +105,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture3D](sm5-object-rwtexture3d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

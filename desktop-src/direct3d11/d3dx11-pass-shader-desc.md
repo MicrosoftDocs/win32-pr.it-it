@@ -65,9 +65,9 @@ Elemento di pShaderVariable (se una matrice) o 0 se non applicabile.
 
 ## <a name="remarks"></a>Commenti
 
-D3DX11 PASS SHADER DESC viene usato \_ con i metodi \_ \_ [**ID3DX11EffectPass**](id3dx11effectpass.md) Get \* ShaderDesc.
+D3DX11 \_ PASS \_ SHADER \_ DESC viene usato con i metodi [**ID3DX11EffectPass**](id3dx11effectpass.md) Get \* ShaderDesc.
 
-Se si tratta di un'assegnazione di shader inline, l'interfaccia restituita sarà una variabile shader anonima, che non può essere recuperata in altro modo. Il nome nella descrizione della variabile sarà "$Anonymous". Se non è presente alcuna assegnazione di questo tipo nel blocco pass, pShaderVariable != **NULL,** ma pShaderVariable->IsValid() == **FALSE**.
+Se si tratta di un'assegnazione di shader inline, l'interfaccia restituita sarà una variabile shader anonima, che non è recuperabile in altro modo. Il nome nella descrizione della variabile sarà "$Anonymous". Se non è presente alcuna assegnazione di questo tipo nel blocco pass, pShaderVariable != **NULL,** ma pShaderVariable->IsValid() == **FALSE**.
 
 ## <a name="requirements"></a>Requisiti
 

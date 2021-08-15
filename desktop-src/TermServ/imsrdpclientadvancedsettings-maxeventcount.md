@@ -1,26 +1,26 @@
 ---
-title: Proprietà maxEventCount di IMsRdpClientAdvancedSettings
-description: Questa proprietà non è supportata. | Proprietà maxEventCount di IMsRdpClientAdvancedSettings
+title: Proprietà maxEventCount IMsRdpClientAdvancedSettings
+description: Questa proprietà non è supportata. | Proprietà maxEventCount IMsRdpClientAdvancedSettings
 ms.assetid: d7b5951d-8cc3-48b4-af1b-1f547afbc6ae
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings2
-- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings3
-- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings4
-- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà maxEventCount
-- Servizi Desktop remoto proprietà maxEventCount, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
+- Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
+- Interfaccia IMsRdpClientAdvancedSettings3 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings4
+- Interfaccia IMsRdpClientAdvancedSettings4 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto proprietà , maxEventCount
+- Proprietà maxEventCount Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto proprietà , maxEventCount
 topic_type:
 - apiref
 api_name:
@@ -54,14 +54,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb305d4a81b3c4dd9eb53dceab5a4e685c57c060
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b8cb0ee5cb5d38f57619e54be56d3c6cab49641b9183f7771cefbbfaad0eec0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353030"
 ---
-# <a name="imsrdpclientadvancedsettingsmaxeventcount-property"></a>Proprietà IMsRdpClientAdvancedSettings:: maxEventCount
+# <a name="imsrdpclientadvancedsettingsmaxeventcount-property"></a>Proprietà IMsRdpClientAdvancedSettings::maxEventCount
 
 Questa proprietà non è supportata.
 
@@ -84,15 +84,15 @@ HRESULT get_maxEventCount(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Il nuovo conteggio degli eventi. Il valore predefinito è 100.
+Nuovo numero di eventi. Il valore predefinito è 100.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Restituisce un valore **\_ false**.
+Restituisce **S \_ FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti per connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
+Per altre informazioni sui Connessione Web Desktop remoto, vedere [Requisiti per Connessione Web Desktop remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -106,7 +106,7 @@ Per ulteriori informazioni su Connessione Web Desktop remoto, vedere [requisiti 
 | Fine del supporto server<br/>    | Nessuno supportato<br/>                                                                       |
 | Libreria dei tipi<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-aCD4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings è definito come 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 

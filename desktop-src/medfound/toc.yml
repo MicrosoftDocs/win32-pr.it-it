@@ -6,7 +6,7 @@
       items:
         - name: Media Foundation intestazioni e librerie
           href: media-foundation-headers-and-libraries.md
-        - name: Media Foundation strumenti
+        - name: strumenti Media Foundation
           href: media-foundation-tools.md
           items:
             - name: MFTrace
@@ -27,7 +27,7 @@
                       href: provider.md
                     - name: provider
                       href: providers.md
-            - name: TopoModifica
+            - name: TopoEdit
               href: topoedit.md
               items:
                 - name: Introduzione a TopoEdit
@@ -52,11 +52,11 @@
                           href: help-menu.md
                     - name: Barra degli strumenti TopoEdit
                       href: topoedit-toolbar.md
-                - name: Creazione di una topologia di riproduzione con TopoModifica
+                - name: Creazione di una topologia di riproduzione con TopoEdit
                   href: building-a-playback-topology-with-topoedit.md
                 - name: Creazione di una topologia transcodifica con TopoEdit
                   href: building-a-transcode-topology-with-topoedit.md
-                - name: Creazione di topologie tramite TopoEdit
+                - name: Compilazione di topologie tramite TopoEdit
                   href: building-topologies-by-using-topoedit.md
                   items:
                     - name: Aggiunta di nodi di origine con TopoEdit
@@ -65,13 +65,13 @@
                       href: adding-transform-nodes-with-topoedit.md
                     - name: Aggiunta di nodi di output con TopoEdit
                       href: adding-output-nodes-with-topoedit.md
-                    - name: Connessione e disconnessione di nodi di topologia
+                    - name: Connessione e disconnessione di nodi della topologia
                       href: connecting-and-disconnecting-topology-nodes.md
                     - name: Risoluzione di una topologia con TopoEdit
                       href: resolving-a-topology-with-topoedit.md
-                - name: Registrazione delle attività del nodo topologia
+                - name: Registrazione delle attività dei nodi della topologia
                   href: logging-topology-node-activities.md
-                - name: Controlli di riproduzione in TopoModifica
+                - name: Controlli di riproduzione in TopoEdit
                   href: playback-controls-in-topoedit.md
                 - name: Salvataggio e caricamento di topologie
                   href: saving-and-loading-topologies.md
@@ -81,7 +81,7 @@
           href: whats-new-for-media-foundation.md
         - name: SafeRelease
           href: saferelease.md
-    - name: Media Foundation guida per programmatori
+    - name: Media Foundation di programmazione
       href: media-foundation-programming-guide.md
       items:
         - name: 'Media Foundation: concetti essenziali'
@@ -89,7 +89,7 @@
         - name: Architettura di Media Foundation
           href: media-foundation-architecture.md
           items:
-            - name: Panoramica dell'architettura Media Foundation
+            - name: Panoramica dell'architettura Media Foundation distribuzione
               href: overview-of-the-media-foundation-architecture.md
             - name: Media Foundation primitive
               href: media-foundation-primitives.md
@@ -101,18 +101,18 @@
                   items:
                     - name: Informazioni sui tipi di supporti
                       href: about-media-types.md
-                    - name: Tipi di supporti principali
+                    - name: Principali tipi di supporti
                       href: media-type-guids.md
                     - name: Tipi di supporti audio
                       href: audio-media-types.md
                       items:
-                        - name: GUID del sottotipo audio
+                        - name: GUID sottotipo audio
                           href: audio-subtype-guids.md
                         - name: Tipi di supporti audio non compressi
                           href: uncompressed-audio-media-types.md
                         - name: Tipi di supporti AAC
                           href: aac-media-types.md
-                    - name: Tipi di supporti video
+                    - name: Tipi di file multimediali video
                       href: video-media-types.md
                       items:
                         - name: GUID sottotipo video
@@ -121,7 +121,7 @@
                           href: uncompressed-video-media-types.md
                         - name: Informazioni su YUV Video
                           href: about-yuv-video.md
-                        - name: Interlacciamento video
+                        - name: Video Interlacing
                           href: video-interlacing.md
                         - name: Stride dell'immagine
                           href: image-stride.md
@@ -131,9 +131,9 @@
                           href: extended-color-information.md
                         - name: Formati YUV a 8 bit consigliati per il rendering video
                           href: recommended-8-bit-yuv-formats-for-video-rendering.md
-                        - name: Formati video YUV a 10 e 16 bit
+                        - name: Formati video YUV a 10 e a 16 bit
                           href: 10-bit-and-16-bit-yuv-video-formats.md
-                        - name: VIDEO FOURCC
+                        - name: Video FOURCC
                           href: video-fourccs.md
                     - name: GUID del sottotipo di flusso
                       href: stream-subtype-guids.md
@@ -141,9 +141,9 @@
                       href: complete-and-partial-media-types.md
                     - name: Conversioni di tipi di supporti
                       href: media-type-conversions.md
-                    - name: Funzioni helper dei tipi di supporti
+                    - name: Funzioni helper del tipo di supporto
                       href: media-type-helper-functions.md
-                    - name: Codice di debug del tipo di supporto
+                    - name: Codice di debug dei tipi di supporti
                       href: media-type-debugging-code.md
                 - name: Buffer multimediali
                   href: media-buffers.md
@@ -157,14 +157,14 @@
                 - name: Esempi di supporti
                   href: media-samples.md
                   items:
-                    - name: Uso di esempi di supporti
+                    - name: Uso di esempi multimediali
                       href: working-with-media-samples.md
                     - name: Esempi video
                       href: video-samples.md
-            - name: Media Foundation API della piattaforma
+            - name: API Media Foundation platform
               href: media-foundation-platform-apis.md
               items:
-                - name: Inizializzazione Media Foundation
+                - name: Inizializzazione di Media Foundation
                   href: initializing-media-foundation.md
                 - name: Media Foundation e COM
                   href: media-foundation-and-com.md
@@ -186,15 +186,15 @@
                       href: writing-an-asynchronous-method.md
                     - name: Oggetti risultato asincroni personalizzati
                       href: custom-asynchronous-result-objects.md
-                    - name: Miglioramenti della coda di lavoro e del threading
+                    - name: Miglioramenti alla coda di lavoro e al threading
                       href: media-foundation-work-queue-and-threading-improvements.md
                 - name: Generatori di eventi multimediali
                   href: media-event-generators.md
-                - name: Interfacce di servizio
+                - name: Interfacce del servizio
                   href: service-interfaces.md
                 - name: Oggetti di attivazione
                   href: activation-objects.md
-                - name: Orologio presentazione
+                - name: Orologio di presentazione
                   href: presentation-clock.md
             - name: Media Foundation Pipeline
               href: media-foundation-pipeline.md
@@ -212,12 +212,12 @@
                       href: writing-a-custom-media-source.md
                     - name: 'Case Study: MPEG-1 Media Source'
                       href: tutorial--writing-a-custom-media-source.md
-                    - name: Provider di metadati personalizzati per i file multimediali
+                    - name: Provider di metadati personalizzati per file multimediali
                       href: custom-metadata-providers-for-media-files.md
                     - name: Resolver di origine
                       href: source-resolver.md
                       items:
-                        - name: Uso del sistema di risoluzione dell'origine
+                        - name: Utilizzo del sistema di risoluzione di origine
                           href: using-the-source-resolver.md
                         - name: Configurazione di un'origine multimediale
                           href: configuring-a-media-source.md
@@ -234,7 +234,7 @@
                       href: asynchronous-mfts.md
                     - name: Registrazione ed enumerazione di MFT
                       href: registering-and-enumerating-mfts.md
-                    - name: Restrizioni sul campo di utilizzo
+                    - name: Restrizioni per il campo di utilizzo
                       href: field-of-use-restrictions.md
                     - name: Confronto tra MFT e DMO
                       href: comparison-of-mfts-and-dmos.md
@@ -243,7 +243,7 @@
                       items:
                         - name: Timestamp e durate
                           href: time-stamps-and-durations.md
-                        - name: Gestione delle modifiche del flusso
+                        - name: Gestione delle modifiche al flusso
                           href: handling-stream-changes.md
                         - name: Implementazione di un codec MFT
                           href: implementing-a-codec-mft.md
@@ -253,7 +253,7 @@
                           href: hardware-mfts.md
                         - name: Merito dei codec
                           href: codec-merit.md
-                - name: Sink multimediali
+                - name: Sink di supporti
                   href: media-sinks.md
             - name: Sessione multimediale
               href: media-session.md
@@ -273,7 +273,7 @@
                       href: about-the-sequencer-source.md
                     - name: Uso dell'origine sequencer
                       href: using-the-sequencer-source.md
-                    - name: Eventi di origine sequencer
+                    - name: Eventi di origine di Sequencer
                       href: sequencer-source-events.md
                     - name: Come creare una playlist
                       href: how-to-create-a-playlist.md
@@ -339,7 +339,7 @@
         - name: Formati multimediali supportati in Media Foundation
           href: supported-media-formats-in-media-foundation.md
           items:
-            - name: Supporto mpeg-4 in Media Foundation
+            - name: Supporto MPEG-4 in Media Foundation
               href: mpeg-4-support-in-media-foundation.md
             - name: Codificatori di fotocamera H.264 UVC 1.5
               href: camera-encoder-h264-uvc-1-5.md
@@ -418,7 +418,7 @@
                   items:
                     - name: Creazione di un profilo ASF
                       href: creating-an-asf-profile.md
-                    - name: Creazione e configurazione di asf Flussi
+                    - name: Creazione e configurazione di Flussi ASF
                       href: creating-and-configuring-asf-streams.md
                     - name: Uso dell'esclusione reciproca per asf Flussi
                       href: using-mutual-exclusion-for-asf-streams.md
@@ -898,12 +898,12 @@
                   href: d3dauthenticatedquery-restrictedsharedresourceprocesscount.md
                 - name: D3DAUTHENTICATEDQUERY_UNRESTRICTEDPROTECTEDSHAREDRESOURCECOUNT
                   href: d3dauthenticatedquery-unrestrictedprotectedsharedresourcecount.md
-        - name: API Video Direct3D 11
+        - name: API video Direct3D 11
           href: direct3d-11-video-apis.md
           items:
             - name: Supporto della decodifica video Direct3D 11 in Media Foundation
               href: supporting-direct3d-11-video-decoding-in-media-foundation.md
-            - name: GPU-Based protezione del contenuto video D3D11
+            - name: GPU-Based protezione del contenuto con D3D11 Video
               href: gpu-based-content-protection-d3d11.md
             - name: Interfacce video Direct3D 11
               href: direct3d-11-video-interfaces.md
@@ -941,7 +941,7 @@
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderendframe
                     - name: DecoderExtension
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decoderextension
-                    - name: DecryptionBlt
+                    - name: DecrittografiaBlt
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-decryptionblt
                     - name: EncryptionBlt
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videocontext-encryptionblt
@@ -1143,7 +1143,7 @@
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-getvideodecoderprofilecount
                     - name: SetPrivateData
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-setprivatedata
-                    - name: Interfaccia SetPrivateDataInterface
+                    - name: SetPrivateDataInterface
                       href: /windows/desktop/api/d3d11/nf-d3d11-id3d11videodevice-setprivatedatainterface
                 - name: ID3D11VideoDevice1
                   href: /windows/desktop/api/d3d11_1/nn-d3d11_1-id3d11videodevice1
@@ -1396,10 +1396,10 @@
                   href: /windows/desktop/api/d3d11_1/ns-d3d11_1-d3d11_video_sample_desc
             - name: GUID video Direct3D 11
               href: direct3d-11-video-guids.md
-        - name: API video Direct3D 12
+        - name: API Video Direct3D 12
           href: direct3d-12-video-apis.md
           items:
-            - name: Panoramica del video Direct3D 12
+            - name: Panoramica di Direct3D 12 Video
               href: direct3d-12-video-overview.md
             - name: Istogrammi di decodifica video Direct3D
               href: direct3d-video-decode-histograms.md
@@ -1985,7 +1985,7 @@
                   items:
                     - name: Flag di tipo bus OPM
                       href: opm-bus-type-flags.md
-                    - name: Flag del tipo di connettore OPM
+                    - name: Flag di tipo del connettore OPM
                       href: opm-connector-type-flags.md
                     - name: Flag del tipo di protezione OPM
                       href: opm-protection-type-flags.md
@@ -2042,30 +2042,30 @@
         - name: Codec Windows Media
           href: windows-media-codecs.md
           items:
-            - name: Informazioni sui Windows media codec
+            - name: Informazioni sui Windows codec multimediali
               href: about-the-windows-media-codecs.md
             - name: Uso degli oggetti Codec e DSP
               href: decidinghowtousethewindowsmediaaudioandvideocodecs.md
             - name: Metodi di codifica
               href: encodingmethods.md
-            - name: Implementazione del codec
+            - name: Implementazione di codec
               href: codecimplementation.md
-            - name: Modello di buffer del bucket di perdita
+            - name: Modello di buffer bucket persa
               href: the-leaky-bucket-buffer-model.md
             - name: Uso degli oggetti DMO codec
               href: workingwithcodecdmos.md
               items:
                 - name: DMO Basi
                   href: dmobasics-ebet.md
-                - name: Creazione di istanze di dmo codec
+                - name: Creazione di istanze di DMO codec
                   href: instantiatingcodecdmos.md
-                - name: Uso di DMO buffer multimediali
+                - name: Uso dei buffer DMO multimediali
                   href: workingwithmediabuffers.md
                 - name: Uso dei DMO multimediali
                   href: workingwithmediatypes.md
                 - name: Uso di buffer multimediali ed esempi MFT
                   href: workingwithmftmediabuffersandsamples.md
-                - name: Configurazione degli oggetti DMO codec
+                - name: Configurazione delle DMO codec
                   href: enumeratingsupportedformats.md
                 - name: Elaborazione di codec DMO input e output
                   href: processingsamples.md
@@ -2074,13 +2074,13 @@
             - name: Uso dei codec MFT
               href: workingwithcodecmfts.md
               items:
-                - name: Creazione di istanze di codec MFT
+                - name: Creazione di istanze di MFT di codec
                   href: instantiatingcodecmfts.md
                 - name: Uso dei tipi di supporti MFT
                   href: workingwithmftmediatypes.md
                 - name: Configurazione dei codec MFT
                   href: configuringcodecmfts.md
-                - name: Input e output MFT del codec di elaborazione
+                - name: Elaborazione dell'input e dell'output MFT del codec
                   href: processingcodecmftinputandoutput.md
             - name: Uso dell'audio
               href: workingwithaudio.md
@@ -2096,13 +2096,13 @@
                       href: findingaudioencoderoutputtypes.md
                     - name: 'Configurazione della codifica audio standard, Professional o senza perdita di dati'
                       href: configuring-standard--professional--or-lossless-audio-encoding.md
-                    - name: Enumerazione dei tipi audio per modalità di codifica specifiche
+                    - name: Enumerazione di tipi audio per modalità di codifica specifiche
                       href: enumeratingaudiotypesforspecificencodingmodes.md
                 - name: Uso del codec Windows Media Audio Voice
                   href: usingthewindowsmediaaudio9voicecodec.md
                 - name: Decodifica in S/PDIF
                   href: decodingtospdif.md
-                - name: Uso dellHigh-Definition audio
+                - name: Uso High-Definition audio
                   href: usinghighdefinitionaudio.md
                 - name: Uso di un elenco di decisioni di modifica per la codifica vocale
                   href: usingavoiceeditingdecisionlist.md
@@ -2115,15 +2115,15 @@
                   href: configuringvideodecoding.md
                 - name: Configurazione della codifica video
                   href: configuringvideoencoding.md
-                - name: Inserimento forzato di fotogrammi chiave
+                - name: Inserimento forzato del fotogramma chiave
                   href: forcedkeyframeinsertion.md
                 - name: Codifica video interlacciata
                   href: interlacedvideoencoding.md
                 - name: Uso del profilo Windows Media Video 9 Advanced
                   href: usingthewindowsmediavideo9advancedprofilecodec.md
-                - name: Uso del codec Windows Media Video 9.1
+                - name: Uso del codec Windows Media Video 9.1 Image Codec
                   href: usingthewindowsmediavideo9imagecodec.md
-                - name: Uso del codec Windows media video 9
+                - name: Uso del codec Windows video multimediale 9
                   href: usingthewindowsmediavideo9screencodec.md
                 - name: Uso dei dati privati del codec video
                   href: usingvideocodecprivatedata.md
@@ -2284,7 +2284,7 @@
             - name: Windows Domande frequenti sui codec multimediali
               href: frequentlyaskedquestions.md
               items:
-                - name: In che modo un flusso video codificato con VBR basato sulla qualità ha un numero di fotogrammi inferiore a quello del flusso originale?
+                - name: In che modo un flusso video codificato con VBR basato sulla qualità ha un numero di fotogrammi inferiore rispetto al flusso originale?
                   href: howcanavideostreamencodedusingqualitybasedvbrhavef.md
                 - name: Ricerca per categorie decomprimere i flussi da un file AVI o da un altro file su cui non sono disponibili informazioni sul formato?
                   href: howdoidecompresswindowsmediacontentfromanaviorothe.md
@@ -2379,9 +2379,9 @@
               href: windowsmediaaudiodecoder.md
             - name: Windows Codificatore audio multimediale
               href: windowsmediaaudioencoder.md
-            - name: Windows Media Audio Voice Decoder
+            - name: Windows Decodificatore vocale audio multimediale
               href: windowsmediaaudiovoicedecoder.md
-            - name: Windows Media Audio Voice Encoder
+            - name: Windows Codificatore vocale audio multimediale
               href: windowsmediaaudiovoiceencoder.md
             - name: Windows Decodificatore MP3 multimediale
               href: windows-media-mp3-decoder.md
@@ -2389,26 +2389,26 @@
               href: windowsmediampeg4decoder.md
             - name: Windows Decodificatore MPEG-4 V3 multimediale
               href: windowsmediampeg4v3decoder.md
-            - name: Windows Codificatore Video multimediale 7/8
+            - name: Windows Codificatore video multimediale 7/8
               href: windows-media-video-7-and-8-encoders.md
             - name: Windows Decodificatore Media Video 9
               href: windowsmediavideo9decoder.md
-            - name: Windows Codificatore Media Video 9
+            - name: Windows Codificatore video multimediale 9
               href: windowsmediavideo9encoder.md
             - name: Windows Decodificatore schermo Media Video 9
               href: windowsmediavideo9screendecoder.md
             - name: Windows Codificatore di schermo Media Video 9
               href: windowsmediavideo9screenencoder.md
-        - name: Processori di segnale digitale
+        - name: Processori di segnali digitali
           href: windowsmediadigitalsignalprocessors.md
           items:
             - name: Audio Resampler DSP
               href: audioresampler.md
             - name: DSP trasformazione controllo colore
               href: colorcontroltransform.md
-            - name: DSP convertitore di colori
+            - name: Provider di servizi di conversione colori
               href: colorconverter.md
-            - name: DSP (Frame Rate Converter)
+            - name: Provider di servizi di conversione frequenza fotogrammi
               href: framerateconverter.md
             - name: DSP di Ridimensionamento video
               href: videoresizer.md
@@ -2416,7 +2416,7 @@
               href: video-processor-mft.md
             - name: Stabilizzazione video MFT
               href: video-stabilization-mft.md
-            - name: Voice Capture DSP
+            - name: Provider di servizi di acquisizione vocale
               href: voicecapturedmo.md
         - name: Origini multimediali e sink
           href: media-sources-and-sinks.md
@@ -2427,12 +2427,12 @@
               href: mpeg-4-file-sink.md
             - name: Origine file MPEG-4
               href: mpeg-4-file-source.md
-            - name: Origine supporto SAMI
+            - name: Origine supporti SAMI
               href: sami-media-source.md
         - name: Media Foundation attributi
           href: media-foundation-attributes.md
           items:
-            - name: Elenco alfabetico degli Media Foundation personalizzati
+            - name: Elenco alfabetico di Media Foundation attributi
               href: alphabetical-list-of-media-foundation-attributes.md
               items:
                 - name: EVRConfig_AllowBatching
@@ -3458,7 +3458,7 @@
           items:
             - name: GUID dell'estensione del payload ASF
               href: asf-payload-extension-guids.md
-            - name: GUID del tipo di esclusione reciproca ASF
+            - name: GUID del tipo di esclusione reciproca asf
               href: asf-mutual-exclusion-type-guids.md
             - name: Flag di protezione CGMS-A
               href: cgms-a-protection-flags.md
@@ -3572,7 +3572,7 @@
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_device_type
             - name: enumerazione MF_CAPTURE_ENGINE_SINK_TYPE
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_sink_type
-            - name: enumerazione MF_CAPTURE_ENGINE_STREAM_CATEGORY
+            - name: MF_CAPTURE_ENGINE_STREAM_CATEGORY enumerazione
               href: /windows/desktop/api/mfcaptureengine/ne-mfcaptureengine-mf_capture_engine_stream_category
             - name: MF_CONNECT_METHOD
               href: /windows/win32/api/mfidl/ne-mfidl-mf_connect_method
@@ -4822,7 +4822,7 @@
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-getstatistics
                 - name: Inizializzare
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize
-                - name: Esempio di processo
+                - name: ProcessSample
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample
                 - name: SetFlags
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-setflags
@@ -4831,7 +4831,7 @@
             - name: IMFASFMutualExclusion
               href: /windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfmutualexclusion
               items:
-                - name: Aggiungi record
+                - name: AddRecord
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-addrecord
                 - name: AddStreamForRecord
                   href: /windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmutualexclusion-addstreamforrecord
@@ -4999,7 +4999,7 @@
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-getstatus
                 - name: SetStatus
                   href: /windows/desktop/api/mfobjects/nf-mfobjects-imfasyncresult-setstatus
-            - name: Attributi IMF
+            - name: Attributi IMFAttributes
               href: /windows/desktop/api/mfobjects/nn-mfobjects-imfattributes
               items:
                 - name: Confronto
@@ -5194,7 +5194,7 @@
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize
                 - name: StartPreview
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-startpreview
-                - name: Record di avvio
+                - name: StartRecord
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-startrecord
                 - name: StopPreview
                   href: /windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-stoppreview
@@ -6531,7 +6531,7 @@
               items:
                 - name: AddClockStateSink
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-addclockstatesink
-                - name: Gettime
+                - name: GetTime
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettime
                 - name: GetTimeSource
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-gettimesource
@@ -6753,7 +6753,7 @@
               items:
                 - name: BeginSave
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-beginsave
-                - name: AnnullaSalva
+                - name: CancelSave
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-cancelsave
                 - name: EndSave
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsavejob-endsave
@@ -6773,7 +6773,7 @@
               items:
                 - name: GetCertificate
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsecurechannel-getcertificate
-                - name: SetupSession
+                - name: Sessione di configurazione
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsecurechannel-setupsession
             - name: IMFSeekInfo
               href: /windows/desktop/api/mfidl/nn-mfidl-imfseekinfo
@@ -6918,7 +6918,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-getpresentationcontext
                 - name: UpdateTopology
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-updatetopology
-                - name: UpdateTopologyFlags
+                - name: Flag UpdateTopologyFlags
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfsequencersource-updatetopologyflags
             - name: IMFSharingEngineClassFactory
               href: /windows/desktop/api/mfsharingengine/nn-mfsharingengine-imfsharingengineclassfactory
@@ -6932,7 +6932,7 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfshutdown-getshutdownstatus
                 - name: Arresta
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfshutdown-shutdown
-            - name: Libreria IMFSignedLibrary
+            - name: IMFSignedLibrary
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsignedlibrary
               items:
                 - name: GetProcedureAddress
@@ -7184,9 +7184,9 @@
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-getmediasink
                 - name: GetMediaTypeHandler
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-getmediatypehandler
-                - name: SegnapostoMarker
+                - name: Segnaposto
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker
-                - name: ProcessSample
+                - name: Esempio di processo
                   href: /windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-processsample
             - name: IMFSystemId
               href: /windows/desktop/api/mfidl/nn-mfidl-imfsystemid
@@ -7456,7 +7456,7 @@
             - name: IMFTopologyNodeAttributeEditor
               href: /windows/desktop/api/mfidl/nn-mfidl-imftopologynodeattributeeditor
               items:
-                - name: Attributi UpdateNodeAttributes
+                - name: UpdateNodeAttributes
                   href: /windows/desktop/api/mfidl/nf-mfidl-imftopologynodeattributeeditor-updatenodeattributes
             - name: IMFTopologyServiceLookup
               href: /windows/desktop/api/evr/nn-evr-imftopologyservicelookup
@@ -7532,7 +7532,7 @@
                   href: /windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo
                 - name: GetStreamCount
                   href: /windows/desktop/api/mftransform/nf-mftransform-imftransform-getstreamcount
-                - name: GetStreamID
+                - name: GetStreamIDs
                   href: /windows/desktop/api/mftransform/nf-mftransform-imftransform-getstreamids
                 - name: GetStreamLimits
                   href: /windows/desktop/api/mftransform/nf-mftransform-imftransform-getstreamlimits
@@ -7803,7 +7803,7 @@
             - name: IPlayToControl
               href: /windows/desktop/api/mfsharingengine/nn-mfsharingengine-iplaytocontrol
               items:
-                - name: Connessione
+                - name: Connettere
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-iplaytocontrol-connect
                 - name: Disconnetti
                   href: /windows/desktop/api/mfsharingengine/nf-mfsharingengine-iplaytocontrol-disconnect
@@ -8702,7 +8702,7 @@
               href: /windows/win32/api/mfidl/ns-mfidl-sensorprofileid
             - name: STREAM_MEDIUM
               href: /windows/win32/api/Mftransform/ns-mftransform-stream_medium
-        - name: Media Foundation unioni
+        - name: Media Foundation Unioni
           href: media-foundation-unions.md
           items:
             - name: DXVAHD_COLOR

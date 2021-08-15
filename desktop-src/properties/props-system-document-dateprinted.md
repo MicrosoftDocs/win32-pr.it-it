@@ -1,15 +1,15 @@
 ---
-description: Indica la data e l'ora dell'ultima stampa del documento. Il nome legacy è &\# 0034; DocLastPrinted&\# 0034;.
+description: Indica la data e l'ora dell'ultima stampa del documento. Il nome legacy è &\# 0034;DocLastPrinted&\# 0034;.
 ms.assetid: 57a08471-04b2-4c1e-9212-b76f6ca631f8
 title: System.Document. DatePrinted
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c900a78782899c9e8b7497b8578d5bbdcab3898
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecb71e38416e845eff7283bfa44fc1ae8a75b7b9babe8927cb30a233ef9065c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466698"
 ---
 # <a name="systemdocumentdateprinted"></a>System.Document. DatePrinted
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -78,13 +78,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

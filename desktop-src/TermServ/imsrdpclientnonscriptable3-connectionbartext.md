@@ -1,26 +1,26 @@
 ---
-title: Proprietà ConnectionBarText di IMsRdpClientNonScriptable3
-description: Imposta o Recupera il testo per aggiornare la barra di connessione.
+title: Proprietà ConnectionBarText IMsRdpClientNonScriptable3
+description: Imposta o recupera il testo per aggiornare la barra di connessione.
 ms.assetid: 9671118d-ee7c-4077-be81-57655aff5e35
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, interfaccia IMsRdpClientNonScriptable3
-- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, interfaccia IMsRdpClientNonScriptable4
-- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, interfaccia IMsRdpClientNonScriptable5
-- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, oggetto MsRdpClient5
-- Oggetto MsRdpClient5 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, oggetto MsRdpClient6
-- Oggetto MsRdpClient6 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, oggetto MsRdpClient7
-- Oggetto MsRdpClient7 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, oggetto MsRdpClient8
-- Oggetto MsRdpClient8 Servizi Desktop remoto, proprietà ConnectionBarText
-- Servizi Desktop remoto proprietà ConnectionBarText, oggetto MsRdpClient9
-- Oggetto MsRdpClient9 Servizi Desktop remoto, proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto
+- Proprietà ConnectionBarText Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable3
+- Interfaccia IMsRdpClientNonScriptable3 Servizi Desktop remoto , proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable4
+- Interfaccia IMsRdpClientNonScriptable4 Servizi Desktop remoto , proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto, interfaccia IMsRdpClientNonScriptable5
+- Interfaccia IMsRdpClientNonScriptable5 Servizi Desktop remoto , proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto , oggetto MsRdpClient5
+- Oggetto MsRdpClient5 Servizi Desktop remoto proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto , oggetto MsRdpClient6
+- Oggetto MsRdpClient6 Servizi Desktop remoto proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto , oggetto MsRdpClient7
+- Oggetto MsRdpClient7 Servizi Desktop remoto proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto , oggetto MsRdpClient8
+- Oggetto MsRdpClient8 Servizi Desktop remoto proprietà ConnectionBarText
+- Proprietà ConnectionBarText Servizi Desktop remoto , oggetto MsRdpClient9
+- Oggetto MsRdpClient9 Servizi Desktop remoto proprietà ConnectionBarText
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76819dd28ffd8b2ee5e2dfb30017e341dd49db5b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 89dac8f704f5ecaa7bd521af10f05fd1c56d2adebff70827862478847a782faf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941594"
 ---
-# <a name="imsrdpclientnonscriptable3connectionbartext-property"></a>Proprietà IMsRdpClientNonScriptable3:: ConnectionBarText
+# <a name="imsrdpclientnonscriptable3connectionbartext-property"></a>Proprietà IMsRdpClientNonScriptable3::ConnectionBarText
 
-Imposta o Recupera il testo per aggiornare la barra di connessione.
+Imposta o recupera il testo per aggiornare la barra di connessione.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -78,7 +78,7 @@ Imposta la stringa di testo da visualizzare sulla barra di connessione.
 
 ## <a name="remarks"></a>Commenti
 
-È necessario chiamare il metodo **IMsRdpClientNonScriptable3::p UT \_ ConnectionBarText** prima di chiamare il metodo [**IMsTscSecuredSettings::P UT \_ FullScreen**](imstscsecuredsettings-fullscreen.md) o [**IMsRdpClient::p UT \_ FullScreen**](imsrdpclient-fullscreen.md) .
+È necessario chiamare il metodo **IMsRdpClientNonScriptable3::p ut \_ ConnectionBarText** prima di chiamare il metodo [**\_ Fullscreen IMsTscSecuredSettings::p ut**](imstscsecuredsettings-fullscreen.md) o [**IMsRdpClient::p ut \_ Fullscreen.**](imsrdpclient-fullscreen.md)
 
 ## <a name="requirements"></a>Requisiti
 

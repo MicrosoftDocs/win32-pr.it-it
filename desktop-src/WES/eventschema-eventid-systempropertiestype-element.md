@@ -1,9 +1,9 @@
 ---
-title: Elemento EventId (SystemPropertiesType)
+title: Elemento EventID (SystemPropertiesType)
 description: Identificatore utilizzato dal provider per identificare l'evento.
 ms.assetid: 2d5ac44b-4157-4b87-bd8f-e992e85dd0b1
 keywords:
-- Evento EventId elemento EventLog
+- EventID - elemento EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ac1b2edd671f06d88c8c51b49c16f759fd05e087
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0bfc3db28af21f26224433faf299200f4b262cd7583a1cafb27e0e700fdc1d36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055789"
 ---
-# <a name="eventid-systempropertiestype-element"></a>Elemento EventId (SystemPropertiesType)
+# <a name="eventid-systempropertiestype-element"></a>Elemento EventID (SystemPropertiesType)
 
 Identificatore utilizzato dal provider per identificare l'evento.
 
@@ -36,7 +36,7 @@ Identificatore utilizzato dal provider per identificare l'evento.
 </xs:element>
 ```
 
-L'elemento **eventId** è definito dal tipo complesso [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+**L'elemento EventID** è definito dal [**tipo complesso SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,8 +44,8 @@ L'elemento **eventId** è definito dal tipo complesso [**SystemPropertiesType**]
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -56,7 +56,7 @@ L'elemento **eventId** è definito dal tipo complesso [**SystemPropertiesType**]
 **Elemento padre**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

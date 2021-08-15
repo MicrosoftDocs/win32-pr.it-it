@@ -23,10 +23,10 @@ ms.locfileid: "118419134"
 ---
 # <a name="reset-method-of-the-cim_fan-class"></a>Metodo Reset della classe CIM \_ Fan
 
-Il **metodo Reset** della classe CIM Fan richiede una \_ reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+Il **metodo Reset** della classe CIM Fan richiede una \_ reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

@@ -54,7 +54,7 @@ Crea una nuova istanza non inizializzata di UN FLAG DI FLUSSO DELLO STATO DELLA 
 **FLAG DI FLUSSO DELLO STATO DELLA PIPELINE CD3DX12(FLAG DI STATO DELLA \_ \_ PIPELINE \_ \_ D3D12 \_ \_ \_ const &i)**
 </dt> <dd>
 
-Crea una nuova istanza di UNA PIPELINE CD3DX12 STATE STREAM FLAGS, inizializzata con un tipo di oggetto secondario \_ \_ \_ \_ **D3D12 \_ PIPELINE \_ STATE \_ SUBOBJECT TYPE \_ \_ FLAGS** e dati di sottooggetto copiati da i , una struttura [**D3D12 \_ PIPELINE STATE \_ \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
+Crea una nuova istanza di UNA PIPELINE CD3DX12 PIPELINE STREAM FLAGS, inizializzata con un tipo di oggetto secondario \_ \_ \_ \_ **D3D12 \_ PIPELINE \_ STATE \_ SUBOBJECT TYPE \_ \_ FLAGS** e dati di sottooggetto copiati da i , una struttura [**D3D12 \_ PIPELINE STATE \_ \_ FLAGS.**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_flags)
 
 </dd> <dt>
 

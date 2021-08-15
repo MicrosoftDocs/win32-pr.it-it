@@ -32,11 +32,11 @@ struct CUSTOMVERTEX {
 
 Per creare un vertex buffer per contenere quattro strutture CUSTOMVERTEX, specificare \[ 4 \* sizeof(CUSTOMVERTEX) \] per il parametro *Length.*
 
-Il secondo parametro è un set di controlli di utilizzo. Tra le altre cose, il relativo valore determina se il vertex buffer è in grado di contenere informazioni di ritaglio, sotto forma di flag di ritaglio, per i vertici presenti all'esterno dell'area di visualizzazione. Per creare un vertex buffer che non può contenere flag di ritaglio, includere il flag D3DUSAGE \_ DONOTCLIP per il *parametro Usage.* Il flag DONOTCLIP D3DUSAGE viene applicato solo se si indica anche che il vertex buffer conterrà vertici trasformati. Il \_ flag D3DFVF \_ XYZRHW è incluso nel parametro *FVF.* Il metodo [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) ignora il flag DONOTCLIP D3DUSAGE se si indica che il buffer conterrà vertici non trasformati \_ \_ (flag XYZ D3DFVF). I flag di ritaglio occupano memoria aggiuntiva, rendendo un vertex buffer con supporto per il ritaglio leggermente più grande di un buffer dei vertici non in grado di contenere flag di ritaglio. Poiché queste risorse vengono allocate quando viene creato il vertex buffer, è necessario richiedere in anticipo un vertex buffer con supporto per il ritaglio.
+Il secondo parametro è un set di controlli di utilizzo. Tra le altre cose, il relativo valore determina se il vertex buffer è in grado di contenere informazioni di ritaglio, sotto forma di flag di ritaglio, per i vertici presenti all'esterno dell'area di visualizzazione. Per creare un vertex buffer che non può contenere flag di ritaglio, includere il flag D3DUSAGE \_ DONOTCLIP per il *parametro Usage.* Il flag DONOTCLIP D3DUSAGE viene applicato solo se si indica anche che il vertex buffer conterrà vertici trasformati. Il \_ flag D3DFVF \_ XYZRHW è incluso nel parametro *FVF.* Il metodo [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) ignora il flag DONOTCLIP D3DUSAGE se si indica che il buffer conterrà vertici non trasformati \_ \_ (flag XYZ D3DFVF). I flag di ritaglio occupano memoria aggiuntiva, rendendo un vertex buffer che supporta il ritaglio leggermente più grande di un buffer dei vertici non in grado di contenere flag di ritaglio. Poiché queste risorse vengono allocate al momento della creazione del vertex buffer, è necessario richiedere in anticipo un vertex buffer con supporto per il ritaglio.
 
-Il terzo parametro, *FVF*, è una combinazione [di D3DFVF](d3dfvf.md) che descrivono il formato dei vertici del vertex buffer. Se si specifica 0 per questo parametro, il vertex buffer è un vertex buffer non FVF. Per altre informazioni, vedere [FVF Vertex Buffers (Direct3D 9)](fvf-vertex-buffers.md). Il quarto parametro descrive la classe di memoria in cui inserire il vertex buffer.
+Il terzo parametro, *FVF,* è una combinazione [di D3DFVF](d3dfvf.md) che descrivono il formato dei vertici del vertex buffer. Se si specifica 0 per questo parametro, il vertex buffer è un vertex buffer non FVF. Per altre informazioni, vedere [FVF Vertex Buffers (Direct3D 9)](fvf-vertex-buffers.md). Il quarto parametro descrive la classe di memoria in cui inserire il vertex buffer.
 
-Il parametro finale accettato da [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) è l'indirizzo di una variabile che verrà riempita con un puntatore alla nuova [**interfaccia IDirect3DVertexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) dell'oggetto vertex buffer, se la chiamata ha esito positivo.
+Il parametro finale accettato da [**IDirect3DDevice9::CreateVertexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createvertexbuffer) è l'indirizzo di una variabile che verrà riempita con un puntatore alla nuova interfaccia [**IDirect3DVertexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9) dell'oggetto vertex buffer, se la chiamata ha esito positivo.
 
 Non è possibile produrre flag di ritaglio per un vertex buffer creato senza supporto.
 
@@ -73,7 +73,7 @@ struct CUSTOMVERTEX {
 
 <dl> <dt>
 
-[Vertex Buffer](vertex-buffers.md)
+[Buffer dei vertici](vertex-buffers.md)
 </dt> </dl>
 
  

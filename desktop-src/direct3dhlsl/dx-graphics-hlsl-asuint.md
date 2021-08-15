@@ -1,9 +1,9 @@
 ---
 title: asuint
-description: Interpreta lo schema di bit di x come Unsigned Integer.
+description: Interpreta il modello di bit di x come intero senza segno.
 ms.assetid: 8401001d-f9ee-43da-9756-f311e9f2bb20
 keywords:
-- HLSL asuint
+- Asuint HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1a2d351eb36c6910790e2dceb94e3a97951ad850
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: ac8be8a81cca5c0ed7377475f2e3688a8c0c90c33fddcaab8c4de0f15f174eca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104976799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514774"
 ---
 # <a name="asuint"></a>asuint
 
-Interpreta lo schema di bit di *x* come Unsigned Integer.
+Interpreta il modello di bit di *x* come intero senza segno.
 
 
 
-| asuint RET (*x*) |
+| ret asuint(*x*) |
 |-----------------|
 
 
@@ -39,7 +39,7 @@ Interpreta lo schema di bit di *x* come Unsigned Integer.
 
 | Elemento                                                   | Descrizione                        |
 |--------------------------------------------------------|------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore di input.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Valore di input.<br/> |
 
 
 
@@ -47,7 +47,7 @@ Interpreta lo schema di bit di *x* come Unsigned Integer.
 
 ## <a name="return-value"></a>Valore restituito
 
-Input interpretato come Unsigned Integer.
+Input interpretato come intero senza segno.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -55,25 +55,25 @@ Input interpretato come Unsigned Integer.
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md)                 | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**uint**](/windows/desktop/WinProg/windows-data-types)                                         | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**uint**](/windows/desktop/WinProg/windows-data-types)                                         | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                                        | Supportato |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4](dx-graphics-hlsl-sm4.md) e versioni successive shader Models | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | no        |
+| [Modello shader 4 e](dx-graphics-hlsl-sm4.md) modelli di shader superiori | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)           | no        |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectVariable AsUnorderedAccessView (D3dx11effect. h)
-description: Ottenere una variabile di visualizzazione non ordinata.
+title: Metodo ID3DX11EffectVariable AsUnorderedAccessView (D3dx11effect.h)
+description: Ottenere una variabile unordered-access-view.
 ms.assetid: e8b7c104-09f7-4bfb-9980-a5603550b723
 keywords:
 - Metodo AsUnorderedAccessView Direct3D 11
 - Metodo AsUnorderedAccessView Direct3D 11, interfaccia ID3DX11EffectVariable
-- Interfaccia ID3DX11EffectVariable Direct3D 11, metodo AsUnorderedAccessView
+- Id3DX11EffectVariable interface Direct3D 11 , Metodo AsUnorderedAccessView
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8b9ce7dbbc99ef16ef3290ec1ba3135a8d2cb05
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d4cf3a1f146af7ca6faf3ff3e704285ac19f01a117809429842b45df9b7dcfd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531209"
 ---
-# <a name="id3dx11effectvariableasunorderedaccessview-method"></a>Metodo ID3DX11EffectVariable:: AsUnorderedAccessView
+# <a name="id3dx11effectvariableasunorderedaccessview-method"></a>Metodo ID3DX11EffectVariable::AsUnorderedAccessView
 
-Ottenere una variabile di visualizzazione non ordinata.
+Ottenere una variabile unordered-access-view.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,12 +45,12 @@ Questo metodo non presenta parametri.
 
 Tipo: **[ **ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md)\***
 
-Puntatore a una variabile di visualizzazione di accesso non ordinato. Vedere [**ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md).
+Puntatore a una variabile unordered-access-view. Vedere [**ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md).
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -60,8 +60,8 @@ Puntatore a una variabile di visualizzazione di accesso non ordinato. Vedere [**
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

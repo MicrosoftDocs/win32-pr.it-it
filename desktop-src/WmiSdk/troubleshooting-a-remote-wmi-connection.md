@@ -1,25 +1,25 @@
 ---
-description: Nelle sezioni seguenti vengono descritti i problemi comuni che gli sviluppatori possono avere con la creazione di una connessione WMI remota.
+description: Le sezioni seguenti descrivono i problemi comuni che gli sviluppatori possono avere con la creazione di una connessione WMI remota.
 ms.assetid: 328e420b-a859-4ce9-8a31-67150eb0a78f
 ms.tgt_platform: multiple
 title: Risoluzione dei problemi relativi a una connessione WMI remota
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae475f91836b9e99b1c7faaf149c452e00a66722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10603f713fecf861750d70c4166da91e081dc273a0d6d6134ed916a7f84f2bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312417"
 ---
 # <a name="troubleshooting-a-remote-wmi-connection"></a>Risoluzione dei problemi relativi a una connessione WMI remota
 
-Nelle sezioni seguenti vengono descritti i problemi comuni che gli sviluppatori possono avere con la creazione di una connessione WMI remota.
+Le sezioni seguenti descrivono i problemi comuni che gli sviluppatori possono avere con la creazione di una connessione WMI remota.
 
-Le sezioni seguenti sono illustrate in questo argomento:
+In questo argomento vengono illustrate le sezioni seguenti:
 
 -   [Accesso DCOM negato](#dcom-access-denied)
--   [Errore di connessione](#failure-to-connect)
+-   [Mancata Connessione](#failure-to-connect)
 -   [Timeout della connessione WMI](#wmi-connection-timed-out)
 -   [Argomenti correlati](#related-topics)
 
@@ -30,7 +30,7 @@ Le sezioni seguenti sono illustrate in questo argomento:
 <span id="Symptom"></span><span id="symptom"></span><span id="SYMPTOM"></span>Sintomo
 </dt> <dd>
 
-la connessione non è riuscita con l'errore "accesso DCOM negato", insieme al valore decimale-2147024891 o esadecimale value0x80070005.
+La connessione non è riuscita con l'errore "Accesso DCOM negato", insieme al valore decimale -2147024891 o valore esadecimale0x80070005.
 
 </dd> <dt>
 
@@ -44,13 +44,13 @@ DCOM potrebbe non essere configurato per consentire una connessione WMI.
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Risoluzione
 </dt> <dd>
 
-È possibile configurare le impostazioni DCOM per WMI utilizzando l'utilità di configurazione DCOM (**DCOMCnfg.exe**) disponibile in **strumenti di amministrazione** nel **Pannello di controllo**. Questa utilità espone le impostazioni che consentono a determinati utenti di connettersi al computer in modalità remota tramite DCOM. Per impostazione predefinita, i membri del gruppo Administrators possono connettersi in remoto al computer. Con questa utilità è possibile impostare la sicurezza per l'avvio, l'accesso e la configurazione del servizio WMI.
+È possibile configurare le impostazioni DCOM per WMI usando l'utilità di configurazione DCOM (**DCOMCnfg.exe**) disponibile in **Strumenti** di amministrazione in **Pannello di controllo**. Questa utilità espone le impostazioni che consentono a determinati utenti di connettersi al computer in modalità remota tramite DCOM. Ai membri del gruppo Administrators è consentito connettersi in remoto al computer per impostazione predefinita. Con questa utilità è possibile impostare la sicurezza per avviare, accedere e configurare il servizio WMI.
 
-Per ulteriori informazioni, vedere [protezione di una connessione WMI remota](securing-a-remote-wmi-connection.md).
+Per altre informazioni, vedere [Protezione di una connessione WMI remota](securing-a-remote-wmi-connection.md).
 
 </dd> </dl>
 
-## <a name="failure-to-connect"></a>Errore di connessione
+## <a name="failure-to-connect"></a>Mancata Connessione
 
 <dl> <dt>
 
@@ -64,18 +64,18 @@ Non è possibile connettersi a WMI in un sistema remoto.
 <span id="Issue"></span><span id="issue"></span><span id="ISSUE"></span>Problema
 </dt> <dd>
 
-È possibile che si stia tentando di connettersi a un sistema che non supporta WMI. Le seguenti connessioni tra le versioni del sistema operativo non sono supportate:
+È possibile che si stia tentando di connettersi a un sistema che non supporta WMI. Le connessioni seguenti tra le versioni del sistema operativo non sono supportate:
 
--   Non è possibile connettersi a un computer che esegue un'edizione iniziale, di base o Home.
+-   Non è possibile connettersi a un computer che esegue un'edizione Starter, Basic o Home.
 
-In alternativa, è possibile che si stia tentando di connettersi a uno spazio dei nomi che richiede una connessione crittografata, una che richiede un livello di autenticazione `pktPrivacy` , **WbemAuthenticationLevelPktPrivacy** o la **\_ \_ \_ \_ \_ privacy PKT del livello di autenticazione RPC C**.
+In alternativa, è possibile che si stia tentando di connettersi a uno spazio dei nomi che richiede una connessione crittografata, una che richiede un livello di autenticazione `pktPrivacy` , **WbemAuthenticationLevelPktPrivacy** o **RPC C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**.
 
 </dd> <dt>
 
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Risoluzione
 </dt> <dd>
 
-Per ulteriori informazioni, vedere [protezione di spazi dei nomi WMI](securing-wmi-namespaces.md), [protezione di client e provider C++](securing-c---clients-and-providers.md)o [impostazione del livello di sicurezza del processo predefinito tramite VBScript](setting-the-default-process-security-level-using-vbscript.md).
+Per altre informazioni, vedere Protezione degli spazi dei nomi [WMI,](securing-wmi-namespaces.md)Protezione di client e provider [C++](securing-c---clients-and-providers.md)o Impostazione del livello di sicurezza del processo predefinito [tramite VBScript.](setting-the-default-process-security-level-using-vbscript.md)
 
 </dd> </dl>
 
@@ -86,21 +86,21 @@ Per ulteriori informazioni, vedere [protezione di spazi dei nomi WMI](securing-w
 <span id="Symptom"></span><span id="symptom"></span><span id="SYMPTOM"></span>Sintomo
 </dt> <dd>
 
-Si verifica il timeout della connessione WMI.
+Timeout della connessione WMI.
 
 </dd> <dt>
 
 <span id="Issue"></span><span id="issue"></span><span id="ISSUE"></span>Problema
 </dt> <dd>
 
-A causa di problemi di ritardo di rete, il computer non è in grado di rispondere nel tempo.
+A causa di problemi di ritardo di rete, il computer semplicemente non è in grado di rispondere in tempo.
 
 </dd> <dt>
 
 <span id="Resolution"></span><span id="resolution"></span><span id="RESOLUTION"></span>Risoluzione
 </dt> <dd>
 
-Quando si esegue la connessione a WMI tramite una chiamata a [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md) o [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), è possibile impostare il flag **wbemConnectFlagUseMaxWait** (scripting) o il **\_ flag WBEM Connect usare il valore \_ \_ \_ Max \_ wait** in C++ su 128 (0x80) per imporre un intervallo di due (2) minuti per la chiamata.
+Quando ci si connette a WMI tramite una chiamata a [**SWbemLocator.ConnectServer**](swbemlocator-connectserver.md) o [**IWbemLocator::ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver), è possibile impostare il flag **wbemConnectFlagUseMaxWait** (scripting) o **WBEM \_ FLAG CONNECT USE MAX \_ \_ \_ \_ WAIT** in C++ su 128 (0x80) per imporre un timeout di due (2) minuti sulla chiamata.
 
 </dd> </dl>
 

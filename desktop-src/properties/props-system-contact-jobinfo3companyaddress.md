@@ -4,12 +4,12 @@ ms.assetid: 824b4322-d3ce-4120-897e-e08dee8a824a
 title: System.Contact.JobInfo3CompanyAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9605ce8bf1aeb56a91b637b051964d6de28a796
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 45718684d32686d65a5566378c328bcbca80d83772c69a598fe5f66b210cda2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468341"
 ---
 # <a name="systemcontactjobinfo3companyaddress"></a>System.Contact.JobInfo3CompanyAddress
 

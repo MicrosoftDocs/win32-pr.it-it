@@ -1,6 +1,6 @@
 ---
 title: Metodo SetProperty IBackgroundCopyJob5 (Deliveryoptimization.h)
-description: Metodo generico per l'impostazione Ottimizzazione recapito di processo .
+description: Metodo generico per l'impostazione Ottimizzazione recapito proprietà del processo.
 ms.assetid: 9A8CCE04-B3EB-43CC-A135-7054EC40ABEC
 keywords:
 - Metodo SetProperty
@@ -26,7 +26,7 @@ ms.locfileid: "118542684"
 ---
 # <a name="ibackgroundcopyjob5setproperty-method"></a>Metodo IBackgroundCopyJob5::SetProperty
 
-Metodo generico per l'impostazione Ottimizzazione recapito di processo .
+Metodo generico per l'impostazione Ottimizzazione recapito proprietà del processo.
 
 ## <a name="syntax"></a>Sintassi
 

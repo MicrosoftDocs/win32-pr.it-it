@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_Family
-description: Identifica la proprietà \_ della famiglia \_ FontProperties PKEY \_ dell'interfaccia utente.
+description: Identifica la proprietà \_ della famiglia FontProperties PKEY \_ \_ dell'interfaccia utente.
 ms.assetid: 95064588-9c14-401f-a86e-7b11e86faaf9
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118438660"
 ---
-# <a name="ui_pkey_fontproperties_family"></a>UI \_ PKEY \_ FontProperties \_ Family
+# <a name="ui_pkey_fontproperties_family"></a>Famiglia \_ FontProperties PKEY \_ \_ dell'interfaccia utente
 
-Identifica la proprietà \_ della famiglia \_ FontProperties PKEY \_ dell'interfaccia utente.
+Identifica la proprietà \_ della famiglia FontProperties PKEY \_ \_ dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-Ui \_ PKEY \_ FontProperties \_ Family viene usata da un'applicazione per eseguire una query  sul valore della raccolta a discesa Famiglia di caratteri.
+Ui \_ PKEY \_ FontProperties \_ Family viene usato da un'applicazione per eseguire query  sul valore della raccolta a discesa Della famiglia di caratteri.
 
 Il valore di UI PKEY FontProperties Family corrisponde a un nome Windows GDI Font Families recuperato con la funzione \_ \_ \_ [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa) o [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexa). [](../gdi/font-families.md)
 
 Il valore predefinito è una stringa vuota.
 
-Se viene specificata una stringa vuota per il valore di UI PKEY FontProperties Family, la selezione del tipo di \_ \_ carattere viene \_ cancellata.
+Se viene specificata una stringa vuota per il valore per ui \_ PKEY \_ FontProperties Family, la selezione del tipo \_ di carattere viene cancellata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -42,7 +42,7 @@ Se viene specificata una stringa vuota per il valore di UI PKEY FontProperties F
 [Proprietà del controllo Font](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[Controllo Font](windowsribbon-controls-fontcontrol.md)
+[Controllo Carattere](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
  

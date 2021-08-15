@@ -1,7 +1,7 @@
 ---
-description: La funzione RegOpenBlobKey recupera un BLOB archiviato nella chiave del registro di sistema specificata.
+description: La funzione RegOpenBlobKey recupera un BLOB archiviato nella chiave del Registro di sistema specificata.
 ms.assetid: f6b16c07-c705-47f1-a21c-6155368551c7
-title: Funzione RegOpenBlobKey (Netmon. h)
+title: Funzione RegOpenBlobKey (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 24d788c8c4b69525d6c0be374845b44f804982bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d372d6cc69c4e80691f96075aaa0d9030c90d06fc8256f85a7ed2dc894f3fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364150"
 ---
-# <a name="regopenblobkey-function"></a>RegOpenBlobKey (funzione)
+# <a name="regopenblobkey-function"></a>Funzione RegOpenBlobKey
 
-La funzione **RegOpenBlobKey** recupera un BLOB archiviato nella chiave del registro di sistema specificata.
+La **funzione RegOpenBlobKey** recupera un BLOB archiviato nella chiave del Registro di sistema specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ DWORD RegOpenBlobKey(
 
 <dl> <dt>
 
-*HKEY* \[ in\]
+*hkey* \[ Pollici\]
 </dt> <dd>
 
-Handle per la chiave del registro di sistema che contiene il BLOB.
+Handle per la chiave del Registro di sistema che contiene il BLOB.
 
 </dd> <dt>
 
-*szBlobName* \[ in\]
+*szBlobName* \[ Pollici\]
 </dt> <dd>
 
-Nome che identifica il BLOB specificato nel registro di sistema.
+Nome che identifica il BLOB specificato nel Registro di sistema.
 
 </dd> <dt>
 
-*phBlob* \[ out\]
+*phBlob* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al BLOB recuperato.
@@ -64,7 +64,7 @@ Puntatore al BLOB recuperato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -76,8 +76,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: La classe setting CIM rappresenta i parametri operativi e correlati alla \_ configurazione per uno o più elementi di sistema gestiti.
+description: La classe CIM Setting rappresenta i parametri operativi e correlati alla \_ configurazione per uno o più elementi di sistema gestiti.
 ms.assetid: 57c46b00-96c4-4df1-82ad-01f7b4f75ced
 ms.tgt_platform: multiple
 title: CIM_Setting classe (provider WMI CIMWin32)
@@ -26,10 +26,10 @@ ms.locfileid: "118421312"
 ---
 # <a name="cim_setting-class-cimwin32-wmi-providers"></a>CIM_Setting classe (provider WMI CIMWin32)
 
-La **classe \_ setting CIM** rappresenta i parametri operativi e correlati alla configurazione per uno o più elementi di sistema gestiti. A un elemento di sistema gestito possono essere associati più oggetti impostazione. I valori operativi correnti per i parametri di un elemento vengono riflessi dalle proprietà nell'elemento stesso o dalle proprietà nelle relative associazioni. Queste proprietà non devono essere gli stessi valori presenti nell'oggetto impostazione. Ad esempio, un modem può avere una velocità in baud di 56 kilobyte al secondo, ma operare a 19,2 kilobyte al secondo.
+La **classe CIM \_ Setting** rappresenta i parametri operativi e correlati alla configurazione per uno o più elementi di sistema gestiti. A un elemento di sistema gestito possono essere associati più oggetti impostazione. I valori operativi correnti per i parametri di un elemento vengono riflessi dalle proprietà nell'elemento stesso o dalle proprietà nelle relative associazioni. Queste proprietà non devono essere gli stessi valori presenti nell'oggetto impostazione. Ad esempio, un modem può avere una velocità in baud di 56 kilobyte al secondo, ma opera a 19,2 kilobyte al secondo.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,20 +49,20 @@ class CIM_Setting
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM Setting** ha questi tipi di membri:
+La **classe \_ CIM Setting** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CiM Setting** ha queste proprietà.
+La **classe CIM \_ Setting** ha queste proprietà.
 
 <dl> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -78,7 +78,7 @@ Breve descrizione testuale dell'oggetto corrente.
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -91,7 +91,7 @@ Descrizione testuale dell'oggetto corrente.
 **SettingID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -106,9 +106,9 @@ Identificatore con cui è noto l'oggetto corrente.
 
 ## <a name="remarks"></a>Commenti
 
-WMI non implementa questa classe. Per le classi WMI derivate **\_ dall'impostazione CIM**, vedere [Classi Win32.](win32-provider.md)
+WMI non implementa questa classe. Per le classi WMI derivate **dall'impostazione \_ CIM,** vedere [Classi Win32](win32-provider.md).
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

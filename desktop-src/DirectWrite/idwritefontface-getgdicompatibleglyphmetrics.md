@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteFontFace GetGdiCompatibleGlyphMetrics
-description: Ottiene le metriche del glifo in unità di progettazione dei tipi di carattere con i valori restituiti compatibili con i prodotti GDI.
+description: Ottiene le metriche dei glifi nelle unità di progettazione dei tipi di carattere con i valori restituiti compatibili con il prodotto GDI.
 ms.assetid: 7bda3916-6db3-4f56-b18c-288506c0b646
 keywords:
-- Scrittura diretta metodo GetGdiCompatibleGlyphMetrics
-- Metodo GetGdiCompatibleGlyphMetrics scrittura diretta, interfaccia IDWriteFontFace
-- IDWriteFontFace interface Direct Write, metodo GetGdiCompatibleGlyphMetrics
+- Metodo GetGdiCompatibleGlyphMetrics Direct Write
+- Metodo GetGdiCompatibleGlyphMetrics Direct Write, interfaccia IDWriteFontFace
+- Interfaccia IDWriteFontFace Direct Write, metodo GetGdiCompatibleGlyphMetrics
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a949edbdad2f25d748e5af64ebe408c79c7372b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd36fc09ff8161ba8fb72d3b55b9351b0a7d2a6bd3f3f11a71c15a8d9422f6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816501"
 ---
-# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Metodo IDWriteFontFace:: GetGdiCompatibleGlyphMetrics
+# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Metodo IDWriteFontFace::GetGdiCompatibleGlyphMetrics
 
-Ottiene le metriche del glifo in unità di progettazione dei tipi di carattere con i valori restituiti compatibili con i prodotti GDI.
+Ottiene le metriche dei glifi nelle unità di progettazione dei tipi di carattere con i valori restituiti compatibili con il prodotto GDI.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,72 +52,72 @@ virtual HRESULT GetGdiCompatibleGlyphMetrics(
 *emSize* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Dimensioni ogico del tipo di carattere in unità DIP.
+Dimensione ogica del tipo di carattere in unità DIP.
 
 </dd> <dt>
 
 *pixelsPerDip* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Il numero di pixel fisici per DIP.
+Numero di pixel fisici per DIP.
 
 </dd> <dt>
 
 *trasformazione* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const [**DWrite \_ Matrix**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Trasformazione facoltativa applicata ai glifi e alle rispettive posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e da *pixelsPerDip*.
+Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e *pixelPerDip*.
 
 </dd> <dt>
 
 *useGdiNatural* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Se è impostato su **false**, le metriche corrispondono a quelle del testo con aliasing GDI. Quando è impostato su **true**, le metriche corrispondono a quelle del testo misurato da GDI usando un tipo di carattere creato con la **\_ \_ qualità naturale CLEARTYPE**.
+Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo con alias GDI. Se impostato su **TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY**.
 
 </dd> <dt>
 
-*GlyphIndices* \[ in\]
+*glifoIndices* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const \* UInt16**
+Tipo: **const UINT16 \***
 
-Matrice di indici di glifi per i quali calcolare la metrica.
+Matrice di indici di glifi per cui calcolare le metriche.
 
 </dd> <dt>
 
 *glyphCount* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
-Numero di elementi nella matrice *GlyphIndices* .
+Numero di elementi nella matrice *glyphIndices.*
 
 </dd> <dt>
 
-*glyphMetrics* \[ out\]
+*glyphMetrics* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ metrica glifo DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
+Tipo: **[ **DWRITE \_ GLYPH \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
 
-Matrice di strutture [**della \_ \_ metrica del glifo DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) riempite da questa funzione. Le metriche si trovano in unità di progettazione dei tipi di carattere.
+Matrice di [**strutture DWRITE \_ GLYPH \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) riempite da questa funzione. Le metriche sono in unità di progettazione dei tipi di carattere.
 
 </dd> <dt>
 
 *isSideways* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Valore BOOL che indica se il tipo di carattere viene utilizzato in un'esecuzione laterale. Questo può influire sulle metriche del glifo se il tipo di carattere presenta una simulazione obliqua perché la simulazione obliqua laterale differisce dalla simulazione obliqua non laterale.
+Valore BOOL che indica se il tipo di carattere viene usato in un'esecuzione laterale. Ciò può influire sulle metriche degli glifi se il tipo di carattere ha una simulazione obliqua perché la simulazione obliqua laterale differisce dalla simulazione obliqua non laterale.
 
 </dd> </dl>
 
@@ -125,7 +125,7 @@ Valore BOOL che indica se il tipo di carattere viene utilizzato in un'esecuzione
 
 Tipo: **HRESULT**
 
-Codice di errore **HRESULT** standard. Se uno degli indici del glifo di input è esterno all'intervallo di indice del glifo valido per il tipo di carattere corrente, verrà restituito **E \_ INVALIDARG** .
+Codice **di errore HRESULT** standard. Se uno degli indici del glifo di input non rientra nell'intervallo di indice del glifo valido per il carattere corrente, verrà restituito **E \_ INVALIDARG.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -133,7 +133,7 @@ Codice di errore **HRESULT** standard. Se uno degli indici del glifo di input è
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>DWrite. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

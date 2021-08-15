@@ -1,28 +1,28 @@
 ---
-description: Esplora risorse è una potente applicazione di esplorazione e gestione delle risorse.
+description: Windows Explorer è una potente applicazione di esplorazione e gestione delle risorse.
 ms.assetid: 879CE652-EDC0-4a14-925E-C83763133BE5
-title: Sviluppo con Esplora risorse
+title: Sviluppo con Windows Explorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b7b68d48f2d1becea23311847a5ce41b3776321
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22d00b513b3ee73c30b100cb4236d2c9fb327e1f9557d12ba86738ee9e910ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460185"
 ---
-# <a name="developing-with-windows-explorer"></a>Sviluppo con Esplora risorse
+# <a name="developing-with-windows-explorer"></a>Sviluppo con Windows Explorer
 
-Esplora risorse è una potente applicazione di esplorazione e gestione delle risorse. È possibile accedere a Esplora risorse come un intero integrato tramite Explorer.exe o l'interfaccia [**IExplorerBrowser**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) . Esplora risorse (Explorer.exe) può essere generato come processo separato utilizzando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) o una funzione simile.
+Windows Explorer è una potente applicazione di esplorazione e gestione delle risorse. Windows Explorer è accessibile come intero integrato tramite Explorer.exe o [**l'interfaccia IExplorerBrowser.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) Windows Explorer (Explorer.exe) può essere generato come processo separato usando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) o una funzione simile.
 
 > [!Note]  
-> Le opzioni della riga di comando per Explorer.exe sono documentate nel sito di supporto di Microsoft Windows nell'articolo [Opzioni di Esplora risorse Command-Line](https://support.microsoft.com/kb/152457).
+> Le opzioni della riga di comando Explorer.exe sono documentate nel sito del supporto tecnico microsoft Windows nell'articolo Windows [Explorer Command-Line Opzioni](https://support.microsoft.com/kb/152457).
 
  
 
-Le finestre aperte di Esplora risorse possono essere individuate e programmate tramite [**ishellwindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows) (CLSID \_ ShellWindows) e le nuove istanze di Esplora risorse possono essere create tramite [**IWebBrowser2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)) (CLSID \_ ShellBrowserWindow).
+Le finestre di Esplora risorse aperte possono essere individuate e programmate usando [**IShellWindows**](/windows/desktop/api/Exdisp/nn-exdisp-ishellwindows) (CLSID ShellWindows) e le nuove istanze di Windows Explorer possono essere create usando \_ [**IWebBrowser2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)) (CLSID \_ ShellBrowserWindow).
 
-Nell'esempio di codice riportato di seguito viene illustrato come utilizzare il modello di automazione di Esplora risorse per creare e individuare le finestre di esplorazione in esecuzione.
+L'esempio di codice seguente illustra come usare Windows di automazione di Esplora risorse per creare e individuare le finestre di esplorazione in esecuzione.
 
 
 ```
@@ -225,54 +225,54 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 
 
 
-L'area client di Esplora risorse può essere ospitata tramite l'interfaccia [IExplorerBrowser](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) . Il client di Esplora risorse e i controlli struttura ad albero dello spazio dei nomi sono componenti standard di Windows Vista e versioni successive. Gli sviluppatori possono riutilizzare le interfacce come componenti di compilazione. Un uso comune di questi controlli consiste nel creare esplorazioni personalizzate appropriate per il dominio del problema.
+L Windows area client di Esplora risorse può essere ospitata tramite [l'interfaccia IExplorerBrowser.](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iexplorerbrowser) Il client Windows Explorer e i controlli albero dello spazio dei nomi sono componenti standard Windows Vista e versioni successive. Gli sviluppatori possono riutilizzare le interfacce come componenti di compilazione. Un uso comune di questi controlli è la creazione di esplorazioni personalizzate appropriate al dominio del problema.
 
-I controlli in Esplora risorse sono suddivisi nelle seguenti categorie funzionali:
+I controlli in Windows Explorer sono classificati nelle categorie funzionali seguenti:
 
--   [Controlli di navigazione](#navigation-controls)
--   [Controlli Command](#command-controls)
--   [Controlli di proprietà e di anteprima](#property-and-preview-controls)
--   [Filtro e visualizzazione di controlli](#filtering-and-view-controls)
--   [ListView (controllo)](#listview-control)
+-   [Controlli di spostamento](#navigation-controls)
+-   [Controlli dei comandi](#command-controls)
+-   [Controlli delle proprietà e dell'anteprima](#property-and-preview-controls)
+-   [Applicazione di filtri e controlli di visualizzazione](#filtering-and-view-controls)
+-   [Controllo Listview](#listview-control)
 
-## <a name="navigation-controls"></a>Controlli di navigazione
+## <a name="navigation-controls"></a>Controlli di spostamento
 
-I controlli di spostamento aiutano gli utenti a determinare il contesto e a spostarsi nello spazio del dominio logico associato, denominato pagespace. Ad esempio, pagespace per Esplora risorse è lo spazio dei nomi della shell. Pagespaces sono costituiti da zero o più pagine.
+I controlli di spostamento consentono agli utenti di determinare il contesto e di spostarsi nello spazio di dominio logico associato, denominato spazio di pagina. Ad esempio, lo spazio di pagina per Windows Explorer è lo spazio dei nomi Shell. Gli spazi di pagina sono costituiti da zero o più pagine.
 
-Nella tabella seguente sono elencati e descritti i controlli di navigazione disponibili in Esplora risorse in Windows Vista e nei sistemi operativi successivi.
+Nella tabella seguente sono elencati e descritti i controlli di navigazione disponibili in Windows Explorer nel Windows Vista e nei sistemi operativi successivi.
 
 
 
-| Controllo di navigazione               | Descrizione                                                                                                                                                                                |
+| Controllo di spostamento               | Descrizione                                                                                                                                                                                |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barra degli indirizzi (controllo di navigazione) | Consente di visualizzare l'indirizzo della pagina corrente in pagespace. È possibile fare clic sui pulsanti di navigazione per spostarsi tra i predecessori in pagespace. Gli utenti possono anche digitare URL e percorsi da esplorare. |
-| Albero delle cartelle                      | Fornisce una nuova versione di un controllo struttura ad albero, ottimizzata per pagespaces di grandi dimensioni.                                                                                                                  |
-| Viaggi                           | Abilita la navigazione relativa attraverso pulsanti di tipo Web, ad esempio **indietro** e **in** secondo piano.                                                                                                    |
-| Titolo                            | Visualizza il nome e il contesto della finestra di esplorazione corrente.                                                                                                                                            |
-| Pagespace                        | Visualizza il ramo corrente di pagespace. Le pagine possono essere ordinate in base a criteri diversi. Gli utenti possono fare clic su una pagina per passare a questa pagina.                                                        |
+| Barra degli indirizzi (controllo Breadcrumb) | Visualizza l'indirizzo della pagina corrente nello spazio pagine. È possibile fare clic sui pulsanti di navigazione per passare a qualsiasi predecessore nello spazio della pagina. Gli utenti possono anche digitare URL e percorsi da esplorare. |
+| Albero delle cartelle                      | Fornisce una nuova versione di un controllo struttura ad albero, ottimizzata per spazi di pagine di grandi dimensioni.                                                                                                                  |
+| Viaggi                           | Abilita lo spostamento relativo tramite pulsanti di tipo Web, ad **esempio Indietro** e **Avanti.**                                                                                                    |
+| Titolo                            | Visualizza il nome e il contesto correnti della finestra di esplorazione.                                                                                                                                            |
+| Spazio pagine                        | Visualizza il ramo corrente dello spazio pagine. Le pagine possono essere ordinate in base a criteri diversi. Gli utenti possono fare clic su una pagina per passarla.                                                        |
 
 
 
  
 
-## <a name="command-controls"></a>Controlli Command
+## <a name="command-controls"></a>Controlli dei comandi
 
-I controlli comando annunciano le funzionalità e le funzionalità di Esplora risorse agli utenti. Questi controlli eseguono azioni generali o azioni specifiche per uno o più elementi selezionati.
+I controlli dei comandi annunciano agli utenti le funzionalità Windows Explorer. Questi controlli eseguono azioni generali o azioni specifiche di uno o più elementi selezionati.
 
 
 
-| Controllo Command | Descrizione                                                                                                                                                                                        |
+| Controllo dei comandi | Descrizione                                                                                                                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barra degli strumenti         | Visualizza i pulsanti per i comandi di uso comune, ovvero una nuova versione di una barra degli strumenti dei comandi. Le opzioni di personalizzazione includono i pulsanti a discesa, i pulsanti di divisione, il testo descrittivo facoltativo e un'area di overflow. |
-| Banner            | Viene visualizzato come singolo controllo personalizzato, facoltativo al centro della barra degli strumenti. Rappresenta il comando primario per il contesto corrente.                                                             |
-| Barra dei menu        | Visualizza i comandi attraverso i menu.                                                                                                                                                                   |
-| Menu di scelta rapida    | Elenca un subset di comandi disponibili in modo contestuale pertinente che vengono visualizzati in seguito al clic con il pulsante destro del mouse su un elemento.                                                                               |
+| Barra degli strumenti         | Visualizza i pulsanti per i comandi di uso comune (una nuova versione di una barra degli strumenti dei comandi). Le opzioni di personalizzazione includono pulsanti a discesa, pulsanti di divisione, testo descrittivo facoltativo e un'area di overflow. |
+| Banner            | Viene visualizzato come singolo controllo personalizzato facoltativo al centro della barra degli strumenti. Rappresenta il comando primario per il contesto corrente.                                                             |
+| Barra dei menu        | Visualizza i comandi tramite i menu.                                                                                                                                                                   |
+| Menu di scelta rapida    | Elenca un subset contestualmente pertinente dei comandi disponibili che vengono visualizzati come risultato del clic con il pulsante destro del mouse su un elemento.                                                                               |
 
 
 
  
 
-## <a name="property-and-preview-controls"></a>Controlli di proprietà e di anteprima
+## <a name="property-and-preview-controls"></a>Controlli delle proprietà e dell'anteprima
 
 I controlli proprietà e anteprima vengono usati per visualizzare in anteprima gli elementi e per visualizzare e modificare le proprietà degli elementi.
 
@@ -280,47 +280,47 @@ I controlli proprietà e anteprima vengono usati per visualizzare in anteprima g
 
 | Controllo    | Descrizione                                                                                                                                                                                                                                        |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Anteprima    | Visualizza un'anteprima dell'elemento selezionato, ad esempio un'anteprima o un'icona in tempo reale.                                                                                                                                                                       |
-| Proprietà | Consente di visualizzare le proprietà dell'elemento selezionato. Per le selezioni multiple, viene visualizzato un riepilogo delle proprietà per il gruppo selezionato di elementi. Per una selezione null, viene visualizzato un riepilogo delle proprietà della pagina corrente (contenuto del controllo ListView). |
+| Anteprima    | Visualizza un'anteprima dell'elemento selezionato, ad esempio un'anteprima o un'icona dinamica.                                                                                                                                                                       |
+| Proprietà | Visualizza le proprietà dell'elemento selezionato. Per più selezioni, visualizza un riepilogo delle proprietà per il gruppo selezionato di elementi. Per una selezione Null, visualizza un riepilogo delle proprietà per la pagina corrente (contenuto della visualizzazione elenco). |
 
 
 
  
 
-## <a name="filtering-and-view-controls"></a>Filtro e visualizzazione di controlli
+## <a name="filtering-and-view-controls"></a>Applicazione di filtri e controlli di visualizzazione
 
-I controlli Filtering e View vengono usati per modificare il set di elementi nel controllo ListView e per modificare la presentazione degli elementi nel controllo ListView.
+I controlli filtro e visualizzazione vengono usati per modificare il set di elementi nella visualizzazione elenco e per modificare la presentazione degli elementi nella visualizzazione elenco.
 
 
 
 | Controllo   | Descrizione                                                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| Filtro    | Filtra o dispone gli elementi in un controllo ListView in base alle proprietà elencate come colonne. Facendo clic su una colonna viene ordinata in base a tale proprietà. |
-| Wordwheel | Filtra dinamicamente e in modo incrementale gli elementi visualizzati in un controllo ListView in base a una stringa di testo di input.                      |
-| Visualizzazione      | Consente all'utente di modificare la modalità di visualizzazione di un controllo ListView. Un dispositivo di scorrimento può essere utilizzato per determinare le dimensioni dell'icona.                |
+| Filtro    | Filtra o dispone gli elementi in una visualizzazione elenco in base alle proprietà elencate come colonne. Facendo clic su una colonna, l'ordinamento viene ordinato in base a tale proprietà. |
+| Ruota di parole | Filtra in modo dinamico e incrementale gli elementi visualizzati in una visualizzazione elenco in base a una stringa di testo di input.                      |
+| Visualizzazione      | Consente all'utente di modificare la modalità di visualizzazione di un controllo listview. Un dispositivo di scorrimento può essere usato per determinare le dimensioni dell'icona.                |
 
 
 
  
 
-## <a name="listview-control"></a>ListView (controllo)
+## <a name="listview-control"></a>Controllo Listview
 
-Il controllo ListView viene usato per visualizzare un set di elementi in una delle quattro modalità di visualizzazione: dettagli, riquadri, icone o panorama. Il controllo ListView consente inoltre all'utente di selezionare e attivare uno o più elementi.
+Il controllo listview viene usato per visualizzare un set di elementi in una delle quattro modalità di visualizzazione seguenti: dettagli, riquadri, icone o panorama. Il controllo listview consente inoltre all'utente di selezionare e attivare uno o più elementi.
 
 > [!Caution]  
-> Anche se alcuni di questi controlli hanno nomi e/o funzionalità simili ai controlli Windows Presentation Foundation standard (WPF) trovati nello spazio dei nomi System. Windows. Controls, sono classi distinte.
+> Anche se alcuni di questi controlli hanno nomi e/o funzionalità simili ai controlli Windows Presentation Foundation (WPF) standard disponibili nel sistema. Windows. Controlla lo spazio dei nomi, sono classi distinte.
 
  
 
-Questi controlli separati interagiscono in gran parte tramite gli eventi generati dall'interazione dell'utente o dai controlli stessi. Nella tabella seguente vengono illustrate le tre categorie di eventi principali.
+Questi controlli separati funzionano in gran parte tramite eventi generati dall'interazione dell'utente o dai controlli stessi. La tabella seguente illustra le tre categorie di eventi principali.
 
 
 
 | Categoria evento | Esempio                                                       |
 |----------------|---------------------------------------------------------------|
-| Spostamento     | Passa da una pagina all'altra.                               |
-| Selezione      | Modifica della selezione corrente nel controllo ListView.               |
-| Visualizza modifica    | Modifica dell'ordine di presentazione o della modalità di visualizzazione in ListView. |
+| Spostamento     | Da una pagina all'altra.                               |
+| Selezione      | Modifica della selezione corrente nella visualizzazione elenco.               |
+| Modifica della visualizzazione    | Modifica dell'ordine di presentazione o della modalità di visualizzazione nella visualizzazione elenco. |
 
 
 

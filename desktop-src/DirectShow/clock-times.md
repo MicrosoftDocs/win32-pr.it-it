@@ -1,36 +1,36 @@
 ---
-description: Ore di clock
+description: Orario di clock
 ms.assetid: ff964f7f-a084-4de3-8b2b-8efb6c9f4a9f
-title: Ore di clock
+title: Orario di clock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e0639fd2b38e312f30f932fcf508427cd71c054
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b0075dc2d8c2273c8ade612244f0f7d551996756e55000043ffe3bc952227fc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104401101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402071"
 ---
-# <a name="clock-times"></a>Ore di clock
+# <a name="clock-times"></a>Orario di clock
 
-DirectShow definisce due ore di clock correlate: ora di riferimento e tempo di flusso.
+DirectShow definisce due ore di clock correlate: l'ora di riferimento e l'ora del flusso.
 
--   L' *ora di riferimento* è il tempo assoluto restituito dall'orologio di riferimento. Vedere [clock di riferimento](reference-clocks.md).
--   Il *tempo di flusso* viene definito rispetto al momento in cui è stata avviata l'ultima esecuzione del grafico.
+-   *L'ora di* riferimento è l'ora assoluta restituita dal clock di riferimento. Vedere [Clock di riferimento.](reference-clocks.md)
+-   *L'ora di* flusso è definita in relazione all'ultima esecuzione del grafo.
     -   Mentre il grafico è in esecuzione, l'ora del flusso è uguale all'ora di riferimento meno l'ora di inizio.
-    -   Quando il grafico è sospeso, il tempo di flusso rimane in corrispondenza dell'ora del flusso in cui è stato sospeso.
+    -   Mentre il grafico è in pausa, il tempo di flusso rimane al momento della sospensione del flusso.
     -   Dopo un'operazione di ricerca, l'ora del flusso viene reimpostata su zero.
-    -   Quando il grafico viene arrestato, il tempo di flusso non è definito.
+    -   Mentre il grafico viene arrestato, il tempo di flusso non è definito.
 
-Quando un esempio di supporto presenta un timestamp *t*, significa che è necessario eseguire il rendering dell'esempio in corrispondenza del tempo di flusso *t*. Per questo motivo, il tempo di flusso viene definito anche *tempo di presentazione*.
+Quando un campione multimediale ha un timestamp *t*, significa che il rendering dell'esempio deve essere eseguito all'ora del *flusso t*. Per questo motivo, l'ora del flusso è detta anche *ora di presentazione.*
 
-Quando un'applicazione chiama [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run) per eseguire il grafico dei filtri, il gestore del grafo del filtro chiama [**IMediaFilter:: Run**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) in ogni filtro. Per compensare la lieve quantità di tempo necessaria per l'avvio dell'esecuzione dei filtri, il gestore del grafico del filtro specifica un'ora di inizio leggermente in futuro.
+Quando un'applicazione chiama [**IMediaControl::Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run) per eseguire il grafico dei filtri, Filter Graph Manager chiama [**IMediaFilter::Run**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) su ogni filtro. Per compensare la minima quantità di tempo necessario per l'avvio dell'esecuzione dei filtri, Filter Graph Manager specifica un'ora di inizio leggermente futura.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Time and Clocks in DirectShow](time-and-clocks-in-directshow.md)
+[Ora e orologi in DirectShow](time-and-clocks-in-directshow.md)
 </dt> <dt>
 
 [Timestamp](time-stamps.md)

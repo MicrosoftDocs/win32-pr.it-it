@@ -4,28 +4,28 @@ description: Icona della barra delle applicazioni dei caratteri
 ms.assetid: b1db7151-b367-4708-897e-0695988163e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3769e6ce04886ce763d967eb14af4f0cd77628f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af64413b0ecfee182902c6db376ce1857b8b1cf59e2d1a93274b70366ad5ee4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474985"
 ---
 # <a name="the-character-taskbar-icon"></a>Icona della barra delle applicazioni dei caratteri
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Se è stato creato un carattere per includere un'icona, l'icona viene visualizzata nell'area di notifica della barra delle applicazioni quando Microsoft Agent viene eseguito. Questa icona consente di accedere al menu popup del carattere, che consente di accedere ai comandi globali dell'agente, ad esempio quelli che nascondono e visualizzano il carattere.
+Se un carattere è stato creato per includere un'icona, l'icona viene visualizzata nell'area di notifica della barra delle applicazioni durante l'esecuzione di Microsoft Agent. Questa icona consente di accedere al menu a comparsa del carattere, che consente di accedere ai comandi globali di Agent, ad esempio quelli che nascondono e mostrano il carattere.
 
-![area di notifica con clock e icona](images/f1tbicon.gif)
+![area di notifica con orologio e icona](images/f1tbicon.gif)
 
-Se si muove il puntatore del mouse sull'icona della barra delle applicazioni, viene visualizzata una finestra di suggerimento che riflette il nome del carattere (nella lingua corrente del sistema). Facendo doppio clic sull'icona della barra delle applicazioni del carattere viene visualizzato il carattere. L'azione associata al doppio clic sull'icona dipende dall'applicazione corrente che controlla tale carattere.
+Spostando il puntatore del mouse sull'icona della barra delle applicazioni viene visualizzata una finestra del suggerimento che riflette il nome del carattere (nella lingua corrente del sistema). Facendo clic sull'icona della barra delle applicazioni del carattere viene visualizzato il carattere. L'azione associata al doppio clic sull'icona dipende dall'applicazione corrente che controlla tale carattere.
 
-Facendo clic con il pulsante destro del mouse sull'icona viene visualizzato un menu a comparsa. Quando il carattere è visibile, nel menu di scelta rapida vengono visualizzati gli stessi comandi visualizzati quando si fa clic con il pulsante destro del mouse sul carattere. Se il carattere è nascosto, verranno visualizzate solo la finestra comandi vocali Apri o Chiudi e Mostra comandi.
+Facendo clic con il pulsante destro del mouse sull'icona viene visualizzato un menu a comparsa. Quando il carattere è visibile, il menu a comparsa visualizza gli stessi comandi visualizzati quando si fa clic con il pulsante destro del mouse sul carattere. Se il carattere è nascosto, vengono visualizzati solo i comandi vocali Apri (o Chiudi) e Mostra.
 
- 
+ 
 
- 
+ 
 
 
 

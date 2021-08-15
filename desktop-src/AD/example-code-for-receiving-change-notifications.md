@@ -1,28 +1,28 @@
 ---
 title: Codice di esempio per la ricezione di notifiche di modifica
-description: Nell'esempio di codice riportato di seguito viene illustrato come utilizzare il controllo di notifica delle modifiche LDAP per ricevere notifiche delle modifiche apportate a un oggetto in Active Directory Domain Services.
+description: Nell'esempio di codice seguente viene illustrato come usare il controllo di notifica delle modifiche LDAP per ricevere notifiche di modifiche a un oggetto in Active Directory Domain Services.
 ms.assetid: e1d36d1c-ee50-4c2f-92f6-eee1dae1c5af
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, ricezione di notifiche di modifica
+- Esempi di Active Directory Active Directory , ricezione di notifiche di modifica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4edd1b5d6e91ee712e1586bee3b63fcd25ceaf95
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b1d0cbc3a6aeebf1e5e313993fcc060d78379e7aa1f806135f56b4c59926f9ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103956331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693139"
 ---
 # <a name="example-code-for-receiving-change-notifications"></a>Codice di esempio per la ricezione di notifiche di modifica
 
-Nell'esempio di codice riportato di seguito viene illustrato come utilizzare il controllo di notifica delle modifiche LDAP per ricevere notifiche delle modifiche apportate a un oggetto in Active Directory Domain Services. Nell'esempio viene registrato per le notifiche, viene letto lo stato iniziale dell'oggetto, quindi viene utilizzato un ciclo per attendere ed elaborare le modifiche apportate all'oggetto.
+Nell'esempio di codice seguente viene illustrato come usare il controllo di notifica delle modifiche LDAP per ricevere notifiche di modifiche a un oggetto in Active Directory Domain Services. L'esempio esegue la registrazione per le notifiche, legge lo stato iniziale dell'oggetto e quindi usa un ciclo per attendere ed elaborare le modifiche all'oggetto.
 
-Innanzitutto, nell'esempio di codice viene chiamata la funzione di [**\_ ricerca LDAP \_ ext**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_ext) , che è un'operazione di ricerca asincrona che restituisce dopo la registrazione di una richiesta di notifica. In secondo luogo, dopo aver impostato la richiesta di notifica, nell'esempio viene chiamata la funzione [**ricerca LDAP, che è un' \_ \_**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_s) operazione di ricerca sincrona che legge lo stato corrente dell'oggetto. In terzo luogo, nell'esempio viene usato un ciclo che chiama il \_ risultato LDAP per attendere i risultati dell'operazione di ricerca asincrona. Quando la [**funzione \_ risultato LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) restituisce, l'esempio elabora i risultati della ricerca e ripete il ciclo.
+In primo luogo, l'esempio di codice chiama la [**funzione ldap \_ search \_ ext,**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_ext) ovvero un'operazione di ricerca asincrona che restituisce dopo la registrazione di una richiesta di notifica. In secondo momento, dopo aver impostato la richiesta di notifica, l'esempio chiama la funzione [**ldap \_ search \_ s,**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_search_s) che è un'operazione di ricerca sincrona che legge lo stato corrente dell'oggetto. Terzo, l'esempio usa un ciclo che chiama il risultato ldap \_ per attendere i risultati dell'operazione di ricerca asincrona. Quando la [**funzione \_ di risultato ldap**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) viene restituita, l'esempio elabora i risultati della ricerca e ripete il ciclo.
 
-Tenere presente che se nell'esempio viene letto lo stato corrente e quindi viene configurata la richiesta di notifica, si verificherà un periodo di tempo durante il quale le modifiche potrebbero verificarsi prima della registrazione della richiesta di notifica. Leggendo l'oggetto dopo aver impostato la richiesta di notifica, la finestra funziona in senso inverso: è possibile ricevere notifiche delle modifiche che si sono verificate prima di leggere lo stato iniziale. Per gestire questo problema, nell'esempio viene memorizzato il valore dell'attributo [**uSNChanged**](/windows/desktop/ADSchema/a-usnchanged) dell'oggetto quando viene letto lo stato iniziale dell'oggetto. Quindi, quando [**il \_ risultato LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) restituisce una notifica di modifica, nell'esempio viene confrontato il valore dell'attributo **uSNChanged** memorizzato nella cache con il valore riportato dal **\_ risultato LDAP**. Se il nuovo valore dell'attributo **uSNChanged** è minore o uguale al valore memorizzato nella cache, nell'esempio vengono rimossi i risultati perché indicano una modifica che si è verificata prima dell'operazione di lettura iniziale.
+Tenere presente che se l'esempio legge lo stato corrente e quindi configura la richiesta di notifica, ci sarebbe un periodo di tempo durante il quale potrebbero verificarsi modifiche prima della registrazione della richiesta di notifica. Leggendo l'oggetto dopo aver impostato la richiesta di notifica, la finestra funziona in modo inverso. È possibile ricevere notifiche delle modifiche che si sono verificate prima di leggere lo stato iniziale. Per gestire questo problema, l'esempio memorizza nella cache il valore [**dell'attributo uSNChanged**](/windows/desktop/ADSchema/a-usnchanged) dell'oggetto quando legge lo stato iniziale dell'oggetto. Quindi, quando [**il \_ risultato ldap**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) viene restituito con una notifica di modifica, nell'esempio viene confrontato il valore dell'attributo **uSNChanged** memorizzato nella cache con il valore segnalato dal **risultato ldap \_**. Se il nuovo **valore dell'attributo uSNChanged** è minore o uguale al valore memorizzato nella cache, nell'esempio i risultati vengono ignorati perché indicano una modifica che si è verificata prima dell'operazione di lettura iniziale.
 
-In questo esempio viene eseguita una ricerca a livello di base che monitora un singolo oggetto. È possibile specificare l' **ambito \_ \_ unlivello dell'ambito LDAP** per monitorare tutti gli oggetti figlio dell'oggetto specificato. È anche possibile modificare il codice per registrare fino a cinque richieste di notifica e quindi usare la funzione [**\_ risultato LDAP**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) per attendere le notifiche da qualsiasi richiesta. Tenere presente che le richieste di notifica delle modifiche influiscano sulle prestazioni del server. Per ulteriori informazioni su come migliorare le prestazioni, vedere la pagina relativa alle [notifiche delle modifiche in Active Directory Domain Services](change-notifications-in-active-directory-domain-services.md).
+In questo esempio viene eseguita una ricerca a livello di base che monitora un singolo oggetto . È possibile specificare **l'ambito LDAP \_ SCOPE \_ ONELEVEL** per monitorare tutti gli oggetti figlio dell'oggetto specificato. È anche possibile modificare il codice per registrare fino a cinque richieste di notifica e quindi usare la funzione di risultato [**ldap \_**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_result) per attendere le notifiche da una delle richieste. Tenere presente che le richieste di notifica delle modifiche influiscono sulle prestazioni del server. Per altre informazioni su come migliorare le prestazioni, vedere [Notifiche di modifica in Active Directory Domain Services](change-notifications-in-active-directory-domain-services.md).
 
 
 ```C++
@@ -407,6 +407,6 @@ int wmain(int   cArgs,WCHAR  *pArgs[])
 
 
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. fontSize
+title: LISTBOX.fontSize
 description: L'attributo fontSize specifica o recupera le dimensioni del carattere per il controllo casella di riepilogo.
 ms.assetid: e7756249-5295-4564-8ba6-dd28d5104024
 keywords:
-- LISTBOX. fontSize Media Player Windows
+- LISTBOX.fontSize Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca230736c5ef2ff34c1a5e7c3c75c7105a61ae44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7cc017c52d086d7c6a63e8a5fbf5d3f5b55cd6382034bfb36e291078418abf32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003411"
 ---
-# <a name="listboxfontsize"></a>LISTBOX. fontSize
+# <a name="listboxfontsize"></a>LISTBOX.fontSize
 
-L'attributo **FontSize** specifica o recupera le dimensioni del carattere per il controllo casella di riepilogo.
+**L'attributo fontSize** specifica o recupera le dimensioni del carattere per il controllo casella di riepilogo.
 
 ``` syntax
         elementID.fontSize
@@ -29,7 +29,7 @@ L'attributo **FontSize** specifica o recupera le dimensioni del carattere per il
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**Long**) che specifica la dimensione del carattere in punti. Il valore predefinito è 10.
+Questo attributo è un  numero di lettura/scrittura (**long**) che specifica la dimensione del carattere in punti. Il valore predefinito è 10.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,7 +37,7 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) che specifica 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
 
 
 
@@ -45,10 +45,10 @@ Questo attributo è un **numero** di lettura/scrittura (**Long**) che specifica 
 
 <dl> <dt>
 
-[**LISTBOX (elemento)**](listbox-element.md)
+[**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. fontStyle**](listbox-fontstyle.md)
+[**LISTBOX.fontStyle**](listbox-fontstyle.md)
 </dt> </dl>
 
  

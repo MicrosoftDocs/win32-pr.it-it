@@ -256,7 +256,7 @@ Tipo di dati: **stringa**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingID"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingID"), [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 ID che funge da parte della chiave per l'istanza corrente.

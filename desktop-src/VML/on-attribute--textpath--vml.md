@@ -1,24 +1,24 @@
 ---
-title: Attributo on (TextPath) (la)
-description: Attributo on (TextPath) (la)
+title: Su attributo (TextPath)(VML)
+description: Su attributo (TextPath)(VML)
 ms.assetid: b4a88473-6d5f-42b3-afd6-86f602c83724
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ae791b1144046a1c29e92d11663cd15d696bc5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0a7b1361bc0600ecca64e252ac25254d26b340cfd34a481de9424017de3381ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104517091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118345814"
 ---
-# <a name="on-attribute-textpathvml"></a>Attributo on (TextPath) (la)
+# <a name="on-attribute-textpathvml"></a>Su attributo (TextPath)(VML)
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, raccomandazioni e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Definisce se il testo viene visualizzato. Proprietà di lettura/scrittura. **VgTriState**.
 
@@ -26,25 +26,25 @@ Definisce se il testo viene visualizzato. Proprietà di lettura/scrittura. **VgT
 
 [TextPath](msdn-online-vml-textpath-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *element* on = " *Expression* " >
+<v: *element* on=" *expression* ">
 
 **Sintassi dello script**
 
-*element* . on = "*Expression*"
+*elemento* .on="*expression*"
 
-*espressione* = *elemento*. on
+*expression* = *elemento*.on
 
 **Osservazioni:**
 
-L'impostazione predefinita è **False**. Questo valore deve essere impostato su **true** per visualizzare il testo in un percorso di testo.
+L'impostazione predefinita è **False**. Questo valore deve essere impostato su **True per** visualizzare il testo in un percorso di testo.
 
-*Attributo standard la*
+*Attributo standard VML*
 
 **Esempio**
 
-Verrà visualizzato il testo sul percorso di testo.
+Verrà visualizzato il testo nel percorso di testo.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Verrà visualizzato il testo sul percorso di testo.
 
 
 
- 
+ 
 
- 
+ 

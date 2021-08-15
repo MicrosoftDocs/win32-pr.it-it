@@ -1,37 +1,37 @@
 ---
-description: L'esempio auto Claims risolve uno scenario ipotetico per un valutatore di assicurazioni.
+description: L'esempio auto claims risolve un ipotetico scenario per un valutatore di assicurazioni.
 ms.assetid: bec4333a-62ca-4254-a39b-04bc2c556992
-title: Esempio di modulo Claims automatico
+title: Esempio di modulo attestazioni automatico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71c5ff78a3c38036ef9352660b4d7959e2ad87e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fe22545d60ad4116e2607f3fcf01feb94dbfecaa74bc591288e4d91b6d3d465
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857119"
 ---
-# <a name="auto-claims-form-sample"></a>Esempio di modulo Claims automatico
+# <a name="auto-claims-form-sample"></a>Esempio di modulo attestazioni automatico
 
-L'esempio auto Claims risolve uno scenario ipotetico per un valutatore di assicurazioni. Il lavoro del valutatore richiede che l'it visiti i client presso la propria abitazione o l'azienda e per immettere le informazioni di attestazione in un modulo. Per aumentare la produttività del valutatore, il reparto IT sviluppa un'applicazione tablet che consente di immettere in modo rapido e preciso le informazioni sulle attestazioni tramite due controlli input penna, ovvero i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) .
+L'esempio auto claims risolve un ipotetico scenario per un valutatore di assicurazioni. Il lavoro dell'assessore richiede a lui o a lei di visitare i clienti a casa o all'azienda e di immettere le informazioni relative alle richieste in un modulo. Per aumentare la produttività del valutatore, il reparto IT sviluppa un'applicazione tablet che consente di immettere rapidamente e accuratamente le informazioni sulle attestazioni tramite due controlli input penna: i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture.](/previous-versions/ms583740(v=vs.100))
 
-In questo esempio viene usato un controllo [InkEdit](/previous-versions/ms835842(v=msdn.10)) per ogni campo di input di testo. Un utente immette le informazioni rilevanti su un criterio e un veicolo assicurativo in questi campi con una penna. Il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) viene usato per aggiungere input penna su un'immagine dell'automobile per evidenziare le aree danneggiate dell'automobile. L'esempio auto Claims è disponibile per C \# e Microsoft Visual Basic .NET. In questo argomento viene descritto il Visual Basic .NET.
+In questo esempio viene usato [un controllo InkEdit](/previous-versions/ms835842(v=msdn.10)) per ogni campo di input di testo. Un utente immette le informazioni rilevanti su una polizza assicurativa e un veicolo in questi campi con una penna. Il [controllo InkPicture](/previous-versions/ms583740(v=vs.100)) viene usato per aggiungere input penna su un'immagine dell'automobile per evidenziare le aree danneggiate dell'automobile. L'esempio di attestazioni auto è disponibile per C \# e Microsoft Visual Basic .NET. Questo argomento descrive l'Visual Basic .NET.
 
-La classe autoclaims viene definita come una sottoclasse di [System. Windows. Forms. Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e viene definita una classe annidata per la creazione e la gestione di livelli di input penna per diversi tipi di danno. Per eseguire le attività seguenti sono definiti quattro gestori eventi:
+La classe AutoClaims è definita come sottoclasse di [System.Windows. Forms.Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e una classe annidata vengono definite per la creazione e la gestione di livelli di input penna per diversi tipi di danni. Sono definiti quattro gestori eventi per eseguire le attività seguenti:
 
--   Inizializzazione del form e dei livelli di input penna.
--   Ridisegno del controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) .
+-   Inizializzazione dei livelli di form e input penna.
+-   Ridisegno del [controllo InkPicture.](/previous-versions/ms583740(v=vs.100))
 -   Selezione di un livello input penna nella casella di riepilogo.
--   Modifica della visibilità di un livello di input penna.
+-   Modifica della visibilità di un livello input penna.
 
 > [!Note]  
-> Le versioni di questo esempio sono disponibili in C \# e Visual Basic .NET. La versione illustrata in questa sezione è Visual Basic .NET. I concetti sono gli stessi tra le versioni.
+> Le versioni di questo esempio sono disponibili in C \# e Visual Basic .NET. La versione descritta in questa sezione è Visual Basic .NET. I concetti sono gli stessi tra le versioni.
 
  
 
-## <a name="defining-the-form-and-ink-layers"></a>Definizione del modulo e dei livelli di input penna
+## <a name="defining-the-form-and-ink-layers"></a>Definizione dei livelli form e input penna
 
-È necessario importare lo spazio dei nomi [Microsoft. Ink](/previous-versions/ms826516(v=msdn.10)) :
+È necessario importare lo [spazio dei nomi Microsoft.Ink:](/previous-versions/ms826516(v=msdn.10))
 
 
 ```VB
@@ -48,7 +48,7 @@ using Microsoft.Ink;
 
 
 
-Quindi, nella classe autoclaims viene definita una classe annidata `InkLayer` e `InkLayer` viene dichiarata una matrice di quattro oggetti. (InkLayer contiene un oggetto [Microsoft. Ink. Ink](/previous-versions/ms583670(v=vs.100)) per archiviare i valori di input penna e [System. Drawing. Color](/dotnet/api/system.drawing.color?view=netcore-3.1) e **Boolean** per archiviare il colore e lo stato nascosto del livello). Un quinto oggetto Ink viene dichiarato per gestire l'input penna per il [InkPicture](/previous-versions/ms583740(v=vs.100)) quando tutti i livelli di input penna sono nascosti.
+Successivamente, nella classe AutoClaims viene definita una classe annidata e viene dichiarata una `InkLayer` matrice `InkLayer` di quattro oggetti. InkLayer contiene un [oggetto Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) per l'archiviazione dell'input penna e i valori [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) e **Boolean** per l'archiviazione del colore e dello stato nascosto del livello. Un quinto oggetto Ink viene dichiarato per gestire l'input penna [per InkPicture](/previous-versions/ms583740(v=vs.100)) quando tutti i livelli dell'input penna sono nascosti.
 
 
 ```VB
@@ -86,11 +86,11 @@ bool selectedHidden = false;
 
 
 
-Ogni livello dispone di un proprio oggetto [Ink](/previous-versions/ms583670(v=vs.100)) . Nel modulo di attestazione sono presenti quattro aree discrete, ovvero Body, Windows, Tires e fari, quindi vengono usati quattro oggetti InkLayer. Un utente può visualizzare qualsiasi combinazione di livelli in una sola volta.
+Ogni livello ha un proprio [oggetto Ink.](/previous-versions/ms583670(v=vs.100)) Esistono quattro aree discrete di interesse nel modulo di attestazione (corpo, finestre, copertoni e fari), quindi vengono usati quattro oggetti InkLayer. Un utente può visualizzare qualsiasi combinazione di livelli contemporaneamente.
 
-## <a name="initializing-the-form-and-ink-layers"></a>Inizializzazione del form e dei livelli di input penna
+## <a name="initializing-the-form-and-ink-layers"></a>Inizializzazione dei livelli form e input penna
 
-Il `Load` gestore dell'evento Inizializza l'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) e i quattro `InkLayer` oggetti.
+Il `Load` gestore eventi inizializza l'oggetto [Ink](/previous-versions/ms583670(v=vs.100)) e i quattro `InkLayer` oggetti .
 
 
 ```VB
@@ -123,7 +123,7 @@ inkLayers[3] = new InkLayer(new Ink(), Color.Aqua, false);
 
 
 
-Selezionare quindi la prima voce (Body) nella casella di riepilogo.
+Selezionare quindi la prima voce (Corpo) nella casella di riepilogo.
 
 
 ```VB
@@ -141,7 +141,7 @@ lstAnnotationLayer.SelectedIndex = 0;
 
 
 
-Infine, impostare il colore dell'input penna per il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) sulla voce della casella di riepilogo attualmente selezionata.
+Impostare infine il colore dell'input penna [per il controllo InkPicture](/previous-versions/ms583740(v=vs.100)) sulla voce della casella di riepilogo attualmente selezionata.
 
 
 ```VB
@@ -160,7 +160,7 @@ inkPictVehicle.DefaultDrawingAttributes.Color = inkLayers[lstAnnotationLayer.Sel
 
 ## <a name="redrawing-the-inkpicture-control"></a>Ridisegno del controllo InkPicture
 
-Nel gestore dell'evento [Paint](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) ereditato del controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) , i livelli di input penna vengono controllati per determinare quali sono nascosti. Se un livello non è nascosto, viene visualizzato dalla routine evento utilizzando il metodo di [richiamo](/previous-versions/ms828488(v=msdn.10)) della proprietà [renderer](/previous-versions/ms582196(v=vs.100)) . Se si osserva la Visualizzatore oggetti, si noterà che la proprietà Microsoft. Ink. InkPicture. Renderer è definita come oggetto [Microsoft. Ink. Renderer](/previous-versions/ms828481(v=msdn.10)) :
+Nel gestore eventi ereditato del [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) Paint, i livelli input penna vengono controllati per determinare quali sono nascosti. Se un livello non è nascosto, la routine evento lo visualizza usando il metodo Draw della [proprietà](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Se si osserva nel Visualizzatore oggetti, si noti che la proprietà Microsoft.Ink.InkPicture.Renderer è definita come [oggetto Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
 
 
 ```VB
@@ -199,9 +199,9 @@ private void inkPictVehicle_Paint(object sender, System.Windows.Forms.PaintEvent
 
 
 
-## <a name="selecting-an-ink-layer-through-the-list-box"></a>Selezione di un livello input penna nella casella di riepilogo
+## <a name="selecting-an-ink-layer-through-the-list-box"></a>Selezione di un livello input penna tramite la casella di riepilogo
 
-Quando l'utente seleziona un elemento nella casella di riepilogo, il gestore eventi [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) verifica innanzitutto che la selezione sia stata modificata e che il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) non stia attualmente raccogliendo input penna. Imposta quindi il colore dell'input penna del controllo InkPicture sul colore appropriato per il livello di input penna selezionato. Aggiorna inoltre la casella di controllo Nascondi livello in modo da riflettere lo stato nascosto del livello di input penna selezionato. Infine, il metodo di [aggiornamento](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) ereditato del controllo InkPicture viene utilizzato per visualizzare solo i livelli desiderati all'interno del controllo.
+Quando l'utente seleziona un elemento nella casella di riepilogo, il gestore dell'evento [SelectedIndexChanged](/dotnet/api/system.windows.forms.listbox.selectedindexchanged?view=netcore-3.1) verifica innanzitutto che la selezione sia stata modificata e che il [controllo InkPicture](/previous-versions/ms583740(v=vs.100)) non sta attualmente raccogliendo input penna. Imposta quindi il colore dell'input penna del controllo InkPicture sul colore appropriato per il livello input penna selezionato. Aggiorna inoltre la casella di controllo Nascondi livello per riflettere lo stato nascosto del livello input penna selezionato. Infine, il metodo Refresh ereditato [](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) del controllo InkPicture viene usato per visualizzare solo i livelli desiderati all'interno del controllo.
 
 
 ```VB
@@ -282,13 +282,13 @@ private void lstAnnotationLayer_SelectedIndexChanged(object sender, System.Event
 
 
 
-## <a name="changing-the-visibility-of-an-ink-layer"></a>Modifica della visibilità di un livello di input penna
+## <a name="changing-the-visibility-of-an-ink-layer"></a>Modifica della visibilità di un livello input penna
 
-Il `CheckedChanged` gestore eventi verifica innanzitutto che la selezione sia stata modificata e che il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) non stia attualmente raccogliendo input penna. Aggiorna quindi lo stato nascosto del livello di input penna selezionato, imposta il InkEnabled del controllo InkPicture su **false**,.
+Il `CheckedChanged` gestore eventi verifica innanzitutto che la selezione sia stata modificata e che il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) non sta attualmente raccogliendo l'input penna. Aggiorna quindi lo stato nascosto del livello input penna selezionato, imposta InkEnabled del controllo InkPicture su **FALSE,**.
 
-Quindi, la proprietà InkEnabled del controllo InkPicture è impostata su **false** prima di aggiornare la relativa proprietà Ink.
+Successivamente, la proprietà InkEnabled del controllo InkPicture viene impostata su **FALSE** prima di aggiornarne la proprietà Ink.
 
-Infine, il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) viene abilitato o disabilitato per la parte specifica del veicolo a seconda che sia selezionata la casella di controllo Nascondi livello e che il metodo di [aggiornamento](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) del controllo InkPicture venga utilizzato per visualizzare solo i livelli desiderati all'interno del controllo.
+Infine, il controllo [InkPicture](/previous-versions/ms583740(v=vs.100)) viene abilitato o disabilitato per la particolare parte del veicolo a seconda che la casella di controllo Nascondi livello sia selezionata e che il metodo [Refresh](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) del controllo InkPicture sia usato per visualizzare solo i livelli desiderati all'interno del controllo.
 
 
 ```VB
@@ -373,13 +373,13 @@ private void chHideLayer_CheckedChanged(object sender, System.EventArgs e)
 
 ## <a name="closing-the-form"></a>Chiusura del modulo
 
-Nel codice generato da Progettazione Windows Form, i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) vengono aggiunti all'elenco dei componenti del form quando il modulo viene inizializzato. Quando il form viene chiuso, i controlli InkEdit e InkPicture vengono eliminati, così come gli altri componenti del form, dal metodo [Dispose](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) del modulo. Il metodo Dispose del modulo Elimina inoltre gli oggetti [Ink](/previous-versions/ms583670(v=vs.100)) creati per il form.
+Nel codice Windows generato da Progettazione form, i controlli [InkEdit](/previous-versions/ms835842(v=msdn.10)) e [InkPicture](/previous-versions/ms583740(v=vs.100)) vengono aggiunti all'elenco dei componenti del form quando il form viene inizializzato. Alla chiusura del form, i controlli InkEdit e InkPicture vengono eliminati, nonché gli altri componenti del form, dal metodo [Dispose del](/previous-versions/dotnet/netframework-3.5/ms571303(v=vs.90)) form. Il metodo Dispose del form elimina anche gli [oggetti Ink](/previous-versions/ms583670(v=vs.100)) creati per il form.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Microsoft. Ink. Ink](/previous-versions/ms583670(v=vs.100))
+[Microsoft.ink.ink](/previous-versions/ms583670(v=vs.100))
 </dt> <dt>
 
 [Controllo InkPicture](inkpicture-control.md)

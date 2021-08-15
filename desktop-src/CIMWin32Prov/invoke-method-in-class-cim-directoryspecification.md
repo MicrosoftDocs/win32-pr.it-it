@@ -26,7 +26,7 @@ ms.locfileid: "118419305"
 Il **metodo Invoke** della classe [**CIM \_ DirectorySpecification**](cim-directoryspecification.md) valuta un controllo specifico. Informazioni dettagliate sul modo in cui il metodo valuta un particolare controllo in un contesto CIM sono descritte dalle sottoclassi [**CIM \_ Check**](cim-check.md) non astratte. Questo metodo viene ereditato da **CIM \_ Check**.
 
 > [!IMPORTANT]
-> Le classi CIM DMTF (Distributed Management Task Force) (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

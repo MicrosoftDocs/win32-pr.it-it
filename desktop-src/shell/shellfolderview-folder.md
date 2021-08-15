@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 370fddc1428c8f77edb77cdac2dc04123fc5211f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 40ff2dbed37aa8ceb80072870c78cee4e63cba3656550081be2c655cb6f6ddf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857710"
 ---
 # <a name="shellfolderviewfolder-property"></a>ShellFolderView.Folder - proprietà
 
@@ -45,7 +45,7 @@ Oggetto che riceve [**l'oggetto Folder.**](folder.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà per JScript incorporato in HTML.
+Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà JScript incorporato in HTML.
 
 
 ```JScript
@@ -99,7 +99,7 @@ Nell'esempio seguente viene illustrato l'utilizzo corretto di questa proprietà 
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

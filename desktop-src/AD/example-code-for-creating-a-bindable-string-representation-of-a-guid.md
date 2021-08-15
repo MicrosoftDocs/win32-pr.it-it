@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per la creazione di una rappresentazione di stringa associabile di un GUID
-description: L'esempio di codice seguente può essere usato per restituire una rappresentazione di stringa di un GUID che può essere usato per eseguire l'associazione all'oggetto.
+description: L'esempio di codice seguente può essere usato per restituire una rappresentazione di stringa di un GUID che può essere usato per l'associazione all'oggetto .
 ms.assetid: e39a6994-4328-40f2-8cb5-8b1f971e50d8
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, creazione di una rappresentazione di stringa associabile di un GUID
+- Active Directory esempi di Active Directory, creazione di una rappresentazione di stringa associabile di un GUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af6614ebeaf1028452ba75c0fc5dbaffb364e1ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2baafefa712d8826b5fc9442e1da8aaeac54d58c1e491750b2d39ceb5ee88ae5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694284"
 ---
 # <a name="example-code-for-creating-a-bindable-string-representation-of-a-guid"></a>Codice di esempio per la creazione di una rappresentazione di stringa associabile di un GUID
 
-L'esempio di codice seguente può essere usato per restituire una rappresentazione di stringa di un GUID che può essere usato per eseguire l'associazione all'oggetto.
+L'esempio di codice seguente può essere usato per restituire una rappresentazione di stringa di un GUID che può essere usato per l'associazione all'oggetto .
 
 
 ```C++
@@ -84,9 +84,9 @@ HRESULT GUIDtoBindableString(LPGUID pGUID, LPWSTR *ppGUIDString)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo getschedule recupera un puntatore all'oggetto di pianificazione del clock.
+description: Il metodo GetSchedule recupera un puntatore all'oggetto di pianificazione dell'orologio.
 ms.assetid: ae509f16-d85f-4365-8cf2-c6585cbbdc3d
-title: Metodo CBaseReferenceClock. getschedule (Refclock. h)
+title: Metodo CBaseReferenceClock.GetSchedule (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a37cdb3e18f3ab71b144af071233aee5a6a3a93d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6be5c4ed76573428967138682b478a54859e4ca97213f132ff805a0e83be0b50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822837"
 ---
-# <a name="cbasereferenceclockgetschedule-method"></a>Metodo CBaseReferenceClock. getschedule
+# <a name="cbasereferenceclockgetschedule-method"></a>Metodo CBaseReferenceClock.GetSchedule
 
-Il `GetSchedule` metodo recupera un puntatore all'oggetto di pianificazione del clock.
+Il `GetSchedule` metodo recupera un puntatore all'oggetto di pianificazione dell'orologio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la variabile membro [**CBaseReferenceClock:: m \_ pSchedule**](cbasereferenceclock-m-pschedule.md) .
+Restituisce la [**variabile membro CBaseReferenceClock::m \_ pSchedule.**](cbasereferenceclock-m-pschedule.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce la variabile membro [**CBaseReferenceClock:: m \_ pSchedule**](cbase
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Refclock. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Refclock.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

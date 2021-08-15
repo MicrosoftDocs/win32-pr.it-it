@@ -1,9 +1,9 @@
 ---
 title: Ping
-description: Usare il pacchetto ping per stabilire una connessione e negoziare la sicurezza con il server.
+description: Usare il pacchetto Ping per stabilire una connessione e negoziare la sicurezza con il server.
 ms.assetid: 10b01fe8-d1a3-4a3b-ac35-e3557d3ef4ee
 keywords:
-- BIT ping
+- Ping BITS
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c9428a39cfaebbce150583d47a344c4a36ca66
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 479e03e6e18c0ec7421bd225744c5181029fc2b2e220f35c7bae7a3b02d42b07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "106299269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004891"
 ---
 # <a name="ping"></a>Ping
 
-Usare il pacchetto **ping** per stabilire una connessione e negoziare la sicurezza con il server.
+Usare il **pacchetto Ping** per stabilire una connessione e negoziare la sicurezza con il server.
 
 ``` syntax
 BITS_POST remote-URL HTTP/1.1
@@ -32,39 +32,39 @@ BITS-Packet-Type: Ping
 
 <dl> <dt>
 
-<span id="BITS_POST"></span><span id="bits_post"></span>\_post BITS
+<span id="BITS_POST"></span><span id="bits_post"></span>BITS \_ POST
 </dt> <dd>
 
-Verbo specifico di BITS che identifica il pacchetto nel server BITS.
+Verbo specifico di BITS che identifica questo pacchetto per il server BITS.
 
-Sostituire Remote-URL con l'URI assoluto o relativo. In genere, sostituire Remote-URL con il nome file remoto del processo.
+Sostituire remote-URL con l'URI assoluto o relativo. In genere, sostituire remote-URL con il nome file remoto del processo.
 
 </dd> <dt>
 
-<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-tipo-pacchetto
+<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>TIPO DI PACCHETTO BITS
 </dt> <dd>
 
-Identifica il pacchetto di richiesta come un pacchetto ping.
+Identifica questo pacchetto di richiesta come pacchetto Ping.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Il pacchetto **ping** è facoltativo. Anziché inviare un pacchetto **ping** , è possibile usare il pacchetto [**create-Session**](create-session.md) per stabilire una connessione e negoziare la sicurezza. Tuttavia, è più efficiente usare il pacchetto **ping** a questo scopo.
+Il **pacchetto Ping** è facoltativo. Anziché inviare un **pacchetto Ping,** è possibile usare [**il pacchetto Create-Session**](create-session.md) per stabilire una connessione e negoziare la sicurezza. Tuttavia, è più efficiente usare il **pacchetto Ping** a questo scopo.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**ACK per ping**](ack-for-ping.md)
+[**Ack for Ping**](ack-for-ping.md)
 </dt> <dt>
 
-[**Creazione sessione**](create-session.md)
+[**Create-Session**](create-session.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

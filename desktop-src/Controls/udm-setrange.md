@@ -1,9 +1,9 @@
 ---
-title: Messaggio UDM_SETRANGE (COMmctrl. h)
-description: Imposta le posizioni minime e massime (intervallo) per un controllo di scorrimento.
+title: UDM_SETRANGE messaggio (Commctrl.h)
+description: Imposta le posizioni minima e massima (intervallo) per un controllo up-down.
 ms.assetid: 81875528-86cc-419a-a07c-f4f98baf1462
 keywords:
-- Controlli di Windows Message UDM_SETRANGE
+- UDM_SETRANGE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb32a72ca8ca5182e87e2c0346cbc44ab25300e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60499c960b7f2e496dc4317229865a8838013fc5d78c194072bee27e761ba4d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408056"
 ---
-# <a name="udm_setrange-message"></a>\_Messaggio SEtrange UDM
+# <a name="udm_setrange-message"></a>Messaggio SETRANGE di UDM \_
 
-Imposta le posizioni minime e massime (intervallo) per un controllo di scorrimento.
+Imposta le posizioni minima e massima (intervallo) per un controllo up-down.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,7 +35,7 @@ Imposta le posizioni minime e massime (intervallo) per un controllo di scorrimen
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) è un valore **short** che specifica la posizione massima per il controllo di scorrimento e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) è un valore **short** che specifica la posizione minima. La posizione non può essere maggiore del \_ valore MaxVal di UD o minore del \_ valore MINVAL di UD. Inoltre, la differenza tra le due posizioni non può superare il \_ MaxVal UD.
+[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) è un **valore breve** che specifica la posizione massima per il controllo verso l'alto e [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) è un valore **breve** che specifica la posizione minima. Nessuna delle due posizioni può essere maggiore del valore UD \_ MAXVAL o minore del valore UD \_ MINVAL. Inoltre, la differenza tra le due posizioni non può superare UD \_ MAXVAL.
 
 </dd> </dl>
 
@@ -45,7 +45,7 @@ Nessun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-La posizione massima può essere minore della posizione minima. Facendo clic sul pulsante freccia su viene spostata la posizione corrente più vicina alla posizione massima e facendo clic sul pulsante freccia giù si sposta verso la posizione minima.
+La posizione massima può essere inferiore alla posizione minima. Facendo clic sul pulsante freccia su, la posizione corrente viene spostata più vicina alla posizione massima e facendo clic sul pulsante freccia giù si sposta verso la posizione minima.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ La posizione massima può essere minore della posizione minima. Facendo clic sul
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ La posizione massima può essere minore della posizione minima. Facendo clic sul
 [**MAKELPARAM**](/windows/desktop/api/winuser/nf-winuser-makelparam)
 </dt> <dt>
 
-[**\_SEtrange UDM**](udm-setrange.md)
+[**UDM \_ SETRANGE**](udm-setrange.md)
 </dt> </dl>
 
  

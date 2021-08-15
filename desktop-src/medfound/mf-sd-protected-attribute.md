@@ -1,17 +1,17 @@
 ---
 description: Indica se un flusso contiene contenuto protetto.
 ms.assetid: 1c1a201c-4b55-4b86-a08f-d06c1a7db29d
-title: Attributo MF_SD_PROTECTED (Mfidl. h)
+title: MF_SD_PROTECTED attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c97320d15353b8e23a43fa4efac2e5883a7366f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22ae6cf92b3ada6309de7e92a722db38c88ce94a8af88aa6cc0176f738ff194b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474051"
 ---
-# <a name="mf_sd_protected-attribute"></a>\_ \_ Attributo protetto MF SD
+# <a name="mf_sd_protected-attribute"></a>Attributo MF \_ SD \_ PROTECTED
 
 Indica se un flusso contiene contenuto protetto.
 
@@ -23,13 +23,13 @@ Considera come valore booleano.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai descrittori di flusso. Se il valore dell'attributo è **true**, il flusso contiene contenuto protetto. Se il valore è **false** o l'attributo non è impostato, il flusso contiene contenuto non crittografato.
+Questo attributo si applica ai descrittori di flusso. Se il valore dell'attributo è **TRUE,** il flusso contiene contenuto protetto. Se il valore è **FALSE** o l'attributo non è impostato, il flusso contiene contenuto non crittografato.
 
-Anziché controllare ogni flusso per questo attributo, è possibile passare un descrittore di presentazione alla funzione [**MFRequireProtectedEnvironment**](/windows/desktop/api/mfidl/nf-mfidl-mfrequireprotectedenvironment) . Questa funzione verifica se il descrittore della presentazione contiene flussi protetti.
+Anziché controllare ogni flusso per questo attributo, è possibile passare un descrittore di presentazione alla [**funzione MFRequireProtectedEnvironment.**](/windows/desktop/api/mfidl/nf-mfidl-mfrequireprotectedenvironment) Questa funzione verifica se il descrittore di presentazione contiene flussi protetti.
 
-Un'origine multimediale deve impostare questo attributo sul descrittore del flusso se il contenuto richiede il percorso del supporto protetto (PMP).
+Un'origine multimediale deve impostare questo attributo sul descrittore di flusso se il contenuto richiede il percorso del supporto protetto (PMP).
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="examples"></a>Esempio
 
@@ -54,9 +54,9 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -64,13 +64,13 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)

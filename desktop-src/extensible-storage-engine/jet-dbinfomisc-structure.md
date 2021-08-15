@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_DBINFOMISC'
+description: 'Altre informazioni su: JET_DBINFOMISC struttura'
 title: Struttura JET_DBINFOMISC
 TOCTitle: JET_DBINFOMISC Structure
 ms:assetid: ff287087-35b8-495e-9922-418ec2439e19
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 649e16e956e5dcd272e6201f779cdddd352a7bef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c7684fe69cff252d75ea2cceb0872044e8a011b39e88375d6eb576cb1b5360e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104525051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486334"
 ---
 # <a name="jet_dbinfomisc-structure"></a>Struttura JET_DBINFOMISC
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_dbinfomisc-structure"></a>Struttura JET_DBINFOMISC
 
-La struttura **JET_DBINFOMISC** include informazioni varie su un database. Si tratta delle informazioni contenute nell'intestazione del database.
+La **JET_DBINFOMISC** contiene informazioni varie su un database. Si tratta delle informazioni contenute nell'intestazione del database.
 
 ```cpp
     typedef struct {
@@ -61,11 +61,11 @@ La struttura **JET_DBINFOMISC** include informazioni varie su un database. Si tr
 
 **ulVersion**
 
-Versione nativa del motore di database che ha creato il database. Vedere [JetGetVersion](./jetgetversion-function.md) per recuperare la versione nativa per il motore di database corrente.
+Versione nativa del motore di database che ha creato il database. Vedere [JetGetVersion per](./jetgetversion-function.md) recuperare la versione nativa per il motore di database corrente.
 
 **ulUpdate**
 
-Tiene traccia degli aggiornamenti del formato del database incrementale che sono compatibili con le versioni precedenti.
+Tiene traccia degli aggiornamenti incrementali del formato di database compatibili con le versioni precedenti.
 
 <table>
 <colgroup>
@@ -80,56 +80,56 @@ Tiene traccia degli aggiornamenti del formato del database incrementale che sono
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>0x620, 0</p></td>
-<td><p>Formato beta originale del sistema operativo (4/22/97).</p></td>
+<td><p>0x620,0</p></td>
+<td><p>Formato beta del sistema operativo originale (22/4/97).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 1</p></td>
-<td><p>Aggiungere le colonne nel catalogo per l'indicizzazione condizionale e quella precedente (5/29/97).</p></td>
+<td><p>0x620,1</p></td>
+<td><p>Aggiungere colonne nel catalogo per l'indicizzazione condizionale e OLD (29/5/97).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Aggiungere il flag fLocalizedText in IDB (6/5/97).</p></td>
+<td><p>0x620,2</p></td>
+<td><p>Aggiungere il flag fLocalizedText in IDB (5/6/97).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 3</p></td>
-<td><p>Aggiungere SPLIT_BUFFER alle pagine radice dell'albero dello spazio (10/30/97).</p></td>
+<td><p>0x620,3</p></td>
+<td><p>Aggiungere SPLIT_BUFFER alle pagine radice dell'albero dello spazio (30/10/97).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x620, 2</p></td>
-<td><p>Ripristinare la revisione affinché ESE97 rimanga compatibile con le versioni successive (1/28/98).</p></td>
+<td><p>0x620,2</p></td>
+<td><p>Ripristinare la revisione per mantenere la compatibilità con ESE97 (28/01/98).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 3</p></td>
+<td><p>0x620,3</p></td>
 <td><p>Aggiungere nuove colonne con tag al catalogo ( &quot; CallbackData &quot; e &quot; CallbackDependencies &quot; ).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x620, 4</p></td>
-<td><p>Supporto di SLV: signSLV, fSLVExists nell'intestazione DB (5/5/98).</p></td>
+<td><p>0x620,4</p></td>
+<td><p>Supporto SLV: signSLV, fSLVExists nell'intestazione db (5/5/98).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 5</p></td>
-<td><p>Nuovo albero dello spazio SLV (5/29/98).</p></td>
+<td><p>0x620,5</p></td>
+<td><p>Nuovo albero dello spazio SLV (29/5/98).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x620, 6</p></td>
-<td><p>Mappa dello spazio SLV (10/12/98).</p></td>
+<td><p>0x620,6</p></td>
+<td><p>Mappa spaziatrice SLV (12/10/98).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 7</p></td>
-<td><p>IDXSEG a 4 byte (12/10/98).</p></td>
+<td><p>0x620,7</p></td>
+<td><p>IDXSEG a 4 byte (10/12/98).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x620, 8</p></td>
-<td><p>Nuovo formato di colonna modello (1/25/99).</p></td>
+<td><p>0x620,8</p></td>
+<td><p>Nuovo formato di colonna modello (25/1/99).</p></td>
 </tr>
 <tr class="even">
-<td><p>0x620, 9</p></td>
-<td><p>Colonne modello ordinate (6/24/99).</p></td>
+<td><p>0x620,9</p></td>
+<td><p>Colonne modello ordinate (24/6/99).</p></td>
 </tr>
 <tr class="odd">
-<td><p>0x623, 0</p></td>
-<td><p>Nuovo gestore dello spazio (5/15/99).</p></td>
+<td><p>0x623,0</p></td>
+<td><p>New Space Manager (15/5/99).</p></td>
 </tr>
 </tbody>
 </table>
@@ -141,7 +141,7 @@ Firma del database (inclusa l'ora di creazione). Questa struttura è di 28 byte.
 
 **dbstate**
 
-Si tratta dello stato del database.
+Questo è lo stato del database.
 
 Per questo membro sono disponibili le opzioni seguenti.
 
@@ -165,7 +165,7 @@ Per questo membro sono disponibili le opzioni seguenti.
 <tr class="even">
 <td><p>JET_dbstateDirtyShutdown<br />
 2</p></td>
-<td><p>Il database richiede l'esecuzione di un ripristino software o hardware per poter essere utilizzato o spostabile. Non provare a spostare i database in questo stato.</p></td>
+<td><p>Per poter essere utilizzato o spostato, il database richiede l'esecuzione di un ripristino rigido o soft. Non è consigliabile provare a spostare i database in questo stato.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_dbstateCleanShutdown<br />
@@ -188,73 +188,73 @@ Per questo membro sono disponibili le opzioni seguenti.
 
 **lgposConsistent**
 
-Null se il database è in uno stato dirty. Si tratta della posizione del log utilizzata quando il database è stato portato per l'ultima volta a uno stato di chiusura normale.
+Null se il database si trova in uno stato dirty. Si tratta della posizione del log utilizzata per l'ultima volta che il database è stato portato a uno stato di arresto pulito.
 
 **logtimeConsistent**
 
-Null se il database è in uno stato dirty. Si tratta dell'ora in cui il database è stato portato per l'ultima volta a uno stato di chiusura normale.
+Null se il database si trova in uno stato dirty. Si tratta dell'ora dell'ultimo arresto del database.
 
 **logtimeAttach**
 
-Ora dell'ultima connessione del database con [JetAttachDatabase](./jetattachdatabase-function.md).
+Ora dell'ultimo collegamento del database [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **lgposAttach**
 
-Posizione del log utilizzata per l'ultima volta che il database è stato collegato a [JetAttachDatabase](./jetattachdatabase-function.md).
+Posizione del log utilizzata l'ultima volta in cui il database è stato collegato [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **logtimeDetach**
 
-Data e ora dell'ultimo scollegamento del database con [JetDetachDatabase](./jetdetachdatabase-function.md).
+Ora dell'ultimo scollegamento del database [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **lgposDetach**
 
-Posizione del log utilizzata per l'ultima volta in cui il database è stato scollegato con [JetDetachDatabase](./jetdetachdatabase-function.md).
+Posizione del log utilizzata l'ultima volta in cui il database è stato scollegato [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoFullPrev**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoIncPrev**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **bkinfoFullCur**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **fShadowingDisabled**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **fUpgradeDb**
 
-Supporta l'infrastruttura ESE e non può essere utilizzato nel codice.
+Supporta l'infrastruttura ESE e non può essere usato nel codice.
 
 **dwMajorVersion**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando sono stati aggiornati gli indici dei database. Utilizzato per l'aggiornamento degli indici.
 
 **dwMinorVersion**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando sono stati aggiornati gli indici dei database. Utilizzato per l'aggiornamento degli indici.
 
 **dwBuildNumber**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando sono stati aggiornati gli indici dei database. Usato per l'aggiornamento degli indici.
 
 **lSPNumber**
 
-Rappresenta i numeri di versione di Windows NT durante l'aggiornamento degli indici dei database. Utilizzato per l'aggiornamento degli indici.
+Rappresenta i Windows NT di versione quando gli indici dei database sono stati aggiornati. Usato per l'aggiornamento degli indici.
 
 **cbPageSize**
 
-Dimensioni di pagina del database. 0 indica che le dimensioni della pagina sono pari a 4 KB.
+Dimensioni della pagina del database. 0 indica che le dimensioni della pagina sono di 4 KB.
 
-Questo valore viene recuperato solo se JET_DbInfoMisc è stato passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md).
+Questo valore viene recuperato solo se JET_DbInfoMisc è stato passato a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) [o JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md)
 
 ### <a name="requirements"></a>Requisiti
 
@@ -274,7 +274,7 @@ Questo valore viene recuperato solo se JET_DbInfoMisc è stato passato a [JetGet
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

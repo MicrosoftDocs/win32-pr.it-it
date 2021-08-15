@@ -1,36 +1,36 @@
 ---
-title: Uso della codifica Two-Pass (Windows Media Format 11 SDK)
-description: Uso della codifica Two-Pass
+title: Uso Two-Pass codifica (Windows Media Format 11 SDK)
+description: Uso Two-Pass codifica
 ms.assetid: 55fc768b-15f0-4236-ad0d-3792ccaa9b4f
 keywords:
-- ASF (Advanced Systems Format), codifica a due passaggi
-- ASF (Advanced Systems Format), codifica a due passaggi
-- codifica a due passaggi, informazioni
-- codifica a 2 passaggi, informazioni
-- codec, codifica a due passaggi
-- codifica a due passaggi, interfaccia IWMWriterPreprocess
-- codifica a 2 passaggi, interfaccia IWMWriterPreprocess
+- Advanced Systems Format (ASF), codifica a due passi
+- ASF (Advanced Systems Format), codifica a due passi
+- codifica a due passi, informazioni
+- codifica a 2 passi, informazioni
+- codec, codifica a due passi
+- codifica a due passi, interfaccia IWMWriterPreprocess
+- Codifica a 2 passi, interfaccia IWMWriterPreprocess
 - IWMWriterPreprocess
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c3794856f47c1656cc53006268c41a063cdde96
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: fd0683af636197b3f8116fca4dea85ce15609d2c99b0d9e0c11dfe0a2662a424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104517337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653836"
 ---
-# <a name="using-two-pass-encoding-windows-media-format-11-sdk"></a>Uso della codifica Two-Pass (Windows Media Format 11 SDK)
+# <a name="using-two-pass-encoding-windows-media-format-11-sdk"></a>Uso Two-Pass codifica (Windows Media Format 11 SDK)
 
-Alcuni codec supportano la codifica a due passaggi per determinati formati. In alcuni casi, per un codec è necessario che un formato specificato venga codificato utilizzando due sessioni. Quando si usa la codifica a due passaggi, si inviano gli esempi per il flusso al codec prima del passaggio di codifica. Il codec analizza gli esempi e configura il passaggio di codifica basato sull'analisi. Ciò comporta un file codificato in modo più efficiente.
+Alcuni codec supportano la codifica a due passi per determinati formati. In alcuni casi, un codec richiede che un formato specificato sia codificato usando due passaggi. Quando si usa la codifica a due passi, si inviano gli esempi per il flusso al codec prima del passaggio di codifica. Il codec analizza gli esempi e configura il passaggio di codifica in base all'analisi. Ciò comporta un file codificato in modo più efficiente.
 
-Per determinare se un codec supporta la codifica One-Pass o due passaggi, o entrambi, per un determinato formato, chiamare [**IWMCodecInfo3:: SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) con g \_ wszNumPasses e il valore appropriato, quindi enumerare i formati per verificare se viene restituito quello desiderato. Per ulteriori informazioni sui codec Windows Media che supportano la codifica a due passaggi, vedere [scelta di un metodo di codifica](choosing-an-encoding-method.md).
+Per determinare se un codec supporta la codifica a un passaggio, a due passi o entrambi, per un determinato formato, chiamare [**IWMCodecInfo3::SetCodecEnumerationSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) con g wszNumPasses e il valore appropriato, quindi enumerare i formati per verificare se viene restituito quello \_ desiderato. Per altre informazioni sull'Windows codec multimediali che supportano la codifica a due passi, vedere [Scelta di un metodo di codifica.](choosing-an-encoding-method.md)
 
-È possibile usare la codifica a due passaggi con Windows Media Format SDK chiamando i metodi dell'interfaccia [**IWMWriterPreprocess**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess) .
+È possibile usare la codifica a due passi con Windows Media Format SDK chiamando i metodi [**dell'interfaccia IWMWriterPreprocess.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess)
 
-Nei casi in cui è richiesta la codifica a due passaggi per un particolare formato, ma l'applicazione non riesce a eseguire un passaggio di pre-elaborazione, la prima chiamata a [**WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) avrà esito negativo con il numero di \_ \_ passaggi num E non validi \_ \_ .
+Nei casi in cui la codifica a due passaggi è necessaria per un formato specifico, ma l'applicazione non riesce a eseguire un passaggio di pre-elaborazione, la prima chiamata a [**WriteSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-writesample) avrà esito negativo con NS \_ E INVALID NUM \_ \_ \_ PASSES.
 
-La funzione di esempio seguente illustra come eseguire la codifica a due passaggi. Questa funzione viene chiamata dopo che il writer è stato impostato con un profilo e avviato. Per ulteriori informazioni sull'utilizzo di questo codice, vedere [utilizzo degli esempi di codice](using-the-code-examples.md).
+La funzione di esempio seguente illustra come eseguire la codifica a due passaggi. Questa funzione viene chiamata dopo che il writer è stato impostato con un profilo e avviato. Per altre informazioni sull'uso di questo codice, vedere [Uso degli esempi di codice.](using-the-code-examples.md)
 
 
 ```C++
