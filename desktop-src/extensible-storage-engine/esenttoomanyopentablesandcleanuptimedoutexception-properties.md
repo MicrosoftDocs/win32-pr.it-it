@@ -1,6 +1,6 @@
 ---
 description: Altre informazioni sulle proprietà di EsentTooManyOpenTablesAndCleanupTimedOutException
-title: Proprietà EsentTooManyOpenTablesAndCleanupTimedOutException
+title: Proprietà di EsentTooManyOpenTablesAndCleanupTimedOutException
 TOCTitle: EsentTooManyOpenTablesAndCleanupTimedOutException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentTooManyOpenTablesAndCleanupTimedOutException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanyopentablesandcleanuptimedoutexception_properties(v=EXCHG.10)
@@ -14,7 +14,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119402441"
 ---
-# <a name="esenttoomanyopentablesandcleanuptimedoutexception-properties"></a>Proprietà EsentTooManyOpenTablesAndCleanupTimedOutException
+# <a name="esenttoomanyopentablesandcleanuptimedoutexception-properties"></a>Proprietà di EsentTooManyOpenTablesAndCleanupTimedOutException
 
 Includere membri protetti  
 Includere i membri ereditati  

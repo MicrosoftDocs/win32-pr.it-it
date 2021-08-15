@@ -1,9 +1,9 @@
 ---
 title: DRM_SourceID
-description: L' \_ attributo SourceID di DRM contiene un identificatore che associa il contenuto protetto a un'origine.
+description: L'attributo SourceID DRM \_ contiene un identificatore che associa il contenuto protetto a un'origine.
 ms.assetid: 69a07b3f-df75-4b05-bddb-924af516a962
 keywords:
-- DRM_SourceID formato Windows Media
+- DRM_SourceID windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3ea60249ea9326499de7eaa7422d9362e7f0b2d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 80d9294cfdc76ff9210ad080bf3079bdfdb70ffb64faf35e2ef3e4164064a2b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104045690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085942"
 ---
-# <a name="drm_sourceid"></a>\_SOURCEID DRM
+# <a name="drm_sourceid"></a>DRM \_ SourceID
 
-L' **attributo \_ SourceID di DRM** contiene un identificatore che associa il contenuto protetto a un'origine.
+**L'attributo \_ DRM SourceID** contiene un identificatore che associa il contenuto protetto a un'origine.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,11 +29,11 @@ g \_ wszWMDRM \_ SourceID
 
 ## <a name="data-type"></a>Tipo di dati
 
-**WMT \_ tipo \_ DWORD**
+**DWORD \_ DI TIPO \_ WMT**
 
 ## <a name="remarks"></a>Commenti
 
-Gli identificatori di origine vengono utilizzati per distinguere il contenuto protetto in modo non standard dal contenuto protetto mediante DRM standard di Windows Media.
+Gli identificatori di origine vengono usati per differenziare il contenuto protetto in modo non standard dal contenuto protetto tramite Windows Media DRM.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -42,9 +42,9 @@ Gli identificatori di origine vengono utilizzati per distinguere il contenuto pr
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

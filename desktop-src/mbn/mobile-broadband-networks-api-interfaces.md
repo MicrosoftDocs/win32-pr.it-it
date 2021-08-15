@@ -1,17 +1,17 @@
 ---
 description: L'API Mobile Broadband definisce e usa le interfacce seguenti.
 ms.assetid: db6c9635-16f9-4266-9d0e-daeb58fac588
-title: Interfacce API broadband mobile
+title: Interfacce API Mobile Broadband
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d822fbbe095b31fac5bc3cdfc881c929e73ca33f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f620ad34b0b1af953f0e387ebddd41987d38696f5c17ddac82b3528ce031bd23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975291"
 ---
-# <a name="mobile-broadband-api-interfaces"></a>Interfacce API broadband mobile
+# <a name="mobile-broadband-api-interfaces"></a>Interfacce API Mobile Broadband
 
 L'API Mobile Broadband definisce e usa le interfacce seguenti.
 
@@ -29,7 +29,7 @@ L'API Mobile Broadband definisce e usa le interfacce seguenti.
 -   [**IMbnDeviceServicesContext**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservicescontext)
 -   [**IMbnDeviceServicesEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservicesevents)
 -   [**IMbnDeviceServicesManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservicesmanager)
--   [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface)
+-   [**Interfaccia IMbn**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface)
 -   [**IMbnInterfaceEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfaceevents)
 -   [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)
 -   [**IMbnInterfaceManagerEvents**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanagerevents)

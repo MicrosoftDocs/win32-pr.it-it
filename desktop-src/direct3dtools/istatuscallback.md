@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d58c1f1e9b33d664c49fda6a52bf16d90ca3e2a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 59cb2c07859666cd3a68fc4ff438d87781112f7e35a54f786b9fe9e6ed1dcbe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985621"
 ---
 # <a name="span-idvspixengineistatuscallbackspanistatuscallback-interface"></a><span id="vspixengine.istatuscallback"></span>Interfaccia IStatusCallback
 

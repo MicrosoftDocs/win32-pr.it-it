@@ -1,23 +1,23 @@
 ---
-title: Riutilizza puntatori esistenti a oggetti
-description: Riutilizza puntatori esistenti a oggetti
+title: Riutilizzare i puntatori esistenti agli oggetti
+description: Riutilizzare i puntatori esistenti agli oggetti
 ms.assetid: 7e1610c6-89b2-4e7e-aee5-94a6cab87a22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c151b8d957fb82718721ad81b452a81a2c71ec84
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 14571234ee937d2237d3102316665f15a9ab55415042ddaeda749bfaa21e4807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998121"
 ---
-# <a name="reuse-existing-pointers-to-objects"></a>Riutilizza puntatori esistenti a oggetti
+# <a name="reuse-existing-pointers-to-objects"></a>Riutilizzare i puntatori esistenti agli oggetti
 
-In questo scenario, il server risponde a una richiesta [**del \_ client ObjID**](object-identifiers.md) utilizzando ogni volta lo stesso puntatore di interfaccia [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .
+In questo scenario, il server risponde a una richiesta [**CLIENT OBJID \_**](object-identifiers.md) usando ogni volta lo stesso puntatore di interfaccia [**IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
-Nell'esempio di codice seguente, l'oggetto controllo viene recuperato dai dati della finestra aggiuntiva e viene chiamato un metodo del controllo per recuperare l'oggetto server di accessibilità (la classe AccServer definita dall'applicazione), se disponibile. Se il server di accessibilità non esiste ancora, viene creato.
+Nel codice di esempio seguente l'oggetto controllo viene recuperato dai dati aggiuntivi della finestra e viene chiamato un metodo del controllo per recuperare l'oggetto server di accessibilità (la classe AccServer definita dall'applicazione), se presente. Se il server di accessibilità non esiste ancora, viene creato.
 
-Quando viene creato l'oggetto server di accessibilità, il conteggio dei riferimenti è 1. [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject) incrementa il conteggio dei riferimenti più volte, ma questi riferimenti verranno rilasciati al termine dell'oggetto del client. Il server rilascia il riferimento quando la finestra del controllo viene distrutta.
+Quando viene creato, l'oggetto server di accessibilità ha un conteggio dei riferimenti di 1. [**LresultFromObject**](/windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject) incrementa il conteggio dei riferimenti più volte, ma questi riferimenti verranno rilasciati al termine dell'esecuzione dell'oggetto da parte del client. Il server rilascia il relativo riferimento quando la finestra di controllo viene distrutta.
 
 
 ```C++
@@ -65,9 +65,9 @@ case WM_DESTROY:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

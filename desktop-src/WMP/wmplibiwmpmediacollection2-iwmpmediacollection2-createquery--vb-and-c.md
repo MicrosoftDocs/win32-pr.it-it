@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMPMediaCollection2 createQuery
+title: Metodo createQuery IWMPMediaCollection2
 description: Il metodo createQuery restituisce un'interfaccia IWMPQuery che rappresenta una nuova query.
 ms.assetid: a12da325-e77e-4e44-93d1-5e9c5733ea44
 keywords:
-- metodo createQuery Windows Media Player
-- metodo createQuery Windows Media Player, interfaccia IWMPMediaCollection2
-- Interfaccia IWMPMediaCollection2 Windows Media Player, metodo createQuery
+- Metodo createQuery Windows Media Player
+- Metodo createQuery Windows Media Player, interfaccia IWMPMediaCollection2
+- Interfaccia IWMPMediaCollection2 Windows Media Player , metodo createQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 318b27a20ba801e1fbed58ff79c5bed7841f8c29
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1644748008e2b222fef0101a96892d480ad4723b9892b94e0e69c387b54e53d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000091"
 ---
-# <a name="iwmpmediacollection2createquery-method"></a>Metodo IWMPMediaCollection2:: createQuery
+# <a name="iwmpmediacollection2createquery-method"></a>Metodo IWMPMediaCollection2::createQuery
 
-Il `createQuery` metodo restituisce un'interfaccia **IWMPQuery** che rappresenta una nuova query.
+Il `createQuery` metodo restituisce **un'interfaccia IWMPQuery** che rappresenta una nuova query.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -51,15 +51,15 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPQuery** che rappresenta una nuova query vuota.
+Interfaccia **WMPLib.IWMPQuery** che rappresenta una nuova query vuota.
 
 ## <a name="remarks"></a>Commenti
 
-La creazione di una nuova query rappresenta il primo passaggio per la creazione di una query composta.
+La creazione di una nuova query è il primo passaggio verso la creazione di una query composta.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato `createQuery` per ottenere un'interfaccia **IWMPQuery** inizializzata su null. Poiché a questa query non sono state aggiunte condizioni, quando viene usato come argomento nel metodo **getStringCollectionByQuery** , il metodo restituisce una raccolta di stringhe che contiene tutti gli elementi multimediali del tipo di supporto specificato. La raccolta di stringhe viene quindi visualizzata in una casella di riepilogo.
+L'esempio seguente `createQuery` usa per ottenere **un'interfaccia IWMPQuery** inizializzata su Null. Poiché a questa query non sono state aggiunte condizioni, quando viene usata come argomento nel metodo **getStringCollectionByQuery,** il metodo restituirà una raccolta di stringhe che contiene tutti gli elementi multimediali del tipo di supporto specificato. La raccolta di stringhe viene quindi visualizzata in una casella di riepilogo.
 
 
 ```CSharp

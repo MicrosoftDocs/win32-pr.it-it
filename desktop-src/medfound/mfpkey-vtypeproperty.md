@@ -1,17 +1,17 @@
 ---
 description: Specifica la logica che il codec userà per rilevare il video di origine interlacciato.
 ms.assetid: 29c7fc1c-2047-4562-ba14-48f9cfbfe68c
-title: Proprietà MFPKEY_VTYPE (Wmcodecdsp. h)
+title: MFPKEY_VTYPE proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e95bab3120e60a2faa1a3be47c6459205f5f34d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f406f0bc91e3431672c2b7f92cc544273e2a64403017a22eb4567054cef0155
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973340"
 ---
-# <a name="mfpkey_vtype-property"></a>\_Proprietà VTYPE di MFPKEY
+# <a name="mfpkey_vtype-property"></a>Proprietà VTYPE MFPKEY \_
 
 Specifica la logica che il codec userà per rilevare il video di origine interlacciato.
 
@@ -35,28 +35,28 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 | Valore | Descrizione                                                                                                                                 |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | Il codec userà la logica di rilevamento dei tipi di frame standard.                                                                                 |
-| 1     | Il codec considererà tutti i fotogrammi video di origine come frame interlacciati.                                                                          |
-| 2     | Il codec considererà tutti i frame video di origine come campi di video interlacciato.                                                                 |
-| 3     | Il codec determina automaticamente se i fotogrammi video di input sono frame o campi interlacciati di video interlacciato.                      |
-| 4     | Il codec determina automaticamente se i fotogrammi video di input sono frame progressivi, frame interlacciati o campi di video interlacciato. |
+| 0     | Il codec userà la logica di rilevamento del tipo di frame standard.                                                                                 |
+| 1     | Il codec considera tutti i fotogrammi video di origine come fotogrammi interlacciati.                                                                          |
+| 2     | Il codec considera tutti i fotogrammi video di origine come campi del video interlacciato.                                                                 |
+| 3     | Il codec determinerà automaticamente se i fotogrammi video di input sono fotogrammi interlacciati o campi di video interlacciati.                      |
+| 4     | Il codec determinerà automaticamente se i fotogrammi video di input sono fotogrammi progressivi, fotogrammi interlacciati o campi di video interlacciati. |
 
 
 
  
 
-Questa proprietà determina il metodo di codifica immagine usato per la codifica video progressiva o interlacciata.
+Questa proprietà determina il metodo di codifica delle immagini usato per la codifica video progressiva o interlacciata.
 
-Se non viene specificato alcun tipo di video, il codec userà la codifica del frame progressiva per le sessioni di codifica progressiva e la codifica interlacciata del campo per le sessioni di codifica interlacciate. Il tipo di sessione di codifica video (progressivo o interlacciato) viene impostato tramite la proprietà [MFPKEY \_ INTERLACEDCODINGENABLED](mfpkey-interlacedcodingenabledproperty.md) .
+Se non viene specificato alcun tipo di video, il codec userà la codifica dei fotogrammi progressivi per le sessioni di codifica progressiva e la codifica interlacciata di campo per le sessioni di codifica interlacciata. Il tipo di sessione di codifica video (progressiva o interlacciata) viene impostato usando la proprietà [MFPKEY \_ INTERLACEDCODINGENABLED.](mfpkey-interlacedcodingenabledproperty.md)
 
 > [!Note]  
-> La [proprietà \_ INTERLACEDCODINGENABLED di MFPKEY](mfpkey-interlacedcodingenabledproperty.md) deve essere impostata su Variant \_ true per produrre output interlacciato. in caso contrario, l'impostazione della proprietà VTYPE di MPFKEY non avrà \_ alcun effetto.
+> La [proprietà MFPKEY \_ INTERLACEDCODINGENABLED](mfpkey-interlacedcodingenabledproperty.md) deve essere impostata su VARIANT TRUE per produrre output interlacciato. In caso contrario, l'impostazione della proprietà VTYPE MPFKEY non avrà \_ \_ alcun effetto.
 
  
 
-Quando si codifica il video interlacciato, è possibile specificare diversi metodi di codifica dell'immagine. In genere, il modo più efficiente per codificare video interlacciato consiste nell'usare il metodo interlacciato del campo (2). Se il video di origine contiene un movimento molto ridotto, il metodo interlacciato del frame (1) o il metodo di frame/campo automatico (2) potrebbe essere più appropriato.
+Quando il video interlacciato viene codificato, è possibile specificare diversi metodi di codifica delle immagini. In genere il modo più efficiente per codificare video interlacciato è usare il metodo interlacciato di campo (2). Se il video di origine contiene pochissimo movimento, il metodo interlacciato dei fotogrammi (1) o il metodo frame/campo automatico (2) potrebbe essere più adatto.
 
-Quando si codificano contenuti misti (contenenti frame progressivi e interlacciati), è preferibile usare il valore auto frame/Field/progressive Method (4).
+Quando si codifica contenuto misto (che contiene fotogrammi sia progressivi che interlacciati), è meglio usare il metodo frame/campo/progressivo automatico (4).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,9 +64,9 @@ Quando si codificano contenuti misti (contenenti frame progressivi e interlaccia
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Quando si codificano contenuti misti (contenenti frame progressivi e interlaccia
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

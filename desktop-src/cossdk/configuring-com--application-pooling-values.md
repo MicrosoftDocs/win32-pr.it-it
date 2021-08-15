@@ -1,32 +1,32 @@
 ---
-description: È possibile utilizzare le istruzioni seguenti per configurare i valori del pool di applicazioni COM+ per l'applicazione COM+.
+description: È possibile usare le istruzioni seguenti per configurare i valori del pool di applicazioni COM+ per l'applicazione COM+.
 ms.assetid: faba5cb7-745e-4fdf-a3e0-62132da4a843
 title: Configurazione dei valori del pool di applicazioni COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98922699fff7af7146250bdb504a1f46be08718e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 25d3407cd644b68cfc3ef279a9e67603aa1dc2db85302b22dbf0c6ae7219fd3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128973"
 ---
 # <a name="configuring-com-application-pooling-values"></a>Configurazione dei valori del pool di applicazioni COM+
 
-È possibile utilizzare le istruzioni seguenti per configurare i valori del pool di applicazioni COM+ per l'applicazione COM+.
+È possibile usare le istruzioni seguenti per configurare i valori del pool di applicazioni COM+ per l'applicazione COM+.
 
 > [!Note]  
-> Le applicazioni di libreria hanno le proprietà di riciclo e pool del processo host.
+> Le applicazioni di libreria hanno le proprietà di riciclo e pooling del processo host.
 
  
 
 ## <a name="component-services-administrative-tool"></a>Strumento di amministrazione Servizi componenti
 
-Per configurare il pool di applicazioni COM+ per un'applicazione COM+, attenersi alla procedura seguente:
+Per configurare il pool di applicazioni COM+ per un'applicazione COM+, seguire questa procedura:
 
-1.  Nell'albero della console dello strumento di amministrazione Servizi componenti fare clic con il pulsante destro del mouse sull'applicazione COM+ che si desidera includere nel pool, quindi scegliere **Proprietà**.
+1.  Nell'albero della console dello strumento di amministrazione Servizi componenti fare clic con il pulsante destro del mouse sull'applicazione COM+ di cui si vuole eseguire il pool e quindi scegliere **Proprietà.**
 
-2.  Nella scheda **riciclo & pooling** , in **pool di applicazioni**, immettere un valore per le **dimensioni del pool**, a seconda del numero di istanze dell'applicazione che si desidera eseguire.
+2.  Nella scheda **Pooling & Riciclo** , in **Pool di** applicazioni immettere un valore per Dimensioni pool **,** a seconda del numero di istanze dell'applicazione che si desidera eseguire.
 
 3.  Fare clic su **OK**.
 
@@ -78,7 +78,7 @@ End Function
 
 
 
-Per utilizzare la funzione, fornire un valore stringa per il nome dell'applicazione server COM+ e un valore intero per l'impostazione del pool di applicazioni desiderata. Il codice di Visual Basic seguente mostra come impostare il valore del pool di applicazioni su 15 per l'applicazione denominata "MyApplication":
+Per usare la funzione , specificare un valore stringa per il nome dell'applicazione server COM+ e un valore intero per l'impostazione del pool di applicazioni desiderata. Il codice Visual Basic seguente illustra come impostare il valore del pool di applicazioni su 15 per l'applicazione denominata "MyApplication":
 
 
 ```VB
@@ -94,7 +94,7 @@ End Sub
 
 ## <a name="cc"></a>C/C++
 
-La funzione seguente in C++ illustra come è possibile impostare il valore del pool di applicazioni COM+ (rappresentato dalla relativa proprietà ConcurrentApps) per qualsiasi applicazione server COM+ scelta. Il metodo ErrorDescription è descritto in [interpretazione dei codici di errore](interpreting-error-codes.md).
+La funzione seguente in C++ illustra come impostare il valore del pool di applicazioni COM+ (rappresentato dalla relativa proprietà ConcurrentApps) per qualsiasi applicazione server COM+ scelta. Il metodo ErrorDescription è descritto in [Interpretazione dei codici di errore](interpreting-error-codes.md).
 
 
 ```C++
@@ -214,7 +214,7 @@ catch(HRESULT hr) {  // Replace with specific error handling.
 
 
 
-Per utilizzare la funzione, fornire un valore stringa per il nome dell'applicazione server COM+ e un valore intero per l'impostazione del pool di applicazioni desiderata. Nel codice C++ riportato di seguito viene illustrato come impostare il valore del pool di applicazioni su 15 per l'applicazione denominata "MyApplication":
+Per usare la funzione , specificare un valore stringa per il nome dell'applicazione server COM+ e un valore intero per l'impostazione del pool di applicazioni desiderata. Il codice C++ seguente illustra come impostare il valore del pool di applicazioni su 15 per l'applicazione denominata "MyApplication":
 
 ``` syntax
 #define _WIN32_DCOM  // To use CoInitializeEx()

@@ -1,6 +1,6 @@
 ---
-title: ciclo-vs
-description: Avvia un ciclo... blocco ENDLOOP.
+title: loop - vs
+description: Avviare un ciclo... blocco endloop.
 ms.assetid: vs|directx_sdk|~\loop___vs.htm
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6a96a1ce53b850ec8feeba282055e8111b275bfd
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8a211014137f35c39a6b89cd16f0e27687b4daafd89841f752312f459531cab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104993109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986441"
 ---
-# <a name="loop---vs"></a>ciclo-vs
+# <a name="loop---vs"></a>loop - vs
 
-Avvia un ciclo... blocco [EndLoop](endloop---vs.md) .
+Avviare un ciclo... [blocco endloop.](endloop---vs.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,33 +29,33 @@ Avvia un ciclo... blocco [EndLoop](endloop---vs.md) .
 
 
 
- 
+ 
 
 Dove:
 
--   aL è il [registro del contatore di cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) che contiene il numero di cicli corrente.
--   i \# è un [Registro di tipo Integer costante](dx9-graphics-reference-asm-vs-registers-constant-integer.md). Vedere la sezione Osservazioni.
+-   aL è il [registro contatori del ciclo](dx9-graphics-reference-asm-vs-registers-loop-counter.md) che contiene il conteggio del ciclo corrente.
+-   i \# è un registro di [interi costanti.](dx9-graphics-reference-asm-vs-registers-constant-integer.md) Vedere la sezione Osservazioni.
 
 ## <a name="remarks"></a>Commenti
 
 
 
-| Versioni vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versioni di vertex shader | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | loop                   |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
--   Il [registro del contatore di cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) include il numero di cicli corrente e può essere usato per l'indirizzamento relativo in un [Registro di tipo Integer costante](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (c \# ) o nei registri di [output](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o \# ) all'interno del blocco del ciclo.
--   i \# . x specifica il numero di iterazioni. L'intervallo valido è \[ 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# . x.
--   i \# . y specifica il valore iniziale del registro del [contatore di cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al). L'intervallo valido è \[ 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# . y.
--   i \# . z specifica la dimensione step/stride. L'intervallo valido è \[ -128, 127 \] .
--   i \# . w non viene usato e deve essere impostato su 0.
--   I blocchi di ciclo possono essere annidati. Vedere [limiti di nidificazione del controllo di flusso](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
--   Quando nidificato, il valore del [registro del contatore di cicli](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) si riferisce al blocco del ciclo di inclusione immediato.
--   I blocchi di ciclo possono trovarsi completamente all'interno di un \* blocco if o circondarli completamente. Nessun a cavallo consentito.
+-   [Loop Counter Register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) contiene il conteggio del ciclo corrente e può essere usato per l'indirizzamento relativo in Constant Integer [Register](dx9-graphics-reference-asm-vs-registers-constant-integer.md) (c) o \# Output [Registers](dx9-graphics-reference-asm-vs-registers-vs-3-0.md) (o ) all'interno del blocco \# del ciclo.
+-   i \# .x specifica il conteggio delle iterazioni. L'intervallo valido \[ è 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# .x.
+-   i \# .y specifica il valore iniziale del registro [loop counter register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL). L'intervallo valido \[ è 0, 255 \] . Si noti che questa istruzione non incrementa o decrementa il valore di i \# .y.
+-   i \# .z specifica le dimensioni di step/stride. L'intervallo valido \[ è -128, 127. \]
+-   i \# .w non viene usato e deve essere impostato su 0.
+-   I blocchi di ciclo possono essere annidati. Vedere [Flow limiti di annidamento del controllo](dx9-graphics-reference-asm-vs-instructions-flow-control.md).
+-   Quando è annidato, il valore di [Loop Counter Register](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) fa riferimento al blocco di ciclo di inclusione immediato.
+-   I blocchi di ciclo possono essere completamente all'interno di un blocco if \* o che lo circondano completamente. Non è consentito alcun intervallo.
 
 ## <a name="example"></a>Esempio
 
@@ -72,12 +72,12 @@ endloop
 
 <dl> <dt>
 
-[Istruzioni vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
+[Istruzioni per vertex shader](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

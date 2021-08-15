@@ -1,7 +1,7 @@
 ---
-description: GetOrdinal non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio rapido utente e Desktop remoto.
+description: GetOrdinal non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli account utente con cambio utente rapido e Desktop remoto.
 ms.assetid: 20b1c1d0-b09f-43a8-9026-9cdbac28c108
-title: 'Metodo IUserIdentity2:: GetOrdinal (Msident. h)'
+title: Metodo IUserIdentity2::GetOrdinal (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: f5a7e875e92342363722858b3ac714171cb547b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5453a083a1db23e042d24c3da4cd2948ff70f813fcc9026a00324eade467918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968970"
 ---
-# <a name="iuseridentity2getordinal-method"></a>Metodo IUserIdentity2:: GetOrdinal
+# <a name="iuseridentity2getordinal-method"></a>Metodo IUserIdentity2::GetOrdinal
 
-\[**GetOrdinal** non è supportato e può essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e desktop remoto](fastuserswitching.md).\]
+\[**GetOrdinal** non è supportato e potrebbe essere modificato o non disponibile in futuro. Usare invece gli [account utente con cambio rapido utente e Desktop remoto](fastuserswitching.md).\]
 
-Ottiene il numero ordinale per l'identità.
+Ottiene il numero ordinale per questa identità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,12 +41,12 @@ HRESULT GetOrdinal(
 
 <dl> <dt>
 
-*dwOrdinal* \[ out\]
+*dwOrdinal* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **DWORD \** _
+Tipo: **DWORD \***
 
-Puntatore a un valore _ *DWORD** che riceve il numero ordinale per l'identità.
+Puntatore a un **valore DWORD** che riceve il numero ordinale per questa identità.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ Puntatore a un valore _ *DWORD** che riceve il numero ordinale per l'identità.
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Il numero ordinale determina l'ordine delle identità nell'elenco di identità, ma potrebbe non essere mantenuto durante le operazioni sulle identità. Per ottenere un valore univoco per un'identità, chiamare [**GetCookie**](iuseridentity-getcookie.md).
+Il numero ordinale determina l'ordine delle identità nell'elenco di identità, ma può non essere persistente nelle operazioni sulle identità. Per ottenere un valore univoco per un'identità, chiamare [**GetCookie**](iuseridentity-getcookie.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -70,8 +70,8 @@ Il numero ordinale determina l'ordine delle identità nell'elenco di identità, 
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Fine del supporto client<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fine del supporto server<br/>    | Windows 2000 Server<br/>                                                         |
-| Intestazione<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

@@ -1,26 +1,26 @@
 ---
-description: Ruoli del dispositivo per le applicazioni DirectSound
+description: Ruoli del dispositivo per applicazioni DirectSound
 ms.assetid: 7d82d67f-aad8-4e5b-ac65-87d75774e613
-title: Ruoli del dispositivo per le applicazioni DirectSound
+title: Ruoli del dispositivo per applicazioni DirectSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3829817f8b00c7288aceb8d0b6d418d5793ae580
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3037b767d7ddfb96d892c789608f23523efed465535258c336496f3f23d82f19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103965896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957330"
 ---
-# <a name="device-roles-for-directsound-applications"></a>Ruoli del dispositivo per le applicazioni DirectSound
+# <a name="device-roles-for-directsound-applications"></a>Ruoli del dispositivo per applicazioni DirectSound
 
 > [!Note]  
-> L' [API MMDevice](mmdevice-api.md) supporta i ruoli del dispositivo. Tuttavia, l'interfaccia utente in Windows Vista non implementa il supporto per questa funzionalità. Il supporto dell'interfaccia utente per i ruoli del dispositivo può essere implementato in una versione futura di Windows. Per ulteriori informazioni, vedere [ruoli del dispositivo in Windows Vista](device-roles-in-windows-vista.md).
+> [L'API MMDevice](mmdevice-api.md) supporta i ruoli del dispositivo. Tuttavia, l'interfaccia utente in Windows Vista non implementa il supporto per questa funzionalità. Il supporto dell'interfaccia utente per i ruoli del dispositivo potrebbe essere implementato in una versione futura di Windows. Per altre informazioni, vedere [Ruoli del dispositivo in Windows Vista](device-roles-in-windows-vista.md).
 
  
 
-L'API DirectSound non fornisce un mezzo per consentire a un'applicazione di selezionare il [dispositivo dell'endpoint audio](audio-endpoint-devices.md) assegnato dall'utente a un particolare [ruolo del dispositivo](device-roles.md). Tuttavia, in Windows Vista, le API di base audio possono essere usate insieme a un'applicazione DirectSound per abilitare la selezione dei dispositivi in base al ruolo del dispositivo. Con l'ausilio delle API di base audio, l'applicazione è in grado di identificare il dispositivo dell'endpoint audio assegnato a un ruolo specifico, ottenere il GUID del dispositivo DirectSound per il dispositivo endpoint e chiamare la funzione **DirectSoundCreate** o **DirectSoundCaptureCreate** per creare un'istanza dell'interfaccia **IDirectSound** o **IDirectSoundCapture** che incapsula il dispositivo dell'endpoint. Per ulteriori informazioni su DirectSound, vedere la documentazione di Windows SDK.
+L'API DirectSound non consente a un'applicazione di selezionare il dispositivo [endpoint audio](audio-endpoint-devices.md) assegnato dall'utente a un particolare [ruolo del dispositivo.](device-roles.md) Tuttavia, in Windows Vista, le API audio di base possono essere usate insieme a un'applicazione DirectSound per abilitare la selezione dei dispositivi in base al ruolo del dispositivo. Con l'aiuto delle API audio di base, l'applicazione può identificare il dispositivo endpoint audio assegnato a un ruolo specifico, ottenere il GUID del dispositivo DirectSound per il dispositivo endpoint e chiamare la funzione **DirectSoundCreate** o **DirectSoundCaptureCreate** per creare un'istanza dell'interfaccia **IDirectSound** o **IDirectSoundCapture** che incapsula il dispositivo endpoint. Per altre informazioni su DirectSound, vedere la documentazione Windows SDK.
 
-Nell'esempio di codice seguente viene illustrato come ottenere il GUID del dispositivo DirectSound per il dispositivo di rendering o acquisizione attualmente assegnato a un particolare ruolo del dispositivo:
+L'esempio di codice seguente illustra come ottenere il GUID del dispositivo DirectSound per il dispositivo di rendering o acquisizione attualmente assegnato a un ruolo di dispositivo specifico:
 
 
 ```C++
@@ -90,26 +90,26 @@ Exit:
 
 
 
-Nell'esempio di codice precedente, la funzione GetDirectSoundGuid accetta una direzione del flusso di dati (eRender o eCapture) e un ruolo del dispositivo (eConsole, eMultimedia o comunicazioni elettroniche) come parametri di input. Il terzo parametro è un puntatore tramite il quale la funzione scrive un GUID del dispositivo che l'applicazione può fornire come parametro di input per la funzione **DirectSoundCreate** o **DirectSoundCaptureCreate** .
+Nell'esempio di codice precedente la funzione GetDirectSoundGuid accetta una direzione del flusso di dati (eRender o eCapture) e un ruolo del dispositivo (eConsole, eMultimedia o eCommunications) come parametri di input. Il terzo parametro è un puntatore tramite il quale la funzione scrive un GUID del dispositivo che l'applicazione può fornire come parametro di input per la funzione **DirectSoundCreate** o **DirectSoundCaptureCreate.**
 
-Nell'esempio di codice precedente viene ottenuto il GUID del dispositivo DirectSound da:
+L'esempio di codice precedente ottiene il GUID del dispositivo DirectSound tramite:
 
--   Creazione di un'istanza dell'interfaccia [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) che rappresenta il dispositivo dell'endpoint audio con la direzione del flusso di dati e il ruolo del dispositivo specificati.
--   Apertura dell'archivio delle proprietà del dispositivo dell'endpoint audio.
--   Recupero della proprietà [**pkey \_ AudioEndpoint \_ GUID**](pkey-audioendpoint-guid.md) dall'archivio delle proprietà. Il valore della proprietà è una rappresentazione in forma di stringa del GUID del dispositivo DirectSound per il dispositivo dell'endpoint audio.
--   Chiamata della funzione [**CLSIDFromString**](https://www.bing.com/search?q=**CLSIDFromString**) per convertire la rappresentazione di stringa del GUID del dispositivo in una struttura Guid. Per ulteriori informazioni su **CLSIDFromString**, vedere la documentazione Windows SDK.
+-   Creazione di [**un'istanza dell'interfaccia IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) che rappresenta il dispositivo endpoint audio con la direzione del flusso di dati e il ruolo del dispositivo specificati.
+-   Apertura dell'archivio delle proprietà del dispositivo endpoint audio.
+-   Recupero della [**proprietà PKEY \_ AudioEndpoint \_ GUID**](pkey-audioendpoint-guid.md) dall'archivio delle proprietà. Il valore della proprietà è una rappresentazione di stringa del GUID del dispositivo DirectSound per il dispositivo endpoint audio.
+-   Chiamata della [**funzione CLSIDFromString**](https://www.bing.com/search?q=**CLSIDFromString**) per convertire la rappresentazione di stringa del GUID del dispositivo in una struttura GUID. Per altre informazioni su **CLSIDFromString,** vedere la documentazione Windows SDK.
 
-Dopo aver ottenuto un GUID di dispositivo dalla funzione GetDirectSoundGuid, l'applicazione può chiamare **DirectSoundCreate** o **DIRECTSOUNDCAPTURECREATE** con questo GUID per creare il dispositivo di rendering o acquisizione DirectSound che incapsula il dispositivo dell'endpoint audio. Quando DirectSound crea un dispositivo in questo modo, assegna sempre il flusso audio del dispositivo alla sessione predefinita, ovvero la sessione audio specifica del processo identificata dal GUID del valore GUID della sessione \_ null.
+Dopo aver ottenuto un GUID del dispositivo dalla funzione GetDirectSoundGuid, l'applicazione può chiamare **DirectSoundCreate** o **DirectSoundCaptureCreate** con questo GUID per creare il dispositivo di rendering o acquisizione DirectSound che incapsula il dispositivo endpoint audio. Quando DirectSound crea un dispositivo in questo modo, assegna sempre il flusso audio del dispositivo alla sessione predefinita, ovvero la sessione audio specifica del processo identificata dal valore GUID della sessione GUID \_ NULL.
 
-Se l'applicazione richiede DirectSound per assegnare il flusso a una sessione audio tra processi o a una sessione con un GUID di sessione non **null** , deve chiamare il metodo [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) per creare un oggetto **IDirectSound** o **IDirectSoundCapture** invece di usare la tecnica illustrata nell'esempio di codice precedente. Per un esempio di codice che illustra come usare il metodo **Activate** per specificare una sessione audio tra processi o un GUID di sessione non **null** per un flusso, vedere [ruoli del dispositivo per le applicazioni DirectShow](device-roles-for-directshow-applications.md). Nell'esempio di codice riportato in questa sezione viene illustrato come creare un filtro DirectShow, ma, con modifiche minime, il codice può essere adattato per creare un dispositivo DirectSound.
+Se l'applicazione richiede a DirectSound di assegnare il flusso a una sessione audio cross-process o a una sessione con un GUID di sessione non **NULL,** deve chiamare il metodo [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) per creare un **oggetto IDirectSound** o **IDirectSoundCapture** anziché usare la tecnica illustrata nell'esempio di codice precedente. Per un esempio di codice che illustra come usare il metodo **Activate** per specificare una sessione audio cross-process o un GUID di sessione non **NULL** per un flusso, vedere Ruoli del dispositivo per le DirectShow [applicazioni](device-roles-for-directshow-applications.md). L'esempio di codice in questa sezione illustra come creare un filtro DirectShow, ma, con modifiche secondarie, il codice può essere adattato per creare un dispositivo DirectSound.
 
-La funzione GetDirectSoundGuid nell'esempio di codice precedente chiama la funzione [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) per creare un enumeratore per i dispositivi dell'endpoint audio nel sistema. A meno che il programma chiamante abbia precedentemente chiamato la funzione [**CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) per inizializzare la libreria com, la chiamata **CoCreateInstance** avrà esito negativo. Per ulteriori informazioni su **CoCreateInstance**, **CoInitialize** e **CoInitializeEx**, vedere la documentazione Windows SDK.
+La funzione GetDirectSoundGuid nell'esempio di codice precedente chiama la funzione [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) per creare un enumeratore per i dispositivi endpoint audio nel sistema. A meno che il programma chiamante non chiami in precedenza la [**funzione CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) o [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) per inizializzare la libreria COM, la **chiamata CoCreateInstance** avrà esito negativo. Per altre informazioni su **CoCreateInstance,** **CoInitialize** e **CoInitializeEx,** vedere la documentazione Windows SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Interoperabilità con le API audio legacy](interoperability-with-legacy-audio-apis.md)
+[Interoperabilità con LE API audio legacy](interoperability-with-legacy-audio-apis.md)
 </dt> </dl>
 
  

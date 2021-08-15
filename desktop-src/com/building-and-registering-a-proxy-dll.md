@@ -4,12 +4,12 @@ description: Se si sceglie il marshalling proxy/stub per l'applicazione, i file 
 ms.assetid: 939e6eed-2a2d-4d90-8fbb-c07142e7ba70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37d4cafbe2be56d9e9a02a451e3daf905496c424
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 634cb7a17551a4b7925d0be3065c71037cc1d7ae8bf28c10fcdaee74771c302e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048849"
 ---
 # <a name="building-and-registering-a-proxy-dll"></a>Compilazione e registrazione di una DLL proxy
 
@@ -48,13 +48,13 @@ proxy.dll : $(PROXYSTUBOBJS) example.def
  
 ```
 
-Se non si specificano queste definizioni del preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. Ovvero, le macro in Rpcproxy.c non si espandono fino a nulla. È necessario averle definite in modo esplicito in un altro file di origine, il cui modulo sarebbe stato incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
+Se non si specificano queste definizioni del preprocessore in fase di compilazione, queste funzioni non vengono definite automaticamente. Ovvero, le macro in Rpcproxy.c non si espandono fino a nulla. È necessario averli definiti in modo esplicito in un altro file di origine, il cui modulo verrebbe incluso anche nel collegamento e nella compilazione finali nella riga di comando del compilatore C.
 
 Quando viene definita la DLL REGISTER PROXY, Rpcproxy.h fornisce un controllo di compilazione condizionale aggiuntivo con \_ \_ \_ CLSID PROXY=*guid,* \_ CLSID PROXY IS= \_ valore \_ esplicito di guid e ENTRY PREFIX= stringa di prefisso . Queste definizioni di macro sono descritte in modo più dettagliato in Definizioni del compilatore [C per proxy/stub](/windows/desktop/Midl/c-compiler-definitions-for-proxy-stubs) nella Guida per programmatori MIDL.
 
 ## <a name="manually-registering-the-proxy-dll"></a>Registrazione manuale della DLL del proxy
 
-Se per qualche motivo non è possibile usare le routine di registrazione predefinite dello stub proxy, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al Registro di sistema usando Regedt32.exe.
+Se per qualche motivo non è possibile usare le routine di registrazione stub proxy predefinite, è possibile registrare manualmente la DLL aggiungendo le voci seguenti al Registro di sistema, usando Regedt32.exe.
 
 ```
 HKEY_CLASSES_ROOT

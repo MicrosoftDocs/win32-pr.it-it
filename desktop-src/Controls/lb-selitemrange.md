@@ -1,9 +1,9 @@
 ---
-title: Messaggio LB_SELITEMRANGE (winuser. h)
-description: Consente di selezionare o deselezionare uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
+title: LB_SELITEMRANGE messaggio (Winuser.h)
+description: Seleziona o deseleziona uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
 ms.assetid: 817d62df-98a3-40b3-8d62-86bf07ad797f
 keywords:
-- Controlli di Windows Message LB_SELITEMRANGE
+- LB_SELITEMRANGE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a137b90a817519cf23c894dc19417dd2d9b6b7f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87a08019f3d60e6c9bfe841067b48220b8fcfe75891c9bcc8db64bf28d219b15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958600"
 ---
-# <a name="lb_selitemrange-message"></a>\_Messaggio SELITEMRANGE lb
+# <a name="lb_selitemrange-message"></a>Messaggio LB \_ SELITEMRANGE
 
-Consente di selezionare o deselezionare uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
+Seleziona o deseleziona uno o più elementi consecutivi in una casella di riepilogo a selezione multipla.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,26 +32,26 @@ Consente di selezionare o deselezionare uno o più elementi consecutivi in una c
 *wParam* 
 </dt> <dd>
 
-**True** per selezionare l'intervallo di elementi oppure **false** per deselezionarlo.
+**TRUE** per selezionare l'intervallo di elementi oppure **FALSE per** deselezionarlo.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica l'indice in base zero del primo elemento da selezionare. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) specifica l'indice in base zero dell'ultimo elemento da selezionare.
+La [**parola chiave LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) specifica l'indice in base zero del primo elemento da selezionare. HiWORD [**specifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) l'indice in base zero dell'ultimo elemento da selezionare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se si verifica un errore, il valore restituito è LB \_ Err.
+Se si verifica un errore, il valore restituito è LB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo messaggio solo con caselle di riepilogo a selezione multipla.
+Usare questo messaggio solo con caselle di riepilogo a selezione multipla.
 
-Questo messaggio può selezionare un intervallo solo entro i primi 65.536 elementi.
+Questo messaggio può selezionare un intervallo solo all'interno dei primi 65.536 elementi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Questo messaggio può selezionare un intervallo solo entro i primi 65.536 elemen
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Questo messaggio può selezionare un intervallo solo entro i primi 65.536 elemen
 **Riferimento**
 </dt> <dt>
 
-[**\_SELITEMRANGEEX lb**](lb-selitemrangeex.md)
+[**LB \_ SELITEMRANGEEX**](lb-selitemrangeex.md)
 </dt> <dt>
 
-[**\_SETSEL lb**](lb-setsel.md)
+[**LB \_ SETSEL**](lb-setsel.md)
 </dt> <dt>
 
 **Altre risorse**

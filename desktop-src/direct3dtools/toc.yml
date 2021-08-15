@@ -3,17 +3,17 @@
   items:
     - name: Debug di app DirectX in modalità remota
       href: debugging-directx-apps-remotely.md
-    - name: Strumento Effect-Compiler
+    - name: Effect-Compiler tool
       href: fxc.md
       items:
         - name: Sintassi
           href: dx-graphics-tools-fxc-syntax.md
         - name: Compilazione offline
           href: dx-graphics-tools-fxc-using.md
-    - name: Guida di riferimento all'interfaccia di acquisizione diagnostica Direct3D
+    - name: Informazioni di riferimento su Direct3D Diagnostics Capture Interface
       href: vspixengine-reference.md
       items:
-        - name: Interfacce dell'interfaccia di acquisizione della diagnostica Direct3D
+        - name: Interfacce dell'interfaccia di acquisizione diagnostica Direct3D
           href: vspixengine-interfaces.md
           items:
             - name: INewFramesCallback
@@ -216,7 +216,7 @@
             - name: IRunActionCallback
               href: irunactioncallback.md
               items:
-                - name: Oggetto RequestResult
+                - name: RequestResult
                   href: irunactioncallback-requestresult-iunknown-ptr.md
             - name: IRunActionRequest
               href: irunactionrequest.md
@@ -246,7 +246,7 @@
             - name: IMeshCallback
               href: imeshcallback.md
               items:
-                - name: ResultCallback
+                - name: Oggetto ResultCallback
                   href: imeshcallback-resultcallback-dword-byte-arr.md
             - name: IMeshRequest
               href: imeshrequest.md
@@ -256,7 +256,7 @@
             - name: IFrameEventsCallback
               href: iframeeventscallback.md
               items:
-                - name: ResultCallback
+                - name: Oggetto ResultCallback
                   href: iframeeventscallback-resultcallback-dword-dword-dword-dword-variant-arr.md
                 - name: GetSupportedEventColumns
                   href: iframeeventscallback-getsupportedeventcolumns-dword-eventcolumnid-arr-bstr-arr.md
@@ -277,7 +277,7 @@
             - name: IObjectTableCallback
               href: iobjecttablecallback.md
               items:
-                - name: ResultCallback
+                - name: Oggetto ResultCallback
                   href: iobjecttablecallback-resultcallback-dword-dword-dword-variant-arr.md
                 - name: GetSupportedColumns
                   href: iobjecttablecallback-getsupportedcolumns-dword-objecttablecolumnid-arr-bstr-arr.md
@@ -291,7 +291,7 @@
             - name: IFileIOCallback
               href: ifileiocallback.md
               items:
-                - name: ResultCallback
+                - name: Oggetto ResultCallback
                   href: ifileiocallback-resultcallback-dword.md
             - name: IPixEngine2
               href: ipixengine2.md
@@ -311,7 +311,7 @@
                   href: ipixengine-setparentprocess-dword.md
                 - name: OpenFile
                   href: ipixengine-openfile-bstr-bstr-inewframescallback-ptr-ifileiocallback-ptr-lcid.md
-                - name: RunExperiment
+                - name: Esecuzione (RunExperiment)
                   href: ipixengine-runexperiment-experiment-irunexperimentcallback-ptr-inewframescallback-ptr-ifileiocallback-ptr-dword-experimenttrigger-arr.md
                 - name: SaveFile
                   href: ipixengine-savefile-bstr-ifileiocallback-ptr.md
@@ -336,7 +336,7 @@
             - name: IPixEngine3
               href: ipixengine3.md
               items:
-                - name: SetupResources
+                - name: Risorse di installazione
                   href: ipixengine3-setupresources-resourcepair-arr-uint.md
             - name: IPixEngine4
               href: ipixengine4.md
@@ -348,7 +348,7 @@
               items:
                 - name: UpdateComplete
                   href: iupdateobjectcallback-updatecomplete-uint-hresult.md
-            - name: IUpdateObject
+            - name: Oggetto IUpdateObject
               href: iupdateobject.md
               items:
                 - name: UpdateObject
@@ -437,7 +437,7 @@
               href: ipixenginesingleton.md
             - name: IPixEngineWin10
               href: ipixenginewin10.md
-        - name: Strutture dell'interfaccia di acquisizione della diagnostica Direct3D
+        - name: Strutture dell'interfaccia di acquisizione diagnostica Direct3D
           href: vspixengine-structures.md
           items:
             - name: ResourcePair
@@ -496,7 +496,7 @@
               href: pixenginetexturesliceindex.md
             - name: PixEngineHistogram
               href: pixenginehistogram.md
-        - name: Enumerazioni dell'interfaccia di acquisizione della diagnostica Direct3D
+        - name: Enumerazioni dell'interfaccia di acquisizione diagnostica Direct3D
           href: vspixengine-enumerations.md
           items:
             - name: Xml_Resource_Ids
@@ -527,7 +527,7 @@
               href: pipelinestages.md
             - name: CHECKSUMALGORITHM
               href: checksumalgorithm.md
-            - name: EVENTTYPE
+            - name: Eventtype
               href: eventtype.md
             - name: DESCRIPTOR_HEAP_HEADER_COLUMNS
               href: descriptor-heap-header-columns.md

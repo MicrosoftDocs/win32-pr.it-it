@@ -1,11 +1,11 @@
 ---
-title: attributo ms-COM-UserPartitionSetLink
-description: Collegamento utilizzato per associare un utente a un separatore COM+.
+title: Attributo ms-COM-UserPartitionSetLink
+description: Collegamento usato per associare un utente a un partitionSet COM+.
 ms.assetid: 7abd1274-0352-45c1-91e9-27ed8687208c
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-COM-UserPartitionSetLink
-- msCOM-schema AD attributo UserPartitionSetLink
+- Schema AD dell'attributo msCOM-UserPartitionSetLink
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da547f257bf3a4fa472c6b48ccbcb47a1f2b984
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 97ab8caf90a7b689b5822fb768d3478ca26944478c3429372f0797f89fb3df27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961090"
 ---
-# <a name="ms-com-userpartitionsetlink-attribute"></a>attributo ms-COM-UserPartitionSetLink
+# <a name="ms-com-userpartitionsetlink-attribute"></a>Attributo ms-COM-UserPartitionSetLink
 
-Collegamento utilizzato per associare un utente a un separatore COM+.
+Collegamento usato per associare un utente a un partitionSet COM+.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | MS-COM-UserPartitionSetLink             |
-| LDAP-Display-Name | msCOM-UserPartitionSetLink              |
+| CN                | ms-COM-UserPartitionSetLink             |
+| Ldap-Display-Name | msCOM-UserPartitionSetLink              |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1426                 |
-| System-ID-GUID    | 8e940c8a-e477-4367-b08d-ff2ff942dcd7    |
+| System-Id-Guid    | 8e940c8a-e477-4367-b08d-ff2ff942dcd7    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -57,15 +57,15 @@ Collegamento utilizzato per associare un utente a un separatore COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| È a valore singolo       | Vero                                                                                             |
+| A valore singolo       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
 | System-Flags           | 0x00000010                                                                                       |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Collegamento utilizzato per associare un utente a un separatore COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| È a valore singolo       | Vero                                                                                             |
+| A valore singolo       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
 | System-Flags           | 0x00000010                                                                                       |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Collegamento utilizzato per associare un utente a un separatore COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| È a valore singolo       | Vero                                                                                             |
+| A valore singolo       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
 | System-Flags           | 0x00000010                                                                                       |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Collegamento utilizzato per associare un utente a un separatore COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| È a valore singolo       | Vero                                                                                             |
+| Is-Single-Valued       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
 | System-Flags           | 0x00000010                                                                                       |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Collegamento utilizzato per associare un utente a un separatore COM+.
 | ID collegamento                | 1048                                                                                             |
 | MAPI-Id                | \-                                                                                               |
 | System-Only            | Falso                                                                                            |
-| È a valore singolo       | Vero                                                                                             |
+| Is-Single-Valued       | Vero                                                                                             |
 | Indicizzato             | Falso                                                                                            |
 | Nel catalogo globale      | Falso                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                     |
 | Range-Lower            | \-                                                                                               |
 | Range-Upper            | \-                                                                                               |
 | Search-Flags           | 0x00000000                                                                                       |
 | System-Flags           | 0x00000010                                                                                       |
-| Classi utilizzate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

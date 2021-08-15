@@ -4,12 +4,12 @@ ms.assetid: 56a4889c-5dcf-416f-b46e-5c48277d5636
 title: Internet Explorer 8 - Protezione esecuzione dati/NX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb0208cc20e78c30f42b09af78460990be20b002
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8b1f969aa2e934f36142995150b6484dad2fa5067f6cbb5ab3a947055af375ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998891"
 ---
 # <a name="internet-explorer-8---data-execution-protectionnx"></a>Internet Explorer 8 - Protezione esecuzione dati/NX
 
@@ -28,7 +28,7 @@ ms.locfileid: "108088249"
 
 
 > [!Note]  
-> Internet Explorer 8 abiliterà la protezione DEP/NX quando viene eseguita in un sistema operativo con il Service Pack più recente. Windows XP SP3, Windows Server 2003 SP3, Windows Vista SP1 e Windows Server 2008 dispongono di DEP/NX abilitati per impostazione predefinita in Internet Explorer 8.
+> Internet Explorer 8 abiliterà la protezione DEP/NX quando viene eseguita in un sistema operativo con il Service Pack più recente. Windows XP SP3, Windows Server 2003 SP3, Windows Vista SP1 e Windows Server 2008 hanno tutti DEP/NX abilitati per impostazione predefinita in Internet Explorer 8.
 
  
 
@@ -48,7 +48,7 @@ DEP/NX è una funzionalità di sicurezza che consente di attenuare le vulnerabil
 
 ## <a name="manifestation-of-impact"></a>Manifestazione di impatto
 
-Il kernel di Windows monitora l'esecuzione di un programma. Se il kernel rileva un tentativo di eseguire codice da una pagina di memoria non contrassegnata come eseguibile, il kernel arresta l'esecuzione del programma, causando un "arresto anomalo". Si tratta di una misura di sicurezza per garantire che non sia possibile sfruttare le vulnerabilità correlate alla memoria ,ad esempio gli overflow del buffer, nell'applicazione per eseguire codice arbitrario.
+Il Windows kernel monitora l'esecuzione di un programma. Se il kernel rileva un tentativo di eseguire codice da una pagina di memoria non contrassegnata come eseguibile, il kernel interrompe l'esecuzione del programma, causando un "arresto anomalo". Si tratta di una misura di sicurezza per garantire che le vulnerabilità correlate alla memoria(ad esempio, gli overflow del buffer) nell'applicazione non siano sfruttate per eseguire codice arbitrario.
 
 ## <a name="end-user-mitigation"></a>End-User mitigazione
 
@@ -66,7 +66,7 @@ Compilare applicazioni usando le versioni più recenti dei framework compatibili
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Test di compatibilità, prestazioni, affidabilità e usabilità
 
--   Testare il codice con DEP/NX abilitato usando la versione Internet Explorer versione più recente in Windows Vista SP1 o versione successiva.
+-   Testare il codice con DEP/NX abilitato usando la versione più recente Internet Explorer versione Windows Vista SP1 o versione successiva.
 -   Testare con Internet Explorer 7 in Windows Vista dopo aver abilitato l'opzione DEP/NX. Per abilitare DEP/NX per Internet Explorer 7, eseguire Internet Explorer come amministratore, quindi impostare la casella di controllo appropriata nella scheda Strumenti > Opzioni Internet > Avanzate.
 -   Eseguire lo Internet Explorer Compatibility Test Tool (IECTT), fornito con Application Compatibility Toolkit (ACT) per individuare eventuali problemi potenziali dovuti alle modifiche DEP/NX.
 
@@ -75,7 +75,7 @@ Compilare applicazioni usando le versioni più recenti dei framework compatibili
 -   [Internet Explorer 8 Security Part I: DEP/NX Memory Protection](/archive/blogs/ie/)
 -   [Protezione esecuzione programmi](../memory/data-execution-prevention.md)
 -   [Nuove API NX aggiunte a Windows Vista SP1, Windows XP SP3 e Windows Server 2008 R2](/archive/blogs/michael_howard/)
--   [Application Compatibility Toolkit Download](/windows-hardware/get-started/adk-install)
+-   [Compatibilità delle applicazioni Toolkit download](/windows-hardware/get-started/adk-install)
 -   [Problemi noti Internet Explorer funzionalità di sicurezza](/previous-versions/windows/it-pro/windows-7/cc722079(v=ws.10))
 
  

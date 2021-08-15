@@ -1,22 +1,22 @@
 ---
-description: VM Java
+description: Macchina virtuale Java
 ms.assetid: 911B2CEC-A787-48C8-A520-3B283E36FD7A
-title: VM Java
+title: Macchina virtuale Java
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f598c6b6bcafd517d11e65b0e74d17c5b1ad16
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8ec998b0aaf07a90d25d81574944c648f43f2bbd395fd8fc9b3fe31b7fcd52a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104522970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955770"
 ---
-# <a name="java-vm"></a>VM Java
+# <a name="java-vm"></a>Macchina virtuale Java
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**DownloadJavaEX**](downloadjavaex.md)
--   [**\_attendibilità Java**](/windows/desktop/api/Capi/ns-capi-java_trust)
+-   [**ATTENDIBILITÀ \_ JAVA**](/windows/desktop/api/Capi/ns-capi-java_trust)
 -   [**NotifyBrowserShutdown**](notifybrowsershutdown.md)
 -   [**ShowJavaConsole**](showjavaconsole.md)
 

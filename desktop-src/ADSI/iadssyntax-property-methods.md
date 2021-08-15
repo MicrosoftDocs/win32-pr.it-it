@@ -1,10 +1,10 @@
 ---
-title: Metodi di proprietà IADsSyntax (IADs. h)
-description: I metodi di proprietà dell'interfaccia IADsSyntax ottengono o impostano le proprietà elencate nella tabella seguente. Per ulteriori informazioni sui metodi di proprietà, vedere Metodi della proprietà di interfaccia.
+title: Metodi della proprietà IADsSyntax (Iads.h)
+description: I metodi di proprietà dell'interfaccia IADsSyntax ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni sui metodi di proprietà, vedere Metodi delle proprietà di interfaccia.
 ms.assetid: a216a55d-63eb-4fdf-a67f-8d4b5eb74262
 ms.tgt_platform: multiple
 keywords:
-- Metodi di proprietà IADsSyntax ADSI
+- Metodi della proprietà IADsSyntax ADSI
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a41c84efb4f48171913156823e18a301236290
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c193bba78bfe215d37bdfdedf5d45bd73f1a85606b3dab6e5a3c233cece8db18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104517656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961900"
 ---
-# <a name="iadssyntax-property-methods"></a>Metodi di proprietà IADsSyntax
+# <a name="iadssyntax-property-methods"></a>Metodi della proprietà IADsSyntax
 
-I metodi di proprietà dell'interfaccia [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax) ottengono o impostano le proprietà elencate nella tabella seguente. Per ulteriori informazioni sui metodi di proprietà, vedere [metodi della proprietà di interfaccia](interface-property-methods.md).
+I metodi di proprietà [**dell'interfaccia IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax) ottengono o impostano le proprietà elencate nella tabella seguente. Per altre informazioni sui metodi di proprietà, vedere [Metodi delle proprietà di interfaccia.](interface-property-methods.md)
 
 ## <a name="properties"></a>Proprietà
 
@@ -36,29 +36,29 @@ I metodi di proprietà dell'interfaccia [**IADsSyntax**](/windows/desktop/api/Ia
 **OleAutoDataType**
 </dt> <dd> <dl>
 
-Recupera e imposta un oggetto **Long** che contiene il valore della costante **VT \_ xxx** per il tipo di dati di automazione che rappresenta questa sintassi.
+Recupera e imposta un **long** che contiene il valore della costante **VT \_ xxx** per il tipo di dati di Automazione che rappresenta questa sintassi.
 
-Active Directory supporta le seguenti costanti **VT \_ xxx** per il tipo di dati di automazione che rappresenta questa sintassi:
+Active Directory supporta le costanti **VT \_ xxx seguenti** per il tipo di dati di Automazione che rappresenta questa sintassi:
 
--   **VT \_ bool bool**
--   **VT \_** BSTR BSTR
--   **VT \_ bstrt bstrt**
--   **VT \_ valuta CY**
--   **VT \_ Data data**
--   **VT \_** **null** vuoto
--   **VT \_ ERRORE** non valido
--   **VT \_ I2** Short
--   **VT \_ I4** Long
--   **VT \_ R4** Real
--   **VT \_ Doppio R8**
--   **VT \_ BYTE UI1**
+-   **VT \_ BOOL** BOOL
+-   **VT \_ BSTR** BSTR
+-   **VT \_ BSTRT** BSTRT
+-   **VT \_ VALUTA CY**
+-   **VT \_ DATE** Date
+-   **VT \_ EMPTY** **NULL**
+-   **VT \_ ERROR** Non valido
+-   **VT \_ I2 breve**
+-   **VT \_ I4** long
+-   **VT \_ R4** reale
+-   **VT \_ R8** double
+-   **VT \_ UI1** BYTE
 
 <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> <dt>
 
-Tipo di dati di scripting: **Long**
+Tipo di dati di scripting: **LONG**
 </dt> <dt>
 
 
@@ -80,7 +80,7 @@ HRESULT put_OleAutoDataType(
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice di byte senza segno, la **\_** \| **\_ matrice VT** Ui1 VT potrebbe significare che il provider ha eseguito il mapping di una sintassi di cui non è possibile eseguire il mapping a un tipo virtuale di automazione.
+Una matrice di byte senza segno, **VT \_ UI1** \| **VT \_ ARRAY,** può indicare che il provider ha eseguito il mapping di una sintassi di cui non è possibile eseguire il mapping a un tipo virtuale di Automazione.
 
 ## <a name="examples"></a>Esempio
 
@@ -202,7 +202,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Intestazione<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsSyntax è definito come C8F93DD2-4AE0-11CF-9E73-00AA004A5691<br/>           |
 
@@ -215,7 +215,7 @@ Cleanup:
 [**IADsClass**](/windows/desktop/api/Iads/nn-iads-iadsclass)
 </dt> <dt>
 
-[**IADsProperty**](/windows/desktop/api/Iads/nn-iads-iadsproperty)
+[**Proprietà IADs**](/windows/desktop/api/Iads/nn-iads-iadsproperty)
 </dt> <dt>
 
 [**IADsSyntax**](/windows/desktop/api/Iads/nn-iads-iadssyntax)

@@ -4,12 +4,12 @@ ms.assetid: 13c94e17-760a-4656-886c-cb5fd4acf474
 title: System.Volume.IsMappedDrive
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb838d49514be686028e39d00cef49889e2b80e4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cc9377d49c84f934bd777a7273c8865230aaa06632d4253999181cffc9026238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095358"
 ---
 # <a name="systemvolumeismappeddrive"></a>System.Volume.IsMappedDrive
 

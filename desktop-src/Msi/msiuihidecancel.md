@@ -1,19 +1,19 @@
 ---
-description: Questa proprietà Windows Installer indica quando il livello dell'interfaccia utente interna è stato impostato per nascondere il pulsante Annulla.
+description: Questa Windows installer indica quando il livello di interfaccia utente interno è stato impostato per nascondere il pulsante Annulla.
 ms.assetid: 0e842bee-32c2-41ae-97f3-bc8b34960a44
-title: Proprietà MsiUIHideCancel
+title: MsiUIHideCancel - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a25a940921dd4b0d91155765ee6768ec0d6d2bb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6da3c0888ea760e7e8627710b061112d350f94af569697b7ad0616d1dbacbbf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943989"
 ---
-# <a name="msiuihidecancel-property"></a>Proprietà MsiUIHideCancel
+# <a name="msiuihidecancel-property"></a>MsiUIHideCancel - proprietà
 
-Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 quando il livello dell'interfaccia utente interna è stato impostato in modo da includere INSTALLUILEVEL \_ HIDECANCEL con la funzione [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md)dell'oggetto del [**programma di installazione**](installer-object.md) o tramite opzioni della [riga di comando](command-line-options.md).
+Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 quando il livello di interfaccia utente interno è stato impostato in modo da includere INSTALLUILEVEL HIDECANCEL con la funzione \_ [](command-line-options.md) [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) o la proprietà [UILevel](installer-uilevel.md)dell'oggetto [**Installer**](installer-object.md) o tramite le opzioni della riga di comando .
 
 ## <a name="requirements"></a>Requisiti
 
@@ -21,7 +21,7 @@ Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 qua
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer 3,0 o versioni successive in Windows Server 2003 o Windows XP. Vedere i [requisiti di Run-Time Windows Installer](windows-installer-portal.md) per informazioni sul Service Pack minimo di Windows richiesto da una versione Windows Installer.<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva Windows Server 2003 o Windows XP. Per informazioni Windows service pack minimo richiesto da una versione Windows Windows [Installer,](windows-installer-portal.md) vedere l'Windows installer Run-Time requisiti minimi.<br/> |
 
 
 
@@ -32,7 +32,7 @@ Il programma di installazione imposta la proprietà **MsiUIHideCancel** su 1 qua
 [Proprietà](properties.md)
 </dt> <dt>
 
-[Non supportato in Windows Installer 2,0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
+[Non supportato in Windows Installer 2.0 e versioni precedenti](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

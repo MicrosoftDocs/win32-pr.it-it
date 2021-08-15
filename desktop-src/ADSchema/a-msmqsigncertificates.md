@@ -1,10 +1,10 @@
 ---
 title: Attributo MSMQ-Sign-Certificates
-description: Questo attributo contiene un numero di certificati. Un utente può generare un certificato per ogni computer. Per ogni certificato viene anche mantenuto un digest.
+description: Questo attributo contiene una serie di certificati. Un utente può generare un certificato per computer. Per ogni certificato viene anche conservata una digest.
 ms.assetid: 70e182c7-3544-43d7-b27a-6e8d03bd2d47
 ms.tgt_platform: multiple
 keywords:
-- Attributo MSMQ-Sign-Certificates-schema AD
+- Schema AD dell'attributo MSMQ-Sign-Certificates
 - Schema AD dell'attributo mSMQSignCertificates
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd7e81cf145ac249b78e0a3e20be657df68b4af
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89ee82a5a2bf64acc315dfb535ca6897261ef0cb26f5e249a8c8593cc492b53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081745"
 ---
 # <a name="msmq-sign-certificates-attribute"></a>Attributo MSMQ-Sign-Certificates
 
-Questo attributo contiene un numero di certificati. Un utente può generare un certificato per ogni computer. Per ogni certificato viene anche mantenuto un digest.
+Questo attributo contiene una serie di certificati. Un utente può generare un certificato per computer. Per ogni certificato viene anche conservata una digest.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
 | CN                | MSMQ-Sign-Certificates                                                                 |
-| LDAP-Display-Name | mSMQSignCertificates                                                                   |
-| Dimensione              | Il tipo di attributo è un BLOB, le dimensioni non sono limitate e i dati vengono mantenuti nel formato personalizzato. |
-| Privilegio aggiornamento  | \-                                                                                     |
+| Ldap-Display-Name | mSMQSignCertificates                                                                   |
+| Dimensione              | Il tipo di attributo è un BLOB, le dimensioni non sono limitate e i dati vengono mantenuti nel proprio formato. |
+| Aggiorna privilegio  | \-                                                                                     |
 | Frequenza di aggiornamento  | \-                                                                                     |
 | Attribute-Id      | 1.2.840.113556.1.4.947                                                                 |
-| System-ID-GUID    | 9a0dc33b-c100-11d1-bbc5-0080c76670c0                                                   |
+| System-Id-Guid    | 9a0dc33b-c100-11d1-nette5-0080c76670c0                                                   |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                                  |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene un numero di certificati. Un utente può generare un c
 | ID collegamento                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| È a valore singolo       | Vero                                                                                          |
+| Is-Single-Valued       | Vero                                                                                          |
 | Indicizzato             | Falso                                                                                         |
 | Nel catalogo globale      | Vero                                                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | \-                                                                                            |
 | Range-Upper            | \-                                                                                            |
 | Search-Flags           | 0x00000000                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classi utilizzate in        | [**MSMQ-migrated-utente**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Utente**](c-user.md)<br/> |
 
 
 

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: acb5bcfa589139e2c69e75124253f9d9a7b53a87
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8ba7d9e26a9741f80caed84d2a4ee4198eae05736aa8dee91019452cc3345ddf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693121"
 ---
 # <a name="locationdispcivicaddressreportfactorystatus-property"></a>LocationDisp.CivicAddressReportFactory.Status - proprietà
 
-\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare l'API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
+\[Il modello a oggetti dell'API Location è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. Per accedere invece alla posizione da un sito Web, usare [l'API di georilevazione W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). Per accedere alla posizione da un'applicazione desktop, usare il [**Windows. API Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation)\]
 
 Stato del report corrente.
 
@@ -64,7 +64,7 @@ Per un esempio di come usare questa proprietà, vedere [Listening for Civic Addr
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows 7 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                  |
 
 

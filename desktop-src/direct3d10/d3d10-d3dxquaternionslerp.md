@@ -1,5 +1,5 @@
 ---
-description: "Funzione D3DXQuaternionSlerp (D3DX10Math.h): interpola tra due quaternioni usando l'interpolazione lineare sferica."
+description: "Funzione D3DXQuaternionSlerp (D3DX10Math.h): interpola tra due quaternioni, usando l'interpolazione lineare sferica."
 ms.assetid: 487e1df1-bf20-49cb-ad14-61fcf1300904
 title: Funzione D3DXQuaternionSlerp (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 04cd3d82e4ca4e3f3357ab0114b57602f7e8a543
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: eca33eeb67f0c527efe7d0db8b8f17fe901d29dcbe3f2ef3b493463e01d34661
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990971"
 ---
 # <a name="d3dxquaternionslerp-function-d3dx10mathh"></a>Funzione D3DXQuaternionSlerp (D3DX10Math.h)
 
@@ -75,7 +75,7 @@ Puntatore a una struttura D3DXQUATERNION di origine.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parametro che indica la distanza da interpolare tra i quaternioni.
+Parametro che indica la distanza di interpolazione tra i quaternioni.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Parametro che indica la distanza da interpolare tra i quaternioni.
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntatore a una struttura D3DXQUATERNION che è il risultato dell'interpolazione.
+Puntatore a una struttura D3DXQUATERNION che rappresenta il risultato dell'interpolazione.
 
 ## <a name="remarks"></a>Commenti
 

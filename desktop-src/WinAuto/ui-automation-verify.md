@@ -1,41 +1,41 @@
 ---
-title: Verifica automazione interfaccia utente (verifica UIA)
-description: Verifica di automazione interfaccia utente (UIA Verify) è un Framework di test per test manuali e automatizzati dell'implementazione di un'applicazione o di un controllo dell'automazione interfaccia utente Microsoft.
+title: Automazione interfaccia utente verifica (verifica dell'interfaccia utente)
+description: Automazione interfaccia utente Verify (UIA Verify) è un framework di test per il test manuale e automatizzato dell'implementazione di Microsoft Automazione interfaccia utente di un controllo o di un'applicazione.
 ms.assetid: C66AF411-2746-4695-A893-1552B3ED1066
 keywords:
 - Strumento di verifica dell'automazione interfaccia utente
-- Verifica di UIA
-- Implementazione di automazione interfaccia utente, test
-- test di automazione interfaccia utente
-- Strumenti di test di UIA
-- Strumenti di test di automazione interfaccia utente
+- Verifica dell'interfaccia utente
+- Automazione interfaccia utente, test
+- test Automazione interfaccia utente
+- Strumenti di test dell'interfaccia utente
+- Automazione interfaccia utente strumenti di test
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b794e5d191c07a9c0db602ebac0f908bbdf960bf
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 00f8c97d6522e353445ededff47a9a7cf123998b94f1323f1df59b7a380ac1d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104398660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052389"
 ---
-# <a name="accessibility-tools---ui-automation-verify-uia-verify"></a>Strumenti di accessibilità-verifica automazione interfaccia utente (verifica UIA)
+# <a name="accessibility-tools---ui-automation-verify-uia-verify"></a>Strumenti di accessibilità - Verifica Automazione interfaccia utente (verifica dell'interfaccia utente)
 
-Verifica di **automazione interfaccia utente (UIA Verify)** è un Framework di test per test manuali e automatizzati dell'implementazione di un'applicazione o di un controllo dell'automazione interfaccia utente Microsoft. La maggior parte delle funzionalità del Framework di testing deriva da una DLL denominata WUIATestLibrary.dll. Questa DLL contiene il codice per il test delle funzionalità specifiche di automazione interfaccia utente e supporta anche la registrazione dei risultati del test. È possibile integrare l'applicazione nel codice di test ed eseguire verifiche regolari e automatizzate dei test o degli scenari di automazione dell'interfaccia utente.
+**Automazione interfaccia utente Verify (UIA Verify)** è un framework di test per il test manuale e automatizzato dell'implementazione di Microsoft Automazione interfaccia utente di un controllo o di un'applicazione. La maggior parte delle funzionalità del framework di test proviene da una DLL denominata WUIATestLibrary.dll. Questa DLL contiene il codice per il test di Automazione interfaccia utente funzionalità specifiche e supporta anche la registrazione dei risultati del test. È possibile integrare l'applicazione nel codice di test ed eseguire normali test automatizzati o controlli spot Automazione interfaccia utente scenari.
 
-La **Verifica di UIA** viene installata con Windows Software Development Kit (SDK). Si trova nella \\ cartella bin \\ < *versione* > \\ <  > \\ della piattaforma UIAVerify del percorso di installazione SDK (VisualUIAVerifyNative.exe).
+**UiA Verify** viene installato con Windows Software Development Kit (SDK). Si trova nella cartella UIAVerify della piattaforma della versione bin del percorso di installazione \\ \\ <  > \\ <  > \\ dell'SDK (VisualUIAVerifyNative.exe).
 
-Il metodo di **Verifica** dell'interfaccia utente è costituito da un'API denominata libreria di test di automazione interfaccia utente e da un'interfaccia GUI denominata **Verifica di automazione interfaccia utente**. Questi argomenti sono descritti negli argomenti seguenti.
+**UiA Verify** è costituito da un'API denominata Automazione interfaccia utente Test Library e da un'interfaccia gui denominata Visual **Automazione interfaccia utente Verify**. Queste informazioni sono descritte negli argomenti seguenti.
 
 > [!NOTE]
-> La **Verifica di automazione interfaccia utente** è uno strumento legacy. È invece consigliabile usare [informazioni dettagliate sull'accessibilità](https://accessibilityinsights.io/) .
+> **Automazione interfaccia utente Verify** è uno strumento legacy. In alternativa, è [consigliabile Insights](https://accessibilityinsights.io/) accessibilità.
 
 ## <a name="requirements"></a>Requisiti
 
-Automazione interfaccia utente deve essere presente nel sistema. Per ulteriori informazioni, vedere la sezione "requisiti" di [automazione interfaccia utente](entry-uiauto-win32.md).
+Automazione interfaccia utente deve essere presente nel sistema. Per altre informazioni, vedere la sezione "Requisiti" di [Automazione interfaccia utente](entry-uiauto-win32.md).
 
-La **Verifica di UIA** viene installata come parte del set complessivo di strumenti nel Windows SDK, non viene distribuita come download separato. Il Windows SDK include tutti gli strumenti correlati all'accessibilità descritti in questa sezione. [Ottenere il Windows SDK.](https://developer.microsoft.com/) È anche disponibile un archivio di download dell'SDK collegato da tale pagina, se è necessaria una versione precedente.
+**UiA Verify** viene installato come parte del set complessivo di strumenti in Windows SDK, non viene distribuito come download separato. L Windows SDK include tutti gli strumenti correlati all'accessibilità documentati in questa sezione. [Ottenere l Windows SDK.](https://developer.microsoft.com/) È anche disponibile un archivio di download dell'SDK collegato da tale pagina, se è necessaria una versione precedente.
 
-Per eseguire la **Verifica di UIA** come strumento visivo, trovare VisualUIAVerifyNative.exe nella \\ cartella bin \\ < *Platform* > \\ UIAVerify ed eseguirlo (in genere non è necessario eseguirlo come amministratore). Per altre informazioni, vedere [Visual UI Automation Verify](visual-ui-automation-verify.md). Per usare le librerie, vedere [libreria di test di automazione interfaccia utente](ui-automation-test-library.md).
+Per eseguire **UIA Verify** come strumento visivo, trovare VisualUIAVerifyNative.exe nella cartella \\ \\ <  > \\ UIAVerify della piattaforma bin ed eseguirlo (in genere non è necessario eseguire come amministratore). Per altre informazioni, vedere [Visual Automazione interfaccia utente Verify](visual-ui-automation-verify.md). Per usare le librerie, vedere Automazione interfaccia utente [Test Library](ui-automation-test-library.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -53,9 +53,9 @@ Per eseguire la **Verifica di UIA** come strumento visivo, trovare VisualUIAVeri
 [Verifica dell'accessibilità dell'interfaccia utente](ui-accessibility-checker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

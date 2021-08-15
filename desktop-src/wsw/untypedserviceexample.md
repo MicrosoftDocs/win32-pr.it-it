@@ -1,29 +1,29 @@
 ---
 title: UnTypedServiceExample
-description: In questo esempio viene illustrato come implementare un servizio non tipizzato con il modello di servizio. Il modello di servizio in questo caso fornisce l'infrastruttura della piastra calda.
+description: In questo esempio viene illustrato come implementare un servizio non tipiato con il modello di servizio. Il modello di servizio in questo caso fornisce l'infrastruttura boiler piano.
 ms.assetid: 4235554e-19a8-4df7-97a5-2f7544a3c830
 keywords:
-- UnTypedServiceExample native-servizi Web
+- UnTypedServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c69b5a70c6ed7ea00450092a6b34362426aaab38
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b4c202c2fac54413294a7802d75b780128d3e7f2dc2916f67308a4c608e9a713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083105"
 ---
 # <a name="untypedserviceexample"></a>UnTypedServiceExample
 
-In questo esempio viene illustrato come implementare un servizio non tipizzato con il modello di servizio. Il modello di servizio in questo caso fornisce l'infrastruttura della piastra calda.
+In questo esempio viene illustrato come implementare un servizio non tipiato con il modello di servizio. Il modello di servizio in questo caso fornisce l'infrastruttura boiler piano.
 
--   [UnTypedService. cpp](#untypedservicecpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [UnTypedService.cpp](#untypedservicecpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="untypedservicecpp"></a>UnTypedService. cpp
+## <a name="untypedservicecpp"></a>UnTypedService.cpp
 
 
 ```C++
@@ -360,7 +360,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -504,9 +504,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

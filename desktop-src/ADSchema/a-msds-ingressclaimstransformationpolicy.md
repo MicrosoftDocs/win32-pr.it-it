@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-ingress-Claims-Transformation-Policy
-description: Si tratta di un collegamento a un oggetto Criteri di trasformazione delle attestazioni per le attestazioni in ingresso (attestazioni che accedono a questa foresta) dal dominio trusted.
+title: Attributo ms-DS-Ingress-Claims-Transformation-Policy
+description: Si tratta di un collegamento a un oggetto criteri di trasformazione delle attestazioni per le attestazioni in ingresso (attestazioni che entrano in questa foresta) dal dominio trusted.
 ms.assetid: 67f87782-85ed-41bb-a60d-f6c11fcda80e
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-ingress-Claims-Transformation-schema AD dell'attributo Policy
-- attributo msDS-IngressClaimsTransformationPolicy-schema AD
+- Schema AD dell'attributo ms-DS-Ingress-Claims-Transformation-Policy
+- Schema AD dell'attributo msDS-IngressClaimsTransformationPolicy
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e50e3c187a4cb3b2a465257b408a1f5603c756ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 52d631e2f342302f8089a43a329ac3982cf7874b46ab0f60d3e4399855f573e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960750"
 ---
-# <a name="ms-ds-ingress-claims-transformation-policy-attribute"></a>attributo ms-DS-ingress-Claims-Transformation-Policy
+# <a name="ms-ds-ingress-claims-transformation-policy-attribute"></a>Attributo ms-DS-Ingress-Claims-Transformation-Policy
 
-Si tratta di un collegamento a un oggetto Criteri di trasformazione delle attestazioni per le attestazioni in ingresso (attestazioni che accedono a questa foresta) dal dominio trusted. Questa operazione è applicabile solo per un trust tra foreste in uscita o bidirezionale. Se questo collegamento è assente, vengono eliminate tutte le attestazioni in ingresso.
+Si tratta di un collegamento a un oggetto criteri di trasformazione delle attestazioni per le attestazioni in ingresso (attestazioni che entrano in questa foresta) dal dominio trusted. Questo è applicabile solo per un trust tra foreste in uscita o bidirezionale. Se questo collegamento è assente, tutte le attestazioni in ingresso vengono eliminate.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------------|
-| CN                | ms-DS-ingress-Claims-Transformation-Policy |
-| LDAP-Display-Name | msDS-IngressClaimsTransformationPolicy     |
+| CN                | ms-DS-Ingress-Claims-Transformation-Policy |
+| Ldap-Display-Name | msDS-IngressClaimsTransformationPolicy     |
 | Dimensione              | \-                                         |
-| Privilegio aggiornamento  | \-                                         |
+| Aggiorna privilegio  | \-                                         |
 | Frequenza di aggiornamento  | \-                                         |
 | Attribute-Id      | 1.2.840.113556.1.4.2191                    |
-| System-ID-GUID    | 86284c08-0c6e-1540-8b15-75147d23d20d       |
+| System-Id-Guid    | 86284c08-0c6e-1540-8b15-75147d23d20d       |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md)    |
 
 
@@ -53,15 +53,15 @@ Si tratta di un collegamento a un oggetto Criteri di trasformazione delle attest
 | ID collegamento                | 2190                                                 |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| È a valore singolo       | Vero                                                 |
+| A valore singolo       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Falso                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000010                                           |
-| Classi utilizzate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
+| Classi usate in        | [**Dominio trusted**](c-trusteddomain.md)<br/> |
 
 
 

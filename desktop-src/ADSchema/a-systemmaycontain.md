@@ -1,10 +1,10 @@
 ---
-title: Attributo System-may-contain
+title: Attributo System-May-Contain
 description: Elenco di attributi facoltativi per una classe. L'elenco di attributi può essere modificato solo dal sistema.
 ms.assetid: b2fbeb64-d147-4c1a-a609-4f16327609ce
 ms.tgt_platform: multiple
 keywords:
-- "Sistema: può contenere l'attributo AD schema"
+- Schema AD dell'attributo System-May-Contain
 - Schema AD dell'attributo systemMayContain
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c03730e9904cbaa6ee5954662556fba261c51cd4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62b537cc08c156e16304a49cc8782d7ca8fd54341a0b24f235a895a765a45671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081375"
 ---
-# <a name="system-may-contain-attribute"></a>Attributo System-may-contain
+# <a name="system-may-contain-attribute"></a>Attributo System-May-Contain
 
 Elenco di attributi facoltativi per una classe. L'elenco di attributi può essere modificato solo dal sistema.
 
@@ -29,13 +29,13 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 
 | Voce | Valore |
 |-------------------|------------------------------------------------------------------------------|
-| CN                | Sistema-può contenere                                                           |
-| LDAP-Display-Name | systemMayContain                                                             |
+| CN                | System-May-Contain                                                           |
+| Ldap-Display-Name | systemMayContain                                                             |
 | Dimensione              | \-                                                                           |
-| Privilegio aggiornamento  | Amministratore schema                                                         |
-| Frequenza di aggiornamento  | Quando la classe viene creata o viene aggiunto un nuovo attributo facoltativo alla classe. |
+| Privilegio di aggiornamento  | Amministratore dello schema                                                         |
+| Frequenza di aggiornamento  | Quando la classe viene creata o viene aggiunto un nuovo attributo facoltativo alla classe . |
 | Attribute-Id      | 1.2.840.113556.1.4.196                                                       |
-| System-ID-GUID    | bf967a44-0de6-11d0-a285-00aa003049e2                                         |
+| System-Id-Guid    | bf967a44-0de6-11d0-a285-00aa003049e2                                         |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md)              |
 
 
@@ -44,7 +44,7 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Elenco di attributi facoltativi per una classe. L'elenco di attributi può esser
 | ID collegamento                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Vero                                             |
-| È a valore singolo       | Falso                                            |
+| Is-Single-Valued       | Falso                                            |
 | Indicizzato             | Falso                                            |
 | Nel catalogo globale      | Falso                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classi utilizzate in        | [**Classe-schema**](c-classschema.md)<br/> |
+| Classi usate in        | [**Schema di classe**](c-classschema.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetGuidValue recupera un valore GUID (tipo VT \_ CLSID) specificato da una chiave.
+description: Il metodo GetGuidValue recupera un valore GUID (CLSID VT \_ di tipo) specificato da una chiave.
 ms.assetid: 1cfa75e8-2c3b-4893-954e-dae25a6b8220
-title: 'Metodo IPortableDeviceValues:: GetGuidValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::GetGuidValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 362672daad835a2e843edeaf6dc517884c25f1ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6389b426aca52f20b082ed4730778432bdbe56c4a6a1e0a4495060f13dbb5d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963680"
 ---
-# <a name="iportabledevicevaluesgetguidvalue-method"></a>Metodo IPortableDeviceValues:: GetGuidValue
+# <a name="iportabledevicevaluesgetguidvalue-method"></a>Metodo IPortableDeviceValues::GetGuidValue
 
-Il metodo **GetGuidValue** recupera un valore **GUID** (tipo VT \_ CLSID) specificato da una chiave.
+Il **metodo GetGuidValue** recupera un **valore GUID** (CLSID VT di \_ tipo) specificato da una chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ HRESULT GetGuidValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
 Chiave **REFPROPERTYKEY** che specifica l'elemento da recuperare.
 
 </dd> <dt>
 
-*pValue* \[ out\]
+*pValue* \[ Cambio\]
 </dt> <dd>
 
 Puntatore al valore **GUID** recuperato.
@@ -57,15 +57,15 @@ Puntatore al valore **GUID** recuperato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                                                            | Descrizione                                                          |
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                     |
-| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata da *Key* non è un tipo **GUID** .<br/>   |
-| <dl> <dt>**HRESULT \_ da \_ Win32 (errore \_ non \_ trovato)**</dt> </dl> | La proprietà specificata dalla *chiave* non è presente nella raccolta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                   | Il metodo è riuscito.<br/>                                     |
+| <dl> <dt>**DISP \_ E \_ TYPEMISMATCH**</dt> </dl>                   | La proprietà specificata dalla *chiave* non è di **tipo GUID.**<br/>   |
+| <dl> <dt>**HRESULT \_ DA \_ WIN32(ERRORE \_ NON \_ TROVATO)**</dt> </dl> | La proprietà specificata da *key* non è presente nella raccolta.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [recupero di metodi di servizio supportati](retrieving-supported-methods.md).
+Per un esempio di come usare questo metodo, vedere [Recupero di metodi di servizio supportati.](retrieving-supported-methods.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -81,8 +81,8 @@ Per un esempio di come usare questo metodo, vedere [recupero di metodi di serviz
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Per un esempio di come usare questo metodo, vedere [recupero di metodi di serviz
 [**IPortableDeviceValues::SetGuidValue**](iportabledevicevalues-setguidvalue.md)
 </dt> <dt>
 
-[Recupero di metodi di servizio supportati](retrieving-supported-methods.md)
+[Recupero dei metodi di servizio supportati](retrieving-supported-methods.md)
 </dt> <dt>
 
 [Recupero delle funzionalità di rendering supportate da un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)

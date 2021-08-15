@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo CreateBitmap.
 ms.assetid: 5647521b-231d-4819-97ab-4dfb5f796211
-title: Funzione IWICImagingFactory_CreateBitmap_Proxy
+title: IWICImagingFactory_CreateBitmap_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 56684de0280ae27bf2ec1e900bd718faec4733fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 978946b5c22d8e4cb3427dbf27e5bb745efde259b48811a2b2a82e3721108184
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965200"
 ---
-# <a name="iwicimagingfactory_createbitmap_proxy-function"></a>IWICImagingFactory \_ CreateBitmap- \_ funzione proxy
+# <a name="iwicimagingfactory_createbitmap_proxy-function"></a>Funzione proxy IWICImagingFactory \_ CreateBitmap \_
 
-Funzione proxy per il metodo [**CreateBitmap**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmap) .
+Funzione proxy per il [**metodo CreateBitmap.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmap)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,32 +45,32 @@ HRESULT IWICImagingFactory_CreateBitmap_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ in\]
+*pFactory* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_uiWidth * \[ in\]
+*uiWidth* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Larghezza della nuova bitmap.
 
 </dd> <dt>
 
-*uiHeight* \[ in\]
+*uiHeight* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Altezza della nuova bitmap.
 
 </dd> <dt>
 
-*PixelFormat* \[ in\]
+*pixelFormat* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -79,7 +79,7 @@ Formato pixel della nuova bitmap.
 
 </dd> <dt>
 
-*opzione* \[ in\]
+*opzione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapCreateCacheOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapcreatecacheoption)**
@@ -88,7 +88,7 @@ Opzioni di creazione della cache della nuova bitmap.
 
 </dd> <dt>
 
-*ppIBitmap* \[ out\]
+*ppIBitmap* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\*\***
@@ -101,7 +101,7 @@ Puntatore che riceve un puntatore alla nuova bitmap.
 
 Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -111,9 +111,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo app desktop di Vista \[\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

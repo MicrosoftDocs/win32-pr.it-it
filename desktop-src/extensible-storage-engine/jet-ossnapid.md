@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b0ca1bb5e2e5a80c9166574708efc7875ed95446
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2dac261072ac9a5ce5a845ff046628cf348cd5815c34e16fccb575c2c0da3095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765077"
 ---
 # <a name="jet_ossnapid"></a>JET_OSSNAPID
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_ossnapid"></a>JET_OSSNAPID
 
-Il tipo di dati **JET_OSSNAPID** contiene un handle per uno snapshot del database.
+Il **JET_OSSNAPID** di dati contiene un handle per uno snapshot del database.
 
 ```cpp
     typedef JET_API_PTR JET_OSSNAPID;
@@ -39,9 +39,9 @@ Il tipo di dati **JET_OSSNAPID** contiene un handle per uno snapshot del databas
 
 JET_OSSNAPID
 
-Handle per uno snapshot del database. Questo handle viene usato negli elementi dell'API JET interessati dal backup dello snapshot.
+Handle per uno snapshot del database. Questo handle viene usato negli elementi dell'API JET coinvolti nel backup dello snapshot.
 
-È possibile utilizzare **null** per indicare un handle non valido.
+**È** possibile usare NULL per indicare un handle non valido.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Handle per uno snapshot del database. Questo handle viene usato negli elementi d
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

@@ -2,7 +2,7 @@
 description: Aggiunge un file MOF all'elenco di file compilati durante il ripristino del repository.
 ms.assetid: 8901c04e-f8c1-45b0-b69d-e2ebc948f088
 ms.tgt_platform: multiple
-title: pragma autocover
+title: pragma autorecover
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,22 +13,22 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9bb1cfca44e0bc5437d05d721ffcd57203e5aa9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc36191482731e77d0f82c4e3734350da2f6ed2fbd3faad7b2972dca4e0e6bd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103968188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992701"
 ---
-# <a name="pragma-autorecover"></a>pragma autocover
+# <a name="pragma-autorecover"></a>pragma autorecover
 
-Il comando **pragma autocover** preprocessore consente di aggiungere un file MOF all'elenco di file compilati durante il ripristino del repository. L'elenco dei file MOF di **autocover** è archiviato in questa chiave del registro di sistema:
+Il **comando del preprocessore pragma autorecover** aggiunge un file MOF all'elenco di file compilati durante il ripristino del repository. L'elenco dei file MOF **di salvataggio automatico** è archiviato in questa chiave del Registro di sistema:
 
-**HKEY \_ SOFTWARE del \_ computer locale** \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **autocover file MOF**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **autorecover mofs**
 
-WMI controlla l'integrità del repository WMI quando il sistema operativo avvia WMI. Se il repository è danneggiato, WMI ricompila automaticamente il repository e ricompila tutti i file MOF elencati in questa chiave nel registro di sistema.
+WMI controlla l'integrità del repository WMI quando il sistema operativo avvia WMI. Se il repository è danneggiato, WMI ricompila automaticamente il repository e ricompila tutti i file MOF elencati in questa chiave nel Registro di sistema.
 
-Di seguito viene descritta la sintassi per il comando pragma autocover:
+Di seguito viene descritta la sintassi per il comando pragma autorecover:
 
 
 ```mof
@@ -37,17 +37,17 @@ Di seguito viene descritta la sintassi per il comando pragma autocover:
 
 
 
-Quando si usa questo comando, è tuttavia necessario osservare le restrizioni seguenti:
+Tuttavia, è necessario osservare le restrizioni seguenti quando si usa questo comando:
 
--   WMI non è in grado di ripristinare i file MOF presenti in un computer remoto.
+-   WMI non è in grado di ripristinare i file MOF che si trovano in un computer remoto.
 
-    Pertanto, i file MOF elencati in questa chiave del registro di sistema devono trovarsi nel computer locale.
+    Pertanto, i file MOF elencati in questa chiave del Registro di sistema devono risiedere nel computer locale.
 
 -   Non è possibile specificare le opzioni della riga di comando utilizzate dal compilatore MOF quando WMI recupera un file MOF.
 
-    Pertanto, è necessario includere i comandi [pragma](-pragma.md) nel file MOF che rendono inutili le opzioni della riga di comando. Nell'esempio seguente viene descritta un'opzione della riga di comando comune che WMI non utilizza quando si recupera un file MOF da questa chiave del registro di sistema: **mofcomp-N:root \\ test mymof. mof**
+    Pertanto, è necessario includere nel file MOF comandi [pragma](-pragma.md) che rendono non necessarie le opzioni della riga di comando. L'esempio seguente descrive un'opzione della riga di comando comune che WMI non usa durante il ripristino di un file MOF da questa chiave del Registro di sistema: **mofcomp -N:Root \\ Test mymof.mof**
 
-    È tuttavia possibile specificare lo spazio dei nomi utilizzando un comando [pragma](-pragma.md) nel file MOF.
+    Tuttavia, è possibile specificare lo spazio dei nomi usando un [comando pragma](-pragma.md) nel file MOF.
 
     ```mof
     #pragma namespace ("\\\\.\\Root\\test")
@@ -70,7 +70,7 @@ Quando si usa questo comando, è tuttavia necessario osservare le restrizioni se
 
 <dl> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Tipo complesso CertSelection
 description: Informazioni sul tipo complesso CertSelection. Questo tipo determina il modo in cui l'utente seleziona un certificato.
 ms.assetid: f5a37258-8ab0-4736-9721-6c2800769c74
 keywords:
-- CertSelection di tipo complesso EAPHost
+- Tipo complesso CertSelection EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ba22df8dca61696f214e495542319168183dd2bf
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 375ea26fddf07f8d775617c0a2167ed02aa8160de8cc5dde49a92f37f57a335e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104339262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984131"
 ---
 # <a name="certselection-complex-type"></a>Tipo complesso CertSelection
 
-Il tipo complesso **CertSelection** determina il modo in cui l'utente seleziona un certificato.
+Il **tipo complesso CertSelection** determina il modo in cui l'utente seleziona un certificato.
 
 ``` syntax
 <xs:complexType name="CertSelection">
@@ -42,7 +42,7 @@ Il tipo complesso **CertSelection** determina il modo in cui l'utente seleziona 
 
 | Elemento                                                                                                     | Tipo    | Descrizione                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SimpleCertSelection**](eaptlsconnectionpropertiesv1schema-simplecertselection-certselection-element.md) | boolean | È TRUE per impostazione predefinita. Se [**SimpleCertSelection**](eaptlsconnectionpropertiesv1schema-simplecertselection-certselection-element.md) è true, EAP-TLS esegue una semplice ricerca di certificati senza elenchi a discesa per la selezione dei certificati. Se **SimpleCertSelection** è false, EAP-TLS illustra all'utente il certificato appropriato da selezionare.<br/> |
+| [**SimpleCertSelection**](eaptlsconnectionpropertiesv1schema-simplecertselection-certselection-element.md) | boolean | È TRUE per impostazione predefinita. Se [**SimpleCertSelection è**](eaptlsconnectionpropertiesv1schema-simplecertselection-certselection-element.md) TRUE, EAP-TLS esegue una semplice ricerca di certificati senza elenchi a discesa per la selezione dei certificati. Se **SimpleCertSelection** è FALSE, EAP-TLS indica all'utente il certificato appropriato da selezionare.<br/> |
 
 
 
@@ -50,10 +50,10 @@ Il tipo complesso **CertSelection** determina il modo in cui l'utente seleziona 
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -61,7 +61,7 @@ Il tipo complesso **CertSelection** determina il modo in cui l'utente seleziona 
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)

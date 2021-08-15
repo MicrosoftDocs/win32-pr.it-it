@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_MENUCOMMAND (winuser. h)
+title: WM_MENUCOMMAND messaggio (Winuser.h)
 description: Inviato quando l'utente effettua una selezione da un menu.
 ms.assetid: 1ed702ef-8d32-4d4c-a68a-ffd199112ced
 keywords:
-- Menu del messaggio WM_MENUCOMMAND e altre risorse
+- WM_MENUCOMMAND menu e altre risorse del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13288c49327b536db6ebef8a41526facd3fb2d51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0d97f629b5d4b0c245606b36efea9ebcb230c4c9fd14d837e18949880a7e7e65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971810"
 ---
-# <a name="wm_menucommand-message"></a>Messaggio dell'MENUCOMMAND di WM \_
+# <a name="wm_menucommand-message"></a>Messaggio \_ MENUCOMMAND WM
 
 Inviato quando l'utente effettua una selezione da un menu.
 
@@ -52,9 +52,9 @@ Handle per il menu per l'elemento selezionato.
 
 ## <a name="remarks"></a>Commenti
 
-Il messaggio **WM \_ MENUCOMMAND** fornisce un handle per il menu in modo da poter accedere ai dati del menu nella struttura [**MENUINFO**](/windows/win32/api/winuser/ns-winuser-menuinfo) e fornisce anche l'indice dell'elemento selezionato, che corrisponde in genere alle applicazioni necessarie. Al contrario, il messaggio del [**\_ comando WM**](wm-command.md) fornisce l'identificatore della voce di menu.
+Il **messaggio \_ WM MENUCOMMAND** fornisce un handle al menu in modo da poter accedere ai dati di menu nella struttura [**MENUINFO**](/windows/win32/api/winuser/ns-winuser-menuinfo) e fornisce anche l'indice dell'elemento selezionato, che in genere è quello necessario per le applicazioni. Al contrario, il [**messaggio WM \_ COMMAND**](wm-command.md) visualizza l'identificatore della voce di menu.
 
-Il **messaggio WM \_ MENUCOMMAND** viene inviato solo per i menu definiti con il flag **\_ NOTIFYBYPOS di MNS** impostato nel membro **dwStyle** della struttura [**MENUINFO**](/windows/win32/api/winuser/ns-winuser-menuinfo) .
+Il **messaggio \_ WM MENUCOMMAND** viene inviato solo per i menu definiti con il flag **MNS \_ NOTIFYBYPOS** impostato nel membro **dwStyle** della [**struttura MENUINFO.**](/windows/win32/api/winuser/ns-winuser-menuinfo)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -64,7 +64,7 @@ Il **messaggio WM \_ MENUCOMMAND** viene inviato solo per i menu definiti con il
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Il **messaggio WM \_ MENUCOMMAND** viene inviato solo per i menu definiti con il
 
 <dl> <dt>
 
-[Panoramica sui menu](menus.md)
+[Cenni preliminari sui menu](menus.md)
 </dt> </dl>
 
  

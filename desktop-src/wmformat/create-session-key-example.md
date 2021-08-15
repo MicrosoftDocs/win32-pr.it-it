@@ -1,42 +1,42 @@
 ---
-title: Esempio di creazione della chiave della sessione
-description: Esempio di creazione della chiave della sessione
+title: Esempio di creazione di una chiave di sessione
+description: Esempio di creazione di una chiave di sessione
 ms.assetid: 4347502b-3900-4306-b58c-16d151200e6c
 keywords:
-- Windows Media Format SDK, chiavi di sessione
-- Windows Media Format SDK, chiavi simmetriche
-- Windows Media Format SDK, esempio di codice
+- Windows MEDIA Format SDK, chiavi di sessione
+- Windows Media Format SDK, chiavi di contenuto
+- Windows Media Format SDK, codice di esempio
 - Windows Media Format SDK, esempi di codice
-- Digital Rights Management (DRM), chiavi di sessione
-- DRM (Digital Rights Management), chiavi di sessione
-- Digital Rights Management (DRM), chiavi di contenuto
-- DRM (Digital Rights Management), chiavi simmetriche
-- Digital Rights Management (DRM), codice di esempio
-- DRM (Digital Rights Management), codice di esempio
-- Digital Rights Management (DRM), esempi di codice
-- DRM (Digital Rights Management), esempi di codice
+- digital rights management (DRM), chiavi di sessione
+- DRM (digital rights management), chiavi di sessione
+- digital rights management (DRM), chiavi di contenuto
+- DRM (digital rights management),chiavi del contenuto
+- digital rights management (DRM), codice di esempio
+- DRM (digital rights management),codice di esempio
+- digital rights management (DRM), esempi di codice
+- DRM (digital rights management),esempi di codice
 - API estese del client DRM, chiavi di sessione
 - API estese client, chiavi di sessione
-- API estese del client DRM, chiavi simmetriche
-- API estese client, chiavi simmetriche
+- API estese del client DRM, chiavi di contenuto
+- API estese client, chiavi di contenuto
 - API estese del client DRM, codice di esempio
 - API estese client, codice di esempio
 - API estese del client DRM, esempi di codice
 - API estese client, esempi di codice
 - chiavi di sessione
-- chiavi simmetriche
+- chiavi di contenuto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b757f5d67df0aea1dd70ee45ad2d1b0732040be2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cef4a9c673b0aef24e010bff0f9a84beaf6321a81fe4ac8a8a9935c126983eb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964140"
 ---
-# <a name="create-session-key-example"></a>Esempio di creazione della chiave della sessione
+# <a name="create-session-key-example"></a>Esempio di creazione di una chiave di sessione
 
-La chiave di sessione viene usata per proteggere la chiave simmetrica. Il codice seguente illustra come creare una chiave di sessione, ma non i dettagli della generazione di chiavi casuali.
+La chiave di sessione viene usata per proteggere la chiave contenuto. Il codice seguente illustra come creare una chiave di sessione, ma lascia i dettagli della generazione casuale della chiave.
 
 
 ```C++
@@ -101,9 +101,9 @@ EXIT:
 [**Esempi di importazione DRM**](drm-import-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

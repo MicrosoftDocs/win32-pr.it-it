@@ -1,19 +1,19 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. CameraManufacturer.
+description: Criteri dei metadati della foto per la proprietà System.Photo.CameraManufacturer.
 ms.assetid: 6710161c-4835-4385-9d4c-566acc000925
-title: Criteri per i metadati delle foto di System. Photo. CameraManufacturer
+title: Criteri dei metadati delle foto di System.Photo.CameraManufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd1d2765b6c787b7d7ad421300f1c3492669830b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37744420babedf6b398cdf3ab9007c3895c09d33b9254221b5ba4760ab917a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087087"
 ---
-# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. CameraManufacturer
+# <a name="systemphotocameramanufacturer-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.Photo.CameraManufacturer
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md) .
+Criteri dei metadati della foto per [la proprietà System.Photo.CameraManufacturer.](../properties/props-system-photo-cameramanufacturer.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,19 +37,19 @@ Stringa.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                   | Formato disco |
 |-------|------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 271} | ascii       |
-| 2     | /XMP/TIFF: make         | unicode     |
-| 3     | /XMP/TIFF: make         | unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | unicode     |
+| 3     | /xmp/tiff:make         | unicode     |
 
 
 
@@ -61,23 +61,23 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                   | Formato disco |
 |-------|------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 271} | ascii       |
-| 2     | /XMP/TIFF: make         | unicode     |
-| 3     | /XMP/TIFF: make         | unicode     |
+| 1     | /app1/ifd/{ushort=271} | ascii       |
+| 2     | /xmp/tiff:Make         | unicode     |
+| 3     | /xmp/tiff:make         | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                   |
 |-------|------------------------|
-| 1     | /App1/IFD/{ushort = 271} |
-| 2     | /XMP/TIFF: make         |
-| 3     | /XMP/TIFF: make         |
+| 1     | /app1/ifd/{ushort=271} |
+| 2     | /xmp/tiff:Make         |
+| 3     | /xmp/tiff:make         |
 
 
 
@@ -85,15 +85,15 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policy"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso               | Formato disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{ushort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: make | unicode     |
-| 3     | /IFD/XMP/TIFF: make | unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | unicode     |
+| 3     | /ifd/xmp/tiff:make | unicode     |
 
 
 
@@ -105,23 +105,23 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso               | Formato disco |
 |-------|--------------------|-------------|
-| 1     | /IFD/{ushort = 271}  | ascii       |
-| 2     | /IFD/XMP/TIFF: make | unicode     |
-| 3     | /IFD/XMP/TIFF: make | unicode     |
+| 1     | /ifd/{ushort=271}  | ascii       |
+| 2     | /ifd/xmp/tiff:Make | unicode     |
+| 3     | /ifd/xmp/tiff:make | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso               |
 |-------|--------------------|
-| 1     | /IFD/{ushort = 271}  |
-| 2     | /IFD/XMP/TIFF: make |
-| 3     | /IFD/XMP/TIFF: make |
+| 1     | /ifd/{ushort=271}  |
+| 2     | /ifd/xmp/tiff:Make |
+| 3     | /ifd/xmp/tiff:make |
 
 
 
@@ -133,7 +133,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
+[System.Photo.CameraManufacturer](../properties/props-system-photo-cameramanufacturer.md)
 </dt> </dl>
 
  

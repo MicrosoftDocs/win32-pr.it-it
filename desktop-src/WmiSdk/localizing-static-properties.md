@@ -1,28 +1,28 @@
 ---
-description: È possibile localizzare le proprietà statiche usando le mappe di valori parziali.
+description: È possibile localizzare le proprietà statiche usando mappe di valori parziali.
 ms.assetid: 67e91454-c065-4ab2-a373-245c9392c71c
 ms.tgt_platform: multiple
 title: Localizzazione di proprietà statiche
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecaba200b7880991d349c6e0c0196c88ffa54b11
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 4c51999c68a05e8d7b8cf3fd8c5218bc171931303d86a50c04f32c5d80efb308
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104356164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050729"
 ---
 # <a name="localizing-static-properties"></a>Localizzazione di proprietà statiche
 
-È possibile localizzare le proprietà statiche usando le mappe di valori parziali.
+È possibile localizzare le proprietà statiche usando mappe di valori parziali.
 
-Nella procedura riportata di seguito viene descritto il modo in cui le proprietà statiche possono essere localizzate mediante mapping di valori parziali con espressioni regolari
+La procedura seguente descrive come è possibile localizzare le proprietà statiche usando mappe di valori parziali con espressioni regolari.
 
-**Per usare le mappe del valore per localizzare le proprietà statiche**
+**Per usare i mapping dei valori per localizzare le proprietà statiche**
 
-1.  Creare un file MOF Master (Mastervm. MOF).
+1.  Creare un file MOF master (Mastervm.mof).
 
-    L'esempio di codice seguente può essere utilizzato per creare un file MOF Master (Mastervm. MOF).
+    L'esempio di codice seguente può essere usato per creare un file MOF master (Mastervm.mof).
 
     ```syntax
     [Locale(0x409)]
@@ -36,17 +36,17 @@ Nella procedura riportata di seguito viene descritto il modo in cui le propriet�
     };
     ```
 
-2.  Creare le versioni indipendente dalla lingua e dalla lingua del file MOF.
+2.  Creare le versioni indipendenti dalla lingua e specifiche della lingua del file MOF.
 
-    Digitare il comando seguente al prompt dei comandi per creare le versioni del file MOF indipendenti dalla lingua e dal linguaggio.
+    Digitare il comando seguente al prompt dei comandi per creare le versioni indipendenti dalla lingua e specifiche della lingua del file MOF.
 
     ```syntax
     mofcomp -MOF:LnVm.mof -MFL:LsVm.mfl -Amendment:MS_409 MasterVm.mof
     ```
 
-    Il compilatore MOF genera i file MOF specifici del linguaggio e della lingua, LnVm. mof e LsVm. mfl. I valori della lingua inglese (Stati Uniti) per la proprietà [numbers](numbers.md) vengono inseriti nel file con estensione MFL per lo spazio dei nomi American English.
+    Il compilatore MOF genera i file MOF specifici del linguaggio e indipendenti dal linguaggio, LnVm.mof e LsVm.mfl. I valori dell'inglese americano per [la proprietà Numbers](numbers.md) vengono inseriti nel file con estensione mfl per lo spazio dei nomi dell'inglese americano.
 
-    Nell'esempio di codice seguente viene illustrato il contenuto del file LsVm. mfl.
+    Nell'esempio di codice seguente viene illustrato il contenuto del file LsVm.mfl.
 
     ```syntax
     #pragma namespace("\\\\.\\root\\default")
@@ -90,12 +90,12 @@ Nella procedura riportata di seguito viene descritto il modo in cui le propriet�
     };
     ```
 
-Il risultato finale è che il nome visualizzato e il valore della proprietà [numbers](numbers.md) dipendono dalle impostazioni locali dell'utente connesso. Se l'utente specifica le impostazioni locali che non sono state specificate, i dati di qualificatore predefiniti provengono dallo \_ spazio dei nomi inglese (ms 409).
+Il risultato finale è che sia il nome visualizzato che il valore della proprietà [Numbers](numbers.md) dipendono dalle impostazioni locali dell'utente connesso. Se l'utente specifica impostazioni locali non fornite, i dati del qualificatore predefinito provengono dallo spazio dei nomi inglese (ms \_ 409).
 
-L'implicazione di questa progettazione è che ogni valore di stringa viene utilizzato come identificatore di ricerca, che non può essere localizzato. Quando si definisce questo schema, è necessario assicurarsi che il valore inserito dal provider sia indipendente dalle impostazioni locali.
+L'implicazione di questa progettazione è che ogni valore stringa viene usato come identificatore di ricerca, che non può essere localizzato. Quando si definisce questo schema, è necessario assicurarsi che il valore specificato dal provider sia indipendente dalle impostazioni locali.
 
 > [!Note]  
-> In WMI non è attualmente disponibile il supporto in fase di esecuzione per il mapping di valori a stringhe definite da qualificatori. L'interpretazione della sintassi suggerita è responsabilità dell'applicazione.
+> WMI attualmente non fornisce il supporto in fase di esecuzione per il mapping dei valori alle stringhe definite dai qualificatori. L'interpretazione della sintassi suggerita è responsabilità dell'applicazione.
 
  
 

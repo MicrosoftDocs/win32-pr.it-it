@@ -1,17 +1,17 @@
 ---
 description: Specifica il tipo MIME di un flusso di byte.
 ms.assetid: bcf86ece-2673-4ed8-98fd-cd0e2154b4a8
-title: Attributo MF_BYTESTREAM_CONTENT_TYPE (Mfobjects. h)
+title: MF_BYTESTREAM_CONTENT_TYPE attributo (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d7413fa6fd2ce74530432d60976e3c7ebf702af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 901f3d9d2b46e503bcf8f66127eb94383710a7c1055c04fccb97f6d935d463b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974010"
 ---
-# <a name="mf_bytestream_content_type-attribute"></a>\_Attributo del \_ tipo di contenuto MF BYTESTREAM \_
+# <a name="mf_bytestream_content_type-attribute"></a>Attributo MF \_ BYTESTREAM \_ CONTENT \_ TYPE
 
 Specifica il tipo MIME di un flusso di byte.
 
@@ -21,9 +21,9 @@ Stringa di caratteri wide
 
 ## <a name="remarks"></a>Commenti
 
-Per ottenere il valore dell'attributo, eseguire una query sull'oggetto flusso di byte per l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Per ottenere il valore dell'attributo, eseguire una query sull'oggetto flusso di byte per [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                                                    |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                                              |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                                                    |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                                              |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -41,16 +41,16 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del flusso di byte](byte-stream-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: sestring**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
 [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream)

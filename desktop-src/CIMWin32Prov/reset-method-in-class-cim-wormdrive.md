@@ -1,8 +1,8 @@
 ---
-description: Il metodo Reset della classe CIM \_ WORMDrive richiede la reimpostazione del dispositivo logico.
+description: Il metodo Reset della classe CIM \_ WORMDrive richiede una reimpostazione del dispositivo logico.
 ms.assetid: ece4a618-6748-45a7-90fe-34eccf0f59d7
 ms.tgt_platform: multiple
-title: Reimposta il metodo della classe CIM_WORMDrive
+title: Metodo Reset della classe CIM_WORMDrive
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4fa05b36a1d5cb1d21c4fe53ecebc1fa87bc3991
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 888da32c36f93fa373cf09a9990c8cdab4e069210f119ef3a6b32be0e15e9002
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700491"
 ---
 # <a name="reset-method-of-the-cim_wormdrive-class"></a>Metodo Reset della classe CIM \_ WORMDrive
 
-Il metodo **Reset** della classe CIM \_ [**WORMDrive**](cim-wormdrive.md) richiede la reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**\_ LogicalDevice CIM**](cim-logicaldevice.md).
+Il **metodo Reset** della classe CIM \_ [**WORMDrive**](cim-wormdrive.md) richiede una reimpostazione del dispositivo logico. Questo metodo viene ereditato da [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -51,7 +51,7 @@ Restituisce 0 (zero) se la richiesta è stata eseguita correttamente, 1 (uno) se
 
 Questo metodo non è attualmente implementato da WMI. Per usare questo metodo, è necessario implementarlo nel proprio provider.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,7 +62,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -71,10 +71,10 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[\_Wormdrive CIM](reset-method-in-class-cim-wormdrive.md)
+[CIM \_ WORMDrive](reset-method-in-class-cim-wormdrive.md)
 </dt> <dt>
 
-[**\_Wormdrive CIM**](cim-wormdrive.md)
+[**CIM \_ WORMDrive**](cim-wormdrive.md)
 </dt> </dl>
 
  

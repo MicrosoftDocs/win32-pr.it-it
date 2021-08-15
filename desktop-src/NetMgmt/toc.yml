@@ -17,21 +17,21 @@
               href: directory-service-functions.md
             - name: Funzioni Get
               href: get-functions.md
-            - name: Funzioni di gruppo
+            - name: Funzioni di raggruppamento
               href: group-functions.md
-            - name: Funzioni di gruppo locale
+            - name: Funzioni del gruppo locale
               href: local-group-functions.md
             - name: Funzioni di messaggio
               href: message-functions.md
             - name: Funzioni NetFile
               href: netfile-functions.md
-            - name: Funzioni remote Utility
+            - name: Funzioni remote di utilità
               href: remote-utility-functions.md
             - name: Funzioni di pianificazione
               href: schedule-functions.md
             - name: Funzioni server
               href: server-functions.md
-            - name: Funzioni di trasporto per server e workstation
+            - name: Funzioni di trasporto server e workstation
               href: server-and-workstation-transport-functions.md
             - name: Funzioni di sessione
               href: session-functions.md
@@ -41,27 +41,27 @@
               href: use-functions.md
             - name: Funzioni utente
               href: user-functions.md
-            - name: Funzioni modali utente
+            - name: Funzioni modali dell'utente
               href: user-modal-functions.md
             - name: Funzioni utente workstation e workstation
               href: workstation-and-workstation-user-functions.md
         - name: Requisiti di sicurezza delle funzioni di gestione di rete
           href: security-requirements-for-the-network-management-functions.md
           items:
-            - name: Requisiti per le funzioni di gestione della rete nei controller di Dominio di Active Directory
+            - name: Requisiti per le funzioni di gestione di rete nei controller Dominio di Active Directory rete
               href: requirements-for-network-management-functions-on-active-directory-domain-controllers.md
-            - name: Requisiti per le funzioni di gestione della rete su server e workstation
+            - name: Requisiti per funzioni di gestione di rete in server e workstation
               href: requirements-for-network-management-functions-on-servers-and-workstations.md
-        - name: Mapping di interfacce ADSI alle funzioni di gestione della rete
+        - name: Mapping delle interfacce ADSI alle funzioni di gestione di rete
           href: mapping-adsi-interfaces-to-the-network-management-functions.md
         - name: Dati di gestione di rete
           href: network-management-data.md
           items:
-            - name: Buffer della funzione di gestione di rete
+            - name: Buffer delle funzioni di gestione di rete
               href: network-management-function-buffers.md
             - name: Lunghezze del buffer della funzione di gestione di rete
               href: network-management-function-buffer-lengths.md
-            - name: Allineamento dati API
+            - name: Allineamento dei dati dell'API
               href: api-data-alignment.md
             - name: Stringhe incorporate
               href: embedded-strings.md
@@ -75,14 +75,14 @@
               href: parameter-error-reporting.md
             - name: Errori di allocazione del buffer RPC
               href: rpc-buffer-allocation-errors.md
-            - name: Campi di informazioni obsolete
+            - name: Campi di informazioni obsoleti
               href: obsolete-information-fields.md
     - name: Uso della gestione della rete
       href: using-network-management.md
       items:
         - name: Ricerca del nome completo di un utente
           href: looking-up-a-users-full-name.md
-        - name: Forzare l'utente a modificare la password di accesso
+        - name: Forzare un utente a modificare la password di accesso
           href: forcing-a-user-to-change-the-logon-password.md
         - name: Modifica degli elementi delle informazioni utente
           href: changing-elements-of-user-information.md
@@ -92,7 +92,7 @@
           href: creating-a-local-group-and-adding-a-user.md
         - name: Ricerca di testo per i numeri di codice di errore
           href: looking-up-text-for-error-code-numbers.md
-    - name: Riferimento alla gestione della rete
+    - name: Informazioni di riferimento sulla gestione della rete
       href: network-management-reference.md
       items:
         - name: Enumerazioni di gestione della rete
@@ -100,18 +100,18 @@
           items:
             - name: DSREG_JOIN_TYPE
               href: /windows/win32/api/lmjoin/ne-lmjoin-dsreg_join_type
-        - name: Funzioni di gestione della rete
+        - name: Funzioni di gestione di rete
           href: network-management-functions.md
           items:
             - name: GetNetScheduleAccountInformation
               href: /windows/desktop/api/AtAcct/nf-atacct-getnetscheduleaccountinformation
-            - name: NetAccessAdd
+            - name: NetAccessAggiungi
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netaccessadd
             - name: NetAccessCheck
               href: /previous-versions/windows/desktop/legacy/aa370291(v=vs.85)
             - name: NetAccessDel
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netaccessdel
-            - name: NetAccessEnum
+            - name: Enumerazione NetAccessEnum
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netaccessenum
             - name: NetAccessGetInfo
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netaccessgetinfo
@@ -123,7 +123,7 @@
               href: /windows/desktop/api/Lmjoin/nf-lmjoin-netaddalternatecomputername
             - name: NetAlertRaise
               href: /windows/desktop/api/Lmalert/nf-lmalert-netalertraise
-            - name: NetAlertRaiseEx non
+            - name: NetAlertRaiseEx
               href: /windows/desktop/api/Lmalert/nf-lmalert-netalertraiseex
             - name: NetApiBufferAllocate
               href: /windows/desktop/api/Lmapibuf/nf-lmapibuf-netapibufferallocate
@@ -189,7 +189,7 @@
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netgroupsetusers
             - name: NetJoinDomain
               href: /windows/desktop/api/Lmjoin/nf-lmjoin-netjoindomain
-            - name: NetLocalGroupAdd
+            - name: NetLocalGroupAggiungi
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netlocalgroupadd
             - name: NetLocalGroupAddMember
               href: /windows/desktop/api/lmaccess/nf-lmaccess-netlocalgroupaddmember
@@ -297,7 +297,7 @@
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netusergetgroups
             - name: NetUserGetInfo
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo
-            - name: Funzione NetUserGetLocalGroups
+            - name: NetUserGetLocalGroups
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netusergetlocalgroups
             - name: NetUserModalsGet
               href: /windows/desktop/api/Lmaccess/nf-lmaccess-netusermodalsget
@@ -331,7 +331,7 @@
               href: /windows/desktop/api/Lmwksta/nf-lmwksta-netwkstausersetinfo
             - name: SetNetScheduleAccountInformation
               href: /windows/desktop/api/AtAcct/nf-atacct-setnetscheduleaccountinformation
-        - name: Strutture di gestione della rete
+        - name: Strutture di gestione di rete
           href: network-management-structures.md
           items:
             - name: ADMIN_OTHER_INFO
@@ -402,7 +402,7 @@
               href: /windows/win32/api/Lmaccess/ns-lmaccess-net_validate_persisted_fields
             - name: NETSETUP_PROVISIONING_PARAMS
               href: /windows/win32/api/Lmjoin/ns-lmjoin-netsetup_provisioning_params
-            - name: Definizioni IDL di aggiunta al dominio offline
+            - name: Definizioni IDL di aggiunta a un dominio offline
               href: ./odj-idl.md
             - name: ODJ_BLOB
               href: ./odj-odj_blob.md
@@ -653,5 +653,5 @@
               href: /windows/desktop/api/Lmalert/nf-lmalert-alert_other_info
             - name: ALERT_VAR_DATA
               href: /windows/desktop/api/Lmalert/nf-lmalert-alert_var_data
-        - name: Codici di errore di gestione di rete
+        - name: Codici di errore di Gestione rete
           href: network-management-error-codes.md

@@ -1,7 +1,7 @@
 ---
-description: Definisce i token di monitoraggio di debug.
+description: Definisce i token di monitoraggio del debug.
 ms.assetid: c0df4c9f-a232-45cf-b543-e95ee84a4a8d
-title: Enumerazione D3DDEBUGMONITORTOKENS (D3D9Types. h)
+title: Enumerazione D3DDEBUGMONITORTOKENS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 82c3ecfa7d197e1ab912dbafe0d26fcb2281e605
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ed64939714c3ee69fb30e56afe23e52e780405287c898e138ee86822f1c5e0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989071"
 ---
 # <a name="d3ddebugmonitortokens-enumeration"></a>Enumerazione D3DDEBUGMONITORTOKENS
 
-Definisce i token di monitoraggio di debug.
+Definisce i token di monitoraggio del debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,30 +41,30 @@ typedef enum D3DDEBUGMONITORTOKENS {
 
 <dl> <dt>
 
-<span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**\_Abilitazione di D3DDMT**
+<span id="D3DDMT_ENABLE"></span><span id="d3ddmt_enable"></span>**D3DDMT \_ ENABLE**
 </dt> <dd>
 
 Abilitare il monitoraggio del debug.
 
 </dd> <dt>
 
-<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**\_Disabilitazione D3DDMT**
+<span id="D3DDMT_DISABLE"></span><span id="d3ddmt_disable"></span>**D3DDMT \_ DISABLE**
 </dt> <dd>
 
-Disabilitare il monitoraggio di debug.
+Disabilitare il monitoraggio del debug.
 
 </dd> <dt>
 
-<span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ Force \_ DWORD**
+<span id="D3DDMT_FORCE_DWORD"></span><span id="d3ddmt_force_dword"></span>**D3DDMT \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Impone la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori permetterebbero che questa enumerazione venga compilata in una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
+Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcuni compilatori consentirebbe a questa enumerazione di compilare a una dimensione diversa da 32 bit. Questo valore non viene utilizzato.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering DEBUGMONITORTOKEN di D3DRS e sono rilevanti solo per le compilazioni di debug.
+I valori in questo tipo enumerato vengono usati dallo stato di rendering DEBUGMONITORTOKEN D3DRS e \_ sono rilevanti solo per le build di debug.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ I valori in questo tipo enumerato vengono usati dallo stato di \_ rendering DEBU
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

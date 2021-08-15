@@ -1,7 +1,7 @@
 ---
-description: Utilizzato dai runtime di Microsoft DirectDraw e Microsoft Direct3D per ottenere informazioni dal driver sullo stato corrente.
+description: Usato dai runtime Microsoft DirectDraw e Microsoft Direct3D per ottenere informazioni dal driver sul relativo stato corrente.
 ms.assetid: a7697e0c-9485-4a9c-b211-67ce07dc3604
-title: Funzione NtGdiD3DGetDriverState (Ntgdi. h)
+title: Funzione NtGdiD3DGetDriverState (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Ntgdi.h
-ms.openlocfilehash: c88f2fde4d848aac5ecae3c60aef77d4c6b783cb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7cbb1291c06d844ebcf056ff288a18ca8bf92e5e211780204787cadc5ae4e00a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956750"
 ---
-# <a name="ntgdid3dgetdriverstate-function"></a>NtGdiD3DGetDriverState (funzione)
+# <a name="ntgdid3dgetdriverstate-function"></a>Funzione NtGdiD3DGetDriverState
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. In alternativa, usare i DirectDraw e Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece DirectDraw e Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
-Utilizzato dai runtime di Microsoft DirectDraw e Microsoft Direct3D per ottenere informazioni dal driver sullo stato corrente.
+Usato dai runtime Microsoft DirectDraw e Microsoft Direct3D per ottenere informazioni dal driver sul relativo stato corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,10 +41,10 @@ DWORD APIENTRY NtGdiD3DGetDriverState(
 
 <dl> <dt>
 
-*pData* \[ in uscita\]
+*pdata* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**DD \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverstatedata) che descrive lo stato del driver.
+Puntatore a [**una struttura \_ DD GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverstatedata) che descrive lo stato del driver.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Puntatore a una struttura [**DD \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddra
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Puntatore a una struttura [**DD \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddra
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Puntatore a una struttura [**DD \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddra
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

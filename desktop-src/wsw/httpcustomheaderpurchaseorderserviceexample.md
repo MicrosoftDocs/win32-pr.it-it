@@ -1,6 +1,6 @@
 ---
 title: HttpCustomHeaderPurchaseOrderServiceExample
-description: Esaminare un esempio C++ dell'API Servizi Web Windows (WWSAPI) di un servizio di ordine di acquisto tramite intestazioni personalizzate HTTP.
+description: Esaminare un Windows esempio C++ dell'API dei servizi Web (WWSAPI) di un servizio di ordine di acquisto su intestazioni personalizzate HTTP.
 ms.assetid: 7a86e0be-6e52-4ad2-bca4-0162a8030cdc
 keywords:
 - HttpCustomHeaderPurchaseOrderServiceExample Native-Web-Services
@@ -8,12 +8,12 @@ keywords:
 - Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93c412b0106a9343695b4a96cd01e54df7ea654d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b2d5e492b333a27d9625e5d5375ea2ef2e199ac331db69eee86424bf8ce8f9b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963310"
 ---
 # <a name="httpcustomheaderpurchaseorderserviceexample"></a>HttpCustomHeaderPurchaseOrderServiceExample
 

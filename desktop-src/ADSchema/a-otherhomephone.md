@@ -1,10 +1,10 @@
 ---
-title: Phone-Home-altro attributo
-description: Elenco di numeri di telefono abitazione alternativi.
+title: Telefono-Home-Other
+description: Elenco di numeri di telefono della casa alternativi.
 ms.assetid: 502e0a9d-301c-4c2e-98c3-8efe75c8b0cf
 ms.tgt_platform: multiple
 keywords:
-- Phone-Home-altro schema AD dell'attributo
+- Telefono-Home-Other attributo AD Schema
 - Schema AD dell'attributo otherHomePhone
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2ed3aa026a1e60bb644ddab81293921ac9b8271
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ecf4037d3ec3f77db0092833973b6b5b72143fec1bb65ba5fd3ab7f3ddf4b1b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960150"
 ---
-# <a name="phone-home-other-attribute"></a>Phone-Home-altro attributo
+# <a name="phone-home-other-attribute"></a>Telefono-Home-Other
 
-Elenco di numeri di telefono abitazione alternativi.
+Elenco di numeri di telefono della casa alternativi.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefono-casa-altro                                                                 |
-| LDAP-Display-Name | otherHomePhone                                                                   |
+| CN                | Telefono-Home-Other                                                                 |
+| Ldap-Display-Name | otherHomePhone                                                                   |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve essere modificato. |
+| Privilegio di aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.2.277                                                           |
-| System-ID-GUID    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |
+| System-Id-Guid    | f0f8ffa2-1191-11d0-a060-00aa006c33ed                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di numeri di telefono abitazione alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x3A2F                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

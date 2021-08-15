@@ -1,11 +1,11 @@
 ---
-title: Phone-cercapersone-altro attributo
-description: Elenco di numeri di cercapersone alternativi.
+title: Telefono-Pager-Other
+description: Elenco di numeri di pager alternativi.
 ms.assetid: 4e01440f-782f-459f-8937-8c75b11fc271
 ms.tgt_platform: multiple
 keywords:
-- Telefono-cercapersone-altro schema AD dell'attributo
-- Schema AD dell'attributo otherPager
+- Telefono schema AD dell'attributo Telefono-Pager-Other
+- Attributo otherPager - Schema AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2826b9b57e4349063abf8ccefd3ef4a69a307e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7e9865e3713d0591715aa4f3c975f3cbdd095192b81916ed27b48763ed418a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104401012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960140"
 ---
-# <a name="phone-pager-other-attribute"></a>Phone-cercapersone-altro attributo
+# <a name="phone-pager-other-attribute"></a>Telefono-Pager-Other
 
-Elenco di numeri di cercapersone alternativi.
+Elenco di numeri di pager alternativi.
 
 
 
 | Voce | Valore |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefono-cercapersone-altro                                                                |
-| LDAP-Display-Name | otherPager                                                                       |
+| CN                | Telefono-Pager-Other                                                                |
+| Ldap-Display-Name | otherPager                                                                       |
 | Dimensione              | \-                                                                               |
-| Privilegio aggiornamento  | Amministratore di dominio o proprietario dell'account.                                           |
-| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve essere modificato. |
+| Aggiorna privilegio  | Amministratore di dominio o proprietario dell'account.                                           |
+| Frequenza di aggiornamento  | Quando viene creato il record dell'utente e ogni volta che il numero di telefono deve cambiare. |
 | Attribute-Id      | 1.2.840.113556.1.2.118                                                           |
-| System-ID-GUID    | f0f8ffa4-1191-11d0-a060-00aa006c33ed                                             |
+| System-Id-Guid    | f0f8ffa4-1191-11d0-a060-00aa006c33ed                                             |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
@@ -58,15 +58,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| A valore singolo       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di numeri di cercapersone alternativi.
 | ID collegamento                | \-                                                                 |
 | MAPI-Id                | 0x8C6E                                                             |
 | System-Only            | Falso                                                              |
-| È a valore singolo       | Falso                                                              |
+| Is-Single-Valued       | Falso                                                              |
 | Indicizzato             | Falso                                                              |
 | Nel catalogo globale      | Falso                                                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classi utilizzate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classi usate in        | [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

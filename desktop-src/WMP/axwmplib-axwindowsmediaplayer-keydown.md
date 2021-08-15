@@ -47,8 +47,8 @@ Il gestore associato a questo evento è di tipo **AxWMPLib. \_ WMPOCXEvents \_ K
 
 | Proprietà    | Descrizione                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| nKeyCode    | System.Int16Specifica quale tasto fisico viene premuto. Per i valori possibili, vedere Osservazioni.<br/>                                                                                                                                                                                                                                                                                    |
-| nShiftState | Campo di bit System.Int16A con i bit meno significativi corrispondenti al tasto MAIUSC (bit 0), al tasto CTRL (bit 1) e al tasto ALT (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. L'argomento shift indica lo stato di queste chiavi. Alcuni, tutti o nessuno dei bit possono essere impostati, a indicare che alcuni, tutti o nessuno dei tasti vengono premuti.<br/> |
+| nKeyCode    | System.Int16Specifica quale tasto fisico viene premuto. Per i valori possibili, vedere La sezione Osservazioni.<br/>                                                                                                                                                                                                                                                                                    |
+| nShiftState | Campo di bit System.Int16A con i bit meno significativi corrispondenti al tasto MAIUSC (bit 0), al tasto CTRL (bit 1) e al tasto ALT (bit 2). Questi bit corrispondono rispettivamente ai valori 1, 2 e 4. L'argomento shift indica lo stato di queste chiavi. È possibile impostare alcuni, tutti o nessuno dei bit, a indicare che vengono premuti alcuni, tutti o nessuno dei tasti.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Valori per le chiavi principali.
 | SPACE                   | 32      |
 | BACKSPACE               | 8       |
 | INVIO                   | 13      |
-| Windows logo, a sinistra  | 91      |
+| Windows del logo, a sinistra  | 91      |
 | Windows del logo, a destra | 92      |
 | Chiave applicazione         | 93      |
 
@@ -84,7 +84,7 @@ Valori per le chiavi principali.
 
  
 
-Valori per le chiavi del tastierino numerico.
+Valori per i tasti di riempimento dei numeri.
 
 
 
@@ -92,12 +92,12 @@ Valori per le chiavi del tastierino numerico.
 |-------------------|--------|
 | 0-9               | 96-105 |
 | BLOC NUM          | 144    |
-| DIVISIONE (/)        | 111    |
+| DIVIDE (/)        | 111    |
 | MULTIPLY ( \* )     | 106    |
-| SUBTRACT (-)      | 109    |
+| SOTTRAZIONE (-)      | 109    |
 | ADD (+)           | 107    |
 | SEPARATOR (INVIO) | 108    |
-| DECIMALE (.)       | 110    |
+| DECIMAL (.)       | 110    |
 
 
 

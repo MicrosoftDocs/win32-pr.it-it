@@ -1,7 +1,7 @@
 ---
-description: Recupera l'ID di classe dell'interfaccia utente fornita dal produttore per questo dispositivo hardware di acquisizione immagini Windows (WIA). Il valore è una rappresentazione in forma di stringa di un GUID.
+description: Recupera l'ID classe dell'interfaccia utente fornita dal produttore per questo Windows hardware WIA (Image Acquisition). Il valore è una rappresentazione di stringa di un GUID.
 ms.assetid: 7a513399-c880-4485-ac62-876ba726aab4
-title: Proprietà DeviceInfo. UIClsid
+title: DeviceInfo.UIClsid - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: ef3b015a55b3f1d249d3cc559feb4b47530e183c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 056e528170a2122812d7f3e624662b238e3e2965985e072a485963b5a7e6d908
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007541"
 ---
-# <a name="deviceinfouiclsid-property"></a>Proprietà DeviceInfo. UIClsid
+# <a name="deviceinfouiclsid-property"></a>DeviceInfo.UIClsid - proprietà
 
-Recupera l'ID di classe dell'interfaccia utente fornita dal produttore per questo dispositivo hardware di acquisizione immagini Windows (WIA). Il valore è una rappresentazione in forma di stringa di un GUID.
+Recupera l'ID classe dell'interfaccia utente fornita dal produttore per questo Windows hardware WIA (Image Acquisition). Il valore è una rappresentazione di stringa di un GUID.
 
 Questa proprietà è di sola lettura.
 
@@ -37,7 +37,7 @@ propVal = DeviceInfo.UIClsid
 
 ## <a name="property-value"></a>Valore proprietà
 
-Stringa per la ricezione dell'ID di classe.
+Stringa per ricevere l'ID classe.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Stringa per la ricezione dell'ID di classe.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

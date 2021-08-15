@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 012ed93015705454efdf5e329d4b385924f1a343
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10932398e022701b76be19c3ea7949ce4cfd45b5a159ae5362e7f0e6a0e427bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979081"
 ---
 # <a name="jet_unicodeindexgeteffectivelocalename-method"></a>JET_UNICODEINDEX. Metodo GetEffectiveLocaleName
 
-Come soluzione alternativa per i sistemi che non dispongono del supporto LCID, viene convertito un numero molto limitato di LCID nei nomi delle impostazioni locali.
+Come soluzione alternativa per i sistemi che non dispongono del supporto LCID, verrà convertito un numero molto limitato di LCID in nomi delle impostazioni locali.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public string GetEffectiveLocaleName()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Nome delle impostazioni locali dello stile BCP-47.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Nome delle impostazioni locali in stile BCP-47.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_UNICODEINDEX](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX classe](./jet-unicodeindex-class.md)
 
-[Membri JET_UNICODEINDEX](./jet-unicodeindex-members.md)
+[JET_UNICODEINDEX membri](./jet-unicodeindex-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

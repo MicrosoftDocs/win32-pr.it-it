@@ -14,19 +14,19 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: de94754004cc42bcc6914d9513588a71a1a593dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b137419394f422dba08a4580d8e126361d97a78b747551e0305bb0a248312177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988680"
 ---
 # <a name="d3dxcompileshaderfromresource-function"></a>Funzione D3DXCompileShaderFromResource
 
 Compilare un file shader.
 
 > [!Note]  
-> Anziché usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando Fxc.exe compilatore da riga di comando o usare l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
+> Anziché usare questa funzione legacy, è consigliabile eseguire la compilazione offline usando Fxc.exe compilatore da riga di comando o l'API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
@@ -95,7 +95,7 @@ Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usar
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore alla funzione del punto di ingresso dello shader da cui ha inizio l'esecuzione.
+Puntatore alla funzione del punto di ingresso dello shader in cui inizia l'esecuzione.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Puntatore alla funzione del punto di ingresso dello shader da cui ha inizio l'es
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore a un profilo shader che determina il set di istruzioni dello shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile.**](d3dxgetpixelshaderprofile.md)
+Puntatore a un profilo shader che determina il set di istruzioni shader. Per un elenco dei profili disponibili, vedere [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) o [**D3DXGetPixelShaderProfile.**](d3dxgetpixelshaderprofile.md)
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Opzioni di compilazione identificate da vari flag. Il compilatore HLSL Direct3D 
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice dello shader compilato, nonché eventuali informazioni incorporate sulla tabella di debug e simboli.
+Restituisce un buffer contenente lo shader creato. Questo buffer contiene il codice shader compilato, nonché le informazioni sulle tabelle di debug e simboli incorporate.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Restituisce un buffer contenente un elenco di errori e avvisi rilevati durante l
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione come a conoscenza di indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
+Restituisce [**un'interfaccia ID3DXConstantTable,**](id3dxconstanttable.md) che può essere usata per accedere alle costanti shader. Questo valore può essere **NULL.** Se si compila l'applicazione come a conoscenza di indirizzi di grandi dimensioni, ovvero si usa l'opzione del linker /LARGEADDRESSAWARE per gestire indirizzi di dimensioni superiori a 2 GB, non è possibile usare questo parametro e impostarlo su **NULL.** È invece necessario usare la [**funzione D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md) per recuperare la tabella costante dello shader incorporata all'interno dello shader. In questa chiamata **D3DXGetShaderConstantTableEx** è necessario passare il flag **D3DXCONSTTABLE \_ LARGEADDRESSAWARE** al parametro *Flags* per specificare di accedere a un massimo di 4 GB di spazio degli indirizzi virtuali.
 
 </dd> </dl>
 
