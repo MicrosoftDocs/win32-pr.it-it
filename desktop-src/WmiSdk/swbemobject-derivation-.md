@@ -25,9 +25,9 @@ ms.locfileid: "118313903"
 ---
 # <a name="swbemobjectderivation_-property"></a>Proprietà SWbemObject.Derivation \_
 
-La **proprietà \_ Derivation** dell'oggetto [**SWbemObject**](swbemobject.md) contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe per l'istanza a cui si fa riferimento. Il primo elemento nella matrice definisce la classe padre e l'ultimo elemento definisce la classe di cui è stato fatto parte. Questa proprietà è di sola lettura.
+La **proprietà \_ Derivation** dell'oggetto [**SWbemObject**](swbemobject.md) contiene una matrice di stringhe che descrivono la gerarchia di derivazione della classe per l'istanza a cui si fa riferimento. Il primo elemento della matrice definisce la classe padre e l'ultimo elemento definisce la classe .NET. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,7 +44,7 @@ SWbemObject.Derivation_ As String
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio VBScript seguente viene descritto come recuperare la gerarchia di classi per il \_ disco logico win32.
+L'esempio VBScript seguente descrive come recuperare la gerarchia di classi per \_ logicaldisk win32.
 
 
 ```VB
@@ -64,7 +64,7 @@ end if
 
 
 
-Nell'esempio Perl seguente viene descritto come recuperare la gerarchia di classi per il \_ disco logico win32.
+Nell'esempio Perl seguente viene descritto come recuperare la gerarchia di classi per \_ logicaldisk win32.
 
 
 ```

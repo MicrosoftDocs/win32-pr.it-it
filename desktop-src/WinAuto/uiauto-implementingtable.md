@@ -7,10 +7,10 @@ keywords:
 - Automazione interfaccia utente,Pattern di controllo tabella
 - Automazione interfaccia utente,ITableProvider
 - ITableProvider
-- implementazione di Automazione interfaccia utente di controllo tabella
+- Implementazione di Automazione interfaccia utente di controllo tabella
 - Pattern di controllo tabella
 - pattern di controllo, ITableProvider
-- pattern di controllo, implementazione Automazione interfaccia utente tabella
+- pattern di controllo, implementazione Automazione interfaccia utente Tabella
 - pattern di controllo,tabella
 - interfacce, ITableProvider
 ms.topic: article
@@ -31,7 +31,7 @@ Gli elementi figlio dell'elemento contenitore devono implementare [**ITableItemP
 In questo argomento sono contenute le sezioni seguenti.
 
 -   [Linee guida e convenzioni di implementazione](#implementation-guidelines-and-conventions)
--   [Membri necessari per **ITableProvider**](#required-members-for-itableprovider)
+-   [Membri obbligatori per **ITableProvider**](#required-members-for-itableprovider)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="implementation-guidelines-and-conventions"></a>Linee guida e convenzioni di implementazione
@@ -56,9 +56,9 @@ Quando si implementa il **pattern di controllo Table,** tenere presente le linee
 
     ![tabella con una proprietà roworcolumnmajor ambigua](images/uia-tablepattern-roworcolumnmajorproperty.jpg)
 
-## <a name="required-members-for-itableprovider"></a>Membri necessari per **ITableProvider**
+## <a name="required-members-for-itableprovider"></a>Membri obbligatori per **ITableProvider**
 
-Per l'implementazione dell'interfaccia [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider) sono necessari i metodi e le proprietà seguenti.
+Le proprietà e i metodi seguenti sono necessari per l'implementazione [**dell'interfaccia ITableProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider)
 
 
 

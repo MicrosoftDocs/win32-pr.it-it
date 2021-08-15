@@ -1,19 +1,19 @@
 ---
-title: IAgentCommandsEx sefontsize
-description: IAgentCommandsEx sefontsize
+title: IAgentCommandsEx SetFontSize
+description: IAgentCommandsEx SetFontSize
 ms.assetid: 095f78d2-ef91-4880-ad49-dd9a94f02891
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19bb9a638141dc3cebe683748500510ea848a664
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b92319178f2fbceb7b2e0cad9bdb35b740ebeaf108f864edb84b4413353e85e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104472859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477203"
 ---
-# <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx:: sefontsize
+# <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx::SetFontSize
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT SetFontSize(
@@ -21,9 +21,9 @@ HRESULT SetFontSize(
 );
 ```
 
-Imposta la dimensione del tipo di carattere visualizzato nel menu di scelta rapida del carattere.
+Imposta le dimensioni del tipo di carattere visualizzato nel menu a comparsa del carattere.
 
--   Restituisce \_ OK per indicare che l'operazione è stata completata.
+-   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
 <dl> <dt>
 
@@ -34,15 +34,15 @@ Dimensione del carattere.
 
 </dd> </dl>
 
-Questa proprietà determina la dimensione in punti del tipo di carattere utilizzato per visualizzare il testo nel menu popup del carattere quando l'applicazione client è di input-attivo. Il valore predefinito per l'impostazione del tipo di carattere è basato sull'impostazione del tipo di carattere del menu per l'impostazione dell'ID lingua del carattere, o se non è impostato, l'impostazione della lingua predefinita dell'utente. Se l'opzione non è attiva, il testo della [](/windows/desktop/lwef/the-command-object) [**didascalia**](caption-property.md) del comando dell'applicazione client viene visualizzato nelle dimensioni dei punti specificate per il client attivo di input.
+Questa proprietà determina le dimensioni in punti del tipo di carattere usato per visualizzare il testo nel menu a comparsa del carattere quando l'applicazione client è attiva per l'input. Il valore predefinito per l'impostazione del tipo di carattere si basa sull'impostazione del tipo di carattere del menu per l'impostazione dell'ID lingua del carattere oppure, se non è stata impostata, l'impostazione della lingua predefinita dell'utente. Se non è attivo per l'input, il testo Didascalia comando dell'applicazione client viene visualizzato nelle dimensioni in punti specificate per il client attivo-input. [](/windows/desktop/lwef/the-command-object) [](caption-property.md)
 
-Questa proprietà si applica solo all'utilizzo del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
+Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. L'impostazione non influisce su altri client del carattere o di altri caratteri dell'applicazione client.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentCommandsEx:: GetFontSize**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx:: GetFontName**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx:: sefontname**](iagentcommandsex--setfontname.md)
+[**IAgentCommandsEx::GetFontSize**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx::GetFontName**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx::SetFontName**](iagentcommandsex--setfontname.md)
 
 
- 
+ 
 
- 
+ 

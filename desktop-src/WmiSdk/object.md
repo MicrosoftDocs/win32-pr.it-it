@@ -1,5 +1,5 @@
 ---
-description: Il tipo di dati OBJECT è un oggetto classe WMI utilizzato per dichiarare associazioni con tipi di dati deboli e oggetti incorporati.
+description: Il tipo di dati OBJECT è un oggetto classe WMI utilizzato per dichiarare associazioni tipiche e oggetti incorporati.
 ms.assetid: 1ad99b92-dfd4-4147-abf5-045edceaa97d
 ms.tgt_platform: multiple
 title: OBJECT
@@ -14,9 +14,9 @@ ms.locfileid: "118554930"
 ---
 # <a name="object"></a>OBJECT
 
-Il tipo di dati OBJECT è un oggetto classe WMI utilizzato per dichiarare associazioni con tipi di dati deboli e oggetti incorporati. Non si definisce la classe specifica per un oggetto con tipi di dati debole fino a quando non si crea un'istanza della classe. Gli oggetti incorporati definiti con il tipo di dati OBJECT possono contenere istanze di qualsiasi classe WMI. Per altre informazioni, vedere [Oggetti incorporati.](embedded-objects.md)
+Il tipo di dati OBJECT è un oggetto classe WMI utilizzato per dichiarare associazioni tipiche e oggetti incorporati. Non si definisce la classe specifica per un oggetto tipidato in modo debole fino a quando non si crea un'istanza della classe. Gli oggetti incorporati definiti con il tipo di dati OBJECT possono contenere istanze di qualsiasi classe WMI. Per altre informazioni, vedere [Oggetti incorporati](embedded-objects.md).
 
-Nell'esempio seguente vengono definite e create istanze di due classi, una delle quali contiene un oggetto incorporato di tipo OBJECT:
+L'esempio seguente definisce e crea istanze di due classi, una delle quali contiene un oggetto incorporato di tipo OBJECT:
 
 ``` syntax
 #pragma namespace("\\\\.\\root")

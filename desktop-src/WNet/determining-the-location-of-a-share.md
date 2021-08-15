@@ -15,7 +15,7 @@ ms.locfileid: "118566894"
 
 L'esempio seguente illustra come chiamare la [**funzione WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) per determinare il percorso di una condivisione in un'unità reindirizzata.
 
-Prima di tutto, l'esempio di codice chiama la funzione **WNetGetUniversalName,** specificando il livello di informazioni [**UNIVERSAL NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) per recuperare un puntatore a una stringa di nome Universal Naming Convention (UNC) per la risorsa. L'esempio chiama quindi **WNetGetUniversalName** una seconda volta, specificando il livello di informazioni [**REMOTE NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) per recuperare altre due stringhe di informazioni di connessione di rete. Se le chiamate hanno esito positivo, nell'esempio viene stampata la posizione della condivisione.
+Prima di tutto l'esempio di codice chiama la funzione **WNetGetUniversalName,** specificando il livello di informazioni [**\_ \_ INFORMAZIONI**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) NOME UNIVERSALE per recuperare un puntatore a una stringa di nome Universal Naming Convention (UNC) per la risorsa. L'esempio chiama **quindi WNetGetUniversalName** una seconda volta, specificando il livello di informazioni [**REMOTE NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) per recuperare altre due stringhe di informazioni di connessione di rete. Se le chiamate hanno esito positivo, nell'esempio viene stampato il percorso della condivisione.
 
 Per testare l'esempio di codice seguente, seguire questa procedura:
 

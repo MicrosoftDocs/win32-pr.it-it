@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: funzione JetExternalRestore2'
+description: Altre informazioni sulla funzione JetExternalRestore2
 title: Funzione JetExternalRestore2
 TOCTitle: JetExternalRestore2 Function
 ms:assetid: 66331be0-7abc-43a0-8b8b-dbdd227c918e
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c96314e401a81271f5a71bc056faa95fc1ae0dbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d2cbd4a13555d754cdbc1f9c02011b5891d6d6fcfae3fea822ddf6ad9953b78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719191"
 ---
 # <a name="jetexternalrestore2-function"></a>Funzione JetExternalRestore2
 
@@ -34,7 +34,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jetexternalrestore2-function"></a>Funzione JetExternalRestore2
 
-La funzione **JetExternalRestore2** ripristina un backup esterno che è stato usato con le API di backup esterne e fornisce checkpoint da usare per le operazioni di registrazione circolari. Questa operazione è nota come ripristino a livello di hardware, che è simile ma differente rispetto al ripristino soft eseguito dalla funzione [JetInit](./jetinit-function.md) .
+La **funzione JetExternalRestore2** ripristina un backup esterno eseguito con le API di backup esterne e fornisce checkpoint da usare per le operazioni di registrazione circolare. Questa operazione è nota come ripristino rigido, che è simile ma diverso dal ripristino soft eseguito dalla [funzione JetInit.](./jetinit-function.md)
 
 **Windows XP: JetExternalRestore2** è stato introdotto in Windows XP.
 
@@ -57,47 +57,47 @@ La funzione **JetExternalRestore2** ripristina un backup esterno che è stato us
 
 *szCheckpointFilePath*
 
-Percorso del file del checkpoint da utilizzare durante il ripristino se *szTargetInstanceCheckpointPath* non è specificato o se il percorso dispone di un'istanza attiva o in esecuzione.
+Percorso del file del checkpoint da usare durante il ripristino se *szTargetInstanceCheckpointPath* non è specificato o il percorso ha un'istanza attiva o in esecuzione.
 
 *szLogPath*
 
-Percorso o directory dei log per la fase finale (annullamento) del ripristino ed eventualmente per i log di rollforward. Questo percorso può essere uguale a quello di *szBackupLogPath*.
+Percorso o directory per i log per la fase finale (annullamento) del ripristino ed eventualmente per i log di roll forward. Questo percorso può essere lo stesso di *szBackupLogPath*.
 
 *rgrstmap*
 
-Si tratta di una matrice di strutture di [JET_RSTMAP](./jet-rstmap-structure.md) . Si tratta di una mappa di percorsi di database vecchi e nuovi o di nomi file. Questa operazione viene utilizzata perché potrebbe essere necessario ripristinare i database in un percorso diverso da quello di cui è stato eseguito il backup. Nel caso in cui più database siano collegati a un singolo set di registrazione, la mappa di ripristino può specificare un subset dei database da ripristinare.
+Si tratta di una matrice [di JET_RSTMAP](./jet-rstmap-structure.md) struttura. Si tratta di una mappa di percorsi o nomi di file di database vecchi e nuovi. Viene usato perché potrebbe essere necessario ripristinare i database in un percorso diverso da quello da cui è stato eseguito il backup. Nel caso in cui più database siano collegati a un singolo set di registrazione, la mappa di ripristino può specificare un subset dei database da ripristinare.
 
 *crstfilemap*
 
-Numero di voci nel parametro della matrice *rgrstmap* .
+Numero di voci nel parametro di matrice *rgrstmap.*
 
 *szBackupLogPath*
 
-Percorso della directory in cui vengono ripristinati i file di log. Si tratta dei log che sono stati letti durante la sequenza di backup esterna. Questo percorso può essere uguale a quello di *szLogPath*.
+Percorso della directory in cui vengono ripristinati i file di log. Si tratta dei log letti durante la sequenza di backup esterna. Questo percorso può essere lo stesso di *szLogPath*.
 
 *pLogInfo*
 
-*PLogInfo* descrive diversi aspetti dei log di backup da ripristinare. questo parametro consente a **JetExternalRestore2** di prendere i parametri *genLow* e *genHigh* espliciti che **JetExternalRestore2** possiede, nonché il nome del log di base, anziché un presunto nome di base del log "edb".
+*PLogInfo* descrive diversi aspetti dei log di backup da recuperare. Questo parametro consente a **JetExternalRestore2** di prendere i parametri *genLow* e *genHigh* espliciti di **JetExternalRestore2,** nonché il nome del log di base, anziché un nome di base del log presunto di "edb".
 
 *szTargetInstanceName*
 
-Questo parametro è deprecato e non può essere utilizzato nell'applicazione.
+Questo parametro è deprecato e non può essere usato nell'applicazione.
 
 *szTargetInstanceLogPath*
 
-Percorso per i log di rollforward se il percorso dei log di cui si desidera eseguire il rollforward si trova in un set di registrazioni attivo o in un'istanza di. Questa operazione non deve essere specificata se l'istanza di destinazione usa la registrazione circolare.
+Percorso per i log di roll forward se il percorso dei log da eseguire è in un'istanza o in un set di registrazione attivo. Questo valore non deve essere specificato se l'istanza di destinazione usa la registrazione circolare.
 
 *szTargetInstanceCheckpointPath*
 
-Percorso del checkpoint durante il ripristino se non è presente alcuna istanza attiva in esecuzione in questa destinazione. Questa operazione non deve essere specificata se l'istanza di destinazione usa la registrazione circolare.
+Percorso del checkpoint durante il ripristino se non è presente alcuna istanza attiva in esecuzione in questa destinazione. Questo valore non deve essere specificato se l'istanza di destinazione usa la registrazione circolare.
 
-*PFN*
+*Pfn*
 
-Callback di stato che segnala lo stato di avanzamento del ripristino.
+Callback di stato, che segnala lo stato di avanzamento del ripristino.
 
 ### <a name="return-value"></a>Valore restituito
 
-Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei seguenti codici restituiti. Per ulteriori informazioni sugli errori ESE possibili, vedere la pagina relativa agli errori e ai [parametri di gestione degli](./error-handling-parameters.md)errori del [motore di archiviazione estensibile](./extensible-storage-engine-errors.md) .
+Questa funzione restituisce il [JET_ERR](./jet-err.md) dati con uno dei codici restituiti seguenti. Per altre informazioni sui possibili errori ESE, vedere [Errori del motore Archiviazione](./extensible-storage-engine-errors.md) estendibile e Parametri di gestione degli [errori](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -117,15 +117,15 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errBadRestoreTargetInstance</p></td>
-<td><p>Il <em>szTargetInstanceLogPath</em> specificato non appartiene a un'istanza inizializzata. Questo errore verrà restituito solo in Windows XP e versioni successive.</p></td>
+<td><p><em>SzTargetInstanceLogPath specificato</em> non appartiene a un'istanza inizializzata. Questo errore verrà restituito solo in Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errDatabaseCorrupted</p></td>
-<td><p>Indica che il database è danneggiato o un file non riconosciuto.</p></td>
+<td><p>Indica che il database è stato danneggiato o un file non riconosciuto.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errEndingRestoreLogTooLow</p></td>
-<td><p>Questo errore viene restituito se uno per i file di log in <em>szBackupLogPath</em>ha una generazione di log precedente a quella specificata in <em>genHigh</em> o <em>pLogInfo. ulGenHigh</em>.</p></td>
+<td><p>Questo errore viene restituito se per uno dei file di log in <em>szBackupLogPath</em>è presente una generazione di log superiore a quella specificata in <em>genHigh</em> o <em>pLogInfo.ulGenHigh</em>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errFileNotFound</p></td>
@@ -133,7 +133,7 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno dei parametri forniti contiene un valore imprevisto o contiene un valore che non ha senso se combinato con il valore di un altro parametro. Questo problema può verificarsi per <a href="gg294088(v=exchg.10).md">JetExternalRestore</a>e così via quando <em>szTargetCheckpointPath</em> e <em>szTargetInstanceLogPath</em> non sono entrambi specificati o non sono entrambi specificati. Ovvero devono corrispondere ed essere specificati o entrambi non specificati.</p></td>
+<td><p>Uno dei parametri forniti conteneva un valore imprevisto o conteneva un valore che non aveva senso se combinato con il valore di un altro parametro. Ciò può verificarsi per <a href="gg294088(v=exchg.10).md">JetExternalRestore</a>e così via quando <em>szTargetCheckpointPath</em> e <em>szTargetInstanceLogPath</em> non sono entrambi specificati o non entrambi non specificati. In altri casi, devono corrispondere ed essere entrambi specificati o entrambi non specificati.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidPath</p></td>
@@ -141,27 +141,27 @@ Questa funzione restituisce il tipo di dati [JET_ERR](./jet-err.md) con uno dei 
 </tr>
 <tr class="even">
 <td><p>JET_errOutOfMemory</p></td>
-<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per il completamento.</p></td>
+<td><p>L'operazione non è riuscita perché non è stato possibile allocare memoria sufficiente per completarla.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errRestoreOfNonBackupDatabase</p></td>
-<td><p>Questo errore viene restituito se il file di database specificato durante l'operazione di ripristino non è un database di cui è stato eseguito il backup con backup esterno.</p></td>
+<td><p>Questo errore viene restituito se il file di database specificato durante il ripristino non è un database di cui è stato eseguito il backup esterno.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInOneInstanceMode</p></td>
-<td><p>Il motore di database non è in grado di eseguire il ripristino esterno o il ripristino a freddo in modalità istanza singola. Questo errore verrà restituito solo in Windows XP e versioni successive.</p></td>
+<td><p>Il motore di database non può eseguire il ripristino esterno o il ripristino rigido in modalità a istanza singola. Questo errore verrà restituito solo in Windows XP e versioni successive.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errStartingRestoreLogTooHigh</p></td>
-<td><p>Questo errore viene restituito se uno dei file di log in <em>szBackupLogPath</em>ha una generazione di log inferiore a quella specificata da <em>genLow</em> o <em>pLogInfo. ulGenLow</em>.</p></td>
+<td><p>Questo errore viene restituito se uno dei file di log in <em>szBackupLogPath</em>ha una generazione di log inferiore a quella specificata da <em>genLow</em> o <em>pLogInfo.ulGenLow</em>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In seguito all'esito positivo, tutti i database del *rgrstmap* vengono completamente ripristinati e in uno stato pulito o coerente. A questo punto è possibile rimontare il database in un'istanza esistente.
+In caso di esito positivo, tutti i database di *rgrstmap* vengono completamente ripristinati e in uno stato pulito o coerente. A questo punto il database può essere rimontaggio in un'istanza esistente.
 
-In caso di errore, il motore non è riuscito a recuperare il database. Il database è in uno stato non valido e, per ritentare il ripristino, è necessario ripristinare nuovamente l'intero database. In genere, l'origine di tale situazione è il danneggiamento del disco o del log, o un altro tipo di errore di gestione dei log oppure un set di log non continuo.
+In caso di errore, il motore non è riuscito a ripristinare il database. Il database è in uno stato non valido e per ritentare il ripristino rigido è necessario ripristinare nuovamente l'intero database. In genere, l'origine di una situazione di questo tipo è il danneggiamento del disco o del log o un'altra forma di gestione errata del log o un set di log non continuo.
 
 #### <a name="remarks"></a>Commenti
 
@@ -185,11 +185,11 @@ Vedere [JetExternalRestore](./jetexternalrestore-function.md).
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Libreria</strong></p></td>
-<td><p>Usare ESENT. lib.</p></td>
+<td><p>Usare ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

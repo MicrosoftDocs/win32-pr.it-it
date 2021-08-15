@@ -1,6 +1,6 @@
 ---
-title: Process2DQuadTessFactorsMax (funzione)
-description: Genera i fattori a mosaico corretti per una patch quad. | Process2DQuadTessFactorsMax (funzione)
+title: Funzione Process2DQuadTessFactorsMax
+description: Genera i fattori a tessellazione corretti per una patch quad. | Funzione Process2DQuadTessFactorsMax
 ms.assetid: 1de95946-d82d-42ba-93d7-ab8383fd5018
 keywords:
 - Funzione Process2DQuadTessFactorsMax HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d090c102671ec89fa347db95da2b21b5f11adcfe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f3325f08d1457230f52a539eaa9a7694d56266b7f2fd8cfd921c7a70e61ab568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510946"
 ---
-# <a name="process2dquadtessfactorsmax-function"></a>Process2DQuadTessFactorsMax (funzione)
+# <a name="process2dquadtessfactorsmax-function"></a>Funzione Process2DQuadTessFactorsMax
 
-Genera i fattori a mosaico corretti per una patch quad.
+Genera i fattori a tessellazione corretti per una patch quad.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,48 +40,48 @@ void Process2DQuadTessFactorsMax(
 
 <dl> <dt>
 
-*RawEdgeFactors* \[ in\]
+*RawEdgeFactors* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float4**
 
-Fattori a mosaico perimetrale passati alla fase mosaico.
+Fattori a tessellazione del bordo, passati nella fase a tessellatore.
 
 </dd> <dt>
 
-*InsideScale* \[ in\]
+*InsideScale* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Fattore di scala applicato ai fattori a mosaico UV calcolati dalla fase a mosaico. L'intervallo consentito per InsideScale è compreso tra 0,0 e 1,0.
+Fattore di scala applicato ai fattori a tessellazione UV calcolati dalla fase a tessellazione. L'intervallo consentito per InsideScale è compreso tra 0,0 e 1,0.
 
 </dd> <dt>
 
-*RoundedEdgeTessFactors* \[ out\]
+*RoundedEdgeTessFactors* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **float4**
 
-Fattori arrotondati a mosaico perimetrale calcolati dalla fase mosaico.
+Fattori arrotondati di a tessellazione dei bordi calcolati dalla fase a tessellatore.
 
 </dd> <dt>
 
-*RoundedInsideTessFactors* \[ out\]
+*RoundedInsideTessFactors* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Fattori a mosaico arrotondati calcolati dalla fase mosaico per i bordi interni.
+Fattori a tassellamento arrotondati calcolati dalla fase a tessellatore per i bordi interni.
 
 </dd> <dt>
 
-*UnroundedInsideTessFactors* \[ out\]
+*UnroundedInsideTessFactors* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **float2**
 
-Fattori a mosaico calcolati dalla fase mosaico per i bordi interni.
+Fattori a tessellazione calcolati dalla fase a tessellatore per i bordi interni.
 
 </dd> </dl>
 
@@ -91,9 +91,9 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Genera i fattori a mosaico corretti per una patch quad, calcolando i fattori interni a mosaico come massimo dei fattori di mosaico perimetrale. I fattori di suddivisione a mosaico all'interno dei quali vengono calcolati in modo indipendente usando i valori massimi dei lati opposti del dominio, quindi vengono ridimensionati in base a InsideScale. Il risultato viene quindi arrotondato in base alla modalità di partizionamento, ma i risultati non arrotondati sono disponibili tramite il parametro UnroundedInsideTessFactors.
+Genera i fattori a tessellazione corretti per una patch quad, calcolando i fattori interni della tessellazione come il massimo dei fattori a tessellazione del bordo. I fattori you e V all'interno della tessellazione vengono calcolati in modo indipendente usando i valori massimi dei lati opposti del dominio, quindi vengono ridimensionati da InsideScale. Il risultato viene quindi arrotondato in base alla modalità di partizionamento, ma i risultati non arrotondati sono disponibili usando il parametro UnroundedInsideTessFactors.
 
-### <a name="minimum-shader-model"></a>Modello Shader minimo
+### <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -101,7 +101,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md) e versioni successive shader Models | sì       |
+| [Modelli shader modello 5](d3d11-graphics-reference-sm5.md) e versioni successive | sì       |
 
 
 
@@ -111,7 +111,7 @@ Questa funzione è supportata nei tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
@@ -126,7 +126,7 @@ Questa funzione è supportata nei tipi di shader seguenti:
 [Funzioni intrinseche](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

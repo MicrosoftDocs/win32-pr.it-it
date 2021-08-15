@@ -16,7 +16,7 @@ ms.locfileid: "118387514"
 Un'applicazione GUI deve rispondere agli eventi dell'utente e del sistema operativo.
 
 - **Gli eventi dell'utente** includono tutti i modi in cui un utente può interagire con il programma: clic del mouse, tasti di scelta, movimenti del touchscreen e così via.
-- **Gli eventi del sistema operativo includono** qualsiasi elemento "esterno" al programma che può influire sul comportamento del programma. Ad esempio, l'utente potrebbe collegare un nuovo dispositivo hardware o Windows potrebbe entrare in uno stato di risparmio energia inferiore (sospensione o ibernazione).
+- **Gli eventi del sistema operativo includono** qualsiasi elemento "esterno" al programma che può influire sul comportamento del programma. Ad esempio, l'utente potrebbe collegare un nuovo dispositivo hardware o Windows potrebbe entrare in uno stato di alimentazione inferiore (sospensione o ibernazione).
 
 Questi eventi possono verificarsi in qualsiasi momento mentre il programma è in esecuzione, in quasi tutti gli ordini. Come si struttura un programma il cui flusso di esecuzione non può essere previsto in anticipo?
 

@@ -1,28 +1,28 @@
 ---
-title: USA callback di notifica degli eventi
-description: Nella procedura riportata di seguito vengono descritti i passaggi che il client deve utilizzare per ricevere i messaggi di notifica delle modifiche dal \_ callback dell'evento RTM \_ . Il codice di esempio seguente illustra come implementare la procedura.
+title: Usare il callback di notifica degli eventi
+description: La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura .
 ms.assetid: e079c585-6457-4c2c-82bd-e95d233c4aa6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a650a762600c254979aaea974379b4021d0d73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a524c162aed66fec2112c3d0aeb61743b94c2eee131a10f935dba876a480baae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104044936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127821"
 ---
-# <a name="use-the-event-notification-callback"></a>USA callback di notifica degli eventi
+# <a name="use-the-event-notification-callback"></a>Usare il callback di notifica degli eventi
 
-Nella procedura riportata di seguito vengono descritti i passaggi che il client deve utilizzare per ricevere i messaggi di notifica delle modifiche dal \_ callback dell'evento RTM \_ . Il codice di esempio seguente illustra come implementare la procedura.
+La procedura seguente illustra i passaggi che il client deve usare per ricevere messaggi di notifica delle modifiche dal \_ CALLBACK DELL'EVENTO \_ RTM. Il codice di esempio seguente illustra come implementare la procedura .
 
 **Come recuperare i messaggi di notifica delle modifiche**
 
 1.  Chiamare [**RtmGetChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) per recuperare un set di modifiche.
 2.  Elaborare le modifiche.
-3.  Rilasciare le destinazioni usando [**RtmReleaseChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests).
-4.  Ripetere i passaggi 1, 2 e 3 fino [](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) a quando RtmGetChangedDests \_ non restituisce \_ più \_ elementi.
+3.  Rilasciare le destinazioni [**usando RtmReleaseChangedDests**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasechangeddests).
+4.  Ripetere i passaggi 1, 2 e 3 finché [**RtmGetChangedDests non**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmgetchangeddests) restituisce ERROR \_ NO MORE \_ \_ ITEMS.
 
-Nell'esempio di codice seguente viene illustrato come elaborare un callback di [**\_ \_ callback di evento RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) ricevuto da Gestione tabelle di routing.
+Il codice di esempio seguente illustra come elaborare un callback [**DI CALLBACK DI \_ EVENTI \_ RTM**](/windows/win32/api/rtmv2/nc-rtmv2-_event_callback) ricevuto dal gestore tabelle di routing.
 
 
 ```C++
@@ -217,9 +217,9 @@ EntityEventCallback (
 
 
 
- 
+ 
 
- 
+ 
 
 
 

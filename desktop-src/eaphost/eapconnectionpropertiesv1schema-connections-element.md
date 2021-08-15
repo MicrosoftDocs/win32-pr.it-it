@@ -58,13 +58,13 @@ ms.locfileid: "118498219"
 |--------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)                       |        | Identifica l'elemento di configurazione EAP.<br/>                                                                                                                                       |
 | [**Connessione**](eapconnectionpropertiesv1schema-connection-connections-element.md) |        | Definisce ogni impostazione di configurazione e la associa a un nome. [**L'elemento Connection**](eapconnectionpropertiesv1schema-connection-connections-element.md) è facoltativo.<br/> |
-| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md)              | string | Acquisisce il nome della connessione definita, assistendo nell'identificazione di più connessioni.<br/>                                                                     |
+| [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md)              | string | Acquisisce il nome della connessione da definire, assistendo nell'identificazione di più connessioni.<br/>                                                                     |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-**L'elemento Connections** non viene usato con i metodi legacy tramite le API EAPHost.
+**L'elemento** Connections non viene usato con i metodi legacy tramite le API EAPHost.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ ms.locfileid: "118498219"
 
 | Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ ms.locfileid: "118498219"
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)

@@ -21,9 +21,9 @@ Nel componente provider di esempio un esempio di implementazione della cache del
 | Metodo                                           | Descrizione                                                                                                         |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **CPropertyCache::addproperty**                  | Estendere la cache delle proprietà aggiungendo una nuova.                                                                      |
-| **CPropertyCache::updateproperty**               | Cercare la proprietà, liberarne il contenuto e usare invece nuovi valori. contrassegnare quindi la cache modificata per questa proprietà. |
-| **CPropertyCache::findproperty**                 | Cercare questa proprietà in base al nome. salvare l'indice.                                                                      |
-| **CPropertyCache::getproperty**                  | Trovare la proprietà nella cache, se disponibile, in caso contrario chiamare **GetInfo**. Impostare l'indice e copiarlo nei nuovi valori.  |
+| **CPropertyCache::updateproperty**               | Cercare la proprietà , liberarne il contenuto e usare invece nuovi valori. contrassegnare quindi la cache modificata per questa proprietà. |
+| **CPropertyCache::findproperty**                 | Cercare questa proprietà in base al nome. salvare il relativo indice.                                                                      |
+| **CPropertyCache::getproperty**                  | Trovare la proprietà nella cache, se disponibile, in caso contrario chiamare **GetInfo**. Impostare l'indice e copiare i nuovi valori.  |
 | **CPropertyCache::p utproperty**                  | Trovare la proprietà . Liberare ciò che c'era e inserire nuovi valori.                                                       |
 | **CPropertyCache::CPropertyCache**               | Costruttore standard.                                                                                               |
 | **CPropertyCache::~CPropertyCache**              | Distruttore standard.                                                                                                |
@@ -31,8 +31,8 @@ Nel componente provider di esempio un esempio di implementazione della cache del
 | **CPropertyCache::unboundgetproperty**           | Trovare la proprietà nella cache e impostarla su questi valori.                                                          |
 | **CPropertyCache::SampleDSMarshallProperties**   | Effettuare il marshalling dei dati e dei valori delle proprietà.                                                                                   |
 | **CPropertyCache::marshallproperty**             | Effettuare il marshalling di una proprietà.                                                                                                 |
-| **CPropertyCache::SampleDSUnMarshallProperties** | Dati e valori delle proprietà unmarshal.                                                                                 |
-| **CPropertyCache::unmarshallproperty**           | Annullare ilmarshal di una proprietà.                                                                                               |
+| **CPropertyCache::SampleDSUnMarshallProperties** | Valori e dati di proprietà unmarshal.                                                                                 |
+| **CPropertyCache::unmarshallproperty**           | Annullare ilmarshaling di una proprietà.                                                                                               |
 
 
 

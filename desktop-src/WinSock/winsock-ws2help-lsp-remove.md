@@ -1,5 +1,5 @@
 ---
-description: Evento di modifica del catalogo Winsock per un'operazione di rimozione del provider di servizi a più livelli( LSP).
+description: Evento di modifica del catalogo Winsock per un'operazione di rimozione di un provider di servizi a livelli (LSP).
 ms.assetid: 86FF17F7-8CCF-4A03-899F-42BFACDF3F54
 title: WINSOCK_WS2HELP_LSP_REMOVE evento
 ms.topic: reference
@@ -19,14 +19,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118321593"
 ---
-# <a name="winsock_ws2help_lsp_remove-event"></a>Evento REMOVE di WINSOCK \_ WS2HELP \_ LSP \_
+# <a name="winsock_ws2help_lsp_remove-event"></a>EVENTO REMOVE DI WINSOCK \_ WS2HELP \_ LSP \_
 
 > [!Note]  
-> I provider di servizi a più livelli sono deprecati. A partire da Windows 8 e Windows Server 2012, usare [Windows Filtering Platform](../fwp/windows-filtering-platform-start-page.md).
+> I provider di servizi su più livelli sono deprecati. A partire da Windows 8 e Windows Server 2012, usare [Windows Filtering Platform.](../fwp/windows-filtering-platform-start-page.md)
 
  
 
-**L'evento WINSOCK \_ WS2HELP \_ LSP \_ REMOVE** è un evento di modifica del catalogo Winsock per un'operazione di rimozione del provider di servizi a più livelli.
+**L'evento REMOVE di WINSOCK \_ WS2HELP \_ LSP \_** è un evento di modifica del catalogo Winsock per un'operazione di rimozione di un provider di servizi a livelli (LSP).
 
 
 ```C++
@@ -49,14 +49,14 @@ Nome dell'LSP ottenuto dal membro **szProtocol** della struttura [**WSAPROTOCOL 
 *Catalogo* 
 </dt> <dd>
 
-Catalogo Winsock (a 32 o 64 bit) in cui viene rimosso l'LSP. Si tratta di un valore intero che è 32 o 64.
+Catalogo Di Winsock (a 32 bit o a 64 bit) in cui viene rimosso il provider di servizi di rete. Si tratta di un valore intero che è 32 o 64.
 
 </dd> <dt>
 
 *Programma di installazione* 
 </dt> <dd>
 
-Nome file del modulo dell'applicazione che effettua la chiamata di rimozione LSP.
+Nome del modulo dell'applicazione che effettua la chiamata di rimozione dell'LSP.
 
 </dd> <dt>
 
@@ -70,13 +70,13 @@ Valore GUID del provider di trasporto Winsock da cui viene rimosso l'LSP.
 *Categoria* 
 </dt> <dd>
 
-Membro **dwCatalogEntryId** della [**struttura WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'LSP rimosso.
+Membro **dwCatalogEntryId** della struttura [**WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) per l'LSP da rimuovere.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-**L'evento REMOVE di WINSOCK \_ WS2HELP \_ LSP \_** viene tracciato per un'operazione di rimozione LSP quando una voce di protocollo viene rimossa dal catalogo Winsock.
+**L'evento REMOVE di WINSOCK \_ WS2HELP \_ LSP \_** viene tracciato per un'operazione di rimozione LSP quando viene rimossa una voce di protocollo dal catalogo Winsock.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,8 +84,8 @@ Membro **dwCatalogEntryId** della [**struttura WSAPROTOCOL \_ INFO**](/windows/w
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -93,7 +93,7 @@ Membro **dwCatalogEntryId** della [**struttura WSAPROTOCOL \_ INFO**](/windows/w
 
 <dl> <dt>
 
-[Controllo della traccia Winsock](control-of-winsock-tracing.md)
+[Controllo della traccia winsock](control-of-winsock-tracing.md)
 </dt> <dt>
 
 [Traccia winsock](winsock-tracing.md)
@@ -102,7 +102,7 @@ Membro **dwCatalogEntryId** della [**struttura WSAPROTOCOL \_ INFO**](/windows/w
 [Livelli di traccia di Winsock](winsock-tracing-levels.md)
 </dt> <dt>
 
-[Dettagli di traccia delle modifiche del catalogo Winsock](winsock-layered-service-provider-tracing-event-details.md)
+[Dettagli traccia modifiche catalogo Winsock](winsock-layered-service-provider-tracing-event-details.md)
 </dt> </dl>
 
  

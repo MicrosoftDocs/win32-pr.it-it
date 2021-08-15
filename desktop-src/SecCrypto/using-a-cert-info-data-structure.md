@@ -1,19 +1,19 @@
 ---
-description: '\_Il contesto del certificato \_ e le informazioni sui certificati sono le strutture di dati principali che contiene le informazioni contenute in un certificato.'
+description: CERT \_ CONTEXT E CERT INFO sono le strutture \_ di dati principali che contiene le informazioni in un certificato.
 ms.assetid: 3e058ca7-9334-4fde-afe1-93d5ea3a9697
-title: Utilizzo di una struttura di dati CERT_INFO
+title: Uso di una CERT_INFO dati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ace9356a1a21bf72f01afe14cec00daeb1757206
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c7ef533e4f93941950dc525136a4566af522f8f9527430ce35aade25650313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897153"
 ---
-# <a name="using-a-cert_info-data-structure"></a>Uso di una \_ struttura di dati CERT info
+# <a name="using-a-cert_info-data-structure"></a>Uso di una struttura di \_ dati CERT INFO
 
-[**Certificato \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) Le [**\_ informazioni**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) sul contesto e sul certificato sono le strutture dei dati principali che contiene le informazioni contenute in un certificato. Quando si usa un certificato, potrebbe essere necessario decodificarlo. Per altre informazioni, vedere [decodifica di una \_ struttura di informazioni sul certificato](decoding-a-cert-info-structure.md). Le informazioni possono essere aggiunte a una struttura di **\_ informazioni CERT** decodificata e quindi la struttura può essere codificata nuovamente. Per informazioni dettagliate, vedere [codifica di una \_ struttura di informazioni sul certificato](encoding-a-cert-info-structure.md).
+[**CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) AND [**CERT \_ INFO sono**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_info) le strutture di dati principali che contiene le informazioni in un certificato. Quando si usa un certificato, potrebbe essere necessario decodificarlo. Per altre informazioni, vedere [Decodifica di una struttura CERT \_ INFO.](decoding-a-cert-info-structure.md) È possibile aggiungere informazioni a una struttura **CERT \_ INFO** decodificata e quindi codificare nuovamente la struttura. Per informazioni dettagliate, [vedere Codifica di una struttura CERT \_ INFO.](encoding-a-cert-info-structure.md)
 
  
 

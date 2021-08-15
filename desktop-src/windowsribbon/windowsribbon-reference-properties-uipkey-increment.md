@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_Increment
-description: Identifica la proprietà \_ UI PKEY \_ Increment.
+description: Identifica la proprietà \_ PKEY \_ Increment dell'interfaccia utente.
 ms.assetid: 796a8e99-4b41-41fd-8fa7-b81faac202bb
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118438066"
 ---
 # <a name="ui_pkey_increment"></a>Incremento \_ PKEY \_ dell'interfaccia utente
 
-Identifica la proprietà \_ UI PKEY \_ Increment.
+Identifica la proprietà \_ PKEY \_ Increment dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,13 +27,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-L'incremento PKEY dell'interfaccia utente viene usato da un'applicazione per eseguire una query su quanto il valore nel campo di modifica del controllo Spinner aumenta o diminuisce quando si fa clic sul pulsante di incremento o \_ \_ decremento. [](windowsribbon-controls-spinner.md)
+L'incremento PKEY dell'interfaccia utente viene usato da un'applicazione per eseguire query su quanto il valore nel campo di modifica del controllo Spinner aumenta o diminuisce quando si fa clic sul pulsante di incremento o \_ \_ decremento. [](windowsribbon-controls-spinner.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Proprietà di stato](windowsribbon-reference-properties-state.md)
+[Proprietà dello stato](windowsribbon-reference-properties-state.md)
 </dt> </dl>
 
  

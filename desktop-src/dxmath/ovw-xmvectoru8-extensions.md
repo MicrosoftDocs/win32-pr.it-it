@@ -1,19 +1,19 @@
 ---
-description: Il tipo XMVECTORU8 supporta l'uso della sintassi dell'inizializzatore C/C++ per caricare i valori a virgola mobile in un'istanza di tipo XMVECTOR.
+description: Il tipo XMVECTORU8 supporta l'uso della sintassi dell'inizializzatore C/C++ per caricare valori a virgola mobile in un'istanza del tipo XMVECTOR.
 ms.assetid: 94be5288-1a8e-4ef3-84f3-528a1307acbc
 title: Estensioni XMVECTORU8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fc240efae59dc7b93539edd088da03d67c4eab4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6803aa608cd4d27c2cb4699e806be8f892cc7e2afeafd0db9cc2bad315e49cdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500398"
 ---
 # <a name="xmvectoru8-extensions"></a>Estensioni XMVECTORU8
 
-Il tipo [**XMVECTORU8**](xmvectoru8-data-type.md) supporta l'uso della sintassi dell'inizializzatore C/C++ per caricare i valori a virgola mobile in un'istanza di tipo [**XMVECTOR**](xmvector-data-type.md) .
+Il [**tipo XMVECTORU8**](xmvectoru8-data-type.md) supporta l'uso della sintassi dell'inizializzatore C/C++ per caricare valori a virgola mobile in un'istanza del [**tipo XMVECTOR.**](xmvector-data-type.md)
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.
@@ -26,7 +26,7 @@ Il tipo [**XMVECTORU8**](xmvectoru8-data-type.md) supporta l'uso della sintassi 
 
 | Argomento                                                           | Descrizione                                                                                          |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [Operatori XMVECTORU8](ovw-xmvectoru8-operators.md)<br/> | La struttura [**XMVECTORU8**](xmvectoru8-data-type.md) espone gli operatori seguenti.<br/> |
+| [Operatori XMVECTORU8](ovw-xmvectoru8-operators.md)<br/> | La [**struttura XMVECTORU8**](xmvectoru8-data-type.md) espone gli operatori seguenti.<br/> |
 
 
 

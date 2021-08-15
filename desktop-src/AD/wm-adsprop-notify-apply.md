@@ -1,10 +1,10 @@
 ---
-title: Messaggio WM_ADSPROP_NOTIFY_APPLY (Adsprop. h)
-description: Un'estensione della finestra delle proprietà del servizio Active Directory directory invia il \_ \_ \_ messaggio di richiesta di notifica di WM ADSPROP all'oggetto notifica se la pagina delle proprietà del gestore di applicazione PSN ha \_ esito positivo.
+title: WM_ADSPROP_NOTIFY_APPLY messaggio (Adsprop.h)
+description: Un'estensione della finestra delle proprietà del servizio directory Active Directory invia il messaggio WM ADSPROP NOTIFY APPLY all'oggetto notifica se il gestore PSN APPLY della pagina delle proprietà \_ \_ ha esito \_ \_ positivo.
 ms.assetid: 3536054b-83ee-4cfa-ab54-c0af3a46289e
 ms.tgt_platform: multiple
 keywords:
-- Messaggio WM_ADSPROP_NOTIFY_APPLY Active Directory
+- WM_ADSPROP_NOTIFY_APPLY message Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0ccd5bb95e3f092634d54ba0534e81ded6701bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6cc130a83aa77021e0be512d9b2ad27914b4c6be382c0290e082e1fbd67b8b22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024299"
 ---
-# <a name="wm_adsprop_notify_apply-message"></a>\_Messaggio di \_ richiesta di notifica di WM ADSPROP \_
+# <a name="wm_adsprop_notify_apply-message"></a>Messaggio WM \_ ADSPROP \_ NOTIFY \_ APPLY
 
-Un'estensione della finestra delle proprietà del servizio Active Directory directory invia il messaggio di **\_ richiesta di \_ notifica \_ di WM ADSPROP** all'oggetto notifica se la pagina delle proprietà del gestore di applicazione PSN ha \_ esito positivo.
+Un'estensione della finestra delle proprietà del servizio directory Active Directory invia il messaggio **WM \_ ADSPROP \_ NOTIFY \_ APPLY** all'oggetto notifica se il gestore PSN APPLY della pagina delle proprietà \_ ha esito positivo.
 
 
 ```C++
@@ -41,7 +41,7 @@ WM_ADSPROP_NOTIFY_APPLY
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Handle dell'oggetto notifica. Per ottenere questo handle, chiamare [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj).
@@ -64,11 +64,11 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non ha alcun valore restituito.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si aggiungono pagine allo snap-in MMC di gestione Active Directory, Active Directory finestre delle proprietà di MMC creano gli oggetti notifica mediante una chiamata alla funzione [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj) , quindi passa l'handle dell'oggetto notifica a ogni pagina delle proprietà.
+Quando si aggiungono pagine nello snap-in MMC di Active Directory Manager, le finestre delle proprietà mmc di Active Directory creano gli oggetti notifica tramite una chiamata alla funzione [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj) e quindi passano l'handle dell'oggetto notifica a ogni pagina delle proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Quando si aggiungono pagine allo snap-in MMC di gestione Active Directory, Activ
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>Adsprop. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Adsprop.h</dt> </dl> |
 
 
 

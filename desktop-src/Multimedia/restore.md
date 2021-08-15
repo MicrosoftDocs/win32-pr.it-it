@@ -1,9 +1,9 @@
 ---
-title: comando Restore
-description: Tramite il comando Restore viene copiata un'immagine ancora da un file al buffer dei frame. Si tratta del contrario del comando di acquisizione. I dispositivi digitali video riconoscono questo comando.
+title: comando restore
+description: Il comando restore copia un'immagine fissa da un file nel buffer dei frame. Questo è il contrario del comando capture. I dispositivi video digitali riconoscono questo comando.
 ms.assetid: e84a478a-3e0f-4767-94d7-eb3c79c31b8b
 keywords:
-- comando di ripristino Windows Multimedia
+- Comando restore Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2d7f0f236b26e3e73807b32485442d597e93d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55e82fdec2480cfe2fc1b41901872aef7e41ee468d1adc3924df17a27e40031e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103963784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689191"
 ---
-# <a name="restore-command"></a>comando Restore
+# <a name="restore-command"></a>comando restore
 
-Tramite il comando Restore viene copiata un'immagine ancora da un file al buffer dei frame. Si tratta del contrario del comando di [acquisizione](capture.md) . I dispositivi digitali video riconoscono questo comando.
+Il comando restore copia un'immagine fissa da un file nel buffer dei frame. Questo è il contrario del [comando capture.](capture.md) I dispositivi video digitali riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno o più dei flag seguenti.
 
 | Valore           | Significato                                                                                                                                                                                                                                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| al *rettangolo*  | Specifica un rettangolo relativo all'origine del buffer del frame. Il *rettangolo* viene specificato come *X1 Y1 Y1 2*. Le coordinate *X1 Y1* specificano l'angolo superiore sinistro e le coordinate *X2 Y2* specificano la larghezza e l'altezza. Se questo flag non viene utilizzato, l'immagine viene copiata nell'angolo superiore sinistro del buffer del frame.<br/> |
-| da *filename* | Specifica il nome del file di immagine da richiamare. Questo flag è obbligatorio.                                                                                                                                                                                                                                                                  |
+| at *rectangle*  | Specifica un rettangolo relativo all'origine del buffer dei frame. Il *rettangolo* viene specificato *come X1 Y1 X2 Y2*. Le coordinate *X1 Y1* specificano l'angolo superiore sinistro e le coordinate *X2 Y2* specificano la larghezza e l'altezza. Se questo flag non viene usato, l'immagine viene copiata nell'angolo superiore sinistro del buffer dei frame.<br/> |
+| da nome *file* | Specifica il nome file dell'immagine da richiamare. Questo flag è obbligatorio.                                                                                                                                                                                                                                                                  |
 
 
 
@@ -67,17 +67,17 @@ Uno o più dei flag seguenti.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify", "test" o una combinazione di questi. Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify", "test" o una combinazione di questi elementi. Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-I dispositivi possono riconoscere diversi formati di immagine; viene sempre riconosciuta una bitmap indipendente dalla periferica Windows.
+I dispositivi possono riconoscere un'ampia gamma di formati di immagine. Una Windows bitmap indipendente dal dispositivo viene sempre riconosciuta.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,13 +94,13 @@ I dispositivi possono riconoscere diversi formati di immagine; viene sempre rico
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[catturare](capture.md)
+[Catturare](capture.md)
 </dt> </dl>
 
  

@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Metodo SetProgramList Servizi Desktop remoto
 - Metodo SetProgramList Servizi Desktop remoto , Win32_TSVirtualIP classe
-- Win32_TSVirtualIP classe Servizi Desktop remoto, metodo SetProgramList
+- Win32_TSVirtualIP classe Servizi Desktop remoto metodo SetProgramList
 topic_type:
 - apiref
 api_name:
@@ -46,7 +46,7 @@ unint32 SetProgramList(
 *Elenco programmi* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **\[ \] string**
+Tipo: **\[ \] stringa**
 
 Matrice di stringhe che contengono il percorso e i nomi file dei programmi che usano la virtualizzazione IP.
 
@@ -56,7 +56,7 @@ Matrice di stringhe che contengono il percorso e i nomi file dei programmi che u
 
 Tipo: **unint32**
 
-Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI. Fare riferimento [Servizi Desktop remoto di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) per un elenco di questi valori. Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto codici di errore del provider WMI,](terminal-services-wmi-provider-error-codes.md) vedere . Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -66,7 +66,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codic
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                               |
 | Server minimo supportato<br/> | Windows Server 2008 R2<br/>                                                       |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

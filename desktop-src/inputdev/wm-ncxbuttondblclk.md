@@ -100,7 +100,7 @@ Per impostazione predefinita, [**la funzione DefWindowProc**](/windows/desktop/a
 
 Una finestra non deve avere lo stile **\_ CS DBLCLKS** per ricevere **messaggi WM \_ NCXBUTTONDBLCLK.** Il sistema genera un messaggio **WM \_ NCXBUTTONDBLCLK** quando l'utente preme, rilascia e preme di nuovo un pulsante X entro il limite di tempo del doppio clic del sistema. Facendo doppio clic su uno di questi pulsanti vengono generati di nuovo quattro messaggi: [**WM \_ NCXBUTTONDOWN**](wm-ncxbuttondown.md), [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md), **WM \_ NCXBUTTONDBLCLK** e **WM \_ NCXBUTTONUP.**
 
-A differenza dei messaggi [**\_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e [**WM \_ NCRBUTTONDBLCLK,**](wm-ncrbuttondblclk.md) un'applicazione deve restituire **TRUE** da questo messaggio se viene elaborata. In questo modo il software che simula questo messaggio in sistemi Windows precedenti Windows 2000 può determinare se la procedura della finestra ha elaborato il messaggio o ha chiamato [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) per elaborarlo.
+A differenza dei messaggi [**\_ WM NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md), [**WM \_ NCMBUTTONDBLCLK**](wm-ncmbuttondblclk.md)e [**WM \_ NCRBUTTONDBLCLK,**](wm-ncrbuttondblclk.md) un'applicazione deve restituire **TRUE** da questo messaggio se viene elaborata. In questo modo il software che simula questo messaggio in sistemi Windows precedenti Windows 2000 può determinare se la procedura finestra ha elaborato il messaggio o ha chiamato [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) per elaborarlo.
 
 ## <a name="requirements"></a>Requisiti
 

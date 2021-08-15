@@ -48,7 +48,7 @@ HRESULT GetFilterGraph(
 *ppFG* \[ Cambio\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del grafico filtri. Riceve il valore **NULL** se non è presente alcun grafico di filtro.
+Riceve un puntatore all'interfaccia [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) del grafico di filtro. Se non è presente alcun grafico di filtro, riceve il valore **NULL.**
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Restituisce uno dei valori **HRESULT** seguenti:
 | Codice restituito                                                                                            | Descrizione                                    |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Operazione completata.<br/>                            |
-| <dl> <dt>**E \_ DEVE \_ INIT \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
-| <dl> <dt>**PUNTATORE E \_**</dt> </dl>              | Puntatore non valido.<br/>                    |
+| <dl> <dt>**E \_ DEVE \_ ESSERE INIT \_ RENDERER**</dt> </dl> | Impossibile inizializzare il motore di rendering.<br/> |
+| <dl> <dt>**PUNTATORE \_ E**</dt> </dl>              | Puntatore non valido.<br/>                    |
 
 
 
@@ -70,9 +70,9 @@ Restituisce uno dei valori **HRESULT** seguenti:
 
 ## <a name="remarks"></a>Commenti
 
-Usare il [**metodo IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) per compilare il front-end del grafico dei filtri. Per l'anteprima, [**usare IRenderEngine::RenderOutputPins**](irenderengine-renderoutputpins.md) per completare il grafico. Per l'output del file, connettere il front-end a una combinazione mux/writer di file. Per altre informazioni, vedere [Rendering di un Project](rendering-a-project.md).
+Usare il [**metodo IRenderEngine::ConnectFrontEnd**](irenderengine-connectfrontend.md) per compilare il front-end del grafico dei filtri. Per l'anteprima, usare [**IRenderEngine::RenderOutputPins**](irenderengine-renderoutputpins.md) per completare il grafico. Per l'output del file, connettere il front-end a una combinazione di mux/writer di file. Per altre informazioni, vedere [Rendering di un Project](rendering-a-project.md).
 
-Il grafo risultante può essere eseguito, sospeso, arrestato e cercato; La velocità di riproduzione non può tuttavia essere modificata.
+Il grafico risultante può essere eseguito, sospeso, arrestato e cercato; Non è tuttavia possibile modificare la velocità di riproduzione.
 
 In caso di restituzione, se il valore di *\* ppFG* è diverso da **NULL,** **l'interfaccia IGraphBuilder** ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
@@ -82,7 +82,7 @@ In caso di restituzione, se il valore di *\* ppFG* è diverso da **NULL,** **l'i
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

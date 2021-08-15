@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)'
-title: Metodo API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+description: 'Altre informazioni su: Metodo Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)'
+title: Metodo Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 TOCTitle: JetSetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Byte[],System.Int32,System.Int32,Microsoft.Isam.Esent.Interop.SetColumnGrbit,Microsoft.Isam.Esent.Interop.JET_SETINFO)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcolumn(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f52c900521d28c82245db53b98ab376dd82faec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aab9e57caed54bac02f2ad7cc62ff313a41bd0c4158082d310798e6210fb674a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977801"
 ---
-# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Metodo API. JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, SetColumnGrbit, JET_SETINFO)
+# <a name="apijetsetcolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-setcolumngrbit-jet_setinfo"></a>Metodo Api.JetSetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Byte , Int32, Int32, SetColumnGrbit, JET_SETINFO)
 
-La funzione JetSetColumn modifica un valore di colonna singolo in un record modificato da inserire o per aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore Long, ovvero una colonna di tipo [LONGTEXT](./jet-coltyp-enumeration.md) o [LongBinary](./jet-coltyp-enumeration.md).
+La funzione JetSetColumn modifica un singolo valore di colonna in un record modificato da inserire o aggiornare il record corrente. Può sovrascrivere un valore esistente, aggiungere un nuovo valore a una sequenza di valori in una colonna multivalore, rimuovere un valore da una sequenza di valori in una colonna multivalore o aggiornare tutto o parte di un valore long (una colonna di tipo [LongText](./jet-coltyp-enumeration.md) [o LongBinary).](./jet-coltyp-enumeration.md)
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -80,62 +80,62 @@ public static JET_wrn JetSetColumn(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Sessione che esegue l'aggiornamento.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursore da aggiornare. È necessario preparare un aggiornamento.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    ColumnID da impostare.
+    Columnid da impostare.
 
 <!-- end list -->
 
   - data  
-    Tipo \[\]  
+    digitare: \[\]  
     
     Dati da impostare.
 
 <!-- end list -->
 
   - dataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Dimensione dei dati da impostare.
+    Dimensioni dei dati da impostare.
 
 <!-- end list -->
 
   - dataOffset  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Offset nel buffer di dati da cui impostare i dati.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. SetColumnGrbit](./setcolumngrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetColumnGrbit](./setcolumngrbit-enumeration.md)  
     
-    Opzioni di colonna.
+    Opzioni di SetColumn.
 
 <!-- end list -->
 
-  - SetInfo  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SETINFO](./jet-setinfo-class.md)  
+  - Setinfo  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SETINFO](./jet-setinfo-class.md)  
     
-    Utilizzato per specificare l'offset ITag o long-value.
+    Usato per specificare l'offset itag o long-value.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Valore di avviso.  
 
 ## <a name="remarks"></a>Commenti
@@ -148,8 +148,8 @@ Si tratta di una versione solo interna dell'API che accetta un buffer di dati e 
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Overload JetSetColumn](./api.jetsetcolumn-method.md)
+[Overload di JetSetColumn](./api.jetsetcolumn-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

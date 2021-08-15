@@ -32,7 +32,7 @@ In questo argomento vengono illustrate le sezioni seguenti:
 
 ## <a name="using-temporary-event-consumers"></a>Uso di consumer di eventi temporanei
 
-I consumer di eventi temporanei sono script o applicazioni che restituiscono gli eventi che corrispondono a una query o a un filtro di eventi. Le query di eventi temporanei usano in [**genere IWbemServices::ExecNotificationQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) nelle applicazioni C++ [**oSWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) negli script e Visual Basic.
+I consumer di eventi temporanei sono script o applicazioni che restituiscono gli eventi che corrispondono a una query o a un filtro di eventi. Le query di eventi temporanei usano in genere [**IWbemServices::ExecNotificationQuery**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execnotificationquery) nelle applicazioni C++ o [**SWbemServices.ExecNotificationQuery**](swbemservices-execnotificationquery.md) negli script e Visual Basic.
 
 Una query di eventi richiede istanze di una classe di evento che specifica un determinato tipo di evento, ad esempio [**Win32 \_ ProcessTrace**](/previous-versions/windows/desktop/krnlprov/win32-processtrace) o [**RegistryKeyChangeEvent.**](/previous-versions/windows/desktop/regprov/registrykeychangeevent)
 
@@ -84,7 +84,7 @@ La procedura seguente descrive come creare un consumer di eventi temporaneo.
 
     I primi passaggi della codifica dipendono dal linguaggio di programmazione. In genere, si accede a WMI e si configurano le impostazioni di sicurezza. Per altre informazioni, vedere [Creazione di un'applicazione WMI o di uno script](creating-a-wmi-application-or-script.md).
 
-3.  Definire la query di eventi da usare.
+3.  Definire la query di eventi che si vuole usare.
 
     Per ottenere alcuni tipi di dati sulle prestazioni, potrebbe essere necessario usare le classi fornite dai provider ad alte prestazioni. Per altre informazioni, vedere [Monitoraggio dei dati sulle prestazioni,](monitoring-performance-data.md)Determinazione del tipo di evento da [ricevere](determining-the-type-of-event-to-receive.md)ed Esecuzione di query [con WQL.](querying-with-wql.md)
 
@@ -108,7 +108,7 @@ La procedura seguente descrive come creare un consumer di eventi temporaneo.
 
     Per le query di eventi asincrone, inserire il codice nei vari metodi o eventi dell'object sink. Per le query di eventi semisincronous, ogni oggetto viene restituito quando WMI lo ottiene, quindi il codice deve essere nel ciclo che gestisce ogni oggetto.
 
-L'esempio di codice di script seguente è una versione asincrona dello script [**\_ Win32 ProcessTrace.**](/previous-versions/windows/desktop/krnlprov/win32-processtrace) Poiché le operazioni asincrone vengono restituite immediatamente, una finestra di dialogo mantiene lo script attivo mentre è in attesa di eventi.
+L'esempio di codice di script seguente è una versione asincrona dello script [**Win32 \_ ProcessTrace.**](/previous-versions/windows/desktop/krnlprov/win32-processtrace) Poiché le operazioni asincrone vengono restituite immediatamente, una finestra di dialogo mantiene lo script attivo mentre è in attesa di eventi.
 
 Anziché chiamare [**SWbemEventSource.NextEvent**](swbemeventsource-nextevent.md) per ricevere ogni evento, lo script dispone di un gestore eventi per [**l'evento SWbemSink OnObjectReady.**](swbemsink-onobjectready.md)
 
@@ -168,7 +168,7 @@ L'elenco seguente identifica le parti necessarie per creare un consumer di event
 
 Per altre informazioni, vedere [Ricezione di eventi in qualsiasi momento.](--filtertoconsumerbinding.md)
 
-WMI fornisce diversi consumer permanenti. Le classi consumer e l'oggetto COM che contiene il codice sono preinstallati. Ad esempio, è possibile creare e configurare un'istanza della [**classe ActiveScriptEventConsumer**](activescripteventconsumer.md) per eseguire uno script quando si verifica un evento. Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md) Per un esempio di uso **di ActiveScriptEventConsumer,** vedere Esecuzione di [uno script basato su un evento](running-a-script-based-on-an-event.md).
+WMI fornisce diversi consumer permanenti. Le classi consumer e l'oggetto COM che contiene il codice sono preinstallati. Ad esempio, è possibile creare e configurare un'istanza della [**classe ActiveScriptEventConsumer**](activescripteventconsumer.md) per eseguire uno script quando si verifica un evento. Per altre informazioni, vedere [Monitoraggio e risposta agli eventi con consumer standard.](monitoring-and-responding-to-events-with-standard-consumers.md) Per un esempio di uso **di ActiveScriptEventConsumer,** vedere [Esecuzione di uno script basato su un evento](running-a-script-based-on-an-event.md).
 
 La procedura seguente descrive come creare un consumer di eventi permanente.
 
@@ -183,7 +183,7 @@ La procedura seguente descrive come creare un consumer di eventi permanente.
 
      
 
-2.  [Registrare il provider di consumer di](registering-an-event-consumer-provider.md) eventi con lo spazio dei nomi in cui si trovano le classi di evento.
+2.  [Registrare il provider di consumer di](registering-an-event-consumer-provider.md) eventi con lo spazio dei nomi in cui si trovano le classi di eventi.
 
     WMI usa un provider di consumer di eventi per trovare un consumer di eventi permanente. Il consumer di eventi permanente è l'applicazione avviata da WMI quando viene ricevuto un evento. Per registrare il consumer di eventi, i provider creano istanze [**\_ \_ di EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md).
 
@@ -194,7 +194,7 @@ La procedura seguente descrive come creare un consumer di eventi permanente.
 4.  Registrare il consumer con COM usando **l'utilità regsvr32.**
 5.  Creare un'istanza della classe di filtro eventi [**\_ \_ EventFilter**](--eventfilter.md).
 
-    Impostare i campi obbligatori per l'istanza del filtro eventi. I campi obbligatori per [**\_ \_ EventFilter**](--eventfilter.md) sono **Name,** **QueryLanguage** e **Query.** La **proprietà Name** può essere qualsiasi nome univoco per un'istanza di questa classe. La **proprietà QueryLanguage** è sempre impostata su "WQL". La **proprietà Query** è una stringa che contiene una query di eventi. Viene generato un evento quando la query di un consumer di eventi permanente ha esito negativo. L'origine dell'evento è WinMgmt, l'ID evento è 10 e il tipo di evento è Error.
+    Impostare i campi obbligatori per l'istanza del filtro eventi. I campi obbligatori per [**\_ \_ EventFilter**](--eventfilter.md) sono **Name**, **QueryLanguage** e **Query**. La **proprietà Name** può essere qualsiasi nome univoco per un'istanza di questa classe. La **proprietà QueryLanguage** è sempre impostata su "WQL". La **proprietà Query** è una stringa che contiene una query di eventi. Un evento viene generato quando la query di un consumer di eventi permanente ha esito negativo. L'origine dell'evento è WinMgmt, l'ID evento è 10 e il tipo di evento è Error.
 
 6.  Creare un'istanza della [**\_ \_ classe FilterToConsumerBinding**](--filtertoconsumerbinding.md) per associare un consumer di eventi logico a un filtro eventi.
 

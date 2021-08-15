@@ -21,8 +21,8 @@ Questa sezione contiene argomenti concettuali e procedure che descrivono Windows
 
 | Argomento                                                                     | Descrizione                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Cenni preliminari sulla decodifica](-wic-creating-decoder.md)<br/>                 | L'argomento presenta il decodificatore bitmap, un componente codec WIC di base usato per decodificare i file di immagine da un flusso.<br/> |
-| [Panoramica della decodifica progressiva](-wic-progressive-decoding.md)<br/> | In questo argomento viene illustrata la decodifica progressiva e viene illustrato come usare la decodifica progressiva nelle applicazioni.<br/>               |
+| [Panoramica della decodifica](-wic-creating-decoder.md)<br/>                 | L'argomento presenta il decodificatore bitmap, un componente codec WIC di base usato per decodificare i file di immagine da un flusso.<br/> |
+| [Panoramica della decodifica progressiva](-wic-progressive-decoding.md)<br/> | Questo argomento illustra la decodifica progressiva e come usare la decodifica progressiva nelle applicazioni.<br/>               |
 | [Procedure per decodificatori](-wic-decoder-howto-portal.md)<br/>         | Negli argomenti di questa sezione vengono forniti esempi che illustrano come eseguire attività correlate al decodificatore bitmap.<br/>     |
 
 

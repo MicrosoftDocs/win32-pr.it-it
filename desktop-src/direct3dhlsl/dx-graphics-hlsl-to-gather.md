@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4659ba19e9fa950a659969f2491533858f4658fb
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5edf92b127210a5eb05e5339a1dff4cc08ce9443e638461b71d7bf7d27c7b78a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513090"
 ---
 # <a name="gather-directx-hlsl-texture-object"></a>Gather (oggetto Texture HLSL DirectX)
 
@@ -48,7 +48,7 @@ Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'in
 </tr>
 <tr class="even">
 <td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
-<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file di effetto che contiene assegnazioni di stato.<br/></td>
+<td>[in] Stato <a href="dx-graphics-hlsl-sampler.md">del campionatore.</a> Si tratta di un oggetto dichiarato in un file degli effetti che contiene assegnazioni di stato.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="Location"></span><span id="location"></span><span id="LOCATION"></span><em>Posizione</em><br/></td>
@@ -80,7 +80,7 @@ Ottiene i quattro campioni (solo componente rosso) che verrebbero usati per l'in
 </tr>
 <tr class="even">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>compensare</em></p></td>
-<td><p>[in] Offset delle coordinate della trama facoltativo, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Il tipo di argomento dipende dal tipo di oggetto trama. Per gli shader che hanno come destinazione il modello shader 5.0 e versione superiore, i 6 bit meno significativi di ogni valore di offset vengono rispettati come valore con segno, producendo un intervallo [-32..31]. Per gli shader del modello di shader precedenti, gli offset devono essere numeri interi immediati compresi tra -8 e 7.</p>
+<td><p>[in] Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Il tipo di argomento dipende dal tipo di oggetto trama. Per gli shader che hanno come destinazione il modello shader 5.0 e versione superiore, i 6 bit meno significativi di ogni valore di offset vengono rispettati come valore con segno, producendo un intervallo [-32..31]. Per gli shader del modello di shader precedente, gli offset devono essere numeri interi immediati compresi tra -8 e 7.</p>
 
 <table>
 <thead>

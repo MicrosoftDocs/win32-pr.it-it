@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà di EsentOSSnapshotInvalidSnapIdException'
+description: Altre informazioni sulle proprietà di EsentOSSnapshotInvalidSnapIdException
 title: Proprietà di EsentOSSnapshotInvalidSnapIdException
 TOCTitle: EsentOSSnapshotInvalidSnapIdException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSnapIdException

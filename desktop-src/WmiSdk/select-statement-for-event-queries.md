@@ -1,5 +1,5 @@
 ---
-description: Descrive la sintassi di base di un'istruzione SELECT per le query di eventi.
+description: Viene descritta la sintassi di base di un'istruzione SELECT per le query di eventi.
 ms.assetid: 8882fdcb-3768-41e3-82ab-3006d903f3a0
 ms.tgt_platform: multiple
 title: Istruzione SELECT per query di eventi
@@ -14,9 +14,9 @@ ms.locfileid: "118315840"
 ---
 # <a name="select-statement-for-event-queries"></a>Istruzione SELECT per query di eventi
 
-È possibile usare un'ampia gamma di istruzioni SELECT per eseguire query sulle informazioni sugli eventi. Le istruzioni possono essere istruzioni di base o possono essere più restrittive per restringere il set di risultati restituito dalla query.
+È possibile usare un'ampia gamma di istruzioni SELECT per eseguire query per ottenere informazioni sugli eventi. Le istruzioni possono essere istruzioni di base o più restrittive per limitare il set di risultati restituito dalla query.
 
-L'esempio seguente è un'istruzione SELECT di base usata per eseguire query sulle informazioni sugli eventi.
+L'esempio seguente è un'istruzione SELECT di base utilizzata per eseguire una query per ottenere informazioni sugli eventi.
 
 
 ```sql
@@ -25,7 +25,7 @@ SELECT * FROM EventClass
 
 
 
-Quando un consumer invia una query, è una richiesta di ricevere una notifica di tutte le occorrenze dell'evento rappresentato **da EventClass**. Questa richiesta include una richiesta di notifica su tutte le proprietà del sistema di eventi e non di sistema. Quando un provider di eventi invia una query, registra il supporto per la generazione di notifiche quando si verifica un evento rappresentato **da EventClass.**
+Quando un consumer invia una query, è una richiesta di ricevere una notifica di tutte le occorrenze dell'evento rappresentato da **EventClass**. Questa richiesta include una richiesta di notifica su tutte le proprietà del sistema di eventi e non di sistema. Quando un provider di eventi invia una query, registra il supporto per la generazione di notifiche quando si verifica un evento rappresentato **da EventClass.**
 
 I consumer possono specificare singole proprietà anziché l'asterisco ( \* ) nell'istruzione SELECT.
 
@@ -70,7 +70,7 @@ Le proprietà di sistema seguenti contengono **NULL per** le query di eventi:
 
 Per altre informazioni, vedere Informazioni [di riferimento sulle proprietà di sistema WMI.](wmi-system-properties.md)
 
-Tutte le query di evento possono includere una clausola [WHERE](where-clause.md)facoltativa, ma le clausole WHERE vengono usate principalmente dai consumer per specificare filtri aggiuntivi. È consigliabile che i consumer specificano sempre una clausola WHERE. Il costo di una query complessa è minimo rispetto al costo di recapito ed elaborazione di notifiche non richieste.
+Tutte le query di evento possono includere una [clausola WHERE](where-clause.md)facoltativa, ma le clausole WHERE vengono usate principalmente dai consumer per specificare filtri aggiuntivi. È consigliabile che i consumer specificano sempre una clausola WHERE. Il costo di una query complessa è minimo rispetto al costo di recapito ed elaborazione di notifiche non richieste.
 
 Nell'esempio seguente viene illustrata una query che richiede notifiche di tutti gli eventi di modifica dell'istanza che interessano l'ipotetica **classe EmailEvent**.
 
@@ -81,7 +81,7 @@ SELECT * FROM EmailEvent
 
 
 
-Se gli eventi associati a **EmailEvent si** verificano di frequente, il consumer viene inondato di eventi. Una query migliore richiede eventi solo quando condizioni specifiche usano proprietà della classe specificata, ad esempio quando il livello di importanza è elevato.
+Se gli eventi associati **a EmailEvent si** verificano di frequente, il consumer viene inondato di eventi. Una query migliore richiede gli eventi solo quando condizioni specifiche usano proprietà della classe specificata, ad esempio quando il livello di importanza è elevato.
 
 Nell'esempio seguente viene illustrata la query che è possibile usare se **EmailImportance** è una proprietà della classe **EmailEvent**.
 
@@ -94,9 +94,9 @@ SELECT * FROM EmailEvent WHERE EmailImportance > 3
 
 Si noti che WMI può rifiutare una query per diversi motivi. Ad esempio, la query può essere troppo complessa o a elevato utilizzo di risorse per la valutazione. In questo caso, WMI restituisce codici di errore specifici, ad esempio **WBEM \_ E \_ INVALID \_ QUERY**.
 
-Le proprietà degli oggetti incorporati possono essere usate nella clausola WHERE.
+Le proprietà degli oggetti incorporati possono essere utilizzate nella clausola WHERE.
 
-L'esempio seguente illustra come eseguire una query per gli oggetti in cui la proprietà **TargetInstance** della classe di sistema [**\_ \_ InstanceModificationEvent**](--instancemodificationevent.md) è un oggetto [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) incorporato e **FreeSpace** è una proprietà di **Win32 \_ LogicalDisk.**
+L'esempio seguente illustra come eseguire una query per gli oggetti in cui la proprietà **TargetInstance** della classe di sistema [**\_ \_ InstanceModificationEvent**](--instancemodificationevent.md) è un oggetto [**\_ Win32 LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) incorporato e **FreeSpace** è una proprietà di **Win32 \_ LogicalDisk.**
 
 
 ```sql
@@ -109,7 +109,7 @@ SELECT * FROM __InstanceModificationEvent WITHIN 600
 
 ## <a name="examples"></a>Esempio
 
-[L'evento](https://Gallery.TechNet.Microsoft.Com/52716121-f386-49de-86cd-46ca54d1714f) di creazione del monitoraggio per un nome di processo specifico di esempio VBScript in TechNet usa l'istruzione SELECT per monitorare gli eventi di creazione dell'istanza WMI per il processo Win32, filtrando per un \_ nome di processo specifico.
+[L'evento](https://Gallery.TechNet.Microsoft.Com/52716121-f386-49de-86cd-46ca54d1714f) di creazione del monitoraggio per un nome di processo specifico di esempio VBScript in TechNet usa l'istruzione SELECT per monitorare gli eventi di creazione di istanze WMI per il processo Win32, filtrando in base a un \_ nome di processo specifico.
 
  
 

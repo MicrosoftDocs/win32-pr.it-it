@@ -22,7 +22,7 @@ ms.locfileid: "118376694"
 ---
 # <a name="productsourcelistclearsource-method"></a>Metodo Product.SourceListClearSource
 
-Il **metodo SourceListClearSource** rimuove un'origine di rete o URL. Accetta *Type*, il tipo di origine e *SourcePath*, il percorso di origine, come parametri da rimuovere. Questo metodo chiama [**MsiSourceListClearSource**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea).
+Il **metodo SourceListClearSource rimuove** un'origine di rete o URL. Accetta *Type*, il tipo di origine e *SourcePath*, il percorso di origine, come parametri da rimuovere. Questo metodo chiama [**MsiSourceListClearSource.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearsourcea)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versioni successive Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione 3.0 o versione successiva in Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
 | IID<br/>     | IID \_ IProduct è definito come 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 

@@ -3,9 +3,9 @@ title: Metodo IConfigAsfWriter GetCurrentProfileGuid
 description: Il metodo GetCurrentProfileGuid recupera l'oggetto corrente Windows GUID del profilo di sistema multimediale.
 ms.assetid: e7a2ecc0-48d4-446c-852a-0d7677cbbe71
 keywords:
-- Metodo GetCurrentProfileGuid per Windows Media Format
-- Metodo GetCurrentProfileGuid in formato Windows Media, interfaccia IConfigAsfWriter
-- Interfaccia IConfigAsfWriter windows Media Format, metodo GetCurrentProfileGuid
+- Metodo GetCurrentProfileGuid windows Media Format
+- Metodo GetCurrentProfileGuid windows Media Format , interfaccia IConfigAsfWriter
+- Interfaccia IConfigAsfWriter windows Media Format , metodo GetCurrentProfileGuid
 topic_type:
 - apiref
 api_name:
@@ -44,17 +44,17 @@ HRESULT GetCurrentProfileGuid(
 *pProfileGuid* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile di tipo **GUID** che identifica il profilo di sistema corrente utilizzato dal filtro.
+Puntatore a una variabile di tipo **GUID** che identifica il profilo di sistema corrente usato dal filtro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un **codice di errore HRESULT.**
+Se il metodo ha esito positivo, restituisce S \_ OK. Se non riesce, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non viene usato con i profili personalizzati (inclusi tutti i profili che includono flussi che usano i codec audio e video di Windows) perché tutti questi profili vengono creati dalle applicazioni e non hanno un identificatore GUID. Se non viene caricato alcun profilo di sistema, *pProfileGuid* verrà impostato su **NULL.**
+Questo metodo non viene usato con i profili personalizzati (inclusi tutti i profili che includono flussi che usano i codec audio e video Windows Media) perché tutti questi profili vengono creati dalle applicazioni e non hanno un identificatore GUID. Se non viene caricato alcun profilo di sistema, *pProfileGuid* verrà impostato su **NULL.**
 
 ## <a name="see-also"></a>Vedi anche
 

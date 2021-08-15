@@ -1,9 +1,9 @@
 ---
-title: Metodo INapSystemHealthAgentRequest GetCorrelationId (NapSystemHealthAgent. h)
-description: Viene usato dagli agenti di integrità del sistema per correlare le risposte SOH e SoH.
+title: Metodo INapSystemHealthAgentRequest GetCorrelationId (NapSystemHealthAgent.h)
+description: Viene usato dagli agenti di integrità del sistema per correlare SoH e SoH-Responses.
 ms.assetid: 220db71a-31d7-45a7-a8e7-ddb4955d546e
 keywords:
-- NAP metodo GetCorrelationId
+- Metodo GetCorrelationId NAP
 - Metodo GetCorrelationId NAP, interfaccia INapSystemHealthAgentRequest
 - Interfaccia INapSystemHealthAgentRequest NAP, metodo GetCorrelationId
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7af5b182df738ec22c75f2afffd1adb3591007be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2bf02a6d72aaa2744cc5a1329d791bdb9e8fa31f7453b131268245e120d7087e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686161"
 ---
-# <a name="inapsystemhealthagentrequestgetcorrelationid-method"></a>Metodo INapSystemHealthAgentRequest:: GetCorrelationId
+# <a name="inapsystemhealthagentrequestgetcorrelationid-method"></a>Metodo INapSystemHealthAgentRequest::GetCorrelationId
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapSystemHealthAgentRequest:: GetCorrelationId** viene usato dagli agenti di integrità del sistema per correlare le risposte SoH e SOH.
+Il **metodo INapSystemHealthAgentRequest::GetCorrelationId** viene usato dagli agenti di integrità del sistema per correlare SoH e SoH-Responses.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,24 +47,24 @@ HRESULT GetCorrelationId(
 
 <dl> <dt>
 
-ID correlazione  \[ out\]
+*correlationId* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un [**CorrelationId**](/windows/win32/api/naptypes/ns-naptypes-correlationid) univoco per lo scambio di rapporto di integrità.
+Puntatore a un [**CorrelationId univoco**](/windows/win32/api/naptypes/ns-naptypes-correlationid) per lo scambio SoH.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Errore delle autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -76,10 +76,10 @@ Puntatore a un [**CorrelationId**](/windows/win32/api/naptypes/ns-naptypes-corre
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                |
-| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Intestazione<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagentrt.dll</dt> </dl>             |
 
 

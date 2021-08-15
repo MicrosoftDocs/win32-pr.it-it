@@ -17,7 +17,7 @@ Questo evento notifica al [controllo DirectoryList che](directorylist-control.md
 
 Questo evento deve essere pubblicato da un [controllo PushButton](pushbutton-control.md) che si trova nella stessa finestra di dialogo del controllo che sottoscrive l'evento. L'evento deve essere creato nella [tabella ControlEvent](controlevent-table.md).
 
-Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Interfaccia utente Levels.](user-interface-levels.md)
+Questo ControlEvent richiede che l'interfaccia utente sia eseguita a livello [*completo dell'interfaccia*](f-gly.md) utente. Questo evento non funzionerà con un'interfaccia utente [*ridotta o*](r-gly.md) un'interfaccia utente [*di base.*](b-gly.md) Per informazioni, vedere [Livelli Interfaccia utente.](user-interface-levels.md)
 
 Si noti che se questo ControlEvent viene chiamato di nuovo quando esiste già una nuova cartella, non verrà creata una seconda nuova cartella. In questo caso, la chiamata a DirectoryListNew seleziona il nome della nuova cartella esistente per la modifica.
 

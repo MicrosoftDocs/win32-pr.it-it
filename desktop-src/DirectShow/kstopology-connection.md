@@ -1,7 +1,7 @@
 ---
-description: Questo argomento si applica Windows XP Service Pack 2 o versione successiva. La struttura KSTOPOLOGY CONNECTION descrive una connessione di nodo \_ all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto nel filtro.
+description: Questo argomento si applica Windows XP Service Pack 2 o versioni successive. La struttura KSTOPOLOGY CONNECTION descrive una connessione del nodo \_ all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto sul filtro.
 ms.assetid: 8fca47b7-4c52-46db-809c-77a0e3414276
-title: KSTOPOLOGY_CONNECTION struttura (Ks.h)
+title: KSTOPOLOGY_CONNECTION (Ks.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,9 +22,9 @@ ms.locfileid: "118397245"
 ---
 # <a name="kstopology_connection-structure"></a>Struttura KSTOPOLOGY \_ CONNECTION
 
-Questo argomento si applica Windows XP Service Pack 2 o versione successiva.
+Questo argomento si applica Windows XP Service Pack 2 o versioni successive.
 
-La **struttura KSTOPOLOGY \_ CONNECTION** descrive una connessione di nodo all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto nel filtro.
+La **struttura KSTOPOLOGY \_ CONNECTION** descrive una connessione del nodo all'interno di un filtro di streaming del kernel (KS). Un nodo può essere connesso a un altro nodo all'interno del filtro o a un segnaposto sul filtro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -68,7 +68,7 @@ Indice del nodo downstream nella connessione. Se la connessione downstream è un
 **ToNodePin**
 </dt> <dd>
 
-Se il valore del **campo ToNode** è KSFILTER NODE, questo campo \_ specifica l'indice del pin downstream. In caso contrario, questo campo viene ignorato.
+Se il valore del campo **ToNode** è KSFILTER NODE, questo campo specifica \_ l'indice del pin downstream. In caso contrario, questo campo viene ignorato.
 
 </dd> </dl>
 

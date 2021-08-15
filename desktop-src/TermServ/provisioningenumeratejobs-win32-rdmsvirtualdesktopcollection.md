@@ -1,5 +1,5 @@
 ---
-title: Metodo ProvisioningEnumerateJobs della Win32_RDMSVirtualDesktopCollection classe
+title: Metodo ProvisioningEnumerateJobs della classe Win32_RDMSVirtualDesktopCollection
 description: Enumera i processi di provisioning di desktop virtuali per questo servizio.
 ms.assetid: 4bd2b03f-ba8c-483e-af09-270424f9b1ed
 ms.tgt_platform: multiple
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118350223"
 ---
-# <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo ProvisioningEnumerateJobs della classe \_ WIN32 RDMSVirtualDesktopCollection
+# <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Metodo ProvisioningEnumerateJobs della classe \_ RDMSVirtualDesktopCollection Win32
 
 Enumera i processi di provisioning di desktop virtuali per questo servizio.
 
@@ -45,7 +45,7 @@ uint32 ProvisioningEnumerateJobs(
 
 <dl> <dt>
 
-*Tipo di processo* \[ Pollici\]
+*JobType* \[ Pollici\]
 </dt> <dd>
 
 Intero che specifica il tipo di processo da enumerare.
@@ -57,7 +57,7 @@ Questo parametro può essere impostato su uno dei valori seguenti:
 0
 </dt> <dd>
 
-Processi in esecuzione
+Esecuzione di processi
 
 </dd> <dt>
 
@@ -71,20 +71,20 @@ Processi completati
 *CollectionAlias* \[ Pollici\]
 </dt> <dd>
 
-Alias dell'insieme di desktop virtuali da enumerare. Il valore predefinito per questo parametro è FALSE, che specifica che tutti i processi in esecuzione devono essere enumerati.
+Alias della raccolta di desktop virtuali da enumerare. Il valore predefinito per questo parametro è FALSE, che specifica che tutti i processi in esecuzione devono essere enumerati.
 
 </dd> <dt>
 
 *JobGuids* \[ Cambio\]
 </dt> <dd>
 
-Matrice che contiene i GUID **dei processi di** provisioning da enumerare.
+Matrice che contiene i **GUID dei** processi di provisioning da enumerare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codice di errore WMI.
+Restituisce 0 in caso di esito positivo, in caso contrario restituisce un codice di errore WMI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ Restituisce 0 in caso di esito positivo. In caso contrario, restituisce un codic
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                   |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                              |
-| Spazio dei nomi<br/>                | Root \\ CIMv2 \\ rdms<br/>                                                                |
+| Spazio dei nomi<br/>                | Rdms \\ CIMv2 \\ radice<br/>                                                                |
 | MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 

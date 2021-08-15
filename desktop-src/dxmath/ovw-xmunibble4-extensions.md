@@ -1,5 +1,5 @@
 ---
-description: XMUNIBBLE4 descrive un vettore 4D con quattro componenti integer a 4 bit senza segno.
+description: XMUNIBBLE4 descrive un vettore 4D con quattro componenti integer senza segno a 4 bit.
 ms.assetid: c9581948-f80f-4467-94a2-d6da2ddedb26
 title: Estensioni XMUNIBBLE4
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118500888"
 ---
 # <a name="xmunibble4-extensions"></a>Estensioni XMUNIBBLE4
 
-[**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) descrive un vettore 4D con quattro componenti integer a 4 bit senza segno.
+[**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) descrive un vettore 4D con quattro componenti integer senza segno a 4 bit.
 
 > [!Note]  
 > Le funzionalità elencate di seguito sono disponibili solo quando si sviluppa con C++.

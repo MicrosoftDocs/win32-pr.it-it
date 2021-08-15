@@ -1,9 +1,9 @@
 ---
-title: CASELLA. getSelectionEnd
-description: Il metodo getSelectionEnd recupera la posizione finale del testo selezionato nel controllo casella.
+title: EDITBOX.getSelectionEnd
+description: Il metodo getSelectionEnd recupera la posizione finale del testo selezionato nel controllo casella di modifica.
 ms.assetid: 82a445da-3c50-41b7-8ac8-da6c860056ba
 keywords:
-- Media Player Windows casella. getSelectionEnd
+- EDITBOX.getSelectionEnd Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f27c2974360e7e77becfa67a27b4e96b529ad1e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8dff56bda802286ed76ba3b448478dfa57d005c13baf229612e190bbf163b25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838845"
 ---
-# <a name="editboxgetselectionend"></a>CASELLA. getSelectionEnd
+# <a name="editboxgetselectionend"></a>EDITBOX.getSelectionEnd
 
-Il metodo **getSelectionEnd** recupera la posizione finale del testo selezionato nel controllo casella.
+Il **metodo getSelectionEnd** recupera la posizione finale del testo selezionato nel controllo casella di modifica.
 
 ``` syntax
         elementID.getSelectionEnd()
@@ -34,7 +34,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **numero** (**Long**).
+Questo metodo restituisce un **valore Number** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
@@ -58,16 +58,16 @@ Questo metodo può essere chiamato solo dopo che il controllo diventa visibile.
 
 <dl> <dt>
 
-[**Elemento casella**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**CASELLA. getSelectionStart**](editbox-getselectionstart.md)
+[**EDITBOX.getSelectionStart**](editbox-getselectionstart.md)
 </dt> <dt>
 
-[**CASELLA. replaceSelection**](editbox-replaceselection.md)
+[**EDITBOX.replaceSelection**](editbox-replaceselection.md)
 </dt> <dt>
 
-[**CASELLA. seselection**](editbox-setselection.md)
+[**EDITBOX.setSelection**](editbox-setselection.md)
 </dt> </dl>
 
  

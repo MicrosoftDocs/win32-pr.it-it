@@ -1,9 +1,9 @@
 ---
 title: BUTTONGROUP.showBackground
-description: L'attributo showBackground specifica o recupera un valore che indica se BUTTONGROUP visualizza solo i pulsanti o visualizza la bitmap completa specificata nell'attributo image.
+description: L'attributo showBackground specifica o recupera un valore che indica se BUTTONGROUP visualizza solo i pulsanti o visualizza l'intera bitmap specificata nell'attributo image.
 ms.assetid: 5c3fc873-937c-4dad-ac18-e7a37004ee1e
 keywords:
-- BUTTONGROUP.showBackground Windows Media Player
+- ButtonGROUP.showBackground Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118342674"
 ---
 # <a name="buttongroupshowbackground"></a>BUTTONGROUP.showBackground
 
-**L'attributo showBackground** specifica o recupera un valore che indica se **BUTTONGROUP** visualizza solo i pulsanti oppure visualizza la bitmap completa specificata nell'attributo **image.**
+**L'attributo showBackground** specifica o recupera un valore che indica se **BUTTONGROUP** visualizza solo i pulsanti o visualizza l'intera bitmap specificata nell'attributo **image.**
 
 ``` syntax
         elementID.showBackground
@@ -35,7 +35,7 @@ Questo attributo è un valore booleano di **lettura/scrittura.**
 
 | Valore | Descrizione                                                                                |
 |-------|--------------------------------------------------------------------------------------------|
-| true  | I pulsanti vengono visualizzati e l'area non occupata dai pulsanti viene disegnata dalla bitmap Immagine. |
+| true  | I pulsanti vengono visualizzati e l'area non occupata dai pulsanti viene disegnata dalla bitmap Image. |
 | false | Valore predefinito. Vengono visualizzati solo i pulsanti.                                                   |
 
 
@@ -44,9 +44,9 @@ Questo attributo è un valore booleano di **lettura/scrittura.**
 
 ## <a name="remarks"></a>Commenti
 
-Quando **showBackground** è true, l'intera **immagine principale** sarà visibile.
+Quando **showBackground** è true, l'intera immagine **principale** sarà visibile.
 
-Quando **showBackground** è false, verrà eseguito il rendering solo delle aree corrispondenti al **mapping** assegnatoI colori dell'immagine. In altre parole, saranno **visibili solo gli elementi BUTTONELEMEN Con** **mappingColor** assegnato.
+Quando **showBackground** è false, verrà eseguito il rendering solo delle aree corrispondenti al **mapping assegnato Colori** immagine. In altre parole, saranno **visibili solo gli elementi BUTTONELEMENT** a cui è assegnato il **mappingColor.**
 
 Se viene specificato un valore non valido, viene mantenuto lo stato precedente.
 

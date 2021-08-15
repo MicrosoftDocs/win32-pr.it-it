@@ -98,7 +98,7 @@ Forza la compilazione di questa enumerazione a 32 bit. Senza questo valore, alcu
 
 ## <a name="remarks"></a>Commenti
 
-[L'uso di strisce triangolo](triangle-strips.md) o ventole triangolo [(Direct3D 9)](triangle-fans.md) è spesso più efficiente rispetto all'uso di elenchi di triangoli perché vengono duplicati meno vertici.
+[L'uso di strisce triangolo](triangle-strips.md) o ventole triangolare [(Direct3D 9)](triangle-fans.md) è spesso più efficiente rispetto all'uso di elenchi di triangoli perché vengono duplicati meno vertici.
 
 ## <a name="requirements"></a>Requisiti
 

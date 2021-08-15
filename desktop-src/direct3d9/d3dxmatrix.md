@@ -1,5 +1,5 @@
 ---
-description: "Struttura D3DXMATRIX (D3dx9math.h): matrice 4x4 che contiene metodi e overload dell'operatore."
+description: 'Struttura D3DXMATRIX (D3dx9math.h): matrice 4x4 che contiene metodi e overload degli operatori.'
 ms.assetid: 0911088b-50cf-4c4a-996e-351386fc359b
 title: Struttura D3DXMATRIX (D3dx9math.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: fad44c13f7b856270fe6475f9e099f6e1714e064
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7390b31aa2cc2c81d3d56656efb3c9ff3b6c1de81bf3e5d4de471fd1f7058553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525332"
 ---
 # <a name="d3dxmatrix-structure-d3dx9mathh"></a>Struttura D3DXMATRIX (D3dx9math.h)
 
-Matrice 4x4 che contiene metodi e overload dell'operatore.
+Matrice 4x4 che contiene metodi e overload degli operatori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Componente (i, j) della matrice, dove i è il numero di riga e j è il numero di colonna. Ad esempio, 34 indica lo stesso ₃₄ , il componente \_ nella terza riga e nella quarta \[ \] colonna.
+Componente (i, j) della matrice, dove i è il numero di riga e j è il numero di colonna. Ad esempio, \_ 34 indica lo stesso valore ₃₄ , il componente nella terza riga e nella quarta \[ \] colonna.
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ Componente (i, j) della matrice, dove i è il numero di riga e j è il numero di
 
 I programmatori C non possono usare la struttura D3DXMATRIX, ma devono usare la [**struttura D3DMATRIX.**](d3dmatrix.md) I programmatori C++ possono sfruttare i costruttori di overload e gli operatori di assegnazione, unari e binari (inclusa l'uguaglianza).
 
-In D3DX \_ l'elemento 34 di una matrice di proiezione non può essere un numero negativo. Se l'applicazione deve usare un valore negativo in questa posizione, deve invece ridimensionare l'intera matrice di proiezione di -1.
+In D3DX l'elemento \_ 34 di una matrice di proiezione non può essere un numero negativo. Se l'applicazione deve usare un valore negativo in questa posizione, deve invece ridimensionare l'intera matrice di proiezione di -1.
 
 ### <a name="d3dxmatrix-extensions"></a>Estensioni D3DXMATRIX
 
-**D3DXMATRIX** include le estensioni C++ seguenti.
+**D3DXMATRIX include** le estensioni C++ seguenti.
 
 
 ```

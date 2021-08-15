@@ -65,7 +65,7 @@ Se il carattere non è alfanumerico, il valore restituito è zero. Per informazi
 
 ## <a name="remarks"></a>Osservazioni
 
-**IsCharAlphaNumericWrapW** offre la possibilità di usare stringhe Unicode nei sistemi operativi precedenti Windows XP. Il metodo preferito è usare [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) insieme al livello Microsoft per Unicode (MSLU).
+**IsCharAlphaNumericWrapW** consente di usare stringhe Unicode nei sistemi operativi precedenti Windows XP. Il metodo preferito è usare [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) insieme al livello Microsoft per Unicode (MSLU).
 
 **IsCharAlphaNumericWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando il numero ordinale 28.
 

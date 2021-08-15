@@ -1,7 +1,7 @@
 ---
-description: Genera un nuovo mapping del volto ottimizzato per un elenco di triangolo.
+description: Genera un remapping del viso ottimizzato per un elenco di triangoli.
 ms.assetid: 428c2af8-43e7-4cf7-8b9b-04ba5cff82c8
-title: Funzione D3DXOptimizeFaces (D3DX9Mesh. h)
+title: Funzione D3DXOptimizeFaces (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6c56dec04e01b542d2c760852a58826a8186c213
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 165f81d9b829ce7a7b22ced6fb37851f926ed861f11b79feca3a63c763dabbb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525230"
 ---
-# <a name="d3dxoptimizefaces-function"></a>D3DXOptimizeFaces (funzione)
+# <a name="d3dxoptimizefaces-function"></a>Funzione D3DXOptimizeFaces
 
-Genera un nuovo mapping del volto ottimizzato per un elenco di triangolo.
+Genera un remapping del viso ottimizzato per un elenco di triangoli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,48 +44,48 @@ HRESULT D3DXOptimizeFaces(
 
 <dl> <dt>
 
-*pIndices* \[ in\]
+*pIndices* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntatore agli indici di elenco di triangolo da usare per l'ordinamento dei vertici.
+Puntatore agli indici dell'elenco triangolare da usare per l'ordinamento dei vertici.
 
 </dd> <dt>
 
-*NumFaces* \[ in\]
+*NumFaces* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di visi nell'elenco dei triangoli. Per le mesh a 16 bit, questo limite è di 2 ^ 16-1 (65535) o di un numero inferiore di visi.
+Numero di visi nell'elenco dei triangoli. Per le mesh a 16 bit, questo valore è limitato a 2^16 - 1 (65535) o meno visi.
 
 </dd> <dt>
 
-*NumVertices* \[ in\]
+*NumVertices* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Numero di vertici a cui fa riferimento l'elenco dei triangoli.
+Numero di vertici a cui fa riferimento l'elenco di triangoli.
 
 </dd> <dt>
 
-*Indices32Bit* \[ in\]
+*Indici32Bit* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Flag che indica il tipo di indice: **true** se gli indici sono a 32 bit (più di 65535 indici); **false** se gli indici sono a 16 bit (65535 o un numero inferiore di indici).
+Flag che indica il tipo di indice: **TRUE** se gli indici sono a 32 bit (più di 65535 indici), **FALSE** se gli indici sono a 16 bit (65535 o un numero inferiore di indici).
 
 </dd> <dt>
 
-*pFaceRemap* \[ in uscita\]
+*pFaceRemap* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntatore al quadrante mesh originale diviso per generare la faccia corrente.
+Puntatore al viso mesh originale diviso per generare il viso corrente.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntatore al quadrante mesh originale diviso per generare la faccia corrente.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzione ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Commenti
 
-La procedura di ottimizzazione di questa funzione è equivalente dal punto di vista funzionale alla chiamata a [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) con il \_ flag D3DXMESHOPT DEVICEINDEPENDENT, ma questa funzione consente un uso più efficiente delle cache dei vertici.
+La procedura di ottimizzazione di questa funzione è funzionalmente equivalente alla chiamata di [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con il flag D3DXMESHOPT DEVICEINDEPENDENT, ma questa funzione rende più efficiente l'uso delle \_ cache dei vertici.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -105,8 +105,8 @@ La procedura di ottimizzazione di questa funzione è equivalente dal punto di vi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

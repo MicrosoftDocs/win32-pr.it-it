@@ -1,5 +1,5 @@
 ---
-description: Indica se il contesto del tablet si trova nell'hook più in alto.
+description: Indica se il contesto del tablet si trova nell'hook più alto.
 ms.assetid: b4aaee47-3d77-49cd-9600-f41764b9fb85
 title: Metodo ITabletContextP::IsTopMostHook
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118449804"
 ---
 # <a name="itabletcontextpistopmosthook-method"></a>Metodo ITabletContextP::IsTopMostHook
 
-Indica se il contesto del tablet si trova nell'hook più in alto.
+Indica se il contesto del tablet si trova nell'hook più alto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,7 +59,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

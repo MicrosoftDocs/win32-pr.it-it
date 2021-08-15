@@ -1,6 +1,6 @@
 ---
-title: WavePrefixCountBits (funzione)
-description: Restituisce la somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici più piccoli della corsia corrente.
+title: Funzione WavePrefixCountBits
+description: Restituisce la somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici inferiori alla corsia corrente.
 ms.assetid: AEC9AFD7-6478-4397-B531-73990D30AA48
 keywords:
 - Funzione WavePrefixCountBits HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72f35df1e463ff89441938e4cae19a890821baf9
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
-ms.translationtype: HT
+ms.openlocfilehash: 048b63d24e87d97f0e0223083a91694c0471b9e38ad21afbc487c02d711d720d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104047599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504677"
 ---
-# <a name="waveprefixcountbits-function"></a>WavePrefixCountBits (funzione)
+# <a name="waveprefixcountbits-function"></a>Funzione WavePrefixCountBits
 
-Restituisce la somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici più piccoli della corsia corrente.
+Restituisce la somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici inferiori alla corsia corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,11 +48,11 @@ Variabili booleane specificate.
 
 ## <a name="return-value"></a>Valore restituito
 
-Somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici più piccoli della corsia corrente.
+Somma di tutte le variabili booleane specificate impostate su true in tutte le corsie attive con indici inferiori alla corsia corrente.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è supportata dal modello di shader 6,0 in tutte le fasi dello shader. 
+Questa funzione è supportata dal modello shader 6.0 in tutte le fasi dello shader. 
 
 
 
@@ -84,7 +84,7 @@ buffer[appendOffset] = myData; // write to the offset location for this lane
 
 <dl> <dt>
 
-[Panoramica del modello di shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Panoramica del modello shader 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
 [Modello shader 6](shader-model-6-0.md)

@@ -13,9 +13,9 @@ ms.locfileid: "118376384"
 ---
 # <a name="publishcomponent-table"></a>Tabella PublishComponent
 
-La tabella PublishComponent associa i componenti elencati nella [tabella Component](component-table.md) a una stringa di testo qualificatore e a un GUID ID categoria. I componenti con funzionalità parallele raggruppati in questo modo vengono definiti componenti qualificati. Vedere [Componenti qualificati](qualified-components.md). Questo fornisce al programma di installazione un metodo per il riferimento indiretto a livello singolo quando si fa riferimento ai componenti. Vedere [Uso di componenti qualificati](using-qualified-components.md).
+La tabella PublishComponent associa i componenti elencati nella [tabella Component](component-table.md) a una stringa di testo qualificatore e a un GUID ID categoria. I componenti con funzionalità parallele raggruppate in questo modo vengono definiti componenti qualificati. Vedere [Componenti qualificati.](qualified-components.md) Questo fornisce al programma di installazione un metodo per il riferimento indiretto a livello singolo quando si fa riferimento ai componenti. Vedere [Uso di componenti qualificati.](using-qualified-components.md)
 
-La tabella PublishComponent include le colonne seguenti.
+La tabella PublishComponent contiene le colonne seguenti.
 
 
 
@@ -38,35 +38,35 @@ La tabella PublishComponent include le colonne seguenti.
 <span id="ComponentId"></span><span id="componentid"></span><span id="COMPONENTID"></span>Componentid
 </dt> <dd>
 
-GUID stringa [che](guid.md) rappresenta la categoria di componenti raggruppati. Si noti che il titolo di questa colonna è fuorviante. Si tratta del GUID per la categoria di componenti qualificati e non corrisponde al GUID visualizzato nella colonna ComponentId della [tabella Component](component-table.md). In questo caso si riferisce a un server che fornisce la funzionalità di un componente ai client esterni anziché al componente stesso.
+GUID stringa [che](guid.md) rappresenta la categoria di componenti raggruppati. Si noti che il titolo di questa colonna è fuorviante. Questo è il GUID per la categoria dei componenti qualificati e non è lo stesso GUID visualizzato nella colonna ComponentId della [tabella Component](component-table.md). In questo caso si riferisce a un server che fornisce la funzionalità di un componente a client esterni anziché al componente stesso.
 
 </dd> <dt>
 
 <span id="Qualifier"></span><span id="qualifier"></span><span id="QUALIFIER"></span>Qualificatore
 </dt> <dd>
 
-Stringa di testo che qualifica il valore nella colonna ComponentId. Un qualificatore viene usato per distinguere più forme dello stesso componente, ad esempio un componente implementato in più linguaggi. Si tratta delle stringhe di testo del qualificatore restituite da [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa).
+Stringa di testo che qualifica il valore nella colonna ComponentId. Un qualificatore viene usato per distinguere più forme dello stesso componente, ad esempio un componente implementato in più linguaggi. Si tratta delle stringhe di testo del qualificatore [**restituite da MsiEnumComponentQualifiers.**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa)
 
 </dd> <dt>
 
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chiave esterna nella colonna uno della [tabella Componente](component-table.md). Questo identificatore fa riferimento al record del componente completo nella tabella Component.
+Chiave esterna nella colonna uno della [tabella Component](component-table.md). Questo identificatore fa riferimento al record del componente qualificato nella tabella Component.
 
 </dd> <dt>
 
 <span id="AppData"></span><span id="appdata"></span><span id="APPDATA"></span>Appdata
 </dt> <dd>
 
-Testo localizzabile facoltativo che descrive il componente completo di questo record. La stringa viene in genere analizzata dall'applicazione e può essere visualizzata all'utente. Deve descrivere il componente completo. Può essere recuperato con [**MsiEnumComponentQualifiers**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa).
+Testo localizzabile facoltativo che descrive il componente qualificato di questo record. La stringa viene in genere analizzata dall'applicazione e può essere visualizzata all'utente. Deve descrivere il componente qualificato. Può essere recuperato con [**MsiEnumComponentQualifiers.**](/windows/desktop/api/Msi/nf-msi-msienumcomponentqualifiersa)
 
 </dd> <dt>
 
 <span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Funzionalità\_
 </dt> <dd>
 
-Chiave esterna nella colonna 1 della [tabella Funzionalità](feature-table.md). Questa è la funzionalità che usa questo componente completo.
+Chiave esterna nella colonna 1 della [tabella Delle funzionalità](feature-table.md). Questa è la funzionalità che usa questo componente qualificato.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Chiave esterna nella colonna 1 della [tabella Funzionalità](feature-table.md). 
 
 Questa tabella viene indicata quando viene eseguita [l'azione PublishComponents](publishcomponents-action.md) o [UnpublishComponents.](unpublishcomponents-action.md)
 
-Si noti che il nome di questa tabella è fuorviante. Questa tabella non è necessaria per creare un annuncio. Per informazioni su come impostare [](feature-table.md) lo stato di installazione dei componenti da [annunciare,](component-table.md) vedere la colonna Attributi della tabella Componente e la tabella Funzionalità.
+Si noti che il nome di questa tabella è fuorviante. Questa tabella non è necessaria per creare annunci pubblicitari. Vedere la colonna Attributi della tabella [Componente e](component-table.md) la [tabella Funzionalità](feature-table.md) per informazioni su come impostare lo stato di installazione dei componenti da annunciare.
 
 ## <a name="validation"></a>Convalida
 

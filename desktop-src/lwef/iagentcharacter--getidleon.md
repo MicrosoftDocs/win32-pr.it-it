@@ -21,7 +21,7 @@ HRESULT GetIdleOn(
 );
 ```
 
-Indica lo stato di elaborazione inattiva automatica per un carattere.
+Indica lo stato di elaborazione automatica inattiva per un carattere.
 
 -   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
@@ -30,7 +30,7 @@ Indica lo stato di elaborazione inattiva automatica per un carattere.
 <span id="pbOn"></span><span id="pbon"></span><span id="PBON"></span>*pbOn*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve **True se** il server Microsoft Agent riproduce automaticamente le animazioni di stato **idling** per un carattere e **False** in caso contrario.
+Indirizzo di una variabile che riceve **True se** il server Microsoft Agent riproduce automaticamente animazioni di stato **idling** per un carattere e **False** in caso contrario.
 
 </dd> </dl>
 

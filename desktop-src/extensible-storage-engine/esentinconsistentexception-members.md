@@ -17,9 +17,9 @@ ms.locfileid: "118496120"
 # <a name="esentinconsistentexception-members"></a>Membri di EsentInconsistentException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
-Classe di base per le eccezioni incoerenti.
+Classe di base per eccezioni incoerenti.
 
 Il [tipo EsentInconsistentException](./esentinconsistentexception-class.md) espone i membri seguenti.
 
@@ -37,7 +37,7 @@ Il [tipo EsentInconsistentException](./esentinconsistentexception-class.md) espo
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn274374(v=exchg.10).md">EsentInconsistentException(SerializationInfo, StreamingContext)</a></td>
-<td>Inizializza una nuova istanza della classe EsentInconsistentException. Questo costruttore viene usato per deserializzare un'eccezione serializzata.</td>
+<td>Inizializza una nuova istanza della classe EsentInconsistentException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
@@ -130,7 +130,7 @@ Inizio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ Inizio
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando sottoposto a override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
+<td>Quando ne viene eseguito l'override in una classe derivata, imposta <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> con informazioni sull'eccezione. Ereditato da <a href="dn274314(v=exchg.10).md">EsentErrorException.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>

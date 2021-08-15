@@ -13,7 +13,7 @@ ms.locfileid: "118327051"
 ---
 # <a name="active-accessibility-objects"></a>Active Accessibility oggetti
 
-Nella Microsoft Active Accessibility terminologia sono disponibili *oggetti accessibili* ed elementi *semplici.* Sebbene la maggior parte delle applicazioni contenga entrambi, gli oggetti accessibili sono più comuni degli elementi semplici. Questa sezione definisce e illustra gli oggetti accessibili e gli elementi semplici e fornisce esempi di interfaccia utente appropriati.
+Nella Microsoft Active Accessibility terminologia sono disponibili *oggetti accessibili* ed *elementi semplici.* Sebbene la maggior parte delle applicazioni contenga entrambi, gli oggetti accessibili sono più comuni degli elementi semplici. Questa sezione definisce e illustra gli oggetti accessibili e gli elementi semplici e fornisce esempi di interfaccia utente appropriati.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -22,7 +22,7 @@ Nella Microsoft Active Accessibility terminologia sono disponibili *oggetti acce
 -   [Come vengono usati gli ID figlio nei parametri](how-child-ids-are-used-in-parameters.md)
 -   [Elementi Interfaccia utente personalizzati](custom-user-interface-elements.md)
 -   [Interfacce duali: IAccessible e IDispatch](dual-interfaces--iaccessible-and-idispatch.md)
--   [Elementi Interfaccia utente di sistema](system-provided-user-interface-elements.md)
+-   [Elementi Interfaccia utente forniti dal sistema](system-provided-user-interface-elements.md)
 
  
 

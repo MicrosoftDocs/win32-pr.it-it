@@ -24,7 +24,7 @@ Questo argomento è organizzato come segue:
 
 ## <a name="best-practices-for-windows-federated-search"></a>Procedure consigliate per Windows ricerca federata
 
-Le procedure consigliate per [l'uso OpenSearch](https://github.com/dewitt/opensearch) in Windows 7 sono le seguenti:
+Le procedure consigliate per [l'OpenSearch](https://github.com/dewitt/opensearch) in Windows 7 sono le seguenti:
 
 -   Supportare *i parametri {startIndex}* e *{count}* e assicurarsi di restituire sempre il numero di elementi richiesti, a meno che non venga restituito l'ultimo dei risultati.
 -   Se si conosce l'estensione del nome file, eseguire il mapping alla proprietà [System.FileExtension](../properties/props-system-fileextension.md) Windows Shell. L'uso delle estensioni di file è un modo migliore per identificare un tipo di file rispetto al tipo MIME.
@@ -37,7 +37,7 @@ Le procedure consigliate per [l'uso OpenSearch](https://github.com/dewitt/opense
      
 
 -   Non inserire tag HTML dove non appartengono. In base alla specifica RSS, sono validi nel campo della descrizione, ma non nel campo del titolo.
--   Non creare enclosure per gli elementi della pagina Web. Ad esempio, se si crea un'enclosure e si esegue il mapping di un'estensione di file aspx, il file viene scaricato da Windows Explorer nella cache Internet ed eseguito da questa cartella. I Web browser non gestiscono il tipo di file aspx. L'utente otterrà **una Apri con** di dialogo oppure il file potrebbe essere aperto da un'applicazione come Microsoft Visual Studio. Per evitare questo problema, restituire un elemento link solo per le pagine Web.
+-   Non creare enclosure per gli elementi della pagina Web. Ad esempio, se si crea un'enclosure e si esegue il mapping di un'estensione di file aspx, il file viene scaricato da Windows Explorer nella cache Internet ed eseguito da questa cartella. I Web browser non gestiscono il tipo di file aspx. L'utente otterrà **una Apri con** finestra di dialogo oppure il file potrebbe essere aperto da un'applicazione come Microsoft Visual Studio. Per evitare questo problema, restituire un elemento link solo per le pagine Web.
 -   Specificare un URL di roll over Web nel file con estensione osdx usando un modello di URL con `format="text\html"` .
 -   Specificare un URL per la cartella padre, il contenitore o la pagina Web tramite il mapping di un valore URL dell'elemento personalizzato alla proprietà [System.ItemFolderPathDisplay](../properties/props-system-itempathdisplay.md) Windows Shell.
 

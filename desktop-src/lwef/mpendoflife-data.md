@@ -1,9 +1,9 @@
 ---
-title: MPENDOFLIFE_DATA struttura (MpClient.h)
-description: '\ 0034; Fine del ciclo di vita \ 0034; dati di notifica.'
+title: MPENDOFLIFE_DATA (MpClient.h)
+description: '\ 0034; Fine vita \ 0034; dati di notifica.'
 ms.assetid: 00C2E707-9034-4BBC-99CF-3DFA4B8C08D9
 keywords:
-- MPENDOFLIFE_DATA struttura Legacy Windows Environment Features
+- MPENDOFLIFE_DATA funzionalità dell'ambiente Windows legacy
 - PMPENDOFLIFE_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
@@ -24,7 +24,7 @@ ms.locfileid: "118476283"
 ---
 # <a name="mpendoflife_data-structure"></a>Struttura MPENDOFLIFE \_ DATA
 
-Dati di notifica "Fine vita".
+Dati di notifica "Fine del ciclo di vita".
 
 ## <a name="syntax"></a>Sintassi
 
@@ -73,7 +73,7 @@ Tipo: **BOOL**
 
 </dd> <dd>
 
-True se l'amministratore controlla i criteri per la visualizzazione della notifica. Se impostato, indica all'interfaccia utente di non visualizzare la notifica EOL.
+True se l'amministratore controlla i criteri per visualizzare la notifica. Se impostato, indica all'interfaccia utente di non visualizzare la notifica EOL.
 
 </dd> <dt>
 

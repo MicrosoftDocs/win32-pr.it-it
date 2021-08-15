@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentFileSystemCorruptionException'
+description: Altre informazioni sul costruttore EsentFileSystemCorruptionException
 title: Costruttore EsentFileSystemCorruptionException
 TOCTitle: 'EsentFileSystemCorruptionException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFileSystemCorruptionException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fad504c9757bbf3188426619e2bbe59a32a4ddf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b2bac9d13cddd5b8139c736979234af1e05f205b1484fcad5068788c835c19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973461"
 ---
 # <a name="esentfilesystemcorruptionexception-constructor"></a>Costruttore EsentFileSystemCorruptionException
 
 Inizializza una nuova istanza della classe EsentFileSystemCorruptionException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentFileSystemCorruptionException()
 
 [Membri di EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

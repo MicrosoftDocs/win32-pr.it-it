@@ -58,7 +58,7 @@ Nome del server il cui DSDM deve essere modificato.
 *lpszShareName* \[ Pollici\]
 </dt> <dd>
 
-Nome del nome della condivisione di cui modificare le informazioni. Questo parametro non può essere **NULL.**
+Nome del nome della condivisione le cui informazioni devono essere modificate. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Livello di informazioni. Questo parametro deve essere 2.
 *lpBuffer* \[in\]
 </dt> <dd>
 
-Puntatore alla [**struttura NDDESHAREINFO**](nddeshareinfo-str.md) che specifica le informazioni sulla condivisione DDE da archiviare in DSDM. Attualmente le informazioni sulla condivisione DDE vengono modificate nel suo complesso, cio' non vengono apportate modifiche parziali. Questo parametro non può essere **NULL.**
+Puntatore alla [**struttura NDDESHAREINFO**](nddeshareinfo-str.md) che specifica le informazioni sulla condivisione DDE da archiviare nel DSDM. Attualmente le informazioni sulla condivisione DDE vengono modificate nel suo complesso, in altre informazioni non vengono apportate modifiche parziali. Questo parametro non può essere **NULL.**
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Indice del parametro da modificare. L'implementazione corrente non supporta la m
 
 Se la funzione ha esito positivo, il valore restituito è NDDE \_ NO \_ ERROR.
 
-Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString**](nddegeterrorstring.md).
+Se la funzione ha esito negativo, il valore restituito è un codice di errore, che può essere convertito in un messaggio di errore di testo chiamando [**NDdeGetErrorString.**](nddegeterrorstring.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -115,7 +115,7 @@ Se la funzione ha esito negativo, il valore restituito è un codice di errore, c
 
 <dl> <dt>
 
-[Panoramica Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
+[Panoramica delle Dynamic Data Exchange rete](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funzioni DDE di rete](network-dde-functions.md)

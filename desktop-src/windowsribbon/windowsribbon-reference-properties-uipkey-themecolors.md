@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118437796"
 ---
-# <a name="ui_pkey_themecolors"></a>\_ThemeColors PKEY \_ dell'interfaccia utente
+# <a name="ui_pkey_themecolors"></a>Tema \_ PKEY \_ dell'interfaccia utenteColori
 
 Identifica la proprietà \_ PKEY \_ ThemeColors dell'interfaccia utente.
 
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-L'interfaccia utente PKEY ThemeColors viene usata da un'applicazione per eseguire query nei valori dei campioni \_ di colore di un controllo \_ [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+L'interfaccia utente PKEY ThemeColors viene usata da un'applicazione per eseguire query dei valori di campione dei colori \_ \_ di un controllo [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
 Ogni [valore COLORREF](../gdi/colorref.md) corrisponde a un campione di colore in [**un controllo DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) dove è specificato come `ThemeColors` valore **dell'attributo ColorTemplate.**
 

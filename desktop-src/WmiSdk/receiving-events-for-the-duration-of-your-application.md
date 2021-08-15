@@ -25,7 +25,7 @@ Un consumer di eventi temporaneo può ricevere notifiche in modo asincrono o sem
 
  
 
-Per altre informazioni sulla ricezione di notifiche di eventi asincrone e semisincrone, vedere [Ricezione](receiving-asynchronous-event-notifications.md) di notifiche degli eventi asincrone e Ricezione di notifiche di [eventi semisincroni.](receiving-synchronous-and-semisynchronous-event-notifications.md)
+Per altre informazioni sulla ricezione di notifiche di eventi asincrone e semisincrone, vedere [Ricezione](receiving-asynchronous-event-notifications.md) di notifiche degli eventi asincrone e Ricezione di notifiche di eventi [semisincroni](receiving-synchronous-and-semisynchronous-event-notifications.md).
 
  
 

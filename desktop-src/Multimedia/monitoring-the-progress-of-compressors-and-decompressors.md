@@ -1,10 +1,10 @@
 ---
-title: Monitoraggio dello stato di avanzamento dei compressori e dei decompressori
-description: Monitoraggio dello stato di avanzamento dei compressori e dei decompressori
+title: Monitoraggio dello stato di avanzamento dei decompressori e dei decompressori
+description: Monitoraggio dello stato di avanzamento dei decompressori e dei decompressori
 ms.assetid: 6507be44-1916-46b2-bae3-c4fe633cdc5a
 keywords:
 - gestione compressione video(VCM), monitoraggio
-- VCM (gestione compressione video), monitoraggio
+- VCM (Gestione compressione video),monitoraggio
 - Funzione ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
@@ -15,9 +15,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118373504"
 ---
-# <a name="monitoring-the-progress-of-compressors-and-decompressors"></a>Monitoraggio dello stato di avanzamento dei compressori e dei decompressori
+# <a name="monitoring-the-progress-of-compressors-and-decompressors"></a>Monitoraggio dello stato di avanzamento dei decompressori e dei decompressori
 
-L'applicazione può monitorare lo stato di un'operazione di lunga durata eseguita da un compressore o da un decompressore inviando l'indirizzo di una funzione di callback. È possibile usare la [**funzione ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) per inviare l'indirizzo al compressore o al decompressore. Quando il compressore o il decompressore riceve questo indirizzo, invia messaggi di stato alla funzione. Questi messaggi indicano se l'operazione è in corso, l'arresto, la resa o la procedura.
+L'applicazione può monitorare lo stato di avanzamento di un'operazione di lunga durata eseguita da un dispositivo di decompressione o un'operazione di decompressione inviando l'indirizzo di una funzione di callback. È possibile usare la [**funzione ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) per inviare l'indirizzo al ricevitore o decompressore. Quando l'utente o il decompressore riceve questo indirizzo, invia messaggi di stato alla funzione. Questi messaggi indicano se l'operazione è in corso di avvio, arresto, cede o sta procedendo.
 
  
 

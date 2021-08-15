@@ -1,23 +1,23 @@
 ---
 title: Codice di esempio per l'uso delle interfacce IADsProperty per accedere alla cache delle proprietà
-description: Nell'esempio di codice seguente viene illustrato come utilizzare le interfacce IADsPropertyList, IADsPropertyEntry e IADsPropertyValue con C++ e ADSI.
+description: L'esempio di codice seguente illustra come usare le interfacce IADsPropertyList, IADsPropertyEntry e IADsPropertyValue con C++ e ADSI.
 ms.assetid: d2ac3a1e-642c-451c-a79e-baa38dacb4a2
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio ADSI, uso delle interfacce IADsProperty per accedere alla cache delle proprietà
+- Codice di esempio ADSI , uso delle interfacce IADsProperty per accedere alla cache delle proprietà
 - Codice di esempio per l'uso delle interfacce IADsProperty per accedere alla cache delle proprietà ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2053e3d78120e39cb7a377eaf6e50524bb780c34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a885a52b9c699153a17d33e0ec52edbb6f59c226e6844ac2c8c02b3ec082157c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023589"
 ---
 # <a name="example-code-for-using-iadsproperty-interfaces-to-access-the-property-cache"></a>Codice di esempio per l'uso delle interfacce IADsProperty per accedere alla cache delle proprietà
 
-Nell'esempio di codice seguente viene illustrato come utilizzare le interfacce [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist), [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)e [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) con C++ e ADSI.
+L'esempio di codice seguente illustra come usare le interfacce [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist), [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)e [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) con C++ e ADSI.
 
 
 ```C++
@@ -93,7 +93,7 @@ if (SUCCEEDED(hr))
 
 
 
-Nell'esempio di codice seguente viene illustrato come utilizzare le interfacce [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist), [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)e [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) utilizzando Visual Basic e ADSI.
+L'esempio di codice seguente illustra come usare le interfacce [**IADsPropertyList**](/windows/desktop/api/Iads/nn-iads-iadspropertylist), [**IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry)e [**IADsPropertyValue**](/windows/desktop/api/Iads/nn-iads-iadspropertyvalue) usando Visual Basic e ADSI.
 
 
 ```VB
@@ -124,9 +124,9 @@ Next
 
 
 
- 
+ 
 
- 
+ 
 
 
 

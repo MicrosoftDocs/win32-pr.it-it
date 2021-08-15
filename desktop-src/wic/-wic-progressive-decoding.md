@@ -1,5 +1,5 @@
 ---
-description: In questo argomento viene illustrata la decodifica progressiva e viene illustrato come usare la decodifica progressiva nelle applicazioni.
+description: Questo argomento illustra la decodifica progressiva e come usare la decodifica progressiva nelle applicazioni.
 ms.assetid: d22c2c59-0fa1-4452-93f1-dbf151033714
 title: Panoramica della decodifica progressiva
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118710046"
 ---
 # <a name="progressive-decoding-overview"></a>Panoramica della decodifica progressiva
 
-In questo argomento viene illustrata la decodifica progressiva e viene illustrato come usare la decodifica progressiva nelle applicazioni. Fornisce anche linee guida per la creazione di codec che supportano la decodifica progressiva.
+Questo argomento illustra la decodifica progressiva e come usare la decodifica progressiva nelle applicazioni. Fornisce anche linee guida per la creazione di codec che supportano la decodifica progressiva.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -60,7 +60,7 @@ Ogni formato di immagine gestisce la decodifica progressiva in modo diverso. Nel
 
  
 
-Inoltre, la decodifica progressiva può essere implementata nei codec fornendo il supporto per interfacce e metodi progressivi. Se la decodifica progressiva non è supportata in un codec, devono essere restituiti messaggi di errore appropriati se questi metodi vengono chiamati.
+Inoltre, la decodifica progressiva può essere implementata nei codec fornendo il supporto per le interfacce e i metodi progressivi. Se la decodifica progressiva non è supportata in un codec, devono essere restituiti messaggi di errore appropriati se questi metodi vengono chiamati.
 
 ## <a name="jpeg-progressive-decoding"></a>Decodifica progressiva JPEG
 
@@ -97,17 +97,17 @@ I file di immagine PNG forniscono sette livelli progressivi per la decodifica, c
 
  
 
-Dalla tabella precedente è possibile determinare i pixel che verranno decodificati con ogni passaggio del decodificatore. A differenza del codec GIF Windows 7, il codec PNG Windows 7 replica il pixel più a sinistra disponibile su una riga di scansione per popolare i pixel vuoti.
+Dalla tabella precedente è possibile determinare i pixel che verranno decodificati con ogni passaggio del decodificatore. A differenza del codec Windows 7 GIF, il codec Windows 7 PNG replica il pixel più a sinistra disponibile in una riga di analisi per popolare i pixel vuoti.
 
-Le immagini seguenti illustrano un esempio del codec di decodifica progressiva Windows 7 PNG a tre livelli progressivi.
+Le immagini seguenti mostrano un esempio del codec Windows decodifica progressiva PNG 7 a tre livelli progressivi.
 
-![esempi di decodifica progressiva png](graphics/PNG_Progressive_Comparison.jpg)
+![Esempi di decodifica progressiva png](graphics/PNG_Progressive_Comparison.jpg)
 
 L'immagine in alto a sinistra mostra un'immagine PNG decodificata al livello progressivo 0. L'immagine in alto a destra mostra la stessa immagine PNG decodificata al livello progressivo 3. L'immagine inferiore mostra la stessa immagine completamente decodificata dopo 7 livelli progressivi.
 
 ### <a name="gif-progressive-decoding"></a>Decodifica progressiva GIF
 
-I file di immagine GIF offrono quattro livelli progressivi per la decodifica, come descritto nella specifica GIF. Ogni passaggio popola determinate righe all'interno di un'immagine, producendo un'immagine completa dopo il quarto passaggio. La tabella seguente della specifica GIF mostra quali righe di analisi vengono decodificate da ogni passaggio del decodificatore. 
+I file di immagine GIF forniscono quattro livelli progressivi per la decodifica, come descritto nella specifica GIF. Ogni passaggio popola determinate righe all'interno di un'immagine, producendo un'immagine completa dopo il quarto passaggio. La tabella seguente della specifica GIF mostra le righe di analisi decodificate da ogni passaggio del decodificatore. 
 
 | Numero di livello/numero di passaggio | Righe di analisi popolate   | Riga di analisi iniziale |
 |---------------------------|------------------------|--------------------|
@@ -120,11 +120,11 @@ I file di immagine GIF offrono quattro livelli progressivi per la decodifica, co
 
  
 
-Sebbene i codec possano specificare il contenuto di pixel vuoti a qualsiasi livello specifico, il codec GIF Windows popola le righe di analisi vuote replicando le righe di analisi popolate sopra la riga di analisi vuota.
+Sebbene i codec possano specificare il contenuto dei pixel vuoti a qualsiasi livello specifico, il codec GIF Windows popola le righe di analisi vuote replicando le righe di analisi popolate sopra la riga di analisi vuota.
 
 ## <a name="progressive-decoding-in-applications"></a>Decodifica progressiva nelle applicazioni
 
-L'interfaccia di decodifica progressiva principale è [**l'interfaccia IWICProgressiveLevelControl.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) Per ottenere un riferimento all'interfaccia, eseguire una query su un frame di immagine ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) per **IWICProgressiveLevelControl.** È quindi possibile accedere ai metodi progressivi dall'interfaccia .
+L'interfaccia di decodifica progressiva principale è [**l'interfaccia IWICProgressiveLevelControl.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) Per ottenere un riferimento all'interfaccia, eseguire una query su un frame di immagine ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) per **IWICProgressiveLevelControl**. È quindi possibile accedere ai metodi progressivi dall'interfaccia .
 
 Il codice seguente fornisce un esempio per l'uso della decodifica progressiva nelle applicazioni.
 
@@ -163,11 +163,11 @@ if (pProgressive)
 
 
 
-Il codice precedente fornisce le funzionalità di base necessarie per implementare la decodifica progressiva nella maggior parte delle applicazioni. Usando il codice, è possibile accedere ai livelli progressivi quando i dati pixel dell'immagine diventano disponibili. La [**funzione SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) blocca l'esecuzione fino a quando il livello richiesto non è disponibile.
+Il codice precedente fornisce le funzionalità di base necessarie per l'implementazione della decodifica progressiva nella maggior parte delle applicazioni. Usando il codice, è possibile accedere ai livelli progressivi quando i dati pixel dell'immagine diventano disponibili. La [**funzione SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) blocca l'esecuzione fino a quando il livello richiesto non è disponibile.
 
 ## <a name="custom-codec-support-for-progressive-decoding"></a>Supporto codec personalizzato per la decodifica progressiva
 
-Gli sviluppatori di codec possono scegliere di implementare [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) se i formati di immagine supportano la decodifica progressiva. Il supporto per la decodifica progressiva non è un requisito per l'individuazione e l'arbitraggio da parte del WiC. Tuttavia, la decodifica progressiva migliora notevolmente l'esperienza utente e l'implementazione deve essere considerata, se possibile.
+Gli sviluppatori di codec possono scegliere di implementare [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) se i formati di immagine supportano la decodifica progressiva. Il supporto per la decodifica progressiva non è un requisito per l'individuazione e l'arbitraggio da parte di WIC. Tuttavia, la decodifica progressiva migliora notevolmente l'esperienza utente e l'implementazione deve essere considerata se possibile.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

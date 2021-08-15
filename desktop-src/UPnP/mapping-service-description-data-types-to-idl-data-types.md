@@ -1,6 +1,6 @@
 ---
 title: Mapping dei tipi di dati della descrizione del servizio ai tipi di dati IDL
-description: Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti usati in IDL.
+description: Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti utilizzati in IDL.
 ms.assetid: eeb86177-8c3b-47f1-bbe1-f9aabd2dde76
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118347631"
 ---
 # <a name="mapping-service-description-data-types-to-idl-data-types"></a>Mapping dei tipi di dati della descrizione del servizio ai tipi di dati IDL
 
-Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti usati in IDL.
+Nella tabella seguente viene illustrato il mapping dei tipi di dati XML specificati in una descrizione del servizio ai tipi di dati corrispondenti utilizzati in IDL.
 
 
 

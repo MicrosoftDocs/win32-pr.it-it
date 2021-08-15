@@ -1,10 +1,10 @@
 ---
 title: Metodo Controls.fastForward
-description: Il metodo fastForward avvia la riproduzione rapida dell'elemento multimediale nella direzione in avanti. | Metodo Controls.fastForward
+description: Il metodo fastForward avvia la riproduzione rapida dell'elemento multimediale in avanti. | Metodo Controls.fastForward
 ms.assetid: 69cee803-f76b-4a8c-a2c2-1870665afaf9
 keywords:
 - Metodo fastForward Windows Media Player
-- Metodo fastForward Windows Media Player , classe Controls
+- Il metodo fastForward Windows Media Player , classe Controls
 - Classe Controls Windows Media Player, metodo fastForward
 topic_type:
 - apiref
@@ -25,7 +25,7 @@ ms.locfileid: "118341817"
 ---
 # <a name="controlsfastforward-method"></a>Metodo Controls.fastForward
 
-Il **metodo fastForward** avvia la riproduzione rapida dell'elemento multimediale nella direzione in avanti.
+Il **metodo fastForward** avvia la riproduzione rapida dell'elemento multimediale in avanti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,13 +46,13 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il **metodo fastForward** riproduce il clip a cinque volte la velocità normale. La chiamata **di fastForward** modifica il *Impostazioni*. **impostare** la proprietà rate su 5.0. Se **la frequenza** viene successivamente modificata o se viene **chiamato play** o **stop,** Windows Media Player l'inoltro rapido.
+Il **metodo fastForward** riproduce il clip a una velocità cinque volte maggiore della normale. La chiamata **di fastForward** modifica *il Impostazioni*. **rate** su 5.0. Se **la frequenza** viene modificata successivamente o se **viene chiamato play** o **stop,** Windows Media Player interromperà l'inoltro rapido.
 
-Il **metodo fastForward** non funziona per le trasmissioni live e alcuni tipi di supporti. Per determinare se è possibile procedere rapidamente in un clip, chiamare **isAvailable**("FastForward").
+Il **metodo fastForward** non funziona per le trasmissioni live e alcuni tipi di contenuti multimediali. Per determinare se è possibile procedere rapidamente in avanti in un clip, chiamare **isAvailable**("FastForward").
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un elemento BUTTON HTML che usa **fastForward** per avviare la riproduzione veloce dell'elemento multimediale. **L'oggetto** Player è stato creato con ID = "Player".
+L'esempio seguente crea un elemento BUTTON HTML che usa **fastForward** per avviare la riproduzione rapida dell'elemento multimediale. **L'oggetto Player** è stato creato con ID = "Player".
 
 
 ```JScript

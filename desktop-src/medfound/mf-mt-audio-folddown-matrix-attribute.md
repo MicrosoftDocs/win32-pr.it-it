@@ -1,19 +1,19 @@
 ---
-description: Specifica il modo in cui un decodificatore audio deve trasformare l'audio multicanale nell'output stereo. Questo processo viene anche definito riduzioni.
+description: Specifica il modo in cui un decodificatore audio deve trasformare l'audio multicanale in output stereo. Questo processo è detto anche fold-down.
 ms.assetid: 6dfe2b97-1ebc-4954-b478-85b3bbba89e3
-title: Attributo MF_MT_AUDIO_FOLDDOWN_MATRIX (Mfapi. h)
+title: MF_MT_AUDIO_FOLDDOWN_MATRIX attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10bb8aa00835ab31f6c05eaa9a1d0e5d9d126b41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46763f3a32999136993cd3237da9c6cbcdd1d1addb5f6d9041555ac747a6d655
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714661"
 ---
-# <a name="mf_mt_audio_folddown_matrix-attribute"></a>\_ \_ \_ Attributo Matrix FOLDDOWN audio MF mt \_
+# <a name="mf_mt_audio_folddown_matrix-attribute"></a>Attributo \_ MF MT \_ AUDIO \_ FOLDDOWN \_ MATRIX
 
-Specifica il modo in cui un decodificatore audio deve trasformare l'audio multicanale nell'output stereo. Questo processo viene anche definito *riduzioni*.
+Specifica il modo in cui un decodificatore audio deve trasformare l'audio multicanale in output stereo. Questo processo è detto *anche fold-down.*
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,9 +23,9 @@ Matrice di byte
 
 Questo attributo si applica ai tipi di supporti audio.
 
-Il valore di questo attributo è una struttura della [**\_ matrice MFFOLDDOWN**](/windows/desktop/api/mfapi/ns-mfapi-mffolddown_matrix) .
+Il valore di questo attributo è una [**struttura MATRIX \_ MFFOLDDOWN.**](/windows/desktop/api/mfapi/ns-mfapi-mffolddown_matrix)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 \[ \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: seblob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9b597f6b-ef27-4fa1-ad00-e131dbd979e7
-ms.openlocfilehash: f3ccb4073d59e0ebe9b840bd6f8f592f463e1e46
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 30722e32a555b386e166e5525e0d4361dbe9d9bc6a58051e4727c661ebe49073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714121"
 ---
 # <a name="ishellfolderviewtype-interface"></a>Interfaccia IShellFolderViewType
 
@@ -32,7 +32,7 @@ Espone metodi che consentono a una cartella Shell di supportare visualizzazioni 
 
 ### <a name="methods"></a>Metodi
 
-**L'interfaccia IShellFolderViewType** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **IShellFolderViewType.**
 
 
 
@@ -51,7 +51,7 @@ Espone metodi che consentono a una cartella Shell di supportare visualizzazioni 
 
 Questo enumeratore restituisce gli PID che sono cartelle nascoste speciali al livello superiore della cartella Shell, che non vengono altrimenti enumerati. La visualizzazione predefinita è quella visualizzata normalmente nella cartella Shell.
 
-Questa interfaccia non è definita in alcun file di intestazione pubblico. Se si sceglie di implementare questa interfaccia, è possibile usare il codice C/C++ seguente per dichiararne i metodi.
+Questa interfaccia non è definita in alcun file di intestazione pubblico. Se si sceglie di implementare questa interfaccia, è possibile usare il codice C/C++ seguente per dichiarare i relativi metodi.
 
 
 ```
