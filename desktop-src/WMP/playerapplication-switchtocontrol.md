@@ -1,11 +1,11 @@
 ---
-title: PlayerApplication. switchToControl, metodo
-description: Il metodo switchToControl passa un controllo Media Player Windows remoto allo stato ancorato.
+title: Metodo PlayerApplication.switchToControl
+description: Il metodo switchToControl passa un controllo Windows Media Player remoto allo stato ancorato.
 ms.assetid: 3c321b8f-8208-4c55-8872-38626d8ef9c9
 keywords:
 - Metodo switchToControl Windows Media Player
-- Metodo switchToControl Windows Media Player, classe PlayerApplication
-- Classe PlayerApplication Windows Media Player, metodo switchToControl
+- Metodo switchToControl Windows Media Player , classe PlayerApplication
+- Classe PlayerApplication Windows Media Player , metodo switchToControl
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e175c586631bcdf4345a421270521595332c51d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 759040ccb54d5dd32df83811f9878418dbe0a1108719eac4e3b7467b9b3c76f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747215"
 ---
-# <a name="playerapplicationswitchtocontrol-method"></a>PlayerApplication. switchToControl, metodo
+# <a name="playerapplicationswitchtocontrol-method"></a>Metodo PlayerApplication.switchToControl
 
-Il metodo **switchToControl** passa un controllo Media Player Windows remoto allo stato ancorato.
+Il **metodo switchToControl** passa un controllo Windows Media Player remoto allo stato ancorato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo viene utilizzato solo quando la comunicazione remota del controllo Media Player di Windows.
+Questo metodo viene usato solo quando si esegue la comunicazione remota del Windows Media Player remoto.
 
 **Windows Media Player 10 Mobile:** Questo metodo non è supportato.
 
@@ -56,7 +56,7 @@ Questo metodo viene utilizzato solo quando la comunicazione remota del controllo
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

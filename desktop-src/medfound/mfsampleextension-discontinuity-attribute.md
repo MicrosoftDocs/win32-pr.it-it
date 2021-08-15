@@ -1,41 +1,41 @@
 ---
-description: Specifica se un esempio di supporto è il primo campione dopo un gap nel flusso.
+description: Specifica se un campione multimediale è il primo campione dopo un gap nel flusso.
 ms.assetid: f9e1e700-9958-404d-8b83-08f846f5a1b0
-title: Attributo MFSampleExtension_Discontinuity (Mfapi. h)
+title: MFSampleExtension_Discontinuity attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e401a26c269a3b77d881bc74ae2c7b30d9d88f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ac76b8e4d220ece7c34277bfac031213c1c042615d7ca48677839e54b77e5da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241081"
 ---
-# <a name="mfsampleextension_discontinuity-attribute"></a>\_Attributo discontinuità MFSampleExtension
+# <a name="mfsampleextension_discontinuity-attribute"></a>Attributo MFSampleExtension \_ Discontinuity
 
-Specifica se un esempio di supporto è il primo campione dopo un gap nel flusso.
+Specifica se un campione multimediale è il primo campione dopo un gap nel flusso.
 
 ## <a name="data-type"></a>Tipo di dati
 
-**Bool** archiviato come **UInt32**
+**BOOL** archiviato come **UINT32**
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Per ottenere questo attributo, chiamare [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Per impostare questo attributo, chiamare [**IMFAttributes::**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)SetAttribute.
+Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Si applica a
 
-[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica agli esempi di supporti. Se questo attributo è true, significa che si è **verificata** una discontinuità nel flusso e questo esempio è il primo a essere visualizzato dopo il gap.
+Questo attributo si applica agli esempi di supporti. Se questo attributo è **TRUE,** significa che si è verificata una discontinuità nel flusso e questo esempio è il primo a comparire dopo il gap.
 
-Se questo attributo non è impostato, il valore predefinito è **false**.
+Se questo attributo non è impostato, il valore predefinito è **FALSE.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,9 +43,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di esempio](sample-attributes.md)

@@ -1,9 +1,9 @@
 ---
-title: Metodi di sesaturazione IDCompositionSaturationEffect
+title: Metodi setSaturation IDCompositionSaturationEffect
 description: Imposta la saturazione dell'immagine.
 ms.assetid: 2f92086f-51e1-ceda-a79f-a053d85a2502
 keywords:
-- Metodi di sesaturazione DirectComposition
+- Metodi SetSaturation DirectComposition
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 09bea22c73ea1cea34884473408f2ec45a74449c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: caced66849600be95bacde373730317c5e42c1cd4efd03a95c91e1ccea5a1c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281530"
 ---
-# <a name="idcompositionsaturationeffectsetsaturation-methods"></a>Metodi IDCompositionSaturationEffect:: sesaturation
+# <a name="idcompositionsaturationeffectsetsaturation-methods"></a>Metodi IDCompositionSaturationEffect::SetSaturation
 
 Imposta la saturazione dell'immagine.
 
@@ -29,8 +29,8 @@ Imposta la saturazione dell'immagine.
 
 | Metodo                                                                                             | Descrizione                                  |
 |:---------------------------------------------------------------------------------------------------|:---------------------------------------------|
-| [**Saturazione**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsaturationeffect-setsaturation(float))                               | Imposta la saturazione dell'immagine.<br/> |
-| [**Sesatuion (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsaturationeffect-setsaturation(idcompositionanimation)) | Imposta la saturazione dell'immagine.<br/> |
+| [**SetSaturation**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsaturationeffect-setsaturation(float))                               | Imposta la saturazione dell'immagine.<br/> |
+| [**SetSaturation (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionsaturationeffect-setsaturation(idcompositionanimation)) | Imposta la saturazione dell'immagine.<br/> |
 
 
 

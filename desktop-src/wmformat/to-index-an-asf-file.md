@@ -4,25 +4,25 @@ description: Per indicizzare un file ASF
 ms.assetid: 33175444-365c-4b94-8b91-07198431062f
 keywords:
 - Windows Media Format SDK, indicizzazione di file ASF
-- ASF (Advanced Systems Format), indicizzazione di file
-- ASF (Advanced Systems Format), indicizzazione di file
+- Advanced Systems Format (ASF), file di indicizzazione
+- ASF (Advanced Systems Format),indicizzazione di file
 - indici, indicizzazione di file ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7206e1856abb9705e18e885ba06cb8253a93c84b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 08c2e41ed60ecb8fcee39da35dbc79ec44cece8db62f3e040d42aee3374c5690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "106299400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845579"
 ---
 # <a name="to-index-an-asf-file"></a>Per indicizzare un file ASF
 
-Il processo di indicizzazione di un file ASF è molto semplice. Effettuare una chiamata a [**IWMIndexer:: startindexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passare il nome del file. L'indicizzatore esegue il resto. La chiamata a **startIndex** è asincrona, pertanto lo stato deve essere monitorato tramite il callback **OnStatus** .
+Il processo di indicizzazione di un file ASF è molto semplice. Effettuare una chiamata a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passare il nome del file. L'indicizzatore esegue il resto. La chiamata a **StartIndexing è** asincrona, quindi lo stato deve essere monitorato usando il callback **OnStatus.**
 
-Nel codice seguente viene illustrato come indicizzare un file ASF. Se si vuole configurare l'indicizzatore prima di indicizzare il file, sarà necessario includere il codice dell'esempio incluso in [per configurare l'indicizzatore](to-configure-the-indexer.md).
+Il codice seguente illustra come indicizzare un file ASF. Se si vuole configurare l'indicizzatore prima di indicizzare il file, è necessario includere il codice dell'esempio incluso in Per configurare [l'indicizzatore](to-configure-the-indexer.md).
 
-Per questo esempio, è necessario creare l'handle che punta all'evento come variabile globale in modo che sia accessibile dal callback. La dichiarazione seguente dovrebbe essere visualizzata in un ambito globale.
+Per questo esempio, l'handle che punta all'evento deve essere creato come variabile globale in modo che sia accessibile dal callback. La dichiarazione seguente deve essere visualizzata in un ambito globale.
 
 
 ```C++
@@ -32,9 +32,9 @@ HANDLE g_hEvent = NULL;
 
 
 
-In uno scenario più realistico, l'handle di evento deve essere un membro dati della classe che contiene sia il callback che la logica per l'avvio dell'indicizzatore.
+In uno scenario più realistico, l'handle dell'evento deve essere un membro dati della classe che contiene sia il callback che la logica per avviare l'indicizzatore.
 
-L'indicizzatore invia diversi eventi al callback **OnStatus** dopo la chiamata a **IWMIndexer:: startindexing**. È possibile intercettarli in base alle esigenze dell'applicazione. Come minimo, è necessario intercettare la chiusura di WMT \_ , che viene inviata al termine dell'indicizzazione. Utilizzare la seguente logica all'interno dell'opzione Message nell'implementazione del callback **OnStatus** .
+L'indicizzatore invia diversi eventi al callback **OnStatus** dopo la chiamata a **IWMIndexer::StartIndexing.** È possibile intercettarli in base alle esigenze per l'applicazione. Come minimo, è necessario intercettare WMT \_ CLOSED, che viene inviato al termine dell'indicizzazione. Usare la logica seguente all'interno dell'opzione message nell'implementazione del callback **OnStatus.**
 
 
 ```C++
@@ -51,7 +51,7 @@ case WMT_CLOSED:
 
 
 
-Per questo esempio si presuppone che l'implementazione del callback **OnStatus** sia accessibile tramite un oggetto denominato callback. Per altre informazioni sull'uso di eventi e callback con questo SDK, vedere [uso dei metodi di callback](using-the-callback-methods.md).
+Per questo esempio si presuppone che l'implementazione del callback **OnStatus** sia accessibile tramite un oggetto denominato MyCallback. Per altre informazioni sull'uso di eventi e callback con questo SDK, vedere [Uso dei metodi di callback.](using-the-callback-methods.md)
 
 
 ```C++
@@ -103,9 +103,9 @@ g_hEvent = NULL;
 [**Operazioni con gli indici**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Restituisce un vettore 3D costituito dai componenti più piccoli di due vettori 3D.
+description: Restituisce un vettore 3D costituito da componenti più piccoli di due vettori 3D.
 ms.assetid: f38164a5-d016-4a8a-a7fe-d7eb0a681107
-title: Funzione D3DXVec3Minimize (D3dx9math. h)
+title: Funzione D3DXVec3Minimize (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 532c3cfaddc63b0f358fa3ce88afeccc2f12e289
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b3519d7a14c02356153ac9209437f488b14c363dc68fcf8b2225f1aef48d7f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104058692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297763"
 ---
-# <a name="d3dxvec3minimize-function"></a>D3DXVec3Minimize (funzione)
+# <a name="d3dxvec3minimize-function"></a>Funzione D3DXVec3Minimize
 
-Restituisce un vettore 3D costituito dai componenti più piccoli di due vettori 3D.
+Restituisce un vettore 3D costituito da componenti più piccoli di due vettori 3D.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXVECTOR3* D3DXVec3Minimize(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore alla struttura [**D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
+Puntatore alla [**struttura D3DXVECTOR3**](d3dxvector3.md) che rappresenta il risultato dell'operazione.
 
 </dd> <dt>
 
-*pV1* \[ in\]
+*pV1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> <dt>
 
-*pV2* \[ in\]
+*pV2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) costituita dai componenti più piccoli dei due vettori.
+Puntatore a [**una struttura D3DXVECTOR3**](d3dxvector3.md) che è costituito da componenti più piccoli dei due vettori.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro *broncio* . In questo modo, la funzione **D3DXVec3Minimize** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel *parametro pOut.* In questo modo, la **funzione D3DXVec3Minimize** può essere usata come parametro per un'altra funzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -85,8 +85,8 @@ Il valore restituito per questa funzione corrisponde al valore restituito nel pa
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

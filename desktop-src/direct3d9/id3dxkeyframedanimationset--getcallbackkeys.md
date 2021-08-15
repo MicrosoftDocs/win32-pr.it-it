@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f3bdb7049de3b5d6aad10b5ff5100d01d05e3ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ee5a86fa5f016bd6707ec4464c79b1dc182e1ebebde80fa9f73d62e3bba3a13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294987"
 ---
 # <a name="id3dxkeyframedanimationsetgetcallbackkeys-method"></a>Metodo ID3DXKeyframedAnimationSet::GetCallbackKeys
 
-Riempie una matrice con i dati chiave di callback usati per l'animazione del fotogramma chiave.
+Riempie una matrice con i dati della chiave di callback usati per l'animazione con fotogrammi chiave.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT GetCallbackKeys(
 
 Tipo: **[ **CALLBACK LPD3DXKEY \_**](d3dxkey-callback.md)**
 
-Puntatore a una matrice allocata dall'utente di [**strutture \_ CALLBACK D3DXKEY**](d3dxkey-callback.md) che il metodo deve riempire con i dati di callback.
+Puntatore a una matrice allocata dall'utente [**di strutture \_ CALLBACK D3DXKEY**](d3dxkey-callback.md) che il metodo deve riempire con i dati di callback.
 
 </dd> </dl>
 

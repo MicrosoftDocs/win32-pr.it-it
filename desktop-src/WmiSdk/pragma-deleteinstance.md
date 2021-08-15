@@ -2,7 +2,7 @@
 description: Elimina un'istanza esistente di una classe dal repository.
 ms.assetid: 4389f831-a60e-4198-a55a-79189d10a38a
 ms.tgt_platform: multiple
-title: pragma DeleteInstance
+title: pragma deleteinstance
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 10d4c735f1e59533b57ae1814cfb8e36b2c1ad76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29739f1d95cf5c8352c2b7822dbc3da7777f41f69fc5086631e0069c3b832623
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118316846"
 ---
-# <a name="pragma-deleteinstance"></a>pragma DeleteInstance
+# <a name="pragma-deleteinstance"></a>pragma deleteinstance
 
-Il comando **pragma DeleteInstance** Elimina un'istanza esistente di una classe dal repository.
+Il **comando pragma deleteinstance** elimina un'istanza esistente di una classe dal repository.
 
 Di seguito viene descritta la sintassi per questo comando:
 
@@ -33,16 +33,16 @@ Di seguito viene descritta la sintassi per questo comando:
 
 
 
-*InstanceID* è un identificatore univoco dell'istanza eliminata dal compilatore MOF dallo spazio dei nomi corrente.
+*InstanceId* è un identificatore univoco dell'istanza che il compilatore MOF elimina dallo spazio dei nomi corrente.
 
-Il *\[ flag \]* deve essere uno degli argomenti seguenti.
+*\[ Flag \]* deve essere uno degli argomenti seguenti.
 
 
 
 | Flag   | Descrizione                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|
 | fail   | Causa la chiusura del compilatore MOF con un messaggio di errore se la classe non esiste già nel repository. |
-| nofail | Determina la continuazione del compilatore MOF anche se la classe non esiste già.                                |
+| nofail | Fa sì che il compilatore MOF continui anche se la classe non esiste già.                                |
 
 
 
@@ -50,7 +50,7 @@ Il *\[ flag \]* deve essere uno degli argomenti seguenti.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato come utilizzare questo comando.
+L'esempio seguente illustra come usare questo comando.
 
 
 ```mof
@@ -76,7 +76,7 @@ Nell'esempio seguente viene illustrato come utilizzare questo comando.
 
 <dl> <dt>
 
-[Comandi del preprocessore](preprocessor-commands.md)
+[Comandi per il preprocessore](preprocessor-commands.md)
 </dt> </dl>
 
  

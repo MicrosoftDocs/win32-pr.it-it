@@ -1,9 +1,9 @@
 ---
-title: WM/sottotitolo
-description: L'attributo WM/Subtitle contiene il sottotitolo del contenuto.
+title: WM/SubTitle
+description: L'attributo WM/SubTitle contiene il sottotitolo del contenuto.
 ms.assetid: 290ec571-3bb9-4817-8f63-3d6c3c9802bf
 keywords:
-- Formato di Windows Media WM/Subtitle
+- WM/SubTitle windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58d802cf0ffedb32d10c5d20ee9f635c2dce7afc
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0df18f63ee13f8b09bac65ae9392be2c99e69d2ce52c943b26c58f7201984754
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "106299109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195567"
 ---
-# <a name="wmsubtitle"></a>WM/sottotitolo
+# <a name="wmsubtitle"></a>WM/SubTitle
 
-L'attributo **WM/Subtitle** contiene il sottotitolo del contenuto.
+**L'attributo WM/SubTitle** contiene il sottotitolo del contenuto.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMSubTitle
 
 ## <a name="data-type"></a>Tipo di dati
 
-**\_stringa di tipo WMT \_**
+**STRINGA DI \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -38,9 +38,9 @@ g \_ wszWMSubTitle
 [**Elenco degli attributi**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

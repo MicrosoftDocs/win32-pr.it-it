@@ -1,7 +1,7 @@
 ---
-description: Evento che si verifica quando viene connesso un nuovo dispositivo hardware Windows Image Acquisition (WIA).
+description: Evento che si verifica quando un nuovo Windows hardware WIA (Image Acquisition) è connesso.
 ms.assetid: 327a29b8-581c-41b5-bea7-068bec95e653
-title: Evento WIA. OnDeviceConnected
+title: Evento Wia.OnDeviceConnected
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 952b738e8afa0850bd67bab1206382e96419513c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d878cc663cc9f7ea1422e2dc2cad10e652296a48ef597cf699fe5eb3af99e49b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104231565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209548"
 ---
-# <a name="wiaondeviceconnected-event"></a>Evento WIA. OnDeviceConnected
+# <a name="wiaondeviceconnected-event"></a>Evento Wia.OnDeviceConnected
 
-Evento che si verifica quando viene connesso un nuovo dispositivo hardware Windows Image Acquisition (WIA).
+Evento che si verifica quando un nuovo Windows hardware WIA (Image Acquisition) è connesso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Wia.OnDeviceConnected(
 *Id* 
 </dt> <dd>
 
-Stringa che contiene l'ID del dispositivo connesso.
+Stringa contenente l'ID del dispositivo connesso.
 
 </dd> </dl>
 
@@ -52,9 +52,9 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-WIA notifica lo script o l'applicazione ogni volta che un nuovo dispositivo hardware è connesso al computer. Implementare la subroutine **objWia** \_ **OnDeviceConnected ()** per consentire all'applicazione o allo script di rispondere alla connessione del dispositivo.
+WiA invia una notifica allo script o all'applicazione ogni volta che un nuovo dispositivo hardware è connesso al computer. Implementare **la subroutine objWia** \_ **OnDeviceConnected()** per consentire allo script o all'applicazione di rispondere alla connessione del dispositivo.
 
-Ad esempio, potrebbe essere necessario uno script per aggiornare la raccolta di [**dispositivi**](-wia-iwia-devices.md) quando viene installato un nuovo dispositivo.
+Ad esempio, è possibile che uno script abiliti la raccolta [**Dispositivi**](-wia-iwia-devices.md) quando viene installato un nuovo dispositivo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,9 +62,9 @@ Ad esempio, potrebbe essere necessario uno script per aggiornare la raccolta di 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Specifica la priorità del thread relativo per un ramo della topologia.
+description: Specifica la priorità relativa del thread per un ramo della topologia.
 ms.assetid: 7BCD2EE0-94FB-4438-9B6A-7B26DBFB5978
-title: Attributo MF_TOPONODE_WORKQUEUE_MMCSS_PRIORITY (Mfidl. h)
+title: MF_TOPONODE_WORKQUEUE_MMCSS_PRIORITY attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0667c91054f8711b8825cf421a2ee565b9161f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e1b131e6c8b0f379e5e7951498c52f7c0d7a3eab83b75fed4ab9e8100721668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874794"
 ---
-# <a name="mf_toponode_workqueue_mmcss_priority-attribute"></a>\_Attributo di \_ \_ priorità MMCSS \_ di MF TOPONODE WORKQUEUE
+# <a name="mf_toponode_workqueue_mmcss_priority-attribute"></a>Attributo MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ PRIORITY
 
-Specifica la priorità del thread relativo per un ramo della topologia.
+Specifica la priorità relativa del thread per un ramo della topologia.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,13 +21,13 @@ Specifica la priorità del thread relativo per un ramo della topologia.
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di origine (**\_ \_ \_ nodo SOURCESTREAM topologia MF**). L'attributo è facoltativo.
+Questo attributo si applica ai nodi di origine (**MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**). L'attributo è facoltativo.
 
-Questo attributo richiede gli attributi di classe [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) e [MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ ](mf-toponode-workqueue-mmcss-class-attribute.md) nello stesso nodo.
+Questo attributo richiede gli attributi [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) e [MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ CLASS](mf-toponode-workqueue-mmcss-class-attribute.md) nello stesso nodo.
 
-Il valore dell'attributo è la priorità del thread relativa della coda di lavoro per questo ramo della topologia. Il [servizio Utilità di pianificazione classi multimediali](../procthread/multimedia-class-scheduler-service.md) (MMCSS) usa la priorità relativa quando imposta la priorità del thread. Per ulteriori informazioni, vedere [**AvSetMmThreadPriority**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadpriority).
+Il valore dell'attributo è la priorità relativa del thread della coda di lavoro per questo ramo della topologia. Il [servizio Utilità di pianificazione classi](../procthread/multimedia-class-scheduler-service.md) multimediali (MMCSS) usa la priorità relativa quando imposta la priorità del thread. Per altre informazioni, vedere [**AvSetMmThreadPriority.**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadpriority)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del nodo della topologia](topology-node-attributes.md)
@@ -60,10 +60,10 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**\_ \_ ID WORKQUEUE MF \_ TOPONODE**](mf-toponode-workqueue-id-attribute.md)
+[**ID DELLA \_ CODA DI LAVORO \_ TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
 </dt> <dt>
 
-[**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ taskId**](mf-toponode-workqueue-mmcss-taskid-attribute.md)
+[**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID**](mf-toponode-workqueue-mmcss-taskid-attribute.md)
 </dt> </dl>
 
  

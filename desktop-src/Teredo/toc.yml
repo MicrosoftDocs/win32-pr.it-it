@@ -1,38 +1,38 @@
 - name: Teredo
   href: portal.md
   items:
-    - name: Informazioni su Teredo
+    - name: Informazioni Teredo
       href: about-teredo.md
       items:
-        - name: Componenti Teredo
+        - name: Teredo Componenti
           href: teredo-components.md
-        - name: Indirizzi Teredo
+        - name: Teredo Indirizzi
           href: teredo-addresses.md
         - name: Connettività IPv6 e Teredo
           href: ipv6-connectivity-and-teredo.md
         - name: Risoluzione dei nomi per Teredo
           href: name-resolution-for-teredo.md
-        - name: Modello di sicurezza Teredo
+        - name: Modello Teredo di sicurezza
           href: the-teredo-security-model.md
     - name: Utilizzo di Teredo
       href: using-teredo.md
       items:
         - name: Implementazione di Teredo
           href: implementing-teredo.md
-        - name: Implementazione del modello di sicurezza Teredo
+        - name: Implementazione del modello Teredo security
           href: implementing-the-teredo-security-model.md
           items:
             - name: Implementazione di filtri firewall per Teredo
               href: implementing-firewall-filters-for-teredo.md
-            - name: Eccezioni del firewall richieste per Teredo
+            - name: Eccezioni del firewall necessarie per Teredo
               href: required-firewall-exceptions-for-teredo.md
-            - name: Eccezioni della piattaforma filtro Windows per Teredo
+            - name: Windows Filtro delle eccezioni della piattaforma per Teredo
               href: required-windows-filtering-platform-exceptions-for-teredo.md
         - name: Ricezione di traffico richiesto su Teredo
           href: receiving-solicited-traffic-over-teredo.md
         - name: Ricezione di traffico non richiesto su Teredo
           href: receiving-unsolicited-traffic-over-teredo.md
-        - name: Uso di Teredo con helper IP
+        - name: Uso Teredo con l'helper IP
           href: using-teredo-with-ip-helper.md
-        - name: Utilizzo di Teredo in Windows XP
+        - name: Uso Teredo in Windows XP
           href: using-teredo-in-windows-xp.md

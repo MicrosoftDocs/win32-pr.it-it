@@ -1,21 +1,21 @@
 ---
-title: '\_Creda EAP \_ (Eaptypes. h)'
-description: Archivia le credenziali di sicurezza EAP in una \_ struttura di matrice di campi di input di configurazione EAP \_ \_ \_ . | \_Creda EAP \_ (Eaptypes. h)
+title: EAP \_ CRED \_ RESP (Eaptypes.h)
+description: Archivia le credenziali di sicurezza EAP all'interno di una struttura EAP \_ CONFIG \_ INPUT FIELD \_ \_ ARRAY. | EAP \_ CRED \_ RESP (Eaptypes.h)
 ms.assetid: 714c75d8-71c7-4c3f-802a-a5e4f6ca65c2
 keywords:
 - EAP_CRED_RESP
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5c2176377dbde0f7c02d2a7d8083ad1bcff9e71
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d16b9bda55ed1b4aee9a9847740b25d46418c6ec3544dfdd6ba71b2c282042b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904638"
 ---
-# <a name="eap_cred_resp"></a>\_creda \_ EAP
+# <a name="eap_cred_resp"></a>EAP \_ CRED \_ RESP
 
-La struttura **EAP cred. consente \_ \_** di archiviare le credenziali di sicurezza EAP in una struttura di [**matrice di campi di \_ input di configurazione \_ \_ \_ EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array) .
+La **struttura EAP \_ CRED \_ RESP** archivia le credenziali di sicurezza EAP all'interno di [**una struttura EAP CONFIG INPUT \_ FIELD \_ \_ \_ ARRAY.**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_array)
 
 
 ```C++
@@ -26,18 +26,18 @@ typedef EAP_CONFIG_INPUT_FIELD_ARRAY EAP_CRED_RESP;
 
 <dl> <dt>
 
-**\_creda \_ EAP**
+**EAP \_ CRED \_ RESP**
 </dt> <dd>
 
-Nella struttura **EAP \_ creda \_** è possibile archiviare sia la vecchia che la nuova credenziale di sicurezza EAP a cui punta il parametro *pbUiData* della struttura di [**\_ \_ \_ dati dell'interfaccia utente interattiva EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_interactive_ui_data) quando il parametro *dwDataType* del [**tipo di dati di EAP \_ Interactive \_ UI \_ \_**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_interactive_ui_data_type) specifica un tipo di risposta delle credenziali.
+La struttura **EAP \_ CRED \_ RESP** archivia sia le credenziali di sicurezza EAP nuove che le credenziali di sicurezza nuove a cui punta il *parametro pbUiData* della struttura [**EAP \_ INTERACTIVE UI \_ \_ DATA**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_interactive_ui_data) quando il *parametro dwDataType* di [**EAP INTERACTIVE UI DATA \_ \_ \_ \_ TYPE**](/windows/desktop/api/eaptypes/ne-eaptypes-eap_interactive_ui_data_type) specifica un tipo di risposta delle credenziali.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per supportare single sign-on (SSO), viene usata la struttura **EAP \_ cred \_** .
+La **struttura EAP \_ CRED \_ RESP** viene usata per supportare l'accesso Single Sign-On (SSO).
 
-La struttura di **EAP \_ creda \_** è identica alla struttura della richiesta [**EAP \_ cred \_**](eap-cred-req.md) .
+La **struttura \_ EAP CRED \_ RESP** è identica alla [**struttura \_ \_ REQ CRED EAP.**](eap-cred-req.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ La struttura di **EAP \_ creda \_** è identica alla struttura della richiesta [
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 
@@ -58,16 +58,16 @@ La struttura di **EAP \_ creda \_** è identica alla struttura della richiesta [
 [Strutture supplicant EAPHost](eap-host-supplicant-structures.md)
 </dt> <dt>
 
-[**\_req creda EAP \_**](eap-cred-req.md)
+[**EAP \_ CRED \_ REQ**](eap-cred-req.md)
 </dt> <dt>
 
-[**REQ di scadenza di EAP \_ cred \_ \_**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_cred_expiry_req)
+[**EAP \_ CRED \_ EXPIRY \_ REQ**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_cred_expiry_req)
 </dt> <dt>
 
-[**la \_ scadenza del credito EAP \_ \_**](/previous-versions/windows/desktop/legacy/bb530539(v=vs.85))
+[**EAP \_ CRED \_ EXPIRY \_ RESP**](/previous-versions/windows/desktop/legacy/bb530539(v=vs.85))
 </dt> <dt>
 
-[**\_ \_ dati dell'interfaccia utente interattiva EAP \_**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_interactive_ui_data)
+[**DATI \_ DELL'INTERFACCIA \_ UTENTE INTERATTIVA EAP \_**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_interactive_ui_data)
 </dt> <dt>
 
 [SSO e PLAP](understanding-sso-and-plap.md)

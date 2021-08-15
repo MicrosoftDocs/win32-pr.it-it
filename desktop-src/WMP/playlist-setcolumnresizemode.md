@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. setColumnResizeMode
-description: Il metodo setColumnResizeMode specifica il modo in cui la colonna indicizzata si ridimensiona.
+title: PLAYLIST.setColumnResizeMode
+description: Il metodo setColumnResizeMode specifica le dimensioni della colonna indicizzata stessa.
 ms.assetid: 84ca0e60-ca24-4058-ae08-5b9cf3d7c38f
 keywords:
-- PLAYLIST. setColumnResizeMode Windows Media Player
+- PLAYLIST.setColumnResizeMode Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9a1b83020f4400f4f1095c84e281fe498f2b67da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72f356108ff016c404468a9b152b4adac247cd72ee089a9e82ea3206c4c2ffea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335803"
 ---
-# <a name="playlistsetcolumnresizemode"></a>PLAYLIST. setColumnResizeMode
+# <a name="playlistsetcolumnresizemode"></a>PLAYLIST.setColumnResizeMode
 
-Il metodo **setColumnResizeMode** specifica il modo in cui la colonna indicizzata si ridimensiona.
+Il **metodo setColumnResizeMode** specifica le dimensioni della colonna indicizzata stessa.
 
 ``` syntax
         elementID.setColumnResizeMode(column, mode)
@@ -32,14 +32,14 @@ Il metodo **setColumnResizeMode** specifica il modo in cui la colonna indicizzat
 
 <dl> <dt>
 
-<span id="column"></span><span id="COLUMN"></span>*colonna*
+<span id="column"></span><span id="COLUMN"></span>*Colonna*
 </dt> <dd>
 
-**Numero** (**Long**) che indica l'indice della colonna da modificare.
+**Numero** (**long**) che indica l'indice della colonna da modificare.
 
 </dd> <dt>
 
-<span id="mode"></span><span id="MODE"></span>*modalità*
+<span id="mode"></span><span id="MODE"></span>*Modalità*
 </dt> <dd>
 
 **Stringa** che indica la modalità di ridimensionamento. Contiene uno dei valori seguenti.
@@ -48,10 +48,10 @@ Il metodo **setColumnResizeMode** specifica il modo in cui la colonna indicizzat
 
 | Valore          | Descrizione                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| AutosizeHeader | La colonna viene ridimensionata per contenere tutti i dati nella colonna e nell'intestazione.                                  |
-| AutosizeData   | La colonna viene ridimensionata in modo da contenere solo tutti i dati della colonna.                                                 |
-| Fisso          | La colonna è a dimensione fissa.                                                                                    |
-| Occupa completamente      | La colonna viene ridimensionata in modo da utilizzare lo spazio rimanente nell'elemento della **playlist** dopo che tutte le altre colonne vengono ridimensionate. |
+| AutosizeHeader | La colonna viene ridimensionata per contenere tutti i dati sia nella colonna che nell'intestazione.                                  |
+| AutosizeData   | La colonna viene ridimensionata in modo da contenere solo tutti i dati nella colonna.                                                 |
+| Fisso          | Le dimensioni della colonna sono fisse.                                                                                    |
+| Si estende      | La colonna viene ridimensionata in modo da usare lo spazio rimanente nell'elemento **PLAYLIST** dopo il ridimensionamento di tutte le altre colonne. |
 
 
 
@@ -69,7 +69,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -77,7 +77,7 @@ Questo metodo non restituisce valori.
 
 <dl> <dt>
 
-[**PLAYLIST (elemento)**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

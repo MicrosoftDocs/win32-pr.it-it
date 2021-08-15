@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d7c430358b5ba7f66c5a79b08ae01925141e659f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a4889f0292cf9e97b74db5c1d35f2bc8242acdadb608db2404bda5dcff1a62b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296144"
 ---
 # <a name="id3dxcompressedanimationsetgetcallbackkeys-method"></a>Metodo ID3DXCompressedAnimationSet::GetCallbackKeys
 
-Riempie una matrice con i dati della chiave di callback usati per l'animazione con fotogrammi chiave.
+Riempie una matrice con i dati chiave di callback usati per l'animazione del fotogramma chiave.
 
 ## <a name="syntax"></a>Sintassi
 

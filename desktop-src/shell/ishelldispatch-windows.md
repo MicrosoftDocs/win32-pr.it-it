@@ -1,7 +1,7 @@
 ---
-description: 'Metodo IShellDispatch.Windows: crea e restituisce un oggetto ShellWindows. Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla shell.'
+description: 'IShellDispatch. Windows metodo : crea e restituisce un oggetto ShellWindows. Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla shell.'
 ms.assetid: 788E2106-3534-4e22-801F-677FD02BDFE0
-title: Metodo IShellDispatch.Windows (Shldisp.h)
+title: IShellDispatch. Windows metodo (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 16991d6a251909e8f3b277894a96e6ad08a7f9a4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f17e6f9ff4a8118043cf452af0647b78c7d2c4365f83a497481ee97236edb21c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118221632"
 ---
-# <a name="ishelldispatchwindows-method"></a>Metodo IShellDispatch.Windows
+# <a name="ishelldispatchwindows-method"></a>IShellDispatch. Windows metodo
 
 Crea e restituisce un [**oggetto ShellWindows.**](shellwindows.md) Questo oggetto rappresenta una raccolta di tutte le finestre aperte che appartengono alla shell.
 
@@ -65,9 +65,9 @@ Questo metodo viene implementato e accessibile tramite il [**metodo Shell.Window
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti **usano Windows** per recuperare [**l'oggetto ShellWindows**](shellwindows.md) e visualizzare un conteggio del numero di elementi in esso contenuti. L'utilizzo viene visualizzato per JScript, VBScript e Visual Basic.
+Gli esempi seguenti **usano Windows** per recuperare l'oggetto [**ShellWindows**](shellwindows.md) e visualizzare un conteggio del numero di elementi in esso contenuti. L'utilizzo viene visualizzato JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -141,7 +141,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

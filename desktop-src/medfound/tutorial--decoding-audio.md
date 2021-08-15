@@ -1,28 +1,28 @@
 ---
 description: Questa esercitazione illustra come usare il lettore di origine per decodificare l'audio da un file multimediale e scrivere l'audio in un file WAVE.
 ms.assetid: ed40e201-c6ed-444f-bdaa-a5f33d1cc068
-title: 'Esercitazione: decodifica audio'
+title: "Esercitazione: Decodifica dell'audio"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 539eb6d9f48419b62fa1c379c636abaf2bb0a63a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4ad5dbac47680c4d8faa73affa711b987edf220e05324d88cd0ffbda3bb93e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104552270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237666"
 ---
-# <a name="tutorial-decoding-audio"></a>Esercitazione: decodifica audio
+# <a name="tutorial-decoding-audio"></a>Esercitazione: Decodifica dell'audio
 
-Questa esercitazione illustra come usare il [lettore di origine](source-reader.md) per decodificare l'audio da un file multimediale e scrivere l'audio in un file Wave. L'esercitazione è basata sull'esempio di [clip audio](audio-clip-sample.md) .
+Questa esercitazione illustra come usare il [lettore](source-reader.md) di origine per decodificare l'audio da un file multimediale e scrivere l'audio in un file WAVE. L'esercitazione è basata [sull'esempio di clip](audio-clip-sample.md) audio.
 
--   [Overview](#overview)
+-   [Panoramica](#overview)
 -   [File di intestazione e di libreria](#header-and-library-files)
 -   [Implementare wmain](#implement-wmain)
 -   [Scrivere il file WAVE](#write-the-wave-file)
 -   [Configurare il lettore di origine](#configure-the-source-reader)
 -   [Scrivere l'intestazione del file WAVE](#write-the-wave-file-header)
--   [Calcolare la dimensione massima dei dati](#calculate-the-maximum-data-size)
--   [Decodifica audio](#decode-the-audio)
+-   [Calcolare le dimensioni massime dei dati](#calculate-the-maximum-data-size)
+-   [Decodificare l'audio](#decode-the-audio)
 -   [Finalizzare l'intestazione del file](#finalize-the-file-header)
 -   [Argomenti correlati](#related-topics)
 
@@ -30,9 +30,9 @@ Questa esercitazione illustra come usare il [lettore di origine](source-reader.m
 
 In questa esercitazione si creerà un'applicazione console che accetta due argomenti della riga di comando: il nome di un file di input che contiene un flusso audio e il nome del file di output. L'applicazione legge cinque secondi di dati audio dal file di input e scrive l'audio nel file di output come dati WAVE.
 
-Per ottenere i dati audio decodificati, l'applicazione utilizza l'oggetto lettore di origine. Il lettore di origine espone l'interfaccia [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) . Per scrivere l'audio decodificato nel file WAVE, le applicazioni usano le funzioni di I/O di Windows. Questo processo è illustrato nella figura seguente.
+Per ottenere i dati audio decodificati, l'applicazione usa l'oggetto lettore di origine. Il lettore di origine espone [**l'interfaccia IMFSourceReader.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) Per scrivere l'audio decodificato nel file WAVE, le applicazioni Windows funzioni di I/O. L'immagine seguente illustra questo processo.
 
-![diagramma che mostra al lettore di origine i dati audio ottenuti dal file di origine.](images/audio-clip-tutorial.gif)
+![diagramma che mostra il lettore di origine che riceve i dati audio dal file di origine.](images/audio-clip-tutorial.gif)
 
 Nella sua forma più semplice, un file WAVE ha la struttura seguente:
 
@@ -40,14 +40,14 @@ Nella sua forma più semplice, un file WAVE ha la struttura seguente:
 
 | Tipo di dati                              | Dimensioni (byte) | Valore                                                                 |
 |----------------------------------------|--------------|-----------------------------------------------------------------------|
-| **FOURCC**                             | 4            | RIFF                                                                |
-| **DWORD**                              | 4            | Dimensioni totali del file, esclusi i primi 8 byte                      |
-| **FOURCC**                             | 4            | ONDA                                                                |
-| **FOURCC**                             | 4            | FMT                                                                |
-| **DWORD**                              | 4            | Dimensione dei dati di [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) che segue. |
+| **Fourcc**                             | 4            | 'RIFF'                                                                |
+| **Dword**                              | 4            | Dimensioni totali del file, senza includere i primi 8 byte                      |
+| **Fourcc**                             | 4            | 'WAVE'                                                                |
+| **Fourcc**                             | 4            | 'fmt'                                                                |
+| **Dword**                              | 4            | Dimensioni dei [**dati WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) seguenti. |
 | [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) | Varia       | Intestazione del formato audio.                                                  |
-| **FOURCC**                             | 4            | dati                                                                |
-| **DWORD**                              | 4            | Dimensioni dei dati audio.                                               |
+| **Fourcc**                             | 4            | 'data'                                                                |
+| **Dword**                              | 4            | Dimensioni dei dati audio.                                               |
 | **BYTE**\[\]                           | Varia       | Dati audio.                                                           |
 
 
@@ -55,11 +55,11 @@ Nella sua forma più semplice, un file WAVE ha la struttura seguente:
  
 
 > [!Note]  
-> Un **fourcc** è un **DWORD** formato dalla concatenazione di quattro caratteri ASCII.
+> FourCC **è** un **valore DWORD** formato dalla concatenazione di quattro caratteri ASCII.
 
  
 
-Questa struttura di base può essere estesa aggiungendo metadati di file e altre informazioni che esulano dall'ambito di questa esercitazione.
+Questa struttura di base può essere estesa aggiungendo metadati di file e altre informazioni, che non sono nell'ambito di questa esercitazione.
 
 ## <a name="header-and-library-files"></a>File di intestazione e di libreria
 
@@ -81,9 +81,9 @@ Includere i file di intestazione seguenti nel progetto:
 
 Collegamento alle librerie seguenti:
 
--   mfplat. lib
--   mfreadwrite. lib
--   mfuuid. lib
+-   mfplat.lib
+-   mfreadwrite.lib
+-   mfuuid.lib
 
 ## <a name="implement-wmain"></a>Implementare wmain
 
@@ -172,18 +172,18 @@ int wmain(int argc, wchar_t* argv[])
 
 Questa funzione esegue le operazioni seguenti:
 
-1.  Chiama [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) per inizializzare la libreria com.
-2.  Chiama [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) per inizializzare la piattaforma Media Foundation.
-3.  Chiama [**MFCreateSourceReaderFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesourcereaderfromurl) per creare il lettore di origine. Questa funzione accetta il nome del file di input e riceve un puntatore di interfaccia [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) .
-4.  Crea il file di output chiamando la funzione **CreateFile** , che restituisce un handle di file.
+1.  Chiama [**CoInitializeEx per**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) inizializzare la libreria COM.
+2.  Chiama [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) per inizializzare la Media Foundation piattaforma.
+3.  Chiama [**MFCreateSourceReaderFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesourcereaderfromurl) per creare il lettore di origine. Questa funzione accetta il nome del file di input e riceve un puntatore a [**interfaccia IMFSourceReader.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)
+4.  Crea il file di output chiamando la **funzione CreateFile,** che restituisce un handle di file.
 5.  Chiama la funzione [WriteWavFile](#write-the-wave-file) definita dall'applicazione. Questa funzione decodifica l'audio e scrive il file WAVE.
-6.  Rilascia il puntatore [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) e l'handle di file.
-7.  Chiama [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la piattaforma Media Foundation.
-8.  Chiama [**CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) per rilasciare la libreria com.
+6.  Rilascia il [**puntatore IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) e l'handle di file.
+7.  Chiama [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) per arrestare la Media Foundation piattaforma.
+8.  Chiama [**CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) per rilasciare la libreria COM.
 
 ## <a name="write-the-wave-file"></a>Scrivere il file WAVE
 
-La maggior parte del lavoro si verifica nella `WriteWavFile` funzione, che viene chiamata da `wmain` .
+La maggior parte del lavoro viene eseguita nella `WriteWavFile` funzione , che viene chiamata da `wmain` .
 
 
 ```C++
@@ -242,11 +242,11 @@ HRESULT WriteWaveFile(
 
 Questa funzione chiama una serie di altre funzioni definite dall'applicazione:
 
-1.  La funzione [ConfigureAudioStream](#configure-the-source-reader) Inizializza il lettore di origine. Questa funzione riceve un puntatore all'interfaccia [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) , che viene usata per ottenere una descrizione del formato audio decodificato, inclusa la frequenza di campionamento, il numero di canali e la profondità di bit (bit per esempio).
-2.  La funzione WriteWaveHeader scrive la prima parte del file WAVE, incluse l'intestazione e l'inizio del blocco "data".
+1.  La [funzione ConfigureAudioStream](#configure-the-source-reader) inizializza il lettore di origine. Questa funzione riceve un puntatore [**all'interfaccia IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) usata per ottenere una descrizione del formato audio decodificato, tra cui frequenza di campionamento, numero di canali e profondità di bit (bit per campione).
+2.  La funzione WriteWaveHeader scrive la prima parte del file WAVE, incluse l'intestazione e l'inizio del blocco 'data'.
 3.  La funzione CalculateMaxAudioDataSize calcola la quantità massima di audio da scrivere nel file, in byte.
 4.  La funzione WriteWaveData scrive i dati audio PCM nel file.
-5.  La funzione FixUpChunkSizes scrive le informazioni sulle dimensioni del file visualizzate dopo i valori **fourcc** ' riff ' è data ' nel file Wave. Questi valori non sono noti fino al `WriteWaveData` completamento.
+5.  La funzione FixUpChunkSizes scrive le informazioni sulle dimensioni del file visualizzate dopo i valori 'RIFF' e 'data' **FOURCC** nel file WAVE. Questi valori non sono noti fino al `WriteWaveData` completamento.
 
 Queste funzioni sono illustrate nelle sezioni rimanenti di questa esercitazione.
 
@@ -254,7 +254,7 @@ Queste funzioni sono illustrate nelle sezioni rimanenti di questa esercitazione.
 
 La `ConfigureAudioStream` funzione configura il lettore di origine per decodificare il flusso audio nel file di origine. Restituisce anche informazioni sul formato dell'audio decodificato.
 
-In Media Foundation i formati multimediali vengono descritti utilizzando oggetti di *tipo supporto* . Un oggetto del tipo di supporto espone l'interfaccia [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) , che eredita l'interfaccia [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) . Essenzialmente, un tipo di supporto è una raccolta di proprietà che descrivono il formato. Per ulteriori informazioni, vedere [tipi di supporti](media-types.md).
+In Media Foundation i formati multimediali vengono descritti usando oggetti *tipo di* supporto. Un oggetto tipo di supporto espone [**l'interfaccia IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) che eredita [**l'interfaccia IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Essenzialmente, un tipo di supporto è una raccolta di proprietà che descrivono il formato. Per altre informazioni, vedere [Tipi di supporti](media-types.md).
 
 
 ```C++
@@ -338,20 +338,20 @@ HRESULT ConfigureAudioStream(
 
 La `ConfigureAudioStream` funzione esegue le operazioni seguenti:
 
-1.  Chiama il metodo [**IMFSourceReader:: SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) per selezionare il flusso audio e deselezionare tutti gli altri flussi. Questo passaggio può migliorare le prestazioni, in quanto impedisce al lettore di origine di mantenere i frame video non usati dall'applicazione.
-2.  Crea un tipo di supporto *parziale* che specifica l'audio PCM. La funzione crea il tipo parziale come segue:
-    1.  Chiama [**MFCreateMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatemediatype) per creare un oggetto di tipo di supporto vuoto.
-    2.  Imposta l'attributo del [**\_ \_ \_ tipo principale MF mt**](mf-mt-major-type-attribute.md) su **MFMediaType \_ audio**.
-    3.  Imposta l'attributo del [**\_ \_ sottotipo MF mt**](mf-mt-subtype-attribute.md) su **MFAudioFormat \_ PCM**.
-3.  Chiama [**IMFSourceReader:: SetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype) per impostare il tipo parziale nel lettore di origine. Se il file di origine contiene audio codificato, il lettore di origine carica automaticamente il decoder audio necessario.
-4.  Chiama [**IMFSourceReader:: GetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getcurrentmediatype) per ottenere il tipo di supporto PCM effettivo. Questo metodo restituisce un tipo di supporto con tutti i dettagli di formato compilati, ad esempio la frequenza di campionamento audio e il numero di canali.
-5.  Chiama [**IMFSourceReader:: SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) per abilitare il flusso audio.
+1.  Chiama il [**metodo IMFSourceReader::SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) per selezionare il flusso audio e deselezionare tutti gli altri flussi. Questo passaggio può migliorare le prestazioni, perché impedisce al lettore di origine di mantenere i fotogrammi video non utilizzati dall'applicazione.
+2.  Crea un *tipo di* supporto parziale che specifica l'audio PCM. La funzione crea il tipo parziale nel modo seguente:
+    1.  Chiama [**MFCreateMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatemediatype) per creare un oggetto tipo di supporto vuoto.
+    2.  Imposta [**l'attributo \_ MF MT \_ MAJOR \_ TYPE**](mf-mt-major-type-attribute.md) su **MFMediaType \_ Audio.**
+    3.  Imposta [**l'attributo \_ MF MT \_ SUBTYPE**](mf-mt-subtype-attribute.md) su **MFAudioFormat \_ PCM.**
+3.  Chiama [**IMFSourceReader::SetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype) per impostare il tipo parziale nel lettore di origine. Se il file di origine contiene audio codificato, il lettore di origine carica automaticamente il decodificatore audio necessario.
+4.  Chiama [**IMFSourceReader::GetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getcurrentmediatype) per ottenere il tipo di supporto PCM effettivo. Questo metodo restituisce un tipo di supporto con tutti i dettagli del formato compilati, ad esempio la frequenza di campionamento audio e il numero di canali.
+5.  Chiama [**IMFSourceReader::SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) per abilitare il flusso audio.
 
 ## <a name="write-the-wave-file-header"></a>Scrivere l'intestazione del file WAVE
 
-La `WriteWaveHeader` funzione scrive l'intestazione del file Wave.
+La `WriteWaveHeader` funzione scrive l'intestazione del file WAVE.
 
-L'unica API Media Foundation chiamata da questa funzione è [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype), che converte il tipo di supporto in una struttura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+L'Media Foundation'API chiamata da questa funzione è [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype), che converte il tipo di supporto in [**una struttura WAVEFORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
 
 ```C++
@@ -424,7 +424,7 @@ HRESULT WriteWaveHeader(
 
 
 
-La `WriteToFile` funzione è una funzione di supporto semplice che esegue il wrapping della funzione **WriteFile** di Windows e restituisce un valore **HRESULT** .
+La funzione è una semplice funzione helper che esegue il wrapping della Windows `WriteToFile` **WriteFile** e restituisce un **valore HRESULT.**
 
 
 ```C++
@@ -454,9 +454,9 @@ HRESULT WriteToFile(HANDLE hFile, void* p, DWORD cb)
 
 
 
-## <a name="calculate-the-maximum-data-size"></a>Calcolare la dimensione massima dei dati
+## <a name="calculate-the-maximum-data-size"></a>Calcolare le dimensioni massime dei dati
 
-Poiché le dimensioni del file vengono archiviate come valore a 4 byte nell'intestazione del file, un file WAVE è limitato a una dimensione massima di 0xFFFFFFFF byte, circa 4 GB. Questo valore include le dimensioni dell'intestazione del file. L'audio PCM ha una velocità in bit costante, quindi è possibile calcolare le dimensioni massime dei dati dal formato audio, come indicato di seguito:
+Poiché le dimensioni del file vengono archiviate come valore di 4 byte nell'intestazione del file, un file WAVE è limitato a una dimensione massima di 0xFFFFFFFF byte, circa 4 GB. Questo valore include le dimensioni dell'intestazione del file. L'audio PCM ha una velocità in bit costante, quindi è possibile calcolare le dimensioni massime dei dati dal formato audio, come indicato di seguito:
 
 
 ```C++
@@ -503,11 +503,11 @@ DWORD CalculateMaxAudioDataSize(
 
 
 
-Per evitare i frame audio parziali, la dimensione viene arrotondata all'allineamento del blocco, che è archiviato nell'attributo di [**\_ \_ \_ \_ allineamento a blocchi audio di MF mt**](mf-mt-audio-block-alignment-attribute.md) .
+Per evitare fotogrammi audio parziali, le dimensioni vengono arrotondate all'allineamento del blocco, archiviato nell'attributo [**\_ MF MT \_ AUDIO BLOCK \_ \_ ALIGNMENT.**](mf-mt-audio-block-alignment-attribute.md)
 
-## <a name="decode-the-audio"></a>Decodifica audio
+## <a name="decode-the-audio"></a>Decodificare l'audio
 
-La `WriteWaveData` funzione legge l'audio decodificato dal file di origine e scrive nel file Wave.
+La `WriteWaveData` funzione legge l'audio decodificato dal file di origine e scrive nel file WAVE.
 
 
 ```C++
@@ -623,27 +623,27 @@ HRESULT WriteWaveData(
 
 
 
-La `WriteWaveData` funzione esegue le operazioni seguenti in un ciclo:
+La `WriteWaveData` funzione esegue le operazioni seguenti in un ciclo :
 
-1.  Chiama [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) per leggere l'audio dal file di origine. Il parametro *dwFlags* riceve **un operatore OR** bit per bit di flag dall'enumerazione del [**flag del \_ lettore di origine \_ \_ MF**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) . Il parametro *pSample* riceve un puntatore all'interfaccia [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , che viene usata per accedere ai dati audio. In alcuni casi una chiamata a **ReadSample** non genera dati, nel qual caso il puntatore **IMFSample** è **null**.
-2.  Controlla *dwFlags* per i flag seguenti:
-    -   **MF \_ \_ \_ CURRENTMEDIATYPECHANGED READERF di origine**. Questo flag indica una modifica del formato nel file di origine. I file WAVE non supportano le modifiche del formato.
-    -   **MF \_ \_ \_ ENDOFSTREAM READERF di origine**. Questo flag indica la fine del flusso.
-3.  Chiama [**IMFSample:: ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer) per ottenere un puntatore a un oggetto buffer.
-4.  Chiama [**IMFMediaBuffer:: Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) per ottenere un puntatore alla memoria del buffer.
+1.  Chiama [**IMFSourceReader::ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) per leggere l'audio dal file di origine. Il *parametro dwFlags* riceve un **OR** bit per bit di flag dall'enumerazione [**\_ MF SOURCE READER \_ \_ FLAG.**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) Il *parametro pSample* riceve un puntatore all'interfaccia [**IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) usata per accedere ai dati audio. In alcuni casi una chiamata a **ReadSample** non genera dati, nel qual caso il puntatore **IMFSample** è **NULL.**
+2.  Controlla *dwFlags per* i flag seguenti:
+    -   **MF \_ LETTORE \_ DI ORIGINEF \_ CURRENTMEDIATYPECHANGED**. Questo flag indica una modifica del formato nel file di origine. I file WAVE non supportano le modifiche al formato.
+    -   **MF \_ LETTORE \_ DI ORIGINEF \_ ENDOFSTREAM**. Questo flag indica la fine del flusso.
+3.  Chiama [**IMFSample::ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer) per ottenere un puntatore a un oggetto buffer.
+4.  Chiama [**IMFMediaBuffer::Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) per ottenere un puntatore alla memoria del buffer.
 5.  Scrive i dati audio nel file di output.
-6.  Chiama [**IMFMediaBuffer:: Unlock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) per sbloccare l'oggetto buffer.
+6.  Chiama [**IMFMediaBuffer::Unlock per**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) sbloccare l'oggetto buffer.
 
-La funzione interrompe il ciclo quando si verifica una delle condizioni seguenti:
+La funzione esce dal ciclo quando si verifica una delle condizioni seguenti:
 
 -   Il formato del flusso cambia.
 -   È stata raggiunta la fine del flusso.
 -   La quantità massima di dati audio viene scritta nel file di output.
--   Si è verificato un errore.
+-   Si verifica un errore.
 
 ## <a name="finalize-the-file-header"></a>Finalizzare l'intestazione del file
 
-I valori delle dimensioni archiviati nell'intestazione WAVE non sono noti fino al completamento della funzione precedente. Il `FixUpChunkSizes` Compila i valori seguenti:
+I valori delle dimensioni archiviati nell'intestazione WAVE non sono noti fino al completamento della funzione precedente. `FixUpChunkSizes`L'oggetto compila i valori seguenti:
 
 
 ```C++

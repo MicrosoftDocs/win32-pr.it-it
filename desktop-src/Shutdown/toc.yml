@@ -8,11 +8,11 @@
       items:
         - name: Disconnessione
           href: logging-off.md
-        - name: Chiusura in corso
+        - name: Arresto
           href: shutting-down.md
         - name: Individuazione evento di arresto
           href: shutdown-event-tracker.md
-    - name: Utilizzo dell'arresto del sistema
+    - name: Uso dell'arresto del sistema
       href: using-system-shutdown.md
       items:
         - name: Come arrestare il sistema
@@ -21,9 +21,9 @@
           href: how-to-log-off-the-current-user.md
         - name: Come bloccare la workstation
           href: how-to-lock-the-workstation.md
-        - name: Visualizzazione della finestra di dialogo Shutdown
+        - name: Visualizzazione della finestra di dialogo Arresta
           href: displaying-the-shutdown-dialog-box.md
-    - name: Riferimento per l'arresto del sistema
+    - name: Informazioni di riferimento per l'arresto del sistema
       href: system-shutdown-reference.md
       items:
         - name: Funzioni di arresto del sistema
@@ -33,7 +33,7 @@
               href: /windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna
             - name: ExitWindows
               href: /windows/desktop/api/Winuser/nf-winuser-exitwindows
-            - name: ExitWindowsEx
+            - name: Exitwindowsex
               href: /windows/desktop/api/Winuser/nf-winuser-exitwindowsex
             - name: InitiateShutdown
               href: /windows/desktop/api/Winreg/nf-winreg-initiateshutdowna
@@ -49,12 +49,12 @@
               href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasondestroy
             - name: ShutdownBlockReasonQuery
               href: /windows/desktop/api/Winuser/nf-winuser-shutdownblockreasonquery
-        - name: Messaggi di chiusura del sistema
+        - name: Messaggi di arresto del sistema
           href: system-shutdown-messages.md
           items:
             - name: WM_ENDSESSION
               href: wm-endsession.md
             - name: WM_QUERYENDSESSION
               href: wm-queryendsession.md
-        - name: Codici motivo dell'arresto del sistema
+        - name: Codici motivo arresto sistema
           href: system-shutdown-reason-codes.md

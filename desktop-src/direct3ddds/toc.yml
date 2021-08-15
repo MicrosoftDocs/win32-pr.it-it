@@ -1,7 +1,7 @@
 - name: DDS
   href: dx-graphics-dds.md
   items:
-    - name: Guida alla programmazione per DDS
+    - name: Guida di programmazione per DDS
       href: dx-graphics-dds-pguide.md
       items:
         - name: Esempio di trama DDS

@@ -1,9 +1,9 @@
 ---
 title: hidden (attributo)
-description: L'attributo \ Hidden \ indica che l'elemento esiste ma non deve essere visualizzato in un browser orientato all'utente.
+description: L'attributo \hidden\ indica che l'elemento esiste ma non deve essere visualizzato in un browser orientato all'utente.
 ms.assetid: bf1f9270-fb93-4421-804e-d56e2c863bbd
 keywords:
-- attributo MIDL nascosto
+- attributo nascosto MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1718351ef84199b60ba720ed2f3569cfa78a0a50
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a907a608376d9ad13f97427bd7a941b99221a0f14a6fa9fe35944ced10770b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "106299640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384046"
 ---
 # <a name="hidden-attribute"></a>hidden (attributo)
 
-L'attributo **\[ Hidden \]** indica che l'elemento esiste ma non deve essere visualizzato in un browser orientato all'utente.
+**\[ L'attributo \]** nascosto indica che l'elemento esiste ma non deve essere visualizzato in un browser orientato all'utente.
 
 ``` syntax
 [
@@ -47,42 +47,42 @@ Zero o più attributi MIDL facoltativi.
 
 </dd> <dt>
 
-*elemento* 
+*Elemento* 
 </dt> <dd>
 
-Una delle direttive seguenti: [**coclasse**](coclass.md), interfaccia [**Dispatch**](dispinterface.md), [**interfaccia**](interface.md)o [**libreria**](library.md).
+Una delle direttive seguenti: [**coclass,**](coclass.md) [**dispinterface,**](dispinterface.md) [**interface**](interface.md)o [**library**](library.md).
 
 </dd> <dt>
 
-*Nome elemento* 
+*element-name* 
 </dt> <dd>
 
-Nome che altri componenti software possono utilizzare per delineare l'elemento corrente.
+Nome che altri componenti software possono usare per delineare l'elemento corrente.
 
 </dd> <dt>
 
-*definizioni* 
+*Definizioni* 
 </dt> <dd>
 
-Specifica le istruzioni che compongono la definizione dell'elemento.
+Specifica le istruzioni che costituiscono la definizione dell'elemento.
 
 </dd> <dt>
 
-*tipo di funzione* 
+*function-type* 
 </dt> <dd>
 
 Tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Nome usato per richiamare la funzione.
 
 </dd> <dt>
 
-*facoltativo-parameter-list* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Zero o più parametri di funzione.
@@ -91,13 +91,13 @@ Zero o più parametri di funzione.
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ Hidden \]** consente di rimuovere membri dall'interfaccia (mediante la schermatura da un ulteriore utilizzo) mantenendo la compatibilità con il codice esistente. È possibile usare l'attributo **\[ \] Hidden** per le proprietà, i metodi e le istruzioni [**coclass**](coclass.md), [**Dispatch**](dispinterface.md), [**Interface**](interface.md)e [**Library**](library.md) .
+**\[ L'attributo \]** nascosto consente di rimuovere i membri dall'interfaccia (proteggendoli dall'ulteriore uso) mantenendo la compatibilità con il codice esistente. È possibile usare **\[ l'attributo \]** nascosto per proprietà, metodi e [**le istruzioni di coclasse**](coclass.md), interfaccia [**dispatch**](dispinterface.md) [**,**](interface.md)interfaccia [**e**](library.md) libreria.
 
-Quando viene specificato per una libreria, l'attributo **\[ Hidden \]** impedisce la visualizzazione dell'intera libreria. Questo utilizzo è pensato per i controlli. Gli host devono creare una nuova libreria dei tipi che esegue il wrapping del controllo con le proprietà estese.
+Se specificato per una libreria, **\[ l'attributo nascosto \]** impedisce la visualizzazione dell'intera libreria. Questo utilizzo è pensato per i controlli. Gli host devono creare una nuova libreria dei tipi che esegue il wrapping del controllo con le proprietà estese.
 
 ### <a name="flags"></a>Flags
 
-VARFLAG \_ FHIDDEN, FUNCFLAG \_ FHIDDEN, TypeFlag \_ FHIDDEN
+VARFLAG \_ FHIDDEN, FUNCFLAG \_ FHIDDEN, TYPEFLAG \_ FHIDDEN
 
 ## <a name="examples"></a>Esempi
 
@@ -132,18 +132,18 @@ library HiddenLib
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interfaccia**](interface.md)
+[**Interfaccia**](interface.md)
 </dt> <dt>
 
-[**libreria**](library.md)
+[**Libreria**](library.md)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -5,16 +5,16 @@ ms.assetid: 57c83e4d-2d9f-4f22-97e2-27e2d277f014
 ms.tgt_platform: multiple
 keywords:
 - Active Directory, uso, gestione degli utenti
-- utenti AD
+- users AD
 - utenti AD, gestione degli utenti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8154dc9d062b86d10b0df6418b5b4cbb79b44d2
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 0aa4c780a943d45833c3af5418337fe4d27584e2c944e19ff247479f3b29513d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186687"
 ---
 # <a name="managing-users"></a>Gestire utenti
 
@@ -29,8 +29,8 @@ Gli account utente vengono creati e archiviati come oggetti in Active Directory 
 -   Eliminazione di un utente. Un utente viene eliminato nello stesso stato di qualsiasi altro oggetto in Active Directory Domain Services. Per altre informazioni sull'eliminazione di oggetti, vedere [Creazione ed eliminazione di oggetti in Active Directory Domain Services](creating-and-deleting-objects-in-active-directory-domain-services.md).
 -   [Enumerazione degli utenti](enumerating-users.md)
 -   [Esecuzione di query per gli utenti](querying-for-users.md)
--   Spostamento degli utenti. Un utente viene spostato nello stesso stato di qualsiasi altro oggetto di Active Directory. Per altre informazioni sullo spostamento di oggetti Active Directory, vedere [Spostamento di oggetti](moving-objects.md).
--   [Gestione degli utenti nei server membri e in Windows 2000 Professional](managing-users-on-member-servers-and-windows-2000-professional.md)
+-   Spostamento di utenti. Un utente viene spostato nello stesso stato di qualsiasi altro oggetto di Active Directory. Per altre informazioni sullo spostamento di oggetti Active Directory, vedere [Spostamento di oggetti](moving-objects.md).
+-   [Gestione degli utenti nei server membri e Windows 2000 Professional](managing-users-on-member-servers-and-windows-2000-professional.md)
 
  
 

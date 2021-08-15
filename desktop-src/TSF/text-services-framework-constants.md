@@ -1,37 +1,37 @@
 ---
-title: Costanti del Framework dei servizi di testo
-description: Costanti del Framework dei servizi di testo
+title: Framework servizi di testo costanti
+description: Framework servizi di testo costanti
 ms.assetid: 38d1b81b-dc72-45d7-ac8a-7718556b6666
 keywords:
 - Framework servizi di testo (TSF), costanti
-- TSF (Framework di servizi di testo), costanti
-- Servizi di testo, costanti
-- Applicazioni abilitate per TSF, costanti
-- Riferimento a TSF, costanti
-- riferimento per TSF, costanti
+- TSF (Framework servizi di testo),costanti
+- servizi di testo, costanti
+- applicazioni abilitate per TSF, costanti
+- Informazioni di riferimento su TSF, costanti
+- informazioni di riferimento per TSF, costanti
 - barra della lingua
 - archivi di testo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e6dcc124247e31f3915eea89a4cc910305e115
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 055ddb32bd0336c93bfad91d6086bdd5ad1c0979558439b617dd38cf5b1d04b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951336"
 ---
-# <a name="text-services-framework-constants"></a>Costanti del Framework dei servizi di testo
+# <a name="text-services-framework-constants"></a>Framework servizi di testo costanti
 
-Questa sezione presenta argomenti sulle seguenti costanti.
+In questa sezione vengono presentati argomenti relativi alle costanti seguenti.
 
 -   [**Costanti del servizio di testo TSF**](tsf-text-service-constants.md)
--   [**Costanti della barra della lingua**](language-bar-constants.md)
--   [**Costanti del Framework**](framework-constants.md)
+-   [**Costanti della barra del linguaggio**](language-bar-constants.md)
+-   [**Costanti del framework**](framework-constants.md)
 -   [**Costanti dell'archivio di testo**](text-store-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

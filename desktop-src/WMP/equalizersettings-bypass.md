@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. bypass
-description: L'attributo bypass specifica o recupera un valore che indica se il filtro dell'equalizzatore viene ignorato nel grafico dei filtri.
+title: EQUALIZERSETTINGS.bypass
+description: L'attributo bypass specifica o recupera un valore che indica se il filtro equalizzatore viene ignorato nel grafico dei filtri.
 ms.assetid: b189a6f1-e0d0-4cfa-9a99-73d3ccd705e0
 keywords:
-- EQUALIZERSETTINGS. bypass Media Player Windows
+- EQUALIZERSETTINGS.bypass Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b78fe6f4ce7608ff02ecb5b125b00171610ec112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 636995cd62c83f46f97ea7371257a5fdfc8f1c79fec1873b229f80d92be6335d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748939"
 ---
-# <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS. bypass
+# <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS.bypass
 
-L'attributo **bypass** specifica o recupera un valore che indica se il filtro dell'equalizzatore viene ignorato nel grafico dei filtri.
+**L'attributo bypass** specifica o recupera un valore che indica se il filtro equalizzatore viene ignorato nel grafico dei filtri.
 
 ``` syntax
         elementID.bypass
@@ -29,14 +29,14 @@ L'attributo **bypass** specifica o recupera un valore che indica se il filtro de
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** di lettura/scrittura.
+Questo attributo è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                |
 |-------|--------------------------------------------|
-| true  | Valore predefinito. Il filtro dell'equalizzatore viene ignorato. |
-| false | Viene usato il filtro dell'equalizzatore.              |
+| true  | Valore predefinito. Il filtro equalizzatore viene ignorato. |
+| false | Viene usato il filtro equalizzatore.              |
 
 
 
@@ -52,7 +52,7 @@ Se questo attributo non viene specificato, il valore precedente verrà mantenuto
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

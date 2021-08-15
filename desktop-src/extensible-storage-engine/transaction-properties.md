@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Proprietà transazione'
+description: 'Altre informazioni su: Proprietà della transazione'
 title: Proprietà di transazione
 TOCTitle: Transaction properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Transaction
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.tran
 ms:contentKeyID: 55104169
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 04a90f27c1376829ab4dce3ce9c7f33bd48f6e37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfcc2de9539831bc7c1662c5a95f2ade86d8eed3ba9385666102a7aea209e5c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070782"
 ---
 # <a name="transaction-properties"></a>Proprietà di transazione
 
-Includi membri protetti  
-Includi membri ereditati  
+Includere membri protetti  
+Includere i membri ereditati  
 
-Il tipo di [transazione](./transaction-class.md) espone i membri seguenti.
+Il [tipo Transaction](./transaction-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -35,7 +35,7 @@ Il tipo di [transazione](./transaction-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Proprietà protetta." alt="Protected property" /></td>
 <td><a href="dn350578(v=exchg.10).md">HasResource</a></td>
-<td>Ottiene un valore che indica se la risorsa sottostante è attualmente allocata. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource</a>.</td>
+<td>Ottiene un valore che indica se la risorsa sottostante è attualmente allocata. Ereditato da <a href="dn319890(v=exchg.10).md">EsentResource.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
@@ -54,4 +54,4 @@ Inizio
 
 [Transaction (classe)](./transaction-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

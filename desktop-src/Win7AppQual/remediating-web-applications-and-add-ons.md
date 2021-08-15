@@ -1,29 +1,29 @@
 ---
-description: Correzione dei problemi di compatibilità in applicazioni Web e Add-Ons
+description: Correzione dei problemi di compatibilità nelle applicazioni Web e Add-Ons
 ms.assetid: 36255598-C96B-428A-AB87-D0ED140FA6FD
-title: Risoluzione dei problemi di compatibilità in applicazioni Web e Add-Ons
+title: Correzione dei problemi di compatibilità nelle applicazioni Web e Add-Ons
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f612847491c64820c93f643dce86f9aa854f637
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 45e8ec69c11498f98a58cac4736bd60a0fcd86437392f2cb60c38959749ebe0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118329616"
 ---
-# <a name="fixing-compatibility-issues-in-web-applications-and-add-ons"></a>Correzione dei problemi di compatibilità in applicazioni Web e Add-Ons
+# <a name="fixing-compatibility-issues-in-web-applications-and-add-ons"></a>Correzione dei problemi di compatibilità nelle applicazioni Web e Add-Ons
 
-Le sezioni seguenti descrivono come aggiornare applicazioni Web e componenti aggiuntivi per Windows Internet Explorer 8.
+Le sezioni seguenti descrivono come aggiornare le applicazioni Web e i componenti aggiuntivi per Windows Internet Explorer 8.
 
 
 
 | Argomento                                                                                                                                   | Descrizione                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Risoluzione dei problemi di compatibilità nelle applicazioni Web tramite Visualizzazione Compatibilità](remediating-web-applications-with-compatibility-view.md) | Descrive i passaggi di mitigazione di base e come pianificare la compatibilità delle applicazioni future mentre si stanno affrontando i problemi. |
-| [Correzione dei problemi di compatibilità dell'installazione ActiveX per gli utenti standard](remediating-activex-installation-for-standard-users.md)          | Fornisce suggerimenti per l'installazione di ActiveX.                                                                      |
-| [Modifiche al rendering e al layout](rendering-and-layout-changes.md)                                                                        | Descrive le modifiche al rendering e al layout nelle versioni più recenti di Windows Internet Explorer.                                         |
+| [Correzione dei problemi di compatibilità nelle applicazioni Web tramite Visualizzazione Compatibilità](remediating-web-applications-with-compatibility-view.md) | Descrive i passaggi di mitigazione di base e come pianificare la compatibilità delle applicazioni future mentre si stanno affrontando i problemi. |
+| [Correzione dei problemi ActiveX di compatibilità dell'installazione per gli utenti standard](remediating-activex-installation-for-standard-users.md)          | Fornisce suggerimenti per risolvere i problemi ActiveX installazione.                                                                      |
+| [Modifiche al rendering e al layout](rendering-and-layout-changes.md)                                                                        | Descrive le modifiche di rendering e layout nelle versioni più recenti di Windows Internet Explorer.                                         |
 | [Vettori di versione](version-vectors.md)                                                                                                  | Descrive i vettori di versione per Internet Explorer versioni.                                                                  |
-| [Stringa agente utente](user-agent-string.md)                                                                                              | Descrive la stringa dell'agente utente per Internet Explorer.                                                                         |
+| [Stringa agente utente](user-agent-string.md)                                                                                              | Descrive la stringa agente utente per Internet Explorer.                                                                         |
 | [Protezione DEP/NX](dep-nx-protection.md)                                                                                              | Descrive Protezione esecuzione programmi (DEP) o No-Execute(NX).                                                                   |
 | [Compatibilità](remediating-compatibility.md)                                                                                          | Descrive DPE/NX in Windows Internet Explorer 7.                                                                               |
 | [Ajax](ajax.md)                                                                                                                        | Vengono fornite considerazioni sulla compatibilità per JavaScript e XML (AJAX) asincroni.                                              |

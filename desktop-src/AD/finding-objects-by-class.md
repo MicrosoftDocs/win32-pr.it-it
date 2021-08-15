@@ -1,24 +1,24 @@
 ---
 title: Ricerca di oggetti per classe
-description: Query di ricerca tipiche per una classe di oggetti specifica.
+description: Una tipica query di ricerca per una classe di oggetti specifica.
 ms.assetid: 1805f98a-7e6b-4b4a-b173-dfb5d17e539a
 ms.tgt_platform: multiple
 keywords:
 - Ricerca di oggetti per classe AD
-- Active Directory, utilizzo, ricerca, per classe
-- oggetto AD, ricerca per classe
+- Active Directory, uso, ricerca, per classe
+- oggetto AD , ricerca per classe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 172c8b150090fae83aee1cf3e0f6a63a0e21dec6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e81d90dbcd50a3ce001c1dec57d8fafb0f1987376cf71314902b7f035f923512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189170"
 ---
 # <a name="finding-objects-by-class"></a>Ricerca di oggetti per classe
 
-Query di ricerca tipiche per una classe di oggetti specifica. Nell'esempio di codice seguente viene eseguita la ricerca di computer con percorso nella compilazione di 7N.
+Una tipica query di ricerca per una classe di oggetti specifica. L'esempio di codice seguente cerca i computer con posizione nell'edificio 7N.
 
 
 ```C++
@@ -27,7 +27,7 @@ Query di ricerca tipiche per una classe di oggetti specifica. Nell'esempio di co
 
 
 
-Considerare il motivo per cui **objectClass** non viene utilizzato. Non utilizzare **objectClass** senza un altro confronto che contenga un attributo indicizzato. Gli attributi di indice possono aumentare l'efficienza di una query. L'attributo **objectClass** è multivalore e non indicizzato. Per specificare il tipo o la classe di un oggetto, usare **objectCategory**.
+Considerare il **motivo per cui objectClass** non viene usato. Non usare **objectClass senza** un altro confronto che contiene un attributo indicizzato. Gli attributi dell'indice possono aumentare l'efficienza di una query. **L'attributo objectClass** è multivalore e non indicizzato. Per specificare il tipo o la classe di un oggetto, usare **objectCategory.**
 
 Meno efficiente:
 
@@ -38,7 +38,7 @@ Meno efficiente:
 
 
 
-Maggiore efficienza:
+Più efficiente:
 
 
 ```C++
@@ -47,7 +47,7 @@ Maggiore efficienza:
 
 
 
-Tenere presente che in alcuni casi è necessario usare una combinazione di **objectClass** e **objectCategory** . È necessario specificare la classe utente e la classe Contact come indicato di seguito.
+Tenere presente che in alcuni casi è necessario usare una combinazione di **objectClass** e **objectCategory.** La classe utente e la classe contact devono essere specificate come indicato di seguito.
 
 
 ```C++
@@ -58,7 +58,7 @@ Tenere presente che in alcuni casi è necessario usare una combinazione di **obj
 
 
 
-Tenere presente che è possibile cercare gli utenti e i contatti con il codice seguente.
+Tenere presente che è possibile cercare sia utenti che contatti con quanto segue.
 
 
 ```C++
@@ -67,9 +67,9 @@ Tenere presente che è possibile cercare gli utenti e i contatti con il codice s
 
 
 
- 
+ 
 
- 
+ 
 
 
 

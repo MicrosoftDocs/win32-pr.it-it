@@ -1,22 +1,22 @@
 ---
 title: Codice di esempio per l'impostazione delle autorizzazioni per le operazioni sugli oggetti figlio
-description: Nell'esempio di codice C e C++ riportato di seguito viene creata una voce ACE che assegna i diritti di creazione per gli oggetti utente al trustee specificato.
+description: Nell'esempio di codice C e C++ seguente viene creata una ACE che assegna i diritti di creazione per gli oggetti utente al fiduciare specificato.
 ms.assetid: 51010092-fa85-4f9c-8869-97fed30acc7f
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, impostazione delle autorizzazioni per le operazioni sugli oggetti figlio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db12576aa9b5ba151ced08a98452759cc67e8bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e53c2862ea645030af2ffb1f69e35c53f765588959dec945a31b8f6d6ce8ef6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190089"
 ---
 # <a name="example-code-for-setting-permissions-on-child-object-operations"></a>Codice di esempio per l'impostazione delle autorizzazioni per le operazioni sugli oggetti figlio
 
-Nell'esempio di codice C e C++ riportato di seguito viene creata una voce ACE che assegna i diritti di creazione per gli oggetti utente al trustee specificato.
+Nell'esempio di codice C e C++ seguente viene creata una ACE che assegna i diritti di creazione per gli oggetti utente al fiduciare specificato.
 
 
 ```C++
@@ -129,9 +129,9 @@ HRESULT CreateAceCreateUsers(LPWSTR pwszTrustee, BOOL fAllowed, IDispatch **ppDi
 
 
 
- 
+ 
 
- 
+ 
 
 
 

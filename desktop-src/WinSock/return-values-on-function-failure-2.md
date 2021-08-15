@@ -1,19 +1,19 @@
 ---
-description: "\\_Per verificare l'esito negativo della funzione, viene fornito l'errore di socket costante manifesto. Sebbene l'utilizzo di questa costante non sia obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'utilizzo della costante di \\_ errore socket."
+description: La costante manifesto SOCKET \_ ERROR viene fornita per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'uso della costante SOCKET \_ ERROR.
 ms.assetid: b46203dc-5666-413b-90fe-8432318f3037
-title: Valori restituiti sull'errore della funzione
+title: Valori restituiti in caso di errore della funzione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b94280d47d705833528c03c0d98a4a31232a0c6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b277da114c8c86c53339590eeff3e831cbaf2a4277765bf53047b3d07991b026
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740933"
 ---
-# <a name="return-values-on-function-failure"></a>Valori restituiti sull'errore della funzione
+# <a name="return-values-on-function-failure"></a>Valori restituiti in caso di errore della funzione
 
-Per verificare l'esito negativo della funzione, viene fornito l' **\_ errore di socket** costante manifesto. Sebbene l'utilizzo di questa costante non sia obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'utilizzo della costante **di \_ errore socket** .
+La costante manifesto **SOCKET \_ ERROR viene** fornita per controllare l'errore della funzione. Anche se l'uso di questa costante non è obbligatorio, è consigliabile. Nell'esempio seguente viene illustrato l'uso della **costante SOCKET \_ ERROR.**
 
 Stile BSD tipico (non funziona in Windows)
 
@@ -28,7 +28,7 @@ Stile BSD tipico (non funziona in Windows)
 
 
 
-Stile di Windows
+Windows Stile
 
 
 ```C++
@@ -52,19 +52,19 @@ Stile di Windows
 
 <dl> <dt>
 
-[Codici di errore-errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
+[Codici di errore : errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
 </dt> <dt>
 
 [Gestione degli errori Winsock](handling-winsock-errors.md)
 </dt> <dt>
 
-[Porting delle applicazioni socket in Winsock](porting-socket-applications-to-winsock.md)
+[Porting di applicazioni socket in Winsock](porting-socket-applications-to-winsock.md)
 </dt> <dt>
 
-[Considerazioni sulla programmazione Winsock](winsock-programming-considerations.md)
+[Considerazioni sulla programmazione winsock](winsock-programming-considerations.md)
 </dt> <dt>
 
-[Codici di errore di Windows Sockets](windows-sockets-error-codes-2.md)
+[Windows Codici di errore dei socket](windows-sockets-error-codes-2.md)
 </dt> </dl>
 
  

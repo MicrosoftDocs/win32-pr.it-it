@@ -1,10 +1,10 @@
 ---
-description: Imposta l'indirizzo dell'endpoint utilizzato per la connessione a un motore remoto.
+description: Imposta l'indirizzo endpoint usato per connettersi a un motore remoto.
 MS-HAID: vspixengine.IPeerToPeerEngine\_SetPlaybackEndpoint\_BOOL\_BSTR\_BSTR\_RemotingVersion
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPeerToPeerEngine:: SetPlaybackEndpoint'
+title: Metodo IPeerToPeerEngine::SetPlaybackEndpoint
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: D261D2EA-C930-406E-A5E1-CE5E98162399
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bbec4826fb2659604a4b9f4388beed1829b42770
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 81f3743c9f1cca5a763df23087d7703b79d198a9cd780f9a398017c53afaabfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104482405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721798"
 ---
-# <a name="span-idvspixengineipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversionspanipeertopeerenginesetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversion"></span>Metodo IPeerToPeerEngine:: SetPlaybackEndpoint
+# <a name="span-idvspixengineipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversionspanipeertopeerenginesetplaybackendpoint-method"></a><span id="vspixengine.ipeertopeerengine_setplaybackendpoint_bool_bstr_bstr_remotingversion"></span>Metodo IPeerToPeerEngine::SetPlaybackEndpoint
 
-Imposta l'indirizzo dell'endpoint utilizzato per la connessione a un motore remoto.
+Imposta l'indirizzo endpoint usato per connettersi a un motore remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,24 +43,24 @@ HRESULT SetPlaybackEndpoint(
 ## <a name="parameters"></a>Parametri
 
 *bUseAuthentication*   
-true per utilizzare l'autenticazione; in caso contrario, false.
+true per usare l'autenticazione; in caso contrario, false.
 
-*endpoint*   
-Stringa COM che contiene l'indirizzo dell'endpoint.
+*Endpoint*   
+Stringa COM contenente l'indirizzo dell'endpoint.
 
 *sessionKey*   
 Stringa COM contenente la chiave di sessione utilizzata per la crittografia.
 
 *remoteVersion*   
-Specifica la versione del motore remoto da usare.
+Specifica la versione del motore remoto da utilizzare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

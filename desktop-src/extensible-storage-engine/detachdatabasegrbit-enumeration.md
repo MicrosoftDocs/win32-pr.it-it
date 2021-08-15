@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione DetachDatabaseGrbit'
+description: Altre informazioni sull'enumerazione DetachDatabaseGrbit
 title: Enumerazione DetachDatabaseGrbit
 TOCTitle: DetachDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DetachDatabaseGrbit
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8e67962420ee0179571da8262f17ea5279f59016
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 707066beb3deb6574e5fdcadc6ab367287bef17ce167e9a03472f5ece37f92c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716522"
 ---
 # <a name="detachdatabasegrbit-enumeration"></a>Enumerazione DetachDatabaseGrbit
 
-Opzioni per [JetDetachDatabase2 (JET_SESID, String, DetachDatabaseGrbit)](./api.jetdetachdatabase2-method.md).
+Opzioni per [JetDetachDatabase2(JET_SESID, String, DetachDatabaseGrbit)](./api.jetdetachdatabase2-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -82,17 +82,17 @@ public enum DetachDatabaseGrbit
 <tr class="even">
 <td></td>
 <td>ForceDetach</td>
-<td><strong>Obsoleto.</strong> Se si usa ForceDetach, viene restituito <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException</a> .</td>
+<td><strong>Obsoleto.</strong> Se si usa ForceDetach, verrà restituito <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException.</a></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Chiusura forzata</td>
-<td><strong>Obsoleto.</strong> Chiusura forzata non viene più utilizzato.</td>
+<td>ForceClose</td>
+<td><strong>Obsoleto.</strong> ForceClose non viene più usato.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ForceCloseAndDetach</td>
-<td><strong>Obsoleto.</strong> Se si usa ForceCloseAndDetach, viene restituito <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException</a> .</td>
+<td><strong>Obsoleto.</strong> Se si usa ForceCloseAndDetach, verrà restituito <a href="dn350463(v=exchg.10).md">EsentForceDetachNotAllowedException.</a></td>
 </tr>
 </tbody>
 </table>
@@ -102,4 +102,4 @@ public enum DetachDatabaseGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

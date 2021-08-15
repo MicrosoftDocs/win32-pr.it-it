@@ -1,39 +1,39 @@
 ---
-description: Segnala che un'origine multimediale ha interrotto l'inserimento dei dati nel buffer.
+description: Segnala che un'origine multimediale ha interrotto la memorizzazione dei dati nel buffer.
 ms.assetid: 11b1290d-d462-4aa0-a358-b3f6447c99d8
-title: Evento MEBufferingStopped (Mfobjects. h)
+title: Evento MEBufferingStopped (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e996ec160f57ec598196b388170741705adb9a8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e953ae5d7a79c04c33f4d0b4f9c87faa1e5798ed95d2d3bae29dbd0fab8b12a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878084"
 ---
 # <a name="mebufferingstopped-event"></a>Evento MEBufferingStopped
 
-Segnala che un'origine multimediale ha interrotto l'inserimento dei dati nel buffer.
+Segnala che un'origine multimediale ha interrotto la memorizzazione dei dati nel buffer.
 
-Un'origine multimediale Invia questo elemento quando interrompe il buffering dei dati dopo l'invio dell'evento [MEBufferingStarted](mebufferingstarted.md) .
+Un'origine multimediale lo invia quando interrompe la memorizzazione nel buffer dei dati dopo [l'invio dell'evento MEBufferingStarted.](mebufferingstarted.md)
 
-Anche i flussi di byte che implementano l'interfaccia [**IMFByteStreamBuffering**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreambuffering) inviano questo evento.
+Anche i flussi di byte che implementano [**l'interfaccia IMFByteStreamBuffering**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreambuffering) inviano questo evento.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati da [**IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Quando la sessione multimediale riceve questo evento, riavvia il clock di presentazione. La sessione multimediale trasmette inoltre l'evento all'applicazione.
+Quando la sessione multimediale riceve questo evento, riavvia l'orologio della presentazione. La sessione multimediale inoltra anche l'evento all'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ Quando la sessione multimediale riceve questo evento, riavvia il clock di presen
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Quando la sessione multimediale riceve questo evento, riavvia il clock di presen
 
 <dl> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Tipo complesso bootTriggerType
 description: Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento BootTrigger.
 ms.assetid: 36ade928-7640-4f91-ab76-18398b0cd65f
 keywords:
-- Utilità di pianificazione di tipo complesso bootTriggerType
+- Tipo complesso bootTriggerType Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d16634cacb9c17e5027ac9e6b6dd7abb26b78007
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc0b04bfaf08ecee87d02a2b410fd1df2fbbe584d5649a5e9fe2ea2e5efacebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131860"
 ---
 # <a name="boottriggertype-complex-type"></a>Tipo complesso bootTriggerType
 
-Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) .
+Definisce l'elemento figlio e le informazioni di sequenziazione per [**l'elemento BootTrigger.**](taskschedulerschema-boottrigger-triggergroup-element.md)
 
 ``` syntax
 <xs:complexType name="bootTriggerType">
@@ -48,13 +48,13 @@ Definisce l'elemento figlio e le informazioni di sequenziazione per l'elemento [
 
 | Elemento                                                            | Tipo     | Descrizione                                                                                 |
 |--------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|
-| [**Ritardo**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Intervallo di tempo tra il momento in cui il sistema viene avviato e il momento in cui viene attivato il trigger. <br/> |
+| [**Ritardo**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Intervallo di tempo tra l'avvio del sistema e l'attivazione del trigger. <br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Oltre all'elemento figlio definito qui, l'elemento [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) usa anche elementi figlio definiti dal tipo complesso [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) .
+Oltre all'elemento figlio definito qui, [**l'elemento BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md) usa anche gli elementi figlio definiti dal tipo complesso [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Oltre all'elemento figlio definito qui, l'elemento [**BootTrigger**](taskschedul
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Oltre all'elemento figlio definito qui, l'elemento [**BootTrigger**](taskschedul
 
 <dl> <dt>
 
-[Tipi complessi dello schema Utilità di pianificazione](task-scheduler-schema-complex-types.md)
+[Utilità di pianificazione complessi dello schema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

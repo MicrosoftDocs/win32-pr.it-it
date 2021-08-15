@@ -1,11 +1,11 @@
 ---
-title: attributo ms-WMI-intmax
+title: Attributo ms-WMI-intMax
 description: Valore massimo per un oggetto parametro integer WMI a 32 bit.
 ms.assetid: d1ac3efc-fce3-42d2-98ec-ca0f7e6fcb4e
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-WMI-intmax
-- msWMI-schema AD dell'attributo intmax
+- Schema AD dell'attributo ms-WMI-intMax
+- Schema AD dell'attributo msWMI-IntMax
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31c7474c82cc39e5f43076e6bafb348bcd78aa68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd54a79013b747ca923af9f2806ea997afca065f845fc9c9573bf2a8f2d06e1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837554"
 ---
-# <a name="ms-wmi-intmax-attribute"></a>attributo ms-WMI-intmax
+# <a name="ms-wmi-intmax-attribute"></a>Attributo ms-WMI-intMax
 
 Valore massimo per un oggetto parametro integer WMI a 32 bit.
 
@@ -29,13 +29,13 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-intmax                        |
-| LDAP-Display-Name | msWMI-intmax                         |
+| CN                | ms-WMI-intMax                        |
+| Ldap-Display-Name | msWMI-IntMax                         |
 | Dimensione              | 4 byte                              |
-| Privilegio aggiornamento  | Amministratore Criteri di gruppo           |
+| Aggiorna privilegio  | Criteri di gruppo amministratore           |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1629              |
-| System-ID-GUID    | fb920c2c-f294-4426-8ac1-d24b42aa2bce |
+| System-Id-Guid    | fb920c2c-f294-4426-8ac1-d24b42aa2bce |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -57,15 +57,15 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -78,15 +78,15 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -99,15 +99,15 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -120,15 +120,15 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -141,15 +141,15 @@ Valore massimo per un oggetto parametro integer WMI a 32 bit.
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| È a valore singolo       | Vero         |
+| Is-Single-Valued       | Vero         |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
 | System-Flags           | 0x00000010   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

@@ -1,58 +1,58 @@
 ---
-title: Carattere Marquee
-description: Carattere Marquee
+title: Carattere di selezione
+description: Carattere di selezione
 ms.assetid: 037dce92-761a-4249-aca4-7d995cb15e7f
 keywords:
-- Interfacce di Windows Media Player Mobile, Marquees
-- interfacce, Marquee
-- riferimento per Skin, Marquees
-- Marquees in Skins, fonts
+- Windows Media Player Interfaccia per dispositivi mobili, cornice
+- skins, marquees
+- informazioni di riferimento per le interfaccia, le cornice
+- marquees in skins,fonts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9b912fdaa91c84b4b6ec38fcd6716f7f4b3102c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9ec6b0c6bc4b51a5158c967a4890a13a62108d341585d8e93443a15a636f9b1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934552"
 ---
-# <a name="marquee-font"></a>Carattere Marquee
+# <a name="marquee-font"></a>Carattere di selezione
 
-È necessario definire il tipo di carattere usato dalla casella di visualizzazione Marquee che si vuole usare. Il tipo di carattere è definito da tre valori, separati da virgole, che rappresentano la superficie, le dimensioni e il peso del tipo di carattere.
+È necessario definire il tipo di carattere usato dalla casella di visualizzazione della cornice che si vuole usare. Il tipo di carattere è definito da tre valori, separati da virgole, che rappresentano il viso, le dimensioni e lo spessore del tipo di carattere.
 
-**Valori tipografici**
+**Valori carattere tipografico**
 
-È possibile utilizzare qualsiasi nome tipografico se è probabile che sia installato nel computer dell'utente. Se un carattere tipografico non viene trovato nel computer, verrà selezionato un alternativo dal sistema operativo. Nella tabella seguente vengono illustrati i caratteri tipografici di solito presenti nei dispositivi basati su Windows Mobile 2003.
+È possibile usare qualsiasi nome di carattere tipografico se è probabile che sia installato nel computer dell'utente. Se non viene trovato un carattere tipografico nel computer, il sistema operativo selezionerà un carattere alternativo. La tabella seguente illustra i caratteri tipografici che si trovano in genere Windows dispositivi basati su Mobile 2003.
 
 
 
 | Tipo di carattere       | Descrizione              |
 |----------------|--------------------------|
 | Tahoma         | Carattere tipografico sans-serif.   |
-| Console lucida | Carattere tipografico con Serif quadrato. |
+| Lucida Console | Carattere tipografico square-serif. |
 
 
 
- 
+ 
 
 **Valori delle dimensioni**
 
-Si tratta della dimensione del carattere tipografico nei punti. Qualsiasi valore intero positivo è valido, ma sono consigliati i numeri compresi tra 10 e 18. Le dimensioni minori di 10 potrebbero essere difficili da leggere e le dimensioni superiori a 18 potrebbero non dare spazio sufficiente per la visualizzazione di più lettere alla volta.
+Dimensione del carattere tipografico in punti. Qualsiasi valore intero positivo è valido, anche se sono consigliati numeri compresi tra 10 e 18. Dimensioni inferiori a 10 possono essere difficili da leggere e dimensioni superiori a 18 potrebbero non fornire spazio sufficiente per visualizzare più di alcune lettere alla volta.
 
 **Valori di peso**
 
-Gli unici valori consentiti sono riportati nella tabella seguente.
+Gli unici valori consentiti sono indicati nella tabella seguente.
 
 
 
 | Valore | Descrizione |
 |-------|-------------|
-| B     | Grassetto        |
+| B     | Bold        |
 | N     | Normale      |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -61,9 +61,9 @@ Gli unici valori consentiti sono riportati nella tabella seguente.
 [**Testo scorrevole**](marquee.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

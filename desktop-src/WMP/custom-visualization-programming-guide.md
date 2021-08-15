@@ -1,52 +1,52 @@
 ---
-title: Guida per programmatori di visualizzazione personalizzati
-description: Guida per programmatori di visualizzazione personalizzati
+title: Guida per programmatori di visualizzazioni personalizzate
+description: Guida per programmatori di visualizzazioni personalizzate
 ms.assetid: a4e670b2-b70a-4f6b-8fc3-c4f5d855d723
 keywords:
-- Media Player di Windows, visualizzazioni
-- Plug-in di Windows Media Player, visualizzazioni
+- Windows Media Player,visualizzazioni
+- Windows Media Player plug-in, visualizzazioni
 - plug-in, visualizzazioni
-- Visualizzazioni, guida per programmatori
-- Visualizzazioni personalizzate, guida per programmatori
-- Guida per programmatori, visualizzazioni
-- Visualizzazioni, funzione render
-- Visualizzazioni personalizzate, funzione render
-- Funzione render, guida per programmatori
+- visualizzazioni, guida alla programmazione
+- visualizzazioni personalizzate, guida alla programmazione
+- guida alla programmazione, visualizzazioni
+- visualizzazioni, funzione Render
+- visualizzazioni personalizzate, funzione Render
+- Funzione di rendering, guida per programmatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89e870915ec0052e8596708809c4151edc865fcb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a7481a34e09f2271a8bf9377ce7a92339198b985381b3fa2e277bcb6adbcab6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750367"
 ---
-# <a name="custom-visualization-programming-guide"></a>Guida per programmatori di visualizzazione personalizzati
+# <a name="custom-visualization-programming-guide"></a>Guida per programmatori di visualizzazioni personalizzate
 
-La scrittura di una visualizzazione personalizzata è semplice come l'implementazione della funzione **Render** , la modifica delle informazioni del set di impostazioni e la compilazione della dll.
+Scrivere una visualizzazione personalizzata è semplice quanto implementare la funzione **Render,** modificare le informazioni del set di impostazioni e compilare la DLL.
 
-Nell'argomento seguente viene descritto come creare una visualizzazione di esempio.
+L'argomento seguente descrive come creare una visualizzazione di esempio.
 
 
 
 | Argomento                                  | Descrizione                                     |
 |----------------------------------------|-------------------------------------------------|
-| [Esempio Glow](the-glow-sample.md) | Viene descritto come creare una visualizzazione semplice. |
+| [Esempio di alone](the-glow-sample.md) | Viene descritto come creare una visualizzazione semplice. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Visualizzazioni personalizzate di Windows Media Player**](windows-media-player-custom-visualizations.md)
+[**Windows Media Player Visualizzazioni personalizzate**](windows-media-player-custom-visualizations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

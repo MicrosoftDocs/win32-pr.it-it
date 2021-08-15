@@ -1,22 +1,22 @@
 ---
 title: Disegno con buffer doppi
-description: I doppi buffer smussano la transizione tra un'immagine e l'altra sullo schermo.
+description: I buffer doppi smussano la transizione tra un'immagine e un'altra sullo schermo.
 ms.assetid: 10801cc7-d26c-4bfd-95c0-f352a1c7a1f5
 keywords:
-- OpenGL per Windows, buffer doppi
+- OpenGL su Windows,doppio buffer
 - doppio buffer OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbe52d427467b2a6e460ea56a9e72e580ea6f97d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 133a6e0794eb903215411016aeff14e3426854dcddc3a60bcfb2ba318481bee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104332068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361391"
 ---
 # <a name="drawing-with-double-buffers"></a>Disegno con buffer doppi
 
-I doppi buffer smussano la transizione tra un'immagine e l'altra sullo schermo. Lo scambio di buffer in genere viene visualizzato alla fine di una sequenza di comandi di disegno. Per impostazione predefinita, l'implementazione Microsoft di OpenGL in Windows disegna il buffer fuori schermo; al termine del disegno, chiamare la funzione [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) per copiare il buffer fuori schermo nel buffer su schermo. L'esempio di codice seguente si prepara a disegnare, chiama una funzione di disegno e quindi copia l'immagine completata sullo schermo se è disponibile il doppio buffering.
+I buffer doppi smussano la transizione tra un'immagine e un'altra sullo schermo. Lo scambio dei buffer si verifica in genere alla fine di una sequenza di comandi di disegno. Per impostazione predefinita, l'implementazione Microsoft di OpenGL in Windows disegna sul buffer fuori schermo; Al termine del disegno, chiamare la [**funzione SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) per copiare il buffer fuori schermo nel buffer su schermo. L'esempio di codice seguente si prepara a disegnare, chiama una funzione di disegno e quindi copia l'immagine completata sullo schermo se è disponibile il doppio buffer.
 
 
 ```C++
@@ -40,7 +40,7 @@ void myRedraw(void)
 
 
 
-Nell'esempio di codice seguente viene ottenuto un contesto di dispositivo della finestra, viene eseguito il rendering di una scena, viene copiata l'immagine sullo schermo (per visualizzare il rendering), quindi viene rilasciato il contesto di dispositivo.
+L'esempio di codice seguente ottiene un contesto di dispositivo della finestra, esegue il rendering di una scena, copia l'immagine sullo schermo (per visualizzare il rendering) e quindi rilascia il contesto di dispositivo.
 
 
 ```C++
@@ -52,9 +52,9 @@ ReleaseDC(hWnd, hdc);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 82e100092dd7c59e9cc689aa8723365fae8bed29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5079b740d268174715b6c944787bb687cd9b8b1ecb12a27c04eeb26c79811034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104234340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784157"
 ---
 # <a name="authzaccesscheckcallback-callback-function"></a>Funzione di callback AuthzAccessCheckCallback
 
-La funzione **AuthzAccessCheckCallback** è una funzione definita dall'applicazione che gestisce le [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) di callback durante un controllo di accesso. **AuthzAccessCheckCallback** è un segnaposto per il nome della funzione definita dall'applicazione. L'applicazione registra questo callback chiamando [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager).
+La **funzione AuthzAccessCheckCallback** è una funzione definita dall'applicazione che gestisce le voci di controllo di accesso (ACE) di callback durante un controllo di accesso. [](/windows/desktop/SecGloss/a-gly) **AuthzAccessCheckCallback è** un segnaposto per il nome della funzione definita dall'applicazione. L'applicazione registra questo callback chiamando [**AuthzInitializeResourceManager.**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,47 +41,47 @@ BOOL CALLBACK AuthzAccessCheckCallback(
 
 <dl> <dt>
 
-*hAuthzClientContext* \[ in\]
+*hAuthzClientContext* \[ Pollici\]
 </dt> <dd>
 
 Handle per un contesto client.
 
 </dd> <dt>
 
-*velocità* \[ in\]
+*pAce* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla voce ACE da valutare per l'inclusione nella chiamata alla funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) .
+Puntatore alla ACE da valutare per l'inclusione nella chiamata alla [**funzione AuthzAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck)
 
 </dd> <dt>
 
 *pArgs* \[ in, facoltativo\]
 </dt> <dd>
 
-Dati passati nel parametro *DynamicGroupArgs* della chiamata a [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) o [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck).
+Dati passati nel *parametro DynamicGroupArgs* della chiamata a [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) o [**AuthzCachedAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck)
 
 </dd> <dt>
 
-*pbAceApplicable* \[ in uscita\]
+*pbAceApplicable* \[ in, out\]
 </dt> <dd>
 
 Puntatore a una variabile booleana che riceve i risultati della valutazione della logica definita dall'applicazione.
 
-I risultati sono **true** se la logica determina che la voce ACE è applicabile e verrà inclusa nella chiamata a [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck); in caso contrario, i risultati sono **false**.
+I risultati sono **TRUE se** la logica determina che la ACE è applicabile e verrà inclusa nella chiamata a [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck); In caso contrario, i risultati sono **FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, la funzione restituisce **true**.
+Se la funzione ha esito positivo, la funzione restituisce **TRUE.**
 
-Se la funzione non è in grado di eseguire la valutazione, viene restituito **false**. Usare [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire un errore alla funzione di controllo di accesso.
+Se la funzione non è in grado di eseguire la valutazione, restituisce **FALSE.** Usare [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire un errore alla funzione di controllo dell'accesso.
 
 ## <a name="remarks"></a>Commenti
 
-Le variabili degli attributi di sicurezza devono essere presenti nel contesto client se si fa riferimento a in un'espressione condizionale. in caso contrario, il termine espressione condizionale che vi fa riferimento restituisce Unknown.
+Le variabili degli attributi di sicurezza devono essere presenti nel contesto client se vi si fa riferimento in un'espressione condizionale. In caso contrario, il termine espressione condizionale che vi fa riferimento restituirà sconosciuto.
 
-Per ulteriori informazioni, vedere il funzionamento di [AccessCheck](how-dacls-control-access-to-an-object.md) e panoramica dei [criteri di autorizzazione centralizzati](centralized-authorization-policy.md) .
+Per altre informazioni, vedere Le panoramiche [sul funzionamento di AccessCheck e](how-dacls-control-access-to-an-object.md) Criteri di [autorizzazione](centralized-authorization-policy.md) centralizzati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -89,8 +89,8 @@ Per ulteriori informazioni, vedere il funzionamento di [AccessCheck](how-dacls-c
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                            |
+| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
 | Componente ridistribuibile<br/>          | Windows Server 2003 Administration Tools Pack in Windows XP<br/> |
 
 

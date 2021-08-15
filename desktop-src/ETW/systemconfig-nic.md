@@ -1,7 +1,7 @@
 ---
 description: Questa classe è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete. La sintassi seguente è semplificata dal codice MOF.
 ms.assetid: 66b2c116-810e-489d-ad5e-f9c09902005b
-title: Classe SystemConfig_NIC
+title: SystemConfig_NIC classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 63d522eee993f0766554eb9bc4fb09d842e9cd8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 822e8404137eee9731bbfcee9f5d9f4495609078c4251b53269371dd4904cea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393817"
 ---
-# <a name="systemconfig_nic-class"></a>\_Classe NIC SystemConfig
+# <a name="systemconfig_nic-class"></a>Classe NIC \_ SystemConfig
 
 Questa classe è la classe del tipo di evento per gli eventi di configurazione della scheda di interfaccia di rete.
 
@@ -50,42 +50,42 @@ class SystemConfig_NIC : SystemConfig
 
 ## <a name="members"></a>Members
 
-La **classe \_ NIC SystemConfig** dispone di questi tipi di membri:
+La **classe \_ NIC SystemConfig** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ NIC SystemConfig** dispone di queste proprietà.
+La **classe \_ NIC SystemConfig** ha queste proprietà.
 
 <dl> <dt>
 
 DnsServerAddresses
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (7), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(7), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Indirizzi IP da utilizzare nell'esecuzione di query per i server DNS. L'elenco di indirizzi è delimitato da virgole.
+Indirizzi IP da usare nell'esecuzione di query per i server DNS. L'elenco di indirizzi è delimitato da virgole.
 
 </dd> <dt>
 
-IpAddresses
+Ipaddresses
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Indirizzi IP associati alla scheda di interfaccia di rete. L'elenco di indirizzi è delimitato da virgole.
@@ -95,61 +95,61 @@ Indirizzi IP associati alla scheda di interfaccia di rete. L'elenco di indirizzi
 Ipv4Index
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (3)
+Qualificatori: WmiDataId(3)
 </dt> </dl>
 
-Indice dell'adapter per la scheda di interfaccia di rete IPv4. È possibile che l'indice dell'adapter venga modificato quando un adapter viene disabilitato e quindi abilitato oppure in altre circostanze e non deve essere considerato persistente.
+Indice dell'adapter per la scheda di interfaccia di rete IPv4. L'indice dell'adapter può cambiare quando un adapter viene disabilitato e quindi abilitato o in altre circostanze e non deve essere considerato permanente.
 
 </dd> <dt>
 
 Ipv6Index
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (4)
+Qualificatori: WmiDataId(4)
 </dt> </dl>
 
-Indice dell'adapter per la scheda di interfaccia di rete IPv6. È possibile che l'indice dell'adapter venga modificato quando un adapter viene disabilitato e quindi abilitato oppure in altre circostanze e non deve essere considerato persistente.
+Indice dell'adapter per la scheda di interfaccia di rete IPv6. L'indice dell'adapter può cambiare quando un adapter viene disabilitato e quindi abilitato o in altre circostanze e non deve essere considerato permanente.
 
 </dd> <dt>
 
 NICDescription
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificatori: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Descrizione della scheda.
+Descrizione dell'adapter.
 
 </dd> <dt>
 
 PhysicalAddr
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (1), Format ("x")
+Qualificatori: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Indirizzo hardware per la scheda.
@@ -159,13 +159,13 @@ Indirizzo hardware per la scheda.
 PhysicalAddrLen
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId (2)
+Qualificatori: WmiDataId(2)
 </dt> </dl>
 
 Lunghezza dell'indirizzo hardware per la scheda.
@@ -178,8 +178,8 @@ Lunghezza dell'indirizzo hardware per la scheda.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

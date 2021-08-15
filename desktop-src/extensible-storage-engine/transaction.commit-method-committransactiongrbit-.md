@@ -1,6 +1,6 @@
 ---
-description: 'Ulteriori informazioni su: Metodo Transaction. Commit (CommitTransactionGrbit)'
-title: Metodo Transaction. Commit (CommitTransactionGrbit)
+description: Altre informazioni sul metodo Transaction.Commit (CommitTransactionGrbit)
+title: Metodo Transaction.Commit (CommitTransactionGrbit)
 TOCTitle: Commit method (CommitTransactionGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.Commit(Microsoft.Isam.Esent.Interop.CommitTransactionGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.commit(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 048071a08d1211d6091fb6c2c23f9cfe302f8872
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e40bde6191759e48e59f535f672d221331fc45956e5af7bfe709d90f4573b38a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118484690"
 ---
-# <a name="transactioncommit-method-committransactiongrbit"></a>Metodo Transaction. Commit (CommitTransactionGrbit)
+# <a name="transactioncommit-method-committransactiongrbit"></a>Metodo Transaction.Commit (CommitTransactionGrbit)
 
-Eseguire il commit di una transazione. Questo oggetto deve trovarsi in una transazione.
+Eseguire il commit di una transazione. Questo oggetto deve essere in una transazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ public void Commit(
 #### <a name="parameters"></a>Parametri
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CommitTransactionGrbit](./committransactiongrbit-enumeration.md)  
     
     Opzioni di JetCommitTransaction.
 
@@ -67,8 +67,8 @@ public void Commit(
 
 [Transaction (classe)](./transaction-class.md)
 
-[Membri transazione](./transaction-members.md)
+[Membri della transazione](./transaction-members.md)
 
-[Overload commit](./transaction.commit-method.md)
+[Overload del commit](./transaction.commit-method.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

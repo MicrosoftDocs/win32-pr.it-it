@@ -1,19 +1,19 @@
 ---
-description: Specifica l'ID di un campione crittografato.
+description: Specifica l'ID di un esempio crittografato.
 ms.assetid: 09B11406-DF7B-4541-998C-68306654BADC
-title: Attributo MFSampleExtension_Encryption_SampleID (Mfapi. h)
+title: MFSampleExtension_Encryption_SampleID attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb2aadcfcf895ddbfa9820a4df3a366ce409a555
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42e89eb4213d75ea94bdb3c19ca88b2a1f3f28c8e8b1034ca452f2900f7b61ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240873"
 ---
-# <a name="mfsampleextension_encryption_sampleid-attribute"></a>\_Attributo SampleId di crittografia MFSampleExtension \_
+# <a name="mfsampleextension_encryption_sampleid-attribute"></a>Attributo SampleID di crittografia MFSampleExtension \_ \_
 
-Specifica l'ID di un campione crittografato.
+Specifica l'ID di un esempio crittografato.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,9 +23,9 @@ Specifica l'ID di un campione crittografato.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                            |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                            |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -33,7 +33,7 @@ Specifica l'ID di un campione crittografato.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

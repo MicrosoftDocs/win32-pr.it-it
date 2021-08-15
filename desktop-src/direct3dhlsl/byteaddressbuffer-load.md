@@ -1,9 +1,9 @@
 ---
-title: 'Metodi ByteAddressBuffer:: Load'
+title: Metodi ByteAddressBuffer::Load
 description: Ottiene un valore da un buffer di sola lettura indicizzato in byte.
 ms.assetid: 53855344-06FB-40D0-B175-95A2B63A6473
 keywords:
-- Metodi Load HLSL
+- Metodi di caricamento HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,14 +12,14 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 5fd7ef43f45340a1e8865564c7f81089d1828009
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
-ms.translationtype: HT
+ms.openlocfilehash: 0335b63828423b258d3ffe741ede3cdca6c91ae2d596b2adce91f6f36b59f214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104976306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118287574"
 ---
-# <a name="load-methods"></a>Metodi Load
+# <a name="load-methods"></a>Metodi di caricamento
 
 Ottiene un valore da un buffer di sola lettura indicizzato in byte.
 
@@ -29,8 +29,8 @@ Ottiene un valore da un buffer di sola lettura indicizzato in byte.
 
 | Metodo                                                         | Descrizione                                                |
 |:---------------------------------------------------------------|:-----------------------------------------------------------|
-| [**Load (int, uint)**](sm5-object-byteaddressbuffer-load-2.md) | Ottiene un valore e lo stato dell'operazione.<br/> |
-| [**Caricamento (int)**](sm5-object-byteaddressbuffer-load.md)         | Ottiene un valore.<br/>                                 |
+| [**Load(int, uint)**](sm5-object-byteaddressbuffer-load-2.md) | Ottiene un valore e lo stato dell'operazione.<br/> |
+| [**Load(int)**](sm5-object-byteaddressbuffer-load.md)         | Ottiene un valore.<br/>                                 |
 
 
 

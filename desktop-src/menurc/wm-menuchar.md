@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_MENUCHAR (winuser. h)
-description: Inviato quando un menu è attivo e l'utente preme un tasto che non corrisponde ad alcun tasto di scelta rapida o tasto di scelta rapida. Questo messaggio viene inviato alla finestra che possiede il menu.
+title: WM_MENUCHAR messaggio (Winuser.h)
+description: Inviato quando un menu è attivo e l'utente preme un tasto che non corrisponde ad alcun tasto di scelta rapida o mnemoico. Questo messaggio viene inviato alla finestra proprietaria del menu.
 ms.assetid: de6c91bb-80fd-44b2-8d96-d016477a6547
 keywords:
-- Menu del messaggio WM_MENUCHAR e altre risorse
+- WM_MENUCHAR menu e altre risorse del messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a278e4a1b4333631741a6a542318a8a55e40b512
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d276418636857fb7ce76159111b8e8b24519235823225fccb68fa1523b4137d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869610"
 ---
-# <a name="wm_menuchar-message"></a>\_Messaggio MENUCHAR WM
+# <a name="wm_menuchar-message"></a>Messaggio \_ WM MENUCHAR
 
-Inviato quando un menu è attivo e l'utente preme un tasto che non corrisponde ad alcun tasto di scelta rapida o tasto di scelta rapida. Questo messaggio viene inviato alla finestra che possiede il menu.
+Inviato quando un menu è attivo e l'utente preme un tasto che non corrisponde ad alcun tasto di scelta rapida o mnemoico. Questo messaggio viene inviato alla finestra proprietaria del menu.
 
 
 ```C++
@@ -39,16 +39,16 @@ Inviato quando un menu è attivo e l'utente preme un tasto che non corrisponde a
 *wParam* 
 </dt> <dd>
 
-La parola di ordine inferiore specifica il codice carattere che corrisponde alla chiave che l'utente ha premuto.
+La parola più bassa specifica il codice carattere che corrisponde al tasto premuto dall'utente.
 
-La parola di ordine superiore specifica il tipo di menu attivo. Questo parametro può avere uno dei valori seguenti.
+La parola più alta specifica il tipo di menu attivo. Questo parametro può avere uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                                                                                                 | Significato                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ POPUP**</dt> <dt>0x00000010L</dt> </dl>       | Menu A discesa, sottomenu o menu di scelta rapida.<br/> |
-| <span id="MF_SYSMENU"></span><span id="mf_sysmenu"></span><dl> <dt>**MF \_**</dt> <dt>0x00002000L</dt> SYSMENU </dl> | Menu finestra.<br/>                             |
+| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ POPUP**</dt> <dt>0x00000010L</dt> </dl>       | Menu a discesa, sottomenu o menu di scelta rapida.<br/> |
+| <span id="MF_SYSMENU"></span><span id="mf_sysmenu"></span><dl> <dt>**MF \_ SYSMENU**</dt> <dt>0x00002000L</dt> </dl> | Menu della finestra.<br/>                             |
 
 
 
@@ -65,16 +65,16 @@ Handle per il menu attivo.
 
 ## <a name="return-value"></a>Valore restituito
 
-Un'applicazione che elabora questo messaggio deve restituire uno dei valori seguenti nella parola più ordinata del valore restituito.
+Un'applicazione che elabora questo messaggio deve restituire uno dei valori seguenti nella parola più alta del valore restituito.
 
 
 
 | Codice/valore restituito                                                                                                                                  | Descrizione                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> Multipagina <dt>**\_ Chiudi**</dt> <dt>1</dt> </dl>   | Informa il sistema che dovrebbe chiudere il menu attivo.<br/>                                                                                                                      |
-| <dl> Multipagina <dt>**\_ ESECUZIONE**</dt> <dt>2</dt> </dl> | Informa il sistema che deve scegliere l'elemento specificato nella parola di ordine inferiore del valore restituito. La finestra proprietaria riceve un messaggio di [**\_ comando WM**](wm-command.md) .<br/> |
-| <dl> Multipagina <dt>**\_ Ignora**</dt> <dt>0</dt> </dl>  | Informa il sistema che deve eliminare il carattere premuto dall'utente e creare un breve beep sull'altoparlante del sistema.<br/>                                                       |
-| <dl> Multipagina <dt>**\_ SELEZIONARE**</dt> <dt>3</dt> </dl>  | Informa il sistema che deve selezionare l'elemento specificato nella parola di ordine inferiore del valore restituito. <br/>                                                                       |
+| <dl> <dt>**MNC \_ CLOSE**</dt> <dt>1</dt> </dl>   | Informa il sistema che deve chiudere il menu attivo.<br/>                                                                                                                      |
+| <dl> <dt>**MNC \_ EXECUTE**</dt> <dt>2</dt> </dl> | Informa il sistema che deve scegliere l'elemento specificato nella parola di ordine più basso del valore restituito. La finestra del proprietario riceve un [**messaggio WM \_ COMMAND.**](wm-command.md)<br/> |
+| <dl> <dt>**MNC \_ IGNORE**</dt> <dt>0</dt> </dl>  | Informa il sistema che deve rimuovere il carattere premuto dall'utente e creare un breve segnale acustico sull'altoparlante del sistema.<br/>                                                       |
+| <dl> <dt>**MNC \_ SELECT**</dt> <dt>3</dt> </dl>  | Informa il sistema che deve selezionare l'elemento specificato nella parola di ordine più basso del valore restituito. <br/>                                                                       |
 
 
 
@@ -82,9 +82,9 @@ Un'applicazione che elabora questo messaggio deve restituire uno dei valori segu
 
 ## <a name="remarks"></a>Commenti
 
-La parola di basso livello viene ignorata se la parola più significativa contiene 0 o 1.
+La parola meno importante viene ignorata se la parola più importante contiene 0 o 1.
 
-Un'applicazione deve elaborare questo messaggio quando viene usato un acceleratore per selezionare una voce di menu che visualizza una bitmap.
+Un'applicazione deve elaborare questo messaggio quando viene usato un tasto di scelta rapida per selezionare una voce di menu che visualizza una bitmap.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,7 +94,7 @@ Un'applicazione deve elaborare questo messaggio quando viene usato un accelerato
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

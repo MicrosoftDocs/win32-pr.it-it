@@ -1,20 +1,20 @@
 ---
-title: Funzioni client di Connessione Desktop remoto broker
-description: L'API client di Connessione Desktop remoto broker definisce le funzioni seguenti.
+title: funzioni client di Connessione Desktop remoto Broker
+description: L Connessione Desktop remoto API client di Service Broker definisce le funzioni seguenti.
 ms.assetid: EE0E7CE4-8A92-44E1-94CF-9077E00E6578
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: acc171cf3f428b18b984d91c9854e62e6eb887e1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b721ef41af19f9a4224cc85023116c7268eb3a29dc8110ebd0725be6d02f7a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131300"
 ---
-# <a name="remote-desktop-connection-broker-client-functions"></a>Funzioni client di Connessione Desktop remoto broker
+# <a name="remote-desktop-connection-broker-client-functions"></a>funzioni client di Connessione Desktop remoto Broker
 
-L'API client di Connessione Desktop remoto broker definisce le funzioni seguenti.
+L Connessione Desktop remoto API client di Service Broker definisce le funzioni seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,13 +23,13 @@ L'API client di Connessione Desktop remoto broker definisce le funzioni seguenti
 [**CBCreateClientInstance**](cbcreateclientinstance.md)
 </dt> <dd>
 
-Crea un'istanza del client RPC di Connessione Desktop remoto broker.
+Crea un'istanza del client RPC Connessione Desktop remoto Broker.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

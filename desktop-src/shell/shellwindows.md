@@ -1,7 +1,7 @@
 ---
-description: Rappresenta una raccolta di finestre aperte che appartengono alla Shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla Shell.
+description: Rappresenta una raccolta di finestre aperte che appartengono alla shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
 ms.assetid: cad1f961-7fb4-4ba1-be48-b664d3de2c60
-title: Oggetto ShellWindows (Exdisp. h)
+title: Oggetto ShellWindows (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a3a782dd4e29d56f5edc7a869004ac7b3fb7ccd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b558bf4df33e84fabae7e70c1722d78647514a52df8f62d05f8ecba8916c488a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104979810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857090"
 ---
 # <a name="shellwindows-object"></a>Oggetto ShellWindows
 
-Rappresenta una raccolta di finestre aperte che appartengono alla Shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla Shell.
+Rappresenta una raccolta di finestre aperte che appartengono alla shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **ShellWindows** dispone di questi tipi di membri:
+**L'oggetto ShellWindows** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **ShellWindows** dispone di questi metodi.
+**L'oggetto ShellWindows** dispone di questi metodi.
 
 
 
 | Metodo                                                 | Descrizione                                                                                                         |
 |:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](shellwindows--newenum-method-7ral.md) | Crea e restituisce un nuovo oggetto **ShellWindows** che è una copia di questo oggetto **ShellWindows** .<br/>        |
+| [**\_NewEnum**](shellwindows--newenum-method-7ral.md) | Crea e restituisce un nuovo **oggetto ShellWindows** che è una copia di questo **oggetto ShellWindows.**<br/>        |
 | [**Elemento**](shellwindows-item.md)                      | Recupera un oggetto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) che rappresenta la finestra della shell.<br/> |
 
 
@@ -48,7 +48,7 @@ L'oggetto **ShellWindows** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **ShellWindows** dispone di queste proprietà.
+**L'oggetto ShellWindows** ha queste proprietà.
 
 
 
@@ -66,10 +66,10 @@ L'oggetto **ShellWindows** dispone di queste proprietà.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Exdisp. h</dt> </dl>                            |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

@@ -8,9 +8,9 @@
     - name: Uso di WER
       href: using-wer.md
       items:
-        - name: Raccolta di dump di User-Mode
+        - name: Raccolta User-Mode dump
           href: collecting-user-mode-dumps.md
-    - name: Riferimento a WER
+    - name: Informazioni di riferimento su WER
       href: wer-reference.md
       items:
         - name: Codici di errore WER

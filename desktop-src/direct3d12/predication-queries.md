@@ -1,32 +1,32 @@
 ---
-title: Query predicazione
-description: L'esempio D3D12PredicationQueries illustra l'abbattimento delle occlusioni usando gli heap di query DirectX 12 e predicazione. Nella procedura dettagliata viene descritto il codice aggiuntivo necessario per estendere l'esempio HelloConstBuffer per la gestione delle query predicazione.
+title: Query di predicazione
+description: L'esempio D3D12PredicationQueries illustra l'eliminazione dell'occlusione tramite heap di query e predicazione DirectX 12. La procedura dettagliata descrive il codice aggiuntivo necessario per estendere l'esempio HelloConstBuffer per gestire le query di predicazione.
 ms.assetid: F61817BB-45BC-4977-BE4A-EE0FDAFBCB57
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad14e55864ee8d568acc0c9eb46134834d27ff54
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: 2d37bd4653ec7610e36214cce31955f1742e5b27a42a381cc2aa7d758daaf5b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117733408"
 ---
-# <a name="predication-queries"></a>Query predicazione
+# <a name="predication-queries"></a>Query di predicazione
 
-L'esempio **D3D12PredicationQueries** illustra l'abbattimento delle occlusioni usando gli heap di query DirectX 12 e predicazione. Nella procedura dettagliata viene descritto il codice aggiuntivo necessario per estendere l'esempio **HelloConstBuffer** per la gestione delle query predicazione.
+**L'esempio D3D12PredicationQueries** illustra l'eliminazione dell'occlusione tramite heap di query e predicazione DirectX 12. La procedura dettagliata descrive il codice aggiuntivo necessario per estendere **l'esempio HelloConstBuffer** per gestire le query di predicazione.
 
--   [Creare un heap del descrittore di depth stencil e un heap della query di occlusione](#create-a-depth-stencil-descriptor-heap-and-an-occlusion-query-heap)
+-   [Creare un heap depth stencil descrittore e un heap di query di occlusione](#create-a-depth-stencil-descriptor-heap-and-an-occlusion-query-heap)
 -   [Abilitare la fusione alfa](#enable-alpha-blending)
--   [Disabilita Scritture colore e profondità](#disable-color-and-depth-writes)
+-   [Disabilitare le scritture di colore e profondità](#disable-color-and-depth-writes)
 -   [Creare un buffer per archiviare i risultati della query](#create-a-buffer-to-store-the-results-of-the-query)
--   [Creare i quad ed eseguire e risolvere la query di occlusione](#draw-the-quads-and-perform-and-resolve-the-occlusion-query)
+-   [Disegnare i quad ed eseguire e risolvere la query di occlusione](#draw-the-quads-and-perform-and-resolve-the-occlusion-query)
 -   [Eseguire l'esempio](#run-the-sample)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="create-a-depth-stencil-descriptor-heap-and-an-occlusion-query-heap"></a>Creare un heap del descrittore di depth stencil e un heap della query di occlusione
+## <a name="create-a-depth-stencil-descriptor-heap-and-an-occlusion-query-heap"></a>Creare un heap depth stencil descrittore e un heap di query di occlusione
 
-Nel metodo **LoadPipeline** creare un heap del descrittore depth stencil.
+Nel metodo **LoadPipeline** creare un heap depth stencil descrittore.
 
 ``` syntax
               // Describe and create a depth stencil view (DSV) descriptor heap.
@@ -42,7 +42,7 @@ Nel metodo **LoadPipeline** creare un heap del descrittore depth stencil.
 <table>
 <thead>
 <tr class="header">
-<th>Flusso di chiamate</th>
+<th>Flusso delle chiamate</th>
 <th>Parametri</th>
 </tr>
 </thead>
@@ -50,7 +50,7 @@ Nel metodo **LoadPipeline** creare un heap del descrittore depth stencil.
 <tr class="odd">
 <td><a href="/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_heap_desc"><strong>D3D12_DESCRIPTOR_HEAP_DESC</strong></a></td>
 <td><dl><a href="/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type"><strong>D3D12_DESCRIPTOR_HEAP_TYPE</strong></a><br />
-[<strong>D3D12_DESCRIPTOR_HEAP_FLAG</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_descriptor_heap_flags)<br />
+[<strong>D3D12_DESCRIPTOR_HEAP_FLAG</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_heap_flags)<br />
 </dl></td>
 </tr>
 <tr class="even">
@@ -64,7 +64,7 @@ Nel metodo **LoadPipeline** creare un heap del descrittore depth stencil.
 
  
 
-Nel metodo **LoadAssets** creare un heap per le query di occlusione.
+Nel metodo **LoadAssets creare** un heap per le query di occlusione.
 
 ``` syntax
      // Describe and create a heap for occlusion queries.
@@ -76,9 +76,9 @@ Nel metodo **LoadAssets** creare un heap per le query di occlusione.
 
 
 
-| Flusso di chiamate                                                 | Parametri                                                |
+| Flusso delle chiamate                                                 | Parametri                                                |
 |-----------------------------------------------------------|-----------------------------------------------------------|
-| [**\_ \_ Descrizione heap query \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_query_heap_desc) | [**\_Tipo di \_ heap \_ query D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_query_heap_type) |
+| [**D3D12 \_ QUERY \_ HEAP \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_query_heap_desc) | [**TIPO \_ DI HEAP QUERY D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_query_heap_type) |
 | [**CreateQueryHeap**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createqueryheap)   |                                                           |
 
 
@@ -87,7 +87,7 @@ Nel metodo **LoadAssets** creare un heap per le query di occlusione.
 
 ## <a name="enable-alpha-blending"></a>Abilitare la fusione alfa
 
-In questo esempio vengono disegnati due quad e viene illustrata una query di occlusione binaria. Il quad in primo piano viene animato sullo schermo, mentre quello in indietro è talvolta bloccato. Nel metodo **LoadAssets** , la fusione alfa è abilitata per questo esempio, in modo da poter vedere a quale punto D3D considera il quad in nascosto.
+Questo esempio disegna due quad e illustra una query di occlusione binaria. Il quad nella parte anteriore viene animato sullo schermo e quello posteriore occasionalmente viene occluded. Nel metodo **LoadAssets** la fusione alfa è abilitata per questo esempio in modo da poter vedere in quale punto D3D considera il quad in indietro occluded.
 
 ``` syntax
      // Enable alpha blending so we can visualize the occlusion query results.
@@ -107,7 +107,7 @@ In questo esempio vengono disegnati due quad e viene illustrata una query di occ
 <table>
 <thead>
 <tr class="header">
-<th>Flusso di chiamate</th>
+<th>Flusso delle chiamate</th>
 <th>Parametri</th>
 </tr>
 </thead>
@@ -115,10 +115,10 @@ In questo esempio vengono disegnati due quad e viene illustrata una query di occ
 <tr class="odd">
 <td><a href="cd3dx12-blend-desc.md"><strong>CD3DX12_BLEND_DESC</strong></a></td>
 <td><dl><a href="cd3dx12-default.md"><strong>CD3DX12_DEFAULT</strong></a><br />
-[<strong>D3D12_BLEND</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_blend)<br />
-[<strong>D3D12_BLEND_OP</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_blend_op)<br />
-[<strong>D3D12_LOGIC_OP</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_logic_op)<br />
-[<strong>D3D12_COLOR_WRITE_ENABLE</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_color_write_enable)<br />
+[<strong>D3D12_BLEND</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_blend)<br />
+[<strong>D3D12_BLEND_OP</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_blend_op)<br />
+[<strong>D3D12_LOGIC_OP</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_logic_op)<br />
+[<strong>D3D12_COLOR_WRITE_ENABLE</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_color_write_enable)<br />
 </dl></td>
 </tr>
 </tbody>
@@ -128,11 +128,11 @@ In questo esempio vengono disegnati due quad e viene illustrata una query di occ
 
  
 
-## <a name="disable-color-and-depth-writes"></a>Disabilita Scritture colore e profondità
+## <a name="disable-color-and-depth-writes"></a>Disabilitare le scritture di colore e profondità
 
-La query di occlusione viene eseguita eseguendo il rendering di un quad che copre la stessa area del Quad di cui si vuole testare la visibilità. In scenari più complessi, la query sarebbe probabilmente un volume delimitatore, anziché un semplice quad. In entrambi i casi, viene creato un nuovo stato della pipeline che disabilita la scrittura nella destinazione di rendering e il buffer z, in modo che la query di occlusione stessa non influisca sull'output visibile del passaggio di rendering.
+La query di occlusione viene eseguita tramite il rendering di un quad che copre la stessa area del quad di cui si vuole testare la visibilità. Nelle scene più complesse, è probabile che la query sia un volume di delimitazione, anziché un quad semplice. In entrambi i casi, viene creato un nuovo stato della pipeline che disabilita la scrittura nella destinazione di rendering e nel buffer z in modo che la query di occlusione stessa non influisca sull'output visibile del passaggio di rendering.
 
-Nel metodo **LoadAssets** disabilitare le scritture dei colori e le scritture di profondità per lo stato della query di occlusione.
+Nel metodo **LoadAssets** disabilitare le scritture a colori e le scritture di profondità per lo stato della query di occlusione.
 
 ``` syntax
  // Disable color writes and depth writes for the occlusion query's state.
@@ -144,9 +144,9 @@ Nel metodo **LoadAssets** disabilitare le scritture dei colori e le scritture di
 
 
 
-| Flusso di chiamate                                                                            | Parametri                                                  |
+| Flusso delle chiamate                                                                            | Parametri                                                  |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [**\_ \_ \_ Descrizione dello stato della pipeline grafica D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) | [**\_Maschera di \_ scrittura \_ profondità D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) |
+| [**D3D12 \_ GRAPHICS \_ PIPELINE \_ STATE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) | [**MASCHERA DI SCRITTURA D3D12 \_ \_ DEPTH \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) |
 | [**CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate)      |                                                             |
 
 
@@ -155,7 +155,7 @@ Nel metodo **LoadAssets** disabilitare le scritture dei colori e le scritture di
 
 ## <a name="create-a-buffer-to-store-the-results-of-the-query"></a>Creare un buffer per archiviare i risultati della query
 
-Nel metodo **LoadAssets** è necessario creare un buffer per archiviare i risultati della query. Ogni query richiede 8 byte di spazio nella memoria GPU. Questo esempio esegue solo una query e per semplicità e leggibilità crea un buffer esattamente tale dimensione (anche se questa chiamata di funzione alloca una pagina 64K della memoria GPU. la maggior parte delle app reali creerebbe probabilmente un buffer più grande).
+Nel metodo **LoadAssets** è necessario creare un buffer per archiviare i risultati della query. Ogni query richiede 8 byte di spazio nella memoria GPU. Questo esempio esegue solo una query e, per semplicità e leggibilità, crea un buffer esattamente di queste dimensioni (anche se questa chiamata di funzione alloca una pagina di 64.000 pagine di memoria GPU. La maggior parte delle app reali creerebbe probabilmente un buffer più grande).
 
 ``` syntax
  // Create the query result buffer.
@@ -176,7 +176,7 @@ Nel metodo **LoadAssets** è necessario creare un buffer per archiviare i risult
 <table>
 <thead>
 <tr class="header">
-<th>Flusso di chiamate</th>
+<th>Flusso delle chiamate</th>
 <th>Parametri</th>
 </tr>
 </thead>
@@ -184,10 +184,10 @@ Nel metodo **LoadAssets** è necessario creare un buffer per archiviare i risult
 <tr class="odd">
 <td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommittedresource"><strong>CreateCommittedResource</strong></a></td>
 <td><dl><a href="cd3dx12-heap-properties.md"><strong>CD3DX12_HEAP_PROPERTIES</strong></a><br />
-[<strong>D3D12_HEAP_TYPE</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_heap_type)<br />
-[<strong>D3D12_HEAP_FLAG</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_heap_flags)<br />
+[<strong>D3D12_HEAP_TYPE</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type)<br />
+[<strong>D3D12_HEAP_FLAG</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags)<br />
 [<strong>CD3DX12_RESOURCE_DESC</strong>] (cd3dx12-resource-desc.md)<br />
-[<strong>D3D12_RESOURCE_STATES</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_resource_states)<br />
+[<strong>D3D12_RESOURCE_STATES</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)<br />
 </dl></td>
 </tr>
 </tbody>
@@ -197,12 +197,12 @@ Nel metodo **LoadAssets** è necessario creare un buffer per archiviare i risult
 
  
 
-## <a name="draw-the-quads-and-perform-and-resolve-the-occlusion-query"></a>Creare i quad ed eseguire e risolvere la query di occlusione
+## <a name="draw-the-quads-and-perform-and-resolve-the-occlusion-query"></a>Disegnare i quad ed eseguire e risolvere la query di occlusione
 
-Dopo aver eseguito l'installazione, il ciclo principale viene aggiornato nel metodo **PopulateCommandLists** .
+Dopo aver eseguito l'installazione, il ciclo main viene aggiornato nel **metodo PopulateCommandLists.**
 
-<dl> 1. Riportare i quad da un lato all'altra per far funzionare correttamente l'effetto di trasparenza. Il disegno del quad in back to front si basa sul risultato della query del frame precedente ed è una tecnica piuttosto comune per questo.  
-2. Modificare il PSO per disabilitare la destinazione di rendering e le Scritture depth stencil.  
+<dl> 1. Disegnare i quad da dietro a davanti per fare in modo che l'effetto di trasparenza funzioni correttamente. Il disegno del quad in primo piano è basato sul risultato della query del frame precedente ed è una tecnica piuttosto comune a questo scopo.  
+2. Modificare l'oggetto PSO per disabilitare la destinazione di rendering e depth stencil scritture.  
 3. Eseguire la query di occlusione.  
 4. Risolvere la query di occlusione.  
 </dl>
@@ -247,7 +247,7 @@ Dopo aver eseguito l'installazione, il ciclo principale viene aggiornato nel met
 <table>
 <thead>
 <tr class="header">
-<th>Flusso di chiamate</th>
+<th>Flusso delle chiamate</th>
 <th>Parametri</th>
 </tr>
 </thead>
@@ -311,7 +311,7 @@ Dopo aver eseguito l'installazione, il ciclo principale viene aggiornato nel met
 <tr class="odd">
 <td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier"><strong>ResourceBarrier</strong></a></td>
 <td><dl><a href="cd3dx12-resource-barrier.md"><strong>CD3DX12_RESOURCE_BARRIER</strong></a><br />
-[<strong>D3D12_RESOURCE_STATES</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_resource_states)<br />
+[<strong>D3D12_RESOURCE_STATES</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)<br />
 </dl></td>
 </tr>
 <tr class="even">
@@ -321,7 +321,7 @@ Dopo aver eseguito l'installazione, il ciclo principale viene aggiornato nel met
 <tr class="odd">
 <td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier"><strong>ResourceBarrier</strong></a></td>
 <td><dl><a href="cd3dx12-resource-barrier.md"><strong>CD3DX12_RESOURCE_BARRIER</strong></a><br />
-[<strong>D3D12_RESOURCE_STATES</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_resource_states)<br />
+[<strong>D3D12_RESOURCE_STATES</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)<br />
 </dl></td>
 </tr>
 </tbody>
@@ -333,23 +333,23 @@ Dopo aver eseguito l'installazione, il ciclo principale viene aggiornato nel met
 
 ## <a name="run-the-sample"></a>Eseguire l'esempio
 
-Non bloccato:
+Non occluded:
 
-![due caselle non inesistenti](images/not-occluded.png)
+![due caselle non occluded](images/not-occluded.png)
 
-Occluso
+Occlusa:
 
-![una casella completa](images/occluded.png)
+![una casella completamente occluded](images/occluded.png)
 
-Parzialmente bloccato:
+Parzialmente occluso:
 
-![una casella parzialmente nascosto](images/partially-occluded.png)
+![una casella parzialmente occlusa](images/partially-occluded.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Procedure dettagliate per il codice D3D12](d3d12-code-walk-throughs.md)
+[Procedura per il codice D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
 [Predicazione](predication.md)

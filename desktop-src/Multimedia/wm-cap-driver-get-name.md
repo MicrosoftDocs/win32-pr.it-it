@@ -1,9 +1,9 @@
 ---
-title: Messaggio di WM_CAP_DRIVER_GET_NAME (VFW. h)
-description: Il \_ messaggio WM Cap \_ driver \_ get \_ Name restituisce il nome del driver di acquisizione connesso alla finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro capDriverGetName.
+title: WM_CAP_DRIVER_GET_NAME messaggio (Vfw.h)
+description: Il messaggio WM \_ CAP DRIVER GET NAME restituisce il nome del driver di acquisizione connesso alla finestra di \_ \_ \_ acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro capDriverGetName.
 ms.assetid: 84cecaf1-e0ff-424f-8c10-8bfe5cc2e7ea
 keywords:
-- WM_CAP_DRIVER_GET_NAME messaggi multimediali di Windows
+- WM_CAP_DRIVER_GET_NAME messaggio Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256b5f7913c83ddd278f3f3a05552b3d81070c73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0dc44efae992f2967cb069c0866fbb7f9febed51ea73f94853a1b017bc57a068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369682"
 ---
-# <a name="wm_cap_driver_get_name-message"></a>\_Messaggio di \_ \_ nome Get driver WM Cap \_
+# <a name="wm_cap_driver_get_name-message"></a>Messaggio GET NAME del DRIVER WM \_ CAP \_ \_ \_
 
-Il messaggio **WM \_ Cap \_ driver \_ get \_ Name** restituisce il nome del driver di acquisizione connesso alla finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o utilizzando la macro [**capDriverGetName**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetname) .
+Il **messaggio WM CAP DRIVER GET \_ \_ \_ \_ NAME** restituisce il nome del driver di acquisizione connesso alla finestra di acquisizione. È possibile inviare questo messaggio in modo esplicito o usando la macro [**capDriverGetName.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetname)
 
 
 ```C++
@@ -45,20 +45,20 @@ Dimensione, in byte, del buffer a cui fa riferimento **szName**.
 
 </dd> <dt>
 
-<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
+<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*Szname*
 </dt> <dd>
 
-Puntatore a un buffer definito dall'applicazione usato per restituire il nome del dispositivo come stringa con terminazione null.
+Puntatore a un buffer definito dall'applicazione utilizzato per restituire il nome del dispositivo come stringa con terminazione Null.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** se la finestra di acquisizione non è connessa a un driver di acquisizione.
+Restituisce **TRUE se** l'operazione ha esito positivo o **FALSE** se la finestra di acquisizione non è connessa a un driver di acquisizione.
 
 ## <a name="remarks"></a>Commenti
 
-Il nome è una stringa di testo recuperata dall'area delle risorse del driver. Le applicazioni devono allocare circa 80 byte per questa stringa. Se il driver non contiene una risorsa nome, viene restituito il nome del percorso completo del driver elencato nel registro di sistema o nel file di SYSTEM.INI.
+Il nome è una stringa di testo recuperata dall'area delle risorse del driver. Le applicazioni devono allocare circa 80 byte per questa stringa. Se il driver non contiene una risorsa nome, viene restituito il nome completo del percorso del driver elencato nel Registro di sistema o nel file SYSTEM.INI file.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,7 +68,7 @@ Il nome è una stringa di testo recuperata dall'area delle risorse del driver. L
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                       |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

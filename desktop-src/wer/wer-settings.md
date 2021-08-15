@@ -1,26 +1,26 @@
 ---
 title: Impostazioni di Segnalazione errori Windows
-description: Impostazioni per personalizzare l'esperienza di segnalazione dei problemi. Tutte queste impostazioni possono essere impostate utilizzando Criteri di gruppo. Alcuni possono anche essere modificati in centro operativo per Windows 7 e Windows 8. Per Windows 10, utilizzare la funzione di ricerca in impostazioni per individuare Visualizza impostazioni di sistema avanzate.
+description: Impostazioni personalizzare l'esperienza di segnalazione dei problemi. Tutte queste impostazioni possono essere impostate usando Criteri di gruppo. Alcune possono anche essere modificate nel Centro notifiche per Windows 7 e Windows 8. Per Windows 10, usare la funzione di ricerca in Impostazioni per individuare Visualizza impostazioni di sistema avanzate.
 ms.assetid: 031c5591-31b0-42f1-9a98-ecf10a5d5571
 keywords:
-- Segnalazione errori Windows segnalazione errori Windows, impostazioni
+- Windows segnalazione errori Segnalazione errori Windows , impostazioni
 ms.topic: article
 ms.date: 03/12/2021
-ms.openlocfilehash: 28b6abbda7d851daddb75ec534b8128d1a831b3f
-ms.sourcegitcommit: 434d5437d4c31c47358598ea5275177c2698f557
+ms.openlocfilehash: 4586c4f282cbc5c4e2f683c0764eac048f6c05d22a1972cb0ceb84f9699c7925
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "106322047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118442230"
 ---
 # <a name="wer-settings"></a>Impostazioni di Segnalazione errori Windows
 
-Segnalazione errori Windows (WER) fornisce molte impostazioni per personalizzare l'esperienza di segnalazione dei problemi. Tutte queste impostazioni possono essere impostate utilizzando Criteri di gruppo. Alcuni possono anche essere modificati in **centro operativo** per Windows 7 e Windows 8. Per Windows 10, utilizzare la funzione di ricerca in impostazioni per individuare **Visualizza impostazioni di sistema avanzate**. Le impostazioni WER si trovano in una delle sottochiavi del registro di sistema seguenti:
+Segnalazione errori Windows (WER) offre molte impostazioni per personalizzare l'esperienza di segnalazione dei problemi. Tutte queste impostazioni possono essere impostate usando Criteri di gruppo. Alcune possono anche essere modificate nel **Centro operativo** per Windows 7 e Windows 8. Per Windows 10, usare la funzione di ricerca in Impostazioni per individuare **Visualizza impostazioni di sistema avanzate**. Le impostazioni di WeR si trovano in una delle sottochiavi del Registro di sistema seguenti:
 
--   **HKEY \_ Software \_ utente corrente** \\  \\ **Microsoft** \\ **Windows** \\ **segnalazione errori Windows**
--   **HKEY \_ Software del \_ computer locale** \\  \\ **Microsoft** \\ **Windows** \\ **segnalazione errori Windows**
+-   **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **Segnalazione errori Windows**
+-   **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **Segnalazione errori Windows**
 
-## <a name="windows-error-reporting-subkey"></a>Sottochiave Segnalazione errori Windows
+## <a name="windows-error-reporting-subkey"></a>Segnalazione errori Windows sottochiave
 
 <dl> <dt>
 
@@ -31,15 +31,15 @@ Segnalazione errori Windows (WER) fornisce molte impostazioni per personalizzare
 
 Valori possibili:<dl> <dd>
 
-0-Disabilita la limitazione dei dati ignorata. Se il bypass è disabilitato o non è configurato come impostazione di criteri, WER limita i dati per impostazione predefinita. WER non carica più di un file CAB per un report che contiene dati sugli stessi tipi di evento.
+0 - Disabilitare la limitazione del bypass dei dati. Se il bypass è disabilitato o non configurato come impostazione dei criteri, wer limitazione dei dati per impostazione predefinita. WeR non carica più di un file CAB per un report che contiene dati sugli stessi tipi di evento.
 
 </dd> <dd>
 
-1-abilitare la limitazione dei dati bypass. WER non limita i dati. WER carica i file CAB aggiuntivi che possono contenere dati sugli stessi tipi di evento di un report caricato in precedenza.
+1 - Abilitare la limitazione del bypass dei dati. WeR non limitazione dei dati. WeR carica file CAB aggiuntivi che possono contenere dati sugli stessi tipi di evento di un report caricato in precedenza.
 
 </dd> </dl>
 
-Indica se abilitare il bypass della limitazione dei dati del client WER
+Se abilitare il bypass della limitazione dei dati del client WER
 
 </dd> <dt>
 
@@ -48,9 +48,9 @@ Indica se abilitare il bypass della limitazione dei dati del client WER
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>1-solo parametri (impostazione predefinita in Windows 7)</dd> <dd>2-tutti i dati (impostazione predefinita in Windows Vista)</dd> </dl>
+Valori possibili:<dl> <dd>1 - Solo parametri (impostazione predefinita Windows 7)</dd> <dd>2 - Tutti i dati (impostazione predefinita in Windows Vista)</dd> </dl>
 
-Indica se archiviare solo i parametri o tutti i dati
+Se archiviare solo i parametri o tutti i dati
 
 </dd> <dt>
 
@@ -59,9 +59,9 @@ Indica se archiviare solo i parametri o tutti i dati
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>1-Richiedi sempre (impostazione predefinita)</dd> <dd>2-solo parametri</dd> <dd>3-parametri e dati sicuri</dd> <dd>4-tutti i dati</dd> </dl>
+Valori possibili:<dl> <dd>1 - Chiedi sempre (impostazione predefinita)</dd> <dd>2 - Solo parametri</dd> <dd>3 - Parametri e dati sicuri</dd> <dd>4 - Tutti i dati</dd> </dl>
 
-Scelta di consenso predefinita
+Scelta del consenso predefinita
 
 </dd> <dt>
 
@@ -70,20 +70,20 @@ Scelta di consenso predefinita
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0: il consenso verticale sostituirà il consenso predefinito (impostazione predefinita)</dd> <dd>1-il consenso predefinito sostituirà il consenso specifico dell'applicazione</dd> </dl>
+Valori possibili:<dl> <dd>0 - Il consenso verticale eseguirà l'override del consenso predefinito (impostazione predefinita)</dd> <dd>1 - Il consenso predefinito eseguirà l'override del consenso specifico dell'applicazione</dd> </dl>
 
-Indica se il consenso predefinito sostituisce il consenso verticale
+Se il consenso predefinito sostituisce il consenso verticale
 
 </dd> <dt>
 
-<span id="Consent__VerticalName_"></span><span id="consent__verticalname_"></span><span id="CONSENT__VERTICALNAME_"></span>**Consenso \\ \[ verticale\]**
+<span id="Consent__VerticalName_"></span><span id="consent__verticalname_"></span><span id="CONSENT__VERTICALNAME_"></span>**Consent \\ \[ VerticalName\]**
 </dt> <dd>
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>1-Richiedi sempre (impostazione predefinita)</dd> <dd>2-solo parametri</dd> <dd>3-parametri e dati sicuri</dd> <dd>4-tutti i dati</dd> </dl>
+Valori possibili:<dl> <dd>1 - Chiedi sempre (impostazione predefinita)</dd> <dd>2 - Solo parametri</dd> <dd>3 - Parametri e dati sicuri</dd> <dd>4 - Tutti i dati</dd> </dl>
 
-Scelta di consenso per il plug-in WER
+Scelta del consenso per il plug-in WER
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Directory di destinazione nel server
 
 Numero di porta
 
-Numero di porta da utilizzare con il server aziendale
+Numero di porta da usare con il server aziendale
 
 </dd> <dt>
 
@@ -125,9 +125,9 @@ Nome del server aziendale
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
+Valori possibili:<dl> <dd>0 - No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
 
-Indica se utilizzare l'autenticazione integrata di Windows
+Se usare l'Windows integrata
 
 </dd> <dt>
 
@@ -136,29 +136,29 @@ Indica se utilizzare l'autenticazione integrata di Windows
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
+Valori possibili:<dl> <dd>0 - No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
 
-Indica se utilizzare SSL
+Se usare SSL
 
 </dd> <dt>
 
-<span id="DebugApplications__ExeName___replace___ExeName___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="debugapplications__exename___replace___exename___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="DEBUGAPPLICATIONS__EXENAME___REPLACE___EXENAME___WITH_AN_ACTUAL_NAME_OF_AN_.EXE_FILE__FOR_EXAMPLE___NOTEPAD.EXE__"></span>**DebugApplications \\ \[ exename \] (sostituire " \[ exename \] " con il nome effettivo di un file con estensione exe, ad esempio "notepad.exe")**
+<span id="DebugApplications__ExeName___replace___ExeName___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="debugapplications__exename___replace___exename___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="DEBUGAPPLICATIONS__EXENAME___REPLACE___EXENAME___WITH_AN_ACTUAL_NAME_OF_AN_.EXE_FILE__FOR_EXAMPLE___NOTEPAD.EXE__"></span>**DebugApplications \\ ExeName (sostituire " ExeName " con un nome effettivo di un file .exe, ad esempio \[ \] , \[ \] "notepad.exe")**
 </dt> <dd>
 
 **REG \_ DWORD**
 
 Valori possibili:
 
-<dl> <dd>0: i processi con un nome di immagine eseguibile di **\[ exename \]** non richiedono all'utente di scegliere **debug** o **continua** (impostazione predefinita)</dd> <dd>1-i processi con un nome di immagine eseguibile di **\[ exename \]** richiedono all'utente di scegliere **debug** o **continua**</dd> </dl> </dd> <dt>
+<dl> <dd>0 - I processi con un nome di immagine eseguibile **\[ ExeName \]** non richiedono all'utente di scegliere **Debug** o **Continua** (impostazione predefinita)</dd> <dd>1 - I processi con un nome di immagine eseguibile **\[ ExeName \]** richiedono all'utente di scegliere **Debug** o **Continua**</dd> </dl> </dd> <dt>
 
-<span id="DebugApplications________is_the_literal_value_name_"></span><span id="debugapplications________is_the_literal_value_name_"></span><span id="DEBUGAPPLICATIONS________IS_THE_LITERAL_VALUE_NAME_"></span>**DebugApplications \\ \* (" \* " è il nome del valore letterale)**
+<span id="DebugApplications________is_the_literal_value_name_"></span><span id="debugapplications________is_the_literal_value_name_"></span><span id="DEBUGAPPLICATIONS________IS_THE_LITERAL_VALUE_NAME_"></span>**DebugApplications \\ \* (" " è il nome del \* valore letterale)**
 </dt> <dd>
 
 **REG \_ DWORD**
 
 Valori possibili:
 
-<dl> <dd>0: tutti i processi ad eccezione di quelli specificati in modo esplicito nell'impostazione **DebugApplications \\ \[ \] exename** non richiedono all'utente di scegliere **debug** o **continua** (impostazione predefinita)</dd> <dd>1-tutti i processi ad eccezione di quelli specificati in modo esplicito nell'impostazione **DebugApplications \\ \[ \] exename** richiedono all'utente di scegliere **debug** o **continua**</dd> </dl> </dd> <dt>
+<dl> <dd>0 - Tutti i processi tranne quelli specificati in modo esplicito nell'impostazione **DebugApplications \\ \[ ExeName \]** non richiedono all'utente di scegliere **Debug** o **Continua** (impostazione predefinita)</dd> <dd>1 - Tutti i processi tranne quelli specificati in modo esplicito nell'impostazione **DebugApplications \\ \[ ExeName \]** richiedono all'utente di scegliere **Debug** o **Continua**</dd> </dl> </dd> <dt>
 
 <span id="DisableArchive"></span><span id="disablearchive"></span><span id="DISABLEARCHIVE"></span>**DisableArchive**
 </dt> <dd>
@@ -171,14 +171,14 @@ Abilitare o disabilitare l'archivio
 
 </dd> <dt>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato**
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabili**
 </dt> <dd>
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0: abilitato (impostazione predefinita)</dd> <dd>1 - Disattivato</dd> </dl>
+Valori possibili:<dl> <dd>0 - Abilitato (impostazione predefinita)</dd> <dd>1 - Disattivato</dd> </dl>
 
-Abilitare o disabilitare WER
+Abilitare o disabilitare WeR
 
 </dd> <dt>
 
@@ -189,7 +189,7 @@ Abilitare o disabilitare WER
 
 Valori possibili:<dl> <dd>0 - Attivato</dd> <dd>1 - Disattivato</dd> </dl>
 
-Abilitare o disabilitare l'accodamento di report
+Abilitare o disabilitare l'accodamento dei report
 
 </dd> <dt>
 
@@ -198,9 +198,9 @@ Abilitare o disabilitare l'accodamento di report
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-interfaccia utente (impostazione predefinita)</dd> <dd>1: nessuna interfaccia utente</dd> </dl>
+Valori possibili:<dl> <dd>0 - Interfaccia utente (impostazione predefinita)</dd> <dd>1 - Nessuna interfaccia utente</dd> </dl>
 
-Abilitare o disabilitare l'interfaccia utente di WER
+Abilitare o disabilitare l'interfaccia utente di WeR
 
 </dd> <dt>
 
@@ -209,20 +209,20 @@ Abilitare o disabilitare l'interfaccia utente di WER
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-invia (impostazione predefinita)</dd> <dd>1-non inviare</dd> </dl>
+Valori possibili:<dl> <dd>0 - Invia (impostazione predefinita)</dd> <dd>1 - Non inviare</dd> </dl>
 
-Indica se impedire l'invio di dati di secondo livello
+Se impedire l'invio di dati di secondo livello
 
 </dd> <dt>
 
-<span id="ExcludedApplications__Application_Name_"></span><span id="excludedapplications__application_name_"></span><span id="EXCLUDEDAPPLICATIONS__APPLICATION_NAME_"></span>**\\ \[ Nome dell'applicazione ExcludedApplications\]**
+<span id="ExcludedApplications__Application_Name_"></span><span id="excludedapplications__application_name_"></span><span id="EXCLUDEDAPPLICATIONS__APPLICATION_NAME_"></span>**Nome applicazione ExcludedApplications \\ \[\]**
 </dt> <dd>
 
 **REG \_ SZ**
 
 Usare [ **WerAddExcludedApplication**](/windows/desktop/api/Werapi/nf-werapi-weraddexcludedapplication)
 
-Elenco di applicazioni escluse
+Elenco delle applicazioni escluse
 
 </dd> <dt>
 
@@ -231,71 +231,71 @@ Elenco di applicazioni escluse
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
+Valori possibili:<dl> <dd>0 - No (impostazione predefinita)</dd> <dd>1 - Sì</dd> </dl>
 
-Indica se inviare tutti i report alla coda dell'utente
+Se inviare tutti i report alla coda dell'utente
 
 </dd> <dt>
 
-<span id="LocalDumps_DumpFolder_or_LocalDumps__Application_Name__DumpFolder"></span><span id="localdumps_dumpfolder_or_localdumps__application_name__dumpfolder"></span><span id="LOCALDUMPS_DUMPFOLDER_OR_LOCALDUMPS__APPLICATION_NAME__DUMPFOLDER"></span>**LocalDumps \\** **\\ \[ Nome dell'applicazione \] \\ DumpFolder o LocalDumps DumpFolder**
+<span id="LocalDumps_DumpFolder_or_LocalDumps__Application_Name__DumpFolder"></span><span id="localdumps_dumpfolder_or_localdumps__application_name__dumpfolder"></span><span id="LOCALDUMPS_DUMPFOLDER_OR_LOCALDUMPS__APPLICATION_NAME__DUMPFOLDER"></span>**LocalDumps \\ DumpFolder o** **Nome applicazione LocalDumps \\ \[ \] \\ DumpFolder**
 </dt> <dd>
 
-**REG \_ Espandi \_ SZ**
+**REG \_ EXPAND \_ SZ**
 
-Percorso della directory. Il valore predefinito è% LOCALAPPDATA% \\ CrashDumps. Se il valore predefinito non viene utilizzato, l'applicazione deve verificare che la cartella disponga di un ACL sufficiente.
+Percorso della directory. Il valore predefinito è %LOCALAPPDATA% \\ CrashDumps. Se non si usa l'impostazione predefinita, l'applicazione deve assicurarsi che la cartella disponga di un ACL sufficiente.
 
-**Windows Vista:** I valori del registro di sistema nella chiave **LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con Service Pack 1 (SP1).
+**Windows Vista:** I valori del Registro di sistema **nella chiave LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con Service Pack 1 (SP1).
 
 Percorso in cui archiviare i file di dump.
 
-Si noti che le impostazioni per processo sostituiranno le impostazioni globali esistenti per ulteriori informazioni, vedere [raccolta di dump di User-Mode](collecting-user-mode-dumps.md).
+Si noti che le impostazioni per processo eseguiranno l'override di tutte le impostazioni globali esistenti. Per altre informazioni, vedere Raccolta User-Mode [dump.](collecting-user-mode-dumps.md)
 
-Questa impostazione non è supportata nell'hive del registro di sistema **\_ \_ dell'utente corrente di HKEY** .
+Questa impostazione non è supportata nell'hive del Registro di sistema **HKEY \_ CURRENT \_ USER.**
 
 </dd> <dt>
 
-<span id="LocalDumps_DumpCount_or_LocalDumps__Application_Name__DumpCount"></span><span id="localdumps_dumpcount_or_localdumps__application_name__dumpcount"></span><span id="LOCALDUMPS_DUMPCOUNT_OR_LOCALDUMPS__APPLICATION_NAME__DUMPCOUNT"></span>**LocalDumps \\** **\\ \[ Nome dell'applicazione \] \\ DumpCount o LocalDumps DumpCount**
+<span id="LocalDumps_DumpCount_or_LocalDumps__Application_Name__DumpCount"></span><span id="localdumps_dumpcount_or_localdumps__application_name__dumpcount"></span><span id="LOCALDUMPS_DUMPCOUNT_OR_LOCALDUMPS__APPLICATION_NAME__DUMPCOUNT"></span>**LocalDumps \\ DumpCount o** **LocalDumps \\ \[ Application Name \] \\ DumpCount**
 </dt> <dd>
 
 **REG \_ DWORD**
 
-Numero massimo. Il valore predefinito è 10. Quando viene superato il valore massimo, il file di dump meno recente nella cartella verrà sostituito con il nuovo file di dump.
+Numero massimo. Il valore predefinito è 10. Quando viene superato il valore massimo, il file dump meno recente nella cartella verrà sostituito con il nuovo file dump.
 
-**Windows Vista:** I valori del registro di sistema nella chiave **LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
+**Windows Vista:** I valori del Registro di sistema **nella chiave LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
 
 Numero massimo di file di dump nella cartella.
 
-Questa impostazione non è supportata nell'hive del registro di sistema **\_ \_ dell'utente corrente di HKEY** .
+Questa impostazione non è supportata nell'hive del Registro di sistema **HKEY \_ CURRENT \_ USER.**
 
 </dd> <dt>
 
-<span id="LocalDumps_DumpType_or_LocalDumps__Application_Name__DumpType"></span><span id="localdumps_dumptype_or_localdumps__application_name__dumptype"></span><span id="LOCALDUMPS_DUMPTYPE_OR_LOCALDUMPS__APPLICATION_NAME__DUMPTYPE"></span>**LocalDumps \\** **\\ \[ Nome dell'applicazione \] \\ DumpType o LocalDumps DumpType**
+<span id="LocalDumps_DumpType_or_LocalDumps__Application_Name__DumpType"></span><span id="localdumps_dumptype_or_localdumps__application_name__dumptype"></span><span id="LOCALDUMPS_DUMPTYPE_OR_LOCALDUMPS__APPLICATION_NAME__DUMPTYPE"></span>**LocalDumps \\ DumpType o** **LocalDumps \\ \[ Application Name \] \\ DumpType**
 </dt> <dd>
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0-dump personalizzato</dd> <dd>1-minidump (impostazione predefinita)</dd> <dd>2-dump completo</dd> </dl>
+Valori possibili:<dl> <dd>0 - Dump personalizzato</dd> <dd>1 - Minidump (impostazione predefinita)</dd> <dd>2 - Dump completo</dd> </dl>
 
-**Windows Vista:** I valori del registro di sistema nella chiave **LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
+**Windows Vista:** I valori del Registro di sistema **nella chiave LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
 
 Tipo di dump.
 
-Questa impostazione non è supportata nell'hive del registro di sistema **\_ \_ dell'utente corrente di HKEY** .
+Questa impostazione non è supportata nell'hive del Registro di sistema **HKEY \_ CURRENT \_ USER.**
 
 </dd> <dt>
 
-<span id="LocalDumps_CustomDumpFlags_or_LocalDumps__Application_Name__CustomDumpFlags"></span><span id="localdumps_customdumpflags_or_localdumps__application_name__customdumpflags"></span><span id="LOCALDUMPS_CUSTOMDUMPFLAGS_OR_LOCALDUMPS__APPLICATION_NAME__CUSTOMDUMPFLAGS"></span>**LocalDumps \\** **\\ \[ Nome dell'applicazione \] \\ CustomDumpFlags o LocalDumps CustomDumpFlags**
+<span id="LocalDumps_CustomDumpFlags_or_LocalDumps__Application_Name__CustomDumpFlags"></span><span id="localdumps_customdumpflags_or_localdumps__application_name__customdumpflags"></span><span id="LOCALDUMPS_CUSTOMDUMPFLAGS_OR_LOCALDUMPS__APPLICATION_NAME__CUSTOMDUMPFLAGS"></span>**LocalDumps \\ Nome applicazione CustomDumpFlags** o **LocalDumps \\ \[ \] \\ CustomDumpFlags**
 </dt> <dd>
 
 **REG \_ DWORD**
 
-Uno o più valori dell'enumerazione [**del \_ tipo di MINIDUMP**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type) . Il valore predefinito è {**MiniDumpWithDataSegs** \| **MiniDumpWithUnloadedModules** \| **MiniDumpWithProcessThreadData**}.
+Uno o più valori [**dell'enumerazione MINIDUMP \_ TYPE.**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type) Il valore predefinito è {**MiniDumpWithDataSegs** \| **MiniDumpWithUnloadedModules** \| **MiniDumpWithProcessThreadData**}.
 
-**Windows Vista:** I valori del registro di sistema nella chiave **LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
+**Windows Vista:** I valori del Registro di sistema **nella chiave LocalDumps** non sono supportati. Si noti che questo comportamento è stato modificato con Windows Server 2008 e Windows Vista con SP1.
 
-Opzioni di dump personalizzate da utilizzare. Questo valore viene utilizzato solo quando **DumpType** è impostato su 0.
+Opzioni di dump personalizzate da utilizzare. Questo valore viene usato solo quando **DumpType** è impostato su 0.
 
-Questa impostazione non è supportata nell'hive del registro di sistema **\_ \_ dell'utente corrente di HKEY** .
+Questa impostazione non è supportata nell'hive del Registro di sistema **HKEY \_ CURRENT \_ USER.**
 
 </dd> <dt>
 
@@ -304,7 +304,7 @@ Questa impostazione non è supportata nell'hive del registro di sistema **\_ \_ 
 
 **REG \_ DWORD**
 
-Valori possibili:<dl> <dd>0: abilitato (impostazione predefinita)</dd> <dd>1: disabilitato</dd> </dl>
+Valori possibili:<dl> <dd>0- Abilitato (impostazione predefinita)</dd> <dd>1- Disabilitato</dd> </dl>
 
 Abilitare o disabilitare la registrazione
 
@@ -315,9 +315,9 @@ Abilitare o disabilitare la registrazione
 
 **REG \_ DWORD**
 
-Intervallo di valori possibili: 1 – 5000. Il valore predefinito è 1000.
+Intervallo di valori possibili: 1-5000. Il valore predefinito è 1000.
 
-Dimensioni massime dell'archivio in file
+Dimensioni massime dell'archivio, in file
 
 </dd> <dt>
 
@@ -326,7 +326,7 @@ Dimensioni massime dell'archivio in file
 
 **REG \_ DWORD**
 
-Intervallo di valori possibili: 1 – 500. Il valore predefinito è 50.
+Intervallo di valori possibili: 1-500. Il valore predefinito è 50.
 
 Dimensioni massime della coda
 
@@ -339,11 +339,11 @@ Dimensioni massime della coda
 
 Numero di giorni
 
-Intervallo tra i promemoria dell'utente per verificare la presenza di soluzioni, in giorni
+Intervallo tra i promemoria all'utente per verificare la presenza di soluzioni, in giorni
 
 </dd> <dt>
 
-<span id="RuntimeExceptionHelperModules___pwszOutOfProcessCallbackDll_name_including_path_"></span><span id="runtimeexceptionhelpermodules___pwszoutofprocesscallbackdll_name_including_path_"></span><span id="RUNTIMEEXCEPTIONHELPERMODULES___PWSZOUTOFPROCESSCALLBACKDLL_NAME_INCLUDING_PATH_"></span>**RuntimeExceptionHelperModules! \[ nome pwszOutOfProcessCallbackDll con percorso\]**
+<span id="RuntimeExceptionHelperModules___pwszOutOfProcessCallbackDll_name_including_path_"></span><span id="runtimeexceptionhelpermodules___pwszoutofprocesscallbackdll_name_including_path_"></span><span id="RUNTIMEEXCEPTIONHELPERMODULES___PWSZOUTOFPROCESSCALLBACKDLL_NAME_INCLUDING_PATH_"></span>**RuntimeExceptionHelperModules! \[ pwszOutOfProcessCallbackDll name including path\]**
 </dt> <dd>
 
 **REG \_ DWORD**
@@ -352,15 +352,15 @@ Il contenuto del valore viene ignorato.
 
 Il nome del valore viene usato per recuperare il valore pwszOutOfProcessCallbackDll.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Il valore del registro di sistema non è supportato.
+**Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Questo valore del Registro di sistema non è supportato.
 
 </dd> </dl>
 
-## <a name="wer-live-kernel-reports-settings"></a>Impostazioni report del kernel Live di WER
+## <a name="wer-live-kernel-reports-settings"></a>Report del kernel live di Segnalazione errori Windows Impostazioni
 
-Le impostazioni dei report del kernel Live di WER, descritte di seguito, si trovano entrambi nella sottochiave del registro di sistema seguente:
+Le impostazioni dei report del kernel live di WeR, descritte di seguito, si trovano entrambe nella sottochiave del Registro di sistema seguente:
 
--   **HKEY \_ Controllo CurrentControlSet del sistema del \_ computer locale** \\  \\  \\  \\ **CrashControl**
+-   **HKEY \_ LOCAL \_ MACHINE** \\ **SYSTEM Controllo** \\ **CurrentControlSet** \\  \\ **CrashControl**
 
 ## <a name="fulllivekernelreports-subkey"></a>Sottochiave FullLiveKernelReports
 
@@ -371,7 +371,7 @@ Le impostazioni dei report del kernel Live di WER, descritte di seguito, si trov
 
 **REG \_ DWORD**
 
-Soglia (in ore) della frequenza con cui un singolo componente può creare un dump Live completo. Questo valore deve essere maggiore o uguale a **SystemThrottleThreshold**. Se si imposta su zero (0), tutte le limitazioni basate sul tempo vengono disabilitate. Il valore predefinito è 168 (7 giorni).
+Soglia (in ore) della frequenza con cui un singolo componente può creare un dump live completo. Questo valore deve essere maggiore o uguale a **SystemThrottleThreshold**. L'impostazione di entrambi su zero (0) disabilita tutte le limitazioni basate sul tempo. Il valore predefinito è 168 (7 giorni).
 
 </dd> <dt>
 
@@ -380,7 +380,7 @@ Soglia (in ore) della frequenza con cui un singolo componente può creare un dum
 
 **REG \_ DWORD**
 
-Numero massimo di dump Live completi che possono trovarsi sul disco in un determinato momento. Il valore predefinito è 1. Se questo valore viene impostato su zero (0), la funzionalità di dump in tempo reale verrà disabilitata.
+Numero massimo di dump live completi che possono essere su disco in un determinato momento. Il valore predefinito è 1. L'impostazione di questo valore su zero (0) disabilita la funzionalità di dump live.
 
 </dd> <dt>
 
@@ -389,7 +389,7 @@ Numero massimo di dump Live completi che possono trovarsi sul disco in un determ
 
 **REG \_ QWORD**
 
-Oggetto [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che indica l'ora dell'ultimo report live completo, per il sistema o un reportType specifico. Viene usato per calcolare se una soglia dei criteri è stata soddisfatta.
+Valore [SystemTime che](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) indica l'ora dell'ultimo report live completo, per il sistema o un ReportType specifico. Viene usato per calcolare se una soglia dei criteri è stata soddisfatta.
 
 </dd> <dt>
 
@@ -398,7 +398,7 @@ Oggetto [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) c
 
 **REG \_ DWORD**
 
-Soglia (in ore) della frequenza con cui un componente del sistema può creare un dump Live completo. Il valore predefinito è 120 (5 giorni).
+Soglia (in ore) della frequenza con cui un componente nel sistema può creare un dump live completo. Il valore predefinito è 120 (5 giorni).
 
 </dd> </dl>
 
@@ -412,7 +412,7 @@ Soglia (in ore) della frequenza con cui un componente del sistema può creare un
 **REG \_ SZ**
 
 
-Percorso di archiviazione reindirizzato dei report del kernel attivo. Il percorso predefinito è%systemroot%\LiveKernelReports. Questo valore deve essere un percorso valido. Il percorso deve essere in formato NT. Ad esempio, \? ? \c: \LiveDumpsFolder.  Per ulteriori informazioni sui formati di percorso, vedere  [formati di percorso dei file nei sistemi Windows](/dotnet/standard/io/file-path-formats).
+Percorso di archiviazione reindirizzato dei report del kernel in tempo reale. Il percorso predefinito è %systemroot%\LiveKernelReports. Questo valore deve essere un percorso valido. Il percorso deve essere nel formato di percorso NT. Ad esempio, \? ?\C:\LiveDumpsFolder.  Per altre informazioni sui formati di percorso, vedere Formati di percorso dei [file Windows sistemi .](/dotnet/standard/io/file-path-formats)
 
 </dd> </dl>
 
@@ -420,7 +420,7 @@ Percorso di archiviazione reindirizzato dei report del kernel attivo. Il percors
 
 <dl> <dt>
 
-[Riferimento a WER](wer-reference.md)
+[Informazioni di riferimento su WER](wer-reference.md)
 </dt> </dl>
 
  

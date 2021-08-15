@@ -1,9 +1,9 @@
 ---
-title: Messaggio RB_SETBANDWIDTH (COMmctrl. h)
-description: Imposta la larghezza di una banda ancorata.
+title: RB_SETBANDWIDTH messaggio (Commctrl.h)
+description: Imposta la larghezza per una banda ancorata.
 ms.assetid: dca9dfe9-3e5a-40bb-8de7-a296e6be7d06
 keywords:
-- Controlli di Windows Message RB_SETBANDWIDTH
+- RB_SETBANDWIDTH dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790f42ab977cfc0554c9a0eca737d541e001b6c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcc30b8cd4cdb3a9d6f5e6123ec46df6565a0ccb19d3920fe67c50a57cd15fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409181"
 ---
-# <a name="rb_setbandwidth-message"></a>\_Messaggio della larghezza di banda RB
+# <a name="rb_setbandwidth-message"></a>Messaggio RB \_ SETBANDWIDTH
 
-Imposta la larghezza di una banda ancorata.
+Imposta la larghezza per una banda ancorata.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,7 +45,7 @@ Nuova larghezza in pixel.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se il valore è stato impostato e **false** in caso contrario.
+Restituisce **TRUE se** il valore è stato impostato e FALSE in caso **contrario.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -53,9 +53,9 @@ Restituisce **true** se il valore è stato impostato e **false** in caso contrar
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

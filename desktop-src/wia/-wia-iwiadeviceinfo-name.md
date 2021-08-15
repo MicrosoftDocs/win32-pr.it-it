@@ -1,7 +1,7 @@
 ---
-description: Nome del dispositivo hardware Windows Image Acquisition (WIA) così come appare nell'interfaccia utente.
+description: Nome del dispositivo hardware WIA (Windows Image Acquisition) così come viene visualizzato nell'interfaccia utente.
 ms.assetid: 0d53dcd1-2ae5-476c-9fdf-cdea61e0711b
-title: Proprietà DeviceInfo.Name
+title: DeviceInfo.Name proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: dc432c939ffc41111c20c97283d4caeb2c3733af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4acd7307ccec6d1f775474ba8af760f6daede4d3100b6347ce94dd8989b0aefe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441309"
 ---
-# <a name="deviceinfoname-property"></a>Proprietà DeviceInfo.Name
+# <a name="deviceinfoname-property"></a>DeviceInfo.Name proprietà
 
-Nome del dispositivo hardware Windows Image Acquisition (WIA) così come appare nell'interfaccia utente.
+Nome del dispositivo hardware WIA (Windows Image Acquisition) così come viene visualizzato nell'interfaccia utente.
 
 Questa proprietà è di sola lettura.
 
@@ -45,9 +45,9 @@ Stringa che riceve il nome.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

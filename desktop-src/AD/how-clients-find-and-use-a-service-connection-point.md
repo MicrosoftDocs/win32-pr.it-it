@@ -1,26 +1,26 @@
 ---
-title: Modalità di individuazione e utilizzo di un punto di connessione del servizio da parte dei client
-description: Nell'esempio di codice seguente viene illustrato come un'applicazione client esegue la ricerca nel catalogo globale di un punto di connessione del servizio (SCP).
+title: Come i client trovano e usano un punto di connessione del servizio
+description: Nell'esempio di codice seguente viene illustrato come un'applicazione client cerca un punto di connessione del servizio nel catalogo globale.
 ms.assetid: d3163c22-22fe-4606-8cad-6f3a87f8fc36
 ms.tgt_platform: multiple
 keywords:
-- punti di connessione del servizio AD, modalità di ricerca e uso dei client
+- punti di connessione del servizio AD, come i client trovano e usano
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edf75a0002f9351903ed1c5eca79f498cb4a078d
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 184034085ed673df873f346b1cee78051e05641931de3b770f9a17a3d0d8eba0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104472542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188196"
 ---
-# <a name="how-clients-find-and-use-a-service-connection-point"></a>Modalità di individuazione e utilizzo di un punto di connessione del servizio da parte dei client
+# <a name="how-clients-find-and-use-a-service-connection-point"></a>Come i client trovano e usano un punto di connessione del servizio
 
-Nell'esempio di codice seguente viene illustrato come un'applicazione client esegue la ricerca nel catalogo globale di un punto di connessione del servizio (SCP). In questo esempio di codice, l'applicazione client dispone di una stringa GUID hardcoded che identifica il servizio. Il programma di installazione del servizio ha archiviato la stessa stringa GUID di uno dei valori dell'attributo convergenza multivalore **Keywords** .
+Nell'esempio di codice seguente viene illustrato come un'applicazione client cerca un punto di connessione del servizio nel catalogo globale. In questo esempio di codice l'applicazione client ha una stringa GUID hard-coded che identifica il servizio. Il programma di installazione del servizio ha archiviato la stessa  stringa GUID di uno dei valori dell'attributo delle parole chiave multivalore SCPs.
 
-Questo esempio è costituito da due routine. La routine **GetGC** recupera un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) per un catalogo globale (GC). La routine **ScpLocate** usa i metodi **IDirectorySearch** per eseguire ricerche nel catalogo globale.
+Questo esempio è costituito da due routine. La **routine GetGC** recupera un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) per un catalogo globale (GC). La routine **ScpLocate** usa i **metodi IDirectorySearch** per eseguire ricerche in GC.
 
-Il GC contiene una replica parziale di ogni oggetto della foresta, ma non contiene tutti gli attributi SCP richiesti dal client. Per prima cosa, il client deve eseguire una ricerca nel catalogo globale per trovare il punto di SCP e recuperare il DN. Il client usa quindi il DN di SCP per eseguire il binding a un puntatore [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) sul SCP. Il client chiama quindi il metodo [**IDirectoryObject:: GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) per recuperare il resto degli attributi.
+Il garbage collector contiene una replica parziale di ogni oggetto nella foresta, ma non contiene tutti gli attributi SCP necessari per il client. In primo luogo, il client deve cercare il catalogo globale per trovare il SCP e recuperare il relativo DN. Il client usa quindi il DN del punto di connessione del servizio per eseguire l'associazione a un [**puntatore IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) nel punto di connessione del servizio. Il client chiama quindi il [**metodo IDirectoryObject::GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) per recuperare il resto degli attributi.
 
 
 ```C++
@@ -292,6 +292,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
