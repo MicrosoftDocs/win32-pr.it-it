@@ -1,9 +1,9 @@
 - name: Nozioni di base sulla progettazione
   href: designprinciples.md
   items:
-    - name: Come progettare una grande esperienza utente
+    - name: Come progettare un'esperienza utente eccezionale
       href: how-to-design-desktop-ux.md
-    - name: Elenco di controllo UX
+    - name: Elenco di controllo dell'esperienza utente
       href: top-violations.md
 - name: Indicazioni
   href: guidelines.md
@@ -13,11 +13,11 @@
       items:
         - name: Palloncini
           href: ctrl-balloons.md
-        - name: Caselle di controllo
+        - name: Caselle
           href: ctrl-check-boxes.md
         - name: Pulsanti di comando
           href: ctrl-command-buttons.md
-        - name: Collegamenti ai comandi
+        - name: Collegamenti di comando
           href: ctrl-command-links.md
         - name: Elenchi a discesa & caselle combinate
           href: ctrl-drop.md
@@ -27,13 +27,13 @@
           href: ctrl-links.md
         - name: Caselle di riepilogo
           href: ctrl-list-boxes.md
-        - name: Visualizzazione elenco
+        - name: Visualizzazioni elenco
           href: ctrl-list-views.md
-        - name: Indicatori di stato
+        - name: Barre di stato
           href: progress-bars.md
         - name: Controlli di divulgazione progressiva
           href: ctrl-progressive-disclosure-controls.md
-        - name: Pulsanti di opzione
+        - name: Pulsanti
           href: ctrl-radio-buttons.md
         - name: Caselle di ricerca
           href: ctrl-search-boxes.md
@@ -47,9 +47,9 @@
           href: ctrl-tabs.md
         - name: Caselle di testo
           href: ctrl-text-boxes.md
-        - name: Descrizioni comandi e infotip
+        - name: Descrizioni comando e descrizioni comandi
           href: ctrl-tooltips-and-infotips.md
-        - name: Visualizzazioni ad albero
+        - name: Visualizzazioni albero
           href: ctrl-tree-views.md
     - name: Comandi
       href: commands.md
@@ -63,7 +63,7 @@
     - name: Testo
       href: text.md
       items:
-        - name: Testo dell'interfaccia utente
+        - name: Interfaccia utente testo
           href: text-ui.md
         - name: Stile e tono
           href: text-style-tone.md
@@ -96,15 +96,15 @@
       items:
         - name: Gestione finestre
           href: win-window-mgt.md
-        - name: Frame della finestra
+        - name: Frame di finestra
           href: win-window-frames.md
         - name: Finestre di dialogo
           href: win-dialog-box.md
-        - name: Finestre di dialogo comuni
+        - name: Dialoghe comuni
           href: win-common-dlg.md
         - name: Procedure guidate
           href: win-wizards.md
-        - name: Finestre delle proprietà
+        - name: Proprietà Windows
           href: win-property-win.md
     - name: Oggetti visivi
       href: visuals.md
@@ -113,7 +113,7 @@
           href: vis-layout.md
         - name: Tipi di carattere
           href: vis-fonts.md
-        - name: Colore
+        - name: Color
           href: vis-color.md
         - name: Icone
           href: vis-icons.md
@@ -130,7 +130,7 @@
       items:
         - name: Personalizzazione del software
           href: exper-branding.md
-        - name: Configurazione
+        - name: Eseguire la configurazione
           href: exper-setup.md
         - name: Prima esperienza
           href: exper-first-exper.md

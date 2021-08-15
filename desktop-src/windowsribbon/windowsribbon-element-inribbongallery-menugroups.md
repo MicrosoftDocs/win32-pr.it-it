@@ -1,9 +1,9 @@
 ---
-title: Proprietà inribbongallery. MenuGroups
-description: Rappresenta un contenitore per il set di voci di menu a discesa di un controllo raccolta In-Ribbon.
+title: Proprietà InRibbonGallery.MenuGroups
+description: Rappresenta un contenitore per il set di voci di menu a discesa di un controllo In-Ribbon Gallery.
 ms.assetid: 6b9ded25-4e8e-4e30-a349-f7c091dbfe7a
 keywords:
-- Proprietà inribbongallery. MenuGroups barra multifunzione di Windows
+- Proprietà InRibbonGallery.MenuGroups Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd447b66dada74b1a9b909b3030e080198143b12
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1722c8963b57256cf74f5911c8273539e10b5c6a6fef96dcfa1f0fec591bca04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710481"
 ---
-# <a name="inribbongallerymenugroups-property"></a>Proprietà inribbongallery. MenuGroups
+# <a name="inribbongallerymenugroups-property"></a>Proprietà InRibbonGallery.MenuGroups
 
-Rappresenta un contenitore per il set di voci di menu a discesa di un controllo [raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md) .
+Rappresenta un contenitore per il set di voci di menu a discesa di [un controllo Raccolta barra](windowsribbon-controls-inribbongallery.md) multifunzione.
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                         | Descrizione                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Deve essere presente almeno una volta<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve verificarsi almeno una volta<br/> <br/> |
 
 
 
@@ -51,7 +51,7 @@ Non ci sono attributi.
 
 | Elemento                                                                     |
 |-----------------------------------------------------------------------------|
-| [**Inribbongallery**](windowsribbon-element-inribbongallery.md)<br/> |
+| [**InRibbonGallery**](windowsribbon-element-inribbongallery.md)<br/> |
 
 
 
@@ -59,13 +59,13 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**inribbongallery**](windowsribbon-element-inribbongallery.md) .
+Può verificarsi al massimo una volta per [**ogni elemento InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per un controllo [della raccolta della barra multifunzione](windowsribbon-controls-inribbongallery.md) .
+Nell'esempio seguente viene illustrato il markup di base per [un controllo Raccolta nella barra](windowsribbon-controls-inribbongallery.md) multifunzione.
 
-Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery. MenuGroups** .
+Questa sezione di codice illustra la dichiarazione del controllo **InRibbonGallery.MenuGroups.**
 
 
 ```XML
@@ -102,8 +102,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -111,13 +111,13 @@ Questa sezione di codice mostra la dichiarazione di controllo **inribbongallery.
 
 <dl> <dt>
 
-[Controllo raccolta nella barra multifunzione](windowsribbon-controls-inribbongallery.md)
+[Controllo Raccolta barra multifunzione](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)
 </dt> <dt>
 
-[Personalizzazione di una barra multifunzione tramite le definizioni delle dimensioni e i criteri di scalabilità](windowsribbon-templates.md)
+[Personalizzazione di una barra multifunzione tramite definizioni di dimensioni e criteri di ridimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

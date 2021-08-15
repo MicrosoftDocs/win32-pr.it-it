@@ -1,9 +1,9 @@
 ---
-title: Set (comando)
-description: Il comando set stabilisce le impostazioni di controllo per il dispositivo. Questo comando viene riconosciuto da dispositivi CD audio, digital-video, MIDI Sequencer, VCR, videodisc, overlay video e audio waveform.
+title: comando set
+description: Il comando set stabilisce le impostazioni di controllo per il dispositivo. Cd audio, digital-video, sequencer MIDI, VCR, videodisc, sovrapposizione video e dispositivi audio waveform riconoscono questo comando.
 ms.assetid: 1ec4d84e-372a-4b6d-b694-f5afb41f90b2
 keywords:
-- Comando set Windows Multimedia
+- comando set Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -19,13 +19,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118371013"
 ---
-# <a name="set-command"></a>Set (comando)
+# <a name="set-command"></a>comando set
 
 > [!NOTE]
-> Comunicazione senza distorsioni Microsoft supporta un ambiente diversificato e inclusiva.  All'interno di questo documento sono presenti riferimenti alla parola "slave". La Guida di stile di Microsoft [per Bias-Free comunicazioni](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo riconosce come parola di esclusione.  Questa formulazione viene usata perché è attualmente la formulazione usata all'interno dei comandi. Per coerenza, questo documento contiene questa parola. Quando questa parola viene modificata nei comandi, il documento verrà corretto in modo che sia allineato.
+> Comunicazione senza distorsioni Microsoft supporta un ambiente diversificato e inclusiva.  All'interno di questo documento sono presenti riferimenti alla parola "slave". La Guida di stile di Microsoft [Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) lo riconosce come parola di esclusione.  Questa formulazione viene usata perché è attualmente la formulazione usata all'interno dei comandi. Per coerenza, questo documento contiene questa parola. Quando questa parola viene modificata nei comandi, il documento verrà corretto in modo che sia allineato.
 
 
-Il comando set stabilisce le impostazioni di controllo per il dispositivo. Questo comando viene riconosciuto da dispositivi CD audio, digital-video, MIDI Sequencer, VCR, videodisc, overlay video e audio waveform.
+Il comando set stabilisce le impostazioni di controllo per il dispositivo. Cd audio, digital-video, sequencer MIDI, VCR, videodisc, sovrapposizione video e dispositivi audio waveform riconoscono questo comando.
 
 Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
@@ -54,7 +54,7 @@ Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegn
 <span id="lpszSetting"></span><span id="lpszsetting"></span><span id="LPSZSETTING"></span>*lpszSetting*
 </dt> <dd>
 
-Flag per stabilire le impostazioni di controllo. La tabella seguente elenca i tipi di dispositivo che riconoscono **il comando set** e i flag usati da ogni tipo.
+Flag per stabilire le impostazioni di controllo. Nella tabella seguente sono elencati i tipi di dispositivo che riconoscono il **comando set** e i flag usati da ogni tipo.
 
 
 
@@ -73,125 +73,125 @@ Flag per stabilire le impostazioni di controllo. La tabella seguente elenca i ti
 <tr class="odd">
 <td>cdaudio</td>
 <td><ul>
-<li>audio all off</li>
+<li>audio tutto disattivato</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio left on</li>
-<li>audio right off</li>
+<li>audio lasciato in</li>
+<li>audio subito spento</li>
 <li>audio a destra su</li>
-<li>door closed</li>
-<li>door open</li>
-<li>formato dell'ora millisecondi</li>
-<li>formato ora msf</li>
-<li>time format tmsf</li>
+<li>porta chiusa</li>
+<li>porta aperta</li>
+<li>millisecondi di formato dell'ora</li>
+<li>formato dell'ora msf</li>
+<li>formato ora tmsf</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>digitalvideo</td>
 <td><ul>
-<li>audio all off</li>
+<li>audio tutto disattivato</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio left on</li>
-<li>audio right off</li>
+<li>audio lasciato in</li>
+<li>audio subito spento</li>
 <li>audio a destra su</li>
-<li>door closed</li>
-<li>door open</li>
+<li>porta chiusa</li>
+<li>porta aperta</li>
 <li>formato di <em>file</em></li>
-<li>seek exactly on</li>
-<li>seek exactly off</li>
+<li>cercare esattamente su</li>
+<li>cercare esattamente off</li>
 <li>fattore di <em>velocità</em></li>
 <li>formato di file <em>still</em></li>
-<li>frame di formato ora</li>
-<li>formato dell'ora millisecondi</li>
-<li>video off</li>
-<li>video on</li>
+<li>fotogrammi in formato ora</li>
+<li>millisecondi di formato dell'ora</li>
+<li>video disattivato</li>
+<li>video su</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>overlay</td>
 <td><ul>
-<li>audio all off</li>
+<li>audio tutto disattivato</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio left on</li>
-<li>audio right off</li>
+<li>audio lasciato in</li>
+<li>audio subito spento</li>
 <li>audio a destra su</li>
-<li>door closed</li>
-<li>door open</li>
-<li>video off</li>
-<li>video on</li>
+<li>porta chiusa</li>
+<li>porta aperta</li>
+<li>video disattivato</li>
+<li>video su</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>sequencer</td>
 <td><ul>
-<li>audio all off</li>
+<li>audio tutto disattivato</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio left on</li>
-<li>audio right off</li>
+<li>audio lasciato in</li>
+<li>audio subito spento</li>
 <li>audio a destra su</li>
-<li>door closed</li>
-<li>door open</li>
+<li>porta chiusa</li>
+<li>porta aperta</li>
 <li>MASTER MIDI</li>
 <li>master none</li>
-<li>SMPTE master</li>
-<li>offset <em>time</em></li>
+<li>master SMPTE</li>
+<li>tempo <em></em> di offset</li>
 <li>mapper di porte</li>
-<li>porta none</li>
-<li>Porta <em>port_number</em></li>
+<li>porta nessuna</li>
+<li>porta <em>port_number</em></li>
 <li>file slave</li>
-<li>slave MIDI</li>
+<li>SLAVE MIDI</li>
 <li>slave none</li>
 <li>slave SMPTE</li>
 <li>tempo <em>tempo_value</em></li>
-<li>formato dell'ora millisecondi</li>
+<li>millisecondi di formato dell'ora</li>
 <li>formato ora SMPTE <em>fps</em></li>
-<li>time format SMPTE 30 drop</li>
-<li>puntatore del brano formato ora</li>
+<li>formato ora SMPTE 30 drop</li>
+<li>puntatore del brano in formato ora</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><strong>Vcr</strong></td>
 <td><ul>
-<li>assemble record on</li>
-<li>assemble record off</li>
-<li>audio all off</li>
+<li>assemblare record in</li>
+<li>assemblare record off</li>
+<li>audio tutto disattivato</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio left on</li>
-<li>audio right off</li>
+<li>audio lasciato in</li>
+<li>audio subito spento</li>
 <li>audio a destra su</li>
-<li>clock <em>time</em></li>
+<li>ora <em>dell'orologio</em></li>
 <li>formato contatore</li>
-<li>valore <em>del contatore</em></li>
-<li>porta chiusa</li>
-<li>porta aperta</li>
+<li>valore <em>contatore</em></li>
+<li>door closed</li>
+<li>door open</li>
 <li>contatore dell'indice</li>
-<li>data dell'indice</li>
+<li>index date</li>
 <li>ora dell'indice</li>
 <li>ora dell'indice</li>
-<li>durata <em>codelength</em></li>
+<li>codelength <em>duration</em></li>
 <li>timeout <em>di sospensione</em></li>
-<li>Durata post-registrazione -</li>
+<li>Postroll duration (Durata postroll) -</li>
 <li><em>duration</em></li>
 <li>accensione</li>
 <li>power off</li>
 <li>durata della <em>pre-registrazione</em></li>
-<li>formato di record SP</li>
-<li>formato di record LP</li>
-<li>formato di record EP</li>
+<li>formato record SP</li>
+<li>formato record LP</li>
+<li>Formato record EP</li>
 <li>fattore di <em>velocità</em></li>
-<li>fotogrammi in formato ora</li>
+<li>frame di formato ora</li>
 <li>formato ora hms</li>
-<li>millisecondi di formato dell'ora</li>
-<li>formato dell'ora msf</li>
+<li>formato dell'ora millisecondi</li>
+<li>formato ora msf</li>
 <li>formato ora SMPTE <em>fps</em></li>
-<li>formato ora SMPTE 30 drop</li>
-<li>formato ora tmsf</li>
+<li>time format SMPTE 30 drop</li>
+<li>time format tmsf</li>
 <li>contatore della modalità tempo</li>
-<li>rilevamento della modalità temporale</li>
+<li>rilevamento della modalità ora</li>
 <li>time mode timecode</li>
 <li>tracking plus</li>
 <li>rilevamento meno</li>
@@ -201,46 +201,46 @@ Flag per stabilire le impostazioni di controllo. La tabella seguente elenca i ti
 <tr class="even">
 <td>videodisc</td>
 <td><ul>
-<li>audio tutto disattivato</li>
+<li>audio all off</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio lasciato in</li>
-<li>audio subito spento</li>
+<li>audio left on</li>
+<li>audio right off</li>
 <li>audio a destra su</li>
-<li>porta chiusa</li>
-<li>porta aperta</li>
-<li>fotogrammi in formato ora</li>
+<li>door closed</li>
+<li>door open</li>
+<li>frame di formato ora</li>
 <li>formato ora hms</li>
-<li>millisecondi di formato dell'ora</li>
-<li>traccia del formato dell'ora</li>
-<li>video disattivato</li>
-<li>video su</li>
+<li>formato dell'ora millisecondi</li>
+<li>time format track</li>
+<li>video off</li>
+<li>video on</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Waveaudio</td>
 <td><ul>
-<li>intero di <em>allineamento</em></li>
+<li>alignment <em>integer</em></li>
 <li>qualsiasi input</li>
 <li>qualsiasi output</li>
-<li>audio tutto disattivato</li>
+<li>audio all off</li>
 <li>audio all on</li>
 <li>audio disattivato</li>
-<li>audio lasciato in</li>
-<li>audio subito spento</li>
+<li>audio left on</li>
+<li>audio right off</li>
 <li>audio a destra su</li>
 <li>bitspersample <em>bit_count</em></li>
 <li>bytepersec <em>byte_rate</em></li>
-<li>canali <em>channel_count</em></li>
-<li>porta chiusa</li>
-<li>porta aperta</li>
-<li>tag di formato pcm</li>
+<li>Canali <em>channel_count</em></li>
+<li>door closed</li>
+<li>door open</li>
+<li>format tag pcm</li>
 <li>tag di <em>formato</em></li>
 <li>input <em>integer</em></li>
 <li>output <em>integer</em></li>
 <li>samplespersec <em>integer</em></li>
-<li>byte in formato ora</li>
-<li>millisecondi di formato dell'ora</li>
+<li>byte di formato ora</li>
+<li>formato dell'ora millisecondi</li>
 <li>esempi di formato ora</li>
 </ul></td>
 </tr>
@@ -251,7 +251,7 @@ Flag per stabilire le impostazioni di controllo. La tabella seguente elenca i ti
 
  
 
-Nella tabella seguente sono elencati i flag che è possibile specificare nel **parametro lpszSetting** e i relativi significati.
+La tabella seguente elenca i flag che possono essere specificati nel **parametro lpszSetting** e i relativi significati.
 
 
 
@@ -268,8 +268,8 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel **p
 </thead>
 <tbody>
 <tr class="odd">
-<td>intero di <em>allineamento</em></td>
-<td>Imposta l'allineamento dei blocchi di dati rispetto all'inizio dei dati passati al dispositivo waveform-audio. Il file viene salvato in questo formato.</td>
+<td>alignment <em>integer</em></td>
+<td>Imposta l'allineamento dei blocchi di dati rispetto all'inizio dei dati passati al dispositivo audio waveform. Il file viene salvato in questo formato.</td>
 </tr>
 <tr class="even">
 <td>qualsiasi input</td>
@@ -280,16 +280,16 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel **p
 <td>Usare qualsiasi output che supporti il formato corrente durante la riproduzione. Questo è il valore predefinito.</td>
 </tr>
 <tr class="even">
-<td>assemblare record in <br/> assemblare record off <br/></td>
-<td>In modalità di assemblaggio, tutte le tracce vengono registrate come definito dal dispositivo. La maggior parte dei videoregistratori è in modalità di assemblaggio per impostazione predefinita.</td>
+<td>assemble record on <br/> assemble record off <br/></td>
+<td>In modalità di assemblaggio, tutte le tracce vengono registrate come definito dal dispositivo. La maggior parte delle vcr è in modalità assemble per impostazione predefinita.</td>
 </tr>
 <tr class="odd">
-<td>audio tutto disattivato <br/> audio all on <br/></td>
-<td>Disabilita o abilita l'output audio. I dispositivi di sovrapposizione video, il sequencer MCISEQ e il dispositivo audio con forma d'onda MCIWAVE non supportano questo flag.</td>
+<td>audio all off <br/> audio all on <br/></td>
+<td>Disabilita o abilita l'output audio. I dispositivi di sovrapposizione video, il sequencer MCISEQ e il dispositivo audio waveform MCIWAVE non supportano questo flag.</td>
 </tr>
 <tr class="even">
-<td>audio disattivato <br/> audio lasciato in <br/> audio subito spento <br/> audio a destra su <br/></td>
-<td>Disabilita o abilita l'output a sinistra o al canale audio destro. I dispositivi di sovrapposizione video, il sequencer MCISEQ e il dispositivo audio con forma d'onda MCIWAVE non supportano questo flag.</td>
+<td>audio disattivato <br/> audio left on <br/> audio right off <br/> audio a destra su <br/></td>
+<td>Disabilita o abilita l'output sul canale audio sinistro o destro. I dispositivi di sovrapposizione video, il sequencer MCISEQ e il dispositivo audio waveform MCIWAVE non supportano questo flag.</td>
 </tr>
 <tr class="odd">
 <td>bitspersample <em>bit_count</em></td>
@@ -394,7 +394,7 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel **p
 <td>Disabilita l'invio di messaggi MIDI. Questo comando chiude anche una porta MIDI.</td>
 </tr>
 <tr class="even">
-<td>Porta <em>port_number</em></td>
+<td>porta <em>port_number</em></td>
 <td>Imposta la porta MIDI che riceve i messaggi MIDI. Questo comando ha esito negativo se la porta che si sta tentando di aprire viene usata da un'altra applicazione.</td>
 </tr>
 <tr class="odd">
@@ -419,7 +419,7 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel **p
 </tr>
 <tr class="even">
 <td>file slave</td>
-<td>Imposta il sequencer MIDI per usare i dati del file come origine di sincronizzazione. Si tratta dell'impostazione predefinita.</td>
+<td>Imposta il sequencer MIDI per l'uso dei dati dei file come origine di sincronizzazione. Si tratta dell'impostazione predefinita.</td>
 </tr>
 <tr class="odd">
 <td>slave midi</td>
@@ -435,82 +435,82 @@ Nella tabella seguente sono elencati i flag che è possibile specificare nel **p
 </tr>
 <tr class="even">
 <td>fattore di velocità</td>
-<td>Imposta la velocità relativa della riproduzione di video e audio dall'area di lavoro. Il fattore è il rapporto tra la frequenza dei fotogrammi nominale e la frequenza dei fotogrammi desiderata, dove la frequenza dei fotogrammi nominali è designata come 1000. Una velocità di 500 è metà velocità normale, 2000 è il doppio della velocità normale e così via. Impostando la velocità su zero, il video viene riprodotto il più velocemente possibile senza eliminare fotogrammi e senza audio.</td>
+<td>Imposta la velocità relativa della riproduzione video e audio dall'area di lavoro. Fattore è il rapporto tra la frequenza fotogrammi nominale e la frequenza fotogrammi desiderata, in cui la frequenza fotogrammi nominale è designata come 1000. Una velocità di 500 è la metà della velocità normale, 2000 è due volte la velocità normale e così via. Se si imposta la velocità su zero, il video viene riprodotto il più velocemente possibile senza rilasciare fotogrammi e senza audio.</td>
 </tr>
 <tr class="odd">
 <td>formato di file <em>still</em></td>
-<td>Specifica il formato di file usato per i comandi di acquisizione.</td>
+<td>Specifica il formato di file utilizzato per i comandi di acquisizione.</td>
 </tr>
 <tr class="even">
 <td>tempo tempo_value</td>
-<td>Imposta il tempo della sequenza in base al formato di ora corrente. Per un file basato su PPQN, il tempo_value viene interpretato come picchi al minuto. Per un file basato su SMPTE, il tempo_value viene interpretato come frame al secondo.</td>
+<td>Imposta il tempo della sequenza in base al formato di ora corrente. Per un file basato su PPQN, la tempo_value viene interpretata come beat al minuto. Per un file basato su SMPTE, il tempo_value viene interpretato come frame al secondo.</td>
 </tr>
 <tr class="odd">
-<td>byte di formato ora</td>
+<td>byte in formato ora</td>
 <td>In un formato di file PCM, imposta il formato dell'ora su byte. Tutte le informazioni sulla posizione vengono specificate come byte dopo questo comando.</td>
 </tr>
 <tr class="even">
-<td>frame di formato ora</td>
-<td>Imposta il formato dell'ora su frame. Tutti i comandi che usano valori di posizione presupporranno frame. Quando il dispositivo viene aperto, la modalità predefinita è frame. Supportato da videodiscs con il formato CAV.</td>
+<td>fotogrammi in formato ora</td>
+<td>Imposta il formato dell'ora su fotogrammi. Tutti i comandi che usano valori di posizione presupporranno fotogrammi. Quando il dispositivo viene aperto, i frame sono la modalità predefinita. Supportato da videodiscs con il formato CAV.</td>
 </tr>
 <tr class="odd">
 <td>formato ora hms</td>
-<td>Imposta il formato dell'ora su ore, minuti e secondi. Tutti i comandi che usano valori di posizione presupporranno HMS. HMS è il formato predefinito per videodiscs CLV. Specificare un valore HMS come hh:mm:ss, dove hh è ore, mm è minuti e ss è secondi. È possibile omettere un campo se questo e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0 e 3:0:0 sono tutti modi validi per esprimere 3 ore. <br/></td>
+<td>Imposta il formato dell'ora su ore, minuti e secondi. Tutti i comandi che usano valori di posizione presupporranno HMS. HMS è il formato predefinito per videodiscs CLV. Specificare un valore HMS come hh:mm:ss, dove hh è ore, mm è minuti e ss è secondi. È possibile omettere un campo se e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0 e 3:0:0 sono tutti modi validi per esprimere 3 ore. <br/></td>
 </tr>
 <tr class="even">
-<td>formato dell'ora millisecondi</td>
-<td>Imposta il formato dell'ora su millisecondi. Tutti i comandi che usano valori di posizione presuppongono millisecondi. È possibile abbreviare i millisecondi &quot; come ms &quot; . Per i dispositivi Sequencer, il file di sequenza imposta il formato predefinito su PPQN o SMPTE. I dispositivi con sovrimpressione video non supportano questo flag.<br/></td>
+<td>millisecondi di formato dell'ora</td>
+<td>Imposta il formato dell'ora su millisecondi. Tutti i comandi che usano valori di posizione presupporranno millisecondi. È possibile abbreviare i millisecondi &quot; come ms &quot; . Per i dispositivi sequencer, il file di sequenza imposta il formato predefinito su PPQN o SMPTE. I dispositivi con sovrimpressione video non supportano questo flag.<br/></td>
 </tr>
 <tr class="odd">
-<td>formato ora msf</td>
-<td>Imposta il formato dell'ora su minuti, secondi e fotogrammi. Tutti i comandi che usano valori di posizione presupporranno MSF (il formato predefinito per l'audio CD). Specificare un valore MSF come mm:ss:ff, dove mm è minuti, ss è secondi e ff è frame. È possibile omettere un campo se questo e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0 e 3:0:0 sono modi validi per esprimere 3 minuti.<br/> I campi MSF hanno i valori massimi seguenti:<br/>
+<td>formato dell'ora msf</td>
+<td>Imposta il formato dell'ora su minuti, secondi e fotogrammi. Tutti i comandi che usano valori di posizione presupporranno MSF (il formato predefinito per l'audio CD). Specificare un valore MSF come mm:ss:ff, dove mm è minuti, ss è secondi e ff è frame. È possibile omettere un campo se e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0 e 3:0:0 sono modi validi per esprimere 3 minuti.<br/> I campi MSF hanno i valori massimi seguenti:<br/>
 <ul>
 <li>Minuti 99</li>
 <li>Secondi 59</li>
-<li>Frame 74</li>
+<li>Fotogrammi 74</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>esempi di formato ora</td>
-<td>Imposta il formato dell'ora su samples. Tutte le informazioni sulla posizione vengono specificate come esempi dopo questo comando.</td>
+<td>Imposta il formato dell'ora su samples. Tutte le informazioni sulla posizione vengono specificate come esempi che segue questo comando.</td>
 </tr>
 <tr class="odd">
-<td>time format smpte 24<br/> time format smpte 25<br/> time format smpte 30<br/></td>
-<td>Imposta il formato dell'ora su una frequenza dei fotogrammi SMPTE. Per le videoregistratori, imposta il formato dell'ora su hh:mm:ss:ff, dove i valori validi sono da 00:00:00:00 a 23:59:59:xx e xx è minore di uno dei fotogrammi al secondo come specificato dal numero 24, 25 o 30 come specificato nel flag . In caso di input, i due punti (:) sono necessari per separare i componenti. Le unità meno significative possono essere omesse se sono 00; Ad esempio, 02:00 corrisponde a 02:00:00:00. Tutti i comandi che usano valori di posizione presupporranno il formato SMPTE.<br/> Il file di sequenza imposta il formato predefinito su PPQN o SMPTE.<br/></td>
+<td>formato ora smpte 24<br/> formato ora smpte 25<br/> formato ora smpte 30<br/></td>
+<td>Imposta il formato dell'ora su una frequenza fotogrammi SMPTE. Per i videoregistratori, imposta il formato dell'ora su hh:mm:ss:ff, dove i valori validi sono da 00:00:00:00 a 23:59:59:xx e xx è minore dei fotogrammi al secondo, come specificato dal numero 24, 25 o 30 come specificato nel flag. In input i due punti (:) sono necessari per separare i componenti. Le unità meno significative possono essere omesse se sono 00. ad esempio, 02:00 è uguale a 02:00:00:00. Tutti i comandi che usano valori di posizione presupporranno il formato SMPTE.<br/> Il file di sequenza imposta il formato predefinito su PPQN o SMPTE.<br/></td>
 </tr>
 <tr class="even">
 <td>time format smpte 30 drop</td>
-<td>Imposta il formato dell'ora su SMPTE 30 drop frame rate. Per le videoregistratori, come SMPTE 30, ad eccezione del fatto che determinate posizioni del timecode vengono eliminate dal formato in modo che le posizioni del timecode registrate per ogni fotogramma (alla frequenza dei fotogrammi NTSC di 29,97 fps) corrispondano in tempo reale (a 30 fps). Le posizioni dei timecode eliminate sono le seguenti: due ogni minuto, al minuto, per le prime nove di ogni dieci minuti di contenuto registrato. Ad esempio, alle 01:04:59:29 la posizione successiva del timecode sarà 01:05:00:02, non 01:05:00:00. Tutti i comandi che usano valori di posizione presupporranno il formato SMPTE.<br/> Il file di sequenza imposta il formato predefinito su PPQN o SMPTE.<br/></td>
+<td>Imposta il formato dell'ora su SMPTE 30 drop frame rate. Per i videoregistratori, come SMPTE 30, ad eccezione del fatto che determinate posizioni del codice temporale vengono eliminate dal formato per avere le posizioni del codice temporale registrate per ogni fotogramma (alla frequenza dei fotogrammi NTSC di 29,97 fps) corrispondono in tempo reale (a 30 fps). Le posizioni del codice temporale eliminate sono le seguenti: due ogni minuto, al minuto, per i primi nove ogni dieci minuti di contenuto registrato. Ad esempio, alle 01:04:59:29, la posizione del codice temporale successiva sarà 01:05:00:02, non 01:05:00:00. Tutti i comandi che usano valori di posizione presupporranno il formato SMPTE.<br/> Il file di sequenza imposta il formato predefinito su PPQN o SMPTE.<br/></td>
 </tr>
 <tr class="odd">
-<td>puntatore del brano formato ora</td>
-<td>Imposta il formato dell'ora sul puntatore del brano (sedicesima nota). Tutti i comandi che usano valori di posizione presupporranno unità puntatore del brano. Questo flag è valido solo per una sequenza di tipo di divisione PPQN.</td>
+<td>puntatore del brano in formato ora</td>
+<td>Imposta il formato dell'ora sul puntatore del brano (sedicesima nota). Tutti i comandi che usano valori di posizione presupporranno unità puntatore del brano. Questo flag è valido solo per una sequenza di tipo PPQN di divisione.</td>
 </tr>
 <tr class="even">
-<td>time format tmsf</td>
-<td>Imposta il formato dell'ora su tracce, minuti, secondi e fotogrammi. Tutti i comandi che usano valori di posizione presupporranno TMSF. Specificare un valore TMSF come tt:mm:ss:ff, dove tt è traccia, mm è minuti, ss è secondi e ff è frame. È possibile omettere un campo se questo e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0, 3:0:0 e 3:0:0:0 sono tutti modi validi per esprimere la traccia 3. <br/> I campi TMSF hanno i valori massimi seguenti:<br/>
+<td>formato ora tmsf</td>
+<td>Imposta il formato dell'ora su tracce, minuti, secondi e fotogrammi. Tutti i comandi che usano valori di posizione presupporranno TMSF. Specificare un valore TMSF come tt:mm:ss:ff, dove tt è tracks, mm è minutes, ss è secondi e ff è frames. È possibile omettere un campo se e tutti i campi seguenti sono pari a zero. Ad esempio, 3, 3:0, 3:0:0 e 3:0:0:0 sono tutti modi validi per esprimere la traccia 3. <br/> I campi TMSF hanno i valori massimi seguenti:<br/>
 <ul>
 <li>Tracce 99</li>
 <li>Minuti 90</li>
 <li>Secondi 59</li>
-<li>Frame 74</li>
+<li>Fotogrammi 74</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>time format track</td>
-<td>Imposta il formato di posizione su tracks. Tutti i comandi che usano valori di posizione presupporranno tracce.</td>
+<td>traccia del formato dell'ora</td>
+<td>Imposta il formato della posizione sulle tracce. Tutti i comandi che usano valori di posizione presupporranno tracce.</td>
 </tr>
 <tr class="even">
 <td>contatore della modalità tempo</td>
-<td>Imposta la modalità di informazioni sulla posizione per l'utilizzo dei contatori vcr.</td>
+<td>Imposta la modalità position-information per l'uso dei contatori vcr.</td>
 </tr>
 <tr class="odd">
-<td>rilevamento della modalità ora</td>
-<td>Imposta la modalità di informazioni sulla posizione in base al rilevamento delle informazioni sul timecode sul nastro. Se vengono rilevate informazioni sul timecode, il tipo di ora viene impostato su timecode ; in caso contrario, il tipo di ora &quot; &quot; viene impostato sul &quot; contatore &quot; . &quot;Il &quot; rilevamento è una modalità speciale. Ogni volta che il driver viene aperto, viene inserito un nuovo nastro o viene eseguito il comando della modalità ora, il driver controlla la modalità ora corrente disponibile sul nastro e imposta il tipo di ora su timecode o &quot; &quot; &quot; &quot; &quot; &quot; &quot; contatore &quot; . Una volta impostato il tipo di tempo, il driver non lo modifica fino a quando non si verifica di nuovo una delle &quot; &quot; condizioni precedenti.<br/></td>
+<td>rilevamento della modalità temporale</td>
+<td>Imposta la modalità di informazioni sulla posizione in base al rilevamento delle informazioni sul codice temporale sul nastro. Se vengono rilevate informazioni sul codice temporale, il tipo di ora viene impostato su timecode ; in caso contrario, il tipo di ora &quot; viene impostato su counter &quot; &quot; &quot; . &quot;Il &quot; rilevamento è una modalità speciale. Ogni volta che il driver viene aperto, viene inserito un nuovo nastro o viene eseguito il comando in modalità ora, il driver controlla la modalità ora corrente disponibile sul nastro e imposta il tipo di ora sul codice temporale o sul &quot; &quot; &quot; &quot; &quot; &quot; &quot; contatore &quot; . Una volta impostato il tipo di ora, il driver non lo modifica fino a quando non si verifica di nuovo una &quot; &quot; delle condizioni precedenti.<br/></td>
 </tr>
 <tr class="even">
 <td>time mode timecode</td>
-<td>Imposta la modalità di informazioni sulla posizione per &quot; l'utilizzo delle informazioni sul &quot; timecode sul nastro.</td>
+<td>Imposta la modalità di informazioni sulla posizione per &quot; l'uso delle &quot; informazioni sul codice temporale sul nastro.</td>
 </tr>
 <tr class="odd">
 <td>tracking plus <br/> rilevamento meno <br/> reimpostazione del rilevamento <br/></td>

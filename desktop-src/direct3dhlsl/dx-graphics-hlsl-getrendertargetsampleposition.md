@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c31bc829f8990517ddbea8be7c25eead413ab666
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 8a406fcbd023d0688baf51cabbfea53438f3d58a6fba4d1fc7d1bf8d33077262
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118514335"
 ---
 # <a name="getrendertargetsampleposition"></a>GetRenderTargetSamplePosition
 
@@ -58,16 +58,16 @@ Questa funzione è supportata nei modelli di shader seguenti.
 
 | Modello di shader                                                        | Supportato |
 |---------------------------------------------------------------------|-----------|
-| [Modello shader 4 e](dx-graphics-hlsl-sm4.md) modelli di shader superiori | yes       |
-| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | No        |
-| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | No        |
-| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)           | No        |
+| [Modello shader 4 e](dx-graphics-hlsl-sm4.md) modelli di shader superiori | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md)           | no        |
 
 
 
  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 

@@ -1,33 +1,33 @@
 ---
 title: Strutture della finestra di dialogo Selezione oggetti
-description: Le strutture seguenti vengono utilizzate con le finestre di dialogo di selezione oggetti.
+description: Le strutture seguenti vengono usate con le finestre di dialogo di selezione oggetti.
 ms.assetid: 69bf9c21-46ef-4ea1-aa29-d05ba69fd5c8
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c47e914ff0d870cc5fd9bb4933f1da0cee89ca65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 919c70427f717b526d9f56989cfbe218903562de95faa1c93cc15ce3327d77fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025569"
 ---
 # <a name="object-picker-dialog-box-structures"></a>Strutture della finestra di dialogo Selezione oggetti
 
-Con le finestre di dialogo di selezione oggetti vengono utilizzate le strutture seguenti:
+Le strutture seguenti vengono usate con le finestre di dialogo di selezione oggetti:
 
--   [**\_selezione DS**](/windows/desktop/api/Objsel/ns-objsel-ds_selection)
--   [**\_elenco di selezione DS \_**](/windows/desktop/api/Objsel/ns-objsel-ds_selection_list)
--   [**\_flag di filtro DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_filter_flags)
--   [**\_informazioni init \_ DSOP**](/windows/desktop/api/Objsel/ns-objsel-dsop_init_info)
--   [**\_ \_ informazioni init dell'ambito DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
--   [**\_flag di filtro di livello elevato DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
+-   [**SELEZIONE \_ DS**](/windows/desktop/api/Objsel/ns-objsel-ds_selection)
+-   [**ELENCO DI SELEZIONE DS \_ \_**](/windows/desktop/api/Objsel/ns-objsel-ds_selection_list)
+-   [**FLAG DI FILTRO DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_filter_flags)
+-   [**INFORMAZIONI \_ INIT DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_init_info)
+-   [**INFORMAZIONI \_ INIT AMBITO DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
+-   [**FLAG DI FILTRO \_ DI LIVELLO \_ SUPERIORE DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**\_elenco di \_ \_ selezione DS DSOP CFSTR \_**](cfstr-dsop-ds-selection-list.md)
+[**ELENCO DI \_ SELEZIONE DSOP \_ DS \_ \_ CFSTR**](cfstr-dsop-ds-selection-list.md)
 </dt> <dt>
 
 [**IDsObjectPicker::InvokeDialog**](/windows/desktop/api/Objsel/nf-objsel-idsobjectpicker-invokedialog)
@@ -36,9 +36,9 @@ Con le finestre di dialogo di selezione oggetti vengono utilizzate le strutture 
 [Selezione oggetti directory](directory-object-picker.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

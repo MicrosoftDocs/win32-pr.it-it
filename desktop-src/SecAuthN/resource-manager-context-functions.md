@@ -13,7 +13,7 @@ ms.locfileid: "118919380"
 ---
 # <a name="resource-manager-context-functions"></a>Resource Manager di contesto
 
-Le funzioni seguenti stabiliscono e rilasciano il contesto di [*Resource Manager*](../secgloss/r-gly.md) usato dalle funzioni di gestione di database e query di database.
+Le funzioni seguenti stabiliscono e rilasciano il contesto [*di Resource Manager*](../secgloss/r-gly.md) usato dalle funzioni di gestione di database e query di database.
 
 
 

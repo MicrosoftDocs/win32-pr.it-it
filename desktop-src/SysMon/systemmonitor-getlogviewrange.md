@@ -65,7 +65,7 @@ Questo metodo non restituisce valori.
 
 SYSMON recupera i valori dei contatori dai file di log che rientrano nelle date di inizio e di arresto, in modo inclusivo.
 
-L'uso di questo metodo è identico all'accesso [**alle proprietà SystemMonitor.LogViewStart**](systemmonitor-logviewstart.md) [**e SystemMonitor.LogViewStop.**](systemmonitor-logviewstop.md)
+L'uso di questo metodo è uguale all'accesso [**alle proprietà SystemMonitor.LogViewStart**](systemmonitor-logviewstart.md) [**e SystemMonitor.LogViewStop.**](systemmonitor-logviewstop.md)
 
 ## <a name="requirements"></a>Requisiti
 

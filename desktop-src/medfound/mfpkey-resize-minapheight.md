@@ -1,17 +1,17 @@
 ---
 description: Specifica l'altezza dell'apertura minima dello schermo, in pixel.
 ms.assetid: dddae10f-3ed2-4444-af5b-f2cf46c52e7c
-title: Proprietà MFPKEY_RESIZE_MINAPHEIGHT (Wmcodecdsp. h)
+title: MFPKEY_RESIZE_MINAPHEIGHT proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f2f7ddafc73562a24b1e68a0969ac0a545c0a61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fb061fc1b1ba2a041f1689e8129eae7cbda4e45ff84407781ef4b693e33b1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973430"
 ---
-# <a name="mfpkey_resize_minapheight-property"></a>MFPKEY \_ Resize- \_ Proprietà MINAPHEIGHT
+# <a name="mfpkey_resize_minapheight-property"></a>Proprietà MFPKEY \_ RESIZE \_ MINAPHEIGHT
 
 Specifica l'altezza dell'apertura minima dello schermo, in pixel.
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Si applica a
 
--   [Ridimensionamento video DSP](videoresizer.md)
+-   [DSP di Ridimensionamento video](videoresizer.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

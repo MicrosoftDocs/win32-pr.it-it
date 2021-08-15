@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che contiene informazioni sulle linee orizzontali utilizzate dalla cancelleria in una nota Journal.
+description: Definisce il tipo che contiene informazioni sulle linee orizzontali utilizzate dagli elementi decorativi in una nota journal.
 ms.assetid: a2ef99fe-c7c4-4bce-80f5-509adb3917bb
 title: Tipo complesso HorizontalType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: d068bbc4ae6ee92c609f6de04be31c679592378a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4c7fdc5a2d88d8e8da5b0d53a3d38353573e0ce79a47688687991f33702caaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709341"
 ---
 # <a name="horizontaltype-complex-type"></a>Tipo complesso HorizontalType
 
-Definisce il tipo che contiene informazioni sulle linee orizzontali utilizzate dalla cancelleria in una nota Journal.
+Definisce il tipo che contiene informazioni sulle linee orizzontali utilizzate dagli elementi decorativi in una nota journal.
 
 ``` syntax
 <xs:complexType name="HorizontalType" />
@@ -33,7 +33,7 @@ Definisce il tipo che contiene informazioni sulle linee orizzontali utilizzate d
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

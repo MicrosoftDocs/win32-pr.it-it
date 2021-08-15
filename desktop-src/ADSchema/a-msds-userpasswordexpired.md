@@ -4,7 +4,7 @@ description: Indica se la password per l'account a cui fa riferimento questo att
 ms.assetid: cab4a2e8-b440-45d2-8da8-9f020ffee08c
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-User-Password-Expired
+- Ms-DS-User-Password-Expired attribute AD Schema
 - Schema AD dell'attributo msDS-UserPasswordExpired
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Indica se la password per l'account a cui fa riferimento questo attributo è sca
 | CN                | ms-DS-User-Password-Expired          |
 | Ldap-Display-Name | msDS-UserPasswordExpired             |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1858              |
 | System-Id-Guid    | 565c7ab5-e13e-47f6-abb5-de741806f125 |
@@ -53,7 +53,7 @@ Indica se la password per l'account a cui fa riferimento questo attributo è sca
 | ID collegamento                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Is-Single-Valued       | Vero                                                              |
+| A valore singolo       | Vero                                                              |
 | Indicizzato             | Falso                                                             |
 | Nel catalogo globale      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
@@ -61,7 +61,7 @@ Indica se la password per l'account a cui fa riferimento questo attributo è sca
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classi usate in        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
+| Classi usate in        | [**Ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 

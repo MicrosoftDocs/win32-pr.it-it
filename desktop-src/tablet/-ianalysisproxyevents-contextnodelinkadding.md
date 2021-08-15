@@ -62,7 +62,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 
 Usare questo evento quando l'applicazione mantiene la propria struttura di dati, sincronizzata con quella di [**IInkAnalyzer.**](iinkanalyzer.md) Questo evento si verifica durante la fase di riconciliazione dell'analisi dell'input penna o in risposta a un metodo dell'analizzatore input penna che aggiunge un nuovo [**IContextLink**](icontextlink.md) a [**un oggetto IContextNode**](icontextnode.md).
 
-Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con](data-proxy-with-ink-analysis.md)Analisi input penna .
+Per altre informazioni sulla sincronizzazione dei dati dell'applicazione con [**IInkAnalyzer,**](iinkanalyzer.md)vedere [Proxy dati con l'analisi dell'input penna](data-proxy-with-ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 

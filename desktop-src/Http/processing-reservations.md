@@ -13,14 +13,14 @@ ms.locfileid: "118393763"
 ---
 # <a name="processing-reservations"></a>Elaborazione delle prenotazioni
 
-Le prenotazioni per parti dello spazio dei nomi URL vengono effettuate dall'amministratore di sistema e inserite nell'archivio prenotazioni permanente. La radice dello spazio dei nomi URL per HTTP è di proprietà dell'amministratore di sistema. Per tutti i valori di host e porta, le due prenotazioni seguenti vengono sempre considerate nella radice dello spazio dei **nomi relativeUri.**
+Le prenotazioni per parti dello spazio dei nomi URL vengono effettuate dall'amministratore di sistema e inserite nell'archivio prenotazioni permanente. La radice dello spazio dei nomi URL per HTTP è di proprietà dell'amministratore di sistema. Per tutti i valori di host e porta, le due prenotazioni seguenti vengono sempre presupposte nella radice dello spazio dei **nomi relativeUri.**
 
 
 
 | Spazio dei nomi riservato                 | Riservato per              |
 |------------------------------------|---------------------------|
-| https:// <host> :<port>/  | Amministratore del sistema locale |
-| https:// <host> :<port>/ | Amministratore del sistema locale |
+| https:// <host> :<port>/  | Amministratore localsystem |
+| https:// <host> :<port>/ | Amministratore localsystem |
 
 
 

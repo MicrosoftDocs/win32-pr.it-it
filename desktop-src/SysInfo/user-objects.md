@@ -1,5 +1,5 @@
 ---
-description: Gli oggetti dell'interfaccia utente supportano un solo handle per oggetto. I processi non possono ereditare o duplicare handle per gli oggetti utente. I processi in una sessione non possono fare riferimento a un handle utente in un'altra sessione.
+description: Gli oggetti dell'interfaccia utente supportano un solo handle per oggetto. I processi non possono ereditare o duplicare gli handle per gli oggetti utente. I processi in una sessione non possono fare riferimento a un handle utente in un'altra sessione.
 ms.assetid: 07edc049-26d9-4f42-a5e7-e1f4c8435a6c
 title: Oggetti utente
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118884328"
 ---
 # <a name="user-objects"></a>Oggetti utente
 
-Gli oggetti dell'interfaccia utente supportano un solo handle per oggetto. I processi non possono ereditare o duplicare handle per gli oggetti utente. I processi in una sessione non possono fare riferimento a un handle utente in un'altra sessione.
+Gli oggetti dell'interfaccia utente supportano un solo handle per oggetto. I processi non possono ereditare o duplicare gli handle per gli oggetti utente. I processi in una sessione non possono fare riferimento a un handle utente in un'altra sessione.
 
 Esiste un limite teorico di 65.536 handle utente per sessione. Tuttavia, il numero massimo di handle utente che possono essere aperti per sessione è in genere inferiore, poiché è interessato dalla memoria disponibile. Esiste anche un limite predefinito per processo di handle utente. Per modificare questo limite, impostare il valore del Registro di sistema seguente:
 
@@ -21,9 +21,9 @@ Esiste un limite teorico di 65.536 handle utente per sessione. Tuttavia, il nume
 
 Questo valore può essere impostato su un numero compreso tra 200 e 18.000.
 
-## <a name="handles-to-user-objects"></a>Handle per gli oggetti utente
+## <a name="handles-to-user-objects"></a>Handle per oggetti utente
 
-Gli handle agli oggetti utente sono pubblici a tutti i processi. Ciò significa che qualsiasi processo può usare l'handle dell'oggetto utente, purché abbia accesso di sicurezza all'oggetto.
+Gli handle per gli oggetti utente sono pubblici per tutti i processi. In altre informazioni, qualsiasi processo può usare l'handle dell'oggetto utente, a condizione che il processo abbia accesso di sicurezza all'oggetto.
 
 Nella figura seguente un'applicazione crea un oggetto finestra. La [**funzione CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) crea l'oggetto finestra e restituisce un handle di oggetto.
 
@@ -31,13 +31,13 @@ Nella figura seguente un'applicazione crea un oggetto finestra. La [**funzione C
 
 Dopo aver creato l'oggetto finestra, l'applicazione può usare l'handle di finestra per visualizzare o modificare la finestra. L'handle rimane valido fino a quando l'oggetto finestra non viene eliminato.
 
-Nella figura seguente l'applicazione elimina l'oggetto finestra. La [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) rimuove l'oggetto finestra dalla memoria, invalidando così l'handle di finestra.
+Nella figura successiva l'applicazione elimina l'oggetto finestra. La [**funzione DestroyWindow**](/windows/win32/api/winuser/nf-winuser-destroywindow) rimuove l'oggetto finestra dalla memoria, che invalida l'handle della finestra.
 
 ![eliminazione di un oggetto finestra](images/cshob-02.png)
 
 ## <a name="managing-user-objects"></a>Gestione degli oggetti utente
 
-La tabella seguente elenca gli oggetti utente, insieme alle funzioni di creazione e di eliminazione di ogni oggetto. Le funzioni di creazione creano l'oggetto e un handle di oggetto o restituiscono semplicemente l'handle di oggetto esistente. Le funzioni destroyer rimuovono l'oggetto dalla memoria, invalidando l'handle di oggetto.
+Nella tabella seguente sono elencati gli oggetti utente, insieme alle funzioni creator e destroyer di ogni oggetto. Le funzioni creator creano l'oggetto e un handle di oggetto o semplicemente restituiscono l'handle di oggetto esistente. Le funzioni destroyer rimuovono l'oggetto dalla memoria, che invalida l'handle dell'oggetto.
 
 
 

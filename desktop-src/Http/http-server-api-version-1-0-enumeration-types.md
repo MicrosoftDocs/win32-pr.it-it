@@ -1,25 +1,25 @@
 ---
-title: Tipi di enumerazione versione 1,0 dell'API server HTTP
+title: Tipi di enumerazione dell'API server HTTP versione 1.0
 ms.assetid: 8f2f2361-3251-4e2a-9cac-8f678c8f5007
-description: "Altre informazioni su: tipi di enumerazione versione 1,0 dell'API server HTTP"
+description: "Altre informazioni su: Tipi di enumerazione dell'API server HTTP versione 1.0"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d4b2be03533e50e0337070f0e5cc9eb8825013b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1195e3798a2cf1f9d77e49b89c7823a5bd9758dccdd612b850ec39b35b56a4bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394352"
 ---
-# <a name="http-server-api-version-10-enumeration-types"></a>Tipi di enumerazione versione 1,0 dell'API server HTTP
+# <a name="http-server-api-version-10-enumeration-types"></a>Tipi di enumerazione dell'API server HTTP versione 1.0
 
 Di seguito sono riportati i tipi di enumerazione HTTP:
 
--   [**\_tipo di \_ criteri di cache HTTP \_**](/windows/desktop/api/Http/ne-http-http_cache_policy_type)
--   [**\_ID intestazione \_ http**](/windows/desktop/api/Http/ne-http-http_header_id)
--   [**\_ \_ ID configurazione servizio \_ http**](/windows/desktop/api/Http/ne-http-http_service_config_id)
--   [**\_tipo di \_ \_ query configurazione servizio http \_**](/windows/desktop/api/Http/ne-http-http_service_config_query_type)
--   [**\_verbo http**](/windows/desktop/api/Http/ne-http-http_verb)
+-   [**TIPO \_ DI CRITERI DI CACHE \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_cache_policy_type)
+-   [**ID \_ INTESTAZIONE \_ HTTP**](/windows/desktop/api/Http/ne-http-http_header_id)
+-   [**\_ID CONFIGURAZIONE \_ SERVIZIO HTTP \_**](/windows/desktop/api/Http/ne-http-http_service_config_id)
+-   [**TIPO \_ DI QUERY DI CONFIGURAZIONE DEL SERVIZIO \_ \_ \_ HTTP**](/windows/desktop/api/Http/ne-http-http_service_config_query_type)
+-   [**VERBO \_ HTTP**](/windows/desktop/api/Http/ne-http-http_verb)
 
  
 

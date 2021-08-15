@@ -1,10 +1,10 @@
 ---
-title: Default-local-Policy-Object-attributo
-description: Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto host.
+title: Attributo Default-Local-Policy-Object
+description: Riferimento a un oggetto Policy che definisce i criteri locali per l'oggetto host.
 ms.assetid: baed2be8-db3e-458f-a6da-2fa522b95d29
 ms.tgt_platform: multiple
 keywords:
-- Default-local-Policy-Object attributo AD schema
+- Schema AD dell'attributo Default-Local-Policy-Object
 - Schema AD dell'attributo defaultLocalPolicyObject
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c2bfc4797dbda7aff5e2fadec16de8b87854824
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a192cdc16c7c0c9099e352d5f9a66152c077ee867572528b404b2584f54eeb6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961750"
 ---
-# <a name="default-local-policy-object-attribute"></a>Default-local-Policy-Object-attributo
+# <a name="default-local-policy-object-attribute"></a>Attributo Default-Local-Policy-Object
 
-Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto host.
+Riferimento a un oggetto Policy che definisce i criteri locali per l'oggetto host.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
-| CN                | Default-local-Policy-Object             |
-| LDAP-Display-Name | defaultLocalPolicyObject                |
+| CN                | Default-Local-Policy-Object             |
+| Ldap-Display-Name | defaultLocalPolicyObject                |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.57                   |
-| System-ID-GUID    | bf96799f-0de6-11d0-a285-00aa003049e2    |
+| System-Id-Guid    | bf96799f-0de6-11d0-a285-00aa003049e2    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| A valore singolo       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| A valore singolo       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| A valore singolo       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Riferimento a un oggetto criteri che definisce i criteri locali per l'oggetto ho
 | ID collegamento                | \-                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                     |
-| È a valore singolo       | Vero                                                                                                                                      |
+| Is-Single-Valued       | Vero                                                                                                                                      |
 | Indicizzato             | Falso                                                                                                                                     |
 | Nel catalogo globale      | Falso                                                                                                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

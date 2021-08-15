@@ -1,6 +1,6 @@
 ---
 title: Attributo FRS-Version-GUID
-description: Se presente, la modifica di questo valore indica che è stata apportata una modifica alla configurazione del set di repliche.
+description: Se presente, la modifica di questo valore indica che è stata apportata una modifica alla configurazione in questo set di repliche.
 ms.assetid: 27cd68c5-a8aa-4c14-bf1d-0eb7c4d9cca5
 ms.tgt_platform: multiple
 keywords:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f12cfadd1086fbb8ee79bafb8d0ee5f947ff503e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 701fb9da7a876a39858cb6d38383f58d8ddc1231940df2c2fb922e0e05e00520
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961430"
 ---
 # <a name="frs-version-guid-attribute"></a>Attributo FRS-Version-GUID
 
-Se presente, la modifica di questo valore indica che è stata apportata una modifica alla configurazione del set di repliche.
+Se presente, la modifica di questo valore indica che è stata apportata una modifica alla configurazione in questo set di repliche.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | FRS-Version-GUID                                      |
-| LDAP-Display-Name | fRSVersionGUID                                        |
+| Ldap-Display-Name | fRSVersionGUID                                        |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.43                                 |
-| System-ID-GUID    | 26d9736c-6070-11d1-a9c6-0000f80367c1                  |
+| System-Id-Guid    | 26d9736c-6070-11d1-a9c6-0000f80367c1                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Se presente, la modifica di questo valore indica che è stata apportata una modi
 | ID collegamento                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| È a valore singolo       | Vero                                                      |
+| A valore singolo       | Vero                                                      |
 | Indicizzato             | Falso                                                     |
 | Nel catalogo globale      | Falso                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | 16                                                        |
 | Range-Upper            | 16                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000010                                                |
-| Classi utilizzate in        | [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> |
+| Classi usate in        | [**Set di repliche NTFRS**](c-ntfrsreplicaset.md)<br/> |
 
 
 

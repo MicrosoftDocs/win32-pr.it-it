@@ -23,7 +23,7 @@ ms.locfileid: "118959530"
 ---
 # <a name="service-instance-class"></a>Service-Instance classe
 
-Oggetto punto di connessione utilizzato dal servizio dei nomi RnR (Windows Sockets Registration and Resolution), a cui si accede tramite le API WSA Windows \* Sockets.
+Oggetto punto di connessione usato dal servizio dei nomi RnR (Windows Sockets Registration and Resolution), a cui si accede tramite le API WSA Windows \* Sockets.
 
 
 
@@ -69,7 +69,7 @@ Oggetto punto di connessione utilizzato dal servizio dei nomi RnR (Windows Socke
 
 
 
-## <a name="windows-2000-server-attributes"></a>attributi Windows server di Windows 2000
+## <a name="windows-2000-server-attributes"></a>attributi del server Windows 2000
 
 Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 
@@ -101,8 +101,8 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | [**Tipo di istanza**](a-instancetype.md)                                   | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Is-Member-Of-DL**](a-memberof.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare di privilegi is**](a-isprivilegeholder.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Membro di DL**](a-memberof.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                            | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                         | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -117,12 +117,12 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | [**Obj-Dist-Name**](a-distinguishedname.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Categoria di oggetti**](a-objectcategory.md)                               | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Classe object**](a-objectclass.md)                                     | Vero      | [**In alto**](c-top.md)<br/>                                                          |
-| [**Object-Guid**](a-objectguid.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Guid oggetto**](a-objectguid.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Versione oggetto**](a-objectversion.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md) | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Possibili inevasi**](a-possibleinferiors.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -153,7 +153,7 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | [**Quando viene modificato**](a-whenchanged.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene creato**](a-whencreated.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Winsock-Addresses**](a-winsockaddresses.md)                           | Falso     | **Istanza del servizio**                                                                     |
-| [**WWW-Home-Page**](a-wwwhomepage.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 
 
@@ -176,7 +176,7 @@ Questa classe contiene gli attributi seguenti per Windows 2000 Server:
 | Possibili superiori          | [**Contenitore**](c-container.md)                                                             |
 | Classi ausiliarie           | \-                                                                                           |
 | NT-Security-Descriptor      | O:BAG:BAD:S:                                                                                 |
-| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;;; Au) |
+| Descrittore di sicurezza predefinito | D:(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY)(A;; RPLCLORC;; Au) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
@@ -189,18 +189,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                                                                             |
 |-----------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------|
-| [**Descrizione dell'amministratore**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Classi figlio consentite**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Nome comune**](a-cn.md)                                                 | Vero      | [**Punto di connessione**](c-connectionpoint.md)<br/> [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Nome visualizzato**](a-displayname.md)                                       | Vero      | **Service-Instance** [ **Top**](c-top.md)<br/>                                     |
+| [**Nome visualizzato**](a-displayname.md)                                       | Vero      | **Inizio dell'istanza del** [ **servizio**](c-top.md)<br/>                                     |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -213,8 +213,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare dei privilegi**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare di privilegi is**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                              | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                           | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -242,7 +242,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                    | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Categoria di oggetti**](a-objectcategory.md)                                 | Vero      | [**In alto**](c-top.md)<br/>                                                          |
@@ -252,7 +252,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Possibili inevasi**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Possibili eserezioni**](a-possibleinferiors.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -265,25 +265,25 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003:
 | [**Revisione**](a-revision.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ID classe di servizio**](a-serviceclassid.md)                                | Vero      | **Istanza del servizio**                                                                     |
+| [**ID classe servizio**](a-serviceclassid.md)                                | Vero      | **Istanza del servizio**                                                                     |
 | [**Service-Instance-Version**](a-serviceinstanceversion.md)                | Falso     | **Istanza del servizio**                                                                     |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Classe structural-object**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Sottori ref**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Oggetto sito -BL**](a-siteobjectbl.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Riferimenti secondari**](a-subrefs.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Flag di sistema**](a-systemflags.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Modifica di USN**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**USN -Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Quando creato**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Indirizzi Winsock**](a-winsockaddresses.md)                             | Falso     | **Istanza del servizio**                                                                     |
+| [**Quando viene creato**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Winsock-Addresses**](a-winsockaddresses.md)                             | Falso     | **Istanza del servizio**                                                                     |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 
@@ -320,18 +320,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 
 | Attributo                                                                   | Obbligatorio | Derivato da                                                                             |
 |-----------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------|
-| [**Descrizione dell'amministratore**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Attributi consentiti**](a-allowedattributes.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Classi figlio consentite**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Classi consentite-figlio**](a-allowedchildclasses.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Nome comune**](a-cn.md)                                                 | Vero      | [**Punto di connessione**](c-connectionpoint.md)<br/> [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Descrizione**](a-description.md)                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Nome visualizzato**](a-displayname.md)                                       | Vero      | **Service-Instance** [ **Top**](c-top.md)<br/>                                     |
+| [**Nome visualizzato**](a-displayname.md)                                       | Vero      | **Inizio dell'istanza del** [ **servizio**](c-top.md)<br/>                                     |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -344,8 +344,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 | [**Tipo di istanza**](a-instancetype.md)                                     | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Is-Member-Of-DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare di privilegi is**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Membro di DL**](a-memberof.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                              | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                           | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -410,13 +410,13 @@ Questa classe contiene gli attributi seguenti per Windows Server 2003 R2:
 | [**USN modificato**](a-usnchanged.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Creato da USN**](a-usncreated.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**USN intersito**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**USN -Intersite**](a-usnintersite.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Oggetti noti**](a-wellknownobjects.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene modificato**](a-whenchanged.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Quando creato**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Creazione in data e ora**](a-whencreated.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Indirizzi Winsock**](a-winsockaddresses.md)                             | Falso     | **Istanza del servizio**                                                                     |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -463,9 +463,9 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Nome comune**](a-cn.md)                                                    | Vero      | [**Punto di connessione**](c-connectionpoint.md)<br/> [**In alto**](c-top.md)<br/> |
-| [**Creazione timestamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Descrizione**](a-description.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Nome visualizzato**](a-displayname.md)                                          | Vero      | **Service-Instance** [ **Top**](c-top.md)<br/>                                     |
+| [**Nome visualizzato**](a-displayname.md)                                          | Vero      | **Inizio dell'istanza del** [ **servizio**](c-top.md)<br/>                                     |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -478,8 +478,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Tipo di istanza**](a-instancetype.md)                                        | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Membro di DL**](a-memberof.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare dei privilegi**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Is-Member-Of-DL**](a-memberof.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                                 | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                              | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -494,7 +494,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -504,7 +504,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ms-DS-NC-Type**](a-msds-nctype.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Ms-DS-NC-Type**](a-msds-nctype.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -513,7 +513,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Impostazioni**](a-msds-settings.md)                                      | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -526,7 +526,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Categoria di oggetti**](a-objectcategory.md)                                    | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Classe object**](a-objectclass.md)                                          | Vero      | [**In alto**](c-top.md)<br/>                                                          |
-| [**Object-Guid**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Guid oggetto**](a-objectguid.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Versione oggetto**](a-objectversion.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -562,8 +562,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008:
 | [**Oggetti noti**](a-wellknownobjects.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene modificato**](a-whenchanged.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene creato**](a-whencreated.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Winsock-Addresses**](a-winsockaddresses.md)                                | Falso     | **Istanza del servizio**                                                                     |
-| [**WWW-Home-Page**](a-wwwhomepage.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Indirizzi Winsock**](a-winsockaddresses.md)                                | Falso     | **Istanza del servizio**                                                                     |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 
 
@@ -599,18 +599,18 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 
 | Attributo                                                                        | Obbligatorio | Derivato da                                                                             |
 |----------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Descrizione dell'amministratore**](a-admindescription.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Attributi consentiti**](a-allowedattributes.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Classi consentite-figlio**](a-allowedchildclasses.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Classi figlio consentite**](a-allowedchildclasses.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Testa di ponte-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Nome comune**](a-cn.md)                                                      | Vero      | [**Punto di connessione**](c-connectionpoint.md)<br/> [**In alto**](c-top.md)<br/> |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Creazione timestamp**](a-createtimestamp.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Descrizione**](a-description.md)                                             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Nome visualizzato**](a-displayname.md)                                            | Vero      | **Inizio dell'istanza del** [ **servizio**](c-top.md)<br/>                                     |
+| [**Nome visualizzato**](a-displayname.md)                                            | Vero      | **Service-Instance** [ **Top**](c-top.md)<br/>                                     |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Firma DSA**](a-dsasignature.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -623,9 +623,9 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**Tipo di istanza**](a-instancetype.md)                                          | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Membro di DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare dei privilegi**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Viene riciclato**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Is-Member-Of-DL**](a-memberof.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare del privilegio Is**](a-isprivilegeholder.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Is-Recycled**](a-isrecycled.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                                   | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                                | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -642,7 +642,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)             | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -673,7 +673,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                         | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Categoria di oggetti**](a-objectcategory.md)                                      | Vero      | [**In alto**](c-top.md)<br/>                                                          |
@@ -696,25 +696,25 @@ Questa classe contiene gli attributi seguenti per Windows Server 2008 R2:
 | [**Revisione**](a-revision.md)                                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ID classe servizio**](a-serviceclassid.md)                                     | Vero      | **Istanza del servizio**                                                                     |
+| [**ID classe di servizio**](a-serviceclassid.md)                                     | Vero      | **Istanza del servizio**                                                                     |
 | [**Service-Instance-Version**](a-serviceinstanceversion.md)                     | Falso     | **Istanza del servizio**                                                                     |
 | [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Oggetto sito -BL**](a-siteobjectbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Structural-Object-Class**](a-structuralobjectclass.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Riferimenti secondari**](a-subrefs.md)                                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Site-Object-BL**](a-siteobjectbl.md)                                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Classe structural-object**](a-structuralobjectclass.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Sottori ref**](a-subrefs.md)                                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Flag di sistema**](a-systemflags.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**USN modificato**](a-usnchanged.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Modifica di USN**](a-usnchanged.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Creato da USN**](a-usncreated.md)                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**USN intersito**](a-usnintersite.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**USN-Intersite**](a-usnintersite.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**USN-Source**](a-usnsource.md)                                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Oggetti noti**](a-wellknownobjects.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene modificato**](a-whenchanged.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Quando creato**](a-whencreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Indirizzi Winsock**](a-winsockaddresses.md)                                  | Falso     | **Istanza del servizio**                                                                     |
+| [**Quando viene creato**](a-whencreated.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Winsock-Addresses**](a-winsockaddresses.md)                                  | Falso     | **Istanza del servizio**                                                                     |
 | [**Www-Home-Page**](a-wwwhomepage.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 
@@ -776,8 +776,8 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Is-Deleted**](a-isdeleted.md)                                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Membro di DL**](a-memberof.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Titolare di privilegi is**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Is-Recycled**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Titolare dei privilegi**](a-isprivilegeholder.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Viene riciclato**](a-isrecycled.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Parole chiavi**](a-keywords.md)                                                               | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**Ultimo elemento padre noto**](a-lastknownparent.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Gestito da**](a-managedby.md)                                                            | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
@@ -795,7 +795,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Enabled-Feature-BL**](a-msds-enabledfeaturebl.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Host-Service-Account-BL**](a-msds-hostserviceaccountbl.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-is-Domain-For**](a-msds-isdomainfor.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-is-full-replica-for**](a-msds-isfullreplicafor.md)                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Is-Partial-Replica-For**](a-msds-ispartialreplicafor.md)                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Is-Primary-Computer-For**](a-msds-isprimarycomputerfor.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -810,7 +810,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Ms-DS-NC-Type**](a-msds-nctype.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-NC-Type**](a-msds-nctype.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-OIDToGroup-Link-BL**](a-msds-oidtogrouplinkbl.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -820,28 +820,28 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                               | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Impostazioni**](a-msds-settings.md)                                                    | Falso     | [**Punto di connessione**](c-connectionpoint.md)<br/>                                 |
 | [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-DS-TDO-Ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Non security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Obj-Dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Categoria di oggetti**](a-objectcategory.md)                                                  | Vero      | [**In alto**](c-top.md)<br/>                                                          |
 | [**Classe object**](a-objectclass.md)                                                        | Vero      | [**In alto**](c-top.md)<br/>                                                          |
-| [**Guid oggetto**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Object-Guid**](a-objectguid.md)                                                          | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Versione oggetto**](a-objectversion.md)                                                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Altri oggetti noti**](a-otherwellknownobjects.md)                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)                    | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
-| [**Possibili eserezioni**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Possibili inevasi**](a-possibleinferiors.md)                                            | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Indirizzi proxy**](a-proxyaddresses.md)                                                  | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**In alto**](c-top.md)<br/>                                                          |
@@ -873,7 +873,7 @@ Questa classe contiene gli attributi seguenti per Windows Server 2012:
 | [**Quando viene modificato**](a-whenchanged.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Quando viene creato**](a-whencreated.md)                                                        | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**Winsock-Addresses**](a-winsockaddresses.md)                                              | Falso     | **Istanza del servizio**                                                                     |
-| [**WWW-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
+| [**Www-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 | [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**In alto**](c-top.md)<br/>                                                          |
 
 

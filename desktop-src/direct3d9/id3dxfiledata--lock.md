@@ -46,7 +46,7 @@ HRESULT Lock(
 
 Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)\***
 
-Puntatore alla dimensione dei dati del file con estensione x.
+Puntatore alle dimensioni dei dati del file con estensione x.
 
 </dd> <dt>
 
@@ -67,9 +67,9 @@ Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha
 
 ## <a name="remarks"></a>Commenti
 
-Il *puntatore ppData* è valido solo durante un **ID3DXFileData::Lock** ... [**Sequenza ID3DXFileData::Unlock.**](id3dxfiledata--unlock.md) È possibile effettuare più chiamate di blocco. Tuttavia, è necessario assicurarsi che il numero di chiamate di blocco corrisponda al numero di chiamate di sblocco.
+Il *puntatore ppData* è valido solo durante **un ID3DXFileData::Lock** ... [**Sequenza ID3DXFileData::Unlock.**](id3dxfiledata--unlock.md) È possibile effettuare più chiamate di blocco. Tuttavia, è necessario assicurarsi che il numero di chiamate di blocco corrisponda al numero di chiamate di sblocco.
 
-Poiché non è garantito che i dati dei file siano allineati correttamente con i limiti di byte, è necessario accedere a *ppData* con puntatori UNALIGNED.
+Poiché non è garantito che i dati dei file siano allineati correttamente ai limiti dei byte, è necessario accedere a *ppData* con puntatori UNALIGNED.
 
 Non è garantito che i valori dei parametri restituiti siano validi a causa di un possibile danneggiamento del file. Pertanto, il codice deve verificare i valori dei parametri restituiti.
 

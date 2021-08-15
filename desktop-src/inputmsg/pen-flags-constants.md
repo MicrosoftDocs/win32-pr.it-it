@@ -1,6 +1,6 @@
 ---
 title: Flag di penna
-description: Valori che possono essere visualizzati nel campo penFlags della struttura POINTER_PEN_INFO.
+description: Valori che possono essere visualizzati nel campo penFlags della POINTER_PEN_INFO struttura.
 ms.assetid: BC3CE568-4090-4451-B780-18530C988305
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: d7c28beaf58b6fa96bb8dd82b2dd650b2a7d6950
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: acc1afb1d490a1831fdb1ecd5a090e457bae77ae2f08a1b94cabc81d12dbde9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482406"
 ---
 # <a name="pen-flags"></a>Flag di penna
 
-Valori che possono essere visualizzati nel campo **penFlags** della struttura [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) .
+Valori che possono essere visualizzati nel **campo penFlags** della [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) struttura.
 
 <dl> <dt>
 
@@ -36,7 +36,7 @@ Valori che possono essere visualizzati nel campo **penFlags** della struttura [*
 
 
 
-Nessun flag di penna. Questo è il valore predefinito.
+Non è presente alcun flag penna. Questo è il valore predefinito.
 
 
 </dt> </dl> </dd> <dt>
@@ -49,7 +49,7 @@ Nessun flag di penna. Questo è il valore predefinito.
 
 
 
-Il pulsante Barrel è premuto.
+Viene premuto il pulsante a sospensione.
 
 
 </dt> </dl> </dd> <dt>
@@ -86,9 +86,9 @@ Viene premuto il pulsante della gomma.
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione si sposta la luce, ma anche la direzione verso l'occhio dell'utente.
+description: La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione viaggia la luce, ma anche la direzione verso l'occhio dello visualizzatore.
 ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Illuminazione speculare (Direct3D 9)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118520180"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Illuminazione speculare (Direct3D 9)
 
-La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione si sposta la luce, ma anche la direzione verso l'occhio dell'utente. Il sistema usa una versione semplificata del modello di reflection speculare phong, che usa un vettore a metà strada per approssimare l'intensità della reflection speculare.
+La modellazione della reflection speculare richiede che il sistema non solo sappia in quale direzione viaggia la luce, ma anche la direzione verso l'occhio dello visualizzatore. Il sistema usa una versione semplificata del modello phong specular-reflection, che usa un vettore a metà per approssimare l'intensità della reflection speculare.
 
 Lo stato di illuminazione predefinito non calcola le evidenziazioni speculari. Per abilitare l'illuminazione speculare, assicurarsi di impostare D3DRS \_ SPECULARENABLE su **TRUE.**
 
@@ -35,18 +35,18 @@ La tabella seguente identifica le variabili, i relativi tipi e i relativi interv
 |--------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------------|
 | Cs           | (0,0,0,0)     | D3DCOLORVALUE | Colore speculare.                                                                                                     |
 | Sum          | N/D           | N/D           | Somma del componente speculare di ogni luce.                                                                       |
-| N            | N/A           | D3DVECTOR     | Vertex normal (Normale vertice).                                                                                                      |
-| H            | N/A           | D3DVECTOR     | Vettore a metà. Vedere la sezione sul vettore a metà.                                                             |
+| N            | N/A           | D3DVECTOR     | Normale vertice.                                                                                                      |
+| H            | N/A           | D3DVECTOR     | Vettore a metà strada. Vedere la sezione sul vettore a metà.                                                             |
 | <sup>P</sup> | 0,0           | FLOAT         | Potenza di reflection speculare. L'intervallo è compreso tra 0 e +infinito                                                                  |
 | Ls           | (0,0,0,0)     | D3DCOLORVALUE | Colore speculare chiaro.                                                                                               |
-| Atten        | N/A           | FLOAT         | Valore di attenuazione della luce. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
+| Atten        | N/A           | FLOAT         | Valore di attenuazione leggera. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md) |
 | Spot (Contante)         | N/A           | FLOAT         | Fattore Spotlight. Vedere [Attenuazione e fattore spotlight (Direct3D 9).](attenuation-and-spotlight-factor.md)        |
 
 
 
  
 
-Il valore per Cs è:
+Il valore per Cs è uno dei seguenti:
 
 
 ```
@@ -57,19 +57,19 @@ if(SPECULARMATERIALSOURCE == D3DMCS_COLOR1)
 
 
 -   vertex color1, se l'origine del materiale speculare è D3DMCS COLOR1 e il primo colore del vertice viene \_ specificato nella dichiarazione del vertice.
--   vertex color2, se l'origine del materiale speculare è D3DMCS COLOR2 e il secondo colore del vertice viene \_ fornito nella dichiarazione del vertice.
--   colore speculare materiale
+-   vertex color2, se l'origine del materiale speculare è D3DMCS COLOR2 e il secondo colore del vertice viene \_ specificato nella dichiarazione del vertice.
+-   colore speculare del materiale
 
 > [!Note]  
-> Se si usa una delle due opzioni di origine del materiale speculare e non viene specificato il colore del vertice, viene usato il colore speculare del materiale.
+> Se viene usata una delle due opzioni di origine materiale speculare e il colore del vertice non viene specificato, viene usato il colore speculare del materiale.
 
  
 
-I componenti speculari sono definiti in modo da essere da 0 a 255, dopo che tutte le luci vengono elaborate e interpolate separatamente.
+I componenti speculari sono gonfiati da 0 a 255, dopo che tutte le luci vengono elaborate e interpolate separatamente.
 
-## <a name="the-halfway-vector"></a>Vettore a metà strada
+## <a name="the-halfway-vector"></a>Vettore a metà
 
-Il vettore intermedio (H) si trova a metà tra due vettori: il vettore da un vertice dell'oggetto alla sorgente di luce e il vettore da un vertice dell'oggetto alla posizione della fotocamera. Direct3D offre due modi per calcolare il vettore a metà strada. Quando D3DRS LOCALVIEWER è impostato su TRUE, il sistema calcola il vettore a metà strada usando la posizione della fotocamera e la posizione del vertice, insieme al vettore di direzione della \_ luce.  La formula seguente illustra questa operazione.
+Il vettore intermedio (H) si trova a metà strada tra due vettori: il vettore da un vertice dell'oggetto alla sorgente di luce e il vettore da un vertice dell'oggetto alla posizione della fotocamera. Direct3D offre due modi per calcolare il vettore a metà. Quando D3DRS LOCALVIEWER è impostato su TRUE, il sistema calcola il vettore a metà strada usando la posizione della fotocamera e la posizione del vertice, insieme al vettore di direzione della \_ luce.  La formula seguente illustra questa operazione.
 
 **H = norm(norm(Cp - Vp) + L <sub>dir</sub>)**
 
@@ -89,7 +89,7 @@ Il vettore intermedio (H) si trova a metà tra due vettori: il vettore da un ver
 
  
 
-Determinare il vettore a metà strada in questo modo può essere a elevato utilizzo di calcolo. In alternativa, l'impostazione di D3DRS LOCALVIEWER = FALSE indica al sistema di agire come se il punto di vista \_ fosse all'infinito distante sull'asse  z. Ciò si riflette nella formula seguente.
+Determinare il vettore a metà strada in questo modo può essere a elevato utilizzo di calcolo. In alternativa, l'impostazione di D3DRS LOCALVIEWER = FALSE indica al sistema di agire come se il punto di vista \_ fosse infinitamente distante sull'asse z.  Ciò si riflette nella formula seguente.
 
 **H = norm((0,0,1) + L <sub>dir</sub>)**
 
@@ -97,11 +97,11 @@ Determinare il vettore a metà strada in questo modo può essere a elevato utili
 
  
 
-Questa impostazione è meno intensiva dal punto di vista del calcolo, ma molto meno accurata, quindi è ideale per le applicazioni che usano la proiezione ortogonale.
+Questa impostazione è meno intensiva dal punto di vista del calcolo, ma molto meno accurata, quindi è più adatta alle applicazioni che usano la proiezione ortogonale.
 
 ## <a name="example"></a>Esempio
 
-In questo esempio, l'oggetto viene colorato usando il colore della luce speculare della scena e un colore speculare materiale. Il codice è illustrato di seguito.
+In questo esempio l'oggetto viene colorato usando il colore della luce speculare della scena e un colore speculare materiale. Il codice è illustrato di seguito.
 
 
 ```
@@ -143,19 +143,19 @@ m_pd3dDevice->SetRenderState(D3DRS_SPECULARMATERIALSOURCE, D3DMCS_MATERIAL);
 
 In base all'equazione, il colore risultante per i vertici dell'oggetto è una combinazione del colore del materiale e del colore chiaro.
 
-Nella figura seguente vengono illustrati il colore del materiale speculare, ovvero il grigio, e il colore chiaro speculare, ovvero il bianco.
+Le due illustrazioni seguenti illustrano il colore del materiale speculare, che è grigio, e il colore chiaro speculare, ovvero il bianco.
 
 ![illustrazione di una sfera grigia](images/amb1.jpg)![illustrazione di una sfera bianca](images/lightwhite.jpg)
 
 L'evidenziazione speculare risultante è illustrata nella figura seguente.
 
-![illustrazione dell'evidenziazione speculare](images/lights.jpg)
+![Illustrazione dell'evidenziazione speculare](images/lights.jpg)
 
-La combinazione dell'evidenziazione speculare con l'illuminazione ambientale e diffusa produce la figura seguente. Con tutti e tre i tipi di illuminazione applicati, questo oggetto è più chiaramente simile a un oggetto realistico.
+La combinazione dell'evidenziazione speculare con l'illuminazione ambiente e diffusa produce la figura seguente. Con tutti e tre i tipi di illuminazione applicati, questo aspetto è più simile a un oggetto realistico.
 
 ![illustrazione della combinazione dell'evidenziazione speculare, dell'illuminazione ambientale e dell'illuminazione diffusa](images/lightads.jpg)
 
-L'illuminazione speculare è più intensiva da calcolare rispetto all'illuminazione diffusa. Viene in genere usato per fornire indicazioni visive sul materiale della superficie. L'evidenziazione speculare varia in base alle dimensioni e al colore del materiale della superficie.
+L'illuminazione speculare è più intensiva da calcolare rispetto all'illuminazione diffusa. Viene in genere usato per fornire indicazioni visive sul materiale di superficie. L'evidenziazione speculare varia in dimensioni e colore con il materiale della superficie.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

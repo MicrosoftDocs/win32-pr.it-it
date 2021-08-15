@@ -18,7 +18,7 @@ Costruttori esposti da `XMUINT3` .
 Costruisce istanze della [**struttura XMUINT3.**](/windows/win32/api/directxmath/ns-directxmath-xmuint3)
 
 > [!Note]  
-> I costruttori elencati qui sono disponibili solo in C++.
+> I costruttori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -49,7 +49,7 @@ Questo costruttore è disponibile solo in C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;">[<strong>XMUINT3 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMUINT3</code> un argomento della matrice di tre <code>uint32_t</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) da un argomento di matrice a tre <code>uint32_t</code> elementi.<br/>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMUINT3</code> un argomento di matrice di tre <code>uint32_t</code> elementi.<br/> Questo costruttore inizializza una nuova istanza di [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) da un argomento di matrice a tre <code>uint32_t</code> elementi.<br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.

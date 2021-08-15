@@ -19,7 +19,7 @@ ms.locfileid: "118352118"
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Proprietà Name**](imsrdpdrive-name.md)
--   [**Proprietà RedirectionState**](imsrdpdrive-redirectionstate.md)
+-   [**RedirectionState - proprietà**](imsrdpdrive-redirectionstate.md)
 
  
 

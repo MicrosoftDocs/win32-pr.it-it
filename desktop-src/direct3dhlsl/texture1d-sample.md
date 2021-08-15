@@ -1,6 +1,6 @@
 ---
 title: Metodi di esempio texture1D::Texture1D
-description: Campiota un oggetto Texture1D.
+description: Esempi di un oggetto Texture1D.
 ms.assetid: 852BC190-E370-4B55-AB64-F0771B1D2D19
 keywords:
 - Metodi di esempio HLSL
@@ -29,7 +29,7 @@ Esempi di [**un oggetto Texture1D.**](sm5-object-texture1d.md)
 
 | Metodo                                                                       | Descrizione                                                                                                                                  |
 |:-----------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                    | Campiota una trama.<br/>                                                                                                                |
+| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)                    | Esempi di una trama.<br/>                                                                                                                |
 | [**Sample(S,float,int,float)**](t1d-sample-s-float-int-float-.md)           | Campionare una trama con un valore facoltativo in cui impostare i valori di livello di dettaglio (LOD) del campione.<br/>                                         |
 | [**Sample(S,float,int,float,uint)**](t1d-sample-s-float-int-float-uint-.md) | Campionare una trama con un valore facoltativo per impostare i valori di livello di dettaglio (LOD) del campione e restituisce lo stato dell'operazione.<br/> |
 

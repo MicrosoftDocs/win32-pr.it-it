@@ -1,21 +1,21 @@
 ---
-description: 'Quando si crea un oggetto Pen, è possibile specificare la larghezza della penna come uno degli argomenti per il costruttore. È anche possibile modificare la larghezza della penna usando il metodo Pen:: sewidth.'
+description: Quando crei un oggetto Pen, puoi fornire la larghezza della penna come uno degli argomenti al costruttore. Puoi anche modificare la larghezza della penna usando il metodo Pen::SetWidth.
 ms.assetid: b529ba0b-1786-4925-88bd-1a8369fc368c
 title: Impostazione della larghezza e dell'allineamento della penna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca59895cc73480b054302091342c8f8f4f410b34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe2a6bd5be00fde0f27657cef558365d857775a5b55f9f108074884906916b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104559521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117885015"
 ---
 # <a name="setting-pen-width-and-alignment"></a>Impostazione della larghezza e dell'allineamento della penna
 
-Quando si crea un oggetto [**Pen**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) , è possibile specificare la larghezza della penna come uno degli argomenti per il costruttore. È anche possibile modificare la larghezza della penna usando il metodo [**Pen:: sewidth**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setwidth) .
+Quando crei un [**oggetto Pen,**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) puoi fornire la larghezza della penna come uno degli argomenti al costruttore. Puoi anche modificare la larghezza della penna usando il [**metodo Pen::SetWidth.**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setwidth)
 
-Una linea teorica ha una larghezza pari a zero. Quando si crea una linea, i pixel vengono centrati sulla linea teorica. Nell'esempio seguente la riga specificata viene disegnata due volte: una volta con una penna nera di larghezza 1 e una volta con una penna verde di larghezza 10.
+Una linea teorica ha uno spessore pari a zero. Quando si disegna una linea, i pixel vengono centrati sulla linea teorica. L'esempio seguente disegna una linea specificata due volte: una con una penna nera di larghezza 1 e una con una penna verde di larghezza 10.
 
 
 ```
@@ -32,11 +32,11 @@ stat = graphics.DrawLine(&blackPen, 10, 100, 100, 50);
 
 
 
-Nella figura seguente viene illustrato l'output del codice precedente. I pixel verdi e i pixel neri sono centrati sulla linea teorica.
+La figura seguente mostra l'output del codice precedente. I pixel verdi e i pixel neri sono centrati sulla linea teorica.
 
-![illustrazione che mostra una linea sottile, diagonale, nera circondata da una linea verde ampia ](images/pens1a.png)
+![illustrazione che mostra una linea sottile, diagonale e nera racchiusa da una linea larga e verde ](images/pens1a.png)
 
-Nell'esempio seguente viene disegnato un rettangolo specificato due volte: una volta con una penna nera di larghezza 1 e una volta con una penna verde di larghezza 10. Il codice passa il valore **PenAlignmentCenter** (un elemento dell'enumerazione [**PenAlignment**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-penalignment) ) al metodo [**Pen:: sealignment**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setalignment) per specificare che i pixel disegnati con la penna verde sono centrati sul limite del rettangolo.
+L'esempio seguente disegna due volte un rettangolo specificato: una con una penna nera di larghezza 1 e una con una penna verde di larghezza 10. Il codice passa il valore **PenAlignmentCenter** (un elemento dell'enumerazione [**PenAlignment)**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-penalignment) al metodo [**Pen::SetAlignment**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setalignment) per specificare che i pixel disegnati con la penna verde sono centrati sul limite del rettangolo.
 
 
 ```
@@ -53,9 +53,9 @@ stat = graphics.DrawRectangle(&blackPen, 10, 100, 50, 50);
 
 
 
-Nella figura seguente viene illustrato l'output del codice precedente. I pixel verdi sono centrati sul rettangolo teorico, rappresentato dai pixel neri.
+La figura seguente mostra l'output del codice precedente. I pixel verdi sono centrati sul rettangolo teorico, rappresentato dai pixel neri.
 
-![illustrazione che mostra una linea nera sottile nella forma di un rettangolo, circondata da una linea verde più ampia](images/pens2.png)
+![illustrazione che mostra una linea nera sottile a forma di rettangolo, racchiusa da una linea verde più ampia](images/pens2.png)
 
 È possibile modificare l'allineamento della penna verde modificando la terza istruzione nell'esempio precedente come indicato di seguito:
 
@@ -68,7 +68,7 @@ stat = greenPen.SetAlignment(PenAlignmentInset);
 
 Ora i pixel nella linea verde ampia vengono visualizzati all'interno del rettangolo, come illustrato nella figura seguente.
 
-![illustrazione che mostra una linea nera sottile nella forma di un rectange, che racchiude una linea verde ampia con la stessa forma](images/pens3.png)
+![illustrazione che mostra una linea nera sottile a forma di rectange, che racchiude una linea verde ampia della stessa forma](images/pens3.png)
 
  
 

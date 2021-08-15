@@ -1,6 +1,6 @@
 ---
 title: Verifica delle opzioni del preprocessore
-description: Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le opzioni del preprocessore.
+description: Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le relative opzioni del preprocessore.
 ms.assetid: 2f402af4-18d7-480c-a8d2-d16f402ef87a
 keywords:
 - MIDL del compilatore MIDL, verifica delle opzioni del preprocessore
@@ -15,7 +15,7 @@ ms.locfileid: "118382766"
 ---
 # <a name="verifying-preprocessor-options"></a>Verifica delle opzioni del preprocessore
 
-Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le opzioni del preprocessore. In assenza dell'opzione MIDL [**/cpp \_ opt,**](-cpp-opt.md) la riga di comando del preprocessore è costituita da tutte le opzioni [**/I**](-i.md), [**/D**](-d.md) e [**/U**](-u.md) usate nella riga di comando MIDL, nonché dalle opzioni **/E** [**e /nologo.**](-nologo.md) Per visualizzare le opzioni passate al preprocessore, usare l'opzione [**/confirm del**](-confirm.md) compilatore.
+Il compilatore MIDL richiama in modo implicito il preprocessore e non visualizza le relative opzioni del preprocessore. In assenza dell'opzione MIDL [**/cpp \_ opt,**](-cpp-opt.md) la riga di comando del preprocessore è composta da tutte le opzioni [**/I**](-i.md), [**/D**](-d.md) e [**/U**](-u.md) usate nella riga di comando MIDL, nonché dalle opzioni **/E** [**e /nologo.**](-nologo.md) Per visualizzare le opzioni passate al preprocessore, usare l'opzione [**/confirm del**](-confirm.md) compilatore.
 
 Ad esempio, la riga seguente
 

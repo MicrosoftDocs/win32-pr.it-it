@@ -1,19 +1,19 @@
-- name: Informazioni sul sistema Windows
+- name: Windows System Information
   href: windows-system-information.md
   items:
     - name: Handle e oggetti
       href: handles-and-objects.md
       items:
-        - name: Informazioni sugli handle e sugli oggetti
+        - name: Informazioni su handle e oggetti
           href: about-handles-and-objects.md
           items:
-            - name: Gestore oggetti
+            - name: Gestione oggetti
               href: object-manager.md
-            - name: Interfaccia oggetto
+            - name: Interfaccia dell'oggetto
               href: object-interface.md
-            - name: Limitazioni della gestione
+            - name: Gestire le limitazioni
               href: handle-limitations.md
-            - name: Gestisci ereditarietà
+            - name: Gestire l'ereditarietà
               href: handle-inheritance.md
         - name: Categorie di oggetti
           href: object-categories.md
@@ -24,13 +24,13 @@
               href: gdi-objects.md
             - name: Oggetti kernel
               href: kernel-objects.md
-        - name: Handle e riferimento a oggetti
+        - name: Riferimento a handle e oggetti
           href: handle-and-object-reference.md
           items:
-            - name: Funzioni handle e Object
+            - name: Funzioni handle e oggetto
               href: handle-and-object-functions.md
               items:
-                - name: CloseHandle
+                - name: Closehandle
                   href: /windows/desktop/api/handleapi/nf-handleapi-closehandle
                 - name: CompareObjectHandles
                   href: /windows/desktop/api/handleapi/nf-handleapi-compareobjecthandles
@@ -46,48 +46,48 @@
         - name: Informazioni sul Registro di sistema
           href: about-the-registry.md
           items:
-            - name: Struttura del registro di sistema
+            - name: Struttura del Registro di sistema
               href: structure-of-the-registry.md
-            - name: Spazio di archiviazione del registro di sistema
+            - name: Spazio di Archiviazione Registro di sistema
               href: registry-storage-space.md
             - name: Chiavi predefinite
               href: predefined-keys.md
               items:
-                - name: Chiave di HKEY_CLASSES_ROOT
+                - name: HKEY_CLASSES_ROOT chiave
                   href: hkey-classes-root-key.md
-                - name: Visualizzazione unita di HKEY_CLASSES_ROOT
+                - name: Visualizzazione unita delle HKEY_CLASSES_ROOT
                   href: merged-view-of-hkey-classes-root.md
-            - name: Hive del registro di sistema
+            - name: Hive del Registro di sistema
               href: registry-hives.md
             - name: Categorie di dati
               href: categories-of-data.md
             - name: 'Apertura, creazione e chiusura di chiavi'
               href: opening-creating-and-closing-keys.md
-            - name: Scrittura ed eliminazione dei dati del registro di sistema
+            - name: Scrittura ed eliminazione di dati del Registro di sistema
               href: writing-and-deleting-registry-data.md
-            - name: Recupero di dati dal registro di sistema
+            - name: Recupero di dati dal Registro di sistema
               href: retrieving-data-from-the-registry.md
-            - name: File del registro di sistema
+            - name: File del Registro di sistema
               href: registry-files.md
-            - name: Diritti di accesso e sicurezza della chiave del registro di sistema
+            - name: Sicurezza e diritti di accesso delle chiavi del Registro di sistema
               href: registry-key-security-and-access-rights.md
-            - name: Dati dell'applicazione a 32 bit e a 64 bit nel registro di sistema
+            - name: Dati dell'applicazione a 32 bit e a 64 bit nel Registro di sistema
               href: 32-bit-and-64-bit-application-data-in-the-registry.md
-            - name: Virtualizzazione del registro di sistema
+            - name: Virtualizzazione del Registro di sistema
               href: registry-virtualization.md
-        - name: Uso del registro di sistema
+        - name: Uso del Registro di sistema
           href: using-the-registry.md
           items:
-            - name: Enumerazione delle sottochiavi del registro di sistema
+            - name: Enumerazione delle sottochiavi del Registro di sistema
               href: enumerating-registry-subkeys.md
             - name: Eliminazione di una chiave con sottochiavi
               href: deleting-a-key-with-subkeys.md
-            - name: Determinazione delle dimensioni del registro di sistema
+            - name: Determinazione delle dimensioni del Registro di sistema
               href: determining-the-registry-size.md
-        - name: Riferimento al registro di sistema
+        - name: Informazioni di riferimento sul Registro di sistema
           href: registry-reference.md
           items:
-            - name: Funzioni del registro di sistema
+            - name: Funzioni del Registro di sistema
               href: registry-functions.md
               items:
                 - name: GetPrivateProfileInt
@@ -96,7 +96,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-getprivateprofilesection
                 - name: GetPrivateProfileSectionNames
                   href: /windows/desktop/api/Winbase/nf-winbase-getprivateprofilesectionnames
-                - name: GetPrivateProfileString
+                - name: Getprivateprofilestring
                   href: /windows/desktop/api/Winbase/nf-winbase-getprivateprofilestring
                 - name: GetPrivateProfileStruct
                   href: /windows/desktop/api/Winbase/nf-winbase-getprivateprofilestruct
@@ -106,7 +106,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-getprofilesectiona
                 - name: GetProfileString
                   href: /windows/desktop/api/Winbase/nf-winbase-getprofilestringa
-                - name: RegCloseKey
+                - name: Regclosekey
                   href: /windows/desktop/api/Winreg/nf-winreg-regclosekey
                 - name: RegConnectRegistry
                   href: /windows/desktop/api/Winreg/nf-winreg-regconnectregistrya
@@ -144,7 +144,7 @@
                   href: /windows/desktop/api/Winreg/nf-winreg-regenumkeyexa
                 - name: RegEnumValue
                   href: /windows/desktop/api/Winreg/nf-winreg-regenumvaluea
-                - name: RegFlushKey ha
+                - name: RegFlushKey
                   href: /windows/desktop/api/Winreg/nf-winreg-regflushkey
                 - name: RegGetValue
                   href: /windows/desktop/api/Winreg/nf-winreg-reggetvaluea
@@ -160,7 +160,7 @@
                   href: /windows/desktop/api/Winreg/nf-winreg-regopencurrentuser
                 - name: RegOpenKey
                   href: /windows/desktop/api/Winreg/nf-winreg-regopenkeya
-                - name: RegOpenKeyEx
+                - name: Regopenkeyex
                   href: /windows/desktop/api/Winreg/nf-winreg-regopenkeyexa
                 - name: RegOpenKeyTransacted
                   href: /windows/desktop/api/Winreg/nf-winreg-regopenkeytransacteda
@@ -176,13 +176,13 @@
                   href: /windows/desktop/api/WinReg/nf-winreg-regqueryreflectionkey
                 - name: RegQueryValue
                   href: /windows/desktop/api/Winreg/nf-winreg-regqueryvaluea
-                - name: RegQueryValueEx
+                - name: Regqueryvalueex
                   href: /windows/desktop/api/Winreg/nf-winreg-regqueryvalueexa
                 - name: RegReplaceKey
                   href: /windows/desktop/api/Winreg/nf-winreg-regreplacekeya
                 - name: RegRestoreKey
                   href: /windows/desktop/api/Winreg/nf-winreg-regrestorekeya
-                - name: RegSaveKey
+                - name: Regsavekey
                   href: /windows/desktop/api/Winreg/nf-winreg-regsavekeya
                 - name: RegSaveKeyEx
                   href: /windows/desktop/api/Winreg/nf-winreg-regsavekeyexa
@@ -190,7 +190,7 @@
                   href: /windows/desktop/api/Winreg/nf-winreg-regsetkeyvaluea
                 - name: RegSetValue
                   href: /windows/desktop/api/Winreg/nf-winreg-regsetvaluea
-                - name: RegSetValueEx
+                - name: Regsetvalueex
                   href: /windows/desktop/api/Winreg/nf-winreg-regsetvalueexa
                 - name: RegUnLoadKey
                   href: /windows/desktop/api/Winreg/nf-winreg-regunloadkeya
@@ -204,19 +204,19 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-writeprofilesectiona
                 - name: WriteProfileString
                   href: /windows/desktop/api/Winbase/nf-winbase-writeprofilestringa
-            - name: Strutture del registro di sistema
+            - name: Strutture del Registro di sistema
               href: registry-structures.md
               items:
-                - name: VALENT
+                - name: Valent
                   href: /windows/win32/api/winreg/ns-winreg-valenta
-            - name: Limiti delle dimensioni degli elementi del registro di sistema
+            - name: Limiti delle dimensioni degli elementi del Registro di sistema
               href: registry-element-size-limits.md
-            - name: Tipi di valore del registro di sistema
+            - name: Tipi di valore del Registro di sistema
               href: registry-value-types.md
     - name: Informazioni di sistema
       href: system-information.md
       items:
-        - name: Informazioni sul sistema
+        - name: Informazioni System Information
           href: about-system-information.md
           items:
             - name: Configurazione hardware
@@ -227,14 +227,14 @@
               href: operating-system-version.md
             - name: Configurazione del sistema operativo
               href: operating-system-configuration.md
-        - name: Utilizzo delle informazioni di sistema
+        - name: Uso di System Information
           href: using-system-information.md
           items:
-            - name: Accedere alle informazioni di SMBIOS da un'app di Windows universale
+            - name: Accedere alle informazioni SMBIOS da un'app Windows universale
               href: access-smbios-information-from-a-universal-windows-app.md
-            - name: Accedere alle variabili del firmware UEFI da un'app di Windows universale
+            - name: Accedere alle variabili del firmware UEFI da un'app Windows universale
               href: access-uefi-firmware-variables-from-a-universal-windows-app.md
-            - name: Recupero delle informazioni sul sistema
+            - name: Recupero System Information
               href: getting-system-information.md
             - name: Recupero della versione del sistema
               href: getting-the-system-version.md
@@ -242,14 +242,14 @@
               href: verifying-the-system-version.md
             - name: Rilevamento di una suite di prodotti
               href: detecting-a-product-suite.md
-            - name: Recupero delle informazioni sull'hardware
+            - name: Recupero di informazioni sull'hardware
               href: getting-hardware-information.md
             - name: Destinazione dell'applicazione per Windows
               href: targeting-your-application-at-windows-8-1.md
-        - name: Informazioni di riferimento sul sistema
+        - name: System Information Riferimento
           href: system-information-reference.md
           items:
-            - name: Funzioni delle informazioni di sistema
+            - name: System Information Funzioni
               href: system-information-functions.md
               items:
                 - name: ApiSetQueryApiSetPresence
@@ -264,7 +264,7 @@
                   href: /windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig
                 - name: GetComputerName
                   href: /windows/desktop/api/Winbase/nf-winbase-getcomputernamea
-                - name: Presunto GetComputerNameEx
+                - name: GetComputerNameEx
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa
                 - name: GetComputerObjectName
                   href: /windows/desktop/api/Secext/nf-secext-getcomputerobjectnamea
@@ -302,7 +302,7 @@
                   href: /windows/desktop/api/Secext/nf-secext-getusernameexa
                 - name: GetVersion
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getversion
-                - name: GetVersionEx
+                - name: Getversionex
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getversionexa
                 - name: GetWindowsDirectory
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya
@@ -314,13 +314,13 @@
                   href: /windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64guestmachinesupported
                 - name: NtQuerySystemInformation
                   href: /windows/desktop/api/Winternl/nf-winternl-ntquerysysteminformation
-                - name: QueryPerformanceCounter
+                - name: Queryperformancecounter
                   href: /windows/desktop/api/profileapi/nf-profileapi-queryperformancecounter
                 - name: QueryPerformanceFrequency
                   href: /windows/desktop/api/profileapi/nf-profileapi-queryperformancefrequency
                 - name: RtlGetSuiteMask
                   href: rtlgetsuitemask.md
-                - name: Nomecomputer
+                - name: SetComputerName
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-setcomputernamea
                 - name: SetComputerNameEx
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-setcomputernameexa
@@ -334,7 +334,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa
                 - name: VerSetConditionMask
                   href: /windows/desktop/api/Winnt/nf-winnt-versetconditionmask
-                - name: Funzioni helper versione
+                - name: Funzioni dell'helper versione
                   href: version-helper-apis.md
                   items:
                     - name: IsWindows10OrGreater
@@ -367,7 +367,7 @@
                       href: /windows/desktop/api/VersionHelpers/nf-versionhelpers-iswindowsversionorgreater
                 - name: ZwQuerySystemInformation
                   href: zwquerysysteminformation.md
-            - name: Strutture delle informazioni di sistema
+            - name: System Information Strutture
               href: system-information-structures.md
               items:
                 - name: HW_PROFILE_INFO
@@ -378,12 +378,12 @@
                   href: /windows/win32/api/Winnt/ns-winnt-osversioninfoexa
                 - name: SYSTEM_INFO
                   href: /windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info
-            - name: Macro informazioni di sistema
+            - name: System Information Macro
               href: system-information-macros.md
               items:
                 - name: VER_SET_CONDITION
                   href: /windows/desktop/api/Winnt/nf-winnt-ver_set_condition
-            - name: Tipi di enumerazione delle informazioni di sistema
+            - name: System Information Tipi di enumerazione
               href: system-information-enumeration-types.md
               items:
                 - name: COMPUTER_NAME_FORMAT
@@ -392,19 +392,19 @@
                   href: /windows/desktop/api/Secext/ne-secext-extended_name_format
                 - name: FIRMWARE_TYPE
                   href: /windows/win32/api/Winnt/ne-winnt-firmware_type
-            - name: Costanti computer del file di immagine
+            - name: Costanti di Image File Machine
               href: image-file-machine-constants.md
-    - name: Tempo
+    - name: Ora
       href: time.md
       items:
-        - name: Informazioni sul tempo
+        - name: Sarebbe ora
           href: about-time.md
           items:
             - name: Ora di sistema
               href: system-time.md
             - name: Ora locale
               href: local-time.md
-            - name: Orari file
+            - name: Orari dei file
               href: file-times.md
             - name: Data e ora di MS-DOS
               href: ms-dos-date-and-time.md
@@ -412,21 +412,21 @@
               href: windows-time.md
             - name: Tempo di interrupt
               href: interrupt-time.md
-        - name: Utilizzo di Time
+        - name: Uso dell'ora
           href: using-time.md
           items:
-            - name: Recupero del tempo di Last-Write
+            - name: Recupero dell'ora Last-Write tempo
               href: retrieving-the-last-write-time.md
-            - name: Modifica dell'ora del file nell'ora corrente
+            - name: Modifica dell'ora di un file all'ora corrente
               href: changing-a-file-time-to-the-current-time.md
-            - name: Conversione di un valore time_t in un file Time
+            - name: Conversione di un time_t in un'ora del file
               href: converting-a-time-t-value-to-a-file-time.md
             - name: Acquisizione di timestamp ad alta risoluzione
               href: acquiring-high-resolution-time-stamps.md
         - name: Time Reference
           href: time-reference.md
           items:
-            - name: Funzioni temporali
+            - name: Funzioni di tempo
               href: time-functions.md
               items:
                 - name: CompareFileTime
@@ -449,7 +449,7 @@
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-getdynamictimezoneinformation
                 - name: GetDynamicTimeZoneInformationEffectiveYears
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-getdynamictimezoneinformationeffectiveyears
-                - name: GetFileTime ha provocato
+                - name: GetFileTime
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfiletime
                 - name: GetLocalTime
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getlocaltime
@@ -465,7 +465,7 @@
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime
                 - name: GetSystemTimes
                   href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getsystemtimes
-                - name: GetTickCount
+                - name: Gettickcount
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount
                 - name: GetTickCount64
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount64
@@ -515,35 +515,35 @@
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-tzspecificlocaltimetosystemtime
                 - name: TzSpecificLocalTimeToSystemTimeEx
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-tzspecificlocaltimetosystemtimeex
-            - name: Strutture temporali
+            - name: Strutture tempor
               href: time-structures.md
               items:
                 - name: DYNAMIC_TIME_ZONE_INFORMATION
                   href: /windows/desktop/api/timezoneapi/ns-timezoneapi-dynamic_time_zone_information
                 - name: FILETIME
                   href: /windows/desktop/api/minwinbase/ns-minwinbase-filetime
-                - name: SYSTEMTIME
+                - name: Systemtime
                   href: /windows/desktop/api/minwinbase/ns-minwinbase-systemtime
                 - name: TIME_ZONE_INFORMATION
                   href: /windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information
-            - name: Messaggi temporali
+            - name: Messaggi di ora
               href: time-messages.md
               items:
                 - name: WM_TIMECHANGE
                   href: wm-timechange.md
-    - name: Provider di servizi temporali
+    - name: Provider di tempo
       href: time-provider.md
       items:
-        - name: Creazione di un provider Time
+        - name: Creazione di un provider di tempo
           href: creating-a-time-provider.md
-        - name: Registrazione di un provider Time
+        - name: Registrazione di un provider di tempo
           href: registering-a-time-provider.md
-        - name: Provider ora di esempio
+        - name: Provider di tempo di esempio
           href: sample-time-provider.md
-        - name: Riferimento al provider Time
+        - name: Informazioni di riferimento sul provider di tempo
           href: time-provider-reference.md
           items:
-            - name: Funzioni del provider Time
+            - name: Funzioni del provider di tempo
               href: time-provider-functions.md
               items:
                 - name: AlertSamplesAvailFunc
@@ -562,7 +562,7 @@
                   href: /windows/desktop/api/Timeprov/nf-timeprov-timeprovcommand
                 - name: TimeProvOpen
                   href: /windows/desktop/api/Timeprov/nf-timeprov-timeprovopen
-            - name: Strutture time provider
+            - name: Strutture del provider di tempo
               href: time-provider-structures.md
               items:
                 - name: SetProviderStatusInfo
@@ -576,11 +576,11 @@
     - name: Piattaforma di valutazione WaaS
       href: update-assessor-service.md
       items:
-        - name: Informazioni sulla piattaforma di valutazione WaaS
+        - name: Informazioni su WaaS Assessment Platform
           href: about-update-assessor-service.md
         - name: Uso della piattaforma di valutazione WaaS
           href: using-update-assessor-service.md
-        - name: Guida di riferimento alla valutazione WaaS
+        - name: Informazioni di riferimento sulla valutazione di WaaS
           href: update-assessor-reference.md
           items:
             - name: Strutture di valutazione WaaS

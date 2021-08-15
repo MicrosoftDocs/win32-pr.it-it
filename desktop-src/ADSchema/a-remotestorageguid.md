@@ -4,7 +4,7 @@ description: Questo attributo contiene il GUID per un oggetto di archiviazione r
 ms.assetid: 9051666f-539c-4339-8652-3ebdab1af301
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Archiviazione-GUID remoto
+- Schema AD Archiviazione-GUID remote-guid
 - Schema AD dell'attributo remoteStorageGUID
 topic_type:
 - apiref
@@ -29,10 +29,10 @@ Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | GUID Archiviazione remoto                         |
+| CN                | GUID del Archiviazione remoto                         |
 | Ldap-Display-Name | remoteStorageGUID                           |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.809                      |
 | System-Id-Guid    | 2a39c5b0-8960-11d1-aebc-0000f80367c1        |
@@ -121,7 +121,7 @@ Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| A valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
@@ -142,7 +142,7 @@ Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| A valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |
@@ -163,7 +163,7 @@ Questo attributo contiene il GUID per un oggetto di archiviazione remota.
 | ID collegamento                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
 | System-Only            | Falso                                                                          |
-| A valore singolo       | Vero                                                                           |
+| Is-Single-Valued       | Vero                                                                           |
 | Indicizzato             | Falso                                                                          |
 | Nel catalogo globale      | Falso                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                   |

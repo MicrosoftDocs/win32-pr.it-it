@@ -46,7 +46,7 @@ HRESULT D3DXDeclaratorFromFVF(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione [di D3DFVF](d3dfvf.md) che descrive il file FVF da cui generare la matrice del dichiaratore restituita.
+Combinazione [di D3DFVF](d3dfvf.md) che descrive il FVF da cui generare la matrice di dichiaratori restituita.
 
 </dd> <dt>
 

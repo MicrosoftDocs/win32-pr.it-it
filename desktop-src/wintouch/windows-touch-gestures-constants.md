@@ -1,6 +1,6 @@
 ---
 title: Windows Costanti dei movimenti tocco (Winuser.h)
-description: Questa sezione elenca le costanti usate per i Windows tocco.
+description: Questa sezione elenca le costanti usate per i movimenti Windows tocco.
 ms.assetid: C5C3C533-A781-47EF-8209-2D94A94C9097
 topic_type:
 - apiref
@@ -21,7 +21,7 @@ ms.locfileid: "118435227"
 ---
 # <a name="windows-touch-gestures-constants"></a>Windows Costanti dei movimenti tocco
 
-Questa sezione elenca le costanti usate per i Windows tocco.
+Questa sezione elenca le costanti usate per i movimenti Windows tocco.
 
 <dl> <dt>
 

@@ -4,18 +4,18 @@ ms.assetid: 1378bbe6-be94-4be1-b428-5ec58dabd1fa
 title: Configurazione di un'origine multimediale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea741e3c04282af445fbea7be07854bf517ec44f
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 69e6737d643db2ee473214586cd7ded4f9596133dac5f4fb177df4d7b6b19757
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880592"
 ---
 # <a name="configuring-a-media-source"></a>Configurazione di un'origine multimediale
 
-Quando si usa il [resolver di origine](source-resolver.md) per creare un'origine multimediale, è possibile specificare un archivio di proprietà che contiene le proprietà di configurazione. Queste proprietà verranno usate per inizializzare l'origine del supporto. Il set di proprietà supportate dipende dall'implementazione dell'origine multimediale. Non tutte le origini supporti definiscono le proprietà di configurazione.
+Quando si usa il [sistema di risoluzione dell'origine](source-resolver.md) per creare un'origine multimediale, è possibile specificare un archivio delle proprietà che contiene le proprietà di configurazione. Queste proprietà verranno usate per inizializzare l'origine multimediale. Il set di proprietà supportate dipende dall'implementazione dell'origine multimediale. Non tutte le origini multimediali definiscono le proprietà di configurazione.
 
-Nella tabella seguente sono elencate le proprietà di configurazione per le origini multimediali disponibili in Media Foundation. Le origini multimediali di terze parti possono definire proprietà personalizzate.
+Nella tabella seguente sono elencate le proprietà di configurazione per le origini multimediali fornite in Media Foundation. Le origini multimediali di terze parti possono definire proprietà personalizzate.
 
 
 
@@ -26,17 +26,17 @@ Nella tabella seguente sono elencate le proprietà di configurazione per le orig
 </colgroup>
 <thead>
 <tr class="header">
-<th>Origine supporto</th>
+<th>Origine multimediale</th>
 <th>Proprietà</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Origine rete</td>
-<td>Vedere <a href="network-source-features.md">funzionalità dell'origine di rete</a>.</td>
+<td>Origine di rete</td>
+<td>Vedere <a href="network-source-features.md">Funzionalità dell'origine di rete</a>.</td>
 </tr>
 <tr class="even">
-<td>Origine supporto ASF</td>
+<td>Origine multimediale ASF</td>
 <td><ul>
 <li><a href="mfpkey-asfmediasource-approxseek-property.md"><strong>MFPKEY_ASFMediaSource_ApproxSeek</strong></a></li>
 <li><a href="mfpkey-asfmediasource-iterativeseekifnoindex.md">MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex</a></li>
@@ -53,9 +53,9 @@ Nella tabella seguente sono elencate le proprietà di configurazione per le orig
 
 Per configurare un'origine, seguire questa procedura.
 
-1.  Chiamare **PSCreateMemoryPropertyStore** per creare un nuovo archivio delle proprietà. Questa funzione restituisce un puntatore **IPropertyStore** .
-2.  Chiamare **IPropertyStore:: SetValue** per impostare una o più proprietà di configurazione.
-3.  Chiamare una delle funzioni di creazione del resolver di origine, ad esempio [**IMFSourceResolver:: CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl), e passare il puntatore **IPropertyStore** nel parametro *pProps* .
+1.  Chiamare **PSCreateMemoryPropertyStore** per creare un nuovo archivio delle proprietà. Questa funzione restituisce un **puntatore IPropertyStore.**
+2.  Chiamare **IPropertyStore::SetValue** per impostare una o più proprietà di configurazione.
+3.  Chiamare una delle funzioni di creazione del resolver di origine, ad esempio [**IMFSourceResolver::CreateObjectFromURL,**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl)e passare il puntatore **IPropertyStore** nel *parametro pProps.*
 
 
 ```C++
@@ -105,9 +105,9 @@ HRESULT CreateMediaSource(
 
 
 
-Il resolver di origine passa il puntatore **IPropertyStore** direttamente al gestore dello schema o al gestore del flusso di byte che crea l'origine. Il resolver di origine non esegue alcun tentativo di convalida delle proprietà.
+Il resolver di origine passa il **puntatore IPropertyStore** direttamente al gestore dello schema o al gestore del flusso di byte che crea l'origine. Il sistema di risoluzione di origine non tenta di convalidare le proprietà.
 
-In genere, queste proprietà vengono usate per le impostazioni avanzate. Se non si fornisce un archivio delle proprietà, l'origine multimediale dovrebbe continuare a funzionare correttamente con le impostazioni predefinite.
+In genere, queste proprietà vengono usate per le impostazioni avanzate. Se non si fornisce un archivio delle proprietà, l'origine dei supporti dovrebbe comunque funzionare correttamente con le impostazioni predefinite.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

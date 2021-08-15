@@ -13,7 +13,7 @@ ms.locfileid: "118482777"
 ---
 # <a name="graphicspathaddclosedcurve-methods"></a>Metodi GraphicsPath.AddClosedCurve
 
-Questo argomento elenca i metodi AddClosedCurve della [**classe GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Per un elenco completo dei metodi per la **classe GraphicsPath,** vedere [**GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath)
+Questo argomento elenca i metodi AddClosedCurve della [**classe GraphicsPath.**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath) Per un elenco completo dei metodi per la **classe GraphicsPath,** vedere [**GraphicsPath**](/windows/win32/api/gdipluspath/nl-gdipluspath-graphicspath).
 
 ### <a name="overload-list"></a>Elenco di overload
 

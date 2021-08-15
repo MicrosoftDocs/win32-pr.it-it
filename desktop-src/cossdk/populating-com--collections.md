@@ -4,26 +4,26 @@ ms.assetid: df86cbab-dcb8-46ac-aebf-8516276b6e81
 title: Popolamento di raccolte COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 521d85521eb7e3750d06920a570ddeaf4d7e9b20
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 256c246a4f5d176e6b706515d02c0dd5cf68f7ae5a9aff7f89949da14510636b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104342251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990671"
 ---
 # <a name="populating-com-collections"></a>Popolamento di raccolte COM+
 
-Dopo aver recuperato una raccolta e prima di poter usare direttamente gli elementi in esso contenuti, è necessario popolare la raccolta usando il metodo [**popolare**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) . Recupera i dati per il contenuto della raccolta dal catalogo COM+.
+Dopo aver recuperato una raccolta e prima di poter lavorare direttamente con gli elementi in essa contenuti, è necessario popolare la raccolta usando il [**metodo Populate.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) In questo modo vengono recuperati i dati per il contenuto della raccolta dal catalogo COM+.
 
-È importante tenere presente che ogni volta che si utilizzano gli oggetti COMAdmin per modificare gli elementi o i dati nelle raccolte, si sta effettivamente lavorando sui dati memorizzati temporaneamente nella cache. non si sta lavorando direttamente con il catalogo permanente. Non viene eseguita alcuna operazione con una raccolta o con i relativi elementi nel catalogo fino a quando non si chiama [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) sulla raccolta. Per informazioni dettagliate, vedere [salvataggio o eliminazione di modifiche](saving-or-discarding-changes.md).
+È importante comprendere che ogni volta che si usano gli oggetti COMAdmin per modificare elementi o dati nelle raccolte, si lavora effettivamente sui dati memorizzati nella cache temporanei. non si lavora direttamente con il catalogo persistente. Nessuna operazione da eseguire con una raccolta o con uno dei relativi elementi viene riflessa nel catalogo fino a quando non si chiama [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) sulla raccolta. Per altri dettagli, vedere [Salvataggio o rimozione delle modifiche.](saving-or-discarding-changes.md)
 
-Tutte le chiamate successive a [**popolare**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate), prima di chiamare [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges), hanno l'effetto di ignorare le modifiche in sospeso in tutti gli elementi della raccolta. **Popola** popola sempre la cache con cui si sta lavorando con i dati salvati in modalità permanente nell'archivio dati del catalogo sottostante.
+Qualsiasi chiamata successiva a [**Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate), prima di chiamare [**SaveChanges,**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges)ha l'effetto di rimuovere le modifiche in sospeso per tutti gli elementi nella raccolta. **Popola sempre** la cache in uso con tutti i dati persistenti nell'archivio dati del catalogo sottostante.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esplorazione della gerarchia della raccolta COM+](navigating-the-com--collection-hierarchy.md)
+[Esplorazione della gerarchia di raccolte COM+](navigating-the-com--collection-hierarchy.md)
 </dt> <dt>
 
 [Esecuzione di query per le raccolte correlate disponibili](querying-for-available-related-collections.md)

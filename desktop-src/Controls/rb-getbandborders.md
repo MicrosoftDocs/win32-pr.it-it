@@ -3,7 +3,7 @@ title: RB_GETBANDBORDERS messaggio (Commctrl.h)
 description: Recupera i bordi di una banda. Il risultato di questo messaggio può essere utilizzato per calcolare l'area utilizzabile in una banda.
 ms.assetid: 45f2ae7e-636e-474b-a0d0-5235c6401e6a
 keywords:
-- RB_GETBANDBORDERS dei controlli Windows messaggio
+- RB_GETBANDBORDERS controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:

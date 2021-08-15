@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXSHAdd (D3dx9math.h): aggiunge due vettori sferici aricali (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .'
+description: Funzione D3DXSHAdd (D3dx9math.h) - Aggiunge due vettori armonici armonici (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .
 ms.assetid: 12775c90-ed9d-4931-a449-2571816dd079
 title: Funzione D3DXSHAdd (D3dx9math.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118524224"
 ---
 # <a name="d3dxshadd-function-d3dx9mathh"></a>Funzione D3DXSHAdd (D3dx9math.h)
 
-Aggiunge due vettori sferici aricali (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .
+Aggiunge due vettori armoniosi sferici (SH). in altre parole, pOut \[ i \] = pA i + \[ \] pB i \[ \] .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHAdd(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntatore ai coefficienti di output SH. La valutazione genera coefficienti Di ordine. Vedere la sezione Osservazioni.
+Puntatore ai coefficienti di output SH. La valutazione genera coefficienti Order². Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntatore ai coefficienti di output SH. La valutazione genera coefficienti Di or
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordine della valutazione SH. Deve essere compreso nell'intervallo [da D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Di ordine. Il grado di valutazione è Order - 1.
+Ordine della valutazione SH. Deve essere compreso nell'intervallo [tra D3DXSH \_ MINORDER](other-d3dx-constants.md) e D3DXSH \_ MAXORDER, inclusi. La valutazione genera coefficienti Order². Il grado di valutazione è Order - 1.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Puntatore ai coefficienti di output SH.
 
 ## <a name="remarks"></a>Commenti
 
-Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria lÊ + m + l, dove:
+Ogni coefficiente della funzione di base Ylm viene archiviato nella posizione di memoria l² + m + l, dove:
 
 -   l è il grado della funzione di base.
 -   m è l'indice della funzione di base per il valore l specificato ed è compreso tra -l e l, inclusi.

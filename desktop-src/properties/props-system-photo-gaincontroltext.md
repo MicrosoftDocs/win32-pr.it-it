@@ -1,5 +1,5 @@
 ---
-description: Formato descrittivo di System.Photo.GainControl. Non deve essere analizzato a livello di codice.
+description: Il formato descrittivo di System.Photo.GainControl. Non deve essere analizzato a livello di codice.
 ms.assetid: 18fd47dc-b428-4ada-aee5-e696e23c1f26
 title: System.Photo.GainControlText
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118228725"
 ---
 # <a name="systemphotogaincontroltext"></a>System.Photo.GainControlText
 
-Formato descrittivo di [System.Photo.GainControl](./props-system-photo-gaincontrol.md). Non deve essere analizzato a livello di codice.
+Il formato descrittivo di [System.Photo.GainControl](./props-system-photo-gaincontrol.md). Non deve essere analizzato a livello di codice.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

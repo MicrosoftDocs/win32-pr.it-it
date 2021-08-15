@@ -13,22 +13,22 @@ ms.locfileid: "118307450"
 ---
 # <a name="configuring-com-crm-components"></a>Configurazione dei componenti COM+ CRM
 
-I componenti CRM possono essere installati in un'applicazione server COM+ o in un'applicazione libreria COM+. Tuttavia, devono essere sempre eseguiti in un'applicazione server COM+. Se vengono installati in un'applicazione libreria COM+, non sono disponibili per l'uso nei processi client.
+I componenti CRM possono essere installati in un'applicazione server COM+ o in un'applicazione libreria COM+. Tuttavia, devono sempre essere eseguiti in un'applicazione server COM+. Se sono installati in un'applicazione libreria COM+, non sono disponibili per l'uso nei processi client.
 
-Se i componenti CRM sono installati in un'applicazione di libreria, sono disponibili per più di un'applicazione server. Se installati in un'applicazione server specifica, sono disponibili solo per l'applicazione server specifica.
+Se i componenti CRM sono installati in un'applicazione libreria, sono disponibili per più di un'applicazione server. Se installati in un'applicazione server specifica, sono disponibili solo per l'applicazione server specifica.
 
-Per abilitare l'uso di crm in un'applicazione server, seguire questa procedura:
+Per abilitare l'uso di un CRM in un'applicazione server, seguire questa procedura:
 
-1.  In Servizi componenti, nella pagina delle proprietà dell'applicazione server, fare clic **sulla scheda** Avanzate .
+1.  Nella pagina delle proprietà dell'applicazione server di Servizi componenti fare clic **sulla scheda** Avanzate.
 
-2.  Selezionare **l'opzione Enable compensating Resource Managers (Abilita gestori risorse** di compensazione) per l'applicazione server. Se questa opzione non è selezionata, i tentativi di utilizzare un SISTEMA CRM all'interno di questa applicazione server avranno esito negativo.
+2.  Selezionare **l'opzione Abilita gestori risorse di compensazione** per l'applicazione server. Se questa opzione non è selezionata, i tentativi di usare un CRM all'interno di questa applicazione server avranno esito negativo.
 
     > [!Note]  
-    > Se installato in un'applicazione di libreria,  non è necessario selezionare l'opzione Abilita gestori risorse di compensazione per tale applicazione di libreria, ma questa opzione deve essere selezionata per l'applicazione server in cui è previsto l'esecuzione del sistema CRM.
+    > Se installato in un'applicazione libreria, non  è necessario selezionare l'opzione Abilita gestori risorse di compensazione per tale applicazione di libreria, ma questa opzione deve essere selezionata per l'applicazione server in cui è destinato l'esecuzione di CRM.
 
      
 
-È consigliabile che i componenti CRM Worker e CRM Compensator per un CRM specifico siano installati nella stessa applicazione.
+È consigliabile installare i componenti CRM Worker e CRM Compensator per un CRM specifico nella stessa applicazione.
 
 Le impostazioni consigliate per i componenti CRM sono le seguenti.
 
@@ -36,7 +36,7 @@ Le impostazioni consigliate per i componenti CRM sono le seguenti.
 
 | Componente           | Impostazioni                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------|
-| **Ruolo di lavoro CRM**      | transaction = requiredsync = yesJIT = yesthreading model = Both (o modello di threading = Apartment)     |
+| **Ruolo di lavoro CRM**      | transaction = requiredsync = yesJIT = yesthreading model = Both (o threading model = Apartment)     |
 | **CRM Compensator** | transaction = disabledsync = disabledJIT = nothreading model = Both (o modello di threading = Apartment) |
 
 
@@ -52,7 +52,7 @@ Le impostazioni consigliate per i componenti CRM sono le seguenti.
 
 <dl> <dt>
 
-[Concetti relativi alla Resource Manager COM+](com--compensating-resource-manager-concepts.md)
+[Concetti relativi alla compensazione Resource Manager COM+](com--compensating-resource-manager-concepts.md)
 </dt> </dl>
 
  

@@ -3,56 +3,56 @@ title: H
 description: H
 ms.assetid: ef592c79-52cd-4a61-a8f3-ca7f1433cf47
 keywords:
-- Windows Color System (WCS), Glossario
-- WCS (Windows Color System), Glossario
-- Gestione colori immagine, Glossario
-- gestione dei colori, Glossario
-- colori, Glossario
-- Windows Color System (WCS), definizioni
-- WCS (sistema di colori Windows), definizioni
-- Gestione colori immagine, definizioni
+- Windows Sistema di colori (WCS), glossario
+- WCS (Windows Color System), glossario
+- gestione del colore delle immagini, glossario
+- gestione dei colori, glossario
+- colori, glossario
+- Windows Sistema colori (WCS), definizioni
+- WCS (Windows Color System), definizioni
+- gestione del colore delle immagini,definizioni
 - gestione dei colori, definizioni
 - colori, definizioni
-- Windows Color System (WCS), termini
-- WCS (Windows Color System), termini
-- Gestione colori immagine, termini
+- Windows Sistema di colori (WCS), termini
+- WCS (Windows Color System), terms
+- gestione del colore delle immagini, termini
 - gestione dei colori, termini
 - colori, termini
-- correzione hardware
+- strumenti di correzione rigidi
 - Spazi colori HLS
-- (HLS)
-- HLS (saturazione luminosità tonalità)
-- spazi colore, HLS
-- spazi colore, HSV
-- Spazi colore HSV
-- tonalità
-- valore saturazione tonalità (HSV)
-- HSV (valore saturazione tonalità)
+- Saturazione della luminosità della tonalità (HLS)
+- HLS (saturazione della luminosità della tonalità)
+- spazi dei colori, HLS
+- spazi dei colori, HSV
+- Spazi colori HSV
+- Hue
+- Valore di saturazione della tonalità (HSV)
+- HSV (valore di saturazione della tonalità)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45c0b57b972f5cecfb26bc25c69a766a84b168bb
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 846b60e728396134c04328add7cd4930e806ff62af73f6b47c22d8b8afe4eb0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "106320137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711011"
 ---
 # <a name="h"></a>H
 
-## <a name="hard-proofing"></a>correzione hardware
+## <a name="hard-proofing"></a>strumenti di correzione rigidi
 
-Visualizzazione in anteprima o correzione di un'immagine stampando una copia hardware.
+Anteprima o correzione di un'immagine stampando una copia di essa.
 
 ## <a name="hls"></a>HLS
 
-Uno spazio di colore spesso usato dagli artisti. I suoi componenti sono Hue, Light and Saturation (Chroma).
+Uno spazio colori spesso usato dagli artisti. I componenti sono Hue, Lightness e Saturation (chroma).
 
-## <a name="hsv"></a>HSV
+## <a name="hsv"></a>Hsv
 
-Uno spazio di colore spesso usato dagli artisti. I componenti sono Hue, Saturation (Chroma) e Value (luminosità).
+Uno spazio colori spesso usato dagli artisti. I componenti sono Hue, Saturation (chroma) e Value (lightness).
 
-## <a name="hue"></a>tonalità
+## <a name="hue"></a>Hue
 
 Colore puro. Una tonalità è una posizione specifica sulla parte visibile dello spettro elettromagnetico.
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento RunOnlyIfNetworkAvailable (settingsType)
-description: Specifica che l'Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
+description: Specifica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
 ms.assetid: b7b804d3-b31a-4d70-9ba5-805a285e278e
 keywords:
-- Utilità di pianificazione elemento RunOnlyIfNetworkAvailable
+- Elemento RunOnlyIfNetworkAvailable Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ff1e7c838c142e30b75eb4abb935c0de352d9f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a3680ba3c29dc0d258a48aa16ae7923e3761eda30f198384fecfbf238e2933cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991031"
 ---
 # <a name="runonlyifnetworkavailable-settingstype-element"></a>Elemento RunOnlyIfNetworkAvailable (settingsType)
 
-Specifica che l'Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
+Specifica che il Utilità di pianificazione eseguirà l'attività solo quando è disponibile una rete.
 
 ``` syntax
 <xs:element name="RunOnlyIfNetworkAvailable"
@@ -32,7 +32,7 @@ Specifica che l'Utilità di pianificazione eseguirà l'attività solo quando è 
  />
 ```
 
-L'elemento **RunOnlyIfNetworkAvailable** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento RunOnlyIfNetworkAvailable** è definito dal tipo [**complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,13 +46,13 @@ L'elemento **RunOnlyIfNetworkAvailable** è definito dal tipo complesso [**setti
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà RunOnlyIfNetworkAvailable di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_runonlyifnetworkavailable).
+Per lo sviluppo in C++, [**vedere Proprietà RunOnlyIfNetworkAvailable di ITaskSettings.**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_runonlyifnetworkavailable)
 
-Per lo sviluppo di script, vedere [**TaskSettings. RunOnlyIfNetworkAvailable**](tasksettings-runonlyifnetworkavailable.md).
+Per lo sviluppo di script, [**vedere TaskSettings.RunOnlyIfNetworkAvailable.**](tasksettings-runonlyifnetworkavailable.md)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che consente l'avvio dell'attività solo se è disponibile una rete.
+Nel codice XML seguente viene definito un elemento settings che consente l'avvio dell'attività solo se è disponibile una rete.
 
 
 ```XML
@@ -69,8 +69,8 @@ Nel codice XML seguente viene definito un elemento Settings che consente l'avvio
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Nel codice XML seguente viene definito un elemento Settings che consente l'avvio
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

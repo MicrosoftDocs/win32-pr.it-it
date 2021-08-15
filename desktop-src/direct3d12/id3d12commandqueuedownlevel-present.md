@@ -1,6 +1,6 @@
 ---
-title: ID3D12CommandQueueDownlevel::P resent
-description: Copia il contenuto da una risorsa Texture2D Direct3D 12 in una finestra. | ID3D12CommandQueueDownlevel::P resent
+title: Metodo ID3D12CommandQueueDownlevel::P resent
+description: Copia il contenuto da una risorsa Texture2D Direct3D 12 in una finestra. | Metodo ID3D12CommandQueueDownlevel::P resent
 keywords:
 - Metodo Present
 - Metodo Present, interfaccia ID3D12CommandQueueDownlevel
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118529131"
 ---
-# <a name="id3d12commandqueuedownlevelpresent-method"></a>ID3D12CommandQueueDownlevel::P resent
+# <a name="id3d12commandqueuedownlevelpresent-method"></a>Metodo ID3D12CommandQueueDownlevel::P resent
 
 Copia il contenuto da una risorsa Texture2D Direct3D 12 in una finestra.
 
@@ -82,7 +82,7 @@ Restituisce **S_OK** in caso di esito positivo oppure restituisce un HRESULT con
 | Requisito | Valore |
 |--------|------------------|
 | Intestazione | d3d12downlevel.h |
-| DLL    | D3D12.dll (Windows 7) |
+| DLL    | D3D12.dll (solo Windows 7) |
 
 ## <a name="see-also"></a>Vedi anche
 * [ID3D12CommandQueueDownlevel](id3d12commandqueuedownlevel.md)

@@ -1,11 +1,11 @@
 ---
-title: Playlist. insertItem, metodo
+title: Metodo Playlist.insertItem
 description: Il metodo insertItem inserisce un elemento multimediale nella playlist nella posizione specificata.
 ms.assetid: c186abc4-0a15-49d2-bbc4-5660e8cc0a4b
 keywords:
-- metodo insertItem Media Player Windows
-- metodo insertItem Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo insertItem
+- Metodo insertItem Windows Media Player
+- Metodo insertItem Windows Media Player , classe Playlist
+- Classe Playlist Windows Media Player metodo insertItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a456b7a359d59958ce7693cc48c16eabba435621
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a71d9ceb39b29c1627ea7596166c39b3dc2f6c76faf45e5ffb54bea14154ac2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995701"
 ---
-# <a name="playlistinsertitem-method"></a>Playlist. insertItem, metodo
+# <a name="playlistinsertitem-method"></a>Metodo Playlist.insertItem
 
-Il metodo **InsertItem** inserisce un elemento multimediale nella playlist nella posizione specificata.
+Il **metodo insertItem** inserisce un elemento multimediale nella playlist nella posizione specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,17 +43,17 @@ Playlist.insertItem(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice in corrispondenza del quale aggiungere l'elemento.
+**Numero** (**long**) contenente l'indice in corrispondenza del quale aggiungere l'elemento.
 
 </dd> <dt>
 
-*elemento* \[ di in\]
+*elemento* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **multimediale** da inserire.
+**Oggetto** multimediale da inserire.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per tutti gli elementi dopo l'elemento inserito i numeri di indice aumenteranno di uno.
+Tutti gli elementi dopo l'elemento inserito avranno i relativi numeri di indice aumentati di uno.
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -82,19 +82,19 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 <dl> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Playlist. Item**](playlist-item.md)
+[**Playlist.item**](playlist-item.md)
 </dt> <dt>
 
-[**Playlist. removeItem**](playlist-removeitem.md)
+[**Playlist.removeItem**](playlist-removeitem.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

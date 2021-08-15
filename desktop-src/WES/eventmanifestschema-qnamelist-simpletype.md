@@ -3,7 +3,7 @@ title: Tipo semplice QNameList
 description: Definisce un elenco di nomi completi.
 ms.assetid: 727d87a0-82f5-44fa-a841-4c2445f78063
 keywords:
-- EventLog di tipo semplice QNameList
+- QNameList di tipo semplice EventLog
 topic_type:
 - apiref
 api_name:
@@ -38,8 +38,8 @@ Definisce un elenco di nomi completi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

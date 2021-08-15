@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa982bce6ef46765df7f9709a213919c9dfc8527
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9590e367c345995decff0901dd478cc5229176abbbcd708d6fc796ee3aa1bd69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103874886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961500"
 ---
 # <a name="frs-service-command-attribute"></a>Attributo FRS-Service-Command
 
@@ -30,12 +30,12 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | FRS-Service-Command                         |
-| LDAP-Display-Name | fRSServiceCommand                           |
+| Ldap-Display-Name | fRSServiceCommand                           |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.500                      |
-| System-ID-GUID    | ddac0cee-af8f-11d0-afeb-00c04fd930c9        |
+| System-Id-Guid    | ddac0cee-af8f-11d0-afeb-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Stringa Unicode che un amministratore può impostare per passare un comando a og
 | ID collegamento                | \-                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                               |
-| È a valore singolo       | Vero                                                                                                                                                                |
+| Is-Single-Valued       | Vero                                                                                                                                                                |
 | Indicizzato             | Falso                                                                                                                                                               |
 | Nel catalogo globale      | Falso                                                                                                                                                               |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                        |
 | Range-Lower            | 0                                                                                                                                                                   |
 | Range-Upper            | 512                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                                          |
-| Classi utilizzate in        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**NTFRS-set di repliche**](c-ntfrsreplicaset.md)<br/> [**Sottoscrittore NTFRS**](c-ntfrssubscriber.md)<br/> |
+| Classi usate in        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> [**NTFRS-Subscriber**](c-ntfrssubscriber.md)<br/> |
 
 
 

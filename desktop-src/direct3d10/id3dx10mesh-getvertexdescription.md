@@ -1,5 +1,5 @@
 ---
-description: Accedere alla descrizione del vertice passata in D3DX10CreateMesh. La descrizione del vertice descrive il layout dei buffer dei vertici della mesh.
+description: Accedere alla descrizione del vertice passata in D3DX10CreateMesh. La descrizione del vertice descrive il layout dei vertex buffer della mesh.
 ms.assetid: e4a4a98a-e131-414c-ad98-21288ff0c61b
 title: Metodo ID3DX10Mesh::GetVertexDescription (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118540227"
 ---
 # <a name="id3dx10meshgetvertexdescription-method"></a>Metodo ID3DX10Mesh::GetVertexDescription
 
-Accedere alla descrizione del vertice passata in [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md). La descrizione del vertice descrive il layout dei buffer dei vertici della mesh.
+Accedere alla descrizione del vertice passata in [**D3DX10CreateMesh**](d3d10-d3dx10createmesh.md). La descrizione del vertice descrive il layout dei vertex buffer della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ HRESULT GetVertexDescription(
 
 Tipo: **const [**D3D10 \_ INPUT ELEMENT \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc) \* \***
 
-Matrice di elementi di input che descrivono il layout dei buffer dei vertici della mesh. Vedere [**D3D10 \_ INPUT ELEMENT DESC (ELEMENTO DI INPUT D3D10 \_ \_ DESC).**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc)
+Matrice di elementi di input che descrivono il layout dei vertex buffer della mesh. Vedere [**ELEMENTO DI INPUT D3D10 \_ \_ \_ DESC**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_input_element_desc).
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Numero di elementi di input in ppDesc.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
 description: Il modello vertex shader 3.0 supporta la ricerca di trame nel vertex shader usando l'istruzione texldl - vs texture load.
 ms.assetid: 595cb5c0-da12-4fe9-944c-a61d8ed990b4
-title: Trame dei vertici in vs_3_0 (DirectX HLSL)
+title: Vertex Textures in vs_3_0 (DirectX HLSL)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a4cbd4aa1e1830d29656fea2bc7b028191bee158eede119c9a47ae2457d10e99
@@ -13,7 +13,7 @@ ms.locfileid: "118519448"
 ---
 # <a name="vertex-textures-in-vs_3_0-directx-hlsl"></a>Vertex Textures in vs \_ 3 \_ 0 (DirectX HLSL)
 
-Il modello vertex shader 3.0 supporta la ricerca di trame nel vertex shader usando l'istruzione [texldl - vs](../direct3dhlsl/texldl---vs.md) texture load. Il motore dei vertici contiene quattro fasi del campionatore di trama, denominate [D3DVERTEXTEXTURESAMPLER0,](d3dvertextexturesampler.md)D3DVERTEXTEXTURESAMPLER1, D3DVERTEXTEXTURESAMPLER2 e D3DVERTEXTEXTURESAMPLER3. Si differenziano dal campionatore mappa di spostamento e dai campionatori di trama nel motore di pixel.
+Il modello vertex shader 3.0 supporta la ricerca di trame nel vertex shader usando l'istruzione [texldl - vs](../direct3dhlsl/texldl---vs.md) texture load. Il motore dei vertici contiene quattro fasi del campionatore di trama, denominate [D3DVERTEXTEXTURESAMPLER0,](d3dvertextexturesampler.md)D3DVERTEXTEXTURESAMPLER1, D3DVERTEXTEXTURESAMPLER2 e D3DVERTEXTEXTURESAMPLER3. Si differenziano dal campionatore della mappa di spostamento e dai campionatori di trama nel motore pixel.
 
 Per campionare le trame impostate in queste quattro fasi, è possibile usare il motore dei vertici e programmare le fasi con il [**metodo CheckDeviceFormat.**](/windows/desktop/api) Impostare le trame in queste fasi usando [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture), con l'indice della fase [da D3DVERTEXTEXTURESAMPLER0](d3dvertextexturesampler.md) a D3DVERTEXTEXTURESAMPLER3. È stato introdotto un nuovo registro nel vertex shader, il registro del campionatore (come in ps \_ 2 0), che rappresenta il campionatore di \_ trama dei vertici. Questo registro deve essere definito nello shader prima di usarlo.
 
@@ -38,9 +38,9 @@ Tali restrizioni includono:
 
 ## <a name="sampling-stage-registers"></a>Registri delle fasi di campionamento
 
-Un registro della fase di campionamento identifica un'unità di campionamento che può essere usata nelle istruzioni di caricamento della trama. Un'unità di campionamento corrisponde alla fase di campionamento della trama, incapsulando lo stato specifico del campionamento fornito in [**SetSamplerState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate)
+Un registro di fase di campionamento identifica un'unità di campionamento che può essere usata nelle istruzioni di caricamento della trama. Un'unità di campionamento corrisponde alla fase di campionamento della trama, incapsulando lo stato specifico del campionamento fornito in [**SetSamplerState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setsamplerstate)
 
-Ogni campionatore identifica in modo univoco una singola superficie di trama impostata sul campionatore corrispondente usando [**SetTexture.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) Tuttavia, la stessa superficie di trama può essere impostata su più campionatori.
+Ogni campionatore identifica in modo univoco una singola superficie di trama impostata sul campionatore corrispondente usando [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture). Tuttavia, la stessa superficie di trama può essere impostata su più campionatori.
 
 In fase di disegno, una trama non può essere impostata contemporaneamente come destinazione di rendering e come trama in una fase.
 

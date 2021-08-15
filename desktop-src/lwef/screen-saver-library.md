@@ -4,56 +4,56 @@ description: L'API Microsoft Win32 supporta applicazioni speciali denominate scr
 ms.assetid: cda5e690-71fe-4df7-b8a2-3a2ad65b1bfb
 keywords:
 - screen saver
-- Pannello di controllo, screen saver
+- Pannello di controllo,screen saver
 - ScreenSaverConfigureDialog
-- file di definizione moduli
+- file di definizione del modulo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b7e0d0c177af2798b041fa12b4cc5793bf9be0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b61343cd586ed022c334b797a77320ee25eccdf48653b4732adc597f4aedde26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104473019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975721"
 ---
 # <a name="handling-screen-savers"></a>Gestione degli screen saver
 
-L'API Microsoft Win32 supporta applicazioni speciali denominate *screen saver*. Gli screen saver iniziano quando il mouse e la tastiera sono rimasti inattivi per un periodo di tempo specificato. Vengono usati per i due motivi seguenti:
+L'API Microsoft Win32 supporta applicazioni speciali denominate *screen saver.* Gli screen saver vengono avviati quando il mouse e la tastiera sono inattivi per un periodo di tempo specificato. Vengono usati per questi due motivi:
 
--   Per proteggere una schermata dall'ustione fosforo causata da immagini statiche.
--   Per nascondere le informazioni riservate rimaste su una schermata.
+-   Per proteggere uno schermo dalla masterizzazione del fosforo causata da immagini statiche.
+-   Per nascondere le informazioni riservate sinistra su una schermata.
 
 Questo argomento è suddiviso nelle sezioni seguenti.
 
 -   [Informazioni sugli screen saver](#about-screen-savers)
--   [Uso delle funzioni screen saver](#using-the-screen-saver-functions)
+-   [Uso delle funzioni dello screen saver](#using-the-screen-saver-functions)
     -   [Creazione di uno screen saver](#creating-a-screen-saver)
     -   [Installazione di nuovi screen saver](#installing-new-screen-savers)
-    -   [Aggiunta della Guida alla finestra di dialogo configurazione screen saver](#adding-help-to-the-screen-saver-configuration-dialog-box)
+    -   [Aggiunta della Guida alla finestra di dialogo Configurazione dello screen saver](#adding-help-to-the-screen-saver-configuration-dialog-box)
 
 ## <a name="about-screen-savers"></a>Informazioni sugli screen saver
 
-L'applicazione desktop nel pannello di controllo di Windows consente agli utenti di eseguire una selezione da un elenco di screen saver, specificare la quantità di tempo che deve trascorrere prima che l'screen saver venga avviata, configurare gli screen saver e visualizzare i salvaschermi. Gli screen saver vengono caricati automaticamente all'avvio di Windows o quando un utente attiva il screen saver tramite il pannello di controllo.
+L'applicazione Desktop nel Windows Pannello di controllo consente agli utenti di selezionare da un elenco di screen saver, specificare quanto tempo deve trascorrere prima dell'avvio del screen saver, configurare gli screen saver e visualizzare in anteprima gli screen saver. Gli screen saver vengono caricati automaticamente all'avvio Windows o quando un utente attiva il screen saver tramite il Pannello di controllo.
 
-Una volta scelto un screen saver, Windows monitora le sequenze di tasti e i movimenti del mouse, quindi avvia il screen saver dopo un periodo di inattività. Tuttavia, Windows non avvia il screen saver se sussistono le condizioni seguenti:
+Dopo aver scelto screen saver, Windows le sequenze di tasti e i movimenti del mouse e quindi avvia il screen saver dopo un periodo di inattività. Tuttavia, Windows non avvia il screen saver se si verifica una delle condizioni seguenti:
 
--   L'applicazione attiva non è un'applicazione basata su Windows.
--   È presente una finestra di training basata su computer (CBT).
--   L'applicazione attiva riceve il messaggio [WM \_ SYSCOMMAND](../menurc/wm-syscommand.md) con il parametro *wParam* impostato sul valore SC \_ SCREENSAVE, ma non passa il messaggio alla funzione [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) .
+-   L'applicazione attiva non è un'Windows basata sull'applicazione.
+-   È presente una finestra CBT (Computer-Based Training).
+-   L'applicazione attiva riceve il messaggio [ \_ SYSCOMMAND WM](../menurc/wm-syscommand.md) con il parametro *wParam* impostato sul valore SC SCREENSAVE, ma non passa il messaggio alla \_ funzione [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
 **Contesto di sicurezza dello screen saver**
 
-Il contesto di sicurezza del screen saver dipende dal fatto che un utente sia connesso in modo interattivo. Se un utente è connesso in modo interattivo quando viene richiamato il screen saver, il screen saver viene eseguito nel contesto di sicurezza dell'utente interattivo. Se nessun utente è connesso, il contesto di sicurezza del screen saver dipende dalla versione di Windows in uso.
+Il contesto di sicurezza del screen saver dipende dal fatto che un utente sia connesso in modo interattivo. Se un utente è connesso in modo interattivo quando screen saver viene richiamato il screen saver, il screen saver viene eseguito nel contesto di sicurezza dell'utente interattivo. Se nessun utente è connesso, il contesto di sicurezza del screen saver dipende dalla versione del Windows in uso.
 
--   Windows XP e Windows 2000-screen saver vengono eseguiti nel contesto di LocalSystem con account con restrizioni.
--   Windows 2003-screen saver viene eseguito nel contesto di LocalService con tutti i privilegi rimossi e il gruppo Administrators è disabilitato.
+-   Windows XP e Windows 2000: screen saver nel contesto di LocalSystem con account limitati.
+-   Windows 2003- screen saver nel contesto di LocalService con tutti i privilegi rimossi e il gruppo administrators disabilitato.
 -   Non si applica a Windows NT4.
 
-Il contesto di sicurezza determina il livello delle operazioni con privilegi che possono essere eseguite da un screen saver.
+Il contesto di sicurezza determina il livello di operazioni con privilegi che possono essere eseguite da un screen saver.
 
-**Windows Vista e versioni successive:** Se la protezione con password è abilitata dal criterio, l'screen saver viene avviata indipendentemente dall'operazione eseguita da un'applicazione con la \_ notifica SC SCREENSAVE.
+**Windows Vista e versioni successive:** Se la protezione tramite password è abilitata dai criteri, il screen saver viene avviato indipendentemente da ciò che un'applicazione esegue con la notifica SC \_ SCREENSAVE.
 
-Gli screen saver contengono funzioni esportate, definizioni di risorse e dichiarazioni di variabili specifiche. La libreria screen saver contiene la funzione **principale** e un altro codice di avvio necessario per un screen saver. All'avvio di un screen saver, il codice di avvio nella libreria screen saver crea una finestra a schermo intero. La classe della finestra per questa finestra è dichiarata come segue:
+Gli screen saver contengono funzioni esportate specifiche, definizioni di risorse e dichiarazioni di variabili. La screen saver contiene la **funzione main** e altro codice di avvio necessario per un screen saver. Quando viene screen saver, il codice di avvio nella libreria screen saver crea una finestra a schermo intero. La classe window per questa finestra viene dichiarata come segue:
 
 
 ```
@@ -72,69 +72,69 @@ cls.cbClsExtra     = 0;
 
 
 
-Per creare una screen saver, la maggior parte degli sviluppatori crea un modulo di codice sorgente contenente tre funzioni obbligatorie e le collega alla libreria di screen saver. Un modulo screen saver è responsabile solo per la configurazione e per fornire effetti visivi.
+Per creare un screen saver, la maggior parte degli sviluppatori crea un modulo di codice sorgente contenente tre funzioni necessarie e le collega alla screen saver libreria. Un screen saver modulo è responsabile solo della configurazione di se stesso e della fornitura di effetti visivi.
 
-Una delle tre funzioni obbligatorie in un modulo screen saver è [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc). Questa funzione elabora messaggi specifici e passa di nuovo i messaggi non elaborati alla libreria screen saver. Di seguito sono riportati alcuni dei messaggi tipici elaborati da **ScreenSaverProc**.
+Una delle tre funzioni necessarie in un modulo screen saver è [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc). Questa funzione elabora messaggi specifici e passa tutti i messaggi non elaborati alla screen saver libreria. Di seguito sono riportati alcuni dei messaggi tipici elaborati **da ScreenSaverProc**.
 
 
 
 | Messaggio        | Significato                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| creazione di WM \_     | Recuperare tutti i dati di inizializzazione dal file di Regedit.ini. Impostare un timer di finestra per la finestra di screen saver. Eseguire qualsiasi altra inizializzazione richiesta.                                     |
-| \_ERASEBKGND WM | Cancellare la finestra screen saver e prepararsi per le operazioni di disegno successive.                                                                                                               |
-| \_timer WM      | Eseguire operazioni di disegno.                                                                                                                                                                |
-| eliminazione di WM \_    | Elimina i timer creati quando l'applicazione ha elaborato il messaggio [WM \_ create](../winmsg/wm-create.md) . Eseguire eventuali operazioni di pulizia necessarie aggiuntive. |
+| CREAZIONE DI WM \_     | Recuperare tutti i dati di inizializzazione dal file Regedit.ini file. Impostare un timer di finestra per la screen saver finestra. Eseguire qualsiasi altra inizializzazione richiesta.                                     |
+| WM \_ ERASEBKGND | Cancellare la finestra screen saver e prepararsi per le operazioni di disegno successive.                                                                                                               |
+| WM \_ TIMER      | Eseguire operazioni di disegno.                                                                                                                                                                |
+| WM \_ DESTROY    | Eliminare i timer creati quando l'applicazione ha elaborato il [messaggio WM \_ CREATE.](../winmsg/wm-create.md) Eseguire qualsiasi pulizia necessaria aggiuntiva. |
 
 
 
- 
+ 
 
-[**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) passa messaggi non elaborati alla libreria screen saver chiamando la funzione [**DefScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) . Nella tabella seguente viene descritto il modo in cui questa funzione elabora vari messaggi.
+[**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) passa messaggi non elaborati alla libreria screen saver chiamando la [**funzione DefScreenSaverProc.**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) Nella tabella seguente viene descritto come questa funzione elabora vari messaggi.
 
 
 
 | Message         | Azione                                                                    |
 |-----------------|---------------------------------------------------------------------------|
-| \_cursore WM   | Impostare il cursore sul cursore null, rimuovendo il cursore dalla schermata.           |
-| \_disegno WM       | Disegnare lo sfondo dello schermo.                                              |
-| \_LBUTTONDOWN WM | Terminare il screen saver.                                               |
-| \_MBUTTONDOWN WM | Terminare il screen saver.                                               |
-| \_RBUTTONDOWN WM | Terminare il screen saver.                                               |
-| KeyDown di WM \_     | Terminare il screen saver.                                               |
-| MOUSEMOVE di WM \_   | Terminare il screen saver.                                               |
-| \_attivazione WM    | Terminare il screen saver se il parametro *wParam* è impostato su **false**. |
+| WM \_ SETCURSOR   | Impostare il cursore sul cursore Null, rimuovendo il cursore dallo schermo.           |
+| WM \_ PAINT       | Paint lo sfondo dello schermo.                                              |
+| WM \_ LBUTTONDOWN | Terminare il screen saver.                                               |
+| WM \_ MBUTTONDOWN | Terminare il screen saver.                                               |
+| WM \_ RBUTTONDOWN | Terminare il screen saver.                                               |
+| WM \_ KEYDOWN     | Terminare il screen saver.                                               |
+| WM \_ MOUSEMOVE   | Terminare il screen saver.                                               |
+| ATTIVAZIONE \_ WM    | Terminare il screen saver se il *parametro wParam* è impostato su **FALSE.** |
 
 
 
- 
+ 
 
-La seconda funzione obbligatoria in un modulo screen saver è [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog). Questa funzione Visualizza una finestra di dialogo che consente all'utente di configurare il screen saver (un'applicazione deve fornire un modello di finestra di dialogo corrispondente). Windows consente di visualizzare la finestra di dialogo configurazione quando l'utente seleziona il pulsante di **installazione** nella finestra di dialogo screen saver del pannello di controllo.
+La seconda funzione richiesta in un modulo screen saver è [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog). Questa funzione visualizza una finestra di dialogo che consente all'utente di configurare il screen saver (un'applicazione deve fornire un modello di finestra di dialogo corrispondente). Windows la finestra di dialogo di configurazione quando  l'utente seleziona il pulsante Configurazione nella finestra Pannello di controllo screen saver del dispositivo.
 
-La terza funzione obbligatoria in un modulo screen saver è [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses). Questa funzione deve essere chiamata da tutte le applicazioni screen saver. Tuttavia, le applicazioni che non necessitano di speciali finestre o controlli personalizzati nella finestra di dialogo di configurazione possono semplicemente restituire **true**. Per la registrazione delle classi di finestra corrispondenti, le applicazioni che richiedono controlli Windows o personalizzati speciali devono usare questa funzione.
+La terza funzione richiesta in un modulo screen saver è [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses). Questa funzione deve essere chiamata da tutte le screen saver applicazioni. Tuttavia, le applicazioni che non richiedono finestre speciali o controlli personalizzati nella finestra di dialogo di configurazione possono semplicemente restituire **TRUE.** Le applicazioni che richiedono finestre speciali o controlli personalizzati devono usare questa funzione per registrare le classi finestra corrispondenti.
 
-Oltre alla creazione di un modulo che supporta le tre funzioni appena descritte, un screen saver deve fornire un'icona. Questa icona è visibile solo quando il screen saver viene eseguito come applicazione autonoma. (Per essere eseguito dal pannello di controllo, una screen saver deve avere l'estensione di file SCR; per essere eseguita come applicazione autonoma, è necessario che l'estensione del nome file sia exe). L'icona deve essere identificata nel file di risorse del screen saver dall'app Constant ID \_ , definita nel file di intestazione scrnsave. h.
+Oltre a creare un modulo che supporta le tre funzioni appena descritte, un screen saver deve fornire un'icona. Questa icona è visibile solo quando il screen saver viene eseguito come applicazione autonoma. Per essere eseguito dal Pannello di controllo, un screen saver deve avere l'estensione scr. Per essere eseguito come applicazione autonoma, deve avere l'estensione .exe file. L'icona deve essere identificata nel file di risorse del screen saver dall'ID costante APP, definito nel file di intestazione \_ Scrnsave.h.
 
-Un requisito finale è una stringa di descrizione screen saver. Il file di risorse per un screen saver deve contenere una stringa visualizzata dal pannello di controllo come nome del screen saver. La stringa di descrizione deve essere la prima stringa nella tabella di stringhe del file di risorse (identificato con il valore ordinale 1). Tuttavia, la stringa di descrizione viene ignorata dal pannello di controllo se il screen saver ha un nome di file lungo. In tal caso, il nome del file verrà usato come stringa di descrizione.
+Un requisito finale è una screen saver di descrizione. Il file di risorse per un screen saver deve contenere una stringa visualizzata dal Pannello di controllo come screen saver nome. La stringa di descrizione deve essere la prima stringa nella tabella delle stringhe del file di risorse (identificata con il valore ordinale 1). Tuttavia, la stringa di descrizione viene ignorata dal Pannello di controllo se il screen saver ha un nome file lungo. In tal caso, il nome file verrà usato come stringa di descrizione.
 
-## <a name="using-the-screen-saver-functions"></a>Uso delle funzioni screen saver
+## <a name="using-the-screen-saver-functions"></a>Uso delle funzioni dello screen saver
 
-In questa sezione viene usato il codice di esempio tratto da un'applicazione screen saver per illustrare le attività seguenti:
+Questa sezione usa codice di esempio tratto da un'screen saver per illustrare le attività seguenti:This section uses example code taken from a screen saver application to illustrate the following tasks:
 
 -   [Creazione di uno screen saver](#creating-a-screen-saver)
 -   [Installazione di nuovi screen saver](#installing-new-screen-savers)
--   [Aggiunta della Guida alla finestra di dialogo configurazione screen saver](#adding-help-to-the-screen-saver-configuration-dialog-box)
+-   [Aggiunta della Guida alla finestra di dialogo Configurazione dello screen saver](#adding-help-to-the-screen-saver-configuration-dialog-box)
 
 ### <a name="creating-a-screen-saver"></a>Creazione di uno screen saver
 
-A intervalli compresi tra 1 e 10 secondi, l'applicazione in questo esempio disegna la schermata con uno dei quattro colori seguenti: bianco, grigio chiaro, grigio scuro e nero. L'applicazione disegna la schermata ogni volta che riceve un messaggio [del \_ timer WM](../winmsg/wm-timer.md) . L'utente può regolare l'intervallo in corrispondenza del quale viene inviato il messaggio selezionando la finestra di dialogo di configurazione dell'applicazione e modificando una singola barra di scorrimento orizzontale.
+A intervalli compresi tra 1 e 10 secondi, l'applicazione in questo esempio ridisegna lo schermo con uno dei quattro colori seguenti: bianco, grigio chiaro, grigio scuro e nero. L'applicazione disegna lo schermo ogni volta che riceve un [messaggio WM \_ TIMER.](../winmsg/wm-timer.md) L'utente può regolare l'intervallo di invio del messaggio selezionando la finestra di dialogo di configurazione dell'applicazione e modificando una singola barra di scorrimento orizzontale.
 
 ### <a name="screen-saver-library"></a>Libreria screen saver
 
-Le funzioni di screen saver statiche sono contenute nella libreria di screen saver. Sono disponibili due versioni della libreria, scrnsave. lib e Scrnsavw. lib. È necessario collegare il progetto a uno di questi. Scrnsave. lib viene usato per gli screen saver che usano caratteri ANSI e Scrnsavw. lib viene usato per gli screen saver che usano caratteri Unicode. Un screen saver collegato a Scrnsavw. lib verrà eseguito solo su piattaforme Windows che supportano Unicode, mentre una screen saver collegata a scrnsave. lib verrà eseguita su qualsiasi piattaforma Windows.
+Le funzioni screen saver sono contenute nella libreria screen saver statica. Sono disponibili due versioni della libreria, Scrnsave.lib e Scrnsavw.lib. È necessario collegare il progetto a uno di questi elementi. Scrnsave.lib viene usato per gli screen saver che usano caratteri ANSI e Scrnsavw.lib viene usato per gli screen saver che usano caratteri Unicode. Un screen saver collegato a Scrnsavw.lib verrà eseguito solo su piattaforme Windows che supportano Unicode, mentre un screen saver collegato a Scrnsave.lib verrà eseguito in qualsiasi piattaforma Windows.
 
 ### <a name="supporting-the-configuration-dialog-box"></a>Supporto della finestra di dialogo di configurazione
 
-La maggior parte degli screen saver fornisce una finestra di dialogo di configurazione che consente all'utente di specificare i dati di personalizzazione, ad esempio colori univoci, velocità di disegno, spessore linea, caratteri e così via. Per supportare la finestra di dialogo configurazione, l'applicazione deve fornire un modello di finestra di dialogo e deve supportare anche la funzione [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) . Di seguito è riportato il modello della finestra di dialogo per l'applicazione di esempio.
+La maggior parte degli screen saver fornisce una finestra di dialogo di configurazione che consente all'utente di specificare dati di personalizzazione, ad esempio colori univoci, velocità di disegno, spessore di linea, tipi di carattere e così via. Per supportare la finestra di dialogo di configurazione, l'applicazione deve fornire un modello di finestra di dialogo e deve supportare anche la [**funzione ScreenSaverConfigureDialog.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) Di seguito è riportato il modello di finestra di dialogo per l'applicazione di esempio.
 
 
 ```
@@ -155,7 +155,7 @@ END
 
 
 
-È necessario definire la costante utilizzata per identificare il modello della finestra di dialogo usando il valore decimale 2003, come nell'esempio seguente:
+È necessario definire la costante utilizzata per identificare il modello di finestra di dialogo usando il valore decimale 2003, come nell'esempio seguente:
 
 
 ```
@@ -164,7 +164,7 @@ END
 
 
 
-Nell'esempio seguente viene illustrata la funzione [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) trovata nell'applicazione di esempio.
+L'esempio seguente illustra [**la funzione ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) disponibile nell'applicazione di esempio.
 
 
 ```
@@ -297,7 +297,7 @@ HRESULT  hr;
 
 
 
-Oltre a fornire il modello della finestra di dialogo e a supportare la funzione [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) , un'applicazione deve supportare anche la funzione [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) . Questa funzione registra le classi di finestra non standard richieste dal screen saver. Poiché nell'applicazione di esempio sono state utilizzate solo classi di finestra standard nella relativa routine della finestra di dialogo, questa funzione restituisce semplicemente **true**, come nell'esempio seguente:
+Oltre a fornire il modello di finestra di dialogo e a supportare la [**funzione ScreenSaverConfigureDialog,**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) un'applicazione deve supportare anche la [**funzione RegisterDialogClasses.**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) Questa funzione registra tutte le classi di finestra non standard richieste dal screen saver. Poiché l'applicazione di esempio usava solo classi di finestra standard nella routine della finestra di dialogo, questa funzione restituisce **semplicemente TRUE**, come nell'esempio seguente:
 
 
 ```
@@ -310,9 +310,9 @@ HANDLE  hInst;
 
 
 
-### <a name="supporting-the-screen-saver-window-procedure"></a>Supporto della procedura screen saver finestra
+### <a name="supporting-the-screen-saver-window-procedure"></a>Supporto della procedura screen saver finestra di dialogo
 
-Ogni screen saver deve supportare una routine della finestra denominata [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc). Analogamente alla maggior parte delle routine della finestra, **ScreenSaverProc** elabora un set di messaggi specifici e passa tutti i messaggi non elaborati a una procedura predefinita. Tuttavia, anziché passarli alla funzione [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) , **ScreenSaverProc** passa i messaggi non elaborati alla funzione [**DefScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) . Un'altra differenza tra **ScreenSaverProc** e una normale routine della finestra è che l'handle passato a **ScreenSaverProc** identifica l'intero desktop anziché una finestra client. Nell'esempio seguente viene illustrata la procedura della finestra **ScreenSaverProc** per l'screen saver di esempio.
+Ogni screen saver deve supportare una routine di finestra denominata [**ScreenSaverProc.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) Come la maggior parte delle procedure finestra, **ScreenSaverProc** elabora un set di messaggi specifici e passa tutti i messaggi non elaborati a una procedura predefinita. Tuttavia, invece di passarli alla funzione [DefWindowProc,](/windows/win32/api/winuser/nf-winuser-defwindowproca) **ScreenSaverProc** passa i messaggi non elaborato alla [**funzione DefScreenSaverProc.**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) Un'altra differenza **tra ScreenSaverProc** e una routine di finestra normale è che l'handle passato a **ScreenSaverProc** identifica l'intero desktop anziché una finestra client. L'esempio seguente illustra la **procedura della finestra ScreenSaverProc** per l'esempio screen saver.
 
 
 ```
@@ -397,7 +397,7 @@ LONG  lParam;
 
 ### <a name="creating-a-module-definition-file"></a>Creazione di un file di definizione del modulo
 
-Le funzioni [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) e [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) devono essere esportate nel file di definizione del modulo dell'applicazione. Tuttavia, [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) non deve essere esportato. Nell'esempio seguente viene illustrato il file di definizione del modulo per l'applicazione di esempio.
+Le [**funzioni ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) [**e ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) devono essere esportate nel file di definizione del modulo dell'applicazione. [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) non deve tuttavia essere esportato. L'esempio seguente illustra il file di definizione del modulo per l'applicazione di esempio.
 
 
 ```
@@ -423,12 +423,12 @@ EXPORTS
 
 ### <a name="installing-new-screen-savers"></a>Installazione di nuovi screen saver
 
-Quando si compila l'elenco di screen saver disponibili, il pannello di controllo Cerca i file con estensione SCR nella directory di avvio di Windows. Poiché gli screen saver sono file eseguibili di Windows standard con estensioni exe, è necessario rinominarli in modo che dispongano di estensioni SCR e copiarli nella directory corretta.
+Quando si compila l'elenco degli screen saver disponibili, il Pannello di controllo cerca nella directory di Windows di avvio i file con estensione scr. Poiché gli screen saver sono file eseguibili Windows standard con estensioni .exe, è necessario rinominarli in modo che siano con estensione scr e copiarli nella directory corretta.
 
-### <a name="adding-help-to-the-screen-saver-configuration-dialog-box"></a>Aggiunta della Guida alla finestra di dialogo configurazione screen saver
+### <a name="adding-help-to-the-screen-saver-configuration-dialog-box"></a>Aggiunta della Guida alla finestra di dialogo di configurazione dello screen saver
 
-La finestra di dialogo di configurazione per un screen saver include in genere **un pulsante?** . Le applicazioni screen saver possono verificare l'identificatore del pulsante della guida e chiamare la funzione [**WinHelp**](/windows/desktop/api/winuser/nf-winuser-winhelpa) nello stesso modo in cui vengono fornite informazioni in altre applicazioni basate su Windows.
+La finestra di dialogo di configurazione per un screen saver in genere include un **pulsante** ? . Le applicazioni screen saver possono cercare l'identificatore del pulsante ? e chiamare la funzione [**WinHelp**](/windows/desktop/api/winuser/nf-winuser-winhelpa) nello stesso modo in cui viene fornita la Guida in altre applicazioni basate Windows guida.
 
- 
+ 
 
- 
+ 

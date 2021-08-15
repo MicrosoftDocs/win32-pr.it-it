@@ -15,13 +15,13 @@ ms.locfileid: "118361729"
 # <a name="obtaining-accounting-properties"></a>Recupero delle proprietà di accounting
 
 > [!Note]  
-> Il servizio Autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete (NPS) a partire da Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a Server dei criteri di rete. In tutto il testo, Server dei criteri di rete viene usato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente denominate IAS.
+> Il servizio di autenticazione Internet (IAS) è stato rinominato Server dei criteri di rete (NPS) a partire Windows Server 2008. Il contenuto di questo argomento si applica sia a IAS che a Server dei criteri di rete. In tutto il testo, Server dei criteri di rete viene usato per fare riferimento a tutte le versioni del servizio, incluse le versioni originariamente indicate come IAS.
 
  
 
 L'oggetto accounting è uno degli oggetti nella raccolta Request Handlers. Il valore di enumerazione per la raccolta di gestori richieste è **PROPERTY \_ IAS \_ REQUESTHANDLERS \_ COLLECTION**. Il nome del gestore per l'oggetto accounting è "Microsoft Accounting".
 
-Il codice Visual Basic seguente accede alle proprietà disponibili dal gestore dell'oggetto accounting.
+Nell'esempio Visual Basic codice accede alle proprietà disponibili dal gestore dell'oggetto accounting.
 
 
 ```VB
@@ -37,11 +37,11 @@ vtTemp = sdoRequestHandler.GetProperty(PROPERTY_ACCOUNTING_LOG_OPEN_NEW_SIZE)
 
 
 
-Per accedere alle proprietà di accounting tramite C++, ottenere prima di tutto la raccolta dei gestori richieste. Il [recupero di una raccolta contiene](/windows/desktop/Nps/sdo-retrieving-a-collection) codice C++ che illustra come ottenere una raccolta. Il valore di enumerazione per la raccolta di gestori richieste è **PROPERTY \_ IAS \_ REQUESTHANDLERS \_ COLLECTION**. I valori corrispondenti alle varie raccolte di server dei criteri di rete vengono enumerati dal tipo di enumerazione [**IASPROPERTIES.**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
+Per accedere alle proprietà di accounting usando C++, ottenere prima di tutto la raccolta di gestori di richieste. [L'oggetto Recupero di una raccolta](/windows/desktop/Nps/sdo-retrieving-a-collection) contiene codice C++ che illustra come ottenere una raccolta. Il valore di enumerazione per la raccolta di gestori richieste è **PROPERTY \_ IAS \_ REQUESTHANDLERS \_ COLLECTION**. I valori corrispondenti alle varie raccolte di Server dei criteri di rete vengono enumerati dal [**tipo di enumerazione IASPROPERTIES.**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 
-La raccolta dei gestori richieste contiene un oggetto denominato "Microsoft Accounting". Recuperare questo oggetto dalla raccolta. La sezione [Recupero di un oggetto da una raccolta](/windows/desktop/Nps/sdo-retrieving-an-object-from-a-collection) contiene codice C++ che illustra come ottenere un oggetto da una raccolta.
+La raccolta dei gestori richieste contiene un oggetto denominato "Microsoft Accounting". Recuperare questo oggetto dalla raccolta. La sezione [Recupero di un oggetto da](/windows/desktop/Nps/sdo-retrieving-an-object-from-a-collection) una raccolta contiene codice C++ che illustra come ottenere un oggetto da una raccolta.
 
-Dopo aver ottenuto l'oggetto Microsoft Accounting, ottenere [**un'interfaccia ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo) per l'oggetto [**usando IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). La sezione [Recupero di un SDO](/windows/desktop/Nps/sdo-retrieving-a-user-sdo) utente contiene codice C++ che illustra come ottenere **un'interfaccia ISdo** per un oggetto. È quindi possibile usare il [**metodo ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty) per ottenere i valori delle proprietà per l'oggetto Microsoft Accounting.
+Dopo aver creato l'oggetto Microsoft Accounting, ottenere [**un'interfaccia ISdo**](/windows/desktop/api/sdoias/nn-sdoias-isdo) per l'oggetto [**usando IUnknown::QueryInterface.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) La sezione [Recupero di un SDO](/windows/desktop/Nps/sdo-retrieving-a-user-sdo) utente contiene codice C++ che illustra come ottenere **un'interfaccia ISdo** per un oggetto. È quindi possibile usare il [**metodo ISdo::GetProperty**](/windows/desktop/api/sdoias/nf-sdoias-isdo-getproperty) per ottenere i valori delle proprietà per l'oggetto Microsoft Accounting.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -62,7 +62,7 @@ Dopo aver ottenuto l'oggetto Microsoft Accounting, ottenere [**un'interfaccia IS
 [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))
 </dt> <dt>
 
-[**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
+[**PROPRIETÀ IAS**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> </dl>
 
  

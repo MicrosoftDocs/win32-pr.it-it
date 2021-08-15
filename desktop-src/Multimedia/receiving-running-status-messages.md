@@ -3,8 +3,8 @@ title: Ricezione Running-Status messaggi
 description: Ricezione Running-Status messaggi
 ms.assetid: 4f2e8e41-89f6-45e3-ae16-47b856f0e63e
 keywords:
-- Instrument Digital Interface (MIDI), stato di esecuzione
-- MIDI (Instrument Digital Interface), stato di esecuzione
+- MIDI (Musical Instrument Digital Interface), stato di esecuzione
+- MIDI (Musical Instrument Digital Interface), stato di esecuzione
 - registrazione di audio MIDI, stato di esecuzione
 ms.topic: article
 ms.date: 05/31/2018
@@ -17,13 +17,13 @@ ms.locfileid: "118371346"
 ---
 # <a name="receiving-running-status-messages"></a>Ricezione Running-Status messaggi
 
-La *specifica Standard MIDI Files 1.0* consente l'uso dello stato di esecuzione quando un messaggio ha lo stesso byte di stato del messaggio precedente.  Quando si utilizza lo stato di esecuzione, il byte di stato dei messaggi successivi può essere omesso. Tutti i driver di dispositivo di input MIDI sono necessari per espandere i messaggi usando lo stato di esecuzione in messaggi completi, in modo da ricevere sempre messaggi MIDI completi da un driver di dispositivo di input MIDI.
+La *specifica MIDI Files 1.0*  standard consente l'uso dello stato di esecuzione quando un messaggio ha lo stesso byte di stato del messaggio precedente. Quando si usa lo stato di esecuzione, è possibile omettere il byte di stato dei messaggi successivi. Tutti i driver di dispositivo di input MIDI sono necessari per espandere i messaggi usando lo stato di esecuzione in messaggi completi, in modo da ricevere sempre messaggi MIDI completi da un driver di dispositivo di input MIDI.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Registrazione di audio MIDI](recording-midi-audio.md)
+[Registrazione dell'audio MIDI](recording-midi-audio.md)
 </dt> </dl>
 
  

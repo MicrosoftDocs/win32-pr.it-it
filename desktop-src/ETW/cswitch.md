@@ -253,7 +253,7 @@ Motivo di attesa per il thread precedente. Di seguito sono indicati i valori pos
 | 12    | WrSuspended       |
 | 13    | WrUserRequest     |
 | 14    | WrEventPair       |
-| 15    | Coda Wr           |
+| 15    | WrQueue           |
 | 16    | WrLpcReceive      |
 | 17    | WrLpcReply        |
 | 18    | WrVirtualMemory   |
@@ -295,7 +295,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(5)
 </dt> </dl>
 
-Indice dello stato C utilizzato per l'ultima volta dal processore. Il valore 0 rappresenta lo stato di inattività più leggero con valori più elevati che rappresentano stati C più approfonditi.
+Indice dell'ultimo stato C usato dal processore. Il valore 0 rappresenta lo stato di inattività più leggero con valori più elevati che rappresentano stati C più profondi.
 
 </dd> <dt>
 
@@ -341,8 +341,8 @@ Questi eventi producono un volume elevato di eventi.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

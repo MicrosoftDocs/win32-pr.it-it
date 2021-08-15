@@ -26,7 +26,7 @@ Per altre informazioni su IAS, vedere [TechNet: Servizio](/previous-versions/win
 
 ## <a name="network-policy-server"></a>Server dei criteri di rete
 
-Server dei criteri di rete è l'implementazione Microsoft di un server RADIUS e di un proxy ed è disponibile nei server Windows a partire da Windows Server 2008.
+Server dei criteri di rete è l'implementazione Microsoft di un server e proxy RADIUS ed è disponibile nei server Windows a partire da Windows Server 2008.
 
 Server dei criteri di rete supporta gli stessi due set di API di IAS: [l'API delle](ias-extensions.md) estensioni del server dei criteri di rete e l'API oggetti dati del [server](server-data-objects.md).
 
@@ -91,7 +91,7 @@ Server dei criteri di rete, tramite Protezione accesso alla rete, interagisce co
 </tr>
 <tr class="even">
 <td>Strumento di gestione dei ruoli e integrazione Server Manager ruoli<br/></td>
-<td>Server dei criteri di rete è integrato Server Manager e lo strumento di gestione dei ruoli. Questa integrazione facilita la configurazione e la gestione di Server dei criteri di rete e degli scenari correlati.<br/> Server Manager non è disponibile nei computer che eseguono IAS.<br/></td>
+<td>Server dei criteri di rete è integrato con Server Manager e lo strumento di gestione dei ruoli. Questa integrazione facilita la configurazione e la gestione di Server dei criteri di rete e degli scenari correlati.<br/> Server Manager non è disponibile nei computer che eseguono IAS.<br/></td>
 </tr>
 <tr class="odd">
 <td>Aggiornamento dello scripting della riga di comando <a href="/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)">con Netsh</a>.<br/></td>

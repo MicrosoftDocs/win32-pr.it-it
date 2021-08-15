@@ -17,9 +17,9 @@ ms.locfileid: "118487209"
 # <a name="jet_columndef-properties"></a>JET_COLUMNDEF proprietà
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
-Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
+Il [JET_COLUMNDEF](./jet-columndef-class.md) espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 
@@ -45,12 +45,12 @@ Il [JET_COLUMNDEF](./jet-columndef-class.md) tipo espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335079(v=exchg.10).md">columnid</a></td>
-<td>Ottiene l'id colonna della colonna.</td>
+<td>Ottiene il valore columnid della colonna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>
 <td><a href="dn335044(v=exchg.10).md">cp</a></td>
-<td>Ottiene o imposta la tabella codici della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> e <a href="hh577895(v=exchg.10).md">LongText.</a></td>
+<td>Ottiene o imposta la tabella codici della colonna. Ciò è significativo solo per le colonne di tipo <a href="hh577895(v=exchg.10).md">Text</a> <a href="hh577895(v=exchg.10).md">e LongText.</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Proprietà pubblica" alt="Public property" /></td>

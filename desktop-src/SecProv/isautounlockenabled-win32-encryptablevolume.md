@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 2a144d54ff4564fa322efadd521e44c2fa9a8173
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19437bf40d27bea87103beecfbe8bee71e404c054ace46cb9728f7ac992b5c85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891912"
 ---
-# <a name="isautounlockenabled-method-of-the-win32_encryptablevolume-class"></a>Metodo IsAutoUnlockEnabled della \_ classe EncryptableVolume Win32
+# <a name="isautounlockenabled-method-of-the-win32_encryptablevolume-class"></a>Metodo IsAutoUnlockEnabled della classe \_ EncryptableVolume Win32
 
-Il metodo **IsAutoUnlockEnabled** della classe [**\_ EncryptableVolume Win32**](win32-encryptablevolume.md) indica se il volume viene sbloccato automaticamente quando viene montato, ad esempio quando i dispositivi di memoria rimovibili sono connessi al computer.
+Il metodo **IsAutoUnlockEnabled** della classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) indica se il volume viene sbloccato automaticamente al momento del montaggio, ad esempio quando i dispositivi di memoria rimovibile sono connessi al computer.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,29 +40,29 @@ uint32 IsAutoUnlockEnabled(
 
 <dl> <dt>
 
-*IsAutoUnlockEnabled* \[ out\]
+*IsAutoUnlockEnabled* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Valore booleano che è true se la chiave esterna utilizzata per sbloccare automaticamente il volume esiste ed è stata archiviata nel volume del sistema operativo attualmente in esecuzione; in caso contrario, è false.
+Valore booleano che è true se la chiave esterna usata per sbloccare automaticamente il volume esiste ed è stata archiviata nel volume del sistema operativo attualmente in esecuzione, in caso contrario è false.
 
 </dd> <dt>
 
-*VolumeKeyProtectorID* \[ out\]
+*VolumeKeyProtectorID* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **stringa**
+Tipo: **string**
 
-Identificatore di stringa univoco che contiene l'ID della protezione con chiave del volume crittografato associato se *IsAutoUnlockEnabled* è true.
+Identificatore di stringa univoco che contiene l'ID di protezione della chiave del volume crittografato associato se *IsAutoUnlockEnabled* è true.
 
-Se *IsAutoUnlockEnabled* è false, *VolumeKeyProtectorID* è una stringa vuota.
+Se *IsAutoUnlockEnabled è* false, *VolumeKeyProtectorID* è una stringa vuota.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se ha esito negativo.
 
@@ -71,8 +71,8 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 | Codice/valore restituito                                                                                                                                                                     | Descrizione                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                     | Il metodo è stato eseguito correttamente.<br/>                                                       |
-| <dl> <dt>**FVE \_ E \_ non \_ attivato**</dt> <dt>2150694920 (0x80310008)</dt> </dl>    | Nel volume non è abilitato BitLocker. Aggiungere una protezione con chiave per abilitare BitLocker.<br/> |
-| <dl> <dt>**FVE \_ E \_ non \_ il \_ VOLUME di dati**</dt> <dt>2150694937 (0x80310019)</dt> </dl> | Impossibile eseguire il metodo per il volume del sistema operativo attualmente in esecuzione.<br/>      |
+| <dl> <dt>**FVE \_ E \_ NOT \_ ACTIVATED**</dt> <dt>2150694920 (0x80310008)</dt> </dl>    | Nel volume non è abilitato BitLocker. Aggiungere una protezione con chiave per abilitare BitLocker.<br/> |
+| <dl> <dt>**FVE \_ E \_ NOT \_ DATA \_ VOLUME**</dt> <dt>2150694937 (0x80310019)</dt> </dl> | Non è possibile eseguire il metodo per il volume del sistema operativo attualmente in esecuzione.<br/>      |
 
 
 
@@ -80,7 +80,7 @@ Questo metodo restituisce uno dei codici seguenti o un altro codice di errore se
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non sono installati come parte del Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Windows SDK. Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -88,10 +88,10 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ desktop apps\]<br/>                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Radice \\ CIMV2 \\ sicurezza \\ MicrosoftVolumeEncryption<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Client minimo supportato<br/> | Windows Vista Enterprise, Windows solo app desktop Vista Ultimate \[\]<br/>                       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> </dl>
 
  

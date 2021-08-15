@@ -44,13 +44,13 @@ Specifica il nome dell'entità visualizzata nell'interfaccia Utilità di pianifi
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, il nome visualizzato dell'entità viene specificato usando la [**proprietà Principal.DisplayName.**](principal-displayname.md)
+Per lo sviluppo di script, il nome visualizzato dell'entità viene specificato tramite la [**proprietà Principal.DisplayName.**](principal-displayname.md)
 
-Per lo sviluppo in C++, il nome visualizzato dell'entità viene specificato usando la proprietà [**IPrincipal::D isplayName.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname)
+Per lo sviluppo C++, il nome visualizzato dell'entità viene specificato usando la proprietà [**IPrincipal::D isplayName.**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_displayname)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un oggetto utilizzando un identificatore di gruppo e un nome visualizzato.
+Il codice XML seguente definisce un oggetto usando un identificatore di gruppo e un nome visualizzato.
 
 
 ```XML
@@ -62,7 +62,7 @@ Nel codice XML seguente viene definito un oggetto utilizzando un identificatore 
 
 
 
-Nel codice XML seguente viene definita un'entità utilizzando un identificatore utente e un nome visualizzato.
+Il codice XML seguente definisce un'entità usando un identificatore utente e un nome visualizzato.
 
 
 ```XML
@@ -81,8 +81,8 @@ Nel codice XML seguente viene definita un'entità utilizzando un identificatore 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Rappresenta un tablet collegato al computer.
+description: Rappresenta una tablet collegata al computer.
 ms.assetid: 31e11f7d-5610-4c49-9203-2dc322fbef95
 title: Interfaccia ITablet
 ms.topic: reference
@@ -14,40 +14,40 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 76fa7baea2713e5a2e5eaae562b6dac29e002fff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0cb98a74758d701e7ab6322567d2a20606380a58fc43676ad5edb136cec999b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712251"
 ---
 # <a name="itablet-interface"></a>Interfaccia ITablet
 
-Rappresenta un tablet collegato al computer.
+Rappresenta una tablet collegata al computer.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ITablet** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet** dispone anche di questi tipi di membri:
+**L'interfaccia ITablet** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ITablet** dispone di questi metodi.
+**L'interfaccia ITablet** include questi metodi.
 
 
 
 | Metodo                                                                 | Descrizione                                                                           |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
-| [**CreateContext**](itablet-createcontext.md)                         | Crea un oggetto di contesto che descrive il dispositivo Tablet specificato.<br/>       |
+| [**CreateContext**](itablet-createcontext.md)                         | Crea un oggetto contesto che descrive la periferica tablet specificata.<br/>       |
 | [**GetCursor**](/previous-versions/windows/desktop/legacy/aa373535(v=vs.85))                                 | Recupera l'oggetto [**ITabletCursor**](itabletcursor.md) specificato.<br/>     |
-| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera il numero di oggetti cursori associati al tablet.<br/>         |
+| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera il numero di oggetti cursore associati alla tablet.<br/>         |
 | [**GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md) | Recupera le impostazioni di contesto predefinite per il tablet.<br/>                     |
 | [**GetHardwareCaps**](itablet-gethardwarecaps.md)                     | Recupera un valore che rappresenta le funzionalità dell'hardware del tablet.<br/> |
-| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera un rettangolo che rappresenta l'area di input massima della tavoletta.<br/>    |
+| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera un rettangolo che rappresenta l'area di input massima della tablet.<br/>    |
 | [**GetName**](itablet-getname.md)                                     | Recupera una stringa contenente il nome del dispositivo tablet.<br/>               |
-| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera una stringa contenente l'ID Plug and Play per la tavoletta.<br/>  |
-| [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera i dati di metrica per una proprietà specificata.<br/>                       |
+| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera una stringa contenente l'ID Plug and Play per il dispositivo tablet.<br/>  |
+| [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera i dati delle metriche per una proprietà specificata.<br/>                       |
 
 
 
@@ -55,9 +55,9 @@ L'interfaccia **ITablet** dispone di questi metodi.
 
 ## <a name="remarks"></a>Commenti
 
-Gli sviluppatori non devono utilizzare questa interfaccia.
+Gli sviluppatori non devono usare questa interfaccia.
 
-Il codice seguente descrive il modo in cui viene definita l'interfaccia **ITablet** .
+Nel codice seguente viene descritto come viene **definita l'interfaccia ITablet.**
 
 ``` syntax
 [
@@ -112,7 +112,7 @@ interface ITablet : IUnknown
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Libreria<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

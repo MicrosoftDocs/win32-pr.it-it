@@ -1,7 +1,7 @@
 ---
-description: Contiene i puntatori alle funzioni di callback che possono essere utilizzati dalle funzioni del provider del servizio di crittografia (CSP).
+description: Contiene puntatori a funzioni di callback che possono essere usate dalle funzioni del provider del servizio di crittografia (CSP).
 ms.assetid: 84a379e9-c6b9-4c1d-bbbb-9bed4a045d90
-title: Struttura VTableProvStruc (Cspdk. h)
+title: Struttura VTableProvStruc (Cspdk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 api_location:
 - Cspdk.h
-ms.openlocfilehash: 99b9344c6951dc93972315d9b4f60752f1484d68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2815d12735023cd0f7ac60fc2ed9f60fc56e32d0f54610f295a2e6b0544e589c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103759458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117970867"
 ---
 # <a name="vtableprovstruc-structure"></a>Struttura VTableProvStruc
 
-La struttura **VTableProvStruc** contiene i puntatori alle funzioni di callback che possono essere utilizzati dalle funzioni del [*provider del servizio di crittografia*](../secgloss/c-gly.md) (CSP).
+La **struttura VTableProvStruc** contiene puntatori a funzioni di callback che possono essere usate dalle funzioni CSP [*(Cryptographic Service Provider).*](../secgloss/c-gly.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,10 +46,10 @@ typedef struct VTableProvStruc {
 
 <dl> <dt>
 
-**Versione**
+**Version**
 </dt> <dd>
 
-Valore **DWORD** che indica la versione della struttura. Vengono utilizzate tre versioni di questa struttura. Le versioni sono il numero 1, 2 e 3 e determinano quali membri della struttura sono validi. I membri della versione 1 sono validi in tutti i sistemi che supportano questa struttura.
+Valore **DWORD** che indica la versione della struttura . Vengono usate tre versioni di questa struttura. Le versioni sono i numeri 1, 2 e 3 e determinano quali membri della struttura sono validi. I membri della versione 1 sono validi in tutti i sistemi che supportano questa struttura.
 
 Si tratta di un membro della versione 1.
 
@@ -58,9 +58,9 @@ Si tratta di un membro della versione 1.
 **FuncVerifyImage**
 </dt> <dd>
 
-Indirizzo di una funzione di callback [**FuncVerifyImage**](funcverifyimage.md) che il CSP utilizza per verificare la firma di tutte le dll che il CSP caricherà. Tutte le DLL ausiliarie in cui un CSP effettua chiamate di funzione devono essere firmate nello stesso modo (e con la stessa chiave) della DLL CSP primaria. Per garantire la firma, le DLL ausiliarie devono essere caricate in modo dinamico tramite la funzione [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) . Ma prima del caricamento della DLL, è necessario verificare la firma della DLL. Il CSP esegue questa verifica chiamando la funzione **FuncVerifyImage** , come illustrato nell'esempio riportato di seguito.
+Indirizzo di una funzione di callback [**FuncVerifyImage**](funcverifyimage.md) che il CSP usa per verificare la firma di tutte le DLL che verranno caricate dal CSP. Tutte le DLL ausiliarie in cui un CSP effettua chiamate di funzione devono essere firmate nello stesso modo (e con la stessa chiave) della DLL CSP primaria. Per garantire questa firma, le DLL ausiliarie devono essere caricate dinamicamente usando la [**funzione LoadLibrary.**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) Tuttavia, prima del caricamento della DLL, è necessario verificare la firma della DLL. Il CSP esegue questa verifica chiamando la **funzione FuncVerifyImage,** come illustrato nell'esempio seguente.
 
-Questo puntatore a funzione può essere archiviato e utilizzato fino a quando non viene rilasciato il contesto CSP.
+Questo puntatore a funzione può essere archiviato e usato fino al rilascio del contesto CSP.
 
 Si tratta di un membro della versione 1.
 
@@ -69,9 +69,9 @@ Si tratta di un membro della versione 1.
 **FuncReturnhWnd**
 </dt> <dd>
 
-Indirizzo di una funzione di callback [**FuncReturnhWnd**](funcreturnhwnd.md) che restituisce l'handle della finestra che deve essere utilizzato dal CSP come padre o proprietario di qualsiasi interfaccia utente visualizzata. I CSP che non comunicano direttamente con l'utente e i CSP che utilizzano hardware dedicato a questo scopo possono ignorare questa voce. Questo handle di finestra è pari a zero per impostazione predefinita, ma un'applicazione può impostarla su un valore diverso usando la funzione [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) per impostare la proprietà **\_ \_ HWND del client PP** .
+Indirizzo di una funzione di callback [**FuncReturnhWnd**](funcreturnhwnd.md) che restituisce l'handle di finestra che il CSP deve usare come padre o proprietario di qualsiasi interfaccia utente visualizzata. I CSP che non comunicano direttamente con l'utente e i CSP che usano hardware dedicato a questo scopo possono ignorare questa voce. Questo handle di finestra è zero per impostazione predefinita, ma un'applicazione può impostarlo su un valore diverso usando la funzione [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) per impostare la proprietà **PP CLIENT \_ \_ HWND.**
 
-Questo puntatore a funzione può essere archiviato e utilizzato fino a quando non viene rilasciato il contesto CSP.
+Questo puntatore a funzione può essere archiviato e usato fino al rilascio del contesto CSP.
 
 Si tratta di un membro della versione 1.
 
@@ -80,13 +80,13 @@ Si tratta di un membro della versione 1.
 **dwProvType**
 </dt> <dd>
 
-Valore **DWORD** che specifica il tipo di provider da acquisire. I [*tipi di provider*](../secgloss/p-gly.md) seguenti sono predefiniti e sono descritti in dettaglio nell' [interoperabilità CSP](https://www.bing.com/search?q=CSP+Interoperability):
+Valore **DWORD** che specifica il tipo di provider da acquisire. I tipi [*di provider seguenti*](../secgloss/p-gly.md) sono predefiniti e vengono descritti in dettaglio in [Interoperabilità CSP:](https://www.bing.com/search?q=CSP+Interoperability)
 
--   PROV \_ RSA \_ completo
--   PROVA \_ RSA \_ sig
--   PROVA \_ DSS
--   PROVA \_ fortezza
--   PROVA \_ MS \_ Exchange
+-   PROV \_ RSA \_ FULL
+-   PROV \_ RSA \_ SIG
+-   PROV \_ DSS
+-   PROV \_ FORTARE
+-   PROV \_ MS \_ EXCHANGE
 
 Si tratta di un membro della versione 2.
 
@@ -95,7 +95,7 @@ Si tratta di un membro della versione 2.
 **pbContextInfo**
 </dt> <dd>
 
-Puntatore a una matrice di informazioni di contesto. I membri **pbContextInfo** e **cbContextInfo** determinano il set di informazioni usato quando viene chiamata una funzione [**CPSetProvParam**](https://www.bing.com/search?q=**CPSetProvParam**) con le informazioni sul \_ contesto PP \_ impostate.
+Puntatore a una matrice di informazioni di contesto. I **membri pbContextInfo** e **cbContextInfo** determinano insieme il set di informazioni usato quando viene chiamata una funzione [**CPSetProvParam**](https://www.bing.com/search?q=**CPSetProvParam**) con PP \_ CONTEXT INFO \_ impostato.
 
 Si tratta di un membro della versione 2.
 
@@ -104,7 +104,7 @@ Si tratta di un membro della versione 2.
 **cbContextInfo**
 </dt> <dd>
 
-Valore **DWORD** che indica il numero di elementi nella matrice **pbContextInfo** .
+Valore **DWORD** che indica il numero di elementi nella matrice **pbContextInfo.**
 
 Si tratta di un membro della versione 2.
 
@@ -113,7 +113,7 @@ Si tratta di un membro della versione 2.
 **pszProvName**
 </dt> <dd>
 
-Stringa che contiene il nome del provider.
+Stringa contenente il nome del provider.
 
 Si tratta di un membro della versione 3.
 
@@ -121,7 +121,7 @@ Si tratta di un membro della versione 3.
 
 ## <a name="remarks"></a>Commenti
 
-I puntatori nella struttura **VTableProvStruc** sono disponibili solo all'interno della funzione [**CPAcquireContext**](https://www.bing.com/search?q=**CPAcquireContext**) . Se i membri della struttura sono necessari dopo il completamento di una chiamata a **CPAcquireContext** , le copie degli elementi della struttura necessari devono essere eseguite dal CSP. I puntatori a funzione in questa struttura possono essere archiviati e utilizzati fino a quando non viene rilasciato il contesto CSP.
+I puntatori nella **struttura VTableProvStruc** sono disponibili solo all'interno della [**funzione CPAcquireContext.**](https://www.bing.com/search?q=**CPAcquireContext**) Se i membri della struttura sono necessari dopo il completamento di una chiamata a **CPAcquireContext,** il CSP deve creare copie degli elementi della struttura necessari. I puntatori a funzione in questa struttura possono essere archiviati e usati fino al rilascio del contesto CSP.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -129,9 +129,9 @@ I puntatori nella struttura **VTableProvStruc** sono disponibili solo all'intern
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Cspdk. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Cspdk.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **VTableProvStrucW** (Unicode)<br/>                                          |
 
 

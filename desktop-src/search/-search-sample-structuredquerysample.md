@@ -1,19 +1,19 @@
 ---
-description: L'esempio di codice StructuredQuerySample illustra come leggere le righe dalla console, analizzarle usando lo schema del sistema e visualizzare gli alberi delle condizioni risultanti.
+description: L'esempio di codice StructuredQuerySample illustra come leggere righe dalla console, analizzarle usando lo schema di sistema e visualizzare gli alberi delle condizioni risultanti.
 ms.assetid: 9bb56d80-670e-4b2b-bf3f-40d0a75a89b6
 title: StructuredQuerySample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64da74b56658f74b056c64c314a2986ddce45ba3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cab8f32a3ed58133893ed5c38c16c2ac242e9a28c6384a4e354bb6b0524c5a1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462576"
 ---
 # <a name="structuredquerysample"></a>StructuredQuerySample
 
-L'esempio di codice StructuredQuerySample illustra come leggere le righe dalla console, analizzarle usando lo schema del sistema e visualizzare gli alberi delle condizioni risultanti.
+L'esempio di codice StructuredQuerySample illustra come leggere righe dalla console, analizzarle usando lo schema di sistema e visualizzare gli alberi delle condizioni risultanti.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -28,13 +28,13 @@ In questo argomento sono contenute le sezioni seguenti.
 | Prodotto     | Versione prodotto          |
 |-------------|--------------------------|
 | Windows     | Windows 7, 8.1 o 10    |
-| Windows SDK | 7,0 o versione successiva           |
+| Windows SDK | 7.0 o versione successiva           |
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
 Questo esempio è disponibile nel percorso seguente.
 
-| Location      | URL percorso                                                                  |
+| Località      | URL del percorso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [StructuredQuerySample](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/StructuredQuerySample)  |
 
@@ -43,18 +43,18 @@ Questo esempio è disponibile nel percorso seguente.
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
-1. Aprire Esplora risorse e passare alla directory del progetto **StructuredQuerySample** .
-2. Fare doppio clic sull'icona per il file StructuredQuerySample. sln per aprire il progetto in Visual Studio.
+1. Aprire Windows Explorer e passare alla directory **del progetto StructuredQuerySample.**
+2. Fare doppio clic sull'icona per il file StructuredQuerySample.sln per aprire il progetto in Visual Studio.
 
     > [!NOTE]  
-    > Il file sln è stato creato con una versione precedente di Visual Studio, quindi l'aggiornamento sarà necessario se si esegue Visual Studio 2012 o versione successiva. Questo non avrà alcun effetto sul comportamento dell'esempio.
+    > Il file sln è stato creato con una versione precedente di Visual Studio, pertanto sarà necessario aggiornarlo se si esegue Visual Studio 2012 o versione successiva. Ciò non inciderà sul comportamento dell'esempio.
 
-3. Scegliere **Compila soluzione** dal menu **Compila** .
+3. Scegliere **Compila** soluzione dal menu **Compila**.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-1. Passare alla directory contenente il nuovo eseguibile, utilizzando la finestra del prompt dei comandi o Esplora risorse.
-2. Al prompt dei comandi, immettere `StructuredQuerySample.exe` o da Esplora risorse, fare doppio clic sull'icona per StructuredQuerySample.exe.
+1. Passare alla directory che contiene il nuovo eseguibile usando la finestra del prompt dei comandi o Windows Explorer.
+2. Al prompt dei comandi immettere o in Windows Explorer fare doppio clic `StructuredQuerySample.exe` sull'icona per StructuredQuerySample.exe.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

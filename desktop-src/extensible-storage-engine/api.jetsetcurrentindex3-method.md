@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Metodo Api.JetSetCurrentIndex3'
+description: Altre informazioni sul metodo Api.JetSetCurrentIndex3
 title: Metodo Api.JetSetCurrentIndex3
 TOCTitle: 'JetSetCurrentIndex3 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetCurrentIndex3(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit,System.Int32)
@@ -33,9 +33,9 @@ ms.locfileid: "118498171"
 ---
 # <a name="apijetsetcurrentindex3-method"></a>Metodo Api.JetSetCurrentIndex3
 
-Imposta l'indice corrente di un cursore.
+Impostare l'indice corrente di un cursore.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -73,7 +73,7 @@ public static void JetSetCurrentIndex3(
   - sesid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sessione da utilizzare.
+    Sessione da usare.
 
 <!-- end list -->
 
@@ -101,7 +101,7 @@ public static void JetSetCurrentIndex3(
   - itagSequence  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Numero di sequenza del valore della colonna multivalore che verrà utilizzato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [NoMove.](./setcurrentindexgrbit-enumeration.md) Quando questo parametro non è presente o è impostato su zero, si presuppone che il relativo valore sia 1.
+    Numero di sequenza del valore della colonna multivalore che verrà usato per posizionare il cursore sul nuovo indice. Questo parametro viene usato solo in combinazione con [NoMove](./setcurrentindexgrbit-enumeration.md). Quando questo parametro non è presente o è impostato su zero, si presuppone che il relativo valore sia 1.
 
 ## <a name="see-also"></a>Vedi anche
 

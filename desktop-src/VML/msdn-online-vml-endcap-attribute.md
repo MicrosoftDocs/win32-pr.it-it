@@ -13,14 +13,14 @@ ms.locfileid: "118346716"
 ---
 # <a name="vml-endcap-attribute"></a>Attributo VML EndCap
 
-Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. È necessario eseguire la migrazione di pagine Web e applicazioni basate su VML a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
-Definisce lo stile dell'estremità per la fine di un tratto. Proprietà di lettura/scrittura. **VgLineEndCapStyle**.
+Definisce lo stile del tappo per la fine di un tratto. Proprietà di lettura/scrittura. **VgLineEndCapStyle**.
 
 **Si applica a**
 
@@ -44,11 +44,11 @@ I possibili valori sono:
 -   Square
 -   Round
 
-*Attributo VML Standard*
+*Attributo standard VML*
 
 **Esempio**
 
-Viene disegnata una linea con un estremità piatta alla fine del tratto.
+Una linea viene disegnata con un tappo piatto alla fine del tratto.
 
 
 ```HTML

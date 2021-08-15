@@ -1,19 +1,19 @@
 ---
-description: Numero di bit validi di dati audio in ogni esempio audio.
+description: Numero di bit validi di dati audio in ogni campione audio.
 ms.assetid: b5b97700-c98a-4394-a184-661852add0b4
-title: Attributo MF_MT_AUDIO_VALID_BITS_PER_SAMPLE (Mfapi. h)
+title: MF_MT_AUDIO_VALID_BITS_PER_SAMPLE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d4e5efb41bf3b79d4feded2872b601eea43723a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6f84fa3938e4d74473da70bd28e5ccbb1bab71441c694b670cdb8b54bead31c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973580"
 ---
-# <a name="mf_mt_audio_valid_bits_per_sample-attribute"></a>\_ \_ Bit validi per l'audio MF mt \_ \_ \_ per ogni \_ attributo di esempio
+# <a name="mf_mt_audio_valid_bits_per_sample-attribute"></a>MF \_ MT AUDIO VALID \_ \_ \_ BITS PER SAMPLE \_ \_ ATTRIBUTE
 
-Numero di bit validi di dati audio in ogni esempio audio.
+Numero di bit validi di dati audio in ogni campione audio.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,15 +21,15 @@ Numero di bit validi di dati audio in ogni esempio audio.
 
 ## <a name="remarks"></a>Commenti
 
-Per i formati audio che contengono spaziatura interna dopo ogni esempio di audio, viene usato l'attributo di **\_ bit valido di MF mt \_ \_ \_ \_ per \_ esempio** . La dimensione totale di ogni esempio di audio, inclusi i bit di riempimento, viene fornita nell'attributo [**\_ \_ \_ bit audio \_ per \_ campione MF mt**](mf-mt-audio-bits-per-sample-attribute.md) .
+**L'attributo \_ MF MT AUDIO VALID \_ \_ \_ BITS PER \_ \_ SAMPLE** viene usato per i formati audio che contengono spaziatura interna dopo ogni campione audio. Le dimensioni totali di ogni campione audio, inclusi i bit di riempimento, sono specificate nell'attributo [**\_ MF MT \_ AUDIO \_ BITS \_ PER \_ SAMPLE.**](mf-mt-audio-bits-per-sample-attribute.md)
 
-Se il valore di **\_ bit validi per l'attributo MF mt \_ audio \_ \_ \_ per \_ esempio** non è impostato, usare l'attributo [**\_ bit MF mt \_ audio bits per \_ \_ \_ esempio**](mf-mt-audio-bits-per-sample-attribute.md) per trovare il numero di bit validi per campione.
+Se **l'attributo MF \_ MT \_ AUDIO VALID \_ \_ BITS PER \_ \_ SAMPLE** non è impostato, usare l'attributo [**MF MT AUDIO \_ \_ \_ BITS PER \_ \_ SAMPLE**](mf-mt-audio-bits-per-sample-attribute.md) per trovare il numero di bit validi per campione.
 
-Se un formato audio non contiene bit di spaziatura interna, questo attributo non deve essere impostato oppure deve essere impostato sullo stesso valore di [**MF \_ mt \_ audio \_ bits \_ per ogni \_**](mf-mt-audio-bits-per-sample-attribute.md) attributo di esempio.
+Se un formato audio non contiene bit di riempimento, questo attributo non deve essere impostato o deve essere impostato sullo stesso valore dell'attributo [**\_ MF MT \_ AUDIO \_ BITS \_ PER \_ SAMPLE.**](mf-mt-audio-bits-per-sample-attribute.md)
 
-Questo attributo corrisponde al membro **wValidBitsPerSample** della struttura [**WAVEFORMATEXTENSIBLE**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible) .
+Questo attributo corrisponde al **membro wValidBitsPerSample** della [**struttura WAVEFORMATEXTENSIBLE.**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible)
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows Vista app \[ \| UWP\]<br/>                              |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2008 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows App desktop Di Vista \[ \| app UWP\]<br/>                              |
+| Server minimo supportato<br/> | Windows App UWP per app desktop server 2008 \[ \|\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -47,13 +47,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

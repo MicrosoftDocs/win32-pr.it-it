@@ -1,7 +1,7 @@
 ---
 description: Descrive la modalità di visualizzazione.
 ms.assetid: e83c03ee-2067-45c9-8fd8-8c4db5558df4
-title: Struttura D3DDISPLAYMODE (D3D9Types. h)
+title: Struttura D3DDISPLAYMODE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 8bf73899742f02a9682a3a27319768db894fd682
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9879a9711466d3fb5f6aa4117a9aaf3b8a10fe13886cffa8d7ee9b81c00b0b00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104132310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987481"
 ---
 # <a name="d3ddisplaymode-structure"></a>Struttura D3DDISPLAYMODE
 
@@ -45,7 +45,7 @@ typedef struct D3DDISPLAYMODE {
 **Larghezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Larghezza dello schermo, in pixel.
 **Altezza**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,11 +67,11 @@ Altezza dello schermo, in pixel.
 **RefreshRate**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Frequenza di aggiornamento. Il valore 0 indica l'impostazione predefinita di un adapter.
+Frequenza. Il valore 0 indica il valore predefinito di un adapter.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Membro del tipo enumerato [D3DFORMAT](d3dformat.md) , che descrive il formato di superficie della modalità di visualizzazione.
+Membro del [tipo enumerato D3DFORMAT,](d3dformat.md) che descrive il formato della superficie della modalità di visualizzazione.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Membro del tipo enumerato [D3DFORMAT](d3dformat.md) , che descrive il formato di
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

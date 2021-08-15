@@ -1,9 +1,9 @@
-- name: Provider WMI per la sicurezza
+- name: Provider WMI di sicurezza
   href: secprov-portal.md
   items:
-    - name: Informazioni sui provider WMI per la sicurezza
+    - name: Informazioni sui provider WMI di sicurezza
       href: about-security-wmi-providers.md
-    - name: Guida di riferimento ai provider WMI di sicurezza
+    - name: Informazioni di riferimento per i provider WMI di sicurezza
       href: security-wmi-providers-reference.md
       items:
         - name: Provider di Crittografia unità BitLocker
@@ -12,7 +12,7 @@
             - name: Win32_EncryptableVolume
               href: win32-encryptablevolume.md
               items:
-                - name: Metodi di Win32_EncryptableVolume
+                - name: metodi Win32_EncryptableVolume
                   href: win32-encryptablevolume-methods.md
                   items:
                     - name: Metodo BackupRecoveryInformationToActiveDirectory
@@ -21,7 +21,7 @@
                       href: changeexternalkey-win32-encryptablevolume.md
                     - name: Metodo ChangePassphrase
                       href: changepassphrase-win32-encryptablevolume.md
-                    - name: Metodo Changepin aggiorna
+                    - name: Metodo ChangePIN
                       href: changepin-win32-encryptablevolume.md
                     - name: Metodo ClearAllAutoUnlockKeys
                       href: clearallautounlockkeys-win32-encryptablevolume.md
@@ -93,7 +93,7 @@
                       href: iskeyprotectoravailable-win32-encryptablevolume.md
                     - name: Metodo IsNumericalPasswordValid
                       href: isnumericalpasswordvalid-win32-encryptablevolume.md
-                    - name: Lock (metodo)
+                    - name: Metodo Lock
                       href: lock-win32-encryptablevolume.md
                     - name: Metodo PauseConversion
                       href: pauseconversion-win32-encryptablevolume.md
@@ -139,13 +139,13 @@
                       href: unlockwithpassphrase-win32-encryptablevolume.md
                     - name: Metodo UpgradeVolume
                       href: upgradevolume-win32-encryptablevolume.md
-        - name: Provider di Trusted Platform Module
+        - name: Trusted Platform Module Provider
           href: trusted-platform-module-provider.md
           items:
             - name: Win32_Tpm
               href: win32-tpm.md
               items:
-                - name: Metodi di Win32_Tpm
+                - name: Win32_Tpm metodi
                   href: win32-tpm-methods.md
                   items:
                     - name: Metodo AddBlockedCommand
@@ -158,11 +158,11 @@
                       href: converttoownerauth-win32-tpm.md
                     - name: Metodo CreateEndorsementKeyPair
                       href: createendorsementkeypair-win32-tpm.md
-                    - name: Disable (metodo)
+                    - name: Metodo Disable
                       href: disable-win32-tpm.md
                     - name: Metodo DisableAutoProvisioning
                       href: win32-tpm-disableautoprovisioning.md
-                    - name: Enable (metodo)
+                    - name: Metodo Enable
                       href: enable-win32-tpm.md
                     - name: Metodo EnableAutoProvisioning
                       href: win32-tpm-enableautoprovisioning.md
@@ -182,7 +182,7 @@
                       href: win32-tpm-getsrkpublickeymodulus.md
                     - name: Metodo ImportOwnerAuth
                       href: win32-tpm-importownerauth.md
-                    - name: Metodo disattivato
+                    - name: Metodo IsActivated
                       href: isactivated-win32-tpm.md
                     - name: Metodo IsAutoProvisioningEnabled
                       href: win32-tpm-isautoprovisioningenabled.md
@@ -190,11 +190,11 @@
                       href: iscommandblocked-win32-tpm.md
                     - name: Metodo IsCommandPresent
                       href: iscommandpresent-win32-tpm.md
-                    - name: IsEnabled (metodo)
+                    - name: Metodo IsEnabled
                       href: isenabled-win32-tpm.md
                     - name: Metodo IsEndorsementKeyPairPresent
                       href: isendorsementkeypairpresent-win32-tpm.md
-                    - name: Metodo di proprietà
+                    - name: Metodo IsOwned
                       href: isowned-win32-tpm.md
                     - name: Metodo IsOwnerClearDisabled
                       href: isownercleardisabled-win32-tpm.md
@@ -204,7 +204,7 @@
                       href: isphysicalcleardisabled-win32-tpm.md
                     - name: Metodo IsPhysicalPresenceHardwareEnabled
                       href: isphysicalpresencehardwareenabled-win32-tpm.md
-                    - name: Metodo di lettura
+                    - name: Metodo IsReady
                       href: win32-tpm-isready.md
                     - name: Metodo IsReadyInformation
                       href: win32-tpm-isreadyinformation.md

@@ -28,7 +28,7 @@ ms.locfileid: "118421448"
 La **classe CIM \_ ProductSupport** rappresenta un'associazione tra il prodotto e l'accesso al supporto che indica come viene ottenuto il supporto per il prodotto. Per un prodotto sono disponibili vari tipi di supporto. lo stesso oggetto di supporto può fornire assistenza per più prodotti.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

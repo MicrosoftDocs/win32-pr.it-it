@@ -4,16 +4,16 @@ description: IAgentNotifySink RequestComplete
 ms.assetid: 995bc961-f175-4429-94a4-91962161298b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0265a7111369dec687fd74b9c66c27275a40e164
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7c797232ca968261c5857bec8953c6c76375bafc849b17ebe21bc8f353698f02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104331999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976171"
 ---
 # <a name="iagentnotifysinkrequestcomplete"></a>IAgentNotifySink::RequestComplete
 
-\[Microsoft Agent è stato deprecato a partire da Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 ``` syntax
 HRESULT RequestComplete(
@@ -22,7 +22,7 @@ HRESULT RequestComplete(
 );                          
 ```
 
-Notifica a un'applicazione client il completamento di una richiesta.
+Notifica a un'applicazione client quando viene completata una richiesta.
 
 -   Nessun valore restituito.
 
@@ -42,16 +42,16 @@ Codice di stato. Questo parametro restituisce il codice di stato per la richiest
 
 </dd> </dl>
 
-Questo evento consente di tenere traccia del momento in cui un metodo in coda viene completato utilizzando il relativo ID richiesta.
+Questo evento consente di tenere traccia del completamento di un metodo in coda usando il relativo ID richiesta.
 
 ## <a name="see-also"></a>Vedere anche
 
-[**IAgentNotifySink:: RequestStart**](iagentnotifysink--requeststart.md), [**IAgent:: Load**](iagent--load.md), [**IAgentCharacter:: GestureAt**](iagentcharacter--gestureat.md), [**IAgentCharacter:: Hide**](iagentcharacter--hide.md), [**IAgentCharacter:: interrupt**](iagentcharacter--interrupt.md), [**IAgentCharacter:: moveto**](iagentcharacter--moveto.md), [**IAgentCharacter::P repare**](iagentcharacter--prepare.md), [**IAgentCharacter::P Lay**](iagentcharacter--play.md), [**IAgentCharacter:: Show**](iagentcharacter--show.md), [**IAgentCharacter:: Speak**](iagentcharacter--speak.md), [**IAgentCharacter:: wait**](iagentcharacter--wait.md)
+[**IAgentNotifySink::RequestStart,**](iagentnotifysink--requeststart.md) [**IAgent::Load**](iagent--load.md), [**IAgentCharacter::GestureAt**](iagentcharacter--gestureat.md) [](iagentcharacter--wait.md) , [**IAgentCharacter::Hide**](iagentcharacter--hide.md), [**IAgentCharacter::Interrupt**](iagentcharacter--interrupt.md), [**IAgentCharacter::MoveTo**](iagentcharacter--moveto.md), [**IAgentCharacter::P repare**](iagentcharacter--prepare.md), [](iagentcharacter--show.md) [**IAgentCharacter:::P**](iagentcharacter--play.md) [](iagentcharacter--speak.md)Wait
 
 
- 
+ 
 
- 
+ 
 
 
 

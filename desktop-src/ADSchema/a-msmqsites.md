@@ -1,10 +1,10 @@
 ---
-title: Attributo MSMQ-Sites
-description: Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di siti, in genere non più di un GUID.
+title: MSMQ-Sites attributo
+description: Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in genere non più di un GUID).
 ms.assetid: 0f6cfc3a-9edb-4291-a5df-06c0f1a6add8
 ms.tgt_platform: multiple
 keywords:
-- Schema AD MSMQ-Sites attribute
+- MSMQ-Sites schema AD dell'attributo
 - Schema AD dell'attributo mSMQSites
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47512a20301f3b1dca96c86efe604b0eacc4a73e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ed3d420c986c63dad379c2101d059545954a88462ae6e4e907a0cb6936e3b3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960390"
 ---
-# <a name="msmq-sites-attribute"></a>Attributo MSMQ-Sites
+# <a name="msmq-sites-attribute"></a>MSMQ-Sites attributo
 
-Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di siti, in genere non più di un GUID.
+Elenco di siti a cui appartiene il computer (matrice di objectGUID dei siti, in genere non più di un GUID).
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Sites                                            |
-| LDAP-Display-Name | mSMQSites                                             |
+| Ldap-Display-Name | mSMQSites                                             |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.927                                |
-| System-ID-GUID    | 9a0dc32a-c100-11d1-bbc5-0080c76670c0                  |
+| System-Id-Guid    | 9a0dc32a-c100-11d1-bbc5-0080c76670c0                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione di MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| A valore singolo       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| A valore singolo       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di siti a cui appartiene il computer, ovvero una matrice di objectGUID di
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| A valore singolo       | Falso                                                        |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Vero                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classi usate in        | [**Configurazione MSMQ**](c-msmqconfiguration.md)<br/> |
 
 
 

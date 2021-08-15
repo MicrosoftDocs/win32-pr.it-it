@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Proprietà LoadBalanceInfo Servizi Desktop remoto
 - Proprietà LoadBalanceInfo Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings
-- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto proprietà , LoadBalanceInfo
+- Interfaccia IMsRdpClientAdvancedSettings Servizi Desktop remoto , proprietà LoadBalanceInfo
 - Proprietà LoadBalanceInfo Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings2
 - Interfaccia IMsRdpClientAdvancedSettings2 Servizi Desktop remoto , proprietà LoadBalanceInfo
 - Proprietà LoadBalanceInfo Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings3
