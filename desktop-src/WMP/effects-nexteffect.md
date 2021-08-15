@@ -1,9 +1,9 @@
 ---
 title: EFFECTS.nextEffect
-description: Il metodo nextEffect visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni.
+description: Il metodo nextEffect visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni successivi.
 ms.assetid: dedd8e8b-2337-46f5-91a8-43ef54c86012
 keywords:
-- Effects.nextEffect Windows Media Player
+- EFFECTS.nextEffect Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118339986"
 ---
 # <a name="effectsnexteffect"></a>EFFECTS.nextEffect
 
-Il **metodo nextEffect** visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni.
+Il **metodo nextEffect** visualizza il primo set di impostazioni della visualizzazione successiva, ignorando i set di impostazioni successivi.
 
 ``` syntax
         elementID.nextEffect()

@@ -4,12 +4,12 @@ ms.assetid: 4c379898-d21f-4c6c-93c8-e5f386e032ba
 title: PageWatermarkTextFontSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eb28044ca676dedfb136cb58190db90a06fd624
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 6579ec69d1972ccb97465face579da6e61f62dca17bd554a2ce9db363f74de1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470971"
 ---
 # <a name="pagewatermarktextfontsize"></a>PageWatermarkTextFontSize
 

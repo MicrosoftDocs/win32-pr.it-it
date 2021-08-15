@@ -4,12 +4,12 @@ ms.assetid: ad20504c-4920-4d72-86ef-04c82d71be70
 title: System.Sensitivity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ca07ace0be48de932dc7f9b4bbff8a91400fdd3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4fe1ed1238023b57566493613670c1395e12cb58923c198a1f5162876251ca4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969850"
 ---
 # <a name="systemsensitivity"></a>System.Sensitivity
 
@@ -90,7 +90,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -120,7 +120,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

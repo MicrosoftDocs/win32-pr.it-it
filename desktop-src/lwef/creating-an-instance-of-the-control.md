@@ -15,7 +15,7 @@ ms.locfileid: "118480013"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Per accedere al controllo di Microsoft Agent è prima necessario creare un'istanza del controllo. Il modo più semplice per eseguire questa operazione è inserire un'istanza del controllo in un form. Potrebbe essere necessario aggiungere il controllo alla casella degli strumenti prima di aggiungerlo al form. A seconda del linguaggio di programmazione, è anche possibile creare il controllo in fase di esecuzione.
+Per accedere al controllo di Microsoft Agent, è prima necessario creare un'istanza del controllo. Il modo più semplice per eseguire questa operazione è inserire un'istanza del controllo in un form. Potrebbe essere necessario aggiungere il controllo alla casella degli strumenti prima di aggiungerlo al form. A seconda del linguaggio di programmazione, è anche possibile creare il controllo in fase di esecuzione.
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: Illustra come implementare un verbo shell usando il metodo DropTarget.
+description: Illustra come implementare un verbo Shell usando il metodo DropTarget.
 title: Esempio di verbo DropTarget
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118719533"
 ---
 # <a name="droptarget-verb-sample"></a>Esempio di verbo DropTarget
 
-Illustra come implementare un verbo shell usando il metodo DropTarget.
+Illustra come implementare un verbo Shell usando il metodo DropTarget.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -30,13 +30,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="description"></a>Descrizione
 
-Questo esempio illustra come implementare un verbo shell usando il metodo DropTarget. Questo metodo è preferibile per le implementazioni di verbi che devono funzionare Windows XP. In questo esempio viene implementato un oggetto com (Server Component Object Model) locale autonomo, ma è previsto che l'implementazione del verbo sia integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale registra un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se presente.
+Questo esempio illustra come implementare un verbo Shell usando il metodo DropTarget. Questo metodo è preferibile per le implementazioni di verbi che devono funzionare Windows XP. Questo esempio implementa un oggetto server Component Object Model (COM) locale autonomo, ma è previsto che l'implementazione del verbo verrà integrata nelle applicazioni esistenti. A tale scopo, l'oggetto applicazione principale registra un class factory per se stesso. Tale oggetto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) per i verbi dell'applicazione. Si noti che COM avvia l'applicazione se non è già in esecuzione, ma si connette a un'istanza in esecuzione dell'applicazione, se presente.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Product                                | Versione minima del prodotto |
+| Prodotto                                | Versione minima del prodotto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
 | Windows Software Development Kit (SDK) | 7.0                     |
@@ -47,7 +47,7 @@ Questo esempio illustra come implementare un verbo shell usando il metodo DropTa
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Località      | URL del percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio di DropTargetVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/DropTargetVerb) |
 
@@ -67,7 +67,7 @@ Per compilare l'esempio usando Microsoft Visual Studio (scelta preferita):
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
 1.  Passare alla directory che contiene il nuovo eseguibile, usando il prompt dei comandi o Windows Explorer.
-2.  Nella riga di comando immettere `DropTargetVerb.exe` . In alternativa, in Windows Explorer fare doppio clic sull'icona per DropTargetVerb.exe.
+2.  Nella riga di comando immettere `DropTargetVerb.exe` . In alternativa, da esplora Windows fare doppio clic sull'icona per DropTargetVerb.exe.
 3.  Seguire le istruzioni nella finestra di dialogo visualizzata
 
  

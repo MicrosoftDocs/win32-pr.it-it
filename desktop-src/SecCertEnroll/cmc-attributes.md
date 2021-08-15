@@ -13,11 +13,11 @@ ms.locfileid: "118902064"
 ---
 # <a name="cmc-attributes"></a>Attributi CMC
 
-In pratica, la struttura di una richiesta CMC, illustrata dalla sintassi seguente, è relativamente complessa perché spesso contiene richieste annidate. Ad esempio, una richiesta CMC può contenere zero o una richiesta PKCS 10 in una sequenza TaggedRequest e può contenere zero o un messaggio PKCS 7 in una sequenza \#  \# **TaggedContentInfo.** Ogni messaggio PKCS 7 annidato può contenere una richiesta CMC che a sua volta può \# contenere più richieste. Il numero di livelli di annidamento è teoricamente illimitato, ma l'autorità di certificazione (CA) è in genere configurata per limitare le dimensioni di una richiesta. Gli attributi possono essere applicati alla richiesta di primo livello o alle richieste annidate. Questa operazione viene illustrata nelle sezioni seguenti.
+In pratica, la struttura di una richiesta CMC, illustrata dalla sintassi seguente, è relativamente complessa perché spesso contiene richieste annidate. Ad esempio, una richiesta CMC può contenere zero o una richiesta PKCS 10 in una sequenza TaggedRequest e può contenere zero o un messaggio PKCS 7 in una sequenza \#  \# **TaggedContentInfo.** Ogni messaggio PKCS \# 7 annidato può contenere una richiesta CMC che, a sua volta, può contenere più richieste. Il numero di livelli di annidamento è teoricamente illimitato, ma l'autorità di certificazione (CA) è in genere configurata per limitare le dimensioni di una richiesta. Gli attributi possono essere applicati alla richiesta di primo livello o alle richieste annidate. Questo argomento viene illustrato nelle sezioni seguenti.
 
 ## <a name="cmcdata-structure"></a>Struttura CMCData
 
-Una richiesta CMC contiene sequenze di **strutture ASN.1,** **TaggedRequest** e **TaggedContentInfo.**
+Una richiesta CMC contiene sequenze di strutture ASN.1 **TaggedAttribute,** **TaggedRequest** e **TaggedContentInfo.**
 
 ``` syntax
 CmcData ::= SEQUENCE 
@@ -58,7 +58,7 @@ AttributeSetValue ::= SET OF ANY
 
 ## <a name="taggedattribute-structure"></a>Struttura TaggedAttribute
 
-Gli attributi vengono inclusi in una richiesta di certificato CMC aggiungendoli alla raccolta **TaggedAttribute.** Ogni struttura nella raccolta contiene un ID intero, un identificatore di oggetto ASN.1 (OID) e un set di valori. I valori possibili possono essere uno dei seguenti.
+Gli attributi vengono inclusi in una richiesta di certificato CMC aggiungendoli alla **raccolta TaggedAttribute.** Ogni struttura nella raccolta contiene un ID intero, un identificatore di oggetto ASN.1 (OID) e un set di valori. I valori possibili possono essere i seguenti.
 
 ``` syntax
 CmcAddAttributes ::= SEQUENCE 
@@ -100,11 +100,11 @@ RegInfo ::= OCTET STRING
 
 ## <a name="cmcaddattributes"></a>CMCAddAttributes
 
-Se gli attributi in questa struttura si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **bodyPartID** che identifica la richiesta. Se gli attributi si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **bodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero. Gli attributi che è possibile includere sono elencati [nell'argomento Attributi](supported-attributes.md) supportati.
+Se gli attributi in questa struttura si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **l'elemento BodyPartID** che identifica la richiesta. Se gli attributi si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **il BodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero. Gli attributi che è possibile includere sono elencati [nell'argomento Attributi](supported-attributes.md) supportati .
 
 ## <a name="cmcaddextensions"></a>CmcAddExtensions
 
-Questa struttura può contenere estensioni X.509 versione 3 e estensioni definite da Microsoft. Questo attributo viene definito tramite [**l'interfaccia IX509AttributeExtensions.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) Se le estensioni si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **bodyPartID** che identifica la richiesta. Se le estensioni si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **bodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero.
+Questa struttura può contenere estensioni X.509 versione 3 e estensioni definite da Microsoft. Questo attributo viene definito tramite [**l'interfaccia IX509AttributeExtensions.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeextensions) Se le estensioni si applicano a una richiesta PKCS 10 annidata, il campo \# **certReferences** conterrà **l'elemento BodyPartID** che identifica la richiesta. Se le estensioni si applicano a una richiesta CMC annidata, il campo **pkiDataReference** conterrà **il BodyPartID** della richiesta. Attualmente, solo uno di questi campi può essere diverso da zero.
 
 ## <a name="sendernonce"></a>SenderNonce
 
@@ -112,7 +112,7 @@ Un nonce è un dato binario casuale o pseudo-casuale che può essere incluso in 
 
 ## <a name="transactid"></a>TransactID
 
-Una round trip richiesta di certificato e una transazione di risposta possono essere rilevate usando un identificatore. Il client genera un ID transazione e lo conserva fino a quando il certificato o l'autorità di registrazione non risponde con un messaggio che completa la transazione. La risposta include l'identificatore. Per altre informazioni, vedere la [**proprietà TransactionId.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid)
+Una round trip di richiesta e risposta del certificato può essere rilevata usando un identificatore. Il client genera un ID transazione e lo conserva fino a quando il certificato o l'autorità di registrazione non risponde con un messaggio che completa la transazione. La risposta include l'identificatore. Per altre informazioni, vedere la [**proprietà TransactionId.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_transactionid)
 
 ## <a name="reginfo"></a>RegInfo
 

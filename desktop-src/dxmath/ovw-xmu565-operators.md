@@ -16,7 +16,7 @@ ms.locfileid: "118500972"
 La [**struttura XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) espone gli operatori seguenti.
 
 > [!Note]  
-> Gli operatori elencati qui sono disponibili solo in C++.
+> Gli operatori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -26,8 +26,8 @@ La [**struttura XMU565**](/windows/win32/api/directxpackedvector/ns-directxpacke
 
 | Metodi                                                           | Descrizione                                                                                                          |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [**operator uint16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmu565-operatoruint16_t)<br/> | Restituisce un'istanza `uint16_t` di contenente i componenti dell'istanza in formato `XMU555` pack. <br/> |
-| [**operatore =**](xmu565-operator-eq.md)<br/>               | Assegna i dati del componente vettoriale all'istanza corrente di `XMU565` . <br/>                                       |
+| [**operator uint16 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmu565-operatoruint16_t)<br/> | Restituisce un'istanza `uint16_t` di contenente i componenti `XMU555` dell'istanza in un formato di tipo packed. <br/> |
+| [**operator =**](xmu565-operator-eq.md)<br/>               | Assegna i dati dei componenti vettoriali all'istanza corrente di `XMU565` . <br/>                                       |
 
 
 

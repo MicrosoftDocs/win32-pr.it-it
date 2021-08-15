@@ -20,7 +20,7 @@ ms.locfileid: "118434465"
 ---
 # <a name="broadcasting-asf-data"></a>Trasmissione di dati ASF
 
-Questo argomento descrive come inviare dati ASF in una rete usando il protocollo HTTP. L'invio di file in rete richiede l'uso dell'oggetto writer, pertanto è necessario avere una conoscenza generale di questo oggetto prima di leggere questo argomento. Per altre informazioni, vedere [Scrittura di file ASF.](writing-asf-files.md)
+Questo argomento descrive come inviare dati ASF attraverso una rete usando il protocollo HTTP. L'invio di file in rete richiede l'uso dell'oggetto writer, pertanto è necessario avere una conoscenza generale di questo oggetto prima di leggere questo argomento. Per altre informazioni, vedere [Scrittura di file ASF.](writing-asf-files.md)
 
 Se si inizia con dati non compressi, eseguire le operazioni seguenti:
 
@@ -60,7 +60,7 @@ Se si inizia con dati non compressi, eseguire le operazioni seguenti:
 
     
 
-5.  Impostare il profilo ASF chiamando il metodo [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) sull'oggetto writer, con un [**puntatore IWMProfile.**](iwmprofile.md) Per informazioni sulla creazione di un profilo, vedere [Uso dei profili](working-with-profiles.md).
+5.  Impostare il profilo ASF chiamando il metodo [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) sull'oggetto writer, con un [**puntatore IWMProfile.**](iwmprofile.md) Per informazioni sulla creazione di un profilo, vedere [Utilizzo dei profili](working-with-profiles.md).
 6.  Facoltativamente, specificare i metadati usando [**l'interfaccia IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) nel writer.
 7.  Chiamare [**IWMWriter::BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting) nel writer.
     ```C++
@@ -93,8 +93,8 @@ Se si inizia con dati non compressi, eseguire le operazioni seguenti:
 
 Un altro modo per trasmettere il contenuto asf in rete è leggerlo da un file ASF esistente. L'esempio WMVNetWrite fornito nell'SDK illustra questo approccio. Oltre ai passaggi elencati in precedenza, eseguire le operazioni seguenti:
 
-1.  Creare un oggetto lettore e chiamare il **metodo Open** con il nome del file.
-2.  Chiamare [**IWMReaderAdvanced::SetManualStreamSelection sull'oggetto**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setmanualstreamselection) lettore, con il valore **TRUE.** Ciò consente all'applicazione di leggere ogni flusso nel file, inclusi i flussi con esclusione reciproca.
+1.  Creare un oggetto lettore e chiamare **il metodo Open** con il nome del file.
+2.  Chiamare [**IWMReaderAdvanced::SetManualStreamSelection sull'oggetto**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setmanualstreamselection) lettore, con il valore **TRUE.** In questo modo l'applicazione può leggere ogni flusso nel file, inclusi i flussi con esclusione reciproca.
 3.  Eseguire una query sul lettore per [**l'interfaccia IWMProfile.**](iwmprofile.md) Usare questo puntatore quando si chiama [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) sull'oggetto writer (passaggio 5 della procedura precedente).
 4.  Per ogni flusso definito nel profilo, chiamare [**IWMProfile::GetStream**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile-getstream) per ottenere il numero di flusso. Passare questo numero di flusso al metodo [**IWMReaderAdvanced::SetReceiveStreamSamples del**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setreceivestreamsamples) lettore. Questo metodo informa il lettore di fornire esempi compressi, anziché decodificarli. Gli esempi verranno recapitati all'applicazione tramite il metodo di callback [**IWMReaderCallbackAdvanced::OnStreamSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallbackadvanced-onstreamsample) dell'applicazione.
 

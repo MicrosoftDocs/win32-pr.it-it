@@ -1,6 +1,6 @@
 ---
 title: API di accesso al dispositivo riferimento alla programmazione C++
-description: Fornisce pagine di riferimento per le funzioni e le interfacce nel API di accesso al dispositivo.
+description: Fornisce pagine di riferimento per le funzioni e le interfacce nella API di accesso al dispositivo.
 ms.assetid: 8B2DD325-53D6-4221-A175-88754242D7A3
 ms.topic: article
 ms.date: 02/11/2020
@@ -13,14 +13,14 @@ ms.locfileid: "118541936"
 ---
 # <a name="device-access-api-c-programming-reference"></a>API di accesso al dispositivo riferimento alla programmazione C++
 
-Fornisce pagine di riferimento per le funzioni e le interfacce nel API di accesso al dispositivo.
+Fornisce pagine di riferimento per le funzioni e le interfacce nella API di accesso al dispositivo.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 | Argomento | Descrizione |
 |---|---|
 | [Funzioni](functions.md)<br/>           | Funzioni nel API di accesso al dispositivo.<br/>                               |
-| [Interfacce COM](com-interfaces.md)<br/> | Component Object Model (COM) nel API di accesso al dispositivo.<br/> |
+| [Interfacce COM](com-interfaces.md)<br/> | Component Object Model interfacce (COM) nel API di accesso al dispositivo.<br/> |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

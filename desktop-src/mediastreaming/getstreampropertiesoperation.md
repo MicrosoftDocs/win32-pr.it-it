@@ -3,8 +3,8 @@ title: Classe GetStreamPropertiesOperation
 description: Registra un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da GetStreamPropertiesAsync e fornisce un metodo che restituisce i risultati dell'operazione.
 ms.assetid: 1D1C9B73-9D7B-4886-AFA4-D35DF10367CD
 keywords:
-- API di streaming multimediale della classe GetStreamPropertiesOperation
-- API di streaming multimediale della classe GetStreamPropertiesOperation, descritta
+- Classe GetStreamPropertiesOperation API Di streaming multimediale
+- Classe GetStreamPropertiesOperation API Streaming multimediale , descritta
 topic_type:
 - apiref
 api_name:
@@ -14,31 +14,31 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ae0e48db8fe3ee4f014318ba48a26dc983124e2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 45f8c4ba665de17d50169e5af6d4be6d530864978393ff5e6f2a606c30fb07f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473443"
 ---
 # <a name="getstreampropertiesoperation-class"></a>Classe GetStreamPropertiesOperation
 
 Registra un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) e fornisce un metodo che restituisce i risultati dell'operazione.
 
-**GetStreamPropertiesOperation** dispone di questi tipi di membri:
+**GetStreamPropertiesOperation** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#getstreampropertiesoperation-class)
 
 ### <a name="methods"></a>Metodi
 
-La classe **GetStreamPropertiesOperation** dispone di questi metodi.
+La **classe GetStreamPropertiesOperation** include questi metodi.
 
 
 
 | Metodo                                                        | Descrizione                                                                                                                                          |
 |:--------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetResults**](getstreampropertiesoperation-getresults.md) | Restituisce i risultati dell'operazione asincrona avviata da [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).<br/> |
+| [**GetResults**](getstreampropertiesoperation-getresults.md) | Restituisce i risultati dell'operazione asincrona avviata [**da GetStreamPropertiesAsync.**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85))<br/> |
 
 
 
@@ -46,13 +46,13 @@ La classe **GetStreamPropertiesOperation** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La classe **GetStreamPropertiesOperation** dispone di queste proprietà.
+La **classe GetStreamPropertiesOperation** ha queste proprietà.
 
 
 
 | Proprietà                                                               | Tipo di accesso           | Descrizione                                                                                                                                                                                   |
 |:-----------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completi**](getstreampropertiesoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi che viene richiamato quando viene completata l'operazione asincrona avviata da [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) .<br/> |
+| [**Completi**](getstreampropertiesoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**GetStreamPropertiesAsync.**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85))<br/> |
 
 
 

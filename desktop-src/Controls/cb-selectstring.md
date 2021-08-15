@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_SELECTSTRING (winuser. h)
-description: Esegue la ricerca nell'elenco di una casella combinata per un elemento che inizia con i caratteri in una stringa specificata. Se viene trovato un elemento corrispondente, questo viene selezionato e copiato nel controllo di modifica.
+title: CB_SELECTSTRING messaggio (Winuser.h)
+description: Cerca nell'elenco di una casella combinata un elemento che inizia con i caratteri in una stringa specificata. Se viene trovato un elemento corrispondente, viene selezionato e copiato nel controllo di modifica.
 ms.assetid: c08dff72-7e44-40ed-8b64-513359292829
 keywords:
-- Controlli di Windows Message CB_SELECTSTRING
+- CB_SELECTSTRING di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2913b95c02cdfd3c7a9c96a8652038a04d8fde8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bedef20646664e37405c97a97f9e49147cad8acc08c05e33172e44a34298f5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019969"
 ---
-# <a name="cb_selectstring-message"></a>\_Messaggio SELECTSTRING CB
+# <a name="cb_selectstring-message"></a>CB \_ SELECTSTRING message
 
-Esegue la ricerca nell'elenco di una casella combinata per un elemento che inizia con i caratteri in una stringa specificata. Se viene trovato un elemento corrispondente, questo viene selezionato e copiato nel controllo di modifica.
+Cerca nell'elenco di una casella combinata un elemento che inizia con i caratteri in una stringa specificata. Se viene trovato un elemento corrispondente, viene selezionato e copiato nel controllo di modifica.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,26 +32,26 @@ Esegue la ricerca nell'elenco di una casella combinata per un elemento che inizi
 *wParam* 
 </dt> <dd>
 
-Indice in base zero dell'elemento che precede il primo elemento da cercare. Quando la ricerca raggiunge la fine dell'elenco, viene proseguita dall'inizio dell'elenco fino all'elemento specificato dal parametro *wParam* . Se *wParam* è-1, viene eseguita una ricerca nell'intero elenco dall'inizio.
+Indice in base zero dell'elemento che precede il primo elemento in cui eseguire la ricerca. Quando la ricerca raggiunge la fine dell'elenco, continua dall'inizio dell'elenco all'elemento specificato dal *parametro wParam.* Se *wParam* è -1, viene cercato l'intero elenco dall'inizio.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore alla stringa con terminazione null che contiene i caratteri da cercare. Per la ricerca non viene fatta distinzione tra maiuscole e minuscole, pertanto questa stringa può contenere qualsiasi combinazione di lettere maiuscole e minuscole.
+Puntatore alla stringa con terminazione Null che contiene i caratteri da cercare. La ricerca non fa distinzione tra maiuscole e minuscole, pertanto questa stringa può contenere qualsiasi combinazione di lettere maiuscole e minuscole.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la stringa viene trovata, il valore restituito è l'indice dell'elemento selezionato. Se la ricerca ha esito negativo, il valore restituito è CB \_ Err e la selezione corrente non viene modificata.
+Se la stringa viene trovata, il valore restituito è l'indice dell'elemento selezionato. Se la ricerca non riesce, il valore restituito è CB \_ ERR e la selezione corrente non viene modificata.
 
 ## <a name="remarks"></a>Commenti
 
 Viene selezionata una stringa solo se i caratteri del punto iniziale corrispondono ai caratteri nella stringa di prefisso.
 
-Se si crea la casella combinata con uno stile disegnato dal proprietario ma senza lo stile [**CBS \_ HASSTRINGS**](combo-box-styles.md) , il messaggio **\_ SELECTSTRING di CB** dipende dal fatto che si usi lo stile di [**\_ ordinamento CBS**](combo-box-styles.md) . Se viene usato lo stile di **\_ ordinamento CBS** , il sistema invia messaggi [**WM \_ COMPAREITEM**](wm-compareitem.md) al proprietario della casella combinata per determinare l'elemento corrispondente alla stringa specificata. Se non si usa lo stile **di \_ ordinamento CBS** , **CB \_ SELECTSTRING** tenta di trovare una corrispondenza tra il valore **DWORD** e il valore del parametro *lParam* .
+Se si crea la casella combinata con uno stile creato dal proprietario ma senza lo stile [**\_ CBS HASSTRINGS,**](combo-box-styles.md) l'operazione del messaggio **\_ CB SELECTSTRING** dipende dall'uso o meno dello stile [**CBS \_ SORT.**](combo-box-styles.md) Se si usa lo stile SORT di **CBS, \_** il sistema invia messaggi [**WM \_ COMPAREITEM**](wm-compareitem.md) al proprietario della casella combinata per determinare quale elemento corrisponde alla stringa specificata. Se non si usa lo stile **SORT \_ di CBS,** **CB \_ SELECTSTRING** tenta di trovare una corrispondenza tra il valore **DWORD** e il valore del *parametro lParam.*
 
 ## <a name="requirements"></a>Requisiti
 
@@ -59,9 +59,9 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -72,16 +72,16 @@ Se si crea la casella combinata con uno stile disegnato dal proprietario ma senz
 **Riferimento**
 </dt> <dt>
 
-[**CB \_ FindString**](cb-findstring.md)
+[**CB \_ FINDSTRING**](cb-findstring.md)
 </dt> <dt>
 
-[**CB \_ FindExactString**](cb-findstringexact.md)
+[**CB \_ FINDSTRINGEXACT**](cb-findstringexact.md)
 </dt> <dt>
 
-[**\_CAcursel CB**](cb-setcursel.md)
+[**CB \_ SETCURSEL**](cb-setcursel.md)
 </dt> <dt>
 
-[**\_COMPAREITEM WM**](wm-compareitem.md)
+[**WM \_ COMPAREITEM**](wm-compareitem.md)
 </dt> </dl>
 
  

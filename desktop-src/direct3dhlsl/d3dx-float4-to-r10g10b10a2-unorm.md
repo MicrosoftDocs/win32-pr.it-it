@@ -1,6 +1,6 @@
 ---
 title: D3DX_FLOAT4_to_R10G10B10A2_UNORM funzione
-description: Racchiude L'oggetto XMFLOAT4 specificato in un formato DXGI \_ \_ R10G10B10A2 \_ UNORM.
+description: Riporta il valore XMFLOAT4 specificato in un formato DXGI \_ \_ R10G10B10A2 \_ UNORM.
 ms.assetid: 20471435-bb1a-4151-a03a-c334b2a7d944
 keywords:
 - D3DX_FLOAT4_to_R10G10B10A2_UNORM funzione HLSL
@@ -21,9 +21,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516369"
 ---
-# <a name="d3dx_float4_to_r10g10b10a2_unorm-function"></a>Da D3DX FLOAT4 a \_ \_ \_ R10G10B10A2 \_ UNORM
+# <a name="d3dx_float4_to_r10g10b10a2_unorm-function"></a>Funzione UNORM da D3DX FLOAT4 a \_ \_ \_ R10G10B10A2 \_
 
-Racchiude L'oggetto XMFLOAT4 specificato in un formato DXGI \_ \_ R10G10B10A2 \_ UNORM.
+Riporta il valore XMFLOAT4 specificato in un formato DXGI \_ \_ R10G10B10A2 \_ UNORM.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ UINT D3DX_FLOAT4_to_R10G10B10A2_UNORM(
 *unpackedInput* 
 </dt> <dd>
 
-Dati shader da imballare.
+Dati dello shader da creare come pacchetto.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Dati dello shader di cui è stato effettuato il pacchetto.
 [Funzioni](format-conversion-functions.md)
 </dt> <dt>
 
-[Decompressione e impacchettamento del formato DXGI \_ per la In-Place di immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Decompressione e creazione di un pacchetto DXGI \_ FORMAT per la In-Place delle immagini](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

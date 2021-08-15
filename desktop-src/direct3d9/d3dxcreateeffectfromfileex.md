@@ -62,7 +62,7 @@ Puntatore al dispositivo che creerà l'effetto. Vedere [**IDirect3DDevice9.**](/
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Puntatore al nome file. Questo parametro supporta entrambe le stringhe Unicode e ANSI. Vedere la sezione Osservazioni.
+Puntatore al nome file. Questo parametro supporta sia stringhe Unicode che ANSI. Vedere la sezione Osservazioni.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Puntatore al nome file. Questo parametro supporta entrambe le stringhe Unicode e
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matrice facoltativa di definizioni di macro del preprocessore con terminazione NULL. Vedere [**D3DXMACRO**](d3dxmacro.md).
+Matrice facoltativa con terminazione NULL di definizioni di macro del preprocessore. Vedere [**D3DXMACRO.**](d3dxmacro.md)
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Matrice facoltativa di definizioni di macro del preprocessore con terminazione N
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione \# delle direttive include. Se questo valore è **NULL,** include verrà rispettato durante la compilazione da un file o causerà un errore durante la compilazione \# da una risorsa o da una memoria.
+Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usare per la gestione delle \# direttive include. Se questo valore è **NULL,** le include verranno rispettate durante la compilazione da un file o causeranno un errore durante la compilazione \# da una risorsa o da una memoria.
 
 </dd> <dt>
 
@@ -89,7 +89,7 @@ Puntatore a interfaccia [**facoltativo, ID3DXInclude,**](id3dxinclude.md)da usar
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Stringa di parametri dell'effetto che verrà ignorata dal sistema degli effetti. La stringa deve essere con terminazione **NULL** e deve contenere il nome di ogni costante gestita dall'applicazione separata da un punto e virgola.
+Stringa di parametri dell'effetto che verrà ignorata dal sistema di effetti. La stringa deve **terminare** con NULL e deve contenere il nome di ogni costante gestita dall'applicazione separati da un punto e virgola.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Stringa di parametri dell'effetto che verrà ignorata dal sistema degli effetti.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Se *pSrcFile contiene* un effetto di testo, i flag possono essere una combinazione di flag [D3DXSHADER](d3dxshader-flags.md) e [D3DXFX;](d3dxfx.md) In caso contrario, *pSrcFile* contiene un effetto binario e gli unici flag rispettati sono i flag D3DXFX. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Strumento di compilazione effetti.](../direct3dtools/fxc.md)
+Se *pSrcFile contiene* un effetto di testo, i flag possono essere una combinazione di flag [D3DXSHADER](d3dxshader-flags.md) e [flag D3DXFX;](d3dxfx.md) In caso contrario, *pSrcFile* contiene un effetto binario e gli unici flag rispettati sono i flag D3DXFX. Il compilatore HLSL Direct3D 10 è ora l'impostazione predefinita. Per [informazioni dettagliate, vedere Effect-Compiler Tool](../direct3dtools/fxc.md) .
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Puntatore a [**un oggetto ID3DXEffectPool**](id3dxeffectpool.md) da usare per i 
 
 Tipo: **[ **LPD3DXEFFECT**](id3dxeffect.md)\***
 
-Restituisce un puntatore a un buffer contenente l'effetto compilato. Vedere [**ID3DXEffect**](id3dxeffect.md).
+Restituisce un puntatore a un buffer contenente l'effetto compilato. Vedere [**ID3DXEffect.**](id3dxeffect.md)
 
 </dd> <dt>
 
@@ -137,18 +137,18 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione è una versione estesa di [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) che consente a un'applicazione di specificare le costanti di effetto che verranno gestite dall'applicazione. Una costante gestita dall'applicazione viene ignorata dal sistema di effetti. In altri casi, l'applicazione è responsabile dell'inizializzazione della costante, nonché del salvataggio e del ripristino dello stato quando appropriato.
+Questa funzione è una versione estesa di [**D3DXCreateEffectFromFile**](d3dxcreateeffectfromfile.md) che consente a un'applicazione di specificare quali costanti di effetto verranno gestite dall'applicazione. Una costante gestita dall'applicazione viene ignorata dal sistema di effetti. In altri casi, l'applicazione è responsabile dell'inizializzazione della costante, nonché del salvataggio e del ripristino dello stato quando appropriato.
 
 Questa funzione controlla ogni costante in pSkipConstants per verificare che:
 
 -   È associato a un registro costante.
--   Viene usato solo nel codice shader HLSL.
+-   Viene usato solo nel codice dello shader HLSL.
 
 Se una costante viene denominata nella stringa che non è presente nell'effetto, viene ignorata.
 
 Se le impostazioni del compilatore richiedono Unicode, il tipo di dati LPCTSTR viene risolto in LPCWSTR. In caso contrario, il tipo di dati LPCTSTR viene risolto in LPCSTR.
 
-L'impostazione del compilatore determina anche la versione della funzione. Se unicode è definito, la chiamata di funzione viene risolta in D3DXCreateEffectFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateEffectFromFileA perché vengono usate stringhe ANSI.
+L'impostazione del compilatore determina anche la versione della funzione. Se è definito Unicode, la chiamata di funzione viene risolta in D3DXCreateEffectFromFileW. In caso contrario, la chiamata di funzione viene risolta in D3DXCreateEffectFromFileA perché vengono usate stringhe ANSI.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -165,7 +165,7 @@ L'impostazione del compilatore determina anche la versione della funzione. Se un
 
 <dl> <dt>
 
-[Funzioni degli effetti](dx9-graphics-reference-effects-functions.md)
+[Funzioni di effetto](dx9-graphics-reference-effects-functions.md)
 </dt> <dt>
 
 [**D3DXCreateEffectEx**](d3dxcreateeffectex.md)

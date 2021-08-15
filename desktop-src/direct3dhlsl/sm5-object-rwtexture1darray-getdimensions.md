@@ -1,6 +1,6 @@
 ---
-title: 'Funzione RWTexture1DArray:: GetDimensions'
-description: 'Restituisce le dimensioni della risorsa. | Funzione RWTexture1DArray:: GetDimensions'
+title: Funzione RWTexture1DArray::GetDimensions
+description: Restituisce le dimensioni della risorsa. | Funzione RWTexture1DArray::GetDimensions
 ms.assetid: 64f2757e-c03c-4f72-b081-1c57656d6e95
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d31d04ccf62b42fede209589a5e4a6760a3091d9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7a522fe31a62619134e86b2ed98da54570d693d1360ede1a8c0d41d28975b367
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986021"
 ---
-# <a name="rwtexture1darraygetdimensions-function"></a>Funzione RWTexture1DArray:: GetDimensions
+# <a name="rwtexture1darraygetdimensions-function"></a>Funzione RWTexture1DArray::GetDimensions
 
 Restituisce le dimensioni della risorsa.
 
@@ -37,19 +37,19 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Larghezza* \[ out\]
+*Larghezza* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Larghezza della risorsa, in Texel.
+Larghezza della risorsa, in texel.
 
 </dd> <dt>
 
-*Elementi* \[ di out\]
+*Elementi* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Numero di elementi nella matrice.
 
@@ -61,7 +61,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Si tratta di un elenco delle versioni di overload di questo metodo.
+Questo è un elenco delle versioni di overload di questo metodo.
 
 
 ```
@@ -78,7 +78,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -93,7 +93,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture1DArray](sm5-object-rwtexture1darray.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

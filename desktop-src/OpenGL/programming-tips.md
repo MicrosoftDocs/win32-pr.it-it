@@ -15,10 +15,10 @@ ms.locfileid: "118358291"
 ---
 # <a name="programming-tips"></a>Suggerimenti per la programmazione
 
-Questa sezione elenca alcune utili linee guida per la programmazione. Questi suggerimenti si basano sulle intenzioni dei progettisti di OpenGL, non sull'esperienza con le applicazioni e le implementazioni effettive. Questa sezione contiene i seguenti argomenti:
+In questa sezione vengono elencate alcune linee guida utili per la programmazione. Questi suggerimenti si basano sulle intenzioni dei progettisti di OpenGL, non sull'esperienza con le applicazioni e le implementazioni effettive. Questa sezione contiene i seguenti argomenti:
 
 -   [OpenGL Correctness Suggerimenti](opengl-correctness-tips.md)
--   [Prestazioni openGL Suggerimenti](opengl-performance-tips.md)
+-   [OpenGL Performance Suggerimenti](opengl-performance-tips.md)
 -   [Considerazioni sulla sicurezza: OpenGL](security-considerations--opengl.md)
 
  

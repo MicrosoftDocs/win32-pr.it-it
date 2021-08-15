@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_INDEXRANGE'
-title: Struttura JET_INDEXRANGE
+description: 'Altre informazioni su: JET_INDEXRANGE struttura'
+title: JET_INDEXRANGE struttura
 TOCTitle: JET_INDEXRANGE Structure
 ms:assetid: 8e437f7d-1e21-4a0b-a5a5-1c78235a4f80
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269335(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecbd8151be8ef278fc1bddc12323f41abd05b09e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5b68e7ebf6df39757ab39947201b945e35a3ece85518a3cb202525033cdd214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485599"
 ---
-# <a name="jet_indexrange-structure"></a>Struttura JET_INDEXRANGE
+# <a name="jet_indexrange-structure"></a>JET_INDEXRANGE struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_indexrange-structure"></a>Struttura JET_INDEXRANGE
+## <a name="jet_indexrange-structure"></a>JET_INDEXRANGE struttura
 
-La struttura **JET_INDEXRANGE** identifica un intervallo di indice quando viene utilizzato con la funzione [JetIntersectIndexes](./jetintersectindexes-function.md) .
+La **JET_INDEXRANGE** identifica un intervallo di indici quando viene usato con la [funzione JetIntersectIndexes.](./jetintersectindexes-function.md)
 
 ```cpp
     typedef struct {
@@ -43,15 +43,15 @@ La struttura **JET_INDEXRANGE** identifica un intervallo di indice quando viene 
 
 **cbStruct**
 
-Dimensione, in byte, del **JET_INDEXRANGE**.
+Dimensione, in byte, **dell'oggetto JET_INDEXRANGE**.
 
-**TableID**
+**tableid**
 
-Un cursore che in precedenza aveva un intervallo di indici impostato con [JetSetIndexRange](./jetsetindexrange-function.md).
+Cursore che in precedenza aveva un intervallo di indici impostato [con JetSetIndexRange.](./jetsetindexrange-function.md)
 
 **grbit**
 
-Maschera di maschera costituita esattamente da uno dei seguenti elementi.
+Maschera di bit composta esattamente da uno degli elementi seguenti.
 
 <table>
 <colgroup>
@@ -67,7 +67,7 @@ Maschera di maschera costituita esattamente da uno dei seguenti elementi.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitRecordInIndex</p></td>
-<td><p>Specifica che l'intervallo di indici deve essere trattato normalmente.</p></td>
+<td><p>Specifica che l'intervallo di indici deve essere gestito normalmente.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitRecordNotInIndex</p></td>
@@ -79,7 +79,7 @@ Maschera di maschera costituita esattamente da uno dei seguenti elementi.
 
 ### <a name="remarks"></a>Commenti
 
-Ogni **JET_INDEXRANGE** struttura passata a [JetIntersectIndexes](./jetintersectindexes-function.md) rappresenta un intervallo di indici, che verrà intersecato dalla chiamata API. Il cursore specificato in **JET_INDEXRANGE** deve avere già un intervallo di indici valido impostato su di esso, con una chiamata riuscita a [JetSetIndexRange](./jetsetindexrange-function.md).
+Ogni **JET_INDEXRANGE** che viene passata a [JetIntersectIndexes](./jetintersectindexes-function.md) rappresenta un intervallo di indici, che verrà intersecato dalla chiamata API. Il cursore specificato **in** JET_INDEXRANGE deve avere già un intervallo di indici valido impostato su di esso, con una chiamata riuscita a [JetSetIndexRange.](./jetsetindexrange-function.md)
 
 ### <a name="requirements"></a>Requisiti
 
@@ -99,7 +99,7 @@ Ogni **JET_INDEXRANGE** struttura passata a [JetIntersectIndexes](./jetintersect
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

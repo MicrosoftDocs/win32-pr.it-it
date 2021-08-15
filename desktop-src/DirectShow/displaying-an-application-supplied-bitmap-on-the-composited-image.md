@@ -13,17 +13,17 @@ ms.locfileid: "118653518"
 ---
 # <a name="display-an-app-supplied-bitmap-on-the-composited-image"></a>Visualizzare una bitmap fornita dall'app nell'immagine composita
 
-Le applicazioni possono usare la modalità di combinazione della macchina virtuale per visualizzare i logo dei canali con alpha blended, un'interfaccia utente o annunci pubblicitari parzialmente o completamente all'interno del rettangolo video. Poiché la fusione viene eseguita in hardware dal processore di grafica, l'impatto sulle prestazioni di riproduzione del flusso video è minimo e non sono presenti sfarfallio rilevabili o artefatti di rimozione. Le applicazioni possono modificare l'immagine visualizzata con la frequenza che desiderano. Si noti che le modifiche vengono riflesse sullo schermo solo quando il grafico DirectShow filtro è in esecuzione.
+Le applicazioni possono usare la modalità di combinazione della macchina virtuale per visualizzare i logo del canale con combinazione alfa, un'interfaccia utente o annunci parzialmente o completamente all'interno del rettangolo video. Poiché la fusione viene eseguita nell'hardware dal processore grafico, l'impatto sulle prestazioni di riproduzione del flusso video è minimo e non sono presenti elementi di sfarfallio o di rimozione rilevabili. Le applicazioni possono modificare l'immagine visualizzata con la frequenza richiesta. Si noti che le modifiche vengono riflesse sullo schermo solo quando il grafico DirectShow filtro è in esecuzione.
 
-La macchina virtuale usa il componente mixer per sovrapporre la bitmap all'immagine composita. Con VMR-7, l'applicazione deve forzare il vmr a caricare il mixer, anche se è presente un solo flusso video. Questa operazione non è necessaria con VMR-9 perché carica il mixer per impostazione predefinita.
+La macchina virtuale usa il componente mixer per sovrapporre la bitmap all'immagine composita. Con VMR-7, l'applicazione deve forzare il caricamento del mixer, anche se è presente un solo flusso video. Questa operazione non è necessaria con vmr-9 perché carica il mixer per impostazione predefinita.
 
-Per unire un'immagine bitmap statica con il flusso video, l'applicazione crea la macchina virtuale e la aggiunge al grafo, quindi chiama [**IVMRFilterConfig::SetNumberOfStreams.**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams) Il valore passato a questa funzione identifica il numero di pin di input che il vmr deve creare. Le applicazioni possono specificare qualsiasi valore compreso tra 1 e MAX MIXER STREAMS. Se l'applicazione intende visualizzare un solo flusso video, è possibile specificare un valore \_ \_ pari a 1. Anche se VMR-7 ha un singolo pin di input per impostazione predefinita, questo metodo deve essere chiamato per forzare il caricamento del componente mixer. VmR-9 carica il mixer e configura quattro pin per impostazione predefinita.
+Per unire un'immagine bitmap statica al flusso video, l'applicazione crea la macchina virtuale e la aggiunge al grafo e quindi chiama [**IVMRFilterConfig::SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). Il valore passato a questa funzione identifica il numero di pin di input che la macchina virtuale deve creare. Le applicazioni possono specificare qualsiasi valore compreso tra 1 e MAX MIXER STREAMS. Se l'applicazione intende visualizzare un solo flusso video, specificare un valore \_ \_ pari a 1. Anche se vmr-7 ha un singolo pin di input per impostazione predefinita, questo metodo deve essere chiamato per forzare il caricamento del componente mixer. VmR-9 carica il mixer e configura quattro pin per impostazione predefinita.
 
-Per impostare la bitmap, usare [**l'interfaccia IVMRMixerBitmap**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixerbitmap) in VMR-7 o [**l'interfaccia IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) in VMR-9.
+Per impostare la bitmap, usare [**l'interfaccia IVMRMixerBitmap**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixerbitmap) in VMR-7 o [**l'interfaccia IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) nella VMR-9.
 
-La bitmap può essere specificata da un handle per un contesto di dispositivo GDI (hDC) o da un'interfaccia Surface DirectDraw. Se l'applicazione vuole che l'immagine contenga informazioni alfa incorporate (note anche come alfa per pixel), deve inserire i dati dell'immagine in un'interfaccia Surface DirectDraw. Ciò è dovuto al fatto che attualmente non è possibile inserire informazioni alfa per pixel con un contesto di dispositivo GDI. La superficie DirectDraw deve essere RGB32 o ARGB32 e deve preferibilmente essere una superficie di memoria di sistema. Non è necessario che le dimensioni della superficie siano una potenza di 2.
+La bitmap può essere specificata da un handle per un contesto di dispositivo GDI (hDC) o da un'interfaccia Surface DirectDraw. Se l'applicazione vuole che l'immagine contenga informazioni alfa incorporate (note anche come alfa per pixel), deve inserire i dati dell'immagine in un'interfaccia Surface DirectDraw. Ciò è dovuto al fatto che attualmente non è possibile inserire informazioni alfa per pixel con un contesto di dispositivo GDI. La superficie DirectDraw deve essere RGB32 o ARGB32 e deve essere preferibilmente una superficie di memoria di sistema. Non è necessario che le dimensioni della superficie siano una potenza di 2.
 
-La macchina virtuale consente alle applicazioni di specificare la posizione e un valore di trasparenza generale per l'immagine. Il codice seguente illustra come passare i dati dell'immagine alla macchina virtuale per la fusione successiva:
+La macchina virtuale consente alle applicazioni di specificare la posizione e un valore di trasparenza complessivo per l'immagine. Il codice seguente illustra come passare i dati immagine alla macchina virtuale per la fusione successiva:
 
 
 ```C++
@@ -98,23 +98,23 @@ HRESULT BlendApplicationImage(
 
 
 
-I concetti illustrati in questo argomento sono illustrati nell'applicazione di [esempio VMRPlayer.](vmrplayer-sample.md)
+I concetti illustrati in questo argomento sono illustrati nell'applicazione di esempio [VMRPlayer Sample.](vmrplayer-sample.md)
 
 **Creazione di animazioni semplici con l'immagine bitmap**
 
-Per creare un semplice logo bitmap animato, inserire tutti i "frame" della bitmap in una singola immagine, come illustrato nella figura seguente.
+Per creare un logo bitmap animato semplice, inserire tutti i "fotogrammi" della bitmap in una singola immagine, come illustrato nella figura seguente.
 
-![vmr image strip](images/vmr-image-strip.png)
+![Strip di immagini vmr](images/vmr-image-strip.png)
 
-Quando si imposta la bitmap inizialmente usando [**IVMRMixerBitmap::SetAlphaBitmap**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-setalphabitmap), se la bitmap si trova in un HDC, impostare il campo **rSrc** della struttura **VMRALPHABITMAP** per specificare le dimensioni dell'intera bitmap all'interno dell'HDC. I **membri** superiore **e** sinistro della struttura sono  impostati su 0 e i membri destro **e** inferiore sono la larghezza e l'altezza della bitmap. Se la bitmap si trova in una superficie DirectDraw, le dimensioni della superficie sono note, quindi non è necessario specificare rSrc in questo metodo.
+Quando si imposta inizialmente la bitmap usando [**IVMRMixerBitmap::SetAlphaBitmap**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-setalphabitmap), se la bitmap si trova in hdc, impostare il campo **rSrc** della struttura **VMRALPHABITMAP** per specificare le dimensioni dell'intera bitmap all'interno di HDC. I **membri** superiore **e** sinistro della struttura sono  impostati  su 0 e i membri destro e inferiore sono la larghezza e l'altezza della bitmap. Se la bitmap si trova in una superficie DirectDraw, le dimensioni della superficie sono note, quindi non è necessario specificare rSrc in questo metodo.
 
-Quando si chiama [**IVMRMixerBitmap::UpdateAlphaBitmapParameters,**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-updatealphabitmapparameters)usare il membro **rSrc** per entrambe le bitmap HDC e DirectDraw, per specificare il frame o il rettangolo specifico all'interno dell'immagine da visualizzare e impostare il flag **VMRBITMAP \_ SRCRECT** nel **membro dwFlags.**
+Quando si chiama [**IVMRMixerBitmap::UpdateAlphaBitmapParameters**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-updatealphabitmapparameters), usare il membro **rSrc** per le bitmap HDC e DirectDraw, specificare il frame o il rettangolo specifico all'interno dell'immagine che si vuole visualizzare e impostare il flag **VMRBITMAP \_ SRCRECT** nel membro **dwFlags.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso della modalità di combinazione VMR](using-vmr-mixing-mode.md)
+[Uso della modalità di combinazione vmr](using-vmr-mixing-mode.md)
 </dt> </dl>
 
  

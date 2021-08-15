@@ -1,60 +1,60 @@
 ---
-description: In Windows Vista è stato introdotto l'audio in modalità utente protetto, il motore audio in modalità utente nell'ambiente protetto (PE), che fornisce un ambiente più sicuro per l'elaborazione e il rendering audio.
+description: Windows Vista ha introdotto PuMA (Protected User Mode Audio), il motore audio in modalità utente nell'ambiente protetto (PE, Protected Environment) che offre un ambiente più sicuro per l'elaborazione e il rendering dell'audio.
 ms.assetid: 27a50026-9e48-48b1-9249-7528a97333c9
-title: Audio modalità utente protetto (PUMA)
+title: PuMA (Protected User Mode Audio)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 233dc82109feb66472e66e4235031696937d70d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3f119094440297c90ae67c46d5a6b39b1ba6e2e9931b43b4bdda17393d0273dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077455"
 ---
-# <a name="protected-user-mode-audio-puma"></a>Audio modalità utente protetto (PUMA)
+# <a name="protected-user-mode-audio-puma"></a>PuMA (Protected User Mode Audio)
 
-In Windows Vista è stato introdotto l'audio in modalità utente protetto, il motore audio in modalità utente nell'ambiente protetto (PE), che fornisce un ambiente più sicuro per l'elaborazione e il rendering audio. Consente solo l'abilitazione di output audio accettabili e garantisce che gli output siano disabilitati in modo affidabile. Per ulteriori informazioni su PUMA, vedere [Output protezione del contenuto e Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc).
+Windows Vista ha introdotto PuMA (Protected User Mode Audio), il motore audio in modalità utente nell'ambiente protetto (PE, Protected Environment) che offre un ambiente più sicuro per l'elaborazione e il rendering dell'audio. Consente di abiliti solo gli output audio accettabili e garantisce che gli output siano disabilitati in modo affidabile. Per altre informazioni su PUMA, vedere [Output protezione del contenuto and Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc).
 
 PUMA è stato aggiornato per Windows 7 per fornire le funzionalità seguenti:
 
--   Impostazione dei bit MSC (Serial Copying Management System) negli endpoint S/PDIF e nei bit protezione del contenuto digitali (HDCP) a larghezza di banda elevata negli endpoint di High-Definition (HDMI).
--   Abilitazione dei controlli di protezione msc e HDMI all'esterno di un ambiente protetto (PE).
+-   Impostazione di bit SCMS (Serial Copying Management System) su endpoint S/PDIF e bit HDCP (High-bandwidth Digital Content Protection) su endpoint HDMI (High-Definition Multimedia Interface).
+-   Abilitazione dei controlli di protezione SCMS e HDMI all'esterno di un ambiente protetto (PE).
 
 ## <a name="drm-protection-in-audio-drivers"></a>Protezione DRM nei driver audio
 
-Digital Rights Management (DRM) offre la possibilità di creare pacchetti di dati multimediali in un contenitore sicuro e di associare le regole di utilizzo al contenuto. Ad esempio, il provider di contenuti può utilizzare la **protezione da copia** o l' **output digitale disabilitato** per disabilitare la trasmissione o la trasmissione digitale diretta dal sistema di PC.
+Digital Rights Management (DRM) offre la possibilità di creare pacchetti di dati multimediali in un contenitore sicuro e collegare regole di utilizzo al contenuto. Ad esempio, il provider di contenuti potrebbe **usare** la protezione della copia o la disabilitazione **dell'output** digitale per disabilitare le copie digitali dirette o la trasmissione all'esterno del sistema PC.
 
-Lo stack audio di alcuni prodotti Microsoft supporta DRM implementando le regole di utilizzo che regolano la riproduzione del contenuto audio. Per riprodurre il contenuto protetto, il driver audio sottostante deve essere un *driver attendibile*; ovvero, il driver deve essere certificato con logo per DRMLevel 1300. Per informazioni sullo sviluppo di driver attendibili, è possibile utilizzare le interfacce definite in Windows 2000 Driver Development Kit ("DDK") o versioni successive. I driver sviluppati con DDK implementeranno le interfacce necessarie per il DRM. Per ulteriori informazioni, vedere [Rights Management digitale](/windows-hardware/drivers/audio/digital-rights-management).
+Lo stack audio in alcuni prodotti Microsoft supporta DRM implementando le regole di utilizzo che regolano la riproduzione del contenuto audio. Per riprodurre il contenuto protetto, il driver audio sottostante deve essere un *driver attendibile.* il driver deve essere certificato per il logo per DRMLevel 1300. Per informazioni sullo sviluppo di driver attendibili, è possibile usare le interfacce definite in Windows 2000 Driver Development Kit ("DDK") o versioni successive. I driver sviluppati con DDK implementeranno le interfacce necessarie per DRM. Per altre informazioni, vedere [Digital Rights Management](/windows-hardware/drivers/audio/digital-rights-management).
 
-Per eseguire il rendering del contenuto protetto, il driver attendibile deve verificare se la **protezione della copia** e la **disabilitazione dell'output digitale** sono impostate sul contenuto che scorre lo stack audio e rispondere alle impostazioni di conseguenza.
+Per eseguire il rendering del contenuto  protetto, il driver attendibile deve controllare se la protezione della copia e la disabilitazione **dell'output** digitale sono impostate sul contenuto che attraversa lo stack audio e rispondere alle impostazioni di conseguenza.
 
 ### <a name="copy-protection-rule"></a>Copia regola di protezione
 
-La **protezione da copia** indica che le copie digitali dirette non sono consentite nel sistema. L'esposizione B al contratto di test WHQL è stata aggiornata in modo da riflettere le nuove aspettative e i requisiti di un driver quando la **protezione della copia** è impostata sul contenuto. Per Windows 7, il driver della classe audio HD incorporato è conforme ai requisiti più recenti.
+**Protezione copia** indica che le copie digitali dirette non sono consentite nel sistema. L'allegato B al Contratto per i test WHQL è stato  aggiornato per riflettere le nuove aspettative e i nuovi requisiti di un driver quando la protezione della copia è impostata sul contenuto. Per Windows 7, il driver di classe audio HD incorporato è conforme ai requisiti più recenti.
 
-Oltre a garantire che il contenuto non possa essere passato a un altro componente o archiviato in un supporto di archiviazione non volatile non autenticato dal sistema DRM, il driver audio esegue le attività seguenti quando è impostata la **protezione della copia** :
+Oltre a garantire che il contenuto non sia autorizzato a passare a un altro componente o a essere archiviato in qualsiasi supporto  di archiviazione non volatile non autenticato dal sistema DRM, il driver audio esegue le attività seguenti quando è impostata la protezione della copia:
 
--   Il driver Abilita HDCP negli endpoint HDMI.
--   Per le interfacce S/PDIF, il driver verifica che la combinazione di bit di codice L, CP e categoria indichi lo stato MSC "copia mai", come definito in IEC 60958.
--   Il bit L è impostato su 0 e il codice categoria è impostato su "Digital Signal mixer".
+-   Il driver abilita HDCP sugli endpoint HDMI.
+-   Per le interfacce S/PDIF, il driver verifica che la combinazione di bit L, Cp e Category Code indichi lo stato SCMS "Copy Never", come definito in IEC 60958.
+-   Il bit L è impostato su 0 e il codice di categoria è impostato su "Digital Signal Mixer".
 
-La struttura **DRMRIGHTS** , usata dai driver audio attendibili, specifica i diritti di contenuto DRM assegnati a un pin audio KS o a un oggetto flusso del driver della classe di porta. Il membro **CopyProtect** indica se la **protezione della copia** è impostata sul contenuto audio.
+La **struttura DRMRIGHTS,** usata da driver audio attendibili, specifica i diritti di contenuto DRM assegnati a un pin audio KS o all'oggetto flusso di un driver di classe porta. Il **membro CopyProtect** indica se la **protezione della** copia è impostata sul contenuto audio.
 
-Per Windows 7, l'uso di **CopyProtect** è più restrittivo. Il driver garantisce che i controlli di protezione siano impostati sulle interfacce audio, che è impostato per l'output HDMI e che MSC sia impostato per l'output S/PDIF impostando lo stato su "copia mai".
+Per Windows 7, l'uso di **CopyProtect** è più rigoroso. Il driver garantisce che i controlli di protezione siano impostati sulle interfacce audio, che HDCP sia impostato per l'output HDMI e che SCMS sia impostato per l'output S/PDIF impostando lo stato su "Copia mai".
 
 ### <a name="digital-output-disable-rule"></a>Regola di disabilitazione dell'output digitale
 
-La **disabilitazione dell'output digitale** indica che non è consentito trasmettere il contenuto fuori dal sistema. In Windows 7, il driver della classe audio HD integrato risponde a questa impostazione abilitando HDCP negli endpoint HDMI. Questa operazione è simile alla risposta del driver all'impostazione della **protezione copia** .
+**Digital Output Disable** (Disabilita output digitale) indica che il contenuto non può essere trasmesso all'esterno del sistema. In Windows 7 il driver di classe audio HD predefinito risponde a questa impostazione abilitando HDCP negli endpoint HDMI. È simile alla risposta del driver all'impostazione **Di protezione della** copia.
 
-## <a name="enabling-content-protection-mechanisms-outside-of-a-protected-environment"></a>Abilitazione dei meccanismi di protezione del contenuto all'esterno di un ambiente protetto
+## <a name="enabling-content-protection-mechanisms-outside-of-a-protected-environment"></a>Abilitazione di meccanismi di protezione del contenuto all'esterno di un ambiente protetto
 
-PUMA si trova in un processo separato nell'ambiente protetto (PE). In Windows Vista, per usare i controlli di protezione del contenuto audio offerti da PUMA, un'applicazione multimediale deve trovarsi in un PE. Poiché solo le API Media Foundation possono interagire con un file PE, i controlli di protezione del contenuto sono limitati alle applicazioni che usano le API Media Foundation per trasmettere contenuto audio.
+PUMA risiede in un processo separato nell'ambiente protetto (PE). In Windows Vista, per usare i controlli di protezione del contenuto audio offerti da PUMA, un'applicazione multimediale deve essere in un file PE. Poiché solo Media Foundation API possono interagire con un file PE, i controlli di protezione del contenuto sono limitati alle applicazioni che usano api Media Foundation per lo streaming di contenuto audio.
 
-In Windows 7 qualsiasi applicazione può accedere ai controlli di protezione del contenuto forniti dall'autorità di attendibilità dell'output di PUMA (OTA), indipendentemente dal fatto che si trovino in un PE o utilizzino Media Foundation API per la riproduzione audio.
+In Windows 7 qualsiasi applicazione può accedere ai controlli di protezione del contenuto forniti da PUMA Output Trust Authority (OTA), indipendentemente dal fatto che siano in un file PE o che utilizzino API Media Foundation per la riproduzione audio.
 
 ## <a name="implementation-instructions"></a>Istruzioni per l'implementazione
 
-Per un'applicazione audio è necessario eseguire i passaggi seguenti per controllare la protezione del contenuto MSC o HDCP in un endpoint audio. Le API audio supportate sono DirectShow, DirectSound e WASAPI.
+I passaggi seguenti sono necessari per un'applicazione audio per controllare la protezione del contenuto SCMS o HDCP in un endpoint audio. Le API audio supportate sono DirectShow, DirectSound e WASAPI.
 
 Questo codice di esempio usa le interfacce seguenti.
 
@@ -68,7 +68,7 @@ Questo codice di esempio usa le interfacce seguenti.
 L'applicazione multimediale deve eseguire le attività seguenti.
 
 1.  Configurare l'ambiente di sviluppo.
-    -   Fare riferimento alle interfacce necessarie, includere le intestazioni mostrate nel codice seguente.
+    -   Fare riferimento alle interfacce necessarie e includere le intestazioni mostrate nel codice seguente.
         ```cpp
         #include <MMdeviceapi.h>        // Device endpoint definitions
         #include <Mfidl.h>              // OTA interface definitions
@@ -76,9 +76,9 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
         
 
-    -   Collegamento a Mfuuid. lib per usare le interfacce OTA.
-    -   Disabilitare il debugger del kernel e il verificatore del driver per evitare gli errori di controllo dell'autenticazione.
-2.  Enumerare tutti gli endpoint del sistema e selezionare l'endpoint di destinazione dalla raccolta di endpoint, come illustrato nel codice seguente. Per ulteriori informazioni sull'enumerazione dei dispositivi, vedere [enumerazione di dispositivi audio](/previous-versions//ms678716(v=vs.85)).
+    -   Collegamento a Mfuuid.lib per usare le interfacce OTA.
+    -   Disabilitare il debugger del kernel e il verificatore del driver per evitare errori di controllo dell'autenticazione.
+2.  Enumerare tutti gli endpoint nel sistema e selezionare l'endpoint di destinazione dalla raccolta di endpoint, come illustrato nel codice seguente. Per altre informazioni sull'enumerazione dei dispositivi, vedere [Enumerazione dei dispositivi audio.](/previous-versions//ms678716(v=vs.85))
     ```cpp
     BOOL IsDigitalEndpoint(IMMDevice *pDevice)
     {
@@ -180,9 +180,9 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
     
 
-3.  Usare il puntatore [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) all'endpoint restituito dal processo di enumerazione per attivare l'API di streaming audio desiderata e prepararsi per lo streaming. Diverse API audio richiedono una preparazione leggermente diversa.
+3.  Usare il [**puntatore IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) all'endpoint restituito dal processo di enumerazione per attivare l'API di streaming audio desiderata e prepararsi per lo streaming. Api audio diverse richiedono una preparazione leggermente diversa.
     -   Per le applicazioni audio DShow:
-        1.  Creare un oggetto COM DirectShow chiamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IBaseFilter come identificatore di interfaccia.
+        1.  Creare un DirectShow COM chiamando [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IBaseFilter come identificatore di interfaccia.
             ```cpp
             IUnknown *pDShowFilter = NULL;
             ...
@@ -194,9 +194,9 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
             
 
-        2.  Compilare un grafo di filtro DirectShow con questo oggetto COM attivato dal dispositivo. Per ulteriori informazioni su questo processo, vedere la sezione relativa alla creazione del grafico del filtro nella documentazione di DirectShow SDK.
+        2.  Creare un DirectShow di filtri con questo oggetto COM attivato dal dispositivo. Per altre informazioni su questo processo, vedere "Building the Filter Graph" (Compilazione del filtro Graph) DirectShow SDK.
     -   Per le applicazioni audio DSound:
-        1.  Creare un oggetto COM DSound chiamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IDirectSound8 come identificatore di interfaccia.
+        1.  Creare un oggetto COM DSound chiamando [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IDirectSound8 come identificatore di interfaccia.
             ```cpp
             IDirectSound8  *pDSSound8;
             ...
@@ -208,9 +208,9 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
             
 
-        2.  Usare l'oggetto DSound creato in precedenza per programmare DSound per la vaporizzazione. Per ulteriori informazioni su questo processo, vedere [DirectSound](/previous-versions//bb219818(v=vs.85)) su MSDN.
+        2.  Usare l'oggetto DSound creato in precedenza per programmare DSound per l'avallo. Per altre informazioni su questo processo, vedere [DirectSound](/previous-versions//bb219818(v=vs.85)) su MSDN.
     -   Per WASAPI:
-        1.  Creare un oggetto com [**IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) chiamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IAudioClient come identificatore di interfaccia.
+        1.  Creare un [**oggetto COM IAudioClient**](/windows/desktop/api/Audioclient/nn-audioclient-iaudioclient) chiamando [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e specificando IID \_ IAudioClient come identificatore di interfaccia.
             ```cpp
             IAudioClient *pIAudioClient = NULL;
             ...
@@ -228,9 +228,9 @@ L'applicazione multimediale deve eseguire le attività seguenti.
             ```
 
             
-4.  Avviare il flusso audio.
-5.  Impostare i criteri di protezione per il flusso.
-    1.  Per i client WASAPI, ottenere un riferimento all'interfaccia [**IMFTrustedOutput**](/windows/win32/api/mfidl/nn-mfidl-imftrustedoutput) dell'oggetto dell'autorità di attendibilità di output (OTA) per il flusso chiamando [**IAudioClient:: GetService**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getservice) e specificando IID \_ IMFTrustedOutput come identificatore di interfaccia.
+4.  Avviare lo streaming audio.
+5.  Impostare i criteri di protezione nel flusso.
+    1.  Per i client WASAPI, ottenere un riferimento all'interfaccia [**IMFTrustedOutput**](/windows/win32/api/mfidl/nn-mfidl-imftrustedoutput) dell'oggetto OTA (Output Trust Authority) per il flusso chiamando [**IAudioClient::GetService**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getservice) e specificando IID IMFTrustedOutput come identificatore di \_ interfaccia.
         ```cpp
         IMFTrustedOutput*       pTrustedOutput = NULL;
         hr = pIAudioClient>GetService(
@@ -240,14 +240,14 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
         
 
-    2.  Ottenere un conteggio degli oggetti OTA disponibili chiamando [**IMFTrustedOutput:: GetOutputTrustAuthorityCount**](/windows/win32/api/mfidl/nf-mfidl-imftrustedoutput-getoutputtrustauthoritycount).
+    2.  Ottenere un conteggio degli oggetti OTA disponibili chiamando [**IMFTrustedOutput::GetOutputTrustAuthorityCount**](/windows/win32/api/mfidl/nf-mfidl-imftrustedoutput-getoutputtrustauthoritycount).
         ```cpp
         hr = pTrustedOutput->GetOutputTrustAuthorityCount(&m_dwCountOTA);
         ```
 
         
 
-    3.  Enumerare la raccolta OTA e ottenere un riferimento all'oggetto OTA che supporta l'azione PEACTION \_ Play. Tutti OTA espongono l'interfaccia [**IMFOutputTrustAuthority**](/windows/win32/api/mfidl/nn-mfidl-imfoutputtrustauthority) .
+    3.  Enumerare la raccolta OTA e ottenere un riferimento all'oggetto OTA che supporta l'azione PEACTION \_ PLAY. Tutti gli OTA espongono [**l'interfaccia IMFOutputTrustAuthority.**](/windows/win32/api/mfidl/nn-mfidl-imfoutputtrustauthority)
         ```cpp
         hr = pMFTrustedOutput->GetOutputTrustAuthorityByIndex(I, &pMFOutputTrustAuthority);
         hr = pMFOutputTrustAuthority->GetAction(&action) 
@@ -255,7 +255,7 @@ L'applicazione multimediale deve eseguire le attività seguenti.
 
         
 
-    4.  Usare l'interfaccia [**IMFTrustedOutput**](/windows/win32/api/mfidl/nn-mfidl-imftrustedoutput) per impostare i criteri di protezione nel flusso.
+    4.  Usare [**l'interfaccia IMFTrustedOutput**](/windows/win32/api/mfidl/nn-mfidl-imftrustedoutput) per impostare i criteri di protezione nel flusso.
 
         ```cpp
         hr = pTrustedOutput ->SetPolicy(&pPolicy, nPolicy, &pbTicket, &cbTicket);
@@ -264,27 +264,27 @@ L'applicazione multimediale deve eseguire le attività seguenti.
         
 
         > [!Note]
-        > Se si usa EVR, [**sepolicy**](/windows/win32/api/mfidl/nf-mfidl-imfoutputtrustauthority-setpolicy) genera l'evento [MEPOLICYSET](../medfound/mepolicyset.md) e restituisce MF \_ S \_ Attendi \_ che i \_ criteri siano \_ impostati in modo da indicare che OTA imporrà i criteri in modo asincrono. Tuttavia, in questo esempio di codice, l'applicazione è un client WASAPI diretto che ha recuperato l'oggetto OTA dal client audio (passaggio 5 a). A differenza di EVR, un client audio e altri oggetti WASAPI non implementano generatori di eventi multimediali. Senza generatori di eventi multimediali, **IMFTrustedOutput:: Topolicy** non restituisce l' \_ \_ attesa \_ del set di criteri MF S \_ \_ .
+        > Se si usa EVR, [**SetPolicy**](/windows/win32/api/mfidl/nf-mfidl-imfoutputtrustauthority-setpolicy) genera l'evento [MEPolicySet](../medfound/mepolicyset.md) e restituisce MF S WAIT FOR POLICY SET per indicare che \_ \_ \_ \_ l'OTA applicherà i criteri in modo \_ asincrono. In questo codice di esempio, tuttavia, l'applicazione è un client WASAPI diretto che ha recuperato l'oggetto OTA dal client audio (passaggio 5 a). A differenza di EVR, un client audio e altri oggetti WASAPI non implementano generatori di eventi multimediali. Senza i generatori di eventi multimediali, **IMFTrustedOutput::SetPolicy** non restituisce MF \_ S WAIT FOR POLICY \_ \_ \_ \_ SET.
         >
-        > È necessario impostare le impostazioni dei criteri audio dopo l'avvio del flusso audio. in caso contrario, [**IMFTrustedOutput:: GetOutputTrustAuthorityByIndex**](/windows/win32/api/mfidl/nf-mfidl-imftrustedoutput-getoutputtrustauthoritybyindex) ha esito negativo. Inoltre, per supportare questa funzionalità, il driver audio sottostante deve essere un *driver attendibile*.
+        > Le impostazioni dei criteri audio devono essere impostate dopo l'avvio dello streaming audio. In caso [**contrario, IMFTrustedOutput::GetOutputTrustAuthorityByIndex ha**](/windows/win32/api/mfidl/nf-mfidl-imftrustedoutput-getoutputtrustauthoritybyindex) esito negativo. Inoltre, per supportare questa funzionalità, il driver audio sottostante deve essere un *driver attendibile.*
 
          
 
-        Nel codice di esempio, *ppolicy* è un puntatore all'interfaccia [**IMFOutputPolicy**](/windows/win32/api/mfidl/nn-mfidl-imfoutputpolicy) di un oggetto Criteri implementato dal client. Per informazioni, vedere la documentazione di [Media Foundation SDK](../medfound/microsoft-media-foundation-sdk.md) .
+        Nel codice di esempio *pPolicy è* un puntatore all'interfaccia [**IMFOutputPolicy**](/windows/win32/api/mfidl/nn-mfidl-imfoutputpolicy) di un oggetto criteri implementato dal client. Per informazioni, vedere la [Media Foundation SDK.](../medfound/microsoft-media-foundation-sdk.md)
 
-        Nell'implementazione del metodo [**IMFOutputPolicy:: GenerateRequiredSchemas**](/windows/win32/api/mfidl/nf-mfidl-imfoutputpolicy-generaterequiredschemas) , è necessario generare una raccolta di sistemi di protezione dell'output (schemi) che deve essere applicata da OTA. Ogni schema è identificato da un GUID e contiene i dati di configurazione per il sistema di protezione. Verificare che i sistemi di protezione nella raccolta siano limitati all'uso di driver audio attendibili. Questa restrizione è identificata dal GUID, **MFPROTECTION \_ TRUSTEDAUDIODRIVERS**, Disable o CONSTRICTAUDIO. Se \_ si usa MFPROTECTION TRUSTEDAUDIODRIVERS, i dati di configurazione per questo schema sono DWORD. Per ulteriori informazioni sugli schemi e sui dati di configurazione correlati, vedere la documentazione relativa all'SDK dell'ambiente protetto.
+        Nell'implementazione del metodo [**IMFOutputPolicy::GenerateRequiredSchemas**](/windows/win32/api/mfidl/nf-mfidl-imfoutputpolicy-generaterequiredschemas) è necessario generare una raccolta di sistemi di protezione dell'output (schemi) che l'OTA deve applicare. Ogni schema è identificato da un GUID e contiene i dati di configurazione per il sistema di protezione. Assicurarsi che i sistemi di protezione nella raccolta siano limitati all'uso di driver audio attendibili. Questa restrizione è identificata dal GUID **MFPROTECTION \_ TRUSTEDAUDIODRIVERS,** DISABLE o CONSTRICTAUDIO. Se si usa MFPROTECTION \_ TRUSTEDAUDIODRIVERS, i dati di configurazione per questo schema sono DWORD. Per altre informazioni sugli schemi e sui dati di configurazione correlati, vedere la documentazione di Protected Environment SDK.
 
-        Il client deve inoltre fornire la definizione dello schema, implementando l'interfaccia [**IMFOutputSchema**](/windows/win32/api/mfidl/nn-mfidl-imfoutputschema) . [**IMFOutputSchema:: GetSchemaType**](/windows/win32/api/mfidl/nf-mfidl-imfoutputschema-getschematype) recupera **MFPROTECTION \_ TRUSTEDAUDIODRIVERS** come GUID dello schema. [**IMFOutputSchema:: GetConfigurationData**](/windows/win32/api/mfidl/nf-mfidl-imfoutputschema-getconfigurationdata) restituisce un puntatore ai dati di configurazione dello schema.
+        Il client deve inoltre fornire la definizione dello schema implementando [**l'interfaccia IMFOutputSchema.**](/windows/win32/api/mfidl/nn-mfidl-imfoutputschema) [**IMFOutputSchema::GetSchemaType**](/windows/win32/api/mfidl/nf-mfidl-imfoutputschema-getschematype) recupera **MFPROTECTION \_ TRUSTEDAUDIODRIVERS** come GUID dello schema. [**IMFOutputSchema::GetConfigurationData**](/windows/win32/api/mfidl/nf-mfidl-imfoutputschema-getconfigurationdata) restituisce un puntatore ai dati di configurazione dello schema.
 
-6.  Continua lo streaming audio.
+6.  Continuare lo streaming audio.
 7.  Assicurarsi che i criteri di protezione siano chiari prima di arrestare lo streaming.
 
-    Rilasciare i riferimenti all'interfaccia dei criteri correlati sopra.
+    Rilasciare i riferimenti all'interfaccia dei criteri correlati indicati in precedenza.
 
-    Tramite le chiamate di versione vengono cancellate le impostazioni dei criteri impostati in precedenza.
+    Le chiamate di rilascio cancellano le impostazioni dei criteri impostate in precedenza.
 
     > [!Note]  
-    > Ogni volta che un flusso viene riavviato, è necessario impostare nuovamente i criteri di protezione nel flusso. La procedura è descritta nel passaggio 5-d.
+    > Ogni volta che un flusso viene riavviato, i criteri di protezione devono essere nuovamente impostati nel flusso. La procedura è descritta nel passaggio 5-d.
 
     ```cpp
     pMFOutputTrustAuthority->Release()
@@ -292,7 +292,7 @@ L'applicazione multimediale deve eseguire le attività seguenti.
     ```
   
 
-Negli esempi di codice seguenti viene illustrata un'implementazione di esempio degli oggetti Policy e schema.
+Negli esempi di codice seguenti viene illustrata un'implementazione di esempio degli oggetti criteri e schema.
 
 
 ```cpp

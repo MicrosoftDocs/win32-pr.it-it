@@ -1,17 +1,17 @@
 ---
 description: Canali TV registrati. Ad esempio, 42, 5, 53.
 ms.assetid: daa738a0-b4db-4b8d-bd88-6ae66c10f7d1
-title: System. RecordedTV. ChannelNumber
+title: System.RecordedTV.ChannelNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33066e2c40c6f4535a2164e3ad4ad8a51ba4ddc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88247588b665d93b369211efee2f6c0f807873752477f19a13a907b7067838c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969910"
 ---
-# <a name="systemrecordedtvchannelnumber"></a>System. RecordedTV. ChannelNumber
+# <a name="systemrecordedtvchannelnumber"></a>System.RecordedTV.ChannelNumber
 
 Canali TV registrati. Ad esempio, 42, 5, 53.
 
@@ -46,13 +46,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -61,13 +61,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -76,13 +76,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

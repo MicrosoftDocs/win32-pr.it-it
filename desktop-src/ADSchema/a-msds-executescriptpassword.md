@@ -121,7 +121,7 @@ Usato durante la ridenominazione del dominio. Questo valore non può essere scri
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| A valore singolo       | Vero                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -142,7 +142,7 @@ Usato durante la ridenominazione del dominio. Questo valore non può essere scri
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| A valore singolo       | Vero                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
@@ -163,7 +163,7 @@ Usato durante la ridenominazione del dominio. Questo valore non può essere scri
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| A valore singolo       | Vero                                                                                                    |
+| Is-Single-Valued       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |

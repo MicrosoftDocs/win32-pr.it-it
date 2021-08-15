@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come usare l'interfaccia IShellItemImageFactory per ottenere la migliore immagine possibile per un elemento.
+description: Illustra come usare l'interfaccia IShellItemImageFactory per ottenere la migliore immagine possibile per un elemento.
 title: Esempio di uso di ImageFactory
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f9455cb7f34344e49363573432c00c6a86138a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57f4c34deefe6850605a4bbe30837f266346b87f8347d8eb9f1f2effb71df697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968760"
 ---
 # <a name="using-image-factory-sample"></a>Esempio di uso di ImageFactory
 
-Viene illustrato come usare l'interfaccia [**IShellItemImageFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemimagefactory) per ottenere la migliore immagine possibile per un elemento.
+Illustra come usare [**l'interfaccia IShellItemImageFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemimagefactory) per ottenere la migliore immagine possibile per un elemento.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,13 +40,13 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Esempio UsingImageFactory](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/UsingImageFactory) |
+| GitHub  | [Esempio usingImageFactory](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/UsingImageFactory) |
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 

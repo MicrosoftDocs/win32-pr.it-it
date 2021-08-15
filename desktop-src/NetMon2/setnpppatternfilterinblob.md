@@ -44,7 +44,7 @@ DWORD SetNPPPatternFilterInBlob(
 *hBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per l'oggetto BLOB.
+Handle per il BLOB.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Puntatore a una [struttura EXPRESSION](expression.md) che definisce l'espression
 *hErrorBlob* \[ Cambio\]
 </dt> <dd>
 
-Handle per un BLOB di errore che specifica dove si è verificato l'errore (se presente) nel BLOB originale.
+Handle a un BLOB di errore che specifica dove nel BLOB originale si è verificato l'errore (se presente).
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 
 ## <a name="remarks"></a>Commenti
 
-I dati del filtro delle corrispondenze dei criteri archiviati **nella categoria Config** del BLOB.
+I dati del filtro di corrispondenza dei criteri archiviati nella **categoria Config** del BLOB.
 
 ## <a name="requirements"></a>Requisiti
 

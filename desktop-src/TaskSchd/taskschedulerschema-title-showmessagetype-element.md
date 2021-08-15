@@ -44,9 +44,9 @@ Contiene il titolo della finestra di messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo C++, [**vedere Proprietà Title di IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
+Per lo sviluppo in C++, vedere [**Proprietà Title di IShowMessageAction.**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title)
 
-Per lo sviluppo di script, [**vedere ShowMessageAction.Title**](showmessageaction-title.md).
+Per lo sviluppo di script, [**vedere ShowMessageAction.Title.**](showmessageaction-title.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Per lo sviluppo di script, [**vedere ShowMessageAction.Title**](showmessageactio
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

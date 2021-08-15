@@ -13,18 +13,18 @@ ms.locfileid: "118462393"
 ---
 # <a name="linguistic-and-unicode-considerations"></a>Considerazioni linguistiche e Unicode
 
-Questa sezione contiene un elenco di considerazioni linguistiche e Unicode che potrebbero influire sull'implementazione del word breaker e dello stemmer. L'elenco non è esaustivo.
+Questa sezione contiene un elenco di considerazioni linguistiche e Unicode che potrebbero influire sull'implementazione di word breaker e stemmer. L'elenco non è esaustivo.
 
 Questa sezione include gli argomenti seguenti:
 
--   [Normalizzazione del modulo di superficie](surface-form-normalization.md)
--   [Considerazioni varie su linguistico e Unicode](miscellaneous-linguistic-and-unicode-considerations.md)
+-   [Normalizzazione della forma della superficie](surface-form-normalization.md)
+-   [Considerazioni varie su caratteri linguistici e Unicode](miscellaneous-linguistic-and-unicode-considerations.md)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
--   Per un elenco dei lanuage supportati dai word breaker, vedere [Lingue supportate Windows ricerca](-search-3x-wds-language-support.md).
--   Se è necessario identificare la lingua di una parte di testo, è possibile usare il rilevamento automatico della lingua (LAD), disponibile in Windows 7 e versioni successive. Per altre informazioni, vedere [Extended Linguistic Services](../intl/extended-linguistic-services.md) (ELS).
--   Per la documentazione di riferimento applicabile, vedere [Interfacce dei componenti aggiuntivi dati](-search-data-addins-interfaces-entry-page.md).
+-   Per un elenco delle lingue supportate dai word breaker, vedere [Lingue supportate Windows ricerca.](-search-3x-wds-language-support.md)
+-   Se è necessario identificare la lingua di un frammento di testo, è possibile usare il rilevamento automatico della lingua (LAD), disponibile in Windows 7 e versioni successive. Per altre informazioni, vedere [Extended Linguistic Services](../intl/extended-linguistic-services.md) (ELS).
+-   Per la documentazione di riferimento applicabile, vedere [Interfacce dei componenti aggiuntivi dati.](-search-data-addins-interfaces-entry-page.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

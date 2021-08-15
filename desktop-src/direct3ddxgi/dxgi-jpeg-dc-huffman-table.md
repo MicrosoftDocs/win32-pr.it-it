@@ -1,7 +1,7 @@
 ---
-description: Viene descritta una tabella di un DC Huffman.
+description: Descrive una tabella JPEG DC huffman.
 ms.assetid: 9D6C18C3-F75C-41E0-9EFA-E882E89DE713
-title: Struttura DXGI_JPEG_DC_HUFFMAN_TABLE (Dxgitype. h)
+title: DXGI_JPEG_DC_HUFFMAN_TABLE struttura (Dxgitype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dxgitype.h
-ms.openlocfilehash: b2f5f73f7c6def745b987818b9ec30fb3e2752e2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b431bbccb66bcb24e068229493ef87f2ac96736161bb306609ac4dd479dfb7cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987121"
 ---
-# <a name="dxgi_jpeg_dc_huffman_table-structure"></a>\_Struttura della tabella DXGI JPEG \_ DC \_ Huffman \_
+# <a name="dxgi_jpeg_dc_huffman_table-structure"></a>Struttura DXGI \_ JPEG \_ DC \_ HUFFMAN \_ TABLE
 
-Viene descritta una tabella di un DC Huffman.
+Descrive una tabella JPEG DC huffman.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ typedef struct DXGI_JPEG_DC_HUFFMAN_TABLE {
 
 <dl> <dt>
 
-**Codecounts**
+**CodeCounts**
 </dt> <dd>
 
 Numero di codici per ogni lunghezza del codice.
 
 </dd> <dt>
 
-**Codevalues**
+**CodeValues**
 </dt> <dd>
 
-Valori del codice del Huffman, in ordine di aumento della lunghezza del codice.
+Valori di codice Huffman, in ordine di aumento della lunghezza del codice.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Valori del codice del Huffman, in ordine di aumento della lunghezza del codice.
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dxgitype. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dxgitype.h</dt> </dl> |
 
 
 

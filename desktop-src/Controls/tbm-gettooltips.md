@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETTOOLTIPS (COMmctrl. h)
-description: Recupera l'handle per il controllo ToolTip assegnato a TrackBar, se presente.
+title: TBM_GETTOOLTIPS messaggio (Commctrl.h)
+description: Recupera l'handle per il controllo della descrizione comando assegnato al trackbar, se presente.
 ms.assetid: 30efef12-1aec-4635-94a7-1843db404c4f
 keywords:
-- Controlli di Windows Message TBM_GETTOOLTIPS
+- TBM_GETTOOLTIPS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e02b0b757b1aabfef2c9df2e80ca9f96542ba4a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c97c94ab3a696f5967f724e76d2d8702a01275bedc06ad7c13907d57710a078
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078065"
 ---
-# <a name="tbm_gettooltips-message"></a>\_Messaggio TBM GETtooltips
+# <a name="tbm_gettooltips-message"></a>Messaggio \_ TBM GETTOOLTIPS
 
-Recupera l'handle per il controllo ToolTip assegnato a TrackBar, se presente.
+Recupera l'handle per il controllo della descrizione comando assegnato al trackbar, se presente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Recupera l'handle per il controllo ToolTip assegnato a TrackBar, se presente.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'handle per il controllo ToolTip assegnato a TrackBar oppure **null** se le descrizioni comandi non sono in uso. Se il controllo TrackBar non usa lo stile [**delle \_ descrizioni comandi di TBS**](trackbar-control-styles.md) , il valore restituito è **null**.
+Restituisce l'handle al controllo descrizione comando assegnato al trackbar oppure **NULL** se le descrizioni comando non sono in uso. Se il controllo trackbar non usa lo stile [**TBS \_ TOOLTIPS,**](trackbar-control-styles.md) il valore restituito è **NULL.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce l'handle per il controllo ToolTip assegnato a TrackBar oppure **null
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

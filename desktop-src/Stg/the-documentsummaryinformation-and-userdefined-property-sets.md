@@ -1,72 +1,72 @@
 ---
-title: Set di proprietà DocumentSummaryInformation e UserDefined
-description: Un set di proprietà DocumentSummaryInformation e UserDefined è un'estensione del set di proprietà informazioni di riepilogo. Entrambi i set di proprietà possono esistere simultaneamente.
+title: DocumentSummaryInformation e set di proprietà definiti dall'utente
+description: Un set di proprietà DocumentSummaryInformation e UserDefined è un'estensione del set di proprietà Summary Information. Entrambi i set di proprietà possono esistere contemporaneamente.
 ms.assetid: c6d4e2bc-f7f6-429d-aa91-432d833c69d1
 keywords:
 - DocumentSummaryInformation
-- Set di Proprietà UserDefined
+- Set di proprietà definite dall'utente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 411c6081ec098539baa2b26b6594d04216f5b455
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d76c679fd8b4059e821598bed37d68735c45f914e4685e43a1c514b832e199e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886837"
 ---
-# <a name="the-documentsummaryinformation-and-userdefined-property-sets"></a>Set di proprietà DocumentSummaryInformation e UserDefined
+# <a name="the-documentsummaryinformation-and-userdefined-property-sets"></a>DocumentSummaryInformation e set di proprietà definiti dall'utente
 
-Un set di proprietà **DocumentSummaryInformation** e **UserDefined** è un'estensione [del set di proprietà informazioni di riepilogo](the-summary-information-property-set.md). Entrambi i set di proprietà possono esistere simultaneamente.
+Un **set di proprietà DocumentSummaryInformation** e **UserDefined** è un'estensione del set di proprietà [Summary Information](the-summary-information-property-set.md). Entrambi i set di proprietà possono esistere contemporaneamente.
 
-Il nome del flusso che contiene il set di proprietà **DocumentSummaryInformation** è **" \\ 005DocumentSummaryInformation"**. L'identificatore di formato (FMTID) per il set di proprietà **DocumentSummaryInformation** è **D5CDD502-2E9C-101B-9397-08002B2CF9AE**.
+Il nome del flusso che contiene il set **di proprietà DocumentSummaryInformation** è **" \\ 005DocumentSummaryInformation".** L'identificatore di formato (FMTID) per il set di proprietà **DocumentSummaryInformation** è **D5CDD502-2E9C-101B-9397-08002B2CF9AE**.
 
-La dichiarazione per questo valore è disponibile nei file di intestazione specificati come **fmtid \_ DocSummaryInformation**. Per ulteriori informazioni, vedere [nomi in IStorage](names-in-istorage.md), [il set di proprietà informazioni di riepilogo](the-summary-information-property-set.md), [**IPropertySetStorage:: create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) e [identificatori di formato](format-identifiers.md).
+La dichiarazione per questo valore è disponibile nei file di intestazione **forniti come FMTID \_ DocSummaryInformation.** Per altre informazioni, vedere [Names in IStorage](names-in-istorage.md), [The Summary Information Property Set](the-summary-information-property-set.md), [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) e [Format Identifiers.](format-identifiers.md)
 
-Questo flusso include anche una sezione separata per le proprietà personalizzate definite dall'utente, come nei set di proprietà **DocumentSummaryInformation** e **UserDefined** . Questa sezione viene visualizzata nell'interfaccia [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) come set di proprietà separato, con il fmtid seguente (disponibile come **fmtid \_ UserDefinedProperties**): **D5CDD505-2E9C-101B-9397-08002B2CF9AE**.
+Questo flusso include anche una sezione separata per le proprietà definite dall'utente personalizzate, come nei set di proprietà **DocumentSummaryInformation** e **UserDefined.** Questa sezione viene visualizzata nell'interfaccia [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) come set di proprietà separato, con il seguente FMTID (disponibile come **FMTID \_ UserDefinedProperties**): **D5CDD505-2E9C-101B-9397-08002B2CF9AE**.
 
-Questi due set di proprietà sono gli unici per i quali un singolo flusso può ospitare più set di proprietà. Il fatto che questi due set di proprietà si trovino in un singolo flusso influiscono sul comportamento dell'interfaccia **IPropertySetStorage** . Per ulteriori informazioni, vedere [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage).
+Questi due set di proprietà sono gli unici per i quali un singolo flusso può contenere più set di proprietà. Il fatto che questi due set di proprietà siano in un singolo flusso influisce sul comportamento **dell'interfaccia IPropertySetStorage.** Per altre informazioni, vedere [**IPropertySetStorage.**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage)
 
-Nella tabella seguente sono elencate le proprietà aggiunte al set di proprietà **DocumentSummaryInformation** e **UserDefined** . Come nel set di proprietà **SummaryInformation** , i nomi non vengono in genere archiviati nel set di proprietà, ma vengono dedotti dall'identificatore della proprietà.
+La tabella seguente elenca le proprietà aggiunte al set **di proprietà DocumentSummaryInformation** e **UserDefined.** Come nel set **di proprietà SummaryInformation,** i nomi non vengono in genere archiviati nel set di proprietà, ma vengono dedotto dall'identificatore della proprietà.
 
 
 
 | Nome proprietà      | Identificatore proprietà     | Valore dell'identificatore di proprietà | Tipo VARIANT                      |
 |--------------------|-------------------------|---------------------------|-----------------------------------|
-| Category           | **\_categoria PIDDSI**    | 0x00000002                | **\_LPSTR VT**                     |
-| DestinazionePresentazione | **\_PRESFORMAT PIDDSI**  | 0x00000003                | **\_LPSTR VT**                     |
-| Byte              | **PIDDSI ( \_ GetByteCount)**   | 0x00000004                | **VT \_ I4**                        |
-| Linee              | **\_LINECOUNT PIDDSI**   | 0x00000005                | **VT \_ I4**                        |
-| Paragrafi         | **\_PARCOUNT PIDDSI**    | 0x00000006                | **VT \_ I4**                        |
-| Diapositive             | **\_SLIDECOUNT PIDDSI**  | 0x00000007                | **VT \_ I4**                        |
-| Note              | **\_NOTECOUNT PIDDSI**   | 0x00000008                | **VT \_ I4**                        |
-| HiddenSlides       | **\_HIDDENCOUNT PIDDSI** | 0x00000009                | **VT \_ I4**                        |
-| MMClips            | **\_MMCLIPCOUNT PIDDSI** | 0x0000000A                | **VT \_ I4**                        |
-| ScaleCrop          | **\_scalabilità PIDDSI**       | 0x0000000B                | **\_bool VT**                      |
-| HeadingPairs       | **\_HEADINGPAIR PIDDSI** | 0x0000000C                | **VT \_** \| **\_ vettore VT** Variant |
-| TitlesofParts      | **\_DOCPARTS PIDDSI**    | 0x0000000D                | **VT \_** \| **\_ LPSTR Vector VT**   |
-| Manager            | **\_gestione PIDDSI**     | 0x0000000E                | **\_LPSTR VT**                     |
-| Company            | **\_società PIDDSI**     | 0x0000000F                | **\_LPSTR VT**                     |
-| LinksUpToDate      | **\_LINKSDIRTY PIDDSI**  | 0x00000010                | **\_bool VT**                      |
+| Category           | **CATEGORIA \_ PIDDSI**    | 0x00000002                | **VT \_ LPSTR**                     |
+| PresentationTarget | **PIDDSI \_ PRESFORMAT**  | 0x00000003                | **VT \_ LPSTR**                     |
+| Byte              | **PIDDSI \_ BYTECOUNT**   | 0x00000004                | **VT \_ I4**                        |
+| Linee              | **CONTEGGIO RIGHE PIDDSI \_**   | 0x00000005                | **VT \_ I4**                        |
+| Paragrafi         | **PIDDSI \_ FESTUNT**    | 0x00000006                | **VT \_ I4**                        |
+| Diapositive             | **PIDDSI \_ SLIDECOUNT**  | 0x00000007                | **VT \_ I4**                        |
+| Note              | **PIDDSI \_ NOTECOUNT**   | 0x00000008                | **VT \_ I4**                        |
+| HiddenSlides       | **PIDDSI \_ HIDDENCOUNT** | 0x00000009                | **VT \_ I4**                        |
+| MMClips            | **PIDDSI \_ MMCLIPCOUNT** | 0x0000000a                | **VT \_ I4**                        |
+| ScaleCrop          | **SCALA PIDDSI \_**       | 0x0000000B                | **VT \_ BOOL**                      |
+| HeadingPairs       | **INTESTAZIONE \_ PIDDSIPAIR** | 0x0000000C                | **VT \_ VARIANT** \| **VT \_ VECTOR** |
+| TitlesofParts      | **PIDDSI \_ DOCPARTS**    | 0x0000000D                | **VT \_ VECTOR** \| **VT \_ LPSTR**   |
+| Manager            | **GESTIONE PIDDSI \_**     | 0x0000000E                | **VT \_ LPSTR**                     |
+| Company            | **SOCIETÀ PIDDSI \_**     | 0x0000000F                | **VT \_ LPSTR**                     |
+| LinksUpToDate      | **COLLEGAMENTI \_ PIDDSIDIRTY**  | 0x00000010                | **VT \_ BOOL**                      |
 
 
 
- 
+ 
 
-Queste proprietà hanno i seguenti usi:
+Queste proprietà hanno gli usi seguenti:
 
 <dl> <dt>
 
 <span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categoria
 </dt> <dd>
 
-Stringa di testo digitata dall'utente che indica a quale categoria appartiene il file (promemoria, proposta e così via). È utile per trovare file dello stesso tipo.
+Stringa di testo digitata dall'utente che indica la categoria a cui appartiene il file (promemoria, proposta e così via). È utile per trovare file dello stesso tipo.
 
 </dd> <dt>
 
-<span id="PresentationTarget"></span><span id="presentationtarget"></span><span id="PRESENTATIONTARGET"></span>DestinazionePresentazione
+<span id="PresentationTarget"></span><span id="presentationtarget"></span><span id="PRESENTATIONTARGET"></span>PresentationTarget
 </dt> <dd>
 
-Formato di destinazione per la presentazione (35mm, stampante, video e così via).
+Formato di destinazione per la presentazione (35 mm, stampante, video e così via).
 
 </dd> <dt>
 
@@ -122,14 +122,14 @@ Numero di clip audio o video.
 <span id="ScaleCrop"></span><span id="scalecrop"></span><span id="SCALECROP"></span>ScaleCrop
 </dt> <dd>
 
-Impostare su true (-1) quando si vuole ridimensionare l'anteprima. Se non è impostato, si desidera il ritaglio.
+Impostare su True (-1) quando si desidera ridimensionare l'anteprima. Se non è impostato, è necessario ritagliare.
 
 </dd> <dt>
 
 <span id="HeadingPairs"></span><span id="headingpairs"></span><span id="HEADINGPAIRS"></span>HeadingPairs
 </dt> <dd>
 
-Proprietà utilizzata internamente che indica il raggruppamento di diverse parti del documento e il numero di elementi in ogni gruppo. I titoli delle parti del documento vengono archiviati nella proprietà **TitlesofParts** . La proprietà **HeadingPairs** viene archiviata come vettore di varianti, in coppie ripetute di valori VT **\_ LPSTR** (o **VT \_ LPWSTR**) e **VT \_ I4** . Il valore **VT \_ LPSTR** rappresenta un nome di intestazione e il valore **VT \_ I4** indica il numero di parti del documento sotto tale intestazione.
+Proprietà usata internamente che indica il raggruppamento di parti del documento diverse e il numero di elementi in ogni gruppo. I titoli delle parti del documento vengono archiviati nella **proprietà TitlesofParts.** La **proprietà HeadingPairs** viene archiviata come vettore di varianti, in coppie ripetute di valori **\_ VT LPSTR** (o **VT \_ LPWSTR)** e **VT \_ I4.** Il **valore \_ VT LPSTR** rappresenta un nome di intestazione e il valore **VT \_ I4** indica il conteggio delle parti del documento sotto tale intestazione.
 
 </dd> <dt>
 
@@ -157,20 +157,20 @@ Nome della società.
 <span id="LinksUpToDate"></span><span id="linksuptodate"></span><span id="LINKSUPTODATE"></span>LinksUpToDate
 </dt> <dd>
 
-Valore booleano che indica se i collegamenti personalizzati sono ostacolati da un rumore eccessivo, per tutte le applicazioni.
+Valore booleano per indicare se i collegamenti personalizzati sono ostacolati da un rumore eccessivo, per tutte le applicazioni.
 
 > [!Note]  
-> Come descritto in 12,3. Formato serializzato per i set di proprietà della specifica di progettazione OLE 2,0, gli elementi Vector nelle proprietà **HeadingPairs** e **TitlesofParts** devono essere allineati nei limiti di 32 bit all'interno del set di proprietà. Tuttavia, nei set di proprietà **DocumentSummaryInformation** e **UserDefined** , quando la tabella codici della proprietà impostata non è Unicode, questi elementi devono essere compressi.
+> Come descritto nella versione 12.3. Formato serializzato per i set di proprietà della specifica di progettazione OLE 2.0, gli elementi vettoriali nelle proprietà **HeadingPairs** e **TitlesofParts** devono essere allineati sui limiti a 32 bit all'interno del set di proprietà. Tuttavia, nei set **di proprietà DocumentSummaryInformation** e **UserDefined,** quando la tabella codici del set di proprietà non è Unicode, questi elementi devono essere imballati.
 
- 
+ 
 
 </dd> </dl>
 
-Il set di proprietà **UserDefined** può essere utilizzato per contenere qualsiasi proprietà. Viene in genere usato per archiviare le proprietà denominate create da un utente.
+Il **set di proprietà UserDefined** può essere usato per contenere qualsiasi proprietà. In genere, viene usato per archiviare le proprietà denominate create da un utente.
 
- 
+ 
 
- 
+ 
 
 
 

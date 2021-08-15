@@ -1,28 +1,28 @@
 ---
 title: Invio della risposta asincrona
-description: Quando la chiamata asincrona è completa, il server invia una risposta al client chiamando la funzione RpcAsyncCompleteCall e passando l'handle asincrono.
+description: Al termine della chiamata asincrona, il server invia una risposta al client chiamando la funzione RpcAsyncCompleteCall e passando l'handle asincrono.
 ms.assetid: 458bc476-963e-4812-b4c2-9074ff0a8284
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f861c3f2a1befdb85435f5275176c82e23bb06
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bdcaf4db4a27a49a8025596668893518c6b6c577a0d81d91189a44ec81df4de6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104045165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925579"
 ---
 # <a name="sending-the-asynchronous-reply"></a>Invio della risposta asincrona
 
-Quando la chiamata asincrona è completa, il server invia una risposta al client chiamando la funzione [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) e passando l'handle asincrono. Questa chiamata è necessaria anche se la chiamata asincrona ha un valore restituito void e nessun \[ \] parametro out. Se la funzione ha un valore restituito, viene passata per riferimento a **RpcAsyncCompleteCall**.
+Al termine della chiamata asincrona, il server invia una risposta al client chiamando la [**funzione RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) e passando l'handle asincrono. Questa chiamata è necessaria anche se la chiamata asincrona ha un valore restituito void e nessun \[ parametro \] out. Se la funzione ha un valore restituito, viene passata per riferimento a **RpcAsyncCompleteCall**.
 
-Quando il server chiama [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) o **RpcAsyncAbortCall** oppure una chiamata viene completata perché è stata generata un'eccezione nella routine Server-Manager, la libreria di runtime RPC Elimina automaticamente l'handle asincrono del server.
+Quando il server chiama [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall) o **RpcAsyncAbortCall** o una chiamata viene completata perché è stata generata un'eccezione nella routine di gestione server, la libreria di runtime RPC elimina automaticamente l'handle asincrono del server.
 
 > [!Note]  
-> Il server deve completare l'aggiornamento dei \[ parametri in, out \] e \[ out \] prima di chiamare **RpcAsyncCompleteCall**. Non è possibile apportare modifiche a tali parametri o all'handle asincrono dopo aver chiamato **RpcAsyncCompleteCall**. Se la chiamata alla funzione **RpcAsyncCompleteCall** ha esito negativo, il runtime RPC libera i parametri.
+> Il server deve completare l'aggiornamento dei \[ parametri in, out \] e out prima di chiamare \[ \] **RpcAsyncCompleteCall**. Non è possibile apportare modifiche a tali parametri o all'handle asincrono dopo la chiamata **a RpcAsyncCompleteCall.** Se la **chiamata di funzione RpcAsyncCompleteCall** ha esito negativo, il runtime RPC libera i parametri.
 
- 
+ 
 
-Nell'esempio seguente viene illustrata una semplice chiamata asincrona.
+Nell'esempio seguente viene illustrata una semplice chiamata di procedura asincrona.
 
 
 ```C++
@@ -88,18 +88,18 @@ void AsyncFunc(IN PRPC_ASYNC_STATE pAsync,
 
 
 
-Per semplicità, questa routine del server asincrona non elabora i dati effettivi. Si limita a dormire per un po'.
+Per motivi di semplicità, questa routine server asincrona non elabora i dati effettivi. Si limita a mettere in sospensione per un po'.
 
 > [!Note]  
-> La funzione **RpcAsyncCompleteCall** può essere chiamata sul thread che ha ricevuto la chiamata o su qualsiasi altro thread nel processo. Se tutti i dati necessari per completare la chiamata sono immediatamente disponibili, il server può riempirli nello stesso thread e chiamare **RpcAsyncCompleteCall** sullo stesso thread. Questo approccio consente di risparmiare un cambio di contesto e migliorare le prestazioni. Tali chiamate sono denominate opportunisticamente asincrono.
+> La **funzione RpcAsyncCompleteCall** può essere chiamata sul thread che ha ricevuto la chiamata o su qualsiasi altro thread del processo. Se tutti i dati necessari per completare la chiamata sono immediatamente disponibili, il server può compilarli nello stesso thread e chiamare **RpcAsyncCompleteCall** nello stesso thread. Questo approccio consente di risparmiare un certo cambio di contesto e migliora le prestazioni. Tali chiamate vengono chiamate in modo opportunistico asincrono.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**\_stato asincrono \_ RPC**](/windows/desktop/api/Rpcasync/ns-rpcasync-rpc_async_state)
+[**STATO \_ ASINCRONO \_ RPC**](/windows/desktop/api/Rpcasync/ns-rpcasync-rpc_async_state)
 </dt> <dt>
 
 [**RpcAsyncCompleteCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccompletecall)
@@ -111,9 +111,9 @@ Per semplicità, questa routine del server asincrona non elabora i dati effettiv
 [**RpcServerTestCancel**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcservertestcancel)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

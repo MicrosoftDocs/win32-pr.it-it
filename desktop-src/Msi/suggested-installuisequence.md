@@ -1,5 +1,5 @@
 ---
-description: Sequenze di azioni suggerite per una tabella InstalUISequence di base in un database Windows Installer.
+description: Sequenze di azione suggerite per una tabella InstalUISequence di base in un database Windows Installer.
 ms.assetid: f1ddad1e-c075-4054-aa24-f1acdc72da96
 title: Installazione suggeritaUISequence
 ms.topic: article
@@ -17,10 +17,10 @@ ms.locfileid: "118624333"
 
 | Azione                                          | Condition                                                                                                  | Sequenza |
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------|----------|
-| Errore irreversibileDlg                                   |                                                                                                            | -3       |
+| FatalErrorDlg                                   |                                                                                                            | -3       |
 | UserExitDlg                                     |                                                                                                            | -2       |
 | ExitDlg                                         |                                                                                                            | -1       |
-| [Condizioni di avvio](launchconditions-action.md) |                                                                                                            | 100      |
+| [LaunchConditions](launchconditions-action.md) |                                                                                                            | 100      |
 | PrepareDlg                                      |                                                                                                            | 140      |
 | [Appsearch](appsearch-action.md)               |                                                                                                            | 400      |
 | [CCPSearch](ccpsearch-action.md)               | NON [ **installato**](installed.md)                                                                         | 500      |
@@ -29,8 +29,8 @@ ms.locfileid: "118624333"
 | [FileCost](filecost-action.md)                 |                                                                                                            | 900      |
 | [CostFinalize](costfinalize-action.md)         |                                                                                                            | 1000     |
 | WelcomeDlg                                      | NON [ **installato**](installed.md)                                                                         | 1230     |
-| ResumeDlg                                       | [**Installato**](installed.md) AND ( [**RESUME**](resume.md) O [**Preselezionato**](preselected.md))       | 1240     |
-| MaintenanceWelcomeDlg                           | [**Installato**](installed.md) AND NOT [**RESUME**](resume.md) AND NOT [**Preselected**](preselected.md) | 1250     |
+| ResumeDlg                                       | [**Installato**](installed.md) AND ( [**RESUME**](resume.md) O [**preselezionato**](preselected.md))       | 1240     |
+| ManutenzioneWelcomeDlg                           | [**Installato**](installed.md) AND NOT [**RESUME**](resume.md) AND NOT [**Preselezionato**](preselected.md) | 1250     |
 | ProgressDlg                                     |                                                                                                            | 1280     |
 | [ExecuteAction](executeaction-action.md)       |                                                                                                            | 1300     |
 

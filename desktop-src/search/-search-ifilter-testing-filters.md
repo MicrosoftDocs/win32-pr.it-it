@@ -1,28 +1,28 @@
 ---
-description: Il gruppo di test IFilter convalida i gestori dei filtri.
+description: Il gruppo di test IFilter convalida i gestori di filtri.
 ms.assetid: 5ee02af1-1dc9-4d21-868f-4c439970b1ba
-title: Test di gestori filtro
+title: Test dei gestori di filtri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d2a2b0b6a6728051ab22590a481ad23a7197692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62b77fe098c2413e4f582ebfd98985dd09bf0ab9b5fc2def85fc7e954804dc1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463096"
 ---
-# <a name="testing-filter-handlers"></a>Test di gestori filtro
+# <a name="testing-filter-handlers"></a>Test dei gestori di filtri
 
-Il gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) convalida i gestori dei filtri. Il gruppo di test esegue questa operazione: chiamando i metodi [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e controllando la conformità dei valori restituiti con la specifica dell'interfaccia **IFilter** ; e verificare che gli identificatori del blocco siano univoci e in aumento, che l'interfaccia **IFilter** si comportano in modo coerente dopo la reinizializzazione e che tutte le chiamate al metodo **IFilter** con parametri non validi restituiscono codici di errore previsti. I programmi del gruppo di test effettuano inoltre il dump dell'output di un file filtrato da un gestore di filtri e controllano le informazioni di registrazione **IFilter** nel registro di sistema.
+Il gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) convalida i gestori di filtri. Il gruppo di test esegue questa operazione chiamando i [**metodi IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e verificando la conformità dei valori restituiti con la **specifica dell'interfaccia IFilter.** e verificano che gli identificatori di blocco siano univoci e crescenti, che l'interfaccia **IFilter** si comporti in modo coerente dopo la nuova inizializzazione e che qualsiasi chiamata al metodo **IFilter** con parametri non validi restituirà i codici di errore previsti. I programmi del gruppo di test scaricano anche l'output di un file filtrato da un gestore di filtri e controllano le informazioni di registrazione **di IFilter** nel Registro di sistema.
 
-Questo argomento è organizzato nel modo seguente:
+Questo argomento è organizzato come segue:
 
-- [Chiamata della riga di comando](#command-line-invocation)
+- [Chiamata dalla riga di comando](#command-line-invocation)
   - [ifilttst.exe](#ifilttstexe)
   - [filtdump.exe](#filtdumpexe)
   - [filtreg.exe](#filtregexe)
   - [ifilttst.ini](#ifilttstini)
-- [Procedura di test di IFilter](#ifilter-test-procedure)
+- [Procedura di test IFilter](#ifilter-test-procedure)
   - [Test di convalida](#validation-test)
   - [Test di coerenza](#consistency-test)
   - [Test di input non valido](#invalid-input-test)
@@ -34,18 +34,18 @@ Questo argomento è organizzato nel modo seguente:
 - [Argomenti correlati](#related-topics)
 
 > [!NOTE]  
-> Se è in corso l'installazione di un nuovo gestore di filtro per un tipo di file in sostituzione di una registrazione filtro esistente, il programma di installazione deve salvare la registrazione corrente e ripristinarla se il nuovo gestore di filtro viene disinstallato. Non esiste alcun meccanismo per concatenare i filtri. Di conseguenza, il nuovo gestore di filtro è responsabile della replica di tutte le funzionalità necessarie del filtro precedente.
+> Se viene installato un nuovo gestore di filtri per un tipo di file in sostituzione di una registrazione di filtro esistente, il programma di installazione deve salvare la registrazione corrente e ripristinarla se il nuovo gestore di filtri viene disinstallato. Non esiste alcun meccanismo per concatenare i filtri. Di conseguenza, il nuovo gestore di filtri è responsabile della replica di tutte le funzionalità necessarie del filtro precedente.
 
-## <a name="command-line-invocation"></a>Chiamata di Command-Line
+## <a name="command-line-invocation"></a>Command-Line chiamata
 
-Il gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) è costituito da tre applicazioni da riga di comando: [ifilttst.exe](#ifilttstexe), [filtdump.exe](#filtdumpexe)e [filtreg.exe](#filtregexe) e da un file di inizializzazione, [ifilttst.ini](#ifilttstini).
+Il gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) è costituito da tre applicazioni della riga di comando: [ifilttst.exe](#ifilttstexe), [filtdump.exe](#filtdumpexe)e [filtreg.exe](#filtregexe) e un file di inizializzazione, [ifilttst.ini](#ifilttstini).
 
 > [!IMPORTANT]
-> In Windows 7 e versioni successive, i filtri scritti nel codice gestito vengono bloccati in modo esplicito. I filtri devono essere scritti in codice nativo a causa di potenziali problemi di controllo delle versioni di Common Language Runtime (CLR) con il processo di esecuzione di più componenti aggiuntivi.
+> In Windows 7 e versioni successive i filtri scritti in codice gestito vengono bloccati in modo esplicito. I filtri DEVONO essere scritti in codice nativo a causa di potenziali problemi di controllo delle versioni clr (Common Language Runtime) con il processo in cui vengono eseguiti più componenti aggiuntivi.
 
 ### <a name="ifilttstexe"></a>ifilttst.exe
 
-Il programma ifilttst.exe esegue diversi test per convalidare un gestore di filtro. Nell'esempio seguente viene illustrato come richiamare il programma ifilttst.exe dalla riga di comando:
+Il ifilttst.exe esegue diversi test per convalidare un gestore di filtri. L'esempio seguente illustra come richiamare il ifilttst.exe dalla riga di comando:
 
 
 ```
@@ -55,11 +55,11 @@ ifilttst /i test.htm /l /d /v 1
 Nell'esempio vengono eseguite le attività seguenti:
 
 - Indica al programma di filtrare il file test.htm
-- Reindirizza i messaggi di log a test.htm. log
-- Reindirizza i messaggi di dump a test.htm. dmp
+- Reindirizza i messaggi di log test.htm.log
+- Reindirizza i messaggi di dump test.htm.dmp
 - Imposta il livello di dettaglio su 1
 
-Per il corretto funzionamento del comando precedente, è necessario che i tre file si trovino nella directory di lavoro corrente: `test.htm` , [ifilttst.exe](#ifilttstexe)e [ifilttst.ini](#ifilttstini). Nella tabella seguente sono elencate le opzioni della riga di comando.
+Per il funzionamento del comando precedente, è necessario che tre file si trovino nella directory di lavoro corrente: `test.htm` , [ifilttst.exe](#ifilttstexe)e [ifilttst.ini](#ifilttstini). Le opzioni della riga di comando sono elencate nella tabella seguente.
 
 <table>
 <colgroup>
@@ -74,61 +74,61 @@ Per il corretto funzionamento del comando precedente, è necessario che i tre fi
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>nome file/i</strong></td>
+<td><strong>/i nome file</strong></td>
 <td>File o directory di input da filtrare. Il nome del file può contenere i caratteri jolly <code>*</code> e <code>?</code> .</td>
 </tr>
 <tr class="even">
 <td><strong>/l</strong></td>
-<td>I messaggi di log vengono indirizzati a un file anziché allo schermo. I messaggi di log descrivono i singoli test eseguiti e i risultati superati o non superati dei test. Il nome del file di log corrisponde al nome del file di input ma con estensione. log.</td>
+<td>I messaggi di log vengono indirizzati a un file anziché sullo schermo. I messaggi di log descrivono i singoli test eseguiti e i risultati superati/non superati dei test. Il nome del file di log corrisponde al nome del file di input, ma con estensione log.</td>
 </tr>
 <tr class="odd">
 <td><strong>/d</strong></td>
-<td>Il dump dei messaggi viene indirizzato a un file anziché allo schermo. I messaggi dump descrivono il contenuto dei blocchi. Il dump della struttura del blocco viene eseguito quando il livello di dettaglio è 3. Il nome del file di dump corrisponde al nome del file di input ma con estensione dmp.</td>
+<td>I messaggi dump vengono indirizzati a un file anziché sullo schermo. I messaggi di dump descrivono il contenuto dei blocchi. Viene dump della struttura del blocco quando il livello di dettaglio è 3. Il nome del file dump corrisponde al nome del file di input, ma con estensione dmp.</td>
 </tr>
 <tr class="even">
 <td><strong>/-l</strong></td>
-<td>Disabilitare la registrazione. Questo flag sostituisce l' <code>/l</code> opzione.</td>
+<td>Disabilitare la registrazione. Questo flag esegue l'override <code>/l</code> dell'opzione .</td>
 </tr>
 <tr class="odd">
 <td><strong>/-d</strong></td>
-<td>Disabilitare il dump. Questo flag sostituisce l' <code>/d</code> opzione.</td>
+<td>Disabilitare il dump. Questo flag esegue l'override <code>/d</code> dell'opzione .</td>
 </tr>
 <tr class="even">
-<td><strong>/v Integer</strong></td>
+<td><strong>/v integer</strong></td>
 <td>Livello di dettaglio. Il valore predefinito è 3.
 <ul>
-<li>0: il test registra solo i messaggi relativi a errori di interfaccia <a href="https://www.bing.com/search?q=<strong>IFilter</strong>"><strong>IFilter</strong></a> specifici. Il test eseguirà il dump del contenuto del blocco.</li>
-<li>1-il test registra i messaggi di avviso e quelli per il livello 0.</li>
-<li>2: il test registra i messaggi relativi ai test superati, oltre a quelli per il livello 1.</li>
-<li>3: il test registra i messaggi informativi e quelli per il livello 2. Inoltre, il test eseguirà il dump della struttura del blocco.</li>
+<li>0 : il test registra solo i messaggi relativi a errori <a href="https://www.bing.com/search?q=<strong>IFilter</strong>"><strong>specifici dell'interfaccia IFilter.</strong></a> Il test esegue il dump del contenuto del blocco.</li>
+<li>1 : il test registra i messaggi di avviso e quelli per il livello 0.</li>
+<li>2 - Il test registra i messaggi relativi ai test superati e quelli per il livello 1.</li>
+<li>3 - Il test registra i messaggi informativi e quelli per il livello 2. Inoltre, il test esegue il dump della struttura del blocco.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>/t Integer</strong></td>
+<td><strong>/t integer</strong></td>
 <td>Numero di thread da avviare. Il valore predefinito è 1.</td>
 </tr>
 <tr class="even">
-<td><strong>/r Integer</strong>]</td>
-<td>Filtra in modo ricorsivo le sottodirectory. Il parametro integer facoltativo specifica la profondità a cui esercitare la ricorsione. Se non viene specificato alcun Integer o se il valore integer è 0, viene utilizzata la ricorsione completa. Per impostazione predefinita, la profondità di ricorsione è 1.</td>
+<td><strong>/r integer</strong>]</td>
+<td>Filtra in modo ricorsivo le sottodirectory. Il parametro integer facoltativo specifica la profondità a cui eseguire la ricorsione. Se non viene specificato alcun numero intero o se il numero intero è 0, viene presupposta la ricorsione completa. Per impostazione predefinita, la profondità della ricorsione è 1.</td>
 </tr>
 <tr class="odd">
-<td><strong>/c Integer</strong></td>
-<td>Il numero di volte in cui eseguire il ciclo. Se il valore integer è 0, il test viene eseguito in un ciclo infinito. Per impostazione predefinita, i cicli di test sono una sola volta.</td>
+<td><strong>/c integer</strong></td>
+<td>Numero di cicli. Se il numero intero è 0, il test viene cicliato all'infinito. Per impostazione predefinita, il test viene cicliato una sola volta.</td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]  
-> È necessario includere uno spazio tra l'opzione della riga di comando e il valore.
+> È necessario includere uno spazio tra l'opzione della riga di comando e il valore .
 
 ### <a name="filtdumpexe"></a>filtdump.exe
 
-Il programma filtdump.exe carica un gestore di filtro per un documento specificato e stampa l'output generato dalla dll [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) . Nell'esempio seguente viene illustrato come richiamare il programma filtdump.exe.
+Il filtdump.exe carica un gestore di filtri per un documento specificato e stampa l'output prodotto dalla DLL [**IFilter.**](/windows/win32/api/filter/nn-filter-ifilter) Nell'esempio seguente viene illustrato come richiamare il filtdump.exe programma.
 
 ```
 filtdump filename.ext
 ```
-Filtdump.exe usa il metodo [ILoadFilter:: LoadIFilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) per caricare la dll [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) appropriata per l'estensione del nome file specificata e stampa i risultati. Il comando seguente, ad esempio, indica filtdump.exe di caricare il gestore di filtri smpfilt.dll per l'estensione SMP, estrarre tutto il testo e le proprietà dal file MyFile. SMP e stampare i risultati.
+Filtdump.exe usa il [metodo ILoadFilter::LoadIFilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) per caricare la DLL [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) appropriata per l'estensione di file specificata e stampa i risultati. Ad esempio, il comando seguente indica filtdump.exe di caricare il gestore di filtri smpfilt.dll per l'estensione smp, estrarre tutto il testo e le proprietà dal file myfile.smp e stampare i risultati.
 
 ```
 filtdump myfile.smp
@@ -136,37 +136,37 @@ filtdump myfile.smp
 
 ### <a name="filtregexe"></a>filtreg.exe
 
-Il programma filtreg.exe controlla le informazioni di installazione di [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) nel registro di sistema. Per richiamare il programma filtreg.exe dalla riga di comando, digitarne il nome, come nell'esempio seguente.
+Il filtreg.exe controlla le informazioni [**di installazione di IFilter**](/windows/win32/api/filter/nn-filter-ifilter) nel Registro di sistema. È possibile richiamare il filtreg.exe dalla riga di comando digitandone il nome, come nell'esempio seguente.
 
 ```
 filtreg
 ```
 
-Filtreg.exe enumera tutte le estensioni di file a cui sono associati gestori di filtro stampando l'estensione del nome file e il nome della dll [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) per l'estensione. Si tratta di un modo semplice per verificare l'installazione corretta di un **IFilter**.
+Filtreg.exe enumera tutte le estensioni di file a cui sono associati gestori di filtri stampando l'estensione del nome file e il nome della DLL [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) per l'estensione. Si tratta di un modo semplice per verificare la corretta installazione di **un filtro IFilter.**
 
 ### <a name="ifilttstini"></a>ifilttst.ini
 
-Un'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) viene inizializzata chiamando il metodo [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) . Il metodo **IFilter:: init** accetta i quattro parametri seguenti:
+[**Un'interfaccia IFilter**](/windows/win32/api/filter/nn-filter-ifilter) viene inizializzata chiamando il [**metodo IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init) Il **metodo IFilter::Init** accetta i quattro parametri seguenti:
 
 1. *grfFlags*
-2. *cAttributes*
+2. *Attributi cAttributes*
 3. *aAttributes*
 4. *pdwFlags*
 
-L'utente del programma ifilttst.exe del gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) può specificare i valori per questi parametri in un file denominato ifilttst.ini. Nella tabella seguente vengono descritte le voci del file ifilttst.ini che specificano i primi tre parametri, ovvero i parametri di input. Per un file di esempio, vedere [esempio di file di ifilttst.ini](#sample-ifilttstini-file).
+L'utente del ifilttst.exe del gruppo di test [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) può specificare i valori per questi parametri in un file denominato ifilttst.ini. Nella tabella seguente vengono descritte le voci nel file ifilttst.ini che specificano i primi tre parametri (i parametri di input). Per un file di esempio, vedere [Esempio ifilttst.ini File](#sample-ifilttstini-file).
 
 > [!NOTE]  
-> Non è presente alcuna voce di tabella per il parametro *pdwFlags* perché è un parametro di output. non deve avere alcun valore speciale prima della chiamata al metodo [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) .
+> Non è presente alcuna voce di tabella *per il parametro pdwFlags* perché è un parametro di output. non deve avere alcun valore speciale prima della chiamata al [**metodo IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init)
 
  | Voce         | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Flags         | Nomi dei flag di [**\_ inizializzazione IFilter**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85)) che devono essere Uniti dall'operatore OR per formare il parametro *grfFlags* del metodo [**IFILTER:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) . I nomi dei flag devono essere tutti in maiuscolo e sulla stessa riga.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| *cAttributes* | Intero decimale che rappresenta il valore del parametro *CAttributes* .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| *aAttributes* | Questa voce deve iniziare con *aAttributes* e deve essere diversa dalle altre voci *aAttributes* nella sezione. I nomi validi per la voce *aAttributes* sono: *aAttributes*, *aAttributes1*, *aAttributes2* e così via. Il primo token deve essere un GUID. Il GUID deve essere formattato esattamente come illustrato nella `[Test3]` sezione del [File di ifilttst.ini di esempio](#sample-ifilttstini-file). Il secondo token può essere un identificatore di proprietà (PID) costituito da un numero in notazione esadecimale o un puntatore a una stringa di caratteri wide (LPWSTR). È possibile specificare LPWSTR racchiudendo la stringa tra virgolette doppie, come illustrato nella `[Test6]` sezione del file di ifilttst.ini di esempio. |
+| Flags         | Nomi dei flag [**\_ IFILTER INIT**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85)) che devono essere uniti dall'operatore OR per formare il parametro *grfFlags* del [**metodo IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init) I nomi dei flag devono essere tutti maiuscoli e sulla stessa riga.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| *cAttributes* | Intero decimale che rappresenta il valore del *parametro cAttributes.*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| *aAttributes* | Questa voce deve iniziare con *aAttributes* e deve essere diversa dalle altre *voci aAttributes* all'interno della sezione. I nomi validi per *la voce aAttributes* sono: *aAttributes*, *aAttributes1*, *aAttributes2* e così via. Il primo token deve essere un GUID. Il GUID deve essere formattato esattamente come illustrato nella sezione `[Test3]` [Sample ifilttst.ini File](#sample-ifilttstini-file). Il secondo token può essere un identificatore di proprietà (PID) costituito da un numero in notazione esadecimale o un puntatore a una stringa di caratteri wide (lpwstr). È possibile specificare un lpwstr racchiudendo la stringa tra virgolette doppie, come illustrato nella sezione `[Test6]` Sample ifilttst.ini File. |
 
-Se non si specificano le voci Flags e *CAttributes* , il valore predefinito è 0. Se si imposta *CAttributes* uguale a 2, è necessario specificare due nomi *aAttributes* . Nella `[Test5]` sezione dell'esempio *CAttributes* è 1, ma non è stato specificato alcun *aAttributes* . Il test chiama quindi il metodo [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) con *CAttributes* uguale a 1 e *aAttributes* uguale a **null**. Si tratta di un test case utile perché è probabile che si verifichi una violazione di accesso nel metodo **IFilter:: init** .
+Se le voci Flags *e cAttributes* non vengono specificate, il valore predefinito è 0. Se si imposta *cAttributes* su 2, è necessario specificare due *nomi aAttributes.* Nella sezione `[Test5]` dell'esempio *cAttributes* è 1, ma non è stato specificato *alcun oggetto aAttributes.* Il test chiama quindi il [**metodo IFilter::Init**](/windows/win32/api/filter/nf-filter-ifilter-init) con *cAttributes* uguale a 1 e *aAttributes* uguale a **NULL.** Si tratta di un test case perché è probabile che si sia verificata una violazione di accesso nel **metodo IFilter::Init.**
 
-Se ifilttst.exe non riesce a trovare un file denominato ifilttst.ini nella directory di lavoro, viene usata una configurazione predefinita per inizializzare l'oggetto [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) . Nell'esempio seguente viene illustrata la configurazione predefinita.
+Se ifilttst.exe trovare un file denominato ifilttst.ini nella directory di lavoro, viene usata una configurazione predefinita per inizializzare [**l'oggetto IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init) Nell'esempio seguente viene illustrata la configurazione predefinita.
 
 ```
 [default]
@@ -177,7 +177,7 @@ Se ifilttst.exe non riesce a trovare un file denominato ifilttst.ini nella direc
 
 ### <a name="sample-ifilttstini-file"></a>File ifilttst.ini di esempio
 
-Il file di ifilttst.ini è organizzato in sezioni, con il nome della sezione racchiuso tra parentesi quadre. Nell'esempio, le sezioni sono denominate `[Test1]` , `[Test2]` e così via. Tutti i nomi di sezione devono essere univoci. Il test legge i valori dalla prima sezione e Inizializza l' [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con tali valori. Quindi, tutti i test vengono eseguiti utilizzando questa configurazione **IFilter** . Quindi, l' **IFilter** viene rilasciato e reinizializzato, usando i parametri elencati in precedenza. Il processo viene ripetuto fino a quando non vengono testate tutte le configurazioni.
+Il ifilttst.ini file è organizzato in sezioni, con il nome della sezione racchiuso tra parentesi quadre. Nell'esempio le sezioni sono denominate `[Test1]` `[Test2]` , e così via. Tutti i nomi di sezione devono essere univoci. Il test legge i valori della prima sezione e inizializza [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con tali valori. Tutti i test vengono quindi eseguiti usando questa **configurazione IFilter.** **L'IFilter viene** quindi rilasciato e reinizializzato, usando i parametri elencati in precedenza. Il processo viene ripetuto fino a quando non vengono testate tutte le configurazioni.
 
 ```
 ; Only extract text from the object
@@ -216,63 +216,63 @@ Il file di ifilttst.ini è organizzato in sezioni, con il nome della sezione rac
             aAttributes1 = D1B5D3F0-C0B3-11CF-9A92-00A0C908DBF1 "GENERATOR"
 ```
 
-## <a name="ifilter-test-procedure"></a>Procedura di test di IFilter
+## <a name="ifilter-test-procedure"></a>Procedura di test IFilter
 
-Dopo l'inizializzazione di [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) , il programma ifilttst.exe esegue una serie di test sull' **IFilter**. Oltre a seguire le procedure di test di **IFilter** , assicurarsi che l'implementazione di **IFilter** usi procedure di codice sicure. Vedere "procedure di sicurezza del codice per la ricerca di Windows" nell' [implementazione di gestori di filtri in Windows Search](-search-ifilter-constructing-filters.md).
+Dopo [**l'inizializzazione di IFilter,**](/windows/win32/api/filter/nn-filter-ifilter) il ifilttst.exe esegue una serie di test su **IFilter.** Oltre a seguire le procedure di test **IFilter,** assicurarsi che l'implementazione **di IFilter** si avvala di procedure di codice sicure. Vedere "Secure Code Practices for Windows Search" in [Implementing Filter Handlers in Windows Search](-search-ifilter-constructing-filters.md).
 
 ### <a name="validation-test"></a>Test di convalida
 
-Il test di convalida passa l'oggetto un blocco alla volta, verificando ogni singolo blocco e tutti i codici restituiti. Il test di convalida Salva tutte le strutture di [**\_ blocco stat**](/windows/win32/api/filter/ns-filter-stat_chunk) restituite in un elenco.
+Il test di convalida passa attraverso l'oggetto un blocco alla volta, verificando ogni singolo blocco e tutti i codici restituiti. Il test di convalida salva tutte le [**strutture \_ CHUNK STAT**](/windows/win32/api/filter/ns-filter-stat_chunk) restituite in un elenco.
 
 Il test di convalida verifica le condizioni seguenti:
 
-- [**\_ Blocco stat**](/windows/win32/api/filter/ns-filter-stat_chunk).** gli ID blocco idChunk devono essere univoci e incrementali.
-- [**\_ Blocco stat**](/windows/win32/api/filter/ns-filter-stat_chunk).*il parametro flags* è uno stato di blocco riconosciuto, ad esempio [**CHUNKSTATE**](/windows/win32/api/filter/ne-filter-chunkstate), chunk \_ text o CenabledHUNK \_ value costanti.
-- [**\_ Blocco stat**](/windows/win32/api/filter/ns-filter-stat_chunk).** il parametro breakType è un tipo di break riconosciuto (0, 1, 2, 3, 4).
-- Se gli attributi di inizializzazione [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) specificano che **IFilter** deve restituire solo blocchi contenenti proprietà del tipo di valore interno, *idChunkSource* deve essere uguale a 0.
-- Se il blocco non è derivato, ovvero se non è una proprietà del tipo di valore interna, il blocco [**Stat \_**](/windows/win32/api/filter/ns-filter-stat_chunk).*idChunkSource* deve essere uguale a **\_ blocco stat**.*idChunk*.
-- [**IFilter:: GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) restituisce \_ OK o un altro valore restituito accettabile, ad esempio il filtro \_ e la \_ fine \_ dei \_ blocchi, il \_ collegamento filtro e non \_ \_ disponibile e così via.
-- Se il blocco contiene testo, [**IFilter:: GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce \_ OK, \_ Last Text del \_ filtro \_ o filtro \_ E non è \_ \_ più \_ testo.
-- Se [**IFilter:: GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce \_ il filtro S \_ Last \_ text, la chiamata successiva a **IFILTER:: GetText** restituisce Filter \_ E \_ non \_ più \_ testo.
-- Se il blocco contiene un valore, [**IFilter:: GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) restituisce S \_ OK o Filter \_ E \_ non \_ più \_ valori.
+- [**STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk).*Gli ID blocco idChunk* devono essere univoci e in aumento.
+- [**STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk).*il* parametro flags è uno stato di blocco riconosciuto, ad esempio le costanti [**CHUNKSTATE,**](/windows/win32/api/filter/ne-filter-chunkstate)CHUNK TEXT o \_ CenabledHUNK \_ VALUE.
+- [**STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk).*il parametro breakType* è un tipo di interruzione riconosciuto (0, 1, 2, 3, 4).
+- Se gli [**attributi di inizializzazione IFilter**](/windows/win32/api/filter/nn-filter-ifilter) specificano che **IFilter** deve restituire solo blocchi contenenti proprietà interne di tipo valore, *idChunkSource* deve essere uguale a 0.
+- Se il blocco non è derivato, se non è una proprietà interna di tipo valore, [**STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk).*idChunkSource deve* essere uguale a **STAT \_ CHUNK.***idChunk*.
+- [**IFilter::GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) restituisce S OK o un altro valore restituito accettabile, ad esempio \_ FILTER E END OF \_ \_ \_ \_ CHUNKS, FILTER \_ E LINK UNAVAILABLE e così \_ \_ via.
+- Se il blocco contiene testo, [**IFilter::GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce S OK, FILTER S LAST TEXT o \_ FILTER E NO MORE \_ \_ \_ \_ \_ \_ \_ TEXT.
+- Se [**IFilter::GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce FILTER S LAST TEXT, la chiamata successiva \_ a \_ \_ **IFilter::GetText** restituisce FILTER \_ E NO MORE \_ \_ \_ TEXT.
+- Se il blocco contiene un valore, [**IFilter::GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) restituisce S \_ OK o FILTER E NO MORE \_ \_ \_ \_ VALUES.
 
 ### <a name="consistency-test"></a>Test di coerenza
 
-Il programma di ifilttxt.exe Reinizializza nuovamente l'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con gli stessi parametri del test di convalida ed esegue un test di coerenza. Se l'implementazione di **IFilter** è stata inizializzata con il flag IFilter [**\_ init**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85)) IFilter \_ init \_ indicizzazione \_ solo, il test rilascia l'interfaccia **IFilter** e la associa nuovamente prima di effettuare un'altra chiamata al metodo [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) .
+Il ifilttxt.exe inizializza nuovamente [**l'interfaccia IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con gli stessi parametri del test di convalida ed esegue un test di coerenza. Se l'implementazione **di IFilter** è stata inizializzata con il flag [**IFILTER \_ INIT INIT**](/previous-versions/windows/desktop/legacy/bb266511(v=vs.85)) INDEXING ONLY, il test rilascia l'interfaccia IFilter e la associa nuovamente prima di effettuare un'altra chiamata al metodo \_ \_ \_ [**IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init) 
 
 Il test di coerenza verifica le condizioni seguenti:
 
-- Ogni struttura del [**\_ blocco stat**](/windows/win32/api/filter/ns-filter-stat_chunk) restituita dal metodo [**IFilter:: GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) è identica al **\_ blocco stat** corrispondente restituito nel test di convalida.
-- [**IFilter:: GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) restituisce \_ OK o un altro valore restituito accettabile, ad esempio il filtro \_ e la \_ fine \_ dei \_ blocchi, il \_ collegamento filtro e non \_ \_ disponibile e così via.
+- Ogni [**struttura STAT \_ CHUNK**](/windows/win32/api/filter/ns-filter-stat_chunk) restituita dal [**metodo IFilter::GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) è identica alla corrispondente **struttura STAT \_ CHUNK** restituita nel test di convalida.
+- [**IFilter::GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) restituisce S OK o un altro valore restituito accettabile, ad esempio \_ FILTER E END OF \_ \_ \_ \_ CHUNKS, FILTER \_ E LINK UNAVAILABLE e così \_ \_ via.
 
 ### <a name="invalid-input-test"></a>Test di input non valido
 
-Il programma di ifilttst.exe Reinizializza nuovamente l'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con gli stessi parametri ed esegue un test di input non valido. Questo test esegue il documento un blocco alla volta, facendo in modo non corretto le chiamate di funzione, ad esempio chiamando il metodo [**IFilter:: GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) quando il mandrino corrente contiene testo. Il test controlla tutti i codici restituiti per la conformità con la specifica **IFilter** .
+Il ifilttst.exe inizializza nuovamente [**l'interfaccia IFilter**](/windows/win32/api/filter/nn-filter-ifilter) con gli stessi parametri ed esegue un test di input non valido. Questo test passa attraverso il documento un blocco alla volta effettuando chiamate di funzione in modo non corretto, ad esempio chiamando il metodo [**IFilter::GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) quando l'oggetto corrente contiene testo. Il test verifica la conformità di tutti i codici restituiti alla **specifica IFilter.**
 
 Il test di input non valido verifica le condizioni seguenti:
 
-- Se il blocco corrente contiene testo, [**IFilter:: GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) restituisce il filtro \_ e \_ nessun \_ valore e una chiamata a [**IFilter:: GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) ha esito positivo.
-- Se il blocco corrente contiene un valore, [**IFilter:: GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce Filter \_ e \_ nessun \_ testo e una chiamata a [**IFilter:: GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) ha esito positivo.
-- Se la chiamata precedente a [**IFilter:: GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) ha restituito Filter \_ e \_ nessun \_ altro \_ testo, le chiamate successive a **IFILTER:: GetText** restituiscono Filter \_ e \_ non \_ più \_ testo.
-- Se la chiamata precedente a [**IFilter:: GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) ha restituito \_ un filtro e \_ non \_ più \_ valori, le chiamate successive a **IFILTER:: GetValue** restituiscono il filtro \_ e \_ non \_ più \_ valori.
-- Se la chiamata precedente a [**IFilter:: GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) ha restituito il filtro \_ e \_ \_ la fine dei \_ blocchi, le chiamate successive a **IFilter:: GetChunk** restituiscono il filtro \_ e \_ \_ la fine dei \_ blocchi.
+- Se il blocco corrente contiene testo, [**IFilter::GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) restituisce FILTER E NO VALUES e una chiamata \_ \_ a \_ [**IFilter::GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) ha esito positivo.
+- Se il blocco corrente contiene un valore, [**IFilter::GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) restituisce FILTER E NO TEXT e una chiamata \_ \_ a \_ [**IFilter::GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) ha esito positivo.
+- Se la chiamata precedente a [**IFilter::GetText**](/windows/win32/api/filter/nf-filter-ifilter-gettext) ha restituito FILTER E NO MORE TEXT, le chiamate successive a \_ \_ \_ \_ **IFilter::GetText** restituiscono FILTER \_ E \_ NO MORE \_ \_ TEXT.
+- Se la chiamata precedente a [**IFilter::GetValue**](/windows/win32/api/filter/nf-filter-ifilter-getvalue) ha restituito FILTER E NO MORE VALUES, le chiamate successive a \_ \_ \_ \_ **IFilter::GetValue** restituiscono FILTER \_ E \_ NO MORE \_ \_ VALUES.
+- Se la chiamata precedente a [**IFilter::GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) ha restituito FILTER E END OF CHUNKS, le chiamate successive a \_ \_ \_ \_ **IFilter::GetChunk** restituiscono FILTER \_ E END OF \_ \_ \_ CHUNKS.
 
 > [!NOTE]  
-> Il test di input non valido Confronta le strutture dei blocchi correnti con quelle restituite nel test di convalida per assicurarsi che siano identiche.
+> Il test di input non valido confronta le strutture di blocchi correnti con quelle restituite nel test di convalida per assicurarsi che siano identiche.
 
-### <a name="testing-different-ifilter-configurations"></a>Test di configurazioni IFilter diverse
+### <a name="testing-different-ifilter-configurations"></a>Test di diverse configurazioni IFilter
 
-Il programma ifilttst.exe rilascia l'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e la riassociazione, questa volta inizializzarla con il set di parametri successivo. Il test ripete il ciclo: test di convalida, test di coerenza e test di input non valido, fino a quando non sono state testate tutte le configurazioni **IFilter** desiderate specificate in [ifilttst.ini](#ifilttstini) file.
+Il ifilttst.exe rilascia [**l'interfaccia IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e riassocia, questa volta inizializzando l'interfaccia con il set di parametri successivo. Il test ripete il ciclo: test di convalida, test di coerenza e test di input non valido, fino [a](#ifilttstini) quando non vengono testate tutte le configurazioni **IFilter** desiderate specificateifilttst.inifile.
 
 ## <a name="ensuring-registered-items-get-indexed"></a>Verifica dell'indicizzazione degli elementi registrati
 
-Il test finale dell' [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) garantisce che **IFilter** sia registrato correttamente e che venga richiamato per indicizzare gli elementi registrati per l'utilizzo. È possibile utilizzare Gestione catalogo per avviare la reindicizzazione o utilizzare il gestore dell'ambito di ricerca per indicizzazione (CSM) per configurare le regole predefinite che indicano gli URL di cui si desidera eseguire la ricerca nell'indicizzatore. Al termine dell'indicizzazione, utilizzare l'interfaccia utente di ricerca di Windows per cercare una stringa nel contenuto o nelle proprietà degli elementi. Se gli elementi sono stati indicizzati, verranno visualizzati nei risultati della ricerca.
+Il test finale [**dell'IFilter**](/windows/win32/api/filter/nn-filter-ifilter) garantisce che **l'IFilter** sia registrato correttamente e che venga richiamato per indicizzare gli elementi registrati per usarlo. È possibile usare Gestione cataloghi per avviare nuovamente l'indicizzazione o usare Gestione ambito ricerca per indicizzazione (CSM) per configurare regole predefinite che indicano gli URL per cui si vuole che l'indicizzatore eserciti la ricerca per indicizzazione. Al termine dell'indicizzazione, usare l'interfaccia Windows di ricerca per cercare una stringa nel contenuto o nelle proprietà degli elementi. Se gli elementi sono stati indicizzati, verranno visualizzati nei risultati della ricerca.
 
-Per ulteriori informazioni sulla reindicizzazione, vedere [utilizzo di gestione catalogo](-search-3x-wds-mngidx-catalog-manager.md) e [utilizzo di gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md). L'esempio di codice ReindexMatchingUrls illustra i modi per specificare i file da indicizzare e il modo in cui. Nell'esempio di codice CrawlScopeCommandLine viene illustrato come definire le opzioni della riga di comando per le operazioni di indicizzazione di gestione dell'ambito di ricerca (CSM). Entrambi gli esempi di codice sono disponibili in [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
+Per altre informazioni sulla ridefinizione dell'indicizzazione, vedere [Using the Catalog Manager](-search-3x-wds-mngidx-catalog-manager.md) e Using the [Gestione ambito ricerca per indicizzazione](-search-3x-wds-extidx-csm.md). L'esempio di codice ReindexMatchingUrls illustra come specificare i file da reindicizzare e come. L'esempio di codice CrawlScopeCommandLine illustra come definire le opzioni della riga di comando per le Gestione ambito ricerca per indicizzazione di indicizzazione CSM (CSM). Entrambi gli esempi di codice sono disponibili [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
 
 ### <a name="sample-log-file"></a>File di log di esempio
 
-Al momento della richiesta, il programma Ifilttst.exe può produrre un log contenente una descrizione dei passaggi necessari durante l'esecuzione. Gli esempi seguenti sono estratti da un file di log, con il livello di dettaglio impostato sul valore massimo possibile 3.
+Su richiesta, il Ifilttst.exe può produrre un log contenente una descrizione dei passaggi da eseguire durante l'esecuzione. Gli esempi seguenti sono estratti da un file di log, con il livello di dettaglio impostato sul valore massimo possibile 3.
 
 ```
             1. INFO----**** New configuration ****
@@ -299,15 +299,15 @@ Al momento della richiesta, il programma Ifilttst.exe può produrre un log conte
 
 ```
 
-La prima riga è un messaggio informativo, che indica che una nuova configurazione è stata caricata dal file di ifilttst.ini. Riga (3) indica il nome della sezione nel file di ifilttst.ini da cui è stata letta la configurazione corrente. Righe (4) fino a (7) elenca i parametri per [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init). Le righe che iniziano con `INFO` sono messaggi informativi sull'associazione dell' [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e sull'inizio del test di convalida. Le righe che iniziano con `PASS` sono messaggi relativi a test specifici che sono stati superati.
+La prima riga è un messaggio informativo che indica che è stata caricata una nuova configurazione dal file ifilttst.ini file. La riga (3) indica il nome della sezione nel file ifilttst.ini da cui è stata letta la configurazione corrente. Le righe da 4 a (7) elencano i parametri per [**IFilter::Init**](/windows/win32/api/filter/nf-filter-ifilter-init). Le righe che `INFO` iniziano con sono messaggi informativi sull'associazione di [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e sull'inizio del test di convalida. Le righe che `PASS` iniziano con sono messaggi relativi a test specifici superati.
 
-La riga nell'esempio di log seguente è un avviso. Gli avvisi chiamano l'attenzione sul comportamento di [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) problematico, anche se valido. Questo avviso indica che il metodo [**IFilter:: GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) ha restituito un blocco di testo che non contiene testo.
+La riga nell'esempio di log seguente è un avviso. Gli avvisi richiamano [**l'attenzione**](/windows/win32/api/filter/nn-filter-ifilter) sul comportamento di IFilter che è problematico, anche se legale. Questo avviso indica che il [**metodo IFilter::GetChunk**](/windows/win32/api/filter/nf-filter-ifilter-getchunk) ha restituito un blocco di testo che non contiene testo.
 
 ```
 WARNING-First call to GetText() returned FILTER_E_NO_MORE_TEXT.
 ```
 
-Il messaggio di errore di esempio seguente indica che [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ha emesso un blocco non richiesto.
+Il messaggio di errore di esempio seguente indica che [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ha generato un blocco che non è stato richiesto.
 
 ```
             ERROR---The IFilter has emitted a chunk which it was not requested to emit.
@@ -315,11 +315,11 @@ Il messaggio di errore di esempio seguente indica che [**IFilter**](/windows/win
             INFO----Current chunk propid : 0x5
 ```
 
-Nel caso di questo messaggio di errore di esempio, l' [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ha emesso un blocco con un PID di `0x5` . L'ispezione della sezione `[Test1]` in ifilttst.ini indicherà che **IFilter** è stato configurato in modo da non generare blocchi con questo PID. Se, ad esempio, non \_ si applicano gli attributi di indice di IFilter init \_ \_ \_ o IFilter \_ init, gli \_ \_ altri \_ attributi sono stati specificati nella voce dei flag e se *CAttributes* è 0, **IFilter** genera solo i blocchi con un PID di `0x13` e corrispondente al \_ \_ contenuto del valore del PID.
+Nel caso di questo messaggio di errore di esempio, [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ha generato un blocco con un PID di `0x5` . L'ispezione della sezione ifilttst.ini mostra che il filtro IFilter è stato configurato per non `[Test1]` generare blocchi con questo PID.  Ad esempio, se né IFILTER INIT APPLY INDEX ATTRIBUTES né IFILTER INIT APPLY OTHER ATTRIBUTES sono stati specificati nella voce Flags e \_ \_ se \_ \_ \_ \_ \_ \_ *cAttributes* è 0, **IFilter** `0x13` \_ \_ genera solo blocchi con un PID di e corrispondente a PID STG CONTENTS.
 
 ### <a name="sample-dump-file"></a>File di dump di esempio
 
-Al momento della richiesta, il programma Ifilttst.exe può produrre un dump contenente i blocchi trovati e il relativo contenuto. L'esempio seguente è un Estratto di un file dump di questo tipo.
+Su richiesta, il Ifilttst.exe può produrre un dump contenente i blocchi trovati e il relativo contenuto. L'esempio seguente è un estratto di un file dump di questo tipo.
 
 ```
                 1. Chunk ID: ........... 2
@@ -359,35 +359,35 @@ Al momento della richiesta, il programma Ifilttst.exe può produrre un dump cont
                 30. This is an HTML IFilter test page
 ```
 
-Le prime nove righe descrivono la struttura del blocco corrente. Il GUID e il PID corrispondono al contenuto dell'PSGUID di \_ archiviazione/PID \_ STG \_ . Si tratta di un blocco contenente testo normale. Il testo si trova nella struttura di blocco seguente:
+Le prime nove righe descrivono la struttura del blocco corrente. Il GUID e il PID corrispondono a PSGUID \_ STORAGE/PID \_ STG \_ CONTENTS. Si tratta di un blocco contenente testo normale. Il testo si trova nella struttura del blocco seguente:
 
 ```
 10. This is an HTML IFilter test page
 ```
 
-Il blocco successivo, a partire dalla riga 11, ha un GUID diverso, corrispondente a `HTML IFilter` e un PID diverso, corrispondente a un href HTML. Si tratta di una proprietà del tipo di valore interna, esportata da `HTML IFilter` .
+Il blocco successivo, a partire dalla riga 11, ha un GUID diverso, corrispondente a , e `HTML IFilter` un PID diverso, corrispondente a un HREF HTML. Si tratta di una proprietà interna di tipo valore, esportata da `HTML IFilter` .
 
-Il blocco successivo, a partire dalla riga 21, ha lo stesso GUID e PID, ma lo stato del blocco è `VALUE` invece di `TEXT` . Si noti che il testo negli ultimi due blocchi è identico a quello del primo blocco. Tuttavia, poiché [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) è progettato per tre attributi (testo normale, html href come testo e html href come valore) da applicare a questa frase, i risultati vengono emessi in tre blocchi distinti.
+Il blocco successivo, a partire dalla riga 21, ha lo stesso GUID e PID, ma lo stato del blocco `VALUE` è invece di `TEXT` . Si noti che il testo in questi ultimi due blocchi è uguale a quello del primo blocco. Tuttavia, poiché [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) è progettato per l'applicazione di tre attributi (testo normale, HREF HTML come testo e HREF HTML come valore) a questa frase, i risultati vengono generati in tre blocchi separati.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-- Nell'esempio di codice [IFilterSample](-search-sample-ifiltersample.md) , disponibile in [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample), viene illustrato come creare una classe di base IFilter per implementare l'interfaccia [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) .
-- Per una panoramica del processo di indicizzazione, vedere [il processo di indicizzazione](-search-indexing-process-overview.md).
-- Per una panoramica dei tipi di file, vedere [tipi di file](../shell/fa-file-types.md).
-- Per eseguire query sugli attributi di associazione file per un tipo di file, vedere [PerceivedTypes, SystemFileAssociations e registrazione dell'applicazione](/previous-versions/windows/desktop/legacy/cc144150(v=vs.85)).
+- L'esempio di codice [IFilterSample,](-search-sample-ifiltersample.md) disponibile in [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample), illustra come creare una classe di base IFilter per l'implementazione [**dell'interfaccia IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
+- Per una panoramica del processo di indicizzazione, vedere [Processo di indicizzazione.](-search-indexing-process-overview.md)
+- Per una panoramica dei tipi di file, vedere [Tipi di file.](../shell/fa-file-types.md)
+- Per eseguire query su attributi di associazione di file per un tipo di file, vedere [PerceivedTypes, SystemFileAssociations e Registrazione dell'applicazione.](/previous-versions/windows/desktop/legacy/cc144150(v=vs.85))
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Sviluppo di gestori di filtri](-search-ifilter-conceptual.md)
 
-[Informazioni sui gestori di filtro in Windows Search](-search-ifilter-about.md)
+[Informazioni sui gestori di filtri Windows ricerca](-search-ifilter-about.md)
 
-[Procedure consigliate per la creazione di gestori di filtro in Windows Search](-search-3x-wds-extidx-filters.md)
+[Procedure consigliate per la creazione di gestori di filtri in Windows ricerca](-search-3x-wds-extidx-filters.md)
 
-[Restituzione di proprietà da un gestore di filtro](-search-ifilter-property-filtering.md)
+[Restituzione di proprietà da un gestore di filtri](-search-ifilter-property-filtering.md)
 
 [Gestori di filtri forniti con Windows](-search-ifilter-implementations.md)
 
-[Implementazione di gestori di filtro in Windows Search](-search-ifilter-constructing-filters.md)
+[Implementazione di gestori di filtri in Windows ricerca](-search-ifilter-constructing-filters.md)
 
-[Registrazione di gestori di filtro](-search-ifilter-registering-filters.md)
+[Registrazione di gestori di filtri](-search-ifilter-registering-filters.md)

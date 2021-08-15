@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_TooltipTitle
-description: Identifica la proprietà \_ \_ TooltipTitle dell'interfaccia utente PKEY.
+description: Identifica la proprietà \_ \_ TooltipTitle PKEY dell'interfaccia utente.
 ms.assetid: ed9f422d-a782-4950-a579-060185550891
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118437786"
 ---
 # <a name="ui_pkey_tooltiptitle"></a>UI \_ PKEY \_ TooltipTitle
 
-Identifica la proprietà \_ \_ TooltipTitle dell'interfaccia utente PKEY.
+Identifica la proprietà \_ \_ TooltipTitle PKEY dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-UI PKEY TooltipTitle viene usato da un'applicazione per eseguire query sulla descrizione comando di \_ schede, gruppi, pulsanti, elementi della raccolta \_ e altri controlli della barra multifunzione.
+Ui PKEY TooltipTitle viene usato da un'applicazione per eseguire query sulla descrizione comando di \_ schede, gruppi, pulsanti, elementi della raccolta \_ e altri controlli della barra multifunzione.
 
 Il valore della proprietà è una stringa vincolata a qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.
 
@@ -40,7 +40,7 @@ L'allineamento a destra non è supportato.
 
 La lunghezza massima di UI \_ PKEY \_ TooltipTitle non è associata.
 
-Per visualizzare una e commerciale in una descrizione comando, eseguire l'escape della designazione di carattere speciale con una doppia e commerciale ( ) come `&&` illustrato nell'esempio seguente.
+Per visualizzare una e commerciale in una descrizione comando, eseguire l'escape della designazione di carattere speciale con una doppia e commerciale ( `&&` ) come illustrato nell'esempio seguente.
 
 
 ```XML
@@ -53,7 +53,7 @@ Per visualizzare una e commerciale in una descrizione comando, eseguire l'escape
 
 <dl> <dt>
 
-[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
+[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
 [**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)

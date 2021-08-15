@@ -58,7 +58,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -79,7 +79,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -100,7 +100,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -121,7 +121,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -129,7 +129,7 @@ Spazio da cui vengono allocati i pool di RID.
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -150,7 +150,7 @@ Spazio da cui vengono allocati i pool di RID.
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ Spazio da cui vengono allocati i pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| A valore singolo       | Vero                                           |
+| Is-Single-Valued       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                   |
@@ -171,7 +171,7 @@ Spazio da cui vengono allocati i pool di RID.
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: attributo switch
-description: La parola chiave switch seleziona discriminante per un'Unione incapsulata \_ .
+title: Attributo switch
+description: La parola chiave switch seleziona il discriminante per un'unione \_ incapsulata.
 ms.assetid: 66179b68-852f-4943-9105-e9fb310f3c2e
 keywords:
-- cambia attributo MIDL
+- attributo switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cdf9342789d5603a3b64d778bd60364eebde50e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 422b52a339a83cbaf59a9d65c0ed0e4e7e41533dcbf0be962147327145588a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103955975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013549"
 ---
-# <a name="switch-attribute"></a>attributo switch
+# <a name="switch-attribute"></a>Attributo switch
 
-La parola chiave **Switch** seleziona discriminante per un' [**\_ Unione incapsulata**](encapsulated-unions.md).
+La parola chiave **switch** seleziona il discriminante per [**un'unione \_ incapsulata.**](encapsulated-unions.md)
 
 ``` syntax
 switch (switch-type switch-name)
@@ -34,14 +34,14 @@ switch (switch-type switch-name)
 *switch-type* 
 </dt> <dd>
 
-Specifica un tipo [**int**](int.md), [**char**](-char.md), [**enum**](enum.md) o un identificatore che viene risolto in uno di questi tipi.
+Specifica un [**tipo int**](int.md), [**char**](-char.md), [**enum**](enum.md) o un identificatore che viene risolto in uno di questi tipi.
 
 </dd> <dt>
 
-*Switch-name* 
+*switch-name* 
 </dt> <dd>
 
-Specifica il nome della variabile di tipo *switch-type* che funge da discriminante di Unione.
+Specifica il nome della variabile di tipo *switch-type* che funge da discriminante dell'unione.
 
 </dd> </dl>
 
@@ -78,18 +78,18 @@ typedef struct _S1_TYPE
 [Unioni non incapsulate](nonencapsulated-unions.md)
 </dt> <dt>
 
-[**opzione \_**](switch-is.md)
+[**\_l'opzione è**](switch-is.md)
 </dt> <dt>
 
-[**tipo di opzione \_**](switch-type.md)
+[**tipo di \_ commutatore**](switch-type.md)
 </dt> <dt>
 
 [**Unione**](union.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

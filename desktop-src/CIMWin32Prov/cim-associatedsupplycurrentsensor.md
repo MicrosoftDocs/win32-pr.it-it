@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM AssociatedSupplyCurrentSensor associa un alimentatore a un sensore corrente (amperaggio) che monitora la frequenza di input.
+description: La classe CIM AssociatedSupplyCurrentSensor associa un alimentatore a un sensore \_ corrente (amperage) che monitora la frequenza di input.
 ms.assetid: bed4714f-ecf4-4c53-b231-c8fac673371f
 ms.tgt_platform: multiple
-title: Classe CIM_AssociatedSupplyCurrentSensor
+title: CIM_AssociatedSupplyCurrentSensor classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 70a88d87c68b36db5bd44413e3c68940db44f29b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1b20b519c0ec89243aefd9c87aba235548f11f93984a45702f7670a27bf073cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104225725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080935"
 ---
-# <a name="cim_associatedsupplycurrentsensor-class"></a>CIM \_ AssociatedSupplyCurrentSensor (classe)
+# <a name="cim_associatedsupplycurrentsensor-class"></a>Classe CIM \_ AssociatedSupplyCurrentSensor
 
-La classe **CIM \_ AssociatedSupplyCurrentSensor** associa un alimentatore a un sensore corrente (amperaggio) che monitora la frequenza di input.
+La **classe CIM \_ AssociatedSupplyCurrentSensor** associa un alimentatore a un sensore corrente (amperage) che monitora la frequenza di input.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,13 +49,13 @@ class CIM_AssociatedSupplyCurrentSensor : CIM_AssociatedSensor
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ AssociatedSupplyCurrentSensor** presenta questi tipi di membri:
+La **classe CIM \_ AssociatedSupplyCurrentSensor** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ AssociatedSupplyCurrentSensor** dispone di queste proprietà.
+La **classe CIM \_ AssociatedSupplyCurrentSensor** ha queste proprietà.
 
 <dl> <dt>
 
@@ -68,33 +68,33 @@ Tipo di dati: **CIM \_ CurrentSensor**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-[**\_ CurrentSensor CIM**](cim-currentsensor.md) che descrive il sensore corrente.
+Oggetto [**CIM \_ CurrentSensor**](cim-currentsensor.md) che descrive il sensore corrente.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **CIM \_ alimentatore**
+Tipo di dati: **CIM \_ PowerSupply**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dipendente")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dipendente")
 </dt> </dl>
 
-[**\_ Alimentatore CIM**](cim-powersupply.md) che descrive l'alimentatore associato al sensore corrente.
+[**\_ PowerSupply CIM**](cim-powersupply.md) che descrive l'alimentatore associato al sensore corrente.
 
 </dd> <dt>
 
 **MonitoringRange**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -134,7 +134,7 @@ Indica l'intervallo di frequenza di input dell'alimentatore misurato dal sensore
 
 <span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>
 
-<span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>**Entrambi i valori sono compresi tra 1 e 2** (4)
+<span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>**Intervallo 1 e 2** (4)
 
 
 </dt> <dd>
@@ -147,11 +147,11 @@ Intervallo 1 e 2
 
 ## <a name="remarks"></a>Commenti
 
-La classe **CIM \_ AssociatedSupplyCurrentSensor** è derivata da [**CIM \_ AssociatedSensor**](cim-associatedsensor.md).
+La **classe CIM \_ AssociatedSupplyCurrentSensor** è derivata da [**CIM \_ AssociatedSensor**](cim-associatedsensor.md).
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -162,7 +162,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -171,7 +171,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 
 <dl> <dt>
 
-[**\_ASSOCIATEDSENSOR CIM**](cim-associatedsensor.md)
+[**CIM \_ AssociatedSensor**](cim-associatedsensor.md)
 </dt> </dl>
 
  

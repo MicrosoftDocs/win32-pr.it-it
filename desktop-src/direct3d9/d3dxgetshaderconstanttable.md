@@ -1,5 +1,5 @@
 ---
-description: 'Funzione D3DXGetShaderConstantTable: ottiene la tabella costante shader incorporata in uno shader.'
+description: 'Funzione D3DXGetShaderConstantTable: ottiene la tabella delle costanti shader incorporata in uno shader.'
 ms.assetid: eb965074-819f-44d2-889b-6c6eada4f062
 title: Funzione D3DXGetShaderConstantTable (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b397901578a1e6ce6fecc01ed25c99d4681d1c40
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a1375dfcf1bc75d6f2dee6f9923360b1b90fef01df5489f9f710175e7e1c2652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045009"
 ---
 # <a name="d3dxgetshaderconstanttable-function"></a>Funzione D3DXGetShaderConstantTable
 
@@ -55,7 +55,7 @@ Puntatore al flusso DWORD della funzione.
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Restituisce l'interfaccia di tabella costante (vedere [**ID3DXConstantTable)**](id3dxconstanttable.md)che gestisce la tabella costante.
+Restituisce l'interfaccia della tabella costante (vedere [**ID3DXConstantTable**](id3dxconstanttable.md)) che gestisce la tabella costante.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 ## <a name="remarks"></a>Commenti
 
-Una tabella costante viene generata da [**D3DXCompileShader**](d3dxcompileshader.md) e incorporata nel corpo dello shader. Se è necessario spazio indirizzi virtuali aggiuntivo, vedere [**D3DXGetShaderConstantTableEx.**](d3dxgetshaderconstanttableex.md)
+Una tabella costante viene generata [**da D3DXCompileShader**](d3dxcompileshader.md) e incorporata nel corpo dello shader. Se è necessario spazio di indirizzi virtuali aggiuntivo, vedere [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
 
 ## <a name="requirements"></a>Requisiti
 

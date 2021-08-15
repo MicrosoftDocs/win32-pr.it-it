@@ -1,9 +1,9 @@
 ---
-title: 'Funzione StructuredBuffer:: operator'
-description: Restituisce una variabile di risorse di sola lettura di un StructuredBuffer.
+title: Funzione StructuredBuffer::Operator
+description: Restituisce una variabile di risorsa di sola lettura di structuredbuffer.
 ms.assetid: e2a1b0f7-f374-44a3-b567-8a2318e8b2b8
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f0d75bdfbcd3bfc560e896416f241f1291120d6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c852a56769df2179daf6055542c9ebf4724a353312e295daecd59af08163711c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104118823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509117"
 ---
-# <a name="structuredbufferoperator--function"></a>Funzione StructuredBuffer:: operator
+# <a name="structuredbufferoperator--function"></a>Funzione StructuredBuffer::Operator
 
-Restituisce una variabile di risorse di sola lettura di un [**StructuredBuffer**](sm5-object-structuredbuffer.md).
+Restituisce una variabile di risorsa di sola lettura di [**un oggetto StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -49,7 +49,7 @@ Posizione dell'indice.
 
 Tipo: **R**
 
-Variabile di sola lettura di una risorsa.
+Variabile di risorsa di sola lettura.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [StructuredBuffer](sm5-object-structuredbuffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

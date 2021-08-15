@@ -44,21 +44,21 @@ HRESULT SetApplicationState(
 *ID* \[ in\]
 </dt> <dd>
 
-Rappresentazione **BSTR** del **GUID che** identifica l'applicazione. È responsabilità dell'applicazione chiamante creare e gestire gli identificatori utilizzati per le applicazioni monitorate.
+Rappresentazione **BSTR** del **GUID che** identifica l'applicazione. È responsabilità dell'applicazione chiamante creare e gestire gli identificatori che usa per le applicazioni monitorate.
 
 </dd> <dt>
 
 *Nome* \[ Pollici\]
 </dt> <dd>
 
-Nome visualizzato dell'applicazione. Questo nome viene usato in una voce del registro eventi informativo per la modifica dello stato.
+Nome visualizzato dell'applicazione. Questo nome viene utilizzato in una voce del registro eventi informativo per la modifica dello stato.
 
 </dd> <dt>
 
 *Stato* \[ Pollici\]
 </dt> <dd>
 
-Valore [**dell'enumerazione APPLICATION \_ STATE**](application-state.md) che specifica il nuovo stato di integrità dell'applicazione.
+Valore dell'enumerazione [**APPLICATION \_ STATE**](application-state.md) che specifica il nuovo stato di integrità dell'applicazione.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 Lo stato delle applicazioni in esecuzione nella macchina virtuale si riflette nel valore della proprietà **OperationalStatus** \[ 1 \] della classe [**Msvm \_ HeartbeatComponent.**](msvm-heartbeatcomponent.md)
 
-Per usare questo elemento di programmazione, Windows 8 componenti di integrazione devono essere installati nella macchina virtuale in cui è in esecuzione l'applicazione.
+Per usare questo elemento di programmazione, è Windows 8 componenti di integrazione di nella macchina virtuale in cui è in esecuzione l'applicazione.
 
 ## <a name="requirements"></a>Requisiti
 

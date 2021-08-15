@@ -1,10 +1,10 @@
 ---
-title: Attributo time-vol-Change
-description: Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file nel volume di archiviazione remota.
+title: Attributo Time-Vol-Change
+description: Questo attributo indica l'ultima modifica di un file nel volume di archiviazione remota.
 ms.assetid: e0a985fb-1b50-457e-80db-e71ab5570c51
 ms.tgt_platform: multiple
 keywords:
-- Time-VOL-Modifica schema AD attributo
+- Schema AD dell'attributo Time-Vol-Change
 - Schema AD dell'attributo timeVolChange
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 315715996e685949f35f7088fff5368b95c5ba54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c4db9a1eb7a7c42d72557368a88353a5fb36c073fbc41136bb83c5546f3fb527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081345"
 ---
-# <a name="time-vol-change-attribute"></a>Attributo time-vol-Change
+# <a name="time-vol-change-attribute"></a>Attributo Time-Vol-Change
 
-Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file nel volume di archiviazione remota.
+Questo attributo indica l'ultima modifica di un file nel volume di archiviazione remota.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Tempo-vol-modifica                      |
-| LDAP-Display-Name | timeVolChange                        |
+| CN                | Modifica del tempo                      |
+| Ldap-Display-Name | timeVolChange                        |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.502               |
-| System-ID-GUID    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| A valore singolo       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo indica la data e l'ora dell'Ultima modifica apportata a un file
 | ID collegamento                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| È a valore singolo       | Vero                                                           |
+| Is-Single-Valued       | Vero                                                           |
 | Indicizzato             | Vero                                                           |
 | Nel catalogo globale      | Falso                                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classi utilizzate in        | [**Link-Track-vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classi usate in        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

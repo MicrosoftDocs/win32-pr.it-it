@@ -41,7 +41,7 @@ Queste proprietà sono disponibili **nell'interfaccia IMsRdpClientNonScriptable2
 
 | Proprietà                                                                                   | Tipo di accesso           | Descrizione                                                                                                                                                                                                  |
 |:-------------------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere modali correttamente rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
+| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Lettura/Scrittura<br/> | Handle di finestra che deve essere la finestra padre per il controllo . In questo modo tutte le finestre visualizzate dal controllo possono essere correttamente modali rispetto alle finestre visualizzate dall'applicazione padre.<br/> |
 
 
 

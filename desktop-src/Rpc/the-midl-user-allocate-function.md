@@ -1,35 +1,35 @@
 ---
 title: Funzione midl_user_allocate
-description: La \_ funzione di \_ allocazione utente MIDL è una procedura che deve essere fornita dagli sviluppatori di applicazioni RPC.
+description: La funzione midl \_ user allocate è una procedura che deve essere fornita dagli sviluppatori di applicazioni \_ RPC.
 ms.assetid: 3def405c-da05-4cce-9dc4-499864a0de6e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b2e3196de79992f5856b7117b25f05ad782d26
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: eb8e064fc16a303660be96a4a3c47aa361c4616f54a8cb825c1fce5334543fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104118115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924250"
 ---
-# <a name="the-midl_user_allocate-function"></a>Funzione di \_ \_ allocazione utente MIDL
+# <a name="the-midl_user_allocate-function"></a>Funzione di allocazione \_ dell'utente midl \_
 
-La funzione di **\_ \_ allocazione utente MIDL** è una procedura che deve essere fornita dagli sviluppatori di applicazioni RPC. Alloca la memoria per gli stub RPC e le routine della libreria. La funzione di **\_ \_ allocazione utente MIDL** deve corrispondere al prototipo seguente:
+La **funzione midl \_ user \_ allocate** è una procedura che deve essere fornita dagli sviluppatori di applicazioni RPC. Alloca memoria per gli stub RPC e le routine della libreria. La **funzione di \_ allocazione \_ dell'utente midl** deve corrispondere al prototipo seguente:
 
 ``` syntax
 void __RPC_FAR * __RPC_USER midl_user_allocate (size_t cBytes);
 ```
 
-Il parametro *cBytes* specifica il numero di byte da allocare. Sia le applicazioni client che le applicazioni server devono implementare la funzione di **\_ \_ allocazione utente MIDL** a meno che non si stia eseguendo la compilazione in modalità OSF-Compatibility (/OSF). Le applicazioni e gli stub generati chiamano l' **\_ utente MIDL \_ allocare** direttamente o indirettamente per gestire gli oggetti allocati. Ad esempio:
+Il *parametro cBytes* specifica il numero di byte da allocare. Sia le applicazioni client che le applicazioni server devono implementare la funzione **midl \_ user \_ allocate,** a meno che la compilazione non sia in modalità di compatibilità OSF (/osf). Le applicazioni e gli stub generati chiamano **l'utente midl \_ \_ allocare** direttamente o indirettamente per gestire gli oggetti allocati. Esempio:
 
--   Le applicazioni client e server chiamano **MIDL \_ User \_ allocate** per allocare memoria per l'applicazione, ad esempio quando si crea un nuovo nodo in un albero o un elenco collegato.
--   Lo stub del server chiama l' **\_ utente MIDL \_ allocate** quando si esegue l'unmarshalling dei dati nello spazio degli indirizzi del server.
--   Lo stub client chiama **l' \_ utente MIDL \_ allocate** quando si esegue l'unmarshalling dei dati dal server a cui fa riferimento un \[ \] puntatore out. Si noti che per i \[ \] \[ \] \[ puntatori univoci in, out e Unique \] , lo stub client chiama l' **\_ utente MIDL \_ allocare** solo se il \[ valore del \] puntatore univoco è null per l'input e viene modificato in un valore non null durante la chiamata. Se \[ per l' \] input il puntatore univoco è diverso da null, lo stub client scrive i dati associati nella memoria esistente.
+-   Le applicazioni client e server chiamano **midl \_ user \_ allocate** per allocare memoria per l'applicazione, ad esempio quando si crea un nuovo nodo in un albero o in un elenco collegato.
+-   Lo stub del server chiama **midl \_ user allocate \_ durante** l'unmarsshaling dei dati nello spazio degli indirizzi del server.
+-   Lo stub client chiama **midl \_ user \_ allocate** quando si esegue l'unmarshaling dei dati dal server a cui fa riferimento un \[ puntatore \] out. Si noti che per in , out e puntatori univoci, lo stub del client chiama midl user allocate solo se il valore del puntatore univoco è Null nell'input e viene modificato in un valore non Null durante la \[ \] \[ \] \[ \] **\_ \_** \[ \] chiamata. Se il \[ \] puntatore univoco è diverso da Null nell'input, lo stub del client scrive i dati associati nella memoria esistente.
 
-Se **\_ \_ allocare l'utente MIDL** non riesce ad allocare memoria, deve restituire un puntatore null.
+Se **midl \_ user allocate \_ non** riesce ad allocare memoria, deve restituire un puntatore Null.
 
-La funzione di **\_ \_ allocazione utente MIDL** deve restituire un puntatore allineato a 8 byte.
+La **funzione midl \_ user \_ allocate** deve restituire un puntatore allineato a 8 byte.
 
-Ad esempio, i programmi di esempio forniti con Platform Software Development Kit (SDK) implementano l' **\_ utente MIDL \_ allocato** in termini della funzione C [**malloc**](pointers-and-memory-allocation.md):
+Ad esempio, i programmi di esempio forniti con Platform Software Development Kit (SDK) implementano l'allocazione **utente midl \_ \_** in termini di funzione C [**malloc**](pointers-and-memory-allocation.md):
 
 
 ```C++
@@ -42,10 +42,10 @@ void __RPC_FAR * __RPC_USER midl_user_allocate(size_t cBytes)
 
 
 > [!Note]  
-> Se il pacchetto RpcSs è abilitato (ad esempio, come risultato dell'utilizzo dell'attributo \[ [**enable \_ allocate**](/windows/desktop/Midl/enable-allocate) \] ), utilizzare [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) per allocare memoria sul lato server. Per altre informazioni su \[ **enable \_ allocate** \] , vedere [riferimento a MIDL](/windows/desktop/Midl/midl-language-reference).
+> Se il pacchetto RpcSs è abilitato( ad esempio, come risultato dell'uso dell'attributo \[ [**enable \_ allocate),**](/windows/desktop/Midl/enable-allocate) usare \] [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) per allocare memoria sul lato server. Per altre informazioni \[ **sull'abilitazione \_ dell'allocazione,** \] vedere [MIDL Reference (Informazioni di riferimento su MIDL).](/windows/desktop/Midl/midl-language-reference)
 
- 
+ 
 
- 
+ 
 
- 
+ 

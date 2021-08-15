@@ -71,7 +71,7 @@ Handle per un file creato con l'autorizzazione di lettura/scrittura iniziale e l
 *dwKeySpec* \[ Pollici\]
 </dt> <dd>
 
-Un long integer per il tipo di chiave. I valori possibili **includono AT \_ KEYEXCHANGE** o **AT \_ SIGNATURE.**
+Oggetto long integer per il tipo di chiave. I valori possibili **includono AT \_ KEYEXCHANGE** o **AT \_ SIGNATURE.**
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Puntatore a una stringa con terminazione Null per il nome della chiave da salvar
 *dwFlags* \[ Pollici\]
 </dt> <dd>
 
-Valore **DWORD** che specifica opzioni aggiuntive per la funzione. Per altre informazioni, vedere *il parametro dwFlags* in [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
+Valore **DWORD** che specifica opzioni aggiuntive per la funzione. Per altre informazioni, vedere il *parametro dwFlags* in [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
 
 </dd> </dl>
 

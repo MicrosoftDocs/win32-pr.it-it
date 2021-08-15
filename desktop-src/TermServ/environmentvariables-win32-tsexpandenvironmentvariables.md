@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Metodo EnvironmentVariables Servizi Desktop remoto
 - Metodo EnvironmentVariables Servizi Desktop remoto , Win32_TSExpandEnvironmentVariables classe
-- Win32_TSExpandEnvironmentVariables classe Servizi Desktop remoto, metodo EnvironmentVariables
+- Win32_TSExpandEnvironmentVariables classe Servizi Desktop remoto , metodo EnvironmentVariables
 topic_type:
 - apiref
 api_name:
@@ -62,7 +62,7 @@ Stringa con le variabili di ambiente espanse.
 
 Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
 
-Managed Object Format (MOF) contengono le definizioni per Windows di Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, [vedere Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

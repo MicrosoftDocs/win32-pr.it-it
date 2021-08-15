@@ -13,7 +13,7 @@ ms.locfileid: "118535966"
 ---
 # <a name="direct3d-111-features"></a>Funzionalità di Direct3D 11.1
 
-La funzionalità seguente è stata aggiunta in Direct3D 11.1, inclusa in Windows 8, Windows RT e Windows Server 2012. Il supporto parziale per [Direct3D 11.1](direct3d-11-features.md) è disponibile in Windows 7 e Windows Server 2008 R2 tramite l'aggiornamento della piattaforma [per Windows 7,](/windows/desktop/direct3darticles/platform-update-for-windows-7)disponibile tramite l'aggiornamento della piattaforma [per Windows 7.](https://support.microsoft.com/kb/2670838)
+La funzionalità seguente è stata aggiunta in Direct3D 11.1, inclusa in Windows 8, Windows RT e Windows Server 2012. Il supporto parziale per [Direct3D 11.1](direct3d-11-features.md) è disponibile in Windows 7 e Windows Server 2008 R2 tramite l'aggiornamento della piattaforma [per Windows 7,](/windows/desktop/direct3darticles/platform-update-for-windows-7)disponibile tramite l'aggiornamento della piattaforma per [Windows 7.](https://support.microsoft.com/kb/2670838)
 
 -   [Funzionalità di traccia dello shader e miglioramenti del compilatore](#shader-tracing-and-compiler-enhancements)
 -   [Condivisione di dispositivi Direct3D](#direct3d-device-sharing)
@@ -24,18 +24,18 @@ La funzionalità seguente è stata aggiunta in Direct3D 11.1, inclusa in Windows
 -   [Usare operazioni logiche in una destinazione di rendering](#use-logical-operations-in-a-render-target)
 -   [Forzare il conteggio dei campioni per creare uno stato di rasterizzazione](#force-the-sample-count-to-create-a-rasterizer-state)
 -   [Elaborare risorse video con shader](#process-video-resources-with-shaders)
--   [Supporto esteso per risorse Texture2D condivise](#extended-support-for-shared-texture2d-resources)
--   [Modificare le risorse secondarie con le nuove opzioni di copia](#change-subresources-with-new-copy-options)
+-   [Supporto esteso per le risorse Texture2D condivise](#extended-support-for-shared-texture2d-resources)
+-   [Modificare le sottorisorse con le nuove opzioni di copia](#change-subresources-with-new-copy-options)
 -   [Rimuovere le risorse e le visualizzazioni delle risorse](#discard-resources-and-resource-views)
 -   [Supportare un numero maggiore di UAV](#support-a-larger-number-of-uavs)
 -   [Associare un intervallo secondario di un buffer costante a uno shader](#bind-a-subrange-of-a-constant-buffer-to-a-shader)
 -   [Recuperare l'intervallo secondario di un buffer costante associato a uno shader](#retrieve-the-subrange-of-a-constant-buffer-that-is-bound-to-a-shader)
 -   [Cancellare tutto o parte di una visualizzazione delle risorse](#clear-all-or-part-of-a-resource-view)
--   [Eseguire il mapping di SPV di buffer dinamici con NO \_ OVERWRITE](/windows)
+-   [Eseguire il mapping dei buffer dinamici con NO \_ OVERWRITE](/windows)
 -   [Usare UAV in ogni fase della pipeline](#use-uavs-at-every-pipeline-stage)
 -   [Supporto esteso per i dispositivi WARP](#extended-support-for-warp-devices)
--   [Usare Direct3D in sessione 0 processi](#use-direct3d-in-session-0-processes)
--   [Supporto del buffer shadow nel livello di funzionalità 9](#support-for-shadow-buffer-on-feature-level-9)
+-   [Usare Direct3D nei sessione 0 processi](#use-direct3d-in-session-0-processes)
+-   [Supporto per il buffer ombreggiato nel livello di funzionalità 9](#support-for-shadow-buffer-on-feature-level-9)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="shader-tracing-and-compiler-enhancements"></a>Funzionalità di traccia dello shader e miglioramenti del compilatore
@@ -69,7 +69,7 @@ L'API di traccia dello shader e i miglioramenti apportati al compilatore HLSL so
 La libreria D3dcompiler.lib richiede D3dcompiler \_nn.dll. Questa DLL non fa parte di Windows 8; si trova nella cartella bin di Windows SDK per Windows 8 insieme alla Fxc.exe della riga di comando del compilatore \\ HLSL.
 
 > [!Note]  
-> Anche se è possibile usare questa combinazione di libreria e DLL per lo sviluppo, non è possibile distribuire app di Windows Store che usano questa combinazione. È quindi necessario compilare gli shader HLSL prima di spedire l'app Windows Store. È possibile scrivere file binari di compilazione HLSL su disco oppure il compilatore può generare intestazioni con matrici di byte statiche che contengono i dati BLOB shader. Usare [**l'interfaccia ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) per accedere ai dati BLOB. Per sviluppare l'app Windows Store, chiamare [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2) o [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) per compilare l'origine HLSL non elaborata e quindi compilare i dati BLOB risultanti in Direct3D.
+> Anche se è possibile usare questa combinazione di libreria e DLL per lo sviluppo, non è possibile distribuire app Windows Store che usano questa combinazione. È quindi necessario compilare gli shader HLSL prima di spedire l'app Windows Store. È possibile scrivere file binari di compilazione HLSL su disco oppure il compilatore può generare intestazioni con matrici di byte statiche che contengono i dati BLOB shader. Usare [**l'interfaccia ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) per accedere ai dati BLOB. Per sviluppare l'app Windows Store, chiamare [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2) o [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) per compilare l'origine HLSL non elaborata e quindi compilare i dati BLOB risultanti in Direct3D.
 
  
 
@@ -77,7 +77,7 @@ La libreria D3dcompiler.lib richiede D3dcompiler \_nn.dll. Questa DLL non fa par
 
 Direct3D 11.1 consente alle API Direct3D 10 e Direct3D 11 di usare un dispositivo di rendering sottostante.
 
-Questa funzionalità Direct3D 11.1 è costituita dai metodi e dall'interfaccia seguenti.
+Questa funzionalità direct3D 11.1 è costituita dai metodi e dall'interfaccia seguenti.
 
 -   [**ID3D11Device1::CreateDeviceContextState**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11device1-createdevicecontextstate)
 -   [**ID3D11DeviceContext1::SwapDeviceContextState**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11devicecontext1-swapdevicecontextstate)
@@ -85,16 +85,16 @@ Questa funzionalità Direct3D 11.1 è costituita dai metodi e dall'interfaccia s
 
 ## <a name="check-support-of-new-direct3d-111-features-and-formats"></a>Verificare il supporto delle nuove funzionalità e formati di Direct3D 11.1
 
-Direct3D 11.1 consente di verificare la presenza di nuove funzionalità che il driver di grafica potrebbe supportare e nuovi modi in cui un formato è supportato in un dispositivo. Microsoft DirectX Graphic Infrastructure (DXGI) 1.2 specifica anche nuovi [**valori DXGI \_ FORMAT.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+Direct3D 11.1 consente di verificare la presenza di nuove funzionalità supportate dal driver di grafica e di nuovi modi in cui un formato è supportato in un dispositivo. Microsoft DirectX Graphic Infrastructure (DXGI) 1.2 specifica anche nuovi [**valori DXGI \_ FORMAT.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
--   [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) con [**D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) [**D3D11 \_ FEATURE DATA ARCHITECTURE \_ \_ \_ INFO,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_architecture_info) [**D3D11 \_ FEATURE DATA \_ \_ D3D9 \_ OPTIONS,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d9_options) [**D3D11 \_ FEATURE DATA SHADER MIN PRECISION SUPPORT \_ \_ \_ \_ \_ e**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_shader_min_precision_support) [**D3D11 \_ FEATURE DATA \_ \_ D3D9 \_ SHADOW \_ SUPPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d9_shadow_support) structures
+-   [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) con [**D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) [**D3D11 \_ FEATURE DATA ARCHITECTURE \_ \_ \_ INFO,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_architecture_info) [**D3D11 \_ FEATURE DATA \_ \_ D3D9 \_ OPTIONS,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d9_options) [**D3D11 \_ FEATURE DATA SHADER MIN PRECISION \_ \_ \_ \_ \_ SUPPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_shader_min_precision_support)e [**D3D11 \_ FEATURE DATA \_ \_ D3D9 \_ SHADOW \_ SUPPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d9_shadow_support) structures
 -   [**ID3D11Device::CheckFormatSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkformatsupport) with [**D3D11 \_ FORMAT SUPPORT \_ \_ DECODER \_ OUTPUT**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support), [**D3D11 FORMAT SUPPORT \_ VIDEO PROCESSOR \_ \_ \_ \_ OUTPUT**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support), [**D3D11 \_ FORMAT SUPPORT VIDEO PROCESSOR \_ \_ \_ \_ INPUT**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support), [**D3D11 \_ FORMAT SUPPORT VIDEO \_ \_ \_ ENCODER**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support)e [**D3D11 \_ FORMAT \_ SUPPORT2 OUTPUT MERGER LOGIC \_ \_ \_ \_ OP**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_format_support2)
 
 ## <a name="use-hlsl-minimum-precision"></a>Usare la precisione minima HLSL
 
-A partire da Windows 8, i driver di grafica possono implementare tipi di dati [scalari HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar) con precisione minima usando qualsiasi precisione maggiore o uguale alla precisione in bit specificata. Quando il codice HLSL minimum precision shader viene usato nell'hardware che implementa la precisione minima HLSL, si usa meno larghezza di banda di memoria e di conseguenza si usa anche meno potenza di sistema.
+A partire da Windows 8, i driver di grafica possono implementare tipi di dati [scalari HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-scalar) con precisione minima usando qualsiasi precisione maggiore o uguale alla precisione in bit specificata. Quando il codice HLSL minimum precision shader viene usato nell'hardware che implementa la precisione minima HLSL, si usa una minore larghezza di banda di memoria e di conseguenza si usa anche meno potenza del sistema.
 
 È possibile eseguire una query per ottenere il supporto della precisione minima fornito dal driver di grafica chiamando [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) con il [**valore D3D11 \_ FEATURE SHADER MIN PRECISION \_ \_ \_ \_ SUPPORT.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_feature) In questa chiamata **ID3D11Device::CheckFeatureSupport** passare un puntatore a una struttura [**D3D11 \_ FEATURE DATA SHADER MIN PRECISION \_ \_ \_ \_ \_ SUPPORT**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_shader_min_precision_support) che **ID3D11Device::CheckFeatureSupport** riempie con i livelli di precisione minimi supportati dal driver per la fase pixel shader e per altre fasi dello shader. Le informazioni restituite indicano semplicemente che l'hardware grafico può eseguire operazioni HLSL a una precisione inferiore rispetto alla precisione float standard a 32 bit, ma non garantisce che l'hardware grafico verrà effettivamente eseguito a una precisione inferiore.
 
@@ -114,7 +114,7 @@ Direct3D 11.1 aggiorna il [**metodo ID3D11Device::CreateBuffer**](/windows/deskt
 
 ## <a name="use-logical-operations-in-a-render-target"></a>Usare operazioni logiche in una destinazione di rendering
 
-Direct3D 11.1 consente di usare operazioni logiche anziché la fusione in una destinazione di rendering. Tuttavia, non è possibile combinare le operazioni di logica con la fusione tra più destinazioni di rendering.
+Direct3D 11.1 consente di usare operazioni logiche anziché la fusione in una destinazione di rendering. Tuttavia, non è possibile combinare le operazioni logiche con la fusione tra più destinazioni di rendering.
 
 Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
@@ -194,7 +194,7 @@ Se [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-i
 -   FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM
 -   FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM \_ SRGB
 -   DXGI \_ FORMAT \_ R8G8B8A8 \_ UINT
--   DXGI \_ FORMAT \_ R8G8B8A8 \_ SNORM
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ SNORM
 -   FORMATO DXGI \_ \_ R8G8B8A8 \_ SINT
 -   FORMATO DXGI \_ \_ B8G8R8A8 \_ SENZA TIPO
 -   FORMATO DXGI \_ \_ B8G8R8A8 \_ UNORM
@@ -244,19 +244,19 @@ Se [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-i
 -   [**D3D11 \_ RESOURCE \_ MISC \_ RESTRICT \_ SHARED \_ RESOURCE \_ DRIVER**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
 > [!Note]  
-> Quando **ExtendedResourceSharing è** **TRUE,** si ha maggiore flessibilità quando si specificano flag di associazione per la condivisione di risorse Texture2D. Non solo il driver di grafica e l'hardware supportano più flag di associazione, ma anche combinazioni più possibili di flag di associazione. Ad esempio, è possibile specificare solo [**D3D11 \_ BIND \_ RENDER \_ TARGET**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) o nessun flag di associazione e così via.
+> Quando **ExtendedResourceSharing è** **TRUE,** si ha maggiore flessibilità quando si specificano flag di associazione per la condivisione delle risorse Texture2D. Non solo il driver grafico e l'hardware supportano più flag di associazione, ma anche combinazioni più possibili di flag di associazione. Ad esempio, è possibile specificare solo [**D3D11 \_ BIND \_ RENDER \_ TARGET**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) o nessun flag di associazione e così via.
 
  
 
 Anche se [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) restituisce **TRUE** in **ExtendedResourceSharing,** non è comunque possibile condividere le risorse create con queste funzionalità e flag:
 
 -   [**D3D11 \_ BIND \_ DEPTH \_ STENCIL**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
--   Risorse trama 2D in modalità di antialiasing multicampionamento (MSAA) (specificata con [**DXGI \_ SAMPLE \_ DESC**](/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc))
+-   Risorse di trama 2D in modalità di anti-aliasing multicampionamento (MSAA) (specificata con [**DXGI \_ SAMPLE \_ DESC)**](/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc)
 -   [**D3D11 \_ RESOURCE \_ MISC \_ RESOURCE \_ CLAMP**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**D3D11 \_ USAGE \_ IMMUTABLE,**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage) [**D3D11 \_ USAGE \_ DYNAMIC**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)o [**D3D11 \_ USAGE \_ STAGING**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage) (ovvero mappabile)
--   [**D3D11 \_ RESOURCE \_ MISC \_ TEXTURECUBE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ USAGE \_ IMMUTABLE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage), [**D3D11 \_ USAGE \_ DYNAMIC**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)o [**D3D11 \_ USAGE \_ STAGING**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage) (ovvero mappabile)
+-   [**RISORSA D3D11 \_ \_ MISC \_ TEXTURECUBE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
-## <a name="change-subresources-with-new-copy-options"></a>Modificare le risorse secondarie con le nuove opzioni di copia
+## <a name="change-subresources-with-new-copy-options"></a>Modificare le sottorisorse con le nuove opzioni di copia
 
 Direct3D 11.1 consente di usare nuovi flag di copia per copiare e aggiornare le sottorisorse. Quando si copia una sottorisorsa, le risorse di origine e di destinazione possono essere identiche e le aree di origine e di destinazione possono sovrapporsi.
 
@@ -277,7 +277,7 @@ Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
 ## <a name="support-a-larger-number-of-uavs"></a>Supportare un numero maggiore di UAV
 
-Direct3D 11.1 consente di usare un numero maggiore di UAV quando si associano risorse alla fase [di unione dell'output](d3d10-graphics-programming-guide-output-merger-stage.md) e quando si imposta una matrice di viste per una risorsa non ordinata.
+Direct3D 11.1 consente di usare un numero maggiore di UAV quando si associano risorse alla fase di [unione dell'output](d3d10-graphics-programming-guide-output-merger-stage.md) e quando si imposta una matrice di viste per una risorsa non ordinata.
 
 Direct3D 11.1 aggiorna i metodi seguenti per questa funzionalità.
 
@@ -286,7 +286,7 @@ Direct3D 11.1 aggiorna i metodi seguenti per questa funzionalità.
 
 ## <a name="bind-a-subrange-of-a-constant-buffer-to-a-shader"></a>Associare un intervallo secondario di un buffer costante a uno shader
 
-Direct3D 11.1 consente di associare un intervallo secondario di un buffer costante a cui può accedere uno shader. È possibile fornire un buffer costante più grande e specificare l'intervallo secondario che lo shader può usare.
+Direct3D 11.1 consente di associare un intervallo secondario di un buffer costante a cui uno shader può accedere. È possibile fornire un buffer costante più grande e specificare l'intervallo secondario che lo shader può usare.
 
 Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
@@ -312,33 +312,33 @@ Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
 ## <a name="clear-all-or-part-of-a-resource-view"></a>Cancellare tutto o parte di una visualizzazione delle risorse
 
-Direct3D 11.1 consente di cancellare una visualizzazione delle risorse (RTV, UAV o qualsiasi visualizzazione video di una superficie Texture2D). Si applica lo stesso valore di colore a tutte le parti della vista.
+Direct3D 11.1 consente di cancellare una visualizzazione risorse (RTV, UAV o qualsiasi visualizzazione video di una superficie Texture2D). Lo stesso valore di colore viene applicato a tutte le parti della visualizzazione.
 
 Questa funzionalità direct3D 11.1 è costituita dall'API seguente.
 
 -   [**ID3D11DeviceContext1::ClearView**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11devicecontext1-clearview)
 
-## <a name="map-srvs-of-dynamic-buffers-with-no_overwrite"></a>Eseguire il mapping di SPV di buffer dinamici con NO \_ OVERWRITE
+## <a name="map-srvs-of-dynamic-buffers-with-no_overwrite"></a>Eseguire il mapping degli SRV dei buffer dinamici con NO \_ OVERWRITE
 
-Direct3D 11.1 consente di eseguire il mapping delle visualizzazioni delle risorse shader (SRV) dei buffer dinamici con D3D11 \_ MAP \_ WRITE NO \_ \_ OVERWRITE. I runtime Direct3D 11 e versioni precedenti limitano il mapping ai vertex buffer o agli indici.
+Direct3D 11.1 consente di eseguire il mapping delle visualizzazioni delle risorse shader (SRV) dei buffer dinamici con D3D11 \_ MAP \_ WRITE NO \_ \_ OVERWRITE. I runtime Direct3D 11 e precedenti limitano il mapping ai buffer dei vertici o degli indici.
 
 Direct3D 11.1 aggiorna il [**metodo ID3D11DeviceContext::Map**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-map) per questa funzionalità.
 
-## <a name="use-uavs-at-every-pipeline-stage"></a>Usare UAV in ogni fase della pipeline
+## <a name="use-uavs-at-every-pipeline-stage"></a>Usare gli UAV in ogni fase della pipeline
 
-Direct3D 11.1 consente di usare le istruzioni seguenti del modello shader 5.0 in tutte le fasi dello shader usate in precedenza solo in pixel shader e compute shader.
+Direct3D 11.1 consente di usare le istruzioni del modello di shader 5.0 seguenti in tutte le fasi dello shader usate in precedenza solo in pixel shader e compute shader.
 
--   [Tipi di \_ dcl uav \_](/windows/desktop/direct3dhlsl/dcl-uav-typed--sm5---asm-)
+-   [dcl \_ uav \_ typed](/windows/desktop/direct3dhlsl/dcl-uav-typed--sm5---asm-)
 -   [dcl \_ uav \_ raw](/windows/desktop/direct3dhlsl/dcl-uav-raw--sm5---asm-)
--   [dcl \_ uav \_ strutturato](/windows/desktop/direct3dhlsl/dcl-uav-structured--sm5---asm-)
+-   [dcl \_ uav \_ structured](/windows/desktop/direct3dhlsl/dcl-uav-structured--sm5---asm-)
 -   [ld \_ raw](/windows/desktop/direct3dhlsl/ld-raw--sm5---asm-)
--   [ld \_ strutturato](/windows/desktop/direct3dhlsl/ld-structured--sm5---asm-)
--   [ld \_ uav \_ digitato](/windows/desktop/direct3dhlsl/ld-uav-typed--sm5---asm-)
--   [archiviare \_ dati non elaborati](/windows/desktop/direct3dhlsl/store-raw--sm5---asm-)
--   [archivio \_ strutturato](/windows/desktop/direct3dhlsl/store-structured--sm5---asm-)
+-   [ld \_ structured](/windows/desktop/direct3dhlsl/ld-structured--sm5---asm-)
+-   [ld \_ uav \_ typed](/windows/desktop/direct3dhlsl/ld-uav-typed--sm5---asm-)
+-   [archiviare dati \_ non elaborati](/windows/desktop/direct3dhlsl/store-raw--sm5---asm-)
+-   [store \_ structured](/windows/desktop/direct3dhlsl/store-structured--sm5---asm-)
 -   [store \_ uav \_ typed](/windows/desktop/direct3dhlsl/store-uav-typed--sm5---asm-)
--   [sincronizzare \_ uglobal](/windows/desktop/direct3dhlsl/sync--sm5---asm-)
--   Tutti gli atomici e gli atomici immediati ,ad esempio [ \_ atomici e](/windows/desktop/direct3dhlsl/atomic-and--sm5---asm-) [imm \_ \_ atomici e](/windows/desktop/direct3dhlsl/imm-atomic-and--sm5---asm-))
+-   [sync \_ uglobal](/windows/desktop/direct3dhlsl/sync--sm5---asm-)
+-   Tutti gli atomici e gli atomici immediati (ad esempio [atomic \_ e](/windows/desktop/direct3dhlsl/atomic-and--sm5---asm-) [e imm atomic \_ \_ e](/windows/desktop/direct3dhlsl/imm-atomic-and--sm5---asm-))
 
 Direct3D 11.1 aggiorna i metodi seguenti per questa funzionalità.
 
@@ -348,38 +348,38 @@ Direct3D 11.1 aggiorna i metodi seguenti per questa funzionalità.
 -   [**ID3D11DeviceContext::CreateHullShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createhullshader)
 -   [**ID3D11DeviceContext::CreateVertexShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createvertexshader)
 
-Queste istruzioni erano presenti in Direct3D 11.0 in ps \_ 5 \_ 0 e cs \_ 5 \_ 0. Poiché Direct3D 11.1 rende disponibili UAV in tutte le fasi dello shader, queste istruzioni sono disponibili in tutte le fasi dello shader.
+Queste istruzioni erano disponibili in Direct3D 11.0 in ps \_ 5 \_ 0 e cs \_ 5 \_ 0. Poiché Direct3D 11.1 rende disponibili gli UAV in tutte le fasi dello shader, queste istruzioni sono disponibili in tutte le fasi dello shader.
 
-Se si passano shader compilati (VS/HS/DS/HS) che usano una di queste istruzioni a una funzione create-shader, ad esempio [**CreateVertexShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createvertexshader), nei dispositivi che non supportano UAV in ogni fase (inclusi i driver esistenti che non sono implementati con questa funzionalità), la funzione create-shader ha esito negativo. La funzione create-shader ha anche esito negativo se lo shader tenta di usare uno slot UAV oltre il set di slot UAV supportati dall'hardware.
+Se si passano shader compilati (VS/HS/DS/HS) che usano una di queste istruzioni a una funzione di creazione shader, ad esempio [**CreateVertexShader,**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createvertexshader)su dispositivi che non supportano UAV in ogni fase (inclusi i driver esistenti che non sono implementati con questa funzionalità), la funzione create-shader ha esito negativo. La funzione create-shader ha esito negativo anche se lo shader tenta di usare uno slot UAV oltre il set di slot UAV supportati dall'hardware.
 
-Gli UAV a cui fanno riferimento queste istruzioni vengono condivisi tra tutte le fasi della pipeline. Ad esempio, un UAV associato allo slot 0 nella fase di [unione dell'output](d3d10-graphics-programming-guide-output-merger-stage.md) è disponibile nello slot 0 a VS/HS/DS/GS/PS.
+Gli UAV a cui fanno riferimento queste istruzioni sono condivisi tra tutte le fasi della pipeline. Ad esempio, un UAV associato allo slot 0 nella fase di [unione dell'output](d3d10-graphics-programming-guide-output-merger-stage.md) è disponibile nello slot 0 a VS/HS/DS/GS/PS.
 
-Non è garantito che gli accessi UAV rilasciati dall'interno o tra le fasi dello shader eseguite all'interno di un determinato draw () o rilasciati dallo shader di calcolo all'interno di un Dispatch () non siano terminati nell'ordine in cui sono stati \* \* rilasciati. Ma tutti gli accessi UAV terminano alla fine di Draw \* () o Dispatch \* ().
+Gli accessi UAV rilasciati dall'interno o tra le fasi dello shader eseguite all'interno di un determinato draw () o rilasciati dal compute shader all'interno di un Dispatch () non sono garantiti per terminare nell'ordine in cui sono stati \* \* rilasciati. Ma tutti gli accessi UAV terminano alla fine di Draw \* () o Dispatch \* ().
 
 ## <a name="extended-support-for-warp-devices"></a>Supporto esteso per i dispositivi WARP
 
-Direct3D 11.1 estende il supporto per i dispositivi [WARP,](overviews-direct3d-11-devices-create-warp.md) che vengono creati passando [**D3D \_ DRIVER TYPE \_ \_ WARP**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type) nel *parametro DriverType* di [**D3D11CreateDevice**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice).
+Direct3D 11.1 estende il supporto per i dispositivi [WARP,](overviews-direct3d-11-devices-create-warp.md) che vengono creati passando [**D3D \_ DRIVER TYPE \_ \_ WARP**](/windows/desktop/api/D3DCommon/ne-d3dcommon-d3d_driver_type) nel *parametro DriverType* di [**D3D11CreateDevice.**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdevice)
 
-A partire dal supporto dei dispositivi WARP Direct3D 11.1:
+A partire dai dispositivi WARP Direct3D 11.1, è possibile:
 
 -   Tutti i livelli di [funzionalità Direct3D](overviews-direct3d-11-devices-downlevel-intro.md) da 9.1 a 11.1
--   [Shader di calcolo](direct3d-11-advanced-stages-compute-shader.md) e [a tessellazione](direct3d-11-advanced-stages-tessellation.md)
--   Superfici condivise. In altri modi, è possibile condividere completamente le superfici tra dispositivi WARP, nonché tra dispositivi WARP in processi diversi.
+-   [Compute shaders](direct3d-11-advanced-stages-compute-shader.md) and [tessellation](direct3d-11-advanced-stages-tessellation.md)
+-   Superfici condivise. Ciò significa che è possibile condividere completamente le superfici tra dispositivi WARP, nonché tra dispositivi WARP in processi diversi.
 
 I dispositivi WARP non supportano queste funzionalità facoltative:
 
 -   [Doppie](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_doubles)
 -   [codifica o decodifica video](/windows/desktop/api/D3D11/ne-d3d11-d3d11_create_device_flag)
--   [supporto dello shader con precisione minima](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_shader_min_precision_support)
+-   [supporto per shader con precisione minima](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_shader_min_precision_support)
 
-Quando si esegue una macchina virtuale (VM), Hyper-V, con l'unità di elaborazione grafica (GPU) disabilitata o senza un driver video, si ottiene un dispositivo WARP il cui nome descrittivo è "Scheda video Microsoft Basic". Questo dispositivo WARP può eseguire l'Windows completa, che include le app DWM, Internet Explorer e Windows Store. Questo dispositivo WARP supporta anche l'esecuzione di app legacy che usano [DirectDraw](/windows/desktop/directdraw/directdraw) o che eseguono app che usano Direct3D 3 fino a Direct3D 11.1.
+Quando si esegue una macchina virtuale (VM), Hyper-V, con l'unità di elaborazione grafica (GPU) disabilitata o senza un driver di visualizzazione, si ottiene un dispositivo WARP il cui nome descrittivo è "Scheda video Microsoft Basic". Questo dispositivo WARP può eseguire l'esperienza Windows, che include le app DWM, Internet Explorer e Windows Store. Questo dispositivo WARP supporta anche l'esecuzione di app legacy che usano [DirectDraw](/windows/desktop/directdraw/directdraw) o app in esecuzione che usano Direct3D da 3 a Direct3D 11.1.
 
-## <a name="use-direct3d-in-session-0-processes"></a>Usare Direct3D nei sessione 0 processi
+## <a name="use-direct3d-in-session-0-processes"></a>Usare Direct3D in sessione 0 processi
 
-A partire Windows 8 e Windows Server 2012, è possibile usare la maggior parte delle API Direct3D nei sessione 0 processi.
+A partire Windows 8 e Windows Server 2012, è possibile usare la maggior parte delle API Direct3D sessione 0 processi.
 
 > [!Note]  
-> Queste API di output, finestra, catena di scambio e presentazione non sono disponibili nei processi sessione 0 perché non si applicano all'ambiente sessione 0:
+> Questi output, finestre, catena di scambio e API correlate alla presentazione non sono disponibili nei processi sessione 0 perché non si applicano all'ambiente sessione 0:
 >
 > -   [**IDXGIFactory::CreateSwapChain**](/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-createswapchain)
 > -   [**IDXGIFactory::GetWindowAssociation**](/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-getwindowassociation)
@@ -395,13 +395,13 @@ A partire Windows 8 e Windows Server 2012, è possibile usare la maggior parte d
 > -   [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/d3d10_1/nf-d3d10_1-d3d10createdeviceandswapchain1)
 > -   [**D3D11CreateDeviceAndSwapChain**](/windows/desktop/api/D3D11/nf-d3d11-d3d11createdeviceandswapchain)
 >
-> Se si chiama una delle API precedenti in un processo sessione 0, viene restituito [**L'ERRORE DXGI \_ NON È ATTUALMENTE \_ \_ \_ DISPONIBILE.**](/windows/desktop/direct3ddxgi/dxgi-error)
+> Se si chiama una delle API precedenti in un processo sessione 0, restituisce [**ERRORE DXGI \_ NON ATTUALMENTE \_ \_ \_ DISPONIBILE**](/windows/desktop/direct3ddxgi/dxgi-error).
 
  
 
-## <a name="support-for-shadow-buffer-on-feature-level-9"></a>Supporto per il buffer shadow a livello di funzionalità 9
+## <a name="support-for-shadow-buffer-on-feature-level-9"></a>Supporto per il buffer ombreggiato nel livello di funzionalità 9
 
-Usare un subset di funzionalità del buffer ombreggiatura Direct3D 10 0+ per implementare gli \_ effetti di ombreggiatura [sul livello di funzionalità](overviews-direct3d-11-devices-downlevel-intro.md) 9 \_ x. Per informazioni sulle attività da eseguire per implementare gli effetti ombreggiatura sul livello di funzionalità 9 x, vedere Implementing shadow buffers for Direct3D feature level 9 (Implementazione dei buffer ombreggiati per il livello di \_ [funzionalità Direct3D 9).](/previous-versions/windows/apps/jj262110(v=win.10))
+Usare un subset di funzionalità del buffer ombreggiatura Direct3D 10 0+ per implementare effetti di ombreggiatura sul \_ livello di [funzionalità](overviews-direct3d-11-devices-downlevel-intro.md) 9 \_ x. Per informazioni sulle attività da eseguire per implementare gli effetti di ombreggiatura sul livello di funzionalità 9 x, vedere Implementazione di buffer ombreggiatura per la funzionalità \_ [Direct3D livello 9.](/previous-versions/windows/apps/jj262110(v=win.10))
 
 ## <a name="related-topics"></a>Argomenti correlati
 

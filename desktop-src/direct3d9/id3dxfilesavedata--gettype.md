@@ -1,7 +1,7 @@
 ---
-description: Recupera l'ID modello del nodo dati del file.
+description: Recupera l'ID modello di questo nodo dati del file.
 ms.assetid: ff0662da-b4f8-4ed2-81d4-6771e91da262
-title: 'Metodo ID3DXFileSaveData:: GetType (D3DX9Xof. h)'
+title: Metodo ID3DXFileSaveData::GetType (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b774f71b4be111efcdbdaf8bc41b40d4b0efaa95
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ec0dddd2106acddc5d09354ba7919eb32a8217a115410a9830803aaae589c891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987431"
 ---
-# <a name="id3dxfilesavedatagettype-method"></a>Metodo ID3DXFileSaveData:: GetType
+# <a name="id3dxfilesavedatagettype-method"></a>Metodo ID3DXFileSaveData::GetType
 
-Recupera l'ID modello del nodo dati del file.
+Recupera l'ID modello di questo nodo dati del file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,7 +40,7 @@ HRESULT GetType(
 
 <dl> <dt>
 
-*tipo* \[ di in\]
+*type* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **GUID**](guid.md)\***
@@ -53,7 +53,7 @@ Puntatore al GUID che rappresenta il modello in questo nodo dati del file.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DXFERR \_ BADOBJECT, D3DXFERR \_ BADVALUE.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DXFERR \_ BADOBJECT, D3DXFERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Intestazione<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

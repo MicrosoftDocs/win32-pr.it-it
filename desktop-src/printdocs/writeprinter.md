@@ -1,7 +1,7 @@
 ---
-description: La funzione WritePrinter notifica allo spooler di stampa che i dati devono essere scritti nella stampante specificata.
+description: La funzione WritePrinter notifica lo spooler di stampa che i dati devono essere scritti nella stampante specificata.
 ms.assetid: 9411b71f-d686-44ed-9051-d410e5ab228e
-title: Funzione WritePrinter (winspool. h)
+title: Funzione WritePrinter (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - WinSpool.Drv
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 490221b15ed1e3c7dad3a4cb523c15e9ec484b13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b8b413854f8634477f7fec9010f4306587a093bd5c791b1b7d0117b6c3ef91f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971160"
 ---
-# <a name="writeprinter-function"></a>WritePrinter (funzione)
+# <a name="writeprinter-function"></a>Funzione WritePrinter
 
-La funzione **WritePrinter** notifica allo spooler di stampa che i dati devono essere scritti nella stampante specificata.
+La **funzione WritePrinter** notifica lo spooler di stampa che i dati devono essere scritti nella stampante specificata.
 
 > [!Note]  
-> **WritePrinter** supporta solo la stampa GDI e non deve essere utilizzato per la stampa XPS. Se il processo di stampa usa il percorso di stampa XPS o OpenXPS, usare l' [API di stampa XPS](/windows/desktop/printdocs/xps-printing). L'invio di processi di stampa XPS o OpenXPS allo spooler mediante **WritePrinter** non è supportato e può causare risultati indeterminati.
+> **WritePrinter** supporta solo la stampa GDI e non deve essere usato per la stampa XPS. Se il processo di stampa usa il percorso di stampa XPS o OpenXPS, usare [l'API di stampa XPS](/windows/desktop/printdocs/xps-printing). L'invio di processi di stampa XPS o OpenXPS nello spooler tramite **WritePrinter** non è supportato e può comportare risultati indeterminati.
 
  
 
@@ -50,28 +50,28 @@ BOOL WritePrinter(
 
 <dl> <dt>
 
-*hPrinter* \[ in\]
+*hPrinter* \[ Pollici\]
 </dt> <dd>
 
-Handle per la stampante. Utilizzare la funzione [**OpenPrinter**](openprinter.md) o [**AddPrinter**](addprinter.md) per recuperare un handle di stampante.
+Handle per la stampante. Usare la [**funzione OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) per recuperare un handle della stampante.
 
 </dd> <dt>
 
-*pbuf* \[ in\]
+*pBuf* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una matrice di byte che contiene i dati che devono essere scritti sulla stampante.
+Puntatore a una matrice di byte che contiene i dati che devono essere scritti nella stampante.
 
 </dd> <dt>
 
-*cbBuf* \[ in\]
+*cbBuf* \[ Pollici\]
 </dt> <dd>
 
 Dimensione, in byte, della matrice.
 
 </dd> <dt>
 
-*pcWritten* \[ out\]
+*pcWritten* \[ Cambio\]
 </dt> <dd>
 
 Puntatore a un valore che riceve il numero di byte di dati scritti nella stampante.
@@ -87,26 +87,26 @@ Se la funzione ha esito negativo, il valore restituito è zero.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Si tratta di una funzione di blocco o sincrona e potrebbe non essere restituita immediatamente. La velocità di restituzione di questa funzione dipende da fattori di runtime quali lo stato della rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non risponda.
+> Si tratta di una funzione di blocco o sincrona e potrebbe non restituire immediatamente . La velocità di ritorno di questa funzione dipende da fattori in fase di esecuzione, ad esempio lo stato di rete, la configurazione del server di stampa e i fattori di implementazione del driver della stampante difficili da prevedere durante la scrittura di un'applicazione. La chiamata di questa funzione da un thread che gestisce l'interazione con l'interfaccia utente potrebbe far sembrare che l'applicazione non rispetti.
 
  
 
 La sequenza per un processo di stampa è la seguente:
 
-1.  Per iniziare un processo di stampa, chiamare [**StartDocPrinter**](startdocprinter.md).
+1.  Per iniziare un processo di stampa, [**chiamare StartDocPrinter**](startdocprinter.md).
 2.  Per iniziare ogni pagina, chiamare [**StartPagePrinter**](startpageprinter.md).
-3.  Per scrivere i dati in una pagina, chiamare **WritePrinter**.
+3.  Per scrivere dati in una pagina, chiamare **WritePrinter**.
 4.  Per terminare ogni pagina, chiamare [**EndPagePrinter**](endpageprinter.md).
 5.  Ripetere 2, 3 e 4 per il numero di pagine necessario.
-6.  Per terminare il processo di stampa, chiamare [**EndDocPrinter**](enddocprinter.md).
+6.  Per terminare il processo di stampa, [**chiamare EndDocPrinter**](enddocprinter.md).
 
-Quando un documento di alto livello (ad esempio un file Adobe PDF o Microsoft Word) o altri dati della stampante (ad esempio, PCL, PS o HPGL) vengono inviati direttamente a una stampante, le impostazioni di stampa definite nel documento prendono le precedenti rispetto alle impostazioni di stampa di Windows. Documents output quando il valore del membro *pDatatype* della struttura [**doc \_ info \_ 1**](doc-info-1.md) passato nel parametro *pDocInfo* della chiamata [**StartDocPrinter**](startdocprinter.md) è "Raw" deve descrivere completamente le impostazioni del processo di stampa di tipo [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)nella lingua compresa nell'hardware.
+Quando un documento di alto livello (ad esempio un file Adobe PDF o Microsoft Word) o altri dati della stampante (ad esempio PCL, PS o HPGL) viene inviato direttamente a una stampante, le impostazioni di stampa definite nel documento hanno precedenti rispetto alle impostazioni di stampa Windows. L'output dei documenti quando il valore del membro *pDatatype* della struttura [**DOC INFO \_ \_ 1**](doc-info-1.md) passato nel *parametro pDocInfo* della chiamata [**StartDocPrinter**](startdocprinter.md) è "RAW" deve descrivere completamente le impostazioni del processo di stampa in stile [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)nella lingua compresa dall'hardware.
 
-Nelle versioni di Windows precedenti a Windows XP, quando una pagina in un file con spooling supera circa 350 MB, potrebbe non essere possibile stampare e inviare un messaggio di errore. Questo può verificarsi, ad esempio, durante la stampa di file EMF di grandi dimensioni. Il limite delle dimensioni della pagina nelle versioni di Windows precedenti a Windows XP dipende da molti fattori, tra cui la quantità di memoria virtuale disponibile, la quantità di memoria allocata dai processi chiamante e la quantità di frammentazione nell'heap dei processi. In Windows XP e versioni successive di Windows, i file EMF devono avere una dimensione di 2 GB o minore. Se **WritePrinter** viene usato per scrivere dati non EMF, ad esempio il PDL pronto per la stampa, le dimensioni del file sono limitate solo dallo spazio disponibile su disco.
+Nelle versioni di Windows precedenti Windows XP, quando una pagina in un file di spooling supera circa 350 MB, potrebbe non essere possibile stampare e non inviare un messaggio di errore. Ad esempio, ciò può verificarsi quando si stampano file EMF di grandi dimensioni. Il limite delle dimensioni della pagina nelle versioni di Windows precedenti Windows XP dipende da molti fattori, tra cui la quantità di memoria virtuale disponibile, la quantità di memoria allocata dai processi chiamanti e la quantità di frammentazione nell'heap del processo. In Windows XP e versioni successive di Windows, i file EMF devono avere dimensioni di 2 GB o inferiori. Se **WritePrinter** viene usato per scrivere dati non EMF, ad esempio PDL pronto per la stampante, le dimensioni del file sono limitate solo dallo spazio su disco disponibile.
 
 ## <a name="examples"></a>Esempio
 
-Per un programma di esempio che usa questa funzione, vedere [procedura: stampare con l'API di stampa GDI](how-to--print-using-the-gdi-print-api.md).
+Per un programma di esempio che usa questa funzione, vedere [Procedura: Stampare usando l'API di stampa GDI](how-to--print-using-the-gdi-print-api.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -116,8 +116,8 @@ Per un programma di esempio che usa questa funzione, vedere [procedura: stampare
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                                |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                      |
-| Intestazione<br/>                   | <dl> <dt>Winspool. h (include Windows. h)</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Intestazione<br/>                   | <dl> <dt>Winspool.h (include Windows.h)</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 
 

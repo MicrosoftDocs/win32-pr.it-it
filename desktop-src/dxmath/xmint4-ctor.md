@@ -18,7 +18,7 @@ Costruttori esposti da `XMINT4` .
 Costruisce istanze della [**struttura XMINT4.**](/windows/win32/api/directxmath/ns-directxmath-xmint4)
 
 > [!Note]  
-> I costruttori elencati qui sono disponibili solo in C++.
+> I costruttori elencati di seguito sono disponibili solo in C++.
 
  
 
@@ -40,7 +40,7 @@ Costruisce istanze della [**struttura XMINT4.**](/windows/win32/api/directxmath/
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">[<strong>XMINT4 (const int32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmint4-xmint4(constint32_t))</td>
-<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMINT4</code> un argomento della matrice di quattro <code>int32_t</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint4) da un argomento di matrice di quattro <code>int32_t</code> elementi. <br/>
+<td style="text-align: left;">Inizializza una nuova istanza di da <code>XMINT4</code> un argomento di matrice di quattro <code>int32_t</code> elementi. <br/> Questo costruttore inizializza una nuova istanza di [<strong>XMINT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmint4) da un argomento di matrice di quattro <code>int32_t</code> elementi. <br/>
 <blockquote>
 [!Note]<br />
 Questo costruttore è disponibile solo in C++.

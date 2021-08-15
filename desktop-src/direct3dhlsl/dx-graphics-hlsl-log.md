@@ -3,7 +3,7 @@ title: log
 description: Restituisce il logaritmo in base e del valore specificato.
 ms.assetid: 443e7aa7-7219-40ad-aafc-4bce09c8f596
 keywords:
-- HLSL log
+- log HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0cdd08fe178925406145476b3250e8d256b263c3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dc53ffb972178ee7fce86034ccb344d3ccdb89df0651084086a0c317e06ce3f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513869"
 ---
 # <a name="log"></a>log
 
@@ -26,7 +26,7 @@ Restituisce il logaritmo in base e del valore specificato.
 
 
 
-| log *ret* (*x*) |
+| *ret* log(*x*) |
 |----------------|
 
 
@@ -39,7 +39,7 @@ Restituisce il logaritmo in base e del valore specificato.
 
 | Elemento                                                   | Descrizione                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x*<br/> | \[nel \] valore specificato.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[in \] Il valore specificato.<br/> |
 
 
 
@@ -47,7 +47,7 @@ Restituisce il logaritmo in base e del valore specificato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Logaritmo in base e del parametro *x* . Se il parametro *x* è negativo, la funzione restituisce un valore indefinito. Se il parametro *x* è 0, questa funzione restituisce-inf.
+Logaritmo in base e del *parametro x.* Se il *parametro x* è negativo, questa funzione restituisce un valore indefinito. Se il *parametro x* è 0, questa funzione restituisce -INF.
 
 ## <a name="type-description"></a>Descrizione del tipo
 
@@ -55,14 +55,14 @@ Logaritmo in base e del parametro *x* . Se il parametro *x* è negativo, la funz
 
 | Nome  | [**Tipo di modello**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo di componente**](dx-graphics-hlsl-intrinsic-functions.md) | Dimensione                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**scalare**](dx-graphics-hlsl-intrinsic-functions.md), **vettore** o **matrice** | [**float**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | uguale all'input *x*                                                                                              | [**float**](/windows/desktop/WinProg/windows-data-types)                        | le stesse dimensioni di input *x* |
+| *x*   | [**scalare,**](dx-graphics-hlsl-intrinsic-functions.md) **vettore** o **matrice** | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | uguale all'input *x*                                                                                              | [**Galleggiante**](/windows/desktop/WinProg/windows-data-types)                        | stesse dimensioni dell'input *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -70,8 +70,8 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                                                       | Supportato           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader più elevati | sì                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sì ( \_ solo vs 1 \_ 1) |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelli shader superiori | sì                 |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sì (solo vs \_ \_ 1 1) |
 
 
 

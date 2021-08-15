@@ -13,7 +13,7 @@ ms.locfileid: "118516654"
 ---
 # <a name="call-sm4---asm"></a>call (sm4 - asm)
 
-Chiama una subroutine contrassegnata da dove viene visualizzata **\# l'etichetta** nel programma.
+Chiama una subroutine contrassegnata da dove viene visualizzata **l'etichetta l \#** nel programma.
 
 
 
@@ -59,7 +59,7 @@ Nell'esempio seguente viene illustrata l'istruzione di chiamata .
 
 ### <a name="restrictions"></a>Restrizioni
 
--   Le subroutine possono annidare 32 deep.
+-   Le subroutine possono annidare 32 livelli di profondità.
 -   Lo stack di indirizzi mittente viene gestito in modo trasparente dall'implementazione di .
 -   Se sono già presenti 32 voci nello  stack di indirizzi mittente e viene emessa una chiamata, la chiamata viene ignorata.
 -   Non è disponibile alcun stack di parametri automatico. L'applicazione può usare una matrice di registri temporanei indicizzabili (x \# \[ \] ) per implementare manualmente uno stack. Tuttavia, gli indirizzi restituiti delle chiamate subroutine non sono visibili e sono ortogonali per qualsiasi gestione manuale dello stack eseguita dall'applicazione.

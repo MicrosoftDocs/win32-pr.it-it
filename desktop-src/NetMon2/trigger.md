@@ -48,11 +48,11 @@ typedef struct _TRIGGER {
 **TriggerActive**
 </dt> <dd>
 
-Valore booleano che determina se il driver deve prestare attenzione al trigger.
+Valore booleano che determina se il trigger deve prestare attenzione al driver.
 
 </dd> <dt>
 
-**Tipo di trigger**
+**TriggerType**
 </dt> <dd>
 
 Codice operativo del trigger.

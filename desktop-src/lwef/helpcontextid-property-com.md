@@ -1,19 +1,19 @@
 ---
 title: Proprietà HelpContextID (oggetto Command)
-description: Informazioni sulla proprietà HelpContextID dell'oggetto Command. Microsoft Agent è deprecato a livello di Windows 7.
+description: Informazioni sulla proprietà HelpContextID dell'oggetto Command. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: 9e30e3f7-1d12-4aa1-af0d-5a3b30f57e83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461c3c0ff5a6722dd6740c7df7e89bf2b9520053
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: d38d0f725c0c809c70fa77b89d3608f8e713fd968c33bfb0192c712f3613e91a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478708"
 ---
 # <a name="helpcontextid-property-command-object"></a>Proprietà HelpContextID (oggetto Command)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 
@@ -43,12 +43,12 @@ Restituisce o imposta un numero di contesto associato per [**l'oggetto**](/windo
 
 ## <a name="remarks"></a>Commenti
 
-Se è stato creato un file della Guida di Windows per l'applicazione e si imposta la proprietà [**HelpFile**](helpfile-property.md) del carattere sul file, Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se si imposta un numero di contesto in [**HelpContextID,**](helpcontextid-property.md)Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
+Se è stato creato un file della Guida Windows per l'applicazione e si imposta la proprietà [**HelpFile**](helpfile-property.md) del carattere sul file, Agent chiama automaticamente la Guida quando [**HelpModeOn**](helpmodeon-property.md) è impostato su **True** e l'utente seleziona il comando. Se si imposta un numero di contesto in [**HelpContextID,**](helpcontextid-property.md)Agent chiama la Guida e cerca l'argomento identificato dal numero di contesto corrente. Il numero di contesto corrente è il valore **di HelpContextID** per il comando.
 
 Questa proprietà si applica solo all'uso del carattere da parte dell'applicazione client. l'impostazione non influisce sugli altri client del carattere o di altri caratteri dell'applicazione client.
 
 > [!Note]  
-> La compilazione di un file della Guida richiede il compilatore della Guida di Microsoft Windows.
+> La compilazione di un file della Guida richiede il compilatore della Guida Windows Microsoft.
 
  
 

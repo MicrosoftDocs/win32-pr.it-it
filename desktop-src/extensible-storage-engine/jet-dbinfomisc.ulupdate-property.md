@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulla proprietà JET_DBINFOMISC.ulUpdate
+description: 'Altre informazioni su: JET_DBINFOMISC.ulUpdate'
 title: JET_DBINFOMISC.ulUpdate
 TOCTitle: 'ulUpdate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.ulUpdate

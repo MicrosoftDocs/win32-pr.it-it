@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: EC67DE5B-3A3B-486f-BDF2-D49195CFAFB3
-ms.openlocfilehash: 24bd997f818b2ef0ba97682ff10ab8d5d7e7cffe
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 366cdd5bb3d2ce71b140abfe5db700ecd9c0e906226ed3888fcaf80dbfb5e18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969020"
 ---
 # <a name="ishelldispatchsuspend-method"></a>Metodo IShellDispatch.Suspend
 

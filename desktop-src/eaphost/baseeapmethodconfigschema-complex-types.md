@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 517be3d72fa0711d2c814b960ea14f15c2b04fd6
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ff5149e3ca9c7ba71695acfe994728df52119e966e858d484904ac24ff4ecbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103730290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498703"
 ---
 # <a name="baseeapmethodconfig-schema-complex-types"></a>Tipi complessi dello schema baseeapmethodconfig
 
@@ -26,15 +26,15 @@ Lo schema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) definisce i
 
 <dl> <dt>
 
-[EAPHost e schema legacy](eaphost-schemas.md)
+[Schema EAPHost e legacy](eaphost-schemas.md)
 </dt> <dt>
 
 [Schema baseeapmethodconfig](baseeapmethodconfigschema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

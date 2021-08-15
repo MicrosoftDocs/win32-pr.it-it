@@ -1,10 +1,10 @@
 ---
-title: Metodo INapServerManagement RegisterSystemHealthValidator (NapServerManagement. h)
-description: Registra un servizio di convalida dell'integrità.
+title: Metodo INapServerManagement RegisterSystemHealthValidator (NapServerManagement.h)
+description: Registra un shv.
 ms.assetid: 23f147d5-3c4e-48ca-940a-c4350ad6ecb3
 keywords:
-- NAP metodo RegisterSystemHealthValidator
-- Metodo RegisterSystemHealthValidator NAP, interfaccia INapServerManagement
+- Metodo RegisterSystemHealthValidator NAP
+- Metodo RegisterSystemHealthValidator NAP , interfaccia INapServerManagement
 - Interfaccia INapServerManagement NAP, metodo RegisterSystemHealthValidator
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abd8d42da196caa804a8919c6425fda9fcb950c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdb5dc93c5bb927ffb25df20f37e5b2c30560153efb006f3c91bf7e97efec360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012569"
 ---
-# <a name="inapservermanagementregistersystemhealthvalidator-method"></a>Metodo INapServerManagement:: RegisterSystemHealthValidator
+# <a name="inapservermanagementregistersystemhealthvalidator-method"></a>Metodo INapServerManagement::RegisterSystemHealthValidator
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-Il metodo **INapServerManagement:: RegisterSystemHealthValidator** registra un servizio di convalida dell'integrità.
+Il **metodo INapServerManagement::RegisterSystemHealthValidator** registra un shv.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,32 +48,32 @@ HRESULT RegisterSystemHealthValidator(
 
 <dl> <dt>
 
-*validator* \[ di in\]
+*validator* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) che contiene le informazioni di registrazione di convalida integrità sistema.
+Puntatore a una [**struttura NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) che contiene le informazioni di registrazione SHV.
 
 </dd> <dt>
 
-*validatorClsid* \[ in\]
+*validatorClsid* \[ Pollici\]
 </dt> <dd>
 
-Puntatore al CLSID della classe COM che implementa l'interfaccia [**INapSystemHealthValidator**](inapsystemhealthvalidator.md) .
+Puntatore al CLSID della classe COM che implementa [**l'interfaccia INapSystemHealthValidator.**](inapsystemhealthvalidator.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-È possibile che vengano restituiti anche altri codici di errore specifici di COM.
+Possono essere restituiti anche altri codici di errore specifici di COM.
 
 
 
 | Codice restituito                                                                                            | Descrizione                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>        | Errore delle autorizzazioni, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl>        | Errore di autorizzazione, accesso negato.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
-| <dl> <dt>**protezione accesso alla rete \_ E \_ ID in conflitto \_**</dt> </dl> | L'ID di convalida integrità sistema è già registrato.<br/>                           |
+| <dl> <dt>**ID \_ IN CONFLITTO DI PROTEZIONE ACCESSO ALLA RETE \_ \_ E**</dt> </dl> | L'ID SHV è già registrato.<br/>                           |
 
 
 
@@ -86,9 +86,9 @@ Puntatore al CLSID della classe COM che implementa l'interfaccia [**INapSystemHe
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                               |
-| Intestazione<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                               |
+| Intestazione<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

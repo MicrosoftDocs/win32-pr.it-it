@@ -1,23 +1,23 @@
 ---
-description: In questo argomento viene descritto come verificare che un sensore possa fornire un determinato set di campi dati.
+description: Questo argomento descrive come verificare che un sensore possa fornire un determinato set di campi dati.
 ms.assetid: 918ba4a3-d2ac-47ee-ba29-f7ddf67ffbc5
-title: Verifica dei campi dati dei sensori supportati
+title: Controllo dei campi dati dei sensori supportati
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfd9cf42d1008ec1bb0e2785ec5113c5a817105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa75c474dc4cd38d34074872765abc77a7dae00d18e8cc37d74cde70b6f22a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118890266"
 ---
-# <a name="checking-for-supported-sensor-data-fields"></a>Verifica dei campi dati dei sensori supportati
+# <a name="checking-for-supported-sensor-data-fields"></a>Controllo dei campi dati dei sensori supportati
 
-In questo argomento viene descritto come verificare che un sensore possa fornire un determinato set di campi dati.
+Questo argomento descrive come verificare che un sensore possa fornire un determinato set di campi dati.
 
-Dopo aver recuperato un oggetto sensore, è possibile chiamare [**ISensor:: GetSupportedDataFields**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getsupporteddatafields) per determinare se il sensore è in grado di fornire i dati necessari.
+Dopo aver recuperato un oggetto sensore, è possibile chiamare [**ISensor::GetSupportedDataFields**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getsupporteddatafields) per determinare se il sensore può fornire i dati necessari.
 
-Il codice di esempio seguente crea una funzione di supporto che verifica se il sensore può fornire tutti e tre i campi dati di esempio. La funzione accetta un puntatore a un sensore come input e restituisce un valore booleano, dove **true** indica che il sensore può fornire tutti i campi dati richiesti.
+Il codice di esempio seguente crea una funzione helper che verifica se il sensore può fornire tutti e tre i campi dati di esempio. La funzione accetta un puntatore a un sensore come input e restituisce un valore booleano, dove **TRUE** indica che il sensore può fornire tutti i campi dati necessari.
 
 
 ```C++
