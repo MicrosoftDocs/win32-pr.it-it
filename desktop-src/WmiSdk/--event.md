@@ -1,8 +1,8 @@
 ---
-description: È una classe di base astratta che funge da classe padre per tutti gli eventi intrinseci ed estrinseci.
+description: Classe di base astratta che funge da classe padre per tutti gli eventi intrinseci ed estensivi.
 ms.assetid: 4d2e4715-041c-49e9-b948-a148dfe85483
 ms.tgt_platform: multiple
-title: Classe __Event
+title: __Event classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 39a032b3f082ed64ba7999d20366b89e8b3890c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a74abb8a02676ba97ffb7a41df6ee4a3bd7f428d5288e376f85d61927fbb0e06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821092"
 ---
 # <a name="__event-class"></a>\_\_Classe di evento
 
-La classe del sistema di **\_ \_ eventi** è una classe di base astratta che funge da classe padre per tutti gli eventi intrinseci ed estrinseci. Tutti i nuovi tipi di evento devono infine derivare da un **\_ \_ evento**. Gli eventi intrinseci derivano direttamente da questa classe. Gli eventi estrinseci definiti dall'utente derivano da una sottoclasse di questa classe denominata [**\_ \_ ExtrinsicEvent**](--extrinsicevent.md).
+La **\_ \_ classe** di sistema Event è una classe di base astratta che funge da classe padre per tutti gli eventi intrinseci ed estensivi. Tutti i nuovi tipi di evento devono infine derivare da **\_ \_ Event**. Gli eventi intrinseci derivano direttamente da questa classe. Gli eventi estensivi definiti dall'utente derivano da una sottoclasse di questa classe denominata [**\_ \_ ExtrinsicEvent**](--extrinsicevent.md).
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,47 +42,47 @@ class __Event : __IndicationRelated
 
 ## <a name="members"></a>Members
 
-La classe di **\_ \_ evento** dispone di questi tipi di membri:
+La **\_ \_ classe Event** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe di **\_ \_ evento** dispone di queste proprietà.
+La **\_ \_ classe Event** ha queste proprietà.
 
 <dl> <dt>
 
-**descrittore di sicurezza \_**
+**DESCRITTORE \_ DI SICUREZZA**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **Uint8**
+Tipo di dati: **matrice uint8**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrittore utilizzato dal provider di eventi per determinare gli utenti che possono ricevere l'evento. Per ulteriori informazioni, vedere la pagina relativa alle [costanti di sicurezza WMI](wmi-security-constants.md).
+Descrittore utilizzato dal provider di eventi per determinare quali utenti possono ricevere l'evento. Per altre informazioni, vedere [Costanti di sicurezza WMI](wmi-security-constants.md).
 
 </dd> <dt>
 
-**ORA di \_ creazione**
+**ORA \_ DI CREAZIONE**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore univoco che indica l'ora in cui viene generato l'evento. Si tratta di un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi dopo il 1 ° gennaio 1601. Le informazioni sono nel formato UTC (Coordinated Universal Time).
+Valore univoco che indica l'ora in cui viene generato l'evento. Valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi dopo il 1° gennaio 1601. Le informazioni sono nel formato Coordinated Universal Time (UTC).
 
-Per ulteriori informazioni sull'utilizzo di valori **UInt64** negli script, vedere [scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Per altre informazioni sull'uso **dei valori uint64** negli script, vedere [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe di **\_ \_ evento** è derivata da [**\_ \_ IndicationRelated**](--indicationrelated.md), che non dispone di proprietà.
+La **\_ \_ classe Event** è derivata da [**\_ \_ IndicationRelated,**](--indicationrelated.md)che non dispone di proprietà.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,7 +100,7 @@ La classe di **\_ \_ evento** è derivata da [**\_ \_ IndicationRelated**](--ind
 
 <dl> <dt>
 
-[**\_\_IndicationRelated**](/windows/desktop/WmiSdk/--indicationrelated)
+[**\_\_Indicazione Correlata**](/windows/desktop/WmiSdk/--indicationrelated)
 </dt> <dt>
 
 [Classi di sistema WMI](wmi-system-classes.md)

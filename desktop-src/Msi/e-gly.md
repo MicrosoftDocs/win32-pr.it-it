@@ -1,17 +1,17 @@
 ---
-description: Informazioni sui Windows Installer concetti che iniziano con la lettera E, ad esempio file di origine con privilegi elevati ed esterni.
+description: Informazioni sui Windows del programma di installazione che iniziano con la lettera E, ad esempio file di origine con privilegi elevati ed esterni.
 ms.assetid: 8f180e2c-06f4-41d5-b167-52525f4a9985
-title: E (Windows Installer)
+title: E (Windows installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a2c65c50427b1f8271be838971a387388ea53db
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: ee445b6ea36ad0c68042410e694c681f982b101757f3453ac9b39284df01f8c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118637616"
 ---
-# <a name="e-windows-installer"></a>E (Windows Installer)
+# <a name="e-windows-installer"></a>E (Windows installer)
 
 [A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) E [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L [M](m-gly.md) N [O](o-gly.md) [P Q](p-gly.md) [](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
@@ -20,7 +20,7 @@ ms.locfileid: "112011095"
 <span id="_msi_elevated_gly"></span><span id="_MSI_ELEVATED_GLY"></span>**Elevato**
 </dt> <dd>
 
-Le azioni eseguite con privilegi di sistema sono denominate con privilegi elevati.
+Le azioni eseguite con privilegi di sistema vengono chiamate con privilegi elevati.
 
 </dd> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-ausiliario-classi
-description: Questo attributo elenca le classi ausiliarie associate in modo dinamico a un oggetto. Questo attributo non è associato a una classe. Viene popolato automaticamente dal sistema.
+title: Attributo ms-DS-Auxiliary-Classes
+description: Questo attributo elenca le classi ausiliarie associate dinamicamente a un oggetto . Questo attributo non è associato a una classe. Viene popolata automaticamente dal sistema.
 ms.assetid: bf41f15d-9af9-43de-8425-33d50880c3fa
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-ausiliario-classi
-- msDS-ausiliari-classi-schema AD
+- Attributo ms-DS-Auxiliary-Classes schema DI AD
+- Attributo msDS-Auxiliary-Classes schema DI AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24608d0626ae4bcd6adb70a646d95121615c29e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e01c46041bb870841e6266078c078a4da8fc224b3e19495574921c8aa6b56d6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685686"
 ---
-# <a name="ms-ds-auxiliary-classes-attribute"></a>attributo ms-DS-ausiliario-classi
+# <a name="ms-ds-auxiliary-classes-attribute"></a>Attributo ms-DS-Auxiliary-Classes
 
-Questo attributo elenca le classi ausiliarie associate in modo dinamico a un oggetto. Questo attributo non è associato a una classe. Viene popolato automaticamente dal sistema.
+Questo attributo elenca le classi ausiliarie associate dinamicamente a un oggetto . Questo attributo non è associato a una classe. Viene popolata automaticamente dal sistema.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------------------------------|
-| CN                | ms-DS-ausiliario-classi                                         |
-| LDAP-Display-Name | msDS-ausiliari-classi                                          |
+| CN                | Ms-DS-Auxiliary-Classes                                         |
+| Ldap-Display-Name | MsDS-Auxiliary-Classes                                          |
 | Dimensione              | \-                                                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                                |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                                |
 | Frequenza di aggiornamento  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1458                                         |
-| System-ID-GUID    | c4af1073-ee50-4be0-b8c0-89a41fe99abe                            |
+| System-Id-Guid    | c4af1073-ee50-4be0-b8c0-89a41fe99abe                            |
 | Sintassi            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
@@ -43,7 +43,7 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo elenca le classi ausiliarie associate in modo dinamico a un ogg
 | ID collegamento                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Vero         |
-| È a valore singolo       | Falso        |
+| Is-Single-Valued       | Falso        |
 | Indicizzato             | Falso        |
 | Nel catalogo globale      | Falso        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S: |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
 | System-Flags           | 0x00000014   |
-| Classi utilizzate in        | \-           |
+| Classi usate in        | \-           |
 
 
 

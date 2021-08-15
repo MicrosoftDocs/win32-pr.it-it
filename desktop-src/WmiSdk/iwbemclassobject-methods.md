@@ -2,25 +2,25 @@
 description: L'interfaccia IWbemClassObject espone i metodi seguenti.
 ms.assetid: 20BF7775-89D9-4851-8561-EEBA398A0584
 ms.tgt_platform: multiple
-title: Metodi IWbemClassObject
+title: Metodi di IWbemClassObject
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 825b3f15f17dca6dd0871bbcae3f531a90c90f1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d11c1ec1a85567d942349d14bb86ef3030d05714b10a4645f4b5e8ae9e0a696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118818842"
 ---
-# <a name="iwbemclassobject-methods"></a>Metodi IWbemClassObject
+# <a name="iwbemclassobject-methods"></a>Metodi di IWbemClassObject
 
-L'interfaccia [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) espone i metodi seguenti.
+[**L'interfaccia IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 -   [**Metodo BeginEnumeration**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-beginenumeration)
 -   [**Metodo BeginMethodEnumeration**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-beginmethodenumeration)
--   [**Clone (metodo)**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-clone)
+-   [**Metodo Clone**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-clone)
 -   [**CompareTo (metodo)**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-compareto)
 -   [**Delete (metodo)**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-delete)
 -   [**Metodo DeleteMethod**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-deletemethod)
@@ -38,7 +38,7 @@ L'interfaccia [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwb
 -   [**Metodo InheritsFrom**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-inheritsfrom)
 -   [**Metodo Next**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-next)
 -   [**Metodo NextMethod**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-nextmethod)
--   [**Put (metodo)**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
+-   [**Metodo Put**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
 -   [**Metodo PutMethod**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-putmethod)
 -   [**Metodo SpawnDerivedClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawnderivedclass)
 -   [**Metodo SpawnInstance**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawninstance)

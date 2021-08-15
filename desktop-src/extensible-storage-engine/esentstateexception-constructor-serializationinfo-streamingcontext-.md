@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 458efcde030559122085824a99660c3d5d7fc4c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 935cf9cbe6120e305de3ed9578e607fb366d36b66d10ccbb33e17a3a2ce71153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118769664"
 ---
 # <a name="esentstateexception-constructor-serializationinfo-streamingcontext"></a>Costruttore EsentStateException (SerializationInfo, StreamingContext)
 
 Inizializza una nuova istanza della classe EsentStateException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,14 +59,14 @@ protected EsentStateException(
 #### <a name="parameters"></a>Parametri
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
     Dati necessari per deserializzare l'oggetto.
 
 <!-- end list -->
 
   - contesto  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contesto di deserializzazione.
 
@@ -78,6 +78,6 @@ protected EsentStateException(
 
 [Membri di EsentStateException](./esentstateexception-members.md)
 
-[Overload EsentStateException](./esentstateexception-constructor.md)
+[Overload di EsentStateException](./esentstateexception-constructor.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

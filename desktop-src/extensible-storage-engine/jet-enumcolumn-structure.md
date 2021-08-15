@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: struttura JET_ENUMCOLUMN'
+description: 'Altre informazioni su: JET_ENUMCOLUMN struttura'
 title: Struttura JET_ENUMCOLUMN
 TOCTitle: JET_ENUMCOLUMN Structure
 ms:assetid: f8f512fd-5fcf-47ed-a5db-2fb3bd76c2d7
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca204fef4e67e6883584511b1ac424149a137b79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ac89a45e37631b554fc7b2dc28266c95cfae3fba54debb427abfd8db621ea3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766089"
 ---
 # <a name="jet_enumcolumn-structure"></a>Struttura JET_ENUMCOLUMN
 
@@ -29,7 +29,7 @@ _**Si applica a:** Windows | Windows Server_
 
 ## <a name="jet_enumcolumn-structure"></a>Struttura JET_ENUMCOLUMN
 
-La struttura **JET_ENUMCOLUMN** enumera i valori di colonna di un record quando viene utilizzata la funzione [JetEnumerateColumns](./jetenumeratecolumns-function.md) . [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice di strutture di **JET_ENUMCOLUMN** . La matrice viene restituita nella memoria allocata usando il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a tale API.
+La **JET_ENUMCOLUMN** enumera i valori di colonna di un record quando viene usata la [funzione JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) restituisce una matrice **di JET_ENUMCOLUMN** struttura . La matrice viene restituita in memoria allocata usando il callback compatibile con [la rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a tale API.
 
 ```cpp
     typedef struct {
@@ -50,13 +50,13 @@ La struttura **JET_ENUMCOLUMN** enumera i valori di colonna di un record quando 
 
 ### <a name="members"></a>Membri
 
-**ColumnID**
+**columnid**
 
 ID di colonna enumerato.
 
 **Err**
 
-Codice di stato della colonna risultante dall'enumerazione della colonna.
+Codice di stato della colonna che risulta dall'enumerazione della colonna.
 
 <table>
 <colgroup>
@@ -72,7 +72,7 @@ Codice di stato della colonna risultante dall'enumerazione della colonna.
 <tbody>
 <tr class="odd">
 <td><p>JET_errBadColumnId</p></td>
-<td><p>L'ID di colonna non rientra nei limiti validi di un ID di colonna.</p></td>
+<td><p>L'ID di colonna non rientra nei limiti legali di un ID di colonna.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errColumnNotFound</p></td>
@@ -84,15 +84,15 @@ Codice di stato della colonna risultante dall'enumerazione della colonna.
 </tr>
 <tr class="even">
 <td><p>JET_wrnColumnPresent</p></td>
-<td><p>È stato specificato JET_bitEnumeratePresenceOnly e per questa colonna è stato restituito almeno un valore di colonna non NULL.</p></td>
+<td><p>JET_bitEnumeratePresenceOnly è stato specificato e per questa colonna sarebbe stato restituito almeno un valore di colonna non NULL.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_wrnColumnSingleValue</p></td>
-<td><p>JET_bitEnumerateCompressOutput è stato specificato ed è stato restituito esattamente un valore di colonna non NULL per questa colonna. Di conseguenza, viene restituito il formato compresso di <strong>JET_ENUMCOLUMN</strong> . Per ulteriori informazioni, vedere <strong>JET_ENUMCOLUMN</strong> .</p></td>
+<td><p>JET_bitEnumerateCompressOutput è stato specificato e per questa colonna è stato restituito esattamente un valore di colonna diverso da NULL. Di conseguenza, è stato <strong></strong> restituito il formato JET_ENUMCOLUMN compresso. Vedere <strong>JET_ENUMCOLUMN</strong> per altre informazioni.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_wrnColumnSkipped</p></td>
-<td><p>L'ID di colonna nello struct <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> corrispondente a questo struct di <strong>JET_ENUMCOLUMN</strong> è zero.</p></td>
+<td><p>L'ID di colonna <a href="gg269251(v=exchg.10).md">nello struct JET_ENUMCOLUMNID</a> corrispondente a questo <strong>JET_ENUMCOLUMN</strong> struct è zero.</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,39 +100,39 @@ Codice di stato della colonna risultante dall'enumerazione della colonna.
 
 **cEnumColumnValue**
 
-Matrice di valori di colonna enumerata per la colonna. Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Matrice di valori di colonna enumerata per la colonna. Il buffer di output viene restituito in memoria allocata utilizzando il callback compatibile con [la rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Questo buffer di output viene utilizzato quando il codice di stato della colonna non è uguale a JET_wrnColumnSingleValue. Per ulteriori informazioni, vedere [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Questo buffer di output viene usato quando il codice di stato della colonna non è uguale JET_wrnColumnSingleValue. Per altre informazioni, vedere [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Viene restituito se "ERR \! = JET_wrnColumnSingleValue".
+Viene restituito se "err \! = JET_wrnColumnSingleValue".
 
 **rgEnumColumnValue**
 
-Matrice di valori di colonna enumerata per la colonna. Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Matrice di valori di colonna enumerata per la colonna. Il buffer di output viene restituito in memoria allocata utilizzando il callback compatibile con [la rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Questo buffer di output viene utilizzato quando il codice di stato della colonna non è uguale a JET_wrnColumnSingleValue. Per ulteriori informazioni, vedere [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Questo buffer di output viene usato quando il codice di stato della colonna non è uguale JET_wrnColumnSingleValue. Per altre informazioni, vedere [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Viene restituito se "ERR \! = JET_wrnColumnSingleValue".
+Viene restituito se "err \! = JET_wrnColumnSingleValue".
 
 **cbData**
 
-Valore di colonna enumerato per la colonna.
+Valore della colonna enumerato per la colonna.
 
-Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Il buffer di output viene restituito in memoria allocata utilizzando il callback compatibile con [la rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Questo buffer di output viene utilizzato solo quando il codice di stato della colonna viene JET_wrnColumnSingleValue. Per ulteriori informazioni, vedere [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Questo buffer di output viene usato solo quando il codice di stato della colonna è JET_wrnColumnSingleValue. Per altre informazioni, vedere [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Viene restituito se "Err = = JET_wrnColumnSingleValue".
+Viene restituito se "err == JET_wrnColumnSingleValue".
 
 **pvData**
 
-Valore di colonna enumerato per la colonna.
+Valore della colonna enumerato per la colonna.
 
-Il buffer di output viene restituito nella memoria allocata mediante il callback compatibile con [realloc](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Il buffer di output viene restituito in memoria allocata utilizzando il callback compatibile con [la rialloca](/cpp/c-runtime-library/reference/realloc?view=vs-2019) fornito a [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Questo buffer di output viene utilizzato solo quando il codice di stato della colonna viene JET_wrnColumnSingleValue. Per ulteriori informazioni, vedere [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Questo buffer di output viene usato solo quando il codice di stato della colonna è JET_wrnColumnSingleValue. Per altre informazioni, vedere [JetEnumerateColumns.](./jetenumeratecolumns-function.md)
 
-Viene restituito se "Err = = JET_wrnColumnSingleValue".
+Viene restituito se "err == JET_wrnColumnSingleValue".
 
 ### <a name="requirements"></a>Requisiti
 
@@ -152,7 +152,7 @@ Viene restituito se "Err = = JET_wrnColumnSingleValue".
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

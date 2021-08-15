@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_ENUMCOLUMN. cbData'
-title: Proprietà JET_ENUMCOLUMN. cbData
+description: 'Altre informazioni su: JET_ENUMCOLUMN.cbData'
+title: JET_ENUMCOLUMN.cbData
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.cbdata(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b38d6c8433cc9792ebdd7e04e72027c6e1477e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8a1674c4b4c47d6f6a1fa07b06806cd5202db95eb789e499485936ba438dcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766007"
 ---
-# <a name="jet_enumcolumncbdata-property"></a>Proprietà JET_ENUMCOLUMN. cbData
+# <a name="jet_enumcolumncbdata-property"></a>JET_ENUMCOLUMN.cbData
 
-Ottiene la dimensione del valore enumerato per la colonna. Questo membro viene utilizzato solo se [Err](./jet-enumcolumn.err-property.md) è uguale a [ColumnSingleValue](./jet-wrn-enumeration.md).
+Ottiene le dimensioni del valore enumerato per la colonna. Questo membro viene usato solo se [err](./jet-enumcolumn.err-property.md) è uguale a [ColumnSingleValue](./jet-wrn-enumeration.md).
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public int cbData { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_ENUMCOLUMN](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN classe](./jet-enumcolumn-class.md)
 
-[Membri JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN membri](./jet-enumcolumn-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

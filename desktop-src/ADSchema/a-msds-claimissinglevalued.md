@@ -1,11 +1,11 @@
 ---
-title: ms-DS-Claim-is-attributo a valore singolo
-description: Per un oggetto tipo di attestazione, questo attributo identifica se il tipo di attestazione o la proprietà della risorsa può contenere solo un valore singolo.
+title: Attributo ms-DS-Claim-Is-Single-Valued
+description: Per un oggetto tipo di attestazione, questo attributo identifica se il tipo di attestazione o la proprietà della risorsa può contenere un solo valore.
 ms.assetid: e4b42a41-6275-4575-88a4-77c3bbcfc161
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Claim-is-schema AD attributo a valore singolo
-- attributo msDS-ClaimIsSingleValued-schema AD
+- Ms-DS-Claim-Is-Single-Valued attribute AD Schema
+- Schema AD dell'attributo msDS-ClaimIsSingleValued
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0739c8e1984ab6740bbc332e204762ed32674bc4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f4e954af1b1800270a35b26c434fb7bced23de9f45ad2f81d97ee032e2d101b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685138"
 ---
-# <a name="ms-ds-claim-is-single-valued-attribute"></a>ms-DS-Claim-is-attributo a valore singolo
+# <a name="ms-ds-claim-is-single-valued-attribute"></a>Attributo ms-DS-Claim-Is-Single-Valued
 
-Per un oggetto tipo di attestazione, questo attributo identifica se il tipo di attestazione o la proprietà della risorsa può contenere solo un valore singolo.
+Per un oggetto tipo di attestazione, questo attributo identifica se il tipo di attestazione o la proprietà della risorsa può contenere un solo valore.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-Claim-is-a valore singolo         |
-| LDAP-Display-Name | msDS-ClaimIsSingleValued             |
+| CN                | ms-DS-Claim-Is-Single-Valued         |
+| Ldap-Display-Name | msDS-ClaimIsSingleValued             |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2160              |
-| System-ID-GUID    | cd789fb9-96b4-4648-8219-ca378161af38 |
+| System-Id-Guid    | cd789fb9-96b4-4648-8219-ca378161af38 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -53,15 +53,15 @@ Per un oggetto tipo di attestazione, questo attributo identifica se il tipo di a
 | ID collegamento                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Vero                                                                                                            |
-| È a valore singolo       | Vero                                                                                                            |
+| A valore singolo       | Vero                                                                                                            |
 | Indicizzato             | Falso                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classi utilizzate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> [**ms-DS-valore-tipo**](c-msds-valuetype.md)<br/> |
+| Classi usate in        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> [**Ms-DS-Value-Type**](c-msds-valuetype.md)<br/> |
 
 
 

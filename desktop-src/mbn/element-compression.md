@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 64a5387aafdce7042c46f48fcda18454a3d99f3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7782052ef467725a099929e8940262d1f08329431f68525b8c401f36a276ebcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104343366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745110"
 ---
 # <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compressione (v4)
 
 Specifica se la compressione verrà utilizzata nel collegamento dati per l'intestazione e il trasferimento dei dati.
 
-Per ulteriori informazioni, vedere la documentazione relativa all'elemento [**Compression**](./schema-compression-contexttype-element.md) V1.
+Per altre informazioni, vedere la documentazione relativa all'elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Gerarchia degli elementi
 
@@ -53,11 +53,11 @@ Per ulteriori informazioni, vedere la documentazione relativa all'elemento [**Co
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Attributi
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementi figlio
 
-Nessuna.
+Nessuno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementi padre
 

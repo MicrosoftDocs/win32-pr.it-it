@@ -1,19 +1,19 @@
 ---
-description: Frequenza massima dei fotogrammi supportata da un dispositivo di acquisizione video, in frame al secondo.
+description: Frequenza massima dei fotogrammi supportata da un dispositivo di acquisizione video, in fotogrammi al secondo.
 ms.assetid: 8e0c4996-9f78-424e-b012-502228b6a27a
-title: Attributo MF_MT_FRAME_RATE_RANGE_MAX (Mfapi. h)
+title: MF_MT_FRAME_RATE_RANGE_MAX attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62399445cd31c7820ea9de7082fce71febbf3ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5988a6aee872489327707c7e87639f7467560014c5bdd29bc9b0bd9a136ccbac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742043"
 ---
-# <a name="mf_mt_frame_rate_range_max-attribute"></a>\_ \_ \_ \_ Attributo max frequenza frame frequenza MF mt \_
+# <a name="mf_mt_frame_rate_range_max-attribute"></a>Attributo \_ MF MT \_ FRAME \_ RATE RANGE \_ \_ MAX
 
-Frequenza massima dei fotogrammi supportata da un dispositivo di acquisizione video, in frame al secondo.
+Frequenza massima dei fotogrammi supportata da un dispositivo di acquisizione video, in fotogrammi al secondo.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,19 +21,19 @@ Frequenza massima dei fotogrammi supportata da un dispositivo di acquisizione vi
 
 ## <a name="getset"></a>Ottenere/impostare
 
-Per ottenere questo attributo, chiamare [**MFGetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio).
+Per ottenere questo attributo, chiamare [**MFGetAttributeRatio.**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributeratio)
 
-Per impostare questo attributo, chiamare [**MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).
+Per impostare questo attributo, chiamare [**MFSetAttributeRatio.**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio)
 
 ## <a name="remarks"></a>Commenti
 
-La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del valore dell'attributo contengono il numeratore e i 32 bit inferiori contengono il denominatore. Se, ad esempio, la frequenza dei fotogrammi è di 30 fotogrammi al secondo (fps), il rapporto è 30/1.
+La frequenza dei fotogrammi è espressa come rapporto. I 32 bit superiori del valore dell'attributo contengono il numeratore e i 32 bit inferiori contengono il denominatore. Ad esempio, se la frequenza dei fotogrammi è di 30 fotogrammi al secondo (fps), il rapporto è 30/1.
 
-Se il dispositivo di acquisizione indica una frequenza massima dei fotogrammi, l'origine del supporto imposta questo attributo sul tipo di supporto. La frequenza minima dei fotogrammi viene specificata nell'attributo dell' [ \_ intervallo di \_ \_ frequenza \_ \_ dei fotogrammi MF mt](mf-mt-frame-rate-range-min.md) . Non è garantito che il dispositivo supporti ogni incremento entro questo intervallo.
+Se il dispositivo di acquisizione segnala una frequenza massima dei fotogrammi, l'origine multimediale imposta questo attributo sul tipo di supporto. La frequenza dei fotogrammi minima è specificata [nell'attributo \_ MF MT \_ FRAME RATE \_ RANGE \_ \_ MIN.](mf-mt-frame-rate-range-min.md) Non è garantito che il dispositivo supporti ogni incremento all'interno di questo intervallo.
 
-Per impostare la frequenza dei fotogrammi del dispositivo, modificare prima di tutto il valore dell'attributo [**MF \_ mt \_ frame \_ rate**](mf-mt-frame-rate-attribute.md) nel tipo di supporto. Impostare quindi il tipo di supporto nell'origine supporto.
+Per impostare la frequenza dei fotogrammi del dispositivo, modificare prima di tutto il valore dell'attributo [**\_ MF MT \_ FRAME \_ RATE**](mf-mt-frame-rate-attribute.md) nel tipo di supporto. Impostare quindi il tipo di supporto nell'origine multimediale.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,9 +41,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App desktop di Windows Server 2008 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/>                                  |
+| Server minimo supportato<br/> | Windows App desktop di Server 2008 R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Come impostare la frequenza dei fotogrammi di acquisizione video](how-to-set-the-video-capture-frame-rate.md)
@@ -63,7 +63,7 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 [Acquisizione video](video-capture.md)
 </dt> <dt>
 
-[\_intervallo di \_ \_ frequenza frame \_ MF \_ mt](mf-mt-frame-rate-range-min.md)
+[MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MIN](mf-mt-frame-rate-range-min.md)
 </dt> </dl>
 
  

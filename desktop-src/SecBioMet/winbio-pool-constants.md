@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_POOL (tipi WinBio \_ . h)
-description: Consente di specificare il tipo di pool di unità biometriche da usare nella sessione.
+title: WINBIO_POOL costanti (Winbio \_ types.h)
+description: Specificare il tipo di pool di unità biometriche da usare nella sessione.
 ms.assetid: e6e49b95-981a-477d-9889-ea132db5b387
 topic_type:
 - apiref
@@ -15,25 +15,25 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7af1ec8d5692a390bb91ecb63736bd94efb2e85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fefc43bb9dc4cefbde1ce5622853a3ba2cfae498ff2f8f81e97417e306641db9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104519024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909798"
 ---
-# <a name="winbio_pool-constants"></a>\_Costanti pool WINBIO
+# <a name="winbio_pool-constants"></a>Costanti POOL WINBIO \_
 
-Nella funzione [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) è possibile usare le costanti seguenti per specificare il tipo di pool di unità biometriche da usare nella sessione.
+Le costanti seguenti possono essere usate nella funzione [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-winbioopensession) per specificare il tipo di pool di unità biometriche da usare nella sessione.
 
 
 
 | Costante                                                                                                                                                                                  | Descrizione                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| <span id="WINBIO_POOL_UNKNOWN"></span><span id="winbio_pool_unknown"></span><dl> <dt>**\_pool WINBIO \_ sconosciuto**</dt> </dl>          | Il tipo di pool è sconosciuto.<br/>                                                         |
-| <span id="WINBIO_POOL_SYSTEM"></span><span id="winbio_pool_system"></span><dl> <dt>**\_sistema pool \_ WINBIO**</dt> </dl>             | Specifica una raccolta condivisa di unità biometriche gestite dal provider di servizi.<br/> |
-| <span id="WINBIO_POOL_PRIVATE"></span><span id="winbio_pool_private"></span><dl> <dt>**\_pool WINBIO \_ privato**</dt> </dl>          | Specifica una raccolta di unità biometriche gestite dal chiamante.<br/>         |
-| <span id="WINBIO_POOL_UNASSIGNED"></span><span id="winbio_pool_unassigned"></span><dl> <dt>**POOL WINBIO non \_ \_ assegnato**</dt> </dl> | Riservato.<br/>                                                                         |
+| <span id="WINBIO_POOL_UNKNOWN"></span><span id="winbio_pool_unknown"></span><dl> <dt>**POOL WINBIO \_ \_ SCONOSCIUTO**</dt> </dl>          | Il tipo di pool è sconosciuto.<br/>                                                         |
+| <span id="WINBIO_POOL_SYSTEM"></span><span id="winbio_pool_system"></span><dl> <dt>**SISTEMA POOL \_ WINBIO \_**</dt> </dl>             | Specifica una raccolta condivisa di unità biometriche gestite dal provider di servizi.<br/> |
+| <span id="WINBIO_POOL_PRIVATE"></span><span id="winbio_pool_private"></span><dl> <dt>**POOL WINBIO \_ \_ PRIVATO**</dt> </dl>          | Specifica una raccolta di unità biometriche gestite dal chiamante.<br/>         |
+| <span id="WINBIO_POOL_UNASSIGNED"></span><span id="winbio_pool_unassigned"></span><dl> <dt>**POOL WINBIO \_ \_ NON ASSEGNATO**</dt> </dl> | Riservato.<br/>                                                                         |
 
 
 
@@ -43,9 +43,9 @@ Nella funzione [**WinBioOpenSession**](/windows/desktop/api/Winbio/nf-winbio-win
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

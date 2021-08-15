@@ -1,48 +1,48 @@
 ---
-description: Il metodo consigliato per la generazione di un pacchetto di patch consiste nell'usare strumenti per la creazione di patch, ad esempio Msimsp.exe e Patchwiz.dll. Lo strumento Msimsp.exe è disponibile solo nei componenti Windows SDK per Windows Installer sviluppatori.
+description: Il metodo consigliato per la generazione di un pacchetto di patch è l'uso di strumenti per la creazione di patch, ad esempio Msimsp.exe e Patchwiz.dll. Lo Msimsp.exe di installazione è disponibile solo in Windows SDK Components for Windows Installer Developers.
 ms.assetid: fa8e9d68-3db1-4d17-aa99-2ca0ed421c7a
 title: Msimsp.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1810fd0c544695742273bbb0e63b22138529c129
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: aa82f2fbefc9046877f4f98cf4a3c126d94e6542b60076f0491bd0f311ee00a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106320937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627798"
 ---
 # <a name="msimspexe"></a>Msimsp.exe
 
-Il metodo consigliato per la generazione di un pacchetto di patch consiste nell'usare strumenti per la creazione di patch, ad esempio Msimsp.exe e [Patchwiz.dll](patchwiz-dll.md). Lo strumento Msimsp.exe è disponibile solo nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md).
+Il metodo consigliato per la generazione di un pacchetto di patch è l'uso di strumenti per la creazione di patch come Msimsp.exe e [Patchwiz.dll](patchwiz-dll.md). Lo Msimsp.exe è disponibile solo in componenti sdk di [Windows per Windows Programma di installazione .](platform-sdk-components-for-windows-installer-developers.md)
 
-Msimsp.exe è un file eseguibile che chiama [Patchwiz.dll](patchwiz-dll.md). Lo strumento può essere usato per creare un pacchetto di patch passando il percorso di un file delle proprietà di creazione della patch (file con estensione PCP) e il percorso del pacchetto di patch in fase di creazione. Msimsp. es può inoltre essere utilizzato per creare un file di log e per specificare una cartella temporanea in cui vengono salvati le trasformazioni, i file CAB e i file utilizzati per creare il pacchetto di patch.
+Msimsp.exe è un file eseguibile che chiama [Patchwiz.dll](patchwiz-dll.md). Lo strumento può essere usato per creare un pacchetto di patch passando il percorso di un file delle proprietà di creazione della patch (file con estensione pcp) e il percorso del pacchetto di patch in fase di creazione. Msimsp.ex può essere usato anche per creare un file di log e per specificare una cartella temporanea in cui vengono salvate le trasformazioni, i file CAB e i file usati per creare il pacchetto patch.
 
-La sintassi della riga di comando per Msimsp.exe è:
+La sintassi della riga di comando per Msimsp.exe è la seguente:
 
-Percorso **Msimsp.exe-s del** *\[ file \] . PCP* **-p** *\[ percorso del file \] con estensione msp* **{options}**
+**Msimsp.exe -s** *\[ percorso del file \] con estensione pcp* **-p** percorso del file *\[ \] msp* **{opzioni}**
 
-Le opzioni della riga di comando non fanno distinzione tra maiuscole e minuscole e i delimitatori barra possono essere utilizzati al posto di un trattino. Se non viene specificata alcuna opzione, Msimsp.exe Visualizza i valori correnti delle proprietà delle informazioni di riepilogo.
+Le opzioni della riga di comando non supportano la distinzione tra maiuscole e minuscole ed è possibile usare delimitatori barra anziché un trattino. Se non viene specificata alcuna opzione, Msimsp.exe visualizza i valori correnti delle proprietà informazioni di riepilogo.
 
 <dl> <dt>
 
-<span id="-s_path_to_.pcp_file_"></span><span id="-S_PATH_TO_.PCP_FILE_"></span>**-s**_\[ percorso del file \] . PCP_
+<span id="-s_path_to_.pcp_file_"></span><span id="-S_PATH_TO_.PCP_FILE_"></span>**-s**_\[ percorso del file \] con estensione pcp_
 </dt> <dd>
 
-Questa operazione è obbligatoria e deve essere seguita dal percorso del file delle proprietà di creazione della patch (estensione PCP). Per ulteriori informazioni, vedere [PatchWiz.dll](patchwiz-dll.md).
+Questa operazione è obbligatoria e deve essere seguita dal percorso del file delle proprietà di creazione della patch (estensione pcp). Per altre informazioni, vedere [PatchWiz.dll](patchwiz-dll.md).
 
 </dd> <dt>
 
-<span id="-ppath_to_.msp_file"></span><span id="-PPATH_TO_.MSP_FILE"></span>**-p**_percorso del file con estensione msp_
+<span id="-ppath_to_.msp_file"></span><span id="-PPATH_TO_.MSP_FILE"></span>**-p**_percorso del file msp_
 </dt> <dd>
 
-Questa operazione è obbligatoria e seguita dal percorso del pacchetto di patch creato (estensione msp).
+Questa operazione è necessaria e seguita dal percorso del pacchetto di patch che viene creato (estensione msp).
 
 </dd> <dt>
 
-<span id="-fpath_to_temporary_folder"></span><span id="-FPATH_TO_TEMPORARY_FOLDER"></span>**-f**_percorso alla cartella temporanea_
+<span id="-fpath_to_temporary_folder"></span><span id="-FPATH_TO_TEMPORARY_FOLDER"></span>**-f**_percorso della cartella temporanea_
 </dt> <dd>
 
-facoltativo. Seguito dal percorso alla cartella temporanea. Il percorso predefinito è% TMP% \\ ~ PCW \_ tmp. tmp \\ .
+facoltativo. Seguito dal percorso della cartella temporanea. Il percorso predefinito è %TMP% \\ ~pcw \_ tmp.tmp \\ .
 
 </dd> <dt>
 
@@ -56,14 +56,14 @@ facoltativo. Esito negativo se la cartella temporanea esiste già.
 <span id="-lpath_to_log_file"></span><span id="-LPATH_TO_LOG_FILE"></span>**-l**_percorso del file di log_
 </dt> <dd>
 
-facoltativo. Seguito dal percorso del file di log che descrive il processo di creazione della patch ed errori. Per ulteriori informazioni, vedere [valori restituiti per UiCreatePatchPackage](return-values-for-uicreatepatchpackage.md).
+facoltativo. Seguito dal percorso del file di log che descrive il processo di creazione della patch e gli errori. Per altre informazioni, vedere [Valori restituiti per UiCreatePatchPackage.](return-values-for-uicreatepatchpackage.md)
 
 </dd> <dt>
 
-<span id="-lppath_to_log_file_with_performance_data"></span><span id="-LPPATH_TO_LOG_FILE_WITH_PERFORMANCE_DATA"></span>**-LP**_percorso del file di log con dati sulle prestazioni_
+<span id="-lppath_to_log_file_with_performance_data"></span><span id="-LPPATH_TO_LOG_FILE_WITH_PERFORMANCE_DATA"></span>**-lp**_percorso del file di log con dati sulle prestazioni_
 </dt> <dd>
 
-facoltativo. Seguito dal percorso del file di log che descrive il processo di creazione della patch ed errori. Questa opzione scrive i dati sulle prestazioni in un file di log. Questa opzione richiede la versione 4,0 di Patchwiz.dll.
+facoltativo. Seguito dal percorso del file di log che descrive il processo di creazione della patch e gli errori. Questa opzione scrive i dati sulle prestazioni nel file di log. Questa opzione richiede la versione 4.0 di Patchwiz.dll.
 
 </dd> <dt>
 
@@ -77,14 +77,14 @@ facoltativo. Visualizza una finestra di dialogo se la creazione della patch vien
 <span id="-_"></span>**-?**
 </dt> <dd>
 
-Visualizza la guida della riga di comando.
+Visualizza la Guida della riga di comando.
 
 </dd> </dl>
 
 > [!Note]
-> Msimsp.exe possono avere esito negativo quando chiama Makecab.exe se nella colonna file della [tabella di file](file-table.md) del pacchetto di installazione sono presenti valori che differiscono solo per le maiuscole/minuscole. Windows Installer fa distinzione tra maiuscole e minuscole e consente un pacchetto di installazione, ad esempio nella tabella seguente, solo quando comp1 e comp2 sono installati in directory diverse. Tuttavia, in questo scenario non è possibile utilizzare Msimsp.exe o [Patchwiz.dll](patchwiz-dll.md) per generare una patch per il pacchetto, poiché Msimsp.exe e Patchwiz.dll chiamare Makecab.exe, che non fa distinzione tra maiuscole e minuscole.
+> Msimsp.exe può avere esito negativo quando chiama Makecab.exe se nella colonna File della tabella [File](file-table.md) del pacchetto di installazione sono presenti valori che differiscono solo in base alla distinzione tra maiuscole e minuscole. Windows Il programma di installazione fa distinzione tra maiuscole e minuscole e consente un pacchetto di installazione come nella tabella seguente solo quando Comp1 e Comp2 sono installati in directory diverse. Tuttavia, in questo scenario non è possibile usare Msimsp.exe o [Patchwiz.dll](patchwiz-dll.md) per generare una patch per il pacchetto, perché Msimsp.exe e Patchwiz.dll chiamano Makecab.exe, senza distinzione tra maiuscole e minuscole.
 > 
-> Evitare di creare un pacchetto di installazione come la seguente [tabella file](file-table.md)parziale.
+> Evitare di creare un pacchetto di installazione, ad esempio la tabella [file parziale seguente.](file-table.md)
 > 
 > | File       | Componente\_ | FileName   |
 > |------------|-------------|------------|
@@ -96,13 +96,13 @@ Visualizza la guida della riga di comando.
 
 <dl> <dt>
 
-[Creazione di un pacchetto di patch](creating-a-patch-package.md)
+[Creazione di un pacchetto patch](creating-a-patch-package.md)
 </dt> <dt>
 
-[Un piccolo esempio di patch di aggiornamento](a-small-update-patching-example.md)
+[Esempio di applicazione di patch per gli aggiornamenti di piccole dimensioni](a-small-update-patching-example.md)
 </dt> <dt>
 
-[Strumenti di sviluppo Windows Installer](windows-installer-development-tools.md)
+[Windows Strumenti di sviluppo del programma di installazione](windows-installer-development-tools.md)
 </dt> <dt>
 
 [Versioni rilasciate, strumenti e ridistribuibili](released-versions-tools-and-redistributables.md)

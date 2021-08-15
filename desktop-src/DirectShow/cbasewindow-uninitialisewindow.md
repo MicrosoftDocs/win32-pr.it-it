@@ -1,7 +1,7 @@
 ---
 description: Il metodo UninitialiseWindow rilascia le risorse della finestra.
 ms.assetid: 8c5bb0c1-1d92-4025-bbbd-1e57ddde4456
-title: Metodo CBaseWindow. UninitialiseWindow (Winutil. h)
+title: Metodo CBaseWindow.UninitialiseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ceeadd0ec7a61422f0127c957125caa9a01dcefb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c275e4d683bcc698c8f04c5a85017b081b6aad17f93c91d66e0a75f2da88692e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657493"
 ---
-# <a name="cbasewindowuninitialisewindow-method"></a>CBaseWindow. UninitialiseWindow, metodo
+# <a name="cbasewindowuninitialisewindow-method"></a>Metodo CBaseWindow.UninitialiseWindow
 
 Il `UninitialiseWindow` metodo rilascia le risorse della finestra.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo libera le risorse acquisite dal metodo [**CBaseWindow:: InitialiseWindow**](cbasewindow-initialisewindow.md) . Il metodo [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) chiama questo metodo.
+Questo metodo libera le risorse acquisite dal metodo [**CBaseWindow::InitialiseWindow.**](cbasewindow-initialisewindow.md) Il [**metodo CBaseWindow::D oneWithWindow**](cbasewindow-donewithwindow.md) chiama questo metodo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questo metodo libera le risorse acquisite dal metodo [**CBaseWindow:: Initialise
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

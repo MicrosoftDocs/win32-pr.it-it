@@ -1,17 +1,17 @@
 ---
 description: Stringa che indica lo stato di accesso dell'utente di un'identità.
 ms.assetid: 8B12E452-790D-4924-98E7-9368CC525674
-title: System. Identity. LogonStatusString
+title: System.Identity.LogonStatusString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d96439afc20a97c4834aa168e0d33699605998c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74a431148c18eefa54cf5cef7fdd23919c3be6d999e88cd0974694a05db44307
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726735"
 ---
-# <a name="systemidentitylogonstatusstring"></a>System. Identity. LogonStatusString
+# <a name="systemidentitylogonstatusstring"></a>System.Identity.LogonStatusString
 
 Stringa che indica lo stato di accesso dell'utente di un'identità.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso RenderingInfoType
-description: Definisce i messaggi di cui è stato eseguito il rendering per l'evento.
+description: Definisce i messaggi sottoposti a rendering per l'evento.
 ms.assetid: 85a4cfc6-6277-4af8-af4e-cae3bd3aac13
 keywords:
-- Log eventi di tipo complesso RenderingInfoType
+- EventLog di tipo complesso RenderingInfoType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d0e4224ec9b90e84cbacbf5ede852763edd8e4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d4a70c8bc97abc3dea7cd04e9ce491b64cb62dcc892fcde318d69dcdc996e2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588464"
 ---
 # <a name="renderinginfotype-complex-type"></a>Tipo complesso RenderingInfoType
 
-Definisce i messaggi di cui è stato eseguito il rendering per l'evento.
+Definisce i messaggi sottoposti a rendering per l'evento.
 
 ``` syntax
 <xs:complexType name="RenderingInfoType">
@@ -87,14 +87,14 @@ Definisce i messaggi di cui è stato eseguito il rendering per l'evento.
 
 | Elemento                                                             | Tipo   | Descrizione                                                                   |
 |---------------------------------------------------------------------|--------|-------------------------------------------------------------------------------|
-| [**Channel**](eventschema-task-renderingtype-element.md)           | string | Stringa del messaggio di cui è stato eseguito il rendering del canale specificato nell'evento.<br/> |
-| [**Parola chiave**](eventschema-keyword-keywords-element.md)             | string | Stringa del messaggio di cui è stato eseguito il rendering di una parola chiave specificata nell'evento.<br/>   |
-| [**Parole chiave**](eventschema-keywords-renderingtype-element.md)      |        | Elenco di parole chiave sottoposte a rendering.<br/>                                       |
-| [**Livello**](eventschema-level-renderingtype-element.md)            | string | Stringa del messaggio di cui è stato eseguito il rendering del livello specificato nell'evento.<br/>   |
-| [**Messaggio**](eventschema-message-renderingtype-element.md)        | string | Stringa del messaggio di cui è stato eseguito il rendering dell'evento.<br/>                          |
-| [**Opcode**](eventschema-opcode-renderingtype-element.md)          | string | Stringa del messaggio di cui è stato eseguito il rendering del codice operativo specificato nell'evento.<br/>  |
-| [**Provider**](eventschema-publisher-renderinginfotype-element.md) | string | Stringa di messaggio di cui è stato eseguito il rendering per il provider.<br/>                      |
-| [**Attività**](eventschema-task-renderingtype-element.md)              | string | Stringa del messaggio di cui è stato eseguito il rendering dell'attività specificata nell'evento.<br/>    |
+| [**Channel**](eventschema-task-renderingtype-element.md)           | string | Stringa di messaggio sottoposta a rendering del canale specificato nell'evento.<br/> |
+| [**Parola chiave**](eventschema-keyword-keywords-element.md)             | string | Stringa di messaggio sottoposta a rendering di una parola chiave specificata nell'evento.<br/>   |
+| [**Parole chiavi**](eventschema-keywords-renderingtype-element.md)      |        | Elenco di parole chiave sottoposte a rendering.<br/>                                       |
+| [**Livello**](eventschema-level-renderingtype-element.md)            | string | Stringa di messaggio sottoposta a rendering del livello specificato nell'evento.<br/>   |
+| [**Messaggio**](eventschema-message-renderingtype-element.md)        | string | Stringa di messaggio sottoposta a rendering dell'evento.<br/>                          |
+| [**Opcode**](eventschema-opcode-renderingtype-element.md)          | string | Stringa di messaggio sottoposta a rendering del codice operativo specificato nell'evento .<br/>  |
+| [**Provider**](eventschema-publisher-renderinginfotype-element.md) | string | Stringa di messaggio sottoposta a rendering per il provider.<br/>                      |
+| [**Attività**](eventschema-task-renderingtype-element.md)              | string | Stringa di messaggio sottoposta a rendering dell'attività specificata nell'evento .<br/>    |
 
 
 
@@ -104,13 +104,13 @@ Definisce i messaggi di cui è stato eseguito il rendering per l'evento.
 
 | Nome    | Tipo     | Descrizione                                                                                                      |
 |---------|----------|------------------------------------------------------------------------------------------------------------------|
-| culture | Linguaggio | Nome della lingua (ad esempio, en-US) che identifica le impostazioni locali utilizzate per il rendering delle stringhe di messaggio.<br/> |
+| culture | Linguaggio | Nome della lingua, ad esempio en-US, che identifica le impostazioni locali usate per il rendering delle stringhe di messaggio.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Questa sezione contiene solo gli eventi che sono stati raccolti tramite il servizio [raccolta eventi di Windows](/windows/desktop/WEC/windows-event-collector) .
+Questa sezione contiene solo gli eventi raccolti [usando Windows agente](/windows/desktop/WEC/windows-event-collector) di raccolta eventi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -118,8 +118,8 @@ Questa sezione contiene solo gli eventi che sono stati raccolti tramite il servi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

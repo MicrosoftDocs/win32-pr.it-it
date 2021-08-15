@@ -1,7 +1,7 @@
 ---
-description: Applica le grondature a un buffer di trama FLOAT.
+description: Applica le grondaie a un buffer di trama FLOAT.
 ms.assetid: 822483d7-ae62-498a-bce7-3a925ab21c04
-title: 'Metodo ID3DXTextureGutterHelper:: ApplyGuttersFloat (D3DX9Mesh. h)'
+title: Metodo ID3DXTextureGutterHelper::ApplyGuttersFloat (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 00ee6eac7328ee5f6adceb5b3966c222509237b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6c0401a6d0692331adf9e80c800530690e59eeec5e6a9463b57425af1a3f9330
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118800364"
 ---
-# <a name="id3dxtexturegutterhelperapplyguttersfloat-method"></a>Metodo ID3DXTextureGutterHelper:: ApplyGuttersFloat
+# <a name="id3dxtexturegutterhelperapplyguttersfloat-method"></a>Metodo ID3DXTextureGutterHelper::ApplyGuttersFloat
 
-Applica le grondature a un buffer di trama FLOAT.
+Applica le grondaie a un buffer di trama FLOAT.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT ApplyGuttersFloat(
 
 <dl> <dt>
 
-*pDataIn* \[ in\]
+*pDataIn* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntatore a un buffer di dati di trama FLOAT.
 
 </dd> <dt>
 
-*NumCoeffs* \[ in\]
+*NumCoeff* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Numero di scalari per canale di colore utilizzato in memoria per archiviare esempi. Ogni Texel contiene valori FLOAT NumCoeffs.
+Numero di scalari per canale di colore usati in memoria per archiviare gli esempi. Ogni texel contiene valori FLOAT NumCoeffs.
 
 </dd> <dt>
 
-*Larghezza* \[ in\]
+*Larghezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Larghezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper:: GetWidth**](id3dxtexturegutterhelper--getwidth.md).
+Larghezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper::GetWidth**](id3dxtexturegutterhelper--getwidth.md).
 
 </dd> <dt>
 
-*Altezza* \[ in\]
+*Altezza* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Altezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper:: GetHeight**](id3dxtexturegutterhelper--getheight.md).
+Altezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper::GetHeight**](id3dxtexturegutterhelper--getheight.md).
 
 </dd> </dl>
 
@@ -83,11 +83,11 @@ Altezza della trama, in pixel, ottenuta da [**ID3DXTextureGutterHelper:: GetHeig
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. \_INVALIDCALL D3DERR
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, verrà restituito il valore seguente. D3DERR \_ INVALIDCALL
 
 ## <a name="remarks"></a>Commenti
 
-I [**Texel della classe 2**](id3dxtexturegutterhelper.md) vengono generati ricampionando la classe 1 e 4 Texel.
+[**I texel di**](id3dxtexturegutterhelper.md) classe 2 vengono generati tramite il ricampionamento delle classi 1 e 4 texel.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ I [**Texel della classe 2**](id3dxtexturegutterhelper.md) vengono generati ricam
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: L'oggetto UIPreview viene utilizzato per visualizzare le finestre di dialogo e i manifesti dell'interfaccia utente durante la creazione. Questo oggetto viene creato dal metodo EnableUIPreview dell'oggetto di database.
+description: L'oggetto UIPreview viene usato per visualizzare finestre di dialogo e finestre di dialogo dell'interfaccia utente durante la creazione. Questo oggetto viene creato dal metodo EnableUIPreview dell'oggetto Database.
 ms.assetid: 5df2a4f3-6352-4575-b822-1811150a86be
 title: Oggetto UIPreview
 ms.topic: reference
@@ -13,34 +13,34 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 6650dc9bcc66a24d0e8a9d7f0d971884a2379f60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82436f21cc3920c2e1f635f8d1612118831e7d29f3fb1202105511f2e61f7a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118623500"
 ---
 # <a name="uipreview-object"></a>Oggetto UIPreview
 
-L'oggetto **UIPreview** viene utilizzato per visualizzare le finestre di dialogo e i manifesti dell'interfaccia utente durante la creazione. Questo oggetto viene creato dal metodo [**EnableUIPreview**](database-enableuipreview.md) dell'oggetto di [**database**](database-object.md) .
+**L'oggetto UIPreview** viene usato per visualizzare finestre di dialogo e finestre di dialogo dell'interfaccia utente durante la creazione. Questo oggetto viene creato dal [**metodo EnableUIPreview**](database-enableuipreview.md) dell'oggetto [**Database.**](database-object.md)
 
 ## <a name="members"></a>Membri
 
-L'oggetto **UIPreview** dispone di questi tipi di membri:
+**L'oggetto UIPreview** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **UIPreview** dispone di questi metodi.
+**L'oggetto UIPreview** dispone di questi metodi.
 
 
 
 | Metodo                                           | Descrizione                                                                                             |
 |:-------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| [**ViewBillboard**](uipreview-viewbillboard.md) | Consente di visualizzare un Billboard creato utilizzando il controllo host nella finestra di dialogo attualmente visualizzata.<br/> |
-| [**ViewDialog**](uipreview-viewdialog.md)       | Consente di visualizzare una finestra di dialogo dell'interfaccia utente creata archiviata nel database corrente.<br/>                           |
+| [**ViewBillboard**](uipreview-viewbillboard.md) | Visualizza un oggetto creato utilizzando il controllo host nella finestra di dialogo attualmente visualizzata.<br/> |
+| [**Finestra di dialogo Visualizza**](uipreview-viewdialog.md)       | Visualizza una finestra di dialogo dell'interfaccia utente personalizzata archiviata nel database corrente.<br/>                           |
 
 
 
@@ -48,7 +48,7 @@ L'oggetto **UIPreview** dispone di questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **UIPreview** dispone di queste proprietà.
+**L'oggetto UIPreview** ha queste proprietà.
 
 
 
@@ -66,7 +66,7 @@ L'oggetto **UIPreview** dispone di queste proprietà.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Installer 5,0 in Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 in Windows Server 2008 o Windows Vista. Windows Installer in Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IUIPreview è definito come 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
@@ -76,7 +76,7 @@ L'oggetto **UIPreview** dispone di queste proprietà.
 
 <dl> <dt>
 
-[Esempi di script di Windows Installer](windows-installer-scripting-examples.md)
+[Windows Esempi di script del programma di installazione](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La struttura EXPERTFRAMEDESCRIPTOR contiene informazioni su un frame. Quando l'esperto chiama la funzione ExpertGetFrame correttamente, Network Monitor passa nuovamente la struttura EXPERTFRAMEDESCRIPTOR all'esperto.
+description: La struttura EXPERTFRAMEDESCRIPTOR contiene informazioni su un frame. Quando l'esperto chiama correttamente la funzione ExpertGetFrame, Network Monitor passa di nuovo la struttura EXPERTFRAMEDESCRIPTOR all'esperto.
 ms.assetid: 6cf99498-3cf9-46da-b6a0-3012229f6908
-title: Struttura EXPERTFRAMEDESCRIPTOR (Netmon. h)
+title: Struttura EXPERTFRAMEDESCRIPTOR (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 98bafae39819b16b479df22fe6560888ef15d8e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a11c131188cdd5230d309a6ff2e39a77ac7886333dafd9860d565fdcb10efc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104484340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939028"
 ---
 # <a name="expertframedescriptor-structure"></a>Struttura EXPERTFRAMEDESCRIPTOR
 
-La struttura **EXPERTFRAMEDESCRIPTOR** contiene informazioni su un frame. Quando l'esperto chiama la funzione [**ExpertGetFrame**](expertgetframe.md) correttamente, network monitor passa nuovamente la struttura **EXPERTFRAMEDESCRIPTOR** all'esperto.
+La **struttura EXPERTFRAMEDESCRIPTOR** contiene informazioni su un frame. Quando l'esperto [**chiama correttamente la funzione ExpertGetFrame,**](expertgetframe.md) Network Monitor passa di nuovo la struttura **EXPERTFRAMEDESCRIPTOR** all'esperto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ typedef struct {
 
 <dl> <dt>
 
-**NumeroFrame**
+**FrameNumber**
 </dt> <dd>
 
 Numero di un frame specificato.
@@ -80,9 +80,9 @@ Tabella delle proprietà del frame identificate dal parser.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'esperto specifica le \_ proprietà di associazione dei flag \_ quando si chiama [**ExpertGetFrame**](expertgetframe.md), il membro **szPropertyText** in ogni struttura [**PROPERTYINST**](propertyinst.md) è **null**.
+Se l'esperto specifica FLAGS ATTACH PROPERTIES quando chiama \_ \_ [**ExpertGetFrame,**](expertgetframe.md)il membro **szPropertyText** in ogni [**struttura PROPERTYINST**](propertyinst.md) è **NULL.**
 
-Se l'esperto non specifica le proprietà di associazione dei flag \_ \_ quando chiama la funzione [**ExpertGetFrame**](expertgetframe.md) , il membro **lpPropertyTable** è **null** alla restituzione.
+Se l'esperto non specifica FLAGS ATTACH PROPERTIES quando chiama la funzione \_ \_ [**ExpertGetFrame,**](expertgetframe.md) il membro **lpPropertyTable** è **NULL** al momento della restituzione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -92,7 +92,7 @@ Se l'esperto non specifica le proprietà di associazione dei flag \_ \_ quando c
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

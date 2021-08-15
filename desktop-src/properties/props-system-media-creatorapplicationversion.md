@@ -4,12 +4,12 @@ ms.assetid: 9370d0f3-a43c-4c34-a4ad-a585ed63e8e5
 title: System.Media.CreatorApplicationVersion
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2442217006fc005507c314b1a9e581015f58db4f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5b34a73c1fcf50d7adaf92cb7a73a6a458f7c0cb8f3d18218a06afe1ee32ddee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725575"
 ---
 # <a name="systemmediacreatorapplicationversion"></a>System.Media.CreatorApplicationVersion
 

@@ -1,20 +1,20 @@
 ---
 Description: Il valore COLORREF viene usato per specificare un colore RGB.
 ms.assetid: b87d3de2-7a13-44ef-8253-c6851a75fa54
-title: COLORREF (windef. h)
+title: COLORREF (Windef.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 6836cfcc1b18d0b20d5e347fb83206551b27de06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
-ms.translationtype: HT
+ms.openlocfilehash: 3e51b2a906af5939a5c7a8753e5fcc4fbcfae64590e62bcb6df1da2c2bd8426d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104996457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761894"
 ---
 # <a name="colorref"></a>COLORREF
 
-Il valore COLORREF viene usato per specificare un colore [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) .
+Il valore COLORREF viene usato per specificare un [colore RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb)
 
 
 ```C++
@@ -26,13 +26,13 @@ typedef DWORD* LPCOLORREF;
 
 ## <a name="remarks"></a>Commenti
 
-Quando si specifica un colore [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) esplicito, il valore di **COLORREF** ha il seguente formato esadecimale:
+Quando si specifica un [colore RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) esplicito, il **valore COLORREF** ha il formato esadecimale seguente:
 
 `0x00bbggrr`
 
-Il byte di ordine inferiore contiene un valore per l'intensità relativa del rosso; il secondo byte contiene un valore per il verde; e il terzo byte contiene un valore per il blu. Il byte di ordine superiore deve essere zero. Il valore massimo per un singolo byte è 0xFF.
+Il byte meno significativo contiene un valore per l'intensità relativa del rosso. il secondo byte contiene un valore verde. e il terzo byte contiene un valore per blu. Il byte più significativo deve essere zero. Il valore massimo per un singolo byte è 0xFF.
 
-Per creare un valore di colore **COLORREF** , usare la macro [RGB](/windows/desktop/api/Wingdi/nf-wingdi-rgb) . Per estrarre i singoli valori per i componenti rosso, verde e blu di un valore di colore, utilizzare rispettivamente le macro [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)e [GetBValue](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) .
+Per creare un **valore di colore COLORREF,** usare la macro [RGB.](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Per estrarre i singoli valori per i componenti rosso, verde e blu di un valore di colore, usare rispettivamente le macro [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [GetGValue](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)e [GetBValue.](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue)
 
 ## <a name="example"></a>Esempio
 
@@ -45,7 +45,7 @@ const COLORREF rgbBlack =  0x00000000;
 const COLORREF rgbWhite =  0x00FFFFFF;
 ```
 
-Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-classic-samples) in GitHub.
+Esempio di [Windows esempi classici](https://github.com/microsoft/Windows-classic-samples) in GitHub.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                    |
-| Intestazione<br/>                   | <dl> <dt>Windef. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Windef.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Esempio di [esempi di Windows classico](https://github.com/microsoft/Windows-cla
 
 <dl> <dt>
 
-[Panoramica sui colori](colors.md)
+[Panoramica dei colori](colors.md)
 </dt> <dt>
 
-[Strutture colore](color-structures.md)
+[Strutture dei colori](color-structures.md)
 </dt> <dt>
 
 [GetBValue](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue)

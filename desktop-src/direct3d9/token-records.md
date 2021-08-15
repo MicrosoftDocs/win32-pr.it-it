@@ -1,120 +1,120 @@
 ---
-description: In questa sezione viene descritto il formato dei record per ognuno dei token che portano a record. Le informazioni sono suddivise nelle sezioni riportate di seguito.
+description: In questa sezione viene descritto il formato dei record per ogni token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
 ms.assetid: 4fdd8339-f660-4389-878a-e7ab067d8508
 title: Record di token
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ae7e1dcdd36d538ed44205fa51b8e2094d1ff14
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 456ee591f15cac6e6a3d2fecaad3dfca9f0709b39a63d20fe198e591a199f4dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106304365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118797423"
 ---
 # <a name="token-records"></a>Record di token
 
-In questa sezione viene descritto il formato dei record per ognuno dei token che portano a record. Le informazioni sono suddivise nelle sezioni riportate di seguito.
+In questa sezione viene descritto il formato dei record per ogni token di registrazione. Le informazioni sono suddivise nelle sezioni seguenti.
 
--   [nome del TOKEN \_](/windows)
--   [\_stringa token](/windows)
--   [\_Integer token](/windows)
--   [\_GUID token](/windows)
--   [\_elenco di valori integer del token \_](/windows)
--   [\_elenco float del token \_](/windows)
+-   [NOME \_ TOKEN](/windows)
+-   [STRINGA \_ TOKEN](/windows)
+-   [TOKEN \_ INTEGER](/windows)
+-   [TOKEN \_ GUID](/windows)
+-   [ELENCO \_ DI TOKEN INTEGER \_](/windows)
+-   [ELENCO \_ FLOAT \_ DEI TOKEN](/windows)
 
-## <a name="token_name"></a>nome del TOKEN \_
+## <a name="token_name"></a>NOME \_ TOKEN
 
-Record a lunghezza variabile. Il token è seguito da un valore Count che specifica il numero di byte che seguono nel campo Name. Un nome ASCII con numero di lunghezza completa il record.
+Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di byte che seguono nel campo name. Il record viene completato da un nome ASCII di conteggio della lunghezza.
 
 
 
 | Campo | Tipo       | Dimensioni (byte) | Contenuto                       |
 |-------|------------|--------------|--------------------------------|
-| token | WORD       | 2            | nome del token \_                    |
+| token | WORD       | 2            | nome del \_ token                    |
 | count | DWORD      | 4            | Lunghezza del campo del nome, in byte |
-| name  | Matrice di BYTE | count        | Nome ASCII                     |
+| name  | Matrice BYTE | count        | Nome ASCII                     |
 
 
 
  
 
-## <a name="token_string"></a>\_stringa token
+## <a name="token_string"></a>STRINGA \_ TOKEN
 
-Record a lunghezza variabile. Il token è seguito da un valore Count che specifica il numero di byte che seguono nel campo della stringa. Una stringa ASCII di lunghezza count continua il record, che viene completato da un token di terminazione. La scelta del carattere di terminazione è determinata dai problemi di sintassi descritti altrove.
+Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di byte che seguono nel campo stringa. Una stringa ASCII di conteggio della lunghezza continua il record, che viene completato da un token di terminazione. La scelta del carattere di terminazione è determinata dai problemi di sintassi illustrati altrove.
 
 
 
 | Campo      | Tipo       | Dimensioni (byte) | Contenuto                         |
 |------------|------------|--------------|----------------------------------|
-| token      | WORD       | 2            | \_stringa token                    |
+| token      | WORD       | 2            | stringa di \_ token                    |
 | count      | DWORD      | 4            | Lunghezza del campo stringa in byte  |
-| Stringa     | Matrice di BYTE | count        | Stringa ASCII                     |
-| terminazione | DWORD      | 4            | punto e virgola del tOKEN \_ o \_ virgola del token |
+| Stringa     | Matrice BYTE | count        | Stringa ASCII                     |
+| Terminator | DWORD      | 4            | PUNTO E VIRGOLA TOKEN \_ o TOKEN \_ COMMA |
 
 
 
  
 
-## <a name="token_integer"></a>\_Integer token
+## <a name="token_integer"></a>TOKEN \_ INTEGER
 
-Record A lunghezza fissa. Il token è seguito dal valore Integer obbligatorio.
+Record a lunghezza fissa. Il token è seguito dal valore intero richiesto.
 
 
 
 | Campo | Tipo  | Dimensioni (byte) | Contenuto       |
 |-------|-------|--------------|----------------|
-| token | WORD  | 2            | \_Integer tOKEN |
-| Valore | DWORD | 4            | Singolo Integer |
+| token | WORD  | 2            | tOKEN \_ INTEGER |
+| Valore | DWORD | 4            | Intero singolo |
 
 
 
  
 
-## <a name="token_guid"></a>\_GUID token
+## <a name="token_guid"></a>TOKEN \_ GUID
 
-Record a lunghezza fissa. Il token è seguito dai quattro campi dati definiti dallo standard OSF DCE.
+Record a lunghezza fissa. Il token è seguito dai quattro campi dati definiti dallo standard DCE OSF.
 
 
 
 | Campo | Tipo       | Dimensioni (byte) | Contenuto          |
 |-------|------------|--------------|-------------------|
-| token | WORD       | 2            | \_GUID tOKEN       |
+| token | WORD       | 2            | GUID tOKEN \_       |
 | Data1 | DWORD      | 4            | Campo dati UUID 1 |
-| Data2 | WORD       | 2            | Campo dati UUID 2 |
-| Data3 | WORD       | 2            | Campo dati UUID 3 |
-| DATA4 | Matrice di BYTE | 8            | Campo dati UUID 4 |
+| Dati2 | WORD       | 2            | Campo dati UUID 2 |
+| Dati3 | WORD       | 2            | Campo dati UUID 3 |
+| Dati4 | Matrice BYTE | 8            | Campo dati UUID 4 |
 
 
 
  
 
-## <a name="token_integer_list"></a>\_elenco di valori integer del token \_
+## <a name="token_integer_list"></a>ELENCO \_ DI TOKEN INTEGER \_
 
-Record a lunghezza variabile. Il token è seguito da un valore Count che specifica il numero di numeri interi che seguono nel campo dell'elenco. Per maggiore efficienza, gli elenchi di numeri interi consecutivi devono essere composti in un singolo elenco.
+Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di numeri interi che seguono nel campo dell'elenco. Per migliorare l'efficienza, gli elenchi di numeri interi consecutivi devono essere composti in un unico elenco.
 
 
 
 | Campo | Tipo  | Dimensioni (byte) | Contenuto                         |
 |-------|-------|--------------|----------------------------------|
-| token | WORD  | 2            | \_elenco di valori integer del tOKEN \_             |
+| token | WORD  | 2            | TOKEN \_ INTEGER \_ LISt             |
 | count | DWORD | 4            | Numero di numeri interi nel campo elenco |
-| list  | DWORD | conteggio 4 x    | Elenco di numeri interi                     |
+| list  | DWORD | 4 x conteggio    | Elenco di numeri interi                     |
 
 
 
  
 
-## <a name="token_float_list"></a>\_elenco float del token \_
+## <a name="token_float_list"></a>TOKEN \_ FLOAT \_ LIST
 
-Record a lunghezza variabile. Il token è seguito da un valore Count che specifica il numero di valori float o Double che seguono nel campo dell'elenco. Le dimensioni del valore a virgola mobile (float o Double) sono determinate dal valore di float SizeSpecified nell'intestazione del file. Per maggiore efficienza, gli \_ elenchi float di token consecutivi \_ devono essere composti in un singolo elenco.
+Record a lunghezza variabile. Il token è seguito da un valore count che specifica il numero di valori float o double che seguono nel campo dell'elenco. Le dimensioni del valore a virgola mobile (float o double) sono determinate dal valore di float sizespecificato nell'intestazione del file. Per migliorare l'efficienza, i TOKEN FLOAT LIST consecutivi \_ devono essere composti in un unico \_ elenco.
 
 
 
 | Campo | Tipo               | Dimensioni (byte)   | Contenuto                                  |
 |-------|--------------------|----------------|-------------------------------------------|
-| token | WORD               | 2              | \_elenco float del tOKEN \_                        |
-| count | DWORD              | 4              | Numero di valori float o Double nel campo elenco |
-| list  | matrice float/double | conteggio 4 o 8 x | Elenco float o Double                      |
+| token | WORD               | 2              | tOKEN \_ FLOAT \_ LISt                        |
+| count | DWORD              | 4              | Numero di valori float o double nel campo elenco |
+| list  | Matrice float/double | 4 o 8 x conteggio | Elenco float o double                      |
 
 
 

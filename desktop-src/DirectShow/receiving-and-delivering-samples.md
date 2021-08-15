@@ -4,16 +4,16 @@ ms.assetid: 92954b40-1424-4dee-997c-fc41089b7fa5
 title: Ricezione e distribuzione di esempi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a364743e0dfc201d419a61fa4c88bde686976d6b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e507cb3e20a8fd08c891cca5143f8bbf8c9d4f9a90bad27dc201dd43c43283e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952150"
 ---
 # <a name="receiving-and-delivering-samples"></a>Ricezione e distribuzione di esempi
 
-Nello pseudocodice seguente viene illustrato come implementare il metodo **IMemInput:: Receive** :
+Lo pseudocodice seguente illustra come implementare **il metodo IMemInput::Receive:**
 
 
 ```C++
@@ -44,9 +44,9 @@ HRESULT CMyInputPin::Receive(IMediaSample *pSample)
 
 
 
-Il metodo **Receive** utilizza il blocco di flusso, non il blocco del filtro. Il filtro potrebbe dover attendere un determinato evento prima di poter elaborare i dati, come illustrato nella chiamata a **WaitForSingleObject**. Non tutti i filtri dovranno eseguire questa operazione. Il metodo [**CBaseInputPin:: Receive**](cbaseinputpin-receive.md) verifica alcune condizioni di flusso generali. Restituisce \_ \_ lo stato VFW E errato \_ se il filtro viene arrestato, S \_ false se il filtro sta scaricando e così via. Qualsiasi codice restituito diverso da S \_ OK indica che il metodo **Receive** deve restituire immediatamente e non elaborare l'esempio.
+Il **metodo Receive** mantiene il blocco di flusso, non il blocco del filtro. Il filtro potrebbe dover attendere un evento prima di poter elaborare i dati, come illustrato qui dalla chiamata a **WaitForSingleObject.** Non tutti i filtri dovranno eseguire questa operazione. Il [**metodo CBaseInputPin::Receive**](cbaseinputpin-receive.md) verifica alcune condizioni generali di streaming. Restituisce VFW E WRONG STATE se il filtro viene arrestato, S FALSE se il filtro viene scaricato \_ \_ e così \_ \_ via. Qualsiasi codice restituito diverso da S OK indica che il metodo Receive deve restituire immediatamente e \_ non elaborare  l'esempio.
 
-Dopo l'elaborazione dell'esempio, recapitarlo al filtro downstream chiamando [**CBaseOutputPin::D Eliver**](cbaseoutputpin-deliver.md). Questo metodo helper chiama **IMemInputPin:: Receive** sul pin di input downstream. Un filtro può recapitare campioni a diversi pin.
+Dopo l'elaborazione dell'esempio, recapitarlo al filtro downstream chiamando [**CBaseOutputPin::D eliver.**](cbaseoutputpin-deliver.md) Questo metodo helper chiama **IMemInputPin::Receive sul** pin di input downstream. Un filtro potrebbe distribuire campioni a diversi segnaposto.
 
  
 

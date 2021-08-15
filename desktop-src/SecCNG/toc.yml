@@ -1,4 +1,4 @@
-- name: 'API di crittografia: prossima generazione'
+- name: 'API di crittografia: next generation'
   href: cng-portal.md
   items:
     - name: Informazioni su CNG
@@ -8,18 +8,18 @@
           href: cng-features.md
         - name: Primitive di crittografia
           href: cryptographic-primitives.md
-        - name: Archiviazione e recupero delle chiavi
+        - name: Recupero e Archiviazione chiave
           href: key-storage-and-retrieval.md
         - name: Importazione ed esportazione di chiavi
           href: key-import-and-export.md
-        - name: DPAPI CNG
+        - name: CNG DPAPI
           href: cng-dpapi.md
           items:
             - name: Provider di protezione
               href: protection-providers.md
             - name: Descrittori di protezione
               href: protection-descriptors.md
-            - name: Formato dati protetto
+            - name: Formato dei dati protetti
               href: protected-data-format.md
     - name: Uso di CNG
       href: using-cng.md
@@ -31,11 +31,11 @@
           items:
             - name: Creazione di un hash con CNG
               href: creating-a-hash-with-cng.md
-            - name: Firma di dati con CNG
+            - name: Firma dei dati con CNG
               href: signing-data-with-cng.md
             - name: Crittografia dei dati con CNG
               href: encrypting-data-with-cng.md
-    - name: Riferimento CNG
+    - name: Riferimenti per CNG
       href: cng-reference.md
       items:
         - name: Costanti CNG
@@ -51,9 +51,9 @@
               href: cng-dpapi-constants.md
             - name: Identificatori di interfaccia CNG
               href: cng-interface-identifiers.md
-            - name: Identificatori delle proprietà primitive di crittografia
+            - name: Identificatori di proprietà primitive di crittografia
               href: cng-property-identifiers.md
-            - name: Identificatori delle proprietà di archiviazione chiavi
+            - name: Identificatori di Archiviazione chiave
               href: key-storage-property-identifiers.md
         - name: Funzioni di configurazione crittografica CNG
           href: cng-cryptographic-configuration-functions.md
@@ -74,7 +74,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumcontextfunctionproviders
             - name: BCryptEnumContextFunctions
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumcontextfunctions
-            - name: BCryptEnumContexts
+            - name: Oggetti BCryptEnumContexts
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumcontexts
             - name: BCryptEnumProviders
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptenumproviders
@@ -90,7 +90,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptquerycontextfunctionproperty
             - name: BCryptQueryProviderRegistration
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration
-            - name: BCryptRegisterConfigChangeNotify (HANDLE *)
+            - name: BCryptRegisterConfigChangeNotify(HANDLE*)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
             - name: BCryptRegisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
@@ -100,7 +100,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptresolveproviders
             - name: BCryptSetContextFunctionProperty
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty
-            - name: BCryptUnregisterConfigChangeNotify (HANDLE)
+            - name: BCryptUnregisterConfigChangeNotify(HANDLE)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
             - name: BCryptUnregisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
@@ -207,7 +207,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcrypt_init_auth_mode_info
             - name: SystemPrng
               href: systemprng.md
-        - name: Funzioni di archiviazione chiavi CNG
+        - name: Funzioni di gestione delle Archiviazione CNG
           href: cng-key-storage-functions.md
           items:
             - name: NCryptCreateClaim

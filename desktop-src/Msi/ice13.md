@@ -4,24 +4,24 @@ ms.assetid: 51542a8f-2fb6-4021-b52d-6f7a2b0294d6
 title: ICE13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fff440217ccffe41d5e4036f4ea0d03d1eabb0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fdc11f8254c721d404a65e63fc897aa6e55bc61364c768b48f2d5aded4348d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946635"
 ---
 # <a name="ice13"></a>ICE13
 
-ICE13 verifica che le finestre di dialogo nelle tabelle di sequenza vengano visualizzate nelle tabelle [AdminUISequence](adminuisequence-table.md)o [InstallUISequence](installuisequence-table.md) . Le finestre di dialogo non devono essere elencate nelle tabelle [InstallExecuteSequence](installexecutesequence-table.md), [AdminExecuteSequence](adminexecutesequence-table.md)o [AdvtExecuteSequence](advtexecutesequence-table.md) .
+ICE13 verifica che le finestre di dialogo nelle tabelle di sequenza vengano visualizzate nelle tabelle [AdminUISequence](adminuisequence-table.md)o [InstallUISequence.](installuisequence-table.md) Le finestre di dialogo non devono essere elencate nelle tabelle [InstallExecuteSequence](installexecutesequence-table.md), [AdminExecuteSequence](adminexecutesequence-table.md)o [AdvtExecuteSequence.](advtexecutesequence-table.md)
 
 ## <a name="result"></a>Risultato
 
-ICE13 Invia un messaggio di errore se viene visualizzata una finestra di dialogo in una tabella di sequenza di esecuzione.
+ICE13 pubblica un messaggio di errore se viene visualizzata una finestra di dialogo in una tabella di sequenza di esecuzione.
 
 ## <a name="example"></a>Esempio
 
-Per l'esempio seguente, ICE13 Invia un messaggio di errore che informa che non √® possibile elencare ' WelcomeDialog ' nella tabella ' InstallExecuteSequence '.
+Per l'esempio seguente, ICE13 pubblica un messaggio di errore che informa che 'WelcomeDialog' non pu√≤ essere elencato nella tabella 'InstallExecuteSequence'.
 
 [Tabella InstallExecuteSequence](installexecutesequence-table.md) (parziale)
 
@@ -30,8 +30,8 @@ Per l'esempio seguente, ICE13 Invia un messaggio di errore che informa che non √
 | Azione          |
 |-----------------|
 | InstallFinalize |
-| CostFinalize secondo    |
-| WelcomeDialog   |
+| CostFinalize    |
+| Finestra di dialogo di benvenuto   |
 
 
 
@@ -43,22 +43,22 @@ Per l'esempio seguente, ICE13 Invia un messaggio di errore che informa che non √
 
 | Azione         |
 |----------------|
-| CostFinalize secondo   |
+| CostFinalize   |
 | CostInitialize |
-| BrowseDialog   |
+| Finestra di dialogo Sfoglia   |
 
 
 
  
 
-[Tabella finestra di dialogo](dialog-table.md) (parziale)
+[Tabella delle finestre di](dialog-table.md) dialogo (parziale)
 
 
 
 | Finestra di dialogo        |
 |---------------|
-| BrowseDialog  |
-| WelcomeDialog |
+| Finestra di dialogo Sfoglia  |
+| Finestra di dialogo di benvenuto |
 
 
 
@@ -68,7 +68,7 @@ Per l'esempio seguente, ICE13 Invia un messaggio di errore che informa che non √
 
 <dl> <dt>
 
-[Riferimento ghiaccio](ice-reference.md)
+[Informazioni di riferimento su ICE](ice-reference.md)
 </dt> </dl>
 
  

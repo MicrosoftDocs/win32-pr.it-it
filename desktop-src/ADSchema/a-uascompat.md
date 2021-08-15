@@ -1,10 +1,10 @@
 ---
-title: Attributo UAS-Compat
-description: Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati per rendere Active Directory compatibile con LanManager user account System (UAS).
+title: UAS-Compat attributo
+description: Indica se la sicurezza account manager le dimensioni dei dati per rendere compatibile Active Directory con il sistema di account utente LanManager.
 ms.assetid: 745e271e-28f4-4012-83a8-606d88de0221
 ms.tgt_platform: multiple
 keywords:
-- Schema AD UAS-Compat attribute
+- UAS-Compat schema AD dell'attributo
 - Schema AD dell'attributo uASCompat
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6bbf1088f48c697b03c4ef423930be2dbd24617
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 72fa7a0cb7b8787a55c710f283dbcd37bbe0f6a296505c75a5335bf35ea69c34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681540"
 ---
-# <a name="uas-compat-attribute"></a>Attributo UAS-Compat
+# <a name="uas-compat-attribute"></a>UAS-Compat attributo
 
-Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati per rendere Active Directory compatibile con LanManager user account System (UAS). Se questo valore è 0, non viene applicato alcun limite. Se questo valore è 1, vengono applicati i limiti seguenti.
+Indica se la sicurezza account manager le dimensioni dei dati per rendere compatibile Active Directory con il sistema di account utente LanManager. Se questo valore è 0, non vengono applicati limiti. Se questo valore è 1, vengono applicati i limiti seguenti.
 
 
 
 | Valore                          | Length                         |
 |--------------------------------|--------------------------------|
-| Password<br/>            | da 0 a 14 caratteri<br/>  |
-| Nome account<br/>        | da 0 a 20 caratteri<br/>  |
-| Nome dominio<br/>         | da 0 a 15 caratteri<br/>  |
-| Nome computer<br/>       | da 0 a 15 caratteri<br/>  |
-| Commenti<br/>            | da 0 a 48 caratteri<br/>  |
-| Home directory<br/>      | da 0 a 256 caratteri<br/> |
-| Percorso script<br/>         | da 0 a 256 caratteri<br/> |
+| Password<br/>            | Da 0 a 14 caratteri<br/>  |
+| Nome account<br/>        | Da 0 a 20 caratteri<br/>  |
+| Nome dominio<br/>         | Da 0 a 15 caratteri<br/>  |
+| Nome computer<br/>       | Da 0 a 15 caratteri<br/>  |
+| Commenti<br/>            | Da 0 a 48 caratteri<br/>  |
+| Home directory<br/>      | Da 0 a 256 caratteri<br/> |
+| Percorso script<br/>         | Da 0 a 256 caratteri<br/> |
 | Unità di tempo per settimana<br/> | 168 bit (21 byte)<br/> |
 
 
@@ -47,12 +47,12 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | UAS-Compat                           |
-| LDAP-Display-Name | uASCompat                            |
+| Ldap-Display-Name | uASCompat                            |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Eseguita da un amministratore.       |
+| Privilegio di aggiornamento  | Eseguita da un amministratore.       |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.155               |
-| System-ID-GUID    | bf967a61-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a61-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -75,15 +75,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -96,15 +96,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -117,15 +117,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -138,15 +138,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -159,15 +159,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -180,15 +180,15 @@ Indica se il gestore degli account di sicurezza imporrà le dimensioni dei dati 
 | ID collegamento                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| È a valore singolo       | Vero                                                  |
+| Is-Single-Valued       | Vero                                                  |
 | Indicizzato             | Falso                                                 |
 | Nel catalogo globale      | Falso                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classi utilizzate in        | [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

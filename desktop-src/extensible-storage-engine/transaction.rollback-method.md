@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Transaction. rollback'
-title: Metodo Transaction. rollback
+description: Altre informazioni sul metodo Transaction.Rollback
+title: Metodo Transaction.Rollback
 TOCTitle: 'Rollback method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Transaction.Rollback
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.rollback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2a7020a43fe67548eddabdcb3f521b19dd111c14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0447ce5a29dcbf27000375ac7f2b9199f95b1d1b62874b45fa6e8eeac3fa3da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978341"
 ---
-# <a name="transactionrollback-method"></a>Metodo Transaction. rollback
+# <a name="transactionrollback-method"></a>Metodo Transaction.Rollback
 
-Eseguire il rollback di una transazione. Questo oggetto deve trovarsi in una transazione.
+Eseguire il rollback di una transazione. Questo oggetto deve essere in una transazione.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -59,6 +59,6 @@ public void Rollback()
 
 [Transaction (classe)](./transaction-class.md)
 
-[Membri transazione](./transaction-members.md)
+[Membri della transazione](./transaction-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

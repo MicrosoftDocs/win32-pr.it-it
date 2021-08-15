@@ -1,9 +1,9 @@
 ---
-title: Version (SystemPropertiesType)-elemento
+title: Elemento Version (SystemPropertiesType)
 description: Contiene il numero di versione della definizione dell'evento.
 ms.assetid: c257cf21-296d-4dae-bfc8-e7899da40526
 keywords:
-- Log degli elementi della versione
+- Elemento Version EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e1ae5273054c1c3c06926d3b4d5a9bd9ced1aeb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e5ca784def3389ed29b913358f97eddc631e0659aa60846be748ea3b5738759a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104225198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587278"
 ---
-# <a name="version-systempropertiestype-element"></a>Version (SystemPropertiesType)-elemento
+# <a name="version-systempropertiestype-element"></a>Elemento Version (SystemPropertiesType)
 
 Contiene il numero di versione della definizione dell'evento.
 
@@ -30,7 +30,7 @@ Contiene il numero di versione della definizione dell'evento.
  />
 ```
 
-L'elemento **Version** è definito dal tipo complesso [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+**L'elemento** Version è definito dal [**tipo complesso SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Version** è definito dal tipo complesso [**SystemPropertiesType**]
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

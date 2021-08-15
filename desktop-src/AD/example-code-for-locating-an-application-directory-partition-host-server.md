@@ -1,25 +1,25 @@
 ---
 title: Codice di esempio per l'individuazione di un server host della partizione di directory applicativa
-description: Questo argomento include un esempio di codice in cui viene individuato un server host della partizione di directory applicativa.
+description: Questo argomento include un esempio di codice che individua un server host della partizione di directory applicativa.
 ms.assetid: c161323b-13ce-4986-8b24-b459009ff53c
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per l'individuazione di un'istanza di Active Directory Partition server host
-- Active Directory Partition AD, codice di esempio per l'individuazione di un server host della partizione di directory applicativa
+- Codice di esempio per l'individuazione di un server host della partizione di directory applicativa AD
+- Partizione di directory applicativa AD , codice di esempio per l'individuazione di un server host della partizione di directory applicativa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa82c91573e0ce00017fe93b8e8713f50ab7b26c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03d7a218acf3608c18587b7d9b9c82779f17fd6eb251608a86d99d8acb3b7bd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693600"
 ---
 # <a name="example-code-for-locating-an-application-directory-partition-host-server"></a>Codice di esempio per l'individuazione di un server host della partizione di directory applicativa
 
-Questo argomento include un esempio di codice in cui viene individuato un server host della partizione di directory applicativa.
+Questo argomento include un esempio di codice che individua un server host della partizione di directory applicativa.
 
-Nell'esempio di codice C/C++ riportato di seguito viene illustrato come utilizzare la funzione [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea) per individuare un controller di dominio che ospita una replica di una partizione di directory applicativa. Questo esempio di codice illustra anche come usare la funzione [**DsCrackNames**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dscracknamesa) per convertire il nome distinto di una partizione di directory applicativa in un nome DNS.
+L'esempio di codice C/C++ seguente illustra come usare la funzione [**DsGetDcName**](/windows/desktop/api/DsGetDC/nf-dsgetdc-dsgetdcnamea) per individuare un controller di dominio che ospita una replica di una partizione di directory applicativa. Questo esempio di codice illustra anche come usare la [**funzione DsCrackNames**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dscracknamesa) per convertire il nome distinto di una partizione di directory applicativa in un nome DNS.
 
 
 ```C++
@@ -131,9 +131,9 @@ DWORD PrintDCFromAppPartition(LPCTSTR pszAppPartitionDN)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

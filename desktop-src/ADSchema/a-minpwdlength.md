@@ -1,10 +1,10 @@
 ---
-title: Attributo min-pwd-length
-description: Il numero minimo di caratteri che una password deve contenere.
+title: Attributo Min-Pwd-Length
+description: Numero minimo di caratteri che una password deve contenere.
 ms.assetid: f1bd7b0c-cb78-4b03-88fe-dbdf472dab06
 ms.tgt_platform: multiple
 keywords:
-- Schema AD attributo min-pwd-length
+- Schema AD dell'attributo Min-Pwd-Length
 - Schema AD dell'attributo minPwdLength
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b0d9a50ed05a651d7dd2d029d1c0b21c247c0ed
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a6b217beb1f55d37157d09f54819859af105a42d7959da511209d5e540ef238e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103875441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687543"
 ---
-# <a name="min-pwd-length-attribute"></a>Attributo min-pwd-length
+# <a name="min-pwd-length-attribute"></a>Attributo Min-Pwd-Length
 
-Il numero minimo di caratteri che una password deve contenere.
+Numero minimo di caratteri che una password deve contenere.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | Min-pwd-length                       |
-| LDAP-Display-Name | minPwdLength                         |
+| CN                | Min-Pwd-Length                       |
+| Ldap-Display-Name | minPwdLength                         |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore di dominio                 |
+| Privilegio di aggiornamento  | Amministratore di dominio                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.79                |
-| System-ID-GUID    | bf9679c3-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679c3-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Il numero minimo di caratteri che una password deve contenere.
 | ID collegamento                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| È a valore singolo       | Vero                                                                                                                                                  |
+| Is-Single-Valued       | Vero                                                                                                                                                  |
 | Indicizzato             | Falso                                                                                                                                                 |
 | Nel catalogo globale      | Falso                                                                                                                                                 |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classi utilizzate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Classi usate in        | [**Criteri di dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

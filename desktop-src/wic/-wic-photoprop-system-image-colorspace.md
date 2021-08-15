@@ -1,23 +1,23 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. image. TextSpazio.
+description: Criteri dei metadati delle foto per la proprietà System.Image.ColorSpace.
 ms.assetid: 10770f16-8db2-4719-bce3-452f578002ec
-title: Criteri per i metadati delle foto System. image. TextSpazio
+title: Criteri metadati foto System.Image.ColorSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b6ef2003d05fa19b958b28950f71ec2d5f73027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85c7d7c9134a8bd93a12ba6cfb6bd8605e228cb6b745ad4401a94f91a2ba9ff9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710421"
 ---
-# <a name="systemimagecolorspace-photo-metadata-policy"></a>Criteri per i metadati delle foto System. image. TextSpazio
+# <a name="systemimagecolorspace-photo-metadata-policy"></a>Criteri metadati foto System.Image.ColorSpace
 
-Criteri per i metadati delle foto per la proprietà [System. image. TextSpazio](../properties/props-system-image-colorspace.md) .
+Criteri dei metadati delle foto per [la proprietà System.Image.ColorSpace.](../properties/props-system-image-colorspace.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
-\_ \_ Spazio colore immagine pkey
+PKEY \_ Image \_ ColorSpace
 
 ### <a name="containers"></a>Contenitori
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI2 VT
+Interfaccia utente \_ VT2
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,18 +37,18 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40961} | ushort      |
-| 2     | /XMP/EXIF: spazio colore          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
+| 2     | /xmp/exif:ColorSpace          | unicode     |
 
 
 
@@ -60,8 +60,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40961} | ushort      |
-| 2     | /XMP/EXIF: spazio colore          | unicode     |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
+| 2     | /xmp/exif:ColorSpace          | unicode     |
 
 
 
@@ -73,8 +73,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 40961} |
-| 2     | /XMP/EXIF: spazio colore          |
+| 1     | /app1/ifd/exif/{ushort=40961} |
+| 2     | /xmp/exif:colorspace          |
 
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 40961} | ushort      |
-| 2     | /IFD/XMP/EXIF: spazio colore | unicode     |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
+| 2     | /ifd/xmp/exif:ColorSpace | unicode     |
 
 
 
@@ -101,8 +101,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     | Formato disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 40961} | ushort      |
-| 2     | /IFD/XMP/EXIF: spazio colore | unicode     |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
+| 2     | /ifd/xmp/exif:ColorSpace | unicode     |
 
 
 
@@ -114,8 +114,8 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{ushort = 40961} |
-| 2     | /IFD/XMP/EXIF: spazio colore |
+| 1     | /ifd/exif/{ushort=40961} |
+| 2     | /ifd/xmp/exif:colorspace |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. image. spazio colore](../properties/props-system-image-colorspace.md)
+[System.Image.ColorSpace](../properties/props-system-image-colorspace.md)
 </dt> </dl>
 
  

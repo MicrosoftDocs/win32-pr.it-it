@@ -1,7 +1,7 @@
 ---
 description: Restituisce un dichiaratore da un codice FVF (Flexible Vertex Format).
 ms.assetid: 0272239c-0873-4a5c-b046-541f4ba603f4
-title: Funzione D3DXDeclaratorFromFVF (D3DX9Mesh. h)
+title: Funzione D3DXDeclaratorFromFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: de5360c7f9bd28d4c97184f985f06e48ca0002d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd7122ccad0e2f12821892c49a08348ffd6cd9d171cc652e5f2f05853fe61e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526183"
 ---
-# <a name="d3dxdeclaratorfromfvf-function"></a>D3DXDeclaratorFromFVF (funzione)
+# <a name="d3dxdeclaratorfromfvf-function"></a>Funzione D3DXDeclaratorFromFVF
 
 Restituisce un dichiaratore da un codice FVF (Flexible Vertex Format).
 
@@ -41,21 +41,21 @@ HRESULT D3DXDeclaratorFromFVF(
 
 <dl> <dt>
 
-*FVF* \[ in\]
+*FVF* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinazione di [D3DFVF](d3dfvf.md) che descrive il FVF da cui generare la matrice di dichiaratori restituita.
+Combinazione [di D3DFVF](d3dfvf.md) che descrive il file FVF da cui generare la matrice del dichiaratore restituita.
 
 </dd> <dt>
 
-*Dichiarazione* \[ di in uscita\]
+*Dichiarazione* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matrice di elementi [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrive il formato del vertice dei vertici della mesh. Il limite superiore della matrice di dichiaratori è [**Max \_ FVF \_ decl \_ size**](./max-fvf-decl-size.md).
+Matrice di [**elementi D3DVERTEXELEMENT9**](d3dvertexelement9.md) che descrivono il formato dei vertici della mesh. Il limite superiore di questa matrice di dichiaratori è [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md).
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Se la funzione ha esito positivo, il valore restituito è D3D \_ OK. Se la funzi
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRM_LICENSE_FILTER (wmdrmsdk. h)
-description: La \_ struttura del filtro delle licenze WMDRM definisce i \_ parametri di filtro da usare durante la creazione di un'enumerazione delle licenze.
+title: WMDRM_LICENSE_FILTER struttura (Wmdrmsdk.h)
+description: La struttura FILTRO LICENZE WMDRM \_ definisce i parametri di filtro da usare durante la creazione di \_ un'enumerazione delle licenze.
 ms.assetid: 43bbbfdc-1ec4-44a6-8245-96853bbeea86
 keywords:
-- Formato di Windows Media per la struttura WMDRM_LICENSE_FILTER
-- struttura Windows Media Format
+- WMDRM_LICENSE_FILTER struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9200bea0d74b7c9a84c5731072e2e65bca81b6cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94dc65758c7c5a25d31dd9fdb2d0fcd5cfa65debfff3defab4b88280a5ff3b3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698138"
 ---
-# <a name="wmdrm_license_filter-structure"></a>Struttura del filtro delle \_ licenze WMDRM \_
+# <a name="wmdrm_license_filter-structure"></a>Struttura DEL FILTRO LICENZE WMDRM \_ \_
 
-La struttura del **\_ \_ filtro delle licenze WMDRM** definisce i parametri di filtro da usare durante la creazione di un'enumerazione delle licenze.
+La **struttura FILTRO LICENZE WMDRM \_ \_** definisce i parametri di filtro da usare durante la creazione di un'enumerazione delle licenze.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -54,27 +54,27 @@ Specifica un numero di versione minimo per le licenze restituite.
 **bstrKID**
 </dt> <dd>
 
-Specifica un ID chiave per il filtro delle licenze. Nell'enumerazione verranno incluse solo le licenze con l'ID chiave specificato.
+Specifica un ID chiave per cui filtrare le licenze. Nell'enumerazione verranno incluse solo le licenze con l'ID chiave specificato.
 
 </dd> <dt>
 
 **bstrRights**
 </dt> <dd>
 
-Specifica un set di diritti per filtrare le licenze per. Nell'enumerazione verranno incluse solo le licenze che forniscono tutti i diritti specificati.
+Specifica un set di diritti per cui filtrare le licenze. Nell'enumerazione verranno incluse solo le licenze che forniscono tutti i diritti specificati.
 
 </dd> <dt>
 
 **bstrAllowedSourceIDs**
 </dt> <dd>
 
-Specifica le origini del contenuto protetto da includere nella ricerca di licenze.
+Specifica le origini del contenuto protetto da includere nella ricerca delle licenze.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata dal metodo [**IWMDRMLicenseManagement:: CreateLicenseEnumeration**](iwmdrmlicensemanagement-createlicenseenumeration.md) .
+Questa struttura viene usata dal [**metodo IWMDRMLicenseManagement::CreateLicenseEnumeration.**](iwmdrmlicensemanagement-createlicenseenumeration.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,7 +82,7 @@ Questa struttura viene utilizzata dal metodo [**IWMDRMLicenseManagement:: Create
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

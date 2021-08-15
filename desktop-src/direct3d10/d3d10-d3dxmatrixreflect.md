@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f96224c881dcd5db2cc1c356003ab96e8a626900
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c744c529025e0bfa1a619d41cc3e564c2be3203887b1ebbbbe047542ccce3370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810036"
 ---
 # <a name="d3dxmatrixreflect-function-d3dx10mathh"></a>Funzione D3DXMatrixReflect (D3DX10Math.h)
 
@@ -55,7 +55,7 @@ Puntatore alla [**struttura D3DXMATRIX**](d3d10-d3dxmatrix.md) che rappresenta i
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntatore [**all'oggetto D3DXPLANE di origine.**](d3d10-d3dxplane.md)
+Puntatore all'oggetto [**D3DXPLANE di origine.**](d3d10-d3dxplane.md)
 
 </dd> </dl>
 

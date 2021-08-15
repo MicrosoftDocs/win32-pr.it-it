@@ -1,6 +1,6 @@
 ---
-title: Identificatori del modulo di trasparenza predefinito (Fwpmu. h)
-description: Gli identificatori per i moduli di chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
+title: Identificatori di modulo di keying predefiniti (Fwpmu.h)
+description: Gli identificatori per i moduli di gestione delle chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 ms.assetid: ba3aaf0f-5524-4d61-bb74-e4714b11b2a9
 topic_type:
 - apiref
@@ -14,37 +14,37 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9e6feb726a62de02130d64cef27cd9078395b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b978832d65ab930f172c205144ba352f028c486d4d04c6f680ee963c6cf2ae2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951340"
 ---
-# <a name="built-in-keying-module-identifiers"></a>Identificatori di moduli di trasparenza predefiniti
+# <a name="built-in-keying-module-identifiers"></a>Identificatori di moduli di keying predefiniti
 
-Gli identificatori per i moduli di chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
+Gli identificatori per i moduli di gestione delle chiavi incorporati in Windows Filtering Platform (WFP) sono rappresentati da un GUID.
 
 Questi identificatori sono definiti nel modo seguente.
 
 <dl> <dt>
 
-<span id="FWPM_KEYING_MODULE_IKE"></span><span id="fwpm_keying_module_ike"></span>**\_ \_ IKE modulo di FWPM delle chiavi \_**
+<span id="FWPM_KEYING_MODULE_IKE"></span><span id="fwpm_keying_module_ike"></span>**FWPM \_ KEYING \_ MODULE \_ IKE**
 </dt> <dd> <dl> <dt>
 
 
 
-Modulo di chiave protocollo IKE (IKE).
+Modulo di Exchange IKE (Internet Key Exchange).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**\_IKEV2 del \_ modulo \_ FWPM**
+<span id="FWPM_KEYING_MODULE_IKEV2"></span><span id="fwpm_keying_module_ikev2"></span>**MODULO DI KEYING FWPM \_ \_ \_ IKEV2**
 </dt> <dd> <dl> <dt>
 
 
 
-Modulo di chiave protocollo IKE versione 2 (IKEv2).
+Modulo di Exchange Chiave Internet versione 2 (IKEv2).
 
 > [!Note]  
 > Disponibile solo in Windows Server 2008 R2 e Windows 7.
@@ -54,12 +54,12 @@ Modulo di chiave protocollo IKE versione 2 (IKEv2).
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**\_AUTHIP del \_ modulo \_ FWPM**
+<span id="FWPM_KEYING_MODULE_AUTHIP"></span><span id="fwpm_keying_module_authip"></span>**MODULO FWPM \_ KEYING \_ MODULE \_ AUTHIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Modulo di chiavi AuthIP.
+Modulo di creazione delle chiavi AuthIP.
 
 
 </dt> </dl> </dd> </dl>
@@ -70,9 +70,9 @@ Modulo di chiavi AuthIP.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: Una striscia di linea è una primitiva composta da segmenti di linea collegati.
+description: Una striscia di linee è una primitiva costituita da segmenti di linea connessi.
 ms.assetid: 73905718-a4c6-4f73-beef-4cccac7eea8c
-title: Strisce di linea
+title: Strisce di linee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dee7eb79b583ad04dc0ed576a7d9426e8dda9fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6dd8ba98518cac542a9b8272e4f96494889ef24f269744626aa24e882c7af509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104521953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118799633"
 ---
-# <a name="line-strips"></a>Strisce di linea
+# <a name="line-strips"></a>Strisce di linee
 
-Una striscia di linea è una primitiva composta da segmenti di linea collegati. L'applicazione può usare strisce di riga per la creazione di poligoni che non sono chiusi. Un poligono chiuso è un poligono il cui ultimo vertice è connesso al primo vertice da un segmento di linea. Se l'applicazione crea poligoni in base alle strisce di riga, non è garantito che i vertici siano complanari.
+Una striscia di linee è una primitiva costituita da segmenti di linea connessi. L'applicazione può usare strisce di linee per la creazione di poligoni non chiusi. Un poligono chiuso è un poligono il cui ultimo vertice è connesso al primo vertice da un segmento di linea. Se l'applicazione crea poligoni basati su strisce di linee, non è garantito che i vertici siano coplanari.
 
-Nell'illustrazione seguente viene mostrata una striscia di riga sottoposta a rendering.
+La figura seguente mostra una striscia di linee sottoposta a rendering.
 
-![illustrazione di una striscia di linea](images/linstrip.gif)
+![illustrazione di una striscia di linee](images/linstrip.gif)
 
-Nel codice seguente viene illustrato come creare vertici per questa striscia di riga.
+Il codice seguente illustra come creare vertici per questa striscia di linee.
 
 
 ```
@@ -41,7 +41,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-L'esempio di codice seguente illustra come eseguire il rendering di una striscia di riga in Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
+L'esempio di codice seguente illustra come eseguire il rendering di una striscia di linee in Direct3D 9 [**usando IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
 
 ```

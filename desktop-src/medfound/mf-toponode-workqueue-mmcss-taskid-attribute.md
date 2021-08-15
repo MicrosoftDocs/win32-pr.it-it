@@ -1,19 +1,19 @@
 ---
-description: Specifica un identificatore di attività MMCSS (Multimedia Class Scheduler Service) per un ramo della topologia.
+description: Specifica un identificatore di attività del servizio Utilità di pianificazione classi multimediali (MMCSS) per un ramo della topologia.
 ms.assetid: ccecc1e6-2d30-4e89-849f-c3acad97f312
-title: Attributo MF_TOPONODE_WORKQUEUE_MMCSS_TASKID (Mfidl. h)
+title: MF_TOPONODE_WORKQUEUE_MMCSS_TASKID attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53af119c58d725d42ec5737ffd9bf96286a65ac1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bf75dc911c9d00cab2d21d937ef16a43b38cc4271299c6fae4f2ed7381ec63a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104527409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739629"
 ---
-# <a name="mf_toponode_workqueue_mmcss_taskid-attribute"></a>\_TOPONODE \_ WORKQUEUE \_ MMCSS \_ taskId
+# <a name="mf_toponode_workqueue_mmcss_taskid-attribute"></a>Attributo MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID
 
-Specifica un identificatore di attività MMCSS (Multimedia Class Scheduler Service) per un ramo della topologia.
+Specifica un identificatore di attività del servizio Utilità di pianificazione classi multimediali (MMCSS) per un ramo della topologia.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,18 +21,18 @@ Specifica un identificatore di attività MMCSS (Multimedia Class Scheduler Servi
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di origine (**\_ \_ \_ nodo SOURCESTREAM topologia MF**). Questo attributo è facoltativo.
+Questo attributo si applica ai nodi di origine (**MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**). Questo attributo è facoltativo.
 
 Questo attributo viene ignorato a meno che non vengano impostati anche gli attributi seguenti:
 
--   [**\_ \_ ID WORKQUEUE MF \_ TOPONODE**](mf-toponode-workqueue-id-attribute.md)
--   [**Classe MMCSS di MF \_ TOPONODE \_ WORKQUEUE \_ \_**](mf-toponode-workqueue-mmcss-class-attribute.md)
+-   [**ID DELLA \_ CODA DI LAVORO \_ TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
+-   [**CLASSE \_ MMCSS MF TOPONODE \_ WORKQUEUE \_ \_**](mf-toponode-workqueue-mmcss-class-attribute.md)
 
-Se l'applicazione registra uno dei propri thread con MMCSS, è possibile usare questo attributo per associare la coda di lavoro della topologia al gruppo MMCSS dell'applicazione. Impostare il valore dell'attributo uguale all'identificatore di attività ricevuto dall'applicazione quando è stato registrato con MMCSS. L'identificatore di attività viene restituito nel parametro *TaskIndex* della funzione [**AvSetMmThreadCharacteristics**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadcharacteristicsa) . Per ulteriori informazioni, vedere l'argomento [funzioni di processo e thread](../procthread/process-and-thread-functions.md).
+Se l'applicazione registra uno dei propri thread con MMCSS, è possibile usare questo attributo per associare la coda di lavoro della topologia al gruppo MMCSS dell'applicazione. Impostare il valore dell'attributo uguale all'identificatore di attività ricevuto dall'applicazione quando è stata registrata con MMCSS. L'identificatore dell'attività viene restituito nel *parametro TaskIndex* della [**funzione AvSetMmThreadCharacteristics.**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadcharacteristicsa) Per altre informazioni, vedere l'argomento [Funzioni di processo e thread.](../procthread/process-and-thread-functions.md)
 
-Se si desidera che MMCSS assegni un nuovo identificatore di attività per la topologia, impostare l'attributo della [**\_ classe MF TOPONODE \_ WORKQUEUE \_ MMCSS \_**](mf-toponode-workqueue-mmcss-class-attribute.md) , ma non impostare l'attributo **MF \_ TOPONODE \_ WORKQUEUE \_ \_** MMCSS taskId.
+Se si desidera che MMCSS assegni un nuovo identificatore di attività per la topologia, impostare l'attributo [**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ CLASS,**](mf-toponode-workqueue-mmcss-class-attribute.md) ma non impostare l'attributo **MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,9 +40,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -50,13 +50,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

@@ -3,19 +3,19 @@ description: Metodo di overload che rilascia la memoria che contiene il percorso
 audience: developer
 ms.assetid: 9164d7b2-15b8-4b73-ab8c-68ed45692ea0
 ms.tgt_platform: multiple
-title: 'Metodi CObjectPathParser:: Free (ObjPath. h)'
+title: Metodi CObjectPathParser::Free (ObjPath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 86494e569f68d8eff8b691c648ec5e221b28b39d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e7e5e366d96d4c8b5c6d82f177a480114c5d6356759c8db46389c809aea7137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118819807"
 ---
-# <a name="cobjectpathparserfree-methods"></a>Metodi CObjectPathParser:: Free
+# <a name="cobjectpathparserfree-methods"></a>Metodi CObjectPathParser::Free
 
-\[La classe [**CObjectPathParser**](/windows/win32/api/objpath/nl-objpath-cobjectpathparser) fa parte del Framework del provider WMI, che è ora considerato nello stato finale e non sono disponibili ulteriori sviluppi, miglioramenti o aggiornamenti per i problemi non correlati alla sicurezza che interessano queste librerie. Le [API mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devono essere usate per tutte le nuove attività di sviluppo.\]
+\[La [**classe CObjectPathParser**](/windows/win32/api/objpath/nl-objpath-cobjectpathparser) fa parte del framework del provider WMI che è ora considerato in stato finale e non saranno disponibili altri aggiornamenti, miglioramenti o sviluppo per problemi non correlati alla sicurezza che interessano queste librerie. Le [API MI devono essere usate](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) per tutti i nuovi sviluppi.\]
 
 Metodo di overload che rilascia la memoria che contiene il percorso.
 
@@ -25,8 +25,8 @@ Metodo di overload che rilascia la memoria che contiene il percorso.
 
 | Metodo                                                                     | Descrizione                                                                          |
 |:---------------------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [**Gratuito (LPWSTR)**](/windows/win32/api/objpath/nf-objpath-cobjectpathparser-free(lpwstr))                     | Rilascia la memoria che contiene il percorso non analizzato.<br/>                      |
-| [**Gratuito (ParsedObjectPath)**](/windows/win32/api/objpath/nf-objpath-cobjectpathparser-free(parsedobjectpath)) | Rilascia la memoria che contiene la struttura con il percorso analizzato.<br/> |
+| [**Free(LPWSTR)**](/windows/win32/api/objpath/nf-objpath-cobjectpathparser-free(lpwstr))                     | Rilascia la memoria che contiene il percorso non analizzato.<br/>                      |
+| [**Free(ParsedObjectPath)**](/windows/win32/api/objpath/nf-objpath-cobjectpathparser-free(parsedobjectpath)) | Rilascia la memoria che contiene la struttura con il percorso analizzato.<br/> |
 
 
 
@@ -38,8 +38,8 @@ Metodo di overload che rilascia la memoria che contiene il percorso.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                                                                                      |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                                                                                |
-| Intestazione<br/>                   | <dl> <dt>ObjPath. h (include ObjPath. h)</dt> </dl>                                                      |
-| Libreria<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
+| Intestazione<br/>                   | <dl> <dt>ObjPath.h (include ObjPath.h)</dt> </dl>                                                      |
+| Libreria<br/>                  | <dl> <dt>FrameDyn.lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Costanti WINBIO_SENSOR_MODE (tipi WinBio \_ . h)
-description: Impostare la modalità adattatore del sensore.
+title: WINBIO_SENSOR_MODE costanti (Winbio \_ types.h)
+description: Impostare la modalità dell'adattatore del sensore.
 ms.assetid: fceaed5c-de59-4da7-9d7a-adeef353292f
 topic_type:
 - apiref
@@ -16,26 +16,26 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fedf419a64b3629d0cccbcb3d56de31a4adf383
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e8f0cb4592931629e6feec4fff4a6ac3e5986d3b199afee719dd8dae67a9580
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909329"
 ---
-# <a name="winbio_sensor_mode-constants"></a>\_Costanti della \_ modalità sensore WINBIO
+# <a name="winbio_sensor_mode-constants"></a>Costanti \_ SENSOR \_ MODE WINBIO
 
-I valori seguenti vengono usati nella funzione [**SensorAdapterSetMode**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_mode_fn) per impostare la modalità adattatore del sensore.
+I valori seguenti vengono usati nella funzione [**SensorAdapterSetMode**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_mode_fn) per impostare la modalità dell'adattatore del sensore.
 
 
 
 | Costante                                                                                                                                                                                                        | Descrizione                                                                                                                                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_SENSOR_UNKNOWN_MODE"></span><span id="winbio_sensor_unknown_mode"></span><dl> <dt>**\_ \_ modalità sconosciuta del sensore WINBIO \_**</dt> </dl>          | La modalità operativa non è nota.<br/>                                                                                                                    |
-| <span id="WINBIO_SENSOR_BASIC_MODE"></span><span id="winbio_sensor_basic_mode"></span><dl> <dt>**\_modalità di \_ base del sensore WINBIO \_**</dt> </dl>                | Usare il sensore in modalità di base. Il sensore funge solo da dispositivo di acquisizione. Non vengono usate le funzionalità di elaborazione onboarding o di archiviazione esistenti.<br/> |
-| <span id="WINBIO_SENSOR_ADVANCED_MODE"></span><span id="winbio_sensor_advanced_mode"></span><dl> <dt>**\_ \_ modalità avanzata del sensore WINBIO \_**</dt> </dl>       | Usare il sensore in modalità avanzata. Il sensore può acquisire esempi ed eseguire funzioni di archiviazione e corrispondenti.<br/>                                     |
-| <span id="WINBIO_SENSOR_NAVIGATION_MODE"></span><span id="winbio_sensor_navigation_mode"></span><dl> <dt>**\_modalità di \_ navigazione del sensore WINBIO \_**</dt> </dl> | Utilizzare il sensore come pad del mouse. Questa opzione non è attualmente supportata.<br/>                                                                                 |
-| <span id="WINBIO_SENSOR_SLEEP_MODE"></span><span id="winbio_sensor_sleep_mode"></span><dl> <dt>**\_ \_ modalità sospensione sensore \_ WINBIO**</dt> </dl>                | Utilizzare il sensore in modalità sospensione.<br/>                                                                                                                   |
+| <span id="WINBIO_SENSOR_UNKNOWN_MODE"></span><span id="winbio_sensor_unknown_mode"></span><dl> <dt>**MODALITÀ SCONOSCIUTA DEL SENSORE WINBIO \_ \_ \_**</dt> </dl>          | La modalità operativa non è nota.<br/>                                                                                                                    |
+| <span id="WINBIO_SENSOR_BASIC_MODE"></span><span id="winbio_sensor_basic_mode"></span><dl> <dt>**MODALITÀ DI BASE DEL SENSORE WINBIO \_ \_ \_**</dt> </dl>                | Usare il sensore in modalità di base. Il sensore funge solo da dispositivo di acquisizione. Le funzionalità di elaborazione o archiviazione di onboarding esistenti non vengono usate.<br/> |
+| <span id="WINBIO_SENSOR_ADVANCED_MODE"></span><span id="winbio_sensor_advanced_mode"></span><dl> <dt>**MODALITÀ AVANZATA DEL SENSORE WINBIO \_ \_ \_**</dt> </dl>       | Usare il sensore in modalità avanzata. Il sensore può acquisire campioni ed eseguire funzioni di corrispondenza e archiviazione.<br/>                                     |
+| <span id="WINBIO_SENSOR_NAVIGATION_MODE"></span><span id="winbio_sensor_navigation_mode"></span><dl> <dt>**MODALITÀ DI NAVIGAZIONE DEL SENSORE WINBIO \_ \_ \_**</dt> </dl> | Usare il sensore come un blocco del mouse. Questa opzione non è attualmente supportata.<br/>                                                                                 |
+| <span id="WINBIO_SENSOR_SLEEP_MODE"></span><span id="winbio_sensor_sleep_mode"></span><dl> <dt>**MODALITÀ SOSPENSIONE SENSORE WINBIO \_ \_ \_**</dt> </dl>                | Usare il sensore in modalità sospensione.<br/>                                                                                                                   |
 
 
 
@@ -45,9 +45,9 @@ I valori seguenti vengono usati nella funzione [**SensorAdapterSetMode**](/windo
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                                                    |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                                       |
-| Intestazione<br/>                   | <dl> <dt>\_Tipi WinBio. h (includere WinBio. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                                       |
+| Intestazione<br/>                   | <dl> <dt>Winbio \_ types.h (include Winbio.h)</dt> </dl> |
 
 
 

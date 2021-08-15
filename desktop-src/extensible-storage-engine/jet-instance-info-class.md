@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_INSTANCE_INFO Class'
-title: Classe JET_INSTANCE_INFO
+description: 'Altre informazioni su: JET_INSTANCE_INFO classe'
+title: JET_INSTANCE_INFO classe
 TOCTitle: JET_INSTANCE_INFO class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b06758bef18ed80b26e245afc5cfeb4dfda637a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c88252b824c1cba0e432ebae356619a9c6f79bf10d2b4b3989b096fe2daeb3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104057941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980031"
 ---
-# <a name="jet_instance_info-class"></a>Classe JET_INSTANCE_INFO
+# <a name="jet_instance_info-class"></a>JET_INSTANCE_INFO classe
 
-Riceve informazioni sulle istanze di database in esecuzione quando utilizzate con le funzioni JetGetInstanceInfo e JetOSSnapshotFreeze.
+Riceve informazioni sull'esecuzione di istanze di database quando vengono usate con le funzioni JetGetInstanceInfo e JetOSSnapshotFreeze.
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,6 +65,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO membri](./jet-instance-info-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

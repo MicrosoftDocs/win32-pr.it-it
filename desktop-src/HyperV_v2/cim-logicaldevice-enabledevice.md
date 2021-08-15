@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5a6da7695d7e611223a3a257be23add16094b533
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a01d1b206d0d38f74c5701c8c088506792cb6ca6f997b9e0280adcc61e5a8633
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648526"
 ---
-# <a name="enabledevice-method-of-the-cim_logicaldevice-class"></a>Metodo EnableDevice della classe CIM \_ LogicalDevice
+# <a name="enabledevice-method-of-the-cim_logicaldevice-class"></a>Metodo EnableDevice della classe \_ CIM LogicalDevice
 
 Il metodo EnableDevice è stato deprecato al posto del metodo RequestStateChange più generale che si sovrappone direttamente alla funzionalità fornita da questo metodo.
 
-Richiede l'abilitazione di LogicalDevice ("Enabled" parametro di input = TRUE) o disabilitato (= FALSE). In caso di esito positivo, le proprietà StatusInfo/EnabledState del dispositivo devono riflettere lo stato desiderato (abilitato/disabilitato). Si noti che la funzione di questo metodo si sovrappone alla proprietà RequestedState. RequestedState è stato aggiunto al modello per mantenere un record (ovvero un valore permanente) dell'ultima richiesta di stato. Per richiamare il metodo EnableDevice, è necessario impostare la proprietà RequestedState in modo appropriato.
+Richiede che LogicalDevice sia abilitato ("Enabled" parametro di input = TRUE) o disabilitato (= FALSE). In caso di esito positivo, le proprietà StatusInfo/EnabledState del dispositivo devono riflettere lo stato desiderato (abilitato/disabilitato). Si noti che la funzione di questo metodo si sovrappone alla proprietà RequestedState. RequestedState è stato aggiunto al modello per mantenere un record (ad esempio, un valore persistente) dell'ultima richiesta di stato. Richiamare il metodo EnableDevice deve impostare la proprietà RequestedState in modo appropriato.
 
-Il codice restituito deve essere 0 se la richiesta è stata eseguita correttamente, 1 se la richiesta non è supportata e un altro valore se si è verificato un errore. In una sottoclasse è possibile specificare il set di possibili codici restituiti utilizzando un qualificatore ValueMap nel metodo. Le stringhe a cui è stato convertito il contenuto ValueMap possono anche essere specificate nella sottoclasse come qualificatore della matrice di valori.
+Il codice restituito deve essere 0 se la richiesta è stata eseguita correttamente, 1 se la richiesta non è supportata e un altro valore se si è verificato un errore. In una sottoclasse è possibile specificato il set di codici restituiti possibili, usando un qualificatore ValueMap nel metodo. Le stringhe in cui il contenuto di ValueMap viene 'convertito' possono essere specificate anche nella sottoclasse come qualificatore di matrice Values.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,16 +43,16 @@ uint32 EnableDevice(
 
 <dl> <dt>
 
-*Abilitato* \[ in\]
+*Abilitato* \[ Pollici\]
 </dt> <dd>
 
-Se TRUE, Abilita il dispositivo, se FALSE Disabilita il dispositivo.
+Se TRUE abilita il dispositivo, se FALSE disabilita il dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un errore.
+Restituisce un valore 0 se l'operazione ha esito positivo. In caso contrario, restituisce un errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 8.1<br/>                                                                                  |
-| Server minimo supportato<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Server minimo supportato<br/> | R2 per Windows Server 2012<br/>                                                                       |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -72,7 +72,7 @@ Restituisce 0 in caso di esito positivo; in caso contrario, restituisce un error
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

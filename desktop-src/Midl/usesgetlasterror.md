@@ -1,9 +1,9 @@
 ---
 title: usesgetlasterror (attributo)
-description: L'attributo \ usesgetlasterror \ segnala al chiamante che è possibile chiamare GetLastError per recuperare il codice di errore.
+description: L'attributo \ usesgetlasterror\ segnala al chiamante che può chiamare GetLastError per recuperare il codice di errore.
 ms.assetid: 8e9ab8b5-f446-4aab-bb40-b6f78799e18e
 keywords:
-- attributo MIDL di usesgetlasterror
+- Attributo usesgetlasterror MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f403430f70fde71696ec2a35a34161f08bada9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 239486792eb218d51c305f9955331e90c6c165586153dab167f2e19d3a0324e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641036"
 ---
 # <a name="usesgetlasterror-attribute"></a>usesgetlasterror (attributo)
 
-L'attributo **\[ \] usesgetlasterror** segnala al chiamante che è possibile chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
+**\[ L'attributo usesgetlasterror \]** segnala al chiamante che può chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
 
 ``` syntax
 [
@@ -37,24 +37,24 @@ module module-name
 
 <dl> <dt>
 
-*Module-attributi* 
+*attributi del modulo* 
 </dt> <dd>
 
 Zero o più attributi MIDL che verranno applicati al [**modulo**](module.md).
 
 </dd> <dt>
 
-*nome modulo* 
+*module-name* 
 </dt> <dd>
 
 Nome dell'identificatore del [**modulo**](module.md).
 
 </dd> <dt>
 
-*ID di ingresso* 
+*id voce* 
 </dt> <dd>
 
-Specifica il punto di ingresso del modulo, ovvero il nome della funzione o il numero di identificazione intero.
+Specifica il punto di ingresso del modulo, il nome della funzione o il numero di identificazione di numeri interi.
 
 </dd> <dt>
 
@@ -65,14 +65,14 @@ Zero o più attributi MIDL che verranno applicati alla procedura remota.
 
 </dd> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
 Tipo di dati che la procedura remota restituirà al completamento.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Nome della procedura remota come definito nel file IDL.
@@ -88,7 +88,7 @@ Zero o più parametri per la procedura remota.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile impostare l'attributo **\[ \] usesgetlasterror** in un punto di ingresso del modulo, se tale punto di ingresso usa la funzione di Windows [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire i codici di errore. L'attributo indica al chiamante che, se si verifica un errore durante la chiamata a tale funzione, il chiamante può quindi chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
+**\[ L'attributo usesgetlasterror \]** può essere impostato in un punto di ingresso del modulo, se tale punto di ingresso usa la Windows [**setLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) per restituire i codici di errore. L'attributo indica al chiamante che, se si verifica un errore durante la chiamata a tale funzione, il chiamante può quindi chiamare [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) per recuperare il codice di errore.
 
 ## <a name="examples"></a>Esempi
 
@@ -117,12 +117,12 @@ module MyModule
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

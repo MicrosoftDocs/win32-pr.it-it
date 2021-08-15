@@ -1,7 +1,7 @@
 ---
 description: Crea un oggetto di trasformazione colore che implementa IWICColorTransform. Questo oggetto COM supporta il modello a oggetti a thread libero.
 ms.assetid: 43DCC3FB-B687-45F0-AAC6-DED76214716C
-title: Funzione WICCreateColorTransform_Proxy
+title: WICCreateColorTransform_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - WindowsCodecsExt.dll
-ms.openlocfilehash: 451b549aa44e785e406f50ccf4eb7a8317edf6b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89c7476bc32546f0a9fe77a8731f239702c6a2a874dbfb830b9d4bbafbd872b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709218"
 ---
-# <a name="wiccreatecolortransform_proxy-function"></a>\_Funzione proxy WICCreateColorTransform
+# <a name="wiccreatecolortransform_proxy-function"></a>Funzione proxy WICCreateColorTransform \_
 
-Crea un oggetto di trasformazione colore che implementa [**IWICColorTransform**](/windows/win32/api/wincodec/nn-wincodec-iwiccolortransform). Questo oggetto COM supporta il modello a oggetti a thread libero.
+Crea un oggetto di trasformazione colore che implementa [**IWICColorTransform.**](/windows/win32/api/wincodec/nn-wincodec-iwiccolortransform) Questo oggetto COM supporta il modello a oggetti a thread libero.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ HRESULT WINAPI WICCreateColorTransform_Proxy(
 
 <dl> <dt>
 
-*ppIColorTransform* \[ out\]
+*ppIColorTransform* \[ Cambio\]
 </dt> <dd>
 
 Trasformazione colore creata.
@@ -48,7 +48,7 @@ Trasformazione colore creata.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 

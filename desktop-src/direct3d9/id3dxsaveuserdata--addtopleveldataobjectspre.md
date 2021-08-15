@@ -1,7 +1,7 @@
 ---
 description: Aggiungere un oggetto di primo livello prima della gerarchia dei frame.
 ms.assetid: ab4bfc3e-58eb-4de6-b080-8b3392b801bf
-title: 'Metodo ID3DXSaveUserData:: AddTopLevelDataObjectsPre (D3dx9anim. h)'
+title: Metodo ID3DXSaveUserData::AddTopLevelDataObjectsPre (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d0194c8c9c6806f96cbe75394e6650ca3e7dc74b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52052a24c34c99260a68cd5cdeaa7487e6b71c086ac30922a06de241de8319ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801163"
 ---
-# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Metodo ID3DXSaveUserData:: AddTopLevelDataObjectsPre
+# <a name="id3dxsaveuserdataaddtopleveldataobjectspre-method"></a>Metodo ID3DXSaveUserData::AddTopLevelDataObjectsPre
 
 Aggiungere un oggetto di primo livello prima della gerarchia dei frame.
 
@@ -40,12 +40,12 @@ HRESULT AddTopLevelDataObjectsPre(
 
 <dl> <dt>
 
-*pXofSave* \[ in\]
+*pXofSave* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILESAVEOBJECT**](id3dxfilesaveobject.md)**
 
-Puntatore a un oggetto di salvataggio file con estensione x. Utilizzare questo puntatore per chiamare [**IDirectXFileSaveObject:: CreateDataObject**](idirectxfilesaveobject--createdataobject.md) per creare l'oggetto dati da salvare. Quindi, chiamare [**IDirectXFileSaveObject:: SaveData**](idirectxfilesaveobject--savedata.md) per salvare i dati.
+Puntatore a un oggetto di salvataggio di file con estensione x. Usare questo puntatore per chiamare [**IDirectXFileSaveObject::CreateDataObject**](idirectxfilesaveobject--createdataobject.md) per creare l'oggetto dati da salvare. Chiamare quindi [**IDirectXFileSaveObject::SaveData**](idirectxfilesaveobject--savedata.md) per salvare i dati.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un oggetto di salvataggio file con estensione x. Utilizzare questo p
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-I valori restituiti da questo metodo sono implementati da un programmatore di applicazioni. In generale, se non si verificano errori, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo per restituire un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR**](./d3dxerr.md), in quanto questa operazione causerà l'esito negativo anche di [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) e restituirà l'errore.
+I valori restituiti di questo metodo vengono implementati da un programmatore di applicazioni. In generale, se non si verifica alcun errore, programmare il metodo per restituire D3D \_ OK. In caso contrario, programmare il metodo in modo che restituisca un messaggio di errore appropriato da [D3DERR](d3derr.md) o [**D3DXERR,**](./d3dxerr.md)perché in questo modo anche [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) avrà esito negativo e restituirà l'errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ I valori restituiti da questo metodo sono implementati da un programmatore di ap
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

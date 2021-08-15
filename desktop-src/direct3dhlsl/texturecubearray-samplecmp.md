@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di TextureCubeArray:: TextureCubeArray SampleCmp'
-description: 'Campiona una trama, usando un valore di confronto per rifiutare gli esempi. | Metodi di TextureCubeArray:: TextureCubeArray SampleCmp'
+title: Metodi di TextureCubeArray::TextureCubeArray SampleCmp
+description: Esempi di una trama, usando un valore di confronto per rifiutare gli esempi. | Metodi di TextureCubeArray::TextureCubeArray SampleCmp
 ms.assetid: 62B5C163-9FB8-4567-B63F-34234C938874
 keywords:
 - Metodi SampleCmp HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7bf2366d9cd4e86c3141e5bc247f2dc03a6f7c76
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7efe4beb49706779c68ee5d70837526295d8ebe5c860b976630923d303a00a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786269"
 ---
-# <a name="texturecubearraysamplecmp-methods"></a>Metodi TextureCubeArray:: SampleCmp
+# <a name="texturecubearraysamplecmp-methods"></a>Metodi di TextureCubeArray::SampleCmp
 
-Campiona una trama, usando un valore di confronto per rifiutare gli esempi.
+Esempi di una trama, usando un valore di confronto per rifiutare gli esempi.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,9 +29,9 @@ Campiona una trama, usando un valore di confronto per rifiutare gli esempi.
 
 | Metodo                                                                                        | Descrizione                                                                                                                                                                           |
 |:----------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SampleCmp (S, float, float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Campiona una trama, usando un valore di confronto per rifiutare gli esempi.<br/>                                                                                                             |
-| [**SampleCmp (S, float, float, float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in.<br/>                                     |
-| [**SampleCmp (S, float, float, float, uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Esegue il campionamento di una trama, usando un valore di confronto per rifiutare esempi, con un valore facoltativo per bloccare i valori del livello di dettaglio (LOD) di esempio in. Restituisce lo stato dell'operazione.<br/> |
+| [**SampleCmp(S,float,float)**](dx-graphics-hlsl-to-samplecmp.md)                             | Esempi di una trama, usando un valore di confronto per rifiutare gli esempi.<br/>                                                                                                             |
+| [**SampleCmp(S,float,float,float)**](tcubearray-samplecmp-s-float-float-float-.md)           | Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione.<br/>                                     |
+| [**SampleCmp(S,float,float,float,uint)**](tcubearray-samplecmp-s-float-float-float-uint-.md) | Campionare una trama, usando un valore di confronto per rifiutare i campioni, con un valore facoltativo a cui impostare i valori di livello di dettaglio (LOD) del campione. Restituisce lo stato dell'operazione.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Campiona una trama, usando un valore di confronto per rifiutare gli esempi.
 [**TextureCubeArray**](texturecubearray.md)
 </dt> <dt>
 
-[Texture-oggetto](dx-graphics-hlsl-to-type.md)
+[Oggetto texture](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

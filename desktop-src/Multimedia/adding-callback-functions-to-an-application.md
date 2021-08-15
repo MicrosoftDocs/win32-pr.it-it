@@ -4,23 +4,23 @@ description: Aggiunta di funzioni di callback a un'applicazione
 ms.assetid: b7bde1be-b229-4e00-8906-22d7dcf9ea04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d4f5f3dc43227f92305032decaf917bf521d95b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6dcd72b1a95a416398f482b90d7cd15cd80e1698a66a4b1c482bc92fc523ab2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941829"
 ---
 # <a name="adding-callback-functions-to-an-application"></a>Aggiunta di funzioni di callback a un'applicazione
 
-Un'applicazione può registrare le funzioni di callback con la finestra di acquisizione in modo da notificare l'applicazione nelle circostanze seguenti:
+Un'applicazione può registrare le funzioni di callback con la finestra di acquisizione in modo da notificare all'applicazione nelle circostanze seguenti:
 
 -   Lo stato cambia
 -   Si verificano errori
--   Il frame video e i buffer audio diventano disponibili
--   L'applicazione deve cedere durante l'acquisizione di flussi
+-   Diventano disponibili buffer audio e fotogrammi video
+-   L'applicazione deve produrre durante l'acquisizione dello streaming
 
-Nell'esempio seguente viene creata una finestra di acquisizione e vengono registrate le funzioni stato, errore, flusso video e callback frame nel ciclo di elaborazione dei messaggi di un'applicazione. Include inoltre un'istruzione di esempio per la disabilitazione di una funzione di callback. Gli esempi successivi mostrano semplici funzioni di callback di stato, errore e frame.
+Nell'esempio seguente viene creata una finestra di acquisizione e vengono registrate le funzioni di stato, errore, flusso video e callback dei fotogrammi nel ciclo di elaborazione dei messaggi di un'applicazione. Include anche un'istruzione di esempio per disabilitare una funzione di callback. Negli esempi successivi vengono mostrate semplici funzioni di callback di stato, errore e frame.
 
 
 ```C++
@@ -77,12 +77,12 @@ case WM_CLOSE:
 
 <dl> <dt>
 
-[Uso di acquisizione video](using-video-capture.md)
+[Uso dell'acquisizione video](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,8 +3,8 @@ title: Interfaccia IWMDRMDeviceApp2
 description: L'interfaccia IWMDRMDeviceApp2 estende IWMDRMDeviceApp fornendo una nuova versione del metodo QueryDeviceStatus.
 ms.assetid: a7e28d5a-041f-4102-97db-0c77ca146e26
 keywords:
-- Interfaccia IWMDRMDeviceApp2 Windows Media Gestione dispositivi
-- Interfaccia IWMDRMDeviceApp2 Windows Media Gestione dispositivi, descritta
+- Interfaccia IWMDRMDeviceApp2 windows Media Device Manager
+- Interfaccia IWMDRMDeviceApp2 windows Media Device Manager , descritta
 topic_type:
 - apiref
 api_name:
@@ -14,33 +14,33 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df4bfdb023198631b16ffa0e511488fa52423c5e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 17bd0d7aa729103a81fca6732ed178ac5ced583566dd353a28716d4933e602ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104334807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584495"
 ---
 # <a name="iwmdrmdeviceapp2-interface"></a>Interfaccia IWMDRMDeviceApp2
 
-L'interfaccia **IWMDRMDeviceApp2** estende [**IWMDRMDeviceApp**](iwmdrmdeviceapp.md) fornendo una nuova versione del metodo [**QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md) . **QueryDeviceStatus2** consente al chiamante di eseguire una query per un requisito DRM specifico.
+**L'interfaccia IWMDRMDeviceApp2** estende [**IWMDRMDeviceApp**](iwmdrmdeviceapp.md) fornendo una nuova versione del [**metodo QueryDeviceStatus.**](iwmdrmdeviceapp-querydevicestatus.md) **QueryDeviceStatus2** consente al chiamante di eseguire una query per un requisito DRM specifico.
 
-Per ottenere questa interfaccia, chiamare **CoCreateInstance** e passare il CLSID \_ WMDRMDeviceApp.
+Per ottenere questa interfaccia, chiamare **CoCreateInstance** e passare CLSID \_ WMDRMDeviceApp.
 
 > [!Note]  
-> Questa interfaccia viene definita nel file di intestazione compilato da WMDRMDeviceApp. idl. Questa intestazione **\# include** "WMDM. h". Potrebbe essere necessario modificare il nome del file in modo che corrisponda all'intestazione compilata da WMDM. idl.
+> Questa interfaccia è definita nel file di intestazione compilato da WMDRMDeviceApp.idl. Questa intestazione **\# include** "wmdm.h". Potrebbe essere necessario modificare questo nome file in modo che corrisponda all'intestazione compilata da WMDM.idl.
 
  
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **IWMDRMDeviceApp2** eredita da [**IWMDRMDeviceApp**](iwmdrmdeviceapp.md). **IWMDRMDeviceApp2** dispone anche di questi tipi di membri:
+**L'interfaccia IWMDRMDeviceApp2** eredita da [**IWMDRMDeviceApp.**](iwmdrmdeviceapp.md) **IWMDRMDeviceApp2** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **IWMDRMDeviceApp2** dispone di questi metodi.
+**L'interfaccia IWMDRMDeviceApp2** include questi metodi.
 
 
 

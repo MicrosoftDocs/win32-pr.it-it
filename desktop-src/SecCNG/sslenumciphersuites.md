@@ -1,7 +1,7 @@
 ---
-description: Enumera i pacchetti di crittografia supportati da un provider del protocollo SSL (Secure Sockets Layer Protocol).
+description: Enumera i pacchetti di crittografia supportati da un provider Secure Sockets Layer protocol (SSL).
 ms.assetid: c12bc422-71c9-44f4-abf7-76902b19d3bd
-title: Funzione SslEnumCipherSuites (Sslprovider. h)
+title: Funzione SslEnumCipherSuites (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 8991842f38f3d3dc3d721cd30ebfb857ad20308a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d9fb40bf6bfebff6d0659640dfb68b718586ac822c8a779a56de300b8d55b73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104345041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906693"
 ---
-# <a name="sslenumciphersuites-function"></a>SslEnumCipherSuites (funzione)
+# <a name="sslenumciphersuites-function"></a>Funzione SslEnumCipherSuites
 
-La funzione **SslEnumCipherSuites** enumera i pacchetti di crittografia supportati da un provider del protocollo SSL ( [*Secure Sockets Layer Protocol*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslEnumCipherSuites** enumera i pacchetti di crittografia supportati da un provider Secure Sockets Layer [*protocol*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ SECURITY_STATUS WINAPI SslEnumCipherSuites(
 
 <dl> <dt>
 
-*hSslProvider* \[ in\]
+*hSslProvider* \[ Pollici\]
 </dt> <dd>
 
 Handle dell'istanza del provider del protocollo SSL.
@@ -53,36 +53,36 @@ Handle dell'istanza del provider del protocollo SSL.
 *hPrivateKey* \[ in, facoltativo\]
 </dt> <dd>
 
-Handle di una [*chiave privata*](/windows/desktop/SecGloss/p-gly). Quando si specifica una chiave privata, **SslEnumCipherSuites** enumera i pacchetti di crittografia compatibili con la chiave privata. Ad esempio, se la chiave privata è una chiave DSS, vengono restituiti solo i pacchetti di \_ crittografia DSS dhe. Se la chiave privata è una chiave RSA, ma non supporta le operazioni di decrittografia non elaborate, i pacchetti di crittografia SSL2 non vengono restituiti.
+Handle di una [*chiave privata.*](/windows/desktop/SecGloss/p-gly) Quando viene specificata una chiave privata, **SslEnumCipherSuites** enumera i pacchetti di crittografia compatibili con la chiave privata. Ad esempio, se la chiave privata è una chiave DSS, vengono restituite solo le suite di crittografia \_ DSS DHE. Se la chiave privata è una chiave RSA, ma non supporta operazioni di decrittografia non elaborata, i pacchetti di crittografia SSL2 non vengono restituiti.
 
-Se non si specifica una chiave privata, impostare questo parametro su **null** .
+Impostare questo parametro su **NULL** quando non si specifica una chiave privata.
 
 > [!Note]  
-> Un handle *hPrivateKey* viene ottenuto chiamando la funzione [**SslOpenPrivateKey**](sslopenprivatekey.md) . Gli handle ottenuti dalla funzione [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) non sono supportati.
+> Un *handle hPrivateKey* viene ottenuto chiamando la [**funzione SslOpenPrivateKey.**](sslopenprivatekey.md) Gli handle ottenuti dalla [**funzione NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) non sono supportati.
 
  
 
 </dd> <dt>
 
-*ppCipherSuite* \[ out\]
+*ppCipherSuite* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [**del \_ \_ \_ pacchetto di crittografia SSL NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) per ricevere l'indirizzo del pacchetto di crittografia successivo nell'elenco.
+Puntatore a una [**struttura \_ \_ CIPHER \_ SUITE SSL NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) per ricevere l'indirizzo della suite di crittografia successiva nell'elenco.
 
 </dd> <dt>
 
-*ppEnumState* \[ in uscita\]
+*ppEnumState* \[ in, out\]
 </dt> <dd>
 
-Puntatore a un buffer che indica la posizione corrente nell'elenco dei pacchetti di crittografia.
+Puntatore a un buffer che indica la posizione corrente nell'elenco di suite di crittografia.
 
-Impostare il puntatore su **null** nella prima chiamata a **SslEnumCipherSuites**. Per ogni chiamata successiva, passare il valore non modificato di nuovo a **SslEnumCipherSuites**.
+Impostare il **puntatore su NULL** alla prima chiamata a **SslEnumCipherSuites**. A ogni chiamata successiva, passare nuovamente il valore non modificato a **SslEnumCipherSuites**.
 
-Quando non sono disponibili altri pacchetti di crittografia, è necessario liberare *ppEnumState* chiamando la funzione [**SslFreeBuffer**](sslfreebuffer.md) .
+Quando non sono disponibili altri pacchetti di crittografia, è necessario liberare *ppEnumState* chiamando la [**funzione SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Questo parametro è riservato per usi futuri.
@@ -95,15 +95,15 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                    | Descrizione                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ Nessun \_**</dt> <dt>0x8009000EL</dt> di memoria </dl>      | La memoria disponibile non è sufficiente per allocare i buffer necessari.<br/> |
-| <dl> <dt>**Nte \_ 0x80090026L \_ handle non valido**</dt> <dt></dt> </dl> | Uno degli handle forniti non è valido.<br/>                     |
-| <dl> <dt>**Nte \_ Nessun \_ altro \_ elemento**</dt> <dt>0x8009002AL</dt> </dl> | Non sono supportati altri pacchetti di crittografia.<br/>                    |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>      | Memoria insufficiente per allocare i buffer necessari.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ NON VALIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno degli handle forniti non è valido.<br/>                     |
+| <dl> <dt>**NTE \_ NO \_ MORE \_ ITEMS**</dt> <dt>0x8009002AL</dt> </dl> | Non sono supportate altre suite di crittografia.<br/>                    |
 
 
 
@@ -111,7 +111,7 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 ## <a name="remarks"></a>Commenti
 
-Per enumerare tutti i pacchetti di crittografia supportati dal provider SSL, chiamare la funzione **SslEnumCipherSuites** in un ciclo fino a quando non viene restituito **\_ nessun \_ altro \_ elemento** .
+Per enumerare tutti i pacchetti di crittografia supportati dal provider SSL, chiamare la funzione **SslEnumCipherSuites** in un ciclo fino a quando non viene restituito **NTE \_ NO MORE \_ \_ ITEMS.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -119,10 +119,10 @@ Per enumerare tutti i pacchetti di crittografia supportati dal provider SSL, chi
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Ncrypt. lib</dt> </dl>    |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Ncrypt.lib</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 
@@ -131,7 +131,7 @@ Per enumerare tutti i pacchetti di crittografia supportati dal provider SSL, chi
 
 <dl> <dt>
 
-[**\_pacchetto di \_ crittografia \_ SSL NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**)
+[**NCRYPT \_ SSL \_ CIPHER \_ SUITE**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**)
 </dt> </dl>
 
  

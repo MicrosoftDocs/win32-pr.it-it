@@ -1,7 +1,7 @@
 ---
-description: Un'associazione tra un'istanza di MSVM \_ VssComponent e un'istanza di MSVM \_ VssService che rappresenta un servizio per l'esecuzione di operazioni sul componente VSS.
+description: Associazione tra un'istanza di Msvm VssComponent e un'istanza di Msvm VssService che rappresenta un servizio per l'esecuzione di operazioni \_ \_ sul componente VSS.
 ms.assetid: 19fdf2e3-48c4-452b-89d0-ec0b8681fca2
-title: Classe Msvm_ServiceOfVssComponent
+title: Msvm_ServiceOfVssComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5787dcdd4d8ce1aeefdc1fbafb2c156aec4d467a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a96c59a2e483080293ece2281ddb64fc9a7b43b425e5b508fe7ec209d1144dc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950540"
 ---
-# <a name="msvm_serviceofvsscomponent-class"></a>\_Classe MSVM ServiceOfVssComponent
+# <a name="msvm_serviceofvsscomponent-class"></a>Classe Msvm \_ ServiceOfVssComponent
 
-Un'associazione tra un'istanza di [**MSVM \_ VssComponent**](msvm-vsscomponent.md) e un'istanza di [**MSVM \_ VssService**](msvm-vssservice.md) che rappresenta un servizio per l'esecuzione di operazioni sul componente VSS.
+Associazione tra un'istanza di [**Msvm \_ VssComponent**](msvm-vsscomponent.md) e un'istanza di [**Msvm \_ VssService**](msvm-vssservice.md) che rappresenta un servizio per l'esecuzione di operazioni sul componente VSS.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -41,45 +41,45 @@ class Msvm_ServiceOfVssComponent : CIM_Dependency
 
 ## <a name="members"></a>Members
 
-La **classe \_ ServiceOfVssComponent di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ ServiceOfVssComponent** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ ServiceOfVssComponent di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ ServiceOfVssComponent** ha queste proprietà.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ VssComponent**
+Tipo di dati: **Msvm \_ VssComponent**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency. Antecedent")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Antecedent")
 </dt> </dl>
 
-, [**MSVM \_ VssComponent**](msvm-vsscomponent.md) che rappresenta il componente VSS.
+Oggetto [**Msvm \_ VssComponent**](msvm-vsscomponent.md) che rappresenta il componente VSS.
 
 </dd> <dt>
 
 **Dipendente**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **MSVM \_ VssService**
+Tipo di dati: **Msvm \_ VssService**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency. dependent")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ Dependency.Dependent")
 </dt> </dl>
 
-Un [**\_ VssService MSVM**](msvm-vssservice.md) che rappresenta il servizio IC VSS.
+Oggetto [**Msvm \_ VssService**](msvm-vssservice.md) che rappresenta il servizio VSS IC.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Un [**\_ VssService MSVM**](msvm-vssservice.md) che rappresenta il servizio IC V
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Un [**\_ VssService MSVM**](msvm-vssservice.md) che rappresenta il servizio IC V
 
 <dl> <dt>
 
-[**\_Dipendenza CIM**](cim-dependency.md)
+[**Dipendenza \_ CIM**](cim-dependency.md)
 </dt> </dl>
 
  

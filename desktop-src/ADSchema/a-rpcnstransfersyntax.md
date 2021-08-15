@@ -1,10 +1,10 @@
 ---
-title: attributo RPC-NS-Transfer-Syntax
+title: Attributo rpc-Ns-Transfer-Syntax
 description: UUID della sintassi di trasferimento supportata dalla voce corrente.
 ms.assetid: e40beedb-68f3-4af9-89a8-268c90693082
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo RPC-NS-Transfer-Syntax
+- Schema AD dell'attributo rpc-Ns-Transfer-Syntax
 - Schema AD dell'attributo rpcNsTransferSyntax
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd980b89461fabfde0d96465cdbac2210dd4580
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ba9d638919686b29f592ebed91a409a768f15104c2d9135ca7725f856d697d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681550"
 ---
-# <a name="rpc-ns-transfer-syntax-attribute"></a>attributo RPC-NS-Transfer-Syntax
+# <a name="rpc-ns-transfer-syntax-attribute"></a>Attributo rpc-Ns-Transfer-Syntax
 
 UUID della sintassi di trasferimento supportata dalla voce corrente.
 
@@ -29,13 +29,13 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-Transfer-Syntax                      |
-| LDAP-Display-Name | rpcNsTransferSyntax                         |
+| CN                | Sintassi rpc-Ns-Transfer                      |
+| Ldap-Display-Name | rpcNsTransferSyntax                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
-| System-ID-GUID    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
+| System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ UUID della sintassi di trasferimento supportata dalla voce corrente.
 | ID collegamento                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| È a valore singolo       | Vero                                                        |
+| A valore singolo       | Vero                                                        |
 | Indicizzato             | Vero                                                        |
 | Nel catalogo globale      | Falso                                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classi utilizzate in        | [**RPC-server-elemento**](c-rpcserverelement.md)<br/> |
+| Classi usate in        | [**Elemento rpc-Server**](c-rpcserverelement.md)<br/> |
 
 
 

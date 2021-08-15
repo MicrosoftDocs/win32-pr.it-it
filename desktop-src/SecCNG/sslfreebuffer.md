@@ -1,7 +1,7 @@
 ---
-description: Utilizzato per liberare la memoria allocata da una delle funzioni del provider di protocollo Secure Sockets Layer (SSL).
+description: Usato per liberare memoria allocata da una delle funzioni Secure Sockets Layer protocol (SSL).
 ms.assetid: 75a85013-c745-43cb-85b5-e13a2778ec1d
-title: Funzione SslFreeBuffer (Sslprovider. h)
+title: Funzione SslFreeBuffer (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: bced83b52ddf37266f64ae0c2b8919902f30fff4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6121802b8815a2e13fab0f4336420b763fe931a6e022fcce73080adfb01197c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104058314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906480"
 ---
-# <a name="sslfreebuffer-function"></a>SslFreeBuffer (funzione)
+# <a name="sslfreebuffer-function"></a>Funzione SslFreeBuffer
 
-La funzione **SslFreeBuffer** viene utilizzata per liberare la memoria allocata da una delle funzioni del provider di protocollo SSL ( [*Secure Sockets Layer*](/windows/desktop/SecGloss/s-gly) ).
+La **funzione SslFreeBuffer** viene usata per liberare memoria allocata da una delle funzioni del provider [*Secure Sockets Layer protocol*](/windows/desktop/SecGloss/s-gly) (SSL).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,7 +39,7 @@ SECURITY_STATUS WINAPI SslFreeBuffer(
 
 <dl> <dt>
 
-*pvInput* \[ in\]
+*pvInput* \[ Pollici\]
 </dt> <dd>
 
 Puntatore al buffer di memoria da liberare.
@@ -52,13 +52,13 @@ Se la funzione ha esito positivo, restituisce zero.
 
 Se la funzione ha esito negativo, restituisce un valore di errore diverso da zero.
 
-I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
+I codici restituiti possibili includono, ma non solo, quanto segue.
 
 
 
 | Codice/valore restituito                                                                                                                                                       | Descrizione                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Parametro 0X80090027L non valido**</dt> <dt></dt> </dl> | Il parametro *pdwProviderCount* o *ppProviderList* è **null**.<br/> |
+| <dl> <dt>**NTE \_ PARAMETRO \_ NON VALIDO**</dt> <dt>0x80090027L</dt> </dl> | Il *parametro pdwProviderCount* o *ppProviderList* è **NULL.**<br/> |
 
 
 
@@ -70,9 +70,9 @@ I codici restituiti possibili includono, ma non sono limitati a, quanto segue.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                     |
-| Intestazione<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                     |
+| Intestazione<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

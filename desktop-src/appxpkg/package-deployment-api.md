@@ -1,19 +1,19 @@
 ---
 title: API per la distribuzione di pacchetti
-description: Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per installare, aggiornare e disinstallare i pacchetti dell'app nel sistema. Ogni pacchetto dell'app contiene i file che costituiscono un'app di Windows e un file manifesto che descrive il software per Windows.
+description: Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per installare, aggiornare e disinstallare pacchetti di app nel sistema. Ogni pacchetto dell'app contiene i file che costituiscono un'app Windows e un file manifesto che descrive il software da Windows.
 ms.assetid: E2D408E1-6048-4D15-8BF4-69FF6ACF7BD2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a7559739d721781101fad804ebb040333c71c9
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b5bc1c9fc44487ff2244bee9b27d1ba26677468a2113536763b86e254a23f689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "106299586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814057"
 ---
 # <a name="package-deployment-api"></a>API per la distribuzione di pacchetti
 
-Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per installare, aggiornare e disinstallare i pacchetti dell'app nel sistema. Ogni pacchetto dell'app contiene i file che costituiscono un'app di Windows e un file manifesto che descrive il software per Windows.
+Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per installare, aggiornare e disinstallare pacchetti di app nel sistema. Ogni pacchetto dell'app contiene i file che costituiscono un'app Windows e un file manifesto che descrive il software da Windows.
 
 ## <a name="windows-runtime-reference"></a>Informazioni di riferimento su Windows Runtime
 
@@ -26,25 +26,25 @@ Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per
 **Esempi**
 </dt> <dt>
 
-[Esempio di aggiunta di un pacchetto dell'app (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
+[Aggiungere un esempio di pacchetto dell'app (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
 </dt> <dt>
 
-[Esempio di enumerazione dei pacchetti app (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
+[Esempio di enumerazione dei pacchetti di app (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
 </dt> <dt>
 
-[Enumerare i pacchetti dell'app in base al nome e al server di pubblicazione (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
+[Enumerare i pacchetti di app in base al nome e all'esempio di editore (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
 </dt> <dt>
 
 [Enumerare i pacchetti dell'app in base all'esempio di SID utente (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
 </dt> <dt>
 
-[Rimuovere il pacchetto dell'app di esempio (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
+[Esempio di rimozione del pacchetto dell'app (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
 </dt> <dt>
 
 **Concetti**
 </dt> <dt>
 
-[Distribuzione e pacchetti dell'applicazione](/previous-versions/windows/apps/hh464929(v=win.10))
+[Pacchetti di app e distribuzione](/previous-versions/windows/apps/hh464929(v=win.10))
 </dt> <dt>
 
 [Glossario](appx-packaging-glossary.md)
@@ -62,6 +62,6 @@ Informazioni sull'API di distribuzione dei pacchetti, che è possibile usare per
 [API di query del pacchetto](functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

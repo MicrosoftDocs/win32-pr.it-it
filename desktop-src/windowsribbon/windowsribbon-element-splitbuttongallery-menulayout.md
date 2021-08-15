@@ -1,9 +1,9 @@
 ---
-title: Proprietà SplitButtonGallery. MenuLayout
-description: Rappresenta un contenitore per i layout del menu a discesa della raccolta dei pulsanti di menu combinato.
+title: SplitButtonGallery.MenuLayout - proprietà
+description: Rappresenta un contenitore per i layout del menu a discesa Della raccolta di pulsanti di menu suddivisi.
 ms.assetid: 4bebdff6-16ea-4cf3-adc7-9b86ea200e81
 keywords:
-- Barra multifunzione di Windows SplitButtonGallery. MenuLayout
+- Proprietà SplitButtonGallery.MenuLayout Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04428c14b5e47795da47e5c03970610cd08a6e8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f40cf184d6122fc40041cfb77953bba2b7950d9d1a957d99aae659633ee5c194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706899"
 ---
-# <a name="splitbuttongallerymenulayout-property"></a>Proprietà SplitButtonGallery. MenuLayout
+# <a name="splitbuttongallerymenulayout-property"></a>SplitButtonGallery.MenuLayout - proprietà
 
-Rappresenta un contenitore per i layout del menu a discesa della [raccolta dei pulsanti](windowsribbon-controls-splitbuttongallery.md) di menu combinato.
+Rappresenta un contenitore per [i](windowsribbon-controls-splitbuttongallery.md) layout del menu a discesa Della raccolta di pulsanti di menu suddivisi.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 ``` syntax
 <SplitButtonGallery.MenuLayout>
@@ -60,18 +60,18 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Può verificarsi al massimo una volta per [**ogni elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 > [!Note]  
-> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> È consentito un massimo di un elemento figlio ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per la [raccolta dei pulsanti di suddivisione](windowsribbon-controls-splitbuttongallery.md).
+Nell'esempio seguente viene illustrato il markup di base per [la raccolta di pulsanti di menu suddivisi.](windowsribbon-controls-splitbuttongallery.md)
 
-Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGallery. MenuLayout** .
+Questa sezione di codice illustra la **dichiarazione del controllo SplitButtonGallery.MenuLayout.**
 
 
 ```XML
@@ -104,8 +104,8 @@ Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGalle
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -113,7 +113,7 @@ Questa sezione di codice mostra la dichiarazione di controllo **SplitButtonGalle
 
 <dl> <dt>
 
-[Controllo raccolta pulsanti di suddivisione](windowsribbon-controls-splitbuttongallery.md)
+[Controllo Raccolta di pulsanti di menu suddivisi](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Uso delle raccolte](ribbon-controls-galleries.md)

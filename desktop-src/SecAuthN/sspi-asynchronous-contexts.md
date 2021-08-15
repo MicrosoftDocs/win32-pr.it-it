@@ -4,16 +4,16 @@ description: Panoramica dei contesti asincroni e dell'intestazione SSPI asincron
 ms.topic: article
 ms.keywords: SSPI, Asynchronous Contexts, async contexts, Async SSPI, SSPI Async, Asynchronous SSPI, sspi,SspiAcceptSecurityContextAsync, SspiAcquireCredentialsHandleAsync, SspiAsyncContextRequiresNotify, SspiAsyncNotifyCallback, SspiCreateAsyncContext,SspiDeleteSecurityContextAsync, SspiFreeAsyncContext, SspiFreeCredentialsHandleAsync, SspiGetAsyncCallStatus, SspiInitializeSecurityContextAsync, SspiReinitAsyncContext, SspiSetAsyncNotifyCallback
 ms.date: 06/23/2020
-ms.openlocfilehash: e523112d35e0ddbc38c3374c67e3d81ba74a6dce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e83dbab8c20dd9f9cfe13ec579db304aabd491cba92ab0cd6a9c8afcf4e4af8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917230"
 ---
 # <a name="asynchronous-contexts"></a>Contesti asincroni
 
-I contesti di sicurezza SSPI asincroni consentono ai chiamanti di procedere senza bloccare e ricevere notifiche al termine della chiamata. I contesti asincroni sono attualmente supportati solo per i client e i server TLS in modalità kernel. Le seguenti funzioni SSPI asincrone operano su contesti di sicurezza asincroni:
+I contesti di sicurezza SSPI asincroni consentono ai chiamanti di continuare senza bloccare e ricevere notifiche al termine della chiamata. I contesti asincroni sono attualmente supportati solo per i client e i server TLS in modalità kernel. Le funzioni SSPI asincrone seguenti operano su contesti di sicurezza asincroni:
 
 ## <a name="async-context-management-types"></a>Tipi di gestione del contesto asincrono
 
@@ -26,37 +26,37 @@ I contesti di sicurezza SSPI asincroni consentono ai chiamanti di procedere senz
 
 | Nome API | Descrizione |
 |-------------|--------------|
-| [SspiCreateAsyncContext](/windows/win32/api/sspi/nf-sspi-sspicreateasynccontext) | Crea un'istanza di SspiAsyncContext che viene utilizzata per tenere traccia della chiamata asincrona. |
+| [SspiCreateAsyncContext](/windows/win32/api/sspi/nf-sspi-sspicreateasynccontext) | Crea un'istanza di SspiAsyncContext usata per tenere traccia della chiamata asincrona. |
 | [SspiReinitAsyncContext](/windows/win32/api/sspi/nf-sspi-sspireinitasynccontext) | Contrassegna un contesto asincrono per il riutilizzo. |
-| [SspiSetAsyncNotifyCallback](/windows/win32/api/sspi/nf-sspi-sspisetasyncnotifycallback) | Registra un callback che riceve una notifica sul completamento della chiamata asincrona. |
+| [SspiSetAsyncNotifyCallback](/windows/win32/api/sspi/nf-sspi-sspisetasyncnotifycallback) | Registra un callback che viene notificato al completamento della chiamata asincrona. |
 | [SspiAsyncContextRequiresNotify](/windows/win32/api/sspi/nf-sspi-sspiasynccontextrequiresnotify) | Determina se un contesto asincrono specificato richiede una notifica al completamento della chiamata. |
-| [SspiGetAsyncCallStatus](/windows/win32/api/sspi/nf-sspi-sspigetasynccallstatus) | Ottiene lo stato corrente di una chiamata asincrona associata al contesto fornito.  |
+| [SspiGetAsyncCallStatus](/windows/win32/api/sspi/nf-sspi-sspigetasynccallstatus) | Ottiene lo stato corrente di una chiamata asincrona associata al contesto specificato.  |
 | [SspiFreeAsyncContext](/windows/win32/api/sspi/nf-sspi-sspifreeasynccontext) | Libera un contesto creato nella chiamata alla funzione SspiCreateAsyncContext. |
 
 ## <a name="async-sspi-functions"></a>Funzioni SSPI asincrone
 
-Le funzioni seguenti accettano un contesto asincrono, oltre a tutti gli stessi parametri della relativa controparte sincrona.
+Le funzioni seguenti accettano un contesto asincrono oltre a tutti gli stessi parametri della controparte sincrona.
 
 | Nome API | Descrizione |
 |-------------|--------------|
 | [SspiAcquireCredentialsHandleAsync](/windows/win32/api/sspi/nf-sspi-sspiacquirecredentialshandleasynca) | Acquisisce in modo asincrono un handle per le credenziali preesistenti di un'entità di sicurezza. |
 | [SspiAcceptSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspiacceptsecuritycontextasync) | Consente al componente server di un'applicazione di trasporto di stabilire in modo asincrono un contesto di sicurezza tra il server e un client remoto. |
 | [SspiInitializeSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspiinitializesecuritycontextasynca) | Inizializza un contesto di sicurezza asincrono. |
-| [SspiDeleteSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspideletesecuritycontextasync) | Elimina le strutture di dati locali associate al contesto di sicurezza specificato avviato da una chiamata precedente alla funzione SspiInitializeSecurityContextAsync o SspiAcceptSecurityContextAsync. |
-| [SspiFreeCredentialsHandleAsync](/windows/win32/api/sspi/nf-sspi-sspifreecredentialshandleasync) | Libera un handle di credenziale. |
+| [SspiDeleteSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspideletesecuritycontextasync) | Elimina le strutture di dati locali associate al contesto di sicurezza specificato avviato da una chiamata precedente alla funzione SspiInitializeSecurityContextAsync o alla funzione SspiAcceptSecurityContextAsync. |
+| [SspiFreeCredentialsHandleAsync](/windows/win32/api/sspi/nf-sspi-sspifreecredentialshandleasync) | Libera un handle di credenziali. |
 
 ## <a name="api-sample"></a>Esempio di API
 
-Un tipico flusso di chiamate funziona nel modo seguente:
-1) Creare il contesto SspiAsyncContext per tenere traccia della chiamata mediante [SspiCreateAsyncContext](/windows/win32/api/sspi/nf-sspi-sspicreateasynccontext)
-2) Registrare un [SspiAsyncNotifyCallback](/windows/win32/api/sspi/nf-sspi-sspisetasyncnotifycallback) per il contesto
-3) Eseguire la chiamata asincrona usando [SspiAcceptSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspiacceptsecuritycontextasync)
-4) Su callback recuperare il risultato usando [SspiGetAsyncCallStatus](/windows/win32/api/sspi/nf-sspi-sspigetasynccallstatus)
-5) Eliminare SspiAsyncContext usando [SspiDeleteSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspideletesecuritycontextasync). Se si riutilizza il contesto con [SspiReinitAsyncContext](/windows/win32/api/sspi/nf-sspi-sspireinitasynccontext), tornare al passaggio 2.
+Un flusso di chiamate tipico funziona come segue:
+1) Creare un contesto SspiAsyncContext per tenere traccia della chiamata [usando SspiCreateAsyncContext](/windows/win32/api/sspi/nf-sspi-sspicreateasynccontext)
+2) Registrare [un oggetto SspiAsyncNotifyCallback per](/windows/win32/api/sspi/nf-sspi-sspisetasyncnotifycallback) il contesto
+3) Effettuare la chiamata asincrona usando [SspiAcceptSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspiacceptsecuritycontextasync)
+4) Al callback recuperare il risultato usando [SspiGetAsyncCallStatus](/windows/win32/api/sspi/nf-sspi-sspigetasynccallstatus)
+5) Eliminare SspiAsyncContext usando [SspiDeleteSecurityContextAsync.](/windows/win32/api/sspi/nf-sspi-sspideletesecuritycontextasync) Se si riutilizza il contesto [con SspiReinitAsyncContext,](/windows/win32/api/sspi/nf-sspi-sspireinitasynccontext)tornare al passaggio 2.
 
-Nell'esempio seguente viene illustrata una chiamata di SspiAcceptSecurityContextAsync. L'esempio attende il completamento della chiamata e recupera il risultato.
+L'esempio seguente illustra una chiamata di SspiAcceptSecurityContextAsync. L'esempio attende il completamento della chiamata e recupera il risultato.
 
-In un handshake SSPI completo, SspiAcceptSecurityContextAsync e SspiInitializeSecurityContextAsync vengono chiamati più volte fino a quando non viene restituito SEC_E_OK. SspiReinitAsyncContext è stato fornito per semplificare l'utilizzo e per semplificare le prestazioni in questo caso.
+In un handshake SSPI completo, SspiAcceptSecurityContextAsync e SspiInitializeSecurityContextAsync vengono chiamati più volte fino a SEC_E_OK restituito. SspiReinitAsyncContext è stato fornito per semplificare l'uso e per facilitare le prestazioni in questo caso.
 
 Le asserzioni vengono usate per evidenziare ciò che ci si aspetterebbe in caso di esito positivo.
 
@@ -130,7 +130,7 @@ void DoASCCall(
 
 ## <a name="see-also"></a>Vedere anche
 
-[intestazione SSPI. h](/windows/win32/api/sspi/)
+[Intestazione sspi.h](/windows/win32/api/sspi/)
 
 [Funzioni SSPI](/windows/win32/api/sspi/#functions)
 
