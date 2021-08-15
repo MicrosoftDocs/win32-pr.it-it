@@ -1,9 +1,9 @@
 ---
-title: comando Step
-description: Il comando Step esegue la riproduzione di uno o più frame avanti o indietro. L'azione predefinita prevede l'esecuzione del passaggio avanti di un frame. I dispositivi videodisco Digital-video, VCR e CAV-Format riconoscono questo comando.
+title: comando step
+description: Il comando step consente di riprodurre uno o più fotogrammi in avanti o inversa. L'azione predefinita consiste nell'andare avanti di un fotogramma. I dispositivi videodisc in formato digital-video, VCR e CAV riconoscono questo comando.
 ms.assetid: 6017ace5-cde9-42a0-bb2f-f85d7847adc5
 keywords:
-- comando passaggio Windows Multimedia
+- Comando step Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6203d0b2d5dea401e8197e1261946955cd28618a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b804ac64c2641ba1eb43ba7019ae2668c04a7d8b07fbfd20ab7b8cb570d8fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370831"
 ---
-# <a name="step-command"></a>comando Step
+# <a name="step-command"></a>comando step
 
-Il comando Step esegue la riproduzione di uno o più frame avanti o indietro. L'azione predefinita prevede l'esecuzione del passaggio avanti di un frame. I dispositivi videodisco Digital-video, VCR e CAV-Format riconoscono questo comando.
+Il comando step consente di riprodurre uno o più fotogrammi in avanti o inversa. L'azione predefinita consiste nell'andare avanti di un fotogramma. I dispositivi videodisc in formato digital-video, VCR e CAV riconoscono questo comando.
 
-Per inviare questo comando, chiamare la funzione [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con il set di parametri *lpszCommand* come indicato di seguito.
+Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
 ``` syntax
 _stprintf_s(
@@ -42,7 +42,7 @@ _stprintf_s(
 <span id="lpszDeviceID"></span><span id="lpszdeviceid"></span><span id="LPSZDEVICEID"></span>*lpszDeviceID*
 </dt> <dd>
 
-Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato quando il dispositivo viene aperto.
+Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegnato all'apertura del dispositivo.
 
 </dd> <dt>
 
@@ -55,8 +55,8 @@ Uno o entrambi i flag seguenti.
 
 | Valore       | Significato                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| per *frame* | Indica il numero di frame da scorrere. Se si specifica un valore di *frame* negativi, non è possibile specificare il flag "Reverse". |
-| reverse     | Eseguire il passaggio dei frame in senso inverso.                                                                                              |
+| per *frame* | Indica il numero di fotogrammi di cui eseguire il passaggio. Se si specifica un valore *di frame* negativo, non è possibile specificare il flag "reverse". |
+| reverse     | Eseguire i fotogrammi in ordine inverso.                                                                                              |
 
 
 
@@ -67,13 +67,13 @@ Uno o entrambi i flag seguenti.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "Wait", "notify" o entrambi. Per i dispositivi digitali video e VCR è possibile specificare anche "test". Per ulteriori informazioni su questi flag, vedere [i flag Wait, Notify e test](the-wait-notify-and-test-flags.md).
+Può essere "wait", "notify" o entrambi. Per i dispositivi video digitali e VCR, è anche possibile specificare "test". Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce zero in caso di esito positivo o un errore.
+Restituisce zero in caso di esito positivo o un errore in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,7 +90,7 @@ Restituisce zero in caso di esito positivo o un errore.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Stringhe di comando MCI](mci-command-strings.md)

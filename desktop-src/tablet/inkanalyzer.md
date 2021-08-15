@@ -1,7 +1,7 @@
 ---
 description: Implementa l'interfaccia IInkAnalyzer.
 ms.assetid: f17de375-a0fe-4024-bf2a-60f8de8b0345
-title: Classe InkAnalyzer (IACom. h)
+title: Classe InkAnalyzer (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 49eeb04b1568bbef785f7d750315e0ea39491d92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db556faf5cba75fe74af6c46f5c0f0a72fa34f279135e33381892812b3cf4735
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220745"
 ---
 # <a name="inkanalyzer-class"></a>Classe InkAnalyzer
 
-Implementa l'interfaccia [**IInkAnalyzer**](iinkanalyzer.md) .
+Implementa [**l'interfaccia IInkAnalyzer.**](iinkanalyzer.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questa classe implementa l'interfaccia com [**IInkAnalyzer**](iinkanalyzer.md) .
+Questa classe implementa [**l'interfaccia COM IInkAnalyzer.**](iinkanalyzer.md)
 
-[ \_ IAnalysisEvents](-ianalysisevents.md) è l'origine predefinita degli eventi e fornisce eventi standard per il [**IInkAnalyzer**](iinkanalyzer.md).
+[ \_ IAnalysisEvents è](-ianalysisevents.md) l'origine predefinita degli eventi e fornisce eventi standard per [**IInkAnalyzer.**](iinkanalyzer.md)
 
-[**\_ IAnalysisProxyEvents**](-ianalysisproxyevents.md) fornisce gli eventi del proxy di dati per il [**IInkAnalyzer**](iinkanalyzer.md). Per altre informazioni, vedere [Data Proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+[**\_ IAnalysisProxyEvents fornisce**](-ianalysisproxyevents.md) gli eventi proxy dati per [**IInkAnalyzer.**](iinkanalyzer.md) Per altre informazioni, vedere [Proxy di dati con l'analisi dell'input penna](data-proxy-with-ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,9 +38,9 @@ Questa classe implementa l'interfaccia com [**IInkAnalyzer**](iinkanalyzer.md) .
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
-| Intestazione<br/>                   | <dl> <dt>IACom. h (richiede anche IACom \_ i. c)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -49,7 +49,7 @@ Questa classe implementa l'interfaccia com [**IInkAnalyzer**](iinkanalyzer.md) .
 
 <dl> <dt>
 
-[**AnalysisModes**](analysismodes.md)
+[**Analysismodes**](analysismodes.md)
 </dt> <dt>
 
 [**IAnalysisAlternate**](ianalysisalternate.md)
@@ -64,7 +64,7 @@ Questa classe implementa l'interfaccia com [**IInkAnalyzer**](iinkanalyzer.md) .
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[Riferimento all'analisi dell'input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

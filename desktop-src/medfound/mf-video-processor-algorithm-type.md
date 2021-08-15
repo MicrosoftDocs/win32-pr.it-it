@@ -1,7 +1,7 @@
 ---
-description: Definisce gli algoritmi per il processore video usato dall' \_ algoritmo MF video \_ Processor \_ .
+description: Definisce gli algoritmi per il processore video che viene utilizzato da MF \_ VIDEO \_ PROCESSOR \_ ALGORITHM.
 ms.assetid: 3BB0836E-39E6-40FA-9BA0-C986EB587CF1
-title: Enumerazione MF_VIDEO_PROCESSOR_ALGORITHM_TYPE
+title: MF_VIDEO_PROCESSOR_ALGORITHM_TYPE enumerazione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mfidl.h
-ms.openlocfilehash: 604fee61ae4b6a34d876de8c2863ee6dddad73d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 885c3e9c34fa787a6877fd37eef81f470be395225594b90b2f5516a8e773eb88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244139"
 ---
-# <a name="mf_video_processor_algorithm_type-enumeration"></a>\_Enumerazione del \_ \_ tipo di algoritmo MF Video Processor \_
+# <a name="mf_video_processor_algorithm_type-enumeration"></a>Enumerazione MF \_ VIDEO \_ PROCESSOR ALGORITHM \_ \_ TYPE
 
-Definisce gli algoritmi per il processore video usato dall' [ \_ \_ \_ algoritmo MF video processor](mf-video-processor-algorithm.md).
+Definisce gli algoritmi per il processore video che viene utilizzato da [MF \_ VIDEO PROCESSOR \_ \_ ALGORITHM](mf-video-processor-algorithm.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,17 +40,17 @@ typedef enum _MF_VIDEO_PROCESSOR_ALGORITHM_TYPE {
 
 <dl> <dt>
 
-<span id="MF_VIDEO_PROCESSOR_ALGORITHM_DEFAULT"></span><span id="mf_video_processor_algorithm_default"></span>**\_ \_ \_ impostazione predefinita algoritmo MF Video Processor \_**
+<span id="MF_VIDEO_PROCESSOR_ALGORITHM_DEFAULT"></span><span id="mf_video_processor_algorithm_default"></span>**ALGORITMO DEL PROCESSORE VIDEO MF \_ \_ \_ \_ PREDEFINITO**
 </dt> <dd>
 
-la modalità predefinita predilige un equilibrio tra qualità e velocità
+la modalità predefinita favorisce un equilibrio tra qualità e velocità
 
 </dd> <dt>
 
-<span id="MF_VIDEO_PROCESSOR_ALGORITHM_MRF_CRF_444"></span><span id="mf_video_processor_algorithm_mrf_crf_444"></span>**\_Algoritmo MF video \_ Processor \_ \_ MRF \_ CRF \_ 444**
+<span id="MF_VIDEO_PROCESSOR_ALGORITHM_MRF_CRF_444"></span><span id="mf_video_processor_algorithm_mrf_crf_444"></span>**ALGORITMO DEL \_ \_ PROCESSORE VIDEO \_ \_ MF MRF \_ CRF \_ 444**
 </dt> <dd>
 
-Il processore video viene sempre elaborato internamente in AYUV e utilizza filtri di alta qualità.
+Il processore video verrà sempre elaborato internamente in AYUV e userà filtri di alta qualità.
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Il processore video viene sempre elaborato internamente in AYUV e utilizza filtr
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                         |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                              |
-| IDL<br/>                      | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Server 2012 Solo \[ app desktop R2\]<br/>                              |
+| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Il processore video viene sempre elaborato internamente in AYUV e utilizza filtr
 
 <dl> <dt>
 
-[Enumerazioni di Media Foundation](media-foundation-enumerations.md)
+[enumerazioni Media Foundation](media-foundation-enumerations.md)
 </dt> </dl>
 
  

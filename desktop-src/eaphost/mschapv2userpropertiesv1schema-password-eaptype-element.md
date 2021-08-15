@@ -1,9 +1,9 @@
 ---
-title: Password (EapType)-elemento
-description: Informazioni sull'elemento password (EapType). Questo elemento identifica la password dell'utente o del computer da autenticare.
+title: Elemento Password (EapType)
+description: Informazioni sull'elemento Password (EapType). Questo elemento identifica la password dell'utente o del computer da autenticare.
 ms.assetid: d3ad95b8-2d98-420f-a680-a83b49ae2992
 keywords:
-- Elemento password EAPHost
+- Elemento Password EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6da29146be7ed2f0c17d7311f79921b44cd0929e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: cbbcb7b0acd372bbe71ee6d22f44a736948b145378f62f40820e3de53d77b875
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104047378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273200"
 ---
-# <a name="password-eaptype-element"></a>Password (EapType)-elemento
+# <a name="password-eaptype-element"></a>Elemento Password (EapType)
 
-L'elemento **password (EapType)** identifica la password dell'utente o del computer da autenticare.
+**L'elemento Password (EapType)** identifica la password dell'utente o del computer da autenticare.
 
 ``` syntax
 <xs:element name="Password"
@@ -31,20 +31,20 @@ L'elemento **password (EapType)** identifica la password dell'utente o del compu
  />
 ```
 
-L'elemento **password** è definito dall'elemento [**EapType**](mschapv2userpropertiesv1schema-eaptype-element.md) .
+**L'elemento Password** è definito dall'elemento [**EapType.**](mschapv2userpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento **password (EapType)** non è presente, l'hash della password viene ottenuto da Winlogon. Questo elemento è facoltativo.
+Se **l'elemento Password (EapType)** non è presente, l'hash della password viene ottenuto da winlogon. Questo elemento è facoltativo.
 
 ## <a name="requirements"></a>Requisiti
 
 
 
-| Ruolo | Versione minima del sistema operativo supportata |
+| Ruolo | Versione minima supportata del sistema operativo |
 |------|------------------------------|
-| Client<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

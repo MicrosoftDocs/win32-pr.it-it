@@ -4,12 +4,12 @@ ms.assetid: cca32fd6-9f41-49c2-8e2a-247bbf78edca
 title: Estensioni XMFLOAT3PK
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5afc12c7e481253363da599c53e993d8a3f6584
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 855f78541d815391ad6e20c5256f4d98beedec9fb04b090e9ac3c09a4d2eabfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277926"
 ---
 # <a name="xmfloat3pk-extensions"></a>Estensioni XMFLOAT3PK
 

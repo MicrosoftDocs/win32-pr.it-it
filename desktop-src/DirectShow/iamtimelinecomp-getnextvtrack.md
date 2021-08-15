@@ -1,7 +1,7 @@
 ---
 description: Il metodo GetNextVTrack recupera la traccia virtuale successiva dopo una traccia virtuale specificata.
 ms.assetid: c43e6b16-a3e4-4407-b48d-b04c4bb66688
-title: 'Metodo IAMTimelineComp:: GetNextVTrack (qedit. h)'
+title: Metodo IAMTimelineComp::GetNextVTrack (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0e5a4500c2b53703a13b509f112453e65c954f96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbeaf5d7987f1baf2b3df9804c4abd3049c38042a29f4177f83abec6855140a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401052"
 ---
-# <a name="iamtimelinecompgetnextvtrack-method"></a>Metodo IAMTimelineComp:: GetNextVTrack
+# <a name="iamtimelinecompgetnextvtrack-method"></a>Metodo IAMTimelineComp::GetNextVTrack
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
@@ -49,32 +49,32 @@ HRESULT GetNextVTrack(
 *pVirtualTrack* 
 </dt> <dd>
 
-Puntatore alla traccia virtuale precedente oppure **null** per recuperare il primo tracciato virtuale nella composizione.
+Puntatore alla traccia virtuale precedente oppure **NULL per** recuperare la prima traccia virtuale nella composizione.
 
 </dd> <dt>
 
-*ppNextVirtualTrack* \[ out\]
+*ppNextVirtualTrack* \[ Cambio\]
 </dt> <dd>
 
-Riceve un puntatore all'interfaccia [**IAMTimelineObj**](iamtimelineobj.md) della traccia virtuale successiva, in ordine di priorità.
+Riceve un puntatore [**all'interfaccia IAMTimelineObj**](iamtimelineobj.md) della traccia virtuale successiva, in ordine di priorità.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se il metodo recupera una traccia virtuale o S \_ false in caso contrario.
+Restituisce S OK se il metodo recupera una traccia virtuale oppure S FALSE in \_ \_ caso contrario.
 
 ## <a name="remarks"></a>Commenti
 
-Se il metodo ha esito positivo, l'interfaccia **IAMTimelineObj** restituita presenta un conteggio dei riferimenti in attesa. Assicurarsi di rilasciare l'interfaccia al termine dell'utilizzo.
+Se il metodo ha esito positivo, **l'interfaccia IAMTimelineObj** restituita ha un conteggio dei riferimenti in sospeso. Assicurarsi di rilasciare l'interfaccia al termine dell'uso.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Se il metodo ha esito positivo, l'interfaccia **IAMTimelineObj** restituita pres
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

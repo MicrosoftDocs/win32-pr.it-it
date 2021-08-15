@@ -5,7 +5,7 @@ ms.assetid: 5ac19c04-75db-4618-9c4e-b20e2f709024
 keywords:
 - Metodo getAttributeStringCollection Windows Media Player
 - Metodo getAttributeStringCollection Windows Media Player, interfaccia IWMPMediaCollection
-- Interfaccia IWMPMediaCollection Windows Media Player, metodo getAttributeStringCollection
+- Interfaccia IWMPMediaCollection Windows Media Player metodo , getAttributeStringCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bef25cd811890e82273fd5d634633e25e7ec460c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 508630ee8a377e1542f823c1afb21521206369aa3ce489c58afae47efa268880
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331943"
 ---
-# <a name="iwmpmediacollectiongetattributestringcollection-method"></a>Metodo IWMPMediaCollection:: getAttributeStringCollection
+# <a name="iwmpmediacollectiongetattributestringcollection-method"></a>Metodo IWMPMediaCollection::getAttributeStringCollection
 
-Il metodo **getAttributeStringCollection** restituisce un'interfaccia **IWMPStringCollection** che rappresenta il set di tutti i valori per un attributo specificato all'interno di un tipo di supporto.
+Il **metodo getAttributeStringCollection** restituisce **un'interfaccia IWMPStringCollection** che rappresenta il set di tutti i valori per un attributo specificato all'interno di un tipo di supporto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,33 +55,33 @@ Implements IWMPMediaCollection.getAttributeStringCollection
 
 <dl> <dt>
 
-*bstrAttribute* \[ in\]
+*bstrAttribute* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta l'attributo per il quale vengono recuperati i valori.
+Oggetto **System.String** che rappresenta l'attributo per cui vengono recuperati i valori.
 
 </dd> <dt>
 
-*bstrMediaType* \[ in\]
+*bstrMediaType* \[ Pollici\]
 </dt> <dd>
 
-**System. String** che rappresenta il tipo di supporto per il quale vengono recuperati i valori.
+Oggetto **System.String** che rappresenta il tipo di supporto per il quale vengono recuperati i valori.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Interfaccia **wmplib. IWMPStringCollection** per i valori recuperati.
+Interfaccia **WMPLib.IWMPStringCollection** per i valori recuperati.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per informazioni sugli attributi supportati da Windows Media Player, vedere il [riferimento all'attributo](attribute-reference.md).
+Per informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni di [riferimento sugli attributi](attribute-reference.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **getAttributeStringCollection** per visualizzare un elenco di valori che corrispondono a un particolare attributo per gli elementi audio nell'insieme di supporti. Una casella di riepilogo consente all'utente di selezionare un attributo, ad esempio artista, genere o album e una casella di testo a più righe Visualizza il risultato. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene **utilizzato getAttributeStringCollection** per visualizzare un elenco di valori che corrispondono a un attributo specifico per gli elementi audio nella raccolta di supporti. Una casella di riepilogo consente all'utente di selezionare un attributo, ad esempio Artista, Genere o Album, mentre una casella di testo su più righe visualizza il risultato. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -159,7 +159,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

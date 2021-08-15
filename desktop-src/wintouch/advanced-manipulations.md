@@ -3,19 +3,19 @@ title: Modifiche avanzate
 description: Visualizzare la pagina di destinazione per le modifiche avanzate per le applicazioni. Vedere i collegamenti alle pagine di panoramica, espansione, rotazione e traduzione.
 ms.assetid: 8a1cff27-b2c0-4e72-9f4c-df656059953f
 keywords:
-- Windows Touch, manipolazioni
-- Windows Touch, modifiche avanzate
-- Windows Touch, modifiche complesse
+- Windows Tocco, manipolazioni
+- Windows Tocco, manipolazioni avanzate
+- Windows Tocco, manipolazioni complesse
 - manipolazioni, avanzate
 - manipolazioni, complesse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c059ad30a338fe5d413ff6c7e6e7f2e9383dc9
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2489e86247287331880d338ff1ddf9383656be07bf3834dfc23ef68e38c63ae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199644"
 ---
 # <a name="advanced-manipulations"></a>Modifiche avanzate
 
@@ -28,8 +28,8 @@ Ai fini dell'usabilità, è possibile aggiungere modifiche complesse all'applica
 | Sezione                                                                | Descrizione                                           |
 |------------------------------------------------------------------------|-------------------------------------------------------|
 | [Panoramica delle modifiche avanzate](advanced-manipulations-overview.md) | Mostra le varie modifiche avanzate.             |
-| [Espansione avanzata](advanced-expansion.md)                           | Illustra come abilitare il supporto per l'espansione avanzata.   |
-| [Rotazione avanzata](advanced-rotation.md)                             | Illustra come abilitare il supporto per la rotazione avanzata.    |
+| [Espansione avanzata](advanced-expansion.md)                           | Viene illustrato come abilitare il supporto per l'espansione avanzata.   |
+| [Rotazione avanzata](advanced-rotation.md)                             | Viene illustrato come abilitare il supporto per la rotazione avanzata.    |
 | [Traduzione avanzata](advanced-translation.md)                       | Illustra come abilitare il supporto per la traduzione avanzata. |
 
 

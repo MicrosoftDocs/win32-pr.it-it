@@ -1,9 +1,9 @@
 ---
-title: 'Funzione RWTexture3D:: operator'
-description: Restituisce una variabile di risorsa di un RWTexture3D.
+title: Funzione RWTexture3D::Operator
+description: Restituisce una variabile di risorsa di RWTexture3D.
 ms.assetid: 0b4ea895-ac34-49e5-80e6-74229c33bfe9
 keywords:
-- Funzione operator HLSL
+- Funzione operatore HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e41ff4db387c4d0926083419082fd589005d96a6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8db7073ef20976ecb6c39839d5639a1f0fcfe1fad765c2cf9b0ecdf086622b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104976935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509137"
 ---
-# <a name="rwtexture3doperator--function"></a>Funzione RWTexture3D:: operator
+# <a name="rwtexture3doperator--function"></a>Funzione RWTexture3D::Operator
 
-Restituisce una variabile di risorsa di un [**RWTexture3D**](sm5-object-rwtexture3d.md).
+Restituisce una variabile di risorsa di [**un oggetto RWTexture3D.**](sm5-object-rwtexture3d.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ in\]
+*pos* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -57,7 +57,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [RWTexture3D](sm5-object-rwtexture3d.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

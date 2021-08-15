@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETUIANAME (RichEdit. h)
-description: Imposta il nome di un controllo Rich Edit per l'automazione interfaccia utente (UIA).
+title: EM_SETUIANAME messaggio (Richedit.h)
+description: Imposta il nome di un controllo Rich Edit per Automazione interfaccia utente (UIA).
 ms.assetid: 60506FEE-9708-4668-8846-42B0B696DD9A
 keywords:
-- Controlli di Windows Message EM_SETUIANAME
+- EM_SETUIANAME controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0102b792a9eccfc6116acc3a534b00fb64b7ee5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 603d59b7bf246ee8ed7987d42399281ac1b0520ef27e206f2f8eeddf8f363d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412326"
 ---
-# <a name="em_setuianame-message"></a>\_Messaggio SETUIANAME em
+# <a name="em_setuianame-message"></a>Messaggio \_ EM SETUIANAME
 
-Imposta il nome di un controllo Rich Edit per l'automazione interfaccia utente (UIA).
+Imposta il nome di un controllo Rich Edit per Automazione interfaccia utente (UIA).
 
 
 ```C++
@@ -39,20 +39,20 @@ Imposta il nome di un controllo Rich Edit per l'automazione interfaccia utente (
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore alla stringa del nome con terminazione null.
+Puntatore alla stringa del nome con terminazione Null.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-TRUE se il nome di UIA è stato impostato correttamente; in caso contrario, FALSE.
+TRUE se il nome dell'interfaccia utente è impostato correttamente; in caso contrario, FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,9 +60,9 @@ TRUE se il nome di UIA è stato impostato correttamente; in caso contrario, FALS
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

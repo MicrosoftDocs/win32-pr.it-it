@@ -1,7 +1,7 @@
 ---
-description: Il \_ metodo Get MediaType restituisce il tipo di supporto di output corrente del filtro Resizer.
+description: Il metodo get MediaType restituisce il tipo di supporto di output corrente del filtro \_ di ridimensionamento.
 ms.assetid: b9900f7c-05f6-47e4-9cb0-683df2aea404
-title: 'Metodo IResize:: get_MediaType (qedit. h)'
+title: Metodo IResize::get_MediaType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: b03bad7f8686fd580f7dd5fc347c347ade1c1c97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9e23c78a25f1cda141cb0c3ce55688c12bdf3aab447aca596326e01544b4e8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818232"
 ---
-# <a name="iresizeget_mediatype-method"></a>Metodo IResize:: Get \_ mediaType
+# <a name="iresizeget_mediatype-method"></a>Metodo IResize::get \_ MediaType
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
 
  
 
-Il `get_MediaType` metodo restituisce il tipo di supporto di output corrente del filtro Resizer.
+Il metodo restituisce il tipo di supporto di output corrente del filtro `get_MediaType` di ridimensionamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,28 +45,28 @@ HRESULT get_MediaType(
 
 <dl> <dt>
 
-*PMT* \[ out\]
+*pmt* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura del [**\_ \_ tipo di supporto am**](/windows/win32/api/strmif/ns-strmif-am_media_type) allocata dal chiamante. Il metodo compila questa struttura con il tipo di supporto. Il chiamante deve rilasciare il blocco di formato, se disponibile.
+Puntatore a [**una struttura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) allocata dal chiamante. Il metodo riempie questa struttura con il tipo di supporto. Il chiamante deve rilasciare il blocco di formato, se presente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
-Se il tipo di supporto di output non è stato impostato, restituire un tipo di supporto predefinito. Il filtro deve aggiornare il tipo di supporto di output quando vengono chiamati i metodi **put \_ mediaType** o **put \_ size** . il tipo di supporto restituito da `get_MediaType` deve riflettere queste modifiche.
+Se il tipo di supporto di output non è stato impostato, restituire un tipo di supporto predefinito. Il filtro deve aggiornare il tipo di supporto di output quando vengono chiamati i metodi **put \_ MediaType** o **put \_ Size.** Il tipo di supporto restituito da `get_MediaType` deve riflettere queste modifiche.
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,9 +76,9 @@ Se il tipo di supporto di output non è stato impostato, restituire un tipo di s
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versione<br/> | DirectX 9,0 o versione successiva<br/>                                                         |
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versione<br/> | DirectX 9.0 o versione successiva<br/>                                                         |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

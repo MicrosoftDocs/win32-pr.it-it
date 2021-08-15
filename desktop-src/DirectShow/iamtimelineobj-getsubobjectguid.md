@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetSubObjectGUID Recupera il GUID dell'oggetto SubObject associato a questo oggetto sequenza temporale.
+description: Il metodo GetSubObjectGUID recupera il GUID del sottooggetto associato a questo oggetto sequenza temporale.
 ms.assetid: c2787e6b-ed72-4a6c-9e1e-c79c00020585
-title: 'Metodo IAMTimelineObj:: GetSubObjectGUID (qedit. h)'
+title: Metodo IAMTimelineObj::GetSubObjectGUID (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1c787bdbca8bbd255ccc78c3756fd0071d22f30d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1afa22c2a850ce0f6106fcb8ffe1d82a84338fa03354e073e2c114678363d39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118400759"
 ---
-# <a name="iamtimelineobjgetsubobjectguid-method"></a>Metodo IAMTimelineObj:: GetSubObjectGUID
+# <a name="iamtimelineobjgetsubobjectguid-method"></a>Metodo IAMTimelineObj::GetSubObjectGUID
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il `GetSubObjectGUID` metodo recupera il GUID dell'oggetto SubObject associato a questo oggetto sequenza temporale.
+Il `GetSubObjectGUID` metodo recupera il GUID del sottooggetto associato a questo oggetto sequenza temporale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,26 +45,26 @@ HRESULT GetSubObjectGUID(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Riceve il GUID dell'oggetto SubObject oppure il GUID \_ null se l'oggetto non dispone di un oggetto SubObject.
+Riceve il GUID del sottooggetto o GUID \_ NULL se l'oggetto non dispone di un sottooggetto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

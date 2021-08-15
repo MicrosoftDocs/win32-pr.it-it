@@ -1,29 +1,29 @@
 ---
-description: Il programma Windows Server 2008 R2 logo è incentrato sul garantire che i dispositivi, i sistemi e le applicazioni siano compatibili, affidabili e possano essere eseguiti per soddisfare gli standard di Windows.
+description: Il programma Windows logo di Windows Server 2008 R2 è in particolare in grado di garantire che dispositivi, sistemi e applicazioni siano compatibili, affidabili e possano essere eserciti per soddisfare Windows standard.
 ms.assetid: f90aed9d-db23-4b6b-9c4b-62f0e2730be2
-title: Programma logo di Windows Server 2008 R2 per il software
+title: Windows Programma logo server 2008 R2 per software
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57fc50c76de6ddaec7cb8bf4fdec2246d87fb465
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24579b1142896186a2749f2eceeb6507e83a70ab64bbdfc277b3b35f553583c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118328093"
 ---
-# <a name="windows-server-2008-r2-logo-program-for-software"></a>Programma logo di Windows Server 2008 R2 per il software
+# <a name="windows-server-2008-r2-logo-program-for-software"></a>Windows Programma logo server 2008 R2 per software
 
 ## <a name="affected-platforms"></a>Piattaforme interessate
 
- **Server-** Windows Server 2008 R2  
+ **Server -** Windows Server 2008 R2  
 
 ### <a name="description"></a>Descrizione
 
-Il programma logo di Windows Server 2008 R2 è stato ritirato.
+Il Windows logo di Server 2008 R2 è stato ritirato.
 
-Gli invii di test di Windows Server 2008 R2 2012 non vengono più accettati per le competenze Microsoft Partner Network (MPN) o per il logo Certified for Windows Server.
+Windows Gli invii di test di Server 2008 R2 2012 non vengono più accettati per le competenze Microsoft Partner Network (MPN) o per il logo del server Certified for Windows.
 
-Windows Server 2012 R2 è attualmente la piattaforma preferita per il logo Certified for Windows Server. Per ulteriori informazioni, vedere il [programma di certificazione del logo dell'applicazione cloud aziendale](https://azure.microsoft.com/overview/commercial-marketplace/) .
+Windows Server 2012 R2 è attualmente la piattaforma preferita per il logo Certified for Windows Server. Per altre [informazioni, Enterprise il programma di certificazione del logo dell'applicazione](https://azure.microsoft.com/overview/commercial-marketplace/) cloud.
 
  
 

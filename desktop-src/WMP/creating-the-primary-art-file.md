@@ -1,112 +1,112 @@
 ---
-title: Creazione del file di immagine principale
-description: Creazione del file di immagine principale
+title: Creazione del file di grafica principale
+description: Creazione del file di grafica principale
 ms.assetid: 50099050-2ce8-4cbf-82b7-3018f6579bd2
 keywords:
-- creazione di interfacce, file di immagine principali
-- Interfacce di Media Player di Windows, file di immagine
-- interfacce, file di immagine
-- file per Skins, Art
-- file di grafica per interfacce, immagini primarie
-- Windows Media Player Skin, immagini primarie
-- interfacce, immagini primarie
-- immagini primarie nelle interfacce
+- creazione di interfaccia, file di grafica principali
+- Windows Media Player, file art
+- skins, file art
+- file per le interfaccia, grafica
+- file di grafica per le interfaccia, immagini primarie
+- Windows Media Player, immagini primarie
+- interfaccia, immagini primarie
+- immagini primarie nelle interfaccia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ceb92a5a87c1fc03ec7336a7ca5dd7814e4a1c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b21483e9b39692ad9eee7eb2cd7958f2fa70ddb7c2926877b84f3f537156bd55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104557334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341540"
 ---
-# <a name="creating-the-primary-art-file"></a>Creazione del file di immagine principale
+# <a name="creating-the-primary-art-file"></a>Creazione del file di grafica principale
 
-Il file di immagine principale conterrà l'immagine che l'utente dell'interfaccia vede per primo. In questo caso, verranno create immagini in diversi livelli del programma Art. Il motivo per l'uso dei livelli è che i livelli specifici vengono copiati in un secondo momento per creare file di mapping e file di grafica alternativi.
+Il file di grafica principale conterrà l'immagine visualizzata per la prima volta dall'utente dell'interfaccia. In questo caso, si creeranno immagini in diversi livelli del programma di grafica. Il motivo per cui si usano i livelli è che si copieranno livelli specifici in un secondo momento per creare file di mappa e file di grafica alternativi.
 
-Per creare il file di immagine principale, si creeranno i livelli seguenti nell'ordine seguente:
+Per creare il file di grafica principale, si creeranno i livelli seguenti nell'ordine seguente:
 
-Livello sfondo interfaccia
+Livello di sfondo dell'interfaccia
 
-Si tratta del colore che sarà trasparente quando verrà visualizzata l'interfaccia. Per prima cosa, creare un livello, ma scegliere il colore finale del livello dopo aver scelto un colore per il livello contenitore dell'interfaccia. Questo colore deve essere simile a, ma non allo stesso modo del livello contenitore dell'interfaccia, per nascondere eventuali effetti anti-aliasing.
+Si tratta del colore trasparente quando viene visualizzata l'interfaccia. Creare prima un livello per questo livello, ma scegliere il colore finale di questo livello dopo aver scelto un colore per il livello contenitore dell'interfaccia. Questo colore deve essere simile, ma non uguale al livello del contenitore dell'interfaccia, per nascondere eventuali effetti di anti-aliasing.
 
-Livello contenitore interfaccia
+Livello contenitore dell'interfaccia
 
-Si tratta dell'immagine che formerà il contorno dell'interfaccia e sarà ciò che viene visualizzato dall'utente. In questo esempio sarà anche il contenitore per i due pulsanti. Si pensi alla propria interfaccia come a un contenitore per i controlli dell'interfaccia utente, ad esempio pulsanti, dispositivi di scorrimento e così via. In questo esempio, il contenitore è un ovale giallo.
+Questa è l'immagine che formerà il contorno dell'interfaccia e sarà ciò che l'utente vede. Sarà anche il contenitore per i due pulsanti in questo esempio. Si pensi all'interfaccia come a un contenitore per i controlli dell'interfaccia utente, ad esempio pulsanti, dispositivi di scorrimento e così via. In questo esempio il contenitore è un ovale giallo.
 
-Livelli pulsante Riproduci e Chiudi
+Livelli dei pulsanti Riproduci e Chiudi
 
-Questi sono i due controlli dell'interfaccia utente usati in questo esempio. Si inseriranno in livelli distinti per poterli modificare facilmente o copiarli in un secondo momento.
+Questi sono i due controlli dell'interfaccia utente utilizzati in questo esempio. I livelli verranno inseriti in livelli separati in modo da poterli modificare facilmente o copiarli in un secondo momento.
 
-Prima di creare i livelli, è necessario creare il file che conterrà i livelli. Avviare Photoshop e creare un nuovo file con dimensioni massime di 100 pixel e 200 pixel di larghezza. Il file utilizzato per creare l'immagine per questo esempio è denominato tiny.psd ed è incluso nell'SDK.
+Prima di creare i livelli, è necessario creare il file che contenerà i livelli. Avviare Photoshop e creare un nuovo file con un'altezza di 100 pixel e una larghezza di 200 pixel. Il file usato per creare l'immagine per questo esempio è denominato tiny.psd ed è incluso nell'SDK.
 
-Tutte le istruzioni sono fornite in termini di Photoshop, ma è possibile usare qualsiasi altro programma artistico per creare interfacce, purché sia possibile salvare in uno dei formati di file supportati da Windows Media Player (BMP, GIF, JPG e PNG). La creazione di Skin è più semplice se si usa un programma artistico con livelli, ad esempio Adobe Photoshop, Jasc Paint Shop Pro o la viscosità di Jedor. I livelli sono estremamente utili perché le immagini devono essere allineate correttamente per il mapping delle immagini e la visualizzazione di immagini alternative.
+Tutte le istruzioni sono fornite in termini di Photoshop, ma qualsiasi altro programma di grafica può essere usato per creare le interfaccia, purché sia possibile salvare in uno dei formati di file supportati da Windows Media Player (BMP, GIF, JPG e PNG). La creazione di un'interfaccia utente risulta più semplice se si usa un programma di grafica con livelli, ad esempio Adobe Photoshop, Jasc Paint Shop Pro o Jedor Viscosity. I livelli sono estremamente utili perché le immagini devono essere allineate correttamente per il mapping delle immagini e la visualizzazione di immagini alternative.
 
-## <a name="skin-background-layer"></a>Livello sfondo interfaccia
+## <a name="skin-background-layer"></a>Livello di sfondo dell'interfaccia
 
-Creare un nuovo livello e denominarlo "sfondo interfaccia". Questo diventerà il colore di trasparenza che verrà definito nel file di definizione dell'interfaccia. Attendere che il colore per il contenitore di Skin venga scelto prima di riempire il livello di sfondo dell'interfaccia con un colore specifico.
+Creare un nuovo livello e assegnare al livello il nome "Sfondo interfaccia". Questo diventerà il colore di trasparenza che verrà definito nel file di definizione dell'interfaccia. Attendere che venga scelto il colore per il contenitore dell'interfaccia prima di riempire il livello di sfondo dell'interfaccia con un colore specifico.
 
-## <a name="skin-container-layer"></a>Livello contenitore interfaccia
+## <a name="skin-container-layer"></a>Livello contenitore dell'interfaccia
 
-Successivamente, creare un nuovo livello e chiamarlo "contenitore di skin". Verranno definiti i bordi dell'interfaccia e sarà il contenitore per i pulsanti.
+Creare quindi un nuovo livello e chiamarlo "Contenitore interfaccia". Verranno definiti i bordi dell'interfaccia e sarà il contenitore per i pulsanti.
 
-Scegliere un colore di primo piano per la forma utilizzando i dispositivi di scorrimento dei colori Web. In questo esempio \# è stato scelto il colore "DBDD11".
+Scegliere un colore di primo piano per la forma usando i dispositivi di scorrimento Colore Web. In questo esempio è stato scelto il \# colore "DBDD11".
 
-Successivamente, creare una forma ovale. Il modo più semplice consiste nell'usare lo strumento ellittica Marquee e creare una selezione ovale. Quando è stata creata una selezione ovale che rappresenta le dimensioni e la forma desiderate, riempire la selezione con il colore di primo piano e annullare la selezione.
+Creare quindi una forma ovale. Il modo più semplice è usare lo strumento Eliptical Marquee e creare una selezione ovale. Dopo aver creato una selezione ovale con le dimensioni e la forma desiderate, riempire la selezione con il colore di primo piano e annullare la selezione.
 
-Infine, per rendere questo aspetto leggermente più interessante, applicare l'effetto del livello di smussatura e rilievo con i valori predefiniti.
+Infine, per rendere questo aspetto un po' più interessante, applicare l'effetto livello Smussato ed Rilievo con i valori predefiniti.
 
-Il livello del contenitore dell'interfaccia utente dovrebbe essere simile a quello illustrato nella figura seguente.
+Il livello del contenitore dell'interfaccia dovrebbe essere simile alla figura seguente.
 
-![livello contenitore interfaccia](images/g01cont.png)
+![livello del contenitore di interfaccia](images/g01cont.png)
 
-## <a name="background-skin-color"></a>Colore della pelle di sfondo
+## <a name="background-skin-color"></a>Colore dell'interfaccia di sfondo
 
-Ora che è stato scelto un colore di primo piano per la forma del contenitore di skin, è possibile scegliere un colore simile per il livello di sfondo della pelle. Non si vuole esattamente lo stesso colore o il contenitore Skin sarà anche trasparente. In realtà, assicurarsi di non usare questo colore esatto in qualsiasi altra parte dell'interfaccia, neanche nelle fotografie, perché ogni volta che viene visualizzato questo colore, viene visualizzata l'immagine del desktop.
+Ora che è stato scelto un colore di primo piano per la forma del contenitore dell'interfaccia, è possibile scegliere un colore simile per il livello di sfondo dell'interfaccia. Non si vuole usare esattamente lo stesso colore oppure anche il contenitore dell'interfaccia sarà trasparente. Assicurarsi infatti di non usare questo colore esatto in nessun altro punto dell'interfaccia, anche nelle fotografie, perché ovunque venga visualizzato questo colore, verrà visualizzata l'immagine desktop.
 
-Si desidera un colore vicino al colore del contenitore dell'interfaccia per evitare effetti anti-aliasing. Se, ad esempio, si dispone di uno sfondo nero, alcuni bit del nero possono apparire intorno al bordo della pelle. Scegliendo un colore vicino al colore del contenitore dell'interfaccia, eventuali pixel randagi visualizzati nel processo di anti-aliasing non verranno rilevati.
+Si vuole un colore vicino al colore del contenitore dell'interfaccia per evitare effetti di anti-aliasing. Ad esempio, se si ha uno sfondo nero, alcuni bit di nero possono essere visualizzati intorno al bordo dell'interfaccia. Scegliendo un colore vicino al colore del contenitore dell'interfaccia, tutti i pixel smarriti visualizzati nel processo di anti-aliasing non verranno inosservati.
 
-L'anti-aliasing è il processo di smussatura dei bordi delle forme inclinate o curve. L'anti-aliasing crea nuovi colori, per pixel lungo i bordi di una forma, ovvero una combinazione del colore di primo piano e del colore di sfondo. Alcuni di questi colori possono causare la mancata presenza di pixel quando il colore di sfondo viene reso trasparente.
+L'anti-aliasing è il processo di smussatura dei bordi di forme smussate o curve. L'anti-aliasing crea nuovi colori, per i pixel lungo i bordi di una forma, che sono una combinazione del colore di primo piano e del colore di sfondo. Alcuni di questi colori possono causare la perdita dei pixel quando il colore di sfondo viene reso trasparente.
 
-Il livello dello sfondo dell'interfaccia utente dovrebbe essere simile a quello illustrato nella figura seguente.
+Il livello di sfondo dell'interfaccia dovrebbe essere simile alla figura seguente.
 
-![livello interfaccia di sfondo](images/g01backg.png)
+![livello dell'interfaccia di sfondo](images/g01backg.png)
 
-## <a name="play-and-close-button-layers"></a>Livelli pulsante Riproduci e Chiudi
+## <a name="play-and-close-button-layers"></a>Livelli dei pulsanti Riproduci e Chiudi
 
-Creare un nuovo livello e denominarlo "Chiudi pulsante". Utilizzando di nuovo lo strumento ellittica Marquee Selection, creare un cerchio e posizionarlo sul lato sinistro dell'immagine complessiva. Attivare la visibilità del file contenitore dell'interfaccia per facilitare la selezione.
+Creare un nuovo livello e assegnare al livello il nome "Chiudi pulsante". Usando di nuovo lo strumento di selezione Eliptical Marquee (Cornice ellittica), creare un cerchio e posizionarlo sul lato sinistro dell'immagine complessiva. Attivare la visibilità del file contenitore dell'interfaccia per consentire di posizionare la selezione.
 
-Quando si è soddisfatti della posizione, riempire la selezione con qualsiasi colore, ad eccezione del colore del contenitore o dello sfondo dell'interfaccia. In questo esempio è stato scelto un colore viola. Non è necessario ricordare il numero di colore. Annullare quindi la selezione e applicare un altro effetto del livello di rilievo e smussatura predefinito. Se si desidera applicare effetti non di livello al pulsante, creare una copia dell'originale per utilizzarlo in un secondo momento nel mapping.
+Quando si è soddisfatti del posizionamento, riempire la selezione con qualsiasi colore (ad eccezione del colore del contenitore dell'interfaccia o dello sfondo dell'interfaccia). In questo esempio è stato scelto un colore viola. Non è necessario ricordare il numero del colore. Annullare quindi la selezione e applicare un altro effetto predefinito del livello Smussatura ed Rilievo. Se si vogliono applicare effetti non di livello al pulsante, creare una copia dell'originale per un uso successivo nel mapping.
 
-Il pulsante Chiudi avrà un aspetto simile a quello illustrato nella figura seguente.
+Il pulsante Chiudi dovrebbe essere simile alla figura seguente.
 
 ![pulsante di chiusura](images/g01qbut.png)
 
-Creare un nuovo livello e denominarlo "pulsante Riproduci". Utilizzare le stesse tecniche effettuate per il pulsante Chiudi, ma assegnare un colore diverso. In questo caso, è stato scelto il colore di un pulsante rosa, ma è possibile usare qualsiasi colore, purché non sia lo stesso colore del contenitore di Skin (perché si mescolerà nel contenitore) o il colore di sfondo dell'interfaccia (perché diventerebbe trasparente).
+Creare un nuovo livello e assegnare al livello il nome "Pulsante Riproduci". Usare le stesse tecniche usate per il pulsante Chiudi, ma assegnargli un colore diverso. In questo caso, è stato scelto un colore di pulsante rosa, ma è possibile usare qualsiasi colore purché non sia lo stesso colore del contenitore dell'interfaccia (perché si fondono nel contenitore) o il colore di sfondo dell'interfaccia (perché diventerebbe trasparente).
 
-Il pulsante Riproduci avrà un aspetto simile a quello illustrato nella figura seguente.
+Il pulsante Riproduci dovrebbe essere simile alla figura seguente.
 
-![pulsante Riproduci](images/g01pbut.png)
+![pulsante di riproduzione](images/g01pbut.png)
 
 ## <a name="combine-layers-and-save"></a>Combinare i livelli e salvare
 
-A questo punto è possibile creare il file di immagine principale. Nascondi tutti i livelli e Mostra solo i livelli seguenti, in questo ordine (dall'alto verso il basso):
+A questo punto si è pronti per creare il file di grafica principale. Nascondere tutti i livelli e quindi visualizzare solo i livelli seguenti, in questo ordine (dall'alto verso il basso):
 
 Pulsante Riproduci
 
 Pulsante Chiudi
 
-Contenitore Skin
+Contenitore di interfaccia
 
-Sfondo interfaccia
+Sfondo dell'interfaccia
 
-Salvare in un nuovo file usando il comando Salva copia dal menu file. Selezionare l'opzione BMP nella parte Salva come della finestra di dialogo Salva copia e digitare il nome di un file a cui si fa riferimento in un secondo momento nel file di definizione dell'interfaccia personalizzata. Idealmente, è consigliabile salvarlo nella stessa directory del file di definizione dell'interfaccia personalizzata. Ad esempio, è possibile chiamare questo background.bmp. Scegliere le impostazioni predefinite e salvare il file.
+Salvare in un nuovo file usando il comando Salva copia dal menu File. Selezionare l'opzione BMP nella parte Salva con nome della finestra di dialogo Salva una copia e digitare un nome di file a cui si farà riferimento in seguito nel file di definizione dell'interfaccia. Idealmente, è consigliabile salvarlo nella stessa directory del file di definizione dell'interfaccia. Ad esempio, è possibile chiamare questo background.bmp. Scegliere le impostazioni predefinite e salvare il file.
 
-Il file di immagine principale dovrebbe essere simile al seguente:
+Il file di grafica principale dovrebbe essere simile al seguente:
 
-![file di immagine principale](images/g01prime.png)
+![file di grafica principale](images/g01prime.png)
 
-Questo nome file verrà usato come valore per l'attributo **BackgroundImage** dell'elemento **View** nel file di definizione dell'interfaccia utente.
+Questo nome file verrà utilizzato come valore per l'attributo **backgroundImage** **dell'elemento VIEW** nel file di definizione dell'interfaccia.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -115,9 +115,9 @@ Questo nome file verrà usato come valore per l'attributo **BackgroundImage** de
 [**Creazione della prima interfaccia**](building-your-first-skin.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

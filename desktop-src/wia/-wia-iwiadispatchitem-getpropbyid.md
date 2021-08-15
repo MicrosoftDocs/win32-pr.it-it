@@ -1,7 +1,7 @@
 ---
-description: Il metodo GetPropById dell'oggetto Item usa l'ID di una proprietà Item per restituirne il valore.
+description: Il metodo GetPropById dell'oggetto Item usa l'ID di una proprietà dell'elemento per restituirne il valore.
 ms.assetid: 00f7a91c-fd55-4016-a932-f710045a14b8
-title: Item. GetPropById, metodo
+title: Metodo Item.GetPropById
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 54eb329d51005893b89a9fd28f160ff616e682df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c8d5f68114f74505fce11ca8872370a802e31400159146d7030ec34339c7d19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208375"
 ---
-# <a name="itemgetpropbyid-method"></a>Item. GetPropById, metodo
+# <a name="itemgetpropbyid-method"></a>Metodo Item.GetPropById
 
-Il metodo **GetPropById** dell'oggetto [**Item**](-wia-item.md) usa l'ID di una proprietà Item per restituirne il valore.
+Il **metodo GetPropById** dell'oggetto [**Item**](-wia-item.md) usa l'ID di una proprietà dell'elemento per restituirne il valore.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,15 +50,15 @@ Specifica l'ID della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **Variant**
+Tipo: **VARIANT**
 
-Questo metodo restituisce il valore della proprietà specificata da *ID*.
+Questo metodo restituisce il valore della proprietà specificata da *Id*.
 
 ## <a name="remarks"></a>Commenti
 
-Utilizzare questo metodo per trovare il valore di una proprietà Item dal relativo ID. Per un elenco di ID di proprietà, vedere [definizioni di costanti della proprietà WIA](-wia-wia-property-constant-definitions.md). Per informazioni sulle proprietà stesse, vedere [costanti della proprietà WIA](-wia-wia-property-constants.md).
+Usare questo metodo per trovare il valore di una proprietà dell'elemento dal relativo ID. Per un elenco di ID di proprietà, vedere [Definizioni delle costanti delle proprietà WIA.](-wia-wia-property-constant-definitions.md) Per informazioni sulle proprietà stesse, vedere [Costanti delle proprietà WIA.](-wia-wia-property-constants.md)
 
-Per le applicazioni Microsoft Visual Basic, aggiungere un riferimento a "Windows Image Acquisition 1,01 Type Library". Le costanti seguenti definite in tale file sono valide solo per gli elementi radice (elementi del dispositivo):
+Per le Visual Basic Microsoft, aggiungere un riferimento a "Windows Image Acquisition 1.01 Type Library". Le costanti seguenti definite in tale file sono valide solo per gli elementi radice (elementi dispositivo):
 
 ``` syntax
 const FirmwareVersion = 1026
@@ -114,7 +114,7 @@ const TransparecnyAdapterSelect = 3102
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'utilizzo del metodo **GetPropById** per recuperare un valore della proprietà.
+L'esempio seguente illustra l'uso **del metodo GetPropById** per recuperare il valore di una proprietà.
 
 
 ```JScript
@@ -150,9 +150,9 @@ Next
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4,90 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 
 

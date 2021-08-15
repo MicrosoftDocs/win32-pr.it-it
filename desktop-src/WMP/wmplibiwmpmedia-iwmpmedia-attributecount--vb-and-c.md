@@ -1,11 +1,11 @@
 ---
-title: Proprietà attributeCount di IWMPMedia
-description: La proprietà attributeCount ottiene il numero di attributi che è possibile sottoporre a query e/o impostare per l'elemento multimediale.
+title: Proprietà attributeCount IWMPMedia
+description: La proprietà attributeCount ottiene il numero di attributi che possono essere sottoposti a query e/o impostati per l'elemento multimediale.
 ms.assetid: 527298ff-365d-41b0-90dd-e236d6adf6fa
 keywords:
-- Finestra delle proprietà di attributeCount Media Player
-- Proprietà di attributeCount Media Player Windows, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, proprietà attributeCount
+- proprietà attributeCount Windows Media Player
+- proprietà attributeCount Windows Media Player, interfaccia IWMPMedia
+- Interfaccia IWMPMedia Windows Media Player proprietà attributeCount
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5a56d06a54590afd315f04a90aa582f3a364db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73c3139d076fd7d1cd1bad784e325c67da25b3e7dedf530a9634a2878fe3011a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746070"
 ---
-# <a name="iwmpmediaattributecount-property"></a>Proprietà IWMPMedia:: attributeCount
+# <a name="iwmpmediaattributecount-property"></a>Proprietà IWMPMedia::attributeCount
 
-La proprietà **attributeCount** ottiene il numero di attributi che è possibile sottoporre a query e/o impostare per l'elemento multimediale.
+La **proprietà attributeCount** ottiene il numero di attributi che possono essere sottoposti a query e/o impostati per l'elemento multimediale.
 
 Questa proprietà è di sola lettura.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property attributeCount As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il conteggio.
+Oggetto **System.Int32** che rappresenta il conteggio.
 
 ## <a name="remarks"></a>Commenti
 
-Prima di utilizzare questa proprietà, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di usare questa proprietà, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per informazioni sugli attributi supportati da Windows Media Player, vedere il [riferimento all'attributo](attribute-reference.md).
+Per informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni [di riferimento sugli attributi](attribute-reference.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **attributeCount** per determinare il numero di attributi disponibili nell'elemento multimediale corrente. Il codice usa tale valore per visualizzare un elenco di nomi e valori di attributi in una casella di testo. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene **utilizzato attributeCount** per determinare il numero di attributi disponibili nell'elemento multimediale corrente. Il codice usa tale valore per visualizzare un elenco di nomi e valori di attributi in una casella di testo. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -133,7 +133,7 @@ attributeList.Lines = atList
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

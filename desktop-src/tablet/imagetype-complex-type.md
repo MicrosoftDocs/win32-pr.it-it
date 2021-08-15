@@ -1,5 +1,5 @@
 ---
-description: Definisce il tipo che contiene le informazioni binarie per un'immagine in una nota del journal.
+description: Definisce il tipo che contiene le informazioni binarie per un'immagine in una nota journal.
 ms.assetid: 03bfb45b-4f8c-480e-85db-59e1608a09fa
 title: Tipo complesso ImageType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5e90de5c8e744350c85143f252bbda3921c2039d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07e2e929200825b2e87c069206b4e50f2b76ed57d28c71484896290198a8b423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103878754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220927"
 ---
 # <a name="imagetype-complex-type"></a>Tipo complesso ImageType
 
-Definisce il tipo che contiene le informazioni binarie per un'immagine in una nota del journal.
+Definisce il tipo che contiene le informazioni binarie per un'immagine in una nota journal.
 
 ``` syntax
 <xs:complexType name="ImageType" />
@@ -33,7 +33,7 @@ Definisce il tipo che contiene le informazioni binarie per un'immagine in una no
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC Edition \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                     |
 
 

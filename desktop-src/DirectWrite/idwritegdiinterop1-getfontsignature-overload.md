@@ -1,9 +1,9 @@
 ---
-title: Metodi GetFontSignature di IDWriteGdiInterop1 (DWrite \_ 3. h)
+title: Metodi IDWriteGdiInterop1 GetFontSignature (Dwrite \_ 3.h)
 description: Recupera una firma del tipo di carattere.
 ms.assetid: 83967afd-8309-74b7-da76-1caee04a4990
 keywords:
-- Scrittura diretta metodi GetFontSignature
+- Metodi GetFontSignature Direct Write
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c73ef32356de0ed5e1cf0b722368c674606f2058
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0ae65dc978fc6644248aa36dc72f215b4a39f2ad69fe167f08707bcb81f5636b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816372"
 ---
-# <a name="idwritegdiinterop1getfontsignature-methods"></a>Metodi IDWriteGdiInterop1:: GetFontSignature
+# <a name="idwritegdiinterop1getfontsignature-methods"></a>Metodi IDWriteGdiInterop1::GetFontSignature
 
 Recupera una firma del tipo di carattere.
 
@@ -40,7 +40,7 @@ Recupera una firma del tipo di carattere.
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DWrite \_ 3. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 

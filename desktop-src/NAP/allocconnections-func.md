@@ -1,9 +1,9 @@
 ---
-title: Funzione AllocConnections (NapUtil. h)
-description: Alloca memoria per un numero specificato di strutture di connessione.
+title: Funzione AllocConnections (NapUtil.h)
+description: Alloca memoria per un numero specificato di strutture Connections.
 ms.assetid: 0e0075ed-6e4c-43f7-af40-c6dea2808d05
 keywords:
-- NAP funzione AllocConnections
+- Funzione AllocConnections nap
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e29521d2fea6eec3765a3a34210b896f1baa4db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf86a44b81ef12234fdac675aa55d36c5e1a336b4316382c3fd322cf0d6ba87a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103743898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800208"
 ---
-# <a name="allocconnections-function"></a>AllocConnections (funzione)
+# <a name="allocconnections-function"></a>Funzione AllocConnections
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
  
 
-La funzione **AllocConnections** alloca memoria per un numero specificato di strutture di [**connessione**](connections-struct.md) .
+La **funzione AllocConnections** alloca memoria per un numero specificato di [**strutture Connections.**](connections-struct.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ NAPAPI HRESULT WINAPI AllocConnections(
 
 <dl> <dt>
 
-*connessioni* \[ di in uscita\]
+*connessioni* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una matrice di strutture di [**connessioni**](connections-struct.md) appena allocate.
+Puntatore a una matrice di strutture [**Connections**](connections-struct.md) appena allocate.
 
 </dd> <dt>
 
-*connectionsCount* \[ in\]
+*connectionsCount* \[ Pollici\]
 </dt> <dd>
 
 Numero di strutture da allocare alle *connessioni*.
@@ -66,9 +66,9 @@ Numero di strutture da allocare alle *connessioni*.
 
 | Codice restituito                                                                                   | Descrizione                                                                |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | L'operazione è stata completata correttamente.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | L'operazione è stata completata correttamente.<br/>                       |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | È stato passato un argomento non valido.<br/>                                 |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | Memoria virtuale insufficiente nel sistema. Operazione non riuscita.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | La memoria virtuale del sistema è insufficiente. L'operazione non è riuscita.<br/> |
 
 
 
@@ -76,13 +76,13 @@ Numero di strutture da allocare alle *connessioni*.
 
 ## <a name="remarks"></a>Commenti
 
-Tutte le interfacce COM supportate dal sistema NAP utilizzano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
+Tutte le interfacce COM supportate dal sistema nap usano le regole di gestione della memoria COM standard e gli allocatori di memoria COM (**CoTaskMemAlloc** e **CoTaskMemFree**):
 
--   I parametri **in** vengono allocati e liberati dal chiamante.
--   I parametri **out** vengono allocati dal chiamato e liberati dal chiamante utilizzando **CoTaskMem**.
--   I parametri **in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
+-   **I** parametri in vengono allocati e liberati dal chiamante.
+-   **I** parametri out vengono allocati dal chiamato e liberati dal chiamante usando **CoTaskMem**.
+-   **I parametri in/out** vengono allocati dal chiamante, liberati e riallocati dal chiamato e infine liberati dal chiamante, usando **CoTaskMem**.
 
-Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
+Tutte le funzioni di Protezione accesso alla rete per liberare memoria liberano anche tutti i puntatori incorporati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -90,9 +90,9 @@ Tutte le funzioni di protezione accesso alla rete per liberare memoria liberano 
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

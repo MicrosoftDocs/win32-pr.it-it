@@ -1,23 +1,23 @@
 ---
-title: store_uav_typed (SM5-ASM)
-description: Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso non ordinato (UAV) tipizzata.
+title: store_uav_typed (sm5 - asm)
+description: Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso non ordinata tipiata.
 ms.assetid: AD8E035B-DACD-4241-A05B-7D6DC8E3222C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6243e6fbb2092bac699dbbce04cb3c3478880866
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cc190662ebab4629c92bba8fafbe75fe23704f8543c7eb9ceba53b9ab02b1029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104046074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508241"
 ---
-# <a name="store_uav_typed-sm5---asm"></a>archivio \_ UAV \_ tipizzato (SM5-ASM)
+# <a name="store_uav_typed-sm5---asm"></a>store \_ uav \_ typed (sm5 - asm)
 
-Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso non ordinato (UAV) tipizzata.
+Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso non ordinata tipiata.
 
 
 
-| archivio \_ UAV \_ tipizzato dstUAV. xyzw, dstAddress \[ . Swizzle \] , src0 \[ . Swizzle\] |
+| store \_ uav \_ typed dstUAV.xyzw, dstAddress \[ .swizzle \] , src0 \[ .swizzle\] |
 |-------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso no
 
 | Elemento                                                                                                           | Descrizione                                             |
 |----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                 | \[in \] contiene il risultato dell'operazione.<br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[nell' \] indirizzo in cui scrivere.<br/>        |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[nei \] componenti da scrivere.<br/>              |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                 | \[in \] Contiene il risultato dell'operazione.<br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[in \] Indirizzo in cui scrivere.<br/>        |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[in \] Componenti da scrivere.<br/>              |
 
 
 
@@ -38,23 +38,23 @@ Scrittura ad accesso casuale di un elemento in una visualizzazione di accesso no
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue un elemento a \* 32 bit a 4 componenti scritto da *Src0* in *DstUAV* all'indirizzo in *dstAddress*. *dstUAV* è un UAV tipizzato (u \# ).
+Questa istruzione esegue un elemento a 4 componenti a 32 bit scritto da \* *src0* a *dstUAV* all'indirizzo in *dstAddress*. *dstUAV* è un UAV tipiato (u \# ).
 
-Il formato del UAV determina la conversione del formato.
+Il formato dell'UAV determina la conversione del formato.
 
-Il numero di componenti Unsigned Integer a 32 bit presi dall'indirizzo è determinato dalla dimensionalità della risorsa dichiarata in *dstUAV*. Questo indirizzo si trova in elementi.
+Il numero di componenti di interi senza segno a 32 bit prelevati dall'indirizzo è determinato dalla dimensionalità della risorsa dichiarata in *dstUAV*. Questo indirizzo è in elementi .
 
-L'indirizzamento fuori limite indica che non viene scritto alcun elemento nella memoria.
+L'indirizzamento fuori dai limiti indica che non viene scritto nulla in memoria.
 
-*dstUAV* ha sempre una maschera di scrittura xyzw. È necessario scrivere tutti i componenti.
+*dstUAV* ha sempre una maschera di scrittura con estensione xyzw. Tutti i componenti devono essere scritti.
 
-Non è valido e non è definito per usare questa istruzione in un UAV non dichiarato come tipizzato. Ovvero, l'operazione su un UAV strutturato o non di tipo non è valida.
+Non è valido e non è definito usare questa istruzione in un UAV non dichiarato come tipiato. Ciò significa che l'operazione in un UAV strutturato o senza tipo non è valida.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -62,11 +62,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché i file UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -74,20 +74,20 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa istruzione è supportata nei modelli shader seguenti:
+Questa istruzione è supportata nei modelli di shader seguenti:
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -97,7 +97,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (HLSL DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

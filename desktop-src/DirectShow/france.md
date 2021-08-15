@@ -4,25 +4,25 @@ ms.assetid: 852ead0e-3539-483d-943d-1779f7358ba5
 title: Francia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 825efa71702dfe617325586d657665a302076369
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 5f977adeb65300d4e064604c11318e962778db6e6893535cd650cccf4016de0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401504"
 ---
 # <a name="france"></a>Francia
 
-Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni](tables-and-assignments.md).
+Per una spiegazione delle tabelle seguenti, vedere [Tabelle e assegnazioni.](tables-and-assignments.md)
 
 Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come numeri di canale.
 
 -   [Windows 7 e versioni successive](#windows-7-and-later)
     -   [Assegnazioni di trasmissioni in Francia](#france-broadcast-assignments)
-    -   [Assegnazioni di cavi in Francia](#france-cable-assignments)
--   [Assegnazioni di canali precedenti](#earlier-channel-assignments)
+    -   [Assegnazioni dei cavi in Francia](#france-cable-assignments)
+-   [Assegnazioni di canale precedenti](#earlier-channel-assignments)
     -   [Assegnazioni di trasmissioni in Francia](#france-broadcast-assignments)
-    -   [Assegnazioni di cavi in Francia](#france-cable-assignments)
+    -   [Assegnazioni dei cavi in Francia](#france-cable-assignments)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="windows-7-and-later"></a>Windows 7 e versioni successive
@@ -103,7 +103,7 @@ Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come nume
        855250000L,      // 69
 ```
 
-### <a name="france-cable-assignments"></a>Assegnazioni di cavi in Francia
+### <a name="france-cable-assignments"></a>Assegnazioni dei cavi in Francia
 
 ``` syntax
          1L,            // Lowest channel
@@ -233,7 +233,7 @@ Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come nume
        296000000L,      // 120 TV37++
 ```
 
-## <a name="earlier-channel-assignments"></a>Assegnazioni di canali precedenti
+## <a name="earlier-channel-assignments"></a>Assegnazioni di canale precedenti
 
 ### <a name="france-broadcast-assignments"></a>Assegnazioni di trasmissioni in Francia
 
@@ -311,7 +311,7 @@ Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come nume
        855250000L,      // 69
 ```
 
-### <a name="france-cable-assignments"></a>Assegnazioni di cavi in Francia
+### <a name="france-cable-assignments"></a>Assegnazioni dei cavi in Francia
 
 ``` syntax
          1L,            // Lowest channel
@@ -431,7 +431,7 @@ Gli indici di frequenza nelle tabelle France non sono adatti per l'uso come nume
 
 <dl> <dt>
 
-[Ottimizzazione tv analogica internazionale](international-analog-tv-tuning.md)
+[International Analog TV Tuning](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

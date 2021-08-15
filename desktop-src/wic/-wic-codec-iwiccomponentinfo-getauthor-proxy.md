@@ -1,7 +1,7 @@
 ---
 description: Funzione proxy per il metodo GetAuthor.
 ms.assetid: fb76009e-cc01-4dec-9403-04bf6b53db80
-title: Funzione IWICComponentInfo_GetAuthor_Proxy
+title: IWICComponentInfo_GetAuthor_Proxy funzione
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: f181a567ae4089870d324c7a7e0d67a34b965b5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c83d42f499c8f821f5b342f08749a2167aac9cc61334fe2fc2d9e9134b5e2b49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206672"
 ---
-# <a name="iwiccomponentinfo_getauthor_proxy-function"></a>\_Funzione proxy IWICComponentInfo GetAuthor \_
+# <a name="iwiccomponentinfo_getauthor_proxy-function"></a>Funzione proxy IWICComponentInfo \_ GetAuthor \_
 
-Funzione proxy per il metodo [**GetAuthor**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor) .
+Funzione proxy per il [**metodo GetAuthor.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,28 +43,28 @@ HRESULT IWICComponentInfo_GetAuthor_Proxy(
 
 <dl> <dt>
 
-*Questa \_ PTR* \[ in\]
+*QUESTO \_ PTR* \[ in\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Puntatore a questo oggetto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Puntatore a [**questo oggetto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchAuthor* \[ in\]
+*cchAuthor* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Dimensioni del buffer *wzAuthor* .
+Dimensioni del buffer *wzAuthor.*
 
 </dd> <dt>
 
-*wzAuthor* \[ in uscita\]
+*wzAuthor* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntatore che riceve il nome dell'autore del componente.
 
@@ -72,10 +72,10 @@ La stringa restituita è specifica delle impostazioni locali, 1033 per impostazi
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Puntatore che riceve la lunghezza effettiva del nome degli autori del componente.
 
@@ -83,9 +83,9 @@ Puntatore che riceve la lunghezza effettiva del nome degli autori del componente
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Osservazioni
 
@@ -95,9 +95,9 @@ Se questa funzione ha esito positivo, restituisce **S \_ OK**. In caso contrario
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows XP con SP2, \[ solo app desktop di Windows Vista\]<br/>                                                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows XP con SP2, Windows solo \[ app desktop di Vista\]<br/>                                                                                              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

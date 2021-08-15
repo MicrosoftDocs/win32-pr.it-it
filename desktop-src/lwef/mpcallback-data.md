@@ -1,10 +1,10 @@
 ---
-title: Struttura MPCALLBACK_DATA (MpClient. h)
+title: MPCALLBACK_DATA (MpClient.h)
 description: Dati passati alla funzione di callback.
 ms.assetid: EA8E6C1E-F80B-4247-B073-C78D49A354CF
 keywords:
-- Struttura MPCALLBACK_DATA le funzionalità legacy dell'ambiente Windows
-- Funzionalità dell'ambiente Windows legacy del puntatore della struttura di PMPCALLBACK_DATA
+- MPCALLBACK_DATA funzionalità dell'ambiente Windows legacy
+- PMPCALLBACK_DATA puntatore alla struttura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9741ca479eeb9770a3ae8c2aedbc51a8a2643033
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d1eb129101c341485a1e6b5763a0325cbf586a6e51e5e2875b4465696c39df8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883653"
 ---
-# <a name="mpcallback_data-structure"></a>\_Struttura dei dati MPCALLBACK
+# <a name="mpcallback_data-structure"></a>Struttura MPCALLBACK \_ DATA
 
 Dati passati alla funzione di callback.
 
@@ -68,11 +68,11 @@ Tipo: **[ **MPNOTIFY**](mpnotify.md)**
 
 </dd> <dd>
 
-Notifica di modifica per il report.
+Modificare la notifica in report.
 
 </dd> <dt>
 
-**hResult**
+**Hresult**
 </dt> <dd>
 
 Tipo: **HRESULT**
@@ -83,10 +83,10 @@ Codice di errore, in caso di errore interno.
 
 </dd> <dt>
 
-**TimeStamp**
+**Timestamp**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ULARGE \_ INTEGER**
 
 </dd> <dd>
 
@@ -97,7 +97,7 @@ Timestamp corrente.
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **MPCALLBACK \_**](mpcallback-type.md)**
+Tipo: **[ **MPCALLBACK \_ TYPE**](mpcallback-type.md)**
 
 </dd> <dd>
 
@@ -108,172 +108,172 @@ Tipo di dati speciale di callback.
 **Dati**
 </dt> <dd>
 
-Richiamata di dati speciali. Il puntatore alla struttura appropriata dipende dal valore di **tipo**.
+Dati speciali di callback. Il puntatore alla struttura appropriata dipende dal valore di **Tipo**.
 
 <dl> <dt>
 
 **pStatusData**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ Data**
+Tipo: **PMPSTATUS \_ DATA**
 
 </dd> <dd>
 
-Quando **digitare**  ==  **MPCALLBACK \_ status**. Vedere [**MPSTATUS \_ Data**](mpstatus-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ STATUS**. Vedere [**MPSTATUS \_ DATA**](mpstatus-data.md).
 
 </dd> <dt>
 
 **pScanData**
 </dt> <dd>
 
-Tipo: **PMPSCAN \_ Data**
+Tipo: **PMPSCAN \_ DATA**
 
 </dd> <dd>
 
-Quando si **digita**  ==  **MPCALLBACK \_ Scan**. Vedere [**MPSCAN \_ Data**](mpscan-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ SCAN**. Vedere [**MPSCAN \_ DATA**](mpscan-data.md).
 
 </dd> <dt>
 
 **pCleanData**
 </dt> <dd>
 
-Tipo: **PMPCLEAN \_ Data**
+Tipo: **PMPCLEAN \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo**  ==  **MPCALLBACK è \_ Clean**. Vedere [**MPCLEAN \_ Data**](mpclean-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ CLEAN**. Vedere [**MPCLEAN \_ DATA**](mpclean-data.md).
 
 </dd> <dt>
 
 **pPrecheckData**
 </dt> <dd>
 
-Tipo: **PMPCLEAN \_ Precheck \_ dati**
+Tipo: **PMPCLEAN \_ PRECHECK \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo**  ==  **MPCALLBACK è \_ Precheck**. Vedere [**MPCLEAN \_ Precheck \_ Data**](mpclean-precheck-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ PRECHECK**. Vedere [**MPCLEAN \_ PRECHECK \_ DATA**](mpclean-precheck-data.md).
 
 </dd> <dt>
 
 **pThreatData**
 </dt> <dd>
 
-Tipo: **PMPTHREAT \_ Data**
+Tipo: **PMPTHREAT \_ DATA**
 
 </dd> <dd>
 
-Quando **digitare**  ==  **MPCALLBACK \_ Threat**. Vedere [**MPTHREAT \_ Data**](mpthreat-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ THREAT**. Vedere [**MPTHREAT \_ DATA**](mpthreat-data.md).
 
 </dd> <dt>
 
 **pSigUpdateData**
 </dt> <dd>
 
-Tipo: **PMPSIGUPDATE \_ Data**
+Tipo: **PMPSIGUPDATE \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo** è  ==  **MPCALLBACK \_ SIGUPDATE**. Vedere [**MPSIGUPDATE \_ Data**](mpsigupdate-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ SIGUPDATE**. Vedere [**MPSIGUPDATE \_ DATA**](mpsigupdate-data.md).
 
 </dd> <dt>
 
 **pSampleData**
 </dt> <dd>
 
-Tipo: **PMPSAMPLE \_ Data**
+Tipo: **PMPSAMPLE \_ DATA**
 
 </dd> <dd>
 
-Quando si **digita**  ==  **MPCALLBACK \_ Sample**. Vedere [**MPSAMPLE \_ Data**](mpsample-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ SAMPLE**. Vedere [**MPSAMPLE \_ DATA**](mpsample-data.md).
 
 </dd> <dt>
 
 **pReservedData**
 </dt> <dd>
 
-Tipo: **PMPRESERVED \_ Data**
+Tipo: **PMPRESERVED \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo**  ==  **MPCALLBACK è \_ riservato**. Vedere [**MPRESERVED \_ Data**](mpreserved-data.md).
+Quando **è di tipo**  ==  **MPCALLBACK \_ RESERVED**. Vedere [**MPRESERVED \_ DATA**](mpreserved-data.md).
 
 </dd> <dt>
 
 **pConfigurationData**
 </dt> <dd>
 
-Tipo: **PMPCONFIGURATION \_ Data**
+Tipo: **PMPCONFIGURATION \_ DATA**
 
 </dd> <dd>
 
-Quando si **digita** la  ==  **\_ \_ notifica di configurazione MPCALLBACK**. Vedere [**MPCONFIGURATION \_ Data**](mpconfiguration-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ CONFIGURATION \_ NOTIFICATION**. Vedere [**MPCONFIGURATION \_ DATA**](mpconfiguration-data.md).
 
 </dd> <dt>
 
 **pFastPathData**
 </dt> <dd>
 
-Tipo: **PMPFASTPATH \_ Data**
+Tipo: **PMPFASTPATH \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo** è  ==  **MPCALLBACK \_ FastPath**. Vedere [**MPFASTPATH \_ Data**](mpfastpath-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ FASTPATH**. Vedere [**MPFASTPATH \_ DATA**](mpfastpath-data.md).
 
 </dd> <dt>
 
 **pExpirationData**
 </dt> <dd>
 
-Tipo: **PMPEXPIRATION \_ Data**
+Tipo: **PMPEXPIRATION \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo**  ==  **MPCALLBACK \_ \_ scadenza del prodotto**. Vedere [**MPEXPIRATION \_ Data**](mpexpiration-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ PRODUCT \_ EXPIRATION**. Vedere [**MPEXPIRATION \_ DATA**](mpexpiration-data.md).
 
 </dd> <dt>
 
 **pNISPrivateData**
 </dt> <dd>
 
-Tipo: **PMPNIS \_ private \_ Data**
+Tipo: **PMPNIS \_ PRIVATE \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo**  ==  **MPCALLBACK \_ NIS è \_ privato**. Vedere [**MPNIS \_ private \_ Data**](mpnis-private-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ NIS \_ PRIVATE**. Vedere [**MPNIS \_ PRIVATE \_ DATA (DATI PRIVATI MPNIS).**](mpnis-private-data.md)
 
 </dd> <dt>
 
 **pHealthData**
 </dt> <dd>
 
-Tipo: **PMPHEALTH \_ Data**
+Tipo: **PMPHEALTH \_ DATA**
 
 </dd> <dd>
 
-Quando **digitare**  ==  **MPCALLBACK \_ Health**. Vedere [**MPHEALTH \_ Data**](mphealth-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ HEALTH**. Vedere [**MPHEALTH \_ DATA ( DATI MPHEALTH).**](mphealth-data.md)
 
 </dd> <dt>
 
 **pEndOfLifeData**
 </dt> <dd>
 
-Tipo: **PMPENDOFLIFE \_ Data**
+Tipo: **PMPENDOFLIFE \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo** è  ==  **MPCALLBACK \_ ENDOFLIFE**. Vedere [**MPENDOFLIFE \_ Data**](mpendoflife-data.md).
+Quando **si digita**  ==  **MPCALLBACK \_ ENDOFLIFE**. Vedere [**MPENDOFLIFE \_ DATA**](mpendoflife-data.md).
 
 </dd> <dt>
 
 **pMalwareToastData**
 </dt> <dd>
 
-Tipo: **PMPMALWARETOAST \_ Data**
+Tipo: **PMPMALWARETOAST \_ DATA**
 
 </dd> <dd>
 
-Quando il **tipo** è  ==  **MPCALLBACK \_ MALWARETOAST**. Vedere [**MPMALWARETOAST \_ Data**](mpmalwaretoast-data.md).
+Quando **digitare**  ==  **MPCALLBACK \_ MALWARETOAST**. Vedere [**MPMALWARETOAST \_ DATA**](mpmalwaretoast-data.md).
 
 </dd> </dl> </dd> </dl>
 
@@ -283,9 +283,9 @@ Quando il **tipo** è  ==  **MPCALLBACK \_ MALWARETOAST**. Vedere [**MPMALWARETO
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                            |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -293,55 +293,55 @@ Quando il **tipo** è  ==  **MPCALLBACK \_ MALWARETOAST**. Vedere [**MPMALWARETO
 
 <dl> <dt>
 
-[**\_tipo MPCALLBACK**](mpcallback-type.md)
+[**TIPO \_ MPCALLBACK**](mpcallback-type.md)
 </dt> <dt>
 
-[**\_dati MPCLEAN**](mpclean-data.md)
+[**DATI \_ MPCLEAN**](mpclean-data.md)
 </dt> <dt>
 
-[**MPCLEAN \_ i dati di PREverifica \_**](mpclean-precheck-data.md)
+[**DATI DI \_ CONTROLLO PRELIMINARE MPCLEAN \_**](mpclean-precheck-data.md)
 </dt> <dt>
 
-[**\_dati MPCONFIGURATION**](mpconfiguration-data.md)
+[**DATI \_ MPCONFIGURATION**](mpconfiguration-data.md)
 </dt> <dt>
 
-[**\_dati MPENDOFLIFE**](mpendoflife-data.md)
+[**MPENDOFLIFE \_ DATA**](mpendoflife-data.md)
 </dt> <dt>
 
-[**\_dati MPEXPIRATION**](mpexpiration-data.md)
+[**DATI \_ MPEXPIRATION**](mpexpiration-data.md)
 </dt> <dt>
 
-[**\_dati MPFASTPATH**](mpfastpath-data.md)
+[**DATI \_ MPFASTPATH**](mpfastpath-data.md)
 </dt> <dt>
 
-[**\_dati MPHEALTH**](mphealth-data.md)
+[**DATI \_ MPHEALTH**](mphealth-data.md)
 </dt> <dt>
 
-[**\_dati MPMALWARETOAST**](mpmalwaretoast-data.md)
+[**DATI MPMALWARETOAST \_**](mpmalwaretoast-data.md)
 </dt> <dt>
 
-[**MPNIS \_ \_ dati privati**](mpnis-private-data.md)
+[**DATI PRIVATI \_ MPNIS \_**](mpnis-private-data.md)
 </dt> <dt>
 
 [**MPNOTIFY**](mpnotify.md)
 </dt> <dt>
 
-[**\_dati MPRESERVED**](mpreserved-data.md)
+[**MPRESERVED \_ DATA**](mpreserved-data.md)
 </dt> <dt>
 
-[**\_dati MPSAMPLE**](mpsample-data.md)
+[**DATI \_ MPSAMPLE**](mpsample-data.md)
 </dt> <dt>
 
-[**\_dati MPSCAN**](mpscan-data.md)
+[**MPSCAN \_ DATA**](mpscan-data.md)
 </dt> <dt>
 
-[**\_dati MPSIGUPDATE**](mpsigupdate-data.md)
+[**MPSIGUPDATE \_ DATA**](mpsigupdate-data.md)
 </dt> <dt>
 
-[**\_dati MPSTATUS**](mpstatus-data.md)
+[**DATI \_ MPSTATUS**](mpstatus-data.md)
 </dt> <dt>
 
-[**\_dati MPTHREAT**](mpthreat-data.md)
+[**MPTHREAT \_ DATA**](mpthreat-data.md)
 </dt> </dl>
 
  

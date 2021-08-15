@@ -1,7 +1,7 @@
 ---
-description: Ottiene la dimensione della matrice che deve essere allocata prima di chiamare CreateOPMProtectedOutputs.
+description: Ottiene le dimensioni della matrice da allocare prima di chiamare CreateOPMProtectedOutputs.
 ms.assetid: 65edce14-f225-4b7f-b953-32b085e1cabf
-title: GetSuggestedOPMProtectedOutputArraySize (funzione)
+title: Funzione GetSuggestedOPMProtectedOutputArraySize
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 87139f0b485ef3c01e5196db85b36faeb662e4d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c84738fe37661d2a593432b571c6022b0369e28ee3b2a3cb028b8eb84276a21a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879378"
 ---
-# <a name="getsuggestedopmprotectedoutputarraysize-function"></a>GetSuggestedOPMProtectedOutputArraySize (funzione)
+# <a name="getsuggestedopmprotectedoutputarraysize-function"></a>Funzione GetSuggestedOPMProtectedOutputArraySize
 
 > [!IMPORTANT]
-> Questa funzione viene utilizzata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata da [Output Protection Manager](output-protection-manager.md) (OPM) per accedere alle funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
 
  
 
-Ottiene la dimensione della matrice che deve essere allocata prima di chiamare [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+Ottiene le dimensioni della matrice da allocare prima di [**chiamare CreateOPMProtectedOutputs.**](createopmprotectedoutputs.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,27 +45,27 @@ NTSTATUS WINAPI GetSuggestedOPMProtectedOutputArraySize(
 
 <dl> <dt>
 
-*pstrDeviceName* \[ in\]
+*pstrDeviceName* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ stringhe Unicode**](/windows/win32/api/subauth/ns-subauth-unicode_string) che contiene il nome del dispositivo di visualizzazione, come restituito dalla funzione [**GetMonitorInfo**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa) .
+Puntatore a una [**struttura \_ STRING UNICODE**](/windows/win32/api/subauth/ns-subauth-unicode_string) contenente il nome del dispositivo di visualizzazione, come restituito dalla [**funzione GetMonitorInfo.**](/windows/win32/api/winuser/nf-winuser-getmonitorinfoa)
 
 </dd> <dt>
 
-*pdwSuggestedOPMProtectedOutputArraySize* \[ out\]
+*pdwSuggestedOPMProtectedOutputArraySize* \[ Cambio\]
 </dt> <dd>
 
-Riceve le dimensioni che devono essere allocate per la matrice, in numero di elementi di matrice.
+Riceve le dimensioni che devono essere allocate per la matrice, in numero di elementi della matrice.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 
@@ -83,10 +83,10 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 <dl> <dt>
 
-[Funzioni di OPM](opm-functions.md)
+[Funzioni OPM](opm-functions.md)
 </dt> <dt>
 
-[Gestione protezione output](output-protection-manager.md)
+[Output Protection Manager](output-protection-manager.md)
 </dt> </dl>
 
  

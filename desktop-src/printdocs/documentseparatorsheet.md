@@ -4,16 +4,16 @@ ms.assetid: f0b2192d-4bb7-4ba2-8dd0-35a20183ea31
 title: DocumentSeparatorSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38195c2d1c52e5c02d9da4844b5fa981866a61bc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7b87b77258872975fc256eb204b4f799f583f5018faf14789294676dabae968b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971560"
 ---
 # <a name="documentseparatorsheet"></a>DocumentSeparatorSheet
 
-Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Specifica [dello schema di stampa](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Questo argomento non è corrente. Per le informazioni più aggiornate, vedere Print [Schema Specification](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Descrive l'utilizzo del foglio separatore per un documento. I fogli separatori dovrebbero essere visualizzati nell'output come indicato dall'opzione specificata di seguito.
 
@@ -61,7 +61,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 | Nome                               | Tipo di dati         | Unità                  | Valori supportati                                                                                                                                                                      | Riepilogo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido come definito da [Spazi dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caratteri<br/> | Nome completo valido definito da Spazi [dei nomi in XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se non viene specificato alcuno spazio dei nomi, viene utilizzato lo spazio dei nomi predefinito.<br/> | Nome dell'opzione.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Definisce un'opzione che, se selezionata, disabilita questa funzionalità.<br/> |
 
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritte le caratteristiche delle variabili defi
 
 ## <a name="extensible-markup-language-xml-content"></a>Extensible Markup Language (XML) Content
 
-Le parole chiave pubbliche dello schema di stampa sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language (XML) pubblico per questa parola chiave è definito di seguito:
+Le parole chiave dello schema di stampa pubblico sono definite nello spazio dei https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nomi . Il contenuto Extensible Markup Language pubblico (XML) per questa parola chiave è definito di seguito:
 
 ``` syntax
 <psf:Feature name="psk:DocumentSeparatorSheet">

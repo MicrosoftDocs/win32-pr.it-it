@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_SIGNATURE. GetHashCode (metodo)'
-title: JET_SIGNATURE. GetHashCode (metodo)
+description: 'Altre informazioni su: JET_SIGNATURE. Metodo GetHashCode'
+title: JET_SIGNATURE. Metodo GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SIGNATURE.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_signature.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 570a15f8dae9bf0961293e434b5e1c5a565be859
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffc5f933b063cd77bba52c5b018b6f041cfc7c73b8acbda72f83a805446b54db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253110"
 ---
-# <a name="jet_signaturegethashcode-method"></a>JET_SIGNATURE. GetHashCode (metodo)
+# <a name="jet_signaturegethashcode-method"></a>JET_SIGNATURE. Metodo GetHashCode
 
 Restituisce il codice hash per l'istanza.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Codice hash per l'istanza.  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE struttura](./jet-signature-structure2.md)
 
-[Membri JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE membri](./jet-signature-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

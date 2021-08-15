@@ -1,19 +1,19 @@
 ---
-title: Funzioni di gestione router (trasporto)
-description: Utilizzare le funzioni seguenti per amministrare i gestori di router. Queste funzioni consentono inoltre agli sviluppatori di leggere e scrivere le informazioni globali per i gestori router e le informazioni globali per i client router, ad esempio i protocolli di routing.
+title: Funzioni di Gestione router (trasporto)
+description: Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router,ad esempio i protocolli di routing.
 ms.assetid: c1093241-604d-498d-a358-f8e8585b95cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a94ccc97f3f2dce90cde57853cfbed97f870e01b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1780f980972943f796c635a58829d9363a0ccd4e36d371306665f5d4d7ba8b5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103857030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787621"
 ---
-# <a name="router-manager-transport-functions"></a>Funzioni di gestione router (trasporto)
+# <a name="router-manager-transport-functions"></a>Funzioni di Gestione router (trasporto)
 
-Utilizzare le funzioni seguenti per amministrare i gestori di router. Queste funzioni consentono inoltre agli sviluppatori di leggere e scrivere le informazioni globali per i gestori router e le informazioni globali per i client router, ad esempio i protocolli di routing.
+Usare le funzioni seguenti per amministrare i gestori router. Queste funzioni consentono inoltre a uno sviluppatore di leggere e scrivere le informazioni globali per i gestori di router e le informazioni globali per i client router,ad esempio i protocolli di routing.
 
 
 
@@ -28,11 +28,11 @@ Utilizzare le funzioni seguenti per amministrare i gestori di router. Queste fun
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Strutture DMO
+description: DMO Strutture
 ms.assetid: 82c8ea74-1c5e-4370-9075-6db2ed6b2c91
-title: Strutture DMO
+title: DMO Strutture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46871c8202e6a150686a001b150fe06f645de59e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cc36bbae0db5aacffa593a1f79545f549900ff9605c757fb76c612939ec4021d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103876694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821065"
 ---
-# <a name="dmo-structures"></a>Strutture DMO
+# <a name="dmo-structures"></a>DMO Strutture
 
-In questa sezione vengono descritte le strutture DMO (DirectX Media Object).
+Questa sezione descrive le strutture di DirectX Media Object (DMO).
 
 
 
 | Struttura                                                   | Descrizione                                                 |
 |-------------------------------------------------------------|-------------------------------------------------------------|
-| [**\_tipo di supporto DMO \_**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type)                  | Descrive il formato dei dati utilizzati da un flusso in un DMO. |
-| [**\_ \_ buffer dei dati di output DMO \_**](/previous-versions/windows/desktop/api/Mediaobj/ns-mediaobj-dmo_output_data_buffer) | Descrive un buffer di output utilizzato da DMO.                   |
-| [**\_MEDIATYPE parziali DMO \_**](/previous-versions/windows/desktop/api/Dmoreg/ns-dmoreg-dmo_partial_mediatype)    | Descrive parzialmente un tipo di supporto utilizzato da DMO.             |
-| [**\_segmento busta \_ MP**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_envelope_segment)        | Definisce un segmento della busta utilizzato da un parametro multimediale.      |
-| [**\_PARAMINFO MP**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_paraminfo)                       | Contiene informazioni su un parametro multimediale.               |
+| [**\_DMO TIPO DI \_ SUPPORTO**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type)                  | Descrive il formato dei dati usati da un flusso in un DMO. |
+| [**\_DMO BUFFER \_ DI DATI DI \_ OUTPUT**](/previous-versions/windows/desktop/api/Mediaobj/ns-mediaobj-dmo_output_data_buffer) | Descrive un buffer di output utilizzato da un DMO.                   |
+| [**\_DMO MEDIATYPE \_ PARZIALE**](/previous-versions/windows/desktop/api/Dmoreg/ns-dmoreg-dmo_partial_mediatype)    | Descrive parzialmente un tipo di supporto usato da un DMO.             |
+| [**SEGMENTO \_ BUSTA \_ MP**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_envelope_segment)        | Definisce un segmento di busta utilizzato da un parametro multimediale.      |
+| [**MP \_ PARAMINFO**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_paraminfo)                       | Contiene informazioni su un parametro multimediale.               |
 
 
 
@@ -33,7 +33,7 @@ In questa sezione vengono descritte le strutture DMO (DirectX Media Object).
 
 <dl> <dt>
 
-[Guida di riferimento a DMO](dmo-reference.md)
+[DMO Riferimento](dmo-reference.md)
 </dt> </dl>
 
  

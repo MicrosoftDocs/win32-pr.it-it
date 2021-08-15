@@ -1,24 +1,24 @@
 ---
 title: Codice di esempio per la ricerca in una foresta
-description: Questo argomento contiene codice di esempio che cerca una foresta.
+description: Questo argomento contiene codice di esempio per la ricerca in una foresta.
 ms.assetid: 56740e95-548a-4e84-ab2e-2bb7a51b7e1e
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, ricerca in una foresta
+- Esempi di Active Directory Active Directory , ricerca in una foresta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c2fb0cde0f42167b19141ad178ea80ff8795b8
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c92c71afeecebf96ba123e909ad408835de083b8d45cb259a7b371b8214cc5b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190288"
 ---
 # <a name="example-code-for-searching-a-forest"></a>Codice di esempio per la ricerca in una foresta
 
-Questo argomento contiene codice di esempio che cerca una foresta.
+Questo argomento contiene codice di esempio per la ricerca in una foresta.
 
-Il seguente esempio di codice C/C++ viene associato alla radice del catalogo globale ed enumera il singolo oggetto, ovvero la radice della foresta, in modo che possa essere utilizzato per cercare l'intera foresta.
+Nell'esempio di codice C/C++ seguente viene associato alla radice del catalogo globale ed enumera il singolo oggetto , ovvero la radice della foresta, in modo che possa essere usato per eseguire ricerche nell'intera foresta.
 
 
 ```C++
@@ -32,9 +32,9 @@ Next
 
 
 
-Nell'esempio di codice C/C++ riportato di seguito è contenuta una funzione che restituisce un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) utilizzato per eseguire la ricerca nell'intera foresta.
+L'esempio di codice C/C++ seguente contiene una funzione che restituisce un [**puntatore IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) usato per cercare l'intera foresta.
 
-La funzione esegue un'associazione senza server alla radice del catalogo globale, enumera il singolo elemento, che è la radice della foresta e può essere usato per cercare l'intera foresta, chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per ottenere un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) all'oggetto e restituisce tale puntatore per l'uso da parte del chiamante per la ricerca nella foresta.
+La funzione esegue un'associazione serverless alla radice del catalogo globale, enumera il singolo elemento, che è la radice della foresta e può essere usato per cercare l'intera foresta, chiama [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) per ottenere un puntatore [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) all'oggetto e restituisce tale puntatore per l'uso da parte del chiamante per la ricerca nella foresta.
 
 
 ```C++
@@ -98,6 +98,6 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 

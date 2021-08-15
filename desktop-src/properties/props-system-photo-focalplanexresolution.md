@@ -1,19 +1,19 @@
 ---
-description: Indica il numero di pixel nella larghezza dell'immagine (direzione X) per FocalPlaneResolutionUnit sul piano focale della fotocamera. Calcolato da PKEY \_ Photo \_ FOCALPLANEXRESOLUTIONNUMERATOR e PKEY \_ Photo \_ FocalPlaneXResolutionDenominator.
+description: Indica il numero di pixel nella larghezza dell'immagine (direzione X) per FocalPlaneResolutionUnit sul piano focale della fotocamera. Calcolato da PKEY \_ Photo \_ FocalPlaneXResolutionNumerator e PKEY \_ Photo \_ FocalPlaneXResolutionDenominator.
 ms.assetid: d1e94923-fdea-4894-813e-4617f3267bb7
-title: System. Photo. FocalPlaneXResolution
+title: System.Photo.FocalPlaneXResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a5d59e8ff81ae614a96d62a0a1a1bb1f43b8e86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd59864415025102114fdd0c3c3b8e242e945fadd3892a132f9d4f639611b467
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229525"
 ---
-# <a name="systemphotofocalplanexresolution"></a>System. Photo. FocalPlaneXResolution
+# <a name="systemphotofocalplanexresolution"></a>System.Photo.FocalPlaneXResolution
 
-Indica il numero di pixel nella larghezza dell'immagine (direzione X) per FocalPlaneResolutionUnit sul piano focale della fotocamera. Calcolato da PKEY \_ Photo \_ FOCALPLANEXRESOLUTIONNUMERATOR e PKEY \_ Photo \_ FocalPlaneXResolutionDenominator.
+Indica il numero di pixel nella larghezza dell'immagine (direzione X) per FocalPlaneResolutionUnit sul piano focale della fotocamera. Calcolato da PKEY \_ Photo \_ FocalPlaneXResolutionNumerator e PKEY \_ Photo \_ FocalPlaneXResolutionDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Exchangeable Image File Format per fotocamere digitali ancora: EXIF versione 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format per fotocamere digitali: Exif versione 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -51,13 +51,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -66,7 +66,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

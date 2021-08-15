@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà InstanceParameters. PreferredVerPages'
-title: Proprietà InstanceParameters. PreferredVerPages
+description: Altre informazioni sulla proprietà InstanceParameters.PreferredVerPages
+title: InstanceParameters.PreferredVerPages - proprietà
 TOCTitle: 'PreferredVerPages property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.PreferredVerPages
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.preferredverpages(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 067d41cd3fb945b2f18d3cd6154b1eef6793b1e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54287a87a1707df87f5be653456d3ed652ab58a56e20c61ee057858d8ea0b702
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255862"
 ---
-# <a name="instanceparameterspreferredverpages-property"></a>Proprietà InstanceParameters. PreferredVerPages
+# <a name="instanceparameterspreferredverpages-property"></a>InstanceParameters.PreferredVerPages - proprietà
 
-Ottiene o imposta il numero preferito di pagine dell'archivio versioni riservate per questa istanza. Se la dimensione dell'archivio versioni supera questa soglia, le informazioni utilizzate solo per le attività in background facoltative, ad esempio il ripristino dello spazio eliminato nel database, vengono invece sacrificate per mantenere la stanza per le informazioni transazionali.
+Ottiene o imposta il numero preferito di pagine dell'archivio versioni riservate per questa istanza. Se le dimensioni dell'archivio versioni superano questa soglia, tutte le informazioni utilizzate solo per le attività in background facoltative, ad esempio il recupero dello spazio eliminato nel database, vengono invece mantenute per mantenere spazio per le informazioni transazionali.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ public int PreferredVerPages { get; set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membri di InstanceParameters](./instanceparameters-members.md)
+[Membri instanceParameters](./instanceparameters-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

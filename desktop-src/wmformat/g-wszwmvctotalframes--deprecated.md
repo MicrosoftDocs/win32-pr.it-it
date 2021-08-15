@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCTotalFrames (Wmcodecdsp. h)
-description: Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere Windows Media Audio e codec video e API DSP. | g_wszWMVCTotalFrames (Wmcodecdsp. h)
+title: g_wszWMVCTotalFrames (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api codec audio e video e DSP. | g_wszWMVCTotalFrames (Wmcodecdsp.h)
 ms.assetid: da343f27-a7fd-4ed4-a6d8-156f30358cb0
 keywords:
-- g_wszWMVCTotalFrames formato Windows Media
+- g_wszWMVCTotalFrames windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca30e4b112dd291a6b019c060a35d504942d6fb0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00e4e90db9160ab182c8c827db1fb09cac275b53a7ba7666630563d9791eb8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118198419"
 ---
 # <a name="g_wszwmvctotalframes"></a>g \_ wszWMVCTotalFrames
 
-Per la documentazione corrente sui codec Windows Media e sui processori di segnali digitali, vedere [Windows Media audio e codec video e API DSP.](/previous-versions//dd464626(v=vs.85))
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Api Codec audio e video e [DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,7 +31,7 @@ Per la documentazione corrente sui codec Windows Media e sui processori di segna
 
 | Requisito | Valore |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

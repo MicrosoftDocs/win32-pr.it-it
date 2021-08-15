@@ -1,21 +1,21 @@
 ---
-description: Emissione del comando GetNumObjects
+description: Esecuzione del comando GetNumObjects
 ms.assetid: d06690e4-f592-4b17-a5f1-baec2accc8dd
-title: Emissione del comando GetNumObjects
+title: Esecuzione del comando GetNumObjects
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd68e571b6d7003262709050d442c64a4d2461fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3ece98e409ab4ee2774c4efdba0c84c06c60e373b5ed15aee77f5dee65d9101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194011"
 ---
-# <a name="issuing-the-getnumobjects-command"></a>Emissione del comando GetNumObjects
+# <a name="issuing-the-getnumobjects-command"></a>Esecuzione del comando GetNumObjects
 
-Nell'esempio riportato in questa sezione viene richiamato il comando **GetNumObjects** MTP. Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP](https://www.usb.org/sites/default/files/MTPv1_1.zip).
+L'esempio in questa sezione richiama il **comando MTP GetNumObjects.** Per una descrizione completa di questo comando e dei relativi parametri, vedere la [specifica MTP.](https://www.usb.org/sites/default/files/MTPv1_1.zip)
 
-Prima di richiamare questo comando, è necessario innanzitutto impostare i parametri del comando.
+Prima di richiamare questo comando, è necessario configurare i parametri del comando.
 
 
 ```
@@ -109,7 +109,7 @@ HRESULT SendGetNumObjects(IPortableDevice* pDevice)
 
 
 
-Una volta impostati i parametri, l'applicazione richiama il comando.
+Dopo aver configurato i parametri, l'applicazione richiama il comando .
 
 
 ```C++

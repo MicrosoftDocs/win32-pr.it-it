@@ -1,24 +1,24 @@
 ---
-title: Codice di esempio per l'enumerazione dei gruppi locali
+title: Codice di esempio per l'enumerazione di gruppi locali
 description: Questo argomento include un esempio di codice che enumera tutti gli oggetti di una classe specificata.
 ms.assetid: d113d132-24cf-4319-826b-0d3d10e432f6
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, enumerazione dei gruppi locali
+- Esempi di Active Directory Active Directory, enumerazione di gruppi locali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b830c1c3ec60d393606e282ff4408647ec8d62
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 241c89bfdb491c7bee0d0876a4b9bf17e6cc836c98a2f80e6734ad6cdc6420ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190656"
 ---
-# <a name="example-code-for-enumerating-local-groups"></a>Codice di esempio per l'enumerazione dei gruppi locali
+# <a name="example-code-for-enumerating-local-groups"></a>Codice di esempio per l'enumerazione di gruppi locali
 
 Questo argomento include un esempio di codice che enumera tutti gli oggetti di una classe specificata.
 
-Nell'esempio di codice C++ riportato di seguito vengono enumerati tutti gli oggetti di una classe specificata utilizzando ADSI.
+Nell'esempio di codice C++ seguente vengono enumerati tutti gli oggetti di una classe specificata tramite ADSI.
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT ListMembersWithWinNtProvider(LPWSTR pwszComputer,LPWSTR pwszClass, LPWST
 
 
 
-Nell'esempio di codice Visual Basic seguente vengono enumerati i gruppi locali utilizzando le interfacce [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) e [**IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) .
+L'Visual Basic di codice seguente enumera i gruppi locali usando le interfacce [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) e [**IADsGroup.**](/windows/desktop/api/iads/nn-iads-iadsgroup)
 
 
 ```VB
@@ -247,6 +247,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

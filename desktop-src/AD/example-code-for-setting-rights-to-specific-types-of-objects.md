@@ -1,22 +1,22 @@
 ---
-title: Codice di esempio per l'impostazione dei diritti per tipi specifici di oggetti
-description: Nell'esempio di codice C/C++ riportato di seguito viene creata una voce ACE che assegna i diritti ereditati dal tipo specificato di oggetto, ma che non sono validi per l'oggetto corrente.
+title: Codice di esempio per l'impostazione dei diritti su tipi specifici di oggetti
+description: Nell'esempio di codice C/C++ seguente viene creata una ACE che assegna diritti ereditati dal tipo di oggetto specificato, ma che non sono effettivi nell'oggetto corrente.
 ms.assetid: c36ae0c8-40ad-4afd-8552-4de77f4463e2
 ms.tgt_platform: multiple
 keywords:
 - Esempi di Active Directory Active Directory, impostazione dei diritti per tipi specifici di oggetti
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff598c8db6a48e07f48a3e846f54b75b2d39255
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3505751394adffe5b6d7ee6b689afada07e258af9128a95815ed46144d447ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189802"
 ---
-# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a>Codice di esempio per l'impostazione dei diritti per tipi specifici di oggetti
+# <a name="example-code-for-setting-rights-to-specific-types-of-objects"></a>Codice di esempio per l'impostazione dei diritti su tipi specifici di oggetti
 
-Nell'esempio di codice C/C++ riportato di seguito viene creata una voce ACE che assegna i diritti ereditati dal tipo specificato di oggetto, ma che non sono validi per l'oggetto corrente.
+Nell'esempio di codice C/C++ seguente viene creata una ACE che assegna diritti ereditati dal tipo di oggetto specificato, ma che non sono effettivi nell'oggetto corrente.
 
 
 ```C++
@@ -100,9 +100,9 @@ HRESULT CreateAceNoEffectiveInheritObject(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

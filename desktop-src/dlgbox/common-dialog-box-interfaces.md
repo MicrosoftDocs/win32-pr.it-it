@@ -1,17 +1,17 @@
 ---
-title: Interfacce comuni della finestra di dialogo
-description: . | Interfacce comuni della finestra di dialogo
+title: Interfacce comuni delle finestre di dialogo
+description: . | Interfacce comuni delle finestre di dialogo
 ms.assetid: e368e6cc-e271-4afa-b797-0fb61563ee02
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 051d3e28800d0626987e6fe13fae639ba3a01795
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5e66f4d12b0ba0346652bf997efbc341d6dea9dbbdd8e92978c046a84dadeb5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118503590"
 ---
-# <a name="common-dialog-box-interfaces"></a>Interfacce comuni della finestra di dialogo
+# <a name="common-dialog-box-interfaces"></a>Interfacce comuni delle finestre di dialogo
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

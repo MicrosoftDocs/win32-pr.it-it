@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Shell.ShutdownWindows : visualizza la finestra di dialogo Arresta Windows. Questo è lo stesso che fare clic sul menu Start e selezionare Arresta.'
+description: 'Metodo Shell.ShutdownWindows: visualizza la finestra di dialogo Windows arresta. Questa operazione è identica a quando si fa clic menu Start e si seleziona Arresta.'
 ms.assetid: 6fa8e2e0-a58f-4837-89f5-898cece2d80a
 title: Metodo Shell.ShutdownWindows (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 2a3c0746caccb360f6f7f0156b72a57ed0a2d2b8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1e9149e42710541ef82d02ba4d55f1d9519741e078e06c60ab0d47c1209fa19f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857730"
 ---
 # <a name="shellshutdownwindows-method"></a>Metodo Shell.ShutdownWindows
 
-Consente di visualizzare **la finestra di dialogo Arresta** Windows . Si tratta di un'operazione identica a quando si fa clic sul menu **Start** e si **sceglie Arresta**.
+Consente di **visualizzare la finestra Windows** arresta il sistema. Si tratta di un'operazione identica a quando si fa clic sul menu **Start** e si **sceglie Arresta**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,9 +47,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente **mostra ShutdownWindows** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+L'esempio seguente **mostra ShutdownWindows** in uso. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -104,7 +104,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

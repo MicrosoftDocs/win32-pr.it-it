@@ -1,19 +1,19 @@
 ---
-description: Inviato dal filtro di lettura ASF WM quando legge i file ASF protetti da Digital Rights Management (DRM).
+description: Inviato dal filtro WM ASF Reader quando legge i file ASF protetti da DRM (Digital Rights Management).
 ms.assetid: ac6ea7a1-238e-42ae-9f10-e1db60381357
-title: EC_WMT_EVENT (dshow. h)
+title: EC_WMT_EVENT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8ce974cd83a404242fb51486f0889ac9b79e044
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ad2ae2659c26d170bef14a76c0528eb5159e92ef3598fb999215e1fbd848ea90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819924"
 ---
-# <a name="ec_wmt_event-dshowh"></a>EC_WMT_EVENT (dshow. h)
+# <a name="ec_wmt_event-dshowh"></a>EC_WMT_EVENT (Dshow.h)
 
-Inviato dal filtro di [lettura ASF WM](wm-asf-reader-filter.md) quando legge i file ASF protetti da Digital Rights Management (DRM).
+Inviato dal filtro [WM ASF Reader](wm-asf-reader-filter.md) quando legge i file ASF protetti da DRM (Digital Rights Management).
 
 ## <a name="parameters"></a>Parametri
 
@@ -22,17 +22,17 @@ Inviato dal filtro di [lettura ASF WM](wm-asf-reader-filter.md) quando legge i f
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Uno dei valori di **\_ stato di WMT** seguenti:
+Uno dei valori **WMT \_ STATUS** seguenti:
 
 
 
 | Valore                         | Descrizione                                                                                                       |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| \_licenza di acquisizione WMT \_         | Inviato quando il componente DRM ha completato il processo di acquisizione della licenza, con esito positivo o negativo. |
-| WMT di \_ personalizzazione            | Il processo di aggiornamento della sicurezza è stato completato correttamente o senza esito positivo.                                |
-| WMT \_ richiede l' \_ individualizzazione | Il file richiede che un'applicazione riceva un aggiornamento della sicurezza prima di eseguire l'azione richiesta.          |
-| \_nessun \_ diritto di WMT               | L'applicazione non dispone dei diritti necessari per eseguire l'azione richiesta su un file protetto da DRM versione 1.                |
-| WMT \_ No \_ Rights \_           | L'applicazione non dispone dei diritti necessari per eseguire l'azione richiesta su un file protetto da DRM versione 7.                |
+| LICENZA DI ACQUISIZIONE \_ WMT \_         | Inviato quando il componente DRM ha completato il processo di acquisizione della licenza, con esito positivo o negativo. |
+| WMT \_ INDIVIDUALIZZARE            | Il processo di aggiornamento della sicurezza è stato completato correttamente o in modo non riuscito.                                |
+| WMT \_ RICHIEDE \_ L'INDIVIDUALIZZAZIONE | Il file richiede che un'applicazione riceva un aggiornamento della sicurezza prima di eseguire l'azione richiesta.          |
+| NESSUN \_ DIRITTO WMT \_               | L'applicazione non ha diritti per eseguire l'azione richiesta su un file protetto da DRM versione 1.                |
+| WMT \_ NO \_ RIGHTS \_ EX           | L'applicazione non ha diritti per eseguire l'azione richiesta su un file protetto da DRM versione 7.                |
 
 
 
@@ -43,29 +43,29 @@ Uno dei valori di **\_ stato di WMT** seguenti:
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Puntatore a una struttura di [**\_ dati dell' \_ evento \_ am WMT**](/previous-versions/windows/desktop/api/evcode/ns-evcode-am_wmt_event_data) che contiene informazioni sull'evento o **null**. Il membro **pData** di questa struttura punta a dati aggiuntivi il cui tipo dipende dal valore di **lParam1**, come illustrato nella tabella seguente.
+Puntatore a [**una struttura \_ AM WMT EVENT \_ \_ DATA**](/previous-versions/windows/desktop/api/evcode/ns-evcode-am_wmt_event_data) che contiene informazioni sull'evento oppure **NULL.** Il **membro pData** di questa struttura punta a dati aggiuntivi, il cui tipo dipende dal valore **di lParam1**, come illustrato nella tabella seguente.
 
 
 
-| lParam1                       | \_ \_ Dati evento WMT \_ . pData                                                                                                                       |
+| lParam1                       | AM \_ WMT \_ EVENT \_ DATA.pData                                                                                                                       |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_licenza di acquisizione WMT \_         | Puntatore a una struttura di [**\_ dati di \_ licenza \_ WM Get**](/windows/desktop/wmformat/wm-get-license-data) . Questa struttura è documentata in Windows Media Format SDK. |
-| WMT di \_ personalizzazione            | Puntatore a una struttura di [**\_ \_ stato di personalizzazione WM**](/windows/desktop/wmformat/wm-individualize-status) .                                                        |
-| WMT \_ richiede l' \_ individualizzazione | **Valore null**.                                                                                                                                        |
-| \_nessun \_ diritto di WMT               | Puntatore a una stringa di caratteri wide contenente un URL della richiesta di verifica.                                                                                   |
-| WMT \_ No \_ Rights \_           | Puntatore a una struttura di [**\_ dati di \_ licenza \_ WM Get**](/windows/desktop/wmformat/wm-get-license-data) .                                                               |
+| LICENZA DI ACQUISIZIONE \_ WMT \_         | Puntatore a una [**struttura WM GET LICENSE \_ \_ \_ DATA.**](/windows/desktop/wmformat/wm-get-license-data) Questa struttura è documentata in Windows Media Format SDK. |
+| WMT \_ INDIVIDUALIZZARE            | Puntatore a [**una struttura WM \_ INDIVIDUALIZE \_ STATUS.**](/windows/desktop/wmformat/wm-individualize-status)                                                        |
+| WMT \_ RICHIEDE \_ L'INDIVIDUALIZZAZIONE | **NULL**.                                                                                                                                        |
+| NESSUN \_ DIRITTO WMT \_               | Puntatore a una stringa di caratteri wide contenente un URL di richiesta.                                                                                   |
+| WMT \_ NO \_ RIGHTS \_ EX           | Puntatore a una [**struttura WM GET LICENSE \_ \_ \_ DATA.**](/windows/desktop/wmformat/wm-get-license-data)                                                               |
 
 
 
  
 
-Il valore di *lParam2* potrebbe essere **null**. Verificare il valore prima di dereferenziare il puntatore.
+Il valore di *lParam2* potrebbe essere **NULL.** Controllare il valore prima di dereferenziare il puntatore.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per ulteriori informazioni sull'abilitazione della riproduzione di file protetti da DRM, vedere la documentazione di Windows Media Format SDK.
+Per altre informazioni sull'abilitazione della riproduzione di file protetti da DRM, vedere la documentazione di Windows Media Format SDK.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,7 +73,7 @@ Per ulteriori informazioni sull'abilitazione della riproduzione di file protetti
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

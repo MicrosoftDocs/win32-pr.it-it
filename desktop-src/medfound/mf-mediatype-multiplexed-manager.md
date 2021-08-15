@@ -1,19 +1,19 @@
 ---
-description: Fornisce un'istanza di IMFMuxStreamMediaTypeManager che può essere usata per ottenere i tipi di supporto dei flussi sottoflussi di un'origine multimediale con multiplexing, nonché per controllare la combinazione di sottoflussi multiplexati dall'origine.
+description: Fornisce un'istanza di IMFMuxStreamMediaTypeManager che può essere usata per ottenere i tipi di supporti dei sottostream di un'origine multimediale multiplexed e controllare la combinazione di sottostream che vengono multiplexed dall'origine.
 ms.assetid: 5C36956D-336A-4956-8793-D86DC792E906
-title: Attributo MF_MEDIATYPE_MULTIPLEXED_MANAGER (Mfidl. h)
+title: MF_MEDIATYPE_MULTIPLEXED_MANAGER attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa96c74bbff8f4858c8467fcd13253cfedf2f5dc
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fe00e8824997a0af89099c7fbaad4a2378b44c3360bad0d4b8808023355da2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104234488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973690"
 ---
-# <a name="mf_mediatype_multiplexed_manager-attribute"></a>\_Attributo di \_ Gestione multiplex MF MEDIATYPE \_
+# <a name="mf_mediatype_multiplexed_manager-attribute"></a>Attributo MF \_ MEDIATYPE \_ MULTIPLEXED \_ MANAGER
 
-Fornisce un'istanza di [**IMFMuxStreamMediaTypeManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmuxstreammediatypemanager) che può essere usata per ottenere i tipi di supporto dei flussi sottoflussi di un'origine multimediale con multiplexing, nonché per controllare la combinazione di sottoflussi multiplexati dall'origine.
+Fornisce un'istanza di [**IMFMuxStreamMediaTypeManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmuxstreammediatypemanager) che può essere usata per ottenere i tipi di supporti dei sottostream di un'origine multimediale multiplexed e controllare la combinazione di sottostream che vengono multiplexed dall'origine.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,7 +21,7 @@ Fornisce un'istanza di [**IMFMuxStreamMediaTypeManager**](/windows/desktop/api/m
 
 ## <a name="remarks"></a>Commenti
 
-Passare questo valore in [**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown) per ottenere un'istanza di [**IMFMuxStreamMediaTypeManager**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmuxstreammediatypemanager).
+Passare questo valore in [**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown) per ottenere un'istanza di [**IMFMuxStreamMediaTypeManager.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmuxstreammediatypemanager)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,9 +29,9 @@ Passare questo valore in [**IMFAttributes:: getunknown**](/windows/desktop/api/m
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1703 \[\]<br/>                          |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1703 \[\]<br/>                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
