@@ -1,23 +1,23 @@
 ---
-description: Di seguito sono riportate le interfacce della chiamata TAPI 3. x e dei controlli multimediali. Per un elenco di queste interfacce per funzionalità, vedere Call and media Controls Quick Reference.
+description: Di seguito sono riportate le interfacce di chiamata TAPI 3.x e di controlli multimediali. Per un elenco di queste interfacce in base alla funzionalità, vedere Guida di riferimento rapido ai controlli chiamata e contenuti multimediali.
 ms.assetid: aa43013d-826e-487b-b0a3-2d890f93a512
-title: Interfacce di controlli Call e media
+title: Interfacce call e media controls
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9e80ea4ae8abcdad4c3629249faeaf30a1472d3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1936820838ff355ffc3c4e7fd3aba5a4df9dcdb188337d763a510bdaadee80d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103968898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118871008"
 ---
-# <a name="call-and-media-controls-interfaces"></a>Interfacce di controlli Call e media
+# <a name="call-and-media-controls-interfaces"></a>Interfacce call e media controls
 
-Di seguito sono riportate le interfacce della chiamata TAPI 3. x e dei controlli multimediali. Per un elenco di queste interfacce per funzionalità, vedere [call and media Controls Quick Reference](call-and-media-controls-quick-reference.md).
+Di seguito sono riportate le interfacce di chiamata TAPI 3.x e di controlli multimediali. Per un elenco di queste interfacce in base alla funzionalità, vedere Riferimento [rapido per chiamate e controlli multimediali.](call-and-media-controls-quick-reference.md)
 
 -   [**IEnumAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumaddress)
 -   [**IEnumBstr**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumbstr)
--   [**IEnumCall**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumcall)
+-   [**Chiamata IEnum**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumcall)
 -   [**IEnumCallHub**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumcallhub)
 -   [**IEnumCallingCard**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumcallingcard)
 -   [**IEnumLocation**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumlocation)
@@ -37,7 +37,7 @@ Di seguito sono riportate le interfacce della chiamata TAPI 3. x e dei controlli
 -   [**ITAddressEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddressevent)
 -   [**ITAddressTranslation**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddresstranslation)
 -   [**ITAddressTranslationInfo**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddresstranslationinfo)
--   [**ITAllocatorProperties**](/windows/win32/api/tapi3/nn-tapi3-itallocatorproperties)
+-   [**PROPRIETÀ DI ITAllocator**](/windows/win32/api/tapi3/nn-tapi3-itallocatorproperties)
 -   [**ITAMMediaFormat**](/windows/win32/api/tapi3/nn-tapi3-itammediaformat)
 -   [**ITASRTerminalEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-itasrterminalevent)
 -   [**ITAudioDeviceControl**](itaudiodevicecontrol.md)
@@ -113,7 +113,7 @@ Di seguito sono riportate le interfacce della chiamata TAPI 3. x e dei controlli
 -   [**ITToneTerminalEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-ittoneterminalevent)
 -   [**ITTTSTerminalEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-itttsterminalevent)
 
-Se un MSP è associato alla chiamata, sono disponibili le interfacce seguenti. Le interfacce MSP controllano i flussi multimediali e i terminali per la chiamata.
+Se alla chiamata è associato un msp, sono disponibili le interfacce seguenti. Le interfacce MSP controllano lo streaming multimediale e i terminali per la chiamata.
 
 -   [**ITStream (MSPI)**](itstream-mspi-.md)
 -   [**ITStreamControl (MSPI)**](itstreamcontrol-mspi-.md)

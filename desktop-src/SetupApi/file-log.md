@@ -1,23 +1,23 @@
 ---
-description: Il registro file è residente nel sistema utenti e archivia le informazioni sui file copiati durante un'installazione.
+description: Il log dei file è residente nel sistema degli utenti e archivia le informazioni sui file copiati durante un'installazione.
 ms.assetid: 4d9fa6fd-e163-4fb2-9ff0-84a012398db7
-title: Log file
+title: File Log
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e98a521650805faea52383cc302568c24e634356
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a843a0a15e2fed02c02f7711cc571127a7f912ac541c9c472a26f298717e474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887050"
 ---
-# <a name="file-log"></a>Log file
+# <a name="file-log"></a>File Log
 
-Il registro file è residente nel sistema dell'utente e archivia le informazioni sui file copiati durante un'installazione. Negli argomenti seguenti vengono descritti i tipi di log dei file e viene illustrato come utilizzare le funzioni di installazione per aprirli, modificarli e chiuderli:
+Il log dei file è residente nel sistema dell'utente e archivia le informazioni sui file copiati durante un'installazione. Gli argomenti seguenti descrivono i tipi di log di file e come usare le funzioni di installazione per aprirli, modificarli e chiuderli:
 
--   [Informazioni sul log del file](about-the-file-log.md)
--   [Uso del file di log](using-the-file-log.md)
--   [Riferimento al log file](file-log-reference.md)
+-   [Informazioni sul log dei file](about-the-file-log.md)
+-   [Uso del log dei file](using-the-file-log.md)
+-   [Informazioni di riferimento sul log dei file](file-log-reference.md)
 
  
 

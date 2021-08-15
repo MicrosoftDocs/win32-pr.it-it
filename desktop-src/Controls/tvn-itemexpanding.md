@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica TVN_ITEMEXPANDING (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo di visualizzazione albero che l'elenco degli elementi figlio di un elemento padre sta per espandersi o comprimere. Questo codice di notifica viene inviato sotto forma di messaggio di \_ notifica WM.
+title: TVN_ITEMEXPANDING codice di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo visualizzazione albero che l'elenco di elementi figlio di un elemento padre sta per espandersi o comprimere. Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 5ce256df-49e5-4fbf-9cdc-79dd2edbd8ec
 keywords:
-- Controlli di Windows per il codice di notifica TVN_ITEMEXPANDING
+- TVN_ITEMEXPANDING codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9ed93eacb6d5b492d509b40cc789a803d04623
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f4403b41682590d305b527d6445c208011b368b2d2474d66720ed32d29c80ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957790"
 ---
-# <a name="tvn_itemexpanding-notification-code"></a>\_Codice di notifica ITEMEXPANDING di TVN
+# <a name="tvn_itemexpanding-notification-code"></a>Codice di \_ notifica TVN ITEMEXPANDING
 
-Notifica alla finestra padre di un controllo di visualizzazione albero che l'elenco degli elementi figlio di un elemento padre sta per espandersi o comprimere. Questo codice di notifica viene inviato sotto forma di messaggio [**di \_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo visualizzazione albero che l'elenco di elementi figlio di un elemento padre sta per espandersi o comprimere. Questo codice di notifica viene inviato sotto forma di [**messaggio WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,13 +43,13 @@ TVN_ITEMEXPANDING
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) . Il membro **itemNew** è una struttura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che contiene informazioni valide sull'elemento padre nei membri **Hite**, **state** e **lParam** . Il membro dell' **azione** indica se l'elenco deve essere espanso o compresso. Per un elenco di valori possibili, vedere la descrizione del messaggio [**di \_ espansione TVM**](tvm-expand.md) .
+Puntatore a [**una struttura NMTREEVIEW.**](/windows/win32/api/commctrl/ns-commctrl-nmtreeviewa) Il **membro itemNew** è una [**struttura TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) che contiene informazioni valide sull'elemento padre nei membri **hItem**, **state** e **lParam.** Il **membro** azione indica se l'elenco deve essere espanso o compresso. Per un elenco dei valori possibili, vedere la descrizione del [**messaggio TVM \_ EXPAND.**](tvm-expand.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** per impedire l'espansione o la compressione dell'elenco.
+Restituisce **TRUE** per impedire l'espansione o la compressione dell'elenco.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -57,9 +57,9 @@ Restituisce **true** per impedire l'espansione o la compressione dell'elenco.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TVN \_ ITEMEXPANDINGW** (Unicode) e **TVN \_ ITEMEXPANDINGA** (ANSI)<br/>       |
 
 
@@ -68,7 +68,7 @@ Restituisce **true** per impedire l'espansione o la compressione dell'elenco.
 
 <dl> <dt>
 
-[\_ITEMEXPANDED TVN](tvn-itemexpanded.md)
+[TVN \_ ITEMEXPANDED](tvn-itemexpanded.md)
 </dt> </dl>
 
  

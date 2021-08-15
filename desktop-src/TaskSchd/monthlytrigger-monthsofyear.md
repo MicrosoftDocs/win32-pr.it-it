@@ -1,11 +1,11 @@
 ---
-title: Proprietà MonthlyTrigger. MonthsOfYear
-description: Per gli script, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività. | Proprietà MonthlyTrigger. MonthsOfYear
+title: MonthlyTrigger.MonthsOfYear - proprietà
+description: Per lo scripting, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività. | MonthlyTrigger.MonthsOfYear - proprietà
 ms.assetid: cf26a815-7f4f-4b7a-8db8-a4bd9b77cf49
 keywords:
-- Utilità di pianificazione Proprietà MonthsOfYear
-- Utilità di pianificazione Proprietà MonthsOfYear, oggetto MonthlyTrigger
-- Oggetto MonthlyTrigger Utilità di pianificazione, Proprietà MonthsOfYear
+- Proprietà MonthsOfYear Utilità di pianificazione
+- Proprietà MonthsOfYear Utilità di pianificazione , oggetto MonthlyTrigger
+- Oggetto MonthlyTrigger Utilità di pianificazione proprietà , MonthsOfYear
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5683fb1c85e470ca7c82b069929de0351ea7cffe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5ff6f08e257acf85a8a3f073f43c3c81e65817900f8154e1701ab73fe10c2368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103886167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253781"
 ---
-# <a name="monthlytriggermonthsofyear-property"></a>Proprietà MonthlyTrigger. MonthsOfYear
+# <a name="monthlytriggermonthsofyear-property"></a>MonthlyTrigger.MonthsOfYear - proprietà
 
-Per gli script, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività.
+Per lo scripting, ottiene o imposta i mesi dell'anno durante i quali viene eseguita l'attività.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,7 +65,7 @@ Nella tabella seguente viene illustrato il mapping della maschera bit per bit ut
 
  
 
-Durante la lettura o la scrittura di un codice XML personalizzato per un'attività, i mesi dell'anno vengono specificati utilizzando l'elemento [**months**](taskschedulerschema-months-monthlyscheduletype-element.md) dello schema utilità di pianificazione.
+Durante la lettura o la scrittura di codice XML personalizzato per un'attività, i mesi dell'anno vengono specificati usando l'elemento [**Months**](taskschedulerschema-months-monthlyscheduletype-element.md) dello schema Utilità di pianificazione dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,9 +73,9 @@ Durante la lettura o la scrittura di un codice XML personalizzato per un'attivit
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

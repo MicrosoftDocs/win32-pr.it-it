@@ -1,7 +1,7 @@
 ---
-description: Il metodo SendRepaint Invia un evento Repaint al gestore del grafico dei filtri.
+description: Il metodo SendRepaint invia un evento repaint al gestore del grafico dei filtri.
 ms.assetid: 78e5c46c-ca5d-4c5d-9dfc-992ce6b150ad
-title: Metodo CBaseRenderer. SendRepaint (Renbase. h)
+title: Metodo CBaseRenderer.SendRepaint (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b3a88f0c1dae54cb5d9be1e4e9ad3e9677bdd958
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9057d1ff733c30da3b3b0d7e960607eadd033dcee0b26994478c6da9156a183e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954790"
 ---
-# <a name="cbaserenderersendrepaint-method"></a>CBaseRenderer. SendRepaint, metodo
+# <a name="cbaserenderersendrepaint-method"></a>Metodo CBaseRenderer.SendRepaint
 
-Il `SendRepaint` metodo invia un evento Repaint al gestore del grafico dei filtri.
+Il `SendRepaint` metodo invia un evento repaint al gestore del grafico dei filtri.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,15 +46,15 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo invia un evento di [**\_ ridisegno EC**](ec-repaint.md) al gestore del grafico del filtro se le condizioni seguenti sono vere:
+Questo metodo invia un [**evento EC \_ REPAINT**](ec-repaint.md) al gestore del grafico filtri se si verificano le condizioni seguenti:
 
 -   Il pin di input è connesso.
--   Il filtro non Scarica i dati.
--   Non è stata raggiunta la fine del flusso.
--   Il flag [**\_ BAbort di CBaseRenderer:: m**](cbaserenderer-m-babort.md) è **false**.
--   Il flag [**\_ BRepaintStatus di CBaseRenderer:: m**](cbaserenderer-m-brepaintstatus.md) è **true**.
+-   Il filtro non scarica i dati.
+-   La fine del flusso non è stata raggiunta.
+-   Il flag [**CBaseRenderer::m \_ bAbort**](cbaserenderer-m-babort.md) è **FALSE.**
+-   Il flag [**CBaseRenderer::m \_ bRepaintStatus**](cbaserenderer-m-brepaintstatus.md) è **TRUE.**
 
-A seconda dello stato del grafico, l' \_ evento di ridisegno EC può causare il reinvio di un campione da parte del filtro upstream, il grafico del filtro per cercare la posizione corrente oppure il gestore del grafico del filtro per sospendere momentaneamente. (Vedere la pagina relativa al [**\_ ridisegno EC**](ec-repaint.md)). Questo evento è potenzialmente inefficiente, quindi deve essere usato in modo sporadico. Tuttavia, i renderer video a volte devono aggiornare la visualizzazione.
+A seconda dello stato del grafo, l'evento EC REPAINT può inviare nuovamente un campione al filtro upstream, il grafo del filtro cerca la posizione corrente o il gestore del grafo del filtro viene sospeso \_ momentaneamente. Vedere [**EC \_ REPAINT.**](ec-repaint.md) Questo evento è potenzialmente inefficiente, quindi deve essere usato con parsimonio. Tuttavia, i renderer video talvolta devono aggiornare la visualizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ A seconda dello stato del grafico, l' \_ evento di ridisegno EC può causare il 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

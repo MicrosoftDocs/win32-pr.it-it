@@ -1,41 +1,41 @@
 ---
-title: Gestione dei dispositivi e dei servizi Bluetooth
-description: Due approcci di programmazione Bluetooth principali per la programmazione Windows con l'interfaccia Windows Sockets e la gestione diretta dei dispositivi con interfacce Bluetooth non socket.
+title: Gestione Bluetooth dispositivi e servizi
+description: Due approcci Bluetooth di programmazione per Windows programmazione con l'interfaccia Windows Sockets e la gestione diretta dei dispositivi con interfacce Bluetooth nonket.
 ms.assetid: 0eb7d339-6d23-4313-b1ed-7ab403a5a81d
 keywords:
-- Gestione dei dispositivi e dei servizi Bluetooth
-- Dispositivi e servizi Bluetooth, gestione
+- Gestione Bluetooth dispositivi e servizi
+- Bluetooth Dispositivi e servizi, gestione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61cf3657dff2091eda4b26d14f6504b74f943983
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 74979fe0a604204e777f0daabe07a4531d9974c9fef55231ce98b7ee7fe9c3ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104117807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959180"
 ---
-# <a name="managing-bluetooth-devices-and-services"></a>Gestione dei dispositivi e dei servizi Bluetooth
+# <a name="managing-bluetooth-devices-and-services"></a>Gestione Bluetooth dispositivi e servizi
 
-Questa sezione descrive come usare l'API Bluetooth per controllare direttamente i dispositivi e i servizi Bluetooth.
+Questa sezione descrive come usare l'API Bluetooth per controllare direttamente Bluetooth dispositivi e servizi.
 
-Per informazioni sull'utilizzo dell'interfaccia Windows Sockets per programmare il Bluetooth in Windows, vedere [supporto di Windows Sockets per Bluetooth](windows-sockets-support-for-bluetooth.md).
+Per informazioni sull'uso dell'interfaccia Windows Sockets per programmare Bluetooth in Windows, vedere Windows [Sockets Support for Bluetooth](windows-sockets-support-for-bluetooth.md).
 
 > [!Note]  
-> Bluetooth non impedisce che le funzionalità di risparmio energia interrompano le trasmissioni Bluetooth. Le applicazioni abilitate per Bluetooth possono monitorare i messaggi di alimentazione per evitare tale interruzione. Per altre informazioni, vedere [uso](/windows/desktop/Power/using-power-management)del risparmio energia.
+> Bluetooth non impedisce alle funzionalità di risparmio energia di interrompere Bluetooth trasmissioni. Bluetooth applicazioni abilitate per l'alimentazione possono monitorare i messaggi di alimentazione per evitare tale interruzione. Per altre informazioni, vedere [Uso del risparmio energia.](/windows/desktop/Power/using-power-management)
 
- 
+ 
 
 In questa sezione vengono trattati gli argomenti seguenti.
 
 | Sezione                                                                               | Content                                                                       |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Selezione di un dispositivo Bluetooth](selecting-a-bluetooth-device.md)                      | Viene descritto come selezionare un dispositivo Bluetooth.                                   |
-| [Messaggi Bluetooth e WM \_ DEVICECHANGE](bluetooth-and-wm-devicechange-messages.md) | Viene illustrata l'interazione tra i messaggi Bluetooth e **WM \_ DEVICECHANGE** . |
+| [Selezione di un Bluetooth dispositivo](selecting-a-bluetooth-device.md)                      | Descrive come selezionare un dispositivo Bluetooth dispositivo.                                   |
+| [Bluetooth e WM \_ DEVICECHANGE](bluetooth-and-wm-devicechange-messages.md) | Viene illustrata l'interazione tra Bluetooth **messaggi \_ DEVICECHANGE WM.** |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

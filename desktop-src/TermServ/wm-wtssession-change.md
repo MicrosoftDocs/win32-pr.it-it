@@ -1,10 +1,10 @@
 ---
-title: Messaggio WM_WTSSESSION_CHANGE (winuser. h)
-description: Notifica alle applicazioni le modifiche dello stato della sessione.
+title: WM_WTSSESSION_CHANGE messaggio (Winuser.h)
+description: Notifica alle applicazioni le modifiche apportate allo stato della sessione.
 ms.assetid: 758a130c-b75a-40fd-8530-3766aa86c5ba
 ms.tgt_platform: multiple
 keywords:
-- Messaggio WM_WTSSESSION_CHANGE Servizi Desktop remoto
+- WM_WTSSESSION_CHANGE messaggio Servizi Desktop remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db8f1dc421aa160824a194588711e84f961ea4dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f29bef7eb7778602a256f80cb04e47eae905a245783906c3388b576aecedee18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103740170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119419841"
 ---
-# <a name="wm_wtssession_change-message"></a>Messaggio di modifica di WM \_ WTSSESSION \_
+# <a name="wm_wtssession_change-message"></a>Messaggio WM \_ WTSSESSION \_ CHANGE
 
-Notifica alle applicazioni le modifiche dello stato della sessione.
+Notifica alle applicazioni le modifiche apportate allo stato della sessione.
 
-La finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+La finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -44,21 +44,21 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* \[ in\]
+*hWnd* \[ Pollici\]
 </dt> <dd>
 
 Handle per la finestra.
 
 </dd> <dt>
 
-*Messaggio* \[ in\]
+*Msg* \[ Pollici\]
 </dt> <dd>
 
-Specifica il messaggio (**\_ \_ modifica WM WTSSESSION**).
+Specifica il messaggio (**WM \_ WTSSESSION \_ CHANGE**).
 
 </dd> <dt>
 
-*wParam* \[ in\]
+*wParam* \[ Pollici\]
 </dt> <dd>
 
 Codice di stato che descrive il motivo per cui è stata inviata la notifica di modifica dello stato della sessione. Questo parametro può avere uno dei valori seguenti.
@@ -67,62 +67,62 @@ Codice di stato che descrive il motivo per cui è stata inviata la notifica di m
 
 <span id="WTS_CONSOLE_CONNECT"></span><span id="wts_console_connect"></span>
 
-<span id="WTS_CONSOLE_CONNECT"></span><span id="wts_console_connect"></span>**WTS \_ \_Connessione alla console** (0x1)
+<span id="WTS_CONSOLE_CONNECT"></span><span id="wts_console_connect"></span>**WTS \_ CONSOLE \_ CONNECT** (0x1)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata connessa al terminale della console o alla sessione RemoteFX.
+La sessione identificata da *lParam è* stata connessa al terminale della console o RemoteFX sessione.
 
 </dd> <dt>
 
 <span id="WTS_CONSOLE_DISCONNECT"></span><span id="wts_console_disconnect"></span>
 
-<span id="WTS_CONSOLE_DISCONNECT"></span><span id="wts_console_disconnect"></span>**WTS \_ \_Disconnessione della console** (0x2)
+<span id="WTS_CONSOLE_DISCONNECT"></span><span id="wts_console_disconnect"></span>**WTS \_ CONSOLE \_ DISCONNECT** (0x2)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata disconnessa dal terminale della console o dalla sessione RemoteFX.
+La sessione identificata da *lParam è* stata disconnessa dal terminale della console o RemoteFX sessione.
 
 </dd> <dt>
 
 <span id="WTS_REMOTE_CONNECT"></span><span id="wts_remote_connect"></span>
 
-<span id="WTS_REMOTE_CONNECT"></span><span id="wts_remote_connect"></span>**WTS \_ \_Connessione remota** (0x3)
+<span id="WTS_REMOTE_CONNECT"></span><span id="wts_remote_connect"></span>**WTS \_ REMOTE \_ CONNECT** (0x3)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata connessa al terminale remoto.
+La sessione identificata *da lParam* è connessa al terminale remoto.
 
 </dd> <dt>
 
 <span id="WTS_REMOTE_DISCONNECT"></span><span id="wts_remote_disconnect"></span>
 
-<span id="WTS_REMOTE_DISCONNECT"></span><span id="wts_remote_disconnect"></span>**WTS \_ \_Disconnessione remota** (0x4)
+<span id="WTS_REMOTE_DISCONNECT"></span><span id="wts_remote_disconnect"></span>**WTS \_ REMOTE \_ DISCONNECT** (0x4)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata disconnessa dal terminale remoto.
+La sessione identificata *da lParam* è stata disconnessa dal terminale remoto.
 
 </dd> <dt>
 
 <span id="WTS_SESSION_LOGON"></span><span id="wts_session_logon"></span>
 
-<span id="WTS_SESSION_LOGON"></span><span id="wts_session_logon"></span>**WTS \_ \_Accesso alla sessione** (0x5)
+<span id="WTS_SESSION_LOGON"></span><span id="wts_session_logon"></span>**WTS \_ SESSION \_ LOGON** (0x5)
 
 
 </dt> <dd>
 
-Un utente ha effettuato l'accesso alla sessione identificata da *lParam*.
+Un utente ha eseguito l'accesso alla sessione identificata da *lParam*.
 
 </dd> <dt>
 
 <span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>
 
-<span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>**WTS \_ \_Disconnessione della sessione** (0x6)
+<span id="WTS_SESSION_LOGOFF"></span><span id="wts_session_logoff"></span>**WTS \_ DISCONNESSIONE \_ SESSIONE** (0x6)
 
 
 </dt> <dd>
@@ -133,40 +133,40 @@ Un utente ha disconnesso la sessione identificata da *lParam*.
 
 <span id="WTS_SESSION_LOCK"></span><span id="wts_session_lock"></span>
 
-<span id="WTS_SESSION_LOCK"></span><span id="wts_session_lock"></span>**WTS \_ \_Blocco della sessione** (0x7)
+<span id="WTS_SESSION_LOCK"></span><span id="wts_session_lock"></span>**WTS \_ SESSION \_ LOCK** (0x7)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata bloccata.
+La sessione identificata *da lParam* è stata bloccata.
 
 </dd> <dt>
 
 <span id="WTS_SESSION_UNLOCK"></span><span id="wts_session_unlock"></span>
 
-<span id="WTS_SESSION_UNLOCK"></span><span id="wts_session_unlock"></span>**WTS \_ \_Sblocco della sessione** (0x8)
+<span id="WTS_SESSION_UNLOCK"></span><span id="wts_session_unlock"></span>**WTS \_ SESSION \_ UNLOCK** (0x8)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* è stata sbloccata.
+La sessione identificata *da lParam* è stata sbloccata.
 
 </dd> <dt>
 
 <span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>
 
-<span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>**WTS \_ \_ \_ Controllo remoto sessione** (0x9)
+<span id="WTS_SESSION_REMOTE_CONTROL"></span><span id="wts_session_remote_control"></span>**WTS \_ SESSION \_ REMOTE \_ CONTROL** (0x9)
 
 
 </dt> <dd>
 
-La sessione identificata da *lParam* ha modificato lo stato di controllo remoto. Per determinare lo stato, chiamare [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) e controllare la **metrica \_ RemoteControl di SM** .
+La sessione identificata da *lParam ha* modificato lo stato controllato da remoto. Per determinare lo stato, chiamare [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) e controllare la **metrica \_ SM REMOTECONTROL.**
 
 </dd> <dt>
 
 <span id="WTS_SESSION_CREATE"></span><span id="wts_session_create"></span>
 
-<span id="WTS_SESSION_CREATE"></span><span id="wts_session_create"></span>**WTS \_ \_Creazione della sessione** (0xA)
+<span id="WTS_SESSION_CREATE"></span><span id="wts_session_create"></span>**WTS \_ SESSION \_ CREATE** (0xA)
 
 
 </dt> <dd>
@@ -177,7 +177,7 @@ Riservato per utilizzi futuri.
 
 <span id="WTS_SESSION_TERMINATE"></span><span id="wts_session_terminate"></span>
 
-<span id="WTS_SESSION_TERMINATE"></span><span id="wts_session_terminate"></span>**WTS \_ \_Terminazione sessione** (0xB)
+<span id="WTS_SESSION_TERMINATE"></span><span id="wts_session_terminate"></span>**WTS \_ SESSION \_ TERMINATE** (0xB)
 
 
 </dt> <dd>
@@ -186,7 +186,7 @@ Riservato per utilizzi futuri.
 
 </dd> </dl> </dd> <dt>
 
-*lParam* \[ in\]
+*lParam* \[ Pollici\]
 </dt> <dd>
 
 Identificatore della sessione.
@@ -199,9 +199,9 @@ Il valore restituito viene ignorato.
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio viene inviato solo alle applicazioni che hanno effettuato la registrazione per ricevere questo messaggio chiamando [**WTSRegisterSessionNotification**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsregistersessionnotification).
+Questo messaggio viene inviato solo alle applicazioni registrate per ricevere questo messaggio chiamando [**WTSRegisterSessionNotification.**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsregistersessionnotification)
 
-Esempi di come le applicazioni possono rispondere a questo messaggio includono il rilascio o l'acquisizione di risorse specifiche della console, la determinazione della modalità di disegno di una schermata o l'attivazione degli effetti di animazione della console.
+Alcuni esempi di come le applicazioni possono rispondere a questo messaggio includono il rilascio o l'acquisizione di risorse specifiche della console, la determinazione della modalità di disegno di una schermata o l'attivazione di effetti di animazione della console.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -211,7 +211,7 @@ Esempi di come le applicazioni possono rispondere a questo messaggio includono i
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                                           |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

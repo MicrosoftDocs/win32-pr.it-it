@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 2951c2fb-1682-4ec2-bb48-470a7c2d2b15
-ms.openlocfilehash: 51e708bb406a79e7cfdd29c7a4a23f414e93335d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a9232540551e6f7efd76969e1677cc7cadb5380d93ecc16bfe07c7cfb4bd8b2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969460"
 ---
 # <a name="didiskquotauserdisplayname-property"></a>DiDiskQuotaUser.DisplayName - proprietà
 

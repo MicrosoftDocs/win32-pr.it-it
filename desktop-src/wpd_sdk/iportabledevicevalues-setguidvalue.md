@@ -1,7 +1,7 @@
 ---
-description: Il metodo SetGuidValue aggiunge un nuovo valore GUID (tipo VT \_ CLSID) o sovrascrive uno esistente.
+description: Il metodo SetGuidValue aggiunge un nuovo valore GUID (tipo \_ CLSID VT) o ne sovrascrive uno esistente.
 ms.assetid: 429a83c0-59b6-4e2f-a657-cbec1dfb9070
-title: 'Metodo IPortableDeviceValues:: SetGuidValue (PortableDeviceTypes. h)'
+title: Metodo IPortableDeviceValues::SetGuidValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 9d9f85def6ba487163f7c4c7d7441a89e0747ed6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de2554422ca9df16a1a1df98a5f4888e4914909885c6661818b0692b33b66763
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963590"
 ---
-# <a name="iportabledevicevaluessetguidvalue-method"></a>Metodo IPortableDeviceValues:: SetGuidValue
+# <a name="iportabledevicevaluessetguidvalue-method"></a>Metodo IPortableDeviceValues::SetGuidValue
 
-Il metodo **SetGuidValue** aggiunge un nuovo valore **GUID** (tipo VT \_ CLSID) o sovrascrive uno esistente.
+Il **metodo SetGuidValue** aggiunge un nuovo **valore GUID** (tipo \_ CLSID VT) o ne sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,29 +41,29 @@ HRESULT SetGuidValue(
 
 <dl> <dt>
 
-*chiave* \[ di in\]
+*chiave* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFPROPERTYKEY** che specifica l'elemento da creare o sovrascrivere.
+**RefPROPERTYKEY che** specifica l'elemento da creare o sovrascrivere.
 
 </dd> <dt>
 
-*Valore* \[ di in\]
+*Valore* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **REFGUID** che contiene il nuovo valore.
+REFGUID **che** contiene il nuovo valore.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sovrascrive il valore esistente senza alcun avviso.
+Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovrascrive il valore esistente senza alcun avviso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -79,8 +79,8 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *Key* , sov
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 

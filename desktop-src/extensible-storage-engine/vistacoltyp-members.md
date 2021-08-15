@@ -1,27 +1,27 @@
 ---
-description: 'Altre informazioni su: membri di VistaColtyp'
-title: Membri di VistaColtyp (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Membri di VistaColtyp'
+title: Membri VistaColtyp (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColtyp members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp_members(v=EXCHG.10)
 ms:contentKeyID: 55104310
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: fd15e9f2848656ca1aa4ae95db2cc190eea53575
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 143467dd3c1ccf705a0a32c083a2541798f5800335ee69cd3f46f378d5aac965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119356331"
 ---
 # <a name="vistacoltyp-members"></a>Membri di VistaColtyp
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
-Tipi di colonna aggiunti alla versione di vista di ESENT.
+Tipi di colonna aggiunti alla versione Vista di ESENT.
 
-Il tipo [VistaColtyp](./vistacoltyp-class.md) espone i membri seguenti.
+Il [tipo VistaColtyp](./vistacoltyp-class.md) espone i membri seguenti.
 
 ## <a name="fields"></a>Campi
 
@@ -42,12 +42,12 @@ Il tipo [VistaColtyp](./vistacoltyp-class.md) espone i membri seguenti.
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn351276(v=exchg.10).md">LongLong</a></td>
-<td>Signed numero a 64 bit.</td>
+<td>Numero a 64 bit con segno.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
 <td><a href="dn335348(v=exchg.10).md">UnsignedLong</a></td>
-<td>Numero a 32 bit senza segno.</td>
+<td>Numero senza segno a 32 bit.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo pubblico" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro statico" alt="Static member" /></td>
@@ -66,4 +66,4 @@ Inizio
 
 [Classe VistaColtyp](./vistacoltyp-class.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

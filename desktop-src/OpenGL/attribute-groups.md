@@ -9,48 +9,48 @@ keywords:
 - gruppi di attributi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d93582c8996438ad99d7bf896cf83bdf6fbf72d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9501ea7ea2c924a6e89d93cb995cbef4f789cba587d4a1f3fa03dbb798eafd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554701"
 ---
 # <a name="attribute-groups"></a>Gruppi di attributi
 
 
 
-| Bit maschera                  | Gruppo di attributi |
+| Maschera bit                  | Gruppo di attributi |
 |---------------------------|-----------------|
-| \_bit del buffer di accut GL \_ \_    | accut-buffer    |
-| \_tutti i \_ \_ bit attrib (GL)     |                 |
-| \_bit del \_ buffer dei colori GL \_    | buffer a colori    |
-| \_bit corrente \_ GL          | corrente         |
-| \_ \_ bit buffer di profondità GL \_    | buffer di profondità    |
-| \_bit di abilitazione GL \_           | abilitare          |
-| BIT valutazione GL \_ \_             | eval            |
-| \_bit di nebbia GL \_              | nebbia             |
-| \_bit suggerimento \_ GL             | hint            |
-| \_bit di illuminazione GL \_         | illuminazione        |
-| \_bit linea \_ GL             | line            |
-| \_bit elenco \_ GL             | list            |
-| \_bit in \_ modalità GL pixel \_      | pixel           |
-| \_bit punto \_ GL            | point           |
-| \_bit poligono GL \_          | polygon         |
-| \_bit stipple poligono GL \_ \_ | poligono-stipple |
-| \_bit a forbice GL \_          | ritaglio         |
-| \_ \_ bit buffer dello stencil GL \_  | stencil-buffer  |
-| \_bit trama \_ GL          | trama         |
-| \_bit di trasformazione GL \_        | trasformazione       |
-| \_bit del viewport GL \_         | riquadro di visualizzazione        |
+| GL \_ ACCUM \_ BUFFER \_ BIT    | accum-buffer    |
+| GL \_ ALL \_ ATTRIB \_ BITS     |                 |
+| BIT BUFFER COLORE GL \_ \_ \_    | color-buffer    |
+| GL \_ CURRENT \_ BIT          | corrente         |
+| BIT \_ BUFFER \_ DI PROFONDITÀ GL \_    | depth-buffer    |
+| GL \_ ENABLE \_ BIT           | abilitare          |
+| GL \_ EVAL \_ BIT             | eval            |
+| GL \_ FOG \_ BIT              | Nebbia             |
+| GL \_ HINT \_ BIT             | hint            |
+| BIT DI ILLUMINAZIONE GL \_ \_         | illuminazione        |
+| GL \_ LINE \_ BIT             | line            |
+| GL \_ LIST \_ BIT             | list            |
+| BIT MODALITÀ PIXEL GL \_ \_ \_      | pixel           |
+| BIT DEL PUNTO GL \_ \_            | point           |
+| BIT \_ POLIGONO GL \_          | polygon         |
+| GL \_ POLYGON \_ STIPPLE \_ BIT | stipple poligono |
+| GL \_ SCISSOR \_ BIT          | Forbice         |
+| GL \_ STENCIL \_ BUFFER \_ BIT  | stencil-buffer  |
+| BIT DI TRAMA GL \_ \_          | trama         |
+| BIT DI TRASFORMAZIONE GL \_ \_        | trasformazione       |
+| GL \_ VIEWPORT \_ BIT         | riquadro di visualizzazione        |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

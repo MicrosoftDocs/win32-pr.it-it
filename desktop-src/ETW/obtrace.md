@@ -1,5 +1,5 @@
 ---
-description: Rappresenta la classe padre dalla quale vengono derivate tutte le classi di traccia degli eventi di gestione oggetti.
+description: Rappresenta la classe padre da cui vengono derivate tutte le classi di traccia eventi di gestione oggetti.
 ms.assetid: 07cfc4a2-c665-4080-bc4b-fe9ec7191fdc
 title: Classe ObTrace
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ca89f58df9f5dd741da5b1fb8572b153c956cd43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8cf30fe0c7b028c819477bcf0c66c2b674fc588286916be1cd1fd1a6b207770d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103757661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328751"
 ---
 # <a name="obtrace-class"></a>Classe ObTrace
 
-Rappresenta la classe padre dalla quale vengono derivate tutte le classi di traccia degli eventi di gestione oggetti.
+Rappresenta la classe padre da cui vengono derivate tutte le classi di traccia eventi di gestione oggetti.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -36,11 +36,11 @@ class ObTrace : MSNT_SystemTrace
 
 ## <a name="members"></a>Members
 
-La classe **ObTrace** non definisce membri.
+La **classe ObTrace** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare la traccia eventi di gestione oggetti, chiamare la funzione [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con il parametro *InformationClass* uguale al valore di enumerazione della classe di [**\_ informazioni \_ di traccia**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** e il membro **EnableFlags** della struttura di [**\_ \_ proprietà della traccia eventi**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) uguale all' **\_ \_ handle ob Perf** (0x80000040).
+Per abilitare la traccia degli eventi di Gestione oggetti, chiamare la funzione [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con il parametro *InformationClass* uguale al valore di enumerazione [**TRACE INFO \_ \_ CLASS**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** e al membro **EnableFlags** della struttura EVENT [**TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) uguale a **PERF OB \_ \_ HANDLE** (0x80000040).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -48,9 +48,9 @@ Per abilitare la traccia eventi di gestione oggetti, chiamare la funzione [**Tra
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

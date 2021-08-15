@@ -1,23 +1,23 @@
 ---
-title: gather4 (SM 4.1-ASM)
-description: Raccoglie i quattro Texel che verrebbero usati in un'operazione di filtraggio bilineare e li imballa in un unico registro. | gather4 (SM 4.1-ASM)
+title: gather4 (sm4.1 - asm)
+description: Raccoglie i quattro texel usati in un'operazione di filtro bi-lineare e li racchiude in un unico registro. | gather4 (sm4.1 - asm)
 ms.assetid: 219B25AE-CBF9-4B68-B2DB-6D8C3C5B4CEA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84387bfe027e30b338b4701ec941a9d4e1b5e242
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: cb39918bdb421123cb3e2bfe41931740e271f85a27cf36b8994d493656d91c21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457581"
 ---
-# <a name="gather4-sm41---asm"></a>gather4 (SM 4.1-ASM)
+# <a name="gather4-sm41---asm"></a>gather4 (sm4.1 - asm)
 
-Raccoglie i quattro Texel che verrebbero usati in un'operazione di filtraggio bilineare e li imballa in un unico registro.
+Raccoglie i quattro texel usati in un'operazione di filtro bi-lineare e li racchiude in un unico registro.
 
 
 
-| gather4 \[ \_ aoffimmi (u, v) \] dest \[ . mask \] , srcAddress \[ . Swizzle \] , srcResource \[ . Swizzle \] srcSampler. r |
+| gather4 \[ \_ aoffimmi(u,v) \] dest \[ \] .mask, srcAddress \[ .swizzle, \] srcResource \[ .swizzle \] srcSampler.r |
 |--------------------------------------------------------------------------------------------------------|
 
 
@@ -28,10 +28,10 @@ Raccoglie i quattro Texel che verrebbero usati in un'operazione di filtraggio bi
 
 | Elemento                                                                                                               | Descrizione                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                    | \[nell' \] indirizzo del risultato dell'operazione.<br/>                                                                                                       |
-| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[in \] contiene le coordinate di trama. <br/>                                                                                                                |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[in \] un registro delle risorse. <br/> Swizzle consente il swizzled arbitrario dei valori restituiti prima che vengano scritti in *dest*. <br/>            |
-| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[in \] un registro del campionatore.<br/> Questo parametro deve avere un Swizzle. r (rosso), che indica che il valore del canale R viene copiato in *dest*. <br/> |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[in \] Indirizzo del risultato dell'operazione.<br/>                                                                                                       |
+| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[in \] Contiene le coordinate della trama. <br/>                                                                                                                |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[in \] Un registro risorse. <br/> Lo swizzle consente di scorrere arbitrariamente i valori restituiti prima che siano scritti in *dest*. <br/>            |
+| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[in \] Un registro sampler.<br/> Questo parametro deve avere uno swizzle .r (rosso), che indica che il valore del canale R viene copiato in *dest*. <br/> |
 
 
 
@@ -39,15 +39,15 @@ Raccoglie i quattro Texel che verrebbero usati in un'operazione di filtraggio bi
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione funziona solo con trame 2D o mappa cubi a canale singolo. Per le trame 2D vengono usate solo le modalità di indirizzamento del campionatore e viene usato il livello superiore di qualsiasi piramide MIP.
+Questa operazione funziona solo con trame 2D o CubeMap a canale singolo. Per le trame 2D vengono usate solo le modalità di indirizzamento del campionatore e il livello superiore di qualsiasi piramide mip.
 
-Questa istruzione si comporta come l'istruzione di [esempio](sample--sm4---asm-.md) , ma non viene generato un campione filtrato. I quattro esempi che contribuiscono al filtraggio vengono inseriti in xyzw in senso antiorario a partire dall'esempio in basso a sinistra della posizione sottoposta a query. Equivale al campionamento dei punti con (u, v) le coordinate di trama Delta nei percorsi seguenti: (-, +), (+, +), (+,-), (-,-), dove la grandezza dei Delta è sempre metà di un Texel.
+Questa istruzione si comporta come [l'istruzione di](sample--sm4---asm-.md) esempio, ma non viene generato un esempio filtrato. I quattro esempi che contribuiscono al filtro vengono inseriti in xyzw in senso antiorario a partire dal campione in basso a sinistra della posizione su cui è stata eseguita la query. Questo è lo stesso del campionamento in punti con delta delle coordinate della trama (u,v) nelle posizioni seguenti: (-,+),(+,+),(+,-),(-,-), dove la grandezza dei delta è sempre metà texel.
 
-Per le trame mappa cubi quando un footprint bidirezionale si estende su un Texel perimetrale dal volto adiacente vengono usati. Gli angoli utilizzano le stesse regole dell'istruzione di **esempio** ; ovvero l'angolo sconosciuto è considerato la media dei tre angoli della faccia con inping.
+Per le trame CubeMap quando viene usato un footprint bi-lineare che si estende su un bordo texel dal viso adiacente. Gli angoli usano le stesse regole **dell'istruzione di** esempio. che è l'angolo non arrotondato è considerato la media dei tre angoli del viso che causano l'errore.
 
-Le restrizioni relative al formato di trama applicabili alle istruzioni di **esempio** sono valide anche per l'istruzione **gather4** .
+Le restrizioni relative al formato della trama che si applicano alle **istruzioni di** esempio si applicano anche all'istruzione **gather4.**
 
-Per le implementazioni dell'hardware, le ottimizzazioni nei filtri bilineari tradizionali che rilevano esempi direttamente nei Texel e ignorano la lettura di Texel che non possono essere utilizzate con **gather4**. **gather4** restituisce sempre tutti i Texel richiesti.
+Per le implementazioni hardware, le ottimizzazioni nel filtro bilineare tradizionale che rilevano gli esempi direttamente sui texel e ignorano la lettura dei texel con peso 0 non possono essere sfruttate con **gather4**. **gather4** restituisce sempre tutti i texel richiesti.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -61,7 +61,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -69,12 +69,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -84,7 +84,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Messaggio HDM_HITTEST (COMmctrl. h)
-description: Verifica un punto per determinare quale elemento di intestazione, se presente, si trova in corrispondenza del punto specificato.
+title: HDM_HITTEST messaggio (Commctrl.h)
+description: Verifica un punto per determinare quale elemento di intestazione, se presente, si trova nel punto specificato.
 ms.assetid: ff866bd1-9f2a-457c-921d-549610ab9088
 keywords:
-- Controlli di Windows Message HDM_HITTEST
+- HDM_HITTEST di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b6634396dbd5ecd4510a4f7341fc6380dbb0ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cc219640d9dd9d5d9a4c9537169401f681e37660554266b3edd653365cf8cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544771"
 ---
-# <a name="hdm_hittest-message"></a>\_Messaggio HDM HITTEST
+# <a name="hdm_hittest-message"></a>Messaggio \_ HITTEST HDM
 
-Verifica un punto per determinare quale elemento di intestazione, se presente, si trova in corrispondenza del punto specificato.
+Verifica un punto per determinare quale elemento di intestazione, se presente, si trova nel punto specificato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Verifica un punto per determinare quale elemento di intestazione, se presente, s
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**HDHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) contenente la posizione in cui eseguire il test e ricevere informazioni sui risultati del test.
+Puntatore a [**una struttura HDHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) che contiene la posizione da testare e riceve informazioni sui risultati del test.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'indice dell'elemento in corrispondenza della posizione specificata, se presente, oppure 1 in caso contrario.
+Restituisce l'indice dell'elemento nella posizione specificata, se presente, oppure 1 in caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce l'indice dell'elemento in corrispondenza della posizione specificata
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

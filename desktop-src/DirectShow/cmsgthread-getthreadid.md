@@ -1,7 +1,7 @@
 ---
 description: Recupera l'identificatore del thread.
 ms.assetid: c2b25342-841a-46cb-862c-01761fc60363
-title: Metodo CMsgThread. GetThreadID (Msgthrd. h)
+title: Metodo CMsgThread.GetThreadID (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0819810b9b7589fc5272c0e79f87fc2f34325f5e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f3b0837a7f050f09794b06e490f45012e0704e187b02668cd2af2a5bf8edf34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214101"
 ---
-# <a name="cmsgthreadgetthreadid-method"></a>CMsgThread. GetThreadID, metodo
+# <a name="cmsgthreadgetthreadid-method"></a>Metodo CMsgThread.GetThreadID
 
 Recupera l'identificatore del thread.
 
@@ -42,11 +42,11 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce il membro dati privato **m \_ ThreadID** .
+Restituisce il **membro dati privato \_ ThreadId m.**
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione restituisce l'identificatore Microsoft Win32 per il thread di lavoro. Questa funzione membro può essere chiamata nel thread di lavoro o in un thread client.
+Questa funzione restituisce l'identificatore Microsoft Win32 per il thread di lavoro. È possibile chiamare questa funzione membro sul thread di lavoro o su un thread client.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,8 +54,8 @@ Questa funzione restituisce l'identificatore Microsoft Win32 per il thread di la
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Msgthrd. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Msgthrd.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

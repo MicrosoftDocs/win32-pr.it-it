@@ -1,7 +1,7 @@
 ---
-description: Combina due colori.
+description: Unisce due colori.
 ms.assetid: deff70c7-2359-48b2-ab40-8c418acf5a07
-title: Funzione D3DXColorModulate (D3dx9math. h)
+title: Funzione D3DXColorModulate (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cf9b202da786f6ec87ceca9816c2a4fc86776577
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3be2b2174a4f6e76a211e0da43dab85e81c490495173f2d2323caa71a463de79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988711"
 ---
-# <a name="d3dxcolormodulate-function"></a>D3DXColorModulate (funzione)
+# <a name="d3dxcolormodulate-function"></a>Funzione D3DXColorModulate
 
-Combina due colori.
+Unisce due colori.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorModulate(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*pC1* \[ in\]
+*pC1* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> <dt>
 
-*pC2* \[ in\]
+*pC2* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione di fusione.
+Questa funzione restituisce un puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione di fusione.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXColorModulate** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXColorModulate** può essere usata come parametro per un'altra funzione.
 
 Questa funzione unisce due colori moltiplicando i componenti di colore corrispondenti, come illustrato nell'esempio seguente.
 
@@ -94,8 +94,8 @@ pOut->r = pC1->r * pC2->r;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

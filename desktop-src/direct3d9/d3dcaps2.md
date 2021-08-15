@@ -4,12 +4,12 @@ ms.assetid: 0c0c65fc-f953-4379-a6d0-6ce447a0c183
 title: D3DCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2266073c2d803f9bf11f4a3548078c0d34e5f78
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 9fc58f0e249a90a325631123ce7b8e43d4149a7244e7b2032c489c0999137ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989121"
 ---
 # <a name="d3dcaps2"></a>D3DCAPS2
 
@@ -37,7 +37,7 @@ Flag di funzionalità del driver.
 <tr class="odd">
 <td>D3DCAPS2_CANCALIBRATEGAMMA</td>
 <td>0x00100000L</td>
-<td>Il sistema ha installato un calibratore in grado di regolare automaticamente la rampa gamma in modo che il risultato sia identico in tutti i sistemi con calibrazione. Per richiamare il calibratore quando si impostano nuovi livelli gamma, usare il flag D3DSGR_CALIBRATE quando si <a href="/windows/desktop/api"><strong>chiama SetGammaRamp</strong></a>. La calibrazione delle rampe gamma comporta un sovraccarico di elaborazione e non deve essere usata di frequente.</td>
+<td>Nel sistema è installato un calibratore in grado di regolare automaticamente la rampa gamma in modo che il risultato sia identico in tutti i sistemi con calibrazione. Per richiamare il calibratore quando si impostano nuovi livelli gamma, usare il flag D3DSGR_CALIBRATE quando si <a href="/windows/desktop/api"><strong>chiama SetGammaRamp</strong></a>. La calibrazione delle rampe gamma comporta un sovraccarico di elaborazione e non deve essere usata di frequente.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_CANSHARERESOURCE</td>

@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETOUTLINECOLOR (COMmctrl. h)
-description: Imposta il colore del bordo di un controllo di visualizzazione elenco se \_ \_ è impostato lo stile della finestra estesa LVS ex BORDERSELECT.
+title: LVM_SETOUTLINECOLOR messaggio (Commctrl.h)
+description: Imposta il colore del bordo di un controllo visualizzazione elenco se lo stile della finestra estesa LVS \_ EX \_ BORDERSELECT è impostato.
 ms.assetid: c2b606fa-8d47-4192-94b7-d01c3cfdc514
 keywords:
-- Controlli di Windows Message LVM_SETOUTLINECOLOR
+- LVM_SETOUTLINECOLOR controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 776cb13479e4d091d394941844691c117a4ebbef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5db9f5d53339ecec19fd6f06fcabd3a0471b1c3a569e8856571a98a99675a232
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217391"
 ---
-# <a name="lvm_setoutlinecolor-message"></a>\_Messaggio SETOUTLINECOLOR LVM
+# <a name="lvm_setoutlinecolor-message"></a>Messaggio \_ LVM SETOUTLINECOLOR
 
-Imposta il colore del bordo di un controllo di visualizzazione elenco se è impostato lo stile della finestra estesa [**LVS \_ ex \_ BORDERSELECT**](extended-list-view-styles.md) .
+Imposta il colore del bordo di un controllo visualizzazione elenco se lo stile della finestra estesa [**LVS \_ EX \_ BORDERSELECT**](extended-list-view-styles.md) è impostato.
 
 ## <a name="parameters"></a>Parametri
 
@@ -33,16 +33,16 @@ Imposta il colore del bordo di un controllo di visualizzazione elenco se è impo
 </dt> <dd>Deve essere zero.</dd> <dt>
 
 *lParam* 
-</dt> <dd>Struttura **COLORREF** che specifica il colore per l'impostazione del bordo.</dd> </dl>
+</dt> <dd>**Struttura COLORREF** che specifica il colore per impostare il bordo.</dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la struttura **COLORREF** che contiene il colore del contorno.
+Restituisce **la struttura COLORREF** che contiene il colore del contorno.
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Per utilizzare questo messaggio, è necessario fornire un manifesto che specifichi Comclt32.dll versione 6,0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione](cookbook-overview.md).
+> Per usare questo messaggio, è necessario fornire un manifesto che specifica Comclt32.dll versione 6.0. Per altre informazioni sui manifesti, vedere [Abilitazione degli stili di visualizzazione.](cookbook-overview.md)
 
  
 
@@ -52,9 +52,9 @@ Restituisce la struttura **COLORREF** che contiene il colore del contorno.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

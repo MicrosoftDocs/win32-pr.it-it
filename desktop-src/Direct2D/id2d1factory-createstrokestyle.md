@@ -1,9 +1,9 @@
 ---
-title: Metodi CreateStrokeStyle di ID2D1Factory
-description: Crea un ID2D1StrokeStyle che descrive l'estremità iniziale, lo schema Dash e altre funzionalità di un tratto.
+title: Metodi ID2D1Factory CreateStrokeStyle
+description: Crea un oggetto ID2D1StrokeStyle che descrive l'estremità iniziale, il motivo trattino e altre caratteristiche di un tratto.
 ms.assetid: cc7bd68b-a6eb-4d05-b331-032ce80f375c
 keywords:
-- Metodo CreateStrokeStyle Direct2D
+- Metodi CreateStrokeStyle Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 09a578cafe6795bbf742d9dac114365d6e850586
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e0cd14de6197a13bf74e987de3a1d70a7d952b274025d0f8801c55aa80369ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342911"
 ---
-# <a name="id2d1factorycreatestrokestyle-methods"></a>Metodi ID2D1Factory:: CreateStrokeStyle
+# <a name="id2d1factorycreatestrokestyle-methods"></a>Metodi ID2D1Factory::CreateStrokeStyle
 
-Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, lo schema Dash e altre funzionalità di un tratto.
+Crea un [**oggetto ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, il motivo trattino e altre caratteristiche di un tratto.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,14 +30,14 @@ Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle)
 
 | Metodo                                                                                                                                                                                                  | Descrizione                                                                                                                                |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateStrokeStyle ( \_ \_ Proprietà stile tratto d2d1 \_&, float \* , uint, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle))  | Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, lo schema Dash e altre funzionalità di un tratto.<br/> |
-| [**CreateStrokeStyle ( \_ \_ Proprietà stile tratto \_ d2d1 \* , float \* , uint, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties_constfloat_uint32_id2d1strokestyle)) | Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, lo schema Dash e altre funzionalità di un tratto.<br/> |
+| [**CreateStrokeStyle(D2D1 \_ STROKE STYLE PROPERTIES \_ \_&, FLOAT , \* UINT, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle))  | Crea un [**oggetto ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, il motivo trattino e altre caratteristiche di un tratto.<br/> |
+| [**CreateStrokeStyle(D2D1 \_ STROKE STYLE PROPERTIES , FLOAT , \_ \_ \* \* UINT, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties_constfloat_uint32_id2d1strokestyle)) | Crea un [**oggetto ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) che descrive l'estremità iniziale, il motivo trattino e altre caratteristiche di un tratto.<br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creato un tratto che utilizza un modello di tratteggio personalizzato.
+L'esempio seguente crea un tratto che usa un motivo trattino personalizzato.
 
 
 ```C++
@@ -65,7 +65,7 @@ if (SUCCEEDED(hr))
 
 
 
-Nell'esempio seguente viene usato lo stile stroke durante il disegno di una linea.
+Nell'esempio seguente viene utilizzato lo stile del tratto quando si disegna una linea.
 
 
 ```C++
@@ -86,7 +86,7 @@ m_pRenderTarget->DrawLine(
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

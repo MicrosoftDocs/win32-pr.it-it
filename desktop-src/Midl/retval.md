@@ -1,9 +1,9 @@
 ---
 title: retval (attributo)
-description: L'attributo \ retval \ designa il parametro che riceve il valore restituito del membro.
+description: L'attributo \ retval\ definisce il parametro che riceve il valore restituito del membro.
 ms.assetid: 3a5f1469-7828-4c38-b58f-195a47b2a66f
 keywords:
-- attributo retval MIDL
+- Attributo retval MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b53aa2b8ab66737bd4d97710fe942ee73bf0b8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 72655883b24c83890cf2f5604cb8f7335c6943b32e5e69611dba415689b03e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103872358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146304"
 ---
 # <a name="retval-attribute"></a>retval (attributo)
 
-L'attributo **\[ retval \]** designa il parametro che riceve il valore restituito del membro.
+**\[ L'attributo \] retval** definisce il parametro che riceve il valore restituito del membro.
 
 ``` syntax
 return-type function-name(
@@ -33,21 +33,21 @@ return-type function-name(
 
 <dl> <dt>
 
-*tipo restituito* 
+*return-type* 
 </dt> <dd>
 
 Tipo di dati del valore restituito della procedura remota.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
 Nome utilizzato per richiamare la procedura remota.
 
 </dd> <dt>
 
-*facoltativo-attributi* 
+*attributi facoltativi* 
 </dt> <dd>
 
 Zero o più attributi MIDL.
@@ -57,11 +57,11 @@ Zero o più attributi MIDL.
 *tipo di dati* 
 </dt> <dd>
 
-Tipo di dati passati tramite il parametro.
+Tipo di dati passati tramite il parametro .
 
 </dd> <dt>
 
-*nome param* 
+*param-name* 
 </dt> <dd>
 
 Nome dell'identificatore del parametro.
@@ -70,23 +70,23 @@ Nome dell'identificatore del parametro.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile usare l'attributo **\[ retval \]** sui parametri dei membri di interfaccia che descrivono metodi o ottengono proprietà. L'attributo è obbligatorio per l'ultimo parametro di un metodo con il **\[** parametro [**propget**](propget.md) **\]** attributo). Il parametro deve avere l' **\[** attributo [**out**](out-idl.md) **\]** e deve essere un tipo di puntatore.
+È possibile usare **\[ l'attributo retval \]** sui parametri dei membri dell'interfaccia che descrivono metodi o ottengono proprietà. L'attributo è obbligatorio nell'ultimo parametro di un metodo con **\[** [**propget**](propget.md) **\]** attribute.) Il parametro deve avere **\[** [**l'attributo out**](out-idl.md) **\]** e deve essere un tipo puntatore.
 
-Non è possibile applicare l' **\[** attributo [**facoltativo**](optional.md) **\]** a un parametro **\[ \] retval** .
+Non è possibile applicare **\[** [**l'attributo**](optional.md) **\]** facoltativo a un **\[ parametro retval. \]**
 
 Il compilatore MIDL accetta l'ordinamento dei parametri seguente (da sinistra a destra):
 
-1.  Parametri obbligatori (parametri senza **\[** [](defaultvalue.md) **\]** attributi DefaultValue o **\[** [**facoltativi**](optional.md) **\]** ).
-2.  Parametri facoltativi con o senza l' **\[** [](defaultvalue.md) **\]** attributo DefaultValue.
-3.  Parametri con l' **\[** attributo [**facoltativo**](optional.md) **\]** e senza l' **\[** attributo [**DefaultValue**](defaultvalue.md) **\]** .
-4.  **\[** parametro [**LCID**](lcid.md) **\]** , se disponibile.
-5.  parametro **\[ retval \]** .
+1.  Parametri obbligatori (parametri che non hanno il **\[** [**valore predefinito**](defaultvalue.md) **\]** o attributi **\[** [**facoltativi).**](optional.md) **\]**
+2.  Parametri facoltativi con o senza **\[** [**l'attributo**](defaultvalue.md) **\]** defaultvalue.
+3.  Parametri con **\[** [**l'attributo facoltativo**](optional.md) **\]** e senza **\[** [**l'attributo defaultvalue.**](defaultvalue.md) **\]**
+4.  **\[**[**Parametro lcid,**](lcid.md) **\]** se presente.
+5.  **\[ parametro retval. \]**
 
-I parametri con l'attributo **\[ retval \]** non vengono visualizzati nei browser orientati agli utenti.
+I parametri con **\[ l'attributo retval \]** non vengono visualizzati nei browser orientati all'utente.
 
 ### <a name="flags"></a>Flags
 
-\_FRETVAL IDLFLAG
+IDLFLAG \_ FRETVAL
 
 ## <a name="examples"></a>Esempi
 
@@ -99,25 +99,25 @@ HRESULT MyOtherMethod([out, retval] VARIANT_BOOL* ReturnVal);
 
 <dl> <dt>
 
-[**DefaultValue**](defaultvalue.md)
+[**Defaultvalue**](defaultvalue.md)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**opzionale**](optional.md)
+[**Opzionale**](optional.md)
 </dt> <dt>
 
-[**out**](out-idl.md)
+[**in uscita**](out-idl.md)
 </dt> <dt>
 
 [**propget**](propget.md)
@@ -126,6 +126,6 @@ HRESULT MyOtherMethod([out, retval] VARIANT_BOOL* ReturnVal);
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

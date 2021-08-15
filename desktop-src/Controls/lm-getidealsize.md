@@ -3,7 +3,7 @@ title: LM_GETIDEALSIZE messaggio (Commctrl.h)
 description: "LM_GETIDEALSIZE messaggio: recupera l'altezza preferita di un collegamento per la larghezza corrente del controllo."
 ms.assetid: 63aad7eb-26ee-41d2-90d4-65fdcf0f182a
 keywords:
-- LM_GETIDEALSIZE di windows del messaggio
+- LM_GETIDEALSIZE di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 761fb5f6e5f7a2e2e9b1b9cc862b9a8f2c0fcd1f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 035a919aabeb5d07587c7d9e4fc97e5edc728de4ec8fc476448dca62658f1ce3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958375"
 ---
 # <a name="lm_getidealsize-message"></a>Messaggio \_ LM GETIDEALSIZE
 
@@ -52,8 +52,8 @@ Intero che rappresenta l'altezza preferita del testo del collegamento, in pixel.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>                                        |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/>                                  |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                  |
 | Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 

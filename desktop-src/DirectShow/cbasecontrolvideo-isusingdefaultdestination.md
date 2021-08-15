@@ -1,7 +1,7 @@
 ---
-description: Il metodo IsUsingDefaultDestination determina se il renderer utilizza la finestra di destinazione predefinita.
+description: Il metodo IsUsingDefaultDestination determina se il renderer usa la finestra di destinazione predefinita.
 ms.assetid: 0b956575-4cf0-4f1f-9223-bb1ec3ae8b10
-title: Metodo CBaseControlVideo. IsUsingDefaultDestination (Ctlutil. h)
+title: Metodo CBaseControlVideo.IsUsingDefaultDestination (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 88168442cf741e5997c2b66fc4b83bf8205e694f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf254ec89cc6804af86c98abaaa0c53ae5f76a25766391529ca4de85bee7d084
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955220"
 ---
-# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>CBaseControlVideo. IsUsingDefaultDestination, metodo
+# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>Metodo CBaseControlVideo.IsUsingDefaultDestination
 
-Il `IsUsingDefaultDestination` metodo determina se il renderer utilizza la finestra di destinazione predefinita.
+Il `IsUsingDefaultDestination` metodo determina se il renderer usa la finestra di destinazione predefinita.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK se si utilizza la destinazione predefinita; in caso contrario, restituisce \_ false.
+Restituisce S \_ OK se si usa la destinazione predefinita; in caso contrario, restituisce S \_ FALSE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce \_ OK se si utilizza la destinazione predefinita; in caso contrario,
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Ctlutil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Ctlutil.h (include Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

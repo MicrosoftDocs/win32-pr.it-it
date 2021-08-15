@@ -1,19 +1,19 @@
 ---
-description: Nell'esempio seguente viene usata la funzione GetFileTime ha provocato per recuperare l'ora dell'ultima scrittura di un file. Converte l'ora nell'ora locale in base alle impostazioni correnti del fuso orario e crea una stringa di data e ora che può essere visualizzata all'utente.
+description: L'esempio seguente usa la funzione GetFileTime per recuperare l'ora dell'ultima scrittura per un file. Converte l'ora nell'ora locale in base alle impostazioni del fuso orario corrente e crea una stringa di data e ora che può essere visualizzata all'utente.
 ms.assetid: 54509a35-fa6a-4ee6-90f8-36c9ef55e1bc
-title: Recupero del tempo di Last-Write
+title: Recupero dell'ora Last-Write tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2332a55744eda1ea93853e6967f0cf1b4d45046d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92bc6176a622ae2c2ef89b4b0b3ca4e900cb85a9e630d66c6080e35d5eb9e2e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118884978"
 ---
-# <a name="retrieving-the-last-write-time"></a>Recupero del tempo di Last-Write
+# <a name="retrieving-the-last-write-time"></a>Recupero dell'ora Last-Write tempo
 
-Nell'esempio seguente viene usata la funzione [**GetFileTime ha provocato**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) per recuperare l'ora dell'ultima scrittura di un file. Converte l'ora nell'ora locale in base alle impostazioni correnti del fuso orario e crea una stringa di data e ora che può essere visualizzata all'utente.
+L'esempio seguente usa la [**funzione GetFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) per recuperare l'ora dell'ultima scrittura per un file. Converte l'ora nell'ora locale in base alle impostazioni del fuso orario corrente e crea una stringa di data e ora che può essere visualizzata all'utente.
 
 
 ```C++

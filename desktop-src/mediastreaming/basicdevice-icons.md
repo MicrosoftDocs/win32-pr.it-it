@@ -1,11 +1,11 @@
 ---
-title: Proprietà BasicDevice. icons
+title: BasicDevice.Icons - proprietà
 description: Ottiene un vettore di interfacce IDeviceIcon.
 ms.assetid: 54933FD0-27A6-48D8-A49A-200AD9214B9A
 keywords:
-- API di streaming multimediale delle proprietà delle icone
-- API di streaming multimediale proprietà icone, interfaccia BasicDevice
-- API di streaming multimediale dell'interfaccia BasicDevice, proprietà icons
+- Proprietà Icons API Streaming multimediale
+- Proprietà Icons API Streaming multimediale, interfaccia BasicDevice
+- Interfaccia BasicDevice API Streaming multimediale, proprietà Icons
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdd0235a2b07ea86cbace87defb92f44d6b42315
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9807c41680c042ee74b2ddc659ad1558dd13ff8b4000d08cfa0591768c301bb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104398996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554661"
 ---
-# <a name="basicdeviceicons-property"></a>Proprietà BasicDevice. icons
+# <a name="basicdeviceicons-property"></a>BasicDevice.Icons - proprietà
 
-Ottiene un vettore di interfacce [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .
+Ottiene un vettore [**di interfacce IDeviceIcon.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon)
 
 Questa proprietà è di sola lettura.
 
@@ -33,7 +33,7 @@ Questa proprietà è di sola lettura.
 
 ```C++
 HRESULT get_Icons(
-  [out] IVector< IDeviceIcon > **value
+  [out] IVector< IDeviceIcon > **value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_Icons(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Raccolta enumerabile di puntatori dell'interfaccia [**IDeviceIcon**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon) .
+Raccolta enumerabile di [**puntatori a interfaccia IDeviceIcon.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon)
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -50,6 +50,6 @@ Raccolta enumerabile di puntatori dell'interfaccia [**IDeviceIcon**](/previous-v
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

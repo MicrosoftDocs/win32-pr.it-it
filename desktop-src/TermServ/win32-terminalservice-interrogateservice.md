@@ -1,12 +1,12 @@
 ---
-title: Metodo InterrogaeService della classe Win32_Service (Servizi Desktop remoto)
-description: 'Metodo InterrogaeService della classe Win32_Service (Servizi Desktop remoto): richiede che il servizio a cui si fa riferimento aggiornerà lo stato a Service Manager.'
+title: Metodo InterrogateService della classe Win32_Service (Servizi Desktop remoto)
+description: 'Metodo InterrogateService della classe Win32_Service (Servizi Desktop remoto): richiede che il servizio a cui si fa riferimento aggiornerà lo stato a Service Manager.'
 ms.assetid: 7B572049-416E-4429-BD53-119FF570B2D8
 ms.tgt_platform: multiple
 keywords:
-- Metodo InterrogaeService Servizi Desktop remoto
-- Il metodo InterrogaeService Servizi Desktop remoto , Win32_Service classe
-- Win32_Service classe Servizi Desktop remoto , metodo InterrogaeService
+- Metodo InterrogateService Servizi Desktop remoto
+- Metodo InterrogateService Servizi Desktop remoto , Win32_Service classe
+- Win32_Service classe Servizi Desktop remoto metodo , InterrogateService
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 850953b210ea11b9dd1000326d6793e3651ce538
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 012229ccb8cd259db6ec649717aaea5ef6c4ba94880dd01b24b6be91d7b9bfc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422181"
 ---
-# <a name="interrogateservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo InterrogaeService della Win32_Service classe (Servizi Desktop remoto)
+# <a name="interrogateservice-method-of-the-win32_service-class-remote-desktop-services"></a>Metodo InterrogateService della classe Win32_Service (Servizi Desktop remoto)
 
-Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **InterrogaeService** richiede che il servizio a cui si fa riferimento aggiornerà lo stato a Service Manager.
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **InterrogateService** richiede che il servizio a cui si fa riferimento aggiornerà lo stato a Service Manager.
 
 Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
@@ -45,7 +45,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, [**vedere Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum.**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum) Per i valori **HRESULT** generali, vedere [Codici di errore di sistema.](/windows/desktop/Debug/system-error-codes)
+Restituisce uno dei valori elencati nell'elenco seguente o qualsiasi altro valore per indicare un errore. Per altri codici di errore, vedere [**Costanti di errore WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Per i valori **HRESULT** generali, vedere [Codici di errore di sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ La richiesta non è supportata.
 **2**
 </dt> <dd>
 
-L'utente non aveva l'accesso necessario.
+L'utente non dispone dell'accesso necessario.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Il codice di controllo richiesto non è valido o non è accettabile per il servi
 **5**
 </dt> <dd>
 
-Il codice di controllo richiesto non può essere inviato al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State)** è uguale a 0, 1 o 2.
+Impossibile inviare il codice di controllo richiesto al servizio perché lo stato del servizio ([**Win32 \_ BaseService**](/windows/desktop/CIMWin32Prov/win32-baseservice).**State** ) è uguale a 0, 1 o 2.
 
 </dd> <dt>
 

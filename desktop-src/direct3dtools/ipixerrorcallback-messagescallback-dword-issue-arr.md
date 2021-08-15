@@ -1,10 +1,10 @@
 ---
-description: Callback che invia una notifica all'host dei messaggi restituiti dalla richiesta associata.
+description: Callback che notifica all'host dei messaggi restituiti dalla richiesta associata.
 MS-HAID: vspixengine.IPixErrorCallback\_MessagesCallback\_DWORD\_Issue\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Metodo IPixErrorCallback:: MessagesCallback'
+title: Metodo IPixErrorCallback::MessagesCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 55343F63-BB58-4F57-884D-CEFE8AB57A27
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2b95a95a6ef472f2603bfa6b21c85659634074a1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: dc3ac06652c76838f246df006fbea78430979761ed92cf63bda0d6cf6c141ff2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "106303950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985881"
 ---
-# <a name="span-idvspixengineipixerrorcallback_messagescallback_dword_issue_arrspanipixerrorcallbackmessagescallback-method"></a><span id="vspixengine.ipixerrorcallback_messagescallback_dword_issue_arr"></span>Metodo IPixErrorCallback:: MessagesCallback
+# <a name="span-idvspixengineipixerrorcallback_messagescallback_dword_issue_arrspanipixerrorcallbackmessagescallback-method"></a><span id="vspixengine.ipixerrorcallback_messagescallback_dword_issue_arr"></span>Metodo IPixErrorCallback::MessagesCallback
 
-Callback che invia una notifica all'host dei messaggi restituiti dalla richiesta associata.
+Callback che notifica all'host dei messaggi restituiti dalla richiesta associata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,19 +40,19 @@ HRESULT MessagesCallback(
 
 ## <a name="parameters"></a>Parametri
 
-*conteggio*   
+*Conteggio*   
 Numero di messaggi.
 
-*\_messaggi count0*   
+*count0 \_ messaggi*   
 Messaggi.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vedere anche
 

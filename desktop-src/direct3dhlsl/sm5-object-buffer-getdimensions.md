@@ -1,6 +1,6 @@
 ---
-title: 'Funzione buffer:: GetDimensions'
-description: 'Ottiene la lunghezza del buffer. | Funzione buffer:: GetDimensions'
+title: Funzione Buffer::GetDimensions
+description: Ottiene la lunghezza del buffer. | Funzione Buffer::GetDimensions
 ms.assetid: 704890e8-43e4-4e72-b7e2-eeef331bef1c
 keywords:
 - Funzione GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c7f1ad1da7600e65d7442c1b2431535e2fdcf38c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d7c56d673e533b4626a57669cf884d80da63d7848cfc7a3e248762f6c4f42088
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104981090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986101"
 ---
-# <a name="buffergetdimensions-function"></a>Funzione buffer:: GetDimensions
+# <a name="buffergetdimensions-function"></a>Funzione Buffer::GetDimensions
 
 Ottiene la lunghezza del buffer.
 
@@ -36,7 +36,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Dim* \[ out\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -55,7 +55,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -70,7 +70,7 @@ Questa funzione è supportata per i tipi di shader seguenti:
 [Buffer](sm5-object-buffer.md)
 </dt> <dt>
 
-[Modello Shader 5](d3d11-graphics-reference-sm5.md)
+[Modello shader 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

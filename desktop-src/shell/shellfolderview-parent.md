@@ -1,7 +1,7 @@
 ---
-description: Proprietà ShellFolderView. Parent
+description: ShellFolderView.Parent - proprietà
 ms.assetid: 89be7f99-e428-4d02-8b90-33c6309afc9a
-title: Proprietà ShellFolderView. Parent
+title: ShellFolderView.Parent - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 19568cf9c231b157aa6913d2bb5c21bd518ba700
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 426b26c66f48bd7aec3a5af933d8f9731fd92e87309c001b600f8115d1632035
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968460"
 ---
-# <a name="shellfolderviewparent-property"></a>Proprietà ShellFolderView. Parent
+# <a name="shellfolderviewparent-property"></a>ShellFolderView.Parent - proprietà
 
 Questa proprietà non è implementata.
 

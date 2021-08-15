@@ -1,7 +1,7 @@
 ---
-description: Costruisce modelli di bit utilizzati per identificare i formati delle coordinate di trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
+description: Costruisce modelli di bit usati per identificare i formati delle coordinate della trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
 ms.assetid: c3076d7c-7935-40ee-b513-7ff6551a535f
-title: D3DFVF_TEXCOORDSIZEN (D3d9types. h)
+title: D3DFVF_TEXCOORDSIZEN (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 58288667954e3414aa3d8ae1550e02e7216ffb4e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5a39827f94f0415d6235797489f6e18c5fb515a5e5c36c0f26153b7ba8303ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988911"
 ---
-# <a name="d3dfvf_texcoordsizen"></a>\_TEXCOORDSIZEN D3DFVF
+# <a name="d3dfvf_texcoordsizen"></a>D3DFVF \_ TEXCOORDSIZEN
 
-Costruisce modelli di bit utilizzati per identificare i formati delle coordinate di trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
+Costruisce modelli di bit usati per identificare i formati delle coordinate della trama all'interno di una descrizione FVF. I risultati di queste macro possono essere combinati all'interno di una descrizione FVF usando l'operatore OR.
 
 ``` syntax
 #define D3DFVF_TEXCOORDSIZEN(CoordIndex) 
@@ -38,7 +38,7 @@ Costruisce modelli di bit utilizzati per identificare i formati delle coordinate
 
 | Parametro                                                                                                    | Descrizione                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valore che identifica il set di coordinate di trama a cui si applicano le dimensioni della coordinata di trama (1-, 2-, 3-o 4Dimensional). <br/> |
+| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valore che identifica il set di coordinate di trama a cui si applica la dimensione delle coordinate della trama (1, 2, 3 o 4dimensionale). <br/> |
 
 
 
@@ -46,7 +46,7 @@ Costruisce modelli di bit utilizzati per identificare i formati delle coordinate
 
 ## <a name="remarks"></a>Commenti
 
-Le **macro \_ TEXCOORDSIZEN D3DFVF** utilizzano le costanti seguenti.
+Le macro **D3DFVF \_ TEXCOORDSIZEN** usano le costanti seguenti.
 
 
 ```C++
@@ -58,7 +58,7 @@ Le **macro \_ TEXCOORDSIZEN D3DFVF** utilizzano le costanti seguenti.
 
 
 
-La descrizione di FVF seguente identifica un formato di vertice con una posizione; normale; colori diffusi e speculari; e due set di coordinate di trama. Il primo set di coordinate di trama include un singolo elemento e il secondo set include due elementi:
+La descrizione FVF seguente identifica un formato vertice con una posizione. un normale; colori diffusi e speculari; e due set di coordinate di trama. Il primo set di coordinate di trama include un singolo elemento e il secondo include due elementi:
 
 
 ```C++
@@ -78,7 +78,7 @@ DWORD dwFVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

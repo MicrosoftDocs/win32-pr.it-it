@@ -1,7 +1,7 @@
 ---
 description: Ridimensiona un valore di colore.
 ms.assetid: 35e8adee-7ce5-4db5-8276-f0e408748e78
-title: Funzione D3DXColorScale (D3dx9math. h)
+title: Funzione D3DXColorScale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 74020f302a26162df1e42cb4c9f020af3f64e59c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95ae2ea24547f566a6da014f408dbfbce5be3112a61688f69e125e91d6085493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119241421"
 ---
-# <a name="d3dxcolorscale-function"></a>D3DXColorScale (funzione)
+# <a name="d3dxcolorscale-function"></a>Funzione D3DXColorScale
 
 Ridimensiona un valore di colore.
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorScale(
 
 <dl> <dt>
 
-*broncio* \[ in uscita\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
+Puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che è il risultato dell'operazione.
 
 </dd> <dt>
 
-*computer* \[ in\]
+*pC* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) di origine.
+Puntatore a una [**struttura D3DXCOLOR di**](d3dxcolor.md) origine.
 
 </dd> <dt>
 
 *s* \[ in\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Fattore di scala. Ridimensiona il colore, considerandolo come un vettore 4D. Non sono previsti limiti per il valore di s. Se s è 1, il colore risultante è quello originale.
+Fattore di scala. Ridimensiona il colore, trattandolo come un vettore 4D. Non sono previsti limiti per il valore di s. Se s è 1, il colore risultante è il colore originale.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Fattore di scala. Ridimensiona il colore, considerandolo come un vettore 4D. Non
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Questa funzione restituisce un puntatore a una struttura [**D3DXCOLOR**](d3dxcolor.md) che corrisponde al valore di colore ridimensionato.
+Questa funzione restituisce un puntatore a [**una struttura D3DXCOLOR**](d3dxcolor.md) che rappresenta il valore del colore ridimensionato.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore restituito per questa funzione corrisponde al valore restituito nel parametro broncio. In questo modo, la funzione **D3DXColorScale** può essere utilizzata come parametro per un'altra funzione.
+Il valore restituito per questa funzione è lo stesso valore restituito nel parametro pOut. In questo modo, la **funzione D3DXColorScale** può essere usata come parametro per un'altra funzione.
 
-Questa funzione calcola il valore del colore scalato moltiplicando i componenti del colore della struttura [**D3DXCOLOR**](d3dxcolor.md) in base al fattore di scala specificato, come illustrato nell'esempio seguente.
+Questa funzione calcola il valore del colore ridimensionato moltiplicando i componenti di colore della struttura [**D3DXCOLOR**](d3dxcolor.md) per il fattore di scala specificato, come illustrato nell'esempio seguente.
 
 
 ```
@@ -94,8 +94,8 @@ pOut->r = pC->r * s;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

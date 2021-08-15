@@ -1,5 +1,5 @@
 ---
-description: Modifica la modalità di avvio di un \_ servizio Win32 SystemDriver.
+description: Modifica la modalità di avvio di un servizio \_ SystemDriver Win32.
 ms.assetid: 34f4e0ac-d8a0-4be7-8c84-0252e50db441
 ms.tgt_platform: multiple
 title: Metodo ChangeStartMode della classe Win32_SystemDriver
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: edb6dfc9d745f5e408871246b581e6fab7eb72d3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2e2067ae7da8a6f112671237ebc7f77dd26644c5e0b2fa0b77a443c160468581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104523497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959130"
 ---
-# <a name="changestartmode-method-of-the-win32_systemdriver-class"></a>Metodo ChangeStartMode della \_ classe SystemDriver Win32
+# <a name="changestartmode-method-of-the-win32_systemdriver-class"></a>Metodo ChangeStartMode della classe SystemDriver Win32 \_
 
-Il metodo della [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica la modalità di avvio di un servizio [**\_ SystemDriver Win32**](win32-systemdriver.md) .
+Il metodo della classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **ChangeStartMode** modifica la modalità di avvio di un [**servizio \_ SystemDriver Win32.**](win32-systemdriver.md)
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,16 +42,16 @@ uint32 ChangeStartMode(
 
 <dl> <dt>
 
-*StartMode* \[ in\]
+*StartMode* \[ Pollici\]
 </dt> <dd>
 
-Modalità di avvio del servizio di base di Windows.
+Modalità di avvio del Windows di base.
 
 <dt>
 
 <span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>
 
-<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>Avvio **avvio** ("avvio")
+<span id="Boot_Start"></span><span id="boot_start"></span><span id="BOOT_START"></span>**Avvio ("Avvio")**
 
 
 </dt> <dd>
@@ -62,7 +62,7 @@ Driver di dispositivo avviato dal caricatore del sistema operativo. Questo valor
 
 <span id="System"></span><span id="system"></span><span id="SYSTEM"></span>
 
-<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("sistema")
+<span id="System"></span><span id="system"></span><span id="SYSTEM"></span>**Sistema** ("Sistema")
 
 
 </dt> <dd>
@@ -73,7 +73,7 @@ Driver di dispositivo avviato dal processo di inizializzazione del sistema opera
 
 <span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>
 
-<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("automatico")
+<span id="Auto_Start"></span><span id="auto_start"></span><span id="AUTO_START"></span>**Avvio automatico** ("Automatico")
 
 
 </dt> <dd>
@@ -89,13 +89,13 @@ Servizio da avviare automaticamente da Gestione controllo servizi durante l'avvi
 
 </dt> <dd>
 
-Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il metodo [**StartService**](startservice-method-in-class-win32-systemdriver.md) .
+Servizio che deve essere avviato da Gestione controllo servizi quando un processo chiama il [**metodo StartService.**](startservice-method-in-class-win32-systemdriver.md)
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("disabilitato")
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Disabilitato** ("Disabilitato")
 
 
 </dt> <dd>
@@ -106,11 +106,11 @@ Servizio che non può più essere avviato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il servizio è stato modificato correttamente, 1 (uno) se la richiesta non è supportata e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il servizio è stato modificato correttamente, 1 (uno) se la richiesta non è supportata e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
-**Operazione riuscita** (0)
+**Operazione** riuscita (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -122,10 +122,10 @@ Restituisce un valore pari a 0 (zero) se il servizio è stato modificato corrett
 **Servizi dipendenti in esecuzione** (3)
 </dt> <dt>
 
-**Controllo del servizio non valido** (4)
+**Controllo del servizio non** valido (4)
 </dt> <dt>
 
-Il **servizio non può accettare il controllo** (5)
+**Il servizio non può accettare il controllo** (5)
 </dt> <dt>
 
 **Servizio non attivo** (6)
@@ -146,7 +146,7 @@ Il **servizio non può accettare il controllo** (5)
 **Database del servizio bloccato** (11)
 </dt> <dt>
 
-**Dipendenza servizio eliminata** (12)
+**Dipendenza del servizio eliminata** (12)
 </dt> <dt>
 
 **Errore di dipendenza del servizio** (13)
@@ -161,25 +161,25 @@ Il **servizio non può accettare il controllo** (5)
 **Servizio contrassegnato per l'eliminazione** (16)
 </dt> <dt>
 
-**Servizio senza thread** (17)
+**Thread senza servizio** (17)
 </dt> <dt>
 
-**Stato dipendenza circolare** (18)
+**Dipendenza circolare dello stato** (18)
 </dt> <dt>
 
-**Stato nome duplicato** (19)
+**Nome duplicato stato** (19)
 </dt> <dt>
 
-**Stato nome non valido** (20)
+**Stato Nome non valido** (20)
 </dt> <dt>
 
-**Stato parametro non valido** (21)
+**Parametro stato non valido** (21)
 </dt> <dt>
 
-**Stato account del servizio non valido** (22)
+**Stato Account del servizio non valido** (22)
 </dt> <dt>
 
-Il **servizio di stato esiste** (23)
+**Il servizio di stato esiste** (23)
 </dt> <dt>
 
 **Servizio già sospeso** (24)
@@ -197,7 +197,7 @@ Il **servizio di stato esiste** (23)
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -209,7 +209,7 @@ Il **servizio di stato esiste** (23)
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_SystemDriver Win32**](win32-systemdriver.md)
+[**Win32 \_ SystemDriver**](win32-systemdriver.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Il metodo seTYPE specifica il tipo principale.
+description: Il metodo SetType specifica il tipo principale.
 ms.assetid: 3fd93d5e-73ea-453e-8f08-652d5a81239f
-title: Metodo CMediaType. seTYPE (mtype. h)
+title: Metodo CMediaType.SetType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfcf6ca634bce92701eb89f26dcfb6bdfb51f698
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37d035202d4674da11016620dc3c3d1ba3ab99f6ca514b9581f7dd2e4d9592d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954390"
 ---
-# <a name="cmediatypesettype-method"></a>Metodo CMediaType. seTYPE
+# <a name="cmediatypesettype-method"></a>Metodo CMediaType.SetType
 
 Il `SetType` metodo specifica il tipo principale.
 
@@ -42,10 +42,10 @@ void SetType(
 
 <dl> <dt>
 
-*pType* 
+*ptype* 
 </dt> <dd>
 
-Puntatore a un **GUID** che specifica il tipo principale.
+Puntatore a **un GUID** che specifica il tipo principale.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Mtype. h (include Streams. h)</dt> </dl>                                                                                     |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Mtype.h (includere Flussi.h)</dt> </dl>                                                                                     |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

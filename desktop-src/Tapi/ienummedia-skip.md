@@ -4,16 +4,16 @@ ms.assetid: 825972c9-5303-4c5a-9475-dc67c185af91
 title: Metodo IEnumMedia::Skip (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d8c600a201d6800fcb04dba5f208fd5cb810078
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4e17dadb1db502dfa76645d0142b98da3a030efb9e391a029985460c89526d37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865775"
 ---
 # <a name="ienummediaskip-method"></a>Metodo IEnumMedia::Skip
 
-\[ I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
 Il **metodo Skip** ignora il successivo numero specificato di elementi nella sequenza di enumerazione.
 
@@ -47,7 +47,7 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                             | Descrizione                                           |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>    | Numero di elementi *ignorati.*<br/>     |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Il numero di elementi ignorati è *celt*.<br/>     |
 | <dl> <dt>**S \_ FALSE**</dt> </dl> | Il numero di elementi ignorati non è *stato cel*.<br/> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: d9b39661-5dcf-479f-94c7-6b1ddc00464b
 title: System.Contact.Webpage2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 252b0a7e443c721d18ddfdca25bf0d1213d7fdd1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e9191141e9fd07bd708ae1daf7ec1f78a59e5677e1ab1787ae0fc99439da5227
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970520"
 ---
 # <a name="systemcontactwebpage2"></a>System.Contact.Webpage2
 

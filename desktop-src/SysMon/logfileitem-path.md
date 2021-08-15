@@ -1,11 +1,11 @@
 ---
-title: Proprietà Path LogFileItem
+title: Proprietà Path di LogFileItem
 description: Recupera il percorso del file di log.
 ms.assetid: 948d28d6-0445-4452-ad39-9981f99d3bf6
 keywords:
 - Proprietà Path SysMon
 - Proprietà Path SysMon, interfaccia LogFileItem
-- Interfaccia LogFileItem SysMon, proprietà Path
+- Interfaccia LogFileItem SysMon , proprietà Path
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d503df9f3c992e66ee822690bf417ee54fdda3f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fca514cb88f60aef7b04605e6d6c2177c7fd3f89ce354cb2e530ec57398a6bd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883233"
 ---
-# <a name="logfileitempath-property"></a>LogFileItem: proprietà:P ATH
+# <a name="logfileitempath-property"></a>Proprietà LogFileItem::P ath
 
 Recupera il percorso del file di log.
 
@@ -49,9 +49,9 @@ Percorso del file di log.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Percorso del file di log.
 [**LogFileItem**](logfileitem.md)
 </dt> <dt>
 
-LogFiles. Add
+LogFiles.Add
 </dt> </dl>
 
  

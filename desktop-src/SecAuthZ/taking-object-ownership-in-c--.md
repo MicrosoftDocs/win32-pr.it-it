@@ -1,21 +1,21 @@
 ---
-description: Nell'esempio seguente viene tentato di modificare l'elenco DACL di un oggetto file assumendo la proprietà di tale oggetto.
+description: Nell'esempio seguente si tenta di modificare l'elenco DACL di un oggetto file assumendo la proprietà di tale oggetto.
 ms.assetid: 0b309ac9-177d-425f-8b78-71fe73e41979
-title: Assunzione della proprietà di un oggetto in C++
+title: Proprietà degli oggetti in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae43c28cb55193d43a15ed08f5905defded3dc2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0fba581c449309dcfbfaeba6ca207b58f26f966088e43b99717bbd4fb89323f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413301"
 ---
-# <a name="taking-object-ownership-in-c"></a>Assunzione della proprietà di un oggetto in C++
+# <a name="taking-object-ownership-in-c"></a>Proprietà degli oggetti in C++
 
-Nell'esempio seguente viene tentato di modificare l'elenco DACL di un oggetto file assumendo la proprietà di tale oggetto. Questa operazione avrà esito positivo solo se il chiamante ha \_ accesso alla DAC in scrittura all'oggetto o è il proprietario dell'oggetto. Se il tentativo iniziale di modificare l'elenco DACL ha esito negativo, un amministratore può assumere la proprietà dell'oggetto. Per concedere alla proprietà dell'amministratore, l'esempio Abilita il \_ privilegio se Take \_ ownership \_ Name nel token di [*accesso*](/windows/desktop/SecGloss/a-gly)del chiamante e rende il proprietario dell'oggetto il gruppo Administrators del sistema locale. Se il chiamante è un membro del gruppo Administrators, il codice sarà in grado di modificare il DACL dell'oggetto.
+Nell'esempio seguente si tenta di modificare l'elenco DACL di un oggetto file assumendo la proprietà di tale oggetto. Questa operazione avrà esito positivo solo se il chiamante dispone dell'accesso DAC WRITE all'oggetto o \_ è il proprietario dell'oggetto. Se il tentativo iniziale di modificare l'elenco DACL ha esito negativo, un amministratore può assumere la proprietà dell'oggetto. Per assegnare la proprietà all'amministratore, l'esempio abilita il privilegio edizione Standard TAKE OWNERSHIP NAME nel token di accesso del chiamante e imposta il gruppo Administrators del sistema locale come proprietario \_ \_ \_ dell'oggetto. [](/windows/desktop/SecGloss/a-gly) Se il chiamante è membro del gruppo Administrators, il codice sarà in grado di modificare l'elenco DACL dell'oggetto.
 
-Per abilitare e disabilitare i privilegi, in questo esempio viene usata la funzione di esempio seprivilege descritta in [Abilitazione e disabilitazione dei privilegi in C++](enabling-and-disabling-privileges-in-c--.md).
+Per abilitare e disabilitare i privilegi, in questo esempio viene utilizzata la funzione di esempio SetPrivilege descritta in Abilitazione e disabilitazione [dei privilegi in C++.](enabling-and-disabling-privileges-in-c--.md)
 
 
 ```C++

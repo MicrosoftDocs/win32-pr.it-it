@@ -1,19 +1,19 @@
 ---
-description: Questa sezione è un elenco alfabetico per le strutture del Call Center TAPI.
+description: Questa sezione è un elenco alfabetico delle strutture dei call center TAPI.
 ms.assetid: 657008b1-2352-40c8-a38b-6bfffeb47cc0
-title: Strutture del Call Center
+title: Strutture del call center
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0397244e504a5c5884f235c0e662e383fd6e44f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d955deb2c56607980504601abad2f143525f4ccb3dd7e9a90d246356944c6f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118870753"
 ---
-# <a name="call-center-structures"></a>Strutture del Call Center
+# <a name="call-center-structures"></a>Strutture del call center
 
-Questa sezione è un elenco alfabetico per le strutture del Call Center TAPI.
+Questa sezione è un elenco alfabetico delle strutture dei call center TAPI.
 
 -   [**LINEAGENTACTIVITYENTRY**](/windows/desktop/api/Tapi/ns-tapi-lineagentactivityentry)
 -   [**LINEAGENTACTIVITYLIST**](/windows/desktop/api/Tapi/ns-tapi-lineagentactivitylist)

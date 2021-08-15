@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. SpeedRef.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.SpeedRef.
 ms.assetid: 45fea6be-1e63-4244-a93d-d446e315ddd4
-title: Criteri per i metadati delle foto di System. GPS. SpeedRef
+title: Criteri dei metadati delle foto System.GPS.SpeedRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c454a016dd77345c0a85e0ca3df1ae52694bd81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c7b60a0c8decaf5ecc30f9017a0aadc61bb9fe4814240fb7ab2e022d6a2873f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549491"
 ---
-# <a name="systemgpsspeedref-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. GPS. SpeedRef
+# <a name="systemgpsspeedref-photo-metadata-policy"></a>Criteri dei metadati delle foto System.GPS.SpeedRef
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. SpeedRef](../properties/props-system-gps-speedref.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.SpeedRef.](../properties/props-system-gps-speedref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ GPS \_ SpeedRef
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-VT \_ LPWSTR è preferibile, ma \_ anche VT LPSTR è accettato.
+VT \_ LPWSTR è preferibile, ma viene accettato anche \_ VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 12} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=12} | ascii       |
 | 2     | /xmp/exif:GPSSpeedRef     | unicode     |
 
 
@@ -60,7 +60,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 12} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=12} | ascii       |
 | 2     | /xmp/exif:GPSSpeedRef     | unicode     |
 
 
@@ -73,7 +73,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      | Formato del disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 12} |             |
+| 1     | /app1/ifd/gps/{ushort=12} |             |
 | 2     | /xmp/exif:gpsspeedref     |             |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                      |         |
 |-------|---------------------------|---------|
-| 1     | /IFD/GPS/{ushort = 12}      | ascii   |
+| 1     | /ifd/gps/{ushort=12}      | ascii   |
 | 2     | /ifd/xmp/exif:GPSSpeedRef | unicode |
 
 
@@ -101,7 +101,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      | Formato disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 12}      | ascii       |
+| 1     | /ifd/gps/{ushort=12}      | ascii       |
 | 2     | /ifd/xmp/exif:GPSSpeedRef | unicode     |
 
 
@@ -114,7 +114,7 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                      |
 |-------|---------------------------|
-| 1     | /IFD/GPS/{ushort = 12}      |
+| 1     | /ifd/gps/{ushort=12}      |
 | 2     | /ifd/xmp/exif:gpsspeedref |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. SpeedRef](../properties/props-system-gps-speedref.md)
+[System.GPS.SpeedRef](../properties/props-system-gps-speedref.md)
 </dt> </dl>
 
  

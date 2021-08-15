@@ -1,7 +1,7 @@
 ---
-description: Avvia un download di dati al chiamante.
+description: Avvia un download di dati per il chiamante.
 ms.assetid: e639fabb-2c13-4009-affa-1c2b06c0d4c8
-title: Metodo IWiaTransfer::D ownload (WIA. h)
+title: Metodo IWiaTransfer::D ownload (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 2863915b850588d4db018693d9081ed2907d644a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 039b7dd4579419bac744a07bbc6ddd55c4b0b2e2e713340bf256fdb95d8fc071
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450211"
 ---
-# <a name="iwiatransferdownload-method"></a>IWiaTransfer::D Metodo ownload
+# <a name="iwiatransferdownload-method"></a>Metodo IWiaTransfer::D ownload
 
-Avvia un download di dati al chiamante.
+Avvia un download di dati per il chiamante.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT Download(
 
 <dl> <dt>
 
-*è* \[ in\]
+*lFlags* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-Attualmente non usato. Deve essere impostato su zero.
+Attualmente inutilizzato. Deve essere impostato su zero.
 
 </dd> <dt>
 
-*pIWiaTransferCallback* \[ in\]
+*pIWiaTransferCallback* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Specifica un puntatore all'interfaccia [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) del chiamante.
+Specifica un puntatore all'interfaccia [**IWiaTransferCallback del**](-wia-iwiatransfercallback.md) chiamante.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Specifica un puntatore all'interfaccia [_ *IWiaTransferCallback* *](-wia-iwiatra
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -75,11 +75,11 @@ Se viene scaricata una cartella, vengono trasferiti anche tutti gli elementi fig
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

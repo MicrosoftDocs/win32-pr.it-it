@@ -1,7 +1,7 @@
 ---
-description: "Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazioni generati dalle chiamate a ID3DXAnimationController:: AdvanceTime."
+description: Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazione generati dalle chiamate a ID3DXAnimationController::AdvanceTime.
 ms.assetid: 5a24ac96-2e68-49c0-acf6-8715d87b202d
-title: Interfaccia ID3DXAnimationCallbackHandler (D3dx9anim. h)
+title: Interfaccia ID3DXAnimationCallbackHandler (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,32 +14,32 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fb3b58c58c6a0bd71924fb207170a177797b9f84
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2eeec6fa26504d30588c5e148c07c6c628cc3ce752a2964d2dbefb3059040236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987981"
 ---
 # <a name="id3dxanimationcallbackhandler-interface"></a>Interfaccia ID3DXAnimationCallbackHandler
 
-Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazioni generati dalle chiamate a [**ID3DXAnimationController:: AdvanceTime**](id3dxanimationcontroller--advancetime.md).
+Un'applicazione implementa questa interfaccia per gestire i callback nei set di animazioni generati dalle chiamate a [**ID3DXAnimationController::AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ID3DXAnimationCallbackHandler** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ID3DXAnimationCallbackHandler** dispone anche di questi tipi di membri:
+**L'interfaccia ID3DXAnimationCallbackHandler** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ID3DXAnimationCallbackHandler** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ID3DXAnimationCallbackHandler** dispone di questi metodi.
+**L'interfaccia ID3DXAnimationCallbackHandler** include questi metodi.
 
 
 
 | Metodo                                                                  | Descrizione                                                                                                                                                                                                                                        |
 |:------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**HandleCallback**](id3dxanimationcallbackhandler--handlecallback.md) | L'applicazione implementa questo metodo. Questo metodo viene chiamato quando si verifica un callback per un set di animazioni in una delle tracce durante una chiamata a [**ID3DXAnimationController:: AdvanceTime**](id3dxanimationcontroller--advancetime.md).<br/> |
+| [**HandleCallback**](id3dxanimationcallbackhandler--handlecallback.md) | L'applicazione implementa questo metodo. Questo metodo viene chiamato quando si verifica un callback per un set di animazioni in una delle tracce durante una chiamata a [**ID3DXAnimationController::AdvanceTime.**](id3dxanimationcontroller--advancetime.md)<br/> |
 
 
 
@@ -63,8 +63,8 @@ typedef interface ID3DXAnimationCallbackHandler *LPD3DXANIMATIONCALLBACKHANDLER;
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

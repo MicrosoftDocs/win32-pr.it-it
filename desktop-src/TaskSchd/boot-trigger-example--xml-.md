@@ -1,6 +1,6 @@
 ---
 title: Esempio di trigger di avvio (XML)
-description: Il codice XML in questo esempio definisce un'attività che avvia il blocco note quando il sistema viene avviato.
+description: Il codice XML in questo esempio definisce un'attività che Blocco note all'avvio del sistema.
 ms.assetid: 6dd7155c-6163-4408-9cef-c313134beeb0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8f9f5ea10f92979b0798b12a6225f8ba74a38ee
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 75b4c9628da5ef56ec006faf9d7301661dfd0f76894ebb4f5f37cc1035d40f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104336037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118860320"
 ---
 # <a name="boot-trigger-example-xml"></a>Esempio di trigger di avvio (XML)
 
-Il codice XML in questo esempio definisce un'attività che avvia il blocco note quando il sistema viene avviato.
+Il codice XML in questo esempio definisce un'attività che Blocco note all'avvio del sistema.
 
-Per registrare un'attività definita in XML, è possibile usare la funzione [**ITaskFolder:: l'RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. l'RegisterTask**](taskfolder-registertask.md) per gli script) o lo strumento da riga di comando Schtasks.exe. Se si usa lo strumento Schtasks.exe (che si trova nella directory C: \\ Windows \\ System32), è possibile usare il comando seguente per registrare l'attività: **schtasks/create/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Per registrare un'attività definita in XML, è possibile usare la funzione [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) per lo scripting) o lo strumento Schtasks.exe da riga di comando. Se si usa lo strumento Schtasks.exe (disponibile nella directory C: Windows System32), è possibile usare il comando seguente per registrare l'attività: \\ \\ **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Per definire un'attività per avviare il blocco note all'avvio del sistema
+## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Per definire un'attività da avviare Blocco note all'avvio del sistema
 
-Nell'esempio XML seguente viene illustrato come definire un'attività con un'unica azione di esecuzione (avvio del blocco note), un singolo trigger di avvio che avvia l'attività quando viene avviato il sistema e diverse altre impostazioni di attività che influiscono sulla modalità di gestione dell'attività da parte del Utilità di pianificazione.
+L'esempio XML seguente illustra come definire un'attività con una singola azione di esecuzione (a partire da Blocco note), un trigger di avvio singolo che avvia l'attività all'avvio del sistema e diverse altre impostazioni di attività che influiscono sulla modalità di gestione dell'attività da parte del Utilità di pianificazione.
 
 
 ```XML
@@ -73,23 +73,23 @@ the system is booted.
 
 Di seguito sono riportati alcuni elementi importanti da tenere presenti quando si usa questo esempio.
 
--   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contiene le informazioni di registrazione relative all'attività.
--   [**Trigger**](taskschedulerschema-triggers-tasktype-element.md): definisce il trigger che avvia l'attività.
--   [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md): definisce il trigger di avvio. In questo caso vengono utilizzati solo due elementi figlio: i limiti di inizio e di fine che specificano quando il trigger viene attivato e disattivato.
+-   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md): contiene informazioni di registrazione sull'attività.
+-   [**Trigger:**](taskschedulerschema-triggers-tasktype-element.md)definisce il trigger che avvia l'attività.
+-   [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md): definisce il trigger di avvio. In questo caso vengono usati solo due elementi figlio: i limiti iniziale e finale che specificano quando il trigger viene attivato e disattivato.
 -   [**Principal**](taskschedulerschema-principal-principaltype-element.md): definisce il contesto di sicurezza in cui viene eseguita un'attività.
--   [**Impostazioni**](taskschedulerschema-settings-tasktype-element.md): definisce le impostazioni dell'attività utilizzate dal utilità di pianificazione per eseguire l'attività.
--   [**Actions**](taskschedulerschema-actions-tasktype-element.md): definisce le azioni eseguite dall'attività. In questo caso, viene eseguito il blocco note.
+-   [**Impostazioni**](taskschedulerschema-settings-tasktype-element.md): definisce le impostazioni dell'attività che l'Utilità di pianificazione usa per eseguire l'attività.
+-   [**Azioni**](taskschedulerschema-actions-tasktype-element.md): definisce le azioni eseguite dall'attività. In questo caso, eseguire Blocco note.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Uso della Utilità di pianificazione](using-the-task-scheduler.md)
+[Uso del Utilità di pianificazione](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

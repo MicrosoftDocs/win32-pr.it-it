@@ -1,9 +1,9 @@
 ---
-title: Proprietà Command. LabelDescription
+title: Command.LabelDescription - proprietà
 description: Rappresenta una descrizione dell'etichetta.
 ms.assetid: 6c683e9e-0742-466e-9fdd-3d29f8ccb9ff
 keywords:
-- Barra multifunzione di Windows Command. LabelDescription
+- Proprietà Command.LabelDescription Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f748425b4c8363feee737d18c750b3a1d91121b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9051b4f645744416f290906559e054405726f36f9616e8f38f3cfbae357137dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964210"
 ---
-# <a name="commandlabeldescription-property"></a>Proprietà Command. LabelDescription
+# <a name="commandlabeldescription-property"></a>Command.LabelDescription - proprietà
 
 Rappresenta una descrizione dell'etichetta.
 
@@ -61,27 +61,27 @@ facoltativo.
 
 Può verificarsi al massimo una volta per ogni [**comando**](windowsribbon-element-command.md).
 
-**Command. LabelDescription** può contenere un valore di *tipo xs: String* vincolato a qualsiasi sequenza di caratteri, inclusi gli spazi vuoti e i caratteri di interruzioni di riga.
+**Command.LabelDescription può** contenere un valore di *tipo xs:string* vincolato a qualsiasi sequenza di caratteri, inclusi spazi vuoti e caratteri di interruzione di riga.
 
 > [!Note]  
-> Usare il riferimento al carattere XML UCS (Universal Character Set) `&#xA;` per specificare un'interruzioni di riga.
+> Usare il riferimento ai caratteri XML del set di caratteri universali (UCS) `&#xA;` per specificare un'interruzione di riga.
 
  
 
-La lunghezza massima è unbounded.
+La lunghezza massima è illimitata.
 
-Se non viene specificato alcun valore per **Command. LabelDescription**, l'elemento figlio [**stringa**](windowsribbon-element-string.md) è obbligatorio.
+Se non viene specificato alcun valore per **Command.LabelDescription**, [**l'elemento**](windowsribbon-element-string.md) figlio String è obbligatorio.
 
 > [!Note]  
-> Se **Command. LabelDescription** contiene sia un elemento Value che un elemento figlio [**String**](windowsribbon-element-string.md) , la **stringa** avrà la precedenza.
+> Se **Command.LabelDescription contiene** sia un valore che un elemento figlio [**String,**](windowsribbon-element-string.md) **String** ha la precedenza.
 
  
 
-**Command. LabelDescription** supporta solo l'allineamento a sinistra.
+**Command.LabelDescription supporta** solo l'allineamento a sinistra.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un manifesto di comandi degli Appunti con diverse dichiarazioni **Command. LabelDescription** .
+L'esempio seguente mostra un manifesto dei comandi degli Appunti con varie **dichiarazioni Command.LabelDescription.**
 
 
 ```XML
@@ -155,8 +155,8 @@ Nell'esempio seguente viene illustrato un manifesto di comandi degli Appunti con
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -164,7 +164,7 @@ Nell'esempio seguente viene illustrato un manifesto di comandi degli Appunti con
 
 <dl> <dt>
 
-[Interfaccia utente \_ pkey \_ LabelDescription](windowsribbon-reference-properties-uipkey-labeldescription.md)
+[UI \_ PKEY \_ LabelDescription](windowsribbon-reference-properties-uipkey-labeldescription.md)
 </dt> </dl>
 
  

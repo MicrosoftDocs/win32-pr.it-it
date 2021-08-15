@@ -1,10 +1,10 @@
 ---
 title: Attributo DIT-Content-Rules
-description: Consente di specificare il contenuto consentito delle voci di una determinata classe di oggetti strutturali utilizzando l'identificazione di un set facoltativo di classi di oggetti ausiliarie e gli attributi obbligatori, facoltativi e preclusi.
+description: Specifica il contenuto consentito delle voci di una particolare classe di oggetti strutturali tramite l'identificazione di un set facoltativo di classi di oggetti ausiliarie e di attributi obbligatori, facoltativi e preclusi.
 ms.assetid: 75550f5c-efbf-4cd9-8619-a69d2b462f13
 ms.tgt_platform: multiple
 keywords:
-- Schema di AD dell'attributo DIT-Content-Rules
+- Schema AD dell'attributo DIT-Content-Rules
 - Schema AD dell'attributo dITContentRules
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 399529237cb7a9f2c4bf1803255f546184ad47f3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c5e7024d8d9caed48b6a2cdfc4c5e6bbe18fad66da6a7de2e5efdef483ed7ac4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326591"
 ---
 # <a name="dit-content-rules-attribute"></a>Attributo DIT-Content-Rules
 
-Consente di specificare il contenuto consentito delle voci di una determinata classe di oggetti strutturali utilizzando l'identificazione di un set facoltativo di classi di oggetti ausiliarie e gli attributi obbligatori, facoltativi e preclusi. Gli attributi collettivi sono inclusi in DIT-Content-Rules come definito nella specifica RFC 2251.
+Specifica il contenuto consentito delle voci di una particolare classe di oggetti strutturali tramite l'identificazione di un set facoltativo di classi di oggetti ausiliarie e di attributi obbligatori, facoltativi e preclusi. Gli attributi collettivi sono inclusi in DIT-Content-Rules, come definito in RFC 2251.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | DIT-Content-Rules                           |
-| LDAP-Display-Name | dITContentRules                             |
+| Ldap-Display-Name | dITContentRules                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | Ogni volta che viene creata una nuova classe.            |
 | Attribute-Id      | 2.5.21.2                                    |
-| System-ID-GUID    | 9a7ad946-ca53-11d1-bbd0-0080c76670c0        |
+| System-Id-Guid    | 9a7ad946-ca53-11d1-bbd0-0080c76670c0        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -44,7 +44,7 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Consente di specificare il contenuto consentito delle voci di una determinata cl
 | ID collegamento                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Vero                                        |
-| È a valore singolo       | Falso                                       |
+| A valore singolo       | Falso                                       |
 | Indicizzato             | Falso                                       |
 | Nel catalogo globale      | Falso                                       |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classi utilizzate in        | [**Sottoschema**](c-subschema.md)<br/> |
+| Classi usate in        | [**Schema secondario**](c-subschema.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_DWMSENDICONICLIVEPREVIEWBITMAP (dwmapi. h)
-description: Indica a una finestra di fornire una bitmap statica da utilizzare come anteprima in tempo reale (nota anche come anteprima di visualizzazione) di tale finestra.
+title: WM_DWMSENDICONICLIVEPREVIEWBITMAP messaggio (Dwmapi.h)
+description: Indica a una finestra di fornire una bitmap statica da usare come anteprima dinamica (nota anche come anteprima Di anteprima) di tale finestra.
 ms.assetid: 24bf3b42-a850-4aa5-966a-29baab6b4d21
 keywords:
-- Messaggio WM_DWMSENDICONICLIVEPREVIEWBITMAP Gestione finestre desktop
+- WM_DWMSENDICONICLIVEPREVIEWBITMAP messaggio Gestione finestre desktop
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21f73076ab313da66171bc8265f7f4e7d068f93e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7742b70afad62a42378e50a06a6e40e503bee72309f5f233f9cf8bf62cf41d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985247"
 ---
-# <a name="wm_dwmsendiconiclivepreviewbitmap-message"></a>\_Messaggio DWMSENDICONICLIVEPREVIEWBITMAP WM
+# <a name="wm_dwmsendiconiclivepreviewbitmap-message"></a>Messaggio WM \_ DWMSENDICONICLIVEPREVIEWBITMAP
 
-Indica a una finestra di fornire una bitmap statica da utilizzare come *anteprima in tempo reale* (nota anche come *Anteprima di visualizzazione*) di tale finestra.
+Indica a una finestra di fornire una bitmap statica da usare come anteprima dinamica *(nota* anche come anteprima Di *anteprima)* di tale finestra.
 
 ## <a name="parameters"></a>Parametri
 
@@ -45,23 +45,23 @@ Non usato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Un' *anteprima in tempo reale* , nota anche come *Anteprima* di una finestra, viene visualizzata quando un utente sposta il puntatore del mouse sull'anteprima della finestra nella barra delle applicazioni o assegna all'anteprima lo stato attivo nella finestra Alt + Tab. Questa vista è un'anteprima completa della finestra e può essere uno snapshot Live o una rappresentazione iconica.
+Quando un utente sposta il puntatore del mouse sull'anteprima della finestra nella barra delle applicazioni o assegna lo stato attivo all'anteprima nella finestra ALT+TAB, viene visualizzata un'anteprima dinamica *(nota* anche come anteprima di anteprima). Questa visualizzazione è un'anteprima a dimensioni complete della finestra e può essere uno snapshot live o una rappresentazione simbolica.
 
-Gestione finestre desktop (DWM) Invia questo messaggio a una finestra se si verificano tutte le situazioni seguenti:
+Gestione finestre desktop (DWM) invia questo messaggio a una finestra se si verificano tutte le situazioni seguenti:
 
--   L'anteprima in tempo reale è stata richiamata nella finestra.
--   Per DWMWA è impostato un attributo [**\_ \_ \_ bitmap iconico**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) nella finestra.
--   Una rappresentazione iconica è l'unica esistente per questa finestra.
+-   L'anteprima dinamica è stata richiamata nella finestra.
+-   [**L'attributo DWMWA \_ HAS ICONIC \_ \_ BITMAP**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) è impostato nella finestra.
+-   Una rappresentazione icona è l'unica esistente per questa finestra.
 
-La finestra che riceve questo messaggio deve rispondere generando una bitmap a scalabilità totale. La finestra chiama quindi la funzione [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) per impostare l'anteprima in tempo reale. Se la finestra non imposta una bitmap in un determinato periodo di tempo, DWM utilizza la propria rappresentazione iconica predefinita per la finestra.
+La finestra che riceve questo messaggio deve rispondere generando una bitmap su larga scala. La finestra chiama quindi la [**funzione DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) per impostare l'anteprima dinamica. Se la finestra non imposta una bitmap in un determinato periodo di tempo, DWM usa la propria rappresentazione icona predefinita per la finestra.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrata una risposta al messaggio **WM \_ DWMSENDICONICLIVEPREVIEWBITMAP** . L'esempio chiama la funzione [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) con un handle per una bitmap personalizzata, indipendente dal dispositivo, da usare come rappresentazione della finestra.
+L'esempio seguente illustra una risposta al **messaggio WM \_ DWMSENDICONICLIVEPREVIEWBITMAP.** L'esempio chiama la funzione [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) con un handle per una bitmap personalizzata indipendente dal dispositivo da usare come rappresentazione della finestra.
 
 
 ```C++
@@ -88,7 +88,7 @@ Nell'esempio seguente viene illustrata una risposta al messaggio **WM \_ DWMSEND
 
 
 
-Per il codice completo, vedere l'esempio [personalizzare un'anteprima iconica e una bitmap di anteprima in tempo reale](dwm-sample-customizethumbnail.md) .
+Per il codice completo, vedere l'esempio [Personalizzare un'anteprima icona e una bitmap di anteprima](dwm-sample-customizethumbnail.md) dinamica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -96,9 +96,9 @@ Per il codice completo, vedere l'esempio [personalizzare un'anteprima iconica e 
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                          |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                             |
-| Intestazione<br/>                   | <dl> <dt>Dwmapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                             |
+| Intestazione<br/>                   | <dl> <dt>Dwmapi.h</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Per il codice completo, vedere l'esempio [personalizzare un'anteprima iconica e 
 
 <dl> <dt>
 
-[**\_DWMSENDICONICTHUMBNAIL WM**](wm-dwmsendiconicthumbnail.md)
+[**WM \_ DWMSENDICONICTHUMBNAIL**](wm-dwmsendiconicthumbnail.md)
 </dt> <dt>
 
 [**DwmInvalidateIconicBitmaps**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwminvalidateiconicbitmaps)

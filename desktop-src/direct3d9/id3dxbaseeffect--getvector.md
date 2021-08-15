@@ -1,7 +1,7 @@
 ---
 description: Ottiene un vettore.
 ms.assetid: 55f5512f-42f2-4588-abd4-1cdea530b9bf
-title: 'Metodo ID3DXBaseEffect:: getvector (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetVector (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: ea50cb6bf8c3f5b08d408539eba6c9f7cb09efc1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e72c02ed1bc8f29ed8809a7a4733914860a6c9c058795f8a02661f29b9607f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104354129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119459961"
 ---
-# <a name="id3dxbaseeffectgetvector-method"></a>Metodo ID3DXBaseEffect:: getvector
+# <a name="id3dxbaseeffectgetvector-method"></a>Metodo ID3DXBaseEffect::GetVector
 
 Ottiene un vettore.
 
@@ -41,16 +41,16 @@ HRESULT GetVector(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pVector* \[ out\]
+*pVector* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
@@ -75,8 +75,8 @@ Se il vettore di destinazione è più grande del vettore di origine, verranno ri
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -87,7 +87,7 @@ Se il vettore di destinazione è più grande del vettore di origine, verranno ri
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**Sevector**](id3dxbaseeffect--setvector.md)
+[**SetVector**](id3dxbaseeffect--setvector.md)
 </dt> </dl>
 
  

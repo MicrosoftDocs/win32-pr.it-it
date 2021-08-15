@@ -1,11 +1,11 @@
 ---
-title: COM-CLSID (attributo)
+title: Attributo COM-CLSID
 description: Questo attributo contiene il GUID associato a questa classe di oggetti.
 ms.assetid: 2de3b0c4-5fb6-43c1-9aa7-9c98048c095e
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo COM-CLSID
-- Schema AD dell'attributo comclsid
+- Schema AD dell'attributo cOMCLSID
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52430f53721866651ab1242353af36ba8c193553
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9e3f6fe0b1bbc68fc6f1b59d57f2e8fa612a4c9f057357007c95e60ec6f3c658
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104479800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119327191"
 ---
-# <a name="com-clsid-attribute"></a>COM-CLSID (attributo)
+# <a name="com-clsid-attribute"></a>Attributo COM-CLSID
 
 Questo attributo contiene il GUID associato a questa classe di oggetti.
 
@@ -29,13 +29,13 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | COM-CLSID                                   |
-| LDAP-Display-Name | comclsid                                    |
+| CN                | CLSID COM                                   |
+| Ldap-Display-Name | cOMCLSID                                    |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.249                      |
-| System-ID-GUID    | 281416d9-1968-11d0-a28f-00aa003049e2        |
+| System-Id-Guid    | 281416d9-1968-11d0-a28f-00aa003049e2        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| Is-Single-Valued       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene il GUID associato a questa classe di oggetti.
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Vero                                                         |
+| A valore singolo       | Vero                                                         |
 | Indicizzato             | Falso                                                        |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 36                                                           |
 | Range-Upper            | 36                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Rete. recoveredPackets
-description: La proprietà recoveredPackets Recupera il numero di pacchetti ripristinati.
+title: Network.recoveredPackets
+description: La proprietà recoveredPackets recupera il numero di pacchetti recuperati.
 ms.assetid: ce10b906-2e8b-4b9f-83d0-56ba67cacd3f
 keywords:
-- Media Player di Windows Network. recoveredPackets
+- Network.recoveredPackets Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,34 +14,34 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a4222033d7e124e6ef29714bc47faf5664950fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 464f7ad27603e506632d87254eaa4f76cbedf39ed15e353050cd13da0fa46204
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134934"
 ---
-# <a name="networkrecoveredpackets"></a>Rete. recoveredPackets
+# <a name="networkrecoveredpackets"></a>Network.recoveredPackets
 
-La proprietà **recoveredPackets** Recupera il numero di pacchetti ripristinati.
+La **proprietà recoveredPackets** recupera il numero di pacchetti recuperati.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player*. *rete*. **recoveredPackets**
+*lettore*. *network*. **recoveredPackets**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **numero** di sola lettura (**Long**).
+Questa proprietà è un numero di sola **lettura** (**long**).
 
 ## <a name="remarks"></a>Commenti
 
-Ogni volta che la riproduzione viene arrestata e riavviata, questa proprietà viene impostata su zero. Non viene reimpostato se la riproduzione viene sospesa.
+Ogni volta che la riproduzione viene arrestata e riavviata, questa proprietà viene impostata su zero. Non viene reimpostata se la riproduzione è sospesa.
 
-Questa proprietà restituisce informazioni valide solo in fase di esecuzione e solo se il *lettore*. Viene impostata anche la proprietà **URL** . Sarà uguale a zero quando si usa il protocollo HTTP, che è lossless.
+Questa proprietà restituisce informazioni valide solo in fase di esecuzione e solo se *il lettore*. **Viene** impostata anche la proprietà URL. Sarà uguale a zero quando si usa il protocollo HTTP, che è senza perdita di dati.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *rete*. **recoveredPackets** per visualizzare il numero di pacchetti ripristinati. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "PR". Nell'esempio viene utilizzato un timer con un intervallo di 1 secondo per aggiornare la visualizzazione. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la rete*. **recoveredPackets** per visualizzare il numero di pacchetti recuperati. Le informazioni vengono visualizzate in un DIV HTML creato con ID = "PR". Nell'esempio viene utilizzato un timer con un intervallo di 1 secondo per aggiornare la visualizzazione. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -78,7 +78,7 @@ function UpdatePR(){
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -90,7 +90,7 @@ function UpdatePR(){
 [**Oggetto di rete**](network-object.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

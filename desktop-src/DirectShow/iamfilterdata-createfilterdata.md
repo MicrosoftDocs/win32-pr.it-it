@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 81c2ba3a56ba9c09a2ce7b23bcad1a83880e61256402c291b5aebde9988218c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428671"
 ---
 # <a name="iamfilterdatacreatefilterdata-method"></a>Metodo IAMFilterData::CreateFilterData
 
@@ -76,7 +76,7 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, viene
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> L'intestazione Fil \_ data.h si trova nella directory [Mapper Sample](mapper-sample.md) nella Windows SDK.
+> L'intestazione Fil \_ data.h si trova nella directory [Mapper Sample](mapper-sample.md) in Windows SDK.
 
  
 

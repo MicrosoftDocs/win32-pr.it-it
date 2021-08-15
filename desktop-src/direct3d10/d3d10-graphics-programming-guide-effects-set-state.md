@@ -1,19 +1,19 @@
 ---
-description: Alcune costanti di effetto devono essere inizializzate. Vedere il codice di base per l'impostazione delle variabili di effetto in Direct3D 10.
+description: Alcune costanti di effetto devono solo essere inizializzate. Vedere il codice di base per l'impostazione delle variabili di effetto in Direct3D 10.
 ms.assetid: 743261a8-fdd8-492e-be8a-4faeb9b6f986
 title: Impostare lo stato dell'effetto (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6df7133276b6392abca8d75eed16de896fb58f84
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7cfdaa20ca2bc8f206b550a9d1554989fe45b9cead06315a7b4bb7369adecaa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119380421"
 ---
 # <a name="set-effect-state-direct3d-10"></a>Impostare lo stato dell'effetto (Direct3D 10)
 
-Alcune costanti di effetto devono essere inizializzate. Dopo l'inizializzazione, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. È necessario aggiornare altre variabili ogni volta che viene chiamato il ciclo di rendering. Il codice di base per l'impostazione delle variabili di effetto è illustrato di seguito, per ognuno dei tipi di variabili.
+Alcune costanti di effetto devono solo essere inizializzate. Una volta inizializzato, lo stato dell'effetto viene impostato sul dispositivo per l'intero ciclo di rendering. Le altre variabili devono essere aggiornate ogni volta che viene chiamato il ciclo di rendering. Il codice di base per l'impostazione delle variabili di effetto è illustrato di seguito, per ognuno dei tipi di variabili.
 
 Un effetto incapsula tutto lo stato di rendering necessario per eseguire un passaggio di rendering. In termini di API, esistono tre tipi di stato incapsulati in un effetto.
 
@@ -47,7 +47,7 @@ float4x4 g_mWorldViewProjection;    // World * View * Projection matrix
 
 
 
-In secondo piano, dichiarare le variabili nell'applicazione che possono essere impostate dall'applicazione e quindi aggiornare le variabili dell'effetto.
+In secondo momento, dichiarare nell'applicazione le variabili che possono essere impostate dall'applicazione e quindi aggiornare le variabili di effetto.
 
 
 ```
@@ -83,7 +83,7 @@ OnD3D10CreateDevice()
 
 
 
-In terzo piano, usare i metodi di aggiornamento per impostare il valore delle variabili nell'applicazione nelle variabili dell'effetto.
+In terzo modo, usare i metodi update per impostare il valore delle variabili nell'applicazione nelle variabili di effetto.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect10 )
 
 
 
-L'altro modo è ottenere lo stato del campionatore da [**un'interfaccia ID3D10SamplerState**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate).
+L'altro modo è ottenere lo stato del campionatore da [**un'interfaccia ID3D10SamplerState.**](/windows/desktop/api/D3D10/nn-d3d10-id3d10samplerstate)
 
 
 ```
@@ -168,7 +168,7 @@ Questa operazione funziona esattamente come se non si usasse un effetto. Sono di
 
 ## <a name="texture-state"></a>Stato trama
 
-Lo stato della trama è un po' più complesso rispetto all'impostazione di una variabile, perché i dati di trama non vengono semplicemente letti come una variabile, ma vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (proprio come una variabile normale, ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di dichiarazione di variabile di trama e di dichiarazione dello stato di campionamento corrispondente.
+Lo stato della trama è un po' più complesso rispetto all'impostazione di una variabile, perché i dati della trama non vengono semplicemente letti come una variabile, ma vengono campionati da una trama. Pertanto, è necessario definire la variabile di trama (esattamente come una variabile normale, ad eccezione del fatto che usa un tipo di trama) ed è necessario definire le condizioni di campionamento. Di seguito è riportato un esempio di dichiarazione di variabile di trama e di dichiarazione dello stato di campionamento corrispondente.
 
 
 ```
@@ -199,7 +199,7 @@ ID3D10EffectShaderResourceVariable* g_ptxDiffuse = NULL;
 
 
 
-Il secondo passaggio consiste nel specificare una vista per l'accesso alla trama. La vista definisce un modo generale per accedere ai dati dalla risorsa trama.
+Il secondo passaggio consiste nel specificare una visualizzazione per l'accesso alla trama. La vista definisce un modo generale per accedere ai dati dalla risorsa trama.
 
 
 ```

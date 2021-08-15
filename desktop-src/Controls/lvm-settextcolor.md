@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_SETTEXTCOLOR (COMmctrl. h)
-description: Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro SetTextColor di ListView.
+title: LVM_SETTEXTCOLOR messaggio (Commctrl.h)
+description: Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView SetTextColor.
 ms.assetid: ff90c18b-0cd7-4331-bcd8-61044e891d1f
 keywords:
-- Controlli di Windows Message LVM_SETTEXTCOLOR
+- LVM_SETTEXTCOLOR dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64b30c965bd523cd5638c894b47fc4785ffbdd09
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c70cb9de975440a4093ef8c88992305d294cc04f362c8e9ccb3434937b78f007
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217371"
 ---
-# <a name="lvm_settextcolor-message"></a>\_Messaggio SETTEXTCOLOR LVM
+# <a name="lvm_settextcolor-message"></a>Messaggio LVM \_ SETTEXTCOLOR
 
-Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ SetTextColor di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor) .
+Imposta il colore del testo di un controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usando la macro [**\_ ListView SetTextColor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +35,13 @@ Imposta il colore del testo di un controllo visualizzazione elenco. È possibile
 *lParam* 
 </dt> <dd>
 
-Oggetto [**COLORREF**](/windows/desktop/gdi/colorref) che specifica il nuovo colore del testo.
+ColorREF [**che**](/windows/desktop/gdi/colorref) specifica il nuovo colore del testo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se l'operazione ha esito positivo o **false** in caso contrario.
+Restituisce **TRUE in** caso di esito positivo oppure FALSE **in** caso contrario.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce **true** se l'operazione ha esito positivo o **false** in caso contr
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

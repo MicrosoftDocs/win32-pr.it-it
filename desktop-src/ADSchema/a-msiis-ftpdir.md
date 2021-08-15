@@ -1,11 +1,11 @@
 ---
-title: attributo MS-IIS-FTP-dir
-description: Questo attributo determina la home directory dell'utente relativa alla condivisione file server. Viene usato in combinazione con MS-IIS-FTP-root per determinare la home directory dell'utente FTP.
+title: Attributo ms-IIS-FTP-Dir
+description: Questo attributo determina la home directory dell'utente rispetto alla file server locale. Viene usato insieme a ms-IIS-FTP-Root per determinare la home directory dell'utente FTP.
 ms.assetid: 99b22b79-1d42-440d-b92b-33bac3e811cb
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo MS-IIS-FTP-dir
-- msIIS-schema AD attributo FTPDir
+- Schema AD dell'attributo ms-IIS-FTP-Dir
+- Schema AD dell'attributo msIIS-FTPDir
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3067476e7dc275dbe14471d6c3c98fa5445a9dfe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8599d484609a28fbd80763215eccd4b0299bf8ec190a8804a2f6994114245ae6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104519782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119543951"
 ---
-# <a name="ms-iis-ftp-dir-attribute"></a>attributo MS-IIS-FTP-dir
+# <a name="ms-iis-ftp-dir-attribute"></a>Attributo ms-IIS-FTP-Dir
 
-Questo attributo determina la home directory dell'utente relativa alla condivisione file server. Viene usato in combinazione con MS-IIS-FTP-root per determinare la home directory dell'utente FTP.
+Questo attributo determina la home directory dell'utente rispetto alla file server locale. Viene usato insieme a ms-IIS-FTP-Root per determinare la home directory dell'utente FTP.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| CN                | MS-IIS-FTP-dir                                                                                                                  |
-| LDAP-Display-Name | msIIS-FTPDir                                                                                                                    |
+| CN                | ms-IIS-FTP-Dir                                                                                                                  |
+| Ldap-Display-Name | msIIS-FTPDir                                                                                                                    |
 | Dimensione              | 30-50 caratteri (15-25 caratteri Unicode per ogni proprietà)                                                                   |
-| Privilegio aggiornamento  | Amministratore di dominio & sistema locale                                                                                             |
-| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. In questo modo si modifica raramente. |
+| Privilegio di aggiornamento  | Amministratore di & sistema locale                                                                                             |
+| Frequenza di aggiornamento  | Questa proprietà viene impostata quando l'amministratore crea il sito Web e imposta l'isolamento FTP. Raramente cambierà dopo. |
 | Attribute-Id      | 1.2.840.113556.1.4.1786                                                                                                         |
-| System-ID-GUID    | 8a5c99e9-2230-46eb-b8e8-e59d712eb9ee                                                                                            |
+| System-Id-Guid    | 8a5c99e9-2230-46eb-b8e8-e59d712eb9ee                                                                                            |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md)                                                                                     |
 
 
@@ -57,15 +57,15 @@ Questo attributo determina la home directory dell'utente relativa alla condivisi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Questo attributo determina la home directory dell'utente relativa alla condivisi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Questo attributo determina la home directory dell'utente relativa alla condivisi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| Is-Single-Valued       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Questo attributo determina la home directory dell'utente relativa alla condivisi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Questo attributo determina la home directory dell'utente relativa alla condivisi
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Vero                              |
+| A valore singolo       | Vero                              |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 1                                 |
 | Range-Upper            | 256                               |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

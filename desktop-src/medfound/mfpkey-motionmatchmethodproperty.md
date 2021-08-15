@@ -1,19 +1,19 @@
 ---
-description: Specifica il metodo da usare per la corrispondenza di movimento.
+description: Specifica il metodo da utilizzare per la corrispondenza del movimento.
 ms.assetid: 75bbc189-3092-4813-9f45-54e8e48b05cd
-title: Proprietà MFPKEY_MOTIONMATCHMETHOD (Wmcodecdsp. h)
+title: MFPKEY_MOTIONMATCHMETHOD proprietà (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09496e714633dd394f55122b7461f29a2daa3656
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bec0604acc7dc0634be296e5097c3594dc74e5ceb7bdb7563b48a164cd13b164
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119355731"
 ---
-# <a name="mfpkey_motionmatchmethod-property"></a>\_Proprietà MOTIONMATCHMETHOD di MFPKEY
+# <a name="mfpkey_motionmatchmethod-property"></a>Proprietà MFPKEY \_ MOTIONMATCHMETHOD
 
-Specifica il metodo da usare per la corrispondenza di movimento.
+Specifica il metodo da utilizzare per la corrispondenza del movimento.
 
 ## <a name="constant-for-ipropertybag"></a>Costante per IPropertyBag
 
@@ -33,17 +33,17 @@ Questa proprietà può essere impostata su uno dei valori seguenti.
 
 
 
-| Valore | Metodo utilizzato                       |
+| Valore | Metodo usato                       |
 |-------|-----------------------------------|
 | 0     | somma delle differenze assolute (SAD) |
 | 1     | Hadamard                          |
-| -1    | Macroblocco-Adaptive.              |
+| -1    | Macroblock-adaptive.              |
 
 
 
  
 
-La somma delle differenze assolute (SAD) è un metodo più veloce ma meno accurato rispetto alla trasformazione Hadamard. La trasformazione Hadamard è più accurata ma a elevato utilizzo di calcolo. La modalità adattiva macroblocco fornisce un ragionevole compromesso tra i due metodi scegliendo dinamicamente tra le due trasformazioni, selezionando la trasformazione Hadamard solo quando appropriato.
+La somma delle differenze assolute è un metodo più veloce ma meno accurato rispetto alla trasformazione Hadamard. La trasformazione Hadamard è più accurata ma a elevato utilizzo di calcolo. La modalità macroblock-adattiva offre un compromesso ragionevole tra i due metodi scegliendo dinamicamente tra le due trasformazioni, selezionando la trasformazione Hadamard solo quando appropriato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -51,9 +51,9 @@ La somma delle differenze assolute (SAD) è un metodo più veloce ma meno accura
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                             |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
+| Intestazione<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -61,7 +61,7 @@ La somma delle differenze assolute (SAD) è un metodo più veloce ma meno accura
 
 <dl> <dt>
 
-[Proprietà Media Foundation](media-foundation-properties.md)
+[Media Foundation proprietà](media-foundation-properties.md)
 </dt> </dl>
 
  

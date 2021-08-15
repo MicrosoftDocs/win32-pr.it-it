@@ -4,16 +4,16 @@ ms.assetid: b379a949-f90e-462e-8795-e3d33ea75559
 title: Operatori XMSHORTN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 638d04bc1826957b81eaf84e66b03b48f0dedccb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0abe85036fb86431e00db96aacaf2c6207246169a3f59b7b0f9c31b0afa0fae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984881"
 ---
 # <a name="xmshortn4-operators"></a>Operatori XMSHORTN4
 
-La struttura [**XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4) espone gli operatori seguenti.
+La [**struttura XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,7 +26,7 @@ La struttura [**XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directx
 
 | Metodi                                                | Descrizione                                                                                                            |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmshortn4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMSHORTN4` all'istanza corrente di `XMSHORTN4` . <br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmshortn4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza `XMSHORTN4` di all'istanza corrente di `XMSHORTN4` . <br/> |
 
 
 

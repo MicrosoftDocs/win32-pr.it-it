@@ -1,18 +1,18 @@
 ---
-title: Proprietà RedirectDevices di IMsRdpClientAdvancedSettings5
-description: Imposta o recupera la configurazione per il reindirizzamento del dispositivo.
+title: Proprietà RedirectDevices IMsRdpClientAdvancedSettings5
+description: Imposta o recupera la configurazione per il reindirizzamento dei dispositivi.
 ms.assetid: bf989ca0-5c79-4a73-a32b-51ef97ca0dff
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto proprietà RedirectDevices
-- Servizi Desktop remoto proprietà RedirectDevices, interfaccia IMsRdpClientAdvancedSettings5
-- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto, proprietà RedirectDevices
-- Servizi Desktop remoto proprietà RedirectDevices, interfaccia IMsRdpClientAdvancedSettings6
-- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto, proprietà RedirectDevices
-- Servizi Desktop remoto proprietà RedirectDevices, interfaccia IMsRdpClientAdvancedSettings7
-- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto, proprietà RedirectDevices
-- Servizi Desktop remoto proprietà RedirectDevices, interfaccia IMsRdpClientAdvancedSettings8
-- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto, proprietà RedirectDevices
+- Proprietà RedirectDevices Servizi Desktop remoto
+- Proprietà RedirectDevices Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings5
+- Interfaccia IMsRdpClientAdvancedSettings5 Servizi Desktop remoto , proprietà RedirectDevices
+- Proprietà RedirectDevices Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings6
+- Interfaccia IMsRdpClientAdvancedSettings6 Servizi Desktop remoto , proprietà RedirectDevices
+- Proprietà RedirectDevices Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings7
+- Interfaccia IMsRdpClientAdvancedSettings7 Servizi Desktop remoto , proprietà RedirectDevices
+- Proprietà RedirectDevices Servizi Desktop remoto, interfaccia IMsRdpClientAdvancedSettings8
+- Interfaccia IMsRdpClientAdvancedSettings8 Servizi Desktop remoto , proprietà RedirectDevices
 topic_type:
 - apiref
 api_name:
@@ -34,16 +34,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab1eec96b5d4fde20add891cc742c76c14ebe7ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be6e72c5441b7eaa79b7bfeceb4e910b09041b72fb90dc58a54abda73baf9109
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855329"
 ---
-# <a name="imsrdpclientadvancedsettings5redirectdevices-property"></a>Proprietà IMsRdpClientAdvancedSettings5:: RedirectDevices
+# <a name="imsrdpclientadvancedsettings5redirectdevices-property"></a>Proprietà IMsRdpClientAdvancedSettings5::RedirectDevices
 
-Imposta o recupera la configurazione per il reindirizzamento del dispositivo.
+Imposta o recupera la configurazione per il reindirizzamento dei dispositivi.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -64,7 +64,7 @@ HRESULT get_RedirectDevices(
 
 ## <a name="property-value"></a>Valore proprietà
 
-Imposta la modalità di reindirizzamento del dispositivo su **true** o **false**. Se è impostato su **true**, la modalità di reindirizzamento del dispositivo è abilitata.
+Imposta la modalità di reindirizzamento del dispositivo **su TRUE** o **FALSE.** Se impostato su **TRUE,** la modalità di reindirizzamento dei dispositivi è abilitata.
 
 ## <a name="requirements"></a>Requisiti
 

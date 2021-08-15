@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Proprietà JET_DBINFOMISC. fShadowingDisabled'
-title: Proprietà JET_DBINFOMISC. fShadowingDisabled
+description: 'Altre informazioni su: JET_DBINFOMISC.fShadowingDisabled'
+title: JET_DBINFOMISC.fShadowingDisabled
 TOCTitle: 'fShadowingDisabled property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.fShadowingDisabled
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.fshadowingdisabled(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2a15e7328140c8b7ce34e3ed79b257f697e3f1b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 439fb176fef423bcb38947bbfc068bce6ebccd47e6dc0e70e7a0cf2cd0cb3b7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106306848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119453981"
 ---
-# <a name="jet_dbinfomiscfshadowingdisabled-property"></a>Proprietà JET_DBINFOMISC. fShadowingDisabled
+# <a name="jet_dbinfomiscfshadowingdisabled-property"></a>JET_DBINFOMISC.fShadowingDisabled
 
-Ottiene un valore che indica se l'ombreggiatura del catalogo è abilitata. Questo valore è solo per uso interno.
+Ottiene un valore che indica se lo shadowing del catalogo è abilitato. Questo valore è solo per uso interno.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,14 +60,14 @@ public bool fShadowingDisabled { get; internal set; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membri JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membri](./jet-dbinfomisc-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

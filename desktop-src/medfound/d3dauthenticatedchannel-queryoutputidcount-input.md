@@ -1,7 +1,7 @@
 ---
-description: Contiene i dati di input per una \_ query OUTPUTIDCOUNT D3DAUTHENTICATEDQUERY.
+description: Contiene i dati di input per una query D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT.
 ms.assetid: cc68b39f-4645-46a6-a752-549b070cf23b
-title: Struttura D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT struttura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 93f58bcd05efb8c173986186d631c713195d8363
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fc43d10b497b4ab904cbec551a41d240fca33bd395ae2f4093d5b9d25067816
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449471"
 ---
-# <a name="d3dauthenticatedchannel_queryoutputidcount_input-structure"></a>\_Struttura di input QUERYOUTPUTIDCOUNT di D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_queryoutputidcount_input-structure"></a>Struttura DI INPUT D3DAUTHENTICATEDCHANNEL \_ QUERYOUTPUTIDCOUNT \_
 
-Contiene i dati di input per una query [**\_ OUTPUTIDCOUNT D3DAUTHENTICATEDQUERY**](d3dauthenticatedquery-outputidcount.md) .
+Contiene i dati di input per una query [**D3DAUTHENTICATEDQUERY \_ OUTPUTIDCOUNT.**](d3dauthenticatedquery-outputidcount.md)
 
-Per inviare la query, chiamare [**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Per inviare questa query, [**chiamare IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +46,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYOUTPUTIDCOUNT_INPUT {
 **Input**
 </dt> <dd>
 
-Struttura [**di \_ \_ input della query D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-input.md) che contiene il GUID per la query e altri dati.
+Struttura [**D3DAUTHENTICATEDCHANNEL \_ QUERY \_ INPUT**](d3dauthenticatedchannel-query-input.md) che contiene il GUID per la query e altri dati.
 
 </dd> <dt>
 
@@ -70,9 +70,9 @@ Handle per la sessione di crittografia.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>                                             |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>                                             |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Handle per la sessione di crittografia.
 [Strutture video Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

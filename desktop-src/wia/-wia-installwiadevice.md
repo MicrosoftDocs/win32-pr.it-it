@@ -1,7 +1,7 @@
 ---
-description: La funzione InstallWiaDevice installa un dispositivo Windows Image Acquisition (WIA) come dispositivo con enumerazione radice. È possibile che venga visualizzato un avviso di sicurezza se un file di installazione o un coinstallatore non è firmato digitalmente e considerato attendibile.
+description: La funzione InstallWiaDevice installa un Windows di acquisizione di immagini (WIA) come dispositivo enumerato nella radice. Potrebbe essere visualizzato un avviso di sicurezza se un file o un coinstallatore di installazione non è firmato digitalmente e considerato attendibile.
 ms.assetid: c7de27f5-5994-4fce-a6ec-6e7cfae2e591
-title: Funzione InstallWiaDevice (WIA. h)
+title: Funzione InstallWiaDevice (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 62060d538b4b51fe22e10df09093f1f7f8c26a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10006e234c9a76054a77fb64f89a31d9a21e394066bcc98813912bad9f804e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965840"
 ---
-# <a name="installwiadevice-function"></a>InstallWiaDevice (funzione)
+# <a name="installwiadevice-function"></a>Funzione InstallWiaDevice
 
-La funzione **InstallWiaDevice** installa un dispositivo Windows Image Acquisition (WIA) come dispositivo con enumerazione radice. È possibile che venga visualizzato un avviso di sicurezza se un file di installazione o un coinstallatore non è firmato digitalmente e considerato attendibile.
+La **funzione InstallWiaDevice** installa un Windows di acquisizione di immagini (WIA) come dispositivo enumerato nella radice. Potrebbe essere visualizzato un avviso di sicurezza se un file o un coinstallatore di installazione non è firmato digitalmente e considerato attendibile.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ DWORD WINAPI InstallWiaDevice(
 
 <dl> <dt>
 
-*pWiaDeviceInstall* \[ in\]
+*pWiaDeviceInstall* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **PWIADEVICEINSTALL \** _
+Tipo: **PWIADEVICEINSTALL \***
 
-Puntatore a una struttura WIADEVICEINSTALL. Il membro _szFriendlyName * della struttura deve essere impostato sull'effettivo dispositivo FriendlyName.
+Puntatore a una struttura WIADEVICEINSTALL. Il *membro szFriendlyName* della struttura deve essere impostato sul valore friendlyName effettivo del dispositivo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a una struttura WIADEVICEINSTALL. Il membro _szFriendlyName * della st
 
 Tipo: **DWORD**
 
-Se la funzione ha esito positivo, il valore restituito è ERROR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è ERROR \_ SUCCESS.
 
 Se la funzione ha esito negativo, restituisce un codice di errore Win32.
 
@@ -63,10 +63,10 @@ Se la funzione ha esito negativo, restituisce un codice di errore Win32.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 
