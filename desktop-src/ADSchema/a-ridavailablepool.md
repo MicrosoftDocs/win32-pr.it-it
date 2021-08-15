@@ -1,10 +1,10 @@
 ---
-title: RID-available-attributo pool
-description: Spazio di allocazione dei pool di RID.
+title: Attributo RID-Available-Pool
+description: Spazio da cui vengono allocati i pool di RID.
 ms.assetid: abb6218f-def2-4a38-964f-3f0ee6c6f917
 ms.tgt_platform: multiple
 keywords:
-- RID-available-schema AD dell'attributo del pool
+- Schema AD dell'attributo RID-Available-Pool
 - Schema AD dell'attributo rIDAvailablePool
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59faf801b7f6f70e92c55a1d2a27857ed6ecb0c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: edb3a616d0c687b0dc5514b0dcf54ff5832ffc2a9175f99328bec025c8bde53f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104225277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118423587"
 ---
-# <a name="rid-available-pool-attribute"></a>RID-available-attributo pool
+# <a name="rid-available-pool-attribute"></a>Attributo RID-Available-Pool
 
-Spazio di allocazione dei pool di RID.
+Spazio da cui vengono allocati i pool di RID.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | RID-disponibile-pool                   |
-| LDAP-Display-Name | rIDAvailablePool                     |
+| CN                | RID-Available-Pool                   |
+| Ldap-Display-Name | rIDAvailablePool                     |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.     |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.     |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.370               |
-| System-ID-GUID    | 66171888-8f3c-11d0-afda-00c04fd930c9 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 66171888-8f3c-11d0-afda-00c04fd930c9 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Spazio di allocazione dei pool di RID.
 | ID collegamento                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| È a valore singolo       | Vero                                           |
+| A valore singolo       | Vero                                           |
 | Indicizzato             | Falso                                          |
 | Nel catalogo globale      | Falso                                          |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classi utilizzate in        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classi usate in        | [**GESTIONE RID**](c-ridmanager.md)<br/> |
 
 
 

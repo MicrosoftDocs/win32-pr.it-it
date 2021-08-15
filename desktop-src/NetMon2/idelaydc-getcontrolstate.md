@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 825112ec9a33ef176d5a69765837214249e33102
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 34302215cf0e773d7713f56233d38462071f1dde725a85478688cfb9ca2a4f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365894"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>Metodo IDelaydC::GetControlState
 
@@ -44,7 +44,7 @@ HRESULT STDMETHODCALLTYPE GetControlState(
 *IsRunnning* \[ Cambio\]
 </dt> <dd>
 
-Indicatore che l'acquisizione corrente è in esecuzione, incluso se l'acquisizione è sospesa.
+Indicatore che l'acquisizione corrente è in esecuzione, anche se l'acquisizione è sospesa.
 
 </dd> <dt>
 
@@ -65,8 +65,8 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 | Codice restituito                                                                                          | Descrizione                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | Il NPP non è connesso alla rete. Chiamare [IDelaydC::Connect](idelaydc-connect.md) per connettere il NPP alla rete.<br/> |
-| <dl> <dt>**NMERR \_ NON \_ RITARDATO**</dt> </dl>   | Il NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connect.](idelaydc-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NON \_ CONNESSO**</dt> </dl> | NPP non è connesso alla rete. Chiamare [IDelaydC::Connessione](idelaydc-connect.md) per connettere NPP alla rete.<br/> |
+| <dl> <dt>**NMERR \_ NON \_ IN RITARDO**</dt> </dl>   | NPP è connesso alla rete, ma non con il [metodo IDelaydC::Connessione.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -74,7 +74,7 @@ Se il metodo ha esito negativo, il valore restituito è uno dei codici di errore
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete usando [l'interfaccia IDelaydC.](idelaydc.md) È possibile usare questo metodo per scoprire se un'acquisizione è in esecuzione, se l'acquisizione è sospesa o se l'acquisizione è stata arrestata ma il NPP non è disconnesso.
+Questo metodo può essere chiamato ogni volta che il NPP è connesso alla rete usando [l'interfaccia IDelaydC.](idelaydc.md) È possibile usare questo metodo per determinare se un'acquisizione è in esecuzione, se l'acquisizione è sospesa o se l'acquisizione è stata arrestata ma NPP non è disconnesso.
 
 I metodi usati per avviare, sospendere e arrestare l'acquisizione sono elencati nell'elenco Vedere anche riportato di seguito.
 
@@ -98,7 +98,7 @@ I metodi usati per avviare, sospendere e arrestare l'acquisizione sono elencati 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC::Connect](idelaydc-connect.md)
+[IDelaydC::Connessione](idelaydc-connect.md)
 </dt> <dt>
 
 [IDelaydC::P ause](idelaydc-pause.md)

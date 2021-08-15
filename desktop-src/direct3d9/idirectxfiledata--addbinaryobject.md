@@ -1,7 +1,7 @@
 ---
 description: Crea un oggetto binario e lo aggiunge come oggetto figlio. Deprecato.
 ms.assetid: 6164951d-dd87-4318-ac08-b97c22f58d45
-title: 'Metodo IDirectXFileData:: AddBinaryObject (DXFile. h)'
+title: Metodo IDirectXFileData::AddBinaryObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 8373b9c4328a8683f32c1fe7ab979cb8d7636f87
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3d619fde6cd5d22f161188d46f710caeadfaedba2fbcf1167486e05dee539fd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117728977"
 ---
-# <a name="idirectxfiledataaddbinaryobject-method"></a>Metodo IDirectXFileData:: AddBinaryObject
+# <a name="idirectxfiledataaddbinaryobject-method"></a>Metodo IDirectXFileData::AddBinaryObject
 
 Crea un oggetto binario e lo aggiunge come oggetto figlio. Deprecato.
 
@@ -44,25 +44,25 @@ HRESULT AddBinaryObject(
 
 <dl> <dt>
 
-*szName* \[ in\]
+*szName* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntatore al nome dell'oggetto. Specificare **null** se l'oggetto non necessita di un nome.
+Puntatore al nome dell'oggetto. Specificare **NULL** se l'oggetto non richiede un nome.
 
 </dd> <dt>
 
-*pguid* \[ in\]
+*pguid* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[**GUID**](guid.md) \* const**
+Tipo: **[**CONST GUID**](guid.md) \***
 
-Puntatore al GUID che rappresenta l'oggetto. Specificare **null** se l'oggetto non necessita di un GUID.
+Puntatore al GUID che rappresenta l'oggetto. Specificare **NULL** se l'oggetto non richiede un GUID.
 
 </dd> <dt>
 
-*szMimeType* \[ in\]
+*szMimeType* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -71,7 +71,7 @@ Puntatore al tipo MIME dell'oggetto.
 
 </dd> <dt>
 
-*pvData* \[ in\]
+*pvData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
@@ -80,12 +80,12 @@ Puntatore ai dati dell'oggetto.
 
 </dd> <dt>
 
-*cbSize* \[ in\]
+*cbSize* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Dimensioni del buffer a cui punta pvData in byte.
+Dimensioni del buffer a cui punta pvData, in byte.
 
 </dd> </dl>
 
@@ -101,8 +101,8 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ Se il metodo ha esito positivo, il valore restituito è DXFILE \_ OK. Se il meto
 [IDirectXFileData](idirectxfiledata.md)
 </dt> <dt>
 
-[**IDirectXFileBinary:: GetMimeType**](idirectxfilebinary--getmimetype.md)
+[**IDirectXFileBinary::GetMimeType**](idirectxfilebinary--getmimetype.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Applica il skining del software ai vertici di destinazione in base alle matrici correnti.
+description: Applica l'interfaccia software ai vertici di destinazione in base alle matrici correnti.
 ms.assetid: 4858dfd4-dc0d-4852-9165-8ae1b40386d4
-title: 'Metodo ID3DXSkinInfo:: UpdateSkinnedMesh (D3DX9Mesh. h)'
+title: Metodo ID3DXSkinInfo::UpdateSkinnedMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 645e6ae1e1cb84991b352c250b137cd3ae2491f0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 22b36e1836570a10647f5b737a68afa1e65a4dce80fe9d49061a3eee8a799651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729453"
 ---
-# <a name="id3dxskininfoupdateskinnedmesh-method"></a>Metodo ID3DXSkinInfo:: UpdateSkinnedMesh
+# <a name="id3dxskininfoupdateskinnedmesh-method"></a>Metodo ID3DXSkinInfo::UpdateSkinnedMesh
 
-Applica il skining del software ai vertici di destinazione in base alle matrici correnti.
+Applica l'interfaccia software ai vertici di destinazione in base alle matrici correnti.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,39 +43,39 @@ HRESULT UpdateSkinnedMesh(
 
 <dl> <dt>
 
-*pBoneTransforms* \[ in\]
+*pBoneTransforms* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matrice di trasformazione Bone.
+Matrice di trasformazione dell'elemento transform.
 
 </dd> <dt>
 
-*pBoneInvTransposeTransforms* \[ in\]
+*pBoneInvTransposeTransforms* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Trasponi inversa della matrice di trasformazione Bone.
+Trasposizione inversa della matrice di trasformazione della trasformazione inversa.
 
 </dd> <dt>
 
-*pVerticesSrc* \[ in\]
+*pVerticesSrc* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Puntatore al buffer che contiene i vertici di origine.
+Puntatore al buffer contenente i vertici di origine.
 
 </dd> <dt>
 
-*pVerticesDst* \[ in\]
+*pVerticesDst* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **PVOID**](../winprog/windows-data-types.md)**
 
-Puntatore al buffer che contiene i vertici di destinazione.
+Puntatore al buffer contenente i vertici di destinazione.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene usato per l'interfaccia dei vertici con due elementi position, questo metodo consente di associare il secondo elemento position con l'inverso dell'osso anziché l'osso stesso.
+Quando viene usato per eseguire l'interfaccia dei vertici con due elementi di posizione, questo metodo esegue l'interfaccia del secondo elemento di posizione con l'inverso dell'elemento anziché l'elemento stesso.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Quando viene usato per l'interfaccia dei vertici con due elementi position, ques
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

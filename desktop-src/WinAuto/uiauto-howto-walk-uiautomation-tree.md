@@ -1,27 +1,27 @@
 ---
-title: Come esaminare l'albero di automazione interfaccia utente
-description: Questo argomento contiene codice di esempio che illustra come usare l'interfaccia IUIAutomationTreeWalker per esaminare ed esaminare gli elementi nell'albero di automazione interfaccia utente Microsoft.
+title: Procedura per l'albero Automazione interfaccia utente dati
+description: Questo argomento contiene codice di esempio che illustra come usare l'interfaccia IUIAutomationTreeWalker per esaminare ed esaminare gli elementi nell'albero Automazione interfaccia utente Microsoft.
 ms.assetid: 41ca783d-56d1-4ad5-8f07-c265ff2e07bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed5c6c1bec961d4f0df83687cd19eecba6ed179
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16fe6539a24f271f5c1e8042b1be9933a77f1118b27730d510026de1852d7938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324449"
 ---
-# <a name="how-to-walk-the-ui-automation-tree"></a>Come esaminare l'albero di automazione interfaccia utente
+# <a name="how-to-walk-the-ui-automation-tree"></a>Procedura per l'albero Automazione interfaccia utente dati
 
-Questo argomento contiene codice di esempio che illustra come usare l'interfaccia [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) per esaminare ed esaminare gli elementi nell'albero di automazione interfaccia utente Microsoft. Vengono illustrati gli argomenti seguenti:
+Questo argomento contiene codice di esempio che illustra come usare l'interfaccia [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) per esaminare ed esaminare gli elementi nell'albero Automazione interfaccia utente Microsoft. Vengono illustrati gli argomenti seguenti:
 
 -   [Scorrere i discendenti di un elemento](#walking-through-descendants-of-an-element)
--   [Esplorazione degli elementi predecessore](#walking-through-ancestor-elements)
+-   [Attraversa gli elementi predecessore](#walking-through-ancestor-elements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="walking-through-descendants-of-an-element"></a>Scorrere i discendenti di un elemento
 
-L'esempio di codice seguente è una funzione ricorsiva che analizza tutti i discendenti di un elemento dell'interfaccia utente e Visualizza i relativi tipi di controllo in un elenco gerarchico.
+L'esempio di codice seguente è una funzione ricorsiva che illustra tutti i discendenti di un elemento dell'interfaccia utente e visualizza i relativi tipi di controllo in un elenco gerarchico.
 
 
 ```C++
@@ -74,9 +74,9 @@ cleanup:
 
 
 
-## <a name="walking-through-ancestor-elements"></a>Esplorazione degli elementi predecessore
+## <a name="walking-through-ancestor-elements"></a>Attraversa gli elementi predecessore
 
-L'esempio di codice seguente è una funzione che analizza i predecessori di un elemento per identificare l'elemento padre. Questa operazione è utile quando è necessario identificare la finestra padre di un controllo. La funzione restituisce **null** per gli elementi di primo livello. ovvero gli elementi il cui padre è il desktop.
+L'esempio di codice seguente è una funzione che consente di scorrere i predecessori di un elemento per identificare l'elemento padre. Ciò è utile quando è necessario identificare la finestra padre di un controllo . La funzione restituisce **NULL per** gli elementi di primo livello. elementi il cui padre è il desktop.
 
 
 ```C++
@@ -159,12 +159,12 @@ cleanup:
 [Ottenere elementi di automazione interfaccia utente](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Procedure per i client di automazione interfaccia utente](uiauto-howto-topics-for-uiautomation-clients.md)
+[Procedure per i Automazione interfaccia utente client](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Messaggio WM_INPUT (winuser. h)
-description: Inviato alla finestra che sta ricevendo l'input non elaborato. Una finestra riceve questo messaggio tramite la funzione WindowProc.
+title: WM_INPUT messaggio (Winuser.h)
+description: Inviato alla finestra che sta ricevendo input non elaborato. Una finestra riceve questo messaggio tramite la relativa funzione WindowProc.
 ms.assetid: a014d68c-841c-4120-b752-4b3fac60e12d
 keywords:
-- Input della tastiera e del mouse WM_INPUT messaggio
+- WM_INPUT messaggio Input da tastiera e mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 04/17/2020
-ms.openlocfilehash: ffe64a5ca79bbe886ddae31661c06dae695259a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d317ba21c69b22ae9c6b7cb5be0be84cd15f561b34ec65f1f99e7335cd1badb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884288"
 ---
-# <a name="wm_input-message"></a>\_Messaggio di input WM
+# <a name="wm_input-message"></a>Messaggio \_ WM INPUT
 
-Inviato alla finestra che sta ricevendo l'input non elaborato.
+Inviato alla finestra che sta ricevendo input non elaborato.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```cpp
@@ -40,14 +40,14 @@ Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previ
 
 </dt> <dd>
 
-Codice di input. Per ottenere il valore, usare [**get \_ rawinput \_ Code \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam) macro.
+Codice di input. Usare la macro [**\_ \_ \_ WPARAM GET RAWINPUT CODE**](/windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam) per ottenere il valore.
 
 I possibili valori sono i seguenti:
 
 | Valore | Significato |
 |---|---|
-| <span id="RIM_INPUT"></span><span id="rim_input"></span><dl> <dt>**Cerchio \_ INPUT**</dt> <dt>0</dt> </dl> | L'input si è verificato mentre l'applicazione era in primo piano. </br> L'applicazione deve chiamare [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) in modo che il sistema possa eseguire la pulizia. |
-| <span id="RIM_INPUTSINK"></span><span id="rim_inputsink"></span><dl> <dt>**Cerchio \_ INPUTSINK**</dt> <dt>1</dt> </dl> | Si è verificato un input mentre l'applicazione non è in primo piano. |
+| <span id="RIM_INPUT"></span><span id="rim_input"></span><dl> <dt>**RIM \_ INPUT**</dt> <dt>0</dt> </dl> | L'input si è verificato mentre l'applicazione era in primo piano. </br> L'applicazione deve chiamare [**DefWindowProc in**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) modo che il sistema possa eseguire la pulizia. |
+| <span id="RIM_INPUTSINK"></span><span id="rim_inputsink"></span><dl> <dt>**RIM \_ INPUTSINK**</dt> <dt>1</dt> </dl> | L'input si è verificato mentre l'applicazione non era in primo piano. |
 
 </dd> <dt>
 
@@ -55,25 +55,25 @@ I possibili valori sono i seguenti:
 
 </dt> <dd>
 
-Handle **HRAWINPUT** per la struttura [**rawinput**](/windows/win32/api/winuser/ns-winuser-rawinput) che contiene l'input non elaborato dal dispositivo. Per ottenere i dati non elaborati, usare questo handle nella chiamata a [**GetRawInputData**](/windows/win32/api/winuser/nf-winuser-getrawinputdata).
+Handle **HRAWINPUT** per la [**struttura RAWINPUT**](/windows/win32/api/winuser/ns-winuser-rawinput) che contiene l'input non elaborato dal dispositivo. Per ottenere i dati non elaborati, usare questo handle nella chiamata [**a GetRawInputData**](/windows/win32/api/winuser/nf-winuser-getrawinputdata).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-L'input non elaborato è disponibile solo quando l'applicazione chiama [**RegisterRawInputDevices**](/windows/win32/api/winuser/nf-winuser-registerrawinputdevices) con specifiche del dispositivo valide.
+L'input non elaborato è disponibile solo quando l'applicazione chiama [**RegisterRawInputDevices con**](/windows/win32/api/winuser/nf-winuser-registerrawinputdevices) specifiche di dispositivo valide.
 
 ## <a name="requirements"></a>Requisiti
 
 | Requisito | Valore |
 |--------------------------|-------------------------------------------|
-| Client minimo supportato | \[Solo app desktop Windows XP\] |
-| Server minimo supportato | \[Solo app desktop Windows Server 2003\] |
-| Intestazione | <dl> <dt>**Winuser. h (include Windows. h)**</dt> </dl> |
+| Client minimo supportato | Windows Solo \[ app desktop XP\] |
+| Server minimo supportato | Windows Solo app desktop di Server 2003 \[\] |
+| Intestazione | <dl> <dt>**Winuser.h (includere Windows.h)**</dt> </dl> |
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -85,7 +85,7 @@ L'input non elaborato è disponibile solo quando l'applicazione chiama [**Regist
 
 [**RAWINPUT**](/windows/win32/api/winuser/ns-winuser-rawinput)
 
-[**OTTENERE \_ il \_ codice rawinput \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam)
+[**GET \_ RAWINPUT \_ CODE \_ WPARAM**](/windows/win32/api/winuser/nf-winuser-get_rawinput_code_wparam)
 
 **Informazioni concettuali**
 

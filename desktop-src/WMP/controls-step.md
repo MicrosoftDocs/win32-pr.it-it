@@ -1,11 +1,11 @@
 ---
-title: Metodo Controls. Step
-description: Il metodo Step fa in modo che l'elemento multimediale del video corrente blocchi la riproduzione nel frame successivo o nel frame precedente.
+title: Metodo Controls.step
+description: Il metodo step fa sì che l'elemento multimediale video corrente blocchi la riproduzione nel fotogramma successivo o nel fotogramma precedente.
 ms.assetid: f717c583-4073-45a9-b05d-7134d02724a4
 keywords:
-- Metodo Step Media Player Windows
-- Metodo Step Media Player Windows, classe Controls
-- Classe Controls Media Player Windows, Metodo Step
+- Metodo step Windows Media Player
+- Metodo step Windows Media Player , classe Controls
+- Classe Controls Windows Media Player , metodo step
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43fc50ea28bde95efef6e6261788fdcc62df6089
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4626ff80aee55ad6c22be7580a07ef2319afb6792a8c11b815d72af23b5727fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118839826"
 ---
-# <a name="controlsstep-method"></a>Metodo Controls. Step
+# <a name="controlsstep-method"></a>Metodo Controls.step
 
-Il metodo **Step** fa in modo che l'elemento multimediale del video corrente blocchi la riproduzione nel frame successivo o nel frame precedente.
+Il **metodo step** fa sì che l'elemento multimediale video corrente blocchi la riproduzione nel fotogramma successivo o nel fotogramma precedente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ Controls.step(
 
 <dl> <dt>
 
-*frameCount* \[ in\]
+*frameCount* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che indica il numero di frame da scorrere prima del blocco. Attualmente deve essere impostato su 1 o-1.
+**Numero** (**long**) che indica il numero di fotogrammi da eseguire prima del blocco. Attualmente deve essere impostato su 1 o -1.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo supporta attualmente solo i parametri 1 o-1, pertanto è possibile eseguire un solo passaggio di un frame alla volta.
+Questo metodo attualmente supporta solo i parametri 1 o -1, quindi è possibile eseguire un solo fotogramma alla volta.
 
 **Windows Media Player 10 Mobile:** Questo metodo non è supportato.
 

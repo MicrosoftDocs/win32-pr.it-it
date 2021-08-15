@@ -1,7 +1,7 @@
 ---
-description: Il metodo OnWaitStart viene chiamato quando il filtro inizia ad attendere l'ora di presentazione di un campione.
+description: Il metodo OnWaitStart viene chiamato quando il filtro inizia ad attendere l'ora di presentazione di un esempio.
 ms.assetid: 598cd676-3afe-4ec9-ae38-83971412e6a7
-title: Metodo CBaseRenderer. OnWaitStart (Renbase. h)
+title: Metodo CBaseRenderer.OnWaitStart (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c2f88f11e370c6d1962ae6076f4c8f5eecc31407
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eaad14d0eec765a0ad12693c0a1eee67386bc9bb26344ee52c29224d129edf5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822648"
 ---
-# <a name="cbaserendereronwaitstart-method"></a>CBaseRenderer. OnWaitStart, metodo
+# <a name="cbaserendereronwaitstart-method"></a>Metodo CBaseRenderer.OnWaitStart
 
-Il `OnWaitStart` metodo viene chiamato quando il filtro inizia ad attendere l'ora di presentazione di un campione.
+Il `OnWaitStart` metodo viene chiamato quando il filtro inizia ad attendere l'ora di presentazione di un esempio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,9 +46,9 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Il metodo [**CBaseRenderer:: WaitForRenderTime**](cbaserenderer-waitforrendertime.md) chiama questo metodo quando inizia ad attendere l'ora di presentazione di un campione. Questo metodo non esegue alcuna operazione nella classe di base, ma la classe derivata può eseguirne l'override.
+Il [**metodo CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md) chiama questo metodo quando inizia ad attendere l'ora di presentazione di un esempio. Questo metodo non esegue alcun'operazione nella classe di base, ma la classe derivata può eseguirne l'override.
 
-Se si implementa il controllo della qualità, è possibile eseguire l'override di questo metodo insieme al metodo [**CBaseRenderer:: OnWaitEnd**](cbaserenderer-onwaitend.md) . È possibile utilizzare questi metodi per tenere traccia delle prestazioni del filtro.
+Se si implementa il controllo di qualità, è possibile eseguire l'override di questo metodo insieme al metodo [**CBaseRenderer::OnWaitEnd.**](cbaserenderer-onwaitend.md) È possibile usare questi metodi per tenere traccia delle prestazioni del filtro.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,8 +56,8 @@ Se si implementa il controllo della qualità, è possibile eseguire l'override d
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Renbase. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Renbase.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

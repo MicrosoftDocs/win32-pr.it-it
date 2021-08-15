@@ -4,14 +4,14 @@ ms.assetid: a7d207c0-3d93-468a-b463-1eab68b286a2
 title: EC_RENDER_FINISHED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10b2b6b113b1aa60d5e354fe51beb95995f2337e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6dcf99c8517a209a8791c02a4f8811af8ef43c6bdc5b6ed4a4d02dbe7a69fcac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820042"
 ---
-# <a name="ec_render_finished"></a>RENDERING \_ EC \_ COMPLETATO
+# <a name="ec_render_finished"></a>EC \_ RENDER \_ FINISHED
 
 Questo evento non è supportato.
 

@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5e88ea398e1fcfeb38dc079c625f9633e112d60f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 68e049970ca0d1257de8b75818a1beafcc7d6390653e90335c638298c89d9f70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512997"
 ---
 # <a name="variables"></a>Variabili
 
-Le variabili HLSL sono simili alle variabili definite nel linguaggio di programmazione C. Analogamente a C, le variabili hanno alcune restrizioni di denominazione, hanno proprietà di ambito che dipendono da dove sono dichiarate e possono avere metadati utente collegati. Analogamente a C, sono disponibili diversi tipi di dati standard. Diversamente da C, sono disponibili anche tipi di dati aggiuntivi definiti da HLSL che consentono di ottimizzare le prestazioni dei vettori di 4 componenti che usano il calcolo della matrice per operare su dati grafici 3D.
+Le variabili HLSL sono simili alle variabili definite nel linguaggio di programmazione C. Analogamente a C, le variabili hanno alcune restrizioni di denominazione, hanno proprietà di ambito che dipendono da dove vengono dichiarate e possono avere metadati utente associati. Come C, esistono diversi tipi di dati standard. A differenza di C, esistono anche tipi di dati aggiuntivi definiti da HLSL per ottimizzare le prestazioni dei vettori a 4 componenti che usano la matematica della matrice per operare sui dati grafici 3D.
 
 -   [Sintassi delle variabili](dx-graphics-hlsl-variable-syntax.md)
 -   [Tipi di dati](dx-graphics-hlsl-data-types.md)
@@ -31,9 +31,9 @@ Le variabili HLSL sono simili alle variabili definite nel linguaggio di programm
 [Sintassi del linguaggio (DirectX HLSL)](dx-graphics-hlsl-language-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

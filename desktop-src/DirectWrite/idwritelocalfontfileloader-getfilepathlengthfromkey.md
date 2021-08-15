@@ -1,11 +1,11 @@
 ---
 title: Metodo IDWriteLocalFontFileLoader GetFilePathLengthFromKey
-description: Ottiene la lunghezza del percorso del file assoluto dalla chiave di riferimento del file del tipo di carattere.
+description: Ottiene la lunghezza del percorso file assoluto dalla chiave di riferimento del file del tipo di carattere.
 ms.assetid: bdd84d75-5a7a-448a-a52c-0f5997ab07b9
 keywords:
-- Scrittura diretta metodo GetFilePathLengthFromKey
-- Metodo GetFilePathLengthFromKey scrittura diretta, interfaccia IDWriteLocalFontFileLoader
-- IDWriteLocalFontFileLoader Interface Direct Write, metodo GetFilePathLengthFromKey
+- Metodo GetFilePathLengthFromKey Direct Write
+- Metodo GetFilePathLengthFromKey Scrittura diretta, interfaccia IDWriteLocalFontFileLoader
+- Metodo GetFilePathLengthFromKey dell'interfaccia IDWriteLocalFontFileLoader
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 091c3cd5f1e13c40d364a3db005793f1dd0bf5f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 587f432f006493097ec8262fcc2201e2c3b67abe7115c395332671ec35efeba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816352"
 ---
-# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Metodo IDWriteLocalFontFileLoader:: GetFilePathLengthFromKey
+# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Metodo IDWriteLocalFontFileLoader::GetFilePathLengthFromKey
 
-Ottiene la lunghezza del percorso del file assoluto dalla chiave di riferimento del file del tipo di carattere.
+Ottiene la lunghezza del percorso file assoluto dalla chiave di riferimento del file del tipo di carattere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,30 +44,30 @@ HRESULT GetFilePathLengthFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ in\]
+*fontFileReferenceKey* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* void**
 
-Chiave di riferimento del file del tipo di carattere che identifica in modo univoco il file del tipo di carattere locale nell'ambito del caricatore del tipo di carattere utilizzato.
+Chiave di riferimento del file del tipo di carattere che identifica in modo univoco il file del tipo di carattere locale nell'ambito del caricatore del tipo di carattere in uso.
 
 </dd> <dt>
 
 *fontFileReferenceKeySize* 
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **UINT32**
 
-Dimensione della chiave di riferimento del file del tipo di carattere in byte.
+Dimensioni della chiave di riferimento del file del tipo di carattere in byte.
 
 </dd> <dt>
 
-*filePathLength* \[ out\]
+*filePathLength* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **UInt32 \***
+Tipo: **UINT32 \***
 
-Lunghezza della stringa del percorso del file, escluso il carattere **null** terminato.
+Lunghezza della stringa del percorso del file, senza includere il carattere **NULL** terminato.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Lunghezza della stringa del percorso del file, escluso il carattere **null** ter
 
 Tipo: **HRESULT**
 
-Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un codice di errore **HRESULT** .
+Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, restituisce un **codice di errore HRESULT.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -83,7 +83,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>DWrite. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

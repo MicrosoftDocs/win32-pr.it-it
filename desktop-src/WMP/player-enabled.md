@@ -1,9 +1,9 @@
 ---
-title: Player. Enabled
-description: La proprietà Enabled specifica o recupera un valore che indica se il controllo Media Player Windows è abilitato.
+title: Player.enabled
+description: La proprietà enabled specifica o recupera un valore che indica se il controllo Windows Media Player abilitato.
 ms.assetid: 65fea4d2-3330-4cce-bdaf-fae00304271a
 keywords:
-- Media Player Windows Player. Enabled
+- Player.enabled Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,31 +14,31 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d002d1f1420d17d4b1a0b7dd3028b0f2dc0f6f7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 804baa0dbb887cd389214c1c90e7a438e3529d7b7609cf3162091d2bf52cb17d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747596"
 ---
-# <a name="playerenabled"></a>Player. Enabled
+# <a name="playerenabled"></a>Player.enabled
 
-La proprietà **Enabled** specifica o recupera un valore che indica se il controllo Media Player Windows è abilitato.
+La **proprietà enabled** specifica o recupera un valore che indica se il controllo Windows Media Player abilitato.
 
 ## <a name="syntax"></a>Sintassi
 
-*Player* . **abilitato**
+*lettore* . **enabled**
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questa proprietà è un **valore booleano** di lettura/scrittura.
+Questa proprietà è un valore booleano di **lettura/scrittura.**
 
 
 
 | Valore | Descrizione                                           |
 |-------|-------------------------------------------------------|
-| true  | Valore predefinito. Il controllo Media Player Windows è abilitato. |
-| false | Il controllo Media Player Windows è disabilitato.         |
+| true  | Valore predefinito. Il Windows Media Player è abilitato. |
+| false | Il Windows Media Player controllo è disabilitato.         |
 
 
 
@@ -46,7 +46,7 @@ Questa proprietà è un **valore booleano** di lettura/scrittura.
 
 ## <a name="remarks"></a>Commenti
 
-Se **Enabled** è impostato su false, durante le finestre di riproduzione a schermo intero Media Player nasconde i controlli utente.
+Se **enabled** è uguale a false, durante la riproduzione a schermo Windows Media Player nasconde i controlli utente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -54,7 +54,7 @@ Se **Enabled** è impostato su false, durante le finestre di riproduzione a sche
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

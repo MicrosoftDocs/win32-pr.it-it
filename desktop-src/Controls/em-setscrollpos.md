@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SETSCROLLPOS (RichEdit. h)
+title: EM_SETSCROLLPOS messaggio (Richedit.h)
 description: Scorre il contenuto di un controllo Rich Edit fino al punto specificato.
 ms.assetid: 9ec514a4-97b1-44ab-b2ca-973b1f6fc404
 keywords:
-- Controlli di Windows Message EM_SETSCROLLPOS
+- EM_SETSCROLLPOS controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec41ac5255059b8d40f3a4c2e9b666815b9094fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d1d86609c1b3f4b04ade24e5ea2f3343c367bbad0a52b8e07be7c18b2282536
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412336"
 ---
-# <a name="em_setscrollpos-message"></a>\_Messaggio SETSCROLLPOS em
+# <a name="em_setscrollpos-message"></a>Messaggio \_ EM SETSCROLLPOS
 
 Scorre il contenuto di un controllo Rich Edit fino al punto specificato.
 
@@ -32,16 +32,16 @@ Scorre il contenuto di un controllo Rich Edit fino al punto specificato.
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) che specifica un punto nello spazio di testo virtuale del documento, espresso in pixel. Il documento verrà spostato fino a quando questo punto si trova nell'angolo superiore sinistro della finestra di controllo di modifica. Se si desidera modificare la visualizzazione in modo che l'angolo superiore sinistro della visualizzazione sia costituito da due righe e da un carattere nel bordo sinistro. Si passerà un punto di (7, 22).
+Puntatore a [**una struttura POINT**](/previous-versions//dd162805(v=vs.85)) che specifica un punto nello spazio di testo virtuale del documento, espresso in pixel. Verrà fatto scorrere il documento fino a quando questo punto non si trova nell'angolo superiore sinistro della finestra di controllo di modifica. Se si vuole modificare la visualizzazione in modo che l'angolo superiore sinistro della visualizzazione sia di due righe verso il basso e un carattere in dal bordo sinistro. Si passerebbe un punto di (7, 22).
 
-Il controllo Rich Edit controlla le coordinate x e y e le regola se necessario, in modo che venga visualizzata una riga completa nella parte superiore. Garantisce inoltre che il testo non venga mai completamente spostato al di fuori del rettangolo di visualizzazione.
+Il controllo Rich Edit controlla le coordinate x e y e, se necessario, le regola, in modo che nella parte superiore sia visualizzata una riga completa. Garantisce inoltre che il testo non sia mai completamente scorrendo dal rettangolo di visualizzazione.
 
 </dd> </dl>
 
@@ -55,10 +55,10 @@ Questo messaggio restituisce sempre 1.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Componente ridistribuibile<br/>          | Modifica avanzata 3,0<br/>                                                              |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Componente ridistribuibile<br/>          | Rich Edit 3.0<br/>                                                              |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Questo messaggio restituisce sempre 1.
 
 <dl> <dt>
 
-[**\_GETSCROLLPOS em**](em-getscrollpos.md)
+[**EM \_ GETSCROLLPOS**](em-getscrollpos.md)
 </dt> </dl>
 
  

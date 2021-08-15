@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMPMedia isMemberOf
+title: Metodo isMemberOf di IWMPMedia
 description: Il metodo isMemberOf restituisce un valore che indica se l'elemento multimediale specificato è un membro della playlist specificata.
 ms.assetid: 491e0dd5-38e5-47a5-9c94-f1d27d297f8d
 keywords:
 - Metodo isMemberOf Windows Media Player
 - Metodo isMemberOf Windows Media Player, interfaccia IWMPMedia
-- Interfaccia IWMPMedia Windows Media Player, metodo isMemberOf
+- Interfaccia IWMPMedia Windows Media Player metodo , isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f627e9b2f0e1c4b226dda13d280d521ad52df2ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 485121f0ac9c4c441ff90e34b90ef5c9475c22995565b018d3f0e00dc5d94740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746016"
 ---
-# <a name="iwmpmediaismemberof-method"></a>Metodo IWMPMedia:: isMemberOf
+# <a name="iwmpmediaismemberof-method"></a>Metodo IWMPMedia::isMemberOf
 
-Il metodo **isMemberOf** restituisce un valore che indica se l'elemento multimediale specificato è un membro della playlist specificata.
+Il **metodo isMemberOf** restituisce un valore che indica se l'elemento multimediale specificato è un membro della playlist specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,26 +53,26 @@ Implements IWMPMedia.isMemberOf
 
 <dl> <dt>
 
-*pPlaylist* \[ in\]
+*pPlaylist* \[ Pollici\]
 </dt> <dd>
 
-Interfaccia **wmplib. IWMPPlaylist** .
+Interfaccia **WMPLib.IWMPPlaylist.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Valore **System. Boolean** che indica se l'elemento multimediale è un membro della playlist.
+Valore **System.Boolean** che indica se l'elemento multimediale è un membro della playlist.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo non consente di controllare le playlist recuperate tramite l'interfaccia **IWMPMediaCollection** . Per verificare se un elemento multimediale è un membro di una determinata playlist denominata, recuperare la raccolta di playlist con la proprietà **AxWindowsMediaPlayer. PlaylistCollection** . Una volta recuperata la raccolta, recuperare la singola playlist chiamando il metodo **IWMPPlaylistCollection. GetByName** .
+Questo metodo non può controllare le playlist recuperate tramite **l'interfaccia IWMPMediaCollection.** Per verificare se un elemento multimediale è membro di una determinata playlist denominata, recuperare la raccolta di playlist con la **proprietà AxWindowsMediaPlayer.playlistCollection.** Dopo aver recuperato la raccolta, recuperare la singola playlist chiamando il metodo **IWMPPlaylistCollection.getByName.**
 
-Prima di chiamare questo metodo, è necessario disporre dell'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **isMemberOf** per verificare se l'elemento multimediale corrente è un membro della playlist denominata All Music. In caso contrario, l'elemento multimediale corrente viene aggiunto alla playlist. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene **utilizzato isMemberOf** per verificare se l'elemento multimediale corrente è un membro della playlist denominata All Musica. In caso contrario, l'elemento multimediale corrente viene aggiunto alla playlist. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -112,7 +112,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successiva<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -122,7 +122,7 @@ End If
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. PlaylistCollection (VB e C#)**](axwmplib-axwindowsmediaplayer-playlistcollection--vb-and-c.md)
+[**AxWindowsMediaPlayer.playlistCollection (VB e C#)**](axwmplib-axwindowsmediaplayer-playlistcollection--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
@@ -131,7 +131,7 @@ End If
 [**Interfaccia IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

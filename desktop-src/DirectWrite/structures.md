@@ -1,19 +1,19 @@
 ---
-title: Strutture DirectWrite
+title: DirectWrite strutture
 description: DirectWrite definisce le strutture seguenti.
 ms.assetid: 348dd001-bad9-4f1a-a5f5-84b118a5e2d4
 keywords:
-- DirectWrite, strutture
+- DirectWrite,strutture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19f678be8e02c8afecd849673d97ae20f6b1a710
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: eaa3d4d98588e3585022bb0887c6224e29d67e0c0d011437526b33ff0bcf1334
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117815954"
 ---
-# <a name="directwrite-structures"></a>Strutture DirectWrite
+# <a name="directwrite-structures"></a>DirectWrite strutture
 
 DirectWrite definisce le strutture seguenti.
 
@@ -40,10 +40,10 @@ DirectWrite definisce le strutture seguenti.
 | [**ESECUZIONE \_ DEL GLIFO \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) | Contiene le informazioni necessarie ai renderer per disegnare le esecuzioni di glifi. |
 | [**DESCRIZIONE \_ DELL'ESECUZIONE DEL \_ GLIFO DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run_description) | Contiene proprietà aggiuntive correlate a quelle in [**DWRITE \_ GLYPH \_ RUN.**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_run) |
 | [**METRICHE DI \_ HIT \_ TEST DWRITE \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_hit_test_metrics) | Descrive l'area ottenuta da un hit test. |
-| [**DWRITE \_ INLINE \_ OBJECT \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics) | Contiene proprietà che descrivono la misura geometrica di un oggetto inline definito dall'applicazione. |
+| [**DWRITE INLINE OBJECT METRICS (METRICHE DEGLI OGGETTI INLINE DI \_ \_ \_ SCRITTURA)**](/windows/win32/api/dwrite/ns-dwrite-dwrite_inline_object_metrics) | Contiene proprietà che descrivono la misura geometrica di un oggetto inline definito dall'applicazione. |
 | [**OPPORTUNITÀ DI \_ GIUSTIFICAZIONE DELLA SCRITTURA \_**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) | La [**struttura DWRITE \_ JUSTIFICATION \_ OPPORTUNITY**](/windows/win32/api/dwrite_1/ns-dwrite_1-dwrite_justification_opportunity) specifica le informazioni di giustificazione per ogni glifo. |
-| [**PUNTO DI \_ INTERRUZIONE RIGA DI \_ SCRITTURA**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_breakpoint) | Caratteristiche del punto di interruzione della riga di un carattere. |
-| [**METRICHE DELLA LINEA DI \_ SCRITTURA \_**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_metrics) | Contiene informazioni su una riga di testo formattata. |
+| [**PUNTO DI \_ INTERRUZIONE RIGA DI \_ SCRITTURA**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_breakpoint) | Caratteristiche del punto di interruzione riga di un carattere. |
+| [**METRICHE DI DWRITE \_ \_ LINE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_line_metrics) | Contiene informazioni su una riga di testo formattata. |
 | [**DWRITE \_ LINE \_ METRICS1**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_metrics1) | Contiene informazioni su una riga di testo formattata. |
 | [**DWRITE \_ LINE \_ SPACING**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_line_spacing) | |
 | [**MATRICE DI SCRITTURA \_ DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) | La [**struttura DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) specifica la trasformazione grafica da applicare ai glifi sottoposti a rendering. |

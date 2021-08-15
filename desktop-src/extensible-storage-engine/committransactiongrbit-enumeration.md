@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Enumerazione CommitTransactionGrbit'
+description: Altre informazioni sull'enumerazione CommitTransactionGrbit
 title: Enumerazione CommitTransactionGrbit
 TOCTitle: CommitTransactionGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.CommitTransactionGrbit
@@ -30,12 +30,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a93504d688d1eddfcde81ae23c87e62f70e0aab0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec61d29a2bfc3fc502b532b83dbb02640a600a0a5034c9751caab7185f1b037c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716650"
 ---
 # <a name="committransactiongrbit-enumeration"></a>Enumerazione CommitTransactionGrbit
 
@@ -43,8 +43,8 @@ Opzioni per JetCommitTransaction.
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -85,13 +85,13 @@ public enum CommitTransactionGrbit
 <tr class="even">
 <td></td>
 <td>LazyFlush</td>
-<td>Viene eseguito il commit della transazione in modo normale, ma questa API non attende che la transazione venga scaricata nel file di log delle transazioni prima di tornare al chiamante. Questo riduce drasticamente la durata di un'operazione di commit al costo della durabilità. Qualsiasi transazione non scaricata nel log prima di un arresto anomalo verrà automaticamente interrotta durante il ripristino dell'arresto anomalo durante la chiamata successiva a JetInit. Se vengono specificati WaitLastLevel0Commit o WaitAllLevel0Commit, questa opzione viene ignorata.</td>
+<td>Il commit della transazione viene eseguito normalmente, ma questa API non attende lo scaricamento della transazione nel file di log delle transazioni prima di tornare al chiamante. In questo modo si riduce drasticamente la durata di un'operazione di commit a costo della durabilità. Qualsiasi transazione non scaricata nel log prima di un arresto anomalo del sistema verrà automaticamente interrotta durante il ripristino dell'arresto anomalo durante la chiamata successiva a JetInit. Se si specifica WaitLastLevel0Commit o WaitAllLevel0Commit, questa opzione viene ignorata.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>WaitLastLevel0Commit</td>
-<td>Se la sessione ha precedentemente eseguito il commit di tutte le transazioni che non sono ancora state scaricate nel file di log delle transazioni, è necessario scaricarle immediatamente. Questa API resta in attesa fino a quando le transazioni non vengono scaricate prima di tornare al chiamante. Questa operazione è utile se l'applicazione ha precedentemente eseguito il commit di più transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.
-<p>Questa opzione può essere utilizzata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.</p></td>
+<td>Se in precedenza la sessione ha eseguito il commit di transazioni e non sono ancora state scaricate nel file di log delle transazioni, devono essere scaricate immediatamente. Questa API attenderà che le transazioni siano state scaricate prima di tornare al chiamante. Ciò è utile se in precedenza l'applicazione ha eseguito il commit di diverse transazioni usando JET_bitCommitLazyFlush e ora vuole scaricarle tutte su disco.
+<p>Questa opzione può essere usata anche se la sessione non è attualmente in una transazione. Questa opzione non può essere usata in combinazione con altre opzioni.</p></td>
 </tr>
 </tbody>
 </table>
@@ -101,4 +101,4 @@ public enum CommitTransactionGrbit
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

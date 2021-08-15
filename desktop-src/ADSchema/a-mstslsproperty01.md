@@ -1,10 +1,10 @@
 ---
 title: Attributo MS-TSLS-Property01
-description: Segnaposto della proprietà del server terminal 01.
+description: Proprietà segnaposto del server terminal 01.
 ms.assetid: 640cb7b8-fc50-4b1d-acec-4b58910a9212
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-TSLS-Property01-schema AD
+- Schema AD dell'attributo MS-TSLS-Property01
 - Schema AD dell'attributo msTSLSProperty01
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9531028abdaa2d835c255053972f1fc2c4cf106d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d04c0a2c228f3134e5ff88eb3d7c5ca1a5fc9bc10a867efc9e6638380ff84144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103965358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424459"
 ---
 # <a name="ms-tsls-property01-attribute"></a>Attributo MS-TSLS-Property01
 
-Segnaposto della proprietà del server terminal 01.
+Proprietà segnaposto del server terminal 01.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-TSLS-Property01                          |
-| LDAP-Display-Name | msTSLSProperty01                            |
+| Ldap-Display-Name | msTSLSProperty01                            |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2009                     |
-| System-ID-GUID    | 87e53590-971d-4a52-955b-4794d15a84ae        |
+| System-Id-Guid    | 87e53590-971d-4a52-955b-4794d15a84ae        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Segnaposto della proprietà del server terminal 01.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Segnaposto della proprietà del server terminal 01.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Segnaposto della proprietà del server terminal 01.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

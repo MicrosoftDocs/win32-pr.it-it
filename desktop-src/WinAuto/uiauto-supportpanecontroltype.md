@@ -1,40 +1,40 @@
 ---
-title: Tipo di controllo pane
-description: In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo pane.
+title: Tipo di controllo Riquadro
+description: Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il tipo di controllo Riquadro.
 ms.assetid: 2a5d69dc-6880-4610-b481-4371637472ed
 keywords:
-- Automazione interfaccia utente, supporto per il tipo di controllo pane
-- Automazione interfaccia utente, tipo di controllo pane
-- Automazione interfaccia utente, struttura ad albero per il tipo di controllo pane
-- Automazione interfaccia utente, proprietà per il tipo di controllo pane
-- Automazione interfaccia utente, pattern di controllo per il tipo di controllo pane
-- Automazione interfaccia utente, eventi per il tipo di controllo pane
-- strutture ad albero, tipo di controllo pane
-- Proprietà, tipo di controllo pane
-- pattern di controllo, tipo di controllo pane
-- eventi, tipo di controllo pane
-- supporto per il tipo di controllo pane
+- Automazione interfaccia utente,supporto per il tipo di controllo Pane
+- Automazione interfaccia utente,Tipo di controllo Riquadro
+- Automazione interfaccia utente,struttura ad albero per il tipo di controllo Pane
+- Automazione interfaccia utente,proprietà per il tipo di controllo Pane
+- Automazione interfaccia utente,pattern di controllo per il tipo di controllo Pane
+- Automazione interfaccia utente,events per il tipo di controllo Pane
+- strutture ad albero, tipo di controllo Pane
+- proprietà,Tipo di controllo Riquadro
+- pattern di controllo,tipo di controllo Riquadro
+- eventi,Tipo di controllo Riquadro
+- supporto per il tipo di controllo Pane
 - Pane (tipo di controllo)
-- tipi di controllo, struttura ad albero per il tipo di controllo pane
-- tipi di controllo, pattern di controllo per il tipo di controllo pane
-- tipi di controllo, supporto per il riquadro
-- tipi di controllo, riquadro
+- tipi di controllo, struttura ad albero per il tipo di controllo Pane
+- tipi di controllo,pattern di controllo per il tipo di controllo Riquadro
+- tipi di controllo, supporto per Pane
+- tipi di controllo,Riquadro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51b7f22e6fb302ebb160a174c27c61119b8f09fe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15e4a7225869c0752e65aece7e4eca00a416614315c8d5af810bdeb57d29aae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104565027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118825528"
 ---
-# <a name="pane-control-type"></a>Tipo di controllo pane
+# <a name="pane-control-type"></a>Tipo di controllo Riquadro
 
-In questo argomento vengono fornite informazioni sul supporto di automazione interfaccia utente Microsoft per il tipo di controllo **pane** .
+Questo argomento fornisce informazioni sul supporto di Microsoft Automazione interfaccia utente per il **tipo di controllo** Riquadro.
 
-Il tipo di controllo **pane** è per aree potenzialmente scorrevoli con contenuto diversi. Viene usato per rappresentare un oggetto all'interno di un frame o di una finestra del documento. Gli utenti possono spostarsi tra i controlli del riquadro e all'interno del contenuto del riquadro corrente. I controlli riquadro rappresentano un livello di raggruppamento inferiore rispetto alle finestre o ai documenti, ma superiore ai singoli controlli. L'utente si sposta tra i riquadri premendo TAB, F6 o CTRL+TAB, a seconda del contesto.
+Il **tipo di** controllo Riquadro è per aree potenzialmente scorrevoli con contenuto diverso. Viene usato per rappresentare un oggetto all'interno di una cornice o di una finestra del documento. Gli utenti possono spostarsi tra i controlli riquadro e all'interno del contenuto del riquadro corrente. I controlli riquadro rappresentano un livello di raggruppamento inferiore alle finestre o ai documenti, ma sopra i singoli controlli. L'utente si sposta tra i riquadri premendo TAB, F6 o CTRL+TAB, a seconda del contesto.
 
-Nelle sezioni seguenti vengono definiti la struttura ad albero, le proprietà, i pattern di controllo e gli eventi di automazione interfaccia utente necessari per il tipo di controllo **pane** . I requisiti di automazione interfaccia utente si applicano a tutti i controlli riquadro in cui la piattaforma/Framework dell'interfaccia utente integra il supporto di automazione interfaccia utente per i tipi di controllo e i pattern
+Le sezioni seguenti definiscono la struttura ad Automazione interfaccia utente, le proprietà, i pattern di controllo e gli eventi necessari per il **tipo di controllo Pane.** I Automazione interfaccia utente si applicano a tutti i controlli riquadro in cui il framework o la piattaforma dell'interfaccia utente si integra Automazione interfaccia utente per i tipi di controllo e i pattern di controllo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -47,7 +47,7 @@ In questo argomento sono contenute le sezioni seguenti.
 
 ## <a name="typical-tree-structure"></a>Struttura ad albero tipica
 
-Nella tabella seguente viene illustrata una tipica visualizzazione del controllo e del contenuto dell'albero di automazione interfaccia utente relativo ai controlli riquadro e viene descritto il possibile contenuto di ogni visualizzazione. Per altre informazioni sull'albero di automazione interfaccia utente, vedere [Cenni preliminari sull'albero di automazione interfaccia utente](uiauto-treeoverview.md).
+La tabella seguente illustra un controllo tipico e una visualizzazione contenuto dell'albero Automazione interfaccia utente che riguarda i controlli riquadro e descrive cosa può essere contenuto in ogni visualizzazione. Per altre informazioni sull'albero Automazione interfaccia utente, vedere panoramica Automazione interfaccia utente [albero](uiauto-treeoverview.md).
 
 
 
@@ -76,81 +76,81 @@ Nella tabella seguente viene illustrata una tipica visualizzazione del controllo
 
 
 
- 
+ 
 
-Un controllo riquadro viene sempre visualizzato nelle visualizzazioni controlli e contenuto. Non esporre un oggetto layout come riquadro nel controllo o nella visualizzazione contenuto se l'oggetto viene utilizzato solo per la presentazione visiva.
+Un controllo riquadro viene sempre visualizzato nelle visualizzazioni controllo e contenuto. Non esporre un oggetto di layout come riquadro nel controllo o nella visualizzazione contenuto se l'oggetto viene usato solo per la presentazione visiva.
 
 ## <a name="relevant-properties"></a>Proprietà rilevanti
 
-La tabella seguente elenca le proprietà di automazione interfaccia utente il cui valore o la cui definizione è particolarmente rilevante per i controlli riquadro. Per altre informazioni sulle proprietà di automazione interfaccia utente, vedere [recupero di proprietà da elementi di automazione interfaccia utente](uiauto-propertiesforclients.md).
+Nella tabella seguente sono elencate le Automazione interfaccia utente il cui valore o definizione è particolarmente rilevante per i controlli riquadro. Per altre informazioni sulle Automazione interfaccia utente, vedere Recupero di proprietà [da Automazione interfaccia utente elementi](uiauto-propertiesforclients.md).
 
 
 
 | Proprietà di automazione interfaccia utente                                                                                              | Valore      | Note                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ACCESSKEYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | Vedere le note. | Se una combinazione di tasti specifica sposta lo stato attivo sul riquadro, le informazioni devono essere esposte tramite questa proprietà.                                                                                                                                                                                                      |
-| [**\_AUTOMATIONIDPROPERTYID UIA**](uiauto-automation-element-propids.md)                 | Vedere le note. | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata della struttura ad albero di automazione interfaccia utente.                                                                                                                                                                                                          |
-| [**\_BOUNDINGRECTANGLEPROPERTYID UIA**](uiauto-automation-element-propids.md)       | Vedere le note. | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                              |
-| [**\_CLICKABLEPOINTPROPERTYID UIA**](uiauto-automation-element-propids.md)             | Vedere le note. | Questa proprietà espone un punto selezionabile del controllo riquadro che fa sì che il riquadro assuma lo stato attivo quando viene selezionato.                                                                                                                                                                                                |
-| [**\_CONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md)                   | **Riquadro**   |                                                                                                                                                                                                                                                                                                                       |
-| [**\_HELPTEXTPROPERTYID UIA**](uiauto-automation-element-propids.md)                         | Vedere le note. | Il testo della Guida per i controlli riquadro deve illustrare lo scopo del frame e il modo in cui si riferisce ad altri frame. Una descrizione è necessaria se lo scopo e la relazione dei frame non sono deselezionati dal valore della [**proprietà \_ NamePropertyId di UIA**](uiauto-automation-element-propids.md) . |
-| [**\_ISCONTENTELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true       | Il controllo riquadro viene sempre incluso nella visualizzazione contenuto dell'albero di automazione interfaccia utente.                                                                                                                                                                                                                                    |
-| [**\_ISCONTROLELEMENTPROPERTYID UIA**](uiauto-automation-element-propids.md)         | true       | Il controllo riquadro viene sempre incluso nella visualizzazione controlli dell'albero di automazione interfaccia utente.                                                                                                                                                                                                                                    |
-| [**\_ISKEYBOARDFOCUSABLEPROPERTYID UIA**](uiauto-automation-element-propids.md)   | Vedere le note. | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                                                                                                                                             |
-| [**\_LABELEDBYPROPERTYID UIA**](uiauto-automation-element-propids.md)                       | Vedere le note. | I controlli riquadro in genere non hanno un'etichetta statica. Se è presente un'etichetta di testo statico, l'etichetta deve essere esposta tramite questa proprietà.                                                                                                                                                                                      |
-| [**\_LOCALIZEDCONTROLTYPEPROPERTYID UIA**](uiauto-automation-element-propids.md) | Vedere le note. | Stringa localizzata corrispondente al tipo di controllo **pane** . Il valore predefinito è "pane" per en-US o inglese (Stati Uniti).                                                                                                                                                                                        |
-| [**\_NAMEPROPERTYID UIA**](uiauto-automation-element-propids.md)                                 | Vedere le note. | Il valore di questa proprietà deve essere sempre un titolo chiaro, conciso e significativo.                                                                                                                                                                                                                                     |
+| [**UIA \_ AccessKeyPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note. | Se una combinazione di tasti specifica fornisce lo stato attivo al riquadro, tali informazioni devono essere esposte tramite questa proprietà.                                                                                                                                                                                                      |
+| [**UIA \_ AutomationIdPropertyId**](uiauto-automation-element-propids.md)                 | Vedere le note. | Il valore di questa proprietà deve essere univoco tra tutti gli elementi peer nella visualizzazione non elaborata dell'Automazione interfaccia utente albero.                                                                                                                                                                                                          |
+| [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vedere le note. | Il rettangolo più esterno che contiene l'intero controllo.                                                                                                                                                                                                                                                              |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vedere le note. | Questa proprietà espone un punto selezionabile del controllo riquadro che fa sì che il riquadro assuma lo stato attivo quando viene selezionato.                                                                                                                                                                                                |
+| [**UIA \_ ControlTypePropertyId**](uiauto-automation-element-propids.md)                   | **Riquadro**   |                                                                                                                                                                                                                                                                                                                       |
+| [**UIA \_ HelpTextPropertyId**](uiauto-automation-element-propids.md)                         | Vedere le note. | Il testo della Guida per i controlli riquadro deve spiegare lo scopo del frame e il modo in cui è correlato ad altri frame. Una descrizione è necessaria se lo scopo e la relazione dei frame non sono chiari dal valore della proprietà [**UIA \_ NamePropertyId.**](uiauto-automation-element-propids.md) |
+| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | true       | Il controllo riquadro è sempre incluso nella visualizzazione contenuto dell'Automazione interfaccia utente albero.                                                                                                                                                                                                                                    |
+| [**UIA \_ IsControlElementPropertyId**](uiauto-automation-element-propids.md)         | true       | Il controllo riquadro è sempre incluso nella visualizzazione controlli dell'Automazione interfaccia utente albero.                                                                                                                                                                                                                                    |
+| [**UIA \_ IsKeyboardFocusablePropertyId**](uiauto-automation-element-propids.md)   | Vedere le note. | Se il controllo può ricevere lo stato attivo, deve supportare questa proprietà.                                                                                                                                                                                                                                             |
+| [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vedere le note. | I controlli riquadro in genere non hanno un'etichetta statica. Se è presente un'etichetta di testo statico, l'etichetta deve essere esposta tramite questa proprietà.                                                                                                                                                                                      |
+| [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vedere le note. | Stringa localizzata corrispondente al **tipo di controllo** Pane. Il valore predefinito è "pane" per en-US o english (Stati Uniti).                                                                                                                                                                                        |
+| [**UIA \_ NamePropertyId**](uiauto-automation-element-propids.md)                                 | Vedere le note. | Il valore di questa proprietà deve essere sempre un titolo chiaro, conciso e significativo.                                                                                                                                                                                                                                     |
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Pattern di controllo obbligatori
 
-La tabella seguente elenca i pattern di controllo di automazione interfaccia utente che devono essere supportati dai controlli riquadro. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+Nella tabella seguente sono elencati i Automazione interfaccia utente di controllo necessari per essere supportati dai controlli riquadro. Per altre informazioni sui pattern di controllo, vedere [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Pattern di controllo                                         | Supporto | Note                                                                                                                                                                                         |
 |---------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)           | Dipende da | Implementare il pattern di controllo [Dock](uiauto-implementingdock.md) se il controllo riquadro può essere ancorato.                                                                                          |
-| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)       | Dipende da | Implementare il pattern di controllo [Scroll](uiauto-implementingscroll.md) se è possibile scorrere il controllo riquadro.                                                                                    |
-| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Dipende da | Implementare il pattern di controllo [Transform](uiauto-implementingtransform.md) se il controllo riquadro può essere spostato, ridimensionato o ruotato sullo schermo.                                              |
-| [**IWindowProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider)       | Mai   | Se l'elemento deve implementare il pattern di controllo [Window](uiauto-implementingwindow.md) , il controllo deve essere basato sul tipo di controllo [Window](uiauto-supportwindowcontroltype.md) . |
+| [**IDockProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idockprovider)           | Dipende da | Implementare [il pattern di](uiauto-implementingdock.md) controllo Dock se il controllo riquadro può essere ancorato.                                                                                          |
+| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)       | Dipende da | Implementare [il pattern di](uiauto-implementingscroll.md) controllo Scroll se è possibile scorrere il controllo riquadro.                                                                                    |
+| [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) | Dipende da | Implementare [il pattern di](uiauto-implementingtransform.md) controllo Trasforma se il controllo riquadro può essere spostato, ridimensionato o ruotato sullo schermo.                                              |
+| [**IWindowProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider)       | Mai   | Se l'elemento deve implementare il pattern di controllo [Window,](uiauto-implementingwindow.md) il controllo deve essere basato sul [tipo di controllo](uiauto-supportwindowcontroltype.md) Window. |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventi obbligatori
 
-La tabella seguente elenca gli eventi di automazione interfaccia utente necessari per supportare i controlli riquadro. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
+Nella tabella seguente sono elencati Automazione interfaccia utente eventi che i controlli riquadro devono supportare. Per altre informazioni sugli eventi, vedere [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 
-| Evento di automazione interfaccia utente                                                                                                                                        | Note                                                                                                                      |
+| Automazione interfaccia utente evento                                                                                                                                        | Note                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**\_ASYNCCONTENTLOADEDEVENTID UIA**](uiauto-event-ids.md)                                                                   |                                                                                                                            |
-| [**\_AUTOMATIONFOCUSCHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                           |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà BoundingRectanglePropertyId.                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento di modifica della proprietà IsOffscreenPropertyId.                                  | Se il controllo supporta la proprietà [**IsOffscreen**](uiauto-automation-element-propids.md) , deve supportare questo evento. |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.   | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId. | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.           | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.       | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.     | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.               | Se il controllo supporta il pattern di controllo [Scroll](uiauto-implementingscroll.md) , deve supportare questo evento.           |
-| [**\_STRUCTURECHANGEDEVENTID UIA**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
+| [**UIA \_ AsyncContentLoadedEventId**](uiauto-event-ids.md)                                                                   |                                                                                                                            |
+| [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                                           |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                      |                                                                                                                            |
+| [**Interfaccia \_ utente Evento di modifica della proprietà IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                  | Se il controllo supporta la [**proprietà IsOffscreen,**](uiauto-automation-element-propids.md) deve supportare questo evento. |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)   | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md) | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollHorizontalViewSizePropertyId.**](uiauto-control-pattern-propids.md)           | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticallyScrollablePropertyId.**](uiauto-control-pattern-propids.md)       | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalScrollPercentPropertyId.**](uiauto-control-pattern-propids.md)     | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**Interfaccia \_ utente Evento di modifica della proprietà ScrollVerticalViewSizePropertyId.**](uiauto-control-pattern-propids.md)               | Se il controllo supporta il pattern [di controllo Scroll,](uiauto-implementingscroll.md) deve supportare questo evento.           |
+| [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                       |                                                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="pane-control-type-example"></a>Esempio di tipo di controllo Pane
 
-Nell'immagine seguente viene illustrato un controllo che implementa il tipo di controllo **pane** .
+L'immagine seguente illustra un controllo che implementa il tipo di controllo **Pane.**
 
-![screenshot che mostra l'esempio di un controllo riquadro](images/panexmpl.jpg)
+![Screenshot che mostra l'esempio di un controllo riquadro](images/panexmpl.jpg)
 
 
 
@@ -161,8 +161,8 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Albero di automazione interfaccia utente-visualizzazione controlli</th>
-<th>Albero di automazione interfaccia utente-visualizzazione contenuto</th>
+<th>Automazione interfaccia utente struttura ad albero- Visualizzazione controlli</th>
+<th>Automazione interfaccia utente struttura ad albero- Visualizzazione contenuto</th>
 </tr>
 </thead>
 <tbody>
@@ -178,7 +178,7 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 </ul></li>
 <li>Riquadro
 <ul>
-<li>Edit (pattern scroll)</li>
+<li>Modifica (modello di scorrimento)</li>
 </ul></li>
 </ul></td>
 <td><ul>
@@ -191,7 +191,7 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 </ul></li>
 <li>Riquadro
 <ul>
-<li>Edit (pattern scroll)</li>
+<li>Modifica (modello di scorrimento)</li>
 </ul></li>
 </ul></li>
 </ul></td>
@@ -201,7 +201,7 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -216,9 +216,9 @@ Nell'immagine seguente viene illustrato un controllo che implementa il tipo di c
 [Cenni preliminari su automazione interfaccia utente](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

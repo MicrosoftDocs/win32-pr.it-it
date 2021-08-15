@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-ExecuteScriptPassword
-description: Utilizzato durante la ridenominazione del dominio. Questo valore non può essere scritto o letto tramite LDAP.
+title: Attributo ms-DS-ExecuteScriptPassword
+description: Usato durante la ridenominazione del dominio. Questo valore non può essere scritto o letto da tramite LDAP.
 ms.assetid: 381c3676-0a11-4e53-8093-f04dbf156250
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-ExecuteScriptPassword
-- attributo msDS-ExecuteScriptPassword-schema AD
+- Schema AD dell'attributo msDS-ExecuteScriptPassword
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01ebb231404188235236442df1d4916814f0636
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abd9381d58c533341539e0957f787e166572ec60d4009aa34f84a327ba3a34ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426754"
 ---
-# <a name="ms-ds-executescriptpassword-attribute"></a>attributo ms-DS-ExecuteScriptPassword
+# <a name="ms-ds-executescriptpassword-attribute"></a>Attributo ms-DS-ExecuteScriptPassword
 
-Utilizzato durante la ridenominazione del dominio. Questo valore non può essere scritto o letto tramite LDAP.
+Usato durante la ridenominazione del dominio. Questo valore non può essere scritto o letto da tramite LDAP.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-DS-ExecuteScriptPassword                           |
-| LDAP-Display-Name | msDS-ExecuteScriptPassword                            |
+| Ldap-Display-Name | msDS-ExecuteScriptPassword                            |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.                      |
+| Privilegio di aggiornamento  | Questo valore viene impostato dal sistema.                      |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1783                               |
-| System-ID-GUID    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
+| System-Id-Guid    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -43,7 +43,7 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 ## <a name="implementations"></a>Implementazioni
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Vero                                                          |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Vero                                                          |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Vero                                                          |
-| È a valore singolo       | Vero                                                          |
+| Is-Single-Valued       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classi utilizzate in        | [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| È a valore singolo       | Vero                                                                                                    |
+| A valore singolo       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| È a valore singolo       | Vero                                                                                                    |
+| A valore singolo       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Utilizzato durante la ridenominazione del dominio. Questo valore non può essere
 | ID collegamento                | \-                                                                                                      |
 | MAPI-Id                | \-                                                                                                      |
 | System-Only            | Vero                                                                                                    |
-| È a valore singolo       | Vero                                                                                                    |
+| A valore singolo       | Vero                                                                                                    |
 | Indicizzato             | Falso                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                            |
 | Range-Lower            | 0                                                                                                       |
 | Range-Upper            | 64                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                              |
 | System-Flags           | 0x00000011                                                                                              |
-| Classi utilizzate in        | [**Computer**](c-computer.md)<br/> [**Cross-Ref-container**](c-crossrefcontainer.md)<br/> |
+| Classi usate in        | [**Computer**](c-computer.md)<br/> [**Contenitore tra riferimenti**](c-crossrefcontainer.md)<br/> |
 
 
 

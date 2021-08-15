@@ -4,58 +4,58 @@ description: Usare gli elementi del Pannello di controllo per consentire agli ut
 ms.assetid: 845325ef-9f1d-4aa7-a5b0-685fac74a9f8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 3b0e6fdf4e0c916f80ae3c1783e4e9e5fee920a8
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 86226e3643f741d277c0e2864870a7e81c25614a6dd5ba2e01a05c67729c26d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117853547"
 ---
 # <a name="control-panels"></a>Pannelli di controllo
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
 Usare gli elementi del Pannello di controllo per consentire agli utenti di configurare le funzionalità a livello di sistema ed eseguire attività correlate. I programmi con un'interfaccia utente devono invece essere configurati direttamente dall'interfaccia utente.
 
-Con Pannello di controllo in Microsoft Windows, gli utenti possono configurare le funzionalità a livello di sistema ed eseguire attività correlate. Esempi di configurazione delle funzionalità a livello di sistema includono l'installazione e la configurazione di hardware e software, la sicurezza, la manutenzione del sistema e la gestione degli account utente.
+Con Pannello di controllo in Microsoft Windows, gli utenti possono configurare funzionalità a livello di sistema ed eseguire attività correlate. Esempi di configurazione delle funzionalità a livello di sistema includono l'installazione e la configurazione di hardware e software, la sicurezza, la manutenzione del sistema e la gestione degli account utente.
 
-Il termine Pannello di controllo si riferisce all'intera funzionalità Pannello di controllo Windows. I singoli pannelli di controllo vengono definiti elementi del pannello di controllo. Un elemento del pannello di controllo viene considerato di primo livello quando è direttamente accessibile dal pannello di controllo home page o da una pagina di categoria.
+Il termine Pannello di controllo si riferisce all'intera Windows Pannello di controllo funzionalità. I singoli pannelli di controllo vengono definiti elementi del Pannello di controllo. Un elemento del Pannello di controllo viene considerato di primo livello quando è direttamente accessibile dal pannello di home page o da una pagina di categoria.
 
 ![Screenshot della categoria voce del pannello di controllo ](images/winenv-ctrl-panels-image1.png)
 
 Elemento tipico del Pannello di controllo.
 
-Il pannello di home page è il punto di ingresso principale per tutti gli elementi del Pannello di controllo. Elenca gli elementi in base alla categoria, insieme alle attività più comuni. Viene visualizzato quando gli utenti fa clic Pannello di controllo nella menu Start.
+Il pannello di home page è il punto di ingresso principale per tutti gli elementi del Pannello di controllo. Elenca gli elementi in base alla categoria, insieme alle attività più comuni. Viene visualizzato quando gli utenti Pannello di controllo nella menu Start.
 
-Una pagina della categoria del pannello di controllo elenca gli elementi all'interno di una singola categoria, insieme alle attività più comuni. Viene visualizzato quando gli utenti fa clic sul nome di una categoria home page.
+Una pagina delle categorie del pannello di controllo elenca gli elementi all'interno di una singola categoria, insieme alle attività più comuni. Viene visualizzato quando gli utenti selezionano un nome di categoria nella home page.
 
-Gli elementi del Pannello di controllo vengono implementati usando [flussi di attività](glossary.md) o finestre delle proprietà. Per Windows Vista e versioni successive, i flussi di attività sono l'interfaccia utente preferita.
+Gli elementi del Pannello di controllo vengono implementati [tramite flussi attività o](glossary.md) finestre delle proprietà. Per Windows Vista e versioni successive, i flussi attività sono l'interfaccia utente preferita.
 
-**Sviluppatori:** Per informazioni su come creare elementi del Pannello di controllo, vedere Pannello di controllo [elementi](/previous-versions//bb776838(v=vs.85)).
+**Sviluppatori:** Per informazioni su come creare elementi del Pannello di controllo, [vedere Pannello di controllo Items.](/previous-versions//bb776838(v=vs.85))
 
-**Nota:** Le linee guida correlate [alle finestre delle](win-property-win.md) proprietà sono presentate in un articolo separato.
+**Nota:** Le linee guida relative [alle finestre delle](win-property-win.md) proprietà sono presentate in un articolo separato.
 
 ## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente giusta?
 
 Per decidere, prendi in considerazione queste domande:
 
--   **Lo scopo è configurare le funzionalità a livello di sistema?** In caso contrario, usare un altro punto di integrazione. Rendere configurabili le funzionalità dell'applicazione direttamente dall'interfaccia utente usando le finestre di dialogo delle opzioni, anziché Pannello di controllo. Per le utilità che non vengono usate per l'installazione, la configurazione o le attività correlate (ad esempio la risoluzione dei problemi), usare il menu Start come punto di integrazione.
--   **La funzionalità a livello di sistema ha la propria interfaccia utente?** In tal caso, l'interfaccia utente è la posizione in cui gli utenti devono apportare modifiche. Ad esempio, un'utilità di backup di sistema deve essere configurata dalle opzioni del programma anziché da Pannello di controllo.
--   **Gli utenti dovranno modificare spesso la configurazione?** In tal caso( ad esempio, più volte alla settimana), prendere in considerazione soluzioni alternative, ad esempio oltre all'uso di Pannello di controllo. Ad esempio, l'impostazione del volume master di Windows può essere configurata direttamente dalla relativa icona nell'area di notifica. Alcune impostazioni possono essere configurate automaticamente. In Esplora risorse, ad esempio, la scheda Compatibilità per le proprietà dell'applicazione consente l'esecuzione di un'applicazione in modalità a colori 256 anziché richiedere agli utenti di modificare manualmente la modalità video.
--   **Gli utenti di destinazione sono professionisti IT?** In tal caso, usare invece uno snap-in [Microsoft Management Console (MMC),](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) progettato specificamente per le attività di gestione del sistema. In alcuni casi, la soluzione migliore consiste nell'avere sia un elemento del Pannello di controllo per utenti generali che uno snap-in MMC per i professionisti IT.
+-   **Lo scopo è quello di configurare le funzionalità a livello di sistema?** In caso contrario, usare un altro punto di integrazione. Rendere configurabili le funzionalità dell'applicazione direttamente dall'interfaccia utente usando le finestre di dialogo delle opzioni, anziché Pannello di controllo. Per le utilità che non vengono usate per l'installazione, la configurazione o le attività correlate (ad esempio la risoluzione dei problemi), usare il menu Start come punto di integrazione.
+-   **La funzionalità a livello di sistema ha una propria interfaccia utente?** In tal caso, l'interfaccia utente è la posizione in cui gli utenti devono apportare modifiche. Ad esempio, un'utilità di backup del sistema deve essere configurata dalle relative opzioni di programma anziché da Pannello di controllo.
+-   **Gli utenti dovranno modificare spesso la configurazione?** In questo caso( ad esempio, più volte alla settimana), prendere in considerazione soluzioni alternative, ad esempio oltre a usare Pannello di controllo. Ad esempio, l'Windows volume master può essere configurata direttamente dalla relativa icona nell'area di notifica. Alcune impostazioni possono essere configurate automaticamente. In Windows Explorer, ad esempio, la scheda Compatibilità per le proprietà dell'applicazione consente l'esecuzione di un'applicazione in modalità a 256 colori anziché richiedere agli utenti di modificare manualmente la modalità video.
+-   **Gli utenti di destinazione sono professionisti IT?** In tal caso, usare [Microsoft Management Console snap-in MMC (System](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) Management Snap-in), progettato specificamente per le attività di gestione del sistema. In alcuni casi, la soluzione migliore consiste nell'avere sia un elemento del Pannello di controllo per utenti generici che uno snap-in MMC per i professionisti IT.
 
     ![Screenshot della finestra di gestione dei computer ](images/winenv-ctrl-panels-image2.png)
 
     In questo esempio lo snap-in MMC Utenti e gruppi locali fornisce la gestione degli utenti destinata ai professionisti IT. È più probabile che altri utenti usino l'elemento Account utente in Pannello di controllo.
 
--   **La funzionalità è una funzionalità OEM usata solo durante la configurazione iniziale del sistema?** In tal caso, usare windows Centro attività iniziali come punto di integrazione.
+-   **La funzionalità è una funzionalità OEM usata solo durante la configurazione iniziale del sistema?** In tal caso, usare il Windows Centro attività iniziali come punto di integrazione.
 
-Gli elementi del Pannello di controllo sono necessari perché molte funzionalità a livello di sistema non hanno un punto di integrazione più ovvio o diretto. Tuttavia Pannello di controllo non devono essere visualizzate come "un'unica posizione" per tutte le impostazioni di configurazione. **I programmi con un'interfaccia utente devono essere configurati direttamente dall'interfaccia utente anziché usare gli elementi del Pannello di controllo.**
+Gli elementi del Pannello di controllo sono necessari perché molte funzionalità a livello di sistema non hanno un punto di integrazione più ovvio o diretto. Tuttavia Pannello di controllo non deve essere visualizzato come "un'unica posizione" per tutte le impostazioni di configurazione. **I programmi con un'interfaccia utente devono essere configurati direttamente dall'interfaccia utente invece di usare gli elementi del Pannello di controllo.**
 
 **Non corretto:**
 
-![Screenshot dell'elemento opzioni Internet del pannello di controllo ](images/winenv-ctrl-panels-image3.png)
+![Screenshot dell'elemento opzioni Internet del Pannello di controllo ](images/winenv-ctrl-panels-image3.png)
 
 In questo esempio, Windows Internet Explorer non deve essere rappresentato in Pannello di controllo, perché la propria interfaccia utente è un punto di integrazione migliore.
 
@@ -63,14 +63,14 @@ In questo esempio, Windows Internet Explorer non deve essere rappresentato in Pa
 
 Per decidere, prendi in considerazione queste domande:
 
--   **La funzionalità può essere espressa come attività che possono collegarsi a un elemento esistente del Pannello di controllo estendibile?** Gli elementi del Pannello di controllo seguenti sono estendibili: Dispositivi Bluetooth, Schermo, Internet, Tastiera, Mouse, Rete, Alimentazione, Sistema, Wireless (a infrarosso).
--   **Le proprietà e le attività sostituiscono le funzionalità dell'elemento del Pannello di controllo estendibile esistente?** In tal caso, è necessario estendere l'elemento esistente del Pannello di controllo perché ciò comporta un'esperienza utente più semplice. In caso contrario, creare un nuovo elemento del Pannello di controllo.
+-   **La funzionalità può essere espressa come attività che possono essere collegate a un elemento esistente ed estendibile del Pannello di controllo?** Gli elementi del Pannello di controllo seguenti sono estendibili: Bluetooth Dispositivi, Schermo, Internet, Tastiera, Mouse, Rete, Alimentazione, Sistema, Wireless (a Bluetooth).
+-   **Le proprietà e le attività sostituiscono le funzionalità dell'elemento esistente del Pannello di controllo estendibile?** In tal caso, è necessario estendere l'elemento esistente del Pannello di controllo perché ciò comporta un'esperienza utente più semplice. In caso contrario, creare un nuovo elemento del Pannello di controllo.
 
 ## <a name="design-concepts"></a>Concetti relativi alla progettazione
 
-**Il Pannello di controllo è basato su una metafora reale.** Un pannello di controllo reale è una raccolta di controlli (manopole, interruttori, misuratori e schermi) usati per monitorare e controllare un dispositivo. Gli utenti di questi pannelli di controllo spesso necessitano di training per comprendere come usarli.
+**Il Pannello di controllo è basato su una metafora reale.** Un pannello di controllo reale è una raccolta di controlli (manopole, interruttori, misuratori e schermi) usati per monitorare e controllare un dispositivo. Gli utenti di tali pannelli di controllo spesso necessitano di formazione per comprendere come usarli.
 
-A differenza delle controparti reali, le progettazioni del pannello di **controllo di Windows sono ottimizzate per gli utenti per la prima volta.** Gli utenti non eseguono la maggior parte delle attività del pannello di controllo molto spesso, quindi in genere non ricordano come eseguirle e devono in effetti rilegarle ogni volta.
+A differenza delle controparti reali, le Windows del pannello di controllo sono ottimizzate per gli utenti che si sono **registrati per la prima volta.** Gli utenti non eseguono la maggior parte delle attività del pannello di controllo molto spesso, quindi in genere non ricordano come eseguirle e devono in effetti rilearle ogni volta.
 
 Per progettare un elemento del Pannello di controllo utile e facile da usare:
 
@@ -78,9 +78,9 @@ Per progettare un elemento del Pannello di controllo utile e facile da usare:
 -   Presentare le proprietà in termini di obiettivi utente anziché di tecnologia.
 -   Presentare le proprietà al livello giusto.
 -   Progettare pagine per attività specifiche.
--   Pagine di progettazione per utenti Standard e amministratori protetti.
+-   Progettare pagine per utenti standard e amministratori protetti.
 
-Quando si progettano e si valutano gli elementi da includere Pannello di controllo, determinare le attività comuni che gli utenti eseguono e assicurarsi che vi sia un percorso chiaro per eseguire tali attività. Gli utenti eseguono in genere i tipi di attività seguenti con gli elementi del Pannello di controllo:
+Quando si progettano e si valutano gli elementi da includere in Pannello di controllo, determinare le attività comuni eseguite dagli utenti e assicurarsi che vi sia un percorso chiaro per eseguire tali attività. Gli utenti eseguono in genere i tipi di attività seguenti con gli elementi del Pannello di controllo:
 
 -   Configurazione iniziale
 -   Modifiche poco frequenti (per la maggior parte delle impostazioni)
@@ -90,24 +90,24 @@ Quando si progettano e si valutano gli elementi da includere Pannello di control
 
 **Se si fa una sola cosa...**
 
-Progettare le pagine del pannello di controllo per attività specifiche e presentarle in termini di obiettivi utente anziché di tecnologia.
+Progettare le pagine del pannello di controllo per attività specifiche e presentarle in termini di obiettivi dell'utente anziché di tecnologia.
 
 ## <a name="usage-patterns"></a>Modelli di utilizzo
 
 Per gli elementi del Pannello di controllo, è possibile usare un flusso di attività o una finestra delle proprietà. Ecco i modelli di utilizzo:
 
-### <a name="task-flow-patterns"></a>Modelli di flusso di attività
+### <a name="task-flow-patterns"></a>Modelli di flusso delle attività
 
-Gli elementi del flusso di attività usano una pagina hub per presentare le opzioni di alto livello e le pagine spoke per eseguire la configurazione effettiva.
+Gli elementi del flusso di attività usano una pagina hub per presentare le scelte di alto livello e le pagine spoke per eseguire la configurazione effettiva.
 
 **Pagine dell'hub**
 
--   Pagine dell'hub basate su attività. Queste pagine dell'hub presentano le attività usate più di frequente. Sono più utili per alcune attività di uso comune o importanti in cui gli utenti necessitano di altre indicazioni e spiegazioni. Le pagine dell'hub non hanno pulsanti di commit. Le pagine dell'hub ibrido basato su attività hanno anche alcune proprietà o comandi direttamente su di esse. Le pagine dell'hub ibrido sono fortemente consigliate quando è più probabile che gli utenti usino Pannello di controllo per accedere a tali proprietà e comandi.
--   Pagine dell'hub basate su oggetti. Queste pagine dell'hub presentano gli oggetti disponibili usando un controllo visualizzazione elenco. Sono più usati quando possono essere presenti diversi oggetti. Le pagine dell'hub non hanno pulsanti di commit.
+-   Pagine dell'hub basate su attività. Queste pagine dell'hub presentano le attività usate più di frequente. Sono più utili per alcune attività di uso comune o importanti in cui gli utenti necessitano di altre indicazioni e spiegazioni. Le pagine dell'hub non hanno pulsanti di commit. Le pagine dell'hub basate su attività ibride hanno anche alcune proprietà o comandi direttamente su di esse. Le pagine dell'hub ibrido sono fortemente consigliate quando è più probabile che gli utenti usino Pannello di controllo per accedere a tali proprietà e comandi.
+-   Pagine dell'hub basate su oggetti. Queste pagine dell'hub presentano gli oggetti disponibili usando un controllo di visualizzazione elenco. Sono più usati quando potrebbero essere presenti più oggetti. Le pagine dell'hub non hanno pulsanti di commit.
 
 **Pagine spoke**
 
--   Pagine attività. Queste pagine spoke presentano un'attività o un passaggio di un'attività con un'istruzione principale specifica basata su attività. Sono più utili per le attività che traggono vantaggio da indicazioni e spiegazioni aggiuntive.
+-   Pagine attività. Queste pagine spoke presentano un'attività o un passaggio in un'attività con un'istruzione principale specifica basata su attività. Sono più utili per le attività che traggono vantaggio da indicazioni e spiegazioni aggiuntive.
 -   Pagine del modulo. Queste pagine spoke presentano una raccolta di proprietà e attività correlate basate su un'istruzione principale generale. Sono più utili per le funzionalità che hanno molte proprietà e traggono vantaggio da una presentazione diretta a pagina singola, ad esempio le proprietà avanzate.
 
 ### <a name="property-sheet-patterns"></a>Modelli della finestra delle proprietà
@@ -116,25 +116,25 @@ Gli elementi del flusso di attività usano una pagina hub per presentare le opzi
 
 ## <a name="guidelines"></a>Indicazioni
 
-### <a name="property-sheet-control-panel-items"></a>Elementi del Pannello di controllo della finestra delle proprietà
+### <a name="property-sheet-control-panel-items"></a>Elementi del pannello di controllo della finestra delle proprietà
 
--   **Non usare le finestre delle proprietà per i nuovi elementi del Pannello di controllo.** Usare invece i flussi di attività per creare un'esperienza senza problemi e usare completamente la funzionalità di categorizzazione e ricerca del pannello di controllo home page.
+-   **Non usare le finestre delle proprietà per i nuovi elementi del pannello di controllo.** Usare invece i flussi di attività per creare un'esperienza semplice e usare completamente la funzionalità di categorizzazione e ricerca del pannello di controllo home page.
 
 ### <a name="task-flow-control-panel-items"></a>Elementi del pannello di controllo del flusso di attività
 
 **Generale**
 
--   **Mantenere visibili il contenuto e i controlli più importanti senza scorrere.** Gli utenti non scorreranno per visualizzare il contenuto della pagina a meno che non abbia un motivo. È possibile rendere i pulsanti di commit sempre visibili posizionandoli in [un'area dei comandi](glossary.md) anziché nell'area del contenuto. Non suddividere le pagine solo per evitare lo scorrimento.
-    -   **È possibile scorrere verticalmente le pagine lunghe,** purché i controlli più importanti siano visibili senza scorrimento.
+-   **Mantenere il contenuto e i controlli più importanti visibili senza scorrere.** Gli utenti non scorreranno per visualizzare il contenuto della pagina a meno che non ne abbia un motivo. È possibile rendere i pulsanti di commit sempre visibili inserendoli in [un'area dei comandi](glossary.md) anziché nell'area del contenuto. Non suddividere le pagine solo per evitare lo scorrimento.
+    -   **È possibile scorrere verticalmente pagine lunghe,** purché i controlli più importanti siano visibili senza scorrere.
     -   **Non usare lo scorrimento orizzontale.** Riprogettare invece il contenuto della pagina e usare lo scorrimento verticale. Le pagine possono avere barre di scorrimento orizzontali solo se sono molto ristrette.
 -   **Per spostarsi tra le pagine:**
     -   Usare [i collegamenti alle](glossary.md) attività per avviare un'attività.
     -   Usare i collegamenti alle attività o un pulsante Avanti per passare alla pagina successiva in un'attività in più passaggi.
     -   Usare i pulsanti di commit per completare un'attività.
-    -   Usare il pulsante Indietro nella barra dei menu per tornare alle pagine visualizzate in precedenza. Non aggiungere un'pulsante Indietro all'area dei comandi.
+    -   Usare il pulsante Indietro nella barra dei menu per tornare alle pagine visualizzate in precedenza. Non aggiungere un pulsante Indietro all'area dei comandi.
     -   Usare la barra degli indirizzi per tornare direttamente al pannello di controllo home page.
-    -   Usare i collegamenti Vedi anche nel riquadro attività per passare alle pagine in altri elementi del Pannello di controllo. In caso contrario, la navigazione deve rimanere all'interno di un singolo elemento del Pannello di controllo.
--   **Inserire solo il pannello di home page nella barra degli indirizzi.** Facendo clic su tale collegamento si torna al pannello home page, abbandonando qualsiasi lavoro in corso senza una [conferma.](https://msdn.microsoft.com/library/windows/desktop/aa511273.aspx)
+    -   Usare Vedere anche i collegamenti nel riquadro attività per passare alle pagine in altri elementi del Pannello di controllo. In caso contrario, la navigazione deve rimanere all'interno di un singolo elemento del Pannello di controllo.
+-   **Inserire solo il pannello di home page nella barra degli indirizzi.** Facendo clic su questo collegamento si torna al pannello di home page, abbandonando qualsiasi lavoro in corso senza una [conferma.](https://msdn.microsoft.com/library/windows/desktop/aa511273.aspx)
 -   **Non inserire un pulsante di comando Chiudi nelle pagine del pannello di controllo.** Gli utenti possono chiudere una finestra del pannello di controllo usando il pulsante Chiudi sulla barra del titolo.
 
 **Pulsanti e collegamenti alle attività**
@@ -142,58 +142,58 @@ Gli elementi del flusso di attività usano una pagina hub per presentare le opzi
 -   **Quando una pagina ha un piccolo set di opzioni fisse, usare i collegamenti alle attività anziché una combinazione di pulsanti di opzione e un pulsante Avanti.** In questo modo gli utenti possono selezionare una risposta con un solo clic.
 -   È possibile inserire i collegamenti alle attività e i pulsanti nelle posizioni seguenti (in ordine di individuabilità):
     -   Area [dei comandi](glossary.md) (solo per i pulsanti di comando nelle pagine spoke).
-    -   [L'area del contenuto](glossary.md):
+    -   Area [del contenuto:](glossary.md)
         -   Pulsanti di comando
         -   Collegamenti alle attività
         -   Altri collegamenti
     -   Collegamenti nel riquadro [attività (solo](glossary.md) pagine hub).
 -   **Basare la posizione dei collegamenti e dei pulsanti delle attività sull'importanza e sulla necessità di individuabilità.**
     -   **Inserire solo i pulsanti di commit nell'area dei comandi.**
-    -   **Inserire le attività essenziali nell'area del contenuto.** I pulsanti di comando tendono a attirare la massima attenzione, quindi riservarli per i comandi che gli utenti devono visualizzare. Anche i collegamenti alle attività richiamano l'attenzione, ma non i pulsanti di comando.
-    -   **Riservare il riquadro attività e i collegamenti semplici per le attività secondarie (meno importanti).** Il riquadro attività è l'area meno individuabile di una pagina di attività e i collegamenti semplici non sono visibili come i pulsanti di comando e i collegamenti alle attività.
+    -   **Inserire le attività essenziali nell'area del contenuto.** I pulsanti di comando tendono a attirare maggiormente l'attenzione, quindi riservarli per i comandi che gli utenti devono visualizzare. Anche i collegamenti alle attività richiamano l'attenzione, ma non i pulsanti di comando.
+    -   **Riservare il riquadro attività e i collegamenti semplici per le attività secondarie (meno importanti).** Il riquadro attività è l'area meno individuabile di una pagina attività e i collegamenti semplici non sono visibili come pulsanti di comando e collegamenti di attività.
 -   Per i collegamenti alle attività presentati nell'area del contenuto:
-    -   **Se sono presenti più di sette collegamenti, raggruppare i collegamenti in categorie.** Specificare le intestazioni per ognuno dei gruppi.
+    -   **Se sono presenti più di sette collegamenti, raggruppare i collegamenti in categorie.** Specificare le intestazioni per ogni gruppo.
     -   **Per meno di sette collegamenti, presentare i collegamenti in un singolo gruppo senza intestazione.**
 -   **Presentare i collegamenti e i pulsanti delle attività in un ordine logico.** Elencare i collegamenti alle attività verticalmente, pulsanti di comando orizzontalmente.
--   All'interno delle **categorie dividere i comandi in gruppi correlati.** Presentare i gruppi di attività posizionando per primi i gruppi usati più di frequente e all'interno di ogni gruppo, inserire prima le attività usate più di frequente. **L'ordine risultante deve seguire approssimativamente la probabilità di utilizzo, ma avere anche un flusso logico.**
-    -   **Eccezione:** I collegamenti alle attività che comportano l'esecuzione di tutte le operazioni devono essere posizionati per primi.
--   **Se sono presenti molti collegamenti attività,** assegnare alle attività più importanti un aspetto più evidente usando un'icona di 24x24 pixel e due righe di testo. Per le attività meno importanti, usare un'icona di 16x16 pixel o nessuna icona e una singola riga di testo del collegamento.
+-   All'interno **delle categorie, dividere i comandi in gruppi correlati.** Presentare i gruppi di attività posizionando i più comunemente usati per primi e all'interno di ogni gruppo, posizionare prima le attività usate più di frequente. **L'ordine risultante deve seguire approssimativamente la probabilità di utilizzo, ma anche avere un flusso logico.**
+    -   **Eccezione:** I collegamenti alle attività che comportano l'esecuzione di tutti gli elementi devono essere posizionati per primi.
+-   **Se sono presenti molti collegamenti di attività,** assegnare alle attività più importanti un aspetto più evidente usando un'icona di 24 x 24 pixel e due righe di testo. Per attività meno importanti, usare un'icona di 16x16 pixel o nessuna icona e una singola riga di testo del collegamento.
 
-    ![Screenshot di elementi con icone grandi e piccole ](images/winenv-ctrl-panels-image4.png)
+    ![Screenshot degli elementi con icone grandi e piccole ](images/winenv-ctrl-panels-image4.png)
 
     In questo esempio, ai comandi importanti viene assegnato un aspetto più evidente.
 
--   **Avere una netta separazione fisica tra i comandi usati di frequente e i comandi distruttivi.** In caso contrario, gli utenti potrebbero fare clic accidentalmente su comandi distruttivi. Potrebbe essere necessario riordinare i comandi per riunire i comandi distruttivi.
+-   **Avere una netta separazione fisica tra i comandi usati di frequente e i comandi distruttivi.** In caso contrario, gli utenti potrebbero fare clic su comandi distruttivi accidentalmente. Potrebbe essere necessario riordinare i comandi per riunire i comandi distruttivi.
 -   **Fornire il meccanismo per annullare i comandi direttamente nella pagina.** Gli utenti non devono spostarsi altrove per annullare un errore.
--   **Per i collegamenti alle attività, usare tutte le icone di collegamento attività predefinite o tutte le icone personalizzate.** Non combinarli. È consigliabile usare icone personalizzate solo se:
+-   **Per i collegamenti alle attività, usare tutte le icone di collegamento alle attività predefinite o tutte le icone personalizzate.** Non combinarle. Prendere in considerazione l'uso di icone personalizzate solo se:
     -   Consentono agli utenti di comprendere le attività.
-    -   Sono conformi agli standard [dell'icona a forma di ingranaggio .](vis-icons.md)
+    -   Sono conformi agli standard [dell'icona Aero](vis-icons.md).
     -   Hanno un aspetto discreto.
 
 **Finestre di dialogo**
 
-Quando si usano flussi di attività, in genere si vuole che un'attività scorrono da una pagina all'altro all'interno di un'unica finestra, ma le circostanze seguenti sono eccezioni. Usare le finestre di dialogo nelle circostanze seguenti:
+Quando si usano flussi di attività, in genere si vuole che un'attività scorrono da una pagina all'altro all'interno di una singola finestra, ma le circostanze seguenti sono eccezioni. Usare le finestre di dialogo nelle circostanze seguenti:
 
--   Per richiedere agli utenti un nome utente e una password di amministratore. A questo scopo, usare sempre la finestra di dialogo Gestione credenziali. Deve essere [modale.](glossary.md)
+-   Per richiedere agli utenti un nome utente e una password amministratore. Usare sempre la finestra di dialogo Gestione credenziali a questo scopo. Deve essere [modale.](glossary.md)
 -   Per confermare un comando sul posto usando una finestra di dialogo attività o una finestra di messaggio. Deve essere modale.
--   Per ottenere l'input per i comandi sul posto, ad esempio per i comandi Nuovo, Aggiungi, Salva con nome, Rinomina e Stampa.
+-   Per ottenere input per i comandi sul posto, ad esempio per i comandi Nuovo, Aggiungi, Salva con nome, Rinomina e Stampa.
 
     ![Screenshot della finestra di dialogo Elimina percorsi di rete ](images/winenv-ctrl-panels-image5.png)
 
     In questo esempio il comando Elimina viene eseguito in una finestra di dialogo anziché in una pagina separata.
 
--   Per eseguire attività secondarie autonome. L'uso [di una](glossary.md)finestra secondaria non modabile consente di eseguire tali attività in modo indipendente e all'esterno del flusso di attività principale.
+-   Per eseguire attività secondarie e autonome. [L'uso di una](glossary.md)finestra secondaria non modabile consente di eseguire tali attività in modo indipendente e all'esterno del flusso di attività principale.
 
 ### <a name="hub-pages"></a>Pagine dell'hub
 
 **Generale**
 
 -   Usare le pagine dell'hub basato su attività quando:
-    -   **È presente un numero ridotto di attività importanti o di uso comune.**
-    -   **La configurazione prevede uno o due oggetti** (ad esempio monitor, tastiera, mouse, controller di gioco).
-    -   **La configurazione si applica a livello di sistema** (ad esempio, data e ora, sicurezza, opzioni di risparmio energia).
--   Usare le pagine dell'hub basate su oggetti quando:
-    -   **La configurazione può interessare diversi oggetti** (ad esempio, account utente, connessioni di rete, stampanti).
+    -   **È presente un numero ridotto di attività di uso comune o importanti.**
+    -   **La configurazione prevede uno o due oggetti** (ad esempio monitoraggi, tastiera, mouse, controller di gioco).
+    -   **La configurazione si applica a livello di** sistema (ad esempio, data e ora, sicurezza, opzioni di risparmio energia).
+-   Usare le pagine dell'hub basato su oggetti quando:
+    -   **La configurazione può includere diversi oggetti** (ad esempio account utente, connessioni di rete, stampanti).
     -   **La configurazione si applica solo all'oggetto selezionato.**
 -   **Non usare una pagina hub se l'elemento** del Pannello di controllo ha una singola pagina che contiene tutte le attività e le proprietà coinvolte.
 
@@ -228,7 +228,7 @@ Per altre linee guida sulla presentazione di elenchi di oggetti, vedere [List Vi
 
     In questo esempio ogni attività ha un collegamento all'attività e un'icona.
 
--   **Per le pagine dell'hub basate su oggetti, il clic singolo seleziona gli oggetti e facendo doppio clic viene selezionato un oggetto e viene visualizzata la pagina predefinita.** La pagina predefinita è in genere una pagina delle proprietà o una pagina dell'hub basata su attività.
+-   **Per le pagine dell'hub basate su oggetti, il clic singolo seleziona gli oggetti e facendo doppio clic si seleziona un oggetto e si passa alla pagina predefinita.** La pagina predefinita è in genere una pagina delle proprietà o una pagina dell'hub basata su attività.
 -   **Una pagina dell'hub basata su oggetti può passare a un hub basato su attività per gli oggetti selezionati.** Tuttavia, è consigliabile evitare questi hub secondari perché fanno in modo che un elemento del Pannello di controllo sia troppo indiretto.
 
 **Riquadri attività**
@@ -245,7 +245,7 @@ Usare i riquadri attività per presentare collegamenti a comandi, visualizzazion
     -   **Vedere anche**. Collegamenti facoltativi che passano agli elementi del Pannello di controllo correlati.
 -   **Non usare i riquadri attività nelle pagine spoke.** A differenza delle pagine hub, le pagine spoke devono essere incentrate sul completamento dell'attività. Non si vuole incoraggiare gli utenti a spostarsi prima del completamento.
 
-**Vedere anche collegamenti**
+**Vedere anche i collegamenti**
 
 -   **Specificare Visualizza anche i collegamenti nel riquadro attività per consentire agli utenti di trovare gli elementi correlati del Pannello di controllo o l'elemento del Pannello di controllo corretto se è presente quello errato.** È probabile che il collegamento agli elementi che gli utenti associano all'elemento del Pannello di controllo.
 
@@ -277,7 +277,7 @@ In questo modo, il significato dei pulsanti di commit per l'attività principale
 **Interazione (pagine spoke intermedie)**
 
 -   **Usare i collegamenti alle attività o un pulsante Avanti per passare alla pagina successiva.** Il modo per procedere al passaggio successivo dovrebbe essere sempre ovvio.
--   **È possibile avere collegamenti di navigazione a passaggi di attività facoltativi.** Per evitare confusione quando gli utenti emettono il commit all'attività, tali pagine aggiuntive devono essere pagine intermedie all'interno dello stesso elemento del Pannello di controllo. Non devono avere pulsanti di commit, ma deve essere eseguito il commit quando viene eseguito il commit dell'attività principale.
+-   **È possibile avere collegamenti di navigazione a passaggi di attività facoltativi.** Per evitare confusione quando gli utenti emettono il commit all'attività, tali pagine aggiuntive devono essere pagine intermedie all'interno dello stesso elemento del Pannello di controllo. Non devono avere pulsanti di commit, ma devono essere confermati quando viene eseguito il commit dell'attività principale.
 
 **Interazione (pagine spoke finali)**
 
@@ -289,18 +289,18 @@ In questo modo, il significato dei pulsanti di commit per l'attività principale
 -   **Non verificare se gli utenti abbandonano le modifiche** passando da Indietro, Chiudi o dalla barra degli indirizzi. Tuttavia, è possibile verificare se una navigazione potenzialmente non intenzionale può comportare una perdita significativa del tempo o dell'impegno dell'utente.
 -   **Non usare collegamenti di comando o di navigazione** (inclusi i collegamenti Vedere anche). Nelle pagine spoke finali, gli utenti devono completare o annullare in modo esplicito l'attività. Gli utenti non devono essere invitati a spostarsi altrove, perché questa operazione probabilmente annullerebbe l'attività in modo implicito.
 -   **Quando gli utenti completano o annullano un'attività, devono essere inviati nuovamente alla pagina dell'hub da cui è stata avviata l'attività.** Se tale pagina non è presente, chiudere invece la finestra del pannello di controllo. Non presupporre che le pagine spoke siano sempre avviate da un'altra pagina.
--   **Rimuovere le pagine non più "vincolate" dallo stack Esplora risorse Back** quando si riportano gli utenti alla pagina da cui è stata avviata l'attività. Gli utenti non dovrebbero mai visualizzare le pagine di cui è già stato eseguito il commit quando fanno clic sul pulsante Indietro. Gli utenti devono sempre apportare modifiche aggiuntive ripristinando completamente l'attività invece di fare clic su Indietro per modificare le pagine non recenti.
+-   **Rimuovere le pagine di cui è stato eseguito** il commit non ancora Windows Explorer Back stack quando si riportano gli utenti alla pagina da cui è stata avviata l'attività. Gli utenti non dovrebbero mai visualizzare le pagine di cui è già stato eseguito il commit quando fanno clic sul pulsante Indietro. Gli utenti devono sempre apportare modifiche aggiuntive ripristinando completamente l'attività invece di fare clic su Indietro per modificare le pagine non recenti.
     -   **Sviluppatori:** È possibile rimuovere queste pagine non disponibili usando le API ITravelLog::FindTravelEntry() e ITravelLogEx::D eleteEntry().
 
 **Pulsanti di commit**
 
 **Nota:** I pulsanti Annulla vengono considerati pulsanti di commit.
 
--   **Confermare le attività usando pulsanti di commit che sono risposte specifiche all'istruzione principale, anziché etichette generiche, ad esempio OK.** Le etichette sui pulsanti di commit dovrebbero avere senso per conto proprio. Evitare di usare OK perché non è una risposta specifica all'istruzione principale e quindi più facile da fraintendere. Inoltre, OK viene in genere usato con le finestre di dialogo modali e implica erroneamente la chiusura della finestra dell'elemento del pannello di controllo.
+-   **Confermare le attività usando pulsanti di commit che sono risposte specifiche all'istruzione principale, anziché etichette generiche, ad esempio OK.** Le etichette sui pulsanti di commit dovrebbero avere senso per conto proprio. Evitare di usare OK perché non è una risposta specifica all'istruzione principale e quindi più facile da fraintendere. Inoltre, OK viene in genere usato con le finestre di dialogo modali e implica erroneamente la chiusura della finestra dell'elemento del Pannello di controllo.
     -   **Eccezioni:**
         -   Usare OK per le pagine che non hanno impostazioni.
         -   Usare OK quando la risposta specifica è ancora generica, ad esempio Salva, Seleziona o Scegli, come quando si modifica un'impostazione specifica o una raccolta di impostazioni.
-        -   Usare OK se la pagina contiene pulsanti di opzione che sono risposte all'istruzione principale. Per mantenere il modello di commit ritardato, non è possibile usare i collegamenti alle attività in una pagina spoke finale.
+        -   Usare OK se la pagina contiene pulsanti di opzione che sono risposte all'istruzione principale. Per mantenere il modello di commit ritardato, non è possibile usare collegamenti di attività in una pagina spoke finale.
 
             ![Screenshot delle restrizioni Web con il pulsante OK ](images/winenv-ctrl-panels-image10.png)
 
@@ -321,13 +321,13 @@ In questo modo, il significato dei pulsanti di commit per l'attività principale
 
 -   Assicurarsi che il pulsante Anteprima applichi ora le modifiche in sospeso, ma ripristina le impostazioni correnti se gli utenti si allontanano dalla pagina senza eseguire il **commit delle modifiche.**
 -   **È possibile usare i pulsanti di anteprima in qualsiasi pagina spoke.** Le pagine dell'hub non necessitano di pulsanti di anteprima perché usano un [modello di commit immediato.](glossary.md)
--   **Provare a usare un pulsante Anteprima anziché un pulsante Applica per le pagine del pannello di controllo.** I pulsanti di anteprima sono più facili da comprendere per gli utenti e possono essere usati in qualsiasi pagina spoke.
+-   **Provare a usare un pulsante Anteprima invece di un pulsante Applica per le pagine del pannello di controllo.** I pulsanti di anteprima sono più facili da comprendere per gli utenti e possono essere usati in qualsiasi pagina spoke.
 -   **Fornire un pulsante Anteprima solo se nella pagina sono disponibili impostazioni (almeno una) con effetti che gli utenti possono visualizzare.** Gli utenti devono essere in grado di visualizzare in anteprima una modifica, valutarne la modifica e apportare altre modifiche in base a tale valutazione.
 -   **Abilitare sempre il pulsante Anteprima.**
 
 **Anteprime live**
 
-Un elemento del Pannello di controllo ha un'anteprima dinamica quando l'effetto delle modifiche in una pagina spoke può essere visualizzato immediatamente.
+Un elemento del pannello di controllo ha un'anteprima dinamica quando l'effetto delle modifiche in una pagina spoke può essere visualizzato immediatamente.
 
 -   **È consigliabile usare l'anteprima dinamica per le impostazioni di visualizzazione quando:**
     -   L'effetto è ovvio, in genere perché si applica all'intero monitoraggio.
@@ -336,7 +336,7 @@ Un elemento del Pannello di controllo ha un'anteprima dinamica quando l'effetto 
 
         ![Screenshot della finestra di dialogo Modifica impostazioni colore ](images/winenv-ctrl-panels-image12.png)
 
-        In questo esempio, l'effetto delle impostazioni colore e aspetto di Windows viene visualizzato immediatamente. In questo modo, gli utenti possono apportare modifiche con il minimo sforzo.
+        In questo esempio, l'effetto delle impostazioni Windows colore e aspetto viene visualizzato immediatamente. In questo modo, gli utenti possono apportare modifiche con il minimo sforzo.
 
 -   **Usare Salva modifiche e Annulla per i pulsanti di commit.** "Salva modifiche" mantiene le impostazioni correnti, mentre Annulla ripristina le impostazioni originali. "Salva modifiche" viene usato invece di OK per chiarire che le modifiche in anteprima non sono ancora state applicate.
 -   **Non specificare un pulsante Applica.** L'anteprima live rende non necessaria l'opzione Applica.
@@ -348,14 +348,14 @@ Un elemento del Pannello di controllo ha un'anteprima dinamica quando l'effetto 
 -   **Usare i pulsanti Applica solo nelle pagine spoke finali.** I pulsanti Applica non devono essere usati nelle pagine spoke intermedie per mantenere un modello di commit immediato.
     -   **Eccezione:** È possibile usare i pulsanti Applica in una pagina dell'hub ibrido se la modifica di un'impostazione richiede [l'elevazione dei privilegi](glossary.md). Per altri dettagli, vedere Interazione [tra le pagine dell'hub.](#hub-pages)
 -   **Specificare un pulsante Applica solo se nella pagina sono presenti impostazioni (almeno una) con effetti che gli utenti possono valutare in modo significativo.** In genere, i pulsanti Applica vengono usati quando le impostazioni apportano modifiche visibili. Gli utenti devono essere in grado di applicare una modifica, valutare la modifica e apportare altre modifiche in base a tale valutazione.
--   **Abilitare il pulsante Applica solo quando sono presenti modifiche in sospeso.** In caso contrario, disabilitarlo.
+-   **Abilitare il pulsante Applica solo in caso di modifiche in sospeso.** In caso contrario, disabilitarlo.
 -   **Assegnare "A" come chiave di accesso.**
 
 ### <a name="control-panel-integration"></a>Integrazione del pannello di controllo
 
 Per integrare l'elemento del pannello di controllo con Windows, è possibile:
 
--   **Registrare l'elemento del Pannello** di controllo (inclusi il nome, la descrizione e l'icona) in modo che Windows ne sia a conoscenza.
+-   **Registrare l'elemento del** pannello di controllo (inclusi il nome, la descrizione e l'icona) in modo che Windows ne sia a conoscenza.
 -   Se l'elemento del pannello di controllo è di primo livello (vedere di seguito):
     -   Associarlo alla pagina **della categoria appropriata.**
     -   **Fornire collegamenti alle attività (inclusi il nome,** la descrizione, le parole chiave e la riga di comando) per indicare le attività primarie e consentire agli utenti di passare direttamente alle attività.
@@ -368,7 +368,7 @@ Per integrare l'elemento del pannello di controllo con Windows, è possibile:
 -   **Aggiungere l'elemento del pannello di controllo a una pagina di categoria solo se:**
 
     -   La maggior parte degli utenti ne ha bisogno. Esempio: Centro connessioni di rete e condivisione
-    -   Viene usato più volte. Esempio: Sistema
+    -   Viene usato molte volte. Esempio: Sistema
     -   Fornisce funzionalità importanti che non vengono esposte altrove. Esempio: Stampanti
 
     Gli elementi del pannello di controllo che soddisfano questi criteri vengono definiti elementi di primo livello.
@@ -407,13 +407,13 @@ Per integrare l'elemento del pannello di controllo con Windows, è possibile:
 
 ### <a name="standard-users-and-protected-administrators"></a>Utenti standard e amministratori protetti
 
-**Molte impostazioni richiedono privilegi di amministratore per la modifica.** Se un processo richiede privilegi di amministratore, Windows [](glossary.md) Vista e versioni successive richiedono agli utenti [Standard](glossary.md) e agli amministratori protetti di elevare i privilegi in modo esplicito. In questo modo si impedisce l'esecuzione di codice dannoso con privilegi di amministratore.
+**Molte impostazioni richiedono privilegi di amministratore per la modifica.** Se un processo richiede privilegi di amministratore, Windows Vista [](glossary.md) e versioni successive richiedono agli utenti [standard](glossary.md) e agli amministratori protetti di elevare i privilegi in modo esplicito. In questo modo si impedisce l'esecuzione di codice dannoso con privilegi di amministratore.
 
 Per altre informazioni ed esempi, vedere [Controllo dell'account utente.](winenv-uac.md)
 
 ### <a name="schemes-and-themes"></a>Schemi e temi
 
-Uno schema è una raccolta denominata di impostazioni visive. Un tema è una raccolta denominata di impostazioni nel sistema. Esempi di schemi e temi includono Display, Mouse, Phone e Modem, Opzioni risparmio energia e Sound and Audio Options.
+Uno schema è una raccolta denominata di impostazioni visive. Un tema è una raccolta denominata di impostazioni nel sistema. Esempi di schemi e temi includono Display, Mouse, Telefono e Modem, Opzioni risparmio energia e Opzioni audio e audio.
 
 -   **Consentire agli utenti di creare schemi quando:**
 
@@ -435,11 +435,11 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
 ### <a name="miscellaneous"></a>Varie
 
--   **Usare Pannello di controllo per le funzionalità che sostituiscono o estendono le funzionalità di Windows esistenti.** Gli elementi del Pannello di controllo seguenti sono estendibili: Dispositivi Bluetooth, Schermo, Internet, Tastiera, Mouse, Rete, Alimentazione, Sistema, Wireless (a bluetooth).
+-   **Usare Pannello di controllo per le funzionalità che sostituiscono o estendono le Windows esistenti.** Gli elementi del Pannello di controllo seguenti sono estendibili: Bluetooth Dispositivi, Schermo, Internet, Tastiera, Mouse, Rete, Alimentazione, Sistema, Wireless (a Bluetooth).
 
 ### <a name="default-values"></a>Valori predefiniti
 
--   **Le impostazioni all'interno di un elemento del Pannello di controllo devono riflettere lo stato corrente della funzionalità.** In caso contrario, sarebbe fuorviante e potrebbe causare risultati indesiderati. Ad esempio, se le impostazioni riflettono le raccomandazioni ma non lo stato corrente, gli utenti potrebbero fare clic su Annulla invece di apportare modifiche, ritieni che non siano necessarie modifiche.
+-   **Le impostazioni all'interno di un elemento del Pannello di controllo devono riflettere lo stato corrente della funzionalità.** In caso contrario, sarebbe fuorviante e potrebbe causare risultati indesiderati. Ad esempio, se le impostazioni riflettono le raccomandazioni ma non lo stato corrente, gli utenti potrebbero fare clic su Annulla invece di apportare modifiche, pensare che non sono necessarie modifiche.
 -   **Scegliere lo stato iniziale più sicuro (per evitare la perdita di dati o l'accesso al sistema) e quello più sicuro.** Si supponga che la maggior parte degli utenti non modificherà le impostazioni.
 -   **Se la sicurezza e la sicurezza non sono fattori, scegliere lo stato iniziale più probabile o conveniente.**
 
@@ -447,14 +447,14 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
 ### <a name="item-names"></a>Nomi degli elementi
 
--   **Scegliere un nome descrittivo che comunichi chiaramente e differenzia le attività dell'elemento del Pannello di controllo.** La maggior parte dei nomi descrive la funzionalità o l'oggetto di Windows in fase di configurazione e viene visualizzato nella visualizzazione classica del pannello di controllo home page.
+-   **Scegliere un nome descrittivo che comunichi chiaramente e differenzia le attività dell'elemento del Pannello di controllo.** La maggior parte dei nomi Windows la funzionalità o l'oggetto da configurare e vengono visualizzati nella visualizzazione classica del pannello di controllo home page.
 -   **Non includere le parole "Impostazioni", "Opzioni", "Proprietà" o "Configurazione" nel nome.** Ciò è implicito e la sua osunzione rende più semplice l'analisi da parte degli utenti.
 
     **Non corretto:**
 
     Opzioni di accessibilità
 
-    Impostazioni modem
+    Modem Impostazioni
 
     Opzioni risparmio energia
 
@@ -466,7 +466,7 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
     Modem
 
-    Potenza
+    Elettricità
 
     Lingue e formati internazionali
 
@@ -478,7 +478,7 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
     Opzioni cartella
 
-    Opzioni telefono e modem
+    Telefono e modem
 
     **Corretto:**
 
@@ -486,16 +486,16 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
     Modem
 
-    Negli esempi corretti, le funzionalità principali dell'elemento del Pannello di controllo vengono sottolineate.
+    Negli esempi corretti, le funzionalità principali degli elementi del Pannello di controllo vengono sottolineate.
 
 -   Usare [l'uso di maiuscole e minuscole in stile titolo.](glossary.md)
 
 ### <a name="page-titles"></a>Titoli delle pagine
 
-**Nota:** Come per tutte le finestre di Esplora risorse, i titoli delle pagine del Pannello di controllo vengono visualizzati sulla barra [degli indirizzi,](glossary.md)ma non sulla barra del titolo.
+**Nota:** Come per tutte le finestre di Explorer, i titoli delle pagine del Pannello di controllo vengono visualizzati sulla barra [degli indirizzi,](glossary.md)ma non sulla barra del titolo.
 
 -   **Per le pagine dell'hub, usare il nome dell'elemento del Pannello di controllo.**
--   **Per le pagine spoke, usare un riepilogo conciso dello scopo della pagina.** Usare l'istruzione principale della pagina se è concisa. In caso contrario, usare una rielimentazione concisa dell'istruzione principale.
+-   **Per le pagine spoke, usare un riepilogo conciso dello scopo della pagina.** Usare l'istruzione principale della pagina se è concisa. in caso contrario, usare una rielimentazione concisa dell'istruzione principale.
 
     ![Screenshot della finestra di dialogo Opzioni risparmio energia ](images/winenv-ctrl-panels-image6.png)
 
@@ -505,9 +505,9 @@ Uno schema è una raccolta denominata di impostazioni visive. Un tema è una rac
 
 ### <a name="task-link-text"></a>Testo collegamento attività
 
-Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività, ad esempio i collegamenti alle attività della pagina Categoria e i collegamenti Vedi anche.
+Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività, ad esempio i collegamenti alle attività della pagina Categoria e Vedere anche i collegamenti.
 
--   **Scegliere nomi di attività concisi che comunicano chiaramente e differenziano l'attività.** Gli utenti non devono capire cosa significa effettivamente l'attività o in che modo differisce da altre attività.
+-   **Scegliere nomi di attività concisi che comunicano chiaramente e differenziano l'attività.** Gli utenti non devono capire cosa significa realmente l'attività o in che modo differisce da altre attività.
 
     **Non corretto:**
 
@@ -517,19 +517,19 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     Risoluzione dello schermo
 
-    Nell'esempio corretto, la formulazione indica una maggiore precisione.
+    Nell'esempio corretto, la formulazione trasmette una maggiore precisione.
 
--   **Mantenere un linguaggio simile tra i collegamenti alle attività e le pagine a cui puntano.** Gli utenti non devono essere sorpresi dalla pagina visualizzata da un collegamento.
--   **Per le pagine attività, progettare l'istruzione principale, i pulsanti di commit e i collegamenti alle attività come set di testo correlato.**
+-   **Mantenere una lingua simile tra i collegamenti alle attività e le pagine a cui puntano.** Gli utenti non devono essere sorprese dalla pagina visualizzata da un collegamento.
+-   **Per le pagine di attività, progettare l'istruzione principale, i pulsanti di commit e i collegamenti alle attività come set di testo correlato.**
     
 
     | Esempio                             |    Istruzione                                                   |
     |------------------------------|-------------------------------------------------------|
     | Collegamento attività:<br/>        | Connettersi a una rete wireless<br/>              |
     | Istruzione principale:<br/> | Scegliere una rete a cui connettersi<br/>             |
-    | Pulsante Commit:<br/>    | Connessione<br/>                                    |
+    | Pulsante Commit:<br/>    | Connettere<br/>                                    |
     | Collegamento attività:<br/>        | Configurare il controllo genitori<br/>                   |
-    | Istruzione principale:<br/> | Scegliere un utente e configurare il controllo genitori<br/> |
+    | Istruzione principale:<br/> | Scegliere un utente e configurare Il controllo genitori<br/> |
     | Pulsante Commit:<br/>    | Applicare il controllo genitori<br/>                     |
     | Collegamento attività:<br/>        | Risolvere i conflitti di sincronizzazione<br/>                |
     | Istruzione principale:<br/> | Come si vuole risolvere il conflitto?<br/>  |
@@ -541,7 +541,7 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     Questi esempi illustrano la relazione tra il testo del collegamento all'attività, l'istruzione principale e il testo del pulsante di commit.
 
--   Anche se le attività spesso iniziano con verbi, è consigliabile omettere il verbo nelle pagine Category se si tratta di un verbo generico correlato alla configurazione che non consente di **comunicare l'attività.**
+-   Anche se le attività spesso iniziano con verbi, è consigliabile omettere il verbo nelle pagine Categoria se si tratta di un verbo generico correlato alla configurazione che non consente di comunicare **l'attività.**
 
     **Verbi specifici e utili:**
 
@@ -549,13 +549,13 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     Controllo
 
-    Connessione
+    Connettere
 
     Copia
 
     Create
 
-    Delete
+    Elimina
 
     Disconnetti
 
@@ -601,17 +601,17 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     **Non corretto:**
 
-    Volume voce, disattiva audio, icona del volume
+    Volume voce, disattivazione dell'audio, icona del volume
 
     Altoparlanti, microfoni, MIDI e schemi audio
 
     **Corretto:**
 
-    Volume voce
+    Volume del parlante
 
     Altoparlanti e microfoni
 
-    Negli esempi corretti nel collegamento all'attività vengono fornite solo le funzionalità rappresentative.
+    Negli esempi corretti vengono fornite solo le funzionalità rappresentative nel collegamento all'attività.
 
 -   **È consigliabile formulare le attività in termini di tecnologia solo se lo farebbe anche gli utenti di destinazione.**
 
@@ -619,7 +619,7 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     Connectoid
 
-    Profondità pixel
+    Profondità dei pixel
 
     dpi
 
@@ -633,21 +633,21 @@ Le linee guida seguenti si applicano ai collegamenti alle pagine delle attività
 
     Gli esempi corretti sono termini basati sulla tecnologia che gli utenti di destinazione probabilmente useranno, mentre gli esempi non corretti non lo sono.
 
--   Usare sostantivi plurali solo se il sistema può supportarne più di uno.
+-   Usare sostantivi plurali solo se il sistema può supportare più di uno.
 -   Usare [l'uso di maiuscole e minuscole in stile frase.](glossary.md)
 -   Non usare punteggiatura finale.
 
 ### <a name="main-instructions"></a>Istruzioni principali
 
--   **Per la pagina dell'hub, usare l'istruzione principale per spiegare l'obiettivo dell'utente con l'elemento del Pannello di controllo.** L'istruzione principale dovrebbe aiutare gli utenti a determinare se hanno selezionato l'elemento del Pannello di controllo di destra. Tenere presente che gli utenti potrebbero aver selezionato l'elemento del Pannello di controllo per errore e stanno effettivamente cercando le impostazioni che fanno parte di un altro elemento del Pannello di controllo.
+-   **Per la pagina dell'hub, usare l'istruzione principale per spiegare l'obiettivo dell'utente con l'elemento del pannello di controllo.** L'istruzione principale dovrebbe aiutare gli utenti a determinare se è stato selezionato l'elemento del pannello di controllo giusto. Tenere presente che gli utenti potrebbero aver selezionato l'elemento del Pannello di controllo per errore e che in realtà stanno cercando impostazioni che fanno parte di un altro elemento del Pannello di controllo.
 
     **Esempi:**
 
-    Mantenere il computer protetto e aggiornato
+    Mantenere il computer sicuro e aggiornato
 
-    Ottimizzare il computer in modo che sia più facile da vedere, ascoltare e controllare
+    Ottimizzare il computer in modo da semplificare la visualizzazione, l'ascolto e il controllo
 
--   **Per le pagine spoke, usare l'istruzione principale per spiegare cosa fare nella pagina.** L'istruzione deve essere un'istruzione specifica, una direzione imperativa o una domanda. Le buone istruzioni comunicano l'obiettivo dell'utente con la pagina anziché concentrarsi esclusivamente sui meccanismi di manipolazione.
+-   **Per le pagine spoke, usare l'istruzione principale per spiegare cosa fare nella pagina.** L'istruzione deve essere un'istruzione specifica, una direzione imperativa o una domanda. Le buone istruzioni comunicano l'obiettivo dell'utente con la pagina anziché concentrarsi esclusivamente sui meccanismi di modifica.
 
     **Non corretto:**
 
@@ -713,9 +713,9 @@ Quando si fa riferimento alle pagine home page o categoria del pannello di contr
 
     **Esempio:**
 
-    In Pannello di controllo aprire Il **Centro sicurezza.**
+    In Pannello di controllo aprire Centro **sicurezza.**
 
--   Nella programmazione e in altri documenti tecnici, fare riferimento alla pagina delle categorie home page e del pannello di controllo, senza utilizzare l'iniziale maiuscola per le parole. Un articolo definito in precedenza è facoltativo.
+-   Nella programmazione e in altri documenti tecnici, fare riferimento alla pagina delle categorie home page e del pannello di controllo, senza lettere maiuscole. Un articolo definito in precedenza è facoltativo.
 
 Per gli elementi del Pannello di controllo:
 

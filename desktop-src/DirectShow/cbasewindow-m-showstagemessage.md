@@ -1,7 +1,7 @@
 ---
-description: Messaggio privato che consente di portare la finestra in primo piano.
+description: Messaggio privato che porta la finestra in primo piano.
 ms.assetid: 88b28888-d729-4cf3-8b9d-618dbe150926
-title: 'Membro CBaseWindow:: m_ShowStageMessage (Winutil. h)'
+title: Membro CBaseWindow::m_ShowStageMessage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ccf358eba577c0ee950f8628090a2f3024297fe3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37897747d9a144935055d734cbc02fdade611b3b1abbdddcc6efc25129f55279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822361"
 ---
-# <a name="cbasewindowm_showstagemessage-member"></a>Membro ShowStageMessage di CBaseWindow:: m \_
+# <a name="cbasewindowm_showstagemessage-member"></a>Membro CBaseWindow::m \_ ShowStageMessage
 
-Messaggio privato che consente di portare la finestra in primo piano.
+Messaggio privato che porta la finestra in primo piano.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ UINT m_ShowStageMessage;
 
 ## <a name="remarks"></a>Osservazioni
 
-Il metodo [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeground.md) Invia questo messaggio.
+Il [**metodo CBaseWindow::D oSetWindowForeground**](cbasewindow-dosetwindowforeground.md) invia questo messaggio.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,8 +46,8 @@ Il metodo [**CBaseWindow::D osetwindowforeground**](cbasewindow-dosetwindowforeg
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WinUtil. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Winutil.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

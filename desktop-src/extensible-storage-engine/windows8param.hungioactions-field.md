@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows8Param. HungIOActions'
-title: Campo Windows8Param. HungIOActions (Microsoft. ISAM. esent. Interop. Windows8)
+description: Altre informazioni sul campo Windows8Param.HungIOActions
+title: Campo Windows8Param.HungIOActions (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: HungIOActions field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.HungIOActions
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.hungioactions(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 514dabcd9d0f28b1a6d71f5eb272f960a1498839
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 890f0e8e7594236d18642bf12ed1001364d6c06491f6cbaecc5d2ab734a735a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889208"
 ---
-# <a name="windows8paramhungioactions-field"></a>Campo Windows8Param. HungIOActions
+# <a name="windows8paramhungioactions-field"></a>Campo Windows8Param.HungIOActions
 
-Set di azioni da intraprendere in IOs che appaiono sospese.
+Set di azioni da eseguire sugli I/O che appaiono agganciati.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param HungIOActions
 
 [Membri di Windows8Param](./windows8param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

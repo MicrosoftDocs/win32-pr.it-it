@@ -1,29 +1,29 @@
 ---
-title: Esecuzione di operazioni di I/O di file in file RIFF
-description: Esecuzione di operazioni di I/O di file in file RIFF
+title: Esecuzione di operazioni di I/O su file RIFF
+description: Esecuzione di operazioni di I/O su file RIFF
 ms.assetid: 3ffc5975-7acb-4844-89b0-bf245b3bd316
 keywords:
-- I/O dei file multimediali, file RIFF
-- I/O di file, file di RIFF
-- input e output (I/O), file RIFF
-- I/O (input e output), file RIFF
-- formato file di interscambio risorse (RIFF)
-- RIFF (formato file di interscambio risorse)
-- I/O RIFF
+- file multimediali I/O, file RIFF
+- I/O di file, file RIFF
+- input e output (I/O),file RIFF
+- I/O (input e output),file RIFF
+- resource interchange file format (RIFF)
+- RIFF (formato di file di interscambio di risorse)
+- RIFF I/O
 - I/O memorizzato nel buffer
 - Blocco RIFF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5e13fd50d98ea8042bb143c135d839b9b570475
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e099b49656e52fabed748ed397a12c3408a8325312c6c2457827a6b08725b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372687"
 ---
-# <a name="performing-file-io-on-riff-files"></a>Esecuzione di operazioni di I/O di file in file RIFF
+# <a name="performing-file-io-on-riff-files"></a>Esecuzione di operazioni di I/O su file RIFF
 
-Nell'esempio seguente viene illustrato come aprire un file RIFF per I/O memorizzato nel buffer, nonché come descendre, ascendere e leggere I blocchi "RIFF".
+L'esempio seguente illustra come aprire un file RIFF per le operazioni di I/O memorizzate nel buffer, nonché come decrescere, ascendere e leggere blocchi "RIFF".
 
 
 ```C++
@@ -151,9 +151,9 @@ void ReversePlay()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

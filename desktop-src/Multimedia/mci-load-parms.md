@@ -1,9 +1,9 @@
 ---
-title: Struttura MCI_LOAD_PARMS (mmsystem. h)
-description: La \_ \_ struttura parametri Load MCI contiene il nome file da caricare per il \_ comando MCI Load.
+title: MCI_LOAD_PARMS struttura (Mmsystem.h)
+description: La struttura MCI \_ LOAD \_ PARMS contiene il nome file da caricare per il comando MCI \_ LOAD.
 ms.assetid: 371d11cc-44db-496b-b51a-66d7b919b794
 keywords:
-- Struttura MCI_LOAD_PARMS di Windows Multimedia
+- MCI_LOAD_PARMS struttura Windows Multimediali
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04697a52eb9f8bb33db6063eb47e791be674f1d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d52a5c875bbbfff6f94857bc7337a0cba1473571bfdb8edc8ccfa8f3f1a471fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103742946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375006"
 ---
-# <a name="mci_load_parms-structure"></a>\_ \_ Struttura parametri Load MCI
+# <a name="mci_load_parms-structure"></a>Struttura MCI \_ LOAD \_ PARMS
 
-La **struttura \_ \_ parametri Load MCI** contiene il nome file da caricare per il comando [**MCI \_ Load**](mci-load.md) .
+La **struttura MCI \_ LOAD \_ PARMS** contiene il nome file da caricare per il [**comando MCI \_ LOAD.**](mci-load.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La parola di ordine inferiore specifica un handle di finestra utilizzato per il \_ flag di notifica MCI.
+La parola più bassa specifica un handle di finestra utilizzato per il flag MCI \_ NOTIFY.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Nome del file da caricare.
 
 ## <a name="remarks"></a>Commenti
 
-Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della funzione [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
+Quando si assegnano dati ai membri di questa struttura, impostare i flag corrispondenti nel parametro *fdwCommand* della [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) per convalidare i membri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                            |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Mmsystem. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Mmsystem.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Quando si assegnano dati ai membri di questa struttura, impostare i flag corrisp
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Strutture MCI**](mci-structures.md)
 </dt> <dt>
 
-[**\_carico MCI**](mci-load.md)
+[**MCI \_ LOAD**](mci-load.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

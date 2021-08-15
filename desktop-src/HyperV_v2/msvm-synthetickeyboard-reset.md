@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2fbaa420f2d99fa2670717f98b0bcf6d42157d43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7b519177c604ccd7017e8007715672d2cbcd0e101230efd191aaec3c0d8d90d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392049"
 ---
 # <a name="reset-method-of-the-msvm_synthetickeyboard-class"></a>Metodo Reset della classe Msvm \_ SyntheticKeyboard
 
@@ -55,7 +55,7 @@ In caso di esito positivo, restituisce 0. In caso contrario, restituisce un erro
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 10 solo \[ app desktop\]<br/>                                                             |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                             |
 | Server minimo supportato<br/> | Windows Server 2016<br/>                                                                          |
 | Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

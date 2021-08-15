@@ -1,7 +1,7 @@
 ---
 description: Contiene gli argomenti di un collegamento.
 ms.assetid: 938db958-4b59-4dd6-ac56-f21db05ec989
-title: Proprietà ShellLinkObject. Arguments (shldisp. h)
+title: Proprietà ShellLinkObject.Arguments (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c9b8a32eb4b935b5164ef91bf299777b36d7e53d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3124e76ec8ba46f3e8915ac24c080c3e28caad620f7de1d100eaa7bb2316d851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857592"
 ---
-# <a name="shelllinkobjectarguments-property"></a>Proprietà ShellLinkObject. Arguments
+# <a name="shelllinkobjectarguments-property"></a>ShellLinkObject.Arguments - proprietà
 
 Contiene gli argomenti di un collegamento.
 
@@ -42,9 +42,9 @@ argomenti del collegamento.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente vengono utilizzati gli **argomenti** per recuperare gli argomenti per un collegamento a Internet Explorer disponibile nel menu Start dell'utente. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa Arguments** per recuperare gli argomenti per un collegamento a Internet Explorer trovati nel menu Start dell'menu Start. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -182,11 +182,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional con \[ solo app desktop SP3\]<br/>                                           |
+| Client minimo supportato<br/> | Windows 2000 Professional solo con app desktop SP3 \[\]<br/>                                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5,0 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 

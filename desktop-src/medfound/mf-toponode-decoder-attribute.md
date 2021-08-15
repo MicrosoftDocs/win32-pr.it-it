@@ -1,19 +1,19 @@
 ---
-description: Specifica se un oggetto sottostante di nodi della topologia è un decodificatore.
+description: Specifica se un oggetto sottostante dei nodi della topologia è un decodificatore.
 ms.assetid: b6d576dc-b12f-49bf-b938-db2c629df400
-title: Attributo MF_TOPONODE_DECODER (Mfidl. h)
+title: MF_TOPONODE_DECODER attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab16d14a91608fb6b21c901e3fb055ce5e4dfbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f8946e9de4131ce62a7ab76119b4a409cea03b1d05000a5c28c3cbab4bdcf3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875185"
 ---
-# <a name="mf_toponode_decoder-attribute"></a>\_Attributo del \_ decodificatore MF TOPONODE
+# <a name="mf_toponode_decoder-attribute"></a>Attributo MF \_ TOPONODE \_ DECODER
 
-Specifica se l'oggetto sottostante di un nodo di topologia è un decodificatore.
+Specifica se l'oggetto sottostante di un nodo della topologia è un decodificatore.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -29,7 +29,7 @@ Se il valore di questo attributo è diverso da zero, l'oggetto sottostante del n
 
 Il caricatore della topologia imposta questo attributo quando crea un nodo del decodificatore. Un'applicazione deve impostare questo attributo se l'applicazione aggiunge manualmente un decodificatore alla topologia.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,13 +47,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

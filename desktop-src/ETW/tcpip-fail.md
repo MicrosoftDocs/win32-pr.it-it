@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 897c42a1c2530d3e41d1f937d5d59356a2913e2b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cd637db3f509e8c23de764eb82cc35b49cb435a7772a14adbe2954d292696e55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814531"
 ---
 # <a name="tcpip_fail-class"></a>Classe TcpIp \_ Fail
 
@@ -98,7 +98,7 @@ Identifica il protocollo. I possibili valori sono i seguenti:
 
 | Valore                                                                                                                                                                                                  | Significato                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**Af \_ INET**</dt> <dt>2</dt> </dl>     | Famiglia protocollo IP versione 4 indirizzi di rete (IPv4).<br/>  |
+| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**Af \_ INET**</dt> <dt>2</dt> </dl>     | Famiglia di protocollo IP versione 4 (IPv4).<br/>  |
 | <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**Af \_ INET6**</dt> <dt>23</dt> </dl> | Famiglia di indirizzi IPv6 (Internet Protocol versione 6).<br/> |
 
 
@@ -113,8 +113,8 @@ Identifica il protocollo. I possibili valori sono i seguenti:
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows Vista \[\]<br/>       |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

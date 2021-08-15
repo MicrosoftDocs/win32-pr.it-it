@@ -1,8 +1,8 @@
 ---
-description: La \_ proprietà di sicurezza dell'oggetto SWbemObject viene utilizzata per leggere o impostare le impostazioni di sicurezza per un oggetto SWbemObject.
+description: La proprietà Security dell'oggetto SWbemObject viene usata per leggere o impostare le impostazioni di sicurezza per un \_ oggetto SWbemObject.
 ms.assetid: add77267-d62f-4ee4-a0ff-8ca06a6bf7cd
 ms.tgt_platform: multiple
-title: Proprietà SWbemObject.Security_ (wbemdisp. h)
+title: SWbemObject.Security_ proprietà (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: f4d4b9aec7b6d800fa27609abd5d0cb1f3a435a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d83a155057e445848e727615978c3414e96f63334ffc70c78d5f055a396b53f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104349221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313785"
 ---
-# <a name="swbemobjectsecurity_-property"></a>Proprietà SWbemObject. Security \_
+# <a name="swbemobjectsecurity_-property"></a>Proprietà SWbemObject.Security \_
 
-La proprietà di **\_ sicurezza** dell'oggetto [**SWbemObject**](swbemobject.md) viene utilizzata per leggere o impostare le impostazioni di sicurezza per un oggetto **SWbemObject** . Questa proprietà è un oggetto [**SWbemSecurity**](swbemsecurity.md) . Le impostazioni di sicurezza in questo oggetto non indicano le impostazioni di autenticazione, rappresentazione o privilegio effettuate in una connessione a Strumentazione gestione Windows (WMI) o la sicurezza attiva per il proxy quando un oggetto viene recapitato a un sink in una chiamata asincrona. Per ulteriori informazioni, vedere [gestione della sicurezza WMI](maintaining-wmi-security.md).
+La **\_ proprietà Security** dell'oggetto [**SWbemObject**](swbemobject.md) viene usata per leggere o impostare le impostazioni di sicurezza per un **oggetto SWbemObject.** Questa proprietà è un [**oggetto SWbemSecurity.**](swbemsecurity.md) Le impostazioni di sicurezza in questo oggetto non indicano le impostazioni di autenticazione, rappresentazione o privilegio effettuate in una connessione a Strumentazione gestione Windows (WMI) o la sicurezza in vigore per il proxy quando un oggetto viene recapitato a un sink in una chiamata asincrona. Per altre informazioni, vedere [Gestione della sicurezza WMI.](maintaining-wmi-security.md)
 
 > [!Note]  
-> Impostando la proprietà di **\_ sicurezza** di un oggetto [**SWbemObject**](swbemobject.md) su **null** , viene concesso l'accesso illimitato a tutti i tempi. Per ulteriori informazioni, vedere [**SWbemSecurity**](swbemsecurity.md).
+> **L'impostazione \_ della** proprietà Security di [**un oggetto SWbemObject**](swbemobject.md) su **NULL** concede sempre l'accesso illimitato a tutti gli utenti. Per altre informazioni, vedere [**SWbemSecurity.**](swbemsecurity.md)
 
  
 
-Per una spiegazione di questa sintassi, vedere [convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -55,11 +55,11 @@ SWbemObject.Security_ As Object
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Libreria dei tipi<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECT CLSID<br/>                                                           |
-| IID<br/>                      | \_ISWBEMOBJECT IID<br/>                                                            |
+| CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 
@@ -67,13 +67,13 @@ SWbemObject.Security_ As Object
 
 <dl> <dt>
 
-[**SWbemObject**](swbemobject.md)
+[**Oggetto SWbem**](swbemobject.md)
 </dt> <dt>
 
-[Creazione di un'applicazione o di uno script WMI](creating-a-wmi-application-or-script.md)
+[Creazione di un'applicazione o uno script WMI](creating-a-wmi-application-or-script.md)
 </dt> <dt>
 
-[Impostazione della \_ sicurezza del processo dell'applicazione client \_](setting-client-application-process-security.md)
+[Impostazione della sicurezza \_ del processo \_ dell'applicazione client](setting-client-application-process-security.md)
 </dt> <dt>
 
 [**SWbemSecurity**](swbemsecurity.md)
@@ -88,7 +88,7 @@ SWbemObject.Security_ As Object
 [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)
 </dt> <dt>
 
-[**Costanti Privilege**](privilege-constants.md)
+[**Costanti privilege**](privilege-constants.md)
 </dt> </dl>
 
  

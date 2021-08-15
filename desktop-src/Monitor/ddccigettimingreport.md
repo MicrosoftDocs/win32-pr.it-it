@@ -1,6 +1,6 @@
 ---
-title: DDCCIGetTimingReport (funzione)
-description: Ottiene le frequenze di sincronizzazione orizzontali e verticali di un monitoraggio.
+title: Funzione DDCCIGetTimingReport
+description: Ottiene le frequenze di sincronizzazione orizzontale e verticale di un monitoraggio.
 ms.assetid: d490cb89-082a-42a1-ac0a-335c929cd5d7
 keywords:
 - Configurazione del monitoraggio della funzione DDCCIGetTimingReport
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b87cb4269c2cdff2303bbe763905cb572acfbb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 930149ebc2acfa69f479c889c6fa2c33acdfb3f528a67f83ee0bfbe7ab0467a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382364"
 ---
-# <a name="ddccigettimingreport-function"></a>DDCCIGetTimingReport (funzione)
+# <a name="ddccigettimingreport-function"></a>Funzione DDCCIGetTimingReport
 
 > [!IMPORTANT]
-> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alla funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
+> Questa funzione viene usata dall'API di configurazione del monitoraggio per accedere alle funzionalità nel driver di visualizzazione. Le applicazioni non devono chiamare questa funzione.
 
  
 
-Ottiene le frequenze di sincronizzazione orizzontali e verticali di un monitoraggio.
+Ottiene le frequenze di sincronizzazione orizzontale e verticale di un monitoraggio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,29 +46,29 @@ NTSTATUS WINAPI DDCCIGetTimingReport(
 
 <dl> <dt>
 
-*hMonitor* \[ in\]
+*hMonitor* \[ Pollici\]
 </dt> <dd>
 
-Handle per un monitor fisico.
+Handle per un monitoraggio fisico.
 
 </dd> <dt>
 
-*PMTR* \[ out\]
+*pmtr* \[ Cambio\]
 </dt> <dd>
 
-Un puntatore a una struttura del [**\_ \_ report temporizzato MC**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) che riceve le informazioni sull'intervallo.
+Puntatore a una [**struttura MC \_ TIMING \_ REPORT**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report) che riceve le informazioni di intervallo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, viene restituito **lo stato \_ Success**. In caso contrario, restituisce un codice di errore **NTSTATUS** .
+Se il metodo ha esito positivo, restituisce **STATUS \_ SUCCESS**. In caso contrario, restituisce un **codice di errore NTSTATUS.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni devono chiamare [**GetTimingReport**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) invece di chiamare questa funzione.
+Le applicazioni devono [**chiamare GetTimingReport**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport) anziché questa funzione.
 
-A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le funzioni [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per eseguire il collegamento dinamico a Gdi32.dll.
+A questa funzione non è associata alcuna libreria di importazione. Per chiamare questa funzione, è necessario usare le [**funzioni LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico Gdi32.dll.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,8 +76,8 @@ A questa funzione non è associata alcuna libreria di importazione. Per chiamare
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                 |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

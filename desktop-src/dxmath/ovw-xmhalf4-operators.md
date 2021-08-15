@@ -4,19 +4,19 @@ ms.assetid: b69b554d-afdc-48ea-a8a6-45e4000993ac
 title: Operatori XMHALF4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e323621a5ca45c39f63ef8b1522f94e25de6d741
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90c30175f64b6ee66e29603dbc5d78305352a561e427a3337800ca87fd10c4e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501029"
 ---
 # <a name="xmhalf4-operators"></a>Operatori XMHALF4
 
-La struttura [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) espone gli operatori seguenti.
+La [**struttura XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) espone gli operatori seguenti.
 
 > [!Note]  
-> Gli operatori elencati di seguito sono disponibili solo in C++.
+> Gli operatori elencati qui sono disponibili solo in C++.
 
  
 
@@ -26,7 +26,7 @@ La struttura [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpa
 
 | Metodi                                              | Descrizione                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMHALF4` all'istanza corrente di `XMHALF4` . <br/> |
+| [**operatore =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMHALF4` di all'istanza corrente di `XMHALF4` . <br/> |
 
 
 

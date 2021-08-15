@@ -1,45 +1,45 @@
 ---
-title: Come eseguire l'hit testing in un layout di testo
-description: Viene fornita una breve esercitazione su come aggiungere l'hit test a un'applicazione DirectWrite che Visualizza il testo tramite l'interfaccia IDWriteTextLayout.
+title: Come eseguire l'hit testing su un layout di testo
+description: Fornisce una breve esercitazione su come aggiungere hit testing a un'applicazione DirectWrite che visualizza testo usando l'interfaccia IDWriteTextLayout.
 ms.assetid: ef30c931-10f6-4317-b2ea-b446990778b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2ca80ac641920c4e63c08f4cbb0fd9e24eb7b2d
-ms.sourcegitcommit: b7a1da2711221fa99072079bf52399cbdfc6bd9d
+ms.openlocfilehash: 3d42967b069a7a5008de75c1cecb453a6158857eb2b05d2dd0298584a67cef69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103968986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816571"
 ---
-# <a name="how-to-perform-hit-testing-on-a-text-layout"></a>Come eseguire l'hit testing in un layout di testo
+# <a name="how-to-perform-hit-testing-on-a-text-layout"></a>Come eseguire l'hit testing su un layout di testo
 
-Viene fornita una breve esercitazione su come aggiungere l'hit test a un'applicazione [DirectWrite](direct-write-portal.md) che Visualizza il testo tramite l'interfaccia [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
+Viene fornita una breve esercitazione su come aggiungere hit testing a [un'DirectWrite](direct-write-portal.md) che visualizza testo usando l'interfaccia [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
-Il risultato di questa esercitazione è un'applicazione che sottolinea il carattere su cui si fa clic con il pulsante sinistro del mouse, come illustrato nello screenshot seguente.
+Il risultato di questa esercitazione è un'applicazione che sottolinea il carattere su cui viene fatto clic con il pulsante sinistro del mouse, come illustrato nello screenshot seguente.
 
 ![Screenshot di "fare clic su questo testo"](images/hittest.png)
 
-Questa procedura include le parti seguenti:
+Questa procedura contiene le parti seguenti:
 
-- [Passaggio 1: creare un layout di testo.](#step-1-create-a-text-layout)
-- [Passaggio 2: aggiungere un metodo OnClick.](#step-2-add-an-onclick-method)
-- [Passaggio 3: eseguire l'hit testing.](#step-3-perform-hit-testing)
-- [Passaggio 4: sottolineare il testo selezionato.](#step-4-underline-the-clicked-text)
-- [Passaggio 5: gestire il \_ messaggio WM LBUTTONDOWN.](/windows)
+- [Passaggio 1: Creare un layout di testo.](#step-1-create-a-text-layout)
+- [Passaggio 2: Aggiungere un metodo OnClick.](#step-2-add-an-onclick-method)
+- [Passaggio 3: Eseguire l'hit testing.](#step-3-perform-hit-testing)
+- [Passaggio 4: Sottolineare il testo selezionato.](#step-4-underline-the-clicked-text)
+- [Passaggio 5: Gestire il messaggio \_ WM LBUTTONDOWN.](/windows)
 
-## <a name="step-1-create-a-text-layout"></a>Passaggio 1: creare un layout di testo.
+## <a name="step-1-create-a-text-layout"></a>Passaggio 1: Creare un layout di testo.
 
-Per iniziare, sarà necessaria un'applicazione che usi un oggetto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) . Se è già presente un'applicazione che visualizza testo con un layout di testo, andare al passaggio 2.
+Per iniziare, è necessaria un'applicazione che usa un [**oggetto IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) Se si ha già un'applicazione che visualizza testo con un layout di testo, andare al passaggio 2.
 
-Per aggiungere un layout di testo è necessario eseguire le operazioni seguenti:
+Per aggiungere un layout di testo, è necessario eseguire le operazioni seguenti:
 
-1. Dichiarare un puntatore a un'interfaccia [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) come membro della classe.
+1. Dichiarare un puntatore a [**un'interfaccia IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) come membro della classe .
 
     ```cpp
     IDWriteTextLayout* pTextLayout_;
     ```
 
-2. Alla fine del metodo **CreateDeviceIndependentResources** , creare un oggetto interfaccia [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) chiamando il metodo [**CreateTextLayout**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-createtextlayout) .
+2. Alla fine del metodo **CreateDeviceIndependentResources** creare un oggetto interfaccia [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) chiamando il [**metodo CreateTextLayout.**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-createtextlayout)
 
     ```cpp
     // Create a text layout using the text format.
@@ -61,7 +61,7 @@ Per aggiungere un layout di testo è necessario eseguire le operazioni seguenti:
     }
     ```
 
-3. Quindi, è necessario modificare la chiamata al metodo [**ID2D1RenderTarget::D rawtext**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) in [**ID2D1RenderTarget::D rawtextlayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) come illustrato nel codice seguente.
+3. È quindi necessario modificare la chiamata al metodo [**ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) in [**ID2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) come illustrato nel codice seguente.
 
     ```cpp
     pRT_->DrawTextLayout(
@@ -71,11 +71,11 @@ Per aggiungere un layout di testo è necessario eseguire le operazioni seguenti:
         );
     ```
 
-## <a name="step-2-add-an-onclick-method"></a>Passaggio 2: aggiungere un metodo OnClick.
+## <a name="step-2-add-an-onclick-method"></a>Passaggio 2: Aggiungere un metodo OnClick.
 
-A questo punto, aggiungere un metodo alla classe che utilizzerà la funzionalità di hit testing del layout di testo.
+Aggiungere ora un metodo alla classe che userà la funzionalità di hit testing del layout di testo.
 
-1. Dichiarare un metodo **OnClick** nel file di intestazione della classe.
+1. Dichiarare un **metodo OnClick** nel file di intestazione della classe.
 
     ```cpp
     void OnClick(
@@ -84,7 +84,7 @@ A questo punto, aggiungere un metodo alla classe che utilizzerà la funzionalit�
         );
     ```
 
-2. Definire un metodo **OnClick** nel file di implementazione della classe.
+2. Definire un **metodo OnClick** nel file di implementazione della classe.
 
    ```cpp
     void DemoApp::OnClick(UINT x, UINT y)
@@ -92,13 +92,13 @@ A questo punto, aggiungere un metodo alla classe che utilizzerà la funzionalit�
     }
     ```
 
-## <a name="step-3-perform-hit-testing"></a>Passaggio 3: eseguire l'hit testing.
+## <a name="step-3-perform-hit-testing"></a>Passaggio 3: Eseguire l'hit testing.
 
-Per determinare la posizione in cui l'utente ha fatto clic sul layout del testo, viene usato il metodo [**IDWriteTextLayout:: HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) .
+Per determinare dove l'utente ha fatto clic sul layout di testo, si userà il [**metodo IDWriteTextLayout::HitTestPoint.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint)
 
-Aggiungere quanto segue al metodo **OnClick** definito nel passaggio 2.
+Aggiungere quanto segue al **metodo OnClick** definito nel passaggio 2.
 
-1. Dichiarare le variabili che vengono passate come parametri al metodo.
+1. Dichiarare le variabili che verranno passate come parametri al metodo .
 
     ```cpp
     DWRITE_HIT_TEST_METRICS hitTestMetrics;
@@ -106,15 +106,15 @@ Aggiungere quanto segue al metodo **OnClick** definito nel passaggio 2.
     BOOL isInside; 
     ```
 
-    Il metodo [**HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) restituisce i parametri seguenti.
+    Il [**metodo HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) restituisce i parametri seguenti.
 
     | Variabile         | Descrizione                                                                                                                             |
     |------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-    | *hitTestMetrics* | Geometria che racchiude completamente il percorso di hit test.                                                                                     |
-    | *Interno*       | Indica se il percorso di hit test si trova all'interno della stringa di testo. Se è FALSE, viene restituita la posizione più vicina al bordo del testo. |
-    | *isTrailingHit*  | Indica se il percorso di hit test si trova al lato principale o finale del carattere.                                        |
+    | *hitTestMetrics* | Geometria che racchiude completamente la posizione dell'hit test.                                                                                     |
+    | *isInside*       | Indica se la posizione dell'hit test si trova o meno all'interno della stringa di testo. Se FALSE, viene restituita la posizione più vicina al bordo del testo. |
+    | *isTrailingHit*  | Indica se la posizione dell'hit test si trova all'inizio o al lato finale del carattere.                                        |
 
-2. Chiamare il metodo [**HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) dell'oggetto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
+2. Chiamare il [**metodo HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) dell'oggetto [**IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
     ```cpp
     pTextLayout_->HitTestPoint(
@@ -126,11 +126,11 @@ Aggiungere quanto segue al metodo **OnClick** definito nel passaggio 2.
                     );
     ```
 
-    Il codice in questo esempio passa le variabili *x* e *y* per la posizione senza alcuna modifica. Questa operazione può essere eseguita in questo esempio perché il layout del testo ha le stesse dimensioni della finestra e ha origine nell'angolo superiore sinistro della finestra. In caso contrario, è necessario determinare le coordinate in relazione all'origine del layout del testo.
+    Il codice in questo esempio passa le *variabili x* *e y* per la posizione senza alcuna modifica. Questa operazione può essere eseguita in questo esempio perché il layout del testo ha le stesse dimensioni della finestra e ha origine nell'angolo superiore sinistro della finestra. In caso contrario, è necessario determinare le coordinate in relazione all'origine del layout di testo.
 
-## <a name="step-4-underline-the-clicked-text"></a>Passaggio 4: sottolineare il testo selezionato.
+## <a name="step-4-underline-the-clicked-text"></a>Passaggio 4: Sottolineare il testo selezionato.
 
-Aggiungere quanto segue all'oggetto **OnClick** definito nel passaggio 2, dopo la chiamata al metodo [**HitTestPoint**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint) .
+Aggiungere quanto segue **all'oggetto OnClick** definito nel passaggio 2, dopo la chiamata al [**metodo HitTestPoint.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint)
 
 ```cpp
 if (isInside == TRUE)
@@ -147,23 +147,23 @@ if (isInside == TRUE)
 
 Questo codice esegue le operazioni seguenti.
 
-1. Controlla se il punto di hit test si trova all'interno del testo utilizzando la variabile *Inside* .
-2. Il membro **TextPosition** della struttura *hitTestMetrics* contiene l'indice in base zero del carattere selezionato.
+1. Controlla se il punto di hit test si trova all'interno del testo usando la *variabile isInside.*
+2. Il **membro textPosition** della struttura *hitTestMetrics* contiene l'indice in base zero del carattere selezionato.
 
-    Ottiene la sottolineatura per questo carattere passando questo valore al metodo [**IDWriteTextLayout:: getunderline**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-getunderline) .
+    Ottiene la sottolineatura per questo carattere passando questo valore al [**metodo IDWriteTextLayout::GetUnderline.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-getunderline)
 
-3. Dichiara una variabile [**di \_ \_ intervallo di testo DWrite**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) con la posizione iniziale impostata su **hitTestMetrics. TextPosition** e una lunghezza pari a 1.
-4. Consente di abilitare o disabilitare la sottolineatura utilizzando il metodo [**IDWriteTextLayout::**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-setunderline) SetValue.
+3. Dichiara una [**variabile DWRITE \_ TEXT \_ RANGE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_text_range) con la posizione iniziale impostata su **hitTestMetrics.textPosition** e una lunghezza pari a 1.
+4. Attiva o disattiva la sottolineatura usando il [**metodo IDWriteTextLayout::SetUnderline.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-setunderline)
 
-Dopo aver impostato la sottolineatura, ricreare il testo chiamando il metodo **DrawD2DContent** della classe.
+Dopo aver impostato la sottolineatura, ridisegnare il testo chiamando il **metodo DrawD2DContent** della classe .
 
 ```cpp
 DrawD2DContent();
 ```
 
-## <a name="step-5-handle-the-wm_lbuttondown-message"></a>Passaggio 5: gestire il \_ messaggio WM LBUTTONDOWN.
+## <a name="step-5-handle-the-wm_lbuttondown-message"></a>Passaggio 5: Gestire il messaggio \_ WM LBUTTONDOWN.
 
-Infine, aggiungere il messaggio **WM \_ LBUTTONDOWN** al gestore di messaggi per l'applicazione e chiamare il metodo **OnClick** della classe.
+Infine, aggiungere il **messaggio \_ WM LBUTTONDOWN** al gestore di messaggi per l'applicazione e chiamare il **metodo OnClick** della classe .
 
 ```cpp
 case WM_LBUTTONDOWN:
@@ -176,4 +176,4 @@ case WM_LBUTTONDOWN:
     break;
 ```
 
-**Ottenere \_ Le macro x \_ lParam** e **get \_ x \_ lParam** sono dichiarate nel file di intestazione windowsx. h. Consentono di recuperare facilmente la posizione x e y del clic del mouse.
+**GET \_ Le macro \_ X LPARAM** **e GET X \_ \_ LPARAM** vengono dichiarate nel file di intestazione windowsx.h. Recuperano facilmente la posizione x e y del clic del mouse.

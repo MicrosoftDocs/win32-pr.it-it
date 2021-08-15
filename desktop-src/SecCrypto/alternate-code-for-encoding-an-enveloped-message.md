@@ -1,23 +1,23 @@
 ---
-description: Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, usando tale messaggio firmato come contenuto interno per un messaggio in busta digitale. In preparazione della decodifica, viene testato il contenuto interno per determinare il tipo di contenuto interno.
+description: Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, utilizzando tale messaggio firmato come contenuto interno per un messaggio in busta. In preparazione alla decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
 ms.assetid: ba174e3c-bc2f-48bd-a1bf-fec491dc0ce3
-title: Codice alternativo per la codifica di un messaggio in busta digitale
+title: Codice alternativo per la codifica di un messaggio in busta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f974623c526603744bf2b0179352605ed783056
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e80c57b5de2191809e3e3ec9df439f6a30a4e17d1442ea6775394c210d1ada0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117773695"
 ---
-# <a name="alternate-code-for-encoding-an-enveloped-message"></a>Codice alternativo per la codifica di un messaggio in busta digitale
+# <a name="alternate-code-for-encoding-an-enveloped-message"></a>Codice alternativo per la codifica di un messaggio in busta
 
-Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, usando tale messaggio firmato come [*contenuto interno*](../secgloss/i-gly.md) per un messaggio in busta digitale. In preparazione della decodifica, viene testato il contenuto interno per determinare il tipo di contenuto interno.
+Nell'esempio seguente viene illustrato un processo alternativo di codifica di un messaggio firmato, utilizzando tale messaggio firmato come contenuto [*interno*](../secgloss/i-gly.md) per un messaggio in busta. In preparazione alla decodifica, il contenuto interno viene testato per determinarne il tipo di contenuto interno.
 
-In questo esempio vengono illustrate le funzioni CryptoAPI seguenti:
+Questo esempio illustra le funzioni CryptoAPI seguenti:
 
--   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   [**Cryptacquirecontext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea)
 -   [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength)
 -   [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode)
@@ -29,7 +29,7 @@ In questo esempio vengono illustrate le funzioni CryptoAPI seguenti:
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 -   [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-Questo esempio usa anche le funzioni [**MyHandleError**](myhandleerror.md) e [**GetSignerCert**](getsignercert.md). Il codice C per queste funzioni è incluso nell'esempio. Per il codice che illustra queste e altre funzioni ausiliarie, vedere [per utilizzo generico Functions](general-purpose-functions.md).
+Questo esempio usa anche le [**funzioni MyHandleError**](myhandleerror.md) e [**GetSignerCert**](getsignercert.md). Il codice C per queste funzioni è incluso nell'esempio. Per il codice che illustra queste e altre funzioni ausiliarie, [vedere per utilizzo generico funzioni](general-purpose-functions.md).
 
 
 ```C++

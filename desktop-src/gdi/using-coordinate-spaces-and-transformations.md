@@ -1,27 +1,27 @@
 ---
-description: 'Questa sezione contiene un esempio in cui vengono illustrate le attività seguenti:'
+description: 'Questa sezione contiene un esempio che illustra le attività seguenti:'
 ms.assetid: 61db38d7-9371-4ff1-b96b-1bed4c2a2749
 title: Uso di spazi di coordinate e trasformazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b75f9cab36946eee157ade824e7012018bf80d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9eebfea7465d434761ff5b463898fbd92b156b1fa6c1bf1255e4ebb2f0cf9bb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104979407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117885706"
 ---
 # <a name="using-coordinate-spaces-and-transformations"></a>Uso di spazi di coordinate e trasformazioni
 
-Questa sezione contiene un esempio in cui vengono illustrate le attività seguenti:
+Questa sezione contiene un esempio che illustra le attività seguenti:
 
--   Disegno di immagini con unità predefinite.
--   Centrare elementi grafici nell'area client dell'applicazione.
--   Ridimensionamento dell'output di grafica a metà delle dimensioni originali.
--   Conversione dell'output grafico 3/4 di un pollice a destra.
--   Rotazione grafica di 30 gradi.
--   Taglio dell'output della grafica lungo l'asse x.
--   Riflette l'output grafico su un asse orizzontale immaginario disegnato tramite il punto intermedio.
+-   Disegno di grafica con unità predefinite.
+-   Centrare la grafica nell'area client dell'applicazione.
+-   Ridimensionamento dell'output grafico a metà delle dimensioni originali.
+-   Traduzione dell'output grafico 3/4 di pollice a destra.
+-   Rotazione della grafica di 30 gradi.
+-   Estensione dell'output grafico lungo l'asse x.
+-   Output grafico che riflette un asse orizzontale immaginario tracciato attraverso il punto medio.
 
 L'esempio seguente è stato usato per creare le illustrazioni visualizzate in precedenza in questa panoramica.
 

@@ -1,7 +1,7 @@
 ---
-description: È obsoleto e non deve essere utilizzato.
+description: È obsoleto e non deve essere usato.
 ms.assetid: cbe89779-403d-406e-af3c-d6530bf3008e
-title: Struttura ADDRESS (Netmon. h)
+title: Struttura ADDRESS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: c577758401bede53c79fd109caa6d8b9cb3d9163
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 899d68cb4d041c032ce17ac82866488dfd443071e5368d4ba87950de66a32ce3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796533"
 ---
-# <a name="address-structure"></a>Struttura degli indirizzi
+# <a name="address-structure"></a>Struttura ADDRESS
 
-La struttura degli **indirizzi** è obsoleta e non deve essere utilizzata.
+La **struttura ADDRESS** è obsoleta e non deve essere usata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,7 +61,7 @@ Tipo di indirizzo. I valori possibili sono i seguenti:
 
 <dl> <dd>ADDRESS_TYPE_ETHERNET</dd> <dd>ADDRESS_TYPE_IP</dd> <dd>ADDRESS_TYPE_IPX</dd> <dd>ADDRESS_TYPE_TOKENRING</dd> <dd>ADDRESS_TYPE_FDDI</dd> <dd>ADDRESS_TYPE_XNS</dd> <dd>ADDRESS_TYPE_ANY</dd> <dd>ADDRESS_TYPE_ANY_GROUP</dd> <dd>ADDRESS_TYPE_FIND_HIGHEST</dd> <dd>ADDRESS_TYPE_VINES_IP</dd> <dd>ADDRESS_TYPE_LOCAL_ONLY</dd> <dd>ADDRESS_TYPE_ATM</dd> <dd>ADDRESS_TYPE_1394</dd> </dl> </dd> <dt>
 
-**MACAddress**
+**Macaddress**
 </dt> <dd>
 
 Visualizzazione dei dati espressi come indirizzo MAC non elaborato.
@@ -78,7 +78,7 @@ Visualizzazione dei dati espressi come indirizzo IP non elaborato.
 **IPXRawAddress**
 </dt> <dd>
 
-Visualizzazione dei dati espressi come un indirizzo IPX non elaborato.
+Visualizzazione dei dati espressi come indirizzo IPX non elaborato.
 
 </dd> <dt>
 
@@ -92,14 +92,14 @@ Visualizzazione dei dati espressi come valore di indirizzo IPX decodificato.
 **VinesIPRawAddress**
 </dt> <dd>
 
-Visualizzazione dei dati espressi come indirizzo IP delle viti non elaborate.
+Visualizzazione dei dati espressi come indirizzo IP vines non elaborato.
 
 </dd> <dt>
 
 **VinesIPAddress**
 </dt> <dd>
 
-Visualizzazione dei dati espressi come indirizzo IP delle viti decodificate.
+Visualizzazione dei dati espressi come indirizzo IP di Vines decodificato.
 
 </dd> <dt>
 
@@ -120,14 +120,14 @@ Visualizzazione dei dati espressi come indirizzo di destinazione Ethernet.
 **TokenringSrcAddress**
 </dt> <dd>
 
-Visualizzazione dei dati come indirizzo di origine dell'anello di token.
+Visualizzazione dei dati come indirizzo di origine del token ring.
 
 </dd> <dt>
 
 **TokenringDstAddress**
 </dt> <dd>
 
-Visualizzazione dei dati come indirizzo di destinazione dell'anello di token.
+Visualizzazione dei dati come indirizzo di destinazione del token ring.
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Set di flag che modificano le proprietà dell'indirizzo.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

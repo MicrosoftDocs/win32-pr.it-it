@@ -1,9 +1,9 @@
 ---
-title: ContextPopup. ContextMenus (proprietà)
+title: ContextPopup.ContextMenus - proprietà
 description: Rappresenta un contenitore per gli elementi ContextMenu.
 ms.assetid: 92633689-a892-421e-a5fb-e494f4cd1ea8
 keywords:
-- ContextPopup. ContextMenus-barra multifunzione di Windows
+- Proprietà ContextPopup.ContextMenus Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12ef8ab053b9912f545c2aad931eb8ad9583ff62
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45641f1431726ec75c60be48683f19fb3139cbd9159baaed9def3b293a48772d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106302308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851017"
 ---
-# <a name="contextpopupcontextmenus-property"></a>ContextPopup. ContextMenus (proprietà)
+# <a name="contextpopupcontextmenus-property"></a>ContextPopup.ContextMenus - proprietà
 
-Rappresenta un contenitore per gli elementi [**ContextMenu**](windowsribbon-element-contextmenu.md) .
+Rappresenta un contenitore per [**gli elementi ContextMenu.**](windowsribbon-element-contextmenu.md)
 
 ## <a name="usage"></a>Utilizzo
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                             | Descrizione                                        |
 |---------------------------------------------------------------------|----------------------------------------------------|
-| [**ContextMenu**](windowsribbon-element-contextmenu.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**ContextMenu**](windowsribbon-element-contextmenu.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -59,13 +59,13 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può essere presente al massimo una volta per ogni [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Può verificarsi al massimo una volta per [**ogni ContextPopup**](windowsribbon-element-contextpopup.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per una visualizzazione [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+L'esempio seguente illustra il markup di base per [**una visualizzazione ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-In questa sezione del codice viene illustrata una dichiarazione di controllo **ContextPopup. ContextMenus** .
+Questa sezione di codice illustra una **dichiarazione di controllo ContextPopup.ContextMenus.**
 
 
 ```XML
@@ -158,8 +158,8 @@ In questa sezione del codice viene illustrata una dichiarazione di controllo **C
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -167,7 +167,7 @@ In questa sezione del codice viene illustrata una dichiarazione di controllo **C
 
 <dl> <dt>
 
-[Controllo popup contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup di contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

@@ -1,49 +1,49 @@
 ---
-description: Il file VBScript WiUseXfm.vbs viene fornito nei componenti Windows SDK per Windows Installer sviluppatori. In questo esempio viene illustrato come utilizzare lo script per applicare una trasformazione a un database Windows Installer.
+description: Il file VBScript WiUseXfm.vbs è disponibile in componenti sdk Windows per Windows programma di installazione. Questo esempio illustra come usare lo script per applicare una trasformazione a un database Windows Installer.
 ms.assetid: e647388e-5211-463d-9e3e-b502af01fc0c
 title: Applicare una trasformazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9e86acc495fc2a0bb8dff562832e58d29483256
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 001737b1a08ea33ce233fa0aad90e96e23a1079f2c28f9d6308219cba270f6ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381610"
 ---
 # <a name="apply-a-transform"></a>Applicare una trasformazione
 
-Il file VBScript WiUseXfm.vbs viene fornito nei [componenti Windows SDK per Windows Installer sviluppatori](platform-sdk-components-for-windows-installer-developers.md). In questo esempio viene illustrato come utilizzare lo script per applicare una trasformazione a un database Windows Installer.
+Il file VBScript WiUseXfm.vbs è disponibile in componenti sdk Windows [per sviluppatori Windows programma di installazione](platform-sdk-components-for-windows-installer-developers.md). Questo esempio illustra come usare lo script per applicare una trasformazione a un database Windows Installer.
 
-Nell'esempio viene illustrato l'utilizzo di
+L'esempio illustra l'uso di
 
 -   [**Metodo OpenDatabase (oggetto Installer)**](installer-opendatabase.md)
--   [**Metodo LastErrorRecord**](installer-lasterrorrecord.md) dell' [ **oggetto Installer**](installer-object.md)
+-   [**Metodo LastErrorRecord**](installer-lasterrorrecord.md) [ **dell'oggetto Installer**](installer-object.md)
 -   [**Metodo ApplyTransform**](database-applytransform.md)
--   [**Metodo commit**](database-commit.md) dell' [ **oggetto di database**](database-object.md)
+-   [**Metodo Commit**](database-commit.md) [ **dell'oggetto Database**](database-object.md)
 
-Per usare questo esempio, è necessaria la versione CScript.exe o WScript.exe di Windows script host. Per utilizzare CScript.exe per eseguire questo esempio, digitare una riga di comando al prompt dei comandi utilizzando la sintassi seguente. La guida viene visualizzata se il primo argomento è/? oppure se vengono specificati troppi argomenti. Per reindirizzare l'output a un file, terminare la riga di comando con VBS > \[ *percorso del file* \] . Nell'esempio viene restituito il valore 0 per l'esito positivo, 1 se la guida viene richiamata e 2 se lo script ha esito negativo.
+Per usare questo esempio è CScript.exe o WScript.exe'host script Windows script. Per usare CScript.exe questo esempio, digitare una riga di comando al prompt dei comandi usando la sintassi seguente. Se il primo argomento è /? viene visualizzata la Guida o se vengono specificati troppi argomenti. Per reindirizzare l'output a un file, terminare la riga di comando con vbs > \[ *percorso del file* \] . L'esempio restituisce il valore 0 per l'esito positivo, 1 se viene richiamata la Guida e 2 se lo script ha esito negativo.
 
-**cscript WiUseXfm.vbs \[ percorso al percorso del database originale \] \[ per le \] Opzioni del file di trasformazione \[\]**
+**cscript WiUseXfm.vbs \[ percorso del database originale per trasformare le opzioni del \] \[ file \] \[\]**
 
-Consente di specificare il percorso del database di Windows Installer. Consente di specificare il percorso del file di trasformazione. Se il percorso del file di trasformazione viene omesso, vengono confrontati solo i due database. Il terzo argomento è un valore numerico facoltativo che specifica un set di condizioni di errore che devono essere eliminati. Aggiungere questi valori insieme per escludere più condizioni.
+Specificare il percorso del database Windows Installer. Specificare il percorso del file di trasformazione. Se il percorso del file di trasformazione viene omesso, i due database vengono confrontati solo. Il terzo argomento è un valore numerico facoltativo che specifica un set di condizioni di errore da eliminare. Aggiungere questi valori per eliminare più condizioni.
 
 
 
-| Valore | Condizione di errore da disattivare                   |
+| Valore | Condizione di errore da eliminare                   |
 |-------|-----------------------------------------------|
 | 1     | Aggiunta di una riga già esistente.             |
 | 2     | Eliminazione di una riga inesistente.           |
 | 4     | Aggiunta di una tabella già esistente.           |
 | 8     | Eliminazione di una tabella inesistente.         |
 | 16    | Aggiornamento di una riga inesistente.           |
-| 256   | Mancata corrispondenza delle tabelle codici del database e della trasformazione. |
+| 256   | Mancata corrispondenza delle tabelle codici di database e di trasformazione. |
 
 
 
  
 
-Per altri esempi di script, vedere [Windows Installer esempi di scripting](windows-installer-scripting-examples.md). Per utilità di esempio che non richiedono Windows script host, vedere [Windows Installer strumenti di sviluppo](windows-installer-development-tools.md).
+Per altri esempi di scripting, vedere Windows [di scripting del programma di installazione](windows-installer-scripting-examples.md). Per utilità di esempio che non richiedono Windows Script Host, vedere Windows [Installer Development Tools](windows-installer-development-tools.md).
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: La struttura del TRIGGER indica un'azione che deve essere eseguita dal driver a un'ora specificata.
+description: La struttura TRIGGER indica un'azione che il driver deve eseguire in un momento specificato.
 ms.assetid: 63541796-b0d8-456c-8544-697fedbe05f7
-title: Struttura TRIGGER (Netmon. h)
+title: Struttura TRIGGER (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: d9b385557e3c34bdf75f2bf959d4e5e3e47e0750
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99404c8e9fc48e0ab85b956dd84af39b11eb87b22c87b4f9a232bd5b72d32143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363019"
 ---
 # <a name="trigger-structure"></a>Struttura TRIGGER
 
-La struttura del **trigger** indica un'azione che deve essere eseguita dal driver a un'ora specificata.
+La **struttura TRIGGER** indica un'azione che il driver deve eseguire in un momento specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,18 +48,18 @@ typedef struct _TRIGGER {
 **TriggerActive**
 </dt> <dd>
 
-Valore booleano che determina se il trigger deve prestare attenzione al driver.
+Valore booleano che determina se il driver deve prestare attenzione al trigger.
 
 </dd> <dt>
 
-**TriggerType**
+**Tipo di trigger**
 </dt> <dd>
 
-Codice op del trigger.
+Codice operativo del trigger.
 
 </dd> <dt>
 
-**TriggerAction**
+**Triggeraction**
 </dt> <dd>
 
 Azione che il trigger deve eseguire se viene attivato.
@@ -69,21 +69,21 @@ Azione che il trigger deve eseguire se viene attivato.
 **TriggerFlags**
 </dt> <dd>
 
-Flag del trigger.
+Flag di trigger.
 
 </dd> <dt>
 
 **TriggerPatternMatch**
 </dt> <dd>
 
-Modello di trigger corrispondente.
+Corrispondenza del modello di trigger.
 
 </dd> <dt>
 
 **TriggerBufferSize**
 </dt> <dd>
 
-Dimensioni del buffer di trigger.
+Dimensioni del buffer del trigger.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Riservato.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                          |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

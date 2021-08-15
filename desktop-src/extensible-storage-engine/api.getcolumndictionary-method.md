@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo API. GetColumnDictionary'
-title: API. GetColumnDictionary, metodo
+description: Altre informazioni sul metodo Api.GetColumnDictionary
+title: Metodo Api.GetColumnDictionary
 TOCTitle: 'GetColumnDictionary method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.GetColumnDictionary(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.getcolumndictionary(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1ab359c5b8b163ce67f576f35250dd521eb14472
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 901b905ccdaccb19bc8a6b5ca1bbf88b7831dc98d97a00f1b81f6ddb3c2b146a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719661"
 ---
-# <a name="apigetcolumndictionary-method"></a>API. GetColumnDictionary, metodo
+# <a name="apigetcolumndictionary-method"></a>Metodo Api.GetColumnDictionary
 
-Crea un dizionario che esegue il mapping dei nomi delle colonne ai rispettivi ID di colonna.
+Crea un dizionario che esegue il mapping dei nomi di colonna ai relativi ID di colonna.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -65,21 +65,21 @@ public static IDictionary<string, JET_COLUMNID> GetColumnDictionary(
 #### <a name="parameters"></a>Parametri
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    Sesid da utilizzare.
+    Sesid da usare.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Tabella per cui recuperare le informazioni.
 
 #### <a name="return-value"></a>Valore restituito
 
-Tipo: [System. Collections. Generic. IDictionary](/dotnet/api/system.collections.generic.idictionary-2)\<[String](/dotnet/api/system.string), [JET_COLUMNID](./jet-columnid-structure.md)\>  
-Dizionario che mappa i nomi di colonna agli ID di colonna.  
+Tipo: [System.Collections.Generic.IDictionary](/dotnet/api/system.collections.generic.idictionary-2)\<[String](/dotnet/api/system.string), [JET_COLUMNID](./jet-columnid-structure.md)\>  
+Un dizionario che mappa i nomi delle colonne agli ID colonna.  
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -87,6 +87,6 @@ Dizionario che mappa i nomi di colonna agli ID di colonna.
 
 [Classe API](./api-class.md)
 
-[Membri API](./api-members.md)
+[Membri api](./api-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

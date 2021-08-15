@@ -1,7 +1,7 @@
 ---
 description: La funzione ExpertGetStartupInfo recupera le informazioni di configurazione di avvio per l'esperto.
 ms.assetid: 15f080ed-50b7-40c6-b283-dbe416a2b0e9
-title: Funzione ExpertGetStartupInfo (Netmon. h)
+title: Funzione ExpertGetStartupInfo (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: f34ecc3d0c3eeb085d2a7c0f8c4cb0426663093c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e4327965dce1c4bca07846a818609e555c16a3a27b0a19204a9971eaf9d642e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104401606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366883"
 ---
-# <a name="expertgetstartupinfo-function"></a>ExpertGetStartupInfo (funzione)
+# <a name="expertgetstartupinfo-function"></a>Funzione ExpertGetStartupInfo
 
-La funzione **ExpertGetStartupInfo** recupera le informazioni di configurazione di avvio per l'esperto.
+La **funzione ExpertGetStartupInfo** recupera le informazioni di configurazione di avvio per l'esperto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,29 +40,29 @@ DWORD WINAPI ExpertGetStartupInfo(
 
 <dl> <dt>
 
-*hExpertKey* \[ in\]
+*hExpertKey* \[ Pollici\]
 </dt> <dd>
 
-Identificatore univoco dell'esperto. Network Monitor passa *hExpertKey* all'esperto quando chiama la funzione [Run](run.md) .
+Identificatore univoco dell'esperto. Network Monitor passa *hExpertKey* all'esperto quando chiama la [funzione](run.md) Run.
 
 </dd> <dt>
 
-*pExpertStartupInfo* \[ out\]
+*pExpertStartupInfo* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una struttura [EXPERTSTARTUPINFO](expertstartupinfo.md) che contiene informazioni di avvio.
+Puntatore a una [struttura EXPERTSTARTUPINFO](expertstartupinfo.md) che contiene informazioni di avvio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è NMERR.
 
 ## <a name="remarks"></a>Commenti
 
-La funzione **ExpertGetStartupInfo** viene utilizzata se l'esperto deve determinare le informazioni di avvio utilizzate.
+La **funzione ExpertGetStartupInfo** viene usata se l'esperto deve determinare le informazioni di avvio usate.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,8 +72,8 @@ La funzione **ExpertGetStartupInfo** viene utilizzata se l'esperto deve determin
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                           |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Libreria<br/>                  | <dl> <dt>Nmap. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Libreria<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

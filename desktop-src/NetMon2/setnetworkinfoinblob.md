@@ -1,7 +1,7 @@
 ---
-description: La funzione SetNetworkInfoInBlob compila la struttura NETWORKINFO nel BLOB.
+description: La funzione SetNetworkInfoInBlob inserisce la struttura NETWORKINFO nel BLOB.
 ms.assetid: 1a511c26-2fa7-4fe4-a5a9-23188c59bc34
-title: Funzione SetNetworkInfoInBlob (Netmon. h)
+title: Funzione SetNetworkInfoInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a0019bfaf802b5d4dc80d73e75affa3c50d95de1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb83fffc219cb7cc82b2b20d6672cef0b74a6cf108577126e4200a3342edaa2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364069"
 ---
-# <a name="setnetworkinfoinblob-function"></a>SetNetworkInfoInBlob (funzione)
+# <a name="setnetworkinfoinblob-function"></a>Funzione SetNetworkInfoInBlob
 
-La funzione **SetNetworkInfoInBlob** compila la struttura **NETWORKINFO** nel BLOB.
+La **funzione SetNetworkInfoInBlob** compila la **struttura NETWORKINFO** nel BLOB.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,23 +40,23 @@ DWORD SetNetworkInfoInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ in\]
+*hBlob* \[ Pollici\]
 </dt> <dd>
 
-Handle per un BLOB.
+Handle a un BLOB.
 
 </dd> <dt>
 
-*lpNetworkInfo* \[ in\]
+*lpNetworkInfo* \[ Pollici\]
 </dt> <dd>
 
-Puntatore alla struttura [NETWORKINFO](networkinfo.md) allocata dall'utente che la funzione compila.
+Puntatore alla struttura [NETWORKINFO](networkinfo.md) allocata dall'utente compilata dalla funzione.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione ha esito positivo, il valore restituito è NMERR \_ Success.
+Se la funzione ha esito positivo, il valore restituito è NMERR \_ SUCCESS.
 
 Se la funzione ha esito negativo, il valore restituito è un valore NMERR che indica l'errore.
 
@@ -68,8 +68,8 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                    |
-| Intestazione<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Libreria<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Libreria<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

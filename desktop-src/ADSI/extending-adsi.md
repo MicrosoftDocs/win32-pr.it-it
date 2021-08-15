@@ -5,16 +5,16 @@ ms.assetid: bf9a324d-14eb-4eb9-a80d-b0431db3af26
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e597d4b2dd2cf6a3b4a81f1fff3515289418b9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 15e9f5bd316fc4703cf522e2c5facfd6c32c5236da191668f6ba38ae6a904f00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428454"
 ---
 # <a name="extending-adsi"></a>Estensione di ADSI
 
-Con il modello di estensione ADSI è possibile associare una classe di directory al proprio oggetto COM. Dal punto di vista di un programmatore ADSI o di uno script writer, l'estensione diventa parte integrante di ADSI. Ad esempio, quando un nuovo dipendente viene aggiunto a Fabrikam, l'amministratore di Windows NT creerà un oggetto utente nella directory e l'amministratore delle retribuzioni dovrà configurare alcune voci nei sistemi di risorse umane per questo utente. Con un'estensione ADSI, questo processo può essere semplificato in un unico script.
+Con il modello di estensione ADSI è possibile associare una classe di directory al proprio oggetto COM. Dal punto di vista del programmatore o del writer di script ADSI, l'estensione diventa parte integrante di ADSI. Ad esempio, quando un nuovo dipendente si unisce a Fabrikam, l'amministratore di Windows NT creerà un oggetto utente nella directory e l'amministratore delle retribuzioni dovrà configurare alcune voci nei sistemi delle risorse umane per questo utente. Con un'estensione ADSI, questo processo può essere semplificato in un unico script.
 
 
 ```VB
@@ -53,11 +53,11 @@ Debug.Print "User: " & usr.Name & "has been created"
 
 
 
-Per altre informazioni, vedere [estensioni ADSI](adsi-extensions.md).
+Per altre informazioni, vedere [Estensioni ADSI.](adsi-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

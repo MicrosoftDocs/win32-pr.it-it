@@ -1,6 +1,6 @@
 ---
-title: 'Metodi di Texture2DArray:: Texture2DArray GatherAlpha'
-description: Campiona un Texture2DArray e restituisce il componente alfa.
+title: Metodi GatherAlpha texture2DArray::Texture2DArray
+description: Campiota un oggetto Texture2DArray e restituisce il componente alfa.
 ms.assetid: 98f41243-e2d4-475b-ba28-8e9f660ddba6
 keywords:
 - Metodi GatherAlpha HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7b56a1145b79d20ee46555df7d2956503e9d202b
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 2e094d6505b2dd881468b68e0c689b0716b3828299390397dd5ae5fd6a17cd0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104058418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722776"
 ---
-# <a name="texture2darraygatheralpha-methods"></a>Metodi Texture2DArray:: GatherAlpha
+# <a name="texture2darraygatheralpha-methods"></a>Metodi texture2DArray::GatherAlpha
 
-Restituisce i componenti alfa dei quattro valori Texel di [**Texture2DArray**](sm5-object-texture2darray.md)che verrebbero usati in un'operazione di filtro bidirezionale.
+Restituisce i componenti alfa di quattro valori texel di [**Texture2DArray**](sm5-object-texture2darray.md)che verrebbero usati in un'operazione di filtro bi-lineare.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,10 +29,10 @@ Restituisce i componenti alfa dei quattro valori Texel di [**Texture2DArray**](s
 
 | Metodo                                                                                                          | Descrizione                                                                                                                                       |
 |:----------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherAlpha (S, float, int)**](sm5-object-texture2darray-gatheralpha.md)                                        | Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.<br/>                                 |
-| [**GatherAlpha (S, float, int, uint)**](t2darray-gatheralpha-s-float-int-uint-.md)                                  | Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato del mapping dei riquadri.<br/> |
-| [**GatherAlpha (S, float, int2, int2, int2, int2)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare.<br/>                                 |
-| [**GatherAlpha (S, float, int2, int2, int2, int2, uint)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Restituisce i componenti alfa dei quattro valori Texel che verrebbero usati in un'operazione di filtraggio bilineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**GatherAlpha(S,float,int)**](sm5-object-texture2darray-gatheralpha.md)                                        | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
+| [**GatherAlpha(S,float,int,uint)**](t2darray-gatheralpha-s-float-int-uint-.md)                                  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,int2)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-.md)            | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare.<br/>                                 |
+| [**GatherAlpha(S,float,int2,int2,int2,int2,uint)**](t2darray-gatheralpha-s-float-int2-int2-int2-int2-uint-.md)  | Restituisce i componenti alfa dei quattro valori texel che verrebbero usati in un'operazione di filtro bi-lineare, insieme allo stato del mapping dei riquadri.<br/> |
 
 
 

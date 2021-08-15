@@ -1,29 +1,29 @@
 ---
 description: Generato da un'origine multimediale quando le caratteristiche delle origini cambiano.
 ms.assetid: df7bb9a3-5949-4a4a-8835-c5b1d01b5cb3
-title: Evento MESourceCharacteristicsChanged (Mfobjects. h)
+title: Evento MESourceCharacteristicsChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 659e9eea0352d131aac4959b2952e8426ae408a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69be00727ec3f1f635b82fb6c8e29c4016959ced480be4e9de6b8a83cfe8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877369"
 ---
-# <a name="mesourcecharacteristicschanged-event"></a>Evento MESourceCharacteristicsChanged
+# <a name="mesourcecharacteristicschanged-event"></a>EVENTO MESourceCharacteristicsChanged
 
 Generato da un'origine multimediale quando le caratteristiche dell'origine cambiano.
 
 ## <a name="event-values"></a>Valori dell'evento
 
-I valori possibili recuperati da [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
+I valori possibili recuperati [**da IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) includono i seguenti.
 
 
 
 | VARTYPE              | Descrizione                           |
 |----------------------|---------------------------------------|
-| VT \_ vuoto<br/> | Nessun dato dell'evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Nessun dato dell'evento.<br/> <br/> |
 
 
 
@@ -35,8 +35,8 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Attributo                                                                                                   | Descrizione                                                          |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [**\_caratteristiche dell' \_ origine \_ evento MF**](mf-event-source-characteristics-attribute.md)<br/>          | Nuove caratteristiche dell'origine multimediale.<br/> <br/>      |
-| [**\_ \_ caratteristiche origine evento \_ MF \_ obsolete**](mf-event-source-characteristics-old-attribute.md)<br/> | Caratteristiche precedenti dell'origine multimediale.<br/> <br/> |
+| [**CARATTERISTICHE \_ DELL'ORIGINE EVENTO MF \_ \_**](mf-event-source-characteristics-attribute.md)<br/>          | Nuove caratteristiche dell'origine multimediale.<br/> <br/>      |
+| [**CARATTERISTICHE \_ DELL'ORIGINE EVENTO MF \_ \_ \_ PRECEDENTE**](mf-event-source-characteristics-old-attribute.md)<br/> | Caratteristiche precedenti dell'origine multimediale.<br/> <br/> |
 
 
 
@@ -46,9 +46,9 @@ Per questo evento sono definiti gli attributi seguenti.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Mfobjects. h (include Mfidl. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Mfobjects.h (includere Mfidl.h)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Per questo evento sono definiti gli attributi seguenti.
 [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 </dt> <dt>
 
-[Eventi Media Foundation](media-foundation-events.md)
+[Media Foundation eventi](media-foundation-events.md)
 </dt> </dl>
 
  

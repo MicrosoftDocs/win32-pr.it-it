@@ -1,9 +1,9 @@
 ---
-title: Messaggio SBM_GETPOS (winuser. h)
-description: Il \_ messaggio GETPOS SBM viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento.
+title: SBM_GETPOS messaggio (Winuser.h)
+description: Il messaggio \_ SBM GETPOS viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento.
 ms.assetid: 00344d93-f205-4cda-aa25-6dd065f41b6e
 keywords:
-- Controlli di Windows Message SBM_GETPOS
+- SBM_GETPOS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d088fc790985e57928f1ab56cd42254b1a087dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0105b2c015614c9f064b2c97f60100c2240bd6588612d34b25546c7ced832bdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408894"
 ---
-# <a name="sbm_getpos-message"></a>\_Messaggio GETPOS SBM
+# <a name="sbm_getpos-message"></a>Messaggio \_ GETPOS SBM
 
-Il **messaggio \_ GETPOS SBM** viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento. La posizione corrente è un valore relativo che dipende dall'intervallo di scorrimento corrente. Se, ad esempio, l'intervallo di scorrimento è compreso tra 0 e 100 e la casella di scorrimento si trova al centro della barra, la posizione corrente è 50.
+Il **messaggio \_ SBM GETPOS** viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento. La posizione corrente è un valore relativo che dipende dall'intervallo di scorrimento corrente. Ad esempio, se l'intervallo di scorrimento è compreso tra 0 e 100 e la casella di scorrimento si trova al centro della barra, la posizione corrente è 50.
 
-Le applicazioni non devono inviare direttamente questo messaggio. Devono invece usare la funzione [**GetScrollPos**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) . Una finestra riceve questo messaggio tramite la funzione [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi affinché la funzione **GetScrollPos** funzioni correttamente.
+Le applicazioni non devono inviare questo messaggio direttamente. Devono invece usare la [**funzione GetScrollPos.**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) Una finestra riceve questo messaggio tramite la relativa [*funzione WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi perché la **funzione GetScrollPos** funzioni correttamente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -34,14 +34,14 @@ Le applicazioni non devono inviare direttamente questo messaggio. Devono invece 
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito è la posizione corrente della casella di scorrimento nella
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -68,16 +68,16 @@ Il valore restituito è la posizione corrente della casella di scorrimento nella
 **Riferimento**
 </dt> <dt>
 
-[**GetRange di SBM \_**](sbm-getrange.md)
+[**SBM \_ GETRANGE**](sbm-getrange.md)
 </dt> <dt>
 
-[**\_SETPOS SBM**](sbm-setpos.md)
+[**SBM \_ SETPOS**](sbm-setpos.md)
 </dt> <dt>
 
-[**\_SEtrange SBM**](sbm-setrange.md)
+[**SBM \_ SETRANGE**](sbm-setrange.md)
 </dt> <dt>
 
-[**\_SETRANGEREDRAW SBM**](sbm-setrangeredraw.md)
+[**SBM \_ SETRANGEREDRAW**](sbm-setrangeredraw.md)
 </dt> </dl>
 
  
