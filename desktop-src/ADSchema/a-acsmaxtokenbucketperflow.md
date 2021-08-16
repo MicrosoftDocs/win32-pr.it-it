@@ -1,10 +1,10 @@
 ---
-title: Attributo ACS-max-token-bucket-per-Flow
-description: L'attributo ACS-max-token-bucket-per-Flow è solo per uso interno.
+title: Attributo ACS-Max-Token-Bucket-Per-Flow
+description: L'attributo ACS-Max-Token-Bucket-Per-Flow è solo per uso interno.
 ms.assetid: 2c269bda-7b0d-4ef4-8c67-9f5e7c52e3ae
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ACS-max-token-bucket per flusso
+- Schema AD dell'attributo ACS-Max-Token-Bucket-Per-Flow
 - Schema AD dell'attributo aCSMaxTokenBucketPerFlow
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb323af82b270c20478e8af4aafc3ee4142125ee
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9067ba2dd69fe1ffb17f9eaef7a13365149ce29e4306611f288680bb4d49c35f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104123216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838307"
 ---
-# <a name="acs-max-token-bucket-per-flow-attribute"></a>Attributo ACS-max-token-bucket-per-Flow
+# <a name="acs-max-token-bucket-per-flow-attribute"></a>Attributo ACS-Max-Token-Bucket-Per-Flow
 
-L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su RFC2210.
+**L'attributo ACS-Max-Token-Bucket-Per-Flow** è solo per uso interno. Basato su RFC2210.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | ACS-max-token-bucket per flusso        |
-| LDAP-Display-Name | aCSMaxTokenBucketPerFlow             |
+| CN                | ACS-Max-Token-Bucket-Per-Flow        |
+| Ldap-Display-Name | aCSMaxTokenBucketPerFlow             |
 | Dimensione              | 8 byte                              |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1313              |
-| System-ID-GUID    | 81f6e0df-3b90-11d2-90cc-00c04fd91ab1 |
-| Sintassi            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 81f6e0df-3b90-11d2-90cc-00c04fd91ab1 |
+| Sintassi            | [**Intervallo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**Criteri ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ L'attributo **ACS-max-token-bucket-per-Flow** è solo per uso interno. Basato su
 | ID collegamento                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| È a valore singolo       | Vero                                         |
+| Is-Single-Valued       | Vero                                         |
 | Indicizzato             | Falso                                        |
 | Nel catalogo globale      | Falso                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classi utilizzate in        | [**ACS-criteri**](c-acspolicy.md)<br/> |
+| Classi usate in        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

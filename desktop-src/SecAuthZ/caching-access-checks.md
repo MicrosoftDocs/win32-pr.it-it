@@ -1,27 +1,27 @@
 ---
-description: Quando un'applicazione esegue un controllo di accesso chiamando la funzione AuthzAccessCheck, i risultati del controllo di accesso possono essere memorizzati nella cache.
+description: Quando un'applicazione esegue un controllo di accesso chiamando la funzione AuthzAccessCheck, i risultati di tale controllo di accesso possono essere memorizzati nella cache.
 ms.assetid: d79a5683-6c67-487f-b9a6-4e80da38b827
-title: Memorizzazione nella cache di controlli di accesso
+title: Caching Controlli di accesso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 967e0a5398d93c1715d7d08e5c7c75695e4120ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83659c35fb9334e55bd7dfcd2368275dc16eb0d4836b8d6fa69a6ed8d713d953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104350586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783556"
 ---
-# <a name="caching-access-checks"></a>Memorizzazione nella cache di controlli di accesso
+# <a name="caching-access-checks"></a>Caching Controlli di accesso
 
-Quando un'applicazione esegue un controllo di accesso chiamando la funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) , i risultati del controllo di accesso possono essere memorizzati nella cache. Quando il parametro *pAuthzHandle* della funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) non è **null**, la funzione esegue un controllo di accesso separato con una maschera di [**accesso \_**](access-mask.md) richiesta **massima \_ consentita** e memorizza nella cache i risultati di tale controllo. Un handle per i risultati di tale controllo può quindi essere passato come parametro *AuthzHandle* alla funzione [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . In questo modo è possibile controllare più rapidamente gli accessi per un determinato client e [*descrittori di sicurezza*](/windows/desktop/SecGloss/s-gly).
+Quando un'applicazione esegue un controllo di accesso chiamando la funzione [**AuthzAccessCheck,**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) i risultati di tale controllo di accesso possono essere memorizzati nella cache. Quando il *parametro pAuthzHandle* della funzione [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) non è **NULL,** la [**funzione \_**](access-mask.md) esegue un controllo di accesso separato, con una maschera di accesso richiesta di **MAXIMUM \_ ALLOWED,** e memorizza nella cache i risultati di tale controllo. Un handle per i risultati di tale controllo può quindi essere passato come parametro *AuthzHandle* alla [**funzione AuthzCachedAccessCheck.**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) Ciò consente un controllo di accesso più rapido per un determinato client e [*descrittori di sicurezza*](/windows/desktop/SecGloss/s-gly).
 
-Solo la parte statica di un controllo di accesso può essere memorizzata nella cache. Tutte le [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) o ACE che contengono il SID **principale self- \_ Service** devono essere valutate per ogni controllo di accesso.
+Solo la parte statica di un controllo di accesso può essere memorizzata nella cache. Per ogni [*controllo di*](/windows/desktop/SecGloss/a-gly) accesso è necessario valutare tutte le voci di controllo di accesso di callback (ACE) o le voci ACE contenenti il SID **\_ SELF** principale.
 
-Le variabili di attributo devono essere sotto forma di espressione se utilizzate con operatori logici; in caso contrario, vengono valutati come sconosciuti.
+Le variabili di attributo devono essere nel formato di un'espressione se usate con operatori logici. in caso contrario, vengono valutati come sconosciuti.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene controllato l'accesso in base a un risultato memorizzato nella cache da un controllo di accesso precedente. Il controllo di accesso precedente è stato eseguito nell'esempio di [Verifica dell'accesso con l'API Authz](checking-access-with-authz-api.md).
+Nell'esempio seguente viene controllato l'accesso rispetto a un risultato memorizzato nella cache da un controllo di accesso precedente. Il controllo di accesso precedente è stato eseguito nell'esempio in [Verifica dell'accesso con Authz API](checking-access-with-authz-api.md).
 
 
 ```C++
@@ -137,7 +137,7 @@ BOOL CheckCachedAccess(AUTHZ_CLIENT_CONTEXT_HANDLE hClientContext)
 [Aggiunta di SID a un contesto client](adding-sids-to-a-client-context.md)
 </dt> <dt>
 
-[Verifica dell'accesso con l'API Authz](checking-access-with-authz-api.md)
+[Controllo dell'accesso con Authz API](checking-access-with-authz-api.md)
 </dt> <dt>
 
 [Inizializzazione di un contesto client](initializing-a-client-context.md)

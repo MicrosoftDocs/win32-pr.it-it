@@ -13,7 +13,7 @@ ms.locfileid: "118219807"
 ---
 # <a name="inkoverlaymousemove-event"></a>Evento InkOverlay.MouseMove
 
-Si verifica quando il puntatore del mouse viene spostato [**sull'oggetto InkCollector**](inkcollector-class.md) [**o InkOverlay.**](inkoverlay-class.md)
+Si verifica quando il puntatore del mouse viene spostato [**sull'oggetto InkCollector**](inkcollector-class.md) o [**InkOverlay.**](inkoverlay-class.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -76,12 +76,12 @@ Questo evento non restituisce un valore.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Le proprietà *pX* e *pY* sono espresse in pixel e non nelle unità HIMETRIC associate allo spazio input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione inconsapevole e questo tipo di applicazione comprende solo i pixel.
+> Le proprietà *pX* e *pY* sono in pixel e non le unità HIMETRIC associate allo spazio input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione che non è in conoscenza della penna e questo tipo di applicazione comprende solo i pixel.
 
  
 
 > [!Note]  
-> Alcuni controlli si basano su una relazione specifica tra gli eventi [**MouseDown,**](inkcollector-mousedown.md) [**MouseMove**](inkcollector-mousemove.md) [**e MouseUp.**](inkcollector-mouseup.md) L'annullamento di alcuni di questi eventi può avere risultati imprevisti.
+> Alcuni controlli si basano su una relazione specifica tra [**gli eventi MouseDown**](inkcollector-mousedown.md), [**MouseMove**](inkcollector-mousemove.md) [**e MouseUp.**](inkcollector-mouseup.md) L'annullamento di alcuni di questi eventi può avere risultati imprevisti.
 
  
 
@@ -93,7 +93,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

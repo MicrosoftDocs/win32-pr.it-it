@@ -1,6 +1,6 @@
 ---
 title: Rotazione avanzata
-description: Questa sezione illustra come ruotare un oggetto in base al punto in cui l'utente sta eseguendo la manipolazione della rotazione.
+description: Questa sezione illustra come ruotare un oggetto in base alla posizione in cui l'utente sta eseguendo la manipolazione della rotazione.
 ms.assetid: 56b339b1-a062-4c0e-91c8-aec08a17bc65
 keywords:
 - Windows Tocco, rotazione
@@ -8,7 +8,7 @@ keywords:
 - Windows Tocco, manipolazioni
 - manipolazioni, rotazione
 - manipolazioni, rotazione avanzata
-- rotazione, avanzata
+- rotazione, avanzate
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1a6dda17ae8076061f7b5b7b935afb2b7f8e5fb10cb270280f7edbb8c23aa896
@@ -20,11 +20,11 @@ ms.locfileid: "118199517"
 ---
 # <a name="advanced-rotation"></a>Rotazione avanzata
 
-Questa sezione illustra come ruotare un oggetto in base al punto in cui l'utente sta eseguendo la manipolazione della rotazione.
+Questa sezione illustra come ruotare un oggetto in base alla posizione in cui l'utente sta eseguendo la manipolazione della rotazione.
 
 L'immagine seguente illustra due diversi modi in cui un oggetto può essere ruotato.
 
-![illustrazione che mostra due tipi di rotazione con un dito singolo: intorno al centro o intorno al bordo, con il bordo che coinvolge sia la rotazione che la traslazione](images/rotation.png)
+![Figura che mostra due tipi di rotazione con un dito singolo: intorno al centro o intorno al bordo, con il bordo che coinvolge sia la rotazione che la traslazione](images/rotation.png)
 
 Nell'esempio A, l'oggetto viene modificato intorno al punto centrale dell'oggetto. Nell'esempio B, l'oggetto viene ruotato intorno al punto centrale della manipolazione. Per supportare la manipolazione intorno a un punto diverso dal punto centrale dell'oggetto, è necessario eseguire una manipolazione composta che esegua sia la rotazione che la traslazione. Il codice seguente illustra come viene eseguita e calcolata questa manipolazione.
 

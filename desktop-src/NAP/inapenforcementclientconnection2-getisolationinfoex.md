@@ -1,9 +1,9 @@
 ---
-title: Metodo GetIsolationInfoEx INapEnforcementClientConnection2 (NapEnforcementClient.h)
+title: Metodo INapEnforcementClientConnection2 GetIsolationInfoEx (NapEnforcementClient.h)
 description: Viene usato per ottenere informazioni di isolamento sul client.
 ms.assetid: ebacd056-5ab8-4096-821c-8f2987d853c4
 keywords:
-- Metodo GetIsolationInfoEx nap
+- Metodo GetIsolationInfoEx NAP
 - Metodo GetIsolationInfoEx NAP , interfaccia INapEnforcementClientConnection2
 - Interfaccia INapEnforcementClientConnection2 NAP, metodo GetIsolationInfoEx
 topic_type:
@@ -63,8 +63,8 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 | Codice restituito                                                                                     | Descrizione                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operazione riuscita.<br/>                                    |
-| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazioni, accesso negato.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema: impossibile eseguire l'operazione.<br/> |
+| <dl> <dt>**E \_ ACCESSO NEGATO**</dt> </dl> | Errore di autorizzazione, accesso negato.<br/>                       |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite di risorse di sistema. Impossibile eseguire l'operazione.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Possono essere restituiti anche altri codici di errore specifici di COM.
 
 ## <a name="remarks"></a>Commenti
 
-Queste informazioni vengono impostate da NapAgent dopo l'elaborazione di [**soHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e non devono essere impostate dall'applicatore.
+Queste informazioni vengono impostate da NapAgent dopo l'elaborazione di [**soHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e non devono essere impostate dall'applicazione.
 
-L'SHA deve liberare la [**struttura IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chiamando [**FreeIsolationInfoEx**](freeisolationinfoex.md).
+L'SHA deve liberare [**la struttura IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chiamando [**FreeIsolationInfoEx.**](freeisolationinfoex.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,8 +82,8 @@ L'SHA deve liberare la [**struttura IsolationInfoEx**](/windows/win32/api/naptyp
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                                |
 | Intestazione<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |

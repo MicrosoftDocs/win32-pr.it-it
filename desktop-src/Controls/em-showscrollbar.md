@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_SHOWSCROLLBAR (RichEdit. h)
-description: Consente di visualizzare o nascondere una delle barre di scorrimento nella finestra host di un controllo Rich Edit.
+title: EM_SHOWSCROLLBAR messaggio (Richedit.h)
+description: Mostra o nasconde una delle barre di scorrimento nella finestra host di un controllo Rich Edit.
 ms.assetid: 0a6ec010-4870-4faf-9dc2-1da961dc8194
 keywords:
-- Controlli di Windows Message EM_SHOWSCROLLBAR
+- EM_SHOWSCROLLBAR dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb569b194be3d744db67f98b71a595ba18a2d3a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc3988ced825fed457549fc9f662a418295de7df6085f04c3e71255ca4ad54c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831142"
 ---
-# <a name="em_showscrollbar-message"></a>\_Messaggio SHOWSCROLLBAR em
+# <a name="em_showscrollbar-message"></a>Messaggio EM \_ SHOWSCROLLBAR
 
-Consente di visualizzare o nascondere una delle barre di scorrimento nella finestra host di un controllo Rich Edit.
+Mostra o nasconde una delle barre di scorrimento nella finestra host di un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,20 +32,20 @@ Consente di visualizzare o nascondere una delle barre di scorrimento nella fines
 *wParam* 
 </dt> <dd>
 
-Identifica la barra di scorrimento da visualizzare: orizzontale o verticale. Questo parametro deve essere **SB \_ Vert** o **SB \_ orizzontalmente**.
+Identifica la barra di scorrimento da visualizzare: orizzontale o verticale. Questo parametro deve essere **SB \_ VERT** o **SB \_ HORZ.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Consente di specificare se visualizzare o nascondere la barra di scorrimento. Specificare **true** per visualizzare la barra di scorrimento e **false** per nasconderlo.
+Specifica se visualizzare o nascondere la barra di scorrimento. Specificare **TRUE** per visualizzare la barra di scorrimento e **FALSE** per nasconderla.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo messaggio non restituisce alcun valore.
+Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ Questo metodo è valido solo quando il controllo è attivo sul posto. Le chiamat
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Questo metodo è valido solo quando il controllo è attivo sul posto. Le chiamat
 **Riferimento**
 </dt> <dt>
 
-[**\_GETSCROLLPOS em**](em-getscrollpos.md)
+[**EM \_ GETSCROLLPOS**](em-getscrollpos.md)
 </dt> <dt>
 
-[**\_SETSCROLLPOS em**](em-setscrollpos.md)
+[**EM \_ SETSCROLLPOS**](em-setscrollpos.md)
 </dt> </dl>
 
  

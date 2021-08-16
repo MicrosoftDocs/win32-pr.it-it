@@ -1,39 +1,39 @@
 ---
-title: Come elaborare la notifica di DTN_DATETIMECHANGE
-description: In questo argomento viene illustrato come elaborare la notifica delle modifiche apportate dall'utente al controllo di selezione data e ora (DTP).
+title: Come elaborare la DTN_DATETIMECHANGE notifica
+description: Questo argomento illustra come elaborare la notifica delle modifiche apportate dall'utente al controllo selezione data e ora (DTP).
 ms.assetid: AE029962-E9D3-47BC-A24F-312B54137F18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5434c7ebbda673f76a757375e9a3d23504483d42
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 9490059a202eff69a05b34a086e74d6df52758713fd5b66d899d1ab114a31040
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829922"
 ---
 # <a name="how-to-process-the-dtn_datetimechange-notification"></a>Come elaborare la notifica DTN \_ DATETIMECHANGE
 
-In questo argomento viene illustrato come elaborare la notifica delle modifiche apportate dall'utente al controllo di selezione data e ora (DTP).
+Questo argomento illustra come elaborare la notifica delle modifiche apportate dall'utente al controllo selezione data e ora (DTP).
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-Un controllo DTP invia il codice di notifica [ \_ DATETIMECHANGE di DTN](dtn-datetimechange.md) ogni volta che si verifica una modifica. Questa notifica, ad esempio, verrà generata quando l'utente modifica uno dei campi del controllo o, nel caso in cui il controllo sia impostato sullo stile [**DTS \_ SHOWNONE**](date-and-time-picker-control-styles.md) , quando l'utente modifica lo stato della casella di controllo del controllo.
+Un controllo DTP invia il [codice di notifica DTN \_ DATETIMECHANGE](dtn-datetimechange.md) ogni volta che si verifica una modifica. Ad esempio, questa notifica verrà generata quando l'utente modifica uno dei campi nel controllo o, nel caso in cui il controllo sia impostato sullo stile [**DTS \_ SHOWNONE,**](date-and-time-picker-control-styles.md) quando l'utente modifica lo stato della casella di controllo del controllo.
 
-L'applicazione deve includere il codice per elaborare \_ i messaggi DATETIMECHANGE di DTN inviati dal controllo DTP.
+L'applicazione deve includere il codice per elaborare i messaggi \_ DTN DATETIMECHANGE inviati dal controllo DTP.
 
-Il seguente esempio di codice C++ è una funzione definita dall'applicazione progettata per indicare lo stato di un controllo DTP impostato sullo stile **\_ SHOWNONE DTS** .
+L'esempio di codice C++ seguente è una funzione definita dall'applicazione progettata per indicare lo stato di un controllo DTP impostato sullo stile **DTS \_ SHOWNONE.**
 
 
 
@@ -58,10 +58,10 @@ void WINAPI DoDateTimeChange(LPNMDATETIMECHANGE lpChange)
 
 <dl> <dt>
 
-[Uso di controlli selezione data e ora](using-date-and-time-picker.md)
+[Uso dei controlli selezione data e ora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Riferimento al controllo selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Informazioni di riferimento sul controllo Selezione data e ora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
 [Selezione data e ora](date-and-time-picker-control-reference.md)

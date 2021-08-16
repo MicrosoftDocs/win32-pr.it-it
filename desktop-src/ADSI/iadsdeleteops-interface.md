@@ -1,28 +1,28 @@
 ---
 title: Interfaccia IADsDeleteOps
-description: L'interfaccia IADsDeleteOps viene utilizzata nelle routine di supervisione e manutenzione per l'archivio directory sottostante. Può eliminare oggetti foglia e sottoalberi interi in un'unica operazione.
+description: L'interfaccia IADsDeleteOps viene usata nelle routine di supervisione e manutenzione per l'archivio directory sottostante. Può eliminare gli oggetti foglia e interi sottoalberi in una singola operazione.
 ms.assetid: 821b71c2-e9f5-4ca8-9366-e8a3f1907670
 ms.tgt_platform: multiple
 keywords:
 - Interfaccia IADsDeleteOps ADSI
-- IADsDeleteOps ADSI, utilizzo
-- ADSI ADSI, esempio di codice C/C++, uso di IADsDeleteOps per eliminare interi gruppi
+- IADsDeleteOps ADSI , con
+- ADSI ADSI , codice di esempio C/C++, uso di IADsDeleteOps per eliminare interi gruppi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6332dd28e903996e8688d6c6fc672df080822595
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 192411e53f54de2a5f73cc043f35cea6787f4b879972b6a69ada4760c175292a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839944"
 ---
 # <a name="iadsdeleteops-interface"></a>Interfaccia IADsDeleteOps
 
-L'interfaccia [**IADsDeleteOps**](/windows/desktop/api/Iads/nn-iads-iadsdeleteops) viene utilizzata nelle routine di supervisione e manutenzione per l'archivio directory sottostante. Può eliminare oggetti foglia e sottoalberi interi in un'unica operazione.
+[**L'interfaccia IADsDeleteOps**](/windows/desktop/api/Iads/nn-iads-iadsdeleteops) viene usata nelle routine di supervisione e manutenzione per l'archivio directory sottostante. Può eliminare gli oggetti foglia e interi sottoalberi in una singola operazione.
 
-Se questa interfaccia non è supportata, l'eliminazione di un oggetto da Active Directory richiede che ogni oggetto contenuto venga enumerato ed eliminato in modo ricorsivo. Con questa interfaccia, qualsiasi oggetto contenitore, con tutti i relativi oggetti contenuti e i relativi oggetti, può essere eliminato con una singola operazione.
+Se questa interfaccia non fosse supportata, l'eliminazione di un oggetto da Active Directory richiederebbe che ogni oggetto contenuto sia enumerato ed eliminato in modo ricorsivo. Con questa interfaccia, qualsiasi oggetto contenitore, con tutti i relativi oggetti e sottooggetti contenuti, può essere eliminato con una singola operazione.
 
-Nell'esempio di codice seguente vengono eliminati il contenitore "ENG" e tutti gli oggetti figlio.
+L'esempio di codice seguente elimina il contenitore "Eng" e tutti gli oggetti figlio.
 
 
 ```C++
@@ -64,7 +64,7 @@ if(pwszPassword)
 
 
 
-Nell'esempio di codice seguente vengono eliminati il contenitore "ENG" e tutti gli oggetti figlio.
+L'esempio di codice seguente elimina il contenitore "Eng" e tutti gli oggetti figlio.
 
 
 ```VB
@@ -79,9 +79,9 @@ DeleteOps.DeleteObject (0)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

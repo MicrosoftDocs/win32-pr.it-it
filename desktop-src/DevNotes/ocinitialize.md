@@ -1,7 +1,7 @@
 ---
-description: Inizializza il gestore di componenti facoltativo.
+description: Inizializza la gestione componenti facoltativa.
 ms.assetid: 9a7ddca6-a6c8-4d96-81bb-66158b83ab68
-title: OcInitialize (funzione)
+title: Funzione OcInitialize
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - OcManage.dll
-ms.openlocfilehash: aad102ac9881a801f693a429aab5dae07d09b5e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08e7ffd7f8ad6faa2b08f937627627b6e74bbc09505482c589023db5dae37677
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117826746"
 ---
-# <a name="ocinitialize-function"></a>OcInitialize (funzione)
+# <a name="ocinitialize-function"></a>Funzione OcInitialize
 
-Inizializza il gestore di componenti facoltativo.
+Inizializza la gestione componenti facoltativa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,47 +43,47 @@ PVOID OcInitialize(
 
 <dl> <dt>
 
-*Callback di* \[ in\]
+*Callback* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**di \_ \_ callback del client OCM**](ocm-client-callbacks.md) che specifica le funzioni di callback che devono essere utilizzate dal gestore OC per eseguire varie attività.
+Puntatore a una [**struttura \_ CALLBACK \_ CLIENT OCM**](ocm-client-callbacks.md) che specifica le funzioni di callback che devono essere utilizzate dal gestore OC per eseguire varie attività.
 
 </dd> <dt>
 
-*MasterOcInfName* \[ in\]
+*MasterOcInfName* \[ Pollici\]
 </dt> <dd>
 
-Percorso del file master OC. inf.
+Percorso del file OC master con estensione inf.
 
 </dd> <dt>
 
-*Flag* \[ in\]
+*Flag* \[ Pollici\]
 </dt> <dd>
 
-Il parametro può essere costituito da uno o più dei valori seguenti.
+Questo parametro può essere uno o più dei valori seguenti.
 
 <dl> <dt>
 
-<span id="OCINIT_FORCENEWINF"></span><span id="ocinit_forcenewinf"></span>**OCINIT \_ FORCENEWINF** (0x00000001)
+<span id="OCINIT_FORCENEWINF"></span><span id="ocinit_forcenewinf"></span>**OETTAT \_ FORCENEWINF** (0x00000001)
 </dt> <dt>
 
-<span id="OCINIT_KILLSUBCOMPS"></span><span id="ocinit_killsubcomps"></span>**OCINIT \_ KILLSUBCOMPS** (0x00000002)
+<span id="OCINIT_KILLSUBCOMPS"></span><span id="ocinit_killsubcomps"></span>**OETTAT \_ KILLSUBCOMPS** (0x00000002)
 </dt> <dt>
 
-<span id="OCINIT_RUNQUIET"></span><span id="ocinit_runquiet"></span>**OCINIT \_ RUNQUIET** (0x00000004)
+<span id="OCINIT_RUNQUIET"></span><span id="ocinit_runquiet"></span>**OETTAT \_ RUNQUIET** (0x00000004)
 </dt> <dt>
 
-<span id="OCINIT_LANGUAGEAWARE"></span><span id="ocinit_languageaware"></span>**OCINIT \_ LANGUAGEAWARE** (0x00000008)
+<span id="OCINIT_LANGUAGEAWARE"></span><span id="ocinit_languageaware"></span>**OETTAT \_ LANGUAGEAWARE** (0x00000008)
 </dt> </dl> </dd> <dt>
 
-*ShowError* \[ out\]
+*ShowError* \[ Cambio\]
 </dt> <dd>
 
-Se la funzione ha esito negativo, questo parametro indica se visualizzare o meno un messaggio di errore.
+Se la funzione ha esito negativo, questo parametro indica se visualizzare un messaggio di errore.
 
 </dd> <dt>
 
-*Log* \[ di in\]
+*Log* \[ Pollici\]
 </dt> <dd>
 
 Handle per il log.
@@ -92,11 +92,11 @@ Handle per il log.
 
 ## <a name="return-value"></a>Valore restituito
 
-La funzione restituisce il valore di contesto di gestione OC.
+La funzione restituisce il valore del contesto di gestione OC.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -112,7 +112,7 @@ A questa funzione non è associato alcun file di intestazione o libreria di impo
 
 <dl> <dt>
 
-[**\_callback client \_ OCM**](ocm-client-callbacks.md)
+[**CALLBACK CLIENT OCM \_ \_**](ocm-client-callbacks.md)
 </dt> <dt>
 
 [**OcTerminate**](octerminate.md)

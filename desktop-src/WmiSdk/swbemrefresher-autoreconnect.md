@@ -27,7 +27,7 @@ ms.locfileid: "118312813"
 
 La **proprietà AutoReconnect** dell'oggetto [**SWbemRefresher**](swbemrefresher.md) è un valore booleano che indica se l'aggiornamento si riconnette automaticamente a un provider remoto se la connessione viene interrotta.
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,7 +44,7 @@ SWbemRefresher.AutoReconnect As Boolean
 
 ## <a name="remarks"></a>Commenti
 
-La modifica di questa proprietà influisce solo sugli oggetti nell'aggiornamento supportati da un provider a prestazioni elevate. Se il provider non è un provider a prestazioni elevate, l'impostazione della proprietà **AutoReconnect** su **TRUE** non ha alcun effetto perché l'oggetto [**SWbemRefresher**](swbemrefresher.md) non si riconnette mai.
+La modifica di questa proprietà influisce solo sugli oggetti nell'aggiornamento supportati da un provider a prestazioni elevate. Se il provider non è un provider ad alte prestazioni, l'impostazione della proprietà **AutoReconnect** su **TRUE** non ha alcun effetto perché l'oggetto [**SWbemRefresher**](swbemrefresher.md) non si riconnette mai.
 
 ## <a name="requirements"></a>Requisiti
 

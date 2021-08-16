@@ -1,9 +1,9 @@
 ---
-title: Codice di notifica PGN_SCROLL (COMmctrl. h)
-description: Notifica alla finestra padre di un controllo pager che sta per essere eseguito lo scorrimento della finestra contenuta. Questa notifica viene inviata sotto forma di \_ messaggio di notifica WM.
+title: PGN_SCROLL di notifica (Commctrl.h)
+description: Notifica alla finestra padre di un controllo pager che la finestra contenuta sta per essere scorrendo. Questa notifica viene inviata sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: 3d40e75e-c445-4885-b807-8cfcb92cb2d9
 keywords:
-- Controlli di Windows per il codice di notifica PGN_SCROLL
+- PGN_SCROLL del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bc964b1a820fb0d5cd341e8909f36d5f6312ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 864903c73eeb611d1c748ec6a4d936192a1a27f22d3f37115af8879916286a8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104119578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830145"
 ---
-# <a name="pgn_scroll-notification-code"></a>\_Codice di notifica di scorrimento PGN
+# <a name="pgn_scroll-notification-code"></a>PGN SCROLL notification code (Codice di \_ notifica PGN SCROLL)
 
-Notifica alla finestra padre di un controllo pager che sta per essere eseguito lo scorrimento della finestra contenuta. Questa notifica viene inviata sotto forma di messaggio di [**\_ notifica WM**](wm-notify.md) .
+Notifica alla finestra padre di un controllo pager che la finestra contenuta sta per essere scorrendo. Questa notifica viene inviata sotto forma di messaggio [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ PGN_SCROLL
 *lParam* 
 </dt> <dd>
 
-Puntatore a una struttura [**NMPGSCROLL**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgscroll) che contiene e riceve informazioni sul codice di notifica. Il membro **Idir** della struttura indica la direzione dello scorrimento. I membri **iXpos** e **iYpos** contengono la posizione orizzontale e verticale della finestra contenuta prima dello scorrimento. Il membro **iScroll** contiene l'importo Delta di scorrimento predefinito. Se lo si desidera, è possibile modificare questo membro in un altro valore di scorrimento.
+Puntatore a [**una struttura NMPGSCROLL**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgscroll) che contiene e riceve informazioni sul codice di notifica. Il **membro iDir** di questa struttura indica la direzione dello scorrimento. I **membri iXpos** **e iYpos** contengono la posizione orizzontale e verticale della finestra contenuta prima dello scorrimento. Il **membro iScroll** contiene la quantità delta di scorrimento predefinita. Se si desidera, è possibile modificare questo membro in modo che lo scorrimento sia diverso.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Il valore restituito viene ignorato.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

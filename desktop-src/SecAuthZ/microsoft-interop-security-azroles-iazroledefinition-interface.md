@@ -130,7 +130,7 @@ I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Se
 
 ### <a name="methods"></a>Metodi
 
-**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzRoleDefinition** include questi metodi.
+Questi metodi sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzRoleDefinition.**
 
 
 
@@ -161,7 +161,7 @@ I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Se
 
 ### <a name="properties"></a>Proprietà
 
-**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzRoleDefinition** ha queste proprietà.
+Queste proprietà sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzRoleDefinition.**
 
 
 

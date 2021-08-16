@@ -1,5 +1,5 @@
 ---
-description: Funzione definita dall'applicazione che crea un elenco di identificatori di sicurezza (SID) che si applicano a un client. AuthzComputeGroupsCallback è un segnaposto per il nome della funzione definita dall'applicazione.
+description: Funzione definita dall'applicazione che crea un elenco di ID di sicurezza (SID) applicabili a un client. AuthzComputeGroupsCallback è un segnaposto per il nome della funzione definita dall'applicazione.
 ms.assetid: c20a02a0-5303-4433-a484-5a89999b32b9
 title: Funzione di callback AuthzComputeGroupsCallback
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 3728f8114d87d07ddb33dd77a6fda5db30d07cf0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c30194e4131cbd375192723e23308e1ad5ead69d849ab73857f72ef1d4b0790
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103760829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784079"
 ---
 # <a name="authzcomputegroupscallback-callback-function"></a>Funzione di callback AuthzComputeGroupsCallback
 
-La funzione **AuthzComputeGroupsCallback** è una funzione definita dall'applicazione che crea un elenco di [*identificatori di sicurezza*](/windows/desktop/SecGloss/s-gly) (SID) che si applicano a un client. **AuthzComputeGroupsCallback** è un segnaposto per il nome della funzione definita dall'applicazione.
+La **funzione AuthzComputeGroupsCallback** è una funzione definita dall'applicazione che crea un elenco di ID [*di*](/windows/desktop/SecGloss/s-gly) sicurezza (SID) applicabili a un client. **AuthzComputeGroupsCallback è** un segnaposto per il nome della funzione definita dall'applicazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,59 +43,59 @@ BOOL CALLBACK AuthzComputeGroupsCallback(
 
 <dl> <dt>
 
-*hAuthzClientContext* \[ in\]
+*hAuthzClientContext* \[ Pollici\]
 </dt> <dd>
 
 Handle per un contesto client.
 
 </dd> <dt>
 
-*Argomenti* \[ in\]
+*Argomenti* \[ Pollici\]
 </dt> <dd>
 
-Dati passati nel parametro *DynamicGroupArgs* di una chiamata alla funzione [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken) .
+Dati passati nel *parametro DynamicGroupArgs* di una chiamata alla funzione [**AuthzInitializeContextFromAuthzContext**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromauthzcontext), [**AuthzInitializeContextFromSid**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromsid)o [**AuthzInitializeContextFromToken.**](/windows/desktop/api/Authz/nf-authz-authzinitializecontextfromtoken)
 
 </dd> <dt>
 
-*pSidAttrArray* \[ out\]
+*pSidAttrArray* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di strutture di [**SID \_ e \_ attributi**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) . Queste strutture rappresentano i gruppi ai quali appartiene il client.
+Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di [**strutture SID \_ E \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Queste strutture rappresentano i gruppi a cui appartiene il client.
 
 </dd> <dt>
 
-*pSidCount* \[ out\]
+*pSidCount* \[ Cambio\]
 </dt> <dd>
 
-Numero di strutture in *pSidAttrArray*.
+Numero di strutture in *pSidAttrArray.*
 
 </dd> <dt>
 
-*pRestrictedSidAttrArray* \[ out\]
+*pRestrictedSidAttrArray* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di strutture di [**SID \_ e \_ attributi**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) . Queste strutture rappresentano i gruppi da cui il client è limitato.
+Puntatore a una variabile puntatore che riceve l'indirizzo di una matrice di [**strutture SID \_ E \_ ATTRIBUTES.**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes) Queste strutture rappresentano i gruppi da cui il client è limitato.
 
 </dd> <dt>
 
-*pRestrictedSidCount* \[ out\]
+*pRestrictedSidCount* \[ Cambio\]
 </dt> <dd>
 
-Numero di strutture in *pSidRestrictedAttrArray*.
+Numero di strutture in *pSidRestrictedAttrArray.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se la funzione restituisce correttamente un elenco di SID, il valore restituito è **true**.
+Se la funzione restituisce correttamente un elenco di SID, il valore restituito è **TRUE.**
 
-Se la funzione ha esito negativo, il valore restituito è **false**.
+Se la funzione ha esito negativo, il valore restituito è **FALSE.**
 
 ## <a name="remarks"></a>Commenti
 
-Le applicazioni possono inoltre aggiungere SID al contesto client chiamando [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext).
+Le applicazioni possono anche aggiungere SID al contesto client chiamando [**AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext)
 
-Le variabili di attributo devono essere sotto forma di espressione se utilizzate con operatori logici; in caso contrario, vengono valutati come sconosciuti.
+Le variabili di attributo devono essere nel formato di un'espressione se usate con operatori logici. in caso contrario, vengono valutati come sconosciuti.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -103,8 +103,8 @@ Le variabili di attributo devono essere sotto forma di espressione se utilizzate
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                   |
 | Componente ridistribuibile<br/>          | Windows Server 2003 Administration Tools Pack in Windows XP<br/> |
 
 
@@ -134,7 +134,7 @@ Le variabili di attributo devono essere sotto forma di espressione se utilizzate
 [**AuthzInitializeResourceManager**](/windows/desktop/api/Authz/nf-authz-authzinitializeresourcemanager)
 </dt> <dt>
 
-[**SID \_ e \_ attributi**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes)
+[**SID \_ E \_ ATTRIBUTI**](/windows/desktop/api/Winnt/ns-winnt-sid_and_attributes)
 </dt> </dl>
 
  

@@ -52,7 +52,7 @@ Shell.CanStartStopService( _
 *sServiceName* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **Stringa**
+Tipo: **String**
 
 Valore **String** contenente il nome del servizio.
 
@@ -64,13 +64,13 @@ Valore **String** contenente il nome del servizio.
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false**.
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
 
 ### <a name="vb"></a>VB
 
 Tipo: **\* Variante**
 
-Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false**.
+Restituisce **true se** l'utente può avviare e arrestare il servizio. in caso contrario, **false.**
 
 ## <a name="remarks"></a>Commenti
 
@@ -78,7 +78,7 @@ Questo metodo non è attualmente disponibile in Microsoft Visual Basic.
 
 ## <a name="examples"></a>Esempio
 
-Gli esempi seguenti illustrano l'utilizzo di **CanStartStopService** per JScript e VBScript.
+Negli esempi seguenti viene illustrato l'utilizzo **di CanStartStopService** per JScript e VBScript.
 
 JScript:
 
@@ -123,8 +123,8 @@ Vbscript:
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 5.0 o successiva)</dt> </dl> |

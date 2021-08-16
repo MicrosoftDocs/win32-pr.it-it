@@ -109,7 +109,7 @@ Intero che specifica flag aggiuntivi per l'operazione. Il valore predefinito per
 
 </dt> <dd>
 
-Determina la restituita di un enumeratore forward-only. Gli enumeratori forward-only sono in genere molto più veloci e usano meno memoria rispetto agli enumeratori convenzionali, ma non consentono chiamate a [**SWbemObject.Clone. \_**](swbemobject-clone-.md)
+Determina la restituita di un enumeratore forward-only. Gli enumeratori forward-only sono in genere molto più veloci e usano meno memoria rispetto agli enumeratori convenzionali, ma non consentono chiamate a [**SWbemObject.Clone \_**](swbemobject-clone-.md).
 
 </dd> <dt>
 

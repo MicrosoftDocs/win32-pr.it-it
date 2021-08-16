@@ -16,7 +16,7 @@ ms.locfileid: "118318815"
 
 Un provider WMI ad alte prestazioni aumenta notevolmente la velocità con cui un client WMI può ottenere informazioni da un provider di istanze WMI. La modifica principale è che un provider ad alte prestazioni viene eseguito come server in-process per l'applicazione client o per WMI. Inserendo il provider all'interno del processo client, è possibile velocizzare l'interazione tra i due.
 
-Per altre informazioni su come rendere il provider di istanza un provider ad alte prestazioni, vedere Creazione di un provider di istanze in un provider [di High-Performance.](making-an-instance-provider-into-a-high-performance-provider.md)
+Per altre informazioni su come rendere il provider di istanza un provider ad alte prestazioni, vedere Creazione di un provider di istanze in un provider [High-Performance.](making-an-instance-provider-into-a-high-performance-provider.md)
 
  
 

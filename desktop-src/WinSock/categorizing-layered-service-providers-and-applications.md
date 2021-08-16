@@ -1,145 +1,145 @@
 ---
 title: Categorizzazione di app e provider di servizi a più livelli
-description: Winsock 2 supporta i protocolli a livelli.
+description: Winsock 2 supporta protocolli a più livelli.
 ms.assetid: 1c5efd2e-1b42-4c20-a4da-b81a5fc4243c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a966d54da0be26f75a074de18abe1b9e080c0c9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0993b7a4003b87cf902b9daccbea4742a0bcd0760642429db79b1f1bb0a22600
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322392"
 ---
 # <a name="categorizing-layered-service-providers-and-apps"></a>Categorizzazione di app e provider di servizi a più livelli
 
 > [!Note]  
-> I provider di servizi sovrapposti sono deprecati. A partire da Windows 8 e Windows Server 2012, usare la [piattaforma filtro Windows](../fwp/windows-filtering-platform-start-page.md).
+> I provider di servizi su più livelli sono deprecati. A partire da Windows 8 e Windows Server 2012, usare [Windows Filtering Platform.](../fwp/windows-filtering-platform-start-page.md)
 
  
 
-Winsock 2 supporta i protocolli a livelli. Un protocollo a più livelli è uno che implementa solo funzioni di comunicazione di livello superiore, mentre si basa su uno stack di trasporto sottostante per lo scambio effettivo di dati con un endpoint remoto. Un esempio di protocollo a più livelli o di un provider di servizi su più livelli è un livello di sicurezza che aggiunge il protocollo al processo di creazione della connessione per poter eseguire l'autenticazione e stabilire uno schema di crittografia concordato a vicenda. Un protocollo di sicurezza di questo tipo richiede in genere i servizi di un protocollo di trasporto affidabile sottostante, ad esempio TCP o SPX. Il termine protocollo di base implementato dal provider di base fa riferimento a un provider Winsock che implementa un protocollo, ad esempio TCP o SPX, che è in grado di eseguire le comunicazioni dati con un endpoint remoto. Il termine protocollo a più livelli viene usato per descrivere un protocollo che non può essere autonomo. Questi protocolli a più livelli vengono installati come provider di servizi a più livelli Winsock (LSP).
+Winsock 2 supporta protocolli a più livelli. Un protocollo a più livelli implementa solo funzioni di comunicazione di livello superiore, basandosi allo stesso tempo su uno stack di trasporto sottostante per lo scambio effettivo di dati con un endpoint remoto. Un esempio di protocollo a più livelli o di un provider di servizi a più livelli è un livello di sicurezza che aggiunge il protocollo al processo di definizione della connessione per eseguire l'autenticazione e stabilire uno schema di crittografia reciprocamente concordato. Un protocollo di sicurezza di questo tipo richiede in genere i servizi di un protocollo di trasporto affidabile sottostante, ad esempio TCP o SPX. Il termine protocollo di base implementato dal provider di base si riferisce a un provider Winsock che implementa un protocollo come TCP o SPX in grado di eseguire comunicazioni dati con un endpoint remoto. Il termine protocollo a più livelli viene usato per descrivere un protocollo che non può essere autonomo. Questi protocolli su più livelli vengono installati come provider di servizi a più livelli (LSP) Winsock.
 
-Un esempio di LSP è il provider di servizi client di Microsoft Firewall installato come parte di Internet secutity e Authentication Server (ISA) sui client. Il provider di servizi client di Microsoft Firewall viene installato sui provider di base Winsock per TCP e UDP. Una libreria di collegamento dinamico (DLL) nel software client ISA Firewall diventa un provider di servizi a più livelli Winsock che tutte le applicazioni Winsock utilizzano in modo trasparente. In questo modo, il client ISA Firewall LSP può intercettare le chiamate di funzione Winsock dalle applicazioni client e quindi indirizzare una richiesta al provider del servizio di base sottostante originale se la destinazione è locale o al servizio firewall in un computer ISA Server se la destinazione è remota. Un LSP simile viene installato come parte del servizio Microsoft Forefront firewall e del client di Threat Management Gateway (TMG) sui client.
+Un esempio di LSP è il provider di servizi Client Microsoft Firewall installato come parte del server di autenticazione (ISA) Internet nei client. Il Client Microsoft Firewall service provider viene installato sui provider di base Winsock per TCP e UDP. Una libreria a collegamento dinamico (DLL) nel software client firewall ISA diventa un provider di servizi a più livelli Winsock che tutte le applicazioni Winsock usano in modo trasparente. In questo modo, l'LSP del client firewall ISA può intercettare le chiamate di funzione Winsock dalle applicazioni client e quindi instradare una richiesta al provider di servizi di base originale se la destinazione è locale o al servizio Firewall in un computer ISA Server se la destinazione è remota. Un provider di servizi di configurazione simile viene installato come parte del servizio Microsoft Forefront Firewall e del client Threat Management Gateway (TMG) nei client.
 
-Durante l'inizializzazione di LSP, lo LSP deve fornire puntatori a una serie di funzioni di interfaccia del provider di servizi (SPI) Winsock. Queste funzioni verranno chiamate durante la normale elaborazione da parte del livello immediatamente superiore a LSP (un altro LSP o WS2 \_32.DLL).
+Durante l'inizializzazione dell'LSP, l'LSP deve fornire puntatori a una serie di funzioni SPI (Service Provider Interface) Winsock. Queste funzioni verranno chiamate durante l'elaborazione normale dal livello direttamente sopra l'LSP (un altro LSP o Ws2 \_32.DLL).
 
-È possibile definire le categorie LSP basate sul subset di funzioni SPI implementate da LSP e sulla natura dell'elaborazione aggiuntiva eseguita per ognuna di queste funzioni. Classificando LSP, oltre a classificare le applicazioni che usano i socket Winsock, è possibile determinare in modo selettivo se uno LSP deve essere associato a un determinato processo in fase di esecuzione.
+È possibile definire categorie LSP in base al subset di funzioni SPI implementate da un LSP e alla natura dell'elaborazione aggiuntiva eseguita per ognuna di queste funzioni. Classificando i provider di servizi di configurazione e classificando le applicazioni che usano socket Winsock, diventa possibile determinare in modo selettivo se un LSP deve essere coinvolto in un determinato processo in fase di esecuzione.
 
-In Windows Vista e versioni successive viene fornito un nuovo metodo per la categorizzazione di applicazioni e provider di servizi a più livelli Winsock, in modo che vengano caricati solo determinati LSP. Esistono diversi motivi per aggiungere queste funzionalità.
+In Windows Vista e versioni successive viene fornito un nuovo metodo per classificare sia i provider di servizi a livelli Winsock che le applicazioni in modo che verranno caricati solo determinati LSP. Esistono diversi motivi per aggiungere queste funzionalità.
 
-Uno dei motivi principali è che alcuni processi critici del sistema, ad esempio Winlogon e LSASS creano socket, ma questi processi non utilizzano questi socket per inviare traffico sulla rete. Quindi, la maggior parte dei LSP non deve essere caricata in questi processi. È stato inoltre documentato un numero di casi in cui la LSP di bug può causare l'arresto anomalo *lsass.exe* . Se LSASS si arresta in modo anomalo, il sistema impone un arresto. Un effetto collaterale di questi processi di sistema durante il caricamento di LSP è che questi processi non vengono mai chiusi, quindi è necessario riavviare il computer quando viene installato o rimosso uno LSP.
+Uno dei motivi principali è che alcuni processi critici del sistema, ad esempio winlogon e lsass, creano socket, ma questi processi non usano questi socket per inviare traffico in rete. La maggior parte dei file LSP non deve quindi essere caricata in questi processi. Sono stati documentati anche alcuni casi in cui i LSP con problemi possono causarelsass.exe *arresto* anomalo. Se lsass si arresta in modo anomalo, il sistema forza un arresto. Un effetto collaterale di questi processi di sistema che caricano LSP è che questi processi non vengono mai terminati, quindi quando un LSP viene installato o rimosso, è necessario un riavvio.
 
-Un motivo secondario è che in alcuni casi è possibile che le applicazioni non desiderino caricare determinati LSP. Ad esempio, alcune applicazioni potrebbero non voler caricare lsp crittografici, che potrebbero impedire la comunicazione dell'applicazione con altri sistemi in cui non è installato il cyptographic LSP.
+Un motivo secondario è che in alcuni casi le applicazioni potrebbero non voler caricare determinati LSP. Ad esempio, alcune applicazioni potrebbero non voler caricare gli LSP crittografici che potrebbero impedire all'applicazione di comunicare con altri sistemi in cui non è installato l'LSP ciptografico.
 
-Infine, le categorie LSP possono essere utilizzate da altri LSP per determinare la posizione della catena di protocollo Winsock da installare. Per anni, diversi sviluppatori di LSP hanno voluto conoscere il comportamento di uno LSP. Ad esempio, un LSP che controlla il flusso di dati deve essere superiore a uno LSP che crittografa i dati. Naturalmente, questo metodo per la categorizzazione di LSP non è una prova, perché si basa su LSP di terze parti per categorizzare se stesso in modo appropriato.
+Infine, le categorie LSP possono essere usate da altri provider di servizi di sicurezza per determinare dove installare se stessi nella catena di protocolli Winsock. Per anni, diversi sviluppatori LSP hanno desiderato un modo per sapere come si comporterà un LSP. Ad esempio, un provider di servizi di configurazione che controlla il flusso di dati deve essere superiore a un LSP che crittografa i dati. Naturalmente, questo metodo di categorizzazione LSP non è una prova insoddibile perché si basa su LSP di terze parti per classificarsi in modo appropriato.
 
-La categorizzazione di LSP e altri miglioramenti della sicurezza in Windows Vista e versioni successive sono progettati per impedire agli utenti di installare involontariamente LSP dannosi.
+La categorizzazione LSP e altri miglioramenti della sicurezza in Windows Vista e versioni successive sono progettati per impedire agli utenti di installare involontariamente gli LSP dannosi.
 
 ## <a name="lsp-categories"></a>Categorie LSP
 
-In Windows Vista e versioni successive, un LSP può essere classificato in base al modo in cui interagisce con le chiamate e i dati di Windows Sockets. Una categoria LSP è un gruppo di comportamenti identificabili in un subset di funzioni Winsock SPI. Un filtro di contenuto HTTP, ad esempio, verrebbe categorizzato come controllo dati (categoria di \_ controllo LSP). La \_ categoria di controllo LSP controlla (ma non modifica) i parametri per le funzioni SPI per il trasferimento dei dati. Un'applicazione può eseguire una query per la categoria di un LSP e scegliere di non caricare il LSP in base alla categoria LSP e al set di categorie di LSP consentite dell'applicazione.
+In Windows Vista e versioni successive, un LSP può essere classificato in base al modo in cui interagisce con le chiamate e i dati Windows Sockets. Una categoria LSP è un gruppo identificabile di comportamenti in un subset di funzioni SPI winsock. Ad esempio, un filtro contenuto HTTP viene categorizzato come controllo dati (categoria LSP \_ INSPECTOR). La categoria LSP \_ INSPECTOR ispeziona (ma non modifica) i parametri nelle funzioni SPI di trasferimento dei dati. Un'applicazione può eseguire una query per la categoria di un LSP e scegliere di non caricare l'LSP in base alla categoria LSP e al set di categorie LSP consentite dell'applicazione.
 
-Nella tabella seguente sono elencate le categorie in cui è possibile classificare LSP.
+Nella tabella seguente sono elencate le categorie in cui è possibile classificare un provider di servizi di distribuzione.
 
 | Categoria LSP              | Descrizione                                                     |
 |---------------------------|-----------------------------------------------------------------|
-| **\_compressione crittografica LSP \_** | LSP è un provider di crittografia o di compressione dei dati.         |
-| **\_Firewall LSP**         | LSP è un provider del firewall.                                 |
-| **\_cache locale \_ LSP**     | LSP è un provider di cache locale.                              |
-| **\_modifica in ingresso \_ LSP**  | Il LSP modifica i dati in ingresso.                                  |
-| **\_controllo LSP**        | Il LSP controlla o filtra i dati.                               |
-| **\_modifica in uscita \_ LSP** | Il LSP modifica i dati in uscita.                                 |
-| **\_proxy LSP**            | Il LSP funge da proxy e reindirizza i pacchetti.                  |
-| **redirector LSP \_**       | LSP è un redirector di rete.                                |
-| **\_sistema LSP**           | Il LSP è accettabile per l'uso nei servizi e nei processi di sistema. |
+| **LSP \_ CRYPTO \_ COMPRESS** | LSP è un provider di crittografia o di compressione dei dati.         |
+| **LSP \_ FIREWALL**         | LSP è un provider di firewall.                                 |
+| **LSP \_ LOCAL \_ CACHE**     | LSP è un provider di cache locale.                              |
+| **LSP \_ INBOUND \_ MODIFY**  | LSP modifica i dati in ingresso.                                  |
+| **LSP \_ INSPECTOR**        | Il provider di servizi di configurazione (LSP) esamina o filtra i dati.                               |
+| **LSP \_ OUTBOUND \_ MODIFY** | L'LSP modifica i dati in uscita.                                 |
+| **LSP \_ PROXY**            | LSP funge da proxy e reindirizza i pacchetti.                  |
+| **LSP \_ REDIRECTOR**       | LSP è un redirector di rete.                                |
+| **LSP \_ SYSTEM**           | L'LSP è accettabile per l'uso nei servizi e nei processi di sistema. |
 
 
 
  
 
-Uno LSP può appartenere a più di una categoria. Ad esempio, un firewall/LSP di sicurezza può appartenere alle categorie Inspector **( \_ controllo LSP**) e firewall **( \_ LSP firewall**).
+Un LSP può appartenere a più di una categoria. Ad esempio, un provider di servizi di configurazione firewall/sicurezza può appartenere sia alle categorie di controllo (**LSP \_ INSPECTOR**) che al firewall (**LSP \_ FIREWALL**).
 
-Se uno LSP non dispone di un set di categorie, viene considerato nella categoria tutti gli altri. Questa categoria LSP non verrà caricata nei servizi o nei processi di sistema, ad esempio LSASS, Winlogon e molti processi svchost.
+Se per un provider di servizi di configurazione non è impostata una categoria, viene considerato nella categoria Tutti gli altri. Questa categoria LSP non verrà caricata nei servizi o nei processi di sistema(ad esempio, lsass, winlogon e molti processi svchost).
 
 ## <a name="categorizing-lsps"></a>Categorizzazione di LSP
 
-In Windows Vista e versioni successive sono disponibili diverse nuove funzioni per la categorizzazione di un LSP:
+In Vista e versioni successive sono Windows disponibili diverse nuove funzioni per la categorizzazione di un LSP:
 
 -   [**WSCGetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo)
 -   [**WSCGetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32)
 -   [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo)
 -   [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32)
 
-Per categorizzare un LSP, la funzione [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo) o [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32) viene chiamata con un GUID per identificare la voce nascosta LSP, la classe Information da impostare per questa voce del protocollo LSP e un set di flag usati per modificare il comportamento della funzione.
+Per classificare un LSP, la funzione [**WSCSetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo) o [**WSCSetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetproviderinfo32) viene chiamata con un GUID per identificare la voce nascosta LSP, la classe di informazioni da impostare per questa voce del protocollo LSP e un set di flag usati per modificare il comportamento della funzione.
 
-La funzione [**WSCGetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo) o [**WSCGetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32) viene usata in modo analogo per recuperare i dati associati a una classe di informazioni per uno LSP.
+La [**funzione WSCGetProviderInfo**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo) o [**WSCGetProviderInfo32**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetproviderinfo32) viene usata in modo analogo per recuperare i dati associati a una classe di informazioni per un LSP.
 
-## <a name="categorizing-applications"></a>Categorizzazione di applicazioni
+## <a name="categorizing-applications"></a>Categorizzazione delle applicazioni
 
-In Windows Vista e versioni successive sono disponibili diverse nuove funzioni per la categorizzazione di un'applicazione:
+Sono disponibili diverse nuove funzioni in Windows Vista e versioni successive per la categorizzazione di un'applicazione:
 
 -   [**WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory)
 -   [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory)
 
-Per categorizzare un'applicazione, la funzione [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory) viene chiamata con il percorso di caricamento dell'immagine eseguibile per identificare l'applicazione, gli argomenti della riga di comando usati all'avvio dell'applicazione e le categorie LSP consentite per tutte le istanze dell'applicazione.
+Per classificare un'applicazione, la funzione [**WSCSetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscsetapplicationcategory) viene chiamata con il percorso di caricamento dell'immagine eseguibile per identificare l'applicazione, gli argomenti della riga di comando usati all'avvio dell'applicazione e le categorie LSP consentite per tutte le istanze di questa applicazione.
 
-La funzione [**WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory) viene usata in modo analogo per recuperare le categorie del provider di servizi a più livelli (LSP) associate a un'applicazione.
+La [**funzione WSCGetApplicationCategory**](/windows/desktop/api/Ws2spi/nf-ws2spi-wscgetapplicationcategory) viene usata in modo analogo per recuperare le categorie del provider di servizi a più livelli (LSP) associate a un'applicazione.
 
-## <a name="determining-which-lsps-get-loaded"></a>Determinare quali LSP vengono caricati
+## <a name="determining-which-lsps-get-loaded"></a>Determinazione dei file LSP caricati
 
-La parte finale della categorizzazione di LSP consiste nel determinare quali lsp verranno caricati in quali processi. Quando un processo carica Winsock, vengono eseguiti i confronti seguenti tra la categoria dell'applicazione e le categorie LSP per tutti LSP installati:
+L'ultima parte della categorizzazione LSP è determinare quali LSP verranno caricati in quali processi. Quando un processo carica Winsock, vengono effettuati i confronti seguenti tra la categoria dell'applicazione e le categorie LSP per tutti i provider di servizi di configurazione installati:
 
--   Se l'applicazione non è categorizzata, consentire il caricamento di tutti i LSP nel processo.
--   Se per l'applicazione e il LSP sono state assegnate categorie, è necessario che siano soddisfatte tutte le condizioni seguenti: <dl> Almeno una delle categorie di LSP è presente nelle categorie specificate dell'applicazione.  
-    Nelle categorie LSP vengono specificate solo le categorie specificate nelle categorie specificate dell'applicazione. Se, ad esempio, l'applicazione specifica una categoria, deve trovarsi nella categoria del LSP.  
-    Se la \_ categoria di sistema LSP è presente nella categoria dell'applicazione, deve essere presente nelle categorie del LSP.  
+-   Se l'applicazione non è categorizzata, consentire il caricamento di tutti i file LSP nel processo.
+-   Se all'applicazione e all'LSP sono assegnate categorie, è necessario che siano vere tutte le condizioni seguenti: <dl> Almeno una delle categorie LSP è presente nelle categorie specificate dell'applicazione.  
+    Solo le categorie specificate nelle categorie specificate dell'applicazione vengono specificate nelle categorie LSP. Ad esempio, se l'applicazione specifica una categoria, deve essere nella categoria dell'LSP.  
+    Se la categoria LSP SYSTEM è presente nella categoria dell'applicazione, deve essere \_ presente nelle categorie dell'LSP.  
     </dl>
 
 > [!Note]  
-> Se uno LSP non è categorizzato, la relativa categoria è effettivamente zero. Per trovare una corrispondenza, è necessario che tutte le categorie specificate di LSP siano presenti nelle categorie dell'applicazione (le categorie dell'applicazione devono essere un superset delle categorie di LSP) con l'avvertenza che se il \_ sistema LSP è presente nella categoria dell'applicazione, deve essere presente anche nella categoria del LSP.
+> Se un LSP non è categorizzato, la relativa categoria è effettivamente zero. Perché si verifichi una corrispondenza, tutte le categorie specificate del provider di servizi di configurazione locale devono essere presenti nelle categorie dell'applicazione (le categorie dell'applicazione devono essere un superset delle categorie del provider di servizi di configurazione locale) con l'avvertenza che se LSP SYSTEM è presente nella categoria dell'applicazione deve essere presente anche nella categoria \_ dell'LSP.
 
  
 
 Si consideri l'esempio seguente:
 
-L'applicazione *Foo.exe* è categorizzata come LSP \_ System + LSP \_ Firewall + LSP \_ Crypto \_ Compress. Il *Bar.exe* di applicazione è categorizzato come LSP \_ Firewall + LSP \_ Crypto \_ Compress. Nel sistema sono installati quattro LSP:
+LFoo.exeappalto è classificata come LSP SYSTEM +  \_ LSP FIREWALL + \_ LSP CRYPTO \_ \_ COMPRESS. *L'applicazioneBar.exe* è classificata come LSP \_ FIREWALL + LSP CRYPTO \_ \_ COMPRESS. Nel sistema sono installati quattro LSP:
 
--   LSP1 ha impostato una categoria di \_ sistema LSP.
--   LSP2 non è un set di categorie, quindi la relativa categoria è zero.
--   LSP3 ha impostato una categoria di \_ Firewall LSP.
--   LSP4 ha impostato categorie di LSP \_ System + LSP \_ Firewall + LSP \_ Crypto \_ Compress + LSP \_ Inspector
+-   LSP1 ha impostato una categoria di LSP \_ SYSTEM.
+-   LSP2 non è impostato su categorie, quindi la categoria è zero.
+-   LSP3 ha impostato una categoria di FIREWALL \_ LSP.
+-   LSP4 ha impostato categorie di LSP \_ SYSTEM + LSP \_ FIREWALL + LSP CRYPTO COMPRESS \_ + \_ \_ LSP INSPECTOR
 
-In questo esempio, l'applicazione *Foo.exe* CARICHERÀ solo LSP1, mentre l'applicazione *Bar.exe* caricherà LSP3.
+In questo esempio *l'applicazioneFoo.exe* carica solo LSP1, mentre l'applicazione *Bar.exe* carica LSP3.
 
-## <a name="determining-winsock-providers-installed"></a>Determinazione del provider Winsock installato
+## <a name="determining-winsock-providers-installed"></a>Determinazione dei provider Winsock installati
 
-Il Software Development Kit (SDK) di Microsoft Windows include un programma Winsock di esempio che può essere usato per determinare i provider di trasporto Winsock installati in un computer locale. Per impostazione predefinita, il codice sorgente per questo esempio Winsock è installato nella seguente directory del Windows SDK per Windows 7:
+Microsoft Windows Software Development Kit (SDK) include un programma Winsock di esempio che può essere usato per determinare i provider di trasporto Winsock installati in un computer locale. Per impostazione predefinita, il codice sorgente per questo esempio Winsock viene installato nella directory seguente di Windows SDK per Windows 7:
 
-*C: \\ programmi \\ Microsoft SDK \\ Windows \\ v 7.0 \\ esempi \\ NetDs \\ Winsock \\ LSP*
+*C: \\ Programmi \\ Microsoft SDKs Windows \\ \\ v7.0 \\ Samples \\ NetDs \\ winsock \\ LSP*
 
-Questo esempio è un'utilità per l'installazione e il test di provider di servizi a più livelli. Ma può anche essere usato per raccogliere informazioni dettagliate a livello di codice dal catalogo Winsock in un computer locale. Per elencare tutti i provider Winsock correnti, inclusi i provider di base e i provider di servizi del livello, compilare questo esempio Winsock ed eseguire il comando seguente della console:
+Questo esempio è un'utilità per l'installazione e il test di provider di servizi a più livelli. Ma può anche essere usato per raccogliere informazioni dettagliate a livello di codice dal catalogo Winsock in un computer locale. Per elencare tutti i provider Winsock correnti, inclusi i provider di base e i provider di servizi di livello, compilare questo esempio winsock ed eseguire il comando della console seguente:
 
-**instlsp-p**
+**instlsp -p**
 
-L'output sarà un elenco di provider Winsock installati nel computer locale, inclusi i provider di servizi a più livelli. L'output elenca l'ID del catalogo e il nome della stringa per il provider Winsock
+L'output sarà un elenco di provider Winsock installati nel computer locale, inclusi i provider di servizi a più livelli. L'output elenca l'ID catalogo e il nome della stringa per il provider Winsock
 
-Per raccogliere informazioni più dettagliate su tutti i provider Winsock, eseguire il comando seguente della console:
+Per raccogliere informazioni più dettagliate su tutti i provider Winsock, eseguire il comando della console seguente:
 
-**instlsp-p-v**
+**instlsp -p -v**
 
-L'output sarà un elenco di strutture di [**\_ informazioni WSAPROTOCOL**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) supportate nel computer locale.
+L'output sarà un elenco [**di strutture WSAPROTOCOL \_ INFO**](/windows/win32/api/winsock2/ns-winsock2-wsaprotocol_infoa) supportate nel computer locale.
 
-Per un elenco di provider di servizi su più livelli installati nel computer locale, eseguire il comando seguente della console:
+Per un elenco dei soli provider di servizi su più livelli installati nel computer locale, eseguire il comando della console seguente:
 
-**instlsp-l**
+**instlsp -l**
 
-Per eseguire il mapping della struttura LSP, eseguire il comando seguente della console:
+Per eseguire il mapping della struttura LSP, eseguire il comando della console seguente:
 
-**instlsp-m**
+**instlsp -m**
 
 > [!Note]  
-> La funzionalità TDI è deprecata e verrà rimossa nelle versioni future di Microsoft Windows. A seconda di come si usa TDI, usare il kernel Winsock (WSK) o Windows Filtering Platform (WFP). Per ulteriori informazioni su WFP e WSK, vedere [Windows Filtering Platform](../fwp/windows-filtering-platform-start-page.md) e [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/). Per un intervento di Blog sulla rete di Windows Core su WSK e TDI, vedere [Introduzione al kernel Winsock (WSK)](/archive/blogs/wndp/).
+> La funzionalità TDI è deprecata e verrà rimossa nelle versioni future di Microsoft Windows. A seconda di come si usa TDI, usare il kernel Winsock (WSK) o Windows Filtering Platform (WFP). Per altre informazioni su WFP e WSK, vedere [Windows Filtering Platform](../fwp/windows-filtering-platform-start-page.md) e [Winsock Kernel.](/windows-hardware/drivers/ddi/_netvista/) Per un Windows core networking su WSK e TDI, vedere [Introduction to Winsock Kernel (WSK) (Introduzione al kernel Winsock - WSK).](/archive/blogs/wndp/)
 
  
 

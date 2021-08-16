@@ -1,5 +1,5 @@
 ---
-description: I progettisti di provider di servizi devono tentare di mantenere breve il tempo di esecuzione delle operazioni sincrone.
+description: I progettisti di provider di servizi devono provare a mantenere breve il tempo di esecuzione delle operazioni sincrone.
 ms.assetid: eb264ab7-15bb-4cd5-8af8-f979f02a7a39
 title: Richieste sincrone
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117760689"
 ---
 # <a name="synchronous-requests"></a>Richieste sincrone
 
-I progettisti di provider di servizi devono tentare di mantenere breve il tempo di esecuzione delle operazioni sincrone. Ad esempio, è presente un'operazione "Open" chiamata in fase di inizializzazione che prepara il provider di servizi e TAPI per le operazioni successive in un dispositivo. Un provider di servizi la cui implementazione è suddivisa tra il computer client e un server dedicato può avere una ragionevole certezza di poter comunicare con il server remoto. L'implementazione di "Open" potrebbe semplicemente allocare e inizializzare strutture di dati per rappresentare il dispositivo e restituire, rinviando la comunicazione end-to-end fino a quando non viene richiesta un'operazione reale.
+I progettisti di provider di servizi devono provare a mantenere breve il tempo di esecuzione delle operazioni sincrone. Ad esempio, è presente un'operazione "Open" chiamata in fase di inizializzazione che prepara il provider di servizi e TAPI per le operazioni successive in un dispositivo. Un provider di servizi la cui implementazione è suddivisa tra il computer client e un server dedicato può avere ragionevole certezza di poter comunicare con il server remoto. L'implementazione di "Open" potrebbe semplicemente allocare e inizializzare strutture di dati per rappresentare il dispositivo e restituire, posticipando la comunicazione end-to-end fino a quando non viene richiesta un'operazione reale.
 
-Qualsiasi implementazione "ottimistica" di un'operazione sincrona può in seguito riscontrare limitazioni delle risorse o errori di comunicazione remota. In generale, anche un approccio "conservativo" non può impedire completamente questi problemi; I progettisti di provider di servizi devono scegliere il miglior compromesso tra affidabilità e prestazioni. Un errore di questo tipo deve essere gestito normalmente laddove possibile. Dal punto di vista dei dispositivi TSPI, devono rimanere validi per scopi di "bookkeeping" anche se restituiscono lo stato di errore per qualsiasi operazione richiesta.
+Qualsiasi implementazione "ottimistica" di un'operazione sincrona può in seguito riscontrare limitazioni delle risorse o errori di comunicazione remota. In generale, anche un approccio "conservativo" non può impedire completamente questi problemi; I progettisti di provider di servizi devono scegliere il miglior compromesso tra affidabilità e prestazioni. Un errore di questo tipo deve essere gestito normalmente laddove possibile. Dal punto di vista dei dispositivi TSPI, devono rimanere validi per scopi di "prenotazione", anche se restituiscono lo stato di errore per qualsiasi operazione richiesta.
 
-L'implementazione di un approccio ottimistico per le richieste sincrone non deve essere eseguita a scapito della semantica corretta per l'operazione. Tornando all'esempio "Open", se l'apertura di un dispositivo deve essere in competizione e riservare una risorsa scarsa e non gestibile, ad esempio le porte di comunicazione, è probabile che lo faccia anche se richiede molto tempo.
+L'implementazione di un approccio ottimistico per le richieste sincrone non deve essere eseguita a scapito della semantica corretta per l'operazione. Tornando all'esempio "Open", se l'apertura di un dispositivo deve essere in competizione e riservare una risorsa non condivisione, ad esempio le porte di comunicazione, è probabile che lo faccia anche se richiede molto tempo.
 
 **TAPI 2.x:** Un'operazione che viene completata in modo sincrono esegue tutta l'elaborazione nella chiamata di funzione eseguita dall'applicazione. La funzione restituisce valori diversi a seconda dell'esito positivo o negativo:
 

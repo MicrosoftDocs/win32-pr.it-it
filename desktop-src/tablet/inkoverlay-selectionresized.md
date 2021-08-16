@@ -1,5 +1,5 @@
 ---
-description: "Evento InkOverlay.SelectionResized: si verifica quando le dimensioni della selezione corrente sono state modificate, ad esempio tramite modifiche all'interfaccia utente, alle procedure di taglia e incolla o alla proprietà Selection."
+description: "Evento InkOverlay.SelectionResized: si verifica quando le dimensioni della selezione corrente vengono modificate, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà Selection."
 ms.assetid: 606d4bdf-b02e-459f-a4cf-050daac6c309
 title: Evento InkOverlay.SelectionResized (Msinkaut.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118218647"
 ---
 # <a name="inkoverlayselectionresized-event"></a>Evento InkOverlay.SelectionResized
 
-Si verifica quando le dimensioni della selezione corrente sono cambiate, ad esempio tramite modifiche all'interfaccia utente, alle procedure taglia e incolla o [**alla proprietà Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
+Si verifica quando vengono modificate le dimensioni della selezione corrente, ad esempio tramite modifiche all'interfaccia utente, procedure taglia e incolla o proprietà [**Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ void SelectionResized(
 *OldSelectionRect* \[ Pollici\]
 </dt> <dd>
 
-Rettangolo di delimitazione della raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) selezionata così come esisteva prima che venga generato **l'evento SelectionResized.**
+Rettangolo di delimitazione della raccolta [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) selezionata esistente prima che venga generato **l'evento SelectionResized.**
 
 > [!Note]  
 > Questo rettangolo viene specificato nelle coordinate dello spazio input penna, che consente scenari di annullamento.
@@ -48,7 +48,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo di evento è definito nelle interfacce \_ dispatch (dispatchinterface) IInkOverlayEvents e \_ IInkPictureEvents con ID \_ DISPID IOESelectionResized.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID IOESelectionResized.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ Questo metodo di evento è definito nelle interfacce \_ dispatch (dispatchinterf
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

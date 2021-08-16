@@ -13,7 +13,7 @@ ms.locfileid: "117784369"
 ---
 # <a name="authorization-constants-authorization"></a>Costanti di autorizzazione (autorizzazione)
 
-Le costanti di autorizzazione vengono classificate in base all'utilizzo, come indicato di seguito.
+Le costanti di autorizzazione vengono categorizzate in base all'utilizzo, come indicato di seguito.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -21,11 +21,11 @@ Le costanti di autorizzazione vengono classificate in base all'utilizzo, come in
 
 | Argomento                                                                         | Descrizione                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Costanti per i diritti di account**](account-rights-constants.md)<br/>       | I diritti dell'account determinano il tipo di accesso che un account utente può eseguire. Un amministratore assegna i diritti dell'account agli account utente e di gruppo. I diritti dell'account di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.<br/> |
-| [**Costanti SID del contenitore di app**](app-container-sid-constants.md)<br/> | Determina l'autorità del pacchetto dell'applicazione.<br/>                                                                                                                                                                                                                |
-| [**Costanti di controllo**](auditing-constants.md)<br/>                   | Rappresentano categorie e sottocategorie di eventi di criteri di controllo.<br/>                                                                                                                                                                                            |
-| [**Costanti SID funzionalità**](capability-sid-constants.md)<br/>       | Definire per le applicazioni funzionalità note usando la [**funzione AllocateAndInitializeSid.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid)<br/>                                                                                                                       |
-| [**Costanti privilege**](privilege-constants.md)<br/>                 | I privilegi determinano il tipo di operazioni di sistema che un account utente può eseguire. Un amministratore assegna privilegi agli account utente e di gruppo. I privilegi di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.<br/> |
+| [**Costanti per i diritti dell'account**](account-rights-constants.md)<br/>       | I diritti dell'account determinano il tipo di accesso che un account utente può eseguire. Un amministratore assegna i diritti di account agli account utente e di gruppo. I diritti dell'account di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.<br/> |
+| [**Costanti SID del contenitore di app**](app-container-sid-constants.md)<br/> | Dettare l'autorità del pacchetto dell'applicazione.<br/>                                                                                                                                                                                                                |
+| [**Costanti di controllo**](auditing-constants.md)<br/>                   | Rappresenta categorie e sottocategorie di eventi di criteri di controllo.<br/>                                                                                                                                                                                            |
+| [**Costanti SID delle funzionalità**](capability-sid-constants.md)<br/>       | Definire per le applicazioni funzionalità note usando la [**funzione AllocateAndInitializeSid.**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-allocateandinitializesid)<br/>                                                                                                                       |
+| [**Costanti dei privilegi**](privilege-constants.md)<br/>                 | I privilegi determinano il tipo di operazioni di sistema che un account utente può eseguire. Un amministratore assegna privilegi agli account utente e di gruppo. I privilegi di ogni utente includono quelli concessi all'utente e ai gruppi a cui appartiene l'utente.<br/> |
 
 
 

@@ -20,7 +20,7 @@ Il controllo sessione prevede due aree di base:
 -   [Le operazioni di](session-operations-ovr.md) sessione sono controlli che avviano, gestiscono e terminano una sessione di comunicazione.
 -   [Informazioni sulla](session-information-ovr.md) sessione descrive i dati che è possibile ottenere relativi a una sessione di comunicazione.
 
-In questa sezione non vengono trattati due tipi specializzati di controllo della sessione. Per informazioni sui call center di distribuzione automatica, vedere [Controllo call center](./call-center-control.md) (TAPI 2.x) o Informazioni sui controlli call [center](about-call-center-controls.md) (TAPI 3.x). Per informazioni sulla conferenza IP, vedere [Informazioni su Rendezvous IP TelefoniaConferenza.](about-rendezvous-ip-telephony-conferencing.md)
+In questa sezione non vengono trattati due tipi specializzati di controllo della sessione. Per informazioni sui centri di distribuzione automatica delle chiamate, vedere [Controllo call center](./call-center-control.md) (TAPI 2.x) o Informazioni sui controlli call [center](about-call-center-controls.md) (TAPI 3.x). Per informazioni sulle conferenze IP, vedere [Informazioni su Rendezvous IP Telephony Conferencing](about-rendezvous-ip-telephony-conferencing.md).
 
  
 

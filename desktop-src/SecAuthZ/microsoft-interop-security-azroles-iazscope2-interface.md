@@ -155,7 +155,7 @@ I metodi e le proprietà del wrapper di interoperabilità **Microsoft.Interop.Se
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzRoles.IAzScope2.**
+**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzScope2** include questi metodi.
 
 
 
@@ -196,7 +196,7 @@ Questi metodi sono disponibili nell'interfaccia **Microsoft.Interop.Security.AzR
 
 ### <a name="properties"></a>Proprietà
 
-**L'interfaccia Microsoft.Interop.Security.AzRoles.IAzScope2** dispone di queste proprietà.
+Queste **proprietà sono disponibili nell'interfaccia Microsoft.Interop.Security.AzRoles.IAzScope2.**
 
 
 

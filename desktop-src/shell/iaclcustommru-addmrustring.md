@@ -60,7 +60,7 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

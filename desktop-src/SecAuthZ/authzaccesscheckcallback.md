@@ -89,8 +89,8 @@ Per altre informazioni, vedere Le panoramiche [sul funzionamento di AccessCheck 
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop di Windows XP \[\]<br/>                            |
-| Server minimo supportato<br/> | Solo app desktop di Windows Server 2003 \[\]<br/>                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                   |
 | Componente ridistribuibile<br/>          | Windows Server 2003 Administration Tools Pack in Windows XP<br/> |
 
 

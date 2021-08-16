@@ -3,7 +3,7 @@ title: Uso degli elenchi di revoche
 description: Uso degli elenchi di revoche
 ms.assetid: 4463abb5-f48f-484f-b837-512313572c0a
 keywords:
-- Windows MEDIA Format SDK, elenchi di revoche
+- Windows Media Format SDK, elenchi di revoche
 - Advanced Systems Format (ASF), elenchi di revoche
 - ASF (Advanced Systems Format), elenchi di revoche
 - elenchi di revoche
@@ -20,14 +20,14 @@ ms.locfileid: "118194881"
 ---
 # <a name="working-with-revocation-lists"></a>Uso degli elenchi di revoche
 
-Per rispondere alle violazioni della sicurezza e garantire che le applicazioni del giocatore note per essere interrotte o compromesse non possono riprodurre o usare file protetti, ogni licenza rilasciata contiene un elenco di revoche. Un elenco di revoche contiene i certificati dell'applicazione di tutte le applicazioni del lettore note come interrotte o danneggiate. Quando viene ricevuta una nuova licenza, il componente DRM dell'applicazione lettore verifica la presenza di un elenco di revoche. Se ne viene trovato uno più recente di quello attualmente presente nel computer, viene archiviato l'elenco più recente. Alla successiva riproduzione di un file ASF protetto da parte del consumer, il componente DRM confronta l'applicazione lettore con l'elenco di revoche. Se l'applicazione lettore viene revocata, il componente DRM invia un messaggio di errore all'applicazione.
+Per rispondere alle violazioni della sicurezza e garantire che le applicazioni del giocatore note per essere interrotte o compromesse non siano in grado di riprodurre o usare file protetti, ogni licenza rilasciata contiene un elenco di revoche. Un elenco di revoche contiene i certificati dell'applicazione di tutte le applicazioni del lettore note come interrotte o danneggiate. Quando viene ricevuta una nuova licenza, il componente DRM dell'applicazione lettore verifica la presenza di un elenco di revoche. Se ne viene trovato uno più recente di quello attualmente presente nel computer, viene archiviato l'elenco più recente. Alla successiva riproduzione di un file ASF protetto da parte del consumer, il componente DRM confronta l'applicazione lettore con l'elenco di revoche. Se l'applicazione lettore viene revocata, il componente DRM invia un messaggio di errore all'applicazione.
 
 Le applicazioni lettore possono ricevere un messaggio di errore di revoca negli scenari seguenti:
 
 -   Il messaggio di errore viene ricevuto dopo che l'applicazione ha chiamato il metodo [**IWMDRMReader::AcquireLicense**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-acquirelicense) per un file protetto. La chiamata ha esito negativo con il codice **HRESULT** NS \_ E \_ DRM APPCERT REVOKED, che viene fornito alla funzione di callback OnStatus con stato \_ \_ WMT ACQUIRE  \_ \_ LICENSE. Se questo **codice HRESULT** viene ignorato, gli errori continueranno a verificarsi.
--   Il messaggio di errore viene ricevuto quando l'applicazione crea il lettore abilitato per DRM e chiama il metodo [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) per un file protetto. La chiamata ha esito negativo con il codice **HRESULT** NS E DRM APPCERT REVOKED, fornito al metodo \_ di callback \_ \_ \_ [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) con stato WMT \_ OPENED. Quando un'applicazione lettore riceve questo messaggio di errore, l'applicazione deve inviare una notifica agli utenti finali e fornire loro un modo per ripristinare la funzionalità per il lettore. Ad esempio, l'applicazione può aprire un URL in cui gli utenti finali possono scaricare un aggiornamento per l'applicazione compromessa.
+-   Il messaggio di errore viene ricevuto quando l'applicazione crea il lettore abilitato per DRM e chiama il metodo [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) per un file protetto. La chiamata ha esito negativo con il codice **HRESULT** NS E DRM APPCERT REVOKED, fornito al metodo \_ di callback \_ \_ \_ [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) con stato WMT \_ OPENED. Quando un'applicazione lettore riceve questo messaggio di errore, l'applicazione deve inviare una notifica agli utenti finali e fornire un modo per ripristinare le funzionalità al lettore. Ad esempio, l'applicazione può aprire un URL in cui gli utenti finali possono scaricare un aggiornamento per l'applicazione compromessa.
 
-**Nota:** DRM non è supportato dalla versione basata su x64 di questo SDK.
+**Nota** DRM non è supportato dalla versione basata su x64 di questo SDK.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

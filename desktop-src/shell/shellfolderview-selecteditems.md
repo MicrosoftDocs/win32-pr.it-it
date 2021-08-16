@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: 485eda530adc4955abb27899d67ac0900eb0a910
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c8da62afba7e8cc2f594f15c34e2f2bcf6af1ae8e03f857324d18e79b0967d4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857683"
 ---
 # <a name="shellfolderviewselecteditems-method"></a>Metodo ShellFolderView.SelectedItems
 
@@ -49,7 +49,7 @@ Riferimento all'oggetto [**FolderItems.**](folderitems.md)
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra l'uso corretto di questo metodo in JScript incorporato in HTML.
+L'esempio seguente illustra l'uso corretto di questo metodo JScript incorporato in HTML.
 
 
 ```JScript
@@ -103,7 +103,7 @@ L'esempio seguente illustra l'uso corretto di questo metodo in JScript incorpora
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

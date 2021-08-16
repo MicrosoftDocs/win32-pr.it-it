@@ -13,7 +13,7 @@ ms.locfileid: "118201333"
 ---
 # <a name="property-keys"></a>Chiavi di proprietà
 
-Documentazione di riferimento per le chiavi Windows proprietà del framework della barra multifunzione, una raccolta di coppie chiave-valore **PROPERTYKEY** e **PROPVARIANT** usate per descrivere lo stato di un comando del framework della barra multifunzione.
+Documentazione di riferimento per le chiavi Windows proprietà del framework della barra multifunzione, una raccolta di **coppie chiave-valore PROPERTYKEY** e **PROPVARIANT** usate per descrivere lo stato di un comando del framework della barra multifunzione.
 
 > [!Note]  
 > Una chiave deve essere univoca nella raccolta per ogni comando.
@@ -22,9 +22,9 @@ Documentazione di riferimento per le chiavi Windows proprietà del framework del
 
 ## <a name="property-types"></a>Tipi di proprietà
 
-[Proprietà della raccolta](windowsribbon-reference-properties-collection.md)
+[Proprietà raccolta](windowsribbon-reference-properties-collection.md)
 
-Documentazione di riferimento sulle chiavi di proprietà per i controlli basati su raccolte del framework della barra multifunzione.
+Documentazione di riferimento sulle chiavi di proprietà per i controlli basati su raccolta del framework della barra multifunzione.
 
 [Selezione colori proprietà](windowsribbon-reference-properties-colorpicker.md)
 
@@ -32,21 +32,21 @@ Documentazione di riferimento sulle chiavi di proprietà per l'elenco a discesa 
 
 [Proprietà del controllo Font](windowsribbon-reference-properties-fontcontrol.md)
 
-Documentazione di riferimento sulle chiavi di proprietà per il controllo Carattere del framework [della barra multifunzione.](windowsribbon-controls-fontcontrol.md)
+Documentazione di riferimento sulle chiavi di proprietà per il controllo Carattere del framework della [barra multifunzione.](windowsribbon-controls-fontcontrol.md)
 
 [Proprietà del framework](windowsribbon-reference-properties-framework.md)
 
 Documentazione di riferimento sulle chiavi di proprietà globali per il framework della barra multifunzione.
 
-[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
+[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
 
 Documentazione di riferimento sulle chiavi di proprietà per le risorse del framework della barra multifunzione.
 
 [Proprietà della barra multifunzione](windowsribbon-reference-properties-ribbon.md)
 
-Documentazione di riferimento sulle chiavi di proprietà per la visualizzazione barra multifunzione del framework della barra multifunzione.
+Documentazione di riferimento sulle chiavi di proprietà per la visualizzazione Barra multifunzione del framework della barra multifunzione.
 
-[Proprietà di stato](windowsribbon-reference-properties-state.md)
+[Proprietà dello stato](windowsribbon-reference-properties-state.md)
 
 Documentazione di riferimento sulle chiavi di proprietà per lo stato o il contesto del controllo del framework della barra multifunzione.
 

@@ -17,15 +17,15 @@ ms.locfileid: "118320303"
 Il provider Simple Network Management Protocol (SNMP) consente alle applicazioni client di accedere alle informazioni SNMP tramite WMI. Il [provider SNMP](snmp-provider.md) funge da gateway per sistemi e dispositivi che usano SNMP per la gestione. Solo il computer di gestione o monitoraggio deve eseguire WMI perché può leggere da qualsiasi dispositivo abilitato per SNMP.
 
 > [!Note]  
-> Per altre informazioni sull'installazione del provider, vedere [Configurazione dell'ambiente SNMP WMI.](setting-up-the-wmi-snmp-environment.md)
+> Per altre informazioni sull'installazione del provider, vedere [Setting up the WMI SNMP Environment](setting-up-the-wmi-snmp-environment.md).
 
  
 
-Le variabili oggetto MIB (Management Information Base) SNMP possono essere lette e scritte in e le trap SNMP possono essere mappate automaticamente agli eventi WMI, che possono essere definiti per qualsiasi operazione di creazione, eliminazione o aggiornamento arbitraria sui dati oltre le trap definite da MIB. Questa funzionalità di WMI funziona come estensione delle funzionalità SNMP standard. Per altre informazioni, vedere [Monitoraggio degli eventi](monitoring-events.md).
+Le variabili oggetto MIB (Management Information Base) SNMP possono essere lette e scritte e i trap SNMP possono essere mappati automaticamente a eventi WMI, che possono essere definiti per qualsiasi operazione di creazione, eliminazione o aggiornamento arbitraria sui dati oltre le trap definite da MIB. Questa funzionalità di WMI funziona come un'estensione delle funzionalità SNMP standard. Per altre informazioni, vedere [Monitoring Events](monitoring-events.md).
 
-Gli strumenti descritti negli argomenti seguenti sono progettati per l'uso da Windows di scripting e programmatori C/C++. È consigliabile acquisire familiarità con WMI, SNMPv1 e SNMPv2C e conoscere i concetti di rete e gestione di rete.
+Gli strumenti descritti negli argomenti seguenti sono progettati per l'uso da parte Windows script e programmatori C/C++. È consigliabile acquisire familiarità con WMI, SNMPv1 e SNMPv2C, oltre a una conoscenza approfondita dei concetti di rete e gestione di rete.
 
-Per altre informazioni sull'uso di WMI con SNMP, vedere [Configurazione dell'ambiente SNMP WMI](setting-up-the-wmi-snmp-environment.md).
+Per altre informazioni sull'uso di WMI con SNMP, vedere [Configurazione dell'ambiente SNMP WMI.](setting-up-the-wmi-snmp-environment.md)
 
  
 

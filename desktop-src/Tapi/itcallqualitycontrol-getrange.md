@@ -1,21 +1,21 @@
 ---
-description: Il metodo GetRange Ottiene l'intervallo di valori validi per una determinata proprietà della qualità della chiamata.
+description: Il metodo GetRange ottiene l'intervallo di valori validi per una determinata proprietà di qualità della chiamata.
 ms.assetid: 974033cf-59ce-4593-93d7-290094c20a7c
-title: 'Metodo ITCallQualityControl:: GetRange (Ipmsp. h)'
+title: Metodo ITCallQualityControl::GetRange (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dd3941ee8d7d0605cc6fefc61963065e4e5ba57
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a8d21c9266e64a9bcb31da0028a0ea28b8de98793d56d5bcf28c791c5497756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117762437"
 ---
-# <a name="itcallqualitycontrolgetrange-method"></a>Metodo ITCallQualityControl:: GetRange
+# <a name="itcallqualitycontrolgetrange-method"></a>Metodo ITCallQualityControl::GetRange
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **GetRange** Ottiene l'intervallo di valori validi per una determinata [proprietà della qualità della chiamata](callqualityproperty.md).
+Il **metodo GetRange** ottiene l'intervallo di valori validi per una determinata proprietà [di qualità della chiamata.](callqualityproperty.md)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,45 +37,45 @@ HRESULT GetRange(
 
 <dl> <dt>
 
-*Proprietà* \[ di in\]
+*Proprietà* \[ Pollici\]
 </dt> <dd>
 
-Membro dell'enumerazione [**CallQualityProperty**](callqualityproperty.md) .
+Membro [**dell'enumerazione CallQualityProperty.**](callqualityproperty.md)
 
 </dd> <dt>
 
-*plMin* \[ out\]
+*plMin* \[ Cambio\]
 </dt> <dd>
 
 Valore minimo valido per la proprietà di input.
 
 </dd> <dt>
 
-*plMax* \[ out\]
+*plMax* \[ Cambio\]
 </dt> <dd>
 
-Valore valido massimo per la proprietà di input.
+Valore massimo valido per la proprietà di input.
 
 </dd> <dt>
 
-*plSteppingDelta* \[ out\]
+*plSteppingDelta* \[ Cambio\]
 </dt> <dd>
 
-Incremento in base al quale è possibile aumentare o diminuire il valore della proprietà.
+Incremento in base al quale il valore della proprietà può essere aumentato o diminuito.
 
 </dd> <dt>
 
-*plDefault* \[ out\]
+*plDefault* \[ Cambio\]
 </dt> <dd>
 
-Valore predefinito per il parametro *Property* .
+Valore predefinito per il *parametro Property.*
 
 </dd> <dt>
 
-*plFlags* \[ out\]
+*plFlags* \[ Cambio\]
 </dt> <dd>
 
-Valore dell'enumerazione [**TAPIControlFlags**](tapicontrolflags.md) che indica la modalità di controllo del valore della *Proprietà* .
+Valore [**dell'enumerazione TAPIControlFlags**](tapicontrolflags.md) che indica come viene *controllato il valore* di Property.
 
 </dd> </dl>
 
@@ -87,8 +87,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -100,9 +100,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

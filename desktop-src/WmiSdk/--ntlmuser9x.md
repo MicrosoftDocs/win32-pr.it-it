@@ -1,8 +1,8 @@
 ---
-description: Controlla l'accesso remoto alle versioni non supportate di Windows.
+description: Controlla l'accesso remoto a versioni non supportate di Windows.
 ms.assetid: eb326bba-a011-4b9c-b4ee-fc08ae364f6f
 ms.tgt_platform: multiple
-title: Classe __NTLMUser9X
+title: __NTLMUser9X classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 79aa5153869c7337b6849e8c465dbbf8b36a0f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d05920b0936e8ff4de3eb338938e03e92edb4596efbf01f1064b6952a7df661
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118320579"
 ---
 # <a name="__ntlmuser9x-class"></a>\_\_Classe NTLMUser9X
 
-La classe di sistema **\_ \_ NTLMUser9X** controlla l'accesso remoto alle versioni non supportate di Windows. La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La **\_ \_ classe di sistema NTLMUser9X** controlla l'accesso remoto a versioni non supportate di Windows. La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,23 +45,23 @@ class __NTLMUser9X : __SecurityRelatedClass
 
 ## <a name="members"></a>Members
 
-La classe **\_ \_ NTLMUser9X** dispone di questi tipi di membri:
+La **\_ \_ classe NTLMUser9X** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **\_ \_ NTLMUser9X** dispone di queste proprietà.
+La **\_ \_ classe NTLMUser9X** dispone di queste proprietà.
 
 <dl> <dt>
 
 **Authority**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Dominio a cui si applica un nome utente.
@@ -74,7 +74,7 @@ Dominio a cui si applica un nome utente.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Flag di ereditarietà.
@@ -103,20 +103,20 @@ Si applicano agli spazi dei nomi figlio, oltre a quello corrente.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
-Maschera di maschera che specifica i diritti di accesso allo spazio dei nomi nel repository di Strumentazione gestione Windows (WMI). Per i valori di bit, vedere [**costanti di diritti di accesso allo spazio dei nomi**](namespace-access-rights-constants.md).
+Maschera di bit che specifica i diritti di accesso allo spazio dei nomi nel repository Windows Management Instrumentation (WMI). Per i valori di bit, vedere [**Costanti dei diritti di accesso allo spazio dei nomi.**](namespace-access-rights-constants.md)
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Nome utente.
@@ -129,7 +129,7 @@ Nome utente.
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 Accesso consentito.
@@ -154,7 +154,7 @@ Accesso negato.
 
 ## <a name="remarks"></a>Commenti
 
-La classe **\_ \_ NTLMUser9X** viene usata come parametro di input per i metodi [**\_ \_ SystemSecurity:: Get9XUserList**](--systemsecurity-get9xuserlist.md) e [**\_ \_ SystemSecurity:: Set9XUserList**](--systemsecurity-set9xuserlist.md) .
+La **\_ \_ classe NTLMUser9X** viene usata come parametro di input per i [**\_ \_ metodi SystemSecurity::Get9XUserList**](--systemsecurity-get9xuserlist.md) [**\_ \_ e SystemSecurity::Set9XUserList.**](--systemsecurity-set9xuserlist.md)
 
 ## <a name="requirements"></a>Requisiti
 

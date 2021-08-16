@@ -66,7 +66,7 @@ Ogni sezione contiene una serie di comandi che determinano come viene eseguita l
 | [open](autorun-cmds.md)        | Specifica il percorso e il nome file dell'applicazione di avvio.                           |
 | [useautorun](autorun-cmds.md)  | Specifica che le funzionalità di Riproduzione automatica V2 devono essere usate, se supportate.                       |
 | [Guscio](autorun-cmds.md)       | Definisce il comando predefinito nel menu di scelta rapida del CD-ROM.                             |
-| [Verbo \_ shell](autorun-cmds.md) | Aggiunge comandi al menu di scelta rapida del CD-ROM.                                           |
+| [Verbo \_ della shell](autorun-cmds.md) | Aggiunge comandi al menu di scelta rapida del CD-ROM.                                           |
 
 
 
@@ -102,7 +102,7 @@ icon=IconFile.ico
 
 È possibile usare la **\[ sezione DeviceInstall \]** su qualsiasi supporto rimovibile. È supportato solo in Windows XP. Si usa **DriverPath per** specificare un percorso di directory in cui Windows XP cerca i file del driver, impedendo una lunga ricerca nell'intero contenuto.
 
-Usare la sezione **\[ DeviceInstall con \]** un'installazione del driver per specificare le directory in cui Windows XP deve cercare i file del driver nei supporti. In Windows XP, l'intero supporto non viene più cercato per impostazione predefinita, pertanto **\[ deviceInstall \]** deve specificare i percorsi di ricerca. Di seguito sono riportati gli unici supporti rimovibili che Windows XP esegue la ricerca completa senza una sezione **\[ DeviceInstall \]** in un file Autorun.inf.
+Usare la sezione **\[ DeviceInstall con \]** un'installazione del driver per specificare le directory in cui Windows XP deve cercare i file del driver nei supporti. In Windows XP, la ricerca di interi supporti non viene più ricercata per impostazione predefinita, pertanto **\[ deviceInstall \]** deve specificare i percorsi di ricerca. Di seguito sono riportati gli unici supporti rimovibili che Windows xp esegue la ricerca completa senza una sezione **\[ DeviceInstall \]** in un file Autorun.inf.
 
 -   Dischi floppy trovati nelle unità A o B.
 -   Supporti CD/DVD di dimensioni inferiori a 1 gigabyte (GB).

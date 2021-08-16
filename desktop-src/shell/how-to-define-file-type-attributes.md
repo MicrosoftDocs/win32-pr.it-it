@@ -13,7 +13,7 @@ ms.locfileid: "118223575"
 ---
 # <a name="how-to-define-file-type-attributes"></a>Come definire gli attributi dei tipi di file
 
-L'assegnazione di attributi del tipo di file a un ProgID associato consente di controllare alcuni aspetti del comportamento del tipo di file. Prima di Windows Vista, questi attributi potevano consentire di limitare la misura  in cui l'utente poteva usare la scheda delle proprietà Opzioni cartella per modificare vari aspetti del tipo di file, ad esempio l'icona o i verbi.
+L'assegnazione di attributi del tipo di file a un ProgID associato consente di controllare alcuni aspetti del comportamento del tipo di file. Prima di Windows Vista, questi attributi potevano consentire di limitare la  misura in cui l'utente poteva usare la scheda delle proprietà Opzioni cartella per modificare vari aspetti del tipo di file, ad esempio l'icona o i verbi.
 
 Gli attributi del tipo di file sono flag binari specificati come **\_ valori REG DWORD** o **REG \_ BINARY** nella sottochiave ProgID associata del tipo di file.
 
@@ -29,7 +29,7 @@ Aggiungere una voce EditFlags alla sottochiave ProgID associata del tipo di file
 
 Impostare la voce sul valore dell'attributo appropriato.
 
-L'esempio seguente mostra gli attributi FTA \_ NoRemove (0x00000010) e FTA NoNewVerb (0x00000020) impostati per il tipo \_ di file myp.
+L'esempio seguente mostra gli attributi FTA \_ NoRemove (0x00000010) e FTA \_ NoNewVerb (0x00000020) impostati per il tipo di file myp.
 
 ```
 HKEY_CLASSES_ROOT

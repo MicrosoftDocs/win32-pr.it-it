@@ -1,29 +1,29 @@
 ---
-title: Esempio di convalida integrità
-description: Nell'esempio seguente viene impostato un servizio di convalida dell'integrità di sistema in un server criteri di integrità protezione accesso alla rete.
+title: ShV di esempio
+description: Nell'esempio seguente viene impostato un validator di integrità del sistema in un server dei criteri di integrità di Protezione accesso alla rete.
 ms.assetid: 2264c1d7-b1fb-4937-bf24-d6fa05bdc6fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c071a1ce6ba974d2170cbd8a4cda2d7e66b18f46
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82ec6d2f3f1c5f6aa7f9a1686d288177054f373a3962a9d7db47b9467d9b08a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104470947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369015"
 ---
-# <a name="example-shv"></a>Esempio di convalida integrità
+# <a name="example-shv"></a>ShV di esempio
 
 > [!Note]  
-> La piattaforma protezione accesso alla rete non è disponibile a partire da Windows 10
+> La piattaforma Protezione accesso alla rete non è disponibile a partire da Windows 10
 
- 
+ 
 
-Nell'esempio seguente viene impostato un servizio di convalida dell'integrità di sistema in un server criteri di integrità protezione accesso alla rete.
+Nell'esempio seguente viene impostato un validator di integrità del sistema in un server dei criteri di integrità di Protezione accesso alla rete.
 
 > [!Note]  
-> NAP SDK contiene anche un set completo di codice di esempio disponibile in... \\ Esempi di \\ NetDS \\ NAP... Directory dell'installazione dell'SDK. Questo set di esempio include l'agente integrità sistema (SHA), il servizio di convalida dell'integrità di sistema e il client di imposizione (EC). Dispone di scenari di protezione accesso alla rete completamente funzionanti che configurano la comunicazione tra SHA-convalida e SHA-EC.
+> Nap SDK contiene anche un set completo di codice di esempio che è possibile trovare nel ... \\ Esempi \\ di Protezione accesso alla rete NetDS... \\ directory dell'installazione dell'SDK. Questo set di esempio include l'agente di integrità del sistema (SHA), SHV e il client di imposizione (EC). Dispone di scenari di Protezione accesso alla rete completamente funzionanti che configurano la comunicazione tra SHA-SHV e SHA-EC.
 
- 
+ 
 
 
 ```C++
@@ -285,9 +285,9 @@ HRESULT CSampleShv::FillResponseSoH(HRESULT validationResult,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

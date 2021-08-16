@@ -1,7 +1,7 @@
 ---
-description: I dispositivi portatili Windows supportano le proprietà di appuntamento seguenti.
+description: Windows Dispositivi portatili supporta le proprietà degli appuntamenti seguenti.
 ms.assetid: d7e2130b-722b-46ef-9114-17db9c95d017
-title: Proprietà appuntamento (PortableDevice. h)
+title: Proprietà Appointment (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,29 +13,29 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 542029f9eb698c8093c43cbb8ee309b3d1f9da6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2ba82c12dfffb0367ab61d355d6e256ab5d97bfbeef3e4a588f3a76a5651f9b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843591"
 ---
 # <a name="appointment-properties"></a>Proprietà appuntamento
 
-I dispositivi portatili Windows supportano le proprietà di appuntamento seguenti.
+Windows Dispositivi portatili supporta le proprietà degli appuntamenti seguenti.
 
 
 
 | Proprietà                                   | VarType        | Descrizione                                                                          |
 |--------------------------------------------|----------------|--------------------------------------------------------------------------------------|
-| **\_ \_ partecipanti accettati appuntamento WPD \_**  | **\_LPWSTR VT** | Elenco delimitato da punti e virgola dei partecipanti che hanno accettato l'appuntamento.             |
-| **WPD \_ appuntamento \_ rifiutato \_**  | **\_LPWSTR VT** | Elenco delimitato da punti e virgola di partecipanti che hanno rifiutato l'appuntamento.             |
-| **\_località appuntamento \_ WPD**             | \_LPWSTR VT     | Posizione descrittiva dell'appuntamento, ad esempio, "Building 5, Room 7".    |
-| **\_ \_ partecipanti facoltativi appuntamento WPD \_**  | **\_LPWSTR VT** | Elenco delimitato da punti e virgola di partecipanti facoltativi per l'appuntamento.                  |
-| **\_ \_ partecipanti richiesti per l'appuntamento WPD \_**  | **\_LPWSTR VT** | Elenco delimitato da punti e virgola dei partecipanti richiesti per l'appuntamento.                  |
-| **\_risorse appuntamento \_ WPD**            | **\_LPWSTR VT** | Elenco delimitato da punti e virgola delle risorse necessarie per l'appuntamento.                  |
-| **\_ \_ partecipanti provvisorio di appuntamento WPD \_** | **\_LPWSTR VT** | Elenco delimitato da punti e virgola dei partecipanti che hanno accettato provvisoriamente l'appuntamento. |
-| **\_tipo di appuntamento WPD \_**                 | **\_LPWSTR VT** | Tipo di appuntamento, ad esempio, "personale", "business" e così via.              |
+| **PARTECIPANTI \_ ACCETTATI PER \_ APPUNTAMENTI WPD \_**  | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola dei partecipanti che hanno accettato l'appuntamento.             |
+| **PARTECIPANTI RIFIUTATI PER UN APPUNTAMENTO WPD \_ \_ \_**  | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola dei partecipanti che hanno rifiutato l'appuntamento.             |
+| **POSIZIONE DEGLI APPUNTAMENTI WPD \_ \_**             | VT \_ LPWSTR     | Posizione dell'appuntamento descrittiva per il lettore, ad esempio "Building 5, Room 7".    |
+| **PARTECIPANTI \_ FACOLTATIVI DI \_ APPUNTAMENTI WPD \_**  | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola dei partecipanti facoltativi per l'appuntamento.                  |
+| **PARTECIPANTI OBBLIGATORI \_ DELL'APPUNTAMENTO WPD \_ \_**  | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola dei partecipanti necessari per l'appuntamento.                  |
+| **RISORSE PER APPUNTAMENTI WPD \_ \_**            | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola delle risorse necessarie per l'appuntamento.                  |
+| **PARTECIPANTI PROVVISORI DI APPUNTAMENTI WPD \_ \_ \_** | **VT \_ LPWSTR** | Elenco delimitato da punto e virgola dei partecipanti che hanno accettato provvisoriamente l'appuntamento. |
+| **TIPO DI APPUNTAMENTO WPD \_ \_**                 | **VT \_ LPWSTR** | Tipo di appuntamento, ad esempio"Personale", "Azienda" e così via.              |
 
 
 
@@ -47,7 +47,7 @@ I dispositivi portatili Windows supportano le proprietà di appuntamento seguent
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ I dispositivi portatili Windows supportano le proprietà di appuntamento seguent
 
 <dl> <dt>
 
-[**Proprietà e attributi di WPD**](properties-and-attributes.md)
+[**Proprietà e attributi WPD**](properties-and-attributes.md)
 </dt> </dl>
 
  

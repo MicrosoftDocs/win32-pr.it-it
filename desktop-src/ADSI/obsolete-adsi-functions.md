@@ -1,22 +1,22 @@
 ---
 title: Funzioni ADSI obsolete
-description: Le funzioni seguenti sono state esposte nelle versioni precedenti di ADSI SDK, ma non sono più utilizzate nell'SDK.
+description: Le funzioni seguenti sono state esposte nelle versioni precedenti di ADSI SDK, ma non sono più usate nell'SDK.
 ms.assetid: 6146fcfa-6869-40c2-97bc-22a382cdad8a
 ms.tgt_platform: multiple
 keywords:
-- ADSI ADSI, Reference, funzioni obsolete
+- ADSI ADSI, riferimento, funzioni obsolete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7eb555a47eef8f132a7bdeb9665f99273e5fc7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f68e50fa3ba2ea4256cc58e7ea48883090cfe64205776e43322f95f423595cbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839171"
 ---
 # <a name="obsolete-adsi-functions"></a>Funzioni ADSI obsolete
 
-Le funzioni seguenti sono state esposte nelle versioni precedenti di ADSI SDK, ma non sono più utilizzate nell'SDK.
+Le funzioni seguenti sono state esposte nelle versioni precedenti di ADSI SDK, ma non sono più usate nell'SDK.
 
 -   **ADsDecodeBinaryData**
 -   **AdsFreeAdsValues**
@@ -27,9 +27,9 @@ Le funzioni seguenti sono state esposte nelle versioni precedenti di ADSI SDK, m
 -   **InitADsMem**
 -   **PropVariantToAdsType**
 
- 
+ 
 
- 
+ 
 
 
 

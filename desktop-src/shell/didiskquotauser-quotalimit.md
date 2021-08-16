@@ -1,6 +1,6 @@
 ---
 description: Imposta o ottiene il limite di quota corrente dell'utente.
-title: DIDiskQuotaUser.QuotaLimit - proprietà
+title: DiDiskQuotaUser.QuotaLimit - proprietà
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118224731"
 ---
-# <a name="didiskquotauserquotalimit-property"></a>DIDiskQuotaUser.QuotaLimit - proprietà
+# <a name="didiskquotauserquotalimit-property"></a>DiDiskQuotaUser.QuotaLimit - proprietà
 
-Imposta o ottiene il limite di quota corrente [**dell'utente.**](diskquotacontrol-object.md)
+Imposta o ottiene il limite di [**quota corrente dell'utente.**](diskquotacontrol-object.md)
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -38,7 +38,7 @@ DIDiskQuotaUser.QuotaLimit = iQuotaLimit
 
 ## <a name="property-value"></a>Valore proprietà
 
-Valore **intero** che specifica o riceve il limite di quota corrente dell'utente, in byte.
+Valore **Integer** che specifica o riceve il limite di quota corrente dell'utente, in byte.
 
 ## <a name="requirements"></a>Requisiti
 

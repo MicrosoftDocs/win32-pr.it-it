@@ -1,5 +1,5 @@
 ---
-description: Rappresenta una raccolta di finestre aperte che appartengono alla shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
+description: Rappresenta una raccolta delle finestre aperte che appartengono alla shell. I metodi associati a questo oggetto possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
 ms.assetid: cad1f961-7fb4-4ba1-be48-b664d3de2c60
 title: Oggetto ShellWindows (Exdisp.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "117857090"
 ---
 # <a name="shellwindows-object"></a>Oggetto ShellWindows
 
-Rappresenta una raccolta di finestre aperte che appartengono alla shell. I metodi associati a questi oggetti possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
+Rappresenta una raccolta delle finestre aperte che appartengono alla shell. I metodi associati a questo oggetto possono controllare ed eseguire comandi all'interno della shell e ottenere altri oggetti correlati alla shell.
 
 ## <a name="members"></a>Membri
 
@@ -40,7 +40,7 @@ Rappresenta una raccolta di finestre aperte che appartengono alla shell. I metod
 | Metodo                                                 | Descrizione                                                                                                         |
 |:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](shellwindows--newenum-method-7ral.md) | Crea e restituisce un nuovo **oggetto ShellWindows** che è una copia di questo **oggetto ShellWindows.**<br/>        |
-| [**Elemento**](shellwindows-item.md)                      | Recupera un oggetto [**InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) che rappresenta la finestra della shell.<br/> |
+| [**Elemento**](shellwindows-item.md)                      | Recupera un [**oggetto InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) che rappresenta la finestra shell.<br/> |
 
 
 

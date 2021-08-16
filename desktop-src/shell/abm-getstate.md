@@ -65,7 +65,7 @@ Restituisce zero se la barra delle applicazioni non si trova né nello stato di 
 <td>La barra delle applicazioni è nello stato sempre in primo piano. <br/>
 <blockquote>
 [!Note]<br />
-A Windows 7, la ABS_ALWAYSONTOP non viene più restituita perché la barra delle applicazioni si trova sempre in tale stato. Il codice precedente deve essere aggiornato per ignorare l'assenza di questo valore in non presupporre che il valore restituito per indicare che la barra delle applicazioni non si trova nello stato sempre in primo piano.
+A Windows 7, ABS_ALWAYSONTOP non viene più restituito perché la barra delle applicazioni si trova sempre in tale stato. Il codice precedente deve essere aggiornato per ignorare l'assenza di questo valore in non presupporre che il valore restituito per indicare che la barra delle applicazioni non si trova nello stato sempre in primo piano.
 </blockquote>
 <br/></td>
 </tr>

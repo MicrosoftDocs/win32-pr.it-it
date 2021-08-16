@@ -1,19 +1,19 @@
 ---
-description: In questa applicazione di esempio viene illustrata l'attenuazione dei flussi implementando un lettore multimediale che mostra il comportamento di attenuazione predefinito fornito dal sistema, rifiuta gli eventi ducking e implementa la gestione personalizzata quando vengono ricevuti gli eventi ducking.
+description: Questa applicazione di esempio illustra l'attenuazione del flusso implementando un lettore multimediale che mostra il comportamento di attenuazione predefinito fornito dal sistema, rifiuta esplicitamente l'attenuazione degli eventi e implementa la gestione personalizzata quando vengono ricevuti eventi di attenuazione.
 ms.assetid: 667c8751-1d17-4b59-8ced-ed5f0c333ae9
-title: DuckingMediaPlayer
+title: Insodd dimediaplayer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f86952f1aa7b81c9a7dc711f0c4f36fc8531bd63
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aab5a469ec2a7fb1551980d0a08a758e8e8e8f522831dc2148b2d8fb222ecdfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828282"
 ---
-# <a name="duckingmediaplayer"></a>DuckingMediaPlayer
+# <a name="duckingmediaplayer"></a>Insodd dimediaplayer
 
-In questa applicazione di esempio viene illustrata l'attenuazione dei flussi implementando un lettore multimediale che mostra il comportamento di attenuazione predefinito fornito dal sistema, rifiuta gli eventi ducking e implementa la gestione personalizzata quando vengono ricevuti gli eventi ducking. Questo esempio deve essere usato in ID insieme ad con [DuckingCaptureSample](duckingcapturesample.md). Per altre informazioni sull'attenuazione dei flussi o sull'abbassamento di livello, vedere [esperienza ducking predefinita](stream-attenuation.md).
+Questa applicazione di esempio illustra l'attenuazione del flusso implementando un lettore multimediale che mostra il comportamento di attenuazione predefinito fornito dal sistema, rifiuta esplicitamente l'attenuazione degli eventi e implementa la gestione personalizzata quando vengono ricevuti eventi di attenuazione. Questo esempio deve essere usato in coniugazione con [l'esempio DiaframmateCaptureSample.](duckingcapturesample.md) Per altre informazioni sull'attenuazione del flusso o l'accodamento del flusso, vedere [Default Ducking Experience](stream-attenuation.md).
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -28,8 +28,8 @@ In questo argomento sono contenute le sezioni seguenti.
 
 In questo esempio vengono illustrate le funzionalità seguenti.
 
--   DirectShow per riprodurre un file multimediale.
--   [WASAPI](wasapi.md) per la gestione del flusso e la gestione degli eventi ducking.
+-   DirectShow riprodurre un file multimediale.
+-   [WASAPI per](wasapi.md) la gestione dei flussi e la gestione degli eventi di gestione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 
 
-| Location    | Percorso/URL                                                                                            |
+| Località    | Percorso/URL                                                                                            |
 |-------------|-----------------------------------------------------------------------------------------------------|
-| Windows SDK | \\Programmi \\ Microsoft SDK \\ Windows \\ v 7.0 esempi di \\ \\ audio multimediale \\ \\ DuckingMediaPlayer \\ ... |
+| Windows SDK | \\Programmi \\ Microsoft SDKs \\ Windows \\ v7.0 \\ Samples Multimedia Audio \\ \\ \\ DuckingMediaPlayer \\ ... |
 
 
 
@@ -60,50 +60,50 @@ Questo esempio è disponibile nelle posizioni seguenti.
 
 ## <a name="building-the-sample"></a>Compilazione dell'esempio
 
-Per compilare l'esempio DuckingMediaPlayer, seguire questa procedura:
+Per compilare l'esempio DisaccodatoMediaPlayer, seguire questa procedura:
 
-1.  Aprire DuckingMediaPlayer. sln in Visual Studio 2008.
-2.  Nella finestra di selezionare la configurazione di **debug** o di **rilascio** della soluzione, selezionare il menu **Compila** dalla barra dei menu e selezionare l'opzione **Compila** . Se non si apre Visual Studio dalla shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione dell'SDK. In tal caso, l'esempio non verrà compilato a meno che non si imposti in modo esplicito la variabile di ambiente MSSdk, che viene usata nel file di progetto, DuckingMediaPlayer. vcproj.
+1.  Aprire il file SoloMediaPlayer.sln in Visual Studio 2008.
+2.  Nella finestra selezionare la configurazione della soluzione **Debug** o **Release,** selezionare il **menu** Compila dalla barra dei menu e selezionare l'opzione **Compila.** Se non si apre un Visual Studio dalla shell CMD per l'SDK, Visual Studio non avrà accesso all'ambiente di compilazione dell'SDK. In tal caso, l'esempio non verrà compilato a meno che non si sia impostata in modo esplicito la variabile di ambiente MSSdk, che viene usata nel file di progetto, DuckingMediaPlayer.vcproj.
 
 ## <a name="running-the-sample"></a>Esecuzione dell'esempio
 
-Se l'applicazione viene compilata correttamente, viene generato un file eseguibile, DuckingMediaPlayer.exe. Per eseguirlo, selezionare **Avvia debug** o **Avvia senza eseguire debug** dal menu **debug** oppure digitare `DuckingMediaPlayer` una finestra di comando.
+Se l'applicazione viene compilata correttamente, viene generato DuckingMediaPlayer.exe file eseguibile. Per eseguirlo, scegliere **Avvia debug** o **Avvia** senza eseguire debug dal menu **Debug** oppure digitare in una finestra `DuckingMediaPlayer` di comando.
 
-Per visualizzare una dimostrazione di ducking, è necessario eseguire contemporaneamente DuckingMediaPlayer e DuckingCaptureSample. DuckingCaptureSample apre un flusso di comunicazione e segnala al sistema di generare un evento ducking. Il DuckingMediaPlayer riceve una notifica al sistema quando si verifica un evento ducking e il lettore multimediale esegue l'azione richiesta dall'utente.
+Per visualizzare una dimostrazione dell'atrofia, è necessario eseguire Contemporaneamente GlispingMediaPlayer e IlcaptureSample. L'esempio DiassingCaptureSample apre un flusso di comunicazione e segnala al sistema di generare un evento di allarme. Il lettore multimediale viene avvisato dal sistema quando si verifica un evento di eserzione e il lettore multimediale esegue l'azione richiesta dall'utente.
 
-Per disabilitare il comportamento di ducking:
+Per disabilitare il comportamento di inasamento:
 
-1.  Nella finestra DuckingCaptureSample selezionare **USA dispositivo di input predefinito** e fare clic su **Avvia** per avviare una sessione di acquisizione dal dispositivo di comunicazione.
-2.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre e specificare l'opzione ducking come **rifiuto esplicito**.
+1.  Nella finestra DuckingCaptureSample selezionare **Use default input device**(Usa dispositivo di input predefinito) e fare clic su **Start** (Avvia) per avviare una sessione di acquisizione dal dispositivo di comunicazione.
+2.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre e specificare l'opzione che consente di rifiutare esplicitamente **.**
 
-Si noti che il file multimediale viene riprodotto senza interruzioni. Gli eventi generati dal sistema quando il flusso di comunicazione aperto vengono ignorati.
+Si noti che il file multimediale viene riprodotto senza interruzioni. Gli eventi generati dal sistema all'apertura del flusso di comunicazione vengono ignorati.
 
-Per illustrare il comportamento predefinito di ducking fornito dal sistema, eseguire le operazioni seguenti:
+Per illustrare il comportamento predefinito di inaserzione fornito dal sistema, eseguire le operazioni seguenti:
 
-1.  Selezionare l'opzione **suoni** dal pannello di controllo. Nella scheda **comunicazioni** selezionare **Riduci il volume di altri suoni del 80%**.
-2.  Nella finestra DuckingCaptureSample selezionare **USA dispositivo di input predefinito** e fare clic su **Avvia** per avviare una sessione di acquisizione dal dispositivo di comunicazione.
-3.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre senza scegliere le opzioni di ducking.
-4.  Nella finestra DuckingCaptureSample fare clic su **Interrompi** per arrestare il flusso di comunicazione.
+1.  Selezionare **l'opzione** Suoni nel pannello di controllo. Nella scheda **Comunicazioni** selezionare Riduci il volume di altri suoni **dell'80%.**
+2.  Nella finestra DuckingCaptureSample selezionare **Use default input device**(Usa dispositivo di input predefinito) e fare clic su **Start** (Avvia) per avviare una sessione di acquisizione dal dispositivo di comunicazione.
+3.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre, senza scegliere alcuna delle opzioni per la riproduzione.
+4.  Nella finestra DuckingCaptureSample fare clic su **Arresta** per arrestare il flusso di comunicazione.
 
-Si noti che quando DuckingCaptureSample apre il flusso di comunicazione, il file multimediale riprodotto da DuckingMediaPlayer viene riprodotto senza interruzioni, ma il livello del volume è ridotto. Quando la sessione di comunicazione viene arrestata, il volume viene reimpostato sull'impostazione originale. Questo comportamento di attenuazione del flusso è il comportamento predefinito di ducking implementato dal sistema.
+Si noti che quando il file di comunicazione viene aperto da LoweringCaptureSample, il file multimediale riprodotto da CopyrightingMediaPlayer viene riprodotto senza interruzioni, ma il livello del volume viene abbassato. Quando la sessione di comunicazione viene arrestata, il volume viene reimpostato sull'impostazione originale. Questo comportamento di attenuazione del flusso è il comportamento predefinito di attenuazione implementato dal sistema.
 
-Per visualizzare un comportamento di ducking personalizzato implementato da Media Player:
+Per visualizzare un comportamento di "papera" personalizzato implementato dal lettore multimediale:
 
-1.  Nella finestra DuckingCaptureSample selezionare **USA dispositivo di input predefinito** e fare clic su **Avvia** per avviare una sessione di acquisizione dal dispositivo di comunicazione.
-2.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre e specificare l'opzione ducking come **pausa in Duck**.
-3.  Nella finestra DuckingCaptureSample fare clic su **Interrompi** per arrestare il flusso di comunicazione.
+1.  Nella finestra DuckingCaptureSample selezionare **Use default input device**(Usa dispositivo di input predefinito) e fare clic su **Start** (Avvia) per avviare una sessione di acquisizione dal dispositivo di comunicazione.
+2.  In DuckingMediaPlayer selezionare un file multimediale da riprodurre e specificare l'opzione di accodamento **come Pause on Paper**.
+3.  Nella finestra DuckingCaptureSample fare clic su **Arresta** per arrestare il flusso di comunicazione.
 
-Si noti che quando DuckingCaptureSample apre il flusso di comunicazione, il file multimediale riprodotto da DuckingMediaPlayer viene sospeso. La riproduzione riprende quando la sessione di comunicazione viene arrestata. Questo comportamento di attenuazione del flusso è il comportamento di ducking implementato da Media Player.
+Si noti che quando il flusso di comunicazione viene aperto da DuckingCaptureSample, il file multimediale riprodotto da CopyrightingMediaPlayer viene sospeso. La riproduzione riprende quando la sessione di comunicazione viene arrestata. Questo comportamento di attenuazione del flusso è il comportamento di attenuazione implementato dal lettore multimediale.
 
-DuckingMediaPlayer illustra anche come integrare il controllo del volume per ogni applicazione con il mixer del volume.
+L'esempio seguente illustra anche come integrare il controllo del volume per ogni applicazione con il mixer di volumi.
 
-Per ulteriori informazioni sulla funzionalità di attenuazione dei flussi, vedere l' [esperienza di ducking predefinita](stream-attenuation.md).
+Per altre informazioni sulla funzionalità di attenuazione del flusso, vedere [Esperienza di attenuazione predefinita.](stream-attenuation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Esempi di SDK che usano le API audio principali](sdk-samples-that-use-the-core-audio-apis.md)
+[Esempi di SDK che usano le API audio di base](sdk-samples-that-use-the-core-audio-apis.md)
 </dt> </dl>
 
  

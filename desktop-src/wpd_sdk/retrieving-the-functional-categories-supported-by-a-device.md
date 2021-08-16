@@ -4,32 +4,32 @@ ms.assetid: 7748e111-9987-4685-8fc8-10c5d4631080
 title: Recupero delle categorie funzionali supportate da un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6514c6255fa089dc235b5edd8a25b5ef581aee84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d410788616cc20563b914a293afcd8e2bbbd87099f738ae21463d2092c620597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103883386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842693"
 ---
 # <a name="retrieving-the-functional-categories-supported-by-a-device"></a>Recupero delle categorie funzionali supportate da un dispositivo
 
-I dispositivi portatili Windows possono supportare una o più categorie funzionali. Queste categorie sono descritte nella tabella seguente.
+Windows I dispositivi portatili possono supportare una o più categorie funzionali. Queste categorie sono descritte nella tabella seguente.
 
 
 
 | Category                    | Descrizione                                                                          |
 |-----------------------------|--------------------------------------------------------------------------------------|
 | Acquisizione audio               | Il dispositivo può essere usato per registrare l'audio.                                              |
-| Informazioni sul rendering       | Il dispositivo fornisce dati che descrivono i file multimediali che è in grado di eseguire il rendering. |
-| SMS (Short Message Service) | Il dispositivo supporta la messaggistica testuale.                                                  |
-| Acquisizione immagini ancora         | Il dispositivo può essere usato per acquisire le immagini ancora.                                      |
+| Informazioni sul rendering       | Il dispositivo fornisce dati che descrivono i file multimediali di cui è in grado di eseguire il rendering. |
+| Servizio messaggi brevi (SMS) | Il dispositivo supporta la messaggistica di testo.                                                  |
+| Acquisizione di immagini non ancorate         | Il dispositivo può essere usato per acquisire immagini fisse.                                      |
 | Archiviazione                     | Il dispositivo può essere usato per archiviare i file.                                               |
 
 
 
  
 
-La funzione ListFunctionalCategories nel modulo DeviceCapabilities. cpp illustra il recupero delle categorie funzionali per un dispositivo selezionato.
+La funzione ListFunctionalCategories nel modulo DeviceCapabilities.cpp illustra il recupero delle categorie funzionali per un dispositivo selezionato.
 
 L'applicazione può recuperare le categorie funzionali supportate da un dispositivo usando le interfacce descritte nella tabella seguente.
 
@@ -38,13 +38,13 @@ L'applicazione può recuperare le categorie funzionali supportate da un disposit
 | Interfaccia                                                                                      | Descrizione                                                   |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [**Interfaccia IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Fornisce l'accesso ai metodi di recupero della categoria funzionale. |
-| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Utilizzato per enumerare e archiviare i dati della categoria funzionale.         |
+| [**Interfaccia IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usato per enumerare e archiviare i dati della categoria funzionale.         |
 
 
 
  
 
-La prima attività eseguita dall'applicazione di esempio è il recupero di un oggetto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) , che viene usato per recuperare le categorie funzionali sul dispositivo selezionato.
+La prima attività eseguita dall'applicazione di esempio è il recupero di un [**oggetto IPortableDeviceCapabilities,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) usato per recuperare le categorie funzionali nel dispositivo selezionato.
 
 
 ```C++
@@ -80,9 +80,9 @@ if (SUCCEEDED(hr))
 
 
 
-Le categorie recuperate vengono archiviate in un oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
+Le categorie recuperate vengono archiviate in [**un oggetto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-Il passaggio successivo è l'enumerazione e la visualizzazione delle categorie supportate. Il primo passaggio da eseguire per l'applicazione di esempio è recuperare il numero di categorie supportate. USA quindi questo conteggio per scorrere l'oggetto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene le categorie supportate.
+Il passaggio successivo è l'enumerazione e la visualizzazione delle categorie supportate. Il primo passaggio che viene eseguita dall'applicazione di esempio consiste nel recuperare il numero di categorie supportate. Usa quindi questo conteggio per scorrere [**l'oggetto IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) che contiene le categorie supportate.
 
 
 ```C++

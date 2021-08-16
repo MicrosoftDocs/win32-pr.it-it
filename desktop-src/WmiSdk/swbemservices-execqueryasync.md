@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 5cd3fe778ca7338df6b2674a4930458ef9113a1d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 93b80f7571630b306951c9efddef459930b23ab66a0f1b62913836f459db8033
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312650"
 ---
 # <a name="swbemservicesexecqueryasync-method"></a>SWbemServices.Exemetodo cQueryAsync
 
@@ -86,7 +86,7 @@ Numero intero che determina il comportamento della query. Questo parametro può 
 
 </dt> <dd>
 
-Fa sì che le chiamate asincrone inviino aggiornamenti di stato al [**gestore dell'evento OnProgress**](swbemsink-onprogress.md) per il sink dell'oggetto.
+Fa sì che le chiamate asincrone inviino aggiornamenti dello stato al [**gestore dell'evento OnProgress**](swbemsink-onprogress.md) per il sink di oggetto.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Fa sì che le chiamate asincrone inviino aggiornamenti di stato al [**gestore de
 
 </dt> <dd>
 
-Impedisce alle chiamate asincrone di inviare aggiornamenti di stato al [**gestore dell'evento OnProgress**](swbemsink-onprogress.md) per il sink dell'oggetto.
+Impedisce alle chiamate asincrone di inviare aggiornamenti dello stato al [**gestore eventi OnProgress**](swbemsink-onprogress.md) per il sink di oggetto.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Impedisce alle chiamate asincrone di inviare aggiornamenti di stato al [**gestor
 
 </dt> <dd>
 
-Usato per un prototipo. Impedisce l'esecuzione della query e restituisce invece un oggetto simile a un oggetto risultato tipico.
+Usato per un prototipo. Impedisce l'esecuzione della query e restituisce invece un oggetto simile a un tipico oggetto risultato.
 
 </dd> <dt>
 
@@ -119,21 +119,21 @@ Usato per un prototipo. Impedisce l'esecuzione della query e restituisce invece 
 
 </dt> <dd>
 
-Fa in modo che WMI restituirà i dati di modifica della classe con la definizione della classe di base. Per altre informazioni, vedere [Localizzazione di informazioni sulle classi WMI.](localizing-wmi-class-information.md)
+Fa in modo che WMI restituirà i dati di modifica della classe con la definizione della classe di base. Per altre informazioni, vedere [Localizzazione di informazioni sulle classi WMI](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
 *objwbemNamedValueSet* \[ Opzionale\]
 </dt> <dd>
 
-In genere non è definito. In caso contrario, si tratta di un [**oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) i cui elementi rappresentano le informazioni di contesto che possono essere usate dal provider che servizi la richiesta. Un provider che supporta o richiede informazioni di contesto deve documentare i nomi dei valori riconosciuti, il tipo di dati del valore, i valori consentiti e la semantica.
+In genere, questa operazione non è definita. In caso contrario, si tratta di un [**oggetto SWbemNamedValueSet**](swbemnamedvalueset.md) i cui elementi rappresentano le informazioni sul contesto che possono essere usate dal provider che servizi la richiesta. Un provider che supporta o richiede informazioni di contesto deve documentare i nomi dei valori riconosciuti, il tipo di dati del valore, i valori consentiti e la semantica.
 
 </dd> <dt>
 
 *objWbemAsyncContext* \[ Opzionale\]
 </dt> <dd>
 
-Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che restituisce al sink dell'oggetto per identificare l'origine della chiamata asincrona originale. Usare questo parametro per effettuare più chiamate asincrone usando lo stesso sink di oggetto. Per usare questo parametro, creare un **oggetto SWbemNamedValueSet** e usare il metodo [**SWbemNamedValueSet.Add**](swbemnamedvalueset-add.md) per aggiungere un valore che identifichi la chiamata asincrona in esecuzione. Questo **oggetto SWbemNamedValueSet** viene restituito al sink di oggetto e l'origine della chiamata può essere estratta usando il metodo [**SWbemNamedValueSet.Item.**](swbemnamedvalueset-item.md) Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
+Oggetto [**SWbemNamedValueSet**](swbemnamedvalueset.md) che restituisce all'oggetto sink per identificare l'origine della chiamata asincrona originale. Usare questo parametro per effettuare più chiamate asincrone usando lo stesso sink di oggetto. Per usare questo parametro, creare un **oggetto SWbemNamedValueSet** e usare il metodo [**SWbemNamedValueSet.Add**](swbemnamedvalueset-add.md) per aggiungere un valore che identifica la chiamata asincrona in esecuzione. Questo **oggetto SWbemNamedValueSet** viene restituito al sink di oggetto e l'origine della chiamata può essere estratta usando il metodo [**SWbemNamedValueSet.Item.**](swbemnamedvalueset-item.md) Per altre informazioni, vedere [Chiamata di un metodo](calling-a-method.md).
 
 </dd> </dl>
 
@@ -191,11 +191,11 @@ Memoria insufficiente per completare l'operazione.
 
 ## <a name="remarks"></a>Commenti
 
-Questa chiamata restituisce immediatamente . Gli oggetti e lo stato richiesti vengono restituiti al chiamante tramite callback recapitati al sink specificato in *objWbemSink*. Per elaborare ogni oggetto quando viene restituito, creare *un objWbemSink*. Subroutine dell'evento [**OnObjectReady.**](swbemsink-onobjectready.md) Dopo aver restituito tutti gli oggetti, eseguire l'elaborazione finale nell'implementazione di *objWbemSink.* [**Evento OnCompleted.**](swbemsink-oncompleted.md)
+Questa chiamata restituisce immediatamente . Gli oggetti e lo stato richiesti vengono restituiti al chiamante tramite callback recapitati al sink specificato in *objWbemSink*. Per elaborare ogni oggetto quando viene restituito, creare *un objWbemSink*. Subroutine dell'evento [**OnObjectReady.**](swbemsink-onobjectready.md) Dopo aver restituito tutti gli oggetti, eseguire l'elaborazione finale nell'implementazione di *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
 Un callback asincrono consente a un utente non autenticato di fornire dati al sink. Ciò comporta rischi per la sicurezza per gli script e le applicazioni. Per eliminare i rischi, vedere [Impostazione della sicurezza in una chiamata asincrona](setting-security-on-an-asynchronous-call.md)
 
-Il **metodo ExecQueryAsync** restituisce un set di risultati vuoto quando non sono presenti oggetti che soddisfano i criteri nella query. Questo metodo restituisce le proprietà chiave indipendentemente dal fatto che la [**proprietà Key**](standard-qualifiers.md) sia richiesta o meno nel *parametro strQuery.*
+Il **metodo ExecQueryAsync** restituisce un set di risultati vuoto quando non sono presenti oggetti che corrispondono ai criteri nella query. Questo metodo restituisce le proprietà chiave indipendentemente dal fatto che la [**proprietà Key**](standard-qualifiers.md) sia richiesta o meno nel *parametro strQuery.*
 
 Esistono limiti al numero di parole **chiave AND** **e OR** che possono essere usate nelle query WQL. Un numero elevato di parole chiave WQL usate in una query complessa può causare la restituzione del codice di errore WBEM E QUOTA VIOLATION da parte di WMI \_ \_ come valore \_ **HRESULT.** Il limite delle parole chiave WQL dipende dalla complessità della query.
 

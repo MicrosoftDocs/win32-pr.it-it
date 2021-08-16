@@ -1,5 +1,5 @@
 ---
-description: Viene illustrato come utilizzare la finestra di dialogo file comune in modalità diverse per selezionare file, contenitori (cartelle) o file e cartelle (modalità basket) senza la necessità di visualizzare la finestra di dialogo.
+description: Illustra come usare la finestra di dialogo File comuni in modalità diverse per selezionare file, contenitori (cartelle) o file e cartelle (modalità carrello) senza chiudere la finestra di dialogo.
 title: Esempio di modalità di finestre di dialogo comuni di file
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 0dab735425c800e143bc2808b247fa89d1c23094
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e6cdc5df1d8ba07664f1ca06114dbf138d7a7e7dde7b78cb588d4c446072a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104980770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858473"
 ---
 # <a name="common-file-dialog-modes-sample"></a>Esempio di modalità di finestre di dialogo comuni di file
 
-Viene illustrato come utilizzare la finestra di dialogo file comune in modalità diverse per selezionare file, contenitori (cartelle) o file e cartelle (modalità basket) senza la necessità di visualizzare la finestra di dialogo.
+Illustra come usare la finestra di dialogo File comuni in modalità diverse per selezionare file, contenitori (cartelle) o file e cartelle (modalità carrello) senza chiudere la finestra di dialogo.
 
 In questo argomento sono contenute le sezioni seguenti.
 
@@ -40,11 +40,11 @@ In questo argomento sono contenute le sezioni seguenti.
 
  
 
-Per ulteriori requisiti, vedere il file Leggimi incluso nell'esempio.
+Per altri requisiti, vedere il file Leggimi incluso nell'esempio.
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
-| Location      | URL percorso                                                                                             |
+| Località      | URL del percorso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Esempio CommonFileDialogModes](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/CommonFileDialogModes) |
 

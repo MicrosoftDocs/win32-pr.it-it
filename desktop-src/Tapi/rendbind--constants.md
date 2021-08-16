@@ -11,15 +11,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117760864"
 ---
-# <a name="rendbind_-constants"></a>Costanti RENDBIND \_
+# <a name="rendbind_-constants"></a>Costanti \_ RENDBIND
 
-\[Le interfacce e i controlli di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client rtc offre funzionalità simili.\]
+\[I controlli e le interfacce di conferenza di telefonia IP rendezvous non sono disponibili per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Le costanti RENDBIND sono flag usati dal [**metodo ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) per indicare i tipi di autenticazione forniti.
+Le costanti RENDBIND sono flag usati dal metodo [**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) per indicare i tipi di autenticazione forniti.
 
 <dl> <dt>
 
-<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**RENDBIND \_ AUTHENTICATE**
+<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**AUTENTICAZIONE RENDBIND \_**
 </dt> <dd> <dl> <dt>
 
  0x00000001

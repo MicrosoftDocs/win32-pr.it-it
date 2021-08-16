@@ -1,7 +1,7 @@
 ---
 description: Invia una stringa Unicode al debugger per la visualizzazione.
 ms.assetid: 26cf4750-8ca1-4a9a-8378-d65ed288b358
-title: Funzione OutputDebugStringWrapW (Shlwapip. h)
+title: Funzione OutputDebugStringWrapW (Shlwapip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: e8213aee48a90a816e2968aac115159472ed7b8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: cce8754b01ddf156951964b7189b4a7189759c52cdcd08e08091ca62b2e950bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104994821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858790"
 ---
-# <a name="outputdebugstringwrapw-function"></a>OutputDebugStringWrapW (funzione)
+# <a name="outputdebugstringwrapw-function"></a>Funzione OutputDebugStringWrapW
 
-\[Questa funzione è disponibile per l'utilizzo in Windows XP. Potrebbe non essere disponibile nelle versioni successive. Usare [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) al suo posto.\]
+\[Questa funzione è disponibile per l'uso in Windows XP. Potrebbe non essere disponibile nelle versioni successive. Usare [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) al suo posto.\]
 
 Invia una stringa Unicode al debugger per la visualizzazione.
 
 > [!Note]  
-> **OutputDebugStringWrapW** è un wrapper per la funzione **OutputDebugStringW** . Per ulteriori note sull'utilizzo, vedere la pagina [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) .
+> **OutputDebugStringWrapW** è un wrapper per la **funzione OutputDebugStringW.** Per altre note sull'utilizzo, vedere la pagina [**OutputDebugString.**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)
 
  
 
@@ -46,12 +46,12 @@ void OutputDebugStringWrapW(
 
 <dl> <dt>
 
-*lpOutputString* \[ in\]
+*lpOutputString* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntatore alla stringa Unicode con terminazione null da visualizzare.
+Puntatore alla stringa Unicode con terminazione Null da visualizzare.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-**OutputDebugStringWrapW** offre la possibilità di utilizzare stringhe Unicode nei sistemi operativi precedenti a Windows XP. Il metodo preferito consiste nell'usare [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) insieme a Microsoft Layer for Unicode (MSLU).
+**OutputDebugStringWrapW** offre la possibilità di usare stringhe Unicode nei sistemi operativi precedenti Windows XP. Il metodo preferito è usare [**OutputDebugStringW**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) insieme a Microsoft Layer for Unicode (MSLU).
 
 **OutputDebugStringWrapW** deve essere chiamato direttamente da Shlwapi.dll, usando il numero ordinale 115.
 
-Se l'applicazione non dispone di un debugger, il debugger di sistema Visualizza la stringa. Se l'applicazione non dispone di un debugger e il debugger di sistema non è attivo, **OutputDebugStringWrapW** non esegue alcuna operazione.
+Se l'applicazione non dispone di un debugger, il debugger di sistema visualizza la stringa. Se l'applicazione non ha debugger e il debugger di sistema non è attivo, **OutputDebugStringWrapW** non esegue alcuna operazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,10 +73,10 @@ Se l'applicazione non dispone di un debugger, il debugger di sistema Visualizza 
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                          |
-| Intestazione<br/>                   | <dl> <dt>Shlwapip. h</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5,0 o successiva)</dt> </dl> |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Intestazione<br/>                   | <dl> <dt>Shlwapip.h</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shlwapi.dll (versione 5.0 o successiva)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Se l'applicazione non dispone di un debugger, il debugger di sistema Visualizza 
 
 <dl> <dt>
 
-[**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)
+[**Outputdebugstring**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)
 </dt> </dl>
 
  

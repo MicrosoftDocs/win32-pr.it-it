@@ -1,29 +1,29 @@
 ---
-title: Scadenza account (provider WinNT)
-description: Quando si utilizza il provider WinNT, è possibile impostare la data di scadenza dell'account utilizzando la proprietà IADsUser. AccountExpirationDate.
+title: Scadenza dell'account (provider WinNT)
+description: Quando si usa il provider WinNT, è possibile impostare la data di scadenza dell'account usando la proprietà IADsUser.AccountExpirationDate.
 ms.assetid: 1d887a33-a3ae-4c61-88fa-2764a6bbf6bf
 ms.tgt_platform: multiple
 keywords:
 - Scadenza account ADSI, provider WinNT
-- ADSI del provider WinNT, esempi di gestione degli utenti, scadenza dell'account
+- Provider WinNT ADSI, esempi di gestione utenti, scadenza dell'account
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4936004cbd68c853f5e6d5c76a405f2a8340d22a
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 4fd23973a4de31fed629428be9f4df1b6cade34e77f78680a5f87c9d55c42234
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "106322018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838411"
 ---
-# <a name="account-expiration-winnt-provider"></a>Scadenza account (provider WinNT)
+# <a name="account-expiration-winnt-provider"></a>Scadenza dell'account (provider WinNT)
 
-Quando si utilizza il provider WinNT, è possibile impostare la data di scadenza dell'account utilizzando la proprietà [**IADsUser. AccountExpirationDate**](iadsuser-property-methods.md) .
+Quando si usa il provider WinNT, è possibile impostare la data di scadenza dell'account usando la [**proprietà IADsUser.AccountExpirationDate.**](iadsuser-property-methods.md)
 
-Per impostare la data di scadenza dell'account, impostare la proprietà [**IADsUser. AccountExpirationDate**](iadsuser-property-methods.md) sul valore di data desiderato. Per impostare la data di scadenza dell'account in modo che non scada mai, impostare questa proprietà su "1 gennaio 1970".
+Per impostare la data di scadenza dell'account, impostare la [**proprietà IADsUser.AccountExpirationDate**](iadsuser-property-methods.md) sul valore di data desiderato. Per impostare la data di scadenza dell'account in modo che non scada mai, impostare questa proprietà su "1 gennaio 1970".
 
 ## <a name="example-1"></a>Esempio 1
 
-Nell'esempio di codice seguente viene illustrato come impostare la data di scadenza dell'account utilizzando Visual Basic con ADSI.
+Nell'esempio di codice seguente viene illustrato come impostare la data di scadenza dell'account Visual Basic con ADSI.
 
 
 ```VB
@@ -42,7 +42,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Esempio 2
 
-Nell'esempio di codice seguente viene illustrato come impostare la data di scadenza dell'account utilizzando C++ con ADSI.
+L'esempio di codice seguente illustra come impostare la data di scadenza dell'account usando C++ con ADSI.
 
 
 ```C++

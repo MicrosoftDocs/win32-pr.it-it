@@ -1,7 +1,7 @@
 ---
 description: In Windows 8.1 e Windows 10, le funzioni GetVersion e GetVersionEx sono state deprecate.
 ms.assetid: E7A1A16A-95B3-4B45-81AD-A19E33F15AE4
-title: Definizione della destinazione dell'applicazione per Windows
+title: Destinazione dell'applicazione per Windows
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e045dff2f46501c4715e2ffebe484dfeadb3aa9f276d79c7e7c1afdbec6ba7e3
@@ -11,14 +11,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117763112"
 ---
-# <a name="targeting-your-application-for-windows"></a>Definizione della destinazione dell'applicazione per Windows
+# <a name="targeting-your-application-for-windows"></a>Destinazione dell'applicazione per Windows
 
-In Windows 8.1 e Windows 10, le [**funzioni GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion) e [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) sono state deprecate. In Windows 10 anche la [**funzione VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa) è stata deprecata. Anche se è comunque possibile chiamare le funzioni deprecate, se l'applicazione non ha come destinazione Windows 8.1 o Windows 10, le funzioni restituiranno la versione Windows 8 (6.2).
+In Windows 8.1 e Windows 10, le [**funzioni GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion) e [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) sono state deprecate. In Windows 10, anche la [**funzione VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa) è stata deprecata. Anche se è comunque possibile chiamare le funzioni deprecate, se l'applicazione non ha specificamente come destinazione Windows 8.1 o Windows 10, le funzioni restituiranno la versione Windows 8 (6.2).
 
 > [!Note]  
-> [**Le funzioni GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion), [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa), [**VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa)e [Version Helper](version-helper-apis.md) sono solo per le app desktop. Le Windows universali possono usare la [**proprietà AnalyticsInfo.VersionInfo**](/uwp/api/windows.system.profile.analyticsinfo.versioninfo) per i log di diagnostica e di telemetria.
+> [**Le funzioni GetVersion**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion), [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa), [**VerifyVersionInfo**](/windows/win32/api/winbase/nf-winbase-verifyversioninfoa)e [Version Helper](version-helper-apis.md) sono solo per le app desktop. Le app Windows universali possono usare la [**proprietà AnalyticsInfo.VersionInfo**](/uwp/api/windows.system.profile.analyticsinfo.versioninfo) per i log di telemetria e di diagnostica.
 
-Per fare in modo che l'app sia Windows 8.1 o Windows 10, è necessario includere un manifesto [dell'app (eseguibile)](/windows/compatibility/application-executable-manifest) per l'eseguibile dell'app. Quindi, nella sezione [ **&lt; relativa alla &gt;**](../SbsCs/application-manifests.md#compatibility) compatibilità del manifesto, è necessario aggiungere un elemento **&lt; supportedOS &gt;** per ogni versione Windows che si vuole dichiarare che l'app supporta.
+Per fare in modo che l'app sia Windows 8.1 o Windows 10, è necessario includere un manifesto [dell'app (eseguibile)](/windows/compatibility/application-executable-manifest) per il file eseguibile dell'app. Nella sezione [ **&lt; &gt;** di](../SbsCs/application-manifests.md#compatibility) compatibilità del manifesto sarà quindi necessario aggiungere un elemento **&lt; supportedOS &gt;** per ogni versione Windows che si vuole dichiarare supportata dall'app.
 
 L'esempio seguente mostra un file manifesto dell'app per un'app che supporta tutte le versioni di Windows da Windows Vista a Windows 10:
 
@@ -66,9 +66,9 @@ L'esempio seguente mostra un file manifesto dell'app per un'app che supporta tut
 </assembly>
 ```
 
-La dichiarazione del supporto Windows 8.1 o Windows 10 nel manifesto dell'app non avrà alcun effetto quando si esegue l'app in sistemi operativi precedenti.
+La dichiarazione del supporto per Windows 8.1 o Windows 10 nel manifesto dell'app non avrà alcun effetto quando si esegue l'app nei sistemi operativi precedenti.
 
-Il manifesto dell'app precedente include anche una sezione [ **&lt; trustInfo &gt;**](/previous-versions/bb756929(v=msdn.10)), che specifica come deve essere trattato dal sistema rispetto a Controllo [dell'account utente.](/windows/security/identity-protection/user-account-control/how-user-account-control-works) **L'aggiunta di trustInfo** non è essenziale, ma è consigliabile, anche quando l'app non richiede un comportamento specifico correlato al controllo dell'account utente. In particolare, se non si aggiunge **trustInfo,** le versioni x86 a 32 bit dell'app saranno soggette alla virtualizzazione dei [file](/windows/security/identity-protection/user-account-control/how-user-account-control-works#virtualization)di Controllo dell'account utente, che consente di eseguire operazioni di scrittura in cartelle con privilegi di amministratore come le cartelle di sistema Windows in caso di errore, ma le reindirizza a una cartella "VirtualStore" specifica dell'utente.
+Il manifesto dell'app precedente include anche una sezione [ **&lt; trustInfo &gt;**](/previous-versions/bb756929(v=msdn.10)), che specifica in che modo il sistema deve trattarlo rispetto al controllo [dell'account utente .](/windows/security/identity-protection/user-account-control/how-user-account-control-works) **L'aggiunta di trustInfo** non è essenziale, ma è consigliabile, anche quando l'app non richiede un comportamento specifico correlato al controllo dell'account utente. In particolare, se non si aggiunge **trustInfo,** le versioni x86 a 32 bit dell'app saranno soggette alla virtualizzazione dei [file](/windows/security/identity-protection/user-account-control/how-user-account-control-works#virtualization)del controllo dell'account utente, che consente di eseguire operazioni di scrittura in cartelle con privilegi di amministratore come le cartelle di sistema Windows quando altrimenti non riescono, ma le reindirizza a una cartella "VirtualStore" specifica dell'utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

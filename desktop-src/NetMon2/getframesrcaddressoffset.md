@@ -54,12 +54,12 @@ Handle per il frame.
 Tipo di indirizzo di origine. Il valore del parametro può essere uno dei seguenti:
 
 -   TIPO \_ DI \_ INDIRIZZO ETHERNET
--   INDIRIZZO \_ TIPO \_ IP
+-   TIPO \_ DI \_ INDIRIZZO IP
 -   TIPO \_ DI \_ INDIRIZZO IPX
--   TOKENRING \_ DEL TIPO \_ DI INDIRIZZO
--   TIPO \_ DI \_ INDIRIZZO FDDI
+-   TIPO \_ DI INDIRIZZO \_ TOKENRING
+-   TIPO \_ DI INDIRIZZO \_ FDDI
 -   TIPO \_ DI INDIRIZZO \_ XNS
--   INDIRIZZO \_ DI TIPO \_ VINES \_ IP
+-   TIPO \_ DI INDIRIZZO IP \_ VINES \_
 -   TIPO \_ DI \_ INDIRIZZO ATM
 
 </dd> <dt>
@@ -67,7 +67,7 @@ Tipo di indirizzo di origine. Il valore del parametro può essere uno dei seguen
 *AddressLength* 
 </dt> <dd>
 
-Puntatore a **un valore DWORD,** che in caso di restituzione, contiene la lunghezza dell'indirizzo, in byte.
+Puntatore a **un valore DWORD**, che in caso di restituzione contiene la lunghezza dell'indirizzo, in byte.
 
 </dd> </dl>
 

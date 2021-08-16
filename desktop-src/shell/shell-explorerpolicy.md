@@ -1,5 +1,5 @@
 ---
-description: 'Metodo Shell.ExplorerPolicy: ottiene il valore per un criterio Windows Internet Explorer specificato.'
+description: 'Metodo Shell.ExplorerPolicy: ottiene il valore per un criterio Windows Internet Explorer criteri.'
 ms.assetid: 47E17F6A-ED43-44cd-AF77-A6E49865E1B5
 title: Metodo Shell.ExplorerPolicy (Shldisp.h)
 ms.topic: reference
@@ -76,7 +76,7 @@ Valore associato al nome del criterio specificato.
 
 Gli amministratori di rete possono controllare e gestire l'ambiente di elaborazione degli utenti impostando criteri.
 
-Il nome del valore specificato deve essere all'interno **della sottochiave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Windows** \\  \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se il nome del valore non esiste, il metodo restituisce **Null.**
+Il nome del valore specificato deve essere all'interno **della sottochiave HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Policies** \\ **Explorer.** Se il nome del valore non esiste, il metodo restituisce **null.**
 
 ## <a name="examples"></a>Esempio
 
@@ -143,7 +143,7 @@ End Sub
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                                   |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versione 6.0 o successiva)</dt> </dl> |

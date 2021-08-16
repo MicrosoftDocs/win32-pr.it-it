@@ -162,7 +162,7 @@ Hyper-V
 
 36
 
-[funzionalità .NET Framework 3.5.1](/windows)<br/> [modifica del nome](/windows)<br/>
+[.NET Framework 3.5.1](/windows)<br/> [modifica del nome](/windows)<br/>
 
 37
 
@@ -222,7 +222,7 @@ accodamento messaggi
 
 52
 
-[Archiviazione Manager per san](/windows)
+[Archiviazione Manager per SAN](/windows)
 
 53
 
@@ -246,7 +246,7 @@ Client TFTP
 
 60
 
-[Gestione Archiviazione rimovibili](/windows)
+[Removable Archiviazione Manager](/windows)
 
 61
 
@@ -472,7 +472,7 @@ BranchCache per file di rete
 
 437
 
-[Provider di Archiviazione destinazione iSCSI (provider hardware VDS e VSS)](/windows)
+[Provider di servizi di Archiviazione destinazione iSCSI (provider hardware VDS e VSS)](/windows)
 
 486
 
@@ -512,7 +512,7 @@ Nome
 
 120
 
-[Windows Server multimediale](/windows)
+[Windows Server dei contenuti multimediali](/windows)
 
 121
 
@@ -578,7 +578,7 @@ Accesso Web Desktop remoto<br/> [modifica del nome](/windows)<br/>
 
 Host di virtualizzazione Desktop remoto<br/>
 
-Desktop remoto host di virtualizzazione - Servizi ruolo (322)
+Desktop remoto Virtualization Host - Servizi ruolo (322)
 
 Valore
 
@@ -638,7 +638,7 @@ Documento predefinito
 
 144
 
-Esplorazione directory
+Esplorazione della directory
 
 145
 
@@ -742,7 +742,7 @@ Filtro richieste
 
 170
 
-Restrizioni relative all'IP e al dominio
+Restrizioni ip e dominio
 
 171
 
@@ -766,7 +766,7 @@ Console di gestione IIS
 
 176
 
-Strumenti e script di gestione IIS
+Script e strumenti di gestione IIS
 
 177
 
@@ -830,7 +830,7 @@ HWC (Hostable Web Core) di IIS<br/>
 
 445
 
-[appializzazione](/windows)
+[appialization](/windows)
 
 446
 
@@ -860,7 +860,7 @@ Integrazione servizio directory
 
 193
 
-Trigger di Accodamento messaggi
+Trigger di accodamento messaggi
 
 194
 
@@ -872,7 +872,7 @@ Servizio di routing
 
 196
 
-[Windows 2000 Client Support](/windows)<br/>
+[Windows client di Windows 2000](/windows)<br/>
 
 197
 
@@ -1070,7 +1070,7 @@ Nome
 
 242
 
-[Transazioni automatiche WS](/windows)
+[Transazioni WS-Automatic](/windows)
 
 353
 
@@ -1132,7 +1132,7 @@ Strumenti per Servizi certificati Active Directory
 
 261
 
-Servizi di stampa e digitalizzazione strumenti<br/> [modifica del nome](/windows)<br/>
+strumenti Servizi di stampa e digitalizzazione<br/> [modifica del nome](/windows)<br/>
 
 262
 
@@ -1180,7 +1180,7 @@ Strumenti per Servizi file
 
 278
 
-file system distribuito Strumenti
+strumenti file system distribuito
 
 279
 
@@ -1192,11 +1192,11 @@ Strumenti per Gestione risorse file server
 
 281
 
-Strumenti del server Web (IIS)
+Strumenti server Web (IIS)
 
 284
 
-[Desktop remoto host di sessione](/windows)<br/> [modifica del nome](/windows)<br/>
+[Desktop remoto host sessione di lavoro](/windows)<br/> [modifica del nome](/windows)<br/>
 
 285
 
@@ -1454,7 +1454,7 @@ Nome
 
 1000
 
-[servizio Windows PowerShell Desired State Configuration](/windows)
+[Windows PowerShell Desired State Configuration servizio](/windows)
 
 .NET Framework 4.5 - Funzionalità (418)
 
@@ -1464,7 +1464,7 @@ Nome
 
 419
 
-[.NET Framework 4.5 Esteso](/windows)
+[.NET Framework 4.5 Extended](/windows)
 
 420
 
@@ -1556,13 +1556,13 @@ Numero ID della funzionalità del server padre. Questa proprietà è 0 se la fun
 
 ## <a name="remarks"></a>Commenti
 
-Per informazioni sulle Windows server, Server Manager panoramica tecnica di Windows [Server 2008.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753319(v=ws.10))
+Per altre informazioni sulle funzionalità del server, Windows Panoramica tecnica di [Server Manager Server 2008.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753319(v=ws.10))
 
 Le aziende che non usano software di gestione che segnala le funzionalità del server, ad esempio System Center Operations Manager con Management Pack installati, possono ottenere tali informazioni tramite una query sulla **classe \_ ServerFeature Win32.**
 
 È possibile usare le funzionalità remote di WMI o WinRM per ottenere informazioni sulle funzionalità del server dai server remoti. Per altre informazioni sulle connessioni WMI DCOM remote, vedere [Connessione a WMI in un computer remoto.](connecting-to-wmi-on-a-remote-computer.md) Per altre informazioni su WinRM, vedere Windows Remote Management (Gestione remota Windows).
 
-Windows Server 2012: **Win32 \_ ServerFeature** è stato deprecato. Per accedere alle informazioni sulle funzionalità di Windows Server a livello di codice, è possibile [Server Manager cmdlet di](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee662311(v=technet.10)).
+Windows Server 2012: **Win32 \_ ServerFeature** è stato deprecato. Per accedere alle informazioni sulle funzionalità di Windows Server a livello di codice, è possibile [usare i cmdlet Server Manager .](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee662311(v=technet.10))
 
 ### <a name="windows-server-2012-r2"></a>R2 per Windows Server 2012
 
@@ -1631,7 +1631,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id=".NET_Framework_3.5.1_Features"></span><span id=".net_framework_3.5.1_features"></span><span id=".NET_FRAMEWORK_3.5.1_FEATURES"></span>funzionalità .NET Framework 3.5.1
+<span id=".NET_Framework_3.5.1_Features"></span><span id=".net_framework_3.5.1_features"></span><span id=".NET_FRAMEWORK_3.5.1_FEATURES"></span>.NET Framework 3.5.1 Funzionalità
 </dt> <dd>
 
 Non più supportato
@@ -1687,14 +1687,14 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Storage_Manager_For_SANs"></span><span id="storage_manager_for_sans"></span><span id="STORAGE_MANAGER_FOR_SANS"></span>Archiviazione Manager per SAN
+<span id="Storage_Manager_For_SANs"></span><span id="storage_manager_for_sans"></span><span id="STORAGE_MANAGER_FOR_SANS"></span>Archiviazione Manager per san
 </dt> <dd>
 
 Non più supportato
 
 </dd> <dt>
 
-<span id="Internet_Storage_Name_Server"></span><span id="internet_storage_name_server"></span><span id="INTERNET_STORAGE_NAME_SERVER"></span>Internet Archiviazione Name Server
+<span id="Internet_Storage_Name_Server"></span><span id="internet_storage_name_server"></span><span id="INTERNET_STORAGE_NAME_SERVER"></span>Server dei Archiviazione Internet
 </dt> <dd>
 
 Non più supportato
@@ -1736,7 +1736,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Quality_Windows_Audio_Video_Experience"></span><span id="quality_windows_audio_video_experience"></span><span id="QUALITY_WINDOWS_AUDIO_VIDEO_EXPERIENCE"></span>Quality Windows Audio Video Experience
+<span id="Quality_Windows_Audio_Video_Experience"></span><span id="quality_windows_audio_video_experience"></span><span id="QUALITY_WINDOWS_AUDIO_VIDEO_EXPERIENCE"></span>Esperienza Windows video audio
 </dt> <dd>
 
 Non più supportato
@@ -1792,7 +1792,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="WoW64_Support"></span><span id="wow64_support"></span><span id="WOW64_SUPPORT"></span>Supporto woW64
+<span id="WoW64_Support"></span><span id="wow64_support"></span><span id="WOW64_SUPPORT"></span>Supporto di WoW64
 </dt> <dd>
 
 Non più supportato
@@ -1841,7 +1841,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="BitLocker_Network_Unlock"></span><span id="bitlocker_network_unlock"></span><span id="BITLOCKER_NETWORK_UNLOCK"></span>Sblocco di rete BitLocker
+<span id="BitLocker_Network_Unlock"></span><span id="bitlocker_network_unlock"></span><span id="BITLOCKER_NETWORK_UNLOCK"></span>Sblocco rete BitLocker
 </dt> <dd>
 
 Aggiunta
@@ -1862,7 +1862,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id=".NET_Framework_4.5_Features"></span><span id=".net_framework_4.5_features"></span><span id=".NET_FRAMEWORK_4.5_FEATURES"></span>funzionalità .NET Framework 4.5
+<span id=".NET_Framework_4.5_Features"></span><span id=".net_framework_4.5_features"></span><span id=".NET_FRAMEWORK_4.5_FEATURES"></span>.NET Framework 4.5 Funzionalità
 </dt> <dd>
 
 Aggiunta
@@ -1876,7 +1876,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Graphical_Management_Tools_and_Infrastructure"></span><span id="graphical_management_tools_and_infrastructure"></span><span id="GRAPHICAL_MANAGEMENT_TOOLS_AND_INFRASTRUCTURE"></span>Infrastruttura e strumenti di gestione grafici
+<span id="Graphical_Management_Tools_and_Infrastructure"></span><span id="graphical_management_tools_and_infrastructure"></span><span id="GRAPHICAL_MANAGEMENT_TOOLS_AND_INFRASTRUCTURE"></span>Infrastruttura e strumenti di gestione grafica
 </dt> <dd>
 
 Aggiunta
@@ -1890,14 +1890,14 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Windows_Server_Essentials_Experience"></span><span id="windows_server_essentials_experience"></span><span id="WINDOWS_SERVER_ESSENTIALS_EXPERIENCE"></span>Windows Esperienza Server Essentials
+<span id="Windows_Server_Essentials_Experience"></span><span id="windows_server_essentials_experience"></span><span id="WINDOWS_SERVER_ESSENTIALS_EXPERIENCE"></span>Windows Esperienza di Server Essentials
 </dt> <dd>
 
 Aggiunta
 
 </dd> <dt>
 
-<span id="Direct_Play"></span><span id="direct_play"></span><span id="DIRECT_PLAY"></span>Riproduzione diretta
+<span id="Direct_Play"></span><span id="direct_play"></span><span id="DIRECT_PLAY"></span>Direct Play
 </dt> <dd>
 
 Aggiunta
@@ -1946,7 +1946,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="iSCSI_Target_Storage_Provider__VDS_and_VSS_hardware_providers_"></span><span id="iscsi_target_storage_provider__vds_and_vss_hardware_providers_"></span><span id="ISCSI_TARGET_STORAGE_PROVIDER__VDS_AND_VSS_HARDWARE_PROVIDERS_"></span>Provider di servizi di Archiviazione destinazione iSCSI (provider hardware VDS e VSS)
+<span id="iSCSI_Target_Storage_Provider__VDS_and_VSS_hardware_providers_"></span><span id="iscsi_target_storage_provider__vds_and_vss_hardware_providers_"></span><span id="ISCSI_TARGET_STORAGE_PROVIDER__VDS_AND_VSS_HARDWARE_PROVIDERS_"></span>Provider di Archiviazione destinazione iSCSI (provider hardware VDS e VSS)
 </dt> <dd>
 
 Aggiunta
@@ -1981,7 +1981,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Password_Synchronization"></span><span id="password_synchronization"></span><span id="PASSWORD_SYNCHRONIZATION"></span>Sincronizzazione password
+<span id="Password_Synchronization"></span><span id="password_synchronization"></span><span id="PASSWORD_SYNCHRONIZATION"></span>Sincronizzazione delle password
 </dt> <dd>
 
 Non più supportato
@@ -1995,7 +1995,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Windows_Media_Server"></span><span id="windows_media_server"></span><span id="WINDOWS_MEDIA_SERVER"></span>Windows Server dei contenuti multimediali
+<span id="Windows_Media_Server"></span><span id="windows_media_server"></span><span id="WINDOWS_MEDIA_SERVER"></span>Windows Server multimediale
 </dt> <dd>
 
 Non più supportata.
@@ -2030,7 +2030,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="AD_FS_Web_Agents"></span><span id="ad_fs_web_agents"></span><span id="AD_FS_WEB_AGENTS"></span>AD FS web agent
+<span id="AD_FS_Web_Agents"></span><span id="ad_fs_web_agents"></span><span id="AD_FS_WEB_AGENTS"></span>AD FS Web agent
 </dt> <dd>
 
 Non più supportato
@@ -2079,7 +2079,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Health_Registration_Authority"></span><span id="health_registration_authority"></span><span id="HEALTH_REGISTRATION_AUTHORITY"></span>Autorità di registrazione dell'integrità
+<span id="Health_Registration_Authority"></span><span id="health_registration_authority"></span><span id="HEALTH_REGISTRATION_AUTHORITY"></span>Autorità di registrazione integrità
 </dt> <dd>
 
 Non più supportato
@@ -2205,7 +2205,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="WS-Automatic_Transactions"></span><span id="ws-automatic_transactions"></span><span id="WS-AUTOMATIC_TRANSACTIONS"></span>Transazioni WS-Automatic
+<span id="WS-Automatic_Transactions"></span><span id="ws-automatic_transactions"></span><span id="WS-AUTOMATIC_TRANSACTIONS"></span>Transazioni automatiche WS
 </dt> <dd>
 
 Non più supportato
@@ -2219,7 +2219,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Role_Administration_Tools"></span><span id="role_administration_tools"></span><span id="ROLE_ADMINISTRATION_TOOLS"></span>Strumenti di amministrazione ruoli
+<span id="Role_Administration_Tools"></span><span id="role_administration_tools"></span><span id="ROLE_ADMINISTRATION_TOOLS"></span>Strumenti di amministrazione dei ruoli
 </dt> <dd>
 
 Non più supportato
@@ -2254,7 +2254,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Services_Tools"></span><span id="remote_desktop_services_tools"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS"></span>strumenti Servizi Desktop remoto
+<span id="Remote_Desktop_Services_Tools"></span><span id="remote_desktop_services_tools"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS"></span>Servizi Desktop remoto strumenti
 </dt> <dd>
 
 Non più supportato
@@ -2289,28 +2289,28 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="Web_Server__IIS__Tools"></span><span id="web_server__iis__tools"></span><span id="WEB_SERVER__IIS__TOOLS"></span>Strumenti server Web (IIS)
+<span id="Web_Server__IIS__Tools"></span><span id="web_server__iis__tools"></span><span id="WEB_SERVER__IIS__TOOLS"></span>Strumenti del server Web (IIS)
 </dt> <dd>
 
 Non più supportato
 
 </dd> <dt>
 
-<span id="Server_for_NIS_Tools"></span><span id="server_for_nis_tools"></span><span id="SERVER_FOR_NIS_TOOLS"></span>strumenti server per NIS
+<span id="Server_for_NIS_Tools"></span><span id="server_for_nis_tools"></span><span id="SERVER_FOR_NIS_TOOLS"></span>server per NIS strumenti
 </dt> <dd>
 
 Non più supportato
 
 </dd> <dt>
 
-<span id="AD_DS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_ds_snap-ins_and_command-line_tools"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>Strumenti di Snap-Ins e Command-Line Active Directory
+<span id="AD_DS_Snap-Ins_and_Command-Line_Tools"></span><span id="ad_ds_snap-ins_and_command-line_tools"></span><span id="AD_DS_SNAP-INS_AND_COMMAND-LINE_TOOLS"></span>Strumenti di Snap-Ins e Command-Line Servizi di dominio Active Directory
 </dt> <dd>
 
 Non più supportato
 
 </dd> <dt>
 
-<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>Servizi di dominio Active Directory e AD LDS di dominio Active Directory
+<span id="AD_DS_and_AD_LDS_Tools"></span><span id="ad_ds_and_ad_lds_tools"></span><span id="AD_DS_AND_AD_LDS_TOOLS"></span>Servizi di dominio Active Directory e AD LDS strumenti
 </dt> <dd>
 
 Non più supportato
@@ -2348,7 +2348,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Remote_Access_Management_Tools"></span><span id="remote_access_management_tools"></span><span id="REMOTE_ACCESS_MANAGEMENT_TOOLS"></span>Strumenti di gestione di Accesso remoto
+<span id="Remote_Access_Management_Tools"></span><span id="remote_access_management_tools"></span><span id="REMOTE_ACCESS_MANAGEMENT_TOOLS"></span>Strumenti di gestione accesso remoto
 </dt> <dd>
 
 Aggiunta
@@ -2362,7 +2362,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Remote_Access_GUI_and_Command-Line_Tools"></span><span id="remote_access_gui_and_command-line_tools"></span><span id="REMOTE_ACCESS_GUI_AND_COMMAND-LINE_TOOLS"></span>Interfaccia utente grafica e strumenti Command-Line accesso remoto
+<span id="Remote_Access_GUI_and_Command-Line_Tools"></span><span id="remote_access_gui_and_command-line_tools"></span><span id="REMOTE_ACCESS_GUI_AND_COMMAND-LINE_TOOLS"></span>Interfaccia utente grafica e strumenti Command-Line Accesso remoto
 </dt> <dd>
 
 Aggiunta
@@ -2467,7 +2467,7 @@ Non più supportato
 
 </dd> <dt>
 
-<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 per servizi di stampa
+<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 per Servizi di stampa
 </dt> <dd>
 
 Non più supportato
@@ -2544,7 +2544,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Windows_PowerShell_2.0_Engine"></span><span id="windows_powershell_2.0_engine"></span><span id="WINDOWS_POWERSHELL_2.0_ENGINE"></span>Windows PowerShell 2.0 Engine
+<span id="Windows_PowerShell_2.0_Engine"></span><span id="windows_powershell_2.0_engine"></span><span id="WINDOWS_POWERSHELL_2.0_ENGINE"></span>Windows PowerShell 2.0
 </dt> <dd>
 
 Aggiunta
@@ -2565,14 +2565,14 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Windows_PowerShell_Desired_State_Configuration_Service"></span><span id="windows_powershell_desired_state_configuration_service"></span><span id="WINDOWS_POWERSHELL_DESIRED_STATE_CONFIGURATION_SERVICE"></span>Windows PowerShell Desired State Configuration Service
+<span id="Windows_PowerShell_Desired_State_Configuration_Service"></span><span id="windows_powershell_desired_state_configuration_service"></span><span id="WINDOWS_POWERSHELL_DESIRED_STATE_CONFIGURATION_SERVICE"></span>Windows PowerShell Desired State Configuration servizio
 </dt> <dd>
 
 Aggiunta
 
 </dd> <dt>
 
-<span id=".NET_Framework_4.5_Extended"></span><span id=".net_framework_4.5_extended"></span><span id=".NET_FRAMEWORK_4.5_EXTENDED"></span>.NET Framework versione 4.5 estesa
+<span id=".NET_Framework_4.5_Extended"></span><span id=".net_framework_4.5_extended"></span><span id=".NET_FRAMEWORK_4.5_EXTENDED"></span>.NET Framework 4.5 Extended
 </dt> <dd>
 
 Aggiunta
@@ -2610,7 +2610,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="TCP_Port_Sharing"></span><span id="tcp_port_sharing"></span><span id="TCP_PORT_SHARING"></span>Condivisione porte TCP
+<span id="TCP_Port_Sharing"></span><span id="tcp_port_sharing"></span><span id="TCP_PORT_SHARING"></span>Condivisione delle porte TCP
 </dt> <dd>
 
 Aggiunta
@@ -3055,7 +3055,7 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 per servizi di stampa
+<span id="WoW64_for_Print_Services"></span><span id="wow64_for_print_services"></span><span id="WOW64_FOR_PRINT_SERVICES"></span>WoW64 per Servizi di stampa
 </dt> <dd>
 
 Aggiunta
@@ -3090,17 +3090,17 @@ Aggiunta
 
 </dd> <dt>
 
-<span id="Print_and_Document_Services_name_change"></span><span id="print_and_document_services_name_change"></span><span id="PRINT_AND_DOCUMENT_SERVICES_NAME_CHANGE"></span>Servizi di stampa e digitalizzazione nome
+<span id="Print_and_Document_Services_name_change"></span><span id="print_and_document_services_name_change"></span><span id="PRINT_AND_DOCUMENT_SERVICES_NAME_CHANGE"></span>Servizi di stampa e digitalizzazione modifica del nome
 </dt> <dd>
 
 servizi di stampa denominati per questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Services_name_change"></span><span id="remote_desktop_services_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_NAME_CHANGE"></span>Servizi Desktop remoto nome
+<span id="Remote_Desktop_Services_name_change"></span><span id="remote_desktop_services_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_NAME_CHANGE"></span>Servizi Desktop remoto del nome
 </dt> <dd>
 
-Denominato Servizi terminal in questa versione
+denominato Servizi terminal in questa versione
 
 </dd> <dt>
 
@@ -3111,14 +3111,14 @@ Funzionalità .NET Framework 3.0 denominate in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Session_Host_name_change"></span><span id="remote_desktop_session_host_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_NAME_CHANGE"></span>Desktop remoto nome host sessione
+<span id="Remote_Desktop_Session_Host_name_change"></span><span id="remote_desktop_session_host_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_NAME_CHANGE"></span>Desktop remoto nome host sessione di lavoro
 </dt> <dd>
 
 Terminal Server denominato in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Licensing_name_change"></span><span id="remote_desktop_licensing_name_change"></span><span id="REMOTE_DESKTOP_LICENSING_NAME_CHANGE"></span>Desktop remoto modifica del nome delle licenze
+<span id="Remote_Desktop_Licensing_name_change"></span><span id="remote_desktop_licensing_name_change"></span><span id="REMOTE_DESKTOP_LICENSING_NAME_CHANGE"></span>Desktop remoto del nome della licenza
 </dt> <dd>
 
 Licenze TS denominate in questa versione
@@ -3128,25 +3128,25 @@ Licenze TS denominate in questa versione
 <span id="Remote_Desktop_Gateway_name_change"></span><span id="remote_desktop_gateway_name_change"></span><span id="REMOTE_DESKTOP_GATEWAY_NAME_CHANGE"></span>Desktop remoto del nome del gateway
 </dt> <dd>
 
-Gateway di Servizi terminal denominato in questa versione
+Gateway TS denominato in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Connection_Broker_name_change"></span><span id="remote_desktop_connection_broker_name_change"></span><span id="REMOTE_DESKTOP_CONNECTION_BROKER_NAME_CHANGE"></span>Connessione Desktop remoto modifica del nome del broker
+<span id="Remote_Desktop_Connection_Broker_name_change"></span><span id="remote_desktop_connection_broker_name_change"></span><span id="REMOTE_DESKTOP_CONNECTION_BROKER_NAME_CHANGE"></span>Connessione Desktop remoto nome broker
 </dt> <dd>
 
-Broker di sessione di Servizi terminal denominato in questa versione
+Denominato TS Session Broker in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Web_Access_name_change"></span><span id="remote_desktop_web_access_name_change"></span><span id="REMOTE_DESKTOP_WEB_ACCESS_NAME_CHANGE"></span>Desktop remoto Accesso Web modifica del nome
+<span id="Remote_Desktop_Web_Access_name_change"></span><span id="remote_desktop_web_access_name_change"></span><span id="REMOTE_DESKTOP_WEB_ACCESS_NAME_CHANGE"></span>Desktop remoto Accesso Web del nome
 </dt> <dd>
 
-Nome dell'Accesso Web TS in questa versione
+TS Accesso Web in questa versione
 
 </dd> <dt>
 
-<span id=".NET_Framework_3.5.1_name_change"></span><span id=".net_framework_3.5.1_name_change"></span><span id=".NET_FRAMEWORK_3.5.1_NAME_CHANGE"></span>.NET Framework modifica del nome 3.5.1
+<span id=".NET_Framework_3.5.1_name_change"></span><span id=".net_framework_3.5.1_name_change"></span><span id=".NET_FRAMEWORK_3.5.1_NAME_CHANGE"></span>.NET Framework nome 3.5.1
 </dt> <dd>
 
 (220) Funzionalità di Net FX 3.0 denominate in questa versione
@@ -3165,42 +3165,42 @@ Strumenti Active Directory Domain Services denominati in questa versione
 <span id="AD_LDS_Snap-Ins_and_Command-Line_Tools_name_change"></span><span id="ad_lds_snap-ins_and_command-line_tools_name_change"></span><span id="AD_LDS_SNAP-INS_AND_COMMAND-LINE_TOOLS_NAME_CHANGE"></span>AD LDS Snap-Ins e Command-Line modifica del nome degli strumenti
 </dt> <dd>
 
-Denominato Active Directory Lightweight Directory Services Tools in questa versione
+Strumenti Active Directory Lightweight Directory Services denominati in questa versione
 
 </dd> <dt>
 
-<span id="Print_and_Document_Services_Tools_name_change"></span><span id="print_and_document_services_tools_name_change"></span><span id="PRINT_AND_DOCUMENT_SERVICES_TOOLS_NAME_CHANGE"></span>Servizi di stampa e digitalizzazione modifica del nome di Strumenti di amministrazione
+<span id="Print_and_Document_Services_Tools_name_change"></span><span id="print_and_document_services_tools_name_change"></span><span id="PRINT_AND_DOCUMENT_SERVICES_TOOLS_NAME_CHANGE"></span>Servizi di stampa e digitalizzazione nome degli strumenti di distribuzione
 </dt> <dd>
 
-Strumenti di servizi di stampa denominati in questa versione
+Strumenti di Servizi di stampa denominati in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Services_Tools_name_change"></span><span id="remote_desktop_services_tools_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS_NAME_CHANGE"></span>Servizi Desktop remoto modifica del nome degli strumenti
+<span id="Remote_Desktop_Services_Tools_name_change"></span><span id="remote_desktop_services_tools_name_change"></span><span id="REMOTE_DESKTOP_SERVICES_TOOLS_NAME_CHANGE"></span>Servizi Desktop remoto modifica del nome degli strumenti di distribuzione
 </dt> <dd>
 
 Strumenti di Servizi terminal denominati in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Session_Host_Tools_name_change"></span><span id="remote_desktop_session_host_tools_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_TOOLS_NAME_CHANGE"></span>Desktop remoto nome degli strumenti host sessione
+<span id="Remote_Desktop_Session_Host_Tools_name_change"></span><span id="remote_desktop_session_host_tools_name_change"></span><span id="REMOTE_DESKTOP_SESSION_HOST_TOOLS_NAME_CHANGE"></span>Desktop remoto nome degli strumenti host della sessione
 </dt> <dd>
 
-Strumenti di Terminal Server denominati in questa versione
+Strumenti terminal server denominati in questa versione
 
 </dd> <dt>
 
-<span id="Remote_Desktop_Gateway_Tools_name_change"></span><span id="remote_desktop_gateway_tools_name_change"></span><span id="REMOTE_DESKTOP_GATEWAY_TOOLS_NAME_CHANGE"></span>Desktop remoto nome degli strumenti gateway
+<span id="Remote_Desktop_Gateway_Tools_name_change"></span><span id="remote_desktop_gateway_tools_name_change"></span><span id="REMOTE_DESKTOP_GATEWAY_TOOLS_NAME_CHANGE"></span>Desktop remoto del nome degli strumenti gateway
 </dt> <dd>
 
-Strumenti gateway di Servizi terminal denominati in questa versione
+Strumenti gateway TS denominati in questa versione
 
 </dd> <dt>
 
 <span id="Remote_Desktop_Licensing_Tools_name_change"></span><span id="remote_desktop_licensing_tools_name_change"></span><span id="REMOTE_DESKTOP_LICENSING_TOOLS_NAME_CHANGE"></span>Desktop remoto nome degli strumenti di gestione delle licenze
 </dt> <dd>
 
-Strumenti di gestione delle licenze di Servizi terminal denominati in questa versione
+Strumenti di gestione licenze TS denominati in questa versione
 
 </dd> <dt>
 
@@ -3213,7 +3213,7 @@ Strumenti del Controller di dominio Active Directory
 
 ## <a name="examples"></a>Esempio
 
-Lo script seguente visualizza i nomi di tutte le funzionalità del server nel computer denominato "FABRIKAM". Si noti che il computer di destinazione deve eseguire Windows server 2008 o versione successiva.
+Lo script seguente visualizza i nomi di tutte le funzionalità del server nel computer denominato "FABRIKAM". Si noti che il computer di destinazione deve eseguire Windows Server 2008 o un sistema operativo server successivo.
 
 
 ```VB

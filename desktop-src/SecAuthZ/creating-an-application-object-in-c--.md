@@ -1,21 +1,21 @@
 ---
-description: Un archivio dei criteri di autorizzazione contiene informazioni sui criteri di autorizzazione per una o più applicazioni. Per ogni applicazione che usa l'archivio criteri, è necessario creare un oggetto IAzApplication e salvarlo in un archivio criteri.
+description: Un archivio dei criteri di autorizzazione contiene informazioni sui criteri di autorizzazione per una o più applicazioni. Per ogni applicazione che usa tale archivio criteri, è necessario creare un oggetto IAzApplication e salvarlo in un archivio criteri.
 ms.assetid: 2bba1068-ae03-4388-be4d-9865e42e440e
 title: Creazione di un oggetto applicazione in C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86885124e2fff52bc5cce2260e3d7fb727b58eb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a434bb87d064a7fe19698e78565577238f75051fbf233e36ddf2da1725987c06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782625"
 ---
 # <a name="creating-an-application-object-in-c"></a>Creazione di un oggetto applicazione in C++
 
-Un archivio dei criteri di autorizzazione contiene informazioni sui criteri di autorizzazione per una o più applicazioni. Per ogni applicazione che usa l'archivio criteri, è necessario creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvarlo in un archivio criteri.
+Un archivio dei criteri di autorizzazione contiene informazioni sui criteri di autorizzazione per una o più applicazioni. Per ogni applicazione che usa tale archivio criteri, è necessario creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvarlo in un archivio criteri.
 
-Nell'esempio seguente viene illustrato come creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) che rappresenta un'applicazione e come aggiungere l'oggetto **IAzApplication** all'archivio dei criteri di autorizzazione utilizzato dall'applicazione. Nell'esempio si presuppone l'esistenza di un archivio criteri XML denominato MyStore.xml nella directory radice dell'unità C.
+L'esempio seguente illustra come creare un oggetto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) che rappresenta un'applicazione e come aggiungere **l'oggetto IAzApplication** all'archivio dei criteri di autorizzazione utilizzato dall'applicazione. Nell'esempio si presuppone che sia presente un archivio criteri XML esistente denominato MyStore.xml nella directory radice dell'unità C.
 
 
 ```C++

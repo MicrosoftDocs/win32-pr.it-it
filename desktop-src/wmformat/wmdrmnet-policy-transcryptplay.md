@@ -1,10 +1,10 @@
 ---
 title: WMDRMNET_POLICY_TRANSCRYPTPLAY struttura (Wmdrmsdk.h)
-description: La struttura TRANSCRYPTPLAY di WMDRMNET POLICY contiene le informazioni sui criteri per la riproduzione del contenuto \_ \_ Windows DRM multimediale per i dispositivi di rete.
+description: La struttura TRANSCRYPTPLAY dei criteri WMDRMNET contiene le informazioni sui criteri per la riproduzione del contenuto \_ \_ Windows Media DRM per i dispositivi di rete.
 ms.assetid: 95671c58-a593-40bb-856e-28ad1cba340e
 keywords:
 - WMDRMNET_POLICY_TRANSCRYPTPLAY struttura windows Media Format
-- Struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118195506"
 ---
-# <a name="wmdrmnet_policy_transcryptplay-structure"></a>Struttura \_ TRANSCRYPTPLAY di CRITERI \_ WMDRMNET
+# <a name="wmdrmnet_policy_transcryptplay-structure"></a>Struttura \_ TRANSCRYPTPLAY dei CRITERI WMDRMNET \_
 
-La **struttura \_ \_ TRANSCRYPTPLAY di WMDRMNET POLICY** contiene le informazioni sui criteri per la riproduzione del contenuto Windows DRM multimediale per dispositivi di rete.
+La **struttura \_ \_ TRANSCRYPTPLAY dei criteri WMDRMNET** contiene le informazioni sui criteri per la riproduzione di contenuto Windows DRM multimediale per i dispositivi di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -77,7 +77,7 @@ Nessuno.
 [**Strutture**](drm-structures.md)
 </dt> <dt>
 
-[**CRITERI WMDRMNET \_**](wmdrmnet-policy.md)
+[**CRITERI \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: L'editor di controllo di accesso può includere una pagina delle proprietà Controllo che consente all'utente di visualizzare e modificare le voci di controllo di accesso (ACE) in un elenco di controllo di accesso di sistema (SACL) di oggetti. Per altre informazioni sugli elenchi di controllo di accesso (ACL), vedere Elenchi di controllo di accesso (ACL).
+description: L'editor di controllo di accesso può includere una pagina delle proprietà Controllo che consente all'utente di visualizzare e modificare le voci di controllo di accesso (ACE) in un elenco sacl (Access Control List) di sistema degli oggetti. Per altre informazioni sui SACL, vedere Elenchi di controllo di accesso (ACL).
 ms.assetid: 2a9152b7-c72d-4f03-bc3f-b75927fb4b6c
 title: Pagina delle proprietà Controllo
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "117784319"
 ---
 # <a name="auditing-property-page"></a>Pagina delle proprietà Controllo
 
-L'editor di controllo  di accesso può includere una pagina delle proprietà Controllo che consente all'utente di visualizzare e modificare le voci di controllo di accesso [](/windows/desktop/SecGloss/a-gly) (ACE) nell'elenco di controllo di accesso [*di*](/windows/desktop/SecGloss/s-gly) sistema (SACL) di un oggetto. Per altre informazioni sugli elenchi di controllo di accesso (ACL), vedere [Elenchi di controllo](access-control-lists.md) di accesso (ACL).
+L'editor di controllo  di accesso può includere una pagina delle proprietà Controllo che consente all'utente di visualizzare e modificare le voci di controllo di accesso [](/windows/desktop/SecGloss/a-gly) (ACE) nell'elenco di controllo di accesso [*di*](/windows/desktop/SecGloss/s-gly) sistema (SACL) di un oggetto. Per altre informazioni sui SACL, vedere [Elenchi di controllo di accesso](access-control-lists.md) (ACL).
 
 **Per visualizzare la pagina delle proprietà Controllo**
 
--   Nella pagina [delle proprietà sicurezza di base fare](basic-security-property-page.md)clic su **Avanzate.** La **pagina delle proprietà** Controllo si trova nella finestra delle proprietà Sicurezza [avanzata](advanced-security-property-sheet.md).
+-   Nella pagina [delle proprietà sicurezza di base](basic-security-property-page.md)fare clic su **Avanzate**. La **pagina delle proprietà** Controllo si trova nella finestra delle proprietà sicurezza [avanzata](advanced-security-property-sheet.md).
 
-Per includere la **pagina** delle proprietà Controllo, impostare i flag **SI \_ ADVANCED** e **SI EDIT \_ \_ AUDITS** nella struttura [**SI OBJECT \_ \_ INFO**](/windows/desktop/api/Aclui/ns-aclui-si_object_info) restituita dall'implementazione [**di ISecurityInformation::GetObjectInformation.**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation)
+Per includere la **pagina delle** proprietà Controllo, impostare i flag **SI \_ ADVANCED** e **SI EDIT \_ \_ AUDITS** nella struttura [**SI OBJECT \_ \_ INFO**](/windows/desktop/api/Aclui/ns-aclui-si_object_info) restituita dall'implementazione [**di ISecurityInformation::GetObjectInformation.**](/windows/win32/api/aclui/nf-aclui-isecurityinformation-getobjectinformation)
 
  
 
