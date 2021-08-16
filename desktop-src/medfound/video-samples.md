@@ -13,15 +13,15 @@ ms.locfileid: "118972600"
 ---
 # <a name="video-samples"></a>Esempi video
 
-L'oggetto di esempio video è un'implementazione specializzata [**dell'interfaccia IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) da usare con [enhanced video renderer](enhanced-video-renderer.md) (EVR). Per creare un'istanza di questo oggetto, chiamare la [**funzione MFCreateVideoSampleFromSurface.**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) La funzione accetta un puntatore a una superficie Direct3D e restituisce un puntatore **all'interfaccia IMFSample.** I tipi di oggetti seguenti devono allocare esempi usando questa funzione:
+L'oggetto video di esempio è un'implementazione specializzata [**dell'interfaccia IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) da usare con [il renderer video](enhanced-video-renderer.md) avanzato (EVR). Per creare un'istanza di questo oggetto, chiamare la [**funzione MFCreateVideoSampleFromSurface.**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) La funzione accetta un puntatore a una superficie Direct3D e restituisce un puntatore **all'interfaccia IMFSample.** I tipi di oggetti seguenti devono allocare campioni usando questa funzione:
 
--   Relatori EVR personalizzati. Un presentatore alloca esempi video e li invia al metodo [**IMFTransform::P rocessOutput del mixer.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) Per altre informazioni, vedere [How to Write an EVR Presenter](how-to-write-an-evr-presenter.md).
+-   Relatori EVR personalizzati. Un presentatore alloca campioni video e li invia al metodo [**IMFTransform::P rocessOutput del**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) mixer. Per altre informazioni, vedere [How to Write an EVR Presenter (Come scrivere un presentatore EVR).](how-to-write-an-evr-presenter.md)
 
 -   Decodificatori video che supportano l'accelerazione video. Per altre informazioni, vedere [Supporto di DXVA 2.0 in Media Foundation](supporting-dxva-2-0-in-media-foundation.md).
 
-L'oggetto di esempio video implementa le interfacce seguenti:
+L'oggetto video di esempio implementa le interfacce seguenti:
 
--   [**Esempio IMF**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+-   [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
 -   [**IMFDesiredSample**](/windows/desktop/api/evr/nn-evr-imfdesiredsample)
 
@@ -29,7 +29,7 @@ L'oggetto di esempio video implementa le interfacce seguenti:
 
 Se il *parametro pUnkSurface* di [**MFCreateVideoSampleFromSurface**](/windows/desktop/api/evr/nc-evr-mfcreatevideosamplefromsurface) è diverso da **NULL,** l'esempio video risultante contiene un singolo buffer multimediale che incapsula la superficie Direct3D. Questo oggetto buffer ha funzionalità limitate:
 
--   Il metodo [**IMFMediaBuffer::Lock del**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) buffer restituisce E \_ NOTIMPL.
+-   Il metodo [**IMFMediaBuffer::Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) del buffer restituisce E \_ NOTIMPL.
 
 -   Il buffer non implementa [**l'interfaccia IMF2DBuffer.**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer)
 
@@ -39,11 +39,11 @@ Se il *parametro pUnkSurface* è **NULL,** l'esempio video viene creato con zero
 
 1.  Creare una superficie Direct3D.
 
-2.  Creare un surface buffer chiamando [**MFCreateDXSurfaceBuffer**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatedxsurfacebuffer). Per altre informazioni, vedere [DirectX Surface Buffer.](directx-surface-buffer.md)
+2.  Creare un surface buffer chiamando [**MFCreateDXSurfaceBuffer.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatedxsurfacebuffer) Per altre informazioni, vedere [DirectX Surface Buffer.](directx-surface-buffer.md)
 
 3.  Aggiungere il buffer all'esempio chiamando [**IMFSample::AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer).
 
-Usare questo approccio se è necessario che la memoria di superficie sia accessibile tramite [**l'interfaccia IMF2DBuffer.**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer)
+Usare questo approccio se è necessario che la memoria surface sia accessibile tramite [**l'interfaccia IMF2DBuffer.**](/windows/desktop/api/mfobjects/nn-mfobjects-imf2dbuffer)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

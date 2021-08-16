@@ -27,14 +27,14 @@ ms.locfileid: "119468221"
 
 -   [**Elementi audio**](audio-item-attributes.md)
 -   [**Elementi foto**](photo-item-attributes.md)
--   [**Elementi della playlist**](playlist-attributes-ref.md)
+-   [**Elementi playlist**](playlist-attributes-ref.md)
 -   [**Elementi video**](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
 Un elemento multimediale potrebbe appartenere alla libreria locale dell'utente corrente o a una libreria resa disponibile da un altro utente nella rete domestica o in Internet.
 
-Il valore di questo attributo è lo stesso del valore restituito dal metodo [**IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
+Il valore di questo attributo è lo stesso del valore restituito dal [**metodo IWMPLibrary2::getItemInfo.**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmplibrary-get_name)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,7 +50,7 @@ Il valore di questo attributo è lo stesso del valore restituito dal metodo [**I
 
 <dl> <dt>
 
-[**Informazioni di riferimento su attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

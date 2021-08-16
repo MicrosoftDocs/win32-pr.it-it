@@ -1,40 +1,40 @@
 ---
-description: Gli assembly affiancati vengono utilizzati con i tipi di file manifesto e di configurazione seguenti. I manifesti e le configurazioni sono file XML.
+description: Gli assembly side-by-side vengono usati con i tipi di file manifesto e di configurazione seguenti. Manifesti e configurazioni sono file XML.
 ms.assetid: 8b969a8f-586c-4556-87be-92db6c61e8ce
 title: "  File manifest"
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ea9915ba8e5e0c43b7e9c96e62ea46c3f0061b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e87636a8a4e5398cf9bb274d5ea8b9e7620104989322a20138a162ca45d9caf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142064"
 ---
 # <a name="manifest-files-reference"></a>  File manifest
 
-Gli assembly affiancati vengono utilizzati con i tipi di file manifesto e di configurazione seguenti. I manifesti e le configurazioni sono file XML.
+Gli assembly side-by-side vengono usati con i tipi di file manifesto e di configurazione seguenti. Manifesti e configurazioni sono file XML.
 
 
 
 | manifesto                                                               | Descrizione                                                                                                                                                                                                   |
 |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Manifesti dell'assembly](assembly-manifests.md)                           | Descrive i nomi, le versioni, le risorse e le dipendenze degli assembly degli assembly affiancati.                                                                                                               |
-| [Manifesti dell'applicazione](application-manifests.md)                     | Vengono descritti i nomi e le versioni degli assembly affiancati condivisi a cui l'applicazione deve essere associata in fase di esecuzione e possono inoltre contenere metadati per gli assembly side-by-side privati utilizzati dall'applicazione. |
-| [File di configurazione dell'applicazione](application-configuration-files.md) | Reindirizza le versioni degli assembly delle dipendenze degli assembly usando la [configurazione per ogni applicazione](per-application-configuration.md).                                                                            |
-| [File di configurazione del server di pubblicazione](publisher-configuration-files.md)     | Reindirizza le versioni degli assembly delle dipendenze degli assembly per ogni assembly utilizzando una configurazione del [server di pubblicazione](publisher-configuration.md).                                                              |
+| [Manifesti dell'assembly](assembly-manifests.md)                           | Descrive i nomi, le versioni, le risorse e le dipendenze degli assembly side-by-side.                                                                                                               |
+| [Manifesti dell'applicazione](application-manifests.md)                     | Descrive i nomi e le versioni degli assembly side-by-side condivisi a cui l'applicazione deve eseguire l'associazione in fase di esecuzione e può anche contenere metadati per assembly side-by-side privati usati dall'applicazione. |
+| [File di configurazione dell'applicazione](application-configuration-files.md) | Reindirizza le versioni degli assembly delle dipendenze dell'assembly usando [la configurazione per applicazione.](per-application-configuration.md)                                                                            |
+| [Publisher File di configurazione](publisher-configuration-files.md)     | Reindirizza le versioni degli assembly delle dipendenze dell'assembly in base all'assembly usando una configurazione [dell'editore.](publisher-configuration.md)                                                              |
 
 
 
  
 
-Per un elenco dello schema del file manifesto, vedere [schema del file manifesto](manifest-file-schema.md).
+Per un elenco dello schema del file manifesto, vedere [Schema del file manifesto.](manifest-file-schema.md)
 
-Per un elenco dello schema del file di configurazione dell'applicazione, vedere [schema del file di configurazione dell'applicazione](application-configuration-file-schema.md).
+Per un elenco dello schema del file di configurazione dell'applicazione, vedere [Schema del file di configurazione dell'applicazione.](application-configuration-file-schema.md)
 
-Per un elenco dello schema del file di configurazione dell'editore, vedere [schema del file di configurazione del server di pubblicazione](publisher-configuration-file-schema.md).
+Per un elenco dello schema del file di configurazione del server di pubblicazione, [Publisher schema del file di configurazione](publisher-configuration-file-schema.md).
 
-Altre tecnologie estendono il formato utilizzato dai manifesti di configurazione e controllo delle versioni di Windows. Gli sviluppatori devono fare riferimento alla documentazione specifica per la tecnologia usata per informazioni sul formato del manifesto. Ad esempio:
+Altre tecnologie estendono il formato usato dai Windows di controllo delle versioni e di configurazione. Gli sviluppatori devono fare riferimento alla documentazione specifica per la tecnologia usata per informazioni sul formato del manifesto. Esempio:
 
 -   [ClickOnce](/visualstudio/deployment/clickonce-reference?view=vs-2015)
 -   [Common Language Runtime](/dotnet/standard/clr)

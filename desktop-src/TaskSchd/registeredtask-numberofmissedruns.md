@@ -1,11 +1,11 @@
 ---
-title: Proprietà RegisteredTask. NumberOfMissedRuns
-description: Per gli script, ottiene il numero di volte in cui l'attività registrata ha perso un'esecuzione pianificata.
+title: RegisteredTask.NumberOfMissedRuns - proprietà
+description: Per lo scripting, ottiene il numero di volte in cui l'attività registrata non ha eseguito un'esecuzione pianificata.
 ms.assetid: cfccb782-eedd-47e4-a6c5-c5857f75d09d
 keywords:
-- Utilità di pianificazione proprietà NumberOfMissedRuns
-- Utilità di pianificazione proprietà NumberOfMissedRuns, oggetto RegisteredTask
-- Oggetto RegisteredTask Utilità di pianificazione, proprietà NumberOfMissedRuns
+- Proprietà NumberOfMissedRuns Utilità di pianificazione
+- Proprietà NumberOfMissedRuns Utilità di pianificazione , oggetto RegisteredTask
+- Oggetto RegisteredTask Utilità di pianificazione proprietà , NumberOfMissedRuns
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9115229afd5ee7cebf83b3b817991cbe0cf74ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93e6deb2566d476147c4f51eac0e92f5919a897d8d686adf61ce5fe6250254f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117759656"
 ---
-# <a name="registeredtasknumberofmissedruns-property"></a>Proprietà RegisteredTask. NumberOfMissedRuns
+# <a name="registeredtasknumberofmissedruns-property"></a>RegisteredTask.NumberOfMissedRuns - proprietà
 
-Per gli script, ottiene il numero di volte in cui l'attività registrata ha perso un'esecuzione pianificata.
+Per lo scripting, ottiene il numero di volte in cui l'attività registrata non ha eseguito un'esecuzione pianificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ RegisteredTask.NumberOfMissedRuns As Integer
 
 ## <a name="property-value"></a>Valore proprietà
 
-Numero di volte in cui l'attività registrata ha perso un'esecuzione pianificata.
+Numero di volte in cui l'attività registrata non ha eseguito un'esecuzione pianificata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,9 +46,9 @@ Numero di volte in cui l'attività registrata ha perso un'esecuzione pianificata
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

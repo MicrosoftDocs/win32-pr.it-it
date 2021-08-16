@@ -1,32 +1,32 @@
 ---
-description: Un alias in WMI è un riferimento simbolico in una classe o in un'istanza di classe situata altrove in un file di Managed Object Format (MOF).
+description: Un alias in WMI è un riferimento simbolico in una classe o in un'istanza di classe che si trova altrove in un file Managed Object Format (MOF).
 ms.assetid: bf4981dc-3aab-46c5-bf02-48132ccec8c2
 ms.tgt_platform: multiple
 title: Creazione di un alias WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fdd538e113f227eac4980855ea0035e839b92fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39a4709cba6ba1fa1790c80ac8d8f52f5fa2105207f0094ec3168f62ba0fcc43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117925622"
 ---
 # <a name="creating-a-wmi-alias"></a>Creazione di un alias WMI
 
-Un [*alias*](gloss-a.md) in WMI è un riferimento simbolico in una classe o in un'istanza di classe situata altrove in un file di Managed Object Format (MOF). Il compilatore MOF USA alias per stabilire riferimenti tra classi e istanze. Il compilatore risolve gli alias nelle classi a cui fanno riferimento, quindi i nomi di alias non sono disponibili nel codice compilato. Di conseguenza, le applicazioni client non possono fare riferimento alle classi che usano gli alias.
+Un [*alias*](gloss-a.md) in WMI è un riferimento simbolico in una classe o in un'istanza di classe che si trova altrove in un file Managed Object Format (MOF). Il compilatore MOF usa alias per stabilire riferimenti tra classi e istanze. Il compilatore risolve gli alias nelle classi a cui fanno riferimento, quindi i nomi degli alias non sono disponibili nel codice compilato. Di conseguenza, le applicazioni client non possono fare riferimento a classi che usano alias.
 
 > [!Note]  
-> WMI supporta il riferimento in diretta ma non gli alias circolari.
+> WMI supporta riferimenti in avanti, ma non alias circolari.
 
  
 
-Un alias ha un ambito solo nel file MOF in cui si dichiara l'alias. Pertanto, in genere si usa un alias come collegamento a un percorso di oggetto lungo.
+Un alias ha un ambito solo all'interno del file MOF in cui si dichiara l'alias. Pertanto, in genere si usa un alias come collegamento a un percorso di oggetto lungo.
 
 **Per definire un alias**
 
-1.  Aggiungere la frase "As $*aliasname*" alla dichiarazione dell'istanza o della classe.
-2.  I nomi di alias seguono le stesse regole dei nomi di istanza e di classe, ad eccezione del fatto che i nomi di alias devono iniziare con un segno di dollaro ($). I caratteri di sottolineatura possono essere visualizzati in un nome di alias che segue il carattere iniziale.
+1.  Aggiungere la frase "as $*aliasname"* all'istanza o alla dichiarazione di classe.
+2.  I nomi alias seguono le stesse regole dei nomi di istanza e di classe, ad eccezione del fatto che i nomi di alias devono iniziare con un simbolo di dollaro ($). I caratteri di sottolineatura possono essere visualizzati in un nome alias dopo il carattere iniziale.
 
 Nell'esempio di codice seguente viene descritto come utilizzare un alias in una definizione di classe.
 
@@ -39,7 +39,7 @@ instance of MyClass as $MyInstanceAlias
 };
 ```
 
-Gli esempi di codice seguenti descrivono come usare un alias come riferimento simbolico a un percorso dell'oggetto. Questi esempi dichiarano due classi per descrivere un disco: la classe del disco per indicare la lettera di unità e la classe DiskRef per indicare il percorso del disco. Per l'istanza della classe disco è definito un alias. Questo alias viene usato come valore per la proprietà PathToDisk nell'istanza di DiskRef.
+Negli esempi di codice seguenti viene descritto come utilizzare un alias come riferimento simbolico a un percorso di oggetto. Questi esempi dichiarano due classi per descrivere un disco: la classe Disk per indicare la lettera di unità e la classe DiskRef per indicare il percorso del disco. Viene definito un alias per l'istanza della classe Disk. Questo alias viene usato come valore per la proprietà PathToDisk nell'istanza di DiskRef.
 
 ``` syntax
 class Disk {

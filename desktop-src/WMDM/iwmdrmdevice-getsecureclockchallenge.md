@@ -1,11 +1,11 @@
 ---
 title: Metodo IWMDRMDevice GetSecureClockChallenge
-description: Il metodo GetSecureClockChallenge Recupera il risultato della verifica del clock protetto.
+description: Il metodo GetSecureClockChallenge recupera il risultato della verifica dell'orologio sicuro.
 ms.assetid: cbef160c-91a3-47d1-9d7a-e649ce2c77ff
 keywords:
-- Metodo GetSecureClockChallenge Windows Media Gestione dispositivi
-- Metodo GetSecureClockChallenge Windows Media Gestione dispositivi, interfaccia IWMDRMDevice
-- Interfaccia IWMDRMDevice Windows Media Gestione dispositivi, metodo GetSecureClockChallenge
+- Metodo GetSecureClockChallenge windows Media Device Manager
+- Metodo GetSecureClockChallenge windows Media Device Manager , interfaccia IWMDRMDevice
+- Interfaccia IWMDRMDevice windows Media Device Manager, metodo GetSecureClockChallenge
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7e57165f75a23d13d847e028deb69de383e2855
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eaed21ddffb9c2001c3b57d32d34ac9106ede7cecaff723cb95d8cee1c428fb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957251"
 ---
-# <a name="iwmdrmdevicegetsecureclockchallenge-method"></a>Metodo IWMDRMDevice:: GetSecureClockChallenge
+# <a name="iwmdrmdevicegetsecureclockchallenge-method"></a>Metodo IWMDRMDevice::GetSecureClockChallenge
 
-Il metodo **GetSecureClockChallenge** Recupera il risultato della verifica del clock protetto.
+Il **metodo GetSecureClockChallenge** recupera il risultato della verifica dell'orologio sicuro.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,29 +44,29 @@ HRESULT GetSecureClockChallenge(
 
 <dl> <dt>
 
-*ppbChallenge* \[ out\]
+*ppbChallenge* \[ Cambio\]
 </dt> <dd>
 
-Risultato della richiesta di verifica recuperato.
+Recupero del risultato della richiesta.
 
 </dd> <dt>
 
-*pcbChallenge* \[ out\]
+*pcbChallenge* \[ Cambio\]
 </dt> <dd>
 
-Dimensioni del risultato della richiesta, in byte.
+Dimensioni in byte del risultato della richiesta di richiesta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -78,8 +78,8 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Libreria<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Libreria<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 

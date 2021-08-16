@@ -13,9 +13,9 @@ ms.locfileid: "118926032"
 ---
 # <a name="rpc-security-essentials"></a>Informazioni di base sulla sicurezza RPC
 
-Per completare qualsiasi chiamata di procedura remota, tutte le applicazioni distribuite devono creare un'associazione tra il client e il server. Per altre informazioni sulle associazioni, vedere [Binding e handle.](binding-and-handles.md) Per completare una chiamata di procedura remota sicura, sono necessari passaggi aggiuntivi. In primo luogo, il server deve scegliere un provider di sicurezza (servizio di autenticazione nella terminologia DCE). Deve quindi decidere il meccanismo di autenticazione. Successivamente, il client ottiene un'associazione al server e richiede una chiamata di procedura remota protetta dal tempo di esecuzione RPC e specifica varie opzioni di sicurezza, ad esempio il provider di sicurezza, le opzioni QOS di sicurezza e così via.
+Per completare qualsiasi chiamata di procedura remota, tutte le applicazioni distribuite devono creare un'associazione tra il client e il server. Per altre informazioni sulle associazioni, vedere [Binding e Handle](binding-and-handles.md). Per completare una chiamata di procedura remota sicura, sono necessari passaggi aggiuntivi. In primo luogo, il server deve scegliere un provider di sicurezza (servizio di autenticazione nella terminologia DCE). Deve quindi decidere il meccanismo di autenticazione. Successivamente, il client ottiene un'associazione al server e richiede una chiamata di procedura remota sicura dal tempo di esecuzione RPC e specifica varie opzioni di sicurezza, ad esempio il provider di sicurezza, le opzioni QOS di sicurezza e così via.
 
-In questa sezione vengono illustrati i concetti fondamentali e le informazioni necessarie per utilizzare le funzioni RPC per creare un client e un server per un'applicazione distribuita autenticata. È organizzato negli argomenti seguenti:
+Questa sezione illustra i concetti e le informazioni essenziali necessari per usare le funzioni RPC per creare un client e un server per un'applicazione distribuita autenticata. È organizzato negli argomenti seguenti:
 
 -   [Nomi delle entità](principal-names.md)
 -   [Livelli di autenticazione](authentication-levels.md)

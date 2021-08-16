@@ -1,7 +1,7 @@
 ---
 description: Rappresenta le impostazioni specifiche della virtualizzazione per una macchina virtuale.
 ms.assetid: BE81405E-E773-41CE-9441-33D60B63550E
-title: Classe Msvm_VirtualSystemSettingData
+title: Msvm_VirtualSystemSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -73,18 +73,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2787abbacfe4220b135544eecd3aeb7e86596c81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb57c7b96a6e2cd1839f4d830074bb69d742aef688325a37d61b67589d026436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147894"
 ---
-# <a name="msvm_virtualsystemsettingdata-class"></a>\_Classe MSVM VirtualSystemSettingData
+# <a name="msvm_virtualsystemsettingdata-class"></a>Classe Msvm \_ VirtualSystemSettingData
 
 Rappresenta le impostazioni specifiche della virtualizzazione per una macchina virtuale.
 
-La sintassi seguente è semplificata Managed Object Format codice (MOF) e include tutte le proprietà ereditate.
+La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -157,59 +157,59 @@ class Msvm_VirtualSystemSettingData : CIM_VirtualSystemSettingData
 
 ## <a name="members"></a>Members
 
-La **classe \_ VirtualSystemSettingData di MSVM** dispone di questi tipi di membri:
+La **classe Msvm \_ VirtualSystemSettingData** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ VirtualSystemSettingData di MSVM** dispone di queste proprietà.
+La **classe Msvm \_ VirtualSystemSettingData** ha queste proprietà.
 
 <dl> <dt>
 
 **AdditionalRecoveryInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Eventuali informazioni aggiuntive fornite all'azione di ripristino. Il significato di questa proprietà è definito dall'azione in **AutomaticRecoveryAction**. Se **AutomaticRecoveryAction** è 0 ("None") o 1 ("Restart"), questo valore è **null**. Se **AutomaticRecoveryAction** è 2 ("Ripristina snapshot"), si tratta del percorso dell'oggetto per uno snapshot da applicare in caso di errore del processo di lavoro della macchina virtuale.
+Eventuali informazioni aggiuntive fornite all'azione di ripristino. Il significato di questa proprietà è definito dall'azione in **AutomaticRecoveryAction**. Se **AutomaticRecoveryAction** è 0 ("None") o 1 ("Restart"), questo valore è **Null.** Se **AutomaticRecoveryAction** è 2 ("Ripristina snapshot"), si tratta del percorso dell'oggetto di uno snapshot che deve essere applicato in caso di errore del processo di lavoro della macchina virtuale.
 
 </dd> <dt>
 
 **AllowFullSCSICommandSet**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-**True** se i comandi SCSI dal sistema operativo guest vengono passati a dischi pass-through. in caso contrario, **false**. Se **true**, i comandi SCSI emessi dal sistema operativo guest per i dischi pass-through non vengono filtrati. È consigliabile che i filtri SCSI rimangano abilitati per le distribuzioni di produzione.
+**True** se i comandi SCSI del sistema operativo guest vengono passati ai dischi pass-through. in caso contrario, **False**. Se **True,** i comandi SCSI generati dal sistema operativo guest per i dischi pass-through non vengono filtrati. È consigliabile che i filtri SCSI rimangano abilitati per le distribuzioni di produzione.
 
 </dd> <dt>
 
 **AllowReducedFcRedundancy**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Specifica se la migrazione in tempo reale di una macchina virtuale configurata con una scheda di Fibre Channel virtuale è consentita a un computer di destinazione che potrebbe non avere percorsi o ridotti ai dispositivi di Fibre Channel di destinazione. Questa proprietà deve essere cancellata dopo una migrazione in tempo reale.
+Specifica se la migrazione in tempo reale di una macchina virtuale configurata con una scheda Fibre Channel virtuale è consentita a un computer di destinazione che potrebbe non avere percorsi o percorsi ridotti per i dispositivi Fibre Channel destinazione. Questa proprietà deve essere cancellata dopo una migrazione in tempo reale.
 
 
 
 | Valore                                                                            | Significato                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>False</dt> </dl> | Non è possibile eseguire la migrazione in tempo reale della macchina virtuale a un computer di destinazione che potrebbe non avere percorsi o ridotti per i dispositivi Fibre Channel di destinazione.<br/>                                                                                                     |
-| <dl> <dt>True</dt> </dl>  | È possibile eseguire la migrazione in tempo reale della macchina virtuale a un computer di destinazione che potrebbe non avere o ridotti percorsi per i dispositivi Fibre Channel di destinazione. Il sistema operativo guest potrebbe perdere la connettività alla risorsa di archiviazione e potrebbe comportarsi in modo imprevedibile.<br/> |
+| <dl> <dt>False</dt> </dl> | Non è possibile eseguire la migrazione in tempo reale della macchina virtuale a un computer di destinazione che potrebbe non avere percorsi o percorsi ridotti per i dispositivi Fibre Channel destinazione.<br/>                                                                                                     |
+| <dl> <dt>True</dt> </dl>  | È possibile eseguire la migrazione in tempo reale della macchina virtuale a un computer di destinazione che potrebbe non avere percorsi o percorsi ridotti per i dispositivi Fibre Channel destinazione. Il sistema operativo guest potrebbe perdere la connettività all'archiviazione e comportarsi in modo imprevedibile.<br/> |
 
 
 
@@ -220,16 +220,16 @@ Specifica se la migrazione in tempo reale di una macchina virtuale configurata c
 **Architettura**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Architettura del sistema.
+Architettura di questo sistema.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1709.
+> Aggiunta in Windows 10 versione 1709.
 
  
 
@@ -254,13 +254,13 @@ Architettura del sistema.
 **AutomaticCriticalErrorAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Identifica l'azione da eseguire sulla macchina virtuale quando si verifica un errore critico, come la disconnessione dell'archiviazione.
+Identifica l'azione da eseguire nella macchina virtuale, quando si verifica un errore critico, ad esempio la disconnessione dell'archiviazione.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -276,7 +276,7 @@ Identifica l'azione da eseguire sulla macchina virtuale quando si verifica un er
 
 </dt> <dd>
 
-Non verranno intraprese azioni specifiche per le condizioni di errore critiche.
+Non verrà eseguita alcuna azione specifica per le condizioni di errore critiche.
 
 </dd> <dt>
 
@@ -287,7 +287,7 @@ Non verranno intraprese azioni specifiche per le condizioni di errore critiche.
 
 </dt> <dd>
 
-Fa in modo che la macchina virtuale venga sospesa e ripresa automaticamente quando la condizione di errore critico viene risolta.
+Fa sì che la macchina virtuale sia sospesa e ripresa automaticamente quando viene risolta la condizione di errore critico.
 
 </dd> </dl>
 
@@ -296,16 +296,16 @@ Fa in modo che la macchina virtuale venga sospesa e ripresa automaticamente quan
 **AutomaticCriticalErrorActionTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**sottotipo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Interval")
+Qualificatori: [**SubType**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("interval")
 </dt> </dl>
 
-Identifica la durata massima per cui verrà eseguito **AutomaticCriticalErrorAction** per risolvere l'errore critico. Si applica solo quando il valore della proprietà **AutomaticCriticalErrorAction** non è 0 (nessuno). Una volta scaduto il timeout, la macchina virtuale verrà spenta. Il valore verrà arrotondato per eccesso al minuto più vicino. Il valore 0 implica che la macchina virtuale deve essere spenta immediatamente quando rileva una condizione di errore critico.
+Identifica la durata massima per la quale **verrà eseguito AutomaticCriticalErrorAction** per risolvere l'errore critico. Questa opzione è applicabile solo quando il valore **della proprietà AutomaticCriticalErrorAction** è diverso da 0 (Nessuno). Alla scadenza del timeout, la macchina virtuale verrà spenta. Il valore verrà arrotondato per es. Il valore 0 implica che la macchina virtuale deve essere spenta immediatamente quando si verifica una condizione di errore critico.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -317,24 +317,24 @@ Identifica la durata massima per cui verrà eseguito **AutomaticCriticalErrorAct
 **AutomaticRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Azione da eseguire per la macchina virtuale quando il software eseguito dalla macchina virtuale ha esito negativo. Gli errori in questo caso indicano un errore rilevabile dalla piattaforma host, ad esempio una condizione di stato di attesa interrotti. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Azione da eseguire per la macchina virtuale in caso di errore del software eseguito dalla macchina virtuale. Gli errori in questo caso implicano un errore rilevabile dalla piattaforma host, ad esempio una condizione di stato di attesa non ininterrotta. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
-Può corrispondere a uno dei valori seguenti.
+Può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                               | Significato                        |
 |-------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>2</dt> </dl>        | Nessuna.<br/>               |
+| <dl> <dt>2</dt> </dl>        | Nessuno.<br/>               |
 | <dl> <dt>3</dt> </dl>        | Riavvia.<br/>            |
-| <dl> <dt>4</dt> </dl>        | Ripristina snapshot.<br/> |
-| <dl> <dt>5.. 32768</dt> </dl> | Riservato.<br/>           |
+| <dl> <dt>4</dt> </dl>        | Ripristinare lo snapshot.<br/> |
+| <dl> <dt>5..32768</dt> </dl> | Riservato.<br/>           |
 
 
 
@@ -345,15 +345,15 @@ Può corrispondere a uno dei valori seguenti.
 **AutomaticShutdownAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Azione da eseguire per la macchina virtuale quando l'host viene arrestato. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Azione da eseguire per la macchina virtuale quando l'host viene arrestato. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
-Può corrispondere a uno dei valori seguenti.
+Può essere uno dei valori seguenti.
 
 
 
@@ -362,7 +362,7 @@ Può corrispondere a uno dei valori seguenti.
 | <dl> <dt>2</dt> </dl>        | Spegni.<br/>   |
 | <dl> <dt>3</dt> </dl>        | Salvare lo stato.<br/> |
 | <dl> <dt>4</dt> </dl>        | Arresto.<br/>   |
-| <dl> <dt>5.. 32768</dt> </dl> | Riservato.<br/>   |
+| <dl> <dt>5..32768</dt> </dl> | Riservato.<br/>   |
 
 
 
@@ -373,16 +373,16 @@ Può corrispondere a uno dei valori seguenti.
 **AutomaticSnapshotsEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se la macchina virtuale deve avere snapshot automatici abilitati.
+Indica se in questa macchina virtuale devono essere abilitati gli snapshot automatici.
 
 > [!Note]  
-> Aggiunta in Windows 10, versione 1709.
+> Aggiunta in Windows 10 versione 1709.
 
  
 
@@ -391,24 +391,24 @@ Indica se la macchina virtuale deve avere snapshot automatici abilitati.
 **AutomaticStartupAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Azione da eseguire per la macchina virtuale all'avvio dell'host. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Azione da eseguire per la macchina virtuale all'avvio dell'host. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
-Può corrispondere a uno dei valori seguenti.
+Può essere uno dei valori seguenti.
 
 
 
 | Valore                                                                               | Significato                                  |
 |-------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>2</dt> </dl>        | Nessuna.<br/>                         |
+| <dl> <dt>2</dt> </dl>        | Nessuno.<br/>                         |
 | <dl> <dt>3</dt> </dl>        | Riavviare se precedentemente attivo.<br/> |
-| <dl> <dt>4</dt> </dl>        | Avviare sempre.<br/>                 |
-| <dl> <dt>5.. 32768</dt> </dl> | Riservato.<br/>                     |
+| <dl> <dt>4</dt> </dl>        | Iniziare sempre.<br/>                 |
+| <dl> <dt>5..32768</dt> </dl> | Riservato.<br/>                     |
 
 
 
@@ -419,49 +419,49 @@ Può corrispondere a uno dei valori seguenti.
 **AutomaticStartupActionDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Tempo di ritardo prima che la macchina virtuale venga avviata automaticamente. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Tempo di ritardo prima dell'avvio automatico della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **AutomaticStartupActionSequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Numero che indica la sequenza relativa di attivazione della macchina virtuale all'avvio del sistema host. Un numero inferiore indica l'attivazione precedente. Se una o più configurazioni mostrano lo stesso valore, la sequenza è dipendente dall'implementazione. Il valore 0 indica che la sequenza è dipendente dall'implementazione. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Numero che indica la sequenza relativa di attivazione della macchina virtuale all'avvio del sistema host. Un numero inferiore indica l'attivazione precedente. Se una o più configurazioni mostrano lo stesso valore, la sequenza dipende dall'implementazione. Il valore 0 indica che la sequenza dipende dall'implementazione. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **BaseBoardSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il numero di serie della lavagna di base per la macchina virtuale.
+Numero di serie della scheda di base per la macchina virtuale.
 
 </dd> <dt>
 
 **BIOSGUID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Identificatore univoco globale per il BIOS della macchina virtuale.
@@ -471,10 +471,10 @@ Identificatore univoco globale per il BIOS della macchina virtuale.
 **BIOSNumLock**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 **True** se il tasto BLOC NUM è impostato su on dal BIOS; **False** se il tasto BLOC NUM è impostato su off dal BIOS.
@@ -484,29 +484,29 @@ Tipo di accesso: lettura/scrittura
 **BIOSSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il numero di serie del BIOS per la macchina virtuale.
+Numero di serie del BIOS per la macchina virtuale.
 
 </dd> <dt>
 
 **BootOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice **UInt16**
+Tipo di dati: **matrice uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**arrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indicizzato"), [**massimo**](/windows/desktop/WmiSdk/standard-qualifiers) (4)
+Qualificatori: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indicizzato"), [**MAX**](/windows/desktop/WmiSdk/standard-qualifiers) (4)
 </dt> </dl>
 
-Ordine di avvio impostato all'interno del BIOS della macchina virtuale. Questa proprietà è una matrice di valori, **BootOrder** \[ da 0 a \] **BootOrder** \[ 3 \] , incluso, in cui ogni valore indica un dispositivo da cui eseguire l'avvio. Ognuno dei 4 valori nella matrice deve essere impostato e non deve corrispondere a un altro valore nella matrice. La macchina virtuale tenterà innanzitutto di eseguire l'avvio dal dispositivo indicato dal primo valore all'interno della matrice. Se il dispositivo non contiene un settore di avvio, la macchina virtuale tenterà di eseguire l'avvio dal dispositivo successivo specificato dalla proprietà **BootOrder** e così via. Se nessun dispositivo specificato all'interno di **BootOrder** contiene un settore di avvio, la macchina virtuale non verrà avviata. Il valore predefinito per una macchina virtuale è \[ 0, 1, 2, 3 \] .
+Ordine di avvio impostato nel BIOS della macchina virtuale. Questa proprietà è una matrice di valori, **da BootOrder** \[ 0 a \] **BootOrder** 3, inclusi, in cui ogni valore indica un dispositivo da cui \[ eseguire \] l'avvio. Ognuno dei 4 valori nella matrice deve essere impostato e non deve corrispondere a un altro valore nella matrice. La macchina virtuale tenterà prima di tutto di eseguire l'avvio dal dispositivo indicato dal primo valore all'interno della matrice. Se il dispositivo non contiene un settore di avvio, la macchina virtuale tenterà di eseguire l'avvio dal dispositivo successivo specificato dalla **proprietà BootOrder** e così via. Se nessun dispositivo specificato all'interno **di BootOrder** contiene un settore di avvio, l'avvio della macchina virtuale non riuscirà. Il valore predefinito per una macchina virtuale è \[ 0, 1, 2, \] 3.
 
 <dt>
 
@@ -517,7 +517,7 @@ Ordine di avvio impostato all'interno del BIOS della macchina virtuale. Questa p
 
 </dt> <dd>
 
-La macchina virtuale tenterà di eseguire l'avvio dal disco floppy all'interno dell'unità floppy.
+La macchina virtuale tenterà di avviare dal disco floppy all'interno dell'unità floppy.
 
 </dd> <dt>
 
@@ -550,20 +550,20 @@ La macchina virtuale tenterà di eseguire l'avvio dalla prima unità disco rigid
 
 </dt> <dd>
 
-La macchina virtuale tenterà l'avvio PXE dalla rete.
+La macchina virtuale tenterà di avviare PXE dalla rete.
 
 </dd> <dt>
 
 <span id="SCSI_Hard_Drive"></span><span id="scsi_hard_drive"></span><span id="SCSI_HARD_DRIVE"></span>
 
-<span id="SCSI_Hard_Drive"></span><span id="scsi_hard_drive"></span><span id="SCSI_HARD_DRIVE"></span>**Unità disco rigido SCSI** (4)
+<span id="SCSI_Hard_Drive"></span><span id="scsi_hard_drive"></span><span id="SCSI_HARD_DRIVE"></span>**Disco rigido SCSI** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reserved"></span><span id="reserved"></span><span id="RESERVED"></span>
 
-<span id="Reserved"></span><span id="reserved"></span><span id="RESERVED"></span>**Riservato** (5.. 65535)
+<span id="Reserved"></span><span id="reserved"></span><span id="RESERVED"></span>**Riservato** (5..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -573,106 +573,106 @@ La macchina virtuale tenterà l'avvio PXE dalla rete.
 **BootSourceOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Ordine dell'origine di avvio per la macchina virtuale.
+Ordine di origine di avvio per la macchina virtuale.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descrizione dell'oggetto. Questa proprietà viene ereditata da [**CIM \_ ManagedElement.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ChassisAssetTag**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Tag asset dello chassis per la macchina virtuale.
+Tag di asset dello chassis per la macchina virtuale.
 
 </dd> <dt>
 
 **ChassisSerialNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Il numero di serie dello chassis per la macchina virtuale.
+Numero di serie dello chassis per la macchina virtuale.
 
 </dd> <dt>
 
 **ConfigurationDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di una directory in cui vengono archiviate le informazioni sulla configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso di una directory in cui sono archiviate le informazioni sulla configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **ConfigurationFile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Il percorso relativo e il nome file di un file in cui vengono archiviate le informazioni sulla configurazione della macchina virtuale. Questo percorso è relativo alla proprietà **ConfigurationDataRoot** . Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso relativo e nome file di un file in cui sono archiviate le informazioni sulla configurazione della macchina virtuale. Questo percorso è relativo alla **proprietà ConfigurationDataRoot.** Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **ConfigurationID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Identificatore univoco della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Identificatore univoco della configurazione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **ConsoleMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Identifica la modalità della console per la macchina virtuale.
+Identifica la modalità console per la macchina virtuale.
 
 > [!Note]  
 > Questa proprietà è stata aggiunta in Windows 10 e Windows Server 2016.
@@ -683,7 +683,7 @@ Identifica la modalità della console per la macchina virtuale.
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Valore predefinito** (0)
+**Impostazione** predefinita (0)
 
 
 </dt> <dd></dd> <dt>
@@ -714,52 +714,52 @@ Identifica la modalità della console per la macchina virtuale.
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **DateTime**
+Tipo di dati: **datetime**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Data e ora in cui sono state create le impostazioni per la macchina virtuale. Se questo oggetto rappresenta le impostazioni correnti per la macchina virtuale, questo valore corrisponde all'ora in cui è stato creato il sistema. Se questo oggetto rappresenta le impostazioni dello snapshot per la macchina virtuale, questo valore corrisponde all'ora in cui è stato effettuato lo snapshot. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Data e ora di creazione delle impostazioni per la macchina virtuale. Se questo oggetto rappresenta le impostazioni correnti per la macchina virtuale, questo valore corrisponde all'ora in cui è stato creato il sistema. Se questo oggetto rappresenta le impostazioni dello snapshot per la macchina virtuale, questo valore corrisponde all'ora in cui è stato creato lo snapshot. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **DebugChannelId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Identificatore del canale utilizzato per eseguire il debug della macchina virtuale utilizzando il debugger unificato.
+Identificatore di canale usato per eseguire il debug della macchina virtuale usando il debugger unificato.
 
 </dd> <dt>
 
 **DebugPort**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Porta TCP/IP utilizzata per eseguire il debug della macchina virtuale utilizzando il debug sintetico.
+Porta TCP/IP usata per eseguire il debug della macchina virtuale usando il debug sintetico.
 
 </dd> <dt>
 
 **DebugPortEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Specifica se la macchina virtuale utilizza il debug sintetico. Può corrispondere a uno dei valori seguenti.
+Specifica se la macchina virtuale usa il debug sintetico. Può essere uno dei valori seguenti.
 
 <dt>
 
@@ -784,7 +784,7 @@ Specifica se la macchina virtuale utilizza il debug sintetico. Può corrisponder
 
 </dt> <dd>
 
-Assegnazione automatica
+Assegnato automaticamente
 
 </dd> </dl>
 
@@ -793,13 +793,13 @@ Assegnazione automatica
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ managementelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)ed è sempre impostata su uno dei valori seguenti.
+Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e viene sempre impostata su uno dei valori seguenti.
 
 
 
@@ -817,29 +817,29 @@ Descrizione dell'oggetto . Questa proprietà viene ereditata da [**CIM \_ manage
 **ElementName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))ed è sempre impostata sul nome visualizzato del computer. Il nome non può superare i 100 caratteri.
+Nome visualizzato per l'oggetto. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))ed è sempre impostata sul nome visualizzato per il computer. Questo nome non può superare i 100 caratteri.
 
 </dd> <dt>
 
 **EnhancedSessionTransportType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Indica il tipo di trasporto da utilizzare per la connessione a una sessione avanzata.
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1803.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1803.
 
  
 
@@ -854,7 +854,7 @@ Indica il tipo di trasporto da utilizzare per la connessione a una sessione avan
 
 <span id="Hyper-V_Socket"></span><span id="hyper-v_socket"></span><span id="HYPER-V_SOCKET"></span>
 
-**Socket di Hyper-V** (1)
+**Socket Hyper-V** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -864,13 +864,13 @@ Indica il tipo di trasporto da utilizzare per la connessione a una sessione avan
 **GuestControlledCacheTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se il Guest può controllare i tipi di cache.
+Indica se il guest può controllare i tipi di cache.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -882,13 +882,13 @@ Indica se il Guest può controllare i tipi di cache.
 **GuestStateDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-FilePath di una directory in cui vengono archiviate le informazioni sullo stato di runtime Guest.
+Percorso file di una directory in cui sono archiviate le informazioni sullo stato del runtime guest.
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -900,13 +900,13 @@ FilePath di una directory in cui vengono archiviate le informazioni sullo stato 
 **GuestStateFile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-FilePath di un file in cui vengono archiviate le informazioni sullo stato di runtime Guest. Un percorso relativo viene accodato al valore della proprietà **GuestStateDataRoot** .
+Percorso file di un file in cui vengono archiviate le informazioni sullo stato del runtime guest. Un percorso relativo viene aggiunto al valore della **proprietà GuestStateDataRoot.**
 
 > [!Note]  
 > Aggiunta in Windows 10, versione 1709.
@@ -918,16 +918,16 @@ FilePath di un file in cui vengono archiviate le informazioni sullo stato di run
 **HighMmioGapSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Dimensioni massime (sopra 4 GB) Memory-Mapped Gap i/o in MB
+Le dimensioni del valore High (superiore a 4 GB) Memory-Mapped I/O in MB
 
 > [!Note]  
-> Questa proprietà è stata aggiunta in Windows 10, versione 1703.
+> Questa proprietà è stata aggiunta in Windows 10 versione 1703.
 
  
 
@@ -936,20 +936,20 @@ Dimensioni massime (sopra 4 GB) Memory-Mapped Gap i/o in MB
 **IncrementalBackupEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se il VSS writer Hyper-V supporta l'esecuzione di backup incrementali della macchina virtuale.
+Indica se la macchina virtuale Hyper-V VSS writer l'esecuzione di backup incrementali di questa macchina virtuale.
 
 </dd> <dt>
 
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -958,14 +958,14 @@ Tipo di accesso: sola lettura
 Qualificatori: **chiave**
 </dt> </dl>
 
-Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica in modo univoco un'istanza di questa classe. Questa proprietà viene ereditata da [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **IsAutomaticSnapshot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -983,26 +983,26 @@ Indica se si tratta di uno snapshot creato automaticamente per l'utente.
 **IsSaved**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-**True** se la configurazione contiene un riferimento a un file di stato salvato. in caso contrario, **false**. Questa operazione non indica la presenza di un file di questo tipo, ma solo che la configurazione ne specifichi uno.
+**True** se la configurazione ha un riferimento a un file di stato salvato. in caso contrario, **False**. Questo non indica la presenza di un file di questo tipo, ma solo che la configurazione ne specifica uno.
 
 </dd> <dt>
 
 **LockOnDisconnect**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Blocca la console quando si disconnette da vmconnect.
+Bloccare la console quando ci si disconnette da vmconnect.
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -1014,28 +1014,28 @@ Blocca la console quando si disconnette da vmconnect.
 **LogDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di una directory in cui vengono archiviate le informazioni di log per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso di una directory in cui sono archiviate le informazioni di log per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **LowMmioGapSize**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt64**
+Tipo di dati: **uint64**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Configura le dimensioni in megabyte del primo gap MMIO per una macchina virtuale (VM).
+Configura le dimensioni, in megabyte, del primo gap MMIO per una macchina virtuale (VM).
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 Intervallo: 128 3584
 
@@ -1044,15 +1044,15 @@ Intervallo: 128 3584
 **NetworkBootPreferredProtocol**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Determina se il protocollo preferito per l'avvio PXE è IPv4 o IPv6.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 <dt>
 
@@ -1075,42 +1075,42 @@ Determina se il protocollo preferito per l'avvio PXE è IPv4 o IPv6.
 **Note**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: matrice di **stringhe**
+Tipo di dati: **matrice di** stringhe
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Note fornite dall'utente correlate alla macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Note fornite dall'utente correlate alla macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **Parent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Se questa istanza non rappresenta un sistema basato su uno snapshot di una macchina virtuale, questa proprietà è **null**. In caso contrario, la proprietà contenga il percorso dell'oggetto **MSVM \_ VirtualSystemSettingData** su cui è basata l'istanza. Quando si compila una gerarchia della struttura ad albero dello snapshot per la macchina virtuale, questa proprietà fa riferimento all'oggetto da cui viene derivata l'istanza corrente (l'istanza corrente è il nodo figlio e l'oggetto a cui si fa riferimento in questa proprietà è il nodo padre).
+Se questa istanza non rappresenta un sistema basato su uno snapshot di una macchina virtuale, questa proprietà è **Null.** In caso contrario, la proprietà contiene il percorso dell'oggetto **Msvm \_ VirtualSystemSettingData** su cui si basa questa istanza. Quando si compila una gerarchia dell'albero degli snapshot per la macchina virtuale, questa proprietà fa riferimento all'oggetto da cui deriva l'istanza corrente (l'istanza corrente è il nodo figlio e l'oggetto a cui si fa riferimento in questa proprietà è il nodo padre).
 
 </dd> <dt>
 
 **ParentPackage**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Se il sistema è un contenitore, il percorso dell'ContainerPackage MSVM \_ da cui si basa questo sistema.
+Se questo sistema è un contenitore, il percorso di Msvm \_ ContainerPackage da cui si basa questo sistema.
 
 > [!Note]  
-> Aggiunta in Windows 10; rimosso in Windows 10, versione 1703.
+> Aggiunta in Windows 10; rimosso in Windows 10 versione 1703.
 
  
 
@@ -1119,63 +1119,63 @@ Se il sistema è un contenitore, il percorso dell'ContainerPackage MSVM \_ da cu
 **PauseAfterBootFailure**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se il BIOS viene sospeso dopo ogni errore della voce di avvio in attesa che l'utente prema un tasto. **True** se il BIOS viene sospeso; in caso contrario, **false**.
+Indica se il BIOS viene sospeso dopo ogni errore di immissione di avvio in attesa che l'utente premo un tasto. **True** se il BIOS viene sospeso. in caso contrario, **False**.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
 **RecoveryFile**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso completo di un file in cui sono archiviate le informazioni relative al ripristino per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso completo di un file in cui sono archiviate le informazioni correlate al ripristino per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
-**Della securebootenabled**
+**SecureBootEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Indica se l'avvio protetto è abilitato per la macchina virtuale (VM). **True** se abilitata; in caso contrario, **false**.
+Indica se l'avvio protetto è abilitato per la macchina virtuale. **True se** abilitata; in caso contrario, **False**.
 
 > [!Note]  
-> L'avvio protetto può essere abilitato solo per le macchine virtuali di seconda generazione.
+> L'avvio sicuro può essere abilitato solo per le macchine virtuali di seconda generazione.
 
  
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
 **SecureBootTemplateId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
-Identificatore univoco globale del modello di valori iniziali delle variabili correlate all'avvio protetto UEFI.
+Identificatore univoco globale del modello di valori iniziali delle variabili correlate all'avvio sicuro UEFI.
 
-Si tratta di una proprietà di sola lettura, ma è possibile modificarla utilizzando il metodo [**ModifyVirtualSystem**](https://www.bing.com/search?q=**ModifyVirtualSystem**) della [**classe \_ VirtualSystemManagementService di MSVM**](msvm-virtualsystemmanagementservice.md) .
+Si tratta di una proprietà di sola lettura, ma può essere modificata usando il [**metodo ModifyVirtualSystem**](https://www.bing.com/search?q=**ModifyVirtualSystem**) della [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 > [!Note]  
 > Aggiunta in Windows 10 e Windows Server 2016.
@@ -1187,49 +1187,49 @@ Si tratta di una proprietà di sola lettura, ma è possibile modificarla utilizz
 **SnapshotDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di una directory in cui vengono archiviate le informazioni sugli snapshot della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso di una directory in cui vengono archiviate le informazioni sugli snapshot della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **SuspendDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di una directory in cui vengono archiviate informazioni sulle informazioni relative alla sospensione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso di una directory in cui vengono archiviate le informazioni relative alla sospensione della macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **SwapFileDataRoot**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Percorso di una directory in cui vengono archiviati i file di scambio per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Percorso di una directory in cui vengono archiviati i file di scambio per la macchina virtuale. Questa proprietà viene ereditata da [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **UserSnapshotType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Indica il tipo di snapshot definito dall'utente.
@@ -1248,7 +1248,7 @@ Indica il tipo di snapshot definito dall'utente.
 
 </dt> <dd>
 
-Disabilitare la creazione di uno snapshot.
+Disabilitare la creazione di qualsiasi snapshot.
 
 </dd> <dt>
 
@@ -1287,76 +1287,76 @@ Snapshot che contiene informazioni sulla memoria e sul dispositivo a scopo di te
 
 </dd> <dt>
 
-**Versione**
+**Version**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Versione della macchina virtuale in formato "Major. minor", ad esempio "2,0".
+Versione della macchina virtuale nel formato "major.minor", ad esempio "2.0".
 
 </dd> <dt>
 
 **VirtualNumaEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**MSVM \_ ProcessorSettingData**](msvm-processorsettingdata.md).**MaxProcessorsPerNumaNode**","[**MSVM \_ MemorySettingData**](msvm-memorysettingdata.md).**MaxMemoryBlocksPerNumaNode**")
+Qualificatori: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Msvm \_ ProcessorSettingData**](msvm-processorsettingdata.md).**MaxProcessorsPerNumaNode**", "[**Msvm \_ MemorySettingData**](msvm-memorysettingdata.md).**MaxMemoryBlocksPerNumaNode**")
 </dt> </dl>
 
-**True** se i nodi NUMA (non-Uniform Memory Access) virtuali sono proiettati nella macchina virtuale; **False** se la macchina virtuale avrà un solo nodo. Se **true**, il numero di nodi NUMA virtuali proiettati nella macchina virtuale è determinato dai valori delle proprietà [**MSVM ProcessorSettingData. \_ MaxProcessorsPerNumaNode**](msvm-processorsettingdata.md) e [**MSVM \_ MemorySettingData. MaxMemoryBlocksPerNumaNode**](msvm-memorysettingdata.md) .
+**True** se i nodi NUMA (Virtual Non-Uniform Memory Access) vengono proiettati nella macchina virtuale; **False** se la macchina virtuale avrà un singolo nodo. Se **True,** il numero di nodi NUMA virtuali proiettati nella macchina virtuale è determinato dai valori delle proprietà [**Msvm \_ ProcessorSettingData.MaxProcessorsPerNumaNode**](msvm-processorsettingdata.md) e [**Msvm \_ MemorySettingData.MaxMemoryBlocksPerNumaNode.**](msvm-memorysettingdata.md)
 
 </dd> <dt>
 
 **VirtualSystemIdentifier**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VirtualSystemSettingData. VirtualSystemIdentifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome**")
+Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \_ VirtualSystemSettingData.VirtualSystemIdentifier"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome ")**
 </dt> </dl>
 
-Nome dell'oggetto [**\_ ComputerSystem CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) a cui appartengono i dati dell'impostazione. Questa proprietà è una sostituzione da [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Nome [**dell'oggetto CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem) a cui appartengono i dati dell'impostazione. Questa proprietà è un override di [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **VirtualSystemSubType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-I valori validi per questa proprietà sono Microsoft: Hyper-V: sottotipo: 1 e Microsoft: Hyper-V: sottotipo: 2. Una macchina virtuale di prima generazione è sottotipo 1. Una macchina virtuale di seconda generazione è sottotipo 2.
+I valori validi per questa proprietà sono Microsoft:Hyper-V:SubType:1 e Microsoft:Hyper-V:SubType:2. Una macchina virtuale di prima generazione è il sottotipo 1. Una macchina virtuale di seconda generazione è il sottotipo 2.
 
-**Windows 8.1:** Questo valore non è supportato fino a Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Questo valore non è supportato fino a quando Windows 8.1 e Windows Server 2012 R2.
 
 <dt>
 
 <span id="Microsoft_Hyper-V_SubType_1"></span><span id="microsoft_hyper-v_subtype_1"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_1"></span>
 
-**Microsoft: Hyper-v: sottotipo: 1** ("Microsoft: Hyper-v: sottotipo: 1")
+**Microsoft:Hyper-V:SubType:1** ("Microsoft:Hyper-V:SubType:1")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Microsoft_Hyper-V_SubType_2"></span><span id="microsoft_hyper-v_subtype_2"></span><span id="MICROSOFT_HYPER-V_SUBTYPE_2"></span>
 
-**Microsoft: Hyper-v: sottotipo: 2** ("Microsoft: Hyper-v: sottotipo: 2")
+**Microsoft:Hyper-V:SubType:2** ("Microsoft:Hyper-V:SubType:2")
 
 
 </dt> <dd></dd> </dl>
@@ -1366,27 +1366,27 @@ I valori validi per questa proprietà sono Microsoft: Hyper-V: sottotipo: 1 e Mi
 **VirtualSystemType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica il tipo di macchina virtuale rappresentata dai dati di impostazione. Questa proprietà viene ereditata dalla classe [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) . Si tratta di uno dei valori seguenti.
+Specifica il tipo di macchina virtuale rappresentato da dati di impostazione. Questa proprietà viene ereditata dalla [**classe CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85)) Questo sarà uno dei valori seguenti.
 
 
 
 | Valore                                                                                                                                 | Significato                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>"Microsoft: Hyper-V: System: realizzato"</dt> </dl>                        | Una macchina virtuale realizzata.<br/>               |
-| <dl> <dt>"Microsoft: Hyper-V: System: planned"</dt> </dl>                         | Una macchina virtuale pianificata.<br/>                |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: realizzato"</dt> </dl>                      | Snapshot di una macchina virtuale realizzata.<br/> |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: Recovery"</dt> </dl>                      | Snapshot di una macchina virtuale di ripristino.<br/> |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: pianificato"</dt> </dl>                       | Snapshot di una macchina virtuale pianificata.<br/>  |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: Missing"</dt> </dl>                       | Uno snapshot mancante.<br/>                       |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: replica: standard"</dt> </dl>              | Snapshot del punto di replica basato sul tempo.<br/>  |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: replica: ApplicationConsistent"</dt> </dl> | Snapshot del punto di replica VSS.<br/>         |
-| <dl> <dt>"Microsoft: Hyper-V: snapshot: replica: PlannedFailover"</dt> </dl>       | Snapshot di replica pianificato.<br/>           |
+| <dl> <dt>"Microsoft:Hyper-V:System:Realized"</dt> </dl>                        | Una macchina virtuale realizzata.<br/>               |
+| <dl> <dt>"Microsoft:Hyper-V:System:Planned"</dt> </dl>                         | Una macchina virtuale pianificata.<br/>                |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Realized"</dt> </dl>                      | Snapshot di una macchina virtuale realizzata.<br/> |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Recovery"</dt> </dl>                      | Snapshot di una macchina virtuale di ripristino.<br/> |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Planned"</dt> </dl>                       | Snapshot di una macchina virtuale pianificata.<br/>  |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Missing"</dt> </dl>                       | Snapshot mancante.<br/>                       |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Replica:Standard"</dt> </dl>              | Snapshot del punto di replica basato sul tempo.<br/>  |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Replica:ApplicationConsistent"</dt> </dl> | Snapshot del punto di replica vss.<br/>         |
+| <dl> <dt>"Microsoft:Hyper-V:Snapshot:Replica:PlannedFailover"</dt> </dl>       | Snapshot di replica pianificato.<br/>           |
 
 
 
@@ -1396,7 +1396,7 @@ Specifica il tipo di macchina virtuale rappresentata dai dati di impostazione. Q
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ VirtualSystemSettingData di MSVM** potrebbe essere limitato dal filtraggio del controllo dell'account utente. Per ulteriori informazioni, vedere [controllo dell'account utente e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+L'accesso alla **classe Msvm \_ VirtualSystemSettingData** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1404,10 +1404,10 @@ L'accesso alla **classe \_ VirtualSystemSettingData di MSVM** potrebbe essere li
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                              |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                    |
-| Spazio dei nomi<br/>                | \\Virtualizzazione radice \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1416,13 +1416,13 @@ L'accesso alla **classe \_ VirtualSystemSettingData di MSVM** potrebbe essere li
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSETTINGDATA CIM**](cim-virtualsystemsettingdata.md)
+[**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md)
 </dt> <dt>
 
-[**\_VIRTUALSYSTEMSETTINGDATA CIM**](/previous-versions//cc136954(v=vs.85))
+[**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))
 </dt> <dt>
 
-[Classi di sistema virtuali](virtual-system-classes.md)
+[Classi di sistema virtuale](virtual-system-classes.md)
 </dt> </dl>
 
  

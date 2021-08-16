@@ -1,7 +1,7 @@
 ---
-description: Il metodo check Controlla se l'evento è impostato, senza bloccarsi.
+description: Il metodo Check controlla se l'evento è impostato, senza bloccarsi.
 ms.assetid: b8e55798-fd8e-4442-bc35-08887d8a3129
-title: Metodo CAMEvent. check (Wxutil. h)
+title: Metodo CAMEvent.Check (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a112d1b9484acb4d7e9cc2992b8dee629f40e23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a961d7df45ddac7ade5e39f91c1aed56609ce2d2eeb8e7423799c9a4903884e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955540"
 ---
-# <a name="cameventcheck-method"></a>Metodo CAMEvent. check
+# <a name="cameventcheck-method"></a>Metodo CAMEvent.Check
 
-Il `Check` metodo controlla se l'evento è impostato, senza bloccarsi.
+Il `Check` metodo verifica se l'evento è impostato, senza bloccarsi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="remarks"></a>Commenti
 
-Restituisce **true** se l'evento è impostato o **false** in caso contrario. Questo metodo chiama il metodo [**CAMEvent:: wait**](camevent-wait.md) con un timeout di zero. Se l'oggetto è un evento di reimpostazione automatica, questo metodo reimposta l'evento.
+Restituisce **TRUE se** l'evento è impostato oppure FALSE in caso **contrario.** Questo metodo chiama il [**metodo CAMEvent::Wait**](camevent-wait.md) con un timeout pari a zero. Se l'oggetto è un evento di reimpostazione automatica, questo metodo reimposta l'evento.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se l'evento è impostato o **false** in caso contrario. Que
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxutil. h (include Streams. h)</dt> </dl>                                                                                    |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxutil.h (includere Flussi.h)</dt> </dl>                                                                                    |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

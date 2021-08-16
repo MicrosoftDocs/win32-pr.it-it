@@ -32,7 +32,7 @@ Questo attributo viene usato per verificare la coerenza tra la directory e un al
 | CN                | MS-DS-Consistency-Child-Count        |
 | Ldap-Display-Name | mS-DS-ConsistencyChildCount          |
 | Dimensione              | \-                                   |
-| Privilegio di aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1361              |
 | System-Id-Guid    | 178b7bc2-b63a-11d2-90e1-00c04fd91ab1 |
@@ -59,7 +59,7 @@ Questo attributo viene usato per verificare la coerenza tra la directory e un al
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Questo attributo viene usato per verificare la coerenza tra la directory e un al
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Questo attributo viene usato per verificare la coerenza tra la directory e un al
 | ID collegamento                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| Is-Single-Valued       | Vero                            |
+| A valore singolo       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

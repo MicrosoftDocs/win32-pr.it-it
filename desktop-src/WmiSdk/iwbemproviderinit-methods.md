@@ -5,20 +5,20 @@ ms.tgt_platform: multiple
 title: Metodi IWbemProviderInit
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61228c13bf2391ee7ad194edc60aaa37a1cfc998
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a711f8a17f3cdf86fb4129f42fa398a3efca1ae689ab22e983c6b9ac2b43491
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131313"
 ---
 # <a name="iwbemproviderinit-methods"></a>Metodi IWbemProviderInit
 
-L'interfaccia [**IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) espone i metodi seguenti.
+[**L'interfaccia IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Initialize (metodo)**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize)
+-   [**Metodo Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize)
 
  
 

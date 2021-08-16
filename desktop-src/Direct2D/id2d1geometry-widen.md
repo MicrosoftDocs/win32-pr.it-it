@@ -1,9 +1,9 @@
 ---
-title: Metodi di ampliamento di ID2D1Geometry
-description: Amplia la geometria in base al tratto specificato e scrive il risultato in un ID2D1SimplifiedGeometrySink.
+title: Metodi Widen ID2D1Geometry
+description: Amplia la geometria in base al tratto specificato e scrive il risultato in id2D1SimplifiedGeometrySink.
 ms.assetid: c951ab85-7980-41e3-95c4-291d2fb046c8
 keywords:
-- Metodi di ampliamento Direct2D
+- Metodi widen Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 73a1ce3f90192f49a719a92d80f448694ce43235
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebdae7ba4fd9eca96e422ae62274b4b9934040d4c4249bc9e1c78b81b62589dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342811"
 ---
-# <a name="id2d1geometrywiden-methods"></a>Metodi ID2D1Geometry:: Widen
+# <a name="id2d1geometrywiden-methods"></a>Metodi ID2D1Geometry::Widen
 
-Amplia la geometria in base al tratto specificato e scrive il risultato in un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink).
+Amplia la geometria in base al tratto specificato e scrive il risultato in un [**id2D1SimplifiedGeometrySink.**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink)
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -30,16 +30,16 @@ Amplia la geometria in base al tratto specificato e scrive il risultato in un [*
 
 | Metodo                                                                                                                                                                                                          | Descrizione                                                                                                                                                                                                                                              |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Wider (FLOAT, ID2D1StrokeStyle \* , d2d1 \_ Matrix \_ 3x2 \_ F \* , ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink))             | Amplia la geometria in base al tratto specificato e scrive il risultato in un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo che è stato trasformato dalla matrice specificata e appiattito usando la tolleranza predefinita.<br/>   |
-| [**Wider (FLOAT, ID2D1StrokeStyle \* , d2d1 \_ Matrix \_ 3x2 \_ F&, ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink))              | Amplia la geometria in base al tratto specificato e scrive il risultato in un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo che è stato trasformato dalla matrice specificata e appiattito usando la tolleranza predefinita.<br/>   |
-| [**Wider (FLOAT, ID2D1StrokeStyle \* , d2d1 \_ Matrix \_ 3x2 \_ F \* , float, ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)) | Amplia la geometria in base al tratto specificato e scrive il risultato in un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo che è stato trasformato dalla matrice specificata e appiattito con la tolleranza specificata.<br/> |
-| [**Wider (FLOAT, ID2D1StrokeStyle \* , d2d1 \_ Matrix \_ 3x2 \_ F&, float, ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink))  | Amplia la geometria in base al tratto specificato e scrive il risultato in un [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo che è stato trasformato dalla matrice specificata e appiattito con la tolleranza specificata.<br/> |
+| [**Widen(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ \* F,ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink))             | Amplia la geometria in base al tratto specificato e scrive il risultato in [**id2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo essere stato trasformato dalla matrice specificata e appiattito usando la tolleranza predefinita.<br/>   |
+| [**Widen(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink))              | Amplia la geometria in base al tratto specificato e scrive il risultato in [**id2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo essere stato trasformato dalla matrice specificata e appiattito usando la tolleranza predefinita.<br/>   |
+| [**Widen(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ \* F,FLOAT,ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)) | Amplia la geometria in base al tratto specificato e scrive il risultato in [**id2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo essere stato trasformato dalla matrice specificata e appiattito usando la tolleranza specificata.<br/> |
+| [**Widen(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,ID2D1SimplifiedGeometrySink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink))  | Amplia la geometria in base al tratto specificato e scrive il risultato in [**id2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) dopo essere stato trasformato dalla matrice specificata e appiattito usando la tolleranza specificata.<br/> |
 
 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene illustrato come utilizzare **Wide** per ampliare la geometria in base al tratto specificato, quindi scrivere il risultato in un oggetto [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) .
+Nell'esempio di codice seguente viene illustrato come usare **Widen** per ampliare la geometria in base al tratto specificato e quindi scrivere il risultato in un oggetto [**ID2D1SimplifiedGeometrySink.**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink)
 
 
 ```C++
@@ -98,7 +98,7 @@ Nell'esempio di codice seguente viene illustrato come utilizzare **Wide** per am
 
 | Requisito | Valore |
 |--------------------|-------------------------------------------------------------------------------------|
-| Libreria<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

@@ -1,28 +1,28 @@
 ---
 description: Mostra la registrazione (creazione) e l'apertura di un archivio di sistema, la registrazione di un archivio fisico come membro di un archivio di sistema e l'annullamento della registrazione (eliminazione) di un archivio di sistema.
 ms.assetid: 857ab592-68c7-4660-b37d-b165aeee14f4
-title: 'Esempio di programma C: registrazione di archivi certificati fisici e di sistema'
+title: 'Programma C di esempio: registrazione di archivi certificati fisici e di sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 708a840767b4e49bd1ba5c70dd5ae63f0f9ab7bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3e1302f0590244ae4e1cd84e477c5deac8266b69d15f9ee83f60b71df3d1a80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140874"
 ---
-# <a name="example-c-program-registering-physical-and-system-certificate-stores"></a>Esempio di programma C: registrazione di archivi certificati fisici e di sistema
+# <a name="example-c-program-registering-physical-and-system-certificate-stores"></a>Programma C di esempio: registrazione di archivi certificati fisici e di sistema
 
-Gli archivi fisici possono essere costituiti da più o meno membri permanenti di un archivio di sistema. Quando un archivio fisico è membro di un archivio di sistema, le operazioni nell'archivio di sistema, ad esempio la ricerca di un certificato, verranno esaminate in tutti gli archivi fisici registrati come membri dell'archivio di sistema. Un archivio fisico può essere rimosso dall'appartenenza a un archivio di sistema utilizzando una funzione di annullamento della registrazione.
+Gli archivi fisici possono essere resi membri più o meno permanenti di un archivio di sistema. Quando un archivio fisico è membro di un archivio di sistema, le operazioni sull'archivio di sistema, ad esempio la ricerca di un certificato, verranno eseguite in tutti gli archivi fisici registrati come membri dell'archivio di sistema. Un archivio fisico può essere rimosso dall'appartenenza a un archivio di sistema usando una funzione di annullamento della registrazione.
 
-In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
 
--   Registrazione (creazione) di un nuovo archivio di sistema tramite [**CertRegisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregistersystemstore).
--   Apertura di un archivio di sistema appena creato tramite [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Registrazione di un archivio fisico come membro di un archivio di sistema tramite [**CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
--   Annullamento della registrazione (eliminazione) di un archivio di sistema tramite [**CertUnregisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certunregistersystemstore).
+-   Registrazione (creazione) di un nuovo archivio di sistema [**tramite CertRegisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregistersystemstore).
+-   Apertura di un archivio di sistema appena creato [**tramite CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Registrazione di un archivio fisico come membro di un archivio di sistema [**tramite CertRegisterPhysicalStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore)
+-   Annullamento della registrazione (eliminazione) di un archivio di sistema [**tramite CertUnregisterSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certunregistersystemstore).
 
-Questo esempio illustra anche la creazione e l'eliminazione degli archivi di sistema.
+Questo esempio illustra anche la creazione e l'eliminazione di archivi di sistema.
 
 
 ```C++

@@ -15,7 +15,7 @@ ms.locfileid: "117794144"
 
 Questa sezione illustra considerazioni pratiche per lo sviluppo di applicazioni con l'infrastruttura peer, nonché tecniche specifiche per usare le API in modo più efficiente.
 
-Negli argomenti seguenti vengono identificate soluzioni per attività comuni per lo sviluppo di applicazioni tramite l'infrastruttura peer.
+Negli argomenti seguenti vengono identificate le soluzioni alle attività comuni per lo sviluppo di applicazioni tramite l'infrastruttura peer.
 
 
 
@@ -25,11 +25,11 @@ Negli argomenti seguenti vengono identificate soluzioni per attività comuni per
 | [Considerazioni sulla programmazione](programming-considerations.md)                                                 | Identifica importanti considerazioni sulla programmazione per lo sviluppo di applicazioni tramite l'infrastruttura peer.              |
 | [Security Considerations](security-considerations.md)                                                       | Identifica importanti considerazioni sulla sicurezza per lo sviluppo di applicazioni tramite l'infrastruttura peer.                 |
 | [Importazione ed esportazione di database](database-import-and-export.md)                                                 | Identifica come importare ed esportare database di record.                                                                   |
-| [Connessioni dirette](direct-connections.md)                                                                 | Identifica come usare le connessioni dirette tra peer e tra peer all'interno delle API Peer Graphing e Grouping. |
+| [Connessioni dirette](direct-connections.md)                                                                 | Identifica come usare le connessioni dirette tra e tra peer dall'interno delle API Peer Graphing e Grouping. |
 | [Enumerazioni](enumerations.md)                                                                             | Identifica come usare le funzioni di enumerazione utilizzate dall'infrastruttura peer.                                |
-| [Liberare i dati peer](freeing-peer-data.md)                                                                   | Identifica come rilasciare i dati restituiti da chiamate di funzione comuni dell'infrastruttura peer.                                      |
+| [Freeing Peer Data](freeing-peer-data.md)                                                                   | Identifica come rilasciare le chiamate di funzione comuni dell'infrastruttura peer dei dati restituite.                                      |
 | [Infrastruttura di eventi](peer-events-infrastructure.md)                                                      | Identifica come usare gli eventi peer e interpretare gli eventi definiti dall'API Peer Graphing e Graphing.  |
-| [Importazione ed esportazione della configurazione di identità e gruppi](identity-and-group-configuration-import-and-export.md) | Identifica come importare ed esportare le configurazioni di identità peer e identità del gruppo.                                    |
+| [Importazione ed esportazione della configurazione di identità e gruppi](identity-and-group-configuration-import-and-export.md) | Identifica come importare ed esportare le configurazioni di identità peer e identità di gruppo.                                    |
 | [Record](records.md)                                                                                       | Identifica come usare i record peer e il database dei record.                                                       |
 
 

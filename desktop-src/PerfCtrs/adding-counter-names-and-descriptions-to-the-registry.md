@@ -1,37 +1,37 @@
 ---
-description: I nomi e le descrizioni di tutti gli oggetti prestazioni e i rispettivi contatori vengono archiviati nel registro di sistema.
+description: I nomi e le descrizioni di tutti gli oggetti prestazioni e dei relativi contatori vengono archiviati nel Registro di sistema.
 ms.assetid: 6fdaccb0-45bc-48f2-8f63-3df0bdf1dca4
 title: Aggiunta di nomi e descrizioni dei contatori al Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e9d2c97ebe80a8ef2a8396ca42583cbad874859
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e58333e9694b9aa74ff1d5ade6a399aaa813e7735ea315be529587e813fec0fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794056"
 ---
 # <a name="adding-counter-names-and-descriptions-to-the-registry"></a>Aggiunta di nomi e descrizioni dei contatori al Registro di sistema
 
 > [!IMPORTANT]
-> A causa di limitazioni significative in merito a prestazioni e affidabilità, il metodo per fornire i dati dei contatori delle prestazioni descritti in questo argomento può essere modificato o non disponibile in futuro. Microsoft consiglia invece di usare il metodo descritto in [fornire dati del contatore usando la versione 2,0](providing-counter-data-using-version-2-0.md) per creare nuovi contatori delle prestazioni e migrare i contatori delle prestazioni esistenti per l'uso di tale metodo.
+> A causa di limitazioni significative di prestazioni e affidabilità, il metodo per fornire i dati dei contatori delle prestazioni descritti in questo argomento potrebbe essere modificato o non disponibile in futuro. Microsoft consiglia invece di usare il metodo descritto in Fornire dati dei contatori usando la versione [2.0 per](providing-counter-data-using-version-2-0.md) la creazione di nuovi contatori delle prestazioni e di eseguire la migrazione dei contatori delle prestazioni esistenti per usare tale metodo.
 
-È necessario installare il sistema per i nomi e le descrizioni di tutti gli oggetti prestazione V1 e dei rispettivi contatori. Per archiviare i nomi e le descrizioni degli oggetti e dei contatori del [provider v1](providing-counter-data.md):
+I nomi e le descrizioni di tutti gli oggetti prestazione V1 e dei relativi contatori devono essere installati nel sistema. Per archiviare i nomi e le descrizioni per gli oggetti e i contatori dal [provider V1:](providing-counter-data.md)
 
-- [Creare un file di intestazione con estensione h](#creating-a-symbolic-constants-h-file) contenente le costanti simboliche per gli offset per gli oggetti e i contatori.
-- [Creare un'inizializzazione (. INI)](#creating-an-initialization-ini-file) che contiene le stringhe.
-- Quando si installa il componente, [eseguire lo strumento **lodctr**](#running-the-lodctr-tool) per installare i nomi e le descrizioni nel registro di sistema.
-- Quando si disinstalla il componente, eseguire lo strumento unlodctr per rimuovere i nomi e le descrizioni dal registro di sistema.
+- [Creare un file di intestazione](#creating-a-symbolic-constants-h-file) con estensione h contenente le costanti simboliche per gli offset per gli oggetti e i contatori.
+- [Creare un file di inizializzazione (.INI)](#creating-an-initialization-ini-file) contenente le stringhe.
+- Quando si installa il componente, [eseguire lo **strumento lodctr** per](#running-the-lodctr-tool) installare i nomi e le descrizioni nel Registro di sistema.
+- Quando si disinstalla il componente, eseguire lo strumento unlodctr per rimuovere i nomi e le descrizioni dal Registro di sistema.
 
-## <a name="creating-a-symbolic-constants-h-file"></a>Creazione di un file di costanti simboliche (. h)
+## <a name="creating-a-symbolic-constants-h-file"></a>Creazione di un file di costanti simboliche (con estensione h)
 
-Creare un file di intestazione con estensione h che definisce le costanti (macro) per gli offset degli oggetti e dei contatori forniti dal provider. L'intestazione. h viene usata come input per **lodctr** durante l'installazione del provider e può anche essere usata dal codice C/C++ del provider.
+Creare un file di intestazione con estensione h che definisce costanti (macro) per gli offset per gli oggetti e i contatori forniti dal provider. L'intestazione H viene usata come input per **lodctr** durante l'installazione del provider e può essere usata anche dal codice C/C++ del provider.
 
-I valori delle costanti devono essere consecutivi, persino i numeri a partire da zero. Raggruppare le costanti per oggetti, ovvero avviare ogni gruppo con l'offset dell'oggetto, quindi seguire gli offset dei contatori per l'oggetto.
+I valori costanti devono essere consecutivi, anche numeri che iniziano con zero. Raggruppare le costanti in base agli oggetti ,ad esempio iniziare ogni gruppo con l'offset dell'oggetto e quindi seguire gli offset dei contatori per tale oggetto.
 
-Le costanti nell'intestazione determinano l'ordine in cui i contatori vengono aggiunti al nome e al testo della guida nel registro di sistema. Il provider utilizza gli offset per determinare l'oggetto su cui viene eseguita la query e i valori di indice da utilizzare per la restituzione dei dati. Per informazioni dettagliate, vedere [implementazione di OpenPerformanceData](implementing-openperformancedata.md).
+Le costanti nell'intestazione determinano l'ordine in cui i contatori vengono aggiunti al nome e al testo della Guida nel Registro di sistema. Il provider usa gli offset per determinare l'oggetto sottoposto a query e i valori di indice da utilizzare per la restituzione dei dati. Per informazioni dettagliate, [vedere Implementazione di OpenPerformanceData.](implementing-openperformancedata.md)
 
-Di seguito è riportato un esempio di un file di costante simbolico, denominato CounterOffsets. h, usato nell'esempio di [creazione di una DLL di estensione](creating-a-performance-extension-dll.md) per le prestazioni.
+Di seguito viene illustrato un esempio di un file costante simbolico, denominato CounterOffsets.h, usato nell'esempio di DLL Di creazione di [un'estensione delle](creating-a-performance-extension-dll.md) prestazioni.
 
 ```C++
 #ifndef OFFSETS_H
@@ -57,11 +57,11 @@ Di seguito è riportato un esempio di un file di costante simbolico, denominato 
 #endif // OFFSETS_H
 ```
 
-## <a name="creating-an-initialization-ini-file"></a>Creazione di un'inizializzazione (. File INI)
+## <a name="creating-an-initialization-ini-file"></a>Creazione di un file di inizializzazione (.INI)
 
-Inizializzazione (. INI) contiene il nome e le stringhe della Guida per ogni oggetto e contatore definito nel file di simboli. Il. Il file INI viene usato come input per **lodctr** durante l'installazione del provider.
+Il file di inizializzazione (.INI) contiene il nome e le stringhe della Guida per ogni oggetto e contatore definito nel file di simboli. Il .INI file viene usato come input per **lodctr** durante l'installazione del provider.
 
-Il. Il file INI deve essere codificato come UTF-16LE (con byte order mark) e deve contenere le sezioni e le chiavi seguenti:
+Il file .INI deve essere codificato come UTF-16LE (con byte order mark) e deve avere le sezioni e le chiavi seguenti:
 
 ```ini
 [info]
@@ -80,55 +80,55 @@ trusted=(Unused)
 <symbol>_<langid>_HELP=Description
 ```
 
-### <a name="info-section"></a>[info] sezione
+### <a name="info-section"></a>Sezione [info]
 
-La `[info]` sezione contiene informazioni generali sul provider. Le chiavi della sezione sono definite come segue:
+La `[info]` sezione contiene informazioni generali sul provider. Le chiavi di sezione sono definite nel modo seguente:
 
 |Chiave|Descrizione
 |---|-----------
-|**DriverName**| Specificare il nome della chiave di prestazioni del provider che si trova nel registro di sistema sotto la `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services` chiave. Per informazioni sulla creazione di questa chiave, vedere [creazione della chiave delle prestazioni dell'applicazione](creating-the-applications-performance-key.md).
-|**SymbolFile**| Specificare il file di intestazione con estensione h che contiene i valori simbolici degli oggetti e dei contatori del provider. Durante l'installazione (quando si richiama **lodctr**), il file di intestazione deve trovarsi nella stessa directory della. File INI.
-|**Attendibile**| Se si include questa chiave nella `[info]` sezione, **lodctr** aggiungerà un valore del registro di sistema del codice di convalida della libreria alla chiave delle prestazioni con una firma BINARIa della DLL delle prestazioni. Quando PERFLIB chiama la DLL, confronta la firma con la DLL per determinare se la DLL è stata modificata. Il valore della chiave **attendibile** viene ignorato.
+|**DriverName**| Specificare il nome della chiave delle prestazioni del provider che si trova nel Registro di sistema nella `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services` chiave . Per informazioni sulla creazione di questa chiave, vedere [Creazione della chiave delle prestazioni dell'applicazione](creating-the-applications-performance-key.md).
+|**SymbolFile**| Specificare il file di intestazione con estensione h che contiene i valori simbolici degli oggetti e dei contatori del provider. Durante l'installazione (quando si richiama **lodctr**), il file di intestazione deve essere nella stessa directory del file .INI file.
+|**Trusted**| Se si include questa chiave nella sezione `[info]` , **lodctr** aggiungerà un valore del Registro di sistema Library Validation Code alla chiave delle prestazioni con una firma binaria della DLL delle prestazioni. Quando PERFLIB chiama la DLL, confronta la firma con la DLL per determinare se la DLL è stata modificata. Il valore della **chiave attendibile** viene ignorato.
 
-Le `DriverName` `SymbolFile` chiavi e sono obbligatorie.
+Le `DriverName` chiavi e sono `SymbolFile` obbligatorie.
 
-### <a name="objects-section"></a>sezione [Objects]
+### <a name="objects-section"></a>Sezione [objects]
 
-Nella `[objects]` sezione viene fornito un elenco degli oggetti prestazioni supportati dal provider. Viene utilizzato per determinare se ogni simbolo della `[text]` sezione fa riferimento a un oggetto o a un contatore.
+La `[objects]` sezione fornisce un elenco degli oggetti prestazioni supportati dal provider. Viene usato per determinare se ogni simbolo della sezione fa riferimento `[text]` a un oggetto o a un contatore.
 
-Per ogni oggetto (contatore) supportato dal provider, aggiungere una chiave denominata `<symbol>_<langid>_NAME=` alla `[objects]` sezione, dove `<symbol>` è il nome dell'oggetto e `<langid>` è l'ID lingua di una delle lingue supportate. Il valore viene ignorato.
+Per ogni oggetto (counterset) supportato dal provider, aggiungere una chiave denominata alla sezione , dove è il nome dell'oggetto e è l'ID lingua di una `<symbol>_<langid>_NAME=` `[objects]` delle lingue `<symbol>` `<langid>` supportate. Il valore viene ignorato.
 
 > [!IMPORTANT]
-> La `[objects]` sezione migliora le prestazioni del sistema. Anche se la sezione oggetti è facoltativa, è necessario includere sempre questa sezione nel. File INI. Se si include questa sezione, la DLL delle prestazioni viene chiamata solo se si supporta l'oggetto richiesto. Se non si include la sezione Objects, la DLL viene chiamata per ogni query, perché il sistema non sa quali oggetti sono supportati dal provider. Se la sezione dell'oggetto non è inclusa, **lodctr** genera un messaggio nel registro eventi dell'applicazione che informa che. Il file INI non contiene una sezione oggetti. L'identificatore di evento di questo messaggio è 2000.
+> La `[objects]` sezione migliora le prestazioni del sistema. Anche se la sezione objects è facoltativa, è necessario includere sempre questa sezione nel file .INI file. Se si include questa sezione, la DLL delle prestazioni viene chiamata solo se si supporta l'oggetto richiesto. Se non si include la sezione objects, la DLL viene chiamata per ogni query perché il sistema non conosce gli oggetti supportati dal provider. Se la sezione object non è inclusa, **lodctr** genera un messaggio nel registro eventi dell'applicazione che indica che il file .INI non contiene una sezione objects. L'identificatore dell'evento di questo messaggio è 2000.
 
-### <a name="languages-section"></a>sezione [languages]
+### <a name="languages-section"></a>Sezione [languages]
 
-Nella `[languages]` sezione viene fornito un elenco degli identificatori di lingua di ogni lingua per cui il provider fornisce le stringhe di nome e guida. Tutti i provider devono supportare `009` (Inglese).
+La sezione fornisce un elenco degli identificatori di lingua di ogni lingua per cui il provider fornisce `[languages]` stringhe di nome e guida. Tutti i provider devono supportare `009` (inglese).
 
-Per ogni lingua supportata, aggiungere una chiave denominata `<langid>=` . Il valore viene ignorato, ma per finalità di documentazione il valore viene in genere impostato sul nome della lingua corrispondente, ad esempio `009=English` .
+Per ogni lingua supportata, aggiungere una chiave denominata `<langid>=` . Il valore viene ignorato, ma a scopo di documentazione il valore viene in genere impostato sul nome della lingua corrispondente, ad esempio `009=English` .
 
-Per la maggior parte delle lingue, è necessario usare l'identificatore di lingua principale. L'elenco completo degli identificatori di lingua si trova nel file di intestazione Winnt. h, sotto l'intestazione "ID lingua primaria". Convertire il valore trovato in Winnt. h in una sequenza di 3 cifre esadecimali rimuovendo il `0x` prefisso e aggiungendo le `0` cifre iniziali finché la sequenza non ha una lunghezza di 3 cifre. Ad esempio, per specificare le stringhe inglesi (0x9), usare 009. Per specificare le stringhe italiane (0x10), usare 010.
+Per la maggior parte delle lingue, è consigliabile usare l'identificatore di lingua principale. L'elenco completo degli identificatori di lingua si trova nel file di intestazione Winnt.h, sotto l'intestazione "Primary Language IDs". Convertire il valore trovato in Winnt.h in una sequenza di 3 cifre esadecimali rimuovendo il prefisso e aggiungendo cifre iniziali fino a quando la sequenza non è lunga `0x` `0` 3 cifre. Ad esempio, per specificare stringhe in inglese (0x9), usare 009. Per specificare stringhe italiane (0x10), usare 010.
 
-Per le lingue cinese e portoghese sono necessari sia gli identificatori primari che quelli della lingua. Usare 404, 804, 416 o 816 anziché 004 o 016.
+Le lingue cinese e portoghese richiedono sia l'identificatore primario che quello secondario. Usare 404, 804, 416 o 816 anziché 004 o 016.
 
-### <a name="text-section"></a>sezione [testo]
+### <a name="text-section"></a>Sezione [text]
 
 La `[text]` sezione fornisce il nome e le stringhe della Guida per gli oggetti e i contatori.
 
-Per ogni oggetto o contatore e per ogni lingua supportata, è necessario specificare una chiave del nome (contenente il nome o la stringa del titolo per l'oggetto o il contatore) ed è possibile specificare facoltativamente un tasto guida (contenente la stringa di descrizione o di spiegazione per l'oggetto o il contatore). Le chiavi devono essere denominate `<symbol>_<langid>_NAME` e `<symbol>_<langid>_HELP` , dove `<symbol>` è la costante simbolica per l'oggetto o il contatore (come definito nel file con estensione h della costante simbolica) e `<langid>` è l'identificatore di lingua usato per questa stringa.
+Per ogni oggetto o contatore e per ogni lingua supportata, è necessario specificare una chiave NAME (contenente il nome o la stringa del titolo per l'oggetto o il contatore) e facoltativamente è possibile specificare una chiave HELP (contenente la descrizione o la stringa di spiegazione per l'oggetto o il contatore). Le chiavi devono essere denominate e , dove è la costante simbolica per l'oggetto o il contatore (come definito nel file con estensione h della costante simbolica) e è l'identificatore di lingua usato per `<symbol>_<langid>_NAME` `<symbol>_<langid>_HELP` questa `<symbol>` `<langid>` stringa.
 
-Ad esempio, le stringhe inglesi per un contatore con simbolo `MY_COUNTER` vengono specificate come:
+Ad esempio, le stringhe in inglese per un contatore con simbolo `MY_COUNTER` vengono specificate come segue:
 
 ```ini
 MY_COUNTER_009_NAME=My Counter
 MY_COUNTER_009_HELP=Description for My Counter.
 ```
 
-Le chiavi di testo possono essere visualizzate in qualsiasi ordine. Le stringhe di testo non devono contenere caratteri di formattazione come le schede.
+Le chiavi di testo possono essere visualizzate in qualsiasi ordine. Le stringhe di testo non devono contenere caratteri di formattazione, ad esempio tabulazioni.
 
 ### <a name="example-ini-file"></a>File INI di esempio
 
-Di seguito è riportato un esempio di un file di inizializzazione usato nell'esempio [Creating a performance Extension DLL](creating-a-performance-extension-dll.md) .
+Di seguito è riportato un esempio di un file di inizializzazione usato nell'esempio [Creazione di una DLL di estensione delle](creating-a-performance-extension-dll.md) prestazioni.
 
 ```ini
 [info]
@@ -181,17 +181,17 @@ BYTES_SERVED_00C_NAME=Octets Servis
 BYTES_SERVED_00C_HELP=Le nombre d'octets servis du cache.
 ```
 
-## <a name="running-the-lodctr-tool"></a>Esecuzione dello strumento lodctr
+## <a name="running-the-lodctr-tool"></a>Esecuzione dello strumento Lodctr
 
-Per caricare i nomi e le stringhe della guida definiti nel. File INI (durante l'installazione del provider) eseguire lo strumento **lodctr** dalla cartella che contiene il. File INI e file di intestazione. Lo strumento è incluso nel computer. È necessario eseguire **lodctr** con privilegi elevati. Il parametro per **lodctr** è il percorso di. File INI. Ad esempio: `lodctr "C:\Program Files\MyCompany\MyProvider\MyProvider.ini"`.
+Per caricare i nomi e le stringhe della Guida definiti nel file .INI (durante l'installazione del provider), eseguire lo strumento **lodctr** dalla cartella che contiene il file .INI e il file di intestazione. Lo strumento è incluso nel computer. È necessario eseguire **lodctr** con privilegi elevati. Il parametro per **lodctr** è il percorso del file .INI file. Ad esempio, `lodctr "C:\Program Files\MyCompany\MyProvider\MyProvider.ini"`.
 
-Per scaricare i nomi e le stringhe della guida (durante la disinstallazione), eseguire lo strumento **unlodctr** . È necessario eseguire **unlodctr** con privilegi elevati. Il parametro per **unlodctr** è il nome del driver del provider (il nome della chiave di prestazioni del provider). Ad esempio: `unlodctr "MyProvider"`.
+Per scaricare i nomi e le stringhe della Guida (durante la disinstallazione), eseguire lo **strumento unlodctr.** È necessario eseguire **unlodctr** con privilegi elevati. Il parametro **da rimuovere è** driverName del provider (il nome della chiave delle prestazioni del provider). Ad esempio, `unlodctr "MyProvider"`.
 
-Prima di eseguire **lodctr**, assicurarsi che l'applicazione disponga di una voce sotto la chiave **Services** . Per informazioni dettagliate, vedere [creazione della chiave delle prestazioni dell'applicazione](creating-the-applications-performance-key.md). Se la chiave non esiste, **lodctr** non aggiornerà il registro di sistema con i nomi e le descrizioni.
+Prima di **eseguire lodctr,** assicurarsi che l'applicazione abbia una voce sotto la **chiave** Servizi. Per informazioni dettagliate, vedere [Creazione della chiave delle prestazioni dell'applicazione.](creating-the-applications-performance-key.md) Se la chiave non esiste, **lodctr** non aggiornerà il Registro di sistema con i nomi e le descrizioni.
 
-In alternativa all'esecuzione di **lodctr**, è possibile chiamare [**LoadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-loadperfcountertextstringsw) (definito in loadperf. h) dal programma di installazione per caricare le descrizioni dei nomi dei contatori. È quindi possibile chiamare [**UnloadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-unloadperfcountertextstringsw) durante la disinstallazione.
+In alternativa all'esecuzione di **lodctr,** è possibile chiamare [**LoadPerfCounterTextStrings**](/windows/win32/api/loadperf/nf-loadperf-loadperfcountertextstringsw) (definito in Loadperf.h) dal programma di installazione per caricare le descrizioni dei nomi dei contatori. È quindi possibile chiamare [**UnloadPerfCounterTextStrings durante**](/windows/win32/api/loadperf/nf-loadperf-unloadperfcountertextstringsw) la disinstallazione.
 
-L'utilità **lodctr** copia le stringhe da. File INI nei **contatori** e valori del registro di sistema nelle sottochiavi **di lingua** appropriate. Se la sottochiave della lingua corrispondente non esiste, le stringhe per tale lingua non vengono copiate. L'utilità aggiorna anche l' **ultimo contatore** e l'ultimo valore della **Guida** . I nomi e le descrizioni dei contatori delle prestazioni vengono archiviati nel seguente percorso del registro di sistema.
+**L'utilità lodctr** copia le stringhe dal file .INI nei valori del Registro di sistema **Counters** e **Help** nelle sottochiavi della lingua appropriate. Se la sottochiave della lingua corrispondente non esiste, le stringhe per tale lingua non vengono copiate. L'utilità aggiorna anche il **valore Last Counter** e Last **Help.** I nomi e le descrizioni dei contatori delle prestazioni vengono archiviati nel percorso seguente nel Registro di sistema.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -210,7 +210,7 @@ HKEY_LOCAL_MACHINE
                      Help = ...
 ```
 
-Oltre ad aggiungere valori nella chiave **Perflib** , lo strumento **lodctr** aggiunge anche i valori seguenti al nodo **Servizi** per l'applicazione. Nella maggior parte dei casi, l'applicazione e il provider avranno una relazione uno-a-uno. Tuttavia, è possibile che un provider fornisca dati del contatore per più applicazioni, motivo per cui la chiave è basata sull'applicazione e non sul provider.
+Oltre ad aggiungere valori nella chiave **PerfLib,** lo strumento **lodctr** aggiunge anche i valori seguenti al nodo **Servizi** per l'applicazione. Nella maggior parte dei casi, l'applicazione e il provider avranno una relazione uno-a-uno. Tuttavia, un provider può fornire dati dei contatori per più applicazioni, motivo per cui la chiave è basata sull'applicazione e non sul provider.
 
 ```
 HKEY_LOCAL_MACHINE

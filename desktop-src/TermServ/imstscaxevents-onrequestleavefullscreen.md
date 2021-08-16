@@ -1,11 +1,11 @@
 ---
 title: Metodo IMsTscAxEvents OnRequestLeaveFullScreen
-description: Chiamato quando il client richiede di uscire dalla modalità schermo intero e la proprietà IMsTscAdvancedSettings put ContainerHandledFullScreen è stata impostata su un valore \_ diverso da zero.
+description: Chiamato quando il client richiede di uscire dalla modalità schermo intero e la proprietà IMsTscAdvancedSettings put ContainerHandledFullScreen è stata impostata su un valore diverso \_ da zero.
 ms.assetid: db6ee012-8288-4360-98b2-12858ea65baa
 ms.tgt_platform: multiple
 keywords:
 - Metodo OnRequestLeaveFullScreen Servizi Desktop remoto
-- Metodo OnRequestLeaveFullScreen Servizi Desktop remoto, interfaccia IMsTscAxEvents
+- Metodo OnRequestLeaveFullScreen Servizi Desktop remoto , interfaccia IMsTscAxEvents
 - Interfaccia IMsTscAxEvents Servizi Desktop remoto , metodo OnRequestLeaveFullScreen
 topic_type:
 - apiref

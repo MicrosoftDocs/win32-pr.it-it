@@ -1,9 +1,9 @@
 ---
 title: Tipo complesso PatternMapType
-description: Non usato. Definisce un mapping tra due espressioni regolari. Viene utilizzata un'espressione per trovare una stringa corrispondente nella stringa del messaggio e l'altra per modificare la stringa prima che il servizio lo riporti nella stringa del messaggio.
+description: Non usato. Definisce un mapping tra due espressioni regolari. Un'espressione viene usata per trovare una stringa corrispondente nella stringa del messaggio e l'altra viene usata per modificare la stringa prima che il servizio la inserisca nuovamente nella stringa del messaggio.
 ms.assetid: 184b6aeb-a554-4a92-b19e-1849c711d33b
 keywords:
-- Log eventi di tipo complesso PatternMapType
+- EventLog di tipo complesso PatternMapType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e39ca30520f4f595bfc73a4d80b9bc191793859a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4ba0c404220023a124c082ea448cbb7bdcab192b611bf35a2afc90df82e9e63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104477392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136193"
 ---
 # <a name="patternmaptype-complex-type"></a>Tipo complesso PatternMapType
 
-Non usato. Definisce un mapping tra due espressioni regolari. Viene utilizzata un'espressione per trovare una stringa corrispondente nella stringa del messaggio e l'altra per modificare la stringa prima che il servizio lo riporti nella stringa del messaggio.
+Non usato. Definisce un mapping tra due espressioni regolari. Un'espressione viene usata per trovare una stringa corrispondente nella stringa del messaggio e l'altra viene usata per modificare la stringa prima che il servizio la inserisca nuovamente nella stringa del messaggio.
 
 ``` syntax
 <xs:complexType name="PatternMapType">
@@ -53,7 +53,7 @@ Non usato. Definisce un mapping tra due espressioni regolari. Viene utilizzata u
 
 | Elemento                                                       | Tipo                                                                               | Descrizione                                                                                                   |
 |---------------------------------------------------------------|------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [**Mappa**](eventmanifestschema-map-patternmaptype-element.md) | [**PatternMapValueType**](eventmanifestschema-patternmapvaluetype-complextype.md) | Definisce le espressioni regolari utilizzate per trovare una stringa corrispondente nella stringa del messaggio e modificarla.<br/> |
+| [**Mappa**](eventmanifestschema-map-patternmaptype-element.md) | [**PatternMapValueType**](eventmanifestschema-patternmapvaluetype-complextype.md) | Definisce le espressioni regolari usate per trovare una stringa corrispondente nella stringa del messaggio e modificarla.<br/> |
 
 
 
@@ -64,8 +64,8 @@ Non usato. Definisce un mapping tra due espressioni regolari. Viene utilizzata u
 | Nome   | Tipo                                                              | Descrizione                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | format | anyURI                                                            | Motore delle espressioni regolari da usare.<br/>                                                                                                                                                                                                                                                                    |
-| name   | **QName**                                                         | Nome della mappa del pattern. Utilizzare il nome in un elemento dati per fare riferimento ai mapping.<br/>                                                                                                                                                                                                                   |
-| simbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Simbolo da utilizzare per fare riferimento ai mapping nell'applicazione. Il [**compilatore di messaggi (MC.exe)**](message-compiler--mc-exe-.md) usa il simbolo per creare una costante per la mappa nel file di intestazione generato dal compilatore. Se non si specifica un simbolo, il compilatore ne genera uno automaticamente.<br/> |
+| name   | **QName**                                                         | Nome della mappa dei criteri. Usare il nome in un elemento dati per fare riferimento ai mapping.<br/>                                                                                                                                                                                                                   |
+| simbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Simbolo da usare per fare riferimento ai mapping nell'applicazione. Il [**compilatore di messaggi (MC.exe)**](message-compiler--mc-exe-.md) usa il simbolo per creare una costante per la mappa nel file di intestazione generato dal compilatore. Se non si specifica un simbolo, il compilatore ne genera uno automaticamente.<br/> |
 
 
 
@@ -75,8 +75,8 @@ Non usato. Definisce un mapping tra due espressioni regolari. Viene utilizzata u
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: Il metodo GetCurrentFormat Recupera il formato multimediale del flusso corrente.
+description: Il metodo GetCurrentFormat recupera il formato multimediale del flusso corrente.
 ms.assetid: 02d1b3b5-3639-4864-9b72-623bf94acf69
-title: 'Metodo ITFormatControl:: GetCurrentFormat (Ipmsp. h)'
+title: Metodo ITFormatControl::GetCurrentFormat (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1b711b539ea9a92af6bd345c5a1f48b212b640b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50d261cd88a9aac4998f15d871a20408aecb367b793b78b7f9fcaeff452273a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140334"
 ---
-# <a name="itformatcontrolgetcurrentformat-method"></a>Metodo ITFormatControl:: GetCurrentFormat
+# <a name="itformatcontrolgetcurrentformat-method"></a>Metodo ITFormatControl::GetCurrentFormat
 
-\[ Questo metodo non è disponibile per l'utilizzo in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API del client RTC fornisce funzionalità simili.\]
+\[Questo metodo non è disponibile per l'uso in Windows Vista, Windows Server 2008 e nelle versioni successive del sistema operativo. L'API client RTC offre funzionalità simili.\]
 
-Il metodo **GetCurrentFormat** Recupera il formato multimediale del flusso corrente.
+Il **metodo GetCurrentFormat** recupera il formato multimediale del flusso corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,10 +32,10 @@ HRESULT GetCurrentFormat(
 
 <dl> <dt>
 
-*ppMediaType* \[ out\]
+*ppMediaType* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a un descrittore del **\_ \_ tipo di supporto am** del formato terminale. Per ulteriori informazioni sul **\_ \_ tipo di supporto am**, vedere la documentazione di DirectX.
+Puntatore a un **descrittore AM \_ MEDIA \_ TYPE** del formato del terminale. Per altre informazioni su **AM \_ MEDIA \_ TYPE,** vedere la documentazione di DirectX.
 
 </dd> </dl>
 
@@ -47,8 +47,8 @@ Questo metodo può restituire uno di questi valori.
 
 | Codice restituito                                                                                   | Descrizione                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
-| <dl> <dt>**E \_ OutOfMemory**</dt> </dl> | La memoria disponibile non è sufficiente per eseguire l'operazione.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Il metodo è riuscito.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insufficiente per eseguire l'operazione.<br/> |
 
 
 
@@ -60,9 +60,9 @@ Questo metodo può restituire uno di questi valori.
 
 | Requisito | Valore |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 3,1<br/>                                                         |
-| Intestazione<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Libreria<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versione TAPI<br/> | Richiede TAPI 3.1<br/>                                                         |
+| Intestazione<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Libreria<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

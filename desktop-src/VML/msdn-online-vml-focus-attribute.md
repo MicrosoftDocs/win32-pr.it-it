@@ -1,24 +1,24 @@
 ---
-title: LA-attributo attivo
-description: LA-attributo attivo
+title: Attributo vml focus
+description: Attributo vml focus
 ms.assetid: 9ed52203-4142-47cd-851f-74230aac934d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 062b2900c2f980c9a1433e5e790a34d463def9be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b60eeb9ff379c8006cbb9068b6b78c8f24490ecf2fd15573b5b224a9ee1208ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104047339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057869"
 ---
-# <a name="vml-focus-attribute"></a>LA-attributo attivo
+# <a name="vml-focus-attribute"></a>Attributo vml focus
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Definisce il centro di un riempimento sfumato lineare. Proprietà di lettura/scrittura. **VgFraction**.
 
@@ -26,25 +26,25 @@ Definisce il centro di un riempimento sfumato lineare. Proprietà di lettura/scr
 
 [Fill](msdn-online-vml-fill-element.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Focus = " *Expression* " >
+<v: *elemento* focus=" *espressione* ">
 
 **Sintassi dello script**
 
-*element* . Focus = "*Expression*"
+*element* .focus="*expression*"
 
-*espressione* = *elemento*. Focus
+*expression* = *elemento*.focus
 
 **Osservazioni:**
 
-Definisce la posizione iniziale del centro della Blend. I valori sono compresi tra 100% e-100%. Il valore predefinito è 0. Un valore 100% (o-100%) Sposta lo stato attivo in modo da invertire la direzione della sfumatura (influisce sul **colore** e **color2**). Il valore 50% modificherà la Blend in modo che il **colore** sia a entrambe le estremità e **color2** al centro. Il valore-50% modificherà la Blend in modo che **color2** sia a entrambe le estremità e il **colore** sia al centro.
+Definisce la posizione iniziale centrale della fusione. I valori sono compreso tra 100% e -100%. Il valore predefinito è 0. Un valore pari a 100% (o -100%) sposta lo stato attivo in modo che la direzione della fusione si inverti (invertendo di fatto **Color** **e Color2).** Il valore 50% modificherà la fusione in modo che **Color** sia a entrambe le estremità e **Color2** sia al centro. Il valore -50% modificherà la fusione in modo che **Color2** sia a entrambe le estremità e **Color** sia al centro.
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Esempio**
 
-Lo stato attivo sfumato del riempimento viene spostato in modo che il rosso (**colore**) sarà una banda al centro della forma e che la parte superiore e inferiore sarà blu (**color2**).
+Lo stato attivo della sfumatura del riempimento viene spostato in modo che il rosso (**Color**) sia una banda al centro della forma e che la parte superiore e inferiore siano blu (**Color2**).
 
 
 ```HTML
@@ -60,6 +60,6 @@ Lo stato attivo sfumato del riempimento viene spostato in modo che il rosso (**c
 
 
 
- 
+ 
 
- 
+ 

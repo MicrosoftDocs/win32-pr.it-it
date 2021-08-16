@@ -21,7 +21,7 @@ Contiene le proprietà di configurazione per l'origine di acquisizione.
 
 ## <a name="remarks"></a>Commenti
 
-Attualmente, questo attributo viene ignorato. In futuro, potrebbe essere usato per passare le proprietà di configurazione all'origine multimediale.
+Attualmente, questo attributo viene ignorato. In futuro potrebbe essere usato per passare le proprietà di configurazione all'origine multimediale.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ Attualmente, questo attributo viene ignorato. In futuro, potrebbe essere usato p
 
 <dl> <dt>
 
-[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del motore di acquisizione](capture-engine-attributes.md)

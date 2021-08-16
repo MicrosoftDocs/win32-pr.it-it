@@ -1,7 +1,7 @@
 ---
 description: Imposta la descrizione della traccia.
 ms.assetid: bc3324b3-ca23-4035-958d-9763a70071f2
-title: 'Metodo ID3DXAnimationController:: SetTrackDesc (D3dx9anim. h)'
+title: Metodo ID3DXAnimationController::SetTrackDesc (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1aca9385f1e9bc9439b9fe4b3dc1acddda94e395
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e25536f3e36e07a7145623efb6a6515f3f77c11177204f5213539c69f454b705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122082"
 ---
-# <a name="id3dxanimationcontrollersettrackdesc-method"></a>Metodo ID3DXAnimationController:: SetTrackDesc
+# <a name="id3dxanimationcontrollersettrackdesc-method"></a>Metodo ID3DXAnimationController::SetTrackDesc
 
 Imposta la descrizione della traccia.
 
@@ -41,19 +41,19 @@ HRESULT SetTrackDesc(
 
 <dl> <dt>
 
-*Traccia* \[ in\]
+*Tenere traccia* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Identificatore della traccia da modificare.
 
 </dd> <dt>
 
-*pDesc* \[ in\]
+*pDesc* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **[ **LPD3DXTRACK \_ desc**](d3dxtrack-desc.md)**
+Tipo: **[ **LPD3DXTRACK \_ DESC**](d3dxtrack-desc.md)**
 
 Descrizione della traccia.
 
@@ -63,7 +63,7 @@ Descrizione della traccia.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei valori seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

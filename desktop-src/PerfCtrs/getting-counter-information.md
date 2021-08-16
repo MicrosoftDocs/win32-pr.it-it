@@ -1,19 +1,19 @@
 ---
-description: Per recuperare informazioni su un contatore, ad esempio il tipo di contatore, il testo della guida e il percorso, chiamare la funzione PdhGetCounterInfo. La funzione restituisce le informazioni del contatore come \_ struttura di informazioni del contatore PDH \_ .
+description: Per recuperare informazioni su un contatore, ad esempio il tipo di contatore, il testo della Guida e il percorso, chiamare la funzione PdhGetCounterInfo. La funzione restituisce le informazioni sul contatore come struttura PDH \_ COUNTER \_ INFO.
 ms.assetid: 55e7b905-da9e-4c59-84b0-e5b4c662fbd9
-title: Recupero delle informazioni sui contatori
+title: Recupero di informazioni sui contatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cf18efd91498c66185ec30a823ceff8acf4cef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7eb3e605ab4bccbceca18faf02f5632ef6e2a59db569fe80cce67c8c915d4a99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061179"
 ---
-# <a name="getting-counter-information"></a>Recupero delle informazioni sui contatori
+# <a name="getting-counter-information"></a>Recupero di informazioni sui contatori
 
-Per recuperare informazioni su un contatore, ad esempio il tipo di contatore, il testo della guida e il percorso, chiamare la funzione [**PdhGetCounterInfo**](/windows/desktop/api/Pdh/nf-pdh-pdhgetcounterinfoa) . La funzione restituisce le informazioni del contatore come struttura di [**\_ \_ informazioni del contatore PDH**](/windows/desktop/api/Pdh/ns-pdh-pdh_counter_info_a) .
+Per recuperare informazioni su un contatore, ad esempio il tipo di contatore, il testo della Guida e il percorso, chiamare la [**funzione PdhGetCounterInfo.**](/windows/desktop/api/Pdh/nf-pdh-pdhgetcounterinfoa) La funzione restituisce le informazioni sul contatore come [**struttura PDH \_ COUNTER \_ INFO.**](/windows/desktop/api/Pdh/ns-pdh-pdh_counter_info_a)
 
  
 

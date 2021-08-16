@@ -5,7 +5,7 @@ ms.assetid: 288801a7-793f-43bd-9c5a-f9e1bd86ecc3
 keywords:
 - Advanced Systems Format (ASF), impostazioni di input
 - ASF (Advanced Systems Format), impostazioni di input
-- profili, impostazioni di input
+- profili,impostazioni di input
 - codec, impostazioni di input
 - flussi, impostazioni di input
 ms.topic: article

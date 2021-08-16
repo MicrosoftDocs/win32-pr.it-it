@@ -1,59 +1,59 @@
 ---
-title: Creazione del pacchetto di plug-in DSP
-description: Creazione del pacchetto di plug-in DSP
+title: Creazione di pacchetti plug-in DSP
+description: Creazione di pacchetti plug-in DSP
 ms.assetid: 5d40a39b-0fe8-4f77-9465-8e31d1f2708e
 keywords:
-- Plug-in di Windows Media Player, pipeline Media Foundation
-- plug-in, pipeline di Media Foundation
-- plug-in per l'elaborazione di segnali digitali, pipeline di Media Foundation
-- Plug-in DSP, pipeline di Media Foundation
-- Pipeline Media Foundation
-- Plug-in di Windows Media Player, pipeline DirectShow
+- Windows Media Player plug-in, Media Foundation pipeline
+- plug-in, pipeline Media Foundation
+- plug-in di elaborazione dei segnali digitali, Media Foundation pipeline
+- Plug-in DSP, pipeline Media Foundation
+- Media Foundation pipeline
+- Windows Media Player plug-in, DirectShow pipeline
 - plug-in, pipeline DirectShow
-- plug-in di elaborazione dei segnali digitali, pipeline DirectShow
+- plug-in di elaborazione dei segnali digitali, DirectShow pipeline
 - Plug-in DSP, pipeline DirectShow
-- Pipeline DirectShow
-- plug-in per l'elaborazione di segnali digitali, di base
-- Plug-in DSP, di base
-- Plug-in di Windows Media Player, DSP Basic
+- DirectShow pipeline
+- plug-in di elaborazione dei segnali digitali, di base
+- plug-in DSP, di base
+- Windows Media Player plug-in, DSP di base
 - plug-in, DSP di base
 - plug-in DSP di base
-- Plug-in di Windows Media Player, DSP Dual Mode
-- plug-in, DSP Dual Mode
-- plug-in di elaborazione dei segnali digitali, Dual Mode
-- Plug-in DSP, modalità duale
-- plug-in DSP a doppia modalità
+- Windows Media Player plug-in, DSP dual mode
+- plug-in, DSP dual mode
+- plug-in di elaborazione del segnale digitale, modalità doppia
+- Plug-in DSP, modalità doppia
+- plug-in DSP dual-mode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62535abe0d82975bf07fef178ac43cf066c6afbd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f2bd87e1729b4d8759f3b9f1d7d4d7993660512d49c34ea9bf9aa34802b69cd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749506"
 ---
-# <a name="dsp-plug-in-packaging"></a>Creazione del pacchetto di plug-in DSP
+# <a name="dsp-plug-in-packaging"></a>Creazione di pacchetti plug-in DSP
 
-Windows Media Player esegue il rendering di audio e video utilizzando una delle seguenti pipeline.
+Windows Media Player esegue il rendering di audio e video usando una delle pipeline seguenti.
 
 -   DirectShow
 -   Media Foundation
 
-In Microsoft Windows XP e versioni precedenti, il lettore utilizza DirectShow. In Windows Vista, il lettore talvolta utilizza DirectShow e talvolta utilizza Media Foundation.
+In Microsoft Windows XP e versioni precedenti, Player usa DirectShow. In Windows Vista, il lettore a volte usa DirectShow e a volte usa Media Foundation.
 
-Un plug-in DSP progettato per essere eseguito nella pipeline DirectShow è denominato *plug-in DSP di base*. Un plug-in DSP di base funge da oggetto DMO (DirectX Media Object). Un plug-in DSP di base può essere eseguito in modalità nativa nella pipeline DirectShow e può anche essere eseguito nella pipeline Media Foundation all'interno di un wrapper fornito da Media Foundation.
+Un plug-in DSP progettato per l'esecuzione nella pipeline DirectShow è denominato *plug-in DSP di base.* Un plug-in DSP di base funge da oggetto multimediale DirectX (DMO). Un plug-in DSP di base può essere eseguito in modo nativo nella pipeline di DirectShow e può anche essere eseguito nella pipeline Media Foundation all'interno di un wrapper fornito da Media Foundation.
 
-Un plug-in DSP progettato per l'esecuzione a livello nativo (senza wrapper necessario) sia nella pipeline DirectShow che in quella Media Foundation viene definito *plug-in DSP a doppia modalità*. Un plug-in DSP in modalità duale può fungere da DMO o come trasformazione Media Foundation (MFT).
+Un plug-in DSP progettato per l'esecuzione in modalità nativa (nessun wrapper necessario) nelle pipeline DirectShow e Media Foundation è denominato *plug-in DSP* in modalità doppia. Un plug-in DSP dual mode può fungere da DMO o da Media Foundation Transform (MFT).
 
-Un plug-in DSP è un oggetto COM confezionato come file con estensione dll autoregistrato. Le interfacce implementate dal plug-in variano a seconda che il plug-in sia stato progettato come plug-in DSP di base o come plug-in DSP a doppia modalità. Per informazioni dettagliate sulle interfacce che devono essere implementate dai plug-in DSP, vedere [interfacce obbligatorie](required-interfaces.md).
+Un plug-in DSP è un oggetto COM in pacchetto come file di .dll autoregistrazione. Le interfacce implementate dal plug-in variano a seconda che il plug-in sia progettato come plug-in DSP di base o come plug-in DSP dual-mode. Per informazioni dettagliate sulle interfacce che i plug-in DSP devono implementare, vedere [Interfacce necessarie.](required-interfaces.md)
 
-Un plug-in DSP eseguito nella pipeline Media Foundation (in modo nativo o di cui è stato eseguito il wrapper) deve registrare il modello di threading come "both". Per informazioni dettagliate sulle sottochiavi del registro di sistema e le voci associate ai plug-in DSP, vedere [registrazione dei plug-in DSP](registering-dsp-plug-ins.md).
+Un plug-in DSP eseguito nella pipeline di Media Foundation (in modo nativo o di cui è stato eseguito il wrapping) deve registrare il modello di threading come "Both". Per informazioni dettagliate sulle sottochiavi del Registro di sistema e sulle voci associate ai plug-in DSP, vedere [Registrazione dei plug-in DSP.](registering-dsp-plug-ins.md)
 
-Un plug-in DSP che implementa interfacce personalizzate e viene eseguito nella pipeline Media Foundation (in modalità nativa o a capo) deve essere associato a un file con estensione dll dello stub proxy in grado di effettuare il marshalling delle interfacce personalizzate tra i limiti dei processi. Per informazioni sul componente stub-proxy, vedere [aggiornamento dei plug-in DSP esistenti](updating-existing-dsp-plug-ins.md) e [aggiornamenti alla procedura guidata plug-in dsp per Windows Media Player 11](updates-to-the-dsp-plug-in-wizard-for-windows-media-player-11.md).
+Un plug-in DSP che implementa interfacce personalizzate ed esecuzioni nella pipeline di Media Foundation (in modo nativo o di cui è stato eseguito il wrapping) deve essere associato a un file .dll proxy-stub in grado di effettuare il marshalling delle interfacce personalizzate tra i limiti del processo. Per informazioni sul componente proxy-stub, vedere Aggiornamento di [plug-in DSP](updating-existing-dsp-plug-ins.md) esistenti e Aggiornamenti della Creazione guidata [plug-in DSP per Windows Media Player 11.](updates-to-the-dsp-plug-in-wizard-for-windows-media-player-11.md)
 
-Gli oggetti plug-in DSP non devono essere creati come singleton. Windows Media Player deve essere in grado di creare più istanze separate di un plug-in DSP specifico.
+Gli oggetti plug-in DSP non devono essere creati come singleton. Windows Media Player essere in grado di creare più istanze separate di un particolare plug-in DSP.
 
-I plug-in DSP eseguiti in Windows Vista Protected Media Path (PMP) devono essere firmati. Per ulteriori informazioni, vedere [la pagina relativa alla firma del codice per i componenti multimediali protetti in Windows Vista](/windows-hardware/test/hlk/).
+I plug-in DSP eseguiti nel Windows Vista Protected Media Path (PMP) devono essere firmati. Per altre informazioni, vedere [Firma del codice per i componenti multimediali protetti in Windows Vista.](/windows-hardware/test/hlk/)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -62,6 +62,6 @@ I plug-in DSP eseguiti in Windows Vista Protected Media Path (PMP) devono essere
 [**Panoramica per gli sviluppatori di plug-in DSP**](dsp-plug-in-developer-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

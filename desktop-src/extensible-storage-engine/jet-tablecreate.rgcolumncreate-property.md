@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_TABLECREATE.rgcolumncreate property'
+description: 'Altre informazioni su: JET_TABLECREATE.rgcolumncreate'
 title: JET_TABLECREATE.rgcolumncreate
 TOCTitle: 'rgcolumncreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgcolumncreate

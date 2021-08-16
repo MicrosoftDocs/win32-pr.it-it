@@ -23,13 +23,13 @@ ms.locfileid: "118961310"
 ---
 # <a name="indexedscopes-attribute"></a>Attributo IndexedScopes
 
-Elenco di ambiti di directory , ad esempio C: \\ o D: \) indicizzati.
+Elenco di ambiti di directory ,ad esempio C: \\ o D: \) indicizzati.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Ambiti indicizzati                               |
+| CN                | IndexedScopes                               |
 | Ldap-Display-Name | indexedScopes                               |
 | Dimensione              | \-                                          |
 | Privilegio di aggiornamento  | \-                                          |
@@ -121,7 +121,7 @@ Elenco di ambiti di directory , ad esempio C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -142,7 +142,7 @@ Elenco di ambiti di directory , ad esempio C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -163,7 +163,7 @@ Elenco di ambiti di directory , ad esempio C: \\ o D: \) indicizzati.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Falso                                                           |
+| Is-Single-Valued       | Falso                                                           |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |

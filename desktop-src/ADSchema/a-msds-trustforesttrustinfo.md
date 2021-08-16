@@ -4,7 +4,7 @@ description: Contiene le informazioni sul trust tra foreste (BLOB binario) usate
 ms.assetid: 60944ff6-d2b1-4f53-8557-7d79a7d9df51
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Trust-Forest-Trust-Info
+- Attributo MS-DS-Trust-Forest-Trust-Info Schema DI AD
 - Schema AD dell'attributo msDS-TrustForestTrustInfo
 topic_type:
 - apiref
@@ -32,8 +32,8 @@ Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema 
 | CN                | ms-DS-Trust-Forest-Trust-Info                                                                                      |
 | Ldap-Display-Name | msDS-TrustForestTrustInfo                                                                                          |
 | Dimensione              | \-                                                                                                                 |
-| Aggiorna privilegio  | \-                                                                                                                 |
-| Frequenza di aggiornamento  | Solo quando cambia la relazione di trust tra foreste. Questo problema può verificarsi in caso di modifica della topologia di una foresta trusted. |
+| Privilegio di aggiornamento  | \-                                                                                                                 |
+| Frequenza di aggiornamento  | Solo quando cambia la relazione di trust tra foreste. Questo problema può verificarsi se la topologia di una foresta trusted cambia. |
 | Attribute-Id      | 1.2.840.113556.1.4.1702                                                                                            |
 | System-Id-Guid    | 29cc866e-49d3-4969-942e-1dbc0925d183                                                                               |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                              |
@@ -57,7 +57,7 @@ Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
@@ -78,7 +78,7 @@ Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |
@@ -99,7 +99,7 @@ Contiene le informazioni sul trust tra foreste (BLOB binario) usate dal sistema 
 | ID collegamento                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| A valore singolo       | Vero                                                 |
+| Is-Single-Valued       | Vero                                                 |
 | Indicizzato             | Falso                                                |
 | Nel catalogo globale      | Vero                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                         |

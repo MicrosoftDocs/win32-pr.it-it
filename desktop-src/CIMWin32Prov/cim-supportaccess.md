@@ -1,8 +1,8 @@
 ---
-description: La \_ classe CIM SupportAccess definisce come ottenere assistenza per un prodotto.
+description: La classe CIM \_ SupportAccess definisce come ottenere assistenza per un prodotto.
 ms.assetid: f42a793f-d71e-498e-9c6b-581aa029a0dd
 ms.tgt_platform: multiple
-title: Classe CIM_SupportAccess
+title: CIM_SupportAccess classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,23 +19,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: db5f1dc4331bd50e2fc61899f9d45fe2cdb0eca0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c53254b51b228efb2c1f14b7fb5f07475fb275d20c7df6444dc88e048bb1d30f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104126871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020909"
 ---
-# <a name="cim_supportaccess-class"></a>CIM \_ SupportAccess (classe)
+# <a name="cim_supportaccess-class"></a>Classe CIM \_ SupportAccess
 
-La classe **CIM \_ SupportAccess** definisce come ottenere assistenza per un prodotto.
+La **classe CIM \_ SupportAccess** definisce come ottenere assistenza per un prodotto.
 
 > [!IMPORTANT]
-> Le classi CIM (Common Information Model) DMTF (Distributed Management Task Force) sono le classi padre sulle quali vengono compilate le classi WMI. Attualmente WMI supporta solo gli [schemi della versione CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintassi seguente è semplificata dal codice Managed Object Format (MOF) e include tutte le relative proprietà ereditate. Le proprietà sono elencate in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal Managed Object Format (MOF) e include tutte le proprietà ereditate. Le proprietà sono elencate in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,42 +53,42 @@ class CIM_SupportAccess
 
 ## <a name="members"></a>Members
 
-La classe **CIM \_ SupportAccess** presenta questi tipi di membri:
+La **classe CIM \_ SupportAccess** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **CIM \_ SupportAccess** dispone di queste proprietà.
+La **classe CIM \_ SupportAccess** ha queste proprietà.
 
 <dl> <dt>
 
 **CommunicationInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| FRU \| 002,11 "," MIF. DMTF \| FRU \| 002,12 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| FRU \| 002.11", "MIF. DMTF \| FRU \| 002.12")
 </dt> </dl>
 
-Dettagli della modalità di comunicazione. Ad esempio, se la proprietà **CommunicationMode** è "Phone", questa proprietà specifica il numero di telefono da chiamare.
+Dettagli della modalità di comunicazione. Ad esempio, se la **proprietà CommunicationMode** è "Telefono", questa proprietà specifica il numero di telefono da chiamare.
 
 </dd> <dt>
 
 **CommunicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt16**
+Tipo di dati: **uint16**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Supporto di DMTF \| \| 001,5 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Supporto DMTF \| \| 001.5")
 </dt> </dl>
 
 Forma di comunicazione da usare per ottenere supporto.
@@ -164,13 +164,13 @@ E-mail
 **Descrizione**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Supporto di DMTF \| \| 001,3 ")
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Supporto DMTF \| \| 001.3")
 </dt> </dl>
 
 Descrizione testuale del tipo di supporto fornito.
@@ -180,32 +180,32 @@ Descrizione testuale del tipo di supporto fornito.
 **Impostazioni locali**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Supporto \| di DMTF 001,2 "), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificatori: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Supporto DMTF \| \| 001.2"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Area geografica o dialetto della lingua a cui si riferisce questa risorsa di supporto.
+Dialetto geografico o linguistico a cui si riferiscono le risorse di supporto.
 
 </dd> <dt>
 
 **SupportAccessId**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Stringa arbitraria in formato libero definita dal fornitore del prodotto o dall'organizzazione che distribuisce il prodotto. Questa proprietà, poiché è una chiave, deve essere univoca nell'intera azienda.
+Stringa arbitraria in formato libero definita dal fornitore del prodotto o dall'organizzazione che distribuisce il prodotto. Questa proprietà, poiché è una chiave, deve essere univoca in tutta l'azienda.
 
 </dd> </dl>
 
@@ -213,7 +213,7 @@ Stringa arbitraria in formato libero definita dal fornitore del prodotto o dall'
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe avere apportato modifiche per correggere gli errori secondari, rispettare gli standard di documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -224,7 +224,7 @@ Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate 
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

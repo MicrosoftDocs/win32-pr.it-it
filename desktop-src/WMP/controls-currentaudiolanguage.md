@@ -38,7 +38,7 @@ Questa proprietà è un numero di **lettura/scrittura** (**long**).
 
 Un LCID identifica in modo univoco un particolare dialetto di lingua, denominato impostazioni locali.
 
-Ad Windows contenuto basato su supporti, le proprietà e i metodi correlati alla selezione della lingua supportano solo un singolo output.
+Ad Windows contenuto basato su contenuti multimediali, le proprietà e i metodi correlati alla selezione della lingua supportano solo un singolo output.
 
 Quando si utilizza contenuto DVD, se si specifica un LCID, verrà selezionata la prima traccia audio disponibile con l'ID lingua specificato.
 

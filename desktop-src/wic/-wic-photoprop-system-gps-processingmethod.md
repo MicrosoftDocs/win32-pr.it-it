@@ -1,19 +1,19 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. GPS. ProcessingMethod.
+description: Criteri dei metadati delle foto per la proprietà System.GPS.ProcessingMethod.
 ms.assetid: 840021a8-ec1d-4916-93b2-7cc1803e2d8c
-title: Criteri per i metadati delle foto di System. GPS. ProcessingMethod
+title: Criteri dei metadati delle foto di System.GPS.ProcessingMethod
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02bf1484eb8e8a53c65a9cd43c54b076e418d4eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 800515d3a7870fa2dc9b5a6ec8c19178889482fa820f66d7d98e8e3ff09870f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931741"
 ---
-# <a name="systemgpsprocessingmethod-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. GPS. ProcessingMethod
+# <a name="systemgpsprocessingmethod-photo-metadata-policy"></a>Criteri dei metadati delle foto di System.GPS.ProcessingMethod
 
-Criteri per i metadati delle foto per la proprietà [System. GPS. ProcessingMethod](../properties/props-system-gps-processingmethod.md) .
+Criteri dei metadati delle foto per [la proprietà System.GPS.ProcessingMethod.](../properties/props-system-gps-processingmethod.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_LPWSTR VT
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo di PROPVARIANT di input
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT di input
 
-VT \_ LPWSTR è preferibile, ma \_ viene accettato anche VT LPSTR.
+VT \_ LPWSTR è preferibile, ma viene accettato anche \_ VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
-### <a name="jpeg-policies"></a>Criteri di JPEG
+### <a name="jpeg-policies"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 27}     |             |
+| 1     | /app1/ifd/gps/{ushort=27}     |             |
 | 2     | /xmp/exif:GPSProcessingMethod | unicode     |
 
 
@@ -60,20 +60,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{ushort = 27}     |             |
+| 1     | /app1/ifd/gps/{ushort=27}     |             |
 | 2     | /xmp/exif:GPSProcessingMethod | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/GPS/{ushort = 27}     |
+| 1     | /app1/ifd/gps/{ushort=27}     |
 | 2     | /xmp/exif:gpsprocessingmethod |
 
 
@@ -82,14 +82,14 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                              | Formato disco |
 |-------|-----------------------------------|-------------|
 | 1     | /ifd/xmp/exif:GPSProcessingMethod | unicode     |
-| 2     | /IFD/GPS/{ushort = 27}              |             |
+| 2     | /ifd/gps/{ushort=27}              |             |
 
 
 
@@ -102,20 +102,20 @@ I valori di schemi diversi vengono risolti.
 | JSON | Percorso                              | Formato disco |
 |-------|-----------------------------------|-------------|
 | 1     | /ifd/xmp/exif:GPSProcessingMethod | unicode     |
-| 2     | /IFD/GPS/{ushort = 27}              |             |
+| 2     | /ifd/gps/{ushort=27}              |             |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                              |
 |-------|-----------------------------------|
 | 1     | /ifd/xmp/exif:gpsprocessingmethod |
-| 2     | /IFD/GPS/{ushort = 27}              |
+| 2     | /ifd/gps/{ushort=27}              |
 
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. GPS. ProcessingMethod](../properties/props-system-gps-processingmethod.md)
+[System.GPS.ProcessingMethod](../properties/props-system-gps-processingmethod.md)
 </dt> </dl>
 
  

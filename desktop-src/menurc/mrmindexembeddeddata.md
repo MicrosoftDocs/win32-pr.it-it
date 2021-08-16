@@ -1,9 +1,9 @@
 ---
 title: Funzione MrmIndexEmbeddedData (MrmResourceIndexer.h)
-description: Indicizza una singola risorsa dati incorporata appartenente a un'app UWP.
+description: Indicizza una singola risorsa embeddeddata appartenente a un'app UWP.
 ms.assetid: 4DA37CF9-43B6-44EE-8A10-DBD4510D7885
 keywords:
-- Menu e altre risorse della funzione MrmIndexEmbeddedData
+- Menu della funzione MrmIndexEmbeddedData e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.locfileid: "118972000"
 ---
 # <a name="mrmindexembeddeddata-function"></a>Funzione MrmIndexEmbeddedData
 
-\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Indicizza una singola **risorsa dati incorporata** appartenente a un'app UWP. Accetta un elenco esplicito (ma facoltativo) di qualificatori di risorsa. Per altre informazioni e procedure dettagliate basate su scenari su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti [(PRI)](/windows/uwp/app-resources/pri-apis-custom-build-systems)e sistemi di compilazione personalizzati.
+Indicizza una singola **risorsa embeddeddata** appartenente a un'app UWP. Accetta un elenco esplicito (ma facoltativo) di qualificatori di risorse. Per altre informazioni e procedure dettagliate basate su scenario su come usare queste API, vedere Api di indicizzazione delle risorse dei pacchetti e sistemi [di compilazione personalizzati.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,7 +64,7 @@ URI della risorsa da assegnare alla risorsa. Il percorso verrà usato come nome 
 
 </dd> <dt>
 
-*dati incorporati* \[ Pollici\]
+*embeddedData* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const \* BYTE**
@@ -87,7 +87,7 @@ Dimensioni dei dati a cui punta *embeddedData.*
 
 Tipo: **PCWSTR**
 
-Elenco facoltativo di qualificatori di risorsa, ad esempio L"language-en-US \_ scale-100 \_ contrast-standard". Una stringa vuota o **nullptr** indica una risorsa neutra. I qualificatori di *risorsa non* vengono dedotte da *resourceUri.*
+Elenco facoltativo di qualificatori di risorse, ad esempio L"language-en-US \_ scale-100 \_ contrast-standard". Una stringa vuota o **nullptr** indica una risorsa neutra. I qualificatori di *risorsa non* vengono dedotte da *resourceUri*.
 
 </dd> </dl>
 
@@ -99,9 +99,9 @@ S \_ OK se la funzione ha avuto esito positivo, in caso contrario un altro valor
 
 ## <a name="remarks"></a>Commenti
 
-Se si vogliono specificare qualificatori di risorsa, passarli nel *parametro qualifiers.* I qualificatori di *risorsa non* vengono dedotte da *resourceUri.*
+Se si vogliono specificare qualificatori di risorsa, passarli nel *parametro qualifiers.* I qualificatori di *risorsa non* vengono dedotte da *resourceUri*.
 
-Il segmento del nome file *di resourceUri* viene usato come nome della risorsa.
+Il segmento di nome file *di resourceUri* viene usato come nome della risorsa.
 
 ## <a name="requirements"></a>Requisiti
 

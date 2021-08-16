@@ -1,23 +1,23 @@
 ---
-title: Rendering Multiple-Pass
-description: Il rendering a più passaggi è un processo in cui un'applicazione attraversa più volte il grafico della scena per produrre un output per il rendering sullo schermo.
+title: Multiple-Pass rendering
+description: Il rendering a più passi è un processo in cui un'applicazione attraversa il grafico della scena più volte per produrre un output per il rendering sulla visualizzazione.
 ms.assetid: 9a11686a-fd99-4d40-8b02-6f8ec18346e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70fcf7f3f04bd641fdf82c9cf317e8a2ec99e85c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 242573dea2982f3525082187aad536a407e446c4ce59f116f53b8fa0d40fc582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124209"
 ---
-# <a name="multiple-pass-rendering"></a>Rendering Multiple-Pass
+# <a name="multiple-pass-rendering"></a>Multiple-Pass rendering
 
-Il rendering a più passaggi è un processo in cui un'applicazione attraversa più volte il grafico della scena per produrre un output per il rendering sullo schermo. Il rendering a più passaggi migliora le prestazioni perché suddivide le scene complesse in attività che possono essere eseguite simultaneamente.
+Il rendering a più passi è un processo in cui un'applicazione attraversa il grafico della scena più volte per produrre un output per il rendering sulla visualizzazione. Il rendering a più passi migliora le prestazioni perché suddivide scene complesse in attività che possono essere eseguite contemporaneamente.
 
-Per eseguire il rendering a più passaggi, è necessario creare un contesto posticipato e un elenco di comandi per ogni passaggio aggiuntivo. Mentre l'applicazione attraversa il grafico della scena, registra i comandi (ad esempio, il rendering di comandi come il [**disegno**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw)) in un contesto posticipato. Al termine dell'attraversamento, l'applicazione chiama il metodo [**FinishCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-finishcommandlist) sul contesto posticipato. Infine, l'applicazione chiama il metodo [**ExecuteCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-executecommandlist) nel contesto immediato per eseguire i comandi in ogni elenco di comandi.
+Per eseguire il rendering a più passaggi, è necessario creare un contesto posticipato e un elenco di comandi per ogni passaggio aggiuntivo. Mentre l'applicazione attraversa il grafico della scena, registra i comandi (ad esempio, il rendering di comandi come [**Draw)**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw)in un contesto posticipato. Al termine dell'attraversamento, l'applicazione chiama il [**metodo FinishCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-finishcommandlist) sul contesto posticipato. Infine, l'applicazione chiama [**il metodo ExecuteCommandList**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-executecommandlist) sul contesto immediato per eseguire i comandi in ogni elenco di comandi.
 
-Nello pseudocodice seguente viene illustrato come eseguire il rendering a più passaggi:
+Lo pseudocodice seguente illustra come eseguire il rendering a più passaggi:
 
 ``` syntax
 {
@@ -46,9 +46,9 @@ Nello pseudocodice seguente viene illustrato come eseguire il rendering a più p
 ```
 
 > [!Note]  
-> Il contesto immediato modifica una risorsa, che è associata al contesto immediato come visualizzazione della destinazione di rendering (RTV); al contrario, ogni contesto posticipato utilizza semplicemente la risorsa, associata al contesto posticipato come visualizzazione risorse dello shader (SRV). Per ulteriori informazioni sui contesti immediati e posticipati, vedere [rendering immediato e posticipato](overviews-direct3d-11-render-multi-thread-render.md).
+> Il contesto immediato modifica una risorsa, associata al contesto immediato come visualizzazione di destinazione di rendering (RTV). Al contrario, ogni contesto posticipato usa semplicemente la risorsa , associata al contesto posticipato come visualizzazione di risorse shader (SRV). Per altre informazioni sui contesti immediati e posticimanti, vedere [Rendering immediato e posticipato.](overviews-direct3d-11-render-multi-thread-render.md)
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -57,9 +57,9 @@ Nello pseudocodice seguente viene illustrato come eseguire il rendering a più p
 [Rendering](overviews-direct3d-11-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

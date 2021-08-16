@@ -35,7 +35,7 @@ DFM_WM_DRAWITEM
 *wParam* \[ Pollici\]
 </dt> <dd>
 
-Identificatore del controllo che ha inviato il messaggio **\_ WM \_ DRAWITEM di DFM.** Se il messaggio è stato inviato da un menu, questo parametro è zero.
+Identificatore del controllo che ha inviato il **messaggio \_ WM \_ DRAWITEM DFM.** Se il messaggio è stato inviato da un menu, questo parametro è zero.
 
 </dd> <dt>
 
@@ -52,9 +52,9 @@ Se un'applicazione elabora questo messaggio, deve restituire **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Il **membro itemAction** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) specifica l'operazione di disegno che deve essere eseguita da un'applicazione.
+Il **membro itemAction** della [**struttura DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) specifica l'operazione di disegno che deve essere eseguita da un'applicazione.
 
-Prima di tornare dall'elaborazione di questo messaggio, un'applicazione deve garantire che il contesto di dispositivo identificato dal membro **hDC** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) sia nello stato predefinito.
+Prima di restituire dall'elaborazione di questo messaggio, un'applicazione deve assicurarsi che il contesto di dispositivo identificato dal membro **hDC** della struttura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) sia nello stato predefinito.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -62,8 +62,8 @@ Prima di tornare dall'elaborazione di questo messaggio, un'applicazione deve gar
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                                |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
 | Intestazione<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 

@@ -1,31 +1,31 @@
 ---
-description: L'azione di amministrazione è un'azione di primo livello utilizzata per eseguire installazioni amministrative.
+description: L'azione ADMIN è un'azione di primo livello usata per eseguire installazioni amministrative.
 ms.assetid: 9925a645-5909-42c7-9de8-f908a5e42be9
-title: Azione di amministrazione
+title: Azione ADMIN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00106c9ab7877918e122f1ec9bd201fe30bb68b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 785bd69a8de7da1df9a812f7e89d589b6e939b3eedd6b3cecb66bf86407636cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103881153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145934"
 ---
-# <a name="admin-action"></a>Azione di amministrazione
+# <a name="admin-action"></a>Azione ADMIN
 
-L'azione di amministrazione è un'azione di primo livello utilizzata per eseguire [installazioni amministrative](administrative-installation.md).
+L'azione ADMIN è un'azione di primo livello usata per eseguire [installazioni amministrative.](administrative-installation.md)
 
-## <a name="sequence-restrictions"></a>Restrizioni sequenza
+## <a name="sequence-restrictions"></a>Restrizioni relative alle sequenze
 
-Non esistono restrizioni di sequenza.
+Non sono presenti restrizioni di sequenza.
 
 ## <a name="actiondata-messages"></a>Messaggi ActionData
 
-Nessun messaggio ActionData.
+Non sono presenti messaggi ActionData.
 
 ## <a name="remarks"></a>Commenti
 
-L'azione di amministrazione non viene chiamata dalla sequenza della tabella delle azioni, Windows Installer esegue questa azione quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) viene chiamato con il parametro *szCommandLine* impostato su "Action = admin" o l'eseguibile della riga di comando Msiexec.exe viene chiamato con l'opzione della riga di comando "/a".
+L'azione ADMIN non viene chiamata dall'interno della sequenza di tabella delle azioni. Il programma di installazione di Windows esegue questa azione quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) viene chiamato con il parametro *szCommandLine* impostato su "ACTION=ADMIN" o il Msiexec.exe eseguibile della riga di comando viene chiamato con l'opzione della riga di comando '/a'.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

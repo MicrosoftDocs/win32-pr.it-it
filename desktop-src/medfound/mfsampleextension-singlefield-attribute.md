@@ -31,7 +31,7 @@ Per impostare questo attributo, chiamare [**IMFAttributes::SetUINT32**](/windows
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore è **TRUE,** l'esempio contiene un campo. Se il valore è **FALSE** o l'attributo non è impostato, l'esempio contiene un frame completo. Due campi, se interlacciati, o un frame progressivo.
+Se il valore è **TRUE,** l'esempio contiene un campo. Se il valore è **FALSE** o l'attributo non è impostato, l'esempio contiene un frame completo. Due campi, se interlacciati o con frame progressivo.
 
 Se il tipo di supporto è fotogrammi progressivi o campi interleaved, questo attributo deve essere **FALSE** o non impostato.
 
@@ -57,7 +57,7 @@ La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi Media Foundation alfabetici](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi di esempio](sample-attributes.md)

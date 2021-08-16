@@ -1,9 +1,9 @@
 ---
-title: INEVASELIDER.positionImage
+title: CUSTOMSLIDER.positionImage
 description: L'attributo positionImage specifica o recupera la mappa immagine usata per determinare la posizione dell'immagine dal file di immagine da visualizzare.
 ms.assetid: 7e99dc21-ebba-438a-a983-190dbe429578
 keywords:
-- WINDOWS MEDIA PLAYER
+- CUSTOMSLIDER.positionImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117749993"
 ---
-# <a name="customsliderpositionimage"></a>INEVASELIDER.positionImage
+# <a name="customsliderpositionimage"></a>CUSTOMSLIDER.positionImage
 
 **L'attributo positionImage** specifica o recupera la mappa immagine usata per determinare la posizione dell'immagine dal file di immagine da visualizzare.
 
@@ -36,23 +36,23 @@ Questo attributo è una stringa di **lettura/scrittura** contenente il nome di u
 
 Questo attributo è obbligatorio e deve essere specificato.
 
-**PositionImage** non viene visualizzato. Viene invece utilizzata come mappa che definisce le aree selezionabili dell'immagine visualizzata. L'immagine visualizzata è una delle immagini secondarie del file di immagine e rappresenta lo stato effettivo del dispositivo di scorrimento. PositionImage **include** un numero di aree in scala di grigi uguale al numero di queste immagini secondarie. Le immagini secondarie devono avere le stesse dimensioni di **positionImage** oppure il dispositivo di scorrimento personalizzato non funzionerà correttamente.
+**PositionImage** non viene visualizzato. Funge invece da mappa che definisce le aree selezionabili dell'immagine visualizzata. L'immagine visualizzata è una delle immagini secondarie del file di immagine e rappresenta lo stato effettivo del dispositivo di scorrimento. **PositionImage** include un numero di aree in scala di grigi uguale al numero di queste immagini secondarie. Le immagini secondarie devono avere le stesse dimensioni di **positionImage** oppure il dispositivo di scorrimento personalizzato non funzionerà correttamente.
 
-Qualsiasi area non in scala di grigi non sarà selezionabile. Le aree selezionabili devono essere impostate su valori di colore che variano uniformemente nello spettro della scala di grigi dal nero al bianco, con la prima area di colore nero puro e l'ultima area di colore bianco puro. I valori di colore di ogni area successiva devono essere incrementati di un valore uguale a 255 diviso per il numero totale di aree meno uno, arrotondando al numero intero più vicino.
+Qualsiasi area non in scala di grigi non sarà selezionabile. Le aree selezionabili devono essere impostate su valori di colore che variano uniformemente nello spettro della scala di grigi dal nero al bianco, con la prima area nera pura e l'ultima area bianca pura. I valori di colore di ogni area successiva devono essere incrementati di un valore uguale a 255 diviso per il numero totale di aree meno uno, arrotondando al numero intero più vicino.
 
-Ad esempio, se sono presenti sei aree, l'incremento sarà 51 (255 diviso per 5) e i sei valori della scala grigia saranno 0, 51, 102, 153, 204 e 255. I valori di colore esadecimali per le sei aree saranno \# quindi 000000, \# 333333, \# 666666, \# 999999, \# CCCCCC e \# FFFFFF.
+Ad esempio, se sono presenti sei aree, l'incremento sarà 51 (255 diviso per 5) e i sei valori della scala grigia saranno 0, 51, 102, 153, 204 e 255. I valori dei colori esadecimali per le sei aree saranno \# quindi 000000, \# 333333, \# 666666, \# 999999, \# CCCCCC e \# FFFFFFFF.
 
-In questo modo, le aree avranno una sequenza determinata dai valori dei colori in scala di grigi e questa sequenza corrisponderà alla sequenza di immagini secondarie nel file di immagine. Quando si fa clic su una delle aree, viene  visualizzata l'immagine secondaria corrispondente e il valore del dispositivo di scorrimento personalizzato viene aggiornato di conseguenza.
+In questo modo, le aree avranno una sequenza dettata dai relativi valori di colore in scala di grigi e questa sequenza corrisponderà alla sequenza di immagini secondarie nel file di immagine. Quando si fa clic su una delle aree, viene  visualizzata l'immagine secondaria corrispondente e il valore del dispositivo di scorrimento personalizzato viene aggiornato di conseguenza.
 
-I tipi di file di immagine supportati sono BMP, JPG, PNG e GIF (senza GIF animate).
+I tipi di file di immagine supportati sono BMP, JPG, PNG e GIF (senza includere GIF animate).
 
 ## <a name="examples"></a>Esempio
 
-Di seguito è riportato un esempio di positionImage del dispositivo **di scorrimento personalizzato.** L'immagine corrispondente è illustrata nella sezione di esempio della **proprietà image.**
+Di seguito è riportato un esempio di posizione personalizzata del dispositivo **di scorrimentoImage**. L'immagine corrispondente è illustrata nella sezione di esempio della **proprietà image.**
 
-![immagine di posizione di esempio](images/dialmap.png)
+![immagine posizione di esempio](images/dialmap.png)
 
-Nel codice seguente viene illustrato l'utilizzo degli **attributi DISASTIDER.**
+Il codice seguente illustra l'uso degli **attributi CUSTOMSLIDER.**
 
 
 ```XML
@@ -148,10 +148,10 @@ Nel codice seguente viene illustrato l'utilizzo degli **attributi DISASTIDER.**
 
 <dl> <dt>
 
-[**Elemento INSODELIDER**](customslider-element.md)
+[**Elemento CUSTOMSLIDER**](customslider-element.md)
 </dt> <dt>
 
-[**ESEREZIONERI.immagine**](customslider-image.md)
+[**CUSTOMSLIDER.image**](customslider-image.md)
 </dt> </dl>
 
  

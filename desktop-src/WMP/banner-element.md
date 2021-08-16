@@ -3,7 +3,7 @@ title: Elemento BANNER
 description: L'elemento BANNER definisce un URL di un file grafico che verrà visualizzato nel pannello di visualizzazione.
 ms.assetid: 8b4a3369-a687-40a8-b5df-afb0e0518cd1
 keywords:
-- Finestra di elemento BANNER Media Player
+- Elemento BANNER Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e257c14e5908482cdf8de458c259bc64a55c6d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91b3de50c1360337c1344a1af1a0696361614dbc293390470e7c196e53528a1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135964"
 ---
 # <a name="banner-element"></a>Elemento BANNER
 
-L'elemento **banner** definisce un URL di un file grafico che verrà visualizzato nel pannello di visualizzazione.
+**L'elemento BANNER** definisce un URL di un file grafico che verrà visualizzato nel pannello di visualizzazione.
 
 ``` syntax
 <BANNER
@@ -33,7 +33,7 @@ L'elemento **banner** definisce un URL di un file grafico che verrà visualizzat
 
 ## <a name="attributes"></a>Attributi
 
-**Href** (obbligatorio)
+**HREF** (obbligatorio)
 
 URL di un file grafico visualizzato nel pannello di visualizzazione.
 
@@ -43,8 +43,8 @@ URL di un file grafico visualizzato nel pannello di visualizzazione.
 
 | Gerarchia       | Elementi                   |
 |-----------------|----------------------------|
-| Elementi padre | **ASX**, **voce**         |
-| Elementi figlio  | **abstract**, **moreinfo** |
+| Elementi padre | **ASX**, **ENTRY**         |
+| Elementi figlio  | **ABSTRACT**, **MOREINFO** |
 
 
 
@@ -52,17 +52,17 @@ URL di un file grafico visualizzato nel pannello di visualizzazione.
 
 ## <a name="remarks"></a>Commenti
 
-Questo elemento definisce un URL di un file grafico visualizzato nel pannello di visualizzazione di Windows Media Player, sotto il contenuto video. Se il supporto è solo audio, l'icona del banner viene visualizzata da sola. Windows Media Player riserva uno spazio 32 pixel di altezza di 194 pixel di larghezza (barra del banner) per l'immagine. Se il grafico definito nell'URL è più piccolo, viene visualizzato con le dimensioni originali. Se il grafico è più grande dello spazio riservato, Windows Media Player ridurrà l'immagine per adattarla allo spazio.
+Questo elemento definisce l'URL di un file grafico visualizzato nel pannello Windows Media Player, sotto il contenuto video. Se il contenuto multimediale è solo audio, l'immagine del banner viene visualizzata da sola. Windows Media Player riserva uno spazio di 32 pixel di altezza per 194 pixel (la barra del banner) per l'immagine. Se l'elemento grafico definito nell'URL è inferiore, viene visualizzato con le dimensioni originali. Se l'immagine è più grande dello spazio riservato, Windows Media Player ritaglia l'immagine per adattarla allo spazio.
 
-È possibile usare un elemento **astratto** nell'ambito dell'elemento **banner** per visualizzare il testo come descrizione comando quando l'utente posiziona il puntatore del mouse sull'icona del banner. Un elemento **moreinfo** all'interno di un elemento **banner** definisce un URL a cui l'utente viene utilizzato quando l'utente fa clic sull'icona del banner. L'URL può essere qualsiasi percorso o protocollo, ad esempio un collegamento di posta elettronica, un URL Hypertext Transfer Protocol (HTTP) a un sito Web o anche un comando Microsoft JScript. Quando il puntatore viene spostato sul grafico, il grafico viene visualizzato in rilievo e ha un aspetto simile a un pulsante.
+È possibile usare un elemento **ABSTRACT** nell'ambito dell'elemento **BANNER** per visualizzare il testo come descrizione comando quando l'utente posiziona il puntatore del mouse sull'immagine del banner. Un **elemento MOREINFO** all'interno **di un elemento BANNER** definisce un URL a cui l'utente viene preso quando l'utente fa clic sull'immagine del banner. L'URL può essere qualsiasi percorso o protocollo, ad esempio un collegamento di posta elettronica, un URL Hypertext Transfer Protocol (HTTP) a un sito Web o anche un comando JScript Microsoft. Quando il puntatore viene spostato sull'elemento grafico, l'immagine viene in rilievo e ha l'aspetto di un pulsante.
 
-Viene visualizzato un elemento **banner** definito per un elemento **ASX** mentre tutti i clip della playlist sono in riproduzione. Un elemento **banner** definito in un elemento **entry** viene visualizzato solo quando il clip sta eseguendo la riproduzione e durante tale periodo esegue l'override di qualsiasi banner definito all'interno dell'elemento **ASX** padre. È possibile specificare in che modo Windows Media Player riserva spazio per il banner impostando l'attributo **BANNERBAR** dell'elemento **ASX** .
+Un **elemento BANNER** definito per un elemento **ASX** viene visualizzato durante la riproduzione di tutte le clip nella playlist. Un **elemento BANNER** definito in un elemento **ENTRY** viene visualizzato solo durante la riproduzione del clip e durante tale periodo esegue l'override di qualsiasi banner definito all'interno dell'elemento **ASX** padre. È possibile specificare come Windows Media Player spazio per il banner impostando **l'attributo BANNERBAR** dell'elemento **ASX.**
 
 Le immagini banner non sono supportate con i file DRM o quando Windows Media Player è incorporato in una pagina Web.
 
 ## <a name="examples"></a>Esempio
 
-Di seguito è riportato un esempio di elemento **banner** senza elementi figlio:
+Di seguito è riportato un esempio di **elemento BANNER** senza elementi figlio:
 
 
 ```XML
@@ -71,7 +71,7 @@ Di seguito è riportato un esempio di elemento **banner** senza elementi figlio:
 
 
 
-Di seguito è riportato un esempio di un elemento **banner** contenente elementi **abstract** e **moreinfo** .
+Di seguito è riportato un esempio di elemento **BANNER** contenente **gli elementi ABSTRACT** e **MOREINFO.**
 
 
 ```XML
@@ -94,7 +94,7 @@ Di seguito è riportato un esempio di un elemento **banner** contenente elementi
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -102,10 +102,10 @@ Di seguito è riportato un esempio di un elemento **banner** contenente elementi
 
 <dl> <dt>
 
-[**Riferimento agli elementi metafile di Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Informazioni di riferimento per gli elementi metafile multimediali**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Informazioni di riferimento sui metafile di Windows Media**](windows-media-metafile-reference.md)
+[**Windows Informazioni di riferimento sui metafile multimediali**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

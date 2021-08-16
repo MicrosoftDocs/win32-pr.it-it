@@ -1,17 +1,17 @@
 ---
 description: Matrice di stringhe di stato del dispositivo.
 ms.assetid: bdba41b5-63e6-4534-83ac-90a799365419
-title: System. Devices. status
+title: System.Devices.Status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 485df9fef86758fffc7a84cdadd5737c3d14ddd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 824ada27c313103e3b5d7e2db230bfd19a38020b938602fc1d519580b9553d2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106312994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097140"
 ---
-# <a name="systemdevicesstatus"></a>System. Devices. status
+# <a name="systemdevicesstatus"></a>System.Devices.Status
 
 Matrice di stringhe di stato del dispositivo
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

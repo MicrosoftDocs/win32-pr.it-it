@@ -24,10 +24,10 @@ ms.locfileid: "117768896"
 
 \[La **funzione CryptCATCDFEnumAttributesWithCDFTag** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile.\]
 
-La **funzione CryptCATCDFEnumAttributesWithCDFTag** enumera gli attributi dei file membro nella sezione **CatalogFiles** di un file di definizione del catalogo (CDF). **CryptCATCDFEnumAttributesWithCDFTag** viene chiamato da [MakeCat.](makecat.md)
+La **funzione CryptCATCDFEnumAttributesWithCDFTag** enumera gli attributi dei file membro nella sezione **CatalogFiles** di un file di definizione del catalogo (CDF). **CryptCATCDFEnumAttributesWithCDFTag** viene chiamato da [MakeCat](makecat.md).
 
 > [!Note]  
-> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per il collegamento dinamico a Mssign32.dll.
+> A questa funzione non è associato alcun file di intestazione o libreria di importazione. Per chiamare questa funzione, è necessario creare un file di intestazione definito dall'utente e usare le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) per collegarsi dinamicamente a Mssign32.dll.
 
  
 
@@ -74,7 +74,7 @@ Puntatore a una [**struttura CRYPTCATMEMBER**](/windows/win32/api/mscat/ns-mscat
 *pPrevAttr* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una [**struttura CRYPTCATATTRIBUTE**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) per un attributo del membro di file nella funzione CDF a cui punta *pCDF.*
+Puntatore a una [**struttura CRYPTCATATTRIBUTE**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) per un attributo del membro file nella funzione CDF a cui punta *pCDF*.
 
 </dd> <dt>
 
@@ -87,15 +87,15 @@ Puntatore a una funzione definita dall'utente per gestire gli errori di analisi 
 
 ## <a name="return-value"></a>Valore restituito
 
-In caso di esito positivo, questa funzione restituisce un puntatore a una [**struttura CRYPTCATATTRIBUTE.**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) La **funzione CryptCATCDFEnumAttributesWithCDFTag** restituisce un **puntatore NULL** se ha esito negativo.
+In caso di esito positivo, questa funzione restituisce un puntatore a una [**struttura CRYPTCATATTRIBUTE.**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) La **funzione CryptCATCDFEnumAttributesWithCDFTag** restituisce un **puntatore NULL** in caso di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione viene in genere chiamata in un ciclo per enumerare tutti gli attributi dei membri del file di catalogo in una funzione CDF. Prima di immettere il ciclo, impostare *pPrevAttr* su **NULL.** La funzione restituisce un puntatore al primo attributo. Impostare *pPrevAttr* sul valore restituito della funzione per le iterazioni successive del ciclo.
+Questa funzione viene in genere chiamata in un ciclo per enumerare tutti gli attributi dei membri del file di catalogo in una funzione definita dall'utente. Prima di immettere il ciclo, *impostare pPrevAttr* su **NULL.** La funzione restituisce un puntatore al primo attributo. Impostare *pPrevAttr* sul valore restituito della funzione per le iterazioni successive del ciclo.
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra la sequenza corretta di assegnazioni per il *parametro pPrevAttr* ( `pAttr` ).
+Nell'esempio seguente viene illustrata la sequenza corretta di assegnazioni per il *parametro pPrevAttr* ( `pAttr` ).
 
 
 ```C++
@@ -142,7 +142,7 @@ L'esempio seguente illustra la sequenza corretta di assegnazioni per il *paramet
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                             |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Wintrust.dll</dt> </dl> |
 
 

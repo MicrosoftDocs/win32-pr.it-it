@@ -1,20 +1,20 @@
 ---
 title: Metodi ITsSbServiceNotification
-description: Le interfacce ITsSbServiceNotification espone i metodi seguenti.
+description: Le interfacce ITsSbServiceNotification espongono i metodi seguenti.
 ms.assetid: B2DED62A-03B0-4837-A5D2-FC7EFB7EEF0E
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7272f8613b9ca3321e2ab452e7bc9353f9b4b5d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e575c8c8cd7beccb29c1a7ba8216bf56781e095b1b83a3522c9bf5206ce860a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104330735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138354"
 ---
 # <a name="itssbservicenotification-methods"></a>Metodi ITsSbServiceNotification
 
-Le interfacce [**ITsSbServiceNotification**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbservicenotification) espone i metodi seguenti.
+Le [**interfacce ITsSbServiceNotification**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbservicenotification) espongono i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ Le interfacce [**ITsSbServiceNotification**](/windows/desktop/api/sbtsv/nn-sbtsv
 [**Metodo NotifyServiceFailure**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbservicenotification-notifyservicefailure)
 </dt> <dd>
 
-Notifica ai plug-in registrati che Connessione Desktop remoto il servizio Gestore connessione Desktop remoto è stato arrestato.
+Notifica ai plug-in registrati che il servizio Connessione Desktop remoto Broker (Gestore connessione Desktop remoto) è stato arrestato.
 
 </dd> <dt>
 
@@ -34,9 +34,9 @@ Notifica ai plug-in registrati che il servizio Gestore connessione Desktop remot
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

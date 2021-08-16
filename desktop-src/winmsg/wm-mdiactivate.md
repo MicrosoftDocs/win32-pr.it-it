@@ -1,19 +1,19 @@
 ---
-description: Un'applicazione invia il \_ messaggio WM MDIACTIVATE a una finestra del client di interfaccia a documenti multipli (MDI) per indicare alla finestra client di attivare una finestra figlio MDI diversa.
+description: Un'applicazione invia il messaggio WM MDIACTIVATE a una finestra client dell'interfaccia a documenti multipli per indicare alla finestra client di attivare un'altra \_ finestra figlio MDI.
 ms.assetid: c5de18b5-fac3-4e55-9eca-3b6672df0e7b
-title: Messaggio WM_MDIACTIVATE (winuser. h)
+title: WM_MDIACTIVATE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b240c41d3b7127a5d69b855f3a5587e194b02d96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8b71e0f3755d76ecb44d60eecbd3b92c124aa59339a6fbf59a098b1eeb274f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106312375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119931271"
 ---
-# <a name="wm_mdiactivate-message"></a>\_Messaggio MDIACTIVATE WM
+# <a name="wm_mdiactivate-message"></a>Messaggio \_ WM MDIACTIVATE
 
-Un'applicazione invia il messaggio **WM \_ MDIACTIVATE** a una finestra del client di interfaccia a documenti multipli (MDI) per indicare alla finestra client di attivare una finestra figlio MDI diversa.
+Un'applicazione invia il messaggio **\_ WM MDIACTIVATE** a una finestra client dell'interfaccia a documenti multipli per indicare alla finestra client di attivare un'altra finestra figlio MDI.
 
 
 ```C++
@@ -50,25 +50,25 @@ Una finestra figlio MDI deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Quando la finestra client elabora questo messaggio, invia **WM \_ MDIACTIVATE** alla finestra figlio in fase di disattivazione e alla finestra figlio attivata. I parametri del messaggio ricevuti da una finestra figlio MDI sono i seguenti:
+Quando la finestra client elabora questo messaggio, invia **WM \_ MDIACTIVATE** alla finestra figlio in fase di disattivazione e alla finestra figlio da attivare. I parametri del messaggio ricevuti da una finestra figlio MDI sono i seguenti:
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Handle per la finestra figlio MDI da disattivare.
+Handle per la finestra figlio MDI in fase di disattivazione.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Handle per la finestra figlio MDI attivata.
+Handle per la finestra figlio MDI da attivare.
 
 </dd> </dl>
 
-Una finestra figlio MDI viene attivata indipendentemente dalla finestra cornice MDI. Quando la finestra cornice diventa attiva, la finestra figlio abilitata per l'ultima volta con il messaggio **WM \_ MDIACTIVATE** riceve il messaggio [**WM \_ NCACTIVATE**](wm-ncactivate.md) per creare una cornice e una barra del titolo attive; la finestra figlio non riceve un altro messaggio **WM \_ MDIACTIVATE** .
+Una finestra figlio MDI viene attivata indipendentemente dalla finestra cornice MDI. Quando la finestra cornice diventa attiva, l'ultima finestra figlio attivata tramite il messaggio **WM \_ MDIACTIVATE** riceve il messaggio [**WM \_ NCACTIVATE**](wm-ncactivate.md) per disegnare una cornice della finestra attiva e una barra del titolo. La finestra figlio non riceve un altro messaggio **WM \_ MDIACTIVATE.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -78,7 +78,7 @@ Una finestra figlio MDI viene attivata indipendentemente dalla finestra cornice 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -89,13 +89,13 @@ Una finestra figlio MDI viene attivata indipendentemente dalla finestra cornice 
 **Riferimento**
 </dt> <dt>
 
-[**\_MDIGETACTIVE WM**](wm-mdigetactive.md)
+[**WM \_ MDIGETACTIVE**](wm-mdigetactive.md)
 </dt> <dt>
 
-[**\_MDINEXT WM**](wm-mdinext.md)
+[**WM \_ MDINEXT**](wm-mdinext.md)
 </dt> <dt>
 
-[**\_NCACTIVATE WM**](wm-ncactivate.md)
+[**WM \_ NCACTIVATE**](wm-ncactivate.md)
 </dt> <dt>
 
 **Informazioni concettuali**

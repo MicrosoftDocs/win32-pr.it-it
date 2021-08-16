@@ -3,8 +3,8 @@ title: Classe StreamSelectOperation
 description: Registra un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da GetMuteAsync e fornisce un metodo che restituisce i risultati dell'operazione. | Classe StreamSelectOperation
 ms.assetid: 681142B4-AECD-42D0-A2D4-494E69A29025
 keywords:
-- Classe StreamSelectOperation API Di streaming multimediale
-- Classe StreamSelectOperation API Streaming multimediale , descritta
+- CLASSE StreamSelectOperation API Streaming multimediale
+- Classe StreamSelectOperation API Streaming multimediale, descritta
 topic_type:
 - apiref
 api_name:
@@ -52,7 +52,7 @@ La **classe StreamSelectOperation** ha queste proprietà.
 
 | Proprietà                                                        | Tipo di accesso           | Descrizione                                                                                                                                                                             |
 |:----------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completi**](streamselectoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi che viene richiamato al completamento dell'operazione asincrona avviata da [**SelectBestStreamAsync.**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85))<br/> |
+| [**Completi**](streamselectoperation-completed.md)<br/> | Lettura/Scrittura<br/> | Ottiene o imposta un gestore eventi richiamato quando viene completata l'operazione asincrona avviata da [**SelectBestStreamAsync.**](/previous-versions/windows/desktop/legacy/hh829002(v=vs.85))<br/> |
 
 
 

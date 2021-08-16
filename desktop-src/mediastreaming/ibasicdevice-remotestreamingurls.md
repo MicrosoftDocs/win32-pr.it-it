@@ -44,13 +44,13 @@ HRESULT RemoteStreamingUrls(
 *value* \[ Cambio\]
 </dt> <dd>
 
-Riceve una raccolta enumerabile di puntatori a URL di streaming remoti.
+Riceve una raccolta enumerabile di puntatori agli URL di streaming remoto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

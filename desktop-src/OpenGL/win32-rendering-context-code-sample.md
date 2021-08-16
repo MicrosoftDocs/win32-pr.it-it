@@ -1,23 +1,23 @@
 ---
-title: Esempio di codice del contesto di rendering Windows
-description: Nell'esempio di codice seguente viene illustrato il modo in cui il codice del contesto di rendering GLX nella sezione precedente cerca quando è stato trasferito a Windows.
+title: Windows Esempio di codice del contesto di rendering
+description: L'esempio di codice seguente illustra l'aspetto del codice del contesto di rendering GLX nella sezione precedente quando è stato Windows.
 ms.assetid: 12992faa-eb64-4a21-8015-3c73c2914189
 keywords:
 - contesti di rendering
 - porting in OpenGL, contesti di rendering
-- Porting di OpenGL, contesti di rendering
+- Porting OpenGL, contesti di rendering
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca0423f7458538f903a339f2f82dbff1c86c0626
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9693b140083210ce0865b18463f4595c2f1fc731c8fc1d837f61342ede50b9d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106297854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794694"
 ---
-# <a name="windows-rendering-context-code-sample"></a>Esempio di codice del contesto di rendering Windows
+# <a name="windows-rendering-context-code-sample"></a>Windows Esempio di codice del contesto di rendering
 
-Nell'esempio di codice seguente viene illustrato il modo in cui il codice del contesto di rendering GLX nella sezione precedente cerca quando è stato trasferito a Windows.
+L'esempio di codice seguente illustra l'aspetto del codice del contesto di rendering GLX nella sezione precedente quando è stato Windows.
 
 
 ```C++
@@ -69,9 +69,9 @@ break;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

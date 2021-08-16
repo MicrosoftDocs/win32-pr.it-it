@@ -32,7 +32,7 @@ Contiene un set di coppie attributo-valore che definiscono i limiti amministrati
 | CN                | Ldap-Admin-Limits                           |
 | Ldap-Display-Name | lDAPAdminLimits                             |
 | Dimensione              | \-                                          |
-| Privilegio di aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.843                      |
 | System-Id-Guid    | 7359a352-90f7-11d1-aebc-0000f80367c1        |

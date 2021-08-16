@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 866727f821fb40b6bf09f3ee2cf0231c4ffc3005
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56a5e0622140aacd2668b1ea145e6a36f7fb2b0ecd243adacc313301d5fb7220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745726"
 ---
-# <a name="iwmpquerybeginnextgroup-method"></a>Metodo IWMPQuery:: beginNextGroup
+# <a name="iwmpquerybeginnextgroup-method"></a>Metodo IWMPQuery::beginNextGroup
 
-Il metodo **beginNextGroup** avvia un nuovo gruppo di condizioni.
+Il **metodo beginNextGroup** avvia un nuovo gruppo di condizioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -55,11 +55,11 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-L'inizio di un nuovo gruppo di condizioni implica il completamento del gruppo di condizioni corrente. Il nuovo gruppo di condizioni viene sempre concatenato al gruppo di condizioni precedente mediante la logica **o** .
+L'avvio di un nuovo gruppo di condizioni implica il completamento del gruppo di condizioni corrente. Il nuovo gruppo di condizioni viene sempre concatenato al gruppo di condizioni precedente usando la **logica OR.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene creata una query complessa mediante il combing di due gruppi che contengono una condizione. I risultati della query vengono estratti come una raccolta di stringhe e visualizzati in una casella di riepilogo. L'oggetto **AxWMPLib. AxWindowsMediaPlayer** è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene creata una query complessa tramite la combinazione di due gruppi ognuno dei quali contiene una condizione. I risultati della query vengono estratti come raccolta di stringhe e visualizzati in una casella di riepilogo. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -139,13 +139,13 @@ Next i
 
 <dl> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaccia IWMPQuery (VB e C#)**](iwmpquery--vb-and-c.md)

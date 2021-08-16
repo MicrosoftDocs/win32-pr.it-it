@@ -1,11 +1,11 @@
 ---
-title: Mediacollection. getByGenre, metodo
+title: Metodo MediaCollection.getByGenre
 description: Il metodo getByGenre recupera una playlist degli elementi multimediali con il genere specificato.
 ms.assetid: 022a0c52-93e1-4ab4-90a7-632bcd6fc004
 keywords:
 - Metodo getByGenre Windows Media Player
-- Metodo getByGenre Windows Media Player, classe Mediacollection
-- Mediacollection (classe) Windows Media Player, metodo getByGenre
+- Metodo getByGenre Windows Media Player , classe MediaCollection
+- Classe MediaCollection Windows Media Player metodo , getByGenre
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b73cd7fe9bb3efa9115e2ba5d01b6d12c89898d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06df514e7ed399e73f6778912df32a4ed0be57a90039fe867c75cf31a3eec807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135014"
 ---
-# <a name="mediacollectiongetbygenre-method"></a>Mediacollection. getByGenre, metodo
+# <a name="mediacollectiongetbygenre-method"></a>Metodo MediaCollection.getByGenre
 
-Il metodo **getByGenre** recupera una playlist degli elementi multimediali con il genere specificato.
+Il **metodo getByGenre** recupera una playlist degli elementi multimediali con il genere specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ retVal = MediaCollection.getByGenre(
 
 <dl> <dt>
 
-*genere* \[ in\]
+*genre* \[ Pollici\]
 </dt> <dd>
 
-**Stringa** che contiene il nome del genere.
+**Stringa** contenente il nome del genere.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzato *mediacollection*. **getByGenre** per recuperare una playlist di elementi multimediali. La playlist contiene elementi con il genere specificato dall'utente in un elemento input di testo HTML denominato getgenre. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene utilizzato *MediaCollection*. **getByGenre per** recuperare una playlist di elementi multimediali. La playlist contiene elementi con il genere specificato dall'utente in un elemento di input HTML TEXT denominato GetGenre. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -94,7 +94,7 @@ onClick = "
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -103,16 +103,16 @@ onClick = "
 
 <dl> <dt>
 
-[**Mediacollection (oggetto)**](mediacollection-object.md)
+[**Oggetto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

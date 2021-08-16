@@ -29,7 +29,7 @@ Si tratta di una proprietà di lettura/scrittura.
 
 Questa proprietà è disponibile dopo il completamento della codifica.
 
-Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md) meno il numero di fotogrammi rilasciati. Il codificatore potrebbe eliminare i fotogrammi per rimanere entro i vincoli di velocità in bit specificati. Potrebbe anche eliminare i frame alla fine del flusso (vedere la proprietà [**AVEncCommonStreamEndHandling).**](avenccommonstreamendhandling-property.md)
+Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalFrames**](avencstatvideototalframes-property.md) meno il numero di fotogrammi eliminati. Il codificatore potrebbe eliminare i fotogrammi per rimanere entro i vincoli di velocità in bit specificati. Potrebbe anche eliminare i frame alla fine del flusso (vedere la [**proprietà AVEncCommonStreamEndHandling).**](avenccommonstreamendhandling-property.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalF
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional app \[ desktop \| UWP\]<br/>                     |
-| Server minimo supportato<br/> | Windows 2000 Server desktop apps UWP apps (App desktop UWP di Windows 2000 \[ \| Server)\]<br/>                           |
+| Client minimo supportato<br/> | Windows 2000 Professional \[ app desktop app \| UWP\]<br/>                     |
+| Server minimo supportato<br/> | Windows 2000 App desktop UWP per le app \[ desktop di 2000 \| Server\]<br/>                           |
 | Intestazione<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
@@ -47,7 +47,7 @@ Il valore di questa proprietà è uguale alla proprietà [**AVEncStatVideoTotalF
 
 <dl> <dt>
 
-[Proprietà dell'API Codec](codec-api-properties.md)
+[Proprietà API codec](codec-api-properties.md)
 </dt> <dt>
 
 [**Interfaccia ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)

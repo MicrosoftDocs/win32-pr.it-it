@@ -1,25 +1,25 @@
 ---
-description: 'Esempio di programma C: utilizzo di identificatori di chiave'
+description: 'Programma C di esempio: uso degli identificatori di chiave'
 ms.assetid: 5ca160fd-8a63-46fa-99ce-e01a6acb81f4
-title: 'Esempio di programma C: utilizzo di identificatori di chiave'
+title: 'Programma C di esempio: uso degli identificatori di chiave'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36d849edc33e1738fec8e861f71f1e48475faed0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b94d2374f63758e47d53a0d69cc8f76af4db99a2f546dbd51860ab34c356af0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140767"
 ---
-# <a name="example-c-program-working-with-key-identifiers"></a>Esempio di programma C: utilizzo di identificatori di chiave
+# <a name="example-c-program-working-with-key-identifiers"></a>Programma C di esempio: uso degli identificatori di chiave
 
-Nell'esempio seguente vengono illustrate le modalità di utilizzo degli identificatori di chiave. In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
+Nell'esempio seguente vengono illustrate le modalità di utilizzo degli identificatori di chiave. Questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
 
--   Creazione di un identificatore di chiave utilizzando [**CryptCreateKeyIdentifierFromCSP**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatekeyidentifierfromcsp).
--   Impostazione di una proprietà in un identificatore di chiave utilizzando [**CryptSetKeyIdentifierProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyidentifierproperty).
--   Recupero del contenuto di una proprietà dell'identificatore di chiave utilizzando [**CryptGetKeyIdentifierProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyidentifierproperty).
--   Elenco delle proprietà di un identificatore di chiave utilizzando [**CryptEnumKeyIdentifierProperties**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumkeyidentifierproperties).
--   Dichiarazione, definizione e utilizzo di una funzione di callback.
+-   Creazione di un identificatore di chiave [**tramite CryptCreateKeyIdentifierFromCSP.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatekeyidentifierfromcsp)
+-   Impostazione di una proprietà su un identificatore di chiave [**tramite CryptSetKeyIdentifierProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyidentifierproperty).
+-   Recupero del contenuto di una proprietà dell'identificatore di chiave [**tramite CryptGetKeyIdentifierProperty.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyidentifierproperty)
+-   Elenco delle proprietà di un identificatore di chiave [**tramite CryptEnumKeyIdentifierProperties**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptenumkeyidentifierproperties).
+-   Dichiarazione, definizione e uso di una funzione di callback.
 
 
 ```C++

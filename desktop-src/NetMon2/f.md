@@ -33,14 +33,14 @@ Set di protocolli che segue un protocollo. Network Monitor usa il set seguente d
 <span id="_netmon_frame_gly"></span><span id="_NETMON_FRAME_GLY"></span>**Telaio**
 </dt> <dd>
 
-Pacchetto di dati trasmesso come un'unità in rete. Ogni frame segue la stessa organizzazione di base e contiene informazioni di controllo quali la sincronizzazione di caratteri, indirizzi di stazione, un valore di controllo degli errori e una quantità variabile di dati. Detto anche pacchetto.
+Pacchetto di dati trasmesso come un'unità in rete. Ogni frame segue la stessa organizzazione di base e contiene informazioni di controllo, ad esempio la sincronizzazione di caratteri, indirizzi di stazione, un valore di controllo degli errori e una quantità variabile di dati. Detto anche pacchetto.
 
 </dd> <dt>
 
 <span id="_netmon_frame_viewer_window_gly"></span><span id="_NETMON_FRAME_VIEWER_WINDOW_GLY"></span>**finestra del visualizzatore frame**
 </dt> <dd>
 
-Finestra Network Monitor che visualizza informazioni dettagliate sui singoli fotogrammi. È possibile aprire più finestre del visualizzatore frame contemporaneamente.
+Finestra Network Monitor che visualizza informazioni dettagliate sui singoli frame. È possibile aprire più finestre del visualizzatore frame contemporaneamente.
 
 </dd> </dl>
 

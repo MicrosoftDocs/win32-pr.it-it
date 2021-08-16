@@ -1,6 +1,6 @@
 ---
 title: Tipi di dati (HLSL)
-description: HLSL supporta molti tipi di dati intrinseci diversi. Questa tabella mostra i tipi da usare per definire le variabili shader.
+description: HLSL supporta molti tipi di dati intrinseci diversi. Questa tabella mostra i tipi da usare per definire le variabili di shader.
 ms.assetid: e4b7738d-e865-4151-a204-0a5b88a913b3
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,23 +18,23 @@ ms.locfileid: "117726347"
 ---
 # <a name="data-types-hlsl"></a>Tipi di dati (HLSL)
 
-HLSL supporta molti tipi di dati intrinseci diversi. Questa tabella mostra i tipi da usare per definire le variabili shader.
+HLSL supporta molti tipi di dati intrinseci diversi. Questa tabella mostra i tipi da usare per definire le variabili di shader.
 
 
 
 | Usare questo tipo intrinseco                                                                                                                         | Per definire questa variabile shader                                            |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | [Scalare](dx-graphics-hlsl-scalar.md)                                                                                   | Scalare a un componente                       |
-| [Vettore](dx-graphics-hlsl-vector.md), [Matrice](dx-graphics-hlsl-matrix.md)                                            | Vettore o matrice a più componenti        |
-| [Campionatore,](dx-graphics-hlsl-sampler.md) [trama o](dx-graphics-hlsl-texture.md) [buffer](dx-graphics-hlsl-buffer.md)   | Sampler, trama o oggetto buffer         |
-| [Struct](dx-graphics-hlsl-struct.md), [definito dall'utente](dx-graphics-hlsl-user-defined.md)                                | Struttura personalizzata o typedef                |
+| [Vector](dx-graphics-hlsl-vector.md), [Matrix](dx-graphics-hlsl-matrix.md)                                            | Vettore o matrice a più componenti        |
+| [Campionatore,](dx-graphics-hlsl-sampler.md) [trama](dx-graphics-hlsl-texture.md) o [buffer](dx-graphics-hlsl-buffer.md)   | Campionatore, trama o oggetto buffer         |
+| [Struct](dx-graphics-hlsl-struct.md), [definito dall'utente](dx-graphics-hlsl-user-defined.md)                                | Struttura o typedef personalizzato                |
 | Array                                                                                   | Espressioni scalari letterali dichiarate contenenti la maggior parte degli altri tipi                       |
 | [Oggetto State](dx-graphics-hlsl-state-object.md) | Rappresentazioni HLSL di oggetti di stato |
 
 
  
 
-Per comprendere meglio come usare vettori e matrici in HLSL, è possibile leggere queste informazioni di base sul modo in cui HLSL usa la matematica [per](dx-graphics-hlsl-per-component-math.md) componente.
+Per comprendere meglio come usare vettori e matrici in HLSL, è possibile leggere queste informazioni di base sul modo in cui HLSL usa la matematica [per componente.](dx-graphics-hlsl-per-component-math.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

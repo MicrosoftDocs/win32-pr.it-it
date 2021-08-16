@@ -13,7 +13,7 @@ ms.locfileid: "118924837"
 ---
 # <a name="strings-rpc"></a>Stringhe (RPC)
 
-Nel carattere di formato sono presenti tre tipi di stringhe con le sottostringa finali seguenti.
+Nel carattere di formato sono presenti tre tipi di stringhe con le sottostringa di fine seguenti.
 
 
 

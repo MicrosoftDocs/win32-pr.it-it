@@ -31,7 +31,7 @@ Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 | CN                | oncRpcNumber                         |
 | Ldap-Display-Name | oncRpcNumber                         |
 | Dimensione              | \-                                   |
-| Aggiorna privilegio  | \-                                   |
+| Privilegio di aggiornamento  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.18                     |
 | System-Id-Guid    | 966825f5-01d9-4a5c-a011-d15ae84efa55 |
@@ -55,7 +55,7 @@ Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -76,7 +76,7 @@ Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |
@@ -97,7 +97,7 @@ Contiene parte della mappa RPC e archivia il numero RPC per UNIX RPC.
 | ID collegamento                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| A valore singolo       | Vero                                  |
+| Is-Single-Valued       | Vero                                  |
 | Indicizzato             | Falso                                 |
 | Nel catalogo globale      | Falso                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                          |

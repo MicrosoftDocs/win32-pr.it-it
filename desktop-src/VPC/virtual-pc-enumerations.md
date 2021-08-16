@@ -1,21 +1,21 @@
 ---
-title: Enumerazioni Virtual PC Windows
+title: Windows Enumerazioni di PC virtuali
 ms.assetid: a9800f9f-d91f-48be-bbb9-f736132c2fd7
-description: 'Altre informazioni su: enumerazioni Virtual PC Windows'
+description: 'Altre informazioni su: Windows di Virtual PC'
 keywords:
-- Windows Virtual PC Virtual PC, enumerazioni
+- Windows Virtual PC Virtual PC , enumerazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e16e8a9faee398b546a4c15e2df6ec85565d1ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9d136e3ec1a8b4cf6c3d988017844b0994f2a3c035a5e6c2a756ea504d79b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136484"
 ---
-# <a name="windows-virtual-pc-enumerations"></a>Enumerazioni Virtual PC Windows
+# <a name="windows-virtual-pc-enumerations"></a>Windows Enumerazioni di PC virtuali
 
-\[Windows Virtual PC non è più disponibile per l'uso a partire da Windows 8. Usare invece il [provider WMI Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows Virtual PC non è più disponibile per l'uso a Windows 8. Usare invece il [provider WMI Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Le enumerazioni seguenti sono supportate da Windows Virtual PC:
 

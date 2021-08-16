@@ -4,9 +4,9 @@ description: Il metodo SetFallbackPrintDriverType imposta la proprietà Fallback
 ms.assetid: be738134-199a-41a6-b2f8-cccfa14fa02b
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo SetFallbackPrintDriverType
-- Metodo SetFallbackPrintDriverType Servizi Desktop remoto, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Servizi Desktop remoto, metodo SetFallbackPrintDriverType
+- Metodo SetFallbackPrintDriverType Servizi Desktop remoto
+- Metodo SetFallbackPrintDriverType Servizi Desktop remoto , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Servizi Desktop remoto metodo SetFallbackPrintDriverType
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16e445fef86970e89d5b0f09abebecd40f49ab7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d39033a34c75ea94f365ae690b1ac6fe4cd61663e9cd6db19f2cd2c232bd8c89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137864"
 ---
-# <a name="setfallbackprintdrivertype-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetFallbackPrintDriverType della \_ classe TerminalServiceSetting Win32
+# <a name="setfallbackprintdrivertype-method-of-the-win32_terminalservicesetting-class"></a>Metodo SetFallbackPrintDriverType della classe TerminalServiceSetting Win32 \_
 
-Il metodo **SetFallbackPrintDriverType** imposta la proprietà **FallbackPrintDriverType** per la classe.
+Il **metodo SetFallbackPrintDriverType** imposta la **proprietà FallbackPrintDriverType** per la classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,10 +43,10 @@ uint32 SetFallbackPrintDriverType(
 
 <dl> <dt>
 
-*FallbackPrintDriverType* \[ in\]
+*FallbackPrintDriverType* \[ Pollici\]
 </dt> <dd>
 
-Imposta la proprietà **FallbackPrintDriverType** che consente o nega nuove connessioni di Servizi Desktop remoto.
+Imposta la **proprietà FallbackPrintDriverType** che consente o nega nuove Servizi Desktop remoto connessioni.
 
 <dt>
 
@@ -68,7 +68,7 @@ Nessun driver di fallback.
 
 </dt> <dd>
 
-Migliore ipotesi.
+È meglio indovinare.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Migliore ipotesi.
 
 </dt> <dd>
 
-Migliore ipotesi. Se non viene trovata alcuna corrispondenza, eseguire il fallback a Hewlett-Packard PCL (Printer Control Language).
+È meglio indovinare. Se non viene trovata alcuna corrispondenza, eseguire il fallback Hewlett-Packard Printer Control Language (PCL).
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Migliore ipotesi. Se non viene trovata alcuna corrispondenza, eseguire il fallba
 
 </dt> <dd>
 
-Migliore ipotesi. Se non viene trovata alcuna corrispondenza, eseguire il fallback a PostScript (PS).
+È meglio indovinare. Se non viene trovata alcuna corrispondenza, eseguire il fallback a Postscript (PS).
 
 </dd> <dt>
 
@@ -101,17 +101,17 @@ Migliore ipotesi. Se non viene trovata alcuna corrispondenza, eseguire il fallba
 
 </dt> <dd>
 
-Migliore ipotesi. Se non viene trovata alcuna corrispondenza, visualizzare i driver PS e PCL.
+È meglio indovinare. Se non viene trovata alcuna corrispondenza, visualizzare i driver PS e PCL.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce l'esito positivo, in caso contrario restituisce un codice di errore WMI. Per un elenco di questi valori, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md) . Il metodo restituisce un errore se l'impostazione è sotto il controllo criteri di gruppo.
+Restituisce Success in caso di esito positivo, in caso contrario restituisce un codice di errore WMI. Per un [elenco Servizi Desktop remoto codici di errore del provider WMI,](terminal-services-wmi-provider-error-codes.md) vedere . Il metodo restituisce un errore se l'impostazione è sotto il controllo di Criteri di gruppo.
 
 ## <a name="remarks"></a>Commenti
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,8 +121,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -131,7 +131,7 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

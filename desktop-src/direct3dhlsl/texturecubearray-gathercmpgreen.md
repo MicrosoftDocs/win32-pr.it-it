@@ -1,6 +1,6 @@
 ---
-title: Metodi TextureCubeArray::TextureCubeArray GatherCmpGreen
-description: Campione e confronta una trama e restituisce il componente verde. | Metodi TextureCubeArray::TextureCubeArray GatherCmpGreen
+title: Metodi Di TextureCubeArray::TextureCubeArray GatherCmpGreen
+description: Campiota e confronta una trama e restituisce il componente verde. | Metodi Di TextureCubeArray::TextureCubeArray GatherCmpGreen
 ms.assetid: F4B58F67-E13C-4166-9793-4CD1E1712766
 keywords:
 - Metodi GatherCmpGreen HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117722371"
 ---
-# <a name="texturecubearraygathercmpgreen-methods"></a>Metodi TextureCubeArray::GatherCmpGreen
+# <a name="texturecubearraygathercmpgreen-methods"></a>Metodi textureCubeArray::GatherCmpGreen
 
-Campione e confronta una trama e restituisce il componente verde.
+Campiota e confronta una trama e restituisce il componente verde.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campione e confronta una trama e restituisce il componente verde.
 
 | Metodo                                                                                      | Descrizione                                                                                                      |
 |:--------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen(S,float,float,uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Campione e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpGreen(S,float,float,uint)**](tcubearray-gathercmpgreen-s-float-float-uint-.md) | Esempi e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
 
 
 

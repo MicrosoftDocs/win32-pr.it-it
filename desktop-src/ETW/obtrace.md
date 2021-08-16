@@ -1,5 +1,5 @@
 ---
-description: Rappresenta la classe padre da cui vengono derivate tutte le classi di traccia eventi di gestione oggetti.
+description: Rappresenta la classe padre da cui derivano tutte le classi di traccia eventi di gestione oggetti.
 ms.assetid: 07cfc4a2-c665-4080-bc4b-fe9ec7191fdc
 title: Classe ObTrace
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "119328751"
 ---
 # <a name="obtrace-class"></a>Classe ObTrace
 
-Rappresenta la classe padre da cui vengono derivate tutte le classi di traccia eventi di gestione oggetti.
+Rappresenta la classe padre da cui derivano tutte le classi di traccia eventi di gestione oggetti.
 
 La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate.
 
@@ -40,7 +40,7 @@ La **classe ObTrace** non definisce membri.
 
 ## <a name="remarks"></a>Commenti
 
-Per abilitare la traccia degli eventi di Gestione oggetti, chiamare la funzione [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con il parametro *InformationClass* uguale al valore di enumerazione [**TRACE INFO \_ \_ CLASS**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** e al membro **EnableFlags** della struttura EVENT [**TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) uguale a **PERF OB \_ \_ HANDLE** (0x80000040).
+Per abilitare la traccia eventi di gestione oggetti, chiamare la funzione [**TraceSetInformation**](/windows/win32/api/evntrace/nf-evntrace-tracesetinformation) con il parametro *InformationClass* uguale al valore di enumerazione [**TRACE INFO \_ \_ CLASS**](/windows/win32/api/evntrace/ne-evntrace-trace_query_info_class) **TraceSystemTraceEnableFlagsInfo** e il membro **EnableFlags** della struttura EVENT [**TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) uguale a **PERF OB \_ \_ HANDLE** (0x80000040).
 
 ## <a name="requirements"></a>Requisiti
 

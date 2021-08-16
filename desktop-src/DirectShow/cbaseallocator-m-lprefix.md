@@ -1,7 +1,7 @@
 ---
 description: Prefisso di ogni buffer, in byte.
 ms.assetid: 471b73bf-f959-41aa-84ba-324a2738dd0e
-title: 'Membro CBaseAllocator:: m_lPrefix (Amfilter. h)'
+title: Membro CBaseAllocator::m_lPrefix (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc52db44dcdfa050cf8bc7faf57cb7094d8cac91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a22f2ac1a54c4820f109b55002428c87df321328ef6b6b6d6096343df8cde85f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955290"
 ---
-# <a name="cbaseallocatorm_lprefix-member"></a>Membro lPrefix di CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lprefix-member"></a>Membro CBaseAllocator::m \_ lPrefix
 
-Prefisso di ogni buffer, in byte. Se il valore è diverso da zero, ogni puntatore del buffer restituito dal metodo [**CBaseAllocator:: GetBuffer**](cbaseallocator-getbuffer.md) è preceduto da un blocco di byte di dimensioni *m \_ lPrefix*. Questo blocco di memoria viene chiamato *prefisso*. La variabile membro [**CBaseAllocator:: m \_ lSize**](cbaseallocator-m-lsize.md) non include il valore del prefisso.
+Prefisso di ogni buffer, in byte. Se il valore è diverso da zero, ogni puntatore al buffer restituito dal metodo [**CBaseAllocator::GetBuffer**](cbaseallocator-getbuffer.md) è preceduto da un blocco di byte di dimensioni *m \_ lPrefix*. Questo blocco di memoria è denominato *prefisso*. La [**variabile membro CBaseAllocator::m \_ lSize**](cbaseallocator-m-lsize.md) non include il valore del prefisso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,8 +42,8 @@ long m_lPrefix;
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (include Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 
