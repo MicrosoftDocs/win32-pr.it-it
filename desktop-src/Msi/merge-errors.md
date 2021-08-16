@@ -44,7 +44,7 @@ Il recupero non è distruttivo. È possibile recuperare più istanze della racco
 
 ### <a name="c"></a>C++
 
-Vedere [**Funzione get \_ Errors.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-get_errors)
+Vedere [**funzione get \_ Errors.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-get_errors)
 
 ## <a name="requirements"></a>Requisiti
 

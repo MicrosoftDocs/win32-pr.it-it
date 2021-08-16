@@ -1,5 +1,5 @@
 ---
-description: 'Proprietà FolderItemVerbs.Count : contiene il numero di elementi nella raccolta.'
+description: 'Proprietà FolderItemVerbs.Count: contiene il numero di elementi nella raccolta.'
 ms.assetid: a676593b-ea78-433d-a622-221028245c3a
 title: Proprietà FolderItemVerbs.Count (Shldisp.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5545ea64da914188226fbdabf7cc6301baa695af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 985ab6eb9508d57a7dd38616108bb0fdb58e7244623d90db435ca0a7022a570c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090591"
 ---
 # <a name="folderitemverbscount-property"></a>FolderItemVerbs.Count - proprietà
 
@@ -37,13 +37,13 @@ iCount = FolderItemVerbs.Count
 
 ## <a name="property-value"></a>Valore proprietà
 
-Integer **che** riceve la **proprietà Count.**
+Intero **che** riceve la **proprietà Count.**
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene **utilizzato Count** per recuperare il conteggio dei verbi disponibili per la Pannello di controllo cartella . Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato Count** per recuperare il numero di verbi disponibili per la Pannello di controllo cartella. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -148,7 +148,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, solo app desktop di Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

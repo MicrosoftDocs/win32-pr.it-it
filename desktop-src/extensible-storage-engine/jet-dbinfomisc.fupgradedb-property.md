@@ -35,9 +35,9 @@ ms.locfileid: "118766393"
 ---
 # <a name="jet_dbinfomiscfupgradedb-property"></a>JET_DBINFOMISC.fUpgradeDb
 
-Ottiene un valore che indica se il database è in fase di aggiornamento. Questo valore è solo per uso interno.
+Ottiene un valore che indica se è in corso l'aggiornamento del database. Questo valore è solo per uso interno.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

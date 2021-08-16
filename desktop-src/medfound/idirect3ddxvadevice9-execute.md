@@ -1,5 +1,5 @@
 ---
-description: Esegue un'operazione di decodifica DirectX Video Acceleration (DXVA).
+description: Esegue un'operazione di decodifica DXVA (DirectX Video Acceleration).
 ms.assetid: cb87a087-ca53-470e-ab46-f4022cfd7869
 title: Metodo IDirect3DDXVADevice9::Execute (Dxva.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "119465961"
 ---
 # <a name="idirect3ddxvadevice9execute-method"></a>Metodo IDirect3DDXVADevice9::Execute
 
-Esegue un'operazione di decodifica DirectX Video Acceleration (DXVA).
+Esegue un'operazione di decodifica DXVA (DirectX Video Acceleration).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,7 +62,7 @@ Puntatore a un buffer che contiene i dati di input per l'operazione di decodific
 *InputSize* 
 </dt> <dd>
 
-Dimensione in byte dei dati di input.
+Dimensioni in byte dei dati di input.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Numero di elementi nella matrice *pBufferInfo.*
 *pBufferInfo* 
 </dt> <dd>
 
-Puntatore a una matrice di [**strutture DXVABufferInfo.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo)
+Puntatore a una matrice [**di strutture DXVABufferInfo.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo)
 
 </dd> </dl>
 
@@ -104,8 +104,8 @@ Se questo metodo ha esito positivo, restituisce **S \_ OK**. In caso contrario, 
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                    |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                              |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                    |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                              |
 | Intestazione<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 

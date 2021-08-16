@@ -23,7 +23,7 @@ ms.locfileid: "118697089"
 ---
 # <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>Metodo IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue
 
-Il **metodo SetIPortableDeviceValuesCollectionValue** aggiunge un nuovo **valore IPortableDeviceValuesCollection** (tipo VT UNKNOWN) o ne \_ sovrascrive uno esistente.
+Il **metodo SetIPortableDeviceValuesCollectionValue** aggiunge un nuovo valore **IPortableDeviceValuesCollection** (tipo VT UNKNOWN) o ne \_ sovrascrive uno esistente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,7 +57,7 @@ Puntatore a **un'interfaccia IPortableDeviceValuesCollection** che specifica il 
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -91,7 +91,7 @@ Se un valore esistente ha la stessa chiave specificata dal parametro *key,* sovr
 [**Interfaccia IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues::GetIPortableDeviceValuesCollectionValues**](iportabledevicevalues-getiportabledevicevaluescollectionvalue.md)
+[**IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue**](iportabledevicevalues-getiportabledevicevaluescollectionvalue.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Enumerazione DownloadMode (Deliveryoptimization.h)
-description: Definisce le diverse modalità di download Ottimizzazione recapito.
+description: Definisce le diverse modalità di download utilizzate Ottimizzazione recapito download.
 ms.assetid: 7E9407C6-A22F-459E-B316-5E7809F0067A
 keywords:
 - In questa modalità Ottimizzazione recapito viene ignorato e al suo posto viene usato BITS. Seleziona ad esempio questa modalità per consentire ai client di usare BranchCache. enumerazione
@@ -24,7 +24,7 @@ ms.locfileid: "118543725"
 ---
 # <a name="downloadmode-enumeration"></a>Enumerazione DownloadMode
 
-Definisce le diverse modalità di download Ottimizzazione recapito.
+Definisce le diverse modalità di download utilizzate Ottimizzazione recapito download.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,7 +49,7 @@ typedef enum _DownloadMode {
 <span id="DownloadMode_CdnOnly"></span><span id="downloadmode_cdnonly"></span><span id="DOWNLOADMODE_CDNONLY"></span>**DownloadMode_CdnOnly**
 </dt> <dd>
 
-Questa impostazione disabilita la memorizzazione nella cache peer-to-peer, ma consente Ottimizzazione recapito scaricare contenuto dai server Microsoft. Questa modalità usa metadati aggiuntivi forniti dal Ottimizzazione recapito servizi cloud per un'esperienza di download affidabile ed efficiente senza peer.
+Questa impostazione disabilita la memorizzazione nella cache peer-to-peer, ma Ottimizzazione recapito di scaricare contenuto dai server Microsoft. Questa modalità usa metadati aggiuntivi forniti dall'Ottimizzazione recapito cloud per un'esperienza di download affidabile ed efficiente senza peer.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Questa modalità operativa predefinita per Ottimizzazione recapito consente la c
 <span id="DownloadMode_Group"></span><span id="downloadmode_group"></span><span id="DOWNLOADMODE_GROUP"></span>**DownloadMode_Group**
 </dt> <dd>
 
-Quando è impostata la modalità gruppo, il gruppo viene selezionato automaticamente in base al sito di Active Directory Domain Services (AD DS) del dispositivo (Windows 10, versione 1607) o al dominio in cui viene autenticato il dispositivo (Windows 10 versione 1511). In modalità di gruppo, il peering avviene tra le subnet interne, tra i dispositivi che appartengono allo stesso gruppo, inclusi i dispositivi nelle sedi remote. Puoi usare l'opzione GroupID per creare un gruppo personalizzato indipendentemente dai domini e dai siti di Servizi di dominio Active Directory. La modalità di download di gruppo è l'opzione consigliata per la maggior parte delle organizzazioni che vuole ottenere la massima ottimizzazione della larghezza di banda con Ottimizzazione recapito.
+Quando è impostata la modalità gruppo, il gruppo viene selezionato automaticamente in base al sito Active Directory Domain Services (AD DS) del dispositivo (Windows 10, versione 1607) o al dominio in cui viene autenticato il dispositivo (Windows 10, versione 1511). In modalità di gruppo, il peering avviene tra le subnet interne, tra i dispositivi che appartengono allo stesso gruppo, inclusi i dispositivi nelle sedi remote. Puoi usare l'opzione GroupID per creare un gruppo personalizzato indipendentemente dai domini e dai siti di Servizi di dominio Active Directory. La modalità di download di gruppo è l'opzione consigliata per la maggior parte delle organizzazioni che vuole ottenere la massima ottimizzazione della larghezza di banda con Ottimizzazione recapito.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Questa modalità abilita le origini peer Internet per Ottimizzazione recapito.
 <span id="DownloadMode_Simple"></span><span id="downloadmode_simple"></span><span id="DOWNLOADMODE_SIMPLE"></span>**DownloadMode_Simple**
 </dt> <dd>
 
-La modalità semplice disabilita completamente l'uso dei servizi cloud di Ottimizzazione recapito (per gli ambienti offline). Ottimizzazione recapito passa automaticamente a questa modalità quando i servizi cloud Ottimizzazione recapito non sono disponibili, non sono raggiungibili o quando le dimensioni del file di contenuto sono inferiori a 10 MB. In questa modalità, Ottimizzazione recapito un'esperienza di download affidabile, senza memorizzazione nella cache peer-to-peer.
+La modalità semplice disabilita completamente l'uso dei servizi cloud di Ottimizzazione recapito (per gli ambienti offline). Ottimizzazione recapito questa modalità passa automaticamente quando i servizi cloud Ottimizzazione recapito non sono disponibili, non raggiungibili o quando le dimensioni del file di contenuto sono inferiori a 10 MB. In questa modalità, Ottimizzazione recapito un'esperienza di download affidabile, senza memorizzazione nella cache peer-to-peer.
 
 </dd> <dt>
 

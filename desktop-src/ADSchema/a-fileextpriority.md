@@ -1,10 +1,10 @@
 ---
-title: File-EXT-Priority (attributo)
-description: Questo attributo contiene un elenco di estensioni di file in un pacchetto di applicazione e le relative priorità associate.
+title: Attributo File-Ext-Priority
+description: Questo attributo contiene un elenco di estensioni di file in un pacchetto dell'applicazione e le relative priorità associate.
 ms.assetid: f95ba5cb-cd69-43e8-919f-7c61ebe0cc62
 ms.tgt_platform: multiple
 keywords:
-- File-EXT-Priority attributo AD schema AD
+- Schema AD dell'attributo File-Ext-Priority
 - Schema AD dell'attributo fileExtPriority
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d305337bca792fe94fd3a765cbb6414dcfd1b0e2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9a3494bc5a5e66fa5e4a17edc7410a2a08ba1f58317529923b44fe6b277bd868
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961530"
 ---
-# <a name="file-ext-priority-attribute"></a>File-EXT-Priority (attributo)
+# <a name="file-ext-priority-attribute"></a>Attributo File-Ext-Priority
 
-Questo attributo contiene un elenco di estensioni di file in un pacchetto di applicazione e le relative priorità associate.
+Questo attributo contiene un elenco di estensioni di file in un pacchetto dell'applicazione e le relative priorità associate.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | File-EXT-Priority                           |
-| LDAP-Display-Name | fileExtPriority                             |
+| CN                | Priorità di estendibilità file                           |
+| Ldap-Display-Name | fileExtPriority                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.816                      |
-| System-ID-GUID    | d9e18315-8939-11d1-aebc-0000f80367c1        |
+| System-Id-Guid    | d9e18315-8939-11d1-aebc-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene un elenco di estensioni di file in un pacchetto di app
 | ID collegamento                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| È a valore singolo       | Falso                                                            |
+| A valore singolo       | Falso                                                            |
 | Indicizzato             | Vero                                                             |
 | Nel catalogo globale      | Falso                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000001                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Classi utilizzate in        | [**Registrazione pacchetto**](c-packageregistration.md)<br/> |
+| Classi usate in        | [**Registrazione del pacchetto**](c-packageregistration.md)<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Le azioni personalizzate ProcessAccounts e UninstallAccounts generano le azioni personalizzate posticipate per la creazione, la rimozione o il rollback degli account utente.
+description: Le azioni personalizzate ProcessAccounts e UninstallAccounts generano le azioni personalizzate posticipate che creano, rimuovono o rollback degli account utente.
 ms.assetid: 245b576b-96cc-4eab-8848-5ff78ba32873
 title: Creazione della tabella InstallExecuteSequence
 ms.topic: article
@@ -13,17 +13,17 @@ ms.locfileid: "118639172"
 ---
 # <a name="authoring-the-installexecutesequence-table"></a>Creazione della tabella InstallExecuteSequence
 
-Le azioni personalizzate ProcessAccounts e UninstallAccounts generano le azioni personalizzate posticipate per la creazione, la rimozione o il rollback degli account utente. Le azioni personalizzate ProcessAccounts e UninstallAccounts devono essere immesse nella [tabella InstallExecuteSequence per](installexecutesequence-table.md) l'esecuzione. Aggiungere le voci seguenti alla [tabella InstallExecuteSequence](installexecutesequence-table.md). Poiché queste azioni personalizzate devono far parte della generazione di script, entrambe le azioni personalizzate devono essere sequenziate dopo [l'azione InstallInitialize](installinitialize-action.md).
+Le azioni personalizzate ProcessAccounts e UninstallAccounts generano le azioni personalizzate posticipate che creano, rimuovono o rollback degli account utente. Le azioni personalizzate ProcessAccounts e UninstallAccounts devono essere immesse nella [tabella InstallExecuteSequence](installexecutesequence-table.md) da eseguire. Aggiungere le voci seguenti alla [tabella InstallExecuteSequence](installexecutesequence-table.md). Poiché queste azioni personalizzate devono far parte della generazione di script, è necessario sequenziare entrambe le azioni personalizzate dopo [l'azione InstallInitialize](installinitialize-action.md).
 
-La condizione in ProcessAccounts garantisce quanto segue. Vedere [Sintassi delle istruzioni condizionali.](conditional-statement-syntax.md)
+La condizione in ProcessAccounts garantisce quanto segue. Vedere [Sintassi di istruzioni condizionali](conditional-statement-syntax.md).
 
--   ProcessAccounts viene eseguito solo se il componente TestAccount viene installato localmente nel computer.
+-   ProcessAccounts viene eseguito solo se il componente TestAccount viene installato in locale nel computer.
 -   L'account di test del componente non è attualmente installato o è installato per l'esecuzione dall'origine.
 
 La condizione in UninstallAccount garantisce quanto segue:
 
--   UninstallAccounts viene eseguito solo se il componente TestAccount è installato localmente nel computer.
--   L'account di test del componente viene rimosso o installato per l'esecuzione dall'origine.
+-   UninstallAccounts viene eseguito solo se il componente TestAccount è installato in locale nel computer.
+-   È in corso la rimozione o l'installazione dell'account di test del componente per l'esecuzione dall'origine.
 
 [Tabella InstallExecuteSequence](installexecutesequence-table.md)
 
@@ -31,14 +31,14 @@ La condizione in UninstallAccount garantisce quanto segue:
 
 | Azione            | Condition                                                           | Sequenza |
 |-------------------|---------------------------------------------------------------------|----------|
-| Account processo   | VersionNT AND (? TestAccount=2 O ? TestAccount=4) AND $TestAccount=3 | 1550     |
-| UninstallAccounts | VersionNT AND ? TestAccount=3 AND ($TestAccount=4 OR $TestAccount=2) | 1560     |
+| ProcessAccounts   | VersionNT AND (? TestAccount=2 OR ? TestAccount=4) AND $TestAccount=3 | 1550     |
+| UninstallAccounts | VersionNT E ? TestAccount=3 AND ($TestAccount=4 OR $TestAccount=2) | 1560     |
 
 
 
  
 
-Passare a [Creazione dell'interfaccia utente per l'input della password.](authoring-the-user-interface-for-password-input.md)
+Continuare a [Creare l'interfaccia utente per l'input della password.](authoring-the-user-interface-for-password-input.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: CBEN_DRAGBEGIN codice di notifica (Commctrl.h)
+title: CBEN_DRAGBEGIN di notifica (Commctrl.h)
 description: Inviato quando l'utente inizia a trascinare l'immagine dell'elemento visualizzato nella parte di modifica del controllo . Questo codice di notifica viene inviato sotto forma di messaggio WM \_ NOTIFY.
 ms.assetid: bdab2700-a605-48af-aee3-bbf573408e3f
 keywords:
-- CBEN_DRAGBEGIN codice di notifica Windows controlli
+- CBEN_DRAGBEGIN del codice di notifica Windows controlli
 topic_type:
 - apiref
 api_name:

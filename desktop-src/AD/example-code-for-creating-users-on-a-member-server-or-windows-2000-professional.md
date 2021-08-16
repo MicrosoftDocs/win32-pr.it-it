@@ -1,6 +1,6 @@
 ---
-title: Codice di esempio per la creazione di utenti in un server membro o in Windows 2000 Professional
-description: Nell'esempio di codice seguente Visual Basic viene creato un utente in un server membro o in Windows 2000 Professional.
+title: Codice di esempio per la creazione di utenti in un server membro o Windows 2000 Professional
+description: Nell'esempio Visual Basic di codice seguente viene creato un utente in un server membro o Windows 2000 Professional.
 ms.assetid: 0a0800d6-eb2c-4d88-b9d4-91640206fe7b
 ms.tgt_platform: multiple
 keywords:
@@ -12,16 +12,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dcdefd10bfef4f0b41f00e71b311295a9ed4b09e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e42a7ebeeb37e8a39ae660b28da630f242052a3631bb1e072809662ecdaa3827
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962290"
 ---
-# <a name="example-code-for-creating-users-on-a-member-server-or-windows-2000-professional"></a>Codice di esempio per la creazione di utenti in un server membro o in Windows 2000 Professional
+# <a name="example-code-for-creating-users-on-a-member-server-or-windows-2000-professional"></a>Codice di esempio per la creazione di utenti in un server membro o Windows 2000 Professional
 
-Nell'esempio di codice seguente Visual Basic viene creato un utente in un server membro o in Windows 2000 Professional.
+Nell'esempio Visual Basic di codice seguente viene creato un utente in un server membro o Windows 2000 Professional.
 
 
 ```VB
@@ -100,9 +100,9 @@ Cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

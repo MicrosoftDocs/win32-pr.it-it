@@ -1,17 +1,17 @@
 ---
 description: Gruppo di categorie primario per questo dispositivo.
 ms.assetid: d9cb507a-3179-4cc0-83e6-9792f7e93d54
-title: System. Devices. PrimaryCategory
+title: System.Devices.PrimaryCategory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dff7e58a39b39e5aee28865ca17e90bbe581ce9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0fc58f0b3899ed423faeb1d9d8753f0fbdac6e3c8a94205d9237cb87866747b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106317998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097250"
 ---
-# <a name="systemdevicesprimarycategory"></a>System. Devices. PrimaryCategory
+# <a name="systemdevicesprimarycategory"></a>System.Devices.PrimaryCategory
 
 Gruppo di categorie primario per questo dispositivo.
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,7 +63,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

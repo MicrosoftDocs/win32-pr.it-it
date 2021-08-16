@@ -47,7 +47,7 @@ HRESULT SetMatrixArray(
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [Handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 ## <a name="remarks"></a>Commenti
 
-Una matrice non trasposta contiene dati principali di riga. in altri, ogni vettore è contenuto in una riga.
+Una matrice non trasposta contiene dati principali della riga. ciò significa che ogni vettore è contenuto in una riga.
 
 Se le matrici di destinazione sono più piccole delle matrici di origine, i componenti aggiuntivi delle matrici di origine verranno ignorati.
 

@@ -1,10 +1,10 @@
 ---
-title: Attributo Template-Roots
-description: Questo attributo viene usato nel contenitore di configurazione di Exchange per indicare la posizione in cui vengono archiviati i contenitori di modelli. Queste informazioni vengono utilizzate dal provider MAPI Active Directory.
+title: Template-Roots attributo
+description: Questo attributo viene usato nel contenitore Exchange config per indicare dove sono archiviati i contenitori del modello. Queste informazioni vengono usate dal provider MAPI di Active Directory.
 ms.assetid: 1416ce4a-ca07-4ca9-8ea1-e1a6ad19e7ad
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Template-Roots attribute
+- Template-Roots schema AD dell'attributo
 - Schema AD dell'attributo templateRoots
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 761c6d3d79bbf45e9a4d391b612956d6893cd314
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 06b037afe0e2489a2979e7d7b873e37cfc365643cb4728ab0411e4c56827a019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103744898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923041"
 ---
-# <a name="template-roots-attribute"></a>Attributo Template-Roots
+# <a name="template-roots-attribute"></a>Template-Roots attributo
 
-Questo attributo viene usato nel contenitore di configurazione di Exchange per indicare la posizione in cui vengono archiviati i contenitori di modelli. Queste informazioni vengono utilizzate dal provider MAPI Active Directory.
+Questo attributo viene usato nel contenitore Exchange config per indicare dove sono archiviati i contenitori del modello. Queste informazioni vengono usate dal provider MAPI di Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | Template-Roots                          |
-| LDAP-Display-Name | templateRoots                           |
+| Ldap-Display-Name | templateRoots                           |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | Viene utilizzato dal sistema.             |
+| Privilegio di aggiornamento  | Viene usato dal sistema.             |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1346                 |
-| System-ID-GUID    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
+| System-Id-Guid    | ed9de9a0-7041-11d2-9905-0000f87a57d4    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo viene usato nel contenitore di configurazione di Exchange per i
 | ID collegamento                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| È a valore singolo       | Falso                                                                                |
+| Is-Single-Valued       | Falso                                                                                |
 | Indicizzato             | Falso                                                                                |
 | Nel catalogo globale      | Falso                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classi utilizzate in        | [**ms-Exch-Configuration-container**](c-msexchconfigurationcontainer.md)<br/> |
+| Classi usate in        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

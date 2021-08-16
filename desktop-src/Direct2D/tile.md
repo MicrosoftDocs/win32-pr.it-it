@@ -1,5 +1,5 @@
 ---
-title: Effetto tessera
+title: Effetto riquadro
 description: Usare l'effetto riquadro per ripetere l'area specificata dell'immagine.
 ms.assetid: C7505DBF-5F79-4407-84C4-634EA7EC06B7
 keywords:
@@ -13,7 +13,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119430496"
 ---
-# <a name="tile-effect"></a>Effetto tessera
+# <a name="tile-effect"></a>Effetto riquadro
 
 Usare l'effetto riquadro per ripetere l'area specificata dell'immagine.
 
@@ -53,9 +53,9 @@ m_d2dContext->EndDraw();
 
 
 
-| Enumerazione del nome visualizzato e dell'indice                | Tipo e valore predefinito                                              | Descrizione                                                                                                                                        |
+| Nome visualizzato ed enumerazione dell'indice                | Tipo e valore predefinito                                              | Descrizione                                                                                                                                        |
 |---------------------------------------------------|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rect<br/> D2D1 \_ TILE \_ PROP \_ RECT<br/> | D2D1 \_ VECTOR \_ 4F<br/> {0.0f, 0.0f, 100.0f, 100.0f}<br/> | Area dell'immagine da affiancare. Questa proprietà è un vettore D2D1 \_ \_ 4F definito come: (sinistra, superiore, destra, inferiore). Le unità sono in DIP.<br/> |
+| Rect<br/> RETTA DI PROP DEL RIQUADRO D2D1 \_ \_ \_<br/> | D2D1 \_ VECTOR \_ 4F<br/> {0.0f, 0.0f, 100.0f, 100.0f}<br/> | Area dell'immagine da affiancare. Questa proprietà è un vettore D2D1 \_ \_ 4F definito come: (a sinistra, in alto, a destra, in basso). Le unità sono in DIP.<br/> |
 
 
 
@@ -65,7 +65,7 @@ m_d2dContext->EndDraw();
 
 Questo effetto genera una bitmap logicamente infinita.
 
-È possibile affiancare un'immagine e ottenere un output di una determinata dimensione senza effetti aggiuntivi impostando la dimensione quando si chiama [**ID2D1DeviceContext::D rawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)).
+È possibile affiancare un'immagine e ottenere un output di una determinata dimensione senza effetti aggiuntivi impostando le dimensioni quando si chiama [**ID2D1DeviceContext::D rawImage**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -73,8 +73,8 @@ Questo effetto genera una bitmap logicamente infinita.
 
 | Requisito | Valore |
 |--------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
-| Server minimo supportato | Windows 8 e l'aggiornamento della piattaforma per Windows 7 \[ app desktop \| Windows Store\] |
+| Client minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
+| Server minimo supportato | Windows 8 e Platform Update per Windows 7 \[ app desktop \| Windows Store\] |
 | Intestazione                   | d2d1effects.h                                                                      |
 | Libreria                  | d2d1.lib, dxguid.lib                                                               |
 

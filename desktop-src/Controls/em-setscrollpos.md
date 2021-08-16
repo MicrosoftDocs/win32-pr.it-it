@@ -3,7 +3,7 @@ title: EM_SETSCROLLPOS messaggio (Richedit.h)
 description: Scorre il contenuto di un controllo Rich Edit fino al punto specificato.
 ms.assetid: 9ec514a4-97b1-44ab-b2ca-973b1f6fc404
 keywords:
-- EM_SETSCROLLPOS controlli di Windows messaggio
+- EM_SETSCROLLPOS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:

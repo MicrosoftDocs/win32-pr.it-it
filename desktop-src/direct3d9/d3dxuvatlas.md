@@ -1,7 +1,7 @@
 ---
-description: Definisce le opzioni per l'esecuzione di calcoli della distanza geodetica, quando si adatta una trama a una superficie curva. Usare questo flag per scegliere tra i calcoli di alta qualità rispetto a quelli veloci durante il calcolo di un Atlante di trama.
+description: Definisce le opzioni per l'esecuzione di calcoli della distanza geodetica, quando si adatta una trama a una superficie curva. Usare questo flag per scegliere tra calcoli di alta qualità e calcoli rapidi durante il calcolo di un at atlas delle trame.
 ms.assetid: 76649c57-e5ae-4e0d-a7ab-f56385a327c2
-title: Enumerazione D3DXUVATLAS (D3dx9mesh. h)
+title: Enumerazione D3DXUVATLAS (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 64cc116199b688fc9dcd8d6fbf331d85da508948
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1edcf2b1cbe2363f805bee1f5eb67f5558702ea9e163a865e1a6c51d6f5ed6ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523837"
 ---
 # <a name="d3dxuvatlas-enumeration"></a>Enumerazione D3DXUVATLAS
 
-Definisce le opzioni per l'esecuzione di calcoli della distanza geodetica, quando si adatta una trama a una superficie curva. Usare questo flag per scegliere tra i calcoli di alta qualità rispetto a quelli veloci durante il calcolo di un Atlante di trama.
+Definisce le opzioni per l'esecuzione di calcoli della distanza geodetica, quando si adatta una trama a una superficie curva. Usare questo flag per scegliere tra calcoli di alta qualità e calcoli rapidi durante il calcolo di un at atlas delle trame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,24 +41,24 @@ typedef enum _D3DXUVATLAS {
 
 <dl> <dt>
 
-<span id="D3DXUVATLAS_DEFAULT"></span><span id="d3dxuvatlas_default"></span>**\_Impostazione predefinita D3DXUVATLAS**
+<span id="D3DXUVATLAS_DEFAULT"></span><span id="d3dxuvatlas_default"></span>**IMPOSTAZIONE PREDEFINITA D3DXUVATLAS \_**
 </dt> <dd>
 
-Ai mesh con più di 25K visi sarà applicato il metodo di distanza geodasic veloce, mentre i mesh con meno di 25K visi avranno a disposizione il metodo di distanza geodetica di qualità superiore.
+Alle mesh con più di 25.000 visi verrà applicato il metodo di distanza geodasica veloce, mentre alle mesh con meno di 25.000 visi verrà applicato il metodo di distanza geodetica di qualità superiore.
 
 </dd> <dt>
 
-<span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**D3DXUVATLAS \_ geodetica \_ veloce**
+<span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**D3DXUVATLAS \_ GEODESIC \_ FAST**
 </dt> <dd>
 
-USA approssimazioni per migliorare la velocità di creazione dei grafici a scapito dell'estensione aggiuntiva o di più grafici restituiti per la mesh.
+Usa approssimazioni per migliorare la velocità di creazione dei grafici a costo di aggiungere un'estensione o più grafici che vengono restituiti per la mesh.
 
 </dd> <dt>
 
-<span id="D3DXUVATLAS_GEODESIC_QUALITY"></span><span id="d3dxuvatlas_geodesic_quality"></span>**\_Qualità geodetica D3DXUVATLAS \_**
+<span id="D3DXUVATLAS_GEODESIC_QUALITY"></span><span id="d3dxuvatlas_geodesic_quality"></span>**QUALITÀ GEODETICA D3DXUVATLAS \_ \_**
 </dt> <dd>
 
-Fornisce grafici di qualità migliori, ma richiede più tempo e memoria rispetto alla velocità.
+Offre grafici di qualità migliore, ma richiede più tempo e memoria rispetto alla velocità.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Fornisce grafici di qualità migliori, ma richiede più tempo e memoria rispetto
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

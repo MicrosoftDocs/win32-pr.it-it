@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118706176"
 ---
-# <a name="ui_pkey_minimized"></a>CHIAVE \_ PKEY dell'interfaccia \_ utente ridotta a icona
+# <a name="ui_pkey_minimized"></a>Chiave \_ PKEY dell'interfaccia \_ utente ridotta a icona
 
 Identifica la proprietà \_ PKEY \_ Minimized dell'interfaccia utente.
 
@@ -42,9 +42,9 @@ UI \_ PKEY \_ Minimized viene usato da un'applicazione per eseguire query sullo 
 
  
 
-Quando l'interfaccia utente della barra multifunzione si trova in uno stato ridotto a icona, la riga scheda della barra multifunzione rimane visibile e completamente funzionante.
+Quando l'interfaccia utente della barra multifunzione si trova in uno stato ridotto a icona, la riga della scheda della barra multifunzione rimane visibile e completamente funzionante.
 
-Lo screenshot seguente mostra la barra multifunzione in stato ridotto a icona.
+La schermata seguente mostra la barra multifunzione in stato ridotto a icona.
 
 ![Screenshot che mostra l'interfaccia utente della barra multifunzione ridotta a icona.](images/overviews/ribbon-minimized.png)
 

@@ -1,5 +1,5 @@
 ---
-description: Inviato a una DLL di estensione quando l'utente sceglie il comando Aggiorna dal menu Visualizza in File Manager. L'estensione può usare questa notifica per aggiornare il relativo menu.
+description: Inviato a una DLL di estensione quando l'utente sceglie il comando Aggiorna dal menu Visualizza in File Manager. L'estensione può usare questa notifica per aggiornare il menu.
 title: FMEVENT_USER_REFRESH messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: b8fb4ce8-d284-4558-82a4-488d4d833bcb
-ms.openlocfilehash: 16f75f562149b50237a6b41bf2023d1f694741e3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9e2f514494ae8040c7bdb97f556555bd7f32794e4259300da240956ff6fcfe98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094146"
 ---
-# <a name="fmevent_user_refresh-message"></a>MESSAGGIO DI \_ AGGIORNAMENTO \_ DELL'UTENTE FMEVENT
+# <a name="fmevent_user_refresh-message"></a>Messaggio DI AGGIORNAMENTO UTENTE FMEVENT \_ \_
 
-Inviato a una DLL di estensione quando l'utente sceglie il **comando Aggiorna** dal menu **Visualizza** in File Manager. L'estensione può usare questa notifica per aggiornare il relativo menu.
+Inviato a una DLL di estensione quando l'utente sceglie il **comando Aggiorna** **dal** menu Visualizza in File Manager. L'estensione può usare questa notifica per aggiornare il menu.
 
 ## <a name="parameters"></a>Parametri
 

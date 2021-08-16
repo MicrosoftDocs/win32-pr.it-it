@@ -1,31 +1,31 @@
 ---
-description: Per creare un provider di consumer di eventi WMI, è necessario registrare l' \_ \_ istanza di Win32Provider che rappresenta il provider utilizzando un'istanza di \_ \_ EventConsumerProviderRegistration.
+description: Per creare un provider di consumer di eventi WMI, è necessario registrare l'istanza win32Provider che rappresenta il provider usando un'istanza di \_ \_ \_ \_ EventConsumerProviderRegistration.
 ms.assetid: d1aa035c-f9ee-46b5-9fa5-8af77156f904
 ms.tgt_platform: multiple
 title: Registrazione di un provider di consumer di eventi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df6bf47e11b1b9df072f9efbca0ba0f620e96d78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1922970838b99e2a4a371ed7b00ae0f506a0381f0018509bfd6874074e0dd8f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103755047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992542"
 ---
 # <a name="registering-an-event-consumer-provider"></a>Registrazione di un provider di consumer di eventi
 
-Per creare un [*provider di consumer di eventi*](gloss-e.md) WMI, è necessario registrare l'istanza di [**\_ \_ Win32Provider**](--win32provider.md) che rappresenta il provider utilizzando un'istanza di [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md). Come oggetto COM, il provider deve eseguire la registrazione con il sistema operativo e WMI. Nella procedura seguente si presuppone che il processo di registrazione sia già stato implementato come descritto in [registrazione di un provider](registering-a-provider.md).
+Per creare un [*provider di consumer*](gloss-e.md) di eventi WMI, è necessario registrare l'istanza [**\_ \_ win32Provider**](--win32provider.md) che rappresenta il provider usando un'istanza di [**\_ \_ EventConsumerProviderRegistration.**](--eventconsumerproviderregistration.md) Come oggetto COM, il provider deve registrarsi con il sistema operativo e WMI. Nella procedura seguente si presuppone che il processo di registrazione sia già stato implementato come descritto in [Registrazione di un provider](registering-a-provider.md).
 
 Nella procedura seguente viene descritto come registrare un provider di consumer di eventi.
 
 **Per registrare un provider di consumer di eventi**
 
-1.  Creare un'istanza della classe [**\_ \_ Win32Provider**](--win32provider.md) che descrive il provider.
-2.  Creare un'istanza della classe [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) che descrive il set di funzionalità del provider.
+1.  Creare un'istanza della [**\_ \_ classe Win32Provider**](--win32provider.md) che descrive il provider.
+2.  Creare un'istanza della [**\_ \_ classe EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) che descrive il set di funzionalità del provider.
 
-    Le proprietà definite da [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) includono il percorso dell'oggetto per il provider e i nomi delle classi di consumer logiche supportate dal provider di consumer di eventi.
+    Le proprietà definite da [**\_ \_ EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) includono il percorso dell'oggetto al provider e i nomi delle classi consumer logiche supportate dal provider di consumer di eventi.
 
-    Assicurarsi di contrassegnare la classe con i qualificatori **dinamici** e del [**provider**](/windows/desktop/api/Provider/nl-provider-provider) . Il qualificatore **dinamico** segnala che WMI deve usare un provider per recuperare le istanze della classe. Il qualificatore del **provider** specifica il nome del provider che WMI deve utilizzare.
+    Assicurarsi di contrassegnare la classe con entrambi i **qualificatori Dynamic** [**e Provider.**](/windows/desktop/api/Provider/nl-provider-provider) Il **qualificatore dinamico** segnala che WMI deve utilizzare un provider per recuperare le istanze della classe. Il **qualificatore** Provider specifica il nome del provider che WMI deve utilizzare.
 
 Nell'esempio di codice seguente viene illustrato come registrare un provider di consumer di eventi.
 

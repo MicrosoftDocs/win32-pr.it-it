@@ -5,7 +5,7 @@ ms.assetid: 8f9e118a-9e92-4919-afe1-735c61af38f7
 keywords:
 - Proprietà DisplayName Funzionalità dell'Windows legacy
 - Proprietà DisplayName Legacy Windows Environment Features , interfaccia IResultProperty
-- Interfaccia IResultProperty Legacy Windows Environment Features , proprietà DisplayName
+- Interfaccia IResultProperty Legacy Windows funzionalità dell'ambiente, proprietà DisplayName
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ restituisce un puntatore al nome visualizzato localizzato.
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                      |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                             |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                             |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
 | Intestazione<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 

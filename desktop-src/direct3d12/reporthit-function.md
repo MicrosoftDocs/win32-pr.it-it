@@ -41,21 +41,21 @@ Valore float che specifica la distanza parametrica dell'intersezione.
 
 `HitKind`
 
-Intero senza segno che identifica il tipo di hit che si è verificato.  Si tratta di un valore specificato dall'utente nell'intervallo da 0 a 127.  Il valore può essere letto da [qualsiasi hit](any-hit-shader.md) shader o [hit](closest-hit-shader.md) shader più vicino con la funzione **intrinseca HitKind.**
+Intero senza segno che identifica il tipo di hit che si è verificato.  Si tratta di un valore specificato dall'utente nell'intervallo compreso tra 0 e 127.  Il valore può essere letto da [qualsiasi hit](any-hit-shader.md) shader o [hit](closest-hit-shader.md) shader più vicino con la **funzione intrinseca HitKind.**
 
 `Attributes`
 
-Struttura dell'attributo di intersezione definito [**dall'utente che**](intersection-attributes.md) specifica gli attributi di intersezione.  
+Struttura della struttura di attributi di intersezione definita [**dall'utente**](intersection-attributes.md) che specifica gli attributi di intersezione.  
 
 ## <a name="return-value"></a>Valore restituito
 
-**bool** True se l'hit è stato accettato.  Un hit viene rifiutato se *THit* non rientra nell'intervallo di raggi corrente o se qualsiasi hit shader [**chiama IgnoreHit.**](ignorehit-function.md)  L'intervallo di raggi corrente è definito **da RayTMin** e **RayTCurrent.**
+**bool** True se l'hit è stato accettato.  Un hit viene rifiutato se *THit* non rientra nell'intervallo di raggi corrente o se l'hit shader chiama [**IgnoreHit.**](ignorehit-function.md)  L'intervallo di raggi corrente è definito **da RayTMin** e **RayTCurrent.**
 
 ## <a name="remarks"></a>Commenti
 
 Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
-* [**Intersection Shader**](intersection-shader.md)
+* [**Shader di intersezione**](intersection-shader.md)
 
 
 
@@ -65,7 +65,7 @@ Questa funzione può essere chiamata dai tipi di shader raytracing seguenti:
 
 <dl> <dt>
 
-[Informazioni di riferimento su HLSL per Direct3D 12 Raytracing](direct3d-12-raytracing-hlsl-reference.md)
+[Informazioni di riferimento su Direct3D 12 Raytracing HLSL](direct3d-12-raytracing-hlsl-reference.md)
 </dt> </dl>
 
  

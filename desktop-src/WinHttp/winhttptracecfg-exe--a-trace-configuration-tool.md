@@ -1,5 +1,5 @@
 ---
-description: Lo strumento Windows di traccia di Microsoft Windows (WinHTTP), WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti.
+description: Lo strumento Windows di traccia dei servizi HTTP (WinHTTP), WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti.
 ms.assetid: 744cae92-9c64-459e-96eb-eb609e62183c
 title: WinHttpTraceCfg.exe, uno strumento di configurazione della traccia
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118562415"
 ---
 # <a name="winhttptracecfgexe-a-trace-configuration-tool"></a>WinHttpTraceCfg.exe, uno strumento di configurazione della traccia
 
-Lo strumento Windows di traccia di Microsoft Windows Servizi [HTTP (WinHTTP),](about-winhttp.md) WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti. La possibilità di monitorare le funzioni WinHTTP e il traffico di rete corrispondente è importante. Il debug di applicazioni che utilizzano protocolli di rete crittografati, ad esempio Secure Sockets Layer (SSL), preclude lo sniffing dei pacchetti a livello di trasporto di rete e richiede la possibilità di intercettare il traffico tra il client e il server dopo che è stato decrittografato. Microsoft Windows servizi HTTP (WinHTTP) offre una funzionalità di traccia con una gamma di funzionalità per intercettare il flusso di traffico tra il client e il server.
+Lo strumento Windows di traccia dei servizi [HTTP (WinHTTP),](about-winhttp.md) WinHttpTraceCfg.exe, viene usato per configurare le funzionalità di traccia a scopo di debug e analisi dei pacchetti. La possibilità di monitorare le funzioni WinHTTP e il traffico di rete corrispondente è importante. Il debug di applicazioni che utilizzano protocolli di rete crittografati, ad esempio Secure Sockets Layer (SSL), preclude lo sniffing dei pacchetti a livello di trasporto di rete e richiede la possibilità di intercettare il traffico tra il client e il server dopo che è stato decrittografato. Microsoft Windows servizi HTTP (WinHTTP) offre una funzionalità di traccia con una gamma di funzionalità per intercettare il flusso di traffico tra il client e il server.
 
 Questa funzionalità di traccia può essere uno strumento utile per il debug. Può essere usato, ad esempio, per visualizzare i parametri passati a varie chiamate di funzione, nonché per visualizzare i dati effettivi inviati e ricevuti da un'applicazione WinHTTP.
 
@@ -24,7 +24,7 @@ Questa funzionalità di traccia può essere uno strumento utile per il debug. Pu
 
 WinHTTP ottiene i parametri di controllo di traccia dal Registro di sistema. Questi parametri di controllo influiscono sul modo in cui WinHTTP produce l'output di traccia e sulla formattazione dell'output. Tutte le applicazioni che usano WinHTTP condividono le stesse impostazioni.
 
-Uno strumento di configurazione della funzionalità di traccia, WinHttpTraceCfg.exe, è disponibile come download nel sito Web Windows [Resource Kit Tools di Windows Server 2003.](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) Lo strumento di configurazione imposta o recupera le impostazioni del Registro di sistema della funzionalità di traccia in base ai parametri della riga di comando specificati.
+Uno strumento di configurazione della funzionalità di traccia, WinHttpTraceCfg.exe, è disponibile come download nel sito Web degli strumenti [di Windows Server 2003 Resource Kit.](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) Lo strumento di configurazione imposta o recupera le impostazioni del Registro di sistema della funzionalità di traccia in base ai parametri della riga di comando specificati.
 
 ``` syntax
 WinHttpTraceCfg [-e <0|1>] [-l [log-file]] [-d <0|1>] [-s <0|1|2>] 
@@ -72,7 +72,7 @@ Nella tabella seguente sono elencati i possibili parametri per lo strumento di c
 <tr class="odd">
 <td>-l</td>
 <td><p>Specifica un prefisso per il file di log. Il prefisso può includere un percorso. Il file di log viene scritto nella directory corrente o nella directory specificata nel prefisso e ha il formato seguente.</p>
-<p><<em></em> > prefisso -< <em>nome dell'applicazione</em> > . <ora <em>.log</em> ></p>
+<p><<em></em> > prefisso -< <em>nome dell'applicazione</em> > . <<em>ora .log</em> ></p>
 <p>Se non viene specificato un prefisso, viene utilizzata una stringa vuota. Specificare &quot; * &quot; per eliminare un prefisso esistente.</p></td>
 </tr>
 <tr class="even">
@@ -162,7 +162,7 @@ L'immagine seguente mostra una parte di un file di log generato dalla funzionali
 
 ![traccia di esempio](images/ss-tracer-wco.png)
 
-Ogni riga di output di traccia contiene informazioni in tre colonne. La prima colonna mostra la data e l'ora in cui è stata registrata la voce. La seconda colonna mostra un identificatore di richiesta (ID) che può essere usato per distinguere tra più richieste. Se la voce di log non corrisponde a una richiesta specifica, in \* questa colonna viene visualizzato " Sessione \* ". Può essere utile ordinare il file di log in base a questo ID per visualizzare solo gli eventi che si verificano per una singola richiesta. Nell'esempio seguente viene illustrato un comando che è possibile usare per ordinare il file di log.
+Ogni riga di output di traccia contiene informazioni in tre colonne. La prima colonna mostra la data e l'ora in cui è stata registrata la voce. La seconda colonna mostra un identificatore di richiesta (ID) che può essere usato per distinguere tra più richieste. Se la voce di log non corrisponde a una richiesta specifica, in questa colonna viene \* \* visualizzato " Sessione ". Può essere utile ordinare il file di log in base a questo ID per visualizzare solo gli eventi che si verificano per una singola richiesta. Nell'esempio seguente viene illustrato un comando che è possibile usare per ordinare il file di log.
 
 **findstr 00000001 LogFile.log**
 

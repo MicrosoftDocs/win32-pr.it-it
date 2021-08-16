@@ -1,11 +1,11 @@
 ---
 title: Attribute-Syntax attributo
-description: OID per la sintassi per questo attributo.
+description: OID della sintassi per questo attributo.
 ms.assetid: 7ae16381-c8e9-4f85-b3e6-86c82b487ca2
 ms.tgt_platform: multiple
 keywords:
 - Attribute-Syntax schema AD dell'attributo
-- Schema AD dell'attributo attributeSyntax
+- AttributeSyntax attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119443061"
 ---
 # <a name="attribute-syntax-attribute"></a>Attribute-Syntax attributo
 
-OID per la sintassi per questo attributo.
+OID della sintassi per questo attributo.
 
 
 
@@ -32,7 +32,7 @@ OID per la sintassi per questo attributo.
 | CN                | Attribute-Syntax                                                |
 | Ldap-Display-Name | attributeSyntax                                                 |
 | Dimensione              | \-                                                              |
-| Privilegio di aggiornamento  | Amministratore dello schema                                            |
+| Aggiorna privilegio  | Amministratore dello schema                                            |
 | Frequenza di aggiornamento  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.32                                           |
 | System-Id-Guid    | bf967925-0de6-11d0-a285-00aa003049e2                            |
@@ -59,7 +59,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -67,7 +67,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,7 +80,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -88,7 +88,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -101,7 +101,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -109,7 +109,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,7 +122,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -130,7 +130,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -151,7 +151,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -172,7 +172,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ OID per la sintassi per questo attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Vero                                                     |
-| Is-Single-Valued       | Vero                                                     |
+| A valore singolo       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                             |
@@ -193,7 +193,7 @@ OID per la sintassi per questo attributo.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000008                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 

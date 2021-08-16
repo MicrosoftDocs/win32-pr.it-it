@@ -5,7 +5,7 @@ ms.assetid: 49312b03-9ee9-44ef-b3eb-a35631a6e693
 keywords:
 - Metodo GetGdiCompatibleGlyphPlacements Direct Write
 - Metodo GetGdiCompatibleGlyphPlacements Direct Write, interfaccia IDWriteTextAnalyzer
-- Interfaccia IDWriteTextAnalyzer Direct Write, metodo GetGdiCompatibleGlyphPlacements
+- Metodo GetGdiCompatibleGlyphPlacements dell'interfaccia IDWriteTextAnalyzer
 topic_type:
 - apiref
 api_name:
@@ -67,7 +67,7 @@ virtual HRESULT GetGdiCompatibleGlyphPlacements(
 
 Tipo: **const \* WCHAR**
 
-Matrice di caratteri contenente la stringa originale da cui derivano i glifi.
+Matrice di caratteri contenente la stringa originale da cui provenivano i glifi.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Matrice di caratteri contenente la stringa originale da cui derivano i glifi.
 
 Tipo: **const UINT16 \***
 
-Puntatore al mapping dagli intervalli di caratteri agli intervalli di glifi. Viene restituito da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Puntatore al mapping dagli intervalli di caratteri agli intervalli di glifi. Viene restituito da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Puntatore al mapping dagli intervalli di caratteri agli intervalli di glifi. Vie
 
 Tipo: **[ **DWRITE \_ SHAPING \_ TEXT \_ PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_text_properties)\***
 
-Puntatore a una matrice di strutture che contiene le proprietà di data shaping per ogni carattere. Questa struttura viene restituita [**da GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Puntatore a una matrice di strutture che contiene le proprietà di data shaping per ogni carattere. Questa struttura viene restituita [**da GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Puntatore a una matrice di strutture che contiene le proprietà di data shaping 
 
 Tipo: **UINT32**
 
-Lunghezza del testo di *textString*.
+Lunghezza del testo di *textString.*
 
 </dd> <dt>
 
@@ -103,14 +103,14 @@ Lunghezza del testo di *textString*.
 
 Tipo: **const UINT16 \***
 
-Matrice di indici di glifi restituiti da [**GetGlyphs**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs).
+Matrice di indici di glifi restituiti da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
 </dd> <dt>
 
 *glyphProps* \[ Pollici\]
 </dt> <dd>
 
-Tipo: **const [**DWRITE \_ SHAPING \_ \_ GLYPH PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) \***
+Tipo: **const [**DWRITE \_ SHAPING \_ GLYPH \_ PROPERTIES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_shaping_glyph_properties) \***
 
 Puntatore a una matrice di strutture che contengono proprietà di data shaping per ogni glifo restituito da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-getglyphs)
 
@@ -125,7 +125,7 @@ Numero di glifi restituiti da [**GetGlyphs.**](/windows/win32/api/dwrite/nf-dwri
 
 </dd> <dt>
 
-*fontFace* \[ Pollici\]
+*carattere Carattere* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface)\***
@@ -157,7 +157,7 @@ Numero di pixel fisici per DIP.
 
 Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e *pixelPerDip*.
+Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa trasformazione viene applicata dopo il ridimensionamento specificato dalle dimensioni del carattere e *pixelPerDip.*
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Trasformazione facoltativa applicata ai glifi e alle relative posizioni. Questa 
 
 Tipo: **BOOL**
 
-Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo con alias GDI. Se impostato su **TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY**.
+Se impostata **su FALSE,** le metriche sono le stesse del testo con alias GDI. Se impostata **su TRUE,** le metriche sono le stesse del testo misurato da GDI usando un tipo di carattere creato con **CLEARTYPE \_ NATURAL \_ QUALITY.**
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Se impostato su **FALSE,** le metriche sono le stesse delle metriche del testo c
 
 Tipo: **BOOL**
 
-Flag booleano impostato su **TRUE** se il testo deve essere disegnato verticalmente.
+Flag booleano impostato su **TRUE se** il testo deve essere disegnato verticalmente.
 
 </dd> <dt>
 
@@ -193,7 +193,7 @@ Flag booleano impostato su **TRUE per** il testo da destra a sinistra.
 
 Tipo: **const [**DWRITE \_ SCRIPT \_ ANALYSIS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_script_analysis) \***
 
-Puntatore a un risultato dell'analisi script da [**una chiamata a AnalyzeScript.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-analyzescript)
+Puntatore a un risultato dell'analisi dello script da [**una chiamata AnalyzeScript.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextanalyzer-analyzescript)
 
 </dd> <dt>
 
@@ -209,9 +209,9 @@ Matrice di caratteri contenente le impostazioni locali da utilizzare per la sele
  *funzionalità* \[ in, facoltativo\]
 </dt> <dd>
 
-Tipo: **const [**DWRITE \_ TYPOGRAPHIC \_ FEATURES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features) \* \***
+Tipo: **const [**DWRITE \_ \_ TYPOGRAPHIC FEATURES**](/windows/win32/api/dwrite/ns-dwrite-dwrite_typographic_features) \* \***
 
-Matrice di puntatori ai set di funzionalità tipografiche da usare in ogni intervallo di funzionalità.
+Matrice di puntatori ai set di caratteristiche tipografiche da usare in ogni intervallo di caratteristiche.
 
 </dd> <dt>
 
@@ -220,11 +220,11 @@ Matrice di puntatori ai set di funzionalità tipografiche da usare in ogni inter
 
 Tipo: **const UINT32 \***
 
-Lunghezza di ogni intervallo di funzionalità, in caratteri. La somma di tutte le lunghezze deve essere uguale a *textLength*.
+Lunghezza di ogni intervallo di caratteristiche, in caratteri. La somma di tutte le lunghezze deve essere uguale a *textLength.*
 
 </dd> <dt>
 
- *featureRanges* 
+ *Oggetti featureRanges* 
 </dt> <dd>
 
 Tipo: **UINT32**
@@ -233,7 +233,7 @@ Numero di intervalli di funzionalità.
 
 </dd> <dt>
 
- *glifoAdvances* \[ Cambio\]
+ *glyphAdvances* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **\* FLOAT**

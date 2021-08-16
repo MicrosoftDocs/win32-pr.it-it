@@ -49,30 +49,30 @@ Numero di dispositivi richiesti. Questo valore indica anche il numero di element
 
 </dd> <dt>
 
-*pConnectors* \[ Cambio\]
+*pConnector* \[ Cambio\]
 </dt> <dd>
 
-Matrice di [**puntatori IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) ognuno dei quali specifica un dispositivo Bluetooth MTP associato. Il chiamante deve allocare una matrice **di puntatori IPortableDeviceConnector,** con la lunghezza della matrice specificata dal *parametro cRequested.* In caso di esito positivo, il chiamante deve liberare sia la matrice che i puntatori restituiti. Le **interfacce IPortableDeviceConnector** vengono liberate chiamando il **metodo IUnknown::Release.**
+Matrice di [**puntatori IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) ognuno dei quali specifica una connessione MTP Bluetooth dispositivo. Il chiamante deve allocare una matrice di puntatori **IPortableDeviceConnector,** con la lunghezza della matrice specificata dal *parametro cRequested.* In caso di esito positivo, il chiamante deve liberare sia la matrice che i puntatori restituiti. Le **interfacce IPortableDeviceConnector** vengono liberate chiamando il **metodo IUnknown::Release.**
 
 </dd> <dt>
 
 *pcFetched* \[ in, out\]
 </dt> <dd>
 
-Numero di [**interfacce IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) effettivamente recuperate. Se non viene recuperata alcuna interfaccia **IPortableDeviceConnector** e il valore restituito è **S \_ FALSE,** non sono presenti altre **interfacce IPortableDeviceConnector** da enumerare.
+Numero di [**interfacce IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) effettivamente recuperate. Se non viene recuperata alcuna interfaccia **IPortableDeviceConnector** e il valore restituito è **S \_ FALSE,** non sono presenti altre interfacce **IPortableDeviceConnector** da enumerare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                             | Descrizione                                                      |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Il metodo è riuscito.<br/>                                 |
-| <dl> <dt>**S \_ FALSE**</dt> </dl> | Non ci sono più dispositivi MTP Bluetooth da enumerare.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Non sono più disponibili Bluetooth MTP da enumerare.<br/> |
 
 
 
@@ -80,7 +80,7 @@ Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono 
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato l'uso di questo metodo per enumerare i dispositivi MTP/Bluetooth associati e per inviare una richiesta di connessione asincrona a ognuno di essi.
+L'esempio seguente illustra l'uso di questo metodo per enumerare i dispositivi MTP/Bluetooth associati e per inviare una richiesta di connessione asincrona a ognuno di essi.
 
 
 ```C++

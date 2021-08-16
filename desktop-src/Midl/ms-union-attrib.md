@@ -1,6 +1,6 @@
 ---
 title: ms_union (attributo)
-description: La parola chiave \ms \_ union\ viene usata per controllare l'allineamento dei rapporti di rete delle unioni non incapsulate.
+description: La parola chiave \ms \_ union\ viene usata per controllare l'allineamento del rapporto di mancato recapito delle unioni non incapsulate.
 ms.assetid: 20ac2985-4552-4224-b03b-07378a2c0cdf
 keywords:
 - ms_union attributo MIDL
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118642799"
 ---
-# <a name="ms_union-attribute"></a>Attributo \_ ms union
+# <a name="ms_union-attribute"></a>Attributo ms \_ union
 
 La parola \[ **chiave ms \_ union** \] viene usata per controllare l'allineamento NDR delle unioni non incapsulate.
 
@@ -50,14 +50,14 @@ Specifica il nome dell'interfaccia.
 *procedure-type* 
 </dt> <dd>
 
-Specifica il tipo restituito della procedura a cui viene applicato l'attributo.
+Specifica il tipo restituito della routine a cui viene applicato l'attributo.
 
 </dd> <dt>
 
 *procedure-name* 
 </dt> <dd>
 
-Specifica il nome della procedura.
+Specifica il nome della routine.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Specifica l'elenco di parametri della procedura, che può essere vuoto.
 
 ## <a name="remarks"></a>Commenti
 
-Non usare mai questa opzione o attributo con nuove interfacce. Si tratta solo di una funzionalità di compatibilità con le versioni precedenti. Il compilatore MIDL in questa versione di Microsoft RPC rispecchia il comportamento del compilatore OSF DCE IDL per le unioni non incapsulate. Tuttavia, poiché le versioni precedenti del compilatore MIDL non lo hanno fatto, l'opzione [**di \_ unione /ms**](-ms-union.md) garantisce la compatibilità con le interfacce compilate nelle versioni precedenti del compilatore MIDL.
+Non usare mai questa opzione o attributo con nuove interfacce. Si tratta solo di una funzionalità di compatibilità con le versioni precedenti. Il compilatore MIDL in questa versione di Microsoft RPC rispecchia il comportamento del compilatore IDL DCE OSF per le unioni non incapsulate. Tuttavia, poiché le versioni precedenti del compilatore MIDL non lo hanno fatto, l'opzione [**/ms \_ union**](-ms-union.md) garantisce la compatibilità con le interfacce compilate nelle versioni precedenti del compilatore MIDL.
 
 La **funzionalità ms \_ union** può essere usata come attributo di interfaccia IDL, attributo di tipo IDL o come opzione della riga di comando ( [**/ms \_ union**](-ms-union.md)).
 

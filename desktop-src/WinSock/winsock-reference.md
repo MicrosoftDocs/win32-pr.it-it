@@ -1,5 +1,5 @@
 ---
-description: Windows Pagina di spostamento della sezione di riferimento di Sockets (Winsock).
+description: Windows Pagina di navigazione della sezione di riferimento socket (Winsock).
 ms.assetid: baae2bf9-f505-4365-b60e-e3247a0218c8
 title: Informazioni di riferimento su Winsock
 ms.topic: article
@@ -17,9 +17,9 @@ Il riferimento a Winsock è suddiviso nelle sezioni seguenti:
 
 -   [**Opzioni socket**](socket-options.md)
 -   [**IOCTL Winsock**](winsock-ioctls.md)
--   [Allegati winsock](winsock-annexes.md)
+-   [Winsock Annexes](winsock-annexes.md)
 -   [Enumerazioni Winsock](winsock-enumerations.md)
--   [Funzioni di Winsock](winsock-functions.md)
+-   [Funzioni winsock](winsock-functions.md)
 -   [Strutture di Winsock](winsock-structures.md)
 -   [Winsock SPI](winsock-spi.md)
 -   [Windows Codici di errore dei socket](windows-sockets-error-codes-2.md)

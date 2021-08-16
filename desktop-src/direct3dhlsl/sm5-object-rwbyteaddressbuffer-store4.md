@@ -3,7 +3,7 @@ title: Funzione RWByteAddressBuffer::Store4
 description: Imposta quattro valori.
 ms.assetid: 261dd270-79a7-4566-9fbd-52bd8dc3e1bf
 keywords:
-- Funzione Store4 HLSL
+- HLSL della funzione Store4
 topic_type:
 - apiref
 api_name:

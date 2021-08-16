@@ -21,7 +21,7 @@ HRESULT GetCount(
 );
 ```
 
-Recupera il numero di alternative [**Command**](command-event.md) passate a un callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
+Recupera il numero di [**alternative Command**](command-event.md) passate a un callback [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
 -   Restituisce S \_ OK per indicare che l'operazione è riuscita.
 
@@ -30,11 +30,11 @@ Recupera il numero di alternative [**Command**](command-event.md) passate a un c
 <span id="pdwCount"></span><span id="pdwcount"></span><span id="PDWCOUNT"></span>*pdwCount*
 </dt> <dd>
 
-Indirizzo di una variabile che riceve il numero di alternative [**di**](command-event.md) comandi identificate dal server.
+Indirizzo di una variabile che riceve il numero di alternative [**Commands**](command-event.md) identificate dal server.
 
 </dd> </dl>
 
-Se l'input vocale non è l'origine del comando, ad esempio se l'utente ha selezionato il comando dal menu a comparsa del carattere, **GetCount** restituisce 1. Se **GetCount restituisce** zero (0), il motore di riconoscimento vocale ha rilevato l'input parlato, ma ha determinato che non è presente alcun comando corrispondente.
+Se l'input vocale non è l'origine del comando, ad esempio se l'utente ha selezionato il comando dal menu a comparsa del carattere, **GetCount** restituisce 1. Se **GetCount restituisce** zero (0), il motore di riconoscimento vocale ha rilevato l'input vocale, ma ha determinato che non è presente alcun comando corrispondente.
 
  
 

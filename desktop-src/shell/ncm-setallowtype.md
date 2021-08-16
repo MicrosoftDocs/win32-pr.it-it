@@ -55,7 +55,7 @@ Restituisce S \_ OK in caso di esito positivo oppure un valore di errore in caso
 
 Il set di maschere è il criterio usato per convalidare un indirizzo di rete nel [**messaggio NCM \_ GETADDRESS.**](ncm-getaddress.md)
 
-Usare questo messaggio solo per un controllo degli indirizzi di rete. Per creare un'istanza, usare la **classe msctls \_ netaddress** definita in Shellapi.h. Chiamare [**InitNetworkAddressControl**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) in fase di esecuzione prima di inviare questo messaggio. In questo modo viene inizializzata la libreria di controlli comuni che contiene il controllo degli indirizzi di rete.
+Usare questo messaggio solo per un controllo degli indirizzi di rete. Per creare un'istanza, usare la **classe msctls \_ netaddress** definita in Shellapi.h. Chiamare [**InitNetworkAddressControl in**](/windows/desktop/api/Shellapi/nf-shellapi-initnetworkaddresscontrol) fase di esecuzione prima di inviare questo messaggio. In questo modo viene inizializzata la libreria di controlli comuni che contiene il controllo degli indirizzi di rete.
 
 ## <a name="requirements"></a>Requisiti
 

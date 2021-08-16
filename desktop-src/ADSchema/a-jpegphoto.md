@@ -1,6 +1,6 @@
 ---
 title: Attributo jpegPhoto
-description: Consente di archiviare una o più immagini di una persona usando il formato di interscambio di file JPEG \ JFIF\ .
+description: Usato per archiviare una o più immagini di una persona usando il formato di interscambio file JPEG \ JFIF\ .
 ms.assetid: c9257acd-366c-4839-a8c6-0ef9d6b7e671
 ms.tgt_platform: multiple
 keywords:
@@ -22,7 +22,7 @@ ms.locfileid: "119303901"
 ---
 # <a name="jpegphoto-attribute"></a>Attributo jpegPhoto
 
-Consente di archiviare una o più immagini di una persona usando il formato JFIF JFIF (Jpeg File Interchange \[ \] Format).
+Usato per archiviare una o più immagini di una persona usando il formato JFIF (Jpeg File Interchange \[ \] Format).
 
 
 
@@ -31,7 +31,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | CN                | jpegPhoto                                             |
 | Ldap-Display-Name | jpegPhoto                                             |
 | Dimensione              | \-                                                    |
-| Aggiorna privilegio  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 0.9.2342.19200300.100.1.60                            |
 | System-Id-Guid    | bac80572-09c4-4fa9-9ae6-7628d7adbe0e                  |
@@ -56,7 +56,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
@@ -77,7 +77,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
@@ -98,7 +98,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
@@ -119,7 +119,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
@@ -140,7 +140,7 @@ Consente di archiviare una o più immagini di una persona usando il formato JFIF
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| A valore singolo       | Falso                                                                                 |
+| Is-Single-Valued       | Falso                                                                                 |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |

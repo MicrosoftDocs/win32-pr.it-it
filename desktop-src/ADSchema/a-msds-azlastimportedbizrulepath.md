@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Az-Last-Imported-Biz-Rule-Path
-description: Ultimo percorso della regola business importata.
+description: Ultimo percorso della regola business importato.
 ms.assetid: be203f13-44ad-4da0-9889-80cf4a225a89
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DS-Az-Last-Imported-Biz-Rule-Path
+- Ms-DS-Az-Last-Imported-Biz-Rule-Path attribute AD Schema
 - Schema AD dell'attributo msDS-AzLastImportedBizRulePath
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "118685247"
 ---
 # <a name="ms-ds-az-last-imported-biz-rule-path-attribute"></a>Attributo ms-DS-Az-Last-Imported-Biz-Rule-Path
 
-Ultimo percorso della regola business importata.
+Ultimo percorso della regola business importato.
 
 
 
@@ -32,7 +32,7 @@ Ultimo percorso della regola business importata.
 | CN                | ms-DS-Az-Last-Imported-Biz-Rule-Path        |
 | Ldap-Display-Name | msDS-AzLastImportedBizRulePath              |
 | Dimensione              | 128 caratteri                              |
-| Privilegio di aggiornamento  | Amministratore di AzRoles                               |
+| Aggiorna privilegio  | AzRoles admin                               |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1803                     |
 | System-Id-Guid    | 665acb5c-bb92-4dbc-8c59-b3638eab09b3        |
@@ -57,7 +57,7 @@ Ultimo percorso della regola business importata.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| Is-Single-Valued       | Vero                                              |
+| A valore singolo       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
@@ -78,7 +78,7 @@ Ultimo percorso della regola business importata.
 | ID collegamento                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| Is-Single-Valued       | Vero                                              |
+| A valore singolo       | Vero                                              |
 | Indicizzato             | Falso                                             |
 | Nel catalogo globale      | Falso                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                      |
@@ -99,7 +99,7 @@ Ultimo percorso della regola business importata.
 | ID collegamento                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| Is-Single-Valued       | Vero                                                                                  |
+| A valore singolo       | Vero                                                                                  |
 | Indicizzato             | Falso                                                                                 |
 | Nel catalogo globale      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |

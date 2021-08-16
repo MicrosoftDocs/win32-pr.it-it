@@ -5,7 +5,7 @@ ms.assetid: E21BB773-923E-461B-B966-A186ACD0164A
 keywords:
 - Metodo IsColorFont Direct Write
 - Metodo IsColorFont Direct Write, interfaccia IDWriteFont2
-- Metodo IsColorFont dell'interfaccia IDWriteFont2 Direct Write
+- Interfaccia IDWriteFont2 Scrittura diretta , metodo IsColorFont
 topic_type:
 - apiref
 api_name:
@@ -53,8 +53,8 @@ Restituisce **TRUE se** il tipo di carattere contiene informazioni sul colore (t
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                     |
-| Server minimo supportato<br/> | Windows Server 2012 App \[ UWP per app desktop \| R2\]<br/>                          |
-| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone silverlight 8.1 e Windows Runtime\]<br/> |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                          |
+| Telefono minimo supportato<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows Runtime\]<br/> |
 | Libreria<br/>                  | <dl> <dt>Dwrite.lib</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Dwrite.dll</dt> </dl>   |
 

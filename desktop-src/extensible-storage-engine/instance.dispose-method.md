@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: metodo instance. Dispose'
-title: Metodo instance. Dispose
+description: 'Altre informazioni su: Metodo Instance.Dispose'
+title: Metodo Instance.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Instance.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.dispose(v=EXCHG.10)
@@ -14,16 +14,16 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0136d03aa492667e0464f8c02113fe3c4ae8de3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e1962a466ddb394f9863368bfc2ff1f4f508727ceef3ad9124c9dd3bceb93fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104566425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112590"
 ---
-# <a name="instancedispose-method"></a>Metodo instance. Dispose
+# <a name="instancedispose-method"></a>Metodo Instance.Dispose
 
-Includi membri protetti  
+Includere membri protetti  
 Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
@@ -39,13 +39,13 @@ Includi membri ereditati
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Metodo pubblico" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.dispose#System_Runtime_InteropServices_SafeHandle_Dispose">Dispose ()</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.</td>
+<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.dispose#System_Runtime_InteropServices_SafeHandle_Dispose">Dispose()</a></td>
+<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle.</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.dispose#System_Runtime_InteropServices_SafeHandle_Dispose_System_Boolean_">Dispose (valore booleano)</a></td>
-<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.</td>
+<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.dispose#System_Runtime_InteropServices_SafeHandle_Dispose_System_Boolean_">Dispose(Boolean)</a></td>
+<td>Ereditato da <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle.</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +57,8 @@ Inizio
 
 #### <a name="reference"></a>Riferimento
 
-[Classe dell'istanza](./instance-class.md)
+[Classe di istanza](./instance-class.md)
 
-[Membri di istanza](./instance-members.md)
+[Membri dell'istanza](./instance-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

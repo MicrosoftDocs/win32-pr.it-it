@@ -1,5 +1,5 @@
 ---
-description: Windows Le funzioni del programma di installazione che restituiscono dati in una posizione di memoria fornita dall'utente non devono essere chiamate con null come valore per il puntatore.
+description: Windows Le funzioni del programma di installazione che restituiscono dati in un percorso di memoria fornito dall'utente non devono essere chiamate con null come valore per il puntatore.
 ms.assetid: f566c4a4-b90c-4d73-9d7f-f5b836630636
 title: Passaggio di null a funzioni Windows installer
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118627664"
 ---
 # <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passaggio di null come argomento delle funzioni del Windows installer
 
-Windows Le funzioni del programma di installazione che restituiscono dati in una posizione di memoria fornita dall'utente non devono essere chiamate con null come valore per il puntatore. Queste funzioni restituiscono una stringa o restituiscono dati come puntatori integer, ma restituiscono valori incoerenti quando si passa null come valore per l'argomento di output.
+Windows Le funzioni del programma di installazione che restituiscono dati in un percorso di memoria fornito dall'utente non devono essere chiamate con null come valore per il puntatore. Queste funzioni restituiscono una stringa o restituiscono dati come puntatori Integer, ma restituiscono valori incoerenti quando si passa null come valore per l'argomento di output.
 
 Non passare Null come valore dell'argomento di output per una delle funzioni seguenti:
 

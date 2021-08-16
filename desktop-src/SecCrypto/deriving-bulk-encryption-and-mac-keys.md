@@ -1,34 +1,34 @@
 ---
-description: La crittografia in blocco e le chiavi MAC sono derivate da una chiave master, ma possono includere altre origini a seconda del protocollo e del pacchetto di crittografia utilizzati.
+description: La crittografia bulk e le chiavi MAC derivano da una chiave master, ma possono includere altre origini a seconda del protocollo e della suite di crittografia usata.
 ms.assetid: f78acb54-c32a-46a8-b465-855251069a57
-title: Derivazione della crittografia in blocco e delle chiavi MAC
+title: Derivazione della crittografia bulk e delle chiavi MAC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97cbf216fd850c7b98c638d4fdc10a84087d91ac
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 602419be7cdddea27c190806f0d03e087b8aac63eeeee2d80e96e2b3bcfae561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "106321025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767705"
 ---
-# <a name="deriving-bulk-encryption-and-mac-keys"></a>Derivazione della crittografia in blocco e delle chiavi MAC
+# <a name="deriving-bulk-encryption-and-mac-keys"></a>Derivazione della crittografia bulk e delle chiavi MAC
 
-La [*crittografia in blocco*](../secgloss/b-gly.md) e le [*chiavi Mac*](../secgloss/m-gly.md) sono derivate da una [*chiave master*](../secgloss/m-gly.md) , ma possono includere altre origini a seconda del protocollo e del pacchetto di crittografia utilizzati.
+[*La crittografia bulk*](../secgloss/b-gly.md) [*e le chiavi MAC*](../secgloss/m-gly.md) derivano da una chiave [*master,*](../secgloss/m-gly.md) ma possono includere altre origini a seconda del protocollo e della suite di crittografia usata.
 
-Il processo di derivazione della crittografia in blocco e delle chiavi MAC è lo stesso sia per il client che per il server:
+Il processo di derivazione della crittografia bulk e delle chiavi MAC è lo stesso per client e server:
 
-1.  Il motore di protocollo chiama [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) sulla chiave master una o più volte per fornire al CSP le informazioni necessarie per compilare le chiavi.
-2.  Poiché le chiavi [*CryptoAPI*](../secgloss/c-gly.md) non possono essere derivate direttamente da altre chiavi, viene creato un oggetto hash dalla chiave master usando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash). Questo [*hash*](../secgloss/h-gly.md) viene usato per creare le nuove chiavi.
-3.  Le due chiavi di crittografia bulk e le due chiavi MAC vengono create dall'oggetto "Master hash" utilizzando quattro chiamate a [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
+1.  Il motore del protocollo chiama [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) sulla chiave master una o più volte per fornire al provider di servizi di configurazione le informazioni necessarie per compilare le chiavi.
+2.  Poiché [*le chiavi CryptoAPI*](../secgloss/c-gly.md) non possono essere derivate direttamente da altre chiavi, viene creato un oggetto hash dalla chiave master [**usando CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash). Questo [*hash*](../secgloss/h-gly.md) viene usato per creare le nuove chiavi.
+3.  Le due chiavi di crittografia bulk e le due chiavi MAC vengono create dall'oggetto "hash master" usando quattro chiamate a [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
 
 > [!Note]
-> Quando si eseguono riconnessioni SSL, un motore di protocollo può eseguire la procedura precedente più volte usando la stessa chiave master. In questo modo, il client e il server possono avere più connessioni simultanee, ognuna delle quali usa la [*crittografia bulk*](../secgloss/b-gly.md) e le chiavi Mac diverse senza operazioni RSA o Diffie-Hellman aggiuntive.
+> Quando si eseguono riconnessioni SSL, un motore di protocollo può eseguire la procedura precedente più volte usando la stessa chiave master. In questo modo il client e il server possono [](../secgloss/b-gly.md) avere più connessioni, spesso simultanee, ognuna delle quali usa chiavi MAC e crittografia bulk diverse senza ulteriori operazioni RSA Diffie-Hellman sicurezza.
 > 
-> Tutti i CSP devono utilizzare buone procedure thread-safe. I conteggi dei thread di diverse dozzine non sono insoliti.
+> Tutti i CSP devono usare procedure thread-safe ottimali. I conteggi dei thread di diverse decine non sono insoliti.
 
  
 
-Di seguito è riportato il codice sorgente tipico per il motore di protocollo:
+Di seguito è riportato il codice sorgente tipico per il motore del protocollo:
 
 
 ```C++

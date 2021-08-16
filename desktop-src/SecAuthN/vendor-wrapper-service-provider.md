@@ -1,44 +1,44 @@
 ---
-description: Lo scopo del wrapper fornitore è incapsulare e utilizzare le interfacce COM di basso livello (fornite dai produttori di smart card) per una particolare smart card. Queste interfacce non vengono fornite da Microsoft.
+description: Lo scopo del wrapper del fornitore è incapsulare e usare le interfacce COM di basso livello (fornite dai produttori di smart card) per un particolare smart card. Queste interfacce non vengono fornite da Microsoft.
 ms.assetid: 7bc26f7b-c355-448a-9f23-4ccfffea2fef
-title: Provider di servizi wrapper fornitore
+title: Provider di servizi wrapper del fornitore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b7d22fea8e450111e1611f2ec069697c229a32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aeec4a8a5125e8fe19201a6c810eb87705eb7b5614b49fb455e8a96af63c8d26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785846"
 ---
-# <a name="vendor-wrapper-service-provider"></a>Provider di servizi wrapper fornitore
+# <a name="vendor-wrapper-service-provider"></a>Provider di servizi wrapper del fornitore
 
-Lo scopo del wrapper fornitore è incapsulare e utilizzare le interfacce COM di basso livello (fornite dai produttori di smart card) per una particolare smart card. Queste interfacce non vengono fornite da Microsoft.
+Lo scopo del wrapper del fornitore è incapsulare e usare le interfacce COM di basso livello (fornite dai produttori di smart card) per un particolare smart card. Queste interfacce non vengono fornite da Microsoft.
 
-![wrapper fornitore](images/scspart1.png)
+![wrapper del fornitore](images/scspart1.png)
 
-Come descritto nella parte 6 della *specifica di interoperabilità per i sistemi ICCS e personal computer* (vedere le specifiche all'indirizzo [https://www.pcscworkgroup.com/](https://www.pcscworkgroup.com/) ), la funzionalità esposta da questo wrapper è più semplice da usare rispetto alla funzionalità di quattro provider di servizi distinti. Le funzionalità del wrapper possono essere divise in quattro aree principali:
+Come descritto nella parte 6 della specifica di interoperabilità per *ICC* e Personal Computer Systems (vedere le specifiche in ), la funzionalità esposta da questo wrapper è più facile da usare rispetto alla funzionalità di quattro provider di servizi [https://www.pcscworkgroup.com/](https://www.pcscworkgroup.com/) separati. Le funzionalità del wrapper possono essere suddivise in quattro aree principali:
 
--   Servizi di autenticazione con smart card, ad esempio richiedere l'autenticazione della carta e della richiesta.
--   Accesso ai file di smart card o file system servizi, ad esempio apertura, chiusura, lettura e scrittura.
+-   Servizi di autenticazione con smart card, ad esempio l'autenticazione basata su richiesta e l'autenticazione con smart card.
+-   Accesso ai file della smart card o file system, ad esempio apertura, chiusura, lettura e scrittura.
 -   Gestione delle smart card, ad esempio collegamento e scollegamento.
--   Servizi di verifica della smart card, ad esempio la verifica e la modifica del codice.
+-   Servizi di verifica delle smart card, ad esempio la verifica e la modifica del codice.
 
 > [!Note]  
 > Questa specifica potrebbe non essere disponibile in alcune lingue e paesi o aree geografiche.
 
  
 
-La funzionalità è specifica per il tipo di scheda usato (le funzioni supportate dalla scheda, i protocolli e così via) e saranno diverse per ogni scheda.
+La funzionalità è specifica per il tipo di scheda usata (che funziona la scheda supporta, protocolli e così via) e sarà diversa per ogni scheda.
 
-Il wrapper di esempio Microsoft SCardCOM utilizza la libreria COM ATL per implementare un wrapper semplice e il layout di un modello per altri wrapper. Implementa le interfacce seguenti.
+Il wrapper di esempio Microsoft SCardCOM usa la libreria COM ATL per implementare un wrapper semplice e impostare un modello per altri wrapper. Implementa le interfacce seguenti.
 
 
 
 | Interfaccia o oggetto                                     | Descrizione                         |
 |---------------------------------------------------------|-------------------------------------|
 | [**ISCardAuth**](iscardauth.md)<br/>             | Servizi di autenticazione.<br/> |
-| [**ISCardFileAccess**](iscardfileaccess.md)<br/> | Servizi del file System.<br/>    |
+| [**ISCardFileAccess**](iscardfileaccess.md)<br/> | Servizi del file system.<br/>    |
 | [**ISCardManage**](iscardmanage.md)<br/>         | Servizi di gestione.<br/>     |
 | [**ISCardVerify**](iscardverify.md)<br/>         | Servizi di verifica.<br/>   |
 
@@ -47,21 +47,21 @@ Il wrapper di esempio Microsoft SCardCOM utilizza la libreria COM ATL per implem
  
 
 > [!Note]  
-> L'esempio SCardCOM viene fornito solo come esempio di implementazione delle interfacce wrapper. Per evitare conflitti tra i nomi di DLL e altri fornitori, non è necessario usare SCardCOM.dll come nome di qualsiasi DLL creata.
+> L'esempio SCardCOM viene fornito solo come esempio di implementazione delle interfacce wrapper. Per evitare conflitti di nomi DLL con altri fornitori, non è necessario usare SCardCOM.dll come nome delle DLL create.
 
  
 
-Di seguito è riportato un tipico utilizzo del wrapper fornitore. In questo esempio viene utilizzata l'interfaccia [**ISCardManage**](iscardmanage.md) per creare istanze delle interfacce che verranno incapsulate nel provider di servizi e nell'interfaccia [**ISCardVerify**](iscardverify.md) per verificarne il funzionamento.
+Di seguito è riportato un uso tipico del wrapper del fornitore. In questo esempio viene utilizzata [**l'interfaccia ISCardManage**](iscardmanage.md) per creare istanze delle interfacce di cui verrà eseguito il wrapping nel provider di servizi e l'interfaccia [**ISCardVerify**](iscardverify.md) per verificarne l'operazione.
 
 **Per compilare un provider di servizi wrapper**
 
-1.  Creare un'istanza dell'interfaccia [**ISCardManage**](iscardmanage.md) . Usare questa interfaccia per creare un'istanza di interfacce obbligatorie (ad esempio, [**ISCardFileAccess**](iscardfileaccess.md) o [**ISCardVerify**](iscardverify.md)). Quando si creano queste interfacce, verranno create anche le interfacce COM di basso livello corrispondenti.
+1.  Creare un'istanza [**dell'interfaccia ISCardManage.**](iscardmanage.md) Usare questa interfaccia per creare un'istanza delle interfacce necessarie, ad esempio [**ISCardFileAccess**](iscardfileaccess.md) o [**ISCardVerify**](iscardverify.md). Quando si creano queste interfacce, vengono create anche le interfacce COM di basso livello corrispondenti.
 2.  Collegare/connettersi a una scheda tramite il metodo [**ISCardManage**](iscardmanage.md) appropriato.
-3.  Eseguire le operazioni necessarie tramite il metodo [**ISCardVerify**](iscardverify.md) appropriato, che può chiamare più metodi e interfacce com di basso livello per il completamento.
+3.  Eseguire le operazioni necessarie tramite il metodo [**ISCardVerify**](iscardverify.md) appropriato (che può chiamare più interfacce e metodi COM di basso livello per il completamento).
 4.  Ripetere l'operazione per altre operazioni.
-5.  Rilasciare al termine.
+5.  Al termine, rilasciare .
 
-Il nome dell'interfaccia COM e l'identificatore di interfaccia (GUID) non devono essere modificati rispetto a quelli usati nel codice o nel wrapper di esempio. Tuttavia, il GUID della classe (ovvero, in cui risiede un'implementazione effettiva di un'interfaccia) deve essere modificato da quelli utilizzati. Questa operazione è particolarmente importante quando si implementa un wrapper fornitore. Un esempio potrebbe essere l'utilizzo di più wrapper fornitore in un particolare computer. Questi wrapper devono implementare le stesse interfacce COM, ma utilizzeranno sempre strategie di implementazione diverse. Sono pertanto necessarie classi diverse (e ID di classe).
+Il nome dell'interfaccia COM e l'identificatore di interfaccia (GUID) non devono cambiare da quelli usati nel codice o nel wrapper di esempio. Tuttavia, è necessario modificare il GUID della classe, ovvero la posizione in cui risiede un'implementazione effettiva di un'interfaccia, rispetto a quelli usati. Ciò è particolarmente importante quando si implementa un wrapper del fornitore. Un esempio è l'uso di più wrapper del fornitore in un computer specifico. Questi wrapper devono implementare le stesse interfacce COM, ma useranno sempre strategie di implementazione diverse. Di conseguenza, sono necessarie classi diverse (e ID di classe).
 
  
 

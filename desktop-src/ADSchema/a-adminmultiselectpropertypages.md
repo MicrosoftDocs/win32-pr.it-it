@@ -4,7 +4,7 @@ description: Si tratta di un attributo multivalore i cui valori sono un numero c
 ms.assetid: b2b4aafe-ac2d-44b3-80eb-910ba9852bb0
 ms.tgt_platform: multiple
 keywords:
-- Attributo Admin-Multiselect-Property-Pages schema DI AD
+- Schema AD dell'attributo Admin-Multiselect-Property-Pages
 - Schema AD dell'attributo adminMultiselectPropertyPages
 topic_type:
 - apiref
@@ -120,7 +120,7 @@ Si tratta di un attributo multivalore i cui valori sono un numero che rappresent
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| A valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
@@ -141,7 +141,7 @@ Si tratta di un attributo multivalore i cui valori sono un numero che rappresent
 | ID collegamento                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| A valore singolo       | Falso                                                      |
+| Is-Single-Valued       | Falso                                                      |
 | Indicizzato             | Falso                                                      |
 | Nel catalogo globale      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |

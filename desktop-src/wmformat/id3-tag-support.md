@@ -31,7 +31,7 @@ Nella tabella seguente sono elencati tutti gli attributi che corrispondono ai ta
 | **Descrizione**                | Commento | COM     | COMM         |
 | **Duration**                   |         | Tle     | TLEN         |
 | **Dimensione**                   |         |         | TSIZ         |
-| **Title**                      | Title   | TT2     | TIT2         |
+| **Title**                      | Titolo   | TT2     | TIT2         |
 | **WM/AlbumArtist**             |         | TP2     | TPE2         |
 | **WM/AlbumSortOrder**          |         |         | TSOA         |
 | **WM/AlbumTitle**              | Album   | TAL     | TALB         |
@@ -55,7 +55,7 @@ Nella tabella seguente sono elencati tutti gli attributi che corrispondono ai ta
 | **WM/Lyrics \_ Synchronised**    |         | Slt     | Sylt         |
 | **WM/MCDI**                    |         |         | MCDI         |
 | **WM/ModifiedBy**              |         |         | TPE4         |
-| **WM/Wm/Wm**                    |         |         | TMOO         |
+| **WM/Mood**                    |         |         | TMOO         |
 | **WM/OriginalAlbumTitle**      |         | Tot     | TOAL         |
 | **WM/OriginalArtist**          |         | Toa     | Tope         |
 | **WM/OriginalFilename**        |         | Tof     | TOFN         |

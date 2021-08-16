@@ -1,5 +1,5 @@
 ---
-description: Se questo bit è impostato su un controllo ProgressBar, la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come singolo rettangolo continuo.
+description: Se questo bit è impostato su un controllo ProgressBar, la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come un singolo rettangolo continuo.
 ms.assetid: b2c43763-799c-4f09-b9f8-47a4a5f4faf3
 title: Attributo del controllo Progress95
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118627350"
 ---
 # <a name="progress95-control-attribute"></a>Attributo del controllo Progress95
 
-Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md), la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come singolo rettangolo continuo.
+Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md), la barra viene disegnata come una serie di rettangoli di piccole dimensioni. Se questo bit non è impostato, l'indicatore di stato viene disegnato come un singolo rettangolo continuo.
 
 ## <a name="valid-controls"></a>Controlli validi
 
@@ -33,9 +33,9 @@ Se questo bit è impostato su un [controllo ProgressBar](progressbar-control.md)
 
 ## <a name="remarks"></a>Commenti
 
-Per impostare questo attributo su un controllo, includere il bit Progress95 nella colonna Attributi del record del controllo nella [tabella Control](control-table.md).
+Per impostare questo attributo in un controllo , includere il bit Progress95 nella colonna Attributes del record del controllo nella [tabella Control](control-table.md).
 
-Vedere [Attributi di controllo](control-attributes.md) e il controllo che è necessario creare in [Controlli](controls.md).
+Vedere [Attributi di](control-attributes.md) controllo e il controllo che è necessario creare in [Controlli](controls.md).
 
  
 

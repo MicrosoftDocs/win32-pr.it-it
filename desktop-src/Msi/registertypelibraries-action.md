@@ -13,7 +13,7 @@ ms.locfileid: "118626764"
 ---
 # <a name="registertypelibraries-action"></a>Azione RegisterTypeLibraries
 
-L'azione RegisterTypeLibraries registra le librerie dei tipi con il sistema. Questa azione viene applicata a ogni file a cui si fa riferimento nella tabella [TypeLib](typelib-table.md) pianificata per l'installazione.
+L'azione RegisterTypeLibraries registra le librerie dei tipi con il sistema. Questa azione viene applicata a ogni file a cui si fa riferimento nella [tabella TypeLib](typelib-table.md) pianificata per l'installazione.
 
 ## <a name="sequence-restrictions"></a>Restrizioni di sequenza
 
@@ -33,7 +33,7 @@ L'azione RegisterTypeLibraries deve essere eseguita dopo [l'azione InstallFiles.
 
 ## <a name="remarks"></a>Commenti
 
-L'azione RegisterTypeLibraries richiede che il linguaggio della libreria dei tipi sia creato correttamente nel campo Linguaggio della tabella TypeLib. La creazione non corretta del campo Language può causare la mancata registrazione di una libreria dei tipi altrimenti valida.
+L'azione RegisterTypeLibraries richiede che il linguaggio della libreria dei tipi sia creato correttamente nel campo Linguaggio della tabella TypeLib. La creazione non corretta del campo Language può causare l'errore del programma di installazione di registrare una libreria dei tipi altrimenti valida.
 
  
 

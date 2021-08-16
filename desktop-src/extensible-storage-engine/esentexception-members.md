@@ -17,7 +17,7 @@ ms.locfileid: "118779048"
 # <a name="esentexception-members"></a>Membri di EsentException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Classe di base per le eccezioni ESENT.
 
@@ -47,7 +47,7 @@ Il [tipo EsentException](./esentexception-class.md) espone i membri seguenti.
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
 <td><a href="dn292125(v=exchg.10).md">EsentException(SerializationInfo, StreamingContext)</a></td>
-<td>Inizializza una nuova istanza della classe EsentException. Questo costruttore viene usato per deserializzare un'eccezione serializzata.</td>
+<td>Inizializza una nuova istanza della classe EsentException. Questo costruttore viene utilizzato per deserializzare un'eccezione serializzata.</td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +130,7 @@ Inizio
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Metodo protetto" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizzare</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizza</a></td>
 <td>Ereditato <a href="/dotnet/api/system.object">dall'oggetto</a>.</td>
 </tr>
 <tr class="odd">

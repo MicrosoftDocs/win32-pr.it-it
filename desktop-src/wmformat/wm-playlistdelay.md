@@ -1,6 +1,6 @@
 ---
 title: WM/PlaylistDelay
-description: L'attributo WM/PlaylistDelay contiene il numero di millisecondi di ritardo che deve precedere la riproduzione del file in una playlist.
+description: L'attributo WM/PlaylistDelay contiene il numero di millisecondi di ritardo che devono precedere la riproduzione del file in una playlist.
 ms.assetid: 5d39a805-65fa-4e1a-988b-6e605481903a
 keywords:
 - WM/PlaylistDelay windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118698479"
 ---
 # <a name="wmplaylistdelay"></a>WM/PlaylistDelay
 
-**L'attributo WM/PlaylistDelay** contiene il numero di millisecondi di ritardo che deve precedere la riproduzione del file in una playlist.
+**L'attributo WM/PlaylistDelay** contiene il numero di millisecondi di ritardo che devono precedere la riproduzione del file in una playlist.
 
 ## <a name="global-constant"></a>Costante globale
 
@@ -29,7 +29,7 @@ g \_ wszWMPlaylistDelay
 
 ## <a name="data-type"></a>Tipo di dati
 
-**STRINGA DI \_ TIPO \_ WMT**
+**STRINGA DI TIPO WMT \_ \_**
 
 ## <a name="remarks"></a>Commenti
 

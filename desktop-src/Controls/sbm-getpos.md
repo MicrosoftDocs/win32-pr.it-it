@@ -1,6 +1,6 @@
 ---
 title: SBM_GETPOS messaggio (Winuser.h)
-description: Il messaggio \_ SBM GETPOS viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento.
+description: Il messaggio GETPOS SBM \_ viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento.
 ms.assetid: 00344d93-f205-4cda-aa25-6dd065f41b6e
 keywords:
 - SBM_GETPOS di controllo Windows messaggio
@@ -23,9 +23,9 @@ ms.locfileid: "118408894"
 ---
 # <a name="sbm_getpos-message"></a>Messaggio \_ GETPOS SBM
 
-Il **messaggio \_ SBM GETPOS** viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento. La posizione corrente è un valore relativo che dipende dall'intervallo di scorrimento corrente. Ad esempio, se l'intervallo di scorrimento è compreso tra 0 e 100 e la casella di scorrimento si trova al centro della barra, la posizione corrente è 50.
+Il **messaggio \_ GETPOS SBM** viene inviato per recuperare la posizione corrente della casella di scorrimento di un controllo barra di scorrimento. La posizione corrente è un valore relativo che dipende dall'intervallo di scorrimento corrente. Ad esempio, se l'intervallo di scorrimento è compreso tra 0 e 100 e la casella di scorrimento si trova al centro della barra, la posizione corrente è 50.
 
-Le applicazioni non devono inviare questo messaggio direttamente. Devono invece usare la [**funzione GetScrollPos.**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) Una finestra riceve questo messaggio tramite la relativa [*funzione WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi perché la **funzione GetScrollPos** funzioni correttamente.
+Le applicazioni non devono inviare direttamente questo messaggio. Devono invece usare la [**funzione GetScrollPos.**](/windows/desktop/api/Winuser/nf-winuser-getscrollpos) Una finestra riceve questo messaggio tramite la [*relativa funzione WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Le applicazioni che implementano un controllo barra di scorrimento personalizzato devono rispondere a questi messaggi perché la **funzione GetScrollPos** funzioni correttamente.
 
 ## <a name="parameters"></a>Parametri
 
@@ -55,8 +55,8 @@ Il valore restituito è la posizione corrente della casella di scorrimento nella
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

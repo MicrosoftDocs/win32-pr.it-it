@@ -4,7 +4,7 @@ description: Questo argomento include un esempio di codice che cerca nel sottoal
 ms.assetid: 07b27324-4f59-42c2-a42f-8c2cef138928
 ms.tgt_platform: multiple
 keywords:
-- Esempi di Active Directory Active Directory, ricerca di gruppi in un dominio
+- Active Directory esempi di Active Directory, ricerca di gruppi in un dominio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e15d2e0957032202e2080f85c71631daeddec70817ec09eb8432415aba47b3d3
@@ -16,7 +16,7 @@ ms.locfileid: "118693340"
 ---
 # <a name="example-code-for-searching-for-groups-in-a-domain"></a>Codice di esempio per la ricerca di gruppi in un dominio
 
-Nell'esempio di codice C/C++ seguente viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo con il tipo di gruppo specificato.
+L'esempio di codice C/C++ seguente cerca nel sottoalbero del contenitore specificato tutti gli oggetti gruppo con il tipo di gruppo specificato.
 
 
 ```C++
@@ -115,7 +115,7 @@ HRESULT PrintGroupsInContainer(LPCWSTR pwszContainerDN, DWORD type)
 
 
 
-Nell'Visual Basic di codice seguente viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo con il tipo di gruppo specificato.
+Nell'esempio Visual Basic codice seguente viene eseguita una ricerca nel sottoalbero del contenitore specificato per tutti gli oggetti gruppo con il tipo di gruppo specificato.
 
 
 ```VB

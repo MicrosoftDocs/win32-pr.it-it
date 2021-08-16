@@ -1,19 +1,19 @@
 ---
-description: Indica che Moov verrà scritto prima della casella mdat nel file generato.
+description: Indica che moov verrà scritto prima della casella mdat nel file generato.
 ms.assetid: 97B68B0A-8266-4FCF-8CD9-35890E1AC774
-title: Attributo MF_MPEG4SINK_MOOV_BEFORE_MDAT (Mfidl. h)
+title: MF_MPEG4SINK_MOOV_BEFORE_MDAT attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b5d345dc027c457ceb6123ce3854fff4b74f987
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e98614484beee5187364570e3c5517ba0f61e0d77161484b59af93a9f5a6512c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106313052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104737"
 ---
-# <a name="mf_mpeg4sink_moov_before_mdat-attribute"></a>MF \_ MPEG4SINK \_ Moov \_ prima dell' \_ attributo mdat
+# <a name="mf_mpeg4sink_moov_before_mdat-attribute"></a>MF \_ MPEG4SINK \_ MOOV \_ PRIMA \_ dell'attributo MDAT
 
-Indica che "Moov" verrà scritto prima della casella "mdat" nel file generato.
+Indica che 'moov' verrà scritto prima della casella 'mdat' nel file generato.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -21,11 +21,11 @@ Indica che "Moov" verrà scritto prima della casella "mdat" nel file generato.
 
 ## <a name="remarks"></a>Commenti
 
-Il comportamento predefinito del sink multimediale MPEG4 consiste nel scrivere ' Moov ' dopo ' mdat ' box. Se si imposta questo attributo, il file generato scriverà' Moov ' prima della casella ' mdat '.
+Il comportamento predefinito del sink multimediale mpeg4 è scrivere 'moov' dopo la casella 'mdat'. Se si imposta questo attributo, il file generato scriverà 'moov' prima della casella 'mdat'.
 
-Affinché il sink MPEG4 usi questo attributo, il flusso di byte passato non deve essere una ricerca lenta o remota per.
+Perché il sink mpeg4 usi questo attributo, il flusso di byte passato non deve essere lento o remoto per .
 
-Questa funzionalità prevede un file di copia/remuxing aggiuntivo.
+Questa funzionalità comporta un'ulteriore copia/remuxing dei file.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ Questa funzionalità prevede un file di copia/remuxing aggiuntivo.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 8 app \[ \| UWP\]<br/>                                  |
-| Server minimo supportato<br/> | App UWP per \[ app desktop di Windows Server 2012 \|\]<br/>                        |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 app desktop \| app UWP\]<br/>                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 app desktop \| app UWP\]<br/>                        |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Questa funzionalità prevede un file di copia/remuxing aggiuntivo.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Attributi del tipo di supporto](media-type-attributes.md)

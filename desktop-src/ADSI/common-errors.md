@@ -20,7 +20,7 @@ Tutti gli errori specifici di ADSI hanno una forma esadecimale di 80005xxx. I co
 
 | Codice errore esadecimale ADSI | Descrizione                                                                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 80005000<br/> | È stato passato un nome di percorso ADSI non valido. Questo errore è il risultato del passaggio di ADsPath non corretto a **GetObject durante** l'associazione a un oggetto.<br/> |
+| 80005000<br/> | È stato passato un nome di percorso ADSI non valido. Questo errore è il risultato del passaggio di un oggetto ADsPath non corretto a **GetObject durante** l'associazione a un oggetto.<br/> |
 | 8000500D<br/> | Impossibile trovare la proprietà ADSI nella cache delle proprietà.<br/>                                                                                 |
 | 8000500E<br/> | L'oggetto ADSI esiste. Se si tenta di creare un oggetto ADSI con lo stesso nome di un oggetto ADSI esistente, si verificherà questo errore.<br/>    |
 
@@ -53,7 +53,7 @@ Qualsiasi codice di errore nel formato esadecimale 8007xxxx è un codice di erro
 
 **net helpmsg <number>**
 
-Nella riga di comando precedente " number " è il numero decimale ottenuto convertendo le ultime quattro cifre del codice di &lt; &gt; errore da esadecimale. Questa riga di comando fornirà una descrizione più utile dell'errore Win32, che può essere di grande aiuto per il debug dello script.
+Nella riga di comando precedente " number " è il numero decimale ottenuto convertendo le ultime quattro cifre del codice di errore da &lt; &gt; esadecimale. Questa riga di comando fornirà una descrizione più utile dell'errore Win32, che può essere di grande aiuto per il debug dello script.
 
  
 

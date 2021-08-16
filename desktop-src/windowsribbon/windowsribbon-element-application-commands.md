@@ -1,9 +1,9 @@
 ---
-title: Proprietà Application. Commands
+title: Application.Commands - proprietà
 description: Rappresenta un contenitore per tutti i comandi definiti dall'applicazione.
 ms.assetid: 160d7d28-2d64-4cbc-b2b9-2da6b2f5b3c8
 keywords:
-- Proprietà Application. Commands barra multifunzione di Windows
+- Proprietà Application.Commands Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de2b88b97dda96636a9c5da3ad078f678091d8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c23d7b30b45a6023c547904adbcaaacb13b8777f9047133cd8d617a1a58c32d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964320"
 ---
-# <a name="applicationcommands-property"></a>Proprietà Application. Commands
+# <a name="applicationcommands-property"></a>Application.Commands - proprietà
 
 Rappresenta un contenitore per tutti i comandi definiti dall'applicazione.
 
@@ -41,7 +41,7 @@ Non ci sono attributi.
 
 | Elemento                                                     | Descrizione                                        |
 |-------------------------------------------------------------|----------------------------------------------------|
-| [**Comando**](windowsribbon-element-command.md)<br/> | Può essere presente una o più volte<br/> <br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 
 
 
@@ -59,11 +59,11 @@ Non ci sono attributi.
 
 facoltativo.
 
-Può verificarsi al massimo una volta per ogni elemento [**dell'applicazione**](windowsribbon-element-application.md) .
+Può verificarsi al massimo una volta per ogni [**elemento**](windowsribbon-element-application.md) Application.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato un elemento **Application. Commands** che contiene un manifesto di comandi degli Appunti.
+L'esempio seguente mostra un **elemento Application.Commands** che contiene un manifesto dei comandi degli Appunti.
 
 
 ```C++
@@ -151,8 +151,8 @@ Nell'esempio seguente viene illustrato un elemento **Application. Commands** che
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 7\]<br/>              |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2008 R2 \[\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop\]<br/>              |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 R2 \[\]<br/> |
 
 
 
@@ -160,7 +160,7 @@ Nell'esempio seguente viene illustrato un elemento **Application. Commands** che
 
 <dl> <dt>
 
-[**Application. views**](windowsribbon-element-application-views.md)
+[**Application.Views**](windowsribbon-element-application-views.md)
 </dt> </dl>
 
  

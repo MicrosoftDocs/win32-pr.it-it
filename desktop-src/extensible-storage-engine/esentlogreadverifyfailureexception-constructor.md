@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentLogReadVerifyFailureException'
+description: Altre informazioni sul costruttore EsentLogReadVerifyFailureException
 title: Costruttore EsentLogReadVerifyFailureException
 TOCTitle: 'EsentLogReadVerifyFailureException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogReadVerifyFailureException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 216fc4fb78ce264124cc6e0f8495456cb1014805
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91582ad62c193b275fd47c0ae3ba116ec342d1ae3fe16c3867b09a74f77a5685
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115751"
 ---
 # <a name="esentlogreadverifyfailureexception-constructor"></a>Costruttore EsentLogReadVerifyFailureException
 
 Inizializza una nuova istanza della classe EsentLogReadVerifyFailureException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentLogReadVerifyFailureException()
 
 [Membri di EsentLogReadVerifyFailureException](./esentlogreadverifyfailureexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

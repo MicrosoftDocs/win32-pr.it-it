@@ -1,5 +1,5 @@
 ---
-description: ICE53 verifica la presenza di voci nella tabella Registry che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
+description: ICE53 verifica la presenza di voci nella tabella Del Registro di sistema che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
 ms.assetid: f5afca1f-bd36-4f95-a62a-f6b2e37238a6
 title: ICE53
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118635132"
 ---
 # <a name="ice53"></a>ICE53
 
-ICE53 verifica la presenza di voci nella tabella Registry che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
+ICE53 verifica la presenza di voci nella tabella Del Registro di sistema che scrivono informazioni sul programma di installazione privato o valori dei criteri nel Registro di sistema.
 
 ## <a name="result"></a>Risultato
 
-ICE53 invia un avviso se la tabella Registry specifica la scrittura di informazioni interne o sui criteri nel Registro di sistema.
+ICE53 invia un avviso se la tabella Del Registro di sistema specifica la scrittura di informazioni interne o dei criteri nel Registro di sistema.
 
 ## <a name="example"></a>Esempio
 
@@ -39,7 +39,7 @@ Registry Key 'Registry1' writes Installer internal or policy information.
 
  
 
-La riga della tabella del Registro di sistema 'Registry1' scrive un valore dei criteri di sistema nel Registro di sistema che influisce sull'installazione di tutti i pacchetti. A seconda del pacchetto, potrebbe essere possibile disabilitare il rollback solo per questo pacchetto impostando la proprietà [**DISABLEROLLBACK**](-disablerollback.md) nella [tabella Delle proprietà](property-table.md). Vedere Rollback Installation ( [Rollback dell'installazione).](rollback-installation.md)
+La riga della tabella del Registro di sistema 'Registry1' scrive un valore dei criteri di sistema nel Registro di sistema che influisce sull'installazione di tutti i pacchetti. A seconda del pacchetto, può essere possibile disabilitare il rollback solo per questo pacchetto impostando la [**proprietà DISABLEROLLBACK**](-disablerollback.md) nella [tabella Delle proprietà](property-table.md). Vedere [Rollback installation (Rollback dell'installazione).](rollback-installation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

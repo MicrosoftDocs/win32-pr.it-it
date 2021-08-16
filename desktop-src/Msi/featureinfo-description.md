@@ -1,7 +1,7 @@
 ---
 description: La proprietà Description è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Descrizione della tabella Feature.
 ms.assetid: bab64ed7-4f98-4dc9-ac24-39d92904e1d3
-title: FeatureInfo.Description - proprietà
+title: Proprietà FeatureInfo.Description
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118636795"
 ---
-# <a name="featureinfodescription-property"></a>FeatureInfo.Description - proprietà
+# <a name="featureinfodescription-property"></a>Proprietà FeatureInfo.Description
 
 La **proprietà Description** è una proprietà di sola lettura che restituisce la descrizione della funzionalità nella colonna Descrizione della tabella [Feature](feature-table.md).
 
@@ -43,9 +43,9 @@ propVal = FeatureInfo.Description
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IFeatureInfo è definito come 000C109F-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
+| IID<br/>     | IID IFeatureInfo è definito come \_ 000C109F-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
 
 

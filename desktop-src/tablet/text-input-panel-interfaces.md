@@ -1,5 +1,5 @@
 ---
-description: Questa sezione contiene informazioni sulle interfacce utilizzate per controllare l'aspetto e il comportamento del Pannello di input di Tablet PC.
+description: Questa sezione contiene informazioni sulle interfacce usate per controllare l'aspetto e il comportamento del Pannello input penna di Tablet PC.
 ms.assetid: 58f49d5b-8b38-45e7-94e1-8a4434d6e13b
 title: Interfacce del pannello input di testo
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118715407"
 ---
 # <a name="text-input-panel-interfaces"></a>Interfacce del pannello input di testo
 
-Questa sezione contiene informazioni sulle interfacce utilizzate per controllare l'aspetto e il comportamento del Pannello di input di Tablet PC.
+Questa sezione contiene informazioni sulle interfacce usate per controllare l'aspetto e il comportamento del Pannello input penna di Tablet PC.
 
 > [!Note]  
 > Le interfacce del Pannello input di testo non sono conformi ad Automazione.
@@ -27,11 +27,11 @@ Questa sezione contiene informazioni sulle interfacce utilizzate per controllare
 | Interfaccia                                                                | Descrizione                                                                                                                                  |
 |--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Interfaccia IHandWrittenTextInsertion**](/windows/desktop/api/peninputpanel/nn-peninputpanel-ihandwrittentextinsertion) | Usato dal codice di immissione testo personalizzato dell'applicazione per inserire il testo sia nel campo di testo che nell'archivio di backup dei servizi di testo.<br/> |
-| [**Interfaccia ITextInputPanel**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)                     | Fornisce il controllo sul pannello di input di Tablet PC.<br/>                                                                                  |
+| [**Interfaccia ITextInputPanel**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)                     | Fornisce il controllo sul Pannello input penna di Tablet PC.<br/>                                                                                  |
 | [**Interfaccia ITextInputPanelEventSink**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpaneleventsink)   | Definisce i metodi che gestiscono gli [**eventi dell'interfaccia ITextInputPanel.**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel)<br/>                                      |
-| [**Interfaccia ITextInputPanelRunInfo**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanelruninfo)       | Fornisce un metodo per determinare se il pannello input di testo è attualmente in esecuzione.<br/>                                                      |
-| [**Interfaccia ITipAutocompleteClient**](itipautocompleteclient.md)       | Consente al client di chiamare l'oggetto provider di completamento automatico del pannello di input di testo dell'applicazione.<br/>                                      |
-| [**Interfaccia ITipAutocompleteProvider**](itipautocompleteprovider.md)   | Gestisce il lato dell'applicazione dell'integrazione del completamento automatico del pannello Input di testo.<br/>                                                 |
+| [**Interfaccia ITextInputPanelRunInfo**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanelruninfo)       | Fornisce un metodo per determinare se il Pannello input di testo è attualmente in esecuzione.<br/>                                                      |
+| [**Interfaccia ITipAutocompleteClient**](itipautocompleteclient.md)       | Consente al client di chiamare l'oggetto provider di completamento automatico del Pannello input di testo dell'applicazione.<br/>                                      |
+| [**Interfaccia ITipAutocompleteProvider**](itipautocompleteprovider.md)   | Gestisce il lato dell'applicazione dell'integrazione del completamento automatico del Pannello input di testo.<br/>                                                 |
 
 
 
@@ -41,7 +41,7 @@ Questa sezione contiene informazioni sulle interfacce utilizzate per controllare
 
 <dl> <dt>
 
-[Informazioni di riferimento sul pannello Input di testo](text-input-panel-reference.md)
+[Informazioni di riferimento sul pannello di input di testo](text-input-panel-reference.md)
 </dt> </dl>
 
  

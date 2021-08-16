@@ -1,6 +1,6 @@
 ---
-title: Metodi TextureCube::TextureCube GatherCmpGreen
-description: Campione e confronta una trama e restituisce il componente verde. | Metodi TextureCube::TextureCube GatherCmpGreen
+title: Metodi Di TextureCube::TextureCube GatherCmpGreen
+description: Campiota e confronta una trama e restituisce il componente verde. | Metodi Di TextureCube::TextureCube GatherCmpGreen
 ms.assetid: 1F447F9C-24DF-4588-9830-0BE3272CB7BF
 keywords:
 - Metodi GatherCmpGreen HLSL
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118786513"
 ---
-# <a name="texturecubegathercmpgreen-methods"></a>Metodi TextureCube::GatherCmpGreen
+# <a name="texturecubegathercmpgreen-methods"></a>Metodi textureCube::GatherCmpGreen
 
-Campione e confronta una trama e restituisce il componente verde.
+Campiota e confronta una trama e restituisce il componente verde.
 
 ### <a name="overload-list"></a>Elenco di overload
 
@@ -29,7 +29,7 @@ Campione e confronta una trama e restituisce il componente verde.
 
 | Metodo                                                                                 | Descrizione                                                                                                      |
 |:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpGreen(S,float,float,uint)**](tcube-gathercmpgreen-s-float-float-uint-.md) | Campione e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
+| [**GatherCmpGreen(S,float,float,uint)**](tcube-gathercmpgreen-s-float-float-uint-.md) | Esempi e confronta una trama e restituisce il componente verde insieme allo stato dell'operazione.<br/> |
 
 
 

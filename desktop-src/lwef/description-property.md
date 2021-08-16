@@ -1,5 +1,5 @@
 ---
-title: Proprietà Description (funzionalità dell Windows legacy)
+title: Proprietà Description (funzionalità dell'Windows legacy)
 description: Proprietà Description
 ms.assetid: 81ac4bc7-ef0c-4e7c-b57e-acc4ad315515
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118751993"
 ---
-# <a name="description-property-legacy-windows-environment-features"></a>Proprietà Description (funzionalità dell Windows legacy)
+# <a name="description-property-legacy-windows-environment-features"></a>Proprietà Description (funzionalità dell'Windows legacy)
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
@@ -27,7 +27,7 @@ Restituisce o imposta una stringa che specifica la descrizione per il carattere 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintassi**
 </dt> <dd>
 
-*Agent*. **Characters("**_CharacterID_*_"). Stringa di_* \[  =  *descrizione*\]
+*agent*. **Characters("**_CharacterID_*_"). Stringa di_* \[  =  *descrizione*\]
 
 
 
@@ -43,7 +43,7 @@ Restituisce o imposta una stringa che specifica la descrizione per il carattere 
 
 ## <a name="remarks"></a>Commenti
 
-La descrizione di **un** carattere può dipendere dall'impostazione **LanguageID del** carattere. Il nome di un carattere in una lingua può essere diverso o usare caratteri diversi rispetto a un altro. La descrizione predefinita **del** carattere per una lingua specifica viene definita quando il carattere viene compilato con l'editor di caratteri di Microsoft Agent.
+La descrizione di **un** carattere può dipendere dall'impostazione **LanguageID del** carattere. Il nome di un carattere in una lingua può essere diverso o usare caratteri diversi rispetto a in un'altra. La descrizione predefinita **del** carattere per una lingua specifica viene definita quando il carattere viene compilato con Microsoft Agent Character Editor.
 
 > [!Note]  
 > **L'impostazione** della proprietà Description è facoltativa e non può essere specificata per tutti i caratteri.

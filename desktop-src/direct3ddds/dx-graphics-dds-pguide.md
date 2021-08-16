@@ -31,7 +31,7 @@ Un file DDS è un file binario contenente le informazioni seguenti:
 
 -   Una descrizione dei dati nel file.
 
-    I dati vengono descritti con una descrizione dell'intestazione [**tramite DDS \_ HEADER.**](dds-header.md)Il formato pixel viene definito tramite [**\_ PIXELFORMAT DDS.**](dds-pixelformat.md) Si noti che le **strutture DDS \_ HEADER** e **DDS \_ PIXELFORMAT** sostituiscono le strutture DDSURFACEDESC2, DDSCAPS2 e DDPIXELFORMAT DirectDraw 7 deprecate. **DDS \_ HEADER** è l'equivalente binario di DDSURFACEDESC2 e DDSCAPS2. **DDS \_ PIXELFORMAT è** l'equivalente binario di DDPIXELFORMAT.
+    I dati vengono descritti con una descrizione dell'intestazione [**tramite DDS \_ HEADER.**](dds-header.md)Il formato pixel viene definito usando [**\_ PIXELFORMAT DDS.**](dds-pixelformat.md) Si noti che le **strutture DDS \_ HEADER** e **DDS \_ PIXELFORMAT** sostituiscono le strutture DDSURFACEDESC2, DDSCAPS2 e DDPIXELFORMAT DirectDraw 7 deprecate. **DDS \_ HEADER** è l'equivalente binario di DDSURFACEDESC2 e DDSCAPS2. **DDS \_ PIXELFORMAT è** l'equivalente binario di DDPIXELFORMAT.
 
     ```
     DWORD               dwMagic;
@@ -70,7 +70,7 @@ Per un ampio supporto hardware, è consigliabile usare [**DXGI \_ FORMAT \_ R8G8
 
 Per altre informazioni sui formati di trama compressi, vedere Compressione dei blocchi di trama [in Direct3D 11](/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11) e [Compressione a blocchi (Direct3D 10).](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)
 
-La libreria D3DX (ad esempio D3DX11.lib) e altre librerie simili forniscono in modo inaffidabile o incoerente il valore pitch nel membro **dwPitchOrLinearSize** della struttura [**DDS \_ HEADER.**](dds-header.md) Pertanto, quando si legge e si scrive nei file DDS, è consigliabile calcolare l'altezza in uno dei modi seguenti per i formati indicati:
+La libreria D3DX (ad esempio D3DX11.lib) e altre librerie simili forniscono in modo inaffidabile o incoerente il valore dell'altezza nel membro **dwPitchOrLinearSize** della struttura [**HEADER DDS. \_**](dds-header.md) Pertanto, quando si legge e si scrive nei file DDS, è consigliabile calcolare l'altezza in uno dei modi seguenti per i formati indicati:
 
 -   Per i formati compressi a blocchi, calcolare l'altezza come:
 
@@ -89,7 +89,7 @@ La libreria D3DX (ad esempio D3DX11.lib) e altre librerie simili forniscono in m
     Si divide per 8 per l'allineamento dei byte.
 
 > [!Note]  
-> Il valore dell'altezza calcolata non è sempre uguale all'altezza fornita dal runtime, che in alcune situazioni è allineato a DWORD e allineato a byte in altre situazioni. È pertanto consigliabile copiare una riga di analisi alla volta anziché provare a copiare l'intera immagine in un'unica copia.
+> Il valore di passo calcolato non è sempre uguale all'altezza fornita dal runtime, che è allineato a DWORD in alcune situazioni e allineato ai byte in altre situazioni. È pertanto consigliabile copiare una riga di analisi alla volta anziché provare a copiare l'intera immagine in un'unica copia.
 
  
 
@@ -97,9 +97,9 @@ La libreria D3DX (ad esempio D3DX11.lib) e altre librerie simili forniscono in m
 
 Esistono molti strumenti che creano e utilizzano file DDS, ma possono variare nei dettagli di ciò che richiedono nell'intestazione. I writer devono popolare le intestazioni nel modo più completo possibile e i lettori devono controllare i valori minimi per la massima compatibilità. Per convalidare un file DDS, un lettore deve assicurarsi che il file sia lungo almeno 128 byte per contenere il valore magico e l'intestazione di base, il valore magico è 0x20534444 ("DDS"), le dimensioni dell'intestazione DDS sono 124 e DDS PIXELFORMAT nelle dimensioni dell'intestazione \_ \_ è 32. Se DDS PIXELFORMAT dwFlags è impostato su DDPF FOURCC e dwFourCC è impostato su \_ "DX10", le dimensioni totali del file devono essere di \_ almeno 148 byte.
 
-Esistono alcune varianti comuni in uso in cui il formato pixel è impostato su un codice FOURCC DDPF in cui dwFourCC è impostato su un valore di enumerazione \_ D3DFORMAT o DXGI \_ FORMAT. Non è possibile determinare se un valore di enumerazione è D3DFORMAT o DXGI FORMAT, pertanto è consigliabile usare l'estensione "DX10" e l'intestazione \_ \_ DDS HEADER DXT10 per archiviare \_ dxgiFormat quando il formato PIXELFORMAT DDS di base non è in grado di esprimere \_ il formato.
+Esistono alcune varianti comuni in uso in cui il formato pixel è impostato su un codice FOURCC DDPF in cui dwFourCC è impostato su un valore di enumerazione \_ D3DFORMAT o DXGI \_ FORMAT. Non è possibile determinare se un valore di enumerazione è D3DFORMAT o DXGI FORMAT, pertanto è consigliabile usare l'estensione "DX10" e l'intestazione \_ \_ DDS HEADER DXT10 per archiviare dxgiFormat quando l'estensione \_ DDS PIXELFORMAT di base non è in grado di esprimere \_ il formato.
 
-Per la massima compatibilità è consigliabile utilizzare lo standard PIXELFORMAT DDS per archiviare dati RGB non compressi e dati DXT1-5 perché non tutti gli strumenti DDS supportano \_ l'estensione DX10.
+Per garantire la massima compatibilità, è consigliabile utilizzare lo standard DDS PIXELFORMAT per archiviare dati RGB non compressi e dati DXT1-5 perché non tutti gli strumenti DDS supportano \_ l'estensione DX10.
 
 ## <a name="using-texture-arrays-in-direct3d-1011"></a>Uso di matrici di trame in Direct3D 10/11
 
@@ -157,15 +157,15 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 
 | Formato risorsa                                                                             | dwFlags     | dwFourCC |
 |---------------------------------------------------------------------------------------------|-------------|----------|
-| DXGI \_ FORMAT \_ BC1 \_ UNORM<br/> D3DFMT \_ DXT1<br/>                                 | DDS \_ FOURCC | "DXT1"   |
-| DXGI \_ FORMAT \_ BC2 \_ UNORM<br/> D3DFMT \_ DXT3<br/>                                 | DDS \_ FOURCC | "DXT3"   |
-| DXGI \_ FORMAT \_ BC3 \_ UNORM<br/> D3DFMT \_ DXT5<br/>                                 | DDS \_ FOURCC | "DXT5"   |
+| FORMATO DXGI \_ \_ BC1 \_ UNORM<br/> D3DFMT \_ DXT1<br/>                                 | DDS \_ FOURCC | "DXT1"   |
+| FORMATO DXGI \_ \_ BC2 \_ UNORM<br/> D3DFMT \_ DXT3<br/>                                 | DDS \_ FOURCC | "DXT3"   |
+| FORMATO DXGI \_ \_ BC3 \_ UNORM<br/> D3DFMT \_ DXT5<br/>                                 | DDS \_ FOURCC | "DXT5"   |
 | \*<br/> FORMATO DXGI \_ \_ BC4 \_ UNORM<br/>                                           | DDS \_ FOURCC | "BC4U"   |
 | \*<br/> DXGI \_ FORMAT \_ BC4 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC4S"   |
-| \*<br/> FORMATO DXGI \_ \_ BC5 \_ UNORM<br/>                                           | DDS \_ FOURCC | "ATI2"   |
+| \*<br/> DXGI \_ FORMAT \_ BC5 \_ UNORM<br/>                                           | DDS \_ FOURCC | "ATI2"   |
 | \*<br/> DXGI \_ FORMAT \_ BC5 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC5S"   |
 | FORMATO DXGI \_ \_ R8G8 \_ B8G8 \_ UNORM<br/> D3DFMT \_ R8G8 \_ B8G8<br/>                    | DDS \_ FOURCC | "RGBG"   |
-| FORMATO DXGI \_ \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | DDS \_ FOURCC | "GRGB"   |
+| DXGI \_ FORMAT \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | DDS \_ FOURCC | "GRGB"   |
 | \*<br/> FORMATO DXGI \_ \_ R16G16B16A16 \_ UNORM<br/> D3DFMT \_ A16B16G16R16<br/>  | DDS \_ FOURCC | 36       |
 | \*<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ SNORM<br/> D3DFMT \_ Q16W16V16U16<br/>  | DDS \_ FOURCC | 110      |
 | \*<br/> FORMATO DXGI \_ \_ R16 \_ FLOAT<br/> D3DFMT \_ R16F<br/>                   | DDS \_ FOURCC | 111      |
@@ -185,9 +185,9 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 
  
 
-\* = Un solido lettore DDS deve essere in grado di gestire questi codici di formato legacy. Tuttavia, un lettore DDS di questo tipo deve preferire l'uso dell'estensione dell'intestazione "DX10" quando scrive questi codici di formato per evitare ambiguità.
+\* = Un lettore DDS affidabile deve essere in grado di gestire questi codici di formato legacy. Tuttavia, un lettore DDS di questo tipo deve preferire l'uso dell'estensione di intestazione "DX10" quando scrive questi codici di formato per evitare ambiguità.
 
-\*\* = A causa di alcuni problemi di lunga durata nelle implementazioni comuni di lettori e writer DDS, il modo più affidabile per scrivere dati di tipo 10:10:10:2 è usare l'estensione dell'intestazione "DX10" con il codice [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24", ovvero il valore DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM. I dati D3DFMT A2R10G10B10 devono essere convertiti in dati di tipo \_ 10:10:10:2 prima di essere scritti come file DDS in formato DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM.
+\*\* = A causa di alcuni problemi di lunga data nelle implementazioni comuni di lettori e writer DDS, il modo più affidabile per scrivere dati di tipo 10:10:10:2 è usare l'estensione di intestazione "DX10" con il codice [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24", ovvero il valore \_ DXGI FORMAT \_ R10G10B10A2 \_ UNORM. I dati D3DFMT A2R10G10B10 devono essere convertiti in dati di tipo \_ 10:10:10:2 prima di essere scritti come file DDS in formato DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

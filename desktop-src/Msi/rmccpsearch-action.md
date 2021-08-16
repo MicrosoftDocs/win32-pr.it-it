@@ -25,7 +25,7 @@ Non sono presenti messaggi ActionData.
 
 ## <a name="remarks"></a>Commenti
 
-L'azione RMCCPSearch richiede che la proprietà [**CCP \_ DRIVE**](ccp-drive.md) sia impostata sul percorso radice del [*volume*](v-gly.md) rimovibile che include l'installazione per uno dei prodotti idonei.
+L'azione RMCCPSearch richiede che la proprietà [**CCP \_ DRIVE**](ccp-drive.md) sia impostata sul percorso radice nel [*volume*](v-gly.md) rimovibile che include l'installazione per uno dei prodotti idonei.
 
 Ogni firma di file nella tabella CCPSearch viene cercata nel percorso a cui fa riferimento la proprietà [**CCP \_ DRIVE**](ccp-drive.md) usando la [tabella DrLocator.](drlocator-table.md) L'assenza della firma dalla [tabella Signature](signature-table.md) indica una directory. Se si determina l'esistenza di una firma, l'azione RMCCPSearch termina.
 

@@ -35,7 +35,7 @@ g \_ wszWMSeekable
 
 Si tratta di un attributo codificato.
 
-Questo attributo non può essere duplicato a livello di file. Se questo attributo viene usato per un singolo flusso, verrà trattato come metadati personalizzati e non trasmetterà il significato normale agli oggetti di Windows Media Format SDK.
+Questo attributo non può essere duplicato a livello di file. Se questo attributo viene usato per un singolo flusso, verrà considerato come metadati personalizzati e non trasmetterà il significato normale agli oggetti di Windows Media Format SDK.
 
 Il valore di questo attributo per un file può variare a seconda dell'oggetto che espone l'interfaccia [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) o [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) usata per recuperarlo. Ciò è dovuto al fatto che gli oggetti lettore (sincroni e asincroni) eseguono un controllo più approfondito rispetto all'oggetto editor di metadati, per verificare se è possibile cercare un punto in un file. Il **valore dell'attributo Seekable** restituito da un oggetto reader è più accurato.
 

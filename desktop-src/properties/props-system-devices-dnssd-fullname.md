@@ -1,19 +1,19 @@
 ---
-description: Nome completo dell'istanza del servizio DNS-SD, che include istanza, servizio e dominio.
+description: Completare il nome dell'istanza del servizio DNS-SD, inclusi istanza, servizio e dominio.
 ms.assetid: 0d13caba-a280-4b14-9c7a-240bd44c24d2
-title: System. Devices. dnssd. FullName
+title: System.Devices.Dnssd.FullName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c34481e48b7a692effd5cbad37801dcfffebe02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c59e978002b7638a1610c2373a719bee6c6b18fed4cfd8fa9741c75de1a2fbf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104528956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097635"
 ---
-# <a name="systemdevicesdnssdfullname"></a>System. Devices. dnssd. FullName
+# <a name="systemdevicesdnssdfullname"></a>System.Devices.Dnssd.FullName
 
-Nome completo dell'istanza del servizio DNS-SD, che include istanza, servizio e dominio.
+Completare il nome dell'istanza del servizio DNS-SD, inclusi istanza, servizio e dominio.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,13 +48,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -63,13 +63,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

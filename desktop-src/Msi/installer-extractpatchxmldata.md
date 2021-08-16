@@ -22,7 +22,7 @@ ms.locfileid: "118631544"
 ---
 # <a name="installerextractpatchxmldata-method"></a>Metodo Installer.ExtractPatchXMLData
 
-Il **metodo ExtractPatchXMLData** dell'oggetto [**Installer**](installer-object.md) estrae le informazioni da una patch come stringa XML. Le informazioni possono essere usate per determinare se la patch si applica a un sistema di destinazione. Questo metodo chiama [**MsiExtractPatchXMLData**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa).
+Il **metodo ExtractPatchXMLData** dell'oggetto [**Installer**](installer-object.md) estrae le informazioni da una patch come stringa XML. Le informazioni possono essere usate per determinare se la patch si applica a un sistema di destinazione. Questo metodo chiama [**MsiExtractPatchXMLData.**](/windows/desktop/api/Msi/nf-msi-msiextractpatchxmldataa)
 
 ## <a name="syntax"></a>Sintassi
 

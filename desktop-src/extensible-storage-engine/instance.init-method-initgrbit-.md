@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Metodo Instance.Init (InitGrbit)'
-title: Metodo Instance.Init (InitGrbit)
+description: 'Altre informazioni su: Instance.Init (InitGrbit)'
+title: Instance.Init (InitGrbit)
 TOCTitle: Init method (InitGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Instance.Init(Microsoft.Isam.Esent.Interop.InitGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.init(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f87247a77cb89e6e5e9e20048b04f8d9fae36ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2ce0ba3edd115802c07a0df2a3cc454f9953f7548692bce7aab7734da2a17fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112550"
 ---
-# <a name="instanceinit-method-initgrbit"></a>Metodo Instance.Init (InitGrbit)
+# <a name="instanceinit-method-initgrbit"></a>Instance.Init (InitGrbit)
 
-Inizializzare il JET_INSTANCE.
+Inizializzare la JET_INSTANCE.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -67,10 +67,10 @@ public void Init(
 
 #### <a name="reference"></a>Riferimento
 
-[Classe dell'istanza](./instance-class.md)
+[Classe di istanza](./instance-class.md)
 
-[Membri di istanza](./instance-members.md)
+[Membri dell'istanza](./instance-members.md)
 
-[Overload init](./instance.init-method2.md)
+[Overload di Init](./instance.init-method2.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

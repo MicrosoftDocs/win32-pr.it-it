@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: JET_ENUMCOLUMN costruttore'
+description: 'Altre informazioni su: Costruttore JET_ENUMCOLUMN'
 title: JET_ENUMCOLUMN costruttore
 TOCTitle: 'JET_ENUMCOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.#ctor

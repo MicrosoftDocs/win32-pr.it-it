@@ -1,5 +1,5 @@
 ---
-description: Si verifica dopo che gli oggetti IInkStrokeDisp sono stati eliminati dalla proprietà Ink.
+description: Si verifica dopo l'eliminazione di oggetti IInkStrokeDisp dalla proprietà Ink.
 ms.assetid: 395544e1-dc93-45d3-ac7a-d54712f3c027
 title: Evento InkPicture.StrokesDeleted (Msinkaut.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118717360"
 ---
 # <a name="inkpicturestrokesdeleted-event"></a>Evento InkPicture.StrokesDeleted
 
-Si verifica [**dopo che gli oggetti IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) sono stati eliminati dalla proprietà [**Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink)
+Si verifica [**dopo l'eliminazione di oggetti IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) dalla [**proprietà Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,7 +36,7 @@ Questo evento non restituisce un valore.
 
 Non sono presenti dati dell'evento.
 
-Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (interfacce dispatch) con ID \_ DISPID IOEStrokesDeleted.
+Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispatchinterfaces) con ID \_ DISPID IOEStrokesDeleted.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -44,7 +44,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio **\_ IInkOver
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

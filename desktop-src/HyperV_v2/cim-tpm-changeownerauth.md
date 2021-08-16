@@ -1,5 +1,5 @@
 ---
-description: Modifica le credenziali di autorizzazione del proprietario del dispositivo TPM. Sono necessarie le password di autorizzazione del proprietario precedente e del nuovo proprietario.
+description: Modifica le credenziali di autorizzazione del proprietario del dispositivo TPM. Sono necessarie le password di autorizzazione del proprietario precedente e del nuovo.
 ms.assetid: 5b7f1aec-5181-4330-982c-d80a1d5ae9e8
 title: Metodo ChangeOwnerAuth della classe CIM_TPM
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118646663"
 ---
 # <a name="changeownerauth-method-of-the-cim_tpm-class"></a>Metodo ChangeOwnerAuth della classe TPM CIM \_
 
-Modifica le credenziali di autorizzazione del proprietario del dispositivo TPM. Sono necessarie le password di autorizzazione del proprietario precedente e del nuovo proprietario.
+Modifica le credenziali di autorizzazione del proprietario del dispositivo TPM. Sono necessarie le password di autorizzazione del proprietario precedente e del nuovo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,14 +43,14 @@ uint32 ChangeOwnerAuth(
 *OldOwnerAuth* \[ Pollici\]
 </dt> <dd>
 
-Rappresenta la credenziale di autorizzazione del proprietario precedente necessaria per assumere la proprietà del dispositivo TPM. La **sottoclasse CIM \_ SharedCredential** può essere obbligatoria con valore diverso da Null di **CIM \_ SharedCredential**.**Proprietà** secret per il parametro .
+Rappresenta le credenziali di autorizzazione del proprietario precedente necessarie per assumere la proprietà del dispositivo TPM. La **sottoclasse CIM \_ SharedCredential** può essere obbligatoria con valore non Null di **CIM \_ SharedCredential.****Proprietà** secret per il parametro .
 
 </dd> <dt>
 
 *NewOwnerAuth* \[ Pollici\]
 </dt> <dd>
 
-Rappresenta la nuova credenziale di autorizzazione del proprietario necessaria per assumere la proprietà del dispositivo TPM. La **sottoclasse CIM \_ SharedCredential** può essere obbligatoria con valore diverso da Null di **CIM \_ SharedCredential**.**Proprietà** secret per il parametro .
+Rappresenta la nuova credenziale di autorizzazione del proprietario necessaria per assumere la proprietà del dispositivo TPM. La **sottoclasse CIM \_ SharedCredential** può essere obbligatoria con valore non Null di **CIM \_ SharedCredential.****Proprietà** secret per il parametro .
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Restituisce un valore 0 in esito positivo. In caso contrario, restituisce un err
 **Errore sconosciuto/non specificato** (2)
 </dt> <dt>
 
-**DMTF riservato** (3..4095)
+**DmTF riservato** (3..4095)
 </dt> <dt>
 
 **Metodo riservato** (4096..32767)

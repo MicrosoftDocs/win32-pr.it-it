@@ -1,19 +1,19 @@
 ---
 description: Contiene un puntatore all'interfaccia di callback delle applicazioni per IMFBufferListNotify.
 ms.assetid: 9A68B650-97C0-4323-ACBF-5C8E496E8566
-title: Attributo MF_MSE_BUFFERLIST_CALLBACK
+title: MF_MSE_BUFFERLIST_CALLBACK attributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 503b4850656a85385c8b58dc3949feb4b0234c9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64a9e17625789a8318a37128fa80ec71e4255c20988919c57a38843b9e0ecde9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104617"
 ---
-# <a name="mf_mse_bufferlist_callback-attribute"></a>\_Attributo di \_ callback del buffering MF MSE \_
+# <a name="mf_mse_bufferlist_callback-attribute"></a>Attributo \_ CALLBACK MSE \_ BUFFERLIST MF \_
 
-Contiene un puntatore all'interfaccia di callback dell'applicazione per [**IMFBufferListNotify**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify).
+Contiene un puntatore all'interfaccia di callback dell'applicazione per [**IMFBufferListNotify.**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfbufferlistnotify)
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -25,9 +25,9 @@ Contiene un puntatore all'interfaccia di callback dell'applicazione per [**IMFBu
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 8.1 \[ solo app desktop\]<br/>                                                 |
-| Server minimo supportato<br/> | Solo app desktop Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 solo app desktop\]<br/>                                                 |
+| Server minimo supportato<br/> | Windows Server 2012 Solo app desktop R2 \[\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Contiene un puntatore all'interfaccia di callback dell'applicazione per [**IMFBu
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

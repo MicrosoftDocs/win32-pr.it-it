@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentLinkNotSupportedException'
+description: Altre informazioni sul costruttore EsentLinkNotSupportedException
 title: Costruttore EsentLinkNotSupportedException
 TOCTitle: 'EsentLinkNotSupportedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLinkNotSupportedException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118777057"
 
 Inizializza una nuova istanza della classe EsentLinkNotSupportedException.
 
-**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

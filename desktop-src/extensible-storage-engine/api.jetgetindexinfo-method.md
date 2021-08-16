@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul metodo Api.JetGetIndexInfo
+description: 'Altre informazioni su: Metodo Api.JetGetIndexInfo'
 title: Metodo Api.JetGetIndexInfo
 TOCTitle: 'JetGetIndexInfo method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.JetGetIndexInfo
@@ -24,7 +24,7 @@ ms.locfileid: "118784269"
 # <a name="apijetgetindexinfo-method"></a>Metodo Api.JetGetIndexInfo
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 ## <a name="overload-list"></a>Elenco di overload
 

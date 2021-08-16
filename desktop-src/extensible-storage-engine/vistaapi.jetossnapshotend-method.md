@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: VistaApi. JetOSSnapshotEnd, metodo'
-title: Metodo VistaApi. JetOSSnapshotEnd (Microsoft. ISAM. esent. Interop. vista)
+description: Altre informazioni sul metodo VistaApi.JetOSSnapshotEnd
+title: Metodo VistaApi.JetOSSnapshotEnd (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'JetOSSnapshotEnd method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.VistaApi.JetOSSnapshotEnd(Microsoft.Isam.Esent.Interop.JET_OSSNAPID,Microsoft.Isam.Esent.Interop.Vista.SnapshotEndGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaapi.jetossnapshotend(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 291d83929940a9f66f4e16c5088e6ec08187f908
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8aa385dbba241a631bc7bc29c5ca7905c4a609f6eb2231a984b4c0e9d1db8eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103752255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119106818"
 ---
-# <a name="vistaapijetossnapshotend-method"></a>VistaApi. JetOSSnapshotEnd, metodo
+# <a name="vistaapijetossnapshotend-method"></a>Metodo VistaApi.JetOSSnapshotEnd
 
 Notifica al motore che la sessione snapshot è stata completata.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -62,16 +62,16 @@ public static void JetOSSnapshotEnd(
 #### <a name="parameters"></a>Parametri
 
   - snapshot  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Identificatore della sessione snapshot.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. vista. SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.SnapshotEndGrbit](./snapshotendgrbit-enumeration.md)  
     
-    Opzioni di fine snapshot.
+    Opzioni di fine dello snapshot.
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -81,4 +81,4 @@ public static void JetOSSnapshotEnd(
 
 [Membri di VistaApi](./vistaapi-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

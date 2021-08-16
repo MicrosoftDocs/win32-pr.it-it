@@ -1,5 +1,5 @@
 ---
-description: 'Altre informazioni su: Costruttore EsentDatabaseFileReadOnlyException'
+description: Altre informazioni sul costruttore EsentDatabaseFileReadOnlyException
 title: Costruttore EsentDatabaseFileReadOnlyException
 TOCTitle: 'EsentDatabaseFileReadOnlyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseFileReadOnlyException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b05794807ae3b1e288fed1d81b25458aa2e00ee3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7882a105254d2da9b5c26e3556d9367898eaee02736482da0f7de47162b65fba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116361"
 ---
 # <a name="esentdatabasefilereadonlyexception-constructor"></a>Costruttore EsentDatabaseFileReadOnlyException
 
 Inizializza una nuova istanza della classe EsentDatabaseFileReadOnlyException.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -60,4 +60,4 @@ public EsentDatabaseFileReadOnlyException()
 
 [Membri di EsentDatabaseFileReadOnlyException](./esentdatabasefilereadonlyexception-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

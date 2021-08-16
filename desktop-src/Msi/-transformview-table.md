@@ -15,7 +15,7 @@ ms.locfileid: "118640466"
 
 Si tratta di una tabella temporanea di sola lettura usata per visualizzare le trasformazioni con la modalità di visualizzazione trasformazione. Questa tabella non viene mai mantenuta dal programma di installazione.
 
-Per richiamare la modalità di visualizzazione di trasformazione, ottenere un handle e aprire il database di riferimento. Vedere [Recupero di un handle di database](obtaining-a-database-handle.md). Chiamare [**MsiDatabaseApplyTransform con**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) MSITRANSFORM \_ ERROR \_ VIEWTRANSFORM. In questo modo la trasformazione non viene applicata al database ed esegue il dump del contenuto della trasformazione nella \_ tabella TransformView. È possibile accedere ai dati nella tabella usando SQL query. Vedere [Uso delle query](working-with-queries.md).
+Per richiamare la modalità di visualizzazione di trasformazione, ottenere un handle e aprire il database di riferimento. Vedere [Recupero di un handle di database](obtaining-a-database-handle.md). Chiamare [**MsiDatabaseApplyTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) con MSITRANSFORM \_ ERROR \_ VIEWTRANSFORM. In questo modo la trasformazione non viene applicata al database ed esegue il dump del contenuto della trasformazione nella \_ tabella TransformView. È possibile accedere ai dati nella tabella usando SQL query. Vedere [Uso delle query](working-with-queries.md).
 
 La \_ tabella TransformView non viene cancellata quando viene applicata un'altra trasformazione. La tabella riflette l'effetto cumulativo delle applicazioni successive. Per visualizzare le trasformazioni separatamente, è necessario rilasciare la tabella.
 
@@ -56,7 +56,7 @@ Nome di una colonna di tabella modificata o INSERT, DELETE, CREATE o DROP.
 <span id="Row"></span><span id="row"></span><span id="ROW"></span>Riga
 </dt> <dd>
 
-Elenco dei valori di chiave primaria separati da tabulazioni. I valori di chiave primaria Null sono rappresentati da un singolo spazio. Un valore Null in questa colonna indica una modifica dello schema.
+Elenco dei valori di chiave primaria separati da tabulazioni. I valori di chiave primaria Null sono rappresentati da uno spazio singolo. Un valore Null in questa colonna indica una modifica dello schema.
 
 </dd> <dt>
 
@@ -80,9 +80,9 @@ Valore corrente del database di riferimento o colonna di un numero.
 
 "ALTER TABLE \_ TransformView FREE".
 
-È possibile accedere ai dati nella tabella usando SQL query. Il linguaggio SQL ha due divisioni principali: Data Definition Language (DDL) che viene usato per definire tutti gli oggetti in un database SQL e Data Manipulation Language (DML) usato per selezionare, inserire, aggiornare ed eliminare i dati negli oggetti definiti tramite DDL.
+È possibile accedere ai dati nella tabella usando SQL query. Il linguaggio SQL ha due divisioni principali: Data Definition Language (DDL) che viene usato per definire tutti gli oggetti in un database SQL e Data Manipulation Language (DML) che viene usato per selezionare, inserire, aggiornare ed eliminare i dati negli oggetti definiti tramite DDL.
 
-Le operazioni di trasformazione DML (Data Manipulation Language) sono indicate come segue. Data Manipulation Language (DML) sono istruzioni in SQL che modificano, anziché definire, i dati.
+Le operazioni di trasformazione DML (Data Manipulation Language) sono indicate come segue. Data Manipulation Language (DML) sono le istruzioni in SQL che modificano, anziché definire, i dati.
 
 
 
@@ -96,7 +96,7 @@ Le operazioni di trasformazione DML (Data Manipulation Language) sono indicate c
 
  
 
-Le operazioni di trasformazione DDL (Data Definition Language) sono indicate come segue. Data Definition Language (DDL) sono istruzioni in SQL che definiscono, anziché manipolare, i dati.
+Le operazioni di trasformazione DDL (Data Definition Language) sono indicate come segue. Data Definition Language (DDL) sono le istruzioni in SQL che definiscono, anziché modificare, i dati.
 
 
 
@@ -110,7 +110,7 @@ Le operazioni di trasformazione DDL (Data Definition Language) sono indicate com
 
  
 
-Quando l'applicazione di una trasformazione aggiunge questa tabella, il campo Dati riceve testo che può essere interpretato come valore intero a 16 bit. Il valore descrive la colonna denominata nel campo Colonna. È possibile confrontare il valore integer con le costanti nella tabella seguente per determinare la definizione della colonna modificata.
+Quando l'applicazione di una trasformazione aggiunge questa tabella, il campo Dati riceve testo che può essere interpretato come valore integer a 16 bit. Il valore descrive la colonna denominata nel campo Colonna. È possibile confrontare il valore integer con le costanti nella tabella seguente per determinare la definizione della colonna modificata.
 
 
 
@@ -119,8 +119,8 @@ Quando l'applicazione di una trasformazione aggiunge questa tabella, il campo Da
 | <span id="Bits_07"></span><span id="bits_07"></span><span id="BITS_07"></span>Bit 0 7<br/>         | Esadecimale: 0x0000 0x0100<br/> Decimale: 0 255<br/> Larghezza colonna<br/>                                                                                                                                                                                                                                  |
 | <span id="Bit_8"></span><span id="bit_8"></span><span id="BIT_8"></span>Bit 8<br/>                  | Esadecimale: 0x0100<br/> Decimale: 256<br/> Colonna persistente. Zero indica una colonna temporanea. <br/>                                                                                                                                                                                                   |
 | <span id="Bit_9"></span><span id="bit_9"></span><span id="BIT_9"></span>Bit 9<br/>                  | Esadecimale: 0x0200<br/> Decimale: 1023<br/> Colonna localizzabile. Zero indica che la colonna non può essere localizzata.<br/>                                                                                                                                                                                      |
-| <span id="Bits_1011"></span><span id="bits_1011"></span><span id="BITS_1011"></span>Bit 10 11<br/> | Esadecimale: 0x0000<br/> Decimale: 0<br/> Long integer<br/> Esadecimale: 0x0400<br/> Decimale: 1024<br/> Numero intero breve<br/> Esadecimale: 0x0800<br/> Decimale: 2048<br/> Oggetto binario<br/> Esadecimale: 0x0C00<br/> Decimale: 3072<br/> string<br/> |
-| <span id="Bit_12"></span><span id="bit_12"></span><span id="BIT_12"></span>Bit 12<br/>              | Esadecimale: 0x1000<br/> Decimale: 4096<br/> Colonna nullable. Zero indica che la colonna non ammette valori Null.<br/>                                                                                                                                                                                               |
+| <span id="Bits_1011"></span><span id="bits_1011"></span><span id="BITS_1011"></span>Bit 10 11<br/> | Esadecimale: 0x0000<br/> Decimale: 0<br/> Long integer<br/> Esadecimale: 0x0400<br/> Decimale: 1024<br/> Short Integer<br/> Esadecimale: 0x0800<br/> Decimale: 2048<br/> Oggetto binario<br/> Esadecimale: 0x0C00<br/> Decimale: 3072<br/> string<br/> |
+| <span id="Bit_12"></span><span id="bit_12"></span><span id="BIT_12"></span>Bit 12<br/>              | Esadecimale: 0x1000<br/> Decimale: 4096<br/> Colonna che ammette i valori Null. Zero indica che la colonna non ammette valori Null.<br/>                                                                                                                                                                                               |
 | <span id="Bit_13"></span><span id="bit_13"></span><span id="BIT_13"></span>Bit 13<br/>              | Esadecimale: 0x2000<br/> Decimale: 8192<br/> Colonna chiave primaria. Zero indica che questa colonna non è una chiave primaria.<br/>                                                                                                                                                                                      |
 | <span id="Bits_1415"></span><span id="bits_1415"></span><span id="BITS_1415"></span>Bit 14 15<br/> | Esadecimale: 0x4000 0x8000<br/> Decimale: 16384 32768<br/> Riservato<br/>                                                                                                                                                                                                                                |
 
@@ -128,7 +128,7 @@ Quando l'applicazione di una trasformazione aggiunge questa tabella, il campo Da
 
  
 
-Per un esempio di script che illustra la \_ tabella TransformView, vedere [Visualizzare una trasformazione](view-a-transform.md).
+Per un esempio di script che illustra la \_ tabella TransformView, vedere [Visualizzare una trasformazione.](view-a-transform.md)
 
  
 

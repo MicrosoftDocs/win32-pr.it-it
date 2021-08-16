@@ -1,7 +1,7 @@
 ---
-description: Messaggio WS-Transfer usato per rispondere a una richiesta di metadati.
+description: Messaggio WS-Transfer utilizzato per rispondere a una richiesta di metadati.
 ms.assetid: aff05317-35db-4ea6-9692-1e09e4682fe7
-title: Messaggio GetResponse (Exchange)
+title: Messaggio GetResponse (metadati Exchange)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 11bc76038a32d28f4ed773a937654e6d159ab75460e8cb6d6d5af60f614fa7e0
@@ -11,14 +11,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118552402"
 ---
-# <a name="getresponse-metadata-exchange-message"></a>Messaggio GetResponse (Exchange)
+# <a name="getresponse-metadata-exchange-message"></a>Messaggio GetResponse (metadati Exchange)
 
 Un messaggio GetResponse è un WS-Transfer usato per rispondere a una richiesta di metadati. Per altre informazioni sui messaggi GetResponse, vedere la sezione 3.1 della [specifica WS-Transfer.](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf)
 
 Qualsiasi applicazione DPWS che invia [messaggi Get](get--metadata-exchange--http-request-and-message.md) riceverà messaggi GetResponse.
 
 > [!Note]  
-> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI anaserà e accetterà altri messaggi conformi a DPWS che non sono conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità DPWS. usare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
+> Questo argomento illustra un messaggio DPWS di esempio generato da client e host WSDAPI. WSDAPI analizza e accetta altri messaggi conformi a DPWS non conformi a questo esempio. Non usare questo esempio per verificare l'interoperabilità di DPWS. utilizzare [WSDAPI Basic Interoperability Tool (WSDBIT).](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
@@ -110,7 +110,7 @@ Il messaggio SOAP seguente mostra un messaggio GetResponse di esempio.
 </soap:Envelope>
 ```
 
-Un messaggio GetResponse ha i punti di interesse seguenti.
+Un messaggio GetResponse presenta i punti di interesse seguenti.
 
 
 
@@ -140,7 +140,7 @@ Un messaggio GetResponse ha i punti di interesse seguenti.
 <td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
     urn:uuid:027bec45-c37c-466c-936c-68f648abe2bb
 </wsa:RelatesTo></code></pre></td>
-<td>Identificatore del messaggio a cui il dispositivo risponde. Questa intestazione corrisponde a MessageID nel <a href="get--metadata-exchange--http-request-and-message.md">messaggio</a> Get.</td>
+<td>Identificatore del messaggio a cui risponde il dispositivo. Questa intestazione corrisponde a MessageID nel <a href="get--metadata-exchange--http-request-and-message.md">messaggio</a> Get.</td>
 </tr>
 <tr class="odd">
 <td>Indirizzo</td>

@@ -38,7 +38,7 @@ Metodo del distruttore.
 
 ## <a name="remarks"></a>Osservazioni
 
-Arrestare sempre l'oggetto prima di eliminare l'oggetto.
+Arrestare sempre l'oggetto prima di eliminarlo.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,5 +1,5 @@
 ---
-description: Le trasformazioni incorporate vengono archiviate nel file .msi del pacchetto. Ciò garantisce agli utenti che la trasformazione è sempre disponibile quando il pacchetto di installazione è disponibile. In alternativa, le trasformazioni possono essere fornite agli utenti come file mst autonomi.
+description: Le trasformazioni incorporate vengono archiviate all'interno .msi file del pacchetto. Ciò garantisce agli utenti che la trasformazione è sempre disponibile quando il pacchetto di installazione è disponibile. In alternativa, le trasformazioni possono essere fornite agli utenti come file con estensione mst autonomi.
 ms.assetid: f7b265df-4b34-44ea-85ab-8dbca4797517
 title: Trasformazioni incorporate
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118637463"
 ---
 # <a name="embedded-transforms"></a>Trasformazioni incorporate
 
-Le trasformazioni incorporate vengono archiviate nel file .msi del pacchetto. Ciò garantisce agli utenti che la trasformazione è sempre disponibile quando il pacchetto di installazione è disponibile. In alternativa, le trasformazioni possono essere fornite agli utenti come file mst autonomi.
+Le trasformazioni incorporate vengono archiviate all'interno .msi file del pacchetto. Ciò garantisce agli utenti che la trasformazione è sempre disponibile quando il pacchetto di installazione è disponibile. In alternativa, le trasformazioni possono essere fornite agli utenti come file con estensione mst autonomi.
 
-Per aggiungere una trasformazione incorporata all'elenco delle trasformazioni, aggiungere i due punti (:) prefisso al nome del file. Poiché il programma di installazione può sempre ottenere la trasformazione dall'archiviazione nel file .msi, le trasformazioni incorporate non vengono memorizzate nella cache del computer dell'utente. Le trasformazioni incorporate possono essere usate in combinazione con [trasformazioni protette](secured-transforms.md) o [trasformazioni non protette.](unsecured-transforms.md) Per altre informazioni, vedere [Applicazione di trasformazioni](applying-transforms.md).
+Per aggiungere una trasformazione incorporata all'elenco delle trasformazioni, aggiungere i due punti (:) Prefisso al nome del file. Poiché il programma di installazione può sempre ottenere la trasformazione dalla risorsa di archiviazione nel file .msi, le trasformazioni incorporate non vengono memorizzate nella cache del computer dell'utente. Le trasformazioni incorporate possono essere utilizzate in [combinazione con trasformazioni protette](secured-transforms.md) o [trasformazioni non protette.](unsecured-transforms.md) Per altre informazioni, vedere [Applicazione di trasformazioni.](applying-transforms.md)
 
  
 

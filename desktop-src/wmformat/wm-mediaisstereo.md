@@ -33,7 +33,7 @@ g \_ wszWMMediaIsStereo
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene usato per la trasmissione di programmi televisivi.
+Questo attributo viene usato per la trasmissione tv.
 
 ## <a name="see-also"></a>Vedi anche
 
