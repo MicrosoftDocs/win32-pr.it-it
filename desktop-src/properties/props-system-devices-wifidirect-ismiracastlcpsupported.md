@@ -1,5 +1,5 @@
 ---
-description: Indica se la protezione del contenuto del collegamento è supportata dal dispositivo Wi-Fi direct se è Miracast supportato.
+description: Indica se la protezione del contenuto del collegamento è supportata Wi-Fi dispositivo diretto se è Miracast supportato.
 ms.assetid: 7d5e86aa-f190-4e0a-9fd8-9081d7f2ac27
 title: System.Devices.WiFiDirect.IsMiracastLcpSupported
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118728071"
 ---
 # <a name="systemdeviceswifidirectismiracastlcpsupported"></a>System.Devices.WiFiDirect.IsMiracastLcpSupported
 
-Indica se la protezione del contenuto del collegamento è supportata dal dispositivo Wi-Fi direct se è Miracast supportato
+Indica se la protezione del contenuto dei collegamenti è supportata Wi-Fi dispositivo diretto se è Miracast supportato
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

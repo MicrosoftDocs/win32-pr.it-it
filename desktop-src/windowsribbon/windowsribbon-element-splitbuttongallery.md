@@ -3,7 +3,7 @@ title: Elemento SplitButtonGallery
 description: Rappresenta un controllo Split Button Gallery con un menu a discesa basato su raccolta.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- Elemento SplitButtonGallery Windows barra multifunzione
+- Elemento SplitButtonGallery Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -70,8 +70,8 @@ Rappresenta un [controllo Split Button Gallery](windowsribbon-controls-splitbutt
 <td><strong>CommandName</strong><br/></td>
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
-<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command.</strong></a><br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999 inclusi o valore esadecimale compreso tra 0x2 e 0xea5f inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
+<td>Associa l'elemento a un <a href="windowsribbon-element-command.md"><strong>oggetto Command</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Stringa, valore intero compreso tra 2 e 59999, inclusivo o valore esadecimale compreso tra 0x2 e 0xea5f, inclusi. <br/> Il valore deve essere univoco all'interno del documento XML della barra multifunzione. <br/> Lunghezza massima: 100 caratteri. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>HasLargeItems</strong><br/></td>
@@ -102,7 +102,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 <td>TextPositionType<br/></td>
 <td>No<br/></td>
 <td>Limitato a uno dei valori seguenti:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (Inferiore)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Nascondi)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A sinistra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sovrapposizione)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A destra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (In alto)<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (In basso)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Nascondi)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A sinistra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sovrapposizione)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (A destra)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (In alto)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong><br/></td>
@@ -157,7 +157,7 @@ Si applica solo alle raccolte in cui il valore <em>dell'attributo Type</em> è u
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-element-menugroup.md"><strong>Menugroup</strong></a><br/></td>
-<td>Se contenuto in un <a href="windowsribbon-element-applicationmenu.md"><strong>oggetto ApplicationMenu.</strong></a> Questo elemento è supportato solo nel primo livello e non deve avere elementi figlio.<br/> <br/></td>
+<td>Se contenuto in un <a href="windowsribbon-element-applicationmenu.md"><strong>oggetto ApplicationMenu</strong></a>. Questo elemento è supportato solo al primo livello e non deve avere elementi figlio.<br/> <br/></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a><br/></td>
@@ -182,19 +182,19 @@ facoltativo.
 
 Può verificarsi una o più volte per [**ogni elemento ControlGroup,**](windowsribbon-element-controlgroup.md) [**Group,**](windowsribbon-element-group.md) [**MenuGroup**](windowsribbon-element-menugroup.md) [**o SplitButton.**](windowsribbon-element-splitbutton.md)
 
-**SplitButtonGallery supporta** le [modalità dell'applicazione](ribbon-applicationmodes.md).
+**SplitButtonGallery supporta** le [modalità applicazione](ribbon-applicationmodes.md).
 
-[Interfaccia utente \_ PKEY \_ BooleanValue viene](windowsribbon-reference-properties-uipkey-booleanvalue.md) usato da un'applicazione per eseguire una query sullo stato di attivazione/disattivazione per il controllo pulsante di un oggetto **SplitButtonGallery.**
+[Interfaccia utente \_ PKEY \_ BooleanValue viene](windowsribbon-reference-properties-uipkey-booleanvalue.md) usato da un'applicazione per eseguire query sullo stato di attivazione/disattivazione per il controllo pulsante di un controllo **SplitButtonGallery.**
 
-Lo screenshot seguente illustra il controllo Raccolta pulsanti di menu [suddivisi](windowsribbon-controls-splitbuttongallery.md) della barra multifunzione in Microsoft Paint per Windows 7.
+La schermata seguente illustra il controllo [Raccolta](windowsribbon-controls-splitbuttongallery.md) pulsanti di divisione della barra multifunzione in Microsoft Paint per Windows 7.
 
-![Screenshot di un controllo della raccolta di pulsanti divisi in Microsoft Paint per Windows 7.](images/controls/splitbuttongallery.png)
+![Screenshot di un controllo della raccolta di pulsanti di divisione in Microsoft Paint per Windows 7.](images/controls/splitbuttongallery.png)
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene illustrato il markup di base per [la raccolta di pulsanti di menu suddivisi.](windowsribbon-controls-splitbuttongallery.md)
+Nell'esempio seguente viene illustrato il markup di base per [la raccolta di pulsanti di divisione.](windowsribbon-controls-splitbuttongallery.md)
 
-Questa sezione di codice illustra le dichiarazioni del comando **SplitButtonGallery,** con un oggetto [**Group**](windowsribbon-element-group.md) associato che funziona come contenitore padre per **l'elemento SplitButtonGallery.**
+Questa sezione di codice illustra le **dichiarazioni di comando SplitButtonGallery,** con un [**gruppo**](windowsribbon-element-group.md) associato che funziona come contenitore padre per l'elemento **SplitButtonGallery.**
 
 
 ```XML
@@ -211,7 +211,7 @@ Questa sezione di codice illustra le dichiarazioni del comando **SplitButtonGall
 
 
 
-Questa sezione di codice mostra le **dichiarazioni del controllo SplitButtonGallery.**
+Questa sezione di codice illustra le dichiarazioni del controllo **SplitButtonGallery.**
 
 
 ```XML

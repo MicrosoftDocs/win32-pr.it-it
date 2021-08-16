@@ -3,9 +3,9 @@ title: Metodo IConfigAsfWriter ConfigureFilterUsingProfileGuid
 description: Il metodo ConfigureFilterUsingProfileGuid configura il filtro per scrivere un file ASF in base al profilo predefinito specificato. (Deprecato).
 ms.assetid: 94161ee7-1b74-47af-9d77-568abe6237c3
 keywords:
-- Metodo ConfigureFilterUsingProfileGuid per Windows Media Format
+- Metodo ConfigureFilterUsingProfileGuid windows Media Format
 - Metodo ConfigureFilterUsingProfileGuid windows Media Format , interfaccia IConfigAsfWriter
-- Metodo ConfigureFilterUsingProfileGuid dell'interfaccia IConfigAsfWriter per Windows Media Format
+- Metodo ConfigureFilterUsingProfileGuid dell'interfaccia IConfigAsfWriter di Windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -66,7 +66,7 @@ Restituisce uno dei valori **HRESULT** seguenti.
 
 ## <a name="remarks"></a>Commenti
 
-A partire da Windows Media Format 9 Series SDK, non sono stati definiti nuovi profili di sistema. Con questo metodo è possibile usare solo i GUID del profilo di sistema versione 8 (o precedenti).
+A partire dall'SDK Windows Media Format 9 Series, non sono stati definiti nuovi profili di sistema. Con questo metodo è possibile usare solo i GUID del profilo di sistema versione 8 (o precedenti).
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,11 +1,11 @@
 ---
-title: Metodo GetError IBackgroundCopyError (Deliveryoptimization. h)
+title: Metodo GetError IBackgroundCopyError (Deliveryoptimization.h)
 description: Recupera il codice di errore e identifica il contesto in cui si è verificato l'errore.
 ms.assetid: C87897CD-9648-4CEF-B963-68EE35356929
 keywords:
 - Metodo GetError
 - Metodo GetError, interfaccia IBackgroundCopyError
-- Interfaccia IBackgroundCopyError, metodo getError
+- Interfaccia IBackgroundCopyError, metodo GetError
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e14803c225ade6085658582e18b9ba2d52fc90c7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d147bc877f9694617ec94651f53f4cf438c00de8d752710c3659f24ba4ffe21c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103964129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810327"
 ---
-# <a name="ibackgroundcopyerrorgeterror-method"></a>Metodo IBackgroundCopyError:: GetError
+# <a name="ibackgroundcopyerrorgeterror-method"></a>Metodo IBackgroundCopyError::GetError
 
 Recupera il codice di errore e identifica il contesto in cui si è verificato l'errore.
 
@@ -44,14 +44,14 @@ HRESULT GetError(
 
 <dl> <dt>
 
-*pContext* \[ out\]
+*Oggetto pContext* \[ Cambio\]
 </dt> <dd>
 
-Contesto in cui si è verificato l'errore. Per un elenco di valori di contesto, vedere l'enumerazione [**BG_ERROR_CONTEXT**](bg-error-context.md) .
+Contesto in cui si è verificato l'errore. Per un elenco di valori di contesto, vedere [**l'BG_ERROR_CONTEXT**](bg-error-context.md) di contesto.
 
 </dd> <dt>
 
-*pErrorCode* \[ out\]
+*pErrorCode* \[ Cambio\]
 </dt> <dd>
 
 Codice di errore dell'errore che si è verificato.
@@ -60,7 +60,7 @@ Codice di errore dell'errore che si è verificato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce **S_OK** in esito positivo o uno dei valori HRESULT COM standard in errore.
+Questo metodo **restituisce** S_OK in caso di esito positivo o uno dei valori HRESULT COM standard in caso di errore.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -68,13 +68,13 @@ Questo metodo restituisce **S_OK** in esito positivo o uno dei valori HRESULT CO
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                                           |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                                       |
-| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Libreria<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                                           |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                                       |
+| Intestazione<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Libreria<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
-| IID<br/>                      | IID_IBackgroundCopyError viene definito come 19C613A0-FCB8-4F28-81AE-897C3D078F81<br/>             |
+| IID<br/>                      | IID_IBackgroundCopyError è definito come 19C613A0-FCB8-4F28-81AE-897C3D078F81<br/>             |
 
 
 
@@ -85,7 +85,7 @@ Questo metodo restituisce **S_OK** in esito positivo o uno dei valori HRESULT CO
 [**IBackgroundCopyError**](ibackgroundcopyerror.md)
 </dt> <dt>
 
-[**IBackgroundCopyError:: GetFile**](ibackgroundcopyerror-getfile-method.md)
+[**IBackgroundCopyError::GetFile**](ibackgroundcopyerror-getfile-method.md)
 </dt> </dl>
 
  

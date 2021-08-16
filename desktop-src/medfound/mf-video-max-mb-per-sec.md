@@ -1,19 +1,19 @@
 ---
-description: Specifica, in IMFTransform, la velocità di elaborazione massima di macroblocco, in macroblocchi al secondo, supportata dal codificatore hardware.
+description: Specifica, in IMFTransform, la velocità massima di elaborazione dei macroblock, in blocchi di macro al secondo, supportata dal codificatore hardware.
 ms.assetid: 1AA41DE3-C37C-41BA-9549-5F12373DDB3B
-title: Attributo MF_VIDEO_MAX_MB_PER_SEC (Mfapi. h)
+title: MF_VIDEO_MAX_MB_PER_SEC attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbee009b50daee074241c11750e9d25240cda153
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c76e6a44a6e0993f9cf6410a0092708da767f92815fc98020dd2f4d88359370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739239"
 ---
-# <a name="mf_video_max_mb_per_sec-attribute"></a>\_Attributo MF video \_ Max \_ MB \_ / \_ sec
+# <a name="mf_video_max_mb_per_sec-attribute"></a>Attributo MF \_ VIDEO MAX MB PER \_ \_ \_ \_ SEC
 
-Specifica, in [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform), la velocità di elaborazione massima di macroblocco, in macroblocchi al secondo, supportata dal codificatore hardware.
+Specifica, in [**IMFTransform,**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)la frequenza massima di elaborazione dei macroblock, in blocchi di macro al secondo, supportata dal codificatore hardware.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,21 +23,21 @@ Specifica, in [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform
 
 Attributo di sola lettura.
 
-**Codificatori H. 264/AVC:**
+**Codificatori H.264/AVC:**
 
-Questo attributo è influenzato dalle proprietà seguenti:
+Questo attributo è interessato dalle proprietà seguenti:
 
--   [MF \_ \_ \_ Livello di video mt](mf-mt-video-level.md) (alias di [MF \_ mt \_ MPEG2 \_ Level](mf-mt-mpeg2-level-attribute.md))
--   [Codecapis \_ AVEncCommonQualityVsSpeed](../directshow/avenccommonqualityvsspeed-property.md)
--   [Codecapis \_ AVEncMPVDefaultBPictureCount](../directshow/avencmpvdefaultbpicturecount-property.md)
+-   [MF \_ MT \_ VIDEO \_ LEVEL](mf-mt-video-level.md) (alias di [MF MT \_ \_ MPEG2 \_ LEVEL)](mf-mt-mpeg2-level-attribute.md)
+-   [CODECAPI \_ AVEncCommonQualityVsSpeed](../directshow/avenccommonqualityvsspeed-property.md)
+-   [CODECAPI \_ AVEncMPVDefaultBPictureCount](../directshow/avencmpvdefaultbpicturecount-property.md)
 
-Se è presente l'attributo di [ \_ \_ \_ livello video MF mt](mf-mt-video-level.md) , il codificatore deve restituire la velocità di elaborazione per la velocità in bit più elevata e la risoluzione supportata al livello specificato. Se l' \_ \_ \_ attributo di livello video MF MT non è presente, deve usare un livello predefinito pari a 4.
+Se è [presente l'attributo \_ MF MT \_ VIDEO \_ LEVEL,](mf-mt-video-level.md) il codificatore deve restituire la velocità di elaborazione per la velocità in bit e la risoluzione più alte supportate al livello specificato. Se l'attributo MF MT VIDEO LEVEL non è \_ \_ \_ presente, deve usare un livello predefinito di 4.
 
-Se è stata impostata la proprietà [ \_ AVEncCommonQualityVsSpeed ICodecAPI di codecapite](../directshow/avenccommonqualityvsspeed-property.md) , il codificatore deve restituire la velocità di elaborazione corrispondente al valore impostato per questa proprietà. Se l' \_ attributo AVEncCommonQualityVsSpeed di CODEcapit non è presente, deve usare il valore predefinito 0 che dovrebbe essere la modalità di elaborazione più rapida.
+Se la [proprietà CODECAPI \_ AVEncCommonQualityVsSpeed](../directshow/avenccommonqualityvsspeed-property.md) ICodecAPI è stata impostata, il codificatore deve restituire la velocità di elaborazione corrispondente al valore impostato per questa proprietà. Se l'attributo CODECAPI AVEncCommonQualityVsSpeed non è presente, deve usare il valore predefinito 0, che dovrebbe essere la modalità di elaborazione più \_ veloce.
 
-Se la proprietà [ \_ AVEncMPVDefaultBPictureCount ICodecAPI di codecapi](../directshow/avencmpvdefaultbpicturecount-property.md) è stata impostata su un valore valido e supportato, il codificatore deve restituire la velocità di elaborazione corrispondente al valore impostato per questa proprietà. Se l' \_ attributo AVEncMPVDefaultBPictureCount di CODEcapit non è presen, t deve usare un valore predefinito di 0 B frame.
+Se la proprietà ICodecAPI [CODECAPI \_ AVEncMPVDefaultBPictureCount](../directshow/avencmpvdefaultbpicturecount-property.md) è stata impostata su un valore valido e supportato, il codificatore deve restituire la velocità di elaborazione corrispondente al valore impostato per questa proprietà. Se l'attributo CODECAPI AVEncMPVDefaultBPictureCount non è presen, deve usare un valore predefinito di \_ 0 frame B.
 
-Solo i 28 bit inferiori devono essere usati da un'applicazione. I 4bits superiori sono riservati per un uso futuro. Le applicazioni devono ignorare i 4 bit superiori e MFTs devono impostare i 4 bit superiori su 0.
+Solo i 28 bit inferiori devono essere usati da un'applicazione. I 4 bit superiori sono riservati per un uso futuro. Le applicazioni devono ignorare i 4 bit superiori e i bit MFT devono impostare i 4 bit superiori su 0.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Solo i 28 bit inferiori devono essere usati da un'applicazione. I 4bits superior
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | App \[ desktop di Windows 8.1 app \| UWP\]<br/>                                |
-| Server minimo supportato<br/> | App desktop di Windows Server 2012 R2 \[ \| UWP\]<br/>                     |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8.1 app desktop \| app UWP\]<br/>                                |
+| Server minimo supportato<br/> | Windows Server 2012 App desktop R2 \[ \| app UWP\]<br/>                     |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Solo i 28 bit inferiori devono essere usati da un'applicazione. I 4bits superior
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

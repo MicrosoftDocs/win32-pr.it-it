@@ -5,7 +5,7 @@ ms.assetid: 4307b85b-f285-4e72-a73f-1f179ebb991a
 ms.tgt_platform: multiple
 keywords:
 - Admin-Description schema AD dell'attributo
-- Attributo adminDescription - Schema AD
+- Schema AD dell'attributo adminDescription
 topic_type:
 - apiref
 api_name:
@@ -32,7 +32,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | CN                | Admin-Description                           |
 | Ldap-Display-Name | adminDescription                            |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | Amministratore di dominio                        |
+| Privilegio di aggiornamento  | Amministratore di dominio                        |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.226                      |
 | System-Id-Guid    | bf967919-0de6-11d0-a285-00aa003049e2        |
@@ -59,7 +59,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -80,7 +80,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -101,7 +101,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -122,7 +122,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -143,7 +143,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -164,7 +164,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
@@ -185,7 +185,7 @@ Descrizione visualizzata nelle schermate di amministrazione.
 | ID collegamento                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| A valore singolo       | Vero                            |
+| Is-Single-Valued       | Vero                            |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |

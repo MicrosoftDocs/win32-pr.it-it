@@ -5,32 +5,32 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: dbde9ecd-4197-45b9-bd38-776818102580
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e31f73cbc52a09ad44ee98862d3fd98a113c8ac
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a8153ee380d9171af34d65ae358aee5ae4f46bd606900ca509d1c66a4209698c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104400050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001869"
 ---
 # <a name="w-task-scheduler"></a>W (Utilità di pianificazione)
 
-A B C D [E](e.md) F G H [i](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) U V W X Y Z
+A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) U V W X Y Z
 
 <dl> <dt>
 
 <span id="_msb_work_items_gly"></span><span id="_MSB_WORK_ITEMS_GLY"></span>**elementi di lavoro**
 </dt> <dd>
 
-Elemento che può essere pianificato utilizzando il servizio Utilità di pianificazione. Può trattarsi di qualsiasi elemento eseguito dal servizio Utilità di pianificazione in un momento specificato dal trigger o dai trigger dell'elemento.
+Elemento che può essere pianificato usando il Utilità di pianificazione servizio. Può essere qualsiasi elemento eseguito dal Utilità di pianificazione in un momento specificato dai trigger dell'elemento.
 
 Attualmente, le attività sono l'unico tipo valido di elemento di lavoro.
 
 </dd> <dt>
 
-<span id="_msb_working_directory_gly"></span><span id="_MSB_WORKING_DIRECTORY_GLY"></span>**Directory di lavoro**
+<span id="_msb_working_directory_gly"></span><span id="_MSB_WORKING_DIRECTORY_GLY"></span>**directory di lavoro**
 </dt> <dd>
 
-Directory in cui Utilità di pianificazione avvierà l'esecuzione dell'attività. Se non viene specificata alcuna directory di lavoro, Utilità di pianificazione eseguirà l'attività nella directory% windir% \\ system32.
+Directory in cui Utilità di pianificazione inizierà a eseguire l'attività. Se non viene specificata alcuna directory di lavoro, Utilità di pianificazione eseguirà l'attività nella directory %windir% \\ system32.
 
 </dd> </dl>
 

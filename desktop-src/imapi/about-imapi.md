@@ -22,7 +22,7 @@ IMAPI offre le funzionalità seguenti:
 -   Crea e masterizza dischi a sessione singola e multisessione.
 -   Crea e masterizza dischi di avvio.
 -   Crea e masterizza immagini RAW CD Disc-at-Once.
--   Fornisce l'accesso di basso livello al motore di masterizzazione per lo sviluppo del supporto per nuovi dispositivi.
+-   Fornisce l'accesso di basso livello al motore di masterizzazione per lo sviluppo del supporto per i nuovi dispositivi.
 -   Fornisce l'accesso alle proprietà estese del registratore per lo sviluppo del supporto per i nuovi dispositivi.
 -   Fornisce le opzioni di verifica della masterizzazione.
 

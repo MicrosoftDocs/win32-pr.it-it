@@ -1,7 +1,7 @@
 ---
-description: Specifica se uno stile non di colore ha uno stile di sottolineatura.
+description: Specifica se uno stile non a colori ha uno stile di sottolineatura.
 ms.assetid: 452dda6e-b12b-457c-9a01-c5363359c9f5
-title: FUlIMEStyle (funzione)
+title: Funzione FUlIMEStyle
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: a49090d2ca192dfd3ec6d0064b92bd2233af79c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c53e48fbf2c607ee8a99c4f952cdb1bf9056826def452c42283dfd615392c4ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956100"
 ---
-# <a name="fulimestyle-function"></a>FUlIMEStyle (funzione)
+# <a name="fulimestyle-function"></a>Funzione FUlIMEStyle
 
-Specifica se uno stile non di colore ha uno stile di sottolineatura.
+Specifica se uno stile non a colori ha uno stile di sottolineatura.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,10 +39,10 @@ BOOL __cdecl FUlIMEStyle(
 
 <dl> <dt>
 
-*pimestyle* \[ in\]
+*pimestyle* \[ Pollici\]
 </dt> <dd>
 
-Struttura **IMESTYLE** restituita dalla funzione [**PIMEStyleFromAttr**](pimestylefromattr.md) .
+Struttura **IMESTYLE** restituita dalla [**funzione PIMEStyleFromAttr.**](pimestylefromattr.md)
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ TRUE se lo stile ha uno stile di sottolineatura.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file di intestazione o libreria di importazione. è necessario chiamarla usando le funzioni [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associata alcuna libreria di importazione o file di intestazione. è necessario chiamarlo usando le [**funzioni LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 

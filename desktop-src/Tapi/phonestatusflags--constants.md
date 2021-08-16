@@ -1,45 +1,45 @@
 ---
-description: Le \_ costanti del flag di bit PHONESTATUSFLAGS descrivono una serie di informazioni sullo stato dei dispositivi telefonici.
+description: Le costanti del flag di bit PHONESTATUSFLAGS descrivono \_ un'ampia gamma di informazioni sullo stato del dispositivo telefonico.
 ms.assetid: e94da591-49ab-4932-8621-0a62b8a55dd6
-title: Costanti PHONESTATUSFLAGS_ (TAPI. h)
+title: PHONESTATUSFLAGS_ costanti (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 969c2553274037797bdf9abea3e8bdbc1cd8d018
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b42f8e13adfae54c56e44244d04b3961216edb87e29730fec6f689f315380a7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060649"
 ---
-# <a name="phonestatusflags_-constants"></a>\_Costanti PHONESTATUSFLAGS
+# <a name="phonestatusflags_-constants"></a>Costanti PHONESTATUSFLAGS \_
 
-Le costanti del flag di bit **PHONESTATUSFLAGS \_** descrivono una serie di informazioni sullo stato dei dispositivi telefonici.
+Le costanti del flag di bit **PHONESTATUSFLAGS \_** descrivono un'ampia gamma di informazioni sullo stato del dispositivo telefonico.
 
 <dl> <dt>
 
-<span id="PHONESTATUSFLAGS_CONNECTED"></span><span id="phonestatusflags_connected"></span>**PHONESTATUSFLAGS \_ connesso**
+<span id="PHONESTATUSFLAGS_CONNECTED"></span><span id="phonestatusflags_connected"></span>**PHONESTATUSFLAGS \_ CONNECTED**
 </dt> <dd> <dl> <dt>
 
 
 
-Specifica se il telefono è attualmente connesso a TAPI. **True** se connesso; in caso contrario, **false** .
+Specifica se il telefono è attualmente connesso a TAPI. **TRUE se** connesso, **FALSE in caso** contrario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATUSFLAGS_SUSPENDED"></span><span id="phonestatusflags_suspended"></span>**PHONESTATUSFLAGS \_ sospeso**
+<span id="PHONESTATUSFLAGS_SUSPENDED"></span><span id="phonestatusflags_suspended"></span>**PHONESTATUSFLAGS \_ SOSPESO**
 </dt> <dd> <dl> <dt>
 
 
 
-Specifica se la manipolazione di TAPI del dispositivo telefonico viene sospesa. **True** se sospeso; in caso contrario, **false** . L'uso di un dispositivo telefonico da parte di un'applicazione può essere sospeso temporaneamente quando il Commuter vuole modificare il telefono in modo che non possa tollerare interferenze dall'applicazione.
+Specifica se la manipolazione tapI del dispositivo telefonico è sospesa. **TRUE se** sospeso, **FALSE in caso contrario.** L'uso di un dispositivo telefonico da parte di un'applicazione può essere temporaneamente sospeso quando il commutatore vuole modificare il telefono in modo che non possa tollerare interferenze dall'applicazione.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna estensibilità. Tutti i 32 bit sono riservati.
+Nessuna estendibilità. Tutti i 32 bit sono riservati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,8 +47,8 @@ Nessuna estensibilità. Tutti i 32 bit sono riservati.
 
 | Requisito | Valore |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versione TAPI<br/> | Richiede TAPI 2,0 o versione successiva<br/>                                             |
-| Intestazione<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versione TAPI<br/> | Richiede TAPI 2.0 o versione successiva<br/>                                             |
+| Intestazione<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

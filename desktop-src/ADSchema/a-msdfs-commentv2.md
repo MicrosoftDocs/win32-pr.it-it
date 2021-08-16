@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DFS-comment-V2
-description: Commento associato alla radice DFS o al collegamento.
+title: Attributo ms-DFS-Comment-v2
+description: Commento associato alla radice o al collegamento DFS.
 ms.assetid: 2d974308-07bd-4766-b861-380e745cab80
 ms.tgt_platform: multiple
 keywords:
-- Schema AD dell'attributo ms-DFS-comment-V2
-- msDFS-schema AD attributo Commentv2
+- Schema AD dell'attributo ms-DFS-Comment-v2
+- Schema AD dell'attributo msDFS-Commentv2
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d090b9c0b0f91c1e15f38ef70be771ae24f8f6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dce86a500b1b834d2f8226fffc3dbbd0dc692b183bd4d421f47d2e09a19311e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961030"
 ---
-# <a name="ms-dfs-comment-v2-attribute"></a>attributo ms-DFS-comment-V2
+# <a name="ms-dfs-comment-v2-attribute"></a>Attributo ms-DFS-Comment-v2
 
-Commento associato alla radice DFS o al collegamento.
+Commento associato alla radice o al collegamento DFS.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | MS-DFS-comment-V2                           |
-| LDAP-Display-Name | msDFS-Commentv2                             |
+| CN                | ms-DFS-Comment-v2                           |
+| Ldap-Display-Name | msDFS-Commentv2                             |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Aggiorna privilegio  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2036                     |
-| System-ID-GUID    | b786cec9-61fd-4523-B2C1-5ceb3860bb32        |
+| System-Id-Guid    | b786cec9-61fd-4523-b2c1-5ceb3860bb32        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -55,15 +55,15 @@ Commento associato alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| È a valore singolo       | Vero                                                                                                                                                                                 |
+| A valore singolo       | Vero                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 0                                                                                                                                                                                    |
 | Range-Upper            | 32766                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Commento associato alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| È a valore singolo       | Vero                                                                                                                                                                                 |
+| A valore singolo       | Vero                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 0                                                                                                                                                                                    |
 | Range-Upper            | 32766                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Commento associato alla radice DFS o al collegamento.
 | ID collegamento                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| È a valore singolo       | Vero                                                                                                                                                                                 |
+| A valore singolo       | Vero                                                                                                                                                                                 |
 | Indicizzato             | Falso                                                                                                                                                                                |
 | Nel catalogo globale      | Falso                                                                                                                                                                                |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 0                                                                                                                                                                                    |
 | Range-Upper            | 32766                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classi utilizzate in        | [**MS-DFS-deleted-link-V2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Classi usate in        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

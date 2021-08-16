@@ -1,5 +1,5 @@
 ---
-description: Informazioni sulla proprietà System.PropGroup.Calendar. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
+description: Informazioni sulla proprietà System.PropGroup.Calendar. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
 ms.assetid: 88873d45-2f9b-477b-87d4-ea269afb42ae
 title: System.PropGroup.Calendar
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118723058"
 ---
 # <a name="systempropgroupcalendar"></a>System.PropGroup.Calendar
 
-Separatore di gruppi di proprietà usato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È destinato solo a un marcatore.
+Separatore del gruppo di proprietà utilizzato negli elenchi di proprietà per separare i file audio da altri tipi. Non usare questa proprietà per ottenere o impostare valori. È inteso solo come marcatore.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -38,7 +38,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,7 +68,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

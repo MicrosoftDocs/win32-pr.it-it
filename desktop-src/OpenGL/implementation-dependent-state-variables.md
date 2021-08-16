@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 645702c9ea91f21d0e3bce5233b8014fd8f86859
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 4da38f841408bd6ddf481473837f36544d21d896f2764317957c65158be27fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061459"
 ---
 # <a name="implementation-dependent-state-variables"></a>Implementation-Dependent di stato
 
@@ -190,7 +190,7 @@ ms.locfileid: "107909879"
 
  
 
-</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>BUFFER \_ DELL'ESPERIENZA UTENTE GL \_</dt> <dd> 
+</dd> <dt><span id="GL_AUX_BUFFERS"></span><span id="gl_aux_buffers"></span>BUFFER \_ DELL'ESPERIENZA \_ UTENTE GL</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|
@@ -216,7 +216,7 @@ ms.locfileid: "107909879"
 
  
 
-</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODALITÀ DI INDICIZZAZIONE GL \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_INDEX_MODE"></span><span id="gl_index_mode"></span>MODALITÀ \_ DI INDICIZZAZIONE GL \_</dt> <dd> 
 
 | Proprietà | Valore |
 |------------------|----------------------------------------------------------------------------------|

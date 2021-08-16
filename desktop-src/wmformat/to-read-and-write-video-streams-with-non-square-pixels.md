@@ -3,8 +3,8 @@ title: Per leggere e scrivere video Flussi con pixel non quadrati
 description: Per leggere e scrivere video Flussi con pixel non quadrati
 ms.assetid: fe66d13e-61cf-4bb6-9ca2-aafeabe320ec
 keywords:
-- Windows Media Format SDK, lettura di flussi video
-- Windows MEDIA Format SDK, scrittura di flussi video
+- Windows MEDIA Format SDK, lettura di flussi video
+- Windows Media Format SDK, scrittura di flussi video
 - Windows MEDIA Format SDK, flussi video
 - Windows Media Format SDK, pixel non quadrati
 - Windows Media Format SDK,pixel (non quadrati)
@@ -36,7 +36,7 @@ ms.locfileid: "118699335"
 ---
 # <a name="to-read-and-write-video-streams-with-non-square-pixels"></a>Per leggere e scrivere video Flussi con pixel non quadrati
 
-I monitor dei computer hanno pixel quadrati, ma altri tipi di schermi video, tra cui tv NTSC, hanno pixel rettangolari o non quadrati. Inoltre, alcuni dispositivi di input, ad esempio fotocamere DV (Digital Video), hanno addebitato due dispositivi con pixel non quadrati. Quando si scrivono file basati su dati di origine di pixel non quadrati o destinati alla visualizzazione in dispositivi con pixel non quadrati, le informazioni sulle proporzioni dei pixel devono essere incluse nel file ASF. Le applicazioni lettore devono esaminare queste informazioni e usarle per regolare le proporzioni del rettangolo video in base alle esigenze.
+I monitor dei computer hanno pixel quadrati, ma altri tipi di schermi video, tra cui tv NTSC, hanno pixel rettangolari o non quadrati. Inoltre, alcuni dispositivi di input, ad esempio fotocamere DV (Digital Video), hanno addebitato due dispositivi con pixel non quadrati. Quando si scrivono file basati su dati di origine non quadrati o destinati alla visualizzazione in dispositivi con pixel non quadrati, le informazioni sulle proporzioni dei pixel devono essere incluse nel file ASF. Le applicazioni lettore devono esaminare queste informazioni e usarle per regolare le proporzioni del rettangolo video in base alle esigenze.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

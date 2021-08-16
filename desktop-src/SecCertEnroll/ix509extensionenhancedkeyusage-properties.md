@@ -1,23 +1,23 @@
 ---
 description: L'interfaccia IX509ExtensionEnhancedKeyUsage espone le proprietà seguenti.
 ms.assetid: 5AAA76A7-A93B-401A-A69B-E6FE3223BC39
-title: Proprietà di IX509ExtensionEnhancedKeyUsage
+title: Proprietà IX509ExtensionEnhancedKeyUsage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b5e6fcac3b8af5616ee5169c7a92040d4e79e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2faeed4ab588bb385d06e575911ccf51409e17b7f05f77e361301ff5f1b8e454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117775649"
 ---
-# <a name="ix509extensionenhancedkeyusage-properties"></a>Proprietà di IX509ExtensionEnhancedKeyUsage
+# <a name="ix509extensionenhancedkeyusage-properties"></a>Proprietà IX509ExtensionEnhancedKeyUsage
 
-L'interfaccia [**IX509ExtensionEnhancedKeyUsage**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage) espone le proprietà seguenti.
+[**L'interfaccia IX509ExtensionEnhancedKeyUsage**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà campo EnhancedKeyUsage**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionenhancedkeyusage-get_enhancedkeyusage)
+-   [**Proprietà EnhancedKeyUsage**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509extensionenhancedkeyusage-get_enhancedkeyusage)
 
  
 

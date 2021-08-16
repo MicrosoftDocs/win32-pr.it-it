@@ -17,11 +17,11 @@ Questo è un elenco di argomenti avanzati implementati dall'elaborazione dei ver
 
 -   [A tessellazione (Direct3D 9)](tessellation.md)
 -   [Mapping spostamento (Direct3D 9)](displacement-mapping.md)
--   [Fusione geometry (Direct3D 9)](geometry-blending.md)
+-   [Fusione geometrica (Direct3D 9)](geometry-blending.md)
 -   [Primitive di ordine superiore (Direct3D 9)](higher-order-primitives.md)
 -   [Sprite punto (Direct3D 9)](point-sprites.md)
 -   [Stack di matrici (Direct3D 9)](matrix-stacks.md)
--   [Trame dei vertici in confronto \_ a \_ 3 0 (DirectX HLSL)](vertex-textures-in-vs-3-0.md)
+-   [Trame vertice in confronto \_ a \_ 3 0 (DirectX HLSL)](vertex-textures-in-vs-3-0.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

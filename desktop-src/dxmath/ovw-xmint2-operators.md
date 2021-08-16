@@ -4,16 +4,16 @@ ms.assetid: 98822959-f4ef-4f73-8011-f9eba201dcc0
 title: Operatori XMINT2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7081d2df2f1996061cab1cd9bf5d352b5aac532e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d95b4f8c0d22f33caa402a3a3e523d660b66ea9bdb089711624868403fb955b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984911"
 ---
 # <a name="xmint2-operators"></a>Operatori XMINT2
 
-La struttura [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) espone gli operatori seguenti.
+La [**struttura XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) espone gli operatori seguenti.
 
 > [!Note]  
 > Gli operatori elencati di seguito sono disponibili solo in C++.
@@ -26,7 +26,7 @@ La struttura [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) 
 
 | Metodi                                             | Descrizione                                                                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**operatore =**](/windows/win32/api/directxmath/nf-directxmath-xmint2-operator-assign)<br/> | Assegna i dati del componente vettore da un'istanza di `XMINT2` all'istanza corrente di `XMINT2` .<br/> |
+| [**operatore =**](/windows/win32/api/directxmath/nf-directxmath-xmint2-operator-assign)<br/> | Assegna i dati del componente vettoriale da un'istanza `XMINT2` di all'istanza corrente di `XMINT2` .<br/> |
 
 
 

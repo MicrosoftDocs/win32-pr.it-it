@@ -1,11 +1,11 @@
 ---
-title: attributo ms-DS-KrbTgt-Link-BL
+title: Attributo ms-DS-KrbTgt-Link-BL
 description: Collegamento all'indietro per l'attributo ms-DS-KrbTgt-Link.
 ms.assetid: dcaa8257-260c-4eae-8c82-762d70d62281
 ms.tgt_platform: multiple
 keywords:
 - Schema AD dell'attributo ms-DS-KrbTgt-Link-BL
-- attributo msDS-KrbTgtLinkBl-schema AD
+- Schema AD dell'attributo msDS-KrbTgtLinkBl
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11fc821ccd4515dcfc2932855c58bbad9525f8de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bc94ab62be3cb1f37941c92aa8e339d17f95f4927962b491ca123489f9c792a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960730"
 ---
-# <a name="ms-ds-krbtgt-link-bl-attribute"></a>attributo ms-DS-KrbTgt-Link-BL
+# <a name="ms-ds-krbtgt-link-bl-attribute"></a>Attributo ms-DS-KrbTgt-Link-BL
 
-Collegamento all'indietro per l'attributo [**ms-DS-KrbTgt-Link**](a-msds-krbtgtlink.md) .
+Collegamento all'indietro [**per l'attributo ms-DS-KrbTgt-Link.**](a-msds-krbtgtlink.md)
 
 
 
 | Voce | Valore |
 |-------------------|-----------------------------------------|
 | CN                | ms-DS-KrbTgt-Link-BL                    |
-| LDAP-Display-Name | msDS-KrbTgtLinkBl                       |
+| Ldap-Display-Name | msDS-KrbTgtLinkBl                       |
 | Dimensione              | \-                                      |
-| Privilegio aggiornamento  | \-                                      |
+| Aggiorna privilegio  | \-                                      |
 | Frequenza di aggiornamento  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1931                 |
-| System-ID-GUID    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
+| System-Id-Guid    | 5dd68c41-bfdf-438b-9b5d-39d9618bf260    |
 | Sintassi            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
@@ -55,15 +55,15 @@ Collegamento all'indietro per l'attributo [**ms-DS-KrbTgt-Link**](a-msds-krbtgtl
 | ID collegamento                | 2101                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Collegamento all'indietro per l'attributo [**ms-DS-KrbTgt-Link**](a-msds-krbtgtl
 | ID collegamento                | 2101                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Collegamento all'indietro per l'attributo [**ms-DS-KrbTgt-Link**](a-msds-krbtgtl
 | ID collegamento                | 2101                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Vero                            |
-| È a valore singolo       | Falso                           |
+| A valore singolo       | Falso                           |
 | Indicizzato             | Falso                           |
 | Nel catalogo globale      | Falso                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000011                      |
-| Classi utilizzate in        | [**In alto**](c-top.md)<br/> |
+| Classi usate in        | [**In alto**](c-top.md)<br/> |
 
 
 

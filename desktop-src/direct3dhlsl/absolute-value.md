@@ -33,7 +33,7 @@ Questo modificatore viene usato solo per le istruzioni e la virgola mobile a pre
 
 **\_ L'applicazione di abs** su NaN mantiene NaN, anche se il particolare modello di bit NaN che risulta non è definito.
 
-Quando abs viene combinato con il modificatore negate, la combinazione forza il segno a essere negativo, come se il \_ **\_ modificatore abs** fosse applicato per [](negate.md) primo, quindi nega **.**
+Quando abs viene combinato con il modificatore negate, la combinazione forza il segno a essere negativo, come se il \_ **\_ modificatore abs** viene applicato per [](negate.md) primo, quindi nega **.**
 
 ## <a name="minimum-shader-model"></a>Modello di shader minimo
 

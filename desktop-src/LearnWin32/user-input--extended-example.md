@@ -1,5 +1,5 @@
 ---
-title: User Input Extended Example description: User Input: Extended Example ms.assetid: A408E0EC-E0A7-4F18-BFCA-21D28007FACC ms.topic: article ms.date: 31/05/2018
+title: User Input Extended Example description: User Input: Extended Example ms.assetid: A408E0EC-E0A7-4F18-BFCA-21D28007FACC ms.topic: article ms.date: 05/31/2018
 ---
 
 # <a name="user-input-extended-example"></a>Input utente: esempio esteso
@@ -8,7 +8,7 @@ Si combinano tutti gli elementi appresi sull'input dell'utente per creare un sem
 
 ![Screenshot del programma di disegno](images/input03.png)
 
-L'utente può disegnare puntini di sospensione in diversi colori e selezionare, spostare o eliminare i puntini di sospensione. Per mantenere l'interfaccia utente semplice, il programma non consente all'utente di selezionare i colori dei puntini di sospensione. Al contrario, il programma scorre automaticamente un elenco predefinito di colori. Il programma non supporta forme diverse da puntini di sospensione. Ovviamente, questo programma non riceverà alcun premi per il software di grafica. Tuttavia, è comunque un esempio utile da cui imparare. È possibile scaricare il codice sorgente completo da [Simple Drawing Sample](simple-drawing-sample.md). Questa sezione illustra solo alcune evidenziazioni.
+L'utente può disegnare puntini di sospensione in diversi colori e selezionare, spostare o eliminare puntini di sospensione. Per mantenere l'interfaccia utente semplice, il programma non consente all'utente di selezionare i colori dei puntini di sospensione. Al contrario, il programma scorre automaticamente un elenco predefinito di colori. Il programma non supporta forme diverse da puntini di sospensione. Ovviamente, questo programma non riceverà alcun premi per il software di grafica. Tuttavia, è comunque un esempio utile da cui imparare. È possibile scaricare il codice sorgente completo da [Simple Drawing Sample](simple-drawing-sample.md). Questa sezione illustra solo alcune evidenziazioni.
 
 I puntini di sospensione sono rappresentati nel programma da una struttura che contiene i dati dei puntini di sospensione ([**D2D1 \_ ELLIPSE**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse)) e il colore ([**D2D1 \_ COLOR \_ F**](/windows/desktop/Direct2D/d2d1-color-f)). La struttura definisce anche due metodi: un metodo per disegnare l'ellisse e un metodo per eseguire l'hit testing.
 
@@ -92,9 +92,9 @@ La tabella seguente riepiloga gli effetti dell'input del mouse in ognuna delle t
 
 | Mouse Input      | Modalità disegno                                          | Modalità di selezione                                                                                                                               | Modalità di trascinamento                  |
 |------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| Pulsante sinistro in basso | Impostare mouse capture e iniziare a disegnare una nuova ellisse. | Rilasciare la selezione corrente ed eseguire un hit test. Se viene raggiunto un'ellisse, acquisire il cursore, selezionare l'ellisse e passare alla modalità di trascinamento. | Nessuna azione.                 |
-| Spostamento del mouse       | Se il pulsante sinistro è in basso, ridimensionare i puntini di sospensione.    | Nessuna azione.                                                                                                                                   | Spostare i puntini di sospensione selezionati. |
-| Pulsante sinistro in alto   | Interrompere il disegno dell'ellisse.                          | Nessuna azione.                                                                                                                                   | Passare alla modalità di selezione.  |
+| Pulsante sinistro verso il basso | Impostare mouse capture e iniziare a disegnare un nuovo ellisse. | Rilasciare la selezione corrente ed eseguire un hit test. Se viene raggiunto un ellisse, acquisire il cursore, selezionare l'ellisse e passare alla modalità di trascinamento. | Nessuna azione.                 |
+| Spostamento del mouse       | Se il pulsante sinistro è in basso, ridimensionare l'ellisse.    | Nessuna azione.                                                                                                                                   | Spostare l'ellisse selezionata. |
+| Pulsante sinistro verso l'alto   | Interrompere il disegno dell'ellisse.                          | Nessuna azione.                                                                                                                                   | Passare alla modalità di selezione.  |
 
 
 
@@ -142,7 +142,7 @@ void MainWindow::OnLButtonDown(int pixelX, int pixelY, DWORD flags)
 
 
 
-Le coordinate del mouse vengono passate a questo metodo in pixel e quindi convertite in DIP. È importante non confondere queste due unità. Ad esempio, la [**funzione DragDetect usa**](/windows/desktop/api/winuser/nf-winuser-dragdetect) i pixel, mentre il disegno e l'hit testing usano i DIP. La regola generale è che le funzioni correlate alle finestre o all'input del mouse usano pixel, mentre Direct2D e DirectWrite usano DIP. Testare sempre il programma con un'impostazione con valori DPI elevati e ricordarsi di contrassegnare il programma come in grado di riconoscere DPI. Per altre informazioni, vedere [DPI e pixel Device-Independent pixel.](dpi-and-device-independent-pixels.md)
+Le coordinate del mouse vengono passate a questo metodo in pixel e quindi convertite in DIP. È importante non confondere queste due unità. Ad esempio, la [**funzione DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) usa i pixel, mentre per il disegno e l'hit testing vengono utilizzati i DIP. La regola generale è che le funzioni correlate alle finestre o all'input del mouse usano i pixel, mentre Direct2D e DirectWrite usare DIP. Testare sempre il programma con un'impostazione DPI elevata e ricordare di contrassegnare il programma come in grado di riconoscere DPI. Per altre informazioni, vedere [DPI e Device-Independent Pixel.](dpi-and-device-independent-pixels.md)
 
 Ecco il codice che gestisce i [**messaggi WM \_ MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove)
 
@@ -178,7 +178,7 @@ void MainWindow::OnMouseMove(int pixelX, int pixelY, DWORD flags)
 
 
 
-La logica per ridimensionare un'ellisse è stata descritta in precedenza, nella [sezione Esempio: Disegno di cerchi](mouse-movement.md). Si noti anche la chiamata a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Ciò garantisce che la finestra sia ridisegnata. Il codice seguente gestisce i [**messaggi WM \_ LBUTTONUP.**](/windows/desktop/inputdev/wm-lbuttonup)
+La logica per ridimensionare un'ellisse è stata descritta in precedenza, nella sezione [Esempio: Disegno di cerchi](mouse-movement.md). Si noti anche la chiamata a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Ciò garantisce che la finestra sia ridisegnata. Il codice seguente gestisce i [**messaggi WM \_ LBUTTONUP.**](/windows/desktop/inputdev/wm-lbuttonup)
 
 
 ```C++
@@ -250,7 +250,7 @@ Infine, ricordarsi di impostare il cursore quando la finestra riceve un [**messa
 
 ## <a name="summary"></a>Riepilogo
 
-In questo modulo si è appreso come gestire l'input tramite mouse e tastiera. come definire i tasti di scelta rapida; e come aggiornare l'immagine del cursore per riflettere lo stato corrente del programma.
+In questo modulo si è appreso come gestire l'input del mouse e della tastiera. come definire i tasti di scelta rapida; e come aggiornare l'immagine del cursore per riflettere lo stato corrente del programma.
 
  
 

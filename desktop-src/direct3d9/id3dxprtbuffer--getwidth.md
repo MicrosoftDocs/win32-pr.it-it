@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4b6ce05d3a5d9c1831d0ed2900a4820fd72f7afb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8e096e20122b6a5199b56369f4043dcbc3cdc9aeac95ed38bb1b006eafd10151
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801868"
 ---
 # <a name="id3dxprtbuffergetwidth-method"></a>Metodo ID3DXPRTBuffer::GetWidth
 

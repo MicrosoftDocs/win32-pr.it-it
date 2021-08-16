@@ -1,7 +1,7 @@
 ---
-description: Rappresenta un punto di accesso del servizio (SAP), in grado di utilizzare o richiamare un servizio. I punti di accesso condiviso indicano che un servizio è disponibile per l'uso da parte di altre entità.
+description: Rappresenta un punto di accesso al servizio (SAP), in grado di utilizzare o richiamare un servizio. I punti di accesso condiviso indicano che un servizio è disponibile per l'uso da parte di altre entità.
 ms.assetid: 09349c95-3f7e-46c5-bea1-c3d14ee16a2a
-title: CIM_ServiceAccessPoint classe (gestione di Hyper-V)
+title: CIM_ServiceAccessPoint classe (gestione Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118647557"
 ---
-# <a name="cim_serviceaccesspoint-class-hyper-v-management"></a>CIM_ServiceAccessPoint classe (gestione di Hyper-V)
+# <a name="cim_serviceaccesspoint-class-hyper-v-management"></a>CIM_ServiceAccessPoint classe (gestione Hyper-V)
 
-Rappresenta un punto di accesso del servizio (SAP), in grado di utilizzare o richiamare un servizio. I punti di accesso condiviso indicano che un servizio è disponibile per l'uso da parte di altre entità.
+Rappresenta un punto di accesso al servizio (SAP), in grado di utilizzare o richiamare un servizio. I punti di accesso condiviso indicano che un servizio è disponibile per l'uso da parte di altre entità.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,20 +43,20 @@ class CIM_ServiceAccessPoint : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Members
 
-La **classe \_ CiM ServiceAccessPoint** ha questi tipi di membri:
+La **classe \_ CIM ServiceAccessPoint** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ CiM ServiceAccessPoint** ha queste proprietà.
+La **classe CIM \_ ServiceAccessPoint** ha queste proprietà.
 
 <dl> <dt>
 
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -65,14 +65,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName viene** combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
+Nome della classe utilizzato per creare un'istanza di questa classe. **CreationClassName** viene combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -88,7 +88,7 @@ Nome univoco di SAP che indica le funzionalità supportate da SAP.
 **SystemCreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -97,14 +97,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [**Key,**](/windows/desktop/WmiSdk/key-qualifier) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**")
 </dt> </dl>
 
-Nome della classe usato per creare un'istanza del sistema che contiene SAP. **SystemCreationClassName viene** combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
+Nome della classe utilizzato per creare un'istanza del sistema che contiene SAP. **SystemCreationClassName** viene combinato con altre proprietà chiave di questa classe per identificare in modo univoco le istanze di questa classe e le relative sottoclassi.
 
 </dd> <dt>
 
 **Systemname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura

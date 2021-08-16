@@ -13,7 +13,7 @@ ms.locfileid: "117861603"
 ---
 # <a name="abm_setpos-message"></a>Messaggio \_ SETPOS ABM
 
-Imposta le dimensioni e la posizione dello schermo di una barra delle app. Il messaggio specifica un bordo dello schermo e il rettangolo di delimitazione per la barra dell'app. Il sistema può regolare il rettangolo di delimitazione in modo che la barra delle applicazioni non interferisca con la barra delle applicazioni Windows o con qualsiasi altra barra delle applicazioni.
+Imposta le dimensioni e la posizione dello schermo di una barra delle app. Il messaggio specifica un bordo dello schermo e il rettangolo di delimitazione per la barra dell'app. Il sistema può modificare il rettangolo di delimitazione in modo che la barra delle applicazioni non interferisca con la barra delle applicazioni Windows o con qualsiasi altra barra delle applicazioni.
 
 
 ```C++
@@ -29,7 +29,7 @@ SHAppBarMessage(ABM_SETPOS, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntatore a una [**struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Il **membro uEdge** specifica un bordo dello schermo e il membro **rc** contiene il rettangolo di delimitazione. Quando la [**funzione SHAppBarMessage**](/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage) viene restituita, **rc** contiene il rettangolo di delimitazione approvato. Quando si invia questo messaggio, è necessario specificare i membri **cbSize**, **hWnd**, **uEdge** **e rc.** tutti gli altri membri vengono ignorati.
+Puntatore a una [**struttura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Il **membro uEdge** specifica un bordo dello schermo e il **membro rc** contiene il rettangolo di delimitazione. Quando la [**funzione SHAppBarMessage**](/windows/desktop/api/Shellapi/nf-shellapi-shappbarmessage) viene restituita, **rc** contiene il rettangolo di delimitazione approvato. Quando si invia questo messaggio, è necessario specificare i membri **cbSize**, **hWnd**, **uEdge** **e rc.** tutti gli altri membri vengono ignorati.
 
 </dd> </dl>
 
@@ -39,7 +39,7 @@ Restituisce sempre **TRUE.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo messaggio fa sì che il sistema invii il messaggio di notifica [**ABN \_ POSCHANGED**](abn-poschanged.md) a tutte le barre delle app.
+Questo messaggio fa sì che il sistema invii il messaggio di notifica [**\_ POSCHANGED ABN**](abn-poschanged.md) a tutte le barre delle app.
 
 ## <a name="requirements"></a>Requisiti
 

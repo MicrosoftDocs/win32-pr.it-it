@@ -17,9 +17,9 @@ ms.locfileid: "118765808"
 # <a name="jet_instance-properties"></a>JET_INSTANCE proprietà
 
 Includere membri protetti  
-Includi membri ereditati  
+Includere i membri ereditati  
 
-Il [JET_INSTANCE](./jet-instance-structure.md) espone i membri seguenti.
+Il [JET_INSTANCE](./jet-instance-structure.md) tipo espone i membri seguenti.
 
 ## <a name="properties"></a>Proprietà
 

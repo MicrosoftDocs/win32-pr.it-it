@@ -23,7 +23,7 @@ Questo tipo di finestra di dialogo contiene in genere i tre controlli seguenti. 
 
 Una finestra di dialogo Sfoglia contiene in genere anche un [controllo DirectoryCombo](directorycombo-control.md) che specifica i tipi di volume da visualizzare. È comune che tutti i tipi di volume siano visualizzati in una finestra di dialogo Sfoglia.
 
-Le finestre di dialogo Sfoglia contengono in genere [tre controlli PushButton.](pushbutton-control.md) Questi pulsanti sono collegati ai rispettivi ControlEvent nella [tabella ControlEvent](controlevent-table.md). Questi pulsanti vengono usati per attivare le opzioni di controllo seguenti.
+Le finestre di dialogo Sfoglia contengono in genere tre [controlli PushButton.](pushbutton-control.md) Questi pulsanti sono collegati ai rispettivi ControlEvent nella [tabella ControlEvent](controlevent-table.md). Questi pulsanti vengono usati per attivare le opzioni di controllo seguenti.
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Definisce le condizioni per cui deve essere verificata una catena di certificati.
 ms.assetid: 87df623c-5661-4325-8dd6-393ce2e44066
-title: CAPICOM_CHECK_FLAG enumerazione (Capicom.h)
+title: CAPICOM_CHECK_FLAG di controllo (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

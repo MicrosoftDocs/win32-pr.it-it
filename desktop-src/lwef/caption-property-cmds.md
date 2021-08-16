@@ -1,19 +1,19 @@
 ---
 title: Proprietà Caption (oggetto raccolta Commands)
-description: Informazioni sulla proprietà Caption dell'oggetto Command Collection. Microsoft Agent è deprecato a livello di Windows 7.
+description: Informazioni sulla proprietà Caption dell'oggetto Command Collection. Microsoft Agent è deprecato a Windows 7.
 ms.assetid: 7182c21e-1ff0-4dce-9571-534b7576c082
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b34ae7bd6da1fc6cc60f882cc231af5730a1077e
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: c3467543de127bf0d9e898273f68d4cb921b7ab88ef52e965d73be4c1b465786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976701"
 ---
 # <a name="caption-property-commands-collection-object"></a>Proprietà Caption (oggetto raccolta Commands)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 

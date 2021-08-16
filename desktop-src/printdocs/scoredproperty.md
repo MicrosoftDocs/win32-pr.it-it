@@ -4,12 +4,12 @@ ms.assetid: 0552d301-5105-490f-962b-135c8c2e936b
 title: ScoredProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb93fbdaeb6101cbd1ff75d6c0b3a829afe0d317
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: eb600f3fa30c475f7bf28ab1e4c12b19875b6ef49e4f6f3537aead95bf47b999
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033889"
 ---
 # <a name="scoredproperty"></a>ScoredProperty
 
@@ -39,11 +39,11 @@ Per altre informazioni, vedere la [sezione Attributi](xml-attributes.md) XML.
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 
-Nella tabella seguente sono elencati gli elementi che possono essere elementi padre di questo elemento, gli elementi che possono essere figli di questo elemento ed eventuali restrizioni sull'elemento stesso.
+Nella tabella seguente sono elencati gli elementi che possono essere elementi padre di questo elemento, gli elementi che possono essere elementi figlio di questo elemento ed eventuali restrizioni sull'elemento stesso.
 
 
 
-| Categoria                   | Dettagli                                                                                                                                                                  |
+| Category                   | Dettagli                                                                                                                                                                  |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementi padre<br/> | *Opzione*<br/> *ScoredProperty*<br/>                                                                                                                          |
 | Elementi figlio<br/>  | Prima o dopo<br/> *ParameterRef* (uno)<br/> oppure<br/> *Valore* (uno)<br/> *Proprietà* (zero o più)<br/> *ScoredProperty* (zero o più)<br/> |

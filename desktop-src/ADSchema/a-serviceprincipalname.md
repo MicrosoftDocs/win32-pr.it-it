@@ -1,10 +1,10 @@
 ---
-title: Nome-entità servizio-attributo
-description: Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istanza di un servizio nel computer.
+title: Attributo Service-Principal-Name
+description: Elenco di nomi di entità utilizzati per l'autenticazione reciproca con un'istanza di un servizio nel computer.
 ms.assetid: 0ad1694f-0d6f-4350-a088-fdf3ef798c46
 ms.tgt_platform: multiple
 keywords:
-- Service-Principal-Name attributo AD schema
+- Schema AD dell'attributo Service-Principal-Name
 - Schema AD dell'attributo servicePrincipalName
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 861f160d2c9b71d2c9914c7ff9c2ea0ee43c8528
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37c7ab0fef64f747c08ccf80a38ec385b45bce46ced2184d02c55e7ce1c76441
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960090"
 ---
-# <a name="service-principal-name-attribute"></a>Nome-entità servizio-attributo
+# <a name="service-principal-name-attribute"></a>Attributo Service-Principal-Name
 
-Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istanza di un servizio nel computer.
+Elenco di nomi di entità utilizzati per l'autenticazione reciproca con un'istanza di un servizio nel computer.
 
 
 
 | Voce | Valore |
 |-------------------|---------------------------------------------|
-| CN                | Nome-entità servizio                      |
-| LDAP-Display-Name | servicePrincipalName                        |
+| CN                | Service-Principal-Name                      |
+| Ldap-Display-Name | servicePrincipalName                        |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.771                      |
-| System-ID-GUID    | f3a64788-5306-11d1-a9c5-0000f80367c1        |
+| System-Id-Guid    | f3a64788-5306-11d1-a9c5-0000f80367c1        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Elenco di nomi principali utilizzati per l'autenticazione reciproca con un'istan
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Vero                              |
 | Nel catalogo globale      | Vero                              |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000012                        |
-| Classi utilizzate in        | [**Utente**](c-user.md)<br/> |
+| Classi usate in        | [**Utente**](c-user.md)<br/> |
 
 
 

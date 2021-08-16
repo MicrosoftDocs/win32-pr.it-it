@@ -5,7 +5,7 @@ ms.assetid: 30312039-3676-4322-b6f6-fb86098bf578
 keywords:
 - Metodo getAttributeCountByType Windows Media Player
 - Metodo getAttributeCountByType Windows Media Player, interfaccia IWMPStringCollection2
-- Interfaccia IWMPStringCollection2 Windows Media Player metodo , getAttributeCountByType
+- Interfaccia IWMPStringCollection2 Windows Media Player, metodo getAttributeCountByType
 topic_type:
 - apiref
 api_name:

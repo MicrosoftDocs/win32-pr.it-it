@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c499a65ef8beee485bab647d8649559b74cfbd1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9be6df5b67da26b9f5691e26c8b8a915f0e717f47d123455421a1fa9606b816
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106303570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961140"
 ---
 # <a name="ms-sql-creationdate-attribute"></a>Attributo MS-SQL-CreationDate
 
@@ -30,12 +30,12 @@ Data di creazione del database.
 | Voce | Valore |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-CreationDate                         |
-| LDAP-Display-Name | mS-SQL-CreationDate                         |
+| Ldap-Display-Name | mS-SQL-CreationDate                         |
 | Dimensione              | \-                                          |
-| Privilegio aggiornamento  | Questo valore viene impostato dal sistema.            |
+| Aggiorna privilegio  | Questo valore viene impostato dal sistema.            |
 | Frequenza di aggiornamento  | Quando viene creato un nuovo database.             |
 | Attribute-Id      | 1.2.840.113556.1.4.1397                     |
-| System-ID-GUID    | ede14754-ccee-11d2-9993-0000f87a57d4        |
+| System-Id-Guid    | ede14754-ccee-11d2-9993-0000f87a57d4        |
 | Sintassi            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -58,15 +58,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Data di creazione del database.
 | ID collegamento                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| È a valore singolo       | Vero                                                          |
+| A valore singolo       | Vero                                                          |
 | Indicizzato             | Falso                                                         |
 | Nel catalogo globale      | Falso                                                         |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classi utilizzate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classi usate in        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 

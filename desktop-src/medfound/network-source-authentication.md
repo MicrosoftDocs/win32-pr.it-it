@@ -1,29 +1,29 @@
 ---
-description: Autenticazione origine rete
+description: Autenticazione dell'origine di rete
 ms.assetid: bffc33ec-0fb0-4bbe-9bac-583b9d4e1153
-title: Autenticazione origine rete
+title: Autenticazione dell'origine di rete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c38968fccf501f49ac7666a066b88528b237bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3e90ae7d7a8e4fb29b56aaa1296ba0c5aa44049f801b01a2c7797009ec736aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104049661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973040"
 ---
-# <a name="network-source-authentication"></a>Autenticazione origine rete
+# <a name="network-source-authentication"></a>Autenticazione dell'origine di rete
 
-Alcuni host multimediali potrebbero richiedere credenziali utente dalle applicazioni client prima di consentire l'accesso al supporto. Le credenziali utente includono l'identificazione e la prova dell'identificazione, ad esempio nome utente e password, che vengono usate dal server multimediale per concedere l'accesso all'origine di rete ospitata. L'origine di rete può fornire l'autenticazione NTLM, digest o di base.
+Alcuni host di supporti possono richiedere le credenziali utente dalle applicazioni client prima di consentire l'accesso al supporto. Le credenziali utente includono l'identificazione e la prova di identificazione, ad esempio nome utente e password, usati dal server multimediale per concedere l'accesso all'origine di rete ospitata. L'origine di rete può fornire l'autenticazione NTLM, Digest o Di base.
 
-Le applicazioni basate su Media Foundation possono archiviare le credenziali utente per un URL specifico in un oggetto *credenziale* che espone l'interfaccia [**IMFNetCredential**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) . L'oggetto Credential archivia le credenziali crittografate e fornisce i metodi per restituire informazioni come nome utente, password e dominio.
+Le applicazioni basate Media Foundation possono archiviare le credenziali utente per un URL specifico in un oggetto *credenziali* che espone [**l'interfaccia IMFNetCredential.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredential) L'oggetto credenziali archivia le credenziali crittografate e fornisce metodi per restituire informazioni quali nome utente, password e dominio.
 
-Gli oggetti credenziale vengono creati e gestiti in una cache. L'oggetto della *cache delle credenziali* , esposto dall'interfaccia [**IMFNetCredentialCache**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache) , fornisce metodi per il recupero degli oggetti Credential dalla cache delle credenziali.
+Gli oggetti credenziale vengono creati e gestiti in una cache. *L'oggetto cache* delle credenziali, esposto dall'interfaccia [**IMFNetCredentialCache,**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialcache) fornisce metodi per recuperare gli oggetti credenziali dalla cache delle credenziali.
 
-Un'applicazione che supporta l'autenticazione deve implementare l'interfaccia [**IMFNetCredentialManager**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) . Media Foundation non fornisce un'implementazione predefinita di questa interfaccia. Gestione credenziali è responsabile della raccolta delle credenziali necessarie per un URL dall'input dell'utente o della lettura da un archivio permanente.
+Un'applicazione che supporta l'autenticazione deve implementare [**l'interfaccia IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) Media Foundation non fornisce un'implementazione predefinita di questa interfaccia. Il gestore delle credenziali è responsabile della raccolta delle credenziali necessarie per un URL dall'input dell'utente o della lettura dall'archiviazione persistente.
 
 Questa sezione contiene i seguenti argomenti:
 
--   [Impostazione di una gestione credenziali](setting-a-credential-manager.md)
+-   [Impostazione di un Gestione credenziali](setting-a-credential-manager.md)
 -   [Uso della cache delle credenziali](using-the-credential-cache.md)
 -   [Implementazione di IMFNetCredentialManager](implementing-imfnetcredentialmanager.md)
 

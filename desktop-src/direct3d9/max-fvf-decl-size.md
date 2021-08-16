@@ -1,7 +1,7 @@
 ---
 description: Questa costante è il numero massimo di dichiaratori di vertici per una mesh.
 ms.assetid: 234e99a2-1907-4065-b03b-fb9e8d6812ab
-title: Enumerazione MAX_FVF_DECL_SIZE (D3dx9mesh. h)
+title: MAX_FVF_DECL_SIZE enumerazione (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7204308e6b9355b416218f31af301b5ea6d8fff5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52ac939cc77bbd87dbecffc07253f0fadc5cbbdaa48e07f938f163c453c21e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106322526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798797"
 ---
-# <a name="max_fvf_decl_size-enumeration"></a>\_Enumerazione max FVF \_ decl \_ size
+# <a name="max_fvf_decl_size-enumeration"></a>Enumerazione \_ MAX FVF \_ DECL \_ SIZE
 
 Questa costante è il numero massimo di dichiaratori di vertici per una mesh.
 
@@ -39,16 +39,16 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="MAX_FVF_DECL_SIZE"></span><span id="max_fvf_decl_size"></span>**dimensioni MASSIMe \_ \_ decl FVF \_**
+<span id="MAX_FVF_DECL_SIZE"></span><span id="max_fvf_decl_size"></span>**MAX \_ FVF \_ DECL \_ SIZE**
 </dt> <dd>
 
-Numero massimo di elementi nella dichiarazione del vertice. Il (+ 1) aggiuntivo è per [**D3DDECL \_ end**](d3ddecl-end.md).
+Numero massimo di elementi nella dichiarazione del vertice. Il valore aggiuntivo (+1) è per [**D3DDECL \_ END**](d3ddecl-end.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-MAXD3DDECLLENGTH è definito come massimo 64 (vedere d3d9types. h). Non include l'elemento del vertice del marcatore "end".
+MAXD3DDECLLENGTH è definito come un massimo di 64 (vedere d3d9types.h). Non include l'elemento vertice del marcatore "end".
 
 ## <a name="requirements"></a>Requisiti
 
@@ -56,7 +56,7 @@ MAXD3DDECLLENGTH è definito come massimo 64 (vedere d3d9types. h). Non include 
 
 | Requisito | Valore |
 |-------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 

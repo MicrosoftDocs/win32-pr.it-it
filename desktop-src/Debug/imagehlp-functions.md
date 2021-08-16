@@ -4,12 +4,12 @@ ms.assetid: 926f412e-25ba-4f9c-a118-b5a1bc723379
 title: Funzioni ImageHlp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16e921707474f68e288f67e84dda9e361922bca0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f2650d80dfb78f346a5fab22e0adfabdfb11c8e626ad3b5ea39930337feaebe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957110"
 ---
 # <a name="imagehlp-functions"></a>Funzioni ImageHlp
 
@@ -17,7 +17,7 @@ Di seguito sono riportate le funzioni ImageHlp.
 
 ## <a name="image-access"></a>Accesso alle immagini
 
-Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile. Le funzioni forniscono accesso di alto livello alla base di immagini e accesso molto specifico alle parti più comuni dei dati di un'immagine.
+Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile. Le funzioni forniscono un accesso di alto livello alla base delle immagini e un accesso molto specifico alle parti più comuni dei dati di un'immagine.
 
 <dl>
 
@@ -30,9 +30,9 @@ Le funzioni di accesso alle immagini accedono ai dati in un'immagine eseguibile.
 [**UnMapAndLoad**](/windows/desktop/api/Imagehlp/nf-imagehlp-unmapandload)  
 </dl>
 
-## <a name="image-integrity"></a>Integrità immagine
+## <a name="image-integrity"></a>Integrità delle immagini
 
-Le funzioni di integrità dell'immagine gestiscono il set di certificati in un file di immagine.
+Le funzioni di integrità delle immagini gestiscono il set di certificati in un file di immagine.
 
 <dl>
 
@@ -47,11 +47,11 @@ Le funzioni di integrità dell'immagine gestiscono il set di certificati in un f
 
 ## <a name="image-modification"></a>Modifica dell'immagine
 
-Le funzioni di modifica delle immagini consentono di modificare l'immagine eseguibile.
+Le funzioni di modifica dell'immagine consentono di modificare l'immagine eseguibile.
 
 <dl>
 
-[**Azione BindImage sul**](/windows/desktop/api/Imagehlp/nf-imagehlp-bindimage)  
+[**BindImage**](/windows/desktop/api/Imagehlp/nf-imagehlp-bindimage)  
 [**BindImageEx**](/windows/desktop/api/Imagehlp/nf-imagehlp-bindimageex)  
 [**CheckSumMappedFile**](/windows/desktop/api/Imagehlp/nf-imagehlp-checksummappedfile)  
 [**MapFileAndCheckSum**](/windows/desktop/api/Imagehlp/nf-imagehlp-mapfileandchecksuma)  

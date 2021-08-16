@@ -1,6 +1,6 @@
 ---
 title: countbits (funzione)
-description: Conta il numero di bit (per componente) impostati nell'intero di input.
+description: Conta il numero di bit (per componente) impostati nel numero intero di input.
 ms.assetid: c4fafbc8-e21c-48cb-b433-8241a989ec85
 keywords:
 - Funzione countbits HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118793969"
 ---
 # <a name="countbits-function"></a>countbits (funzione)
 
-Conta il numero di bit (per componente) impostati nell'intero di input.
+Conta il numero di bit (per componente) impostati nel numero intero di input.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,13 +64,13 @@ uint4 count_bits(uint4 value);
 
 ### <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli di shader seguenti.
+Questa funzione è supportata nei modelli shader seguenti.
 
 
 
 | Modello di shader                                                                | Supportato |
 |-----------------------------------------------------------------------------|-----------|
-| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli di shader superiori | sì       |
+| [Modello shader 5 e](d3d11-graphics-reference-sm5.md) modelli shader superiori | sì       |
 
 
 

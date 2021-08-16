@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer ItemStore (WdsView.h)
-description: Questa proprietà imposta o restituisce il nome dell'archivio in base al cui filtro vengono filtrati i risultati.
+title: Proprietà ItemStore IResultsViewer (WdsView.h)
+description: Questa proprietà imposta o restituisce il nome dell'archivio in base a cui filtrare i risultati.
 ms.assetid: c2a60485-c8f7-4951-a75e-2e6f6dcc2e4f
 keywords:
 - Proprietà ItemStore Funzionalità dell'Windows legacy
 - Proprietà ItemStore Legacy Windows Environment Features , interfaccia IResultsViewer
-- Interfaccia IResultsViewer Legacy Windows Environment Features , proprietà ItemStore
+- Interfaccia IResultsViewer legacy Windows dell'ambiente, proprietà ItemStore
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118753902"
 > [!NOTE]
 > Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Questa proprietà imposta o restituisce il nome dell'archivio in base al cui filtro vengono filtrati i risultati.
+Questa proprietà imposta o restituisce il nome dell'archivio in base a cui filtrare i risultati.
 
 Si tratta di una proprietà di lettura/scrittura.
 
@@ -60,7 +60,7 @@ Imposta i nomi dell'archivio.
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
 | Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 

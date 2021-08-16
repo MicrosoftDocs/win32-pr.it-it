@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_INDEX_COLUMN Class'
-title: Classe JET_INDEX_COLUMN (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Altre informazioni su: JET_INDEX_COLUMN classe'
+title: JET_INDEX_COLUMN classe (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_COLUMN class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_COLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_column(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d886fdb2243ed67041aecad6c560e6decca9fedc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fead6cff9182475a9eb13e2bef79a16f8fcb0c227b47387995af23f81646809d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104233654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980411"
 ---
-# <a name="jet_index_column-class"></a>Classe JET_INDEX_COLUMN
+# <a name="jet_index_column-class"></a>JET_INDEX_COLUMN classe
 
-Contiene la definizione del filtro per [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md) e [JetSetCursorFilter (JET_SESID, JET_TABLEID, \[ \] , CursorFilterGrbit)](./windows8api.jetsetcursorfilter-method.md).
+Contiene la definizione del filtro [per JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md) e [JetSetCursorFilter(JET_SESID, JET_TABLEID, \[ \] , CursorFilterGrbit)](./windows8api.jetsetcursorfilter-method.md).
 
 ## <a name="inheritance-hierarchy"></a>Gerarchia di ereditarietà
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_COLUMN  
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -64,6 +64,6 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
 
 #### <a name="reference"></a>Riferimento
 
-[Membri JET_INDEX_COLUMN](./jet-index-column-members.md)
+[JET_INDEX_COLUMN membri](./jet-index-column-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

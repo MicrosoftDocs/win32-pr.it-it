@@ -1,17 +1,17 @@
 ---
 description: Identificatore di flusso del sink di flusso associato a questo nodo della topologia.
 ms.assetid: 0b8060ab-1463-45c2-8277-d15122561248
-title: Attributo MF_TOPONODE_STREAMID (Mfidl. h)
+title: MF_TOPONODE_STREAMID attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2377183927cf75c6e0a7436384426dcab94680c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4cf1edc8918af91144de4f408e7913c3f40b1f0246059bc5bf9e4f1193a1cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739890"
 ---
-# <a name="mf_toponode_streamid-attribute"></a>\_Attributo MF TOPONODE \_ STREAMID
+# <a name="mf_toponode_streamid-attribute"></a>Attributo MF \_ TOPONODE \_ STREAMID
 
 Identificatore di flusso del sink di flusso associato a questo nodo della topologia.
 
@@ -21,11 +21,11 @@ Identificatore di flusso del sink di flusso associato a questo nodo della topolo
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo si applica ai nodi di output (**\_ nodo di \_ output \_ della topologia MF**).
+Questo attributo si applica ai nodi di output (**MF \_ TOPOLOGY \_ OUTPUT \_ NODE**).
 
-Quando viene caricata la topologia, la sessione multimediale esegue una query sul sink multimediale per un sink di flusso con l'identificatore specificato. Se l'operazione ha esito negativo, tenta di aggiungere un nuovo sink di flusso al sink multimediale.
+Quando la sessione multimediale carica la topologia, esegue una query sul sink multimediale per ottenere un sink di flusso con l'identificatore specificato. Se l'operazione non riesce, tenta di aggiungere un nuovo sink di flusso al sink multimediale.
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -33,9 +33,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico degli Media Foundation personalizzati](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: seuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

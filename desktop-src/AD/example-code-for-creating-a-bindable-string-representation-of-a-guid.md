@@ -4,7 +4,7 @@ description: L'esempio di codice seguente può essere usato per restituire una r
 ms.assetid: e39a6994-4328-40f2-8cb5-8b1f971e50d8
 ms.tgt_platform: multiple
 keywords:
-- Active Directory esempi di Active Directory, creazione di una rappresentazione di stringa associabile di un GUID
+- Esempi di Active Directory Active Directory, creazione di una rappresentazione di stringa associabile di un GUID
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2baafefa712d8826b5fc9442e1da8aaeac54d58c1e491750b2d39ceb5ee88ae5

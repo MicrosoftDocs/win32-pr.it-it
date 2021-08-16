@@ -1,19 +1,19 @@
 ---
-description: Un modo per ottenere un handle di contesto di dispositivo per una stampante consiste nel visualizzare una finestra di dialogo Stampa e consentire all'utente di scegliere una stampante.
+description: Un modo per ottenere un handle del contesto di dispositivo per una stampante è visualizzare una finestra di dialogo di stampa e consentire all'utente di scegliere una stampante.
 ms.assetid: 73a74186-c916-4ad9-b768-6bc887fd5231
 title: Visualizzazione di una finestra di dialogo Stampa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b0d40365c36e3e554812ff137475ab7c6405e91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 113c9235e70712a4923ebdc3ad239f533160eb2f84f76ae729d7fadf203ca612
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104994277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036829"
 ---
 # <a name="displaying-a-print-dialog-box"></a>Visualizzazione di una finestra di dialogo Stampa
 
-Un modo per ottenere un handle di contesto di dispositivo per una stampante consiste nel visualizzare una finestra di dialogo Stampa e consentire all'utente di scegliere una stampante. La funzione [PrintDlg](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) (che visualizza la finestra di dialogo) ha un parametro che è l'indirizzo di una struttura [PrintDlg](/windows/win32/api/commdlg/ns-commdlg-printdlga?redirectedfrom=MSDN) . La struttura PRINTDLG include diversi membri, ma è possibile lasciare la maggior parte di essi impostati sui valori predefiniti. I due membri che è necessario impostare sono **lStructSize** e **Flags**. Impostare **lStructSize** sulla dimensione di una variabile PrintDlg e impostare i **flag** su PD \_ RETURNDC. L'impostazione dei **flag** su PC \_ RETURNDC specifica che si vuole che la funzione PrintDlg occupi il campo **HDC** con un handle di contesto di dispositivo per la stampante scelta dall'utente.
+Un modo per ottenere un handle del contesto di dispositivo per una stampante è visualizzare una finestra di dialogo di stampa e consentire all'utente di scegliere una stampante. La [funzione PrintDlg](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) (che visualizza la finestra di dialogo) ha un parametro che corrisponde all'indirizzo di una [struttura PRINTDLG.](/windows/win32/api/commdlg/ns-commdlg-printdlga?redirectedfrom=MSDN) La struttura PRINTDLG ha diversi membri, ma è possibile lasciare la maggior parte dei membri impostati sui valori predefiniti. I due membri da impostare sono **lStructSize** e **Flags**. Impostare **lStructSize** sulla dimensione di una variabile PRINTDLG e **flag** su PD \_ RETURNDC. **L'impostazione** di Flag su PC RETURNDC specifica che si vuole che la funzione PrintDlg riempia il campo hDC con un handle di contesto di dispositivo per la stampante scelta \_  dall'utente.
 
 
 ```

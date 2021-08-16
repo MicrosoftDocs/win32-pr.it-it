@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sulle proprietà di EsentDatabasesNotFromSameSnapshotException
+description: 'Altre informazioni su: Proprietà di EsentDatabasesNotFromSameSnapshotException'
 title: Proprietà di EsentDatabasesNotFromSameSnapshotException
 TOCTitle: EsentDatabasesNotFromSameSnapshotException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentDatabasesNotFromSameSnapshotException
@@ -17,7 +17,7 @@ ms.locfileid: "118780207"
 # <a name="esentdatabasesnotfromsamesnapshotexception-properties"></a>Proprietà di EsentDatabasesNotFromSameSnapshotException
 
 Includere membri protetti  
-Includere i membri ereditati  
+Includi membri ereditati  
 
 Il [tipo EsentDatabasesNotFromSameSnapshotException](./esentdatabasesnotfromsamesnapshotexception-class.md) espone i membri seguenti.
 

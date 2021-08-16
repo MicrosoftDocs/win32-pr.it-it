@@ -1,5 +1,5 @@
 ---
-description: Callback per restituire informazioni sul file di origine da un stack.
+description: Callback per restituire informazioni sul file di origine da un oggetto callstack.
 MS-HAID: vspixengine.ISourceFileInfoCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,34 +17,34 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6c627d07bfbf455a9c62a922f62adcab945d5741
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e9e499e9932aa17ecfeac20a01c66e92816b0534fbcd78a13ca22f45554e7b0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103747583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985651"
 ---
 # <a name="span-idvspixengineisourcefileinfocallbackspanisourcefileinfocallback-interface"></a><span id="vspixengine.isourcefileinfocallback"></span>Interfaccia ISourceFileInfoCallback
 
-Callback per restituire informazioni sul file di origine da un stack.
+Callback per restituire informazioni sul file di origine da un oggetto callstack.
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ISourceFileInfoCallback** eredita dall'interfaccia [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ISourceFileInfoCallback** dispone anche di questi tipi di membri:
+**L'interfaccia ISourceFileInfoCallback** eredita dall'interfaccia [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ISourceFileInfoCallback** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Metodi
 
-L'interfaccia **ISourceFileInfoCallback** dispone di questi metodi.
+Questi metodi sono disponibili nell'interfaccia **ISourceFileInfoCallback.**
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host le informazioni sui file di origine associati a stack.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Metodo</th><th style="text-align: left;">Descrizione</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Funzione di callback utilizzata per notificare all'host informazioni sui file di origine associati al callstack.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisiti
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Intestazione</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

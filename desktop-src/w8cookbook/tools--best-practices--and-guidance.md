@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per la compatibilità Windows 8
-description: Strumenti, procedure consigliate e linee guida
+description: Strumenti, procedure consigliate e indicazioni
 ms.assetid: 2C71D81A-570E-431E-9DF6-BD337D859E12
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117852018"
 ---
 # <a name="best-practices-for-windows-8-compatibility"></a>Procedure consigliate per la compatibilità Windows 8
 
-Questa sezione contiene informazioni utili per confermare la compatibilità continua delle app esistenti o per garantire la qualità e la compatibilità ottimali per le nuove app in fase di progettazione. Le descrizioni di questi strumenti, procedure consigliate e linee guida sono incluse in questa sezione:
+Questa sezione contiene informazioni utili per confermare la compatibilità continua delle app esistenti o garantire una qualità e una compatibilità ottimali per le nuove app in fase di progettazione. In questa sezione sono incluse le descrizioni di questi strumenti, procedure consigliate e indicazioni:
 
 -   Windows Assessment Toolkit
 -   Windows Kit di certificazione hardware

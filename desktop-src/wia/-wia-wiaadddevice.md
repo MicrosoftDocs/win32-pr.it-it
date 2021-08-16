@@ -1,7 +1,7 @@
 ---
-description: La funzione WiaAddDevice richiama l'interfaccia utente dell'installazione guidata dello scanner e della fotocamera. Equivale a eseguire &\# 0034; rundll32.exe sti \_ci.dll AddDevice&\# 0034; dal prompt dei comandi.
+description: La funzione WiaAddDevice richiama l'interfaccia utente dell'Installazione guidata scanner e fotocamera. Equivale a eseguire &\# 0034;rundll32.exe stici.dll \_ AddDevice&\# 0034; dal prompt dei comandi.
 ms.assetid: 83a1e22c-d751-4c8e-8f39-ec987042c745
-title: Funzione WiaAddDevice (WIA. h)
+title: Funzione WiaAddDevice (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 694265f0a59096a5a6a58ccbf4e43c92e21fe9b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81dcff3cdca3459126751b12b86f1e11adc2b4fec8926f69211f0508253b64fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103751751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965400"
 ---
-# <a name="wiaadddevice-function"></a>WiaAddDevice (funzione)
+# <a name="wiaadddevice-function"></a>Funzione WiaAddDevice
 
-La funzione **WiaAddDevice** richiama l'interfaccia utente dell'installazione guidata dello scanner e della fotocamera. È equivalente all'esecuzione di "rundll32.exe STI \_ci.dll AddDevice" dal prompt dei comandi.
+La **funzione WiaAddDevice** richiama l'interfaccia utente dell'Installazione guidata scanner e fotocamera. Equivale a eseguire "rundll32.exe sti \_ci.dll AddDevice" dal prompt dei comandi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,7 +44,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa funzione deve essere chiamata con le credenziali di amministratore. Quando si esegue il controllo dell'account utente (LUA), il processo deve essere elevato.
+Questa funzione deve essere chiamata con credenziali di amministratore. Quando viene eseguito in Controllo dell'account utente , il processo deve essere con privilegi elevati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -52,10 +52,10 @@ Questa funzione deve essere chiamata con le credenziali di amministratore. Quand
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                         |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                   |
-| Intestazione<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| Libreria<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                         |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                   |
+| Intestazione<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Libreria<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

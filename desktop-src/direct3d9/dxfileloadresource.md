@@ -1,7 +1,7 @@
 ---
-description: Identifica i dati della risorsa. Deprecato.
+description: Identifica i dati delle risorse. Deprecato.
 ms.assetid: acb379c7-ac80-412f-8891-d5917b3f8da4
-title: Struttura DXFILELOADRESOURCE (DXFile. h)
+title: Struttura DXFILELOADRESOURCE (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - DXFile.h
-ms.openlocfilehash: 233fe6acb13a6ae654a714028a316d7d6f6871ee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54d0072d7c87f6d26483faf8c591ea7651eff29b411643eb9848de11ff50d899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118803038"
 ---
 # <a name="dxfileloadresource-structure"></a>Struttura DXFILELOADRESOURCE
 
-Identifica i dati della risorsa. Deprecato.
+Identifica i dati delle risorse. Deprecato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,14 +41,14 @@ typedef struct DXFILELOADRESOURCE {
 
 <dl> <dt>
 
-**hModule**
+**Hmodule**
 </dt> <dd>
 
-Tipo: **[ **hmodule**](../winprog/windows-data-types.md)**
+Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Handle del modulo che contiene la risorsa da caricare. Se questo membro è **null**, la risorsa deve essere collegata al file eseguibile che lo utilizzerà.
+Handle del modulo contenente la risorsa da caricare. Se questo membro è **NULL,** la risorsa deve essere collegata al file eseguibile che lo userà.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntatore a una stringa che specifica il tipo definito dall'utente che identific
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura identifica una risorsa da caricare quando un'applicazione usa il metodo [**CreateEnumObject**](idirectxfile--createenumobject.md) e specifica DXFILELOAD \_ FROMRESOURCE.
+Questa struttura identifica una risorsa da caricare quando un'applicazione usa il [**metodo CreateEnumObject**](idirectxfile--createenumobject.md) e specifica DXFILELOAD \_ FROMRESOURCE.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -84,7 +84,7 @@ Questa struttura identifica una risorsa da caricare quando un'applicazione usa i
 
 | Requisito | Valore |
 |-------------------|-------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>DXFile. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>DXFile.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Questa struttura identifica una risorsa da caricare quando un'applicazione usa i
 
 <dl> <dt>
 
-[Strutture di file X](dx9-graphics-reference-x-file-structures.md)
+[X Strutture di file](dx9-graphics-reference-x-file-structures.md)
 </dt> <dt>
 
 [**CreateEnumObject**](idirectxfile--createenumobject.md)

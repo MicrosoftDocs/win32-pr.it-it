@@ -1,10 +1,10 @@
 ---
 title: WMDRMNET_POLICY_TYPE enumerazione (Wmdrmsdk.h)
-description: Il tipo di enumerazione WMDRMNET POLICY TYPE elenca i tipi di criteri disponibili per le Windows \_ \_ media DRM per le operazioni dei dispositivi di rete.
+description: Il tipo di enumerazione WMDRMNET POLICY TYPE elenca i tipi di criteri disponibili per le Windows DRM multimediali \_ per le operazioni dei dispositivi di \_ rete.
 ms.assetid: 83e9e247-3bd8-4857-97b6-95b3cd5ad25c
 keywords:
-- WMDRMNET_POLICY_TYPE enumerazione Windows Media Format
-- enumeration windows Media Format
+- WMDRMNET_POLICY_TYPE enumerazione windows Media Format
+- enumerazione windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.locfileid: "118697813"
 ---
 # <a name="wmdrmnet_policy_type-enumeration"></a>Enumerazione WMDRMNET \_ POLICY \_ TYPE
 
-Il **tipo di enumerazione WMDRMNET \_ POLICY \_ TYPE** elenca i tipi di criteri disponibili per le Windows DRM multimediale per le operazioni dei dispositivi di rete.
+Il **tipo di enumerazione WMDRMNET POLICY \_ \_ TYPE** elenca i tipi di criteri disponibili per le Windows DRM per dispositivi di rete.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,7 +52,7 @@ I tipi di criteri non definiti non sono supportati.
 <span id="WMDRMNET_POLICY_TYPE_TRANSCRYPTPLAY"></span><span id="wmdrmnet_policy_type_transcryptplay"></span>**TIPO DI CRITERI WMDRMNET \_ \_ \_ TRANSCRYPTPLAY**
 </dt> <dd>
 
-I criteri regolano la possibilità di convertire il contenuto protetto da Windows Media DRM in dati Windows Media DRM per dispositivi di rete e riprodurli in un dispositivo di rete.
+I criteri regolano la possibilità di convertire il contenuto protetto da Windows Media DRM in dati protetti Windows Media DRM per dispositivi di rete e riprodurlo in un dispositivo in rete.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Nessuno.
 [**Tipi di enumerazione**](drm-enumeration-types.md)
 </dt> <dt>
 
-[**CRITERI \_ WMDRMNET**](wmdrmnet-policy.md)
+[**CRITERI WMDRMNET \_**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Riorganizzazione
-description: L'organizzazione di vendita si è trasferita in una nuova organizzazione \ 8212; \ 0034; Vendite e supporto. \ 0034; Julia Bankert è stato promosso vicepresidenti e sarà alla guida della nuova organizzazione.
+description: L'organizzazione di vendita è passata a una nuova organizzazione \ 8212; \ 0034; Vendite e supporto. \ 0034; Julie Bankert è stata promossa a vicepresidenza e sarà alla guida della nuova organizzazione.
 ms.assetid: 38b05d0b-2739-43c2-aac7-7555a5bfbc91
 ms.tgt_platform: multiple
 keywords:
@@ -16,7 +16,7 @@ ms.locfileid: "118690758"
 ---
 # <a name="reorganization"></a>Riorganizzazione
 
-L'organizzazione di vendita si è trasferita in una nuova organizzazione, ovvero "Vendite e supporto". Julia Bankert è stato promosso vicepresidenti e sarà alla guida della nuova organizzazione. Joe Worden, l'amministratore dell'organizzazione, deve spostare l'unità organizzativa Sales in una nuova unità organizzativa, Sales and Support.
+L'organizzazione di vendita è passata a una nuova organizzazione, ovvero "Vendite e supporto". Julie Bankert è stata promossa a vicepresidenza e sarà alla guida della nuova organizzazione. Joe Worden, amministratore dell'organizzazione, deve spostare l'unità organizzativa Sales in una nuova unità organizzativa, Sales and Support.
 
 
 ```VB
@@ -29,7 +29,7 @@ Set sales = salesSupport.MoveHere("LDAP://OU=Sales,DC=Fabrikam,DC=COM", vbNullSt
 
 Con questo esempio di codice, tutti gli oggetti nell'unità organizzativa sales, incluse le unità organizzative secondarie, vengono spostati nella nuova unità organizzativa.
 
-A questo punto, Joe può spostare Julia nell'unità organizzativa Sales and Support.
+A questo punto, Joe può spostare Julie nell'unità organizzativa Vendite e supporto.
 
 
 ```VB
@@ -40,18 +40,18 @@ usr.SetInfo
 
 
 
-Tenere presente che il collegamento di report diretto del manager tra Bankert e Chris Gray viene aggiornato automaticamente da Active Directory.
+Tenere presente che il collegamento diretto al report tra Julie Bankert e Chris Gray viene aggiornato automaticamente da Active Directory.
 
 **Per creare un report di Active Directory**
 
-1.  Aprire Visual Basic versione 6.0 e, quando richiesto per il tipo di progetto, selezionare **Data Project**.
-2.  In **Data Project** fare doppio clic su Data **Environment1.**
-3.  Nella finestra **Ambiente dati fare** clic con il pulsante destro del mouse sull'oggetto connessione **(Connection1)** e **scegliere Proprietà.**
-4.  Selezionare **OLE DB provider per Microsoft Directory Services** e fare clic su **Avanti.**
+1.  Aprire Visual Basic versione 6.0 e, quando viene richiesto il tipo di **progetto,** selezionare Data Project .
+2.  In **Data Project** fare doppio clic su Data **Environment1**.
+3.  Nella finestra **Ambiente dati fare** clic con il pulsante destro del mouse sull'oggetto connessione **(Connection1)** e scegliere **Proprietà**.
+4.  Selezionare **OLE DB provider di servizi directory Microsoft** e fare clic su **Avanti.**
 5.  Selezionare **Usa Windows NT sicurezza integrata** e fare clic su **OK.** Verrà creato un oggetto connessione.
-6.  Fare di nuovo clic con il **pulsante destro del mouse** sulla finestra Ambiente dati per selezionare Aggiungi **comando**. Fare clic con il pulsante destro **del mouse sull'oggetto Command1** e **scegliere Proprietà.** Verrà visualizzata la finestra di dialogo Proprietà **Command1** seguente.
+6.  Fare di nuovo clic con il **pulsante destro del mouse** sulla finestra Data Environment per selezionare Aggiungi **comando**. Fare clic con il pulsante destro **del mouse sull'oggetto Command1** e **scegliere Proprietà**. Verrà visualizzata la finestra di dialogo Proprietà **command1** seguente.
 
-    ![Proprietà di command1 - finestra di dialogo](images/adadsi3.png)
+    ![Finestra di dialogo delle proprietà command1](images/adadsi3.png)
 
 7.  Fare clic **SQL pulsante di opzione** Istruzione di configurazione e digitare quanto segue:
 
@@ -59,11 +59,11 @@ Tenere presente che il collegamento di report diretto del manager tra Bankert e 
 
     Viene **creato** l'oggetto Command. Aggiungere **l'oggetto** Command al report.
 
-8.  Fare doppio clic **su Data Report1** nella **Project** dati.
-9.  Trascinare **l'oggetto** **Command1 dalla finestra DataEnvironment1** alla **sezione Dettagli** della finestra Report **di** dati.
+8.  Fare doppio clic **su Data Report1** **nella finestra Project** dati.
+9.  Trascinare **l'oggetto Command1** **dalla finestra DataEnvironment1** alla sezione **Dettagli** della finestra **Report di** dati.
 10. In **Proprietà DataReport1** per **DataSource** selezionare **DataEnvironment1** dal menu a discesa e selezionare **Command1** nel **campo DataMember.**
-11. Nella finestra del progetto fare clic con il pulsante destro **del mouse su Project** dati e scegliere Dati Proprietà **progetto.**
-12. Nella finestra **di dialogo DataProject - Project** Proprietà , in **Oggetto** di avvio selezionare **DataReport1** dal menu a discesa. Fare clic su **OK** per salvare.
+11. Nella finestra del progetto fare clic con il pulsante destro **del mouse** su Project dati e scegliere **Proprietà dataprogetto**.
+12. Nella finestra **di dialogo DataProject - Project proprietà** , in Oggetto **di** avvio selezionare **DataReport1** dal menu a discesa. Fare clic su **OK** per salvare.
 13. Compilazione. Verrà visualizzata **la finestra di dialogo DataReport1** seguente.
 
     ![Finestra di dialogo datareport1](images/adadsi4.png)

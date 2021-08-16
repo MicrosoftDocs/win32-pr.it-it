@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentNoAttachmentsFailedIncrementalReseedException
+description: 'Altre informazioni su: Costruttore EsentNoAttachmentsFailedIncrementalReseedException'
 title: Costruttore EsentNoAttachmentsFailedIncrementalReseedException
 TOCTitle: 'EsentNoAttachmentsFailedIncrementalReseedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNoAttachmentsFailedIncrementalReseedException.#ctor

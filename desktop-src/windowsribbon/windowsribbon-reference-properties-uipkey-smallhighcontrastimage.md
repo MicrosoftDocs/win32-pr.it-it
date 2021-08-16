@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_SmallHighContrastImage
-description: Identifica la proprietà \_ \_ SmallHighContrastImage PKEY dell'interfaccia utente.
+description: Identifica la proprietà \_ PKEY \_ SmallHighContrastImage dell'interfaccia utente.
 ms.assetid: e0dd23b9-62dd-4626-816b-aac4fb48bbbe
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117850062"
 ---
 # <a name="ui_pkey_smallhighcontrastimage"></a>UI \_ PKEY \_ SmallHighContrastImage
 
-Identifica la proprietà \_ \_ SmallHighContrastImage PKEY dell'interfaccia utente.
+Identifica la proprietà \_ PKEY \_ SmallHighContrastImage dell'interfaccia utente.
 
 ```
 propertyDescription
@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-\_L'interfaccia utente PKEY SmallHighContrastImage viene usata da un'applicazione per eseguire una query sulla piccola \_ immagine a contrasto elevato associata a un controllo della barra multifunzione.
+\_L'interfaccia utente PKEY SmallHighContrastImage viene usata da un'applicazione per eseguire query sull'immagine \_ piccola a contrasto elevato associata a un controllo barra multifunzione.
 
 Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
@@ -35,7 +35,7 @@ Il valore della proprietà è un [**oggetto IUIImage.**](/windows/desktop/api/ui
 
 <dl> <dt>
 
-[Proprietà delle risorse](windowsribbon-reference-properties-resource.md)
+[Proprietà risorsa](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
 [Specifica delle risorse immagine della barra multifunzione](windowsribbon-imageformats.md)

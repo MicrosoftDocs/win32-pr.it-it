@@ -1,7 +1,7 @@
-- name: Servizi Web Windows
+- name: Windows Servizi Web
   href: portal.md
   items:
-    - name: Informazioni sui servizi Web Windows
+    - name: Informazioni Windows Web
       href: about-windows-web-services.md
       items:
         - name: Panoramica del livello del modello di servizio
@@ -16,20 +16,20 @@
                   href: user-host-state.md
                 - name: Metadati del servizio
                   href: service-metadata.md
-                - name: Annullamento della chiamata
+                - name: Annullamento delle chiamate
                   href: call-cancellation.md
                 - name: Annullamento
                   href: cancellation.md
-            - name: Proxy servizio
+            - name: Proxy del servizio
               href: service-proxy.md
               items:
-                - name: Proxy e sessioni del servizio
+                - name: Proxy del servizio e sessioni
                   href: service-proxy-and-sessions.md
-            - name: Context
+            - name: Contesto
               href: context.md
             - name: Contratto
               href: contract.md
-        - name: Panoramica sul livello del canale
+        - name: Panoramica del livello canale
           href: channel-layer-overview.md
           items:
             - name: Message
@@ -50,7 +50,7 @@
               items:
                 - name: Descrizione della sicurezza
                   href: security-description.md
-                - name: Impostazioni del canale di sicurezza
+                - name: Canale di sicurezza Impostazioni
                   href: security-channel-settings.md
                 - name: Associazioni di sicurezza
                   href: security-bindings.md
@@ -73,14 +73,14 @@
               items:
                 - name: Mapping dei metadati
                   href: metadata-mapping.md
-        - name: Panoramica sul livello XML
+        - name: Panoramica del livello XML
           href: xml-layer-overview.md
           items:
-            - name: Writer XML
+            - name: XML Writer
               href: xml-writer.md
             - name: Lettore XML
               href: xml-reader.md
-            - name: Buffer XML
+            - name: XML Buffer
               href: xml-buffer.md
             - name: Nodo XML
               href: xml-node.md
@@ -94,19 +94,19 @@
               href: xml-canonicalization.md
             - name: Supporto del linguaggio XML
               href: xml-language-support.md
-        - name: Strumento compilatore WsUtil
+        - name: Strumento del compilatore WsUtil
           href: wsutil-compiler-tool.md
           items:
-            - name: Strumento compilatore servizio Web
+            - name: Strumento del compilatore del servizio Web
               href: web-service-compiler-tool.md
-            - name: File estensione servizio Web
+            - name: File dell'estensione del servizio Web
               href: web-service-extension-file.md
             - name: Supporto WSDL
               href: wsdl-support.md
             - name: Operazione del servizio
               href: service-operation.md
               items:
-                - name: Operazioni del servizio sul lato server
+                - name: Operazioni del servizio lato server
                   href: server-side-service-operations.md
                 - name: Operazioni del servizio lato client
                   href: client-side-service-operations.md
@@ -135,7 +135,7 @@
           href: heap.md
         - name: Utilità
           href: utilities.md
-    - name: Utilizzo dei servizi Web Windows
+    - name: Uso dei Windows Web
       href: using-windows-web-services.md
       items:
         - name: Creazione di un client
@@ -144,7 +144,7 @@
           href: manually-creating-a-service-proxy-for-a-wcf-service.md
         - name: Creazione di un servizio
           href: creating-a-service.md
-        - name: Esempi di servizi Web Windows
+        - name: Windows Esempi di servizi Web
           href: windows-web-services-examples.md
           items:
             - name: Esempi di modelli di servizio
@@ -226,13 +226,13 @@
                   href: blockingserviceexample.md
                 - name: CallAbandonExample
                   href: callabandonexample.md
-                - name: AsmxTerraServiceSampleWithCustomProxy
+                - name: AsmxCustomServiceSampleWithCustomProxy
                   href: asmxterraservicesamplewithcustomproxy.md
                 - name: PolicyTemplateExample
                   href: policytemplateexample.md
                 - name: WcfPublicServiceSample
                   href: wcfpublicservicesample.md
-            - name: Esempi di livello del canale TCP
+            - name: Esempi di livello canale TCP
               href: tcp-channel-layer-examples.md
               items:
                 - name: AsyncStreamingTcpClientExample
@@ -249,13 +249,13 @@
                   href: requestreplytcpclientexample.md
                 - name: RequestReplyTcpServerExample
                   href: requestreplytcpserverexample.md
-                - name: ServiceMonikerSample
+                - name: Esempio di ServiceMoniker
                   href: servicemonikersample.md
                 - name: StreamingTcpClientExample
                   href: streamingtcpclientexample.md
                 - name: StreamingTcpServerExample
                   href: streamingtcpserverexample.md
-            - name: Esempi di livello del canale HTTP
+            - name: Esempi di livello canale HTTP
               href: http-channel-layer-examples.md
               items:
                 - name: HttpClientExample
@@ -266,7 +266,7 @@
                   href: streaminghttpclientexample.md
                 - name: StreamingHttpServerExample
                   href: streaminghttpserverexample.md
-            - name: Esempi di livelli di canale UDP
+            - name: Esempi di livello canale UDP
               href: udp-channel-layer-examples.md
               items:
                 - name: MulticastUdpClientExample
@@ -281,7 +281,7 @@
                   href: onewayudpclientexample.md
                 - name: OneWayUdpServerExample
                   href: onewayudpserverexample.md
-            - name: Esempi di livelli di canale named pipe
+            - name: Esempi di livello canale named pipe
               href: named-pipes-channel-layer-examples.md
               items:
                 - name: RequestReplyNamedPipesClientExample
@@ -301,7 +301,7 @@
                   href: forwardmessageexample.md
                 - name: MessageEncodingExample
                   href: messageencodingexample.md
-            - name: Esempi di XML
+            - name: Esempi XML
               href: xml-examples.md
               items:
                 - name: DerivedTypeExample
@@ -339,7 +339,7 @@
                   href: asyncadd3explicitexample.md
                 - name: AsyncAdd3ImplicitExample
                   href: asyncadd3implicitexample.md
-            - name: Esempi di livelli di canale di sicurezza
+            - name: Esempi di livello del canale di sicurezza
               href: security-channel-layer-examples.md
               items:
                 - name: HttpClientWithKerberosOverSslExample
@@ -368,17 +368,17 @@
                   href: requestreplytcpclientwithwindowstransportsecurityexample.md
                 - name: Esempio di RequestReplyTcpServerWithWindowsTransportSecurity
                   href: requestreplytcpserverwithwindowstransportsecurityexample.md
-            - name: Esempi di replica di file
+            - name: Esempi di replica file
               href: file-replication-examples.md
               items:
                 - name: FileRepToolExample
                   href: filereptoolexample.md
                 - name: FileRepServiceExample
                   href: filerepserviceexample.md
-    - name: Riferimenti per servizi Web Windows
+    - name: Windows Informazioni di riferimento per i servizi Web
       href: windows-web-services-reference.md
       items:
-        - name: Funzioni di callback dei servizi Web Windows
+        - name: Windows Funzioni di callback dei servizi Web
           href: web-services-for-windows-callback-functions.md
           items:
             - name: WS_ABANDON_MESSAGE_CALLBACK
@@ -724,7 +724,7 @@
               href: /windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_output_type
             - name: WS_XML_WRITER_PROPERTY_ID
               href: /windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id
-        - name: Funzioni dei servizi Web Windows
+        - name: Windows Funzioni dei servizi Web
           href: web-services-for-windows-functions.md
           items:
             - name: WsAbandonCall
@@ -1119,7 +1119,7 @@
               href: /windows/desktop/api/WebServices/nf-webservices-wswritexmlnsattribute
             - name: WsXmlStringEquals
               href: /windows/desktop/api/WebServices/nf-webservices-wsxmlstringequals
-        - name: Handle di servizi Web Windows
+        - name: Windows Handle dei servizi Web
           href: web-services-for-windows-handles.md
           items:
             - name: WS_CHANNEL
@@ -1152,7 +1152,7 @@
               href: ws-xml-reader.md
             - name: WS_XML_WRITER
               href: ws-xml-writer.md
-        - name: Macro di servizi Web Windows
+        - name: Windows Macro di servizi Web
           href: web-services-for-windows-macros.md
           items:
             - name: WS_STRING_EMPTY
@@ -1167,9 +1167,9 @@
               href: /windows/desktop/api/WebServices/nf-webservices-ws_xml_string_value
             - name: WsCountOf
               href: /windows/desktop/api/WebServices/nf-webservices-wscountof
-        - name: Valori restituiti di servizi Web Windows
+        - name: Windows Valori restituiti dei servizi Web
           href: windows-web-services-return-values.md
-        - name: Strutture di servizi Web Windows
+        - name: Windows Strutture dei servizi Web
           href: web-services-for-windows-structures.md
           items:
             - name: WS_ANY_ATTRIBUTE
@@ -1682,7 +1682,7 @@
               href: /windows/win32/api/WebServices/ns-webservices-ws_xml_writer_stream_output
             - name: WS_XML_WRITER_TEXT_ENCODING
               href: /windows/win32/api/WebServices/ns-webservices-ws_xml_writer_text_encoding
-- name: Prelettura delle API di debug per le app di Windows Store
+- name: API di debug di prelettura per Windows Store
   href: windows-runtime-prefetch-debug-apis.md
   items:
     - name: IContentPrefetcherTaskTrigger

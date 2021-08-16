@@ -1,6 +1,6 @@
 ---
 title: Attributo MS-SQL-Applications
-description: Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5.
+description: Non usato. Il valore predefinito è impostato su Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5.
 ms.assetid: 4907439e-8b1d-4e9e-8fce-6f4845f29c90
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118686741"
 ---
 # <a name="ms-sql-applications-attribute"></a>Attributo MS-SQL-Applications
 
-Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5.
+Non usato. Il valore predefinito è impostato su Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5.
 
 
 
@@ -32,7 +32,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | CN                | Ms-SQL-Applications                         |
 | Ldap-Display-Name | mS-SQL-Applications                         |
 | Dimensione              | \-                                          |
-| Aggiorna privilegio  | \-                                          |
+| Privilegio di aggiornamento  | \-                                          |
 | Frequenza di aggiornamento  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1400                     |
 | System-Id-Guid    | fbcda2ea-ccee-11d2-9993-0000f87a57d4        |
@@ -58,7 +58,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
@@ -79,7 +79,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
@@ -100,7 +100,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
@@ -121,7 +121,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
@@ -142,7 +142,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
@@ -163,7 +163,7 @@ Non usato. L'impostazione predefinita è Appl 1, Appl 2, Appl 3, Appl 4 e Appl 5
 | ID collegamento                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| A valore singolo       | Falso                                                                                                                         |
+| Is-Single-Valued       | Falso                                                                                                                         |
 | Indicizzato             | Falso                                                                                                                         |
 | Nel catalogo globale      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |

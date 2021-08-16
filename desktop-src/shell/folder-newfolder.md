@@ -1,7 +1,7 @@
 ---
 description: Crea una nuova cartella.
 ms.assetid: 7a552e5a-e9a3-4fcf-bc6b-17e8bc39af87
-title: Metodo Folder. NewFolder (shldisp. h)
+title: Metodo Folder.NewFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 86784aa071be22cd16a06d9d4516970d2924079a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2570336fa8052be29863a4b4c221057994828423041bacd4280edd729792dafd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032629"
 ---
-# <a name="foldernewfolder-method"></a>Folder. NewFolder, metodo
+# <a name="foldernewfolder-method"></a>Metodo Folder.NewFolder
 
 Crea una nuova cartella.
 
@@ -40,7 +40,7 @@ Folder.NewFolder(
 
 <dl> <dt>
 
-*bnome* 
+*bNome* 
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -49,10 +49,10 @@ Stringa che specifica il nome della nuova cartella.
 
 </dd> <dt>
 
-*vOptions* \[ opzionale\]
+*vOptions* \[ Opzionale\]
 </dt> <dd>
 
-Tipo: **Variant**
+Tipo: **Variante**
 
 Questo valore non è attualmente usato.
 
@@ -65,15 +65,15 @@ Questo metodo non restituisce valori.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi sono implementati per tutte le cartelle. Il metodo [**ParseName**](folder-parsename.md) , ad esempio, non è implementato per la cartella del pannello di controllo ( \_ controlli CSIDL). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non viene implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
 
  
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato **NewFolder** per creare la nuova cartella C: \\ TestFolder. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+L'esempio seguente **usa NewFolder** per creare la nuova cartella C: \\ TestFolder. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -94,7 +94,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,11 +146,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

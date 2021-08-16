@@ -1,21 +1,21 @@
 ---
-description: Impostando la proprietà del controllo del controllo su None, il riconoscimento di caratteri riconosce la grafia in base a caratteri.
+description: Impostando la proprietà Factoid su Nessuno, il riconoscimento dei caratteri riconosce la grafia per carattere.
 ms.assetid: 4dacceab-032e-4b9b-858f-67961fd587b5
-title: Riconoscimento di parole e caratteri
+title: Confronto tra riconoscimento di parole e caratteri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f521b8abf1064ef87c5c79c3293e725c44190ce3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e704943afb2b411441752056aace0889e87483fc4992d59c39ea6a135ef76b73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104128990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966600"
 ---
-# <a name="word-vs-character-recognition"></a>Riconoscimento di parole e caratteri
+# <a name="word-vs-character-recognition"></a>Confronto tra riconoscimento di parole e caratteri
 
-Impostando la [proprietà del controllo del controllo](/previous-versions/ms835848(v=msdn.10)) su **None**, il riconoscimento di caratteri riconosce la grafia in base a caratteri.
+Impostando la [proprietà Factoid](/previous-versions/ms835848(v=msdn.10)) su **Nessuno,** il riconoscimento dei caratteri riconosce la grafia per carattere.
 
-La proprietà [RecoTimeout](/previous-versions/ms835852(v=msdn.10)) ([**RecoTimeout**](/windows/desktop/api/inked/nf-inked-iinkedit-get_recognitiontimeout) in Automation) specifica il numero di millisecondi di ritardo tra l'ultimo [tratto](/previous-versions/ms552692(v=vs.100)) e la fine dell'input della grafia. È possibile aumentare questo valore per riconoscere il testo prima che vengano scritte intere parole o frasi. È anche possibile forzare il riconoscimento immediato dell'input penna usando il metodo [Recognize](/previous-versions/ms836275(v=msdn.10)) .
+La [proprietà RecoTimeout](/previous-versions/ms835852(v=msdn.10)) ([**RecoTimeout**](/windows/desktop/api/inked/nf-inked-iinkedit-get_recognitiontimeout) in Automazione) specifica il numero di millisecondi di ritardo tra l'ultimo [tratto](/previous-versions/ms552692(v=vs.100)) e la fine dell'input per la grafia. È possibile aumentare questo valore per riconoscere il testo prima che intere parole o frasi siano scritte. È anche possibile forzare immediatamente il riconoscimento dell'input penna usando il [metodo Recognize.](/previous-versions/ms836275(v=msdn.10))
 
  
 

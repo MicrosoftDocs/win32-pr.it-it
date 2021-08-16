@@ -1,7 +1,7 @@
 ---
-description: Archivia le informazioni sulle sezioni della memoria condivisa.
+description: Archivia informazioni sulle sezioni di memoria condivisa.
 ms.assetid: 73a650ee-110c-43f2-a5e2-783d52fd29ee
-title: Struttura SHAREDMEMORY_HEADER
+title: SHAREDMEMORY_HEADER struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 695f3ef09cb5e7e67de757ee3926df6fde7ddff5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ae596819feb4bd70aa47e7881521e5a69e5bd0a509b974e591d08907efda51c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966800"
 ---
-# <a name="sharedmemory_header-structure"></a>\_Struttura dell'intestazione SHAREDMEMORY
+# <a name="sharedmemory_header-structure"></a>Struttura SHAREDMEMORY \_ HEADER
 
-Archivia le informazioni sulle sezioni della memoria condivisa.
+Archivia informazioni sulle sezioni di memoria condivisa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -58,14 +58,14 @@ Dimensione, in byte, dei dati a cui fa riferimento questa struttura di intestazi
 **cbOffsetSns**
 </dt> <dd>
 
-Dimensioni, in byte, di offset dei numeri di serie rispetto alla struttura dell'intestazione.
+Dimensione, in byte, dell'offset dei numeri di serie rispetto alla struttura dell'intestazione.
 
 </dd> <dt>
 
 **idxEvent**
 </dt> <dd>
 
-Indice dell'evento. Questo valore viene incrementato con gli eventi successivi.
+Indice dell'evento. Questo valore viene incrementato con eventi successivi.
 
 </dd> <dt>
 
@@ -76,58 +76,58 @@ Evento associato a questa intestazione.
 
 </dd> <dt>
 
-**CID**
+**Cid**
 </dt> <dd>
 
-Identificatore di cursore a cui fa riferimento l'intestazione Shared Memory.
+Identificatore di cursore a cui fa riferimento l'intestazione di memoria condivisa.
 
 </dd> <dt>
 
 **sn**
 </dt> <dd>
 
-Numero di serie per l'intestazione Shared Memory.
+Numero di serie per l'intestazione di memoria condivisa.
 
 </dd> <dt>
 
 **sysEvt**
 </dt> <dd>
 
-Evento di sistema, con prefisso SE \_ \* , associato a questa intestazione. Per ulteriori informazioni, vedere la sezione Osservazioni.
+Evento di sistema, con edizione Standard \_ \* , associato a questa intestazione. Per altre informazioni, vedere la sezione osservazioni.
 
 </dd> <dt>
 
 **sysEvtData**
 </dt> <dd>
 
-Struttura [**\_ \_ dei dati dell'evento di sistema**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associata all'evento di sistema.
+Struttura [**SYSTEM \_ EVENT \_ DATA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associata all'evento di sistema.
 
 </dd> <dt>
 
 **cPackets**
 </dt> <dd>
 
-Conteggio dei pacchetti associati alla sezione della memoria condivisa corrente.
+Conteggio dei pacchetti associati alla sezione di memoria condivisa corrente.
 
 </dd> <dt>
 
 **cbPackets**
 </dt> <dd>
 
-Dimensione, in byte, dei pacchetti associati alla sezione della memoria condivisa corrente.
+Dimensione, in byte, dei pacchetti associati alla sezione di memoria condivisa corrente.
 
 </dd> <dt>
 
 **fSnsPresent**
 </dt> <dd>
 
-Flag che indica se i numeri di serie sono presenti nella sezione della memoria condivisa corrente.
+Flag che indica se i numeri di serie sono presenti nella sezione corrente della memoria condivisa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I valori seguenti sono definiti per il membro **sysEvt** .
+I valori seguenti sono definiti per il **membro sysEvt.**
 
 
 ```C++
@@ -150,7 +150,7 @@ I valori seguenti sono definiti per il membro **sysEvt** .
 
 <dl> <dt>
 
-[**\_dati degli eventi di sistema \_**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
+[**DATI \_ DEGLI EVENTI DI \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
 </dt> </dl>
 
  

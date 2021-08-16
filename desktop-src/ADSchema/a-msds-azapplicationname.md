@@ -4,7 +4,7 @@ description: Stringa che identifica in modo univoco un oggetto applicazione.
 ms.assetid: 693a47f4-d3ae-4fae-8e5e-cbce41d00d45
 ms.tgt_platform: multiple
 keywords:
-- Attributo MS-DS-Az-Application-Name Schema DI AD
+- Attributo ms-DS-Az-Application-Name schema AD
 - Schema AD dell'attributo msDS-AzApplicationName
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | CN                | ms-DS-Az-Application-Name                   |
 | Ldap-Display-Name | msDS-AzApplicationName                      |
 | Dimensione              | 128 caratteri                              |
-| Aggiorna privilegio  | AzRoles admin                               |
+| Privilegio di aggiornamento  | Amministratore di AzRoles                               |
 | Frequenza di aggiornamento  | Durante l'inizializzazione o la modifica dei criteri.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1798                     |
 | System-Id-Guid    | db5b0728-6208-4876-83b7-95d3e5695275        |
@@ -57,7 +57,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -78,7 +78,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -99,7 +99,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| A valore singolo       | Vero                                                            |
+| Is-Single-Valued       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -120,7 +120,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Is-Single-Valued       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
@@ -141,7 +141,7 @@ Stringa che identifica in modo univoco un oggetto applicazione.
 | ID collegamento                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| Is-Single-Valued       | Vero                                                            |
+| A valore singolo       | Vero                                                            |
 | Indicizzato             | Falso                                                           |
 | Nel catalogo globale      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
