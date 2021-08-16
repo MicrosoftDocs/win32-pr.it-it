@@ -1,11 +1,11 @@
 ---
-title: IConfigAsfWriter2 (metodo separat)
-description: Il metodo separat imposta il valore del parametro di configurazione del filtro specificato.
+title: Metodo SetParam IConfigAsfWriter2
+description: Il metodo SetParam imposta il valore del parametro di configurazione del filtro specificato.
 ms.assetid: b8067fb2-c379-4b26-b4f7-c790604e3edc
 keywords:
-- Metodo separat Windows Media Format
-- Metodo Separator formato Windows Media, interfaccia IConfigAsfWriter2
-- Interfaccia IConfigAsfWriter2-formato Windows Media, metodo separat
+- Metodo SetParam windows Media Format
+- Metodo SetParam windows Media Format , interfaccia IConfigAsfWriter2
+- Interfaccia IConfigAsfWriter2 windows Media Format , metodo SetParam
 topic_type:
 - apiref
 api_name:
@@ -15,25 +15,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8f123bf11c8297f3a7ce0d4b0047874d8d7b31b1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5e7c73831ec45e6e0b65444e93e976fe349a2d4576d578f3399c60c399628cbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "106300112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847499"
 ---
-# <a name="iconfigasfwriter2setparam-method"></a>Metodo IConfigAsfWriter2:: separat
+# <a name="iconfigasfwriter2setparam-method"></a>Metodo IConfigAsfWriter2::SetParam
 
-Il metodo **separat** imposta il valore del parametro di configurazione del filtro specificato.
+Il **metodo SetParam** imposta il valore del parametro di configurazione del filtro specificato.
 
 ## <a name="syntax"></a>Sintassi
 
 
 ```C++
 HRESULT SetParam(
-  [in] DWORD dwParam,
-  [in] DWORD dwParam1,
-  [in] DWORD dwParam2
+  [in] DWORD dwParam,
+  [in] DWORD dwParam1,
+  [in] DWORD dwParam2
 );
 ```
 
@@ -43,30 +43,30 @@ HRESULT SetParam(
 
 <dl> <dt>
 
-*dwParam* \[ in\]
+*dwParam* \[ Pollici\]
 </dt> <dd>
 
-Specifica il parametro da impostare. Deve essere un valore definito nell'enumerazione [ \_ \_ \_ param ASFWRITERCONFIG](/previous-versions/windows/desktop/legacy/dd758054(v=vs.85)) .
+Specifica il parametro da impostare. Deve essere un valore definito [ \_ nell'enumerazione AM \_ ASFWRITERCONFIG \_ PARAM.](/previous-versions/windows/desktop/legacy/dd758054(v=vs.85))
 
 </dd> <dt>
 
-*dwParam1* \[ in\]
+*dwParam1* \[ Pollici\]
 </dt> <dd>
 
-Specifica il valore da assegnare al parametro *dwParam* .
+Specifica il valore da assegnare al *parametro dwParam.*
 
 </dd> <dt>
 
-*dwParam2* \[ in\]
+*dwParam2* \[ Pollici\]
 </dt> <dd>
 
-Non utilizzato; deve essere 0.
+Non usato; deve essere 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, restituisce un codice di errore **HRESULT** .
+Se il metodo ha esito positivo, restituisce S \_ OK. Se non riesce, restituisce un **codice di errore HRESULT.**
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -75,9 +75,9 @@ Se il metodo ha esito positivo, restituisce S \_ OK. Se ha esito negativo, resti
 [**Interfaccia IConfigAsfWriter2**](/previous-versions/windows/desktop/legacy/dd743206(v=vs.85))
 </dt> <dt>
 
-[**IConfigAsfWriter2:: GetParam**](iconfigasfwriter2-getparam.md)
+[**IConfigAsfWriter2::GetParam**](iconfigasfwriter2-getparam.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

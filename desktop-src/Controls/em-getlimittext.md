@@ -1,9 +1,9 @@
 ---
-title: Messaggio EM_GETLIMITTEXT (winuser. h)
-description: Ottiene il limite di testo corrente per un controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+title: EM_GETLIMITTEXT messaggio (Winuser.h)
+description: Ottiene il limite di testo corrente per un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 ms.assetid: 778967f0-c090-46a2-9f27-194b17bbb1be
 keywords:
-- Controlli di Windows Message EM_GETLIMITTEXT
+- EM_GETLIMITTEXT controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53da76f43716fd7934011a96d449ffa37c254cfa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de2066bf03fd8ea05851a9cef58f4e308db49f82bdee94c2d503cadf1c20a2c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831682"
 ---
-# <a name="em_getlimittext-message"></a>\_Messaggio GETLIMITTEXT em
+# <a name="em_getlimittext-message"></a>Messaggio \_ EM GETLIMITTEXT
 
-Ottiene il limite di testo corrente per un controllo di modifica. Questo messaggio può essere inviato a un controllo di modifica o a un controllo Rich Edit.
+Ottiene il limite di testo corrente per un controllo di modifica. È possibile inviare questo messaggio a un controllo di modifica o a un controllo Rich Edit.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,14 +32,14 @@ Ottiene il limite di testo corrente per un controllo di modifica. Questo messagg
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ Il valore restituito è il limite di testo.
 
 ## <a name="remarks"></a>Commenti
 
-**Modificare i controlli, rich edit 2,0 e versioni successive:** Il limite di testo è la quantità massima di testo, in **TCHAR** s, che il controllo può contenere. Per testo ANSI, indica il numero di byte; per il testo Unicode, indica il numero di caratteri. Due documenti con lo stesso limite di caratteri produrranno lo stesso limite di testo, anche se uno è ANSI e l'altro è Unicode.
+**Controlli di modifica, Rich Edit 2.0 e versioni successive:** Il limite di testo è la quantità massima di testo, in **TCHAR** s, che il controllo può contenere. Per il testo ANSI, questo è il numero di byte. per il testo Unicode, questo è il numero di caratteri. Due documenti con lo stesso limite di caratteri producono lo stesso limite di testo, anche se uno è ANSI e l'altro è Unicode.
 
-**Modifica dettagliata 1,0:** Il limite di testo è la quantità massima di testo, in byte, che il controllo Rich Edit può contenere.
+**Rich Edit 1.0:** Il limite di testo è la quantità massima di testo, in byte, che il controllo Rich Edit può contenere.
 
-**Modifica avanzata:** Supportato in Microsoft Rich Edit 1,0 e versioni successive. Per informazioni sulla compatibilità delle versioni Rich Edit con le varie versioni di sistema, vedere [informazioni sui controlli Rich Edit](about-rich-edit-controls.md).
+**Rich Edit:** Supportato in Microsoft Rich Edit 1.0 e versioni successive. Per informazioni sulla compatibilità delle versioni rich edit con le varie versioni di sistema, vedere [Informazioni sui controlli Rich Edit.](about-rich-edit-controls.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,9 +61,9 @@ Il valore restituito è il limite di testo.
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Il valore restituito è il limite di testo.
 
 <dl> <dt>
 
-[**\_SETLIMITTEXT em**](em-setlimittext.md)
+[**EM \_ SETLIMITTEXT**](em-setlimittext.md)
 </dt> </dl>
 
  

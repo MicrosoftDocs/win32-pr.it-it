@@ -56,7 +56,7 @@ Questo metodo restituisce il valore della proprietà specificata da *Id*.
 
 ## <a name="remarks"></a>Commenti
 
-Usare questo metodo per trovare il valore di una proprietà dell'elemento dal relativo ID. Per un elenco di ID di proprietà, vedere [Definizioni delle costanti delle proprietà WIA.](-wia-wia-property-constant-definitions.md) Per informazioni sulle proprietà stesse, vedere [Costanti delle proprietà WIA.](-wia-wia-property-constants.md)
+Usare questo metodo per trovare il valore di una proprietà dell'elemento dal relativo ID. Per un elenco di ID proprietà, vedere [Definizioni delle costanti delle proprietà WIA.](-wia-wia-property-constant-definitions.md) Per informazioni sulle proprietà stesse, vedere [Costanti delle proprietà WIA.](-wia-wia-property-constants.md)
 
 Per le Visual Basic Microsoft, aggiungere un riferimento a "Windows Image Acquisition 1.01 Type Library". Le costanti seguenti definite in tale file sono valide solo per gli elementi radice (elementi dispositivo):
 
@@ -114,7 +114,7 @@ const TransparecnyAdapterSelect = 3102
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra l'uso **del metodo GetPropById** per recuperare il valore di una proprietà.
+Nell'esempio seguente viene illustrato l'uso **del metodo GetPropById** per recuperare un valore di proprietà.
 
 
 ```JScript
@@ -150,8 +150,8 @@ Next
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                        |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                          |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Wiascr.dll (versione 4.90 o successiva)</dt> </dl> |
 
 

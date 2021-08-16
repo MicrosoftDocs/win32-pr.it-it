@@ -53,7 +53,7 @@ ms.locfileid: "118226326"
 
 ## <a name="remarks"></a>Commenti
 
-Vedere [KNOWNFOLDERID per](/windows/desktop/shell/knownfolderid) un elenco di GUID di cartelle note. Usare il formato seguente per il valore di questo elemento quando si usa il protocollo knownfolder: .
+Per un elenco dei GUID di cartella noti, vedere [KNOWNFOLDERID.](/windows/desktop/shell/knownfolderid) Usare il formato seguente per il valore di questo elemento quando si usa il protocollo knownfolder: .
 
 
 ```
@@ -90,7 +90,7 @@ Nella tabella seguente vengono illustrati Windows 7 GUID di cartelle note.
 | Documenti \_ FOLDERID              | {FDD39AD0-238F-46AF-AD-B4-6C-85-48-03-69-C7} |
 | FOLDERID \_ DocumentsLibrary       | {7b0db17d-9cd2-4a93-97-33-46-cc-89-02-2e-7c} |
 | Download \_ di FOLDERID              | {374de290-123f-4565-91-64-39-c4-92-5e-46-7b} |
-| FolderID \_ Preferiti              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
+| Preferiti \_ FOLDERID              | {1777F761-68AD-4D8A-87-BD-30-B7-59-FA-33-DD} |
 | Tipi di carattere FOLDERID \_                  | {FD228CB7-AE11-4AE3-86-4C-16-F3-91-0A-B8-FE} |
 | Giochi \_ FOLDERID                  | {cac52c1a-b53d-4edc-92-d7-6b-2e-8a-c1-94-34} |
 | FOLDERID \_ GameTasks              | {54fae61-4dd8-4787-80-b6-9-2-20-c4-b7-0}     |

@@ -1,7 +1,7 @@
 ---
-description: Ottiene la matrice di proiezione sprite applicata a tutti gli sprite.
+description: Ottiene la matrice di proiezione dello sprite applicata a tutti gli sprite.
 ms.assetid: aee65a9f-27f9-42d9-98eb-ae90fc18c7f5
-title: 'Metodo ID3DX10Sprite:: GetProjectionTransform (D3DX10. h)'
+title: Metodo ID3DX10Sprite::GetProjectionTransform (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: eefd526fbe32158505db1edc73b9bbf527ad99be
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5c3f5b0a0dc60316398575855c79bdb8ac9b7113f953af75489d5b65d9ff8fb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118301967"
 ---
-# <a name="id3dx10spritegetprojectiontransform-method"></a>Metodo ID3DX10Sprite:: GetProjectionTransform
+# <a name="id3dx10spritegetprojectiontransform-method"></a>Metodo ID3DX10Sprite::GetProjectionTransform
 
-Ottiene la matrice di proiezione sprite applicata a tutti gli sprite.
+Ottiene la matrice di proiezione dello sprite applicata a tutti gli sprite.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,12 +40,12 @@ HRESULT GetProjectionTransform(
 
 <dl> <dt>
 
-*pProjectionTransform* \[ out\]
+*pProjectionTransform* \[ Cambio\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntatore a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sulla matrice di proiezione dello sprite.
+Puntatore a [**un oggetto D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sulla matrice di proiezione dello sprite.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un [**D3DX10MATRIX**](d3d10-d3dxmatrix.md) che verrà impostato sull
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,8 +61,8 @@ Il valore restituito è uno dei valori elencati in [codici restituiti Direct3D 1
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 

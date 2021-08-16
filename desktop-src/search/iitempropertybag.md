@@ -37,10 +37,10 @@ Definisce i metodi per ottenere informazioni sulle proprietà di un elemento di 
 
 | Metodo                                                      | Descrizione                                                                                  |
 |:------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| [**CountProperties**](/previous-versions/windows/desktop/legacy/ff684387(v=vs.85)) | Ottiene un conteggio del numero di proprietà nel contenitore delle proprietà.<br/>                     |
+| [**CountProperties**](/previous-versions/windows/desktop/legacy/ff684387(v=vs.85)) | Ottiene un conteggio del numero di proprietà nell'elenco delle proprietà.<br/>                     |
 | [**GetPropertyInfo**](iitempropertybag-getpropertyinfo.md) | Ottiene le informazioni necessarie per leggere o salvare le proprietà nell'elenco delle proprietà.<br/> |
-| [**Leggere**](iitempropertybag-read.md)                       | Fa in modo che una o più proprietà siano lette dal contenitore delle proprietà.<br/>                   |
-| [**Scrivere**](iitempropertybag-write.md)                     | Fa in modo che una o più proprietà siano salvate nel contenitore delle proprietà.<br/>                  |
+| [**Leggere**](iitempropertybag-read.md)                       | Fa sì che una o più proprietà siano lette dal contenitore delle proprietà.<br/>                   |
+| [**Scrivere**](iitempropertybag-write.md)                     | Determina il salvataggio di una o più proprietà nel contenitore delle proprietà.<br/>                  |
 
 
 
@@ -59,7 +59,7 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 3.0<br/>          |
 
 

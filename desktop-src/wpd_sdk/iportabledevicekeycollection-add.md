@@ -43,13 +43,13 @@ HRESULT Add(
 *Chiave* \[ Pollici\]
 </dt> <dd>
 
-**REFPROPERTYKEY** da aggiungere alla raccolta. Questo metodo copia la chiave nella raccolta, in modo da poter rilasciare la variabile locale dopo la chiamata a questo metodo.
+**REFPROPERTYKEY da** aggiungere alla raccolta. Questo metodo copia la chiave nella raccolta, quindi è possibile rilasciare la variabile locale dopo aver chiamato questo metodo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
@@ -84,7 +84,7 @@ Per un esempio di come usare questo metodo, vedere [Recupero di proprietà per u
 [**Interfaccia IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)
 </dt> <dt>
 
-[Recupero delle proprietà content-object](retrieving-content-object-properties.md)
+[Recupero di proprietà content-object](retrieving-content-object-properties.md)
 </dt> <dt>
 
 [Recupero di proprietà per un singolo oggetto](retrieving-properties-for-a-single-object.md)

@@ -12,13 +12,13 @@
             - name: Classificazioni bitmap
               href: bitmap-classifications.md
               items:
-                - name: Bitmap Device-Independent
+                - name: Device-Independent bitmap
                   href: device-independent-bitmaps.md
-                - name: Bitmap Device-Dependent
+                - name: Device-Dependent bitmap
                   href: device-dependent-bitmaps.md
             - name: Tipi di intestazione bitmap
               href: bitmap-header-types.md
-            - name: Estensioni JPEG e PNG per specifiche funzioni e strutture bitmap
+            - name: Estensioni JPEG e PNG per funzioni e strutture bitmap specifiche
               href: jpeg-and-png-extensions-for-specific-bitmap-functions-and-structures.md
             - name: 'Bitmap, contesti di dispositivo e superfici di disegno'
               href: bitmaps--device-contexts--and-drawing-surfaces.md
@@ -26,21 +26,21 @@
               href: bitmap-creation.md
             - name: Rotazione bitmap
               href: bitmap-rotation.md
-            - name: Ridimensionamento bitmap
+            - name: Ridimensionamento delle bitmap
               href: bitmap-scaling.md
             - name: Bitmap come pennelli
               href: bitmaps-as-brushes.md
-            - name: Archiviazione bitmap
+            - name: Bitmap Archiviazione
               href: bitmap-storage.md
             - name: Compressione bitmap
               href: bitmap-compression.md
             - name: Fusione alfa
               href: alpha-blending.md
-            - name: Ombreggiatura uniforme
+            - name: Ombreggiatura smussata
               href: smooth-shading.md
-            - name: Funzioni bitmap ICM-Enabled
+            - name: ICM-Enabled bitmap
               href: icm-enabled-bitmap-functions.md
-        - name: Uso di bitmap
+        - name: Uso delle bitmap
           href: using-bitmaps.md
           items:
             - name: Acquisizione di un'immagine
@@ -49,7 +49,7 @@
               href: scaling-an-image.md
             - name: Archiviazione di un'immagine
               href: storing-an-image.md
-            - name: Sfumatura alfa di una bitmap
+            - name: Fusione alfa di una bitmap
               href: alpha-blending-a-bitmap.md
             - name: Disegno di un rettangolo ombreggiato
               href: drawing-a-shaded-rectangle.md
@@ -59,7 +59,7 @@
               href: testing-a-printer-for-jpeg-or-png-support.md
             - name: Ridimensionamento di un'immagine JPEG o PNG
               href: sizing-a-jpeg-or-png-image.md
-        - name: Riferimento bitmap
+        - name: Informazioni di riferimento sulla bitmap
           href: bitmap-reference.md
           items:
             - name: Funzioni bitmap
@@ -67,7 +67,7 @@
               items:
                 - name: AlphaBlend
                   href: /windows/desktop/api/WinGdi/nf-wingdi-alphablend
-                - name: BitBlt
+                - name: Bitblt
                   href: /windows/desktop/api/Wingdi/nf-wingdi-bitblt
                 - name: CreateBitmap
                   href: /windows/desktop/api/Wingdi/nf-wingdi-createbitmap
@@ -121,7 +121,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setdibits
                 - name: SetDIBitsToDevice
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setdibitstodevice
-                - name: SetPixel
+                - name: Setpixel
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setpixel
                 - name: SetPixelV
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setpixelv
@@ -136,9 +136,9 @@
             - name: Strutture bitmap
               href: bitmap-structures.md
               items:
-                - name: BITMAP
+                - name: Bitmap
                   href: /windows/win32/api/Wingdi/ns-wingdi-bitmap
-                - name: STRUTTURA BITMAPCOREHEADER
+                - name: BITMAPCOREHEADER
                   href: /windows/win32/api/Wingdi/ns-wingdi-bitmapcoreheader
                 - name: BITMAPCOREINFO
                   href: /windows/win32/api/Wingdi/ns-wingdi-bitmapcoreinfo
@@ -168,7 +168,7 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-rgbtriple
                 - name: SIZE
                   href: /previous-versions//dd145106(v=vs.85)
-                - name: Trivertice
+                - name: TRIVERTEX
                   href: /windows/win32/api/Wingdi/ns-wingdi-trivertex
             - name: Macro bitmap
               href: bitmap-macros.md
@@ -183,24 +183,24 @@
           items:
             - name: Origine pennello
               href: brush-origin.md
-            - name: Tipi di pennelli logici
+            - name: Tipi di pennello logico
               href: logical-brush-types.md
               items:
                 - name: Pennello a tinta unita
                   href: solid-brush.md
-                - name: Pennello azionario
+                - name: Pennello predefinito
                   href: stock-brush.md
                 - name: Pennello tratteggio
                   href: hatch-brush.md
-                - name: Pennello per pattern
+                - name: Pennello pattern
                   href: pattern-brush.md
-            - name: Modello di trasferimento del blocco
+            - name: Trasferimento di blocchi di modelli
               href: pattern-block-transfer.md
-            - name: Funzioni pennello ICM-Enabled
+            - name: ICM-Enabled brush
               href: icm-enabled-brush-functions.md
-        - name: Uso di pennelli
+        - name: Uso dei pennelli
           href: using-brushes.md
-        - name: Riferimento al pennello
+        - name: Informazioni di riferimento sul pennello
           href: brush-reference.md
           items:
             - name: Funzioni pennello
@@ -226,7 +226,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-patblt
                 - name: SetBrushOrgEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setbrushorgex
-            - name: Strutture di pennelli
+            - name: Strutture Brush
               href: brush-structures.md
               items:
                 - name: LOGBRUSH
@@ -239,9 +239,9 @@
         - name: Informazioni sul ritaglio
           href: about-clipping.md
           items:
-            - name: Aree di ridimensionamento
+            - name: Aree di ritaglio
               href: clipping-regions.md
-            - name: Percorsi di ritaglio
+            - name: Tracciati di ritaglio
               href: clip-paths.md
         - name: Uso del ritaglio
           href: using-clipping.md
@@ -286,20 +286,20 @@
             - name: Nozioni di base sui colori
               href: color-basics.md
               items:
-                - name: Valori dei colori
+                - name: Valori di colore
                   href: color-values.md
-                - name: Approssimazioni di colori e dithering
+                - name: Approssimazioni dei colori e dithering
                   href: color-approximations-and-dithering.md
                 - name: Colore nelle bitmap
                   href: color-in-bitmaps.md
                 - name: Combinazione di colori
                   href: color-mixing.md
-            - name: Tavolozze dei colori
+            - name: Tavolozze
               href: color-palettes.md
               items:
                 - name: Tavolozza predefinita
                   href: default-palette.md
-                - name: Tavolozza logica
+                - name: Riquadro logico
                   href: logical-palette.md
                 - name: Animazione tavolozza
                   href: palette-animation.md
@@ -307,21 +307,21 @@
                   href: system-palette.md
                 - name: Tavolozza di sistema e colori statici
                   href: system-palette-and-static-colors.md
-                - name: Messaggi tavolozza
+                - name: Messaggi della tavolozza
                   href: palette-messages.md
-                - name: Tavolozza mezzitoni e regolazione colore
+                - name: Tavolozza dei mezzitoni e regolazione del colore
                   href: halftone-palette-and-color-adjustment.md
         - name: Uso del colore
           href: using-color.md
           items:
             - name: Enumerazione dei colori
               href: enumerating-colors.md
-            - name: Creazione di penne colorate e pennelli
+            - name: Creazione di penne e pennelli colorati
               href: creating-colored-pens-and-brushes.md
-        - name: Riferimento ai colori
+        - name: Informazioni di riferimento sul colore
           href: color-reference.md
           items:
-            - name: Funzioni colore
+            - name: Funzioni per i colori
               href: color-functions.md
               items:
                 - name: AnimatePalette
@@ -346,7 +346,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-realizepalette
                 - name: ResizePalette
                   href: /windows/desktop/api/Wingdi/nf-wingdi-resizepalette
-                - name: SelectPalette
+                - name: SelezionarePalette
                   href: /windows/desktop/api/Wingdi/nf-wingdi-selectpalette
                 - name: SetColorAdjustment
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setcoloradjustment
@@ -358,7 +358,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-unrealizeobject
                 - name: UpdateColors
                   href: /windows/desktop/api/Wingdi/nf-wingdi-updatecolors
-            - name: Strutture colore
+            - name: Strutture dei colori
               href: color-structures.md
               items:
                 - name: COLORREF
@@ -367,7 +367,7 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-logpalette
                 - name: PALETTEENTRY
                   href: /previous-versions//dd162769(v=vs.85)
-            - name: Macro colori
+            - name: Macro di colore
               href: color-macros.md
               items:
                 - name: DIBINDEX
@@ -384,26 +384,26 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-palettergb
                 - name: RGB
                   href: /windows/desktop/api/Wingdi/nf-wingdi-rgb
-            - name: Messaggi colori
+            - name: Messaggi di colore
               href: color-messages.md
               items:
-                - name: WM_PALETTECHANGED
+                - name: Wm_palettechanged
                   href: wm-palettechanged.md
                 - name: WM_PALETTEISCHANGING
                   href: wm-paletteischanging.md
-                - name: WM_QUERYNEWPALETTE
+                - name: Wm_querynewpalette
                   href: wm-querynewpalette.md
                 - name: WM_SYSCOLORCHANGE
                   href: wm-syscolorchange.md
-    - name: Spazi di coordinate e trasformazioni
+    - name: Coordinare spazi e trasformazioni
       href: coordinate-spaces-and-transformations.md
       items:
-        - name: Informazioni sulle trasformazioni e gli spazi delle coordinate
+        - name: Informazioni sugli spazi delle coordinate e sulle trasformazioni
           href: about-coordinate-spaces-and-transformations.md
           items:
-            - name: Trasformazione di spazi delle coordinate
+            - name: Trasformazione degli spazi delle coordinate
               href: transformation-of-coordinate-spaces.md
-            - name: Spazio globale per Page-Space le trasformazioni
+            - name: World-Space to Page-Space Transformations
               href: world-space-to-page-space-transformations.md
               items:
                 - name: Traduzione
@@ -416,34 +416,34 @@
                   href: shear.md
                 - name: Reflection
                   href: reflection.md
-                - name: Trasformazioni di spazi globali combinate
+                - name: Trasformazioni combinate dello spazio da mondo a pagina
                   href: combined-world-to-page-space-transformations.md
-            - name: Page-Space per Device-Space le trasformazioni
+            - name: Page-Space per Device-Space trasformazioni
               href: page-space-to-device-space-transformations.md
               items:
                 - name: Modalità di mapping e traduzioni
                   href: mapping-modes-and-translations.md
                 - name: Modalità di mapping predefinite
                   href: predefined-mapping-modes.md
-                - name: Modalità di mapping Application-Defined
+                - name: Application-Defined mapping di mapping
                   href: application-defined-mapping-modes.md
-            - name: Device-Space Physical-Device trasformazione
+            - name: Device-Space per Physical-Device trasformazione
               href: device-space-to-physical-device-transformation.md
             - name: Trasformazioni predefinite
               href: default-transformations.md
         - name: Uso di spazi di coordinate e trasformazioni
           href: using-coordinate-spaces-and-transformations.md
-        - name: Spazio delle coordinate e riferimento alla trasformazione
+        - name: Riferimento allo spazio delle coordinate e alla trasformazione
           href: coordinate-space-and-transformation-reference.md
           items:
-            - name: Spazio delle coordinate e funzioni di trasformazione
+            - name: Funzioni di spazio delle coordinate e trasformazione
               href: coordinate-space-and-transformation-functions.md
               items:
                 - name: ClientToScreen
                   href: /windows/desktop/api/Winuser/nf-winuser-clienttoscreen
                 - name: CombineTransform
                   href: /windows/desktop/api/Wingdi/nf-wingdi-combinetransform
-                - name: LPtoDP
+                - name: DPtoLP
                   href: /windows/desktop/api/Wingdi/nf-wingdi-dptolp
                 - name: GetCurrentPositionEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-getcurrentpositionex
@@ -463,7 +463,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-getwindoworgex
                 - name: GetWorldTransform
                   href: /windows/desktop/api/Wingdi/nf-wingdi-getworldtransform
-                - name: DPtoLP
+                - name: LPtoDP
                   href: /windows/desktop/api/Wingdi/nf-wingdi-lptodp
                 - name: MapWindowPoints
                   href: /windows/desktop/api/Winuser/nf-winuser-mapwindowpoints
@@ -498,7 +498,7 @@
             - name: Spazio delle coordinate e strutture di trasformazione
               href: coordinate-space-and-transformation-structures.md
               items:
-                - name: XFORM
+                - name: Xform
                   href: /windows/win32/api/Wingdi/ns-wingdi-xform
     - name: Contesti di dispositivo
       href: device-contexts.md
@@ -513,15 +513,15 @@
             - name: Tipi di contesto di dispositivo
               href: device-context-types.md
               items:
-                - name: Visualizzare i contesti di dispositivo
+                - name: Visualizzare contesti di dispositivo
                   href: display-device-contexts.md
-                - name: Contesti di dispositivo stampante
+                - name: Contesti di dispositivo della stampante
                   href: printer-device-contexts.md
                 - name: Contesti di dispositivo di memoria
                   href: memory-device-contexts.md
-                - name: Contesti di dispositivi informativi
+                - name: Contesti di dispositivo delle informazioni
                   href: information-device-contexts.md
-            - name: Operazioni di contesto del dispositivo
+            - name: Operazioni del contesto di dispositivo
               href: device-context-operations.md
               items:
                 - name: Operazioni sugli oggetti grafici
@@ -532,34 +532,34 @@
                   href: retrieving-device-data.md
                 - name: 'Salvataggio, ripristino e reimpostazione di un contesto di dispositivo'
                   href: saving--restoring--and-resetting-a-device-context.md
-            - name: Funzioni di contesto del dispositivo ICM-Enabled
+            - name: ICM-Enabled del contesto di dispositivo
               href: icm-enabled-device-context-functions.md
-        - name: Uso delle funzioni di contesto del dispositivo
+        - name: Uso delle funzioni del contesto di dispositivo
           href: using-the-device-context-functions.md
           items:
-            - name: Ottenere un contesto di dispositivo di visualizzazione privato
+            - name: Recupero di un contesto di dispositivo di visualizzazione privato
               href: obtaining-a-private-display-device-context.md
             - name: Recupero delle funzionalità di una stampante
               href: retrieving-the-capabilities-of-a-printer.md
-            - name: 'Recupera attributi oggetto, seleziona nuovi oggetti'
+            - name: 'Recuperare gli attributi dell''oggetto, selezionare nuovi oggetti'
               href: retrieving-graphic-object-attributes-and-selecting-new-graphic-objects.md
-            - name: Impostazione e recupero del valore del colore del pennello del contesto del dispositivo
+            - name: Impostazione e recupero del valore del colore del pennello del contesto di dispositivo
               href: setting-and-retrieving-the-device-context-brush-color-value.md
             - name: Impostazione del colore della penna o del pennello
               href: setting-the-pen-or-brush-color.md
-            - name: Recupero di informazioni su un monitor di visualizzazione
+            - name: Recupero di informazioni in un monitor di visualizzazione
               href: getting-information-on-a-display-monitor.md
-        - name: Riferimento al contesto di dispositivo
+        - name: Informazioni di riferimento sul contesto di dispositivo
           href: device-context-reference.md
           items:
-            - name: Funzioni di contesto del dispositivo
+            - name: Funzioni del contesto di dispositivo
               href: device-context-functions.md
               items:
                 - name: CancelDC
                   href: /windows/desktop/api/Wingdi/nf-wingdi-canceldc
                 - name: ChangeDisplaySettings
                   href: /windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsa
-                - name: ChangeDisplaySettingsEx
+                - name: Changedisplaysettingsex
                   href: /windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa
                 - name: CreateCompatibleDC
                   href: /windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc
@@ -623,14 +623,14 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setlayout
                 - name: WindowFromDC
                   href: /windows/desktop/api/Winuser/nf-winuser-windowfromdc
-            - name: Strutture di contesto del dispositivo
+            - name: Strutture del contesto di dispositivo
               href: device-context-structures.md
               items:
                 - name: DISPLAY_DEVICE
                   href: /windows/win32/api/Wingdi/ns-wingdi-display_devicea
                 - name: VIDEOPARAMETERS
                   href: /previous-versions//dd145196(v=vs.85)
-            - name: Messaggi di contesto dispositivo
+            - name: Messaggi del contesto di dispositivo
               href: device-context-messages.md
               items:
                 - name: WM_DEVMODECHANGE
@@ -641,22 +641,22 @@
         - name: Informazioni sulle forme riempite
           href: about-filled-shapes.md
           items:
-            - name: Informazioni sugli ellissi
+            - name: Informazioni sui puntini di sospensione
               href: about-ellipses.md
             - name: Informazioni sugli accordi
               href: about-chords.md
-            - name: Informazioni su torte
+            - name: Informazioni sulle pie
               href: about-pies.md
             - name: Informazioni sui poligoni
               href: about-polygons.md
             - name: Disegno di rettangoli
               href: drawing-rectangles.md
-        - name: Uso di forme piene
+        - name: Uso di forme riempite
           href: using-filled-shapes.md
-        - name: Riferimento a forme piene
+        - name: Informazioni di riferimento sulla forma riempita
           href: filled-shape-reference.md
           items:
-            - name: Funzioni di forma riempite
+            - name: Funzioni di forma riempita
               href: filled-shape-functions.md
               items:
                 - name: Chord
@@ -669,7 +669,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-framerect
                 - name: InvertRect
                   href: /windows/desktop/api/Winuser/nf-winuser-invertrect
-                - name: Torta
+                - name: Pie
                   href: /windows/desktop/api/Wingdi/nf-wingdi-pie
                 - name: Polygon
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polygon
@@ -687,9 +687,9 @@
           items:
             - name: Elementi del tipo di carattere
               href: font-elements.md
-            - name: Gruppi di caratteri
+            - name: Famiglie di caratteri
               href: font-families.md
-            - name: 'Tipi di carattere raster, vettoriali, TrueType e OpenType'
+            - name: 'Tipi di carattere Raster, Vector, TrueType e OpenType'
               href: raster--vector--truetype--and-opentype-fonts.md
             - name: Set di caratteri usati dai tipi di carattere
               href: character-sets-used-by-fonts.md
@@ -697,7 +697,7 @@
               href: font-installation-and-deletion.md
             - name: Tipi di carattere da più file di risorse
               href: fonts-from-multiple-resource-files.md
-            - name: Creazione e selezione di tipi di carattere
+            - name: Creazione e selezione del tipo di carattere
               href: font-creation-and-selection.md
             - name: Tipi di carattere incorporati
               href: embedded-fonts.md
@@ -707,9 +707,9 @@
             - name: Formattazione del testo
               href: formatting-text.md
               items:
-                - name: Attributi di Text-Formatting
+                - name: Text-Formatting attributi
                   href: text-formatting-attributes.md
-                - name: Larghezza caratteri
+                - name: Larghezze dei caratteri
                   href: character-widths.md
                 - name: Larghezze e altezze delle stringhe
                   href: string-widths-and-heights.md
@@ -719,50 +719,50 @@
               href: complex-scripts.md
             - name: ClearType Antialiasing (Anti-aliasing ClearType)
               href: cleartype-antialiasing.md
-        - name: Uso delle funzioni font e Text-Output
+        - name: Uso delle funzioni Font e Text-Output
           href: using-the-font-and-text-output-functions.md
           items:
-            - name: Uso di un tipo di carattere azionario per creare testo
+            - name: Uso di un tipo di carattere predefinito per disegnare testo
               href: using-a-stock-font-to-draw-text.md
             - name: Creazione di un tipo di carattere logico
               href: creating-a-logical-font.md
             - name: Enumerazione dei tipi di carattere installati
               href: enumerating-the-installed-fonts.md
-            - name: Verifica delle funzionalità di testo di un dispositivo
+            - name: Controllo delle funzionalità di testo di un dispositivo
               href: checking-the-text-capabilities-of-a-device.md
             - name: Impostazione dell'allineamento del testo
               href: setting-the-text-alignment.md
-            - name: Disegno di testo da diversi tipi di carattere nella stessa riga
+            - name: Disegno di testo da tipi di carattere diversi sulla stessa riga
               href: drawing-text-from-different-fonts-on-the-same-line.md
             - name: Rotazione di righe di testo
               href: rotating-lines-of-text.md
-            - name: Recupero di strutture di caratteri
+            - name: Recupero di contorni di caratteri
               href: retrieving-character-outlines.md
               items:
-                - name: Record polilinea
+                - name: Record di polilinea
                   href: polyline-records.md
                 - name: Record spline
                   href: spline-records.md
-            - name: Uso della metrica TrueType portatile
+            - name: Uso delle metriche TrueType portabili
               href: using-portable-truetype-metrics.md
               items:
-                - name: Dispositivo e unità di progettazione
+                - name: Confronto tra dispositivo e unità di progettazione
                   href: device-vs--design-units.md
-                - name: Metriche per documenti portatili
+                - name: Metriche per i documenti portabili
                   href: metrics-for-portable-documents.md
-            - name: Uso di numeri PANOse
+            - name: Uso dei numeri PANOSE
               href: using-panose-numbers.md
             - name: Specifica della lunghezza della stringa di output di testo
               href: specifying-length-of-text-output-string.md
-        - name: Riferimento al tipo di carattere e al testo
+        - name: Informazioni di riferimento su tipo di carattere e testo
           href: font-and-text-reference.md
           items:
-            - name: Funzioni di tipo carattere e testo
+            - name: Funzioni di tipo di carattere e testo
               href: font-and-text-functions.md
               items:
                 - name: AddFontMemResourceEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-addfontmemresourceex
-                - name: AddFontResource
+                - name: Addfontresource
                   href: /windows/desktop/api/Wingdi/nf-wingdi-addfontresourcea
                 - name: AddFontResourceEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-addfontresourceexa
@@ -774,7 +774,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-createfontindirectexa
                 - name: CreateScalableFontResource
                   href: /windows/desktop/api/Wingdi/nf-wingdi-createscalablefontresourcea
-                - name: DrawText
+                - name: Drawtext
                   href: /windows/desktop/api/Winuser/nf-winuser-drawtext
                 - name: DrawTextEx
                   href: /windows/desktop/api/Winuser/nf-winuser-drawtextexa
@@ -792,7 +792,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-enumfontsa
                 - name: FONTENUMPROC
                   href: /previous-versions//dd162623(v=vs.85)
-                - name: ExtTextOut
+                - name: Exttextout
                   href: /windows/desktop/api/Wingdi/nf-wingdi-exttextouta
                 - name: GetAspectRatioFilterEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-getaspectratiofilterex
@@ -850,7 +850,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-gettextfacea
                 - name: GetTextMetrics
                   href: /windows/desktop/api/Wingdi/nf-wingdi-gettextmetrics
-                - name: Sottotesto
+                - name: PolyTextOut
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polytextouta
                 - name: RemoveFontMemResourceEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-removefontmemresourceex
@@ -872,14 +872,14 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-tabbedtextouta
                 - name: TextOut
                   href: /windows/desktop/api/Wingdi/nf-wingdi-textouta
-            - name: Strutture di tipi di carattere e testo
+            - name: Strutture di tipo di carattere e testo
               href: font-and-text-structures.md
               items:
                 - name: ABC
                   href: /windows/win32/api/Wingdi/ns-wingdi-abc
                 - name: ABCFLOAT
                   href: /windows/win32/api/Wingdi/ns-wingdi-abcfloat
-                - name: Degli assi
+                - name: AXESLIST
                   href: /windows/win32/api/Wingdi/ns-wingdi-axeslista
                 - name: AXISINFO
                   href: /windows/win32/api/Wingdi/ns-wingdi-axisinfoa
@@ -907,7 +907,7 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-glyphset
                 - name: KERNINGPAIR
                   href: /windows/win32/api/Wingdi/ns-wingdi-kerningpair
-                - name: LOGFONT
+                - name: Logfont
                   href: /windows/win32/api/Wingdi/ns-wingdi-logfonta
                 - name: MAT2
                   href: /windows/win32/api/Wingdi/ns-wingdi-mat2
@@ -921,7 +921,7 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-panose
                 - name: POINTFX
                   href: /windows/win32/api/Wingdi/ns-wingdi-pointfx
-                - name: Testo in formato testo
+                - name: POLYTEXT
                   href: /windows/win32/api/Wingdi/ns-wingdi-polytexta
                 - name: RASTERIZER_STATUS
                   href: /windows/win32/api/Wingdi/ns-wingdi-rasterizer_status
@@ -933,7 +933,7 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-ttpolygonheader
                 - name: WCRANGE
                   href: /windows/win32/api/Wingdi/ns-wingdi-wcrange
-            - name: Macro di tipi di carattere e testo
+            - name: Macro di tipo di carattere e testo
               href: font-and-text-macros.md
               items:
                 - name: DeleteFont
@@ -945,7 +945,7 @@
               items:
                 - name: WM_FONTCHANGE
                   href: wm-fontchange.md
-        - name: Riferimento all'incorporamento dei tipi di carattere
+        - name: Informazioni di riferimento per l'incorporamento dei tipi di carattere
           href: font-embedding-reference.md
           items:
             - name: Funzioni di incorporamento dei tipi di carattere
@@ -1004,9 +1004,9 @@
                   href: /windows/desktop/api/T2embapi/ns-t2embapi-ttvalidationtestsparams
                 - name: TTVALIDATIONTESTSPARAMSEX
                   href: /windows/desktop/api/T2embapi/ns-t2embapi-ttvalidationtestsparamsex
-            - name: Tipi di carattere di incorporamento dei messaggi di errore
+            - name: Messaggi di errore di incorporamento dei tipi di carattere
               href: font-embedding-function-error-messages.md
-            - name: Messaggi di errore del pacchetto di tipi di carattere
+            - name: Messaggi di errore del pacchetto del tipo di carattere
               href: font-package-function-error-messages.md
     - name: Linee e curve
       href: lines-and-curves.md
@@ -1025,14 +1025,14 @@
         - name: Uso di linee e curve
           href: using-lines-and-curves.md
           items:
-            - name: Disegno di marcatori
+            - name: Marcatori di disegno
               href: drawing-markers.md
             - name: Disegno di un grafico a torta
               href: drawing-a-pie-chart.md
         - name: Riferimento a linee e curve
           href: line-and-curve-reference.md
           items:
-            - name: Funzioni linea e curva
+            - name: Funzioni per linee e curve
               href: line-and-curve-functions.md
               items:
                 - name: AngleArc
@@ -1051,17 +1051,17 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-lineto
                 - name: MoveToEx
                   href: /windows/desktop/api/Wingdi/nf-wingdi-movetoex
-                - name: Polibezier
+                - name: PolyBezier
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polybezier
                 - name: PolyBezierTo
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polybezierto
-                - name: Polidisegni
+                - name: PolyDraw
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polydraw
                 - name: Polilinea
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polyline
                 - name: PolylineTo
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polylineto
-                - name: Polilinea
+                - name: PolyPolyline
                   href: /windows/desktop/api/Wingdi/nf-wingdi-polypolyline
                 - name: SetArcDirection
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setarcdirection
@@ -1071,29 +1071,29 @@
         - name: Informazioni sui metafile
           href: about-metafiles.md
           items:
-            - name: Metafile di Enhanced-Format
+            - name: Enhanced-Format metafile
               href: enhanced-format-metafiles.md
               items:
-                - name: Record metafile avanzati
+                - name: Record metafile migliorati
                   href: enhanced-metafile-records.md
-                - name: Creazione di metafile migliorata
+                - name: Creazione avanzata di metafile
                   href: enhanced-metafile-creation.md
-                - name: Operazioni di Metafile avanzate
+                - name: Operazioni avanzate sui metafile
                   href: enhanced-metafile-operations.md
-            - name: Metafile di Windows-Format
+            - name: Windows-Format metafile
               href: windows-format-metafiles.md
-        - name: Uso di metafile
+        - name: Uso dei metafile
           href: using-metafiles.md
           items:
             - name: Creazione di un metafile avanzato
               href: creating-an-enhanced-metafile.md
             - name: Visualizzazione di un'immagine e archiviazione in un metafile avanzato
               href: displaying-a-picture-and-storing-it-in-an-enhanced-metafile.md
-            - name: Apertura di un metafile migliorato e visualizzazione del contenuto
+            - name: Apertura di un metafile avanzato e visualizzazione del relativo contenuto
               href: opening-an-enhanced-metafile-and-displaying-its-contents.md
             - name: Modifica di un metafile avanzato
               href: editing-an-enhanced-metafile.md
-        - name: Riferimento a metafile
+        - name: Informazioni di riferimento sul metafile
           href: metafile-reference.md
           items:
             - name: Funzioni metafile
@@ -1292,9 +1292,9 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-emrtext
                 - name: EMRTRANSPARENTBLT
                   href: /windows/win32/api/Wingdi/ns-wingdi-emrtransparentblt
-                - name: Record metafile avanzati senza parametri
+                - name: Record metafile migliorati senza parametri
                   href: /windows/win32/api/Wingdi/ns-wingdi-emrabortpath
-                - name: Record di metafile avanzati con un solo parametro
+                - name: Record metafile migliorati con un solo parametro
                   href: /windows/win32/api/Wingdi/ns-wingdi-emrselectclippath
                 - name: ENHMETAHEADER
                   href: /windows/win32/api/Wingdi/ns-wingdi-enhmetaheader
@@ -1302,9 +1302,9 @@
                   href: /windows/win32/api/Wingdi/ns-wingdi-enhmetarecord
                 - name: HANDLETABLE
                   href: /windows/win32/api/Wingdi/ns-wingdi-handletable
-                - name: METAHEADER
+                - name: Metaheader
                   href: /windows/win32/api/Wingdi/ns-wingdi-metaheader
-                - name: MetaRecord
+                - name: METARECORD
                   href: /windows/win32/api/Wingdi/ns-wingdi-metarecord
                 - name: POINTL
                   href: /previous-versions//dd162807(v=vs.85)
@@ -1318,13 +1318,13 @@
           items:
             - name: Schermata virtuale
               href: the-virtual-screen.md
-            - name: HMONITOR e il contesto di dispositivo
+            - name: HMONITOR e contesto di dispositivo
               href: hmonitor-and-the-device-context.md
             - name: Enumerazione e controllo di visualizzazione
               href: enumeration-and-display-control.md
-            - name: Più metriche del sistema di monitoraggio
+            - name: Metriche di sistema con più monitor
               href: multiple-monitor-system-metrics.md
-            - name: Uso di più monitor come visualizzazioni indipendenti
+            - name: Uso di più monitor come schermi indipendenti
               href: using-multiple-monitors-as-independent-displays.md
             - name: Colori su più monitor di visualizzazione
               href: colors-on-multiple-display-monitors.md
@@ -1333,21 +1333,21 @@
                   href: painting-on-multiple-display-monitors.md
             - name: Posizionamento di oggetti su più monitor di visualizzazione
               href: positioning-objects-on-multiple-display-monitors.md
-            - name: Più applicazioni di monitoraggio su sistemi diversi
+            - name: Più applicazioni di monitoraggio in sistemi diversi
               href: multiple-monitor-applications-on-different-systems.md
-            - name: Considerazioni su più monitor per i programmi precedenti
+            - name: Considerazioni su più monitor per i programmi meno recenti
               href: multiple-monitor-considerations-for-older-programs.md
-        - name: Utilizzo di più monitor di visualizzazione
+        - name: Uso di più monitor di visualizzazione
           href: using-multiple-display-monitors.md
           items:
-            - name: Disegno in un controller di dominio che si estende su più visualizzazioni
+            - name: Disegno su un controller di dominio che si estende su più schermi
               href: painting-on-a-dc-that-spans-multiple-displays.md
-            - name: Posizionamento di oggetti in una configurazione con più visualizzazioni
+            - name: Posizionamento di oggetti in una configurazione a più display
               href: positioning-objects-on-a-multiple-display-setup.md
-        - name: Riferimento a più monitor di visualizzazione
+        - name: Informazioni di riferimento su più monitoraggi di visualizzazione
           href: multiple-display-monitors-reference.md
           items:
-            - name: Funzioni per più monitor di visualizzazione
+            - name: Funzioni di monitoraggio a più monitoraggi
               href: multiple-display-monitors-functions.md
               items:
                 - name: EnumDisplayMonitors
@@ -1362,7 +1362,7 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-monitorfromrect
                 - name: MonitorFromWindow
                   href: /windows/desktop/api/Winuser/nf-winuser-monitorfromwindow
-            - name: Più strutture monitor di visualizzazione
+            - name: Strutture di monitor a più monitoraggi
               href: multiple-display-monitors-structures.md
               items:
                 - name: MONITORINFO
@@ -1372,17 +1372,17 @@
     - name: Disegno e disegno
       href: painting-and-drawing.md
       items:
-        - name: Informazioni su disegno e disegno
+        - name: Informazioni sul disegno e sul disegno
           href: about-painting-and-drawing.md
           items:
-            - name: Quando creare un oggetto in una finestra
+            - name: Quando disegnare in una finestra
               href: when-to-draw-in-a-window.md
-            - name: Messaggio di WM_PAINT
+            - name: Messaggio WM_PAINT
               href: the-wm-paint-message.md
               items:
                 - name: Area di aggiornamento
                   href: the-update-region.md
-                - name: Invalidare e convalidare l'area di aggiornamento
+                - name: Invalidazione e convalida dell'area di aggiornamento
                   href: invalidating-and-validating-the-update-region.md
                 - name: Recupero dell'area di aggiornamento
                   href: retrieving-the-update-region.md
@@ -1390,44 +1390,44 @@
                   href: excluding-the-update-region.md
                 - name: Disegno sincrono e asincrono
                   href: synchronous-and-asynchronous-drawing.md
-            - name: Disegno senza messaggio di WM_PAINT
+            - name: Disegno senza WM_PAINT messaggio
               href: drawing-without-the-wm-paint-message.md
-            - name: Sistema di coordinate finestra
+            - name: Sistema di coordinate della finestra
               href: window-coordinate-system.md
             - name: Aree della finestra
               href: window-regions.md
-            - name: Sfondo finestra
+            - name: Sfondo della finestra
               href: window-background.md
-            - name: Finestre ridotte a icona
+            - name: Riduzione a icona Windows
               href: minimized-windows.md
-            - name: Finestre ridimensionate
+            - name: Ridimensionamento Windows
               href: resized-windows.md
             - name: Area non client
               href: nonclient-area.md
             - name: Area di aggiornamento della finestra figlio
               href: child-window-update-region.md
-            - name: Dispositivi di visualizzazione
+            - name: Visualizzare i dispositivi
               href: display-devices.md
               items:
-                - name: Visualizza la cache del contesto del dispositivo
+                - name: Visualizzare la cache del contesto di dispositivo
                   href: display-device-context-cache.md
                 - name: Visualizzare le impostazioni predefinite del contesto di dispositivo
                   href: display-device-context-defaults.md
                 - name: Contesti di dispositivo di visualizzazione comuni
                   href: common-display-device-contexts.md
-                - name: Contesti di dispositivo di visualizzazione privati
+                - name: Contesti di dispositivo di visualizzazione privata
                   href: private-display-device-contexts.md
-                - name: Classe Visualizza contesti di dispositivo
+                - name: Contesti di dispositivo di visualizzazione delle classi
                   href: class-display-device-contexts.md
-                - name: Visualizzazione dei contesti di dispositivo della finestra
+                - name: Contesti di dispositivo di visualizzazione della finestra
                   href: window-display-device-contexts.md
-                - name: Contesti dispositivo di visualizzazione padre
+                - name: Contesti di dispositivo di visualizzazione padre
                   href: parent-display-device-contexts.md
-            - name: Blocco aggiornamento finestra
+            - name: Blocco di aggiornamento della finestra
               href: window-update-lock.md
             - name: Rettangolo di delimitazione accumulato
               href: accumulated-bounding-rectangle.md
-        - name: Uso del messaggio WM_PAINT
+        - name: Uso del WM_PAINT messaggio
           href: using-the-wm-paint-message.md
           items:
             - name: Disegno nell'area client
@@ -1436,26 +1436,26 @@
               href: redrawing-the-entire-client-area.md
             - name: Ridisegno nell'area di aggiornamento
               href: redrawing-in-the-update-region.md
-            - name: Invalidare l'area client
+            - name: Invalidazione dell'area client
               href: invalidating-the-client-area.md
             - name: Disegno di una finestra ridotta a icona
               href: drawing-a-minimized-window.md
-            - name: Disegno di uno sfondo personalizzato della finestra
+            - name: Disegno di uno sfondo di finestra personalizzato
               href: drawing-a-custom-window-background.md
         - name: Uso della funzione GetDC
           href: using-the-getdc-function.md
           items:
             - name: Disegno con il mouse
               href: drawing-with-the-mouse.md
-            - name: Disegno a intervalli temporizzati
+            - name: Disegno a intervalli temporati
               href: drawing-at-timed-intervals.md
-        - name: Riferimento disegno e disegno
+        - name: Informazioni di riferimento su disegno e disegno
           href: painting-and-drawing-reference.md
           items:
             - name: Funzioni di disegno e disegno
               href: painting-and-drawing-functions.md
               items:
-                - name: BeginPaint
+                - name: Beginpaint
                   href: /windows/desktop/api/Winuser/nf-winuser-beginpaint
                 - name: DrawAnimatedRects
                   href: /windows/desktop/api/Winuser/nf-winuser-drawanimatedrects
@@ -1511,7 +1511,7 @@
                   href: /windows/desktop/api/Winuser/nc-winuser-graystringproc
                 - name: PaintDesktop
                   href: /windows/desktop/api/Winuser/nf-winuser-paintdesktop
-                - name: RedrawWindow
+                - name: RidisegnaFinestra
                   href: /windows/desktop/api/Winuser/nf-winuser-redrawwindow
                 - name: SetBkColor
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setbkcolor
@@ -1519,7 +1519,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setbkmode
                 - name: SetBoundsRect
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setboundsrect
-                - name: SetROP2
+                - name: Set UNAN2
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setrop2
                 - name: SetWindowRgn
                   href: /windows/desktop/api/Winuser/nf-winuser-setwindowrgn
@@ -1529,19 +1529,19 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-validaterect
                 - name: ValidateRgn
                   href: /windows/desktop/api/Winuser/nf-winuser-validatergn
-            - name: Disegno e creazione di strutture
+            - name: Strutture di disegno e disegno
               href: painting-and-drawing-structures.md
               items:
                 - name: PAINTSTRUCT
                   href: /windows/win32/api/Winuser/ns-winuser-paintstruct
-            - name: Disegno e creazione di messaggi
+            - name: Disegnare e disegnare messaggi
               href: painting-and-drawing-messages.md
               items:
                 - name: WM_DISPLAYCHANGE
                   href: wm-displaychange.md
                 - name: WM_NCPAINT
                   href: wm-ncpaint.md
-                - name: WM_PAINT
+                - name: Wm_paint
                   href: wm-paint.md
                 - name: WM_PRINT
                   href: wm-print.md
@@ -1551,7 +1551,7 @@
                   href: wm-setredraw.md
                 - name: WM_SYNCPAINT
                   href: wm-syncpaint.md
-            - name: Codici operativi raster
+            - name: Codici di operazione raster
               href: raster-operation-codes.md
               items:
                 - name: Operazioni raster binarie
@@ -1564,24 +1564,24 @@
         - name: Informazioni sui percorsi
           href: about-paths.md
           items:
-            - name: Creazione percorso
+            - name: Creazione del percorso
               href: path-creation.md
-            - name: Percorsi delineati e riempiti
+            - name: Tracciati con contorni e riempiti
               href: outlined-and-filled-paths.md
             - name: Trasformazioni di percorsi
               href: transformations-of-paths.md
-            - name: Tracciare percorsi ed effetti grafici
+            - name: Tracciati di ritaglio ed effetti grafici
               href: clip-paths-and-graphic-effects.md
-            - name: Conversione dei percorsi in aree
+            - name: Conversione di percorsi in aree
               href: conversion-of-paths-to-regions.md
-            - name: Percorsi curvi
+            - name: Tracciati curvi
               href: curved-paths.md
-        - name: Utilizzo di percorsi
+        - name: Uso dei percorsi
           href: using-paths.md
         - name: Riferimento al percorso
           href: path-reference.md
           items:
-            - name: Funzioni Path
+            - name: Funzioni path
               href: path-functions.md
               items:
                 - name: AbortPath
@@ -1616,9 +1616,9 @@
         - name: Informazioni sulle penne
           href: about-pens.md
           items:
-            - name: Penne cosmetiche
+            - name: Penne erre
               href: cosmetic-pens.md
-            - name: Penne geometriche
+            - name: Geometrie a forma di penna
               href: geometric-pens.md
             - name: Attributi penna
               href: pen-attributes.md
@@ -1627,24 +1627,24 @@
                   href: pen-width.md
                 - name: Stile penna
                   href: pen-style.md
-                - name: Colore della penna
+                - name: Colore penna
                   href: pen-color.md
-                - name: Modello di penna
+                - name: Modello penna
                   href: pen-pattern.md
                 - name: Tratteggio penna
                   href: pen-hatch.md
-                - name: Perno estremità penna
+                - name: Estremità della penna
                   href: pen-end-cap.md
-                - name: Aggiunta a penna
+                - name: Pen Join
                   href: pen-join.md
-            - name: Funzioni di ICM-Enabled Pen
+            - name: funzioni ICM-Enabled Pen
               href: icm-enabled-pen-functions.md
-        - name: Uso di penne
+        - name: Uso delle penne
           href: using-pens.md
-        - name: Riferimento alla penna
+        - name: Informazioni di riferimento sulla penna
           href: pen-reference.md
           items:
-            - name: Funzioni Pen
+            - name: Funzioni pen
               href: pen-functions.md
               items:
                 - name: CreatePen
@@ -1653,7 +1653,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-createpenindirect
                 - name: ExtCreatePen
                   href: /windows/desktop/api/Wingdi/nf-wingdi-extcreatepen
-            - name: Strutture Pen
+            - name: Strutture della penna
               href: pen-structures.md
               items:
                 - name: EXTLOGPEN
@@ -1666,16 +1666,16 @@
         - name: Informazioni sui rettangoli
           href: about-rectangles.md
           items:
-            - name: Coordinate rettangolo
+            - name: Coordinate del rettangolo
               href: rectangle-coordinates.md
-            - name: Operazioni Rectangle
+            - name: Operazioni rettangolo
               href: rectangle-operations.md
         - name: Uso di rettangoli
           href: using-rectangles.md
         - name: Riferimento al rettangolo
           href: rectangle-reference.md
           items:
-            - name: Funzioni Rectangle
+            - name: Funzioni rectangle
               href: rectangle-functions.md
               items:
                 - name: CopyRect
@@ -1700,23 +1700,23 @@
                   href: /windows/desktop/api/Winuser/nf-winuser-subtractrect
                 - name: UnionRect
                   href: /windows/desktop/api/Winuser/nf-winuser-unionrect
-            - name: Strutture Rectangle
+            - name: Strutture rectangle
               href: rectangle-structures.md
               items:
-                - name: PUNTO
+                - name: Punto
                   href: /previous-versions//dd162805(v=vs.85)
-                - name: PUNTI
+                - name: Punti
                   href: /previous-versions//dd162808(v=vs.85)
-                - name: RECT
+                - name: Rect
                   href: /previous-versions//dd162897(v=vs.85)
-            - name: Macro rettangolo
+            - name: Macro rettangolari
               href: rectangle-macros.md
               items:
-                - name: MAKEPOINTS
+                - name: MAKEPOINT
                   href: /windows/desktop/api/Wingdi/nf-wingdi-makepoints
                 - name: POINTSTOPOINT
                   href: /windows/desktop/api/Winuser/nf-winuser-pointstopoint
-                - name: POINTTOPOINTS
+                - name: PUNTI DI RIFERIMENTO
                   href: /windows/desktop/api/Winuser/nf-winuser-pointtopoints
     - name: Regioni
       href: regions.md
@@ -1733,36 +1733,36 @@
                   href: combining-regions.md
                 - name: Confronto tra aree
                   href: comparing-regions.md
-                - name: Aree di riempimento
+                - name: Riempimento di aree
                   href: filling-regions.md
                 - name: Aree di disegno
                   href: painting-regions.md
-                - name: Invertire le aree
+                - name: Inversione delle aree
                   href: inverting-regions.md
                 - name: Aree di framing
                   href: framing-regions.md
                 - name: Recupero di un rettangolo di delimitazione
                   href: retrieving-a-bounding-rectangle.md
-                - name: Aree mobili
+                - name: Spostamento di aree
                   href: moving-regions.md
                 - name: Aree di hit testing
                   href: hit-testing-regions.md
         - name: Utilizzo delle regioni
           href: using-regions.md
           items:
-            - name: Uso delle aree per ritagliare l'output
+            - name: Uso di aree per ritagliare l'output
               href: using-regions-to-clip-output.md
               items:
-                - name: Definizione dell'area di visualizzazione
+                - name: Definizione dell'area di ritaglio
                   href: defining-the-clipping-region.md
-                - name: Ritaglio dell'output
+                - name: Output di ritaglio
                   href: clipping-output.md
-            - name: Uso delle aree per eseguire l'hit testing
+            - name: Uso di aree per eseguire l'hit testing
               href: using-regions-to-perform-hit-testing.md
-        - name: Riferimento all'area
+        - name: Informazioni di riferimento per l'area
           href: region-reference.md
           items:
-            - name: Funzioni Region
+            - name: Funzioni di area
               href: region-functions.md
               items:
                 - name: CombineRgn
@@ -1809,7 +1809,7 @@
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setpolyfillmode
                 - name: SetRectRgn
                   href: /windows/desktop/api/Wingdi/nf-wingdi-setrectrgn
-            - name: Strutture Region
+            - name: Strutture di aree
               href: region-structures.md
               items:
                 - name: RGNDATA

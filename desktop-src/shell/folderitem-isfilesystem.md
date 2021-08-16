@@ -1,7 +1,7 @@
 ---
-description: Indica se l'elemento fa parte dell'file system.
+description: Indica se l'elemento fa parte del file system.
 ms.assetid: 321a2109-88b5-4a41-9a67-dab3e82e95d8
-title: Proprietà FolderItem. FileSystem (shldisp. h)
+title: Proprietà FolderItem.IsFileSystem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 852f022e1c24fa24c158ee4eb68dca44e6f010a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b618821880a713e3e76e3ae9c78454bb15469a578ab4d40def1a66d2d763c71a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860211"
 ---
-# <a name="folderitemisfilesystem-property"></a>Proprietà FolderItem. FileSystem
+# <a name="folderitemisfilesystem-property"></a>FolderItem.IsFileSystem - proprietà
 
-Indica se l'elemento fa parte dell'file system.
+Indica se l'elemento fa parte del file system.
 
 Questa proprietà è di sola lettura.
 
@@ -37,13 +37,13 @@ bIsFileSystem = FolderItem.IsFileSystem
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Valore booleano** che riceve **true** se l'elemento fa parte dell'file System o **false** in caso contrario.
+Valore **booleano** che riceve **true** se l'elemento fa parte del file system **o false** in caso contrario.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene usato il **file System** per determinare se la cartella di Windows fa parte del file System. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente **viene utilizzato IsFileSystem** per determinare se la cartella Windows fa parte del file system. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

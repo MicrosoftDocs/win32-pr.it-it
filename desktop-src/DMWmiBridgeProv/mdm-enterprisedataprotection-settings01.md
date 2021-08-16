@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseDataProtection_Settings01
-description: La \_ classe MDM EnterpriseDataProtection \_ Settings01 viene usata per configurare le impostazioni specifiche di Windows Information Protection (WIP) (precedentemente note come protezione dei dati aziendali).
+title: MDM_EnterpriseDataProtection_Settings01 classe
+description: La classe MDM EnterpriseDataProtection Settings01 viene usata per configurare le impostazioni specifiche di \_ \_ Windows Information Protection (WIP) (precedentemente noto come Enterprise Data Protection).
 ms.assetid: 7537f548-85fb-46b4-ab94-c9dcf2bf1447
 keywords:
-- Classe MDM_EnterpriseDataProtection_Settings01
-- Classe MDM_EnterpriseDataProtection_Settings01, descritta
+- MDM_EnterpriseDataProtection_Settings01 classe
+- MDM_EnterpriseDataProtection_Settings01 classe, descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e6ef063a1a8d72666dc44a2276bcecfb7d420c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e80502ff724a43f1034922b0734fe128124c193f0ef5319ee2976257d26fbe3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104478065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165834"
 ---
-# <a name="mdm_enterprisedataprotection_settings01-class"></a>\_Classe MDM EnterpriseDataProtection \_ Settings01
+# <a name="mdm_enterprisedataprotection_settings01-class"></a>Classe \_ MDM EnterpriseDataProtection \_ Settings01
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ EnterpriseDataProtection \_ Settings01** viene usata per configurare le impostazioni specifiche di Windows Information Protection (WIP) (precedentemente note come protezione dei dati aziendali). Per altre informazioni su WIP, vedere [proteggere i dati aziendali mediante EDP (Enterprise Data Protection)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+La **classe MDM \_ EnterpriseDataProtection \_ Settings01** viene usata per configurare impostazioni specifiche di Windows Information Protection (WIP) (in precedenza Enterprise Data Protection). Per altre informazioni su WIP, vedere Proteggere i dati aziendali usando la protezione dei dati [aziendali (EDP).](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -54,13 +54,13 @@ class MDM_EnterpriseDataProtection_Settings01
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ EnterpriseDataProtection \_ Settings01** presenta questi tipi di membri:
+La **classe MDM \_ EnterpriseDataProtection \_ Settings01** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ EnterpriseDataProtection \_ Settings01** dispone di queste proprietà.
+La **classe MDM \_ EnterpriseDataProtection \_ Settings01** ha queste proprietà.
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ La classe **MDM \_ EnterpriseDataProtection \_ Settings01** dispone di queste pr
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -81,7 +81,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -89,13 +89,13 @@ Tipo di accesso: lettura/scrittura
 [DataRecoveryCertificate](/windows/client-management/mdm/enterprisedataprotection-csp#settings-datarecoverycertificate)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: **OctetString**
+Qualificatori: **Octetstring**
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Qualificatori: **OctetString**
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -117,7 +117,7 @@ Tipo di accesso: lettura/scrittura
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -125,10 +125,10 @@ Tipo di accesso: lettura/scrittura
 [EnterpriseProtectedDomainNames](/windows/client-management/mdm/enterprisedataprotection-csp#settings-enterpriseprotecteddomainnames)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -136,7 +136,7 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -145,14 +145,14 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica il nome del nodo padre. Per questa classe la stringa è "Settings".
+Identifica il nome del nodo padre. Per questa classe, la stringa è "Impostazioni".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -161,7 +161,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/EnterpriseDataProtection"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/EnterpriseDataProtection"
 
 </dd> <dt>
 
@@ -171,7 +171,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -179,10 +179,10 @@ Tipo di accesso: lettura/scrittura
 [RMSTemplateIDForEDP](/windows/client-management/mdm/enterprisedataprotection-csp#settings-rmstemplateidforedp)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -190,10 +190,10 @@ Tipo di accesso: lettura/scrittura
 [SMBAutoEncryptedFileExtensions](/windows/client-management/mdm/enterprisedataprotection-csp#settings-smbautoencryptedfileextensions)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -204,11 +204,11 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                          |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                          |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                            |
-| Spazio dei nomi<br/>                | \\ \\ Dmmap MDM CIMV2 \\ radice<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllfile MOF</dt> </dl> |
+| Spazio dei nomi<br/>                | Dmmap \\ mdm cimv2 \\ \\ radice<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

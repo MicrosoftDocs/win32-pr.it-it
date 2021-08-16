@@ -1,5 +1,5 @@
 ---
-description: Come usare l'API di registrazione certificati per estendere le funzionalità di Servizi certificati Active Directory.
+description: Come usare l'API Di registrazione certificati per estendere le funzionalità di Servizi certificati Active Directory.
 ms.assetid: a38c6974-609b-4a60-98da-ad8e0a8fd58f
 title: Uso dell'API di registrazione certificati
 ms.topic: article

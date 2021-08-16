@@ -1,34 +1,34 @@
 ---
-description: Nelle finestre a 64 bit, le parti delle voci del registro di sistema vengono archiviate separatamente per le applicazioni a 32 bit e a 64 bit e sono mappate in visualizzazioni del registro di sistema logiche separate usando il redirector del registro di sistema e la reflection del registro di sistema, perché la versione a 64 bit di un'applicazione può usare chiavi e valori del registro di sistema diversi dalla versione a 32 Sono inoltre disponibili chiavi del registro di sistema condivise che non vengono reindirizzate o riflesse.
+description: Nel Windows a 64 bit, parti delle voci del Registro di sistema vengono archiviate separatamente per applicazioni a 32 bit e applicazioni a 64 bit e mappate in visualizzazioni del Registro di sistema logiche separate usando il redirector del Registro di sistema e la reflection del Registro di sistema, perché la versione a 64 bit di un'applicazione può usare chiavi e valori del Registro di sistema diversi rispetto alla versione a 32 bit. Sono inoltre presenti chiavi del Registro di sistema condivise che non vengono reindirizzate o riflesse.
 ms.assetid: 08dc034c-15ce-41d9-8e74-a49b61ad40a6
-title: Dati dell'applicazione a 32 bit e a 64 bit nel registro di sistema
+title: Dati dell'applicazione a 32 bit e a 64 bit nel Registro di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc82dfbf9b22cf90866e13109aeea2bcdb10e27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d87d5177eb48a5497e321b47bb0da96874a0e6522360f2dc519dc72df3dcdf89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103882041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764985"
 ---
-# <a name="32-bit-and-64-bit-application-data-in-the-registry"></a>Dati dell'applicazione a 32 bit e a 64 bit nel registro di sistema
+# <a name="32-bit-and-64-bit-application-data-in-the-registry"></a>Dati dell'applicazione a 32 bit e a 64 bit nel Registro di sistema
 
-Nelle finestre a 64 bit, le parti delle voci del registro di sistema vengono archiviate separatamente per le applicazioni a 32 bit e a 64 bit e sono mappate in visualizzazioni del registro di sistema logiche separate usando il [redirector del registro di sistema](/windows/desktop/WinProg64/registry-redirector) e la [Reflection del registro](/windows/desktop/WinProg64/registry-reflection)di sistema, perché la versione a 64 bit di un'applicazione può usare chiavi e valori del registro di sistema diversi dalla versione a 32 Sono inoltre disponibili [chiavi del registro di sistema condivise](/windows/desktop/WinProg64/shared-registry-keys) che non vengono reindirizzate o riflesse.
+Nel Windows a 64 bit, parti delle voci del Registro di sistema vengono archiviate separatamente per applicazioni a 32 bit e applicazioni a 64 bit e mappate in viste del Registro di sistema logiche separate usando il [redirector](/windows/desktop/WinProg64/registry-redirector) del Registro di sistema e la [reflection](/windows/desktop/WinProg64/registry-reflection)del Registro di sistema , perché la versione a 64 bit di un'applicazione può usare chiavi e valori del Registro di sistema diversi rispetto alla versione a 32 bit. Sono inoltre presenti [chiavi del Registro di](/windows/desktop/WinProg64/shared-registry-keys) sistema condivise che non vengono reindirizzate o riflesse.
 
-L'elemento padre di ogni nodo del registro di sistema a 64 bit è il nodo Image-Specific o ISN. Il redirector del registro di sistema indirizza in modo trasparente l'accesso del registro di sistema di un'applicazione al sottonodo ISN appropriato. I sottonodi di reindirizzamento nell'albero del registro di sistema vengono creati automaticamente dal componente WOW64 usando il nome **Wow6432Node**. Di conseguenza, è essenziale non assegnare un nome alla chiave del registro di sistema creata **Wow6432Node**.
+L'elemento padre di ogni nodo del Registro di sistema a 64 bit è Image-Specific nodo o IS. Il redirector del Registro di sistema indirizza in modo trasparente l'accesso al Registro di sistema di un'applicazione al sottonodo ISN appropriato. I sottonodi di reindirizzamento nell'albero del Registro di sistema vengono creati automaticamente dal componente WOW64 usando il nome **Wow6432Node.** Di conseguenza, è essenziale non assegnare un nome ad alcuna chiave del Registro di sistema creata **in Wow6432Node.**
 
-I \_ \_ flag 64KEY WOW64 32KEY e chiave \_ WOW64 \_ abilitano l'accesso esplicito alla visualizzazione del registro di sistema a 64 bit e rispettivamente alla visualizzazione a 32 bit. Per ulteriori informazioni, vedere [accesso a una visualizzazione del registro di sistema alternativa](/windows/desktop/WinProg64/accessing-an-alternate-registry-view).
+I flag KEY \_ WOW64 \_ 64KEY e KEY WOW64 32KEY consentono l'accesso esplicito rispettivamente alla visualizzazione del Registro di sistema a 64 bit e alla visualizzazione a \_ \_ 32 bit. Per altre informazioni, vedere [Accesso a una visualizzazione alternativa del Registro di sistema.](/windows/desktop/WinProg64/accessing-an-alternate-registry-view)
 
-Per disabilitare e abilitare la reflection del registro di sistema per una chiave specifica, usare le funzioni [**RegDisableReflectionKey**](/windows/desktop/api/Winreg/nf-winreg-regdisablereflectionkey) e [**RegEnableReflectionKey**](/windows/desktop/api/Winreg/nf-winreg-regenablereflectionkey) . Le applicazioni devono disabilitare la reflection solo per le chiavi del registro di sistema create e non tentare di disabilitare la reflection per le chiavi predefinite, ad esempio il **\_ \_ computer locale HKEY** o l' **\_ \_ utente corrente di HKEY**. Per determinare quali chiavi si trovano nell'elenco Reflection, usare la funzione [**RegQueryReflectionKey**](/windows/desktop/api/WinReg/nf-winreg-regqueryreflectionkey) .
+Per disabilitare e abilitare la reflection del Registro di sistema per una chiave specifica, usare le funzioni [**RegDisableReflectionKey**](/windows/desktop/api/Winreg/nf-winreg-regdisablereflectionkey) e [**RegEnableReflectionKey.**](/windows/desktop/api/Winreg/nf-winreg-regenablereflectionkey) Le applicazioni devono disabilitare la reflection solo per le chiavi del Registro di sistema create e non tentare di disabilitare la reflection per le chiavi predefinite, ad esempio **HKEY \_ LOCAL \_ MACHINE** o **HKEY \_ CURRENT \_ USER.** Per determinare le chiavi presenti nell'elenco di reflection, usare la [**funzione RegQueryReflectionKey.**](/windows/desktop/api/WinReg/nf-winreg-regqueryreflectionkey)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[redirector del registro di sistema](/windows/desktop/WinProg64/registry-redirector)
+[redirector del Registro di sistema](/windows/desktop/WinProg64/registry-redirector)
 </dt> <dt>
 
-[Reflection del registro di sistema](/windows/desktop/WinProg64/registry-reflection)
+[reflection del Registro di sistema](/windows/desktop/WinProg64/registry-reflection)
 </dt> </dl>
 
  

@@ -13,14 +13,14 @@ ms.locfileid: "117780080"
 ---
 # <a name="encoding-a-subject-name"></a>Codifica di un nome soggetto
 
-Quando si inizializza un oggetto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nome distinto per identificare il soggetto di una richiesta di certificato, viene creata una sequenza ASN.1 [*(Abstract Syntax Notation One)*](/windows/desktop/SecGloss/a-gly) codificata [*Distinguished Encoding Rules*](/windows/desktop/SecGloss/d-gly) (DER). Si supponga, ad esempio, che il nome distinto del soggetto sia costituito dai nomi distinti relativi (RDN) seguenti:<dl> E=Administrator@jdomcsc.nttest.microsoft.com  
-CN=Amministratore  
+Quando si inizializza un oggetto [**IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) con un nome distinto per identificare l'oggetto di una richiesta di certificato, viene creata una sequenza ASN.1 [*(Abstract Syntax Notation One)*](/windows/desktop/SecGloss/a-gly) codificata [*Distinguished Encoding Rules*](/windows/desktop/SecGloss/d-gly) (DER). Si supponga, ad esempio, che il nome distinto del soggetto sia costituito dai nomi distinti relativi (RDN) seguenti:<dl> E=Administrator@jdomcsc.nttest.microsoft.com  
+CN=Administrator  
 CN=Users  
 DC=jdomcsc  
 DC=nttest  
 DC=microsoft  
 DC=com  
-</dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">PKCS #7'argomento Renewal Encoded ASN.1.</a>
+</dl>The **IX500DistinguishedName** object creates the following DER-encoded (ASN.1) sequence. Notice that the sequence is encoded in reverse order. This example is derived from the<a href="pkcs--7-renewal-encoded-asn-1.md">PKCS #7 rinnovo codificato ASN.1.</a>
 
 ``` syntax
 0a0d: 30 81 c4          ; SEQUENCE (c4 Bytes)
@@ -84,7 +84,7 @@ DC=com
       |              ; "Administrator@jdomcsc.nttest.microsoft.com"
 ```
 
-Come illustrato in [Nomi oggetto](subject-names.md), ogni RDN in un nome distinto è costituito da un set di attributi e ogni attributo contiene un identificatore di oggetto (OID) e un valore. [](/windows/desktop/SecGloss/o-gly) Per comprendere in che modo [**l'oggetto IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) codifica un nome distinto, prendere in considerazione il nome comune CN=Users.
+Come illustrato in [Nomi soggetto](subject-names.md), ogni RDN in un nome distinto è costituito da un set di attributi e ogni attributo contiene un identificatore di oggetto (OID) e un valore. [](/windows/desktop/SecGloss/o-gly) Per comprendere in che modo [**l'oggetto IX500DistinguishedName**](/windows/desktop/api/CertEnroll/nn-certenroll-ix500distinguishedname) codifica un nome distinto, prendere in considerazione il nome comune CN=Users.
 
 ``` syntax
 0a73: |  |  30 0c               ; SEQUENCE (c Bytes)
@@ -96,7 +96,7 @@ Come illustrato in [Nomi oggetto](subject-names.md), ogni RDN in un nome distint
       |  |           ; "Users"
 ```
 
-La sintassi di trasferimento DER di un oggetto ASN.1 contiene sempre un tipo, una lunghezza e una tripletta di valori e ogni campo nella tripletta contiene uno o più byte. Quando viene codificato, CN=Users è costituito da un OID e da un valore stringa. La notazione decimale tratteggiata dell'OID CN è 2.5.4.3 e il valore stringa è "Users". Il valore stringa è rappresentato come tipo **PRINTABLE_STRING** dati. Il valore del tipo numerico associato **a OBJECT_ID** è sempre 0x06 e il tipo numerico associato a PRINTABLE_STRING **è** sempre 0x13. La lunghezza del nome comune "Users" è 0x05 byte. La lunghezza dell'OID è 0x03 byte e il valore è 0x55 0x04 0x03.
+La sintassi di trasferimento DER di un oggetto ASN.1 contiene sempre un tipo, una lunghezza e una tripletta di valori e ogni campo nella tripletta contiene sempre uno o più byte. Quando viene codificato, CN=Users è costituito da un OID e da un valore stringa. La notazione decimale virgola dell'OID CN è 2.5.4.3 e il valore stringa è "Users". Il valore stringa è rappresentato come tipo **PRINTABLE_STRING** dati. Il valore del tipo numerico associato **OBJECT_ID** è sempre 0x06 e il tipo numerico associato a PRINTABLE_STRING **è** sempre 0x13. La lunghezza del nome comune "Users" è 0x05 byte. La lunghezza dell'OID 0x03 byte e il relativo valore è 0x55 0x04 0x03.
 
 > [!Note]  
 > Per convertire le prime due cifre dell'OID 2.5.4.3 nel valore esadecimale 0x55, moltiplicare la prima cifra dell'OID per 40 (2 x 40) e aggiungere la seconda cifra (5) prima della conversione in formato esadecimale.

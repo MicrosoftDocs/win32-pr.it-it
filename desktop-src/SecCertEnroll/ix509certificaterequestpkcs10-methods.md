@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IX509CertificateRequestPkcs10 espone i metodi seguenti.
 ms.assetid: 85D24693-72CC-43B0-9F29-50C4536E5D3B
-title: Metodi IX509CertificateRequestPkcs10
+title: Metodi di IX509CertificateRequestPkcs10
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42caf949f0095fb2113153683075683505c69e54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e55159796e1ad48578bd52fa082233aa74330c814808a4746e92b3dfff2beff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776510"
 ---
-# <a name="ix509certificaterequestpkcs10-methods"></a>Metodi IX509CertificateRequestPkcs10
+# <a name="ix509certificaterequestpkcs10-methods"></a>Metodi di IX509CertificateRequestPkcs10
 
-L'interfaccia [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) espone i metodi seguenti.
+[**L'interfaccia IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -23,7 +23,7 @@ L'interfaccia [**IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnrol
 -   [**Metodo InitializeFromPrivateKey**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefromprivatekey)
 -   [**Metodo InitializeFromPublicKey**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefrompublickey)
 -   [**Metodo InitializeFromTemplateName**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-initializefromtemplatename)
--   [**Metodo SmartCard**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-issmartcard)
+-   [**Metodo IsSmartCard**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-issmartcard)
 -   [**Metodo GetCspStatuses**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestpkcs10-getcspstatuses)
 
  

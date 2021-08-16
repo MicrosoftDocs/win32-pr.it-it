@@ -1,5 +1,5 @@
 ---
-description: Usato per associare una macchina virtuale al RELATIVO BIOS.
+description: Usato per associare una macchina virtuale al relativo BIOS.
 ms.assetid: 494E9D9F-64D5-49D5-A6C7-ABE469ABA4CA
 title: Msvm_SystemBIOS classe
 ms.topic: reference
@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391896"
 ---
-# <a name="msvm_systembios-class"></a>Classe \_ SystemBIOS Msvm
+# <a name="msvm_systembios-class"></a>Classe \_ SystemBIOS msvm
 
-Usato per associare una macchina virtuale al RELATIVO BIOS.
+Usato per associare una macchina virtuale al relativo BIOS.
 
 La sintassi seguente è Managed Object Format codice MOF e include tutte le proprietà ereditate.
 
@@ -41,13 +41,13 @@ class Msvm_SystemBIOS : CIM_SystemBIOS
 
 ## <a name="members"></a>Members
 
-La **classe \_ SystemBIOS Msvm** ha questi tipi di membri:
+La **classe \_ SystemBIOS msvm** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-Queste proprietà sono disponibili nella classe **\_ SystemBIOS msvm.**
+La **classe \_ SystemBIOS msvm** dispone di queste proprietà.
 
 <dl> <dt>
 
@@ -60,10 +60,10 @@ Tipo di dati: **[ **CIM \_ ComputerSystem**](msvm-computersystem.md)**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Aggregate,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificatori: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Macchina virtuale che viene avviata dal BIOS.
+Macchina virtuale che inizia dal BIOS.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Tipo di dati: **[ **Msvm \_ BIOSElement**](msvm-bioselement.md)**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificatori: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
 BIOS associato alla macchina virtuale.
@@ -85,7 +85,7 @@ BIOS associato alla macchina virtuale.
 
 ## <a name="remarks"></a>Commenti
 
-L'accesso alla **classe \_ SystemBIOS Msvm** potrebbe essere limitato dal filtro di Controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+L'accesso alla **classe \_ SystemBIOS Msvm** potrebbe essere limitato dal filtro del controllo dell'account utente. Per altre informazioni, vedere [Controllo dell'account utente e WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,7 +95,7 @@ L'accesso alla **classe \_ SystemBIOS Msvm** potrebbe essere limitato dal filtro
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

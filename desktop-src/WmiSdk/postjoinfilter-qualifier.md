@@ -22,7 +22,7 @@ ms.locfileid: "118317025"
 ---
 # <a name="postjoinfilter-qualifier"></a>Qualificatore PostJoinFilter
 
-È possibile filtrare le istanze di una classe di visualizzazione join assegnando una query WQL al qualificatore **PostJoinFilter.** Il valore della query WQL viene applicato alle istanze della classe di visualizzazione join. È possibile usare questo qualificatore per limitare le istanze della classe di visualizzazione a quelle che soddisfano condizioni specifiche. La query WQL seguente filtra le istanze di una classe di join denominata in base alle istanze di [**\_ LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
+È possibile filtrare le istanze di una classe di visualizzazione join assegnando una query WQL al qualificatore **PostJoinFilter.** Il valore della query WQL viene applicato alle istanze della classe della vista join. È possibile usare questo qualificatore per limitare le istanze della classe di visualizzazione a quelle che soddisfano condizioni specifiche. La query WQL seguente filtra le istanze di una classe di join denominata in base alle istanze di [**\_ LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
 
 ```C++
@@ -35,9 +35,9 @@ PostJoinFilter("SELECT * FROM JoinDrive" +
 
 Esistono diverse restrizioni per l'uso di questo qualificatore:
 
--   **PostJoinFilter è** disponibile solo per unire le classi di visualizzazione.
+-   **PostJoinFilter è disponibile** solo per unire le classi di visualizzazione.
 -   Il nome della classe e i nomi delle proprietà specificati nella query fanno riferimento alle proprietà della classe di visualizzazione, non alla classe di origine.
--   Non è consentita alcuna esclusione di proprietà. Sono `SELECT *` consentite solo query di tipo.
+-   Non è consentita alcuna esclusione di proprietà. sono `SELECT *` consentite solo query di tipo.
 
 ## <a name="requirements"></a>Requisiti
 

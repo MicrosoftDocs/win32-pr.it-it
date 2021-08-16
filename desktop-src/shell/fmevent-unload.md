@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 15ffcd46-602f-4ad0-9c58-0b8056b9cac4
-ms.openlocfilehash: 24b5b2a77393178cad545cb63c1524a8d7e92c5c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5d18d72a43ac1fca6906bb1e3f7a14468dbd02933d801dc3c20e2a933bc18f1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860366"
 ---
 # <a name="fmevent_unload-message"></a>Messaggio FMEVENT \_ UNLOAD
 

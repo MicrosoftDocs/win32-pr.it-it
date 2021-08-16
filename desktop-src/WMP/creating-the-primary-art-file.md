@@ -40,7 +40,7 @@ Questi sono i due controlli dell'interfaccia utente utilizzati in questo esempio
 
 Prima di creare i livelli, è necessario creare il file che contenerà i livelli. Avviare Photoshop e creare un nuovo file con un'altezza di 100 pixel e una larghezza di 200 pixel. Il file usato per creare l'immagine per questo esempio è denominato tiny.psd ed è incluso nell'SDK.
 
-Tutte le istruzioni sono fornite in termini di Photoshop, ma qualsiasi altro programma di grafica può essere usato per creare le interfaccia, purché sia possibile salvare in uno dei formati di file supportati da Windows Media Player (BMP, GIF, JPG e PNG). La creazione di un'interfaccia utente risulta più semplice se si usa un programma di grafica con livelli, ad esempio Adobe Photoshop, Jasc Paint Shop Pro o Jedor Viscosity. I livelli sono estremamente utili perché le immagini devono essere allineate correttamente per il mapping delle immagini e la visualizzazione di immagini alternative.
+Tutte le istruzioni sono fornite in termini di Gif, ma qualsiasi altro programma di grafica può essere usato per creare le interfaccia, purché sia possibile salvare in uno dei formati di file supportati da Windows Media Player (BMP, GIF, JPG e PNG). La creazione dell'interfaccia utente risulta più semplice se si usa un programma di grafica con livelli, ad esempio Adobe Photoshop, Jasc Paint Shop Pro o Jedor Viscosity. I livelli sono estremamente utili perché le immagini devono essere allineate correttamente per il mapping delle immagini e la visualizzazione di immagini alternative.
 
 ## <a name="skin-background-layer"></a>Livello di sfondo dell'interfaccia
 

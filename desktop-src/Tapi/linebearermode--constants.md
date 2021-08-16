@@ -32,7 +32,7 @@ Trasferimento alternativo di dati vocali o senza restrizioni nella stessa chiama
 
 
 
-Trasferimento di dati senza restrizioni nella chiamata. La frequenza dei dati viene specificata separatamente.
+Trasferimento di dati senza restrizioni nella chiamata. La velocità dei dati viene specificata separatamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Modalità multiuso definita da ISDN.
 
 
 
-Corrisponde a una connessione di segnalazione non associata alle chiamate dall'applicazione al provider di servizi o al commutatore (considerato come flusso multimediale da TAPI).
+Corrisponde a una connessione di segnalazione non associata alla chiamata dall'applicazione al provider di servizi o al commutatore (considerato come flusso multimediale da TAPI).
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Corrisponde a una connessione di segnalazione non associata alle chiamate dall'a
 
 
 
-Quando una chiamata è attiva in LINEBEARERMODE PASSTHROUGH, il provider di servizi concede l'accesso diretto all'hardware collegato per il controllo \_ da parte dell'applicazione. Questa modalità viene usata principalmente dalle applicazioni che desiderano il controllo diretto temporaneo sui modem asincroni, accessibili tramite le funzioni di comunicazione [,](/windows/desktop/DevIO/communications-functions)allo scopo di configurare o usare funzionalità speciali non altrimenti supportate dal provider di servizi.
+Quando una chiamata è attiva in LINEBEARERMODE PASSTHROUGH, il provider di servizi concede l'accesso diretto all'hardware collegato per \_ il controllo da parte dell'applicazione. Questa modalità viene utilizzata principalmente dalle applicazioni che desiderano il controllo diretto temporaneo sui modem asincroni, accessibili tramite le funzioni di comunicazione [,](/windows/desktop/DevIO/communications-functions)allo scopo di configurare o utilizzare funzionalità speciali non altrimenti supportate dal provider di servizi.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Quando una chiamata è attiva in LINEBEARERMODE PASSTHROUGH, il provider di serv
 
 
 
-Servizio di connessione per i dati digitali in cui solo i sette bit di basso livello di ogni ottetto possono contenere dati utente (ad esempio, per il servizio Switched 56kbit/s).
+Servizio di connessione per i dati digitali in cui solo i sette bit meno validi di ogni ottetto possono contenere dati utente(ad esempio, per il servizio Switched 56kbit/s).
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ Servizio di connessione per i dati digitali in cui solo i sette bit di basso liv
 
 
 
-Corrisponde alla trasmissione vocale G.711 nella chiamata. La rete può usare tecniche di elaborazione come la trasmissione analoga, l'annullamento dell'echo e la compressione/decompressione. L'integrità dei bit non è garantita. Il riconoscimento vocale non è progettato per supportare i tipi di supporti fax e modem.
+Corrisponde alla trasmissione vocale G.711 nella chiamata. La rete può usare tecniche di elaborazione come la trasmissione analogica, l'annullamento dell'eco e la compressione/decompressione. L'integrità dei bit non è garantita. Il riconoscimento vocale non è progettato per supportare i tipi di supporti fax e modem.
 
 
 </dt> </dl> </dd> <dt>
@@ -92,16 +92,16 @@ Corrisponde alla trasmissione vocale G.711 nella chiamata. La rete può usare te
 
 
 
-Si tratta di un normale servizio di connessione vocale analogica a 3,1 kHz. L'integrità dei bit non è garantita. La voce può supportare i tipi di supporti fax e modem.
+Si tratta di un normale servizio di connessione di livello vocale analogo a 3,1 kHz. L'integrità dei bit non è garantita. La voce può supportare i tipi di supporti fax e modem.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit di ordine basso sono riservati.
+I 16 bit di ordine elevato possono essere assegnati per le estensioni specifiche del dispositivo. I 16 bit meno bassi sono riservati.
 
-Si noti che la modalità di bearer e il tipo di supporto sono nozioni diverse. La modalità di connessione di una chiamata è un'indicazione della qualità della connessione telefonica fornita principalmente dalla rete. Il tipo di supporto di una chiamata è un'indicazione del tipo di flusso di informazioni scambiato su tale chiamata. Il fax o il modem dati di gruppo 3 sono tipi di supporti che usano una chiamata con modalità di connessione vocale a 3,1 kHz.
+Si noti che la modalità di accesso e il tipo di supporto sono concetti diversi. La modalità di connessione di una chiamata è un'indicazione della qualità della connessione telefonica fornita principalmente dalla rete. Il tipo di supporto di una chiamata è un'indicazione del tipo di flusso di informazioni scambiato su tale chiamata. Il fax di gruppo 3 o il modem dati sono tipi di supporti che usano una chiamata con una modalità di connessione vocale a 3,1 kHz.
 
 ## <a name="requirements"></a>Requisiti
 

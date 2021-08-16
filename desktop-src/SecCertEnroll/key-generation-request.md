@@ -1,17 +1,17 @@
 ---
 description: L'esempio seguente contiene una richiesta di generazione della chiave.
 ms.assetid: 81b63461-da9a-47df-8f8d-90226e8ee35b
-title: Richiesta di generazione chiave
+title: Richiesta di generazione della chiave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ead6a64cd68a819c7fb80e33c53388f68e1591cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40c0834aa314e5b81b28ac06fd46735a969649c51d54b25d2ab2fcc83aae4e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774836"
 ---
-# <a name="key-generation-request"></a>Richiesta di generazione chiave
+# <a name="key-generation-request"></a>Richiesta di generazione della chiave
 
 L'esempio seguente contiene una richiesta di generazione della chiave.
 

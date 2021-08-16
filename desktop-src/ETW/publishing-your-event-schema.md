@@ -1,5 +1,5 @@
 ---
-description: Per informazioni sulla pubblicazione dello schema di eventi per un provider basato su manifesto, vedere Pubblicazione dello schema eventi per un provider basato su manifesto. Per informazioni sulla pubblicazione dello schema di eventi per un provider classico, vedere Pubblicazione dello schema eventi per un provider classico.
+description: Per informazioni sulla pubblicazione dello schema di eventi per un provider basato su manifesto, vedere Pubblicazione dello schema di eventi per un provider basato su manifesto. Per informazioni sulla pubblicazione dello schema di eventi per un provider classico, vedere Pubblicazione dello schema di eventi per un provider classico.
 ms.assetid: 512a6b17-5953-49dd-970f-3df3a76065cc
 title: Pubblicazione dello schema di eventi
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118394399"
 ---
 # <a name="publishing-your-event-schema"></a>Pubblicazione dello schema di eventi
 
-Per informazioni sulla pubblicazione dello schema di eventi per un provider basato su [manifesto,](about-event-tracing.md) vedere Pubblicazione dello schema di eventi [per un provider basato su manifesto](publishing-your-event-schema-for-a-manifest-base-provider.md).
+Per informazioni sulla pubblicazione dello schema di eventi per un provider [basato](about-event-tracing.md) su manifesto, vedere [Pubblicazione dello schema di eventi per un provider basato su manifesto.](publishing-your-event-schema-for-a-manifest-base-provider.md)
 
-Per informazioni sulla pubblicazione dello schema di eventi per un provider [classico,](about-event-tracing.md) vedere [Pubblicazione dello schema di eventi per un provider classico](publishing-your-event-schema-for-a-classic-provider.md).
+Per informazioni sulla pubblicazione dello schema di eventi per un provider [classico,](about-event-tracing.md) vedere [Pubblicazione dello schema di eventi per un provider classico.](publishing-your-event-schema-for-a-classic-provider.md)
 
  
 

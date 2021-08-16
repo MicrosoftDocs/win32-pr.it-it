@@ -3,12 +3,12 @@
   items:
     - name: Informazioni legali
       href: '-wia-legal-information.md'
-    - name: 'Considerazioni sulla sicurezza: acquisizione Windows''immagine'
+    - name: 'Considerazioni sulla sicurezza: Windows''acquisizione di immagini'
       href: '-wia-security-considerations.md'
     - name: Riferimento
       href: '-wia-reference.md'
       items:
-        - name: Novità dell'acquisizione di Windows immagini (WIA) 2.0
+        - name: Novità dell'acquisizione Windows immagini (WIA) 2.0
           href: '-wia-whatsnew-longhorn.md'
         - name: Interfaccia di programmazione delle applicazioni WIA
           href: '-wia-wia-application-programming-interface.md'
@@ -382,7 +382,7 @@
                 - name: IWiaUIExtension
                   href: '-wia-iwiauiextension.md'
                   items:
-                    - name: Finestra di dialogo Dispositivo
+                    - name: DeviceDialog
                       href: '-wia-iwiauiextension-devicedialog.md'
                     - name: GetDeviceBitmapLogo
                       href: '-wia-iwiauiextension-getdevicebitmaplogo.md'
@@ -391,7 +391,7 @@
                 - name: IWiaUIExtension2
                   href: '-wia-iwiauiextension2.md'
                   items:
-                    - name: Finestra di dialogo Dispositivo
+                    - name: DeviceDialog
                       href: '-wia-iwiauiextension2-devicedialog.md'
                     - name: GetDeviceIcon
                       href: '-wia-iwiauiextension2-getdeviceicon.md'
@@ -423,7 +423,7 @@
             - name: Funzioni
               href: '-wia-functions.md'
               items:
-                - name: Finestra di dialogo Dispositivo
+                - name: DeviceDialog
                   href: '-wia-devicedialog.md'
                 - name: InstallWiaDevice
                   href: '-wia-installwiadevice.md'
@@ -474,7 +474,7 @@
                   href: '-wia-wiadeviceinfoprop.md'
                 - name: Codici errore
                   href: '-wia-error-codes.md'
-                - name: Costanti finalità immagine
+                - name: Costanti della finalità dell'immagine
                   href: '-wia-imageintentconstants.md'
                 - name: Attributi di proprietà
                   href: '-wia-property-attributes.md'
@@ -484,9 +484,9 @@
                   href: '-wia-wiaitempropscanneritem.md'
                 - name: Costanti delle proprietà del dispositivo WIA video
                   href: '-wia-wiaitempropvideodevice.md'
-                - name: GUID categoria elemento WIA 2.0
+                - name: GUID della categoria di elementi DI WIA 2.0
                   href: '-wia-wia2-itemcategoryguids.md'
-                - name: Costanti per dimensioni di pagina WIA 2.0
+                - name: Costanti di dimensioni pagina WIA 2.0
                   href: '-wia-wia2-pagesizeconstants.md'
                 - name: Comandi del dispositivo WIA
                   href: '-wia-wia-device-commands.md'
@@ -496,7 +496,7 @@
                   href: '-wia-wia-event-identifiers.md'
                 - name: Flag del tipo di elemento WIA
                   href: '-wia-wia-item-type-flags.md'
-                - name: Costanti delle proprietà WIA
+                - name: Costanti della proprietà WIA
                   href: '-wia-wia-property-constants.md'
                 - name: WiaFlag
                   href: '-wia-wiaflag.md'
@@ -562,7 +562,7 @@
                   href: '-wia-iwiadispatchitem-name.md'
                 - name: PictureHeight
                   href: '-wia-iwiadispatchitem-pictureheight.md'
-                - name: Proprietà PictureWidth
+                - name: PictureWidth
                   href: '-wia-iwiadispatchitem-picturewidth.md'
                 - name: TakePicture
                   href: '-wia-iwiadispatchitem-takepicture.md'
@@ -598,25 +598,25 @@
                   href: '-wia--iwiaevents-ondevicedisconnected.md'
                 - name: OnTransferComplete
                   href: '-wia--iwiaevents-ontransfercomplete.md'
-    - name: Panoramiche ed esercitazioni
+    - name: Cenni preliminari ed esercitazioni
       href: bumper-wia-overviews-and-tutorials.md
       items:
-        - name: Informazioni sull Windows'acquisizione di immagini
+        - name: Informazioni Windows'acquisizione di immagini
           href: '-wia-about-windows-image-acquisition.md'
           items:
             - name: Architettura WIA
               href: '-wia-wia-architecture.md'
             - name: Compatibilità sti
               href: '-wia-sti-compatibility.md'
-            - name: Compatibilità TWAIN
+            - name: Compatibilità con TWAIN
               href: '-wia-twain-compatibility.md'
             - name: Gestione dispositivi WIA
               href: '-wia-wia-device-manager.md'
-            - name: Libreria del servizio minidriver WIA
+            - name: Libreria del servizio WiA Minidriver
               href: '-wia-wia-minidriver-service-library.md'
             - name: WIA Minidriver
               href: '-wia-wia-minidriver.md'
-        - name: Uso dell Windows'acquisizione di immagini
+        - name: Uso Windows'acquisizione di immagini
           href: '-wia-using-windows-image-acquisition.md'
           items:
             - name: Uso di oggetti dispositivo WIA
@@ -663,12 +663,12 @@
               href: '-wia-using-multiple-threads.md'
             - name: Comunicazione con un dispositivo WIA in più thread o applicazioni
               href: '-wia-communicating-with-a-wia-device.md'
-            - name: Uso di WIA Video
+            - name: Video sull'uso di WIA
               href: '-wia-using-wia-video.md'
               items:
-                - name: Anteprima del video
+                - name: Video di anteprima
                   href: '-wia-previewing-video.md'
-                - name: Acquisizione di un'immagine ferma da un flusso video
+                - name: Acquisizione di un'immagine ancorata da un flusso video
                   href: '-wia-capturing-a-still-image-from-a-video-stream.md'
             - name: Uso del modello di scripting WIA
               href: '-wia-using-the-wia-scripting-model.md'
@@ -677,7 +677,7 @@
                   href: '-wia-setting-up-the-scripting-model.md'
                 - name: Connessione a un dispositivo
                   href: '-wia-connecting-to-a-device.md'
-                - name: Esplorazione di un albero di oggetti Item
+                - name: Esplorazione di una struttura ad albero di oggetti Item
                   href: '-wia-navigating-a-tree-of-item-objects.md'
                 - name: Trasferimento di dati
                   href: '-wia-transferring-data.md'
@@ -686,7 +686,7 @@
         - name: Esercitazione su WIA
           href: '-wia-wia-tutorial.md'
           items:
-            - name: Creazione di Gestione dispositivi WIA
+            - name: Creazione di gestione dispositivi WIA
               href: '-wia-creating-a-wia-device-manager.md'
             - name: Enumerazione dei dispositivi di sistema
               href: '-wia-enumerating-system-devices.md'

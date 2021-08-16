@@ -1,9 +1,9 @@
 ---
-title: ACK per ping
-description: Usare ACK per il pacchetto ping per confermare la richiesta ping del client.
+title: Ack for Ping
+description: Usare il pacchetto Ack for Ping per confermare la richiesta Ping del client.
 ms.assetid: 2e288564-d06f-4b45-b0c0-7aab1897da40
 keywords:
-- ACK per BITS ping
+- Ack for Ping BITS
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a3ca765c8bd7758f19abe396ad0449a5895d8e
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 09f31850599331027f3f8135a42dac8c8ea54519c04291d42fb06b5c7b8735fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103963548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835181"
 ---
-# <a name="ack-for-ping"></a>ACK per ping
+# <a name="ack-for-ping"></a>Ack for Ping
 
-Usare **ACK per** il pacchetto ping per confermare la richiesta [**ping**](ping.md) del client.
+Usare il **pacchetto Ack for Ping** per confermare la richiesta Ping [**del**](ping.md) client.
 
 ``` syntax
 reason-code reason-description
@@ -38,42 +38,42 @@ BITS-Error-Context: error-context
 <span id="reason-code"></span><span id="REASON-CODE"></span>codice motivo
 </dt> <dd>
 
-Sostituire Reason-Code con il codice motivo HTTP. Ad esempio, impostare Reason-Code su 200 in caso di esito positivo. Per un elenco di codici motivo HTTP, vedere [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt).
+Sostituire reason-code con il codice motivo HTTP. Ad esempio, impostare il codice motivo su 200 in caso di esito positivo. Per un elenco dei codici motivo HTTP, vedere [RFC 2616.](https://www.ietf.org/rfc/rfc2616.txt)
 
 </dd> <dt>
 
-<span id="reason-description"></span><span id="REASON-DESCRIPTION"></span>motivo-Descrizione
+<span id="reason-description"></span><span id="REASON-DESCRIPTION"></span>reason-description
 </dt> <dd>
 
-Sostituire Reason-Description con la descrizione HTTP associata al codice motivo. Ad esempio, impostare Reason-Description su OK se Reason-Code è 200.
+Sostituire reason-description con la descrizione HTTP associata al codice motivo. Ad esempio, impostare reason-description su OK se il codice motivo è 200.
 
 </dd> <dt>
 
-<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>BITS-tipo-pacchetto
+<span id="BITS-Packet-Type"></span><span id="bits-packet-type"></span><span id="BITS-PACKET-TYPE"></span>TIPO DI PACCHETTO BITS
 </dt> <dd>
 
-Identifica il pacchetto di risposta come pacchetto ACK.
+Identifica questo pacchetto di risposta come pacchetto Ack.
 
 </dd> <dt>
 
-<span id="Content-Length"></span><span id="content-length"></span><span id="CONTENT-LENGTH"></span>Lunghezza del contenuto
+<span id="Content-Length"></span><span id="content-length"></span><span id="CONTENT-LENGTH"></span>Lunghezza contenuto
 </dt> <dd>
 
-Sostituire length con il numero di byte inclusi nel corpo della risposta. Obbligatorio anche se il corpo della risposta non include il contenuto.
+Sostituire length con il numero di byte inclusi nel corpo della risposta. Obbligatorio anche se il corpo della risposta non include contenuto.
 
 </dd> <dt>
 
-<span id="BITS-Error-Code"></span><span id="bits-error-code"></span><span id="BITS-ERROR-CODE"></span>BITS-errore-codice
+<span id="BITS-Error-Code"></span><span id="bits-error-code"></span><span id="BITS-ERROR-CODE"></span>CODICE DI ERRORE BITS
 </dt> <dd>
 
 Sostituire error-code con un numero esadecimale che rappresenta un valore HRESULT associato a un errore sul lato server. Includere questa intestazione solo se il codice motivo non è 200 o 201.
 
 </dd> <dt>
 
-<span id="BITS-Error-Context"></span><span id="bits-error-context"></span><span id="BITS-ERROR-CONTEXT"></span>BITS-errore-contesto
+<span id="BITS-Error-Context"></span><span id="bits-error-context"></span><span id="BITS-ERROR-CONTEXT"></span>Contesto degli errori BITS
 </dt> <dd>
 
-Sostituire Error-context con un numero esadecimale che rappresenta il contesto in cui si è verificato l'errore. Specificare il numero esadecimale per il [**\_ \_ \_ \_ file remoto del contesto di errore BG**](/windows/win32/api/bits/ne-bits-bg_error_context) (0x5) se il server ha generato l'errore. In caso contrario, specificare il numero esadecimale per l' **\_ \_ \_ \_ applicazione remota del contesto di errore BG** (0x7) se l'errore è stato generato dall'applicazione a cui viene passato il file di caricamento. Includere questa intestazione solo se il codice motivo non è 200 o 201.
+Sostituire error-context con un numero esadecimale che rappresenta il contesto in cui si è verificato l'errore. Specificare il numero esadecimale per [**BG \_ ERROR CONTEXT REMOTE \_ \_ \_ FILE**](/windows/win32/api/bits/ne-bits-bg_error_context) (0x5) se il server ha generato l'errore. In caso contrario, specificare il numero esadecimale per **BG \_ ERROR CONTEXT REMOTE \_ \_ \_ APPLICATION** (0x7) se l'errore è stato generato dall'applicazione a cui viene passato il file di caricamento. Includere questa intestazione solo se il codice motivo non è 200 o 201.
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ Sostituire Error-context con un numero esadecimale che rappresenta il contesto i
 [**Ping**](ping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

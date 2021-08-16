@@ -10,7 +10,7 @@ keywords:
 - playlist, problemi di riproduzione
 - playlist di metafile, problemi di riproduzione
 - controllo della riproduzione
-- Windows Media Player, controllo della riproduzione
+- Windows Media Player,controllo della riproduzione
 - Windows Media Player, problemi di riproduzione
 - HTMLView, problemi di riproduzione
 - HTMLView, controllo della riproduzione
@@ -57,13 +57,13 @@ function UnloadMe()
 
 
 
-Quando l'utente  passa da Ora in riproduzione facendo clic su un pulsante per aprire un'altra funzionalità Windows Media Player, ad esempio la libreria, Il lettore chiude il browser incorporato. In questo modo si **verifica l'evento onunload,** eseguendo lo script nella funzione **denominata UnloadMe**. Il [metodo Player.close](player-close.md) arresta la riproduzione e scarica il file multimediale digitale corrente. Per visualizzare nuovamente il contenuto, l'utente deve riaprire il file asx originale. Questa tecnica arresta anche la riproduzione quando l'utente si allontana dalla pagina Web HTMLView. Si noti che questa tecnica non può impedire all'utente di visualizzare il contenuto multimediale digitale quando passa alla modalità interfaccia.
+Quando l'utente  passa da Ora in riproduzione facendo clic su un pulsante per aprire un'altra funzionalità Windows Media Player, ad esempio la libreria, Il lettore chiude il browser incorporato. In questo modo si **verifica l'evento onunload,** eseguendo lo script nella funzione **denominata UnloadMe**. Il [metodo Player.close](player-close.md) arresta la riproduzione e scarica il file multimediale digitale corrente. Per visualizzare di nuovo il contenuto, l'utente deve riaprire il file asx originale. Questa tecnica arresta anche la riproduzione quando l'utente si allontana dalla pagina Web HTMLView. Si noti che questa tecnica non può impedire all'utente di visualizzare il contenuto multimediale digitale quando passa alla modalità interfaccia.
 
 Si ricorderà che il parametro HTMLView può essere applicato a ogni **elemento ENTRY** in un file asx. È possibile sfruttare questa funzionalità per assicurarsi che il contenuto HTMLView sia visualizzato ogni volta che viene avviato un nuovo file multimediale digitale. A tale scopo, associare un **elemento PARAM** per HTMLView a ogni voce nella playlist asx. Quando ogni voce viene riprodotta, il lettore torna alla modalità completa e visualizza il contenuto HTMLView specificato nella playlist.
 
 ## <a name="url-and-file-script-command-types-are-disabled-by-default"></a>I tipi di comando di script URL e FILE sono disabilitati per impostazione predefinita
 
-Windows Media Player serie 9 o successive fornisce impostazioni che consentono all'utente di specificare se i comandi di script di tipo URL e FILE possono essere eseguiti. Per impostazione predefinita, entrambi questi tipi di comando script non vengono eseguiti. Se si usano tipi di comandi script personalizzati, continueranno a essere eseguiti, indipendentemente dall'impostazione dell'utente. Se è necessario usare i comandi di script URL e FILE, è necessario richiedere all'utente di modificare le impostazioni. Per modificare le impostazioni, fare **clic su Strumenti**, quindi su **Opzioni** e infine **su Sicurezza**.
+Windows Media Player serie 9 o successive fornisce impostazioni che consentono all'utente di specificare se i comandi script di tipo URL e FILE possono essere eseguiti. Per impostazione predefinita, entrambi questi tipi di comando script non vengono eseguiti. Se si usano tipi di comandi script personalizzati, continueranno a essere eseguiti, indipendentemente dall'impostazione dell'utente. Se è necessario usare i comandi di script URL e FILE, è necessario richiedere all'utente di modificare le impostazioni. Per modificare le impostazioni, fare **clic su Strumenti**, quindi su **Opzioni** e infine **su Sicurezza**.
 
 ## <a name="reopening-an-htmlview-does-not-reload-the-webpage"></a>La riapertura di un controllo HTMLView non ricarica la pagina Web
 

@@ -1,24 +1,24 @@
 ---
 description: L'interfaccia IX509CertificateTemplateWritable espone le proprietà seguenti.
 ms.assetid: E4922FC4-0767-41A6-8F3C-199E307E3876
-title: Proprietà di IX509CertificateTemplateWritable
+title: Proprietà IX509CertificateTemplateWritable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2a9e68074ccfc5bf3bc2ab43a07fe9a9238c2eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eb67940fd260ea4eec57505b22f44fc1af8412b32eb93fdec4f519f952ae3a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776209"
 ---
-# <a name="ix509certificatetemplatewritable-properties"></a>Proprietà di IX509CertificateTemplateWritable
+# <a name="ix509certificatetemplatewritable-properties"></a>Proprietà IX509CertificateTemplateWritable
 
-L'interfaccia [**IX509CertificateTemplateWritable**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificatetemplatewritable) espone le proprietà seguenti.
+[**L'interfaccia IX509CertificateTemplateWritable**](/windows/desktop/api/Certenroll/nn-certenroll-ix509certificatetemplatewritable) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Proprietà Property**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_property)
--   [**Proprietà Template**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_template)
+-   [**Proprietà**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_property)
+-   [**Proprietà template**](/windows/desktop/api/Certenroll/nf-certenroll-ix509certificatetemplatewritable-get_template)
 
  
 

@@ -1,51 +1,51 @@
 ---
-description: Un'ora di file è un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi trascorsi da 12:00 A.M. 1 gennaio 1601 Coordinated Universal Time (UTC). Il sistema registra i tempi di creazione, accesso e scrittura nei file delle applicazioni.
+description: Un tempo di file è un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi trascorsi dalle 12:00. 1 gennaio 1601 Coordinated Universal Time (UTC). Il sistema registra gli orari dei file quando le applicazioni creano, accedono e scrivono nei file.
 ms.assetid: 52d80b82-9ab0-4631-9e70-85df21da4946
-title: Orari file
+title: Orari dei file
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5919a2378e08798e4cd64d8f8357cb55692bd22e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1492597b4e71775974ed8b19f6109c5900a8a28720b769c1c10dcf2f70166b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103885838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764493"
 ---
-# <a name="file-times"></a>Orari file
+# <a name="file-times"></a>Orari dei file
 
-Un' *ora di file* è un valore a 64 bit che rappresenta il numero di intervalli di 100-nanosecondi trascorsi da 12:00 A.M. 1 gennaio 1601 Coordinated Universal Time (UTC). Il sistema registra i tempi di creazione, accesso e scrittura nei file delle applicazioni.
+Un *tempo di file* è un valore a 64 bit che rappresenta il numero di intervalli di 100 nanosecondi trascorsi dalle 12:00. 1 gennaio 1601 Coordinated Universal Time (UTC). Il sistema registra gli orari dei file quando le applicazioni creano, accedono e scrivono nei file.
 
-Il file system NTFS archivia i valori di ora in formato UTC, quindi non sono interessati da modifiche nel fuso orario o nell'ora legale. Il file system FAT archivia i valori temporali in base all'ora locale del computer. Ad esempio, un file salvato alle 15:00 PST a Washington viene considerato come le 18.00 EST di New York in un volume NTFS, ma viene considerato come 3:00 EST di New York in un volume FAT.
+L'file system NTFS archivia i valori di ora in formato UTC, in modo che non siano interessati dalle modifiche apportate al fuso orario o all'ora legale. L'file system FAT archivia i valori di ora in base all'ora locale del computer. Ad esempio, un file salvato alle 15.00 PST di Washington viene visualizzato come EST delle 18.00 a New York in un volume NTFS, ma viene visualizzato come EST alle 15.00 a New York in un volume FAT.
 
-I timestamp vengono aggiornati in diversi momenti e per vari motivi. L'unica garanzia relativa a un timestamp del file è che l'ora del file viene riflessa correttamente quando l'handle che apporta la modifica viene chiuso.
+I timestamp vengono aggiornati in momenti diversi e per vari motivi. L'unica garanzia su un timestamp del file è che l'ora del file venga riflessa correttamente quando l'handle che apporta la modifica viene chiuso.
 
-Non tutti i file System possono registrare i tempi di creazione e di ultimo accesso e non tutti i file System li registrano nello stesso modo. Ad esempio, la risoluzione del tempo di creazione in GRASSetto è di 10 millisecondi, mentre l'ora di scrittura ha una risoluzione di 2 secondi e l'ora di accesso ha una risoluzione di 1 giorno, quindi è effettivamente la data di accesso. Il file system NTFS ritarda gli aggiornamenti all'ora dell'ultimo accesso per un file fino a 1 ora dopo l'ultimo accesso.
+Non tutti i file system possono registrare le ore di creazione e ultimo accesso e non tutti i file system li registrano nello stesso modo. Ad esempio, la risoluzione dell'ora di creazione in FAT è di 10 millisecondi, mentre l'ora di scrittura ha una risoluzione di 2 secondi e l'ora di accesso ha una risoluzione di 1 giorno, quindi è effettivamente la data di accesso. L'file system NTFS ritarda gli aggiornamenti all'ora dell'ultimo accesso per un file fino a 1 ora dopo l'ultimo accesso.
 
-Per recuperare le ore dei file per un file specificato, utilizzare la funzione [**GetFileTime ha provocato**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) . **GetFileTime ha provocato** copia le ore di creazione, dell'ultimo accesso e dell'ultima scrittura in singole strutture [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) . È anche possibile recuperare gli orari dei file usando le funzioni [**FindFirstFile**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilea) e [**FindNextFile**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea) . Queste funzioni copiano le ore dei file nelle strutture **FILETIME** in una struttura di [**\_ \_ dati Find Win32**](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) . Quando si scrive in un file, l'ora dell'ultima scrittura non viene aggiornata completamente fino a quando non vengono chiusi tutti gli handle utilizzati per la scrittura.
+Per recuperare gli orari dei file per un file specificato, usare la [**funzione GetFileTime.**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) **GetFileTime** copia le ore di creazione, ultimo accesso e ultima scrittura nelle singole [**strutture FILETIME.**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) È anche possibile recuperare i tempi dei file usando [**le funzioni FindFirstFile**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilea) [**e FindNextFile.**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea) Queste funzioni copiano gli orari dei file in strutture **FILETIME** in una [**struttura \_ WIN32 FIND \_ DATA.**](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) Quando si scrive in un file, l'ora dell'ultima scrittura non viene aggiornata completamente fino alla chiusura di tutti gli handle usati per la scrittura.
 
-Per impostare le ore dei file per un file, usare la funzione [**SetFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-setfiletime) . Questa funzione consente di modificare la creazione, l'ultimo accesso e l'ora dell'ultima scrittura senza modificare il contenuto del file. È possibile confrontare gli orari dei diversi file usando la funzione [**CompareFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-comparefiletime) . La funzione Confronta due ore di file e restituisce un valore che indica quale ora è successiva o restituisce 0 (zero) se gli orari sono uguali.
+Per impostare gli orari dei file per un file, usare la [**funzione SetFileTime.**](/windows/desktop/api/FileAPI/nf-fileapi-setfiletime) Questa funzione consente di modificare le ore di creazione, ultimo accesso e ultima scrittura senza modificare il contenuto del file. È possibile confrontare gli orari di file diversi usando la [**funzione CompareFileTime.**](/windows/desktop/api/FileAPI/nf-fileapi-comparefiletime) La funzione confronta due volte il file e restituisce un valore che indica quale ora è successiva o restituisce 0 (zero) se gli orari sono uguali.
 
-Se si prevede di modificare gli orari dei file per i file specificati, è possibile convertire una data e un'ora del giorno in un'ora del file usando la funzione [**SystemTimeToFileTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-systemtimetofiletime) . È anche possibile ottenere l'ora di sistema in una struttura [**FILEtime**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) chiamando la funzione [**GetSystemTimeAsFileTime**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime) .
+Se si prevede di modificare gli orari dei file per i file specificati, è possibile convertire una data e un'ora del giorno in un'ora del file usando la [**funzione SystemTimeToFileTime.**](/windows/win32/api/timezoneapi/nf-timezoneapi-systemtimetofiletime) È anche possibile ottenere l'ora di sistema in una struttura [**FILETIME**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) chiamando la [**funzione GetSystemTimeAsFileTime.**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime)
 
-Per semplificare la visualizzazione di un file in un utente, utilizzare la funzione [**FileTimeToSystemTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-filetimetosystemtime) . **FileTimeToSystemTime** converte l'ora del file e copia il mese, il giorno, l'anno e l'ora del giorno dall'ora del file in una struttura [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) .
+Per semplificare la visualizzazione dell'ora di un file a un utente, usare la [**funzione FileTimeToSystemTime.**](/windows/win32/api/timezoneapi/nf-timezoneapi-filetimetosystemtime) **FileTimeToSystemTime** converte l'ora del file e copia il mese, il giorno, l'anno e l'ora del giorno dall'ora del file a una [**struttura SYSTEMTIME.**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)
 
-## <a name="file-times-and-daylight-saving-time"></a>Orari file e ora legale
+## <a name="file-times-and-daylight-saving-time"></a>Ora dei file e ora legale
 
-È necessario prestare attenzione quando si usano i file quando l'utente ha impostato il sistema in modo da adattarsi automaticamente all'ora legale.
+È necessario fare attenzione quando si usano gli orari dei file se l'utente ha impostato il sistema per la regolazione automatica dell'ora legale.
 
-Per convertire un'ora del file nell'ora locale, usare la funzione [**FileTimeToLocalFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-filetimetolocalfiletime) . Tuttavia, **FileTimeToLocalFileTime** usa le impostazioni correnti per il fuso orario e l'ora legale. Se, pertanto, si tratta dell'ora legale, l'ora dell'ora legale viene rilasciata in considerazione, anche se il file che si sta convertendo è nell'ora solare.
+Per convertire un'ora del file nell'ora locale, usare la [**funzione FileTimeToLocalFileTime.**](/windows/desktop/api/FileAPI/nf-fileapi-filetimetolocalfiletime) **FileTimeToLocalFileTime** usa tuttavia le impostazioni correnti per il fuso orario e l'ora legale. Pertanto, se si tratta dell'ora legale, l'ora legale viene prende in considerazione, anche se l'ora del file da convertire è nell'ora solare.
 
-Il file system FAT registra le ore sul disco nell'ora locale. [**GetFileTime ha provocato**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) recupera i tempi UTC memorizzati nella cache dal file system FAT. Quando diventa ora legale, l'ora recuperata da **GetFileTime ha provocato** è disattivata un'ora, perché la cache non viene aggiornata. Quando si riavvia il computer, l'ora memorizzata nella cache che **GetFileTime ha provocato** recupera è corretta. [**FindFirstFile**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilea) recupera l'ora locale dal file system FAT e la converte in UTC usando le impostazioni correnti per il fuso orario e l'ora legale. Di conseguenza, se è l'ora legale, **FindFirstFile** prende in considerazione l'ora legale, anche se il file che si sta convertendo è nell'ora solare.
+L'file system FAT registra gli orari su disco nell'ora locale. [**GetFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-getfiletime) recupera le ore UTC memorizzate nella cache dal file system. Quando diventa ora legale, l'ora recuperata da **GetFileTime** è disattivata di un'ora, perché la cache non viene aggiornata. Quando si riavvia il computer, l'ora memorizzata nella cache recuperata da **GetFileTime** è corretta. [**FindFirstFile**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilea) recupera l'ora locale dal file system FAT e la converte nell'ora UTC usando le impostazioni correnti per il fuso orario e l'ora legale. Pertanto, se si tratta dell'ora legale, **FindFirstFile** prende in considerazione l'ora legale, anche se l'ora del file da convertire è nell'ora solare.
 
-Il file system NTFS registra le ore su disco in formato UTC. Per tenere conto dell'ora legale durante la conversione di un'ora di file in un'ora locale, usare la sequenza di funzioni seguente invece di usare [**FileTimeToLocalFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-filetimetolocalfiletime):
+L'file system NTFS registra le ore su disco in formato UTC. Per conto dell'ora legale durante la conversione di un'ora del file in un'ora locale, usare la sequenza di funzioni seguente invece di [**usare FileTimeToLocalFileTime**](/windows/desktop/api/FileAPI/nf-fileapi-filetimetolocalfiletime):
 
 -   [**FileTimeToSystemTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-filetimetosystemtime)
 -   [**SystemTimeToTzSpecificLocalTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-systemtimetotzspecificlocaltime)
 -   [**SystemTimeToFileTime**](/windows/win32/api/timezoneapi/nf-timezoneapi-systemtimetofiletime)
 
-## <a name="file-times-and-cdfs"></a>Orari file e CDFS
+## <a name="file-times-and-cdfs"></a>Orari dei file e CDFS
 
-Gli indicatori di data e ora dei file che si trovano in o originano da supporti utilizzando Compact Disk File System (CDFS) vengono regolati per il fuso orario locale. ISO 9660 indica che CDFS è in grado di visualizzare correttamente le informazioni sulla data per il fuso orario locale. Questa operazione viene eseguita in modo che le date per i file in CDFS vengano visualizzate come quelle del formato UDF (Universal Disk Format). UDF è lo standard più recente per i supporti di distribuzione. Se il codice dipende dalle informazioni sulla data non modificate per un file che risiede o ha origine da supporti con CDFS, potrebbe non funzionare correttamente.
+I timestamp di data e ora dei file che si trovano o provengono da supporti tramite Compact Disc File System (CDFS) vengono modificati per il fuso orario locale. ISO 9660 indica che CDFS deve visualizzare correttamente le informazioni sulla data per il fuso orario locale. Questa operazione viene eseguita in modo che le date per i file in CDFS siano visualizzate come quelle in formato UDF (Universal Disk Format). La funzione definita dall'utente è lo standard più recente per i supporti di distribuzione. Se il codice dipende dalle informazioni sulla data non modificata per un file che risiede o ha origine da supporti tramite CDFS, potrebbe non funzionare correttamente.
 
  
 

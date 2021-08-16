@@ -19,9 +19,9 @@ Questa sezione descrive le strutture di DirectX Media Object (DMO).
 
 | Struttura                                                   | Descrizione                                                 |
 |-------------------------------------------------------------|-------------------------------------------------------------|
-| [**\_DMO TIPO DI \_ SUPPORTO**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type)                  | Descrive il formato dei dati usati da un flusso in un DMO. |
+| [**\_DMO TIPO DI \_ SUPPORTO**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type)                  | Descrive il formato dei dati utilizzati da un flusso in un DMO. |
 | [**\_DMO BUFFER \_ DI DATI DI \_ OUTPUT**](/previous-versions/windows/desktop/api/Mediaobj/ns-mediaobj-dmo_output_data_buffer) | Descrive un buffer di output utilizzato da un DMO.                   |
-| [**\_DMO MEDIATYPE \_ PARZIALE**](/previous-versions/windows/desktop/api/Dmoreg/ns-dmoreg-dmo_partial_mediatype)    | Descrive parzialmente un tipo di supporto usato da un DMO.             |
+| [**\_DMO PARTIAL \_ MEDIATYPE**](/previous-versions/windows/desktop/api/Dmoreg/ns-dmoreg-dmo_partial_mediatype)    | Descrive parzialmente un tipo di supporto utilizzato da un DMO.             |
 | [**SEGMENTO \_ BUSTA \_ MP**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_envelope_segment)        | Definisce un segmento di busta utilizzato da un parametro multimediale.      |
 | [**MP \_ PARAMINFO**](/previous-versions/windows/desktop/api/Medparam/ns-medparam-mp_paraminfo)                       | Contiene informazioni su un parametro multimediale.               |
 

@@ -1,40 +1,40 @@
 ---
-title: LA (attributo Flip)
-description: LA (attributo Flip)
+title: Attributo flip VML
+description: Attributo flip VML
 ms.assetid: 0d3d4c54-e769-4f6b-a9f5-6e48125a7215
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7d17c224ee8ec04a5dcf301ad501de51323efe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5293bdff5ab888b13fdc095038e74fdbcf725bbfb1948a04018fbf5a22c5677c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103730146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346635"
 ---
-# <a name="vml-flip-attribute"></a>LA (attributo Flip)
+# <a name="vml-flip-attribute"></a>Attributo flip VML
 
-In questo argomento viene descritto la, una funzionalità deprecata a partire da Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su la devono essere migrate a SVG o ad altri standard ampiamente supportati.
+Questo argomento descrive VML, una funzionalità deprecata a Windows Internet Explorer 9. Le pagine Web e le applicazioni che si basano su VML devono essere migrate a SVG o ad altri standard ampiamente supportati.
 
 > [!Note]  
-> Al 2011 dicembre, questo argomento è stato archiviato. Di conseguenza, non viene più gestita attivamente. Per altre informazioni, vedere [contenuto archiviato](/previous-versions/windows/internet-explorer/ie-developer/). Per informazioni, suggerimenti e indicazioni per la versione corrente di Windows Internet Explorer, vedere il [centro per sviluppatori di Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partire da dicembre 2011, questo argomento è stato archiviato. Di conseguenza, non viene più gestito attivamente. Per altre informazioni, vedere [Contenuto archiviato.](/previous-versions/windows/internet-explorer/ie-developer/) Per informazioni, consigli e indicazioni sulla versione corrente di Windows Internet Explorer, vedere Internet Explorer [Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Cambia l'orientamento di una forma. Proprietà di lettura/scrittura. **Stringa**.
 
 **Si applica a**
 
-[Con forme](shape-element--vml.md)
+[Forma](shape-element--vml.md)
 
-**Sintassi Tag**
+**Sintassi dei tag**
 
-<v: *elemento* Style = "Flip: *Expression* " >
+<v: *element* style="flip: *expression* ">
 
 **Sintassi dello script**
 
-*element* . Style. Flip = "*Expression*"
+*element* .style.flip="*expression*"
 
-*espressione* = *element*. Style. Flip
+*expression* = *elemento*.style.flip
 
 **Osservazioni:**
 
@@ -44,16 +44,16 @@ I possibili valori sono:
 
 | Valore | Descrizione                                           |
 |-------|-------------------------------------------------------|
-| x     | Capovolge lungo l'asse y, invertendo le coordinate *x*. |
-| y     | Capovolge lungo l'asse *x*, invertendo le coordinate y. |
-| xy    | Capovolgere gli assi y e *x*.                  |
-| YX    | Capovolgere gli assi *x* e *y*.                |
+| x     | Capovolgere lungo l'asse y, invertendo *le coordinate x.* |
+| y     | Capovolgere lungo l'asse *x,* invertendo le coordinate y. |
+| xy    | Capovolgere lungo l'asse y e *x.*                  |
+| Yx    | Capovolgere *l'asse x* e *y.*                |
 
 
 
- 
+ 
 
-*Attributo standard la*
+*Attributo VML Standard*
 
 **Vedere anche**
 
@@ -61,7 +61,7 @@ I possibili valori sono:
 
 **Esempio**
 
-La forma viene capovolta lungo l'asse *y* invertendo le coordinate *x* .
+La forma viene capovolta lungo *l'asse y* invertendo le *coordinate x.*
 
 
 ```HTML
@@ -72,8 +72,8 @@ La forma viene capovolta lungo l'asse *y* invertendo le coordinate *x* .
 
 
 
-[Esempio di attributo Flip](/previous-versions/bb229670(v=vs.85)). (Richiede Microsoft Internet Explorer 5 o versione successiva).
+[Esempio di attributo Flip.](/previous-versions/bb229670(v=vs.85)) Richiede Microsoft Internet Explorer 5 o versione successiva.
 
- 
+ 
 
- 
+ 

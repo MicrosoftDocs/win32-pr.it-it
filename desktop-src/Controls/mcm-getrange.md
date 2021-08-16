@@ -1,9 +1,9 @@
 ---
-title: Messaggio MCM_GETRANGE (COMmctrl. h)
-description: Recupera le date minime e massime consentite impostate per un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro MonthCal GetRange.
+title: MCM_GETRANGE messaggio (Commctrl.h)
+description: Recupera le date minime e massime consentite impostate per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la macro MonthCal \_ GetRange.
 ms.assetid: 5000053a-2975-4781-b3c9-83f9763f679a
 keywords:
-- Controlli di Windows Message MCM_GETRANGE
+- MCM_GETRANGE dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c757c046b88479072eb0771ecbf3f7fb79cdb31b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26f8b9d5a485b12caf720afe518a2fc5499e55eba07c90c2fde1bb34eea2404b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103874514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830395"
 ---
-# <a name="mcm_getrange-message"></a>\_Messaggio MCM GETrange
+# <a name="mcm_getrange-message"></a>Messaggio \_ MCM GETRANGE
 
-Recupera le date minime e massime consentite impostate per un controllo di calendario mensile. È possibile inviare questo messaggio in modo esplicito o usando la macro [**MonthCal \_ GetRange**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getrange) .
+Recupera le date minime e massime consentite impostate per un controllo calendario mensile. È possibile inviare questo messaggio in modo esplicito o tramite la macro [**MonthCal \_ GetRange.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_getrange)
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,20 +35,20 @@ Recupera le date minime e massime consentite impostate per un controllo di calen
 *lParam* 
 </dt> <dd>
 
-Puntatore a una matrice a due elementi di strutture [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che riceveranno le informazioni sui limiti di data. Il limite minimo è impostato in *lprgSysTimeArray* \[ 0 \] e *lprgSysTimeArray* \[ 1 \] riceve il limite massimo. Se uno dei due elementi viene impostato su tutti zeri, non viene impostato alcun limite corrispondente per il controllo di calendario mensile. Questo parametro deve essere un indirizzo valido e non può essere **null**.
+Puntatore a una matrice a due elementi di [**strutture SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) che riceverà le informazioni sul limite di data. Il limite minimo è impostato in *lprgSysTimeArray* \[ 0 \] e *lprgSysTimeArray* 1 riceve \[ il limite \] massimo. Se uno degli elementi è impostato su tutti gli zeri, non viene impostato alcun limite corrispondente per il controllo calendario mensile. Questo parametro deve essere un indirizzo valido e non può essere **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **valore DWORD** che può essere zero (nessun limite impostato) o una combinazione dei valori seguenti che specificano le informazioni sui limiti:
+Restituisce un **valore DWORD** che può essere zero (non sono impostati limiti) o una combinazione dei valori seguenti che specificano informazioni sui limiti:
 
 
 
 | Codice restituito                                                                              | Descrizione                                                                                                                        |
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GDTR \_ Max**</dt> </dl> | Per il controllo è impostato un limite massimo. *lprgSysTimeArray* \[ 0 \] è valido e contiene le informazioni sulla data applicabili. <br/> |
-| <dl> <dt>**GDTR \_ min**</dt> </dl> | È stato impostato un limite minimo per il controllo; *lprgSysTimeArray* \[ 1 \] è valido e contiene le informazioni sulla data applicabili. <br/> |
+| <dl> <dt>**GDTR \_ MAX**</dt> </dl> | Per il controllo è impostato un limite massimo. *lprgSysTimeArray* \[ 0 \] è valido e contiene le informazioni sulla data applicabili. <br/> |
+| <dl> <dt>**GDTR \_ MIN**</dt> </dl> | Per il controllo è impostato un limite minimo. *lprgSysTimeArray* \[ 1 \] è valido e contiene le informazioni sulla data applicabili. <br/> |
 
 
 
@@ -60,9 +60,9 @@ Restituisce un **valore DWORD** che può essere zero (nessun limite impostato) o
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Restituisce un **valore DWORD** che può essere zero (nessun limite impostato) o
 
 <dl> <dt>
 
-[Orari del controllo calendario mensile](month-calendar-controls.md)
+[Ore nel controllo Calendario mensile](month-calendar-controls.md)
 </dt> </dl>
 
  

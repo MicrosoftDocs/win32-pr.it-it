@@ -3,7 +3,7 @@ title: PLAYLIST.statusColor
 description: L'attributo statusColor specifica o recupera il colore della riga di stato nell'elemento PLAYLIST.
 ms.assetid: 31e32a69-1b77-42fe-9edc-45532ee51c27
 keywords:
-- PROPRIETÀ PLAYLIST.statusColor Windows Media Player
+- PLAYLIST.statusColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ ms.locfileid: "118335660"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è una stringa di **lettura/scrittura contenente** qualsiasi valore di colore Internet Explorer Microsoft. Ha un valore predefinito uguale al valore **dell'attributo backgroundColor.**
+Questo attributo è una  stringa di lettura/scrittura contenente qualsiasi valore di colore Internet Explorer Microsoft. Ha un valore predefinito uguale al valore **dell'attributo backgroundColor.**
 
 ## <a name="requirements"></a>Requisiti
 

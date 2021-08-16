@@ -1,6 +1,6 @@
 ---
 title: MCI_SPIN comando (Mmsystem.h)
-description: Il comando MCI \_ SPIN avvia il dispositivo verso l'alto o verso il basso. I dispositivi Videodisc riconoscono questo comando.
+description: Il comando MCI \_ SPIN avvia il dispositivo verso l'alto o verso il basso. I dispositivi videodisc riconoscono questo comando.
 ms.assetid: 9e491455-d06d-44c6-8aca-6360384ec266
 keywords:
 - MCI_SPIN comando Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "118374593"
 ---
 # <a name="mci_spin-command"></a>Comando MCI \_ SPIN
 
-Il comando MCI \_ SPIN avvia il dispositivo verso l'alto o verso il basso. I dispositivi Videodisc riconoscono questo comando.
+Il comando MCI \_ SPIN avvia il dispositivo verso l'alto o verso il basso. I dispositivi videodisc riconoscono questo comando.
 
 Per inviare questo comando, chiamare la [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
 

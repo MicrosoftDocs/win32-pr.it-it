@@ -1,45 +1,45 @@
 ---
 title: Spinner
-description: La casella di selezione è un controllo composto costituito da un pulsante di incremento, un pulsante di decremento e un controllo di modifica, tutti usati per fornire valori decimali all'applicazione.
+description: Spinner è un controllo composito costituito da un pulsante di incremento, un pulsante di decremento e un controllo di modifica, tutti usati per fornire valori decimali all'applicazione.
 ms.assetid: 63689ed3-7326-4f7a-b700-d89e9b501ef1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0875fb31d0dac73c88f3bd502746c473dc1c2b1
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 30c4a6544c10634783b1671f586108a795d67d90c808943b08a2cfcbf6a476da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "106300593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851385"
 ---
 # <a name="spinner"></a>Spinner
 
-La casella di selezione è un controllo composto costituito da un pulsante di incremento, un pulsante di decremento e un controllo di modifica, tutti usati per fornire valori decimali all'applicazione.
+Spinner è un controllo composito costituito da un pulsante di incremento, un pulsante di decremento e un controllo di modifica, tutti usati per fornire valori decimali all'applicazione.
 
 -   [Dettagli](#details)
--   [Proprietà casella di selezione](#spinner-properties)
+-   [Proprietà del selettore](#spinner-properties)
 -   [Osservazioni:](#remarks)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="details"></a>Dettagli
 
-Lo screenshot seguente illustra lo Spinner della barra multifunzione.
+Nella schermata seguente viene illustrato lo spinner della barra multifunzione.
 
-![Screenshot di un controllo casella di selezione nella barra multifunzione MovieMaker di Windows Live.](images/controls/spinner.png)
+![Screenshot di un controllo casella di selezione nella barra multifunzione di Windows Live Moviemaker.](images/controls/spinner.png)
 
-## <a name="spinner-properties"></a>Proprietà casella di selezione
+## <a name="spinner-properties"></a>Proprietà del selettore
 
-Il Framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per il controllo Spinner.
+Il framework della barra multifunzione definisce una raccolta di [chiavi di proprietà](windowsribbon-reference-properties.md) per il controllo Spinner.
 
-In genere, una proprietà Spinner viene aggiornata nell'interfaccia utente della barra multifunzione invalidando il comando associato al controllo tramite una chiamata al metodo [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . L'evento di invalidamento viene gestito e gli aggiornamenti delle proprietà definiti dal metodo di callback [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+In genere, una proprietà Spinner viene aggiornata nell'interfaccia utente della barra multifunzione invalidando il comando associato al controllo tramite una chiamata al metodo [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) L'evento di invalidazione viene gestito e la proprietà viene aggiornata dal metodo di callback [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-Il metodo di callback [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) non viene eseguito e l'applicazione ha sottoposto a query un valore aggiornato della proprietà, fino a quando la proprietà non è richiesta dal Framework. Ad esempio, quando viene attivata una scheda e viene visualizzato un controllo nell'interfaccia utente della barra multifunzione o quando viene visualizzata una descrizione comando.
+Il metodo di callback [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) non viene eseguito e l'applicazione ha eseguito una query per un valore di proprietà aggiornato, fino a quando la proprietà non è richiesta dal framework. Ad esempio, quando una scheda viene attivata e un controllo viene visualizzato nell'interfaccia utente della barra multifunzione o quando viene visualizzata una descrizione comando.
 
 > [!Note]  
-> In alcuni casi, una proprietà può essere recuperata tramite il metodo [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e impostata con il metodo [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> In alcuni casi, una proprietà può essere recuperata tramite il metodo [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e impostata con il metodo [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-Nella tabella seguente sono elencate le chiavi di proprietà associate al controllo casella di selezione.
+Nella tabella seguente sono elencate le chiavi di proprietà associate al controllo Spinner.
 
 
 
@@ -50,79 +50,79 @@ Nella tabella seguente sono elencate le chiavi di proprietà associate al contro
 </colgroup>
 <thead>
 <tr class="header">
-<th>Chiave della proprietà</th>
+<th>Chiave di proprietà</th>
 <th>Note</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-decimalplaces.md">UI_PKEY_DecimalPlaces</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-decimalvalue.md">UI_PKEY_DecimalValue</a></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.
+<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.
 <blockquote>
 [!Note]<br />
-Se il comando associato al controllo viene invalidato tramite una chiamata a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework:: InvalidateUICommand</strong></a>, il Framework esegue una query su questa proprietà quando <code>UI_INVALIDATIONS_VALUE</code> viene passato come valore di <em>flag</em>.
+Se il comando associato al controllo viene invalidato tramite una chiamata a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand"><strong>IUIFramework::InvalidateUICommand</strong></a>, il framework esegue una query su questa proprietà quando viene passato come valore dei <code>UI_INVALIDATIONS_VALUE</code> <em>flag</em>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.</td>
+<td>Supporta <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework::GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework::SetUICommandProperty</strong></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-formatstring.md">UI_PKEY_FormatString</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-increment.md">UI_PKEY_Increment</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-label.md">UI_PKEY_Label</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-largehighcontrastimage.md">UI_PKEY_LargeHighContrastImage</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-largeimage.md">UI_PKEY_LargeImage</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-maxvalue.md">UI_PKEY_MaxValue</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-minvalue.md">UI_PKEY_MinValue</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-representativestring.md">UI_PKEY_RepresentativeString</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-smallhighcontrastimage.md">UI_PKEY_SmallHighContrastImage</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-smallimage.md">UI_PKEY_SmallImage</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-tooltipdescription.md">UI_PKEY_TooltipDescription</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-reference-properties-uipkey-tooltiptitle.md">UI_PKEY_TooltipTitle</a></td>
-<td>Può essere aggiornato solo tramite l'invalidamento.</td>
+<td>Può essere aggiornato solo tramite invalidazione.</td>
 </tr>
 </tbody>
 </table>
@@ -131,7 +131,7 @@ Se il comando associato al controllo viene invalidato tramite una chiamata a <a 
 
  
 
-Nella sezione seguente di codice viene illustrato il modo in cui vengono aggiornate le varie proprietà del controllo casella di selezione nel metodo [**IUICommandHandler:: UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+La sezione di codice seguente illustra come vengono aggiornate le varie proprietà del controllo Spinner nel [**metodo IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
 
 ```C++
@@ -212,10 +212,10 @@ STDMETHODIMP CCommandHandler::UpdateProperty(
 
 ## <a name="remarks"></a>Commenti
 
-Se il valore minimo ([UI \_ pkey \_ MinValue](windowsribbon-reference-properties-uipkey-minvalue.md)) di una casella di selezione viene inizializzato su 0,0, l'applicazione deve garantire che qualsiasi valore successivo fornito dal controllo non sia uguale a-0,0 (zero negativo). Se la casella di selezione fornisce un valore di-0,0, l'applicazione deve reimpostare questo valore su 0,0 (zero positivo) usando il metodo [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) , come illustrato nell'esempio seguente di un metodo [**IUICommandHandler:: Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) per un controllo casella di selezione.
+Se il valore minimo ([UI \_ PKEY \_ MinValue](windowsribbon-reference-properties-uipkey-minvalue.md)) di un controllo Spinner viene inizializzato su 0,0, l'applicazione deve assicurarsi che qualsiasi valore successivo fornito dal controllo non sia uguale a -0,0 (zero negativo). Se spinner fornisce un valore -0.0, l'applicazione deve reimpostare questo valore su 0,0 (zero positivo) usando il metodo [**IUIFramework::SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) come illustrato nell'esempio seguente di un metodo [**IUICommandHandler::Execute**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-execute) per un controllo Spinner.
 
 > [!Note]  
-> Se il test non viene eseguito e il valore non è stato corretto, il campo Edit del controllo Visualizza la stringa "auto".
+> Se questo test non viene eseguito e il valore non viene modificato, nel campo di modifica del controllo viene visualizzata la stringa "Auto".
 
  
 
@@ -301,9 +301,9 @@ STDMETHODIMP CCommandHandler::Execute(
 
 <dl> <dt>
 
-[Libreria di controlli Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Libreria di controlli Ribbon Framework](windowsribbon-controls-entry.md)
 </dt> <dt>
 
-[**Elemento di markup Spinner**](windowsribbon-element-spinner.md)
+[**Elemento di markup spinner**](windowsribbon-element-spinner.md)
 </dt> </dl>
 

@@ -1,10 +1,10 @@
 ---
-title: Struttura WMDRM_OUTPUT_PROTECTION_LEVELS (wmdrmsdk. h)
-description: La \_ struttura dei \_ livelli di protezione dell'output \_ di WMDRM contiene i livelli di protezione dell'output (OPLs) richiesti da una licenza per eseguire varie azioni.
+title: WMDRM_OUTPUT_PROTECTION_LEVELS struttura (Wmdrmsdk.h)
+description: La struttura WMDRM OUTPUT PROTECTION LEVELS contiene i livelli di protezione \_ \_ dell'output (OPL) richiesti da una licenza \_ per eseguire varie azioni.
 ms.assetid: 6b284180-1033-4c57-b010-6d4ab4bc593a
 keywords:
-- Formato di Windows Media per la struttura WMDRM_OUTPUT_PROTECTION_LEVELS
-- struttura Windows Media Format
+- WMDRM_OUTPUT_PROTECTION_LEVELS struttura windows Media Format
+- struttura windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d720a8aef42178da188b71a1635d97031b138397
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a19d7098266857f8a17e395ad749b216e45ce101278812f67c032943933955a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843962"
 ---
-# <a name="wmdrm_output_protection_levels-structure"></a>\_Struttura del \_ livello di protezione dell'output WMDRM \_
+# <a name="wmdrm_output_protection_levels-structure"></a>Struttura DEI LIVELLI DI \_ PROTEZIONE \_ DELL'OUTPUT \_ DI WMDRM
 
-La struttura dei livelli di protezione dell'output di WMDRM contiene i livelli di protezione dell'output (OPLs) richiesti da una licenza per eseguire varie azioni. **\_ \_ \_**
+La **struttura WMDRM \_ OUTPUT PROTECTION \_ \_ LEVELS** contiene i livelli di protezione dell'output (OPL) richiesti da una licenza per eseguire varie azioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -49,35 +49,35 @@ typedef struct WMDRM_OUTPUT_PROTECTION_LEVELS {
 **wCompressedDigitalVideo**
 </dt> <dd>
 
-Numero minimo di OPL necessari per la ricezione di video digitali compressi.
+OPL minimo necessario per ricevere video digitali compressi.
 
 </dd> <dt>
 
 **wUncompressedDigitalVideo**
 </dt> <dd>
 
-Numero minimo di OPL necessari per la ricezione di video digitali non compressi.
+OPL minimo necessario per ricevere video digitali non compressi.
 
 </dd> <dt>
 
 **wAnalogVideo**
 </dt> <dd>
 
-Numero minimo di OPL necessari per la ricezione di video analogici.
+OPL minimo necessario per ricevere video analogico.
 
 </dd> <dt>
 
 **wCompressedDigitalAudio**
 </dt> <dd>
 
-OPL minime necessarie per ricevere audio digitale compresso.
+OPL minimo necessario per ricevere audio digitale compresso.
 
 </dd> <dt>
 
 **wUncompressedDigitalAudio**
 </dt> <dd>
 
-OPL minime necessarie per ricevere audio digitale non compresso.
+OPL minimo necessario per ricevere audio digitale non compresso.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ OPL minimo necessario per copiare il contenuto.
 
 ## <a name="remarks"></a>Commenti
 
-Questa struttura viene utilizzata dal metodo [**IWMDRMLicense:: GetOutputProtectionLevels**](iwmdrmlicense-getoutputprotectionlevels.md) .
+Questa struttura viene usata dal [**metodo IWMDRMLicense::GetOutputProtectionLevels.**](iwmdrmlicense-getoutputprotectionlevels.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -98,7 +98,7 @@ Questa struttura viene utilizzata dal metodo [**IWMDRMLicense:: GetOutputProtect
 
 | Requisito | Valore |
 |-------------------|---------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

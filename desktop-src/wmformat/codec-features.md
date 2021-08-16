@@ -30,7 +30,7 @@ In questa sezione vengono illustrate le funzionalità seguenti.
 -   [S/PDIF Audio Output](s-pdif-audio-output.md)
 -   [Immagine video](video-image.md)
 -   [Modelli di conformità dei dispositivi](device-conformance-templates.md)
--   [Problemi di Impostazioni](video-complexity-settings.md)
+-   [Problemi di complessità video Impostazioni](video-complexity-settings.md)
 -   [Interpolazione di frame](frame-interpolation.md)
 
 ## <a name="related-topics"></a>Argomenti correlati

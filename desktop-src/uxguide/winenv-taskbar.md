@@ -1,28 +1,28 @@
 ---
 title: Barra delle applicazioni
-description: La barra delle applicazioni è il punto di accesso per i programmi visualizzati sul desktop. Con le nuove funzionalità della barra delle applicazioni di Windows 7, gli utenti possono fornire comandi, accedere alle risorse e visualizzare lo stato del programma direttamente dalla barra delle applicazioni.
+description: La barra delle applicazioni è il punto di accesso per i programmi visualizzati sul desktop. Con le nuove funzionalità Windows 7 della barra delle applicazioni, gli utenti possono fornire comandi, accedere alle risorse e visualizzare lo stato del programma direttamente dalla barra delle applicazioni.
 ms.assetid: c00e558a-313f-4741-a4b2-7d738f4544fa
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c3e549e665f0200a448144ddf7202b258e88ff26
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 86b63e5f3b3dc1e8cecba78cbb1599c305d738250d92f76055596226c9028727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117854186"
 ---
 # <a name="taskbar"></a>Barra delle applicazioni
 
 > [!NOTE]
-> Questa guida alla progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
+> Questa guida di progettazione è stata creata per Windows 7 e non è stata aggiornata per le versioni più recenti di Windows. Gran parte delle linee guida si applica ancora in linea di principio, ma la presentazione e gli esempi non riflettono le [linee guida di progettazione correnti.](/windows/uwp/design/)
 
-La barra delle applicazioni è il punto di accesso per i programmi visualizzati sul desktop. Con le nuove funzionalità della barra delle applicazioni di Windows 7, gli utenti possono fornire comandi, accedere alle risorse e visualizzare lo stato del programma direttamente dalla barra delle applicazioni.
+La barra delle applicazioni è il punto di accesso per i programmi visualizzati sul desktop. Con le nuove funzionalità Windows 7 della barra delle applicazioni, gli utenti possono fornire comandi, accedere alle risorse e visualizzare lo stato del programma direttamente dalla barra delle applicazioni.
 
 La barra delle applicazioni è il punto di accesso per i programmi visualizzati sul desktop, anche se il programma è ridotto a icona. Si dice che tali programmi hanno la presenza sul desktop. Con la barra delle applicazioni, gli utenti possono visualizzare le finestre primarie aperte e alcune finestre secondarie sul desktop e passare rapidamente da una finestra all'altro.
 
 ![Screenshot della barra delle applicazioni con funzionalità chiamate ](images/winenv-taskbar-image1.png)
 
-Barra delle applicazioni di Microsoft Windows.
+Barra delle applicazioni Windows Microsoft.
 
 I controlli sulla barra delle applicazioni sono definiti pulsanti della barra delle applicazioni. Quando un programma crea una finestra primaria (o una finestra secondaria con determinate caratteristiche), Windows aggiunge un pulsante della barra delle applicazioni per tale finestra e lo rimuove alla chiusura della finestra.
 
@@ -35,13 +35,13 @@ I programmi progettati per Windows 7 possono sfruttare le nuove funzionalità de
 -   I pulsanti della barra delle applicazioni della finestra secondaria consentono agli utenti di usare le anteprime dei pulsanti della barra delle applicazioni per passare direttamente alle schede delle finestre, alle finestre di progetto, alle finestre figlio dell'interfaccia a documenti multipli e alle finestre secondarie.
 -   I pulsanti della barra delle applicazioni aggiunti consentono agli utenti di aggiungere pulsanti di programma alla barra delle applicazioni per fornire accesso rapido ai programmi anche quando non sono in esecuzione.
 
-Tecnicamente, la barra delle applicazioni si estende sull'intera barra dal pulsante Start all'area di notifica. più comunemente, tuttavia, la barra delle applicazioni si riferisce solo all'area contenente i pulsanti della barra delle applicazioni. Per più configurazioni di monitoraggio, solo un monitor ha una barra delle applicazioni e tale monitoraggio è il monitor predefinito.
+Tecnicamente, la barra delle applicazioni si estende sull'intera barra dal pulsante Start all'area di notifica; più comunemente, tuttavia, la barra delle applicazioni si riferisce solo all'area contenente i pulsanti della barra delle applicazioni. Per più configurazioni di monitoraggio, solo un monitor ha una barra delle applicazioni e tale monitoraggio è il monitor predefinito.
 
 **Nota:** Le linee guida relative alla gestione del [desktop,](winenv-desktop.md) [dell'area](winenv-notification.md)di notifica e [della](win-window-mgt.md) finestra sono presentate in articoli separati.
 
 ## <a name="is-this-the-right-user-interface"></a>Si tratta dell'interfaccia utente giusta?
 
-I programmi progettati per Windows 7 possono sfruttare queste funzionalità dei pulsanti della barra delle applicazioni. Porsi le domande chiave seguenti per determinare se usarle o meno:
+I programmi progettati per Windows 7 possono sfruttare queste funzionalità del pulsante della barra delle applicazioni. Porsi le domande chiave seguenti per determinare se usarle o meno:
 
 **Jump List**
 
@@ -52,11 +52,11 @@ I programmi progettati per Windows 7 possono sfruttare queste funzionalità dei 
 
     In questo esempio, Windows Internet Explorer usa un Jump List per presentare le pagine visitate di frequente.
 
--   **Gli utenti spesso necessitano di accesso rapido a un numero ridotto di comandi del programma durante l'uso di altri programmi, anche se il programma non è in esecuzione?** In tal caso, è consigliabile fornire un Jump List questi comandi usati di frequente. Questi comandi devono funzionare anche se il programma non è in esecuzione e devono essere applicati all'intero programma, non a una finestra specifica. In alternativa, è consigliabile fornire una barra degli strumenti di anteprima per i comandi che si applicano a una finestra specifica.
+-   **Gli utenti spesso necessitano di accesso rapido a un numero ridotto di comandi del programma durante l'uso di altri programmi, anche se il programma non è in esecuzione?** In tal caso, è consigliabile fornire Jump List con questi comandi usati di frequente. Questi comandi devono funzionare anche se il programma non è in esecuzione e devono essere applicati all'intero programma, non a una finestra specifica. In alternativa, è possibile fornire una barra degli strumenti di anteprima per i comandi che si applicano a una finestra specifica.
 
     ![Screenshot della barra delle applicazioni con note jump list ](images/winenv-taskbar-image3.png)
 
-    In questo esempio, l'Memo consente agli utenti di creare rapidamente una nuova nota durante l'uso di altri programmi.
+    In questo esempio l'Memo consente agli utenti di creare rapidamente una nuova nota durante l'uso di altri programmi.
 
 -   **Si stanno promuovendo funzionalità nuove, a uso singolo o difficili da trovare?** In tal caso, non usare Jump List perché non sono destinate a questo scopo. È invece possibile migliorare l'individuabilità di tali comandi direttamente nel programma.
 
@@ -86,7 +86,7 @@ Si applicano tutte le condizioni seguenti?
 **Icone di sovrimpressione**
 
 -   **Il programma ha "presenza desktop"?** In caso contrario, usare invece un'icona dell'area di notifica. In tal caso, è consigliabile usare un'icona di sovrimpressione invece di inserire lo stato sull'icona dell'area di notifica per i programmi progettati per Windows 7. In questo modo si garantisce che l'icona sia sempre visibile (quando vengono usate icone grandi) e si consolida il programma con il relativo stato in un'unica posizione.
--   **L'icona di sovrimpressione viene visualizzata temporaneamente per mostrare una modifica dello stato?** In tal caso, potrebbe essere appropriata un'icona di sovrimpressione, a seconda dei fattori seguenti:
+-   **L'icona di sovrimpressione viene visualizzata temporaneamente per mostrare una modifica dello stato?** In tal caso, un'icona di sovrimpressione può essere appropriata, a seconda dei fattori seguenti:
     -   **Lo stato è utile e pertinente durante l'uso di altri programmi?** In caso contrario, visualizzare le [](ctrl-status-bars.md) informazioni nelle barre di stato del programma o in un'altra area di stato del programma.
 
         ![Screenshot della barra di stato della finestra di Internet Explorer ](images/winenv-taskbar-image7.png)
@@ -110,7 +110,7 @@ Si applicano tutte le condizioni seguenti?
 
     Nell'esempio non corretto, l'indicatore di stato del pulsante della barra delle applicazioni non è molto utile.
 
--   **L'attività è continua?** Se l'attività non viene mai completata, non è necessario visualizzarne lo stato di avanzamento. Esempi di attività continue includono le analisi antivirus non avviate dagli utenti e l'indicizzazione di file.
+-   **L'attività è continua?** Se l'attività non viene mai completata, non è necessario visualizzarne lo stato di avanzamento. Tra gli esempi di attività continue sono incluse le analisi antivirus non avviate dagli utenti e l'indicizzazione dei file.
 
     **Non corretto:**
 
@@ -130,7 +130,7 @@ Le jump list e le barre degli strumenti delle anteprime consentono agli utenti d
 
 Le jump list e le barre degli strumenti delle anteprime funzionano in modo più efficace quando sono:
 
--   **Chiaramente differenziata.** Gli utenti sanno quando cercare una destinazione o un comando in un Jump List e quando eseguire la ricerca in una barra degli strumenti di anteprima. Esiste uno scopo chiaro per ognuno di essi, quindi gli utenti raramente confondono il contenuto dei due. In genere, le jump list vengono usate per avviare nuove attività, mentre le barre degli strumenti di anteprima vengono usate per interagire con le attività in esecuzione mentre si usano altri programmi.
+-   **Chiaramente differenziata.** Gli utenti sanno quando cercare una destinazione o un comando in un Jump List e quando eseguire la ricerca in una barra degli strumenti di anteprima. Esiste uno scopo chiaro per ognuno, quindi gli utenti raramente confondono il contenuto dei due. In genere, le jump list vengono usate per avviare nuove attività, mentre le barre degli strumenti di anteprima vengono usate per interagire con le attività in esecuzione mentre si usano altri programmi.
 -   **Utile.** Le destinazioni e i comandi offerti sono quelli necessari per gli utenti. Se è probabile che gli utenti non necessitino di qualcosa, non è incluso. Non usare il numero massimo di elementi se non sono necessari.
 -   **Prevedibile.** Le destinazioni e i comandi offerti sono quelli che gli utenti si aspettano di trovare. Gli utenti raramente devono cercare in più di una posizione.
 -   **Ben organizzato.** Gli utenti sono in grado di trovare rapidamente ciò che cercano. Usano etichette descrittive ma concise e icone adatte per facilitare il riconoscimento.
@@ -141,7 +141,7 @@ Assicurarsi di eseguire ricerche degli utenti per assicurarsi di aver ottenuto i
 
 ### <a name="taskbar-buttons"></a>Pulsanti della barra delle applicazioni
 
--   **Fare in modo che i tipi di finestra seguenti vengano visualizzati sulla barra delle applicazioni (per Windows 7, usando un'anteprima del pulsante della barra delle applicazioni):**
+-   **Fare in modo che i tipi di finestra seguenti vengano visualizzati sulla barra delle applicazioni (per Windows 7, usando l'anteprima di un pulsante della barra delle applicazioni):**
     -   Finestre primarie (che includono finestre di dialogo senza proprietari)
     -   Finestre delle proprietà
     -   Finestre di dialogo di stato non modali
@@ -150,7 +150,7 @@ Assicurarsi di eseguire ricerche degli utenti per assicurarsi di aver ottenuto i
 
     -   Finestre secondarie
     -   Schede dell'area di lavoro
-    -   Finestre del progetto
+    -   Project windows
     -   finestre figlio MDI
 
     **Corretto:**
@@ -163,7 +163,7 @@ Assicurarsi di eseguire ricerche degli utenti per assicurarsi di aver ottenuto i
 
     ![Screenshot di Esplora risorse e del Pannello di controllo ](images/winenv-taskbar-image12.png)
 
-    In questo esempio, Pannello di controllo è raggruppato in modo errato con Esplora risorse. Gli utenti li percepiranno come programmi separati.
+    In questo esempio, Pannello di controllo viene erroneamente raggruppato con Windows Explorer. Gli utenti li percepiranno come programmi separati.
 
     **Non corretto:**
 
@@ -178,7 +178,7 @@ Assicurarsi di eseguire ricerche degli utenti per assicurarsi di aver ottenuto i
 
     ![Screenshot del pulsante della barra delle applicazioni del Centro sincronizzazione Windows ](images/winenv-taskbar-image14.png)
 
-    In questo esempio, Centro sincronizzazione Windows usa erroneamente un pulsante temporaneo della barra delle applicazioni per visualizzare lo stato. Deve invece usare l'icona dell'area di notifica.
+    In questo esempio, Windows Sync Center usa erroneamente un pulsante temporaneo della barra delle applicazioni per visualizzare lo stato. Deve invece usare l'icona dell'area di notifica.
 
 ### <a name="icons"></a>Icone
 
@@ -187,9 +187,9 @@ Assicurarsi di eseguire ricerche degli utenti per assicurarsi di aver ottenuto i
 
     ![screenshot delle icone e con sovrimpressione in basso a destra ](images/winenv-taskbar-image15.png)
 
-    In questo esempio l'icona del pulsante della barra delle applicazioni del programma non contiene informazioni importanti nell'area inferiore destra.
+    In questo esempio l'icona del pulsante della barra delle applicazioni del programma non contiene informazioni importanti nell'area in basso a destra.
 
--   **Non usare sovrimpressione nell'icona di base del programma,** indipendentemente dal fatto che il programma usi icone sovrapposte o meno. L'uso di una sovrimpressione nell'icona di base può generare confusione perché gli utenti devono capire che non sta comunicando lo stato.
+-   **Non usare sovrimpressione nell'icona di base del programma,** indipendentemente dal fatto che il programma usi icone di sovrimpressione o meno. L'uso di una sovrimpressione nell'icona di base può generare confusione perché gli utenti devono capire che non sta comunicando lo stato.
 
     **Non corretto:**
 
@@ -218,7 +218,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
     ![Screenshot di Live Messenger con icona di sovrimpressione ](images/winenv-taskbar-image18.png)
 
-    In questo esempio, Windows Live Messenger visualizza sempre un'icona di sovrimpressione in modo che gli utenti possano sempre controllare la presenza segnalata.
+    In questo esempio, Windows Live Messenger sempre un'icona di sovrimpressione in modo che gli utenti possano sempre controllare la presenza segnalata.
 
 -   **Non visualizzare un'icona per indicare che un problema è stato risolto.** È invece sufficiente rimuovere qualsiasi icona precedente che indica un problema. Si supponga che gli utenti in genere si aspettino che il programma sia in esecuzione senza problemi.
 -   **Visualizzare icone sovrapposte o icone dell'area di notifica, ma mai entrambe.** Il programma può supportare entrambi i meccanismi per la compatibilità con le versioni precedenti, ma se il programma visualizza lo stato usando icone di sovrimpressione, non deve usare anche le icone dell'area di notifica per lo stato.
@@ -263,7 +263,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 -   **Se non è necessaria un'azione immediata, considerare queste alternative:**
     -   Usare una [notifica di esito positivo dell'azione](mess-notif.md) per indicare che un'attività è stata completata.
     -   Non eseguire alcuna operazione. È sufficiente attendere che gli utenti attendano il problema alla successiva attivazione del programma. Questa è spesso la scelta migliore.
--   **Se un programma inattivo richiede attenzione immediata, fare lampeggiare il pulsante della barra delle applicazioni per attirare l'attenzione e lasciarlo evidenziato.** Non eseguire altre operazioni: non ripristinare o attivare la finestra e non riprodurre effetti sonori. Rispettare invece la selezione dello stato della finestra dell'utente e consentire all'utente di attivare la finestra quando è pronto.
+-   **Se un programma inattivo richiede un'attenzione immediata, lampeggiare il pulsante della barra delle applicazioni per attirare l'attenzione e lasciarlo evidenziato.** Non eseguire altre operazioni: non ripristinare o attivare la finestra e non riprodurre effetti sonori. Rispettare invece la selezione dello stato della finestra dell'utente e consentire all'utente di attivare la finestra quando è pronto.
 -   **Per le finestre secondarie con un pulsante della barra delle applicazioni, lampeggiare il pulsante anziché il pulsante della barra delle applicazioni della finestra primaria.** In questo modo gli utenti possono partecipare direttamente alla finestra.
 -   **Per le finestre secondarie che non hanno un pulsante della barra delle applicazioni, fare lampeggiare il pulsante della barra delle applicazioni della finestra primaria e portare la finestra secondaria sopra tutte le altre finestre del programma.** Le finestre secondarie che richiedono attenzione devono essere in primo piano per garantire che gli utenti le vedano.
 -   **Flash un solo pulsante della barra delle applicazioni per una finestra alla volta.** Lampeggiare più di un pulsante non è necessario e distrarre troppo.
@@ -272,7 +272,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
 ### <a name="quick-launch-shortcuts"></a>Avvio veloce tasti di scelta rapida
 
--   **Inserire i collegamenti ai programmi nell'area Avvio veloce solo se gli utenti acconsentino esplicitamente.** Poiché Avvio veloce è stato rimosso da Windows 7, i programmi progettati per Windows 7 non devono aggiungere collegamenti ai programmi all'area Avvio veloce né fornire opzioni a tale scopo.
+-   **Inserire i collegamenti ai programmi nell'area Avvio veloce solo se gli utenti acconsentino esplicitamente.** Poiché Avvio veloce è stato rimosso da Windows 7, i programmi progettati per Windows 7 non devono aggiungere collegamenti di programma all'area Avvio veloce né fornire opzioni a tale scopo.
 
 ### <a name="jump-lists"></a>Jump List
 
@@ -290,13 +290,13 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
         ![Screenshot dell'jump list con cinque collegamenti alla destinazione ](images/winenv-taskbar-image26.png)
 
-        Nell'esempio non corretto il Jump List contiene molte destinazioni che gli utenti probabilmente non hanno a cuore.
+        Nell'esempio non corretto il Jump List contiene molte destinazioni che gli utenti probabilmente non devono occuparsi.
 
 -   **Non rendere le destinazioni troppo granulari.** Rendere le destinazioni troppo ristrette e specifiche può comportare ridondanza, con diversi modi per passare alla stessa posizione. Ad esempio, invece di elencare singole pagine Web, elencare le home page di primo livello; invece di elencare i brani, elencare gli album.
 
     **Corretto:**
 
-    ![Screenshot dell'jump list organizzati in base ai gruppi ](images/winenv-taskbar-image27.png)
+    ![Screenshot delle jump list organizzate in base ai gruppi ](images/winenv-taskbar-image27.png)
 
     **Non corretto:**
 
@@ -308,13 +308,13 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
     ![Screenshot dell'jump list con un comando ](images/winenv-taskbar-image29.png)
 
-    In questo esempio, Memo'accessorio fornisce un singolo Jump List comando, perché è tutto ciò che serve.
+    In questo esempio, l Memo'accessorio fornisce un singolo Jump List comando, perché è tutto ciò che è necessario.
 
 -   **Fornire descrizioni comando solo quando necessario per consentire agli utenti di Jump List elementi.** Evitare descrizioni comando ridondanti perché sono una distrazione non necessaria. Per altre linee guida per la descrizione comando, [vedere Descrizioni comando e suggerimenti.](ctrl-tooltips-and-infotips.md)
 
     **Non corretto:**
 
-    ![Screenshot di un'jump list con descrizione comando ridondante ](images/winenv-taskbar-image30.png)
+    ![Screenshot dell'immagine jump list descrizione comando ridondante ](images/winenv-taskbar-image30.png)
 
     In questo esempio, la descrizione Jump List comando è ridondante.
 
@@ -329,7 +329,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 -   **Specificare almeno uno e al massimo tre gruppi.** Jump List elementi vengono sempre raggruppati per etichettarne lo scopo. La presenza di più di tre gruppi rende più difficile trovare gli elementi.
 -   **Usare i nomi dei gruppi standard quando appropriato.** I nomi dei gruppi standard sono familiari e più facili da comprendere per gli utenti.
 
-    Ai comandi viene assegnato il nome del gruppo Attività, assegnato da Windows e pertanto non può essere modificato.
+    Ai comandi viene assegnato il nome del gruppo Attività, assegnato dal Windows e pertanto non può essere modificato.
 
     **Corretto:**
 
@@ -337,9 +337,9 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
     **Non corretto:**
 
-    ![Screenshot del jump list con il nome del gruppo di cronologia ](images/winenv-taskbar-image32.png)
+    ![Screenshot dell'jump list con il nome del gruppo di cronologia ](images/winenv-taskbar-image32.png)
 
-    Recente è il nome del gruppo migliore perché è familiare e la sottile distinzione tra cronologia e recente non vale la pena fare.
+    Recenti è il nome del gruppo migliore perché è familiare e la sottile distinzione tra cronologia e recente non vale la pena fare.
 
 **Comandi**
 
@@ -347,7 +347,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
     **Eccezioni:** È possibile sostituire o rimuovere i comandi quando:
 
-    -   Un set di comandi che si escludono a vicenda condividono un singolo slot di comando, purché sia sempre applicabile un comando.
+    -   Un set di comandi che si escludono a vicenda condividono un singolo slot di comando, purché un comando sia sempre applicabile.
     -   I comandi non vengono applicati fino a quando non vengono usate funzionalità specifiche, purché i comandi siano sempre applicabili.
 
     **Non corretto:**
@@ -358,7 +358,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
     **Corretto:**
 
-    ![Screenshot dell'jump list con accesso e disconnessione ](images/winenv-taskbar-image34.png)
+    ![Screenshot di jump list con accesso e disconnessione ](images/winenv-taskbar-image34.png)
 
     In questo esempio, l'accesso e la disconnessione sono comandi che si escludono a vicenda. Inoltre, i separatori vengono usati per raggruppare i comandi correlati.
 
@@ -381,18 +381,18 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 **Destinazioni**
 
 -   **Fornire un set dinamico di destinazioni specifiche per l'utente corrente, ma indipendentemente dallo stato di esecuzione del programma o dal documento corrente.** Come accennato in precedenza, assicurarsi che si adattino allo scopo del programma, siano ciò che gli utenti si preoccupano di più e che abbia il giusto livello di specificità.
--   **Se appropriato, usare un elenco di destinazione "automatico".** Le destinazioni automatiche vengono gestite da Windows, ma il programma controlla le destinazioni specifiche passate.
+-   **Se appropriato, usare un elenco di destinazione "automatico".** Le destinazioni automatiche vengono gestite Windows, ma il programma controlla le destinazioni specifiche passate.
     -   Prendere in considerazione l'uso di Recenti per i programmi di creazione di documenti in cui è probabile che gli utenti tornino alle destinazioni usate di recente.
 
         ![Screenshot dell'jump list con il nome del gruppo "recente" ](images/winenv-taskbar-image36.png)
 
-        In questo esempio Blocco note di Windows usa destinazioni recenti.
+        In questo esempio Windows Blocco note destinazioni recenti.
 
-    -   Prendere in considerazione l'uso di Frequente per i programmi che mostrano contenuto esistente, in cui è probabile che gli utenti tornino agli elementi che usano spesso. Le destinazioni frequenti vengono ordinate in ordine di frequenza, le destinazioni più frequenti per prime.
+    -   Prendere in considerazione l'uso di Frequente per i programmi che mostrano contenuto esistente, in cui è probabile che gli utenti tornino agli elementi che usano spesso. Le destinazioni frequenti vengono ordinate in ordine di frequenza, la prima più frequente.
 
         ![Screenshot dell'jump list con il nome del gruppo frequente ](images/winenv-taskbar-image37.png)
 
-        In questo esempio, Esplora risorse destinazioni frequenti.
+        In questo esempio, Windows Explorer usa destinazioni frequenti.
 
     -   Usare Frequente se Recenti comporta molte destinazioni inutili. Gli elenchi frequenti sono più stabili e la scelta migliore quando gli utenti passano a molte destinazioni diverse, ma non è probabile che tornino a quelle usate raramente.
 
@@ -400,7 +400,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
         ![Screenshot dell'jump list con diversi elementi recenti ](images/winenv-taskbar-image38.png)
 
-        L'uso di Recenti in Windows Internet Explorer comporta molte destinazioni inutili.
+        L'uso di Recenti Windows Internet Explorer si trasporterebbe in molte destinazioni inutili.
 
     -   Se le opzioni Recenti o Frequenti sono ugualmente appropriate, usare Recenti perché questo approccio è più facile da comprendere ed è più prevedibile per gli utenti.
     -   Se si usa Recenti e il programma ha un equivalente nel menu File, fare in modo che gli elenchi presentino lo stesso contenuto nello stesso ordine. Per gli utenti, questi dovrebbero essere gli stessi elenchi.
@@ -411,11 +411,11 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
         ![Screenshot dell'jump list con il nome del gruppo "nuovo" ](images/winenv-taskbar-image39.png)
 
-        In questo esempio, Windows Media Center elenca gli eventi registrati di recente che l'utente non ha ancora visto.
+        In questo esempio, Windows Media Center elenca gli show registrati di recente che l'utente non ha ancora visto.
 
-    -   Scegliere un ordinamento che corrisponda al modello mentale dell'utente dell'elenco. Ad esempio, un elenco di stili attività dovrebbe avere la prima cosa da fare. Se non esiste un modello mentale chiaro, ordinare l'elenco di destinazione in ordine alfabetico.
+    -   Scegliere un ordinamento che corrisponda al modello mentale dell'utente dell'elenco. Ad esempio, un elenco di stili attività dovrebbe avere la prima cosa da fare. Se non è presente alcun modello mentale chiaro, ordinare l'elenco di destinazione in ordine alfabetico.
 
--   **Non usare più elenchi di destinazione che forniscono visualizzazioni diverse degli stessi dati.** Invece, più elenchi di destinazione devono avere dati principalmente diversi per supportare scenari di differenza. Ad esempio, è possibile specificare un elenco Recenti o frequente, ma non entrambi. Questa operazione è disserta se sono presenti elementi sovrapposti, ma confonde se gli elementi sovrapposti vengono rimossi.
+-   **Non usare più elenchi di destinazione che forniscono visualizzazioni diverse degli stessi dati.** Invece, più elenchi di destinazione devono avere dati principalmente diversi per supportare scenari di differenza. Ad esempio, è possibile specificare un elenco Recenti o frequente, ma non entrambi. Questa operazione risulta disserta se sono presenti elementi sovrapposti, ma confonde se gli elementi sovrapposti vengono rimossi.
 
     **Non corretto:**
 
@@ -435,7 +435,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
 **Interazione**
 
--   **Fornire fino a sette dei comandi più importanti usati di frequente che si applicano alla finestra visualizzata nell'anteprima.** Non essere obbligati a fornire il maggior numero possibile di comandi se il programma ha solo tre comandi importanti, usati di frequente, e ne fornisce solo tre.
+-   **Fornire fino a sette dei comandi più importanti usati di frequente che si applicano alla finestra visualizzata nell'anteprima.** Non essere obbligati a fornire il maggior numero possibile di comandi se il programma ha solo tre comandi importanti e usati di frequente, ne fornisce solo tre.
 
     **Non corretto:**
 
@@ -466,7 +466,7 @@ Per linee guida ed esempi generali sulle icone, vedere [Icone.](vis-icons.md)
 
 -   **Assicurarsi che le icone della barra degli strumenti dell'anteprima siano conformi alle linee guida per le icone in stile Aereo.** Per ogni comando, fornire icone a colori completo di alta qualità 16x16, 20x20 e 24x24 pixel. Le versioni più grandi vengono usate in modalità di visualizzazione a dpi elevato.
 -   **Assicurarsi che le icone siano chiaramente visibili sul colore di sfondo della barra degli strumenti negli stati normale e al passaggio del mouse.** Valutare sempre le icone nel contesto e nelle modalità a contrasto elevato.
--   **Scegliere progettazioni di icone di comando che comunicano chiaramente il loro effetto.** Le icone dei comandi ben progettate sono auto-esplicativi per aiutare gli utenti a trovare e comprendere i comandi in modo efficiente.
+-   **Scegliere progettazioni di icone di comando che comunicano chiaramente il loro effetto.** Le icone dei comandi ben progettate sono comprensibili per aiutare gli utenti a trovare e comprendere i comandi in modo efficiente.
 -   **Scegliere icone riconoscibili e distinguibili.** Assicurarsi che le icone presentino forme e colori distintivi. In questo modo gli utenti possono trovare rapidamente i comandi, anche se non ricordano il simbolo dell'icona. Dopo l'uso iniziale, gli utenti non devono basarsi sulle descrizioni comando per distinguere tra i comandi.
 -   **Fornire una descrizione comando per etichettare ogni comando.** Una descrizione comando buona etichetta il controllo senza etichetta a cui punta. Per linee guida ed esempi, vedere [Descrizioni comando e suggerimenti.](ctrl-tooltips-and-infotips.md)
 
@@ -483,7 +483,7 @@ Per altre linee guida, vedere [ProgressBars](progress-bars.md).
 
 Quando si scelgono i titoli delle finestre, considerare l'aspetto del titolo sulla barra delle applicazioni:
 
--   Ottimizzare i titoli per la visualizzazione sulla barra delle applicazioni posizionando concisamente le informazioni distintive per prime.
+-   Ottimizzare i titoli per la visualizzazione sulla barra delle applicazioni inserendo concisamente le informazioni distintive.
 -   Per le finestre di dialogo di stato non modali, riepilogare innanzitutto lo stato di avanzamento. Esempio: "66% Completato".
 -   Evitare i titoli delle finestre con troncamenti difficili.
 
@@ -491,7 +491,7 @@ Quando si scelgono i titoli delle finestre, considerare l'aspetto del titolo sul
 
     ![Screenshot del titolo che taglia il nome del programma ](images/winenv-taskbar-image48.png)
 
-    In questo esempio il titolo della finestra troncata ha risultati non ottimali.
+    In questo esempio, il titolo della finestra troncata ha risultati non ottimali.
 
 ### <a name="jump-list-commands"></a>Jump List comandi
 

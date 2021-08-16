@@ -1,5 +1,5 @@
 ---
-description: Indica la direzione di elaborazione del contrasto applicata dalla fotocamera quando è stata eseguita l'immagine. &\#0034;0&\# 0034; indica &\# 0034; Normal&\# 0034;; &\# 0034;1&\# 0034; indica &\# 0034; Soft&\# 0034;; &\# 0034;2&\# 0034; indica &\# 0034; Hard&\# 0034;.
+description: Indica la direzione di elaborazione del contrasto applicata dalla fotocamera quando è stata scattata l'immagine. &\#0034;0&\# 0034; indica &\# 0034; Normale&\# 0034;; &\# 0034;1&\# 0034; indica &\# 0034; Soft&\# 0034;; &\# 0034;2&\# 0034; indica &\# 0034; Hard&\# 0034;.
 ms.assetid: 32f89149-b90d-4fe9-9d1a-b8bb966d62fe
 title: System.Photo.Contrast
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118230371"
 ---
 # <a name="systemphotocontrast"></a>System.Photo.Contrast
 
-Indica la direzione di elaborazione del contrasto applicata dalla fotocamera quando è stata eseguita l'immagine. "0" indica "Normale"; "1" indica "Soft"; "2" indica "Hard".
+Indica la direzione di elaborazione del contrasto applicata dalla fotocamera quando è stata scattata l'immagine. "0" indica "Normal"; "1" indica "Soft"; "2" indica "Hard".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -84,7 +84,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -114,7 +114,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

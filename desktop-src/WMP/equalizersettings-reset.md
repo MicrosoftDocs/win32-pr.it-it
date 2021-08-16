@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. Reset
-description: Il metodo Reset reimposta i livelli di guadagno di tutte le bande su zero decibel.
+title: EQUALIZERSETTINGS.reset
+description: Il metodo reset reimposta i livelli di guadagno di tutte le bande su zero decibel.
 ms.assetid: cb047a4a-57c7-45c6-84b7-c939d867141d
 keywords:
-- EQUALIZERSETTINGS. Reset Media Player Windows
+- EQUALIZERSETTINGS.reset Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9e6a98612a77f25b4f0722ebb483d47215ae2915
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e5363e5d499ab037231c6a8eaf8e390a4219510bcd88529495ed1c3d0091a18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117935118"
 ---
-# <a name="equalizersettingsreset"></a>EQUALIZERSETTINGS. Reset
+# <a name="equalizersettingsreset"></a>EQUALIZERSETTINGS.reset
 
-Il metodo **Reset** Reimposta i livelli di guadagno di tutte le bande su zero decibel.
+Il **metodo reset** reimposta i livelli di guadagno di tutte le bande su zero decibel.
 
 ``` syntax
         elementID.reset()
@@ -42,7 +42,7 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 

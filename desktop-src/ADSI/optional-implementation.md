@@ -7,23 +7,23 @@ keywords:
 - Implementazione facoltativa di ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 043b07f3a9bcfaef4bde8e95458d64828d4e46be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3074f3ef6b4d36713d483937ad0f6ef10167777a7c36f8d21427d7df2b0485a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104515457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838951"
 ---
 # <a name="optional-implementation"></a>Implementazione facoltativa
 
 Le funzionalità seguenti sono facoltative, ma consigliate:
 
--   Interfaccia [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) per client non di automazione. Poiché il provider di OLE DB ADSI utilizza **IDirectorySearch** per presentare le query e raccogliere i risultati dal servizio directory sottostante, i provider che implementano questa interfaccia forniscono automaticamente l'accesso ai database di OLE DB Style senza implementare interfacce aggiuntive.
--   Interfacce [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor), [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) . I provider per i servizi directory che supportano la sicurezza degli oggetti basata su ACL sono invitati a implementare queste funzionalità aggiuntive.
+-   Interfaccia [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) per i client non di automazione. Poiché il provider OLE DB ADSI usa **IDirectorySearch** per presentare le query e raccogliere i risultati dal servizio directory sottostante, i provider che implementano questa interfaccia forniscono automaticamente l'accesso ai database in stile OLE DB senza dover implementare interfacce aggiuntive.
+-   Interfacce [**IADsSecurityDescriptor,**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)e [**IADsAccessControlEntry.**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) I provider per i servizi directory che supportano la sicurezza degli oggetti basata su ACL sono invitati a implementare queste funzionalità aggiuntive.
 
- 
+ 
 
- 
+ 
 
 
 

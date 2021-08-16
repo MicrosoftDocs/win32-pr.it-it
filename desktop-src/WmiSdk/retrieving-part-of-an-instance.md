@@ -1,5 +1,5 @@
 ---
-description: Il recupero parziale di un'istanza si verifica quando WMI recupera solo un subset delle proprietà di un'istanza.
+description: Un recupero a istanza parziale si verifica quando WMI recupera solo un subset delle proprietà di un'istanza.
 ms.assetid: 6cc26b26-adc9-4a8a-b51e-9db94eb4295f
 ms.tgt_platform: multiple
 title: Recupero di parte di un'istanza WMI
@@ -14,11 +14,11 @@ ms.locfileid: "118316215"
 ---
 # <a name="retrieving-part-of-a-wmi-instance"></a>Recupero di parte di un'istanza WMI
 
-Il recupero parziale di un'istanza si verifica quando WMI recupera solo un subset delle proprietà di un'istanza. Ad esempio, WMI potrebbe recuperare solo le **proprietà Name** **e Key.** L'uso più comune del recupero parziale delle istanze è nelle enumerazioni di grandi dimensioni con più proprietà.
+Un recupero a istanza parziale si verifica quando WMI recupera solo un subset delle proprietà di un'istanza. Ad esempio, WMI può recuperare solo le **proprietà Name** **e Key.** L'uso più comune del recupero di istanze parziali è nelle enumerazioni di grandi dimensioni con più proprietà.
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-powershell"></a>Recupero di parte di un'istanza WMI tramite PowerShell
 
-È possibile recuperare una singola proprietà di un'istanza di tramite [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx). La proprietà stessa può essere recuperata e visualizzata in diversi modi. Come per il recupero di un'istanza, PowerShell restituirà per impostazione predefinita tutte le istanze di una determinata classe. È necessario specificare un valore specifico se si vuole recuperare solo una singola istanza.
+È possibile recuperare una singola proprietà di un'istanza di usando [Get-WmiObject](https://technet.microsoft.com/library/dd315379.aspx). la proprietà stessa può essere recuperata e visualizzata in diversi modi. Come per il recupero di un'istanza, PowerShell restituirà per impostazione predefinita tutte le istanze di una determinata classe. è necessario specificare un valore specifico se si desidera recuperare una sola istanza.
 
 Nell'esempio di codice seguente viene visualizzato il numero di serie del volume per un'istanza della [**classe \_ LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
@@ -40,10 +40,10 @@ $myDisk.DeviceID
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-c-systemmanagement"></a>Recupero di parte di un'istanza WMI tramite C# (System.Management)
 
-È possibile recuperare una singola proprietà di un'istanza creando un nuovo [ManagementObject](/dotnet/api/system.management.managementobject) usando i dettagli di un'istanza specifica. È quindi possibile recuperare in modo implicito una o più proprietà dell'istanza con [il metodo GetPropertyValue.](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_)
+È possibile recuperare una singola proprietà di un'istanza creando un nuovo [Oggetto ManagementObject](/dotnet/api/system.management.managementobject) usando i dettagli di un'istanza specifica. È quindi possibile recuperare in modo implicito una o più proprietà dell'istanza con [il metodo GetPropertyValue.](/dotnet/api/system.management.managementbaseobject.getpropertyvalue#System_Management_ManagementBaseObject_GetPropertyValue_System_String_)
 
 > [!Note]  
-> **System.Management è lo** spazio dei nomi .NET originale usato per accedere a WMI. Tuttavia, le API in questo spazio dei nomi sono in genere più lente e non vengono ridimensionate anche rispetto alle controparti **Microsoft.Management.Infrastructure più** moderne.
+> **System.Management è** lo spazio dei nomi .NET originale usato per accedere a WMI. Tuttavia, le API in questo spazio dei nomi sono in genere più lente e non vengono ridimensionate in modo da non essere ridimensionate in relazione alle controparti **Microsoft.Management.Infrastructure** più moderne.
 
  
 
@@ -62,7 +62,7 @@ Console.WriteLine(myProperty);
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-vbscript"></a>Recupero di parte di un'istanza WMI tramite VBScript
 
-È possibile recuperare una singola proprietà di un'istanza usando [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
+È possibile recuperare una singola proprietà di un'istanza di usando [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject).
 
 Nell'esempio di codice seguente viene visualizzato il numero di serie del volume per un'istanza della [**classe \_ LogicalDisk Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
@@ -75,13 +75,13 @@ MsgBox (GetObject("WinMgmts:Win32_LogicalDisk='C:'").VolumeSerialNumber)
 
 ## <a name="retrieving-part-of-a-wmi-instance-using-c"></a>Recupero di parte di un'istanza WMI tramite C++
 
-La procedura seguente viene usata per richiedere un recupero parziale dell'istanza usando C++.
+La procedura seguente viene usata per richiedere il recupero di un'istanza parziale tramite C++.
 
 **Per richiedere il recupero di un'istanza parziale tramite C++**
 
-1.  Creare un [**oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) con una chiamata a [**CoCreateInstance.**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+1.  Creare un [**oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) con una chiamata a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-    Un oggetto di contesto è un oggetto utilizzato da WMI per passare ulteriori informazioni a un provider WMI. In questo caso, si usa [**l'oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) per indicare al provider di elaborare un recupero parziale dell'istanza.
+    Un oggetto di contesto è un oggetto utilizzato da WMI per passare altre informazioni a un provider WMI. In questo caso, si usa [**l'oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) per indicare al provider di elaborare un recupero di istanza parziale.
 
 2.  Aggiungere GET EXTENSIONS, GET EXT CLIENT REQUEST e qualsiasi altro valore denominato che descrive le proprietà da recuperare \_ \_ \_ \_ \_ \_ \_ \_ [**nell'oggetto IWbemContext.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext)
 
@@ -91,22 +91,22 @@ La procedura seguente viene usata per richiedere un recupero parziale dell'istan
 
     | Valore denominato                              | Descrizione                                                                                                                                                                                                                                                                 |
     |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | \_\_GET \_ EXTENSIONS<br/>           | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Usato per segnalare che vengono usate operazioni di recupero di istanze parziali. Ciò consente un controllo rapido e singolo senza dover enumerare l'intero oggetto contesto. Se viene usato uno qualsiasi degli altri valori, questo deve essere .<br/> |
-    | \_\_GET \_ EXT \_ PROPERTIES<br/>      | [**SAFEARRAY di**](/windows/win32/api/oaidl/ns-oaidl-safearray) stringhe che elenca le proprietà da recuperare. Non può essere specificato contemporaneamente con \_ \_ GET \_ EXT \_ KEYS \_ ONLY.<br/> Un asterisco \* " " è un nome di proprietà non valido per GET \_ \_ \_ EXT \_ PROPERTIES.<br/>                    |
-    | \_\_GET \_ EXT \_ KEYS ONLY (OTTIENI SOLO CHIAVI EXT) \_<br/>      | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Indica che nell'oggetto restituito devono essere fornite solo chiavi. Non può essere specificato contemporaneamente con \_ \_ GET \_ EXT \_ PROPERTIES. Ha invece la precedenza su \_ \_ GET \_ EXT \_ PROPERTIES.<br/>                            |
-    | \_\_GET \_ EXT \_ CLIENT \_ REQUEST<br/> | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Indica che il chiamante è quello che ha scritto il valore nell'oggetto contesto e che non è stato propagato da un'altra operazione dipendente.<br/>                                                                        |
+    | \_\_GET \_ EXTENSIONS<br/>           | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Usato per segnalare che vengono usate operazioni di recupero di istanze parziali. Ciò consente un controllo rapido e singolo senza dover enumerare l'intero oggetto di contesto. Se viene usato uno qualsiasi degli altri valori, questo deve essere .<br/> |
+    | \_\_OTTENERE \_ LE PROPRIETÀ DELL'ESTENSIONE \_<br/>      | [**SAFEARRAY di**](/windows/win32/api/oaidl/ns-oaidl-safearray) stringhe che elencano le proprietà da recuperare. Non può essere specificato contemporaneamente solo \_ \_ con GET \_ EXT \_ \_ KEYS.<br/> Un asterisco " \* " è un nome di proprietà non valido per GET \_ \_ \_ EXT \_ PROPERTIES.<br/>                    |
+    | \_\_OTTENERE \_ SOLO CHIAVI \_ EXT \_<br/>      | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Indica che nell'oggetto restituito devono essere fornite solo chiavi. Non può essere specificato contemporaneamente con \_ \_ GET \_ EXT \_ PROPERTIES. Ha invece la precedenza su \_ \_ GET \_ EXT \_ PROPERTIES.<br/>                            |
+    | \_\_RICHIESTA DEL CLIENT GET \_ EXT \_ \_<br/> | **VT \_ BOOL** impostato su **VARIANT \_ TRUE.** Indica che il chiamante ha scritto il valore nell'oggetto contesto e che non è stato propagato da un'altra operazione dipendente.<br/>                                                                        |
 
     
 
      
 
-3.  Passare l'oggetto contesto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) in qualsiasi chiamata a [**IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject), [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync), [**IWbemServices::CreateInstanceEnum**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenum)o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) tramite il *parametro pCtx.*
+3.  Passare l'oggetto contesto [**IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) in tutte le chiamate a [**IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject), [**IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync), [**IWbemServices::CreateInstanceEnum**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenum)o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) tramite il *parametro pCtx.*
 
-    Il passaggio [**dell'oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) indica al provider di consentire il recupero parziale delle istanze. In un recupero dell'istanza completa è necessario impostare *pCtx* su un **valore** Null. Se il provider non supporta il recupero parziale dell'istanza, verrà visualizzato un messaggio di errore.
+    Il passaggio [**dell'oggetto IWbemContext**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemcontext) indica al provider di consentire il recupero di istanze parziali. In un recupero completo dell'istanza è necessario impostare *pCtx* su un **valore Null.** Se il provider non supporta il recupero di istanze parziali, verrà visualizzato un messaggio di errore.
 
-Se il provider non è conforme all'operazione di istanza parziale, il provider procede come se non fosse stato immesso l'oggetto contesto oppure restituisce **WBEM \_ E \_ UNSUPPORTED \_ PARAMETER**.
+Se il provider non è conforme all'operazione a istanza parziale, il provider procede come se non fosse stato immesso l'oggetto contesto oppure restituisce **WBEM \_ E \_ UNSUPPORTED \_ PARAMETER**.
 
-Nell'esempio seguente viene descritto come eseguire un recupero completo dell'istanza di [**\_ LogicalDisk Win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)quindi viene eseguito un recupero parziale dell'istanza della **proprietà \_ LogicalDisk.Caption di Win32.**
+L'esempio seguente descrive come eseguire un recupero completo dell'istanza di [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)e quindi esegue un recupero a istanza parziale della **proprietà \_ LogicalDisk.Caption Win32.**
 
 
 ```C++
@@ -300,7 +300,7 @@ void main(void)
 
 
 
-Quando viene eseguito, l'esempio di codice precedente scrive le informazioni seguenti. La descrizione del primo oggetto deriva dal recupero completo dell'istanza. La descrizione del secondo oggetto deriva dal recupero parziale dell'istanza. L'ultima sezione mostra che si riceve un **valore Null** se si richiede una proprietà che non è stata richiesta nella chiamata [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) originale.
+Quando viene eseguito, l'esempio di codice precedente scrive le informazioni seguenti. La prima descrizione dell'oggetto deriva dal recupero completo dell'istanza. La descrizione del secondo oggetto deriva dal recupero parziale dell'istanza. L'ultima sezione mostra che si riceve un **valore Null** se si richiede una proprietà che non è stata richiesta nella chiamata [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) originale.
 
 ``` syntax
 Successfully connected to namespace

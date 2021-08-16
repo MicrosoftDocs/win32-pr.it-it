@@ -3,7 +3,7 @@ title: EDITBOX.border
 description: L'attributo border specifica o recupera un valore che indica se il controllo casella di modifica ha un bordo. Può essere impostato solo in fase di progettazione.
 ms.assetid: c2de5f45-af49-4780-8fda-2593a46669f5
 keywords:
-- CONTROLLO EDITBOX.border Windows Media Player
+- PROPRIETÀ EDITBOX.border Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118340042"
 ---
 # <a name="editboxborder"></a>EDITBOX.border
 
-**L'attributo** border specifica o recupera un valore che indica se il controllo casella di modifica ha un bordo. Può essere impostato solo in fase di progettazione.
+**L'attributo border** specifica o recupera un valore che indica se il controllo casella di modifica ha un bordo. Può essere impostato solo in fase di progettazione.
 
 ``` syntax
         elementID.border
@@ -29,11 +29,11 @@ ms.locfileid: "118340042"
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **valore booleano** specificato in fase di progettazione e di sola lettura successivamente. Ha un valore predefinito true.
+Questo attributo è un **valore booleano** specificato in fase di progettazione e di sola lettura successivamente. Il valore predefinito è true.
 
 ## <a name="remarks"></a>Commenti
 
-Il bordo viene visualizzato come bordo incassato di due pixel intorno al controllo casella di modifica con colori di sistema.
+Il bordo viene visualizzato come bordo incassato di due pixel intorno al controllo casella di modifica con i colori di sistema.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Il bordo viene visualizzato come bordo incassato di due pixel intorno al control
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------|
-| Versione<br/> | Windows Media Player per Windows XP o versioni successive<br/> |
+| Versione<br/> | Windows Media Player per Windows XP o versione successiva<br/> |
 
 
 

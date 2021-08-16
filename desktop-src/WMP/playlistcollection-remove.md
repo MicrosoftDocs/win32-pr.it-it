@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. Remove (metodo)
-description: Il metodo Remove rimuove una playlist dalla libreria. | PlaylistCollection. Remove (metodo)
+title: Metodo PlaylistCollection.remove
+description: Il metodo remove rimuove una playlist dalla libreria. | Metodo PlaylistCollection.remove
 ms.assetid: 3327ba59-5f46-4df0-ba95-c338b019277d
 keywords:
-- rimuovere il metodo Windows Media Player
-- Metodo Remove Media Player Windows, Classe PlaylistCollection
-- Classe PlaylistCollection Windows Media Player, metodo Remove
+- Metodo remove Windows Media Player
+- Metodo remove Windows Media Player , classe PlaylistCollection
+- Metodo remove della Windows Media Player PlaylistCollection
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1a7d223bb6262fdd06c873bde027a89e49c246
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb5e1f53446a080727ceb4a23c5ef8be2721e2adc83dec43d95a6ea516af80ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334568"
 ---
-# <a name="playlistcollectionremove-method"></a>PlaylistCollection. Remove (metodo)
+# <a name="playlistcollectionremove-method"></a>Metodo PlaylistCollection.remove
 
-Il metodo **Remove** rimuove una playlist dalla libreria.
+Il **metodo remove** rimuove una playlist dalla libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,10 +42,10 @@ PlaylistCollection.remove(
 
 <dl> <dt>
 
-*playlist* \[ in\]
+*playlist* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **playlist** da rimuovere.
+Oggetto **Playlist** da rimuovere.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,7 +63,7 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -72,19 +72,19 @@ Per usare questo metodo, è necessario l'accesso completo alla libreria. Per alt
 
 <dl> <dt>
 
-[**PlaylistCollection (oggetto)**](playlistcollection-object.md)
+[**Oggetto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. importPlaylist**](playlistcollection-importplaylist.md)
+[**PlaylistCollection.importPlaylist**](playlistcollection-importplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. nuova playlist**](playlistcollection-newplaylist.md)
+[**PlaylistCollection.newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

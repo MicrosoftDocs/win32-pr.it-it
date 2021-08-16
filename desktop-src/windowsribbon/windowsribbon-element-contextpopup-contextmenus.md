@@ -3,7 +3,7 @@ title: ContextPopup.ContextMenus - proprietà
 description: Rappresenta un contenitore per gli elementi ContextMenu.
 ms.assetid: 92633689-a892-421e-a5fb-e494f4cd1ea8
 keywords:
-- Proprietà ContextPopup.ContextMenus Windows ribbon
+- Proprietà ContextPopup.ContextMenus Windows barra multifunzione
 topic_type:
 - apiref
 api_name:
@@ -167,7 +167,7 @@ Questa sezione di codice illustra una **dichiarazione di controllo ContextPopup.
 
 <dl> <dt>
 
-[Controllo Popup di contesto](windowsribbon-controls-contextpopup.md)
+[Controllo Popup del contesto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

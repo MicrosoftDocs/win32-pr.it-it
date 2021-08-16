@@ -1,5 +1,5 @@
 ---
-description: Il metodo get MediaType restituisce il tipo di supporto di output corrente del filtro \_ di ridimensionamento.
+description: Il metodo get MediaType restituisce il tipo di supporto di output corrente \_ del filtro di ridimensionamento.
 ms.assetid: b9900f7c-05f6-47e4-9cb0-683df2aea404
 title: Metodo IResize::get_MediaType (Qedit.h)
 ms.topic: reference
@@ -24,11 +24,11 @@ ms.locfileid: "117818232"
 # <a name="iresizeget_mediatype-method"></a>Metodo IResize::get \_ MediaType
 
 > [!Note]  
-> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-Il metodo restituisce il tipo di supporto di output corrente del filtro `get_MediaType` di ridimensionamento.
+Il metodo restituisce il tipo di supporto di output corrente `get_MediaType` del filtro di ridimensionamento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -48,7 +48,7 @@ HRESULT get_MediaType(
 *pmt* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a [**una struttura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) allocata dal chiamante. Il metodo riempie questa struttura con il tipo di supporto. Il chiamante deve rilasciare il blocco di formato, se presente.
+Puntatore a una [**\_ struttura AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) allocata dal chiamante. Il metodo riempie questa struttura con il tipo di supporto. Il chiamante deve rilasciare il blocco di formato, se presente.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Se il tipo di supporto di output non è stato impostato, restituire un tipo di s
  
 
 > [!Note]  
-> Per ottenere Qedit.h, scaricare l'aggiornamento di Microsoft Windows SDK per Windows [Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 

@@ -1,12 +1,12 @@
 ---
 title: Metodo UninstallLicenseKeyPack della classe Win32_TSLicenseKeyPack
-description: Disinstalla un Key Pack per le licenze Servizi Desktop remoto.
+description: Disinstalla un key pack Servizi Desktop remoto licenza.
 ms.assetid: AF429AD7-C0DB-40AC-A4C6-591699FBF7E7
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo UninstallLicenseKeyPack
-- Metodo UninstallLicenseKeyPack Servizi Desktop remoto, classe Win32_TSLicenseKeyPack
-- Classe Win32_TSLicenseKeyPack Servizi Desktop remoto, metodo UninstallLicenseKeyPack
+- Metodo UninstallLicenseKeyPack Servizi Desktop remoto
+- Metodo UninstallLicenseKeyPack Servizi Desktop remoto , Win32_TSLicenseKeyPack classe
+- Win32_TSLicenseKeyPack classe Servizi Desktop remoto, metodo UninstallLicenseKeyPack
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64754ea9ef2a32676b36821cf20c4f6871396415
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb02ff8ecc84c346bef404071e8abb3988c0e7c8e70b54b288524e8ef790d5fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104400272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118348622"
 ---
-# <a name="uninstalllicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo UninstallLicenseKeyPack della \_ classe TSLicenseKeyPack Win32
+# <a name="uninstalllicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Metodo UninstallLicenseKeyPack della classe \_ Win32 TSLicenseKeyPack
 
-Disinstalla un Key Pack per le licenze Servizi Desktop remoto.
+Disinstalla un key pack Servizi Desktop remoto licenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,10 +45,10 @@ uint32 UninstallLicenseKeyPack(
 
 <dl> <dt>
 
-*ProductVersion* \[ in\]
+*ProductVersion* \[ Pollici\]
 </dt> <dd>
 
-Identificatore della versione del prodotto per il Key Pack di Servizi Desktop remoto License.
+Identificatore della versione del prodotto per il key pack Servizi Desktop remoto licenza.
 
 <dt>
 
@@ -73,24 +73,24 @@ Windows Server 2008
 
 </dd> </dl> </dd> <dt>
 
-*ProductType* \[ in\]
+*ProductType* \[ Pollici\]
 </dt> <dd>
 
-Tipo di prodotto del Key Pack di Servizi Desktop remoto License.
+Tipo di prodotto del key pack Servizi Desktop remoto licenza.
 
 <dt>
 
 0
 </dt> <dd>
 
-Il tipo di prodotto Servizi Desktop remoto License Key Pack è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve disporre di una licenza.
+Il Servizi Desktop remoto prodotto key pack di licenza è per dispositivo. Pertanto, ogni dispositivo che si connette al server Host sessione Desktop remoto deve avere una licenza.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Il tipo di prodotto Servizi Desktop remoto License Key Pack è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve disporre di una licenza.
+Il Servizi Desktop remoto prodotto key pack di licenza è per utente. Pertanto, ogni utente che si connette al server Host sessione Desktop remoto deve avere una licenza.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Questo tipo di prodotto non è valido.
 
 </dd> </dl> </dd> <dt>
 
-*LicenseCount* \[ in\]
+*LicenseCount* \[ Pollici\]
 </dt> <dd>
 
 Numero di licenze da disinstallare.
@@ -110,7 +110,7 @@ Numero di licenze da disinstallare.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -121,7 +121,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                 |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                            |
 | Spazio dei nomi<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -130,7 +130,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> </dl>
 
  

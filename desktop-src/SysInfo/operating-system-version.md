@@ -13,9 +13,9 @@ ms.locfileid: "117763953"
 ---
 # <a name="operating-system-version"></a>Versione del sistema operativo
 
-Le [funzioni dell'helper API versione](version-helper-apis.md) vengono usate per determinare la versione del sistema operativo attualmente in esecuzione. Per altre informazioni, vedere [Recupero della versione del sistema](getting-the-system-version.md).
+Le [funzioni dell'helper API](version-helper-apis.md) versione vengono usate per determinare la versione del sistema operativo attualmente in esecuzione. Per altre informazioni, vedere [Recupero della versione del sistema.](getting-the-system-version.md)
 
-Nella tabella seguente sono riepilogati i numeri di versione più recenti del sistema operativo.
+Nella tabella seguente sono riepilogati i numeri di versione del sistema operativo più recenti.
 
 | Sistema operativo | Numero di versione |
 |------------------|----------------|
@@ -36,19 +36,19 @@ Nella tabella seguente sono riepilogati i numeri di versione più recenti del si
 | Windows XP | 5.1                  |
 | Windows 2000     | 5.0            |
 
-**\*** Per le applicazioni che sono state manifeste per Windows 8.1 o Windows 10. Le applicazioni non manifeste per Windows 8.1 o Windows 10 restituiranno il Windows 8 versione del sistema operativo (6.2). Per manifestare le applicazioni per Windows 8.1 o Windows 10, vedere [Targeting your application for Windows](targeting-your-application-at-windows-8-1.md).<br/>
+**\*** Per le applicazioni che sono state manifeste per Windows 8.1 o Windows 10. Le applicazioni non manifeste per Windows 8.1 o Windows 10 restituiranno il valore Windows 8 versione del sistema operativo (6.2). Per manifestare le applicazioni per Windows 8.1 o Windows 10, vedere Definizione della destinazione [dell'applicazione per Windows](targeting-your-application-at-windows-8-1.md).<br/>
 
-L'identificazione del sistema operativo corrente non è in genere il modo migliore per determinare se è presente una particolare funzionalità del sistema operativo. Ciò è dovuto al fatto che nel sistema operativo potrebbero essere state aggiunte nuove funzionalità in una DLL ridistribuibile. Anziché usare le funzioni [dell'helper API versione per](version-helper-apis.md) determinare la piattaforma o il numero di versione del sistema operativo, verificare la presenza della funzionalità stessa.
+L'identificazione del sistema operativo corrente non è in genere il modo migliore per determinare se è presente una particolare funzionalità del sistema operativo. Ciò è dovuto al fatto che nel sistema operativo potrebbero essere state aggiunte nuove funzionalità in una DLL ridistribuibile. Anziché usare le funzioni [dell'helper API versione](version-helper-apis.md) per determinare la piattaforma o il numero di versione del sistema operativo, verificare la presenza della funzionalità stessa.
 
 Per determinare il modo migliore per testare una funzionalità, vedere la documentazione relativa alla funzionalità di interesse. L'elenco seguente illustra alcune tecniche comuni per il rilevamento delle funzionalità:
 
-- È possibile verificare la presenza delle funzioni associate a una funzionalità. Per verificare la presenza di una funzione in una DLL di sistema, chiamare la [**funzione LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) per caricare la DLL. Chiamare quindi la [**funzione GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per determinare se la funzione di interesse è presente nella DLL. Usare il puntatore restituito **da GetProcAddress** per chiamare la funzione. Si noti che anche se la funzione è presente, può essere uno stub che restituisce semplicemente un codice di errore, ad esempio ERROR \_ CALL \_ NOT \_ IMPLEMENTED.
+- È possibile verificare la presenza delle funzioni associate a una funzionalità. Per verificare la presenza di una funzione in una DLL di sistema, chiamare la [**funzione LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) per caricare la DLL. Chiamare quindi la [**funzione GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) per determinare se la funzione di interesse è presente nella DLL. Usare il puntatore restituito **da GetProcAddress** per chiamare la funzione. Si noti che anche se la funzione è presente, potrebbe essere uno stub che restituisce semplicemente un codice di errore, ad esempio ERROR \_ CALL \_ NOT \_ IMPLEMENTED.
 - È possibile determinare la presenza di alcune funzionalità usando la [**funzione GetSystemMetrics.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Ad esempio, è possibile rilevare più monitor di visualizzazione chiamando **GetSystemMetrics**(SM \_ CMONITORS).
-- Esistono diverse versioni delle DLL ridistribuibili che implementano la shell e le funzionalità di controllo comuni. Per informazioni su come determinare le versioni presenti nel sistema in cui è in esecuzione [l'applicazione,](/previous-versions/windows/desktop/legacy/bb776779(v=vs.85))vedere l'argomento Versioni della shell e dei controlli comuni .
+- Esistono diverse versioni delle DLL ridistribuibili che implementano funzionalità comuni di controllo e shell. Per informazioni su come determinare le versioni presenti nel sistema in cui è in esecuzione l'applicazione, vedere l'argomento [Versioni della shell e dei controlli comuni](/previous-versions/windows/desktop/legacy/bb776779(v=vs.85)).
 
 Se è necessario un sistema operativo specifico, assicurarsi di usarlo come versione minima supportata, anziché progettare il test per il sistema operativo. In questo modo, il codice di rilevamento continuerà a funzionare nelle versioni future di Windows.
 
 Si noti che un'applicazione a 32 bit può rilevare se è in esecuzione in WOW64 chiamando la [**funzione IsWow64Process.**](/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64process) Può ottenere informazioni aggiuntive sul processore chiamando la [**funzione GetNativeSystemInfo.**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getnativesysteminfo)
 
-Per altre informazioni, vedere informazioni sulla [Windows 10 sulla versione](/windows/release-information/) e Windows informazioni sul ciclo di [vita.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
+Per altre informazioni, vedere [l'Windows 10 sulla versione e la](/windows/release-information/) scheda Windows del ciclo di [vita.](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)
 

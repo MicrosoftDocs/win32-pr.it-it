@@ -3,7 +3,7 @@ title: Elemento ControlGroup
 description: Rappresenta un gruppo di controlli in un modello di layout SizeDefinition.
 ms.assetid: 688f3fa5-f305-4554-b16a-590983cf23b9
 keywords:
-- Elemento ControlGroup barra multifunzione di Windows
+- Elemento ControlGroup Windows ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d2b49612102d03003c2f61395a56647aaef4475
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: a1777bd469b6bf07530881f9c20888d69fe98117ecbdeba4f3f5557f01ced172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851027"
 ---
 # <a name="controlgroup-element"></a>Elemento ControlGroup
 
@@ -72,7 +72,7 @@ Rappresenta un gruppo di controlli in un modello di layout [**SizeDefinition.**]
 | Elemento                                                                                 | Descrizione                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                               | Può verificarsi una o più volte<br/> <br/> |
-| [**Casella**](windowsribbon-element-checkbox.md)<br/>                           | Può verificarsi una o più volte<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                           | Può verificarsi una o più volte<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                           | Può verificarsi una o più volte<br/> <br/> |
 | [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Può verificarsi una o più volte<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>               | Può verificarsi una o più volte<br/> <br/> |
@@ -94,7 +94,7 @@ Rappresenta un gruppo di controlli in un modello di layout [**SizeDefinition.**]
 | Elemento                                                                             |
 |-------------------------------------------------------------------------------------|
 | **ControlGroup**<br/>                                                         |
-| [**Gruppo**](windowsribbon-element-group.md)<br/>                             |
+| [**Group**](windowsribbon-element-group.md)<br/>                             |
 | [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md)<br/> |
 | [**Riga**](windowsribbon-element-row.md)<br/>                                 |
 

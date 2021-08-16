@@ -13,9 +13,9 @@ ms.locfileid: "118325960"
 ---
 # <a name="client-area-animation-parameter"></a>Parametro di animazione dell'area client
 
-Il parametro di animazione dell'area client indica se l'utente vuole disabilitare le animazioni negli elementi dell'interfaccia utente. Le funzionalità di visualizzazione, ad esempio flashing, lampeggiamento, sfarfallio e spostamento del contenuto, possono causare problemi agli utenti con epilessia sensibile alle foto. Questo parametro consente di abilitare o disabilitare tutte queste animazioni.
+Il parametro di animazione dell'area client indica se l'utente vuole disabilitare le animazioni negli elementi dell'interfaccia utente. Le funzionalità di visualizzazione, ad esempio lampeggiamento, lampeggiamento, sfarfallio e spostamento di contenuto, possono causare attacchi epilettici agli utenti con epilessia sensibile alle foto. Questo parametro consente di abilitare o disabilitare tutte queste animazioni.
 
-Le applicazioni usano i flag **SPI \_ GETCLIENTAREAANIMATION** e **SPI \_ SETCLIENTAREAANIMATION** con la funzione [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) per attivare o disattivare le animazioni dell'area client.
+Le applicazioni usano i flag **SPI \_ GETCLIENTAREAANIMATION** e **SPI \_ SETCLIENTAREAANIMATION** con la [**funzione SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) per attivare o disattivare le animazioni dell'area client.
 
  
 

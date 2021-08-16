@@ -23,11 +23,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118314414"
 ---
-# <a name="swbemmethodoutparameters-property"></a>SWbemMethod.OutParameters - proprietà
+# <a name="swbemmethodoutparameters-property"></a>Proprietà SWbemMethod.OutParameters
 
 La **proprietà OutParameters** dell'oggetto [**SWbemMethod**](swbemmethod.md) è un [**oggetto SWbemObject**](swbemobject.md) le cui proprietà definiscono i parametri out e il tipo restituito di questo metodo. Questa proprietà è di sola lettura.
 
-Per una spiegazione di questa sintassi, vedere [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
+Per una spiegazione di questa sintassi, vedere [Convenzioni dei documenti per l'API di scripting](document-conventions-for-the-scripting-api.md).
 
 Questa proprietà è di sola lettura.
 
@@ -44,7 +44,7 @@ SWbemMethod.OutParameters As Object
 
 ## <a name="remarks"></a>Commenti
 
-Per altre informazioni su come usare questa proprietà per ottenere i parametri di output dai metodi del provider, vedere Costruzione di oggetti [InParameters e Analisi di oggetti OutParameters.](constructing-inparameters-objects-and-parsing-outparameters-objects.md) Si noti che tutte le modifiche apportate a questo oggetto non vengono riflesse nella definizione del metodo sottostante.
+Per altre informazioni su come usare questa proprietà per ottenere parametri di output dai metodi del provider, vedere Costruzione di oggetti [InParameters e Analisi di oggetti OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md). Si noti che le modifiche apportate a questo oggetto non vengono riflesse nella definizione del metodo sottostante.
 
 ## <a name="requirements"></a>Requisiti
 

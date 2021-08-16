@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia ICertPropertyAutoEnroll espone le proprietà seguenti.
 ms.assetid: 99426DAE-BB12-4E5B-A955-50C96297D475
-title: Proprietà di ICertPropertyAutoEnroll
+title: Proprietà ICertPropertyAutoEnroll
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c9bf314dde0ef8e53647de6a15839ec65a3efc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efc4c5109e6f72749922ed2a40a817ec4aeba961ef02a1b2495c68db96ee827a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117778980"
 ---
-# <a name="icertpropertyautoenroll-properties"></a>Proprietà di ICertPropertyAutoEnroll
+# <a name="icertpropertyautoenroll-properties"></a>Proprietà ICertPropertyAutoEnroll
 
-L'interfaccia [**ICertPropertyAutoEnroll**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyautoenroll) espone le proprietà seguenti.
+[**L'interfaccia ICertPropertyAutoEnroll**](/windows/desktop/api/CertEnroll/nn-certenroll-icertpropertyautoenroll) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

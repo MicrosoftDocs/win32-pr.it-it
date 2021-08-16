@@ -1,7 +1,7 @@
 ---
 description: Definisce una rete bloccata.
 ms.assetid: ccf24d45-cae0-4eb7-951a-004a5f71e04a
-title: Elemento Network (Blocker)
+title: Elemento network (blockList)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f58948573db281aacb00e227ff0fbc2f1cdf82b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 893c557ca5c20dd73f10f2a31d3b416d76116deb206f5d04420d35443d902130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106318256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984461"
 ---
-# <a name="network-blocklist-element"></a>Elemento Network (Blocker)
+# <a name="network-blocklist-element"></a>Elemento network (blockList)
 
-L'elemento Network (Blocker) definisce una rete bloccata. Un computer non è in grado di connettersi a una rete bloccata.
+L'elemento network (blockList) definisce una rete bloccata. Un computer non può connettersi a una rete bloccata.
 
 ``` syntax
 <xs:element name="network"
@@ -29,7 +29,7 @@ L'elemento Network (Blocker) definisce una rete bloccata. Un computer non è in 
  />
 ```
 
-L'elemento **Network** è definito dall'elemento [**Blocker**](wlan-policyschema-blocklist-networkfilter-element.md) .
+**L'elemento** di rete è definito dall'elemento [**blockList.**](wlan-policyschema-blocklist-networkfilter-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,8 +37,8 @@ L'elemento **Network** è definito dall'elemento [**Blocker**](wlan-policyschema
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 
@@ -55,7 +55,7 @@ L'elemento **Network** è definito dall'elemento [**Blocker**](wlan-policyschema
 **Possibile elemento padre immediato nell'istanza dello schema**
 </dt> <dt>
 
-[**blocco (networkFilter)**](wlan-policyschema-blocklist-networkfilter-element.md)
+[**blockList (networkFilter)**](wlan-policyschema-blocklist-networkfilter-element.md)
 </dt> </dl>
 
  

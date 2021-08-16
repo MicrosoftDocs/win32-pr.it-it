@@ -1,7 +1,7 @@
 ---
-description: Utilizzato per verificare che un messaggio non sia stato modificato durante il transito.
+description: Usato per verificare che un messaggio non sia stato modificato durante il transito.
 ms.assetid: a4bb67fb-8217-4e76-b1bf-461ccd39f58a
-title: 'Programma C di esempio: creazione di un HMAC'
+title: 'Esempio di programma C: creazione di un HMAC'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 25d4f6a91025ed159e580cfcb9780527536a31f4f72ae54d5a821a328d45abec
@@ -11,17 +11,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117765889"
 ---
-# <a name="example-c-program-creating-an-hmac"></a>Programma C di esempio: creazione di un HMAC
+# <a name="example-c-program-creating-an-hmac"></a>Esempio di programma C: creazione di un HMAC
 
-Un checksum di autenticazione del messaggio con hash (HMAC) viene in genere usato per verificare che un messaggio non sia stato modificato durante il transito. Entrambe le parti del messaggio devono avere una chiave privata condivisa. Il mittente combina la chiave e il messaggio in una stringa, crea un digest della stringa usando un algoritmo come SHA-1 o MD5 e trasmette il messaggio e il digest. Il ricevitore combina la chiave condivisa con il messaggio, applica l'algoritmo appropriato e confronta il digest ottenuto con quello trasmesso dal mittente. Se i digest sono esattamente gli stessi, il messaggio non è stato manomesso.
+Un checksum di autenticazione dei messaggi con hash (HMAC) viene in genere usato per verificare che un messaggio non sia stato modificato durante il transito. Entrambe le parti del messaggio devono avere una chiave privata condivisa. Il mittente combina la chiave e il messaggio in una stringa, crea un digest della stringa usando un algoritmo come SHA-1 o MD5 e trasmette il messaggio e il digest. Il ricevitore combina la chiave condivisa con il messaggio, applica l'algoritmo appropriato e confronta il digest ottenuto con quello trasmesso dal mittente. Se i digest sono esattamente gli stessi, il messaggio non è stato manomesso.
 
-Questo esempio illustra le attività e le funzioni CryptoAPI seguenti:
+In questo esempio vengono illustrate le attività e le funzioni CryptoAPI seguenti:
 
--   Acquisizione di un handle per un [*provider del servizio di*](../secgloss/c-gly.md) crittografia chiamando [**CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   Acquisizione di un handle per un [*provider del servizio di*](../secgloss/c-gly.md) crittografia chiamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
 -   Derivazione di una chiave simmetrica da una stringa di byte chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash), [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)e [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
--   Uso della chiave simmetrica per creare un oggetto hash HMAC chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) e [**CryptSetHashParam.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam)
+-   Uso della chiave simmetrica per creare un oggetto hash HMAC chiamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) e [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
 -   Hashing di un messaggio chiamando [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
--   Recupero dell'hash chiamando [**CryptGetHashParam.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam)
+-   Recupero dell'hash chiamando [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).
 
 
 ```C++

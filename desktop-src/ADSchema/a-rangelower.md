@@ -1,10 +1,10 @@
 ---
-title: Attributo Range-Lower
+title: Range-Lower attributo
 description: Valore minimo o lunghezza di un attributo.
 ms.assetid: e7a3d267-1534-4c30-9876-7c1ca94fe562
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Range-Lower attribute
+- Range-Lower schema AD dell'attributo
 - Schema AD dell'attributo rangeLower
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d144c1ba85223bb02f7088cbcef9151aab1dcc5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2681a9a5fc4b955411afa405d87cb6f841e66082046c3c17597de5b7c645c7a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836754"
 ---
-# <a name="range-lower-attribute"></a>Attributo Range-Lower
+# <a name="range-lower-attribute"></a>Range-Lower attributo
 
 Valore minimo o lunghezza di un attributo.
 
@@ -30,12 +30,12 @@ Valore minimo o lunghezza di un attributo.
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Range-Lower                          |
-| LDAP-Display-Name | rangeLower                           |
+| Ldap-Display-Name | rangeLower                           |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | Amministratore schema                 |
+| Privilegio di aggiornamento  | Amministratore dello schema                 |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.34                |
-| System-ID-GUID    | bf967a0c-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a0c-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**Enumerazione**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ Valore minimo o lunghezza di un attributo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Valore minimo o lunghezza di un attributo.
 | ID collegamento                | \-                                                       |
 | MAPI-Id                | 0x8113                                                   |
 | System-Only            | Falso                                                    |
-| È a valore singolo       | Vero                                                     |
+| Is-Single-Valued       | Vero                                                     |
 | Indicizzato             | Falso                                                    |
 | Nel catalogo globale      | Vero                                                     |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classi utilizzate in        | [**Attribute-schema**](c-attributeschema.md)<br/> |
+| Classi usate in        | [**Schema di attributi**](c-attributeschema.md)<br/> |
 
 
 

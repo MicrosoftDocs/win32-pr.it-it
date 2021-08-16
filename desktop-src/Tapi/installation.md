@@ -1,23 +1,23 @@
 ---
-description: Le origini primarie per le procedure di installazione sono il Resource Kit per il sistema operativo di destinazione, la documentazione dell'applicazione e le istruzioni del provider di servizi. Per i provider di servizi Microsoft, il Resource Kit appropriato contiene istruzioni.
+description: Le origini principali per le procedure di installazione sono il Resource Kit per il sistema operativo di destinazione, la documentazione dell'applicazione e le istruzioni del provider di servizi. Per i provider di servizi Microsoft, il Resource Kit appropriato contiene istruzioni.
 ms.assetid: a94023ac-5226-4a51-a08b-c53d08260710
-title: Installazione (API di telefonia)
+title: Installazione (API Di telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 446510c3d92431188bcff50842b15c200cc5d0d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc627e48ba370d89a5bb73a41049ddd8840e66ae801c4a1d5d46f48a329e1fc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106309956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117762474"
 ---
-# <a name="installation-telephony-api"></a>Installazione (API di telefonia)
+# <a name="installation-telephony-api"></a>Installazione (API Di telefonia)
 
-Le origini primarie per le procedure di installazione sono il Resource Kit per il sistema operativo di destinazione, la documentazione dell'applicazione e le istruzioni del provider di servizi. Per i provider di servizi Microsoft, il Resource Kit appropriato contiene istruzioni.
+Le origini principali per le procedure di installazione sono il Resource Kit per il sistema operativo di destinazione, la documentazione dell'applicazione e le istruzioni del provider di servizi. Per i provider di servizi Microsoft, il Resource Kit appropriato contiene istruzioni.
 
-Il processo di installazione deve includere l'elenco "servizio di telefonia" come dipendenza.
+Il processo di installazione deve includere l'elenco "Servizio di telefonia" come dipendenza.
 
-Se un'applicazione o un provider di servizi usa il registro di sistema per l'archiviazione di dati privati permanenti, le informazioni non devono essere inserite nella sezione di TAPI del registro di sistema. Non è garantito che il formato di questa sezione venga mantenuto nelle versioni future.
+Se un'applicazione o un provider di servizi usa il Registro di sistema per l'archiviazione di dati privati permanenti, le informazioni non devono essere inserite nella sezione TAPI del Registro di sistema. Il formato di questa sezione non è garantito per essere mantenuto nelle versioni future.
 
  
 

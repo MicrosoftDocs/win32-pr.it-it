@@ -4,20 +4,20 @@ ms.assetid: 69D9FFFF-856F-46F4-BF4D-9FF03D82986D
 title: Metodi IX509EnrollmentPolicyServer
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6d2a7c8824d92c9dcba2baa30dc010b7bac4b63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c4bac32aa32bde02f5c96b1f116ef169935000b7b4b5a51e17dd242d2cebc85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776017"
 ---
 # <a name="ix509enrollmentpolicyserver-methods"></a>Metodi IX509EnrollmentPolicyServer
 
-L'interfaccia [**IX509EnrollmentPolicyServer**](/windows/desktop/api/Certenroll/nn-certenroll-ix509enrollmentpolicyserver) espone i metodi seguenti.
+[**L'interfaccia IX509EnrollmentPolicyServer**](/windows/desktop/api/Certenroll/nn-certenroll-ix509enrollmentpolicyserver) espone i metodi seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**Export (metodo)**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-export)
+-   [**Metodo Export**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-export)
 -   [**Metodo GetAllowUnTrustedCA**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getallowuntrustedca)
 -   [**Metodo GetAuthFlags**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getauthflags)
 -   [**Metodo GetCacheDir**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getcachedir)
@@ -31,13 +31,13 @@ L'interfaccia [**IX509EnrollmentPolicyServer**](/windows/desktop/api/Certenroll/
 -   [**Metodo GetNextUpdateTime**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getnextupdatetime)
 -   [**Metodo GetPolicyServerId**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getpolicyserverid)
 -   [**Metodo GetPolicyServerUrl**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getpolicyserverurl)
--   [**Metodo gettemplates**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-gettemplates)
+-   [**Metodo GetTemplates**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-gettemplates)
 -   [**Metodo GetUseClientId**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-getuseclientid)
 -   [**Metodo Initialize**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-initialize)
 -   [**Metodo InitializeImport**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-initializeimport)
 -   [**Metodo LoadPolicy**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-loadpolicy)
 -   [**Metodo QueryChanges**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-querychanges)
--   [**Metodo secredential**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-setcredential)
+-   [**Metodo SetCredential**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-setcredential)
 -   [**Metodo Validate**](/windows/desktop/api/Certenroll/nf-certenroll-ix509enrollmentpolicyserver-validate)
 
  

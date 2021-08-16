@@ -1,6 +1,6 @@
 ---
 title: MCI_STOP comando (Mmsystem.h)
-description: Il comando MCI STOP arresta tutte le sequenze di riproduzione e registrazione, scarica tutti i buffer di riproduzione e interrompe \_ la visualizzazione delle immagini video. Questo comando viene riconosciuto da cd audio, digital-video, sequencer MIDI, videodisc, videoregistratore e dispositivi audio waveform.
+description: Il comando MCI STOP arresta tutte le sequenze di riproduzione e registrazione, scarica tutti i buffer di riproduzione e interrompe \_ la visualizzazione delle immagini video. Questo comando viene riconosciuto da cd audio, digital-video, sequencer MIDI, videodisc, vcr e waveform-audio.
 ms.assetid: e5ae20b3-7439-4314-8354-d06e83b29729
 keywords:
 - MCI_STOP comando Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "118374603"
 ---
 # <a name="mci_stop-command"></a>Comando MCI \_ STOP
 
-Il comando MCI STOP arresta tutte le sequenze di riproduzione e registrazione, scarica tutti i buffer di riproduzione e interrompe \_ la visualizzazione delle immagini video. Questo comando viene riconosciuto da cd audio, digital-video, sequencer MIDI, videodisc, videoregistratore e dispositivi audio waveform.
+Il comando MCI STOP arresta tutte le sequenze di riproduzione e registrazione, scarica tutti i buffer di riproduzione e interrompe \_ la visualizzazione delle immagini video. Questo comando viene riconosciuto da cd audio, digital-video, sequencer MIDI, videodisc, vcr e waveform-audio.
 
 Per inviare questo comando, chiamare la [**funzione mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con i parametri seguenti.
 

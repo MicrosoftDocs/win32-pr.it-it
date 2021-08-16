@@ -65,7 +65,7 @@ Oggetto **System.String** che rappresenta l'attributo per cui vengono recuperati
 *bstrMediaType* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta il tipo di supporto per il quale vengono recuperati i valori.
+Oggetto **System.String** che rappresenta il tipo di supporto per cui vengono recuperati i valori.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Interfaccia **WMPLib.IWMPStringCollection** per i valori recuperati.
 
 Prima di chiamare questo metodo, è necessario avere accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
-Per informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni di [riferimento sugli attributi](attribute-reference.md).
+Per informazioni sugli attributi supportati da Windows Media Player, vedere Informazioni [di riferimento sugli attributi](attribute-reference.md).
 
 ## <a name="examples"></a>Esempio
 

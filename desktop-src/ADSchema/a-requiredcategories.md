@@ -1,10 +1,10 @@
 ---
-title: Attributo Required-Categories
-description: Questo attributo contiene un elenco di ID di categoria di componenti per cui è necessario eseguire un oggetto, ad esempio un'applicazione.
+title: Required-Categories attributo
+description: Questo attributo contiene un elenco di ID di categoria di componenti che un oggetto , ad esempio un'applicazione, richiede per l'esecuzione.
 ms.assetid: f0580e59-a7be-43c7-be41-38039b868157
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Required-Categories attribute
+- Required-Categories schema AD dell'attributo
 - Schema AD dell'attributo requiredCategories
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40bdaa7c942ca7f344bed2c8bd720bd96f0c98d4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4f4a6c3304b870ba51b26898c4f007471518c78b07ae7472dae8dd71548c0955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836653"
 ---
-# <a name="required-categories-attribute"></a>Attributo Required-Categories
+# <a name="required-categories-attribute"></a>Required-Categories attributo
 
-Questo attributo contiene un elenco di ID di categoria di componenti per cui è necessario eseguire un oggetto, ad esempio un'applicazione.
+Questo attributo contiene un elenco di ID di categoria di componenti che un oggetto , ad esempio un'applicazione, richiede per l'esecuzione.
 
 
 
 | Voce | Valore |
 |-------------------|-------------------------------------------------------|
 | CN                | Required-Categories                                   |
-| LDAP-Display-Name | requiredCategories                                    |
+| Ldap-Display-Name | requiredCategories                                    |
 | Dimensione              | \-                                                    |
-| Privilegio aggiornamento  | \-                                                    |
+| Privilegio di aggiornamento  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.321                                |
-| System-ID-GUID    | 7d6c0e93-7e20-11d0-afd6-00c04fd930c9                  |
+| System-Id-Guid    | 7d6c0e93-7e20-11d0-afd6-00c04fd930c9                  |
 | Sintassi            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
@@ -58,15 +58,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Questo attributo contiene un elenco di ID di categoria di componenti per cui è 
 | ID collegamento                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| È a valore singolo       | Falso                                                        |
+| Is-Single-Valued       | Falso                                                        |
 | Indicizzato             | Vero                                                         |
 | Nel catalogo globale      | Falso                                                        |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classi utilizzate in        | [**Classe-registrazione**](c-classregistration.md)<br/> |
+| Classi usate in        | [**Registrazione della classe**](c-classregistration.md)<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Modifiche avanzate
-description: Visualizzare la pagina di destinazione per le modifiche avanzate per le applicazioni. Vedere i collegamenti alle pagine di panoramica, espansione, rotazione e traduzione.
+description: Visualizzare la pagina di destinazione per le modifiche avanzate per le applicazioni. Vedere i collegamenti alle pagine di panoramica, espansione, rotazione e traslazione.
 ms.assetid: 8a1cff27-b2c0-4e72-9f4c-df656059953f
 keywords:
 - Windows Tocco, manipolazioni
@@ -28,8 +28,8 @@ Ai fini dell'usabilità, è possibile aggiungere modifiche complesse all'applica
 | Sezione                                                                | Descrizione                                           |
 |------------------------------------------------------------------------|-------------------------------------------------------|
 | [Panoramica delle modifiche avanzate](advanced-manipulations-overview.md) | Mostra le varie modifiche avanzate.             |
-| [Espansione avanzata](advanced-expansion.md)                           | Viene illustrato come abilitare il supporto per l'espansione avanzata.   |
-| [Rotazione avanzata](advanced-rotation.md)                             | Viene illustrato come abilitare il supporto per la rotazione avanzata.    |
+| [Espansione avanzata](advanced-expansion.md)                           | Illustra come abilitare il supporto per l'espansione avanzata.   |
+| [Rotazione avanzata](advanced-rotation.md)                             | Illustra come abilitare il supporto per la rotazione avanzata.    |
 | [Traduzione avanzata](advanced-translation.md)                       | Illustra come abilitare il supporto per la traduzione avanzata. |
 
 

@@ -34,7 +34,7 @@ Il AD FS proxy non è più nel ruolo Active Directory Federation Services (AD FS
 
 ## <a name="solution"></a>Soluzione
 
-Per accedere all'Application Proxy Web, gli amministratori possono passare a Server Manager e aggiungere un nuovo ruolo o un nuovo servizio ruolo. L'amministratore troverà il Application Proxy Web nel ruolo Accesso remoto.
+Per accedere all'Application Proxy Web, gli amministratori possono passare a Server Manager e aggiungere un nuovo ruolo o un nuovo servizio ruolo. L'amministratore troverà l'Application Proxy Web nel ruolo Accesso remoto.
 
 ## <a name="resources"></a>Risorse
 

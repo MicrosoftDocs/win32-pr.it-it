@@ -25,7 +25,7 @@ Gli argomenti contenuti in questa sezione descrivono aspetti specifici del frame
 
 [Creazione di un'applicazione barra multifunzione](windowsribbon-stepbystep.md)
 
-Perché il framework Windows barra multifunzione sia in grado di utilizzare il file di markup della barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario. Un compilatore di markup della barra multifunzione dedicato, UICC (UI Command Compiler), è incluso in Microsoft Windows Software Development Kit (SDK) (7.0 o versione successiva) a questo scopo. Oltre a compilare la versione binaria del markup della barra multifunzione, UICC genera un file di intestazione di definizione ID (con estensione h) che espone tutti gli elementi di markup all'applicazione host della barra multifunzione e un file di risorse (RC) usato per collegare le risorse immagine e stringa all'applicazione host in fase di compilazione.
+Perché il framework Windows barra multifunzione per utilizzare il file di markup della barra multifunzione, il file di markup deve essere compilato in un file di risorse in formato binario. Un compilatore di markup della barra multifunzione dedicato, UICC (UI Command Compiler), è incluso in Microsoft Windows Software Development Kit (SDK) (7.0 o versione successiva) a questo scopo. Oltre a compilare la versione binaria del markup della barra multifunzione, UICC genera un file di intestazione di definizione ID (con estensione h) che espone tutti gli elementi di markup all'applicazione host della barra multifunzione e un file di risorse (RC) usato per collegare le risorse immagine e stringa all'applicazione host in fase di compilazione.
 
 [Migrazione al framework Windows Ribbon](ribbon-migration.md)
 

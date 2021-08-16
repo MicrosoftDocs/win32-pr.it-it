@@ -1,26 +1,26 @@
 ---
-description: In alternativa alla creazione e alla configurazione di partizioni locali tramite lo strumento di amministrazione Servizi componenti, è possibile gestire le partizioni a livello di programmazione utilizzando le raccolte e le proprietà di amministrazione COM+ specifiche della partizione.
+description: In alternativa alla creazione e alla configurazione di partizioni locali tramite lo strumento di amministrazione Servizi componenti, è possibile gestire le partizioni a livello di codice usando proprietà e raccolte di amministrazione COM+ specifiche della partizione.
 ms.assetid: 82f790cf-3f94-44d9-b722-89a6013d0300
 title: Gestione delle partizioni locali
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecd551fc73c76067c4ab2e988fba79ee702df53c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 124d0b9ef7bf54f07a6b28561428c57834a6e15ec11c4ed5c89fb92f95f0a950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103966319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306244"
 ---
 # <a name="managing-local-partitions"></a>Gestione delle partizioni locali
 
-In alternativa alla creazione e alla configurazione di partizioni locali tramite lo strumento di amministrazione Servizi componenti, è possibile gestire le partizioni a livello di programmazione utilizzando le raccolte e le proprietà di amministrazione COM+ specifiche della partizione.
+In alternativa alla creazione e alla configurazione di partizioni locali tramite lo strumento di amministrazione Servizi componenti, è possibile gestire le partizioni a livello di codice usando proprietà e raccolte di amministrazione COM+ specifiche della partizione.
 
 > [!Note]  
-> Il servizio partizioni COM+ non è abilitato per impostazione predefinita. Per utilizzare il servizio partizioni COM+, è necessario abilitarlo tramite lo strumento di amministrazione Servizi componenti o modificando la proprietà PartitionsEnabled nella raccolta [**LocalComputer**](localcomputer.md) su true.
+> Il servizio partizioni COM+ non è abilitato per impostazione predefinita. Per usare il servizio partizioni COM+, è necessario abilitarlo tramite lo strumento di amministrazione Servizi componenti o modificando la proprietà PartitionsEnabled nella raccolta [**LocalComputer**](localcomputer.md) impostandola su True.
 
  
 
-La subroutine seguente scritta in Visual Basic script illustra come creare una partizione nel computer locale:
+La subroutine seguente scritta nello script Visual Basic illustra come creare una partizione nel computer locale:
 
 
 ```VB
@@ -42,7 +42,7 @@ End Sub
 
 
 
-La subroutine seguente scritta in Visual Basic script illustra come eliminare una partizione dal computer locale:
+La subroutine seguente scritta nello script Visual Basic illustra come eliminare una partizione dal computer locale:
 
 
 ```VB
@@ -65,7 +65,7 @@ End Sub
 
 
 
-La subroutine seguente scritta in Visual Basic script illustra come impostare la partizione predefinita per un utente:
+La subroutine seguente scritta nello script Visual Basic illustra come impostare la partizione predefinita per un utente:
 
 
 ```VB
@@ -84,7 +84,7 @@ End Sub
 
 
 
-La subroutine seguente scritta in Visual Basic script illustra come rimuovere la partizione predefinita per un utente:
+La subroutine seguente scritta nello script Visual Basic illustra come rimuovere la partizione predefinita per un utente:
 
 
 ```VB
@@ -111,16 +111,16 @@ End Sub
 
 <dl> <dt>
 
-[Raccolta delle metriche della partizione](collecting-partition-metrics.md)
+[Raccolta delle metriche delle partizioni](collecting-partition-metrics.md)
 </dt> <dt>
 
-[Configurazione della cache della partizione](configuring-the-partition-cache.md)
+[Configurazione della cache delle partizioni](configuring-the-partition-cache.md)
 </dt> <dt>
 
 [Raggruppamento di applicazioni in partizioni](grouping-applications-into-partitions.md)
 </dt> <dt>
 
-[Gestione di partizioni all'interno Active Directory](managing-partitions-within-active-directory.md)
+[Gestione delle partizioni all'interno di Active Directory](managing-partitions-within-active-directory.md)
 </dt> <dt>
 
 [Impostazione dei diritti amministrativi per una partizione](setting-administrative-rights-for-a-partition.md)

@@ -1,19 +1,19 @@
 ---
 description: L'interfaccia IObjectId espone le proprietà seguenti.
 ms.assetid: 5C57B555-D224-469A-A972-536942EAB327
-title: Proprietà di IObjectId
+title: Proprietà IObjectId
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f56f0ebb64b37e1d6742e10cc804e2247dff7f11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b076d5ab6ec70a9a87525b1f7dc9ce4b1514c249addf03f7b3a4e935f9e880c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104526743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117777596"
 ---
-# <a name="iobjectid-properties"></a>Proprietà di IObjectId
+# <a name="iobjectid-properties"></a>Proprietà IObjectId
 
-L'interfaccia [**IObjectId**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectid) espone le proprietà seguenti.
+[**L'interfaccia IObjectId**](/windows/desktop/api/CertEnroll/nn-certenroll-iobjectid) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

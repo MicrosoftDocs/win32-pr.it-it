@@ -1,17 +1,17 @@
 ---
 description: Una richiesta di sospensione è stata completata.
 ms.assetid: 32acad47-65bd-42f0-987e-3690bb824b05
-title: EC_PAUSED (dshow. h)
+title: EC_PAUSED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa25a2f32f191519e55e286dac52542bcef949a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ebc16eefcf88402ccf0a6173bcfa22e3100c33985469b7372ad6bb2ea97c572d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820052"
 ---
-# <a name="ec_paused"></a>EC \_ sospeso
+# <a name="ec_paused"></a>EC \_ PAUSED
 
 Una richiesta di sospensione è stata completata.
 
@@ -22,7 +22,7 @@ Una richiesta di sospensione è stata completata.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**HRESULT**) Stato del operazione di sospensione.
+(**HRESULT**) Stato dell'operazione di sospensione.
 
 </dd> <dt>
 
@@ -39,7 +39,7 @@ No.
 
 ## <a name="remarks"></a>Osservazioni
 
-Il gestore del grafico dei filtri Invia questo evento quando completa un comando di sospensione asincrona.
+Il gestore del grafico dei filtri invia questo evento quando completa un comando di sospensione asincrono.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -47,7 +47,7 @@ Il gestore del grafico dei filtri Invia questo evento quando completa un comando
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>Dshow. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

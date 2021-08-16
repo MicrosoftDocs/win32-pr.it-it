@@ -14,17 +14,17 @@ ms.locfileid: "118315638"
 ---
 # <a name="setting-security-on-namespace-creation"></a>Impostazione della sicurezza durante la creazione dello spazio dei nomi
 
-Il file Managed Object Format (MOF) che crea uno spazio [](/windows/desktop/SecGloss/s-gly) dei nomi può anche definire i descrittori di sicurezza per lo spazio dei nomi includendo il qualificatore **NamespaceSecuritySDDL** con il descrittore di sicurezza nel formato [SDDL (Security Descriptor Definition Language).](/windows/desktop/SecAuthZ/security-descriptor-definition-language)
+Il file Managed Object Format (MOF) che crea uno [](/windows/desktop/SecGloss/s-gly) spazio dei nomi può anche definire i descrittori di sicurezza per lo spazio dei nomi includendo il qualificatore **NamespaceSecuritySDDL** con il descrittore di sicurezza nel formato [SDDL (Security Descriptor Definition Language).](/windows/desktop/SecAuthZ/security-descriptor-definition-language)
 
-È possibile usare **NamespaceSecuritySDDL per** proteggere qualsiasi spazio dei nomi. È anche possibile usare questo qualificatore in un semplice file MOF per modificare il descrittore di sicurezza in uno spazio dei nomi esistente. La stringa SDDL viene elaborata da WMI per stabilire la sicurezza dello spazio dei nomi, ma non viene archiviata come stringa. Se non viene specificato alcun descrittore di sicurezza, viene utilizzata la sicurezza predefinita. Per altre informazioni, vedere [Impostazione dei descrittori di sicurezza di Namepace.](setting-namespace-security-descriptors.md)
+È possibile usare **NamespaceSecuritySDDL per** proteggere qualsiasi spazio dei nomi. È anche possibile usare questo qualificatore in un semplice file MOF per modificare il descrittore di sicurezza in uno spazio dei nomi esistente. La stringa SDDL viene elaborata da WMI per stabilire la sicurezza dello spazio dei nomi, ma non viene archiviata come stringa. Se non viene specificato alcun descrittore di sicurezza, viene usata la sicurezza predefinita. Per altre informazioni, vedere [Setting Namepace Security Descriptors](setting-namespace-security-descriptors.md)(Impostazione dei descrittori di sicurezza diPace).
 
-La procedura seguente imposta il descrittore di sicurezza per lo spazio *dei \\ nomi MyNamespace* radice. La stringa SDDL imposta il proprietario e il gruppo per gli utenti autenticati e specifica un elenco di controllo di accesso discrezionale [*(DACL)*](/windows/desktop/SecGloss/d-gly) ereditato dagli spazi dei nomi figlio. L'elenco DACL consente all'utente di leggere i dati, eseguire metodi, scrivere dati nelle classi del provider e usare l'accesso remoto: **WBEM \_ ENABLE,** **WBEM \_ METHOD \_ EXECUTE,** **WBEM \_ WRITE \_ PROVIDER,** **WBEM \_ REMOTE \_ ACCESS.** Per altre informazioni, vedere [Accesso agli spazi dei nomi WMI.](access-to-wmi-namespaces.md)
+La procedura seguente imposta il descrittore di sicurezza per lo spazio dei *\\ nomi MyNamespace* radice. La stringa SDDL imposta il proprietario e il gruppo per gli utenti autenticati e specifica un elenco di controllo di accesso discrezionale [*ereditato*](/windows/desktop/SecGloss/d-gly) dagli spazi dei nomi figlio. L'elenco DACL consente all'utente di leggere i dati, eseguire metodi, scrivere dati nelle classi provider e usare l'accesso remoto: **WBEM \_ ENABLE,** **WBEM \_ METHOD \_ EXECUTE,** **WBEM \_ WRITE \_ PROVIDER,** **WBEM \_ REMOTE \_ ACCESS.** Per altre informazioni, vedere [Accesso agli spazi dei nomi WMI](access-to-wmi-namespaces.md).
 
-**Per impostare un DACL dello spazio dei nomi**
+**Per impostare un elenco DACL dello spazio dei nomi**
 
-1.  Creare un file Managed Object Format (MOF) o modificare il file MOF esistente che definisce lo spazio dei nomi per aggiungere il qualificatore **NamespaceSecuritySDDL** con la stringa SDDL.
+1.  Creare un file MANAGED OBJECT FORMAT (MOF) o modificare il file MOF esistente che definisce lo spazio dei nomi per aggiungere il qualificatore **NamespaceSecuritySDDL** con la stringa SDDL.
 
-    Nell'esempio di codice seguente viene illustrato che lo spazio dei nomi da modificare è MyNamespace radice e \\ il file è denominato MyNamespace \_ security.mof.
+    L'esempio di codice seguente mostra che lo spazio dei nomi da modificare è MyNamespace radice e \\ il file è denominato MyNamespace \_ security.mof.
 
     ```mof
     #pragma autorecover
@@ -38,9 +38,9 @@ La procedura seguente imposta il descrittore di sicurezza per lo spazio *dei \\ 
 
     
 
-2.  Tenere presente che la stringa SDDL fa distinzione tra maiuscole e minuscole: le lettere devono essere maiuscole.
+2.  Tenere presente che la stringa SDDL fa distinzione tra maiuscole e minuscole: le lettere devono essere in maiuscolo.
 
-    L'esempio di codice seguente mostra le lettere "o" e "g" nella stringa SDDL in lettere minuscole e Mofcomp.exe restituirà un errore.
+    L'esempio di codice seguente mostra le lettere "o" e "g" nella stringa SDDL come minuscole e Mofcomp.exe restituirà un errore.
 
     ```mof
     #pragma autorecover
@@ -58,7 +58,7 @@ La procedura seguente imposta il descrittore di sicurezza per lo spazio *dei \\ 
 
     **c: \\ mofcomp MyNamespace \_ security.mof**
 
-    In C++ usare i [**metodi IMoFCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
+    In C++ usare i metodi [**IMoFCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
 
 4.  Se il tentativo di impostare l'elenco DACL dello spazio dei nomi ha esito negativo, considerare i messaggi di errore seguenti:
 
@@ -66,7 +66,7 @@ La procedura seguente imposta il descrittore di sicurezza per lo spazio *dei \\ 
 
     | Errore                           | Descrizione                                                                                                  |
     |---------------------------------|--------------------------------------------------------------------------------------------------------------|
-    | **PARAMETRO WBEM \_ E \_ NON \_ VALIDO** | Non esiste alcun DACL ereditato. In alternativa, il chiamante ha violato l'elenco DACL o la DS nello spazio dei nomi padre. |
+    | **PARAMETRO WBEM \_ E \_ NON \_ VALIDO** | Non è presente alcun elenco DACL ereditato. In alternativa, il chiamante ha violato l'elenco DACL o l'unità SD nello spazio dei nomi padre. |
     | **ACCESSO WBEM \_ E \_ \_ NEGATO**     | Il chiamante non dispone dell'autorizzazione per aggiornare il file SDDL in MOF.                                               |
 
     
@@ -80,13 +80,13 @@ La procedura seguente imposta il descrittore di sicurezza per lo spazio *dei \\ 
 [Impostazione dei descrittori di sicurezza dello spazio dei nomi](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
-[**Costanti per i diritti di accesso allo spazio dei nomi**](namespace-access-rights-constants.md)
+[**Costanti dei diritti di accesso allo spazio dei nomi**](namespace-access-rights-constants.md)
 </dt> <dt>
 
-[**Costanti dei flag ACE dello spazio dei nomi**](namespace-ace-flag-constants.md)
+[**Costanti del flag ACE dello spazio dei nomi**](namespace-ace-flag-constants.md)
 </dt> <dt>
 
-[Modifica della sicurezza dell'accesso per gli oggetti a protezione diretta](changing-access-security-on-securable-objects.md)
+[Modifica della sicurezza degli accessi per gli oggetti a protezione diretta](changing-access-security-on-securable-objects.md)
 </dt> </dl>
 
  

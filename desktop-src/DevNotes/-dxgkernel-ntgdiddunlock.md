@@ -1,7 +1,7 @@
 ---
 description: Rilascia il blocco mantenuto sulla superficie specificata.
 ms.assetid: d9d3178b-aadd-4c33-8044-8e6362f9fefe
-title: Funzione NtGdiDdUnlock (Ntgdi. h)
+title: Funzione NtGdiDdUnlock (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 3472dc32cc503b83c12bcc17cdbd0d14b89b0de4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b5c652c458ec3e67888b3bcc49699da21ba53fc0dc4b9738457949ad1aa57766
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104482869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117828002"
 ---
-# <a name="ntgdiddunlock-function"></a>NtGdiDdUnlock (funzione)
+# <a name="ntgdiddunlock-function"></a>Funzione NtGdiDdUnlock
 
-\[Questa funzione è soggetta a modifiche a ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs; Queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà legate all'interazione diretta con i driver di visualizzazione.\]
+\[Questa funzione è soggetta a modifiche con ogni revisione del sistema operativo. Usare invece Microsoft DirectDraw e Microsoft Direct3DAPIs. queste API isolano le applicazioni da tali modifiche del sistema operativo e nascondono molte altre difficoltà nell'interazione diretta con i driver di visualizzazione.\]
 
 Rilascia il blocco mantenuto sulla superficie specificata.
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdUnlock(
 
 <dl> <dt>
 
-*hSurface* \[ in\]
+*hSurface* \[ Pollici\]
 </dt> <dd>
 
-Handle per una [**struttura \_ \_ locale della superficie DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che descrive la superficie da sbloccare.
+Handle a una [**struttura DD \_ SURFACE \_ LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) che descrive la superficie da sbloccare.
 
 </dd> <dt>
 
-*puUnlockData* \[ in uscita\]
+*puUnlockData* \[ in, out\]
 </dt> <dd>
 
-Puntatore a una struttura [**DD \_ UNLOCKDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_unlockdata) che contiene le informazioni necessarie per eseguire il rilascio del blocco.
+Puntatore a [**una struttura DD \_ UNLOCKDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_unlockdata) che contiene le informazioni necessarie per eseguire il rilascio del blocco.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Puntatore a una struttura [**DD \_ UNLOCKDATA**](/windows/win32/api/ddrawint/ns-
 
 | Codice restituito                                                                                              | Descrizione                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_driver DDHAL \_ gestito**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per l'operazione. Se il codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione. In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
-| <dl> <dt>**\_NOTHANDLED driver \_ DDHAL**</dt> </dl> | Il driver non ha commenti sull'operazione richiesta. Se è necessario che il driver implementi un particolare callback, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione di DirectDraw o Direct3D indipendente dal dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ GESTITO**</dt> </dl>    | Il driver ha eseguito l'operazione e ha restituito un codice restituito valido per tale operazione. Se questo codice è DD \_ OK, DirectDraw o Direct3D procede con la funzione . In caso contrario, DirectDraw o Direct3D restituisce il codice di errore fornito dal driver e interrompe la funzione.<br/>                                                                                 |
+| <dl> <dt>**DRIVER DDHAL \_ \_ NON GESTITO**</dt> </dl> | Il driver non ha alcun commento sull'operazione richiesta. Se è necessario che il driver abbia implementato un callback specifico, DirectDraw o Direct3D segnala una condizione di errore. In caso contrario, DirectDraw o Direct3D gestisce l'operazione come se il callback del driver non fosse stato definito eseguendo l'implementazione indipendente dal dispositivo DirectDraw o Direct3D.<br/> |
 
 
 
@@ -82,7 +82,7 @@ Puntatore a una struttura [**DD \_ UNLOCKDATA**](/windows/win32/api/ddrawint/ns-
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Puntatore a una struttura [**DD \_ UNLOCKDATA**](/windows/win32/api/ddrawint/ns-
 
 <dl> <dt>
 
-[Supporto client di livello inferiore grafica](-dxgkernel-low-level-client-support.md)
+[Supporto client di basso livello per grafica](-dxgkernel-low-level-client-support.md)
 </dt> </dl>
 
  

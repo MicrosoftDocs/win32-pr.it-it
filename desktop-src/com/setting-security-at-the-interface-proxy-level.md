@@ -1,29 +1,29 @@
 ---
 title: Impostazione della sicurezza a livello di proxy di interfaccia
-description: A volte il client necessita di un controllo accurato della sicurezza sulle chiamate a interfacce particolari.
+description: In alcuni casi il client necessita di un controllo con granularità fine sulla sicurezza nelle chiamate a interfacce specifiche.
 ms.assetid: 72925ca2-78c9-47d9-8760-63f6379326d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b38fe83e8ce8841cc9029808a6947ec67d4eaf4
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: f8ef969039dcfdc12449b7a8d0a3d63729ab5f84061ade1a743d21a1b6b34331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "106300508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118309096"
 ---
 # <a name="setting-security-at-the-interface-proxy-level"></a>Impostazione della sicurezza a livello di proxy di interfaccia
 
-A volte il client necessita di un controllo accurato della sicurezza sulle chiamate a interfacce particolari. Ad esempio, la sicurezza potrebbe essere impostata a un livello basso per il processo, ma le chiamate a un'interfaccia specifica potrebbero richiedere un livello di autenticazione superiore, ad esempio la crittografia. I metodi dell'interfaccia [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) consentono al client di modificare le impostazioni di sicurezza associate alle chiamate a una particolare interfaccia controllando le impostazioni di sicurezza a livello di interfaccia-proxy.
+In alcuni casi il client necessita di un controllo con granularità fine sulla sicurezza nelle chiamate a interfacce specifiche. Ad esempio, la sicurezza potrebbe essere impostata a un livello basso per il processo, ma le chiamate a una determinata interfaccia potrebbero richiedere un livello di autenticazione superiore, ad esempio la crittografia. I metodi [**dell'interfaccia IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) consentono al client di modificare le impostazioni di sicurezza associate alle chiamate a una determinata interfaccia controllando le impostazioni di sicurezza a livello di proxy di interfaccia.
 
-Il client può eseguire una query su un oggetto esistente per [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) e quindi chiamare il metodo [**IClientSecurity:: QueryBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-queryblanket) per individuare le impostazioni di sicurezza correnti per un particolare proxy di interfaccia. Il metodo [**IClientSecurity:: Seblankt**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) può essere usato per modificare le impostazioni di sicurezza per un singolo proxy di interfaccia nell'oggetto prima di chiamare uno dei metodi dell'interfaccia. Le nuove impostazioni si applicano a tutti i chiamanti futuri di questa particolare interfaccia. Il metodo [**IClientSecurity:: CopyProxy**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-copyproxy) fornisce un modo per il client di copiare un proxy di interfaccia in modo che le chiamate successive a **seblankt** sulla copia non influiscano sui chiamanti del proxy originale.
+Il client può eseguire una query su un oggetto esistente per [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) e quindi chiamare il metodo [**IClientSecurity::QueryBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-queryblanket) per scoprire quali sono le impostazioni di sicurezza correnti per un proxy di interfaccia specifico. Il [**metodo IClientSecurity::SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) può essere usato per modificare le impostazioni di sicurezza per un singolo proxy di interfaccia nell'oggetto prima di chiamare uno dei metodi dell'interfaccia. Le nuove impostazioni si applicano a tutti i chiamanti futuri di questa particolare interfaccia. Il [**metodo IClientSecurity::CopyProxy**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-copyproxy) consente al client di copiare un proxy di interfaccia in modo che le chiamate successive a **SetBlanket** nella copia non influiscano sui chiamanti del proxy originale.
 
-Il metodo [**Seblankt**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) viene comunemente usato per aumentare il livello di autenticazione per un particolare proxy di interfaccia a un livello superiore di protezione della sicurezza. In alcune situazioni, tuttavia, può essere utile anche abbassare il livello di autenticazione per un particolare proxy di interfaccia. Si supponga, ad esempio, che il livello di autenticazione predefinito per il processo sia un valore diverso dal \_ livello auth C di RPC \_ \_ \_ e che il client e il server si trovino in domini distinti che non si considerano attendibili reciprocamente. In questo caso, le chiamate al server avranno esito negativo a meno che il client non chiami il metodo **Seblankt** per abbassare il livello di autenticazione al \_ livello auth C di RPC \_ \_ \_ .
+[**SetBlanket viene**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) comunemente usato per aumentare il livello di autenticazione per un proxy di interfaccia specifico a un livello superiore di protezione della sicurezza. Tuttavia, in alcune situazioni può essere utile anche ridurre il livello di autenticazione per un proxy di interfaccia specifico. Si supponga, ad esempio, che il livello di autenticazione predefinito per il processo sia un valore diverso da RPC \_ C \_ AUTHN LEVEL NONE e che il client e il server siano in domini separati che non si \_ \_ attendibili. In questo caso, le chiamate al server avranno esito negativo a meno che il client non chiami **SetBlanket** per ridurre il livello di autenticazione a RPC \_ C \_ AUTHN \_ LEVEL \_ NONE.
 
-I client che usano l'implementazione predefinita di [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) fornita da gestione proxy possono chiamare le funzioni di supporto [**CoQueryProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-coqueryproxyblanket), [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)e [**CoCopyProxy**](/windows/desktop/api/combaseapi/nf-combaseapi-cocopyproxy) invece di chiamare direttamente i metodi **IClientSecurity** . Le funzioni di supporto semplificano il codice, ma sono leggermente meno efficienti rispetto alla chiamata diretta dei metodi **IClientSecurity** corrispondenti.
+I client che usano l'implementazione predefinita di [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) fornita dal gestore proxy possono chiamare le funzioni helper [**CoQueryProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-coqueryproxyblanket), [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)e [**CoCopyProxy**](/windows/desktop/api/combaseapi/nf-combaseapi-cocopyproxy) anziché chiamare direttamente i metodi **IClientSecurity.** Le funzioni helper semplificano il codice, ma sono leggermente meno efficienti rispetto alla chiamata diretta dei metodi **IClientSecurity** corrispondenti.
 
-L'interfaccia [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) viene implementata localmente per il client da gestione proxy. Alcuni oggetti con marshalling personalizzato potrebbero non supportare **IClientSecurity**.
+[**L'interfaccia IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) viene implementata in locale per il client dalla gestione proxy. Alcuni oggetti con marshalling personalizzati potrebbero non supportare **IClientSecurity.**
 
-[**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) funziona con tutti i servizi di autenticazione supportati (attualmente NTLMSSP, Schannel e il protocollo Kerberos V5).
+[**IClientSecurity funziona**](/windows/desktop/api/ObjIdl/nn-objidl-iclientsecurity) con tutti i servizi di autenticazione supportati (attualmente NTLMSSP, Schannel e il protocollo Kerberos v5).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -32,6 +32,6 @@ L'interfaccia [**IClientSecurity**](/windows/desktop/api/ObjIdl/nn-objidl-iclien
 [Impostazione della sicurezza per le applicazioni COM](setting-security-for-com-applications.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -9,12 +9,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: 17ac7b71-4c78-480b-b35b-5557b5b85c89
-ms.openlocfilehash: 8162987c540d8e611b8ee632a77df7ce3fd5fe93
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 984841f3360218d3f5593163372da4ccc9992ebb1d04fdc081742197f006da5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223940"
 ---
 # <a name="folderitemsparent-property"></a>FolderItems.Parent - proprietà
 

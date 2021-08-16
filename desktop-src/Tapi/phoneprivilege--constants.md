@@ -1,5 +1,5 @@
 ---
-description: Le costanti del flag di bit PHONEPRIVILEGE descrivono i vari modi in cui è possibile aprire \_ un dispositivo telefono.
+description: Le costanti del flag di bit PHONEPRIVILEGE descrivono i vari modi in cui è possibile aprire \_ un dispositivo telefonico.
 ms.assetid: 1dc2fab9-b044-4ae3-8c16-fa450f9ef714
 title: PHONEPRIVILEGE_ costanti (Tapi.h)
 ms.topic: reference
@@ -22,7 +22,7 @@ Le costanti del flag di bit **PHONEPRIVILEGE \_** descrivono i vari modi in cui 
 
 
 
-Un'applicazione che apre un dispositivo telefono con il privilegio monitor viene informata degli eventi e delle modifiche dello stato che si verificano nel telefono. L'applicazione non può richiamare operazioni sul dispositivo telefonico che ne modificano lo stato, pertanto è possibile richiamare solo operazioni di stato. Più applicazioni possono monitorare un dispositivo telefonico in un determinato momento.
+Un'applicazione che apre un dispositivo telefono con il privilegio monitor viene informata degli eventi e delle modifiche dello stato che si verificano nel telefono. L'applicazione non può richiamare operazioni sul dispositivo telefonico che ne modificano lo stato, pertanto è possibile richiamare solo le operazioni di stato. Più applicazioni possono monitorare un dispositivo telefonico in un determinato momento.
 
 
 </dt> </dl> </dd> <dt>
