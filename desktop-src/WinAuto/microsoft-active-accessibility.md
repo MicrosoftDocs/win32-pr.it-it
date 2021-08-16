@@ -19,7 +19,7 @@ Microsoft Active Accessibility è una tecnologia basata Component Object Model (
 
 ## <a name="where-applicable"></a>Se applicabile
 
-Usando le Microsoft Active Accessibility e seguendo le procedure di progettazione accessibili, gli sviluppatori possono rendere le applicazioni in esecuzione in Windows più accessibili a molte persone con problemi di vista, udito o movimento.
+Usando Microsoft Active Accessibility e seguendo le procedure di progettazione accessibili, gli sviluppatori possono rendere le applicazioni in esecuzione Windows più accessibili a molte persone con problemi di visione, udito o movimento.
 
 ## <a name="developer-audience"></a>Sviluppatori
 
@@ -27,7 +27,7 @@ Microsoft Active Accessibility è progettato principalmente per gli sviluppatori
 
 ## <a name="run-time-requirements"></a>Requisiti di runtime
 
-Il supporto completo Microsoft Active Accessibility è integrato in Windows XP e Windows Server 2003. Microsoft Active Accessibility è supportato anche in Windows NT 4.0 con Service Pack 6 (SP6) e versioni successive e Windows 98.
+Il supporto completo per Microsoft Active Accessibility è integrato in Windows XP e Windows Server 2003. Microsoft Active Accessibility è supportato anche in Windows NT 4.0 con Service Pack 6 (SP6) e versioni successive e Windows 98.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -37,10 +37,10 @@ Il supporto completo Microsoft Active Accessibility è integrato in Windows XP e
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Per iniziare](getting-started.md)<br/>                 | Introduzione ai componenti Microsoft Active Accessibility e alle piattaforme supportate e un breve confronto tra Microsoft Active Accessibility e Microsoft Automazione interfaccia utente.<br/> |
 | [Panoramica tecnica](technical-overview.md)<br/>           | Informazioni generali sulla tecnologia Microsoft Active Accessibility.<br/>                                                                                                             |
-| [Guida per gli sviluppatori C/C++](c-c---developer-s-guide.md)<br/> | Informazioni sul funzionamento Microsoft Active Accessibility dal punto di vista di uno sviluppatore di applicazioni C o C++. Vengono illustrati i problemi specifici degli sviluppatori di client e server.<br/>  |
+| [Guida per sviluppatori C/C++](c-c---developer-s-guide.md)<br/> | Informazioni sul funzionamento Microsoft Active Accessibility dal punto di vista di uno sviluppatore di applicazioni C o C++. Vengono illustrati i problemi specifici per gli sviluppatori client e server.<br/>  |
 | [Riferimenti per C/C++](c-c---reference.md)<br/>                 | Documentazione di riferimento sull'API Microsoft Active Accessibility per sviluppatori C/C++.<br/>                                                                                       |
 | [Esempi](samples.md)<br/>                                 | Programmi di esempio che illustrano come usare l'API Microsoft Active Accessibility.<br/>                                                                                              |
-| [Appendici](appendixes.md)<br/>                           | Materiale di riferimento aggiuntivo per Microsoft Active Accessibility client e server e per Visual Basic sviluppatori.<br/>                                                       |
+| [Appendici](appendixes.md)<br/>                           | Materiale di riferimento aggiuntivo per Microsoft Active Accessibility sviluppatori client e server e Visual Basic sviluppatori.<br/>                                                       |
 
 
 
@@ -53,7 +53,7 @@ Il supporto completo Microsoft Active Accessibility è integrato in Windows XP e
 [sito Web Microsoft dedicato all'accessibilità](https://www.microsoft.com/enable/)
 </dt> <dt>
 
-[Microsoft Accessibility Developer Center su MSDN](/windows/apps/accessibility)
+[Centro per sviluppatori microsoft per l'accessibilità su MSDN](/windows/apps/accessibility)
 </dt> </dl>
 
  

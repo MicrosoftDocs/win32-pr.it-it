@@ -1,11 +1,11 @@
 ---
-title: Metodo IWMDRMNonSilentLicenseAquisition GetURL (wmdrmsdk. h)
-description: Il metodo GetURL recupera l'URL a cui deve essere inviata la richiesta di licenza.
+title: Metodo GetURL IWMDRMNonSilentLicenseAquisition (Wmdrmsdk.h)
+description: Il metodo GetURL recupera l'URL in cui deve essere pubblicata la richiesta di licenza.
 ms.assetid: f65f1984-74bc-4cd0-957e-930aa6a6f6a5
 keywords:
-- Metodo GetURL Windows Media Format
-- Metodo GetURL Windows Media Format, interfaccia IWMDRMNonSilentLicenseAquisition
-- Interfaccia IWMDRMNonSilentLicenseAquisition-formato Windows Media, Metodo GetURL
+- Metodo GetURL windows Media Format
+- Metodo GetURL windows Media Format , interfaccia IWMDRMNonSilentLicenseAquisition
+- IWMDRMNonSilentLicenseAquisition interface windows Media Format , Metodo GetURL
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79212d19d7dbf4a66e2b72dcbdeba9262a9aeddd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7979d82363b21b58563a606c31a99d069a60a3bc5b2da162a7339513c2867bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084708"
 ---
-# <a name="iwmdrmnonsilentlicenseaquisitiongeturl-method"></a>Metodo IWMDRMNonSilentLicenseAquisition:: GetURL
+# <a name="iwmdrmnonsilentlicenseaquisitiongeturl-method"></a>Metodo IWMDRMNonSilentLicenseAquisition::GetURL
 
-Il metodo **getURL** recupera l'URL a cui deve essere inviata la richiesta di licenza.
+Il **metodo GetURL** recupera l'URL in cui deve essere pubblicata la richiesta di licenza.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,7 +43,7 @@ HRESULT GetURL(
 
 <dl> <dt>
 
-*pbstrURL* \[ out\]
+*pbstrURL* \[ Cambio\]
 </dt> <dd>
 
 Indirizzo di una variabile che riceve l'URL.
@@ -52,13 +52,13 @@ Indirizzo di una variabile che riceve l'URL.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                          | Descrizione                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**\_OK**</dt> </dl> | Il metodo è riuscito.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Il metodo è riuscito.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Il metodo restituisce un valore **HRESULT**. I valori possibili includono, ma no
 
 ## <a name="remarks"></a>Commenti
 
-Nessuna.
+Nessuno.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,8 +74,8 @@ Nessuna.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Libreria<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Libreria<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

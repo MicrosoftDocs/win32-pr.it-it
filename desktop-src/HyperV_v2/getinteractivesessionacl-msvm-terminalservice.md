@@ -22,7 +22,7 @@ ms.locfileid: "119253721"
 ---
 # <a name="getinteractivesessionacl-method-of-the-msvm_terminalservice-class"></a>Metodo GetInteractiveSessionACL della classe Msvm \_ TerminalService
 
-Recupera l'elenco di *controllo di accesso discrezionale* (DACL) corrente che controlla l'accesso alla sessione interattiva di una macchina virtuale.
+Recupera l'elenco di controllo di *accesso discrezionale* (DACL) corrente che controlla l'accesso alla sessione interattiva di una macchina virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Riferimento a un'istanza della [**classe Msvm \_ ComputerSystem**](msvm-computer
 *AccessControlList* \[ Cambio\]
 </dt> <dd>
 
-Matrice di stringhe, ognuna delle quali contiene un'istanza incorporata  della classe [**Msvm \_ InteractiveSessionACE**](msvm-interactivesessionace.md) che rappresenta una voce di controllo di accesso (ACE) nell'elenco DACL della sessione interattiva della macchina virtuale.
+Matrice di stringhe, ognuna delle quali contiene un'istanza incorporata della [**classe Msvm \_ InteractiveSessionACE**](msvm-interactivesessionace.md) che rappresenta una voce di controllo di accesso (ACE) nell'elenco DACL della sessione interattiva della macchina virtuale. 
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Questo metodo restituisce uno dei valori seguenti.
 
 <dl> <dt>
 
-**Completata senza errori** (0)
+**Completato senza errori** (0)
 </dt> <dt>
 
 **Non supportato** (1)
@@ -72,7 +72,7 @@ Questo metodo restituisce uno dei valori seguenti.
 **Timeout** (3)
 </dt> <dt>
 
-**Parametro non valido** (4)
+**Parametro non** valido (4)
 </dt> <dt>
 
 **Stato non valido** (5)
@@ -81,10 +81,10 @@ Questo metodo restituisce uno dei valori seguenti.
 **Parametri incompatibili** (6)
 </dt> <dt>
 
-**DmTF Reserved** (..)
+**DMTF riservato** (..)
 </dt> <dt>
 
-**Parametri del metodo verificati - Processo avviato** (4096)
+**Parametri del metodo controllati - Processo avviato** (4096)
 </dt> <dt>
 
 **Metodo riservato** (4097..32767)
@@ -101,7 +101,7 @@ Questo metodo restituisce uno dei valori seguenti.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                              |
 | Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                    |
-| Spazio dei nomi<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| Spazio dei nomi<br/>                | Virtualizzazione \\ radice \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 

@@ -1,22 +1,22 @@
 ---
-title: Costanti di controllo Tab
-description: Costanti di controllo Tab
+title: Costanti del controllo Tab
+description: Costanti del controllo Tab
 ms.assetid: aa1b49c3-cebd-44e1-be83-b4bbe8b18885
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0baa84b42c790042b030cbe28b506bb3280f6fe5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2963dc947d3c5570ad37e33096a24c82745f4dd016e1403cce2f005c9ae52465
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "106321629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119969476"
 ---
-# <a name="tab-control-constants"></a>Costanti di controllo Tab
+# <a name="tab-control-constants"></a>Costanti del controllo Tab
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [Stati degli elementi di controllo Tab](tab-control-item-states.md)
--   [Stili del controllo Tab](tab-control-styles.md)
+-   [Stati degli elementi del controllo Struttura a schede](tab-control-item-states.md)
+-   [Stili dei controlli Struttura a schede](tab-control-styles.md)
 
  
 

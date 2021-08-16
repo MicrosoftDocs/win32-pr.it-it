@@ -1,11 +1,11 @@
 ---
 title: Metodo Modify della classe MicrosoftDNS_SIGType
-description: Il metodo modify aggiorna un RR di firma (SIG).
+description: Il metodo Modify aggiorna una firma (SIG) RR.
 ms.assetid: 6a7017da-d3f1-4aba-a53a-96f578518304
 keywords:
-- Modificare il metodo DNS
-- Modificare il metodo DNS, MicrosoftDNS_SIGType classe
-- Classe MicrosoftDNS_SIGType DNS, metodo modify
+- Modificare il DNS del metodo
+- Modificare il metodo DNS , MicrosoftDNS_SIGType classe
+- MicrosoftDNS_SIGType classe DNS , metodo Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80fbaa25ec3b6a52aae06f99ed02d50430745dca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be64eb494eb72ace437aeade8d7d01a6675f99b2b44c4fa461a8e60c8ed3de1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692281"
 ---
-# <a name="modify-method-of-the-microsoftdns_sigtype-class"></a>Metodo Modify della \_ classe SIGType di MicrosoftDNS
+# <a name="modify-method-of-the-microsoftdns_sigtype-class"></a>Metodo Modify della classe SIGType MicrosoftDNS \_
 
-Il metodo **Modify** aggiorna un RR di firma (SIG).
+Il **metodo Modify** aggiorna una firma (SIG) RR.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,24 +52,24 @@ void Modify(
 
 <dl> <dt>
 
-Valore *TTL* \[ in, facoltativo\]
+*TTL* \[ in, facoltativo\]
 </dt> <dd>
 
-Tempo, in secondi, che l'RR può memorizzare nella cache da un resolver DNS.
+Tempo, in secondi, in cui il RR può essere memorizzato nella cache da un resolver DNS.
 
 </dd> <dt>
 
-*TypeCovered* \[ in\]
+*TypeCovered* \[ Pollici\]
 </dt> <dd>
 
 Tipo di RR coperto da questo SIG.
 
 </dd> <dt>
 
-*Algoritmo* \[ di in\]
+*Algoritmo* \[ Pollici\]
 </dt> <dd>
 
-Algoritmo utilizzato con la chiave specificata nel record di risorse. I valori assegnati sono riportati nella tabella seguente.
+Algoritmo usato con la chiave specificata nel record di risorse. I valori assegnati sono indicati nella tabella seguente.
 
 
 
@@ -86,56 +86,56 @@ Algoritmo utilizzato con la chiave specificata nel record di risorse. I valori a
 
 </dd> <dt>
 
-*Etichette* \[ in\]
+*Etichette* \[ Pollici\]
 </dt> <dd>
 
-Conteggio senza segno delle etichette nel nome originale del proprietario del record di firma. Il conteggio non include l'etichetta NULL per la radice, né i caratteri jolly iniziali.
+Conteggio senza segno delle etichette nel nome del proprietario RR SIG originale. Il conteggio non include l'etichetta NULL per la radice, né i caratteri jolly iniziali.
 
 </dd> <dt>
 
-*OriginalTTL* \[ in\]
+*OriginalTTL* \[ Pollici\]
 </dt> <dd>
 
 TTL del set di RR firmato dal SIG.
 
 </dd> <dt>
 
-*SignatureExpiration* \[ in\]
+*SignatureExpiration* \[ Pollici\]
 </dt> <dd>
 
-Data di scadenza della firma, espressa in secondi dall'inizio del 1 gennaio 1970, ora di Greenwich (GMT), esclusi i secondi intercalari.
+Data di scadenza della firma, espressa in secondi dall'inizio del 1° gennaio 1970, ora media di Greenwich (GMT), esclusi i secondi intercalare.
 
 </dd> <dt>
 
-*SignatureInception* \[ in\]
+*SignatureInception* \[ Pollici\]
 </dt> <dd>
 
-Data e ora in cui la firma diventa valida, espressa in secondi a partire dall'inizio del 1 ° gennaio 1970, ora di Greenwich (GMT), esclusi i secondi intercalari.
+Data e ora in cui la firma diventa valida, espressa in secondi dall'inizio del 1° gennaio 1970, ora media di Greenwich (GMT), esclusi i secondi intercalare.
 
 </dd> <dt>
 
-*KeyTag* \[ in\]
+*KeyTag* \[ Pollici\]
 </dt> <dd>
 
 Metodo usato per scegliere una chiave che verifica un SIG. Vedere RFC 2535, Appendice C per il metodo usato per calcolare un KeyTag.
 
 </dd> <dt>
 
-*SignerName* \[ in\]
+*SignerName* \[ Pollici\]
 </dt> <dd>
 
-Nome di dominio del firmatario che ha generato il record SIG.
+Nome di dominio del firmatario che ha generato l'errore SIG RR.
 
 </dd> <dt>
 
-*Firma* \[ di in\]
+*Firma* \[ Pollici\]
 </dt> <dd>
 
-Firma, rappresentata in base 64, formattata come definito nella RFC 2535, Appendice A.
+Firma, rappresentata in base 64, formattata come definito in RFC 2535, Appendice A.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Riferimento al nuovo oggetto.
@@ -148,7 +148,7 @@ Questo metodo non restituisce valori.
 
 ## <a name="remarks"></a>Commenti
 
-Tutti i parametri non specificati rimangono invariati nel record modificato.
+Qualsiasi parametro non specificato viene lasciato invariato nel record modificato.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -159,7 +159,7 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                              |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                   |
 | Spazio dei nomi<br/>                | \\MicrosoftDNS radice<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -167,13 +167,13 @@ Tutti i parametri non specificati rimangono invariati nel record modificato.
 
 <dl> <dt>
 
-[**\_SIGType MicrosoftDNS**](microsoftdns-sigtype.md)
+[**MicrosoftDNS \_ SIGType**](microsoftdns-sigtype.md)
 </dt> <dt>
 
-[**Metodo CreateInstanceFromPropertyData della classe MicrosoftDNS \_ SIGType**](microsoftdns-sigtype-createinstancefrompropertydata.md)
+[**Metodo CreateInstanceFromPropertyData della classe SIGType MicrosoftDNS \_**](microsoftdns-sigtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**\_ResourceRecord MicrosoftDNS**](microsoftdns-resourcerecord.md)
+[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

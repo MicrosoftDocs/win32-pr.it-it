@@ -1,6 +1,6 @@
 ---
-title: Avvio rapido gestiti TraceLogging
-description: Nella sezione seguente vengono descritti i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
+title: Codice gestito TraceLogging Avvio rapido
+description: La sezione seguente descrive i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
 ms.assetid: E144214D-8DCC-4263-8232-9F468C1A3CC0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,24 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7108dfc094f3183950dd94e5398263f4bf7cfd5c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be29e4a1bd6721b8f53dbe2394be3552ca4845143cf948f130ef55e11881b518
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104329575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589241"
 ---
-# <a name="tracelogging-managed-quick-start"></a>Avvio rapido gestiti TraceLogging
+# <a name="tracelogging-managed-quick-start"></a>Codice gestito TraceLogging Avvio rapido
 
-Nella sezione seguente vengono descritti i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
+La sezione seguente descrive i passaggi di base necessari per aggiungere TraceLogging al codice gestito.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Windows 10
+-   Windows 10
 
-### <a name="simpletraceloggingexamplecs"></a>SimpleTraceLoggingExample. cs
+### <a name="simpletraceloggingexamplecs"></a>SimpleTraceLoggingExample.cs
 
-Questo esempio illustra come registrare gli eventi Tracelogging senza dover creare manualmente un file XML del manifesto di strumentazione separato.
+In questo esempio viene illustrato come registrare eventi Tracelogging senza la necessità di creare manualmente un file XML del manifesto della strumentazione separato.
 
 
 ```CSharp
@@ -59,9 +59,9 @@ namespace SimpleTraceLoggingExample
 
 
 
-### <a name="create-the-eventsource"></a>Creare il EventSource
+### <a name="create-the-eventsource"></a>Creare EventSource
 
-Prima di poter registrare gli eventi, è necessario creare un'istanza della classe EventSource. Il primo parametro del costruttore identifica il nome del provider. Il provider viene registrato automaticamente come illustrato nell'esempio.
+Prima di poter registrare gli eventi, è necessario creare un'istanza della classe EventSource. Il primo parametro del costruttore identifica il nome di questo provider. Il provider viene registrato automaticamente come illustrato nell'esempio.
 
 
 ```CSharp
@@ -70,11 +70,11 @@ Prima di poter registrare gli eventi, è necessario creare un'istanza della clas
 
 
 
-L'istanza è statica perché nell'applicazione deve essere presente solo un'istanza di un provider specifico alla volta.
+L'istanza è statica perché nell'applicazione deve essere presente una sola istanza di un provider specifico alla volta.
 
-### <a name="log-tracelogging-events"></a>Registra eventi Tracelogging
+### <a name="log-tracelogging-events"></a>Registrare eventi Tracelogging
 
-Dopo la creazione del provider, il seguente codice dell'esempio precedente registra un evento semplice.
+Dopo aver creato il provider, il codice seguente dell'esempio precedente registra un evento semplice.
 
 
 ```CSharp
@@ -83,9 +83,9 @@ Dopo la creazione del provider, il seguente codice dell'esempio precedente regis
 
 
 
-### <a name="log-structured-event-payload-data"></a>Registrare i dati del payload dell'evento strutturato
+### <a name="log-structured-event-payload-data"></a>Registrare i dati di payload degli eventi strutturati
 
-È possibile definire dati di payload strutturati che vengono registrati con l'evento. Fornire dati di payload strutturati come tipo anonimo o come istanza di una classe che è stata annotata con l' `[EventData]` attributo, come illustrato nell'esempio seguente.
+È possibile definire dati di payload strutturati registrati con l'evento . Fornire dati di payload strutturati come tipo anonimo o come istanza di una classe annotata con l'attributo , come `[EventData]` illustrato nell'esempio seguente.
 
 
 ```CSharp
@@ -97,7 +97,7 @@ Dopo la creazione del provider, il seguente codice dell'esempio precedente regis
 
 
 
-È necessario aggiungere l' `[EventData]` attributo alle classi di payload di eventi definite come illustrato di seguito.
+È necessario aggiungere `[EventData]` l'attributo alle classi di payload degli eventi definite come illustrato di seguito.
 
 
 ```CSharp
@@ -111,17 +111,17 @@ Dopo la creazione del provider, il seguente codice dell'esempio precedente regis
 
 
 
-L'attributo sostituisce la necessità di creare manualmente un file manifesto per descrivere i dati dell'evento. A questo punto, è sufficiente passare un'istanza della classe al Metodo EventSource. Write () per registrare l'evento e i dati di payload corrispondenti.
+L'attributo sostituisce la necessità di creare manualmente un file manifesto per descrivere i dati dell'evento. A questo punto è necessario passare un'istanza della classe al metodo EventSource.Write() per registrare l'evento e i dati di payload corrispondenti.
 
 ## <a name="summary-and-next-steps"></a>Riepilogo e passaggi successivi
 
-Vedere [registrare e visualizzare gli eventi TraceLogging](tracelogging-record-and-display-tracelogging-events.md) per informazioni su come acquisire e visualizzare i dati di TraceLogging usando le versioni interne più recenti di Windows Performance Tools (WPT).
+Vedere [Registrare e visualizzare eventi TraceLogging](tracelogging-record-and-display-tracelogging-events.md) per informazioni su come acquisire e visualizzare i dati TraceLogging usando le versioni interne più recenti di Windows Performance Tools (WPT).
 
-Per esempi più TraceLogging gestiti, vedere [esempi di Tracelogging .NET](tracelogging-net-examples.md) .
+Per altri esempi di TraceLogging gestiti, vedere Esempi di [tracelogging .NET.](tracelogging-net-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

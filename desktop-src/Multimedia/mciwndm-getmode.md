@@ -3,7 +3,7 @@ title: MCIWNDM_GETMODE messaggio (Vfw.h)
 description: Il messaggio MCIWNDM \_ GETMODE recupera la modalità operativa corrente di un dispositivo MCI. I dispositivi MCI hanno diverse modalità operative, designate da costanti. È possibile inviare questo messaggio in modo esplicito o usando la macro MCIWndGetMode.
 ms.assetid: cc327281-434e-4047-9e15-c04a10953f47
 keywords:
-- MCIWNDM_GETMODE di Windows multimediali
+- MCIWNDM_GETMODE di messaggi Windows multimediali
 topic_type:
 - apiref
 api_name:

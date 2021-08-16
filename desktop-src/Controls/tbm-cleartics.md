@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_CLEARTICS (COMmctrl. h)
-description: Rimuove i segni di graduazione correnti da un TrackBar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal TrackBar.
+title: TBM_CLEARTICS messaggio (Commctrl.h)
+description: Rimuove i segni di graduazione correnti da un trackbar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal trackbar.
 ms.assetid: 2830497c-2cf0-4068-810c-c05d4e0abb8b
 keywords:
-- Controlli di Windows Message TBM_CLEARTICS
+- TBM_CLEARTICS di controllo Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1ecb4f9f931c976b2542a1f263fc069f1eca10
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9390fc45c5b96a7b85d3b1b366e34d24c3b4bf0bc60ec066ead28357bcec1439
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104475922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046771"
 ---
-# <a name="tbm_cleartics-message"></a>\_Messaggio CLEARTICS TBM
+# <a name="tbm_cleartics-message"></a>Messaggio \_ CLEARTICS TBM
 
-Rimuove i segni di graduazione correnti da un TrackBar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal TrackBar.
+Rimuove i segni di graduazione correnti da un trackbar. Questo messaggio non rimuove il primo e l'ultimo segno di graduazione, che vengono creati automaticamente dal trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Rimuove i segni di graduazione correnti da un TrackBar. Questo messaggio non rim
 *wParam* 
 </dt> <dd>
 
-Ridisegni flag. Se questo parametro è **true**, il TrackBar viene ridisegnato dopo la cancellazione dei segni di graduazione. Se questo parametro è **false**, il messaggio Cancella i segni di graduazione senza ricreare il TrackBar.
+Flag di ridisegno. Se questo parametro è **TRUE,** il trackbar viene ridisegnato dopo che i segni di graduazione sono stati cancellati. Se questo parametro è **FALSE,** il messaggio cancella i segni di graduazione ma non ridisegna il trackbar.
 
 </dd> <dt>
 
@@ -49,9 +49,9 @@ Nessun valore restituito.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

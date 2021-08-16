@@ -1,37 +1,37 @@
 ---
-description: Funzioni di debug di attesa
+description: Funzioni di debug wait
 ms.assetid: 784ef76e-3c17-45e0-9a0b-656c11c71322
-title: Funzioni di debug di attesa
+title: Funzioni di debug wait
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d2f9f8d40e6b9676426254f0b9165b546dec7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f8f1de3d19ce7408625a5ab42f230d23ce401728e9fa7cf060edae62e19fcfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049201"
 ---
-# <a name="wait-debugging-functions"></a>Funzioni di debug di attesa
+# <a name="wait-debugging-functions"></a>Funzioni di debug wait
 
-Microsoft DirectShow fornisce diverse funzioni per il debug di attese infinite.
+Microsoft DirectShow diverse funzioni per il debug di attese infinite.
 
-Nelle compilazioni al dettaglio, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funzionano come le controparti API Windows, **WaitForMultipleObjects** e **WaitForSingleObject**, con intervalli di timeout infiniti.
+Nelle build per la vendita al dettaglio, le funzioni [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) funzionano come le controparti dell'API Windows **WaitForMultipleObjects** e **WaitForSingleObject,** con intervalli di timeout infiniti.
 
-Nelle build di debug queste funzioni usano un valore di timeout globale. Se il timeout scade, la funzione attiva un'asserzione. La seguente chiave del registro di sistema specifica il valore di timeout, in millisecondi:
+Nelle build di debug queste funzioni usano un valore di timeout globale. Se il timeout scade, la funzione attiva un'asserzione. La chiave del Registro di sistema seguente specifica il valore di timeout, espresso in millisecondi:
 
-**\_ \_ \\ <DebugRoot> \\ <Module Name> \\ timeout computer locale HKEY**
+**HKEY \_ LOCAL \_ MACHINE \\ <DebugRoot> \\ <Module Name> \\ TIMEOUT**
 
-dove *<DebugRoot>* è il percorso del registro di sistema descritto nell'argomento [funzioni di output di debug](debug-output-functions.md).
+dove *<DebugRoot>* è il percorso del Registro di sistema descritto nell'argomento Debug Output [Functions](debug-output-functions.md).
 
-Se la chiave non esiste, per impostazione predefinita il valore di timeout è infinito. È possibile usare la funzione [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) per eseguire l'override della voce del registro di sistema.
+Se la chiave non esiste, il valore di timeout predefinito è INFINITE. È possibile usare la funzione [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) per eseguire l'override della voce del Registro di sistema.
 
 
 
 | Funzione                                                       | Descrizione                                                     |
 |----------------------------------------------------------------|-----------------------------------------------------------------|
 | [**DbgSetWaitTimeout**](dbgsetwaittimeout.md)                 | Imposta il valore di timeout del debug.                              |
-| [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) | Attende la segnalazione di qualsiasi (o tutti) degli oggetti specificati. |
-| [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md)       | Attende che un oggetto venga segnalato.                         |
+| [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) | Attende la segnalazione di uno o tutti gli oggetti specificati. |
+| [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md)       | Attende che un oggetto diventi segnalato.                         |
 
 
 

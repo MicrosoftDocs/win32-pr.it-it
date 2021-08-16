@@ -1,23 +1,23 @@
 ---
-title: Codice di esempio per la gamma con IDirectoryObject
-description: Nell'esempio di codice riportato di seguito viene utilizzata la funzione Rang per recuperare i membri di un gruppo utilizzando l'interfaccia IDirectoryObject.
+title: Codice di esempio per Ranging con IDirectoryObject
+description: L'esempio di codice seguente usa ranging per recuperare i membri di un gruppo usando l'interfaccia IDirectoryObject.
 ms.assetid: 659b4c28-6534-45d2-80ee-14184433390d
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per la gamma con IDirectoryObject ADSI
-- ADSI recupero intervallo, codice di esempio, uso di IDirectoryObject
+- Codice di esempio per Ranging con ADSI IDirectoryObject
+- Recupero di intervalli ADSI , codice di esempio, uso di IDirectoryObject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 145314fa9c0c44c9b4865ea711e8533a8d1fcc59
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a0d049d629c347f0d85d8a4585436f4d7bbddf88b20186890643f7770070843a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103707435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082635"
 ---
-# <a name="example-code-for-ranging-with-idirectoryobject"></a>Codice di esempio per la gamma con IDirectoryObject
+# <a name="example-code-for-ranging-with-idirectoryobject"></a>Codice di esempio per Ranging con IDirectoryObject
 
-Nell'esempio di codice riportato di seguito viene utilizzata la funzione Rang per recuperare i membri di un gruppo utilizzando l'interfaccia [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) .
+L'esempio di codice seguente usa ranging per recuperare i membri di un gruppo usando [**l'interfaccia IDirectoryObject.**](/windows/desktop/api/Iads/nn-iads-idirectoryobject)
 
 
 ```C++
@@ -101,9 +101,9 @@ HRESULT EnumGroupWithIDirectoryObject(LPCWSTR pwszGroupDN,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: MSMQ-site-attributo esterno
-description: Valore booleano che indica se si tratta di un sito MSMQ esterno.
+title: Attributo MSMQ-Site-Foreign
+description: Valore booleano che indica se si tratta di un sito MSMQ estraneo.
 ms.assetid: 1589f1f2-3858-4563-b845-f400c04c0015
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-sito-schema AD attributo esterno
+- Schema AD dell'attributo MSMQ-Site-Foreign
 - Schema AD dell'attributo mSMQSiteForeign
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3447e1ffef1123fc565e6910dfba65b78ac8c288
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e9d6aba3b9f2fddb2131478014986439d1ae184cb6a68f974e6cbe82ecbaa74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104122874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081735"
 ---
-# <a name="msmq-site-foreign-attribute"></a>MSMQ-site-attributo esterno
+# <a name="msmq-site-foreign-attribute"></a>Attributo MSMQ-Site-Foreign
 
-Valore booleano che indica se si tratta di un sito MSMQ esterno.
+Valore booleano che indica se si tratta di un sito MSMQ estraneo.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-sito-esterno                    |
-| LDAP-Display-Name | mSMQSiteForeign                      |
+| CN                | MSMQ-Site-Foreign                    |
+| Ldap-Display-Name | mSMQSiteForeign                      |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.961               |
-| System-ID-GUID    | fd129d8a-d57e-11d1-90a2-00c04fd91ab1 |
+| System-Id-Guid    | fd129d8a-d57e-11d1-90a2-00c04fd91ab1 |
 | Sintassi            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| A valore singolo       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Valore booleano che indica se si tratta di un sito MSMQ esterno.
 | ID collegamento                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| È a valore singolo       | Falso                             |
+| Is-Single-Valued       | Falso                             |
 | Indicizzato             | Falso                             |
 | Nel catalogo globale      | Falso                             |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Classi utilizzate in        | [**Sito**](c-site.md)<br/> |
+| Classi usate in        | [**Sito**](c-site.md)<br/> |
 
 
 

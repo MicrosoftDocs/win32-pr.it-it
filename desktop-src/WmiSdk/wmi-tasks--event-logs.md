@@ -1,5 +1,5 @@
 ---
-description: Le attività WMI per i registri eventi ottengono i dati degli eventi dai file del registro eventi ed eseguono operazioni come il backup o la cancellazione dei file di log. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
+description: Le attività WMI per i log eventi ottengono i dati degli eventi dai file di log eventi ed eseguono operazioni come il backup o la cancellazione dei file di log. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo https://www.microsoft.com/technet .
 ms.assetid: f6d4e68e-d757-44aa-be74-3b26168626b8
 ms.tgt_platform: multiple
 title: 'Attività WMI: log eventi '
@@ -10,35 +10,35 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8fdcfe3f547e58fa60e552abad9867f8556fc8b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffdb05bd92a7e02c710fd91d73f947f980fc8a170e91871da5cc4284b6910c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106310326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118815579"
 ---
 # <a name="wmi-tasks-event-logs"></a>Attività WMI: log eventi 
 
-Le attività WMI per i registri eventi ottengono i dati degli eventi dai file del registro eventi ed eseguono operazioni come il backup o la cancellazione dei file di log. Per altri esempi, vedere il sito TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Le attività WMI per i log eventi ottengono i dati degli eventi dai file di log eventi ed eseguono operazioni come il backup o la cancellazione dei file di log. Per altri esempi, vedere TechNet ScriptCenter all'indirizzo [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per ulteriori informazioni sull'utilizzo dello script per ottenere dati da computer remoti, vedere la pagina [relativa alla connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
+Gli esempi di script illustrati in questo argomento ottengono dati solo dal computer locale. Per altre informazioni su come usare lo script per ottenere dati da computer remoti, vedere [Connessione a WMI in un computer remoto](connecting-to-wmi-on-a-remote-computer.md).
 
 
-Nella procedura riportata di seguito viene descritto come eseguire uno script.
+La procedura seguente descrive come eseguire uno script.
 
 **Per eseguire uno script**
 
-1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunga un'estensione txt al file.
+1.  Copiare il codice e salvarlo in un file con estensione vbs, ad esempio *filename.vbs*. Assicurarsi che l'editor di testo non aggiunge un'.txt al file.
 2.  Aprire una finestra del prompt dei comandi e passare alla directory in cui è stato salvato il file.
 3.  Digitare **cscript filename.vbs** al prompt dei comandi.
-4.  Se non è possibile accedere a un registro eventi, verificare che sia in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni log eventi, ad esempio il registro eventi di sicurezza, possono essere protetti da controlli di accesso utente (UAC).
+4.  Se non è possibile accedere a un registro eventi, verificare se è in esecuzione da un prompt dei comandi con privilegi elevati. Alcuni registri eventi, ad esempio il registro eventi di sicurezza, possono essere protetti dai controlli di accesso utente.
 
 > [!Note]  
-> Per impostazione predefinita, cscript Visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello script *filename.vbs* a *outfile.txt*.
+> Per impostazione predefinita, cscript visualizza l'output di uno script nella finestra del prompt dei comandi. Poiché gli script WMI possono produrre grandi quantità di output, potrebbe essere necessario reindirizzare l'output a un file. Digitare **cscript filename.vbs > outfile.txt** al prompt dei comandi per reindirizzare l'output dello *script* filename.vbsa *outfile.txt*.
 
  
 
-Nella tabella seguente sono elencati esempi di script che è possibile utilizzare per ottenere vari tipi di dati dal computer locale.
+Nella tabella seguente sono elencati esempi di script che possono essere usati per ottenere vari tipi di dati dal computer locale.
 
 
 
@@ -55,8 +55,8 @@ Nella tabella seguente sono elencati esempi di script che è possibile utilizzar
 </thead>
 <tbody>
 <tr class="odd">
-<td>... recuperare informazioni sul registro eventi di protezione?</td>
-<td>Includere il privilegio di <a href="privilege-constants.md">sicurezza</a> quando ci si connette alla classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventLogFile</strong></a> . Per ulteriori informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">esecuzione di operazioni con privilegi tramite VBScript</a>.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... recuperare informazioni sul registro eventi di sicurezza?</td>
+<td>Includere il <a href="privilege-constants.md">privilegio</a> Sicurezza durante la connessione <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>alla Win32_NTEventlogFile</strong></a> classe. Per altre informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">Esecuzione di operazioni con privilegi tramite VBScript.</a><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -109,7 +109,7 @@ foreach ($objLogFile in $colLogFiles)
 </tr>
 <tr class="even">
 <td>... eseguire il backup di un registro eventi?</td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventLogFile</strong></a> e il metodo <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>BackupEventLog</strong></a> . Potrebbe essere necessario includere il privilegio di <a href="privilege-constants.md">backup</a> quando si esegue la connessione a WMI. Per ulteriori informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">esecuzione di operazioni con privilegi tramite VBScript</a>.</p>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e il <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>metodo BackupEventLog.</strong></a> Potrebbe essere necessario includere il <a href="privilege-constants.md">privilegio Backup</a> durante la connessione a WMI. Per altre informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">Esecuzione di operazioni con privilegi tramite VBScript.</a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -160,8 +160,8 @@ foreach ($objLogFile in $colLogFiles)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... eseguire il backup di un log eventi più di una volta?</td>
-<td><p>Verificare che il nome del file di backup sia univoco prima di utilizzare il <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventLogFile</strong></a> e il metodo <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>BackupEventLog</strong></a> . Il sistema operativo non consente di sovrascrivere un file di backup esistente. è necessario spostare il file di backup o rinominarlo prima di poter eseguire di nuovo lo script. Potrebbe essere necessario includere il privilegio di <a href="privilege-constants.md">backup</a> quando si esegue la connessione a WMI. Per ulteriori informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">esecuzione di operazioni con privilegi tramite VBScript</a>.</p>
+<td>... eseguire il backup di un registro eventi più di una volta?</td>
+<td><p>Assicurarsi che il file di backup abbia un nome univoco prima di usare il <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e il <a href="/previous-versions/windows/desktop/eventlogprov/backupeventlog-method-in-class-win32-nteventlogfile"><strong>metodo BackupEventLog.</strong></a> Il sistema operativo non consente di sovrascrivere un file di backup esistente. È necessario spostare il file di backup o rinominarlo prima di poter eseguire nuovamente lo script. Potrebbe essere necessario includere il <a href="privilege-constants.md">privilegio Backup</a> durante la connessione a WMI. Per altre informazioni, vedere <a href="executing-privileged-operations-using-vbscript.md">Esecuzione di operazioni con privilegi tramite VBScript.</a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -219,8 +219,8 @@ foreach ($objLogFile in $colLogFiles)
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinare il numero di record in un registro eventi.</td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventLogFile</strong></a> e controllare il valore della proprietà <strong>NumberOfRecords</strong> .</p>
+<td>... determinare il numero di record in un log eventi?</td>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> classe e controllare il valore della <strong>proprietà NumberOfRecords.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -269,8 +269,8 @@ foreach ($objLogFile in $colLogFiles)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... cancellare i registri eventi?</td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventLogFile</strong></a> e il metodo <a href="/previous-versions/windows/desktop/eventlogprov/cleareventlog-method-in-class-win32-nteventlogfile"><strong>ClearEventLog</strong></a> .</p>
+<td>... cancellare i log eventi?</td>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)"><strong>Win32_NTEventlogFile</strong></a> e il <a href="/previous-versions/windows/desktop/eventlogprov/cleareventlog-method-in-class-win32-nteventlogfile"><strong>metodo ClearEventLog.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -321,8 +321,8 @@ foreach ($objLogFile in $colLogFiles)
 </div></td>
 </tr>
 <tr class="even">
-<td>... leggere gli eventi dai registri eventi?</td>
-<td><p>Usare la classe <a href="/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent"><strong>Win32_NTLogEvent</strong></a> .</p>
+<td>... leggere gli eventi dai log eventi?</td>
+<td><p>Usare la <a href="/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent"><strong>Win32_NTLogEvent</strong></a> classe .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -404,7 +404,7 @@ foreach ($objEvent in $colLoggedEvents)
 [Attività WMI per script e applicazioni](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Esempi di applicazioni WMI C++](wmi-c---application-examples.md)
+[Esempi di applicazioni C++ WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)

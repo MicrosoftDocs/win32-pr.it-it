@@ -4,44 +4,44 @@ description: Messaggi di controllo intestazione
 ms.assetid: 77743235-fba5-472c-8a86-065e280c6eeb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ab0845e3287ca20b0a91dbf3258d9660d7a796
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6d9b33a3981465d7d100a0df6a920d16a21cd2d9b7478468fd30254b5c0a8fb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916801"
 ---
 # <a name="header-control-messages"></a>Messaggi di controllo intestazione
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
--   [**\_CLEARFILTER HDM**](hdm-clearfilter.md)
--   [**\_CREATEDRAGIMAGE HDM**](hdm-createdragimage.md)
--   [**\_DeleteItem HDM**](hdm-deleteitem.md)
--   [**\_EDITFILTER HDM**](hdm-editfilter.md)
--   [**\_GETBITMAPMARGIN HDM**](hdm-getbitmapmargin.md)
--   [**\_GETFOCUSEDITEM HDM**](hdm-getfocuseditem.md)
--   [**HDM \_ GETimages**](hdm-getimagelist.md)
--   [**GetItem HDM \_**](hdm-getitem.md)
--   [**\_GETITEMCOUNT HDM**](hdm-getitemcount.md)
--   [**\_GETITEMDROPDOWNRECT HDM**](hdm-getitemdropdownrect.md)
--   [**\_GETITEMRECT HDM**](hdm-getitemrect.md)
--   [**\_GETORDERARRAY HDM**](hdm-getorderarray.md)
--   [**\_GETOVERFLOWRECT HDM**](hdm-getoverflowrect.md)
--   [**\_GETUNICODEFORMAT HDM**](hdm-getunicodeformat.md)
--   [**HDM ( \_ HITTEST)**](hdm-hittest.md)
+-   [**HDM \_ CLEARFILTER**](hdm-clearfilter.md)
+-   [**HDM \_ CREATEDRAGIMAGE**](hdm-createdragimage.md)
+-   [**HDM \_ DELETEITEM**](hdm-deleteitem.md)
+-   [**HDM \_ EDITFILTER**](hdm-editfilter.md)
+-   [**HDM \_ GETBITMAPMARGIN**](hdm-getbitmapmargin.md)
+-   [**HDM \_ GETFOCUSEDITEM**](hdm-getfocuseditem.md)
+-   [**HDM \_ GETIMAGELIST**](hdm-getimagelist.md)
+-   [**HDM \_ GETITEM**](hdm-getitem.md)
+-   [**HDM \_ GETITEMCOUNT**](hdm-getitemcount.md)
+-   [**HDM \_ GETITEMDROPDOWNRECT**](hdm-getitemdropdownrect.md)
+-   [**HDM \_ GETITEMRECT**](hdm-getitemrect.md)
+-   [**HDM \_ GETORDERARRAY**](hdm-getorderarray.md)
+-   [**HDM \_ GETOVERFLOWRECT**](hdm-getoverflowrect.md)
+-   [**HDM \_ GETUNICODEFORMAT**](hdm-getunicodeformat.md)
+-   [**HDM \_ HITTEST**](hdm-hittest.md)
 -   [**HDM \_ INSERTITEM**](hdm-insertitem.md)
--   [**LAYOUT di HDM \_**](hdm-layout.md)
--   [**\_ORDERTOINDEX HDM**](hdm-ordertoindex.md)
--   [**\_SETBITMAPMARGIN HDM**](hdm-setbitmapmargin.md)
--   [**\_SETFILTERCHANGETIMEOUT HDM**](hdm-setfilterchangetimeout.md)
--   [**\_SETFOCUSEDITEM HDM**](hdm-setfocuseditem.md)
--   [**\_SETHOTDIVIDER HDM**](hdm-sethotdivider.md)
--   [**HDM \_**](hdm-setimagelist.md)
--   [**HDM ( \_ elemento)**](hdm-setitem.md)
--   [**\_SETORDERARRAY HDM**](hdm-setorderarray.md)
--   [**\_SETUNICODEFORMAT HDM**](hdm-setunicodeformat.md)
--   [**\_TRANSLATEACCELERATOR HDM**](hdm-translateaccelerator.md)
+-   [**HDM \_ LAYOUT**](hdm-layout.md)
+-   [**HDM \_ ORDERTOINDEX**](hdm-ordertoindex.md)
+-   [**HDM \_ SETBITMAPMARGIN**](hdm-setbitmapmargin.md)
+-   [**HDM \_ SETFILTERCHANGETIMEOUT**](hdm-setfilterchangetimeout.md)
+-   [**HDM \_ SETFOCUSEDITEM**](hdm-setfocuseditem.md)
+-   [**HDM \_ SETHOTDIVIDER**](hdm-sethotdivider.md)
+-   [**HDM \_ SETIMAGELIST**](hdm-setimagelist.md)
+-   [**HDM \_ SETITEM**](hdm-setitem.md)
+-   [**HDM \_ SETORDERARRAY**](hdm-setorderarray.md)
+-   [**HDM \_ SETUNICODEFORMAT**](hdm-setunicodeformat.md)
+-   [**HDM \_ TRANSLATEACCELERATOR**](hdm-translateaccelerator.md)
 
  
 

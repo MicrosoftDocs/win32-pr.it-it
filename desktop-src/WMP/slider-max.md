@@ -1,9 +1,9 @@
 ---
-title: SLIDER. max
-description: L'attributo max specifica o Recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
+title: SLIDER.max
+description: L'attributo max specifica o recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
 ms.assetid: c38e7868-d144-4e40-871a-e70181a6dfb5
 keywords:
-- Media Player Windows SLIDER. max
+- SLIDER.max Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67482943e33a553589e5a16d7ce1e2264022cdf5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5bff22d623729cec14afdfd44232217a748c4788e679ba3dd2b194b7197da901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995181"
 ---
-# <a name="slidermax"></a>SLIDER. max
+# <a name="slidermax"></a>SLIDER.max
 
-L'attributo **Max** specifica o Recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
+**L'attributo max** specifica o recupera il valore massimo dell'intervallo definito dal controllo dispositivo di scorrimento.
 
 ``` syntax
         elementID.max
@@ -29,13 +29,13 @@ L'attributo **Max** specifica o Recupera il valore massimo dell'intervallo defin
 
 ## <a name="possible-values"></a>Valori possibili
 
-Questo attributo è un **numero** di lettura/scrittura (**float**) con un valore predefinito di 100.
+Questo attributo è un numero **di** lettura/scrittura (**float**) con valore predefinito 100.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore specificato per **Max** deve essere maggiore di quello di **min**.
+Il valore specificato per **max** deve essere maggiore di quello per **min**.
 
-Vedere **CUSTOMSLIDER**. attributo [dimensione positionImage](customslider-positionimage.md) per un esempio che illustra come vengono utilizzati gli attributi dell'elemento **Slider** .
+Vedere **CUSTOMSLIDER**. [Attributo positionImage](customslider-positionimage.md) per un esempio che illustra come vengono usati gli attributi **dell'elemento SLIDER.**
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Vedere **CUSTOMSLIDER**. attributo [dimensione positionImage](customslider-posit
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva<br/> |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva<br/> |
 
 
 
@@ -54,10 +54,10 @@ Vedere **CUSTOMSLIDER**. attributo [dimensione positionImage](customslider-posit
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDER. min**](slider-min.md)
+[**SLIDER.min**](slider-min.md)
 </dt> <dt>
 
-[**SLIDER. Value**](slider-value.md)
+[**SLIDER.value**](slider-value.md)
 </dt> </dl>
 
  

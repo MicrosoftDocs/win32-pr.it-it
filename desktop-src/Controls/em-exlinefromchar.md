@@ -1,9 +1,9 @@
 ---
-title: Messaggio di EM_EXLINEFROMCHAR (RichEdit. h)
+title: EM_EXLINEFROMCHAR messaggio (Richedit.h)
 description: Determina quale riga contiene il carattere specificato in un controllo Rich Edit.
 ms.assetid: 497482fb-9640-4063-a9f5-e0691b65225d
 keywords:
-- Controlli di Windows Message EM_EXLINEFROMCHAR
+- EM_EXLINEFROMCHAR dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce904725c5dc63732bae07cfaa95b41558db11d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c41f5fbe540a4d765a48292d4ffd5b4af5849681dd1a82f4512b79348a6249d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104479465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915641"
 ---
-# <a name="em_exlinefromchar-message"></a>\_Messaggio EXLINEFROMCHAR em
+# <a name="em_exlinefromchar-message"></a>Messaggio \_ EM EXLINEFROMCHAR
 
 Determina quale riga contiene il carattere specificato in un controllo Rich Edit.
 
@@ -32,7 +32,7 @@ Determina quale riga contiene il carattere specificato in un controllo Rich Edit
 *wParam* 
 </dt> <dd>
 
-Questo parametro non viene utilizzato. deve essere zero.
+Questo parametro non viene usato. deve essere zero.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Questo messaggio restituisce l'indice in base zero della riga.
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

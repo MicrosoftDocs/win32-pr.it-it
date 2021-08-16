@@ -22,7 +22,7 @@ ms.locfileid: "118900957"
 ---
 # <a name="qualifiers-object"></a>Oggetto Qualifiers
 
-\[**L'oggetto** Qualifiers è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chiamando il costruttore che accetta un OID come parametro e quindi usare L'OID per i criteri certificato per elaborare i qualificatori che fanno parte delle informazioni sui criteri nell'estensione Criteri di certificato.\]
+\[**L'oggetto Qualifiers** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la classe [**X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) nello spazio dei nomi [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chiamando il costruttore che accetta un OID come parametro e quindi usare l'OID per i criteri certificato per elaborare i qualificatori che fanno parte delle informazioni sui criteri nell'estensione Criteri certificato.\]
 
 **L'oggetto Qualifiers** rappresenta una raccolta di qualificatori.
 
@@ -31,7 +31,7 @@ ms.locfileid: "118900957"
 **L'oggetto Qualifiers** viene usato per eseguire le attività seguenti:
 
 -   Recuperare una proprietà estesa specifica dalla raccolta.
--   Recupera il numero di proprietà estese nella raccolta.
+-   Recuperare il numero di proprietà estese nella raccolta.
 -   Scorrere la raccolta.
 
 ## <a name="members"></a>Membri
@@ -48,7 +48,7 @@ ms.locfileid: "118900957"
 
 | Proprietà                                           | Tipo di accesso          | Descrizione                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](qualifiers-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere utilizzato per enumerare la raccolta. Questa proprietà è nascosta in Visual Basic Scripting Edition (VBScript).<br/> |
+| [**\_NewEnum**](qualifiers-newenum.md)<br/> | Sola lettura<br/> | Recupera [**un'interfaccia IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) su un oggetto che può essere usato per enumerare la raccolta. Questa proprietà è nascosta in Visual Basic Scripting Edition (VBScript).<br/> |
 | [**Conteggio**](qualifiers-count.md)<br/>       | Sola lettura<br/> | Recupera il numero di qualificatori nella raccolta.<br/>                                                                                                                                                                |
 | [**Elemento**](qualifiers-item.md)<br/>         | Sola lettura<br/> | Recupera un oggetto [**Qualifier**](qualifier.md) che rappresenta il qualificatore indicizzato della raccolta. Si tratta della proprietà predefinita.<br/>                                                                             |
 
@@ -58,7 +58,7 @@ ms.locfileid: "118900957"
 
 ## <a name="remarks"></a>Commenti
 
-Non **è possibile creare** l'oggetto Qualifiers.
+Impossibile **creare l'oggetto** Qualifiers.
 
 La proprietà dell'oggetto CAPICOM [**PolicyInformation.Qualifiers**](policyinformation-qualifiers.md) restituisce un **oggetto Qualifiers.**
 

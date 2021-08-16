@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_TABLEID. Nil (proprietà)'
-title: JET_TABLEID. Nil (proprietà)
+description: 'Altre informazioni su: JET_TABLEID. Nil - proprietà'
+title: JET_TABLEID. Nil - proprietà
 TOCTitle: 'Nil property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLEID.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tableid.nil(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe9c7b1694a3f74c06084dab99fca9eb26d5a007
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30fd8c3d4c64e524b637c85d88c9fb386156a641b2726f1422967601441e0d47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104348776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979231"
 ---
-# <a name="jet_tableidnil-property"></a>JET_TABLEID. Nil (proprietà)
+# <a name="jet_tableidnil-property"></a>JET_TABLEID. Nil - proprietà
 
-Ottiene un JET_TABLEID null.
+Ottiene un valore null JET_TABLEID.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -57,14 +57,14 @@ public static JET_TABLEID Nil { get; }
 
 #### <a name="property-value"></a>Valore proprietà
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
 ## <a name="see-also"></a>Vedi anche
 
 #### <a name="reference"></a>Riferimento
 
-[Struttura JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID struttura](./jet-tableid-structure.md)
 
-[Membri JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID membri](./jet-tableid-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

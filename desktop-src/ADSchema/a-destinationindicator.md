@@ -1,10 +1,10 @@
 ---
-title: Attributo Destination-Indicator
-description: Questo fa parte della specifica X. 500 e non viene usato da NTDS.
+title: Destination-Indicator attributo
+description: Fa parte della specifica X.500 e non viene usato da NTDS.
 ms.assetid: 3c8c8df1-25d7-4ef6-bec4-66b12318b3f0
 ms.tgt_platform: multiple
 keywords:
-- Schema AD Destination-Indicator attribute
+- Destination-Indicator schema AD dell'attributo
 - Schema AD dell'attributo destinationIndicator
 topic_type:
 - apiref
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 794349ee837772d906c2ec0a6ffd2e50bef4dd1c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a0e9869296d9d1d09400d2ff0ba68953acb107e62ed6d58a716f3d8d6afc504
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "106302947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509001"
 ---
-# <a name="destination-indicator-attribute"></a>Attributo Destination-Indicator
+# <a name="destination-indicator-attribute"></a>Destination-Indicator attributo
 
-Questo fa parte della specifica X. 500 e non viene usato da NTDS.
+Fa parte della specifica X.500 e non viene usato da NTDS.
 
 
 
 | Voce | Valore |
 |-------------------|--------------------------------------|
 | CN                | Destination-Indicator                |
-| LDAP-Display-Name | destinationIndicator                 |
+| Ldap-Display-Name | destinationIndicator                 |
 | Dimensione              | \-                                   |
-| Privilegio aggiornamento  | \-                                   |
+| Aggiorna privilegio  | \-                                   |
 | Frequenza di aggiornamento  | \-                                   |
 | Attribute-Id      | 2.5.4.27                             |
-| System-ID-GUID    | bf967951-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967951-0de6-11d0-a285-00aa003049e2 |
 | Sintassi            | [**String(IA5)**](s-string-ia5.md)  |
 
 
@@ -44,7 +44,7 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                              |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                           |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                           |
+| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                           |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                           |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                    |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                               |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                      |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                               |
 | MAPI-Id                | 0x8070                                                                                                           |
 | System-Only            | Falso                                                                                                            |
-| È a valore singolo       | Falso                                                                                                            |
+| A valore singolo       | Falso                                                                                                            |
 | Indicizzato             | Falso                                                                                                            |
 | Nel catalogo globale      | Falso                                                                                                            |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                     |
 | Range-Lower            | 1                                                                                                                |
 | Range-Upper            | 128                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                       |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziali**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| Is-Single-Valued       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Questo fa parte della specifica X. 500 e non viene usato da NTDS.
 | ID collegamento                | \-                                                                                                                                                                                                                                                                                                                                                                      |
 | MAPI-Id                | 0x8070                                                                                                                                                                                                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| È a valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
+| A valore singolo       | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Indicizzato             | Falso                                                                                                                                                                                                                                                                                                                                                                   |
 | Nel catalogo globale      | Falso                                                                                                                                                                                                                                                                                                                                                                   |
-| NT-Security-descrittore | O:BAG: NON VALIDO: S:                                                                                                                                                                                                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                       |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                                                              |
-| Classi utilizzate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona residenziale**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
+| Classi usate in        | [**Organization**](c-organization.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Ruolo dell'organizzazione**](c-organizationalrole.md)<br/> [**Unità organizzativa**](c-organizationalunit.md)<br/> [**Persona erta**](c-residentialperson.md)<br/> [**rFC822LocalPart**](c-rfc822localpart.md)<br/> |
 
 
 

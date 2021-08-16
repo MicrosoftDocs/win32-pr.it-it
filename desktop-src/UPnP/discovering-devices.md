@@ -1,35 +1,35 @@
 ---
-title: Individuazione di dispositivi
-description: È possibile cercare i dispositivi in tre modi per tipo, da UDN e da ricerca asincrona (Ricerca per tipo di dispositivo).
+title: Individuazione dei dispositivi
+description: È possibile cercare i dispositivi in tre modi in base al tipo, alla rete definita dall'utente e alla ricerca asincrona (ovvero una ricerca per tipo di dispositivo).
 ms.assetid: 511fb119-ad4e-406a-8a1e-fb508eceff2a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 055d08db76edd5bcc5591d3254613462c00fc974
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f4975c14008dcf98b7a9145320f509a3c2bceb245cd54481654ed6548a92348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103856750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058074"
 ---
-# <a name="discovering-devices"></a>Individuazione di dispositivi
+# <a name="discovering-devices"></a>Individuazione dei dispositivi
 
-È possibile cercare i dispositivi in tre modi: per tipo, per UDN e per ricerca asincrona (Ricerca per tipo di dispositivo).
+È possibile cercare i dispositivi in tre modi: per tipo, per UDN e per ricerca asincrona (che è una ricerca per tipo di dispositivo).
 
-![finestra Individua dispositivi](images/ucp-disc.png)
+![Finestra individua dispositivi](images/ucp-disc.png)
 
 **Per individuare i dispositivi**
 
-1.  Selezionare il tipo di ricerca da usare: **trova per tipo**, **trova per UDN** o ricerca **asincrona**.
-2.  Consente di selezionare il tipo di dispositivo o il UDN che si desidera trovare dall'elenco (per le ricerche in base al tipo o UDN). Il contenuto dell'elenco è basato sul contenuto del udn.txt e devtype.txt file modificati in precedenza.
-3.  Fare clic su **Avvia individuazione**. La ricerca è stata avviata. I risultati vengono visualizzati nell'elenco **dispositivi trovati** . Se non vengono trovati dispositivi, viene visualizzato un messaggio che indica questa condizione. Lo stato dello stato di avanzamento della ricerca viene visualizzato nel campo **stato** .
+1.  Selezionare il tipo di ricerca da usare: **Trova per tipo**, Trova per **UDN** o **Ricerca asincrona**.
+2.  Selezionare il tipo di dispositivo o la rete definita dall'utente che si vuole trovare nell'elenco (per le ricerche in base al tipo o alla rete definita dall'utente). Il contenuto dell'elenco si basa sul contenuto dei file udn.txt e devtype.txt modificati in precedenza.
+3.  Fare clic su **Avvia individuazione**. La ricerca viene avviata. I risultati vengono visualizzati **nell'elenco Dispositivi** trovati. Se non viene trovato alcun dispositivo, viene visualizzato un messaggio che indica questa condizione. Lo stato dello stato della ricerca viene visualizzato nel **campo** Stato.
 
-Quando si usa la ricerca asincrona, i nuovi dispositivi trovati vengono visualizzati nell'elenco **dispositivi trovati** e nella barra di **stato** . Al termine della ricerca asincrona, nella barra di **stato** viene visualizzato un messaggio di nota. Tuttavia, poiché una ricerca asincrona viene eseguita fino a quando non viene arrestata manualmente, i nuovi dispositivi vengono visualizzati nell'elenco **dispositivi trovati** e nella barra di **stato** quando i dispositivi vengono visualizzati nella rete.
+Quando si usa la ricerca asincrona, i nuovi  dispositivi trovati vengono visualizzati nell'elenco Dispositivi trovati e nella **barra di** stato. Al termine della ricerca asincrona, sulla **barra di** stato viene visualizzato un messaggio che lo indica. Tuttavia, poiché una ricerca asincrona viene eseguita fino  a quando non  viene arrestata manualmente, i nuovi dispositivi vengono visualizzati nell'elenco Dispositivi trovati e nella barra di stato quando i dispositivi vengono visualizzati nella rete.
 
-Dopo aver individuato i dispositivi, è possibile [controllarli](controlling-a-device.md).
+Dopo aver individuato i dispositivi, è possibile [controllarli.](controlling-a-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Tipi di dati del registro eventi di Windows (WinEvt. h)
-description: Il registro eventi di Windows definisce i tipi di dati seguenti
+title: Windows Tipi di dati del log eventi (WinEvt.h)
+description: Windows Registro eventi definisce i tipi di dati seguenti
 ms.assetid: 1aad25fe-7503-4ef8-a40a-63457bd9a007
 keywords:
 - EVT_HANDLE
@@ -8,16 +8,16 @@ keywords:
 - EVT_OBJECT_ARRAY_PROPERTY_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a93794d8cc3a254fe182c439698324dccdfc20
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5c309dd52471bd501aa2668220d39882ab8de7e1c23a646084364659df4ae4fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103741386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619991"
 ---
-# <a name="windows-event-log-data-types"></a>Tipi di dati del registro eventi di Windows
+# <a name="windows-event-log-data-types"></a>Windows Tipi di dati del log eventi
 
-Nel registro eventi di Windows sono definiti i tipi di dati seguenti:
+Windows Registro eventi definisce i tipi di dati seguenti:
 
 
 ```C++
@@ -30,24 +30,24 @@ typedef HANDLE EVT_OBJECT_ARRAY_PROPERTY_HANDLE;
 
 <dl> <dt>
 
-**\_handle evt**
+**EVT \_ HANDLE**
 </dt> <dd>
 
-Handle per un oggetto registro eventi di Windows.
+Handle per un oggetto Windows registro eventi.
 
 </dd> <dt>
 
-**\_handle PEVT**
+**PEVT \_ HANDLE**
 </dt> <dd>
 
-Puntatore all'handle di un oggetto registro eventi di Windows.
+Puntatore all'handle di un oggetto Windows registro eventi.
 
 </dd> <dt>
 
-**\_ \_ \_ Handle proprietà matrice di oggetti evt \_**
+**HANDLE DI PROPRIETÀ DELLA \_ \_ MATRICE DI \_ OGGETTI \_ EVT**
 </dt> <dd>
 
-Handle per una matrice di oggetti del registro eventi di Windows.
+Handle per una matrice di oggetti Windows log eventi.
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Handle per una matrice di oggetti del registro eventi di Windows.
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                      |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                |
-| Intestazione<br/>                   | <dl> <dt>WinEvt. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                      |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                |
+| Intestazione<br/>                   | <dl> <dt>WinEvt.h</dt> </dl> |
 
 
 

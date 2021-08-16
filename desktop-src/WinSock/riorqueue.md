@@ -1,19 +1,19 @@
 ---
-description: Specifica un descrittore di socket utilizzato dalle richieste di invio e ricezione con le estensioni I/O registrate di Winsock.
+description: Specifica un descrittore di socket utilizzato dalle richieste di invio e ricezione con le estensioni di I/O registrate di Winsock.
 ms.assetid: 50E9516C-6078-4466-A593-3F29E4783740
-title: RIO_RQ (Mswsockdef. h)
+title: RIO_RQ (Mswsockdef.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c25abebbe40842532f3cca180868b5b3786e756d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 162b87d1ae320bfa0e74f08e5a0ef7493c053f39573249246e8b2884e74f599c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104344741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993581"
 ---
 # <a name="rio_rq"></a>RIO \_ RQ
 
-Il typedef di **Rio \_ RQ** specifica un descrittore di socket usato dalle richieste di invio e ricezione con le estensioni i/O registrate di Winsock.
+Il **typedef \_ RQ RIO** specifica un descrittore di socket usato dalle richieste di invio e ricezione con le estensioni di I/O registrate di Winsock.
 
 
 ```C++
@@ -33,16 +33,16 @@ Tipo di dati che specifica un descrittore di socket utilizzato dalle richieste d
 
 ## <a name="remarks"></a>Commenti
 
-Le estensioni I/O registrate di Winsock operano principalmente su un oggetto **Rio \_ RQ** anziché su un socket. Un'applicazione ottiene un oggetto **Rio \_ RQ** per un socket esistente usando la funzione [**RIOCreateRequestQueue**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riocreaterequestqueue) . Il socket di input deve essere stato creato chiamando la funzione [**WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) con il flag WSA del flag **\_ \_ Rio** impostato nel parametro *dwFlags* .
+Le estensioni di I/O registrate di Winsock operano principalmente su un oggetto **\_ RQ RIO** anziché su un socket. Un'applicazione ottiene un **\_ RQ RIO** per un socket esistente usando la [**funzione RIOCreateRequestQueue.**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riocreaterequestqueue) Il socket di input deve essere stato creato chiamando la [**funzione WSASocket**](/windows/desktop/api/Winsock2/nf-winsock2-wsasocketa) con il flag **\_ \_ WSA FLAG RIO** impostato nel parametro *dwFlags.*
 
-Dopo aver ottenuto un oggetto **Rio \_ RQ** , il descrittore di socket sottostante rimane valido. Un'applicazione può continuare a usare il socket sottostante per impostare ed eseguire query sulle opzioni del socket, emettere IOCTL e infine chiudere il socket.
+Dopo aver ottenuto un **oggetto \_ RQ RIO,** il descrittore del socket sottostante rimane valido. Un'applicazione può continuare a usare il socket sottostante per impostare ed eseguire query su opzioni socket, eseguire ioCTL e infine chiudere il socket.
 
 > [!Note]  
-> Ai fini dell'efficienza, l'accesso alle code di completamento ([**struct \_ CQ**](riocqueue.md) ) e le code di richiesta (struct di **Rio \_ RQ** ) non sono protette dalle primitive di sincronizzazione. Se è necessario accedere a una coda di completamento o di richiesta da più thread, l'accesso deve essere coordinato da una sezione critica, da un blocco Write reader sottile o da un meccanismo simile. Questo blocco non è necessario per l'accesso da un singolo thread. Thread diversi possono accedere a code di completamento/richieste separate senza blocchi. La necessità di sincronizzazione avviene solo quando più thread tentano di accedere alla stessa coda. La sincronizzazione è necessaria anche se più thread inviano e ricevono lo stesso socket perché le operazioni di invio e ricezione utilizzano la coda di richieste del socket.
+> Ai fini dell'efficienza, l'accesso alle code di completamento (struct [**RIO \_ CQ)**](riocqueue.md) e alle code di richiesta (struct **\_ RQ RIO)** non è protetto dalle primitive di sincronizzazione. Se è necessario accedere a una coda di completamento o richiesta da più thread, l'accesso deve essere coordinato da una sezione critica, da un blocco di scrittura del lettore sottile o da un meccanismo simile. Questo blocco non è necessario per l'accesso da parte di un singolo thread. Thread diversi possono accedere a code di richieste/completamento separate senza blocchi. La necessità di sincronizzazione si verifica solo quando più thread tentano di accedere alla stessa coda. La sincronizzazione è necessaria anche se più thread inviano e ricevono sullo stesso socket perché le operazioni di invio e ricezione usano la coda di richieste del socket.
 
  
 
-Il typedef di [**Rio \_ RQ**](riocqueue.md) è definito nel file di intestazione *Mswsockdef. h* , che viene incluso automaticamente nel file di intestazione *mswsock. h* . Il file di intestazione *Mswsockdef. h* non deve mai essere utilizzato direttamente.
+Il [**typedef \_ RQ RIO**](riocqueue.md) è definito nel file di intestazione *Mswsockdef.h* che viene automaticamente incluso nel file di intestazione *Mswsock.h.* Il file *di intestazione Mswsockdef.h* non deve mai essere usato direttamente.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,9 +50,9 @@ Il typedef di [**Rio \_ RQ**](riocqueue.md) è definito nel file di intestazione
 
 | Requisito | Valore |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                                                  |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                                        |
-| Intestazione<br/>                   | <dl> <dt>Mswsockdef. h (include mswsock. h)</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                                                  |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                                        |
+| Intestazione<br/>                   | <dl> <dt>Mswsockdef.h (includere Mswsock.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Il typedef di [**Rio \_ RQ**](riocqueue.md) è definito nel file di intestazione
 [**RIOResizeRequestQueue**](/previous-versions/windows/desktop/legacy/hh437204(v=vs.85))
 </dt> <dt>
 
-[**RIOSend**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riosend)
+[**RIOSEND**](/windows/win32/api/mswsock/nc-mswsock-lpfn_riosend)
 </dt> <dt>
 
 [**RIOSendEx**](/previous-versions/windows/desktop/legacy/hh437216(v=vs.85))

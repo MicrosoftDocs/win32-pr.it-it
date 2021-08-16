@@ -76,7 +76,7 @@ Per usare la libreria CertEnroll.dll per creare richieste PKCS 7, PKCS 10 o CMC,
 
 La [**funzione DeleteRequestCert**](/windows/desktop/api/xenroll/nf-xenroll-ienroll-get_deleterequestcert) in Xenroll.dll specifica o recupera un valore booleano che indica se un certificato fittizio viene rimosso dopo l'installazione di una risposta del certificato.
 
-[**L'oggetto IX509Enrollment**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment) in CertEnroll.dll crea automaticamente certificati fittizi nell'archivio richieste per salvare temporaneamente varie proprietà del certificato inizializzate durante il processo di registrazione. Dopo l'emissione di un certificato da parte di una CA, le proprietà vengono copiate nel nuovo certificato e il certificato fittizio viene eliminato. La CertEnroll.dll non consente di forzare la mantenere un certificato fittizio dopo l'installazione della risposta del certificato.
+[**L'oggetto IX509Enrollment**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment) in CertEnroll.dll crea automaticamente certificati fittizi nell'archivio richieste per salvare temporaneamente varie proprietà del certificato inizializzate durante il processo di registrazione. Dopo l'emissione di un certificato da parte di una CA, le proprietà vengono copiate nel nuovo certificato e il certificato fittizio viene eliminato. La CertEnroll.dll non consente di forzare la permanere di un certificato fittizio dopo l'installazione della risposta del certificato.
 
 ## <a name="enumpendingrequestwstr"></a>enumPendingRequestWStr
 
@@ -92,9 +92,9 @@ La CertEnroll.dll non implementa direttamente la funzionalità per rimuovere una
 
 ## <a name="reset"></a>Reset
 
-La [**funzione Reset**](/windows/desktop/api/xenroll/nf-xenroll-ienroll2-reset) in Xenroll.dll restituisce lo stato iniziale del controllo registrazione certificati.
+La [**funzione Reset**](/windows/desktop/api/xenroll/nf-xenroll-ienroll2-reset) in Xenroll.dll restituisce lo stato iniziale del controllo di registrazione certificati.
 
-È possibile ottenere lo stesso risultato usando Certenroll.dll per creare un nuovo oggetto richiesta del tipo richiesto.
+È possibile ottenere lo stesso risultato usando Certenroll.dll creare un nuovo oggetto richiesta del tipo richiesto.
 
 ## <a name="setpendingrequestinfowstr"></a>setPendingRequestInfoWStr
 

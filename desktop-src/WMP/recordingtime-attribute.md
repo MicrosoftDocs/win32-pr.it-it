@@ -1,6 +1,6 @@
 ---
 title: Attributo RecordingTime
-description: L'attributo RecordingTime è la data e l'ora della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+description: L'attributo RecordingTime è la data e l'ora della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 ms.assetid: 39f7356b-b4b9-48cd-bd14-1336a2f4736a
 keywords:
 - Attributo RecordingTime Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a11f0ee588ed05f0a7ecf14e07bf20fc62039c4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 035dbb8f2098a92826678eebb9ec08999c00989125edbd6f9c4d1852d0345e2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995631"
 ---
 # <a name="recordingtime-attribute"></a>Attributo RecordingTime
 
-L'attributo **RecordingTime** è la data e l'ora della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+**L'attributo RecordingTime** è la data e l'ora della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -33,7 +33,7 @@ L'attributo **RecordingTime** è la data e l'ora della registrazione originale, 
 
 Questo attributo viene archiviato solo nella libreria.
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -41,7 +41,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 Series o versione successiva (l'elemento Photo è supportato solo in Windows Media Player 10 o versione successiva)<br/> |
+| Versione<br/> | Windows Media Player serie 9 o successiva (l'elemento foto è supportato solo in Windows Media Player 10 o versioni successive)<br/> |
 
 
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Informazioni di riferimento su attributi**](attribute-reference.md)
 </dt> </dl>
 
  

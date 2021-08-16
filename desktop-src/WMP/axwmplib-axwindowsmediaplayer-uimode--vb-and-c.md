@@ -1,11 +1,11 @@
 ---
-title: Proprietà AxWindowsMediaPlayer. uiMode
-description: La proprietà uiMode Ottiene o imposta un valore che indica quali controlli vengono visualizzati nell'interfaccia utente.
+title: AxWindowsMediaPlayer.uiMode - proprietà
+description: La proprietà uiMode ottiene o imposta un valore che indica quali controlli vengono visualizzati nell'interfaccia utente.
 ms.assetid: 01034418-be70-44f3-8812-e529c747c9e4
 keywords:
-- Finestra delle proprietà di uiMode Media Player
-- Proprietà uiMode Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer Media Player Windows, proprietà uiMode
+- Proprietà uiMode Windows Media Player
+- Proprietà uiMode Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player proprietà uiMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33edcf6bdff9e1587269df9eb49c3729099d091e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51f1d716d36aafbd3625ae1144e0adde1abf0898bee4cbe6831d627cea97bb9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618771"
 ---
-# <a name="axwindowsmediaplayeruimode-property"></a>Proprietà AxWindowsMediaPlayer. uiMode
+# <a name="axwindowsmediaplayeruimode-property"></a>AxWindowsMediaPlayer.uiMode - proprietà
 
-La proprietà uiMode Ottiene o imposta un valore che indica quali controlli vengono visualizzati nell'interfaccia utente.
+La proprietà uiMode ottiene o imposta un valore che indica quali controlli vengono visualizzati nell'interfaccia utente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,16 +46,16 @@ Public Property uiMode As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-System. String che corrisponde a uno dei valori seguenti.
+Oggetto System.String che è uno dei valori seguenti.
 
 
 
-| Valore     | Descrizione                                                                                                                                                                                                     | Esempio di audio                                                   | Esempio video                                                   |
+| Valore     | Descrizione                                                                                                                                                                                                     | Esempio di audio                                                   | Esempio di video                                                   |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
-| invisibile | Windows Media Player è incorporato senza alcuna interfaccia utente visibile (controlli, video o finestra di visualizzazione).                                                                                                  | Non viene visualizzato alcun elemento.                                         | Non viene visualizzato alcun elemento.                                         |
-| Nessuno      | Windows Media Player viene incorporato senza controlli e con solo la finestra video o visualizzazione visualizzata.                                                                                                   | ![uiMode =' none ' con audio](images/uimode-none-audio-v11.png) | ![uiMode =' none ' con video](images/uimode-none-video-v11.png) |
-| minima      | Windows Media Player è incorporato con la finestra di stato, i controlli di riproduzione, sospensione, arresto, silenziamento e volume visualizzati oltre alla finestra video o visualizzazione.                                                    | ![uiMode =' mini ' con audio](images/uimode-mini-audio-v11.png) | ![uiMode =' mini ' con video](images/uimode-mini-video-v11.png) |
-| completi      | Valore predefinito. Windows Media Player viene incorporato con la finestra di stato, la barra di ricerca, i controlli di riproduzione, pausa, arresto, silenziamento, avanti, precedente, avanzamento rapido, Rewind e volume oltre alla finestra video o visualizzazione. | ![uiMode =' Full ' con audio](images/uimode-full-audio-v11.png) | ![uiMode =' Full ' con video](images/uimode-full-video-v11.png) |
+| invisibile | Windows Media Player è incorporato senza alcuna interfaccia utente visibile (controlli, video o finestra di visualizzazione).                                                                                                  | Non viene visualizzato nulla.                                         | Non viene visualizzato nulla.                                         |
+| Nessuno      | Windows Media Player è incorporato senza controlli e con solo la finestra video o di visualizzazione visualizzata.                                                                                                   | ![uimode = 'none' con audio](images/uimode-none-audio-v11.png) | ![uimode = 'none' con video](images/uimode-none-video-v11.png) |
+| Mini      | Windows Media Player è incorporato con la finestra di stato, la riproduzione/sospensione, l'arresto, l'disattivazione dell'audio e i controlli volume visualizzati oltre alla finestra video o di visualizzazione.                                                    | ![uimode = 'mini' con audio](images/uimode-mini-audio-v11.png) | ![uimode = 'mini' con video](images/uimode-mini-video-v11.png) |
+| completi      | Valore predefinito. Windows Media Player è incorporato con la finestra di stato, la barra di ricerca, la riproduzione/sospensione, l'arresto, l'disattivazione dell'audio, il successivo, il precedente, l'avanzamento rapido, il riavvolgimento e i controlli del volume oltre alla finestra video o di visualizzazione. | ![uimode = 'full' con audio](images/uimode-full-audio-v11.png) | ![uimode = 'full' con video](images/uimode-full-video-v11.png) |
 | custom    | Windows Media Player è incorporato con un'interfaccia utente personalizzata. Può essere usato solo nei programmi C++.                                                                                                                | Viene visualizzata l'interfaccia utente personalizzata.                           | Viene visualizzata l'interfaccia utente personalizzata.                           |
 
 
@@ -64,21 +64,21 @@ System. String che corrisponde a uno dei valori seguenti.
 
 ## <a name="remarks&quot;></a>Commenti
 
-Questa proprietà specifica l'aspetto della Media Player Windows incorporata. Quando **uiMode** è impostato su &quot;None&quot;, &quot;mini&quot; o &quot;full&quot;, per la visualizzazione di clip video e visualizzazioni audio è presente una finestra. Questa finestra può essere nascosta in modalità mini o full impostando l'attributo **Height** del tag **Object** su 40, che viene misurato dalla parte inferiore e lascia visibile la parte Controls dell'interfaccia utente. Se non si desidera alcuna interfaccia incorporata, impostare gli attributi **Width** e **Height** su zero.
+Questa proprietà specifica l'aspetto dell'oggetto Windows Media Player. Quando **uiMode** è impostato su &quot;none&quot;, &quot;mini&quot; o &quot;full&quot;, è presente una finestra per la visualizzazione di clip video e visualizzazioni audio. Questa finestra può essere nascosta in modalità mini o completa impostando l'attributo **height** del tag **OBJECT** su 40, misurato dal basso, e lasciando visibile la parte dei controlli dell'interfaccia utente. Se non si desidera alcuna interfaccia incorporata, impostare entrambi gli attributi **width** **e height** su zero.
 
-Se **uiMode** è impostato su &quot;invisibile&quot;, non viene visualizzata alcuna interfaccia utente, ma lo spazio è ancora riservato nella pagina come specificato in **larghezza** e **altezza**. Questa operazione è utile per mantenere il layout di pagina quando è possibile modificare **uiMode** . Inoltre, lo spazio riservato è trasparente, quindi tutti gli elementi a livelli dietro il controllo saranno visibili.
+Se **uiMode è** impostato su &quot;invisible&quot;, non viene visualizzata alcuna interfaccia utente, ma lo spazio è ancora riservato nella pagina come specificato da **width** e **height.** Ciò è utile per mantenere il layout di pagina quando **uiMode** può cambiare. Inoltre, lo spazio riservato è trasparente, quindi tutti gli elementi a livelli dietro il controllo saranno visibili.
 
-Se **uiMode** è impostato su &quot;full&quot; o &quot;mini&quot;, Windows Media Player Visualizza i controlli di trasporto in modalità schermo intero. Se **uiMode** è impostato su &quot;None&quot;, non viene visualizzato alcun controllo in modalità schermo intero.
+Se **uiMode è** impostato su &quot;full&quot; o &quot;mini&quot;, Windows Media Player i controlli di trasporto in modalità schermo intero. Se **uiMode** è impostato su &quot;none&quot;, non vengono visualizzati controlli in modalità schermo intero.
 
-Se la finestra è visibile e il contenuto audio viene riprodotto, la visualizzazione visualizzata sarà quella usata più di recente in Windows Media Player.
+Se la finestra è visibile e viene riprodotto il contenuto audio, la visualizzazione visualizzata sarà quella usata più di recente in Windows Media Player.
 
-Se **uiMode** è impostato su &quot;Custom&quot; in un programma C++ che implementa **IWMPRemoteMediaServices**, viene visualizzato il file dell'interfaccia indicato da **IWMPRemoteMediaServices. GetCustomUIMode** .
+Se **uiMode** è impostato su &quot;custom&quot; in un programma C++ che implementa **IWMPRemoteMediaServices,** viene visualizzato il file di interfaccia indicato da **IWMPRemoteMediaServices.GetCustomUIMode.**
 
-Durante la riproduzione a schermo intero, Windows Media Player nasconde il cursore del mouse quando **enableContextMenu** è uguale a false e **uiMode** è uguale a &quot;None&quot;.
+Durante la riproduzione a schermo intero, Windows Media Player il cursore del mouse quando **enableContextMenu** è uguale a false e **uiMode** è uguale a &quot;none&quot;.
 
 ## <a name=&quot;examples&quot;></a>Esempio
 
-Nell'esempio seguente viene creata una casella di riepilogo che consente all'utente di modificare la modalità di interfaccia utente per un oggetto Windows Media Player incorporato. L'oggetto AxWMPLib. AxWindowsMediaPlayer è rappresentato dalla variabile denominata Player.
+Nell'esempio seguente viene creata una casella di riepilogo che consente all'utente di modificare la modalità dell'interfaccia utente per un oggetto Windows Media Player incorporato. L'oggetto AxWMPLib.AxWindowsMediaPlayer è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -131,7 +131,7 @@ End Sub
 
 | Requisito | Valore |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player versione 7,0 o successiva. Windows Media Player 9 Series o versione successiva per "invisibile" o "personalizzato"<br/>   |
+| Versione<br/>   | Windows Media Player versione 7.0 o successiva. Windows Media Player serie 9 o successive per "invisibili" o "personalizzate"<br/>   |
 | Spazio dei nomi<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -144,7 +144,7 @@ End Sub
 [**Oggetto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. enableContextMenu (VB e C#)**](axwmplib-axwindowsmediaplayer-enablecontextmenu--vb-and-c.md)
+[**AxWindowsMediaPlayer.enableContextMenu (VB e C#)**](axwmplib-axwindowsmediaplayer-enablecontextmenu--vb-and-c.md)
 </dt> </dl>
 
  

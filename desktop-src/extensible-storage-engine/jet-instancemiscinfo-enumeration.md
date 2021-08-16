@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: Enumerazione JET_InstanceMiscInfo'
-title: Enumerazione JET_InstanceMiscInfo (Microsoft. ISAM. esent. Interop. vista)
+description: 'Altre informazioni su: Enumerazione JET_InstanceMiscInfo dati'
+title: JET_InstanceMiscInfo enumerazione (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_InstanceMiscInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_InstanceMiscInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_instancemiscinfo(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: acf008b1a349ab2ddfe735dab45214cb19a71fe9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f3e311eddaf2cf6bdb3a7e06ef2a3acd719696a47accd055725c44f9a2b25b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980001"
 ---
-# <a name="jet_instancemiscinfo-enumeration"></a>Enumerazione JET_InstanceMiscInfo
+# <a name="jet_instancemiscinfo-enumeration"></a>JET_InstanceMiscInfo enumerazione
 
-Livelli di informazioni per [JetGetInstanceMiscInfo (JET_INSTANCE, JET_SIGNATURE, JET_InstanceMiscInfo)](./vistaapi.jetgetinstancemiscinfo-method.md).
+Livelli di informazioni [per JetGetInstanceMiscInfo(JET_INSTANCE, JET_SIGNATURE, JET_InstanceMiscInfo)](./vistaapi.jetgetinstancemiscinfo-method.md).
 
 Questa enumerazione ha un attributo [FlagsAttribute](/dotnet/api/system.flagsattribute) che consente una combinazione bit per bit dei valori del relativo membro.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -81,4 +81,4 @@ public enum JET_InstanceMiscInfo
 
 #### <a name="reference"></a>Riferimento
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)
