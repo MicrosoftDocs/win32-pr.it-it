@@ -5,19 +5,19 @@ ms.assetid: dc538afc-8529-42cf-a276-a4579d555557
 ms.tgt_platform: multiple
 keywords:
 - codice di esempio per la creazione di una partizione di directory applicativa Active Directory
-- partizioni di directory applicative Active Directory, esempio di codice per la creazione
+- partizioni di directory applicative Active Directory, codice di esempio per la creazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d82b2c440547a28ffa585ea3a68a3127a5dc3942
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 923a1891b4980674df01463b4139ec24e771b3697c3648593b3499f3eb5f3838
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103724543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190794"
 ---
 # <a name="example-code-for-creating-an-application-directory-partition"></a>Codice di esempio per la creazione di una partizione di directory applicativa
 
-Nell'esempio di codice C++ riportato di seguito viene creata una nuova partizione di directory applicativa utilizzando ADSI.
+Nell'esempio di codice C++ seguente viene creata una nuova partizione di directory applicativa tramite ADSI.
 
 
 ```C++
@@ -128,7 +128,7 @@ HRESULT CreateApplicationPartitionIADs(LPCWSTR pwszDCADsPath,
 
 
 
-Nell'esempio di codice seguente Visual Basic Scripting Edition viene illustrato come creare una nuova partizione di directory applicativa utilizzando ADSI.
+Nell'esempio Visual Basic codice di Scripting Edition seguente viene illustrato come creare una nuova partizione di directory applicativa tramite ADSI.
 
 
 ```VB
@@ -215,7 +215,7 @@ End Sub
 
 
 
-Nell'esempio di codice Visual Basic .NET riportato di seguito viene illustrato come creare una nuova partizione di directory applicativa utilizzando [System. DirectoryServices](/dotnet/api/system.directoryservices).
+Nell'esempio Visual Basic codice .NET seguente viene illustrato come creare una nuova partizione di directory applicativa [usando System.DirectoryServices](/dotnet/api/system.directoryservices).
 
 
 ```VB
@@ -283,7 +283,7 @@ End Sub
 
 
 
-Nell'esempio di codice C# riportato di seguito viene illustrato come creare una nuova partizione di directory applicativa utilizzando [System. DirectoryServices](/dotnet/api/system.directoryservices).
+L'esempio di codice C# seguente illustra come creare una nuova partizione di directory applicativa [usando System.DirectoryServices](/dotnet/api/system.directoryservices).
 
 
 ```CSharp
@@ -358,6 +358,6 @@ static void CreateApplicationPartitionCS(string DCADsPath,
 
 
 
- 
+ 
 
- 
+ 

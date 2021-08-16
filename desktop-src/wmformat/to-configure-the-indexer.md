@@ -3,26 +3,26 @@ title: Per configurare l'indicizzatore
 description: Per configurare l'indicizzatore
 ms.assetid: 0e28e8dd-1586-45e6-8a08-5245d465d068
 keywords:
-- Windows Media Format SDK, configurazione degli indicizzatori
-- Formato di sistemi avanzati (ASF), configurazione degli indicizzatori
-- ASF (formato avanzato dei sistemi), configurazione degli indicizzatori
-- indici, configurazione degli indicizzatori
+- Windows Media Format SDK, configurazione di indicizzatori
+- Advanced Systems Format (ASF), configurazione di indicizzatori
+- ASF (Advanced Systems Format), configurazione di indicizzatori
+- indici, configurazione di indicizzatori
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 618316e22b13ca05ff0fc1bbfb6b4583e79ca858
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: da5a624a4ed9ae749559a1908e3809500bf8aece2b29b8ad406769c5f639e547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104398606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845626"
 ---
 # <a name="to-configure-the-indexer"></a>Per configurare l'indicizzatore
 
-È possibile configurare l'indicizzatore prima di utilizzarlo per indicizzare un file ASF. Ogni flusso del file può essere configurato separatamente oppure è possibile impostare la stessa configurazione per tutti i flussi.
+È possibile configurare l'indicizzatore prima di usarlo per indicizzare un file ASF. Ogni flusso nel file può essere configurato separatamente oppure è possibile impostare la stessa configurazione per tutti i flussi.
 
-Se si configurano più Vapor per l'indicizzazione in un file, è necessario configurarli tutti e quindi avviare l'indicizzazione. Se si configura e indicizza un flusso e quindi si configura un altro flusso nello stesso file, l'avvio dell'indicizzatore eliminerà nuovamente il primo indice. Questa operazione deve essere conforme al formato di file ASF.
+Se si configurano più file per l'indicizzazione in un file, è necessario configurarli tutti e quindi iniziare l'indicizzazione. Se si configura e si indicizza un flusso e quindi si configura un altro flusso nello stesso file, avviando nuovamente l'indicizzatore verrà eliminato il primo indice. Questo deve essere conforme al formato di file ASF.
 
-Il codice seguente illustra come configurare l'indicizzatore. Il codice presuppone che il file da indicizzare abbia due flussi: il primo è un flusso audio che non deve essere indicizzato e il secondo è un flusso video. Questo codice Mostra solo come configurare l'indicizzatore. Per indicizzare un file, è necessario seguire la procedura illustrata in [per indicizzare un file ASF](to-index-an-asf-file.md).
+Nel codice seguente viene illustrato come configurare l'indicizzatore. Il codice presuppone che il file da indicizzare abbia due flussi: il primo è un flusso audio che non deve essere indicizzato e il secondo è un flusso video. Questo codice illustra solo come configurare l'indicizzatore. Per indicizzare un file, è necessario seguire i passaggi descritti in [Per indicizzare un file ASF.](to-index-an-asf-file.md)
 
 
 ```C++
@@ -65,15 +65,15 @@ pMyIndexer = NULL;
 
 
 > [!Note]  
-> Il tipo di indice predefinito è \_ WMT \_ punto di pulizia più vicino \_ \_ . Sebbene sia possibile impostare il tipo di indice su altri valori, in questo modo si riduce la ricerca delle prestazioni.
+> Il tipo di indice predefinito è WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Anche se è possibile impostare il tipo di indice su altri valori, in questo modo si riducono le prestazioni di ricerca.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**IWMIndexer2:: Configure**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
+[**IWMIndexer2::Configure**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
 </dt> <dt>
 
 [**Per indicizzare un file ASF**](to-index-an-asf-file.md)
@@ -85,9 +85,9 @@ pMyIndexer = NULL;
 [**Operazioni con gli indici**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

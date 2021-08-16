@@ -1,31 +1,31 @@
 ---
-description: Nell'esempio seguente viene illustrato l'utilizzo dell'API di compressione in modalità blocco.
+description: L'esempio seguente illustra l'uso dell'API di compressione in modalità blocco.
 ms.assetid: 7483BCE4-3B85-4659-98E3-670D2F7EE52D
 title: Uso dell'API di compressione in modalità blocco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ddd1ecaec03d332262ffb24462e73a9fcb789d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b4b739c1496b43f64f8ceab4312602e9b98f7faebbb29317998a93e8f27b6883
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104127571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117737456"
 ---
 # <a name="using-the-compression-api-in-block-mode"></a>Uso dell'API di compressione in modalità blocco
 
-Nell'esempio seguente viene illustrato l'utilizzo dell'API di compressione in modalità blocco. Per generare un compressore o un decompressore usando la modalità blocco, l'applicazione deve includere il flag **Comprimi \_ RAW** quando chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). La modalità blocco consente allo sviluppatore di controllare le dimensioni del blocco, ma richiede un maggior numero di operazioni da parte dell'applicazione.
+L'esempio seguente illustra l'uso dell'API di compressione in modalità blocco. Per generare un compressore o un decompressore usando la modalità blocco, l'applicazione deve includere il flag **COMPRESS \_ RAW** quando chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). La modalità blocco consente allo sviluppatore di controllare le dimensioni del blocco, ma richiede più lavoro da parte dell'applicazione.
 
-La modalità di blocco avrà esito negativo se la dimensione del buffer di input è maggiore della dimensione interna del blocco dell'algoritmo di compressione. La dimensione del blocco interno è 32 KB per MSZIP e 1GB per gli algoritmi di compressione XPRESS. Le dimensioni del blocco interno per LZMS sono configurabili fino a 64 GB con un aumento corrispondente nell'uso della memoria. Il valore del parametro *UncompressedBufferSize* di [**Decompress**](/windows/desktop/api/compressapi/nf-compressapi-decompress) deve essere esattamente uguale alla dimensione originale dei dati non compressi e non solo alle dimensioni del buffer di output. Ciò significa che l'applicazione dovrà specificare le dimensioni del blocco e salvare le dimensioni originali esatte dei dati non compressi per l'uso da parte del decompressore. La dimensione del buffer compresso non viene salvata automaticamente e l'applicazione deve anche salvare questa operazione per la decompressione.
+La modalità blocco avrà esito negativo se le dimensioni del buffer di input sono maggiori delle dimensioni del blocco interno dell'algoritmo di compressione. Le dimensioni del blocco interno sono 32 KB per MSZIP e 1 GB per gli algoritmi di compressione XPRESS. La dimensione del blocco interno per LZMS è configurabile fino a 64 GB con un aumento corrispondente dell'utilizzo della memoria. Il valore del *parametro UncompressedBufferSize* di [**Decompress**](/windows/desktop/api/compressapi/nf-compressapi-decompress) deve essere esattamente uguale alle dimensioni originali dei dati non compressi e non solo alle dimensioni del buffer di output. Ciò significa che l'applicazione dovrà specificare le dimensioni del blocco e salvare le dimensioni originali esatte dei dati non compressi per l'uso da parte del decompressore. Le dimensioni del buffer compresso non vengono salvate automaticamente e anche l'applicazione deve salvarla per la decompressione.
 
-La modalità buffer è consigliata nella maggior parte dei casi poiché suddivide automaticamente il buffer di input in blocchi di dimensioni appropriate per l'algoritmo di compressione selezionato archivia le dimensioni del buffer non compresso nel buffer compresso. Per informazioni su come usare la modalità buffer, vedere [uso dell'API di compressione in modalità buffer](using-the-compression-api-in-buffer-mode.md).
+La modalità buffer è consigliata nella maggior parte dei casi perché suddivide automaticamente il buffer di input in blocchi di dimensioni appropriate per l'algoritmo di compressione selezionato che archivia le dimensioni del buffer non compresso nel buffer compresso. Per informazioni su come usare la modalità buffer, vedere [Uso dell'API di compressione in modalità buffer](using-the-compression-api-in-buffer-mode.md).
 
-Le applicazioni che usano la modalità buffer o blocco hanno la possibilità di specificare una routine di allocazione della memoria personalizzata nella chiamata a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
+Le applicazioni che usano la modalità buffer o blocco hanno la possibilità di specificare una routine di allocazione di memoria personalizzata nella chiamata a [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor).
 
-**Windows 8 e Windows Server 2012:** Per usare il codice di esempio seguente, è necessario che sia in esecuzione Windows 8 o Windows Server 2012 e che "compressapi. h" e "cabinet.dll" e siano collegati a "cabinet. lib".
+**Windows 8 e Windows Server 2012:** Per usare il codice di esempio seguente, è necessario eseguire Windows 8 o Windows Server 2012 e avere "compressapi.h" e "cabinet.dll" e collegarsi a "Cabinet.lib".
 
-Nell'esempio seguente viene illustrato l'utilizzo dell'API di compressione in modalità blocco per comprimere un file utilizzando l'algoritmo di compressione LZMS e una routine di allocazione della memoria personalizzata. L'applicazione deve includere il flag **Comprimi \_ RAW** per usare l'API di compressione in modalità blocco. Prima di tutto l'applicazione chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **compress \_ algorithm \_ LZMS** \| **compress \_ RAW** per generare il compressore. Il parametro *AllocationRoutines* specifica la routine di allocazione della memoria. L'applicazione imposta quindi le dimensioni del blocco per il compressore usando [**SetCompressorInformation**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation).
+Di seguito viene illustrato l'uso dell'API di compressione in modalità blocco per comprimere un file usando l'algoritmo di compressione LZMS e una routine di allocazione di memoria personalizzata. L'applicazione deve includere il flag **COMPRESS \_ RAW** per usare l'API di compressione in modalità blocco. Prima di tutto l'applicazione chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) con **COMPRESS ALGORITHM \_ \_ LZMS** \| **COMPRESS \_ RAW** per generare il compressore. Il *parametro AllocationRoutines* specifica la routine di allocazione della memoria. L'applicazione imposta quindi le dimensioni del blocco per il compresso usando [**SetCompressorInformation**](/windows/desktop/api/compressapi/nf-compressapi-setcompressorinformation).
 
-L'applicazione effettua chiamate ripetute [**per comprimere**](/windows/desktop/api/compressapi/nf-compressapi-compress) il blocco di dati per blocco. L'applicazione scrive le dimensioni del blocco non compresso, le dimensioni del blocco compresso e i dati compressi nel buffer di output.
+L'applicazione esegue chiamate ripetute a [**Comprimi**](/windows/desktop/api/compressapi/nf-compressapi-compress) per comprimere il blocco di dati per blocco. L'applicazione scrive le dimensioni del blocco non compresso, le dimensioni del blocco compresso e i dati compressi nel buffer di output.
 
 
 ```C++
@@ -358,7 +358,7 @@ done:
 
 
 
-Di seguito viene illustrata la decompressione di file tramite l'API di compressione in modalità blocco.
+Di seguito viene illustrata la decompressione dei file tramite l'API di compressione in modalità blocco.
 
 
 ```C++
@@ -648,9 +648,9 @@ done:
 
 
 
-Un'applicazione che usa la modalità buffer o blocco ha la possibilità di personalizzare l'allocazione di memoria usata dall'API di compressione quando chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). In modalità blocco, l'applicazione deve gestire le informazioni sui blocchi di compressione, ad esempio le dimensioni dei dati compressi e le dimensioni dei dati non compressi; in caso contrario, [**decomprimere**](/windows/desktop/api/compressapi/nf-compressapi-decompress) non potrà decomprimere le informazioni.
+Un'applicazione che usa la modalità buffer o blocco ha la possibilità di personalizzare l'allocazione di memoria usata dall'API di compressione quando chiama [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) o [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). In modalità blocco, l'applicazione deve gestire le informazioni sui blocchi di compressione, ad esempio le dimensioni dei dati compressi e le dimensioni dei dati non compressi, in caso contrario la [**decompressione**](/windows/desktop/api/compressapi/nf-compressapi-decompress) non sarà in grado di decomprimere le informazioni.
 
-Il frammento di codice seguente mostra una semplice routine di allocazione personalizzata.
+Il frammento di codice seguente illustra una semplice routine di allocazione personalizzata.
 
 
 ```C++

@@ -3,7 +3,7 @@ title: Dataformats
 description: Specifica i formati di dati predefiniti e principali supportati da un'applicazione.
 ms.assetid: 0c9387f9-d7e0-40e7-8d86-96a79a844161
 keywords:
-- Com della chiave del Registro di sistema DataFormats
+- Chiave del Registro di sistema DATAFormats COM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cfb8b2cc2ad4d11137fa41f419db2184f1a2b47fb850176227401e3d2b1aec04
@@ -30,9 +30,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Commenti
 
-Il *valore file/format* specifica il formato predefinito del file principale o dell'oggetto per gli oggetti di questa classe.
+Il *valore file/formato* specifica il formato di oggetto o file principale predefinito per gli oggetti di questa classe.
 
-Il *valore formats* specifica un elenco di formati per le implementazioni predefinite di [**EnumFormatEtc**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc), dove *n* è un indice integer in base zero. Ad esempio, *n* format , aspect , medium , flag , dove format è un formato degli Appunti, aspect è uno o più membri di  =     [**DVASPECT,**](/windows/win32/api/wtypes/ne-wtypes-dvaspect) *medium*    è uno o più membri di [**TYMED**](/windows/win32/api/objidl/ne-objidl-tymed)e *flag* è uno o più membri di [**DATADIR**](/windows/win32/api/objidl/ne-objidl-datadir).
+Il *valore formats* specifica un elenco di formati per le implementazioni predefinite di [**EnumFormatEtc**](/windows/desktop/api/ObjIdl/nf-objidl-idataobject-enumformatetc), dove *n* è un indice integer in base zero. Ad esempio, *n* format , aspect , medium , flag , dove format è un formato degli Appunti, aspect è uno o più membri di  =     [**DVASPECT,**](/windows/win32/api/wtypes/ne-wtypes-dvaspect) *medium* è uno   o più membri di [**TYMED**](/windows/win32/api/objidl/ne-objidl-tymed)e *flag* è uno o più membri di [**DATADIR.**](/windows/win32/api/objidl/ne-objidl-datadir)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

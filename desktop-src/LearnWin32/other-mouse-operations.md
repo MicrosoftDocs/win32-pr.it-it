@@ -1,23 +1,23 @@
 ---
-title: Operazioni del mouse varie
-description: Nelle sezioni precedenti sono stati discussi i clic del mouse e il movimento del mouse. Di seguito sono riportate alcune altre operazioni che possono essere eseguite con il mouse.
+title: Operazioni varie del mouse
+description: Nelle sezioni precedenti sono stati illustrati i clic del mouse e lo spostamento del mouse. Ecco alcune altre operazioni che possono essere eseguite con il mouse.
 ms.assetid: 6A5B953F-7032-4AA6-8B64-2E9CBB8F59F1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfba63dce8116d79a557cbbbf8895f17d2a8f1b9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a31877ab5a71819fa896fd1253e7391f9ed748dffff636ab9d3e8591669b7fae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387967"
 ---
-# <a name="miscellaneous-mouse-operations"></a>Operazioni del mouse varie
+# <a name="miscellaneous-mouse-operations"></a>Operazioni varie del mouse
 
-Nelle sezioni precedenti sono stati discussi i clic del mouse e il movimento del mouse. Di seguito sono riportate alcune altre operazioni che possono essere eseguite con il mouse.
+Nelle sezioni precedenti sono stati illustrati i clic del mouse e lo spostamento del mouse. Ecco alcune altre operazioni che possono essere eseguite con il mouse.
 
 ## <a name="dragging-ui-elements"></a>Trascinamento di elementi dell'interfaccia utente
 
-Se l'interfaccia utente supporta il trascinamento di elementi dell'interfaccia utente, è necessario chiamare un'altra funzione nel gestore di messaggi del mouse: [**DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect). La funzione **DragDetect** restituisce **true** se l'utente avvia un movimento del mouse da interpretare come trascinamento. Il codice seguente illustra come usare questa funzione.
+Se l'interfaccia utente supporta il trascinamento di elementi dell'interfaccia utente, è necessario chiamare un'altra funzione nel gestore di messaggi con scorrimento del mouse: [**DragDetect.**](/windows/desktop/api/winuser/nf-winuser-dragdetect) La **funzione DragDetect** restituisce **TRUE se** l'utente avvia un movimento del mouse che deve essere interpretato come trascinamento. Il codice seguente illustra come usare questa funzione.
 
 
 ```C++
@@ -34,18 +34,18 @@ Se l'interfaccia utente supporta il trascinamento di elementi dell'interfaccia u
 
 
 
-Ecco l'idea: quando un programma supporta il trascinamento della selezione, non è necessario che ogni clic del mouse venga interpretato come un trascinamento. In caso contrario, l'utente potrebbe trascinare accidentalmente qualcosa quando ha semplicemente intenzione di fare clic su di esso, ad esempio per selezionarlo. Tuttavia, se il mouse è particolarmente sensibile, può essere difficile mantenere il mouse ancora in modo ottimale quando si fa clic. Windows definisce pertanto una soglia di trascinamento di pochi pixel. Quando l'utente preme il pulsante del mouse, non viene considerato un trascinamento, a meno che il mouse non superi questa soglia. La funzione [**DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) verifica se questa soglia viene raggiunta. Se la funzione restituisce **true**, è possibile interpretare il clic del mouse come un trascinamento. In caso contrario, non.
+Ecco l'idea: quando un programma supporta il trascinamento della selezione, non si vuole che ogni clic del mouse venga interpretato come un trascinamento. In caso contrario, l'utente potrebbe trascinare accidentalmente un elemento quando intende semplicemente fare clic su di esso,ad esempio per selezionarlo. Tuttavia, se un mouse è particolarmente sensibile, può essere difficile mantenerlo perfettamente mentre si fa clic. Pertanto, Windows definisce una soglia di trascinamento di alcuni pixel. Quando l'utente preme il pulsante del mouse, non viene considerato un trascinamento a meno che il mouse non supera questa soglia. La [**funzione DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) verifica se questa soglia viene raggiunta. Se la funzione restituisce **TRUE,** è possibile interpretare il clic del mouse come un trascinamento. In caso contrario, non eseguire questa operazione.
 
 > [!Note]  
-> Se [**DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) restituisce **false**, Windows elimina il messaggio [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) quando l'utente rilascia il pulsante del mouse. Pertanto, non chiamare **DragDetect** , a meno che il programma non sia attualmente in una modalità che supporta il trascinamento. Se, ad esempio, un elemento dell'interfaccia utente trascinabile è già selezionato. Alla fine di questo modulo, verrà visualizzato un esempio di codice più lungo che usa la funzione **DragDetect** .
+> Se [**DragDetect restituisce**](/windows/desktop/api/winuser/nf-winuser-dragdetect) **FALSE,** Windows elimina il messaggio [**WM \_ LBUTTONUP**](/windows/desktop/inputdev/wm-lbuttonup) quando l'utente rilascia il pulsante del mouse. Pertanto, non chiamare **DragDetect a** meno che il programma non sia attualmente in una modalità che supporta il trascinamento. Ad esempio, se è già selezionato un elemento trascinabile dell'interfaccia utente. Alla fine di questo modulo verrà visualizzato un esempio di codice più lungo che usa la **funzione DragDetect.**
 
- 
+ 
 
 ## <a name="confining-the-cursor"></a>Limitazione del cursore
 
-In alcuni casi potrebbe essere necessario limitare il cursore all'area client o a una parte dell'area client. La funzione [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) limita lo spostamento del cursore a un rettangolo specificato. Questo rettangolo viene specificato nelle coordinate dello schermo, anziché nelle coordinate client, quindi il punto (0, 0) indica l'angolo superiore sinistro dello schermo. Per tradurre le coordinate client nelle coordinate dello schermo, chiamare la funzione [**ClientToScreen**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen).
+In alcuni casi può essere necessario limitare il cursore all'area client o a una parte dell'area client. La [**funzione ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) limita lo spostamento del cursore a un rettangolo specificato. Questo rettangolo è specificato in coordinate dello schermo, anziché coordinate client, quindi il punto (0, 0) indica l'angolo superiore sinistro dello schermo. Per convertire le coordinate client in coordinate dello schermo, chiamare la [**funzione ClientToScreen.**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen)
 
-Il codice seguente consente di limitare il cursore all'area client della finestra.
+Il codice seguente limita il cursore all'area client della finestra.
 
 
 ```C++
@@ -66,9 +66,9 @@ Il codice seguente consente di limitare il cursore all'area client della finestr
 
 
 
-[**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) accetta una struttura [**Rect**](/previous-versions//dd162897(v=vs.85)) , ma [**ClientToScreen**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) accetta una struttura di [**punti**](/previous-versions//dd162805(v=vs.85)) . Un rettangolo viene definito dai punti superiore sinistro e inferiore destro. È possibile limitare il cursore a qualsiasi area rettangolare, incluse le aree all'esterno della finestra, ma la limitazione del cursore all'area client è un modo tipico per usare la funzione. La limitazione del cursore a un'area completamente esterna alla finestra potrebbe essere insolita e gli utenti probabilmente lo percepiranno come un bug.
+[**ClipCursor accetta**](/windows/desktop/api/winuser/nf-winuser-clipcursor) una [**struttura RECT,**](/previous-versions//dd162897(v=vs.85)) mentre [**ClientToScreen**](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) accetta una [**struttura POINT.**](/previous-versions//dd162805(v=vs.85)) Un rettangolo è definito dai relativi punti in alto a sinistra e in basso a destra. È possibile limitare il cursore a qualsiasi area rettangolare, incluse le aree esterne alla finestra, ma limitare il cursore all'area client è un modo tipico per usare la funzione . Il confini del cursore in un'area completamente esterna alla finestra sarebbe insolito e gli utenti probabilmente lo percepirebbero come un bug.
 
-Per rimuovere la restrizione, chiamare [**ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) con il valore **null**.
+Per rimuovere la restrizione, [**chiamare ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) con il valore **NULL**.
 
 
 ```C++
@@ -77,14 +77,14 @@ ClipCursor(NULL);
 
 
 
-## <a name="mouse-tracking-events-hover-and-leave"></a>Eventi di rilevamento del mouse: passaggio del mouse e uscita
+## <a name="mouse-tracking-events-hover-and-leave"></a>Eventi di rilevamento del mouse: passaggio del mouse e spostamento
 
-Per impostazione predefinita, altri due messaggi del mouse sono disabilitati, ma possono essere utili per alcune applicazioni:
+Altri due messaggi del mouse sono disabilitati per impostazione predefinita, ma possono essere utili per alcune applicazioni:
 
--   [**WM \_ MOUSEHOVER**](/windows/desktop/inputdev/wm-mousehover): il cursore è posizionato sull'area client per un periodo di tempo fisso.
--   [**WM \_ MOUSELEAVE**](/windows/desktop/inputdev/wm-mouseleave): il cursore ha lasciato l'area client.
+-   [**WM \_ MOUSEHOVER:**](/windows/desktop/inputdev/wm-mousehover)il cursore è stato posizionato sull'area client per un periodo di tempo fisso.
+-   [**WM \_ MOUSELEAVE:**](/windows/desktop/inputdev/wm-mouseleave)il cursore ha lasciato l'area client.
 
-Per abilitare questi messaggi, chiamare la funzione [**TrackMouseEvent**](/windows/desktop/api/winuser/nf-winuser-trackmouseevent) .
+Per abilitare questi messaggi, chiamare la [**funzione TrackMouseEvent.**](/windows/desktop/api/winuser/nf-winuser-trackmouseevent)
 
 
 ```C++
@@ -98,9 +98,9 @@ Per abilitare questi messaggi, chiamare la funzione [**TrackMouseEvent**](/windo
 
 
 
-La struttura [**TRACKMOUSEEVENT**](/windows/win32/api/winuser/ns-winuser-trackmouseevent) contiene i parametri per la funzione. Il membro **dwFlags** della struttura contiene flag di bit che specificano i messaggi di rilevamento a cui si è interessati. È possibile scegliere di ottenere sia [**WM \_ MOUSEHOVER**](/windows/desktop/inputdev/wm-mousehover) che [**WM \_ MOUSELEAVE**](/windows/desktop/inputdev/wm-mouseleave), come illustrato qui, o solo uno dei due. Il membro **dwHoverTime** specifica la durata del passaggio del mouse prima che il sistema generi un messaggio hover. Questo valore è espresso in millisecondi. Per **\_ impostazione predefinita, il valore predefinito di hover** indica l'utilizzo dell'impostazione predefinita del sistema.
+La [**struttura TRACKMOUSEEVENT**](/windows/win32/api/winuser/ns-winuser-trackmouseevent) contiene i parametri per la funzione. Il **membro dwFlags della** struttura contiene flag di bit che specificano i messaggi di rilevamento a cui si è interessati. È possibile scegliere di ottenere [**sia \_ MOUSEHOVER WM**](/windows/desktop/inputdev/wm-mousehover) che [**WM \_ MOUSELEAVE,**](/windows/desktop/inputdev/wm-mouseleave)come illustrato di seguito, o solo uno dei due. Il **membro dwHoverTime** specifica per quanto tempo il mouse deve passare il mouse prima che il sistema generi un messaggio al passaggio del mouse. Questo valore è espresso in millisecondi. La costante **HOVER \_ DEFAULT indica** l'uso dell'impostazione predefinita di sistema.
 
-Dopo aver ottenuto uno dei messaggi richiesti, la funzione [**TrackMouseEvent**](/windows/desktop/api/winuser/nf-winuser-trackmouseevent) viene reimpostata. Per ottenere un altro messaggio di rilevamento, è necessario chiamarlo di nuovo. Tuttavia, è necessario attendere fino al successivo messaggio di spostamento del mouse prima di chiamare di nuovo **TrackMouseEvent** . In caso contrario, è possibile che la finestra venga sovraccaricata con i messaggi di rilevamento. Ad esempio, se il mouse viene spostato, il sistema continuerà a generare un flusso di messaggi [**WM \_ MOUSEHOVER**](/windows/desktop/inputdev/wm-mousehover) mentre il mouse è stazionario. In realtà non si vuole un altro messaggio **WM \_ MOUSEHOVER** fino a quando il mouse si sposta in un altro punto e si passa nuovamente.
+Dopo aver visualizzato uno dei messaggi richiesti, la funzione [**TrackMouseEvent**](/windows/desktop/api/winuser/nf-winuser-trackmouseevent) viene reimpostata. È necessario chiamarlo nuovamente per ottenere un altro messaggio di rilevamento. Tuttavia, è necessario attendere fino al successivo messaggio di spostamento del mouse prima di chiamare **nuovamente TrackMouseEvent.** In caso contrario, la finestra potrebbe essere piena di messaggi di rilevamento. Ad esempio, se il mouse è al passaggio del mouse, il sistema continuerà a generare un flusso di messaggi [**\_ WM MOUSEHOVER**](/windows/desktop/inputdev/wm-mousehover) mentre il mouse è zionario. In realtà non si vuole un altro messaggio **\_ MOUSEHOVER WM** fino a quando il mouse non si sposta in un'altra posizione e non si passa di nuovo al mouse.
 
 Ecco una piccola classe helper che è possibile usare per gestire gli eventi di rilevamento del mouse.
 
@@ -138,7 +138,7 @@ public:
 
 
 
-Nell'esempio seguente viene illustrato come utilizzare questa classe nella routine della finestra.
+Nell'esempio seguente viene illustrato come usare questa classe nella routine della finestra.
 
 
 ```C++
@@ -176,7 +176,7 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 Gli eventi di rilevamento del mouse richiedono un'ulteriore elaborazione da parte del sistema, quindi lasciarli disabilitati se non sono necessari.
 
-Per completezza, di seguito è illustrata una funzione che esegue una query sul sistema per il timeout predefinito del passaggio del mouse.
+Per completezza, ecco una funzione che esegue una query sul sistema per il timeout del passaggio del mouse predefinito.
 
 
 ```C++
@@ -210,14 +210,14 @@ BOOL IsMouseWheelPresent()
 
 
 
-Se l'utente ruota la rotellina del mouse, la finestra con lo stato attivo riceve un messaggio [**WM \_ MOUSEWHEEL**](/windows/desktop/inputdev/wm-mousewheel) . Il parametro *wParam* di questo messaggio contiene un valore integer denominato *Delta* che misura la distanza con cui è stata ruotata la rotellina. Il Delta USA unità arbitrarie, in cui 120 unità è definita come rotazione necessaria per eseguire una "azione". Naturalmente, la definizione di un'azione dipende dal programma. Se ad esempio si usa la rotellina del mouse per scorrere il testo, ogni 120 unità di rotazione scorrerà una riga di testo.
+Se l'utente ruota la rotellina del mouse, la finestra con lo stato attivo riceve un messaggio [**\_ WM MOUSEWHEEL.**](/windows/desktop/inputdev/wm-mousewheel) Il *parametro wParam* di questo messaggio contiene un valore intero denominato *delta* che misura la distanza di rotazione della rotellina. Il delta usa unità arbitrarie, dove 120 unità sono definite come la rotazione necessaria per eseguire un'"azione". Naturalmente, la definizione di un'azione dipende dal programma. Ad esempio, se si usa la rotellina del mouse per scorrere il testo, ogni 120 unità di rotazione scorrerebbe una riga di testo.
 
-Il segno del Delta indica la direzione di rotazione:
+Il segno del delta indica la direzione di rotazione:
 
--   Positivo: ruotare in orizzontale, lontano dall'utente.
--   Negativo: ruotare indietro verso l'utente.
+-   Positivo: ruotare in avanti, lontano dall'utente.
+-   Negativo: ruota indietro, verso l'utente.
 
-Il valore del Delta viene inserito in *wParam* insieme ad alcuni flag aggiuntivi. Usare la macro [**get \_ Wheel \_ Delta \_ wParam**](/windows/desktop/api/winuser/nf-winuser-get_wheel_delta_wparam) per ottenere il valore del Delta.
+Il valore del delta viene inserito in *wParam* insieme ad alcuni flag aggiuntivi. Usare la macro [**GET \_ WHEEL DELTA \_ \_ WPARAM**](/windows/desktop/api/winuser/nf-winuser-get_wheel_delta_wparam) per ottenere il valore del delta.
 
 
 ```C++
@@ -226,12 +226,12 @@ int delta = GET_WHEEL_DELTA_WPARAM(wParam);
 
 
 
-Se la rotellina del mouse ha una risoluzione elevata, il valore assoluto del Delta potrebbe essere minore di 120. In tal caso, se è opportuno che l'azione venga eseguita con incrementi più piccoli, è possibile farlo. Ad esempio, il testo potrebbe scorrere in base a incrementi di meno di una riga. In caso contrario, accumulare il Delta totale finché la rotellina non ruota abbastanza per eseguire l'azione. Archiviare il Delta non usato in una variabile e quando si accumulano 120 unità (positive o negative), eseguire l'azione.
+Se la rotellina del mouse ha una risoluzione elevata, il valore assoluto del delta potrebbe essere minore di 120. In tal caso, se è opportuno che l'azione si verifichi con incrementi più piccoli, è possibile farlo. Ad esempio, il testo potrebbe scorrere di incrementi inferiori a una riga. In caso contrario, accumulare il delta totale fino a quando la ruota della ruota è sufficiente per eseguire l'azione. Archiviare il delta inutilizzato in una variabile e, quando si accumulano 120 unità (positive o negative), eseguire l'azione.
 
 ## <a name="next"></a>Prossima
 
 [Input da tastiera](keyboard-input.md)
 
- 
+ 
 
- 
+ 

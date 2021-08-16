@@ -1,11 +1,11 @@
 ---
-title: Evento Player. PlaylistCollectionPlaylistRemoved
-description: L'evento PlaylistCollectionPlaylistRemoved si verifica quando una playlist viene rimossa dalla raccolta di playlist. | Evento Player. PlaylistCollectionPlaylistRemoved
+title: Evento Player.PlaylistCollectionPlaylistRemoved
+description: L'evento PlaylistCollectionPlaylistRemoved si verifica quando una playlist viene rimossa dalla raccolta di playlist. | Evento Player.PlaylistCollectionPlaylistRemoved
 ms.assetid: 2405be98-b4c2-4b4e-bea6-0c48a3e26f18
 keywords:
-- Media Player di Windows Event PlaylistCollectionPlaylistRemoved
-- Windows Event PlaylistCollectionPlaylistRemoved Media Player, classe Player
-- Classe Player Windows Media Player, evento PlaylistCollectionPlaylistRemoved
+- PlaylistCollectionPlaylistRemoved event Windows Media Player
+- PlaylistCollectionPlaylistRemoved event Windows Media Player , Player class
+- Classe Player Windows Media Player, playlistCollectionPlaylistRemoved
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a449a7b00516f4fee613722d1cc126eb74227948
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 456f7598b9e1f1d2c2a6e76e58a0b06142980835c3c6d71d9ab10c2230ac386f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337975"
 ---
-# <a name="playerplaylistcollectionplaylistremoved-event"></a>Evento Player. PlaylistCollectionPlaylistRemoved
+# <a name="playerplaylistcollectionplaylistremoved-event"></a>Evento Player.PlaylistCollectionPlaylistRemoved
 
-L'evento **PlaylistCollectionPlaylistRemoved** si verifica quando una playlist viene rimossa dalla raccolta di playlist.
+**L'evento PlaylistCollectionPlaylistRemoved** si verifica quando una playlist viene rimossa dalla raccolta di playlist.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ Player.PlaylistCollectionPlaylistRemoved(
 *bstrPlaylistName* 
 </dt> <dd>
 
-**Stringa** che specifica il nome della playlist che è stata rimossa.
+**Stringa** che specifica il nome della playlist rimossa.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Questo evento non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore dei parametri evento viene specificato da Windows Media Player ed è possibile accedervi o passarli a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, incluse le maiuscole.
+Il valore dei parametri dell'evento viene specificato da Windows Media Player ed è accessibile o passato a un metodo in un file JScript importato usando il nome del parametro specificato. Questo nome di parametro deve essere digitato esattamente come illustrato, inclusa l'maiuscola.
 
 **Windows Media Player 10 Mobile:** Questo evento non è supportato.
 
@@ -65,7 +65,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Il valore dei parametri evento viene specificato da Windows Media Player ed è p
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. getByName**](playlistcollection-getbyname.md)
+[**PlaylistCollection.getByName**](playlistcollection-getbyname.md)
 </dt> </dl>
 
  

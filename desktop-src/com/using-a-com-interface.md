@@ -4,16 +4,16 @@ description: Uso di un'interfaccia COM
 ms.assetid: 44e1aeac-585c-4856-8c4d-1adb5b307b74
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78b5d402079debf5e0a565c6b91136605cec50fb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 40ddf507be3a71d3b00f99574b2153dafd21a6558ee20fa5c3f2108675bf9b24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104328639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308927"
 ---
 # <a name="using-a-com-interface"></a>Uso di un'interfaccia COM
 
-Il codice client è l'utente dell'interfaccia COM. Per usare qualsiasi interfaccia COM, personalizzata o standard, un client deve conoscerne l'IID. Nell'esempio seguente, il driver che chiama CustomRpt passa il nome dell'oggetto convertito in un formato a caratteri wide. Il nome dell'oggetto viene fornito a [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) in modo che sia possibile creare un moniker di file e che il client possa essere associato all'oggetto in esecuzione. Dopo l'esecuzione dell'oggetto, CustomRpt può accedere a un puntatore a un'interfaccia nel proxy/stub standard, ad esempio [**IPersistFile**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile), o all'interfaccia personalizzata ICustomInterface.
+Il codice client è l'utente dell'interfaccia COM. Per usare qualsiasi interfaccia COM, personalizzata o standard, un client deve conoscere il relativo IID. Nell'esempio seguente il driver che chiama CustomRpt passa il nome dell'oggetto convertito in un formato a caratteri wide. Il nome dell'oggetto viene immesso in [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) in modo che sia possibile creare un moniker di file e il client possa eseguire l'associazione all'oggetto in esecuzione. Dopo l'esecuzione dell'oggetto, CustomRpt può accedere a un puntatore a un'interfaccia nel proxy/stub standard, ad esempio [**IPersistFile,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile)o all'interfaccia personalizzata ICustomInterface.
 
 
 ```C++
@@ -93,9 +93,9 @@ void CustomRpt(char *pszObject)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

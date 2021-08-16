@@ -1,7 +1,7 @@
 ---
-description: Ricampiona un buffer ID3DXPRTBuffer di input e lo salva in un buffer di output. Questo metodo può essere utilizzato per convertire un buffer di vertice in un buffer di trama e viceversa. Può essere usato anche per convertire i buffer a canale singolo in buffer a 3 canali e viceversa.
+description: Ricampiona un buffer ID3DXPRTBuffer di input e lo salva in un buffer di output. Questo metodo può essere usato per convertire un buffer dei vertici in un buffer di trama e viceversa. Può essere usato anche per convertire i buffer a canale singolo in buffer a 3 canali e viceversa.
 ms.assetid: 78015044-38a9-4c08-a690-28f6427dae8c
-title: 'Metodo ID3DXPRTEngine:: ResampleBuffer (D3DX9Mesh. h)'
+title: Metodo ID3DXPRTEngine::ResampleBuffer (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c8517d04be1d63159a2548935f3e09c12e646775
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa945be7b01c928a5dc8f5e44a6a31e8cb6d879be102145d25e03e7bef73f3b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103762292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729615"
 ---
-# <a name="id3dxprtengineresamplebuffer-method"></a>Metodo ID3DXPRTEngine:: ResampleBuffer
+# <a name="id3dxprtengineresamplebuffer-method"></a>Metodo ID3DXPRTEngine::ResampleBuffer
 
-Ricampiona un buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input e lo salva in un buffer di output. Questo metodo può essere utilizzato per convertire un buffer di vertice in un buffer di trama e viceversa. Può essere usato anche per convertire i buffer a canale singolo in buffer a 3 canali e viceversa.
+Ricampiona un buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input e lo salva in un buffer di output. Questo metodo può essere usato per convertire un buffer dei vertici in un buffer di trama e viceversa. Può essere usato anche per convertire i buffer a canale singolo in buffer a 3 canali e viceversa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT ResampleBuffer(
 
 <dl> <dt>
 
-*pBufferIn* \[ in\]
+*pBufferIn* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore al buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di input.
+Puntatore al buffer [**ID3DXPRTBuffer di**](id3dxprtbuffer.md) input.
 
 </dd> <dt>
 
-*pBufferOut* \[ in uscita\]
+*pBufferOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntatore al buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output.
+Puntatore al buffer [**ID3DXPRTBuffer di**](id3dxprtbuffer.md) output.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntatore al buffer [**ID3DXPRTBuffer**](id3dxprtbuffer.md) di output.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OutOfMemory.
+Se il metodo ha esito positivo, il valore restituito è S \_ OK. Se il metodo ha esito negativo, il valore restituito può essere uno dei seguenti: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è \_ OK. Se il metodo ha e
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

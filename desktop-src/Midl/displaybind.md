@@ -1,9 +1,9 @@
 ---
 title: displaybind (attributo)
-description: L'attributo \ displaybind \ indica una proprietà che deve essere visualizzata all'utente come associabile.
+description: L'attributo \ displaybind\ indica una proprietà che deve essere visualizzata all'utente come associabile.
 ms.assetid: 047a58b2-3ae2-437a-992f-a9d1541decbe
 keywords:
-- attributo MIDL di displaybind
+- Attributo displaybind MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f015954a7b1fe07d4ecf61e9a4ba4da4c932e65c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2f331ee62128501237671d01524c0f74df5ebc3b9da37dbf6ba3f71f9a5df460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103725434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384605"
 ---
 # <a name="displaybind-attribute"></a>displaybind (attributo)
 
-L'attributo **\[ displaybind \]** indica una proprietà che deve essere visualizzata all'utente come associabile.
+**\[ L'attributo \] displaybind** indica una proprietà che deve essere visualizzata all'utente come associabile.
 
 ``` syntax
 [
@@ -37,51 +37,51 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
 Specifica un elenco facoltativo di attributi di interfaccia.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Nome dell'interfaccia.
 
 </dd> <dt>
 
-*elenco attributi* 
+*attribute-list* 
 </dt> <dd>
 
 Specifica un elenco di uno o più attributi, separati da virgole, che si applicano al tipo restituito dalla funzione.
 
 </dd> <dt>
 
-*returnType* 
+*Returntype* 
 </dt> <dd>
 
 Specifica il tipo restituito della funzione.
 
 </dd> <dt>
 
-*Nome funzione* 
+*function-name* 
 </dt> <dd>
 
-Specifica il nome della funzione a cui verrà applicato l'attributo **\[ displaybind \]** .
+Specifica il nome della funzione a cui verrà applicato **\[ l'attributo displaybind. \]**
 
 </dd> <dt>
 
 *params* 
 </dt> <dd>
 
-Elenco dei parametri della funzione.
+Elenco di parametri della funzione.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Anche le proprietà con l'attributo **\[ displaybind \]** devono avere l' **\[** attributo [**associabile**](bindable.md) **\]** . Un oggetto può supportare data binding ma non avere questo attributo.
+Anche le proprietà con **\[ l'attributo displaybind \]** devono avere l'attributo **\[** [**associabile.**](bindable.md) **\]** Un oggetto può supportare data binding ma non dispone di questo attributo.
 
 ### <a name="flags"></a>Flags
 
@@ -115,15 +115,15 @@ interface MyObject : IUnknown
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintassi del file di FAD](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintassi del file ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[Esempio di file di FAD](/previous-versions/windows/desktop/automat/odl-file-example)
+[Esempio di file ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
 [Generazione di una libreria dei tipi con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

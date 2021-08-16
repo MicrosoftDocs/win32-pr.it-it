@@ -49,14 +49,14 @@ Puntatore a **un valore DWORD** che contiene il numero di chiavi nella raccolta.
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 
 | Codice restituito                                                                               | Descrizione                                          |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Il metodo è riuscito.<br/>                     |
-| <dl> <dt>**PUNTATORE \_ E**</dt> </dl> | Un argomento del puntatore obbligatorio era **NULL.**<br/> |
+| <dl> <dt>**PUNTATORE E \_**</dt> </dl> | Un argomento del puntatore obbligatorio era **NULL.**<br/> |
 
 
 
@@ -64,7 +64,7 @@ Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma no
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio di come usare questo metodo, vedere [Recupero di eventi del servizio supportati.](retrieving-supported-events.md)
+Per un esempio di come usare questo metodo, vedere [Recupero di eventi del servizio supportati](retrieving-supported-events.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -87,7 +87,7 @@ Per un esempio di come usare questo metodo, vedere [Recupero di eventi del servi
 [Recupero di eventi del servizio supportati](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recupero di metodi di servizio supportati](retrieving-supported-methods.md)
+[Recupero dei metodi di servizio supportati](retrieving-supported-methods.md)
 </dt> </dl>
 
  

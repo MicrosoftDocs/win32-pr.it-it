@@ -1,23 +1,23 @@
 ---
-title: dcl_uav_structured (SM5-ASM)
-description: Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader. | dcl_uav_structured (SM5-ASM)
+title: dcl_uav_structured (sm5 - asm)
+description: Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'uso da parte di uno shader. | dcl_uav_structured (sm5 - asm)
 ms.assetid: 40D6B8F7-8A41-4EFE-A8A3-44A646B4D43B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc02396f4837a095506e736d81ea8c00eb0669f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b398dc8b59db6d8fc3a64effdf3cd93b56664881c4c7024a185ad6a212b9fb4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104234714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726799"
 ---
-# <a name="dcl_uav_structured-sm5---asm"></a>\_ \_ struttura di DCL UAV (SM5-ASM)
+# <a name="dcl_uav_structured-sm5---asm"></a>dcl \_ uav \_ strutturato (sm5 - asm)
 
-Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da uno shader.
+Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'uso da parte di uno shader.
 
 
 
-| DCL \_ UAV \_ strutturato \[ \_ GLC \] dstUAV, structByteStride |
+| dcl \_ uav \_ structured \[ \_ glc \] dstUAV, structByteStride |
 |--------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da u
 
 | Elemento                                                                                                                                   | Descrizione                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                                         | \[nel \] UAV.<br/>                            |
-| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[nella \] dimensione della struttura in byte.<br/> |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                                         | \[\]nell'UAV.<br/>                            |
+| <span id="structByteStride"></span><span id="structbytestride"></span><span id="STRUCTBYTESTRIDE"></span>*structByteStride*<br/> | \[in \] Dimensioni della struttura in byte.<br/> |
 
 
 
@@ -37,24 +37,24 @@ Dichiarare una visualizzazione di accesso non ordinata (UAV) per l'utilizzo da u
 
 ## <a name="remarks"></a>Commenti
 
-*dstUAV* è un \# registro u dichiarato come riferimento a un UnorderedAccessView di un buffer strutturato con lo stride specificato che deve essere associato allo slot UAV nell' \# API.
+*dstUAV* è un registro u dichiarato come riferimento a UnorderedAccessView di un buffer strutturato con lo stride specificato che deve essere associato allo \# slot UAV \# nell'API.
 
-Il contenuto della struttura non è di tipo; le operazioni eseguite sulla memoria possono interpretare in modo implicito i dati come aventi un tipo.
+Il contenuto della struttura non ha alcun tipo. Le operazioni eseguite sulla memoria possono interpretare in modo implicito i dati come con un tipo.
 
-*structByteStride* è la dimensione della struttura in byte nel buffer dichiarato. Il valore deve essere maggiore di zero. *structByteStride* è di tipo uint e deve essere un multiplo di 4.
+*structByteStride è* la dimensione della struttura in byte nel buffer dichiarato. Il valore deve essere maggiore di zero. *structByteStride* è di tipo uint e deve essere un multiplo di 4.
 
-Le istruzioni che fanno riferimento a un'u strutturata \# accettano un indirizzo 2D, in cui il primo componente sceglie \[ struct \] e il secondo componente sceglie \[ offset all'interno dello struct, in byte allineati \] .
+Le istruzioni che fanno riferimento a un u strutturato accettano un indirizzo 2D, in cui il primo componente seleziona struct e il secondo componente seleziona l'offset all'interno \# \[ dello \] \[ struct, in byte \] allineati.
 
-Il \_ flag GLC significa "globalmente coerente". L'assenza di \_ GLC significa che il UAV viene dichiarato solo come "gruppo coerente" nel compute shader o "coerente localmente" in una singola chiamata di pixel shader.
+Il \_ flag glc indica "globalmente coerente". L'assenza di glc indica che l'UAV viene dichiarato solo come "coerente del gruppo" nel compute shader o "coerente localmente" in una singola pixel shader \_ chiamata.
 
-Il \_ flag OPC è il contatore per la conservazione degli ordini. Indica che se un UAV è associato a uno slot \# (u \# ), è necessario che sia stato creato con il flag del contatore. Ciò significa che le operazioni [IMM \_ Atomic \_ Alloc](imm-atomic-alloc--sm5---asm-.md) o [IMM \_ Atomic \_ consume](imm-atomic-consume--sm5---asm-.md) nello shader consentono di modificare un contatore i cui valori possono essere usati nello shader come riferimento permanente a una posizione nell'UAV. Non è possibile riordinare i dati dopo che lo shader è stato superato.
+Il \_ flag opc è il contatore di conservazione dell'ordine. Indica che se un UAV è associato a uno slot (u ), deve \# essere stato creato con il flag \# COUNTER. Ciò significa che [le operazioni imm \_ atomic \_ alloc](imm-atomic-alloc--sm5---asm-.md) o [imm atomic \_ \_ consume](imm-atomic-consume--sm5---asm-.md) nello shader modificano un contatore i cui valori possono essere usati nello shader come riferimento permanente a una posizione nell'UAV. Non è possibile riordinare i dati dopo la fine dello shader.
 
-L'assenza del \_ flag OPC significa che se lo shader usa le istruzioni[IMM \_ Atomic \_ Alloc](imm-atomic-alloc--sm5---asm-.md) o [IMM \_ Atomic \_ consume](imm-atomic-consume--sm5---asm-.md) e un UAV è associato a slot \# (u), è necessario che sia stato creato con il flag Append, che fornisce un contatore che non garantisce che l'ordine venga mantenuto dopo la chiamata dello shader.
+L'assenza del flag opc indica che se lo shader usa istruzioni \_ [imm \_ atomic \_ alloc](imm-atomic-alloc--sm5---asm-.md) o [imm \_ atomic \_ consume](imm-atomic-consume--sm5---asm-.md) e un UAV è associato allo slot (u), deve essere stato creato con il flag APPEND, che fornisce un contatore che non garantisce che l'ordine sia mantenuto dopo la \# chiamata dello shader.
 
-Se il \_ flag OPC è assente e lo shader non contiene le istruzioni [IMM \_ Atomic \_ Alloc](imm-atomic-alloc--sm5---asm-.md) o [IMM \_ Atomic \_ consume](imm-atomic-consume--sm5---asm-.md) , è consentito creare un UAV associato a slot \# (u) con il flag del contatore (il contatore non verrà usato da questo shader), nessun flag (nessun contatore), ma non con il flag di Accodamento.
+Se il flag opc è assente e lo shader non contiene istruzioni \_ [imm \_ atomic \_ alloc](imm-atomic-alloc--sm5---asm-.md) o [imm \_ atomic \_ consume,](imm-atomic-consume--sm5---asm-.md) un UAV associato allo slot (u) è autorizzato a essere stato creato con il flag COUNTER (il contatore non verrà usato da questo shader), nessun flag (nessun contatore), ma non con il \# flag APPEND.
 
 > [!Note]  
-> cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supportano **DCL \_ TGSM \_ strutturate**, ma [non \_ TGSM DCL \_ RAW](dcl-tgsm-raw--sm5---asm-.md).
+> cs \_ 4 \_ 0 e cs \_ 4 \_ 1 supporta **dcl \_ tgsm \_ strutturato,** ma non [dcl \_ tgsm \_ raw.](dcl-tgsm-raw--sm5---asm-.md)
 
  
 
@@ -62,7 +62,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -70,11 +70,11 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11,1, disponibile a partire da Windows 8.
+Poiché gli UAV sono disponibili in tutte le fasi dello shader per Direct3D 11.1, questa istruzione si applica a tutte le fasi dello shader per il runtime Direct3D 11.1, disponibile a partire da Windows 8.
 
 
 
-| Vertice | Hull | Dominio | Geometria | Pixel | Calcolo |
+| Vertice | Scafo | Dominio | Geometria | Pixel | Calcolo |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -82,7 +82,7 @@ Poiché UAV sono disponibili in tutte le fasi dello shader per Direct3D 11,1, qu
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
 Questa istruzione è supportata nei modelli shader seguenti:
 
@@ -90,12 +90,12 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | no        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -110,7 +110,7 @@ Questa istruzione è supportata nei modelli shader seguenti:
 
 <dl> <dt>
 
-[Assembly Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly del modello shader 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Inviato per annullare determinate modalità, ad esempio l'acquisizione del mouse.
+description: Inviato per annullare determinate modalità, ad esempio mouse capture.
 ms.assetid: c801233a-c4d8-4fd9-aaf0-3d4503bbce26
-title: Messaggio WM_CANCELMODE (winuser. h)
+title: WM_CANCELMODE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c23b842dfdfde7dc550d8ec6d942bcc83ea25f3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae26cef4919ed93bb2a1c60376ab450560cd2142cef7b3040032f791c45ab09f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849300"
 ---
-# <a name="wm_cancelmode-message"></a>\_Messaggio CANCELMODE WM
+# <a name="wm_cancelmode-message"></a>Messaggio WM \_ CANCELMODE
 
-Inviato per annullare determinate modalità, ad esempio l'acquisizione del mouse. Ad esempio, il sistema invia questo messaggio alla finestra attiva quando viene visualizzata una finestra di dialogo o una finestra di messaggio. Alcune funzioni inviano inoltre questo messaggio in modo esplicito alla finestra specificata, indipendentemente dal fatto che sia la finestra attiva. Ad esempio, la funzione [**EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) Invia questo messaggio quando si disabilita la finestra specificata.
+Inviato per annullare determinate modalità, ad esempio mouse capture. Ad esempio, il sistema invia questo messaggio alla finestra attiva quando viene visualizzata una finestra di dialogo o una finestra di messaggio. Alcune funzioni inviano anche questo messaggio in modo esplicito alla finestra specificata, indipendentemente dal fatto che si tratta della finestra attiva. Ad esempio, la [**funzione EnableWindow**](/windows/win32/api/winuser/nf-winuser-enablewindow) invia questo messaggio quando disabilita la finestra specificata.
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -46,11 +46,11 @@ Questo parametro non viene usato.
 
 Tipo: **LRESULT**
 
-Se un'applicazione elabora il messaggio, deve restituire zero.
+Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando viene inviato il messaggio **WM \_ CANCELMODE** , la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Annulla l'elaborazione interna dell'input della barra di scorrimento standard, Annulla l'elaborazione interna dei menu e rilascia l'acquisizione del mouse.
+Quando viene inviato il messaggio **WM \_ CANCELMODE,** la funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) annulla l'elaborazione interna dell'input della barra di scorrimento standard, annulla l'elaborazione del menu interno e rilascia il mouse capture.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,7 +60,7 @@ Quando viene inviato il messaggio **WM \_ CANCELMODE** , la funzione [**DefWindo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

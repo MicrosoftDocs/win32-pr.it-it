@@ -1,10 +1,10 @@
 ---
 title: ORPC_DBG_ALL struttura
-description: La struttura ORPC DBG ALL viene usata per passare parametri ai metodi \_ \_ dell'interfaccia IOrpcDebugNotify.
+description: La struttura ORPC DBG ALL viene usata per passare parametri \_ \_ ai metodi dell'interfaccia IOrpcDebugNotify.
 ms.assetid: 05371beb-9202-40a6-96d2-4b91497e2ee9
 keywords:
 - ORPC_DBG_ALL struttura COM
-- LPORPC_DBG_ALL struttura com
+- LPORPC_DBG_ALL puntatore alla struttura COM
 topic_type:
 - apiref
 api_name:
@@ -27,7 +27,7 @@ ms.locfileid: "118310305"
 La **struttura ORPC \_ DBG \_ ALL** viene usata per passare parametri ai metodi dell'interfaccia [**IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
 > [!Note]  
-> Ogni metodo [**dell'interfaccia IOrpcDebugNotify**](iorpcdebugnotify.md) usa una combinazione diversa dei membri seguenti. Se un membro non è indicato come utilizzato da un metodo, non è definito quando viene passato a tale metodo.
+> Ogni metodo [**dell'interfaccia IOrpcDebugNotify**](iorpcdebugnotify.md) usa una combinazione diversa dei membri seguenti. Se un membro non viene indicato come usato da un metodo, non è definito quando viene passato a tale metodo.
 
  
 
@@ -64,13 +64,13 @@ Puntatore a un buffer **BYTE** che contiene:
 
 -   Primi quattro byte: i caratteri ASCII "MARB" in ordine di memoria crescente.
 -   16 byte successivi: **GUID che** identifica la notifica chiamata. Contiene uno degli elementi seguenti:
-    1.  [**ClientGetBufferSize:**](iorpcdebugnotify-clientgetbuffersize.md)9ED14F80-9673-101A-B07B-00DD01113F11
+    1.  [**ClientGetBufferSize**](iorpcdebugnotify-clientgetbuffersize.md): 9ED14F80-9673-101A-B07B-00DD01113F11
     2.  [**ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md):D A45F3E0-9673-101A-B07B-00DD01113F11
     3.  [**ClientNotify**](iorpcdebugnotify-clientnotify.md):4F60E540-9674-101A-B07B-00DD01113F11
     4.  [**ServerNotify**](iorpcdebugnotify-servernotify.md):1084FA00-9674-101A-B07B-00DD01113F11
     5.  [**ServerGetBufferSize**](iorpcdebugnotify-servergetbuffersize.md):22080240-9674-101A-B07B-00DD01113F11
     6.  [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md):2FC09500-9674-101A-B07B-00DD01113F11
--   Successivi quattro byte: riservati per un uso futuro.
+-   Quattro byte successivi: riservati per un uso futuro.
 
 > [!Note]
 >
@@ -122,11 +122,11 @@ Puntatore [**all'interfaccia IRpcChannelBuffer**](/windows/win32/api/objidlbase/
 **pUnkProxyMgr**
 </dt> <dd>
 
-Puntatore [**all'interfaccia IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) dell'oggetto coinvolto in questa chiamata del debugger. Può essere **NULL,** tuttavia ciò riduce le funzionalità del debugger.
+Puntatore [**all'interfaccia IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) dell'oggetto interessato da questa chiamata del debugger. Può essere **NULL,** tuttavia, riduce le funzionalità del debugger.
 
 > [!Note]
 >
-> Usato dai [**metodi ClientFillBuffer,**](iorpcdebugnotify-clientfillbuffer.md) [**ClientGetBufferSize**](iorpcdebugnotify-clientgetbuffersize.md)e [**ClientNotify.**](iorpcdebugnotify-clientnotify.md)
+> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientGetBufferSize**](iorpcdebugnotify-clientgetbuffersize.md)e [**ClientNotify.**](iorpcdebugnotify-clientnotify.md)
 
  
 
@@ -135,7 +135,7 @@ Puntatore [**all'interfaccia IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-i
 **pInterface**
 </dt> <dd>
 
-Puntatore all'interfaccia COM del metodo che verrà richiamato da questa RPC. Non deve essere **NULL.**
+Puntatore all'interfaccia COM del metodo che verrà richiamato da questo RPC. Non deve essere **NULL.**
 
 > [!Note]
 >
@@ -163,11 +163,11 @@ Deve essere **NULL.**
 
 Lo scopo di questo membro cambia per ognuna delle notifiche seguenti:
 
-[**ClientGetBufferSize:**](iorpcdebugnotify-clientgetbuffersize.md)numero di byte che il debugger client trasmetterà al debugger del server. Se zero, non è necessario trasmettere alcuna informazione.
+[**ClientGetBufferSize:**](iorpcdebugnotify-clientgetbuffersize.md)numero di byte che il debugger client trasmetterà al debugger server. Se zero, non è necessario trasmettere alcuna informazione.
 
-[**ClientNotify:**](iorpcdebugnotify-clientnotify.md) **HRESULT dell'ultima** chiamata RPC.
+[**ClientNotify:**](iorpcdebugnotify-clientnotify.md) **HRESULT dell'ultima** RPC.
 
-[**ServerGetBufferSize:**](iorpcdebugnotify-servergetbuffersize.md)numero di byte che il debugger client trasmetterà al debugger del server. Se zero, non è necessario trasmettere alcuna informazione.
+[**ServerGetBufferSize:**](iorpcdebugnotify-servergetbuffersize.md)numero di byte che il debugger client trasmetterà al debugger server. Se zero, non è necessario trasmettere alcuna informazione.
 
 > [!Note]
 >
@@ -184,7 +184,7 @@ Puntatore a una [**struttura BUFFER \_ DBG \_ ORPC**](orpc-dbg-buffer.md) che co
 
 > [!Note]
 >
-> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientNotify**](iorpcdebugnotify-clientnotify.md), [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md) [**e ServerNotify.**](iorpcdebugnotify-servernotify.md)
+> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientNotify**](iorpcdebugnotify-clientnotify.md), [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md)e [**ServerNotify.**](iorpcdebugnotify-servernotify.md)
 
  
 
@@ -193,11 +193,11 @@ Puntatore a una [**struttura BUFFER \_ DBG \_ ORPC**](orpc-dbg-buffer.md) che co
 **cbBuffer**
 </dt> <dd>
 
-Lunghezza, in byte, dei dati a cui punta **pvBuffer.**
+Lunghezza, in byte, dei dati a cui punta **pvBuffer**.
 
 > [!Note]
 >
-> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientNotify**](iorpcdebugnotify-clientnotify.md), [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md) [**e ServerNotify.**](iorpcdebugnotify-servernotify.md)
+> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientNotify**](iorpcdebugnotify-clientnotify.md), [**ServerFillBuffer**](iorpcdebugnotify-serverfillbuffer.md)e [**ServerNotify.**](iorpcdebugnotify-servernotify.md)
 
  
 
@@ -206,11 +206,11 @@ Lunghezza, in byte, dei dati a cui punta **pvBuffer.**
 **lpcbBuffer**
 </dt> <dd>
 
-Numero di byte che il debugger client trasmetterà al debugger del server. Se zero, non è necessario trasmettere alcuna informazione. Questo valore sostituisce il valore restituito in **hresult**.
+Numero di byte che il debugger client trasmetterà al debugger server. Se zero, non è necessario trasmettere alcuna informazione. Questo valore sostituisce il valore restituito in **hresult**.
 
 > [!Note]
 >
-> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md)e [**ClientGetBufferSize.**](iorpcdebugnotify-clientgetbuffersize.md)
+> Usato dai [**metodi ClientFillBuffer**](iorpcdebugnotify-clientfillbuffer.md), [**ClientGetBufferSize.**](iorpcdebugnotify-clientgetbuffersize.md)
 
  
 
@@ -242,7 +242,7 @@ Riservato. Non usare.
 [**ORPC \_ DBG \_ BUFFER**](orpc-dbg-buffer.md)
 </dt> <dt>
 
-[**ARGOMENTI \_ ORPC INIT \_**](orpc-init-args.md)
+[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

@@ -1,15 +1,15 @@
 ---
-description: La proprietà CurrentSubpictureStream imposta o Recupera il flusso di sottoimmagine corrente.
+description: La proprietà CurrentSubpictureStream imposta o recupera il flusso di immagini secondarie corrente.
 ms.assetid: 66473c87-ddfe-4555-89ad-90e210a75694
 title: Proprietà CurrentSubpictureStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c954ad7cfb7aba6dd9bc800ac983d86b6325843
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 56e9c4af677180d4893ef56a9d2bff1fb034971969e2e64d648d53e19d0814a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104522569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821946"
 ---
 # <a name="currentsubpicturestream-property"></a>Proprietà CurrentSubpictureStream
 
@@ -18,7 +18,7 @@ ms.locfileid: "104522569"
 
  
 
-La `CurrentSubpictureStream` proprietà imposta o Recupera il flusso di sottoimmagine corrente.
+La `CurrentSubpictureStream` proprietà imposta o recupera il flusso dell'immagine secondaria corrente.
 
 ``` syntax
 [ iSPStream = ] MSWebDVD.CurrentSubpictureStream
@@ -36,22 +36,22 @@ I valori possibili di questa proprietà sono:
 
 | Valore   | Descrizione              |
 |---------|--------------------------|
-| da 0 a 31 | Flusso di sottoimmagine    |
-| 63      | Flusso a bitrate ridotto disattivato |
+| Da 0 a 31 | Flusso di immagini secondarie    |
+| 63      | Flusso a bassa velocità in bit disattivato |
 
 
 
  
 
-Questa proprietà è di lettura/scrittura e non prevede alcun valore predefinito. Prima di impostare un nuovo flusso di sottoimmagine, chiamare [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) per verificare che il flusso sia disponibile.
+Questa proprietà è di lettura/scrittura senza alcun valore predefinito. Prima di impostare un nuovo flusso di immagini secondarie, chiamare [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) per verificare che il flusso sia disponibile.
 
-L'impostazione di questa proprietà fa sì che la proprietà [**SubpictureOn**](subpictureon-property.md) sia impostata su **true**.
+Se si imposta questa proprietà, [**la proprietà SubpictureOn**](subpictureon-property.md) viene impostata su **True.**
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**SubpictureOn**](subpictureon-property.md)
+[**SottopictureOn**](subpictureon-property.md)
 </dt> <dt>
 
 [**SubpictureStreamsAvailable**](subpicturestreamsavailable-property.md)

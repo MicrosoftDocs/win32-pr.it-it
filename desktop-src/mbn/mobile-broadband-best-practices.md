@@ -1,27 +1,27 @@
 ---
-description: Quando si lavora con l'API Mobile Broadband, è necessario usare il set di procedure consigliate seguente per ottenere le migliori prestazioni possibili.
+description: Quando si usa l'API Mobile Broadband, è consigliabile usare il set di procedure consigliate seguente per ottenere le migliori prestazioni possibili.
 ms.assetid: 523e3ea4-1d4e-45d1-bc24-93aa2fb14390
-title: Procedure consigliate per l'API broadband mobile
+title: Procedure consigliate per l'API Mobile Broadband
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 399c2ebc40a357eac9686bc3c2c9f471e3b853f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3a6c1e236a61dd2a5321be2edb7a68156f904605bd8a1da5fc169ea8b70e464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104226195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117881655"
 ---
-# <a name="mobile-broadband-api-best-practices"></a>Procedure consigliate per l'API broadband mobile
+# <a name="mobile-broadband-api-best-practices"></a>Procedure consigliate per l'API Mobile Broadband
 
-Quando si lavora con l'API Mobile Broadband, è necessario usare il set di procedure consigliate seguente per ottenere le migliori prestazioni possibili.
+Quando si usa l'API Mobile Broadband, è consigliabile usare il set di procedure consigliate seguente per ottenere le migliori prestazioni possibili.
 
-## <a name="do-not-cache-functional-objects"></a>Non memorizzare nella cache oggetti funzionali
+## <a name="do-not-cache-functional-objects"></a>Non memorizzare nella cache gli oggetti funzionali
 
-Gli oggetti funzionali, ad esempio [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) e altri, vengono ottenuti da oggetti Manager, come [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager), usando il metodo di enumerazione nell'oggetto gestione corrispondente. Non memorizzare nella cache questi oggetti funzionali, perché gli oggetti funzionali memorizzati nella cache contengono dati non aggiornati. Le operazioni sincrone eseguite su questi oggetti funzionali restituiranno gli stessi dati finché gli oggetti funzionali non verranno nuovamente ottenuti.
+Gli oggetti funzionali, ad [**esempio IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) e altri, vengono ottenuti da oggetti di gestione, ad esempio [**IMbnInterfaceManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)usando il metodo di enumerazione sull'oggetto manager corrispondente. Non memorizzare nella cache questi oggetti funzionali, poiché gli oggetti funzionali memorizzati nella cache contengono dati non obsoleti. Le operazioni sincrone eseguite su questi oggetti funzionali restituiranno gli stessi dati fino a quando gli oggetti funzionali non vengono ottenuti nuovamente.
 
-Al contrario, memorizzare nella cache gli oggetti Manager e ottenere gli oggetti funzionali dall'oggetto gestione usando il metodo di enumerazione sull'oggetto gestione corrispondente per ottenere i dati più recenti.
+Memorizzare invece nella cache gli oggetti di gestione e ottenere gli oggetti funzionali dall'oggetto manager usando di nuovo il metodo di enumerazione sull'oggetto manager corrispondente per ottenere i dati più recenti.
 
-Nell'esempio di codice riportato di seguito viene illustrato il modo corretto per memorizzare nella cache gli oggetti di gestione.
+Nell'esempio di codice seguente viene illustrato il modo corretto per memorizzare nella cache gli oggetti di gestione.
 
 
 ```C++
@@ -120,29 +120,29 @@ int main()
 
 
 
-## <a name="handle-all-notifications"></a>Gestisci tutte le notifiche
+## <a name="handle-all-notifications"></a>Gestire tutte le notifiche
 
-Seguire e gestire tutte le notifiche, anche se non vengono attivate dall'applicazione. Questa operazione è necessaria per sincronizzare l'interfaccia utente con lo stato effettivo del dispositivo.
+Seguire e gestire tutte le notifiche, anche se non vengono attivate dall'applicazione. Questa operazione è necessaria per mantenere l'interfaccia utente sincronizzata con lo stato effettivo del dispositivo.
 
-In un computer può essere in esecuzione più di una gestione connessione. L'interfaccia utente dell'interfaccia di rete disponibile per la visualizzazione nativa fornita da Windows 7 è una gestione connessione. Tutte le altre gestioni connessioni devono rispondere a tutte le notifiche per rimanere sincronizzate con l'interfaccia utente nativa di Windows. Un utente può scegliere di eseguire un'operazione su una delle gestioni connessioni che può comportare una modifica dello stato del dispositivo mobile broadband. Tuttavia, altre gestioni connessioni devono rimanere aggiornate per indicare correttamente lo stato modificato del dispositivo.
+In un computer possono essere in esecuzione più di una gestione connessione. L'interfaccia utente nativa Visualizza interfaccia di rete disponibile fornita Windows 7 è una gestione connessione. Tutte le altre gestioni connessioni devono rispondere a tutte le notifiche per rimanere sincronizzate con Windows'interfaccia utente nativa. Un utente può scegliere di eseguire un'operazione in una delle gestioni connessioni che può comportare una modifica dello stato del dispositivo Mobile Broadband. Tuttavia, altre gestioni connessioni devono rimanere aggiornate per indicare correttamente lo stato modificato del dispositivo.
 
-Se ad esempio si esegue una connessione utilizzando una delle gestioni connessioni, lo stato del dispositivo viene modificato da disponibile a connesso. Questa modifica dovrebbe essere visibile alle gestioni connessioni che non hanno avviato l'azione. Tutte le gestioni connessioni con interfaccia utente che indica lo stato di connessione del dispositivo, devono rimanere in ascolto e gestire le notifiche dello stato della connessione per aggiornare correttamente l'interfaccia utente.
+Ad esempio, l'esecuzione di una connessione tramite una delle gestioni connessioni modificherà lo stato del dispositivo da disponibile a connesso. Questa modifica dovrebbe essere visibile alle gestioni connessioni che non hanno avviato questa azione. Tutte le gestioni connessioni con interfaccia utente che indica lo stato di connessione del dispositivo devono restare in ascolto e gestire le notifiche dello stato di connessione per aggiornare correttamente l'interfaccia utente.
 
 ## <a name="sending-and-receiving-bytes"></a>Invio e ricezione di byte
 
 Usare le funzioni helper IP [GetlfEntry](/windows/win32/api/iphlpapi/nf-iphlpapi-getifentry) e [GetlfEntry2](/windows/win32/api/netioapi/nf-netioapi-getifentry2) per inviare e ricevere byte.
 
-## <a name="using-the-pin-unblock-api"></a>Uso dell'API di sblocco PIN
+## <a name="using-the-pin-unblock-api"></a>Uso dell'API di sblocco pin
 
-Per poter richiamare [**IMbnPin:: Unblock**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock), un'applicazione client chiamante deve essere elevata. Questo metodo è l'unica parte dell'API broadband mobile che richiede privilegi di amministratore o NCO. Per ulteriori informazioni, vedere [la descrizione del gruppo Network Configuration Operators]( https://support.microsoft.com/kb/297938/en-us) .
+Un'applicazione client chiamante deve essere elevata per poter richiamare [**correttamente IMbnPin::Unblock.**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock) Questo metodo è l'unica parte dell'API Mobile Broadband che richiede privilegi di amministratore o NCO. Per [altre informazioni, vedere A Description of the Network Configuration Operators Group]( https://support.microsoft.com/kb/297938/en-us) ( Descrizione del gruppo Network Configuration Operators).
 
-## <a name="working-with-safearrays"></a>Utilizzo di SafeArrays
+## <a name="working-with-safearrays"></a>Uso di SafeArray
 
--   Utilizzare ZeroMemory () prima di accedere a qualsiasi elemento in un SafeArray.
+-   Usare ZeroMemory() prima di accedere a qualsiasi elemento in safearray.
 
--   Non controllare gli indici di un SafeArray. Potrebbero essere negativi.
+-   Non controllare gli indici di un safearray. Possono essere negativi.
 
-Nell'esempio di codice seguente viene illustrato come gestire correttamente un SafeArray.
+Nell'esempio di codice seguente viene illustrato come gestire correttamente safeArray.
 
 
 ```C++

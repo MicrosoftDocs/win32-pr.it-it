@@ -1,35 +1,35 @@
 ---
-description: Specifica l'ora di arresto per una topologia, relativa all'inizio della prima topologia nella sequenza.
+description: Specifica il tempo di arresto per una topologia, relativo all'inizio della prima topologia nella sequenza.
 ms.assetid: 7669f97e-87ad-4a64-a2a5-62b8ce450d80
-title: Attributo MF_TOPOLOGY_PROJECTSTART (Mfidl. h)
+title: MF_TOPOLOGY_PROJECTSTART attributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34a7e3d50bd89e0fdfc032f9854c1a183276f04a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f295f68b3ac94bf29fa4607eb2b5ba00ea8eab19774bcaa0af150ef6d3fbe1f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103880225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875408"
 ---
-# <a name="mf_topology_projectstart-attribute"></a>\_Attributo PROJECTSTART della topologia MF \_
+# <a name="mf_topology_projectstart-attribute"></a>Attributo \_ PROJECTSTART della topologia MF \_
 
-Specifica l'ora di arresto per una topologia, relativa all'inizio della prima topologia nella sequenza.
+Specifica il tempo di arresto per una topologia, relativo all'inizio della prima topologia nella sequenza.
 
 ## <a name="data-type"></a>Tipo di dati
 
 **UINT64**
 
-Considera come valore **LONGLONG** .
+Considera come **valore LONGLONG.**
 
 ## <a name="remarks"></a>Commenti
 
-Il valore è espresso in unità di 100 nanosecondi.
+Il valore è specificato in unità di 100 nanosecondi.
 
-Se la sessione multimediale è stata creata con l'attributo dell' [**\_ \_ \_ ora globale della sessione MF**](mf-session-global-time-attribute.md) uguale a **true**, tutte le topologie devono contenere l'attributo **\_ \_ PROJECTSTART della topologia MF** . In caso contrario, le topologie non devono contenere l'attributo **\_ \_ PROJECTSTART della topologia MF** . Per altre informazioni, vedere [tempi di presentazione della sequenza](sequence-presentation-times.md).
+Se la sessione multimediale è stata creata con [**l'attributo MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) uguale a **TRUE,** tutte le topologie devono contenere l'attributo **\_ \_ PROJECTSTART della topologia MF.** In caso contrario, le topologie non devono contenere **l'attributo \_ \_ PROJECTSTART della topologia MF.** Per altre informazioni, vedere [Sequenza dei tempi di presentazione.](sequence-presentation-times.md)
 
-Questo attributo è un valore con segno, sebbene venga archiviato come **UInt64**.
+Questo attributo è un valore con segno, anche se viene archiviato come **UINT64.**
 
-La costante GUID per questo attributo viene esportata da mfuuid. lib.
+La costante GUID per questo attributo viene esportata da mfuuid.lib.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -37,9 +37,9 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                     |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                               |
-| Intestazione<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                     |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                               |
+| Intestazione<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,22 +47,22 @@ La costante GUID per questo attributo viene esportata da mfuuid. lib.
 
 <dl> <dt>
 
-[Elenco alfabetico degli attributi di Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Elenco alfabetico di Media Foundation attributi](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Tempi di presentazione sequenza](sequence-presentation-times.md)
+[Sequenza dei tempi di presentazione](sequence-presentation-times.md)
 </dt> <dt>
 
 [Attributi della topologia](topology-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUInt64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes:: UINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> <dt>
 
-[**\_PROJECTSTOP topologia MF \_**](mf-topology-projectstop-attribute.md)
+[**MF \_ TOPOLOGY \_ PROJECTSTOP**](mf-topology-projectstop-attribute.md)
 </dt> </dl>
 
  

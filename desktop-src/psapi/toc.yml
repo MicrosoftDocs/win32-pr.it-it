@@ -1,4 +1,4 @@
-- name: API stato processo (PSAPI)
+- name: API di stato del processo (PSAPI)
   href: process-status-helper.md
   items:
     - name: Informazioni su PSAPI
@@ -10,11 +10,11 @@
           href: module-information.md
         - name: Informazioni sul driver di dispositivo
           href: device-driver-information.md
-        - name: Informazioni sull'utilizzo della memoria del processo
+        - name: Elaborare le informazioni sull'utilizzo della memoria
           href: process-memory-usage-information.md
         - name: Informazioni sul working set
           href: working-set-information.md
-        - name: Informazioni sul file Memory-Mapped
+        - name: Memory-Mapped file di dati
           href: memory-mapped-file-information.md
     - name: Uso di PSAPI
       href: using-psapi.md
@@ -27,7 +27,7 @@
           href: enumerating-all-device-drivers-in-the-system.md
         - name: Raccolta di informazioni sull'utilizzo della memoria per un processo
           href: collecting-memory-usage-information-for-a-process.md
-    - name: Riferimento a PSAPI
+    - name: Informazioni di riferimento su PSAPI
       href: psapi-reference.md
       items:
         - name: Funzioni PSAPI

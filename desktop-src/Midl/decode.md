@@ -1,9 +1,9 @@
 ---
-title: Decode (attributo)
-description: L'attributo \ Decode \ ACF specifica che una routine o un tipo necessita del supporto di deserializzazione.
+title: Attributo decode
+description: L'attributo \ decode\ ACF specifica che una procedura o un tipo deve supportare la deserializzazione.
 ms.assetid: 78cd855f-6731-4ef8-9097-e8da5a9b3bdc
 keywords:
-- Decode attribute MIDL
+- Attributo decode MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dca24b3a601b9fcafd8d78a0194b6b986813f38c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 30c70c821906bcfa4dedb8dbe87aab882866a4f21b7d561b16d3613f9041e0f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104337167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384727"
 ---
-# <a name="decode-attribute"></a>Decode (attributo)
+# <a name="decode-attribute"></a>Attributo decode
 
-L'attributo **\[ Decode \]** ACF specifica che una routine o un tipo necessita del supporto di deserializzazione.
+**\[ L'attributo \]** ACF di decodifica specifica che una routine o un tipo deve supportare la deserializzazione.
 
 ``` syntax
 [ 
@@ -42,49 +42,49 @@ typedef [decode [ , type-attribute-list] ] type-name;
 
 <dl> <dt>
 
-*Interface-Attribute-List* 
+*interface-attribute-list* 
 </dt> <dd>
 
 Specifica altri attributi che si applicano all'interfaccia nel suo complesso.
 
 </dd> <dt>
 
-*Nome interfaccia* 
+*interface-name* 
 </dt> <dd>
 
 Specifica il nome dell'interfaccia.
 
 </dd> <dt>
 
-*interfaccia-definizione* 
+*interface-definition* 
 </dt> <dd>
 
 Specifica le istruzioni IDL che formano la definizione dell'interfaccia.
 
 </dd> <dt>
 
-*op-Attribute-List* 
+*op-attribute-list* 
 </dt> <dd>
 
-Specifica altri attributi operativi che si applicano alla procedura, ad esempio **\[** [**Encode**](encode.md) **\]** .
+Specifica altri attributi operativi che si applicano alla procedura, ad esempio **\[** [**encode**](encode.md) **\]** .
 
 </dd> <dt>
 
 *proc-name* 
 </dt> <dd>
 
-Specifica il nome della stored procedure.
+Specifica il nome della procedura.
 
 </dd> <dt>
 
-*tipo-Attribute-List* 
+*type-attribute-list* 
 </dt> <dd>
 
-Specifica altri attributi, ad esempio **\[** [**Encode**](encode.md) **\]** e **\[** [**allocate**](allocate.md) **\]** .
+Specifica altri attributi, ad esempio **\[** [**codificare e**](encode.md) **\]** **\[** [**allocare**](allocate.md) **\]** .
 
 </dd> <dt>
 
-*Nome-tipo* 
+*type-name* 
 </dt> <dd>
 
 Specifica un tipo definito nel file IDL.
@@ -93,11 +93,11 @@ Specifica un tipo definito nel file IDL.
 
 ## <a name="remarks"></a>Commenti
 
-L'attributo **\[ Decode \]** induce il compilatore MIDL a generare codice che può essere utilizzato da un'applicazione per recuperare dati serializzati da un buffer. L' **\[** [](encode.md) **\]** attributo Encode fornisce supporto per la serializzazione, che genera il codice per serializzare i dati in un buffer.
+**\[ L'attributo \] decode** fa sì che il compilatore MIDL generi codice che un'applicazione può usare per recuperare i dati serializzati da un buffer. **\[** [**L'attributo encode**](encode.md) **\]** fornisce supporto per la serializzazione, generando il codice per serializzare i dati in un buffer.
 
-Utilizzare gli **\[** attributi [**Encode**](encode.md) **\]** e **\[ Decode \]** in un oggetto ACF per generare il codice di serializzazione per le procedure o i tipi definiti nel file IDL di un'interfaccia. Quando viene usato come attributo di interfaccia, **\[ Decode \]** si applica a tutti i tipi e le procedure definiti nel file IDL. Quando viene usato come attributo di tipo, **\[ Decode \]** si applica solo al tipo specificato. Quando viene usato come attributo operativo, **\[ Decode \]** si applica solo a tale procedura.
+Usare gli **\[** [**attributi di**](encode.md) **\]** **\[ \]** codifica e decodifica in un file ACF per generare codice di serializzazione per routine o tipi definiti nel file IDL di un'interfaccia. Se usata come attributo di interfaccia, **\[ la decodifica \]** si applica a tutti i tipi e le routine definiti nel file IDL. Se usata come attributo di tipo, **\[ la decodifica \]** si applica solo al tipo specificato. Se usato come attributo operativo, **\[ la decodifica \]** si applica solo a tale procedura.
 
-Per ulteriori informazioni sull'utilizzo di questo supporto della serializzazione, vedere [serializzazione di servizi](/windows/desktop/Rpc/serialization-services) e **\[** [**codifica**](encode.md) **\]** .
+Per altre informazioni sull'uso di questo supporto di serializzazione, vedere [Servizi di serializzazione](/windows/desktop/Rpc/serialization-services) **\[** [**e codifica**](encode.md) **\]** .
 
 ## <a name="see-also"></a>Vedi anche
 
@@ -106,12 +106,12 @@ Per ulteriori informazioni sull'utilizzo di questo supporto della serializzazion
 [File di configurazione dell'applicazione (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**allocare**](allocate.md)
+[**Allocare**](allocate.md)
 </dt> <dt>
 
-[**codificare**](encode.md)
+[**Codificare**](encode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

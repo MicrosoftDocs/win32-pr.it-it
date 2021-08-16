@@ -90,12 +90,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 017647104d7cb7a71b400390a307a633666bc100
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: b6c3e52f03ac283af0dd89a67caeb46d884f47c7587917966cc3a89869fc5e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726661"
 ---
 # <a name="keywords"></a>Parole chiave
 
@@ -114,17 +114,17 @@ Microsoft High Level Shader Language (HLSL) riconosce le parole in questa sezion
 - [matrix](dx-graphics-hlsl-matrix.md), [min16float](dx-graphics-hlsl-scalar.md), [min10float](dx-graphics-hlsl-scalar.md), [min16int](dx-graphics-hlsl-scalar.md), [min12int](dx-graphics-hlsl-scalar.md), [min16uint](dx-graphics-hlsl-scalar.md)
 - namespace, [nointerpolation](dx-graphics-hlsl-struct.md), [noperspective](dx-graphics-hlsl-struct.md), NULL
 - [out](dx-graphics-hlsl-function-parameters.md), [ **OutputPatch**](sm5-object-outputpatch.md)
-- [**packoffset,**](dx-graphics-hlsl-variable-packoffset.md)pass, [pixelfragment,](fragment-declaration-syntax.md) [PixelShader,](dx-graphics-hlsl-shader.md) [point,](dx-graphics-hlsl-geometry-shader.md) [PointStream,](dx-graphics-hlsl-so-type.md) [precise](dx-graphics-hlsl-variable-syntax.md)
-- RasterizerState, RenderTargetView, [return,](dx-graphics-hlsl-return.md) [register,](dx-graphics-hlsl-variable-register.md) [row \_ major,](dx-graphics-hlsl-variable-syntax.md) [**RWBuffer,**](sm5-object-rwbuffer.md) [**RWByteAddressBuffer,**](sm5-object-rwbyteaddressbuffer.md) [**RWStructuredBuffer,**](sm5-object-rwstructuredbuffer.md) [**RWTexture1D,**](sm5-object-rwtexture1d.md) [**RWTexture1DArray,**](sm5-object-rwtexture1darray.md) [**RWTexture2D,**](sm5-object-rwtexture2d.md) [**RWTexture2DArray,**](sm5-object-rwtexture2darray.md) [**RWTexture3D**](sm5-object-rwtexture3d.md)
+- [**packoffset**](dx-graphics-hlsl-variable-packoffset.md), pass, [pixelfragment](fragment-declaration-syntax.md), [PixelShader](dx-graphics-hlsl-shader.md), [point](dx-graphics-hlsl-geometry-shader.md), [PointStream](dx-graphics-hlsl-so-type.md), [precise](dx-graphics-hlsl-variable-syntax.md)
+- RasterizerState, RenderTargetView, [](dx-graphics-hlsl-variable-register.md)restituire , registrare , row [ \_ major](dx-graphics-hlsl-variable-syntax.md), [**RWBuffer**](sm5-object-rwbuffer.md), [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md), [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md), [**RWTexture1D**](sm5-object-rwtexture1d.md), [**RWTexture1DArray**](sm5-object-rwtexture1darray.md), [**RWTexture2D**](sm5-object-rwtexture2d.md), [](dx-graphics-hlsl-return.md) [**RWTexture2DArray**](sm5-object-rwtexture2darray.md), [**RWTexture3D**](sm5-object-rwtexture3d.md)
 - [sample](dx-graphics-hlsl-struct.md), [sampler, SamplerState, SamplerComparisonState](dx-graphics-hlsl-sampler.md), [shared](dx-graphics-hlsl-variable-syntax.md), [snorm](dx-graphics-hlsl-scalar.md), stateblock, stateblock \_ state, static, [string](dx-graphics-hlsl-scalar.md), [struct](dx-graphics-hlsl-struct.md), [switch](dx-graphics-hlsl-switch.md), [**StructuredBuffer**](sm5-object-structuredbuffer.md)
-- [tbuffer,](dx-graphics-hlsl-constants.md)tecnica, [tecnica10,](/windows/desktop/direct3d10/d3d10-effect-technique-syntax) [tecnica11,](/windows/desktop/direct3d10/d3d10-effect-technique-syntax)trama, [Texture1D, Texture1DArray,](sm5-object-texture1d.md) [](dx-graphics-hlsl-texture.md) [](sm5-object-texture1darray.md) [Texture2D,](sm5-object-texture2d.md) [Texture2DArray,](sm5-object-texture2darray.md) [Texture2DMS,](sm5-object-texture2dms.md) [Texture2DMSArray,](sm5-object-texture2dmsarray.md) [Texture3D,](sm5-object-texture3d.md) [TextureCube,](dx-graphics-hlsl-to-type.md) [TextureCubeArray,](dx-graphics-hlsl-to-type.md)true, [typedef,](dx-graphics-hlsl-user-defined.md) [triangleadj,](dx-graphics-hlsl-geometry-shader.md) [TriangleStream](dx-graphics-hlsl-so-type.md)
+- [tbuffer](dx-graphics-hlsl-constants.md), tecnica, [tecnica10](/windows/desktop/direct3d10/d3d10-effect-technique-syntax), [tecnica11](/windows/desktop/direct3d10/d3d10-effect-technique-syntax) [,](dx-graphics-hlsl-texture.md)trama , [Texture1D](sm5-object-texture1d.md), [Texture1DArray](sm5-object-texture1darray.md), [Texture2D](sm5-object-texture2d.md), [Texture2DArray](sm5-object-texture2darray.md), [Texture2DMS](sm5-object-texture2dms.md), [Texture2DMSArray](sm5-object-texture2dmsarray.md), [Texture3D](sm5-object-texture3d.md), [TextureCube , TextureCubeArray](dx-graphics-hlsl-to-type.md), true, [](dx-graphics-hlsl-to-type.md) [typedef](dx-graphics-hlsl-user-defined.md), [triangleadj](dx-graphics-hlsl-geometry-shader.md), [TriangleStream](dx-graphics-hlsl-so-type.md)
 - [uint](dx-graphics-hlsl-scalar.md), [uniform](dx-graphics-hlsl-function-parameters.md), [unorm](dx-graphics-hlsl-scalar.md), unsigned
-- [vector,](dx-graphics-hlsl-vector.md) [vertexfragment,](fragment-declaration-syntax.md) [VertexShader,](dx-graphics-hlsl-shader.md)void, [volatile](dx-graphics-hlsl-variable-syntax.md)
+- [vector](dx-graphics-hlsl-vector.md), [vertexfragment](fragment-declaration-syntax.md), [VertexShader](dx-graphics-hlsl-shader.md), void, [volatile](dx-graphics-hlsl-variable-syntax.md)
 - [Mentre](dx-graphics-hlsl-while.md)
 
 ## <a name="remarks"></a>Commenti
 
-Questi tipi numerici hanno espansioni di parole chiave scalari, vettoriali e matrice:
+Questi tipi numerici hanno espansioni scalari, vettoriali e di parola chiave matrice:
 
 -   float, int, uint, bool
 -   min10float, min16float
@@ -151,11 +151,11 @@ Le espansioni di questi tipi numerici seguono questo modello, che usa float come
     float4x1, float4x2, float4x3, float4x4  
     </dl>
 
-HLSL supporta la trama in lettere [minuscole e](dx-graphics-hlsl-texture.md) [il campionatore](dx-graphics-hlsl-sampler.md) per motivi legacy. Per le nuove app è invece consigliabile usare i nuovi oggetti trama di HLSL ([Texture2D,](sm5-object-texture2d.md) [Texture3D](sm5-object-texture3d.md)e così via) e gli oggetti sampler ([SamplerState e SamplerComparisonState](dx-graphics-hlsl-sampler.md)).
+HLSL supporta la trama in lettere [minuscole e](dx-graphics-hlsl-texture.md) il [campionatore](dx-graphics-hlsl-sampler.md) per motivi legacy. Per le nuove app, è invece consigliabile usare i nuovi oggetti trama di HLSL[(Texture2D,](sm5-object-texture2d.md) [Texture3D](sm5-object-texture3d.md)e così via) e gli oggetti sampler ([SamplerState e SamplerComparisonState).](dx-graphics-hlsl-sampler.md)
 
 ### <a name="export"></a>esportare
 
-Usare **l'esportazione** per contrassegnare le funzioni di cui si desidera creare il pacchetto in una libreria.
+Usare **l'esportazione** per contrassegnare le funzioni di cui è stato inserito un pacchetto in una libreria.
 
 Ecco un esempio:
 
@@ -166,12 +166,12 @@ export float identity(float x)
 }
 ```
 
-Contrassegnando la **funzione identity** con la parola **chiave export,** si rende disponibile la **funzione identity** da una libreria per il collegamento successivo. Senza il **contrassegno** di esportazione, **la funzione identity** non è disponibile per il collegamento successivo.
+Contrassegnando la **funzione identity** con la parola **chiave export,** si rende disponibile la **funzione identity** da una libreria per il collegamento successivo. Senza il **contrassegno** di esportazione, **la funzione** identity non è disponibile per il collegamento successivo.
 
 Il compilatore ignora la parola **chiave export** per la compilazione non di libreria.
 
 > [!Note]  
-> La parola chiave **export** richiede il47.dll D3dcompiler o una versione successiva \_ della DLL.
+> La parola chiave **export** richiede il47.dll D3d o una versione successiva \_ della DLL.
 
  
 

@@ -1,22 +1,22 @@
 ---
-title: Codice di esempio per la verifica dell'accesso a un controllo a destra nell'ACL di un oggetto
-description: L'esempio seguente può essere usato per verificare che l'utente attualmente connesso disponga delle autorizzazioni per un controllo di accesso Right sull'oggetto specificato.
+title: Codice di esempio per il controllo di un diritto di accesso di controllo nell'ACL di un oggetto
+description: L'esempio seguente può essere usato per verificare che l'utente attualmente connesso abbia le autorizzazioni per un diritto di accesso di controllo per l'oggetto specificato.
 ms.assetid: 360320b8-32bd-4141-924b-25833a2761c8
 ms.tgt_platform: multiple
 keywords:
-- Codice di esempio per la verifica dell'accesso a un controllo a destra nell'ACL di un oggetto
+- Codice di esempio per il controllo di un diritto di accesso di controllo nell'ACL di un oggetto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b95054a7f21f1b9e96a7e6e0b723718598e8012
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d67428c9ff0c4558c71c39e53d411cea35958a8b8e6f1cc1207b7e4efae90d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103855453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191213"
 ---
-# <a name="example-code-for-checking-a-control-access-right-in-an-objects-acl"></a>Codice di esempio per la verifica dell'accesso a un controllo a destra nell'ACL di un oggetto
+# <a name="example-code-for-checking-a-control-access-right-in-an-objects-acl"></a>Codice di esempio per il controllo di un diritto di accesso di controllo nell'ACL di un oggetto
 
-L'esempio seguente può essere usato per verificare che l'utente attualmente connesso disponga delle autorizzazioni per un controllo di accesso Right sull'oggetto specificato.
+L'esempio seguente può essere usato per verificare che l'utente attualmente connesso abbia le autorizzazioni per un diritto di accesso di controllo per l'oggetto specificato.
 
 
 ```C++
@@ -224,9 +224,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

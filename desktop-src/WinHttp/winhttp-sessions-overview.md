@@ -1,70 +1,70 @@
 ---
-description: I servizi HTTP di Microsoft Windows (WinHTTP) espongono un set di funzioni C/C++ che consentono all'applicazione di accedere alle risorse HTTP sul Web. Questo argomento fornisce una panoramica del modo in cui queste funzioni vengono usate per interagire con un server HTTP.
+description: Microsoft Windows HTTP Services (WinHTTP) espone un set di funzioni C/C++ che consentono all'applicazione di accedere alle risorse HTTP sul Web. In questo argomento viene fornita una panoramica dell'utilizzo di queste funzioni per interagire con un server HTTP.
 ms.assetid: 66a1616b-0cf3-45c7-880b-e36728b5a9c4
-title: Cenni preliminari sulle sessioni WinHTTP
+title: Panoramica delle sessioni WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98dc8116dff75f279b87cb5f5ee6af607034176f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 753f7c2a3845b34ac306c1fb8d87441955ab9f4cfe0e1ea250737f62f993cd43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104129258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743906"
 ---
-# <a name="winhttp-sessions-overview"></a>Cenni preliminari sulle sessioni WinHTTP
+# <a name="winhttp-sessions-overview"></a>Panoramica delle sessioni WinHTTP
 
-I servizi HTTP di Microsoft Windows (WinHTTP) espongono un set di funzioni C/C++ che consentono all'applicazione di accedere alle risorse HTTP sul Web. Questo argomento fornisce una panoramica del modo in cui queste funzioni vengono usate per interagire con un server HTTP.
+Microsoft Windows HTTP Services (WinHTTP) espone un set di funzioni C/C++ che consentono all'applicazione di accedere alle risorse HTTP sul Web. In questo argomento viene fornita una panoramica dell'utilizzo di queste funzioni per interagire con un server HTTP.
 
 -   [Uso dell'API WinHTTP per accedere al Web](#using-the-winhttp-api-to-access-the-web)
 -   [Inizializzazione di WinHTTP](#initializing-winhttp)
 -   [Apertura di una richiesta](#opening-a-request)
 -   [Aggiunta di intestazioni di richiesta](#adding-request-headers)
 -   [Invio di una richiesta](#sending-a-request)
--   [Invio di dati al server](#posting-data-to-the-server)
--   [Ottenere informazioni su una richiesta](#getting-information-about-a-request)
--   [Download delle risorse dal Web](#downloading-resources-from-the-web)
+-   [Pubblicazione di dati nel server](#posting-data-to-the-server)
+-   [Recupero di informazioni su una richiesta](#getting-information-about-a-request)
+-   [Download di risorse dal Web](#downloading-resources-from-the-web)
 
 ## <a name="using-the-winhttp-api-to-access-the-web"></a>Uso dell'API WinHTTP per accedere al Web
 
-Il diagramma seguente illustra l'ordine in cui le funzioni WinHTTP vengono in genere chiamate quando si interagisce con un server HTTP. Le caselle ombreggiate rappresentano le funzioni che generano un handle [HINTERNET](hinternet-handles-in-winhttp.md) , mentre le caselle semplici rappresentano funzioni che usano tali handle.
+Il diagramma seguente illustra l'ordine in cui le funzioni WinHTTP vengono in genere chiamate quando si interagisce con un server HTTP. Le caselle ombreggiate rappresentano le funzioni che generano un handle [HINTERNET,](hinternet-handles-in-winhttp.md) mentre le caselle semplici rappresentano le funzioni che usano tali handle.
 
-![funzioni che creano handle](images/art-winhttp3.png)
+![Funzioni che creano handle](images/art-winhttp3.png)
 
 ## <a name="initializing-winhttp"></a>Inizializzazione di WinHTTP
 
-Prima di interagire con un server, è necessario inizializzare WinHTTP chiamando [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen). [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) crea un contesto di sessione per gestire i dettagli relativi alla sessione HTTP e restituisce un handle di sessione. Con questo handle, la funzione [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) è in grado di specificare un server http di destinazione o Secure HYPERTEXT Transfer Protocol (HTTPS).
+Prima di interagire con un server, WinHTTP deve essere inizializzato chiamando [**WinHttpOpen.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) [**WinHttpOpen crea**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) un contesto di sessione per mantenere i dettagli sulla sessione HTTP e restituisce un handle di sessione. Usando questo handle, la [**funzione WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) è quindi in grado di specificare un server HTTP o Secure Hypertext Transfer Protocol (HTTPS) di destinazione.
 
 > [!Note]  
-> Una chiamata a [**WinHttpConnect**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) non comporta una connessione effettiva al server http fino a quando non viene effettuata una richiesta per una risorsa specifica.
+> Una chiamata a [**WinHttpConnect non**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpconnect) comporta una connessione effettiva al server HTTP fino a quando non viene effettuata una richiesta per una risorsa specifica.
 
  
 
 ## <a name="opening-a-request"></a>Apertura di una richiesta
 
-La funzione [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) apre una richiesta HTTP per una determinata risorsa e restituisce un handle [HINTERNET](hinternet-handles-in-winhttp.md) che può essere usato da altre funzioni http. [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) non invia la richiesta al server quando viene chiamata. La funzione [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) stabilisce effettivamente una connessione sulla rete e Invia la richiesta.
+La [**funzione WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) apre una richiesta HTTP per una determinata risorsa e restituisce un handle [HINTERNET](hinternet-handles-in-winhttp.md) che può essere usato dalle altre funzioni HTTP. [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) non invia la richiesta al server quando viene chiamato. La [**funzione WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) stabilisce effettivamente una connessione in rete e invia la richiesta.
 
-Nell'esempio seguente viene illustrata una chiamata di esempio a [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) che utilizza le opzioni predefinite.
+L'esempio seguente mostra una chiamata di esempio [**a WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) che usa le opzioni predefinite.
 
 `HINTERNET hRequest = WinHttpOpenRequest( hConnect, L"GET", NULL, NULL, NULL, NULL, 0);`
 
 ## <a name="adding-request-headers"></a>Aggiunta di intestazioni di richiesta
 
-La funzione [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) consente a un'applicazione di aggiungere intestazioni di richiesta di formato libero aggiuntive all'handle della richiesta HTTP. È progettato per l'uso da parte di applicazioni sofisticate che richiedono un controllo preciso sulle richieste inviate al server HTTP.
+La [**funzione WinHttpAddRequestHeaders consente**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) a un'applicazione di aggiungere altre intestazioni di richiesta in formato libero all'handle della richiesta HTTP. È destinato all'uso da parte di applicazioni sofisticate che richiedono un controllo preciso sulle richieste inviate al server HTTP.
 
-La funzione [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) richiede un handle di richiesta HTTP creato da [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest), una stringa che contiene le intestazioni, la lunghezza delle intestazioni e tutti i modificatori.
+La [**funzione WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) richiede un handle di richiesta HTTP creato da [**WinHttpOpenRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)una stringa che contiene le intestazioni, la lunghezza delle intestazioni ed eventuali modificatori.
 
-Con [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)è possibile usare i modificatori seguenti.
+I modificatori seguenti possono essere usati con [**WinHttpAddRequestHeaders.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)
 
 
 
 | Modificatore                                                                                         | Descrizione                                                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_aggiunta del \_ flag \_ ADDREQ WinHTTP**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                       | Aggiunge l'intestazione se non esiste. Usato con [**il \_ flag ADDREQ di WinHTTP \_ \_ Replace**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders).                                                                                                                                                                                                               |
-| [**\_flag ADDREQ \_ WinHTTP \_ Aggiungi \_ se \_ nuovo**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)              | Aggiunge l'intestazione solo se non esiste già. in caso contrario, viene restituito un errore.                                                                                                                                                                                                                                                           |
-| [**\_ \_ COALESCE flag ADDREQ WinHTTP \_**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                  | Unisce le intestazioni con lo stesso nome.                                                                                                                                                                                                                                                                                                              |
-| [**\_flag ADDREQ \_ WinHTTP \_ COALESCE \_ con \_ virgola**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)     | Unisce le intestazioni con lo stesso nome usando una virgola. Ad esempio, se si aggiunge "Accept: Text/ \* " seguito da "Accept: audio/ \* " con questo flag, viene formata la singola intestazione "Accept: Text/ \* , audio/ \* ", causando il merge della prima intestazione. Spetta all'applicazione chiamante garantire uno schema coeso rispetto a intestazioni unite/separate. |
-| [**\_flag ADDREQ \_ WinHTTP \_ COALESCE \_ con \_ punto e virgola**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) | Unisce le intestazioni con lo stesso nome usando un punto e virgola.                                                                                                                                                                                                                                                                                            |
-| [**il \_ flag ADDREQ di WinHTTP \_ \_ sostituisce**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                   | Sostituisce o rimuove un'intestazione. Se il valore dell'intestazione è vuoto e l'intestazione viene trovata, viene rimossa. Se il valore dell'intestazione non è vuoto, il valore dell'intestazione viene sostituito.                                                                                                                                                                            |
+| [**AGGIUNTA \_ DEL FLAG ADDREQ WINHTTP \_ \_**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                       | Aggiunge l'intestazione se non esiste. Usato con [**WINHTTP \_ ADDREQ \_ FLAG \_ REPLACE**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders).                                                                                                                                                                                                               |
+| [**AGGIUNTA \_ DEL FLAG ADDREQ WINHTTP \_ \_ SE \_ \_ NUOVO**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)              | Aggiunge l'intestazione solo se non esiste già. In caso contrario, viene restituito un errore.                                                                                                                                                                                                                                                           |
+| [**WINHTTP \_ ADDREQ \_ FLAG \_ COALESCE**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                  | Unisce le intestazioni con lo stesso nome.                                                                                                                                                                                                                                                                                                              |
+| [**FLAG \_ ADDREQ WINHTTP \_ \_ COALESCE \_ CON \_ VIRGOLA**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)     | Unisce le intestazioni con lo stesso nome usando una virgola. Ad esempio, aggiungendo "Accept: text/ " seguito da "Accept: audio/ " con questo flag forma la singola intestazione \* \* "Accept: text/ \* , audio/ ", causando il merge della prima intestazione \* trovata. È responsabilità dell'applicazione chiamante garantire uno schema coesivo rispetto alle intestazioni unite/separate. |
+| [**FLAG \_ ADDREQ WINHTTP \_ \_ COALESCE \_ CON PUNTO E \_ VIRGOLA**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders) | Unisce le intestazioni con lo stesso nome usando un punto e virgola.                                                                                                                                                                                                                                                                                            |
+| [**SOSTITUZIONE \_ DEL FLAG ADDREQ WINHTTP \_ \_**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheaders)                   | Sostituisce o rimuove un'intestazione. Se il valore dell'intestazione è vuoto e l'intestazione viene trovata, viene rimossa. Se il valore dell'intestazione non è vuoto, il valore dell'intestazione viene sostituito.                                                                                                                                                                            |
 
 
 
@@ -72,27 +72,27 @@ Con [**WinHttpAddRequestHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winht
 
 ## <a name="sending-a-request"></a>Invio di una richiesta
 
-La funzione [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) stabilisce una connessione al server e Invia la richiesta al sito specificato. Questa funzione richiede un handle [HINTERNET](hinternet-handles-in-winhttp.md) creato da [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest). [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) può anche inviare intestazioni aggiuntive o informazioni facoltative. Le informazioni facoltative vengono in genere usate per le operazioni che scrivono le informazioni sul server, ad esempio PUT e POST.
+La [**funzione WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) stabilisce una connessione al server e invia la richiesta al sito specificato. Questa funzione richiede un handle [HINTERNET](hinternet-handles-in-winhttp.md) creato [**da WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) può anche inviare intestazioni aggiuntive o informazioni facoltative. Le informazioni facoltative vengono in genere usate per le operazioni che scrivono informazioni nel server, ad esempio PUT e POST.
 
-Dopo che la funzione [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) ha inviato la richiesta, l'applicazione può usare le funzioni [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) e [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) sull'handle [HINTERNET](hinternet-handles-in-winhttp.md) per scaricare le risorse del server.
+Dopo che [**la funzione WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) ha inviato la richiesta, l'applicazione può usare le funzioni [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) e [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) nell'handle [HINTERNET](hinternet-handles-in-winhttp.md) per scaricare le risorse del server.
 
-## <a name="posting-data-to-the-server"></a>Invio di dati al server
+## <a name="posting-data-to-the-server"></a>Pubblicazione di dati nel server
 
-Per inserire i dati in un server, il [*verbo http*](glossary.md) nella chiamata a [**WINHTTPOPENREQUEST**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) deve essere post o put. Quando viene chiamato [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) , il parametro *dwTotalLength* deve essere impostato sulla dimensione dei dati in byte. Usare quindi [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata) per inviare i dati al server.
+Per inviare dati a un server, il [*verbo HTTP*](glossary.md) nella chiamata [**a WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) deve essere POST o PUT. Quando [**viene chiamato WinHttpSendRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) il *parametro dwTotalLength* deve essere impostato sulla dimensione dei dati in byte. Usare quindi [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata) per inviare i dati al server.
 
-In alternativa, impostare il parametro *lpOptional* di [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) sull'indirizzo di un buffer che contiene i dati da inviare al server. Quando si utilizza questa tecnica, è necessario impostare i parametri *dwOptionalLength* e *dwTotalLength* di [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) in modo che siano le dimensioni dei dati inviati. La chiamata di [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) in questo modo Elimina la necessità di chiamare [**WinHttpWriteData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata).
+In alternativa, impostare *il parametro lpOptional* di [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) sull'indirizzo di un buffer che contiene i dati da pubblicare nel server. Quando si usa questa tecnica, è necessario impostare entrambi i parametri *dwOptionalLength* e *dwTotalLength* di [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) in modo che siano le dimensioni dei dati inviati. La [**chiamata a WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest) in questo modo elimina la necessità di [**chiamare WinHttpWriteData.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpwritedata)
 
-## <a name="getting-information-about-a-request"></a>Ottenere informazioni su una richiesta
+## <a name="getting-information-about-a-request"></a>Recupero di informazioni su una richiesta
 
-La funzione [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) consente a un'applicazione di recuperare informazioni su una richiesta HTTP. La funzione richiede un handle [HINTERNET](hinternet-handles-in-winhttp.md) creato da [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest), un valore del livello di informazioni e una lunghezza del buffer. [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) accetta anche un buffer che archivia le informazioni e un indice in base zero dell'intestazione che enumera più intestazioni con lo stesso nome.
+La [**funzione WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) consente a un'applicazione di recuperare informazioni su una richiesta HTTP. La funzione richiede un handle [HINTERNET](hinternet-handles-in-winhttp.md) creato [**da WinHttpOpenRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)un valore del livello di informazioni e una lunghezza del buffer. [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders) accetta anche un buffer che archivia le informazioni e un indice di intestazione in base zero che enumera più intestazioni con lo stesso nome.
 
-Usare uno dei valori del livello informazioni disponibili nella pagina [**flag informazioni query**](query-info-flags.md) con un modificatore per controllare il formato in cui le informazioni vengono archiviate nel parametro *lpvBuffer* di [**WinHttpQueryHeaders**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders).
+Usare uno dei valori a livello di informazioni disponibili nella pagina [**Flag**](query-info-flags.md) informazioni query con un modificatore per controllare il formato in cui le informazioni vengono archiviate nel parametro *lpvBuffer* di [**WinHttpQueryHeaders.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheaders)
 
-## <a name="downloading-resources-from-the-web"></a>Download delle risorse dal Web
+## <a name="downloading-resources-from-the-web"></a>Download di risorse dal Web
 
-Dopo l'apertura di una richiesta con la funzione [**WinHttpOpenRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) , l'invio al server con [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest)e la preparazione dell'handle di richiesta per ricevere una risposta con [**WinHttpReceiveResponse**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse), l'applicazione può usare le funzioni [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) e [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) per scaricare la risorsa dal server http.
+Dopo l'apertura di una richiesta con la funzione [**WinHttpOpenRequest,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest) l'invio al server con [**WinHttpSendRequest**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsendrequest)e la preparazione dell'handle di richiesta per ricevere una risposta [**con WinHttpReceiveResponse,**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreceiveresponse)l'applicazione può usare le funzioni [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) e [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) per scaricare la risorsa dal server HTTP.
 
-Il codice di esempio seguente illustra come scaricare una risorsa con la semantica di transazione sicura. Il codice di esempio Inizializza l'Application Programming Interface WinHTTP (API), seleziona un server HTTPS di destinazione e quindi apre e invia una richiesta per la risorsa protetta. [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) viene usato con l'handle della richiesta per determinare la quantità di dati disponibili per il download e quindi [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) viene usato per leggere i dati. Questo processo viene ripetuto fino a quando non viene recuperato e visualizzato l'intero documento.
+Il codice di esempio seguente illustra come scaricare una risorsa con semantica di transazione sicura. Il codice di esempio inizializza l'API WinHTTP, seleziona un server HTTPS di destinazione e quindi apre e invia una richiesta per questa risorsa protetta. [**WinHttpQueryDataAvailable**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpquerydataavailable) viene usato con l'handle della richiesta per determinare la quantità di dati disponibili per il download e quindi [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata) viene usato per leggere i dati. Questo processo viene ripetuto fino a quando non viene recuperato e visualizzato l'intero documento.
 
 
 ```C++
