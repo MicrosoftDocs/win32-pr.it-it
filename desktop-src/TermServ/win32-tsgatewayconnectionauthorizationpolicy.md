@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSGatewayConnectionAuthorizationPolicy
-description: Descrive un criterio di autorizzazione della connessione Desktop remoto (RD \ 160; LIMITE). RD \ 160; I tappi vengono usati per determinare se un utente è autorizzato a connettersi al server gateway gateway di Desktop remoto (Gateway Desktop remoto).
+title: Win32_TSGatewayConnectionAuthorizationPolicy classe
+description: Descrive un criterio Desktop remoto di autorizzazione della connessione (Rd \ 160; CAP). RD \ 160; I CAP vengono usati per determinare se un utente è autorizzato a connettersi al server Desktop remoto Gateway Desktop remoto.
 ms.assetid: 50ff3f97-0818-4e9c-9db7-a822cfed0e82
 ms.tgt_platform: multiple
 keywords:
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Servizi Desktop remoto
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Servizi Desktop remoto, descritta
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Servizi Desktop remoto
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -36,16 +36,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27384ec3a5f17c3e41fe0ceccf0ee1f7f9d08044
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bfaefb0a3062db27622afe90023928507c6d127c64edb60041347f73c1b261c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103873689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349246"
 ---
-# <a name="win32_tsgatewayconnectionauthorizationpolicy-class"></a>Win32 \_ TSGatewayConnectionAuthorizationPolicy (classe)
+# <a name="win32_tsgatewayconnectionauthorizationpolicy-class"></a>Classe \_ TSGatewayConnectionAuthorizationPolicy Win32
 
-Descrive un criterio di autorizzazione della connessione Desktop remoto. I tappi desktop remoto vengono usati per determinare se un utente è autorizzato a connettersi al server gateway di Desktop remoto (Gateway Desktop remoto).
+Descrive un criterio Desktop remoto di autorizzazione connessione Desktop remoto. I CAP di Servizi Desktop remoto vengono usati per determinare se un utente è autorizzato a connettersi al server Desktop remoto Gateway Desktop remoto.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,45 +78,45 @@ class Win32_TSGatewayConnectionAuthorizationPolicy
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** presenta questi tipi di membri:
+La **classe \_ Win32 TSGatewayConnectionAuthorizationPolicy** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** presenta questi metodi.
+La **classe Win32 \_ TSGatewayConnectionAuthorizationPolicy** include questi metodi.
 
 
 
 | Metodo                                                                                                                | Descrizione                                                                                                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Aggiunge i nomi dei gruppi di computer specificati alla proprietà **ComputerGroupNames** .<br/>                                                                                      |
-| [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Aggiunge i nomi dei gruppi di utenti specificati alla proprietà **UserGroupNames** .<br/>                                                                                              |
-| [**Creare**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Crea un CAP RD.<br/>                                                                                                                                                   |
-| [**Delete**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Elimina il CAP di RD corrente.<br/>                                                                                                                                          |
-| [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Imposta la proprietà **ClipboardDisabled** .<br/>                                                                                                                             |
-| [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta la proprietà **DiskDrivesDisabled** .<br/>                                                                                                                            |
-| [**DisablePlugAndPlayDevices**](disableplugandplaydevices-win32-tsgatewayconnectionauthorizationpolicy.md)           | Imposta la proprietà **PlugAndPlayDevicesDisabled** .<br/>                                                                                                                    |
-| [**DisablePrinters**](disableprinters-win32-tsgatewayconnectionauthorizationpolicy.md)                               | Imposta la proprietà **PrintersDisabled** .<br/>                                                                                                                              |
-| [**DisableSerialPorts**](disableserialports-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la proprietà **SerialPortsDisabled** .<br/>                                                                                                                           |
-| [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)           | Usato per impostare o disabilitare la proprietà **AllowOnlySDRServers**<br/> **Windows Server 2008:** Questo metodo non è disponibile prima di Windows Server 2008 R2.<br/>                  |
-| [**MoveDown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)                                             | Sposta l'estremità corrente di una posizione verso il basso nell'elenco.<br/>                                                                                                              |
-| [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Sposta il CAP di RD corrente di una posizione verso l'alto nell'elenco.<br/>                                                                                                                |
-| [**RemoveComputerGroupNames**](removecomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)             | Rimuove i nomi dei gruppi di computer specificati dalla proprietà **ComputerGroupNames** .<br/>                                                                                 |
-| [**RemoveUserGroupNames**](removeusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                     | Rimuove i nomi dei gruppi di utenti specificati dalla proprietà **UserGroupNames** .<br/>                                                                                             |
-| [**SetComputerGroupNames**](setcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Imposta la proprietà **ComputerGroupNames** .<br/>                                                                                                                            |
-| [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) | Imposta la proprietà **CookieAuthenticationAllowed** .<br/> **Windows Server 2008:** Questo metodo non è disponibile.<br/>                                                 |
-| [**SetDeviceRedirectionType**](setdeviceredirectiontype-win32-tsgatewayconnectionauthorizationpolicy.md)             | Imposta la proprietà **DeviceRedirectionType** .<br/>                                                                                                                         |
-| [**SetEnabled**](setenabled-win32-tsgatewayconnectionauthorizationpolicy.md)                                         | Abilita o Disabilita il criterio di autorizzazione connessioni Desktop remoto corrente.<br/>                                                                                                                              |
-| [**SetIdleTimeout**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                                 | Imposta la proprietà **IdleTimeout** .<br/> **Windows Server 2008:** Questo metodo non è disponibile prima di Windows Server 2008 R2.<br/>                                   |
-| [**SetName**](setname-win32-tsgatewayconnectionauthorizationpolicy.md)                                               | Imposta un nuovo nome per il CAP di desktop remoto. Questo metodo assicura che i nomi siano univoci.<br/>                                                                                      |
-| [**SetPasswordAllowed**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la proprietà **PasswordAllowed** .<br/>                                                                                                                               |
-| [**SetSecureIdAllowed**](setsecureidallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la proprietà **SecureIdAllowed** .<br/> **Windows Server 2008:** Questo metodo è riservato per utilizzi futuri.<br/>                                                   |
-| [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta le proprietà **SessionTimeout** e **SessionTimeoutAction** .<br/> **Windows Server 2008:** Questo metodo non è disponibile prima di Windows Server 2008 R2.<br/> |
-| [**SetSmartcardAllowed**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                       | Imposta la proprietà **SmartcardAllowed** .<br/>                                                                                                                              |
-| [**SetUserGroupNames**](setusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta la proprietà **UserGroupNames** .<br/>                                                                                                                                |
-| [**Aggiornamento**](update-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Aggiorna l'estremità del desktop remoto corrente.<br/>                                                                                                                                          |
+| [**AddComputerGroupNames**](addcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Aggiunge i nomi dei gruppi di computer specificati alla **proprietà ComputerGroupNames.**<br/>                                                                                      |
+| [**AddUserGroupNames**](addusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Aggiunge i nomi dei gruppi di utenti specificati alla **proprietà UserGroupNames.**<br/>                                                                                              |
+| [**Crea**](create-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Crea un'istanza di Criteri di autorizzazione connessioni Desktop remoto.<br/>                                                                                                                                                   |
+| [**Elimina**](delete-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Elimina l'oggetto Criteri di autorizzazione connessioni Desktop remoto corrente.<br/>                                                                                                                                          |
+| [**DisableClipboard**](disableclipboard-win32-tsgatewayconnectionauthorizationpolicy.md)                             | Imposta la **proprietà ClipboardDisabled.**<br/>                                                                                                                             |
+| [**DisableDiskDrives**](disablediskdrives-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta la **proprietà DiskDrivesDisabled.**<br/>                                                                                                                            |
+| [**DisablePlugAndPlayDevices**](disableplugandplaydevices-win32-tsgatewayconnectionauthorizationpolicy.md)           | Imposta la **proprietà PlugAndPlayDevicesDisabled.**<br/>                                                                                                                    |
+| [**DisablePrinters**](disableprinters-win32-tsgatewayconnectionauthorizationpolicy.md)                               | Imposta la **proprietà PrintersDisabled.**<br/>                                                                                                                              |
+| [**DisableSerialPorts**](disableserialports-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la **proprietà SerialPortsDisabled.**<br/>                                                                                                                           |
+| [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)           | Usato per attivare o **disattivare la proprietà AllowOnlySDRServers**<br/> **Windows Server 2008:** Questo metodo non è disponibile prima Windows Server 2008 R2.<br/>                  |
+| [**MoveDown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)                                             | Sposta l'oggetto RD CAP corrente di una posizione verso il basso nell'elenco.<br/>                                                                                                              |
+| [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Sposta la posizione corrente di RD CAP di una posizione verso l'alto nell'elenco.<br/>                                                                                                                |
+| [**RemoveComputerGroupNames**](removecomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)             | Rimuove i nomi dei gruppi di computer specificati dalla **proprietà ComputerGroupNames.**<br/>                                                                                 |
+| [**RemoveUserGroupNames**](removeusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                     | Rimuove i nomi dei gruppi di utenti specificati **dalla proprietà UserGroupNames.**<br/>                                                                                             |
+| [**SetComputerGroupNames**](setcomputergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                   | Imposta la **proprietà ComputerGroupNames.**<br/>                                                                                                                            |
+| [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) | Imposta la **proprietà CookieAuthenticationAllowed.**<br/> **Windows Server 2008:** Questo metodo non è disponibile.<br/>                                                 |
+| [**SetDeviceRedirectionType**](setdeviceredirectiontype-win32-tsgatewayconnectionauthorizationpolicy.md)             | Imposta la **proprietà DeviceRedirectionType.**<br/>                                                                                                                         |
+| [**SetEnabled**](setenabled-win32-tsgatewayconnectionauthorizationpolicy.md)                                         | Abilita o disabilita il criterio di autorizzazione connessioni Desktop remoto corrente.<br/>                                                                                                                              |
+| [**SetIdleTimeout**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                                 | Imposta la **proprietà IdleTimeout.**<br/> **Windows Server 2008:** Questo metodo non è disponibile prima Windows Server 2008 R2.<br/>                                   |
+| [**SetName**](setname-win32-tsgatewayconnectionauthorizationpolicy.md)                                               | Imposta un nuovo nome per l'applicazione di criteri di autorizzazione connessioni Desktop remoto. Questo metodo garantisce che i nomi siano univoci.<br/>                                                                                      |
+| [**SetPasswordAllowed**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la **proprietà PasswordAllowed.**<br/>                                                                                                                               |
+| [**SetSecureIdAllowed**](setsecureidallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                         | Imposta la **proprietà SecureIdAllowed.**<br/> **Windows Server 2008:** Questo metodo è riservato per un uso futuro.<br/>                                                   |
+| [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta le **proprietà SessionTimeout** **e SessionTimeoutAction.**<br/> **Windows Server 2008:** Questo metodo non è disponibile prima Windows Server 2008 R2.<br/> |
+| [**SetSmartcardAllowed**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md)                       | Imposta la **proprietà SmartcardAllowed.**<br/>                                                                                                                              |
+| [**SetUserGroupNames**](setusergroupnames-win32-tsgatewayconnectionauthorizationpolicy.md)                           | Imposta la **proprietà UserGroupNames.**<br/>                                                                                                                                |
+| [**Aggiornamento**](update-win32-tsgatewayconnectionauthorizationpolicy.md)                                                 | Aggiorna l'istanza corrente di Criteri di autorizzazione connessioni Desktop remoto.<br/>                                                                                                                                          |
 
 
 
@@ -124,61 +124,61 @@ La classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** presenta questi me
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ TSGatewayConnectionAuthorizationPolicy** dispone di queste proprietà.
+La **classe Win32 \_ TSGatewayConnectionAuthorizationPolicy** ha queste proprietà.
 
 <dl> <dt>
 
 **AllowOnlySDRServers**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se le connessioni sono consentite solo per i server RDS (Secure Device Reindirizzamento). Questa proprietà può essere impostata tramite il metodo [**EnableAllowOnlySDRServers**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md) .
+Indica se le connessioni sono consentite solo ai server Servizi Desktop remoto di reindirizzamento dei dispositivi (SDR). Questa proprietà può essere impostata usando [**il metodo EnableAllowOnlySDRServers.**](win32-tsgatewayconnectionauthorizationpolicy-enableallowonlysdrservers.md)
 
-**Windows Server 2008:** Questa proprietà non è disponibile prima di Windows Server 2008 R2.
+**Windows Server 2008:** Questa proprietà non è disponibile prima Windows Server 2008 R2.
 
 </dd> <dt>
 
-**ClipboardDisabled**
+**AppuntiDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il reindirizzamento degli appunti verrà disabilitato. Questa proprietà ha effetto solo se il valore della proprietà **DeviceRedirectionType** è "2".
+Indica se il reindirizzamento degli Appunti verrà disabilitato. Questa proprietà ha effetto solo se il valore della **proprietà DeviceRedirectionType** è "2".
 
 </dd> <dt>
 
 **ComputerGroupNames**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di nomi di gruppi di computer separati da punto e virgola. Questo valore può essere vuoto. I nomi sono nel formato *dominio \\ ComputerGroupName*. Se viene specificato un valore, il computer client deve appartenere a uno di questi gruppi di computer in modo che l'utente acceda al server Gateway Desktop remoto.
+Elenco di nomi di gruppi di computer separati da punti e virgola. Questo valore può essere vuoto. I nomi sono nel formato *Dominio \\ ComputerGroupName*. Se viene specificato un valore, il computer client deve appartenere a uno di questi gruppi di computer per l'accesso dell'utente al server Gateway Desktop remoto.
 
 </dd> <dt>
 
 **CookieAuthenticationAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se l'autenticazione del cookie può essere utilizzata per la connessione al server Gateway Desktop remoto. Questa proprietà può essere impostata tramite il metodo [**SetCookieAuthenticationAllowed**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Indica se è possibile usare l'autenticazione tramite cookie per connettersi al server Gateway Desktop remoto. Questa proprietà può essere impostata usando il [**metodo SetCookieAuthenticationAllowed.**](setcookieauthenticationallowed-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 **Windows Server 2008:** Questa proprietà non è disponibile.
 
@@ -187,7 +187,7 @@ Indica se l'autenticazione del cookie può essere utilizzata per la connessione 
 **DeviceRedirectionType**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -200,21 +200,21 @@ Specifica i dispositivi che verranno reindirizzati.
 0
 </dt> <dd>
 
-Verranno reindirizzati tutti i dispositivi.
+Tutti i dispositivi verranno reindirizzati.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Non verrà reindirizzato alcun dispositivo.
+Nessun dispositivo verrà reindirizzato.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-I dispositivi specificati non verranno reindirizzati. Le proprietà **DiskDrivesDisabled**, **PrintersDisabled**, **SerialPortsDisabled**, **ClipboardDisabled** e **PlugAndPlayDevicesDisabled** controllano i dispositivi che non verranno reindirizzati.
+I dispositivi specificati non verranno reindirizzati. Le proprietà **DiskDrivesDisabled**, **PrintersDisabled**, **SerialPortsDisabled**, **ClipboardDisabled** e **PlugAndPlayDevicesDisabled** controllano quali dispositivi non verranno reindirizzati.
 
 </dd> </dl>
 
@@ -223,52 +223,52 @@ I dispositivi specificati non verranno reindirizzati. Le proprietà **DiskDrives
 **DiskDrivesDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il reindirizzamento dell'unità disco verrà disabilitato. Questa proprietà ha effetto solo se il valore della proprietà **DeviceRedirectionType** è "2".
+Indica se il reindirizzamento delle unità disco sarà disabilitato. Questa proprietà ha effetto solo se il valore della **proprietà DeviceRedirectionType** è "2".
 
 </dd> <dt>
 
 **Enabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il CAP RD verrà utilizzato per valutare l'autorizzazione di un utente.
+Indica se questo criterio di autorizzazione desktop remoto verrà usato per valutare un utente per l'autorizzazione.
 
 </dd> <dt>
 
 **HasNapAttributes**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il CAP RD utilizza gli attributi di protezione accesso alla rete (NAP).
+Indica se il cap Desktop remoto usa gli attributi di Protezione accesso alla rete.
 
 </dd> <dt>
 
 **IdleTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore del timeout di inattività, espresso in minuti. Il valore 0 indica che non esiste alcun timeout. Questa proprietà può essere impostata tramite il metodo [**SetIdleTimeout**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Valore di timeout di inattività, in minuti. Il valore 0 indica che non è presente alcun timeout. Questa proprietà può essere impostata usando il [**metodo SetIdleTimeout.**](setidletimeout-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 **Windows Server 2008:** Questa proprietà non è disponibile.
 
@@ -277,7 +277,7 @@ Valore del timeout di inattività, espresso in minuti. Il valore 0 indica che no
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -286,72 +286,72 @@ Tipo di accesso: sola lettura
 Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome del CAP di desktop remoto.
+Nome del cap rd.
 
 </dd> <dt>
 
 **Ordine**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Ordine di valutazione del CAP di desktop remoto. Il primo CAP RD valutato ha un valore pari a "1". È possibile modificare la proprietà **Order** quando vengono chiamati i metodi [**create**](create-win32-tsgatewayconnectionauthorizationpolicy.md), [**Delete**](delete-win32-tsgatewayconnectionauthorizationpolicy.md), [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md)o [**MoveDown**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Ordine di valutazione di Criteri di autorizzazione connessioni Desktop remoto. Il primo valore di Criteri di autorizzazione connessioni Desktop remoto valutato è "1". La **proprietà Order** può essere modificata quando vengono chiamati i metodi [**Create**](create-win32-tsgatewayconnectionauthorizationpolicy.md), [**Delete**](delete-win32-tsgatewayconnectionauthorizationpolicy.md), [**MoveUp**](moveup-win32-tsgatewayconnectionauthorizationpolicy.md) [**o MoveDown.**](movedown-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 </dd> <dt>
 
 **PasswordAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se è possibile utilizzare una password per la connessione al server Gateway Desktop remoto. Questa proprietà può essere modificata tramite il metodo [**SetPasswordAllowed**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Indica se è possibile usare una password per connettersi al server Gateway Desktop remoto. Questa proprietà può essere modificata usando il [**metodo SetPasswordAllowed.**](setpasswordallowed-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 </dd> <dt>
 
 **PlugAndPlayDevicesDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il reindirizzamento dei dispositivi Plug and Play sarà disabilitato. Questa proprietà ha effetto solo se il valore della proprietà **DeviceRedirectionType** è "2".
+Indica se il reindirizzamento dei Plug and Play dispositivi verrà disabilitato. Questa proprietà ha effetto solo se il valore della **proprietà DeviceRedirectionType** è "2".
 
 </dd> <dt>
 
-**PrintersDisabled**
+**StampantiDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il reindirizzamento della stampante verrà disabilitato. Questa proprietà ha effetto solo se il valore della proprietà **DeviceRedirectionType** è "2".
+Indica se il reindirizzamento della stampante verrà disabilitato. Questa proprietà ha effetto solo se il valore della **proprietà DeviceRedirectionType** è "2".
 
 </dd> <dt>
 
 **SecureIdAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se è possibile utilizzare un identificatore sicuro per la connessione al server Gateway Desktop remoto.
+Indica se è possibile usare un identificatore sicuro per connettersi al server Gateway Desktop remoto.
 
 **Windows Server 2008:** Questa proprietà non viene utilizzata.
 
@@ -360,26 +360,26 @@ Indica se è possibile utilizzare un identificatore sicuro per la connessione al
 **SerialPortsDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se il reindirizzamento della porta seriale verrà disabilitato. Questa proprietà ha effetto solo se il valore della proprietà **DeviceRedirectionType** è "2".
+Indica se il reindirizzamento delle porte seriali sarà disabilitato. Questa proprietà ha effetto solo se il valore della **proprietà DeviceRedirectionType** è "2".
 
 </dd> <dt>
 
 **SessionTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Valore di timeout della sessione, espresso in minuti. Il valore 0 indica che non esiste alcun timeout. Questa proprietà può essere impostata tramite il metodo [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Valore di timeout della sessione, in minuti. Il valore 0 indica che non è presente alcun timeout. Questa proprietà può essere impostata usando il [**metodo SetSessionTimeout.**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 **Windows Server 2008:** Questa proprietà non è disponibile.
 
@@ -388,15 +388,15 @@ Valore di timeout della sessione, espresso in minuti. Il valore 0 indica che non
 **SessionTimeoutAction**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **UInt32**
+Tipo di dati: **uint32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica l'azione da intraprendere in caso di timeout di sessione. Questa proprietà può essere impostata tramite il metodo [**SetSessionTimeout**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Specifica l'azione da eseguire in caso di timeout della sessione. Questa proprietà può essere impostata usando il [**metodo SetSessionTimeout.**](setsessiontimeout-win32-tsgatewayconnectionauthorizationpolicy.md)
 
-Può corrispondere a uno dei valori seguenti.
+Può essere uno dei valori seguenti.
 
 **Windows Server 2008:** Questa proprietà non è disponibile.
 
@@ -412,7 +412,7 @@ Disconnettere la sessione.
 1
 </dt> <dd>
 
-Tentativo di autorizzare nuovamente la sessione.
+Provare a autorizzare nuovamente la sessione.
 
 </dd> </dl>
 
@@ -421,34 +421,34 @@ Tentativo di autorizzare nuovamente la sessione.
 **SmartcardAllowed**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Boolean**
+Tipo di dati: **booleano**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se è possibile utilizzare una smart card per la connessione al server Gateway Desktop remoto. Questa proprietà può essere modificata tramite il metodo [**SetSmartcardAllowed**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md) .
+Indica se un smart card può essere usato per connettersi al server Gateway Desktop remoto. Questa proprietà può essere modificata usando il [**metodo SetSmartcardAllowed.**](setsmartcardallowed-win32-tsgatewayconnectionauthorizationpolicy.md)
 
 </dd> <dt>
 
 **UserGroupNames**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Elenco di nomi di gruppi di utenti separati da punti e virgola. I nomi sono nel formato *dominio \\ nomegruppoutenti*. Se l'utente appartiene a uno di questi gruppi di utenti, l'utente sarà autorizzato ad accedere al server Gateway Desktop remoto.
+Elenco di nomi di gruppi di utenti separati da punto e virgola. I nomi sono nel formato *Dominio \\ UserGroupName*. Se l'utente appartiene a uno di questi gruppi di utenti, all'utente sarà consentito l'accesso al server Gateway Desktop remoto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Per utilizzare questa classe, è necessario essere membri del gruppo Administrators.
+Per usare questa classe, è necessario essere membri del gruppo Administrators.
 
-I file Managed Object Format (MOF) contengono le definizioni per le classi Strumentazione gestione Windows (WMI). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per ulteriori informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -458,8 +458,8 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                           |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -468,22 +468,22 @@ I file Managed Object Format (MOF) contengono le definizioni per le classi Strum
 
 <dl> <dt>
 
-[**\_TSGatewayConnection Win32**](win32-tsgatewayconnection.md)
+[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**\_TSGatewayRADIUSServer Win32**](win32-tsgatewayradiusserver.md)
+[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceGroup Win32**](win32-tsgatewayresourcegroup.md)
+[**Win32 \_ TSGatewayResourceGroup**](win32-tsgatewayresourcegroup.md)
 </dt> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

@@ -1,37 +1,37 @@
 ---
-description: Windows 8 Disabilita i driver mirror standard di Windows 2000 Display Driver Model (XDDM) e offre invece l'API per la duplicazione dei desktop.
+description: Windows 8 disabilita i driver mirror XDDM (Display Driver Model) standard Windows 2000 e offre invece l'API di duplicazione desktop.
 ms.assetid: 523FBFAD-5D78-4EE3-A3B7-8FD5BA39DC46
 title: API di duplicazione desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad27f545318254404beb6372344d8dd0cdfdf604
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 93c1960d064d7fd1e34748dcc2efb3c86459b498df91b52c1384ef8698a37c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104481077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118518497"
 ---
 # <a name="desktop-duplication-api"></a>API di duplicazione desktop
 
-Windows 8 Disabilita i driver mirror standard di Windows 2000 Display Driver Model (XDDM) e offre invece l'API per la duplicazione dei desktop. L'API di duplicazione desktop fornisce accesso remoto a un'immagine desktop per scenari di collaborazione. Le app possono usare l'API di duplicazione desktop per accedere agli aggiornamenti frame per fotogramma sul desktop. Poiché le app ricevono aggiornamenti per l'immagine desktop in una superficie DXGI, le app possono sfruttare tutte le potenzialità della GPU per elaborare gli aggiornamenti delle immagini.
+Windows 8 disabilita i driver mirror XDDM (Display Driver Model) standard Windows 2000 e offre invece l'API di duplicazione desktop. L'API di duplicazione desktop fornisce l'accesso remoto a un'immagine desktop per scenari di collaborazione. Le app possono usare l'API di duplicazione desktop per accedere agli aggiornamenti frame per frame al desktop. Poiché le app ricevono aggiornamenti dell'immagine desktop in una superficie DXGI, le app possono usare tutta la potenza della GPU per elaborare gli aggiornamenti dell'immagine.
 
--   [Aggiornamento dei dati dell'immagine desktop](#updating-the-desktop-image-data)
--   [Rotazione dell'immagine desktop](#rotating-the-desktop-image)
+-   [Aggiornamento dei dati dell'immagine del desktop](#updating-the-desktop-image-data)
+-   [Rotazione dell'immagine del desktop](#rotating-the-desktop-image)
 -   [Aggiornamento del puntatore del desktop](#updating-the-desktop-pointer)
 -   [Argomenti correlati](#related-topics)
 
-## <a name="updating-the-desktop-image-data"></a>Aggiornamento dei dati dell'immagine desktop
+## <a name="updating-the-desktop-image-data"></a>Aggiornamento dei dati dell'immagine del desktop
 
-DXGI fornisce una superficie che contiene un'immagine desktop corrente tramite il nuovo metodo [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) . Il formato dell'immagine desktop è sempre [**DXGI \_ formato \_ B8G8R8A8 \_ UNORM**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) , indipendentemente dalla modalità di visualizzazione corrente. Insieme a questa superficie, questi metodi [**IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) restituiscono i tipi di informazioni indicati che consentono di determinare i pixel all'interno della superficie che è necessario elaborare:
+DXGI fornisce una superficie che contiene un'immagine desktop corrente tramite il nuovo [**metodo IDXGIOutputDuplication::AcquireNextFrame.**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) Il formato dell'immagine desktop è sempre [**DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) indipendentemente dalla modalità di visualizzazione corrente. Insieme a questa superficie, questi [**metodi IDXGIOutputDuplication**](/windows/desktop/api/DXGI1_2/nn-dxgi1_2-idxgioutputduplication) restituiscono i tipi indicati di informazioni che consentono di determinare quali pixel all'interno della superficie è necessario elaborare:
 
--   [**IDXGIOutputDuplication:: GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) restituisce aree dirty, ovvero rettangoli non sovrapposti che indicano le aree dell'immagine desktop aggiornate dal sistema operativo dopo l'elaborazione dell'immagine desktop precedente.
--   [**IDXGIOutputDuplication:: GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) restituisce le aree di spostamento, che sono rettangoli di pixel nell'immagine desktop che il sistema operativo ha spostato in un'altra posizione all'interno della stessa immagine. Ogni area di spostamento è costituita da un rettangolo di destinazione e da un punto di origine. Il punto di origine specifica il percorso da cui il sistema operativo ha copiato l'area e il rettangolo di destinazione specifica dove il sistema operativo ha spostato tale area. Le aree di spostamento sono sempre aree non estese, pertanto l'origine ha sempre le stesse dimensioni della destinazione.
+-   [**IDXGIOutputDuplication::GetFrameDirtyRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframedirtyrects) restituisce aree dirty, ovvero rettangoli non sovrapposti che indicano le aree dell'immagine desktop aggiornate dal sistema operativo dopo l'elaborazione dell'immagine desktop precedente.
+-   [**IDXGIOutputDuplication::GetFrameMoveRects**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframemoverects) restituisce aree di spostamento, ovvero rettangoli di pixel nell'immagine desktop spostati dal sistema operativo in un'altra posizione all'interno della stessa immagine. Ogni area di spostamento è costituita da un rettangolo di destinazione e da un punto di origine. Il punto di origine specifica la posizione da cui il sistema operativo ha copiato l'area e il rettangolo di destinazione specifica dove il sistema operativo ha spostato tale area. Le aree di spostamento sono sempre aree non distese, quindi l'origine ha sempre le stesse dimensioni della destinazione.
 
-Si supponga che l'immagine desktop sia stata trasmessa su una connessione lenta all'app client remota. La quantità di dati inviati sulla connessione viene ridotta ricevendo solo i dati sul modo in cui l'app client deve spostare le aree di pixel anziché i dati effettivi sui pixel. Per elaborare lo spostamento, l'app client deve avere archiviato l'ultima immagine completa.
+Si supponga che l'immagine desktop sia stata trasmessa tramite una connessione lenta all'app client remota. La quantità di dati inviati tramite la connessione viene ridotta ricevendo solo i dati sul modo in cui l'app client deve spostare aree di pixel anziché dati pixel effettivi. Per elaborare gli spostamenti, l'app client deve aver archiviato l'ultima immagine completa.
 
-Sebbene il sistema operativo accumuli aggiornamenti di immagini desktop non elaborati, lo spazio potrebbe esaurirsi per archiviare accuratamente le aree di aggiornamento. In questa situazione, il sistema operativo inizia ad accumulare gli aggiornamenti unendoli con le aree di aggiornamento esistenti per coprire tutti i nuovi aggiornamenti. Di conseguenza, il sistema operativo copre i pixel che non sono ancora stati aggiornati in quel frame. Questa situazione, tuttavia, non genera problemi visivi nell'app client perché si riceve l'intera immagine desktop e non solo i pixel aggiornati.
+Mentre il sistema operativo accumula gli aggiornamenti delle immagini desktop non elaborate, lo spazio potrebbe essere insufficiente per archiviare in modo accurato le aree di aggiornamento. In questo caso, il sistema operativo inizia ad accumulare gli aggiornamenti unendoli con le aree di aggiornamento esistenti per coprire tutti i nuovi aggiornamenti. Di conseguenza, il sistema operativo copre i pixel non ancora aggiornati in tale frame. Questa situazione, tuttavia, non genera problemi visivi nell'app client perché si riceve l'intera immagine del desktop e non solo i pixel aggiornati.
 
-Per ricostruire l'immagine desktop corretta, l'app client deve prima elaborare tutte le aree di spostamento e quindi elaborare tutte le aree dirty. Uno di questi elenchi di aree dirty e di spostamento può essere completamente vuoto. Il codice di esempio dell' [esempio di duplicazione dei desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) Mostra come elaborare le aree dirty e Move in un singolo frame:
+Per ricostruire l'immagine desktop corretta, l'app client deve prima elaborare tutte le aree di spostamento e quindi elaborare tutte le aree dirty. Uno di questi elenchi di aree dirty e move può essere completamente vuoto. Il codice di esempio dell'esempio [di duplicazione desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) illustra come elaborare le aree dirty e move in un singolo frame:
 
 
 ```C++
@@ -164,24 +164,24 @@ HRESULT DUPLICATIONMANAGER::DoneWithFrame()
 
 
 
-## <a name="rotating-the-desktop-image"></a>Rotazione dell'immagine desktop
+## <a name="rotating-the-desktop-image"></a>Rotazione dell'immagine del desktop
 
-È necessario aggiungere codice esplicito all'app client di duplicazione desktop per supportare le modalità ruotate. In una modalità ruotata la superficie ricevuta da [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) è sempre nell'orientamento non ruotato e l'immagine desktop viene ruotata all'interno della superficie. Se, ad esempio, il desktop è impostato su 768x1024 a 90 gradi di rotazione, **AcquireNextFrame** restituisce una superficie 1024x768 con l'immagine del desktop ruotata al suo interno. Di seguito sono riportati alcuni esempi di rotazione.
+È necessario aggiungere codice esplicito all'app client di duplicazione desktop per supportare le modalità ruotate. In modalità ruotata, la superficie ricevuta da [**IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) è sempre con l'orientamento non ruotato e l'immagine del desktop viene ruotata all'interno della superficie. Ad esempio, se il desktop è impostato su 768x1024 a una rotazione di 90 gradi, **AcquireNextFrame** restituisce una superficie 1024x768 con l'immagine del desktop ruotata al suo interno. Ecco alcuni esempi di rotazione.
 
 
 
-| Modalità di visualizzazione impostata dal pannello di controllo di visualizzazione | Modalità di visualizzazione restituita da GDI o DXGI | Superficie restituita da [ **AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
+| Modalità di visualizzazione impostata dal pannello di controllo dello schermo | Modalità di visualizzazione restituita da GDI o DXGI | Surface restituito da [ **AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe)                |
 |---------------------------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|
-| orizzontale 1024x768                          | rotazione di 1024x768 0 gradi           | \[nuova riga 1024x768\] ![Desktop remoto non ruotato](images/dxgi-outdupl-0-rotate.png)<br/>            |
-| verticale 1024x768                           | rotazione 768x1024 90 Degree          | \[nuova riga 1024x768\] ![Desktop remoto ruotato di 90 gradi](images/dxgi-outdupl-90-rotate.png)<br/>   |
-| orizzontale 1024x768 (capovolto)                | rotazione di 180 gradi 1024x768         | \[nuova riga 1024x768\] ![Desktop remoto ruotato di 180 gradi](images/dxgi-outdupl-180-rotate.png)<br/> |
-| verticale da 1024x768 (capovolto)                 | rotazione 768x1024 270 degree         | \[nuova riga 1024x768\] ![Desktop remoto ruotato di 270 gradi](images/dxgi-outdupl-270-rotate.png)<br/> |
+| 1024x768 orizzontale                          | Rotazione di 0 gradi 1024x768           | Nuova riga 1024x768 \[\] ![Desktop remoto non torotated](images/dxgi-outdupl-0-rotate.png)<br/>            |
+| 1024x768 verticale                           | Rotazione di 768x1024 a 90 gradi          | Nuova riga 1024x768 \[\] ![Desktop remoto ruotato di 90 gradi](images/dxgi-outdupl-90-rotate.png)<br/>   |
+| 1024x768 orizzontale (capovolto)                | Rotazione di 1024x768 a 180 gradi         | Nuova riga 1024x768 \[\] ![Desktop remoto ruotato di 180 gradi](images/dxgi-outdupl-180-rotate.png)<br/> |
+| 1024x768 verticale (capovolto)                 | Rotazione di 768x1024 a 270 gradi         | Nuova riga 1024x768 \[\] ![Desktop remoto ruotato di 270 gradi](images/dxgi-outdupl-270-rotate.png)<br/> |
 
 
 
  
 
-Il codice nell'app client di duplicazione desktop deve ruotare l'immagine desktop in modo appropriato prima di visualizzare l'immagine del desktop.
+Il codice nell'app client di duplicazione desktop deve ruotare l'immagine del desktop in modo appropriato prima di visualizzare l'immagine desktop.
 
 > [!Note]  
 > Negli scenari con più monitor è possibile ruotare l'immagine del desktop per ogni monitoraggio in modo indipendente.
@@ -190,16 +190,16 @@ Il codice nell'app client di duplicazione desktop deve ruotare l'immagine deskto
 
 ## <a name="updating-the-desktop-pointer"></a>Aggiornamento del puntatore del desktop
 
-È necessario usare l'API di duplicazione desktop per determinare se l'app client deve disegnare la forma puntatore del mouse sull'immagine desktop. Il puntatore del mouse è già disegnato nell'immagine desktop fornita da [**IDXGIOutputDuplication:: AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) oppure il puntatore del mouse è separato dall'immagine desktop. Se il puntatore del mouse viene disegnato sull'immagine desktop, i dati di posizione del puntatore segnalati da **AcquireNextFrame** (nel membro **PointerPosition** di [**DXGI \_ OUTDUPL \_ frame \_ info**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) a cui punta il parametro *pFrameInfo* ) indicano che un puntatore separato non è visibile. Se la scheda grafica sovrappone il puntatore del mouse sulla parte superiore dell'immagine del desktop, **AcquireNextFrame** segnala che è visibile un puntatore separato. Quindi, l'app client deve disegnare la forma puntatore del mouse sull'immagine desktop per rappresentare in modo accurato ciò che l'utente corrente vedrà sul monitoraggio.
+È necessario usare l'API di duplicazione del desktop per determinare se l'app client deve disegnare la forma del puntatore del mouse sull'immagine del desktop. Il puntatore del mouse è già disegnato sull'immagine del desktop fornita da [**IDXGIOutputDuplication::AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) oppure il puntatore del mouse è separato dall'immagine del desktop. Se il puntatore del mouse viene disegnato sull'immagine desktop, i dati relativi alla posizione del puntatore segnalati da **AcquireNextFrame** (nel membro **PointerPosition** di [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) a cui punta il parametro *pFrameInfo)* indicano che un puntatore separato non è visibile. Se l'adattatore grafico sovrappone il puntatore del mouse sopra l'immagine del desktop, **AcquireNextFrame** segnala che è visibile un puntatore separato. L'app client deve quindi disegnare la forma del puntatore del mouse sull'immagine del desktop per rappresentare in modo accurato ciò che l'utente corrente visualizza sul monitor.
 
-Per creare il puntatore del mouse sul desktop, usare il membro **PointerPosition** di [**DXGI \_ OUTDUPL \_ frame \_ info**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) dal parametro *pFrameInfo* di [**AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) per determinare la posizione in cui posizionare l'angolo superiore sinistro del puntatore del mouse sull'immagine desktop. Quando si crea il primo frame, è necessario usare il metodo [**IDXGIOutputDuplication:: GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) per ottenere informazioni sulla forma del puntatore del mouse. Ogni chiamata a **AcquireNextFrame** per ottenere il frame successivo fornisce anche la posizione corrente del puntatore per quel frame. D'altra parte, è necessario usare nuovamente **GetFramePointerShape** solo se la forma viene modificata. Quindi, conserva una copia dell'ultima immagine puntatore e la usa per disegnare sul desktop, a meno che la forma del puntatore del mouse non venga modificata.
+Per disegnare il puntatore del mouse del desktop, usare il membro **PointerPosition** di [**DXGI \_ OUTDUPL \_ FRAME \_ INFO**](/windows/desktop/api/DXGI1_2/ns-dxgi1_2-dxgi_outdupl_frame_info) dal *parametro pFrameInfo* di [**AcquireNextFrame**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-acquirenextframe) per determinare dove individuare l'angolo superiore sinistro del puntatore del mouse sull'immagine del desktop. Quando si disegna il primo frame, è necessario usare il metodo [**IDXGIOutputDuplication::GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) per ottenere informazioni sulla forma del puntatore del mouse. Ogni chiamata a **AcquireNextFrame** per ottenere il frame successivo fornisce anche la posizione corrente del puntatore per tale frame. D'altra parte, è necessario usare **di nuovo GetFramePointerShape** solo se la forma cambia. Conservare quindi una copia dell'ultima immagine del puntatore e usarla per disegnare sul desktop a meno che la forma del puntatore del mouse non cambi.
 
 > [!Note]  
-> Insieme all'immagine della forma puntatore, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) fornisce le dimensioni della posizione sensibile. L'area sensibile viene fornita solo a scopo informativo. La posizione in cui creare l'immagine del puntatore è indipendente dall'area sensibile.
+> Insieme all'immagine della forma del puntatore, [**GetFramePointerShape**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgioutputduplication-getframepointershape) fornisce le dimensioni della posizione dell'area sensibile. L'area sensibile viene specificata solo a scopo informativo. La posizione in cui disegnare l'immagine del puntatore è indipendente dall'area sensibile.
 
  
 
-Questo esempio di codice dell' [esempio di duplicazione dei desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) Mostra come ottenere la forma del puntatore del mouse:
+Questo codice di esempio dell'esempio [di duplicazione desktop](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/DXGI%20desktop%20duplication%20sample) illustra come ottenere la forma del puntatore del mouse:
 
 
 ```C++
@@ -293,7 +293,7 @@ HRESULT DUPLICATIONMANAGER::GetMouse(_Out_ PTR_INFO* PtrInfo, _In_ DXGI_OUTDUPL_
 
 <dl> <dt>
 
-[Miglioramenti di DXGI 1,2](dxgi-1-2-improvements.md)
+[Miglioramenti di DXGI 1.2](dxgi-1-2-improvements.md)
 </dt> </dl>
 
  

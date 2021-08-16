@@ -1,21 +1,21 @@
 ---
-description: I pacchetti di notifica Winlogon sono dll che ricevono e gestiscono gli eventi generati da Winlogon.
+description: I pacchetti di notifica Winlogon sono DLL che ricevono e gestiscono gli eventi generati da Winlogon.
 ms.assetid: 2245f7d3-714b-4405-aa0e-70f4697e7c64
-title: Pacchetti di notifica di Winlogon
+title: Pacchetti di notifica Winlogon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b863737250edcf78cdb2f07d9ad444db63600a68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13a2caad2e33ab15ffdb4faa30829709603c2ae6e39c5a0c6d9ee7039470b77a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103967238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785741"
 ---
-# <a name="winlogon-notification-packages"></a>Pacchetti di notifica di Winlogon
+# <a name="winlogon-notification-packages"></a>Pacchetti di notifica Winlogon
 
-I pacchetti di notifica [*Winlogon*](../secgloss/w-gly.md) sono dll che ricevono e gestiscono gli eventi generati da Winlogon. È possibile implementare un pacchetto di notifica di questo tipo per monitorare e rispondere agli eventi di Winlogon. Questa operazione è utile per le applicazioni che devono eseguire un'elaborazione aggiuntiva durante l'accesso o la disconnessione oppure per mantenere le informazioni [*sullo stato*](../secgloss/s-gly.md) che devono essere aggiornate quando si verificano eventi Winlogon.
+[*I pacchetti di notifica Winlogon*](../secgloss/w-gly.md) sono DLL che ricevono e gestiscono gli eventi generati da Winlogon. È possibile implementare un pacchetto di notifica di questo tipo per monitorare e rispondere agli eventi Winlogon. Ciò è utile per le applicazioni che devono eseguire un'elaborazione aggiuntiva durante l'accesso o la disconnessione o mantenere le informazioni sullo stato che devono essere aggiornate quando si verificano eventi Winlogon. [](../secgloss/s-gly.md)
 
-Per ulteriori informazioni su Winlogon e GINA, vedere [Winlogon e Gina](winlogon-and-gina.md).
+Per altre informazioni su Winlogon e LEA, vedere [Winlogon e LEA.](winlogon-and-gina.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -27,10 +27,10 @@ Per ulteriori informazioni su Winlogon e GINA, vedere [Winlogon e Gina](winlogon
 [Registrazione di un pacchetto di notifica Winlogon](registering-a-winlogon-notification-package.md)
 </dt> <dt>
 
-[Eventi di notifica Winlogon](winlogon-notification-events.md)
+[Eventi di notifica winlogon](winlogon-notification-events.md)
 </dt> <dt>
 
-[Informazioni di riferimento sul pacchetto di notifiche Winlogon](winlogon-notification-package-reference.md)
+[Informazioni di riferimento sul pacchetto di notifica Winlogon](winlogon-notification-package-reference.md)
 </dt> </dl>
 
  

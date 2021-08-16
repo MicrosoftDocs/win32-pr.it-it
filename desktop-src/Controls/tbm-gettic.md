@@ -1,9 +1,9 @@
 ---
-title: Messaggio TBM_GETTIC (COMmctrl. h)
-description: Recupera la posizione logica di un segno di graduazione in un TrackBar. La posizione logica può essere uno qualsiasi dei valori integer nell'intervallo compreso tra le posizioni minime e massime del dispositivo di scorrimento.
+title: TBM_GETTIC messaggio (Commctrl.h)
+description: Recupera la posizione logica di un segno di graduazione in un trackbar. La posizione logica può essere uno qualsiasi dei valori interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 ms.assetid: 9d70c860-de97-4579-bb10-e9e9db7f1784
 keywords:
-- Controlli di Windows Message TBM_GETTIC
+- TBM_GETTIC dei controlli Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d534d5100e20cc544c31fca2fc9e49cda3bd976
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b7cdd2c28f9add787c41da3cde3fabc3a5dff33812b3dd9c07a26a603d3a79e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104476798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829605"
 ---
-# <a name="tbm_gettic-message"></a>\_Messaggio Getter TBM
+# <a name="tbm_gettic-message"></a>Messaggio \_ GETTIC TBM
 
-Recupera la posizione logica di un segno di graduazione in un TrackBar. La posizione logica può essere uno qualsiasi dei valori integer nell'intervallo compreso tra le posizioni minime e massime del dispositivo di scorrimento.
+Recupera la posizione logica di un segno di graduazione in un trackbar. La posizione logica può essere uno qualsiasi dei valori interi nell'intervallo tra le posizioni minime e massime del dispositivo di scorrimento del trackbar.
 
 ## <a name="parameters"></a>Parametri
 
@@ -32,7 +32,7 @@ Recupera la posizione logica di un segno di graduazione in un TrackBar. La posiz
 *wParam* 
 </dt> <dd>
 
-Indice in base zero che identifica un segno di graduazione. Gli indici validi sono compresi nell'intervallo da zero a due minori rispetto al conteggio restituito dal messaggio [**TBM \_ GETNUMTICS**](tbm-getnumtics.md) .
+Indice in base zero che identifica un segno di graduazione. Gli indici validi sono nell'intervallo compreso tra zero e due valori inferiori al numero di tick restituito dal messaggio [**\_ TBM GETNUMTICS.**](tbm-getnumtics.md)
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Indice in base zero che identifica un segno di graduazione. Gli indici validi so
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la posizione logica del segno di graduazione specificato oppure-1 se *wParam* non specifica un indice valido.
+Restituisce la posizione logica del segno di graduazione specificato oppure -1 se *wParam* non specifica un indice valido.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,9 +49,9 @@ Restituisce la posizione logica del segno di graduazione specificato oppure-1 se
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

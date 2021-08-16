@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 09701991d6b192d27f921642bfc960df819f9140
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50a53e819fcfd12ff490b4e6642536c01d9a49b4e9345e7713bf0eb08a0fac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117770020"
 ---
 # <a name="certstoreprovfindcert-callback-function"></a>Funzione di callback CertStoreProvFindCert
 
-La funzione di callback **CertStoreProvFindCert** enumera o trova il primo o il certificato successivo in un [*archivio esterno*](../secgloss/e-gly.md) che corrisponde ai criteri specificati.
+La funzione di callback **CertStoreProvFindCert** enumera o trova il primo o il certificato successivo in un archivio [*esterno*](../secgloss/e-gly.md) che corrisponde ai criteri specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvFindCert(
 
 <dl> <dt>
 
-*hStoreProv* \[ in\]
+*hStoreProv* \[ Pollici\]
 </dt> <dd>
 
-Handle **HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
+**Handle HCERTSTOREPROV** per un [*archivio certificati*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pFindInfo* \[ in\]
+*pFindInfo* \[ Pollici\]
 </dt> <dd>
 
-Un puntatore a un [**\_ archivio certificati \_ prova a \_ trovare \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) la struttura di informazioni contenente tutti i parametri passati alla funzione [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore) .
+Puntatore a una [**struttura CERT \_ STORE \_ PROV FIND \_ \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) contenente tutti i parametri passati alla funzione [**CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
 
 </dd> <dt>
 
-*pPrevCertContext* \[ in\]
+*pPrevCertContext* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a un [**\_ contesto CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) del certificato trovato. Alla prima chiamata alla funzione, questo parametro deve essere impostato su **null**. Nelle chiamate successive deve essere impostato sul puntatore restituito nel parametro *ppProvCertContext* nell'ultima chiamata. Un puntatore non **null** passato in questo parametro viene liberato dalla funzione di callback.
+Puntatore a un [**CERT \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) del certificato trovato. Alla prima chiamata alla funzione, questo parametro deve essere impostato su **NULL.** Nelle chiamate successive, deve essere impostato sul puntatore restituito nel *parametro ppProvCertContext* nell'ultima chiamata. Un **puntatore** non NULL passato in questo parametro viene liberato dalla funzione di callback.
 
 </dd> <dt>
 
-*dwFlags* \[ in\]
+*dwFlags* \[ Pollici\]
 </dt> <dd>
 
 Tutti i valori di flag necessari.
 
 </dd> <dt>
 
-*ppvStoreProvFindInfo* \[ in uscita\]
+*ppvStoreProvFindInfo* \[ in, out\]
 </dt> <dd>
 
 Puntatore a un puntatore a un buffer per restituire le informazioni sul provider dell'archivio. Facoltativamente, il callback può restituire un puntatore alle informazioni di ricerca interne in questo parametro. Dopo la prima chiamata, questo parametro viene impostato sul puntatore restituito dalla chiamata precedente alla funzione.
 
 </dd> <dt>
 
-*ppProvCertContext* \[ out\]
+*ppProvCertContext* \[ Cambio\]
 </dt> <dd>
 
-In una ricerca corretta viene restituito un puntatore al certificato trovato in questo parametro.
+In caso di esito positivo della ricerca, in questo parametro viene restituito un puntatore al certificato trovato.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce **true** se la funzione ha esito positivo o **false** se l'operazione ha esito negativo.
+Restituisce **TRUE** se la funzione ha esito positivo o **FALSE** se ha esito negativo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -95,8 +95,8 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 
@@ -104,10 +104,10 @@ Restituisce **true** se la funzione ha esito positivo o **false** se l'operazion
 
 <dl> <dt>
 
-[**contesto del certificato \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
+[**CONTESTO \_ CERT**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
-[**\_informazioni su \_ prova \_ archivio \_ certificati**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
+[**CERT \_ STORE \_ PROV \_ FIND \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
 </dt> <dt>
 
 [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)

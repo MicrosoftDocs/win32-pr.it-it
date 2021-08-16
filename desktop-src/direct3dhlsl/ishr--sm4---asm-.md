@@ -1,23 +1,23 @@
 ---
-title: ISHR (SM4-ASM)
-description: Spostamento aritmetico a destra (estensione di segno). | ISHR (SM4-ASM)
+title: ishr (sm4 - asm)
+description: Spostamento aritmetico a destra (estensione del segno). | ishr (sm4 - asm)
 ms.assetid: AFE46BBA-A6B2-4691-A3F4-A4141F1578DB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7516543c5501ed886c5c1fa98d093062e3099a0f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2d2ec191320561b05ba736b7da5630fb50a610e739d0e74f9def3eaa10bb4e17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104995732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511136"
 ---
-# <a name="ishr-sm4---asm"></a>ISHR (SM4-ASM)
+# <a name="ishr-sm4---asm"></a>ishr (sm4 - asm)
 
-Spostamento aritmetico a destra (estensione di segno).
+Spostamento aritmetico a destra (estensione del segno).
 
 
 
-| ISHR dest \[ . mask \] , src0 \[ . Swizzle \] , src1. Select \_ Component |
+| ishr dest \[ .mask \] , src0 \[ .swizzle \] , src1.select \_ component |
 |--------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Spostamento aritmetico a destra (estensione di segno).
 
 | Elemento                                                            | Descrizione                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[in \] contiene il risultato dell'operazione.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] contiene il valore da spostare.<br/>     |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] contiene l'importo dello spostamento.<br/>            |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Contiene il risultato dell'operazione.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Contiene il valore da spostare.<br/>     |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Contiene l'importo dello spostamento.<br/>            |
 
 
 
@@ -38,9 +38,9 @@ Spostamento aritmetico a destra (estensione di segno).
 
 ## <a name="remarks"></a>Commenti
 
-Questa istruzione esegue uno spostamento aritmetico a livello di componente di ogni valore a 32 bit in *src0* a destra di un numero di bit unsigned integer fornito da LSB 5 bits (intervallo 0-31) nel *\_ componente src1. Select*, replicando il valore di bit 31. Il risultato di 32 bit per componente viene inserito in *dest*. Il conteggio è un valore scalare applicato a tutti i componenti.
+Questa istruzione esegue uno spostamento aritmetico a livello di componente di ogni valore a 32 bit in *src0* a destra di un conteggio di bit intero senza segno fornito dall'intervallo 5 bit LSB (intervallo 0-31) nel *componente src1.select \_*, replicando il valore del bit 31. Il risultato a 32 bit per componente viene inserito in *dest*. Il conteggio è un valore scalare applicato a tutti i componenti.
 
-Questa istruzione si applica alle fasi dello shader seguenti:
+Questa istruzione si applica alle fasi di shader seguenti:
 
 
 
@@ -52,20 +52,20 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello di shader minimo
 
-Questa funzione è supportata nei modelli shader seguenti.
+Questa funzione è supportata nei modelli di shader seguenti.
 
 
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (HLSL DirectX)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly del modello shader 4 (HLSL DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

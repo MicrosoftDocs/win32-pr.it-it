@@ -1,82 +1,82 @@
 ---
-title: Schema e algoritmi del profilo del modello di mappa del programma WCS
-description: Schema e algoritmi del profilo del modello di mappa del programma WCS
+title: Schema e algoritmi del profilo del modello mappa WCS Gamut
+description: Schema e algoritmi del profilo del modello mappa WCS Gamut
 ms.assetid: 64b9871a-1b4f-4e9a-be4d-4c25b3198b91
 keywords:
-- Windows Color System (WCS), profilo del modello di mappa gamut (GMMP)
-- WCS (sistema di colori Windows), profilo del modello di mappa gamut (GMMP)
-- Gestione colori immagine, profilo del modello di mappa gamut (GMMP)
-- gestione dei colori, profilo del modello di mappa gamut (GMMP)
-- colori, profilo del modello di mappa gamut (GMMP)
-- Windows Color System (WCS), profili
+- Windows Sistema colori (WCS), profilo del modello mappa gamut (GMMP)
+- WCS (Windows Color System), profilo del modello mappa gamut (GMMP)
+- gestione del colore delle immagini, profilo del modello mappa gamut (GMMP)
+- gestione dei colori, profilo del modello mappa gamut (GMMP)
+- colors,gamut map model profile (GMMP)
+- Windows Sistema a colori (WCS), profili
 - WCS (Windows Color System), profili
-- Gestione colori immagine, profili
+- gestione dei colori delle immagini, profili
 - gestione dei colori, profili
 - colori, profili
-- profilo del modello di mappa gamut (GMMP)
-- GMMP (Profilo modello di mappa gamut)
-- Profilo del modello di mappa della gamma WCS
-- schemi, profilo del modello di mappa gamut (GMMP)
-- algoritmi, profilo del modello di mappa gamut (GMMP)
+- Profilo del modello mappa gamut (GMMP)
+- GMMP (profilo modello mappa gamut)
+- Profilo del modello mappa gamut WCS
+- schemi, profilo del modello mappa gamut (GMMP)
+- algoritmi, profilo del modello mappa gamut (GMMP)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3714e5d7592cb1fbbbfa98e238642a2fcb38bafd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e7db5b7a26fe5832fe33095c5785e90ad0a6938649878ff279e101a7e5817cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104554173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118037291"
 ---
-# <a name="wcs-gamut-map-model-profile-schema-and-algorithms"></a>Schema e algoritmi del profilo del modello di mappa del programma WCS
+# <a name="wcs-gamut-map-model-profile-schema-and-algorithms"></a>Schema e algoritmi del profilo del modello mappa WCS Gamut
 
 -   [Overview](#overview)
--   [Architettura del profilo del modello di mappa gamut](#gamut-map-model-profile-architecture)
--   [Generazione del limite della gamma](#generation-of-the-gamut-boundary)
--   [Schema GMMP](#the-gmmp-schema)
+-   [Architettura del profilo del modello mappa Gamut](#gamut-map-model-profile-architecture)
+-   [Generazione del limite Gamut](#generation-of-the-gamut-boundary)
+-   [The GMMP Schema](#the-gmmp-schema)
 -   [Elementi dello schema GMMP](#the-gmmp-schema-elements)
 -   [GamutMapModel](#defaultbaselinegamutmapmodel-type)
     -   [Namespace](#namespace)
-    -   [Versione](#version)
+    -   [Version](#version)
     -   [Documentazione](#documentation)
     -   [Tipo DefaultBaselineGamutMapModel](#defaultbaselinegamutmapmodel-type)
     -   [PlugInGamutMapType](#plugingamutmaptype)
-    -   [ExtensionType](#extensiontype)
--   [Algoritmi di base di GMMP](#the-gmmp-baseline-algorithms)
+    -   [Extensiontype](#extensiontype)
+-   [Algoritmi di base GMMP](#the-gmmp-baseline-algorithms)
 -   [Allineamento degli assi neutri](#aligning-the-neutral-axes)
-    -   [Differenza colore minima (macinata)](#minimum-color-difference-mincd)
+    -   [Differenza di colore minima (MinCD)](#minimum-color-difference-mincd)
     -   [BasicPhoto](#basicphoto)
     -   [Overview](#overview)
-    -   [Il caso della shell della gamma singola](#the-case-of-single-gamut-shell)
-    -   [Miglioramento nero](#black-enhancement)
-    -   [Il caso di Shell Dual gamut](#the-case-of-dual-gamut-shells)
-    -   [Motivi per le modifiche apportate ai consigli CIE TC8-03](#reasons-for-changes-from-the-cie-tc8-03-recommendations)
-    -   [Mapping tonalità](#hue-mapping)
--   [Descrizione limite gamut e algoritmi della shell gamut](#gamut-boundary-description-and-gamut-shell-algorithms)
-    -   [Triangolazione del limite della gamma](#triangulation-of-the-gamut-boundary)
+    -   [Caso di shell a gamut singolo](#the-case-of-single-gamut-shell)
+    -   [Miglioramento del nero](#black-enhancement)
+    -   [Caso di shell a doppio gamut](#the-case-of-dual-gamut-shells)
+    -   [Motivi per le modifiche apportate alle raccomandazioni CIE TC8-03](#reasons-for-changes-from-the-cie-tc8-03-recommendations)
+    -   [Mapping delle tonalità](#hue-mapping)
+-   [Descrizione dei limiti gamut e algoritmi della shell Gamut](#gamut-boundary-description-and-gamut-shell-algorithms)
+    -   [Triangolazione del limite gamut](#triangulation-of-the-gamut-boundary)
     -   [Elementi linea limite](#boundary-line-elements)
-    -   [Operazione gamut: CheckGamut](#gamut-operation-checkgamut)
-    -   [Piano di Hue completo: Intersect](#full-hue-plane-intersect)
-    -   [Operazione gamut: CheckGamut (continua)](#gamut-operation-checkgamut-continued)
-    -   [Mapping del gamut di differenza colore minimo](#minimum-color-difference-gamut-mapping)
-    -   [Smussatura tonalità](#hue-smoothing)
-    -   [Impostazione di primari e secondari nella descrizione del limite della gamma](#setting-primaries-and-secondaries-in-the-gamut-boundary-description)
-    -   [Impostazione dell'asse neutro nella descrizione del limite della gamut](#setting-the-neutral-axis-in-the-gamut-boundary-description)
+    -   [Operazione Gamut: CheckGamut](#gamut-operation-checkgamut)
+    -   [Piano tinta completa: Interseca](#full-hue-plane-intersect)
+    -   [Operazione Gamut: CheckGamut (continua)](#gamut-operation-checkgamut-continued)
+    -   [Mapping gamut differenza colore minima](#minimum-color-difference-gamut-mapping)
+    -   [Smussamento della tonalità](#hue-smoothing)
+    -   [Impostazione di primarie e secondarie nella descrizione dei limiti gamut](#setting-primaries-and-secondaries-in-the-gamut-boundary-description)
+    -   [Impostazione dell'asse neutro nella descrizione del limite gamut](#setting-the-neutral-axis-in-the-gamut-boundary-description)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="overview"></a>Panoramica
 
-Questo schema viene utilizzato per specificare il contenuto di un profilo del modello di mappa gamut (GMMP). Gli algoritmi di base associati sono descritti nell'argomento seguente.
+Questo schema viene usato per specificare il contenuto di un profilo del modello mappa gamut (GMMP). Gli algoritmi di base associati sono descritti nell'argomento seguente.
 
-Lo schema GMMP di base è costituito da informazioni di intestazione comuni, un riferimento facoltativo a un plug-in del modello di mappa gamut preferito e tag di estensione.
+Lo schema GMMP di base è costituito da informazioni di intestazione comuni, un riferimento facoltativo a un plug-in gamut map model preferito e tag di estensione.
 
-Inoltre, GMMP fornisce informazioni esplicite sul modello di mappa del gamut di destinazione e fornisce un criterio sul modello di mappa del gamut di fallback di base da usare se il modello di destinazione non è disponibile. Lo schema può includere informazioni sull'estensione privata, ma non includerà altre informazioni estranee.
+Il GMMP fornisce inoltre informazioni esplicite sul modello mappa Gamut di destinazione e fornisce criteri sul modello mappa Gamut di fallback di base da usare se il modello di destinazione non è disponibile. Lo schema può includere informazioni di estensione private, ma non include altre informazioni estranee.
 
-## <a name="gamut-map-model-profile-architecture"></a>Architettura del profilo del modello di mappa gamut
+## <a name="gamut-map-model-profile-architecture"></a>Architettura del profilo del modello mappa Gamut
 
-![Diagramma che mostra il profilo del modello di mappa gamut.](images/gmmp-image002.png)
+![Diagramma che mostra il profilo del modello mappa Gamut.](images/gmmp-image002.png)
 
-Il campionamento dello spazio colorante del dispositivo di output viene eseguito scorrendo i coloranti da 0,0 a 1,0 con un passaggio frazionario, accumulando tutte le combinazioni di ogni colore a ogni passaggio e quindi convertendo tali combinazioni dallo spazio colorante del dispositivo allo spazio di aspetto dei colori utilizzando il metodo DM::D eviceToColorimetricColors seguito dal metodo CAM:: ColorimetricToAppearanceColors. Di seguito è riportato un esempio di come eseguire questa operazione per RGB.
+Il campionamento dello spazio colorante del dispositivo di output viene eseguito tramite l'iterazione delle coloranti da 0.0 a 1.0 con un passaggio frazionario, accumulando tutte le combinazioni di ogni colorante in ogni passaggio e quindi convertendole dallo spazio colorante del dispositivo allo spazio dell'aspetto del colore usando il metodo DM::D eviceToColorimetricColors seguito dal metodo CAM::ColorimetricToAppearanceColors. Di seguito è riportato un esempio di come viene eseguita questa operazione per RGB.
 
 
 ```C++
@@ -102,15 +102,15 @@ For (red= 0.0; red <= 1.0; red += redStep) {
 
 
 
-## <a name="generation-of-the-gamut-boundary"></a>Generazione del limite della gamma
+## <a name="generation-of-the-gamut-boundary"></a>Generazione del limite Gamut
 
-Sono disponibili tre componenti al limite della gamma: le primarie, gli esempi neutri e le shell. Le primarie vengono generate prendendo le primarie del dispositivo e applicando la trasformazione DeviceToColorimetric/ColorimetricToAppearance. Gli esempi neutri vengono generati eseguendo il campionamento dello spazio colorante del dispositivo nell'area neutra e applicando la stessa trasformazione. Per tre dispositivi colorati (RGB o CMY), gli esempi neutri vengono definiti come aventi tutti i coloranti uguali, ad esempio R = = G = = B. Per CMYK, gli esempi neutri sono definiti con C = = M = = Y = = 0.
+Esistono tre componenti al limite della gamma: le primarie, i campioni neutri e le shell. Le primarie vengono generate prendendo le primarie del dispositivo e applicando la trasformazione DeviceToColorimetric/ColorimetricToAppearance. I campioni neutri vengono generati tramite il campionamento dello spazio colorante del dispositivo nell'area neutra e l'applicazione della stessa trasformazione. Per tre dispositivi coloranti (RGB o CMY), i campioni neutri sono definiti come con tutte le coloranti uguali, ad esempio R == G == B. Per CMYK, gli esempi neutri sono definiti come C == M == Y == 0.
 
-I fattori che influenzano i dati usati per creare il limite di gamut sono gli esempi di dati (solo per i dispositivi baseline) e le condizioni di visualizzazione. La dimensione del passaggio utilizzata per eseguire il campionamento completo dello spazio colorato (per i monitoraggi e per la shell plausibile) è una costante interna e non è disponibile per la manipolazione esterna. Se si modificano le condizioni di visualizzazione, il comportamento del modello di aspetto colore (camma) viene modificato e viene modificata la forma del limite della gamma, pertanto è necessario generare un limite di gamut associato al profilo delle condizioni di visualizzazione. Se si usano dati di esempio, come nel caso delle stampanti di base e dei dispositivi di acquisizione, gli esempi avranno un notevole impatto sulla forma della gamma di riferimento e influiscono sul comportamento del modello stesso.
+I fattori che influenzano i dati usati per creare il limite di gamut sono i campioni di dati (solo dispositivi di base) e le condizioni di visualizzazione. La dimensione del passaggio usata per eseguire il campionamento completo dello spazio colorante (per i monitoraggi e per la shell plausibile) è una costante interna e non è disponibile per la manipolazione esterna. La modifica delle condizioni di visualizzazione modifica il comportamento del modello di aspetto colore (CAM) e modifica la forma del limite di gamut, quindi è necessario generare un limite di gamut associato al profilo delle condizioni di visualizzazione. Se vengono usati dati di esempio, come nel caso delle stampanti di base e dei dispositivi di acquisizione, gli esempi avranno un notevole impatto sulla forma della gamma di riferimento e influiranno sul comportamento del modello stesso.
 
-Per i dispositivi di input, ad esempio fotocamere e scanner, vengono usati campionamenti diversi per generare la shell di riferimento e la shell plausibile. La shell di riferimento viene generata dalle misurazioni usate per inizializzare il modello di dispositivo. La shell plausibile viene generata in modo analogo all'illustrazione precedente per i dispositivi di output. La differenza è che quando si importano una destinazione tipica, non si ottengono valori completamente saturi (dove R, G o B = 255). È necessario estrapolare usando il modello di dispositivo per stimare tali valori.
+Per i dispositivi di input, ad esempio fotocamere e scanner, vengono usati campionamenti diversi per generare la shell di riferimento e la shell plausibile. La shell di riferimento viene generata dalle misurazioni usate per inizializzare il modello di dispositivo. La shell plausibile viene generata in modo simile alla figura precedente per i dispositivi di output. La differenza è che quando si input una destinazione tipica, non si ottengono valori completamente saturi (dove R, G o B = 255). È necessario eseguire l'estrapolazione usando il modello di dispositivo per stimare tali valori.
 
-## <a name="the-gmmp-schema"></a>Schema GMMP
+## <a name="the-gmmp-schema"></a>The GMMP Schema
 
 
 ```C++
@@ -172,36 +172,36 @@ Per i dispositivi di input, ad esempio fotocamere e scanner, vengono usati campi
 
 ## <a name="gamutmapmodel"></a>GamutMapModel
 
-Questo elemento è una sequenza dei sottoelementi seguenti:
+Questo elemento è una sequenza dei sotto-elementi seguenti:
 
 1.  Stringa ProfileName,
 2.  DefaultBaselineGamutMapModel,
 3.  Stringa di descrizione facoltativa,
-4.  Stringa autore facoltativa,
+4.  Stringa di creazione facoltativa,
 5.  PlugInGamutMap facoltativo e
 6.  ExtensionType facoltativo.
 
-**Condizioni di convalida** : ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di** convalida: ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="namespace"></a>Spazio dei nomi
 
-xmlns: MGM = " http://schemas.microsoft.com/windows/2005/02/color/GamutMapModel "
+xmlns:gmm=" http://schemas.microsoft.com/windows/2005/02/color/GamutMapModel "
 
-targetNamespace = " http://schemas.microsoft.com/windows/2005/02/color/GamutMapModel "
+targetNamespace=" http://schemas.microsoft.com/windows/2005/02/color/GamutMapModel "
 
 ### <a name="version"></a>Versione
 
-Versione "1,0" con la prima versione di Windows Vista.
+Versione "1.0" con la prima versione di Windows Vista.
 
-**Condizioni di convalida** : 1,0 in Windows Vista. &lt;Sono inoltre valide le versioni 2,0 per supportare le modifiche non di rilievo nel formato.
+**Condizioni di** convalida: 1.0 in Windows Vista. Le &lt; versioni 2.0 sono valide anche per supportare modifiche non di rilievo al formato.
 
 ### <a name="documentation"></a>Documentazione
 
-Schema del profilo del modello di mappa gamut.
+Schema del profilo del modello mappa Gamut.
 
 Copyright (C) Microsoft. Tutti i diritti sono riservati.
 
-**Condizioni di convalida** : ogni sottoelemento viene convalidato in base al relativo tipo.
+**Condizioni di** convalida: ogni sotto-elemento viene convalidato in base al proprio tipo.
 
 ### <a name="defaultbaselinegamutmapmodel-type"></a>Tipo DefaultBaselineGamutMapModel
 
@@ -209,102 +209,102 @@ Tipo UINT
 
 Valori di enumerazione:
 
-<dl> "Totale tritati \_ "  
-"MinCd \_ relativa"  
-"SIG \_ ginocchio"  
+<dl> "MinCD \_ Absolute"  
+"MinCD \_ Relative"  
+"SIG \_ KNEE"  
 "HueMap"  
 </dl>
 
-**Condizioni di convalida** : i valori devono corrispondere a una delle enumerazioni precedenti.
+**Condizioni di convalida:** i valori devono corrispondere a una delle enumerazioni precedenti.
 
 ### <a name="plugingamutmaptype"></a>PlugInGamutMapType
 
-Questo elemento è una sequenza di un GUID GUIDType e di tutti gli elementi secondari.
+Questo elemento è una sequenza di GUID GUIDType ed eventuali elementi secondari.
 
-**Condizioni di convalida** : il GUID viene usato per trovare la corrispondenza con il GUID della dll del plug-in MGM. Sono presenti un massimo di 100.000 sottoelementi personalizzati.
+**Condizioni di** convalida: il GUID viene usato per corrispondere al GUID della DLL plug-in GMM. Esistono un massimo di 100.000 elementi secondari personalizzati.
 
-### <a name="extensiontype"></a>ExtensionType
+### <a name="extensiontype"></a>Extensiontype
 
-Questo elemento è una sequenza facoltativa di qualsiasi sottoelemento.
+Questo elemento è una sequenza facoltativa di tutti gli elementi secondari.
 
-**Condizioni di convalida** : possono essere presenti al massimo 100.000 sottoelementi.
+**Condizioni di** convalida: possono essere presenti al massimo 100.000 elementi secondari.
 
-## <a name="the-gmmp-baseline-algorithms"></a>Algoritmi di base di GMMP
+## <a name="the-gmmp-baseline-algorithms"></a>Algoritmi di base GMMP
 
 ## <a name="aligning-the-neutral-axes"></a>Allineamento degli assi neutri
 
-La maggior parte degli algoritmi di mapping di gamut è in grado di eseguire il mapping dell'asse neutro del dispositivo di origine all'asse neutro del dispositivo di destinazione, ovvero il bianco passa a bianco, da nero a nero e da grigio a grigio. Questo problema viene risolto in parte scalando la luminosità dei colori di origine in modo che corrisponda all'intervallo di luminosità del dispositivo di destinazione. Ma questo non risolve completamente il problema.
+La maggior parte degli algoritmi di mapping a gamut ha l'obiettivo di eseguire il mapping dell'asse neutro del dispositivo di origine all'asse neutro del dispositivo di destinazione: il bianco passa al bianco, dal nero al nero e dal grigio al grigio. Questa operazione viene affrontata in parte ridimensionando la leggerezza dei colori di origine in modo che corrisponda alla gamma di luminosità del dispositivo di destinazione. Ma questo non consente di risolvere completamente il problema.
 
-Si tratta di una proprietà fisica della maggior parte dei dispositivi di imaging che la cromatità del dispositivo bianco non corrisponde esattamente alla cromaticità del nero del dispositivo. Ad esempio, il monitoraggio del bianco dipende dalla somma delle cromaticità e dalle luminanze relative dei tre primari, mentre il monitor nero dipende dalla riflettenza della superficie di visualizzazione. Il bianco della stampante dipende dalla cromaticità della carta, mentre la stampante nera dipende dall'input penna o dal toner usato. Un modello di aspetto che esegue il mapping del dispositivo bianco esattamente all'asse neutro dello spazio di aspetto (Chroma esattamente uguale a zero) non eseguirà il mapping del dispositivo nero all'asse neutro. Poiché l'occhio è più sensibile alle differenze di croma Man mano che aumenta la luminosità, i grigi sono rappresentati come ancora più cromatici del nero del dispositivo. Nella figura 1 viene illustrata la curvatura degli assi neutri in due dimensioni. Infatti, gli assi neutri formano una curva più complessa in tre dimensioni.
+È una proprietà fisica della maggior parte dei dispositivi di creazione di immagini che la cromaticità del bianco del dispositivo non corrisponde esattamente alla cromaticità del dispositivo nero. Ad esempio, il monitoraggio del bianco dipende dalla somma delle cromatiche e delle luminanze relative delle tre primarie, mentre il nero di monitoraggio dipende dalla riflettenza della superficie di visualizzazione. Il bianco della stampante dipende dalla cromaticità della carta, mentre il nero della stampante dipende dall'input penna o dal toner usato. Un modello di aspetto che esegue il mapping del bianco del dispositivo esattamente all'asse neutro dello spazio dell'aspetto (chroma esattamente uguale a zero) non esegue il mapping del dispositivo nero all'asse neutro. Poiché l'occhio è più sensibile alle differenze di croma con l'aumentare della luminosità, i grigi medi saranno rappresentati come ancora più cromatici rispetto al nero del dispositivo. La figura 1 illustra la curvatura degli assi neutri in due dimensioni. In realtà, gli assi neutri formano una curva più complessa in tre dimensioni.
 
-Mentre la camma prevede che questi colori neutri del dispositivo appariranno cromatici, gli osservatori effettivi sembrano compensare. La maggior parte degli utenti non considera questi valori neutri del dispositivo come cromatici. Per la maggior parte dei modelli di mapping di gamut, è pertanto necessario continuare a eseguire il mapping di origini neutre al dispositivo neutro.
+Mentre la CAM stima che questi colori neutri del dispositivo verranno visualizzati cromatici, gli osservatori effettivi sembrano compensare questo problema. La maggior parte delle persone non considera questi valori neutri del dispositivo come cromatici. Per la maggior parte dei modelli di mapping a gamut, è quindi consigliabile continuare a eseguire il mapping dei neutri di origine ai neutri del dispositivo.
 
-Per eseguire il mapping dei dati di origine neutri ai dispositivi neutri, regolare i limiti della gamma di origine e di destinazione e ogni pixel quando si applica l'algoritmo di mapping gamut. Modificare prima di tutto il valore del colore di origine in modo che l'asse neutro del dispositivo di origine alla luce del colore di origine cada direttamente sull'asse neutro dello spazio di aspetto. (Vedere il lato sinistro della figura 1). Modificare quindi la descrizione del limite gamut del dispositivo di destinazione in modo che ogni colore sull'asse neutro del dispositivo di destinazione alla luce del colore del limite della gamma di dispositivi di destinazione cada direttamente sull'asse neutro dello spazio di aspetto. (Vedere il lato destro della figura 1).
+Per eseguire il mapping dei neutri di origine ai neutri del dispositivo, regolare i limiti di gamut di origine e di destinazione e ogni pixel quando si applica l'algoritmo di mapping della gamma. Prima di tutto, regolare ogni valore nel colore di origine in modo che l'asse neutro del dispositivo di origine in corrispondenza della luminosità del colore di origine cada direttamente sull'asse neutro dello spazio dell'aspetto. Vedere il lato sinistro della figura 1. Modificare quindi la descrizione del limite della gamma del dispositivo di destinazione in modo che ogni colore sull'asse neutro del dispositivo di destinazione in corrispondenza della luce del colore del limite della gamma del dispositivo di destinazione ricada direttamente sull'asse neutro dello spazio dell'aspetto. Vedere il lato destro della figura 1.
 
-![Diagramma che mostra il grafico dei limiti della gamma di origine a sinistra e il limite della gamma di destinazione a destra.](images/gmmp-image004.png)
+![Diagramma che mostra il grafo limite gamut di origine a sinistra e il limite gamut di destinazione a destra.](images/gmmp-image004.png)
 
-**Figura 1** : allineamento degli assi neutri illustrati. Left: regolazione dei punti di origine relativi all'asse neutro del dispositivo di origine. Right: regolazione della descrizione del limite della gamma di destinazione rispetto alla descrizione del limite della gamma di destinazione.
+**Figura 1:** Allineamento degli assi neutri illustrati. A sinistra: regolazione dei punti di origine rispetto all'asse neutro del dispositivo di origine. A destra: modifica della descrizione del limite della gamma di destinazione rispetto alla descrizione del limite della gamma di destinazione.
 
-Si noti che si regola ogni valore del pixel di origine in relazione all'asse neutro in corrispondenza del valore di luminosità. Ciò assicura che i dispositivi di origine neutri siano ricadenti sull'asse neutro del modello di aspetto. Si spostano anche tutti gli altri colori alla luce della stessa quantità, in modo che non vi siano discontinuità nella rappresentazione del gamut di origine. È necessario passare da importi diversi a livelli di luminosità diversi, perché i valori neutri del dispositivo di origine non sono rappresentati come cromatici allo stesso modo a livelli di luminosità diversi. Ovviamente, non si tratta di una trasformazione semplice.
+Si noti che si regola ogni valore di pixel di origine rispetto all'asse neutro in corrispondenza di tale valore di leggerezza. Ciò garantisce che i neutri del dispositivo di origine cadranno sull'asse neutro del modello di aspetto. Si spostano anche tutti gli altri colori con tale luminosità della stessa quantità, in modo che non siano presenti discontinuità nella rappresentazione della gamma di origine. È necessario spostare di quantità diverse a livelli di luminosità diversi, perché i neutri del dispositivo di origine non sono rappresentati come ugualmente cromatici ai diversi livelli di luminosità. Chiaramente, non si tratta di una trasformazione semplice.
 
-La gestione dei valori del dispositivo di destinazione è leggermente più complessa. Inizialmente si regola l'intero limite della gamma di destinazione in modo analogo, ma in relazione all'asse neutro del dispositivo di destinazione. Questa operazione è illustrata nella figura 1 sul lato destro. Questa regolazione garantisce che i valori grigio di origine eseguiranno il mapping ai valori grigi di destinazione. Si tratta dello spazio in cui operano gli algoritmi di mapping della gamma.
+La gestione dei valori del dispositivo di destinazione è un po' più difficile. Inizialmente, si regola l'intero limite della gamma di destinazione in modo simile, ma rispetto all'asse neutro del dispositivo di destinazione. Questa operazione è illustrata nella figura 1 sul lato destro. Questa regolazione assicura che i valori grigi di origine verranno mappati ai valori grigi di destinazione. Questo è lo spazio in cui operano gli algoritmi di mapping della gamma.
 
-Tuttavia, questo spazio non descrive in modo accurato il vero comportamento del dispositivo di destinazione. È necessario invertire il mapping prima che i colori con mapping del gamut vengano passati al modello di aspetto e al modello di dispositivo di destinazione. Si sfalsano tutti i valori mappati in base al contrario dell'offset applicato in precedenza all'asse neutro del dispositivo di destinazione. In questo modo viene eseguito il mapping dell'asse neutro di destinazione al valore rappresentato originariamente dalla camma. Esegue la stessa operazione per il limite della gamma e per tutti i valori intermedi.
+Tuttavia, questo spazio non descrive in modo accurato il vero comportamento del dispositivo di destinazione. È necessario invertire il mapping prima che i colori mappati a gamut siano consegnati al modello di aspetto e al modello di dispositivo di destinazione. Tutti i valori mappati vengono compensati dall'opposto dell'offset applicato in precedenza all'asse neutro del dispositivo di destinazione. In questo modo viene eseguito il mapping dell'asse neutro di destinazione al valore rappresentato originariamente dalla CAM. Lo stesso vale per il limite di gamut e per tutti i valori intermedi.
 
-![Diagramma che mostra un grafico per l'angolazione dell'allineamento dell'asse neutro del dispositivo di destinazione.](images/gmmp-image008.png)
+![Diagramma che mostra un grafico per annullare l'allineamento dell'asse neutro del dispositivo di destinazione.](images/gmmp-image008.png)
 
-**Figura 2** : angolazione dell'allineamento dell'asse neutro del dispositivo di destinazione
+**Figura 2:** Annullamento dell'allineamento dell'asse neutro del dispositivo di destinazione
 
-### <a name="minimum-color-difference-mincd"></a>Differenza colore minima (macinata)
+### <a name="minimum-color-difference-mincd"></a>Differenza di colore minima (MinCD)
 
-Differenze di colore minime (tritate) e relative versioni assolute, equivalenti allo scopo colorimetrico di ICC.
+Differenza di colore minima (MinCD) Versioni relative e assolute, equivalenti alla finalità colorimetrica ICC.
 
 > [!Note]  
-> Il MGM tritato è adatto per il mapping di elementi grafici e linee che contengono colori "logo" (colori spot), sfumature di colore del logo con alcuni colori fuori gamma e per la fase finale delle trasformazioni di correzione. Sebbene il MGM tritato possa essere usato per immagini fotografiche completamente incluse nel gamut di destinazione, non è consigliabile per il rendering generale delle immagini fotografiche. Il mapping dei colori out-of-gamut ai colori sulla superficie della gamma di destinazione può comportare artefatti indesiderati, ad esempio irregolarità di tono o Croma in sfumature smussate che superano il limite della gamma. BasicPhoto è consigliato per le immagini fotografiche. Se un'immagine fotografica o contonica richiede un mapping di gamut diverso da BasicPhoto, l'alternativa dovrebbe essere la creazione di un plug-in MGM di implementazione del mapping, anziché l'uso di MinCd.
+> MinCD GMM è adatto per il mapping di grafica e line art contenenti colori "logo" (tinte piatte), sfumature di colore del logo con alcuni colori fuori gamma e per la fase finale delle trasformazioni di prova. Anche se minCD GMM può essere usato per immagini fotografiche interamente all'interno della gamma di destinazione, non è consigliabile per il rendering generale delle immagini fotografiche. Il mapping dei colori out-of-gamut ai colori sulla superficie della gamma di destinazione può causare artefatti indesiderati, ad esempio irregolarità del tono o della croma in sfumature lisce che attraversano il limite della gamma. BasicPhoto è consigliato per le immagini fotografiche. Se un'immagine di tipo fotografia o contone richiede un mapping di gamut diverso da BasicPhoto, l'alternativa consiste nel creare un GMM plug-in che implementa tale mapping, anziché usare MinCD.
 
  
 
-I colori in-gamut rimangono invariati. Per i colori fuori gamma, la luminosità e la cromaticità vengono regolate individuando il punto nella gamma di destinazione che ha la distanza di colore minima dai punti di input fuori dalla gamma. La distanza del colore viene calcolata nello spazio JCh. Tuttavia, si pondera la distanza in chiaro (J) e la distanza in Chroma (C) o Hue (h) in modo diverso. Una funzione di peso dipendente da Chroma viene utilizzata per la distanza in chiaro, in modo che il peso sia minore per la Croma piccola e più grande per la crominanza grande fino a quando non viene raggiunta la croma della soglia, dopo la quale il peso rimane a 1, ovvero lo stesso peso della distanza in Chroma o Hue. Segue l'utilizzo consigliato per CMC e CIEDE2000. Esistono due varianti: colorimetrico relativo e colorimetrico assoluto.
+I colori in gamut rimangono invariati. Per i colori out-of-gamut, la luminosità e la croma vengono regolate individuando il punto nella gamma di destinazione con la distanza minima del colore dai punti di input fuori gamma. La distanza dei colori viene calcolata nello spazio JCh. Tuttavia, si pondera la distanza in leggerezza (J) e la distanza in chroma (C) o tonalità (h) in modo diverso. Una funzione di peso dipendente dalla croma viene usata per la distanza in leggerezza in modo che il peso sia più piccolo per la croma piccola e più grande per la croma di grandi dimensioni fino a quando non viene raggiunta una chroma soglia, dopo la quale il peso rimane a 1, ovvero lo stesso peso della distanza in chroma o tonalità. Ciò segue l'utilizzo consigliato per CMC e CIEDE2000. Esistono due varianti: colorimetrica relativa e colorimetrica assoluta.
 
-**Colorimetrico relativo:** Allineare innanzitutto gli assi neutri di origine e di destinazione come descritto in precedenza. Quindi ritagliare il colore di origine regolato al limite della gamma di destinazione adattata. (Vedere la figura 4. Chroma mapping lungo la luminosità costante). Modificare i valori del dispositivo di destinazione come descritto in precedenza. Nel caso di un limite di gamut di destinazione monocromatico, il ritaglio Chroma significa che il valore Chroma (C) è impostato su zero (0,0).
+**Colorimetrica relativa:** Allineare prima di tutto gli assi neutri di origine e di destinazione, come descritto in precedenza. Ritagliare quindi il colore di origine regolato al limite della gamma di destinazione regolata. Vedere la figura 4. Mapping di chroma con una leggerezza costante. Regolare i valori del dispositivo di destinazione come descritto in precedenza. Nel caso di un limite gamut di destinazione monocromatico, il ritaglio della chroma indica che il valore della croma (C) è impostato su zero (0,0).
 
-**Colorimetrico assoluto:** Questa operazione è simile a colorimetrico relativo, ma senza l'allineamento dell'asse neutro di origine e di destinazione. Il valore di origine viene ritagliato direttamente sull'asse neutro di destinazione. Si noti che se i limiti del gamut di origine e di destinazione sono monocromi, il comportamento è identico alla variante colorimetrico relativa; ovvero viene eseguito l'allineamento degli assi neutri e quindi il Chroma viene troncato a zero. In questo modo si garantisce che un output ragionevole venga raggiunto anche se i supporti e i coloranti sono molto diversi.
+**Colorimetrica assoluta:** È simile alla colorimetrica relativa, ma senza l'allineamento dell'asse neutro di origine e di destinazione. Il valore di origine viene ritagliato direttamente sull'asse neutro di destinazione. Si noti che se i limiti della gamma di origine e di destinazione sono monocromatici, il comportamento è identico alla variante colorimetrica relativa. in altri, viene eseguito l'allineamento degli assi neutri e quindi la croma viene ritagliata a zero. In questo modo si garantisce che si osti un output ragionevole anche se i supporti e le coloranti sono significativamente diversi.
 
-![Diagramma che mostra un grafico per il ritaglio tritato alla gamma adattata.](images/gmmp-image010.png)
+![Diagramma che mostra un grafico per il ritaglio MinCD alla gamma regolata.](images/gmmp-image010.png)
 
-**Figura 3** : ritaglio tritato alla gamma adattata
+**Figura 3:** Ritaglio minCD alla gamma regolata
 
 ### <a name="basicphoto"></a>BasicPhoto
 
 ### <a name="overview"></a>Panoramica
 
-BasicPhoto: equivalente all'intento di Preferred, pittorico o percettivo ICC.
+BasicPhoto: equivalente alla finalità preferita, di tipo grafico o percettivo ICC.
 
-Questo algoritmo è una variante del mapping di luminosità sigmoidal che dipende dal Chroma e del ridimensionamento del ginocchio cuspide (SGCK) descritto da CIE TC8-03 in CIE156:2004. Questo algoritmo Variant supporta i descrittori di limite gamut (GBDs) con le shell a doppio gamut; ovvero GBDs con una shell di riferimento e una shell plausibile. L'algoritmo SGCK, che in origine presuppone solo una shell gamut in GBD, si basa sull'algoritmo del \_ ginocchio sig (Braun 1999), che incorpora il mapping della luminosità sigmoidal e il ridimensionamento delle funzioni ginocchio proposto da Braun e Fairchild (1999), combinati con la dipendenza Chroma da GCUSP (Morovic, 1998). Mantiene la costante Hue percepita, ad esempio, l'angolo di tonalità nel jab con correzione per Hue e usa un ridimensionamento della luminosità sigmoidal generico (indipendente dall'immagine) che viene applicato in modo dipendente da Chroma e una funzione del ginocchio del 90%. La variante si ridimensiona lungo le linee della luminosità costante.
+Questo algoritmo è una variante del mapping della leggerezza sigmoidale dipendente dalla croma e del ridimensionamento del ginocchio cuspide (SGCK) descritto da CIE TC8-03 in CIE156:2004. Questo algoritmo variant supporta i descrittori di limite gamut (GBD) con shell a doppio gamut. cio, GBD con una shell di riferimento e una shell plausibile. L'algoritmo SGCK, che originariamente presuppone una sola shell gamut nel GBD, si basa sull'algoritmo SIG KNEE (Braun 1999), che incorpora il mapping della leggerezza sigmoidale e il ridimensionamento delle funzioni del ginocchio proposto da Braun e Fairchild (1999), combinato con la dipendenza \_ della chroma da GCUSP (Morovic, 1998). Mantiene costante la tonalità percepita, ad esempio, l'angolo della tonalità in Un oggetto con correzione della tonalità e usa un ridimensionamento di luminosità sigmoida generico (indipendente dall'immagine) applicato in modo dipendente dalla croma e una croma della funzione del ginocchio del 90%. La variante viene ridimensionata lungo linee di leggerezza costante.
 
-### <a name="the-case-of-single-gamut-shell"></a>Il caso della shell della gamma singola
+### <a name="the-case-of-single-gamut-shell"></a>Caso di shell a gamut singolo
 
-È utile esaminare l'algoritmo nel caso in cui GBDs di origine e di destinazione abbiano solo una shell gamut. In questo caso, l'algoritmo è costituito dai calcoli seguenti.
+È utile esaminare l'algoritmo nel caso in cui i GBD di origine e di destinazione hanno una sola shell gamut. In questo caso, l'algoritmo è costituito dai calcoli seguenti.
 
-Eseguire innanzitutto il mapping della luminosità iniziale usando la formula seguente:
+Per prima cosa, eseguire il mapping iniziale della leggerezza usando la formula seguente:
 
-![Mostra la formula per il mapping della luminosità iniziale.](images/gmmp-image012.png) (1)
+![Mostra la formula per il mapping iniziale della leggerezza.](images/gmmp-image012.png) (1)
 
-dove *j ₒ* è la luce originale e *j <sub>R</sub>* è la luminosità della riproduzione.
+dove *Jₒ* è la leggerezza originale e *J <sub>R</sub>* è la leggerezza della riproduzione.
 
-![Mostra la seconda formula di mapping di luminosità.](images/gmmp-image014.png) (2)
+![Mostra la seconda formula di mapping della leggerezza.](images/gmmp-image014.png) (2)
 
-Quando il limite della gamma di origine è monocromatico, il valore Chroma sarà zero per il limite monocromatico a causa dell'allineamento dell'asse neutro. Questa operazione comporterà il caso di degenerazione dove C è uguale a zero. In questo caso, *p <sub>C</sub>* viene impostato su 1.
+Quando il limite della gamma di origine è monocromatico, il valore della croma sarà zero per il limite monocromatico a causa dell'allineamento dell'asse neutro. Ciò comporta il caso degenerato in cui C è uguale a zero. In questo caso, *p <sub>C</sub>* è impostato su 1.
 
-*p <sub>C</sub>* è un fattore di ponderazione dipendente da Chroma (Morovic, 1998) che dipende dal Chroma del colore originale, C e J sono *il <sub></sub>* risultato della luminosità originale di cui viene eseguito il mapping mediante una funzione sigmoidal.
+*p <sub>C</sub>* è un fattore di ponderazione dipendente dalla croma (Morovic, 1998) che dipende dalla croma del colore originale, C e *J <sub>S</sub>* sono il risultato del mapping della luminosità originale usando una funzione sigmoidal.
 
  
 
-Per calcolare *J <sub>S</sub>* (Braun e Fairchild, 1999), una tabella di ricerca unidimensionale (LUT) tra i valori originali e la luminosità della riproduzione viene prima configurata in base a una o più funzioni normali cumulative discrete.
+Per calcolare *J <sub>S</sub>* (Braun e Fairchild, 1999), viene prima impostata una tabella di ricerca unidimensionale (LUT) tra i valori di luminosità originale e di riproduzione sulla base di una funzione normale cumulativa discreta (S).
 
-![Mostra una formula per il calcolo di J s.](images/gmmp-image016.png) (3)
+![Mostra una formula per calcolare J s.](images/gmmp-image016.png) (3)
 
-dove x ₀ e S sono rispettivamente la media e la deviazione standard della distribuzione normale e *i* = 0, 1, 2... *m*,*m* è il numero di punti usato in LUT. *I <sub></sub> è il* valore della funzione normale cumulativa *per la*  / percentuale *m* . I parametri dipendono dalla luminosità del punto nero del gamut di riproduzione e possono essere interpolati dalla tabella 1. Per informazioni dettagliate sul calcolo di questi parametri, vedere Braun e Fairchild (1999, p. 391).
+dove x ₀ e S sono rispettivamente la deviazione media e standard della distribuzione normale e *i* = 0,1,2... *m*,*m* è il numero di punti usati nell'LUT. *S <sub>i</sub>* è il valore della funzione normale cumulativa per *i*  / *m* percent. I parametri dipendono dalla leggerezza del punto nero della gamma di riproduzione e possono essere interpolati dalla tabella 1. Per informazioni dettagliate sul calcolo di questi parametri, vedere Braun e Fairchild (1999, p. 391).
 
 :::row:::
     :::column:::
@@ -325,19 +325,19 @@ dove x ₀ e S sono rispettivamente la media e la deviazione standard della dist
 :::row-end:::
 :::row:::
     :::column:::
-        ₀ x
+        x ₀
     :::column-end:::
     :::column:::
-       53,7
+       53.7
     :::column-end:::
     :::column:::
-        56,8
+        56.8
     :::column-end:::
     :::column:::
-        58,2
+        58.2
     :::column-end:::
     :::column:::
-        60,6
+        60.6
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -359,639 +359,639 @@ dove x ₀ e S sono rispettivamente la media e la deviazione standard della dist
 :::row-end:::
 
 
-**Tabella 1** : calcolo del parametro di compressione della luminosità BasicPhoto
+**Tabella 1:** Calcolo del parametro di compressione della leggerezza BasicPhoto
 
-Per usare S come un mapping di luminosità LUT (S <sub>LUT</sub> ), è necessario prima normalizzarlo nell'intervallo di luminosità di \[ 0100 \] . I dati normalizzati vengono quindi ridimensionati nell'intervallo dinamico del dispositivo di destinazione, come illustrato nell'equazione 4, dove *j*<sub>min \ *out*</sub> e *j*<sub>Max \ *out*</sub> sono i valori della leggerezza del punto nero e il punto bianco del supporto di riproduzione, rispettivamente.
+Per usare S come mapping di leggerezza LUT (S <sub>LUT),</sub> deve prima essere normalizzato nell'intervallo di leggerezza \[ di 0.100 \] . I dati normalizzati vengono quindi ridimensionati nell'intervallo dinamico del dispositivo di destinazione, come illustrato nell'equazione 4, dove *J*<sub>min\ *Out*</sub> e *J*<sub>max\ *Out*</sub> sono rispettivamente i valori di leggerezza del punto nero e del punto bianco del supporto di riproduzione.
 
-![Mostra la formula per S come LUT di mapping di luminosità.](images/gmmp-image018.png) (4)
+![Mostra la formula per S come mapping di leggerezza LUT.](images/gmmp-image018.png) (4)
 
-A questo punto, è possibile ottenere i valori di *j* dalla <sub>LUT</sub> eseguendo l'interpolazione tra i punti *m* dei corrispondenti *j o '* e *j s* valori in esso contenuti e usando l'equazione seguente come input.
+A questo punto, i valori *J S* possono essere ottenuti dalla S <sub>LUT</sub> interpolando tra i punti *m* dei valori *J O'* e *J S* corrispondenti contenuti e usando l'equazione seguente come input.
 
-![Mostra la formula per ottenere i valori di J.](images/gmmp-image020.png) (5)
+![Mostra la formula per ottenere i valori J S.](images/gmmp-image020.png) (5)
 
-J <sub>Minin</sub> è il valore di luminosità del punto nero del supporto originale, j <sub>Maxin</sub> è il valore di luminosità del punto bianco del supporto originale e j <sub>O</sub> è la luce originale. Per riferimento futuro, è possibile indicare a *S* la funzione sigmoidal definita nel modo appena descritto, come illustrato nella figura 4 riportata di seguito.
+J <sub>minIn</sub> è il valore di leggerezza del punto nero del supporto originale, J <sub>maxIn</sub> è il valore di leggerezza del punto bianco del supporto originale e J <sub>O</sub> è la luminosità originale. Per informazioni di riferimento successive, è possibile indicare da *S* la funzione sigmoidal definita nel modo appena descritto, come illustrato nella figura 4 seguente.
 
-![Diagramma che mostra il grafico per il mapping croma lungo la luce costante.](images/gmmp-image024.png)
+![Diagramma che mostra il grafico per il mapping della croma con una leggerezza costante.](images/gmmp-image024.png)
 
-**Figura 4** : mapping di Chroma lungo la luminosità costante
+**Figura 4:** Mapping di Chroma con una leggerezza costante
 
-In secondo luogo, se il limite della gamma di destinazione è cromatico, comprimere Chroma lungo le linee della luminosità costante (l) ed eseguire la compressione come indicato di seguito.
+In secondo piano, se il limite della gamma di destinazione è cromatico, comprimere la chroma lungo linee di leggerezza costante (l) ed eseguire la compressione come indicato di seguito.
 
-![Mostra la formula per eseguire la compressione Chroma.](images/gmmp-image026.png)  (6)
+![Mostra la formula per eseguire la compressione della croma.](images/gmmp-image026.png)  (6)
 
-dove *d* rappresenta la distanza da *E* in *l*; *g* rappresenta il limite della gamma media; *r* rappresenta la riproduzione. e *o* la figura 5 originale.
+dove *d* rappresenta la distanza da *E* su *l*; *g* rappresenta il limite medio della gamma; *r* rappresenta la riproduzione; e *o* la figura 5 originale.
 
-![Diagramma che mostra il grafico per la compressione Chroma e Light in BasicPhoto.](images/gmmp-image028.png)
+![Diagramma che mostra il grafico per la compressione della croma e della leggerezza in BasicPhoto.](images/gmmp-image028.png)
 
-**Figura 5** : compressione Chroma e lightity in BasicPhoto
+**Figura 5:** Compressione di chroma e leggerezza in BasicPhoto
 
-Se il limite della gamma di destinazione è monocromatico, il valore Chroma viene ritagliato a zero.
+Se il limite della gamma di destinazione è monocromatico, il valore di chroma viene ritagliato a zero.
 
-In terzo luogo, usare un clip tritato (descritto in precedenza) per eliminare eventuali errori residui.
+In terzo piano, usare un clip MinCD (descritto in precedenza) per eliminare eventuali errori residui.
 
-### <a name="black-enhancement"></a>Miglioramento nero
+### <a name="black-enhancement"></a>Miglioramento del nero
 
-L'algoritmo precedente può essere modificato per migliorare il nero quando la destinazione è un dispositivo di stampa. Il problema ha a che fare con la scelta di *J <sub>minOut</sub>*, che in genere non corrisponde al colore più scuro che una stampante può produrre.
+L'algoritmo precedente può essere modificato per migliorare il nero quando la destinazione è un dispositivo di stampa. Il problema riguarda la scelta di *J <sub>minOut</sub>*, che in genere non corrisponde al colore più scuro che una stampante può produrre.
 
-In particolare, il colore con densità più elevata, ottenuto inserendo inchiostri 100% (o massima copertura possibile, se è attiva la limitazione di GCR/Ink), in genere non è "neutral" nello spazio di aspetto dei colori. Vedere la figura 6. In altre parole, se per il dispositivo di destinazione viene usata la luminosità minima neutra, la luce scaler costruita verrà mappata a una leggerezza minima che non è la densità più elevata che può essere conseguita dalla stampante. Considerare il caso di utilizzo ulteriore di monitor per la stampante. Il monitoraggio nero, R = G = B = 0, verrà quindi stampato come non la densità più elevata. L'effetto sulla qualità dell'immagine è la mancanza di profondità e contrasto.
+In particolare, il colore con la massima densità, ottenuto inserendo il 100% di inks (o la copertura massima possibile, se è in vigore la limitazione GCR/input penna), in genere non è "neutro" nello spazio dell'aspetto del colore. Vedere la figura 6. In altre parole, se per il dispositivo di destinazione viene usata la luminosità minima neutra, il ridimensionatore di leggerezza costruito verrà mappato a una luminosità minima che non è la massima densità che può essere ottenuta dalla stampante. Si consideri l'ulteriore caso d'uso del monitoraggio da stampante a stampante. Il monitor nero, R=G=B=0, verrà quindi stampato come non con la massima densità. L'impatto sulla qualità dell'immagine è la mancanza di profondità e contrasto.
 
-![Diagramma che Mostra come il punto nero del dispositivo potrebbe essere più scuro della luminosità minima neutra.](images/gmmp-seqfigure01.png)
+![Diagramma che mostra come il punto nero del dispositivo potrebbe essere più scuro della luminosità minima neutra.](images/gmmp-seqfigure01.png)
 
-**Figura 6** : il punto nero del dispositivo può essere più scuro della luminosità minima neutra.
+**Figura 6:** il punto nero del dispositivo può essere più scuro della luminosità minima neutra.
 
-Si supponga che il "punto nero del dispositivo" di destinazione sia Jkakbk/JkCkh k. Se C k è diverso da zero, il punto nero del dispositivo non è neutro rispetto a CAM02. Se si usa J k per la "luminosità minima neutra" della destinazione nella costruzione del scaler di luminosità; ovvero impostando
+Si supponga che il "punto nero del dispositivo" di destinazione sia Jkakbk/JkCkh k. Se C k non è zero, il punto nero del dispositivo non è neutro rispetto a CAM02. Se si usa J k per la destinazione "luminosità minima neutra" nella costruzione del ridimensionatore di leggerezza; cio, impostazione
 
-*J <sub>minOut</sub> = JK*
+*J <sub>minOut</sub> = Jₖ*
 
-e applicarlo alla shell della gamma di origine, è possibile ottenere la configurazione illustrata nella figura 7. Nella figura il piano Hue corrisponde a h k.
+e applicarlo alla shell di gamut di origine, si ottiene la configurazione illustrata nella figura 7. Nella figura, il piano di tonalità corrisponde a h k.
 
-![Diagramma che mostra il ridimensionamento della luminosità modificato con il punto nero del dispositivo di destinazione.](images/gmmp-seqfigure02.png)
+![Diagramma che mostra il ridimensionatore di leggerezza modificato con il punto nero del dispositivo di destinazione.](images/gmmp-seqfigure02.png)
 
-**Figura 7** : geometria usando il ridimensionamento della luminosità modificato con il punto nero del dispositivo di destinazione
+**Figura 7:** Geometria che usa il ridimensionatore di leggerezza modificato con il punto nero del dispositivo di destinazione
 
-Per consentire il proseguimento dell'algoritmo di compressione Chroma successivo, è necessario allineare le lightnesses massime e minime nelle shell di origine e di destinazione. Questa operazione può essere eseguita modificando la shell di destinazione tra J <sub>neutralMin</sub> e j k spostando i punti verso sinistra. Inoltre, questa trasformazione deve essere applicata all'intero spazio jab, non solo al piano di tonalità corrispondente a h k.
+Per consentire l'esecuzione dell'algoritmo di compressione chroma successivo, è necessario allineare le leggerezze massima e minima nelle shell di origine e di destinazione. Questa operazione può essere ottenuta regolando la shell di destinazione tra J <sub>neutralMin</sub> e J k spostando i punti a sinistra. Inoltre, questa trasformazione deve essere applicata all'intero spazio di Jab, non solo al piano di tonalità corrispondente a h k.
 
 La trasformazione è
 
 ![Mostra la formula per la trasformazione.](images/gmmp-seqfigure03.png)
 
-Nella figura 8 viene illustrato l'effetto della trasformazione.
+La figura 8 illustra l'effetto della trasformazione.
 
-![Diagramma che illustra l'effetto del ridimensionamento della luminosità modificato con il punto nero del dispositivo di destinazione.](images/gmmp-seqfigure04.png)
+![Diagramma che mostra l'effetto del ridimensionatore di luminosità modificato con il punto nero del dispositivo di destinazione.](images/gmmp-seqfigure04.png)
 
-**Figura 8** : geometria usando il ridimensionamento della luminosità modificato con il punto nero del dispositivo di destinazione
+**Figura 8:** Geometria che usa il ridimensionatore di leggerezza modificato con il punto nero del dispositivo di destinazione
 
-Dopo aver applicato il consueto algoritmo di compressione Chroma, il punto deve essere "spostato indietro", ovvero è necessario applicare la trasformazione inversa per ottenere il colore finale mappato.
+Dopo aver applicato il consueto algoritmo di compressione chroma, il punto deve quindi essere "spostato indietro". In altri termini, è necessario applicare la trasformazione inversa per ottenere il colore mappato finale.
 
-![Mostra la formula per la trasformazione inversa per ottenere il colore finale mappato.](images/gmmp-seqfigure05.png)
+![Mostra la formula per la trasformazione inversa per ottenere il colore mappato finale.](images/gmmp-seqfigure05.png)
 
-### <a name="the-case-of-dual-gamut-shells"></a>Il caso di Shell Dual gamut
+### <a name="the-case-of-dual-gamut-shells"></a>Caso di shell a doppio gamut
 
-L'obiettivo consiste nel generalizzare il \_ ginocchio sig per la shell a gamma singola, nel caso in cui il dispositivo di origine GBD o il dispositivo di destinazione GBD disponga di una struttura a due Shell. La shell interna verrà denominata Shell di riferimento, mentre la shell esterna verrà chiamata Shell plausibile. Si desidera considerare i casi seguenti.
+L'obiettivo è generalizzare SIG KNEE per la shell a gamut singolo nel caso in cui il dispositivo di origine GBD o il dispositivo di destinazione \_ GBD abbia una struttura a due shell. La shell interna sarà denominata Shell di riferimento, mentre la shell esterna sarà denominata Shell plausibile. Si vogliono considerare i casi seguenti.
 
-(a) sia la GBD di origine che la GBD di destinazione hanno una struttura a due Shell.
+(a) Sia gbD di origine che GBD di destinazione hanno una struttura a due shell.
 
-(b) il GBD di origine dispone di una struttura a due Shell. il GBD di destinazione ha una sola Shell.
+(b) L'origine GBD ha una struttura a due shell; il GBD di destinazione ha una sola shell.
 
-(c) il GBD di origine ha una sola Shell; la GBD di destinazione ha una struttura a due Shell.
+(c) L'unità GBD di origine ha una sola shell; la struttura GBD di destinazione ha una struttura a due shell.
 
-(d) la GBD di origine e la GBD di destinazione hanno solo una shell.
+(d) Sia gbD di origine che GBD di destinazione hanno una sola shell.
 
-Il caso (d) è il caso di una shell a gamma singola descritta in precedenza. Per i casi (a), (b) e (c), è possibile generalizzare il ridimensionamento della luminosità per usare le informazioni aggiuntive della struttura Dual Shell. Nei casi (b) e (c) in cui l'origine o la destinazione dispone solo di una shell, viene introdotta una "shell di riferimento indotta" che verrà descritta in una sezione successiva, "indotta shell di riferimento". L'algoritmo generale per due Shell verrà descritto per i casi (a). Dopo la spiegazione della costruzione della shell di riferimento indotta, l'algoritmo può essere applicato anche a case (b) e (c). Come per la compressione Chroma, il rapporto di compressione sarà determinato dalle shell più grandi disponibili. In altre parole, se sono disponibili sia la shell plausibile che la shell di riferimento, verrà usata la shell plausibile. in caso contrario, verrà utilizzata la shell di riferimento.
+Il caso (d) è il caso della shell a gamut singola descritta in precedenza. Per i casi (a), (b) e (c), è possibile generalizzare la scalabilità della leggerezza per usare le informazioni aggiuntive della struttura a doppio shell. Nei casi (b) e (c) in cui l'origine o la destinazione ha una sola shell, si introduce una "shell di riferimento indotta" che verrà discussa in una sezione successiva, "Shell di riferimento indotta". L'algoritmo generale per due shell verrà descritto per caso (a). Dopo aver spiegato la costruzione della shell di riferimento indotta, l'algoritmo può essere applicato anche ai case (b) e (c). Come per la compressione chroma, il rapporto di compressione sarà determinato dalle shell più grandi disponibili. In altre parole, se sono disponibili sia Plausible Shell che Reference Shell, verrà usata plausible Shell. In caso contrario, verrà usata la shell di riferimento.
 
-*Ridimensionamento della luminosità generalizzato*
+*Scalabilità della leggerezza generalizzata*
 
-L'esistenza di due Shell per GBD di origine e di destinazione significa che è necessario eseguire il mapping di un set di quattro punti dall'origine GBD a un set corrispondente nel GBD di destinazione.
+L'esistenza di due shell per GBD di origine e di destinazione significa che è necessario eseguire il mapping di un set di quattro punti dal GBD di origine a un set corrispondente nel GBD di destinazione.
 
-![Viene illustrato come eseguire il mapping di un set di quattro punti a un set corrispondente.](images/gmmp-image030.png)
+![Illustra come eseguire il mapping di un set di quattro punti a un set corrispondente.](images/gmmp-image030.png)
 
-Gli indici hanno i significati seguenti.
+I pedice hanno i significati seguenti.
 
 o o r: "originale" (origine) o "riproduzione" (destinazione)
 
-min o max: luminosità minima neutra o luminosità massima neutra
+min o max: luminosità neutra minima o luminosità massima neutra
 
-PLA o Ref: Shell plausibile o Shell di riferimento
+pla o ref: Plausible Shell o Reference Shell
 
-L'ordinamento in ogni quadrupla è anche la grandezza relativa prevista di questi punti.
+L'ordinamento in ogni quadruplo è anche la grandezza relativa prevista di questi punti.
 
-La mappa di ridimensionamento della luminosità usa le stesse prime due equazioni della singola shell, ma *J S* è definito in modo a tratti, come indicato di seguito.
+La mappa Lightness Rescaling usa le stesse prime due equazioni della singola shell, ma *J S* è definito in modo a parte, come indicato di seguito.
 
-![Mostra la formula per J S in modo a tratti.](images/gmmp-image032.png) (7)
+![Mostra la formula per J S in modo a pezzettino.](images/gmmp-image032.png) (7)
 
 In altre parole, è sigmoidal all'interno della shell di riferimento e lineare all'esterno. Vedere Figura 9.
 
-![Diagramma che mostra un grafico per la funzione di ridimensionamento della luminosità per GBDs a due Shell.](images/gmmp-image033.png)
+![Diagramma che mostra un grafico per la funzione di scalabilità della leggerezza per i GBD a due shell.](images/gmmp-image033.png)
 
-**Figura 9** : funzione di ridimensionamento della luminosità per GBDs a due Shell
+**Figura 9:** Funzione di scalabilità leggera per GBD a due shell
 
 **SHELL DI RIFERIMENTO INDOTTA**
 
-Dove un GBD ha una shell e l'altra GBD ha due Shell, è necessario creare una "shell di riferimento" per il GBD con una sola Shell. La shell esistente, che verrebbe denominata Shell di riferimento, verrà modificata nella "Shell plausibile". In realtà, non è necessario creare una shell nello spazio jab completo. Poiché il ridimensionamento della luminosità usa solo *j max* e *j min*, è necessario costituire solo questi valori per la shell di riferimento indotta. Esistono due casi, a seconda del GBD che dispone di due Shell.
+Se un GBD ha una shell e l'altro GBD ha due shell, è necessario creare una "shell di riferimento" per il GBD con una sola shell. La shell esistente, denominata shell di riferimento, verrà modificata in "Shell plausibile". In realtà, non è necessario creare una shell nello spazio vuoto completo. Poiché la scalabilità leggera usa solo *J max* e *J min*, è necessario solo creare questi valori per la shell di riferimento indotta. Esistono due casi, a seconda di quale GBD ha due shell.
 
-Caso 1: il GBD di origine ha due Shell; GBD di destinazione ha una shell.
+Caso 1: gbd di origine ha due shell; GBD di destinazione ha una shell.
 
-Determinare la shell di riferimento indotta dalla destinazione sull'asse neutro; ovvero J <sub>r, \ min, \ Ref</sub> e j <sub>r, \ Max, \ Ref</sub> della shell. Questa operazione viene eseguita utilizzando l'algoritmo seguente.
+Determinare la shell di riferimento indotta dalla destinazione sull'asse neutro; ad esempio J <sub>r,\ min,\ ref</sub> e J <sub>r,\ max,\ ref</sub> della shell. Questa operazione viene eseguita usando l'algoritmo seguente.
 
 ![Mostra l'algoritmo per determinare la shell di riferimento indotta dalla destinazione.](images/gmmp-induced01.png)
 
-I fattori? <sub>bassa</sub> e? controllo <sub>elevato</sub> della separazione tra la shell plausibile e la shell di riferimento. Il valore 1 indica che i valori J <sub>min</sub> o j m ₐ ₓ coincidono. I valori sono "indotto" dalla shell di riferimento di origine e dalla shell plausibile di origine.
+I fattori ? <sub>low</sub> e ? <sub>controllo</sub> elevato della separazione tra la shell plausibile e la shell di riferimento. Un valore pari a 1 indica che i valori <sub>minimi</sub> J o J mₐₓ coincidono. I valori vengono "indotti" dalla shell di riferimento di origine e dalla shell plausible di origine.
 
-![Mostra la formula per i valori della shell del riferimento di origine e della shell plausibile di origine.](images/gmmp-induced02.png)
+![Mostra la formula per i valori della shell di riferimento di origine e della shell plausibile di origine.](images/gmmp-induced02.png)
 
-I "fattori di fudge" F <sub>low</sub> e f <sub>High</sub> sono *parametri ottimizzabili* che devono essere compresi tra 0 e 1. Se il valore è 0, il valore di J <sub>min</sub> o j m ₐ ₓ viene direttamente indotto dalle shell di origine. Per questo caso, scegliere F <sub>low</sub> = 0,95 e f <sub>High</sub> = 0,1.
+I "fattori di fudge" F  <sub>basso</sub> e F <sub>alto</sub> sono parametri regolabili che devono essere compresi tra 0 e 1. Se il valore è 0, le mₐₓ J <sub>min</sub> o J vengono indotte direttamente dalle shell di origine. In questo caso, scegliere F <sub>basso</sub> = 0,95 e F <sub>alto</sub> = 0,1.
 
-Caso 2: l'origine GBD dispone di una shell; GBD di destinazione ha due Shell.
+Caso 2: gbd di origine ha una shell; gbd di destinazione ha due shell.
 
-Determinare la shell di riferimento indotta dall'origine sull'asse neutro; ovvero J <sub>o, \ min, \ Ref</sub> e j <sub>o, \ Max, \ Ref</sub> della shell. Questa operazione viene eseguita utilizzando l'algoritmo seguente.
+Determinare la shell di riferimento indotta dall'origine sull'asse neutro; ad esempio J <sub>o,\ min,\ ref</sub> e J <sub>o,\ max,\ ref</sub> della shell. Questa operazione viene eseguita usando l'algoritmo seguente.
 
 ![Mostra l'algoritmo per determinare la shell di riferimento indotta dalla destinazione sull'asse neutro.](images/gmmp-induced03.png)
 
-Anche in questo caso, i fattori? <sub>bassa</sub> e? controllo <sub>elevato</sub> della separazione tra la shell plausibile e la shell di riferimento. Il valore 1 indica che i valori J <sub>min</sub> o j m ₐ ₓ coincidono. I valori sono "indotto" dalla shell di riferimento di origine e dalla shell plausibile di origine:
+Anche in questo caso, i fattori ? <sub>low</sub> e ? <sub>controllo</sub> elevato della separazione tra la shell plausibile e la shell di riferimento. Un valore pari a 1 indica che i valori <sub>minimi</sub> J o mₐₓ coincidono. I relativi valori sono "indotta" dalla shell di riferimento di origine e dalla shell plausible di origine:
 
 ![Mostra l'algoritmo per controllare la separazione tra la shell di riferimento e la shell plausibile di origine.](images/gmmp-induced04.png)
 
-### <a name="reasons-for-changes-from-the-cie-tc8-03-recommendations"></a>Motivi per le modifiche apportate ai consigli CIE TC8-03
+### <a name="reasons-for-changes-from-the-cie-tc8-03-recommendations"></a>Motivi delle modifiche apportate alle raccomandazioni CIE TC8-03
 
 BasicPhoto differisce dalle raccomandazioni CIE TC8-03 nei modi seguenti.
 
-1.  Chroma non viene compresso verso la cuspide ma lungo le linee di luminosità costante.
-2.  L'intervallo di luminosità usa la luminosità del colore più scuro nella gamma anziché il punto in corrispondenza del quale il limite della gamut supera l'asse neutro.
-3.  BasicPhoto supporta sia una shell gamut di riferimento sia una shell della gamma plausibile, se uno dei limiti della gamma nella trasformazione è costituito da due Shell.
-4.  BasicPhoto USA CIECAM02; anziché usare CIECAM97s per eseguire la conversione in D65 a 400 CD/m2, quindi usare lo spazio dei colori RIT IPT.
+1.  Chroma non viene compresso verso la cusp ma lungo le linee di leggerezza costante.
+2.  L'intervallo di leggerezza usa la leggerezza del colore più scuro della gamma anziché il punto in cui il limite di gamut attraversa l'asse neutro.
+3.  BasicPhoto supporta sia una shell gamut di riferimento che una shell gamut plausibile, se uno dei limiti gamut nella trasformazione ha due shell.
+4.  BasicPhoto usa ILM02; invece di usare ILM97s per eseguire la conversione in D65 a 400 cd/m2 e quindi usare lo spazio colore RIT IPT.
 
-La prima modifica è stata apportata per evitare problemi di inversione dei toni che possono verificarsi quando si usa la compressione verso un cuspide. Come illustrato nella figura 10, la compressione cuspide può causare inversioni di tono. Questo problema può verificarsi quando i colori della croma alta sono più chiari dei colori della croma inferiore. Poiché SGCK comprime ogni pixel in modo indipendente sia nella luminosità che nel Chroma, non è garantita la conservazione della relazione di luminosità tra i valori dei pixel dopo la compressione. Lo svantaggio noto a questa decisione di comprimere le linee di leggerezza costante è che è possibile soffrire di perdite di Chroma, in particolare nelle aree in cui il limite della gamma di destinazione è molto semplice, come avviene con gialli luminosi.
+La prima modifica è stata apportata per evitare problemi di inversione del tono che possono verificarsi quando si usa la compressione verso un cusp. Come illustrato nella figura 10, la compressione cusp può causare inversioni del tono. Ciò può verificarsi quando i colori della croma alta sono più chiari dei colori della croma inferiore. Poiché SGCK comprime ogni pixel in modo indipendente sia nella leggerezza che nella croma, non è garantito mantenere la relazione di leggerezza tra i valori dei pixel dopo la compressione. Lo svantaggio noto di questa decisione di compressione su linee di leggerezza costante è che è possibile subire perdite di chroma, in particolare nelle aree in cui il limite della gamma di destinazione è molto piana, come accade con i gialli luminosi.
 
 ![Diagramma che mostra l'inversione del tono causata da SGCK.](images/gmmp-toneinversion.png)
 
-**Figura 10** : inversione del tono causata da SGCK
+**Figura 10:** Inversione del tono causata da SGCK
 
 ![Mostra un'immagine originale di una teiera.](images/originalteapot.jpg)![Mostra il risultato SGCK dell'immagine della teiera.](images/badteapot.jpg)![Mostra il risultato BasicPhoto dell'immagine della teiera.](images/betterteapot.jpg)
 
-**Figura 11** : immagine originale, risultato SGCK e risultato BasicPhoto
+**Figura 11:** Immagine originale, risultato SGCK e risultato BasicPhoto
 
-Nella figura 11 è illustrata questa inversione del tono. A sinistra è presente un'immagine originale acquisita da una fotocamera digitale; al centro, immagine riprodotta da SGCK; e a destra, l'immagine riprodotta da BasicPhoto. L'immagine a sinistra si trova nello spazio colore della fotocamera digitale, le immagini al centro e a destra si trovano nello spazio dei colori di uno schermo LCD. Nell'immagine originale la parte superiore della teiera è più scura della parte inferiore, perché la parte inferiore riflette la tovaglia su cui si trova. Nell'immagine SGCK la parte superiore è effettivamente più chiara della parte inferiore, a causa dell'inversione del tono. Inoltre, è difficile vedere gli elementi riflessi nella parte inferiore della teiera. A destra, BasicPhoto ha corretto l'inversione del tono e gli articoli riflessi sono più chiaramente distinguibili.
+La figura 11 illustra questa inversione del tono. A sinistra è disponibile un'immagine originale acquisita da una fotocamera digitale. al centro, l'immagine riprodotta da SGCK; e a destra, l'immagine riprodotta da BasicPhoto. L'immagine a sinistra si trova nello spazio colori della fotocamera digitale, le immagini al centro e a destra si trova nello spazio colore di un display video LCD. Nell'immagine originale, la parte superiore della teiera è più scura della parte inferiore, perché la parte inferiore riflette la tovaglia su cui si trova. Nell'immagine SGCK la parte superiore è effettivamente più leggera rispetto alla parte inferiore, a causa dell'inversione del tono. Inoltre, è difficile vedere gli elementi riflessi nella parte inferiore della teiera. A destra BasicPhoto ha corretto l'inversione del tono e gli articoli riflessi sono più chiaramente distinguibili.
 
-La seconda modifica è stata apportata per migliorare la riproduzione dei colori quasi neri sulle stampanti in cui il nero nero non rientra direttamente sull'asse CIECAM02 neutro. Nella figura 12 riportata di seguito viene illustrata un'immagine convertita in sRGB; riprodotto per una stampante inkjet RGB con SGCK; e riprodotto per la stessa stampante usando BasicPhoto. L'immagine al centro non usa il nero completo del dispositivo e pertanto manca il contrasto riscontrato nell'originale. Il contrasto viene ripristinato con BasicPhoto.
+La seconda modifica è stata apportata per migliorare la riproduzione di colori quasi neri sulle stampanti in cui il nero più nero non cade direttamente sull'asse neutro DELLAM02. La figura 12 seguente mostra un'immagine convertita in sRGB. riprodotto per una stampante ink inkgb con SGCK; e riprodotti per la stessa stampante usando BasicPhoto. L'immagine al centro non usa il dispositivo completo nero e quindi non ha il contrasto visualizzato nell'originale. Il contrasto viene ripristinato con BasicPhoto.
 
-![Mostra l'immagine originale di un complay.](images/playstructure.jpg)![Mostra l'immagine del gioco riprodotto per una stampante inkjet R G B con SGCK.](images/playstructurebad.jpg)![Mostra l'immagine del gioco riprodotto per una stampante inkjet R G B con BasicPhoto.](images/betterplaystructure.jpg)
+![Mostra l'immagine originale di un playset.](images/playstructure.jpg)![Mostra l'immagine del playset riprodotta per una stampante ink ink di R G B tramite SGCK.](images/playstructurebad.jpg)![Mostra l'immagine del playset riprodotta per una stampante ink ink di R G B usando BasicPhoto.](images/betterplaystructure.jpg)
 
-**Figura 12** : nero avanzato
+**Figura 12:** Nero avanzato
 
-La terza modifica è stata apportata per migliorare la riproduzione dei colori per le fotocamere digitali. In particolare nei casi in cui la fotocamera digitale è stata profilata usando una destinazione di riferimento, una descrizione del limite di gamut basata su colori misurati potrebbe non includere tutti i colori che possono essere acquisiti in una scena reale. Anziché ritagliare tutti i colori alla gamma della destinazione dei colori misurata, si consente all'estrapolazione di produrre un limite di gamut plausibile. L'algoritmo BasicPhoto è progettato per supportare un limite di gamut estrapolato.
+La terza modifica è stata apportata per migliorare la riproduzione dei colori per le fotocamere digitali. In particolare nei casi in cui la fotocamera digitale è stata profilata usando una destinazione di riferimento, una descrizione del limite gamut creata da colori misurati potrebbe non includere tutti i colori che potrebbero essere acquisiti in una scena reale. Invece di ritagliare tutti i colori fino alla gamma della destinazione di colore misurata, è possibile consentire l'estrapolazione per produrre un limite di gamut plausibile. L'algoritmo BasicPhoto è progettato per supportare tale limite di gamut estrapolato.
 
-La quarta modifica è stata apportata perché CIECAM02 funziona bene per il mapping di gamut. Il processo consigliato da TC8-03 per la conversione dei colori del dispositivo in D65 a 400 CD/m2, quindi l'uso dello spazio dei colori del RIT IPT è sia a elevato utilizzo di calcolo che richiede molto tempo.
+La quarta modifica è stata apportata perché il mapping di gamut funziona bene. Il processo consigliato da TC8-03 per la conversione dei colori del dispositivo in D65 a 400 cd/m2 e quindi l'uso dello spazio colori RIT IPT richiede molto tempo e a elevato utilizzo di calcolo.
 
-### <a name="hue-mapping"></a>Mapping tonalità
+### <a name="hue-mapping"></a>Mapping delle tonalità
 
-HueMap è l'equivalente della finalità di saturazione ICC.
+HueMap è l'equivalente della finalità Saturazione ICC.
 
-Se il limite della gamma di origine o il limite della gamma di destinazione non contiene primari, questo modello viene ripristinato nel modello tritato (relativo) descritto in una sezione precedente. ad esempio, i dispositivi per cui non è possibile determinare gli primari (profili ICC con più di quattro canali) o profili ICC monocromi.
+Se il limite di gamut di origine o quello di gamut di destinazione non contiene valori primari, questo modello ripristina il modello MinCD (relativo) descritto in una sezione precedente. ad esempio i dispositivi per cui non è possibile determinare le primarie (profili ICC con più di quattro canali) o profili ICC monocromatici.
 
-Questo algoritmo regola innanzitutto la tonalità del valore del colore di input. Quindi regola simultaneamente la luminosità e il Chroma, usando un mapping di taglio. Infine, viene ritagliato il valore del colore per assicurarsi che si trovi all'interno di gamut.
+Questo algoritmo regola innanzitutto la tonalità del valore del colore di input. Regola quindi contemporaneamente la leggerezza e la chroma, usando un mapping di traslatura. Infine, il valore del colore viene ritagliato per assicurarsi che sia compreso nell'ambito di gamut.
 
-Il primo passaggio consiste nel determinare le "ruote Hue". Trovare i valori di JCh per i colori primario e secondario per il dispositivo di origine e di destinazione. Si stanno prendendo in considerazione solo i componenti Hue. In questo modo viene generata una rotellina di tonalità primaria o secondaria con sei punti di colore per ogni dispositivo. (Vedere la figura 13).
+Il primo passaggio consiste nel determinare "Hue Wheels". Trovare i valori JCh per i colori primario e secondario sia per il dispositivo di origine che per quello di destinazione. Si stanno prendendo in considerazione solo i componenti hue. Il risultato è una ruota della tonalità primaria o secondaria con sei punti colore per ogni dispositivo. Vedere la figura 13.
 
-![Diagramma che mostra le ruote Hue con sei punti di colore.](images/gmmp-figure12.png)
+![Diagramma che mostra le rotelle di tonalità con sei punti colore.](images/gmmp-figure12.png)
 
-**Figura 13** : rotelle Hue
+**Figura 13:** Ruota hue
 
-È possibile ottenere risultati migliori se l'origine blu primaria non viene ruotata nel database primario blu di destinazione. L'angolo di tonalità primario blu di origine viene invece usato come angolo di tonalità principale blu di destinazione.
+È possibile ottenere risultati migliori se il database primario blu di origine non viene ruotato nella replica primaria blu di destinazione. Al contrario, l'angolo della tonalità primaria blu di origine viene usato come angolo della tonalità primaria blu di destinazione.
 
-Successivamente, eseguire le rotazioni tonalità per ogni colore di input dall'immagine di origine,
+Eseguire quindi le rotazioni della tonalità per ogni colore di input dall'immagine di origine,
 
-a) utilizzando l'angolo di sfumatura del colore di input, determinare la posizione del colore sulla rotellina di tonalità di origine rispetto al colore primario o secondario di due adiacenti. La posizione può essere considerata come una percentuale della distanza tra le primarie. Ad esempio, la tonalità di colore di input è il 40% della strada dal valore di tonalità di Magenta al valore di tonalità di rosso.
+a)Usando l'angolo di tonalità del colore di input, determinare la posizione del colore sulla rotellina della tonalità di origine rispetto ai due colori primari o secondari adiacenti. La posizione può essere pensata come una percentuale della distanza tra le primarie. Ad esempio, la tonalità di colore di input è il 40% del percorso dal valore della tonalità di Magenta al valore di tonalità rosso.
 
-b) nella rotellina Hue di destinazione trovare l'angolo di tonalità associato, ad esempio, 40% da Magenta a rosso. Questo valore sarà l'angolo di tonalità di destinazione.
+b)Nella ruota della tonalità di destinazione trovare l'angolo di tonalità associato, ad esempio il 40% da Magenta al rosso. Questo valore sarà l'angolo della tonalità di destinazione.
 
-In generale, le primarie e i database secondari di origine non si troveranno sugli stessi angoli di tonalità delle primarie di destinazione e dei database secondari; ovvero, l'angolo di tonalità di destinazione in genere sarà diverso dall'angolo di tonalità di origine.
+In generale, i database primari e secondari di origine non avranno gli stessi angoli di tonalità dei database primari e secondari di destinazione. ciò significa che l'angolo della tonalità di destinazione sarà in genere diverso dall'angolo di tonalità di origine.
 
-Si supponga, ad esempio, che le ruote Hue producano i valori seguenti:
+Si supponga, ad esempio, che le ruote hue produca i valori seguenti:
 
-Source M = 295 Degrees, source R = 355 Degrees.
+Source M = 295 gradi, Source R = 355 degrees.
 
-Destinazione M = 290 gradi, destinazione R = 346 gradi.
+Destination M = 290 gradi, Destination R = 346 degrees.
 
-Se l'angolo di tinta del colore di input è 319 gradi, è il 40% dell'angolo (24 gradi) dall'origine M al codice sorgente R. L'angolo da M a R è 60 gradi e l'angolo da M a tonalità di input è di 24 gradi. Calcolare l'angolo sulla destinazione che corrisponde al 40% dalla destinazione M alla destinazione R (22 gradi), quindi l'angolo di tonalità del colore di destinazione è 312 gradi.
+Se l'angolo di tonalità del colore di input è di 319 gradi, è il 40% dell'angolo (24 gradi) dall'origine M alla R di origine. L'angolo da M a R è di 60 gradi e l'angolo da M alla tonalità di input è di 24 gradi. Calcolare l'angolo nella destinazione che è del 40% dalla destinazione M alla destinazione R (22 gradi), in modo che l'angolo di tonalità del colore di destinazione sia di 312 gradi.
 
-Calcolare quindi i punti di riferimento Hue per la tonalità di origine e la tonalità di destinazione. Per calcolare il punto di riferimento Hue per un particolare valore h (Hue), è necessario trovare il valore J (luminosità) e il valore C (Chroma).
+Calcolare quindi i punti di riferimento della tonalità per la tonalità di origine e la tonalità di destinazione. Per calcolare il punto di riferimento della tonalità per un particolare valore h (tonalità), si vogliono trovare il valore J (leggerezza) e il valore C (chroma).
 
--   Trovare il valore J del punto di riferimento tonalità eseguendo l'interpolazione tra i valori J per i punti primari o secondari adiacenti, usando la posizione relativa della tonalità. ad esempio, 40% in questo esempio.
--   Trovare il valore massimo di C a questo valore J e il valore h. È ora disponibile il JCh del punto di riferimento Hue per tale tonalità.
+-   Trovare il valore J del punto di riferimento della tonalità interpolando tra i valori J per i punti primari o secondari adiacenti, usando la posizione relativa della tonalità; ad esempio il 40% in questo esempio.
+-   Trovare il valore C massimo in questo valore J e in questo valore h. È ora disponibile il JCh del punto di riferimento della tonalità per tale tonalità.
 
-![Diagramma che mostra una foglia tonalità.](images/gmmp-figure13.png)
+![Diagramma che mostra una foglia di tonalità.](images/gmmp-figure13.png)
 
-**Figura 14** : foglia tonalità (visualizzazione di una sezione limite gamut in corrispondenza di una determinata tonalità)
+**Figura 14:** Foglia di tonalità (visualizzazione di una sezione limite gamut a una tonalità specifica)
 
-Il passaggio successivo consiste nel calcolare il mapping di taglio per ogni pixel. Prima di tutto, visualizzare una foglia tonalità dalla gamma di origine per l'angolo di tinta del colore di origine e una foglia tonalità dalla gamma di destinazione per l'angolo di tonalità di destinazione calcolato durante la rotazione tonalità. Le foglie di tonalità vengono create eseguendo una "sezione" dalla superficie limite della gamma JCh in corrispondenza di un angolo di tonalità specifico (vedere la figura 14).
+Il passaggio successivo consiste nel calcolare il mapping della sezione per ogni pixel. In primo luogo, visualizzare una foglia di tonalità dalla gamma di origine per l'angolo della tonalità di colore di origine e una foglia di tonalità dalla gamut di destinazione per l'angolo della tonalità di destinazione calcolato durante la rotazione della tonalità. Le fette di tonalità vengono create prendendo una "sezione" dalla superficie limite del gamut JCh con un angolo di tonalità specifico (vedere la figura 14).
 
-Nota: per motivi di ottimizzazione delle prestazioni, le foglie Hue non vengono effettivamente create. vengono descritte e illustrate qui solo a scopo di visualizzazione. Le operazioni vengono eseguite direttamente sulla superficie limite del gamut alla tonalità specificata. Quindi si calcolano i punti di riferimento Hue per determinare il mapping di taglio.
+NOTA: per motivi di ottimizzazione delle prestazioni, le foglia di tonalità non vengono effettivamente create. vengono descritte e mostrate qui solo a scopo di visualizzazione. Le operazioni vengono eseguite direttamente sulla superficie limite della gamma alla tonalità specificata. Si calcolano quindi i punti di riferimento della tonalità per determinare il mapping della setra.
 
--   Eseguire un ridimensionamento della luminosità per eseguire il mapping dei punti neri e bianchi della foglia di origine alla foglia di destinazione (vedere la figura 15). I punti neri e vuoti della foglia tonalità di origine vengono mappati in modo lineare ai punti neri e bianchi della foglia tonalità di destinazione, ridimensionando tutte le coordinate J del limite di origine. Il valore del colore di input mappato a tonalità viene ridimensionato nello stesso modo.
+-   Eseguire una scalabilità leggera per eseguire il mapping dei punti bianco e nero della foglia di origine alla foglia di destinazione (vedere la figura 15). I punti nero e bianco della foglia di tonalità di origine vengono mappati in modo lineare ai punti nero e bianco della foglia di tonalità di destinazione, ridimensionando tutte le coordinate J del limite di origine. Il valore del colore di input mappato alla tonalità viene ridimensionato nello stesso modo.
 
-![Diagramma che mostra il mapping di luminosità.](images/gmmp-figure14.png)
+![Diagramma che mostra il mapping della leggerezza.](images/gmmp-figure14.png)
 
-**Figura 15** : mapping della luminosità
+**Figura 15:** Mapping della leggerezza
 
--   Determinare i punti di riferimento Hue per ogni foglia tonalità. Applicare un mapping di taglio alla foglia di origine in modo che i punti di riferimento di origine e di destinazione coincidano (vedere la figura 16). Il punto di riferimento per una gamma a una determinata tonalità è il punto di riferimento della tonalità interpolata tra le primarie adiacenti. Il punto di riferimento della foglia tonalità di origine viene mappato in modo lineare al punto di riferimento della foglia tonalità di destinazione, usando un'operazione di "distorsione" che blocca l'asse J, mantenendo i punti neri e i puntini bianchi fissi. I punti neri, i punti bianchi e i punti di riferimento delle foglie di tonalità di origine e di destinazione devono coincidere.
--   Applicare il mapping di taglio al valore del colore di input con regolazione della luminosità. Le coordinate J e C del valore del colore di origine vengono ridimensionate in modo proporzionale rispetto alla distanza dall'asse J.
--   Successivamente, una lieve compressione della luminosità dipendente da Chroma verso il valore J del punto di riferimento Hue viene eseguita sul punto di colore con mapping di taglio. La compressione verso il riferimento Hue J viene eseguita in un modo simile a gamma, dove bianco, nero, grigio e punti sul riferimento tonalità J non sono interessati. Tutti gli altri punti tendono a raggiungere il riferimento di tonalità J in modo uniforme, leggermente raggruppando in prossimità del riferimento Hue J, con la costante Chroma rimanente. La dipendenza Chroma garantisce che i colori neutri non siano interessati e che l'effetto venga aumentato sui colori con Chroma superiore.
+-   Determinare i punti di riferimento della tonalità per ogni foglia di tonalità. Applicare un mapping di sezione alla foglia di origine in modo che i punti di riferimento di origine e di destinazione coincidano (vedere la figura 16). Il punto di riferimento per una gamma in corrispondenza di una tonalità specifica è il punto di riferimento della tonalità interpolata tra le primarie adiacenti. Il punto di riferimento della foglia di tonalità di origine viene mappato in modo lineare al punto di riferimento della foglia di tonalità di destinazione, usando un'operazione di "sezione" che blocca l'asse J, mantenendo i punti neri e i punti bianchi stazionari. I punti neri, i punti bianchi e i punti di riferimento delle tonalità di origine e di destinazione devono coincidere.
+-   Applicare il mapping di semaforo al valore del colore di input regolato per la leggerezza. Le coordinate J e C del valore del colore di origine vengono ridimensionate in modo proporzionale rispetto alla distanza dall'asse J.
+-   Successivamente, viene eseguita una leggera compressione della leggerezza dipendente dalla croma verso il valore J del punto di riferimento della tonalità sul punto di colore mappato a scaglie. La compressione verso il riferimento alla tonalità J viene eseguita in modo simile a gamma, in cui il bianco, il nero, i grigi e i punti sul riferimento della tonalità J non sono interessati. Tutti gli altri punti tendono verso il riferimento alla tonalità J in modo uniforme, leggermente in prossimità del riferimento della tonalità J, con la costante della chroma rimanente. La dipendenza chroma garantisce che i colori neutri non siano interessati e l'effetto viene aumentato sui colori con una chroma superiore.
 
-Di seguito è riportata una descrizione matematica della compressione della luminosità verso il riferimento di tonalità J o la modifica del valore J del punto di destinazione. Viene chiamato punto di destinazione perché è stato mappato al gamut di destinazione.
+Di seguito è riportata una descrizione matematica della compressione della leggerezza verso il riferimento della tonalità J o della regolazione del valore J del punto di destinazione. Viene chiamato punto di destinazione perché è stato eseguito il mapping alla gamma di destinazione.
 
-Per prima cosa, calcolare "factorC" (fattore di dipendenza Chroma) per il punto di destinazione, che determina la quantità di effetti della compressione della luminosità. I punti vicini o sull'asse J avranno una compressione minima o nulla. i punti più lontani dall'asse J (High-Chroma) avranno una maggiore compressione applicata. Moltiplicare per 0,5 per assicurarsi che factorC sia minore di 1, perché è possibile che sourceC sia leggermente maggiore di referenceC, ma non due volte più grande.
+In primo luogo, calcolare "factorC" (fattore di dipendenza chroma) per il punto di destinazione, che determina l'effetto della compressione della leggerezza. I punti vicini o sull'asse J avranno una compressione piccola o nessuna compressione. i punti più distorsi dall'asse J (alta chroma) avranno una compressione maggiore. Moltiplicare per 0,5 per assicurarsi che factorC sia minore di 1, perché è possibile che sourceC sia leggermente maggiore di referenceC, ma non il doppio del doppio.
 
-factorC = (destinationC/referenceC)? 0.5
+factorC = (destinationC/referenceC) ? 0,5
 
 dove:
 
 destinationC è il valore C del punto di destinazione.
 
-referenceC è il valore C del punto di riferimento tonalità.
+referenceC è il valore C del punto di riferimento Hue.
 
-Determinare quindi se il punto di destinazione J è al di sopra o al di sotto del riferimento di tonalità J. In caso contrario, eseguire le operazioni seguenti:
+Determinare quindi se il punto di destinazione J si trova sopra o sotto il riferimento di tonalità J. Se è sopra, eseguire le operazioni seguenti:
 
-1.  Calcolare "factorJ" per il punto di destinazione rispetto a referenceJ. Il valore di factorJ sarà compreso tra 0 e 1 (0 se in referenceJ; 1 se in maxJ).
-2.  factorJ = (destinationJ-referenceJ)/(maxJ-referenceJ)
+1.  Calcolare "factorJ" per il punto di destinazione relativo al referenceJ. Questo valore factorJ sarà compreso tra 0 e 1 (0 se per referenceJ; 1 se in maxJ).
+2.  factorJ = (destinationJ - referenceJ) / (maxJ - referenceJ)
 
     dove:
 
     destinationJ è il valore J del punto di destinazione.
 
-    referenceJ è il valore J del punto di riferimento tonalità.
+    referenceJ è il valore J del punto di riferimento della tonalità.
 
     maxJ è il valore J massimo della gamma.
 
-3.  Applicare una funzione di risparmio energia di tipo gamma a factorJ, che ridurrà factorJ di una determinata quantità. Questo esempio usa la potenza di 2 (il quadrato). Sottrarre il factorJ ridotto dalla factorJ originale e moltiplicare il risultato per l'intervallo J totale sopra il referenceJ primario per trovare il "deltaJ", che rappresenta la modifica in J dopo la compressione della luminosità, ma senza includere la dipendenza Chroma.
-4.  deltaJ = (factorJ-(factorJ? factorJ)) ? (maxJ - referenceJ)
+3.  Applicare una funzione di potenza simile a gamma a factorJ, che ridurrà factorJ di una determinata quantità. Questo esempio usa la potenza di 2 (il quadrato). Sottrarre il fattore ridottoJ dal fattore originaleJ e moltiplicare il risultato per l'intervallo J totale sopra il riferimento principaleJ per trovare il "deltaJ", che rappresenta la modifica in J dopo la compressione della leggerezza, ma senza includere la dipendenza chroma.
+4.  deltaJ = (factorJ - (factorJ ? factorJ)) ? (maxJ - referenceJ)
 
-5.  Applicare factorC al deltaJ (maggiore è la Croma, maggiore sarà l'effetto) e calcolare il nuovo valore J per il punto di destinazione.
-6.  destinationJ = destinationJ-(deltaJ? factorC)
+5.  Applicare factorC alla deltaJ (maggiore è la chroma, maggiore è l'effetto) e calcolare il nuovo valore J per il punto di destinazione.
+6.  destinationJ = destinationJ - (deltaJ ? factorC)
 
-Se J-value per il punto di destinazione è inferiore a referenceJ, viene eseguito un calcolo simile ai passaggi precedenti a-C, usando minJ anziché maxJ per trovare l'intervallo in J per calcolare il factorJ e tenendo conto della polarità delle operazioni "sotto" referenceJ.
+Se il valore J per il punto di destinazione è sotto referenceJ, viene eseguito un calcolo simile ai passaggi precedenti A-C, usando minJ anziché maxJ per trovare l'intervallo in J per calcolare il factorJ e tenendo conto della polarità delle operazioni "sotto" il referenceJ.
 
-factorJ = (referenceJ-destinationJ)/(referenceJ-minJ)
+factorJ = (referenceJ - destinationJ) / (referenceJ - minJ)
 
-deltaJ = (factorJ-(factorJ? factorJ)) ? (referenceJ-minJ)
+deltaJ = (factorJ - (factorJ ? factorJ)) ? (referenceJ - minJ)
 
-destinationJ = destinationJ + (deltaJ? factorC)
+destinationJ = destinationJ + (deltaJ ? factorC)
 
 dove:
 
-minJ è il valore J minimo del gamut.
+minJ è il valore J minimo della gamma.
 
-La crominanza per i punti colore di input viene espansa in modo lineare (se possibile) insieme alla luminosità costante proporzionale al valore di Chroma massimo dei gamut di origine e di destinazione a tale tonalità e luminosità. In combinazione con la precedente compressione della luminosità dipendente dalla Croma, questo consente di mantenere la saturazione perché il mapping di distorsione usando i punti di riferimento a volte causa la sovracompressione del punto di origine in Chroma (vedere la figura 16).
+La chroma per i punti di colore di input viene espansa in modo lineare (quando possibile) lungo una luce costante proporzionale al valore chroma massimo delle gamut di origine e destinazione in base a tale tonalità e leggerezza. In combinazione con la compressione della leggerezza dipendente dalla chroma precedente, ciò consente di mantenere la saturazione perché il mapping della sega con i punti di riferimento talvolta causa l'overcomprimere il punto di origine nella chroma (vedere la figura 16).
 
-![Diagramma che mostra il mapping di taglio per trovare la corrispondenza con i punti di riferimento tonalità, prima del taglio a sinistra, dopo la distorsione a destra.](images/gmmp-shearmapping.png)
+![Diagramma che mostra il mapping della cande in modo che corrisponda ai punti di riferimento della tonalità, prima della barra a sinistra, dopo la barra a destra.](images/gmmp-shearmapping.png)
 
-**Figura 16** : mapping di taglio, compressione della luminosità verso il riferimento di Hue J e espansione Chroma
+**Figura 16:** Mapping della sega, compressione della leggerezza verso il riferimento della tonalità J e espansione della chroma
 
-Di seguito è riportata una descrizione matematica del processo di espansione croma o la modifica del valore C del punto di destinazione. Viene chiamato punto di destinazione perché è stato mappato a forbice e la leggerezza è stata compressa nel gamut di destinazione.
+Di seguito è riportata una descrizione matematica del processo di espansione della chroma o la modifica del valore C del punto di destinazione. Viene chiamato punto di destinazione perché è stato mappato e la leggerezza è stata compressa nella gamma di destinazione.
 
-1.  Prima del mapping di taglio, determinare sourceExtentC (l'extent Chroma alla luminosità e alla tonalità del punto di origine).
-2.  Dopo il mapping di taglio e la compressione della luminosità che trasformano il punto di origine nel punto di destinazione, determinare il destExtentC (l'extent Chroma alla luminosità e la tonalità del punto di destinazione).
-3.  Se sourceExtentC è maggiore di destExtentC, non è necessaria alcuna regolazione croma per il punto di destinazione ed è possibile ignorare il passaggio successivo.
-4.  Modificare destinationC (croma del punto di destinazione) per adattarlo all'ambito della croma di destinazione in base a questa luminosità e tonalità.
-5.  destinationC = destinationC? (destExtentC / sourceExtentC)
+1.  Prima del mapping di sega, determinare sourceExtentC (l'extent chroma alla leggerezza e alla tonalità del punto di origine).
+2.  Dopo il mapping di estendibilità e la compressione della leggerezza che trasforma il punto di origine nel punto di destinazione, determinare destExtentC (l'extent chroma alla luce e alla tonalità del punto di destinazione).
+3.  Se sourceExtentC è maggiore di destExtentC, non è necessaria alcuna regolazione della chroma al punto di destinazione ed è possibile ignorare il passaggio successivo.
+4.  Regolare destinationC (la chroma del punto di destinazione) in modo che si adatti all'estensione della chroma di destinazione con questa luminosità e tonalità.
+5.  destinationC = destinationC ? (destExtentC/sourceExtentC)
 
     dove:
 
-    destinationC è il punto di destinazione C-value.
+    destinationC è il valore C del punto di destinazione.
 
-    sourceExtentC è il valore C massimo della gamma di origine alla luminosità e alla tonalità del punto di origine.
+    sourceExtentC è il valore C massimo della gamma di sorgenti alla leggerezza e alla tonalità del punto di origine.
 
-    destExtentC è il valore C massimo della gamma di destinazione alla luminosità e alla tonalità del punto di destinazione.
+    destExtentC è il valore C massimo della gamma di destinazione alla leggerezza e alla tonalità del punto di destinazione.
 
-Infine, eseguire il ritaglio della distanza di minimo. Se il colore di input con rotazione tonalità, luminosità e con mapping di inclinazione è ancora leggermente esterno al gamut di destinazione, ritagliarlo (spostarlo) al punto più vicino sul limite della gamma di destinazione (vedere la figura 17).
+Infine, eseguire il ritaglio della distanza mimimum. Se il colore di input con rotazione della tonalità, regolato con leggerezza e mappato a taglio è ancora leggermente esterno al gamut di destinazione, ritagliarlo (spostarlo) nel punto più vicino al limite di gamut di destinazione (vedere la figura 17).
 
 ![Diagramma che mostra il ritaglio della distanza minima.](images/gmmp-figure15.png)
 
-**Figura 17** : ritaglio a distanza minima
+**Figura 17:** Ritaglio della distanza minima
 
-## <a name="gamut-boundary-description-and-gamut-shell-algorithms"></a>Descrizione limite gamut e algoritmi della shell gamut
+## <a name="gamut-boundary-description-and-gamut-shell-algorithms"></a>Descrizione dei limiti di Gamut e algoritmi della shell Gamut
 
-La funzione limite gamma dispositivi usa il motore del modello di dispositivo e i parametri analitici per derivare un limite di gamut del dispositivo di colore, descritto come un elenco di vertici indicizzati dello scafo del gamut del dispositivo. Lo scafo viene calcolato in modo diverso a seconda che si stiano utilizzando dispositivi additivi, ad esempio monitoraggi e proiettori, o dispositivi sottrattivi. L'elenco di vertici indicizzati viene archiviato in CIEJab. La struttura dell'elenco di vertici indicizzati è ottimizzata per l'accelerazione hardware da DirectX.
+La funzione limite di gamut del dispositivo usa il motore del modello di dispositivo e i parametri analitici per derivare un limite di gamut del dispositivo a colori, descritto come un elenco di vertici indicizzati della carena della gamut del dispositivo. La carena viene calcolata in modo diverso a seconda che si lavori con dispositivi additivi, ad esempio monitor e proiettori o dispositivi sottrattivi. L'elenco di vertici indicizzati viene archiviato in CIEJab. La struttura dell'elenco di vertici indicizzati è ottimizzata per l'accelerazione hardware da DirectX.
 
-Questo approccio presenta molte soluzioni ben note. Se si cerca "convessa Hull DirectX" sul Web, si ottengono più di 100 riscontri. È ad esempio disponibile un riferimento da 1983 in questo argomento specifico (teoria grafica del computer e applicazione, "Shiphulls, superfici b-spline e CADCAM", pp. 34-49) con riferimenti che risalgono da 1970 a 1982 nell'argomento.
+Questo approccio ha molte soluzioni note. Se si cerca "Convex hull DirectX" sul Web, si ottengono più di 100 riscontri. Ad esempio, è disponibile un riferimento del 1983 su questo argomento specifico (Teoria della grafica computer e applicazione, "Shiphulls, superfici b-spline e cadcam", pp. 34-49) con riferimenti a partire dal 1970 al 1982 sull'argomento.
 
-La raccolta di punti può essere determinata da informazioni disponibili esternamente, come indicato di seguito:
+La raccolta di punti può essere determinata dalle informazioni disponibili esternamente, come indicato di seguito:
 
--   I punti per la shell di riferimento per i monitoraggi vengono generati utilizzando un campionamento del cubo colori nello spazio di colore del dispositivo.
--   I punti per la shell di riferimento per le stampanti e i dispositivi di acquisizione vengono ottenuti dai dati di esempio utilizzati per inizializzare il modello.
--   I punti per la shell di riferimento per scRGB e sRGB vengono generati utilizzando un campionamento del cubo di colore per sRGB.
--   I punti per la shell plausibile per i dispositivi di acquisizione vengono generati usando un campionamento del cubo di colori nello spazio di colore del dispositivo.
--   I punti per la shell di riferimento per i proiettori vengono generati usando un campionamento di un poliedro nel cubo dei colori nello spazio colorante del dispositivo.
--   I punti per la shell possibile per gli spazi dei colori a intervalli dinamici estesi vengono generati utilizzando un campionamento del cubo di colori nello spazio stesso.
+-   I punti per la shell di riferimento per i monitoraggi vengono generati usando un campionamento del cubo dei colori nello spazio colorato del dispositivo.
+-   I punti per la shell di riferimento per stampanti e dispositivi di acquisizione vengono ottenuti dai dati di esempio usati per inizializzare il modello.
+-   I punti per la shell di riferimento per scRGB e sRGB vengono generati usando un campionamento del cubo dei colori per sRGB.
+-   I punti per la shell plausibile per i dispositivi di acquisizione vengono generati usando un campionamento del cubo dei colori nello spazio colorato del dispositivo.
+-   I punti per la shell di riferimento per i proiettori vengono generati usando un campionamento di un poliedro nel cubo dei colori nello spazio colorato del dispositivo.
+-   I punti per la possibile shell per spazi colori a intervalli dinamici ampi vengono generati usando un campionamento del cubo dei colori nello spazio stesso.
 
-È possibile creare un elenco di vertici che descrive in modo efficiente la gamma di colori dei dispositivi, dato un profilo di dispositivo e servizi di supporto del sistema.
+È possibile creare un elenco di vertici che descriva in modo efficiente la gamma dei dispositivi a colori, in base a un profilo di dispositivo e ai servizi di supporto del sistema.
 
-Per i dispositivi di output, il limite della gamma descrive l'intervallo di colori che possono essere visualizzati dal dispositivo. Un limite di gamut viene generato dagli stessi dati usati per modellare il comportamento del dispositivo. Dal punto di vista concettuale, viene restituito un campionamento dell'intervallo di colori che il dispositivo può produrre, misurare i colori, convertire le misurazioni in spazio di aspetto e quindi usare i risultati per creare il limite della gamma.
+Per i dispositivi di output, il limite di gamut descrive la gamma di colori che possono essere visualizzati dal dispositivo. Viene generato un limite di gamut dagli stessi dati usati per modellare il comportamento del dispositivo. Concettualmente, si genera un campionamento dell'intervallo di colori che il dispositivo può produrre, si misurano i colori, si convertono le misurazioni nello spazio dell'aspetto e quindi si usano i risultati per creare il limite di gamut.
 
-I dispositivi di input sono più complicati. Ogni pixel in un'immagine di input deve avere un valore. Ogni pixel deve essere in grado di rappresentare in qualche modo qualsiasi colore trovato nel mondo reale. In questo senso, nessun colore è "fuori gamma" per un dispositivo di input, perché è sempre possibile rappresentarli.
+I dispositivi di input sono più difficili. Ogni pixel in un'immagine di input deve avere un valore. Ogni pixel deve essere in grado di rappresentare qualsiasi colore trovato nel mondo reale in qualche modo. In questo senso, nessun colore è "fuori gamma" per un dispositivo di input, perché possono essere sempre rappresentati.
 
-Tutti i formati di immagine digitale hanno un intervallo dinamico fisso. A causa di questa limitazione, sono sempre presenti alcuni stimoli distinti che si mappano allo stesso valore digitale. Non è quindi possibile stabilire un mapping uno-a-uno tra i colori reali e i valori delle fotocamere digitali. Al contrario, il limite della gamma è formato dalla stima di un intervallo di colori reali che può produrre le risposte digitali della fotocamera. Si usa tale intervallo stimato come gamut per il dispositivo di input.
+Tutti i formati di immagine digitale hanno un intervallo dinamico fisso. A causa di questa limitazione, esistono sempre alcuni smuli distinti mappati allo stesso valore digitale. Non è quindi possibile stabilire un mapping uno-a-uno tra i colori reali e i valori della fotocamera digitale. Il limite di gamut viene invece formato stimando una gamma di colori reali in grado di produrre le risposte digitali della fotocamera. L'intervallo stimato viene utilizzato come intervallo per il dispositivo di input.
 
-Sono incluse le primarie per fornire il mapping del gamut dei tipi di business graphics.
+Sono incluse le primarie per fornire il mapping di gamut di tipo finalità grafica aziendale.
 
-In uno stile orientato a oggetti reale si estrae la rappresentazione sottostante del limite della gamma. In questo modo è possibile modificare la rappresentazione in futuro. Per comprendere il descrittore di limite gamut (GBD) usato nella nuova CTE, è necessario innanzitutto comprendere il funzionamento degli algoritmi di mapping di gamut (GMAs). Tradizionalmente, GMAs è stato progettato per soddisfare le esigenze della community grafica. ovvero per riprodurre le immagini che sono già state visualizzate correttamente per il dispositivo in cui è stata creata l'immagine di input. L'obiettivo di Graphic Arts GMAs è quello di eseguire la migliore riproduzione possibile dell'immagine di input nel dispositivo di output. La nuova CTE GBD è progettata per risolvere quattro problemi principali.
+In un vero stile orientato a oggetti si astrae la rappresentazione sottostante del limite di gamut. In questo modo è possibile modificare la rappresentazione in futuro. Per comprendere il descrittore di limite di gamut (GBD) usato nella nuova CTE, è necessario prima di tutto comprendere il funzionamento degli algoritmi di mapping gamut. Tradizionalmente, gli GVA sono stati progettati per soddisfare le esigenze della community di grafica grafica; ovvero riprodurre immagini di cui è già stato eseguito correttamente il rendering per il dispositivo in cui è stata creata l'immagine di input. L'obiettivo degli gmA di grafica grafica è quello di ottenere la migliore riproduzione possibile dell'immagine di input nel dispositivo di output. La nuova CTE GBD è progettata per risolvere quattro problemi chiave.
 
-Poiché viene eseguito il rendering dell'immagine di input per il dispositivo di input, tutti i colori rientrano nell'intervallo tra il punto bianco e il punto nero del supporto. Si supponga che l'immagine sia una fotografia di una scena in cui è presente un bianco diffuso, ad esempio una persona in una maglietta bianca, e un'evidenziazione speculare, ad esempio la luce che riflette una finestra o un paraurti di Chrome. Verrà eseguito il rendering della scena sul supporto di input in modo che l'evidenziazione speculare venga mappata al punto bianco del supporto e che il bianco diffuso sia mappato a un colore neutro scuro rispetto al punto bianco del supporto. La scelta di eseguire il mapping dei colori dalla scena al supporto di input è una decisione dipendente dalla scena e una decisione estetica. Se l'evidenziazione speculare non era presente nella scena originale, il bianco diffuso verrebbe probabilmente mappato al punto bianco del supporto. In una scena con una grande quantità di dettagli, viene lasciato un intervallo superiore tra il bianco speculare e il bianco diffuso. In una scena in cui l'evidenziazione non è significativa, potrebbe essere lasciato un intervallo molto ridotto.
+Poiché viene eseguito il rendering dell'immagine di input per il dispositivo di input, tutti i colori rientrano nell'intervallo tra il punto bianco del supporto e il punto nero. Si supponga che l'immagine sia una fotografia di una scena in cui è presente un bianco diffuso, ad esempio una persona con una ty shirt bianca, e un'evidenziazione speculare, ad esempio una luce che si riflette da una finestra o da un paraurti di colore. Il rendering della scena verrà eseguito sul supporto di input in modo che l'evidenziazione speculare sia mappata al punto bianco del supporto e che il bianco diffuso sia mappato a un colore neutro più scuro rispetto al punto bianco del supporto. La scelta di come eseguire il mapping dei colori dalla scena al supporto di input è sia una decisione dipendente dalla scena che una decisione di tipo fisico. Se l'evidenziazione speculare non è presente nella scena originale, è probabile che il bianco diffuso sia mappato al punto bianco del supporto. In una scena con molti dettagli evidenziati, verrebbe lasciato un intervallo maggiore tra il bianco speculare e il bianco diffuso. In una scena in cui l'evidenziazione non è significativa, potrebbe essere lasciato un intervallo molto piccolo.
 
-Per le immagini pre-renderizzate, il mapping di gamut è relativamente semplice. Fondamentalmente, il punto bianco originale del supporto viene mappato al punto bianco del supporto di riproduzione, il punto nero di origine viene mappato al punto nero di destinazione e la maggior parte del mapping è completa. I diversi GMAs in esistenza forniscono varianti per eseguire il mapping di altri punti sulla scala dei toni del supporto di origine e modi diversi per gestire i valori cromatici fuori gamma. Tuttavia, il mapping tra il bianco e il bianco e il nero a nero è coerente in tutte le varianti. Questa implementazione richiede che il bianco sia superiore a J \* di 50 e nero sotto un j \* di 50.
+Per le immagini con rendering preliminare, il mapping di gamut è relativamente semplice. Fondamentalmente, il punto bianco del supporto originale viene mappato al punto bianco del supporto di riproduzione, il punto nero di origine viene mappato al punto nero di destinazione e la maggior parte del mapping è completo. I diversi gmA esistenti offrono variazioni per il mapping di altri punti sulla scala del tono del supporto di origine e diversi modi per gestire i valori chroma out-of-gamut. Tuttavia, il mapping tra bianco e bianco e nero è coerente in tutte queste varianti. Questa implementazione richiede che il bianco sia sopra una J \* di 50 e il nero sotto una J di \* 50.
 
-Non tutte le codifiche dei colori limitano gli intervalli di colori per le immagini di input. La codifica dei colori standard IEC (IEC 61966-2-2) fornisce 16 bit per ognuno dei tre canali di colore rosso, verde e blu (RGB). In tale codifica, il riferimento nero non è codificato come triple RGB (0, 0, 0), ma come (4096, 4096, 4096). Il riferimento bianco è codificato come (12288, 12288, 12288). La codifica scRGB può essere utilizzata per rappresentare le evidenziazioni speculari e i dettagli dell'ombreggiatura. Include triple RGB che non sono fisicamente possibili perché richiedono quantità di luce negative e codifiche esterne al locus spettrale CIE. Ovviamente, nessun dispositivo può produrre tutti i colori nella gamma di scRGB. In realtà, nessun dispositivo può produrre tutti i colori che possono essere visualizzati da un uomo. Quindi, i dispositivi non possono riempire la gamma di scRGB e sarebbe utile poter rappresentare la parte della gamma che riempiono. Ogni dispositivo ha un intervallo di valori nello spazio scRGB che può produrre. Questi sono i colori "previsti" per il dispositivo; sarebbe sorprendente per il dispositivo produrre colori al di fuori di questa gamma. Esiste una trasformazione definita dallo spazio scRGB allo spazio di aspetto, quindi ogni dispositivo dispone anche di un intervallo di valori di aspetto che dovrebbe essere riprodotto.
+Non tutte le codifiche dei colori limitano gli intervalli di colori per le immagini di input. La codifica colori standard IEC scRGB (IEC 61966-2-2) fornisce 16 bit per ognuno dei tre canali di colore rosso, verde e blu (RGB). In tale codifica, il nero di riferimento non viene codificato come triplo RGB (0, 0, 0), ma come (4096, 4096, 4096). Il bianco di riferimento è codificato come (12288, 12288, 12288). La codifica scRGB può essere usata per rappresentare evidenziazioni speculari e dettagli dell'ombreggiatura. Include tripli RGB che non sono fisicamente possibili perché richiedono quantità negative di luce e codifiche esterne al locus spulare CIE. Ovviamente, nessun dispositivo può produrre tutti i colori nella gamma scRGB. In realtà, nessun dispositivo può produrre tutti i colori che un essere umano può vedere. Pertanto, i dispositivi non possono riempire la gamma scRGB e sarebbe utile essere in grado di rappresentare la parte della gamma che riempiono. Ogni dispositivo ha un intervallo di valori nello spazio scRGB che può produrre. Questi sono i colori "previsti" per il dispositivo. Sarebbe sorprendente che il dispositivo produca colori al di fuori di questa gamma. Esiste una trasformazione definita dallo spazio scRGB allo spazio dell'aspetto, quindi ogni dispositivo ha anche una gamma di valori di aspetto che si prevede di riprodurre.
 
-In scRGB e input da dispositivi di acquisizione caratterizzati da una destinazione fissa, è possibile ottenere un valore non compreso nell'intervallo dei valori previsti. Se un utente calibra una fotocamera a una destinazione di test; quindi acquisisce una scena con evidenziazioni speculari. potrebbero essere presenti pixel più luminosi rispetto al punto bianco della destinazione. La stessa cosa può verificarsi se un rosso naturale è più cromatico rispetto a quello rosso di destinazione. Se un utente accetta un'immagine di scRGB da un dispositivo e quindi modifica manualmente i colori nell'immagine, è possibile creare pixel che non rientrano nell'intervallo previsto del gamut del dispositivo, anche se si trovano all'interno del gamut completo di scRGB.
+Sia in scRGB che nell'input dei dispositivi di acquisizione caratterizzati da una destinazione fissa, è possibile ottenere un valore non compreso nell'intervallo di valori previsti. Se qualcuno calibra una fotocamera in una destinazione di test; e quindi acquisisce una scena con evidenziazioni speculari. Potrebbero essere presenti pixel più luminosi del punto bianco della destinazione. La stessa cosa può verificarsi se un rosso naturale è più cromatico del rosso di destinazione. Se un utente accetta un'immagine scRGB da un dispositivo e quindi modifica manualmente i colori nell'immagine, è possibile creare pixel che non rientrano nell'intervallo previsto della gamma del dispositivo, anche se si trova all'interno della gamma scRGB completa.
 
-In primo luogo, un secondo problema potrebbe non essere correlato a questo. Si verifica quando si usa una destinazione dei colori per caratterizzare un dispositivo di input, ad esempio una fotocamera o uno scanner. Gli obiettivi riflessivi vengono in genere prodotti su carta e contengono numerose patch colorate. Manufaturers fornisce i file di dati con misurazioni colore eseguite in una condizione di visualizzazione fissa per ogni patch di colore. Gli strumenti di profilatura dei colori creano un mapping tra questi valori misurati e i valori restituiti dai sensori di colore nei dispositivi. Il problema è che spesso queste destinazioni dei colori non coprono l'intera gamma di valori del dispositivo. Ad esempio, lo scanner o la fotocamera potrebbe restituire un valore (253, 253, 253) per il punto bianco di riferimento e una patch rossa di riferimento potrebbe avere un valore RGB pari a (254, 12, 4). Rappresentano l'intervallo di valori previsti per il dispositivo di input, in base ai valori di destinazione. Se si caratterizza il dispositivo di input in base alle risposte alla destinazione, si prevede che i colori si trovino solo all'interno di questo intervallo limitato. Questo intervallo non solo è inferiore all'intervallo di colori che può essere visualizzato dagli utenti, è più piccolo dell'intervallo di colori che il dispositivo può produrre.
+Un secondo problema potrebbe non sembrare all'inizio correlato a questo problema. Si verifica quando si usa una destinazione colore per caratterizzare un dispositivo di input, ad esempio una fotocamera o uno scanner. Le destinazioni riflettenti vengono in genere prodotte su carta e contengono una serie di patch colorate. Le funzionalità forniscono file di dati con misurazioni dei colori adottate in una condizione di visualizzazione fissa per ogni patch di colore. Gli strumenti di profilatura dei colori creano un mapping tra questi valori misurati e i valori restituiti dai sensori di colore nei dispositivi. Il problema è che spesso queste destinazioni di colore non coprono l'intera gamma di valori del dispositivo. Ad esempio, lo scanner o la fotocamera potrebbe restituire un valore (253, 253, 253) per il punto bianco di riferimento e una patch rossa di riferimento potrebbe avere un valore RGB pari a (254, 12, 4). Rappresentano l'intervallo di valori previsti per il dispositivo di input, in base ai valori di destinazione. Se si caratterizza il dispositivo di input in base alle risposte alla destinazione, ci si aspetta solo i colori all'interno di questo intervallo ristretto. Questo intervallo non solo è inferiore all'intervallo di colori che possono essere visualizzati dagli esseri umani, ma è inferiore alla gamma di colori che il dispositivo può produrre.
 
-In entrambi i casi, è difficile stimare la gamma del dispositivo o dell'immagine di input, nonostante l'esistenza di un gamut o misurazioni di riferimento. Nel primo problema, la gamma plausibile del dispositivo di input è inferiore alla gamma completa di scRGB. Nel secondo problema la gamma di riferimento della destinazione è inferiore alla gamma completa possibile del dispositivo di input.
+In entrambi i casi, è difficile stimare la gamma del dispositivo o dell'immagine di input, nonostante l'esistenza di una gamma di riferimento o misurazioni. Nel primo problema, la gamut plausibile del dispositivo di input è inferiore alla gamma completa di scRGB. Nel secondo problema, la gamma di riferimento della destinazione è inferiore alla gamma possibile completa del dispositivo di input.
 
-Il terzo problema riguarda il mapping dei toni. Molti modelli di limiti di gamut che possono rappresentare in modo adeguato le immagini di cui è stato eseguito il rendering usati negli arti grafici sono stati proposti, ad esempio, Braun e Fairchild Mountain Range GBD (Braun \[ 97 \] ) e il descrittore di limite di Morovic segmento Maxima (Morovic \[ 98 \] ). Tuttavia, questi modelli forniscono solo informazioni sugli estremi del gamut del dispositivo. non sono disponibili informazioni su altri punti nel mapping tonale. Senza tali informazioni, GMAs è in grado di eseguire stime approssimative del mapping dei toni ottimali. Peggiori, questi modelli non forniscono alcuna guida per l'intervallo dinamico esteso in scRGB e nelle immagini della fotocamera digitale.
+Il terzo problema riguarda il mapping dei toni. Sono stati proposti molti modelli di limiti di gamut che possono rappresentare in modo adeguato le immagini pre-sottoposte a rendering usate nel disegno grafico, ad esempio, braun e Fairchild Mountain range GBD (Braun 97) e il descrittore di limiti Maxima del segmento di \[ \] Morovic (Morovic \[ 98). \] Ma questi modelli forniscono solo informazioni sugli estremi della gamma del dispositivo; Non sono presenti informazioni su altri punti nel mapping tonale. Senza tali informazioni, gli gma possono solo stimare approssimativamente il mapping dei toni ottimale. In peggiore dei casi, questi modelli non offrono alcuna assistenza per l'intervallo dinamico esteso in scRGB e nelle immagini della fotocamera digitale.
 
-In che modo questo problema è risolto nei settori fotografici e videografica? La fotocamera acquisisce un'immagine. Gli esperti potrebbero discutere della quantità di rendering eseguita nel dispositivo di acquisizione. ma accettano che non si tratta di un importo significativo. Entrambe le tecnologie non eseguono il mapping di un bianco diffuso in una scena acquisita al punto bianco del supporto. Analogamente, non eseguono il mapping del punto nero dalla scena al punto nero del supporto. Il comportamento di un film fotografico viene descritto in spazio di densità usando una curva caratteristica, spesso denominata "Hurt" e "Driffield" o la curva H&D. La curva mostra la densità della scena originale e la densità risultante sul film. Nella figura 18 viene illustrata una tipica curva H&D. L'asse x rappresenta un aumento dell'esposizione dei log. L'asse y rappresenta la densità della diapositiva. Cinque punti di riferimento sono contrassegnati sulla curva: nero senza dettagli, che rappresenta la densità minima sul valore negativo. nero con dettaglio; riferimento alla scheda a metà grigio; bianco con dettaglio; e bianco senza dettagli. Si noti che c'è uno spazio tra il nero senza dettagli (che rappresenta il nero del dispositivo) e il nero con dettagli (nero scuro). Analogamente, c'è uno spazio tra il bianco e il dettaglio (il bianco diffuso) e il bianco senza dettagli, che rappresenta il bianco del dispositivo.
+Come viene risolto questo problema nei settori della fotografia e della videografica? La fotocamera acquisisce un'immagine. Gli esperti potrebbero determinare la quantità di rendering eseguita nel dispositivo di acquisizione; ma concordano che non si tratta di una quantità significativa. Entrambe le tecnologie non mappano un bianco diffuso in una scena acquisita al punto bianco del supporto. Analogamente, non mappano il punto nero dalla scena al punto nero del supporto. Il comportamento della filmato illustrativo è descritto nello spazio di densità usando una curva caratteristica, spesso chiamata curva Aferte e Driffield, o curva H&D. La curva mostra la densità della scena originale e la densità risultante nel film. La figura 18 mostra una tipica curva H&D. L'asse x rappresenta un aumento dell'esposizione del log. L'asse y rappresenta la densità sulla diapositiva. Cinque punti di riferimento sono contrassegnati sulla curva: nero senza dettagli, che rappresenta la densità minima sul negativo; nero con dettagli; reference mid-gray card; bianco con dettagli; e bianco senza dettagli. Si noti che c'è spazio tra il nero senza dettagli (che rappresenta il nero del dispositivo) e il nero con dettagli (nero ombreggiato). Analogamente, c'è spazio tra il bianco con dettagli (bianco diffuso) e il bianco senza dettagli (che rappresenta il bianco del dispositivo).
 
-![Diagramma che mostra la curva H e D per la pellicola della diapositiva.](images/gmmp-image079.png)
+![Diagramma che mostra la curva H e D per la diapositiva.](images/gmmp-image079.png)
 
-**Figura 18** : curva H&D per la pellicola della diapositiva
+**Figura 18:** Curva H&D per la diapositiva
 
-Il settore video fornisce "capacità" e "footroom" nelle immagini. Nella specifica ITU 709, la luminanza (denominata Y) viene codificata in 8 bit, con un intervallo compreso tra 0 e 255. Tuttavia, il nero di riferimento è codificato a 15 e il riferimento bianco è codificato come 235. Questa operazione lascia l'intervallo di codifica compreso tra 236 e 255 per rappresentare le evidenziazioni speculari.
+Il settore video fornisce "headroom" e "footroom" nelle immagini. Nella specifica ITU 709 la luminance (denominata Y) viene codificata in 8 bit, con un intervallo compreso tra 0 e 255. Il riferimento nero viene tuttavia codificato a 15 e il bianco di riferimento viene codificato come 235. In questo modo l'intervallo di codifica rimane compreso tra 236 e 255 per rappresentare le evidenziazioni speculari.
 
-Il settore video presenta un sistema di ciclo essenzialmente chiuso. Sebbene ci siano molti fornitori di apparecchiature diversi, i sistemi video si basano sui dispositivi di riferimento. Per le immagini video è disponibile una codifica standard. Non è necessario comunicare un limite di gamut con le immagini video, perché tutte le immagini sono codificate per la riproduzione nello stesso dispositivo di riferimento. Il film è anche un ciclo chiuso perché non è necessario trasferire i dati intermedi tra i diversi componenti. Si vuole una soluzione che consenta di creare immagini da dispositivi con gamme diverse e di rappresentare sia le scene pre-renderizzate che quelle non sottoposte a rendering da riprodurre nell'output con gamme diverse.
+Il settore video presenta un sistema a ciclo chiuso essenzialmente chiuso. Anche se esistono molti fornitori di apparecchiature diversi, i sistemi video si basano su dispositivi di riferimento. È disponibile una codifica standard per le immagini video. Non è necessario comunicare un limite di gamut con le immagini video, perché tutte le immagini vengono codificate per la riproduzione nello stesso dispositivo di riferimento. Anche la filmato è a ciclo chiuso perché non è necessario trasmettere dati intermedi tra componenti diversi. Si vuole una soluzione che consenta di riprodurre nell'output le immagini provenienti da dispositivi con varie gamut e che rappresentano scene sia di cui è stato eseguito il pre-rendering che di cui non è stato eseguito il rendering nell'output con gamut variabili.
 
-Un quarto problema che deve essere risolto dalla nuova CTE è che i colori visivi in grigio prodotti da un dispositivo, ad esempio, quando rosso = verde = blu su un monitor, spesso non rientrano nell'asse neutro della camma (quando Chroma = 0,0). Ciò causa grandi difficoltà per GMAs. Per fare in modo che GMAs funzioni correttamente, è necessario modificare la descrizione del gamut del dispositivo e dei punti di input in modo che l'asse neutro del dispositivo cada sull'asse neutro dello spazio aspetto. È necessario modificare i punti dall'asse neutro di un importo simile. In caso contrario, non è possibile eseguire gradazioni uniformi tramite l'immagine. All'esterno della GMA, questo mapping viene annullato rispetto all'asse neutro del dispositivo di output. Questa operazione viene definita "Chiropratica" di raddrizzamento dell'asse. Come un chiropratico, non solo si raddrizza la Skeleton (asse neutro), ma si regola il resto del corpo per spostarsi insieme alla Skeleton. Analogamente a un chiropratico, la struttura non viene modificata in base alla stessa quantità nell'intero spazio. Al contrario, si modificano le diverse sezioni in modo diverso.
+Un quarto problema che la nuova CTE deve risolvere è che i colori visivamente grigi prodotti da un dispositivo, ad esempio quando red=green=blue su un monitor, spesso non cadono sull'asse neutro della CAM (quando la chroma = 0,0). Ciò causa grandi difficoltà per gli gma. Per fare in modo che gli gma funzionino correttamente, è necessario modificare la descrizione della gamma del dispositivo e dei punti di input in modo che l'asse neutro del dispositivo cada sull'asse neutro dello spazio dell'aspetto. È necessario regolare i punti dall'asse neutro di una quantità simile. In caso contrario, non è possibile eseguire gradazioni uniformi attraverso l'immagine. All'uscita dall'gma, si annulla questo mapping rispetto all'asse neutro del dispositivo di output. Questa operazione viene definita raddrizzamento "chiropratico" dell'asse. Come un chiropratico, non solo si raddrizza lo scheletro (asse neutro), ma si regola il resto del corpo per spostarsi insieme allo scheletro. Come un chiropratico, lo scheletro non viene regolato della stessa quantità nell'intero spazio. È invece possibile modificare diverse sezioni in modo diverso.
 
-![Diagramma che mostra la curvatura dell'asse neutro del dispositivo rispetto all'asse neutro CIECAM.](images/gmmp-image081.png)
+![Diagramma che mostra la curvatura dell'asse neutro del dispositivo rispetto all'asse neutro DELLM.](images/gmmp-image081.png)
 
-**Figura 19:** Curvatura dell'asse neutro del dispositivo rispetto all'asse neutro CIECAM
+**Figura 19:** Curvatura dell'asse neutro del dispositivo rispetto all'asse NEUTROM
 
-La nuova CTE richiede un modello di limite di gamut che può essere usato per rappresentare le immagini di origine sottoposte a rendering e non sottoposte a rendering, fornire informazioni sull'aspetto dei dispositivi neutri e fornire informazioni per le immagini di mapping del tono con un intervallo di luminanza ampio.
+La nuova CTE richiede un modello di limite gamut che può essere usato per rappresentare immagini di origine di cui è stato eseguito il rendering e non sottoposte a rendering, fornire informazioni sull'aspetto dei neutri del dispositivo e fornire informazioni per le immagini di mapping del tono con un ampio intervallo di luminance.
 
-![Diagramma che mostra le tre Shell della gamma.](images/gmmp-image083.png)
+![Diagramma che mostra le tre shell gamut.](images/gmmp-image083.png)
 
-**Figura 20** : tre shell di gamut
+**Figura 20:** Tre shell gamut
 
-Il limite della gamma è costituito da tre Shell che definiscono tre aree.
+Il limite della gamma è costituito da tre shell che definiscono tre aree.
 
-Nella nuova CTE la shell esterna della gamma viene formata con una struttura convessa eseguita da punti di esempio nel gamut del dispositivo. Uno scafo è costituito da un set di punti di esempio che li circonda da una superficie. Una struttura convessa ha la proprietà aggiuntiva di essere convessa ovunque. Non si tratta quindi dello scafo più piccolo possibile che può essere adattato ai dati. Tuttavia, la sperimentazione ha dimostrato che l'adattamento dei punti di esempio causa troppe complicazioni negli artefatti delle immagini, ad esempio la mancanza di ombreggiatura uniforme. Il guscio convesso sembra risolvere questi problemi.
+Nella nuova CTE, la shell esterna della gamma è formata da uno scafo convesso costituito da punti di campionamento nella gamma del dispositivo. Uno scafo viene formato prendendo un set di punti di campionamento e circondandoli da una superficie. Uno scafo convesso ha la proprietà aggiuntiva di essere convesso ovunque. Pertanto, questo non è il più piccolo scafo possibile che può essere adattato ai dati. Tuttavia, la sperimentazione ha dimostrato che l'adattamento troppo stretto dei punti di campionamento causa artefatti poco appetibili nelle immagini, ad esempio la mancanza di ombreggiatura uniforme. Lo scafo convesso sembra risolvere questi problemi.
 
-Nell'algoritmo vengono ottenuti i valori di aspetto dei colori per un set di punti campionati dal dispositivo. Per i monitoraggi e le stampanti, i valori relativi all'aspetto dei colori vengono ottenuti tramite l'output degli esempi e quindi la relativa misurazione. È anche possibile creare un modello di dispositivo, quindi eseguire dati sintetici tramite il modello di dispositivo per stimare i valori misurati. I valori misurati vengono quindi convertiti da spazio colorimetrico (XYZ) a spazio aspetto (jab) e la struttura viene avvolta intorno ai punti.
+Nell'algoritmo, i valori di aspetto del colore vengono ottenuti per un set di punti campionati dal dispositivo. Per monitoraggi e stampanti, i valori relativi all'aspetto dei colori vengono ottenuti generando campioni e quindi misurandoli. È anche possibile creare un modello di dispositivo e quindi eseguire dati sintetici tramite il modello di dispositivo per stimare i valori misurati. I valori misurati vengono quindi convertiti dallo spazio colorimetrico (XYZ) allo spazio dell'aspetto (Jab) e lo scafo viene incapsulato intorno ai punti.
 
-Il punto chiave di questo algoritmo è che il punto bianco adottato usato nella conversione da colorimetrico a spazio aspetto non deve essere il punto bianco del supporto. In alternativa, è possibile selezionare un punto più a lungo all'interno della gamut e, in alternativa, l'asse neutro. Tale punto avrà quindi un valore J pari a 100. Gli esempi con un valore Y misurato superiore al punto bianco adottato finiranno con un valore J maggiore di 100.
+Il punto chiave di questo algoritmo è che il punto bianco adottato usato nella conversione dallo spazio colorimetrico allo spazio dell'aspetto non deve essere il punto bianco del supporto. È invece possibile selezionare un punto più lontano all'interno della gamma e sull'asse neutro (o vicino). Tale punto avrà quindi un valore J pari a 100. I campioni con un valore Y misurato superiore al punto bianco adottato finiranno con un valore J maggiore di 100.
 
-Se si posiziona il punto bianco diffuso della scena come punto bianco adottato per la conversione dello spazio colore, le evidenziazioni speculari nella scena saranno facilmente rilevate come se avessero un valore J maggiore di 100.
+Se si posiziona il punto bianco diffuso della scena come punto bianco adottato per la conversione dello spazio colore, le evidenziazioni speculari nella scena verranno facilmente rilevate come con un valore J maggiore di 100.
 
-Poiché il modello di colore CIECAM02 è basato sul sistema visivo umano, dopo che è stato selezionato un bianco adottato, il livello di luminanza del punto nero (J = 0) viene determinato automaticamente dal modello. Se l'immagine di input ha un intervallo dinamico ampio, è possibile che siano presenti valori che vengono mappati a J-valori minori di zero.
+Poiché il modello a colori DIM02 è basato sul sistema visivo umano, dopo aver selezionato un bianco adottato, il livello di luminanza del punto nero (J = 0) viene determinato automaticamente dal modello. Se l'immagine di input ha un intervallo dinamico ampio, è possibile che siano presenti valori che eseere mappati a valori J minori di zero.
 
-Nella figura 21 riportata di seguito vengono illustrati i dispositivi neutri in esecuzione al centro delle gamme plausibili e di riferimento.
+La figura 21 seguente illustra i dispositivi neutri in esecuzione al centro delle gamut plausibili e di riferimento.
 
-![Diagramma che mostra l'asse del dispositivo neutro aggiunto al limite della gamma.](images/gmmp-image085.png)
+![Diagramma che mostra l'asse neutro del dispositivo aggiunto al limite di gamut.](images/gmmp-image085.png)
 
-**Figura 21** : asse neutro del dispositivo aggiunto al limite della gamma
+**Figura 21:** Asse neutro del dispositivo aggiunto al limite gamut
 
-Tutti i mapping di gamut coinvolgono il ritaglio di un intervallo di input in un gamut di output o la compressione del gamut di input per adattarlo all'interno del gamut di output. Algoritmi più complessi sono formati da comprimere e ritagliare in direzioni diverse oppure dividendo la gamma in aree diverse e quindi eseguendo il ritaglio o la compressione nelle diverse aree.
+Tutti i mapping di gamut comportano il ritaglio di un intervallo di input in una gamma di output o la compressione della gamma di input per adattarla alla gamma di output. Gli algoritmi più complessi vengono formati tramite la compressione e il ritaglio in direzioni diverse oppure dividendo la gamma in aree diverse e quindi eseguendo il ritaglio o la compressione nelle diverse aree.
 
-La nuova CTE estende questo concetto per supportare le aree di una possibile gamma, una gamma plausibile e una gamma di riferimento e consente a GMAs di eseguire il mapping in modi diversi. Inoltre, i GMAs includono informazioni sull'asse neutro del dispositivo. Nella discussione seguente viene illustrato come gestire le situazioni in cui le gamme plausibili e le gamme di riferimento sono state compresse l'una sull'altra.
+La nuova CTE estende questo concetto per supportare le aree di una possibile gamma, una gamut plausibile e una gamma di riferimento e consente agli OGM di mapparle in modi diversi. Inoltre, gli OGM hanno informazioni sull'asse neutro del dispositivo. La discussione seguente illustra come gestire situazioni in cui le gamut plausibili e le gamut di riferimento sono compresse l'una sull'altra.
 
 ![Diagramma che mostra la G M A con due descrittori di gamut non compressi.](images/gmmp-image091.png)
 
-**Figura 22** : GMA con due descrittori di gamut non compressi
+**Figura 22:** Gma con due descrittori di gamut non compressi
 
-Questo esempio può essere visualizzato se si esegue il mapping da un dispositivo di input, ad esempio una fotocamera o uno scanner caratterizzato da una destinazione riflettente, allo spazio scRGB. Di seguito sono riportati i colori plausibili più chiari rispetto a quelli di riferimento bianco. In pratica, la caratterizzazione di una fotocamera con una destinazione potrebbe non generare l'intera gamma di valori possibili nella fotocamera; Tuttavia, le evidenziazioni speculari e i colori molto cromatici rilevati in natura. (Le destinazioni di trasmissione in genere hanno una patch che è la densità minima possibile sul supporto. Con tale destinazione, le evidenziazioni speculari rientrano nell'intervallo della destinazione. Il nero di riferimento per una destinazione riflessiva è l'inizio dell'area nera Shadow. Ovvero, è probabile che siano presenti colori nelle ombre più scure del nero sulla destinazione. Se l'immagine contiene una grande quantità di contenuto interessante in tale area, potrebbe essere utile mantenere la variazione tonale.
+Questo esempio può essere visualizzato se si esegue il mapping da un dispositivo di input, ad esempio una fotocamera o uno scanner caratterizzato da una destinazione riflettente, allo spazio scRGB. Qui i colori plausibili più chiari del bianco di riferimento sono evidenziazioni speculari. In pratica, la caratterizzazione di una fotocamera con una destinazione potrebbe non generare l'intera gamma di valori possibili nella fotocamera. tuttavia, evidenziazioni speculari e colori molto cromatici trovati in natura. Le destinazioni trasmissive hanno in genere una patch che rappresenta la densità minima possibile sul supporto. Con una destinazione di questo tipo, le evidenziazioni speculari rientrano nell'intervallo della destinazione. Il nero di riferimento per una destinazione riflettente è l'inizio dell'area nera dell'ombreggiatura. Ciò significa che è probabile che nelle ombreggiature siano presenti colori più scuri del nero sulla destinazione. Se l'immagine contiene molti contenuti interessanti in tale area, può essere utile conservare tale variazione tonale.
 
-![Diagramma che mostra il G M A con un gamut di destinazione compresso.](images/gmmp-image095.png)
+![Diagramma che mostra la G M A con una gamma di destinazione compressa.](images/gmmp-image095.png)
 
-**Figura 23** : GMA con gamut di destinazione compresso
+**Figura 23:** Gma con gamut di destinazione compresso
 
-La figura 23 Mostra un algoritmo di mapping di gamut possibile quando il gamut di destinazione fornisce solo l'intervallo dal dispositivo bianco al nero e non vi sono colori possibili al di fuori di questa gamma. Questo problema si verifica probabilmente per i dispositivi di output tipici, ad esempio le stampanti. I colori possibili sono mappati al bordo del gamut di destinazione. Ma non dispone di una curva di tono per il dispositivo di output. Il GMA deve selezionare un punto neutro della luminanza inferiore da usare come destinazione del mapping per il bianco di riferimento. Un algoritmo sofisticato può eseguire questa operazione histogramming lightnesses nell'immagine di origine e visualizzare il numero di rientri nell'intervallo di previsto ma più chiaro del bianco di riferimento. Maggiore è il numero di lightnesses, maggiore è il numero di spazio necessario nel dispositivo di destinazione tra i punti di mapping per le evidenziazioni speculari e il bianco di riferimento. Un algoritmo più semplice può scegliere una distanza arbitraria dalla scala di luminosità del dispositivo bianco, ad esempio il 5%. Un approccio simile è valido per il mapping del nero massimo e nero ombreggiato.
+La figura 23 mostra un possibile algoritmo di mapping di gamut quando la gamma di destinazione fornisce solo l'intervallo dal bianco al nero del dispositivo e non sono presenti colori possibili al di fuori di questa gamma. Ciò è probabile che si verifica per i dispositivi di output tipici, ad esempio le stampanti. I colori possibili vengono mappati al bordo della gamma di destinazione. Ma manca una curva tonale per il dispositivo di output. Il GMA deve selezionare un punto neutro di luminanza inferiore da usare come destinazione di mapping per il bianco di riferimento. Un algoritmo sofisticato può eseguire questa operazione istogrando le leggerezze nell'immagine di origine e vedere quanti rientrano nell'intervallo previsto, ma più leggero del bianco di riferimento. Maggiore è la leggerezza, maggiore è lo spazio necessario nel dispositivo di destinazione tra i punti mappati per le evidenziazioni speculari e il bianco di riferimento. Un algoritmo più semplice potrebbe scegliere una distanza arbitraria rispetto alla scala di leggerezza dal bianco del dispositivo, ad esempio il 5%. Un approccio simile si applica per il mapping del nero massimo e dell'ombreggiatura nera.
 
-Dopo aver generato la curva di tono di destinazione, è possibile eseguire il mapping in un metodo simile a quello usato nella figura 23 precedente. Tutti i punti nella curva di tono di destinazione rientrano nel gamut del dispositivo e tutti i punti nel mapping devono rientrare nel gamut del dispositivo.
+Dopo aver generato la curva tono di destinazione, è possibile eseguire il mapping in un metodo simile a quello usato nella figura 23 precedente. Tutti i punti nella curva del tono di destinazione rientrano nella gamma del dispositivo e tutti i punti nel mapping devono rientrare nella gamma del dispositivo.
 
-Se si invertono le figure a sinistra e a destra e le direzioni delle frecce nella figura 23, è possibile descrivere il caso in cui l'immagine di origine dispone solo di una gamma di riferimento e le tre gamme del dispositivo di output non sono state compresse l'una sull'altra. Un esempio potrebbe essere il mapping da un monitoraggio a scRGB. Anche in questo caso, la GMA deve sintetizzare i punti di controllo per i cinque punti sulla curva di tono per l'immagine di origine. Alcuni mapping potrebbero inserire tutti i punti della curva di tono all'interno del gamut del dispositivo scRGB, mentre altri mapping potrebbero utilizzare più della gamut di scRGB eseguendo il mapping tra il bianco e il bianco di riferimento e consentendo al bianco speculare di eseguire il mapping a un valore più chiaro.
+Se si inverteno le figure a sinistra e a destra e le direzioni delle frecce nella figura 23, è possibile descrivere il caso in cui l'immagine di origine ha solo una gamma di riferimento e le tre gamut del dispositivo di output non sono compresse tra loro. Un esempio di questo potrebbe essere il mapping da un monitoraggio a scRGB. Anche in questo caso, il GMA deve sintetizzare i punti di controllo per i cinque punti sulla curva tonale per l'immagine di origine. Alcuni mapping potrebbero inserire tutti i punti della curva tonale all'interno della gamma di dispositivi scRGB, mentre altri mapping potrebbero usare una maggiore gamma di scRGB mappando il bianco diffuso al bianco di riferimento e consentendo al bianco speculare di eseguire il mapping a un valore più chiaro.
 
-Infine, si ha il caso in cui entrambi i dispositivi hanno solo la gamma di riferimento, ovvero la maggior parte degli algoritmi di mapping di gamut. Per risolvere questo problema, è possibile eseguire il fallback solo sugli algoritmi correnti. In alternativa, se si dispone di un modo ragionevole per determinare i cinque punti di riferimento per i dispositivi di origine e di destinazione, è possibile disporre di per eseguire il mapping dei punti di riferimento.
+Infine, si ha il caso in cui entrambi i dispositivi hanno solo la gamma di riferimento, ovvero il funzionamento della maggior parte degli algoritmi di mapping della gamma. Per risolvere questo problema, è sufficiente eseguire il rollback agli algoritmi correnti. In alternativa, se si dispone di un modo ragionevole per determinare i cinque punti di riferimento per i dispositivi di origine e di destinazione, è possibile disporre per eseguire il mapping dei punti di riferimento.
 
-Le gamme di dispositivi contengono più di cinque punti di riferimento sull'asse neutro. Rappresentano solo i limiti tra le aree potenziali nell'immagine. Tra i punti di riferimento è possibile usare qualsiasi tecnica di mapping di gamut esistente. Quindi, è possibile ritagliare l'intervallo di colori imprevisti e comprimere tutti i colori tra il bianco e il nero previsti oppure è possibile ritagliare tutti i colori all'esterno dell'intervallo di riferimento e comprimere all'interno di tale intervallo. Sono disponibili molte possibilità, che possono essere implementate in GMAs diversi. Inoltre, GMAs può comprimere e ritagliare in modi diversi. Tutte queste combinazioni sono incluse in questa invenzione.
+Le gamut del dispositivo contengono più dei cinque punti di riferimento sull'asse neutro. Questi rappresentano semplicemente i limiti tra le aree potenziali nell'immagine. Tra ognuno dei punti di riferimento, è possibile usare una delle tecniche di mapping della gamma esistenti. È quindi possibile ritagliare l'intervallo di colori imprevisti e comprimere tutti i colori tra il bianco e il nero previsti oppure ritagliare tutti i colori al di fuori dell'intervallo di riferimento e comprimersi all'interno di tale intervallo. Esistono molte possibilità, che possono essere implementate in diversi OGM. Inoltre, gli OGM possono comprimere e ritagliare in modi diversi. Tutte queste combinazioni sono coperte in questa invenzione.
 
-Finora in questa discussione, la gamma è stata trattata come se fosse solo una funzione del dispositivo in cui l'immagine è stata creata, acquisita o visualizzata. Tuttavia, non esiste alcun motivo per cui tutte le immagini per un dispositivo devono avere lo stesso gamut. I GMAs dipendono dai dati in GBD. Se il descrittore viene modificato tra le immagini, non esiste alcun modo per la conoscenza del GMAs. In particolare, se le immagini non hanno evidenziazioni speculari, GMAs prestazioni migliori se il descrittore della gamma non mostra che sono presenti colori più chiari rispetto al bianco diffuso.
+Finora in questa discussione, la gamma è stata considerata come se fosse solo una funzione del dispositivo in cui l'immagine è stata creata, acquisita o visualizzata. Tuttavia, non esiste alcun motivo per cui tutte le immagini per un dispositivo devono avere la stessa gamma. Gli OGM dipendono dai dati in GBD. Se il descrittore viene modificato tra le immagini, non è possibile che gli OGM lo sappiano. In particolare, se le immagini non hanno evidenziazioni speculari, gli OGM hanno prestazioni migliori se il descrittore di gamut non mostra che sono presenti colori più chiari del bianco diffuso.
 
-Nella nuova architettura CTE è possibile usare più di un GMA. L'uso di più GMAs è intrinsecamente definito in modo non corretto. Se, ad esempio, un dispositivo di acquisizione associa un GMA al suo "aspetto", tende a eseguire questa operazione con una gamma di destinazione "mirata". Lo stesso vale per i dispositivi di output e le gamme di origine "mirate". La gamut sRGB è una gamma implicita di destinazione comune. Si consiglia pertanto di usare un singolo GMA, se la prevedibilità è una priorità. Un singolo flusso di lavoro GMA dovrebbe essere l'impostazione predefinita per tutti i flussi di lavoro, in particolare i flussi di lavoro consumer e prosumer. Sebbene il mapping di gamut per la riproduzione preferita venga eseguito una sola volta, sono presenti istanze in cui sono inclusi più processi di mapping. Per prima cosa, per la correzione si esegue un mapping preferenziale alla gamma del dispositivo di destinazione finale, quindi un rendering colorimetrico nella gamma del dispositivo di correzione. In secondo luogo, alcuni tipi di mapping vengono usati per modificare le caratteristiche dell'immagine, ma non sono inclusi per eseguire il mapping a una gamma di dispositivi, ad esempio per regolare la curva di tono o la cromaticità. Se vengono usati più GMAs, l'interfaccia di trasformazione accetta una matrice di mappe di gamut associate, ovvero mappe di gamut che sono state inizializzate con una coppia di descrizioni dei limiti della gamma. Quando è presente più di una mappa gamut, il limite della gamma di input per una mappa di gamut successiva deve corrispondere al limite della gamma di output del predecessore.
+Nella nuova architettura CTE è possibile usare più di un gma. L'uso di più OGM non è intrinsecamente definito. Ad esempio, se un dispositivo di acquisizione associa un GMA al suo "aspetto", tende a farlo con una gamma di destinazione "mirata". Lo stesso vale per i dispositivi di output e le gamut di origine "di destinazione". La gamma sRGB è una gamma implicita comunemente mirata. Pertanto, è consigliabile usare un singolo gma, se la prevedibilità è una priorità. Un singolo flusso di lavoro GMA deve essere l'impostazione predefinita per tutti i flussi di lavoro, in particolare i flussi di lavoro consumer e prosumer. Anche se il mapping a gamut per la riproduzione preferita deve essere eseguito una sola volta, in alcuni casi sono inclusi più processi di mapping. Prima di tutto, per la correzione, si esegue un mapping preferito alla gamma del dispositivo di destinazione finale e quindi un rendering colorimetrico alla gamma del dispositivo di correzione. In secondo piano, alcuni tipi di mapping vengono usati per modificare le caratteristiche dell'immagine, ma non sono inclusi per eseguire il mapping a una gamma di dispositivi, ad esempio regolando la curva tonale o la cromaticità. Se vengono usati più gma, l'interfaccia di trasformazione accetta una matrice di mappe gamut associate, cio' mappe gamut inizializzate con una coppia di descrizioni dei limiti di gamut. Quando è presente più di una mappa di gamut, il limite di gamut di input per una mappa di gamut completata deve essere lo stesso del limite di gamut di output del relativo predecessore.
 
-La funzione limite della gamma di dispositivi accetta il motore del modello di dispositivo e i parametri analitici e deriva un limite di gamut dei dispositivi di colore descritto come un elenco di vertici ordinati della struttura convessa del gamut del dispositivo. L'elenco dei vertici ordinati viene archiviato in CIEJab. La struttura dell'elenco dei vertici ordinati è ottimizzata per l'accelerazione hardware da DirectX. Questo approccio presenta molte soluzioni ben note (cercare "convesso Hull DirectX" sul Web e si ottengono oltre 100 riscontri). In questo argomento è disponibile anche un riferimento a 1983 (teoria grafica del computer e applicazione, "Shiphulls, b-spline Surfaces e CADCAM" pp. 34-49), con riferimenti che risalgono da 1970 a 1982 nell'argomento.
+La funzione limite di gamut del dispositivo accetta il motore del modello di dispositivo e i parametri analitici e deriva un limite di gamut del dispositivo a colori descritto come un elenco di vertici ordinato dello scafo convesso della gamma del dispositivo. L'elenco di vertici ordinato viene archiviato in CIEJab. La struttura dell'elenco di vertici ordinato è ottimizzata per l'accelerazione hardware da DirectX. Questo approccio ha molte soluzioni note (cercare "convex hull DirectX" sul Web e ottenere oltre 100 riscontri). C'è anche un riferimento dal 1983 su questo argomento (Teoria della grafica computer e applicazione, "Shiphulls, b-spline surfaces and cadcam" pp. 34-49), con riferimenti relativi dal 1970 al 1982 sull'argomento.
 
-Per calcolare i triangoli nella shell gamut, è possibile usare due tecniche diverse. Per altri dispositivi diversi dai dispositivi RGB aggiuntivi, viene calcolata una struttura convessa. Se si dispone dell'accesso diretto a tali dispositivi per convalidare l'affidabilità, le prestazioni e la fedeltà degli algoritmi, è possibile valutare il supporto della struttura non convessa per altri dispositivi. Si tratta di un processo noto che non richiede una descrizione aggiuntiva. La tecnica usata per i dispositivi RGB aggiuntivi è descritta di seguito.
+Per calcolare i triangoli nella shell gamut è possibile usare due tecniche diverse. Per altri dispositivi diversi da dispositivi RGB additivi, si calcola uno scafo convesso. È possibile analizzare il supporto dello scafo non convesso per altri dispositivi se si ha accesso diretto a tali dispositivi per convalidare la solidità, le prestazioni e la fedeltà degli algoritmi. Si tratta di un processo noto che non richiede ulteriori descrizioni. La tecnica usata per i dispositivi RGB additivi è descritta di seguito.
 
-GBDs diversi presentano vantaggi e svantaggi. La rappresentazione convessa della struttura garantisce proprietà geometriche interessanti, ad esempio sezioni di tonalità convesse che forniscono un punto di intersezione univoco con un raggio che emana da un punto sull'asse neutro. Anche il lato negativo della rappresentazione convessa è la convessità. È noto che molti dispositivi, in particolare i dispositivi di visualizzazione, hanno gamme che non sono più convesse. Se il gamut effettivo devia significativamente dal presupposto della convessità, la rappresentazione della struttura convessa risulterebbe non accurata, probabilmente nella misura in cui non rappresenta la realtà.
+GbD diversi presentano vantaggi e svantaggi. La rappresentazione dello scafo convesso garantisce proprietà geometriche di qualità, ad esempio sezioni di tonalità convessa che forniscono un punto di intersezione univoco con un raggio che emana da un punto sull'asse neutro. Anche lo svantaggio della rappresentazione dello scafo convesso è la convessità. È noto che molti dispositivi, in particolare i dispositivi di visualizzazione, hanno gamut che non sono convessi. Se la gamma effettiva devia in modo significativo dal presupposto di convessabilità, la rappresentazione dello scafo convesso sarebbe imprecisa, possibilmente nella misura in cui non rappresenta la realtà.
 
-Dopo aver adottato un GBD che fornisce una rappresentazione ragionevolmente accurata del gamut reale, si verificano altri problemi, alcuni a causa del concetto di sezione tonalità. Esistono almeno due situazioni patologiche. Nella figura seguente, una gamma CRT fornisce le sezioni Hue con "Islands". Nella figura 25 una gamma di stampanti viene sollevata in una sezione di tonalità con parte dell'asse neutro mancante. In questi casi, le sezioni di tonalità patologiche non sono causate da limiti di gamut patologici. Sono causati dal concetto di sezione Hue, perché (a) viene preso in tinta costante e (b) richiede solo una metà del piano che corrisponde all'angolo di tonalità.
+Dopo aver adottato un GBD che fornisce una rappresentazione ragionevolmente accurata della gamma effettiva, si verificano altri problemi, alcuni a causa del concetto stesso di sezione di tonalità. Esistono almeno due situazioni patologiche. Nella figura 24 seguente, una gamma CRT dà origine a sezioni di tonalità con "isole". Nella figura 25, una gamma di stampanti dà origine a una sezione di tonalità con parte dell'asse neutro mancante. Le sezioni di tonalità patologiche non sono causate da limiti di gamut particolarmente patologici in questi casi. Sono causati dal concetto stesso di sezione di tonalità, perché (a) viene assunto con una tonalità costante e (b) accetta solo una metà del piano che corrisponde all'angolo della tonalità.
 
-![Diagramma che mostra una visualizzazione superiore e una visualizzazione laterale dell'"curvatura in" nelle tonalità blu.](images/gmmp-image097.jpg)
+![Diagramma che mostra una visualizzazione superiore e una vista laterale del "curving in" nelle sfumature blu.](images/gmmp-image097.jpg)
 
-**Figura 24** : un tipico monitor CRT presenta una gamma che mostra la "curvatura" nelle tonalità blu. Se vengono rilevate sezioni di tonalità in questo intervallo di tonalità, le isole isolate possono essere visualizzate nelle sezioni tonalità.
+**Figura 24:** un tipico monitor CRT ha una gamma che mostra particolari "curving in" nelle sfumature blu. Se le sezioni di tonalità vengono prelevate all'interno di questo intervallo di tonalità, è possibile che le isole isolate vengano visualizzate nelle sezioni di tonalità.
 
-![Diagramma di una gamma con ' Gap ' nell'asse neutro.](images/gmmp-image099.jpg)
+![Diagramma di una gamma con un 'gap' nell'asse neutro.](images/gmmp-image099.jpg)
 
-**Figura 25** : una stampante può avere una gamma con "gap" nell'asse neutro. Quando viene eseguita una sezione di tonalità (che corrisponde solo a una metà del piano), è presente un "dente" sulla parte del limite che rappresenta l'asse neutro. Questo può essere difficile da risolvere algoritmicamente.
+**Figura 25:** una stampante può avere una gamma con "gap" nell'asse neutro. Quando viene presa una sezione di tonalità (che è solo la metà del piano), c'è un "dent" nella parte del limite che è l'asse neutro. Questa operazione può essere difficile da risolvere in modo algoritmico.
 
-Per risolvere queste patologie, viene proposto un nuovo Framework che abbandona il concetto di sezione Hue utilizzata come punto di partenza. Il Framework usa invece il set di "elementi linea limite" o le linee che si trovano sul limite della gamma. Non forniscono necessariamente una visualizzazione geometrica coerente come le sezioni Hue, ma supportano tutte le operazioni di gamut comuni. Oltre a risolvere i problemi citati in precedenza, questo approccio suggerisce anche che la costruzione di sezioni di tonalità, anche quando è possibile, è molto dispendiosa dal punto di vista del calcolo.
+Per risolvere queste pathologie, viene proposto un nuovo framework che abbandona il concetto di sezione di tonalità usata come punto di partenza. Il framework usa invece il set di "elementi linea limite" o linee che si trovano sul limite gamut. Non forniscono necessariamente una visualizzazione geometrica coerente come le sezioni di tonalità, ma supportano tutte le operazioni di gamut comuni. Oltre a risolvere i problemi menzionati in precedenza, questo approccio suggerisce anche che la costruzione di sezioni di tonalità, anche quando è possibile, è disdetta dal punto di vista computazionale.
 
-### <a name="triangulation-of-the-gamut-boundary"></a>Triangolazione del limite della gamma
+### <a name="triangulation-of-the-gamut-boundary"></a>Triangolazione del limite Gamut
 
-Il punto di partenza è un GBD costituito da una triangolazione del limite della gamma. I metodi noti per costruire GBDs in genere forniscono la triangolazione. Per concreta, un metodo di costruzione di GBDs per i dispositivi additivi lo spazio del dispositivo è descritto qui. Questi dispositivi includono i monitoraggi (basati su CRT e su LCD) e i proiettori. La geometria semplice del cubo consente di introdurre un normale reticolo sul cubo. I visi limite del cubo possono essere triangolati in diversi modi, ad esempio quello illustrato nella figura 26. L'architettura fornisce un modello di dispositivo per il dispositivo, in modo che sia possibile ottenere i valori colorimetrico dei punti di reticolo algoritmicamente oppure che le misurazioni siano state effettuate direttamente per tali punti. L'architettura fornisce anche CIECAM02, in modo che sia possibile presupporre che i dati iniziali siano già stati mappati nello spazio CIECAM02 jab. Ogni punto di reticolo sui bordi del cubo RGB dispone quindi di un punto corrispondente nello spazio jab. Le connessioni di punti che formano il set di triangoli nello spazio RGB provocano anche un set di triangoli nello spazio jab. Questo set di triangoli costituisce una triangolazione ragionevole del limite della gamma se (a) il reticolo sul cubo RGB è sufficiente e (b) la trasformazione dallo spazio del dispositivo allo spazio uniforme del colore è topologicamente ben funzionante. ovvero, esegue il mapping del limite al limite e non trasforma la gamma interna, in modo che i punti interni diventino punti limite.
+Il punto iniziale è un GBD costituito da una triangolazione del limite di gamut. I metodi noti per la costruzione di GBD forniscono in genere tale triangolazione. Per concretezza, un metodo per costruire GBD per i dispositivi additivi è descritto qui. Questi dispositivi includono monitor (sia basati su CRT che basati su LCD) e proiettori. La geometria semplice del cubo consente di introdurre un normale reticolo sul cubo. Le visi limite del cubo possono essere triangolate in diversi modalità, ad esempio quella illustrata nella figura 26. L'architettura fornisce un modello di dispositivo per il dispositivo in modo che i valori colorimetrici dei punti reticolo possano essere ottenuti in modo algoritmico o che le misurazioni siano state effettuate direttamente per tali punti. L'architettura fornisce anche ILM02, in modo che sia possibile presupporre che i dati di avvio siano già stati mappati nello spazio DELLA SINCRONIZZAZIONEM02. Ogni punto di lattice sulle facce limite del cubo RGB ha quindi un punto corrispondente nello spazio vuoto. Le connessioni dei punti che formano il set di triangoli nello spazio RGB provocano anche un set di triangoli nello spazio Disatteso. Questo set di triangoli forma una triangolazione ragionevole del limite di gamut se (a) il reticolo sul cubo RGB è abbastanza fine e (b) la trasformazione dallo spazio del dispositivo allo spazio colori uniforme è topologicamente ben comportata; ciò significa che esegue il mapping del limite al limite e non trasforma la gamma all'interno in modo che i punti interni diventino punti limite.
 
-![Diagramma che illustra un metodo semplice per triangluate il limite della gamma di un dispositivo con R G B come spazio del dispositivo.](images/gmmp-image100.png)
+![Diagramma che illustra un metodo semplice per triangolare il limite di gamut di un dispositivo con R G B come spazio del dispositivo.](images/gmmp-image100.png)
 
-**Figura 26** : un metodo semplice per triangolare il limite della gamma di un dispositivo con RGB come spazio del dispositivo
+**Figura 26:** Metodo semplice per triangolare il limite di gamut di un dispositivo con RGB come spazio del dispositivo
 
 ### <a name="boundary-line-elements"></a>Elementi linea limite
 
-La centralità di questo Framework è il concetto di elementi linea limite; un set di segmenti di linea che (a) si trovano sul limite della gamma e (b) si trovano su un piano. In questo caso, il piano è un piano di tonalità. Ogni segmento di linea è il risultato dell'intersezione del piano con un triangolo di limite della gamma. Anche se molti ricercatori hanno usato la costruzione dell'intersezione di un piano con triangoli limite, in genere analizzano la relazione tra questi segmenti di linea e tentano di costruire un oggetto geometrico coerente tra i segmenti di linea. Sono stati concepiti algoritmi diversi per seguire questi segmenti di riga uno dopo l'altro fino a quando non viene ottenuta un'intera sezione di tonalità e sono stati effettuati molti tentativi per velocizzare il processo di ricerca.
+Il concetto centrale di questo framework è il concetto di elementi linea limite; un set di segmenti di linea che (a) si trovano sul limite di gamut e (b) si trovano su un piano. In questo caso, il piano è un piano di tonalità. Ogni segmento di linea è il risultato dell'intersezione del piano con un triangolo limite gamut. Anche se molti ricercatori hanno usato la costruzione dell'intersezione di un piano con triangoli limite, in genere analizzano la relazione tra questi segmenti di linea e tentano di costruire un oggetto geometrico coerente fuori dai segmenti di linea. Sono stati escociati algoritmi diversi per seguire questi segmenti di linea uno dopo l'altro fino a quando non viene ottenuta un'intera sezione di tonalità e sono stati effettuati molti tentativi per velocizzare il processo di ricerca.
 
-Questo approccio è diverso. Il piano viene intersecato con i triangoli per ottenere i segmenti di linea. Questi segmenti di linea vengono quindi considerati come oggetti concettuali di *base* . È necessario analizzare la relazione tra i segmenti di linea; non è necessario capire come sono interconnesse tra loro. Questo punto di vista consente di risolvere il problema della sezione Hue con le isole. Gli approcci noti che tentano di costruire la sezione Hue presuppongono che, se uno inizia con un segmento di linea e lo segue al segmento di riga successivo e così via; Infine, viene restituito il punto iniziale, a quel punto viene costruita un'intera sezione di tonalità. Sfortunatamente, questo approccio potrebbe perdere l'isola (e nello scenario peggiore, il continente). Senza insistere sull'ottenimento di un'immagine geometrica coerente; ovvero, la sezione Hue consente di gestire facilmente il problema dell'isola. Un'altra differenza importante in questo approccio è che, per velocizzare la costruzione di segmenti di linea, viene usato un "filtro triangolo". Il filtro del triangolo genera determinati triangoli che non produrranno i segmenti di linea che risultano utili nell'operazione di gamut corrente. Poiché l'intersezione di un triangolo con il piano è costosa dal punto di vista del calcolo, questo migliora la velocità. Un effetto collaterale è che non è possibile costruire la sezione Hue perché alcuni segmenti di linea risultano mancanti a causa del filtro del triangolo.
+Questo approccio è diverso. Intersecare il piano con i triangoli per ottenere i segmenti di linea. Si considerino quindi questi segmenti di linea come oggetti *concettuali* di base. È necessario analizzare la relazione tra i segmenti di linea. Non è necessario sapere in che modo sono interconnesse tra loro. Questo punto di vista risolve il problema della sezione hue con le isole. Gli approcci noti che tentano di costruire una sezione di tonalità presuppongono che, se uno inizia con un segmento di linea e lo segue al segmento di linea successivo e così via; alla fine riporta al punto iniziale, a quel punto viene costruita un'intera sezione di tonalità. Sfortunatamente, questo approccio potrebbe perdere l'isola (e nello scenario peggiore, il continente). Senza insodettersi nell'ottenere un'immagine geometrica coerente; in altre parole, hue slice, è possibile gestire il problema dell'isola senza problemi. Un'altra differenza importante in questo approccio è che, per velocizzare la costruzione dei segmenti di linea, usa un "filtro triangolo". Il filtro triangolo genera alcuni triangoli che sicuramente non produrranno segmenti di linea che sarebbero utili nell'operazione di gamut corrente. Poiché l'intersezione di un triangolo con il piano è dispendiosa dal punto di vista del calcolo, ciò migliora la velocità. Un effetto collaterale è che non è possibile costruire una sezione di tonalità perché alcuni segmenti di linea non sono presenti a causa del filtro del triangolo.
 
-### <a name="gamut-operation-checkgamut"></a>Operazione gamut: CheckGamut
+### <a name="gamut-operation-checkgamut"></a>Operazione Gamut: CheckGamut
 
-Nell'esempio seguente viene illustrato il funzionamento del Framework e il modo in cui viene eseguito CheckGamut, vale a dire l'operazione di verifica se un colore è in gamma.
+L'esempio seguente illustra il funzionamento del framework e come viene eseguito CheckGamut, cio' l'operazione di controllo se un colore è in gamut.
 
-Il framework generale è illustrato nella figura 27 seguente. Sono disponibili diversi componenti. I componenti etichettati in corsivo sono componenti che possono essere diversi nell'implementazione a seconda dell'operazione di gamut in questione. Gli altri componenti sono invariabili in tutte le operazioni di gamut. Per iniziare, l' ***input*** è un set di attributi di colore. Nel caso di CheckGamut, è il colore della query. Nella figura 27 e nella discussione seguente si presuppone che l'angolo di tonalità sia tra gli attributi di colore di input o che possa essere ottenuto da essi. Questa situazione è evidente se l'input è l'intero punto di colore, in jab o JCh, da cui è possibile calcolare l'angolo di tonalità. Si noti che l'angolo di tonalità è necessario solo perché vengono usati i piani Hue. A seconda dell'operazione di gamut in questione, potrebbe non essere necessario usare il piano di tonalità. Ad esempio, nella costruzione della routine CheckGamut, può essere necessario usare i piani di costante J. Si tratta di una generalità che non verrà utilizzata o discussa ulteriormente; può tuttavia essere utile ricordare questa flessibilità della metodologia per supportare altre operazioni di gamut quando il piano Hue potrebbe non essere la scelta migliore.
+Il framework generale è illustrato nella figura 27 seguente. Sono disponibili vari componenti. I componenti etichettati in corsivo sono componenti che possono essere diversi nell'implementazione a seconda dell'operazione di gamut in questione. Gli altri componenti sono invarianti in tutte le operazioni gamut. Per iniziare, ***Input è*** un set di attributi di colore. Nel caso di CheckGamut, è il colore della query. Nella figura 27 e nella discussione seguente si presuppone che l'angolo della tonalità sia tra gli attributi di colore di input o possa essere ottenuto da essi. Questo è chiaramente il caso se l'input è l'intero punto di colore, in Parentesi o JCh, da cui è quindi possibile calcolare l'angolo della tonalità. Si noti che l'angolo della tonalità è necessario solo perché vengono usati piani di tonalità. A seconda dell'operazione gamut in questione, potrebbe non essere necessario usare il piano di tonalità. Ad esempio, nella costruzione della routine CheckGamut, è possibile usare piani della costante J. Si tratta di una generalità che non verrà usata o discussa ulteriormente; ma potrebbe essere utile ricordare questa flessibilità della metodologia per supportare altre operazioni gamut quando il piano hue potrebbe non essere la scelta migliore.
 
 ![Diagramma che mostra il flusso per supportare le operazioni di gamut.](images/gmmp-image112.jpg)
 
-**Figura 27** : Framework per supportare le operazioni di gamut
+**Figura 27:** Framework per supportare le operazioni gamut
 
-L'angolo di tonalità, ottenuto direttamente dagli input o calcolato dagli input, viene usato per inizializzare il piano di Hue con etichetta **full Hue** nella figura. Viene enfatizzato "full" poiché si tratta del piano completo, non solo del piano di metà che contiene la tonalità. Il piano completo contiene sia l'angolo di tonalità di input che l'angolo di 180 gradi opposto. La funzionalità chiave del piano Hue è la funzione Intersect, descritta nella sottosezione seguente, Full Hue Plane: Intersect. Si supponga che GBD sia già stato costruito e che sia disponibile il set di **triangoli limite gamma** . Intersecare i triangoli che sono sopravvissuti al *_filtro triangolo_** con il piano di tonalità usando Intersect. Il _componente filtro triangolo * è contrassegnato in corsivo, il che significa che il componente varia nell'implementazione per diverse operazioni di gamut. Il *filtro del triangolo* per CheckGamut è illustrato nella sezione operazione gamut: CheckGamut (continua). Il risultato dell'intersezione di un triangolo con il piano di tonalità è vuoto o un **elemento della linea di limite** , ovvero una coppia di punti distinti. Se il risultato non è vuoto, viene passato al processore di elementi a *_linee_*_ , che esegue nuovamente diverse operazioni a seconda dell'operazione di gamut. Il _processore di elementi linea * Aggiorna la struttura dei dati interna, ***dati elaborati interni**_ il cui contenuto o layout dipende anche dall'operazione di gamut. In genere, i _dati elaborati interni * contengono la risposta al problema, che viene continuamente aggiornata con ogni nuovo elemento linea limite trovato. Quando tutti gli elementi linea limite sono stati elaborati, la risposta è stata trovata. Rimane ad accedervi tramite l'adattatore di **output**_. Poiché i dati elaborati _Internal * sono specifici dell'operazione di gamma, anche l' *adattatore di output* è specifico dell'operazione di gamut.
+L'angolo della tonalità, ottenuto direttamente dagli input o calcolato dagli input, viene usato per inizializzare il piano di tonalità con etichetta **Full Hue Plane** nella figura. "Full" è evidenziato perché questo è il piano completo, non solo il mezzo piano contenente la tonalità. Il piano completo contiene sia l'angolo di tonalità di input che l'angolo di 180 gradi opposti. La funzionalità chiave del piano tonalità è la funzione Intersect, illustrata nella sottosezione Seguente, Full Hue Plane: Intersect. Si supponga che il GBD sia già stato costruito e che sia disponibile il set di triangoli **limite Gamut.** Intersecare i triangoli che sono sopravvivenzi a **_Triangle Filter_* _ con il piano di tonalità usando Intersect. Il componente Triangle Filter* è etichettato in corsivo, il che significa che il componente varia nell'implementazione _per diverse operazioni di gamut. Il *filtro triangolare* per CheckGamut è illustrato nella sezione Operazione Gamut: CheckGamut (continua). Il risultato dell'intersezione di un triangolo con il piano di tonalità è vuoto o un elemento **linea** limite, ci esempio una coppia di punti distinti. Se il risultato è non vuoto,**_ viene passato a * Line Element Processor , che esegue di nuovo operazioni diverse a seconda dell'operazione gamut. Line Element Processor* aggiorna la struttura dei _dati interni, * Internal Processed **Data**_ , il cui contenuto o layout dipende anche dall'operazione gamut. In genere, i dati interni elaborati* contengono la "risposta" al problema, che viene continuamente aggiornata con ogni nuovo _elemento linea limite trovato. Dopo l'elaborazione di tutti gli elementi linea limite, è stata trovata la risposta. Rimane per accedervi tramite l'adattatore di **output ***_. Poiché il _Internal dati elaborati* è specifico dell'operazione di gamut, anche l'adattatore di *output* è specifico dell'operazione di gamut.
 
-### <a name="full-hue-plane-intersect"></a>Piano di Hue completo: Intersect
+### <a name="full-hue-plane-intersect"></a>Piano Tonalità completa: Interseca
 
-La funzione Intersect calcola l'intersezione tra il piano di tonalità e un triangolo. Questa funzione è importante per due motivi.
+La funzione Intersect calcola l'intersezione del piano di tonalità e di un triangolo. Per quanto semplice, questa funzione è importante per due motivi.
 
-Prima di tutto, l'intersezione di ogni bordo del triangolo con il piano potrebbe produrre tre punti di intersezione, una situazione geometricamente impossibile. Il motivo per cui questa situazione potrebbe verificarsi nel calcolo è che, quando i calcoli vengono eseguiti in virgola mobile, ad esempio in formato IEEE, esistono incertezze o "rumore numerico" in ogni passaggio che influiscono sulla conclusione del fatto che un bordo interseca il piano. Quando il piano interseca i bordi in una situazione di mancata presenza, i punti di intersezione sono vicini tra loro e la determinazione che un punto di intersezione si trovi all'interno del bordo è casuale. Sebbene il rumore nei valori numerici dei punti sia piccolo, la conclusione qualitativa che ci sono più di due punti di intersezione è geometricamente impossibile e difficile da gestire correttamente nell'algoritmo.
+In primo luogo, l'intersezione di ogni bordo del triangolo con il piano potrebbe produrre tre punti di intersezione, una situazione geometricamente impossibile. Il motivo per cui questa situazione può verificarsi nel calcolo è che, quando i calcoli vengono eseguono in virgola mobile, ad esempio in formato IEEE, esistono incertezze, o "disturbo numerico", in ogni passaggio che influiscono sulla conclusione che un bordo interseca il piano. Quando il piano interseca i bordi in una situazione di mancata corrispondenza, i punti di intersezione sono vicini l'uno all'altro e la determinazione se un punto di intersezione si trova all'interno del bordo è casuale. Anche se il rumore nei valori numerici dei punti è ridotto, la conclusione qualitativa che ci sono più di due punti di intersezione è geometricamente impossibile e difficile da gestire correttamente nell'algoritmo.
 
-In secondo luogo, questa funzione è nel ciclo critico per ogni bordo di ogni triangolo filtrato, quindi è importante ottimizzarne l'efficienza quanto più possibile.
+In secondo momento, questa funzione è nel ciclo critico per ogni bordo di ogni triangolo filtrato, quindi è importante ottimizzarne il più possibile l'efficienza.
 
-Per risolvere il primo problema del rumore numerico, eseguire i calcoli in numeri interi. Per risolvere il secondo problema di ottimizzazione dell'efficienza, memorizzare nella cache l'attributo più usato di ogni vertice o il "prodotto a punti" associato a ogni vertice. Il passaggio in numeri interi è un modo tipico per garantire la coerenza geometrica. L'idea di base è che se è necessario quantizzare, eseguire l'operazione all'inizio. I calcoli successivi possono essere eseguiti in numeri interi e se i numeri interi sono sufficientemente ampi, in modo che non vi sia alcun rischio di overflow, è possibile eseguire calcoli con una precisione infinita. La funzione di quantizzazione seguente è utile a questo scopo.
+Per risolvere il primo problema relativo al disturbo numerico, eseguire i calcoli in numeri interi. Per risolvere il secondo problema di ottimizzazione dell'efficienza, memorizzare nella cache l'attributo più usato di ogni vertice o il "prodotto punto" associato a ogni vertice. Il passaggio di interi è un modo tipico per garantire la coerenza geometrica. L'idea di base è che, se è necessario quantificare, eseguire questa operazione all'inizio. I calcoli successivi possono quindi essere eseguiti in numeri interi e, se i numeri interi sono sufficientemente grandi in modo che non vi sia alcun rischio di overflow, i calcoli possono essere eseguiti con precisione infinita. La funzione di quantizzazione seguente è utile a questo scopo.
 
-ScaleAndTruncate (x) = parte intera di x \* 10000
+ScaleAndTruncate(x) = Parte intera di x \* 10000
 
-Il fattore di scala 10000 indica che il numero a virgola mobile di input ha quattro posizioni decimali, che è sufficientemente preciso per questa applicazione. A seconda dell'intervallo di valori dello spazio aspetto colore, si desidera scegliere un tipo integer con bit sufficientemente ampio da includere i calcoli intermedi. Nella maggior parte degli spazi di aspetto dei colori, l'intervallo di ogni coordinata rientra nell'intervallo compreso tra-1.000 e 1.000. La coordinata quantizzata ha un valore assoluto massimo possibile di 1.000 \* 10.000 = 10 milioni. Come si vedrà, la quantità intermedia è un prodotto a virgola, ovvero una somma di due prodotti di coordinate, quindi il valore massimo possibile assoluto è 2 \* (10 milioni) ₂ = 2? 10 ₁ ₄. Il numero di bit richiesti è log ₂ (2? 10 ₁ ₄) = 47,51. Una scelta ottimale per il tipo Integer è, pertanto, gli Integer a 64 bit.
+Il fattore di scala 10000 indica che il numero a virgola mobile di input ha quattro cifre decimali, abbastanza precise per questa applicazione. A seconda dell'intervallo di valori dello spazio dell'aspetto del colore, si vuole scegliere un tipo integer con bit sufficientemente grandi da contenere i calcoli intermedi. Nella maggior parte degli spazi di aspetto dei colori, l'intervallo di ogni coordinata è compreso nell'intervallo compreso tra -1.000 e 1.000. La coordinata quantizzata ha un valore assoluto massimo possibile pari a 1.000 \* 10.000 = 10.000.000. Come si noterà, la quantità intermedia è un prodotto punto, ovvero una somma di due prodotti di coordinate, quindi ha un valore assoluto massimo possibile pari a \* 2 (10.000.000) CIÒ = 2?10 ₁₄. Il numero di bit necessari è log Â (2?10 ₁₄ ) = 47,51. Una scelta pratica per il tipo Integer è, pertanto, interi a 64 bit.
 
-Per garantire che l'intersezione di un piano con un triangolo fornisca sempre un set vuoto o un set di due punti, è necessario prendere in considerazione il triangolo nel suo complesso, non come singoli bordi del triangolo separatamente. Per comprendere la situazione geometrica, prendere in considerazione le "distanze con segno" dei vertici del triangolo dal piano di tonalità. Non calcolare direttamente queste distanze firmate; calcolare invece i prodotti punto dei vettori di posizione dei vertici con il vettore normale quantizzato al piano. In particolare, durante l'inizializzazione del piano di tonalità, il vettore normale quantizzato viene calcolato come segue.
+Per garantire che l'intersecazione di un piano con un triangolo ofchi sempre un set vuoto o un set di due punti, è necessario considerare il triangolo nel suo complesso, non come singoli bordi del triangolo separatamente. Per comprendere la situazione geometrica, considerare le "distanze con segno" dei vertici del triangolo dal piano di tonalità. Non calcolare direttamente queste distanze con segno; calcola invece i prodotti del punto dei vettori di posizione dei vertici con il vettore normale quantizzato al piano. In particolare, durante l'inizializzazione del piano di tonalità, il vettore normale quantizzato viene calcolato come segue.
 
-NormalVector = (ScaleAndTruncate (-sin (Hue)), ScaleAndTruncate (cos (Hue)))
+NormalVector = (ScaleAndTruncate(-sin(hue)), ScaleAndTruncate(cos(hue)))
 
-Si noti che questo vettore è un vettore bidimensionale. È possibile usare un vettore bidimensionale perché il piano Hue è verticale, quindi il terzo componente del vettore normale è sempre zero. Inoltre, una tabella di ricerca di prodotti punto viene inizializzata in modo da includere una voce per ogni vertice tra i triangoli dei limiti della gamma e il prodotto punto corrispondente impostato su un valore non valido.
+Si noti che questo vettore è un vettore bidimensionale. È possibile usare un vettore bidimensionale perché il piano di tonalità è verticale, quindi il terzo componente del vettore normale è sempre zero. Inoltre, viene inizializzata una tabella di ricerca di prodotti punto con una voce per ogni vertice dai triangoli limite Gamut e il prodotto punto corrispondente impostato su un valore non valido.
 
-Durante un'operazione di intersezione del piano Hue con un triangolo, viene ricercato il prodotto punto di ogni vertice del triangolo. Se il valore nella tabella di ricerca è un valore non valido, il prodotto punto viene calcolato usando l'espressione seguente.
+Durante un'operazione di intersecazione del piano di tonalità con un triangolo, viene cercato il prodotto del punto di ogni vertice del triangolo. Se il valore nella tabella di ricerca non è valido, il prodotto punto viene calcolato usando l'espressione seguente.
 
-NormalVector. a \* ScaleAndTruncate (Vertex. a) + NormalVector. b \* ScaleAndTruncate (Vertex. b)
+NormalVector.a \* ScaleAndTruncate(vertex.a) + NormalVector.b \* ScaleAndTruncate(vertex.b)
 
-Anche in questo caso, il componente J del vertice non viene mai usato, perché il vettore normale è orizzontale. Questo prodotto a virgola viene quindi salvato nella tabella di ricerca in modo che non debba essere ricalcolato se viene eseguita una query in un secondo momento sul prodotto del vertice.
+Anche in questo caso, il componente J del vertice non viene mai usato, perché il vettore normale è orizzontale. Questo prodotto punto viene quindi salvato nella tabella di ricerca in modo che non sia necessario calcolarlo di nuovo se il prodotto del punto del vertice viene sottoposto a query in un secondo momento.
 
-La memorizzazione nella cache consente di determinare rapidamente se un bordo interseca il piano, dopo che i prodotti punto sono stati catalogati nella tabella di ricerca, compilata progressivamente man mano che vengono elaborati i vertici.
+Caching consente di determinare rapidamente se un bordo interseca il piano, dopo la tabulazione dei prodotti punto nella tabella di ricerca, che viene compilata progressivamente durante l'elaborazione dei vertici.
 
 ![Diagramma che mostra l'intersezione del piano di tonalità con un triangolo.](images/gmmp-image114.jpg)
 
-**Figura 28** : intersezione del piano Hue con un triangolo
+**Figura 28:** Intersezione del piano di tonalità con un triangolo
 
-Per il triangolo nella figura 28 per intersecare il piano Hue in un segmento di linea non degenerate, i prodotti punto dei vertici devono trovarsi in uno dei modelli seguenti, se ordinati in ordine crescente.
+Perché il triangolo nella figura 28 interseci il piano della tonalità in un segmento di linea non degenerato, i prodotti punto dei vertici devono essere in uno dei modelli seguenti, se ordinati in ordine crescente.
 
-0, 0, +; -,0, 0; -, 0, +; -,-,+; -,+,+
+0,0,+; -,0,0; -,0,+; -,-,+; -,+,+
 
-Un punto finale del segmento di linea si verifica quando il piano viene intersecato da un bordo con vertici con segni diversi nel prodotto del punto. Se il segno è zero, il vertice si trova direttamente sul piano e l'intersezione del bordo con il piano è il vertice stesso. Si noti anche che i case 0, 0, 0; -,-, 0; 0, +, + non vengono segnalati. Il primo caso (0, 0, 0) indica che l'intero triangolo si trova sul piano. Questo non viene segnalato perché ogni bordo del triangolo deve appartenere a un triangolo adiacente che non si trova interamente sul piano. Il bordo verrà segnalato quando il triangolo viene considerato. Gli altri due casi (-,-, 0 e 0, +, +) corrispondono alla configurazione geometrica che il triangolo tocca il piano in un vertice. Questi casi non vengono segnalati perché non danno luogo a un segmento di linea non degenerate.
+Un punto finale del segmento di linea si verifica quando il piano viene intersecato da un bordo con vertici con segni diversi nel prodotto punto. Se il segno è zero, il vertice si trova direttamente sul piano e l'intersezione del bordo con il piano è il vertice stesso. Si noti anche che i case sono 0,0,0; -,-,0; 0,+,+ non vengono segnalati. Il primo caso (0,0,0) indica che l'intero triangolo si trova sul piano. Questo non viene segnalato perché ogni bordo del triangolo deve appartenere a un triangolo adiacente che non si trova interamente sul piano. Il bordo verrà segnalato quando viene considerato tale triangolo. Gli altri due casi (-,-,0 e 0,+,+) corrispondono alla configurazione geometrica in cui il triangolo tocca il piano in un vertice. Questi casi non vengono segnalati perché non danno origine a un segmento di linea non degenerato.
 
-L'algoritmo precedente determina quando calcolare un'intersezione tra un bordo del triangolo e il piano di tonalità. Dopo aver determinato un bordo, l'intersezione viene calcolata usando equazioni parametriche. Se uno dei prodotti punto è zero, l'intersezione è il vertice stesso, quindi non è necessario alcun calcolo. Supponendo che entrambi i prodotti punto dei vertici del perimetro siano diversi da zero, vertex1 è il vertice con il punto *negativo* prodotto dotProduct1; e VERTEX2 è il vertice con dotProduct2 punto *positivo* prodotto. Questo ordine è importante per garantire che il punto di intersezione calcolato non dipenda dal modo in cui viene visualizzato l'ordine dei vertici nella rappresentazione del bordo. Il concetto geometrico del perimetro è simmetrico rispetto ai vertici. L'aspetto computazionale dell'uso di equazioni parametriche del perimetro introduce l'asimmetria (scelta del vertice iniziale), che può fornire un punto di intersezione leggermente diverso a causa del rumore numerico e del condizionamento delle equazioni lineari da risolvere. In questo modo, il punto di intersezione, intersezione, viene fornito dal codice seguente.
+L'algoritmo precedente determina quando calcolare un'intersezione tra un bordo del triangolo e il piano della tonalità. Dopo aver determinato un bordo, l'intersezione viene calcolata usando equazioni parametrici. Se uno dei prodotti punto è zero, l'intersezione è il vertice stesso, quindi non è necessario alcun calcolo. Supponendo che entrambi i prodotti punto dei vertici del bordo siano diversi da  zero, vertex1 è il vertice con il prodotto dotProduct1 negativo; e vertex2 è il vertice con *dot* product dotProduct2 positivo. Questo ordine è importante per garantire che il punto di intersezione calcolato non dipendo dal modo in cui l'ordinamento dei vertici viene visualizzato nella rappresentazione del bordo. Il concetto geometrico del bordo è simmetrico rispetto ai vertici. L'aspetto computazionale dell'uso di equazioni parametriche del bordo introduce l'asimmetria (scelta del vertice iniziale), che può fornire un punto di intersezione leggermente diverso a causa del disturbo numerico e del condizionamento delle equazioni lineari da risolvere. Detto questo, il punto di intersezione, l'intersezione, è dato dal seguente.
 
-t = dotProduct1/(dotProduct1-dotProduct2)
+t = dotProduct1/(dotProduct1 - dotProduct2)
 
-intersezione. J = vertex1. J + t \* (VERTEX2. J-vertex1. J
+Intersezione. J = vertice1. J + t \* (vertice2. J - vertice1. J)
 
-intersezione. a = vertex1. a + t \* (VERTEX2. a-vertex1. a)
+intersection.a = vertex1.a + t \* (vertex2.a - vertex1.a)
 
-intersezione. b = vertex1. b + t \* (VERTEX2. b-vertex1. b)
+intersection.b = vertex1.b + t \* (vertex2.b - vertex1.b)
 
-### <a name="gamut-operation-checkgamut-continued"></a>Operazione gamut: CheckGamut (continua)
+### <a name="gamut-operation-checkgamut-continued"></a>Operazione Gamut: CheckGamut (continua)
 
-L'algoritmo geometrico di base usato per la verifica del gamut consiste nel contare il numero di incroci del raggio. Per un determinato punto di query, prendere in considerazione un raggio che inizia con il punto di query e punta verso l'alto (direzione J). Contare il numero di volte in cui questo raggio supera il limite della gamma. Se questo numero è pari, il punto di query è fuori gamma. Se questo numero è dispari, il punto si trova all'interno. In linea di principio, questo algoritmo può essere implementato in 3D, in genere è afflitto da problemi causati da situazioni degenerate, ad esempio il raggio (in parte) in un triangolo limite o degenerazione di dimensioni inferiori, ad esempio il raggio (in parte) in un bordo di un triangolo di limite. Anche in 2-D, è necessario gestire queste situazioni degenerate. Tuttavia, il problema è più semplice ed è stato risolto in modo soddisfacente. Vedere \[ Rourke \] .
+L'algoritmo geometrico di base usato per il controllo della gamma è il conteggio del numero di attraversamenti di raggi. Per un determinato punto di query, prendere in considerazione un raggio che inizia con il punto di query e punta verso l'alto (direzione J). Contare il numero di volte in cui questo raggio attraversa il limite della gamma. Se questo numero è pari, il punto di query non è disponibile. Se questo numero è dispari, il punto si trova all'interno. In linea di principio, questo algoritmo può essere implementato in 3D, in genere è afflitto da difficoltà causate da situazioni degenerate, ad esempio il raggio che si trova (in parte) su un triangolo limite o una degenerazione dimensionale inferiore, ad esempio il raggio che si trova (in parte) su un bordo di un triangolo limite. Anche in 2D, è necessario gestire queste situazioni degenerate; ma il problema è più semplice ed è stato risolto in modo soddisfacente. Vedere \[ O'Rourke \] .
 
-Per un determinato punto di input diretto, determinare il relativo angolo di tonalità h, come indicato di seguito.
+Per un determinato punto di input, determinare l'angolo della tonalità h come indicato di seguito.
 
-h = Atan (b/a),
+h = atan(b/a),
 
-Inizializzare il piano di tonalità, quindi determinare gli elementi della linea limite corrispondenti a questo piano di tonalità. Poiché gli elementi della linea limite sono rilevanti solo se intersecano il raggio ascendente, impostare un filtro triangolo per rimuovere i triangoli che forniscono elementi linea che non intersecano definitivamente il raggio ascendente. In questo caso, si consideri il rettangolo di delimitazione del triangolo. Il raggio ascendente non interseca il triangolo se il punto di query si trova al di fuori del cast "Shadow" dal rettangolo di delimitazione se una sorgente di luce è stata immediatamente sopra. Ingrandire leggermente questo valore con una tolleranza prefissa per consentire un rumore numerico, in modo da non eliminare inavvertitamente triangoli che potrebbero fornire elementi linea utili. Il risultato è il cilindro rettangolare semi-infinito illustrato nella Figura 29. Controllare se il punto di query si trova all'interno o all'esterno di questo cilindro può essere implementato in modo efficiente usando semplici disuguaglianze.
+Inizializzare il piano di tonalità e quindi determinare gli elementi linea limite corrispondenti a questo piano di tonalità. Poiché gli elementi linea limite sono rilevanti solo se intersecano il raggio verso l'alto, configurare un filtro triangolo per rimuovere i triangoli che forniscono elementi linea che sicuramente non intersecano il raggio verso l'alto. In questo caso, si consideri il rettangolo di selezione del triangolo. Il raggio verso l'alto non interseca il triangolo se il punto di query si trova all'esterno dell'"ombreggiatura" impostata dal rettangolo di selezione se una sorgente di luce si trova direttamente sopra. Gonfiare leggermente questo valore con una tolleranza prefisse per consentire disturbo numerico in modo da non buttare inavvertitamente triangoli che potrebbero fornire elementi di linea utili. Il risultato è il cilindro rettangolare semi-infinito illustrato nella figura 29. Controllare se il punto di query si trova all'interno o all'esterno di questo cilindro può essere implementato in modo efficiente usando diseguaglianze semplici.
 
-![Mostra il filtro del triangolo per CheckGamut.](images/gmmp-image116.jpg)
+![Mostra il filtro triangolo per CheckGamut.](images/gmmp-image116.jpg)
 
-**Figura 29** : filtro triangolo per CheckGamut
+**Figura 29:** Filtro triangolo per CheckGamut
 
-CheckGamut dispone di tre componenti specifici per le operazioni di gamma: *dati elaborati interni*,*elaboratore di elementi linea* e *adattatore di output*. I *dati elaborati interni* sono un elenco di elementi linea elaborati dal *processore di elementi linea*. In questo caso, il *processore di elementi linea* aggiunge semplicemente un elemento linea all'elenco. La struttura dei dati interni per i *dati elaborati interni* può essere un elenco collegato o una matrice che può aumentare di dimensioni.
+CheckGamut include tre componenti specifici dell'operazione gamut: *Internal Processed Data*, Line Element *Processor* e *Output Adaptor*. I *dati interni elaborati* sono un elenco di elementi riga elaborati da *Processore di elementi riga.* In questo caso, Line *Element Processor* aggiunge semplicemente un elemento line all'elenco. La struttura dei dati interni per *i dati elaborati* interni può essere un elenco collegato o una matrice che può aumentare le dimensioni.
 
-L' *adattatore di output* è un modulo che accede all'elenco di elementi linea, determina se un elemento linea incrocia il raggio ascendente (conteggio 1) o meno (conteggio 0). Sommando tutti questi conteggi si ottiene un conteggio totale. In definitiva, l' *adattatore di output* restituisce una risposta di "Sì" (in-gamut) o "No" (out-of-gamut), a seconda che il conteggio totale sia dispari o uniforme. Il passaggio in cui si determina se un elemento linea incrocia il raggio ascendente merita un'attenzione perché questo è il punto in cui si verifica il problema di degenerazione e anche il problema del conteggio eccessivo. Dopo \[ l' \] elemento Rourke, affinché un elemento Line attraversi il raggio, l'endpoint destro (il punto finale con Chroma maggiore) deve essere rigorosamente sul lato destro del raggio. Ciò garantisce che, se un punto finale si trova esattamente sul raggio, viene conteggiato una sola volta. La stessa regola consente inoltre di risolvere la situazione di degenerazione in cui l'elemento riga si trova esattamente sul raggio. Non si incrementa il conteggio per questo elemento linea.
+*L'adattatore* di output è un modulo che accede all'elenco di elementi riga, determina se un elemento linea attraversa il raggio verso l'alto (conteggio 1) o meno (conteggio 0). Sommando tutti questi conteggi viene visualizzato un conteggio totale. Output *Adaptor* restituisce infine una risposta "yes" (in-gamut) o "no" (out-of-gamut), a seconda che il conteggio totale sia dispari o pari. Il passaggio in cui si determina se un elemento linea attraversa il raggio verso l'alto merita attenzione perché è qui che si verifica il problema della degenerazione e si verifica anche il problema dell'over counting. Dopo O'Rourke , perché un elemento linea attraversi il raggio, il punto finale \[ destro (l'estremità con una croma più grande) deve essere rigorosamente sul lato destro del \] raggio. Ciò garantisce che, se un punto finale si trova esattamente sul raggio, viene conteggiato una sola volta. La stessa regola risolve anche la situazione degenerata in cui l'elemento linea si trova esattamente sul raggio. Il conteggio per questo elemento riga non viene incrementato.
 
-La figura 30 Mostra gli elementi riga risultanti di una gamut di esempio con il punto di query in varie posizioni.
+La figura 30 mostra gli elementi riga risultanti di un gamut di esempio con il punto di query in varie posizioni.
 
-![Diagramma che Mostra gli elementi riga risultanti di una gamut di esempio con il punto di query in varie posizioni.](images/gmmp-image118.jpg)
+![Diagramma che mostra gli elementi riga risultanti di una gamma di campioni con il punto di query in varie posizioni.](images/gmmp-image118.jpg)
 
-**Figura 30** : funzionamento di CheckGamut
+**Figura 30:** Funzionamento di CheckGamut
 
-### <a name="minimum-color-difference-gamut-mapping"></a>Mapping del gamut di differenza colore minimo
+### <a name="minimum-color-difference-gamut-mapping"></a>Mapping gamut differenza colore minima
 
-Il mapping del gamut dei colori minimo, MinDEMap, presenta una specifica semplice: se un colore è in gamut, non eseguire alcuna operazione. Se un colore è esterno al gamut, proiettarlo sul punto "più vicino" sul limite della gamma. La parola chiave "più vicina" non è ben definita fino a quando non si specifica l'equazione di differenza dei colori da usare. In pratica, per semplificare e velocizzare il calcolo, la distanza euclidea dello spazio di aspetto dei colori scelto o una variante di esso viene utilizzata come metrica di differenza dei colori. Il vantaggio della metrica euclidea è che è compatibile con il prodotto a punti dello spazio, che rende possibile l'uso di algebra lineare. In dettaglio, se nello spazio viene definito un "prodotto punto", è possibile definire una distanza come radice quadrata del prodotto a punti del vettore di differenza. Un prodotto a virgola può in genere essere definito da una matrice 3x3 positiva definita A.
+Minimum Color Difference Gamut Mapping, MinDEMap, ha una semplice specifica: se un colore è in gamut, non eseguire alcuna operazione. Se un colore è fuori gamma, proiettarlo al punto "più vicino" sul limite della gamma. La parola chiave "nearest" non è ben definita fino a quando non si specifica l'equazione della differenza di colore da usare. In pratica, per semplificare e velocizzare il calcolo, come metrica della differenza di colore viene usata la distanza euclidea dello spazio dell'aspetto colore scelto, o una sua variante. Il vantaggio della metrica euclidea è che è compatibile con il prodotto punto dello spazio, che consente di usare l'algebra lineare. In dettaglio, se nello spazio è definito un "prodotto punto", una distanza può essere definita come radice quadrata del prodotto del punto del vettore di differenza con se stesso. Un prodotto punto può in genere essere definito da una matrice definita positiva 3x3 A.
 
-u? v = u <sub>T</sub> AV
+u?v = u <sub>T</sub> Av
 
-dove il lato destro corrisponde alla moltiplicazione di matrice consueta. Se è la matrice di identità, viene recuperato il prodotto A virgola standard. In pratica, se jab è lo spazio colore, non si desidera combinare i componenti, pertanto è possibile utilizzare una matrice diagonale diversa dalla matrice di identità. Inoltre, potrebbe essere necessario mantenere la scala su a e b invariata in modo che la misura di tonalità venga mantenuta. Quindi, una variante utile del prodotto standard euclideo dot è la seguente.
+dove il lato destro è la solita moltiplicazione di matrici. Se A è la matrice di identità, viene ripristinato il prodotto punto standard. In pratica, se Jab è lo spazio colore, non si vogliono combinare i componenti, quindi è possibile usare una matrice diagonale diversa dalla matrice di identità. È anche possibile mantenere invariata la scala su a e b in modo che la misura della tonalità venga mantenuta. Una variante utile del prodotto standard euclideo dot è quindi la seguente.
 
-w <sub>j</sub> (j componente di te) (j component of v) + (un componente di te) (componente di v) + (componente b di te) (componente b di v)
+w <sub>J</sub> (componente J dell'utente)(componente J di v) + (componente di v) + (componente di v) + (componente b dell'utente)(componente b di v)
 
-dove w <sub>J</sub> è un numero positivo. Un'ulteriore variazione consiste nel consentire a w <sub>J</sub> di variare con il punto di query di input:
+dove w <sub>J</sub> è un numero positivo. Un'altra variazione è consentire a w <sub>J</sub> di variare con il punto di query di input:
 
-w <sub>j \ =</sub> w <sub>j</sub> (queryPoint)
+w <sub>J\ =</sub> w <sub>J</sub> (queryPoint)
 
-Il risultato finale è una misura della distanza asimmetrica rispetto ai due punti e con pesi relativi diversi sulla luminosità e Chroma o Hue quando il punto di query di input varia. In conformità con alcune osservazioni sulla percezione dei colori umani, le differenze di colore non vengono ponderate in modo uniforme in tutte le dimensioni. È stato rilevato che le persone sono meno sensibili alle differenze di luminosità rispetto a quelle di Hue e Chroma.
+Il risultato finale è una misura di distanza asimmetrica rispetto ai due punti e con pesi relativi diversi sulla leggerezza e la croma o la tonalità quando il punto di query di input varia. Ciò è conforme ad alcune osservazioni sulla percezione del colore umano secondo cui le differenze di colore non vengono ponderate equamente in tutte le dimensioni. È stato rilevato che le persone sono meno sensibili alle differenze di leggerezza rispetto alle differenze di tonalità e croma.
 
-La funzione Weight seguente è utile.
+La funzione di peso seguente è utile.
 
-w <sub>J</sub> = k ₂-k ₁ (C-c m ₐ ₓ) n
+w <sub>J</sub> = k RSI - k ₁ (C - C mₐₓ ) n
 
-dove k ₂ = 1, k ₁ = 0,75/(C m ₐ ₓ) n, C m ₐ ₓ = 100, n = 2 e C è il più piccolo di Chroma del punto di query e C m ₐ ₓ.
+dove k rsi = 1, k ₁ = 0,75/(C mₐₓ ) n, C mₐₓ = 100, n = 2 e C è il più piccolo della croma del punto di query e C mₐₓ.
 
-in modo che un peso di 0,25 venga inserito nel termine J quando Chroma è zero e un peso di 1 quando Chroma è 100. La tendenza a mettere un peso minore su J quando Chroma è piccola e un peso maggiore su J quando Chroma è grande segue l'utilizzo consigliato per CMC e CIEDE2000.
+in modo che un peso di 0,25 viene inserito sul termine J quando chroma è zero e un peso pari a 1 quando chroma è 100. La tendenza a mettere meno peso su J quando la croma è piccola e più peso su J quando la croma è grande segue l'utilizzo consigliato per CMC e CIEDE2000.
 
-![Grafico che mostra la funzione Weight sul componente J della metrica.](images/gmmp-image119.png)
+![Graph che mostra la funzione weight sul componente J della metrica.](images/gmmp-image119.png)
 
-**Figura 31** : funzione Weight sul componente J della metrica
+**Figura 31:** Funzione weight sul componente J della metrica
 
-Usare lo spazio jab per l'esempio seguente. Il calcolo richiede la ricerca di tutti i triangoli limite per determinare il punto più vicino nella metrica euclidea. Di seguito è riportato un semplice approccio per rendere questo processo il più efficiente possibile, senza introdurre presupposti aggiuntivi che potrebbero velocizzare il processo, ma anche finire solo in una risposta approssimativa. Per prima cosa, è necessario comprendere la procedura geometrica per proiettare un punto sul triangolo specificato. Qui viene fornita una descrizione.
+Per l'esempio seguente, usare lo spazio Disassato. È difficile dal punto di vista computazionale cercare tutti i triangoli limite per determinare il punto più vicino nella metrica euclidea. Di seguito è riportato un approccio semplice per rendere questo processo il più efficiente possibile, senza introdurre presupposti aggiuntivi che possono accelerare il processo, ma finiscono anche in una risposta approssimativa. Prima di tutto, è necessario comprendere la procedura geometrica di proiettare un punto sul triangolo specificato. Qui viene fornita una descrizione.
 
-Viene eseguita prima una proiezione ortogonale sul piano infinito che contiene il triangolo. La distanza più breve del punto di query dal piano può essere determinata in due passaggi.
+Viene eseguita per la prima volta una proiezione ortogonale sul piano infinito contenente il triangolo. La distanza più breve del punto di query dal piano può essere determinata in due passaggi.
 
-**(a)** calcolare il vettore del normale dell'unità al triangolo.
+**(a)** Calcolare il vettore normale unità al triangolo.
 
-**(b)** calcolare il prodotto punto del vettore di unità normale e un vettore formato dal punto di query e un punto sul triangolo; ovvero uno dei vertici. Poiché il vettore normale presenta una lunghezza di unità, il valore assoluto di questo prodotto punto corrisponde alla distanza del punto di query dal piano.
+**(b)** Calcolare il prodotto del punto del vettore normale dell'unità e un vettore formato dal punto di query e da un punto sul triangolo; cio, uno dei relativi vertici. Poiché il vettore normale ha lunghezza unità, il valore assoluto di questo prodotto punto è la distanza del punto di query dal piano.
 
-Il punto proiettato potrebbe non essere la risposta, perché potrebbe trovarsi all'esterno del triangolo. Pertanto, è necessario eseguire prima una verifica. Il calcolo equivale a calcolare le coordinate baricentrica del punto proiettato rispetto al triangolo. Se il punto proiettato è determinato all'interno del triangolo, è la risposta. In caso contrario, viene acquisito il punto più vicino su uno dei bordi del triangolo. Eseguire una ricerca su ognuno dei tre bordi. Determinare la proiezione del punto di query su un bordo è un processo simile alla proiezione sul triangolo, ma una dimensione minore. Viene innanzitutto calcolata una proiezione ortogonale. Se il punto proiettato si trova sul bordo, è la risposta. In caso contrario, viene acquisito il punto più vicino in uno dei due punti finali. Eseguire una ricerca sui due punti finali; ovvero calcolare la distanza del punto di query da ciascuno di essi e confrontare quello più piccolo.
+Il punto proiettato potrebbe non essere la risposta, perché potrebbe trovarsi all'esterno del triangolo. È quindi necessario eseguire prima un controllo. Il calcolo equivale al calcolo delle coordinate barycentriche del punto proiettato rispetto al triangolo. Se il punto proiettato è determinato all'interno del triangolo, è la risposta. In caso contrario, il punto più vicino viene acquisito su uno dei bordi del triangolo. Eseguire una ricerca su ognuno dei tre bordi. Determinare la proiezione del punto di query su un bordo è un processo simile alla proiezione sul triangolo, ma una dimensione in meno. Viene prima calcolata una proiezione ortogonale. Se il punto proiettato si trova sul bordo, è la risposta. In caso contrario, il punto più vicino viene acquisito in uno dei due punti finali. Eseguire una ricerca sui due punti finali; ovvero calcolare la distanza del punto di query da ogni punto di query e confrontare quello più piccolo.
 
-L'analisi attenta rivela che è presente una grande quantità di ricerche ripetute quando si esaminano tutti i triangoli perché un bordo è sempre condiviso da due triangoli e un vertice condiviso da almeno tre bordi. Inoltre, non si è molto interessati a trovare il punto più vicino a un particolare triangolo; si è invece interessati a trovare il punto più vicino all'intero limite della gamma. Tuttavia, un particolare triangolo è quello in cui si raggiunge questa situazione. Esistono due strategie che è possibile utilizzare per velocizzare la ricerca.
+Un esame attento rivela che è presente una ricerca ripetuta quando si attraversano tutti i triangoli perché un bordo è sempre condiviso da due triangoli e un vertice condiviso da almeno tre bordi. Inoltre, non si è molto interessati a trovare il punto più vicino a un particolare triangolo; si è invece interessati a trovare il punto più vicino all'intero limite della gamma. Tuttavia, un particolare triangolo sarebbe quello in cui si ottiene questo risultato. Esistono due strategie che è possibile usare per velocizzare la ricerca.
 
-**Strategia I**. Ogni vertice verrà elaborato al massimo una volta. Ogni bordo verrà elaborato al massimo una volta.
+**Strategia I**. Ogni vertice verrà elaborato al massimo una volta. Ogni edge verrà elaborato al massimo una volta.
 
-**Strategia II**. In qualsiasi punto della ricerca si ha un candidato migliore con la distanza migliore corrispondente. Se è possibile determinare, mediante un controllo rapido, che un triangolo non è in grado di fornire una distanza migliore, non è necessario continuare ulteriormente il calcolo. Non sono necessari il punto e la distanza più vicini per questo triangolo.
+**Strategia II**. In qualsiasi punto della ricerca è presente un candidato migliore con la distanza migliore corrispondente. Se è possibile determinare, con un rapido controllo, che un triangolo non è in grado di offrire una distanza migliore, non è necessario continuare ulteriormente il calcolo. Non sono necessari il punto e la distanza più vicini per questo triangolo.
 
-![Diagramma che mostra il flusso del mapping minimo di.](images/gmmp-image120.png)
+![Diagramma che mostra il flusso del mapping DE minimo.](images/gmmp-image120.png)
 
-**Figura 32** : schemi di mapping minimi
+**Figura 32:** Schemi minimi di de mapping
 
-La figura 32 illustra il flusso generale della logica per la mappa gamut MinDEMap. Per un punto di query, viene prima richiamata la funzione CheckGamut. Se il punto è in-gamut, la mappa è un no-op. Se il punto è out-of-gamut, chiamare ProjectPointToBoundary. Passare ora alla figura 33. A questo punto si presuppone che siano stati calcolati i valori seguenti.
+La figura 32 mostra il flusso generale della logica per la mappa di gamut MinDEMap. Per un punto di query, viene prima richiamata la funzione CheckGamut. Se il punto è in gamut, la mappa è no-op. Se il punto è fuori gamma, chiamare ProjectPointToBoundary. Passare ora alla figura 33. A questo punto, si presuppone che siano stati calcolati i valori seguenti.
 
-**(a)** unità vettore normale per ogni triangolo limite gamma rispetto al prodotto a virgola standard.
+**(a)** Unità del vettore normale a ogni triangolo limite Gamut rispetto al prodotto punto standard.
 
-**(b)** elenco di vertici e bordi, oltre all'elenco dei triangoli.
+**(b)** Elenco vertici ed elenco di bordi, oltre all'elenco dei triangoli.
 
-![Diagramma che mostra la routine ' ProjectPointToBoundary '.](images/gmmp-image122.jpg)
+![Diagramma che mostra la routine "ProjectPointToBoundary".](images/gmmp-image122.jpg)
 
-**Figura 33** : routine ProjectPointToBoundary
+**Figura 33:** Routine ProjectPointToBoundary
 
-Tutti questi sono un sovraccarico costante e potrebbero ridurre i costi se vengono eseguite query sufficienti per questo limite di gamut. In genere, questa situazione si verifica quando si compila un LUT di trasformazione da un dispositivo a un altro, in cui sono presenti solo due gamme fisse e il LUT di trasformazione viene eseguito attraverso punti della griglia campionata in modo uniforme. Si precalcolano i vettori normali rispetto al prodotto punto standard, anche se la nozione di perpendicolarità sarà basata sul prodotto del punto ponderato, che dipende dal punto di query, come illustrato in precedenza. Il motivo è dovuto al fatto che un vettore normale rispetto al prodotto dot ponderato può essere ottenuto facilmente dal vettore normale rispetto al prodotto punto standard. Se n ₀ è un vettore normale rispetto al prodotto punto standard,
+Si tratta di un sovraccarico costante e avrebbe un costo minore se vengono eseguite query sufficienti a questo limite di gamma. In genere, questo avviene quando si compila un LUT di trasformazione da un dispositivo a un altro, in cui sono presenti solo due gamut fisse e la trasformazione LUT viene eseguita attraverso punti sulla griglia campionata in modo uniforme. È possibile pre-calcolare i vettori normali rispetto al prodotto punto standard, anche se la nozione di perpendicolare sarà basata sul prodotto punto ponderato, che dipende dal punto di query, come spiegato in precedenza. Il motivo è che un vettore normale rispetto al prodotto punto ponderato può essere ottenuto facilmente dal vettore normale rispetto al prodotto punto standard. Se n ₀ è un vettore normale rispetto al prodotto punto standard,
 
-n = (J-component of n ₀/w <sub>J</sub>, a-component of n ₀, b-component of n ₀)
+n = (componente J di n ₀ /w <sub>J</sub>, a-component di n ₀, b-component di n ₀ )
 
-è normale per il triangolo rispetto al prodotto del punto ponderato. A causa di questa relazione, è comunque vantaggioso pre-calcolare n ₀ anche se deve essere regolato in base al punto di query.
+è normale al triangolo rispetto al prodotto punto ponderato. A causa di questa relazione, è comunque utile pre-calcolare n ₀ anche se deve essere regolata in base al punto di query.
 
-La routine ProjectPointToBoundary viene avviata reimpostando la "cronologia elaborata" dei vertici e dei bordi. Si tratta di tabelle di flag BOOLEANI che rilevano se un vertice o un bordo è stato visitato prima. Reimposta inoltre la variabile ShortestDistance su "INFINITY", che rappresenta il valore codificato massimo nel sistema con numero a virgola mobile utilizzato. Viene quindi eseguito un ciclo, cercando il punto più vicino da ogni triangolo usando la chiamata ProcessTriangle. ProcessTriangle è la routine per aggiornare la variabile ShortestDistance ed è chiaramente nel ciclo critico. Un'ottimizzazione consiste nell'arrestare quando il risultato è sufficientemente adatto. Dopo ogni chiamata a ProcessTriangle, viene esaminata la variabile ShortestDistance. Se soddisfa una soglia predefinita, è possibile arrestare. La soglia predefinita dipende dallo spazio di colore utilizzato e dall'accuratezza necessaria del sistema di imaging dei colori. Per un'applicazione tipica, non si desidera eseguire operazioni superflue se la differenza di colore è inferiore a quella che può essere individuata dalla visione umana. Per CIECAM02, la differenza di colore è 1. Usare tuttavia un valore soglia di 0,005 nell'implementazione, per mantenere la precisione dei calcoli, perché potrebbe trattarsi solo di un passaggio intermedio in una catena di trasformazioni.
+La routine ProjectPointToBoundary inizia reimpostando la "cronologia elaborata" dei vertici e dei bordi. Si tratta di tabelle di flag BOOLEAN che rilevano se un vertice o un bordo è stato visitato in precedenza. Reimposta anche la variabile ShortestDistance su "INFINITY", ovvero il valore codificato massimo nel sistema di numeri a virgola mobile usato. Viene quindi eseguito un ciclo, cercando il punto più vicino da ogni triangolo usando la chiamata ProcessTriangle. ProcessTriangle è la routine per aggiornare la variabile ShortestDistance ed è chiaramente nel ciclo critico. Un'ottimizzazione è arrestarsi quando il risultato è sufficientemente positivo. Dopo ogni chiamata a ProcessTriangle, viene esaminata la variabile ShortestDistance. Se soddisfa una soglia predefinita, è possibile arrestarla. La soglia predefinita dipende dalla spazio colore usato e dall'accuratezza richiesta del sistema di creazione delle immagini a colori. Per un'applicazione tipica, non è necessario eseguire operazioni non necessarie se la differenza di colore è inferiore a quella che può essere individuata dalla visione umana. Per ILM02, questa differenza di colore è 1. Usare tuttavia un valore soglia pari a 0,005 nell'implementazione per mantenere la precisione dei calcoli, perché potrebbe trattarsi solo di un passaggio intermedio in una catena di trasformazioni.
 
-ProcessTriangle implementa la strategia precedente II. Ottenendo un vettore normale dal vettore normale dell'unità pre-calcolata al triangolo rispetto al prodotto punto standard, viene calcolata la distanza tra il punto di query e il piano infinito che contiene il triangolo formando il prodotto a virgola del vettore di unità normale e il queryVector, il vettore da uno dei vertici del triangolo, vertex1, al punto di query , queryPoint.
+ProcessTriangle implementa la strategia II precedente. Ottenendo un vettore normale dal vettore normale dell'unità pre-calcolata al triangolo rispetto al prodotto punto standard, calcola la distanza del punto di query al piano infinito contenente il triangolo formando il prodotto del punto del vettore normale dell'unità e del vettore queryVector, il vettore da uno dei vertici del triangolo,  vertex1, al punto di query, queryPoint.
 
-queryVector = queryPoint-vertex1
+queryVector = queryPoint - vertex1
 
 distance = \| normalVector \* queryVector \| / \| \| normalVector\|\|
 
-Si tratta di un calcolo relativamente economico e la distanza è necessaria per eseguire ulteriori calcoli. Se questa distanza non è inferiore alla distanza ottimale corrente, ShortestDistance, questo triangolo non produrrà una distanza migliore, poiché non fornirà una distanza migliore rispetto al piano che la contiene. In questo caso, si restituisce il controllo al ciclo triangolare. Se la distanza è inferiore a ShortestDistance, potenzialmente si ha un punto più vicino, se questo punto si trova all'interno del triangolo. È necessario eseguire alcuni calcoli "rigidi" (anche se non oltre l'algebra lineare) per determinarlo. Se gli altri due vertici del triangolo sono VERTEX2 e vertex3, formare i vettori di base firstBasisVector e secondBasisVector.
+Si tratta di un calcolo relativamente economico e la distanza è necessaria per eseguire ulteriori calcoli. Se questa distanza non è inferiore alla distanza migliore corrente, ShortestDistance, questo triangolo non produrrà una distanza migliore, perché non offrirà una distanza migliore rispetto al piano che lo contiene. In questo caso, si restituisce il controllo al ciclo triangolare. Se la distanza è inferiore a ShortestDistance, potenzialmente si ha un punto più vicino, se questo punto si trova all'interno del triangolo. È necessario eseguire alcuni calcoli "hard" (anche se non oltre l'algebra lineare) per determinarne l'esecuzione. Se gli altri due vertici del triangolo sono vertex2 e vertex3, formare i vettori di base firstBasisVector e secondBasisVector.
 
-firstBasisVector = VERTEX2-vertex1
+firstBasisVector = vertex2 - vertex1
 
-secondBasisVector = vertex3-vertex1
+secondBasisVector = vertex3 - vertex1
 
-Usare il sistema lineare di equazioni seguente per risolvere i problemi relativi a e v.
+Usare il sistema lineare di equazioni seguente per risolvere le incognite che si e v.
 
-firstBasisVector \* queryVector = (firstBasisVector \* firstBasisVector) u + (firstBasisVector \* secondBasisVector) v
+firstBasisVector \* queryVector = (firstBasisVector \* firstBasisVector)u + (firstBasisVector \* secondBasisVector)v
 
-secondBasisVector \* queryVector = (secondBasisVector \* firstBasisVector) u + (secondBasisVector \* secondBasisVector) v
+secondBasisVector \* queryVector = (secondBasisVector \* firstBasisVector)u + (secondBasisVector \* secondBasisVector)v
 
 e le condizioni per il punto proiettato che si trovano all'interno del triangolo sono:
 
-0 ≤ u ≤ 1, 0 ≤ v ≤ 1 e u + v ≤ 1
+0 ≤ u ≤ 1, 0 ≤ v ≤ 1 e + v ≤ 1
 
-Dopo questo calcolo, se è stato determinato che il punto proiettato si trova all'interno del triangolo, è stato trovato un nuovo punto più vicino; la distanza calcolata all'inizio è la nuova distanza più breve. In questo caso, aggiornare le variabili ShortestDistance e ClosestPoint. Se il punto proiettato si trova all'esterno del triangolo, è possibile trovare un punto più vicino su uno dei bordi. Quindi, è possibile chiamare la routine ProcessEdge su ognuno dei tre bordi.
+Dopo questo calcolo, se viene determinato che il punto proiettato si trova all'interno del triangolo, è stato trovato un nuovo punto più vicino. la distanza calcolata all'inizio è la nuova distanza più breve. In questo caso, aggiornare le variabili ShortestDistance e ClosestPoint. Se il punto proiettato si trova all'esterno del triangolo, è possibile trovare un punto più vicino su uno dei bordi. È quindi possibile chiamare la routine ProcessEdge su ognuno dei tre bordi.
 
 ![Diagramma che mostra il flusso delle routine ProcessEdge e ProcessVertex.](images/gmmp-image124.jpg)
 
-**Figura 34** : routine ProcessEdge e ProcessVertex
+**Figura 34:** Routine ProcessEdge e ProcessVertex
 
-La routine ProcessEdge implementa la strategia I, illustrata nella Figura 34. ProcessEdge inizia controllando se il bordo è stato elaborato prima. In tal caso, non viene eseguita alcuna azione ulteriore. In caso contrario, viene calcolata la proiezione ortogonale del punto di query sulla riga infinita che contiene il bordo. L'algebra lineare che interessano il calcolo è simile alle equazioni del triangolo precedenti. Tuttavia, il calcolo è più semplice e non è descritto qui. Se il punto proiettato si trova all'interno del bordo, è possibile trovare la distanza del punto proiettato dal punto di query. Se questa distanza è inferiore a ShortestDistance, è stato trovato un nuovo punto più vicino. Aggiornare sia ShortestDistance che ClosestPoint. Se il punto proiettato è esterno al bordo, chiamare ProcessVertex sui due endpoint. Prima di restituire il controllo, aggiornare la cronologia perimetrale in modo che il bordo sia contrassegnato come "elaborato".
+La routine ProcessEdge implementa la strategia I, illustrata nella figura 34. ProcessEdge inizia controllando se il perimetro è stato elaborato in precedenza. In tal caso, non vengono intraprese altre azioni. In caso contrario, procede al calcolo della proiezione ortogonale del punto di query sulla linea infinita contenente il bordo. L'algebra lineare coinvolta nel calcolo è simile alle equazioni triangolo precedenti. Tuttavia, il calcolo è più semplice, non è descritto qui. Se il punto proiettato si trova all'interno del bordo, si trova la distanza del punto proiettato dal punto di query. Se questa distanza è inferiore a ShortestDistance, è stato trovato un nuovo punto più vicino. Aggiornare sia ShortestDistance che ClosestPoint. Se il punto proiettato si trova all'esterno del bordo, chiamare ProcessVertex sui due punti finali. Prima di restituire il controllo, aggiornare la cronologia dei bordi in modo che questo bordo sia contrassegnato come "ELABORATO".
 
-Infine, si dà una descrizione di ProcessVertex. La routine ProjectVertex implementa anche la strategia I e mantiene una tabella di cronologia dei vertici. Come illustrato nella Figura 34, prima controlla se il vertice è stato elaborato prima. In tal caso, non viene eseguita alcuna azione ulteriore. In caso contrario, viene calcolata la distanza del vertice dal punto di query. Se la distanza è inferiore a ShortestDistance, aggiornare sia ShortestDistance che ClosestPoint. Alla fine, aggiorna la cronologia dei vertici in modo che questo vertice venga contrassegnato come "elaborato".
+Infine, si assegna una descrizione di ProcessVertex. La routine ProjectVertex implementa anche la strategia I e gestisce una tabella di cronologia dei vertici. Come illustrato nella figura 34, verifica innanzitutto se il vertice è stato elaborato in precedenza. In tal caso, non vengono intraprese altre azioni. In caso contrario, procede al calcolo della distanza del vertice dal punto di query. Se la distanza è inferiore a ShortestDistance, aggiornare sia ShortestDistance che ClosestPoint. Alla fine, aggiorna la cronologia dei vertici in modo che questo vertice sia contrassegnato come "ELABORATO".
 
-Quando il ciclo di controllo esterno ha esaurito tutti i triangoli o è stato terminato prima che venisse soddisfatta la soglia di differenza colore, viene eseguito l'accesso alla variabile ClosestPoint. Questo è il risultato di MinDEMap. Il chiamante può anche recuperare ShortestDistance se è interessato alla distanza del colore mappato dal colore della query.
+Quando il ciclo di controllo esterno ha esaurito tutti i triangoli o è terminato prima che sia stata raggiunta la soglia della differenza di colore, viene eseguito l'accesso alla variabile ClosestPoint. Questo è il risultato di MinDEMap. Il chiamante può anche recuperare ShortestDistance se si è interessati alla distanza del colore mappato dal colore della query.
 
-### <a name="hue-smoothing"></a>Smussatura tonalità
+### <a name="hue-smoothing"></a>Smussamento della tonalità
 
-![Diagramma che mostra due viste principali della smussatura tonalità, l'originale sulla parte superiore e la tonalità smussate in basso.](images/gmmp-image125.png)
+![Diagramma che mostra due viste principali dell'arrotondamento della tonalità, l'originale nella parte superiore e la tonalità smussata nella parte inferiore.](images/gmmp-image125.png)
 
-**Figura 35** : smussatura Hue
+**Figura 35:** Smussamento delle tonalità
 
-Si verifica un problema con le operazioni con tonalità vincolata; ovvero, l'operazione considera solo le variabili all'interno di un piano di tonalità. La figura 35 illustra un esempio di gamut che mostra le sezioni di tonalità "discontinue" nelle tonalità blu. All'interno di questo intervallo di tonalità, per determinati angoli di tonalità, il limite della gamma è tangente al piano di tonalità. In effetti, ciò causa una modifica nella struttura topologica delle sezioni tonalità. Nell'esempio illustrato, quando il piano di tonalità si estende in questo intervallo di tonalità, emerge una "isola" e le sottofusioni. Questa modifica nella topologia causerà la discontinuità delle operazioni specifiche di Hue. Ad esempio, la cuspide a tonalità fissa verrà modificata bruscamente quando l'angolo di tonalità cambierà in questo intervallo.
+Si verifica un problema con operazioni vincolate alla tonalità. in altre informazioni, l'operazione considera solo le variabili all'interno di un piano di tonalità. La figura 35 mostra un esempio di gamut che mostra sezioni di tonalità "discontinue" nelle tonalità blu. All'interno di questo intervallo di tonalità, per determinati angoli di tonalità, il limite della gamma è tangente al piano della tonalità. In effetti, ciò causa una modifica nella struttura topologica delle sezioni di tonalità. Nell'esempio illustrato, mentre il piano di tonalità attraversa questo intervallo di tonalità, emerge e si inserirà un'"isola". Questa modifica della topologia causerà la discontinuità delle operazioni specifiche della tonalità. Ad esempio, la cuspide con una tonalità fissa cambierà improvvisamente quando l'angolo della tonalità cambia in questo intervallo.
 
-Esiste una ragione per la scienza dei colori perché è consigliabile mantenere Hue in determinate operazioni. Per risolvere il problema precedente, i triangoli di limite della gamma originale devono essere "tonalità smussata". In generale, una sfumatura di tonalità di un set di triangoli di limite di gamut è un set di triangoli in modo che (a) formi il limite di un nuovo "gamut", che potrebbe non corrispondere al gamut effettivo del dispositivo e che contiene la gamma definita dal set originale di triangoli; e (b) i triangoli del nuovo set sono delimitati dall'esecuzione parallela ai piani Hue.
+Esiste un motivo per cui è consigliabile mantenere la tonalità in determinate operazioni. Per risolvere il problema precedente, i triangoli limite gamut originali devono essere "smussati di tonalità". In generale, un arrotondamento della tonalità di un set di triangoli limite Gamut è un set di triangoli in modo che (a) formi il limite di una nuova "gamut", che potrebbe non corrispondere alla gamma effettiva del dispositivo e che contiene la gamma definita dal set originale di triangoli; e (b) i triangoli nel nuovo set sono delimitati dall'essere paralleli ai piani di tonalità.
 
-Un modo pratico per ottenere un set smussato di tonalità di triangoli consiste nel prendere la struttura convessa dei vertici originali. Come illustrato nella Figura 35, le sezioni di tonalità della struttura convessa variano in modo uniforme nell'intervallo di tonalità problematico senza modifiche improvvise nella topologia.
+Un modo pratico per ottenere un set di triangoli smussati di tonalità è prendere lo scafo convesso dei vertici originali. Come illustrato nella figura 35, le sezioni di tonalità dello scafo convesso variano uniformemente nell'intervallo di tonalità problematico senza un cambiamento improvviso della topologia.
 
-### <a name="setting-primaries-and-secondaries-in-the-gamut-boundary-description"></a>Impostazione di primari e secondari nella descrizione del limite della gamma
+### <a name="setting-primaries-and-secondaries-in-the-gamut-boundary-description"></a>Impostazione di primarie e secondarie nella descrizione dei limiti gamut
 
-Determinati metodi di mapping di gamut, ad esempio HueMap, dipendono dalla posizione delle primarie del dispositivo e dei database secondari. Per i dispositivi additivi, i primari sono rosso, verde e blu (R, G e B); e i database secondari sono cyan, magenta e Yellow (C, M e Y). Per i dispositivi sottrattivi, le primarie sono C, M e Y; e i database secondari sono R, G e B. Il GBD tiene traccia di tutti i sei valori, più bianco e nero (W e K), in una matrice di valori di colore jab. Questi valori vengono impostati nella descrizione del limite della gamma al momento della creazione. Per i dispositivi di output, è possibile determinare gli primari eseguendo combinazioni di valori di controllo del dispositivo tramite il modello di dispositivo. Per i dispositivi di acquisizione, questo approccio non è particolarmente adatto per la creazione del GBD di riferimento, perché è quasi impossibile acquisire un'immagine che restituisce un valore di dispositivo puro completamente saturo, ad esempio (0,0, 0,0, 1,0). I profili dei dispositivi WCS contengono gli indici delle primarie nella destinazione di acquisizione. Poiché questi valori non sono contenuti in un profilo ICC, utilizzare i valori misurati da una tipica destinazione dello scanner dopo la conversione in jab rispetto alle condizioni di visualizzazione ICC.
+Alcuni metodi di mapping di gamut, ad esempio HueMap, dipendono dalla posizione dei database primari e secondari del dispositivo. Per i dispositivi additivi, le primarie sono rosse, verdi e blu (R, G e B); e i secondari sono ciano, magenta e giallo (C, M e Y). Per i dispositivi sottrattivi, i valori primari sono C, M e Y. e i database secondari sono R, G e B. GbD tiene traccia di tutti e sei questi valori, più il bianco e il nero (W e K), in una matrice di valori di colore di Jab. Questi valori vengono impostati nella descrizione del limite di gamut al momento della creazione. Per i dispositivi di output, le primarie possono essere determinate eseguendo combinazioni di valori di controllo del dispositivo tramite il modello di dispositivo. Per i dispositivi di acquisizione, questo approccio non è adatto per la creazione del GBD di riferimento, perché è quasi impossibile acquisire un'immagine che restituisce un valore del dispositivo puro completamente saturato, ad esempio (0.0, 0.0, 1.0). I profili di dispositivo WCS contengono gli indici delle primarie nella destinazione di acquisizione. Poiché questi valori non sono contenuti in un profilo ICC, usare i valori misurati da una tipica destinazione dello scanner dopo la conversione in Jab, in relazione alle condizioni di visualizzazione ICC.
 
-### <a name="setting-the-neutral-axis-in-the-gamut-boundary-description"></a>Impostazione dell'asse neutro nella descrizione del limite della gamut
+### <a name="setting-the-neutral-axis-in-the-gamut-boundary-description"></a>Impostazione dell'asse neutro nella descrizione del limite gamut
 
-Il HueMap e i metodi di mapping di gamut tritati relativi usano l'asse neutro del dispositivo per la raddrizzatura. Per i dispositivi di output di base, l'asse neutro può essere determinato eseguendo valori neutri del dispositivo (R = G = B o C = M = Y) tramite il metodo DeviceToColorimetric e quindi tramite il metodo ColorimetricToAppearance dell'oggetto CIECAM02. Tuttavia, i dispositivi di acquisizione non restituiscono sempre un valore neutro del dispositivo quando viene presentato un campione neutro. Ciò è particolarmente vero quando l'illuminazione ambientale non è perfettamente neutra. I profili dei dispositivi WCS contengono gli indici degli esempi neutri nella destinazione. Usare questi esempi per impostare l'asse neutro. Poiché queste informazioni non sono disponibili per i profili ICC, è necessario usare lo stesso metodo usato per i dispositivi di output. eseguire esempi di dispositivo neutro tramite il metodo DeviceToColorimetric, quindi abbinare i valori di input e i risultati di colorimetrico.
+I metodi di mapping della gamma HueMap e Relative MinCD usano l'asse neutro del dispositivo per la raddrizzatura. Per i dispositivi di output di base, l'asse neutro può essere determinato eseguendo i valori neutri del dispositivo (R=G=B o C=M=Y) tramite il metodo DeviceToColorimetric e quindi tramite il metodo ColorimetricToAppearance dell'oggetto CIECAM02. Tuttavia, i dispositivi di acquisizione non restituiscono sempre un valore indipendente dal dispositivo quando vengono presentati con un campione neutro. Ciò vale in particolare quando l'illuminazione ambiente non è perfettamente neutra. I profili di dispositivo WCS contengono gli indici degli esempi neutri nella destinazione. Usare questi esempi per impostare l'asse neutro. Poiché queste informazioni non sono disponibili per i profili ICC, è necessario usare lo stesso metodo usato per i dispositivi di output. eseguire esempi indipendenti dal dispositivo tramite il metodo DeviceToColorimetric e quindi accoppiare i valori di input e i risultati colorimetrici.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -1000,7 +1000,7 @@ Il HueMap e i metodi di mapping di gamut tritati relativi usano l'asse neutro de
 [Concetti di base sulla gestione dei colori](basic-color-management-concepts.md)
 </dt> <dt>
 
-[Schemi e algoritmi del sistema di colori Windows](windows-color-system-schemas-and-algorithms.md)
+[Windows Schemi e algoritmi del sistema di colori](windows-color-system-schemas-and-algorithms.md)
 </dt> </dl>
 
  

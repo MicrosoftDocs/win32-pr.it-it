@@ -1,11 +1,11 @@
 ---
-title: Metodo TaskNamedValueCollection. Remove
-description: Per la creazione di script, rimuove una coppia nome-valore selezionata dalla raccolta.
+title: Metodo TaskNamedValueCollection.Remove
+description: Per lo scripting, rimuove una coppia nome-valore selezionata dalla raccolta.
 ms.assetid: 6499f85c-ab7a-474f-8277-43c045f9dbb4
 keywords:
-- Rimuovere il metodo Utilità di pianificazione
-- Rimuovi Utilità di pianificazione metodo, oggetto TaskNamedValueCollection
-- Oggetto TaskNamedValueCollection Utilità di pianificazione, Remove (metodo)
+- Metodo Remove Utilità di pianificazione
+- Metodo Remove Utilità di pianificazione, oggetto TaskNamedValueCollection
+- Oggetto TaskNamedValueCollection Utilità di pianificazione , metodo Remove
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81974c00abc4bc4f1372827f38f41826314b2600
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c43777de81f48004ed4f1ceaa515938285a8ecf2714c65066130780d6721172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104048628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357717"
 ---
-# <a name="tasknamedvaluecollectionremove-method"></a>Metodo TaskNamedValueCollection. Remove
+# <a name="tasknamedvaluecollectionremove-method"></a>Metodo TaskNamedValueCollection.Remove
 
-Per la creazione di script, rimuove una coppia nome-valore selezionata dalla raccolta.
+Per lo scripting, rimuove una coppia nome-valore selezionata dalla raccolta.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ TaskNamedValueCollection.Remove( _
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
 Indice della coppia nome-valore da rimuovere.
@@ -59,9 +59,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/>                                    |
-| Libreria dei tipi<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/>                                    |
+| Libreria dei tipi<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

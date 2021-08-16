@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77cd862fa1c3598a4e81a776004f26ef02290477
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 5b319543a101a4004030fa2339f5432c52ed79d1685c4a09e3a033554f251051
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117720978"
 ---
-# <a name="cdn_shareviolation-notification-code"></a>Codice di notifica \_ SHAREVIOLATION della rete CDN
+# <a name="cdn_shareviolation-notification-code"></a>\_rete CDN Codice di notifica SHAREVIOLATION
 
-\[A partire da Windows Vista, le **finestre di** **dialogo** comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
+\[A partire Windows Vista, le  **finestre** di dialogo comuni Apri e Salva con nome sono state sostituite dalla finestra di dialogo [Elemento comune](../shell/common-file-dialog.md). È consigliabile usare l'API Common Item Dialog al posto di queste finestre di dialogo di Common Dialog Box Library.\]
 
 Inviato da una  finestra  di dialogo Apri o Salva con nome di tipo Esplora risorse quando l'utente fa clic sul pulsante **OK** e si verifica una violazione della condivisione di rete per il file selezionato.
 
@@ -51,7 +51,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) Il **membro pszFile** di questa struttura è un puntatore al nome del file che ha avuto la violazione di condivisione. La **struttura OFNOTIFY** contiene una [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di codice indica il messaggio di notifica **\_ SHAREVIOLATION** della rete CDN. 
+Puntatore a una [**struttura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) Il **membro pszFile** di questa struttura è un puntatore al nome del file che ha avuto la violazione di condivisione. La **struttura OFNOTIFY** contiene una  [**struttura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) il cui membro di codice indica rete CDN messaggio di notifica **\_ SHAREVIOLATION.**
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Per impedire la visualizzazione del messaggio di avviso standard, restituire un 
 
 Il sistema invia questa notifica solo se la finestra di dialogo è stata creata usando il **valore OFN \_ EXPLORER.**
 
-Il sistema invia questa notifica solo se il **valore DI \_ SHAREAWARE OFN** non è stato specificato al momento della creazione della finestra di dialogo.
+Il sistema invia questa notifica solo se il **valore \_ SHAREAWARE OFN** non è stato specificato al momento della creazione della finestra di dialogo.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -120,6 +120,6 @@ Il sistema invia questa notifica solo se il **valore DI \_ SHAREAWARE OFN** non 
 **Informazioni concettuali**
 </dt> <dt>
 
-[Libreria di finestre di dialogo comuni](common-dialog-box-library.md)
+[Libreria di finestre di dialogo comune](common-dialog-box-library.md)
 </dt> </dl>
 

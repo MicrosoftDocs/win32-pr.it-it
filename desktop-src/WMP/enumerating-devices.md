@@ -6,20 +6,20 @@ keywords:
 - Windows Media Player, dispositivi portatili
 - Windows Media Player a oggetti, dispositivi portatili
 - modello a oggetti, dispositivi portatili
-- Windows Media Player controllo ActiveX, dispositivi portatili
-- Controllo ActiveX, dispositivi portatili
-- Windows Media Player controllo ActiveX mobile, dispositivi portatili
-- Windows Media Player Mobile, dispositivi portatili
+- Windows Media Player ActiveX, dispositivi portatili
+- ActiveX, dispositivi portatili
+- Windows Media Player Controllo ActiveX per dispositivi mobili, dispositivi portatili
+- Windows Media Player Dispositivi mobili, portatili
 - dispositivi portatili, enumerazione
 - enumerazioni, dispositivi portatili
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d44f71fa26f40983424ced70280d9c03e0892a00
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 64f62ecc599e8a9610bf01b5f8a1651b330c9f8ed6abb4197fac89daeb751c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339859"
 ---
 # <a name="enumerating-devices"></a>Enumerazione dei dispositivi
 

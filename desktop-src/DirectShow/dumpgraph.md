@@ -1,7 +1,7 @@
 ---
-description: La funzione DumpGraph invia informazioni su un grafico di filtro al percorso di output di debug. Ignorato nelle compilazioni al dettaglio.
+description: La funzione DumpGraph invia informazioni su un grafo di filtro al percorso di output di debug. Ignorato nelle build per la vendita al dettaglio.
 ms.assetid: c78f86bb-44d0-4904-b7f8-e756bda0151d
-title: Funzione DumpGraph (Wxdebug. h)
+title: Funzione DumpGraph (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 55c3adf793982b7b00ab44e26e7c34e08a1ac42b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ac09cc3381ab1b5f85f523d1c822768b3e2f87b6bcf08f1877680349072c216
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117820960"
 ---
-# <a name="dumpgraph-function"></a>DumpGraph (funzione)
+# <a name="dumpgraph-function"></a>Funzione DumpGraph
 
-La `DumpGraph` funzione Invia informazioni su un grafico di filtro al percorso di output di debug. Ignorato nelle compilazioni al dettaglio.
+La `DumpGraph` funzione invia informazioni su un grafico di filtro al percorso di output di debug. Ignorato nelle build per la vendita al dettaglio.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,14 +46,14 @@ void DumpGraph(
 *pGraph* 
 </dt> <dd>
 
-Puntatore all'interfaccia [**IFilterGraph**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph) in gestione grafico dei filtri.
+Puntatore [**all'interfaccia IFilterGraph**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph) nel gestore del grafico del filtro.
 
 </dd> <dt>
 
 *dwLevel* 
 </dt> <dd>
 
-Livello di registrazione. La funzione genera un \_ messaggio di traccia del log con il livello di registrazione specificato.
+Livello di registrazione. La funzione genera un messaggio LOG \_ TRACE con il livello di registrazione specificato.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Questa funzione non restituisce un valore.
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Wxdebug. h (include Streams. h)</dt> </dl>                                                                                   |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Wxdebug.h (includere Flussi.h)</dt> </dl>                                                                                   |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

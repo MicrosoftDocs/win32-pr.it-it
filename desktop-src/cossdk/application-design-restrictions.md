@@ -1,41 +1,41 @@
 ---
 description: Alcune applicazioni sono progettate in modo da impedire l'installazione di più istanze dell'applicazione in un computer.
 ms.assetid: 951d20c8-7908-40d8-a9d5-d321340c97f3
-title: Limitazioni relative alla progettazione di applicazioni
+title: Restrizioni di progettazione delle applicazioni
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1c4307a979866e3df9f019e69b858e8347c295b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 16b98e7b7d8dddf1cd74224573d355e1f42d75c8ae6122d20977bbc1b38ffb99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117917545"
 ---
-# <a name="application-design-restrictions"></a>Limitazioni relative alla progettazione di applicazioni
+# <a name="application-design-restrictions"></a>Restrizioni di progettazione delle applicazioni
 
-Alcune applicazioni sono progettate in modo da impedire l'installazione di più istanze dell'applicazione in un computer. Con tale limitazione, un'applicazione non può utilizzare la funzionalità partizioni. Potrebbe essere necessario modificare le seguenti funzionalità di progettazione dell'applicazione prima di poter utilizzare le partizioni per l'applicazione.
+Alcune applicazioni sono progettate in modo da impedire l'installazione di più istanze dell'applicazione in un computer. Con questa limitazione, un'applicazione non può usare la funzionalità partizioni. Per poter usare le partizioni per tale applicazione, potrebbe essere necessario modificare le funzionalità di progettazione dell'applicazione seguenti.
 
 ## <a name="tables-and-arrays"></a>Tabelle e matrici
 
-Alcune applicazioni creano tabelle di database, tabelle in memoria o matrici che utilizzano un CLSID come chiave univoca del registro di sistema. In un computer senza partizioni, questa chiave del registro di sistema è in genere computer/CLSID (un CLSID per computer).
+Alcune applicazioni creano tabelle di database, tabelle in memoria o matrici che usano un CLSID come chiave univoca del Registro di sistema. In un computer senza partizioni, questa chiave del Registro di sistema è in genere computer/CLSID (un CLSID per computer).
 
-Viceversa, in un computer con partizioni, questa chiave del registro di sistema è ID computer/partizione/ID applicazione/CLSID (più istanze di un CLSID per computer). Poiché la funzionalità partizioni consente l'esistenza di più istanze di un CLSID in un computer, le applicazioni che contengono elementi di progettazione che richiedono un CLSID univoco per computer potrebbero essere compromesse.
+Al contrario, in un computer con partizioni questa chiave del Registro di sistema è computer/ID partizione/ID applicazione/CLSID (più istanze di un CLSID per computer). Poiché la funzionalità partizioni consente l'esistenza di più istanze di un CLSID in un computer, le applicazioni che contengono elementi di progettazione che richiedono un CLSID univoco per ogni computer potrebbero essere influenzate negativamente.
 
 ## <a name="global-resources"></a>Risorse globali
 
-Alcune applicazioni utilizzano risorse globali quali la memoria condivisa, i file di dati e le voci del registro di sistema. Questo può causare problemi se più istanze di tale applicazione sono in esecuzione simultaneamente.
+Alcune applicazioni usano risorse globali, ad esempio memoria condivisa, file di dati e voci del Registro di sistema. Ciò potrebbe causare problemi se più istanze di un'applicazione di questo tipo vengono eseguite contemporaneamente.
 
-Se, ad esempio, un componente utilizza memoria condivisa per interagire con altri componenti, sarà necessario modificare il componente in modo che ogni istanza del componente allochi la propria memoria condivisa.
+Ad esempio, se un componente usa la memoria condivisa per interagire con altri componenti, sarà necessario modificare il componente in modo che ogni istanza del componente alloca la propria memoria condivisa.
 
 ## <a name="type-libraries"></a>Librerie dei tipi
 
-Le librerie dei tipi forniscono informazioni sulle interfacce e i metodi di un componente. Queste informazioni vengono utilizzate per diversi scopi, incluse le seguenti:
+Le librerie dei tipi forniscono informazioni sulle interfacce e sui metodi di un componente. Queste informazioni vengono usate per diversi scopi, tra cui:
 
--   Marshalling dei dati tra i componenti quando vengono effettuate chiamate di funzione
+-   Marshalling dei dati tra componenti quando vengono effettuate chiamate di funzione
 -   Supporto dei componenti in coda COM+ e dei servizi eventi COM+
--   Fornire le informazioni corrette in un editor di Microsoft Visual Basic
+-   Fornire le informazioni corrette all'interno di un editor Visual Basic Microsoft
 
-I riferimenti a una libreria dei tipi vengono installati nel registro di sistema di un computer. Quando si sviluppano applicazioni che verranno richiamate dall'interno di partizioni, è importante che nel registro di sistema sia installata la versione più recente di una libreria dei tipi. In questo modo si garantisce che l'editor Visual Basic in uso ottenga informazioni accurate sui metodi disponibili per tale componente.
+I riferimenti a una libreria dei tipi vengono installati nel Registro di sistema di un computer. Quando si sviluppano applicazioni che verranno richiamate dall'interno di partizioni, è importante che nel Registro di sistema sia installata la versione più recente di una libreria dei tipi. Ciò garantisce che l Visual Basic editor usato otterrà informazioni accurate sui metodi disponibili per tale componente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -4,16 +4,16 @@ ms.assetid: 36282F91-6C14-4943-967B-046DD0FD94DC
 title: Proprietà di IAzApplication
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4086acb6e6ceba0821af7cc117d8598bee731d16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67877d3b364ce52038fc4a6524f9beaa32987fb0201095dbe78514c7cbccc502
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781656"
 ---
 # <a name="iazapplication-properties"></a>Proprietà di IAzApplication
 
-L'interfaccia [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) espone le proprietà seguenti.
+[**L'interfaccia IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) espone le proprietà seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,7 +31,7 @@ L'interfaccia [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazap
 -   [**Proprietà PolicyAdministratorsName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyadministratorsname)
 -   [**Proprietà PolicyReaders**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreaders)
 -   [**Proprietà PolicyReadersName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_policyreadersname)
--   [**Roles (proprietà)**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)
+-   [**Proprietà Roles**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_roles)
 -   [**Proprietà Scopes**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_scopes)
 -   [**Proprietà Tasks**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_tasks)
 -   [**Proprietà Version**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-get_version)

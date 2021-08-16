@@ -13,7 +13,7 @@ ms.locfileid: "118636878"
 ---
 # <a name="externalfiles-table-patchwizdll"></a>Tabella ExternalFiles (Patchwiz.dll)
 
-La tabella ExternalFiles contiene informazioni su file specifici che non fanno parte di un'immagine di destinazione normale. Questi file possono essere presenti in prodotti aggiornati da un altro prodotto, aggiornamento o patch. Questa tabella è facoltativa nel database di creazione delle patch (file con estensione pcp) e viene usata dalla [funzione UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
+La tabella ExternalFiles contiene informazioni su file specifici che non fanno parte di un'immagine di destinazione normale. Questi file possono esistere nei prodotti aggiornati da un altro prodotto, aggiornamento o patch. Questa tabella è facoltativa nel database di creazione delle patch (file con estensione pcp) e viene usata dalla [funzione UiCreatePatchPackageEx.](uicreatepatchpackageex--patchwiz-dll-.md)
 
 La tabella ExternalFiles include le colonne seguenti.
 
@@ -24,7 +24,7 @@ La tabella ExternalFiles include le colonne seguenti.
 | Famiglia        | text    | S   | N        |
 | FTK           | text    | S   | N        |
 | FilePath      | text    | S   | N        |
-| Percorsi dei simboli   | text    |     | S        |
+| SymbolPaths   | text    |     | S        |
 | IgnoreOffsets | text    |     | S        |
 | IgnoreLengths | text    |     | S        |
 | RetainOffsets | text    |     | N        |
@@ -41,14 +41,14 @@ La tabella ExternalFiles include le colonne seguenti.
 <span id="Family"></span><span id="family"></span><span id="FAMILY"></span>Famiglia
 </dt> <dd>
 
-Chiave esterna per la colonna Family della [tabella ImageFamilies (Patchwiz.dll).](imagefamilies-table-patchwiz-dll-.md)
+Chiave esterna per la colonna Family della [tabella ImageFamilies (Patchwiz.dll)](imagefamilies-table-patchwiz-dll-.md).
 
 </dd> <dt>
 
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Chiave esterna nella [tabella File](file-table.md) del file .msi dell'immagine aggiornata.
+Chiave esterna nella [tabella File](file-table.md) del .msi file dell'immagine aggiornata.
 
 </dd> <dt>
 
@@ -59,10 +59,10 @@ Percorso completo del file esterno, incluso il nome del file. Il campo FilePath 
 
 </dd> <dt>
 
-<span id="SymbolPaths"></span><span id="symbolpaths"></span><span id="SYMBOLPATHS"></span>Percorsi dei simboli
+<span id="SymbolPaths"></span><span id="symbolpaths"></span><span id="SYMBOLPATHS"></span>SymbolPaths
 </dt> <dd>
 
-Percorso completo in cui vengono cercati i file di simboli del file specificato nella colonna FTK.
+Percorso completo in cui sono stati cercati i file di simboli del file specificato nella colonna FTK.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Percorso completo in cui vengono cercati i file di simboli del file specificato 
 
 Il valore in questo campo è un elenco delimitato da virgole di numeri di offset di intervallo per gli intervalli da ignorare nel file esterno. L'ordine e il numero degli intervalli nell'elenco devono corrispondere agli elementi nella colonna IgnoreLengths. Questa colonna è facoltativa.
 
-I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore come esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
+I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) 
 
 Il valore in questo campo è un elenco delimitato da virgole di lunghezze di intervallo in byte per gli intervalli da ignorare nel file esterno. L'ordine e il numero degli intervalli nell'elenco devono corrispondere agli elementi nella colonna IgnoreOffsets. Questa colonna è facoltativa.
 
-I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore come esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
+I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
 
 </dd> <dt>
 
@@ -89,20 +89,20 @@ I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) 
 
 Il valore in questo campo è un elenco delimitato da virgole di numeri di offset di intervallo per gli intervalli da mantenere nel file esterno. L'ordine e il numero degli intervalli nell'elenco devono corrispondere agli elementi nella colonna RetainOffsets del record corrispondente nella tabella [FamilyFileRanges (Patchwiz.dll).](familyfileranges-table-patchwiz-dll-.md)
 
-I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore come esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
+I valori possono essere decimali o esadecimali. [Patchwiz.dll](patchwiz-dll.md) considera il valore esadecimale se è preceduto da "0x". Le colonne sono colonne stringa e Patchwiz.dll convertiranno i valori in ULONG.
 
 </dd> <dt>
 
 <span id="Order"></span><span id="order"></span><span id="ORDER"></span>Ordine
 </dt> <dd>
 
-Se vengono specificate due o più versioni per lo stesso file esterno, la tabella può contenere più record con valori corrispondenti nei campi FTK e Family. In questo caso, il campo Ordine può specificare l'ordine dei file esterni da usare durante la creazione della patch. L'ordine è dalla versione meno recente alla versione più recente.
+Se vengono specificate due o più versioni per lo stesso file esterno, la tabella può contenere più record con valori corrispondenti nei campi FTK e Family. In questo caso, il campo Order può specificare l'ordine dei file esterni da usare durante la creazione della patch. L'ordine è dalla versione meno recente alla versione più recente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Questa tabella accetta le variabili di ambiente come percorsi a partire dalla versione 4.0 di Patchwiz.dll.
+Questa tabella accetta le variabili di ambiente come percorsi che iniziano con la versione 4.0 Patchwiz.dll.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,19 +1,19 @@
 ---
 description: Sia i client che i server devono ottenere le credenziali prima di poter stabilire un contesto di sicurezza per lo scambio di messaggi.
 ms.assetid: a72404b8-1ec9-4f58-b3a6-09811070ea29
-title: Recupero delle credenziali del digest predefinite
+title: Recupero delle credenziali digest predefinite
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12e870d6bad1c3b4ef9e889a91444e98159bc758
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93d5a0bb39f59680f2b5232dae1e6cc5c83673cf31c7cc3e0aa1325d5641e161
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104227379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117786589"
 ---
-# <a name="obtaining-default-digest-credentials"></a>Recupero delle credenziali del digest predefinite
+# <a name="obtaining-default-digest-credentials"></a>Recupero delle credenziali digest predefinite
 
-Sia i client che i server devono ottenere le [*credenziali*](../secgloss/c-gly.md) prima di poter stabilire un [*contesto di sicurezza*](../secgloss/s-gly.md) per lo scambio di messaggi. Il comportamento predefinito della funzione [**AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) è fornire le credenziali per l'entità di sicurezza associata alla [*sessione*](../secgloss/s-gly.md)di accesso corrente.
+Sia i client che i server devono [*ottenere le credenziali*](../secgloss/c-gly.md) prima di poter stabilire un contesto di sicurezza [*per*](../secgloss/s-gly.md) lo scambio di messaggi. Il comportamento predefinito della [**funzione AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) è fornire le credenziali per l'entità di sicurezza associata alla sessione di accesso [*corrente.*](../secgloss/s-gly.md)
 
 Nell'esempio seguente viene illustrata una chiamata sul lato server per ottenere le credenziali predefinite.
 
@@ -37,9 +37,9 @@ SecStatus = AcquireCredentialsHandle (
 
 
 
-La chiamata sul lato client per le credenziali predefinite è identica, ad eccezione del terzo parametro è necessario specificare SECPKG \_ cred \_ in uscita per indicare che il client utilizzerà l'handle delle credenziali restituito dalla funzione.
+La chiamata lato client per le credenziali predefinite è identica, ad eccezione del fatto che il terzo parametro deve specificare SECPKG CRED OUTBOUND per indicare che il client userà l'handle delle credenziali restituito \_ \_ dalla funzione.
 
-Per un esempio in cui viene illustrato come ottenere le credenziali per un'entità di sicurezza diversa dall'utente connesso, vedere [acquisizione di credenziali alternative](obtaining-alternate-digest-credentials.md).
+Per un esempio in cui viene illustrato come ottenere le credenziali per un'entità di sicurezza diversa dall'utente connesso, vedere [Obtaining Alternate Credentials](obtaining-alternate-digest-credentials.md).
 
  
 

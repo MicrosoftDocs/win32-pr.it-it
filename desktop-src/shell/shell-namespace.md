@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: fab501912c55aaaf6cab832bf76763672e830d33
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41542f133961104180257b9c15b1843f3458bf6d9d2dd156fa3d97ea7b9ca87d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857740"
 ---
 # <a name="shellnamespace-method"></a>Metodo Shell.NameSpace
 
@@ -54,7 +54,7 @@ Shell.NameSpace( _
 
 Tipo: **Variante**
 
-Cartella per la quale creare [**l'oggetto**](folder.md) Folder. Può essere una stringa che specifica il percorso della cartella o uno dei valori [**shellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
+Cartella per la quale creare [**l'oggetto**](folder.md) Folder. Può essere una stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
 </dd> </dl>
 
@@ -74,9 +74,9 @@ Riferimento all'oggetto [**Folder**](folder.md) per la cartella specificata. Se 
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente mostra **NameSpace** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+L'esempio seguente illustra **NameSpace** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -150,7 +150,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

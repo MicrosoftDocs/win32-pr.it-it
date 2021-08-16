@@ -1,8 +1,8 @@
 ---
-description: La \_ classe WMI dell'associazione SystemLoadOrderGroups Win32 mette in correlazione un computer e un gruppo di ordini di caricamento.
+description: La classe WMI di associazione Win32 SystemLoadOrderGroups mette in relazione un \_ sistema di computer e un gruppo di ordini di carico.
 ms.assetid: fb637300-0f70-465a-a72b-f0ab3f246790
 ms.tgt_platform: multiple
-title: Classe Win32_SystemLoadOrderGroups
+title: Win32_SystemLoadOrderGroups classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 510acfbde2f562493a454abe80a4f7788377e556
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bad87d62fddff6c4d76bb05a97fe0b7f97e713e70d0eba3ccfd36bb4aa31e813
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106305249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117833959"
 ---
-# <a name="win32_systemloadordergroups-class"></a>Win32 \_ SystemLoadOrderGroups (classe)
+# <a name="win32_systemloadordergroups-class"></a>Classe \_ SystemLoadOrderGroups Win32
 
-La [classe WMI](../wmisdk/retrieving-a-class.md) dell'associazione **\_ SystemLoadOrderGroups Win32** mette in correlazione un computer e un gruppo di ordini di caricamento.
+La classe [WMI](../wmisdk/retrieving-a-class.md) **di associazione Win32 \_ SystemLoadOrderGroups** mette in relazione un sistema di computer e un gruppo di ordini di carico.
 
-La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico e non in ordine MOF.
+La sintassi seguente è semplificata dal codice MOF (Managed Object Format) e include tutte le proprietà ereditate. Le proprietà e i metodi sono in ordine alfabetico, non in ordine MOF.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,29 +42,29 @@ class Win32_SystemLoadOrderGroups : CIM_SystemComponent
 
 ## <a name="members"></a>Members
 
-La classe **Win32 \_ SystemLoadOrderGroups** presenta questi tipi di membri:
+La **classe \_ SystemLoadOrderGroups Win32** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **Win32 \_ SystemLoadOrderGroups** dispone di queste proprietà.
+La **classe \_ SystemLoadOrderGroups Win32** ha queste proprietà.
 
 <dl> <dt>
 
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **Win32 \_ ComputerSystem**
+Tipo di dati: **\_ ComputerSystem Win32**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Qualificatori: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta il computer in cui è presente il gruppo dell'ordine di caricamento.
+Riferimento all'istanza che rappresenta il sistema di computer in cui è presente il gruppo dell'ordine di caricamento.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo di dati: **Win32 \_ LoadOrderGroup**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [**Key**](../wmisdk/key-qualifier.md), [**override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ LoadOrderGroup")
+Qualificatori: [**key,**](../wmisdk/key-qualifier.md) [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Wmi \| Win32 \_ LoadOrderGroup")
 </dt> </dl>
 
-Riferimento all'istanza di che rappresenta il gruppo di ordini di caricamento esistente nel computer.
+Riferimento all'istanza che rappresenta il gruppo dell'ordine di caricamento esistente nel sistema computer.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-La classe **Win32 \_ SystemLoadOrderGroups** è derivata da [**CIM \_ SystemComponent**](cim-systemcomponent.md).
+La **classe Win32 \_ SystemLoadOrderGroups** è derivata da [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -97,7 +97,7 @@ La classe **Win32 \_ SystemLoadOrderGroups** è derivata da [**CIM \_ SystemComp
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La classe **Win32 \_ SystemLoadOrderGroups** è derivata da [**CIM \_ SystemComp
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> <dt>
 
 [Classi del sistema operativo](./operating-system-classes.md)

@@ -1,7 +1,7 @@
 ---
-description: Definisce un profilo criteri cablato (LAN).
+description: Definisce un profilo di criteri cablato (LAN).
 ms.assetid: 89331bd1-d447-482c-90de-e3a74c86bf4c
-title: Schema LAN_policy
+title: LAN_policy Schema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,21 +9,21 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 68b81aba17ff2310e6913f133aacb2ddc103b517
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18352f525ab11995aa3236bb95bdab17377b1a1942b97c852803bf6687305340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103879549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117798451"
 ---
-# <a name="lan_policy-schema"></a>\_Schema dei criteri LAN
+# <a name="lan_policy-schema"></a>Schema dei criteri LAN \_
 
-Lo \_ schema dei criteri LAN definisce un profilo criteri cablato (LAN).
+Lo schema dei criteri LAN \_ definisce un profilo di criteri cablato (LAN).
 
-L'elemento radice di un profilo di criteri LAN è l'elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) . Ogni profilo include esattamente un elemento radice. Tutti \_ gli elementi del criterio LAN si trovano nello spazio dei nomi `https://www.microsoft.com/networking/LAN/policy/v1` .
+L'elemento radice di un profilo criteri LAN è [**l'elemento LANPolicy.**](lan-policyschema-lanpolicy-element.md) Ogni profilo ha esattamente un elemento radice. Tutti gli elementi dei criteri LAN \_ sono nello spazio dei nomi `https://www.microsoft.com/networking/LAN/policy/v1` .
 
--   [\_Elementi POLICYSCHEMA LAN](lan-policyschema-elements.md)
--   [\_Tipi semplici POLICYSCHEMA LAN](lan-policyschema-simple-types.md)
+-   [Elementi di schema dei criteri LAN \_](lan-policyschema-elements.md)
+-   [Criteri \_ LANSchema Tipi semplici](lan-policyschema-simple-types.md)
 
  
 

@@ -1,42 +1,42 @@
 ---
 title: Come creare un controllo di modifica su più righe
-description: In questo argomento viene illustrato come implementare un semplice elaboratore di testo aggiungendo un controllo di modifica su più righe all'area client di una finestra.
+description: In questo argomento viene illustrato come implementare un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra.
 ms.assetid: B955CC42-F89F-48EB-A19A-ADA6E5273EF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d05133707e9a47a632a70807177c6ec1b63bc842
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: d11100d4d6f82c7a352d4ddacaa7fc05694b4d54125febc766a6d3f1c68376e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103963574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829072"
 ---
 # <a name="how-to-create-a-multiline-edit-control"></a>Come creare un controllo di modifica su più righe
 
-In questo argomento viene illustrato come implementare un semplice elaboratore di testo aggiungendo un controllo di modifica su più righe all'area client di una finestra. Utilizzando il controllo di modifica su più righe, l'utente può selezionare Modifica comandi da un menu. Questi comandi consentono all'utente di eseguire semplici operazioni di modifica, ad esempio annullare un'azione precedente, tagliare o copiare selezioni negli Appunti, incollare il testo dagli Appunti ed eliminare la selezione corrente.
+In questo argomento viene illustrato come implementare un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra. Usando il controllo di modifica su più righe, l'utente può selezionare i comandi di modifica da un menu. Questi comandi consentono all'utente di eseguire semplici operazioni di modifica, ad esempio annullare un'azione precedente, tagliare o copiare le selezioni negli Appunti, incollare il testo dagli Appunti ed eliminare la selezione corrente.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
 
-L'applicazione deve includere codice per creare un'istanza di e inizializzare un controllo di modifica su più righe e quindi elaborare i comandi di modifica dell'utente.
+L'applicazione deve includere il codice per creare un'istanza di e inizializzare un controllo di modifica su più righe e quindi elaborare i comandi di modifica dell'utente.
 
-Nell'esempio di codice C++ seguente viene implementata la maggior parte delle funzionalità di un elaboratore di testo semplice mediante l'aggiunta di un controllo di modifica su più righe all'area client di una finestra. Il sistema esegue automaticamente le operazioni WordWrap per il controllo di modifica e gestisce anche l'elaborazione per la barra di scorrimento verticale (creata specificando [**es \_ AUTOVSCROLL**](edit-control-styles.md) nella chiamata alla funzione [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ).
+L'esempio di codice C++ seguente implementa gran parte delle funzionalità di un elaboratore di testo semplice aggiungendo un controllo di modifica su più righe all'area client di una finestra. Il sistema esegue automaticamente operazioni di ritorno a capo automatico per il controllo di modifica e gestisce anche l'elaborazione per la barra di scorrimento verticale (creata specificando [**ES \_ AUTOVSCROLL**](edit-control-styles.md) nella chiamata alla [**funzione CreateWindow).**](/windows/desktop/api/winuser/nf-winuser-createwindowa)
 
-I comandi di modifica utente vengono inviati al processo della finestra tramite i messaggi di notifica del [**\_ comando WM**](/windows/desktop/menurc/wm-command) .
+I comandi di modifica dell'utente vengono inviati al processo della finestra tramite [**messaggi di notifica WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 > [!Note]  
-> Se la finestra include la barra multifunzione di Windows, le dimensioni del controllo di modifica devono essere modificate in modo da contenere l'altezza della barra multifunzione. Per altre informazioni, vedere [Framework della barra multifunzione di Windows](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry).
+> Se la finestra include la Windows barra multifunzione, le dimensioni del controllo di modifica devono essere regolate in base all'altezza della barra multifunzione. Per altre informazioni, vedere Windows [Ribbon Framework.](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry)
 
  
 
@@ -163,13 +163,13 @@ LRESULT CALLBACK MainWndProc(HWND hwnd,      // window handle
 [Informazioni sui controlli di modifica](about-edit-controls.md)
 </dt> <dt>
 
-[Modifica riferimento al controllo](bumper-edit-control-edit-control-reference.md)
+[Informazioni di riferimento sul controllo Edit](bumper-edit-control-edit-control-reference.md)
 </dt> <dt>
 
-[Uso di controlli di modifica](/windows/desktop/Controls/using-edit-controls)
+[Uso dei controlli di modifica](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Modifica controllo](edit-controls.md)
+[Controllo Edit](edit-controls.md)
 </dt> </dl>
 
  

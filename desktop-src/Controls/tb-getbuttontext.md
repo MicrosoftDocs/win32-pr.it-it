@@ -1,9 +1,9 @@
 ---
-title: Messaggio TB_GETBUTTONTEXT (COMmctrl. h)
+title: TB_GETBUTTONTEXT messaggio (Commctrl.h)
 description: Recupera il testo visualizzato di un pulsante su una barra degli strumenti.
 ms.assetid: 16dd7181-a404-4056-b084-05f49f5a4b14
 keywords:
-- Controlli di Windows Message TB_GETBUTTONTEXT
+- TB_GETBUTTONTEXT dei messaggi Windows controllo
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ac0b238574cc136f41959b57f3f0e1ec13e3ea1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ec63815886ecc32f8f0b0759b9f6a8cf847bfe56e6c898fd6e3a3ae8e0f40ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829767"
 ---
-# <a name="tb_getbuttontext-message"></a>TB \_ GETBUTTONTEXT messaggio
+# <a name="tb_getbuttontext-message"></a>TB \_ GETBUTTONTEXT message
 
 Recupera il testo visualizzato di un pulsante su una barra degli strumenti.
 
@@ -34,7 +34,7 @@ Recupera il testo visualizzato di un pulsante su una barra degli strumenti.
 *wParam* 
 </dt> <dd>
 
-Identificatore del comando del pulsante di cui è necessario recuperare il testo.
+Identificatore del comando del pulsante di cui recuperare il testo.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Puntatore a un buffer che riceve il testo del pulsante.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce la lunghezza, in caratteri, della stringa a cui punta *lParam*. La lunghezza non include il carattere null di terminazione. Se ha esito negativo, il valore restituito è-1.
+Restituisce la lunghezza, in caratteri, della stringa a cui punta *lParam*. La lunghezza non include il carattere Null di terminazione. In caso di esito negativo, il valore restituito è -1.
 
 ## <a name="remarks"></a>Commenti
 
-**Avviso di sicurezza:** L'utilizzo errato di questo messaggio potrebbe compromettere la sicurezza del programma. Questo messaggio non fornisce un modo per stabilire le dimensioni del buffer. Se si utilizza questo messaggio, chiamare prima il messaggio passando **null** in *lParam*, viene restituito il numero di caratteri, esclusi i **valori null** richiesti. Chiamare quindi il messaggio una seconda volta per recuperare la stringa. Prima di continuare, è necessario esaminare le [considerazioni sulla sicurezza: controlli di Microsoft Windows](sec-comctls.md) .
+**Avviso di sicurezza:** L'uso non corretto di questo messaggio potrebbe compromettere la sicurezza del programma. Questo messaggio non consente di conoscere le dimensioni del buffer. Se si usa questo messaggio, chiamare prima il messaggio passando **NULL** in *lParam*, verrà restituito il numero di caratteri, esclusi **i VALORI NULL** necessari. Chiamare quindi il messaggio una seconda volta per recuperare la stringa. Prima di continuare, vedere Considerazioni sulla [sicurezza: Microsoft Windows Controlli.](sec-comctls.md)
 
 La stringa restituita corrisponde al testo attualmente visualizzato dal pulsante.
 
@@ -61,9 +61,9 @@ La stringa restituita corrisponde al testo attualmente visualizzato dal pulsante
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **TB \_ GETBUTTONTEXTW** (Unicode) e **TB \_ GETBUTTONTEXTA** (ANSI)<br/>         |
 
 
@@ -78,7 +78,7 @@ La stringa restituita corrisponde al testo attualmente visualizzato dal pulsante
 [**TB \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
 </dt> <dt>
 
-[**TB \_ GETstring**](tb-getstring.md)
+[**TB \_ GETSTRING**](tb-getstring.md)
 </dt> <dt>
 
 [**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md)

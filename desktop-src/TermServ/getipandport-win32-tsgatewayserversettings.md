@@ -1,12 +1,12 @@
 ---
-title: Metodo GetIPAndPort della classe Win32_TSGatewayServerSettings
+title: Metodo GetIPAndPort della Win32_TSGatewayServerSettings classe
 description: Ottiene l'indirizzo IP di ascolto e il numero di porta per il trasporto specificato.
 ms.assetid: e12451c3-2641-49e1-bd35-f7cab37865ae
 ms.tgt_platform: multiple
 keywords:
-- Servizi Desktop remoto del metodo GetIPAndPort
-- Metodo GetIPAndPort Servizi Desktop remoto, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Servizi Desktop remoto, metodo GetIPAndPort
+- Metodo GetIPAndPort Servizi Desktop remoto
+- Metodo GetIPAndPort Servizi Desktop remoto , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Servizi Desktop remoto metodo , GetIPAndPort
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 260cc45961720ae8d175d4df3e84edc7a0c15c13
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faf1cb1d4f597e734ac66456cd515193afed5ad31b7b6543d4e52c09717346a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104340462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353852"
 ---
-# <a name="getipandport-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo GetIPAndPort della \_ classe TSGatewayServerSettings Win32
+# <a name="getipandport-method-of-the-win32_tsgatewayserversettings-class"></a>Metodo GetIPAndPort della classe \_ Win32 TSGatewayServerSettings
 
 Ottiene l'indirizzo IP di ascolto e il numero di porta per il trasporto specificato.
 
@@ -45,7 +45,7 @@ uint32 GetIPAndPort(
 
 <dl> <dt>
 
-*TransportType* \[ in\]
+*TransportType* \[ Pollici\]
 </dt> <dd>
 
 Specifica il tipo di trasporto. Deve essere uno dei valori seguenti.
@@ -55,7 +55,7 @@ Specifica il tipo di trasporto. Deve essere uno dei valori seguenti.
 0
 </dt> <dd>
 
-RPC sul trasporto HTTP.
+Trasporto RPC su HTTP.
 
 </dd> <dt>
 
@@ -73,23 +73,23 @@ Trasporto UDP.
 
 </dd> </dl> </dd> <dt>
 
-*Indirizzo IP* \[ out\]
+*Indirizzo IP* \[ Cambio\]
 </dt> <dd>
 
 Stringa che riceve l'indirizzo IP di ascolto, in formato ottetto (ad esempio, "192.168.1.1").
 
 </dd> <dt>
 
-*Porta* \[ out\]
+*Porta* \[ Cambio\]
 </dt> <dd>
 
-Specifica il numero della porta di attesa.
+Specifica il numero di porta di ascolto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere [Servizi Desktop remoto codici di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -100,7 +100,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 | Client minimo supportato<br/> | Nessuno supportato<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2012<br/>                                                           |
 | Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -109,7 +109,7 @@ Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

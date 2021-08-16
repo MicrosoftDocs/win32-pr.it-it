@@ -1,11 +1,11 @@
 ---
-title: PlaylistCollection. nuova playlist, metodo
-description: Il metodo nuova playlist crea una nuova playlist nella libreria.
+title: Metodo PlaylistCollection.newPlaylist
+description: Il metodo newPlaylist crea una nuova playlist nella libreria.
 ms.assetid: 428b5779-4dc0-466b-9834-6b2c43324013
 keywords:
-- Metodo nuova playlist Windows Media Player
-- Metodo nuova playlist Windows Media Player, Classe PlaylistCollection
-- Classe PlaylistCollection Windows Media Player, metodo nuova playlist
+- Metodo newPlaylist Windows Media Player
+- Metodo newPlaylist Windows Media Player , classe PlaylistCollection
+- Classe PlaylistCollection Windows Media Player , metodo newPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d94c25a8dfe6f1eb7c4dac40dd644433a5f0d7e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: af40d4de424997cb943711d84bf62805f2036afeb551c5d397ce82ae0975e812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106331370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334596"
 ---
-# <a name="playlistcollectionnewplaylist-method"></a>PlaylistCollection. nuova playlist, metodo
+# <a name="playlistcollectionnewplaylist-method"></a>Metodo PlaylistCollection.newPlaylist
 
-Il metodo **nuova playlist** crea una nuova playlist nella libreria.
+Il **metodo newPlaylist** crea una nuova playlist nella libreria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ retVal = PlaylistCollection.newPlaylist(
 
 <dl> <dt>
 
-*nome* \[ in\]
+*name* \[ Pollici\]
 </dt> <dd>
 
 **Stringa** contenente il nome della playlist da creare.
@@ -51,21 +51,21 @@ retVal = PlaylistCollection.newPlaylist(
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **playlist** .
+Questo metodo restituisce un **oggetto Playlist.**
 
 ## <a name="remarks"></a>Commenti
 
-Questo metodo crea una playlist vuota nella libreria. Per riempire la playlist con elementi multimediali, usare *playlist*. **appendItem** o *playlist*. **InsertItem**.
+Questo metodo crea una playlist vuota nella libreria. Per riempire la playlist con elementi multimediali, usare *Playlist*. **appendItem o** *Playlist.* **insertItem**.
 
-Nella libreria sono consentite più playlist con lo stesso nome. Per evitare di creare un nome di playlist duplicato con questo metodo, usare **GetByName** e *PlaylistArray*. **conteggio** per determinare se una playlist con un determinato nome esiste già.
+Nella libreria sono consentite più playlist con lo stesso nome. Per evitare di creare un nome di playlist duplicato con questo metodo, usare **getByName** e *PlaylistArray*. **count** per determinare se esiste già una playlist con un nome specifico.
 
-Gli spazi iniziali e finali non sono consentiti nei nomi delle playlist e vengono rimossi automaticamente dal valore specificato per il parametro *Name* .
+Gli spazi iniziali e finali non sono consentiti nei nomi delle playlist e vengono rimossi automaticamente dal valore specificato per il *parametro name.*
 
-Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso completo alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene creata una nuova playlist vuota denominata "Three". L'oggetto **Player** è stato creato con ID = "Player".
+Nell'JScript seguente viene creata una nuova playlist vuota denominata "ThreeList". **L'oggetto** Player è stato creato con ID="Player".
 
 
 ```JScript
@@ -82,7 +82,7 @@ var NewList = Player.playlistCollection.newPlaylist("ThreeList");
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -91,34 +91,34 @@ var NewList = Player.playlistCollection.newPlaylist("ThreeList");
 
 <dl> <dt>
 
-[**Mediacollection. Add**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Playlist. appendItem**](playlist-appenditem.md)
+[**Playlist.appendItem**](playlist-appenditem.md)
 </dt> <dt>
 
-[**Playlist. insertItem**](playlist-insertitem.md)
+[**Playlist.insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
-[**PlaylistArray. Count**](playlistarray-count.md)
+[**PlaylistArray.count**](playlistarray-count.md)
 </dt> <dt>
 
-[**PlaylistCollection (oggetto)**](playlistcollection-object.md)
+[**Oggetto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**PlaylistCollection. getByName**](playlistcollection-getbyname.md)
+[**PlaylistCollection.getByName**](playlistcollection-getbyname.md)
 </dt> <dt>
 
-[**PlaylistCollection. importPlaylist**](playlistcollection-importplaylist.md)
+[**PlaylistCollection.importPlaylist**](playlistcollection-importplaylist.md)
 </dt> <dt>
 
-[**PlaylistCollection. Remove**](playlistcollection-remove.md)
+[**PlaylistCollection.remove**](playlistcollection-remove.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

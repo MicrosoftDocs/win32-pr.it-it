@@ -3,7 +3,7 @@ title: WM_INITMENUPOPUP messaggio (Winuser.h)
 description: "WM_INITMENUPOPUP messaggio: inviato quando un menu a discesa o un sottomenu sta per diventare attivo. In questo modo un'applicazione può modificare il menu prima che venga visualizzato, senza modificare l'intero menu."
 ms.assetid: 08ae1a78-5e68-488c-9b77-ee42044ca3ab
 keywords:
-- WM_INITMENUPOPUP menu e altre risorse del messaggio
+- WM_INITMENUPOPUP messaggio Menu e altre risorse
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d850547d57596dd36b36b941d1782c2aee1f5b3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2ba23607dcb8da7fb282e380e87fe6a2cbb9a26a50850845a5877d036983665f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869600"
 ---
 # <a name="wm_initmenupopup-message"></a>Messaggio \_ WM INITMENUPOPUP
 

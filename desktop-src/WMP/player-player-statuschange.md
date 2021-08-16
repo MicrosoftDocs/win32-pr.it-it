@@ -1,10 +1,10 @@
 ---
-title: Evento Player. StatusChange
-description: L'evento StatusChange si verifica quando cambia il valore della proprietà Status. | Evento Player. StatusChange
+title: Evento Player.StatusChange
+description: L'evento StatusChange si verifica quando il valore della proprietà status cambia. | Evento Player.StatusChange
 ms.assetid: a457c345-2f24-4f91-a7ff-27025f7bb41d
 keywords:
-- Media Player di Windows Event StatusChange
-- Windows Event StatusChange Media Player, classe Player
+- Evento StatusChange Windows Media Player
+- Classe di evento StatusChange Windows Media Player , Player
 - Classe Player Windows Media Player, evento StatusChange
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c11aaa81c8bfe45c986ba3b3c5dd2524130694e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4643db91003418c8523de31e73c1a4ec8c9f0efa181c16d705ccd4a4db96ff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337911"
 ---
-# <a name="playerstatuschange-event"></a>Evento Player. StatusChange
+# <a name="playerstatuschange-event"></a>Evento Player.StatusChange
 
-L'evento **StatusChange** si verifica quando cambia il valore della proprietà **status** .
+**L'evento StatusChange** si verifica quando il **valore della proprietà** status cambia.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,7 +38,7 @@ Player.StatusChange()
 
 ## <a name="parameters"></a>Parametri
 
-Questo evento non contiene parametri.
+Questo evento non ha parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
@@ -50,7 +50,7 @@ Questo evento non restituisce un valore.
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player 9 serie o versione successiva.<br/>                                 |
+| Versione<br/> | Windows Media Player serie 9 o successiva.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -62,7 +62,7 @@ Questo evento non restituisce un valore.
 [**Oggetto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. status**](player-status.md)
+[**Player.status**](player-status.md)
 </dt> </dl>
 
  

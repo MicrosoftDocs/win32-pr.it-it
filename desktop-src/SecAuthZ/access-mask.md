@@ -1,19 +1,19 @@
 ---
-description: Definisce diritti standard, specifici e generici. Questi diritti vengono usati nelle voci di controllo di accesso (ACE) e rappresentano il metodo principale per specificare l'accesso richiesto o concesso a un oggetto.
+description: Definisce diritti standard, specifici e generici. Questi diritti vengono usati nelle voci di controllo di accesso (ACE) e sono il mezzo principale per specificare l'accesso richiesto o concesso a un oggetto.
 ms.assetid: f115ee54-3333-4109-8004-d71904a7a943
-title: ACCESS_MASK (Winnt. h)
+title: ACCESS_MASK (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d10d9e8db246c2705911cc57221400f40da014d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d13378b44d17bedd818efd5fc84310b304a2f683a3331237e8cca208be8de810
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104131450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785468"
 ---
-# <a name="access_mask"></a>maschera di accesso \_
+# <a name="access_mask"></a>MASCHERA DI \_ ACCESSO
 
-Il tipo di dati di **Access \_ mask** è un valore **DWORD** che definisce diritti standard, specifici e generici. Questi diritti vengono usati nelle [*voci di controllo di accesso*](/windows/desktop/SecGloss/a-gly) (ACE) e rappresentano il metodo principale per specificare l'accesso richiesto o concesso a un oggetto.
+Il **tipo di dati ACCESS \_ MASK** è un **valore DWORD** che definisce diritti standard, specifici e generici. Questi diritti vengono usati nelle voci di [*controllo*](/windows/desktop/SecGloss/a-gly) di accesso (ACE) e sono il mezzo principale per specificare l'accesso richiesto o concesso a un oggetto.
 
 
 ```C++
@@ -31,37 +31,37 @@ I bit in questo valore vengono allocati come indicato di seguito.
 
 | BITS             | Significato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 15<br/>  | Diritti specifici. Contiene la maschera di accesso specifica per il tipo di oggetto associato alla maschera.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 0 15<br/>  | Diritti specifici. Contiene la maschera di accesso specifica del tipo di oggetto associato alla maschera.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
 | 16 23<br/> | Diritti standard. Contiene i diritti di accesso standard dell'oggetto.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| 24<br/>    | Accesso alla sicurezza del sistema (**accesso alla \_ \_ sicurezza del sistema**). Viene usato per indicare l'accesso a un [*elenco di controllo di accesso di sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Questo tipo di accesso richiede che il processo chiamante disponga del **privilegio \_ \_ nome sicurezza se** (gestione registro di controllo e di sicurezza). Se questo flag è impostato nella maschera di accesso di una voce di controllo di accesso ACE (accesso con esito positivo o negativo), l'accesso al SACL verrà controllato.<br/> |
-| 25<br/>    | Massimo consentito (**massimo \_ consentito**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 24<br/>    | Accedere alla sicurezza del sistema (**ACCESS \_ SYSTEM \_ SECURITY**). Viene usato per indicare l'accesso a un elenco [*di controllo di accesso*](/windows/desktop/SecGloss/s-gly) di sistema (SACL). Questo tipo di accesso richiede che il processo chiamante abbia il edizione Standard **\_ SECURITY \_ NAME** (Manage auditing and security log). Se questo flag è impostato nella maschera di accesso di una voce di controllo di accesso (accesso riuscito o non riuscito), l'accesso SACL verrà eseguito.<br/> |
+| 25<br/>    | Massimo consentito (**MAXIMUM \_ ALLOWED**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 26 27<br/> | Riservato.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 28<br/>    | Generic All (**generico \_ All**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| 29<br/>    | Esecuzione generica **( \_ esecuzione generica**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 30<br/>    | Scrittura generica **( \_ scrittura generica**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 31<br/>    | Lettura generica **( \_ lettura generica**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| 28<br/>    | Generic all (**GENERIC \_ ALL**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 29<br/>    | Esecuzione generica (**GENERIC \_ EXECUTE**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 30<br/>    | Scrittura generica (**GENERIC \_ WRITE**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 31<br/>    | Lettura generica (**GENERIC \_ READ**).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 
 
  
 
-I bit dei diritti standard, da 16 a 23, contengono i diritti di accesso standard dell'oggetto e possono essere costituiti da una combinazione dei flag predefiniti seguenti.
+I bit dei diritti standard, da 16 a 23, contengono i diritti di accesso standard dell'oggetto e possono essere una combinazione dei flag predefiniti seguenti.
 
 
 
 | bit           | Contrassegno                         | Significato                                                                                                                                                                                                                                  |
 |---------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 16<br/> | **DELETE**<br/>        | Elimina accesso.<br/>                                                                                                                                                                                                                |
-| 17<br/> | **controllo di lettura \_**<br/> | Accesso in lettura al proprietario, al gruppo e all' [*elenco di controllo di accesso discrezionale*](/windows/desktop/SecGloss/d-gly) (DACL) del descrittore di sicurezza.<br/> |
-| 18<br/> | **Scrivi \_ DAC**<br/>    | Accesso in scrittura all'elenco DACL.<br/>                                                                                                                                                                                                     |
-| 19<br/> | **Scrivi \_ proprietario**<br/>  | Accesso in scrittura al proprietario.<br/>                                                                                                                                                                                                        |
-| 20<br/> | **SINCRONIZZARE**<br/>   | Sincronizzare l'accesso.<br/>                                                                                                                                                                                                           |
+| 16<br/> | **DELETE**<br/>        | Eliminare l'accesso.<br/>                                                                                                                                                                                                                |
+| 17<br/> | **CONTROLLO \_ LETTURA**<br/> | Accesso in lettura al proprietario, al gruppo e [*all'elenco*](/windows/desktop/SecGloss/d-gly) di controllo di accesso discrezionale (DACL) del descrittore di sicurezza.<br/> |
+| 18<br/> | **APPLICAZIONE \_ LIVELLO DATI WRITE**<br/>    | Accesso in scrittura all'elenco DACL.<br/>                                                                                                                                                                                                     |
+| 19<br/> | **WRITE \_ OWNER**<br/>  | Accesso in scrittura al proprietario.<br/>                                                                                                                                                                                                        |
+| 20<br/> | **Sincronizzare**<br/>   | Sincronizzare l'accesso.<br/>                                                                                                                                                                                                           |
 
 
 
  
 
-Le costanti seguenti definite in Winnt. h rappresentano i diritti di accesso specifici e standard.
+Le costanti seguenti definite in Winnt.h rappresentano i diritti di accesso specifici e standard.
 
 
 ```C++
@@ -90,9 +90,9 @@ Le costanti seguenti definite in Winnt. h rappresentano i diritti di accesso spe
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                   |
-| Intestazione<br/>                   | <dl> <dt>Winnt. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                   |
+| Intestazione<br/>                   | <dl> <dt>Winnt.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -106,10 +106,10 @@ Le costanti seguenti definite in Winnt. h rappresentano i diritti di accesso spe
 [Strutture di controllo di accesso di base](authorization-structures.md)
 </dt> <dt>
 
-[Maschere di accesso e diritti di accesso](access-rights-and-access-masks.md)
+[Diritti di accesso e maschere di accesso](access-rights-and-access-masks.md)
 </dt> <dt>
 
-[**\_Mapping generico**](/windows/desktop/api/Winnt/ns-winnt-generic_mapping)
+[**MAPPING \_ GENERICO**](/windows/desktop/api/Winnt/ns-winnt-generic_mapping)
 </dt> </dl>
 
  

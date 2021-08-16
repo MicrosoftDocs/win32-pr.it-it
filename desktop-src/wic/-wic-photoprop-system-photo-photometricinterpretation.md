@@ -1,19 +1,19 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. PhotometricInterpretation.
+description: Criteri dei metadati della foto per la proprietà System.Photo.PhotometricInterpretation.
 ms.assetid: ff36b2c3-8763-4640-a049-b5880fd26929
-title: Criteri per i metadati delle foto di System. Photo. PhotometricInterpretation
+title: Criteri metadati foto System.Photo.PhotometricInterpretation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35b371ce9257d526f941f3fdb33949e8788a7112
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5479c747e2a1cc60a1867a7dc5906e5c4710abf9da33b5328980e0188403ecd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106315965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204685"
 ---
-# <a name="systemphotophotometricinterpretation-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. PhotometricInterpretation
+# <a name="systemphotophotometricinterpretation-photo-metadata-policy"></a>Criteri metadati foto System.Photo.PhotometricInterpretation
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md) .
+Criteri dei metadati della foto [per la proprietà System.Photo.PhotometricInterpretation.](../properties/props-system-photo-photometricinterpretation.md)
 
 ### <a name="pkey"></a>PKEY
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
-\_UI2 VT
+Interfaccia utente \_ VT 2
 
 ### <a name="input-type"></a>Tipo di input
 
@@ -37,17 +37,17 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-I valori di schemi diversi vengono risolti.
+I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                | Formato disco |
 |-------|-------------------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 262}              | ushort      |
+| 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | unicode     |
 
 
@@ -60,20 +60,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                | Formato disco |
 |-------|-------------------------------------|-------------|
-| 1     | /App1/IFD/{ushort = 262}              | ushort      |
+| 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                                |
 |-------|-------------------------------------|
-| 1     | /App1/IFD/{ushort = 262}              |
+| 1     | /app1/ifd/{ushort=262}              |
 | 2     | /xmp/tiff:photometricinterpretation |
 
 
@@ -82,13 +82,13 @@ I valori di schemi diversi vengono risolti.
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                                    | Formato disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /IFD/{ushort = 262}                       | ushort      |
+| 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | unicode     |
 
 
@@ -101,20 +101,20 @@ I valori di schemi diversi vengono risolti.
 
 | JSON | Percorso                                    | Formato disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /IFD/{ushort = 262}                       | ushort      |
+| 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | unicode     |
 
 
 
  
 
-### <a name="remove-paths"></a>Rimuovi percorsi
+### <a name="remove-paths"></a>Rimuovere i percorsi
 
 
 
 | JSON | Percorso                                    |
 |-------|-----------------------------------------|
-| 1     | /IFD/{ushort = 262}                       |
+| 1     | /ifd/{ushort=262}                       |
 | 2     | /ifd/xmp/tiff:photometricinterpretation |
 
 
@@ -127,7 +127,7 @@ I valori di schemi diversi vengono risolti.
 
 <dl> <dt>
 
-[System. Photo. PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md)
+[System.Photo.PhotometricInterpretation](../properties/props-system-photo-photometricinterpretation.md)
 </dt> </dl>
 
  

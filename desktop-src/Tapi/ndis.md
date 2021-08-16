@@ -1,28 +1,28 @@
 ---
-description: La classe del dispositivo NDIS è costituita da dispositivi che possono essere associati ai driver di Network Driver Interface Specification (NDIS) Media Access Control (MAC) per supportare le comunicazioni di rete. Per accedere a questi dispositivi, è possibile usare funzioni.
+description: La classe di dispositivi ndis è costituita da dispositivi che possono essere associati ai driver MAC (Media Access Control) NDIS (Network Driver Interface Specification) per supportare le comunicazioni di rete. È possibile accedere a questi dispositivi usando le funzioni.
 ms.assetid: 98cdd929-0bd7-4509-b2f5-4edd8d6a8080
-title: NDIS
+title: Ndis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a0be1a69f98f9a4ff8cdc2f8ea173b208c0011d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dda773591a3e3766a77b00925b9c15eacc5f45188900b12d6b9744c52f238ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761340"
 ---
-# <a name="ndis"></a>NDIS
+# <a name="ndis"></a>Ndis
 
-La classe del dispositivo NDIS è costituita da dispositivi che possono essere associati ai driver di Network Driver Interface Specification (NDIS) Media Access Control (MAC) per supportare le comunicazioni di rete. Per accedere a questi dispositivi, è possibile usare funzioni.
+La classe di dispositivi ndis è costituita da dispositivi che possono essere associati ai driver MAC (Media Access Control) NDIS (Network Driver Interface Specification) per supportare le comunicazioni di rete. È possibile accedere a questi dispositivi usando le funzioni.
 
-Le funzioni [**lineGetID**](/windows/desktop/api/Tapi/nf-tapi-linegetid) e [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid) compilano una struttura [**VARSTRING**](/windows/desktop/api/Tapi/ns-tapi-varstring) , impostando il membro **dwStringFormat** sul \_ valore binario STRINGFORMAT e aggiungendo questi membri aggiuntivi:
+Le [**funzioni lineGetID**](/windows/desktop/api/Tapi/nf-tapi-linegetid) e [**phoneGetID**](/windows/desktop/api/Tapi/nf-tapi-phonegetid) riempiono una struttura [**VARSTRING,**](/windows/desktop/api/Tapi/ns-tapi-varstring) impostando il membro **dwStringFormat** sul valore STRINGFORMAT BINARY e aggiungendo \_ questi membri aggiuntivi:
 
 ``` syntax
 HANDLE  hDevice;          // NDIS connection identifier
 CHAR    szDeviceType[1];  // name of device 
 ```
 
-Il membro **hDevice** è l'identificatore da passare a un Mac, ad esempio il Mac asincrono per la rete remota, per associare una connessione di rete alla connessione chiamata/modem. Il membro **szDeviceType** è una stringa con terminazione null che specifica il nome del dispositivo associato all'identificatore.
+Il **membro hDevice** è l'identificatore da passare a un MAC, ad esempio il MAC asincrono per la connessione remota, per associare una connessione di rete alla connessione di chiamata/modem. Il **membro szDeviceType** è una stringa con terminazione Null che specifica il nome del dispositivo associato all'identificatore.
 
  
 

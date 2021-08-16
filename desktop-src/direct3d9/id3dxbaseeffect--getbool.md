@@ -1,7 +1,7 @@
 ---
 description: Ottiene un valore BOOL.
 ms.assetid: 9d61efcd-f267-4c45-b685-d363588796f7
-title: 'Metodo ID3DXBaseEffect:: GetBool (D3DX9Shader. h)'
+title: Metodo ID3DXBaseEffect::GetBool (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0476c62733379a7e92aca55c3cdc2c31a3526de2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 13fa69c8fd20798f683003bd561193a4079ba48c291248f7d4ce6fe1d0fc5fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "106323612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522320"
 ---
-# <a name="id3dxbaseeffectgetbool-method"></a>Metodo ID3DXBaseEffect:: GetBool
+# <a name="id3dxbaseeffectgetbool-method"></a>Metodo ID3DXBaseEffect::GetBool
 
 Ottiene un valore BOOL.
 
@@ -41,19 +41,19 @@ HRESULT GetBool(
 
 <dl> <dt>
 
-*hParameter* \[ in\]
+*hParameter* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificatore univoco. Vedere [handle (Direct3D 9)](handles.md).
+Identificatore univoco. Vedere [Handle (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*PB* \[ out\]
+*pb* \[ Cambio\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
 Restituisce un valore booleano.
 
@@ -71,8 +71,8 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Intestazione<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -83,7 +83,7 @@ Se il metodo ha esito positivo, il valore restituito è D3D \_ OK. Se il metodo 
 [ID3DXBaseEffect](id3dxbaseeffect.md)
 </dt> <dt>
 
-[**DiBOOL**](id3dxbaseeffect--setbool.md)
+[**SetBool**](id3dxbaseeffect--setbool.md)
 </dt> </dl>
 
  

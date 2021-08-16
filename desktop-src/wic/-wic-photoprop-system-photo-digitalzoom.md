@@ -1,21 +1,21 @@
 ---
-description: Criteri per i metadati delle foto per la proprietà System. Photo. DigitalZoom.
+description: Criteri dei metadati delle foto per la proprietà System.Photo.DigitalZoom.
 ms.assetid: 22a69d3e-4ec3-4652-b4bb-dfcfffc2322b
-title: Criteri per i metadati delle foto di System. Photo. DigitalZoom
+title: Criteri metadati foto System.Photo.DigitalZoom
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf440e92243eb2102ac6abaa349ea83e58d9a2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19dfaf2838c8f321b1406d951fcc335076bcdfc00e3a17de0954f1a62022570e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104347426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205377"
 ---
-# <a name="systemphotodigitalzoom-photo-metadata-policy"></a>Criteri per i metadati delle foto di System. Photo. DigitalZoom
+# <a name="systemphotodigitalzoom-photo-metadata-policy"></a>Criteri metadati foto System.Photo.DigitalZoom
 
-Criteri per i metadati delle foto per la proprietà [System. Photo. DigitalZoom](../properties/props-system-photo-digitalzoom.md) .
+Criteri dei metadati delle foto per [la proprietà System.Photo.DigitalZoom.](../properties/props-system-photo-digitalzoom.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Chiave PKEY
 
 PKEY \_ Photo \_ DigitalZoom
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sì
 
-### <a name="output-propvariant-type"></a>Tipo di PROPVARIANT di output
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT di output
 
 VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Criteri di risoluzione dei conflitti
 
-Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Photo. DigitalZoomDenominator. Non può essere scritto direttamente. I valori di schemi diversi vengono risolti.
+Questo valore viene generato da System.Photo.DigitalZoomNumerator e System.Photo.DigitalZoomDenominator. Non può essere scritto direttamente. I valori di schemi diversi vengono riconciliati.
 
 ### <a name="jpeg-policy"></a>Criteri JPEG
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41988} |             |
+| 1     | /app1/ifd/exif/{ushort=41988} |             |
 | 2     | /xmp/exif:DigitalZoomRatio    |             |
 
 
@@ -56,7 +56,7 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 | JSON | Percorso                          | Formato disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41988} |             |
+| 1     | /app1/ifd/exif/{ushort=41988} |             |
 | 2     | /xmp/exif:DigitalZoomRatio    |             |
 
 
@@ -69,7 +69,7 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 | JSON | Percorso                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{ushort = 41988} |
+| 1     | /app1/ifd/exif/{ushort=41988} |
 | 2     | /xmp/exif:digitalzoomratio    |
 
 
@@ -78,13 +78,13 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 ### <a name="tiff-policies"></a>Criteri TIFF
 
-### <a name="read-paths"></a>Leggi percorsi
+### <a name="read-paths"></a>Percorsi di lettura
 
 
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41988}       |             |
+| 1     | /ifd/exif/{ushort=41988}       |             |
 | 2     | /ifd/xmp/exif:DigitalZoomRatio |             |
 
 
@@ -97,7 +97,7 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 | JSON | Percorso                           | Formato disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{ushort = 41988}       |             |
+| 1     | /ifd/exif/{ushort=41988}       |             |
 | 2     | /ifd/xmp/exif:DigitalZoomRatio |             |
 
 
@@ -110,7 +110,7 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 | JSON | Percorso                           |
 |-------|--------------------------------|
-| 1     | /IFD/EXIF/{ushort = 41988}       |
+| 1     | /ifd/exif/{ushort=41988}       |
 | 2     | /ifd/xmp/exif:digitalzoomratio |
 
 
@@ -123,7 +123,7 @@ Questo valore viene generato da System. Photo. DigitalZoomNumerator e System. Ph
 
 <dl> <dt>
 
-[System. Photo. DigitalZoom](../properties/props-system-photo-digitalzoom.md)
+[System.Photo.DigitalZoom](../properties/props-system-photo-digitalzoom.md)
 </dt> </dl>
 
  

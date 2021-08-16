@@ -1,23 +1,23 @@
 ---
-title: Carico IPaper
-description: Nel codice di esempio C++ riportato di seguito viene illustrato come aprire il flusso esistente nell'archiviazione, leggere le nuove proprietà della carta in e impostarle come valori correnti per la cocarta.
+title: Caricamento IPaper
+description: Il codice di esempio C++ seguente mostra come aprire il flusso esistente nella memoria, leggere le nuove proprietà della carta in e quindi impostarle come valori correnti per COPaper.
 ms.assetid: a1559d97-387f-4d1a-8a9d-fa5c27abd545
 keywords:
-- Carico IPaper
+- Caricamento IPaper
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16b5f16b8fe649d08226b2cff5a4b1a5234bddb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b592573f016018d359b5e3e35911d92371892b98ebea70338844b7f8ef4b1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103955706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117961381"
 ---
-# <a name="ipaperload"></a>IPaper:: Load
+# <a name="ipaperload"></a>IPaper::Load
 
-Nel codice di esempio C++ riportato di seguito viene illustrato come aprire il flusso esistente nell'archiviazione, leggere le nuove proprietà della carta in e impostarle come valori correnti per la cocarta.
+Il codice di esempio C++ seguente mostra come aprire il flusso esistente nella memoria, leggere le nuove proprietà della carta in e quindi impostarle come valori correnti per COPaper.
 
-Di seguito è riportato il metodo **iPaper:: Load** da Paper. cpp.
+Di seguito è riportato **il metodo IPaper::Load** da Paper.cpp.
 
 
 ```
@@ -126,19 +126,19 @@ STDMETHODIMP COPaper::CImpIPaper::Load(
 
 
 
-A questo punto, viene chiamato il metodo [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) per aprire il flusso esistente nello spazio di archiviazione denominato "PAPERDATA". I flag della modalità di accesso sono per l'accesso esclusivo in sola lettura, diretto e non condiviso. Quando il flusso è aperto, viene chiamato il metodo [**IStream:: Read**](/windows/desktop/api/Objidl/nn-objidl-istream) per leggere la \_ struttura della proprietà paper. Se la quantità effettivamente letta non è uguale a quella richiesta, l'operazione di caricamento viene interrotta e \_ viene restituito e fail. Se la versione del formato nelle proprietà della carta appena letta \_ non è riconosciuta, l'operazione di caricamento è stata interrotta e il **caricamento** restituisce e ha \_ esito negativo.
+A questo punto, viene chiamato il metodo [**IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) per aprire il flusso esistente nella memoria denominata "PAPERDATA". I flag della modalità di accesso sono per l'accesso esclusivo di sola lettura, diretto e non condiviso. Quando il flusso è aperto, viene chiamato [**il metodo IStream::Read**](/windows/desktop/api/Objidl/nn-objidl-istream) per leggere la struttura PAPER \_ PROPERTIES. Se la quantità effettivamente letta non è uguale alla quantità richiesta, l'operazione di caricamento viene interrotta e viene restituito E \_ FAIL. Se la versione del formato nella proprietà PAPER appena letta non viene riconosciuta, l'operazione di caricamento viene interrotta e \_ **Load** restituisce E \_ FAIL.
 
-Con una versione valida del formato dati Ink, le dimensioni della nuova matrice di dati di input penna dalle proprietà della carta \_ lette in vengono utilizzate per allocare una nuova matrice di dati di input penna della dimensione richiesta. I dati di input penna esistenti vengono eliminati e i relativi dati andranno perduti. Se questi dati sono preziosi, dovrebbero essere stati salvati prima della chiamata al metodo **Load** . Dopo che la nuova matrice è stata allocata, [**IStream:: Read**](/windows/desktop/api/Objidl/nn-objidl-istream) viene chiamato nuovamente per leggere i dati nella matrice dal flusso. Se la chiamata ha esito positivo, i valori nelle proprietà della carta appena letta vengono adottati come valori correnti per il Copaper.
+Con una versione valida del formato dati dell'input penna, le dimensioni della nuova matrice di dati dell'input penna dalle proprietà paper lette vengono usate per allocare una nuova matrice di dati dell'input penna delle \_ dimensioni richieste. I dati dell'input penna esistenti vengono eliminati e i relativi dati vengono persi. Se questi dati erano importanti, dovrebbero essere stati salvati prima della **chiamata** a Load. Dopo l'allocazione della nuova matrice, viene chiamato di nuovo [**IStream::Read**](/windows/desktop/api/Objidl/nn-objidl-istream) per leggere i dati nella matrice dal flusso. Se questa chiamata ha esito positivo, i valori nelle proprietà del documento appena lette vengono adottati come valori correnti per COPaper.
 
-Durante questa operazione di caricamento, \_ è stata usata una struttura di proprietà della carta temporanea, NewProps, per conservare le nuove proprietà lette in. Se il metodo ha esito positivo, NewProps viene copiato nella struttura delle \_ proprietà della carta, m \_ PaperProperties. Come prima, al termine del caricamento e l'oggetto [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) non è più necessario, viene rilasciato il puntatore **IStream** .
+Durante questa operazione di caricamento è stata usata una struttura PAPER \_ PROPERTIES temporanea, NewProps, per contenere le nuove proprietà lette. Se il caricamento ha esito positivo, NewProps viene copiato nella struttura PAPER \_ PROPERTIES, m \_ PaperProperties. Come in precedenza, dopo il caricamento e [**l'IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) non è più necessario, viene **rilasciato il puntatore IStream.**
 
-Se si verifica un errore alla fine del **caricamento**, la matrice di dati Ink viene cancellata perché potrebbe contenere dati danneggiati.
+Se si verifica un errore alla fine di **Load**, la matrice di dati dell'input penna viene cancellata, perché può contenere dati danneggiati.
 
-Se non si verificano errori alla fine del **caricamento**, viene chiamato il metodo client [**IPaperSink:: Loaded**](ipapersink-methods.md) , nel metodo NotifySinks interno del documento, per notificare al client che l'operazione di caricamento è stata completata. Si tratta di una notifica importante per il client, perché deve visualizzare i nuovi dati di input penna caricati. Questa notifica consente di usare in modo significativo le funzionalità degli oggetti collegabili in un documento.
+Se non si verifica alcun errore alla fine di **Load,** viene chiamato il metodo [**IPaperSink::Loaded**](ipapersink-methods.md) del client nel metodo NotifySinks interno di COPaper per notificare al client che l'operazione di caricamento è stata completata. Si tratta di una notifica importante per il client, perché deve visualizzare i nuovi dati input penna caricati. Questa notifica usa in modo significativo le funzionalità degli oggetti collegabili in COPaper.
 
- 
+ 
 
- 
+ 
 
 
 

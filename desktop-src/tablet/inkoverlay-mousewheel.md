@@ -4,12 +4,12 @@ ms.assetid: b7269e07-7001-48ca-8e20-a39cb02f3719
 title: Evento InkOverlay.MouseWheel (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 468dbdac09fd40144768e8342791d5712a570bcc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4c2563ae898eff2b9541ac52d77626ddebb8259d8bb60a82b18f6460da55f7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219205"
 ---
 # <a name="inkoverlaymousewheel-event"></a>Evento InkOverlay.MouseWheel
 
@@ -52,7 +52,7 @@ Stato del tasto MAIUSC.
 *Delta* \[ Pollici\]
 </dt> <dd>
 
-Conteggio con segno del numero di deviazioni ruotate dalla rotellina del mouse. Un dentello corrisponde a uno scatto della rotellina del mouse.
+Conteggio con segno del numero di detente ruotate dalla rotellina del mouse. Un dentello corrisponde a uno scatto della rotellina del mouse.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Questo evento non restituisce un valore.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Le proprietà *pX* e *pY* sono in pixel e non le unità HIMETRIC associate allo spazio input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione che non è in conoscenza della penna e questo tipo di applicazione comprende solo i pixel.
+> Le proprietà *pX* e *pY* sono espresse in pixel e non nelle unità HIMETRIC associate allo spazio input penna. Questo è dovuto al fatto che questo evento sostituisce l'evento del mouse correlato di un'applicazione inconsapevole e questo tipo di applicazione comprende solo i pixel.
 
  
 
@@ -96,7 +96,7 @@ Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollec
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                       |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                           |
 | Intestazione<br/>                   | <dl> <dt>Msinkaut.h (richiede anche Msinkaut \_ i.c)</dt> </dl> |
 | Libreria<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

@@ -1,21 +1,21 @@
 ---
-title: Guida per programmatori (input touch)
-description: In questa sezione vengono trattati argomenti specifici sullo sviluppo di software con l'API Windows Touch destinata al sistema operativo Windows 7.
+title: Guida per programmatori (Input tocco)
+description: Questa sezione illustra argomenti specifici sullo sviluppo di software con l Windows APP Touch per il sistema operativo Windows 7.
 ms.assetid: 8375475c-5a0e-42a2-8755-4c79dfe4cfce
 keywords:
-- Windows Touch, Guida alla programmazione
+- Windows Tocco, guida alla programmazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3324f86c64248996153d218216244725dec86148
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: dcd11c31f3a1ca015878a13804ac79cea37f6a86c1e90107f31057fe7311455a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104340133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199327"
 ---
-# <a name="programming-guide-touch-input"></a>Guida per programmatori (input touch)
+# <a name="programming-guide-touch-input"></a>Guida per programmatori (Input tocco)
 
-In questa sezione vengono trattati argomenti specifici sullo sviluppo di software con l'API Windows Touch destinata al sistema operativo Windows 7.
+Questa sezione illustra argomenti specifici sullo sviluppo di software con l Windows APP Touch per il sistema operativo Windows 7.
 
 In questa sezione vengono trattati gli argomenti seguenti.
 
@@ -23,11 +23,11 @@ In questa sezione vengono trattati gli argomenti seguenti.
 
 | Argomento                                                                                            | Descrizione                                                                                            |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Panoramica dell'architettura](architectural-overview.md)                                             | Viene descritta l'API Windows Touch per tablet e viene spiegato come si inserisce nel più ampio contesto di Windows 7. |
-| [Scelta dell'approccio giusto per Windows Touch](choosing-the-right-approach-to-windows-touch.md) | Vengono illustrati i modi in cui è possibile supportare Windows Touch.                                                  |
-| [Risoluzione dei problemi relativi alle applicazioni](troubleshooting-applications.md)                                 | Fornisce soluzioni ai problemi comuni.                                                                    |
-| [Input Windows Touch](guide-multi-touch-input.md)                                               | Viene illustrato come ricevere e interpretare i messaggi di Windows Touch.                                   |
-| [Movimenti tocco di Windows](guide-multi-touch-gestures.md)                                         | Viene illustrato come aggiungere il supporto del movimento tocco di Windows alle applicazioni.                                     |
+| [Panoramica dell'architettura](architectural-overview.md)                                             | Descrive l'API Windows Touch per Tablet e spiega come si inserisce nel contesto Windows 7. |
+| [Scelta dell'approccio giusto per Windows touch](choosing-the-right-approach-to-windows-touch.md) | Illustra i modi in cui è possibile supportare Windows Touch.                                                  |
+| [Risoluzione dei problemi relativi alle applicazioni](troubleshooting-applications.md)                                 | Offre soluzioni ai problemi comuni.                                                                    |
+| [Windows Input tocco](guide-multi-touch-input.md)                                               | Viene illustrato come Windows i messaggi touch possono essere ricevuti e interpretati.                                   |
+| [Windows Movimenti tocco](guide-multi-touch-gestures.md)                                         | Viene illustrato come aggiungere il supporto Windows movimento tocco alle applicazioni.                                     |
 | [Manipolazione e inerzia](manipulation-and-inertia.md)                                         | Viene illustrato come aggiungere il supporto di manipolazione e inerzia alle applicazioni.                                  |
 
 
@@ -38,7 +38,7 @@ In questa sezione vengono trattati gli argomenti seguenti.
 
 <dl> <dt>
 
-[Windows Touch](windows-touch-portal.md)
+[Windows tocco](windows-touch-portal.md)
 </dt> </dl>
 
  

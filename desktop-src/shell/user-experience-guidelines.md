@@ -1,5 +1,5 @@
 ---
-description: La responsabilità principale di qualsiasi elemento del pannello di controllo consiste nel visualizzare una finestra che consente all'utente di visualizzare e modificare le impostazioni.
+description: La responsabilità principale di qualsiasi Pannello di controllo elemento è visualizzare una finestra che consente all'utente di visualizzare e modificare le impostazioni.
 title: Linee guida sull'esperienza utente
 ms.topic: article
 ms.date: 09/24/2020
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e25f8885c2444a51d5d5d8cc917121c7f3b26a09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15ef54d44a466f3c766075eae771ccac9d74e20c0622d6092530f1015a538425
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104995101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857080"
 ---
 # <a name="user-experience-guidelines"></a>Linee guida sull'esperienza utente
 
-La responsabilità principale di qualsiasi elemento del pannello di controllo consiste nel visualizzare una finestra che consente all'utente di visualizzare e modificare le impostazioni. Vedere le [linee guida sull'esperienza utente dei pannelli di controllo](../uxguide/winenv-ctrl-panels.md) per il comportamento e la progettazione degli elementi del pannello di controllo. Le linee guida descritte in questo argomento mostrano un metodo del flusso di attività per organizzare un elemento del pannello di controllo. Questa operazione inserisce le impostazioni più importanti in un home page. Le impostazioni usate meno di frequente vengono inserite nelle pagine spoke o a cui è possibile accedere dai collegamenti in un riquadro laterale.
+La responsabilità principale di qualsiasi Pannello di controllo elemento è visualizzare una finestra che consente all'utente di visualizzare e modificare le impostazioni. Vedere le [linee guida per l'esperienza utente dei](../uxguide/winenv-ctrl-panels.md) Pannelli di controllo per il comportamento e la progettazione Pannello di controllo elementi. Le linee guida descritte in questo argomento illustrano un metodo del flusso di attività per organizzare un Pannello di controllo elemento. In questo modo, le impostazioni più importanti vengono home page. Le impostazioni usate meno di frequente vengono inserite nelle pagine spoke o a cui si accede dai collegamenti in un riquadro laterale.
 
-Il pannello di controllo include molti elementi che seguono queste linee guida, ad esempio la facilità di accesso al centro e la rete e la condivisione. Gli altri elementi del pannello di controllo usano il formato della finestra delle proprietà della finestra di dialogo a schede come nelle versioni precedenti di Windows. Gli esempi includono l'elemento del mouse e le opzioni Internet. L'utilizzo del formato della finestra delle proprietà deve essere sospeso. Se si creano nuovi elementi del pannello di controllo, è necessario seguire le linee guida per il flusso di attività.
+Il Pannello di controllo include molti elementi che seguono queste linee guida, ad esempio Centro accessibilità e Centro connessioni di rete e condivisione. Altri Pannello di controllo usano il formato della finestra di dialogo a schede come nelle versioni precedenti di Windows. Ad esempio, l'elemento Mouse e Le opzioni Internet. L'uso del formato della finestra delle proprietà deve essere interrotto. Se si creano nuovi elementi Pannello di controllo, è necessario seguire le linee guida del flusso di attività.
 
-In passato, gli elementi del pannello di controllo venivano inclusi in un pacchetto come file con estensione CPL. Non è più necessario. È necessario implementare nuovi elementi del pannello di controllo come file exe autonomo o come opzione di flag della riga di comando per il file eseguibile principale dell'applicazione.
+In passato, Pannello di controllo elementi erano in pacchetto come .cpl file. Questo non è più necessario. I Pannello di controllo devono essere implementati come file .exe autonomo o come opzione flag della riga di comando per il file eseguibile principale dell'applicazione.
 
 > [!Note]  
-> Nei sistemi a 64 bit gli elementi del pannello di controllo a 32 bit vengono visualizzati nel pannello di controllo quando è selezionata l'opzione **Visualizza cartella elementi del pannello di controllo 32-bit** . Gli elementi a 32 bit devono trovarsi nella cartella% SystemRoot% \\ SysWow64 da visualizzare. Non richiedono ulteriori registrazioni.
+> Nei sistemi a 64 bit, gli elementi Pannello di controllo a 32 bit vengono visualizzati nel Pannello di controllo quando è selezionata l'opzione Visualizza Pannello di controllo elementi a **32 bit.** Gli elementi a 32 bit devono trovarsi nella cartella %SystemRoot% \\ SysWOW64 da visualizzare. Non richiedono ulteriori registrazioni.
 
  
 
@@ -33,31 +33,31 @@ In passato, gli elementi del pannello di controllo venivano inclusi in un pacche
 
 <dl> <dt>
 
-[Elementi del pannello di controllo](control-panel-applications.md)
+[Pannello di controllo elementi](control-panel-applications.md)
 </dt> <dt>
 
-[Registrazione degli elementi del pannello di controllo](registering-control-panel-items.md)
+[Registrazione di Pannello di controllo elementi](registering-control-panel-items.md)
 </dt> <dt>
 
 [Uso di CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Elaborazione del messaggio del pannello di controllo](message-processing.md)
+[Pannello di controllo di messaggi](message-processing.md)
 </dt> <dt>
 
-[Esecuzione degli elementi del pannello di controllo](executing-control-panel-items.md)
+[Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estensione degli elementi del pannello di controllo di sistema](extending-system-control-panel-items.md)
+[Estensione degli elementi Pannello di controllo sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Assegnazione delle categorie del pannello di controllo](assigning-control-panel-categories.md)
+[Assegnazione di Pannello di controllo categorie](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Creazione di collegamenti alle attività ricercabili per un elemento del pannello di controllo](creating-searchable-task-links.md)
+[Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Accesso al pannello di controllo in modalità provvisoria](accessing-the-cp-in-safe-mode-under-vista.md)
+[Accesso al Pannello di controllo in modalità Cassaforte predefinita](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

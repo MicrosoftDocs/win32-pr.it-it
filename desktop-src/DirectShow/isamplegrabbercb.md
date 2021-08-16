@@ -1,7 +1,7 @@
 ---
-description: "L'interfaccia ISampleGrabberCB fornisce metodi di callback per il metodo ISampleGrabber:: secallback. Se l'applicazione chiama tale metodo, deve implementare questa interfaccia. Per ulteriori informazioni, vedere ISampleGrabber."
+description: L'interfaccia ISampleGrabberCB fornisce metodi di callback per il metodo ISampleGrabber::SetCallback. Se l'applicazione chiama tale metodo, deve implementare questa interfaccia. Per altre informazioni, vedere ISampleGrabber.
 ms.assetid: 30166d1b-cc37-43c4-8f64-681d8f2013b9
-title: Interfaccia ISampleGrabberCB (qedit. h)
+title: Interfaccia ISampleGrabberCB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,31 +14,31 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5c39d11e6560bc5e50a4c8a9b42a1cbb095b4b71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 822eef97ebd2ff169631f0e4d83cdfe3417388389e112851f5e77dcd7216acfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106326272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817503"
 ---
 # <a name="isamplegrabbercb-interface"></a>Interfaccia ISampleGrabberCB
 
 > [!Note]  
-> \[Deprecato. Questa API può essere rimossa dalle versioni successive di Windows.\]
+> \[Deprecato. Questa API potrebbe essere rimossa dalle versioni future di Windows.\]
 
  
 
-L' `ISampleGrabberCB` interfaccia fornisce metodi di callback per il metodo [**ISampleGrabber:: secallback**](isamplegrabber-setcallback.md) . Se l'applicazione chiama tale metodo, deve implementare questa interfaccia. Per ulteriori informazioni, vedere [**ISampleGrabber**](isamplegrabber.md).
+`ISampleGrabberCB`L'interfaccia fornisce metodi di callback per il metodo [**ISampleGrabber::SetCallback.**](isamplegrabber-setcallback.md) Se l'applicazione chiama tale metodo, deve implementare questa interfaccia. Per altre informazioni, vedere [**ISampleGrabber.**](isamplegrabber.md)
 
 ## <a name="members"></a>Membri
 
-L'interfaccia **ISampleGrabberCB** eredita dall'interfaccia [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **ISampleGrabberCB** dispone anche di questi tipi di membri:
+**L'interfaccia ISampleGrabberCB** eredita dall'interfaccia [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ISampleGrabberCB** include anche questi tipi di membri:
 
 -   [Metodi](#methods)
 
 ### <a name="methods"></a>Metodi
 
-L'interfaccia **ISampleGrabberCB** dispone di questi metodi.
+**L'interfaccia ISampleGrabberCB** include questi metodi.
 
 
 
@@ -54,12 +54,12 @@ L'interfaccia **ISampleGrabberCB** dispone di questi metodi.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Il file di intestazione qedit. h non è compatibile con le intestazioni Direct3D successive alla versione 7.
+> Il file di intestazione Qedit.h non è compatibile con le intestazioni Direct3D successive alla versione 7.
 
  
 
 > [!Note]  
-> Per ottenere qedit. h, scaricare l' [aggiornamento Microsoft Windows SDK per Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h non è disponibile nel Microsoft Windows SDK per Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Per ottenere Qedit.h, scaricare [Microsoft Windows SDK Update per Windows Vista e .NET Framework 3.0.](https://msdn.microsoft.com/windowsvista/bb980924.aspx) Qedit.h non è disponibile in Microsoft Windows SDK per Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -69,8 +69,8 @@ L'interfaccia **ISampleGrabberCB** dispone di questi metodi.
 
 | Requisito | Valore |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Qedit. h</dt> </dl>      |
-| Libreria<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Libreria<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Ritaglio e ridimensionamento di immagini GDI+
-description: La classe Graphics fornisce diversi metodi DrawImage, alcuni dei quali hanno parametri di origine e di destinazione rettangolari che è possibile usare per ritagliare e ridimensionare le immagini.
+title: Ritaglio e ridimensionamento di GDI+ immagini
+description: La classe Graphics fornisce diversi metodi DrawImage, alcuni dei quali hanno parametri del rettangolo di origine e di destinazione che è possibile usare per ritagliare e ridimensionare le immagini.
 ms.assetid: cad64615-d8e6-4c03-a6c7-c98267a8f159
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18c70a7b4f7aa0374602326ab856a01bbadc0047
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d3684089ddab4ba963a79b80aafa67e94f94d988de5aa7d7d9f65ad31e48bcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104987880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118067551"
 ---
-# <a name="cropping-and-scaling-gdi-images"></a>Ritaglio e ridimensionamento di immagini GDI+
+# <a name="cropping-and-scaling-gdi-images"></a>Ritaglio e ridimensionamento di GDI+ immagini
 
-La classe [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) fornisce diversi metodi **DrawImage** , alcuni dei quali hanno parametri di origine e di destinazione rettangolari che è possibile usare per ritagliare e ridimensionare le immagini.
+La [**classe Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) fornisce diversi metodi **DrawImage,** alcuni dei quali hanno parametri del rettangolo di origine e di destinazione che è possibile usare per ritagliare e ridimensionare le immagini.
 
-Nell'esempio seguente viene costruito un oggetto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file Apple.gif. Il codice disegna l'intera immagine Apple nelle dimensioni originali. Il codice chiama quindi il metodo **DrawImage** di un oggetto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per creare una parte dell'immagine Apple in un rettangolo di destinazione più grande dell'immagine Apple originale.
+Nell'esempio seguente viene costruito un [**oggetto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) dal file Apple.gif. Il codice disegna l'intera immagine apple nelle dimensioni originali. Il codice chiama quindi il **metodo DrawImage** di un [**oggetto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) per disegnare una parte dell'immagine apple in un rettangolo di destinazione più grande dell'immagine apple originale.
 
-Il metodo **DrawImage** determina la parte della mela da creare osservando il rettangolo di origine, specificato dal terzo, dal quarto, dal quinto e dal sesto argomento. In questo caso, la mela viene ritagliata al 75% della larghezza e il 75% dell'altezza.
+Il **metodo DrawImage** determina quale parte della apple disegnare esaminando il rettangolo di origine, specificato dal terzo, quarto, quinto e sesto argomento. In questo caso, la apple viene ritagliata al 75% della larghezza e al 75% dell'altezza.
 
-Il metodo **DrawImage** determina la posizione in cui creare la mela ritagliata e la dimensione della mela ritagliata esaminando il rettangolo di destinazione, specificato dal secondo argomento. In questo caso, il rettangolo di destinazione è più grande del 30% e il 30% più alto rispetto all'immagine originale.
+Il **metodo DrawImage** determina la posizione in cui disegnare la apple ritagliata e la sua estensione osservando il rettangolo di destinazione, specificato dal secondo argomento. In questo caso, il rettangolo di destinazione è più ampio del 30% e più alto del 30% rispetto all'immagine originale.
 
 
 ```
@@ -46,9 +46,9 @@ graphics.DrawImage(
 
 
 
-La figura seguente mostra l'Apple originale e l'Apple ritagliata e ridimensionata.
+La figura seguente mostra la apple originale e la apple ritagliata in scala.
 
-![illustrazione che mostra una mela, quindi una parte ingrandita della mela originale](images/cropscale1.png)
+![illustrazione che mostra una apple, quindi una parte ingrandita della apple originale](images/cropscale1.png)
 
  
 

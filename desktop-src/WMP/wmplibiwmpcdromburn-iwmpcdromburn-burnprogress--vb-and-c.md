@@ -1,11 +1,11 @@
 ---
-title: Proprietà burnProgress di IWMPCdromBurn
-description: La proprietà burnProgress ottiene lo stato di avanzamento del CD come percentuale di completamento.
+title: Proprietà IWMPCdrom BurnProgress
+description: La proprietà burnProgress ottiene lo stato di avanzamento della masterizzazione cd come percentuale di completamento.
 ms.assetid: 831cc55d-bd26-4328-a715-1a1fa48d7a40
 keywords:
-- Finestra delle proprietà di burnProgress Media Player
-- Proprietà di burnProgress Media Player Windows, interfaccia IWMPCdromBurn
-- Interfaccia IWMPCdromBurn Windows Media Player, proprietà burnProgress
+- proprietà burnProgress Windows Media Player
+- proprietà burnProgress Windows Media Player, interfaccia IWMPCdromBurn
+- Interfaccia IWMPCdrom Burn Windows Media Player , proprietà burnProgress
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 835c8c1091941437c226427ddb3ef53e8c577b5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90b8e468bc57bb40d990c0b2aeaffc23e184ef2ffa04ab85c9f60cf0d6bced57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106329669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332065"
 ---
-# <a name="iwmpcdromburnburnprogress-property"></a>Proprietà IWMPCdromBurn:: burnProgress
+# <a name="iwmpcdromburnburnprogress-property"></a>Proprietà IWMPCdromBurn::burnProgress
 
-La proprietà **burnProgress** ottiene lo stato di avanzamento del CD come percentuale di completamento.
+La **proprietà burnProgress** ottiene lo stato di avanzamento della masterizzazione cd come percentuale di completamento.
 
 Questa proprietà è di sola lettura.
 
@@ -49,11 +49,11 @@ Public ReadOnly Property burnProgress As System.Int32
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. Int32** che rappresenta il valore di avanzamento. I valori di avanzamento sono compresi tra 0 e 100.
+Oggetto **System.Int32** che rappresenta il valore di stato. I valori di stato sono da 0 a 100.
 
 ## <a name="remarks"></a>Commenti
 
-Il valore di avanzamento rappresenta la percentuale completa dell'intero processo di masterizzazione, incluse le operazioni di gestione temporanea.
+Il valore di stato rappresenta la percentuale completata dell'intero processo di masterizzazione, incluse le operazioni di staging.
 
 ## <a name="requirements"></a>Requisiti
 

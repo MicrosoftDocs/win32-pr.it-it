@@ -1,32 +1,32 @@
 ---
-description: Come accedere alle informazioni di System Management BIOS (SMBIOS) da un'app di Windows universale.
+description: Come accedere alle informazioni DEL BIOS (System Management BIOS) da un'app Windows universali.
 ms.assetid: 4D185319-C093-4B1B-A182-E845E72FEA5D
-title: Accedere alle informazioni di SMBIOS da un'app di Windows universale
+title: Accedere alle informazioni SMBIOS da un'app Windows universale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76791622ad4bcba15ddd889f36a6f0feeb5e3dfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 936d30a653059b3573e962b2e52770aa2bd000180ee0612c1855de3d6a1a9778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104529317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764955"
 ---
-# <a name="access-smbios-information-from-a-universal-windows-app"></a>Accedere alle informazioni di SMBIOS da un'app di Windows universale
+# <a name="access-smbios-information-from-a-universal-windows-app"></a>Accedere alle informazioni SMBIOS da un'app Windows universale
 
-> Si noti Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.
+> [NOTA] Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.
 
-Come accedere alle informazioni di System Management BIOS (SMBIOS) da un'app di Windows universale.
+Come accedere alle informazioni DEL BIOS (System Management BIOS) da un'app Windows universali.
 
-## <a name="access-smbios-information-from-a-universal-windows-platform-app"></a>Accedere alle informazioni di SMBIOS da un'app piattaforma UWP (Universal Windows Platform)
+## <a name="access-smbios-information-from-a-universal-windows-platform-app"></a>Accedere alle informazioni SMBIOS da un'app della Windows universali
 
-A partire da Windows 10, versione 1803, le app di Windows universale possono usare [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) e [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables) per accedere alle informazioni SMBIOS dichiarando la funzionalità limitata **SMBIOS** nel manifesto dell'applicazione.
+A partire da Windows 10, versione 1803, le app Universal Windows possono usare [GetSystemFirmwareTable](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemfirmwaretable) ed [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables) per accedere alle informazioni SMBIOS dichiarando la funzionalità con restrizioni **smbios** nel manifesto dell'app.
 
 > [!IMPORTANT]
-> Solo l'accesso alle tabelle del firmware SMBIOS (RSMB) non elaborate è supportato da un'app di Windows universale. **Accesso \_ a** Se si tenta di accedere ad altri tipi di tabella del firmware da un'app di Windows universale, viene restituito negato.
+> Da un'app Universal Windows è supportato solo l'accesso alle tabelle firmware SMBIOS (RSMB) non elaborati. **ACCESSO \_ DENIED verrà** restituito se si tenta di accedere ad altri tipi di tabella del firmware da un'app Windows universale.
 
  
 
-Per dichiarare la funzionalità con restrizioni **SMBIOS** nel manifesto dell'applicazione, aggiungere lo spazio dei nomi **rescap** e la funzionalità **SMBIOS** come indicato di seguito:
+Per dichiarare la **funzionalità smbios** con restrizioni nel manifesto dell'app, aggiungere lo spazio dei nomi **rescap** e la funzionalità **smbios** come indicato di seguito:
 
 ``` syntax
 <Package
@@ -53,7 +53,7 @@ Per dichiarare la funzionalità con restrizioni **SMBIOS** nel manifesto dell'ap
 [EnumSystemFirmwareTables](/windows/win32/api/sysinfoapi/nf-sysinfoapi-enumsystemfirmwaretables)
 </dt> <dt>
 
-[Accedere alle variabili del firmware UEFI da un'app di Windows universale](access-uefi-firmware-variables-from-a-universal-windows-app.md)
+[Accedere alle variabili del firmware UEFI da un'app Windows universale](access-uefi-firmware-variables-from-a-universal-windows-app.md)
 </dt> </dl>
 
  

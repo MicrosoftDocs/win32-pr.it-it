@@ -1,7 +1,7 @@
 ---
-description: Definisce la lunghezza della chiave da utilizzare nella crittografia.
+description: Definisce la lunghezza della chiave da usare nella crittografia.
 ms.assetid: a91e75db-f81e-4908-b795-34be7a1c242d
-title: Enumerazione CAPICOM_ENCRYPTION_KEY_LENGTH (CAPICOM. h)
+title: CAPICOM_ENCRYPTION_KEY_LENGTH enumerazione (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 4f3e64df1e706ef20a83f4da5c81cda2a08ed331
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2957bd644fdf405fec7e82a487bf83af2cbae35ae305f10b9b168628a30b0749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106333568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772476"
 ---
-# <a name="capicom_encryption_key_length-enumeration"></a>\_Enumerazione della lunghezza della chiave di crittografia CAPICOM \_ \_
+# <a name="capicom_encryption_key_length-enumeration"></a>Enumerazione CAPICOM \_ ENCRYPTION \_ KEY \_ LENGTH
 
-Il tipo di enumerazione della **lunghezza della \_ chiave di crittografia \_ \_ CAPICOM** definisce la [*lunghezza della chiave*](../secgloss/k-gly.md) da usare nella crittografia.
+Il **tipo di enumerazione CAPICOM ENCRYPTION KEY \_ \_ \_ LENGTH** definisce la [*lunghezza della*](../secgloss/k-gly.md) chiave da usare nella crittografia.
 
 ## <a name="members"></a>Membri
 
@@ -30,18 +30,18 @@ Il tipo di enumerazione della **lunghezza della \_ chiave di crittografia \_ \_ 
 
 | Membro                                          | Descrizione                                                                               | Valore     |
 |-------------------------------------------------|-------------------------------------------------------------------------------------------|-----------|
-| **\_lunghezza della chiave di crittografia CAPICOM \_ \_ \_ massima**   | Usa la lunghezza massima della chiave disponibile con l'algoritmo di crittografia indicato.<br/> | 0         |
-| **\_Lunghezza della chiave di crittografia capicom \_ \_ \_ 40 \_ bit**  | USA chiavi a 40 bit.<br/>                                                              | 1         |
-| **\_Lunghezza della chiave di crittografia capicom \_ \_ \_ 56 \_ bit**  | USA chiavi a 56 bit se disponibili.<br/>                                                 | 2         |
-| **\_Lunghezza della chiave di crittografia capicom \_ \_ \_ 128 \_ bit** | USA chiavi a 128 bit se disponibili.<br/>                                                | 3         |
-| **\_Lunghezza della chiave di crittografia capicom \_ \_ \_ 192 \_ bit** | USA chiavi a 192 bit. Questa lunghezza della chiave è disponibile solo per AES.<br/>                  | 4//v 2.0 |
-| **\_Lunghezza della chiave di crittografia capicom \_ \_ \_ 256 \_ bit** | USA chiavi a 256 bit. Questa lunghezza della chiave è disponibile solo per AES.<br/>                  | 5//v 2.0 |
+| **LUNGHEZZA MASSIMA \_ DELLA CHIAVE DI CRITTOGRAFIA \_ \_ \_ CAPICOM**   | Usa la lunghezza massima della chiave disponibile con l'algoritmo di crittografia indicato.<br/> | 0         |
+| **LUNGHEZZA CHIAVE DI CRITTOGRAFIA CAPICOM \_ \_ \_ \_ 40 \_ BIT**  | Usa chiavi a 40 bit.<br/>                                                              | 1         |
+| **LUNGHEZZA CHIAVE DI CRITTOGRAFIA CAPICOM \_ \_ \_ \_ 56 \_ BIT**  | Usa chiavi a 56 bit, se disponibili.<br/>                                                 | 2         |
+| **LUNGHEZZA CHIAVE DI CRITTOGRAFIA CAPICOM \_ \_ \_ \_ 128 \_ BIT** | Usa chiavi a 128 bit, se disponibili.<br/>                                                | 3         |
+| **LUNGHEZZA CHIAVE DI CRITTOGRAFIA CAPICOM \_ \_ \_ \_ 192 \_ BIT** | Usa chiavi a 192 bit. Questa lunghezza della chiave è disponibile solo per AES.<br/>                  | 4 // v2.0 |
+| **LUNGHEZZA CHIAVE DI CRITTOGRAFIA CAPICOM \_ \_ \_ \_ 256 \_ BIT** | Usa chiavi a 256 bit. Questa lunghezza della chiave è disponibile solo per AES.<br/>                  | 5 // v2.0 |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Il tipo di enumerazione della lunghezza della chiave di crittografia CAPICOM viene usato dalla proprietà [**Algorithm.**](algorithm-keylength.md) **\_ \_ Key \_** length.
+Il **tipo di enumerazione CAPICOM ENCRYPTION KEY \_ \_ \_ LENGTH** viene usato dalla [**proprietà Algorithm.KeyLength.**](algorithm-keylength.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,8 +49,8 @@ Il tipo di enumerazione della lunghezza della chiave di crittografia CAPICOM vie
 
 | Requisito | Valore |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
-| Intestazione<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                |
+| Intestazione<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

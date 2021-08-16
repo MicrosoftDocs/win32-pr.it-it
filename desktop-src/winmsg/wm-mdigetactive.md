@@ -1,19 +1,19 @@
 ---
-description: Un'applicazione invia il \_ messaggio WM MDIGETACTIVE a una finestra del client di interfaccia a documenti multipli (MDI) per recuperare l'handle per la finestra figlio MDI attiva.
+description: Un'applicazione invia il messaggio WM MDIGETACTIVE a una finestra \_ client MDI (Multiple-Document Interface) per recuperare l'handle per la finestra figlio MDI attiva.
 ms.assetid: 3ee445be-dd55-4825-8508-fa18a346ffcd
-title: Messaggio WM_MDIGETACTIVE (winuser. h)
+title: WM_MDIGETACTIVE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c49f4ec321f526cd4c9766555e2361ef2cfbd040
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7716138028f7fe7447cc89d8feded7806f4f8757cd4a18b4bef6f2d812de3f17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200141"
 ---
-# <a name="wm_mdigetactive-message"></a>\_Messaggio MDIGETACTIVE WM
+# <a name="wm_mdigetactive-message"></a>Messaggio \_ DI WM MDIGETACTIVE
 
-Un'applicazione invia il messaggio **WM \_ MDIGETACTIVE** a una finestra del client di interfaccia a documenti multipli (MDI) per recuperare l'handle per la finestra figlio MDI attiva.
+Un'applicazione invia il messaggio **\_ WM MDIGETACTIVE** a una finestra client MDI (Multiple-Document Interface) per recuperare l'handle per la finestra figlio MDI attiva.
 
 
 ```C++
@@ -36,7 +36,7 @@ Questo parametro non viene usato.
 *lParam* 
 </dt> <dd>
 
-Stato ingrandito. Se questo parametro non è **null**, è un puntatore a un valore che indica lo stato ingrandito della finestra figlio MDI. Se il valore è **true**, la finestra è ingrandita; il valore **false** indica che non lo è. Se questo parametro è **null**, il parametro viene ignorato.
+Stato ingrandito. Se questo parametro non è **NULL,** è un puntatore a un valore che indica lo stato ingrandito della finestra figlio MDI. Se il valore è **TRUE,** la finestra viene ingrandita; il valore **FALSE** indica che non lo è. Se questo parametro è **NULL,** il parametro viene ignorato.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Il valore restituito è l'handle per la finestra figlio MDI attiva.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Il valore restituito è l'handle per la finestra figlio MDI attiva.
 
 <dl> <dt>
 
-[Panoramica dell'interfaccia a più documenti](multiple-document-interface.md)
+[Panoramica dell'interfaccia a documenti multipli](multiple-document-interface.md)
 </dt> </dl>
 
  

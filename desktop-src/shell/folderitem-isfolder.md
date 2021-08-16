@@ -1,7 +1,7 @@
 ---
 description: Indica se l'elemento è una cartella.
 ms.assetid: fb080c8f-04b1-4f9a-9219-0951a2e950ea
-title: Proprietà FolderItem. Directory (shldisp. h)
+title: Proprietà FolderItem.IsFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9bf0bd4eb9b7964620fe705d6e8f4d10644ca234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d104d33e843d46cc63a0a960afa3d36b56ddbd28b5a563f8973ee957d82da87e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104977055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118223985"
 ---
-# <a name="folderitemisfolder-property"></a>Proprietà FolderItem. IsSynchronized
+# <a name="folderitemisfolder-property"></a>FolderItem.IsFolder - proprietà
 
 Indica se l'elemento è una cartella.
 
@@ -37,13 +37,13 @@ bIsFolder = FolderItem.IsFolder
 
 ## <a name="property-value"></a>Valore proprietà
 
-**Valore booleano** che riceve **true** se l'elemento è una cartella o **false** in caso contrario.
+Valore **booleano** che riceve **true se** l'elemento è una cartella o false **in** caso contrario.
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio seguente viene utilizzata la **cartella** per determinare se la directory di Windows è una cartella. L'utilizzo corretto viene visualizzato per JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene **utilizzato IsFolder** per determinare se Windows directory è una cartella. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Elemento DeleteExpiredTaskAfter (settingsType)
 description: Specifica la quantità di tempo di attesa del Utilità di pianificazione prima di eliminare l'attività dopo la scadenza.
 ms.assetid: 947a2fec-ceda-4726-aa1a-26fd1b258c1f
 keywords:
-- Utilità di pianificazione elemento DeleteExpiredTaskAfter
+- Elemento DeleteExpiredTaskAfter Utilità di pianificazione
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cee7cfc48f62b58caf63125404fb07209b399fc1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4f491d857eb4ca0fde629b780f22a7795b79f593f94332fb923003520cec706
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "106301338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357210"
 ---
 # <a name="deleteexpiredtaskafter-settingstype-element"></a>Elemento DeleteExpiredTaskAfter (settingsType)
 
-Specifica la quantità di tempo di attesa del Utilità di pianificazione prima di eliminare l'attività dopo la scadenza. Se per questo elemento non viene specificato alcun valore, il servizio Utilità di pianificazione non eliminerà l'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni,' t'è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per ulteriori informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
+Specifica la quantità di tempo di attesa del Utilità di pianificazione prima di eliminare l'attività dopo la scadenza. Se non viene specificato alcun valore per questo elemento, il Utilità di pianificazione non eliminerà l'attività. Il formato di questa stringa è PnYnMnDTnHnMnS, dove nY è il numero di anni, nM è il numero di mesi, nD è il numero di giorni, 'T' è il separatore di data/ora, nH è il numero di ore, nM è il numero di minuti e nS è il numero di secondi (ad esempio, PT5M specifica 5 minuti e P1M4DT2H5M specifica un mese, quattro giorni, due ore e cinque minuti). Per altre informazioni sul tipo di durata, vedere <https://go.microsoft.com/fwlink/p/?linkid=106886> .
 
 ``` syntax
 <xs:element name="DeleteExpiredTaskAfter"
@@ -32,7 +32,7 @@ Specifica la quantità di tempo di attesa del Utilità di pianificazione prima d
  />
 ```
 
-L'elemento **DeleteExpiredTaskAfter** è definito dal tipo complesso [**settingsType**](taskschedulerschema-settingstype-complextype.md) .
+**L'elemento DeleteExpiredTaskAfter** è definito dal tipo [**complesso settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -46,13 +46,13 @@ L'elemento **DeleteExpiredTaskAfter** è definito dal tipo complesso [**settings
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo in C++, vedere [**la proprietà DeleteExpiredTaskAfter di ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_deleteexpiredtaskafter).
+Per lo sviluppo in C++, [**vedere DeleteExpiredTaskAfter Property of ITaskSettings ( Proprietà DeleteExpiredTaskAfter di ITaskSettings).**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_deleteexpiredtaskafter)
 
-Per lo sviluppo di script, vedere [**TaskSettings. DeleteExpiredTaskAfter**](tasksettings-deleteexpiredtaskafter.md).
+Per lo sviluppo di script, [**vedere TaskSettings.DeleteExpiredTaskAfter.**](tasksettings-deleteexpiredtaskafter.md)
 
 ## <a name="examples"></a>Esempio
 
-Nel codice XML seguente viene definito un elemento Settings che elimina un'attività scaduta dopo una settimana.
+Nel codice XML seguente viene definito un elemento settings che elimina un'attività scaduta dopo una settimana.
 
 
 ```XML
@@ -69,8 +69,8 @@ Nel codice XML seguente viene definito un elemento Settings che elimina un'attiv
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Nel codice XML seguente viene definito un elemento Settings che elimina un'attiv
 
 <dl> <dt>
 
-[Elementi dello schema Utilità di pianificazione](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  
