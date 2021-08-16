@@ -1,6 +1,6 @@
 ---
 title: Interfaccia IWMVideoDecoderHurryup (Wmcodecdsp.h)
-description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec audio e video multimediali e DSP). | Interfaccia IWMVideoDecoderHurryup (Wmcodecdsp.h)
+description: Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media Audio and Video Codec and DSP APIs (Codec video e audio multimediale e API DSP). | Interfaccia IWMVideoDecoderHurryup (Wmcodecdsp.h)
 ms.assetid: 15206194-f49c-444c-858c-20c0a82ead37
 keywords:
 - Formato multimediale windows dell'interfaccia IWMVideoDecoderHurryup
@@ -23,7 +23,7 @@ ms.locfileid: "118700797"
 ---
 # <a name="iwmvideodecoderhurryup-interface"></a>Interfaccia IWMVideoDecoderHurryup
 
-Per la documentazione corrente Windows codec multimediali e processori di segnale digitale, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
+Per la documentazione corrente Windows codec multimediali e processori di segnali digitali, vedere Windows Media [Audio and Video Codec and DSP APIs](/previous-versions//dd464626(v=vs.85)) (Codec audio e video multimediali e DSP).
 
 ## <a name="requirements"></a>Requisiti
 

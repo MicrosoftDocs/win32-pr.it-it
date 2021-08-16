@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: campo Windows7Param. EnableDbScanInRecovery'
-title: Campo Windows7Param. EnableDbScanInRecovery (Microsoft. ISAM. esent. Interop. Windows7)
+description: 'Altre informazioni su: Campo Windows7Param.EnableDbScanInRecovery'
+title: Campo Windows7Param.EnableDbScanInRecovery (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: EnableDbScanInRecovery field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Param.EnableDbScanInRecovery
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7param.enabledbscaninrecovery(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa04ac765e44deb1b624f4adede2d2c3610bf64a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d971b6848f757503c28430dcc92ff8d398e3156eda54068cbea4da13da9e21b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967041"
 ---
-# <a name="windows7paramenabledbscaninrecovery-field"></a>Campo Windows7Param. EnableDbScanInRecovery
+# <a name="windows7paramenabledbscaninrecovery-field"></a>Campo Windows7Param.EnableDbScanInRecovery
 
-Abilitare la manutenzione del database durante il ripristino.
+Abilitare Manutenzione database durante il ripristino.
 
-**Spazio dei nomi:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. esent. Interop (in Microsoft.Isam.Esent.Interop.dll)
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -61,4 +61,4 @@ public const JET_param EnableDbScanInRecovery
 
 [Membri di Windows7Param](./windows7param-members.md)
 
-[Spazio dei nomi Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Spazio dei nomi Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

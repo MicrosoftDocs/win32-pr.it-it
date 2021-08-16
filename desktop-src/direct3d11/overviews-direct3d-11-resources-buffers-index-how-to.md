@@ -1,30 +1,30 @@
 ---
 title: Come creare un buffer di indice
-description: In questo argomento viene illustrato come inizializzare un buffer di indice in preparazione per il rendering.
+description: Questo argomento illustra come inizializzare un index buffer in preparazione per il rendering.
 ms.assetid: 4b33d32a-27fd-4652-87ac-3b7268881f89
 keywords:
-- buffer di indice, creazione
+- index buffer, creazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c4c99639748876a5f5fd84e546aaf299885c76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d474114e5908a42a112dddd550e24c13e5e1d3bf2cec523d47dfe1d617ac0bf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104221748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119501"
 ---
-# <a name="how-to-create-an-index-buffer"></a>Procedura: creare un buffer di indice
+# <a name="how-to-create-an-index-buffer"></a>Procedura: Creare un buffer di indice
 
-I [buffer di indice](overviews-direct3d-11-resources-buffers-intro.md) contengono dati di indice. In questo argomento viene illustrato come inizializzare un [buffer di indice](overviews-direct3d-11-resources-buffers-intro.md) in preparazione per il rendering.
+[I buffer di indice](overviews-direct3d-11-resources-buffers-intro.md) contengono dati di indice. Questo argomento illustra come inizializzare un [index buffer](overviews-direct3d-11-resources-buffers-intro.md) in preparazione per il rendering.
 
-**Per inizializzare un buffer di indice**
+**Per inizializzare un index buffer**
 
-1.  Creare un buffer che contiene le informazioni sugli indici.
-2.  Creare una descrizione del buffer compilando una struttura [**d3d11 \_ buffer \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) . Passare il \_ \_ flag buffer index d3d11 binding \_ al membro **BindFlags** e passare la dimensione del buffer in byte al membro **ByteWidth** .
-3.  Creare una descrizione dei dati della sottorisorsa compilando una struttura di [**\_ \_ dati della sottorisorsa d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) . Il membro **pSysMem** deve puntare direttamente ai dati dell'indice creati nel passaggio 1.
-4.  Chiamare [**ID3D11Device:: CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) passando la struttura [**\_ \_ Desc del buffer D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) , la [**struttura \_ \_ dei dati della sottorisorsa d3d11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) e l'indirizzo di un puntatore all'interfaccia [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) da inizializzare.
+1.  Creare un buffer contenente le informazioni sull'indice.
+2.  Creare una descrizione del buffer compilando una [**struttura D3D11 \_ BUFFER \_ DESC.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) Passare il flag D3D11 BIND INDEX BUFFER al membro \_ \_ \_ **BindFlags** e passare le dimensioni del buffer in byte al **membro ByteWidth.**
+3.  Creare una descrizione dei dati della sottorisorsa compilando una [**struttura D3D11 \_ SUBRESOURCE \_ DATA.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) Il **membro pSysMem** deve puntare direttamente ai dati dell'indice creati nel primo passaggio.
+4.  Chiamare [**ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) passando la struttura [**D3D11 \_ BUFFER \_ DESC,**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_buffer_desc) la struttura [**D3D11 \_ SUBRESOURCE \_ DATA**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_subresource_data) e l'indirizzo di un puntatore all'interfaccia [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer) da inizializzare.
 
-Nell'esempio di codice riportato di seguito viene illustrato come creare un buffer di indice. Questo esempio presuppone che
+Nell'esempio di codice seguente viene illustrato come creare un index buffer. Questo esempio presuppone che
 
 
 ```
@@ -33,7 +33,7 @@ g_pd3dDevice
 
 
 
-è un oggetto [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) valido e
+è un [**oggetto ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) valido e
 
 
 ```
@@ -42,7 +42,7 @@ g_pd3dContext
 
 
 
-è un oggetto [**sul ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) valido.
+è un [**oggetto ID3D11DeviceContext**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext) valido.
 
 
 ```
@@ -87,9 +87,9 @@ g_pd3dContext->IASetIndexBuffer( g_pIndexBuffer, DXGI_FORMAT_R32_UINT, 0 );
 [Come usare Direct3D 11](how-to-use-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

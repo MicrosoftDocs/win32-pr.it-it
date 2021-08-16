@@ -51,9 +51,9 @@ ms.locfileid: "118626809"
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IRecordList è definito come \_ 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID \_ IRecordList è definito come 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
 
 
 
@@ -64,7 +64,7 @@ ms.locfileid: "118626809"
 [**Registra**](record-object.md)
 </dt> <dt>
 
-[Windows Esempi di scripting del programma di installazione](windows-installer-scripting-examples.md)
+[Windows Esempi di script del programma di installazione](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

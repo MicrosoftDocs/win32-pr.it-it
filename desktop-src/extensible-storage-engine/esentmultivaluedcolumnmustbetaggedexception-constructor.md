@@ -1,5 +1,5 @@
 ---
-description: Altre informazioni sul costruttore EsentMultiValuedColumnMustBeTaggedException
+description: 'Altre informazioni su: Costruttore EsentMultiValuedColumnMustBeTaggedException'
 title: Costruttore EsentMultiValuedColumnMustBeTaggedException
 TOCTitle: 'EsentMultiValuedColumnMustBeTaggedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMultiValuedColumnMustBeTaggedException.#ctor
@@ -35,7 +35,7 @@ ms.locfileid: "118775573"
 
 Inizializza una nuova istanza della classe EsentMultiValuedColumnMustBeTaggedException.
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi

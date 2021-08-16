@@ -1,7 +1,7 @@
 ---
 description: Specifica un BLOB da firmare.
 ms.assetid: 214c9c05-5c95-4803-8993-23a87266f991
-title: Struttura SIGNER_BLOB_INFO
+title: SIGNER_BLOB_INFO struttura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,21 +12,21 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a05e99cc4d7fa2eff196159bb449fa7dbfbf3026
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a865a65b5fd9a1ec658dcc86b1eb2b3dd255804308f04bebf4fffdb0650d71e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104530289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898928"
 ---
-# <a name="signer_blob_info-structure"></a>Struttura di \_ informazioni BLOB del firmatario \_
+# <a name="signer_blob_info-structure"></a>Struttura SIGNER \_ BLOB \_ INFO
 
-\[La struttura delle **\_ \_ informazioni BLOB del firmatario** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile.\]
+\[La **struttura SIGNER \_ BLOB \_ INFO** è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile.\]
 
-La struttura di **\_ \_ informazioni BLOB del firmatario** specifica un [*BLOB*](../secgloss/b-gly.md) da firmare.
+La **struttura SIGNER \_ BLOB \_ INFO** specifica un [*BLOB*](../secgloss/b-gly.md) da firmare.
 
 > [!Note]  
-> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla come illustrato in questo argomento.
+> Questa struttura non è definita in alcun file di intestazione. Per usare questa struttura, è necessario definirla manualmente come illustrato in questo argomento.
 
  
 
@@ -52,14 +52,14 @@ typedef struct _SIGNER_BLOB_INFO {
 **cbSize**
 </dt> <dd>
 
-Dimensione, in byte, della struttura.
+Dimensione, in byte, della struttura .
 
 </dd> <dt>
 
 **pGuidSubject**
 </dt> <dd>
 
-Puntatore a un **GUID** che specifica il SIP (Subject Interface Package) da caricare.
+Puntatore a un **GUID** che specifica il pacchetto DELL (Subject Interface Package) da caricare.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Puntatore al BLOB da firmare.
 **pwszDisplayName**
 </dt> <dd>
 
-Nome visualizzato del BLOB. Questo membro può essere impostato su **null**.
+Nome visualizzato del BLOB. Questo membro può essere impostato su **NULL.**
 
 </dd> </dl>
 
@@ -90,8 +90,8 @@ Nome visualizzato del BLOB. Questo membro può essere impostato su **null**.
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>          |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>          |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
 
 
 
@@ -99,7 +99,7 @@ Nome visualizzato del BLOB. Questo membro può essere impostato su **null**.
 
 <dl> <dt>
 
-[**informazioni sul soggetto del FIRMATARIo \_ \_**](signer-subject-info.md)
+[**INFORMAZIONI SUL \_ SOGGETTO DEL \_ FIRMATARIO**](signer-subject-info.md)
 </dt> </dl>
 
  

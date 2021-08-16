@@ -1,7 +1,7 @@
 ---
-description: Ottiene la modalità di disegno di riga in stile OpenGL.
+description: Ottiene la modalità di disegno linea in stile OpenGL.
 ms.assetid: 80b33c05-d081-45f3-83d8-71a3555cc8ef
-title: 'Metodo ID3DXLine:: GetGLLines (D3dx9core. h)'
+title: Metodo ID3DXLine::GetGLLines (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: fe521b743dab6c9c4922014ff82785d303f83f7e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 32a697dfe0292df3d4866551c2c65f4dd4cab4beeac82a9447b57cff4b11d4b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104235217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675241"
 ---
-# <a name="id3dxlinegetgllines-method"></a>Metodo ID3DXLine:: GetGLLines
+# <a name="id3dxlinegetgllines-method"></a>Metodo ID3DXLine::GetGLLines
 
-Ottiene la modalità di disegno di riga in stile OpenGL.
+Ottiene la modalità di disegno linea in stile OpenGL.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -40,9 +40,9 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Restituisce **true** se le linee di tipo OpenGL sono abilitate e **false** se sono abilitate le righe di tipo Direct3D.
+Restituisce **TRUE** se le linee in stile OpenGL sono abilitate e **FALSE** se sono abilitate le linee in stile Direct3D.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -50,8 +50,8 @@ Restituisce **true** se le linee di tipo OpenGL sono abilitate e **false** se so
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

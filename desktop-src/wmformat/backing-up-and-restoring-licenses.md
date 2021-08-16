@@ -1,73 +1,73 @@
 ---
-title: Backup e ripristino di licenze
-description: Backup e ripristino di licenze
+title: Backup e ripristino delle licenze
+description: Backup e ripristino delle licenze
 ms.assetid: 59be02fe-f207-4161-8765-9a88a8050248
 keywords:
 - Windows Media Format SDK, backup delle licenze
-- Windows Media Format SDK, ripristino di licenze
+- Windows Media Format SDK, ripristino delle licenze
 - Windows Media Format SDK, backup e ripristino delle licenze
-- ASF (Advanced Systems Format), backup di licenze
+- Advanced Systems Format (ASF), backup delle licenze
 - ASF (Advanced Systems Format), backup delle licenze
-- ASF (Advanced Systems Format), ripristino di licenze
-- ASF (Advanced Systems Format), ripristino di licenze
+- Advanced Systems Format (ASF), ripristino delle licenze
+- ASF (Advanced Systems Format), ripristino delle licenze
+- Advanced Systems Format (ASF), backup e ripristino delle licenze
 - ASF (Advanced Systems Format), backup e ripristino delle licenze
-- ASF (Advanced Systems Format), backup e ripristino delle licenze
-- Digital Rights Management (DRM), backup delle licenze
-- DRM (Digital Rights Management), backup delle licenze
-- Digital Rights Management (DRM), ripristino di licenze
-- DRM (Digital Rights Management), ripristino di licenze
-- Digital Rights Management (DRM), backup e ripristino delle licenze
-- DRM (Digital Rights Management), backup e ripristino delle licenze
+- digital rights management (DRM), backup delle licenze
+- DRM (digital rights management), backup delle licenze
+- digital rights management (DRM), ripristino delle licenze
+- DRM (digital rights management), ripristino delle licenze
+- digital rights management (DRM), backup e ripristino delle licenze
+- DRM (digital rights management), backup e ripristino delle licenze
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d10d8e76c191225288a1021e08e4c77e7e14f3c6
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 378a41d975e8f19d38c637d585759d0038f5b86550769ae49d6a6490844f223e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103723527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028139"
 ---
-# <a name="backing-up-and-restoring-licenses"></a>Backup e ripristino di licenze
+# <a name="backing-up-and-restoring-licenses"></a>Backup e ripristino delle licenze
 
-I processi di backup e ripristino sono asincroni. Vengono attivati quando l'utente seleziona un comando di menu o un'opzione nell'applicazione per eseguire il backup o il ripristino delle licenze. È necessario consentire all'utente di specificare i percorsi in cui deve essere eseguito il backup e il ripristino delle licenze.
+I processi di backup e ripristino sono asincroni. Vengono attivati quando l'utente seleziona un comando di menu o un'opzione nell'applicazione per eseguire il backup o il ripristino delle licenze. È necessario consentire all'utente di specificare i percorsi in cui è necessario eseguire il backup e il ripristino delle licenze.
 
 Per eseguire il backup delle licenze:
 
-1.  Utilizzare la funzione [**WMCreateBackupRestorer**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatebackuprestorer) per creare l'oggetto di ripristino di backup.
-2.  Chiamare il metodo [**IWMBackupRestoreProps:: seprop**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) per impostare il percorso di backup, ovvero il percorso in cui si scriveranno i file, ad esempio: \\ o D: \\ licenses.
-3.  Chiamare il metodo [**IWMLicenseBackup:: BackupLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicensebackup-backuplicenses) per eseguire il backup delle licenze nel percorso specificato.
+1.  Usare la [**funzione WMCreateBackupRestorer**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatebackuprestorer) per creare l'oggetto di ripristino del backup.
+2.  Chiamare il [**metodo IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) per impostare il percorso di backup ,ovvero il percorso in cui si scriveranno i file, ad esempio A: \\ o D: \\ Licenses.
+3.  Chiamare il [**metodo IWMLicenseBackup::BackupLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicensebackup-backuplicenses) per eseguire il backup delle licenze nel percorso specificato.
 
-Al metodo [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) vengono inviati gli eventi seguenti:
+Gli eventi seguenti vengono inviati al [**metodo IWMStatusCallback::OnStatus:**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus)
 
--   **WMT \_ BACKUPRESTORE \_ Begin** indica che il processo di backup è stato avviato.
--   **WMT \_ BACKUPRESTORE \_ end** indica che il processo di backup è stato completato.
--   **WMT \_ \_Licenza limitata** indica che non è possibile eseguire il backup di una o più licenze perché il diritto non è consentito dal proprietario del contenuto.
+-   **WMT \_ BACKUPRESTORE \_ BEGIN** indica che il processo di backup è stato avviato.
+-   **WMT \_ BACKUPRESTORE \_ END** indica che il processo di backup è stato completato.
+-   **WMT \_ RESTRICTED \_ LICENSE** indica che non è possibile eseguire il backup di una o più licenze perché il diritto non è consentito dal proprietario del contenuto.
 
-L'ID chiave è incluso anche in questo messaggio. Se è stato implementato un database per i file protetti che includono l'ID e i metadati della chiave, è possibile visualizzare un messaggio all'utente con il titolo specifico, ad esempio il titolo di un brano, per il quale non è possibile eseguire il backup della licenza. In caso contrario, il messaggio deve essere generico e informare l'utente che non è possibile eseguire il backup di alcune licenze.
+Anche l'ID chiave è incluso in questo messaggio. Se è stato implementato un database per i file protetti che include l'ID chiave e i metadati, è possibile visualizzare un messaggio all'utente con il titolo specifico (ad esempio un titolo di brano) per cui non è possibile eseguire il backup della licenza. In caso contrario, il messaggio deve essere generico e informare l'utente che non è possibile eseguire il backup di alcune licenze.
 
 Per ripristinare le licenze:
 
-1.  Utilizzare la funzione **WMCreateBackupRestorer** per creare l'oggetto di ripristino di backup.
-2.  Chiamare il metodo **IWMBackupRestoreProps:: seprop** per impostare il percorso di ripristino sul percorso in cui viene eseguito il backup delle licenze.
-3.  Chiamare il metodo [**IWMLicenseRestore:: RestoreLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicenserestore-restorelicenses) per ripristinare le licenze da tale percorso.
+1.  Usare la **funzione WMCreateBackupRestorer** per creare l'oggetto di ripristino del backup.
+2.  Chiamare il **metodo IWMBackupRestoreProps::SetProp** per impostare il percorso di ripristino nel percorso in cui viene eseguito il backup delle licenze.
+3.  Chiamare il [**metodo IWMLicenseRestore::RestoreLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicenserestore-restorelicenses) per ripristinare le licenze da tale posizione.
 
-Al metodo [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) vengono inviati gli eventi seguenti:
+Gli eventi seguenti vengono inviati al [**metodo IWMStatusCallback::OnStatus:**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus)
 
--   **WMT \_ La \_ connessione BACKUPRESTORE** indica che l'applicazione sta effettuando la connessione al servizio di gestione delle licenze.
--   **WMT \_ La \_ disconnessione di BACKUPRESTORE** indica che l'applicazione è in stato di disconnessione dal servizio di gestione delle licenze.
--   **WMT \_ BACKUPRESTORE \_ Begin** indica che il processo di ripristino è stato avviato.
--   **WMT \_ BACKUPRESTORE \_ end** indica che il processo di ripristino è stato completato.
+-   **WMT \_ BACKUPRESTORE \_ CONNECTING** indica che l'applicazione si connette al servizio di gestione delle licenze.
+-   **WMT \_ BACKUPRESTORE \_ DISCONNECTING** indica che l'applicazione si sta disconnettendo dal Servizio gestione licenze.
+-   **WMT \_ BACKUPRESTORE \_ BEGIN** indica che il processo di ripristino è stato avviato.
+-   **WMT \_ BACKUPRESTORE \_ END** indica che il processo di ripristino è stato completato.
 
 > [!Note]  
-> Il DRM non è supportato dalla versione basata su x64 di questo SDK.
+> DRM non è supportato dalla versione basata su x64 di questo SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Funzionalità di Rights Management digitali**](digital-rights-management-features.md)
+[**Funzionalità Rights Management digitali**](digital-rights-management-features.md)
 </dt> <dt>
 
 [**Interfaccia IWMBackupRestoreProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmbackuprestoreprops)
@@ -79,9 +79,9 @@ Al metodo [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/
 [**Interfaccia IWMLicenseRestore**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmlicenserestore)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Classe del programma usato dalla fotocamera per impostare l'esposizione.
+description: Classe del programma utilizzato dalla fotocamera per impostare l'esposizione.
 ms.assetid: 81fbd968-935a-4600-9346-9c14d1eb3f12
 title: System.Photo.ProgramMode
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118723661"
 ---
 # <a name="systemphotoprogrammode"></a>System.Photo.ProgramMode
 
-Classe del programma usato dalla fotocamera per impostare l'esposizione.
+Classe del programma utilizzato dalla fotocamera per impostare l'esposizione.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -138,7 +138,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[proprietàDescrizione](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -168,7 +168,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[DrawControl](./propdesc-schema-drawcontrol.md)
+[drawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

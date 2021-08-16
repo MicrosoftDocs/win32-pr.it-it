@@ -1,21 +1,21 @@
 ---
-description: Specifica se la modalità Alpha per i tipi di video dei supporti colori è premoltiplicata o diritta.
+description: Specifica se la modalità alfa per i tipi di video multimediali a colori è premoltimulata o retta.
 ms.assetid: A263C3F7-357B-426D-B38C-533F9F6A1262
-title: Attributo MF_MT_ALPHA_MODE (Mfapi. h)
+title: MF_MT_ALPHA_MODE attributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b81da14bc0a9e089a5af4815e5bf97359a9cb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c658cae64c68aa89c49230164707d75369c021767c6aa0b46818516ffa26513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104050095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035319"
 ---
-# <a name="mf_mt_alpha_mode-attribute"></a>\_ \_ Attributo modalità MF mt Alpha \_
+# <a name="mf_mt_alpha_mode-attribute"></a>Attributo \_ MF MT \_ ALPHA \_ MODE
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano prodotti pre-rilasciati che possono essere modificati in modo sostanziale prima che venga rilasciato commercialmente. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-Specifica se la modalità Alpha per i tipi di video dei supporti colori è premoltiplicata o diritta.
+Specifica se la modalità alfa per i tipi di video multimediali a colori è premoltimulata o retta.
 
 ## <a name="data-type"></a>Tipo di dati
 
@@ -23,7 +23,7 @@ Specifica se la modalità Alpha per i tipi di video dei supporti colori è premo
 
 ## <a name="remarks"></a>Commenti
 
-È possibile eseguire il cast di questo valore in un valore in [**\_ \_ modalità DXGI Alpha**](/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_alpha_mode) . Se questo attributo non è presente, per compatibilità con le versioni precedenti, il valore è **DXGI \_ Alpha \_ mode \_** per il formato video che supporta il canale alfa, ad esempio ARGB32, o **DXGI \_ Alpha \_ mode \_ Ignora** per il formato video senza canale alfa, ad esempio RGB32.
+È possibile eseguire il cast di questo valore a un [**valore DXGI \_ ALPHA \_ MODE.**](/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_alpha_mode) Se questo attributo non è presente, per compatibilità con le versioni precedenti, il valore è **DXGI \_ ALPHA \_ MODE \_ STRAIGHT** per il formato video che supporta il canale alfa, ad esempio ARGB32 o **DXGI \_ ALPHA MODE \_ \_ IGNORE** per il formato video senza canale alfa, ad esempio RGB32.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -31,9 +31,9 @@ Specifica se la modalità Alpha per i tipi di video dei supporti colori è premo
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop Windows 10 versione 1709 \[\]<br/>                          |
-| Server minimo supportato<br/> | Windows Server, versione 1709 \[ solo per le app desktop\]<br/>                      |
-| Intestazione<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows 10, solo app desktop versione 1709 \[\]<br/>                          |
+| Server minimo supportato<br/> | Windows Server, solo app desktop versione 1709 \[\]<br/>                      |
+| Intestazione<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

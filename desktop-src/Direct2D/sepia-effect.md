@@ -1,5 +1,5 @@
 ---
-title: Effetto Sepia
+title: Effetto seppia
 description: Converte un'immagine in tonalità seppia.
 ms.assetid: fe321be9-6ade-bd0c-1c66-cc8042e5a5e1
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118664984"
 ---
-# <a name="sepia-effect"></a>Effetto Sepia
+# <a name="sepia-effect"></a>Effetto seppia
 
 Converte un'immagine in tonalità seppia.
 
@@ -19,13 +19,13 @@ Il CLSID per questo effetto è CLSID \_ D2D1Sepia.
 
 -   [Immagine di esempio](#example-image)
 -   [Codice di esempio](#sample-code)
--   [Proprietà degli effetti](#effect-properties)
+-   [Proprietà dell'effetto](#effect-properties)
 -   [Requisiti](#requirements)
 -   [Argomenti correlati](#related-topics)
 
 ## <a name="example-image"></a>Immagine di esempio
 
-![esempio di output dell'effetto](images/sepia-effect.png)
+![Esempio di output dell'effetto](images/sepia-effect.png)
 
 ## <a name="sample-code"></a>Codice di esempio
 

@@ -1,9 +1,9 @@
 ---
-title: / commutatore di sistema
-description: L'opzione di sistema / indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
+title: /opzione di sistema
+description: L'opzione /system indica al compilatore MIDL di generare una libreria dei tipi per il sistema specificato. Il valore predefinito è il sistema operativo corrente.
 ms.assetid: 0fb69ffc-5ab4-49f3-b34d-859da776ce9e
 keywords:
-- / commutatore di sistema MIDL
+- /system switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -27,7 +27,7 @@ ms.locfileid: "118643779"
 midl /{win32 | ia64 | amd64}
 ```
 
-## <a name="switch-options"></a>Opzioni switch
+## <a name="switch-options"></a>Opzioni di cambio
 
 <dl> <dt>
 
@@ -65,13 +65,13 @@ Un ambiente Windows a 64 bit basato su Intel, ad esempio Windows 2000, Windows S
 
 </dt> <dd>
 
-Un ambiente Windows a 64 bit basato su American Micro Devices, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
+Un ambiente Windows a 64 bit basato su micro dispositivi statunitensi, ad esempio Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista o Windows 7.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Commenti
 
-Dal punto di vista funzionale, l'opzione MIDL /env è riconosciuta dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti **/<system>** di MkTypLib. [](-env.md) Se si genera un nuovo makefile, usare **l'opzione /env.**
+L'opzione è funzionalmente uguale all'opzione MIDL /env ed è riconosciuta dal compilatore MIDL esclusivamente per la compatibilità con le versioni precedenti **/<system>** con MkTypLib. [](-env.md) Se si genera un nuovo makefile, usare **l'opzione /env.**
 
 ## <a name="examples"></a>Esempio
 
@@ -81,7 +81,7 @@ Dal punto di vista funzionale, l'opzione MIDL /env è riconosciuta dal compilato
 
 <dl> <dt>
 
-[Sintassi generale della riga di comando MIDL](general-midl-command-line-syntax.md)
+[Sintassi della riga di comando MIDL generale](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/env**](-env.md)

@@ -4,12 +4,12 @@ ms.assetid: 3a2796c8-1a39-49eb-98e1-c9e06c61f397
 title: Richiamare metodi di servizio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b9540cf7378e13d56af2611d6216897c6750f6
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 0553e1490a6f8d0903756767397c30c2e1137a16a80609ed3a22da69188f799e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843108"
 ---
 # <a name="invoking-service-methods"></a>Richiamare metodi di servizio
 
@@ -27,13 +27,13 @@ L'applicazione WpdServicesApiSample include codice che illustra come un'applicaz
 
  
 
-Quando l'utente sceglie l'opzione "9" dalla riga di comando, l'applicazione richiama il metodo **InvokeMethods** presente nel modulo ServiceMethods.cpp. Si noti che prima di richiamare i metodi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
+Quando l'utente sceglie l'opzione "9" dalla riga di comando, l'applicazione richiama il metodo **InvokeMethods** disponibile nel modulo ServiceMethods.cpp. Si noti che prima di richiamare i metodi, l'applicazione di esempio apre un servizio Contatti in un dispositivo connesso.
 
 I metodi del servizio incapsulano le funzionalità che ogni servizio definisce e implementa. Sono univoci per ogni tipo di servizio e sono rappresentati da un GUID. Ad esempio, il servizio Contatti definisce un metodo **BeginSync** chiamato dalle applicazioni per preparare il dispositivo per la sincronizzazione degli oggetti Contact e un metodo **EndSync** per notificare al dispositivo che la sincronizzazione è stata completata. Le applicazioni eseguono un metodo chiamando [**IPortableDeviceServiceMethods::Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
 
 I metodi di servizio non devono essere confusi con i comandi WPD. I comandi WPD fanno parte dell'interfaccia DDI (Device Driver Interface) WPD standard e sono il meccanismo per la comunicazione tra un'applicazione WPD e il driver. I comandi sono predefiniti, raggruppati per categorie, ad esempio **WPD \_ CATEGORY \_ COMMON,** e sono rappresentati da **una struttura PROPERTYKEY.** Un'applicazione invia comandi al driver di dispositivo chiamando [**IPortableDeviceService::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Per altre informazioni, vedere l'argomento Comandi.
 
-Il **metodo InvokeMethods** richiama il metodo [**IPortableDeviceService::Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceMethods.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, richiama i **metodi BeginSync** ed **EndSync** chiamando il [**metodo IPortableDeviceServiceMethods::Invoke.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) Ogni volta che chiama **Invoke,** l'applicazione fornisce refGUID per il metodo richiamato.
+Il **metodo InvokeMethods** richiama il metodo [**IPortableDeviceService::Methods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) per recuperare [**un'interfaccia IPortableDeviceServiceMethods.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Usando questa interfaccia, richiama i **metodi BeginSync** ed **EndSync** chiamando il metodo [**IPortableDeviceServiceMethods::Invoke.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) Ogni volta che chiama **Invoke,** l'applicazione fornisce refGUID per il metodo richiamato.
 
 Il codice seguente usa il **metodo InvokeMethods.**
 

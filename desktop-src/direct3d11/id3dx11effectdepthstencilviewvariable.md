@@ -3,7 +3,7 @@ title: Interfaccia ID3DX11EffectDepthStencilViewVariable (D3dx11effect.h)
 description: Un'interfaccia depth-stencil-view-variable accede a una visualizzazione depth-stencil.
 ms.assetid: 316bf0cc-a7cd-4a40-932a-d566e3c2001e
 keywords:
-- Interfaccia Direct3DX11EffectDepthStencilViewVariable Direct3D 11
+- INTERFACCIA ID3DX11EffectDepthStencilViewVariable Direct3D 11
 - ID3DX11EffectDepthStencilViewVariable interface Direct3D 11 , descritto
 topic_type:
 - apiref
@@ -35,7 +35,7 @@ Un'interfaccia depth-stencil-view-variable accede a una visualizzazione depth-st
 
 ### <a name="methods"></a>Metodi
 
-Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectDepthStencilViewVariable.**
+**L'interfaccia ID3DX11EffectDepthStencilViewVariable** include questi metodi.
 
 
 
@@ -53,7 +53,7 @@ Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectDepthStencilViewV
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra effetti 10 ed effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> DirectX SDK non fornisce file binari compilati per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione del tipo di effetti. Per altre informazioni sull'uso dell'origine effetti 11, vedere Differenze tra gli [effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,7 +64,7 @@ Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectDepthStencilViewV
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Libreria<br/> | <dl> <dt>N/D (una libreria di Effetti 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Questi metodi sono disponibili nell'interfaccia **ID3DX11EffectDepthStencilViewV
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Interfacce di Effects 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfacce effetti 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [Interfacce D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)

@@ -1,9 +1,9 @@
 ---
-title: Messaggio CB_GETCOUNT (winuser. h)
+title: CB_GETCOUNT messaggio (Winuser.h)
 description: Ottiene il numero di elementi nella casella di riepilogo di una casella combinata.
 ms.assetid: 69667724-5452-4fcc-afc3-0d98d3beedc8
 keywords:
-- Controlli di Windows Message CB_GETCOUNT
+- CB_GETCOUNT dei messaggi Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7900aadf3ba87cc7603a3fe15f4974911c9f9a37
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8215046ae9558fd03388b2b0637233c2f69832ea07a7f20fd24ddc0a5eb3c177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103744018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117832279"
 ---
-# <a name="cb_getcount-message"></a>\_Messaggio GETCOUNT CB
+# <a name="cb_getcount-message"></a>Messaggio \_ GETCOUNT CB
 
 Ottiene il numero di elementi nella casella di riepilogo di una casella combinata.
 
@@ -32,20 +32,20 @@ Ottiene il numero di elementi nella casella di riepilogo di una casella combinat
 *wParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Non utilizzato; deve essere zero.
+Non usato; deve essere zero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Il valore restituito è il numero di elementi nella casella di riepilogo. Se si verifica un errore, è CB \_ Err.
+Il valore restituito è il numero di elementi nella casella di riepilogo. Se si verifica un errore, si tratta di CB \_ ERR.
 
 ## <a name="remarks"></a>Commenti
 
@@ -57,9 +57,9 @@ L'indice è in base zero, quindi il conteggio restituito è maggiore di uno risp
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 

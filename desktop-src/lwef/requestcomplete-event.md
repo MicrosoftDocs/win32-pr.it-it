@@ -73,7 +73,7 @@ Questo evento restituisce un [**oggetto Request.**](/windows/desktop/lwef/the-re
 
 
 
-Poiché gli [**oggetti Request**](/windows/desktop/lwef/the-request-object) dell'animazione non vengono assegnati fino a quando il server non elabora la richiesta, assicurarsi che l'oggetto **Request** esista prima di provare a valutarlo. Ad esempio, in Visual Basic, se si usa un'istruzione condizionale per verificare se una richiesta specifica è stata completata, è possibile usare la **parola chiave Nothing:**
+Poiché gli [**oggetti Request**](/windows/desktop/lwef/the-request-object) dell'animazione non vengono assegnati fino a quando il server non elabora la richiesta, assicurarsi che l'oggetto **Request** esista prima di provare a valutarlo. Ad esempio, in Visual Basic, se si usa un condizionale per verificare se una richiesta specifica è stata completata, è possibile usare la **parola chiave Nothing:**
 
 
 ```

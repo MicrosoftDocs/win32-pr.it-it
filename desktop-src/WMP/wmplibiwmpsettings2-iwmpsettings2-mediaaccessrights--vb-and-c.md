@@ -1,11 +1,11 @@
 ---
-title: Proprietà mediaAccessRights di IWMPSettings2
+title: Proprietà mediaAccessRights IWMPSettings2
 description: La proprietà mediaAccessRights ottiene un valore che indica le autorizzazioni attualmente concesse per l'accesso alla libreria.
 ms.assetid: c4289a2c-e343-405d-9bf5-0e97f6617916
 keywords:
-- Finestra delle proprietà di mediaAccessRights Media Player
-- Proprietà di mediaAccessRights Media Player Windows, interfaccia IWMPSettings2
-- Interfaccia IWMPSettings2 Windows Media Player, proprietà mediaAccessRights
+- Proprietà mediaAccessRights Windows Media Player
+- Proprietà mediaAccessRights Windows Media Player, interfaccia IWMPSettings2
+- Interfaccia IWMPSettings2 Windows Media Player , proprietà mediaAccessRights
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96cca06b9618767e7748b4b1308ed97860c7c80b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 797e45c62b505033afd2126f79d5830de5bc9847a4de36199a6c919a4978f112
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106324065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122491"
 ---
-# <a name="iwmpsettings2mediaaccessrights-property"></a>Proprietà IWMPSettings2:: mediaAccessRights
+# <a name="iwmpsettings2mediaaccessrights-property"></a>Proprietà IWMPSettings2::mediaAccessRights
 
-La proprietà **mediaAccessRights** ottiene un valore che indica le autorizzazioni attualmente concesse per l'accesso alla libreria.
+La **proprietà mediaAccessRights** ottiene un valore che indica le autorizzazioni attualmente concesse per l'accesso alla libreria.
 
 Questa proprietà è di sola lettura.
 
@@ -49,13 +49,13 @@ Public ReadOnly Property mediaAccessRights As System.String
 
 ## <a name="property-value"></a>Valore proprietà
 
-**System. String** che corrisponde a uno dei valori seguenti.
+**System.String** che è uno dei valori seguenti.
 
 
 
 | Valore | Descrizione                      |
 |-------|----------------------------------|
-| Nessuno  | Solo diritti di accesso agli elementi correnti. |
+| Nessuno  | Solo diritti di accesso all'elemento corrente. |
 | lettura  | Solo diritti di accesso in lettura.         |
 | completi  | Diritti di accesso in lettura/scrittura.        |
 
@@ -65,9 +65,9 @@ Public ReadOnly Property mediaAccessRights As System.String
 
 ## <a name="remarks"></a>Commenti
 
-Una pagina Web deve prima richiedere all'utente l'autorizzazione per la lettura o la scrittura di dati nella libreria. Ciò significa che determinati metodi, proprietà ed eventi saranno inaccessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Per ottenere i diritti di accesso, l'applicazione chiama **IWMPSettings2. Get \_ requestMediaAccessRights**, passando un parametro che specifica il livello di diritti di accesso desiderato.
+Una pagina Web deve prima richiedere all'utente l'autorizzazione per leggere o scrivere dati nella libreria. Ciò significa che determinati metodi, proprietà ed eventi non saranno accessibili dal codice se non sono stati concessi i diritti di accesso appropriati. Per ottenere i diritti di accesso, l'applicazione chiama **IWMPSettings2.get \_ requestMediaAccessRights,** passando un parametro che specifica il livello di diritti di accesso desiderato.
 
-Le applicazioni in esecuzione nel computer dell'utente dispongono sempre dei diritti di accesso completi.
+Le applicazioni in esecuzione nel computer dell'utente hanno sempre diritti di accesso completi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,7 +75,7 @@ Le applicazioni in esecuzione nel computer dell'utente dispongono sempre dei dir
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player 9 serie o versione successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -88,7 +88,7 @@ Le applicazioni in esecuzione nel computer dell'utente dispongono sempre dei dir
 [**Interfaccia IWMPSettings2 (VB e C#)**](iwmpsettings2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

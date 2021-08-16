@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus
-description: La \_ classe MDM DeviceStatus viene usata dall'azienda per tenere traccia dell'inventario dei dispositivi ed eseguire query sullo stato di conformità di questi dispositivi con i criteri aziendali.
+title: MDM_DeviceStatus classe
+description: La classe DeviceStatus MDM viene usata dall'azienda per tenere traccia dell'inventario dei dispositivi ed eseguire query sullo stato di conformità di questi dispositivi \_ con i criteri aziendali.
 ms.assetid: fceaaf36-8f33-410a-89b4-c824b10164d5
 keywords:
-- Classe MDM_DeviceStatus
-- Classe MDM_DeviceStatus, descritta
+- MDM_DeviceStatus classe
+- MDM_DeviceStatus classe , descritta
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 751a33553b4a00ac6719ce6e24c75a03444f0f49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e830b0c7f0883bdd46e22d21a46033ef48777b58eca18ec64971c5d67f604186
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967661"
 ---
-# <a name="mdm_devicestatus-class"></a>MDM \_ DeviceStatus (classe)
+# <a name="mdm_devicestatus-class"></a>Classe \_ DeviceStatus MDM
 
-\[Alcune informazioni si riferiscono al prodotto pre-rilasciato che può essere modificato in modo sostanziale prima del rilascio commerciale. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
+\[Alcune informazioni riguardano un prodotto pre-rilasciato che può essere modificato sostanzialmente prima del rilascio in commercio. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite.\]
 
-La classe **MDM \_ DeviceStatus** viene usata dall'azienda per tenere traccia dell'inventario dei dispositivi ed eseguire query sullo stato di conformità di questi dispositivi con i criteri aziendali.
+La **classe \_ DeviceStatus MDM** viene usata dall'azienda per tenere traccia dell'inventario dei dispositivi ed eseguire query sullo stato di conformità di questi dispositivi con i criteri aziendali.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà ereditate.
 
@@ -47,23 +47,23 @@ class MDM_DeviceStatus
 
 ## <a name="members"></a>Members
 
-La classe **MDM \_ DeviceStatus** presenta questi tipi di membri:
+La **classe \_ DeviceStatus MDM** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
 ### <a name="properties"></a>Proprietà
 
-La classe **MDM \_ DeviceStatus** ha queste proprietà.
+La **classe \_ DeviceStatus MDM** ha queste proprietà.
 
 <dl> <dt>
 
-[NomeDominio](/windows/client-management/mdm/devicestatus-csp#devicestatus-domainname)
+[Domainname](/windows/client-management/mdm/devicestatus-csp#devicestatus-domainname)
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> <dt>
@@ -71,32 +71,32 @@ Tipo di accesso: lettura/scrittura
 **InstanceID**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nodo radice per il provider del servizio di configurazione DeviceStatus.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **String**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **chiave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificatori: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descrive il percorso completo del nodo padre. Per questa classe la stringa è "./Vendor/MSFT/"
+Descrive il percorso completo del nodo padre. Per questa classe, la stringa è "./Vendor/MSFT/"
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Descrive il percorso completo del nodo padre. Per questa classe la stringa è ".
 Tipo di dati: **sint32**
 </dt> <dt>
 
-Tipo di accesso: lettura/scrittura
+Tipo di accesso: Lettura/scrittura
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo di accesso: lettura/scrittura
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows 10\]<br/>                                                    |
+| Client minimo supportato<br/> | \[Windows 10 solo app desktop\]<br/>                                                    |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                      |
-| Spazio dei nomi<br/>                | \\ \\ DMMap MDM CIMv2 \\ radice<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Spazio dei nomi<br/>                | DMMap \\ MDM CIMv2 \\ \\ radice<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -129,7 +129,7 @@ Tipo di accesso: lettura/scrittura
 
 <dl> <dt>
 
-[Utilizzo di script di PowerShell con il provider del Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso di script di PowerShell con il provider Bridge WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

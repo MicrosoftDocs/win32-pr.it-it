@@ -4,12 +4,12 @@ ms.assetid: 751d7b92-b187-40e5-882c-6fdb80e1ff5f
 title: D3DDTCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97ded570b8f451ea7e99050467f70f945d202bd4
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 06ea92ee6fce4536747383c2180331af277eff22cd941dc57c2e0cec5612b4a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119411"
 ---
 # <a name="d3ddtcaps"></a>D3DDTCAPS
 
@@ -26,7 +26,7 @@ Costanti che descrivono i tipi di dati dei vertici supportati da un dispositivo.
 | D3DDTCAPS \_ USHORT2N   | 0x00000010L | Normalized, 2D unsigned short, espanso in (primo byte/65535.0, secondo byte/65535.0, 0, 1).                                   |
 | D3DDTCAPS \_ USHORT4N   | 0x00000020L | Normalizzato 4D unsigned short, espanso a (primo byte/65535.0, secondo byte/65535.0, terzo byte/65535.0, quarto byte/65535.0). |
 | D3DDTCAPS \_ UDEC3      | 0x00000040L | Formato 3D senza segno 10 10 10 espanso in (valore, valore, valore, 1).                                                             |
-| D3DDTCAPS \_ DEC3N      | 0x00000080L | Formato 10 10 10 con segno 10 normalizzato ed espanso a (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
+| D3DDTCAPS \_ DEC3N      | 0x00000080L | Formato 10 10 10 con segno 3D normalizzato ed espanso in (v \[ 0 \] /511.0, v \[ 1 \] /511.0, v \[ 2 \] /511.0, 1).                           |
 | D3DDTCAPS \_ FLOAT16 \_ 2 | 0x00000100L | Numeri a virgola mobile a 16 bit 2D.                                                                                             |
 | D3DDTCAPS \_ FLOAT16 \_ 4 | 0x00000200L | Numeri a virgola mobile a 16 bit 4D.                                                                                             |
 
@@ -36,7 +36,7 @@ Costanti che descrivono i tipi di dati dei vertici supportati da un dispositivo.
 
 Queste costanti vengono usate dal membro DeclTypes di [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
-## <a name="constant-information"></a>Informazioni costanti
+## <a name="constant-information"></a>Informazioni sulle costanti
 
 
 

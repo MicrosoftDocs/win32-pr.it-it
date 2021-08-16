@@ -1,11 +1,11 @@
 ---
-title: Proprietà IResultsViewer IsUpdateNeeded (WdsView.h)
-description: Restituisce TRUE se la query views è stata modificata e richiede l'aggiornamento.
+title: Proprietà IsUpdateNeeded di IResultsViewer (WdsView.h)
+description: Restituisce TRUE se la query delle viste è stata modificata ed è necessario aggiornarsi.
 ms.assetid: 68ae1f68-0585-4bc5-bea4-eb55f3626093
 keywords:
 - Proprietà IsUpdateNeeded Funzionalità dell'Windows legacy
-- Proprietà IsUpdateNeeded Legacy Windows Environment Features , interfaccia IResultsViewer
-- Interfaccia IResultsViewer Legacy Windows, proprietà IsUpdateNeeded
+- Proprietà IsUpdateNeeded legacy Windows dell'ambiente, interfaccia IResultsViewer
+- Interfaccia IResultsViewer legacy Windows funzionalità dell'ambiente , proprietà IsUpdateNeeded
 topic_type:
 - apiref
 api_name:
@@ -28,13 +28,13 @@ ms.locfileid: "118753882"
 > [!NOTE]
 > Windows Desktop Search 2.x è una tecnologia obsoleta originariamente disponibile come componente aggiuntivo per Windows XP e Windows Server 2003. Nelle versioni successive usare invece [l'API Windows ricerca.](../search/-search-reference-entry-page.md) 
 
-Restituisce TRUE se la query views è stata modificata e richiede l'aggiornamento.
+Restituisce TRUE se la query delle viste è stata modificata ed è necessario aggiornarsi.
 
 ## <a name="syntax"></a>Sintassi
 
 ## <a name="property-value"></a>Valore proprietà
 
-Quando viene chiamato questo metodo restituirà un puntatore al flag che indica se la query è stata modificata.
+Quando viene chiamato, restituirà un puntatore al flag che indica se la query è stata modificata.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -43,7 +43,7 @@ Quando viene chiamato questo metodo restituirà un puntatore al flag che indica 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/>                                 |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 con SP1 \[\]<br/>                        |
+| Server minimo supportato<br/> | Windows Solo Server 2003 con app desktop SP1 \[\]<br/>                        |
 | Componente ridistribuibile<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
 | Intestazione<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 

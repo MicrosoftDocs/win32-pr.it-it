@@ -1,10 +1,10 @@
 ---
 title: Attributo ms-DS-Behavior-Version
-description: Questo attributo viene usato per tenere traccia della versione del comportamento del dominio o della foresta. Si tratta di un numero a incremento costante che viene usato per abilitare determinate funzionalità di Active Directory.
+description: Questo attributo viene usato per tenere traccia della versione del comportamento del dominio o della foresta. Si tratta di un numero in aumento monotonamente usato per abilitare determinate funzionalità di Active Directory.
 ms.assetid: 948c4777-11ed-4321-92e9-a0cf96a47fe6
 ms.tgt_platform: multiple
 keywords:
-- Attributo ms-DS-Behavior-Version Schema di Active Directory
+- Schema AD dell'attributo ms-DS-Behavior-Version
 - Schema AD dell'attributo msDS-Behavior-Version
 topic_type:
 - apiref
@@ -23,16 +23,16 @@ ms.locfileid: "118685257"
 ---
 # <a name="ms-ds-behavior-version-attribute"></a>Attributo ms-DS-Behavior-Version
 
-Questo attributo viene usato per tenere traccia della versione del comportamento del dominio o della foresta. Si tratta di un numero a incremento costante che viene usato per abilitare determinate funzionalità di Active Directory.
+Questo attributo viene usato per tenere traccia della versione del comportamento del dominio o della foresta. Si tratta di un numero in aumento monotonamente usato per abilitare determinate funzionalità di Active Directory.
 
 
 
 | Voce | Valore |
 |-------------------|------------------------------------------------|
-| CN                | Ms-DS-Behavior-Version                         |
-| Ldap-Display-Name | MsDS-Behavior-Version                          |
+| CN                | ms-DS-Behavior-Version                         |
+| Ldap-Display-Name | msDS-Behavior-Version                          |
 | Dimensione              | \-                                             |
-| Aggiorna privilegio  | Questo valore viene impostato dall'amministratore di dominio. |
+| Privilegio di aggiornamento  | Questo valore viene impostato dall'amministratore di dominio. |
 | Frequenza di aggiornamento  | \-                                             |
 | Attribute-Id      | 1.2.840.113556.1.4.1459                        |
 | System-Id-Guid    | d31a8757-2447-4545-8081-3bb610cacbf2           |
@@ -58,7 +58,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -79,7 +79,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -100,7 +100,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -121,7 +121,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -142,7 +142,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |
@@ -163,7 +163,7 @@ Questo attributo viene usato per tenere traccia della versione del comportamento
 | ID collegamento                | \-                                                                                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                                                                                             |
 | System-Only            | Vero                                                                                                                                                                                           |
-| A valore singolo       | Vero                                                                                                                                                                                           |
+| Is-Single-Valued       | Vero                                                                                                                                                                                           |
 | Indicizzato             | Falso                                                                                                                                                                                          |
 | Nel catalogo globale      | Falso                                                                                                                                                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                   |

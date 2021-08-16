@@ -1,44 +1,44 @@
 ---
-description: Un archivio di sistema è una raccolta costituita da uno o più archivi di pari livello fisici.
+description: Un archivio di sistema è una raccolta costituita da uno o più archivi fisici di pari livello.
 ms.assetid: 41fe9366-4c17-43bb-91d6-934c7aa87a2d
-title: Percorsi di archivio di sistema
+title: Percorsi dell'archivio di sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0863ffde8be5db67459908b1ec26ec73da029744
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d793d94bcb1c58bcc0d8c046b038df7e699d287b9ede3f14d6e2cb3c94ab781e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103967619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897433"
 ---
-# <a name="system-store-locations"></a>Percorsi di archivio di sistema
+# <a name="system-store-locations"></a>Percorsi dell'archivio di sistema
 
-Un archivio di sistema è una raccolta costituita da uno o più archivi di pari livello fisici. Per ogni archivio di sistema sono presenti archivi di pari livello fisici predefiniti. Dopo l'apertura di un archivio di sistema come MY at CERT \_ System \_ Store \_ Current \_ User, il provider dell'archivio chiama [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) per aprire tutti gli archivi fisici nella raccolta di archivi di sistema. Nel processo aperto ognuno di questi archivi fisici viene aggiunto alla raccolta di archivi di sistema tramite [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection). Tutti i certificati in tali archivi fisici sono disponibili tramite la raccolta di archivi di sistema logici.
+Un archivio di sistema è una raccolta costituita da uno o più archivi fisici di pari livello. Per ogni archivio di sistema sono presenti archivi di pari livello fisici predefiniti. Dopo aver aperto un archivio di sistema come MY in CERT SYSTEM STORE CURRENT USER, il provider dell'archivio chiama \_ \_ \_ \_ [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) per aprire ognuno degli archivi fisici nella raccolta dell'archivio di sistema. Nel processo aperto, ognuno di questi archivi fisici viene aggiunto alla raccolta di archivi di sistema [**usando CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection). Tutti i certificati in tali archivi fisici sono disponibili tramite la raccolta dell'archivio di sistema logico.
 
-Per ogni percorso di archivio di sistema, gli archivi di sistemi predefiniti sono:
+Per ogni percorso dell'archivio di sistema, gli archivi di sistemi predefiniti sono:
 
 -   MY
 -   Radice
--   Trust
+-   Attendibilità
 -   CA
 
-Nell' \_ \_ \_ utente corrente dell'archivio CERT System \_ è presente anche un archivio UserDS predefinito. Un archivio di smart card è pianificato per questo percorso.
+In CERT SYSTEM STORE CURRENT USER è presente anche un \_ \_ archivio \_ \_ UserDS predefinito. Per questa smart card è previsto un archivio di archiviazione.
 
-Ecco gli archivi di sistema seguiti da ulteriori osservazioni:
+Ecco gli archivi di sistema seguiti da altre osservazioni:
 
--   [\_ \_ \_ utente corrente archivio certificati di sistema \_](#cert_system_store_current_user)
--   [\_ \_ \_ computer locale archivio certificati di sistema \_](#cert_system_store_local_machine)
--   [\_ \_ \_ servizio corrente archivio certificati di sistema \_](#cert_system_store_current_service)
--   [\_servizi di \_ Archivio di sistema CERT \_](#cert_system_store_services)
--   [\_utenti di \_ Archivio di sistema CERT \_](#cert_system_store_users)
--   [\_criteri di \_ \_ gruppo dell'utente corrente \_ del \_ sistema CERT](#cert_system_current_user_group_policy)
--   [\_criteri di \_ \_ gruppo del computer locale \_ di sistema CERT \_](#cert_system_local_machine_group_policy)
--   [\_Archivio di sistema CERT \_ \_ \_ computer locale \_ Enterprise](#cert_system_store_local_machine_enterprise)
+-   [UTENTE \_ CORRENTE \_ DELL'ARCHIVIO \_ DI \_ SISTEMA CERT](#cert_system_store_current_user)
+-   [COMPUTER \_ LOCALE \_ DELL'ARCHIVIO DI \_ SISTEMA \_ CERT](#cert_system_store_local_machine)
+-   [SERVIZIO CORRENTE \_ \_ DELL'ARCHIVIO DI \_ SISTEMA \_ CERT](#cert_system_store_current_service)
+-   [CERT \_ SYSTEM \_ STORE \_ SERVICES](#cert_system_store_services)
+-   [UTENTI \_ DELL'ARCHIVIO \_ DI SISTEMA CERT \_](#cert_system_store_users)
+-   [CRITERI DI \_ GRUPPO UTENTE CORRENTI DEL SISTEMA \_ \_ \_ \_ CERT](#cert_system_current_user_group_policy)
+-   [CRITERI DI \_ GRUPPO DEL COMPUTER LOCALE DEL \_ \_ \_ SISTEMA \_ CERT](#cert_system_local_machine_group_policy)
+-   [CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE \_ ENTERPRISE](#cert_system_store_local_machine_enterprise)
 -   [Osservazioni:](#remarks)
 
-### <a name="cert_system_store_current_user"></a>\_ \_ \_ utente corrente archivio certificati di sistema \_
+### <a name="cert_system_store_current_user"></a>UTENTE \_ CORRENTE \_ DELL'ARCHIVIO \_ DI \_ SISTEMA CERT
 
-\_ \_ \_ \_ Gli archivi di sistema degli utenti correnti del sistema di certificati si trovano nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM STORE CURRENT USER sono nel percorso del Registro di sistema \_ \_ \_ seguente:
 
 ```
 HKEY_CURRENT_USER
@@ -53,19 +53,19 @@ Gli archivi fisici predefiniti associati a tali archivi di sistema sono i seguen
 
 | Archivio di sistema | Archivio fisico                                           |
 |--------------|----------------------------------------------------------|
-| MY           | . Predefinita                                                 |
-| Radice         | . Default. LocalMachine<br/> . Smart Card<br/>   |
-| Trust        | . Default. GroupPolicy<br/> . LocalMachine<br/> |
-| CA           | . Default. GroupPolicy<br/> . LocalMachine<br/> |
-| UserDS       | . UserCertificate                                         |
+| MY           | . Predefinito                                                 |
+| Radice         | . Default.LocalMachine<br/> . Smartcard<br/>   |
+| Attendibilità        | . Default.GroupPolicy<br/> . Localmachine<br/> |
+| CA           | . Default.GroupPolicy<br/> . Localmachine<br/> |
+| UserDS       | . Usercertificate                                         |
 
 
 
  
 
-### <a name="cert_system_store_local_machine"></a>\_ \_ \_ computer locale archivio certificati di sistema \_
+### <a name="cert_system_store_local_machine"></a>COMPUTER \_ LOCALE \_ DELL'ARCHIVIO DI \_ SISTEMA \_ CERT
 
-\_ \_ \_ \_ Gli archivi di sistema del computer locale dell'archivio del sistema CERT si trovano nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM STORE LOCAL MACHINE sono nel percorso del Registro di sistema \_ \_ \_ seguente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -74,24 +74,24 @@ HKEY_LOCAL_MACHINE
          SystemCertificates
 ```
 
-Gli archivi fisici predefiniti sono associati a tali archivi di sistema, come indicato di seguito.
+Gli archivi fisici predefiniti sono associati a tali archivi di sistema come indicato di seguito.
 
 
 
 | Archivio di sistema | Archivio fisico                                                                                    |
 |--------------|---------------------------------------------------------------------------------------------------|
-| MY           | . Predefinita                                                                                          |
-| Radice         | . Default. AuthRoot<br/> . GroupPolicy<br/> . Enterprise<br/> . Smart Card<br/> |
-| Trust        | . Default. GroupPolicy<br/> . Enterprise<br/>                                            |
-| CA           | . Default. GroupPolicy<br/> . Enterprise <br/>                                           |
+| MY           | . Predefinito                                                                                          |
+| Radice         | . Default.AuthRoot<br/> . Criteri di gruppo<br/> . Enterprise<br/> . Smartcard<br/> |
+| Attendibilità        | . Default.GroupPolicy<br/> . Enterprise<br/>                                            |
+| CA           | . Default.GroupPolicy<br/> . Enterprise <br/>                                           |
 
 
 
  
 
-### <a name="cert_system_store_current_service"></a>\_ \_ \_ servizio corrente archivio certificati di sistema \_
+### <a name="cert_system_store_current_service"></a>SERVIZIO CORRENTE \_ \_ DELL'ARCHIVIO DI \_ SISTEMA \_ CERT
 
-\_ \_ \_ \_ Gli archivi del sistema del servizio di archiviazione del sistema CERT correnti si trovano nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM STORE CURRENT SERVICE sono nel percorso del Registro di sistema \_ \_ \_ seguente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -109,18 +109,18 @@ Gli archivi fisici predefiniti associati a tali archivi di sistema sono i seguen
 
 | Archivio di sistema | Archivio fisico                   |
 |--------------|----------------------------------|
-| MY           | . Predefinita                         |
-| Radice         | . Default. LocalMachine<br/> |
-| Trust        | . Default. LocalMachine<br/> |
-| CA           | . Default. LocalMachine<br/> |
+| MY           | . Predefinito                         |
+| Radice         | . Default.LocalMachine<br/> |
+| Attendibilità        | . Default.LocalMachine<br/> |
+| CA           | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_store_services"></a>\_servizi di \_ Archivio di sistema CERT \_
+### <a name="cert_system_store_services"></a>CERT \_ SYSTEM \_ STORE \_ SERVICES
 
-\_ \_ \_ Gli archivi di sistema di CERT System Store Services si trovano nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM STORE SERVICES sono nel percorso del Registro di sistema \_ \_ seguente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -138,18 +138,18 @@ Gli archivi fisici predefiniti associati a tali archivi di sistema sono i seguen
 
 | Archivio di sistema       | Archivio fisico                   |
 |--------------------|----------------------------------|
-| ServiceName \\ My    | . Predefinita                         |
-| Radice ServiceName \\  | . Default. LocalMachine<br/> |
-| Trust di ServiceName \\ | . Default. LocalMachine<br/> |
-| CA ServiceName \\    | . Default. LocalMachine<br/> |
+| ServiceName \\ MY    | . Predefinito                         |
+| Radice di \\ ServiceName  | . Default.LocalMachine<br/> |
+| Attendibilità di \\ ServiceName | . Default.LocalMachine<br/> |
+| ServiceName \\ CA    | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_store_users"></a>\_utenti di \_ Archivio di sistema CERT \_
+### <a name="cert_system_store_users"></a>UTENTI \_ DELL'ARCHIVIO \_ DI SISTEMA CERT \_
 
-\_ \_ \_ Gli archivi di sistema CERT System Store Users si trovano nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM STORE USERS sono nel percorso del Registro di sistema \_ \_ seguente:
 
 ```
 HKEY_USERS
@@ -165,18 +165,18 @@ Gli archivi fisici predefiniti associati a tali archivi di sistema sono i seguen
 
 | Archivio di sistema  | Archivio fisico                   |
 |---------------|----------------------------------|
-| ID \\ utente    | . Default. LocalMachine<br/> |
-| \\radice UserID  | . Default. LocalMachine<br/> |
-| \\attendibilità UserID | . Default. LocalMachine<br/> |
-| \\CA UserID    | . Default. LocalMachine<br/> |
+| userid \\ MY    | . Default.LocalMachine<br/> |
+| Userid \\ Root  | . Default.LocalMachine<br/> |
+| userid \\ Trust | . Default.LocalMachine<br/> |
+| USERID \\ CA    | . Default.LocalMachine<br/> |
 
 
 
  
 
-### <a name="cert_system_current_user_group_policy"></a>\_criteri di \_ \_ gruppo dell'utente corrente \_ del \_ sistema CERT
+### <a name="cert_system_current_user_group_policy"></a>CRITERI DI \_ GRUPPO UTENTE CORRENTI DEL SISTEMA \_ \_ \_ \_ CERT
 
-\_ \_ \_ \_ \_ Gli archivi di sistema di criteri di gruppo dell'utente corrente del sistema CERT sono nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM CURRENT USER GROUP POLICY sono disponibili nel percorso del Registro di sistema \_ \_ \_ \_ seguente:
 
 ```
 HKEY_CURRENT_USER
@@ -186,9 +186,9 @@ HKEY_CURRENT_USER
             SystemCertificates
 ```
 
-### <a name="cert_system_local_machine_group_policy"></a>\_criteri di \_ \_ gruppo del computer locale \_ di sistema CERT \_
+### <a name="cert_system_local_machine_group_policy"></a>CRITERI DI \_ GRUPPO DEL COMPUTER LOCALE DEL \_ \_ \_ SISTEMA \_ CERT
 
-\_ \_ \_ \_ \_ Gli archivi di sistema di criteri di gruppo del computer locale di sistema CERT sono nel seguente percorso del registro di sistema:
+Gli archivi di sistema CERT \_ SYSTEM LOCAL MACHINE GROUP POLICY sono nel percorso del Registro di sistema \_ \_ \_ \_ seguente:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -198,9 +198,9 @@ HKEY_LOCAL_MACHINE
             SystemCertificates
 ```
 
-### <a name="cert_system_store_local_machine_enterprise"></a>\_Archivio di sistema CERT \_ \_ \_ computer locale \_ Enterprise
+### <a name="cert_system_store_local_machine_enterprise"></a>CERT \_ SYSTEM \_ STORE \_ LOCAL \_ MACHINE \_ ENTERPRISE
 
-Il \_ \_ computer locale dell'archivio del sistema CERT \_ contiene i \_ \_ certificati condivisi tra domini nell'azienda e scaricati dalla directory globale dell'organizzazione. Per sincronizzare l'archivio aziendale del client, viene eseguito il polling della directory aziendale ogni otto ore e i certificati vengono scaricati automaticamente in background.
+CERT SYSTEM STORE LOCAL MACHINE ENTERPRISE contiene certificati condivisi tra domini \_ \_ \_ \_ \_ dell'organizzazione e scaricati dalla directory aziendale globale. Per sincronizzare l'archivio aziendale del client, viene eseguito il polling della directory aziendale ogni otto ore e i certificati vengono scaricati automaticamente in background.
 
 Gli archivi fisici predefiniti associati a questi archivi di sistema sono i seguenti.
 
@@ -208,10 +208,10 @@ Gli archivi fisici predefiniti associati a questi archivi di sistema sono i segu
 
 | Archivio di sistema | Archivio fisico |
 |--------------|----------------|
-| MY           | . Predefinita       |
-| Radice         | . Predefinita       |
-| Trust        | . Predefinita       |
-| CA           | . Predefinita       |
+| MY           | . Predefinito       |
+| Radice         | . Predefinito       |
+| Attendibilità        | . Predefinito       |
+| CA           | . Predefinito       |
 
 
 
@@ -219,25 +219,25 @@ Gli archivi fisici predefiniti associati a questi archivi di sistema sono i segu
 
 ### <a name="remarks"></a>Commenti
 
-Gli archivi fisici aggiuntivi possono essere associati a un archivio di sistema tramite [**CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
+È possibile associare archivi fisici aggiuntivi a un archivio di sistema [**usando CertRegisterPhysicalStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certregisterphysicalstore).
 
-Gli \_ archivi CERT System \_ Store \_ Service e CERT \_ System \_ Store \_ Users vengono aperti anteponendo il nome dell'archivio nella stringa passata a *pvPara* con il nome del servizio o dell'utente, ad esempio *ServiceName* \\ **trust** o **. Predefinito** \\ **My**. Il percorso CERT System \_ \_ Store \_ Services o CERT \_ System \_ Store \_ Users può aprire lo stesso archivio in cert \_ System \_ Current \_ Service o CERT \_ System \_ Store \_ utente corrente \_ usando l'ID di [*sicurezza*](../secgloss/s-gly.md) testuale (SID) del servizio o dell'utente corrente.
+Gli archivi CERT SYSTEM STORE SERVICE e CERT SYSTEM STORE USERS vengono aperti antendo il nome dell'archivio nella stringa passata a \_ \_ \_ \_ \_ \_ *pvPara*  \\  **con il nome del servizio o dell'utente, ad esempio ServiceName Trust o . Impostazione** \\ **predefinita MY**. Il percorso CERT SYSTEM STORE SERVICES o CERT SYSTEM STORE USERS può aprire lo stesso archivio in CERT SYSTEM CURRENT SERVICE o CERT SYSTEM STORE CURRENT USER usando l'ID di sicurezza \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ testuale (SID) [](../secgloss/s-gly.md) del servizio o dell'utente corrente.
 
-Gli archivi nei criteri di \_ \_ \_ gruppo dell'utente dell'archivio di sistema CERT \_ \_ e \_ dei criteri di gruppo del computer \_ locale del sistema CERT \_ \_ \_ in un'impostazione di rete vengono scaricati nel computer client dal modello di criteri di gruppo (GPT) durante l'avvio del computer o l'accesso dell'utente. Questi archivi possono essere aggiornati nel computer client dopo l'avvio o l'accesso quando il GPT viene modificato nel server di dominio da un amministratore. La funzione [**CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore) consente a un'applicazione di ricevere una notifica quando vengono modificati i negozi in una di queste posizioni.
+I criteri di gruppo CERT SYSTEM STORE USER GROUP POLICY e CERT SYSTEM LOCAL MACHINE GROUP POLICY in un'impostazione di rete vengono scaricati nel computer client dal modello \_ \_ Criteri di gruppo \_ \_ \_ \_ \_ \_ \_ \_ (GPT) durante l'avvio del computer o l'accesso utente. Questi archivi possono essere aggiornati nel computer client dopo l'avvio o l'accesso quando gpT viene modificato nel server di dominio da un amministratore. La [**funzione CertControlStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcontrolstore) consente a un'applicazione di ricevere una notifica quando gli archivi in una di queste posizioni sono stati modificati.
 
-È possibile aprire in remoto i percorsi di archivio di sistema seguenti:
+I percorsi dell'archivio di sistema seguenti possono essere aperti in modalità remota:
 
--   \_ \_ \_ computer locale archivio certificati di sistema \_
--   \_criteri di \_ \_ gruppo del \_ computer \_ locale \_ dell'archivio di sistema CERT
--   \_servizi di \_ Archivio di sistema CERT \_
--   \_utenti di \_ Archivio di sistema CERT \_
+-   COMPUTER \_ LOCALE \_ DELL'ARCHIVIO DI \_ SISTEMA \_ CERT
+-   CRITERI DI \_ GRUPPO CERT SYSTEM \_ STORE LOCAL \_ \_ MACHINE \_ \_
+-   CERT \_ SYSTEM \_ STORE \_ SERVICES
+-   UTENTI \_ DELL'ARCHIVIO \_ DI SISTEMA CERT \_
 
-I percorsi dell'archivio di sistema vengono aperti in modalità remota anteponendo il nome dell'archivio nella stringa passata a *pvPara* con il nome del computer. Esempi di nomi di archivio di sistema remoto sono:
+I percorsi dell'archivio di sistema vengono aperti in modalità remota antefissendo il nome dell'archivio nella stringa passata a *pvPara* con il nome del computer. Di seguito sono riportati alcuni esempi di nomi di archivi di sistema remoti:
 
--   *Nomecomputer* \\ **CA**
--   \\\\*Nomecomputer* \\ **CA**
--   *Nomecomputer* \\ *ServiceName* \\ **Attendibilità**
--   \\\\*Nomecomputer* \\ *ServiceName* \\ **Attendibilità**
+-   *NomeComputer* \\ **CA**
+-   \\\\*NomeComputer* \\ **CA**
+-   *NomeComputer* \\ *ServiceName* \\ **Attendibilità**
+-   \\\\*NomeComputer* \\ *ServiceName* \\ **Attendibilità**
 
  
 

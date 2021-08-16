@@ -1,5 +1,5 @@
 ---
-description: L'esempio seguente contiene una richiesta CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli strumenti Certreq.exe e Certutil.exe. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
+description: L'esempio seguente contiene una richiesta CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 ms.assetid: 57e99f2c-76c3-4b4c-8e78-9b45bfa55d9a
 title: ASN.1 codificato in CMC
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118902027"
 ---
 # <a name="cmc-encoded-asn1"></a>ASN.1 codificato in CMC
 
-L'esempio seguente contiene una richiesta CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando gli strumenti Certreq.exe e Certutil.exe. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
+L'esempio seguente contiene una richiesta CMC visualizzata nel formato ASN.1. L'esempio è stato generato usando Certreq.exe e Certutil.exe strumenti. Il file inf usato come input per Certreq.exe contiene la configurazione seguente.
 
 ``` syntax
 [NewRequest]
@@ -24,7 +24,7 @@ RequestType=cmc
 CertificateTemplate=User
 ```
 
-Questa configurazione genera l'output di esempio seguente. La configurazione specifica l'oggetto, il tipo di richiesta (CMC) e il modello di certificato (Utente). Il modello User specifica che:
+Questa configurazione genera l'output di esempio seguente. La configurazione specifica il soggetto, il tipo di richiesta (CMC) e il modello di certificato (Utente). Il modello User specifica che:
 
 -   La richiesta deve usare Microsoft Base Cryptographic Provider 1.0 o Microsoft Enhanced Cryptographic Provider 1.0.
 -   Il nome del soggetto deve essere compilato da Active Directory.

@@ -39,7 +39,7 @@ ReleaseDC(hwnd, hdc);
 
 
 
-Per disegnare l'intero schermo virtuale in modo ottimale per ogni monitor, usare codice simile al seguente.
+Per disegnare l'intero schermo virtuale in modo ottimale per ogni monitoraggio, usare codice simile al seguente.
 
 
 ```C++

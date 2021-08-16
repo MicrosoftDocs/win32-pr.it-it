@@ -1,9 +1,9 @@
 ---
-title: Publishing (ChannelType)-elemento
-description: Definisce le proprietà di registrazione per la sessione utilizzata dal canale. | Publishing (ChannelType)-elemento
+title: Elemento publishing (ChannelType)
+description: Definisce le proprietà di registrazione per la sessione utilizzata dal canale. | Elemento publishing (ChannelType)
 ms.assetid: 032b5888-550b-4771-bd30-3195602811a7
 keywords:
-- pubblicazione dell'elemento EventLog
+- elemento di pubblicazione EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e47604ad3a9a9372fa1432db96777e85ef901176
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f1758ee390c75708ea1f0acd5fb75af4e8db8c6128b1b7b39c8e4f2ea71ed28d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103969195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055859"
 ---
-# <a name="publishing-channeltype-element"></a>Publishing (ChannelType)-elemento
+# <a name="publishing-channeltype-element"></a>Elemento publishing (ChannelType)
 
 Definisce le proprietà di registrazione per la sessione utilizzata dal canale.
 
@@ -30,7 +30,7 @@ Definisce le proprietà di registrazione per la sessione utilizzata dal canale.
  />
 ```
 
-L'elemento **Publishing** è definito dal tipo complesso [**ChannelType**](eventmanifestschema-channeltype-complextype.md) .
+**L'elemento** di pubblicazione è definito dal [**tipo complesso ChannelType.**](eventmanifestschema-channeltype-complextype.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -38,8 +38,8 @@ L'elemento **Publishing** è definito dal tipo complesso [**ChannelType**](event
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>       |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2008\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ L'elemento **Publishing** è definito dal tipo complesso [**ChannelType**](event
 **Elemento padre**
 </dt> <dt>
 
-[**canale (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
+[**channel (ChannelListType)**](eventmanifestschema-channel-channellisttype-element.md)
 </dt> </dl>
 
  

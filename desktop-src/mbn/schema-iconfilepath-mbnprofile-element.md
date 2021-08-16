@@ -1,5 +1,5 @@
 ---
-description: Contiene il percorso del file icona per la connessione.
+description: Contiene il percorso del file dell'icona per la connessione.
 ms.assetid: 9daf4916-914b-4326-9933-b433cc00b4c1
 title: Elemento ICONFilePath (MBNProfile)
 ms.topic: reference
@@ -11,24 +11,24 @@ api_name:
 - ICONFilePath
 api_type:
 - Schema
-ms.openlocfilehash: 6b1e98f76fe2f83ce214076223b5a1439bd0ea45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea662a7519a8705818ef502f5b797f437b0f89bee649d0bde18ce6f71b099d74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106307539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035819"
 ---
 # <a name="iconfilepath-mbnprofile-element"></a>Elemento ICONFilePath (MBNProfile)
 
-L'elemento **ICONFilePath (MBNProfile)** contiene il percorso del file icona per la connessione.
+**L'elemento ICONFilePath (MBNProfile)** contiene il percorso del file dell'icona per la connessione.
 
-L'interfaccia utente di connessione al sistema operativo visualizzerà questa icona quando si effettua una connessione utilizzando questo elemento.
+L'interfaccia utente di connessione del sistema operativo visualizza questa icona quando viene stabilita una connessione usando questo elemento.
 
-Quando si passa il codice XML per la creazione del profilo nel metodo [**CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) dell'interfaccia [**IMbnConnectionProfileManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) , questo percorso deve puntare al percorso di origine del file icona. Al completamento della creazione dell'oggetto [**IMbnConnectionProfile**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) , il servizio Mobile Broadband copia il file dell'icona nell'archivio interno e il percorso del profilo verrà modificato in modo da riflettere questo problema.
+Quando si passa il codice XML per la creazione del profilo nel [**metodo CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) dell'interfaccia [**IMbnConnectionProfileManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) questo percorso deve puntare al percorso di origine del file di icona. Al completamento della creazione dell'oggetto [**IMbnConnectionProfile,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) il servizio Mobile Broadband copierà il file dell'icona nell'archivio interno e il percorso del profilo verrà modificato in base a questo.
 
-Il file icona deve essere in formato BMP con la dimensione 32X32 pixel.
+Il file dell'icona deve .bmp formato con dimensioni di 32x32 pixel.
 
-Questo elemento è una stringa di lunghezza massima di 1024 caratteri, che contiene un percorso di file assoluto.
+Questo elemento è una stringa di lunghezza massima di 1024 caratteri, contenente un percorso di file assoluto.
 
 L'elemento è facoltativo.
 
@@ -38,7 +38,7 @@ L'elemento è facoltativo.
  />
 ```
 
-L'elemento **ICONFilePath** è definito dall'elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+**L'elemento ICONFilePath** è definito dall'elemento [**MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ L'elemento **ICONFilePath** è definito dall'elemento [**MBNProfile**](schema-mb
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------|
-| Client minimo supportato<br/> | App desktop di Windows 7 \[ \| UWP\]<br/> |
+| Client minimo supportato<br/> | Windows 7 \[ app desktop app \| UWP\]<br/> |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                         |
 
 

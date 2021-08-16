@@ -1,9 +1,9 @@
 ---
 title: comando unfreeze
-description: Il comando unfreeze riabilita l'acquisizione video nel buffer dei fotogrammi dopo che è stato disabilitato dal comando freeze. I dispositivi di video digitale, videoregistratore e sovrimpressione video riconoscono questo comando.
+description: Il comando unfreeze riabilita l'acquisizione video nel buffer dei fotogrammi dopo che è stato disabilitato dal comando freeze. Questo comando viene riconosciuto da dispositivi video digitali, videoregistratori e sovrimpressione video.
 ms.assetid: ca90c299-2003-44cb-a879-4bc767480965
 keywords:
-- Comando unfreeze Windows Multimedia
+- comando unfreeze Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118370811"
 ---
 # <a name="unfreeze-command"></a>comando unfreeze
 
-Il comando unfreeze riabilita l'acquisizione video nel buffer dei fotogrammi dopo che è stato disabilitato dal [comando freeze.](freeze.md) I dispositivi di video digitale, videoregistratore e sovrimpressione video riconoscono questo comando.
+Il comando unfreeze riabilita l'acquisizione video nel buffer dei fotogrammi dopo che è stato disabilitato dal [comando freeze.](freeze.md) Questo comando viene riconosciuto da dispositivi video digitali, videoregistratori e sovrimpressione video.
 
 Per inviare questo comando, chiamare la [**funzione mciSendString**](/previous-versions//dd757161(v=vs.85)) con il parametro *lpszCommand* impostato come indicato di seguito.
 
@@ -49,7 +49,7 @@ Identificatore di un dispositivo MCI. Questo identificatore o alias viene assegn
 <span id="lpszUnfreeze"></span><span id="lpszunfreeze"></span><span id="LPSZUNFREEZE"></span>*lpszUnfreeze*
 </dt> <dd>
 
-Flag per la riasserzione dell'acquisizione video nel buffer dei fotogrammi. La tabella seguente elenca i tipi di dispositivo che riconoscono il comando **unfreeze** e i flag usati da ogni tipo.
+Flag per la riasserzione dell'acquisizione di video nel buffer dei fotogrammi. Nella tabella seguente sono elencati i tipi di dispositivo che riconoscono il comando **unfreeze** e i flag usati da ogni tipo.
 
 
 
@@ -63,15 +63,15 @@ Flag per la riasserzione dell'acquisizione video nel buffer dei fotogrammi. La t
 
  
 
-La tabella seguente elenca i flag che possono essere specificati nel **parametro lpszUnfreeze** e i relativi significati.
+Nella tabella seguente sono elencati i flag che è possibile specificare nel **parametro lpszUnfreeze** e i relativi significati.
 
 
 
 | Valore          | Significato                                                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| at *rectangle* | Specifica l'area in cui verrà ri abilitata l'acquisizione del video. Il rettangolo è relativo all'origine del buffer video e viene specificato come *X1 Y1 X2 Y2*. Le coordinate *X1 Y1* specificano l'angolo superiore sinistro del rettangolo e le coordinate *X2 Y2* specificano la larghezza e l'altezza. |
+| at *rectangle* | Specifica l'area in cui verrà ri abilitata l'acquisizione video. Il rettangolo è relativo all'origine del buffer video e viene specificato come *X1 Y1 X2 Y2.* Le coordinate *X1 Y1* specificano l'angolo superiore sinistro del rettangolo e le coordinate *X2 Y2* specificano la larghezza e l'altezza. |
 | input          | Sbloccare l'immagine di input.                                                                                                                                                                                                                                                                  |
-| output         | Sbloccare l'immagine di output. Se non viene specificato né "input" né "output", viene utilizzato "output".                                                                                                                                                                                                  |
+| output         | Sbloccare l'immagine di output. Se non viene specificato né "input" né "output", viene presupposto "output".                                                                                                                                                                                                  |
 
 
 
@@ -82,7 +82,7 @@ La tabella seguente elenca i flag che possono essere specificati nel **parametro
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Può essere "wait", "notify" o entrambi. Per i dispositivi video digitali e VCR, è anche possibile specificare "test". Per altre informazioni su questi flag, vedere [Wait, Notify e Test Flags.](the-wait-notify-and-test-flags.md)
+Può essere "wait", "notify" o entrambi. Per i dispositivi digital-video e VCR, è anche possibile specificare "test". Per altre informazioni su questi flag, vedere [Flag di attesa, notifica e test](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 

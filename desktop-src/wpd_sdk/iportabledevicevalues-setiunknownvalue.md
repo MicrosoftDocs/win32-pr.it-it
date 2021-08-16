@@ -57,7 +57,7 @@ Puntatore a **un'interfaccia IUnknown** che specifica il nuovo valore. L'SDK cop
 
 ## <a name="return-value"></a>Valore restituito
 
-Il metodo restituisce un **HRESULT**. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
+Il metodo restituisce un **valore HRESULT.** I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.
 
 
 

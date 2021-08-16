@@ -32,7 +32,7 @@ Contiene la chiave di crittografia BitLocker di un volume protetta dalla passwor
 | CN                | ms-FVE-KeyPackage                                     |
 | Ldap-Display-Name | msFVE-KeyPackage                                      |
 | Dimensione              | \-                                                    |
-| Privilegio di aggiornamento  | \-                                                    |
+| Aggiorna privilegio  | \-                                                    |
 | Frequenza di aggiornamento  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1999                               |
 | System-Id-Guid    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |

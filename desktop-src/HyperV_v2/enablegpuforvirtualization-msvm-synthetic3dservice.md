@@ -1,7 +1,7 @@
 ---
 description: Abilita una GPU fisica per la virtualizzazione.
 ms.assetid: 700cb46b-97f1-40cf-88d2-64242f4bd2c6
-title: Metodo EnableGPUForVirtualization della Msvm_Synthetic3DService
+title: Metodo EnableGPUForVirtualization della classe Msvm_Synthetic3DService
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

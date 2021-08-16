@@ -1,5 +1,5 @@
 ---
-description: Questo attributo aggiunge l'icona di elevazione dei privilegi di Controllo dell'account utente (icona a forma di schermatura) al controllo PushButton.
+description: Questo attributo aggiunge l'icona di elevazione del controllo dell'account utente (icona dello schermo) al controllo PushButton.
 ms.assetid: ec52d660-eb83-4f27-b640-ea89156260aa
 title: Attributo ElevationShield
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118637491"
 ---
 # <a name="elevationshield-attribute"></a>Attributo ElevationShield
 
-Questo attributo aggiunge [*l'icona di elevazione dei*](u-gly.md) privilegi di Controllo dell'account utente (icona di schermatura) al [controllo PushButton](pushbutton-control.md).
+Questo attributo aggiunge [*l'icona di elevazione del*](u-gly.md) controllo dell'account utente (icona dello schermo) al [controllo PushButton](pushbutton-control.md).
 
-Se questo bit è impostato e l'installazione non è ancora in esecuzione con [](u-gly.md) privilegi elevati, il controllo pulsante di comando viene creato usando l'icona di elevazione del controllo dell'account utente (icona di schermatura). [](e-gly.md)
+Se questo bit è impostato e l'installazione non è ancora in esecuzione con privilegi elevati, il controllo pulsante di scelta rapida viene creato usando l'icona di elevazione del controllo dell'account utente [*(icona*](u-gly.md) di schermatura). [](e-gly.md)
 
-Se questo bit è impostato e l'installazione è già in esecuzione con privilegi elevati, il controllo del pulsante di comando viene creato usando gli altri attributi icona. [](e-gly.md)
+Se questo bit è impostato e l'installazione è già in esecuzione con privilegi elevati, il controllo pushbutton viene creato usando gli altri attributi dell'icona. [](e-gly.md)
 
-Se questo bit non è impostato, il controllo del pulsante di comando viene creato usando gli altri attributi icona.
+Se questo bit non è impostato, il controllo pushbutton viene creato usando gli altri attributi dell'icona.
 
 ## <a name="valid-controls"></a>Controlli validi
 

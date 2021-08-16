@@ -38,7 +38,7 @@ WebWizardHost.Property = Property
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**BSTR che**](/previous-versions/windows/desktop/automat/bstr) specifica o riceve la proprietà .
+Variabile di tipo [**BSTR che**](/previous-versions/windows/desktop/automat/bstr) specifica o riceve la proprietà.
 
 ## <a name="requirements"></a>Requisiti
 

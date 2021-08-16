@@ -1,6 +1,6 @@
 ---
-title: Architettura Gestione remota Windows
-description: L'architettura Gestione remota Windows è costituita da componenti nei computer client e server.
+title: Windows Architettura di gestione remota
+description: L Windows di gestione remota è costituita da componenti nei computer client e server.
 ms.assetid: 82e67851-fe46-4bb0-8278-9718b5e0c7ae
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,30 +10,30 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0f5576913c5e4a1f2a105fb77e2282dc682c6659
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 889a823c4c67bed29f9ce695d84c893654b541aed76e0c79860e31f24c543662
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103729186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121596"
 ---
-# <a name="windows-remote-management-architecture"></a>Architettura Gestione remota Windows
+# <a name="windows-remote-management-architecture"></a>Windows Architettura di gestione remota
 
-L'architettura Gestione remota Windows è costituita da componenti nei computer client e server. Nella figura seguente sono illustrati i componenti di entrambi i computer, il modo in cui i componenti interagiscono con altri componenti e il protocollo utilizzato per la comunicazione tra i computer.
+L Windows di gestione remota è costituita da componenti nei computer client e server. La figura seguente illustra i componenti in entrambi i computer, il modo in cui i componenti interagiscono con altri componenti e il protocollo usato per comunicare tra i computer.
 
-![architettura WinRM](images/winrm-architecture.png)
+![Architettura di winrm](images/winrm-architecture.png)
 
-## <a name="requesting-client"></a>Client richiedente
+## <a name="requesting-client"></a>Richiesta del client
 
-I componenti WinRM seguenti si trovano nel computer in cui è in esecuzione lo script che richiede i dati.
+I componenti winrm seguenti si trovano nel computer che esegue lo script che richiede i dati.
 
 -   Applicazione WinRM
 
-    Questo è lo script o lo strumento da riga di comando **WinRM** che utilizza l'API di scripting WinRM per effettuare chiamate ai dati della richiesta o per eseguire metodi. Per ulteriori informazioni, vedere l' [API di scripting WinRM](winrm-scripting-api.md).
+    Si tratta dello script o dello strumento da riga di comando **Winrm** che usa l'API di scripting WinRM per effettuare chiamate per richiedere dati o per eseguire metodi. Per altre informazioni, vedere [l'API di scripting winrm](winrm-scripting-api.md).
 
 -   WSMAuto.dll
 
-    Livello di automazione che fornisce supporto per gli script.
+    Livello di Automazione che fornisce supporto per gli script.
 
 -   WsmCL.dll
 
@@ -45,7 +45,7 @@ I componenti WinRM seguenti si trovano nel computer in cui è in esecuzione lo s
 
 ## <a name="responding-server"></a>Server di risposta
 
-I componenti WinRM seguenti risiedono nel computer che risponde.
+I componenti winrm seguenti si trovano nel computer che risponde.
 
 -   API HTTP
 
@@ -53,7 +53,7 @@ I componenti WinRM seguenti risiedono nel computer che risponde.
 
 -   WSMAuto.dll
 
-    Livello di automazione che fornisce supporto per gli script.
+    Livello di Automazione che fornisce supporto per gli script.
 
 -   WsmCL.dll
 
@@ -65,7 +65,7 @@ I componenti WinRM seguenti risiedono nel computer che risponde.
 
 -   WsmProv.dll
 
-    Sottosistema del provider.
+    Sottosistema provider.
 
 -   WsmRes.dll
 
@@ -77,15 +77,15 @@ I componenti WinRM seguenti risiedono nel computer che risponde.
 
 -   Driver IPMI (Intelligent Platform Management Interface) e provider IPMI WMI
 
-    Questi componenti forniscono tutti i dati hardware richiesti usando le classi IPMI. Per ulteriori informazioni, vedere [provider IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). L'hardware BMC deve essere stato rilevato da SMBIOS o dal dispositivo creato manualmente mediante il caricamento del driver. Per ulteriori informazioni, vedere [installazione e configurazione per gestione remota Windows](installation-and-configuration-for-windows-remote-management.md).
+    Questi componenti forniscono tutti i dati hardware richiesti usando le classi IPMI. Per altre informazioni, vedere [Provider IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider). L'hardware BMC deve essere stato rilevato da SMBIOS o dal dispositivo creato manualmente caricando il driver. Per altre informazioni, vedere [Installazione e configurazione per la Windows remota](installation-and-configuration-for-windows-remote-management.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Informazioni su Gestione remota Windows](about-windows-remote-management.md)
+[Informazioni Windows gestione remota](about-windows-remote-management.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

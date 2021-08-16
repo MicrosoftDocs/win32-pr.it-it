@@ -4,12 +4,12 @@ ms.assetid: 529a8b7a-08b4-47de-8ed3-28e8fff0ede2
 title: Gestione degli eventi dal dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74692b73e39aa83286604408f3c556f5fbeb3f58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efb972e0de232ce281923ae2f763e264ef7120f363981778dcab7a8cb254fbfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106319090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843243"
 ---
 # <a name="handling-events-from-the-device"></a>Gestione degli eventi dal dispositivo
 
@@ -21,14 +21,14 @@ Le operazioni di gestione degli eventi vengono eseguite utilizzando le interfacc
 
 | Interfaccia                                                                      | Descrizione                                                      |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**Interfaccia IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)                           | Consente all'applicazione di eseguire la registrazione per ricevere callback asincroni. |
+| [**Interfaccia IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)                           | Consente all'applicazione di registrarsi per ricevere callback asincroni. |
 | [**Interfaccia IPortableDeviceEventCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceeventcallback) | Contiene il gestore eventi dell'applicazione.                        |
 
 
 
  
 
-La classe CPortableDeviceEventsCallback nel modulo DeviceEvents. cpp dell'applicazione di esempio illustra come un'applicazione può implementare [**IPortableDeviceEventCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceeventcallback). L'implementazione del metodo [**OnEvent**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceeventcallback-onevent) in questa classe scrive i parametri per qualsiasi evento nella finestra della console dell'applicazione. Oltre al metodo OnEvent, questa classe implementa AddRef e release, che vengono usati per gestire il conteggio dei riferimenti dell'oggetto.
+La classe CPortableDeviceEventsCallback nel modulo DeviceEvents.cpp dell'applicazione di esempio illustra come un'applicazione può implementare [**IPortableDeviceEventCallback.**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledeviceeventcallback) L'implementazione [**del metodo OnEvent**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceeventcallback-onevent) in questa classe scrive i parametri per qualsiasi evento nella finestra della console dell'applicazione. Oltre al metodo OnEvent, questa classe implementa AddRef e Release, che vengono usati per mantenere il conteggio dei riferimenti dell'oggetto.
 
 
 ```C++
@@ -106,7 +106,7 @@ public:
 
 
 
-L'applicazione di esempio crea un'istanza della classe CPortableDeviceEventsCallback nella relativa funzione helper RegisterForEventNotifications. Questa funzione crea un'istanza dell'oggetto callback usando l'operatore new. Chiama quindi il metodo [**IPortableDevice:: Advise**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-advise) per registrare il callback e iniziare a ricevere gli eventi.
+L'applicazione di esempio crea un'istanza della classe CPortableDeviceEventsCallback nella relativa funzione helper RegisterForEventNotifications. Questa funzione crea un'istanza dell'oggetto callback usando l'operatore new. Chiama quindi il metodo [**IPortableDevice::Advise**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-advise) per registrare il callback e iniziare a ricevere eventi.
 
 
 ```C++
@@ -181,7 +181,7 @@ void RegisterForEventNotifications(IPortableDevice* pDevice)
 
 
 
-Quando l'applicazione di esempio riceve gli eventi, chiama la funzione di supporto UnregisterForEventNotifications. Questa funzione, a sua volta, chiama il metodo [**IPortableDevice:: Unadvise**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-unadvise) per annullare la registrazione del callback dalla ricezione degli eventi.
+Quando l'applicazione di esempio riceve eventi, chiama la funzione helper UnregisterForEventNotifications. Questa funzione, a sua volta, chiama il [**metodo IPortableDevice::Unadvise**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-unadvise) per annullare la registrazione del callback dalla ricezione di eventi.
 
 
 ```C++

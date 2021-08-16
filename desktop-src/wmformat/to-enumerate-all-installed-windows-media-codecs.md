@@ -1,11 +1,11 @@
 ---
-title: Per enumerare tutti i codec Windows multimediali installati
-description: Per enumerare tutti i codec Windows multimediali installati
+title: Per enumerare tutti i codec multimediali Windows installati
+description: Per enumerare tutti i codec multimediali Windows installati
 ms.assetid: 651c8624-0b66-4d0e-a25f-6c4b1a94e849
 keywords:
-- flussi, enumerazione dei codec Windows multimediali
+- flussi, enumerazione dei codec multimediali Windows installati
 - codec, enumerazioni
-- flussi, indici di codec
+- flussi, indici codec
 - codec, indici
 ms.topic: article
 ms.date: 05/31/2018
@@ -16,11 +16,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118699813"
 ---
-# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Per enumerare tutti i codec Windows multimediali installati
+# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Per enumerare tutti i codec multimediali Windows installati
 
-Le interfacce di informazioni sui codec usano tutti gli indici dei codec per identificare i singoli codec. I codec vengono indicizzati in modo indipendente per l'audio e per il video. All'interno di un tipo di codec, gli indici vanno da 0 a uno inferiore al numero di codec di quel tipo.
+Tutte le interfacce di informazioni sui codec usano indici di codec per identificare i singoli codec. I codec vengono indicizzati in modo indipendente per l'audio e per i video. All'interno di un tipo di codec, gli indici sono da 0 a uno in meno rispetto al numero di codec di quel tipo.
 
-Il codice di esempio seguente illustra come ottenere l'indice associato a ogni codec. Per compilare questo codice nell'applicazione, includere stdio.h.
+Il codice di esempio seguente mostra come ottenere l'indice associato a ogni codec. Per compilare questo codice nell'applicazione, includere stdio.h.
 
 
 ```C++

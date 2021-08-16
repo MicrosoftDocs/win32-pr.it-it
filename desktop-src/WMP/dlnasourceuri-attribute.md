@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96ebe21a39a67dec9356c5dd5360efb48f4ef029
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07e5383de75fef1a0e1957f270a8a5238951bce4ede1418dbf79ba2038777372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106327169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997171"
 ---
 # <a name="dlnasourceuri-attribute"></a>Attributo DLNASourceURI
 
-L'attributo **DLNASourceURI** è l'URI (Universal Resource Identifier) dell'elemento.
+**L'attributo DLNASourceURI** è l'URI (Universal Resource Identifier) dell'elemento.
 
 ## <a name="applies-to"></a>Si applica a
 
 -   [**Elementi audio**](audio-item-attributes.md)
 -   [**Altri elementi**](other-item-attributes.md)
 -   [**Elementi foto**](photo-item-attributes.md)
--   [**Elementi della playlist**](playlist-attributes-ref.md)
+-   [**Elementi playlist**](playlist-attributes-ref.md)
 -   [**Elementi video**](video-item-attributes.md)
 
 ## <a name="remarks"></a>Commenti
 
-Se l'elemento si trova nella libreria locale dell'utente corrente, questo attributo, l'attributo [**SourceURL**](sourceurl-attribute.md) e il valore restituito da [**IWMPMedia:: Get \_ SourceURL**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_sourceurl) sono tutti uguali.
+Se l'elemento si trova nella libreria locale dell'utente corrente, questo attributo, l'attributo [**SourceURL**](sourceurl-attribute.md) e il valore restituito da [**IWMPMedia::get \_ sourceURL**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_sourceurl) sono tutti uguali.
 
-Se l'elemento non è presente nella libreria locale dell'utente corrente, ma appartiene a una libreria remota, questo attributo è un identificatore del formato DLNA-playsingle://*xxx*.
+Se l'elemento non si trova nella libreria locale dell'utente corrente, ma appartiene a una libreria remota, questo attributo è un identificatore nel formato dlna-playsingle://*xxx*.
 
-È possibile passare un URI DLNA-playsingle al metodo [**IWMPCore3:: newMedia**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore3-newmedia) per ottenere un'interfaccia [**IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) che consente di visualizzare i metadati dell'elemento multimediale e di modificare potenzialmente la classificazione a stelle dell'elemento multimediale. Si noti, tuttavia, che l'URI DLNA-playsingle deve essere per un servizio di directory del contenuto (CDS) già individuato da Windows Media Player. Il metodo **newMedia** non avvierà l'individuazione UPnP e cercherà i CD.
+È possibile passare un URI di riproduzione dlna al metodo [**IWMPCore3::newMedia**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore3-newmedia) per ottenere [**un'interfaccia IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia) che consente di visualizzare i metadati dell'elemento multimediale e potenzialmente modificare la classificazione a stella dell'elemento multimediale. Si noti, tuttavia, che l'URI dlna-playsingle deve essere per un servizio di directory del contenuto (CDS) che Windows Media Player già individuato. Il **metodo newMedia** non avvierà l'individuazione UPnP e non ricercherà CDS.
 
-È possibile modificare la classificazione a stelle di un elemento multimediale in una libreria remota solo se la libreria remota supporta l'operazione di modifica. Le librerie remote ospitate in un computer che esegue Windows 7 supportano l'operazione di modifica. Le librerie remote ospitate in un computer che esegue un sistema operativo Windows precedente a Windows 7 non supportano l'operazione di modifica.
+È possibile modificare la classificazione a stella di un elemento multimediale in una libreria remota solo se la libreria remota supporta l'operazione di modifica. Le librerie remote ospitate in un computer che esegue Windows 7 supportano l'operazione di modifica. Le librerie remote ospitate in un computer che esegue Windows sistema operativo precedente Windows 7 non supportano l'operazione di modifica.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -55,7 +55,7 @@ Se l'elemento non è presente nella libreria locale dell'utente corrente, ma app
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

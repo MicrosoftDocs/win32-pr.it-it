@@ -17,7 +17,7 @@ Le applicazioni possono produrre file di minidump in modalità utente, che conte
 
 Un file di minidump non contiene tutte le informazioni di un file di dump completo dell'arresto anomalo del sistema, ma contiene informazioni sufficienti per eseguire operazioni di debug di base. Per leggere un file di minidump, è necessario disporre dei file binari e dei file di simboli disponibili per il debugger.
 
-Le versioni correnti Microsoft Office e Microsoft Windows creare file minidump allo scopo di analizzare gli errori nei computer dei clienti.
+Le versioni correnti Microsoft Office e Microsoft Windows creare file di minidump allo scopo di analizzare gli errori nei computer dei clienti.
 
 Le funzioni DbgHelp seguenti vengono usate con i file minidump.
 

@@ -1,6 +1,6 @@
 ---
-title: Sintassi delle variabili degli effetti (Direct3D 11)
-description: Una variabile di effetto viene dichiarata con la sintassi descritta in questa sezione.
+title: Sintassi delle variabili effect (Direct3D 11)
+description: Una variabile effect viene dichiarata con la sintassi descritta in questa sezione.
 ms.assetid: c0cfc9dd-2df3-4f38-a0e4-2e494456b3c9
 ms.topic: reference
 ms.date: 05/31/2018
@@ -11,15 +11,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118538394"
 ---
-# <a name="effect-variable-syntax-direct3d-11"></a>Sintassi delle variabili degli effetti (Direct3D 11)
+# <a name="effect-variable-syntax-direct3d-11"></a>Sintassi delle variabili effect (Direct3D 11)
 
-Una variabile di effetto viene dichiarata con la sintassi descritta in questa sezione.
+Una variabile effect viene dichiarata con la sintassi descritta in questa sezione.
 
 ## <a name="syntax"></a>Sintassi
 
 Sintassi di base:
 
-*DataType* *VariableName:* \[ *SemanticName* \]  <  *Annotations*  >  \[ = InitialValue \] ;
+*DataType* *VariableName* \[ *: SemanticName* \]  <  *Annotations* =  >  \[ InitialValue \] ;
 
 Per [la sintassi completa, vedere Sintassi delle variabili (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)
 
@@ -27,9 +27,9 @@ Per [la sintassi completa, vedere Sintassi delle variabili (DirectX HLSL).](/win
 
 | Nome         | Descrizione                                                                                                                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DataType     | Qualsiasi [tipo di](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)blocco [di](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)stato, di base, di trama, di visualizzazione di accesso non ordinato, di shader o di stato.                            |
+| DataType     | Qualsiasi [tipo di](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)blocco di stato, visualizzazione di accesso non ordinato, shader o di base. [](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-to-type)                            |
 | VariableName | Stringa ASCII che identifica in modo univoco il nome della variabile dell'effetto.                                                                                                                   |
-| SemanticName | Stringa ASCII che indica informazioni aggiuntive su come usare una variabile. Una semantica è una stringa ASCII che può essere un valore di sistema predefinito o una stringa utente personalizzata. |
+| SemanticName | Stringa ASCII che indica informazioni aggiuntive sull'uso di una variabile. Una semantica è una stringa ASCII che può essere un valore di sistema predefinito o una stringa utente personalizzata. |
 | Annotazioni  | Una o più informazioni fornite dall'utente (metadati) che vengono ignorate dal sistema di effetti. Per la sintassi, vedere [Sintassi delle annotazioni (Direct3D 11).](d3d11-effect-annotation-syntax.md)     |
 | InitialValue | Valore predefinito della variabile.                                                                                                                                                          |
 
@@ -37,11 +37,11 @@ Per [la sintassi completa, vedere Sintassi delle variabili (DirectX HLSL).](/win
 
  
 
-Una variabile di effetto dichiarata all'esterno di tutte le funzioni è considerata globale nell'ambito; Le variabili dichiarate all'interno di una funzione sono locali per tale funzione.
+Una variabile di effetto dichiarata all'esterno di tutte le funzioni è considerata globale nell'ambito. Le variabili dichiarate all'interno di una funzione sono locali per tale funzione.
 
 ## <a name="example"></a>Esempio
 
-Questo esempio illustra le variabili numeriche degli effetti globali.
+Questo esempio illustra le variabili numeriche con effetto globale.
 
 
 ```
@@ -94,7 +94,7 @@ Texture2D g_MeshTexture;            // Color texture for mesh
 
 
 
-Il campionamento di una trama viene eseguito con un campionatore di trama. Per configurare un campionatore in un effetto, vedere il tipo [di campionatore](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler).
+Il campionamento di una trama viene eseguito con un campionatore di trame. Per configurare un campionatore in un effetto, vedere il [tipo di campionatore](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler).
 
 In questo esempio viene illustrata la dichiarazione di variabili di visualizzazione di accesso non ordinate globali.
 

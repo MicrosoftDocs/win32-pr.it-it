@@ -1,9 +1,9 @@
 ---
-title: Messaggio LVM_GETEXTENDEDLISTVIEWSTYLE (COMmctrl. h)
-description: Ottiene gli stili estesi attualmente in uso per un determinato controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la \_ macro GetExtendedListViewStyle di ListView.
+title: LVM_GETEXTENDEDLISTVIEWSTYLE messaggio (Commctrl.h)
+description: Ottiene gli stili estesi attualmente in uso per un determinato controllo di visualizzazione elenco. Puoi inviare questo messaggio in modo esplicito o usare la \_ macro ListView GetExtendedListViewStyle.
 ms.assetid: 5cfccdb8-a81c-4fa9-a4fa-19cf49bd6ce0
 keywords:
-- Controlli di Windows Message LVM_GETEXTENDEDLISTVIEWSTYLE
+- LVM_GETEXTENDEDLISTVIEWSTYLE del messaggio Windows controlli
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 273da9e7eac85475b90ad05dc5fdd7f70d524562
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d04b2f83f5a8bd55f01aa84e315512c5ccb1b28b17f196c0199fc417544a6737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104047859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968301"
 ---
-# <a name="lvm_getextendedlistviewstyle-message"></a>\_Messaggio GETEXTENDEDLISTVIEWSTYLE LVM
+# <a name="lvm_getextendedlistviewstyle-message"></a>Messaggio LVM \_ GETEXTENDEDLISTVIEWSTYLE
 
-Ottiene gli stili estesi attualmente in uso per un determinato controllo visualizzazione elenco. È possibile inviare questo messaggio in modo esplicito o usare la macro [**\_ GetExtendedListViewStyle di ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getextendedlistviewstyle) .
+Ottiene gli stili estesi attualmente in uso per un determinato controllo di visualizzazione elenco. Puoi inviare questo messaggio in modo esplicito o usare la macro [**\_ ListView GetExtendedListViewStyle.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getextendedlistviewstyle)
 
 ## <a name="parameters"></a>Parametri
 
@@ -37,7 +37,7 @@ Ottiene gli stili estesi attualmente in uso per un determinato controllo visuali
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un **valore DWORD** che rappresenta gli stili attualmente in uso per un determinato controllo di visualizzazione elenco. Questo valore può essere una combinazione di [stili di List-View estesa](extended-list-view-styles.md).
+Restituisce un **valore DWORD** che rappresenta gli stili attualmente in uso per un determinato controllo di visualizzazione elenco. Questo valore può essere una combinazione di [stili List-View estesi](extended-list-view-styles.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,9 +45,9 @@ Restituisce un **valore DWORD** che rappresenta gli stili attualmente in uso per
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows Vista\]<br/>                                        |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                  |
-| Intestazione<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                        |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                  |
+| Intestazione<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

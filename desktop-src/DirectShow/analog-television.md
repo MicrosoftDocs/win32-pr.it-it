@@ -1,40 +1,40 @@
 ---
-description: Televisione analoga
+description: Tv analogica
 ms.assetid: 9f2c18ec-3684-42a8-a3df-5f8827b27642
-title: Televisione analoga
+title: Tv analogica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33af8ba94831afed59d783598dbf6bc0eaee0ec6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 886c2b3f93ca70fb4a533f131611431c4a15df51169f70ed49f321c0ccfc8c2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104124251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824760"
 ---
-# <a name="analog-television"></a>Televisione analoga
+# <a name="analog-television"></a>Tv analogica
 
-La televisione analogica differisce da altri scenari di acquisizione video in diversi modi:
+La tv analoga è diversa da altri scenari di acquisizione video in diversi modi:
 
--   La scheda Tuner viene sintonizzata su un segnale analogico, che viene quindi digitato.
--   L'audio viene portato nel segnale analogico. Il modo in cui l'audio raggiunge la scheda audio varia a seconda dell'hardware.
--   Il segnale può contenere dati aggiuntivi nell'intervallo di spaziatura verticale (VBI), ad esempio sottotitoli (CC), World Standard Teletext (WST) e Extended Data Services (XDS).
+-   La scheda si tuner si abilita a un segnale analogico, che viene quindi digitalizzato.
+-   L'audio viene trasportato nel segnale analogico. Il modo in cui l'audio raggiunge la scheda audio varia a seconda dell'hardware.
+-   Il segnale può contenere dati aggiuntivi nell'intervallo di blanking verticale (VBI), ad esempio sottotitoli codificati (CC), WST (World Standard Teletext) e extended data services (XDS).
 
-Il diagramma seguente illustra un tipico grafico di filtro per l'anteprima della televisione.
+Il diagramma seguente mostra un grafico di filtro tipico per l'anteprima di programmi televisivi.
 
-![grafico analogico TV](images/vidcap06.png)
+![grafico della tv analogica](images/vidcap06.png)
 
--   Il filtro del [sintonizzatore TV](tv-tuner-filter.md) controlla l'ottimizzazione.
--   Il filtro [audio TV](tv-audio-filter.md) controlla la decodifica audio.
--   Se la scheda Tuner contiene più di un input fisico, il filtro per la barra del [video analogo](analog-video-crossbar-filter.md) consente all'applicazione di selezionare l'input da decodificare e di cui eseguire il rendering.
--   Il filtro di [acquisizione video WDM](wdm-video-capture-filter.md) recapita il flusso video digitato.
+-   Il [filtro Siner TV controlla](tv-tuner-filter.md) l'ottimizzazione.
+-   Il [filtro AUDIO TV](tv-audio-filter.md) controlla la decodifica audio.
+-   Se la scheda siner ha più di un input fisico, il filtro [crossbar video](analog-video-crossbar-filter.md) analogico consente all'applicazione di selezionare l'input decodificato e sottoposto a rendering.
+-   Il [filtro di acquisizione video WDM](wdm-video-capture-filter.md) recapita il flusso video digitalizzato.
 
-Il generatore di grafici di acquisizione inserisce automaticamente tutti i filtri necessari a Monte dal filtro di acquisizione.
+Capture Graph Builder inserisce automaticamente tutti i filtri necessari a monte dal filtro di acquisizione.
 
 Questa sezione contiene i seguenti argomenti:
 
--   [Ottimizzazione della televisione analoga](analog-television-tuning.md)
--   [Audio TV analogico](analog-television-audio.md)
--   [Didascalie e televideo chiusi](closed-captions-and-teletext.md)
+-   [Ottimizzazione della tv analogica](analog-television-tuning.md)
+-   [Audio televisivo analogico](analog-television-audio.md)
+-   [Sottotitoli codificati e teletext](closed-captions-and-teletext.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -37,7 +37,7 @@ g \_ wszWMInitialKey
 
 | Tipo file | Valore di esempio |
 |-----------|---------------|
-| Audio     | "Un minorenne"     |
+| Audio     | "A Minor"     |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: Inviato una volta a una finestra, dopo l'uscita dal ciclo modale di passaggio o di ridimensionamento.
+description: Inviato una volta a una finestra, dopo l'uscita dal ciclo modale di spostamento o ridimensionamento.
 ms.assetid: 3466bfb5-c38d-49d8-a4ab-bf23d09c454c
-title: Messaggio WM_EXITSIZEMOVE (winuser. h)
+title: WM_EXITSIZEMOVE messaggio (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22eda44827345ef491814aab69bf0b802b924e5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f451e846f2a262a30ccc73121d52c3732dbdfb160fe529535dcf353f077c351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106314866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849253"
 ---
-# <a name="wm_exitsizemove-message"></a>\_Messaggio EXITSIZEMOVE WM
+# <a name="wm_exitsizemove-message"></a>Messaggio \_ WM EXITSIZEMOVE
 
-Inviato una volta a una finestra, dopo l'uscita dal ciclo modale di passaggio o di ridimensionamento. La finestra entra nel ciclo modale di movimento o di ridimensionamento quando l'utente fa clic sulla barra del titolo della finestra o sul bordo di ridimensionamento oppure quando la finestra passa il messaggio [**WM \_ SYSCOMMAND**](../menurc/wm-syscommand.md) alla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) e il parametro *wParam* del messaggio specifica il valore della **\_ dimensione** **SC \_ MOV** e o SC. L'operazione è completa quando [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) restituisce.
+Inviato una volta a una finestra, dopo l'uscita dal ciclo modale di spostamento o ridimensionamento. La finestra entra nel ciclo modale di spostamento o ridimensionamento quando l'utente fa clic sulla barra del titolo o sul bordo di ridimensionamento della finestra oppure quando la finestra passa il messaggio [**\_ SYSCOMMAND WM**](../menurc/wm-syscommand.md) alla funzione [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) e il parametro *wParam* del messaggio specifica il valore **SC \_ MOV** E o **SC \_ SIZE.** L'operazione viene completata al [**termine di DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 
-Una finestra riceve questo messaggio tramite la funzione [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una finestra riceve questo messaggio tramite la [**relativa funzione WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -56,7 +56,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows 2000 Professional \[solo app desktop\]<br/>                                               |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                     |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h (include Windows. h)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Un'applicazione deve restituire zero se elabora questo messaggio.
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**\_ENTERSIZEMOVE WM**](wm-entersizemove.md)
+[**WM \_ ENTERSIZEMOVE**](wm-entersizemove.md)
 </dt> <dt>
 
 **Informazioni concettuali**

@@ -1,19 +1,19 @@
 ---
 description: Elenco di tutte le proprietà da visualizzare nella pagina dei dettagli.
 ms.assetid: 7e784599-4020-4c81-84df-2a6d0fec4aa1
-title: System. Propin. FullDetails
+title: System.PropList.FullDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf1e05d1c9f09003a5af8a7d16ea89114391074
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bda4399c85b1084762d0e255b12a0d15b9bfc1cf93683c6f8433db106f04a556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104232344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465652"
 ---
-# <a name="systemproplistfulldetails"></a>System. Propin. FullDetails
+# <a name="systemproplistfulldetails"></a>System.PropList.FullDetails
 
-Elenco di tutte le proprietà da visualizzare nella pagina dei dettagli. I gruppi di proprietà possono essere inclusi in questo elenco per organizzare più facilmente l'interfaccia utente. Eseguire la registrazione in RegValue di "FullDetails".
+Elenco di tutte le proprietà da visualizzare nella pagina dei dettagli. I gruppi di proprietà possono essere inclusi in questo elenco per organizzare più facilmente l'interfaccia utente. Eseguire la registrazione nel regvalue di "FullDetails".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,13 +62,13 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

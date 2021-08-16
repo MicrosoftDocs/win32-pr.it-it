@@ -1,5 +1,5 @@
 ---
-title: Callback delle parole chiave dinamiche del firewall
+title: Callback di parole chiave dinamiche del firewall
 description: Le parole chiave dinamiche del firewall contengono i callback seguenti.
 keywords:
 - Parole chiave dinamiche del firewall, callback
@@ -13,7 +13,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118759174"
 ---
-# <a name="firewall-dynamic-keywords-callbacks"></a>Callback delle parole chiave dinamiche del firewall
+# <a name="firewall-dynamic-keywords-callbacks"></a>Callback di parole chiave dinamiche del firewall
 
 Le parole chiave dinamiche del firewall contengono i callback seguenti.
 
@@ -23,7 +23,7 @@ Le parole chiave dinamiche del firewall contengono i callback seguenti.
 
 | Argomento | Descrizione |
 |-|-|
-| [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) | Funzione di callback, implementata dall'utente, che viene richiamata con notifiche relative alle modifiche apportate agli oggetti indirizzo di parola chiave dinamica[(FW_DYNAMIC_KEYWORD_ADDRESS0](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0)). |
+| [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) | Funzione di callback, implementata, che viene richiamata con notifiche relative alle modifiche apportate agli oggetti dell'indirizzo[FW_DYNAMIC_KEYWORD_ADDRESS0](/windows/win32/api/netfw/ns-netfw-fw_dynamic_keyword_address0)dinamica. |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

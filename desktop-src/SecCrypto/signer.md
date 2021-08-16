@@ -13,29 +13,29 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 974341eb996f2b5d3701757a5352ef56e2837390
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4da0f63c64a85290d5b36cad046446a9a0feedcd897869a0df1932ee2532a687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898513"
 ---
 # <a name="signer-object"></a>Oggetto firmatario
 
-\[L'oggetto **firmatario** è disponibile per l'uso nei sistemi operativi specificati nella sezione requisiti. Usare invece la [**classe CmsSigner**](/dotnet/api/system.security.cryptography.pkcs.cmssigner?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio dei nomi [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[**L'oggetto** Firmatario è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. Usare invece la [**classe CmsSigner**](/dotnet/api/system.security.cryptography.pkcs.cmssigner?view=dotnet-plat-ext-3.1&preserve-view=true) nello spazio dei nomi [**System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-L'oggetto **firmatario** stabilisce il firmatario di un oggetto [**SignedData**](signeddata.md) o [**SignedCode**](signedcode.md) . Il [**certificato**](certificate.md) dell'oggetto **firmatario** deve avere una chiave privata disponibile che può essere usata per firmare i dati.
+**L'oggetto Signer** stabilisce il firmatario di un [**oggetto SignedData**](signeddata.md) [**o SignedCode.**](signedcode.md) Il [**certificato**](certificate.md) **dell'oggetto Firmatario** deve avere una chiave privata disponibile che può essere usata per firmare i dati.
 
 ## <a name="members"></a>Membri
 
-L'oggetto **firmatario** presenta questi tipi di membri:
+**L'oggetto Firmatario** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-L'oggetto **firmatario** presenta questi metodi.
+**L'oggetto Firmatario** dispone di questi metodi.
 
 
 
@@ -49,14 +49,14 @@ L'oggetto **firmatario** presenta questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-L'oggetto **firmatario** presenta queste proprietà.
+**L'oggetto Firmatario** ha queste proprietà.
 
 
 
 | Proprietà                                                                     | Tipo di accesso           | Descrizione                                                                                                                                                                                                                                                                                                                                 |
 |:-----------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AuthenticatedAttributes**](signer-authenticatedattributes.md)<br/> | Sola lettura<br/>  | Raccolta di attributi autenticati.<br/>                                                                                                                                                                                                                                                                                      |
-| [**Certificato**](signer-certificate.md)<br/>                         | Lettura/Scrittura<br/> | Oggetto [**certificato**](certificate.md) che rappresenta il certificato di un firmatario dei dati.<br/> Quando il valore di questa proprietà viene reimpostato, direttamente o indirettamente, viene reimpostato l'intero [*stato*](../secgloss/s-gly.md) dell'oggetto.<br/> Si tratta della proprietà predefinita.<br/> |
+| [**Certificato**](signer-certificate.md)<br/>                         | Lettura/Scrittura<br/> | Oggetto [**Certificate**](certificate.md) che rappresenta il certificato di un firmatario dei dati.<br/> Quando il valore di questa proprietà viene reimpostato, [](../secgloss/s-gly.md) direttamente o indirettamente, viene reimpostato l'intero stato dell'oggetto.<br/> Si tratta della proprietà predefinita.<br/> |
 | [**Catena**](signer-chain.md)<br/>                                     | Sola lettura<br/>  | Catena del firmatario.<br/>                                                                                                                                                                                                                                                                                                         |
 | [**Opzioni**](signer-options.md)<br/>                                 | Lettura/Scrittura<br/> | Imposta o recupera l'opzione del certificato del firmatario.<br/>                                                                                                                                                                                                                                                                               |
 
@@ -66,9 +66,9 @@ L'oggetto **firmatario** presenta queste proprietà.
 
 ## <a name="remarks"></a>Commenti
 
-È possibile creare l'oggetto **firmatario** ed è sicuro per lo scripting. Il ProgID per l'oggetto **firmatario** è capicom. Firmatario. 2.
+**L'oggetto Firmatario** può essere creato ed è sicuro per lo scripting. Il ProgID per **l'oggetto Signer** è CAPICOM. Firmatario.2.
 
-**CAPICOM 1. *x*:** il ProgID per l'oggetto **firmatario** è capicom. Firmatario. 1.
+**CAPICOM 1. *x*:** ProgID per l'oggetto **Signer** è CAPICOM. Firmatario.1.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -76,7 +76,7 @@ L'oggetto **firmatario** presenta queste proprietà.
 
 | Requisito | Valore |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Componente ridistribuibile<br/> | CAPICOM 2,0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
+| Componente ridistribuibile<br/> | CAPICOM 2.0 o versioni successive in Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -85,7 +85,7 @@ L'oggetto **firmatario** presenta queste proprietà.
 
 <dl> <dt>
 
-[**Oggetti Cryptography**](cryptography-objects.md)
+[**Oggetti di crittografia**](cryptography-objects.md)
 </dt> </dl>
 
  

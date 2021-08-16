@@ -22,7 +22,7 @@ ms.locfileid: "118719675"
 ---
 # <a name="icontextnodeloadpropertiesdata-method"></a>Metodo IContextNode::LoadPropertiesData
 
-Ricrea i dati delle proprietà interne e specifici dell'applicazione per una matrice di byte creata in precedenza con [**IContextNode::SavePropertiesData.**](icontextnode-savepropertiesdata.md)
+Ricrea i dati delle proprietà interne e specifici dell'applicazione per una matrice di byte creata in precedenza con [**IContextNode::SavePropertiesData**](icontextnode-savepropertiesdata.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -44,27 +44,27 @@ HRESULT LoadPropertiesData(
 *cbPropertiesDataSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensione della matrice di dati delle proprietà.
+Dimensioni della matrice di dati delle proprietà.
 
 </dd> <dt>
 
 *pbPropertiesData* \[ Pollici\]
 </dt> <dd>
 
-Matrice di interi senza segno a 8 bit contenente le informazioni sulla proprietà da caricare.
+Matrice di interi senza segno a 8 bit contenente le informazioni sulle proprietà da caricare.
 
 </dd> <dt>
 
 *pfSuccessful* \[ Cambio\]
 </dt> <dd>
 
-**VARIANT \_ TRUE** se i dati della proprietà sono stati caricati correttamente. in caso contrario, **VARIANT \_ FALSE.**
+**VARIANT \_ TRUE** se i dati delle proprietà sono stati caricati correttamente. in caso contrario, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna.](classes-and-interfaces---ink-analysis.md)
+Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi input penna](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 
 | Requisito | Valore |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo app desktop XP Tablet PC \[ Edition\]<br/>                                                 |
+| Client minimo supportato<br/> | Windows Solo app desktop tablet PC Edition \[ XP\]<br/>                                                 |
 | Server minimo supportato<br/> | Nessuno supportato<br/>                                                                                     |
 | Intestazione<br/>                   | <dl> <dt>IACom.h (richiede anche IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
@@ -104,7 +104,7 @@ Per una descrizione dei valori restituiti, vedere [Classi e interfacce - Analisi
 [**IContextNode::SavePropertiesData**](icontextnode-savepropertiesdata.md)
 </dt> <dt>
 
-[Informazioni di riferimento per l'analisi input penna](ink-analysis-reference.md)
+[Informazioni di riferimento per l'analisi dell'input penna](ink-analysis-reference.md)
 </dt> </dl>
 
  

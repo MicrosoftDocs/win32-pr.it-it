@@ -3,7 +3,7 @@ title: Funzione RWByteAddressBuffer::InterlockedExchange
 description: Scambia un valore in modo atomico.
 ms.assetid: a50f4cba-a7a2-44b0-9de7-003b4c7a947f
 keywords:
-- Funzione InterlockedExchange HLSL
+- HLSL della funzione InterlockedExchange
 topic_type:
 - apiref
 api_name:
@@ -56,7 +56,7 @@ Valore di input.
 
 </dd> <dt>
 
-*valore \_ originale* \[ in uscita\]
+*valore \_ originale* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
@@ -71,7 +71,7 @@ Questa funzione non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Questa operazione può essere eseguita solo su risorse di tipo scalare e variabili di memoria condivisa. Questa funzione può essere utilizzata in tre modi. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario la funzione si riduce all'operazione eseguita usando operazioni locali. Questa operazione è disponibile solo quando R è leggibile e scrivibile.
+Questa operazione può essere eseguita solo su risorse di tipo scalare e variabili di memoria condivisa. Esistono tre possibili utilizzi per questa funzione. Il primo è quando R è un tipo di variabile di memoria condivisa. In questo caso, la funzione esegue l'operazione sul registro di memoria condivisa a cui fa riferimento dest. Il secondo scenario è quando R è un tipo di variabile di risorsa. In questo scenario, la funzione esegue l'operazione sul percorso della risorsa a cui fa riferimento dest. Infine, il terzo scenario è quando R è un tipo di variabile locale. In questo scenario, la funzione si riduce all'operazione eseguita usando operazioni locali. Questa operazione è disponibile solo quando R è leggibile e scrivibile.
 
 Questa funzione è supportata nei tipi di shader seguenti:
 

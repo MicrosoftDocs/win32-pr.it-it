@@ -4,8 +4,8 @@ description: Il metodo setProxyBypassForLocal specifica se il server proxy viene
 ms.assetid: b308957a-0d7e-45be-8625-db198b276dad
 keywords:
 - Metodo setProxyBypassForLocal Windows Media Player
-- Metodo setProxyBypassForLocal Windows Media Player , interfaccia IWMPNetwork
-- Metodo setProxyBypassForLocal dell Windows Media Player interfaccia IWMPNetwork
+- Metodo setProxyBypassForLocal Windows Media Player, interfaccia IWMPNetwork
+- Interfaccia IWMPNetwork Windows Media Player, metodo setProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -58,7 +58,7 @@ Implements IWMPNetwork.setProxyBypassForLocal
 *bstrProtocol* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **System.String** che rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati](supported-protocols-and-file-types.md).
+**System.String che** rappresenta il nome del protocollo. Per un elenco dei protocolli supportati, vedere [Protocolli e tipi di file supportati.](supported-protocols-and-file-types.md)
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Questo metodo ha esito negativo a meno che l'applicazione chiamante non sia in e
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio di codice seguente viene utilizzato **setProxyBypassForLocal** per specificare se il server proxy Windows Media Player viene ignorato, quando si usa il protocollo MMS, se il server di origine si trova in una rete locale. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
+L'esempio di codice seguente usa **setProxyBypassForLocal** per specificare se il server proxy Windows Media Player viene ignorato, quando si usa il protocollo MMS, se il server di origine si trova in una rete locale. **L'oggetto AxWMPLib.AxWindowsMediaPlayer** è rappresentato dalla variabile denominata player.
 
 
 ```CSharp
@@ -166,7 +166,7 @@ End If
 
 | Requisito | Valore |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/>   | Windows Media Player serie 9 o successiva<br/>                                                                      |
+| Versione<br/>   | Windows Media Player serie 9 o successive<br/>                                                                      |
 | Spazio dei nomi<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

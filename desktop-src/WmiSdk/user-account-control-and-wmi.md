@@ -24,7 +24,7 @@ Controllo dell'account utente influisce sui dati WMI restituiti da uno strumento
 Le sezioni seguenti descrivono la funzionalità controllo dell'account utente:
 
 -   [Controllo dell'account utente](#user-account-control-and-wmi)
--   [Account necessario per eseguire strumenti di Command-Line WMI](#account-needed-to-run-wmi-command-line-tools)
+-   [Account necessario per eseguire wmi Command-Line Tools](#account-needed-to-run-wmi-command-line-tools)
 -   [Gestione delle connessioni remote in Controllo dell'account utente](#handling-remote-connections-under-uac)
 -   [Effetto di Controllo dell'account utente sui dati WMI restituiti a script o applicazioni](#uac-effect-on-wmi-data-returned-to-scripts-or-applications)
 -   [Argomenti correlati](#related-topics)

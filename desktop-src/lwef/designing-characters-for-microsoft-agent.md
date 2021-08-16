@@ -15,7 +15,7 @@ ms.locfileid: "118751983"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Questo documento fornisce informazioni che consentono di progettare e sviluppare un carattere da usare con Microsoft Agent. Include informazioni concettuali e tecniche sulla progettazione di caratteri, immagini e animazioni; le dimensioni, l'uso del colore e i tipi di immagini che è necessario creare; animazioni suggerite; animazioni parlanti; e gli stati dell'agente. I principi di animazione efficaci sono descritti anche per l'uso nella creazione di caratteri animati visivamente convincenti.
+Questo documento fornisce informazioni utili per progettare e sviluppare un carattere da usare con Microsoft Agent. Include informazioni concettuali e tecniche sulla progettazione di caratteri, immagini e animazioni; le dimensioni, l'uso del colore e i tipi di immagini che è necessario creare; animazioni suggerite; pronunciare animazioni; e stati dell'agente. I principi di animazione efficaci sono descritti anche per l'uso nella creazione di caratteri animati visivamente efficaci.
 
 Le sezioni seguenti descrivono come progettare i caratteri per Microsoft Agent:
 
@@ -28,7 +28,7 @@ Le sezioni seguenti descrivono come progettare i caratteri per Microsoft Agent:
 
 <dl> <dt>
 
-[Uso dell'editor di caratteri di Microsoft Agent](using-the-microsoft-agent-character-editor.md)
+[Utilizzo dell'editor di caratteri di Microsoft Agent](using-the-microsoft-agent-character-editor.md)
 </dt> </dl>
 
  

@@ -28,7 +28,7 @@ Per disattivare la sicurezza con Dcomcnfg.exe, sia il client che il server devon
 1.  Eseguire Dcomcnfg.exe.
 2.  Nella pagina **Applicazioni** selezionare l'applicazione che rappresenta il server. Fare clic **sul pulsante** Proprietà oppure fare doppio clic sull'applicazione selezionata.
 3.  Fare clic sulla scheda **General** (Generale).
-4.  Nella casella **di riepilogo Livello** di autenticazione predefinito selezionare **(Nessuno)**.
+4.  Nella casella **di riepilogo Livello di** autenticazione predefinito selezionare **(Nessuno)**.
 5.  Fare clic **sul pulsante** Applica per applicare le modifiche. Tuttavia, le modifiche non vengono applicate alle istanze in esecuzione dell'applicazione.
 6.  Se il client viene visualizzato nell'elenco nella pagina *Applicazioni,* ripetere i passaggi da 2 a 5, scegliendo il client anziché il server per il passaggio 2. Fare quindi clic su **OK**. Se il client non è in elenco, è possibile eseguire una delle tre operazioni seguenti:
     -   È possibile impostare il livello di autenticazione del client su Nessuno a livello di computer usando Dcomcnfg.exe. Vedere l'avviso e la procedura seguente.

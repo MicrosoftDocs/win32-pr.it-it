@@ -22,7 +22,7 @@ Quando l'autorità di certificazione (CA) ha verificato le informazioni di ident
 
 L'applicazione ricevente passa il messaggio al controllo di registrazione certificati. Il controllo registrazione certificati apre quindi il messaggio ed estrae i certificati. All'utente viene visualizzata una finestra di dialogo in cui viene chiesto se l'utente accetterà i certificati autofirmati nell'archivio "Radice". Se l'utente accetta il certificato radice, il resto dei certificati (ad eccezione del certificato del richiedente) viene inserito nell'archivio "CA". Il certificato del richiedente viene inserito nell'archivio certificati specificato dal richiedente nella [**proprietà MyStoreName.**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename)
 
-L'esempio seguente illustra come usare Visual Basic Scripting Edition (VBScript) e HTML in una pagina Web per ricevere e archiviare i certificati restituiti.
+Nell'esempio seguente viene illustrato come usare Visual Basic Scripting Edition (VBScript) e HTML in una pagina Web per ricevere e archiviare i certificati restituiti.
 
 
 ```VB

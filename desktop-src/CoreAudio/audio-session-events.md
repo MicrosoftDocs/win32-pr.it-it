@@ -1,7 +1,7 @@
 ---
-description: Eventi sessione audio
+description: Eventi della sessione audio
 ms.assetid: 6943b405-0807-412b-a149-fc3a8ece1b48
-title: Eventi sessione audio
+title: Eventi della sessione audio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cf0c3441a7f6f6835070a530c4ebb8985354b2701f312f2f085c5e449f12cbf0
@@ -11,20 +11,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118407225"
 ---
-# <a name="audio-session-events"></a>Eventi sessione audio
+# <a name="audio-session-events"></a>Eventi della sessione audio
 
-Un'applicazione che gestisce i flussi audio in modalità condivisa può registrarsi per ricevere notifiche quando si verificano eventi di sessione. Come illustrato in precedenza, ogni flusso appartiene a una [sessione audio.](audio-sessions.md) Un evento di sessione viene avviato da una modifica dello stato di una sessione audio.
+Un'applicazione che gestisce i flussi audio in modalità condivisa può registrarsi per ricevere notifiche quando si verificano eventi di sessione. Come illustrato in precedenza, ogni flusso appartiene a una [sessione audio](audio-sessions.md). Un evento di sessione viene avviato da una modifica dello stato di una sessione audio.
 
 Un'applicazione client può registrarsi per ricevere notifiche dei tipi di eventi di sessione seguenti:
 
--   Il livello del volume master o lo stato di disattivazione del sottomix della sessione è stato modificato.
+-   Il livello del volume master o lo stato di modifica del sottomix della sessione è stato modificato.
 -   Il livello di volume di uno o più canali del sottomix della sessione è stato modificato.
 -   La sessione è stata disconnessa.
 -   Lo stato dell'attività della sessione è stato modificato in attivo, inattivo o scaduto.
 -   Alla sessione è stato assegnato un nuovo parametro di raggruppamento.
--   Una proprietà dell'interfaccia utente della sessione (icona o nome visualizzato) è stata modificata.
+-   È stata modificata una proprietà dell'interfaccia utente della sessione (icona o nome visualizzato).
 
-Il client riceve le notifiche di questi eventi tramite i metodi nella relativa implementazione [**dell'interfaccia IAudioSessionEvents.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) A differenza delle altre interfacce in WASAPI, implementate dal modulo di sistema WASAPI, il client implementa **IAudioSessionEvents**. I metodi in questa interfaccia ricevono i callback dal modulo di sistema WASAPI quando si verificano eventi di sessione.
+Il client riceve le notifiche di questi eventi tramite i metodi nella relativa implementazione [**dell'interfaccia IAudioSessionEvents.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) A differenza delle altre interfacce in WASAPI, implementate dal modulo di sistema WASAPI, il client implementa **IAudioSessionEvents.** I metodi in questa interfaccia ricevono i callback dal modulo di sistema WASAPI quando si verificano eventi di sessione.
 
 Per iniziare a ricevere notifiche, il client chiama il metodo [**IAudioSessionControl::RegisterAudioSessionNotification**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-registeraudiosessionnotification) per registrare [**l'interfaccia IAudioSessionEvents.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) Quando il client non richiede più notifiche, chiama il metodo [**IAudioSessionControl::UnregisterAudioSessionNotification**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-unregisteraudiosessionnotification) per eliminare la registrazione.
 
@@ -195,13 +195,13 @@ public:
 
 
 
-La classe CAudioSessionEvents nell'esempio di codice precedente è un'implementazione [**dell'interfaccia IAudioSessionEvents.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) Questa particolare implementazione potrebbe far parte di un'applicazione console che stampa informazioni sugli eventi di sessione in una finestra del prompt dei comandi. Poiché **IAudioSessionEvents** eredita da [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown), la definizione della classe contiene implementazioni dei metodi **IUnknown** [**AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)e [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). I metodi pubblici rimanenti nella definizione della classe sono specifici **dell'interfaccia IAudioSessionEvents.**
+La classe CAudioSessionEvents nell'esempio di codice precedente è un'implementazione [**dell'interfaccia IAudioSessionEvents.**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) Questa particolare implementazione potrebbe far parte di un'applicazione console che stampa informazioni sugli eventi di sessione in una finestra del prompt dei comandi. Poiché **IAudioSessionEvents** eredita da [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown)la definizione della classe contiene le implementazioni dei metodi **IUnknown** [**AddRef,**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)e [**QueryInterface.**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) I metodi pubblici rimanenti nella definizione della classe sono specifici **dell'interfaccia IAudioSessionEvents.**
 
-Alcuni client potrebbero non essere interessati a monitorare tutti i tipi di eventi di sessione. Nell'esempio di codice precedente diversi metodi di notifica nella classe CAudioSessionEvents non esercitono alcuna operazione. Ad esempio, il [**metodo OnChannelVolumeChanged**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onchannelvolumechanged) non esegue alcuna operazione se non per restituire il codice di stato S \_ OK. Questa applicazione non monitora i volumi del canale perché non modifica i volumi del canale (chiamando i metodi nell'interfaccia [**IChannelAudioVolume)**](/windows/desktop/api/Audioclient/nn-audioclient-ichannelaudiovolume) e non condivide la sessione con altre applicazioni che potrebbero modificare i volumi del canale.
+Alcuni client potrebbero non essere interessati a monitorare tutti i tipi di eventi di sessione. Nell'esempio di codice precedente diversi metodi di notifica nella classe CAudioSessionEvents non esemplono alcuna operazione. Ad esempio, il [**metodo OnChannelVolumeChanged**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onchannelvolumechanged) non esegue alcuna operazione se non per restituire il codice di stato S \_ OK. Questa applicazione non monitora i volumi di canale perché non modifica i volumi di canale (chiamando i metodi [**nell'interfaccia IChannelAudioVolume)**](/windows/desktop/api/Audioclient/nn-audioclient-ichannelaudiovolume) e non condivide la sessione con altre applicazioni che potrebbero modificare i volumi di canale.
 
-Gli unici tre metodi nella classe CAudioSessionEvents che notificano all'utente gli eventi di sessione sono [**OnSimpleVolumeChanged,**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsimplevolumechanged) [**OnStateChanged**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onstatechanged)e [**OnSessionDisconnected.**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) Ad esempio, se l'utente esegue il programma di controllo del volume di sistema Sndvol e usa il controllo del volume in Sndvol per modificare il livello di volume dell'applicazione, stampa immediatamente il nuovo livello `OnSimpleVolumeChanged` di volume.
+Gli unici tre metodi nella classe CAudioSessionEvents che notificano all'utente gli eventi di sessione sono [**OnSimpleVolumeChanged,**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsimplevolumechanged) [**OnStateChanged**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onstatechanged)e [**OnSessionDisconnected.**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) Ad esempio, se l'utente esegue il programma di controllo del volume di sistema Sndvol e usa il controllo del volume in Sndvol per modificare il livello del volume dell'applicazione, stampa immediatamente il nuovo livello `OnSimpleVolumeChanged` del volume.
 
-Per un esempio di codice che registra e annulla la registrazione [**dell'interfaccia IAudioSessionEvents**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) di un client, vedere [Eventi audio per applicazioni audio legacy.](audio-events-for-legacy-audio-applications.md)
+Per un esempio di codice che registra e annulla la registrazione dell'interfaccia [**IAudioSessionEvents**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) di un client, vedere Eventi audio per applicazioni [audio legacy.](audio-events-for-legacy-audio-applications.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -37,7 +37,7 @@ Descrizione
 
 LanguageID
 
-Intero lungo che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID lingua primaria e un ID lingua secondaria. Gli esempi seguenti sono i valori per le lingue supportate da Microsoft Agent. Per determinare il valore per altri linguaggi, vedere la documentazione *di Platform SDK.*
+Valore Long integer che specifica l'ID lingua per il carattere. L'ID lingua (LANGID) per un carattere è un valore a 16 bit definito da Windows, costituito da un ID lingua primaria e un ID lingua secondaria. Gli esempi seguenti sono i valori per le lingue supportate da Microsoft Agent. Per determinare il valore per altri linguaggi, vedere la documentazione *di Platform SDK.*
 
  
 

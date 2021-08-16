@@ -49,14 +49,14 @@ typedef enum _BITS_JOB_TRANSFER_POLICY {
 <span id="BITS_JOB_TRANSFER_POLICY_ALWAYS"></span><span id="bits_job_transfer_policy_always"></span>**BITS_JOB_TRANSFER_POLICY_ALWAYS**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito quando sarà disponibile la connettività, indipendentemente dal costo.
+Specifica che il processo verrà trasferito quando la connettività è disponibile, indipendentemente dal costo.
 
 </dd> <dt>
 
 <span id="BITS_JOB_TRANSFER_POLICY_NOT_ROAMING"></span><span id="bits_job_transfer_policy_not_roaming"></span>**BITS_JOB_TRANSFER_POLICY_NOT_ROAMING**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito quando la connettività è disponibile, a meno che tale connettività non sia soggetta a costi di roaming.
+Specifica che il processo verrà trasferito quando la connettività è disponibile, a meno che tale connettività non sia soggetta a supplementi mobili.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Specifica che il processo verrà trasferito solo quando è disponibile la connet
 <span id="BITS_JOB_TRANSFER_POLICY_STANDARD"></span><span id="bits_job_transfer_policy_standard"></span>**BITS_JOB_TRANSFER_POLICY_STANDARD**
 </dt> <dd>
 
-Specifica che il processo verrà trasferito solo quando è disponibile la connettività, che non è soggetta a un supplemento né a un esaurimento quasi.
+Specifica che il processo verrà trasferito solo quando è disponibile la connettività, che non è soggetta a un supplemento né quasi esaurita.
 
 </dd> <dt>
 

@@ -1,23 +1,23 @@
 ---
-title: IMAX (SM4-ASM)
-description: Numero intero a livello di componente.
+title: imax (sm4 - asm)
+description: Valore massimo intero per componente.
 ms.assetid: 005468AA-577E-441F-ACD5-37A691E62CDD
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc1bc6311573b1e7b39fbeaa93904203e7aae2ae
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 20da254802d32b936724e11cf947baf91c205a0d9f61754c2e142a1380166640
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104117181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672861"
 ---
-# <a name="imax-sm4---asm"></a>IMAX (SM4-ASM)
+# <a name="imax-sm4---asm"></a>imax (sm4 - asm)
 
-Numero intero a livello di componente.
+Valore massimo intero per componente.
 
 
 
-| dest \[ . mask IMAX \] , \[  - \] src0 \[ . Swizzle \] , \[ - \] src1 \[ . Swizzle \] , |
+| imax dest \[ \] .mask, \[  - \] src0 \[ .swizzle, \] \[ - \] src1 \[ .swizzle \] , |
 |--------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Numero intero a livello di componente.
 
 | Elemento                                                            | Descrizione                                                                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[nel \] risultato dell'operazione.<br/> *dest*  =  *src0*  >  *src1* ? *src0* : *src1*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nel \] valore da confrontare con *src1*.<br/>                                                       |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nel \] valore da confrontare con *src0*.<br/>                                                       |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[in \] Risultato dell'operazione.<br/> *dest*  =  *src0*  >  *src1* ? *src0* : *src1*<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[in \] Valore da confrontare con *src1*.<br/>                                                       |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[in \] Valore da confrontare con *src0*.<br/>                                                       |
 
 
 
@@ -38,7 +38,7 @@ Numero intero a livello di componente.
 
 ## <a name="remarks"></a>Commenti
 
-Il modificatore negazioni facoltativo negli operandi di origine richiede il complemento di 2 prima di eseguire l'operazione.
+Il modificatore di negazione facoltativo sugli operandi di origine accetta il complemento 2 prima di eseguire l'operazione.
 
 Questa istruzione si applica alle fasi dello shader seguenti:
 
@@ -52,7 +52,7 @@ Questa istruzione si applica alle fasi dello shader seguenti:
 
  
 
-## <a name="minimum-shader-model"></a>Modello Shader minimo
+## <a name="minimum-shader-model"></a>Modello shader minimo
 
 Questa funzione è supportata nei modelli shader seguenti.
 
@@ -60,12 +60,12 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 | Modello di shader                                              | Supportato |
 |-----------------------------------------------------------|-----------|
-| [Modello Shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
-| [Modello Shader 4,1](dx-graphics-hlsl-sm4.md)              | sì       |
-| [Modello Shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
+| [Modello shader 5](d3d11-graphics-reference-sm5.md)        | sì       |
+| [Modello shader 4.1](dx-graphics-hlsl-sm4.md)              | sì       |
+| [Modello shader 4](dx-graphics-hlsl-sm4.md)                | sì       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modello shader 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modello shader 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -75,7 +75,7 @@ Questa funzione è supportata nei modelli shader seguenti.
 
 <dl> <dt>
 
-[Assembly Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Shader Model 4 Assembly (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

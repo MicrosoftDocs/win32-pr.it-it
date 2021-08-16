@@ -4,7 +4,7 @@ description: Imposta il contesto di sicurezza in cui vengono chiamate le API di 
 ms.assetid: bfa2f847-6fe3-4f9b-bafa-acf6a7c861d9
 ms.tgt_platform: multiple
 keywords:
-- Funzione DsSetAuthIdentity in Active Directory
+- Funzione DsSetAuthIdentity active Directory
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118695506"
 ---
 # <a name="dssetauthidentity-function"></a>Funzione DsSetAuthIdentity
 
-\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
+\[Questa funzione è disponibile per l'uso nei sistemi operativi specificati nella sezione Requisiti. È possibile che in versioni successive sia stata modificata o non sia più disponibile. A partire da Windows Vista, [usare Servizio Copia Shadow del volume (VSS).](../vss/volume-shadow-copy-service-overview.md)\]
 
 La **funzione DsSetAuthIdentity** imposta il contesto di sicurezza in cui vengono chiamate le API di backup della directory.
 
@@ -70,11 +70,11 @@ Stringa con terminazione Null che specifica la password dell'utente nel dominio 
 
 ## <a name="return-value"></a>Valore restituito
 
-Se ha esito positivo, restituisce i codici **di esito positivo HRESULT** standard. In caso contrario, viene restituito un codice di errore.
+Se ha esito positivo, restituisce un **codice di esito positivo HRESULT** standard. In caso contrario, viene restituito un codice di errore.
 
 ## <a name="remarks"></a>Commenti
 
-Se **DsSetAuthIdentity** non viene chiamato, viene utilizzato il contesto di sicurezza del processo corrente.
+Se **DsSetAuthIdentity** non viene chiamato, si presuppone il contesto di sicurezza del processo corrente.
 
 ## <a name="requirements"></a>Requisiti
 

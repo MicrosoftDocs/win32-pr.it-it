@@ -1,11 +1,11 @@
 ---
-title: Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect. h)
-description: Ottenere un'annotazione in base al nome. | Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect. h)
+title: Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect.h)
+description: Ottenere un'annotazione in base al nome. | Metodo ID3DX11EffectPass GetAnnotationByName (D3dx11effect.h)
 ms.assetid: b54a4fb0-62c7-4d96-af30-f9ae04ff7dab
 keywords:
 - Metodo GetAnnotationByName Direct3D 11
-- Metodo GetAnnotationByName Direct3D 11, interfaccia ID3DX11EffectPass
-- Interfaccia ID3DX11EffectPass Direct3D 11, metodo GetAnnotationByName
+- Metodo GetAnnotationByName Interfaccia Direct3D 11, ID3DX11EffectPass
+- Id3DX11EffectPass interface Direct3D 11 , Metodo GetAnnotationByName
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d129f1548e7f63c47906ac736cbddb5f6b2548b2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3a224a34d24a159ce5ac307a508628c811af7cb073e9b6fcc15fc0cab73fe722
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103969440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535077"
 ---
-# <a name="id3dx11effectpassgetannotationbyname-method"></a>Metodo ID3DX11EffectPass:: GetAnnotationByName
+# <a name="id3dx11effectpassgetannotationbyname-method"></a>Metodo ID3DX11EffectPass::GetAnnotationByName
 
 Ottenere un'annotazione in base al nome.
 
@@ -56,12 +56,12 @@ Nome dell'elemento Annotation.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Puntatore a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
+Puntatore a un [**oggetto ID3DX11EffectVariable.**](id3dx11effectvariable.md)
 
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> DirectX SDK non fornisce binari compilati per gli effetti. È necessario usare Effects 11 source per compilare l'applicazione di tipo Effects. Per ulteriori informazioni sull'utilizzo dell'origine Effects 11, vedere [differenze tra gli effetti 10 e gli effetti 11](d3d11-graphics-programming-guide-effects-differences.md).
+> DirectX SDK non fornisce alcun file binario compilato per gli effetti. È necessario usare l'origine Effects 11 per compilare l'applicazione effects-type. Per altre informazioni sull'uso dell'origine Effetti 11, vedere Differenze [tra gli effetti 10 e gli effetti 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Puntatore a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Libreria<br/> | <dl> <dt>N/d (la libreria Effects 11 è disponibile online come origine condivisa).</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Libreria<br/> | <dl> <dt>N/D (una libreria effects 11 è disponibile online come origine condivisa).</dt> </dl> |
 
 
 

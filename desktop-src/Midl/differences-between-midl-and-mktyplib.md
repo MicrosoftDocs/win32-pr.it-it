@@ -23,7 +23,7 @@ ms.locfileid: "118643625"
 
 Esistono alcune aree chiave in cui il compilatore MIDL differisce da MkTypLib. La maggior parte di queste differenze si verifica perché MIDL è orientato più verso la sintassi C rispetto a MkTypLib.
 
-In generale, è necessario usare la sintassi MIDL nei file IDL. Tuttavia, se è necessario compilare un file ODL esistente o mantenere la compatibilità con MkTypLib, usare l'opzione del compilatore [**MIDL /mktyplib203**](-mktyplib203.md) per forzare il comportamento di MIDL come Mkktyplib.exe, versione 2.03. Si tratta dell'ultima versione dello strumento MkTypLib. In particolare, **l'opzione /mktyplib203** risolve queste differenze:
+In generale, è necessario usare la sintassi MIDL nei file IDL. Se tuttavia è necessario compilare un file ODL esistente o mantenere la compatibilità con MkTypLib, usare l'opzione del compilatore [**MIDL /mktyplib203**](-mktyplib203.md) per forzare il comportamento di MIDL come Mkktyplib.exe versione 2.03. Si tratta dell'ultima versione dello strumento MkTypLib. In particolare, **l'opzione /mktyplib203** risolve queste differenze:
 
 -   Sintassi typedef per tipi di dati complessi
 

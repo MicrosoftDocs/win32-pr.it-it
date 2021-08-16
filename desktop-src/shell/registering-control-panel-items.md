@@ -1,6 +1,6 @@
 ---
-description: Gli elementi del pannello di controllo devono essere registrati per poter essere visualizzati nella finestra del pannello di controllo.
-title: Registrazione degli elementi del pannello di controllo
+description: Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella finestra Pannello di controllo.
+title: Registrazione di Pannello di controllo elementi
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 6f21f223-a293-47b5-95e9-06b7a4ff1652
@@ -9,27 +9,27 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 05c2a652314babc212e17b48198e9441f4d3465d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: daa86bfd9975df5cd057dd3e577f443bafa6c363061e267e67adad69b590e678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104131843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661081"
 ---
-# <a name="registering-control-panel-items"></a>Registrazione degli elementi del pannello di controllo
+# <a name="registering-control-panel-items"></a>Registrazione di Pannello di controllo elementi
 
-Gli elementi del pannello di controllo devono essere registrati per poter essere visualizzati nella finestra del pannello di controllo. Se l'elemento del pannello di controllo viene implementato come parte di un file con estensione exe, viene registrato come oggetto Command. La registrazione è diversa se l'elemento viene implementato come un file con estensione dll che esporta la funzione [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) .
+Pannello di controllo gli elementi devono essere registrati per poter essere visualizzati nella finestra Pannello di controllo. Se l Pannello di controllo viene implementato come parte di un file .exe, viene registrato come oggetto comando. La registrazione è diversa se l'elemento viene implementato come file .dll che esporta la [**funzione CPlApplet.**](/windows/win32/api/cpl/nc-cpl-applet_proc)
 
-Gli argomenti seguenti illustrano i requisiti specifici:
+I requisiti specifici sono descritti negli argomenti seguenti:
 
--   [Come registrare gli elementi del pannello di controllo eseguibile](how-to-register-an-executable-control-panel-item-registration-.md)
--   [Come registrare gli elementi del pannello di controllo DLL](how-to-register-dll-control-panel-item-registration-.md)
+-   [Come registrare elementi Pannello di controllo eseguibili](how-to-register-an-executable-control-panel-item-registration-.md)
+-   [Come registrare gli elementi Pannello di controllo DLL](how-to-register-dll-control-panel-item-registration-.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[Elementi del pannello di controllo](control-panel-applications.md)
+[Pannello di controllo elementi](control-panel-applications.md)
 </dt> <dt>
 
 [Linee guida sull'esperienza utente](user-experience-guidelines.md)
@@ -38,22 +38,22 @@ Gli argomenti seguenti illustrano i requisiti specifici:
 [Uso di CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Elaborazione del messaggio del pannello di controllo](message-processing.md)
+[Pannello di controllo di messaggi](message-processing.md)
 </dt> <dt>
 
-[Esecuzione degli elementi del pannello di controllo](executing-control-panel-items.md)
+[Esecuzione di Pannello di controllo elementi](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estensione degli elementi del pannello di controllo di sistema](extending-system-control-panel-items.md)
+[Estensione degli elementi Pannello di controllo sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Assegnazione delle categorie del pannello di controllo](assigning-control-panel-categories.md)
+[Assegnazione di Pannello di controllo categorie](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Creazione di collegamenti alle attività ricercabili per un elemento del pannello di controllo](creating-searchable-task-links.md)
+[Creazione di collegamenti di attività ricercabili per un Pannello di controllo ricerca](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Accesso al pannello di controllo in modalità provvisoria in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Accesso al Pannello di controllo in Cassaforte in Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

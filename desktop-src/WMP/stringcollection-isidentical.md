@@ -1,11 +1,11 @@
 ---
-title: Metodo StringCollection. IsValid
-description: Il metodo IsValid recupera un valore che indica se l'oggetto fornito è uguale a quello corrente. | Metodo StringCollection. IsValid
+title: Metodo StringCollection.isIdentical
+description: Il metodo isIdentical recupera un valore che indica se l'oggetto fornito è uguale a quello corrente. | Metodo StringCollection.isIdentical
 ms.assetid: 5f2aabbe-e6c7-4aa2-a30d-30178a4ba3db
 keywords:
-- Metodo di Media Player di Windows identico
-- Metodo di Windows Media Player, StringCollection (classe)
-- StringCollection (classe) Windows Media Player, metodo identico
+- Metodo isIdentical Windows Media Player
+- Metodo isIdentical Windows Media Player , classe StringCollection
+- Classe StringCollection Windows Media Player metodo , isIdentical
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4035e748921afd77865fa29c9a8507abe55128
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aded9879ded384feaa5bd12bd167c1eab0e1a0f764a3cf4370b84ca4b2422ff7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106328709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123021"
 ---
-# <a name="stringcollectionisidentical-method"></a>Metodo StringCollection. IsValid
+# <a name="stringcollectionisidentical-method"></a>Metodo StringCollection.isIdentical
 
-Il **Metodo IsValid** recupera un valore che indica se l'oggetto fornito è uguale a quello corrente.
+Il **metodo isIdentical** recupera un valore che indica se l'oggetto fornito è uguale a quello corrente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,20 +42,20 @@ bRetVal = StringCollection.isIdentical(
 
 <dl> <dt>
 
-*StringCollection* \[ in\]
+*stringCollection* \[ Pollici\]
 </dt> <dd>
 
-Oggetto **StringCollection** da confrontare con quello corrente.
+**Oggetto StringCollection** da confrontare con quello corrente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un **valore booleano**.
+Questo metodo restituisce un valore **booleano**.
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -72,7 +72,7 @@ Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per a
 
 <dl> <dt>
 
-[**StringCollection (oggetto)**](stringcollection-object.md)
+[**Oggetto StringCollection**](stringcollection-object.md)
 </dt> </dl>
 
  

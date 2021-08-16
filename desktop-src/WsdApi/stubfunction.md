@@ -1,5 +1,5 @@
 ---
-description: Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture operative nelle definizioni dei tipi di porta per le operazioni unidirezionale e bidirezionale.
+description: Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni unidirezionale e bidirezionale.
 ms.assetid: 2547f71d-8a30-4df8-ba38-6707c415708e
 title: Elemento stubFunction
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118552412"
 ---
 # <a name="stubfunction-element"></a>Elemento stubFunction
 
-Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture operative nelle definizioni dei tipi di porta per le operazioni unidirezionale e bidirezionale.
+Specifica se i riferimenti alle funzioni stub devono essere inclusi nelle strutture delle operazioni nelle definizioni dei tipi di porta per le operazioni unidirezionale e bidirezionale.
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 ``` syntax
 <stubFunction/>
@@ -41,9 +41,9 @@ Non ci sono elementi figlio.
 
 ## <a name="remarks"></a>Commenti
 
-I riferimenti alle funzioni stub vengono usati negli scenari di hosting per operazioni unidireivi e bidireivi.
+I riferimenti alle funzioni stub vengono usati negli scenari di hosting per le operazioni unidirevi e bidire utente.
 
-I valori validi per questo elemento sono 1 (riferimenti alle funzioni TRUE/stub inclusi) e 0 (false/nessun riferimento a funzioni stub incluse).
+I valori validi per questo elemento sono 1 (sono inclusi riferimenti a funzioni TRUE/stub) e 0 (false/nessun riferimento alla funzione stub incluso).
 
 ## <a name="element-information"></a>Informazioni sull'elemento
 

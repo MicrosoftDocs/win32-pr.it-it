@@ -1,30 +1,30 @@
 ---
 title: Colori primari sottrattivi
-description: Il metodo di combinazione dei colori sottrattivo si basa sul presupposto che si inizi con il bianco.
+description: Il metodo sottrattore della combinazione di colori si basa sul presupposto che si inizi con il bianco.
 ms.assetid: 6493497c-6de4-4f09-9e88-5948bd93c3b8
 keywords:
-- Windows Color System (WCS), colori primari sottrattivi
+- Windows Sistema colori (WCS), colori primari sottrazione
 - WCS (Windows Color System), colori primari sottrattivi
-- Gestione colori immagine, colori primari sottrattivi
+- gestione dei colori delle immagini, colori primari sottrattivi
 - gestione dei colori, colori primari sottrattivi
-- colori, primario sottrattivo
+- colori, primario sottrazione
 - colori primari sottrattivi
 - colori primari
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b129ab34dc7eecc29860c2f3085b1c438ca5dd1f
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: a3aaa8a177a38dc5e9970ff573327bb9c1aa3fc26c77b65910570c61f3235279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "106320087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851404"
 ---
 # <a name="subtractive-primary-colors"></a>Colori primari sottrattivi
 
-Il metodo di combinazione dei colori sottrattivo si basa sul presupposto che si inizi con il bianco. Tutti i colori sono presenti in quantità uguali. Se si sottrae cyan e Yellow dal bianco, l'immagine risultante è Magenta. In un'immagine verde, la sottrazione di cyan comporterà la modifica dell'immagine in giallo.
+Il metodo sottrattore della combinazione di colori si basa sul presupposto che si inizi con il bianco. Tutti i colori sono presenti in quantità uguali. Se si sottraggono ciano e giallo dal bianco, l'immagine risultante è magenta. In un'immagine verde, la sottrazione del ciano comporta la modifica dell'immagine in giallo.
 
-I [colori primari](p.md) sottrattivi sono cyan, Yellow e magenta. Nella figura seguente viene illustrata la combinazione di colori primaria sottrattiva.
+I colori primari [sottrattivi](p.md) sono ciano, giallo e magenta. Nella figura seguente viene illustrata la combinazione di colori primari sottrattivi.
 
 ![combinazione di colori per i colori primari sottrattivi](images/400px-subtractivecolor.png)
 
