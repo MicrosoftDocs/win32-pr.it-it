@@ -1,6 +1,6 @@
 ---
 title: Debug di app DirectX in modalità remota
-description: È possibile usare Visual Studio e l'SDK Windows 8 per eseguire il debug remoto delle app DirectX.
+description: È possibile usare Visual Studio e Windows 8 SDK per eseguire il debug remoto delle app DirectX.
 ms.assetid: CA471465-47C2-4706-B391-C9E6C2CD69D9
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,9 +13,9 @@ ms.locfileid: "118505676"
 ---
 # <a name="debugging-directx-apps-remotely"></a>Debug di app DirectX in modalità remota
 
-È possibile usare Visual Studio e l'SDK Windows 8 per eseguire il debug remoto delle app DirectX. L Windows 8 SDK fornisce un set di componenti che supportano lo sviluppo DirectX e forniscono il controllo degli errori e la convalida dei parametri oltre al debug Visual Studio funzionalità. Questi componenti sono D3D11 \_1SDKLayers.dll, D2D1Debug1.dll e Dxgidebug.dll.
+È possibile usare Visual Studio e Windows 8 SDK per eseguire il debug remoto delle app DirectX. L Windows 8 SDK fornisce un set di componenti che supportano lo sviluppo DirectX e forniscono il controllo degli errori e la convalida dei parametri oltre al debug Visual Studio fornisce. Questi componenti sono D3D11 \_1SDKLayers.dll, D2D1Debug1.dll e Dxgidebug.dll.
 
-Se si vuole eseguire il debug in remoto in un computer in cui non è installato Windows 8 SDK e si vuole usare questa funzionalità di debug aggiuntiva, è necessario installare il pacchetto di debug remoto appropriato per l'architettura in cui si vuole eseguire il debug. I Windows del programma di installazione di in `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` installano il supporto appropriato.
+Se si vuole eseguire il debug in modalità remota in un computer senza l'SDK di Windows 8 installato e si vuole questa funzionalità di debug aggiuntiva, è necessario installare il pacchetto di debug remoto appropriato per l'architettura in cui si vuole eseguire il debug. I Windows del programma di installazione in `C:\Program Files (x86)\Windows Kits\8.0\Remote\<arch>` installano il supporto appropriato.
 
 Per abilitare le funzionalità di debug aggiuntive per le app Direct2D, usare questo codice:
 

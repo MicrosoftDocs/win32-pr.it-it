@@ -1,9 +1,9 @@
 ---
-title: DeducingBlobSetter (D2d1effecthelpers. h)
+title: DeducingBlobSetter (D2d1effecthelpers.h)
 description: Deduce la classe e gli argomenti e quindi chiama un callback del setter di proprietà della funzione membro per una proprietà di tipo BLOB.
 ms.assetid: 4B8B871D-FE5E-4EF3-AEED-A3D92C10E8C6
 keywords:
-- Direct2D DeducingBlobSetter
+- DeducingBlobSetter Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d3bbfcc0a48d722bd98456821d7f7df5e8780a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 165f88f9ba9a7f0706726a13a1dfa3445d3b752719e71dc231a23cdd1583a4c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106330340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825975"
 ---
 # <a name="deducingblobsetter"></a>DeducingBlobSetter
 
@@ -46,7 +46,7 @@ HRESULT DeducingBlobSetter(
 
 | Requisito | Valore |
 |-------------------|------------------------------------------------------------------------------------------------|
-| Intestazione<br/> | <dl> <dt>D2d1effecthelpers. h</dt> </dl> |
+| Intestazione<br/> | <dl> <dt>D2d1effecthelpers.h</dt> </dl> |
 
 
 

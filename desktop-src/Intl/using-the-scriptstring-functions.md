@@ -13,7 +13,7 @@ ms.locfileid: "118389407"
 ---
 # <a name="using-the-scriptstring-functions"></a>Uso delle funzioni ScriptString
 
-Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le funzioni **ScriptString \** _. Queste funzioni sono simili [a _ *ExtTextOut* *](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), ma forniscono il supporto completo di script complessi, incluso il posizionamento del punto di inserimento. Queste funzioni sono simili alle altre funzioni Uniscribe, ma sono personalizzate in base ai requisiti più semplici dell'elaborazione del testo normale.
+Per un'applicazione che si occupa di testo non formattato, Uniscribe fornisce le funzioni **ScriptString \** _. Queste funzioni sono simili [a _ *ExtTextOut* *](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), ma forniscono il supporto completo di script complessi, inclusa la posizione del punto di inserimento. Queste funzioni sono simili alle altre funzioni Uniscribe, ma sono personalizzate in base ai requisiti più semplici dell'elaborazione del testo normale.
 
 Nella tabella seguente vengono fornite informazioni **dettagliate sulle funzioni ScriptString \*** e su eventuali controparti nelle altre funzioni Uniscribe.
 
@@ -56,7 +56,7 @@ Nella tabella seguente vengono fornite informazioni **dettagliate sulle funzioni
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringout"><strong>ScriptStringOut</strong></a></td>
-<td>Visualizza testo normale. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scripttextout"><strong>ScriptTextOut.</strong></a></td>
+<td>Visualizza testo normale. Questa funzione corrisponde a <a href="/windows/desktop/api/Usp10/nf-usp10-scripttextout"><strong>ScriptTextOut</strong></a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstring_pcoutchars"><strong>ScriptString_pcOutChars</strong></a></td>

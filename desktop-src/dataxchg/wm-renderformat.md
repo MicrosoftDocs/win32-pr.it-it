@@ -3,7 +3,7 @@ title: WM_RENDERFORMAT messaggio (Winuser.h)
 description: Inviato al proprietario degli Appunti se ha ritardato il rendering di un formato degli Appunti specifico e se un'applicazione ha richiesto dati in tale formato.
 ms.assetid: 81638109-4c5e-4b4c-b2db-4208b6ee83cc
 keywords:
-- WM_RENDERFORMAT messaggio Dati Exchange
+- WM_RENDERFORMAT messaggio Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118545310"
 ---
-# <a name="wm_renderformat-message"></a>Messaggio WM \_ RENDERFORMAT
+# <a name="wm_renderformat-message"></a>Messaggio \_ RENDERFORMAT WM
 
 Inviato al proprietario degli Appunti se ha ritardato il rendering di un formato degli Appunti specifico e se un'applicazione ha richiesto dati in tale formato. Il proprietario degli Appunti deve eseguire il rendering dei dati nel formato specificato e posizionarlo negli Appunti chiamando la [**funzione SetClipboardData.**](/windows/win32/api/winuser/nf-winuser-setclipboarddata)
 
@@ -56,7 +56,7 @@ Se un'applicazione elabora questo messaggio, deve restituire zero.
 
 ## <a name="remarks"></a>Commenti
 
-Quando risponde a un **messaggio WM \_ RENDERFORMAT,** il proprietario degli Appunti non deve aprire gli Appunti prima di [**chiamare SetClipboardData**](/windows/win32/api/winuser/nf-winuser-setclipboarddata). L'apertura degli Appunti non è necessaria prima di inserire i dati in risposta a **WM \_ RENDERFORMAT** e qualsiasi tentativo di apertura degli Appunti avrà esito negativo perché gli Appunti sono attualmente mantenuti aperti dall'applicazione che ha richiesto il rendering del formato.
+Quando risponde a un **messaggio \_ RENDERFORMAT WM,** il proprietario degli Appunti non deve aprire gli Appunti prima di [**chiamare SetClipboardData.**](/windows/win32/api/winuser/nf-winuser-setclipboarddata) L'apertura degli Appunti non è necessaria prima di inserire i dati in risposta a **WM \_ RENDERFORMAT** e qualsiasi tentativo di apertura degli Appunti avrà esito negativo perché gli Appunti sono attualmente mantenuti aperti dall'applicazione che ha richiesto il rendering del formato.
 
 ## <a name="requirements"></a>Requisiti
 

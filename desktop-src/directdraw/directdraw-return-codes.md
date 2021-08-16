@@ -1,5 +1,5 @@
 ---
-title: Codici restituiti directdraw (Ddraw.h)
+title: Codici restituiti DirectDraw (Ddraw.h)
 description: 'Codici restituiti DirectDraw: gli errori sono rappresentati da valori negativi e non possono essere combinati.'
 ms.assetid: F713193E-3614-4741-B293-D312C170270A
 topic_type:
@@ -129,16 +129,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d789a233df777d98860e519f7e877a030aba55a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1e937ad9cc32a7837303d535b73b176c7e16f2d0ab0033bf625f629d2d5f7bc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504353"
 ---
-# <a name="directdraw-return-codes"></a>Codici restituiti di DirectDraw
+# <a name="directdraw-return-codes"></a>Codici restituiti directdraw
 
-Gli errori sono rappresentati da valori negativi e non possono essere combinati. Questa tabella elenca i valori che possono essere restituiti da tutti i metodi delle interfacce [DirectDraw e](directdraw-interfaces.md) [delle funzioni DirectDraw](directdraw-functions.md). Per un elenco dei codici di errore che ogni metodo o funzione può restituire, vedere la descrizione del metodo o della funzione.
+Gli errori sono rappresentati da valori negativi e non possono essere combinati. In questa tabella sono elencati i valori che possono essere restituiti da tutti i metodi delle interfacce [DirectDraw e](directdraw-interfaces.md) [delle funzioni DirectDraw](directdraw-functions.md). Per un elenco dei codici di errore che ogni metodo o funzione può restituire, vedere la descrizione del metodo o della funzione.
 
 <dl> <dt>
 
@@ -162,12 +162,12 @@ L'oggetto è già stato inizializzato.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_BLTFASTCANTCLIP"></span><span id="dderr_bltfastcantclip"></span>**DDERR \_ BLTFASTCLIPCLIP**
+<span id="DDERR_BLTFASTCANTCLIP"></span><span id="dderr_bltfastcantclip"></span>**DDERR \_ BLTFASTCANTCLIP**
 </dt> <dd> <dl> <dt>
 
 
 
-Un oggetto DirectDrawClipper è collegato a una superficie di origine passata in una chiamata al [**metodo IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
+Un oggetto DirectDrawClipper è associato a una superficie di origine passata in una chiamata al metodo [**IDirectDrawSurface7::BltFast.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdrawsurface7-bltfast)
 
 
 </dt> </dl> </dd> <dt>
@@ -197,7 +197,7 @@ Una superficie non può essere scollegata da un'altra superficie richiesta.
 
 
 
-Windows non è in grado di creare altri contesti di dispositivo o un controller di dominio ha richiesto una superficie indicizzata dalla tavolozza quando la superficie non dispone di tavolozza e la modalità di visualizzazione non è indicizzata (in questo caso DirectDraw non è in grado di selezionare una tavolozza appropriata nel controller di dominio).
+Windows non è possibile creare altri contesti di dispositivo o un controller di dominio ha richiesto una superficie indicizzata con tavolozza quando la superficie non dispone di una tavolozza e la modalità di visualizzazione non è stata indicizzata con il riquadro ( in questo caso DirectDraw non può selezionare una tavolozza appropriata nel controller di dominio).
 
 
 </dt> </dl> </dd> <dt>
@@ -207,7 +207,7 @@ Windows non è in grado di creare altri contesti di dispositivo o un controller 
 
 
 
-Le superfici primarie e 3D, o le superfici create in modo implicito, non possono essere duplicate.
+Le superfici primarie e 3D, o superfici create in modo implicito, non possono essere duplicate.
 
 
 </dt> </dl> </dd> <dt>
@@ -257,7 +257,7 @@ Tentativo di sblocco della pagina di una superficie non riuscito. Lo sblocco del
 
 
 
-Per questa operazione non è stata specificata alcuna chiave di colore di origine.
+Nessuna chiave di colore di origine specificata per questa operazione.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ Un contesto di dispositivo (DC) è già stato restituito per questa superficie. 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_DDERR_DEVICEDOESNTOWNSURFACE"></span><span id="_dderr_devicedoesntownsurface"></span>**>DISPOSITIVO \_ DDERRDOESN TOWNSURFACE**
+<span id="_DDERR_DEVICEDOESNTOWNSURFACE"></span><span id="_dderr_devicedoesntownsurface"></span>**>DDERR \_ DEVICEDOESN TOWNSURFACE**
 </dt> <dd> <dl> <dt>
 
 
@@ -547,7 +547,7 @@ Novità di DirectX 7.0. Quando [**IDirectDraw7::StartModeTest**](/windows/deskto
 
 
 
-Non sono presenti hardware 3D o emulazione.
+Non sono presenti hardware o emulazione 3D.
 
 
 </dt> </dl> </dd> <dt>
@@ -587,7 +587,7 @@ Non è disponibile alcun elenco di clip.
 
 
 
-Nessun oggetto DirectDrawClipper è associato all'oggetto surface.
+Nessun oggetto DirectDrawClipper è collegato all'oggetto surface.
 
 
 </dt> </dl> </dd> <dt>
@@ -597,7 +597,7 @@ Nessun oggetto DirectDrawClipper è associato all'oggetto surface.
 
 
 
-Nessun hardware per la conversione del colore è presente o disponibile.
+Non è presente o disponibile alcun hardware per la conversione dei colori.
 
 
 </dt> </dl> </dd> <dt>
@@ -627,7 +627,7 @@ Non è disponibile alcun supporto hardware per la chiave di colore di destinazio
 
 
 
-Una funzione create è stata chiamata senza [**il metodo IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
+È stata chiamata una funzione di creazione senza [**il metodo IDirectDraw7::SetCooperativeLevel.**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-setcooperativelevel)
 
 
 </dt> </dl> </dd> <dt>
@@ -637,7 +637,7 @@ Una funzione create è stata chiamata senza [**il metodo IDirectDraw7::SetCooper
 
 
 
-Non è mai stato creato alcun contesto di dispositivo (DC) per questa superficie.
+Non è mai stato creato alcun contesto di dispositivo per questa superficie.
 
 
 </dt> </dl> </dd> <dt>
@@ -647,7 +647,7 @@ Non è mai stato creato alcun contesto di dispositivo (DC) per questa superficie
 
 
 
-Non è disponibile alcun hardware ROP (DirectDraw raster-operation).
+Non è disponibile alcun hardware SYSTEM (DirectDraw Raster Operation).
 
 
 </dt> </dl> </dd> <dt>
@@ -667,7 +667,7 @@ La creazione di oggetti DirectDraw solo hardware non è possibile. il driver non
 
 
 
-Il supporto directdraw non è possibile con il driver di visualizzazione corrente.
+Il supporto di DirectDraw non è possibile con il driver di visualizzazione corrente.
 
 
 </dt> </dl> </dd> <dt>
@@ -677,7 +677,7 @@ Il supporto directdraw non è possibile con il driver di visualizzazione corrent
 
 
 
-Novità di DirectX 7.0. I test non possono continuare perché il driver della scheda video non enumera le frequenze di aggiornamento.
+Novità di DirectX 7.0. Il test non può continuare perché il driver dell'adattatore video non enumera le frequenze di aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
@@ -687,7 +687,7 @@ Novità di DirectX 7.0. I test non possono continuare perché il driver della sc
 
 
 
-L'emulazione software non è disponibile.
+L'emulazione del software non è disponibile.
 
 
 </dt> </dl> </dd> <dt>
@@ -717,7 +717,7 @@ Il capovolgimento delle superfici visibili non è supportato.
 
 
 
-È stato effettuato un tentativo di creare o impostare una finestra del dispositivo senza prima impostare la finestra dello stato attivo.
+Si è tentato di creare o impostare una finestra del dispositivo senza prima impostare la finestra attiva.
 
 
 </dt> </dl> </dd> <dt>
@@ -737,7 +737,7 @@ Non è presente alcun GDI.
 
 
 
-La notifica clipper richiede un handle di finestra o nessun handle di finestra è stato impostato in precedenza come handle di finestra a livello cooperativo.
+Clipper notifica richiede un handle di finestra oppure nessun handle di finestra è stato impostato in precedenza come handle di finestra a livello cooperativo.
 
 
 </dt> </dl> </dd> <dt>
@@ -747,7 +747,7 @@ La notifica clipper richiede un handle di finestra o nessun handle di finestra �
 
 
 
-Nessun hardware di mapping trame compatibile con mipmap è presente o disponibile.
+Non sono presenti o disponibili hardware per il mapping di trame che supportano mipmap.
 
 
 </dt> </dl> </dd> <dt>
@@ -917,7 +917,7 @@ L'oggetto DirectDrawSurface non usa una tavolozza dei colori a 8 bit e l'operazi
 
 
 
-Un componente di sovrapposizione viene chiamato per una superficie non sovrapposta.
+Un componente di sovrimpressione viene chiamato per una superficie non sovrapposta.
 
 
 </dt> </dl> </dd> <dt>
@@ -927,7 +927,7 @@ Un componente di sovrapposizione viene chiamato per una superficie non sovrappos
 
 
 
-L'operazione non può essere eseguita perché non è presente o disponibile alcun hardware di mapping trame.
+L'operazione non può essere eseguita perché non è presente o disponibile alcun hardware per il mapping della trama.
 
 
 </dt> </dl> </dd> <dt>
@@ -937,7 +937,7 @@ L'operazione non può essere eseguita perché non è presente o disponibile alcu
 
 
 
-È stato effettuato un tentativo di capovolgere una superficie che non può essere capovolta.
+Si è tentato di capovolgere una superficie che non può essere capovolta.
 
 
 </dt> </dl> </dd> <dt>
@@ -957,7 +957,7 @@ Elemento richiesto non trovato.
 
 
 
-È stato effettuato un tentativo di chiamare un metodo di interfaccia di un oggetto DirectDraw creato da [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) prima dell'inizializzazione dell'oggetto.
+Si è tentato di chiamare un metodo di interfaccia di un oggetto DirectDraw creato da [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) prima dell'inizializzazione dell'oggetto.
 
 
 </dt> </dl> </dd> <dt>
@@ -1092,7 +1092,7 @@ L'hardware non supporta le sovrapposizioni ritagliate.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**OVERLAY \_ DDERRNOTVISIBLE**
+<span id="DDERR_OVERLAYNOTVISIBLE"></span><span id="dderr_overlaynotvisible"></span>**\_SOVRIMPRESSIONE DDERRNOTVISIBLE**
 </dt> <dd> <dl> <dt>
 
 
@@ -1192,12 +1192,12 @@ La superficie richiesta non è collegata.
 
 </dt> </dl> </dd> <dt>
 
-<span id="DDERR_TESTFINISHED"></span><span id="dderr_testfinished"></span>**DDERR \_ TESTFINISHED**
+<span id="DDERR_TESTFINISHED"></span><span id="dderr_testfinished"></span>**TEST \_ DDERRFINISHED**
 </dt> <dd> <dl> <dt>
 
 
 
-Novità di DirectX 7.0. Se restituito dal metodo [**IDirectDraw7::StartModeTest,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) questo valore indica che non è stato possibile avviare alcun test perché tutte le risoluzioni scelte per i test hanno già informazioni sulla frequenza di aggiornamento nel Registro di sistema. Quando viene restituito [**da IDirectDraw7::EvaluateMode,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode)il valore indica che DirectDraw ha completato un test della frequenza di aggiornamento.
+Novità di DirectX 7.0. Quando viene restituito dal metodo [**IDirectDraw7::StartModeTest,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-startmodetest) questo valore indica che non è stato possibile avviare alcun test perché tutte le risoluzioni scelte per i test hanno già informazioni sulla frequenza di aggiornamento nel Registro di sistema. Quando viene restituito [**da IDirectDraw7::EvaluateMode,**](/windows/desktop/api/Ddraw/nf-ddraw-idirectdraw7-evaluatemode)il valore indica che DirectDraw ha completato un test della frequenza di aggiornamento.
 
 
 </dt> </dl> </dd> <dt>
@@ -1217,7 +1217,7 @@ L'altezza richiesta da DirectDraw è troppo grande.
 
 
 
-Le dimensioni richieste da DirectDraw sono troppo grandi. Tuttavia, l'altezza e la larghezza singole sono dimensioni valide.
+Le dimensioni richieste da DirectDraw sono troppo grandi. Tuttavia, le singole dimensioni di altezza e larghezza sono valide.
 
 
 </dt> </dl> </dd> <dt>

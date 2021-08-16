@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: JET_CALLBACK funzione di callback'
-title: Funzione di callback JET_CALLBACK
+description: 'Altre informazioni su: funzione JET_CALLBACK callback'
+title: JET_CALLBACK funzione di callback
 TOCTitle: JET_CALLBACK Callback Function
 ms:assetid: d15d4f84-8378-4b4b-9b8b-e89a56be5ead
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294098(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5e6d26bd5e347757fce270d5f2c78ab471755c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d50f0f3a0908b725d7f704df962324a0f16af1fc6f7353515a8d604e87edd0a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106308517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487614"
 ---
-# <a name="jet_callback-callback-function"></a>Funzione di callback JET_CALLBACK
+# <a name="jet_callback-callback-function"></a>JET_CALLBACK funzione di callback
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_callback-callback-function"></a>Funzione di callback JET_CALLBACK
+## <a name="jet_callback-callback-function"></a>JET_CALLBACK funzione di callback
 
-La funzione **JET_CALLBACK** è una funzione di callback multifunzione utilizzata dal motore di database per informare l'applicazione di un evento che interessa la deframmentazione in linea e le notifiche dello stato del cursore.
+La **JET_CALLBACK** è una funzione di callback multivalore usata dal motore di database per informare l'applicazione di un evento che interessa la deframmentazione online e le notifiche sullo stato del cursore.
 
-Vedere [JET_CBTYP](./jet-cbtyp.md) per impostazioni specifiche da usare per i parametri di questa funzione, in quanto queste impostazioni variano in base all'opzione di **JET_CBTYP** selezionata per l'uso nel parametro *CBTYP* .
+Vedere [JET_CBTYP](./jet-cbtyp.md) impostazioni specifiche da usare per i parametri di questa funzione, in quanto queste impostazioni variano **a** seconda dell'opzione JET_CBTYP selezionata per l'uso nel *parametro cbtyp.*
 
 ```cpp
     JET_ERR JET_API* JET_CALLBACK(
@@ -52,43 +52,43 @@ Vedere [JET_CBTYP](./jet-cbtyp.md) per impostazioni specifiche da usare per i pa
 
 Sessione per cui viene eseguito il callback.
 
-*dbid*
+*Dbid*
 
 Database per il quale viene eseguito il callback.
 
-*TableID*
+*tableid*
 
-Cursore per il quale viene eseguito il callback.
+Cursore per cui viene eseguito il callback.
 
 *cbtyp*
 
-Punto nell'operazione in cui viene eseguito il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per un elenco di valori e il significato dei parametri seguenti in ogni caso.
+Punto dell'operazione in cui viene eseguito il callback. Vedere [JET_CBTYP](./jet-cbtyp.md) per un elenco di valori e il significato dei parametri seguenti in ogni caso.
 
 *pvArg1*
 
-Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database, vedere [JET_CBTYP](./jet-cbtyp.md) .
+Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *pvArg2*
 
-Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database, vedere [JET_CBTYP](./jet-cbtyp.md) .
+Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *pvContext*
 
-Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database, vedere [JET_CBTYP](./jet-cbtyp.md) .
+Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 *ulUnused*
 
-Parametro utilizzato per comunicare con l'applicazione utilizzando il callback. Per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database, vedere [JET_CBTYP](./jet-cbtyp.md) .
+Parametro utilizzato per comunicare con l'applicazione usando il callback . Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questo parametro per ogni callback supportato dal motore di database.
 
 #### <a name="return-value"></a>Valore restituito
 
-La funzione restituisce uno dei [codici di errore del motore di archiviazione estendibile](./extensible-storage-engine-error-codes.md). Per informazioni su come restituire questi codici come HRESULT, vedere [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md). In seguito all'esito positivo, l'operazione che ha emesso il callback può procedere normalmente. In alcuni casi, il callback può restituire un avviso che influenza l'operazione. Per informazioni sull'uso di questi avvisi da parte dell'operazione, vedere [JET_CBTYP](./jet-cbtyp.md) .
+La funzione restituisce uno dei codici di errore [extensible Archiviazione Engine](./extensible-storage-engine-error-codes.md). Per informazioni su come restituire questi codici come HRESULT, vedere Errori del motore Archiviazione [estendibile](./extensible-storage-engine-errors.md). In caso di esito positivo, l'operazione che ha eseguito il callback può procedere normalmente. In alcuni casi, il callback può restituire un avviso che influisce su tale operazione. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso di questi avvisi da parte dell'operazione.
 
-In caso di errore, l'operazione che ha emesso il callback può procedere normalmente o potrebbe non riuscire. Per informazioni sull'uso del codice di errore da parte dell'operazione, vedere [JET_CBTYP](./jet-cbtyp.md) .
+In caso di errore, l'operazione che ha eseguito il callback può continuare normalmente o potrebbe non riuscire. Vedere [JET_CBTYP](./jet-cbtyp.md) per informazioni sull'uso del codice di errore da parte dell'operazione.
 
 #### <a name="remarks"></a>Commenti
 
-Se il callback passa un cursore all'applicazione, è importante tenere presente che questo cursore è intenzionalmente limitato a un set di funzionalità più piccolo per evitare la ricorsione e altre Brute. Sono consentite le operazioni seguenti:
+Se il callback passa un cursore all'applicazione, è importante sapere che questo cursore è intenzionalmente limitato a un set più piccolo di funzionalità per evitare ricorsione e altre bruttezza. Sono consentite le operazioni seguenti:
 
   - [JetDupCursor](./jetdupcursor-function.md)
 
@@ -128,7 +128,7 @@ Se il callback passa un cursore all'applicazione, è importante tenere presente 
 
   - [JetUnregisterCallback](./jetunregistercallback-function.md)
 
-Quando si progetta il callback, tenere presente che anche con queste restrizioni, è comunque possibile che il callback abbia esito negativo.
+Quando si progetta il callback, prendere in considerazione che, anche con queste restrizioni, è comunque possibile che il callback non riesca.
 
 #### <a name="requirements"></a>Requisiti
 
@@ -148,7 +148,7 @@ Quando si progetta il callback, tenere presente che anche con queste restrizioni
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

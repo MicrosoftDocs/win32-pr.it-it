@@ -1,17 +1,17 @@
 ---
-title: Temperatura ed effetto tinta
-description: Temperatura e effetto tinta
+title: Effetto temperatura e tinta
+description: Effetto temperatura e tinta
 ms.assetid: 8df72105-26ea-2dea-a4de-ef06902b7e0b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2c3628e1fdcb1c72a84a9e08736e4215d55514
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4f77cd293520e21811c6d8845daa56b60cabac6c8b88bdf1f1f5b1d20408fb73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825122"
 ---
-# <a name="temperature-and-tint-effect"></a>Temperatura e effetto tinta
+# <a name="temperature-and-tint-effect"></a>Effetto temperatura e tinta
 
 Il CLSID per questo effetto è CLSID \_ D2D1TemperatureTint.
 
@@ -32,7 +32,7 @@ m_d2dContext->EndDraw();
 
 ## <a name="effect-properties"></a>Proprietà degli effetti
 
-Le proprietà per l'effetto temperatura e tinta sono definite dall'enumerazione [**D2D1 \_ TEMPERATUREANDTINT \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_temperatureandtint_prop)
+Le proprietà per l'effetto temperatura e tinta sono definite [**dall'enumerazione D2D1 \_ TEMPERATUREANDTINT \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_temperatureandtint_prop)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -40,8 +40,8 @@ Le proprietà per l'effetto temperatura e tinta sono definite dall'enumerazione 
 
 | Requisito | Valore |
 |--------------------------|---------------------------------------------------|
-| Client minimo supportato | Windows 10 app \[ desktop \| di Windows Store\] |
-| Server minimo supportato | Windows 10 app \[ desktop \| di Windows Store\] |
+| Client minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
+| Server minimo supportato | \[Windows 10 app desktop \| Windows Store\] |
 | Intestazione                   | d2d1effects \_ 2.h                                  |
 | Libreria                  | d2d1.lib, dxguid.lib                              |
 

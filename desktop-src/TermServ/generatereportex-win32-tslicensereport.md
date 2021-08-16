@@ -1,6 +1,6 @@
 ---
 title: Metodo GenerateReportEx della classe Win32_TSLicenseReport
-description: Genera un report sull'utilizzo delle licenze corrente per le licenze per utente e per dispositivo.
+description: Genera un report di utilizzo delle licenze corrente per le licenze per utente e per dispositivo.
 ms.assetid: c454e0c5-ca1c-41c7-86b2-1e52c414aeb5
 ms.tgt_platform: multiple
 keywords:
@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353828"
 ---
-# <a name="generatereportex-method-of-the-win32_tslicensereport-class"></a>Metodo GenerateReportEx della classe \_ Win32 TSLicenseReport
+# <a name="generatereportex-method-of-the-win32_tslicensereport-class"></a>Metodo GenerateReportEx della classe \_ TSLicenseReport Win32
 
-Genera un report sull'utilizzo delle licenze corrente per le licenze per utente e per dispositivo.
+Genera un report di utilizzo delle licenze corrente per le licenze per utente e per dispositivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -52,15 +52,15 @@ Nome file del report generato.
 
 ## <a name="return-value"></a>Valore restituito
 
-Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco dei codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
+Se il metodo ha esito positivo, restituisce zero. Se il metodo ha esito negativo, restituisce un valore diverso da zero. Per un elenco di codici di errore, vedere Servizi Desktop remoto [di errore del provider WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Commenti
 
 Si tratta di un metodo statico.
 
-Per chiamare questo metodo, è necessario essere un membro del gruppo Administrators.
+Per chiamare questo metodo, è necessario essere membri del gruppo Administrators.
 
-Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format file MOF contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 

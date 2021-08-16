@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 36f8914be3fce6b461e5267562e6f3ef40aa5fef
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3a4e8119955f46a5547873019d75209903dbf1efc9a40ed427c501ffee1cbf14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968520"
 ---
 # <a name="shellopen-method"></a>Metodo Shell.Open
 
@@ -56,15 +56,15 @@ Tipo: **Variante**
 
 Stringa che specifica il percorso della cartella o uno dei [**valori ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Si noti che i nomi delle costanti presenti in **ShellSpecialFolderConstants** sono disponibili in Visual Basic, ma non in VBScript o JScript. In questi casi, i valori numerici devono essere usati al loro posto.
 
-Se *vDir* è impostato su uno di [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, questa funzione creerà la cartella.
+Se *vDir è* impostato su uno di [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) e la cartella speciale non esiste, questa funzione creerà la cartella.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente illustra **Open** in uso. Viene illustrato l'utilizzo corretto per JScript, VBScript e Visual Basic.
+L'esempio seguente illustra **Open** in uso. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -121,7 +121,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Solo app desktop windows 2000 Professional e Windows XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
@@ -136,7 +136,7 @@ End Sub
 [**Shell**](shell.md)
 </dt> <dt>
 
-[**Esplora**](shell-explore.md)
+[**Esplorare**](shell-explore.md)
 </dt> </dl>
 
  

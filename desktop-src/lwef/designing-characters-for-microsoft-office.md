@@ -15,11 +15,11 @@ ms.locfileid: "118479863"
 
 \[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
-Questo documento fornisce informazioni utili per progettare e sviluppare un carattere di Microsoft Agent da usare entro Microsoft Office 2000 (i caratteri di Microsoft Agent non funzionano con Microsoft Office 97). Questo documento presuppone che l'utente abbia una conoscenza approfondita dell'Editor caratteri di Microsoft Agent e che sappia come creare i caratteri di Microsoft Agent. Per altre informazioni sull'Editor caratteri dell'agente e sulla progettazione e sullo sviluppo di caratteri, vedere [Uso dell'editor di caratteri di Microsoft Agent.](using-the-microsoft-agent-character-editor.md) Per altre informazioni sulla creazione di caratteri per Microsoft Agent, vedere [Progettazione di caratteri per Microsoft Agent.](designing-characters-for-microsoft-agent.md)
+Questo documento fornisce informazioni che consentono di progettare e sviluppare un carattere di Microsoft Agent da usare all'interno di Microsoft Office 2000 (i caratteri di Microsoft Agent non funzionano con Microsoft Office 97). Questo documento presuppone che l'utente abbia una conoscenza funzionante dell'editor di caratteri di Microsoft Agent e sappia come creare caratteri di Microsoft Agent. Altre informazioni sull'editor di caratteri dell'agente e sulla progettazione e lo sviluppo di caratteri sono disponibili in [Uso dell'editor di caratteri di Microsoft Agent.](using-the-microsoft-agent-character-editor.md) Altre informazioni sulla creazione di caratteri per Microsoft Agent sono disponibili in [Progettazione di caratteri per Microsoft Agent.](designing-characters-for-microsoft-agent.md)
 
 -   [Progettazione di animazioni](animation-design.md)
 -   [Set Office animazione](the-office-animation-set.md)
--   [Installazione del tuo carattere](installing-your-character.md)
+-   [Installazione del carattere](installing-your-character.md)
 
  
 

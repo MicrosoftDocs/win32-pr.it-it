@@ -4,7 +4,7 @@ description: Ottiene o imposta il valore MustUnderstandOptions per l'oggetto Res
 ms.assetid: d366696c-9128-4cbd-98d0-6c2d16c75d59
 ms.tgt_platform: multiple
 keywords:
-- Proprietà MustUnderstandOptions Windows gestione remota
+- Proprietà MustUnderstandOptions Windows Gestione remota
 - Proprietà MustUnderstandOptions Windows, oggetto ResourceLocator
 - Oggetto ResourceLocator Windows gestione remota, proprietà MustUnderstandOptions
 topic_type:
@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118323739"
 ---
-# <a name="resourcelocatormustunderstandoptions-property"></a>ResourceLocator.MustUnderstandOptions - proprietà
+# <a name="resourcelocatormustunderstandoptions-property"></a>Proprietà ResourceLocator.MustUnderstandOptions
 
 Ottiene o imposta il **valore MustUnderstandOptions** per [**l'oggetto ResourceLocator.**](resourcelocator.md) È possibile fornire un [**oggetto ResourceLocator**](resourcelocator.md) anziché specificare un URI di risorsa nelle operazioni dell'oggetto [**Session,**](session.md) ad esempio [**Session.Get,**](session-get.md) [**Session.Put**](session-put.md)o [**Session.Enumerate.**](session-enumerate.md)
 
@@ -41,7 +41,7 @@ ResourceLocator.MustUnderstandOptions As boolean
 
 ## <a name="property-value"></a>Valore proprietà
 
-Indica, quando **è True,** che il servizio che implementa il [protocollo WS-Management](ws-management-protocol.md) deve restituire un errore se non è in grado di elaborare l'opzione .
+Indica, se **True,** che il servizio che implementa [l'protocollo WS-Management](ws-management-protocol.md) deve restituire un errore se non è in grado di elaborare l'opzione .
 
 ## <a name="remarks"></a>Commenti
 

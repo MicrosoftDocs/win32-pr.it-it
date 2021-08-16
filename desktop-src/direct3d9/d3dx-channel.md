@@ -1,5 +1,5 @@
 ---
-description: Informazioni sui flag D3DX_CHANNEL usati per specificare i canali di una trama su cui operare, ad esempio D3DX_CHANNEL_RED.
+description: Informazioni sui flag D3DX_CHANNEL usati per specificare i canali in una trama su cui operare, ad esempio D3DX_CHANNEL_RED.
 ms.assetid: b592b42a-0af1-49df-b159-4b84e4e12c95
 title: D3DX_CHANNEL
 ms.topic: article

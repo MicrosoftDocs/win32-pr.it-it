@@ -32,7 +32,7 @@ Identificatore dell'utente. L'attività viene avviata quando l'utente accede al 
  />
 ```
 
-**L'elemento UserId** è definito dal tipo complesso [**logonTriggerType.**](taskschedulerschema-logontriggertype-complextype.md)
+**L'elemento UserId** è definito dal [**tipo complesso logonTriggerType.**](taskschedulerschema-logontriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento padre
 
@@ -40,19 +40,19 @@ Identificatore dell'utente. L'attività viene avviata quando l'utente accede al 
 
 | Elemento                                                                       | Derivato da                                                                 | Descrizione                                                            |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando un utente accede.<br/> |
+| [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md) | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md) | Specifica un trigger che avvia un'attività quando un utente esegue l'accesso.<br/> |
 
 
 
 ## <a name="remarks"></a>Commenti
 
-Per lo sviluppo di script, l'identificatore utente per il trigger di accesso viene specificato tramite la [**proprietà LogonTrigger.UserId.**](logontrigger-userid.md)
+Per lo sviluppo di script, l'identificatore utente per il trigger logon viene specificato usando la [**proprietà LogonTrigger.UserId.**](logontrigger-userid.md)
 
-Per lo sviluppo C++, l'identificatore utente per il trigger di accesso viene specificato usando la [**proprietà ILogonTrigger::UserId.**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid)
+Per lo sviluppo in C++, l'identificatore utente per il trigger logon viene specificato usando la [**proprietà ILogonTrigger::UserId.**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid)
 
 ## <a name="examples"></a>Esempio
 
-Per un esempio completo del codice XML per un'attività che specifica un trigger di accesso, vedere Esempio di [trigger di accesso (XML).](logon-trigger-example--xml-.md)
+Per un esempio completo del codice XML per un'attività che specifica un trigger logon, vedere [Logon Trigger Example (XML) .](logon-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -60,8 +60,8 @@ Per un esempio completo del codice XML per un'attività che specifica un trigger
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
 
 
 
@@ -69,7 +69,7 @@ Per un esempio completo del codice XML per un'attività che specifica un trigger
 
 <dl> <dt>
 
-[Utilità di pianificazione schema](task-scheduler-schema-elements.md)
+[Utilità di pianificazione di schema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Utilità di pianificazione](task-scheduler-start-page.md)

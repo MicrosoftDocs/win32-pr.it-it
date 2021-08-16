@@ -33,7 +33,7 @@ Rende visibile il carattere specificato e riproduce l'animazione **Showing** ass
 
 | Parte   | Descrizione                                                                                                                                                                                                                              |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Veloce* | facoltativo. Espressione booleana che specifica se il server riproduce **l'animazione Showing.** **True** Ignora **l'animazione Dello** stato di visualizzazione. <br/> **False** (impostazione predefinita) Non ignora **l'animazione Dello** stato di visualizzazione. <br/> |
+| *Veloce* | facoltativo. Espressione booleana che specifica se il server riproduce **l'animazione Showing.** **True** Ignora **l'animazione Showing** state (Visualizzazione dello stato). <br/> **False** (impostazione predefinita) Non ignora l'animazione **Showing** state (Visualizzazione dello stato). <br/> |
 
 
 
@@ -43,9 +43,9 @@ Rende visibile il carattere specificato e riproduce l'animazione **Showing** ass
 
 ## <a name="remarks"></a>Commenti
 
-Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito [**un oggetto Request.**](/windows/desktop/lwef/the-request-object) Inoltre, se l'animazione Showing associata non è stata caricata e non è stato specificato il parametro **Fast** come **True,** il server imposta la proprietà  **Status** dell'oggetto Request su "failed" con un numero di errore appropriato. [](status-property.md) Pertanto, se si usa il protocollo HTTP per accedere ai dati di animazione dei caratteri, usare il [**metodo Get**](get-method.md) per caricare l'animazione **dello** stato Showing prima di chiamare il **metodo Show.**
+Se si dichiara un riferimento a un oggetto e lo si imposta su questo metodo, viene restituito un [**oggetto Request.**](/windows/desktop/lwef/the-request-object) Inoltre, se l'animazione **Showing** associata non è stata caricata e il  parametro **Fast** non è stato specificato **come True,** il server imposta la proprietà Status dell'oggetto [**Request**](status-property.md) su "failed" con un numero di errore appropriato. Pertanto, se si usa il protocollo HTTP per accedere ai dati di animazione dei caratteri, usare il metodo [**Get**](get-method.md) per caricare l'animazione **dello** stato Showing prima di chiamare il **metodo Show.**
 
-Evitare di impostare **il parametro Fast** su **True** senza prima riprodurre un'animazione; In caso contrario, la cornice del carattere potrebbe essere visualizzata senza immagine. In particolare, si noti che se si chiama [**MoveTo**](moveto-method.md) quando il carattere non è visibile, non viene riprodotta alcuna animazione. Pertanto, se si chiama il **metodo Show** con **Fast** impostato su **True,** non verrà visualizzata alcuna immagine. Analogamente, se si chiama [**Nascondi**](hide-method.md) e mostra **con** **Fast** impostato su **True,** non sarà presente alcuna immagine visibile.
+Evitare di impostare **il parametro Fast** su True **senza** prima riprodurre un'animazione; In caso contrario, il frame di caratteri potrebbe essere visualizzato senza immagine. In particolare, si noti che se si chiama [**MoveTo**](moveto-method.md) quando il carattere non è visibile, non viene riprodotta alcuna animazione. Pertanto, se si chiama il **metodo Show** con **Fast** impostato su **True,** non verrà visualizzata alcuna immagine. Analogamente, se si chiama [**Nascondi e**](hide-method.md) mostra **con** **Fast** impostato su **True,** non sarà presente alcuna immagine visibile.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -17,7 +17,7 @@ Negli argomenti seguenti vengono fornite altre informazioni su versioni, strumen
 
 -   [Windows SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md) spiega dove ottenere i componenti ridistribuibili del programma di installazione, la documentazione, lo strumento di convalida del database, l'editor di tabelle di database, lo schema di database, gli strumenti di sviluppo, gli strumenti VBScript, il prodotto di esempio e gli esempi di codice.
 -   [Windows Installer Redistributables fornisce](windows-installer-redistributables.md) informazioni su dove ottenere i componenti ridistribuibili del programma di installazione.
--   [Versioni rilasciate del Windows di](released-versions-of-windows-installer.md) installazione elenca le versioni rilasciate del programma di installazione fornite con sistemi operativi diversi.
+-   [Versioni rilasciate del Windows di installazione](released-versions-of-windows-installer.md) elenca le versioni rilasciate del programma di installazione fornite con sistemi operativi diversi.
 -   [Windows Installer Development Tools contiene](windows-installer-development-tools.md) pagine di riferimento per l'uso degli strumenti di sviluppo del programma di installazione.
 -   [Instmsi.exe](instmsi-exe.md) descrive quale Instmsi è compatibile con il sistema operativo. InstMsi è il pacchetto ridistribuibile per l'installazione del programma di installazione.
 

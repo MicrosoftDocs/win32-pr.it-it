@@ -1,5 +1,5 @@
 ---
-description: Questo è l'orientamento del video in gradi.
+description: Questo è l'orientamento video in gradi.
 ms.assetid: 9534be9e-ab57-4c36-b1ae-ff12d632574c
 title: System.Video.Orientation
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118464016"
 ---
 # <a name="systemvideoorientation"></a>System.Video.Orientation
 
-Questo è l'orientamento del video in gradi.
+Questo è l'orientamento video in gradi.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versione 1703, Windows 10, versione 1607, Windows 10, versione 1511, Windows 10, versione 1507, Windows 8.1, Windows 8
 
@@ -39,7 +39,7 @@ I valori PKEY sono definiti in Propkey.h.
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[proprietàDescrizione](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -69,7 +69,7 @@ I valori PKEY sono definiti in Propkey.h.
 [enumeratedList](./propdesc-schema-enumeratedlist.md)
 </dt> <dt>
 
-[drawControl](./propdesc-schema-drawcontrol.md)
+[DrawControl](./propdesc-schema-drawcontrol.md)
 </dt> <dt>
 
 [editControl](./propdesc-schema-editcontrol.md)

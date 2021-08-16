@@ -1,5 +1,5 @@
 ---
-description: Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
+description: Specifica l'URL fornito come hint di importazione per un wsdl o XSD a cui viene fatto riferimento all'interno di un altro WSDL.
 ms.assetid: ba489fd7-2304-426e-83a0-d174bb394065
 title: location (elemento)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118311526"
 ---
 # <a name="location-element"></a>location (elemento)
 
-Specifica l'URL fornito come hint di importazione per un WSDL o XSD a cui si fa riferimento all'interno di un altro WSDL.
+Specifica l'URL fornito come hint di importazione per un wsdl o XSD a cui viene fatto riferimento all'interno di un altro WSDL.
 
 ## <a name="usage"></a>Utilizzo
 

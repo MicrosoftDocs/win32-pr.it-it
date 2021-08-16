@@ -1,5 +1,5 @@
 ---
-description: È possibile specificare la lingua usata nelle query di ricerca.
+description: È possibile specificare il linguaggio usato nelle query di ricerca.
 ms.assetid: 3a7ecf8f-38ae-41d1-be70-e9ab23977a01
 title: Specifica delle lingue
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118226816"
 ---
 # <a name="specifying-languages"></a>Specifica delle lingue
 
-È possibile specificare la lingua usata nelle query di ricerca. Entrambi i predicati FREETEXT e CONTAINS nella clausola WHERE supportano la specifica di una lingua. È possibile indicare il linguaggio di query fornendo un identificatore LCID (Numeric Language Code Identifier) nel predicato CONTAINS o FREETEXT. Questo LCID specifica quale word breaker usare per analizzare la stringa di query. Viene usata la sintassi seguente:
+È possibile specificare il linguaggio usato nelle query di ricerca. Sia i predicati FREETEXT che CONTAINS nella clausola WHERE supportano la specifica di una lingua. È possibile indicare il linguaggio di query fornendo un identificatore LCID (Numeric Language Code Identifier) nel predicato CONTAINS o FREETEXT. Questo LCID specifica il word breaker da usare per analizzare la stringa di query. Viene usata la sintassi seguente:
 
 
 ```
@@ -23,7 +23,7 @@ CONTAINS | FREETEXT
 
 
 
-Per altre informazioni, vedere la sintassi per i predicati [CONTAINS](-search-sql-contains.md) e [FREETEXT.](-search-sql-freetext.md)
+Per altre informazioni, vedere la sintassi per i predicati [CONTAINS](-search-sql-contains.md) [e FREETEXT.](-search-sql-freetext.md)
 
  
 

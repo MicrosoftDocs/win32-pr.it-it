@@ -13,7 +13,7 @@ ms.locfileid: "118472987"
 ---
 # <a name="ifndef"></a>\#ifndef
 
-La **\# direttiva ifndef** controlla la compilazione condizionale del file di risorse controllando il nome specificato. Se il nome non è stato definito o se la relativa definizione è stata rimossa tramite la direttiva **\# undef,** **\# ifndef** indica al compilatore di continuare l'elaborazione delle istruzioni fino alla direttiva **\# endif** successiva, **\# else** o **\# elif** e quindi di passare all'istruzione dopo la **\# direttiva endif.** Se il nome è definito, **\# sendef** indica al compilatore di passare alla successiva direttiva **\# endif**, **\# else** o **\# elif.**
+La **\# direttiva ifndef** controlla la compilazione condizionale del file di risorse controllando il nome specificato. Se il nome non è stato definito o se la relativa definizione è stata rimossa usando la direttiva **\# undef,** **\# ifndef** indica al compilatore di continuare l'elaborazione delle istruzioni fino alla successiva direttiva **\# endif**, **\# else** o **\# elif** e quindi passare all'istruzione dopo la **\# direttiva endif.** Se il nome è definito, **\# ifndef** indica al compilatore di passare alla direttiva **\# endif** successiva, **\# else** o **\# elif.**
 
 ``` syntax
 #ifndef name
@@ -30,7 +30,7 @@ Nome che deve essere controllato dalla direttiva .
 
 ## <a name="example"></a>Esempio
 
-Questo esempio compila [**l'istruzione BITMAP**](bitmap-resource.md) solo se Optimize non è definito:
+Questo esempio compila l'istruzione [**BITMAP**](bitmap-resource.md) solo se Optimize non è definito:
 
 ``` syntax
 #ifndef Optimize

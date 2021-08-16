@@ -31,7 +31,7 @@ Una finestra riceve questo messaggio tramite la relativa [**funzione WindowProc.
 *wParam* 
 </dt> <dd>
 
-Bordo della finestra ridimensionata. Questo parametro può avere uno dei valori seguenti.
+Bordo della finestra da ridimensionare. Questo parametro può avere uno dei valori seguenti.
 
 
 

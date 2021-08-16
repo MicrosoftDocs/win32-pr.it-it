@@ -1,5 +1,5 @@
 ---
-description: Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra della directory di File Manager o nella finestra Risultati ricerca.
+description: Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra directory di File Manager o nella finestra Risultati ricerca.
 title: FMEVENT_SELCHANGE messaggio (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -22,7 +22,7 @@ ms.locfileid: "118459038"
 ---
 # <a name="fmevent_selchange-message"></a>Messaggio FMEVENT \_ SELCHANGE
 
-Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra della directory di File Manager o nella finestra Risultati ricerca.
+Inviato a una DLL di estensione quando l'utente seleziona un nome file nella finestra directory di File Manager o nella finestra Risultati ricerca.
 
 ## <a name="parameters"></a>Parametri
 
@@ -40,9 +40,9 @@ Una DLL di estensione deve restituire zero se elabora questo messaggio.
 
 ## <a name="remarks"></a>Commenti
 
-Le modifiche nella parte dell'albero della finestra della directory non generano questo messaggio.
+Le modifiche nella parte dell'albero della finestra della directory non producono questo messaggio.
 
-Poiché l'utente può modificare la selezione più volte, la DLL di estensione deve restituire prontamente dopo l'elaborazione del messaggio per evitare di rallentare il processo di selezione per l'utente.
+Poiché l'utente può modificare la selezione più volte, la DLL di estensione deve restituire tempestivamente dopo l'elaborazione di questo messaggio per evitare di rallentare il processo di selezione per l'utente.
 
 ## <a name="requirements"></a>Requisiti
 

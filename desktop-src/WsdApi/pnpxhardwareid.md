@@ -13,7 +13,7 @@ ms.locfileid: "118311516"
 ---
 # <a name="pnpxhardwareid-element"></a>Elemento PnPXHardwareId
 
-Specifica l'identificatore hardware PnP-X del servizio. PnP corrisponde a questo elemento con le descrizioni hardware fornite nella \[ sezione PnpxDevice \] del file INF del dispositivo. In base a queste informazioni, il servizio PnP seleziona e carica il driver di dispositivo più appropriato.
+Specifica l'identificatore hardware PnP-X del servizio. PnP corrisponde a questo elemento con le descrizioni hardware fornite nella sezione \[ PnpxDevice \] del file INF del dispositivo. In base a queste informazioni, il servizio PnP seleziona e carica il driver di dispositivo più appropriato.
 
 ## <a name="usage"></a>Utilizzo
 

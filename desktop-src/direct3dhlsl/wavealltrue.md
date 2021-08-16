@@ -1,6 +1,6 @@
 ---
 title: Funzione WaveActiveAllTrue
-description: Restituisce true se l'espressione è true in tutte le corsie attive nell'ondata corrente.
+description: Restituisce true se l'espressione è true in tutte le corsie attive nell'onda corrente.
 ms.assetid: C4EC5A02-6070-4FF4-B855-F597FFFE66F0
 keywords:
 - Funzione WaveActiveAllTrue HLSL
@@ -22,7 +22,7 @@ ms.locfileid: "118504871"
 ---
 # <a name="waveactivealltrue-function"></a>Funzione WaveActiveAllTrue
 
-Restituisce true se l'espressione è true in tutte le corsie attive nell'ondata corrente.
+Restituisce true se l'espressione è true in tutte le corsie attive nell'onda corrente.
 
 ## <a name="syntax"></a>Sintassi
 

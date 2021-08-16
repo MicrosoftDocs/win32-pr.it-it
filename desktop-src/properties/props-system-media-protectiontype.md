@@ -1,17 +1,17 @@
 ---
 description: Descrive il tipo di protezione dei supporti.
 ms.assetid: 160ca781-843f-4e80-916f-60a3fa6d7eba
-title: System. Media. ProtectionType
+title: System.Media.ProtectionType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd6771557476151c54332418503e935e795e5e0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fd2534be0b2c2e6069539d1358f5ca93c7cc0077340564a1fefc92d964420ee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "106320609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970360"
 ---
-# <a name="systemmediaprotectiontype"></a>System. Media. ProtectionType
+# <a name="systemmediaprotectiontype"></a>System.Media.ProtectionType
 
 Descrive il tipo di protezione dei supporti.
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Commenti
 
-I valori PKEY sono definiti in Propkey. h.
+I valori PKEY sono definiti in Propkey.h.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -47,13 +47,13 @@ I valori PKEY sono definiti in Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
@@ -62,7 +62,7 @@ I valori PKEY sono definiti in Propkey. h.
 [numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
-[dateTimeFormat](./propdesc-schema-datetimeformat.md)
+[Datetimeformat](./propdesc-schema-datetimeformat.md)
 </dt> <dt>
 
 [enumeratedList](./propdesc-schema-enumeratedlist.md)

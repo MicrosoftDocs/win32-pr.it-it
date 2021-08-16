@@ -55,7 +55,7 @@ Un pulsante su una punta della penna è verso il basso quando l'utente abbassa l
 
 Quando si preme il pulsante destro del mouse, si ricevono effettivamente due **eventi CursorButtonDown:** uno per il pulsante destro premuto e uno per il pulsante sinistro premuto.
 
-Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID DISPID \_ ICECursorButtonDown.
+Questo metodo di evento è definito nelle interfacce di solo invio \_ IInkCollectorEvents, \_ IInkOverlayEvents e \_ IInkPictureEvents (interfacce dispatch) con ID \_ DISPID ICECursorButtonDown.
 
 ## <a name="requirements"></a>Requisiti
 

@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118417166"
 ---
-# <a name="win32_pnpdevicepropertyreal64array-class"></a>Classe \_ Win32 PnPDevicePropertyReal64Array
+# <a name="win32_pnpdevicepropertyreal64array-class"></a>Classe Win32 \_ PnPDevicePropertyReal64Array
 
 Rappresenta una proprietà del dispositivo PnP costituita da una matrice di **elementi real64.**
 
@@ -47,7 +47,7 @@ class Win32_PnPDevicePropertyReal64Array : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Members
 
-La **classe Win32 \_ PnPDevicePropertyReal64Array** include questi tipi di membri:
+La **classe Win32 \_ PnPDevicePropertyReal64Array** ha questi tipi di membri:
 
 -   [Proprietà](#properties)
 
@@ -73,7 +73,7 @@ Valore della proprietà.
 **Deviceid**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -81,14 +81,14 @@ Tipo di accesso: sola lettura
 
 Identifica il dispositivo PnP.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
 **Chiave**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -96,14 +96,14 @@ Tipo di accesso: sola lettura
 
 Valore della coppia chiaveName-Value che identifica la **proprietà** Data.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
 **Keyname**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -111,7 +111,7 @@ Tipo di accesso: sola lettura
 
 Nome della coppia chiaveName-Value che identifica la **proprietà** Data.
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Tipo di accesso: sola lettura
 
 Tipo della **proprietà Data.**
 
-Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty.**](win32-pnpdeviceproperty.md)
+Questa proprietà viene ereditata da [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 I valori possibili sono .
 
@@ -218,7 +218,7 @@ I valori possibili sono .
 
 <span id="Decimal"></span><span id="decimal"></span><span id="DECIMAL"></span>
 
-**Decimal** (12)
+**Decimale** (12)
 
 
 </dt> <dd></dd> <dt>

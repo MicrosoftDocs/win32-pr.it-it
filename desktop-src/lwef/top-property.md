@@ -1,19 +1,19 @@
 ---
 title: Proprietà Top (oggetto Characters)
-description: Informazioni sulla proprietà Top (oggetto Characters). Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.
+description: Informazioni sulla proprietà Top (oggetto Characters). Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.
 ms.assetid: d5758a77-2d9a-44b8-bbbb-57ddf96c7fe4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a5e26d2ef578a98447d47eb2a3fae3613760a9
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 87bdc753bc287e1289b2a75633081c7b325d698a7fbe92ba495cc93662485d75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474479"
 ---
 # <a name="top-property-characters-object"></a>Proprietà Top (oggetto Characters)
 
-\[Microsoft Agent è deprecato a livello di Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
+\[Microsoft Agent è deprecato a Windows 7 e potrebbe non essere disponibile nelle versioni successive di Windows.\]
 
 <dl> <dt>
 

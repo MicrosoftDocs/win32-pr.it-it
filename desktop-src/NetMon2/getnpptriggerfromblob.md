@@ -70,7 +70,7 @@ Se la funzione ha esito negativo, il valore restituito è un valore NMERR che in
 
 ## <a name="remarks"></a>Commenti
 
-Le informazioni sul trigger vengono archiviate **nella categoria Trigger** del BLOB.
+Le informazioni sul trigger vengono archiviate nella **categoria Trigger** del BLOB.
 
 ## <a name="requirements"></a>Requisiti
 

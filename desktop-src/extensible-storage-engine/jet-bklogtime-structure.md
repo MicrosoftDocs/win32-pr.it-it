@@ -1,6 +1,6 @@
 ---
-description: 'Altre informazioni su: struttura JET_BKLOGTIME'
-title: Struttura JET_BKLOGTIME
+description: 'Altre informazioni su: JET_BKLOGTIME Structure'
+title: JET_BKLOGTIME struttura
 TOCTitle: JET_BKLOGTIME Structure
 ms:assetid: 31460079-7c5b-4145-837d-b112ba0117d6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269219(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b3ebfd1c0b807a491695ba18d6735e0230a16fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b34740d582e341cce3b2fd0b28203b7346a4de1d94a8586289be8ab252247943
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "106316498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487723"
 ---
-# <a name="jet_bklogtime-structure"></a>Struttura JET_BKLOGTIME
+# <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME struttura
 
 
 _**Si applica a:** Windows | Windows Server_
 
-## <a name="jet_bklogtime-structure"></a>Struttura JET_BKLOGTIME
+## <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME struttura
 
-La struttura **JET_BKLOGTIME** include gli elementi di data e ora di un evento. Si tratta di un'estensione di [JET_LOGTIME](./jet-logtime-structure.md).
+La **JET_BKLOGTIME** contiene gli elementi di data e ora di un evento. È un'estensione di [JET_LOGTIME](./jet-logtime-structure.md).
 
 **Windows Vista: JET_BKLOGTIME** è stato introdotto in Windows Vista.
 
@@ -60,29 +60,29 @@ La struttura **JET_BKLOGTIME** include gli elementi di data e ora di un evento. 
 
 ### <a name="members"></a>Membri
 
-**bSeconds**
+**bSecondi**
 
-Ora dell'evento in secondi. Il valore può essere 0 (zero) e 60. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Ora dell'evento in secondi. Può essere da 0 (zero) a 60. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
 **bMinutes**
 
-Ora dell'evento in minuti. Il valore può essere 0 (zero) e 60. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Ora dell'evento in minuti. Può essere da 0 (zero) a 60. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
-**Gabriele**
+**bHours**
 
-Ora dell'evento in ore. Può essere 0 (zero) a 24. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Ora dell'evento in ore. Può essere da 0 (zero) a 24. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
-**bDay**
+**Compleanno**
 
-Giorno del mese dell'evento. Può essere 0 (zero) a 31. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Giorno del mese dell'evento. Può essere da 0 (zero) a 31. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
 **bMonth**
 
-Mese dell'anno dell'evento. Può essere 0 (zero) a 12. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Mese dell'anno dell'evento. Può essere da 0 (zero) a 12. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
-**bYear**
+**bAnno**
 
-Anno (offset di 1900) dell'evento. Per ottenere l'anno effettivo, aggiungere 1900 a questo valore. 0 (zero) viene usato quando la struttura del **JET_BKLOGTIME** è "null".
+Anno (offset di 1900) dell'evento. Per ottenere l'anno effettivo, aggiungere 1900 a questo valore. 0 (zero) viene usato quando la **struttura JET_BKLOGTIME** è "null".
 
 **bFiller1**
 
@@ -117,11 +117,11 @@ Se questo evento è un backup, questo flag contiene uno dei valori possibili seg
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>backup di flusso</p></td>
+<td><p>backup in streaming</p></td>
 <td><p>0 (zero)</p></td>
 </tr>
 <tr class="even">
-<td><p>backup di snapshot</p></td>
+<td><p>backup snapshot</p></td>
 <td><p>1</p></td>
 </tr>
 </tbody>
@@ -154,7 +154,7 @@ Questa struttura viene utilizzata durante il debug.
 </tr>
 <tr class="odd">
 <td><p><strong>Intestazione</strong></p></td>
-<td><p>Dichiarata in esent. h.</p></td>
+<td><p>Dichiarato in Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

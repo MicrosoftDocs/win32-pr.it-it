@@ -1,7 +1,7 @@
 ---
 description: Recupera un oggetto che rappresenta l'elemento padre dell'oggetto corrente.
 ms.assetid: 2FDEF8D3-3F5B-43ae-9812-83B4249D9CBB
-title: Proprietà IShellDispatch. Parent (shldisp. h)
+title: Proprietà IShellDispatch.Parent (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 051e6f323b9663b692410d81d85e55a404e99d56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e166afe66aa20a98e316d55b4c9b94016dd8be3c73b4f23aca11c47c462a5a64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104130094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969070"
 ---
-# <a name="ishelldispatchparent-property"></a>Proprietà IShellDispatch. Parent
+# <a name="ishelldispatchparent-property"></a>Proprietà IShellDispatch.Parent
 
 Recupera un oggetto che rappresenta l'elemento padre dell'oggetto corrente.
 
@@ -45,17 +45,17 @@ Property Parent As Object
 
 ## <a name="property-value"></a>Valore proprietà
 
-Variabile di tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) che riceve l'oggetto padre.
+Variabile di tipo [**IDispatch che**](/windows/win32/api/oaidl/nn-oaidl-idispatch) riceve l'oggetto padre.
 
 ## <a name="remarks"></a>Commenti
 
-Questa proprietà viene implementata e accessibile tramite la proprietà [**Shell. Parent**](shell-parent.md) .
+Questa proprietà viene implementata e accessibile tramite la [**proprietà Shell.Parent.**](shell-parent.md)
 
 ## <a name="examples"></a>Esempio
 
-Negli esempi seguenti viene illustrato l'utilizzo dell' **elemento padre** in JScript, VBScript e Visual Basic.
+Gli esempi seguenti illustrano l'uso di Parent in **JScript,** VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -76,7 +76,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -130,11 +130,11 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, \[ solo app desktop Windows XP\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
-| Intestazione<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4,71 o successiva)</dt> </dl> |
+| Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versione 4.71 o successiva)</dt> </dl> |
 
 
 

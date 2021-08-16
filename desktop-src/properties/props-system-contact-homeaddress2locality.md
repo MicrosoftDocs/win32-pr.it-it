@@ -4,12 +4,12 @@ ms.assetid: a394e8fe-ae64-4dc2-8a18-30a58edd1340
 title: System.Contact.HomeAddress2Locality
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f27b593e04b776f868d2b886c8e1b361a93f3b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 285a5a85e8652b422cd90a8c91bdd4d3683bf9755a8e40dae672f122e8810cd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970570"
 ---
 # <a name="systemcontacthomeaddress2locality"></a>System.Contact.HomeAddress2Locality
 

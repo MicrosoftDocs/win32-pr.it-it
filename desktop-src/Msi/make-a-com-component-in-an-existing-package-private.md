@@ -15,7 +15,7 @@ ms.locfileid: "118629032"
 
 Un amministratore può forzare un'applicazione client COM a usare sempre la stessa copia di un server [](isolated-components.md) COM in un pacchetto esistente, senza influire sulle altre applicazioni, specificando una relazione di componenti isolati tra il server COM e il client. Verrà installata una copia privata del componente server COM in un percorso utilizzato esclusivamente dall'applicazione client. L'amministratore deve usare le trasformazioni o uno strumento di creazione di pacchetti per eseguire le operazioni seguenti:
 
--   Inserire la DLL del server COM e il client .exe in componenti separati.
+-   Inserire la DLL del server COM e .exe client in componenti separati.
 -   Immettere un record nella [tabella IsolatedComponent](isolatedcomponent-table.md) con il componente com-client nella colonna Component Shared e l'applicazione \_ client nella colonna Applicazione \_ componente. Includere [l'azione IsolateComponents](isolatecomponents-action.md) nelle tabelle di sequenza.
 -   Impostare il bit **msidbComponentAttributesSharedDllRefCount** nel record [della tabella Component](component-table.md) per Component \_ Shared. Il programma di installazione richiede questo riferimento globale nel percorso condiviso per proteggere i file condivisi e la registrazione nei casi in cui è in corso la condivisione con altre tecnologie di installazione.
 

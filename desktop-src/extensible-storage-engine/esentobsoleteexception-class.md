@@ -45,7 +45,7 @@ Classe di base per le eccezioni obsolete.
           Microsoft.Isam.Esent.Interop.EsentObsoleteException  
             
 
-**Spazio dei nomi:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Spazio dei**  [nomi: Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft.Isam.Esent.Interop (in Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintassi
@@ -116,7 +116,7 @@ I membri statici pubblici (Shared in Visual Basic) di questo tipo sono thread-sa
             [Microsoft.Isam.Esent.Interop.EsentFileIOFailException](./esentfileiofailexception-class.md)  
             [Microsoft.Isam.Esent.Interop.EsentFileIORetryException](./esentfileioretryexception-class.md)  
             [Microsoft.Isam.Esent.Interop.EsentFileIOSparseException](./esentfileiosparseexception-class.md)  
-            [Microsoft.Isam.Esent.Interop.EsentIndexCantBuildException](./esentindexcantbuildexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentIndexIndexBuildException](./esentindexcantbuildexception-class.md)  
             [Microsoft.Isam.Esent.Interop.EsentIndexTuplesTooManyColumnsException](./esentindextuplestoomanycolumnsexception-class.md)  
             [Microsoft.Isam.Esent.Interop.EsentInvalidCountryException](./esentinvalidcountryexception-class.md)  
             [Microsoft.Isam.Esent.Interop.EsentInvalidFilenameException](./esentinvalidfilenameexception-class.md)  

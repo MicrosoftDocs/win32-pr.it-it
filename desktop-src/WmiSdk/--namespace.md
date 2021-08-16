@@ -52,13 +52,13 @@ La **\_ \_ classe Namespace** ha queste proprietà.
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> <dt>
 
-Qualificatori: [ **Chiave**](standard-qualifiers.md)
+Qualificatori: [ **chiave**](standard-qualifiers.md)
 </dt> </dl>
 
 Nome spazio dei nomi.
@@ -67,17 +67,17 @@ Nome spazio dei nomi.
 
 ## <a name="remarks"></a>Commenti
 
-La **\_ \_ classe Namespace** è derivata da [**\_ \_ SystemClass**](--systemclass.md), che non ha proprietà.
+La **\_ \_ classe Namespace** è derivata da [**\_ \_ SystemClass**](--systemclass.md), che non dispone di proprietà.
 
-È possibile usare **\_ \_ Lo spazio dei** nomi per identificare, creare ed eliminare gli spazi dei nomi figlio all'interno dello spazio dei nomi di lavoro corrente per il quale si dispone di un oggetto [**IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) La creazione di una nuova istanza di **\_ \_ Namespace all'interno** di qualsiasi spazio dei nomi funzionante crea uno spazio dei nomi figlio all'interno dello spazio dei nomi funzionante. Al contrario, l'eliminazione di un'istanza di **\_ \_ Namespace rimuove** lo spazio dei nomi figlio dallo spazio dei nomi funzionante. Si noti che l'eliminazione di uno spazio dei nomi figlio elimina anche tutte le relative classi e istanze.
+È possibile usare **\_ \_ Spazio dei** nomi per identificare, creare ed eliminare spazi dei nomi figlio all'interno dello spazio dei nomi funzionante corrente per cui si dispone di un oggetto [**IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) La creazione di una nuova istanza di **\_ \_ Namespace all'interno** di qualsiasi spazio dei nomi funzionante crea uno spazio dei nomi figlio all'interno dello spazio dei nomi funzionante. Al contrario, l'eliminazione di un'istanza **\_ \_ di Namespace** rimuove lo spazio dei nomi figlio dallo spazio dei nomi funzionante. Si noti che l'eliminazione di uno spazio dei nomi figlio elimina anche tutte le classi e le istanze.
 
 L'enumerazione di istanze di questa classe all'interno di qualsiasi spazio dei nomi funzionante fornisce gli spazi dei nomi figlio disponibili.
 
-Ad esempio, all'interno dello spazio \\ dei nomi radice sono presenti due istanze dello spazio dei **\_ \_ nomi**. Uno ha la **proprietà Name** impostata su "Default", l'altro **ha Name** impostato su "Cimv2". Queste istanze rappresentano rispettivamente gli spazi dei nomi radice predefinito \\ \\ e \\ \\ cimv2 radice.
+Ad esempio, all'interno dello \\ spazio dei nomi radice sono presenti due istanze dello spazio dei **\_ \_ nomi**. Una ha la **proprietà Name** impostata su "Default", l'altra ha **Name** impostato su "Cimv2". Queste istanze rappresentano rispettivamente gli spazi dei nomi radice predefinito e \\ \\ \\ \\ cimv2 radice.
 
 ## <a name="examples"></a>Esempio
 
-[L'esempio VBScript](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) Elenca tutti gli spazi dei nomi WMI nella raccolta TechNet usa una chiamata ricorsiva per elencare tutte le istanze della classe \_ \_ Namespace in un sistema.
+[L'esempio VBScript](https://Gallery.TechNet.Microsoft.Com/4a8e84f1-4b52-452c-ae4f-e4e00e266257) Elenca tutti gli spazi dei nomi WMI in TechNet Gallery usa una chiamata ricorsiva per elencare tutte le istanze della classe \_ \_ Namespace in un sistema.
 
 L'esempio di codice seguente recupera tutti gli spazi dei nomi in PowerShell.
 
@@ -88,7 +88,7 @@ get-wmiobject __namespace -namespace 'root' -list -recurse | format-table __name
 
 
 
-L'esempio di codice seguente migliora l'esempio precedente e aggiunge altre informazioni.
+L'esempio di codice seguente migliora l'esempio precedente e aggiunge informazioni aggiuntive.
 
 
 ```PowerShell

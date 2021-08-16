@@ -3,7 +3,7 @@ title: Ribbon.Tabs - proprietà
 description: Rappresenta un contenitore per tutte le schede principali in una barra multifunzione.
 ms.assetid: b43d0544-c110-4785-85d7-935842b8f03e
 keywords:
-- Proprietà Ribbon.Tabs Windows ribbon
+- Proprietà Ribbon.Tabs Windows barra multifunzione
 topic_type:
 - apiref
 api_name:

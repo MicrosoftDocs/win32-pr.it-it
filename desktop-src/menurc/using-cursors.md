@@ -3,10 +3,10 @@ title: Uso dei cursori
 description: In questa sezione vengono forniti esempi di codice che illustrano come eseguire attività correlate ai cursori.
 ms.assetid: eab7b781-783e-4fc5-868d-6ff773c40a21
 keywords:
-- risorse,cursori
-- cursori,personalizzato
+- risorse, cursori
+- cursori, personalizzati
 - cursori personalizzati
-- Cursore a forma di clessidra
+- cursore a forma di clessidra
 - cursori, creazione
 - cursori, hourglass
 - creazione di cursori
@@ -18,12 +18,12 @@ keywords:
 - cursori, limitazione
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6cf681fd17f3e79e4559e9936be232ae09f8453
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 23ac8c90ec2e988dc0051ed441c96fce61fdbbd9f095a370569fdecc69ce4d65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472609"
 ---
 # <a name="using-cursors"></a>Uso dei cursori
 
@@ -32,7 +32,7 @@ In questa sezione vengono illustrati gli argomenti seguenti.
 -   [Creazione di un cursore](#creating-a-cursor)
 -   [Visualizzazione di un cursore](#displaying-a-cursor)
 -   [Limitazione di un cursore](#confining-a-cursor)
--   [Uso delle funzioni cursore per creare una rotellina del mouse](#using-cursor-functions-to-create-a-mousetrap)
+-   [Uso delle funzioni di cursore per creare una rotellina del mouse](#using-cursor-functions-to-create-a-mousetrap)
 -   [Uso della tastiera per spostare il cursore](#using-the-keyboard-to-move-the-cursor)
 
 ## <a name="creating-a-cursor"></a>Creazione di un cursore
@@ -169,7 +169,7 @@ hCurs3 = CreateCursor( hinst,   // app. instance
 
 
 
-Per creare il cursore, [**CreateCursor applica**](/windows/desktop/api/Winuser/nf-winuser-createcursor) la tabella di verità seguente alle maschere **AND** **e XOR.**
+Per creare il cursore, [**CreateCursor applica**](/windows/desktop/api/Winuser/nf-winuser-createcursor) la tabella di verità seguente alle maschere **AND** e **XOR.**
 
 
 
@@ -219,9 +219,9 @@ return RegisterClass(&wc);
 
 Quando la classe della finestra viene registrata, il cursore identificato da 230 nel file di definizione delle risorse dell'applicazione è il cursore predefinito per tutte le finestre basate sulla classe .
 
-L'applicazione può modificare la progettazione del cursore usando la [**funzione SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) e specificando un handle di cursore diverso. Tuttavia, quando il cursore viene spostato, il sistema ridisegna il cursore della classe in corrispondenza della nuova posizione. Per impedire il ridisegno del cursore della classe, è necessario elaborare il [**messaggio WM \_ SETCURSOR.**](wm-setcursor.md) Ogni volta che il cursore viene spostato e l'input del mouse non viene acquisito, il sistema invia questo messaggio alla finestra in cui si sposta il cursore.
+L'applicazione può modificare la progettazione del cursore usando la [**funzione SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) e specificando un handle di cursore diverso. Tuttavia, quando il cursore viene spostato, il sistema ridisegna il cursore della classe in corrispondenza della nuova posizione. Per evitare che il cursore della classe venga ridisegnato, è necessario elaborare il [**messaggio WM \_ SETCURSOR.**](wm-setcursor.md) Ogni volta che il cursore viene spostato e l'input del mouse non viene acquisito, il sistema invia questo messaggio alla finestra in cui si sta spostando il cursore.
 
-È possibile specificare cursori diversi per condizioni diverse durante l'elaborazione [**di WM \_ SETCURSOR**](wm-setcursor.md). L'esempio seguente illustra ad esempio come visualizzare il cursore ogni volta che il cursore si sposta sull'icona di un'applicazione ridotta a icona.
+È possibile specificare cursori diversi per condizioni diverse durante [**l'elaborazione di WM \_ SETCURSOR.**](wm-setcursor.md) Nell'esempio seguente viene illustrato come visualizzare il cursore ogni volta che il cursore viene spostato sull'icona di un'applicazione ridotta a icona.
 
 
 ```
@@ -240,7 +240,7 @@ case WM_SETCURSOR:
 
 
 
-Quando la finestra non è ridotta a icona, il sistema visualizza il cursore della classe .
+Quando la finestra non è ridotta a icona, il sistema visualizza il cursore della classe.
 
 È possibile sostituire un cursore di classe usando la [**funzione SetClassLong.**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) Questa funzione modifica le impostazioni predefinite della finestra per tutte le finestre di una classe specificata. Nell'esempio seguente viene sostituito il cursore della classe esistente con il `hCurs2` cursore .
 
@@ -255,11 +255,11 @@ SetClassLongPtr(hwnd,    // window handle
 
 
 
-Per altre informazioni, vedere [Classi finestra e](/windows/desktop/winmsg/window-classes) Input del [mouse.](/windows/desktop/inputdev/mouse-input)
+Per altre informazioni, vedere Classi [di finestre e](/windows/desktop/winmsg/window-classes) Input del [mouse.](/windows/desktop/inputdev/mouse-input)
 
 ## <a name="confining-a-cursor"></a>Limitazione di un cursore
 
-Nell'esempio seguente il cursore viene limitato alla finestra dell'applicazione e quindi viene ripristinato nella finestra precedente. Nell'esempio viene utilizzata la [**funzione GetClipCursor**](/windows/desktop/api/Winuser/nf-winuser-getclipcursor) per registrare l'area in cui il cursore può essere spostato e la funzione [**ClipCursor**](/windows/desktop/api/Winuser/nf-winuser-clipcursor) per limitare e ripristinare il cursore.
+Nell'esempio seguente il cursore viene limitato alla finestra dell'applicazione e quindi il cursore viene ripristinato nella finestra precedente. L'esempio usa [**la funzione GetClipCursor**](/windows/desktop/api/Winuser/nf-winuser-getclipcursor) per registrare l'area in cui il cursore può essere spostato e la funzione [**ClipCursor**](/windows/desktop/api/Winuser/nf-winuser-clipcursor) per limitare e ripristinare il cursore.
 
 
 ```
@@ -289,13 +289,13 @@ ClipCursor(&rcOldClip);
 
 
 
-Poiché nel sistema è disponibile un solo cursore alla volta, un'applicazione che limita il cursore deve ripristinare il cursore prima di rinunciare al controllo in un'altra finestra.
+Poiché nel sistema è disponibile un solo cursore alla volta, un'applicazione che limita il cursore deve ripristinare il cursore prima di cegliare il controllo a un'altra finestra.
 
-## <a name="using-cursor-functions-to-create-a-mousetrap"></a>Uso delle funzioni cursore per creare una rotellina del mouse
+## <a name="using-cursor-functions-to-create-a-mousetrap"></a>Uso delle funzioni di cursore per creare una rotellina del mouse
 
-Nell'esempio seguente vengono utilizzate le funzioni [**SetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-setcursorpos), [**GetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-getcursorpos), [**CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-createcursor), [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora)e [**SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) per creare una semplice barra del mouse. Usa anche funzioni di cursore e timer per monitorare la posizione del cursore ogni 10 secondi. Se la posizione del cursore non è cambiata negli ultimi 10 secondi e la finestra principale dell'applicazione è ridotta a icona, l'applicazione cambia il cursore e lo sposta sull'icona della barra del mouse.
+L'esempio seguente usa le funzioni [**SetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-setcursorpos), [**GetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-getcursorpos), [**CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-createcursor), [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora)e [**SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) per creare una semplice barra del mouse. Usa anche funzioni di cursore e timer per monitorare la posizione del cursore ogni 10 secondi. Se la posizione del cursore non è cambiata negli ultimi 10 secondi e la finestra principale dell'applicazione è ridotta a icona, l'applicazione modifica il cursore e lo sposta sull'icona della barra del mouse.
 
-Un esempio di una barra del mouse simile è incluso in [Icone](icons.md). Usa le [**funzioni LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora) e [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) invece delle funzioni [**CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-createcursor) e [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) più dipendenti dal dispositivo.
+Un esempio di una barra del mouse simile è incluso in [Icone](icons.md). Usa le [**funzioni LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora) e [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) anziché le funzioni [**CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-createcursor) e [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) più dipendenti dal dispositivo.
 
 
 ```

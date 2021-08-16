@@ -53,7 +53,7 @@ Stato [del campionatore.](dx-graphics-hlsl-sampler.md) Si tratta di un oggetto d
 
 </dd> <dt>
 
-*Località* \[ Pollici\]
+*Posizione* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **float**
@@ -80,7 +80,7 @@ Coordinate di trama. Il tipo di argomento dipende dal tipo texture-object.
 
 Tipo: **float**
 
-Velocità di modifica della geometria della superficie nella direzione x. Il tipo di argomento dipende dal tipo texture-object.
+Frequenza di modifica della geometria della superficie nella direzione x. Il tipo di argomento dipende dal tipo texture-object.
 
 
 
@@ -124,7 +124,7 @@ Velocità di modifica della geometria della superficie nella direzione y. Il tip
 
 Tipo: **int**
 
-Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. l'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel. In caso contrario, è possibile ottenere risultati che non si traducono bene in hardware. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
+Offset facoltativo delle coordinate della trama, che può essere usato per qualsiasi tipo di oggetto trama. L'offset viene applicato alla posizione prima del campionamento. Usare un offset solo in corrispondenza di un valore integer miplevel. In caso contrario, è possibile ottenere risultati che non si traducono bene in hardware. Il tipo di argomento dipende dal tipo texture-object. Per altre informazioni, vedere [Applicazione di offset di interi.](dx-graphics-hlsl-to-sample.md)
 
 
 
@@ -154,7 +154,7 @@ Valore facoltativo in cui impostare i valori loD di esempio. Ad esempio, se si p
 
 Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Il formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato della trama, che è uno dei valori tipiati elencati in [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Vedi anche
 

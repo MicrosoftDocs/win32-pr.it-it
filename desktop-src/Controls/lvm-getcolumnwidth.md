@@ -3,7 +3,7 @@ title: LVM_GETCOLUMNWIDTH messaggio (Commctrl.h)
 description: Ottiene la larghezza di una colonna nella visualizzazione report o elenco. È possibile inviare questo messaggio in modo esplicito o usando la \_ macro ListView GetColumnWidth.
 ms.assetid: 06e8ec36-3bc5-4516-ac29-17c36fb6d962
 keywords:
-- LVM_GETCOLUMNWIDTH del messaggio Windows controlli
+- LVM_GETCOLUMNWIDTH di Windows messaggi
 topic_type:
 - apiref
 api_name:

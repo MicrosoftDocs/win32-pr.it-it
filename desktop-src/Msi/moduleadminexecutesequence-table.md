@@ -38,9 +38,9 @@ La tabella ModuleAdminExecuteSequence include le colonne seguenti.
 <span id="Action"></span><span id="action"></span><span id="ACTION"></span>Azione
 </dt> <dd>
 
-Azione da inserire in sequenza. Fa riferimento a una delle azioni standard del [programma](standard-actions.md)di installazione o a una voce nella tabella [CustomAction](customaction-table.md) o nella tabella Dialog del [modulo unione.](dialog-table.md)
+Azione da inserire in sequenza. Fa riferimento a una delle azioni [standard del programma](standard-actions.md)di installazione o a una voce nella tabella [CustomAction](customaction-table.md) o nella tabella Dialog del [modulo unione.](dialog-table.md)
 
-Se si [usa un'azione standard](standard-actions.md) nella colonna Azione di una tabella di sequenza del modulo unione, le colonne BaseAction e After del record devono essere Null.
+Se viene [usata un'azione standard](standard-actions.md) nella colonna Azione di una tabella della sequenza del modulo unione, le colonne BaseAction e After del record devono essere Null.
 
 </dd> <dt>
 
@@ -49,14 +49,14 @@ Se si [usa un'azione standard](standard-actions.md) nella colonna Azione di una 
 
 Numero di sequenza di un'azione standard. Se nella colonna Azione di questa riga viene immessa un'azione o una finestra di dialogo personalizzata, questo campo deve essere impostato su Null.
 
-Quando si [usano azioni standard](standard-actions.md) nelle tabelle di sequenza del modulo unione, il valore nella colonna Sequenza deve essere il numero di sequenza di azioni consigliato. Se il numero di sequenza nel modulo unione è diverso da quello per la stessa azione nella tabella della sequenza di file .msi, lo strumento di unione usa il numero di sequenza del file .msi. Per i numeri di sequenza consigliati delle azioni standard, vedere le sequenze suggerite in [Uso](using-a-sequence-table.md) di una tabella di sequenza.
+Quando si [usano azioni standard](standard-actions.md) nelle tabelle di sequenza del modulo unione, il valore nella colonna Sequenza deve essere il numero di sequenza di azione consigliato. Se il numero di sequenza nel modulo unione è diverso da quello per la stessa azione nella tabella della sequenza di file .msi, lo strumento di unione usa il numero di sequenza del file .msi. Per i numeri di sequenza consigliati delle azioni standard, vedere le sequenze suggerite in [Uso](using-a-sequence-table.md) di una tabella di sequenza.
 
 </dd> <dt>
 
 <span id="BaseAction"></span><span id="baseaction"></span><span id="BASEACTION"></span>BaseAction
 </dt> <dd>
 
-La colonna BaseAction può contenere un'azione standard, un'azione personalizzata specificata nella tabella delle azioni personalizzate del modulo unione o una finestra di dialogo specificata nella tabella della finestra di dialogo del modulo. La colonna BaseAction è una chiave nella colonna Azione di questa tabella. Non può essere una chiave esterna in un'altra tabella o tabella di merge nel file .msi. Ciò significa che ogni azione standard, azione personalizzata o dialogo elencata nella colonna BaseAction deve essere elencata anche nella colonna Azione di un altro record in questa tabella.
+La colonna BaseAction può contenere un'azione standard, un'azione personalizzata specificata nella tabella delle azioni personalizzate del modulo unione o una finestra di dialogo specificata nella tabella della finestra di dialogo del modulo. La colonna BaseAction è una chiave nella colonna Azione di questa tabella. Non può essere una chiave esterna in un'altra tabella o tabella di tipo merge nel file .msi. Ciò significa che ogni azione standard, azione personalizzata o finestra di dialogo elencata nella colonna BaseAction deve essere elencata anche nella colonna Azione di un altro record in questa tabella.
 
 </dd> <dt>
 

@@ -5,7 +5,7 @@ ms.assetid: 438baf22-adc2-410e-bf9b-4b17a05c5ce4
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSClientSetting classe Servizi Desktop remoto
-- Win32_TSClientSetting classe Servizi Desktop remoto , descritta
+- Win32_TSClientSetting classe Servizi Desktop remoto , descritto
 topic_type:
 - apiref
 api_name:
@@ -79,7 +79,7 @@ ms.locfileid: "118349365"
 ---
 # <a name="win32_tsclientsetting-class"></a>Classe \_ TSClientSetting Win32
 
-La classe WMI **\_ Win32 TSClientSetting** definisce le impostazioni di configurazione per la [**classe \_ Terminale Win32**](win32-terminal.md) correlata ai criteri di connessione.
+La **classe WMI Win32 \_ TSClientSetting** definisce le impostazioni di configurazione per la [**classe \_ Terminale Win32**](win32-terminal.md) correlata ai criteri di connessione.
 
 La sintassi seguente è semplificata dal codice MOF e include tutte le proprietà definite ed ereditate, in ordine alfabetico. Per informazioni di riferimento sui metodi, vedere la tabella dei metodi più avanti in questo argomento.
 
@@ -148,14 +148,14 @@ class Win32_TSClientSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Members
 
-La **classe \_ Win32 TSClientSetting** ha questi tipi di membri:
+La **classe Win32 \_ TSClientSetting** ha questi tipi di membri:
 
 -   [Metodi](#methods)
 -   [Proprietà](#properties)
 
 ### <a name="methods"></a>Metodi
 
-La **classe \_ TSClientSetting Win32** include questi metodi.
+La **classe Win32 \_ TSClientSetting** include questi metodi.
 
 
 
@@ -176,7 +176,7 @@ La **classe \_ TSClientSetting Win32** include questi metodi.
 
 ### <a name="properties"></a>Proprietà
 
-La **classe \_ Win32 TSClientSetting** ha queste proprietà.
+La **classe Win32 \_ TSClientSetting** ha queste proprietà.
 
 <dl> <dt>
 
@@ -186,7 +186,7 @@ La **classe \_ Win32 TSClientSetting** ha queste proprietà.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Specifica se abilitare la grafica RemoteFX grafica avanzata per RemoteApp.
@@ -232,7 +232,7 @@ Questa proprietà non è disponibile.
 
 **Windows 7 e Windows Server 2008 R2: **
 
-Specifica se abilitare o disabilitare la composizione di desktop remoto. Zero disabilita la composizione del desktop remoto e un valore diverso da zero la abilita.
+Specifica se abilitare o disabilitare la composizione di desktop remoto. Zero disabilita la composizione del desktop remoto e un valore diverso da zero la abiliterà.
 
 Usare il [**metodo SetAllowDwm**](setallowdwm-win32-tsclientsetting.md) per modificare questa proprietà.
 
@@ -249,7 +249,7 @@ Tipo di accesso: sola lettura
 
 Specifica se consentire il reindirizzamento dell'acquisizione audio.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -269,7 +269,7 @@ Specifica se consentire il reindirizzamento dell'acquisizione audio.
 
 </dd> <dt>
 
-**Mapping audio**
+**Mapping di audio**
 </dt> <dd> <dl> <dt>
 
 Tipo di dati: **uint32**
@@ -312,7 +312,7 @@ Il mapping audio è disabilitato.
 Tipo di dati: **uint32**
 </dt> <dt>
 
-Tipo di accesso: Lettura/scrittura
+Tipo di accesso: Lettura/Scrittura
 </dt> </dl>
 
 Specifica se è preferibile la modalità AVC444.
@@ -340,7 +340,7 @@ Specifica se è preferibile la modalità AVC444.
 **Didascalia**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **string**
+Tipo di dati: **stringa**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -349,7 +349,7 @@ Tipo di accesso: sola lettura
 Qualificatori: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrizione (stringa di una riga) dell'oggetto.
+Breve descrizione (stringa di una riga) dell'oggetto .
 
 Questa proprietà viene ereditata da [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -401,7 +401,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica la profondità del colore. Per i valori possibili, vedere [**il metodo SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
+Specifica la profondità del colore. Per i valori possibili, vedere il [**metodo SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
 
 <dt>
 
@@ -866,7 +866,7 @@ Tipo di accesso: sola lettura
 
 Risoluzione X massima supportata dal server. Usare il [**metodo SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) per modificare questa proprietà.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -881,14 +881,14 @@ Tipo di accesso: sola lettura
 
 Risoluzione Y massima supportata dal server. Usare il [**metodo SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) per modificare questa proprietà.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
 **Nome**
 </dt> <dd> <dl> <dt>
 
-Tipo di dati: **stringa**
+Tipo di dati: **string**
 </dt> <dt>
 
 Tipo di accesso: sola lettura
@@ -909,7 +909,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Specifica se consentire Plug and Play reindirizzamento.
+Specifica se consentire o meno Plug and Play reindirizzamento.
 
 <dt>
 
@@ -946,7 +946,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà AdvancedRemoteAppGraphics** è configurata dal server o dai criteri di gruppo.
+Indica se la proprietà **AdvancedRemoteAppGraphics** è configurata dal server o da Criteri di gruppo.
 
 **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2012 R2 e Windows 8.1.
 
@@ -1012,7 +1012,7 @@ Tipo di accesso: sola lettura
 
 Indica se la **proprietà AudioCaptureRedir** è configurata dal server o dai criteri di gruppo.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1041,7 +1041,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà AudioMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà AudioMapping** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1077,7 +1077,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica la modalità di configurazione della proprietà **AVC444ModePreferredis.**
+Indica come viene configurata la proprietà **AVC444ModePreferredis.**
 
 **Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Questa proprietà non è disponibile prima di Windows 10 o Windows Server 2016.
 
@@ -1108,7 +1108,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ClipboardMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ClipboardMapping** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1144,7 +1144,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ColorDepth** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ColorDepth** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1180,7 +1180,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà ColorDepthPolicy** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà ColorDepthPolicy** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1216,7 +1216,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà COMPortMapping è** configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà COMPortMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1252,7 +1252,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà DefaultToClientPrinter** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà DefaultToClientPrinter** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1288,7 +1288,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà DriveMapping** è configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà DriveMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1386,7 +1386,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la proprietà **LPTPortMapping è** configurata dal server, da Criteri di gruppo o per impostazione predefinita.
+Indica se la **proprietà LPTPortMapping** è configurata dal server, dai criteri di gruppo o per impostazione predefinita.
 
 <dt>
 
@@ -1422,7 +1422,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> </dl>
 
-Indica se la **proprietà MaxMonitors** è configurata dal server, da Criteri di gruppo o dall'impostazione predefinita.
+Indica se la **proprietà MaxMonitors** è configurata dal server, dai criteri di gruppo o dall'impostazione predefinita.
 
 <dt>
 
@@ -1447,7 +1447,7 @@ Predefinito
 
 </dd> </dl>
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -1462,7 +1462,7 @@ Tipo di accesso: sola lettura
 
 Indica se le **proprietà MaxXResolution** e **MaxYResolution** sono configurate dal server, dai criteri di gruppo o dall'impostazione predefinita.
 
-**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima Windows Server 2008 R2 e Windows 7.
+**Windows Server 2008 e Windows Vista:** Questa proprietà non è disponibile prima di Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1529,7 +1529,7 @@ Tipo di accesso: sola lettura
 
 Indica la modalità di **configurazione di RemoteSessionProfile.**
 
-**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Questa proprietà non è disponibile prima Windows 8 o Windows Server 2012.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Questa proprietà non è disponibile prima di Windows 8 o Windows Server 2012.
 
 <dt>
 
@@ -1960,9 +1960,9 @@ Il mapping della stampante è disabilitato.
 
 ## <a name="remarks"></a>Commenti
 
-Tenere presente che una stazione finestra associata alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se si tenta di eseguire questa operazione specificando "Console" come valore della proprietà **TerminalName,** i metodi di questo oggetto restituiranno **WBEM \_ E NOT \_ \_ SUPPORTED.** Questo codice di errore viene restituito anche se una stazione finestra tenta di chiamare i metodi di questo oggetto per aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
+Tenere presente che una stazione finestra associata alla sessione della console non può accedere ai metodi e alle proprietà di questa classe. Se si tenta di eseguire questa operazione specificando "Console" come valore della proprietà **TerminalName,** i metodi di questo oggetto restituiranno **WBEM \_ E NOT \_ \_ SUPPORTED**. Questo codice di errore viene restituito anche se una stazione finestra tenta di chiamare metodi di questo oggetto per aggiungere o modificare le proprietà di sicurezza degli account LocalSystem, LocalService o NetworkService.
 
-Per connettersi allo spazio \\ dei \\ nomi CIMV2 \\ TerminalServices radice, il livello di autenticazione deve includere la privacy dei pacchetti. Per le chiamate C/C++, questo è un livello di autenticazione di **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic e le chiamate di scripting, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valore di sei.
+Per connettersi allo spazio \\ dei \\ nomi TerminalServices CIMV2 radice, il livello di autenticazione \\ deve includere la privacy dei pacchetti. Per le chiamate C/C++, si tratta di un livello di autenticazione **di RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Per Visual Basic chiamate di script e script, si tratta di un livello di autenticazione **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con valore sei.
 
 Nell'esempio Visual Basic Scripting Edition (VBScript) seguente viene illustrato come connettersi a un computer remoto con privacy dei pacchetti.
 
@@ -1975,7 +1975,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contengono le definizioni per le classi WMI (Windows Management Instrumentation). I file MOF non vengono installati come parte di Microsoft Windows Software Development Kit (SDK). Vengono installati nel server quando si aggiunge il ruolo associato usando il Server Manager. Per altre informazioni sui file MOF, vedere [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -1985,7 +1985,7 @@ Managed Object Format (MOF) contengono le definizioni per le Windows WMI (Manage
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
-| Spazio dei nomi<br/>                | Radice \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Spazio dei nomi<br/>                | TerminalServices \\ CIMv2 \\ radice<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 

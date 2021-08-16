@@ -6,11 +6,11 @@ keywords:
 - Windows Media Format SDK, creazione di licenze in locale
 - Windows Media Format SDK, licenze
 - digital rights management (DRM), creazione di licenze in locale
-- DRM (Digital Rights Management),creazione di licenze in locale
+- DRM (digital rights management), creazione di licenze in locale
 - digital rights management (DRM), licenze
-- DRM (Digital Rights Management),licenze
+- DRM (digital rights management), licenze
 - API estese del client DRM, creazione di licenze in locale
-- API client estese, creazione di licenze in locale
+- API estese client, creazione di licenze in locale
 - licenze, creazione di licenze in locale
 ms.topic: article
 ms.date: 05/31/2018
@@ -23,15 +23,15 @@ ms.locfileid: "118433907"
 ---
 # <a name="creating-licenses-locally"></a>Creazione di licenze in locale
 
-In alcune circostanze, ad esempio durante [l'importazione DRM,](drm-import.md)è possibile creare licenze proprie. Windows Le licenze DRM multimediali possono essere scritte in diversi modi, ma per creare la propria licenza è necessario usare lo schema binario XMR (Extensible Media Rights). Per altre informazioni, vedere [Building an XMR License (Creazione di una licenza XMR).](building-an-xmr-license.md)
+In alcuni casi, ad esempio durante [l'importazione DRM,](drm-import.md)è possibile creare licenze proprie. Windows Le licenze DRM multimediali possono essere scritte in diversi modi, ma per creare la propria licenza, è necessario usare lo schema binario Extensible Media Rights (XMR). Per altre informazioni, vedere [Creazione di una licenza XMR.](building-an-xmr-license.md)
 
-Quando si crea una licenza, è possibile aggiungerla all'archivio licenze locale chiamando il [**metodo IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
+Quando si crea una licenza, è possibile aggiungerla all'archivio licenze locale chiamando il metodo [**IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 <dl> <dt>
 
-[**Acquisizione delle licenze**](acquiring-licenses.md)
+[**Acquisizione di licenze**](acquiring-licenses.md)
 </dt> <dt>
 
 [**Creazione di una licenza XMR**](building-an-xmr-license.md)

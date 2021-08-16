@@ -62,7 +62,7 @@ Tipo di accesso: sola lettura
 Qualificatori: WmiDataId(1), Extension("WmiTime")
 </dt> </dl>
 
-Tempo di ingresso DPC.
+Ora di ingresso DPC.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo di dati: **uint32**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: WmiDataId(2), Pointer
+Qualificatori: WmiDataId(2), Puntatore
 </dt> </dl>
 
 Indirizzo della routine DPC. Usare l'indirizzo con gli eventi Image per trovare l'immagine avviata.
@@ -84,9 +84,9 @@ Indirizzo della routine DPC. Usare l'indirizzo con gli eventi Image per trovare 
 
 ## <a name="remarks"></a>Commenti
 
-Questi eventi vengono registrati quando viene immesso un DPC. Questi eventi vengono utilizzati per monitorare e verificare il comportamento dei driver e dei componenti in modalità kernel. Ad esempio, è possibile usare gli eventi DPC, ISR e Image per determinare i componenti che impiegano troppo tempo a livelli di interrupt elevati. Gli eventi DPC e ISR hanno un timestamp di ingresso che viene usato per calcolare la durata delle routine. Gli eventi immagine vengono letti per costruire le aree di memoria mappate a determinati moduli. È possibile utilizzare il mapping per individuare il modulo che contiene la routine di interrupt.
+Questi eventi vengono registrati quando viene immesso un DPC. Questi eventi vengono utilizzati per monitorare e verificare il comportamento dei driver e dei componenti in modalità kernel. Ad esempio, è possibile usare eventi DPC, ISR e Image per determinare i componenti che impiegano troppo tempo a livelli di interrupt elevati. Gli eventi DPC e ISR hanno un timestamp di ingresso usato per calcolare la durata delle routine. Gli eventi immagine vengono letti per costruire le aree di memoria mappate a determinati moduli. È possibile usare il mapping per individuare il modulo che contiene la routine di interrupt.
 
-L'evento TimerDPC registra quando un DPC viene generato in seguito alla scadenza di un timer e l'evento ThreadDPC registra quando viene eseguito un DPC a thread.
+L'evento TimerDPC registra quando un DPC viene generato in seguito alla scadenza di un timer e l'evento ThreadDPC registra quando viene eseguito un DPC in thread.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -94,8 +94,8 @@ L'evento TimerDPC registra quando un DPC viene generato in seguito alla scadenza
 
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>       |
-| Server minimo supportato<br/> | Windows Solo app desktop di Server 2008 \[\]<br/> |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>       |
+| Server minimo supportato<br/> | Windows Solo app desktop server 2008 \[\]<br/> |
 
 
 

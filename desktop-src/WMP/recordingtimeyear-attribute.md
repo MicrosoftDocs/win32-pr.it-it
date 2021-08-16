@@ -1,6 +1,6 @@
 ---
 title: Attributo RecordingTimeYear
-description: L'attributo RecordingTimeYear è la parte relativa all'anno della data della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+description: L'attributo RecordingTimeYear è la parte dell'anno della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 ms.assetid: 6516905f-162b-44ce-ac82-56b039e910f2
 keywords:
 - Attributo RecordingTimeYear Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92c4a2ac73a0c975e5e35d19ff3d247479b4bb0e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 588dd160e59c6b7d8f3467784f2cff8bb1d0c4c408d75dae083070ad5bc04e5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118333579"
 ---
 # <a name="recordingtimeyear-attribute"></a>Attributo RecordingTimeYear
 
-L'attributo **RecordingTimeYear** è la parte relativa all'anno della data della registrazione originale, per gli elementi in cui la data è diversa dalla data di rilascio.
+**L'attributo RecordingTimeYear** è la parte dell'anno della data della registrazione originale, per gli elementi in cui questa data è diversa dalla data di rilascio.
 
 ## <a name="applies-to"></a>Si applica a
 
@@ -31,9 +31,9 @@ L'attributo **RecordingTimeYear** è la parte relativa all'anno della data della
 
 ## <a name="remarks"></a>Commenti
 
-Questo attributo viene archiviato solo nella libreria.
+Questo attributo viene archiviato solo nella libreria .
 
-Per determinare se è possibile modificare il valore di questo attributo, usare il metodo [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Per determinare se è possibile modificare il valore di questo attributo, usare il [metodo Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -49,7 +49,7 @@ Per determinare se è possibile modificare il valore di questo attributo, usare 
 
 <dl> <dt>
 
-[**Riferimento agli attributi**](attribute-reference.md)
+[**Riferimento all'attributo**](attribute-reference.md)
 </dt> </dl>
 
  

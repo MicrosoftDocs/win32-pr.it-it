@@ -22,7 +22,7 @@ ms.locfileid: "118630583"
 ---
 # <a name="installerfileversion-method"></a>Metodo Installer.FileVersion
 
-Il **metodo FileVersion** dell'oggetto [**Installer**](installer-object.md) restituisce la stringa di versione o la stringa di lingua del percorso specificato in *Path* usando il formato in cui il programma di installazione prevede di trovarli nel database. Per le versioni, si tratta di una stringa in formato " \# \# . . . \# \# ". Per la lingua, si tratta dell'ID lingua decimale.
+Il **metodo FileVersion** dell'oggetto [**Installer**](installer-object.md) restituisce la stringa di versione o la stringa di lingua del percorso specificato in *Path* usando il formato in cui il programma di installazione prevede di trovarli nel database. Per le versioni, si tratta di una stringa in formato " \# \# . . . \# \# ". Per language, si tratta dell'ID lingua decimale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,7 +50,7 @@ Stringa obbligatoria contenente il percorso del file.
 *Lingua* 
 </dt> <dd>
 
-Flag per indicare se il valore restituito è un ID lingua o una stringa di versione. TRUE restituisce la lingua, FALSE restituisce la versione. Questo parametro è facoltativo, con il valore predefinito FALSE.
+Flag per indicare se il valore restituito è un ID lingua o una stringa di versione. TRUE restituisce la lingua, FALSE restituisce la versione. Questo parametro è facoltativo e il valore predefinito è FALSE.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Questo metodo non restituisce valori.
 
 | Requisito | Valore |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Programma di installazione 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
+| Versione<br/> | Windows Programma di installazione 5.0 Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 in Windows Server 2008 o Windows Vista. Windows Programma di installazione Windows Server 2003 o Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID IInstaller è definito come \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID \_ IInstaller è definito come 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

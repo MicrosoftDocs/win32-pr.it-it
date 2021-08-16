@@ -22,7 +22,7 @@ ms.locfileid: "118433867"
 
 Per i flussi audio e video che usano i codec audio e video Windows Media, è necessario ottenere i valori per le strutture di configurazione del flusso dal codec che si vuole usare. Anche se è possibile impostare questi valori manualmente, l'uso dei codec garantisce che i valori siano accurati. È consigliabile non modificare i valori in queste strutture a meno che la documentazione non consigli in modo specifico una modifica specifica.
 
-Le informazioni dei codec vengono fornite sotto forma di formati di codec. Ogni formato di codec è un singolo formato di flusso supportato dal codec. Per altre informazioni sui formati di flusso, vedere [Formati](formats.md).
+Le informazioni dai codec vengono fornite sotto forma di formati di codec. Ogni formato di codec è un singolo formato di flusso supportato dal codec. Per altre informazioni sui formati di flusso, vedere [Formati](formats.md).
 
 È possibile richiedere informazioni ai codec Windows Media usando le interfacce [**IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo), [**IWMCodecInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo2)e [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) dell'oggetto di gestione profili. Per ottenere [**l'interfaccia IWMProfileManager**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) di un oggetto di gestione profili, chiamare la [**funzione WMCreateProfileManager.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager) Chiamare **QueryInterface** in **IWMProfileManager** per ottenere **IWMCodecInfo3.**
 

@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118420969"
 ---
-# <a name="cim_storagedefect-class"></a>Classe \_ CIM StorageDefect
+# <a name="cim_storagedefect-class"></a>Classe CIM \_ StorageDefect
 
 **L'aggregazione CIM \_ StorageDefect** raccoglie gli errori di archiviazione per un extent di archiviazione.
 
 > [!IMPORTANT]
-> Le classi CIM (Distributed Management Task Force) DMTF (Distributed Management Task Force) Common Information Model sono le classi padre su cui vengono compilate le classi WMI. WMI supporta attualmente solo gli [schemi della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Le classi CIM (Distributed Management Task Force) DMTF (Common Information Model Distributed Management Task Force) sono le classi padre su cui vengono compilate le classi WMI. WMI attualmente supporta solo gli schemi [della versione CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -66,10 +66,10 @@ Tipo di dati: **CIM \_ StorageError**
 Tipo di accesso: sola lettura
 </dt> <dt>
 
-Qualificatori: [ **weak**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificatori: [ **Deboli**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Riferimento all'oggetto error, che definisce gli indirizzi iniziale e finale di cui è stato eseguito il mapping all'esterno dell'extent di archiviazione.
+Riferimento all'oggetto errore, che definisce gli indirizzi iniziale e finale di cui viene eseguito il mapping all'esterno dell'extent di archiviazione.
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Riferimento all'extent di archiviazione in cui si sono verificati gli errori.
 
 WMI non implementa questa classe.
 
-Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere errori secondari, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
+Questa documentazione è derivata dalle descrizioni della classe CIM pubblicate da DMTF. Microsoft potrebbe aver apportato modifiche per correggere gli errori minori, essere conforme agli standard della documentazione di Microsoft SDK o fornire altre informazioni.
 
 ## <a name="requirements"></a>Requisiti
 

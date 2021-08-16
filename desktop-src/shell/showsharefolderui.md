@@ -1,7 +1,7 @@
 ---
-description: Consente di visualizzare la scheda condivisione cartelle nella finestra delle proprietà per la cartella specificata.
+description: Visualizza la scheda Condivisione cartelle nella finestra delle proprietà per la cartella specificata.
 ms.assetid: e622e4bb-eaf7-494f-b2a2-78ba1311a496
-title: ShowShareFolderUI (funzione)
+title: Funzione ShowShareFolderUI
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - Ntshrui.dll
-ms.openlocfilehash: e6270f72d1574a21b98ac9ee3151af1f34f08a72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
-ms.translationtype: HT
+ms.openlocfilehash: 9683d7faee4bd44bd8f21e14250503f351e1a134119f978f872d7a0fe3ad6c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104346426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968260"
 ---
-# <a name="showsharefolderui-function"></a>ShowShareFolderUI (funzione)
+# <a name="showsharefolderui-function"></a>Funzione ShowShareFolderUI
 
-Consente di visualizzare la scheda **condivisione cartelle** nella finestra delle proprietà per la cartella specificata.
+Visualizza la **scheda Condivisione** cartelle nella finestra delle proprietà per la cartella specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,21 +41,21 @@ HRESULT ShowShareFolderUI(
 
 <dl> <dt>
 
-*hwndParent* \[ in\]
+*hwndParent* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **HWND**
 
-Handle per la finestra padre della finestra delle proprietà.
+Handle per la finestra padre per la finestra delle proprietà.
 
 </dd> <dt>
 
-*pszPath* \[ in\]
+*pszPath* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntatore a una stringa che specifica il percorso alla cartella che visualizza la scheda **condivisione cartelle** .
+Puntatore a una stringa che specifica il percorso della cartella in cui viene visualizzata la **scheda Condivisione** cartelle.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Questa funzione restituisce sempre S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-A questa funzione non è associato alcun file con estensione LIB. Per usarlo, è necessario usare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+A questa funzione non è associato alcun file con estensione lib. Per usarlo, è necessario usare [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ A questa funzione non è associato alcun file con estensione LIB. Per usarlo, è
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop Windows XP\]<br/>                                            |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2003\]<br/>                                   |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop XP\]<br/>                                            |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Ntshrui.dll</dt> </dl> |
 | Nomi Unicode e ANSI<br/>   | **ShowShareFolderUIW** (Unicode)<br/>                                            |
 

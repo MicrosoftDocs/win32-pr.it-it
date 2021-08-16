@@ -1,60 +1,60 @@
 ---
 description: Informazioni sulla scrittura di eventi MOF in una sessione di traccia. Iniziare con la registrazione del provider, in modo che sia pronto per scrivere eventi in una sessione di traccia.
 ms.assetid: 21f62b5d-0a2d-468c-af88-2fab1512f0ec
-title: Scrittura di eventi MOF (versione classica)
+title: Scrittura di eventi MOF (classici)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d081c48567851d2fb570dd7bfa5c75e687b524
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: c29b5d753c40bb2fca5313340638a63d2a5e55c5eaf6dcef14e8388906cb190a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393660"
 ---
-# <a name="writing-mof-classic-events"></a>Scrittura di eventi MOF (versione classica)
+# <a name="writing-mof-classic-events"></a>Scrittura di eventi MOF (classici)
 
-Prima di poter scrivere eventi in una sessione di traccia, è necessario registrare il provider. La registrazione di un provider indica a ETW che il provider è pronto per scrivere eventi in una sessione di traccia. Un processo può registrare fino a 1.024 GUID del provider. Tuttavia, è necessario limitare il numero di provider registrati dal processo a uno o due.
+Prima di poter scrivere eventi in una sessione di traccia, è necessario registrare il provider. La registrazione di un provider indica a ETW che il provider è pronto per scrivere eventi in una sessione di traccia. Un processo può registrare fino a 1.024 GUID del provider. Tuttavia, è consigliabile limitare il numero di provider registrati dal processo a uno o due.
 
 **Prima di Windows Vista:** Non esiste alcun limite al numero di provider che un processo può registrare.
 
-Per registrare un provider classico, chiamare la [**funzione RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) La funzione registra il GUID del provider, i GUID della classe di traccia eventi e identifica il callback chiamato da ETW quando un controller abilita o disabilita il provider.
+Per registrare un provider classico, chiamare [**la funzione RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) La funzione registra il GUID del provider, i GUID della classe di traccia eventi e identifica il callback chiamato da ETW quando un controller abilita o disabilita il provider.
 
 Se il provider chiama la funzione [**TraceEvent**](/windows/win32/api/evntrace/nf-evntrace-traceevent) per registrare gli eventi, non è necessario includere la matrice di GUID di classe (può essere **NULL)** quando si chiama la [**funzione RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) È necessario includere la matrice solo se il provider chiama la [**funzione TraceEventInstance**](/windows/win32/api/evntrace/nf-evntrace-traceeventinstance) per registrare gli eventi.
 
 **Windows XP e Windows 2000:** È sempre necessario includere la matrice di GUID di classe (non può essere **NULL).**
 
-Dopo che un provider si registra e viene abilitato dal controller, il provider può registrare gli eventi nella sessione di traccia del controller.
+Dopo che un provider si registra e viene abilitato dal controller, il provider può registrare eventi nella sessione di traccia del controller.
 
-Prima che il provider venga chiuso, chiamare la [**funzione UnregisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-unregistertraceguids) per rimuovere la registrazione del provider da ETW. La [**funzione RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) restituisce l'handle di registrazione passato alla **funzione UnregisterTraceGuids.**
+Prima che il provider venga chiuso, chiamare [**la funzione UnregisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-unregistertraceguids) per rimuovere la registrazione del provider da ETW. La [**funzione RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) restituisce l'handle di registrazione passato alla **funzione UnregisterTraceGuids.**
 
-Se il provider registra gli eventi solo nella sessione del logger globale, non è necessario registrare il provider con ETW perché il controller del logger globale non abilita o disabilita i provider. Per informazioni dettagliate, [vedere Configurazione e avvio della sessione del logger globale](configuring-and-starting-the-global-logger-session.md).
+Se il provider registra gli eventi solo nella sessione global logger, non è necessario registrare il provider con ETW perché il controller del logger globale non abilita o disabilita i provider. Per informazioni dettagliate, [vedere Configurazione e avvio della sessione del logger globale.](configuring-and-starting-the-global-logger-session.md)
 
-Tutti [i](about-event-tracing.md) provider classici ,ad eccezione di quelli che tracciano gli eventi nella sessione global Logger, devono implementare la [**funzione ControlCallback.**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) Il provider usa le informazioni nel callback per determinare se è abilitato o disabilitato e quali eventi deve scrivere.
+Tutti [i provider](about-event-tracing.md) classici, ad eccezione di quelli che tracciano gli eventi nella sessione del logger globale, devono implementare la funzione [**ControlCallback.**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) Il provider utilizza le informazioni nel callback per determinare se è abilitato o disabilitato e quali eventi deve scrivere.
 
 Il provider specifica il nome della funzione di callback quando chiama la [**funzione RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) per registrarsi. ETW chiama la funzione di callback quando il controller chiama la [**funzione EnableTrace**](/windows/win32/api/evntrace/nf-evntrace-enabletrace) per abilitare o disabilitare il provider.
 
-[**Nell'implementazione di ControlCallback**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) è necessario chiamare la [**funzione GetTraceLoggerHandle**](/windows/win32/api/evntrace/nf-evntrace-gettraceloggerhandle) per recuperare l'handle di sessione. l'handle di sessione viene utilizzato quando si chiama [**la funzione TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) È necessario chiamare la [**funzione GetTraceEnableFlags**](/windows/win32/api/evntrace/nf-evntrace-gettraceenableflags) o [**GetTraceEnableLevel**](/windows/win32/api/evntrace/nf-evntrace-gettraceenablelevel) nell'implementazione **di ControlCallback** solo se il provider usa il livello di abilitazione o i flag di abilitazione.
+[**Nell'implementazione di ControlCallback**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) è necessario chiamare la [**funzione GetTraceLoggerHandle**](/windows/win32/api/evntrace/nf-evntrace-gettraceloggerhandle) per recuperare l'handle di sessione. L'handle di sessione viene utilizzato quando si chiama [**la funzione TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) È necessario chiamare la funzione [**GetTraceEnableFlags**](/windows/win32/api/evntrace/nf-evntrace-gettraceenableflags) o la funzione [**GetTraceEnableLevel**](/windows/win32/api/evntrace/nf-evntrace-gettraceenablelevel) nell'implementazione **di ControlCallback** solo se il provider usa i flag enable level o enable.
 
-Un provider può registrare gli eventi di traccia in una sola sessione, ma non è necessario impedire a più controller di abilitare un singolo provider. Per impedire a un altro controller di reindirizzare gli eventi di traccia alla relativa sessione, è possibile aggiungere logica all'implementazione [**ControlCallback**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) per confrontare gli handle di sessione e ignorare le richieste di abilitazione da altri controller.
+Un provider può registrare gli eventi di traccia in una sola sessione, ma non è necessario impedire a più controller di abilitare un singolo provider. Per impedire a un altro controller di reindirizzare gli eventi di traccia alla relativa sessione, è possibile aggiungere logica all'implementazione [**di ControlCallback**](/windows/win32/api/evntrace/nc-evntrace-wmidprequest) per confrontare gli handle di sessione e ignorare le richieste di abilitazione da altri controller.
 
-Per registrare gli eventi, [i provider classici](about-event-tracing.md) chiamano la funzione [**TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) Un evento è costituito dalla [**struttura EVENT \_ TRACE \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) e da tutti i dati specifici dell'evento aggiunti all'intestazione.
+Per registrare gli eventi, [i](about-event-tracing.md) provider classici chiamano [**la funzione TraceEvent.**](/windows/win32/api/evntrace/nf-evntrace-traceevent) Un evento è costituito dalla [**struttura EVENT \_ TRACE \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) e da tutti i dati specifici dell'evento aggiunti all'intestazione.
 
 L'intestazione deve contenere le informazioni seguenti:
 
--   Il **membro Size** deve contenere il numero totale di byte da registrare per l'evento , incluse le dimensioni della struttura EVENT TRACE [**\_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) e di tutti i dati specifici dell'evento aggiunti all'intestazione.
--   Il **membro Guid** deve contenere il GUID della classe dell'evento oppure il membro **GuidPtr** deve contenere un puntatore al GUID della classe.
+-   Il **membro Size** deve contenere il numero totale di byte da registrare per l'evento ,incluse le dimensioni della struttura EVENT TRACE [**\_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) e di tutti i dati specifici dell'evento aggiunti all'intestazione.
+-   Il **membro Guid** deve contenere il GUID della classe dell'evento (oppure il membro **GuidPtr** deve contenere un puntatore al GUID della classe).
 
-    **Windows XP e Windows 2000:** Il GUID della classe deve essere stato registrato in precedenza usando la [**funzione RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa)
+    **Windows XP e Windows 2000:** Il GUID della classe deve essere stato registrato in precedenza usando [**la funzione RegisterTraceGuids.**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa)
 
--   Il **membro Flags** deve contenere il flag GUID **\_ \_ TRACED WNODE \_ FLAG.** Se si specifica il GUID della classe usando il **membro GuidPtr,** aggiungere anche il flag **PTR WNODE \_ FLAG USE \_ \_ GUID. \_**
+-   Il **membro Flags** deve contenere il flag GUID **\_ \_ TRACED WNODE \_ FLAG.** Se si specifica il GUID della classe usando il **membro GuidPtr,** aggiungere anche il flag **\_ \_ \_ \_ PTR USE GUID WNODE FLAG.**
 -   Il **membro Class.Type** deve contenere il tipo di evento, se si usa MOF per pubblicare il layout dei dati dell'evento.
--   Il **membro Class.Version** deve contenere la versione dell'evento, se si usa MOF per pubblicare il layout dei dati dell'evento. La versione viene usata per distinguere tra revisioni ai dati dell'evento. Impostare il numero di versione iniziale su 0.
+-   Il **membro Class.Version** deve contenere la versione dell'evento, se si usa MOF per pubblicare il layout dei dati dell'evento. La versione viene usata per distinguere tra le revisioni e i dati dell'evento. Impostare il numero di versione iniziale su 0.
 
-Se si scrivono sia il provider che il consumer, è possibile usare una struttura per popolare i dati specifici dell'evento aggiunti all'intestazione. Tuttavia, se si usa MOF per pubblicare i dati specifici dell'evento in modo che qualsiasi consumer possa elaborare l'evento, non è consigliabile usare una struttura per aggiungere i dati specifici dell'evento all'intestazione. Ciò è dovuto al fatto che il compilatore può aggiungere byte aggiuntivi ai dati specifici dell'evento ai fini dell'allineamento dei byte. Poiché la definizione MOF non include i byte aggiuntivi, il consumer può recuperare dati non validi.
+Se si scrivono sia il provider che il consumer, è possibile utilizzare una struttura per popolare i dati specifici dell'evento aggiunti all'intestazione. Tuttavia, se si usa MOF per pubblicare i dati specifici dell'evento in modo che qualsiasi consumer possa elaborare l'evento, non è consigliabile usare una struttura per aggiungere i dati specifici dell'evento all'intestazione. Ciò è dovuto al fatto che il compilatore può aggiungere byte aggiuntivi ai dati specifici dell'evento ai fini dell'allineamento dei byte. Poiché la definizione MOF non include i byte aggiuntivi, il consumer può recuperare dati non validi.
 
-È necessario allocare un blocco di memoria per l'evento e copiare ogni elemento di dati dell'evento nella memoria oppure creare una struttura che includa una matrice di [**strutture MOF \_ FIELD.**](/windows/win32/api/evntrace/ns-evntrace-mof_field) La maggior parte delle applicazioni creerà una struttura che include una matrice di **strutture FIELD MOF. \_** Assicurarsi che **Header.Size rifletta** il numero effettivo di **strutture MOF \_ FIELD** effettivamente impostate prima di registrare l'evento. Ad esempio, se l'evento contiene tre campi dati, impostare **Header.Size** su sizeof(EVENT \_ TRACE \_ HEADER) + (sizeof(MOF \_ FIELD) \* 3).
+È necessario allocare un blocco di memoria per l'evento e copiare ogni elemento di dati dell'evento nella memoria oppure creare una struttura che includa una matrice di strutture [**FIELD MOF. \_**](/windows/win32/api/evntrace/ns-evntrace-mof_field) La maggior parte delle applicazioni creerà una struttura che include una matrice di strutture **\_ FIELD MOF.** Assicurarsi che **Header.Size rifletta** il numero effettivo di **strutture MOF \_ FIELD** effettivamente impostate prima di registrare l'evento. Ad esempio, se l'evento contiene tre campi dati, impostare **Header.Size** su sizeof(EVENT \_ TRACE \_ HEADER) + (sizeof(MOF \_ FIELD) \* 3).
 
-Per informazioni sulla traccia degli eventi correlati, vedere Scrittura di eventi [correlati in uno scenario end-to-end](writing-related-events-in-an-end-to-end-scenario.md).
+Per informazioni sulla traccia degli eventi correlati, vedere Scrittura di eventi [correlati in uno scenario end-to-end.](writing-related-events-in-an-end-to-end-scenario.md)
 
 Nell'esempio seguente viene illustrato come chiamare la [**funzione TraceEvent**](/windows/win32/api/evntrace/nf-evntrace-traceevent) per registrare gli eventi. L'esempio fa riferimento agli eventi definiti in [Pubblicazione dello schema di eventi per un provider classico.](publishing-your-event-schema-for-a-classic-provider.md)
 

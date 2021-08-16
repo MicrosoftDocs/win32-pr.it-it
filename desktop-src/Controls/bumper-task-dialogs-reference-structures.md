@@ -1,6 +1,6 @@
 ---
-title: Strutture della finestra di dialogo attività
-description: Strutture della finestra di dialogo attività
+title: Strutture delle finestre di dialogo attività
+description: Strutture delle finestre di dialogo attività
 ms.assetid: 997d843a-9c4d-45bf-a876-761e3c69156d
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118415855"
 ---
-# <a name="task-dialog-structures"></a>Strutture della finestra di dialogo attività
+# <a name="task-dialog-structures"></a>Strutture delle finestre di dialogo attività
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

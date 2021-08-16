@@ -1,5 +1,5 @@
 ---
-title: Metodo JobError IBackgroundCopyCallback (Deliveryoptimization.h)
+title: Metodo IBackgroundCopyCallback JobError (Deliveryoptimization.h)
 description: Ottimizzazione recapito (DO) chiama l'implementazione del metodo JobError quando lo stato del processo cambia in BG_JOB_STATE_ERROR.
 ms.assetid: 121712A5-98EB-4B2F-A004-A3BDF9C1332B
 keywords:
@@ -54,13 +54,13 @@ Contiene informazioni relative al processo, ad esempio il numero di byte e file 
 *pError* \[ Pollici\]
 </dt> <dd>
 
-Contiene informazioni sull'errore, ad esempio il file elaborato nel momento in cui si è verificato l'errore irreversibile e una descrizione dell'errore. Non rilasciare *pError*; DO rilascia l'interfaccia quando il [**metodo JobError**](https://www.bing.com/search?q=**JobError**) viene restituito.
+Contiene informazioni sull'errore, ad esempio il file elaborato al momento dell'errore irreversibile e una descrizione dell'errore. Non rilasciare *pError*; DO rilascia l'interfaccia quando il [**metodo JobError**](https://www.bing.com/search?q=**JobError**) viene restituito.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo deve **restituire** S_OK ; In caso contrario, DO continua a chiamare questo metodo finché non **S_OK** restituito. Per motivi di prestazioni, è consigliabile limitare il numero di volte in cui si restituisce un valore diverso da **S_OK** a un numero limitato di volte. In alternativa alla restituzione di un codice di errore, è consigliabile restituire sempre S_OK **e** gestire l'errore internamente. L'intervallo in cui viene chiamato questo metodo è arbitrario.
+Questo metodo deve **restituire** S_OK ; In caso contrario, DO continua a chiamare questo metodo finché non **S_OK** restituito. Per motivi di prestazioni, è consigliabile limitare il numero di volte in cui si restituisce un valore diverso da **S_OK** a un numero limitato di volte. In alternativa alla restituzione di un codice di errore, è consigliabile restituire sempre S_OK **e** gestire l'errore internamente. L'intervallo in corrispondenza del quale viene chiamato questo metodo è arbitrario.
 
 ## <a name="remarks"></a>Commenti
 

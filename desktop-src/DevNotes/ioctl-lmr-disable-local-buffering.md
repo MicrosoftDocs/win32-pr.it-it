@@ -1,7 +1,7 @@
 ---
-description: Il \_ LMR IOCTL \_ Disabilita \_ il \_ codice di controllo del buffer locale Disabilita la memorizzazione nella cache locale dei dati in memoria durante la lettura o la scrittura di dati in un file remoto. Si tratta di un codice di controllo definito internamente non disponibile in un'intestazione pubblica.
+description: Il codice di controllo \_ IOCTL LMR DISABLE LOCAL BUFFERING disabilita la memorizzazione nella cache locale in memoria sul lato client dei dati durante la lettura o la scrittura di dati \_ in un file \_ \_ remoto. Si tratta di un codice di controllo definito internamente non disponibile in un'intestazione pubblica.
 ms.assetid: a464671b-253c-4f35-84a2-2619cb15b009
-title: Codice di controllo IOCTL_LMR_DISABLE_LOCAL_BUFFERING
+title: IOCTL_LMR_DISABLE_LOCAL_BUFFERING di controllo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0d596402c489caee972e1305f2a32881312fd3e0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 88a6fff0955fb9e0c57c7ea5fae99f532c7c6d4dcc3578a75e07da3f35867f9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "106304408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117827197"
 ---
-# <a name="ioctl_lmr_disable_local_buffering-control-code"></a>IOCTL \_ LMR \_ disabilitare \_ il \_ codice di controllo del buffer locale
+# <a name="ioctl_lmr_disable_local_buffering-control-code"></a>Codice di controllo IOCTL \_ LMR \_ DISABLE \_ LOCAL \_ BUFFERING
 
-Il LMR IOCTL Disabilita il codice di controllo del **\_ \_ \_ \_ buffer locale Disabilita** la memorizzazione nella cache locale dei dati in memoria durante la lettura o la scrittura di dati in un file remoto. Si tratta di un codice di controllo definito internamente non disponibile in un'intestazione pubblica.
+Il codice di controllo **\_ IOCTL LMR \_ DISABLE LOCAL \_ \_ BUFFERING** disabilita la memorizzazione nella cache locale in memoria sul lato client dei dati durante la lettura o la scrittura di dati in un file remoto. Si tratta di un codice di controllo definito internamente non disponibile in un'intestazione pubblica.
 
-Per eseguire questa operazione, chiamare la funzione [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
+Per eseguire questa operazione, chiamare la [**funzione DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) con i parametri seguenti.
 
 
 ```C++
@@ -45,14 +45,14 @@ BOOL DeviceIoControl(
 
 <dl> <dt>
 
-*hDevice* \[ in\]
+*hDevice* \[ Pollici\]
 </dt> <dd>
 
-Handle per il file remoto. Per ottenere questo handle, chiamare la funzione [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) .
+Handle per il file remoto. Per ottenere questo handle, chiamare [**la funzione CreateFile.**](/windows/win32/api/fileapi/nf-fileapi-createfilea)
 
 </dd> <dt>
 
-*dwIoControlCode* \[ in\]
+*dwIoControlCode* \[ Pollici\]
 </dt> <dd>
 
 Codice di controllo per l'operazione. Usare il valore 0x140390 per questa operazione.
@@ -62,54 +62,54 @@ Codice di controllo per l'operazione. Usare il valore 0x140390 per questa operaz
 *lpInBuffer* 
 </dt> <dd>
 
-Non utilizzato, deve essere **null**.
+Non usato, deve essere **NULL.**
 
 </dd> <dt>
 
-*nInBufferSize* \[ in\]
+*nInBufferSize* \[ Pollici\]
 </dt> <dd>
 
-Dimensioni in byte del buffer di input. Deve essere zero.
+Dimensioni del buffer di input, in byte. Deve essere zero.
 
 </dd> <dt>
 
-*lpOutBuffer* \[ out\]
+*lpOutBuffer* \[ Cambio\]
 </dt> <dd>
 
-Non utilizzato, deve essere **null**.
+Non usato, deve essere **NULL.**
 
 </dd> <dt>
 
-*nOutBufferSize* \[ in\]
+*nOutBufferSize* \[ Pollici\]
 </dt> <dd>
 
 Dimensioni in byte del buffer di output. Deve essere zero.
 
 </dd> <dt>
 
-*lpBytesReturned* \[ out\]
+*lpBytesReturned* \[ Cambio\]
 </dt> <dd>
 
-Puntatore a una variabile che riceve le dimensioni in byte dei dati archiviati nel buffer di output.
+Puntatore a una variabile che riceve le dimensioni dei dati archiviati nel buffer di output, in byte.
 
-Se il buffer di output è troppo piccolo, la chiamata ha esito negativo, la funzione [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce l' **errore \_ \_ buffer insufficiente** e *lpBytesReturned* è zero.
+Se il buffer di output è troppo piccolo, la chiamata ha esito negativo, la [**funzione GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) restituisce **ERROR INSUFFICIENT \_ \_ BUFFER** e *lpBytesReturned* è zero.
 
-Se il parametro *lpOverlapped* è **null**, *lpBytesReturned* non può essere **null**. Anche quando un'operazione non restituisce dati di output e il parametro *lpOutBuffer* è **null**, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) USA *lpBytesReturned*. Dopo tale operazione, il valore di *lpBytesReturned* non è significativo.
+Se il *parametro lpOverlapped* è **NULL,** *lpBytesReturned* non può essere **NULL.** Anche quando un'operazione non restituisce dati di output e il parametro *lpOutBuffer* è **NULL,** [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) usa *lpBytesReturned.* Dopo tale operazione, il valore di *lpBytesReturned* non ha significato.
 
-Se *lpOverlapped* non è **null**, *lpBytesReturned* può essere **null**. Se *lpOverlapped* non è **null** e l'operazione restituisce dati, *lpBytesReturned* non ha significato fino al completamento dell'operazione di sovrapposizione. Per recuperare il numero di byte restituiti, chiamare la funzione [**GetOverlappedResult**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) . Se il parametro *hDevice* è associato a una porta di completamento di i/O, è possibile recuperare il numero di byte restituiti chiamando la funzione [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) .
+Se *lpOverlapped* non è **NULL,** *lpBytesReturned* può essere **NULL.** Se *lpOverlapped* non è **NULL** e l'operazione restituisce dati, *lpBytesReturned* non ha significato fino al completamento dell'operazione sovrapposta. Per recuperare il numero di byte restituiti, chiamare [**la funzione GetOverlappedResult.**](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) Se il *parametro hDevice* è associato a una porta di completamento I/O, è possibile recuperare il numero di byte restituiti chiamando la [**funzione GetQueuedCompletionStatus.**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus)
 
 </dd> <dt>
 
-*lpOverlapped* \[ in\]
+*lpOverlapped* \[ Pollici\]
 </dt> <dd>
 
-Puntatore a una struttura [**sovrapposta**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) .
+Puntatore a una [**struttura OVERLAPPED.**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped)
 
-Se il parametro *hDevice* è stato aperto senza specificare il **flag di file \_ \_ sovrapposto**, *lpOverlapped* viene ignorato.
+Se il *parametro hDevice* è stato aperto senza specificare **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* viene ignorato.
 
-Se *hDevice* è stato aperto con il flag **file \_ \_ sovrapposto** , l'operazione viene eseguita come operazione sovrapposta (asincrona). In questo caso, *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) valida che contiene un handle per un oggetto evento. In caso contrario, la funzione avrà esito negativo in modi imprevedibili.
+Se *hDevice è* stato aperto con il flag **FILE FLAG \_ \_ OVERLAPPED,** l'operazione viene eseguita come operazione sovrapposta (asincrona). In questo caso, *lpOverlapped* deve puntare a una struttura [**OVERLAPPED**](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) valida che contiene un handle a un oggetto evento. In caso contrario, la funzione ha esito negativo in modi imprevedibili.
 
-Per le operazioni sovrapposte, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce immediatamente un risultato e l'oggetto evento viene segnalato al completamento dell'operazione. In caso contrario, la funzione non viene restituita fino a quando l'operazione non viene completata o fino a quando non si verifica un errore.
+Per le operazioni [**sovrapposte, DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce immediatamente un risultato e l'oggetto evento viene segnalato quando l'operazione è stata completata. In caso contrario, la funzione non viene restituita fino al completamento dell'operazione o fino a quando non si verifica un errore.
 
 </dd> </dl>
 
@@ -117,21 +117,21 @@ Per le operazioni sovrapposte, [**DeviceIoControl**](/windows/win32/api/ioapiset
 
 Se l'operazione viene completata correttamente, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce un valore diverso da zero.
 
-Se l'operazione ha esito negativo o è in sospeso, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce zero. Per informazioni dettagliate sull'errore, chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Se l'operazione non riesce o è in sospeso, [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) restituisce zero. Per informazioni dettagliate sull'errore, chiamare [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ## <a name="remarks"></a>Osservazioni
 
-Il LMR IOCTL Disabilita il codice di controllo del **\_ \_ \_ \_ buffer locale** viene definito internamente dal sistema come 0x140390 e non in un file di intestazione pubblico. Viene usato da applicazioni per scopi specifici per disabilitare la memorizzazione nella cache locale dei dati in memoria sul lato client durante la lettura o la scrittura di dati in un file remoto. Quando il buffering locale è disabilitato, l'impostazione rimane attiva fino a quando tutti gli handle aperti del file non vengono chiusi e il redirector pulisce le relative strutture di dati interne.
+Il codice di controllo **IOCTL \_ LMR \_ DISABLE LOCAL \_ \_ BUFFERING** viene definito internamente dal sistema come 0x140390 e non in un file di intestazione pubblico. Viene usato dalle applicazioni per scopi speciali per disabilitare la memorizzazione dei dati nella cache in memoria sul lato client locale durante la lettura o la scrittura di dati in un file remoto. Dopo la disabilitazione del buffer locale, l'impostazione rimane attiva fino a quando tutti gli handle aperti per il file non vengono chiusi e il redirector pulisce le strutture di dati interne.
 
-Le applicazioni generiche non devono utilizzare **IOCTL \_ LMR \_ disabilitare \_ il \_ buffering locale**, perché può comportare un eccessivo traffico di rete e una perdita di prestazioni associata. Il LMR IOCTL disabilitare il codice di controllo del **\_ \_ \_ \_ buffer locale** deve essere usato solo in applicazioni specializzate che trasferiscono grandi quantità di dati in rete, tentando di ottimizzare l'uso della larghezza di banda di rete. Le funzioni [**CopyFile**](/windows/win32/api/winbase/nf-winbase-copyfile) e [**CopyFileEx**](/windows/win32/api/winbase/nf-winbase-copyfileexa) , ad esempio, utilizzano **IOCTL \_ LMR disabilitare il \_ \_ \_ buffering locale** per migliorare le prestazioni di copia dei file di grandi dimensioni.
+Le applicazioni per utilizzo generico non devono usare **IOCTL \_ LMR \_ DISABLE LOCAL \_ \_ BUFFERING,** perché possono comportare un traffico di rete eccessivo e una perdita di prestazioni associata. Il codice di controllo **\_ IOCTL LMR \_ DISABLE LOCAL \_ \_ BUFFERING** deve essere usato solo in applicazioni specializzate che spostano grandi quantità di dati in rete durante il tentativo di ottimizzare l'uso della larghezza di banda di rete. Ad esempio, le funzioni [**CopyFile**](/windows/win32/api/winbase/nf-winbase-copyfile) e [**CopyFileEx**](/windows/win32/api/winbase/nf-winbase-copyfileexa) usano **IOCTL \_ LMR \_ DISABLE LOCAL \_ \_ BUFFERING** per migliorare le prestazioni di copia di file di grandi dimensioni.
 
-**IOCTL \_ LMR \_ Disabilita \_ la \_ memorizzazione nel buffer locale** non è implementata dai file system locali e avrà esito negativo e verrà restituita una funzione di errore **\_ non valida \_**. Il rilascio del LMR IOCTL Disabilita il codice di controllo del **\_ \_ \_ \_ buffer locale** negli handle di directory remota avrà esito negativo e l'errore di errore **non è \_ \_ supportato**.
+**IOCTL \_ LMR \_ DISABLE \_ LOCAL \_ BUFFERING non** è implementato dai file system locali e avrà esito negativo con errore INVALID **\_ \_ FUNCTION**. L'emissione del codice di controllo **IOCTL \_ LMR \_ DISABLE LOCAL \_ \_ BUFFERING** sugli handle di directory remota avrà esito negativo con l'errore **ERROR NOT \_ \_ SUPPORTED**.
 
 ## <a name="see-also"></a>Vedi anche
 
 <dl> <dt>
 
-[**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)
+[**Deviceiocontrol**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)
 </dt> </dl>
 
  

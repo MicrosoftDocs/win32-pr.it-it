@@ -1,30 +1,30 @@
 ---
 title: Come creare barre di scorrimento
-description: Quando si crea una finestra sovrapposta, popup o figlio, è possibile aggiungere barre di scorrimento standard usando la funzione CreateWindowEx e specificando WS \_ HSCROLL, WS \_ VSCROLL o entrambi gli stili.
+description: Quando si crea una finestra sovrapposta, popup o figlio, è possibile aggiungere barre di scorrimento standard usando la funzione CreateWindowEx e specificando WS \_ HSCROLL, WS VSCROLL o entrambi \_ gli stili.
 ms.assetid: 58353030-DCF5-4368-9658-BB282B8B5EF0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06b27e3e6d9495492f46567633cc53b0f3f7c5bd
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: aec76c49d9f97e21626546a760d0e42a44b04c70db5790e0b80c08fcdee34412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104474430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117831753"
 ---
 # <a name="how-to-create-scroll-bars"></a>Come creare barre di scorrimento
 
-Quando si crea una finestra sovrapposta, popup o figlio, è possibile aggiungere barre di scorrimento standard usando la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificando WS \_ HSCROLL, WS \_ VSCROLL o entrambi gli stili.
+Quando si crea una finestra sovrapposta, popup o figlio, è possibile aggiungere barre di scorrimento standard usando la [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) e specificando WS \_ HSCROLL, WS VSCROLL o entrambi \_ gli stili.
 
 ## <a name="what-you-need-to-know"></a>Informazioni importanti
 
 ### <a name="technologies"></a>Tecnologie
 
--   [Controlli Windows](window-controls.md)
+-   [Windows Controlli](window-controls.md)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 -   C/C++
--   Programmazione dell'interfaccia utente di Windows
+-   Windows Interfaccia utente programmazione
 
 ## <a name="instructions"></a>Istruzioni
 
@@ -53,9 +53,9 @@ Nell'esempio seguente viene creata una finestra con barre di scorrimento orizzon
 
 
 
-Per elaborare i messaggi della barra di scorrimento per queste barre di scorrimento, è necessario includere il codice appropriato nella procedura della finestra principale.
+Per elaborare i messaggi della barra di scorrimento per queste barre di scorrimento, è necessario includere il codice appropriato nella routine della finestra principale.
 
-È possibile utilizzare la funzione [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare una barra di scorrimento specificando la classe della finestra della barra di scorrimento. In questo modo viene creata una barra di scorrimento orizzontale o verticale, a seconda che [**SBS \_ orizzontalmente**](scroll-bar-control-styles.md) o [**SBS \_ Vert**](scroll-bar-control-styles.md) sia specificato come stile della finestra. È possibile specificare anche le dimensioni della barra di scorrimento e la relativa posizione rispetto alla finestra padre.
+È possibile usare la [**funzione CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) per creare una barra di scorrimento specificando la classe della finestra SCROLLBAR. Verrà creata una barra di scorrimento orizzontale o verticale, a seconda che [**SBS \_ HORZ**](scroll-bar-control-styles.md) o [**SBS \_ VERT**](scroll-bar-control-styles.md) sia specificato come stile della finestra. È anche possibile specificare le dimensioni della barra di scorrimento e la relativa posizione rispetto alla finestra padre.
 
 Nell'esempio seguente viene creata una barra di scorrimento orizzontale posizionata lungo la parte inferiore dell'area client della finestra padre.
 
@@ -105,9 +105,9 @@ HWND CreateAHorizontalScrollBar(HWND hwndParent, int sbHeight)
 [Uso delle barre di scorrimento](using-scroll-bars.md)
 </dt> <dt>
 
-[Demo sui controlli comuni di Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows di controlli comuni (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

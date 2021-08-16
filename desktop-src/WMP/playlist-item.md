@@ -1,11 +1,11 @@
 ---
-title: Playlist. Item (metodo)
-description: Il metodo Item recupera l'elemento multimediale in corrispondenza dell'indice specificato.
+title: Metodo Playlist.item
+description: Il metodo item recupera l'elemento multimediale in corrispondenza dell'indice specificato.
 ms.assetid: a564f6db-ede4-4c85-87ca-0e2539d914c2
 keywords:
-- Metodo Item Media Player Windows
-- Metodo Item Media Player Windows, classe playlist
-- Classe playlist Windows Media Player, metodo Item
+- Metodo item Windows Media Player
+- metodo item Windows Media Player , classe Playlist
+- Classe Playlist Windows Media Player metodo , item
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79c69386871aeec33dbc36a066ce3f75e80d7514
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72987feb8438edc50c28bb6349b44c4f43736549c92a293794a6bc728ed7853a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106332541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862231"
 ---
-# <a name="playlistitem-method"></a>Playlist. Item (metodo)
+# <a name="playlistitem-method"></a>Metodo Playlist.item
 
-Il metodo **Item** recupera l'elemento multimediale in corrispondenza dell'indice specificato.
+Il **metodo item** recupera l'elemento multimediale in corrispondenza dell'indice specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,24 +42,24 @@ retVal = Playlist.item(
 
 <dl> <dt>
 
-*Indice* \[ di in\]
+*index* \[ Pollici\]
 </dt> <dd>
 
-**Numero** (**Long**) che contiene l'indice dell'elemento da recuperare.
+**Numero** (**long**) contenente l'indice dell'elemento da recuperare.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Questo metodo restituisce un oggetto **multimediale** .
+Questo metodo restituisce un **oggetto Media.**
 
 ## <a name="remarks"></a>Commenti
 
-Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [accesso alla libreria](library-access.md).
+Per usare questo metodo, è necessario l'accesso in lettura alla libreria. Per altre informazioni, vedere [Accesso alla libreria](library-access.md).
 
 ## <a name="examples"></a>Esempio
 
-Nell'esempio JScript seguente viene utilizzata la *playlist*. **elemento** per recuperare un elemento multimediale dalla playlist corrente in base a una selezione dell'utente. È stato creato un elemento HTML SELECT denominato "Weblist", che è stato compilato con i titoli della playlist corrente. L'oggetto **Player** è stato creato con ID = "Player".
+Nell'esempio JScript seguente viene utilizzata *la playlist*. **elemento** per recuperare un elemento multimediale dalla playlist corrente in base a una selezione dell'utente. È stato creato un elemento HTML SELECT con il nome "weblist" e riempito con i titoli della playlist corrente. **L'oggetto** Player è stato creato con ID = "Player".
 
 
 ```JScript
@@ -83,7 +83,7 @@ Player.URL = listItem.sourceURL;
 
 | Requisito | Valore |
 |--------------------|------------------------------------------------------------------------------------|
-| Versione<br/> | Windows Media Player versione 7,0 o successiva.<br/>                              |
+| Versione<br/> | Windows Media Player versione 7.0 o successiva.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -95,19 +95,19 @@ Player.URL = listItem.sourceURL;
 [**Oggetto multimediale**](media-object.md)
 </dt> <dt>
 
-[**Oggetto playlist**](playlist-object.md)
+[**Oggetto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Playlist. insertItem**](playlist-insertitem.md)
+[**Playlist.insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
-[**Playlist. removeItem**](playlist-removeitem.md)
+[**Playlist.removeItem**](playlist-removeitem.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Impostazioni.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Impostazioni.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

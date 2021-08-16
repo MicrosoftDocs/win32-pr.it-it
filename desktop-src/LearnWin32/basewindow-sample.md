@@ -17,7 +17,7 @@ Questa applicazione di esempio illustra come passare i dati dello stato dell'app
 
 ## <a name="description"></a>Descrizione
 
-L'applicazione di esempio BaseWindow è una variante di [Windows Hello World Sample.](windows-hello-world-sample.md) Usa il [**messaggio WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) per passare i dati dell'applicazione alla procedura della finestra. Questo esempio è illustrato nell'argomento [Gestione dello stato dell'applicazione](managing-application-state-.md).
+L'applicazione di esempio BaseWindow è una variante di [Windows Hello World Sample.](windows-hello-world-sample.md) Usa il [**messaggio WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) per passare i dati dell'applicazione alla routine della finestra. Questo esempio è illustrato nell'argomento [Gestione dello stato dell'applicazione](managing-application-state-.md).
 
 ## <a name="downloading-the-sample"></a>Download dell'esempio
 
@@ -25,6 +25,6 @@ Questo esempio è disponibile [qui.](https://github.com/microsoft/Windows-classi
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-* [Informazioni sul programma per Windows: Codice di esempio](learn-to-program-for-windows--sample-code.md)
+* [Informazioni sul programma per Windows: codice di esempio](learn-to-program-for-windows--sample-code.md)
 * [Gestione dello stato di un'applicazione](managing-application-state-.md)
 * [Modulo 1. Programma first Windows](your-first-windows-program.md)

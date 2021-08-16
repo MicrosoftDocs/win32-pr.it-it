@@ -1,13 +1,13 @@
-- name: Aggiornare l'agente di orchestrazione
+- name: Aggiornare Orchestrator
   href: index.md
-- name: Aggiorna riferimento agente di orchestrazione
+- name: Informazioni di riferimento su Orchestrator di aggiornamento
   items:
     - name: Interfacce
       items:
         - name: IUniversalOrchestrator
           href: universalorchestrator-iuniversalorchestrator.md
           items:
-            - name: ':: Pianificazioni'
+            - name: '::ScheduleWork'
               href: universalorchestrator-schedulework.md
             - name: '::WorkCompleted'
               href: universalorchestrator-workcompleted.md

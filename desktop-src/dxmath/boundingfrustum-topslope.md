@@ -1,5 +1,5 @@
 ---
-description: Pendenza della parte superiore di BoundingFrustum.
+description: Inclinazione della parte superiore dell'oggetto BoundingFrustum.
 ms.assetid: 66aa839f-6280-4788-8e48-947e4d27ffbd
 title: BoundingFrustum.TopSlope (DirectXCollision.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118502252"
 ---
 # <a name="boundingfrustumtopslope"></a>BoundingFrustum.TopSlope
 
-Pendenza della parte superiore di [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+Inclinazione della parte superiore [**dell'oggetto BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisiti della piattaforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e Windows Phone 8 app.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con Windows SDK per Windows 8. Supportato per app desktop Win32, app Windows Store e app Windows Phone 8.
 
 ## <a name="requirements"></a>Requisiti
 

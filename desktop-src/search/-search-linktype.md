@@ -21,7 +21,7 @@ ms.locfileid: "118463044"
 ---
 # <a name="linktype-enumeration"></a>Enumerazione LINKTYPE
 
-\[**L'enumerazione LINKTYPE** è supportata solo in Windows XP e Windows Server 2003 e non deve più essere usata.\]
+\[**L'enumerazione LINKTYPE** è supportata solo in Windows XP e Windows Server 2003 e non deve più essere utilizzata.\]
 
 Specifica il tipo di collegamento durante la ricerca per indicizzazione o l'indicizzazione.
 
@@ -65,7 +65,7 @@ Specifica un collegamento correlato.
 
 ## <a name="remarks"></a>Commenti
 
-Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare i flag **LINKTYPE** e le altre API seguenti: i metodi [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e [**la struttura LINKINFO.**](-search-linkinfo.md)
+Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze parti nei computer che eseguono Windows XP o Windows Server 2003, potrebbe essere necessario usare i flag **LINKTYPE** e le altre API seguenti: i metodi [**IItemPreviewerExt::GetLinkedContent**](-search-iitempreviewerext-getlinkedcontent.md) e [**IItemPreviewerExt::GetRelatedPart**](-search-iitempreviewerext-getrelatedpart.md) e la [**struttura LINKINFO.**](-search-linkinfo.md)
 
 ## <a name="requirements"></a>Requisiti
 
@@ -74,7 +74,7 @@ Per visualizzare in anteprima gli allegati con un gestore di protocollo di terze
 | Requisito | Valore |
 |-------------------------------------|------------------------------------------------------|
 | Client minimo supportato<br/> | Windows XP solo con app desktop SP2 \[\]<br/> |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/> |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/> |
 
 
 

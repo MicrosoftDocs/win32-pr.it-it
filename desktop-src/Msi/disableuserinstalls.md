@@ -1,5 +1,5 @@
 ---
-description: Si tratta di un criterio di sistema per computer che può essere usato quando l'amministratore vuole installare solo applicazioni per computer.
+description: Si tratta di criteri di sistema per computer che possono essere usati quando l'amministratore vuole installare solo applicazioni per computer.
 ms.assetid: 3afa1d89-b76b-4184-b0d7-25cbf6749c7f
 title: DisableUserInstalls
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118378514"
 ---
 # <a name="disableuserinstalls"></a>DisableUserInstalls
 
-Si tratta di un criterio di [sistema](system-policy.md) per computer che può essere usato quando l'amministratore vuole installare solo applicazioni per computer.
+Si tratta di criteri di sistema per [computer che](system-policy.md) possono essere usati quando l'amministratore vuole installare solo applicazioni per computer.
 
-Se questo criterio non è impostato, il programma di installazione cerca le applicazioni nel Registro di sistema nell'ordine seguente: applicazioni gestite registrate come per utente, applicazioni non gestite registrate come per utente e infine applicazioni registrate come per computer.
+Se questo criterio non è impostato, il programma di installazione cerca nel Registro di sistema le applicazioni nell'ordine seguente: applicazioni gestite registrate come per utente, applicazioni non gestite registrate come per utente e infine applicazioni registrate come per computer.
 
-Se questo criterio è impostato su 1, il programma di installazione ignora tutte le applicazioni registrate come per utente e cerca solo le applicazioni registrate come computer. Le chiamate all'interfaccia Windows programma di programmazione dell'applicazione o al sistema ignorano le applicazioni per utente. Se si tenta di eseguire un'installazione nel contesto di installazione per utente, il programma di installazione visualizza un messaggio di errore e arresta l'installazione. [](installation-context.md) In questo caso, il Windows installer impedisce anche le installazioni per utente da un server terminal.
+Se questo criterio è impostato su 1, il programma di installazione ignora tutte le applicazioni registrate come per utente e cerca solo le applicazioni registrate come per computer. Le chiamate all'interfaccia Windows programma di programmazione dell'applicazione o al sistema ignorano le applicazioni per utente. Se si tenta di eseguire un'installazione nel contesto di installazione per utente, il programma di installazione visualizza un messaggio di errore e arresta l'installazione. [](installation-context.md) In questo caso, il programma Windows di installazione impedisce anche le installazioni per utente da un server terminal.
 
 ## <a name="registry-key"></a>Chiave del Registro di sistema
 
-**HKEY \_ Criteri \_ software del computer** \\  \\ **locale** \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Criteri \_ software del** \\ **computer** \\ **locale Programma** di installazione di \\ **Microsoft** \\ **Windows** \\ 
 
 ## <a name="data-type"></a>Tipo di dati
 

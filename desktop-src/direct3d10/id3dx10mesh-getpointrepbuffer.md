@@ -1,5 +1,5 @@
 ---
-description: Ottenere il buffer del punto della mesh.
+description: Ottenere il buffer della ripetizione punti della mesh.
 ms.assetid: 4be7bee5-15ea-496f-83c2-a3a9bafd97c6
 title: Metodo ID3DX10Mesh::GetPointRepBuffer (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118540237"
 ---
 # <a name="id3dx10meshgetpointrepbuffer-method"></a>Metodo ID3DX10Mesh::GetPointRepBuffer
 
-Ottenere il buffer del punto della mesh.
+Ottenere il buffer della ripetizione punti della mesh.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,7 +45,7 @@ HRESULT GetPointRepBuffer(
 
 Tipo: **[ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)\*\***
 
-Puntatore a un buffer mesh contenente i dati del punto della mesh. Vedere [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
+Puntatore a un buffer mesh contenente i dati della ripetizione punti della mesh. Vedere [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntatore a un buffer mesh contenente i dati del punto della mesh. Vedere [**ID3
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Il valore restituito è uno dei valori elencati in [Codici restituiti Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+Il valore restituito è uno dei valori elencati in Codici restituiti [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisiti
 

@@ -1,7 +1,7 @@
 ---
-description: Calcola il prodotto a punti di un piano e di un vettore 3D. Si presuppone che il parametro w del vettore sia pari a 1.
+description: Calcola il prodotto del punto di un piano e di un vettore 3D. Si presuppone che il parametro w del vettore sia 1.
 ms.assetid: 634de6bc-b631-493d-a7a6-292a3c3253d6
-title: Funzione D3DXPlaneDotCoord (D3dx9math. h)
+title: Funzione D3DXPlaneDotCoord (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 99ee9db7df541dcf74867b828a73ede80f11e22b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 30f04ec310ce66dc43073e724b08c358cd8fc6f24f0b3840475a1abc61544503
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104234938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524928"
 ---
-# <a name="d3dxplanedotcoord-function"></a>D3DXPlaneDotCoord (funzione)
+# <a name="d3dxplanedotcoord-function"></a>Funzione D3DXPlaneDotCoord
 
-Calcola il prodotto a punti di un piano e di un vettore 3D. Si presuppone che il parametro w del vettore sia pari a 1.
+Calcola il prodotto del punto di un piano e di un vettore 3D. Si presuppone che il parametro w del vettore sia 1.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,33 +41,33 @@ FLOAT D3DXPlaneDotCoord(
 
 <dl> <dt>
 
-*PP* \[ in\]
+*pP* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Puntatore a una struttura [**D3DXPLANE**](d3dxplane.md) di origine.
+Puntatore a una [**struttura D3DXPLANE di**](d3dxplane.md) origine.
 
 </dd> <dt>
 
-*PV* \[ in\]
+*pV* \[ Pollici\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntatore a una struttura [**D3DXVECTOR3**](d3dxvector3.md) di origine.
+Puntatore a una [**struttura D3DXVECTOR3 di**](d3dxvector3.md) origine.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Prodotto a virgola del piano e del vettore 3D.
+Prodotto del punto del piano e del vettore 3D.
 
 ## <a name="remarks"></a>Commenti
 
-Dato un piano (a, b, c, d) e un vettore 3D (x, y, z), il valore restituito di questa funzione è \* x + b \* y + c \* z + d \* 1. La funzione **D3DXPlaneDotCoord** è utile per determinare la relazione del piano con una coordinata nello spazio 3D.
+Dato un piano (a, b, c, d) e un vettore 3D (x, y, z), il valore restituito di questa funzione è \* x + b y + c z + d \* \* \* 1. La **funzione D3DXPlaneDotCoord** è utile per determinare la relazione del piano con una coordinata nello spazio 3D.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -75,8 +75,8 @@ Dato un piano (a, b, c, d) e un vettore 3D (x, y, z), il valore restituito di qu
 
 | Requisito | Valore |
 |--------------------|----------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Libreria<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Intestazione<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Libreria<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

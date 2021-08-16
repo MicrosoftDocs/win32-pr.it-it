@@ -22,7 +22,7 @@ ms.locfileid: "118555891"
 ---
 # <a name="key-qualifier"></a>Qualificatore di chiave
 
-Il **qualificatore Key** indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più proprietà hanno il **qualificatore Key,** tutte queste proprietà formano collettivamente la chiave (una chiave composta). Quando vengono riunite, le proprietà chiave devono fornire un riferimento univoco per ogni istanza della classe. Se questo qualificatore viene inserito in una proprietà, è consentito solo il valore **TRUE.**
+Il **qualificatore Key** indica se la proprietà fa parte dell'handle dello spazio dei nomi. Se più proprietà hanno il **qualificatore Key,** tutte queste proprietà formano collettivamente la chiave (una chiave composta). Quando vengono riunite, le proprietà chiave devono fornire un riferimento univoco per ogni istanza della classe. Se questo qualificatore viene inserito in una proprietà, è consentito solo il **valore TRUE.**
 
 È possibile usare qualsiasi tipo di proprietà, ad eccezione dei seguenti:
 
@@ -30,13 +30,13 @@ Il **qualificatore Key** indica se la proprietà fa parte dell'handle dello spaz
 -   Numeri reali e a virgola mobile
 -   Oggetti incorporati
 -   Caratteri inferiori a ASCII 32 (ovvero spazi vuoti)
--   Le stringhe di caratteri **di tipo char16** o le stringhe di caratteri definite come chiavi devono contenere valori maggiori di U+0020. Ciò è dovuto al fatto che WMI usa i valori chiave nei percorsi degli oggetti e non è possibile utilizzare caratteri non stampabili in un percorso oggetto.
+-   Le stringhe di caratteri **di tipo char16** o stringhe di caratteri definite come chiavi devono contenere valori maggiori di U+0020. Ciò è dovuto al fatto che WMI usa i valori chiave nei percorsi degli oggetti e non è possibile usare caratteri non stampabili in un percorso oggetto.
 
 Quando una classe padre specifica una chiave, tutte le classi derivate dalla classe padre ereditano tale chiave. Le classi derivate non possono modificare la chiave ereditata né definire una nuova proprietà della chiave. Tuttavia, quando si deriva una sottoclasse da una classe astratta senza una chiave, è possibile introdurre una chiave nella sottoclasse.
 
-Tutte le classi che definiscono più di un'istanza devono specificare una chiave. Poiché le classi astratte non definiscono istanze, non è necessario specificare chiavi. Poiché le classi singleton definiscono una sola istanza, non possono specificare chiavi.
+Tutte le classi che definiscono più istanze devono specificare una chiave. Poiché le classi astratte non definiscono istanze, non è necessario specificarne le chiavi. Poiché le classi singleton definiscono una sola istanza, non possono specificare chiavi.
 
-Le chiavi vengono scritte una sola volta al momento della creazione dell'istanza dell'oggetto e non devono essere modificate in un secondo momento. Non ha senso applicare un valore predefinito a una proprietà qualificata con chiave.
+Le chiavi vengono scritte una sola volta durante la creazione dell'istanza dell'oggetto e non devono essere modificate in un secondo momento. Non ha senso applicare un valore predefinito a una proprietà qualificata per la chiave.
 
 ## <a name="requirements"></a>Requisiti
 

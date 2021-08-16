@@ -3,7 +3,7 @@ title: EM_SETHANDLE messaggio (Winuser.h)
 description: Imposta l'handle della memoria che verrà utilizzata da un controllo di modifica su più righe.
 ms.assetid: 0eae9365-62af-4040-8a51-273997a00b81
 keywords:
-- EM_SETHANDLE dei messaggi Windows controllo
+- EM_SETHANDLE controlli di Windows messaggio
 topic_type:
 - apiref
 api_name:
@@ -49,13 +49,13 @@ Questo messaggio non restituisce un valore.
 
 ## <a name="remarks"></a>Commenti
 
-Prima che un'applicazione imposta un nuovo handle di memoria, deve inviare un messaggio [**EM \_ GETHANDLE**](em-gethandle.md) per recuperare l'handle del buffer di memoria corrente e deve liberare tale memoria.
+Prima di impostare un nuovo handle di memoria, un'applicazione deve inviare un messaggio [**EM \_ GETHANDLE**](em-gethandle.md) per recuperare l'handle del buffer di memoria corrente e liberare tale memoria.
 
-Un controllo di modifica rialloca automaticamente il buffer specificato ogni volta che necessita di spazio aggiuntivo per il testo oppure rimuove un testo sufficiente in modo che non sia più necessario spazio aggiuntivo.
+Un controllo di modifica rialloca automaticamente il buffer specificato ogni volta che richiede spazio aggiuntivo per il testo oppure rimuove testo sufficiente in modo che non sia più necessario spazio aggiuntivo.
 
-L'invio di un messaggio **EM \_ SETHANDLE** cancella il buffer di [**annullamento (EM \_ CANUNDO**](em-canundo.md) restituisce zero) e il flag di modifica interno ([**EM \_ GETMODIFY**](em-getmodify.md) restituisce zero). La finestra del controllo di modifica viene ridisegnata.
+L'invio di un messaggio **EM \_ SETHANDLE** cancella il buffer di annullamento ([**EM \_ CANUNDO**](em-canundo.md) restituisce zero) e il flag di modifica interno ([**EM \_ GETMODIFY**](em-getmodify.md) restituisce zero). La finestra del controllo di modifica viene ridisegnata.
 
-**Rich Edit:** Il **messaggio EM \_ SETHANDLE** non è supportato. I controlli Rich Edit non archiviano il testo come semplice matrice di caratteri.
+**Rich Edit:** Il **messaggio EM \_ SETHANDLE** non è supportato. I controlli Rich Edit non archiviano il testo come una semplice matrice di caratteri.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -63,8 +63,8 @@ L'invio di un messaggio **EM \_ SETHANDLE** cancella il buffer di [**annullament
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows Solo \[ app desktop di Vista\]<br/>                                                           |
-| Server minimo supportato<br/> | Windows Solo app desktop server 2003 \[\]<br/>                                                     |
+| Client minimo supportato<br/> | Windows Solo \[ app desktop Vista\]<br/>                                                           |
+| Server minimo supportato<br/> | Windows Solo app desktop di Server 2003 \[\]<br/>                                                     |
 | Intestazione<br/>                   | <dl> <dt>Winuser.h (includere Windows.h)</dt> </dl> |
 
 

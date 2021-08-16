@@ -54,7 +54,7 @@ Elemento o elementi da spostare. Può trattarsi di una stringa che rappresenta u
 
 Tipo: **Variante**
 
-Opzioni per l'operazione di spostamento. Questo valore può essere zero o una combinazione dei valori seguenti. Questi valori sono basati sui flag definiti per l'uso con il membro **fFlags** della struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) di C++. Questi flag non sono definiti come tali per Visual Basic, VBScript o JScript, pertanto è necessario definirli manualmente o usare i relativi equivalenti numerici.
+Opzioni per l'operazione di spostamento. Questo valore può essere zero o una combinazione dei valori seguenti. Questi valori sono basati sui flag definiti per l'uso con il membro **fFlags** della struttura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) di C++. Questi flag non sono definiti come tali per Visual Basic, VBScript o JScript, pertanto è necessario definirli manualmente o usare gli equivalenti numerici.
 
 <dt>
 
@@ -76,7 +76,7 @@ Non visualizzare una finestra di dialogo di stato.
 
 </dt> <dd>
 
-Assegnare al file utilizzato un nuovo nome in un'operazione di spostamento, copia o ridenominazione se esiste già un file con il nome di destinazione.
+Assegnare al file gestito un nuovo nome in un'operazione di spostamento, copia o ridenominazione se esiste già un file con il nome di destinazione.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Rispondere con "Sì a tutti" per qualsiasi finestra di dialogo visualizzata.
 
 </dt> <dd>
 
-Se possibile, mantenere le informazioni di annullamento.
+Mantenere le informazioni di annullamento, se possibile.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Se possibile, mantenere le informazioni di annullamento.
 
 </dt> <dd>
 
-Eseguire l'operazione sui file solo se è specificato un nome di file con caratteri jolly ( \* . \* ).
+Eseguire l'operazione sui file solo se è specificato un nome file con caratteri jolly ( \* . \* ).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Eseguire l'operazione sui file solo se è specificato un nome di file con caratt
 
 </dt> <dd>
 
-Consente di visualizzare una finestra di dialogo di stato senza visualizzare i nomi dei file.
+Visualizzare una finestra di dialogo di stato ma non visualizzare i nomi dei file.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Consente di visualizzare una finestra di dialogo di stato senza visualizzare i n
 
 </dt> <dd>
 
-Non confermare la creazione di una nuova directory se l'operazione ne richiede una.
+Non confermare la creazione di una nuova directory se l'operazione ne richiede la creazione.
 
 </dd> <dt>
 
@@ -186,13 +186,13 @@ Questo metodo non restituisce valori.
 ## <a name="remarks"></a>Commenti
 
 > [!Note]  
-> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non è implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
+> Non tutti i metodi vengono implementati per tutte le cartelle. Ad esempio, il [**metodo ParseName**](folder-parsename.md) non viene implementato per la cartella Pannello di controllo (CSIDL \_ CONTROLS). Se si tenta di chiamare un metodo non implementato, viene generato un errore 0x800A01BD (decimale 445).
 
  
 
 ## <a name="examples"></a>Esempio
 
-L'esempio seguente **usa MoveHere** per spostare il file Temp.txt dalla directory radice dell'unità C alla cartella C: \\ Windows. Viene visualizzato l'utilizzo corretto JScript, VBScript e Visual Basic.
+Nell'esempio seguente viene utilizzato **MoveHere** per spostare il file Temp.txt dalla directory radice dell'unità C alla cartella C: \\ Windows. Viene visualizzato un utilizzo appropriato per JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -273,7 +273,7 @@ End Sub
 
 | Requisito | Valore |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app desktop XP \[\]<br/>                                         |
+| Client minimo supportato<br/> | Windows 2000 Professional, Windows solo app \[ desktop XP\]<br/>                                         |
 | Server minimo supportato<br/> | Windows 2000 Server \[solo app desktop\]<br/>                                                           |
 | Intestazione<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

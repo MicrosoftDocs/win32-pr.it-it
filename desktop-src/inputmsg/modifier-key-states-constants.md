@@ -1,6 +1,6 @@
 ---
 title: Stato del tasto di modifica
-description: Indica i tasti di modifica della tastiera che sono stati premuti al momento della generazione dell'input.
+description: Indica quali tasti di modifica della tastiera sono stati premuti al momento della generazione dell'input.
 ms.assetid: 721f5109-67ab-4242-921e-580c2dc0463b
 topic_type:
 - apiref
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 115ee8d33d8f54ab145026152af28b6d565a7935
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec041ffd62bb028f2839d45b00743714cea375f4e66c0723cb7fe9bfb279445f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104120363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756881"
 ---
 # <a name="modifier-key-state"></a>Stato del tasto di modifica
 
-Indica i tasti di modifica della tastiera che sono stati premuti al momento della generazione dell'input.
+Indica quali tasti di modifica della tastiera sono stati premuti al momento della generazione dell'input.
 
 <dl> <dt>
 
@@ -34,7 +34,7 @@ Indica i tasti di modifica della tastiera che sono stati premuti al momento dell
 
 
 
-È stato premuto un tasto MAIUSC.
+È stato premuto MAIUSC.
 
 
 </dt> </dl> </dd> <dt>
@@ -47,7 +47,7 @@ Indica i tasti di modifica della tastiera che sono stati premuti al momento dell
 
 
 
-È stato premuto un tasto CTRL.
+È stato premuto CTRL.
 
 
 </dt> </dl> </dd> </dl>
@@ -58,9 +58,9 @@ Indica i tasti di modifica della tastiera che sono stati premuti al momento dell
 
 | Requisito | Valore |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Client minimo supportato<br/> | \[Solo app desktop di Windows 8\]<br/>                                           |
-| Server minimo supportato<br/> | \[Solo app desktop Windows Server 2012\]<br/>                                 |
-| Intestazione<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Client minimo supportato<br/> | \[Windows 8 solo app desktop\]<br/>                                           |
+| Server minimo supportato<br/> | \[Windows Server 2012 solo app desktop\]<br/>                                 |
+| Intestazione<br/>                   | <dl> <dt>Winuser</dt> </dl> |
 
 
 

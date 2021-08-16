@@ -1,19 +1,19 @@
 ---
 title: Supporto del contenuto sul lato dispositivo (PropertySheet)
-description: Informazioni su come usare l'API Shell di Windows o l'API WPD per ottenere dati per gli oggetti dispositivo, che non sono accessibili tramite l'api file system in Windows Vista.
+description: Informazioni su come usare l'API shell di Windows o l'API WPD per ottenere i dati per gli oggetti dispositivo, che non sono accessibili tramite il file system in Windows Vista.
 ms.assetid: ea11f8e6-fb53-46e4-b210-2dae33cdc056
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aeade3745c37296b334c54af9edcc768fb8c93e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 451bf63c1270b121cf909fa5ee07aff62cc3b83aa0e0d031cae61005f725c197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117842568"
 ---
 # <a name="supporting-device-side-content"></a>Supporto del contenuto sul lato dispositivo
 
-Poiché il contenuto sul lato dispositivo non è accessibile tramite il file system in Windows Vista, è necessario usare l'API Shell di Windows o l'API WPD per recuperare i dati per gli oggetti dispositivo. Questa è la differenza principale tra un normale gestore della finestra delle proprietà e un gestore della finestra delle proprietà WPD. Il codice di esempio seguente illustra il recupero di contenuto sul lato dispositivo usando l'API Shell di Windows.
+Poiché il contenuto sul lato dispositivo non è accessibile tramite il file system in Windows Vista, è necessario usare l'API shell di Windows o l'API WPD per recuperare i dati per gli oggetti dispositivo. Questa è la differenza principale tra un normale gestore della finestra delle proprietà e un gestore della finestra delle proprietà WPD. Il codice di esempio seguente illustra il recupero di contenuto sul lato dispositivo usando l'API Windows Shell.
 
 Il primo passaggio è l'inizializzazione dell'elenco di identificatori di elemento o PIDL. Questo elenco contiene l'identificatore univoco per l'oggetto dispositivo specificato.
 
@@ -164,7 +164,7 @@ Exit:
 
 
 
-Oltre all'inizializzazione e all'elaborazione dell'elenco di identificatori di elemento, l'applicazione dovrà implementare il metodo IShellPropSheetExt::ReplacePage e inserire i gestori di sostituzione appropriati. La shell di Windows chiama questo metodo ogni volta che sta per visualizzare una finestra delle proprietà sostituibile, offrendo all'applicazione la possibilità di richiamare un gestore di sostituzione corrispondente. La parola bassa del primo parametro del metodo ReplacePage è un identificatore per la finestra delle proprietà specificata che Windows sta per visualizzare. I valori passati nella parola bassa del primo parametro corrispondono ai valori definiti nel file WpdShellExtension.h. Questi valori e le relative descrizioni vengono visualizzati nella tabella seguente.
+Oltre all'inizializzazione e all'elaborazione dell'elenco di identificatori di elemento, l'applicazione dovrà implementare il metodo IShellPropSheetExt::ReplacePage e inserire i gestori di sostituzione appropriati. La Windows Shell chiama questo metodo ogni volta che sta per visualizzare una finestra delle proprietà sostituibile, offrendo all'applicazione la possibilità di richiamare un gestore di sostituzione corrispondente. La parola bassa del primo parametro del metodo ReplacePage è un identificatore per la finestra delle proprietà specificata che Windows sta per essere visualizzata. I valori passati nella parola bassa del primo parametro corrispondono ai valori definiti nel file WpdShellExtension.h. Questi valori e le relative descrizioni vengono visualizzati nella tabella seguente.
 
 
 

@@ -50,7 +50,7 @@ Interfaccia di hosting esistente. Vedere **IViewObjectPresentNotifySite** nella 
 *ppPresenter* \[ Cambio\]
 </dt> <dd>
 
-Interfaccia **\[ exclusiveto \]** per un [**oggetto XamlUIPresenter.**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041)
+Interfaccia **\[ exclusiveto \]** per [**xamlUIPresenter.**](/uwp/api/Windows.UI.Xaml.Hosting.XamlUIPresenter?view=winrt-19041)
 
 </dd> </dl>
 

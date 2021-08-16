@@ -23,7 +23,7 @@ Questa procedura di diagnostica potrebbe non essere utile per client e host che 
 2.  Installare l'analizzatore pacchetti (Netmon) nel client o nell'host.
 3.  Configurare l'analizzatore pacchetti per acquisire il traffico sulla scheda di rete che connette l'host e il client.
 4.  Riprodurre l'errore avviando l'host e il client o premendo F5 nel Esplora rete.
-5.  Filtrare i risultati per isolare il traffico WS-Discovery scambio di metadati e dati. Per visualizzare i filtri Netmon di esempio, vedere [Download dei filtri Netmon e DPWS di esempio.](downloading-netmon-and-sample-dpws-filters.md)
+5.  Filtrare i risultati per isolare WS-Discovery traffico di scambio di metadati e dati. Per visualizzare i filtri Netmon di esempio, vedere [Download dei filtri Netmon e DPWS di esempio.](downloading-netmon-and-sample-dpws-filters.md)
     > [!Note]  
     > Questo passaggio è facoltativo.
 
@@ -44,7 +44,7 @@ I client e gli host WSDAPI devono inviare messaggi conformi ai criteri seguenti.
     Dopo che il client ha inviato un pacchetto TCP ACK, viene stabilita la connessione TCP. Si noti che questo scambio di messaggi non si verifica se in precedenza è stata stabilita una connessione TCP.
 -   Il client deve inviare una richiesta e un messaggio HTTP [Get](get--metadata-exchange--http-request-and-message.md) validi.
 -   L'host deve essere in ascolto sul percorso URL specificato nella [richiesta Get](get--metadata-exchange--http-request-and-message.md) HTTP.
--   **L'elemento To** di [un messaggio di](get--metadata-exchange--http-request-and-message.md) metadati Get deve essere presente e non vuoto. Il valore **dell'elemento To** deve corrispondere a uno degli indirizzi endpoint dell'host. L'indirizzo dell'endpoint di un host viene in genere annunciato in un [messaggio ProbeMatches](probematches-message.md) [o ResolveMatches.](resolvematches-message.md)
+-   **L'elemento To** di [un messaggio di](get--metadata-exchange--http-request-and-message.md) metadati Get deve essere presente e non vuoto. Il valore **dell'elemento To** deve corrispondere a uno degli indirizzi endpoint dell'host. L'indirizzo endpoint di un host viene in genere annunciato in un [messaggio ProbeMatches](probematches-message.md) [o ResolveMatches.](resolvematches-message.md)
 -   L'host deve inviare un'intestazione di risposta HTTP valida. Se la richiesta iniziale ha esito positivo, l'intestazione della risposta deve contenere il codice di stato HTTP/1.1 200.
 -   L'host deve inviare un [messaggio GetResponse](getresponse--metadata-exchange--message.md) valido.
 -   **L'elemento RelatesTo** di [un messaggio GetResponse](getresponse--metadata-exchange--message.md) deve essere presente e non deve essere vuoto. Il valore deve corrispondere al valore **dell'elemento MessageId** del messaggio [Get](get--metadata-exchange--http-request-and-message.md) corrispondente.
@@ -60,7 +60,7 @@ Se l'origine del problema non è ancora identificata, contattare il supporto tec
 [Procedure di diagnostica WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Attività iniziali con la risoluzione dei problemi di WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Attività iniziali risoluzione dei problemi di WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> <dt>
 
 [Download di netmon e filtri DPWS di esempio](downloading-netmon-and-sample-dpws-filters.md)

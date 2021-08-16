@@ -3,7 +3,7 @@ title: XTYP_ADVDATA transazione (Ddeml.h)
 description: Informa il client che il valore dell'elemento di dati è stato modificato. La Dynamic Data Exchange callback del client DDE (Dynamic Data Exchange), DdeCallback, riceve questa transazione dopo aver stabilito un ciclo di consulenza con un server.
 ms.assetid: c6e61785-b98c-4ffa-9d23-339e1c66cb4d
 keywords:
-- XTYP_ADVDATA di dati della transazione Exchange
+- XTYP_ADVDATA dati della transazione Exchange
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118544866"
 ---
 # <a name="xtyp_advdata-transaction"></a>Transazione \_ ADVDATA XTYP
 
-Informa il client che il valore dell'elemento di dati è stato modificato. La Dynamic Data Exchange callback del client DDE (Dynamic Data Exchange, [*DdeCallback)*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione dopo aver stabilito un ciclo di consulenza con un server.
+Informa il client che il valore dell'elemento di dati è stato modificato. La Dynamic Data Exchange di callback del client DDE [*,DdeCallback,*](/windows/win32/api/ddeml/nc-ddeml-pfncallback)riceve questa transazione dopo aver stabilito un ciclo di consulenza con un server.
 
 
 ```C++

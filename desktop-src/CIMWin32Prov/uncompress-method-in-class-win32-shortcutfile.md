@@ -2,7 +2,7 @@
 description: Decomprime il file di collegamento logico (o directory) specificato nel percorso dell'oggetto.
 ms.assetid: e120391a-3839-4f8c-aca3-473d7f8b30bf
 ms.tgt_platform: multiple
-title: Metodo Decompress della classe Win32_ShortcutFile
+title: Decomprimere il metodo della Win32_ShortcutFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 48267f519dce9ae5d78581050255bd8e8b02222c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 05ce0f0a9bf8956a5c4841c18b098d86a5dff57fc66ac45f0a4e3fefecb3ef53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103748943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117834516"
 ---
-# <a name="uncompress-method-of-the-win32_shortcutfile-class"></a>Metodo Decompress della classe Win32 \_ ShortcutFile
+# <a name="uncompress-method-of-the-win32_shortcutfile-class"></a>Metodo Uncompress della classe ShortcutFile Win32 \_
 
-Il metodo di **decompressione** [WMI della classe](/windows/desktop/WmiSdk/retrieving-a-class) decomprime il file di collegamento logico (o directory) specificato nel percorso dell'oggetto.
+Il **metodo decomprime** [la classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) decomprime il file di collegamento logico (o directory) specificato nel percorso dell'oggetto.
 
-In questo argomento viene utilizzata la sintassi Managed Object Format (MOF). Per ulteriori informazioni sull'utilizzo di questo metodo, vedere [chiamata a un metodo](/windows/desktop/WmiSdk/calling-a-method).
+Questo argomento usa Managed Object Format (MOF). Per altre informazioni sull'uso di questo metodo, vedere [Chiamata di un metodo](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,7 +42,7 @@ Questo metodo non presenta parametri.
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce un valore pari a 0 (zero) se il file è stato decompresso correttamente e qualsiasi altro numero per indicare un errore.
+Restituisce il valore 0 (zero) se il file è stato decompresso correttamente e qualsiasi altro numero per indicare un errore.
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ La richiesta è stata completata.
 **2**
 </dt> <dd>
 
-Accesso negato.
+L'accesso è stato negato.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Si è verificata una violazione di condivisione.
 **16**
 </dt> <dd>
 
-Il file di avvio specificato non è valido.
+Il file iniziale specificato non è valido.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Un parametro specificato non è valido.
 | Client minimo supportato<br/> | Windows Vista<br/>                                                                |
 | Server minimo supportato<br/> | Windows Server 2008<br/>                                                          |
 | Spazio dei nomi<br/>                | \\CIMV2 radice<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Un parametro specificato non è valido.
 [Classi del sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ShortcutFile Win32**](win32-shortcutfile.md)
+[**File di collegamento Win32 \_**](win32-shortcutfile.md)
 </dt> </dl>
 
  

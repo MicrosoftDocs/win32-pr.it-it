@@ -1,29 +1,29 @@
 ---
-title: Scenari di gestibilità HTTP.sys
-description: Negli scenari seguenti vengono forniti esempi di come questi strumenti consentono ai professionisti IT di diagnosticare e risolvere i problemi correlati al componente API server HTTP (HTTP.sys).
+title: HTTP.sys scenari di gestibilità
+description: Gli scenari seguenti forniscono esempi di come questi strumenti possono aiutare i professionisti IT a diagnosticare e risolvere i problemi correlati al componente API server HTTP (HTTP.sys).
 ms.assetid: 000e26d7-fce4-4768-96f5-ff97d240007e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9bcd07235f2da3a4a86c4dc34c09e5b4b4cbfcb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d84e53cf35fc0c6381ca04029029e660f3e732adf8b130eb60b3f119b76b7c95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "106298079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394270"
 ---
-# <a name="httpsys-manageability-scenarios"></a>Scenari di gestibilità HTTP.sys
+# <a name="httpsys-manageability-scenarios"></a>HTTP.sys scenari di gestibilità
 
-Negli scenari seguenti vengono forniti esempi di come questi strumenti consentono ai professionisti IT di diagnosticare e risolvere i problemi correlati al componente API server HTTP (HTTP.sys). Gli strumenti utilizzati in questi esempi sono disponibili in Windows Vista e Windows Server 2008.
+Gli scenari seguenti forniscono esempi di come questi strumenti possono aiutare i professionisti IT a diagnosticare e risolvere i problemi correlati al componente API server HTTP (HTTP.sys). Gli strumenti usati in questi esempi sono disponibili in Windows Vista e Windows Server 2008.
 
--   [Scenario 1: esempio di timeout HTTP con la traccia ETW e i comandi netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
--   [Scenario 2: esempio di parser con traccia ETW](scenario-2--parser-example-using-etw-tracing.md)
--   [Scenario 3: contatori delle prestazioni](scenario-3--performance-counters.md)
+-   [Scenario 1: Esempio di timeout HTTP con la traccia ETW e i comandi Netsh](scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md)
+-   [Scenario 2: Esempio di parser con traccia ETW](scenario-2--parser-example-using-etw-tracing.md)
+-   [Scenario 3: Contatori delle prestazioni](scenario-3--performance-counters.md)
 
-Negli scenari di questo documento sono riportati alcuni esempi di utilizzo degli strumenti di gestione del componente API del server HTTP. Questi esempi non sono progettati per suggerire modifiche di configurazione specifiche.
+Gli scenari in questo documento sono esempi dell'uso degli strumenti di gestibilità del componente API server HTTP. Questi esempi non hanno lo scopo di suggerire modifiche di configurazione specifiche.
 
- 
+ 
 
- 
+ 
 
 
 

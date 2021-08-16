@@ -11,7 +11,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117819998"
 ---
-# <a name="ec_stream_error_stillplaying"></a>ERRORE DEL FLUSSO EC \_ \_ ANCORA IN \_ RIPRODUZIONE
+# <a name="ec_stream_error_stillplaying"></a>ERRORE \_ EC STREAM \_ \_ STILLPLAYING
 
 Si è verificato un errore in un flusso, ma il flusso è ancora in riproduzione.
 

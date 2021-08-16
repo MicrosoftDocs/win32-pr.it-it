@@ -1,7 +1,7 @@
 ---
-description: "Il metodo run esegue l'oggetto. Questo metodo implementa il metodo IMediaFilter:: Run."
+description: Il metodo Run esegue l'oggetto . Questo metodo implementa il metodo IMediaFilter::Run.
 ms.assetid: a59180df-46b4-4c23-973f-2931d95ace55
-title: Metodo CBaseMediaFilter. Run (Amfilter. h)
+title: Metodo CBaseMediaFilter.Run (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8c4023be7731f9bae60576bc7002010eb0b51823
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73ab65404b6946a1cf220db54789df1234e14bf815c44633d3237ab50e04e2e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "106325075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823691"
 ---
-# <a name="cbasemediafilterrun-method"></a>Metodo CBaseMediaFilter. Run
+# <a name="cbasemediafilterrun-method"></a>Metodo CBaseMediaFilter.Run
 
-Il `Run` metodo esegue l'oggetto. Questo metodo implementa il metodo [**IMediaFilter:: Run**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run) .
+Il `Run` metodo esegue l'oggetto . Questo metodo implementa il [**metodo IMediaFilter::Run.**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-run)
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,19 +45,19 @@ HRESULT Run(
 *tStart* 
 </dt> <dd>
 
-Tempo di riferimento corrispondente all'ora del flusso 0.
+Ora di riferimento corrispondente all'ora del flusso 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valore restituito
 
-Restituisce \_ OK.
+Restituisce S \_ OK.
 
 ## <a name="remarks"></a>Commenti
 
-Se l'oggetto viene arrestato, questo metodo sospende l'oggetto chiamando il metodo [**CBaseMediaFilter::P ause**](cbasemediafilter-pause.md) . Imposta quindi la variabile membro di [**\_ stato CBaseMediaFilter:: m**](cbasemediafilter-m-state.md) sullo stato \_ in esecuzione.
+Se l'oggetto viene arrestato, questo metodo sospende l'oggetto chiamando il metodo [**CBaseMediaFilter::P ause.**](cbasemediafilter-pause.md) Imposta quindi la variabile [**membro CBaseMediaFilter::m \_ State**](cbasemediafilter-m-state.md) su State \_ Running.
 
-Il tempo di flusso viene calcolato come ora di riferimento corrente meno *tStart*. È necessario eseguire il rendering di un campione multimediale con un timestamp di zero all'ora *tStart*.
+L'ora del flusso viene calcolata come ora di riferimento corrente meno *tStart*. È necessario eseguire il rendering di un campione multimediale con timestamp pari a zero all'ora *tStart*.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -65,8 +65,8 @@ Il tempo di flusso viene calcolato come ora di riferimento corrente meno *tStart
 
 | Requisito | Valore |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intestazione<br/>  | <dl> <dt>Amfilter. h (include Streams. h)</dt> </dl>                                                                                  |
-| Libreria<br/> | <dl> <dt>Strmbase. lib (compilazioni finali); </dt> <dt>Strmbasd. lib (build di debug)</dt> </dl> |
+| Intestazione<br/>  | <dl> <dt>Amfilter.h (includere Flussi.h)</dt> </dl>                                                                                  |
+| Libreria<br/> | <dl> <dt>Strmbase.lib (build di vendita al dettaglio); </dt> <dt>Strmbasd.lib (build di debug)</dt> </dl> |
 
 
 

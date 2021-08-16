@@ -29,7 +29,7 @@ Il linguaggio MOF supporta i tipi di dati e le categorie di tipi di dati seguent
 -   [Mappa dei valori](value-map.md)
 -   [Vuoto](void.md)
 
-Per altre informazioni sui comandi, vedere [Comandi per il preprocessore](preprocessor-commands.md).
+Per altre informazioni sui comandi, vedere [Comandi del preprocessore.](preprocessor-commands.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
